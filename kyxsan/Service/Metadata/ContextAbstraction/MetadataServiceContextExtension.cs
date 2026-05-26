@@ -1,0 +1,334 @@
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+// | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
+// | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
+// | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
+// |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
+// Copyright (c) DGP Studio. All rights reserved.
+// Modified by kyxsan.
+// Licensed under the MIT license.
+
+using kyxsan.Model.Intrinsic;
+using kyxsan.Model.Metadata.Avatar;
+using kyxsan.Model.Metadata.Item;
+using kyxsan.Model.Metadata.Weapon;
+using kyxsan.Model.Primitive;
+using kyxsan.Service.Metadata.ContextAbstraction.ImmutableArray;
+using kyxsan.Service.Metadata.ContextAbstraction.ImmutableDictionary;
+using kyxsan.Service.Notification;
+
+namespace kyxsan.Service.Metadata.ContextAbstraction;
+
+internal static class MetadataServiceContextExtension
+{
+    extension(IMetadataService metadataService)
+    {
+        [SuppressMessage("", "CA1502")]
+        [SuppressMessage("", "CA1506")]
+        public async ValueTask<TContext> GetContextAsync<TContext>(CancellationToken token = default)
+            where TContext : IMetadataContext, new()
+        {
+            TContext context = new();
+
+            // Array
+            {
+                if (context is IMetadataArrayAchievementSource arrayAchievementSource)
+                {
+                    arrayAchievementSource.Achievements = await metadataService.GetAchievementArrayAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataArrayAvatarSource arrayAvatarSource)
+                {
+                    arrayAvatarSource.Avatars = await metadataService.GetAvatarArrayAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataArrayChapterSource arrayChapterSource)
+                {
+                    arrayChapterSource.Chapters = await metadataService.GetChapterArrayAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataArrayGachaEventSource arrayGachaEventSource)
+                {
+                    arrayGachaEventSource.GachaEvents = await metadataService.GetGachaEventArrayAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataArrayHyperLinkNameSource arrayHyperLinkNameSource)
+                {
+                    arrayHyperLinkNameSource.HyperLinkNames = await metadataService.GetHyperLinkNameArrayAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataArrayMaterialSource arrayMaterialSource)
+                {
+                    arrayMaterialSource.Materials = await metadataService.GetMaterialArrayAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataArrayMonsterSource arrayMonsterSource)
+                {
+                    arrayMonsterSource.Monsters = await metadataService.GetMonsterArrayAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataArrayProfilePictureSource arrayProfilePictureSource)
+                {
+                    arrayProfilePictureSource.ProfilePictures = await metadataService.GetProfilePictureArrayAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataArrayReliquaryMainAffixLevelSource arrayReliquaryMainAffixLevelSource)
+                {
+                    arrayReliquaryMainAffixLevelSource.ReliquaryMainAffixLevels = await metadataService.GetReliquaryMainAffixLevelArrayAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataArrayReliquarySource arrayReliquarySource)
+                {
+                    arrayReliquarySource.Reliquaries = await metadataService.GetReliquaryArrayAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataArrayWeaponSource arrayWeaponSource)
+                {
+                    arrayWeaponSource.Weapons = await metadataService.GetWeaponArrayAsync(token).ConfigureAwait(false);
+                }
+            }
+
+            // Dictionary
+            {
+                if (context is IMetadataDictionaryExtendedEquipAffixIdReliquarySetSource dictionaryExtendedEquipAffixIdReliquarySetSource)
+                {
+                    dictionaryExtendedEquipAffixIdReliquarySetSource.ExtendedIdReliquarySetMap = await metadataService.GetExtendedEquipAffixIdToReliquarySetMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryIdAchievementSource dictionaryIdAchievementSource)
+                {
+                    dictionaryIdAchievementSource.IdAchievementMap = await metadataService.GetIdToAchievementMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryIdAvatarSource dictionaryIdAvatarSource)
+                {
+                    dictionaryIdAvatarSource.IdAvatarMap = await metadataService.GetIdToAvatarMapAsync(token).ConfigureAwait(false);
+
+                    if (context is IMetadataDictionaryIdAvatarWithPlayersSource)
+                    {
+                        dictionaryIdAvatarSource.IdAvatarMap = AvatarIds.WithPlayers(dictionaryIdAvatarSource.IdAvatarMap);
+                    }
+                }
+
+                if (context is IMetadataDictionaryIdDictionaryLevelAvatarPromoteSource dictionaryIdDictionaryLevelAvatarPromoteSource)
+                {
+                    dictionaryIdDictionaryLevelAvatarPromoteSource.IdDictionaryAvatarLevelPromoteMap = await metadataService.GetIdToAvatarPromoteGroupMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryIdDictionaryLevelWeaponPromoteSource dictionaryIdDictionaryLevelWeaponPromoteSource)
+                {
+                    dictionaryIdDictionaryLevelWeaponPromoteSource.IdDictionaryWeaponLevelPromoteMap = await metadataService.GetIdToWeaponPromoteGroupMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryIdArrayTowerLevelSource dictionaryIdListTowerLevelSource)
+                {
+                    dictionaryIdListTowerLevelSource.IdArrayTowerLevelMap = await metadataService.GetGroupIdToTowerLevelGroupMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryIdDisplayItemAndMaterialSource dictionaryIdDisplayItemAndMaterialSource)
+                {
+                    dictionaryIdDisplayItemAndMaterialSource.IdDisplayItemAndMaterialMap = await metadataService.GetIdToDisplayItemAndMaterialMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryIdHardChallengeScheduleSource dictionaryIdHardChallengeScheduleSource)
+                {
+                    dictionaryIdHardChallengeScheduleSource.IdHardChallengeScheduleMap = await metadataService.GetIdToHardChallengeScheduleMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryIdHyperLinkNameSource dictionaryIdHyperLinkNameSource)
+                {
+                    dictionaryIdHyperLinkNameSource.IdHyperLinkNameMap = await metadataService.GetIdToHyperLinkNameMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryIdMaterialSource dictionaryIdMaterialSource)
+                {
+                    dictionaryIdMaterialSource.IdMaterialMap = await metadataService.GetIdToMaterialMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryIdMonsterSource dictionaryIdMonsterSource)
+                {
+                    dictionaryIdMonsterSource.IdMonsterMap = await metadataService.GetDescribeIdToMonsterMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryIdReliquarySource dictionaryIdReliquarySource)
+                {
+                    dictionaryIdReliquarySource.IdReliquaryMap = await metadataService.GetIdToReliquaryMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryIdReliquaryMainPropertySource dictionaryIdReliquaryMainPropertySource)
+                {
+                    dictionaryIdReliquaryMainPropertySource.IdReliquaryMainPropertyMap = await metadataService.GetIdToReliquaryMainPropertyMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryIdReliquarySetSource dictionaryIdReliquarySetSource)
+                {
+                    dictionaryIdReliquarySetSource.IdReliquarySetMap = await metadataService.GetIdToReliquarySetMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryIdReliquarySubAffixSource dictionaryIdReliquarySubAffixSource)
+                {
+                    dictionaryIdReliquarySubAffixSource.IdReliquarySubAffixMap = await metadataService.GetIdToReliquarySubAffixMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryIdRoleCombatScheduleSource dictionaryIdRoleCombatScheduleSource)
+                {
+                    dictionaryIdRoleCombatScheduleSource.IdRoleCombatScheduleMap = await metadataService.GetIdToRoleCombatScheduleMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryIdTowerFloorSource dictionaryIdTowerFloorSource)
+                {
+                    dictionaryIdTowerFloorSource.IdTowerFloorMap = await metadataService.GetIdToTowerFloorMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryIdTowerScheduleSource dictionaryIdTowerScheduleSource)
+                {
+                    dictionaryIdTowerScheduleSource.IdTowerScheduleMap = await metadataService.GetIdToTowerScheduleMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryIdWeaponSource dictionaryIdWeaponSource)
+                {
+                    dictionaryIdWeaponSource.IdWeaponMap = await metadataService.GetIdToWeaponMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryLevelAvatarGrowCurveSource levelAvatarGrowCurveSource)
+                {
+                    levelAvatarGrowCurveSource.LevelDictionaryAvatarGrowCurveMap = await metadataService.GetLevelToAvatarCurveMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryLevelMonsterGrowCurveSource monsterGrowCurveSource)
+                {
+                    monsterGrowCurveSource.LevelDictionaryMonsterGrowCurveMap = await metadataService.GetLevelToMonsterCurveMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryLevelWeaponGrowCurveSource weaponGrowCurveSource)
+                {
+                    weaponGrowCurveSource.LevelDictionaryWeaponGrowCurveMap = await metadataService.GetLevelToWeaponCurveMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryNameAvatarSource dictionaryNameAvatarSource)
+                {
+                    dictionaryNameAvatarSource.NameAvatarMap = await metadataService.GetNameToAvatarMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryNameWeaponSource dictionaryNameWeaponSource)
+                {
+                    dictionaryNameWeaponSource.NameWeaponMap = await metadataService.GetNameToWeaponMapAsync(token).ConfigureAwait(false);
+                }
+
+                if (context is IMetadataDictionaryResultMaterialIdCombineSource dictionaryResultMaterialIdCombineSource)
+                {
+                    dictionaryResultMaterialIdCombineSource.ResultMaterialIdCombineMap = await metadataService.GetResultMaterialIdToCombineMapAsync(token).ConfigureAwait(false);
+                }
+            }
+
+            if (context is IMetadataSupportInitialization supportInitialization)
+            {
+                supportInitialization.IsInitialized = true;
+            }
+
+            return context;
+        }
+    }
+
+    extension(IMetadataDictionaryIdAvatarSource context)
+    {
+        public Avatar GetAvatar(AvatarId id)
+        {
+            if (context.IdAvatarMap.TryGetValue(id, out Avatar? avatar))
+            {
+                return avatar;
+            }
+
+            try
+            {
+                Ioc.Default.GetRequiredService<IMessenger>().Send(InfoBarMessage.Warning(SH.ServiceMetadataAvatarIdNotFound ?? "Avatar not found", $"{id}"));
+            }
+            catch
+            {
+                // ignore
+            }
+
+            // Return placeholder to avoid throwing
+            return new Avatar()
+            {
+                Name = $"Unknown Avatar ({id})",
+                Icon = "UI_AvatarIcon_Default",
+                SideIcon = string.Empty,
+                Quality = QualityType.QUALITY_NONE,
+                Id = id,
+                PromoteId = default,
+                Sort = default,
+                Body = default,
+                Description = default!,
+                BeginTime = default,
+                Weapon = default,
+                BaseValue = default!,
+                GrowCurves = default!,
+                SkillDepot = default!,
+                FetterInfo = default!,
+                Costumes = default,
+                CultivationItems = [],
+                NameCard = default!,
+            };
+        }
+    }
+
+    extension(IMetadataDictionaryNameAvatarSource context)
+    {
+        public Avatar GetAvatar(string name)
+        {
+            return context.NameAvatarMap[name];
+        }
+    }
+
+    extension(IMetadataDictionaryIdMaterialSource context)
+    {
+        public Material GetMaterial(MaterialId id)
+        {
+            return context.IdMaterialMap[id];
+        }
+    }
+
+    extension(IMetadataDictionaryIdWeaponSource context)
+    {
+        public Weapon GetWeapon(WeaponId id)
+        {
+            if (context.IdWeaponMap.TryGetValue(id, out Weapon? weapon))
+            {
+                return weapon;
+            }
+
+            try
+            {
+                Ioc.Default.GetRequiredService<IMessenger>().Send(InfoBarMessage.Warning(SH.ServiceMetadataWeaponIdNotFound ?? "Weapon not found", $"{id}"));
+            }
+            catch
+            {
+                // ignore
+            }
+
+            return new Weapon()
+            {
+                Name = $"Unknown Weapon ({id})",
+                Icon = string.Empty,
+                Description = default!,
+                Id = id,
+                WeaponType = default,
+                Affix = default,
+                RankLevel = QualityType.QUALITY_NONE,
+                PromoteId = default,
+                AwakenIcon = string.Empty,
+                GrowCurves = default!,
+                Sort = default,
+                CultivationItems = [],
+            };
+        }
+    }
+
+    extension(IMetadataDictionaryNameWeaponSource context)
+    {
+        public Weapon GetWeapon(string name)
+        {
+            return context.NameWeaponMap[name];
+        }
+    }
+}

@@ -1,0 +1,520 @@
+<shuxc:ScopedPage
+    x:Class="kyxsan.UI.Xaml.View.Page.AvatarPropertyPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cw="using:CommunityToolkit.WinUI"
+    xmlns:cwcont="using:CommunityToolkit.WinUI.Controls"
+    xmlns:cwconv="using:CommunityToolkit.WinUI.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:shuxc="using:kyxsan.UI.Xaml.Control"
+    xmlns:shuxci="using:kyxsan.UI.Xaml.Control.Image"
+    xmlns:shuxcp="using:kyxsan.UI.Xaml.Control.Panel"
+    xmlns:shuxdcs="using:kyxsan.UI.Xaml.Data.Converter.Specialized"
+    xmlns:shuxm="using:kyxsan.UI.Xaml.Markup"
+    xmlns:shvap="using:kyxsan.ViewModel.AvatarProperty"
+    xmlns:shwga="using:kyxsan.Web.Hoyolab.Takumi.GameRecord.Avatar"
+    d:DataContext="{d:DesignInstance shvap:AvatarPropertyViewModel}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <cwconv:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+        <cwconv:BoolToObjectConverter x:Key="BoolToOpacityConverter">
+            <cwconv:BoolToObjectConverter.TrueValue>
+                <x:Double>1</x:Double>
+            </cwconv:BoolToObjectConverter.TrueValue>
+            <cwconv:BoolToObjectConverter.FalseValue>
+                <x:Double>0.5</x:Double>
+            </cwconv:BoolToObjectConverter.FalseValue>
+        </cwconv:BoolToObjectConverter>
+        <shuxdcs:FightPropertyToLocalizedStringConverter x:Key="FightPropertyToLocalizedStringConverter"/>
+
+        <!--  左侧角色列表模板  -->
+        <DataTemplate x:Key="AvatarListViewTemplate" x:DataType="shvap:CharacterView">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <shuxci:CachedImage
+                    Grid.Column="0"
+                    Width="48"
+                    Height="48"
+                    Margin="0,0,12,12"
+                    Source="{Binding SideIcon, Mode=OneWay}"/>
+                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                    <TextBlock
+                        Margin="12,0,0,0"
+                        Text="{Binding Name}"
+                        TextTrimming="CharacterEllipsis"
+                        TextWrapping="NoWrap"/>
+                    <TextBlock
+                        Margin="12,0,0,0"
+                        Opacity="0.7"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{Binding LevelFormatted}"
+                        TextWrapping="NoWrap"/>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+
+        <!--  命之座模板  -->
+        <DataTemplate x:Key="AvatarConstellationTemplate" x:DataType="shwga:Constellation">
+            <Button
+                Margin="0,0,2,0"
+                Padding="2"
+                Background="Transparent"
+                BorderBrush="{x:Null}">
+                <Button.Content>
+                    <Grid>
+                        <shuxci:CachedImage
+                            Width="36"
+                            Height="36"
+                            Opacity="{Binding IsActived, Converter={StaticResource BoolToOpacityConverter}}"
+                            Source="{Binding Icon}"/>
+                    </Grid>
+                </Button.Content>
+                <Button.Flyout>
+                    <Flyout Placement="Bottom">
+                        <StackPanel MaxWidth="320" Spacing="8">
+                            <TextBlock
+                                FontWeight="Bold"
+                                Text="{Binding Name}"
+                                TextWrapping="Wrap"/>
+                            <TextBlock
+                                Opacity="0.7"
+                                Text="{Binding Effect}"
+                                TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
+        </DataTemplate>
+
+        <!--  天赋技能模板  -->
+        <DataTemplate x:Key="AvatarSkillTemplate" x:DataType="shvap:SkillView">
+            <Grid Margin="0,2,0,0" Padding="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <shuxci:CachedImage
+                    Grid.Column="0"
+                    Width="36"
+                    Height="36"
+                    Source="{Binding Icon}"/>
+                <TextBlock
+                    Grid.Column="1"
+                    Margin="6,0,0,2"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Foreground="#FFFFFFFF"
+                    Style="{StaticResource BaseTextBlockStyle}">
+                    <Run Text="Lv. "/>
+                    <Run Text="{Binding Level}"/>
+                </TextBlock>
+            </Grid>
+        </DataTemplate>
+
+        <!--  角色属性模板  -->
+        <DataTemplate x:Key="AvatarPropertyTemplate" x:DataType="shwga:BaseProperty">
+            <Grid
+                Margin="-1,0"
+                Padding="16,12"
+                BorderBrush="{ThemeResource ControlStrokeColorDefaultBrush}"
+                BorderThickness="0,1,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="108"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock
+                    Grid.Column="0"
+                    HorizontalAlignment="Left"
+                    Text="{Binding PropertyType, Converter={StaticResource FightPropertyToLocalizedStringConverter}}"/>
+                <TextBlock
+                    Grid.Column="1"
+                    HorizontalAlignment="Right"
+                    Text="{Binding Final}"/>
+                <TextBlock
+                    Grid.Column="2"
+                    Margin="8,0,0,0"
+                    HorizontalAlignment="Left"
+                    Foreground="{StaticResource AvatarPropertyAddValueColorBrush}"
+                    Text="{Binding Add}"/>
+            </Grid>
+        </DataTemplate>
+
+        <!--  圣遗物副词条模板  -->
+        <DataTemplate x:Key="AvatarReliquarySubPropertyTemplate" x:DataType="shwga:ReliquaryProperty">
+            <Grid Padding="12,0" ColumnSpacing="6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock
+                    Style="{StaticResource BaseTextBlockStyle}"
+                    Text="{Binding PropertyType, Converter={StaticResource FightPropertyToLocalizedStringConverter}}"
+                    TextWrapping="NoWrap"/>
+                <TextBlock Grid.Column="1" Text="{Binding Value}"/>
+            </Grid>
+        </DataTemplate>
+
+        <!--  圣遗物模板  -->
+        <DataTemplate x:Key="AvatarReliquaryTemplate" x:DataType="shwga:Reliquary">
+            <Grid Style="{ThemeResource GridShimmerStyle}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid
+                    Grid.Row="0"
+                    Padding="12"
+                    ColumnSpacing="12">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <shuxc:ItemIcon
+                        Grid.Column="0"
+                        Width="48"
+                        Height="48"
+                        Icon="{Binding Icon}"
+                        Quality="{Binding Rarity}"/>
+                    <Grid Grid.Column="1">
+                        <StackPanel VerticalAlignment="Center" Spacing="2">
+                            <TextBlock>
+                                <Run Text="{Binding Name}"/>
+                                <Run FontSize="12" Foreground="{ThemeResource TextFillColorSecondaryBrush}" Text=" +"/>
+                                <Run FontSize="12" Foreground="{ThemeResource TextFillColorSecondaryBrush}" Text="{Binding Level}"/>
+                            </TextBlock>
+                            <TextBlock
+                                Opacity="0.7"
+                                Style="{StaticResource CaptionTextBlockStyle}"
+                                Text="{Binding ReliquarySet.Name}"/>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+                <Rectangle
+                    Grid.Row="1"
+                    Height="1"
+                    Fill="{ThemeResource ControlStrokeColorDefaultBrush}"/>
+                <!--  主词条  -->
+                <Grid Grid.Row="2" Padding="12">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
+                        FontWeight="Bold"
+                        Style="{StaticResource BaseTextBlockStyle}"
+                        Text="{Binding MainProperty.PropertyType, Converter={StaticResource FightPropertyToLocalizedStringConverter}}"/>
+                    <TextBlock
+                        Grid.Column="1"
+                        FontWeight="Bold"
+                        Style="{StaticResource BaseTextBlockStyle}"
+                        Text="{Binding MainProperty.Value}"/>
+                </Grid>
+                <Rectangle
+                    Grid.Row="3"
+                    Height="1"
+                    Fill="{ThemeResource ControlStrokeColorDefaultBrush}"/>
+                <ItemsControl
+                    Grid.Row="4"
+                    Margin="0,12"
+                    ItemTemplate="{StaticResource AvatarReliquarySubPropertyTemplate}"
+                    ItemsPanel="{ThemeResource StackPanelSpacing12Template}"
+                    ItemsSource="{Binding SubPropertyList}"/>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid>
+        <Border Background="#40000000"/>
+        <!--  未登录状态  -->
+        <Border
+            x:Name="NotLoggedInPanel"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            cw:Effects.Shadow="{ThemeResource CompatCardShadow}"
+            Visibility="Collapsed">
+            <Border
+                MinWidth="480"
+                Padding="16"
+                Style="{ThemeResource AcrylicBorderCardStyle}">
+                <StackPanel>
+                    <shuxci:CachedImage
+                        Width="120"
+                        Height="120"
+                        Source="{StaticResource UI_EmotionIcon250}"/>
+                    <TextBlock
+                        Margin="0,16,0,0"
+                        HorizontalAlignment="Center"
+                        Style="{StaticResource SubtitleTextBlockStyle}"
+                        Text="{shuxm:ResourceString Name=ViewCommonLoginRequiredHint}"/>
+                    <StackPanel Margin="0,24,0,0" Spacing="{StaticResource SettingsCardSpacing}">
+                        <cwcont:SettingsCard
+                            x:Name="LoginByQRCodeCard"
+                            Description="{shuxm:ResourceString Name=ViewCommonLoginQRCodeDescription}"
+                            Header="{shuxm:ResourceString Name=ViewCommonLoginQRCodeHeader}"
+                            HeaderIcon="{shuxm:FontIcon Glyph=&#xED14;}"
+                            IsClickEnabled="True"/>
+                        <cwcont:SettingsCard
+                            x:Name="LoginByMobileCaptchaCard"
+                            Description="{shuxm:ResourceString Name=ViewCommonLoginMobileCaptchaDescription}"
+                            Header="{shuxm:ResourceString Name=ViewCommonLoginMobileCaptchaHeader}"
+                            HeaderIcon="{shuxm:FontIcon Glyph=&#xE8EA;}"
+                            IsClickEnabled="True"/>
+                        <cwcont:SettingsCard
+                            x:Name="ManualInputCard"
+                            Description="{shuxm:ResourceString Name=ViewCommonLoginManualInputDescription}"
+                            Header="{shuxm:ResourceString Name=ViewCommonLoginManualInputHeader}"
+                            HeaderIcon="{shuxm:FontIcon Glyph=&#xE109;}"
+                            IsClickEnabled="True"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Border>
+
+        <!--  已登录状态  -->
+        <Grid x:Name="LoggedInPanel" Visibility="Collapsed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <!--  顶部命令栏  -->
+            <Border Margin="16,16,16,0" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                <Border Style="{ThemeResource AcrylicSecondaryBorderCardStyle}">
+                    <CommandBar
+                        Grid.Row="0"
+                        BorderBrush="{x:Null}"
+                        BorderThickness="0"
+                        DefaultLabelPosition="Right">
+                        <CommandBar.Content>
+                            <TextBlock
+                                Margin="16,8,0,0"
+                                VerticalAlignment="Center"
+                                Style="{StaticResource SubtitleTextBlockStyle}"
+                                Text="{shuxm:ResourceString Name=ViewAvatarPropertyHeader}"/>
+                        </CommandBar.Content>
+                        <AppBarButton
+                            Command="{Binding RefreshCommand}"
+                            Icon="{shuxm:FontIcon Glyph=&#xE72C;}"
+                            Label="{shuxm:ResourceString Name=ViewPageAvatarPropertyRefreshLabel}"/>
+                    </CommandBar>
+                </Border>
+            </Border>
+
+            <!--  SplitView：左侧角色列表 + 右侧详情  -->
+            <Border Grid.Row="1" Margin="16,16,16,16" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                <Border Style="{ThemeResource AcrylicBorderCardStyle}">
+                    <SplitView
+                        DisplayMode="Inline"
+                        IsPaneOpen="True"
+                        OpenPaneLength="{StaticResource CompatSplitViewOpenPaneLength}"
+                        PaneBackground="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+                        <SplitView.Pane>
+                            <ListView
+                                Padding="{ThemeResource ListViewInSplitPanePadding}"
+                                ItemTemplate="{StaticResource AvatarListViewTemplate}"
+                                ItemsSource="{Binding Characters}"
+                                SelectedItem="{Binding SelectedCharacter, Mode=TwoWay}"
+                                SelectionMode="Single"/>
+                        </SplitView.Pane>
+                        <SplitView.Content>
+                            <Grid>
+                                <!--  加载指示器  -->
+                                <ProgressRing
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    IsActive="{Binding IsLoadingDetail}"
+                                    Visibility="{Binding IsLoadingDetail, Converter={StaticResource BoolToVisibilityConverter}}"/>
+
+                                <!--  详情滚动区域  -->
+                                <ScrollViewer DataContext="{Binding CharacterDetail}">
+                                    <StackPanel
+                                        MaxWidth="800"
+                                        Margin="16"
+                                        HorizontalAlignment="Left"
+                                        Spacing="16">
+
+                                        <!--  名片横幅卡  -->
+                                        <Border cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                                            <Grid Style="{ThemeResource AcrylicGridCardStyle}">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition/>
+                                                    <RowDefinition Height="Auto"/>
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <cwcont:ConstrainedBox
+                                                    Grid.RowSpan="2"
+                                                    Grid.ColumnSpan="2"
+                                                    MinWidth="592"
+                                                    MinHeight="282"
+                                                    HorizontalAlignment="Center"
+                                                    AspectRatio="840:400"
+                                                    CornerRadius="{ThemeResource ControlCornerRadius}">
+                                                    <shuxci:CachedImage
+                                                        HorizontalAlignment="Center"
+                                                        VerticalAlignment="Center"
+                                                        Source="{Binding SplashImage}"
+                                                        Stretch="UniformToFill"/>
+                                                </cwcont:ConstrainedBox>
+
+                                                <Border
+                                                    Grid.Row="0"
+                                                    Grid.RowSpan="2"
+                                                    Grid.Column="0"
+                                                    Grid.ColumnSpan="2"
+                                                    Background="#80000000"
+                                                    CornerRadius="{ThemeResource ControlCornerRadius}"
+                                                    IsHitTestVisible="False"/>
+
+                                                <!--  角色 + 武器信息  -->
+                                                <StackPanel
+                                                    Grid.Row="0"
+                                                    Grid.Column="0"
+                                                    Margin="16"
+                                                    HorizontalAlignment="Left"
+                                                    VerticalAlignment="Top">
+                                                    <Grid HorizontalAlignment="Left">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition/>
+                                                            <ColumnDefinition Width="Auto"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <shuxc:ItemIcon
+                                                            cw:Effects.Shadow="{ThemeResource CompatCardShadow}"
+                                                            Icon="{Binding Icon}"
+                                                            Quality="{Binding Rarity}"/>
+                                                        <StackPanel Grid.Column="1" Margin="16,0,0,0">
+                                                            <TextBlock
+                                                                Foreground="#FFFFFFFF"
+                                                                Style="{StaticResource SubtitleTextBlockStyle}"
+                                                                Text="{Binding Name}"/>
+                                                            <TextBlock
+                                                                Margin="0,2,0,0"
+                                                                Foreground="#FFFFFFFF"
+                                                                Style="{StaticResource BaseTextBlockStyle}"
+                                                                Text="{Binding LevelFormatted}"/>
+                                                            <StackPanel Margin="0,2,0,0" Orientation="Horizontal">
+                                                                <FontIcon
+                                                                    FontSize="14"
+                                                                    Foreground="#FFFF6B6B"
+                                                                    Glyph="&#xEB51;"/>
+                                                                <TextBlock
+                                                                    Margin="4,0,0,2"
+                                                                    VerticalAlignment="Center"
+                                                                    Foreground="#FFFFFFFF"
+                                                                    Style="{StaticResource CaptionTextBlockStyle}"
+                                                                    Text="{Binding Fetter}"/>
+                                                            </StackPanel>
+                                                        </StackPanel>
+                                                    </Grid>
+                                                    <!--  武器  -->
+                                                    <Grid Margin="0,16,0,0" HorizontalAlignment="Left">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition/>
+                                                            <ColumnDefinition Width="Auto"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <shuxc:ItemIcon
+                                                            cw:Effects.Shadow="{ThemeResource CompatCardShadow}"
+                                                            Icon="{Binding WeaponIcon}"
+                                                            Quality="{Binding WeaponRarity}"/>
+                                                        <StackPanel Grid.Column="1" Margin="16,0,0,0">
+                                                            <TextBlock
+                                                                Foreground="#FFFFFFFF"
+                                                                Style="{StaticResource SubtitleTextBlockStyle}"
+                                                                Text="{Binding WeaponName}"/>
+                                                            <TextBlock
+                                                                Margin="0,2,0,0"
+                                                                Foreground="#FFFFFFFF"
+                                                                Style="{StaticResource BaseTextBlockStyle}"
+                                                                Text="{Binding WeaponLevelFormatted}"/>
+                                                            <TextBlock
+                                                                Margin="0,2,0,0"
+                                                                Foreground="#FFFFFFFF"
+                                                                Style="{StaticResource CaptionTextBlockStyle}">
+                                                                <Run Text="{shuxm:ResourceString Name=ViewPageAvatarPropertyWeaponAffixPrefix}"/>
+                                                                <Run Text="{Binding WeaponAffixLevel}"/>
+                                                                <Run Text="{shuxm:ResourceString Name=ViewPageAvatarPropertyWeaponAffixSuffix}"/>
+                                                            </TextBlock>
+                                                        </StackPanel>
+                                                    </Grid>
+                                                </StackPanel>
+
+                                                <!--  天赋技能（右侧）  -->
+                                                <ItemsControl
+                                                    Grid.Row="0"
+                                                    Grid.RowSpan="2"
+                                                    Grid.Column="1"
+                                                    Margin="16"
+                                                    VerticalAlignment="Bottom"
+                                                    ItemTemplate="{StaticResource AvatarSkillTemplate}"
+                                                    ItemsSource="{Binding Skills}"/>
+
+                                                <!--  命之座（底部）  -->
+                                                <ItemsControl
+                                                    Grid.Row="1"
+                                                    Grid.Column="0"
+                                                    Margin="16"
+                                                    ItemTemplate="{StaticResource AvatarConstellationTemplate}"
+                                                    ItemsPanel="{StaticResource HorizontalStackPanelSpacing0Template}"
+                                                    ItemsSource="{Binding Constellations}"/>
+                                            </Grid>
+                                        </Border>
+
+                                        <!--  角色属性折叠面板  -->
+                                        <Border>
+                                            <Border.Resources>
+                                                <SolidColorBrush x:Key="ExpanderContentBackground" Color="Transparent"/>
+                                                <SolidColorBrush x:Key="ExpanderContentBorderBrush" Color="{ThemeResource ControlStrokeColorDefault}"/>
+                                                <SolidColorBrush x:Key="ExpanderHeaderBorderBrush" Color="{ThemeResource ControlStrokeColorDefault}"/>
+                                                <SolidColorBrush x:Key="ExpanderHeaderBackground" Color="{ThemeResource ControlAltFillColorSecondary}"/>
+                                                <SolidColorBrush x:Key="ExpanderHeaderBorderPointerOverBrush" Color="{ThemeResource ControlStrokeColorDefault}"/>
+                                            </Border.Resources>
+                                            <Expander
+                                                Margin="0"
+                                                Padding="0"
+                                                HorizontalAlignment="Stretch"
+                                                HorizontalContentAlignment="Stretch"
+                                                Header="{shuxm:ResourceString Name=ViewPageAvatarPropertyPropertiesHeader}">
+                                                <Border
+                                                    Margin="0,-1,0,0"
+                                                    Background="{ThemeResource ControlAltFillColorSecondaryBrush}"
+                                                    BorderThickness="0">
+                                                    <ItemsControl ItemTemplate="{StaticResource AvatarPropertyTemplate}" ItemsSource="{Binding Properties}"/>
+                                                </Border>
+                                            </Expander>
+                                        </Border>
+
+                                        <!--  圣遗物网格  -->
+                                        <ItemsControl ItemTemplate="{StaticResource AvatarReliquaryTemplate}" ItemsSource="{Binding Relics}">
+                                            <ItemsControl.ItemsPanel>
+                                                <ItemsPanelTemplate>
+                                                    <shuxcp:UniformPanel
+                                                        ColumnSpacing="12"
+                                                        MinItemWidth="240"
+                                                        RowSpacing="12"/>
+                                                </ItemsPanelTemplate>
+                                            </ItemsControl.ItemsPanel>
+                                        </ItemsControl>
+
+                                    </StackPanel>
+                                </ScrollViewer>
+                            </Grid>
+                        </SplitView.Content>
+                    </SplitView>
+                </Border>
+            </Border>
+        </Grid>
+    </Grid>
+</shuxc:ScopedPage>

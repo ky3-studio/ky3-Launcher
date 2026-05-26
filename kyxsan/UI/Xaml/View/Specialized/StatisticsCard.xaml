@@ -1,0 +1,352 @@
+<UserControl
+    x:Class="kyxsan.UI.Xaml.View.Specialized.StatisticsCard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cw="using:CommunityToolkit.WinUI"
+    xmlns:cwcont="using:CommunityToolkit.WinUI.Controls"
+    xmlns:cwconv="using:CommunityToolkit.WinUI.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:shux="using:kyxsan.UI.Xaml"
+    xmlns:shuxc="using:kyxsan.UI.Xaml.Control"
+    xmlns:shuxcc="using:kyxsan.UI.Xaml.Control.Card"
+    xmlns:shuxci="using:kyxsan.UI.Xaml.Control.Image"
+    xmlns:shuxdc="using:kyxsan.UI.Xaml.Data.Converter"
+    xmlns:shuxdcs="using:kyxsan.UI.Xaml.Data.Converter.Specialized"
+    xmlns:shuxm="using:kyxsan.UI.Xaml.Markup"
+    xmlns:shuxvs="using:kyxsan.UI.Xaml.View.Specialized"
+    xmlns:shvg="using:kyxsan.ViewModel.GachaLog"
+    cw:Effects.Shadow="{ThemeResource CompatCardShadow}"
+    d:DataContext="{d:DesignInstance shvg:TypedWishSummary}"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light">
+                    <cwconv:BoolToObjectConverter
+                        x:Key="BoolToBrushConverter"
+                        FalseValue="{ThemeResource SystemFillColorCriticalBackgroundBrush}"
+                        TrueValue="{ThemeResource ControlAltFillColorSecondaryBrush}"/>
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Dark">
+                    <cwconv:BoolToObjectConverter
+                        x:Key="BoolToBrushConverter"
+                        FalseValue="{ThemeResource SystemFillColorCriticalBackgroundBrush}"
+                        TrueValue="{ThemeResource ControlAltFillColorSecondaryBrush}"/>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+
+            <shuxdcs:BoolToGridLengthConverter x:Key="BoolToGridLengthConverter"/>
+            <shuxdcs:BoolToGridLengthConverter
+                x:Key="BoolToGridLengthSpacingConverter"
+                FalseValue="0"
+                TrueValue="4"/>
+
+            <shuxdcs:Int32ToGradientColorConverter x:Key="Int32ToGradientColorConverter" MaximumValue="{Binding GuaranteeOrangeThreshold}"/>
+
+            <shuxdc:SpecificStringToVisibilityConverter x:Key="ListVisibilityConverter" Value="List"/>
+            <shuxdc:SpecificStringToVisibilityConverter x:Key="GridVisibilityConverter" Value="Grid"/>
+
+            <DataTemplate x:Key="OrangeListTemplate" x:DataType="shvg:SummaryItem">
+                <Grid Margin="0" Style="{ThemeResource GridShimmerStyle}">
+                    <ToolTipService.ToolTip>
+                        <TextBlock Text="{Binding FormattedTime}"/>
+                    </ToolTipService.ToolTip>
+
+                    <ProgressBar
+                        MinHeight="40"
+                        Background="Transparent"
+                        CornerRadius="{StaticResource ControlCornerRadius}"
+                        Maximum="{Binding GuaranteeOrangeThreshold}"
+                        Opacity="{StaticResource LargeBackgroundProgressBarOpacity}"
+                        Value="{Binding LastPull}">
+                        <ProgressBar.Foreground>
+                            <SolidColorBrush Color="{Binding LastPull, Converter={StaticResource Int32ToGradientColorConverter}}"/>
+                        </ProgressBar.Foreground>
+                    </ProgressBar>
+
+                    <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                        <shuxci:CachedImage
+                            shux:FrameworkElementHelper.SquareLength="40"
+                            CornerRadius="{ThemeResource ControlCornerRadius}"
+                            Source="{Binding Icon}"/>
+                        <TextBlock
+                            Margin="16,0,0,0"
+                            VerticalAlignment="Center"
+                            Text="{Binding Name}">
+                            <TextBlock.Foreground>
+                                <SolidColorBrush Color="{Binding Color}"/>
+                            </TextBlock.Foreground>
+                        </TextBlock>
+                    </StackPanel>
+
+                    <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                        <TextBlock
+                            Margin="0,0,8,0"
+                            VerticalAlignment="Center"
+                            Foreground="{StaticResource GuaranteePullColorBrush}"
+                            Text="{shuxm:ResourceString Name=ViewControlStatisticsCardGuaranteeText}"
+                            Visibility="{Binding IsGuarantee, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                        <TextBlock
+                            Margin="0,0,8,0"
+                            VerticalAlignment="Center"
+                            Foreground="{StaticResource UpPullColorBrush}"
+                            Text="{shuxm:ResourceString Name=ViewControlStatisticsCardUpText}"
+                            Visibility="{Binding IsUp, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                        <TextBlock
+                            Margin="0,0,8,0"
+                            VerticalAlignment="Center"
+                            Foreground="{StaticResource NotUpPullColorBrush}"
+                            Text="{shuxm:ResourceString Name=ViewControlStatisticsCardNotUpText}"
+                            Visibility="{Binding IsNotUp, Converter={StaticResource BoolToVisibilityConverter}}"/>
+
+                        <TextBlock
+                            Width="24"
+                            Margin="0,0,8,0"
+                            VerticalAlignment="Center"
+                            Style="{StaticResource BodyTextBlockStyle}"
+                            Text="{Binding LastPull}"
+                            TextAlignment="Center"
+                            TextWrapping="NoWrap"/>
+                    </StackPanel>
+                </Grid>
+            </DataTemplate>
+
+            <DataTemplate x:Key="OrangeGridTemplate" x:DataType="shvg:SummaryItem">
+                <shuxcc:VerticalCard
+                    Background="{Binding IsUp, Converter={ThemeResource BoolToBrushConverter}}"
+                    BottomPadding="0,1"
+                    ToolTipService.ToolTip="{Binding FormattedTime}">
+                    <shuxcc:VerticalCard.Top>
+                        <shuxc:ItemIcon
+                            shux:FrameworkElementHelper.SquareLength="40"
+                            Icon="{Binding Icon}"
+                            Quality="{Binding Quality}"/>
+                    </shuxcc:VerticalCard.Top>
+                    <shuxcc:VerticalCard.Bottom>
+                        <TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="{Binding LastPull}">
+                            <TextBlock.Foreground>
+                                <SolidColorBrush Color="{Binding Color}"/>
+                            </TextBlock.Foreground>
+                        </TextBlock>
+                    </shuxcc:VerticalCard.Bottom>
+                </shuxcc:VerticalCard>
+            </DataTemplate>
+        </ResourceDictionary>
+
+    </UserControl.Resources>
+
+    <Grid Style="{ThemeResource AcrylicGridCardStyle}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Expander
+            x:Name="DetailExpander"
+            Padding="12,0,12,0"
+            HorizontalAlignment="Stretch"
+            HorizontalContentAlignment="Stretch"
+            Background="Transparent"
+            BorderBrush="{x:Null}"
+            BorderThickness="0"
+            CornerRadius="4,4,0,0"
+            IsExpanded="True">
+            <Expander.Resources>
+                <!--  ReSharper disable once Xaml.RedundantResource  -->
+                <Thickness x:Key="ExpanderHeaderBorderThickness">0,0,0,1</Thickness>
+            </Expander.Resources>
+            <Expander.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
+                        Grid.Column="0"
+                        VerticalAlignment="Center"
+                        Style="{StaticResource SubtitleTextBlockStyle}"
+                        Text="{Binding Name}"
+                        TextWrapping="NoWrap"/>
+                    <StackPanel
+                        Grid.Column="1"
+                        Margin="0,0,-12,0"
+                        HorizontalAlignment="Right"
+                        Orientation="Horizontal">
+                        <Viewbox StretchDirection="DownOnly" Visibility="{x:Bind DetailExpander.IsExpanded, Converter={StaticResource BoolToVisibilityRevertConverter}, Mode=OneWay}">
+                            <TextBlock
+                                Margin="0,0,6,0"
+                                VerticalAlignment="Center"
+                                FontSize="20"
+                                Style="{StaticResource BodyTextBlockStyle}"
+                                Text="{Binding FormattedTotalCount}"
+                                TextTrimming="None"
+                                TextWrapping="NoWrap"/>
+                        </Viewbox>
+                        <shuxc:LayoutSwitch
+                            x:Name="ItemsPanelSelector"
+                            Margin="6,0,0,0"
+                            Current="Grid"
+                            LocalSettingKeyExtraForCurrent="{Binding TypeName}"
+                            LocalSettingKeySuffixForCurrent="StatisticsCard.OrangeList"
+                            Visibility="{x:Bind DetailExpander.IsExpanded, Converter={StaticResource BoolToVisibilityConverter}, Mode=OneWay}"/>
+                    </StackPanel>
+                </Grid>
+            </Expander.Header>
+
+            <StackPanel>
+                <StackPanel Margin="0,0,0,12">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock
+                            Margin="0,4,0,4"
+                            FontFamily="{StaticResource CascadiaMonoAndMiSans}"
+                            FontSize="48"
+                            Text="{Binding TotalCount}"/>
+                        <TextBlock
+                            Margin="4,0"
+                            VerticalAlignment="Bottom"
+                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                            Style="{StaticResource SubtitleTextBlockStyle}"
+                            Text="{Binding FormattedTotalCount}"/>
+                    </StackPanel>
+                    <TextBlock
+                        Margin="0,4,0,0"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{Binding FormattedTimeSpan}"/>
+                </StackPanel>
+
+                <Grid Margin="0,0,0,12">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="4"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="{x:Bind ShowUpPull, Converter={StaticResource BoolToGridLengthSpacingConverter}, Mode=OneWay}"/>
+                        <RowDefinition Height="{x:Bind ShowUpPull, Converter={StaticResource BoolToGridLengthConverter}, Mode=OneWay}"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Foreground="{StaticResource OrangeColorBrush}"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{shuxm:ResourceString Name=ViewControlStatisticsCardOrangeText}"/>
+                    <TextBlock
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        Foreground="{StaticResource OrangeColorBrush}"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{Binding FormattedTotalOrange}"/>
+
+                    <TextBlock
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Foreground="{StaticResource PurpleColorBrush}"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{shuxm:ResourceString Name=ViewControlStatisticsCardPurpleText}"/>
+                    <TextBlock
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Foreground="{StaticResource PurpleColorBrush}"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{Binding FormattedTotalPurple}"/>
+
+                    <TextBlock
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        Foreground="{StaticResource BlueColorBrush}"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{shuxm:ResourceString Name=ViewControlStatisticsCardBlueText}"/>
+                    <TextBlock
+                        Grid.Row="2"
+                        Grid.Column="2"
+                        Foreground="{StaticResource BlueColorBrush}"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{Binding FormattedTotalBlue}"/>
+
+                    <Border
+                        Grid.Row="3"
+                        Grid.ColumnSpan="3"
+                        Height="4"/>
+
+                    <TextBlock
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{shuxm:ResourceString Name=ViewControlStatisticsCardToLastOrangeText}"/>
+                    <TextBlock
+                        Grid.Row="4"
+                        Grid.Column="2"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{Binding LastOrangePull}"/>
+
+                    <TextBlock
+                        Grid.Row="5"
+                        Grid.Column="0"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{shuxm:ResourceString Name=ViewControlStatisticsCardOrangeAveragePullText}"/>
+                    <TextBlock
+                        Grid.Row="5"
+                        Grid.Column="2"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{Binding FormattedAverageOrangePull}"/>
+
+                    <TextBlock
+                        Grid.Row="6"
+                        Grid.Column="0"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{Binding FormattedMaxOrangePull}"/>
+                    <TextBlock
+                        Grid.Row="6"
+                        Grid.Column="2"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{Binding FormattedMinOrangePull}"/>
+
+                    <TextBlock
+                        Grid.Row="8"
+                        Grid.Column="0"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{shuxm:ResourceString Name=ViewControlStatisticsCardUpAveragePullText}"/>
+                    <TextBlock
+                        Grid.Row="8"
+                        Grid.Column="2"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{Binding FormattedAverageUpOrangePull}"/>
+                </Grid>
+
+                <StackPanel Margin="0,0,0,8" Spacing="4">
+                    <TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="{Binding FormattedPredictedPullLeftToOrange}" Visibility="{Binding IsPredictPullAvailable, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                    <TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="{Binding FormattedProbabilityOfNextPullIsOrange}" Visibility="{Binding IsPredictPullAvailable, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                </StackPanel>
+            </StackPanel>
+        </Expander>
+
+        <Border
+            Grid.Row="1"
+            BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+            BorderThickness="0,1,0,0"/>
+
+        <ScrollViewer Grid.Row="2" Padding="12,0,12,4">
+            <Grid>
+                <ItemsControl
+                    ItemTemplate="{StaticResource OrangeListTemplate}"
+                    ItemsSource="{Binding OrangeList}"
+                    Visibility="{Binding ElementName=ItemsPanelSelector, Path=Current, Converter={StaticResource ListVisibilityConverter}}"/>
+                <ItemsControl
+                    ItemTemplate="{StaticResource OrangeGridTemplate}"
+                    ItemsPanel="{StaticResource WrapPanelSpacing4Template}"
+                    ItemsSource="{Binding OrangeList}"
+                    Visibility="{Binding ElementName=ItemsPanelSelector, Path=Current, Converter={StaticResource GridVisibilityConverter}}"/>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

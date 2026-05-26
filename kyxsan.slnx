@@ -1,0 +1,25 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".vsconfig" />
+  </Folder>
+  <Project Path="Runner/Runner.vcxproj" Id="6036ba85-1153-4c90-8c3f-68700faef6cf">
+    <Platform Solution="*|ARM64" Project="x64" />
+  </Project>
+  <Project Path="kyxsan.Installer/kyxsan.Installer.wixproj" Type="b7dd6f7e-def8-4e67-b5b7-07ef123db6f0" Id="91a04cd0-28cc-4562-92e1-202bc163edd7">
+    <BuildDependency Project="Runner/Runner.vcxproj" />
+    <Platform Solution="*|Any CPU" Project="x64" />
+  </Project>
+
+  <Project Path="kyxsan\kyxsan.csproj">
+    <Platform Project="x64" />
+    <Deploy Solution="*|Any CPU" />
+    <Deploy Solution="*|x64" />
+  </Project>
+</Solution>

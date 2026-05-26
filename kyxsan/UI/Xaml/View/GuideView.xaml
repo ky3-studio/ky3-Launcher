@@ -1,0 +1,292 @@
+<UserControl
+    x:Class="kyxsan.UI.Xaml.View.GuideView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cw="using:CommunityToolkit.WinUI"
+    xmlns:cwc="using:CommunityToolkit.WinUI.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mxi="using:Microsoft.Xaml.Interactivity"
+    xmlns:shm="using:kyxsan.Model"
+    xmlns:shuxb="using:kyxsan.UI.Xaml.Behavior"
+    xmlns:shuxce="using:kyxsan.UI.Xaml.Control.Effect"
+    xmlns:shuxm="using:kyxsan.UI.Xaml.Markup"
+    xmlns:shvg="using:kyxsan.ViewModel.Guide"
+    d:DataContext="{d:DesignInstance shvg:GuideViewModel}"
+    mc:Ignorable="d">
+
+    <mxi:Interaction.Behaviors>
+        <shuxb:InvokeCommandOnLoadedBehavior Command="{Binding LoadCommand}"/>
+    </mxi:Interaction.Behaviors>
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="LanguageTemplate" x:DataType="shm:NameCultureInfoValue">
+                <Grid MinWidth="280" Margin="16">
+                    <StackPanel>
+                        <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Text="{Binding Name}"/>
+                        <TextBlock Opacity="0.8" Text="{Binding Value}"/>
+                    </StackPanel>
+                </Grid>
+            </DataTemplate>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <cwc:SwitchPresenter
+            Grid.Row="0"
+            ContentTransitions="{ThemeResource EntranceThemeTransitions}"
+            Value="{Binding State, Mode=OneWay}">
+
+            <!--  Language  -->
+            <cwc:Case Value="{shuxm:UInt32 Value=0}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <shuxce:TextMorphEffect
+                        Grid.Row="0"
+                        BlurAmount="5"
+                        ColorBrush="{ThemeResource TextFillColorPrimary}"
+                        Delimiter="+"
+                        EffectFontSize="36"
+                        EffectHorizontalAlignment="Center"
+                        EffectVerticalAlignment="Center"
+                        Text="{Binding AllCulturesWelcomeText}"/>
+                    <Border
+                        Grid.Row="1"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Style="{ThemeResource BorderShimmerStyle}">
+                        <GridView
+                            Padding="0,0,-12,-12"
+                            ItemContainerStyle="{ThemeResource LargeGridViewItemStyle}"
+                            ItemTemplate="{StaticResource LanguageTemplate}"
+                            ItemsSource="{Binding CultureOptions.Cultures}"
+                            SelectedItem="{Binding SelectedCulture, Mode=TwoWay}"
+                            SelectionMode="Single"/>
+                    </Border>
+                </Grid>
+            </cwc:Case>
+
+            <!--  Document  -->
+            <cwc:Case Value="{shuxm:UInt32 Value=1}">
+                <Grid Margin="32,16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <ScrollViewer Grid.Row="0" x:Name="AgreementScrollViewer" ViewChanged="AgreementScrollViewer_ViewChanged">
+                        <RichTextBlock x:Name="AgreementRichText" MaxWidth="900" TextWrapping="Wrap" IsTextSelectionEnabled="True"/>
+                    </ScrollViewer>
+
+                    <InfoBar
+                        Grid.Row="1"
+                        x:Name="ScrollHintInfoBar"
+                        IsOpen="True"
+                        IsClosable="False"
+                        Severity="Informational"
+                        Title="&#x8BF7;&#x6EDA;&#x52A8;&#x81F3;&#x5E95;&#x90E8;&#x9605;&#x8BFB;&#x5B8C;&#x6574;&#x534F;&#x8BAE;"
+                        Margin="0,8,0,0"/>
+
+                    <StackPanel Grid.Row="2" Margin="0,8,0,0" Spacing="8">
+                        <CheckBox x:Name="TermOfServiceCheckBox" IsEnabled="False" IsChecked="{Binding IsTermOfServiceAgreed, Mode=TwoWay}">
+                            <TextBlock>
+                                <Run Text="{shuxm:ResourceString Name=ViewGuideStepAgreementIHaveReadText}"/>
+                                <Run Text=" "/>
+                                <Run Text="{shuxm:ResourceString Name=ViewGuideStepAgreementTermOfService}"/>
+                            </TextBlock>
+                        </CheckBox>
+                        <CheckBox x:Name="PrivacyPolicyCheckBox" IsEnabled="False" IsChecked="{Binding IsPrivacyPolicyAgreed, Mode=TwoWay}">
+                            <TextBlock>
+                                <Run Text="{shuxm:ResourceString Name=ViewGuideStepAgreementIHaveReadText}"/>
+                                <Run Text=" "/>
+                                <Run Text="{shuxm:ResourceString Name=ViewGuideStepAgreementPrivacyPolicy}"/>
+                            </TextBlock>
+                        </CheckBox>
+                    </StackPanel>
+                </Grid>
+            </cwc:Case>
+
+            <!--  Environment  -->
+            <cwc:Case Value="{shuxm:UInt32 Value=2}">
+                <Grid>
+                    <StackPanel
+                        Margin="16"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Spacing="{ThemeResource SettingsCardSpacing}">
+                        <TextBlock
+                            Margin="1,0,0,5"
+                            Style="{StaticResource TitleTextBlockStyle}"
+                            Text="Segoe Fluent Icons"/>
+                        <StackPanel
+                            Margin="0,8"
+                            Orientation="Horizontal"
+                            Spacing="8">
+                            <FontIcon FontSize="{StaticResource SubtitleTextBlockFontSize}" Glyph="&#xE8DF;"/>
+                            <FontIcon FontSize="{StaticResource SubtitleTextBlockFontSize}" Glyph="&#xEF58;"/>
+                            <FontIcon FontSize="{StaticResource SubtitleTextBlockFontSize}" Glyph="&#xED56;"/>
+                            <FontIcon FontSize="{StaticResource SubtitleTextBlockFontSize}" Glyph="&#xF012;"/>
+                            <FontIcon FontSize="{StaticResource SubtitleTextBlockFontSize}" Glyph="&#xF439;"/>
+                            <FontIcon FontSize="{StaticResource SubtitleTextBlockFontSize}" Glyph="&#xF6A9;"/>
+                        </StackPanel>
+                        <TextBlock>
+                            <Run Text="{shuxm:ResourceString Name=ViewGuideStepEnvironmentFontDescription1}"/>
+                            <Hyperlink NavigateUri="https://aka.ms/SegoeFluentIcons">
+                                <Run Text="Microsoft"/>
+                            </Hyperlink>
+                            <Run Text="{shuxm:ResourceString Name=ViewGuideStepEnvironmentFontDescription2}"/>
+                        </TextBlock>
+                        <TextBlock Text="{shuxm:ResourceString Name=ViewGuideStepEnvironmentAfterInstallDescription}"/>
+                        <TextBlock
+                            Margin="1,32,0,5"
+                            Style="{StaticResource TitleTextBlockStyle}"
+                            Text="{shuxm:ResourceString Name=ViewPageSettingWebview2Header}"/>
+                        <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Text="{Binding RuntimeOptions.WebView2Version}"/>
+                        <TextBlock>
+                            <Run Text="{shuxm:ResourceString Name=ViewGuideStepEnvironmentWebView2Description1}"/>
+                            <Hyperlink NavigateUri="https://go.microsoft.com/fwlink/p/?LinkId=2124703">
+                                <Run Text="Microsoft"/>
+                            </Hyperlink>
+                            <Run Text="{shuxm:ResourceString Name=ViewGuideStepEnvironmentWebView2Description2}"/>
+                        </TextBlock>
+                        <TextBlock Text="{shuxm:ResourceString Name=ViewGuideStepEnvironmentAfterInstallDescription}"/>
+                    </StackPanel>
+                </Grid>
+            </cwc:Case>
+
+            <!--  DataFolder  -->
+            <cwc:Case Value="{shuxm:UInt32 Value=3}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel
+                        Grid.Row="0"
+                        Margin="16"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Spacing="{ThemeResource SettingsCardSpacing}">
+                        <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="{shuxm:ResourceString Name=ViewGuideStepDataFolderHeader}"/>
+                        <cwc:SettingsCard
+                            HorizontalAlignment="Stretch"
+                            ActionIcon="{shuxm:FontIcon Glyph=&#xE76C;}"
+                            ActionIconToolTip="{shuxm:ResourceString Name=ViewPageSettingStorageSetAction}"
+                            Command="{Binding SetDataFolderCommand}"
+                            Description="{Binding DataFolderPath}"
+                            Header="{shuxm:ResourceString Name=ViewPageSettingSetDataFolderHeader}"
+                            IsClickEnabled="True"/>
+                        <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="{shuxm:ResourceString Name=ViewGuideStepCacheFolderHeader}"/>
+                        <cwc:SettingsCard
+                            HorizontalAlignment="Stretch"
+                            ActionIcon="{shuxm:FontIcon Glyph=&#xE76C;}"
+                            ActionIconToolTip="{shuxm:ResourceString Name=ViewPageSettingStorageSetAction}"
+                            Command="{Binding SetCacheFolderCommand}"
+                            Description="{Binding CacheFolderPath}"
+                            Header="{shuxm:ResourceString Name=ViewPageSettingSetCacheFolderHeader}"
+                            IsClickEnabled="True"/>
+                    </StackPanel>
+                    <TextBlock
+                        Grid.Row="1"
+                        Margin="16"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        HorizontalTextAlignment="Center"
+                        Opacity="0.7"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{shuxm:ResourceString Name=ViewGuideStepDataFolderHint}"/>
+                </Grid>
+            </cwc:Case>
+
+            <!--  CommonSetting  -->
+            <cwc:Case Value="{shuxm:UInt32 Value=4}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel
+                        Grid.Row="0"
+                        Margin="16"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                        <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Text="{shuxm:ResourceString Name=ViewPageSettingHomeAnnouncementRegionHeader}"/>
+                        <ListView
+                            MinWidth="320"
+                            Margin="0,8,0,0"
+                            DisplayMemberPath="Name"
+                            ItemsSource="{Binding AppOptions.LazyRegions.Value}"
+                            SelectedItem="{Binding SelectedRegion, Mode=TwoWay}"/>
+                    </StackPanel>
+                    <TextBlock
+                        Grid.Row="1"
+                        Margin="16"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        HorizontalTextAlignment="Center"
+                        Opacity="0.7"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{shuxm:ResourceString Name=ViewGuideStepCommonSettingHint}"/>
+                </Grid>
+            </cwc:Case>
+
+            <!--  Completed  -->
+            <cwc:Case Value="{shuxm:UInt32 Value=5}">
+                <Grid>
+                    <StackPanel
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Spacing="32">
+                        <Image
+                            Width="220"
+                            Height="220"
+                            HorizontalAlignment="Center"
+                            Source="ms-appx:///Assets/kyxsan%20logo.png"/>
+                        <shuxce:TextMorphEffect
+                            Width="500"
+                            Height="100"
+                            BlurAmount="5"
+                            ColorBrush="{ThemeResource TextFillColorPrimary}"
+                            EffectFontSize="36"
+                            EffectHorizontalAlignment="Center"
+                            EffectVerticalAlignment="Center"
+                            Text="欢迎使用 ky3 Launcher"/>
+                    </StackPanel>
+                </Grid>
+            </cwc:Case>
+        </cwc:SwitchPresenter>
+
+        <Grid Grid.Row="1">
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <cwc:Segmented
+                    Margin="16"
+                    HorizontalAlignment="Center"
+                    IsHitTestVisible="False"
+                    SelectedIndex="{Binding State, Mode=TwoWay}">
+                    <cwc:SegmentedItem Icon="{shuxm:FontIcon Glyph=&#xF2B7;}"/>
+                    <cwc:SegmentedItem Icon="{shuxm:FontIcon Glyph=&#xF28B;}"/>
+                    <cwc:SegmentedItem Icon="{shuxm:FontIcon Glyph=&#xE81E;}"/>
+                    <cwc:SegmentedItem Icon="{shuxm:FontIcon Glyph=&#xE8B7;}"/>
+                    <cwc:SegmentedItem Icon="{shuxm:FontIcon Glyph=&#xE713;}"/>
+                    <cwc:SegmentedItem Icon="{shuxm:FontIcon Glyph=&#xE930;}"/>
+                </cwc:Segmented>
+                <Button
+                    Command="{Binding NextOrCompleteCommand}"
+                    Content="{Binding NextOrCompleteButtonText}"
+                    IsEnabled="{Binding IsNextOrCompleteButtonEnabled}"
+                    Style="{ThemeResource AccentButtonStyle}"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,53 @@
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+// | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
+// | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
+// | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
+// |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
+// Copyright (c) DGP Studio. All rights reserved.
+// Modified by kyxsan.
+// Licensed under the MIT license.
+
+using CommunityToolkit.WinUI.Behaviors;
+using Microsoft.UI.Xaml.Controls;
+
+namespace kyxsan.UI.Xaml.Behavior;
+
+[SuppressMessage("", "CA1001")]
+[DependencyProperty<int>("MilliSecondsDelay", NotNull = true)]
+internal sealed partial class InfoBarDelayCloseBehavior : BehaviorBase<InfoBar>
+{
+    private readonly CancellationTokenSource userCloseTokenSource = new();
+
+    protected override void OnAssociatedObjectLoaded()
+    {
+        AssociatedObject.Closed += OnInfoBarClosed;
+        if (MilliSecondsDelay > 0)
+        {
+            PrivateDelayAsync().SafeForget();
+        }
+    }
+
+    private async ValueTask PrivateDelayAsync()
+    {
+        try
+        {
+            await Task.Delay(MilliSecondsDelay, userCloseTokenSource.Token).ConfigureAwait(true);
+        }
+        catch (OperationCanceledException)
+        {
+            return;
+        }
+
+        AssociatedObject?.IsOpen = false;
+    }
+
+    private void OnInfoBarClosed(InfoBar infoBar, InfoBarClosedEventArgs args)
+    {
+        if (args.Reason is InfoBarCloseReason.CloseButton)
+        {
+            userCloseTokenSource.Cancel();
+        }
+
+        AssociatedObject.Closed -= OnInfoBarClosed;
+    }
+}

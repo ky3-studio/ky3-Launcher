@@ -1,0 +1,426 @@
+<shuxc:ScopedPage
+    x:Class="kyxsan.UI.Xaml.View.Page.GachaLogPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cw="using:CommunityToolkit.WinUI"
+    xmlns:cwcont="using:CommunityToolkit.WinUI.Controls"
+    xmlns:cwconv="using:CommunityToolkit.WinUI.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mxi="using:Microsoft.Xaml.Interactivity"
+    xmlns:shuxb="using:kyxsan.UI.Xaml.Behavior"
+    xmlns:shuxc="using:kyxsan.UI.Xaml.Control"
+    xmlns:shuxcc="using:kyxsan.UI.Xaml.Control.Card"
+    xmlns:shuxci="using:kyxsan.UI.Xaml.Control.Image"
+    xmlns:shuxcp="using:kyxsan.UI.Xaml.Control.Panel"
+    xmlns:shuxm="using:kyxsan.UI.Xaml.Markup"
+    xmlns:shuxvs="using:kyxsan.UI.Xaml.View.Specialized"
+    xmlns:shvg="using:kyxsan.ViewModel.GachaLog"
+    d:DataContext="{d:DesignInstance shvg:GachaLogViewModel}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <mxi:Interaction.Behaviors>
+        <shuxb:InvokeCommandOnLoadedBehavior Command="{Binding LoadCommand}"/>
+    </mxi:Interaction.Behaviors>
+
+    <Page.Resources>
+        <cwconv:DoubleToObjectConverter
+            x:Key="DoubleToOpacityConverter"
+            FalseValue="0.4"
+            GreaterThan="0"
+            TrueValue="1.0"/>
+
+        <DataTemplate x:Key="HistoryWishItemTemplate" x:DataType="shvg:StatisticsItem">
+            <shuxcc:VerticalCard>
+                <shuxcc:VerticalCard.Top>
+                    <shuxc:ItemIcon
+                        Width="40"
+                        Height="40"
+                        Icon="{Binding Icon}"
+                        Quality="{Binding Quality}"/>
+                </shuxcc:VerticalCard.Top>
+                <shuxcc:VerticalCard.Bottom>
+                    <TextBlock
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{Binding Count}"
+                        TextTrimming="None"
+                        TextWrapping="NoWrap"/>
+                </shuxcc:VerticalCard.Bottom>
+            </shuxcc:VerticalCard>
+        </DataTemplate>
+
+        <DataTemplate x:Key="HistoryWishListTemplate" x:DataType="shvg:HistoryWish">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <StackPanel
+                    Margin="0,8,0,0"
+                    Orientation="Horizontal"
+                    Spacing="4">
+                    <TextBlock Style="{StaticResource BaseTextBlockStyle}" Text="{Binding Version}"/>
+                    <TextBlock Style="{StaticResource BaseTextBlockStyle}" Text="{Binding Name}"/>
+                </StackPanel>
+
+                <TextBlock
+                    Grid.Row="0"
+                    Margin="0,8,0,0"
+                    HorizontalAlignment="Right"
+                    Style="{StaticResource BaseTextBlockStyle}"
+                    Text="{Binding FormattedTotalCount}"/>
+                <ItemsControl
+                    Grid.Row="1"
+                    MaxWidth="134"
+                    Margin="0,6,0,0"
+                    HorizontalAlignment="Left"
+                    ItemTemplate="{StaticResource HistoryWishItemTemplate}"
+                    ItemsPanel="{StaticResource WrapPanelSpacing4Template}"
+                    ItemsSource="{Binding OrangeUpList}"/>
+                <ItemsControl
+                    Grid.Row="1"
+                    MaxWidth="272"
+                    Margin="0,6,0,0"
+                    HorizontalAlignment="Right"
+                    ItemTemplate="{StaticResource HistoryWishItemTemplate}"
+                    ItemsPanel="{StaticResource WrapPanelSpacing4Template}"
+                    ItemsSource="{Binding PurpleUpList}"/>
+                <TextBlock
+                    Grid.Row="2"
+                    Margin="0,6,0,8"
+                    Opacity="0.6"
+                    Text="{Binding FormattedTimeSpan}"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="HistoryWishGridTemplate" x:DataType="shvg:StatisticsItem">
+            <Grid>
+                <shuxc:ItemIcon
+                    Badge="{Binding Badge}"
+                    Icon="{Binding Icon}"
+                    Opacity="{Binding Count, Converter={StaticResource DoubleToOpacityConverter}}"
+                    Quality="{Binding Quality}"/>
+                <Border
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Background="#80000000"
+                    CornerRadius="{ThemeResource ControlCornerRadiusTopRightAndBottomLeft}">
+                    <TextBlock
+                        Margin="6,0,6,2"
+                        Foreground="#FFFFFFFF"
+                        Text="{Binding Count}"/>
+                </Border>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <shuxc:StandardView HideCondition="{Binding IsInitialized, Converter={StaticResource BoolNegationConverter}}" ShowCondition="{Binding Archives.CurrentItem, Converter={StaticResource EmptyObjectToBoolConverter}}">
+        <shuxc:StandardView.EmptyContent>
+            <Border
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                <Border
+                    MinWidth="480"
+                    Padding="16"
+                    Style="{ThemeResource AcrylicBorderCardStyle}">
+                    <StackPanel>
+                        <Image
+                            MaxWidth="120"
+                            MaxHeight="120"
+                            HorizontalAlignment="Center"
+                            Source="ms-appx:///Resource/Icon/kyxsan03.png"/>
+                        <TextBlock
+                            Margin="0,16,0,0"
+                            HorizontalAlignment="Center"
+                            Style="{StaticResource SubtitleTextBlockStyle}"
+                            Text="{shuxm:ResourceString Name=ViewPageGachaLogHint}"/>
+                        <StackPanel Margin="0,24,0,0" Spacing="{StaticResource SettingsCardSpacing}">
+                            <cwcont:SettingsCard
+                                ActionIconToolTip="{shuxm:ResourceString Name=ViewPageGachaLogRefreshAction}"
+                                Command="{Binding GetGachaUrlCommand}"
+                                Description="{shuxm:ResourceString Name=ViewPageGachaLogRefreshByLogFileDescription}"
+                                Header="{shuxm:ResourceString Name=ViewPageGachaLogRefreshByLogFile}"
+                                HeaderIcon="{shuxm:FontIcon Glyph=&#xE95A;}"
+                                IsClickEnabled="True"/>
+                            <cwcont:SettingsCard
+                                ActionIconToolTip="{shuxm:ResourceString Name=ViewPageGachaLogRefreshAction}"
+                                Command="{Binding RefreshBySTokenCommand}"
+                                Description="{shuxm:ResourceString Name=ViewPageGachaLogRefreshBySTokenDescription}"
+                                Header="{shuxm:ResourceString Name=ViewPageGachaLogRefreshBySToken}"
+                                HeaderIcon="{shuxm:FontIcon Glyph=&#xE192;}"
+                                IsClickEnabled="True"/>
+                            <cwcont:SettingsCard
+                                ActionIconToolTip="{shuxm:ResourceString Name=ViewPageGachaLogRefreshAction}"
+                                Command="{Binding RefreshByWebCacheCommand}"
+                                Description="{shuxm:ResourceString Name=ViewPageGachaLogRefreshByWebCacheDescription}"
+                                Header="{shuxm:ResourceString Name=ViewPageGachaLogRefreshByWebCache}"
+                                HeaderIcon="{shuxm:FontIcon Glyph=&#xE81E;}"
+                                IsClickEnabled="True"/>
+                            <cwcont:SettingsCard
+                                ActionIconToolTip="{shuxm:ResourceString Name=ViewPageGachaLogInputAction}"
+                                Command="{Binding RefreshByManualInputCommand}"
+                                Description="{shuxm:ResourceString Name=ViewPageGachaLogRefreshByManualInputDescription}"
+                                Header="{shuxm:ResourceString Name=ViewPageGachaLogRefreshByManualInput}"
+                                HeaderIcon="{shuxm:FontIcon Glyph=&#xE765;}"
+                                IsClickEnabled="True"/>
+                            <cwcont:SettingsCard
+                                ActionIconToolTip="{shuxm:ResourceString Name=ViewPageGachaLogImportAction}"
+                                Command="{Binding ImportUIGFCommand}"
+                                Description="{shuxm:ResourceString Name=ViewPageGachaLogImportDescription}"
+                                Header="{shuxm:ResourceString Name=ViewPageGachaLogImportHeader}"
+                                HeaderIcon="{shuxm:FontIcon Glyph=&#xE8B5;}"
+                                IsClickEnabled="True"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </Border>
+        </shuxc:StandardView.EmptyContent>
+        <Grid>
+            <Border Background="#40000000"/>
+            <Pivot Style="{ThemeResource CardPivotStyle}">
+            <Pivot.LeftHeader>
+                <shuxc:SizeRestrictedContentControl Margin="6,6,0,6">
+                    <ComboBox
+                        DisplayMemberPath="Uid"
+                        ItemsSource="{Binding Archives}"
+                        SelectedItem="{Binding Archives.CurrentItem, Mode=TwoWay}"
+                        Style="{ThemeResource CommandBarComboBoxStyle}"/>
+                </shuxc:SizeRestrictedContentControl>
+            </Pivot.LeftHeader>
+            <Pivot.RightHeader>
+                <CommandBar DefaultLabelPosition="Right">
+                    <CommandBar.Resources>
+                        <StaticResource x:Key="CommandBarBackgroundOpen" ResourceKey="ControlFillColorTransparentBrush"/>
+                        <!--  ReSharper disable once Xaml.RedundantResource  -->
+                        <Thickness x:Key="CommandBarBorderThicknessOpen">0</Thickness>
+                    </CommandBar.Resources>
+                    <AppBarButton Icon="{shuxm:FontIcon Glyph=&#xE72C;}" Label="{shuxm:ResourceString Name=ViewPageGachaLogRefresh}">
+                        <AppBarButton.Flyout>
+                            <MenuFlyout Placement="Bottom">
+                                <MenuFlyoutItem
+                                    Command="{Binding GetGachaUrlCommand}"
+                                    Icon="{shuxm:FontIcon Glyph=&#xE95A;}"
+                                    Text="{shuxm:ResourceString Name=ViewPageGachaLogRefreshByLogFile}"/>
+                                <MenuFlyoutItem
+                                    Command="{Binding RefreshBySTokenCommand}"
+                                    Icon="{shuxm:FontIcon Glyph=&#xE192;}"
+                                    Text="{shuxm:ResourceString Name=ViewPageGachaLogRefreshBySToken}"/>
+                                <MenuFlyoutItem
+                                    Command="{Binding RefreshByWebCacheCommand}"
+                                    Icon="{shuxm:FontIcon Glyph=&#xE81E;}"
+                                    Text="{shuxm:ResourceString Name=ViewPageGachaLogRefreshByWebCache}"/>
+                                <MenuFlyoutItem
+                                    Command="{Binding RefreshByManualInputCommand}"
+                                    Icon="{shuxm:FontIcon Glyph=&#xE765;}"
+                                    Text="{shuxm:ResourceString Name=ViewPageGachaLogRefreshByManualInput}"/>
+                                <ToggleMenuFlyoutItem
+                                    Icon="{shuxm:FontIcon Glyph=&#xE1CD;}"
+                                    IsChecked="{Binding IsAggressiveRefresh, Mode=TwoWay}"
+                                    Text="{shuxm:ResourceString Name=ViewPageGachaLogAggressiveRefresh}"/>
+                            </MenuFlyout>
+                        </AppBarButton.Flyout>
+                    </AppBarButton>
+                    <AppBarSeparator/>
+                    <CommandBar.SecondaryCommands>
+                        <AppBarButton
+                            Command="{Binding ImportUIGFCommand}"
+                            Icon="{shuxm:FontIcon Glyph=&#xE8B5;}"
+                            Label="{shuxm:ResourceString Name=ViewPageGachaLogImportAction}"/>
+                        <AppBarButton
+                            Command="{Binding ExportUIGFCommand}"
+                            Icon="{shuxm:FontIcon Glyph=&#xE8C9;}"
+                            Label="{shuxm:ResourceString Name=ViewPageGachaLogExportAction}"/>
+                        <AppBarButton
+                            Command="{Binding RemoveArchiveCommand}"
+                            Icon="{shuxm:FontIcon Glyph=&#xE74D;}"
+                            Label="{shuxm:ResourceString Name=ViewPageGachaLogRemoveArchiveAction}"/>
+                    </CommandBar.SecondaryCommands>
+                </CommandBar>
+            </Pivot.RightHeader>
+            <PivotItem Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotOverview}">
+                <ScrollViewer
+                    Margin="16,0"
+                    cw:ScrollViewerExtensions.HorizontalScrollBarMargin="0,0,-16,0"
+                    HorizontalScrollBarVisibility="Auto"
+                    HorizontalScrollMode="Enabled"
+                    VerticalScrollMode="Disabled">
+                    <shuxcp:HorizontalEqualPanel
+                        Margin="0,16"
+                        MinItemWidth="302"
+                        Spacing="16">
+                        <shuxvs:StatisticsCard DataContext="{Binding Statistics.AvatarWish}"/>
+                        <shuxvs:StatisticsCard DataContext="{Binding Statistics.WeaponWish}"/>
+                        <shuxvs:StatisticsCard DataContext="{Binding Statistics.StandardWish}" ShowUpPull="False"/>
+                        <shuxvs:StatisticsCard DataContext="{Binding Statistics.ChronicledWish}" ShowUpPull="False"/>
+                    </shuxcp:HorizontalEqualPanel>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotHistory}">
+                <Border Margin="16" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                    <Border Style="{ThemeResource AcrylicBorderCardStyle}">
+                        <SplitView
+                            DisplayMode="Inline"
+                            IsPaneOpen="True"
+                            OpenPaneLength="439"
+                            PaneBackground="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+                            <SplitView.Pane>
+                                <ListView
+                                    Padding="{ThemeResource ListViewInSplitPanePadding}"
+                                    ItemTemplate="{StaticResource HistoryWishListTemplate}"
+                                    ItemsSource="{Binding Statistics.HistoryWishes}"
+                                    SelectedItem="{Binding Statistics.HistoryWishes.CurrentItem, Mode=TwoWay}"/>
+                            </SplitView.Pane>
+                            <SplitView.Content>
+                                <ScrollViewer>
+                                    <StackPanel>
+                                        <Border
+                                            Margin="16"
+                                            HorizontalAlignment="Left"
+                                            cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                                            <Grid HorizontalAlignment="Center" Style="{StaticResource AcrylicGridCardStyle}">
+                                                <cwcont:ConstrainedBox AspectRatio="1080:533">
+                                                    <shuxci:CachedImage
+                                                        HorizontalAlignment="Center"
+                                                        VerticalAlignment="Center"
+                                                        CornerRadius="{ThemeResource ControlCornerRadius}"
+                                                        Source="{Binding Statistics.HistoryWishes.CurrentItem.BannerImage}"
+                                                        Stretch="UniformToFill"/>
+                                                </cwcont:ConstrainedBox>
+                                                <Border
+                                                    Grid.ColumnSpan="2"
+                                                    Background="{ThemeResource DarkOnlyOverlayMaskColorBrush}"
+                                                    IsHitTestVisible="False"/>
+                                            </Grid>
+                                        </Border>
+
+                                        <StackPanel Margin="16,0,0,0" Spacing="8">
+                                            <TextBlock
+                                                Margin="0,8,0,0"
+                                                Style="{StaticResource BaseTextBlockStyle}"
+                                                Text="{shuxm:ResourceString Name=ViewControlStatisticsCardOrangeText}"
+                                                Visibility="{Binding Statistics.HistoryWishes.CurrentItem.OrangeList.Length, Converter={StaticResource Int32ToVisibilityConverter}}"/>
+                                            <GridView
+                                                ItemTemplate="{StaticResource HistoryWishGridTemplate}"
+                                                ItemsSource="{Binding Statistics.HistoryWishes.CurrentItem.OrangeList}"
+                                                SelectionMode="None"/>
+
+                                            <TextBlock
+                                                Margin="0,8,0,0"
+                                                Style="{StaticResource BaseTextBlockStyle}"
+                                                Text="{shuxm:ResourceString Name=ViewControlStatisticsCardPurpleText}"
+                                                Visibility="{Binding Statistics.HistoryWishes.CurrentItem.PurpleList.Length, Converter={StaticResource Int32ToVisibilityConverter}}"/>
+                                            <GridView
+                                                ItemTemplate="{StaticResource HistoryWishGridTemplate}"
+                                                ItemsSource="{Binding Statistics.HistoryWishes.CurrentItem.PurpleList}"
+                                                SelectionMode="None"/>
+
+                                            <TextBlock
+                                                Margin="0,8,0,0"
+                                                Style="{StaticResource BaseTextBlockStyle}"
+                                                Text="{shuxm:ResourceString Name=ViewControlStatisticsCardBlueText}"
+                                                Visibility="{Binding Statistics.HistoryWishes.CurrentItem.BlueList.Length, Converter={StaticResource Int32ToVisibilityConverter}}"/>
+                                            <GridView
+                                                ItemTemplate="{StaticResource HistoryWishGridTemplate}"
+                                                ItemsSource="{Binding Statistics.HistoryWishes.CurrentItem.BlueList}"
+                                                SelectionMode="None"/>
+                                        </StackPanel>
+
+                                    </StackPanel>
+                                </ScrollViewer>
+                            </SplitView.Content>
+                        </SplitView>
+                    </Border>
+                </Border>
+            </PivotItem>
+            <PivotItem Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotAvatar}">
+                <ScrollViewer>
+                    <StackPanel Margin="16,0,16,16">
+                        <Border Margin="0,16,0,0" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                            <Border Padding="16,16,12,4" Style="{ThemeResource AcrylicBorderCardStyle}">
+                                <StackPanel Spacing="8">
+                                    <TextBlock
+                                        Foreground="{ThemeResource OrangeColorBrush}"
+                                        Style="{StaticResource BaseTextBlockStyle}"
+                                        Text="{shuxm:ResourceString Name=ViewControlStatisticsCardOrangeText}"/>
+                                    <GridView
+                                        ItemTemplate="{StaticResource HistoryWishGridTemplate}"
+                                        ItemsSource="{Binding Statistics.OrangeAvatars}"
+                                        SelectionMode="None"/>
+                                </StackPanel>
+                            </Border>
+                        </Border>
+
+                        <Border Margin="0,16,0,0" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                            <Border Padding="16,16,12,4" Style="{ThemeResource AcrylicBorderCardStyle}">
+                                <StackPanel Spacing="8">
+                                    <TextBlock
+                                        Foreground="{ThemeResource PurpleColorBrush}"
+                                        Style="{StaticResource BaseTextBlockStyle}"
+                                        Text="{shuxm:ResourceString Name=ViewControlStatisticsCardPurpleText}"/>
+                                    <GridView
+                                        ItemTemplate="{StaticResource HistoryWishGridTemplate}"
+                                        ItemsSource="{Binding Statistics.PurpleAvatars}"
+                                        SelectionMode="None"/>
+                                </StackPanel>
+                            </Border>
+                        </Border>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotWeapon}">
+                <ScrollViewer>
+                    <StackPanel Margin="16,0,16,16">
+                        <Border Margin="0,16,0,0" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                            <Border Padding="16,16,12,4" Style="{ThemeResource AcrylicBorderCardStyle}">
+                                <StackPanel Spacing="8">
+                                    <TextBlock
+                                        Foreground="{ThemeResource OrangeColorBrush}"
+                                        Style="{StaticResource BaseTextBlockStyle}"
+                                        Text="{shuxm:ResourceString Name=ViewControlStatisticsCardOrangeText}"/>
+                                    <GridView
+                                        ItemTemplate="{StaticResource HistoryWishGridTemplate}"
+                                        ItemsSource="{Binding Statistics.OrangeWeapons}"
+                                        SelectionMode="None"/>
+                                </StackPanel>
+                            </Border>
+                        </Border>
+                        <Border Margin="0,16,0,0" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                            <Border Padding="16,16,12,4" Style="{ThemeResource AcrylicBorderCardStyle}">
+                                <StackPanel Spacing="8">
+                                    <TextBlock
+                                        Foreground="{ThemeResource PurpleColorBrush}"
+                                        Style="{StaticResource BaseTextBlockStyle}"
+                                        Text="{shuxm:ResourceString Name=ViewControlStatisticsCardPurpleText}"/>
+                                    <GridView
+                                        ItemTemplate="{StaticResource HistoryWishGridTemplate}"
+                                        ItemsSource="{Binding Statistics.PurpleWeapons}"
+                                        SelectionMode="None"/>
+                                </StackPanel>
+                            </Border>
+                        </Border>
+                        <Border Margin="0,16,0,0" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                            <Border Padding="16,16,12,4" Style="{ThemeResource AcrylicBorderCardStyle}">
+                                <StackPanel Spacing="8">
+                                    <TextBlock
+                                        Foreground="{ThemeResource BlueColorBrush}"
+                                        Style="{StaticResource BaseTextBlockStyle}"
+                                        Text="{shuxm:ResourceString Name=ViewControlStatisticsCardBlueText}"/>
+                                    <GridView
+                                        ItemTemplate="{StaticResource HistoryWishGridTemplate}"
+                                        ItemsSource="{Binding Statistics.BlueWeapons}"
+                                        SelectionMode="None"/>
+                                </StackPanel>
+                            </Border>
+                        </Border>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+        </Pivot>
+        </Grid>
+    </shuxc:StandardView>
+</shuxc:ScopedPage>

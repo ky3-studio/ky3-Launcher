@@ -1,0 +1,34 @@
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+// | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
+// | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
+// | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
+// |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
+// Copyright (c) DGP Studio. All rights reserved.
+// Modified by kyxsan.
+// Licensed under the MIT license.
+
+using System.Net.Http;
+using System.Runtime.ExceptionServices;
+
+namespace kyxsan.Web;
+
+internal sealed partial class HttpContext : IDisposable
+{
+    public required HttpClient HttpClient { get; init; }
+
+    public required CancellationToken RequestAborted { get; init; }
+
+    public HttpCompletionOption CompletionOption { get; init; } = HttpCompletionOption.ResponseContentRead;
+
+    public HttpRequestMessage? Request { get; set; }
+
+    public HttpResponseMessage? Response { get; set; }
+
+    public ExceptionDispatchInfo? Exception { get; set; }
+
+    public void Dispose()
+    {
+        Request?.Dispose();
+        Response?.Dispose();
+    }
+}

@@ -19,36 +19,27 @@
 
 ```mermaid
 graph LR
-    A[ky3 Launcher] --> B[UI]
-    A --> C[Services]
-    A --> D[Core]
-    A --> E[Native]
-
-    B --> B1[Pages] & B2[ViewModels] & B3[Controls]
-    C --> C1[Game] & C2[Achievement] & C3[Gacha] & C4[User] & C5[Yae]
-    D --> D1[SQLite] & D2[Cache] & D3[Settings] & D4[Threading]
-    E --> E1[Runner.dll] & E2[HotKey] & E3[Win32]
-```
-
-```mermaid
-graph TD
     subgraph UI["UI — WinUI 3"]
-        Pages & ViewModels & Controls
+        Shell[Shell Window] & Pages[Pages / Views] & Controls[Custom Controls]
+    end
+
+    subgraph ViewModel["ViewModel — MVVM"]
+        GameVM & AchievementVM & GachaVM & UserVM & SettingVM
     end
 
     subgraph Services["Services"]
-        Game & Achievement & Gacha & User & Yae & SignIn[Auto Sign-In]
+        GameService & AchievementService & GachaService & YaeService & WebAPI
     end
 
     subgraph Core["Core"]
-        DB[(SQLite)] & Cache & Settings & IO
+        Database & Caching & Settings & Threading & IO
     end
 
     subgraph Native["Native — C++"]
-        Runner & HotKey & Win32
+        Runner[Runner.dll] & HotKey[HotKey Hook] & Win32[Win32 Interop]
     end
 
-    UI --> Services --> Core
+    UI --> ViewModel --> Services --> Core
     Services --> Native
 ```
 

@@ -21,7 +21,7 @@ internal sealed partial class HttpProxyUsingSystemProxy : ObservableObject, IWeb
 {
     private const string ProxySettingPath = @"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections";
 
-    private static readonly Uri ProxyTestDestination = "https://hut.ao".ToUri();
+    private static readonly Uri ProxyTestDestination = "https://github.com/ky3-git".ToUri();
 
     // ReSharper disable once PrivateFieldCanBeConvertedToLocalVariable
     private readonly kyxsanNativeRegistryNotification native;

@@ -1,0 +1,316 @@
+<UserControl
+    x:Class="kyxsan.UI.Xaml.View.MainView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mxi="using:Microsoft.Xaml.Interactivity"
+    xmlns:shuxb="using:kyxsan.UI.Xaml.Behavior"
+    xmlns:shuxc="using:kyxsan.UI.Xaml.Control"
+    xmlns:shuxdcs="using:kyxsan.UI.Xaml.Data.Converter.Specialized"
+    xmlns:shuxm="using:kyxsan.UI.Xaml.Markup"
+    xmlns:shuxv="using:kyxsan.UI.Xaml.View"
+    xmlns:shuxvp="using:kyxsan.UI.Xaml.View.Page"
+    xmlns:shvm="using:kyxsan.ViewModel"
+    xmlns:sshuxcc="using:kyxsan.UI.Xaml.Control.Card"
+    d:DataContext="{d:DesignInstance Type=shvm:MainViewModel}"
+    mc:Ignorable="d">
+
+    <mxi:Interaction.Behaviors>
+        <shuxb:InvokeCommandOnLoadedBehavior Command="{Binding LoadCommand}"/>
+    </mxi:Interaction.Behaviors>
+
+    <UserControl.Resources>
+        <!--  ReSharper disable Xaml.RedundantResource  -->
+        <Thickness x:Key="NavigationViewContentGridBorderThickness">0,0,0,0</Thickness>
+        <Thickness x:Key="NavigationViewContentMargin">0,0,0,0</Thickness>
+        <CornerRadius x:Key="NavigationViewContentGridCornerRadius">0</CornerRadius>
+        <x:Double x:Key="NavigationViewItemOnLeftIconBoxHeight">24</x:Double>
+        <SolidColorBrush x:Key="NavigationViewExpandedPaneBackground" Color="Transparent"/>
+        <SolidColorBrush x:Key="NavigationViewDefaultPaneBackground" Color="Transparent"/>
+        <SolidColorBrush x:Key="NavigationViewTopPaneBackground" Color="Transparent"/>
+        <SolidColorBrush x:Key="NavigationViewContentBackground" Color="Transparent"/>
+        <SolidColorBrush x:Key="NavigationViewContentGridBorderBrush" Color="Transparent"/>
+        <SolidColorBrush x:Key="NavigationViewItemForeground" Color="White"/>
+        <SolidColorBrush x:Key="NavigationViewItemForegroundPointerOver" Color="White"/>
+        <SolidColorBrush x:Key="NavigationViewItemForegroundPressed" Color="#CCFFFFFF"/>
+        <SolidColorBrush x:Key="NavigationViewItemForegroundSelected" Color="White"/>
+        <SolidColorBrush x:Key="NavigationViewItemForegroundSelectedPointerOver" Color="White"/>
+        <SolidColorBrush x:Key="NavigationViewItemForegroundSelectedPressed" Color="#CCFFFFFF"/>
+        <SolidColorBrush x:Key="NavigationViewItemForegroundDisabled" Color="#80FFFFFF"/>
+        <SolidColorBrush x:Key="NavigationViewItemHeaderForeground" Color="#99FFFFFF"/>
+        <!--  ReSharper restore Xaml.RedundantResource  -->
+        <shuxdcs:BackdropTypeToOpacityConverter x:Key="BackdropTypeToOpacityConverter"/>
+    </UserControl.Resources>
+
+    <Grid>
+        <Image
+            x:Name="LauncherBackgroundImageOld"
+            x:FieldModifier="Public"
+            Margin="-25,0,-25,0"
+            Stretch="UniformToFill"
+            Opacity="0">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image
+            x:Name="LauncherBackgroundImage"
+            x:FieldModifier="Public"
+            Margin="-25,0,-25,0"
+            Stretch="UniformToFill"
+            Opacity="0">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+
+        <MediaPlayerElement
+            x:Name="LauncherBackgroundVideo"
+            x:FieldModifier="Public"
+            Margin="-25,0,-25,0"
+            Stretch="UniformToFill"
+            AutoPlay="False"
+            AreTransportControlsEnabled="False"
+            Opacity="0"/>
+
+        <Image
+            x:Name="LauncherBackgroundTheme"
+            x:FieldModifier="Public"
+            Stretch="UniformToFill"
+            Opacity="0"/>
+
+        <Border x:Name="MainBackdropBorder" Background="{ThemeResource SystemControlAcrylicElementMediumHighBrush}" Opacity="0" Visibility="Collapsed">
+            <Border.OpacityTransition>
+                <ScalarTransition Duration="0:0:1"/>
+            </Border.OpacityTransition>
+        </Border>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TitleBar
+                x:Name="TitleBar"
+                Title="{Binding Title}"
+                Grid.Row="0"
+                x:FieldModifier="Public"
+                RequestedTheme="Dark"
+                IsBackButtonVisible="{x:Bind ContentFrame.CanGoBack, Mode=OneWay}"
+                IsPaneToggleButtonVisible="True">
+                <TitleBar.Resources>
+                    <x:Double x:Key="TitleBarCompactHeight">44</x:Double>
+                    <x:Double x:Key="TitleBarExpandedHeight">44</x:Double>
+                    <x:Double x:Key="TitleBarMinDragRegionWidth">0</x:Double>
+                </TitleBar.Resources>
+                <mxi:Interaction.Behaviors>
+                    <shuxb:ServiceRecipientTitleBarBehavior/>
+                </mxi:Interaction.Behaviors>
+                <TitleBar.RightHeader>
+                    <StackPanel
+                        Grid.Column="1"
+                        Margin="0,0,6,0"
+                        Orientation="Horizontal"
+                        Spacing="6">
+
+                        <Button
+                            Padding="0"
+                            HorizontalContentAlignment="Stretch"
+                            VerticalContentAlignment="Stretch"
+                            Style="{ThemeResource SettingButtonStyle}">
+                            <Button.Resources>
+                                <SineEase x:Key="EasingFunction" EasingMode="EaseInOut"/>
+                                <Storyboard x:Name="FocusStoryBoard">
+                                    <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)">
+                                        <EasingColorKeyFrame
+                                            EasingFunction="{StaticResource EasingFunction}"
+                                            KeyTime="0:0:0"
+                                            Value="{ThemeResource ControlFillColorTransparent}"/>
+                                        <EasingColorKeyFrame
+                                            EasingFunction="{StaticResource EasingFunction}"
+                                            KeyTime="0:0:0.5"
+                                            Value="{ThemeResource SystemFillColorCautionBackground}"/>
+                                        <EasingColorKeyFrame
+                                            EasingFunction="{StaticResource EasingFunction}"
+                                            KeyTime="0:0:1"
+                                            Value="{ThemeResource ControlFillColorTransparent}"/>
+                                        <EasingColorKeyFrame
+                                            EasingFunction="{StaticResource EasingFunction}"
+                                            KeyTime="0:0:1.5"
+                                            Value="{ThemeResource SystemFillColorCautionBackground}"/>
+                                        <EasingColorKeyFrame
+                                            EasingFunction="{StaticResource EasingFunction}"
+                                            KeyTime="0:0:2"
+                                            Value="{ThemeResource ControlFillColorTransparent}"/>
+                                    </ColorAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </Button.Resources>
+                            <Button.Content>
+                                <Border Padding="16,6">
+                                    <Border.Background>
+                                        <SolidColorBrush Color="{ThemeResource ControlFillColorTransparent}"/>
+                                    </Border.Background>
+                                    <mxi:Interaction.Behaviors>
+                                        <shuxb:FocusAnimationBehavior Storyboard="{StaticResource FocusStoryBoard}" Watch="{Binding BackgroundActivityOptions.MetadataInitialization.NotifyToken}"/>
+                                        <shuxb:FocusAnimationBehavior Storyboard="{StaticResource FocusStoryBoard}" Watch="{Binding BackgroundActivityOptions.FullTrustInitialization.NotifyToken}"/>
+                                    </mxi:Interaction.Behaviors>
+                                    <TextBlock
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Text="{shuxm:ResourceString Name=UIViewMainTitleBarBackgroundActivityAction}"/>
+                                </Border>
+                            </Button.Content>
+                            <Button.Flyout>
+                                <Flyout
+                                    FlyoutPresenterStyle="{ThemeResource FlyoutPresenterPadding8Style}"
+                                    Placement="Bottom"
+                                    ShouldConstrainToRootBounds="True">
+                                    <StackPanel
+                                        Width="320"
+                                        DataContext="{Binding BackgroundActivityOptions}"
+                                        Spacing="4">
+                                        <sshuxcc:CardProgressBar
+                                            MinHeight="58"
+                                            Description="{Binding MetadataInitialization.Description}"
+                                            Header="{Binding MetadataInitialization.Title}"
+                                            IsIndeterminate="{Binding MetadataInitialization.IsIndeterminate}"
+                                            Maximum="1"
+                                            ProgressForeground="{ThemeResource SystemControlForegroundAccentBrush}"
+                                            Style="{ThemeResource CompactCardProgressBarStyle}"
+                                            Value="{Binding MetadataInitialization.ProgressValue}"/>
+                                        <sshuxcc:CardProgressBar
+                                            MinHeight="58"
+                                            Description="{Binding FullTrustInitialization.Description}"
+                                            Header="{Binding FullTrustInitialization.Title}"
+                                            IsIndeterminate="{Binding FullTrustInitialization.IsIndeterminate}"
+                                            Maximum="1"
+                                            ProgressForeground="{ThemeResource SystemControlForegroundAccentBrush}"
+                                            Style="{ThemeResource CompactCardProgressBarStyle}"
+                                            Value="{Binding FullTrustInitialization.ProgressValue}"/>
+                                    </StackPanel>
+                                </Flyout>
+                            </Button.Flyout>
+                        </Button>
+                    </StackPanel>
+                </TitleBar.RightHeader>
+            </TitleBar>
+
+            <!--  ReSharper disable once Xaml.BindingWithContextNotResolved  -->
+            <NavigationView
+                Grid.Row="1"
+                Margin="0,0,0,0"
+                Background="Transparent"
+                shuxc:NavigationViewHelper.PaneCornerRadius="0"
+                CompactPaneLength="45"
+                IsBackButtonVisible="Collapsed"
+                IsPaneOpen="True"
+                IsPaneToggleButtonVisible="False"
+                OpenPaneLength="205"
+                PaneDisplayMode="Auto"
+                UseLayoutRounding="False">
+                <mxi:Interaction.Behaviors>
+                    <shuxb:ServiceRecipientNavigationViewBehavior/>
+                </mxi:Interaction.Behaviors>
+                <NavigationView.MenuItems>
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:LauncherHomePage"
+                        Content="{shuxm:ResourceString Name=ViewHomeHeader}"
+                        Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/Home.png}"/>
+                    
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:AnnouncementPage"
+                        Content="{shuxm:ResourceString Name=ViewAnnouncementNavHeader}"
+                        Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/Feedback.png}"/>
+
+                    <NavigationViewItemHeader Content="{shuxm:ResourceString Name=ViewToolHeader}"/>
+
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:LaunchGamePage"
+                        Content="{shuxm:ResourceString Name=ViewLaunchGameHeader}"
+                        Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/LaunchGame.png}"/>
+
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:SignInPage"
+                        Content="{shuxm:ResourceString Name=ViewSignInHeader}"
+                        Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/CheckIn.png}"/>
+
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:AchievementPage"
+                        Content="{shuxm:ResourceString Name=ViewAchievementHeader}"
+                        Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/Achievement.png}"/>
+
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:DailyNotePage"
+                        Content="{shuxm:ResourceString Name=ViewDailyNoteHeader}"
+                        Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/DailyNote.png}"/>
+
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:GachaLogPage"
+                        Content="{shuxm:ResourceString Name=ViewGachaLogHeader}"
+                        Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/GachaLog.png}"/>
+
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:WishCountdownPage"
+                        Content="{shuxm:ResourceString Name=ViewWishCountdownHeader}"
+                        Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/AvatarProperty.png}"/>
+
+                    <NavigationViewItemHeader Content="{shuxm:ResourceString Name=ViewPeriodHeader}"/>
+
+                    <!-- 
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:AvatarPropertyPage"
+                        Content="{shuxm:ResourceString Name=ViewAvatarPropertyHeader}"
+                        Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/AvatarProperty.png}"/>
+                    -->
+
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:SpiralAbyssRecordPage"
+                        Content="{shuxm:ResourceString Name=ViewSpiralAbyssHeader}"
+                        Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/SpiralAbyss.png}"/>
+
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:RoleCombatPage"
+                        Content="{shuxm:ResourceString Name=ViewRoleCombatHeader}"
+                        Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/RoleCombat.png}"/>
+
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:HardChallengePage"
+                        Content="{shuxm:ResourceString Name=ViewHardChallengeHeader}"
+                        Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/HardChallenge.png}"/>
+
+                    <NavigationViewItemHeader Content="{shuxm:ResourceString Name=ViewDataHeader}"/>
+
+                    <!--<NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:InventoryPage"
+                        Content="{shuxm:ResourceString Name=ViewInventoryHeader}"
+                        Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/WikiWeapon.png}"/>-->
+
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:EmotionIconPage"
+                        Content="{shuxm:ResourceString Name=ViewEmotionIconHeader}">
+                        <NavigationViewItem.Icon>
+                            <BitmapIcon ShowAsMonochrome="False" UriSource="ms-appx:///Resource/Navigation/Paimon's painting.png"/>
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
+
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:WikiAvatarPage"
+                        Content="{shuxm:ResourceString Name=ViewWikiAvatarHeader}"
+                        Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/WikiAvatar.png}"/>
+
+                </NavigationView.MenuItems>
+
+                <NavigationView.PaneFooter>
+                    <shuxv:UserView x:Name="UserView"/>
+                </NavigationView.PaneFooter>
+
+                <Frame x:Name="ContentFrame" ContentTransitions="{StaticResource NavigationThemeTransitions}"/>
+            </NavigationView>
+        </Grid>
+
+        <shuxv:InfoBarView Margin="0,44,0,0" VerticalAlignment="Stretch"/>
+    </Grid>
+</UserControl>

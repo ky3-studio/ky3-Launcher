@@ -1,0 +1,223 @@
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+// | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
+// | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
+// | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
+// |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
+// Copyright (c) DGP Studio. All rights reserved.
+// Modified by kyxsan.
+// Licensed under the MIT license.
+
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using CommunityToolkit.Mvvm.Input;
+using kyxsan.Core;
+using kyxsan.Core.Setting;
+using kyxsan.Service.Notification;
+using kyxsan.Web.kyxsan;
+using kyxsan.Web.kyxsan.Response;
+using kyxsan.Web.Response;
+using System.Diagnostics;
+using System.IO;
+using System.Net.Http;
+using System.Security.Cryptography;
+
+namespace kyxsan.Service.Update;
+
+[Service(ServiceLifetime.Singleton, typeof(IUpdateService))]
+internal sealed partial class UpdateService : IUpdateService
+{
+    // Avoid injecting services directly
+    private readonly IServiceProvider serviceProvider;
+
+    [GeneratedConstructor]
+    public partial UpdateService(IServiceProvider serviceProvider);
+
+    public string? UpdateInfo { get; set; }
+
+    public async ValueTask<CheckUpdateResult> CheckUpdateAsync(CancellationToken token = default)
+    {
+        using (IServiceScope scope = serviceProvider.CreateScope())
+        {
+            CheckUpdateResult checkUpdateResult = new();
+            try
+            {
+                ITaskContext taskContext = scope.ServiceProvider.GetRequiredService<ITaskContext>();
+                await taskContext.SwitchToBackgroundAsync();
+
+                kyxsanInfrastructureClient infrastructureClient = scope.ServiceProvider.GetRequiredService<kyxsanInfrastructureClient>();
+                kyxsanResponse<kyxsanPackageInformation> response = await infrastructureClient.GetkyxsanVersionInformationAsync(token).ConfigureAwait(false);
+
+                if (!ResponseValidator.TryValidateWithoutUINotification(response, scope.ServiceProvider, out kyxsanPackageInformation? packageInformation))
+                {
+                    checkUpdateResult.Kind = CheckUpdateResultKind.VersionApiInvalidResponse;
+                    return checkUpdateResult;
+                }
+
+                checkUpdateResult.Kind = CheckUpdateResultKind.UpdateAvailable;
+                checkUpdateResult.PackageInformation = packageInformation;
+
+                if (!LocalSetting.Get(SettingKeys.OverrideUpdateVersionComparison, false))
+                {
+                    // Launched in an updated version
+                    if (kyxsanRuntime.Version >= checkUpdateResult.PackageInformation.Version)
+                    {
+                        checkUpdateResult.Kind = CheckUpdateResultKind.AlreadyUpdated;
+                        return checkUpdateResult;
+                    }
+                }
+
+                if (checkUpdateResult.PackageInformation.Validation is not { Length: > 0 })
+                {
+                    checkUpdateResult.Kind = CheckUpdateResultKind.VersionApiInvalidSha256;
+                }
+
+                return checkUpdateResult;
+            }
+            finally
+            {
+                UpdateInfo = checkUpdateResult.Kind switch
+                {
+                    CheckUpdateResultKind.UpdateAvailable => SH.FormatViewModelSettingUpdateAvailable(checkUpdateResult.PackageInformation?.Version.ToString()),
+                    CheckUpdateResultKind.AlreadyUpdated => SH.ViewModelSettingAlreadyUpdated,
+                    CheckUpdateResultKind.VersionApiInvalidResponse or CheckUpdateResultKind.VersionApiInvalidSha256 => SH.ViewModelSettingCheckUpdateFailed,
+                    _ => default,
+                };
+            }
+        }
+    }
+
+    public async ValueTask<string?> DownloadUpdateAsync(CheckUpdateResult result, CancellationToken token = default)
+    {
+        if (result.Kind is not CheckUpdateResultKind.UpdateAvailable || result.PackageInformation is null)
+        {
+            return null;
+        }
+
+        if (result.PackageInformation.Mirrors.FirstOrDefault() is not { } mirror)
+        {
+            return null;
+        }
+
+        string tempPath = Path.Combine(Path.GetTempPath(), $"ky3launcher_update_v{result.PackageInformation.Version}.exe");
+
+        // If already downloaded and verified, return directly
+        if (File.Exists(tempPath))
+        {
+            byte[] existingHash = SHA256.HashData(await File.ReadAllBytesAsync(tempPath, token).ConfigureAwait(false));
+            if (string.Equals(Convert.ToHexString(existingHash), result.PackageInformation.Validation, StringComparison.OrdinalIgnoreCase))
+            {
+                return tempPath;
+            }
+
+            File.Delete(tempPath);
+        }
+
+        try
+        {
+            using HttpClient downloadClient = new() { Timeout = TimeSpan.FromMinutes(10) };
+            using HttpResponseMessage response = await downloadClient.GetAsync(mirror.Url.ToUri(), HttpCompletionOption.ResponseHeadersRead, token).ConfigureAwait(false);
+            response.EnsureSuccessStatusCode();
+
+            using Stream netStream = await response.Content.ReadAsStreamAsync(token).ConfigureAwait(false);
+            using FileStream fileStream = File.Create(tempPath);
+            await netStream.CopyToAsync(fileStream, token).ConfigureAwait(false);
+            await fileStream.FlushAsync(token).ConfigureAwait(false);
+        }
+        catch
+        {
+            try { File.Delete(tempPath); } catch { }
+            return null;
+        }
+
+        // SHA256 verification
+        byte[] fileBytes = await File.ReadAllBytesAsync(tempPath, token).ConfigureAwait(false);
+        byte[] hash = SHA256.HashData(fileBytes);
+        string hashHex = Convert.ToHexString(hash);
+
+        if (!string.Equals(hashHex, result.PackageInformation.Validation, StringComparison.OrdinalIgnoreCase))
+        {
+            try { File.Delete(tempPath); } catch { }
+            return null;
+        }
+
+        return tempPath;
+    }
+
+    public async ValueTask TriggerUpdateAsync(CheckUpdateResult result, CancellationToken token = default)
+    {
+        if (result.Kind is not CheckUpdateResultKind.UpdateAvailable)
+        {
+            return;
+        }
+
+        using (IServiceScope scope = serviceProvider.CreateScope())
+        {
+            IMessenger messenger = scope.ServiceProvider.GetRequiredService<IMessenger>();
+
+            try
+            {
+                messenger.Send(InfoBarMessage.Information($"正在下载新版本 v{result.PackageInformation?.Version}..."));
+
+                string? installerPath = await DownloadUpdateAsync(result, token).ConfigureAwait(false);
+
+                if (installerPath is null)
+                {
+                    messenger.Send(InfoBarMessage.Error("下载更新失败", "安装包下载或校验失败，请稍后重试"));
+                    return;
+                }
+
+                IMessenger messengerForButton = messenger;
+                messenger.Send(new InfoBarMessage
+                {
+                    Severity = InfoBarSeverity.Success,
+                    Title = $"新版本 v{result.PackageInformation?.Version} 已准备就绪",
+                    Message = "安装包已下载完成，点击「立即更新」重启并安装",
+                    ActionButtonContent = "立即更新",
+                    ActionButtonCommand = new AsyncRelayCommand(async () =>
+                    {
+                        try
+                        {
+                            if (!File.Exists(installerPath))
+                            {
+                                messengerForButton.Send(InfoBarMessage.Error("更新失败", "安装包文件已丢失，请重启软件重新下载"));
+                                return;
+                            }
+
+                            // Show installing message before exit
+                            messengerForButton.Send(new InfoBarMessage
+                            {
+                                Severity = InfoBarSeverity.Informational,
+                                Title = $"正在安装 v{result.PackageInformation?.Version}",
+                                Message = "安装完成后将自动启动新版本，请稍候...",
+                                MilliSecondsDelay = 0,
+                            });
+
+                            // Brief delay so user sees the message
+                            await Task.Delay(1000).ConfigureAwait(true);
+
+                            // Inno Setup silent install; installer's [Run] entry will relaunch the app afterwards
+                            Process.Start(new ProcessStartInfo
+                            {
+                                FileName = installerPath,
+                                Arguments = "/VERYSILENT /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS /NORESTART",
+                                UseShellExecute = true,
+                                Verb = "runas",
+                            });
+
+                            Application.Current.Exit();
+                        }
+                        catch (Exception ex)
+                        {
+                            messengerForButton.Send(InfoBarMessage.Error("启动安装器失败", ex.Message));
+                        }
+                    }),
+                    MilliSecondsDelay = 0,
+                });
+            }
+            catch (Exception ex)
+            {
+                messenger.Send(InfoBarMessage.Error(ex));
+            }
+        }
+    }
+}

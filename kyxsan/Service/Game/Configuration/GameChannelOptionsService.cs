@@ -1,0 +1,78 @@
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+// | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
+// | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
+// | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
+// |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
+// Copyright (c) DGP Studio. All rights reserved.
+// Modified by kyxsan.
+// Licensed under the MIT license.
+
+using kyxsan.Service.Game.FileSystem;
+using kyxsan.Service.Game.Scheme;
+using System.IO;
+
+namespace kyxsan.Service.Game.Configuration;
+
+[Service(ServiceLifetime.Singleton, typeof(IGameChannelOptionsService))]
+internal sealed partial class GameChannelOptionsService : IGameChannelOptionsService
+{
+    private readonly IGameConfigurationFileService gameConfigurationFileService;
+    private readonly LaunchOptions launchOptions;
+
+    [GeneratedConstructor]
+    public partial GameChannelOptionsService(IServiceProvider serviceProvider);
+
+    public ChannelOptions GetChannelOptions()
+    {
+        const string LockTrace = $"{nameof(GameChannelOptionsService)}.{nameof(GetChannelOptions)}";
+        GameFileSystemErrorKind errorKind = launchOptions.TryGetGameFileSystem(LockTrace, out IGameFileSystem? gameFileSystem);
+        switch (errorKind)
+        {
+            case GameFileSystemErrorKind.GamePathNullOrEmpty:
+                return ChannelOptions.GamePathNullOrEmpty();
+            case GameFileSystemErrorKind.GamePathLocked:
+                return ChannelOptions.GamePathLocked(launchOptions.GamePathEntry.Value?.Path ?? string.Empty);
+        }
+
+        ArgumentNullException.ThrowIfNull(gameFileSystem);
+        using (gameFileSystem)
+        {
+            string configFilePath = gameFileSystem.GameConfigurationFilePath;
+
+            if (!File.Exists(configFilePath))
+            {
+                // Try restore the configuration file if it does not exist
+                // The configuration file may be deleted by an incompatible launcher(e.g., CN client but OS launcher and vice versa)
+                gameConfigurationFileService.Restore(configFilePath, gameFileSystem.IsExecutableOversea);
+
+                if (!File.Exists(configFilePath))
+                {
+                    return ChannelOptions.ConfigurationFileNotFound(configFilePath);
+                }
+            }
+
+            string scriptVersionFilePath = gameFileSystem.ScriptVersionFilePath;
+
+            if (!File.Exists(scriptVersionFilePath))
+            {
+                // Try to fix ScriptVersion by reading game_version from the configuration file
+                // If the configuration file and ScriptVersion file are both missing, the game content is corrupted
+                if (!GameScriptVersion.Patch(configFilePath, scriptVersionFilePath))
+                {
+                    return ChannelOptions.GameContentCorrupted(gameFileSystem.GameDirectory);
+                }
+            }
+
+            ChannelOptions options = GameConfiguration.Read(gameFileSystem);
+
+            if (options.ErrorKind is ChannelOptionsErrorKind.None &&
+                !KnownLaunchSchemes.Values.Any(s => s.Equals(options)))
+            {
+                gameConfigurationFileService.Restore(configFilePath, gameFileSystem.IsExecutableOversea);
+                options = GameConfiguration.Read(gameFileSystem);
+            }
+
+            return options;
+        }
+    }
+}

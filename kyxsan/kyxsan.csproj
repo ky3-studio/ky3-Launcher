@@ -1,0 +1,235 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net10.0-windows10.0.26100.0</TargetFramework>
+		<TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
+		<LangVersion>preview</LangVersion>
+		<RootNamespace>kyxsan</RootNamespace>
+		<ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+		<Platforms>x64</Platforms>
+		<AppendPlatformToOutputPath>false</AppendPlatformToOutputPath>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<UseWinUI>true</UseWinUI>
+		<UseWPF>False</UseWPF>
+		<UseWindowsForms>False</UseWindowsForms>
+		<ImplicitUsings>False</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<NeutralLanguage>zh-CN</NeutralLanguage>
+		<DefaultLanguage>zh-CN</DefaultLanguage>
+		<SatelliteResourceLanguages>zh-CN;zh-Hans;zh-Hant;zh-TW</SatelliteResourceLanguages>
+		<StartupObject>kyxsan.Bootstrap</StartupObject>
+		<DefineConstants>$(DefineConstants);DISABLE_XAML_GENERATED_MAIN;DISABLE_XAML_GENERATED_BREAK_ON_UNHANDLED_EXCEPTION;DISABLE_XAML_GENERATED_BINDING_DEBUG_OUTPUT;$(AlphaConstants);$(CanaryConstants)</DefineConstants>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>embedded</DebugType>
+		<ApplicationIcon>Assets\Logo.ico</ApplicationIcon>
+		<Configurations>Debug;Release</Configurations>
+		<SelfContained>true</SelfContained>
+		<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
+		<MvvmToolkitEnableINotifyPropertyChangingSupport>false</MvvmToolkitEnableINotifyPropertyChangingSupport>
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<NoWarn>CS1591</NoWarn>
+		<AppxPackage>false</AppxPackage>
+		<WindowsPackageType>None</WindowsPackageType>
+		<Version>6.6.1</Version>
+		<PublishAot>False</PublishAot>
+		<PublishTrimmed>False</PublishTrimmed>
+		<AssemblyName>ky3launcher</AssemblyName>
+		<AssemblyTitle>ky3 Launcher</AssemblyTitle>
+		<Company>kyxsan Detail Development Team</Company>
+		<Copyright>Copyright © 2026 kyxsan Detail Development Team</Copyright>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+	  <DebugType>embedded</DebugType>
+	  <IsPublishable>True</IsPublishable>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+	  <DebugType>embedded</DebugType>
+	  <IsPublishable>True</IsPublishable>
+	</PropertyGroup>
+	<ItemGroup>
+		<Manifest Include="$(ApplicationManifest)" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<DllFiles Include="d:\kyxsan-launcher\kyxsan-zr\bin\Release\Ky3-luancher-Plugin.dll" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="d:\kyxsan-launcher\kyxsan-zr\bin\Release\PacketSniffer.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Link>PacketSniffer.dll</Link>
+			<Visible>false</Visible>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="NativeLibs\kyxsan.Native.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Link>kyxsan.Native.dll</Link>
+			<Visible>false</Visible>
+		</None>
+	</ItemGroup>
+
+	<Target Name="CopyDLL" AfterTargets="Build">
+		<Copy SourceFiles="@(DllFiles)" DestinationFolder="$(OutDir)" />
+	</Target>
+
+	<Target Name="CopyDLLPublish" AfterTargets="Publish">
+		<Copy SourceFiles="@(DllFiles)" DestinationFolder="$(PublishDir)" />
+	</Target>
+
+	<Target Name="DeleteLibsAfterBuild" AfterTargets="Build">
+		<ItemGroup>
+			<LibFiles Include="$(OutputPath)**\*.lib" />
+		</ItemGroup>
+		<Delete Files="@(LibFiles)" />
+	</Target>
+
+  <ItemGroup>
+    <AdditionalFiles Include="Properties\ApiEndpoints.csv" />
+    <AdditionalFiles Include="Properties\BannedSymbols.txt" />
+    <AdditionalFiles Include="CodeMetricsConfig.txt" />
+    <AdditionalFiles Include="Properties\IdentityStructs.json" />
+    <AdditionalFiles Include="Resource\Localization\SHRegex.resx" />
+    <AdditionalFiles Include="Resource\Localization\SH.resx" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Content Update="Assets\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Resource\Font\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Resource\Icon\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Resource\ItemIcon\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Resource\Navigation\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Resource\ThirdParty\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Resources\Metadata\CHS\**\*.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<Target Name="PruneStaleBundledMetadata" BeforeTargets="BeforeBuild">
+		<ItemGroup>
+			<_ExpectedBundledMetadata Include="@(Content)" Condition="$([System.String]::Copy('%(Content.Identity)').StartsWith('Resources\Metadata\'))" />
+			<_ExpectedBundledMetadataOutput Include="@(_ExpectedBundledMetadata->'$(OutDir)%(Identity)')" />
+			<_ExistingBundledMetadataOutput Include="$(OutDir)Resources\Metadata\**\*.json" />
+			<_OrphanBundledMetadataOutput Include="@(_ExistingBundledMetadataOutput)" Exclude="@(_ExpectedBundledMetadataOutput)" />
+		</ItemGroup>
+		<Delete Files="@(_OrphanBundledMetadataOutput)" Condition="'@(_OrphanBundledMetadataOutput)' != ''" />
+		<Message Text="Pruned stale bundled metadata: @(_OrphanBundledMetadataOutput->Count())" Importance="high" Condition="'@(_OrphanBundledMetadataOutput)' != ''" />
+	</Target>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Labs.WinUI.Controls.DataTable" Version="0.1.260109-build.2471" />
+		<PackageReference Include="CommunityToolkit.Labs.WinUI.Shimmer" Version="0.1.250828-build.2223" />
+		<PackageReference Include="CommunityToolkit.Labs.WinUI.TokenView" Version="0.1.250828-build.2223" />
+		<PackageReference Include="CommunityToolkit.Labs.WinUI.TransitionHelper" Version="0.1.260109-build.2471" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+		<PackageReference Include="CommunityToolkit.WinUI.Behaviors" Version="8.2.251219" />
+		<PackageReference Include="CommunityToolkit.WinUI.Collections" Version="8.2.251219" />
+		<PackageReference Include="CommunityToolkit.WinUI.Controls.HeaderedControls" Version="8.2.251219" />
+		<PackageReference Include="CommunityToolkit.WinUI.Controls.Primitives" Version="8.2.251219" />
+		<PackageReference Include="CommunityToolkit.WinUI.Controls.Segmented" Version="8.2.251219" />
+		<PackageReference Include="CommunityToolkit.WinUI.Controls.SettingsControls" Version="8.2.251219" />
+		<PackageReference Include="CommunityToolkit.WinUI.Converters" Version="8.2.251219" />
+		<PackageReference Include="CommunityToolkit.WinUI.Media" Version="8.2.251219" />
+		<PackageReference Include="Google.Protobuf" Version="3.33.4" />
+		<PackageReference Include="JetBrains.Annotations" Version="2025.2.4" />
+		<PackageReference Include="Microsoft.CodeAnalysis.BannedApiAnalyzers" Version="4.14.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="5.0.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="5.0.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" Version="5.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="10.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="10.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Console" Version="10.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.1" />
+		<PackageReference Include="Microsoft.Extensions.ObjectPool" Version="10.0.1" />
+		<PackageReference Include="Microsoft.Graphics.Win2D" Version="1.3.2" />
+		<PackageReference Include="Microsoft.IO.RecyclableMemoryStream" Version="3.0.1" />
+		<PackageReference Include="Microsoft.VisualStudio.Validation" Version="17.13.22" />
+		<PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3650.58" />
+		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="2.3.0-prerelease.251115.2" />
+		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.7463" />
+		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.260101001" />
+		<PackageReference Include="OpenCvSharp4" Version="4.10.0.20241108" />
+		<PackageReference Include="OpenCvSharp4.Extensions" Version="4.10.0.20241108" />
+		<PackageReference Include="OpenCvSharp4.runtime.win" Version="4.10.0.20241108" />
+		<PackageReference Include="QRCoder" Version="1.7.0" />
+		<PackageReference Include="Quartz.Extensions.DependencyInjection" Version="3.15.1" />
+		<PackageReference Include="Sentry.Extensions.Logging" Version="6.0.0" />
+		<PackageReference Include="SharpCompress" Version="0.44.0" />
+		<PackageReference Include="Snap.HPatch" Version="0.0.2">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Snap.LibGit2Sharp" Version="0.31.1-preview.0.4" />
+		<PackageReference Include="Snap.ZStandard" Version="1.5.7" />
+		<PackageReference Include="System.Drawing.Common" Version="10.0.1" />
+		<PackageReference Include="System.Formats.Nrbf" Version="10.0.1" />
+		<PackageReference Include="System.IO.Hashing" Version="10.0.1" />
+		<PackageReference Include="System.Security.Cryptography.ProtectedData" Version="10.0.3" />
+		<PackageReference Include="System.Threading.RateLimiting" Version="10.0.1" />
+		<PackageReference Include="Yae.Lib" Version="5.4.4">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<NuGetAuditSuppress Include="https://github.com/advisories/GHSA-6c8g-7p36-r338" />
+		<NuGetAuditSuppress Include="https://github.com/advisories/GHSA-37gx-xxp4-5rgx" />
+		<NuGetAuditSuppress Include="https://github.com/advisories/GHSA-w3x6-4m5h-cxqf" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\kyxsan.SourceGeneration\kyxsan.SourceGeneration.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="..\Runner\x64\$(Configuration)\Runner.dll" Condition="Exists('..\Runner\x64\$(Configuration)\Runner.dll')">
+	    <Link>Runner.dll</Link>
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Analyzer Include="$(NuGetPackageRoot)microsoft.bcl.hashcode\6.0.0\lib\netstandard2.0\Microsoft.Bcl.HashCode.dll" />
+	</ItemGroup>
+
+	<Target Name="CleanBuildOutput" AfterTargets="Build">
+		<PropertyGroup>
+			<_OutputDir>$(BaseOutputPath)$(Configuration)</_OutputDir>
+		</PropertyGroup>
+
+		<Delete Files="$(_OutputDir)\$(AssemblyName).xml" Condition="Exists('$(_OutputDir)\$(AssemblyName).xml')" />
+
+		<RemoveDir Directories="$(_OutputDir)\BuildHost-net472" Condition="Exists('$(_OutputDir)\BuildHost-net472')" />
+		<RemoveDir Directories="$(_OutputDir)\BuildHost-netcore" Condition="Exists('$(_OutputDir)\BuildHost-netcore')" />
+
+
+		<Exec Command="for /d %%d in (&quot;$(_OutputDir)\*-*&quot;) do ( if /i not &quot;%%~nxd&quot;==&quot;zh-CN&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hans&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hant&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-TW&quot; if /i not &quot;%%~nxd&quot;==&quot;Microsoft.UI.Xaml&quot; rd /s /q &quot;%%d&quot; )" />
+	</Target>
+</Project>

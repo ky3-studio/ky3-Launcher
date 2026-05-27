@@ -1,0 +1,60 @@
+<ContentDialog
+    x:Class="kyxsan.UI.Xaml.View.Dialog.LaunchGameCleanResourceDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:shuxm="using:kyxsan.UI.Xaml.Markup"
+    xmlns:shuxvd="using:kyxsan.UI.Xaml.View.Dialog"
+    Title="{shuxm:ResourceString Name=ViewDialogCleanResourceTitle}"
+    CloseButtonText="{shuxm:ResourceString Name=ViewDialogCleanResourceCloseButton}"
+    DefaultButton="Primary"
+    PrimaryButtonText="{shuxm:ResourceString Name=ViewDialogCleanResourcePrimaryButton}"
+    Style="{StaticResource DefaultContentDialogStyle}"
+    mc:Ignorable="d">
+
+    <StackPanel MinWidth="420" Spacing="8">
+        <TextBlock
+            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+            Text="{shuxm:ResourceString Name=ViewDialogCleanResourceDescription}"
+            TextWrapping="Wrap"/>
+        <ListView
+            x:Name="ResourceListView"
+            MaxHeight="360"
+            Margin="0,4,0,0"
+            ItemsSource="{x:Bind CleanableResources}"
+            SelectionMode="Multiple"
+            SelectionChanged="OnSelectionChanged">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate x:DataType="shuxvd:CleanResourceItem">
+                    <Grid Padding="4,8" ColumnSpacing="12">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" Spacing="2">
+                            <TextBlock FontWeight="SemiBold" Text="{x:Bind Name}" TextTrimming="CharacterEllipsis"/>
+                            <TextBlock
+                                FontSize="12"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                Text="{x:Bind Path}"
+                                TextTrimming="CharacterEllipsis"
+                                ToolTipService.ToolTip="{x:Bind Path}"/>
+                        </StackPanel>
+                        <TextBlock
+                            Grid.Column="1"
+                            VerticalAlignment="Center"
+                            FontSize="13"
+                            Foreground="{x:Bind SizeForeground}"
+                            Text="{x:Bind SizeText}"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ListView>
+        <TextBlock
+            x:Name="TotalSizeText"
+            HorizontalAlignment="Right"
+            FontSize="13"
+            Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+    </StackPanel>
+</ContentDialog>

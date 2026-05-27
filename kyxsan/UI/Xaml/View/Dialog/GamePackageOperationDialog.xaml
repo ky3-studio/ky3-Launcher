@@ -1,0 +1,48 @@
+<ContentDialog
+    x:Class="kyxsan.UI.Xaml.View.Dialog.GamePackageOperationDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mxi="using:Microsoft.Xaml.Interactivity"
+    xmlns:shuxb="using:kyxsan.UI.Xaml.Behavior"
+    xmlns:shuxm="using:kyxsan.UI.Xaml.Markup"
+    xmlns:shuxvs="using:kyxsan.UI.Xaml.View.Specialized"
+    xmlns:shvg="using:kyxsan.ViewModel.Game"
+    Style="{StaticResource DefaultContentDialogStyle}"
+    mc:Ignorable="d">
+    <StackPanel MinWidth="480" Spacing="16" d:DataContext="{d:DesignInstance shvg:GamePackageOperationViewModel}">
+        <mxi:Interaction.Behaviors>
+            <shuxb:InvokeCommandOnLoadedBehavior Command="{x:Bind ViewModel.PeriodicRefreshUICommand}"/>
+        </mxi:Interaction.Behaviors>
+        <shuxvs:SophonProgressBar
+            Description="{x:Bind ViewModel.DownloadFileName, Mode=OneWay}"
+            IconGlyph="{StaticResource FontIconContentDownload}"
+            Maximum="{x:Bind ViewModel.DownloadTotalChunks, Mode=OneWay}"
+            RemainingTime="{x:Bind ViewModel.DownloadRemainingTime, Mode=OneWay}"
+            Speed="{x:Bind ViewModel.DownloadSpeed, Mode=OneWay}"
+            Value="{x:Bind ViewModel.DownloadedChunks, Mode=OneWay}"/>
+        <shuxvs:SophonProgressBar
+            Description="{x:Bind ViewModel.InstallFileName, Mode=OneWay}"
+            IconGlyph="{StaticResource FontIconContentHardDrive}"
+            Maximum="{x:Bind ViewModel.InstallTotalChunks, Mode=OneWay}"
+            RemainingTime="{x:Bind ViewModel.InstallRemainingTime, Mode=OneWay}"
+            Speed="{x:Bind ViewModel.InstallSpeed, Mode=OneWay}"
+            Value="{x:Bind ViewModel.InstalledChunks, Mode=OneWay}"/>
+        <Grid>
+            <Button
+                MinWidth="120"
+                HorizontalAlignment="Right"
+                Command="{x:Bind ViewModel.CancelCommand}"
+                Content="{shuxm:ResourceString Name=ContentDialogCancelCloseButtonText}"
+                Visibility="{x:Bind ViewModel.IsFinished, Mode=OneWay, Converter={StaticResource BoolToVisibilityRevertConverter}}"/>
+            <Button
+                MinWidth="120"
+                HorizontalAlignment="Right"
+                Command="{x:Bind CloseDialogCommand}"
+                Content="{shuxm:ResourceString Name=ContentDialogCompletePrimaryButtonText}"
+                Style="{ThemeResource AccentButtonStyle}"
+                Visibility="{x:Bind ViewModel.IsFinished, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}}"/>
+        </Grid>
+    </StackPanel>
+</ContentDialog>

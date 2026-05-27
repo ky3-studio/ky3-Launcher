@@ -1,0 +1,75 @@
+<shuxc:ScopedPage
+    x:Class="kyxsan.UI.Xaml.View.Page.EmotionIconPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cw="using:CommunityToolkit.WinUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mxi="using:Microsoft.Xaml.Interactivity"
+    xmlns:shuxb="using:kyxsan.UI.Xaml.Behavior"
+    xmlns:shuxc="using:kyxsan.UI.Xaml.Control"
+    xmlns:shuxci="using:kyxsan.UI.Xaml.Control.Image"
+    xmlns:shuxm="using:kyxsan.UI.Xaml.Markup"
+    xmlns:shvw="using:kyxsan.ViewModel.Wiki"
+    d:DataContext="{d:DesignInstance Type=shvw:EmotionIconViewModel}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <mxi:Interaction.Behaviors>
+        <shuxb:InvokeCommandOnLoadedBehavior Command="{Binding LoadCommand}"/>
+    </mxi:Interaction.Behaviors>
+
+    <Page.Resources>
+        <DataTemplate x:Key="EmotionIconTemplate" x:DataType="shvw:EmotionIconEntry">
+            <Grid Margin="3">
+                <Grid
+                    Width="96"
+                    Height="96"
+                    CornerRadius="4">
+                    <Image Source="ms-appx:///Resource/ItemIcon/UI_QUALITY_RED.png"/>
+                    <Image Source="ms-appx:///Resource/ItemIcon/UI_ImgSign_ItemIcon.png"/>
+                    <shuxci:CachedImage
+                        Margin="6"
+                        Source="{x:Bind ImageUri}"/>
+                </Grid>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid>
+        <Border Background="#40000000"/>
+        <shuxc:StandardView ShowCondition="{Binding EmotionIcons, Converter={StaticResource EmptyObjectToBoolConverter}}">
+            <shuxc:StandardView.EmptyContent>
+                <shuxc:Loading
+                    IsLoading="{Binding EmotionIcons, Converter={StaticResource EmptyObjectToBoolRevertConverter}}"
+                    Style="{ThemeResource DefaultLoadingViewStyle}"/>
+            </shuxc:StandardView.EmptyContent>
+
+            <Border Margin="16" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                <Border Style="{ThemeResource AcrylicBorderCardStyle}">
+                    <Grid>
+                        <GridView
+                            Padding="12"
+                            DoubleTapped="OnEmotionIconDoubleTapped"
+                            IsItemClickEnabled="False"
+                            ItemTemplate="{StaticResource EmotionIconTemplate}"
+                            ItemsSource="{Binding EmotionIcons}"
+                            SelectionMode="Single">
+                            <GridView.ItemContainerStyle>
+                                <Style BasedOn="{StaticResource DefaultGridViewItemStyle}" TargetType="GridViewItem">
+                                    <Setter Property="Padding" Value="0"/>
+                                    <Setter Property="Margin" Value="0"/>
+                                </Style>
+                            </GridView.ItemContainerStyle>
+                            <GridView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <ItemsWrapGrid Orientation="Horizontal" ItemWidth="102" ItemHeight="102"/>
+                                </ItemsPanelTemplate>
+                            </GridView.ItemsPanel>
+                        </GridView>
+                    </Grid>
+                </Border>
+            </Border>
+        </shuxc:StandardView>
+    </Grid>
+</shuxc:ScopedPage>

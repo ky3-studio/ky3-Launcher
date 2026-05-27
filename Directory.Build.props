@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <BaseOutputPath>D:\kyxsan-launcher\bin\</BaseOutputPath>
+    <BaseIntermediateOutputPath>D:\kyxsan-launcher\.obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+
+  <Target Name="CleanObjAfterBuild" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Release'">
+    <RemoveDir Directories="$(BaseIntermediateOutputPath)" />
+  </Target>
+</Project>

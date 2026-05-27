@@ -1,0 +1,213 @@
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+// | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
+// | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
+// | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
+// |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
+// Copyright (c) DGP Studio. All rights reserved.
+// Modified by kyxsan.
+// Licensed under the MIT license.
+
+using kyxsan.Core.DependencyInjection.Annotation.HttpClient;
+using kyxsan.Model.Primitive;
+using kyxsan.Service.Geetest;
+using kyxsan.ViewModel.User;
+using kyxsan.Web.Endpoint.Hoyolab;
+using kyxsan.Web.Hoyolab.DataSigning;
+using kyxsan.Web.Hoyolab.Takumi.GameRecord.Avatar;
+using kyxsan.Web.Hoyolab.Takumi.GameRecord.HardChallenge;
+using kyxsan.Web.Request.Builder;
+using kyxsan.Web.Request.Builder.Abstraction;
+using kyxsan.Web.Response;
+using System.Collections.Immutable;
+using System.Net.Http;
+
+namespace kyxsan.Web.Hoyolab.Takumi.GameRecord;
+
+[HttpClient(HttpClientConfiguration.XRpc)]
+[PrimaryHttpMessageHandler(UseCookies = false)]
+internal sealed partial class GameRecordClient : IGameRecordClient
+{
+    private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
+    private readonly IServiceProvider serviceProvider;
+    [FromKeyed(ApiEndpointsKind.Chinese)]
+    private readonly IApiEndpoints apiEndpoints;
+    private readonly HttpClient httpClient;
+
+    [GeneratedConstructor]
+    public partial GameRecordClient(IServiceProvider serviceProvider, HttpClient httpClient);
+
+    public async ValueTask<Response<DailyNote.DailyNote>> GetDailyNoteAsync(UserAndUid userAndUid, CancellationToken token = default)
+    {
+        HttpRequestMessageBuilder builder = httpRequestMessageBuilderFactory.Create()
+            .SetRequestUri(apiEndpoints.GameRecordDailyNote(userAndUid.Uid))
+            .SetUserCookieAndFpHeader(userAndUid, CookieType.Cookie)
+            .SetReferer(apiEndpoints.WebStaticReferer())
+            .SetHeader("x-rpc-tool_verison", "v5.0.1-ys")
+            .Get();
+
+        await builder.SignDataAsync(DataSignAlgorithmVersion.Gen2, SaltType.X4, false).ConfigureAwait(false);
+
+        Response<DailyNote.DailyNote>? resp = await builder
+            .SendAsync<Response<DailyNote.DailyNote>>(httpClient, token)
+            .ConfigureAwait(false);
+
+        return await RetryIf1034Async(builder, userAndUid, resp, SH.WebDailyNoteVerificationFailed, CardVerifiationHeaders.CreateForDailyNote, token).ConfigureAwait(false);
+    }
+
+    public async ValueTask<Response<PlayerInfo>> GetPlayerInfoAsync(UserAndUid userAndUid, CancellationToken token = default)
+    {
+        HttpRequestMessageBuilder builder = httpRequestMessageBuilderFactory.Create()
+            .SetRequestUri(apiEndpoints.GameRecordIndex(userAndUid.Uid))
+            .SetUserCookieAndFpHeader(userAndUid, CookieType.Cookie)
+            .SetReferer(apiEndpoints.WebStaticReferer())
+            .Get();
+
+        await builder.SignDataAsync(DataSignAlgorithmVersion.Gen2, SaltType.X4, false).ConfigureAwait(false);
+
+        Response<PlayerInfo>? resp = await builder
+            .SendAsync<Response<PlayerInfo>>(httpClient, token)
+            .ConfigureAwait(false);
+
+        return await RetryIf1034Async(builder, userAndUid, resp, SH.WebIndexOrSpiralAbyssVerificationFailed, CardVerifiationHeaders.CreateForIndex, token).ConfigureAwait(false);
+    }
+
+    public async ValueTask<Response<SpiralAbyss.SpiralAbyss>> GetSpiralAbyssAsync(UserAndUid userAndUid, ScheduleType schedule, CancellationToken token = default)
+    {
+        HttpRequestMessageBuilder builder = httpRequestMessageBuilderFactory.Create()
+            .SetRequestUri(apiEndpoints.GameRecordSpiralAbyss(schedule, userAndUid.Uid))
+            .SetUserCookieAndFpHeader(userAndUid, CookieType.Cookie)
+            .SetReferer(apiEndpoints.WebStaticReferer())
+            .Get();
+
+        await builder.SignDataAsync(DataSignAlgorithmVersion.Gen2, SaltType.X4, false).ConfigureAwait(false);
+
+        Response<SpiralAbyss.SpiralAbyss>? resp = await builder
+            .SendAsync<Response<SpiralAbyss.SpiralAbyss>>(httpClient, token)
+            .ConfigureAwait(false);
+
+        return await RetryIf1034Async(builder, userAndUid, resp, SH.WebIndexOrSpiralAbyssVerificationFailed, CardVerifiationHeaders.CreateForSpiralAbyss, token).ConfigureAwait(false);
+    }
+
+    public async ValueTask<Response<BasicRoleInfo>> GetRoleBasicInfoAsync(UserAndUid userAndUid, CancellationToken token = default)
+    {
+        HttpRequestMessageBuilder builder = httpRequestMessageBuilderFactory.Create()
+            .SetRequestUri(apiEndpoints.GameRecordRoleBasicInfo(userAndUid.Uid))
+            .SetUserCookieAndFpHeader(userAndUid, CookieType.Cookie)
+            .SetReferer(apiEndpoints.WebStaticReferer())
+            .Get();
+
+        await builder.SignDataAsync(DataSignAlgorithmVersion.Gen2, SaltType.X4, false).ConfigureAwait(false);
+
+        Response<BasicRoleInfo>? resp = await builder
+            .SendAsync<Response<BasicRoleInfo>>(httpClient, token)
+            .ConfigureAwait(false);
+
+        return Response.Response.DefaultIfNull(resp);
+    }
+
+    public async ValueTask<Response<ListWrapper<Character>>> GetCharacterListAsync(UserAndUid userAndUid, CancellationToken token = default)
+    {
+        HttpRequestMessageBuilder builder = httpRequestMessageBuilderFactory.Create()
+            .SetRequestUri(apiEndpoints.GameRecordCharacterList())
+            .SetUserCookieAndFpHeader(userAndUid, CookieType.Cookie)
+            .SetReferer(apiEndpoints.WebStaticReferer())
+            .PostJson(new CharacterData(userAndUid.Uid));
+
+        await builder.SignDataAsync(DataSignAlgorithmVersion.Gen2, SaltType.X4, false).ConfigureAwait(false);
+
+        Response<ListWrapper<Character>>? resp = await builder
+            .SendAsync<Response<ListWrapper<Character>>>(httpClient, token)
+            .ConfigureAwait(false);
+
+        return await RetryIf1034Async(builder, userAndUid, resp, SH.WebIndexOrSpiralAbyssVerificationFailed, CardVerifiationHeaders.CreateForCharacterAll, token).ConfigureAwait(false);
+    }
+
+    public async ValueTask<Response<ListWrapper<DetailedCharacter>>> GetCharacterDetailAsync(UserAndUid userAndUid, ImmutableArray<AvatarId> characterIds, CancellationToken token = default)
+    {
+        HttpRequestMessageBuilder builder = httpRequestMessageBuilderFactory.Create()
+            .SetRequestUri(apiEndpoints.GameRecordCharacterDetail())
+            .SetUserCookieAndFpHeader(userAndUid, CookieType.Cookie)
+            .SetReferer(apiEndpoints.WebStaticReferer())
+            .PostJson(new CharacterData(userAndUid.Uid, characterIds));
+
+        await builder.SignDataAsync(DataSignAlgorithmVersion.Gen2, SaltType.X4, false).ConfigureAwait(false);
+
+        Response<ListWrapper<DetailedCharacter>>? resp = await builder
+            .SendAsync<Response<ListWrapper<DetailedCharacter>>>(httpClient, token)
+            .ConfigureAwait(false);
+
+        return await RetryIf1034Async(builder, userAndUid, resp, SH.WebIndexOrSpiralAbyssVerificationFailed, CardVerifiationHeaders.CreateForCharacterDetail, token).ConfigureAwait(false);
+    }
+
+    public async ValueTask<Response<RoleCombat.RoleCombat>> GetRoleCombatAsync(UserAndUid userAndUid, CancellationToken token = default)
+    {
+        HttpRequestMessageBuilder builder = httpRequestMessageBuilderFactory.Create()
+            .SetRequestUri(apiEndpoints.GameRecordRoleCombat(userAndUid.Uid))
+            .SetUserCookieAndFpHeader(userAndUid, CookieType.Cookie)
+            .SetReferer(apiEndpoints.WebStaticReferer())
+            .Get();
+
+        await builder.SignDataAsync(DataSignAlgorithmVersion.Gen2, SaltType.X4, false).ConfigureAwait(false);
+
+        Response<RoleCombat.RoleCombat>? resp = await builder
+            .SendAsync<Response<RoleCombat.RoleCombat>>(httpClient, token)
+            .ConfigureAwait(false);
+
+        return await RetryIf1034Async(builder, userAndUid, resp, SH.WebIndexOrSpiralAbyssVerificationFailed, CardVerifiationHeaders.CreateForRoleCombat, token).ConfigureAwait(false);
+    }
+
+    public async ValueTask<Response<HardChallenge.HardChallenge>> GetHardChallengeAsync(UserAndUid userAndUid, CancellationToken token = default)
+    {
+        HttpRequestMessageBuilder builder = httpRequestMessageBuilderFactory.Create()
+            .SetRequestUri(apiEndpoints.GameRecordHardChallenge(userAndUid.Uid))
+            .SetUserCookieAndFpHeader(userAndUid, CookieType.Cookie)
+            .SetReferer(apiEndpoints.WebStaticReferer())
+            .Get();
+
+        await builder.SignDataAsync(DataSignAlgorithmVersion.Gen2, SaltType.X4, false).ConfigureAwait(false);
+
+        Response<HardChallenge.HardChallenge>? resp = await builder
+            .SendAsync<Response<HardChallenge.HardChallenge>>(httpClient, token)
+            .ConfigureAwait(false);
+
+        return await RetryIf1034Async(builder, userAndUid, resp, SH.WebIndexOrSpiralAbyssVerificationFailed, CardVerifiationHeaders.CreateForHardChallenge, token).ConfigureAwait(false);
+    }
+
+    public async ValueTask<Response<HardChallengePopularity>> GetHardChallengePopularityAsync(UserAndUid userAndUid, CancellationToken token = default)
+    {
+        HttpRequestMessageBuilder builder = httpRequestMessageBuilderFactory.Create()
+            .SetRequestUri(apiEndpoints.GameRecordHardChallengePopularity(userAndUid.Uid))
+            .SetUserCookieAndFpHeader(userAndUid, CookieType.Cookie)
+            .SetReferer(apiEndpoints.WebStaticReferer())
+            .Get();
+
+        await builder.SignDataAsync(DataSignAlgorithmVersion.Gen2, SaltType.X4, false).ConfigureAwait(false);
+
+        Response<HardChallengePopularity>? resp = await builder
+            .SendAsync<Response<HardChallengePopularity>>(httpClient, token)
+            .ConfigureAwait(false);
+
+        return await RetryIf1034Async(builder, userAndUid, resp, SH.WebIndexOrSpiralAbyssVerificationFailed, CardVerifiationHeaders.CreateForHardChallenge, token).ConfigureAwait(false);
+    }
+
+    private async ValueTask<TResponse> RetryIf1034Async<TResponse>(HttpRequestMessageBuilder builder, UserAndUid userAndUid, TResponse? response, string message, Func<IApiEndpoints, CardVerifiationHeaders> headersFactory, CancellationToken token = default)
+        where TResponse : class, ICommonResponse<TResponse>
+    {
+        if (response?.ReturnCode is (int)KnownReturnCode.CODE1034)
+        {
+            response.Message = message;
+
+            IGeetestService geetestService = serviceProvider.GetRequiredService<IGeetestService>();
+            CardVerifiationHeaders headers = headersFactory(apiEndpoints);
+
+            if (await geetestService.TryVerifyXrpcChallengeAsync(userAndUid.User, headers, token).ConfigureAwait(false) is { } challenge)
+            {
+                builder.Resurrect().SetXrpcChallenge(challenge);
+                await builder.SignDataAsync(DataSignAlgorithmVersion.Gen2, SaltType.X4, false).ConfigureAwait(false);
+                response = await builder.SendAsync<TResponse>(httpClient, token).ConfigureAwait(false);
+            }
+        }
+
+        return Response.Response.DefaultIfNull(response);
+    }
+}

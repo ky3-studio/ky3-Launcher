@@ -1,0 +1,230 @@
+<shuxc:ScopedPage
+    x:Class="kyxsan.UI.Xaml.View.Page.LauncherHomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:cw="using:CommunityToolkit.WinUI"
+    xmlns:shuxc="using:kyxsan.UI.Xaml.Control"
+    xmlns:shuxm="using:kyxsan.UI.Xaml.Markup"
+    xmlns:shvl="using:kyxsan.ViewModel.LauncherHome"
+    d:DataContext="{d:DesignInstance shvl:LauncherHomeViewModel}"
+    Background="Transparent"
+    mc:Ignorable="d">
+
+    <Grid
+        PointerEntered="Page_PointerEntered"
+        PointerExited="Page_PointerExited">
+
+        <StackPanel
+            x:Name="HomeCardPanel"
+            Width="340"
+            Margin="79,0,0,60"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Bottom">
+            <Border
+                cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+              <Border
+                Height="150"
+                CornerRadius="8"
+                Translation="0,0,64"
+                PointerPressed="Banner_PointerPressed"
+                PointerEntered="Banner_PointerEntered"
+                PointerExited="Banner_PointerExited">
+                <Border.Shadow>
+                    <ThemeShadow/>
+                </Border.Shadow>
+                <Border.Clip>
+                    <RectangleGeometry Rect="0,0,340,150">
+                        <RectangleGeometry.Transform>
+                            <TranslateTransform/>
+                        </RectangleGeometry.Transform>
+                    </RectangleGeometry>
+                </Border.Clip>
+                <Grid>
+                    <Image
+                        x:Name="BannerImageOld"
+                        Opacity="0"
+                        Stretch="UniformToFill"/>
+                    <Image
+                        x:Name="BannerImage"
+                        Stretch="UniformToFill"/>
+                    <StackPanel
+                        x:Name="BannerIndicators"
+                        Margin="0,0,0,8"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Bottom"
+                        Orientation="Horizontal"
+                        Opacity="0"
+                        Visibility="Collapsed">
+                        <StackPanel.OpacityTransition>
+                            <ScalarTransition Duration="0:0:0.3"/>
+                        </StackPanel.OpacityTransition>
+                    </StackPanel>
+                </Grid>
+              </Border>
+            </Border>
+
+            <Border
+                Margin="0,4,0,0"
+                cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+              <Border
+                Padding="12,10,12,12"
+                CornerRadius="8"
+                Translation="0,0,64">
+                <Border.Shadow>
+                    <ThemeShadow/>
+                </Border.Shadow>
+                <Border.Background>
+                    <AcrylicBrush TintColor="#1C1C1C" TintOpacity="0.5" FallbackColor="#B01C1C1C"/>
+                </Border.Background>
+                <StackPanel>
+                    <StackPanel
+                        Orientation="Horizontal"
+                        Spacing="20">
+                        <TextBlock
+                            x:Name="TabActivity"
+                            FontSize="13"
+                            FontWeight="SemiBold"
+                            Foreground="White"
+                            PointerPressed="Tab_PointerPressed"
+                            Tag="activity"
+                            Text="{shuxm:ResourceString Name=ViewPageHomeTabActivity}"/>
+                        <TextBlock
+                            x:Name="TabAnnounce"
+                            FontSize="13"
+                            Foreground="#80FFFFFF"
+                            PointerPressed="Tab_PointerPressed"
+                            Tag="announce"
+                            Text="{shuxm:ResourceString Name=ViewPageHomeTabAnnouncement}"/>
+                        <TextBlock
+                            x:Name="TabInfo"
+                            FontSize="13"
+                            Foreground="#80FFFFFF"
+                            PointerPressed="Tab_PointerPressed"
+                            Tag="info"
+                            Text="{shuxm:ResourceString Name=ViewPageHomeTabInfo}"/>
+                    </StackPanel>
+
+                    <Border
+                        x:Name="TabIndicator"
+                        Width="24"
+                        Height="2"
+                        Margin="0,6,0,8"
+                        HorizontalAlignment="Left"
+                        Background="White"
+                        CornerRadius="1">
+                        <Border.TranslationTransition>
+                            <Vector3Transition Duration="0:0:0.25"/>
+                        </Border.TranslationTransition>
+                    </Border>
+
+                    <StackPanel
+                        x:Name="PostList"
+                        Spacing="4">
+                        <StackPanel.OpacityTransition>
+                            <ScalarTransition Duration="0:0:0.2"/>
+                        </StackPanel.OpacityTransition>
+                        <StackPanel.TranslationTransition>
+                            <Vector3Transition Duration="0:0:0.2"/>
+                        </StackPanel.TranslationTransition>
+                    </StackPanel>
+                </StackPanel>
+              </Border>
+            </Border>
+        </StackPanel>
+
+        <StackPanel
+            x:Name="BgIndicatorPanel"
+            Margin="0,0,0,20"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom"
+            Orientation="Horizontal"
+            Spacing="8">
+            <Border
+                x:Name="BgPauseBtn"
+                Width="28"
+                Height="28"
+                CornerRadius="14"
+                PointerPressed="BgPausePlay_PointerPressed"
+                Visibility="Collapsed">
+                <Border.Background>
+                    <SolidColorBrush Color="#60000000"/>
+                </Border.Background>
+                <TextBlock
+                    x:Name="BgPauseIcon"
+                    FontSize="10"
+                    Foreground="White"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="❚❚"/>
+            </Border>
+            <StackPanel
+                x:Name="BgIndicators"
+                Orientation="Horizontal"
+                VerticalAlignment="Center"
+                Visibility="Collapsed"/>
+        </StackPanel>
+
+        <Button
+            x:Name="LaunchButton"
+            Height="52"
+            MinWidth="170"
+            Padding="16,0,24,0"
+            Margin="0,0,50,60"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            BorderThickness="0"
+            CornerRadius="26"
+            Translation="0,0,32"
+            FocusVisualPrimaryBrush="Transparent"
+            FocusVisualSecondaryBrush="Transparent"
+            PointerEntered="LaunchButton_PointerEntered"
+            PointerExited="LaunchButton_PointerExited"
+            Click="LaunchButton_Click">
+            <Button.Shadow>
+                <ThemeShadow/>
+            </Button.Shadow>
+            <Button.ScaleTransition>
+                <Vector3Transition Duration="0:0:0.15"/>
+            </Button.ScaleTransition>
+            <Button.Background>
+                <SolidColorBrush x:Name="LaunchButtonBg" Color="#FFC729"/>
+            </Button.Background>
+            <StackPanel
+                    Orientation="Horizontal"
+                    VerticalAlignment="Center"
+                    Spacing="10">
+                    <Border
+                        x:Name="PlayIconBorder"
+                        Width="36"
+                        Height="36"
+                        CornerRadius="18">
+                        <Border.Background>
+                            <SolidColorBrush x:Name="PlayIconBg" Color="#2D2D32"/>
+                        </Border.Background>
+                        <TextBlock
+                            x:Name="PlayIconText"
+                            FontSize="15"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Text="▶">
+                            <TextBlock.Foreground>
+                                <SolidColorBrush x:Name="PlayIconFg" Color="#FFC729"/>
+                            </TextBlock.Foreground>
+                        </TextBlock>
+                    </Border>
+                    <TextBlock
+                        x:Name="LaunchButtonText"
+                        FontSize="18"
+                        FontWeight="Bold"
+                        VerticalAlignment="Center"
+                        Text="{shuxm:ResourceString Name=ViewPageHomeLaunchGameButton}">
+                        <TextBlock.Foreground>
+                            <SolidColorBrush x:Name="LaunchTextFg" Color="#282828"/>
+                        </TextBlock.Foreground>
+                    </TextBlock>
+                </StackPanel>
+            </Button>
+        </Grid>
+</shuxc:ScopedPage>

@@ -1,0 +1,91 @@
+<ContentDialog
+    x:Class="kyxsan.UI.Xaml.View.Dialog.LaunchGameAdvancedStartDownloadDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cwc="using:CommunityToolkit.WinUI.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:kyxsan.UI.Xaml.View.Dialog"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:shuxm="using:kyxsan.UI.Xaml.Markup"
+    Title="{shuxm:ResourceString Name=ViewDialogLaunchGameAdvancedStartTitle}"
+    CloseButtonText="{shuxm:ResourceString Name=ContentDialogCancelCloseButtonText}"
+    Loaded="OnLoaded"
+    PrimaryButtonClick="OnPrimaryButtonClick"
+    PrimaryButtonText="{shuxm:ResourceString Name=ViewDialogLaunchGameAdvancedStartPrimary}"
+    Style="{StaticResource DefaultContentDialogStyle}"
+    mc:Ignorable="d">
+
+    <StackPanel Spacing="{ThemeResource SettingsCardContentControlSpacing}">
+        <InfoBar
+            Title="{x:Bind ErrorText, Mode=OneWay}"
+            IsClosable="False"
+            IsOpen="True"
+            Severity="Error"
+            Visibility="{x:Bind HasError, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}}"/>
+
+        <cwc:SettingsCard
+            Description="{x:Bind StatusText, Mode=OneWay}"
+            Header="{shuxm:ResourceString Name=ViewDialogLaunchGameAdvancedStartStatusHeader}"
+            IsClickEnabled="False">
+            <cwc:SettingsCard.HeaderIcon>
+                <FontIcon Glyph="&#xE9D2;"/>
+            </cwc:SettingsCard.HeaderIcon>
+        </cwc:SettingsCard>
+        <ProgressBar
+            Width="Auto"
+            IsIndeterminate="True"
+            ShowError="False"
+            ShowPaused="False"
+            Visibility="{x:Bind IsLoading, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}}"/>
+        <ProgressBar
+            Width="Auto"
+            Maximum="1"
+            Minimum="0"
+            ShowError="False"
+            ShowPaused="False"
+            Visibility="{x:Bind IsBusy, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}}"
+            Value="{x:Bind ProgressValue, Mode=OneWay}"/>
+
+        <ListView
+            Width="Auto"
+            Height="350"
+            IsEnabled="{x:Bind IsListEnabled, Mode=OneWay}"
+            ItemsSource="{x:Bind Programs, Mode=OneWay}"
+            SelectedItem="{x:Bind SelectedProgram, Mode=TwoWay}"
+            SelectionMode="Single">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="local:AdvancedStartProgramOption">
+                    <StackPanel Orientation="Vertical" Spacing="4">
+                        <TextBlock Style="{StaticResource BaseTextBlockStyle}" Text="{x:Bind Name}"/>
+                        <TextBlock Style="{ThemeResource CaptionTextBlockStyle}" Text="{x:Bind Version}"/>
+                        <TextBlock
+                            Style="{ThemeResource CaptionTextBlockStyle}"
+                            Text="{x:Bind Description}"
+                            TextWrapping="Wrap"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <TextBlock
+            Margin="12,6,12,6"
+            Text="{shuxm:ResourceString Name=ViewDialogLaunchGameAdvancedStartEmpty}"
+            TextWrapping="Wrap"
+            Visibility="{x:Bind Programs, Mode=OneWay, Converter={StaticResource EmptyCollectionToVisibilityRevertConverter}}"/>
+        <InfoBar
+            VerticalAlignment="Bottom"
+            IsClosable="True"
+            IsOpen="True"
+            Message="{shuxm:ResourceString Name=ViewDialogLaunchGameAdvancedStartInfoBarMessage}">
+            <InfoBar.ActionButton>
+                <Button Click="ViewDialogLaunchGameAdvancedStartInfoBarButton_Click">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal" Spacing="8">
+                            <FontIcon Glyph="&#xED25;"/>
+                            <TextBlock Text="{shuxm:ResourceString Name=ViewSettingFolderViewOpenFolderAction}"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+            </InfoBar.ActionButton>
+        </InfoBar>
+    </StackPanel>
+</ContentDialog>

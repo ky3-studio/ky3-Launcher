@@ -11,6 +11,7 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using CommunityToolkit.Mvvm.Input;
 using kyxsan.Core;
+using kyxsan.Core.IO.Http.Proxy;
 using kyxsan.Core.Setting;
 using kyxsan.Service.Notification;
 using kyxsan.Web.kyxsan;
@@ -18,6 +19,7 @@ using kyxsan.Web.kyxsan.Response;
 using kyxsan.Web.Response;
 using System.Diagnostics;
 using System.IO;
+using System.Net;
 using System.Net.Http;
 using System.Security.Cryptography;
 
@@ -93,7 +95,7 @@ internal sealed partial class UpdateService : IUpdateService
             return null;
         }
 
-        if (result.PackageInformation.Mirrors.FirstOrDefault() is not { } mirror)
+        if (result.PackageInformation.Mirrors is not { Count: > 0 } mirrors)
         {
             return null;
         }
@@ -112,35 +114,74 @@ internal sealed partial class UpdateService : IUpdateService
             File.Delete(tempPath);
         }
 
-        try
+        // Try each mirror with retry
+        foreach (kyxsanPackageMirror mirror in mirrors)
         {
-            using HttpClient downloadClient = new() { Timeout = TimeSpan.FromMinutes(10) };
-            using HttpResponseMessage response = await downloadClient.GetAsync(mirror.Url.ToUri(), HttpCompletionOption.ResponseHeadersRead, token).ConfigureAwait(false);
-            response.EnsureSuccessStatusCode();
+            for (int attempt = 0; attempt < 2; attempt++)
+            {
+                try
+                {
+                    using HttpClient downloadClient = CreateDownloadHttpClient();
+                    using HttpResponseMessage response = await downloadClient.GetAsync(mirror.Url.ToUri(), HttpCompletionOption.ResponseHeadersRead, token).ConfigureAwait(false);
+                    response.EnsureSuccessStatusCode();
 
-            using Stream netStream = await response.Content.ReadAsStreamAsync(token).ConfigureAwait(false);
-            using FileStream fileStream = File.Create(tempPath);
-            await netStream.CopyToAsync(fileStream, token).ConfigureAwait(false);
-            await fileStream.FlushAsync(token).ConfigureAwait(false);
+                    using Stream netStream = await response.Content.ReadAsStreamAsync(token).ConfigureAwait(false);
+                    using FileStream fileStream = File.Create(tempPath);
+                    await netStream.CopyToAsync(fileStream, token).ConfigureAwait(false);
+                    await fileStream.FlushAsync(token).ConfigureAwait(false);
+
+                    // SHA256 verification
+                    byte[] fileBytes = await File.ReadAllBytesAsync(tempPath, token).ConfigureAwait(false);
+                    byte[] hash = SHA256.HashData(fileBytes);
+                    string hashHex = Convert.ToHexString(hash);
+
+                    if (string.Equals(hashHex, result.PackageInformation.Validation, StringComparison.OrdinalIgnoreCase))
+                    {
+                        return tempPath;
+                    }
+
+                    // Hash mismatch, try next mirror
+                    try { File.Delete(tempPath); } catch { }
+                    break;
+                }
+                catch (OperationCanceledException)
+                {
+                    try { File.Delete(tempPath); } catch { }
+                    return null;
+                }
+                catch
+                {
+                    try { File.Delete(tempPath); } catch { }
+                    if (attempt < 1)
+                    {
+                        await Task.Delay(1000, token).ConfigureAwait(false);
+                    }
+                }
+            }
         }
-        catch
+
+        return null;
+    }
+
+    private static HttpClient CreateDownloadHttpClient()
+    {
+        string? proxyUrl = HttpProxyUsingSystemProxy.Instance.CurrentProxyUri;
+        SocketsHttpHandler handler = new()
         {
-            try { File.Delete(tempPath); } catch { }
-            return null;
-        }
+            ConnectTimeout = TimeSpan.FromSeconds(15),
+            SslOptions = new System.Net.Security.SslClientAuthenticationOptions
+            {
+                RemoteCertificateValidationCallback = (_, _, _, _) => true,
+            },
+        };
 
-        // SHA256 verification
-        byte[] fileBytes = await File.ReadAllBytesAsync(tempPath, token).ConfigureAwait(false);
-        byte[] hash = SHA256.HashData(fileBytes);
-        string hashHex = Convert.ToHexString(hash);
-
-        if (!string.Equals(hashHex, result.PackageInformation.Validation, StringComparison.OrdinalIgnoreCase))
+        if (!string.IsNullOrEmpty(proxyUrl))
         {
-            try { File.Delete(tempPath); } catch { }
-            return null;
+            handler.Proxy = new WebProxy(proxyUrl);
+            handler.UseProxy = true;
         }
 
-        return tempPath;
+        return new HttpClient(handler) { Timeout = TimeSpan.FromMinutes(10) };
     }
 
     public async ValueTask TriggerUpdateAsync(CheckUpdateResult result, CancellationToken token = default)

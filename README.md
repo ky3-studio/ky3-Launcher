@@ -17,88 +17,39 @@
 
 ## 架构
 
-### 模块总览
-
 ```mermaid
 graph LR
-    A[ky3 Launcher] --> B[UI Layer]
-    A --> C[Service Layer]
-    A --> D[Core Layer]
-    A --> E[Native Layer]
+    A[ky3 Launcher] --> B[UI]
+    A --> C[Services]
+    A --> D[Core]
+    A --> E[Native]
 
-    B --> B1[Pages / Views]
-    B --> B2[ViewModels]
-    B --> B3[Controls]
-    B --> B4[Shell Window]
-
-    C --> C1[Game Launch]
-    C --> C2[Achievement]
-    C --> C3[Gacha Log]
-    C --> C4[User / Auth]
-    C --> C5[Yae Integration]
-    C --> C6[Auto Sign-In]
-
-    D --> D1[SQLite]
-    D --> D2[Image Cache]
-    D --> D3[Local Settings]
-    D --> D4[Threading]
-    D --> D5[IO / FileSystem]
-
-    E --> E1[Runner.dll]
-    E --> E2[HotKey Hook]
-    E --> E3[Win32 Interop]
+    B --> B1[Pages] & B2[ViewModels] & B3[Controls]
+    C --> C1[Game] & C2[Achievement] & C3[Gacha] & C4[User] & C5[Yae]
+    D --> D1[SQLite] & D2[Cache] & D3[Settings] & D4[Threading]
+    E --> E1[Runner.dll] & E2[HotKey] & E3[Win32]
 ```
-
-### 分层架构
 
 ```mermaid
 graph TD
-    subgraph UI["UI Layer — WinUI 3 / XAML"]
-        Shell[Shell Window] & Pages[Pages] & Controls[Controls] & Windowing[Windowing]
+    subgraph UI["UI — WinUI 3"]
+        Pages & ViewModels & Controls
     end
 
-    subgraph ViewModel["ViewModel — CommunityToolkit.Mvvm"]
-        GameVM[Game] & AchievementVM[Achievement] & GachaVM[Gacha] & UserVM[User] & SettingVM[Setting] & WikiVM[Wiki]
+    subgraph Services["Services"]
+        Game & Achievement & Gacha & User & Yae & SignIn[Auto Sign-In]
     end
 
-    subgraph Services["Service Layer"]
-        direction LR
-        subgraph Game["Game"]
-            Launcher[Launcher] & Account[Account] & Config[Config] & Package[Package]
-        end
-        subgraph Data["Data"]
-            Achievement[Achievement] & GachaLog[GachaLog] & SpiralAbyss[Abyss] & DailyNote[DailyNote]
-        end
-        subgraph Online["Online"]
-            SignIn[Auto Sign-In] & Announce[Announcement] & Update[Update] & Metadata[Metadata]
-        end
-        subgraph Tools["Tools"]
-            Yae[Yae Unlock] & Git[Git] & Jobs[Background Jobs]
-        end
+    subgraph Core["Core"]
+        DB[(SQLite)] & Cache & Settings & IO
     end
 
-    subgraph Core["Core Infrastructure"]
-        DB[(SQLite)] & Cache[Image Cache] & Settings[Local Settings] & Threading[Async / Lock] & IO[IO]
+    subgraph Native["Native — C++"]
+        Runner & HotKey & Win32
     end
 
-    subgraph Web["Web / Network"]
-        Hoyolab[Hoyolab API] & Enka[Enka API] & KyxsanAPI[kyxsan API] & WebView2[WebView2]
-    end
-
-    subgraph Native["Native — C++ / Win32"]
-        Runner[Runner.dll] & HotKey[HotKey Hook] & Win32[Win32 Interop] & Tray[System Tray]
-    end
-
-    subgraph SourceGen["Source Generation — Compile Time"]
-        DIGen[DI Gen] & ModelGen[Model Gen] & XamlGen[XAML Gen] & ResxGen[Resx Gen]
-    end
-
-    UI --> ViewModel --> Services
-    Services --> Core
-    Services --> Web
-    Native --> Runner
-    SourceGen -.-> UI
-    SourceGen -.-> Services
+    UI --> Services --> Core
+    Services --> Native
 ```
 
 ## 功能

@@ -7,8 +7,10 @@
 // Modified by kyxsan.
 // Licensed under the MIT license.
 
+using Microsoft.UI.Dispatching;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using CommunityToolkit.Common;
 using CommunityToolkit.Mvvm.Input;
 using kyxsan.Core;
 using kyxsan.Core.IO.Http.Proxy;
@@ -88,7 +90,7 @@ internal sealed partial class UpdateService : IUpdateService
         }
     }
 
-    public async ValueTask<string?> DownloadUpdateAsync(CheckUpdateResult result, CancellationToken token = default)
+    public async ValueTask<string?> DownloadUpdateAsync(CheckUpdateResult result, Action<long, long>? onProgress = null, CancellationToken token = default)
     {
         if (result.Kind is not CheckUpdateResultKind.UpdateAvailable || result.PackageInformation is null)
         {
@@ -108,6 +110,7 @@ internal sealed partial class UpdateService : IUpdateService
             byte[] existingHash = SHA256.HashData(await File.ReadAllBytesAsync(tempPath, token).ConfigureAwait(false));
             if (string.Equals(Convert.ToHexString(existingHash), result.PackageInformation.Validation, StringComparison.OrdinalIgnoreCase))
             {
+                onProgress?.Invoke(1, 1);
                 return tempPath;
             }
 
@@ -125,9 +128,21 @@ internal sealed partial class UpdateService : IUpdateService
                     using HttpResponseMessage response = await downloadClient.GetAsync(mirror.Url.ToUri(), HttpCompletionOption.ResponseHeadersRead, token).ConfigureAwait(false);
                     response.EnsureSuccessStatusCode();
 
+                    long totalBytes = response.Content.Headers.ContentLength ?? -1;
+                    long bytesDownloaded = 0;
+
                     using Stream netStream = await response.Content.ReadAsStreamAsync(token).ConfigureAwait(false);
                     using FileStream fileStream = File.Create(tempPath);
-                    await netStream.CopyToAsync(fileStream, token).ConfigureAwait(false);
+
+                    byte[] buffer = new byte[81920];
+                    int bytesRead;
+                    while ((bytesRead = await netStream.ReadAsync(buffer, token).ConfigureAwait(false)) > 0)
+                    {
+                        await fileStream.WriteAsync(buffer.AsMemory(0, bytesRead), token).ConfigureAwait(false);
+                        bytesDownloaded += bytesRead;
+                        onProgress?.Invoke(bytesDownloaded, totalBytes);
+                    }
+
                     await fileStream.FlushAsync(token).ConfigureAwait(false);
 
                     // SHA256 verification
@@ -194,12 +209,77 @@ internal sealed partial class UpdateService : IUpdateService
         using (IServiceScope scope = serviceProvider.CreateScope())
         {
             IMessenger messenger = scope.ServiceProvider.GetRequiredService<IMessenger>();
+            ITaskContext taskContext = scope.ServiceProvider.GetRequiredService<ITaskContext>();
+            DispatcherQueue dispatcherQueue = taskContext.DispatcherQueue;
 
             try
             {
-                messenger.Send(InfoBarMessage.Information($"正在下载新版本 v{result.PackageInformation?.Version}..."));
+                // Create progress UI elements on the UI thread
+                ProgressBar progressBar = null!;
+                TextBlock progressText = null!;
+                StackPanel progressPanel = null!;
 
-                string? installerPath = await DownloadUpdateAsync(result, token).ConfigureAwait(false);
+                dispatcherQueue.TryEnqueue(() =>
+                {
+                    progressBar = new ProgressBar
+                    {
+                        Minimum = 0,
+                        Maximum = 100,
+                        Value = 0,
+                        Height = 4,
+                        Margin = new Thickness(0, 8, 0, 0),
+                    };
+                    progressText = new TextBlock
+                    {
+                        Text = "准备下载...",
+                        FontSize = 12,
+                        Margin = new Thickness(0, 4, 0, 0),
+                        Opacity = 0.8,
+                    };
+                    progressPanel = new StackPanel
+                    {
+                        Children = { progressBar, progressText },
+                    };
+                });
+
+                // Small delay to ensure UI elements are created
+                await Task.Delay(50, token).ConfigureAwait(false);
+
+                messenger.Send(new InfoBarMessage
+                {
+                    Severity = InfoBarSeverity.Informational,
+                    Title = $"正在下载新版本 v{result.PackageInformation?.Version}",
+                    Content = progressPanel,
+                    MilliSecondsDelay = 0,
+                });
+
+                long lastReportTime = Stopwatch.GetTimestamp();
+                string? installerPath = await DownloadUpdateAsync(result, (bytesDownloaded, totalBytes) =>
+                {
+                    // Throttle UI updates to avoid flooding the dispatcher
+                    long now = Stopwatch.GetTimestamp();
+                    if (Stopwatch.GetElapsedTime(lastReportTime, now).TotalMilliseconds < 100)
+                    {
+                        return;
+                    }
+
+                    lastReportTime = now;
+                    dispatcherQueue.TryEnqueue(() =>
+                    {
+                        if (totalBytes > 0)
+                        {
+                            double percent = (double)bytesDownloaded / totalBytes * 100;
+                            progressBar.Value = percent;
+                            progressBar.IsIndeterminate = false;
+                            progressText.Text = $"{Converters.ToFileSizeString(bytesDownloaded)} / {Converters.ToFileSizeString(totalBytes)}  ({percent:F1}%)";
+                        }
+                        else
+                        {
+                            progressBar.IsIndeterminate = true;
+                            progressText.Text = $"已下载 {Converters.ToFileSizeString(bytesDownloaded)}";
+                        }
+                    });
+                }, token).ConfigureAwait(false);
 
                 if (installerPath is null)
                 {

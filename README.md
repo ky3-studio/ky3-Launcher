@@ -17,153 +17,88 @@
 
 ## 架构
 
+### 模块总览
+
 ```mermaid
-graph TB
-    subgraph Solution["kyxsan.sln - 解决方案"]
-        direction TB
-        subgraph AppLayer["kyxsan - 主应用程序"]
-            direction TB
-            subgraph UILayer["UI Layer"]
-                Shell[Shell / MainWindow]
-                Pages[Pages / Views]
-                Controls[Custom Controls]
-                Windowing[Windowing Management]
-                Xaml[XAML Behaviors / Converters]
-            end
+graph LR
+    A[ky3 Launcher] --> B[UI Layer]
+    A --> C[Service Layer]
+    A --> D[Core Layer]
+    A --> E[Native Layer]
 
-            subgraph VMLayer["ViewModel Layer - MVVM"]
-                MainVM[MainViewModel]
-                GameVM[Game ViewModel]
-                AchievementVM[Achievement ViewModel]
-                GachaVM[GachaLog ViewModel]
-                WikiVM[Wiki ViewModel]
-                SettingVM[Setting ViewModel]
-                SpiralAbyssVM[Spiral Abyss ViewModel]
-                DailyNoteVM[DailyNote ViewModel]
-                UserVM[User ViewModel]
-            end
+    B --> B1[Pages / Views]
+    B --> B2[ViewModels]
+    B --> B3[Controls]
+    B --> B4[Shell Window]
 
-            subgraph ServiceLayer["Service Layer"]
-                direction TB
-                subgraph GameService["Game Service"]
-                    Launcher[Game Launcher]
-                    Account[Account Switcher]
-                    Config[Game Configuration]
-                    FileSystem[Game FileSystem]
-                    Locator[Game Locator]
-                    Package[Package Management]
-                    Launching[Launch Process]
-                end
+    C --> C1[Game Launch]
+    C --> C2[Achievement]
+    C --> C3[Gacha Log]
+    C --> C4[User / Auth]
+    C --> C5[Yae Integration]
+    C --> C6[Auto Sign-In]
 
-                subgraph DataService["Data Service"]
-                    Achievement[Achievement Service]
-                    GachaLog[GachaLog Service]
-                    SpiralAbyss[Spiral Abyss]
-                    RoleCombat[Role Combat]
-                    HardChallenge[Hard Challenge]
-                    Inventory[Inventory Service]
-                    DailyNote[DailyNote Service]
-                end
+    D --> D1[SQLite]
+    D --> D2[Image Cache]
+    D --> D3[Local Settings]
+    D --> D4[Threading]
+    D --> D5[IO / FileSystem]
 
-                subgraph UserService["User Service"]
-                    UserAuth[User Authentication]
-                    UserCollection[User Collection]
-                    UserFingerprint[User Fingerprint]
-                    ProfilePicture[Profile Picture]
-                end
+    E --> E1[Runner.dll]
+    E --> E2[HotKey Hook]
+    E --> E3[Win32 Interop]
+```
 
-                subgraph OnlineService["Online Service"]
-                    AutoSignIn[Auto Sign-In]
-                    Announcement[Announcement]
-                    Metadata[Metadata Service]
-                    RemoteConfig[Remote Config]
-                    Update[Update Service]
-                end
+### 分层架构
 
-                subgraph ToolService["Tool Service"]
-                    YaeService[Yae Achievement Unlock]
-                    Git[Git Service]
-                    ThirdParty[Third-Party Tools]
-                    Job[Background Jobs]
-                end
-            end
+```mermaid
+graph TD
+    subgraph UI["UI Layer — WinUI 3 / XAML"]
+        Shell[Shell Window] & Pages[Pages] & Controls[Controls] & Windowing[Windowing]
+    end
 
-            subgraph CoreLayer["Core Layer"]
-                direction TB
-                subgraph Infrastructure["Infrastructure"]
-                    Database[SQLite Database]
-                    Caching[Image Cache]
-                    Setting[Local Settings]
-                    Logging[Logging / Diagnostics]
-                    IO[IO / File Operations]
-                end
+    subgraph ViewModel["ViewModel — CommunityToolkit.Mvvm"]
+        GameVM[Game] & AchievementVM[Achievement] & GachaVM[Gacha] & UserVM[User] & SettingVM[Setting] & WikiVM[Wiki]
+    end
 
-                subgraph Threading["Threading / Async"]
-                    AsyncLock[Async Lock / Semaphore]
-                    TaskContext[Task Context]
-                    RateLimiting[Rate Limiting]
-                    DispatcherQueue[Dispatcher Queue]
-                end
-
-                subgraph Platform["Platform Abstraction"]
-                    DI[Dependency Injection]
-                    LifeCycle[App LifeCycle]
-                    ExceptionService[Exception Handling]
-                    Bootstrap[Bootstrap / Startup]
-                end
-            end
-
-            subgraph WebLayer["Web / Network Layer"]
-                Hoyolab[Hoyolab API Client]
-                Enka[Enka Network API]
-                KyxsanAPI[kyxsan API Client]
-                WebView2[WebView2 Bridge]
-                HttpContext[HTTP Context / Headers]
-            end
-
-            subgraph InputLayer["Input / Automation"]
-                HotKey[HotKey System]
-                LowLevel[Low-Level Keyboard Hook]
-                VirtualKeys[Virtual Keys Mapping]
-            end
-
-            subgraph Win32Layer["Win32 / Native Interop"]
-                NativeCore[kyxsanNative Core]
-                NativeFS[Native FileSystem]
-                NativeHotKey[Native HotKey Actions]
-                NativeProcess[Native Process Control]
-                NotifyIcon[System Tray NotifyIcon]
-                WindowSubclass[Window Subclass]
-                DeviceCaps[Device Capabilities]
-            end
+    subgraph Services["Service Layer"]
+        direction LR
+        subgraph Game["Game"]
+            Launcher[Launcher] & Account[Account] & Config[Config] & Package[Package]
         end
-
-        subgraph Runner["Runner - C++ Native DLL"]
-            AutoStart[auto_start_helper]
+        subgraph Data["Data"]
+            Achievement[Achievement] & GachaLog[GachaLog] & SpiralAbyss[Abyss] & DailyNote[DailyNote]
         end
-
-        subgraph SourceGen["kyxsan.SourceGeneration - 源代码生成器"]
-            AttrGen[Attribute Generator]
-            AutomationGen[Automation Code Gen]
-            DIGen[DI Registration Gen]
-            ModelGen[Model Code Gen]
-            XamlGen[XAML Code Gen]
-            ResxGen[Resx Localization Gen]
+        subgraph Online["Online"]
+            SignIn[Auto Sign-In] & Announce[Announcement] & Update[Update] & Metadata[Metadata]
         end
-
-        subgraph Installer["kyxsan.Installer - Inno Setup 安装包"]
-            InnoSetup[setup.iss]
-            Redist[VC++ Redistributable]
+        subgraph Tools["Tools"]
+            Yae[Yae Unlock] & Git[Git] & Jobs[Background Jobs]
         end
     end
 
-    Shell --> VMLayer
-    VMLayer --> ServiceLayer
-    ServiceLayer --> CoreLayer
-    ServiceLayer --> WebLayer
-    InputLayer --> Win32Layer
-    Win32Layer --> Runner
-    SourceGen -.->|compile-time generation| AppLayer
+    subgraph Core["Core Infrastructure"]
+        DB[(SQLite)] & Cache[Image Cache] & Settings[Local Settings] & Threading[Async / Lock] & IO[IO]
+    end
+
+    subgraph Web["Web / Network"]
+        Hoyolab[Hoyolab API] & Enka[Enka API] & KyxsanAPI[kyxsan API] & WebView2[WebView2]
+    end
+
+    subgraph Native["Native — C++ / Win32"]
+        Runner[Runner.dll] & HotKey[HotKey Hook] & Win32[Win32 Interop] & Tray[System Tray]
+    end
+
+    subgraph SourceGen["Source Generation — Compile Time"]
+        DIGen[DI Gen] & ModelGen[Model Gen] & XamlGen[XAML Gen] & ResxGen[Resx Gen]
+    end
+
+    UI --> ViewModel --> Services
+    Services --> Core
+    Services --> Web
+    Native --> Runner
+    SourceGen -.-> UI
+    SourceGen -.-> Services
 ```
 
 ## 功能

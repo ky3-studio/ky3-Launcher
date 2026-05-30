@@ -44,7 +44,7 @@ internal sealed partial class SignInViewModel : Abstraction.ViewModelSlim, IReci
     private int totalSignDay;
     private SignInRewardReSignInfo? resignInfo;
 
-    private const string AutoSignInSettingKey = "SignIn.AutoSignInEnabled";
+    private const string AutoSignInEnabledKeyPrefix = "SignIn.AutoSignIn.Enabled.";
 
     [GeneratedConstructor(CallBaseConstructor = true)]
     public partial SignInViewModel(IServiceProvider serviceProvider);
@@ -133,7 +133,10 @@ internal sealed partial class SignInViewModel : Abstraction.ViewModelSlim, IReci
     {
         try
         {
-            IsAutoCheckIn = LocalSetting.Get(AutoSignInSettingKey, true);
+            string settingKey = TargetUserAndUid is { } t
+                ? AutoSignInEnabledKeyPrefix + t.Uid.ToString()
+                : AutoSignInEnabledKeyPrefix + "default";
+            IsAutoCheckIn = LocalSetting.Get(settingKey, true);
         }
         catch (Exception ex)
         {
@@ -333,7 +336,10 @@ internal sealed partial class SignInViewModel : Abstraction.ViewModelSlim, IReci
     {
         try
         {
-            LocalSetting.Set(AutoSignInSettingKey, value);
+            string settingKey = TargetUserAndUid is { } t
+                ? AutoSignInEnabledKeyPrefix + t.Uid.ToString()
+                : AutoSignInEnabledKeyPrefix + "default";
+            LocalSetting.Set(settingKey, value);
         }
         catch (Exception ex)
         {

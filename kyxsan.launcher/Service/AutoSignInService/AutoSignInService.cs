@@ -9,6 +9,7 @@
 // Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
+using kyxsan.Core.Database;
 using kyxsan.Core.DependencyInjection.Abstraction;
 using kyxsan.Core.Setting;
 using kyxsan.Service.Notification;
@@ -18,13 +19,15 @@ using kyxsan.ViewModel.User;
 using kyxsan.Web.Hoyolab;
 using kyxsan.Web.Hoyolab.Takumi.Event.BbsSignReward;
 using kyxsan.Web.Response;
+using BindingUser = kyxsan.ViewModel.User.User;
+using EntityUser = kyxsan.Model.Entity.User;
 
 namespace kyxsan.Service.AutoSignIn;
 
 [Service(ServiceLifetime.Singleton, typeof(IAutoSignInService))]
 internal sealed partial class AutoSignInService : IAutoSignInService
 {
-    private const string AutoSignInSettingKey = "SignIn.AutoSignInEnabled";
+    private const string AutoSignInEnabledKeyPrefix = "SignIn.AutoSignIn.Enabled.";
     private const string AutoSignInLastAttemptDayKeyPrefix = "SignIn.AutoSignIn.LastAttemptDayKey.";
     private const string AutoSignInLastFailureUtcTicksPrefix = "SignIn.AutoSignIn.LastFailureUtcTicks.";
 
@@ -41,27 +44,40 @@ internal sealed partial class AutoSignInService : IAutoSignInService
 
     public async ValueTask<bool> RunAsync(CancellationToken token = default)
     {
-        if (!LocalSetting.Get(AutoSignInSettingKey, true))
+        AdvancedDbCollectionView<BindingUser, EntityUser> users = await userService.GetUsersAsync().ConfigureAwait(false);
+        bool anySuccess = false;
+
+        foreach (BindingUser user in users.Source)
         {
-            return false;
+            if (user.UserGameRoles.CurrentItem is null)
+            {
+                await taskContext.SwitchToMainThreadAsync();
+                user.UserGameRoles.MoveCurrentToFirst();
+                await taskContext.SwitchToBackgroundAsync();
+            }
+
+            if (!UserAndUid.TryFromUser(user, out UserAndUid? userAndUid))
+            {
+                continue;
+            }
+
+            if (await OnUserAndUidChangedAsync(userAndUid, token).ConfigureAwait(false))
+            {
+                anySuccess = true;
+            }
         }
 
-        if (await userService.GetCurrentUserAndUidAsync().ConfigureAwait(false) is not { } userAndUid)
-        {
-            return false;
-        }
-
-        return await OnUserAndUidChangedAsync(userAndUid, token).ConfigureAwait(false);
+        return anySuccess;
     }
 
     public async ValueTask<bool> OnUserAndUidChangedAsync(UserAndUid userAndUid, CancellationToken token = default)
     {
-        if (!LocalSetting.Get(AutoSignInSettingKey, true))
+        string uidString = userAndUid.Uid.ToString();
+
+        if (!LocalSetting.Get(AutoSignInEnabledKeyPrefix + uidString, true))
         {
             return false;
         }
-
-        string uidString = userAndUid.Uid.ToString();
         string completedDayKeySetting = AutoSignInLastAttemptDayKeyPrefix + uidString;
         string lastFailureTicksKey = AutoSignInLastFailureUtcTicksPrefix + uidString;
         string serverDayKey = GetServerDayKey(userAndUid.Uid);

@@ -26,9 +26,9 @@ internal static class LoggerFactoryExtension
 
 #if DEBUG || IS_ALPHA_BUILD || IS_CANARY_BUILD
                 // Alpha and Canary produces noisy events
-                options.Dsn = "https://2d3047ff2d451986bc7ef395d1f1fe63@o4507525750521856.ingest.us.sentry.io/4510413123682304";
+                options.Dsn = "https://cf990156535580d59562164163587599@o4511476524974080.ingest.us.sentry.io/4511476529233920";
 #else
-                options.Dsn = "https://2d3047ff2d451986bc7ef395d1f1fe63@o4507525750521856.ingest.us.sentry.io/4510413123682304";
+                options.Dsn = "https://cf990156535580d59562164163587599@o4511476524974080.ingest.us.sentry.io/4511476529233920";
 #endif
 
 #if DEBUG

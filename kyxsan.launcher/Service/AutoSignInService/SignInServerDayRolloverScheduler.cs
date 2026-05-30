@@ -1,8 +1,12 @@
 // Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
+using kyxsan.Core.Database;
+using kyxsan.Service.User;
 using kyxsan.ViewModel.User;
 using kyxsan.Web.Hoyolab;
+using BindingUser = kyxsan.ViewModel.User.User;
+using EntityUser = kyxsan.Model.Entity.User;
 
 namespace kyxsan.Service.AutoSignIn;
 
@@ -10,6 +14,7 @@ namespace kyxsan.Service.AutoSignIn;
 internal sealed partial class SignInServerDayRolloverScheduler : IRecipient<UserAndUidChangedMessage>, IDisposable
 {
     private readonly IAutoSignInService autoSignInService;
+    private readonly IUserService userService;
     private readonly ITaskContext taskContext;
     private readonly IMessenger messenger;
 
@@ -27,13 +32,13 @@ internal sealed partial class SignInServerDayRolloverScheduler : IRecipient<User
 
     public void Receive(UserAndUidChangedMessage message)
     {
-        if (message.UserAndUid is not { } userAndUid)
+        if (message.UserAndUid is not { })
         {
             CancelSchedule();
             return;
         }
 
-        Reschedule(userAndUid);
+        Reschedule();
     }
 
     private void CancelSchedule()
@@ -43,39 +48,53 @@ internal sealed partial class SignInServerDayRolloverScheduler : IRecipient<User
         scheduleCts = null;
     }
 
-    private void Reschedule(UserAndUid userAndUid)
+    private void Reschedule()
     {
         CancelSchedule();
 
         scheduleCts = new();
         CancellationToken token = scheduleCts.Token;
 
-        // Fire & forget: schedule a tick at next server-day boundary.
-        RunAsync(userAndUid, token).SafeForget();
+        RunAsync(token).SafeForget();
     }
 
     [SuppressMessage("", "SH003")]
-    private async Task RunAsync(UserAndUid userAndUid, CancellationToken token)
+    private async Task RunAsync(CancellationToken token)
     {
         while (!token.IsCancellationRequested)
         {
-            TimeSpan offset = PlayerUid.GetRegionTimeZoneUtcOffsetForRegion(userAndUid.Uid.Region);
-            DateTimeOffset serverNow = DateTimeOffset.UtcNow.ToOffset(offset);
-
-            DateTimeOffset nextServerDay = new(serverNow.Date.AddDays(1), offset);
-            TimeSpan delay = nextServerDay - serverNow;
-            if (delay < TimeSpan.FromSeconds(1))
-            {
-                // In case of clock drift.
-                delay = TimeSpan.FromSeconds(1);
-            }
+            TimeSpan delay = await GetNextServerDayDelayAsync().ConfigureAwait(false);
 
             await Task.Delay(delay, token).ConfigureAwait(false);
 
-            // At (or shortly after) server day rollover, refresh sign-in status.
             await taskContext.SwitchToBackgroundAsync();
-
-            await autoSignInService.OnUserAndUidChangedAsync(userAndUid, token).ConfigureAwait(false);
+            await autoSignInService.RunAsync(token).ConfigureAwait(false);
         }
+    }
+
+    private async ValueTask<TimeSpan> GetNextServerDayDelayAsync()
+    {
+        AdvancedDbCollectionView<BindingUser, EntityUser> users = await userService.GetUsersAsync().ConfigureAwait(false);
+        TimeSpan minDelay = TimeSpan.FromHours(24);
+
+        foreach (BindingUser user in users.Source)
+        {
+            if (!UserAndUid.TryFromUser(user, out UserAndUid? userAndUid))
+            {
+                continue;
+            }
+
+            TimeSpan offset = PlayerUid.GetRegionTimeZoneUtcOffsetForRegion(userAndUid.Uid.Region);
+            DateTimeOffset serverNow = DateTimeOffset.UtcNow.ToOffset(offset);
+            DateTimeOffset nextServerDay = new(serverNow.Date.AddDays(1), offset);
+            TimeSpan userDelay = nextServerDay - serverNow;
+
+            if (userDelay < minDelay)
+            {
+                minDelay = userDelay;
+            }
+        }
+
+        return minDelay < TimeSpan.FromSeconds(1) ? TimeSpan.FromSeconds(1) : minDelay;
     }
 }

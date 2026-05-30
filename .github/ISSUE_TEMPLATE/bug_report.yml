@@ -1,0 +1,67 @@
+name: Bug 反馈
+description: 报告一个 Bug 或异常行为
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你的反馈！请尽可能详细地描述问题，这能帮助我们更快定位和修复。
+
+  - type: input
+    id: version
+    attributes:
+      label: 启动器版本
+      description: 在顶部可以看到版本号
+      placeholder: "例如: 1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: 操作系统版本
+      options:
+        - Windows 11 24H2
+        - Windows 11 23H2
+        - Windows 11 22H2
+        - Windows 10 22H2
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 清晰描述你遇到的问题
+      placeholder: 描述一下发生了什么...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 如何触发这个问题？
+      placeholder: |
+        1. 打开启动器
+        2. 点击 '...'
+        3. 看到错误
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为
+      description: 你期望发生什么？
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图或日志
+      description: 如果有截图或错误日志请粘贴在此
+    validations:
+      required: false

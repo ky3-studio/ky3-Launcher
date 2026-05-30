@@ -1,0 +1,42 @@
+name: 功能建议
+description: 提出一个新功能或改进建议
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎提出你的想法！描述越清楚越容易被采纳。
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 功能描述
+      description: 清晰描述你想要的功能
+      placeholder: 我希望启动器能够...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: 使用场景
+      description: 为什么需要这个功能？解决什么问题？
+      placeholder: 当我在使用...的时候，遇到了...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 你想到的方案
+      description: 如果有具体的实现想法可以描述一下
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 参考截图
+      description: 如果有参考的界面设计或其他应用的截图
+    validations:
+      required: false

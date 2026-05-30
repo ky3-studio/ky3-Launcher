@@ -10,6 +10,7 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.UI.Xaml.Controls;
 using kyxsan.Core;
+using kyxsan.Core.LifeCycle;
 using kyxsan.Core.Logging;
 using kyxsan.Core.Shell;
 using kyxsan.Factory.ContentDialog;
@@ -17,7 +18,9 @@ using kyxsan.Service.Navigation;
 using kyxsan.Service.Notification;
 using kyxsan.Service.Update;
 using kyxsan.Service;
+using kyxsan.UI.Xaml.Behavior.Action;
 using kyxsan.UI.Xaml.View.Dialog;
+using kyxsan.UI.Xaml.View.Window.WebView2;
 
 namespace kyxsan.ViewModel.Setting;
 
@@ -26,6 +29,7 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
 {
     public const string UIGFImportExport = nameof(UIGFImportExport);
 
+    private readonly ICurrentXamlWindowReference currentXamlWindowReference;
     private readonly IShellLinkInterop shellLinkInterop;
     private readonly IUpdateService updateService;
     private readonly ITaskContext taskContext;
@@ -168,8 +172,38 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
     private async Task SubmitFeedbackAsync()
     {
         SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Submit feedback", "SettingViewModel.Command"));
-        SubmitFeedbackDialog dialog = await contentDialogFactory.CreateInstanceAsync<SubmitFeedbackDialog>(serviceProvider).ConfigureAwait(false);
-        await dialog.ShowFeedbackAsync().ConfigureAwait(false);
+
+        ContentDialogResult result = await contentDialogFactory
+            .CreateForSelectionAsync(SH.ViewModelSettingFeedbackTitle, SH.ViewModelSettingFeedbackDescription, "GitHub Issues", SH.ViewModelSettingFeedbackDeveloperServer)
+            .ConfigureAwait(false);
+
+        if (result is ContentDialogResult.Primary)
+        {
+            await taskContext.SwitchToMainThreadAsync();
+            if (currentXamlWindowReference.XamlRoot is { } xamlRoot)
+            {
+                UrlWebView2ContentProvider provider = new("https://github.com/ky3-git/ky3-Launcher/issues/new/choose".ToUri());
+                ShowWebView2WindowAction.Show(provider, xamlRoot);
+            }
+        }
+        else if (result is ContentDialogResult.Secondary)
+        {
+            SubmitFeedbackDialog dialog = await contentDialogFactory.CreateInstanceAsync<SubmitFeedbackDialog>(serviceProvider).ConfigureAwait(false);
+            await dialog.ShowFeedbackAsync().ConfigureAwait(false);
+        }
+    }
+
+    [Command("OpenTranslateCommand")]
+    private async Task OpenTranslateAsync()
+    {
+        SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Open translate", "SettingViewModel.Command"));
+
+        await taskContext.SwitchToMainThreadAsync();
+        if (currentXamlWindowReference.XamlRoot is { } xamlRoot)
+        {
+            UrlWebView2ContentProvider provider = new("https://github.com/ky3-git/ky3-Launcher/pulls".ToUri());
+            ShowWebView2WindowAction.Show(provider, xamlRoot);
+        }
     }
 
     [Command("CheckUpdateCommand")]

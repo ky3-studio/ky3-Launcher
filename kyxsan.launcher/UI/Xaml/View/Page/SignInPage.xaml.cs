@@ -7,6 +7,8 @@
 // Modified by kyxsan.
 // Licensed under the MIT license.
 
+using CommunityToolkit.WinUI;
+using CommunityToolkit.WinUI.Media;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using kyxsan.Core.Database;
@@ -107,6 +109,9 @@ internal sealed partial class SignInPage : ScopedPage, IRecipient<UserAndUidChan
 
         foreach (UserAndUid userAndUid in allUserAndUids)
         {
+            Border shadowBorder = new();
+            Effects.SetShadow(shadowBorder, (AttachedCardShadow)Application.Current.Resources["CompatCardShadow"]);
+
             Border cardBorder = new()
             {
                 Style = (Style)Application.Current.Resources["AcrylicBorderCardStyle"],
@@ -120,7 +125,8 @@ internal sealed partial class SignInPage : ScopedPage, IRecipient<UserAndUidChan
             };
 
             cardBorder.Child = signInCard;
-            SignInCardsGrid.Children.Add(cardBorder);
+            shadowBorder.Child = cardBorder;
+            SignInCardsGrid.Children.Add(shadowBorder);
         }
 
         NotLoggedInPanel.Visibility = Visibility.Collapsed;

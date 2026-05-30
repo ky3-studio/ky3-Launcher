@@ -41,7 +41,7 @@ internal sealed partial class LaunchGamePage : ScopedPage
     private void OnPageLoaded(object sender, RoutedEventArgs e)
     {
         hdrManualToggleInitializing = true;
-        HdrManualToggle.IsOn = WindowsHDRControl.IsHDROn();
+        HdrManualToggle.IsOn = false;
         hdrManualToggleInitializing = false;
 
         DispatcherQueue.TryEnqueue(Microsoft.UI.Dispatching.DispatcherQueuePriority.Low, () =>

@@ -261,7 +261,7 @@
                                     <HyperlinkButton Command="{Binding SubmitFeedbackCommand}">
                                         <TextBlock Text="{shuxm:ResourceString Name=ViewPageSettingFeedbackNavigate}"/>
                                     </HyperlinkButton>
-                                    <HyperlinkButton NavigateUri="{StaticResource DocumentLink_Translate}">
+                                    <HyperlinkButton Command="{Binding OpenTranslateCommand}">
                                         <TextBlock Text="{shuxm:ResourceString Name=ViewPageSettingTranslateNavigate}"/>
                                     </HyperlinkButton>
                                     <HyperlinkButton NavigateUri="{StaticResource DocumentLink_Sponsor}">

@@ -8,6 +8,7 @@
 // Licensed under the MIT license.
 
 using Microsoft.Web.WebView2.Core;
+using kyxsan.Core;
 using System.IO;
 
 namespace kyxsan.Web.WebView2;
@@ -36,8 +37,7 @@ internal static class CoreWebView2EnvironmentFactory
         string? userDataFolder = null;
         if (!global::kyxsan.Core.ApplicationModel.PackageIdentityAdapter.HasPackageIdentity)
         {
-            string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            userDataFolder = Path.Combine(appData, "CustomWebView2");
+            userDataFolder = Path.Combine(kyxsanRuntime.DataDirectory, "WebView2");
         }
 
         return await CoreWebView2Environment.CreateWithOptionsAsync(null, userDataFolder, options);

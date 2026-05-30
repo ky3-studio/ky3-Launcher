@@ -267,7 +267,7 @@
                                     <HyperlinkButton NavigateUri="{StaticResource DocumentLink_Sponsor}">
                                         <TextBlock Text="{shuxm:ResourceString Name=ViewPageSettingSponsorNavigate}"/>
                                     </HyperlinkButton>
-                                    <HyperlinkButton NavigateUri="https://github.com/ky3-git/ky3-Launcher">
+                                    <HyperlinkButton Command="{Binding OpenGitHubCommand}">
                                         <TextBlock Text="{shuxm:ResourceString Name=ViewPageSettingGitHubNavigate}"/>
                                     </HyperlinkButton>
                                 </cwc:UniformGrid>

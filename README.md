@@ -74,9 +74,8 @@ graph LR
 | 仓库 | 说明 |
 |---|---|
 | [ky3-launcher-plugin-module](https://github.com/ky3-git/ky3-launcher-plugin-module) | 本项目使用的 DLL 插件模块 |
-| [il2cpp-dump](https://github.com/ky3-git/il2cpp-dump) | IL2CPP 元数据 Dump 工具 |
 | [ky3-metadata](https://github.com/ky3-git/ky3-metadata) | 游戏元数据 JSON 集合 |
-| [Yae](https://github.com/HolographicHat/Yae) | 原神成就解锁工具，实现非常出色，本项目成就追踪功能的参考之一 |
+| [Yae](https://github.com/HolographicHat/Yae) | 原神成就解锁工具，实现非常出色，本项目成就追踪功能 |
 
 ## 贡献
 

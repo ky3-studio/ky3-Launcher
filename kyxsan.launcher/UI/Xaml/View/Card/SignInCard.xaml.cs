@@ -12,6 +12,7 @@
 using Microsoft.UI.Xaml.Controls;
 using kyxsan.ViewModel.Abstraction;
 using kyxsan.ViewModel.Sign;
+using kyxsan.ViewModel.User;
 
 namespace kyxsan.UI.Xaml.View.Card;
 
@@ -22,6 +23,19 @@ internal sealed partial class SignInCard : Button
         InitializeComponent();
         this.InitializeViewModelSlim<SignInViewModel>(serviceProvider);
         this.DataContext<SignInViewModel>()?.AttachXamlElement(AwardScrollViewer);
+    }
+
+    public SignInCard(IServiceProvider serviceProvider, UserAndUid userAndUid)
+    {
+        InitializeComponent();
+        this.InitializeViewModelSlim<SignInViewModel>(serviceProvider);
+
+        SignInViewModel? viewModel = this.DataContext<SignInViewModel>();
+        if (viewModel is not null)
+        {
+            viewModel.TargetUserAndUid = userAndUid;
+            viewModel.AttachXamlElement(AwardScrollViewer);
+        }
     }
 
     private void CheckBox_Checked(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)

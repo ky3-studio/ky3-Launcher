@@ -209,7 +209,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Content Include="..\Runner\x64\$(Configuration)\Runner.dll" Condition="Exists('..\Runner\x64\$(Configuration)\Runner.dll')">
+	  <Content Include="..\kyxsan.Runner\x64\$(Configuration)\Runner.dll" Condition="Exists('..\kyxsan.Runner\x64\$(Configuration)\Runner.dll')">
 	    <Link>Runner.dll</Link>
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Content>

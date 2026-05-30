@@ -8,11 +8,15 @@
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using kyxsan.Core.Database;
 using kyxsan.Service.User;
 using kyxsan.UI.Content;
 using kyxsan.UI.Xaml.Control;
 using kyxsan.UI.Xaml.View.Card;
 using kyxsan.ViewModel.User;
+using BindingUser = kyxsan.ViewModel.User.User;
+using EntityUser = kyxsan.Model.Entity.User;
 
 namespace kyxsan.UI.Xaml.View.Page;
 
@@ -29,9 +33,9 @@ internal sealed partial class SignInPage : ScopedPage, IRecipient<UserAndUidChan
 
     public void Receive(UserAndUidChangedMessage message)
     {
-        if (message.UserAndUid is not null)
+        if (message.UserAndUid is not null && LoggedInPanel.Visibility == Visibility.Collapsed)
         {
-            DispatcherQueue.TryEnqueue(() => ShowSignInCard());
+            DispatcherQueue.TryEnqueue(() => ShowSignInCards());
         }
     }
 
@@ -49,14 +53,15 @@ internal sealed partial class SignInPage : ScopedPage, IRecipient<UserAndUidChan
         Unloaded += OnPageUnloaded;
 
         IUserService userService = serviceProvider.GetRequiredService<IUserService>();
+        AdvancedDbCollectionView<BindingUser, EntityUser> users = await userService.GetUsersAsync().ConfigureAwait(true);
 
-        if (await userService.GetCurrentUserAndUidAsync().ConfigureAwait(true) is null)
+        if (users.Source.Count == 0)
         {
             ShowNotLoggedIn();
         }
         else
         {
-            ShowSignInCard();
+            ShowSignInCards();
         }
     }
 
@@ -66,19 +71,57 @@ internal sealed partial class SignInPage : ScopedPage, IRecipient<UserAndUidChan
         Unloaded -= OnPageUnloaded;
     }
 
-    private void ShowSignInCard()
+    private async void ShowSignInCards()
     {
         if (serviceProvider is null)
         {
             return;
         }
 
-        SignInCard signInCard = new(serviceProvider)
+        IUserService userService = serviceProvider.GetRequiredService<IUserService>();
+        AdvancedDbCollectionView<BindingUser, EntityUser> users = await userService.GetUsersAsync().ConfigureAwait(true);
+
+        SignInCardsGrid.Children.Clear();
+
+        List<UserAndUid> allUserAndUids = [];
+        foreach (BindingUser user in users.Source)
         {
-            Height = double.NaN,
-            HorizontalAlignment = HorizontalAlignment.Stretch,
-        };
-        SignInCardHost.Content = signInCard;
+            if (user.UserGameRoles.CurrentItem is null)
+            {
+                user.UserGameRoles.MoveCurrentToFirst();
+            }
+
+            if (UserAndUid.TryFromUser(user, out UserAndUid? userAndUid))
+            {
+                allUserAndUids.Add(userAndUid);
+            }
+        }
+
+        if (allUserAndUids.Count == 0)
+        {
+            ShowNotLoggedIn();
+            return;
+        }
+
+        SignInCardsGrid.Columns = allUserAndUids.Count == 1 ? 1 : 2;
+
+        foreach (UserAndUid userAndUid in allUserAndUids)
+        {
+            Border cardBorder = new()
+            {
+                Style = (Style)Application.Current.Resources["AcrylicBorderCardStyle"],
+                MinHeight = 500,
+            };
+
+            SignInCard signInCard = new(serviceProvider, userAndUid)
+            {
+                Height = double.NaN,
+                HorizontalAlignment = HorizontalAlignment.Stretch,
+            };
+
+            cardBorder.Child = signInCard;
+            SignInCardsGrid.Children.Add(cardBorder);
+        }
 
         NotLoggedInPanel.Visibility = Visibility.Collapsed;
         LoggedInPanel.Visibility = Visibility.Visible;

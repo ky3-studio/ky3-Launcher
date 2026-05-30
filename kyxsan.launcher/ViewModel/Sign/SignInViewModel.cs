@@ -49,6 +49,8 @@ internal sealed partial class SignInViewModel : Abstraction.ViewModelSlim, IReci
     [GeneratedConstructor(CallBaseConstructor = true)]
     public partial SignInViewModel(IServiceProvider serviceProvider);
 
+    public UserAndUid? TargetUserAndUid { get; set; }
+
     [ObservableProperty]
     public partial IAdvancedCollectionView<AwardView>? Awards { get; set; }
 
@@ -73,8 +75,17 @@ internal sealed partial class SignInViewModel : Abstraction.ViewModelSlim, IReci
     {
         if (message.UserAndUid is not { } userAndUid)
         {
-            messenger.Send(InfoBarMessage.Warning(SH.MustSelectUserAndUid));
             return;
+        }
+
+        if (TargetUserAndUid is { } target && userAndUid.User.InnerId != target.User.InnerId)
+        {
+            return;
+        }
+
+        if (TargetUserAndUid is not null)
+        {
+            TargetUserAndUid = userAndUid;
         }
 
         if (Volatile.Read(ref updating))
@@ -92,6 +103,11 @@ internal sealed partial class SignInViewModel : Abstraction.ViewModelSlim, IReci
     public void Receive(SignInDataChangedMessage message)
     {
         if (message.UserAndUid is not { } userAndUid)
+        {
+            return;
+        }
+
+        if (TargetUserAndUid is { } target && userAndUid.User.InnerId != target.User.InnerId)
         {
             return;
         }
@@ -115,7 +131,6 @@ internal sealed partial class SignInViewModel : Abstraction.ViewModelSlim, IReci
 
     protected override async Task LoadAsync()
     {
-        // Load persisted auto-sign setting first.
         try
         {
             IsAutoCheckIn = LocalSetting.Get(AutoSignInSettingKey, true);
@@ -125,9 +140,13 @@ internal sealed partial class SignInViewModel : Abstraction.ViewModelSlim, IReci
             messenger.Send(InfoBarMessage.Warning(ex.Message));
         }
 
-        if (await userService.GetCurrentUserAndUidAsync().ConfigureAwait(false) is { } userAndUid)
+        if (TargetUserAndUid is { } userAndUid)
         {
             await UpdateSignInInfoAsync(userAndUid).ConfigureAwait(false);
+        }
+        else if (await userService.GetCurrentUserAndUidAsync().ConfigureAwait(false) is { } currentUserAndUid)
+        {
+            await UpdateSignInInfoAsync(currentUserAndUid).ConfigureAwait(false);
         }
         else
         {
@@ -267,7 +286,10 @@ internal sealed partial class SignInViewModel : Abstraction.ViewModelSlim, IReci
     [Command("ClaimSignInRewardCommand")]
     private async Task ClaimSignInRewardAsync()
     {
-        if (await userService.GetCurrentUserAndUidAsync().ConfigureAwait(false) is not { } userAndUid)
+        UserAndUid? userAndUid = TargetUserAndUid
+            ?? await userService.GetCurrentUserAndUidAsync().ConfigureAwait(false);
+
+        if (userAndUid is null)
         {
             messenger.Send(InfoBarMessage.Warning(SH.MustSelectUserAndUid));
             return;
@@ -282,7 +304,10 @@ internal sealed partial class SignInViewModel : Abstraction.ViewModelSlim, IReci
     [Command("ClaimResignInRewardCommand")]
     private async Task ClaimResignInRewardAsync()
     {
-        if (await userService.GetCurrentUserAndUidAsync().ConfigureAwait(false) is not { } userAndUid)
+        UserAndUid? userAndUid = TargetUserAndUid
+            ?? await userService.GetCurrentUserAndUidAsync().ConfigureAwait(false);
+
+        if (userAndUid is null)
         {
             messenger.Send(InfoBarMessage.Warning(SH.MustSelectUserAndUid));
             return;
@@ -304,7 +329,6 @@ internal sealed partial class SignInViewModel : Abstraction.ViewModelSlim, IReci
         }
     }
 
-    // Persist auto sign-in setting when toggled from UI/viewmodel.
     partial void OnIsAutoCheckInChanged(bool value)
     {
         try

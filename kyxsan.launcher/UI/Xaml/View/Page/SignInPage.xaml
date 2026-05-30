@@ -61,18 +61,17 @@
         </Border>
 
         <!--  Logged in state  -->
-        <Grid
+        <ScrollViewer
             x:Name="LoggedInPanel"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center">
-            <Border Padding="0" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
-                <Border MinWidth="900" MinHeight="550" Style="{ThemeResource AcrylicBorderCardStyle}">
-                    <ContentControl x:Name="SignInCardHost"
-                        HorizontalAlignment="Stretch"
-                        HorizontalContentAlignment="Stretch"
-                        VerticalContentAlignment="Stretch"/>
-                </Border>
-            </Border>
-        </Grid>
+            HorizontalScrollBarVisibility="Disabled"
+            VerticalScrollBarVisibility="Auto"
+            Padding="24"
+            Visibility="Collapsed">
+            <cwcont:UniformGrid
+                x:Name="SignInCardsGrid"
+                Columns="2"
+                ColumnSpacing="16"
+                RowSpacing="16"/>
+        </ScrollViewer>
     </Grid>
 </shuxc:ScopedPage>

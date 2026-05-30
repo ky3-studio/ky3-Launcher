@@ -206,6 +206,19 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
         }
     }
 
+    [Command("OpenGitHubCommand")]
+    private async Task OpenGitHubAsync()
+    {
+        SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Open GitHub", "SettingViewModel.Command"));
+
+        await taskContext.SwitchToMainThreadAsync();
+        if (currentXamlWindowReference.XamlRoot is { } xamlRoot)
+        {
+            UrlWebView2ContentProvider provider = new("https://github.com/ky3-git/ky3-Launcher".ToUri());
+            ShowWebView2WindowAction.Show(provider, xamlRoot);
+        }
+    }
+
     [Command("CheckUpdateCommand")]
     private async Task CheckUpdateAsync()
     {

@@ -154,7 +154,7 @@ internal sealed partial class GameProcessFactory
             if (failures.Count > 0)
             {
                 string msg = "\u4ee5\u4e0b\u81ea\u5b9a\u4e49 DLL \u6ce8\u5165\u5931\u8d25\uff08\u67b6\u6784\u4e0d\u5339\u914d\u3001\u4f9d\u8d56\u7f3a\u5931\u3001\u88ab\u5b89\u5168\u8f6f\u4ef6\u62e6\u622a\u7b49\uff09\uff1a\r\n\r\n" + string.Join("\r\n", failures);
-                NativeMethods.MessageBoxW(nint.Zero, msg, "kyxsan \u6ce8\u5165\u8b66\u544a", 0x00000030u);
+                NativeMethods.MessageBoxW(nint.Zero, msg, "Ky3 Launcher", 0x00000030u);
             }
 
             NativeMethods.ResumeThread(pi.hThread);
@@ -245,8 +245,6 @@ internal sealed partial class GameProcessFactory
 
     private static bool InjectDll(nint hProcess, string dllPath)
     {
-        if (!IsDll64Bit(dllPath)) return false;
-
         byte[] dllPathBytes = Encoding.Unicode.GetBytes(dllPath + "\0");
 
         nint remoteMem = NativeMethods.VirtualAllocEx(hProcess, nint.Zero, (nuint)dllPathBytes.Length, 0x3000, 0x04);
@@ -286,29 +284,7 @@ internal sealed partial class GameProcessFactory
         return loadResult != 0;
     }
 
-    private static bool IsDll64Bit(string dllPath)
-    {
-        try
-        {
-            using FileStream fs = new(dllPath, FileMode.Open, FileAccess.Read, FileShare.Read);
-            using BinaryReader br = new(fs);
 
-            if (fs.Length < 0x40) return false;
-            fs.Seek(0x3C, SeekOrigin.Begin);
-            int peOffset = br.ReadInt32();
-            if (peOffset <= 0 || peOffset + 24 > fs.Length) return false;
-
-            fs.Seek(peOffset, SeekOrigin.Begin);
-            if (br.ReadUInt32() != 0x00004550u) return false;
-
-            ushort machine = br.ReadUInt16();
-            return machine == 0x8664 || machine == 0xAA64;
-        }
-        catch
-        {
-            return false;
-        }
-    }
 
     public static void CreateDllConfig(LaunchOptions options, string directory)
     {

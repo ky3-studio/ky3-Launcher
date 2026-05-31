@@ -661,6 +661,7 @@
                                         <RowDefinition Height="auto"/>
                                         <RowDefinition Height="auto"/>
                                         <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
                                     </Grid.RowDefinitions>
 
                                     <ToggleSwitch
@@ -1001,6 +1002,71 @@
                                             Value="{Binding LaunchOptions.ForgeKey.Value, Mode=TwoWay}"
                                             ValueChanged="OnIslandValueChanged"/>
                                     </Grid>
+
+                                    <ToggleSwitch
+                                        x:Name="Opt_enable_time_adjust"
+                                        Grid.Row="6"
+                                        Grid.Column="0"
+                                        Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandTimeAdjustHeader}"
+                                        IsOn="{Binding LaunchOptions.EnableTimeAdjust.Value, Mode=TwoWay}"
+                                        OffContent="{shuxm:ResourceString Name=ViewPageLaunchGameIslandToggleOff}"
+                                        OnContent="{shuxm:ResourceString Name=ViewPageLaunchGameIslandToggleOn}"
+                                        Toggled="OnIslandOptionChanged"/>
+                                    <Grid
+                                        x:Name="Opt_enable_time_adjust_val"
+                                        Grid.Row="6"
+                                        Grid.Column="1"
+                                        Grid.ColumnSpan="3"
+                                        VerticalAlignment="Bottom">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <ComboBox
+                                            Grid.Column="0"
+                                            Width="80"
+                                            Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandModifierKeyHeader}"
+                                            IsEnabled="{Binding LaunchOptions.EnableTimeAdjust.Value}"
+                                            SelectedIndex="{Binding LaunchOptions.TimeAdjustModifier.Value, Mode=TwoWay}"
+                                            SelectionChanged="OnIslandOptionChanged">
+                                            <ComboBoxItem Content="{shuxm:ResourceString Name=ViewPageLaunchGameIslandModifierNone}"/>
+                                            <ComboBoxItem Content="Ctrl"/>
+                                            <ComboBoxItem Content="Alt"/>
+                                            <ComboBoxItem Content="Shift"/>
+                                        </ComboBox>
+                                        <TextBlock Grid.Column="1" VerticalAlignment="Bottom" Margin="8,0,8,10" Text="+"/>
+                                        <NumberBox
+                                            Grid.Column="2"
+                                            Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandVkCodeHeader}"
+                                            IsEnabled="{Binding LaunchOptions.EnableTimeAdjust.Value}"
+                                            Maximum="255"
+                                            Minimum="1"
+                                            SpinButtonPlacementMode="Inline"
+                                            Value="{Binding LaunchOptions.TimeAdjustKey.Value, Mode=TwoWay}"
+                                            ValueChanged="OnIslandValueChanged"/>
+                                        <TextBlock Grid.Column="3" VerticalAlignment="Bottom" Margin="8,0,8,10" Text="+"/>
+                                        <NumberBox
+                                            Grid.Column="4"
+                                            Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandTimeAdjustStepHeader}"
+                                            IsEnabled="{Binding LaunchOptions.EnableTimeAdjust.Value}"
+                                            Maximum="24"
+                                            Minimum="1"
+                                            SpinButtonPlacementMode="Inline"
+                                            Value="{Binding LaunchOptions.TimeAdjustStep.Value, Mode=TwoWay}"
+                                            ValueChanged="OnIslandValueChanged"/>
+                                    </Grid>
+                                    <ToggleSwitch
+                                        x:Name="Opt_enable_no_grass"
+                                        Grid.Row="5"
+                                        Grid.Column="3"
+                                        Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandNoGrassHeader}"
+                                        IsOn="{Binding LaunchOptions.EnableNoGrass.Value, Mode=TwoWay}"
+                                        OffContent="{shuxm:ResourceString Name=ViewPageLaunchGameIslandToggleOff}"
+                                        OnContent="{shuxm:ResourceString Name=ViewPageLaunchGameIslandToggleOn}"
+                                        Toggled="OnIslandOptionChanged"/>
 
                                     <ToggleSwitch
                                         x:Name="Opt_hide_uid"

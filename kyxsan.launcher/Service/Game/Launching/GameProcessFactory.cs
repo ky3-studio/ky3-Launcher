@@ -345,6 +345,11 @@ internal sealed partial class GameProcessFactory
         config.AppendLine($"enableForge={(options.EnableForge.Value ? 1 : 0)}");
         config.AppendLine($"forgeKey={options.ForgeKey.Value}");
         config.AppendLine($"forgeModifier={options.ForgeModifier.Value}");
+        config.AppendLine($"enableNoGrass={(options.EnableNoGrass.Value ? 1 : 0)}");
+        config.AppendLine($"enableTimeAdjust={(options.EnableTimeAdjust.Value ? 1 : 0)}");
+        config.AppendLine($"timeAdjustKey={options.TimeAdjustKey.Value}");
+        config.AppendLine($"timeAdjustModifier={options.TimeAdjustModifier.Value}");
+        config.AppendLine($"timeAdjustStep={Math.Clamp(options.TimeAdjustStep.Value, 1, 24)}");
 
         try { File.WriteAllText(configPath, config.ToString()); } catch { }
     }

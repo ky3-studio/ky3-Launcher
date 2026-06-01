@@ -220,6 +220,8 @@
         <shuxb:InvokeCommandOnLoadedBehavior Command="{Binding LoadCommand}"/>
     </mxi:Interaction.Behaviors>
 
+    <Grid>
+        <Border Background="#40000000"/>
     <shuxc:StandardView HideCondition="{Binding IsInitialized, Converter={StaticResource BoolNegationConverter}, Mode=OneWay}" ShowCondition="{Binding Archives.CurrentItem, Converter={StaticResource EmptyObjectToBoolConverter}, Mode=OneWay}">
         <shuxc:StandardView.EmptyContent>
             <Border
@@ -255,7 +257,6 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Border Background="#40000000" Grid.RowSpan="2"/>
 
             <Border Margin="16" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
                 <Grid Style="{ThemeResource AcrylicSecondaryGridCardStyle}">
@@ -440,5 +441,6 @@
             </Border>
         </Grid>
     </shuxc:StandardView>
+    </Grid>
 
 </shuxc:ScopedPage>

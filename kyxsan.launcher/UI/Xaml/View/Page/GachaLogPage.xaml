@@ -118,6 +118,8 @@
         </DataTemplate>
     </Page.Resources>
 
+    <Grid>
+        <Border Background="#40000000"/>
     <shuxc:StandardView HideCondition="{Binding IsInitialized, Converter={StaticResource BoolNegationConverter}}" ShowCondition="{Binding Archives.CurrentItem, Converter={StaticResource EmptyObjectToBoolConverter}}">
         <shuxc:StandardView.EmptyContent>
             <Border
@@ -181,7 +183,6 @@
             </Border>
         </shuxc:StandardView.EmptyContent>
         <Grid>
-            <Border Background="#40000000"/>
             <Pivot Style="{ThemeResource CardPivotStyle}">
             <Pivot.LeftHeader>
                 <shuxc:SizeRestrictedContentControl Margin="6,6,0,6">
@@ -423,4 +424,5 @@
         </Pivot>
         </Grid>
     </shuxc:StandardView>
+    </Grid>
 </shuxc:ScopedPage>

@@ -268,6 +268,7 @@
     </shuxc:ScopedPage.Resources>
 
     <Grid>
+        <Border Background="#40000000"/>
         <!--  Not logged in state  -->
         <Border
             x:Name="NotLoggedInPanel"
@@ -317,7 +318,6 @@
 
         <!--  Logged in state  -->
         <Grid x:Name="LoggedInPanel" Visibility="Collapsed">
-        <Border Background="#40000000"/>
         <Pivot x:Name="MainPivot" Style="{ThemeResource CardPivotStyle}">
             <Pivot.RightHeader>
                 <CommandBar Grid.Row="0" DefaultLabelPosition="Right">

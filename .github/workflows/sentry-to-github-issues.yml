@@ -1,0 +1,85 @@
+name: Sentry to GitHub Issues
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+jobs:
+  sync-sentry-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch new Sentry issues and create GitHub issues
+        uses: actions/github-script@v7
+        env:
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_ORG: ${{ vars.SENTRY_ORG }}
+          SENTRY_PROJECT: ${{ vars.SENTRY_PROJECT }}
+        with:
+          script: |
+            const sentryToken = process.env.SENTRY_AUTH_TOKEN;
+            const org = process.env.SENTRY_ORG;
+            const project = process.env.SENTRY_PROJECT;
+
+            if (!sentryToken || !org || !project) {
+              core.setFailed('Missing SENTRY_AUTH_TOKEN, SENTRY_ORG, or SENTRY_PROJECT');
+              return;
+            }
+
+            const since = new Date(Date.now() - 20 * 60 * 1000).toISOString();
+
+            const response = await fetch(
+              `https://sentry.io/api/0/projects/${org}/${project}/issues/?query=is:unresolved firstSeen:>${since}&statsPeriod=`,
+              { headers: { 'Authorization': `Bearer ${sentryToken}` } }
+            );
+
+            if (!response.ok) {
+              core.setFailed(`Sentry API error: ${response.status} ${await response.text()}`);
+              return;
+            }
+
+            const issues = await response.json();
+            console.log(`Found ${issues.length} new Sentry issues`);
+
+            for (const issue of issues) {
+              const title = `[Sentry] ${issue.title}`;
+              const sentryLink = issue.permalink;
+
+              const existing = await github.rest.search.issuesAndPullRequests({
+                q: `repo:${context.repo.owner}/${context.repo.repo} is:issue "${issue.shortId}" in:body`
+              });
+
+              if (existing.data.total_count > 0) {
+                console.log(`Skipping ${issue.shortId}, already exists`);
+                continue;
+              }
+
+              const body = [
+                `## Sentry Issue: [${issue.shortId}](${sentryLink})`,
+                '',
+                `**类型:** ${issue.metadata?.type || issue.type}`,
+                `**首次出现:** ${issue.firstSeen}`,
+                `**最后出现:** ${issue.lastSeen}`,
+                `**出现次数:** ${issue.count}`,
+                `**影响用户:** ${issue.userCount}`,
+                '',
+                '### 错误信息',
+                '```',
+                issue.metadata?.value || issue.culprit || issue.title,
+                '```',
+                '',
+                issue.culprit ? `**位置:** \`${issue.culprit}\`` : '',
+                '',
+                `[在 Sentry 中查看](${sentryLink})`
+              ].join('\n');
+
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: title,
+                body: body,
+                labels: ['bug', 'sentry']
+              });
+
+              console.log(`Created issue for ${issue.shortId}: ${issue.title}`);
+            }

@@ -5,6 +5,10 @@ on:
     - cron: '*/15 * * * *'
   workflow_dispatch:
 
+permissions:
+  issues: write
+  contents: read
+
 jobs:
   sync-sentry-issues:
     runs-on: ubuntu-latest

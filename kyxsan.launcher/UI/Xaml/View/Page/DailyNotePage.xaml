@@ -488,6 +488,7 @@
     </Page.Resources>
 
     <Grid>
+        <Border Background="#40000000"/>
         <Border
             x:Name="NotLoggedInPanel"
             HorizontalAlignment="Center"
@@ -539,7 +540,6 @@
             <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Border Background="#40000000" Grid.RowSpan="2"/>
 
         <Border Margin="16,16,16,0" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
             <Border Style="{ThemeResource AcrylicSecondaryBorderCardStyle}">

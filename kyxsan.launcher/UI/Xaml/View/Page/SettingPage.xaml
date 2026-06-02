@@ -480,6 +480,18 @@
                                             Style="{ThemeResource SettingButtonStyle}"/>
                                     </cwc:SettingsExpander.Content>
                                 </cwc:SettingsExpander>
+                                <cwc:SettingsExpander
+                                    Description="{Binding InstallFolderView.Size}"
+                                    Header="{shuxm:ResourceString Name=ViewPageSettingInstallFolderHeader}"
+                                    HeaderIcon="{shuxm:FontIcon Glyph=&#xE7B8;}"
+                                    IsExpanded="True">
+                                    <cwc:SettingsExpander.Content>
+                                        <Button
+                                            Command="{Binding InstallFolderView.OpenFolderCommand}"
+                                            Content="{shuxm:ResourceString Name=ViewSettingFolderViewOpenFolderAction}"
+                                            Style="{ThemeResource SettingButtonStyle}"/>
+                                    </cwc:SettingsExpander.Content>
+                                </cwc:SettingsExpander>
                             </StackPanel>
                         </Border>
                     </Border>

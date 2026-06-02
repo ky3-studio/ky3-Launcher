@@ -10,6 +10,7 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.UI.Xaml.Controls;
 using kyxsan.Core;
+using kyxsan.Core.ApplicationModel;
 using kyxsan.Core.LifeCycle;
 using kyxsan.Core.Logging;
 using kyxsan.Core.Shell;
@@ -126,6 +127,7 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
 
         Storage.CacheFolderView = new(taskContext, kyxsanRuntime.LocalCacheDirectory);
         Storage.DataFolderView = new(taskContext, kyxsanRuntime.DataDirectory);
+        Storage.InstallFolderView = new(taskContext, PackageIdentityAdapter.AppDirectory);
 
         UpdateInfo = updateService.UpdateInfo;
 

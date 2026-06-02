@@ -32,6 +32,9 @@ internal sealed partial class SettingStorageViewModel : Abstraction.ViewModel
     [ObservableProperty]
     public partial SettingFolderViewModel? DataFolderView { get; set; }
 
+    [ObservableProperty]
+    public partial SettingFolderViewModel? InstallFolderView { get; set; }
+
     [Command("SetDataFolderCommand")]
     private async Task SetDataFolderAsync()
     {

@@ -149,6 +149,7 @@ internal static class SettingKeys
     public const string LaunchEnableForge                                = "kyxsan::Game::Island::Forge::Enable";
     public const string LaunchForgeKey                                   = "kyxsan::Game::Island::Forge::Key";
     public const string LaunchForgeModifier                             = "kyxsan::Game::Island::Forge::Modifier";
+    public const string LaunchEnableNoGrass                              = "kyxsan::Game::Island::NoGrass::Enable";
 
 
     // Custom DLL Injection

@@ -430,6 +430,10 @@ internal sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePat
     [field: MaybeNull]
     public IObservableProperty<int> ForgeModifier { get => field ??= CreateProperty(SettingKeys.LaunchForgeModifier, 0); }
 
+    [field: MaybeNull]
+    public IObservableProperty<bool> EnableNoGrass { get => field ??= CreateProperty(SettingKeys.LaunchEnableNoGrass, false); }
+
+
 
 
     // Custom DLL Injection - 每个DLL单独控制启用状态

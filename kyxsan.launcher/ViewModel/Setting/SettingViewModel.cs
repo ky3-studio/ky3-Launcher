@@ -19,9 +19,11 @@ using kyxsan.Service.Navigation;
 using kyxsan.Service.Notification;
 using kyxsan.Service.Update;
 using kyxsan.Service;
+using kyxsan.Core.IO.Http.Proxy;
 using kyxsan.UI.Xaml.Behavior.Action;
 using kyxsan.UI.Xaml.View.Dialog;
 using kyxsan.UI.Xaml.View.Window.WebView2;
+using Windows.System;
 
 namespace kyxsan.ViewModel.Setting;
 
@@ -181,12 +183,8 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
 
         if (result is ContentDialogResult.Primary)
         {
-            await taskContext.SwitchToMainThreadAsync();
-            if (currentXamlWindowReference.XamlRoot is { } xamlRoot)
-            {
-                UrlWebView2ContentProvider provider = new("https://github.com/ky3-git/ky3-Launcher/issues/new/choose".ToUri());
-                ShowWebView2WindowAction.Show(provider, xamlRoot);
-            }
+            Uri uri = "https://github.com/ky3-git/ky3-Launcher/issues/new/choose".ToUri();
+            await OpenGitHubUriAsync(uri).ConfigureAwait(false);
         }
         else if (result is ContentDialogResult.Secondary)
         {
@@ -199,24 +197,28 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
     private async Task OpenTranslateAsync()
     {
         SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Open translate", "SettingViewModel.Command"));
-
-        await taskContext.SwitchToMainThreadAsync();
-        if (currentXamlWindowReference.XamlRoot is { } xamlRoot)
-        {
-            UrlWebView2ContentProvider provider = new("https://github.com/ky3-git/ky3-Launcher/pulls".ToUri());
-            ShowWebView2WindowAction.Show(provider, xamlRoot);
-        }
+        await OpenGitHubUriAsync("https://github.com/ky3-git/ky3-Launcher/pulls".ToUri()).ConfigureAwait(false);
     }
 
     [Command("OpenGitHubCommand")]
     private async Task OpenGitHubAsync()
     {
         SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Open GitHub", "SettingViewModel.Command"));
+        await OpenGitHubUriAsync("https://github.com/ky3-git/ky3-Launcher".ToUri()).ConfigureAwait(false);
+    }
+
+    private async Task OpenGitHubUriAsync(Uri uri)
+    {
+        if (HttpProxyUsingSystemProxy.Instance.CurrentProxyUri is null)
+        {
+            _ = Launcher.LaunchUriAsync(uri);
+            return;
+        }
 
         await taskContext.SwitchToMainThreadAsync();
         if (currentXamlWindowReference.XamlRoot is { } xamlRoot)
         {
-            UrlWebView2ContentProvider provider = new("https://github.com/ky3-git/ky3-Launcher".ToUri());
+            UrlWebView2ContentProvider provider = new(uri);
             ShowWebView2WindowAction.Show(provider, xamlRoot);
         }
     }

@@ -79,11 +79,13 @@ internal sealed partial class UserAccountPasswordDialog : ContentDialog, IPasspo
             if (await geetestService.TryVerifyAigisSessionAsync(this, rawSession, isOversea).ConfigureAwait(false))
             {
                 (_, rawRisk, response) = await hoyoPlayPassportClient.LoginByPasswordAsync(this).ConfigureAwait(false);
+                Aigis = null;
             }
 
             if (await userVerificationService.TryVerifyAsync(this, rawRisk, isOversea).ConfigureAwait(false))
             {
                 (_, _, response) = await hoyoPlayPassportClient.LoginByPasswordAsync(this).ConfigureAwait(false);
+                Verify = null;
             }
 
             bool ok = ResponseValidator.TryValidate(response, serviceProvider, out LoginResult? result);

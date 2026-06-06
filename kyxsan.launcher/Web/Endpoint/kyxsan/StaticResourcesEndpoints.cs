@@ -13,7 +13,7 @@ internal static class StaticResourcesEndpoints
 {
     private static readonly string[] ServerRoots =
     [
-        "http://8.134.75.17",
+        Service.RemoteConfig.BackendApiRoutes.StaticBase,
     ];
 
     public static Uri UIIconNone { get; } = StaticRaw("Bg", "UI_Icon_None.png").ToUri();

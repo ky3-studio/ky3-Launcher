@@ -322,6 +322,9 @@ internal sealed partial class GameProcessFactory
         config.AppendLine($"forgeKey={options.ForgeKey.Value}");
         config.AppendLine($"forgeModifier={options.ForgeModifier.Value}");
         config.AppendLine($"enableNoGrass={(options.EnableNoGrass.Value ? 1 : 0)}");
+        config.AppendLine($"enableGui={(options.EnableGui.Value ? 1 : 0)}");
+        config.AppendLine($"guiKey={options.GuiKey.Value}");
+        config.AppendLine($"guiModifier={options.GuiModifier.Value}");
 
         try { File.WriteAllText(configPath, config.ToString()); } catch { }
     }
@@ -369,6 +372,24 @@ internal sealed partial class GameProcessFactory
             options.RemoveOpenTeamProgress.Value = GetBool(values, "removeTeamAnim", options.RemoveOpenTeamProgress.Value);
             options.EnableFps.Value = GetBool(values, "enableFps", options.EnableFps.Value);
             options.TargetFps.Value = GetInt(values, "targetFps", options.TargetFps.Value);
+            options.EnablePortableCraftingBench.Value = GetBool(values, "enablePortableCraft", options.EnablePortableCraftingBench.Value);
+            options.RedirectCombineEntry.Value = GetBool(values, "redirectCraft", options.RedirectCombineEntry.Value);
+            options.CraftKey.Value = GetInt(values, "craftKey", options.CraftKey.Value);
+            options.CraftModifier.Value = GetInt(values, "craftModifier", options.CraftModifier.Value);
+            options.EnableDispatch.Value = GetBool(values, "enableDispatch", options.EnableDispatch.Value);
+            options.RedirectDispatch.Value = GetBool(values, "redirectDispatch", options.RedirectDispatch.Value);
+            options.DispatchKey.Value = GetInt(values, "dispatchKey", options.DispatchKey.Value);
+            options.DispatchModifier.Value = GetInt(values, "dispatchModifier", options.DispatchModifier.Value);
+            options.EnableCooking.Value = GetBool(values, "enableCooking", options.EnableCooking.Value);
+            options.CookingKey.Value = GetInt(values, "cookingKey", options.CookingKey.Value);
+            options.CookingModifier.Value = GetInt(values, "cookingModifier", options.CookingModifier.Value);
+            options.EnableForge.Value = GetBool(values, "enableForge", options.EnableForge.Value);
+            options.ForgeKey.Value = GetInt(values, "forgeKey", options.ForgeKey.Value);
+            options.ForgeModifier.Value = GetInt(values, "forgeModifier", options.ForgeModifier.Value);
+            options.EnableNoGrass.Value = GetBool(values, "enableNoGrass", options.EnableNoGrass.Value);
+            options.EnableGui.Value = GetBool(values, "enableGui", options.EnableGui.Value);
+            options.GuiKey.Value = GetInt(values, "guiKey", options.GuiKey.Value);
+            options.GuiModifier.Value = GetInt(values, "guiModifier", options.GuiModifier.Value);
             
         }
         catch { }

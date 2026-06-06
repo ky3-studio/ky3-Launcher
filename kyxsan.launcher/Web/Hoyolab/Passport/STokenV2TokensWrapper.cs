@@ -7,20 +7,10 @@
 // Modified by kyxsan.
 // Licensed under the MIT license.
 
-using kyxsan.UI.Xaml.Control;
-using kyxsan.ViewModel.Home;
+namespace kyxsan.Web.Hoyolab.Passport;
 
-namespace kyxsan.UI.Xaml.View.Page;
-
-internal sealed partial class AnnouncementPage : ScopedPage
+internal sealed class STokenV2TokensWrapper
 {
-    public AnnouncementPage()
-    {
-        InitializeComponent();
-    }
-
-    protected override void LoadingOverride()
-    {
-        InitializeDataContext<AnnouncementViewModel>();
-    }
+    [JsonPropertyName("tokens")]
+    public List<TokenWrapper> Tokens { get; set; } = default!;
 }

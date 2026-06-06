@@ -10,6 +10,7 @@
 using kyxsan.Core.DependencyInjection.Annotation.HttpClient;
 using kyxsan.Model.Entity;
 using kyxsan.Web.Endpoint.Hoyolab;
+using kyxsan.Web.Hoyolab.DataSigning;
 using kyxsan.Web.Request.Builder;
 using kyxsan.Web.Request.Builder.Abstraction;
 using kyxsan.Web.Response;
@@ -31,37 +32,58 @@ internal sealed partial class PassportClientOversea : IPassportClient
 
     public async ValueTask<Response<UidCookieToken>> GetCookieAccountInfoBySTokenAsync(User user, CancellationToken token = default)
     {
-        string? sToken = user.SToken?.GetValueOrDefault(Cookie.STOKEN);
-        ArgumentException.ThrowIfNullOrEmpty(sToken);
         ArgumentException.ThrowIfNullOrEmpty(user.Aid);
-        STokenWrapper data = new(sToken, user.Aid);
 
-        HttpRequestMessageBuilder builder = httpRequestMessageBuilderFactory.Create()
-            .SetRequestUri(apiEndpoints.AccountGetCookieTokenBySToken())
-            .SetUserCookieAndFpHeader(user, CookieType.SToken)
-            .PostJson(data);
+        Response<STokenV2TokensWrapper> response = await GetTokensBySTokenV2Async(user, [4], token).ConfigureAwait(false);
 
-        Response<UidCookieToken>? resp = await builder
-            .SendAsync<Response<UidCookieToken>>(httpClient, token)
-            .ConfigureAwait(false);
+        if (response.ReturnCode is 0 && response.Data?.Tokens is { } tokens)
+        {
+            TokenWrapper? target = tokens.FirstOrDefault(t => t.TokenType is 4);
+            if (target is not null)
+            {
+                UidCookieToken result = new() { Uid = user.Aid, CookieToken = target.Token };
+                return new(0, response.Message, result);
+            }
+        }
 
-        return Response.Response.DefaultIfNull(resp);
+        return Response.Response.CloneReturnCodeAndMessage<UidCookieToken, STokenV2TokensWrapper>(response);
     }
 
     public async ValueTask<Response<LTokenWrapper>> GetLTokenBySTokenAsync(User user, CancellationToken token = default)
     {
-        string? sToken = user.SToken?.GetValueOrDefault(Cookie.STOKEN);
-        ArgumentException.ThrowIfNullOrEmpty(sToken);
         ArgumentException.ThrowIfNullOrEmpty(user.Aid);
-        STokenWrapper data = new(sToken, user.Aid);
+
+        Response<STokenV2TokensWrapper> response = await GetTokensBySTokenV2Async(user, [2], token).ConfigureAwait(false);
+
+        if (response.ReturnCode is 0 && response.Data?.Tokens is { } tokens)
+        {
+            TokenWrapper? target = tokens.FirstOrDefault(t => t.TokenType is 2);
+            if (target is not null)
+            {
+                LTokenWrapper result = new() { LToken = target.Token };
+                return new(0, response.Message, result);
+            }
+        }
+
+        return Response.Response.CloneReturnCodeAndMessage<LTokenWrapper, STokenV2TokensWrapper>(response);
+    }
+
+    private async ValueTask<Response<STokenV2TokensWrapper>> GetTokensBySTokenV2Async(User user, int[] tokenTypes, CancellationToken token)
+    {
+        string stoken = user.SToken?.GetValueOrDefault(Cookie.STOKEN) ?? string.Empty;
+        string mid = user.Mid ?? string.Empty;
 
         HttpRequestMessageBuilder builder = httpRequestMessageBuilderFactory.Create()
-            .SetRequestUri(apiEndpoints.AccountGetLTokenBySToken())
-            .SetUserCookieAndFpHeader(user, CookieType.SToken)
-            .PostJson(data);
+            .SetRequestUri(apiEndpoints.AccountGetTokenBySTokenV2())
+            .SetHeader("Cookie", $"stoken_v2={stoken};mid={mid}")
+            .SetHeader("x-rpc-app_id", "c9oqaq3s3gu8");
 
-        Response<LTokenWrapper>? resp = await builder
-            .SendAsync<Response<LTokenWrapper>>(httpClient, token)
+        await builder.SignDataAsync(DataSignAlgorithmVersion.Gen2, SaltType.OSAppLogin, false).ConfigureAwait(false);
+
+        builder.PostJson(new Dictionary<string, object> { ["dst_token_types"] = tokenTypes });
+
+        Response<STokenV2TokensWrapper>? resp = await builder
+            .SendAsync<Response<STokenV2TokensWrapper>>(httpClient, token)
             .ConfigureAwait(false);
 
         return Response.Response.DefaultIfNull(resp);

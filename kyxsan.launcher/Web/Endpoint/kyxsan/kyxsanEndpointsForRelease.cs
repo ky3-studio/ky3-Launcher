@@ -12,11 +12,9 @@ namespace kyxsan.Web.Endpoint.kyxsan;
 [Service(ServiceLifetime.Singleton, typeof(IkyxsanEndpoints), Key = kyxsanEndpointsKind.Release)]
 internal sealed class kyxsanEndpointsForRelease : IkyxsanEndpoints
 {
-    private const string ApiRoot = "https://8.134.75.17:9000/api";
+    string IHomaRootAccess.Root { get => Service.RemoteConfig.BackendApiRoutes.ApiBase; }
 
-    string IHomaRootAccess.Root { get => ApiRoot; }
+    string IInfrastructureRootAccess.Root { get => Service.RemoteConfig.BackendApiRoutes.ApiBase; }
 
-    string IInfrastructureRootAccess.Root { get => ApiRoot; }
-
-    string IInfrastructureRawRootAccess.RawRoot { get => ApiRoot; }
+    string IInfrastructureRawRootAccess.RawRoot { get => Service.RemoteConfig.BackendApiRoutes.ApiBase; }
 }

@@ -21,4 +21,5 @@ internal enum SaltType
     OSLK2,
     OSX4,
     OSX6,
+    OSAppLogin,
 }

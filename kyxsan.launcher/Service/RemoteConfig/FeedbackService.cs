@@ -10,11 +10,7 @@ namespace kyxsan.Service.RemoteConfig;
 
 internal static class FeedbackService
 {
-    private const string BaseUrl = "https://8.134.75.17:9000/api";
-    private static readonly HttpClient Http = new(new HttpClientHandler
-        {
-            ServerCertificateCustomValidationCallback = (_, _, _, _) => true
-        }) { Timeout = TimeSpan.FromSeconds(15) };
+    private static readonly HttpClient Http = BackendApiRoutes.CreateHttpClient(TimeSpan.FromSeconds(15));
 
     /// <summary>Upload a feedback image (no auth required). Returns the hosted URL or null on failure.</summary>
     public static async Task<string?> UploadImageAsync(string filePath)
@@ -34,7 +30,7 @@ internal static class FeedbackService
                     _ => "image/jpeg",
                 });
             form.Add(fileContent, "file", Path.GetFileName(filePath));
-            HttpResponseMessage resp = await Http.PostAsync($"{BaseUrl}/feedback-image", form).ConfigureAwait(false);
+            HttpResponseMessage resp = await Http.PostAsync(BackendApiRoutes.FeedbackImage, form).ConfigureAwait(false);
             string json = await resp.Content.ReadAsStringAsync().ConfigureAwait(false);
             using JsonDocument doc = JsonDocument.Parse(json);
             if (doc.RootElement.GetProperty("retcode").GetInt32() == 0)
@@ -62,7 +58,7 @@ internal static class FeedbackService
                 images = imageUrls,
             });
             StringContent httpContent = new(json, Encoding.UTF8, "application/json");
-            HttpResponseMessage resp = await Http.PostAsync($"{BaseUrl}/feedback", httpContent).ConfigureAwait(false);
+            HttpResponseMessage resp = await Http.PostAsync(BackendApiRoutes.Feedback, httpContent).ConfigureAwait(false);
             string respJson = await resp.Content.ReadAsStringAsync().ConfigureAwait(false);
             using JsonDocument doc = JsonDocument.Parse(respJson);
             return doc.RootElement.GetProperty("retcode").GetInt32() == 0;
@@ -79,7 +75,7 @@ internal static class FeedbackService
         try
         {
             string deviceId = Uri.EscapeDataString(kyxsanRuntime.DeviceId);
-            string json = await Http.GetStringAsync($"{BaseUrl}/feedback/replies?device_id={deviceId}").ConfigureAwait(false);
+            string json = await Http.GetStringAsync($"{BackendApiRoutes.FeedbackReplies}?device_id={deviceId}").ConfigureAwait(false);
             using JsonDocument doc = JsonDocument.Parse(json);
             if (doc.RootElement.GetProperty("retcode").GetInt32() == 0 &&
                 doc.RootElement.TryGetProperty("data", out JsonElement dataEl))
@@ -103,7 +99,7 @@ internal static class FeedbackService
             object body = new { device_id = kyxsanRuntime.DeviceId };
             string json = JsonSerializer.Serialize(body);
             StringContent content = new(json, Encoding.UTF8, "application/json");
-            await Http.PostAsync($"{BaseUrl}/feedback/reply-read", content).ConfigureAwait(false);
+            await Http.PostAsync(BackendApiRoutes.FeedbackReplyRead, content).ConfigureAwait(false);
         }
         catch
         {
@@ -121,7 +117,7 @@ internal static class FeedbackService
             os_version = System.Environment.OSVersion.VersionString,
         });
         StringContent content = new(json, Encoding.UTF8, "application/json");
-        await Http.PostAsync($"{BaseUrl}/heartbeat", content).ConfigureAwait(false);
+        await Http.PostAsync(BackendApiRoutes.Heartbeat, content).ConfigureAwait(false);
     }
 }
 

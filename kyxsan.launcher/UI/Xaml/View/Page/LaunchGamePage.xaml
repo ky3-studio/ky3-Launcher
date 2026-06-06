@@ -202,20 +202,23 @@
                         Icon="{shuxm:FontIcon Glyph=&#xED25;}"
                         Label="{shuxm:ResourceString Name=ViewPageOpenScreenshotFolderAction}"/>
                     <AppBarButton
+                        x:Name="ResetGamePathButton"
                         Command="{Binding ResetGamePathCommand}"
                         Icon="{shuxm:FontIcon Glyph=&#xEBC4;}"
-                        IsEnabled="{Binding LaunchOptions.IsGameRunning.Value, Converter={StaticResource BoolNegationConverter}}"
+                        IsEnabled="True"
                         Label="{shuxm:ResourceString Name=ViewPageResetGamePathAction}"
                         ToolTipService.ToolTip="{Binding DisplayGamePath.Value}"/>
                     <AppBarButton
-                        Command="{Binding KillGameProcessCommand}"
+                        x:Name="KillGameProcessButton"
+                        Click="KillGameProcess_Click"
                         Icon="{shuxm:FontIcon Glyph=&#xE733;}"
-                        IsEnabled="{Binding LaunchOptions.CanKillGameProcess.Value}"
+                        IsEnabled="False"
                         Label="{shuxm:ResourceString Name=ViewPageLaunchGameKillGameProcessAction}"/>
                     <AppBarButton
+                        x:Name="LaunchGameButton"
                         Command="{Binding LaunchCommand}"
                         Icon="{shuxm:FontIcon Glyph=&#xE7FC;}"
-                        IsEnabled="{Binding LaunchOptions.IsGameRunning.Value, Converter={StaticResource BoolNegationConverter}}"
+                        IsEnabled="True"
                         Label="{shuxm:ResourceString Name=ViewPageLaunchGameAction}"/>
                 </CommandBar>
             </Pivot.RightHeader>
@@ -1001,6 +1004,49 @@
                                             Minimum="1"
                                             SpinButtonPlacementMode="Inline"
                                             Value="{Binding LaunchOptions.ForgeKey.Value, Mode=TwoWay}"
+                                            ValueChanged="OnIslandValueChanged"/>
+                                    </Grid>
+
+                                    <ToggleSwitch
+                                        x:Name="Opt_enable_gui"
+                                        Grid.Row="6"
+                                        Grid.Column="0"
+                                        Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandGuiHotkeyHeader}"
+                                        IsOn="{Binding LaunchOptions.EnableGui.Value, Mode=TwoWay}"
+                                        OffContent="{shuxm:ResourceString Name=ViewPageLaunchGameIslandToggleOff}"
+                                        OnContent="{shuxm:ResourceString Name=ViewPageLaunchGameIslandToggleOn}"
+                                        Toggled="OnIslandOptionChanged"/>
+                                    <Grid
+                                        x:Name="Opt_enable_gui_val"
+                                        Grid.Row="6"
+                                        Grid.Column="1"
+                                        VerticalAlignment="Bottom">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <ComboBox
+                                            Grid.Column="0"
+                                            Width="80"
+                                            Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandModifierKeyHeader}"
+                                            IsEnabled="{Binding LaunchOptions.EnableGui.Value}"
+                                            SelectedIndex="{Binding LaunchOptions.GuiModifier.Value, Mode=TwoWay}"
+                                            SelectionChanged="OnIslandOptionChanged">
+                                            <ComboBoxItem Content="{shuxm:ResourceString Name=ViewPageLaunchGameIslandModifierNone}"/>
+                                            <ComboBoxItem Content="Ctrl"/>
+                                            <ComboBoxItem Content="Alt"/>
+                                            <ComboBoxItem Content="Shift"/>
+                                        </ComboBox>
+                                        <TextBlock Grid.Column="1" VerticalAlignment="Bottom" Margin="8,0,8,10" Text="+"/>
+                                        <NumberBox
+                                            Grid.Column="2"
+                                            Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandVkCodeHeader}"
+                                            IsEnabled="{Binding LaunchOptions.EnableGui.Value}"
+                                            Maximum="255"
+                                            Minimum="1"
+                                            SpinButtonPlacementMode="Inline"
+                                            Value="{Binding LaunchOptions.GuiKey.Value, Mode=TwoWay}"
                                             ValueChanged="OnIslandValueChanged"/>
                                     </Grid>
 

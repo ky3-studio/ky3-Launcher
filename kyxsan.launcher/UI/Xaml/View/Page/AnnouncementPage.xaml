@@ -152,19 +152,6 @@
         <Border Background="#40000000"/>
         <ScrollViewer Padding="0" Style="{StaticResource DefaultScrollViewerStyle}">
             <StackPanel Padding="16" Spacing="16">
-                <StackPanel
-                    x:Name="AppAnnouncementCard"
-                    Visibility="Collapsed"
-                    Spacing="4">
-                    <TextBlock
-                        Style="{StaticResource BodyStrongTextBlockStyle}"
-                        Margin="2,0,0,4"
-                        Text="软件公告"/>
-                    <StackPanel
-                        x:Name="AppAnnouncementPanel"
-                        Spacing="8"/>
-                </StackPanel>
-
                 <Pivot
                     x:Name="GameAnnouncementPivot"
                     Margin="-16"

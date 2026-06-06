@@ -8,12 +8,8 @@ namespace kyxsan.Service.RemoteConfig;
 
 internal static class InjectionOptionsConfigService
 {
-    private const string ConfigUrl = "https://8.134.75.17:9000/api/config";
     private const int TotalOptionCount = 16;
-    private static readonly HttpClient Http = new(new HttpClientHandler
-    {
-        ServerCertificateCustomValidationCallback = (_, _, _, _) => true
-    }) { Timeout = TimeSpan.FromSeconds(5) };
+    private static readonly HttpClient Http = BackendApiRoutes.CreateHttpClient(TimeSpan.FromSeconds(5));
     private static readonly object Lock = new();
 
     private static HashSet<string> _disabledKeys = [];
@@ -57,7 +53,7 @@ internal static class InjectionOptionsConfigService
         HashSet<string> disabled = [];
         try
         {
-            string json = await Http.GetStringAsync(ConfigUrl).ConfigureAwait(false);
+            string json = await Http.GetStringAsync(BackendApiRoutes.Config).ConfigureAwait(false);
             ConfigResponse? resp = JsonSerializer.Deserialize<ConfigResponse>(json);
             if (resp?.Data?.InjectionOptions is { } options)
             {

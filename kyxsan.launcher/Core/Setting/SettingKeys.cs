@@ -31,6 +31,7 @@ internal static class SettingKeys
     public const string AnnouncementSeenIds          = "kyxsan::Announcement::SeenIds";
     public const string ClientRegistered             = "kyxsan::Backend::ClientRegistered";
     public const string ClientLastHeartbeatDate      = "kyxsan::Backend::ClientLastHeartbeatDate";
+    public const string ClientLastHeartbeatVersion   = "kyxsan::Backend::ClientLastHeartbeatVersion";
 
     // UI
     public const string BackgroundImageType          = "kyxsan::UI::BackgroundImage::Type";
@@ -150,6 +151,9 @@ internal static class SettingKeys
     public const string LaunchForgeKey                                   = "kyxsan::Game::Island::Forge::Key";
     public const string LaunchForgeModifier                             = "kyxsan::Game::Island::Forge::Modifier";
     public const string LaunchEnableNoGrass                              = "kyxsan::Game::Island::NoGrass::Enable";
+    public const string LaunchEnableGui                                  = "kyxsan::Game::Island::Gui::Enable";
+    public const string LaunchGuiKey                                     = "kyxsan::Game::Island::Gui::Key";
+    public const string LaunchGuiModifier                                = "kyxsan::Game::Island::Gui::Modifier";
 
 
     // Custom DLL Injection

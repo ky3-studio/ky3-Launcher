@@ -25,7 +25,7 @@ internal static class HoyolabOptions
 
     public const string MobileUserAgentOversea = $"Mozilla/5.0 (Linux; Android 15) Mobile miHoYoBBSOversea/{SaltConstants.OSVersion}";
 
-    public const string HoyoPlayUserAgent = $"HYPContainer/1.1.4.133";
+    public const string HoyoPlayUserAgent = "HYPContainer/1.7.3.261 (windows 10)";
 
     public const string ToolVersion = "v4.2.2-ys";
 
@@ -34,6 +34,10 @@ internal static class HoyolabOptions
     public static string DeviceId40 { get; } = GenerateDeviceId40();
 
     public static string DeviceId53 { get; } = Random.GetLowerAndNumberString(53);
+
+    public static string DeviceId16 { get; } = Random.GetLowerAndNumberString(16);
+
+    public static string DeviceFp { get; } = Random.GetLowerHexString(13);
 
     public static FrozenDictionary<SaltType, string> Salts { get; } = WinRTAdaptive.ToFrozenDictionary(
     [
@@ -51,6 +55,7 @@ internal static class HoyolabOptions
         KeyValuePair.Create(SaltType.OSLK2, SaltConstants.OSLK2),
         KeyValuePair.Create(SaltType.OSX4, "h4c1d6ywfq5bsbnbhm1bzq7bxzzv6srt"),
         KeyValuePair.Create(SaltType.OSX6, "okr4obncj8bw5a65hbnn5oo6ixjc3l9w"),
+        KeyValuePair.Create(SaltType.OSAppLogin, "IZPgfb0dRPtBeLuFkdDznSZ6f4wWt6y2"),
     ]);
 
     [SuppressMessage("", "CA1308")]

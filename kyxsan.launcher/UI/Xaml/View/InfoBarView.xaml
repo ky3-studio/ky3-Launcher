@@ -21,10 +21,17 @@
                 Title="{Binding Title}"
                 shuxc:InfoBarHelper.IsTextSelectionEnabled="{Binding IsTextSelectionEnabled}"
                 Closed="OnInfoBarClosed"
-                Content="{Binding Content}"
                 IsOpen="True"
                 Message="{Binding Message}"
                 Severity="{Binding Severity}">
+                <InfoBar.Content>
+                    <Image
+                        MaxHeight="160"
+                        HorizontalAlignment="Left"
+                        Source="{Binding ImageUrl}"
+                        Stretch="Uniform"
+                        Visibility="{Binding ImageUrl, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
+                </InfoBar.Content>
                 <mxi:Interaction.Behaviors>
                     <shuxb:InfoBarDelayCloseBehavior MilliSecondsDelay="{Binding MilliSecondsDelay}"/>
                 </mxi:Interaction.Behaviors>
@@ -36,10 +43,17 @@
                 Title="{Binding Title}"
                 shuxc:InfoBarHelper.IsTextSelectionEnabled="{Binding IsTextSelectionEnabled}"
                 Closed="OnInfoBarClosed"
-                Content="{Binding Content}"
                 IsOpen="True"
                 Message="{Binding Message}"
                 Severity="{Binding Severity}">
+                <InfoBar.Content>
+                    <Image
+                        MaxHeight="160"
+                        HorizontalAlignment="Left"
+                        Source="{Binding ImageUrl}"
+                        Stretch="Uniform"
+                        Visibility="{Binding ImageUrl, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
+                </InfoBar.Content>
                 <InfoBar.ActionButton>
                     <Button Command="{Binding ActionButtonCommand}" Content="{Binding ActionButtonContent}"/>
                 </InfoBar.ActionButton>
@@ -117,6 +131,7 @@
 
                     <ScrollView
                         Grid.Row="0"
+                        ContentOrientation="Vertical"
                         HorizontalScrollBarVisibility="Hidden"
                         VerticalScrollBarVisibility="Hidden">
                         <ItemsControl

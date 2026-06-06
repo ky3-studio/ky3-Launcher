@@ -16,6 +16,7 @@ using kyxsan.Service.Game;
 using kyxsan.Service.Game.Launching;
 using kyxsan.Service.Game.Account;
 using kyxsan.Service.RemoteConfig;
+using kyxsan.UI.Content;
 using kyxsan.UI.Xaml.Control;
 using kyxsan.ViewModel.Game;
 
@@ -27,6 +28,7 @@ internal sealed partial class LaunchGamePage : ScopedPage
     private LaunchGameViewModel? _viewModel;
     private CancellationTokenSource? _refreshCts;
     private DispatcherTimer? _configSyncTimer;
+    private DispatcherTimer? _gameStateTimer;
     private bool _isSyncingFromDll;
     private bool _injectionToggleChanging = true;
 
@@ -36,6 +38,10 @@ internal sealed partial class LaunchGamePage : ScopedPage
         Unloaded += OnPageUnloaded;
         Loaded += OnPageLoaded;
         InjectionOptionsConfigService.Changed += OnInjectionConfigChanged;
+
+        _gameStateTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
+        _gameStateTimer.Tick += GameStateTimer_Tick;
+        _gameStateTimer.Start();
     }
 
     private void OnPageLoaded(object sender, RoutedEventArgs e)
@@ -51,6 +57,38 @@ internal sealed partial class LaunchGamePage : ScopedPage
 
         _ = Task.CompletedTask; // Start background polling for injection option visibility
         InjectionOptionsConfigService.StartPolling();
+    }
+
+    private void GameStateTimer_Tick(object? sender, object e)
+    {
+        try
+        {
+            bool running = GameLifeCycle.IsGameRunningRequiresMainThread();
+            KillGameProcessButton.IsEnabled = running;
+            LaunchGameButton.IsEnabled = !running;
+            ResetGamePathButton.IsEnabled = !running;
+
+            if (running)
+            {
+                StartConfigSync();
+            }
+            else
+            {
+                StopConfigSync();
+            }
+        }
+        catch
+        {
+        }
+    }
+
+    private async void KillGameProcess_Click(object sender, RoutedEventArgs e)
+    {
+        if (XamlRoot.XamlContext() is { } context)
+        {
+            ITaskContext taskContext = context.ServiceProvider.GetRequiredService<ITaskContext>();
+            await GameLifeCycle.TryKillGameProcessAsync(taskContext).ConfigureAwait(false);
+        }
     }
 
     private void OnInjectionConfigChanged(HashSet<string> disabled)
@@ -102,6 +140,11 @@ internal sealed partial class LaunchGamePage : ScopedPage
             StartAutoRefresh();
 
             LaunchOptions.IsGameRunning.PropertyChanged += OnIsGameRunningChanged;
+
+            bool running = GameLifeCycle.IsGameRunningRequiresMainThread();
+            KillGameProcessButton.IsEnabled = running;
+            LaunchGameButton.IsEnabled = !running;
+            ResetGamePathButton.IsEnabled = !running;
         }
     }
 
@@ -117,6 +160,7 @@ internal sealed partial class LaunchGamePage : ScopedPage
 
     private void OnPageUnloaded(object sender, RoutedEventArgs e)
     {
+        _gameStateTimer?.Stop();
         StopConfigSync();
         _refreshCts?.Cancel();
         _refreshCts?.Dispose();
@@ -158,19 +202,11 @@ internal sealed partial class LaunchGamePage : ScopedPage
 
     private void OnIsGameRunningChanged(object? sender, PropertyChangedEventArgs e)
     {
-        if (e.PropertyName == "Value")
+        if (e.PropertyName == "Value" && !LaunchOptions.IsGameRunning.Value)
         {
-            if (LaunchOptions.IsGameRunning.Value)
+            if (_viewModel?.LaunchOptions is { } options)
             {
-                StartConfigSync();
-            }
-            else
-            {
-                StopConfigSync();
-                if (_viewModel?.LaunchOptions is { } options)
-                {
-                    RefreshResolution(options);
-                }
+                RefreshResolution(options);
             }
         }
     }
@@ -456,10 +492,17 @@ internal sealed partial class LaunchGamePage : ScopedPage
         });
         content.Children.Add(inputBox);
 
+        ScrollViewer scrollWrapper = new()
+        {
+            Content = content,
+            MaxHeight = 480,
+            VerticalScrollBarVisibility = Microsoft.UI.Xaml.Controls.ScrollBarVisibility.Auto,
+        };
+
         ContentDialog dialog = new()
         {
             Title = SH.ViewPageLaunchGameInjectionDialogTitle,
-            Content = content,
+            Content = scrollWrapper,
             PrimaryButtonText = SH.ViewPageLaunchGameInjectionConfirmButton,
             CloseButtonText = SH.ViewCommonCancelButton,
             DefaultButton = ContentDialogButton.Close,

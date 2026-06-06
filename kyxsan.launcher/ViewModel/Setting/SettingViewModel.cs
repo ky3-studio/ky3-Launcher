@@ -18,6 +18,7 @@ using kyxsan.Factory.ContentDialog;
 using kyxsan.Service.Navigation;
 using kyxsan.Service.Notification;
 using kyxsan.Service.Update;
+using kyxsan.Service.RemoteConfig;
 using kyxsan.Service;
 using kyxsan.Core.IO.Http.Proxy;
 using kyxsan.UI.Xaml.Behavior.Action;
@@ -183,7 +184,7 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
 
         if (result is ContentDialogResult.Primary)
         {
-            Uri uri = "https://github.com/ky3-git/ky3-Launcher/issues/new/choose".ToUri();
+            Uri uri = BackendApiRoutes.GitHubIssues.ToUri();
             await OpenGitHubUriAsync(uri).ConfigureAwait(false);
         }
         else if (result is ContentDialogResult.Secondary)
@@ -197,14 +198,14 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
     private async Task OpenTranslateAsync()
     {
         SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Open translate", "SettingViewModel.Command"));
-        await OpenGitHubUriAsync("https://github.com/ky3-git/ky3-Launcher/pulls".ToUri()).ConfigureAwait(false);
+        await OpenGitHubUriAsync(BackendApiRoutes.GitHubPulls.ToUri()).ConfigureAwait(false);
     }
 
     [Command("OpenGitHubCommand")]
     private async Task OpenGitHubAsync()
     {
         SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Open GitHub", "SettingViewModel.Command"));
-        await OpenGitHubUriAsync("https://github.com/ky3-git/ky3-Launcher".ToUri()).ConfigureAwait(false);
+        await OpenGitHubUriAsync(BackendApiRoutes.GitHubBase.ToUri()).ConfigureAwait(false);
     }
 
     private async Task OpenGitHubUriAsync(Uri uri)

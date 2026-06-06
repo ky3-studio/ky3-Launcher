@@ -114,8 +114,14 @@ internal partial class ScopedPage : Page
 
         if (DataContext is IViewModel viewModel)
         {
-            // Wait to ensure critical viewmodel operation is completed
-            using (viewModel.CriticalSection.Enter())
+            try
+            {
+                using (viewModel.CriticalSection.Enter())
+                {
+                    viewModel.Uninitialize();
+                }
+            }
+            catch (OperationCanceledException)
             {
                 viewModel.Uninitialize();
             }

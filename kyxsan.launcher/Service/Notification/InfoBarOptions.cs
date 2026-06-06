@@ -21,6 +21,8 @@ internal sealed class InfoBarOptions
 
     public object? Content { get; set; }
 
+    public string? ImageUrl { get; set; }
+
     public string? ActionButtonContent { get; set; }
 
     public ICommand? ActionButtonCommand { get; set; }
@@ -37,6 +39,7 @@ internal sealed class InfoBarOptions
             Title = message.Title,
             Message = message.Message,
             Content = message.Content,
+            ImageUrl = message.ImageUrl,
             ActionButtonContent = message.ActionButtonContent,
             ActionButtonCommand = message.ActionButtonCommand,
             MilliSecondsDelay = message.MilliSecondsDelay,

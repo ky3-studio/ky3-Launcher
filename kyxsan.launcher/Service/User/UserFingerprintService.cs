@@ -24,18 +24,19 @@ internal sealed partial class UserFingerprintService : IUserFingerprintService
 
     public async ValueTask TryInitializeAsync(ViewModel.User.User user, CancellationToken token = default)
     {
-        if (user.IsOversea)
-        {
-            // Disable HoYoLAB fp approach
-            return;
-        }
-
         if (user.Entity.FingerprintLastUpdateTime >= DateTimeOffset.UtcNow - TimeSpan.FromDays(7))
         {
             if (!string.IsNullOrEmpty(user.Fingerprint))
             {
                 return;
             }
+        }
+
+        if (user.IsOversea)
+        {
+            user.TryUpdateFingerprint(HoyolabOptions.DeviceFp);
+            user.NeedDbUpdateAfterResume = true;
+            return;
         }
 
         string device = Core.Random.GetUpperAndNumberString(12);

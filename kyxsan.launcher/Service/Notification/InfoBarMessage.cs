@@ -23,6 +23,8 @@ internal sealed class InfoBarMessage
 
     public object? Content { get; init; }
 
+    public string? ImageUrl { get; init; }
+
     public string? ActionButtonContent { get; init; }
 
     public ICommand? ActionButtonCommand { get; init; }

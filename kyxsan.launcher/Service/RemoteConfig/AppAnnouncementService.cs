@@ -8,11 +8,7 @@ namespace kyxsan.Service.RemoteConfig;
 
 internal static class AppAnnouncementService
 {
-    private const string AnnouncementsUrl = "https://8.134.75.17:9000/api/announcements";
-    internal static readonly HttpClient Http = new(new HttpClientHandler
-    {
-        ServerCertificateCustomValidationCallback = (_, _, _, _) => true
-    }) { Timeout = TimeSpan.FromSeconds(5) };
+    internal static readonly HttpClient Http = BackendApiRoutes.CreateHttpClient(TimeSpan.FromSeconds(5));
     private static readonly object Lock = new();
     private static List<AppAnnouncement> _cached = [];
     private static Timer? _timer;
@@ -28,20 +24,20 @@ internal static class AppAnnouncementService
         get { lock (Lock) { return [.. _cached]; } }
     }
 
-    public static bool ShouldNotify(List<AppAnnouncement> items)
+    public static List<AppAnnouncement> FilterNew(List<AppAnnouncement> items)
     {
         lock (Lock)
         {
-            bool hasNew = false;
+            List<AppAnnouncement> result = [];
             foreach (AppAnnouncement a in items)
             {
                 if (!_seenIds.Contains(a.Id) && !_notifiedThisSession.Contains(a.Id))
                 {
                     _notifiedThisSession.Add(a.Id);
-                    hasNew = true;
+                    result.Add(a);
                 }
             }
-            return hasNew;
+            return result;
         }
     }
 
@@ -116,7 +112,7 @@ internal static class AppAnnouncementService
     {
         try
         {
-            string json = await Http.GetStringAsync(AnnouncementsUrl).ConfigureAwait(false);
+            string json = await Http.GetStringAsync(BackendApiRoutes.Announcements).ConfigureAwait(false);
             ApiResponse? resp = JsonSerializer.Deserialize<ApiResponse>(json);
             if (resp is { RetCode: 0, Data: { } data })
             {

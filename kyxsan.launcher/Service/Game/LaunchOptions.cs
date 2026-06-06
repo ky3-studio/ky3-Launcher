@@ -433,6 +433,15 @@ internal sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePat
     [field: MaybeNull]
     public IObservableProperty<bool> EnableNoGrass { get => field ??= CreateProperty(SettingKeys.LaunchEnableNoGrass, false); }
 
+    [field: MaybeNull]
+    public IObservableProperty<bool> EnableGui { get => field ??= CreateProperty(SettingKeys.LaunchEnableGui, true); }
+
+    [field: MaybeNull]
+    public IObservableProperty<int> GuiKey { get => field ??= CreateProperty(SettingKeys.LaunchGuiKey, 0xA1); }
+
+    [field: MaybeNull]
+    public IObservableProperty<int> GuiModifier { get => field ??= CreateProperty(SettingKeys.LaunchGuiModifier, 0); }
+
 
 
 

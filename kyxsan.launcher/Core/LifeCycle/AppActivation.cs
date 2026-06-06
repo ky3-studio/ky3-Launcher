@@ -243,42 +243,13 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
         _ = serviceProvider.GetRequiredService<AutoSignInTriggerService>();
 
         IMessenger messenger = serviceProvider.GetRequiredService<IMessenger>();
-        bool windowIsActive = true;
-        bool pendingAnnouncementNotification = false;
 
+        AppAnnouncementNotifier announcementNotifier = new(messenger);
         if (mainWindow is not null)
         {
-            mainWindow.Activated += (_, e) =>
-            {
-                bool isActive = e.WindowActivationState != Microsoft.UI.Xaml.WindowActivationState.Deactivated;
-                if (isActive && !windowIsActive && pendingAnnouncementNotification)
-                {
-                    pendingAnnouncementNotification = false;
-                    messenger.Send(InfoBarMessage.Information("新公告已发布，请前往公告页面查看阅读"));
-                }
-                windowIsActive = isActive;
-            };
+            announcementNotifier.Attach(mainWindow);
         }
-
-        AppAnnouncementService.Changed += items =>
-        {
-            if (AppAnnouncementService.ShouldNotify(items))
-            {
-                if (windowIsActive)
-                    messenger.Send(InfoBarMessage.Information("新公告已发布，请前往公告页面查看阅读"));
-                else
-                    pendingAnnouncementNotification = true;
-            }
-        };
-        AppAnnouncementService.StartPolling();
-
-        if (AppAnnouncementService.ShouldNotify(AppAnnouncementService.Current))
-        {
-            if (windowIsActive)
-                messenger.Send(InfoBarMessage.Information("新公告已发布，请前往公告页面查看阅读"));
-            else
-                pendingAnnouncementNotification = true;
-        }
+        announcementNotifier.Start();
 
         _ = Task.Run(async () =>
         {
@@ -308,7 +279,7 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
                     string preview = replies[0].Reply;
                     if (preview.Length > 60) preview = preview[..60] + "...";
                     serviceProvider.GetRequiredService<IMessenger>()
-                        .Send(InfoBarMessage.Information($"您的反馈已收到回复：{preview}"));
+                        .Send(InfoBarMessage.Information(SH.FormatServiceFeedbackReplyNotification(preview)));
                     await FeedbackService.MarkRepliesReadAsync().ConfigureAwait(false);
                 }
             }
@@ -322,12 +293,15 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
             try
             {
                 string today = DateTime.Today.ToString("yyyy-MM-dd");
+                string currentVer = kyxsanRuntime.Version.ToString();
                 string lastDate = LocalSetting.Get(SettingKeys.ClientLastHeartbeatDate, "");
-                if (lastDate != today)
+                string lastVer = LocalSetting.Get(SettingKeys.ClientLastHeartbeatVersion, "");
+                if (lastDate != today || lastVer != currentVer)
                 {
                     await Task.Delay(1000).ConfigureAwait(false);
                     await FeedbackService.HeartbeatAsync().ConfigureAwait(false);
                     LocalSetting.Set(SettingKeys.ClientLastHeartbeatDate, today);
+                    LocalSetting.Set(SettingKeys.ClientLastHeartbeatVersion, currentVer);
                 }
             }
             catch

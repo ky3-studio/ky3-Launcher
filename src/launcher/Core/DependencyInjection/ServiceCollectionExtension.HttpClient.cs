@@ -44,7 +44,7 @@ internal static partial class ServiceCollectionExtension
                             typedHandler.Proxy = HttpProxyUsingSystemProxy.Instance;
                             typedHandler.SslOptions = new System.Net.Security.SslClientAuthenticationOptions
                             {
-                                RemoteCertificateValidationCallback = (_, _, _, _) => true
+                                RemoteCertificateValidationCallback = (_, _, _, _) => true,
                             };
                         })
                         .AddHttpMessageHandler<RetryHttpHandler>();

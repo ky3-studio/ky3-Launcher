@@ -184,63 +184,34 @@ internal sealed partial class UserInitializationService : IUserInitializationSer
             return false;
         }
 
-        using CancellationTokenSource timeoutCts = CancellationTokenSource.CreateLinkedTokenSource(token);
-        timeoutCts.CancelAfter(TimeSpan.FromSeconds(30));
-        CancellationToken ct = timeoutCts.Token;
-
-        try
+        using (IServiceScope scope = serviceProvider.CreateScope())
         {
-            using IServiceScope scopeL = serviceProvider.CreateScope();
-            using IServiceScope scopeC = serviceProvider.CreateScope();
-            using IServiceScope scopeU = serviceProvider.CreateScope();
+            IServiceProvider scopedProvider = scope.ServiceProvider;
 
-            Task<bool> lTokenTask = TrySetUserLTokenAsync(scopeL.ServiceProvider, user, ct).AsTask();
-            Task<bool> cookieTokenTask = TrySetUserCookieTokenAsync(scopeC.ServiceProvider, user, ct).AsTask();
-            Task<bool> userInfoTask = TrySetUserUserInfoAsync(scopeU.ServiceProvider, user, ct).AsTask();
-            Task<bool> gameRolesTask = FetchGameRolesAfterLTokenAsync(lTokenTask, user, ct);
+            if (!await TrySetUserLTokenAsync(scopedProvider, user, token).ConfigureAwait(false))
+            {
+                return false;
+            }
 
-            bool[] results = await Task.WhenAll(lTokenTask, cookieTokenTask, userInfoTask, gameRolesTask).ConfigureAwait(false);
+            if (!await TrySetUserCookieTokenAsync(scopedProvider, user, token).ConfigureAwait(false))
+            {
+                return false;
+            }
 
-            if (!results[0] || !results[1] || !results[2] || !results[3])
+            if (!await TrySetUserUserInfoAsync(scopedProvider, user, token).ConfigureAwait(false))
+            {
+                return false;
+            }
+
+            if (!await TrySetUserUserGameRolesAsync(scopedProvider, user, token).ConfigureAwait(false))
             {
                 return false;
             }
         }
-        catch (OperationCanceledException)
-        {
-            return false;
-        }
 
-        user.IsInitialized = true;
-        _ = InitializeNonCriticalAsync(user, token);
-        return true;
-    }
+        await userFingerprintService.TryInitializeAsync(user, token).ConfigureAwait(false);
+        await profilePictureService.TryInitializeAsync(user, token).ConfigureAwait(false);
 
-    private async Task<bool> FetchGameRolesAfterLTokenAsync(Task<bool> lTokenPrerequisite, ViewModel.User.User user, CancellationToken ct)
-    {
-        if (!await lTokenPrerequisite.ConfigureAwait(false))
-        {
-            return false;
-        }
-
-        using IServiceScope scope = serviceProvider.CreateScope();
-        return await TrySetUserUserGameRolesAsync(scope.ServiceProvider, user, ct).ConfigureAwait(false);
-    }
-
-    private async Task InitializeNonCriticalAsync(ViewModel.User.User user, CancellationToken token)
-    {
-        try
-        {
-            using CancellationTokenSource cts = CancellationTokenSource.CreateLinkedTokenSource(token);
-            cts.CancelAfter(TimeSpan.FromSeconds(5));
-            CancellationToken ct = cts.Token;
-
-            Task fpTask = userFingerprintService.TryInitializeAsync(user, ct).AsTask();
-            Task profileTask = profilePictureService.TryInitializeAsync(user, ct).AsTask();
-            await Task.WhenAll(fpTask, profileTask).ConfigureAwait(false);
-        }
-        catch
-        {
-        }
+        return user.IsInitialized = true;
     }
 }

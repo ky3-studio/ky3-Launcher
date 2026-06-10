@@ -68,6 +68,15 @@ internal class Response : ICommonResponse<Response>
             case KnownReturnCode.CODE5003:
                 response.Message = SH.WebResponseAccountRisk;
                 break;
+            case KnownReturnCode.DataIsNotPublicForTheUser:
+                response.Message = SH.WebResponseDataNotPublic;
+                break;
+            case KnownReturnCode.TooManyRequests:
+                response.Message = SH.WebResponseTooManyRequests;
+                break;
+            case KnownReturnCode.AccountOrPasswordError:
+                response.Message = SH.WebResponseAccountOrPasswordError;
+                break;
         }
     }
 

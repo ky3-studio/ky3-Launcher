@@ -7,6 +7,7 @@
 // Modified by kyxsan.
 // Licensed under the MIT license.
 
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Input;
 using kyxsan.Core.DependencyInjection.Abstraction;
@@ -29,8 +30,12 @@ internal sealed partial class UserAccountVerificationDialog : ContentDialog, IAi
     private readonly ITaskContext taskContext;
     private readonly IMessenger messenger;
 
+    private const int CooldownSeconds = 60;
+
     private string? ticket;
     private bool isOversea;
+    private DispatcherTimer? countdownTimer;
+    private int remainingSeconds;
 
     [GeneratedConstructor(InitializeComponent = true)]
     public partial UserAccountVerificationDialog(IServiceProvider serviceProvider);
@@ -54,6 +59,10 @@ internal sealed partial class UserAccountVerificationDialog : ContentDialog, IAi
 
     public bool IsLoginEnabled { get; private set; }
 
+    public bool IsSendEnabled { get; private set => SetProperty(ref field, value); } = true;
+
+    public string? SendButtonText { get; private set => SetProperty(ref field, value); } = SH.ViewDialogUserMobileCaptchaSendCaptchaAction;
+
     public string? Aigis { get; set; }
 
     public async ValueTask<bool> TryValidateAsync(string ticket, bool isOversea)
@@ -70,7 +79,12 @@ internal sealed partial class UserAccountVerificationDialog : ContentDialog, IAi
                 return false;
             }
 
-            taskContext.InvokeOnMainThread(() => Email = actionTicketInfo.UserInfo.Email);
+            taskContext.InvokeOnMainThread(() =>
+            {
+                Email = actionTicketInfo.UserInfo.Email;
+                StartCountdown();
+            });
+
             messenger.Send(InfoBarMessage.Information(SH.ViewDialogUserAccountVerificationEmailCaptchaSent));
 
             ContentDialogResult result = await contentDialogFactory.EnqueueAndShowAsync(this).ShowTask.ConfigureAwait(false);
@@ -97,12 +111,13 @@ internal sealed partial class UserAccountVerificationDialog : ContentDialog, IAi
         }
     }
 
-    [Command("SendEmailCaptchaCommand")]
-    private async Task SendEmailCaptchaAsync()
+    private async void OnSendCaptchaClick(object sender, RoutedEventArgs e)
     {
         SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Send captcha", "UserAccountVerificationDialog.Command"));
 
         ArgumentNullException.ThrowIfNull(ticket);
+
+        IsSendEnabled = false;
 
         using (IServiceScope scope = serviceProvider.CreateScope())
         {
@@ -117,8 +132,42 @@ internal sealed partial class UserAccountVerificationDialog : ContentDialog, IAi
             if (ResponseValidator.TryValidate(response, serviceProvider))
             {
                 messenger.Send(InfoBarMessage.Information(SH.ViewDialogUserAccountVerificationEmailCaptchaSent));
-                await Task.Delay(TimeSpan.FromSeconds(10)).ConfigureAwait(false);
+                await taskContext.SwitchToMainThreadAsync();
+                StartCountdown();
+                return;
             }
+        }
+
+        await taskContext.SwitchToMainThreadAsync();
+        IsSendEnabled = true;
+        SendButtonText = SH.ViewDialogUserMobileCaptchaSendCaptchaAction;
+    }
+
+    private void StartCountdown()
+    {
+        remainingSeconds = CooldownSeconds;
+        IsSendEnabled = false;
+        SendButtonText = $"{remainingSeconds}s";
+
+        countdownTimer?.Stop();
+        countdownTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
+        countdownTimer.Tick += OnCountdownTick;
+        countdownTimer.Start();
+    }
+
+    private void OnCountdownTick(object? sender, object e)
+    {
+        remainingSeconds--;
+
+        if (remainingSeconds <= 0)
+        {
+            countdownTimer?.Stop();
+            IsSendEnabled = true;
+            SendButtonText = SH.ViewDialogUserMobileCaptchaSendCaptchaAction;
+        }
+        else
+        {
+            SendButtonText = $"{remainingSeconds}s";
         }
     }
 

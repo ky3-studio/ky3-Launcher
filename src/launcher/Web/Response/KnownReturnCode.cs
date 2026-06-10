@@ -54,6 +54,11 @@ internal enum KnownReturnCode
     CODEN3503 = -3503,
 
     /// <summary>
+    /// 请求过于频繁
+    /// </summary>
+    TooManyRequests = -3006,
+
+    /// <summary>
     /// 二维码已过期
     /// </summary>
     QRLoginExpired = -3501,
@@ -62,6 +67,11 @@ internal enum KnownReturnCode
     /// 需要风险验证(闪验)
     /// </summary>
     RET_NEED_RISK_VERIFY = -3235,
+
+    /// <summary>
+    /// 账号或密码错误
+    /// </summary>
+    AccountOrPasswordError = -3208,
 
     /// <summary>
     /// 验证码已失效，请重新获取

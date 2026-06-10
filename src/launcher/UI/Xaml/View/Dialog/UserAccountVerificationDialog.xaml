@@ -28,8 +28,9 @@
                 Text="{x:Bind Captcha, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             <Button
                 Grid.Column="1"
-                Command="{x:Bind SendEmailCaptchaCommand}"
-                Content="{shuxm:ResourceString Name=ViewDialogUserMobileCaptchaSendCaptchaAction}"/>
+                Click="OnSendCaptchaClick"
+                Content="{x:Bind SendButtonText, Mode=OneWay}"
+                IsEnabled="{x:Bind IsSendEnabled, Mode=OneWay}"/>
         </Grid>
     </StackPanel>
 </ContentDialog>

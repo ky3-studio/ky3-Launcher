@@ -1,5 +1,5 @@
 #define AppName       "ky3 Launcher"
-#define AppVersion    "6.6.2"
+#define AppVersion    "6.6.3"
 #define AppPublisher  "kyxsan Detail Development Team"
 #define AppExe        "ky3launcher.exe"
 #define AppId         "{{8F3A1C2E-7B4D-4E5A-9F6B-2A1D3C4E5F60}"
@@ -53,7 +53,7 @@ AllowNoIcons=yes
 Name: "chs"; MessagesFile: "compiler:ChineseSimplified.isl"
 
 [Tasks]
-Name: "desktopicon";   Description: "创建桌面快捷方式";                         GroupDescription: "附加快捷方式:"; Flags: checkedonce
+Name: "desktopicon";   Description: "创建桌面快捷方式";                         GroupDescription: "附加快捷方式:"
 Name: "addtopath";     Description: "添加到 PATH (重启后生效)";                 GroupDescription: "其他:";          Flags: unchecked
 Name: "fileassoc";     Description: "将 ky3 Launcher 注册为 .ky3 文件的默认打开方式"; GroupDescription: "其他:";          Flags: unchecked
 
@@ -97,6 +97,7 @@ Type: dirifempty;     Name: "{app}"
 var
   GNeedVCRedist: Boolean;
   GNeedWebView2: Boolean;
+  GDesktopIconExists: Boolean;
 
 function IsVCRedistInstalled: Boolean;
 var
@@ -135,8 +136,15 @@ var
   UninstStr: string;
   UninstKey: string;
   ResultCode: Integer;
+  DesktopPath: string;
+  ShortcutPath: string;
 begin
   Result := '';
+  DesktopPath := ExpandConstant('{autodesktop}');
+  ShortcutPath := AddBackslash(DesktopPath) + ExpandConstant('{#AppName}') + '.lnk';
+  GDesktopIconExists := FileExists(ShortcutPath);
+  if GDesktopIconExists and IsTaskSelected('desktopicon') = False then
+    WizardSelectTasks('desktopicon');
   UninstKey := 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\' +
                ExpandConstant('{#SetupSetting("AppId")}') + '_is1';
   if not RegQueryStringValue(HKLM, UninstKey, 'UninstallString', UninstStr) then
@@ -219,6 +227,14 @@ begin
     exit;
   end;
   Result := Pos(';' + Uppercase(ExpandConstant(Param)) + ';', ';' + Uppercase(OrigPath) + ';') = 0;
+end;
+
+procedure RegisterPreviousData(PreviousDataKey: Integer);
+begin
+  if IsTaskSelected('desktopicon') then
+    SetPreviousData(PreviousDataKey, 'desktopicon', '1')
+  else
+    SetPreviousData(PreviousDataKey, 'desktopicon', '0');
 end;
 
 procedure CurUninstallStepChanged(CurUninstallStep: TUninstallStep);

@@ -32,7 +32,7 @@
 		<NoWarn>CS1591</NoWarn>
 		<AppxPackage>false</AppxPackage>
 		<WindowsPackageType>None</WindowsPackageType>
-		<Version>6.6.2</Version>
+		<Version>6.6.3</Version>
 		<PublishAot>False</PublishAot>
 		<PublishTrimmed>False</PublishTrimmed>
 		<AssemblyName>ky3launcher</AssemblyName>
@@ -198,11 +198,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\kyxsan.SourceGeneration\kyxsan.SourceGeneration.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+	  <ProjectReference Include="..\SourceGeneration\SourceGeneration.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Content Include="..\kyxsan.Runner\x64\$(Configuration)\Runner.dll" Condition="Exists('..\kyxsan.Runner\x64\$(Configuration)\Runner.dll')">
+	  <Content Include="..\..\Runner\x64\$(Configuration)\Runner.dll" Condition="Exists('..\..\Runner\x64\$(Configuration)\Runner.dll')">
 	    <Link>Runner.dll</Link>
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Content>

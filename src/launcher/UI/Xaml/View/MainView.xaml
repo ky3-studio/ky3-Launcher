@@ -66,13 +66,11 @@
             </Image.RenderTransform>
         </Image>
 
-        <MediaPlayerElement
+        <WebView2
             x:Name="LauncherBackgroundVideo"
             x:FieldModifier="Public"
             Margin="-25,0,-25,0"
-            Stretch="UniformToFill"
-            AutoPlay="False"
-            AreTransportControlsEnabled="False"
+            DefaultBackgroundColor="Transparent"
             Opacity="0"/>
 
         <Image

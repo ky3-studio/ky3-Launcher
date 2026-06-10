@@ -27,12 +27,12 @@ using System.Net.Http;
 using System.Numerics;
 using System.Security.Cryptography;
 using System.Text;
-using Windows.Media.Core;
-using Windows.Media.Playback;
+using Microsoft.Web.WebView2.Core;
 using Windows.Storage.Streams;
 using Windows.System;
 using Windows.UI;
 using kyxsan.Service.Game;
+using kyxsan.Web.WebView2;
 
 #pragma warning disable CA1826
 
@@ -63,7 +63,7 @@ internal sealed partial class LauncherHomePage : ScopedPage
     private DispatcherTimer? _gameProcessCheckTimer;
     private bool _isLaunchButtonHovered;
     private static bool s_isVideoMode;
-    private MediaPlayer? _mediaPlayer;
+    private bool _videoWebView2Ready;
     private Storyboard? _bgSlideStoryboard;
     private Storyboard? _videoTransitionStoryboard;
     private SpriteVisual? _blurVisual;
@@ -403,23 +403,18 @@ internal sealed partial class LauncherHomePage : ScopedPage
 
     private void StopVideo()
     {
-        MediaPlayer? player = _mediaPlayer;
-        _mediaPlayer = null;
-
         if (_mainView != null)
         {
             _mainView.LauncherBackgroundVideo.Opacity = 0;
             _mainView.LauncherBackgroundTheme.Opacity = 0;
-            try { _mainView.LauncherBackgroundVideo.SetMediaPlayer(null); } catch { }
-        }
-
-        if (player != null)
-        {
-            _ = Task.Run(() =>
+            try
             {
-                try { player.Pause(); } catch { }
-                try { player.Dispose(); } catch { }
-            });
+                if (_videoWebView2Ready && _mainView.LauncherBackgroundVideo.CoreWebView2 is not null)
+                {
+                    _mainView.LauncherBackgroundVideo.CoreWebView2.NavigateToString("<html><body style='background:transparent'></body></html>");
+                }
+            }
+            catch { }
         }
     }
 
@@ -584,17 +579,15 @@ internal sealed partial class LauncherHomePage : ScopedPage
             if (isVideo)
             {
                 StopVideo();
-                _mediaPlayer = new MediaPlayer
+                await EnsureVideoWebView2Async();
+                if (_mainView != null && _videoWebView2Ready)
                 {
-                    IsLoopingEnabled = true,
-                    IsMuted = true,
-                };
-                _mediaPlayer.Source = MediaSource.CreateFromUri(new Uri(customPath));
-                _mainView.LauncherBackgroundVideo.SetMediaPlayer(_mediaPlayer);
-                _mainView.LauncherBackgroundVideo.Opacity = 1;
-                _mainView.LauncherBackgroundImage.Opacity = 0;
-                _mediaPlayer.Play();
-                s_isVideoMode = true;
+                    string videoHtml = BuildVideoHtml(new Uri(customPath).AbsoluteUri);
+                    _mainView.LauncherBackgroundVideo.CoreWebView2.NavigateToString(videoHtml);
+                    _mainView.LauncherBackgroundVideo.Opacity = 1;
+                    _mainView.LauncherBackgroundImage.Opacity = 0;
+                    s_isVideoMode = true;
+                }
             }
             else
             {
@@ -707,6 +700,14 @@ internal sealed partial class LauncherHomePage : ScopedPage
     {
         byte[] hash = MD5.HashData(Encoding.UTF8.GetBytes(imageUrl));
         return Path.Combine(BgCacheDir, $"bg_{Convert.ToHexString(hash)}.cache");
+    }
+
+    private static string GetVideoCachePath(string videoUrl)
+    {
+        byte[] hash = MD5.HashData(Encoding.UTF8.GetBytes(videoUrl));
+        string ext = Path.GetExtension(new Uri(videoUrl).AbsolutePath);
+        if (string.IsNullOrEmpty(ext)) ext = ".webm";
+        return Path.Combine(BgCacheDir, $"bg_{Convert.ToHexString(hash)}{ext}");
     }
 
     private static async Task<BitmapImage?> CreateBitmapFromData(byte[] data)
@@ -837,6 +838,23 @@ internal sealed partial class LauncherHomePage : ScopedPage
                     {
                     }
                 }
+
+                string videoUrl = s_backgroundList[i].VideoUrl;
+                if (!string.IsNullOrEmpty(videoUrl))
+                {
+                    try
+                    {
+                        string videoCachePath = GetVideoCachePath(videoUrl);
+                        if (!File.Exists(videoCachePath))
+                        {
+                            byte[] videoData = await client.GetByteArrayAsync(videoUrl);
+                            File.WriteAllBytes(videoCachePath, videoData);
+                        }
+                    }
+                    catch
+                    {
+                    }
+                }
             }
 
             s_dataInitialized = true;
@@ -861,6 +879,10 @@ internal sealed partial class LauncherHomePage : ScopedPage
                 if (!string.IsNullOrEmpty(bg.ThemeUrl))
                 {
                     validFiles.Add(Path.GetFileName(GetBgImageCachePath(bg.ThemeUrl)));
+                }
+                if (!string.IsNullOrEmpty(bg.VideoUrl))
+                {
+                    validFiles.Add(Path.GetFileName(GetVideoCachePath(bg.VideoUrl)));
                 }
             }
 
@@ -1292,7 +1314,7 @@ internal sealed partial class LauncherHomePage : ScopedPage
         }
     }
 
-    private void PlayCurrentVideo()
+    private async void PlayCurrentVideo()
     {
         if (_mainView == null || s_currentBgIndex < 0 || s_currentBgIndex >= s_backgroundList.Count)
         {
@@ -1308,30 +1330,75 @@ internal sealed partial class LauncherHomePage : ScopedPage
         StopVideo();
         try
         {
-            _mediaPlayer = new MediaPlayer
+            await EnsureVideoWebView2Async();
+            if (_mainView == null || !_videoWebView2Ready || !_isPageActive || !s_isVideoMode)
             {
-                IsLoopingEnabled = true,
-                IsMuted = true,
-            };
-            _mediaPlayer.MediaOpened += (_, _) =>
+                return;
+            }
+
+            string videoSrc;
+            string localPath = GetVideoCachePath(bg.VideoUrl);
+            if (File.Exists(localPath))
             {
-                DispatcherQueue?.TryEnqueue(() =>
+                videoSrc = "https://bgvideo.local/" + Path.GetFileName(localPath);
+            }
+            else
+            {
+                string oldCache = GetBgImageCachePath(bg.VideoUrl);
+                if (File.Exists(oldCache))
                 {
-                    if (_mainView != null && s_isVideoMode)
-                    {
-                        _ = UpdateThemeOverlay(s_currentBgIndex);
-                        AnimateVideoIn();
-                    }
-                });
-            };
-            _mediaPlayer.Source = MediaSource.CreateFromUri(new Uri(bg.VideoUrl));
-            _mainView.LauncherBackgroundVideo.SetMediaPlayer(_mediaPlayer);
-            _mediaPlayer.Play();
+                    try { File.Move(oldCache, localPath); } catch { }
+                }
+
+                videoSrc = File.Exists(localPath)
+                    ? "https://bgvideo.local/" + Path.GetFileName(localPath)
+                    : bg.VideoUrl;
+            }
+
+            string videoHtml = BuildVideoHtml(videoSrc);
+            _mainView.LauncherBackgroundVideo.CoreWebView2.NavigateToString(videoHtml);
+
+            _ = UpdateThemeOverlay(s_currentBgIndex);
+            AnimateVideoIn();
         }
         catch
         {
             StopVideo();
         }
+    }
+
+    private async Task EnsureVideoWebView2Async()
+    {
+        if (_videoWebView2Ready || _mainView == null)
+        {
+            return;
+        }
+
+        try
+        {
+            CoreWebView2Environment env = await CoreWebView2EnvironmentFactory.GetAsync();
+            await _mainView.LauncherBackgroundVideo.EnsureCoreWebView2Async(env);
+
+            _mainView.LauncherBackgroundVideo.CoreWebView2.SetVirtualHostNameToFolderMapping(
+                "bgvideo.local", BgCacheDir, CoreWebView2HostResourceAccessKind.Allow);
+
+            CoreWebView2Settings settings = _mainView.LauncherBackgroundVideo.CoreWebView2.Settings;
+            settings.AreDefaultContextMenusEnabled = false;
+            settings.AreDevToolsEnabled = false;
+            settings.IsStatusBarEnabled = false;
+            settings.IsZoomControlEnabled = false;
+            settings.AreBrowserAcceleratorKeysEnabled = false;
+
+            _videoWebView2Ready = true;
+        }
+        catch
+        {
+        }
+    }
+
+    private static string BuildVideoHtml(string videoSrc)
+    {
+        return "<!DOCTYPE html><html><head><style>*{margin:0;padding:0;overflow:hidden;background:transparent}video{width:100vw;height:100vh;object-fit:cover}</style></head><body><video autoplay loop muted playsinline src=\"" + videoSrc + "\"></video></body></html>";
     }
 
     private void Banner_PointerEntered(object sender, PointerRoutedEventArgs e)

@@ -582,7 +582,11 @@ internal sealed partial class LauncherHomePage : ScopedPage
                 await EnsureVideoWebView2Async();
                 if (_mainView != null && _videoWebView2Ready)
                 {
-                    string videoHtml = BuildVideoHtml(new Uri(customPath).AbsoluteUri);
+                    string dir = Path.GetDirectoryName(customPath)!;
+                    string fileName = Path.GetFileName(customPath);
+                    _mainView.LauncherBackgroundVideo.CoreWebView2.SetVirtualHostNameToFolderMapping(
+                        "bgcustom.local", dir, CoreWebView2HostResourceAccessKind.Allow);
+                    string videoHtml = BuildVideoHtml("https://bgcustom.local/" + Uri.EscapeDataString(fileName));
                     _mainView.LauncherBackgroundVideo.CoreWebView2.NavigateToString(videoHtml);
                     _mainView.LauncherBackgroundVideo.Opacity = 1;
                     _mainView.LauncherBackgroundImage.Opacity = 0;

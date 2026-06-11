@@ -8,10 +8,14 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:shuxc="using:kyxsan.UI.Xaml.Control"
+    xmlns:shuxca="using:kyxsan.UI.Xaml.Control.AutoSuggestBox"
+    xmlns:shuxcc="using:kyxsan.UI.Xaml.Control.Card"
     xmlns:shuxci="using:kyxsan.UI.Xaml.Control.Image"
     xmlns:shuxcp="using:kyxsan.UI.Xaml.Control.Panel"
+    xmlns:shuxct="using:kyxsan.UI.Xaml.Control.TextBlock"
     xmlns:shuxdcs="using:kyxsan.UI.Xaml.Data.Converter.Specialized"
     xmlns:shuxm="using:kyxsan.UI.Xaml.Markup"
+    xmlns:shmm="using:kyxsan.Model.Metadata"
     xmlns:shvap="using:kyxsan.ViewModel.AvatarProperty"
     xmlns:shwga="using:kyxsan.Web.Hoyolab.Takumi.GameRecord.Avatar"
     d:DataContext="{d:DesignInstance shvap:AvatarPropertyViewModel}"
@@ -19,16 +23,209 @@
     mc:Ignorable="d">
 
     <Page.Resources>
-        <cwconv:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
-        <cwconv:BoolToObjectConverter x:Key="BoolToOpacityConverter">
-            <cwconv:BoolToObjectConverter.TrueValue>
-                <x:Double>1</x:Double>
-            </cwconv:BoolToObjectConverter.TrueValue>
-            <cwconv:BoolToObjectConverter.FalseValue>
-                <x:Double>0.5</x:Double>
-            </cwconv:BoolToObjectConverter.FalseValue>
-        </cwconv:BoolToObjectConverter>
-        <shuxdcs:FightPropertyToLocalizedStringConverter x:Key="FightPropertyToLocalizedStringConverter"/>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light">
+                    <shuxdcs:UInt32ToGradientColorConverter
+                        x:Key="CountToGradientColorConverter"
+                        Maximum="#FFFD0093"
+                        Minimum="#FF4B00D9"/>
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Dark">
+                    <shuxdcs:UInt32ToGradientColorConverter
+                        x:Key="CountToGradientColorConverter"
+                        Maximum="#FFFF69BF"
+                        Minimum="#FF9F69FF"/>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+
+            <cwconv:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+            <cwconv:BoolToObjectConverter x:Key="BoolToOpacityConverter">
+                <cwconv:BoolToObjectConverter.TrueValue>
+                    <x:Double>1</x:Double>
+                </cwconv:BoolToObjectConverter.TrueValue>
+                <cwconv:BoolToObjectConverter.FalseValue>
+                    <x:Double>0.5</x:Double>
+                </cwconv:BoolToObjectConverter.FalseValue>
+            </cwconv:BoolToObjectConverter>
+            <shuxdcs:FightPropertyToLocalizedStringConverter x:Key="FightPropertyToLocalizedStringConverter"/>
+            <shuxdcs:FightPropertyToIconConverter x:Key="FightPropertyToIconConverter"/>
+
+        <!--  网格视图技能模板  -->
+        <DataTemplate x:Key="AvatarGridViewSkillTemplate" x:DataType="shvap:SkillView">
+            <shuxcc:VerticalCard>
+                <shuxcc:VerticalCard.Top>
+                    <shuxci:CachedImage
+                        Width="40"
+                        Height="40"
+                        Margin="12"
+                        HorizontalAlignment="Center"
+                        ShowAsMonoChrome="True"
+                        Source="{Binding Icon}"/>
+                </shuxcc:VerticalCard.Top>
+                <shuxcc:VerticalCard.Bottom>
+                    <Viewbox MaxWidth="52" StretchDirection="DownOnly">
+                        <TextBlock Text="{Binding LevelFormatted}"/>
+                    </Viewbox>
+                </shuxcc:VerticalCard.Bottom>
+            </shuxcc:VerticalCard>
+        </DataTemplate>
+
+        <!--  网格视图主模板  -->
+        <DataTemplate x:Key="AvatarGridViewTemplate" x:DataType="shvap:CharacterView">
+            <Grid Style="{ThemeResource GridShimmerStyle}">
+                <Border
+                    Grid.ColumnSpan="3"
+                    Margin="-6"
+                    CornerRadius="{ThemeResource ControlCornerRadius}">
+                    <shuxci:CachedImage
+                        MaxWidth="368"
+                        MaxHeight="101"
+                        VerticalAlignment="Center"
+                        Opacity="0.5"
+                        Source="{Binding NameCard}"
+                        Stretch="UniformToFill"/>
+                </Border>
+                <Border Margin="-6" Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}"/>
+                <Grid
+                    Padding="6"
+                    HorizontalAlignment="Left"
+                    BackgroundSizing="OuterBorderEdge"
+                    ColumnSpacing="6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <shuxcc:VerticalCard Grid.Column="0">
+                        <shuxcc:VerticalCard.Top>
+                            <Grid cw:UIElementExtensions.ClipToBounds="True" CornerRadius="{ThemeResource ControlCornerRadius}">
+                                <shuxc:ItemIcon
+                                    Width="64"
+                                    Height="64"
+                                    Icon="{Binding Icon}"
+                                    Quality="{Binding Rarity}"/>
+                                <Border
+                                    HorizontalAlignment="Stretch"
+                                    VerticalAlignment="Bottom"
+                                    Background="#80000000">
+                                    <StackPanel
+                                        HorizontalAlignment="Center"
+                                        Orientation="Horizontal"
+                                        Spacing="4">
+                                        <Image
+                                            Width="16"
+                                            Height="16"
+                                            Margin="2,0,0,2"
+                                            VerticalAlignment="Center"
+                                            Source="ms-appx:///Resource/Icon/UI_Icon_Fetter.png"/>
+                                        <TextBlock
+                                            Margin="0,0,6,2"
+                                            VerticalAlignment="Center"
+                                            Foreground="#FFFFFFFF"
+                                            Text="{Binding FetterLevel}"/>
+                                    </StackPanel>
+                                </Border>
+                                <Border
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Top"
+                                    Background="#80000000"
+                                    CornerRadius="0,0,0,6">
+                                    <TextBlock
+                                        Margin="6,0,6,2"
+                                        Foreground="#FFFFFFFF"
+                                        Text="{Binding ActivatedConstellationCount}"/>
+                                </Border>
+                            </Grid>
+                        </shuxcc:VerticalCard.Top>
+                        <shuxcc:VerticalCard.Bottom>
+                            <TextBlock Text="{Binding LevelFormatted}"/>
+                        </shuxcc:VerticalCard.Bottom>
+                    </shuxcc:VerticalCard>
+                    <shuxcc:VerticalCard Grid.Column="1">
+                        <shuxcc:VerticalCard.Top>
+                            <Grid cw:UIElementExtensions.ClipToBounds="True" CornerRadius="{ThemeResource ControlCornerRadius}">
+                                <shuxc:ItemIcon
+                                    Width="64"
+                                    Height="64"
+                                    Icon="{Binding WeaponIcon}"
+                                    Quality="{Binding WeaponRarity}"/>
+                                <Border
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Top"
+                                    Background="#80000000"
+                                    CornerRadius="0,0,0,6">
+                                    <TextBlock
+                                        Margin="6,0,6,2"
+                                        Foreground="#FFFFFFFF"
+                                        Text="{Binding WeaponAffixLevelNumber}"/>
+                                </Border>
+                            </Grid>
+                        </shuxcc:VerticalCard.Top>
+                        <shuxcc:VerticalCard.Bottom>
+                            <TextBlock Text="{Binding WeaponLevel}"/>
+                        </shuxcc:VerticalCard.Bottom>
+                    </shuxcc:VerticalCard>
+                    <ItemsControl
+                        Grid.Column="2"
+                        VerticalAlignment="Stretch"
+                        ItemTemplate="{StaticResource AvatarGridViewSkillTemplate}"
+                        ItemsPanel="{StaticResource HorizontalStackPanelSpacing6Template}"
+                        ItemsSource="{Binding Skills}"/>
+                </Grid>
+            </Grid>
+        </DataTemplate>
+
+        <!--  搜索标签模板  -->
+        <DataTemplate x:Key="TokenTemplate" x:DataType="shuxca:SearchToken">
+            <Grid Height="22" VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="24"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Ellipse
+                    Grid.Column="0"
+                    Width="12"
+                    Height="12"
+                    Margin="1,1,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Stretch"
+                    Visibility="{Binding Quality, Converter={StaticResource EmptyObjectToVisibilityConverter}}">
+                    <Ellipse.Fill>
+                        <SolidColorBrush Color="{Binding Quality}"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <shuxci:CachedImage
+                    Grid.Column="0"
+                    Width="20"
+                    Height="20"
+                    Margin="-3,2,7,0"
+                    ShowAsMonoChrome="True"
+                    Source="{Binding IconUri, Mode=OneWay}"
+                    Visibility="{Binding IconUri, Converter={StaticResource EmptyObjectToVisibilityConverter}}"/>
+                <TextBlock
+                    Grid.Column="1"
+                    Height="20"
+                    VerticalAlignment="Center"
+                    Text="{Binding Value}"/>
+            </Grid>
+        </DataTemplate>
+
+        <!--  突破星标模板  -->
+        <DataTemplate x:Key="PromoteArrayTemplate" x:DataType="x:Boolean">
+            <Grid>
+                <BitmapIcon
+                    Width="12"
+                    Foreground="#FFFFFFFF"
+                    UriSource="ms-appx:///Resource/Icon/UI_IconKira.png"
+                    Visibility="{Binding}"/>
+                <BitmapIcon
+                    Width="12"
+                    Foreground="#FF808080"
+                    UriSource="ms-appx:///Resource/Icon/UI_IconKira.png"
+                    Visibility="{Binding Converter={StaticResource BoolToVisibilityRevertConverter}}"/>
+            </Grid>
+        </DataTemplate>
 
         <!--  左侧角色列表模板  -->
         <DataTemplate x:Key="AvatarListViewTemplate" x:DataType="shvap:CharacterView">
@@ -42,7 +239,7 @@
                     Width="48"
                     Height="48"
                     Margin="0,0,12,12"
-                    Source="{Binding SideIcon, Mode=OneWay}"/>
+                    Source="{Binding Icon, Mode=OneWay}"/>
                 <StackPanel Grid.Column="1" VerticalAlignment="Center">
                     <TextBlock
                         Margin="12,0,0,0"
@@ -73,20 +270,19 @@
                             Height="36"
                             Opacity="{Binding IsActived, Converter={StaticResource BoolToOpacityConverter}}"
                             Source="{Binding Icon}"/>
+                        <Image
+                            Width="16"
+                            Height="16"
+                            Source="ms-appx:///Resource/Icon/UI_Icon_Locked.png"
+                            Visibility="{Binding IsActived, Converter={StaticResource BoolToVisibilityRevertConverter}}"/>
                     </Grid>
                 </Button.Content>
                 <Button.Flyout>
                     <Flyout Placement="Bottom">
-                        <StackPanel MaxWidth="320" Spacing="8">
-                            <TextBlock
-                                FontWeight="Bold"
-                                Text="{Binding Name}"
-                                TextWrapping="Wrap"/>
-                            <TextBlock
-                                Opacity="0.7"
-                                Text="{Binding Effect}"
-                                TextWrapping="Wrap"/>
-                        </StackPanel>
+                        <shuxct:DescriptionTextBlock
+                            MaxWidth="320"
+                            Description="{Binding Effect}"
+                            TextStyle="{StaticResource BodyTextBlockStyle}"/>
                     </Flyout>
                 </Button.Flyout>
             </Button>
@@ -94,27 +290,60 @@
 
         <!--  天赋技能模板  -->
         <DataTemplate x:Key="AvatarSkillTemplate" x:DataType="shvap:SkillView">
-            <Grid Margin="0,2,0,0" Padding="4">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="100"/>
-                </Grid.ColumnDefinitions>
-                <shuxci:CachedImage
-                    Grid.Column="0"
-                    Width="36"
-                    Height="36"
-                    Source="{Binding Icon}"/>
-                <TextBlock
-                    Grid.Column="1"
-                    Margin="6,0,0,2"
-                    HorizontalAlignment="Left"
-                    VerticalAlignment="Center"
-                    Foreground="#FFFFFFFF"
-                    Style="{StaticResource BaseTextBlockStyle}">
-                    <Run Text="Lv. "/>
-                    <Run Text="{Binding Level}"/>
-                </TextBlock>
-            </Grid>
+            <Button
+                Margin="0,2,0,0"
+                Padding="4"
+                Background="Transparent"
+                BorderBrush="{x:Null}">
+                <Button.Content>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+                        <shuxci:CachedImage
+                            Grid.Column="0"
+                            Width="36"
+                            Height="36"
+                            Source="{Binding Icon}"/>
+                        <TextBlock
+                            Grid.Column="1"
+                            Margin="6,0,0,2"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Foreground="#FFFFFFFF"
+                            Style="{StaticResource BaseTextBlockStyle}"
+                            Text="{Binding LevelFormatted}"/>
+                    </Grid>
+                </Button.Content>
+                <Button.Flyout>
+                    <Flyout Placement="Left">
+                        <StackPanel MaxWidth="320">
+                            <StackPanel.Resources>
+                                <!--  ReSharper disable Xaml.RedundantResource  -->
+                                <Thickness x:Key="SettingsCardPadding">16</Thickness>
+                                <x:Double x:Key="SettingsCardWrapThreshold">0</x:Double>
+                                <x:Double x:Key="SettingsCardWrapNoIconThreshold">0</x:Double>
+                                <x:Double x:Key="SettingsCardMinHeight">0</x:Double>
+                                <!--  ReSharper restore Xaml.RedundantResource  -->
+                            </StackPanel.Resources>
+                            <shuxct:DescriptionTextBlock Description="{Binding Description}" TextStyle="{StaticResource BodyTextBlockStyle}"/>
+                            <ItemsControl Margin="0,12,0,0" ItemsSource="{Binding Info.Parameters}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate x:DataType="shmm:ParameterDescription">
+                                        <cwcont:SettingsCard
+                                            Margin="0,2,0,0"
+                                            Padding="12,0"
+                                            Header="{Binding Description}">
+                                            <TextBlock Margin="0,8" Text="{Binding Parameter}"/>
+                                        </cwcont:SettingsCard>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
         </DataTemplate>
 
         <!--  角色属性模板  -->
@@ -125,20 +354,27 @@
                 BorderBrush="{ThemeResource ControlStrokeColorDefaultBrush}"
                 BorderThickness="0,1,0,0">
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition/>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="108"/>
                 </Grid.ColumnDefinitions>
+                <shuxci:CachedImage
+                    Width="16"
+                    Height="16"
+                    ShowAsMonoChrome="True"
+                    Source="{Binding PropertyType, Converter={StaticResource FightPropertyToIconConverter}}"/>
                 <TextBlock
-                    Grid.Column="0"
+                    Grid.Column="1"
+                    Margin="16,0,0,0"
                     HorizontalAlignment="Left"
                     Text="{Binding PropertyType, Converter={StaticResource FightPropertyToLocalizedStringConverter}}"/>
                 <TextBlock
-                    Grid.Column="1"
+                    Grid.Column="2"
                     HorizontalAlignment="Right"
                     Text="{Binding Final}"/>
                 <TextBlock
-                    Grid.Column="2"
+                    Grid.Column="3"
                     Margin="8,0,0,0"
                     HorizontalAlignment="Left"
                     Foreground="{StaticResource AvatarPropertyAddValueColorBrush}"
@@ -152,12 +388,34 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock
                     Style="{StaticResource BaseTextBlockStyle}"
                     Text="{Binding PropertyType, Converter={StaticResource FightPropertyToLocalizedStringConverter}}"
                     TextWrapping="NoWrap"/>
                 <TextBlock Grid.Column="1" Text="{Binding Value}"/>
+                <Grid Grid.Column="2" Opacity="1">
+                    <Ellipse
+                        Width="16"
+                        Height="16"
+                        Opacity="0.8"
+                        StrokeThickness="1">
+                        <Ellipse.Stroke>
+                            <SolidColorBrush Color="{Binding Times, Converter={ThemeResource CountToGradientColorConverter}}"/>
+                        </Ellipse.Stroke>
+                    </Ellipse>
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        FontSize="{ThemeResource InfoBadgeValueFontSize}"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="{Binding Times}">
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="{Binding Times, Converter={ThemeResource CountToGradientColorConverter}}"/>
+                        </TextBlock.Foreground>
+                    </TextBlock>
+                </Grid>
             </Grid>
         </DataTemplate>
 
@@ -231,6 +489,7 @@
                     ItemsSource="{Binding SubPropertyList}"/>
             </Grid>
         </DataTemplate>
+        </ResourceDictionary>
     </Page.Resources>
 
     <Grid>
@@ -296,12 +555,41 @@
                         BorderThickness="0"
                         DefaultLabelPosition="Right">
                         <CommandBar.Content>
-                            <TextBlock
-                                Margin="16,8,0,0"
-                                VerticalAlignment="Center"
-                                Style="{StaticResource SubtitleTextBlockStyle}"
-                                Text="{shuxm:ResourceString Name=ViewAvatarPropertyHeader}"/>
+                            <StackPanel Orientation="Horizontal">
+                                <shuxc:LayoutSwitch
+                                    x:Name="ItemsPanelSelector"
+                                    Margin="4,8,0,0"
+                                    LocalSettingKeySuffixForCurrent="AvatarPropertyPage.Characters"/>
+                                <shuxc:SizeRestrictedContentControl Margin="8,8,0,0">
+                                    <ComboBox
+                                        Height="32"
+                                        Padding="12,6,0,7"
+                                        DisplayMemberPath="Name"
+                                        ItemsSource="{Binding SortDescriptionKinds}"
+                                        SelectedItem="{Binding SortDescriptionKind, Mode=TwoWay}"
+                                        Style="{ThemeResource DefaultComboBoxStyle}"/>
+                                </shuxc:SizeRestrictedContentControl>
+                            </StackPanel>
                         </CommandBar.Content>
+                        <AppBarElementContainer>
+                            <shuxca:AutoSuggestTokenBox
+                                Width="600"
+                                Height="44"
+                                Margin="6,-2,6,6"
+                                HorizontalAlignment="Right"
+                                VerticalContentAlignment="Center"
+                                AvailableTokens="{Binding SearchData.AvailableTokens}"
+                                FilterCommand="{Binding FilterCommand}"
+                                ItemsSource="{Binding SearchData.FilterTokens, Mode=TwoWay}"
+                                MaximumTokens="5"
+                                PlaceholderText="{shuxm:ResourceString Name=ViewPageWiKiAvatarAutoSuggestBoxPlaceHolder}"
+                                QueryIcon="{cw:FontIconSource Glyph=&#xE721;}"
+                                Style="{StaticResource DefaultAutoSuggestTokenBoxStyle}"
+                                SuggestedItemTemplate="{StaticResource TokenTemplate}"
+                                SuggestedItemsSource="{Binding SearchData.AvailableTokens.Values}"
+                                Text="{Binding SearchData.FilterToken, Mode=TwoWay}"
+                                TokenItemTemplate="{StaticResource TokenTemplate}"/>
+                        </AppBarElementContainer>
                         <AppBarButton
                             Command="{Binding RefreshCommand}"
                             Icon="{shuxm:FontIcon Glyph=&#xE72C;}"
@@ -310,23 +598,51 @@
                 </Border>
             </Border>
 
-            <!--  SplitView：左侧角色列表 + 右侧详情  -->
+            <!--  SwitchPresenter：网格/列表视图切换  -->
             <Border Grid.Row="1" Margin="16,16,16,16" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
                 <Border Style="{ThemeResource AcrylicBorderCardStyle}">
-                    <SplitView
-                        DisplayMode="Inline"
-                        IsPaneOpen="True"
-                        OpenPaneLength="{StaticResource CompatSplitViewOpenPaneLength}"
-                        PaneBackground="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
-                        <SplitView.Pane>
-                            <ListView
-                                Padding="{ThemeResource ListViewInSplitPanePadding}"
-                                ItemTemplate="{StaticResource AvatarListViewTemplate}"
+                    <cwcont:SwitchPresenter ContentTransitions="{ThemeResource EntranceThemeTransitions}" Value="{Binding ElementName=ItemsPanelSelector, Path=Current, Mode=OneWay}">
+                        <cwcont:Case Value="Grid">
+                            <GridView
+                                Margin="16,16,4,-4"
+                                ItemContainerStyle="{StaticResource LargeGridViewItemStyle}"
+                                ItemTemplate="{StaticResource AvatarGridViewTemplate}"
                                 ItemsSource="{Binding Characters}"
-                                SelectedItem="{Binding SelectedCharacter, Mode=TwoWay}"
-                                SelectionMode="Single"/>
-                        </SplitView.Pane>
-                        <SplitView.Content>
+                                SelectedItem="{Binding Characters.CurrentItem, Mode=TwoWay}"/>
+                        </cwcont:Case>
+                        <cwcont:Case Value="List">
+                            <SplitView
+                                DisplayMode="Inline"
+                                IsPaneOpen="True"
+                                OpenPaneLength="{StaticResource CompatSplitViewOpenPaneLength}"
+                                PaneBackground="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+                                <SplitView.Pane>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <ListView
+                                            Grid.Row="0"
+                                            Padding="{ThemeResource ListViewInSplitPanePadding}"
+                                            ItemTemplate="{StaticResource AvatarListViewTemplate}"
+                                            ItemsSource="{Binding Characters}"
+                                            SelectedItem="{Binding Characters.CurrentItem, Mode=TwoWay}"
+                                            SelectionMode="Single"/>
+                                        <Border
+                                            Grid.Row="1"
+                                            Background="{ThemeResource ControlFillColorSecondaryBrush}"
+                                            BorderBrush="{ThemeResource ControlStrokeColorDefaultBrush}"
+                                            BorderThickness="0,1,0,0">
+                                            <TextBlock
+                                                Margin="0,6"
+                                                HorizontalAlignment="Center"
+                                                Style="{StaticResource CaptionTextBlockStyle}"
+                                                Text="{Binding FormattedTotalAvatarCount}"/>
+                                        </Border>
+                                    </Grid>
+                                </SplitView.Pane>
+                                <SplitView.Content>
                             <Grid>
                                 <!--  加载指示器  -->
                                 <ProgressRing
@@ -366,7 +682,7 @@
                                                     <shuxci:CachedImage
                                                         HorizontalAlignment="Center"
                                                         VerticalAlignment="Center"
-                                                        Source="{Binding SplashImage}"
+                                                        Source="{Binding NameCard}"
                                                         Stretch="UniformToFill"/>
                                                 </cwcont:ConstrainedBox>
 
@@ -400,16 +716,21 @@
                                                                 Foreground="#FFFFFFFF"
                                                                 Style="{StaticResource SubtitleTextBlockStyle}"
                                                                 Text="{Binding Name}"/>
+                                                            <ItemsControl
+                                                                Margin="0,2,0,0"
+                                                                ItemTemplate="{StaticResource PromoteArrayTemplate}"
+                                                                ItemsPanel="{ThemeResource HorizontalStackPanelSpacing2Template}"
+                                                                ItemsSource="{Binding PromoteArray}"/>
                                                             <TextBlock
                                                                 Margin="0,2,0,0"
                                                                 Foreground="#FFFFFFFF"
                                                                 Style="{StaticResource BaseTextBlockStyle}"
                                                                 Text="{Binding LevelFormatted}"/>
                                                             <StackPanel Margin="0,2,0,0" Orientation="Horizontal">
-                                                                <FontIcon
-                                                                    FontSize="14"
-                                                                    Foreground="#FFFF6B6B"
-                                                                    Glyph="&#xEB51;"/>
+                                                                <Image
+                                                                    Width="16"
+                                                                    Height="16"
+                                                                    Source="ms-appx:///Resource/Icon/UI_Icon_Fetter.png"/>
                                                                 <TextBlock
                                                                     Margin="4,0,0,2"
                                                                     VerticalAlignment="Center"
@@ -425,15 +746,57 @@
                                                             <ColumnDefinition/>
                                                             <ColumnDefinition Width="Auto"/>
                                                         </Grid.ColumnDefinitions>
-                                                        <shuxc:ItemIcon
+                                                        <Button
+                                                            Padding="0"
                                                             cw:Effects.Shadow="{ThemeResource CompatCardShadow}"
-                                                            Icon="{Binding WeaponIcon}"
-                                                            Quality="{Binding WeaponRarity}"/>
+                                                            BorderBrush="{x:Null}"
+                                                            BorderThickness="0">
+                                                            <Button.Content>
+                                                                <shuxc:ItemIcon
+                                                                    Icon="{Binding WeaponIcon}"
+                                                                    Quality="{Binding WeaponRarity}"/>
+                                                            </Button.Content>
+                                                            <Button.Flyout>
+                                                                <Flyout Placement="BottomEdgeAlignedLeft">
+                                                                    <StackPanel>
+                                                                        <StackPanel.Resources>
+                                                                            <!--  ReSharper disable Xaml.RedundantResource  -->
+                                                                            <x:Double x:Key="SettingsCardSpacing">3</x:Double>
+                                                                            <x:Double x:Key="SettingsCardMinHeight">0</x:Double>
+                                                                            <x:Double x:Key="SettingsCardWrapThreshold">0</x:Double>
+                                                                            <x:Double x:Key="SettingsCardWrapNoIconThreshold">0</x:Double>
+                                                                            <!--  ReSharper restore Xaml.RedundantResource  -->
+                                                                        </StackPanel.Resources>
+                                                                        <cwcont:SettingsCard
+                                                                            Margin="0,2,0,0"
+                                                                            Padding="12"
+                                                                            Header="{Binding WeaponMainProperty.Name}">
+                                                                            <TextBlock Text="{Binding WeaponMainProperty.Value}"/>
+                                                                        </cwcont:SettingsCard>
+                                                                        <cwcont:SettingsCard
+                                                                            Margin="0,2,0,0"
+                                                                            Padding="12"
+                                                                            Header="{Binding WeaponSubProperty.Name}">
+                                                                            <TextBlock Text="{Binding WeaponSubProperty.Value}"/>
+                                                                        </cwcont:SettingsCard>
+                                                                        <shuxct:DescriptionTextBlock
+                                                                            MaxWidth="320"
+                                                                            Margin="0,12,0,0"
+                                                                            Description="{Binding WeaponAffixDescription}"/>
+                                                                    </StackPanel>
+                                                                </Flyout>
+                                                            </Button.Flyout>
+                                                        </Button>
                                                         <StackPanel Grid.Column="1" Margin="16,0,0,0">
                                                             <TextBlock
                                                                 Foreground="#FFFFFFFF"
                                                                 Style="{StaticResource SubtitleTextBlockStyle}"
                                                                 Text="{Binding WeaponName}"/>
+                                                            <ItemsControl
+                                                                Margin="0,2,0,0"
+                                                                ItemTemplate="{StaticResource PromoteArrayTemplate}"
+                                                                ItemsPanel="{ThemeResource HorizontalStackPanelSpacing2Template}"
+                                                                ItemsSource="{Binding WeaponPromoteArray}"/>
                                                             <TextBlock
                                                                 Margin="0,2,0,0"
                                                                 Foreground="#FFFFFFFF"
@@ -442,11 +805,8 @@
                                                             <TextBlock
                                                                 Margin="0,2,0,0"
                                                                 Foreground="#FFFFFFFF"
-                                                                Style="{StaticResource CaptionTextBlockStyle}">
-                                                                <Run Text="{shuxm:ResourceString Name=ViewPageAvatarPropertyWeaponAffixPrefix}"/>
-                                                                <Run Text="{Binding WeaponAffixLevel}"/>
-                                                                <Run Text="{shuxm:ResourceString Name=ViewPageAvatarPropertyWeaponAffixSuffix}"/>
-                                                            </TextBlock>
+                                                                Style="{StaticResource CaptionTextBlockStyle}"
+                                                                Text="{Binding WeaponAffixFormatted}"/>
                                                         </StackPanel>
                                                     </Grid>
                                                 </StackPanel>
@@ -496,6 +856,101 @@
                                             </Expander>
                                         </Border>
 
+                                        <!--  推荐属性  -->
+                                        <Grid ColumnSpacing="12">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <shuxcc:VerticalCard Grid.Column="0" HorizontalBottomAlignment="Left">
+                                                <shuxcc:VerticalCard.Top>
+                                                    <TextBlock
+                                                        Margin="12"
+                                                        Style="{ThemeResource CaptionTextBlockStyle}"
+                                                        Text="{shuxm:ResourceString Name=UIViewPageAvatarPropertyRecommendedSandProperties}"/>
+                                                </shuxcc:VerticalCard.Top>
+                                                <shuxcc:VerticalCard.Bottom>
+                                                    <ItemsControl
+                                                        Margin="12"
+                                                        VerticalAlignment="Center"
+                                                        ItemsPanel="{StaticResource WrapPanelSpacing4Template}"
+                                                        ItemsSource="{Binding RecommendedSandProperties}"/>
+                                                </shuxcc:VerticalCard.Bottom>
+                                            </shuxcc:VerticalCard>
+                                            <Image
+                                                Grid.Column="0"
+                                                Width="48"
+                                                Height="48"
+                                                HorizontalAlignment="Right"
+                                                VerticalAlignment="Center"
+                                                Source="ms-appx:///Resource/Icon/UI_Icon_RelicType3.png"/>
+
+                                            <shuxcc:VerticalCard Grid.Column="1" HorizontalBottomAlignment="Left">
+                                                <shuxcc:VerticalCard.Top>
+                                                    <TextBlock
+                                                        Margin="12"
+                                                        Style="{ThemeResource CaptionTextBlockStyle}"
+                                                        Text="{shuxm:ResourceString Name=UIViewPageAvatarPropertyRecommendedGobletProperties}"/>
+                                                </shuxcc:VerticalCard.Top>
+                                                <shuxcc:VerticalCard.Bottom>
+                                                    <ItemsControl
+                                                        Margin="12"
+                                                        VerticalAlignment="Center"
+                                                        ItemsPanel="{StaticResource WrapPanelSpacing4Template}"
+                                                        ItemsSource="{Binding RecommendedGobletProperties}"/>
+                                                </shuxcc:VerticalCard.Bottom>
+                                            </shuxcc:VerticalCard>
+                                            <Image
+                                                Grid.Column="1"
+                                                Width="48"
+                                                Height="48"
+                                                HorizontalAlignment="Right"
+                                                VerticalAlignment="Center"
+                                                Source="ms-appx:///Resource/Icon/UI_Icon_RelicType4.png"/>
+
+                                            <shuxcc:VerticalCard Grid.Column="2" HorizontalBottomAlignment="Left">
+                                                <shuxcc:VerticalCard.Top>
+                                                    <TextBlock
+                                                        Margin="12"
+                                                        Style="{ThemeResource CaptionTextBlockStyle}"
+                                                        Text="{shuxm:ResourceString Name=UIViewPageAvatarPropertyRecommendedCircletProperties}"/>
+                                                </shuxcc:VerticalCard.Top>
+                                                <shuxcc:VerticalCard.Bottom>
+                                                    <ItemsControl
+                                                        Margin="12"
+                                                        VerticalAlignment="Center"
+                                                        ItemsPanel="{StaticResource WrapPanelSpacing4Template}"
+                                                        ItemsSource="{Binding RecommendedCircletProperties}"/>
+                                                </shuxcc:VerticalCard.Bottom>
+                                            </shuxcc:VerticalCard>
+                                            <Image
+                                                Grid.Column="2"
+                                                Width="48"
+                                                Height="48"
+                                                HorizontalAlignment="Right"
+                                                VerticalAlignment="Center"
+                                                Source="ms-appx:///Resource/Icon/UI_Icon_RelicType5.png"/>
+
+                                            <shuxcc:VerticalCard Grid.Column="3" HorizontalBottomAlignment="Left">
+                                                <shuxcc:VerticalCard.Top>
+                                                    <TextBlock
+                                                        Margin="12"
+                                                        Style="{ThemeResource CaptionTextBlockStyle}"
+                                                        Text="{shuxm:ResourceString Name=UIViewPageAvatarPropertyRecommendedAppendProperties}"/>
+                                                </shuxcc:VerticalCard.Top>
+                                                <shuxcc:VerticalCard.Bottom>
+                                                    <ItemsControl
+                                                        Margin="12"
+                                                        VerticalAlignment="Center"
+                                                        ItemsPanel="{StaticResource WrapPanelSpacing4Template}"
+                                                        ItemsSource="{Binding RecommendedSubProperties}"/>
+                                                </shuxcc:VerticalCard.Bottom>
+                                            </shuxcc:VerticalCard>
+                                        </Grid>
+
                                         <!--  圣遗物网格  -->
                                         <ItemsControl ItemTemplate="{StaticResource AvatarReliquaryTemplate}" ItemsSource="{Binding Relics}">
                                             <ItemsControl.ItemsPanel>
@@ -513,6 +968,8 @@
                             </Grid>
                         </SplitView.Content>
                     </SplitView>
+                        </cwcont:Case>
+                    </cwcont:SwitchPresenter>
                 </Border>
             </Border>
         </Grid>

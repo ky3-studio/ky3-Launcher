@@ -8,18 +8,25 @@
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.WinUI.Collections;
 using kyxsan.Core.DependencyInjection.Abstraction;
 using kyxsan.Core.Logging;
+using kyxsan.Core.Setting;
+using kyxsan.Model;
 using kyxsan.Model.Primitive;
+using kyxsan.Service;
 using kyxsan.Service.Metadata;
 using kyxsan.Service.Metadata.ContextAbstraction;
 using kyxsan.Service.Notification;
 using kyxsan.Service.User;
+using kyxsan.UI.Xaml.Control.AutoSuggestBox;
+using kyxsan.UI.Xaml.Data;
 using kyxsan.ViewModel.User;
 using kyxsan.Web.Hoyolab.Takumi.GameRecord;
 using kyxsan.Web.Hoyolab.Takumi.GameRecord.Avatar;
 using kyxsan.Web.Response;
-using System.Collections.ObjectModel;
+using System.Collections.Immutable;
+using System.Globalization;
 
 namespace kyxsan.ViewModel.AvatarProperty;
 
@@ -39,7 +46,7 @@ internal sealed partial class AvatarPropertyViewModel : Abstraction.ViewModel, I
     [GeneratedConstructor]
     public partial AvatarPropertyViewModel(IServiceProvider serviceProvider);
 
-    public ObservableCollection<CharacterView>? Characters
+    public IAdvancedCollectionView<CharacterView>? Characters
     {
         get;
         set
@@ -49,13 +56,30 @@ internal sealed partial class AvatarPropertyViewModel : Abstraction.ViewModel, I
     }
 
     [ObservableProperty]
-    public partial CharacterView? SelectedCharacter { get; set; }
-
-    [ObservableProperty]
     public partial CharacterDetailView? CharacterDetail { get; set; }
 
     [ObservableProperty]
     public partial bool IsLoadingDetail { get; set; }
+
+    [ObservableProperty]
+    public partial SearchData? SearchData { get; set; }
+
+    public string FormattedTotalAvatarCount { get => SH.FormatViewModelAvatarPropertyTotalAvatarCountHint(Characters?.Count ?? 0); }
+
+    public ImmutableArray<NameValue<AvatarPropertySortDescriptionKind>> SortDescriptionKinds { get; } = ImmutableCollectionsNameValue.FromEnum<AvatarPropertySortDescriptionKind>(static type => type.GetLocalizedDescription(SH.ResourceManager, CultureInfo.CurrentCulture) ?? string.Empty);
+
+    public NameValue<AvatarPropertySortDescriptionKind>? SortDescriptionKind
+    {
+        get => field ??= Selection.Initialize(SortDescriptionKinds, UnsafeLocalSetting.Get(SettingKeys.AvatarPropertySortDescriptionKind, AvatarPropertySortDescriptionKind.Default));
+        set
+        {
+            if (value is not null && SetProperty(ref field, value))
+            {
+                UnsafeLocalSetting.Set(SettingKeys.AvatarPropertySortDescriptionKind, value.Value);
+                PrivateSortCharacters();
+            }
+        }
+    }
 
     public void Receive(UserAndUidChangedMessage message)
     {
@@ -77,9 +101,11 @@ internal sealed partial class AvatarPropertyViewModel : Abstraction.ViewModel, I
             return false;
         }
 
+        metadataContext = await metadataService.GetContextAsync<AvatarPropertyMetadataContext>(token).ConfigureAwait(false);
+        SearchData searchData = SearchData.CreateForAvatarProperty();
+
         if (await userService.GetCurrentUserAndUidAsync().ConfigureAwait(false) is { } userAndUid)
         {
-            metadataContext = await metadataService.GetContextAsync<AvatarPropertyMetadataContext>(token).ConfigureAwait(false);
             await LoadCharacterListAsync(userAndUid).ConfigureAwait(false);
         }
         else
@@ -87,14 +113,17 @@ internal sealed partial class AvatarPropertyViewModel : Abstraction.ViewModel, I
             messenger.Send(InfoBarMessage.Warning(SH.MustSelectUserAndUid));
         }
 
+        await taskContext.SwitchToMainThreadAsync();
+        SearchData = searchData;
+
         return true;
     }
 
-    partial void OnSelectedCharacterChanged(CharacterView? value)
+    private void OnCurrentCharacterChanged(object? sender, object e)
     {
-        if (value is not null)
+        if (Characters?.CurrentItem is { } current)
         {
-            LoadCharacterDetailAsync(value.Id).SafeForget();
+            LoadCharacterDetailAsync(current.Id).SafeForget();
         }
     }
 
@@ -134,21 +163,53 @@ internal sealed partial class AvatarPropertyViewModel : Abstraction.ViewModel, I
                 return;
             }
 
-            ObservableCollection<CharacterView> characters = [];
+            List<CharacterView> characters = [];
             foreach (Character apiChar in wrapper.List)
             {
                 if (metadataContext.IdAvatarMap.TryGetValue(apiChar.Id, out Model.Metadata.Avatar.Avatar? metaAvatar))
                 {
-                    characters.Add(new CharacterView(apiChar, metaAvatar));
+                    metadataContext.IdWeaponMap.TryGetValue(apiChar.Weapon.Id, out Model.Metadata.Weapon.Weapon? metaWeapon);
+                    characters.Add(new CharacterView(apiChar, metaAvatar, metaWeapon));
+                }
+            }
+
+            // Batch-fetch detail for all characters to get skills
+            Response<ListWrapper<DetailedCharacter>> detailResponse;
+            using (await EnterCriticalSectionAsync().ConfigureAwait(false))
+            {
+                detailResponse = await gameRecordClient
+                    .GetCharacterDetailAsync(userAndUid, wrapper.List.SelectAsArray(static c => c.Id))
+                    .ConfigureAwait(false);
+            }
+
+            if (ResponseValidator.TryValidate(detailResponse, serviceProvider, out ListWrapper<DetailedCharacter>? detailWrapper))
+            {
+                foreach (DetailedCharacter detail in detailWrapper.List)
+                {
+                    CharacterView? characterView = characters.Find(c => c.Id == detail.Base.Id);
+                    if (characterView is not null && metadataContext.IdAvatarMap.TryGetValue(detail.Base.Id, out Model.Metadata.Avatar.Avatar? detailMetaAvatar))
+                    {
+                        characterView.SetSkills(detail.Skills, detailMetaAvatar);
+                    }
                 }
             }
 
             await taskContext.SwitchToMainThreadAsync();
-            Characters = characters;
+
+            if (Characters is not null)
+            {
+                Characters.CurrentChanged -= OnCurrentCharacterChanged;
+            }
+
+            IAdvancedCollectionView<CharacterView> view = characters.AsAdvancedCollectionView();
+            Characters = view;
+            view.CurrentChanged += OnCurrentCharacterChanged;
+            OnPropertyChanged(nameof(FormattedTotalAvatarCount));
+            PrivateSortCharacters();
 
             if (characters.Count > 0)
             {
-                SelectedCharacter = characters[0];
+                view.MoveCurrentToFirst();
             }
         }
         catch (OperationCanceledException)
@@ -206,7 +267,7 @@ internal sealed partial class AvatarPropertyViewModel : Abstraction.ViewModel, I
                 return;
             }
 
-            CharacterDetailView detailView = new(detail, metaAvatar, metaWeapon);
+            CharacterDetailView detailView = new(detail, metaAvatar, metaWeapon, metadataContext);
 
             await taskContext.SwitchToMainThreadAsync();
             CharacterDetail = detailView;
@@ -218,6 +279,45 @@ internal sealed partial class AvatarPropertyViewModel : Abstraction.ViewModel, I
         {
             await taskContext.SwitchToMainThreadAsync();
             IsLoadingDetail = false;
+        }
+    }
+
+    private void PrivateSortCharacters()
+    {
+        ArgumentNullException.ThrowIfNull(SortDescriptionKind);
+        if (Characters is not { } characters)
+        {
+            return;
+        }
+
+        using (characters.DeferRefresh())
+        {
+            characters.SortDescriptions.Clear();
+            foreach (ref readonly SortDescription sd in AvatarPropertySortDescriptions.Get(SortDescriptionKind.Value).AsSpan())
+            {
+                characters.SortDescriptions.Add(sd);
+            }
+        }
+
+        characters.MoveCurrentToFirst();
+    }
+
+    [Command("FilterCommand")]
+    private void ApplyFilter()
+    {
+        SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Filter", "AvatarPropertyViewModel.Command"));
+
+        if (Characters is null)
+        {
+            return;
+        }
+
+        Characters.Filter = CharacterViewFilter.Compile(SearchData);
+        OnPropertyChanged(nameof(FormattedTotalAvatarCount));
+
+        if (Characters.CurrentItem is null)
+        {
+            Characters.MoveCurrentToFirst();
         }
     }
 }

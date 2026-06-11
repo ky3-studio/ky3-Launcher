@@ -7,6 +7,8 @@
 // Modified by kyxsan.
 // Licensed under the MIT license.
 
+using kyxsan.Model.Intrinsic;
+using kyxsan.Model.Metadata;
 using kyxsan.Model.Metadata.Avatar;
 using kyxsan.Model.Metadata.Weapon;
 using kyxsan.Model.Primitive;
@@ -18,9 +20,15 @@ namespace kyxsan.ViewModel.AvatarProperty;
 
 internal sealed class AvatarPropertyMetadataContext : IMetadataContext,
     IMetadataDictionaryIdAvatarWithPlayersSource,
-    IMetadataDictionaryIdWeaponSource
+    IMetadataDictionaryIdWeaponSource,
+    IMetadataDictionaryLevelWeaponGrowCurveSource,
+    IMetadataDictionaryIdDictionaryLevelWeaponPromoteSource
 {
     public ImmutableDictionary<AvatarId, Avatar> IdAvatarMap { get; set; } = default!;
 
     public ImmutableDictionary<WeaponId, Weapon> IdWeaponMap { get; set; } = default!;
+
+    public ImmutableDictionary<Level, TypeValueCollection<GrowCurveType, float>> LevelDictionaryWeaponGrowCurveMap { get; set; } = default!;
+
+    public ImmutableDictionary<PromoteId, ImmutableDictionary<PromoteLevel, Promote>> IdDictionaryWeaponLevelPromoteMap { get; set; } = default!;
 }

@@ -75,11 +75,10 @@ internal sealed partial class HoyoPlayPassportClientOversea : IHoyoPlayPassportC
 
     public async ValueTask<(string? Aigis, string? Risk, Response<LoginResult> Response)> LoginByPasswordAsync(string account, string password, string? aigis, string? verify, CancellationToken token = default)
     {
-        Dictionary<string, object> data = new()
+        Dictionary<string, string> data = new()
         {
             ["account"] = Encrypt(account),
             ["password"] = Encrypt(password),
-            ["token_type"] = 2,
         };
 
         HttpRequestMessageBuilder builder = httpRequestMessageBuilderFactory.Create()

@@ -25,7 +25,7 @@ internal static class HoyolabOptions
 
     public const string MobileUserAgentOversea = $"Mozilla/5.0 (Linux; Android 15) Mobile miHoYoBBSOversea/{SaltConstants.OSVersion}";
 
-    public const string HoyoPlayUserAgent = "HYPContainer/1.7.3.261 (windows 10)";
+    public const string HoyoPlayUserAgent = "HYPContainer/1.1.4.133";
 
     public const string ToolVersion = "v4.2.2-ys";
 

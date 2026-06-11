@@ -145,12 +145,15 @@ internal sealed partial class UserViewModel : ObservableObject
             UserAccountPasswordDialog dialog = await contentDialogFactory
                 .CreateInstanceAsync<UserAccountPasswordDialog>(scope.ServiceProvider)
                 .ConfigureAwait(false);
+
             ValueResult<bool, LoginResult?> result = await dialog.LoginAsync(true).ConfigureAwait(false);
 
             if (result.TryGetValue(out LoginResult? loginResult))
             {
                 Cookie stokenV2 = Cookie.FromLoginResult(loginResult);
-                (UserOptionResultKind optionResult, string? uid) = await userService.ProcessInputCookieAsync(InputCookie.CreateForDeviceFpInference(stokenV2, true)).ConfigureAwait(false);
+                (UserOptionResultKind optionResult, string? uid) = await userService
+                    .ProcessInputCookieAsync(InputCookie.CreateForDeviceFpInference(stokenV2, true))
+                    .ConfigureAwait(false);
                 HandleUserOptionResult(optionResult, uid);
             }
         }

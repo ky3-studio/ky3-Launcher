@@ -7,11 +7,16 @@
 // Modified by kyxsan.
 // Licensed under the MIT license.
 
+using kyxsan.Model;
 using kyxsan.Model.Intrinsic;
+using kyxsan.Model.Metadata;
 using kyxsan.Model.Metadata.Converter;
+using kyxsan.Model.Metadata.Weapon;
 using kyxsan.Model.Primitive;
+using kyxsan.ViewModel.Wiki;
 using kyxsan.Web.Hoyolab.Takumi.GameRecord.Avatar;
 using System.Collections.Immutable;
+using System.Runtime.InteropServices;
 using MetaAvatar = kyxsan.Model.Metadata.Avatar.Avatar;
 using MetaWeapon = kyxsan.Model.Metadata.Weapon.Weapon;
 
@@ -19,7 +24,7 @@ namespace kyxsan.ViewModel.AvatarProperty;
 
 internal sealed class CharacterDetailView
 {
-    public CharacterDetailView(DetailedCharacter detail, MetaAvatar metaAvatar, MetaWeapon metaWeapon)
+    public CharacterDetailView(DetailedCharacter detail, MetaAvatar metaAvatar, MetaWeapon metaWeapon, AvatarPropertyMetadataContext metadataContext)
     {
         Name = detail.Base.Name;
         Level = detail.Base.Level;
@@ -28,9 +33,13 @@ internal sealed class CharacterDetailView
         Rarity = detail.Base.Rarity;
         Fetter = detail.Base.Fetter;
         ActivedConstellationNum = detail.Base.ActivedConstellationNum;
+        PromoteArray = BuildPromoteArrayFromLevel((uint)detail.Base.Level);
 
         SplashImage = GachaAvatarImgConverter.IconNameToUri(metaAvatar.Icon);
         Icon = AvatarIconConverter.IconNameToUri(metaAvatar.Icon);
+        NameCard = metaAvatar.NameCard is { PicturePrefix.Length: > 0 } nc
+            ? AvatarNameCardPicConverter.IconNameToUri(nc.PicturePrefix)
+            : SplashImage;
 
         Constellations = detail.Constellations;
         Skills = BuildSkillViews(detail.Skills, metaAvatar);
@@ -41,9 +50,42 @@ internal sealed class CharacterDetailView
         WeaponLevel = detail.Weapon.Level;
         WeaponLevelFormatted = LevelFormat.Format(detail.Weapon.Level);
         WeaponAffixLevel = detail.Weapon.AffixLevel;
+        WeaponAffixFormatted = SH.FormatModelBindingAvatarPropertyWeaponAffix(detail.Weapon.AffixLevel);
+        WeaponPromoteArray = BuildPromoteArray(detail.Weapon.PromoteLevel);
+
+        WeaponAffixDescription = string.Empty;
+        if (metaWeapon.Affix is { Descriptions.Length: > 0 } affix)
+        {
+            int affixIndex = (int)detail.Weapon.AffixLevel - 1;
+            if (affixIndex >= 0 && affixIndex < affix.Descriptions.Length)
+            {
+                WeaponAffixDescription = affix.Descriptions[affixIndex].Description;
+            }
+        }
+
+        // Weapon main/sub properties
+        BaseValueInfoMetadataContext weaponBaseValueContext = new()
+        {
+            GrowCurveMap = metadataContext.LevelDictionaryWeaponGrowCurveMap,
+            PromoteMap = metadataContext.IdDictionaryWeaponLevelPromoteMap.GetValueOrDefault(metaWeapon.PromoteId),
+        };
+
+        ImmutableArray<NameValue<string>> weaponBaseValues = BaseValueInfoConverter.ToNameValues(
+            metaWeapon.GrowCurves.ToPropertyCurveValues(),
+            detail.Weapon.Level,
+            detail.Weapon.PromoteLevel,
+            weaponBaseValueContext);
+
+        WeaponMainProperty = weaponBaseValues.Length > 0 ? weaponBaseValues[0] : null;
+        WeaponSubProperty = weaponBaseValues.Length > 1 ? weaponBaseValues[1] : null;
 
         Properties = detail.SelectedProperties;
         Relics = detail.Relics;
+
+        RecommendedSandProperties = BuildRecommendedPropertyStrings(detail.RecommendRelicProperty?.RecommendProperties?.SandMainPropertyList ?? []);
+        RecommendedGobletProperties = BuildRecommendedPropertyStrings(detail.RecommendRelicProperty?.RecommendProperties?.GobletMainPropertyList ?? []);
+        RecommendedCircletProperties = BuildRecommendedPropertyStrings(detail.RecommendRelicProperty?.RecommendProperties?.CircletMainPropertyList ?? []);
+        RecommendedSubProperties = BuildRecommendedPropertyStrings(detail.RecommendRelicProperty?.RecommendProperties?.SubPropertyList ?? []);
     }
 
     public string Name { get; }
@@ -60,7 +102,11 @@ internal sealed class CharacterDetailView
 
     public int ActivedConstellationNum { get; }
 
+    public ImmutableArray<bool> PromoteArray { get; }
+
     public Uri SplashImage { get; }
+
+    public Uri NameCard { get; }
 
     public Uri Icon { get; }
 
@@ -80,52 +126,98 @@ internal sealed class CharacterDetailView
 
     public uint WeaponAffixLevel { get; }
 
+    public string WeaponAffixFormatted { get; }
+
+    public string WeaponAffixDescription { get; }
+
+    public NameValue<string>? WeaponMainProperty { get; }
+
+    public NameValue<string>? WeaponSubProperty { get; }
+
+    public ImmutableArray<bool> WeaponPromoteArray { get; }
+
     public ImmutableArray<BaseProperty> Properties { get; }
 
     public ImmutableArray<Reliquary> Relics { get; }
 
+    public ImmutableArray<string?> RecommendedSandProperties { get; }
+
+    public ImmutableArray<string?> RecommendedGobletProperties { get; }
+
+    public ImmutableArray<string?> RecommendedCircletProperties { get; }
+
+    public ImmutableArray<string?> RecommendedSubProperties { get; }
+
+    private static ImmutableArray<bool> BuildPromoteArray(PromoteLevel promoteLevel)
+    {
+        bool[] promoteArray = new bool[6];
+        promoteArray.AsSpan(0, (int)(uint)promoteLevel).Fill(true);
+        return ImmutableCollectionsMarshal.AsImmutableArray(promoteArray);
+    }
+
+    private static ImmutableArray<bool> BuildPromoteArrayFromLevel(uint level)
+    {
+        int promote = level switch
+        {
+            > 80 => 6,
+            > 70 => 5,
+            > 60 => 4,
+            > 50 => 3,
+            > 40 => 2,
+            > 20 => 1,
+            _ => 0,
+        };
+
+        bool[] promoteArray = new bool[6];
+        promoteArray.AsSpan(0, promote).Fill(true);
+        return ImmutableCollectionsMarshal.AsImmutableArray(promoteArray);
+    }
+
     private static ImmutableArray<SkillView> BuildSkillViews(ImmutableArray<Skill> apiSkills, MetaAvatar metaAvatar)
     {
-        ImmutableArray<SkillView>.Builder builder = ImmutableArray.CreateBuilder<SkillView>(apiSkills.Length);
+        ImmutableArray<Model.Metadata.Avatar.ProudSkill> proudSkills = metaAvatar.SkillDepot.CompositeSkillsNoInherents;
+        ImmutableArray<SkillView>.Builder builder = ImmutableArray.CreateBuilder<SkillView>(proudSkills.Length);
 
-        foreach (Skill apiSkill in apiSkills)
+        foreach (Model.Metadata.Avatar.ProudSkill proudSkill in proudSkills)
         {
-            string icon = string.Empty;
-            string name = string.Empty;
+            SkillLevel level = (SkillLevel)1U;
+            SkillType skillType = default;
 
-            foreach (Model.Metadata.Avatar.ProudSkill metaSkill in metaAvatar.SkillDepot.CompositeSkills)
+            foreach (Skill apiSkill in apiSkills)
             {
-                if (metaSkill.Id == apiSkill.SkillId)
+                if (apiSkill.SkillId == proudSkill.Id)
                 {
-                    icon = metaSkill.Icon;
-                    name = metaSkill.Name;
+                    level = apiSkill.Level;
+                    skillType = apiSkill.SkillType;
                     break;
                 }
             }
 
-            if (string.IsNullOrEmpty(icon))
-            {
-                foreach (Model.Metadata.Avatar.Skill talent in metaAvatar.SkillDepot.Talents)
-                {
-                    if (talent.Id == apiSkill.SkillId)
-                    {
-                        icon = talent.Icon;
-                        name = talent.Name;
-                        break;
-                    }
-                }
-            }
+            LevelParameters<string, ParameterDescription> info = DescriptionsParametersDescriptor.Convert(proudSkill.Proud, (uint)level);
 
             builder.Add(new SkillView
             {
-                Name = name,
-                Icon = SkillIconConverter.IconNameToUri(icon),
-                Level = apiSkill.Level,
-                SkillType = apiSkill.SkillType,
+                Name = proudSkill.Name,
+                Icon = SkillIconConverter.IconNameToUri(proudSkill.Icon),
+                Level = level,
+                LevelFormatted = LevelFormat.Format((uint)level),
+                SkillType = skillType,
+                Description = proudSkill.Description,
+                Info = info,
             });
         }
 
         return builder.ToImmutable();
+    }
+
+    private static ImmutableArray<string?> BuildRecommendedPropertyStrings(ImmutableArray<FightProperty> properties)
+    {
+        if (properties.IsDefaultOrEmpty)
+        {
+            return [];
+        }
+
+        return properties.SelectAsArray(static p => p.GetLocalizedDescription(SH.ResourceManager));
     }
 }
 
@@ -137,5 +229,11 @@ internal sealed class SkillView
 
     public required SkillLevel Level { get; init; }
 
+    public required string LevelFormatted { get; init; }
+
     public required SkillType SkillType { get; init; }
+
+    public required string Description { get; init; }
+
+    public required LevelParameters<string, ParameterDescription> Info { get; init; }
 }

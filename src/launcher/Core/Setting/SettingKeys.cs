@@ -28,6 +28,7 @@ internal static class SettingKeys
     // Globalization
     public const string PrimaryLanguage              = "kyxsan::Globalization::PrimaryLanguage";
     public const string AnnouncementRegion           = "kyxsan::Globalization::Region::Announcement";
+    public const string CalendarServerTimeZoneOffset  = "kyxsan::Calendar::ServerTimeZoneOffset";
     public const string AnnouncementSeenIds          = "kyxsan::Announcement::SeenIds";
     public const string ClientRegistered             = "kyxsan::Backend::ClientRegistered";
     public const string ClientLastHeartbeatDate      = "kyxsan::Backend::ClientLastHeartbeatDate";

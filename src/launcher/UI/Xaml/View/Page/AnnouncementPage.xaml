@@ -11,11 +11,13 @@
     xmlns:shuxb="using:kyxsan.UI.Xaml.Behavior"
     xmlns:shuxba="using:kyxsan.UI.Xaml.Behavior.Action"
     xmlns:shuxc="using:kyxsan.UI.Xaml.Control"
+    xmlns:shuxcc="using:kyxsan.UI.Xaml.Control.Card"
     xmlns:shuxci="using:kyxsan.UI.Xaml.Control.Image"
     xmlns:shuxcp="using:kyxsan.UI.Xaml.Control.Panel"
     xmlns:shuxm="using:kyxsan.UI.Xaml.Markup"
     xmlns:shuxma="using:kyxsan.UI.Xaml.Media.Animation"
     xmlns:shuxvww="using:kyxsan.UI.Xaml.View.Window.WebView2"
+    xmlns:shvc="using:kyxsan.ViewModel.Calendar"
     xmlns:shvh="using:kyxsan.ViewModel.Home"
     xmlns:shwhhca="using:kyxsan.Web.Hoyolab.Hk4e.Common.Announcement"
     d:DataContext="{d:DesignInstance shvh:AnnouncementViewModel}"
@@ -152,6 +154,137 @@
         <Border Background="#40000000"/>
         <ScrollViewer Padding="0" Style="{StaticResource DefaultScrollViewerStyle}">
             <StackPanel Padding="16" Spacing="16">
+
+                <!--  Calendar  -->
+                <Border
+                    cw:Effects.Shadow="{ThemeResource CompatCardShadow}"
+                    Visibility="{Binding WeekDays, Converter={StaticResource EmptyObjectToVisibilityConverter}}">
+                    <Border Padding="12" Style="{ThemeResource AcrylicBorderCardStyle}">
+                        <Grid RowSpacing="6">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <cww:Segmented
+                                Grid.Row="0"
+                                Height="48"
+                                HorizontalAlignment="Stretch"
+                                ItemsSource="{Binding WeekDays}"
+                                Style="{ThemeResource DefaultSegmentedStyle}">
+                                <cww:Segmented.ItemTemplate>
+                                    <DataTemplate x:DataType="shvc:CalendarDay">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+                                            <TextBlock
+                                                Grid.Row="0"
+                                                HorizontalAlignment="Center"
+                                                Text="{Binding DayInMonth}"/>
+                                            <TextBlock
+                                                Grid.Row="1"
+                                                HorizontalAlignment="Center"
+                                                Opacity="0.7"
+                                                Style="{StaticResource CaptionTextBlockStyle}"
+                                                Text="{Binding DayName}"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </cww:Segmented.ItemTemplate>
+                            </cww:Segmented>
+
+                            <Grid
+                                Grid.Row="1"
+                                DataContext="{Binding WeekDays.CurrentItem, FallbackValue={x:Null}}"
+                                RowSpacing="6">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+
+                                <!--  Birthday avatars  -->
+                                <ItemsControl
+                                    Grid.Row="0"
+                                    HorizontalAlignment="Left"
+                                    ItemsPanel="{ThemeResource WrapPanelSpacing6Template}"
+                                    ItemsSource="{Binding BirthDayAvatars}"
+                                    Visibility="{Binding BirthDayAvatars.IsEmpty, Converter={StaticResource BoolToVisibilityRevertConverter}}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <shuxcc:HorizontalCard>
+                                                <shuxcc:HorizontalCard.Left>
+                                                    <shuxc:ItemIcon
+                                                        Width="32"
+                                                        Height="32"
+                                                        Icon="{Binding Icon}"
+                                                        Quality="{Binding Quality}"/>
+                                                </shuxcc:HorizontalCard.Left>
+                                                <shuxcc:HorizontalCard.Right>
+                                                    <TextBlock Margin="6,0" Text="{Binding Name}"/>
+                                                </shuxcc:HorizontalCard.Right>
+                                            </shuxcc:HorizontalCard>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+
+                                <!--  Materials  -->
+                                <ItemsControl
+                                    Grid.Row="1"
+                                    ItemsSource="{Binding Materials}">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <StackPanel Spacing="8"/>
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid ColumnSpacing="12">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition/>
+                                                </Grid.ColumnDefinitions>
+                                                <shuxcc:HorizontalCard Grid.Column="0">
+                                                    <shuxcc:HorizontalCard.Left>
+                                                        <shuxc:ItemIcon
+                                                            Width="40"
+                                                            Height="40"
+                                                            Icon="{Binding Inner.Icon, Converter={StaticResource ItemIconConverter}}"
+                                                            Quality="{Binding Inner.RankLevel}"/>
+                                                    </shuxcc:HorizontalCard.Left>
+                                                    <shuxcc:HorizontalCard.Right>
+                                                        <StackPanel Margin="8,0" VerticalAlignment="Center">
+                                                            <TextBlock Style="{StaticResource BodyStrongTextBlockStyle}" Text="{Binding Inner.Name}"/>
+                                                            <TextBlock
+                                                                Opacity="0.6"
+                                                                Style="{StaticResource CaptionTextBlockStyle}"
+                                                                Text="{Binding Inner.TypeDescription}"/>
+                                                        </StackPanel>
+                                                    </shuxcc:HorizontalCard.Right>
+                                                </shuxcc:HorizontalCard>
+                                                <ItemsControl
+                                                    Grid.Column="1"
+                                                    ItemsPanel="{ThemeResource WrapPanelSpacing6Template}"
+                                                    ItemsSource="{Binding Items}">
+                                                    <ItemsControl.ItemTemplate>
+                                                        <DataTemplate>
+                                                            <shuxc:ItemIcon
+                                                                Width="36"
+                                                                Height="36"
+                                                                Icon="{Binding Icon}"
+                                                                Quality="{Binding Quality}"/>
+                                                        </DataTemplate>
+                                                    </ItemsControl.ItemTemplate>
+                                                </ItemsControl>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </Border>
+
                 <Pivot
                     x:Name="GameAnnouncementPivot"
                     Margin="-16"

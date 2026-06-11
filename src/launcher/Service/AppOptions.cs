@@ -47,6 +47,12 @@ internal sealed partial class AppOptions : DbStoreOptions
         return KnownRegions.Value;
     });
 
+    public Lazy<ImmutableArray<NameValue<TimeSpan>>> LazyCalendarServerTimeZoneOffsets { get; } = new(static () =>
+    {
+        Debug.Assert(XamlApplicationLifetime.CultureInfoInitialized);
+        return KnownServerRegionTimeZones.Value;
+    });
+
     public ImmutableArray<NameValue<BackdropType>> BackdropTypes { get; } = CreateBackdropTypes();
 
     private static ImmutableArray<NameValue<BackdropType>> CreateBackdropTypes()
@@ -104,6 +110,9 @@ internal sealed partial class AppOptions : DbStoreOptions
 
     [field: MaybeNull]
     public IObservableProperty<Region> Region { get => field ??= CreatePropertyForStructUsingCustom(SettingKeys.AnnouncementRegion, Web.Hoyolab.Region.CNGF01, Web.Hoyolab.Region.FromRegionString, Web.Hoyolab.Region.ToRegionString); }
+
+    [field: MaybeNull]
+    public IObservableProperty<TimeSpan> CalendarServerTimeZoneOffset { get => field ??= CreatePropertyForStructUsingCustom(SettingKeys.CalendarServerTimeZoneOffset, ServerRegionTimeZone.CommonOffset, TimeSpan.Parse, static v => v.ToString()); }
 
     [field: MaybeNull]
     public IObservableProperty<string> GeetestCustomCompositeUrl { get => field ??= CreateProperty(SettingKeys.GeetestCustomCompositeUrl, string.Empty); }

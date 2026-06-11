@@ -7,24 +7,22 @@
 // Modified by kyxsan.
 // Licensed under the MIT license.
 
-using CommunityToolkit.Common;
 using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.UI.Xaml;
-using kyxsan.Core.DataTransfer;
-using kyxsan.Core.DependencyInjection.Abstraction;
-using kyxsan.Core.Logging;
 using kyxsan.Core.Setting;
+using kyxsan.Model.Metadata.Avatar;
+using kyxsan.Model.Metadata.Item;
+using kyxsan.Model.Metadata.Weapon;
+using kyxsan.Model.Primitive;
 using kyxsan.Service;
 using kyxsan.Service.Announcement;
-using kyxsan.Service.Notification;
-using kyxsan.Service.User;
-using kyxsan.Web.Hoyolab.Bbs.Home;
+using kyxsan.Service.Metadata;
+using kyxsan.Service.Metadata.ContextAbstraction;
+using kyxsan.UI.Xaml.Data;
+using kyxsan.ViewModel.Calendar;
 using kyxsan.Web.Hoyolab.Hk4e.Common.Announcement;
-using kyxsan.Web.Hoyolab.Takumi.Event.Miyolive;
-using kyxsan.Web.Response;
 using kyxsan.Web.WebView2;
 using System.Collections.Immutable;
-using System.Text.RegularExpressions;
 
 namespace kyxsan.ViewModel.Home;
 
@@ -33,6 +31,7 @@ namespace kyxsan.ViewModel.Home;
 internal sealed partial class AnnouncementViewModel : Abstraction.ViewModel
 {
     private readonly IAnnouncementService announcementService;
+    private readonly IMetadataService metadataService;
     private readonly IServiceProvider serviceProvider;
     private readonly CultureOptions cultureOptions;
     private readonly ITaskContext taskContext;
@@ -50,16 +49,13 @@ internal sealed partial class AnnouncementViewModel : Abstraction.ViewModel
     public partial string GreetingText { get; set; } = SH.ViewPageHomeGreetingTextDefault;
 
     [ObservableProperty]
-    public partial ImmutableArray<CodeWrapper> RedeemCodes { get; set; } = [];
-
-    [GeneratedRegex("act_id=(.*?)&")]
-    private static partial Regex ActIdExtractor { get; }
+    public partial IAdvancedCollectionView<CalendarDay>? WeekDays { get; set; }
 
     protected override ValueTask<bool> LoadOverrideAsync(CancellationToken token)
     {
         _ = CoreWebView2EnvironmentFactory.GetAsync();
         InitializeInGameAnnouncementAsync(token).SafeForget();
-        InitializeMiyoliveCodeAsync(token).SafeForget();
+        InitializeCalendarAsync(token).SafeForget();
         UpdateGreetingText();
         return ValueTask.FromResult(true);
     }
@@ -78,84 +74,6 @@ internal sealed partial class AnnouncementViewModel : Abstraction.ViewModel
         catch (OperationCanceledException)
         {
         }
-    }
-
-    [SuppressMessage("", "SH003")]
-    private async Task InitializeMiyoliveCodeAsync(CancellationToken token)
-    {
-        using (IServiceScope scope = serviceProvider.CreateScope())
-        {
-            IUserService userService = scope.ServiceProvider.GetRequiredService<IUserService>();
-            if (await userService.GetCurrentUserAndUidAsync().ConfigureAwait(false) is not { IsOversea: false } userAndUid)
-            {
-                // The oversea user can direct use their code on the official website.
-                return;
-            }
-
-            IHomeClient homeClient = scope.ServiceProvider
-                .GetRequiredService<IOverseaSupportFactory<IHomeClient>>()
-                .CreateFor(userAndUid);
-
-            Response<NewHomeNewInfo> newHomeInfoResponse = await homeClient.GetNewHomeInfoAsync(2, token).ConfigureAwait(false);
-
-            if (!ResponseValidator.TryValidateWithoutUINotification(newHomeInfoResponse, out NewHomeNewInfo? newHomeInfo))
-            {
-                return;
-            }
-
-            Uri url;
-            if (newHomeInfo.Lives is [{ Data.LiveUrl: { } url1 }, ..])
-            {
-                url = url1;
-            }
-            else if (newHomeInfo.Navigator.SingleOrDefault(nav => nav.Name.EqualsAny(["直播兑换码", "前瞻直播"], StringComparison.OrdinalIgnoreCase)) is { AppPath: { } url2 })
-            {
-                url = url2;
-            }
-            else
-            {
-                return;
-            }
-
-            if (ActIdExtractor.Match(url.OriginalString) is not { Success: true, Groups: [_, { Value: { } actId }, ..] })
-            {
-                return;
-            }
-
-            IMiyoliveClient miyoliveClient = scope.ServiceProvider
-                .GetRequiredService<IOverseaSupportFactory<IMiyoliveClient>>()
-                .CreateFor(userAndUid);
-
-            Response<CodeListWrapper> codeListResponse = await miyoliveClient.RefreshCodeAsync(actId, token).ConfigureAwait(false);
-            if (!ResponseValidator.TryValidateWithoutUINotification(codeListResponse, out CodeListWrapper? wrapper))
-            {
-                return;
-            }
-
-            ImmutableArray<CodeWrapper> wrappers = wrapper.CodeList.SelectAsArray(static wrapper => wrapper.WithTitle(wrapper.Title.DecodeHtml()));
-            wrappers = [.. wrappers.Where(static wrapper => !string.IsNullOrEmpty(wrapper.Code))];
-            if (wrappers.IsEmpty)
-            {
-                return;
-            }
-
-            await taskContext.SwitchToMainThreadAsync();
-            RedeemCodes = wrappers;
-        }
-    }
-
-    [Command("CopyCodeCommand")]
-    private async Task CopyCodeToClipboardAsync(string? code)
-    {
-        SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Copy redeem code to ClipBoard", "AnnouncementPage.Command"));
-
-        if (string.IsNullOrEmpty(code))
-        {
-            return;
-        }
-
-        await serviceProvider.GetRequiredService<IClipboardProvider>().SetTextAsync(code).ConfigureAwait(false);
-        serviceProvider.GetRequiredService<IMessenger>().Send(InfoBarMessage.Success(SH.ViewPageAnnouncementRedeemCodeCopySucceed));
     }
 
     private void UpdateGreetingText()
@@ -205,6 +123,125 @@ internal sealed partial class AnnouncementViewModel : Abstraction.ViewModel
                 }
             }
         }
+    }
+
+    [SuppressMessage("", "SH003")]
+    private async Task InitializeCalendarAsync(CancellationToken token)
+    {
+        CalendarMetadataContext context = await metadataService.GetContextAsync<CalendarMetadataContext>(token).ConfigureAwait(false);
+
+        // Build avatar birthday lookup
+        ILookup<MonthAndDay, Avatar> avatarBirthdays = context.Avatars
+            .Where(a => a.FetterInfo is not null && a.FetterInfo.BirthMonth > 0)
+            .ToLookup(a => MonthAndDay.Create(a));
+
+        // Build material → items lookup (avatars and weapons that use each material)
+        Dictionary<MaterialId, List<CalendarItem>> materialItemsDict = [];
+
+        foreach (Avatar avatar in context.Avatars)
+        {
+            foreach (MaterialId materialId in avatar.CultivationItems)
+            {
+                if (!materialItemsDict.TryGetValue(materialId, out List<CalendarItem>? list))
+                {
+                    list = [];
+                    materialItemsDict[materialId] = list;
+                }
+
+                list.Add(avatar.ToItem<CalendarItem>());
+            }
+        }
+
+        foreach (Weapon weapon in context.Weapons)
+        {
+            if (weapon.Quality < Model.Intrinsic.QualityType.QUALITY_BLUE)
+            {
+                continue;
+            }
+
+            foreach (MaterialId materialId in weapon.CultivationItems)
+            {
+                if (!materialItemsDict.TryGetValue(materialId, out List<CalendarItem>? list))
+                {
+                    list = [];
+                    materialItemsDict[materialId] = list;
+                }
+
+                list.Add(weapon.ToItem<CalendarItem>());
+            }
+        }
+
+        ILookup<MaterialId, CalendarItem> materialItems = materialItemsDict
+            .SelectMany(kvp => kvp.Value.Select(item => (kvp.Key, item)))
+            .ToLookup(x => x.Key, x => x.item);
+
+        // Get server time
+        TimeSpan offset = appOptions.CalendarServerTimeZoneOffset.Value;
+        DateTimeOffset serverNow = DateTimeOffset.Now.ToOffset(offset);
+
+        // Adjust for 4AM server reset (day starts at 4:00 AM)
+        DateTimeOffset adjustedNow = serverNow - TimeSpan.FromHours(4);
+
+        // Build 7 days starting from Monday of the current week
+        DayOfWeek currentDay = adjustedNow.DayOfWeek;
+        int daysToMonday = ((int)currentDay - (int)DayOfWeek.Monday + 7) % 7;
+        DateTimeOffset monday = adjustedNow.Date.AddDays(-daysToMonday);
+
+        List<CalendarDay> weekDays = new(7);
+
+        for (int i = 0; i < 7; i++)
+        {
+            DateTimeOffset dayDate = monday.AddDays(i);
+            DayOfWeek dow = dayDate.DayOfWeek;
+
+            // Get rotational material entries for this day
+            IEnumerable<RotationalMaterialIdEntry> entries = dow switch
+            {
+                DayOfWeek.Monday or DayOfWeek.Thursday => MaterialIds.MondayThursdayEntries,
+                DayOfWeek.Tuesday or DayOfWeek.Friday => MaterialIds.TuesdayFridayEntries,
+                DayOfWeek.Wednesday or DayOfWeek.Saturday => MaterialIds.WednesdaySaturdayEntries,
+                _ => MaterialIds.MondayThursdayEntries.Concat(MaterialIds.TuesdayFridayEntries).Concat(MaterialIds.WednesdaySaturdayEntries), // Sunday: all
+            };
+
+            // Build CalendarMaterial list
+            ImmutableArray<CalendarMaterial> materials = [.. entries.Select(entry =>
+            {
+                Material material = context.IdMaterialMap.GetValueOrDefault(entry.Highest, Material.Default);
+                ImmutableArray<CalendarItem> items = [.. materialItems[entry.Highest]];
+                return new CalendarMaterial
+                {
+                    Inner = material,
+                    Items = items,
+                    InnerEntry = entry,
+                };
+            })];
+
+            // Get birthday avatars
+            MonthAndDay md = new((uint)dayDate.Month, (uint)dayDate.Day);
+            ImmutableArray<Model.Item> birthDayAvatars = [.. avatarBirthdays[md].Select(a => a.ToItem<Model.Item>())];
+
+            weekDays.Add(new CalendarDay
+            {
+                Date = dayDate,
+                DayInMonth = dayDate.Day,
+                DayName = cultureOptions.CurrentCulture.Value.DateTimeFormat.GetAbbreviatedDayName(dow),
+                BirthDayAvatars = birthDayAvatars,
+                Materials = materials,
+            });
+        }
+
+        await taskContext.SwitchToMainThreadAsync();
+
+        IAdvancedCollectionView<CalendarDay> view = weekDays.AsAdvancedCollectionView();
+
+        // Select the current day
+        int todayIndex = daysToMonday;
+        if (todayIndex >= 0 && todayIndex < 7)
+        {
+            view.MoveCurrentTo(weekDays[todayIndex]);
+        }
+
+        WeekDays = view;
     }
 
     protected override void UninitializeOverride()

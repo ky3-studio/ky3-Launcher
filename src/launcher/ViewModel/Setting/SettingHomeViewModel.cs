@@ -36,4 +36,16 @@ internal sealed partial class SettingHomeViewModel : Abstraction.ViewModel
             }
         }
     }
+
+    public NameValue<TimeSpan>? SelectedCalendarServerTimeZone
+    {
+        get => field ??= Selection.Initialize(AppOptions.LazyCalendarServerTimeZoneOffsets, AppOptions.CalendarServerTimeZoneOffset.Value);
+        set
+        {
+            if (SetProperty(ref field, value) && value is not null)
+            {
+                AppOptions.CalendarServerTimeZoneOffset.Value = value.Value;
+            }
+        }
+    }
 }

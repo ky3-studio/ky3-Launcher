@@ -132,7 +132,45 @@ internal sealed partial class DescriptionTextBlock : ContentControl
     private Void AppendPlainText(TextBlockType textBlock, InlineCollection inlines, MiHoYoSyntaxTextElement syntaxTextElement, ReadOnlySpan<char> source)
     {
         // PlainText doesn't have children
-        inlines.Add(new Run { Text = syntaxTextElement.GetSpan(source).ToString() });
+        // Handle \n (literal backslash-n) and actual newline characters as line breaks
+        ReadOnlySpan<char> span = syntaxTextElement.GetSpan(source);
+        while (span.Length > 0)
+        {
+            int nlIndex = span.IndexOf('\n');
+            int literalIndex = span.IndexOf("\\n");
+
+            // Find the nearest newline marker
+            int breakIndex;
+            int skipLength;
+            if (literalIndex >= 0 && (nlIndex < 0 || literalIndex < nlIndex))
+            {
+                breakIndex = literalIndex;
+                skipLength = 2; // skip \n (two chars)
+            }
+            else if (nlIndex >= 0)
+            {
+                breakIndex = nlIndex;
+                skipLength = 1; // skip actual newline char
+            }
+            else
+            {
+                break;
+            }
+
+            if (breakIndex > 0)
+            {
+                inlines.Add(new Run { Text = span[..breakIndex].ToString() });
+            }
+
+            inlines.Add(new LineBreak());
+            span = span[(breakIndex + skipLength)..];
+        }
+
+        if (span.Length > 0)
+        {
+            inlines.Add(new Run { Text = span.ToString() });
+        }
+
         return default;
     }
 

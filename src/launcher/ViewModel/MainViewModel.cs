@@ -14,6 +14,7 @@ using kyxsan.Service;
 using kyxsan.Service.BackgroundActivity;
 using kyxsan.Service.Metadata;
 using kyxsan.Service.Notification;
+using kyxsan.Service.RedeemCode;
 using System.IO;
 
 namespace kyxsan.ViewModel;
@@ -36,6 +37,8 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
 
     public partial BackgroundActivityOptions BackgroundActivityOptions { get; }
 
+    public partial RedeemCodeService RedeemCodeService { get; }
+
     public override void Dispose()
     {
         using (CriticalSection.Enter())
@@ -50,6 +53,8 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
     {
         ShowUpdateLogWindowAfterUpdate();
         NotifyIfDataFolderHasReparsePoint();
+
+        _ = RedeemCodeService.RefreshAsync();
 
         return true;
     }

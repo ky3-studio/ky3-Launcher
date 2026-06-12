@@ -116,9 +116,20 @@ internal partial class ScopedPage : Page
         {
             try
             {
-                using (viewModel.CriticalSection.Enter())
+                // Use non-blocking acquire to prevent deadlock:
+                // Background tasks holding the semaphore may be waiting for UI thread
+                // via SwitchToMainThreadAsync(), causing a deadlock if we block here.
+                bool acquired = viewModel.CriticalSection.Wait(0);
+                try
                 {
                     viewModel.Uninitialize();
+                }
+                finally
+                {
+                    if (acquired)
+                    {
+                        viewModel.CriticalSection.Release();
+                    }
                 }
             }
             catch (OperationCanceledException)

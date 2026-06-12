@@ -97,24 +97,26 @@ internal sealed partial class HardChallengeViewModel : Abstraction.ViewModel, IR
 
         try
         {
+            ObservableCollection<HardChallengeView> collection;
+            ImmutableArray<AvatarView> blingAvatars;
             using (await EnterCriticalSectionAsync().ConfigureAwait(false))
             {
-                ObservableCollection<HardChallengeView> collection = await hardChallengeService
+                collection = await hardChallengeService
                     .GetHardChallengeViewCollectionAsync(metadataContext, userAndUid)
                     .ConfigureAwait(false);
 
-                ImmutableArray<AvatarView> blingAvatars = await hardChallengeService
+                blingAvatars = await hardChallengeService
                     .GetBlingAvatarsAsync(metadataContext, userAndUid)
                     .ConfigureAwait(false);
-
-                IAdvancedCollectionView<HardChallengeView> hardChallengeEntries = collection.AsAdvancedCollectionView();
-
-                await taskContext.SwitchToMainThreadAsync();
-                HardChallengeEntries = hardChallengeEntries;
-                HardChallengeEntries.MoveCurrentTo(HardChallengeEntries.Source.FirstOrDefault(s => s.Engaged));
-
-                BlingAvatars = blingAvatars;
             }
+
+            IAdvancedCollectionView<HardChallengeView> hardChallengeEntries = collection.AsAdvancedCollectionView();
+
+            await taskContext.SwitchToMainThreadAsync();
+            HardChallengeEntries = hardChallengeEntries;
+            HardChallengeEntries.MoveCurrentTo(HardChallengeEntries.Source.FirstOrDefault(s => s.Engaged));
+
+            BlingAvatars = blingAvatars;
         }
         catch (OperationCanceledException)
         {

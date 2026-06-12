@@ -47,12 +47,20 @@
             <cwc:Case Value="{shuxm:UInt32 Value=0}">
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                         <RowDefinition/>
-                        <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
-                    <shuxce:TextMorphEffect
+                    <Image
                         Grid.Row="0"
+                        Width="120"
+                        Height="120"
+                        Margin="0,48,0,16"
+                        HorizontalAlignment="Center"
+                        Source="ms-appx:///Assets/kyxsan%20logo.png"/>
+                    <shuxce:TextMorphEffect
+                        Grid.Row="1"
+                        Height="60"
                         BlurAmount="5"
                         ColorBrush="{ThemeResource TextFillColorPrimary}"
                         Delimiter="+"
@@ -61,7 +69,7 @@
                         EffectVerticalAlignment="Center"
                         Text="{Binding AllCulturesWelcomeText}"/>
                     <Border
-                        Grid.Row="1"
+                        Grid.Row="2"
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
                         Style="{ThemeResource BorderShimmerStyle}">

@@ -8,10 +8,13 @@
 // Licensed under the MIT license.
 
 using kyxsan.Model.InterChange.Achievement;
+using System.Collections.Immutable;
 
 namespace kyxsan.Service.Yae;
 
 internal interface IYaeService
 {
     ValueTask<UIAF?> GetAchievementAsync();
+
+    ValueTask<ImmutableArray<(uint ItemId, uint Count)>?> GetInventoryAsync();
 }

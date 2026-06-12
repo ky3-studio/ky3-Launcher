@@ -153,16 +153,17 @@ internal sealed partial class LaunchGameViewModel : Abstraction.ViewModel, IView
     {
         try
         {
+            LaunchScheme? currentScheme;
             using (await EnterCriticalSectionAsync().ConfigureAwait(false))
             {
-                LaunchScheme? currentScheme = GamePathEntry.Value is not null
+                currentScheme = GamePathEntry.Value is not null
                     ? Shared.GetCurrentLaunchSchemeFromConfigurationFile()
                     : default;
-
-                await taskContext.SwitchToMainThreadAsync();
-                await TargetSchemeFilteredGameAccountsView.SetAsync(currentScheme).ConfigureAwait(true);
-                await GamePackageViewModel.ReloadAsync().ConfigureAwait(true);
             }
+
+            await taskContext.SwitchToMainThreadAsync();
+            await TargetSchemeFilteredGameAccountsView.SetAsync(currentScheme).ConfigureAwait(true);
+            await GamePackageViewModel.ReloadAsync().ConfigureAwait(true);
         }
         catch (kyxsanException ex)
         {

@@ -114,9 +114,10 @@ internal sealed partial class ImageCache : IImageCache
                         }
                     }
                 }
+
+                await EnsureThemedMonochromeFileExistsAsync(imageCacheFile, theme).ConfigureAwait(false);
             }
 
-            await EnsureThemedMonochromeFileExistsAsync(imageCacheFile, theme).ConfigureAwait(false);
             return themedFileFullPath;
         }
     }

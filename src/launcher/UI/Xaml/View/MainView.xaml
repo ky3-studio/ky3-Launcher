@@ -355,15 +355,26 @@
 
                     <NavigationViewItem
                         shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:WishCountdownPage"
-                        Content="{shuxm:ResourceString Name=ViewWishCountdownHeader}"
-                        Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/AvatarProperty.png}"/>
-
-                    <NavigationViewItemHeader Content="{shuxm:ResourceString Name=ViewPeriodHeader}"/>
+                        Content="{shuxm:ResourceString Name=ViewWishCountdownHeader}">
+                        <NavigationViewItem.Icon>
+                            <BitmapIcon ShowAsMonochrome="False" UriSource="ms-appx:///Resource/Navigation/up.png"/>
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
 
                     <NavigationViewItem
                         shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:AvatarPropertyPage"
                         Content="{shuxm:ResourceString Name=ViewAvatarPropertyHeader}"
                         Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/AvatarProperty.png}"/>
+
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:CultivationPage"
+                        Content="{shuxm:ResourceString Name=ViewCultivationHeader}">
+                        <NavigationViewItem.Icon>
+                            <BitmapIcon ShowAsMonochrome="False" UriSource="ms-appx:///Resource/Navigation/Cultivation.png"/>
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
+
+                    <NavigationViewItemHeader Content="{shuxm:ResourceString Name=ViewPeriodHeader}"/>
 
                     <NavigationViewItem
                         shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:SpiralAbyssRecordPage"

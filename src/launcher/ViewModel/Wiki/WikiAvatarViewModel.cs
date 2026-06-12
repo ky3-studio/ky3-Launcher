@@ -69,17 +69,18 @@ internal sealed partial class WikiAvatarViewModel : Abstraction.ViewModel
         SearchData searchData = SearchData.CreateForWikiAvatar(avatars);
         await CombineComplexDataAsync(avatars, metadataContext).ConfigureAwait(false);
 
+        IAdvancedCollectionView<Avatar> avatarsView;
         using (await EnterCriticalSectionAsync().ConfigureAwait(false))
         {
-            IAdvancedCollectionView<Avatar> avatarsView = avatars.AsAdvancedCollectionView();
-
-            await taskContext.SwitchToMainThreadAsync();
-            token.ThrowIfCancellationRequested();
-
-            SearchData = searchData;
-            Avatars = avatarsView;
-            Avatars.MoveCurrentToFirst();
+            avatarsView = avatars.AsAdvancedCollectionView();
         }
+
+        await taskContext.SwitchToMainThreadAsync();
+        token.ThrowIfCancellationRequested();
+
+        SearchData = searchData;
+        Avatars = avatarsView;
+        Avatars.MoveCurrentToFirst();
 
         return true;
     }

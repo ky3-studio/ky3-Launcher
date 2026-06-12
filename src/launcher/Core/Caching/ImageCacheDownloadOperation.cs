@@ -21,7 +21,7 @@ namespace kyxsan.Core.Caching;
 
 [Service(ServiceLifetime.Singleton, typeof(IImageCacheDownloadOperation))]
 [HttpClient(HttpClientConfiguration.Default)]
-[PrimaryHttpMessageHandler(MaxConnectionsPerServer = 8)]
+[PrimaryHttpMessageHandler(MaxConnectionsPerServer = 32)]
 internal sealed partial class ImageCacheDownloadOperation : IImageCacheDownloadOperation
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;

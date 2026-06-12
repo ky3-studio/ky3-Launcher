@@ -35,6 +35,8 @@ internal sealed partial class CharacterView : IPropertyValuesProvider
         ActivatedConstellationCount = apiCharacter.ActivedConstellationNum;
         FetterLevel = apiCharacter.Fetter;
         WeaponType = apiCharacter.Weapon.Type;
+        WeaponId = apiCharacter.Weapon.Id;
+        WeaponLevelNumber = (uint)apiCharacter.Weapon.Level;
         Icon = AvatarIconConverter.IconNameToUri(metaAvatar.Icon);
         SideIcon = AvatarSideIconConverter.IconNameToUri(metaAvatar.SideIcon);
 
@@ -83,6 +85,10 @@ internal sealed partial class CharacterView : IPropertyValuesProvider
     public Uri SideIcon { get; }
 
     public Uri NameCard { get; }
+
+    public WeaponId WeaponId { get; }
+
+    public uint WeaponLevelNumber { get; }
 
     public Uri? WeaponIcon { get; }
 

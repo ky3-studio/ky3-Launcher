@@ -66,6 +66,16 @@ internal sealed partial class AppDbContext : DbContext
 
     public DbSet<GachaItem> GachaItems { get; set; } = default!;
 
+    public DbSet<CultivateProject> CultivateProjects { get; set; } = default!;
+
+    public DbSet<CultivateEntry> CultivateEntries { get; set; } = default!;
+
+    public DbSet<CultivateItem> CultivateItems { get; set; } = default!;
+
+    public DbSet<CultivateEntryLevelInformation> CultivateEntryLevelInformations { get; set; } = default!;
+
+    public DbSet<InventoryItem> InventoryItems { get; set; } = default!;
+
     public static AppDbContext Create(IServiceProvider serviceProvider, string sqlConnectionString)
     {
         DbContextOptions<AppDbContext> options = new DbContextOptionsBuilder<AppDbContext>()

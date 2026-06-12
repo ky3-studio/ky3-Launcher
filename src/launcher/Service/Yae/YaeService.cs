@@ -19,12 +19,14 @@ using kyxsan.Service.Game.FileSystem;
 using kyxsan.Service.Notification;
 using kyxsan.Service.User;
 using kyxsan.Service.Yae.Achievement;
+using kyxsan.Service.Yae.PlayerStore;
 using kyxsan.ViewModel.User;
 using BindingUser = kyxsan.ViewModel.User.User;
 using kyxsan.Web.Hoyolab.Passport;
 using kyxsan.Web.Response;
 using kyxsan.Win32.Foundation;
 using System.Diagnostics;
+using System.Collections.Immutable;
 using System.IO;
 using System.IO.Hashing;
 using System.Runtime.InteropServices;
@@ -259,6 +261,242 @@ internal sealed partial class YaeService : IYaeService
                     }
 
                     return uiaf;
+                }
+                catch (Exception ex)
+                {
+                    messenger.Send(InfoBarMessage.Error(ex));
+                    return default;
+                }
+                finally
+                {
+                    await GameLifeCycle.IsGameRunningAsync(taskContext).ConfigureAwait(false);
+                }
+            }
+        }
+    }
+
+    public async ValueTask<ImmutableArray<(uint ItemId, uint Count)>?> GetInventoryAsync()
+    {
+        if (!kyxsanRuntime.IsProcessElevated)
+        {
+            messenger.Send(InfoBarMessage.Error(SH.ServiceGameLaunchingHandlerEmbeddedYaeClientNotElevated));
+            return default;
+        }
+
+        ContentDialog dialog = await contentDialogFactory
+            .CreateForIndeterminateProgressAsync(SH.ServiceYaeWaitForGameResponseMessage)
+            .ConfigureAwait(false);
+
+        await taskContext.SwitchToMainThreadAsync();
+        dialog.Title = null;
+        dialog.Content = new StackPanel
+        {
+            Spacing = 16,
+            Children =
+            {
+                new StackPanel
+                {
+                    Orientation = Orientation.Horizontal,
+                    Spacing = 16,
+                    Children =
+                    {
+                        new ProgressRing { IsActive = true, Width = 32, Height = 32 },
+                        new TextBlock
+                        {
+                            Text = SH.ServiceYaeWaitForGameResponseMessage,
+                            VerticalAlignment = Microsoft.UI.Xaml.VerticalAlignment.Center,
+                            FontSize = 16,
+                        },
+                    },
+                },
+                new ProgressBar { IsIndeterminate = true },
+                new TextBlock
+                {
+                    Text = "\u6ce8\u610f\u8bf7\u4e0d\u8981\u8fdb\u884c\u4efb\u4f55\u64cd\u4f5c\uff1a\u70b9\u51fb\u5bfc\u5165 \u2192 \u81ea\u52a8\u542f\u52a8\u6e38\u620f \u2192 \u8bfb\u53d6\u80cc\u5305 \u2192 \u81ea\u52a8\u5bfc\u51fa",
+                    FontSize = 12,
+                    Foreground = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Gray),
+                    TextWrapping = Microsoft.UI.Xaml.TextWrapping.Wrap,
+                },
+            },
+        };
+
+        using (await contentDialogFactory.BlockAsync(dialog).ConfigureAwait(false))
+        {
+            await taskContext.SwitchToBackgroundAsync();
+            using (YaeDataArrayReceiver receiver = new())
+            {
+                try
+                {
+                    LaunchOptions launchOptions = serviceProvider.GetRequiredService<LaunchOptions>();
+                    const string LockTrace = $"{nameof(YaeService)}.{nameof(GetInventoryAsync)}";
+
+                    if (launchOptions.TryGetGameFileSystem(LockTrace, out IGameFileSystem? gameFileSystem) is not GameFileSystemErrorKind.None || gameFileSystem is null)
+                    {
+                        messenger.Send(InfoBarMessage.Error(SH.ServiceYaeGetGameVersionFailed));
+                        return default;
+                    }
+
+                    string gameFilePath;
+                    string gameDirectory;
+                    TargetNativeConfiguration config;
+
+                    using (gameFileSystem)
+                    {
+                        gameFilePath = gameFileSystem.GameFilePath;
+                        gameDirectory = gameFileSystem.GameDirectory;
+
+                        YaeAchievementInfo? metadata = await yaeCdnClient.GetMetadataAsync().ConfigureAwait(false);
+                        ArgumentNullException.ThrowIfNull(metadata, "Failed to fetch Yae metadata from CDN");
+                        ArgumentNullException.ThrowIfNull(metadata.NativeConfig);
+
+                        uint gameHash = GetGameHash(gameFilePath);
+
+                        if (!metadata.NativeConfig.MethodRva.TryGetValue(gameHash, out YaeMethodRvaConfig? methodRva))
+                        {
+                            messenger.Send(InfoBarMessage.Error($"Unsupported game version (hash: 0x{gameHash:X8})"));
+                            return default;
+                        }
+
+                        config = new()
+                        {
+                            StoreCmdId = metadata.NativeConfig.StoreCmdId,
+                            AchievementCmdId = metadata.NativeConfig.AchievementCmdId,
+                            DoCmd = methodRva.DoCmd,
+                            UpdateNormalProperty = methodRva.UpdateNormalProp,
+                            NewString = methodRva.NewString,
+                            FindGameObject = methodRva.FindGameObject,
+                            EventSystemUpdate = methodRva.EventSystemUpdate,
+                            SimulatePointerClick = methodRva.SimulatePointerClick,
+                            ToInt32 = methodRva.ToInt32,
+                            TcpStatePtr = methodRva.TcpStatePtr,
+                            SharedInfoPtr = methodRva.SharedInfoPtr,
+                            Decompress = methodRva.Decompress,
+                        };
+                    }
+
+                    string srcDllPath = kyxsanRuntime.GetDataSubDirectoryFile("Lib", "YaeAchievementLib.dll");
+                    InstalledLocation.CopyFileFromApplicationUri("ms-appx:///YaeAchievementLib.dll", srcDllPath);
+
+                    string dllPath = Path.Combine(gameDirectory, "YaeAchievementLib.dll");
+                    File.Copy(srcDllPath, dllPath, overwrite: true);
+
+                    if (!File.Exists(dllPath))
+                    {
+                        throw new FileNotFoundException("YaeAchievementLib.dll not found", dllPath);
+                    }
+
+                    string cmdArgs = string.Empty;
+                    if (launchOptions.AreCommandLineArgumentsEnabled.Value)
+                    {
+                        cmdArgs = new CommandLineBuilder()
+                            .AppendIf(launchOptions.IsWindowed.Value, "-windowed")
+                            .AppendIf(launchOptions.IsBorderless.Value, "-popupwindow")
+                            .AppendIf(launchOptions.IsExclusive.Value, "-window-mode", "exclusive")
+                            .Append("-screen-fullscreen", launchOptions.IsFullScreen.Value ? "1" : "0")
+                            .AppendIf(launchOptions.IsScreenWidthEnabled.Value, "-screen-width", launchOptions.ScreenWidth.Value)
+                            .AppendIf(launchOptions.IsScreenHeightEnabled.Value, "-screen-height", launchOptions.ScreenHeight.Value)
+                            .AppendIf(launchOptions.IsMonitorEnabled.Value, "-monitor", launchOptions.Monitor.Value?.Value ?? 1)
+                            .ToString();
+                    }
+
+                    if (launchOptions.UsingHoyolabAccount.Value)
+                    {
+                        try
+                        {
+                            using IServiceScope authScope = serviceProvider.CreateScope();
+                            IUserService userService = authScope.ServiceProvider.GetRequiredService<IUserService>();
+
+                            string savedMid = launchOptions.SelectedHoyolabUserMid.Value;
+                            UserAndUid? userAndUid = null;
+                            if (!string.IsNullOrEmpty(savedMid))
+                            {
+                                BindingUser? selectedUser = await userService.GetUserByMidAsync(savedMid).ConfigureAwait(false);
+                                UserAndUid.TryFromUser(selectedUser, out userAndUid);
+                            }
+
+                            userAndUid ??= await userService.GetCurrentUserAndUidAsync().ConfigureAwait(false);
+
+                            if (userAndUid is { IsOversea: false })
+                            {
+                                IHoyoPlayPassportClient passportClient = authScope.ServiceProvider
+                                    .GetRequiredService<IOverseaSupportFactory<IHoyoPlayPassportClient>>()
+                                    .CreateFor(userAndUid);
+                                Response<AuthTicketWrapper> ticketResp = await passportClient
+                                    .CreateAuthTicketAsync(userAndUid.User)
+                                    .ConfigureAwait(false);
+                                if (ResponseValidator.TryValidate(ticketResp, authScope.ServiceProvider, out AuthTicketWrapper? wrapper))
+                                {
+                                    string ticketArg = $"login_auth_ticket={wrapper.Ticket}";
+                                    cmdArgs = string.IsNullOrEmpty(cmdArgs) ? ticketArg : $"{cmdArgs} {ticketArg}";
+                                }
+                            }
+                        }
+                        catch
+                        {
+                        }
+                    }
+
+                    string fullCmdLine = string.IsNullOrEmpty(cmdArgs)
+                        ? $"\"{gameFilePath}\""
+                        : $"\"{gameFilePath}\" {cmdArgs}";
+
+                    NativeMethods.STARTUPINFOW si = default;
+                    si.cb = (uint)Marshal.SizeOf<NativeMethods.STARTUPINFOW>();
+
+                    if (!NativeMethods.CreateProcessW(
+                        gameFilePath, fullCmdLine, nint.Zero, nint.Zero, false,
+                        NativeMethods.CREATE_SUSPENDED, nint.Zero, gameDirectory,
+                        ref si, out NativeMethods.PROCESS_INFORMATION pi))
+                    {
+                        throw new InvalidOperationException($"CreateProcessW failed (error: {Marshal.GetLastWin32Error()})");
+                    }
+
+                    using YaeGameProcess process = new(pi.hProcess, pi.hThread, pi.dwProcessId);
+
+                    await using (YaeNamedPipeServer server = new(serviceProvider, process, config))
+                    {
+                        if (!InjectDll(pi.hProcess, pi.dwProcessId, dllPath))
+                        {
+                            process.Kill();
+                            throw new InvalidOperationException("DLL injection failed");
+                        }
+
+                        receiver.Array = await server.GetDataArrayAsync().ConfigureAwait(false);
+                    }
+
+                    ImmutableArray<(uint ItemId, uint Count)>? result = default;
+                    Dictionary<InterestedPropType, double> propMap = [];
+                    foreach (YaeData data in receiver.Array)
+                    {
+                        using (data)
+                        {
+                            switch (data.Kind)
+                            {
+                                case YaeCommandKind.ResponsePlayerStore:
+                                    result = PlayerStoreParser.Parse(data.Bytes);
+                                    break;
+                                case YaeCommandKind.ResponsePlayerProp:
+                                    ref readonly YaePropertyTypeValue typeValue = ref data.PropertyTypeValue;
+                                    propMap[typeValue.Type] = typeValue.Value;
+                                    break;
+                            }
+                        }
+                    }
+
+                    if (result is null)
+                    {
+                        return default;
+                    }
+
+                    // Mora (item_id=202) is sent as PlayerProp, not in PlayerStore
+                    double moraCount = propMap.GetValueOrDefault(InterestedPropType.PlayerSCoin)
+                        - propMap.GetValueOrDefault(InterestedPropType.PlayerWaitSubSCoin);
+                    if (moraCount > 0)
+                    {
+                        result = result.Value.Add((202U, (uint)Math.Clamp(moraCount, uint.MinValue, uint.MaxValue)));
+                    }
+
+                    return result;
                 }
                 catch (Exception ex)
                 {

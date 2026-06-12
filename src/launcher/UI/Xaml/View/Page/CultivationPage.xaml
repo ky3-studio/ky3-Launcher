@@ -1,0 +1,568 @@
+<shuxc:ScopedPage
+    x:Class="kyxsan.UI.Xaml.View.Page.CultivationPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cw="using:CommunityToolkit.WinUI"
+    xmlns:cwcont="using:CommunityToolkit.WinUI.Controls"
+    xmlns:cwconv="using:CommunityToolkit.WinUI.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mxi="using:Microsoft.Xaml.Interactivity"
+    xmlns:shux="using:kyxsan.UI.Xaml"
+    xmlns:shuxb="using:kyxsan.UI.Xaml.Behavior"
+    xmlns:shuxc="using:kyxsan.UI.Xaml.Control"
+    xmlns:shuxca="using:kyxsan.UI.Xaml.Control.AutoSuggestBox"
+    xmlns:shuxcc="using:kyxsan.UI.Xaml.Control.Card"
+    xmlns:shuxci="using:kyxsan.UI.Xaml.Control.Image"
+    xmlns:shuxcl="using:kyxsan.UI.Xaml.Control.Layout"
+    xmlns:shuxcp="using:kyxsan.UI.Xaml.Control.Panel"
+    xmlns:shuxm="using:kyxsan.UI.Xaml.Markup"
+    xmlns:shuxcpd="using:kyxsan.UI.Xaml.Control.Panel.DataTable"
+    xmlns:shvcu="using:kyxsan.ViewModel.Cultivation"
+    d:DataContext="{d:DesignInstance shvcu:CultivationViewModel}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light">
+                    <cwconv:BoolToObjectConverter
+                        x:Key="BoolToBrushSelector"
+                        FalseValue="{StaticResource SolidBackgroundFillColorTransparentBrush}"
+                        TrueValue="{StaticResource CultivationHighlightColorBrush}"/>
+                    <cwconv:BoolToObjectConverter
+                        x:Key="BoolToStatisticsBrushSelector"
+                        FalseValue="{StaticResource CardBackgroundFillColorDefaultBrush}"
+                        TrueValue="{StaticResource CultivationHighlightColorBrush}"/>
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Dark">
+                    <cwconv:BoolToObjectConverter
+                        x:Key="BoolToBrushSelector"
+                        FalseValue="{StaticResource SolidBackgroundFillColorTransparentBrush}"
+                        TrueValue="{StaticResource CultivationHighlightColorBrush}"/>
+                    <cwconv:BoolToObjectConverter
+                        x:Key="BoolToStatisticsBrushSelector"
+                        FalseValue="{StaticResource CardBackgroundFillColorDefaultBrush}"
+                        TrueValue="{StaticResource CultivationHighlightColorBrush}"/>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+            <shux:BindingProxy x:Key="BindingProxy" DataContext="{Binding}"/>
+
+            <cwconv:BoolToObjectConverter x:Key="BoolToOpacityConverter">
+                <cwconv:BoolToObjectConverter.TrueValue>
+                    <x:Double>0.4</x:Double>
+                </cwconv:BoolToObjectConverter.TrueValue>
+                <cwconv:BoolToObjectConverter.FalseValue>
+                    <x:Double>1</x:Double>
+                </cwconv:BoolToObjectConverter.FalseValue>
+            </cwconv:BoolToObjectConverter>
+
+            <cwconv:BoolToObjectConverter
+                x:Key="BoolToStyleSelector"
+                FalseValue="{StaticResource BodyTextBlockStyle}"
+                TrueValue="{StaticResource BaseTextBlockStyle}"/>
+
+            <DataTemplate x:Key="TokenTemplate" x:DataType="shuxca:SearchToken">
+                <Grid Height="22" VerticalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="24"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Ellipse
+                        Grid.Column="0"
+                        Width="12"
+                        Height="12"
+                        Margin="1,1,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Stretch"
+                        Visibility="{Binding Quality, Converter={StaticResource EmptyObjectToVisibilityConverter}}">
+                        <Ellipse.Fill>
+                            <SolidColorBrush Color="{Binding Quality}"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <shuxci:CachedImage
+                        Grid.Column="0"
+                        Width="20"
+                        Height="20"
+                        Margin="-3,2,7,0"
+                        ShowAsMonoChrome="True"
+                        Source="{Binding IconUri, Mode=OneWay}"
+                        Visibility="{Binding IconUri, Converter={StaticResource EmptyObjectToVisibilityConverter}}"/>
+                    <shuxci:CachedImage
+                        Grid.Column="0"
+                        Width="20"
+                        Height="20"
+                        Margin="-4,-2,8,2"
+                        Source="{Binding SideIconUri, Mode=OneWay}"
+                        Visibility="{Binding SideIconUri, Converter={StaticResource EmptyObjectToVisibilityConverter}}"/>
+                    <TextBlock
+                        Grid.Column="1"
+                        Height="20"
+                        VerticalAlignment="Center"
+                        Text="{Binding Value}"/>
+                </Grid>
+            </DataTemplate>
+
+            <DataTemplate x:Key="CultivateEntryItemTemplate" x:DataType="shvcu:CultivateItemView">
+                <Grid Margin="0,4,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid>
+                        <shuxc:ItemIcon
+                            Width="32"
+                            Height="32"
+                            Icon="{Binding Material.Icon, Converter={StaticResource ItemIconConverter}}"
+                            Opacity="{Binding IsFinished, Converter={StaticResource BoolToOpacityConverter}}"
+                            Quality="{Binding Material.RankLevel}"/>
+                        <FontIcon
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontSize="24"
+                            Glyph="&#xE73E;"
+                            Visibility="{Binding IsFinished, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                    </Grid>
+                    <Button
+                        Grid.Column="1"
+                        Height="32"
+                        Margin="6,0,0,0"
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Stretch"
+                        Background="{Binding IsToday, Converter={ThemeResource BoolToBrushSelector}}"
+                        Command="{Binding Path=DataContext.FinishStateCommand, Source={StaticResource BindingProxy}}"
+                        CommandParameter="{Binding}"
+                        Style="{StaticResource ButtonRevealStyle}">
+                        <Grid Opacity="{Binding IsFinished, Converter={StaticResource BoolToOpacityConverter}}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock
+                                Grid.Column="0"
+                                VerticalAlignment="Center"
+                                Style="{Binding IsToday, Converter={StaticResource BoolToStyleSelector}}"
+                                Text="{Binding Name}"
+                                TextTrimming="CharacterEllipsis"/>
+                            <TextBlock
+                                Grid.Column="1"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                Style="{Binding IsToday, Converter={StaticResource BoolToStyleSelector}}"
+                                Text="{Binding Count}"/>
+                        </Grid>
+                    </Button>
+                </Grid>
+            </DataTemplate>
+
+            <DataTemplate x:Key="CultivateEntryTemplate" x:DataType="shvcu:CultivateEntryView">
+                <Border cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                    <Grid Style="{ThemeResource AcrylicGridCardStyle}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" Margin="8">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <shuxc:ItemIcon
+                                Width="52"
+                                Height="52"
+                                Icon="{Binding Icon}"
+                                Quality="{Binding Quality}"/>
+                            <StackPanel
+                                Grid.Column="1"
+                                Margin="8,0,0,0"
+                                VerticalAlignment="Center">
+                                <TextBlock Text="{Binding Name}"/>
+                                <TextBlock
+                                    Opacity="0.7"
+                                    Style="{StaticResource CaptionTextBlockStyle}"
+                                    Text="{Binding LevelDescription}"/>
+                            </StackPanel>
+                            <StackPanel Grid.Column="2" Orientation="Horizontal">
+                                <Button
+                                    Width="48"
+                                    Height="48"
+                                    Margin="8,0,0,0"
+                                    Background="Transparent"
+                                    Command="{Binding Path=DataContext.RemoveEntryCommand, Source={StaticResource BindingProxy}}"
+                                    CommandParameter="{Binding}"
+                                    Content="&#xE74D;"
+                                    FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                    Style="{StaticResource ButtonRevealStyle}"
+                                    ToolTipService.ToolTip="{shuxm:ResourceString Name=ViewPageCultivationRemoveEntry}"/>
+                            </StackPanel>
+                        </Grid>
+                        <MenuFlyoutSeparator Grid.Row="1"/>
+                        <ScrollViewer Grid.Row="2" Margin="0,2,0,0">
+                            <ItemsControl
+                                Margin="8,0,8,8"
+                                ItemTemplate="{ThemeResource CultivateEntryItemTemplate}"
+                                ItemsSource="{Binding Items}"/>
+                        </ScrollViewer>
+                    </Grid>
+                </Border>
+            </DataTemplate>
+
+            <DataTemplate x:Key="StatisticsItemTemplate" x:DataType="shvcu:StatisticsCultivateItem">
+                <Border Background="Transparent">
+                    <shuxcc:HorizontalCard
+                        Background="{Binding IsToday, Converter={ThemeResource BoolToStatisticsBrushSelector}}">
+                        <shuxcc:HorizontalCard.Left>
+                            <Grid>
+                                <shuxc:ItemIcon
+                                    Width="40"
+                                    Height="40"
+                                    Icon="{Binding Material.Icon, Converter={StaticResource ItemIconConverter}}"
+                                    Opacity="{Binding IsFinished, Converter={StaticResource BoolToOpacityConverter}}"
+                                    Quality="{Binding Material.RankLevel}"/>
+                                <FontIcon
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontSize="24"
+                                    Glyph="&#xE73E;"
+                                    Visibility="{Binding IsFinished, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                            </Grid>
+                        </shuxcc:HorizontalCard.Left>
+                        <shuxcc:HorizontalCard.Right>
+                            <Grid Margin="16,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock
+                                    Grid.Column="0"
+                                    VerticalAlignment="Center"
+                                    Text="{Binding Name}"
+                                    TextTrimming="CharacterEllipsis"/>
+                                <TextBlock
+                                    Grid.Column="1"
+                                    VerticalAlignment="Center"
+                                    Text="{Binding CountText}"/>
+                            </Grid>
+                        </shuxcc:HorizontalCard.Right>
+                    </shuxcc:HorizontalCard>
+                </Border>
+            </DataTemplate>
+
+            <DataTemplate x:Key="InventoryItemTemplate" x:DataType="shvcu:InventoryItemView">
+                <Button
+                    Padding="0"
+                    Background="Transparent"
+                    BorderBrush="{x:Null}"
+                    BorderThickness="0">
+                    <shuxcc:HorizontalCard Width="300">
+                        <shuxcc:HorizontalCard.Left>
+                            <shuxc:ItemIcon
+                                Width="40"
+                                Height="40"
+                                Icon="{Binding Material.Icon, Converter={StaticResource ItemIconConverter}}"
+                                Quality="{Binding Material.RankLevel}"/>
+                        </shuxcc:HorizontalCard.Left>
+                        <shuxcc:HorizontalCard.Right>
+                            <Grid Margin="16,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock
+                                    Grid.Column="0"
+                                    VerticalAlignment="Center"
+                                    Text="{Binding Name}"
+                                    TextTrimming="CharacterEllipsis"/>
+                                <TextBlock Grid.Column="1" Text="{Binding Count, Mode=OneWay}"/>
+                            </Grid>
+                        </shuxcc:HorizontalCard.Right>
+                    </shuxcc:HorizontalCard>
+                    <Button.Flyout>
+                        <Flyout>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Style="{StaticResource BaseTextBlockStyle}" Text="{Binding Name}"/>
+                                <NumberBox
+                                    Grid.Row="1"
+                                    MinWidth="160"
+                                    Margin="0,16,0,0"
+                                    Maximum="4294967295"
+                                    Minimum="0"
+                                    Value="{Binding Count, Mode=TwoWay}"/>
+                            </Grid>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <mxi:Interaction.Behaviors>
+        <shuxb:InvokeCommandOnLoadedBehavior Command="{Binding LoadCommand}"/>
+    </mxi:Interaction.Behaviors>
+
+    <Grid x:Name="RootGrid" PointerPressed="OnRootGridPointerPressed">
+        <Border Background="#40000000"/>
+        <shuxc:StandardView HideCondition="{Binding IsInitialized, Converter={StaticResource BoolNegationConverter}}" ShowCondition="{Binding Projects.Count, Converter={StaticResource Int32ToBoolConverter}}">
+        <shuxc:StandardView.EmptyContent>
+            <Border
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                <Border
+                    MinWidth="480"
+                    Padding="16"
+                    Style="{ThemeResource AcrylicBorderCardStyle}">
+                    <StackPanel>
+                        <Image
+                            Width="120"
+                            Height="120"
+                            HorizontalAlignment="Center"
+                            Source="ms-appx:///Resource/Icon/kyxsan09.png"/>
+                        <TextBlock
+                            Margin="0,16,0,0"
+                            HorizontalAlignment="Center"
+                            Style="{StaticResource SubtitleTextBlockStyle}"
+                            Text="{shuxm:ResourceString Name=ViewPageCultivationAddProjectContinue}"/>
+                        <StackPanel Margin="0,24,0,0">
+                            <cwcont:SettingsCard
+                                ActionIconToolTip="{shuxm:ResourceString Name=ViewPageCultivationAddProjectAction}"
+                                Command="{Binding AddProjectCommand}"
+                                Description="{shuxm:ResourceString Name=ViewPageCultivationAddProjectDescription}"
+                                Header="{shuxm:ResourceString Name=ViewPageCultivationAddProject}"
+                                HeaderIcon="{shuxm:FontIcon Glyph=&#xE710;}"
+                                IsClickEnabled="True"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </Border>
+        </shuxc:StandardView.EmptyContent>
+        <Pivot Style="{ThemeResource CardPivotStyle}">
+            <Pivot.RightHeader>
+                <CommandBar DefaultLabelPosition="Right">
+                    <AppBarElementContainer>
+                        <shuxc:SizeRestrictedContentControl Margin="6,6,6,6">
+                            <ComboBox
+                                DisplayMemberPath="Name"
+                                ItemsSource="{Binding Projects}"
+                                SelectedItem="{Binding Projects.CurrentItem, Mode=TwoWay}"
+                                Style="{ThemeResource CommandBarComboBoxStyle}"/>
+                        </shuxc:SizeRestrictedContentControl>
+                    </AppBarElementContainer>
+                    <AppBarButton
+                        Command="{Binding ClearInventoryCommand}"
+                        CommandParameter="{Binding Projects.CurrentItem, Mode=OneWay}"
+                        Icon="{shuxm:FontIcon Glyph=&#xE894;}"
+                        Label="{shuxm:ResourceString Name=ViewPageCultivationClearInventory}"/>
+                    <AppBarButton
+                        Command="{Binding SyncAllAvatarsAndWeaponsCommand}"
+                        Icon="{shuxm:FontIcon Glyph=&#xE895;}"
+                        Label="{shuxm:ResourceString Name=ViewPageCultivationSyncAllAvatarsAndWeapons}"/>
+                    <AppBarButton
+                        Command="{Binding RefreshInventoryByEmbeddedYaeCommand}"
+                        Icon="{shuxm:FontIcon Glyph=&#xE895;}"
+                        Label="{shuxm:ResourceString Name=ViewPageCultivationRefreshInventory}"/>
+                    <AppBarToggleButton
+                        IsChecked="{Binding SyncInventoryToAllProjects, Mode=TwoWay}"
+                        Icon="{shuxm:FontIcon Glyph=&#xE8B7;}"
+                        Label="{shuxm:ResourceString Name=ViewPageCultivationSyncInventoryToAllProjects}"/>
+                    <AppBarButton
+                        Command="{Binding AddProjectCommand}"
+                        Icon="{shuxm:FontIcon Glyph=&#xE710;}"
+                        Label="{shuxm:ResourceString Name=ViewPageCultivationAddProject}"/>
+                    <AppBarButton
+                        Command="{Binding RemoveProjectCommand}"
+                        CommandParameter="{Binding Projects.CurrentItem, Mode=OneWay}"
+                        Icon="{shuxm:FontIcon Glyph=&#xE74D;}"
+                        Label="{shuxm:ResourceString Name=ViewPageCultivationRemoveProject}"/>
+                </CommandBar>
+            </Pivot.RightHeader>
+
+            <PivotItem Header="{shuxm:ResourceString Name=ViewPageCultivationMaterialList}">
+                <shuxc:StandardView HideCondition="{Binding EntriesUpdating}" ShowCondition="{Binding CultivateEntries.Source.Count, Converter={StaticResource Int32ToBoolConverter}}">
+                    <shuxc:StandardView.EmptyContent>
+                        <Border
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                            <Border
+                                MinWidth="480"
+                                Padding="16"
+                                Style="{ThemeResource AcrylicBorderCardStyle}">
+                                <StackPanel Spacing="{StaticResource SettingsCardSpacing}">
+                                    <StackPanel.Resources>
+                                        <Thickness x:Key="SettingsCardPadding">16</Thickness>
+                                        <x:Double x:Key="SettingsCardWrapThreshold">0</x:Double>
+                                        <x:Double x:Key="SettingsCardWrapNoIconThreshold">0</x:Double>
+                                        <x:Double x:Key="SettingsCardMinHeight">0</x:Double>
+                                    </StackPanel.Resources>
+                                    <Image
+                                        Width="120"
+                                        Height="120"
+                                        HorizontalAlignment="Center"
+                                        Source="ms-appx:///Resource/Icon/kyxsan09.png"/>
+                                    <cwcont:SettingsCard
+                                        ActionIconToolTip="{shuxm:ResourceString Name=ViewPageCultivationNavigateAction}"
+                                        Command="{Binding NavigateToPageCommand}"
+                                        Description="{shuxm:ResourceString Name=ViewPageCultivationWikiAvatarDescription}"
+                                        Header="{shuxm:ResourceString Name=ViewWikiAvatarHeader}"
+                                        HeaderIcon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/WikiAvatar.png}"
+                                        IsClickEnabled="True"/>
+                                    <cwcont:SettingsCard
+                                        Command="{Binding MyAvatarCultivateCommand}"
+                                        Description="{shuxm:ResourceString Name=ViewPageCultivationMyAvatarDescription}"
+                                        Header="{shuxm:ResourceString Name=ViewPageCultivationMyAvatarHeader}"
+                                        HeaderIcon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/AvatarProperty.png}"
+                                        IsClickEnabled="True"/>
+                                </StackPanel>
+                            </Border>
+                        </Border>
+                    </shuxc:StandardView.EmptyContent>
+                    <Pivot Style="{ThemeResource CardPivotStyle}">
+                        <Pivot.RightHeader>
+                            <StackPanel Margin="0,0,16,0" Orientation="Horizontal" Spacing="8">
+                                <shuxca:AutoSuggestTokenBox
+                                    Width="600"
+                                    Height="44"
+                                    Margin="6,-2,6,6"
+                                    HorizontalAlignment="Right"
+                                    VerticalContentAlignment="Center"
+                                    AvailableTokens="{Binding SearchData.AvailableTokens}"
+                                    FilterCommand="{Binding FilterCommand}"
+                                    ItemsSource="{Binding SearchData.FilterTokens, Mode=TwoWay}"
+                                    MaximumTokens="5"
+                                    PlaceholderText="{shuxm:ResourceString Name=ViewPageCultivationFilterEntries}"
+                                    QueryIcon="{cw:FontIconSource Glyph=&#xE721;}"
+                                    Style="{StaticResource DefaultAutoSuggestTokenBoxStyle}"
+                                    SuggestedItemTemplate="{StaticResource TokenTemplate}"
+                                    SuggestedItemsSource="{Binding SearchData.AvailableTokens.Values}"
+                                    Text="{Binding SearchData.FilterToken, Mode=TwoWay}"
+                                    TokenItemTemplate="{StaticResource TokenTemplate}"/>
+                                <AppBarButton
+                                    Icon="{shuxm:FontIcon Glyph=&#xE946;}"
+                                    Label="{shuxm:ResourceString Name=ViewPageCultivationResinEstimation}">
+                                    <AppBarButton.Flyout>
+                                        <Flyout Placement="BottomEdgeAlignedRight">
+                                            <StackPanel>
+                                                <Border
+                                                    Padding="8"
+                                                    Background="{ThemeResource LayerOnAcrylicFillColorDefaultBrush}"
+                                                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                                                    BorderThickness="0,0,0,1">
+                                                    <Grid HorizontalAlignment="Stretch" ColumnSpacing="2">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="auto"/>
+                                                            <ColumnDefinition/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <TextBlock
+                                                            Grid.Column="0"
+                                                            Margin="8,0,0,0"
+                                                            VerticalAlignment="Center"
+                                                            Text="{shuxm:ResourceString Name=ViewPageCultivationResinWorldLevel}"/>
+                                                        <NumberBox
+                                                            Grid.Column="1"
+                                                            Width="100"
+                                                            HorizontalAlignment="Right"
+                                                            Maximum="9"
+                                                            Minimum="5"
+                                                            SpinButtonPlacementMode="Inline"
+                                                            Value="{Binding WorldLevel, Mode=TwoWay}"/>
+                                                    </Grid>
+                                                </Border>
+                                                <cwcont:HeaderedItemsControl Margin="0,8,0,4" ItemsSource="{Binding ResinEstimationItems}">
+                                                    <cwcont:HeaderedItemsControl.Header>
+                                                        <shuxcpd:DataTable ColumnSpacing="8">
+                                                            <shuxcpd:DataColumn CanResize="False"/>
+                                                            <shuxcpd:DataColumn CanResize="False"/>
+                                                            <shuxcpd:DataColumn CanResize="False"/>
+                                                            <shuxcpd:DataColumn CanResize="False"/>
+                                                        </shuxcpd:DataTable>
+                                                    </cwcont:HeaderedItemsControl.Header>
+                                                    <cwcont:HeaderedItemsControl.ItemTemplate>
+                                                        <DataTemplate>
+                                                            <shuxcpd:DataRow Margin="16,0,16,8">
+                                                                <TextBlock VerticalAlignment="Center" Text="{Binding Category}"/>
+                                                                <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Spacing="2">
+                                                                    <BitmapIcon Width="20" ShowAsMonochrome="False" UriSource="ms-appx:///Resource/Icon/UI_ItemIcon_106.png"/>
+                                                                    <TextBlock Text="{Binding TotalResin}"/>
+                                                                </StackPanel>
+                                                                <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Spacing="2">
+                                                                    <BitmapIcon Width="20" ShowAsMonochrome="False" UriSource="ms-appx:///Resource/Icon/UI_ItemIcon_210.png"/>
+                                                                    <TextBlock Text="{Binding FragileResin}"/>
+                                                                </StackPanel>
+                                                                <TextBlock VerticalAlignment="Center" Text="{Binding DaysText}"/>
+                                                            </shuxcpd:DataRow>
+                                                        </DataTemplate>
+                                                    </cwcont:HeaderedItemsControl.ItemTemplate>
+                                                </cwcont:HeaderedItemsControl>
+                                            </StackPanel>
+                                        </Flyout>
+                                    </AppBarButton.Flyout>
+                                </AppBarButton>
+                            </StackPanel>
+                        </Pivot.RightHeader>
+                        <PivotItem Header="{shuxm:ResourceString Name=ViewPageCultivationCultivateEntry}" Tag="Entry">
+                            <Border Margin="16" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                                <Border Style="{ThemeResource AcrylicBorderCardStyle}">
+                                    <ScrollViewer Padding="16" HorizontalScrollBarVisibility="Disabled">
+                                        <ItemsRepeater ItemTemplate="{StaticResource CultivateEntryTemplate}" ItemsSource="{Binding CultivateEntries}">
+                                            <ItemsRepeater.Layout>
+                                                <shuxcl:UniformStaggeredLayout
+                                                    MinColumnSpacing="12"
+                                                    MinItemWidth="300"
+                                                    MinRowSpacing="12"/>
+                                            </ItemsRepeater.Layout>
+                                        </ItemsRepeater>
+                                    </ScrollViewer>
+                                </Border>
+                            </Border>
+                        </PivotItem>
+                        <PivotItem Header="{shuxm:ResourceString Name=ViewPageCultivationMaterialStatistics}" Tag="Statistics">
+                            <Border Margin="16" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                                <Border Style="{ThemeResource AcrylicBorderCardStyle}">
+                                    <ScrollViewer Padding="16" HorizontalScrollBarVisibility="Disabled">
+                                        <ItemsControl ItemTemplate="{StaticResource StatisticsItemTemplate}" ItemsSource="{Binding StatisticsItems}">
+                                            <ItemsControl.ItemsPanel>
+                                                <ItemsPanelTemplate>
+                                                    <shuxcp:UniformPanel
+                                                        ColumnSpacing="12"
+                                                        MinItemWidth="240"
+                                                        RowSpacing="12"/>
+                                                </ItemsPanelTemplate>
+                                            </ItemsControl.ItemsPanel>
+                                        </ItemsControl>
+                                    </ScrollViewer>
+                                </Border>
+                            </Border>
+                        </PivotItem>
+                    </Pivot>
+                </shuxc:StandardView>
+            </PivotItem>
+            <PivotItem Header="{shuxm:ResourceString Name=ViewPageCultivationInventoryItem}">
+                <Border Margin="16" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                    <Border Style="{ThemeResource AcrylicBorderCardStyle}">
+                        <GridView
+                            Padding="16,16,10,10"
+                            ItemTemplate="{StaticResource InventoryItemTemplate}"
+                            ItemsSource="{Binding InventoryItems}"
+                            SelectionMode="None">
+                            <GridView.ItemContainerStyle>
+                                <Style BasedOn="{StaticResource DefaultGridViewItemStyle}" TargetType="GridViewItem">
+                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                    <Setter Property="Margin" Value="0,0,6,6"/>
+                                </Style>
+                            </GridView.ItemContainerStyle>
+                        </GridView>
+                    </Border>
+                </Border>
+            </PivotItem>
+        </Pivot>
+    </shuxc:StandardView>
+    </Grid>
+</shuxc:ScopedPage>

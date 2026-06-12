@@ -66,7 +66,19 @@ internal sealed partial class AnnouncementViewModel : Abstraction.ViewModel
         try
         {
             AnnouncementWrapper? announcementWrapper = await announcementService.GetAnnouncementWrapperAsync(cultureOptions.LanguageCode, appOptions.Region.Value, token).ConfigureAwait(false);
+
+            if (token.IsCancellationRequested || IsViewUnloaded.Value)
+            {
+                return;
+            }
+
             await taskContext.SwitchToMainThreadAsync();
+
+            if (IsViewUnloaded.Value)
+            {
+                return;
+            }
+
             Announcement = announcementWrapper;
             DeferContentLoader?.Load("GameAnnouncementPivot");
             StartTimeRefreshTimer();
@@ -230,7 +242,17 @@ internal sealed partial class AnnouncementViewModel : Abstraction.ViewModel
             });
         }
 
+        if (token.IsCancellationRequested)
+        {
+            return;
+        }
+
         await taskContext.SwitchToMainThreadAsync();
+
+        if (IsViewUnloaded.Value)
+        {
+            return;
+        }
 
         IAdvancedCollectionView<CalendarDay> view = weekDays.AsAdvancedCollectionView();
 

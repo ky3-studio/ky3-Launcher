@@ -86,13 +86,15 @@ internal sealed partial class GachaLogViewModel : Abstraction.ViewModel
             }
 
             metadataContext = await metadataService.GetContextAsync<GachaLogServiceMetadataContext>(token).ConfigureAwait(false);
+            IAdvancedDbCollectionView<GachaArchive> archives;
             using (await EnterCriticalSectionAsync().ConfigureAwait(false))
             {
-                IAdvancedDbCollectionView<GachaArchive> archives = await gachaLogService.GetArchiveCollectionAsync().ConfigureAwait(false);
-                await taskContext.SwitchToMainThreadAsync();
-                Archives = archives;
-                Archives.MoveCurrentTo(Archives.Source.SelectedOrFirstOrDefault());
+                archives = await gachaLogService.GetArchiveCollectionAsync().ConfigureAwait(false);
             }
+
+            await taskContext.SwitchToMainThreadAsync();
+            Archives = archives;
+            Archives.MoveCurrentTo(Archives.Source.SelectedOrFirstOrDefault());
 
             if (Archives.CurrentItem is null)
             {
@@ -325,13 +327,15 @@ internal sealed partial class GachaLogViewModel : Abstraction.ViewModel
 
         if (count > 0 && archiveId != default)
         {
+            GachaArchive archive;
             using (await EnterCriticalSectionAsync().ConfigureAwait(false))
             {
-                GachaArchive archive = await gachaLogService.EnsureArchiveInCollectionAsync(archiveId).ConfigureAwait(false);
-                await taskContext.SwitchToMainThreadAsync();
-                Archives?.MoveCurrentTo(archive);
-                await UpdateStatisticsAsync(archive).ConfigureAwait(false);
+                archive = await gachaLogService.EnsureArchiveInCollectionAsync(archiveId).ConfigureAwait(false);
             }
+
+            await taskContext.SwitchToMainThreadAsync();
+            Archives?.MoveCurrentTo(archive);
+            await UpdateStatisticsAsync(archive).ConfigureAwait(false);
         }
     }
 

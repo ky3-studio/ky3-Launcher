@@ -9,12 +9,10 @@
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using CommunityToolkit.Mvvm.Messaging;
 using kyxsan.Core.DataTransfer;
 using kyxsan.Service.Notification;
 using System.Collections.ObjectModel;
 using System.Net.Http;
-using System.Windows.Input;
 
 namespace kyxsan.Service.RedeemCode;
 

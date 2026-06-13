@@ -29,7 +29,7 @@
 		<MvvmToolkitEnableINotifyPropertyChangingSupport>false</MvvmToolkitEnableINotifyPropertyChangingSupport>
 		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
-		<NoWarn>CS1591</NoWarn>
+		<NoWarn>CS1591;NU1603</NoWarn>
 		<AppxPackage>false</AppxPackage>
 		<WindowsPackageType>None</WindowsPackageType>
 		<Version>6.6.3</Version>
@@ -215,12 +215,19 @@
 			<_OutputDir>$(BaseOutputPath)$(Configuration)</_OutputDir>
 		</PropertyGroup>
 
-		<Delete Files="$(_OutputDir)\$(AssemblyName).xml" Condition="Exists('$(_OutputDir)\$(AssemblyName).xml')" />
-
 		<RemoveDir Directories="$(_OutputDir)\BuildHost-net472" Condition="Exists('$(_OutputDir)\BuildHost-net472')" />
 		<RemoveDir Directories="$(_OutputDir)\BuildHost-netcore" Condition="Exists('$(_OutputDir)\BuildHost-netcore')" />
 
 
 		<Exec Command="for /d %%d in (&quot;$(_OutputDir)\*-*&quot;) do ( if /i not &quot;%%~nxd&quot;==&quot;zh-CN&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hans&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hant&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-TW&quot; if /i not &quot;%%~nxd&quot;==&quot;Microsoft.UI.Xaml&quot; rd /s /q &quot;%%d&quot; )" />
+	</Target>
+
+	<Target Name="CleanPublishOutput" AfterTargets="Publish">
+		<Delete Files="$(PublishDir)$(AssemblyName).xml" Condition="Exists('$(PublishDir)$(AssemblyName).xml')" />
+
+		<RemoveDir Directories="$(PublishDir)BuildHost-net472" Condition="Exists('$(PublishDir)BuildHost-net472')" />
+		<RemoveDir Directories="$(PublishDir)BuildHost-netcore" Condition="Exists('$(PublishDir)BuildHost-netcore')" />
+
+		<Exec Command="for /d %%d in (&quot;$(PublishDir)*-*&quot;) do ( if /i not &quot;%%~nxd&quot;==&quot;zh-CN&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hans&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hant&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-TW&quot; if /i not &quot;%%~nxd&quot;==&quot;Microsoft.UI.Xaml&quot; rd /s /q &quot;%%d&quot; )" />
 	</Target>
 </Project>

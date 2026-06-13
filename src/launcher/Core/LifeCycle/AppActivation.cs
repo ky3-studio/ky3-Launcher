@@ -25,7 +25,6 @@ using kyxsan.Service.Metadata;
 using kyxsan.Service.Navigation;
 using kyxsan.Service.Notification;
 using kyxsan.Service.RemoteConfig;
-using kyxsan.Service.Update;
 using kyxsan.UI.Input.HotKey;
 using kyxsan.UI.Shell;
 using kyxsan.UI.Windowing;
@@ -250,23 +249,6 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
             announcementNotifier.Attach(mainWindow);
         }
         announcementNotifier.Start();
-
-        _ = Task.Run(async () =>
-        {
-            try
-            {
-                await Task.Delay(3000).ConfigureAwait(false);
-                IUpdateService updateService = serviceProvider.GetRequiredService<IUpdateService>();
-                CheckUpdateResult result = await updateService.CheckUpdateAsync().ConfigureAwait(false);
-                if (result.Kind is CheckUpdateResultKind.UpdateAvailable)
-                {
-                    await updateService.TriggerUpdateAsync(result).ConfigureAwait(false);
-                }
-            }
-            catch
-            {
-            }
-        });
 
         _ = Task.Run(async () =>
         {

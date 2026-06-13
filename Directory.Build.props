@@ -6,7 +6,9 @@
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
   </PropertyGroup>
 
+  <!-- Temporarily disabled for publish
   <Target Name="CleanObjAfterBuild" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Release'">
     <RemoveDir Directories="$(BaseIntermediateOutputPath)" />
   </Target>
+  -->
 </Project>

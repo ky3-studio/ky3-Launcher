@@ -104,7 +104,7 @@ internal sealed partial class CultivationService : ICultivationService
         foreach (InventoryItem inventoryItem in cultivationRepository.GetInventoryItemImmutableArrayByProjectId(projectId))
         {
             token.ThrowIfCancellationRequested();
-            ref StatisticsCultivateItem? existedItem = ref CollectionsMarshal.GetValueRefOrNullRef(resultItems, inventoryItem.ItemId);
+            ref StatisticsCultivateItem existedItem = ref CollectionsMarshal.GetValueRefOrNullRef(resultItems, inventoryItem.ItemId);
             if (!System.Runtime.CompilerServices.Unsafe.IsNullRef(in existedItem))
             {
                 existedItem.Current = inventoryItem.Count;

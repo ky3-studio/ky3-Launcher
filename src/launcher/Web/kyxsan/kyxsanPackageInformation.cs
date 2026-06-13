@@ -14,9 +14,9 @@ internal sealed class kyxsanPackageInformation
     [JsonPropertyName("version")]
     public Version Version { get; set; } = default!;
 
-    [JsonPropertyName("validation")]
-    public string Validation { get; set; } = default!;
+    [JsonPropertyName("patch_url")]
+    public string PatchUrl { get; set; } = string.Empty;
 
-    [JsonPropertyName("mirrors")]
-    public List<kyxsanPackageMirror> Mirrors { get; set; } = default!;
+    [JsonPropertyName("patch_sha256")]
+    public string PatchSha256 { get; set; } = string.Empty;
 }

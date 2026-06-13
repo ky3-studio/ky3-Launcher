@@ -8,6 +8,7 @@
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using kyxsan.Core;
 using kyxsan.Core.ApplicationModel;
@@ -18,12 +19,15 @@ using kyxsan.Factory.ContentDialog;
 using kyxsan.Service.Navigation;
 using kyxsan.Service.Notification;
 using kyxsan.Service.Update;
-using kyxsan.Service.RemoteConfig;
 using kyxsan.Service;
+using kyxsan.Service.RemoteConfig;
 using kyxsan.Core.IO.Http.Proxy;
 using kyxsan.UI.Xaml.Behavior.Action;
 using kyxsan.UI.Xaml.View.Dialog;
 using kyxsan.UI.Xaml.View.Window.WebView2;
+using kyxsan.Web.kyxsan;
+using System.Diagnostics;
+using System.IO;
 using Windows.System;
 
 namespace kyxsan.ViewModel.Setting;
@@ -240,7 +244,62 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
             _ => default!,
         }).ConfigureAwait(false);
 
-        await updateService.TriggerUpdateAsync(result).ConfigureAwait(false);
+        if (result.Kind is not CheckUpdateResultKind.UpdateAvailable || result.PackageInformation is null)
+        {
+            return;
+        }
+
+        if (!string.IsNullOrEmpty(result.PackageInformation.PatchUrl) &&
+            !string.IsNullOrEmpty(result.PackageInformation.PatchSha256))
+        {
+            await DownloadPatchAndRestartAsync(result.PackageInformation).ConfigureAwait(false);
+        }
+        else
+        {
+            await taskContext.InvokeOnMainThreadAsync(() => UpdateInfo = SH.ViewModelMainUpdatePatchNotAvailable).ConfigureAwait(false);
+        }
+    }
+
+    private async Task DownloadPatchAndRestartAsync(kyxsanPackageInformation packageInfo)
+    {
+        ITaskContext ctx = serviceProvider.GetRequiredService<ITaskContext>();
+
+        await ctx.InvokeOnMainThreadAsync(() => UpdateInfo = SH.ViewModelSettingPatchDownloading).ConfigureAwait(false);
+
+        bool success = await MainViewModel.DownloadAndExtractPatchAsync(packageInfo).ConfigureAwait(false);
+
+        if (!success)
+        {
+            await ctx.InvokeOnMainThreadAsync(() => UpdateInfo = SH.ViewModelSettingPatchVerifyFailed).ConfigureAwait(false);
+            return;
+        }
+
+        await ctx.InvokeOnMainThreadAsync(() => UpdateInfo = SH.ViewModelSettingPatchReadyRestarting).ConfigureAwait(false);
+        await Task.Delay(500).ConfigureAwait(false);
+
+        string appDir = PackageIdentityAdapter.AppDirectory;
+        string updaterPath = Path.Combine(appDir, "updater.exe");
+
+        if (!File.Exists(updaterPath))
+        {
+            await ctx.InvokeOnMainThreadAsync(() => UpdateInfo = SH.ViewModelSettingPatchUpdaterMissing).ConfigureAwait(false);
+            return;
+        }
+
+        string filesDir = Path.Combine(kyxsanRuntime.DataDirectory, "UpdateCache", "files");
+        int pid = Environment.ProcessId;
+        string exeName = Path.GetFileName(Process.GetCurrentProcess().MainModule?.FileName ?? "launcher.exe");
+
+        ctx.DispatcherQueue.TryEnqueue(() =>
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = updaterPath,
+                Arguments = $"--pid {pid} --source \"{filesDir}\" --target \"{appDir}\" --exe \"{exeName}\"",
+                UseShellExecute = true,
+            });
+            Application.Current.Exit();
+        });
     }
 
     [Command("RestartAsElevatedCommand")]

@@ -4,11 +4,11 @@ namespace kyxsan.Service.RemoteConfig;
 
 internal static class BackendApiRoutes
 {
-    internal const string ApiBase = "https://8.134.75.17:9000/api";
+    internal const string ServerRoot = "https://8.134.75.17:9000";
+    internal const string ApiBase = $"{ServerRoot}/api";
     internal const string StaticBase = "http://8.134.75.17";
 
     internal const string Announcements = $"{ApiBase}/announcements";
-    internal const string Config = $"{ApiBase}/config";
     internal const string Heartbeat = $"{ApiBase}/heartbeat";
 
     internal const string FeedbackImage = $"{ApiBase}/feedback-image";

@@ -4,7 +4,7 @@
 #define AppExe        "ky3launcher.exe"
 #define AppId         "{{8F3A1C2E-7B4D-4E5A-9F6B-2A1D3C4E5F60}"
 #define SrcDir        "D:\kyxsan-launcher\bin\Release"
-#define IconFile      "D:\kyxsan-launcher\ky3 launcher\kyxsan.launcher\Assets\Logo.ico"
+#define IconFile      "D:\kyxsan-launcher\ky3 launcher\src\launcher\Assets\Logo.ico"
 #define FontName      "Microsoft YaHei UI"
 #define OutDir        "D:\kyxsan-launcher\installer"
 
@@ -59,7 +59,7 @@ Name: "fileassoc";     Description: "将 ky3 Launcher 注册为 .ky3 文件的�
 
 [Files]
 Source: "{#SrcDir}\{#AppExe}";  DestDir: "{app}"; Flags: ignoreversion
-Source: "{#SrcDir}\*";          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Excludes: "*.pdb,*.lib,*.exp,*.xml,BuildHost-*,obj\*"
+Source: "{#SrcDir}\*";          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Excludes: "*.pdb,*.lib,*.exp,*.xml,BuildHost-*,obj\*,kyxsan.SourceGeneration.*"
 Source: "redist\vc_redist.x64.exe";              DestDir: "{tmp}"; Flags: deleteafterinstall; Check: NeedVCRedist
 Source: "redist\MicrosoftEdgeWebView2Setup.exe";  DestDir: "{tmp}"; Flags: deleteafterinstall; Check: NeedWebView2
 

@@ -6,6 +6,7 @@ using kyxsan.Model.Entity.Primitive;
 using kyxsan.Model.Intrinsic;
 using kyxsan.Model.Intrinsic.Frozen;
 using kyxsan.Model.Metadata.Avatar;
+using kyxsan.Model.Metadata.Weapon;
 using kyxsan.Model.Primitive;
 using kyxsan.Service.Cultivation;
 using kyxsan.UI.Xaml.Control.AutoSuggestBox;
@@ -50,7 +51,7 @@ internal static class CultivateEntryViewFilter
                         WeaponType weaponType = entry.Type switch
                         {
                             CultivateType.AvatarAndSkill => metadataContext.IdAvatarMap.TryGetValue((AvatarId)entry.Id, out Avatar? avatar) ? avatar.Weapon : WeaponType.WEAPON_NONE,
-                            CultivateType.Weapon => metadataContext.IdWeaponMap.TryGetValue((WeaponId)entry.Id, out var weapon) ? weapon.WeaponType : WeaponType.WEAPON_NONE,
+                            CultivateType.Weapon => metadataContext.IdWeaponMap.TryGetValue((WeaponId)entry.Id, out Weapon? weapon) ? weapon.WeaponType : WeaponType.WEAPON_NONE,
                             _ => WeaponType.WEAPON_NONE,
                         };
 

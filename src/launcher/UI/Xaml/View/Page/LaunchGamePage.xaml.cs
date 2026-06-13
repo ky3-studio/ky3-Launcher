@@ -15,7 +15,6 @@ using kyxsan.Factory.ContentDialog;
 using kyxsan.Service.Game;
 using kyxsan.Service.Game.Launching;
 using kyxsan.Service.Game.Account;
-using kyxsan.Service.RemoteConfig;
 using kyxsan.UI.Content;
 using kyxsan.UI.Xaml.Control;
 using kyxsan.ViewModel.Game;
@@ -37,7 +36,6 @@ internal sealed partial class LaunchGamePage : ScopedPage
         InitializeComponent();
         Unloaded += OnPageUnloaded;
         Loaded += OnPageLoaded;
-        InjectionOptionsConfigService.Changed += OnInjectionConfigChanged;
 
         _gameStateTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
         _gameStateTimer.Tick += GameStateTimer_Tick;
@@ -54,9 +52,6 @@ internal sealed partial class LaunchGamePage : ScopedPage
         {
             _injectionToggleChanging = false;
         });
-
-        _ = Task.CompletedTask; // Start background polling for injection option visibility
-        InjectionOptionsConfigService.StartPolling();
     }
 
     private void GameStateTimer_Tick(object? sender, object e)
@@ -91,44 +86,6 @@ internal sealed partial class LaunchGamePage : ScopedPage
         }
     }
 
-    private void OnInjectionConfigChanged(HashSet<string> disabled)
-    {
-        DispatcherQueue?.TryEnqueue(() => ApplyVisibility(disabled));
-    }
-
-    private void ApplyVisibility(HashSet<string> disabled)
-    {
-        (string key, UIElement[] elements)[] mapping =
-        [
-            ("fov", [Opt_fov, Opt_fov_val]),
-            ("disable_fog", [Opt_disable_fog]),
-            ("portable_craft", [Opt_portable_craft]),
-            ("fps", [Opt_fps, Opt_fps_val]),
-            ("disable_char_fade", [Opt_disable_char_fade]),
-            ("disable_vsync", [Opt_disable_vsync]),
-            ("hide_quest_banner", [Opt_hide_quest_banner]),
-            ("hide_menu_uid", [Opt_hide_menu_uid]),
-            ("redirect_combine", [Opt_redirect_combine, Opt_redirect_combine_val]),
-            ("remove_team_progress", [Opt_remove_team_progress]),
-            ("disable_event_camera", [Opt_disable_event_camera]),
-            ("disable_damage_text", [Opt_disable_damage_text]),
-            ("touch_screen", [Opt_touch_screen]),
-            ("redirect_dispatch", [Opt_redirect_dispatch, Opt_redirect_dispatch_val]),
-            ("enable_cooking", [Opt_enable_cooking, Opt_enable_cooking_val]),
-            ("enable_forge", [Opt_enable_forge, Opt_enable_forge_val]),
-            ("hide_uid", [Opt_hide_uid]),
-        ];
-
-        foreach ((string key, UIElement[] elements) in mapping)
-        {
-            Visibility vis = disabled.Contains(key) ? Visibility.Collapsed : Visibility.Visible;
-            foreach (UIElement el in elements)
-            {
-                el.Visibility = vis;
-            }
-        }
-    }
-
     protected override void LoadingOverride()
     {
         InitializeDataContext<LaunchGameViewModel>();
@@ -155,7 +112,6 @@ internal sealed partial class LaunchGamePage : ScopedPage
         {
             RefreshResolution(options);
         }
-        ApplyVisibility(InjectionOptionsConfigService.Current);
     }
 
     private void OnPageUnloaded(object sender, RoutedEventArgs e)

@@ -14,8 +14,4 @@ internal interface IUpdateService
     string? UpdateInfo { get; }
 
     ValueTask<CheckUpdateResult> CheckUpdateAsync(CancellationToken token = default);
-
-    ValueTask<string?> DownloadUpdateAsync(CheckUpdateResult result, Action<long, long>? onProgress = null, CancellationToken token = default);
-
-    ValueTask TriggerUpdateAsync(CheckUpdateResult result, CancellationToken token = default);
 }

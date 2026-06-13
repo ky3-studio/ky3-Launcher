@@ -115,6 +115,48 @@
                         Spacing="6">
 
                         <Button
+                            Padding="0"
+                            HorizontalContentAlignment="Stretch"
+                            VerticalContentAlignment="Stretch"
+                            Command="{Binding RestartToUpdateCommand}"
+                            Style="{ThemeResource SettingButtonStyle}"
+                            Visibility="{Binding IsUpdateReady, Converter={StaticResource BoolToVisibilityConverter}}">
+                            <Button.Resources>
+                                <SineEase x:Key="UpdateEasingFunction" EasingMode="EaseInOut"/>
+                                <Storyboard x:Name="UpdateFlashStoryBoard" RepeatBehavior="Forever">
+                                    <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)">
+                                        <EasingColorKeyFrame
+                                            EasingFunction="{StaticResource UpdateEasingFunction}"
+                                            KeyTime="0:0:0"
+                                            Value="{ThemeResource ControlFillColorTransparent}"/>
+                                        <EasingColorKeyFrame
+                                            EasingFunction="{StaticResource UpdateEasingFunction}"
+                                            KeyTime="0:0:0.5"
+                                            Value="{ThemeResource SystemFillColorCautionBackground}"/>
+                                        <EasingColorKeyFrame
+                                            EasingFunction="{StaticResource UpdateEasingFunction}"
+                                            KeyTime="0:0:1"
+                                            Value="{ThemeResource ControlFillColorTransparent}"/>
+                                    </ColorAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </Button.Resources>
+                            <Button.Content>
+                                <Border Padding="16,6">
+                                    <Border.Background>
+                                        <SolidColorBrush Color="{ThemeResource ControlFillColorTransparent}"/>
+                                    </Border.Background>
+                                    <mxi:Interaction.Behaviors>
+                                        <shuxb:FocusAnimationBehavior Storyboard="{StaticResource UpdateFlashStoryBoard}" Watch="{Binding UpdateReadyNotifyToken}"/>
+                                    </mxi:Interaction.Behaviors>
+                                    <TextBlock
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Text="{shuxm:ResourceString Name=UIViewMainTitleBarRestartToUpdateAction}"/>
+                                </Border>
+                            </Button.Content>
+                        </Button>
+
+                        <Button
                             Padding="16,6"
                             Style="{ThemeResource SettingButtonStyle}">
                             <Button.Content>

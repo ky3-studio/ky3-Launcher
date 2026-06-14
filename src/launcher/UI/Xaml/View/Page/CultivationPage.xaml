@@ -361,9 +361,22 @@
                         Icon="{shuxm:FontIcon Glyph=&#xE894;}"
                         Label="{shuxm:ResourceString Name=ViewPageCultivationClearInventory}"/>
                     <AppBarButton
-                        Command="{Binding SyncAllAvatarsAndWeaponsCommand}"
                         Icon="{shuxm:FontIcon Glyph=&#xE895;}"
-                        Label="{shuxm:ResourceString Name=ViewPageCultivationSyncAllAvatarsAndWeapons}"/>
+                        Label="{shuxm:ResourceString Name=ViewPageCultivationSyncAllAvatarsAndWeapons}">
+                        <AppBarButton.Flyout>
+                            <MenuFlyout>
+                                <MenuFlyoutItem
+                                    Command="{Binding SyncAllAvatarsCommand}"
+                                    Text="{shuxm:ResourceString Name=ViewPageCultivationSyncAllAvatars}"/>
+                                <MenuFlyoutItem
+                                    Command="{Binding SyncAllWeaponsCommand}"
+                                    Text="{shuxm:ResourceString Name=ViewPageCultivationSyncAllWeapons}"/>
+                                <MenuFlyoutItem
+                                    Command="{Binding MyAvatarCultivateCommand}"
+                                    Text="{shuxm:ResourceString Name=ViewPageCultivationMyAvatars}"/>
+                            </MenuFlyout>
+                        </AppBarButton.Flyout>
+                    </AppBarButton>
                     <AppBarButton
                         Command="{Binding RefreshInventoryByEmbeddedYaeCommand}"
                         Icon="{shuxm:FontIcon Glyph=&#xE895;}"

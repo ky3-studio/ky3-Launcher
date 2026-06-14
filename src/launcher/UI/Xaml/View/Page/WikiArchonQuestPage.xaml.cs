@@ -7,19 +7,20 @@
 // Modified by kyxsan.
 // Licensed under the MIT license.
 
-namespace kyxsan.UI.Xaml.Control.AutoSuggestBox;
+using kyxsan.UI.Xaml.Control;
+using kyxsan.ViewModel.Wiki;
 
-internal enum SearchTokenKind
+namespace kyxsan.UI.Xaml.View.Page;
+
+internal sealed partial class WikiArchonQuestPage : ScopedPage
 {
-    None,
-    CultivateType,
-    ItemQuality,
-    WeaponType,
-    FightProperty,
-    ElementName,
-    AssociationType,
-    BodyType,
-    Avatar,
-    Weapon,
-    Region,
+    public WikiArchonQuestPage()
+    {
+        InitializeComponent();
+    }
+
+    protected override void LoadingOverride()
+    {
+        InitializeDataContext<WikiArchonQuestViewModel>();
+    }
 }

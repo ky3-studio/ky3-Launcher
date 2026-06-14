@@ -12,6 +12,7 @@ using kyxsan.Model.Metadata.Achievement;
 using kyxsan.Model.Metadata.Avatar;
 using kyxsan.Model.Metadata.Item;
 using kyxsan.Model.Metadata.Monster;
+using kyxsan.Model.Metadata.Quest;
 using kyxsan.Model.Metadata.Reliquary;
 using kyxsan.Model.Metadata.Tower;
 using kyxsan.Model.Metadata.Weapon;
@@ -26,6 +27,11 @@ internal static class MetadataServiceImmutableArrayExtension
         public ValueTask<ImmutableArray<Model.Metadata.Achievement.Achievement>> GetAchievementArrayAsync(CancellationToken token = default)
         {
             return metadataService.FromCacheOrFileAsync<Model.Metadata.Achievement.Achievement>(MetadataFileStrategies.Achievement, token);
+        }
+
+        public ValueTask<ImmutableArray<ArchonQuest>> GetArchonQuestArrayAsync(CancellationToken token = default)
+        {
+            return metadataService.FromCacheOrFileAsync<ArchonQuest>(MetadataFileStrategies.ArchonQuest, token);
         }
 
         public ValueTask<ImmutableArray<Chapter>> GetChapterArrayAsync(CancellationToken token = default)

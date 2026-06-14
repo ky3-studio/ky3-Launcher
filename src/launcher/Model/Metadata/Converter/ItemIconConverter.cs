@@ -21,9 +21,17 @@ internal sealed partial class ItemIconConverter : ValueConverter<string, Uri>, I
             return default!;
         }
 
-        return name.StartsWith("UI_RelicIcon_", StringComparison.Ordinal)
-            ? RelicIconConverter.IconNameToUri(name)
-            : StaticResourcesEndpoints.StaticRaw("ItemIcon", $"{name}.png").ToUri();
+        if (name.StartsWith("UI_RelicIcon_", StringComparison.Ordinal))
+        {
+            return RelicIconConverter.IconNameToUri(name);
+        }
+
+        if (name.StartsWith("UI_EquipIcon_", StringComparison.Ordinal))
+        {
+            return EquipIconConverter.IconNameToUri(name);
+        }
+
+        return StaticResourcesEndpoints.StaticRaw("ItemIcon", $"{name}.png").ToUri();
     }
 
     public override Uri Convert(string from)

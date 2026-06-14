@@ -48,6 +48,16 @@ internal sealed partial class CultivationRepository : ICultivationRepository
         ((IRepository<CultivateEntry>)this).Add(entry);
     }
 
+    public void AddCultivateEntryRange(IEnumerable<CultivateEntry> entries)
+    {
+        ((IRepository<CultivateEntry>)this).AddRange(entries);
+    }
+
+    public void AddLevelInformationRange(IEnumerable<CultivateEntryLevelInformation> levelInformations)
+    {
+        ((IRepository<CultivateEntryLevelInformation>)this).AddRange(levelInformations);
+    }
+
     public void RemoveCultivateEntryById(Guid entryId)
     {
         ((IRepository<CultivateEntry>)this).DeleteByInnerId(entryId);

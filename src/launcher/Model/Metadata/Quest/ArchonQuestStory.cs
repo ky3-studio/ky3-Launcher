@@ -7,19 +7,17 @@
 // Modified by kyxsan.
 // Licensed under the MIT license.
 
-namespace kyxsan.UI.Xaml.Control.AutoSuggestBox;
+using System.Collections.Immutable;
 
-internal enum SearchTokenKind
+namespace kyxsan.Model.Metadata.Quest;
+
+internal sealed class ArchonQuestStory
 {
-    None,
-    CultivateType,
-    ItemQuality,
-    WeaponType,
-    FightProperty,
-    ElementName,
-    AssociationType,
-    BodyType,
-    Avatar,
-    Weapon,
-    Region,
+    public required uint Id { get; init; }
+
+    public required string Title { get; init; }
+
+    public string? Desc { get; init; }
+
+    public required ImmutableArray<ArchonQuestReward> Rewards { get; init; }
 }

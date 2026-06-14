@@ -298,4 +298,72 @@ internal sealed partial class CultivationService : ICultivationService
             cultivationRepository.AddCultivateItemRange(items);
         }
     }
+
+    public void BatchAddAllAvatarsAndWeapons(CultivateProject project, IEnumerable<Avatar> avatars, IEnumerable<Weapon> weapons, CultivateLevelInput levelInput)
+    {
+        Guid projectId = project.InnerId;
+
+        List<CultivateEntry> allEntries = [];
+        List<CultivateEntryLevelInformation> allLevelInfos = [];
+        List<CultivateItem> allItems = [];
+
+        // 收集所有角色数据
+        foreach (Avatar avatar in avatars)
+        {
+            CultivateEntry entry = CultivateEntry.From(projectId, CultivateType.AvatarAndSkill, (uint)avatar.Id);
+            entry.InnerId = Guid.NewGuid();
+            allEntries.Add(entry);
+
+            allLevelInfos.Add(new CultivateEntryLevelInformation
+            {
+                EntryId = entry.InnerId,
+                AvatarLevelFrom = levelInput.AvatarLevelFrom,
+                AvatarLevelTo = levelInput.AvatarLevelTo,
+                SkillALevelFrom = levelInput.SkillALevelFrom,
+                SkillALevelTo = levelInput.SkillALevelTo,
+                SkillELevelFrom = levelInput.SkillELevelFrom,
+                SkillELevelTo = levelInput.SkillELevelTo,
+                SkillQLevelFrom = levelInput.SkillQLevelFrom,
+                SkillQLevelTo = levelInput.SkillQLevelTo,
+            });
+
+            Dictionary<uint, uint> materials = OfflineCalculator.CalculateAvatarMaterials(avatar, levelInput);
+            foreach ((uint materialId, uint count) in materials)
+            {
+                if (count > 0)
+                {
+                    allItems.Add(CultivateItem.From(entry.InnerId, materialId, count));
+                }
+            }
+        }
+
+        // 收集所有武器数据
+        foreach (Weapon weapon in weapons)
+        {
+            CultivateEntry entry = CultivateEntry.From(projectId, CultivateType.Weapon, (uint)weapon.Id);
+            entry.InnerId = Guid.NewGuid();
+            allEntries.Add(entry);
+
+            allLevelInfos.Add(new CultivateEntryLevelInformation
+            {
+                EntryId = entry.InnerId,
+                WeaponLevelFrom = levelInput.WeaponLevelFrom,
+                WeaponLevelTo = levelInput.WeaponLevelTo,
+            });
+
+            Dictionary<uint, uint> materials = OfflineCalculator.CalculateWeaponMaterials(weapon, levelInput.WeaponLevelFrom, levelInput.WeaponLevelTo, levelInput.WeaponAscended);
+            foreach ((uint materialId, uint count) in materials)
+            {
+                if (count > 0)
+                {
+                    allItems.Add(CultivateItem.From(entry.InnerId, materialId, count));
+                }
+            }
+        }
+
+        // 一次性写入数据库（只触发 3 次 SaveChanges）
+        cultivationRepository.AddCultivateEntryRange(allEntries);
+        cultivationRepository.AddLevelInformationRange(allLevelInfos);
+        cultivationRepository.AddCultivateItemRange(allItems);
+    }
 }

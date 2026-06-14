@@ -7,19 +7,17 @@
 // Modified by kyxsan.
 // Licensed under the MIT license.
 
-namespace kyxsan.UI.Xaml.Control.AutoSuggestBox;
+namespace kyxsan.Model.Metadata.Quest;
 
-internal enum SearchTokenKind
+internal sealed class ArchonQuestReward
 {
-    None,
-    CultivateType,
-    ItemQuality,
-    WeaponType,
-    FightProperty,
-    ElementName,
-    AssociationType,
-    BodyType,
-    Avatar,
-    Weapon,
-    Region,
+    public required uint Id { get; init; }
+
+    public string? Icon { get; init; }
+
+    public string? Type { get; init; }
+
+    public uint Rank { get; init; }
+
+    public required uint Count { get; init; }
 }

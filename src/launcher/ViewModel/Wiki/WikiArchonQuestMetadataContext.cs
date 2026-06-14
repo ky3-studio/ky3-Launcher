@@ -7,19 +7,15 @@
 // Modified by kyxsan.
 // Licensed under the MIT license.
 
-namespace kyxsan.UI.Xaml.Control.AutoSuggestBox;
+using kyxsan.Model.Metadata.Quest;
+using kyxsan.Service.Metadata.ContextAbstraction;
+using kyxsan.Service.Metadata.ContextAbstraction.ImmutableArray;
+using System.Collections.Immutable;
 
-internal enum SearchTokenKind
+namespace kyxsan.ViewModel.Wiki;
+
+internal sealed class WikiArchonQuestMetadataContext : IMetadataContext,
+    IMetadataArrayArchonQuestSource
 {
-    None,
-    CultivateType,
-    ItemQuality,
-    WeaponType,
-    FightProperty,
-    ElementName,
-    AssociationType,
-    BodyType,
-    Avatar,
-    Weapon,
-    Region,
+    public ImmutableArray<ArchonQuest> ArchonQuests { get; set; } = default!;
 }

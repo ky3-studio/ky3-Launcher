@@ -7,19 +7,25 @@
 // Modified by kyxsan.
 // Licensed under the MIT license.
 
-namespace kyxsan.UI.Xaml.Control.AutoSuggestBox;
+using kyxsan.UI.Xaml.Data.Converter;
+using kyxsan.Web.Endpoint.kyxsan;
 
-internal enum SearchTokenKind
+namespace kyxsan.Model.Metadata.Converter;
+
+internal sealed partial class ChapterIconConverter : ValueConverter<string, Uri>, IIconNameToUriConverter
 {
-    None,
-    CultivateType,
-    ItemQuality,
-    WeaponType,
-    FightProperty,
-    ElementName,
-    AssociationType,
-    BodyType,
-    Avatar,
-    Weapon,
-    Region,
+    public static Uri IconNameToUri(string name)
+    {
+        if (string.IsNullOrEmpty(name))
+        {
+            return default!;
+        }
+
+        return StaticResourcesEndpoints.StaticRaw("ChapterIcon", $"{name}.png").ToUri();
+    }
+
+    public override Uri Convert(string from)
+    {
+        return IconNameToUri(from);
+    }
 }

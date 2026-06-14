@@ -13,6 +13,7 @@ using kyxsan.Model.Intrinsic;
 using kyxsan.Model.Intrinsic.Frozen;
 using kyxsan.Model.Metadata.Avatar;
 using kyxsan.Model.Metadata.Converter;
+using kyxsan.Model.Metadata.Quest;
 using kyxsan.Model.Metadata.Weapon;
 using System.Collections.Frozen;
 using System.Collections.Immutable;
@@ -68,5 +69,26 @@ internal static class SearchTokens
             .. ItemQualityAllTokens,
             .. WeaponTypeTokens,
         ]);
+    }
+
+    public static FrozenDictionary<string, SearchToken> GetForArchonQuest(ImmutableArray<ArchonQuest> array)
+    {
+        FrozenSet<string> validRegions = FrozenSet.ToFrozenSet(AssociationTypeTokens.Select(t => t.Value.Value));
+
+        ImmutableArray<KeyValuePair<string, SearchToken>> regionTokens = [.. array
+            .Select(q => q.Region)
+            .Distinct()
+            .Where(r => validRegions.Contains(r))
+            .Select((region, index) =>
+            {
+                Uri? iconUri = AssociationTypeTokens
+                    .Where(t => t.Value.Value == region)
+                    .Select(t => t.Value.IconUri)
+                    .FirstOrDefault();
+                return KeyValuePair.Create(region, new SearchToken(
+                    SearchTokenKind.Region, region, index, iconUri: iconUri));
+            })];
+
+        return WinRTAdaptive.ToFrozenDictionary([.. regionTokens]);
     }
 }

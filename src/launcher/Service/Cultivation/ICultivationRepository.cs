@@ -28,6 +28,10 @@ internal interface ICultivationRepository :
 
     void AddCultivateEntry(CultivateEntry entry);
 
+    void AddCultivateEntryRange(IEnumerable<CultivateEntry> entries);
+
+    void AddLevelInformationRange(IEnumerable<CultivateEntryLevelInformation> levelInformations);
+
     void RemoveCultivateEntryById(Guid entryId);
 
     void RemoveCultivateItemRangeByEntryId(Guid entryId);

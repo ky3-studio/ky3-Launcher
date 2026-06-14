@@ -458,6 +458,14 @@
                         Content="{shuxm:ResourceString Name=ViewWikiWeaponHeader}"
                         Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/WikiWeapon.png}"/>
 
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:WikiArchonQuestPage"
+                        Content="{shuxm:ResourceString Name=ViewWikiArchonQuestHeader}">
+                        <NavigationViewItem.Icon>
+                            <BitmapIcon ShowAsMonochrome="False" UriSource="ms-appx:///Resource/Icon/UI_MarkQuest_Main_Proce.png"/>
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
+
                 </NavigationView.MenuItems>
 
                 <NavigationView.PaneFooter>

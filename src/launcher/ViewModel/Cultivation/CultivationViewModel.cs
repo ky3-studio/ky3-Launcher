@@ -306,100 +306,86 @@ internal sealed partial class CultivationViewModel : Abstraction.ViewModel
         await UpdateStatisticsItemsAsync().ConfigureAwait(false);
     }
 
-    [Command("SyncAllAvatarsAndWeaponsCommand")]
-    private async Task SyncAllAvatarsAndWeaponsAsync()
+    [Command("SyncAllAvatarsCommand")]
+    private async Task SyncAllAvatarsAsync()
     {
         if (Projects?.CurrentItem is null || metadataContext is null)
         {
             return;
         }
 
-        if (await userService.GetCurrentUserAndUidAsync().ConfigureAwait(false) is not { } userAndUid)
-        {
-            messenger.Send(InfoBarMessage.Warning(SH.MustSelectUserAndUid));
-            return;
-        }
+        CultivateProject currentProject = Projects.CurrentItem;
 
-        IGameRecordClient gameRecordClient = gameRecordClientFactory.Create(userAndUid.IsOversea);
-
-        Response<ListWrapper<Character>> response = await gameRecordClient
-            .GetCharacterListAsync(userAndUid)
-            .ConfigureAwait(false);
-
-        if (!ResponseValidator.TryValidate(response, serviceProvider, out ListWrapper<Character>? wrapper))
-        {
-            return;
-        }
-
-        List<CharacterView> characters = [];
-        foreach (Character apiChar in wrapper.List)
-        {
-            if (metadataContext.IdAvatarMap.TryGetValue(apiChar.Id, out MetaAvatar? metaAvatar))
-            {
-                metadataContext.IdWeaponMap.TryGetValue(apiChar.Weapon.Id, out MetaWeapon? metaWeapon);
-                characters.Add(new CharacterView(apiChar, metaAvatar, metaWeapon));
-            }
-        }
-
-        Response<ListWrapper<DetailedCharacter>> detailResponse = await gameRecordClient
-            .GetCharacterDetailAsync(userAndUid, wrapper.List.SelectAsArray(static c => c.Id))
-            .ConfigureAwait(false);
-
-        if (ResponseValidator.TryValidate(detailResponse, serviceProvider, out ListWrapper<DetailedCharacter>? detailWrapper))
-        {
-            foreach (DetailedCharacter detail in detailWrapper.List)
-            {
-                CharacterView? characterView = characters.Find(c => c.Id == detail.Base.Id);
-                if (characterView is not null && metadataContext.IdAvatarMap.TryGetValue(detail.Base.Id, out MetaAvatar? detailMetaAvatar))
-                {
-                    characterView.SetSkills(detail.Skills, detailMetaAvatar);
-                }
-            }
-        }
+        await taskContext.SwitchToMainThreadAsync();
+        EntriesUpdating = true;
 
         await taskContext.SwitchToBackgroundAsync();
 
-        int addedCount = 0;
-        foreach (CharacterView character in characters)
+        CultivateLevelInput levelInput = new()
         {
-            if (!metadataContext.IdAvatarMap.TryGetValue(character.Id, out MetaAvatar? metaAvatar))
-            {
-                continue;
-            }
+            AvatarLevelFrom = 1,
+            AvatarLevelTo = 90,
+            SkillALevelFrom = 1,
+            SkillALevelTo = 10,
+            SkillELevelFrom = 1,
+            SkillELevelTo = 10,
+            SkillQLevelFrom = 1,
+            SkillQLevelTo = 10,
+            WeaponLevelFrom = 1,
+            WeaponLevelTo = 90,
+            WeaponAscended = false,
+        };
 
-            uint avatarLevelFrom = character.LevelNumber;
-            uint skillAFrom = character.Skills.Length > 0 ? (uint)character.Skills[0].Level : 1;
-            uint skillEFrom = character.Skills.Length > 1 ? (uint)character.Skills[1].Level : 1;
-            uint skillQFrom = character.Skills.Length > 2 ? (uint)character.Skills[2].Level : 1;
+        cultivationService.BatchAddAllAvatarsAndWeapons(
+            currentProject,
+            metadataContext.Avatars,
+            [],
+            levelInput);
 
-            CultivateLevelInput levelInput = new()
-            {
-                AvatarLevelFrom = avatarLevelFrom,
-                AvatarLevelTo = 90,
-                SkillALevelFrom = skillAFrom,
-                SkillALevelTo = 10,
-                SkillELevelFrom = skillEFrom,
-                SkillELevelTo = 10,
-                SkillQLevelFrom = skillQFrom,
-                SkillQLevelTo = 10,
-                WeaponLevelFrom = character.WeaponLevelNumber,
-                WeaponLevelTo = 90,
-                WeaponAscended = false,
-            };
+        int addedCount = metadataContext.Avatars.Length;
+        messenger.Send(InfoBarMessage.Success(SH.FormatViewModelCultivationBatchAddCompleted(addedCount, 0)));
+        await UpdateEntryCollectionAsync(currentProject).ConfigureAwait(false);
+    }
 
-            cultivationService.AddCultivateEntryFromAvatar(Projects.CurrentItem, metaAvatar, levelInput);
-
-            if (metadataContext.IdWeaponMap.TryGetValue(character.WeaponId, out MetaWeapon? metaWeapon)
-                && levelInput.WeaponLevelTo > levelInput.WeaponLevelFrom)
-            {
-                cultivationService.AddCultivateEntryFromWeapon(Projects.CurrentItem, metaWeapon, levelInput.WeaponLevelFrom, levelInput.WeaponLevelTo, false);
-            }
-
-            addedCount++;
+    [Command("SyncAllWeaponsCommand")]
+    private async Task SyncAllWeaponsAsync()
+    {
+        if (Projects?.CurrentItem is null || metadataContext is null)
+        {
+            return;
         }
 
+        CultivateProject currentProject = Projects.CurrentItem;
+
+        await taskContext.SwitchToMainThreadAsync();
+        EntriesUpdating = true;
+
+        await taskContext.SwitchToBackgroundAsync();
+
+        CultivateLevelInput levelInput = new()
+        {
+            AvatarLevelFrom = 1,
+            AvatarLevelTo = 90,
+            SkillALevelFrom = 1,
+            SkillALevelTo = 10,
+            SkillELevelFrom = 1,
+            SkillELevelTo = 10,
+            SkillQLevelFrom = 1,
+            SkillQLevelTo = 10,
+            WeaponLevelFrom = 1,
+            WeaponLevelTo = 90,
+            WeaponAscended = false,
+        };
+
+        cultivationService.BatchAddAllAvatarsAndWeapons(
+            currentProject,
+            [],
+            metadataContext.IdWeaponMap.Values,
+            levelInput);
+
+        int addedCount = metadataContext.IdWeaponMap.Count;
         messenger.Send(InfoBarMessage.Success(SH.FormatViewModelCultivationBatchAddCompleted(addedCount, 0)));
-        await UpdateEntryCollectionAsync(Projects.CurrentItem).ConfigureAwait(false);
+        await UpdateEntryCollectionAsync(currentProject).ConfigureAwait(false);
     }
 
     [Command("RefreshStatisticsItemsCommand")]

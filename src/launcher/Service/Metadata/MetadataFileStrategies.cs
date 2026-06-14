@@ -13,6 +13,7 @@ internal static class MetadataFileStrategies
 {
     public static readonly MetadataFileStrategy Achievement = new("Achievement");
     public static readonly MetadataFileStrategy AchievementGoal = new("AchievementGoal");
+    public static readonly MetadataFileStrategy ArchonQuest = new("ArchonQuest");
     public static readonly MetadataFileStrategy Avatar = new("Avatar", true);
     public static readonly MetadataFileStrategy AvatarCurve = new("AvatarCurve");
     public static readonly MetadataFileStrategy AvatarPromote = new("AvatarPromote");

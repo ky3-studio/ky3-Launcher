@@ -42,4 +42,6 @@ internal interface ICultivationService
     void AddCultivateEntryFromAvatar(CultivateProject project, Avatar avatar, CultivateLevelInput levelInput);
 
     void AddCultivateEntryFromWeapon(CultivateProject project, Weapon weapon, uint levelFrom, uint levelTo, bool ascended);
+
+    void BatchAddAllAvatarsAndWeapons(CultivateProject project, IEnumerable<Avatar> avatars, IEnumerable<Weapon> weapons, CultivateLevelInput levelInput);
 }

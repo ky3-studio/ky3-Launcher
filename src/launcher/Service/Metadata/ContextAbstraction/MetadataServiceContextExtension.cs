@@ -36,6 +36,11 @@ internal static class MetadataServiceContextExtension
                     arrayAchievementSource.Achievements = await metadataService.GetAchievementArrayAsync(token).ConfigureAwait(false);
                 }
 
+                if (context is IMetadataArrayArchonQuestSource arrayArchonQuestSource)
+                {
+                    arrayArchonQuestSource.ArchonQuests = await metadataService.GetArchonQuestArrayAsync(token).ConfigureAwait(false);
+                }
+
                 if (context is IMetadataArrayAvatarSource arrayAvatarSource)
                 {
                     arrayAvatarSource.Avatars = await metadataService.GetAvatarArrayAsync(token).ConfigureAwait(false);

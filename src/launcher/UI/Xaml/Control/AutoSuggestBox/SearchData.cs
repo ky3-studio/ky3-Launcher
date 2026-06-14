@@ -9,6 +9,7 @@
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using kyxsan.Model.Metadata.Avatar;
+using kyxsan.Model.Metadata.Quest;
 using kyxsan.Model.Metadata.Weapon;
 using System.Collections.Frozen;
 using System.Collections.Immutable;
@@ -48,5 +49,10 @@ internal sealed partial class SearchData : ObservableObject
     public static SearchData CreateForWikiWeapon(ImmutableArray<Weapon> array)
     {
         return new(SearchTokens.GetForWikiWeapon(array));
+    }
+
+    public static SearchData CreateForArchonQuest(ImmutableArray<ArchonQuest> array)
+    {
+        return new(SearchTokens.GetForArchonQuest(array));
     }
 }

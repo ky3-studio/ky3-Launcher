@@ -33,4 +33,6 @@ internal interface IkyxsanSpiralAbyssStatisticsCache
     ValueTask InitializeForSpiralAbyssViewAsync(kyxsanSpiralAbyssStatisticsMetadataContext context);
 
     ValueTask InitializeForWikiAvatarViewAsync(kyxsanSpiralAbyssStatisticsMetadataContext context);
+
+    ValueTask InitializeForWikiWeaponViewAsync(kyxsanSpiralAbyssStatisticsMetadataContext context);
 }

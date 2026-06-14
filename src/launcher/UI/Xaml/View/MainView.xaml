@@ -453,13 +453,18 @@
                         Content="{shuxm:ResourceString Name=ViewWikiAvatarHeader}"
                         Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/WikiAvatar.png}"/>
 
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:WikiWeaponPage"
+                        Content="{shuxm:ResourceString Name=ViewWikiWeaponHeader}"
+                        Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/WikiWeapon.png}"/>
+
                 </NavigationView.MenuItems>
 
                 <NavigationView.PaneFooter>
                     <shuxv:UserView x:Name="UserView"/>
                 </NavigationView.PaneFooter>
 
-                <Frame x:Name="ContentFrame" ContentTransitions="{StaticResource NavigationThemeTransitions}"/>
+                <Frame x:Name="ContentFrame"/>
             </NavigationView>
         </Grid>
 

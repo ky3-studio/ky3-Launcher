@@ -415,6 +415,13 @@
                                         HeaderIcon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/WikiAvatar.png}"
                                         IsClickEnabled="True"/>
                                     <cwcont:SettingsCard
+                                        ActionIconToolTip="{shuxm:ResourceString Name=ViewPageCultivationNavigateAction}"
+                                        Command="{Binding NavigateToWeaponPageCommand}"
+                                        Description="{shuxm:ResourceString Name=ViewPageCultivationWikiWeaponDescription}"
+                                        Header="{shuxm:ResourceString Name=ViewWikiWeaponHeader}"
+                                        HeaderIcon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/WikiWeapon.png}"
+                                        IsClickEnabled="True"/>
+                                    <cwcont:SettingsCard
                                         Command="{Binding MyAvatarCultivateCommand}"
                                         Description="{shuxm:ResourceString Name=ViewPageCultivationMyAvatarDescription}"
                                         Header="{shuxm:ResourceString Name=ViewPageCultivationMyAvatarHeader}"

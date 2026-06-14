@@ -62,6 +62,11 @@ internal sealed partial class kyxsanSpiralAbyssStatisticsCache : StatisticsCache
         return InitializeForTypeAsync<WikiAvatarViewModel, kyxsanSpiralAbyssStatisticsMetadataContext>(context, AvatarCollocationsAsync);
     }
 
+    public ValueTask InitializeForWikiWeaponViewAsync(kyxsanSpiralAbyssStatisticsMetadataContext context)
+    {
+        return InitializeForTypeAsync<WikiWeaponViewModel, kyxsanSpiralAbyssStatisticsMetadataContext>(context, WeaponCollocationsAsync);
+    }
+
 
     [SuppressMessage("", "SH003")]
     private async Task AvatarCollocationsAsync(kyxsanSpiralAbyssStatisticsMetadataContext context)
@@ -81,6 +86,24 @@ internal sealed partial class kyxsanSpiralAbyssStatisticsCache : StatisticsCache
             Weapons = [.. CurrentJoinLast(raw.Weapons, rawLast?.Weapons, data => data.Item, (weapon, weaponLast) => new WeaponView(context.GetWeapon(weapon.Item), weapon.Rate, weaponLast?.Rate))],
             ReliquarySets = [.. CurrentJoinLast(raw.Reliquaries, rawLast?.Reliquaries, data => data.Item, (relic, relicLast) => new ReliquarySetView(context.ExtendedIdReliquarySetMap, relic, relicLast))],
         }).ToImmutableDictionary(a => a.AvatarId);
+    }
+
+    [SuppressMessage("", "SH003")]
+    private async Task WeaponCollocationsAsync(kyxsanSpiralAbyssStatisticsMetadataContext context)
+    {
+        IReadOnlyList<WeaponCollocation> raw, rawLast;
+        using (IServiceScope scope = serviceProvider.CreateScope())
+        {
+            IkyxsanSpiralAbyssService kyxsanService = scope.ServiceProvider.GetRequiredService<IkyxsanSpiralAbyssService>();
+            raw = await kyxsanService.GetWeaponCollocationsAsync(false).ConfigureAwait(false);
+            rawLast = await kyxsanService.GetWeaponCollocationsAsync(true).ConfigureAwait(false);
+        }
+
+        WeaponCollocations = CurrentJoinLast(raw, rawLast, data => data.WeaponId, (raw, rawLast) => new WeaponCollocationView
+        {
+            WeaponId = raw.WeaponId,
+            Avatars = [.. CurrentJoinLast(raw.Avatars, rawLast?.Avatars, data => data.Item, (avatar, avatarLast) => new AvatarView(context.GetAvatar(avatar.Item), avatar.Rate, avatarLast?.Rate))],
+        }).ToImmutableDictionary(w => w.WeaponId);
     }
 
 

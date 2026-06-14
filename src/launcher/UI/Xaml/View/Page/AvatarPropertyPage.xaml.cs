@@ -47,8 +47,6 @@ internal sealed partial class AvatarPropertyPage : ScopedPage, IRecipient<UserAn
         messenger = serviceProvider.GetRequiredService<IMessenger>();
         messenger.Register<UserAndUidChangedMessage>(this);
 
-        Unloaded += OnPageUnloaded;
-
         IUserService userService = serviceProvider.GetRequiredService<IUserService>();
 
         if (await userService.GetCurrentUserAndUidAsync().ConfigureAwait(true) is null)
@@ -59,12 +57,6 @@ internal sealed partial class AvatarPropertyPage : ScopedPage, IRecipient<UserAn
         {
             ShowLoggedInContent();
         }
-    }
-
-    private void OnPageUnloaded(object sender, RoutedEventArgs e)
-    {
-        messenger?.UnregisterAll(this);
-        Unloaded -= OnPageUnloaded;
     }
 
     private async void ShowLoggedInContent()

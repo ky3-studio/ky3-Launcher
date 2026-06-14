@@ -54,24 +54,25 @@ internal static class PackageIdentityAdapter
 
     private static Version GetAppVersionInternal()
     {
-        static Version TrimToThree(Version v)
+        static Version Normalize(Version v)
         {
             int major = v.Major;
             int minor = v.Minor;
             int build = v.Build >= 0 ? v.Build : 0;
-            return new Version(major, minor, build);
+            int revision = v.Revision >= 0 ? v.Revision : 0;
+            return new Version(major, minor, build, revision);
         }
 
         if (HasPackageIdentity)
         {
             Version v = Windows.ApplicationModel.Package.Current.Id.Version.ToVersion();
-            return TrimToThree(v);
+            return Normalize(v);
         }
 
         // .csproj 定义，勿改
         Assembly assembly = Assembly.GetExecutingAssembly();
         Version? version = assembly.GetName().Version;
-        return version is not null ? TrimToThree(version) : new Version(1, 0, 0);
+        return version is not null ? Normalize(version) : new Version(1, 0, 0, 0);
     }
 
     private static string GetFamilyNameInternal()

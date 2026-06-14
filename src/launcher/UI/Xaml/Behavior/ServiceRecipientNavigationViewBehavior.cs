@@ -7,6 +7,7 @@
 // Modified by kyxsan.
 // Licensed under the MIT license.
 
+using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.Behaviors;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media.Animation;
@@ -171,7 +172,22 @@ internal sealed class ServiceRecipientNavigationViewBehavior : BehaviorBase<Navi
             SentrySdk.CaptureException(ex);
         }
 
+        if (navigated)
+        {
+            UpdatePaneScrollBarVisibility(navigationView, pageType);
+        }
+
         return navigated ? NavigationResult.Succeed : NavigationResult.Failed;
+    }
+
+    private static void UpdatePaneScrollBarVisibility(NavigationView navigationView, Type pageType)
+    {
+        if (navigationView.FindDescendant<ScrollViewer>(sv => sv.Name == "MenuItemsScrollViewer") is { } scrollViewer)
+        {
+            scrollViewer.VerticalScrollBarVisibility = pageType == typeof(LauncherHomePage)
+                ? ScrollBarVisibility.Hidden
+                : ScrollBarVisibility.Auto;
+        }
     }
 
     private static bool SyncSelectedNavigationViewItem(NavigationView navigationView, Type? pageType)

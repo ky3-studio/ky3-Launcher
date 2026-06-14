@@ -34,7 +34,6 @@ internal sealed partial class LaunchGamePage : ScopedPage
     public LaunchGamePage()
     {
         InitializeComponent();
-        Unloaded += OnPageUnloaded;
         Loaded += OnPageLoaded;
 
         _gameStateTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
@@ -111,20 +110,6 @@ internal sealed partial class LaunchGamePage : ScopedPage
         if (_viewModel?.LaunchOptions is { } options)
         {
             RefreshResolution(options);
-        }
-    }
-
-    private void OnPageUnloaded(object sender, RoutedEventArgs e)
-    {
-        _gameStateTimer?.Stop();
-        StopConfigSync();
-        _refreshCts?.Cancel();
-        _refreshCts?.Dispose();
-        _refreshCts = null;
-
-        if (_viewModel?.LaunchOptions is { } options)
-        {
-            LaunchOptions.IsGameRunning.PropertyChanged -= OnIsGameRunningChanged;
         }
     }
 

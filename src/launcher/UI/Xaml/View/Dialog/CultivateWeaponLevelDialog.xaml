@@ -1,0 +1,74 @@
+<ContentDialog
+    x:Class="kyxsan.UI.Xaml.View.Dialog.CultivateWeaponLevelDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:cwconv="using:CommunityToolkit.WinUI.Converters"
+    xmlns:local="using:kyxsan.UI.Xaml.View.Dialog"
+    xmlns:shuxc="using:kyxsan.UI.Xaml.Control"
+    xmlns:shuxm="using:kyxsan.UI.Xaml.Markup"
+    Title="{shuxm:ResourceString Name=ViewDialogCultivateWeaponLevelTitle}"
+    CloseButtonText="{shuxm:ResourceString Name=ContentDialogCancelCloseButtonText}"
+    DefaultButton="Primary"
+    PrimaryButtonText="{shuxm:ResourceString Name=ContentDialogConfirmPrimaryButtonText}"
+    Style="{StaticResource DefaultContentDialogStyle}"
+    mc:Ignorable="d">
+
+    <ContentDialog.Resources>
+        <x:Double x:Key="ContentDialogMaxWidth">920</x:Double>
+    </ContentDialog.Resources>
+
+    <ScrollViewer
+        MaxHeight="600"
+        HorizontalScrollBarVisibility="Disabled"
+        VerticalScrollBarVisibility="Auto">
+        <ItemsControl x:Name="WeaponItemsControl">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate x:DataType="local:CultivateWeaponLevelItem">
+                    <Border Margin="0,0,0,8" Padding="8" Style="{ThemeResource BorderCardStyle}">
+                        <Grid Height="36" ColumnSpacing="6">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="120"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <shuxc:ItemIcon
+                                Grid.Column="0"
+                                Width="32"
+                                Height="32"
+                                Icon="{Binding WeaponIcon, Mode=OneWay}"
+                                Quality="{Binding WeaponQuality}"/>
+                            <TextBlock
+                                Grid.Column="1"
+                                Margin="12,0,0,0"
+                                VerticalAlignment="Center"
+                                Style="{StaticResource BodyStrongTextBlockStyle}"
+                                Text="{Binding WeaponName, Mode=OneWay}"
+                                TextTrimming="CharacterEllipsis"/>
+                            <NumberBox
+                                Grid.Column="2"
+                                Maximum="90"
+                                Minimum="1"
+                                SpinButtonPlacementMode="Inline"
+                                Value="{Binding LevelFrom, Mode=TwoWay}"/>
+                            <TextBlock
+                                Grid.Column="3"
+                                Margin="8,0"
+                                VerticalAlignment="Center"
+                                Text="→"/>
+                            <NumberBox
+                                Grid.Column="4"
+                                Maximum="90"
+                                Minimum="1"
+                                SpinButtonPlacementMode="Inline"
+                                Value="{Binding LevelTo, Mode=TwoWay}"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </ScrollViewer>
+</ContentDialog>

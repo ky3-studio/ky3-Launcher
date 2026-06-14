@@ -52,8 +52,6 @@ internal sealed partial class SignInPage : ScopedPage, IRecipient<UserAndUidChan
         messenger = serviceProvider.GetRequiredService<IMessenger>();
         messenger.Register<UserAndUidChangedMessage>(this);
 
-        Unloaded += OnPageUnloaded;
-
         IUserService userService = serviceProvider.GetRequiredService<IUserService>();
         AdvancedDbCollectionView<BindingUser, EntityUser> users = await userService.GetUsersAsync().ConfigureAwait(true);
 
@@ -65,12 +63,6 @@ internal sealed partial class SignInPage : ScopedPage, IRecipient<UserAndUidChan
         {
             ShowSignInCards();
         }
-    }
-
-    private void OnPageUnloaded(object sender, RoutedEventArgs e)
-    {
-        messenger?.UnregisterAll(this);
-        Unloaded -= OnPageUnloaded;
     }
 
     private async void ShowSignInCards()

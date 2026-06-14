@@ -7,26 +7,20 @@
 // Modified by kyxsan.
 // Licensed under the MIT license.
 
-namespace kyxsan.Core.Threading;
+using kyxsan.UI.Xaml.Control;
+using kyxsan.ViewModel.Wiki;
 
-internal readonly struct SemaphoreSlimToken : IDisposable
+namespace kyxsan.UI.Xaml.View.Page;
+
+internal sealed partial class WikiWeaponPage : ScopedPage
 {
-    private readonly SemaphoreSlim semaphoreSlim;
-
-    public SemaphoreSlimToken(SemaphoreSlim semaphoreSlim)
+    public WikiWeaponPage()
     {
-        this.semaphoreSlim = semaphoreSlim;
+        InitializeComponent();
     }
 
-    public void Dispose()
+    protected override void LoadingOverride()
     {
-        try
-        {
-            semaphoreSlim.Release();
-        }
-        catch (ObjectDisposedException)
-        {
-            // ViewModel disposed while async operation was still holding the semaphore
-        }
+        InitializeDataContext<WikiWeaponViewModel>();
     }
 }

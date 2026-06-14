@@ -14,40 +14,19 @@ using Microsoft.UI.Xaml.Navigation;
 using kyxsan.Service.Navigation;
 using kyxsan.UI.Content;
 using kyxsan.ViewModel.Abstraction;
-using kyxsan.Win32.Foundation;
 
 namespace kyxsan.UI.Xaml.Control;
 
 [SuppressMessage("", "CA1001")]
 internal partial class ScopedPage : Page
 {
-    private readonly CancellationTokenSource viewCts = new();
+    private CancellationTokenSource viewCts = new();
     private IServiceScope? scope;
+    private bool initialized;
 
     protected ScopedPage()
     {
-        // Events/Override Methods order
-        // ----------------------------------------------------------------------
-        // Page Navigation methods:
-        // - OnNavigatedTo
-        // FrameworkElement events:
-        // - Loading (args: null)
-        // - EffectiveViewportChanged
-        // - SizeChanged
-        // - LayoutUpdated (sender & args always null)
-        // - Loaded
-        // - LayoutUpdated (sender & args always null) (Can trigger multiple times)
-        // OnNavigatedTo -> Loading -> Loaded
-        // ----------------------------------------------------------------------
-        // Page Navigation methods:
-        // - OnNavigatingFrom
-        // - OnNavigatedFrom
-        // FrameworkElement events:
-        // - LayoutUpdated (sender & args always null)
-        // - Unloaded
-        // - LayoutUpdated (might or might not be called)
-        // OnNavigatingFrom -> OnNavigatedFrom -> Unloaded
-        // ----------------------------------------------------------------------
+        NavigationCacheMode = NavigationCacheMode.Enabled;
         Loading += OnLoading;
         Unloaded += OnUnloaded;
     }
@@ -98,69 +77,32 @@ internal partial class ScopedPage : Page
 
     private void OnLoading(FrameworkElement element, object e)
     {
-        Loading -= OnLoading;
+        if (!initialized)
+        {
+            initialized = true;
 
-        XamlContext? context = element.XamlRoot.XamlContext();
-        ArgumentNullException.ThrowIfNull(context);
-        scope = context.ServiceProvider.CreateScope();
+            XamlContext? context = element.XamlRoot.XamlContext();
+            ArgumentNullException.ThrowIfNull(context);
+            scope = context.ServiceProvider.CreateScope();
 
-        LoadingOverride();
+            LoadingOverride();
+        }
+        else
+        {
+            // Page returned from navigation cache - dispose old CTS and provide fresh one
+            viewCts.Dispose();
+            viewCts = new CancellationTokenSource();
+            if (DataContext is IViewModel viewModel)
+            {
+                viewModel.CancellationToken = CancellationToken;
+            }
+        }
     }
 
     private void OnUnloaded(object sender, RoutedEventArgs e)
     {
-        // Cancel all tasks executed by the view model
+        // Cancel in-flight async operations when page leaves visual tree
+        // Do NOT dispose - cached page code may still read CancellationToken
         viewCts.Cancel();
-
-        if (DataContext is IViewModel viewModel)
-        {
-            try
-            {
-                // Use non-blocking acquire to prevent deadlock:
-                // Background tasks holding the semaphore may be waiting for UI thread
-                // via SwitchToMainThreadAsync(), causing a deadlock if we block here.
-                bool acquired = viewModel.CriticalSection.Wait(0);
-                try
-                {
-                    viewModel.Uninitialize();
-                }
-                finally
-                {
-                    if (acquired)
-                    {
-                        viewModel.CriticalSection.Release();
-                    }
-                }
-            }
-            catch (OperationCanceledException)
-            {
-                viewModel.Uninitialize();
-            }
-
-            try
-            {
-                DataContext = default;
-            }
-            catch (Exception ex)
-            {
-                if (ex.HResult is not HRESULT.E_UNEXPECTED)
-                {
-                    throw;
-                }
-            }
-        }
-
-        viewCts.Dispose();
-
-        // Dispose the scope
-        scope?.Dispose();
-        scope = default;
-
-        if (this.IsDisposed)
-        {
-            return;
-        }
-
-        Unloaded -= OnUnloaded;
     }
 }

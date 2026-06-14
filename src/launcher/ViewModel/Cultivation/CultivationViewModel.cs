@@ -491,6 +491,40 @@ internal sealed partial class CultivationViewModel : Abstraction.ViewModel
         await UpdateEntryCollectionAsync(Projects.CurrentItem).ConfigureAwait(false);
     }
 
+    [Command("NavigateToWeaponPageCommand")]
+    private async Task OpenWeaponSelectionAsync()
+    {
+        if (Projects?.CurrentItem is null || metadataContext is null)
+        {
+            return;
+        }
+
+        CultivateWeaponDialog weaponDialog = await contentDialogFactory.CreateInstanceAsync<CultivateWeaponDialog>(serviceProvider).ConfigureAwait(false);
+        ImmutableArray<MetaWeapon> weapons = [.. metadataContext.IdWeaponMap.Values.OrderByDescending(w => w.Sort)];
+        (bool isOk, ImmutableArray<MetaWeapon> selectedWeapons) = await weaponDialog.SelectWeaponsAsync(weapons).ConfigureAwait(false);
+
+        if (!isOk)
+        {
+            return;
+        }
+
+        CultivateWeaponLevelDialog levelDialog = await contentDialogFactory.CreateInstanceAsync<CultivateWeaponLevelDialog>(serviceProvider).ConfigureAwait(false);
+        (bool levelOk, ImmutableArray<CultivateWeaponLevelItem> levelItems) = await levelDialog.SelectLevelsAsync(selectedWeapons).ConfigureAwait(false);
+
+        if (!levelOk)
+        {
+            return;
+        }
+
+        await taskContext.SwitchToBackgroundAsync();
+        foreach (CultivateWeaponLevelItem item in levelItems)
+        {
+            cultivationService.AddCultivateEntryFromWeapon(Projects.CurrentItem, item.Weapon, (uint)item.LevelFrom, (uint)item.LevelTo, false);
+        }
+
+        await UpdateEntryCollectionAsync(Projects.CurrentItem).ConfigureAwait(false);
+    }
+
     [Command("MyAvatarCultivateCommand")]
     private async Task MyAvatarCultivateAsync()
     {

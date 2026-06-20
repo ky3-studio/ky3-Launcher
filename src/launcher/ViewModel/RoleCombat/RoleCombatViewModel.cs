@@ -99,7 +99,7 @@ internal sealed partial class RoleCombatViewModel : Abstraction.ViewModel, IReci
 
             await taskContext.SwitchToMainThreadAsync();
             RoleCombatEntries = roleCombatEntries;
-            RoleCombatEntries.MoveCurrentTo(RoleCombatEntries.Source.FirstOrDefault(s => s.Engaged));
+            RoleCombatEntries.MoveCurrentTo(RoleCombatEntries.Source.FirstOrDefault(s => s.Engaged) ?? RoleCombatEntries.Source.FirstOrDefault());
         }
         catch (OperationCanceledException)
         {
@@ -134,7 +134,7 @@ internal sealed partial class RoleCombatViewModel : Abstraction.ViewModel, IReci
                 }
 
                 await taskContext.SwitchToMainThreadAsync();
-                RoleCombatEntries.MoveCurrentTo(RoleCombatEntries.Source.FirstOrDefault(s => s.Engaged));
+                RoleCombatEntries.MoveCurrentTo(RoleCombatEntries.Source.FirstOrDefault(s => s.Engaged) ?? RoleCombatEntries.Source.FirstOrDefault());
             }
         }
     }

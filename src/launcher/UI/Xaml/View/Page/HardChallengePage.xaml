@@ -185,11 +185,31 @@
                             </SplitView.Pane>
                             <SplitView.Content>
                                 <ScrollViewer>
-                                    <StackPanel
-                                        Padding="16"
+                                    <Grid
                                         DataContext="{Binding HardChallengeEntries.CurrentItem}"
-                                        Spacing="16"
                                         Visibility="{Binding Converter={StaticResource EmptyObjectToVisibilityConverter}, FallbackValue=Collapsed}">
+
+                                        <StackPanel
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Spacing="16"
+                                            Visibility="{Binding Engaged, Converter={StaticResource BoolToVisibilityRevertConverter}}">
+                                            <Image
+                                                MaxWidth="128"
+                                                MaxHeight="128"
+                                                HorizontalAlignment="Center"
+                                                Source="ms-appx:///Resource/Icon/Stygian_Onslaught_Emblem.png"/>
+                                            <TextBlock
+                                                HorizontalAlignment="Center"
+                                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                                Style="{StaticResource SubtitleTextBlockStyle}"
+                                                Text="{shuxm:ResourceString Name=ViewPageHardChallengeNotEngaged}"/>
+                                        </StackPanel>
+
+                                        <StackPanel
+                                            Padding="16"
+                                            Spacing="16"
+                                            Visibility="{Binding Engaged, Converter={StaticResource BoolToVisibilityConverter}}">
                                         <ItemsControl
                                             ItemTemplate="{StaticResource BlingAvatarViewTemplate}"
                                             ItemsPanel="{ThemeResource WrapPanelSpacing4Template}"
@@ -369,8 +389,8 @@
                                                 </DataTemplate>
                                             </ContentControl.ContentTemplate>
                                         </ContentControl>
-                                    </StackPanel>
-
+                                        </StackPanel>
+                                    </Grid>
                                 </ScrollViewer>
                             </SplitView.Content>
                         </SplitView>

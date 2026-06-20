@@ -114,7 +114,7 @@ internal sealed partial class HardChallengeViewModel : Abstraction.ViewModel, IR
 
             await taskContext.SwitchToMainThreadAsync();
             HardChallengeEntries = hardChallengeEntries;
-            HardChallengeEntries.MoveCurrentTo(HardChallengeEntries.Source.FirstOrDefault(s => s.Engaged));
+            HardChallengeEntries.MoveCurrentTo(HardChallengeEntries.Source.FirstOrDefault(s => s.Engaged) ?? HardChallengeEntries.Source.FirstOrDefault());
 
             BlingAvatars = blingAvatars;
         }
@@ -151,7 +151,7 @@ internal sealed partial class HardChallengeViewModel : Abstraction.ViewModel, IR
                 }
 
                 await taskContext.SwitchToMainThreadAsync();
-                HardChallengeEntries.MoveCurrentTo(HardChallengeEntries.Source.FirstOrDefault(s => s.Engaged));
+                HardChallengeEntries.MoveCurrentTo(HardChallengeEntries.Source.FirstOrDefault(s => s.Engaged) ?? HardChallengeEntries.Source.FirstOrDefault());
             }
         }
     }

@@ -142,7 +142,14 @@ internal sealed partial class WebView2Window : Microsoft.UI.Xaml.Window,
         [SuppressMessage("", "SH003")]
         async Task OnWebViewLoadedAsync()
         {
-            await webview2LoadLock.WaitAsync().ConfigureAwait(true);
+            try
+            {
+                await webview2LoadLock.WaitAsync().ConfigureAwait(true);
+            }
+            catch (ObjectDisposedException)
+            {
+                return;
+            }
 
             try
             {

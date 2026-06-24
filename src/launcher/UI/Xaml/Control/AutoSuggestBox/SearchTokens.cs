@@ -13,8 +13,10 @@ using kyxsan.Model.Intrinsic;
 using kyxsan.Model.Intrinsic.Frozen;
 using kyxsan.Model.Metadata.Avatar;
 using kyxsan.Model.Metadata.Converter;
+using kyxsan.Model.Metadata.Food;
 using kyxsan.Model.Metadata.Quest;
 using kyxsan.Model.Metadata.Weapon;
+using kyxsan.Web.Endpoint.kyxsan;
 using System.Collections.Frozen;
 using System.Collections.Immutable;
 
@@ -90,5 +92,47 @@ internal static class SearchTokens
             })];
 
         return WinRTAdaptive.ToFrozenDictionary([.. regionTokens]);
+    }
+
+    public static FrozenDictionary<string, SearchToken> GetForWikiFood(ImmutableArray<Food> array)
+    {
+        ImmutableArray<KeyValuePair<string, SearchToken>> rankTokens = [.. Enumerable.Range(1, 5).Select(r =>
+        {
+            string label = string.Format(SH.ViewWikiFoodRankStar, r);
+            return KeyValuePair.Create(label, new SearchToken(SearchTokenKind.ItemQuality, label, r));
+        })];
+
+        ImmutableArray<KeyValuePair<string, SearchToken>> effectTokens = [.. array
+            .Select(f => f.EffectIcon)
+            .Where(e => !string.IsNullOrEmpty(e))
+            .Distinct()
+            .Select((effectIcon, index) =>
+            {
+                string label = effectIcon switch
+                {
+                    "UI_Buff_Item_Recovery_HpAdd" => SH.ViewWikiFoodEffectRecoveryHp,
+                    "UI_Buff_Item_Recovery_HpAddAll" => SH.ViewWikiFoodEffectRecoveryHpAll,
+                    "UI_Buff_Item_Recovery_Revive" => SH.ViewWikiFoodEffectRevive,
+                    "UI_Buff_Item_Atk_Add" => SH.ViewWikiFoodEffectAtkAdd,
+                    "UI_Buff_Item_Atk_CritRate" => SH.ViewWikiFoodEffectCritRate,
+                    "UI_Buff_Item_Def_Add" => SH.ViewWikiFoodEffectDefAdd,
+                    "UI_Buff_Item_Other_SPAdd" => SH.ViewWikiFoodEffectSPAdd,
+                    "UI_Buff_Item_Other_SPReduceConsume" => SH.ViewWikiFoodEffectSPReduce,
+                    "UI_Buff_Item_Climate_Heat" => SH.ViewWikiFoodEffectClimate,
+                    "UI_Buff_Item_Adventure" => SH.ViewWikiFoodEffectAdventure,
+                    "UI_Buff_Item_SpecialEffect" => SH.ViewWikiFoodEffectSpecial,
+                    _ => effectIcon,
+                };
+                Uri iconUri = StaticResourcesEndpoints.StaticRaw("BuffIcon", $"{effectIcon}.png").ToUri();
+                return KeyValuePair.Create(label, new SearchToken(SearchTokenKind.FoodEffect, label, index, iconUri: iconUri));
+            })];
+
+        ImmutableArray<KeyValuePair<string, SearchToken>> nameTokens = [.. array.Select((food, index) =>
+            KeyValuePair.Create(food.Name, new SearchToken(SearchTokenKind.Food, food.Name, index, iconUri: ItemIconConverter.IconNameToUri(food.Icon))))];
+
+        string categoryLabel = SH.ViewWikiFoodCategorySpecial;
+        ImmutableArray<KeyValuePair<string, SearchToken>> categoryTokens = [KeyValuePair.Create(categoryLabel, new SearchToken(SearchTokenKind.FoodCategory, categoryLabel, 0))];
+
+        return WinRTAdaptive.ToFrozenDictionary([.. nameTokens, .. rankTokens, .. effectTokens, .. categoryTokens]);
     }
 }

@@ -16,6 +16,7 @@ using kyxsan.Core.Logging;
 using kyxsan.Core.Setting;
 using kyxsan.Service.Navigation;
 using kyxsan.Service.Navigation.Message;
+using kyxsan.Service.Notification;
 using kyxsan.UI.Content;
 using kyxsan.UI.Xaml.Control;
 using kyxsan.UI.Xaml.View.Page;
@@ -28,6 +29,9 @@ internal sealed class ServiceRecipientNavigationViewBehavior : BehaviorBase<Navi
     IRecipient<NavigationGoBackMessage>,
     IRecipient<NavigationPaneToggleMessage>
 {
+    private const int NavigationCooldownMs = 800;
+
+    private static long lastNavigationTimestamp;
     private IMessenger? messenger;
 
     public void Receive(NavigationNavigateMessage message)
@@ -136,6 +140,19 @@ internal sealed class ServiceRecipientNavigationViewBehavior : BehaviorBase<Navi
         }
     }
 
+    private static bool IsNavigationThrottled()
+    {
+        long now = Environment.TickCount64;
+        long last = Interlocked.Read(ref lastNavigationTimestamp);
+        if (now - last < NavigationCooldownMs)
+        {
+            return true;
+        }
+
+        Interlocked.Exchange(ref lastNavigationTimestamp, now);
+        return false;
+    }
+
     private static NavigationResult Navigate(NavigationView navigationView, Type pageType, INavigationCompletionSource data, bool syncNavigationViewItem = false)
     {
         if (navigationView.Content.As<Frame>() is not { } frame)
@@ -156,6 +173,21 @@ internal sealed class ServiceRecipientNavigationViewBehavior : BehaviorBase<Navi
             System.Threading.CancellationToken token = currentPage is ScopedPage scopedPage ? scopedPage.CancellationToken : System.Threading.CancellationToken.None;
             NavigationExtraDataSupport.NotifyRecipientAsync(frame.Content, data, token).SafeForget();
             return NavigationResult.AlreadyNavigatedTo;
+        }
+
+        // Throttle: prevent frequent page switching
+        if (IsNavigationThrottled())
+        {
+            // Revert NavigationView selection back to current page
+            SyncSelectedNavigationViewItem(navigationView, currentPageType);
+
+            if (navigationView.XamlRoot.XamlContext()?.ServiceProvider is { } sp)
+            {
+                IMessenger msg = sp.GetRequiredService<IMessenger>();
+                msg.Send(InfoBarMessage.Warning(SH.ViewNavigationThrottleTitle, SH.ViewNavigationThrottleMessage));
+            }
+
+            return NavigationResult.Failed;
         }
 
         _ = syncNavigationViewItem && SyncSelectedNavigationViewItem(navigationView, pageType);

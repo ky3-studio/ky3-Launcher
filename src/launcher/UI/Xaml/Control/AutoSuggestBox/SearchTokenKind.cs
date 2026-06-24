@@ -22,4 +22,7 @@ internal enum SearchTokenKind
     Avatar,
     Weapon,
     Region,
+    Food,
+    FoodEffect,
+    FoodCategory,
 }

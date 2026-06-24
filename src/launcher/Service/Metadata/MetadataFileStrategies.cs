@@ -21,6 +21,7 @@ internal static class MetadataFileStrategies
     public static readonly MetadataFileStrategy Chapter = new("Chapter");
     public static readonly MetadataFileStrategy Combine = new("Combine");
     public static readonly MetadataFileStrategy DisplayItem = new("DisplayItem");
+    public static readonly MetadataFileStrategy Food = new("Food");
     public static readonly MetadataFileStrategy Furniture = new("Furniture");
     public static readonly MetadataFileStrategy FurnitureMake = new("FurnitureMake");
     public static readonly MetadataFileStrategy FurnitureSuite = new("FurnitureSuite");

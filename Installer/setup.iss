@@ -1,5 +1,5 @@
 #define AppName       "ky3 Launcher"
-#define AppVersion    "6.6.3.1"
+#define AppVersion    "6.6.3.3"
 #define AppPublisher  "kyxsan Detail Development Team"
 #define AppExe        "ky3launcher.exe"
 #define AppId         "{{8F3A1C2E-7B4D-4E5A-9F6B-2A1D3C4E5F60}"

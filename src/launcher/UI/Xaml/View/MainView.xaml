@@ -353,7 +353,7 @@
                 IsPaneToggleButtonVisible="False"
                 OpenPaneLength="205"
                 PaneDisplayMode="Auto"
-                UseLayoutRounding="False">
+                UseLayoutRounding="True">
                 <mxi:Interaction.Behaviors>
                     <shuxb:ServiceRecipientNavigationViewBehavior/>
                 </mxi:Interaction.Behaviors>
@@ -463,6 +463,14 @@
                         Content="{shuxm:ResourceString Name=ViewWikiArchonQuestHeader}">
                         <NavigationViewItem.Icon>
                             <BitmapIcon ShowAsMonochrome="False" UriSource="ms-appx:///Resource/Icon/UI_MarkQuest_Main_Proce.png"/>
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
+
+                    <NavigationViewItem
+                        shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:WikiFoodPage"
+                        Content="{shuxm:ResourceString Name=ViewWikiFoodHeader}">
+                        <NavigationViewItem.Icon>
+                            <BitmapIcon ShowAsMonochrome="False" UriSource="ms-appx:///Resource/Navigation/WikiFood.png"/>
                         </NavigationViewItem.Icon>
                     </NavigationViewItem>
 

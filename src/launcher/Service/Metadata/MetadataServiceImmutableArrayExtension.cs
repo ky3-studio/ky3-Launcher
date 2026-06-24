@@ -10,6 +10,7 @@
 using kyxsan.Model.Metadata;
 using kyxsan.Model.Metadata.Achievement;
 using kyxsan.Model.Metadata.Avatar;
+using kyxsan.Model.Metadata.Food;
 using kyxsan.Model.Metadata.Item;
 using kyxsan.Model.Metadata.Monster;
 using kyxsan.Model.Metadata.Quest;
@@ -62,6 +63,11 @@ internal static class MetadataServiceImmutableArrayExtension
         public ValueTask<ImmutableArray<DisplayItem>> GetDisplayItemArrayAsync(CancellationToken token = default)
         {
             return metadataService.FromCacheOrFileAsync<DisplayItem>(MetadataFileStrategies.DisplayItem, token);
+        }
+
+        public ValueTask<ImmutableArray<Food>> GetFoodArrayAsync(CancellationToken token = default)
+        {
+            return metadataService.FromCacheOrFileAsync<Food>(MetadataFileStrategies.Food, token);
         }
 
         public ValueTask<ImmutableArray<GachaEvent>> GetGachaEventArrayAsync(CancellationToken token = default)

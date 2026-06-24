@@ -18,7 +18,14 @@ internal static class ResponseValidator
 
     public static bool TryValidate(Response response, IServiceProvider serviceProvider)
     {
-        return serviceProvider.GetRequiredService<ICommonResponseValidator<Response>>().TryValidate(response);
+        try
+        {
+            return serviceProvider.GetRequiredService<ICommonResponseValidator<Response>>().TryValidate(response);
+        }
+        catch (ObjectDisposedException)
+        {
+            return false;
+        }
     }
 
     public static bool TryValidate<TData>(Response<TData> response, IMessenger messenger, [NotNullWhen(true)] out TData? data)
@@ -28,7 +35,15 @@ internal static class ResponseValidator
 
     public static bool TryValidate<TData>(Response<TData> response, IServiceProvider serviceProvider, [NotNullWhen(true)] out TData? data)
     {
-        return serviceProvider.GetRequiredService<ITypedResponseValidator<TData>>().TryValidate(response, out data);
+        try
+        {
+            return serviceProvider.GetRequiredService<ITypedResponseValidator<TData>>().TryValidate(response, out data);
+        }
+        catch (ObjectDisposedException)
+        {
+            data = default;
+            return false;
+        }
     }
 
     public static bool TryValidateWithoutUINotification(Response response)
@@ -38,7 +53,14 @@ internal static class ResponseValidator
 
     public static bool TryValidateWithoutUINotification(Response response, IServiceProvider serviceProvider)
     {
-        return serviceProvider.GetRequiredService<ICommonResponseValidator<Response>>().TryValidateWithoutUINotification(response);
+        try
+        {
+            return serviceProvider.GetRequiredService<ICommonResponseValidator<Response>>().TryValidateWithoutUINotification(response);
+        }
+        catch (ObjectDisposedException)
+        {
+            return false;
+        }
     }
 
     public static bool TryValidateWithoutUINotification<TData>(Response<TData> response, [NotNullWhen(true)] out TData? data)
@@ -48,6 +70,14 @@ internal static class ResponseValidator
 
     public static bool TryValidateWithoutUINotification<TData>(Response<TData> response, IServiceProvider serviceProvider, [NotNullWhen(true)] out TData? data)
     {
-        return serviceProvider.GetRequiredService<ITypedResponseValidator<TData>>().TryValidateWithoutUINotification(response, out data);
+        try
+        {
+            return serviceProvider.GetRequiredService<ITypedResponseValidator<TData>>().TryValidateWithoutUINotification(response, out data);
+        }
+        catch (ObjectDisposedException)
+        {
+            data = default;
+            return false;
+        }
     }
 }

@@ -166,6 +166,11 @@ internal sealed partial class AvatarPropertyViewModel : Abstraction.ViewModel, I
             List<CharacterView> characters = [];
             foreach (Character apiChar in wrapper.List)
             {
+                if (apiChar.Weapon is null)
+                {
+                    continue;
+                }
+
                 if (metadataContext.IdAvatarMap.TryGetValue(apiChar.Id, out Model.Metadata.Avatar.Avatar? metaAvatar))
                 {
                     metadataContext.IdWeaponMap.TryGetValue(apiChar.Weapon.Id, out Model.Metadata.Weapon.Weapon? metaWeapon);
@@ -186,6 +191,11 @@ internal sealed partial class AvatarPropertyViewModel : Abstraction.ViewModel, I
             {
                 foreach (DetailedCharacter detail in detailWrapper.List)
                 {
+                    if (detail.Base is null)
+                    {
+                        continue;
+                    }
+
                     CharacterView? characterView = characters.Find(c => c.Id == detail.Base.Id);
                     if (characterView is not null && metadataContext.IdAvatarMap.TryGetValue(detail.Base.Id, out Model.Metadata.Avatar.Avatar? detailMetaAvatar))
                     {

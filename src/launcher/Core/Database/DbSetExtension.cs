@@ -52,9 +52,18 @@ internal static class DbSetExtension
         private int SaveChangesAndClearChangeTracker()
         {
             DbContext dbContext = dbSet.Context();
-            int count = dbContext.SaveChanges();
-            dbContext.ChangeTracker.Clear();
-            return count;
+            try
+            {
+                int count = dbContext.SaveChanges();
+                dbContext.ChangeTracker.Clear();
+                return count;
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                // Row was modified/deleted by another operation concurrently
+                dbContext.ChangeTracker.Clear();
+                return 0;
+            }
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

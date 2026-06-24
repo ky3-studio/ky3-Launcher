@@ -66,7 +66,10 @@ internal sealed partial class UserQRCodeDialog : ContentDialog, IDisposable
     private void Cancel()
     {
         SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Cancel", "UserQRCodeDialog.Command"));
-        userManualCancellationTokenSource.Cancel();
+        if (!disposed)
+        {
+            userManualCancellationTokenSource.Cancel();
+        }
     }
 
     private async ValueTask<ValueResult<bool, QrLoginResult?>> PrivateGetQRLoginResultAsync()

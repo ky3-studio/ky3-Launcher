@@ -15,5 +15,5 @@ namespace kyxsan.Web.Response;
 internal class ListWrapper<[MeansImplicitUse(ImplicitUseKindFlags.InstantiatedNoFixedConstructorSignature, ImplicitUseTargetFlags.WithMembers)] T>
 {
     [JsonPropertyName("list")]
-    public ImmutableArray<T> List { get; set; }
+    public ImmutableArray<T> List { get; set; } = [];
 }

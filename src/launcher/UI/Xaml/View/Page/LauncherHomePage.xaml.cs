@@ -61,6 +61,8 @@ internal sealed partial class LauncherHomePage : ScopedPage
     private DispatcherTimer? _bannerTimer;
     private DispatcherTimer? _bgTimer;
     private DispatcherTimer? _gameProcessCheckTimer;
+    private DispatcherTimer? _videoInDelayTimer;
+    private DispatcherTimer? _videoOutDelayTimer;
     private bool _isLaunchButtonHovered;
     private static bool s_isVideoMode;
     private bool _videoWebView2Ready;
@@ -218,8 +220,12 @@ internal sealed partial class LauncherHomePage : ScopedPage
             }
         }
 
-        _gameProcessCheckTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
-        _gameProcessCheckTimer.Tick += GameProcessCheckTimer_Tick;
+        if (_gameProcessCheckTimer == null)
+        {
+            _gameProcessCheckTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
+            _gameProcessCheckTimer.Tick += GameProcessCheckTimer_Tick;
+        }
+
         _gameProcessCheckTimer.Start();
         UpdateLaunchButtonState();
     }
@@ -276,12 +282,31 @@ internal sealed partial class LauncherHomePage : ScopedPage
 
     private void CleanupPage()
     {
-        _bannerTimer?.Stop();
-        _bannerTimer = null;
-        _bgTimer?.Stop();
-        _bgTimer = null;
-        _gameProcessCheckTimer?.Stop();
-        _gameProcessCheckTimer = null;
+        if (_bannerTimer != null)
+        {
+            _bannerTimer.Stop();
+            _bannerTimer.Tick -= OnBannerTimerTick;
+            _bannerTimer = null;
+        }
+
+        if (_bgTimer != null)
+        {
+            _bgTimer.Stop();
+            _bgTimer.Tick -= OnBgTimerTick;
+            _bgTimer = null;
+        }
+
+        if (_gameProcessCheckTimer != null)
+        {
+            _gameProcessCheckTimer.Stop();
+            _gameProcessCheckTimer.Tick -= GameProcessCheckTimer_Tick;
+            _gameProcessCheckTimer = null;
+        }
+
+        _videoInDelayTimer?.Stop();
+        _videoInDelayTimer = null;
+        _videoOutDelayTimer?.Stop();
+        _videoOutDelayTimer = null;
         
         if (_bgSlideStoryboard != null)
         {
@@ -403,19 +428,24 @@ internal sealed partial class LauncherHomePage : ScopedPage
 
     private void StopVideo()
     {
-        if (_mainView != null)
+        if (_mainView == null)
         {
-            _mainView.LauncherBackgroundVideo.Opacity = 0;
-            _mainView.LauncherBackgroundTheme.Opacity = 0;
-            try
-            {
-                if (_videoWebView2Ready && _mainView.LauncherBackgroundVideo.CoreWebView2 is not null)
-                {
-                    _mainView.LauncherBackgroundVideo.CoreWebView2.NavigateToString("<html><body style='background:transparent'></body></html>");
-                }
-            }
-            catch { }
+            return;
         }
+
+        _mainView.LauncherBackgroundVideo.Opacity = 0;
+        _mainView.LauncherBackgroundTheme.Opacity = 0;
+
+        try
+        {
+            if (_videoWebView2Ready && _mainView.LauncherBackgroundVideo.CoreWebView2 is not null)
+            {
+                _mainView.LauncherBackgroundVideo.CoreWebView2.ExecuteScriptAsync(
+                    "document.querySelectorAll('video').forEach(v=>{v.pause();v.removeAttribute('src');v.load()})").AsTask().ContinueWith(_ => { }, TaskScheduler.Default);
+                _mainView.LauncherBackgroundVideo.CoreWebView2.NavigateToString("<html><body style='background:transparent'></body></html>");
+            }
+        }
+        catch { }
     }
 
     private static T? FindParent<T>(DependencyObject child) where T : DependencyObject
@@ -791,7 +821,7 @@ internal sealed partial class LauncherHomePage : ScopedPage
         s_isVideoMode = false;
         int intervalSeconds = _appOptions?.BackgroundSwitchInterval.Value ?? 8;
         _bgTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(intervalSeconds) };
-        _bgTimer.Tick += (_, _) => ShowBackground((s_currentBgIndex + 1) % s_backgroundList.Count);
+        _bgTimer.Tick += OnBgTimerTick;
         _bgTimer.Start();
     }
 
@@ -1182,10 +1212,12 @@ internal sealed partial class LauncherHomePage : ScopedPage
 
             _blurBrush.StartAnimation("Blur.BlurAmount", blurUp);
 
-            DispatcherTimer delayTimer = new() { Interval = halfDuration };
-            delayTimer.Tick += (_, _) =>
+            _videoInDelayTimer?.Stop();
+            _videoInDelayTimer = new DispatcherTimer { Interval = halfDuration };
+            _videoInDelayTimer.Tick += (_, _) =>
             {
-                delayTimer.Stop();
+                _videoInDelayTimer?.Stop();
+                _videoInDelayTimer = null;
 
                 if (_mainView == null || _blurVisual == null)
                 {
@@ -1200,7 +1232,7 @@ internal sealed partial class LauncherHomePage : ScopedPage
                 blurDown.Duration = halfDuration;
                 _blurBrush?.StartAnimation("Blur.BlurAmount", blurDown);
             };
-            delayTimer.Start();
+            _videoInDelayTimer.Start();
         }
         else
         {
@@ -1234,10 +1266,12 @@ internal sealed partial class LauncherHomePage : ScopedPage
 
             _blurBrush.StartAnimation("Blur.BlurAmount", blurUp);
 
-            DispatcherTimer delayTimer = new() { Interval = halfDuration };
-            delayTimer.Tick += (_, _) =>
+            _videoOutDelayTimer?.Stop();
+            _videoOutDelayTimer = new DispatcherTimer { Interval = halfDuration };
+            _videoOutDelayTimer.Tick += (_, _) =>
             {
-                delayTimer.Stop();
+                _videoOutDelayTimer?.Stop();
+                _videoOutDelayTimer = null;
 
                 if (_mainView == null || _blurVisual == null)
                 {
@@ -1261,7 +1295,7 @@ internal sealed partial class LauncherHomePage : ScopedPage
                     DispatcherQueue?.TryEnqueue(() => onCompleted?.Invoke());
                 };
             };
-            delayTimer.Start();
+            _videoOutDelayTimer.Start();
         }
         else
         {
@@ -1507,7 +1541,7 @@ internal sealed partial class LauncherHomePage : ScopedPage
             }
 
             _bannerTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(5) };
-            _bannerTimer.Tick += (_, _) => ShowBanner((_currentBannerIndex + 1) % _bannerList.Count);
+            _bannerTimer.Tick += OnBannerTimerTick;
             _bannerTimer.Start();
         }
     }
@@ -1885,5 +1919,21 @@ internal sealed partial class LauncherHomePage : ScopedPage
         public string Date { get; set; } = "";
 
         public string Link { get; set; } = "";
+    }
+
+    private void OnBgTimerTick(object? sender, object e)
+    {
+        if (s_backgroundList.Count > 0)
+        {
+            ShowBackground((s_currentBgIndex + 1) % s_backgroundList.Count);
+        }
+    }
+
+    private void OnBannerTimerTick(object? sender, object e)
+    {
+        if (_bannerList.Count > 0)
+        {
+            ShowBanner((_currentBannerIndex + 1) % _bannerList.Count);
+        }
     }
 }

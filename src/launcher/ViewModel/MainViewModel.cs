@@ -20,7 +20,9 @@ using kyxsan.Service.Notification;
 using kyxsan.Service.RedeemCode;
 using kyxsan.Service.RemoteConfig;
 using kyxsan.Core.IO.Http.Proxy;
+using kyxsan.Factory.ContentDialog;
 using kyxsan.Service.Update;
+using Microsoft.UI.Xaml.Controls;
 using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
@@ -36,6 +38,7 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
     private readonly ICurrentXamlWindowReference currentXamlWindowReference;
     private readonly IMetadataService metadataService;
     private readonly IUpdateService updateService;
+    private readonly IContentDialogFactory contentDialogFactory;
     private readonly ITaskContext taskContext;
     private readonly IMessenger messenger;
 
@@ -92,7 +95,11 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
             }
 
             string appDir = PackageIdentityAdapter.AppDirectory;
-            string updaterPath = Path.Combine(appDir, "updater.exe");
+
+            // Prefer the new updater from the patch cache (so old installations get recursive copy support)
+            string patchUpdaterPath = Path.Combine(updateFilesDir, "updater.exe");
+            string installedUpdaterPath = Path.Combine(appDir, "updater.exe");
+            string updaterPath = File.Exists(patchUpdaterPath) ? patchUpdaterPath : installedUpdaterPath;
 
             if (!File.Exists(updaterPath))
             {
@@ -151,13 +158,24 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
                 return;
             }
 
+            // Mandatory update: show dialog, user cannot skip
+            await taskContext.SwitchToMainThreadAsync();
+            ContentDialogResult dialogResult = await contentDialogFactory.CreateForConfirmAsync(
+                SH.ViewModelMainUpdateMandatoryTitle,
+                SH.FormatViewModelMainUpdateMandatoryContent(result.PackageInformation.Version.ToString()));
+
+            if (dialogResult is not ContentDialogResult.Primary)
+            {
+                Application.Current.Exit();
+                return;
+            }
+
             // Download and extract incremental patch
             if (string.IsNullOrEmpty(result.PackageInformation.PatchUrl) ||
                 string.IsNullOrEmpty(result.PackageInformation.PatchSha256))
             {
-                // Patch not available from server yet, notify user
-                await taskContext.SwitchToMainThreadAsync();
                 messenger.Send(InfoBarMessage.Warning(SH.ViewModelMainUpdatePatchNotAvailable));
+                Application.Current.Exit();
                 return;
             }
 
@@ -165,8 +183,13 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
             if (patchSuccess)
             {
                 await taskContext.SwitchToMainThreadAsync();
-                IsUpdateReady = true;
-                UpdateReadyNotifyToken++;
+                RestartToUpdate();
+            }
+            else
+            {
+                await taskContext.SwitchToMainThreadAsync();
+                messenger.Send(InfoBarMessage.Warning(SH.ViewModelMainUpdateDownloadFailed));
+                Application.Current.Exit();
             }
         }
         catch

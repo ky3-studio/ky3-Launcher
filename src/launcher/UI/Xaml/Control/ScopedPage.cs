@@ -26,7 +26,7 @@ internal partial class ScopedPage : Page
 
     protected ScopedPage()
     {
-        NavigationCacheMode = NavigationCacheMode.Enabled;
+        NavigationCacheMode = NavigationCacheMode.Disabled;
         Loading += OnLoading;
         Unloaded += OnUnloaded;
     }
@@ -89,9 +89,11 @@ internal partial class ScopedPage : Page
         }
         else
         {
-            // Page returned from navigation cache - dispose old CTS and provide fresh one
-            viewCts.Dispose();
+            // Page returned from navigation cache - create new CTS first, then dispose old
+            // This prevents ObjectDisposedException if background code accesses CancellationToken concurrently
+            CancellationTokenSource old = viewCts;
             viewCts = new CancellationTokenSource();
+            old.Dispose();
             if (DataContext is IViewModel viewModel)
             {
                 viewModel.CancellationToken = CancellationToken;
@@ -101,8 +103,9 @@ internal partial class ScopedPage : Page
 
     private void OnUnloaded(object sender, RoutedEventArgs e)
     {
-        // Cancel in-flight async operations when page leaves visual tree
-        // Do NOT dispose - cached page code may still read CancellationToken
         viewCts.Cancel();
+        viewCts.Dispose();
+        scope?.Dispose();
+        scope = null;
     }
 }

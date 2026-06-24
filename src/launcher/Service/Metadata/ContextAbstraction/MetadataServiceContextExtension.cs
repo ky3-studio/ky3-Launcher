@@ -46,6 +46,11 @@ internal static class MetadataServiceContextExtension
                     arrayAvatarSource.Avatars = await metadataService.GetAvatarArrayAsync(token).ConfigureAwait(false);
                 }
 
+                if (context is IMetadataArrayFoodSource arrayFoodSource)
+                {
+                    arrayFoodSource.Foods = await metadataService.GetFoodArrayAsync(token).ConfigureAwait(false);
+                }
+
                 if (context is IMetadataArrayChapterSource arrayChapterSource)
                 {
                     arrayChapterSource.Chapters = await metadataService.GetChapterArrayAsync(token).ConfigureAwait(false);

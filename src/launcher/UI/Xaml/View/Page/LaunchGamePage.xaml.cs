@@ -35,6 +35,7 @@ internal sealed partial class LaunchGamePage : ScopedPage
     {
         InitializeComponent();
         Loaded += OnPageLoaded;
+        Unloaded += OnPageUnloaded;
 
         _gameStateTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
         _gameStateTimer.Tick += GameStateTimer_Tick;
@@ -51,6 +52,21 @@ internal sealed partial class LaunchGamePage : ScopedPage
         {
             _injectionToggleChanging = false;
         });
+    }
+
+    private void OnPageUnloaded(object sender, RoutedEventArgs e)
+    {
+        if (_gameStateTimer != null)
+        {
+            _gameStateTimer.Stop();
+            _gameStateTimer.Tick -= GameStateTimer_Tick;
+            _gameStateTimer = null;
+        }
+
+        StopConfigSync();
+        _refreshCts?.Cancel();
+        _refreshCts?.Dispose();
+        _refreshCts = null;
     }
 
     private void GameStateTimer_Tick(object? sender, object e)

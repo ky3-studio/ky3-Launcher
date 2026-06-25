@@ -24,7 +24,7 @@ jobs:
         run: Compress-Archive -Path "${{ github.workspace }}/bin/Release/*" -DestinationPath "${{ github.workspace }}/ky3launcher-${{ github.ref_name }}.zip"
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: ${{ github.workspace }}/ky3launcher-${{ github.ref_name }}.zip
           generate_release_notes: true

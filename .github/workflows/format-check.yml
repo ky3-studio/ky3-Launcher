@@ -1,0 +1,21 @@
+name: Format Check
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  format:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '10.0.x'
+          dotnet-quality: 'preview'
+
+      - name: Check formatting
+        run: dotnet format whitespace src/launcher/launcher.csproj --verify-no-changes

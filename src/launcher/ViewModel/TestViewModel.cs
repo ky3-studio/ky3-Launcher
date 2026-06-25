@@ -43,6 +43,7 @@ using System.Text.RegularExpressions;
 
 // ReSharper disable LocalizableElement
 namespace kyxsan.ViewModel;
+
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
 internal sealed partial class TestViewModel : Abstraction.ViewModel

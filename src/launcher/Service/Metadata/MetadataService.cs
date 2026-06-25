@@ -47,7 +47,7 @@ internal sealed partial class MetadataService : IMetadataService
             return ValueTask.CompletedTask;
         }
 
-        
+
         isInitialized = true;
         initializeCompletionSource.TrySetResult();
         backgroundActivityOptions.MetadataInitialization.Update(taskContext, SH.ServiceMetadataInitReady, true, false, false, false);

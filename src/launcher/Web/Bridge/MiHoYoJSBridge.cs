@@ -474,7 +474,7 @@ internal class MiHoYoJSBridge
 
     private async ValueTask<IJsBridgeResult?> TryGetJsResultFromJsParamAsync(JsParam param)
     {
-        if (coreWebView2.IsDisposed)
+        if (coreWebView2 is null || coreWebView2.IsDisposed)
         {
             return default;
         }

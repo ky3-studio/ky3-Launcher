@@ -36,8 +36,9 @@ internal sealed partial class CookieTokenRefreshJob : IJob
             {
                 await userService.RefreshCookieTokenAsync(user).ConfigureAwait(false);
             }
-            catch
+            catch (Exception ex)
             {
+                SentrySdk.CaptureException(ex);
             }
         }
     }

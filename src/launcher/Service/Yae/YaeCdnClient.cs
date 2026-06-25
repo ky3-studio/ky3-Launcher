@@ -8,6 +8,8 @@
 // Licensed under the MIT license.
 
 using Microsoft.Extensions.Caching.Memory;
+using kyxsan.Core.Logging;
+using kyxsan.Service.Constants;
 using kyxsan.Service.Yae.Achievement;
 using System.Net.Http;
 
@@ -26,6 +28,7 @@ internal sealed partial class YaeCdnClient
     ];
 
     private readonly IMemoryCache memoryCache;
+    private readonly IHttpClientFactory httpClientFactory;
 
     [GeneratedConstructor]
     public partial YaeCdnClient(IServiceProvider serviceProvider);
@@ -37,8 +40,8 @@ internal sealed partial class YaeCdnClient
             return cached;
         }
 
-        using HttpClient httpClient = new();
-        httpClient.Timeout = TimeSpan.FromSeconds(15);
+        using HttpClient httpClient = httpClientFactory.CreateClient();
+        httpClient.Timeout = TimeSpan.FromSeconds(LauncherApiConstants.ImageDownloadTimeoutSeconds);
 
         foreach (string url in CdnUrls)
         {
@@ -57,8 +60,12 @@ internal sealed partial class YaeCdnClient
                     return info;
                 }
             }
-            catch
+            catch (Exception ex) when (ex is not OperationCanceledException)
             {
+                SentrySdk.AddBreadcrumb(BreadcrumbFactory2.CreateError(
+                    "CDN fetch failed",
+                    "YaeCdnClient",
+                    [("Url", url), ("Error", ex.Message)]));
             }
         }
 

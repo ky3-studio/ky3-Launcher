@@ -104,8 +104,9 @@ internal sealed partial class RedeemCodeService : ObservableObject
                 }
             }
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.CaptureException(ex);
         }
     }
 
@@ -141,8 +142,9 @@ internal sealed partial class RedeemCodeService : ObservableObject
                 }
             }
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.CaptureException(ex);
         }
     }
 }

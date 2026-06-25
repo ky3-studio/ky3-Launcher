@@ -22,8 +22,9 @@ internal static class GameServiceExtension
             {
                 return gameService.DetectCurrentGameAccount(scheme.SchemeType);
             }
-            catch
+            catch (Exception ex)
             {
+                SentrySdk.CaptureException(ex);
                 return default;
             }
         }

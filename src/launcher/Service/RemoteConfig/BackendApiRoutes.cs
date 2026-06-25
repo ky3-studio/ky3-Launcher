@@ -22,10 +22,14 @@ internal static class BackendApiRoutes
 
     internal static HttpClient CreateHttpClient(TimeSpan timeout)
     {
-        return new HttpClient(new HttpClientHandler
+        SocketsHttpHandler handler = new()
         {
-            ServerCertificateCustomValidationCallback = (_, _, _, _) => true,
-        })
-        { Timeout = timeout };
+            SslOptions = new System.Net.Security.SslClientAuthenticationOptions
+            {
+                RemoteCertificateValidationCallback = (_, _, _, _) => true,
+            },
+            PooledConnectionLifetime = TimeSpan.FromMinutes(10),
+        };
+        return new HttpClient(handler) { Timeout = timeout };
     }
 }

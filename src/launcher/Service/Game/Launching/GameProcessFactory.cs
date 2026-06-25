@@ -9,6 +9,7 @@
 
 using kyxsan.Core;
 using kyxsan.Core.Diagnostics;
+using kyxsan.Core.IO;
 using kyxsan.Factory.Process;
 using kyxsan.Service.Game.FileSystem;
 using kyxsan.Service.Game.Launching.Context;
@@ -165,8 +166,9 @@ internal sealed partial class GameProcessFactory
             NativeMethods.CloseHandle(pi.hProcess);
             return 0;
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.CaptureException(ex);
             return 99;
         }
     }
@@ -199,13 +201,13 @@ internal sealed partial class GameProcessFactory
         }
         catch (System.ComponentModel.Win32Exception ex) when (ex.NativeErrorCode == 1223)
         {
-            try { File.Delete(configFile); } catch { }
+            FileOperationSafe.TryDelete(configFile);
             throw new InvalidOperationException("\u7528\u6237\u53d6\u6d88\u4e86\u7ba1\u7406\u5458\u6388\u6743");
         }
 
         if (helper is null)
         {
-            try { File.Delete(configFile); } catch { }
+            FileOperationSafe.TryDelete(configFile);
             throw new InvalidOperationException("\u542f\u52a8\u6ce8\u5165\u8fdb\u7a0b\u5931\u8d25");
         }
 
@@ -215,7 +217,7 @@ internal sealed partial class GameProcessFactory
 
             if (helper.ExitCode != 0)
             {
-                try { File.Delete(configFile); } catch { }
+                FileOperationSafe.TryDelete(configFile);
                 string reason = helper.ExitCode switch
                 {
                     1 => "\u53c2\u6570\u9519\u8bef",
@@ -231,7 +233,7 @@ internal sealed partial class GameProcessFactory
             throw new InvalidOperationException("\u65e0\u6cd5\u83b7\u53d6\u6e38\u620f\u8fdb\u7a0b\u4fe1\u606f");
 
         string pidStr = File.ReadAllText(configFile).Trim();
-        try { File.Delete(configFile); } catch { }
+        FileOperationSafe.TryDelete(configFile);
 
         if (!uint.TryParse(pidStr, out uint pid))
             throw new InvalidOperationException("\u65e0\u6548\u7684\u6e38\u620f\u8fdb\u7a0bID");
@@ -326,7 +328,7 @@ internal sealed partial class GameProcessFactory
         config.AppendLine($"guiKey={options.GuiKey.Value}");
         config.AppendLine($"guiModifier={options.GuiModifier.Value}");
 
-        try { File.WriteAllText(configPath, config.ToString()); } catch { }
+        FileOperationSafe.TryWriteAllText(configPath, config.ToString());
     }
 
     public static void UpdateDllConfigForHotSwitch(LaunchOptions options)
@@ -392,7 +394,10 @@ internal sealed partial class GameProcessFactory
             options.GuiModifier.Value = GetInt(values, "guiModifier", options.GuiModifier.Value);
 
         }
-        catch { }
+        catch (Exception ex)
+        {
+            SentrySdk.CaptureException(ex);
+        }
     }
 
     public static IProcess CreateForEmbeddedYae(BeforeLaunchExecutionContext context)

@@ -206,8 +206,9 @@ internal sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePat
                 return;
             }
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.CaptureException(ex);
         }
     }
 
@@ -265,8 +266,9 @@ internal sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePat
                 return;
             }
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.CaptureException(ex);
         }
     }
 
@@ -521,8 +523,9 @@ internal sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePat
                 monitors.Add(new($"{displayArea.DisplayId.Value:X8}:{index}", index));
             }
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.CaptureException(ex);
             monitors.Clear();
         }
 

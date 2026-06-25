@@ -67,7 +67,10 @@ internal sealed partial class EmotionIconPage : ScopedPage
                     stream.Seek(0);
                     await clipboard.SetBitmapAsync(stream);
                 }
-                catch { }
+                catch (Exception ex)
+                {
+                    SentrySdk.CaptureException(ex);
+                }
                 dialog.Hide();
             };
 

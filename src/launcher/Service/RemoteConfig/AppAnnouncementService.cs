@@ -119,9 +119,9 @@ internal static class AppAnnouncementService
                 return data;
             }
         }
-        catch
+        catch (Exception ex)
         {
-            // Silently fail
+            SentrySdk.CaptureException(ex);
         }
 
         return [];

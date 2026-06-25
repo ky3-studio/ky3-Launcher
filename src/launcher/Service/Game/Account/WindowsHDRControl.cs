@@ -242,8 +242,9 @@ internal static unsafe class WindowsHDRControl
                 NativeMemory.Free(modes);
             }
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.CaptureException(ex);
             return false;
         }
     }
@@ -289,8 +290,9 @@ internal static unsafe class WindowsHDRControl
                 NativeMemory.Free(modes);
             }
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.CaptureException(ex);
             return false;
         }
     }
@@ -352,8 +354,9 @@ internal static unsafe class WindowsHDRControl
                 NativeMemory.Free(modes);
             }
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.CaptureException(ex);
             return false;
         }
     }

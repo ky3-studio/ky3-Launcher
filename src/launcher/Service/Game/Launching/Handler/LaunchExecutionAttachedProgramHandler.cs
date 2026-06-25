@@ -93,8 +93,9 @@ internal sealed partial class LaunchExecutionAttachedProgramHandler : AbstractLa
                 });
                 p?.WaitForExit(3000);
             }
-            catch
+            catch (Exception ex)
             {
+                SentrySdk.CaptureException(ex);
             }
         }
 
@@ -141,8 +142,9 @@ internal sealed partial class LaunchExecutionAttachedProgramHandler : AbstractLa
                 proc.Dispose();
             }
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.CaptureException(ex);
         }
 
         if (assigned)

@@ -1,4 +1,5 @@
 using CommunityToolkit.Mvvm.ComponentModel;
+using kyxsan.Core.IO;
 using kyxsan.Service.Game;
 using kyxsan.Service.Inventory;
 using kyxsan.Service.Notification;
@@ -212,13 +213,13 @@ internal sealed partial class InventoryViewModel : Abstraction.ViewModel
         }
         catch
         {
-            try { File.Delete(configFile); } catch { }
+            FileOperationSafe.TryDelete(configFile);
             return false;
         }
 
         if (helper is null)
         {
-            try { File.Delete(configFile); } catch { }
+            FileOperationSafe.TryDelete(configFile);
             return false;
         }
 
@@ -227,7 +228,7 @@ internal sealed partial class InventoryViewModel : Abstraction.ViewModel
             helper.WaitForExit();
             if (helper.ExitCode != 0)
             {
-                try { File.Delete(configFile); } catch { }
+                FileOperationSafe.TryDelete(configFile);
                 return false;
             }
         }
@@ -236,7 +237,7 @@ internal sealed partial class InventoryViewModel : Abstraction.ViewModel
             return false;
 
         string pidStr = File.ReadAllText(configFile).Trim();
-        try { File.Delete(configFile); } catch { }
+        FileOperationSafe.TryDelete(configFile);
 
         if (uint.TryParse(pidStr, out uint pid))
         {
@@ -260,7 +261,10 @@ internal sealed partial class InventoryViewModel : Abstraction.ViewModel
                 CloseHandle(handle);
             }
         }
-        catch { }
+        catch (Exception ex)
+        {
+            SentrySdk.CaptureException(ex);
+        }
 
         gameProcessId = 0;
     }

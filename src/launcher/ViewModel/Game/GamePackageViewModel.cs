@@ -250,14 +250,17 @@ internal sealed partial class GamePackageViewModel : Abstraction.ViewModel
                         foreach (string file in Directory.EnumerateFiles(gameDir, "*", SearchOption.AllDirectories))
                         {
                             try { totalBytes += new FileInfo(file).Length; }
-                            catch { }
+                            catch (Exception) { }
                         }
 
                         double gb = totalBytes / (1024.0 * 1024.0 * 1024.0);
                         string sizeText = string.Format(SH.ViewModelGamePackageSizeText, $"{gb:F1}");
                         taskContext.InvokeOnMainThread(() => GameSizeText = sizeText);
                     }
-                    catch { }
+                    catch (Exception ex)
+                    {
+                        SentrySdk.CaptureException(ex);
+                    }
                 },
                 token);
         }

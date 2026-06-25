@@ -87,8 +87,9 @@ internal sealed class GachaLogServiceMetadataContext : IMetadataContext,
                     {
                         Ioc.Default.GetRequiredService<IMessenger>().Send(InfoBarMessage.Warning(SH.ServiceGachaLogAvatarIdNotFound, $"{id}"));
                     }
-                    catch
+                    catch (Exception ex)
                     {
+                        SentrySdk.CaptureException(ex);
                     }
 
                     return new UnknownNameQuality($"Unknown Avatar ({id})", QualityType.QUALITY_NONE);
@@ -105,8 +106,9 @@ internal sealed class GachaLogServiceMetadataContext : IMetadataContext,
                     {
                         Ioc.Default.GetRequiredService<IMessenger>().Send(InfoBarMessage.Warning(SH.ServiceGachaLogWeaponIdNotFound, $"{id}"));
                     }
-                    catch
+                    catch (Exception ex)
                     {
+                        SentrySdk.CaptureException(ex);
                     }
 
                     return new UnknownNameQuality($"Unknown Weapon ({id})", QualityType.QUALITY_NONE);
@@ -118,8 +120,9 @@ internal sealed class GachaLogServiceMetadataContext : IMetadataContext,
                     {
                         Ioc.Default.GetRequiredService<IMessenger>().Send(InfoBarMessage.Warning(SH.ServiceGachaLogIdPlacesUnsupported, $"{id} has places {place}"));
                     }
-                    catch
+                    catch (Exception ex)
                     {
+                        SentrySdk.CaptureException(ex);
                     }
 
                     return new UnknownNameQuality($"Unknown ({id})", QualityType.QUALITY_NONE);

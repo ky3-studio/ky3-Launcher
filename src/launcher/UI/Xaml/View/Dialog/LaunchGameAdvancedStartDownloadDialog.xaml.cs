@@ -509,15 +509,11 @@ internal sealed partial class LaunchGameAdvancedStartDownloadDialog : ContentDia
                         sevenZipStream.Dispose();
                     }
                 }
-                catch { }
+                catch (Exception) { }
 
                 if (tempFilePath is not null)
                 {
-                    try
-                    {
-                        File.Delete(tempFilePath);
-                    }
-                    catch { }
+                    FileOperationSafe.TryDelete(tempFilePath);
                 }
             }
         }

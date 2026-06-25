@@ -36,9 +36,9 @@ internal static class FeedbackService
             if (doc.RootElement.GetProperty("retcode").GetInt32() == 0)
                 return doc.RootElement.GetProperty("data").GetProperty("url").GetString();
         }
-        catch
+        catch (Exception ex)
         {
-            // Silently fail
+            SentrySdk.CaptureException(ex);
         }
 
         return null;
@@ -63,8 +63,9 @@ internal static class FeedbackService
             using JsonDocument doc = JsonDocument.Parse(respJson);
             return doc.RootElement.GetProperty("retcode").GetInt32() == 0;
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.CaptureException(ex);
             return false;
         }
     }
@@ -83,9 +84,9 @@ internal static class FeedbackService
                 return JsonSerializer.Deserialize<List<FeedbackReply>>(dataEl.GetRawText()) ?? [];
             }
         }
-        catch
+        catch (Exception ex)
         {
-            // Silently fail
+            SentrySdk.CaptureException(ex);
         }
 
         return [];
@@ -101,9 +102,9 @@ internal static class FeedbackService
             StringContent content = new(json, Encoding.UTF8, "application/json");
             await Http.PostAsync(BackendApiRoutes.FeedbackReplyRead, content).ConfigureAwait(false);
         }
-        catch
+        catch (Exception ex)
         {
-            // Silently fail
+            SentrySdk.CaptureException(ex);
         }
     }
 

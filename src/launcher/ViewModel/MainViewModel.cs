@@ -118,8 +118,9 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
 
             Application.Current.Exit();
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.CaptureException(ex);
         }
     }
 
@@ -192,8 +193,9 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
                 Application.Current.Exit();
             }
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.CaptureException(ex);
         }
     }
 
@@ -232,11 +234,15 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
             string patchZipPath = Path.Combine(updateCacheDir, "patch.zip");
 
             // Download patch.zip with proxy support
-            HttpClientHandler handler = new()
+            SocketsHttpHandler handler = new()
             {
-                ServerCertificateCustomValidationCallback = (_, _, _, _) => true,
+                SslOptions = new System.Net.Security.SslClientAuthenticationOptions
+                {
+                    RemoteCertificateValidationCallback = (_, _, _, _) => true,
+                },
                 Proxy = HttpProxyUsingSystemProxy.Instance,
                 UseProxy = true,
+                PooledConnectionLifetime = TimeSpan.FromMinutes(10),
             };
 
             using HttpClient client = new(handler) { Timeout = TimeSpan.FromMinutes(5) };
@@ -269,15 +275,15 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
             {
                 ZipFile.ExtractToDirectory(patchZipPath, filesDir, true);
             }
-            catch
+            catch (Exception ex)
             {
-                // Clean up partial extraction
                 if (Directory.Exists(filesDir))
                 {
                     Directory.Delete(filesDir, true);
                 }
 
                 File.Delete(patchZipPath);
+                SentrySdk.CaptureException(ex);
                 return false;
             }
 
@@ -293,8 +299,9 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
         {
             throw;
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.CaptureException(ex);
             return false;
         }
         finally

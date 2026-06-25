@@ -45,6 +45,7 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
     private readonly AutoStartService autoStartService;
     private readonly IContentDialogFactory contentDialogFactory;
     private readonly IServiceProvider serviceProvider;
+    private readonly AppOptions appOptionsInstance;
 
     private readonly WeakReference<ScrollViewer> weakScrollViewer = new(default!);
 
@@ -142,7 +143,7 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
         {
             bool startup = autoStartService.IsStartupEnabled();
             bool runElevated = autoStartService.IsRunElevatedEnabled();
-            AppOptions options = Ioc.Default.GetRequiredService<AppOptions>();
+            AppOptions options = appOptionsInstance;
             appOptions = options;
 
             options.RunElevated.PropertyChanged += (s, e) =>
@@ -151,8 +152,9 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
                 {
                     taskContext.InvokeOnMainThread(() => OnPropertyChanged(nameof(RunElevated)));
                 }
-                catch
+                catch (Exception ex)
                 {
+                    SentrySdk.CaptureException(ex);
                 }
             };
 
@@ -162,8 +164,9 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
                 {
                     taskContext.InvokeOnMainThread(() => OnPropertyChanged(nameof(IsStartupEnabled)));
                 }
-                catch
+                catch (Exception ex)
                 {
+                    SentrySdk.CaptureException(ex);
                 }
             };
 

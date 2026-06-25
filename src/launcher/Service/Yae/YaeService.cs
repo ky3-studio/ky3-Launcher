@@ -214,8 +214,9 @@ internal sealed partial class YaeService : IYaeService
                                 }
                             }
                         }
-                        catch
+                        catch (Exception ex)
                         {
+                            SentrySdk.CaptureException(ex);
                         }
                     }
 
@@ -431,8 +432,9 @@ internal sealed partial class YaeService : IYaeService
                                 }
                             }
                         }
-                        catch
+                        catch (Exception ex)
                         {
+                            SentrySdk.CaptureException(ex);
                         }
                     }
 

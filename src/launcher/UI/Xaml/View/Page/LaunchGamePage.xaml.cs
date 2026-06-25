@@ -152,7 +152,10 @@ internal sealed partial class LaunchGamePage : ScopedPage
                         }
                     }).AsTask().ConfigureAwait(false);
                 }
-                catch { }
+                catch (Exception ex)
+                {
+                    SentrySdk.CaptureException(ex);
+                }
             }
         }, token);
     }

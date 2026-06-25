@@ -202,7 +202,7 @@ internal sealed partial class AutoStartService
         }
         catch (Exception ex)
         {
-            try { SentrySdk.CaptureException(ex); } catch { }
+            try { SentrySdk.CaptureException(ex); } catch (Exception) { }
             throw;
         }
     }
@@ -282,7 +282,7 @@ internal sealed partial class AutoStartService
             }
             catch (Exception ex)
             {
-                try { SentrySdk.CaptureException(ex); } catch { }
+                try { SentrySdk.CaptureException(ex); } catch (Exception) { }
             }
         }
     }

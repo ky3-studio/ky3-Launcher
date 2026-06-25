@@ -140,8 +140,9 @@ internal sealed partial class AppOptions : DbStoreOptions
             AutoStartService autoStart = sp.GetRequiredService<AutoStartService>();
             autoStart.SetStartup(value, options.RunElevated.Value);
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.CaptureException(ex);
         }
     }
 
@@ -158,8 +159,9 @@ internal sealed partial class AppOptions : DbStoreOptions
                 autoStart.SetStartup(true, value);
             }
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.CaptureException(ex);
         }
     }
 }

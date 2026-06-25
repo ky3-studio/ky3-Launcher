@@ -1,0 +1,35 @@
+name: CodeQL
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 3 * * 1'  
+
+jobs:
+  analyze:
+    runs-on: windows-latest
+    permissions:
+      security-events: write
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: csharp
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '10.0.x'
+          dotnet-quality: 'preview'
+
+      - name: Build
+        run: dotnet build src/launcher/launcher.csproj -c Release -p:Platform=x64 -p:CI=true -p:BaseOutputPath=${{ github.workspace }}/bin/ -p:BaseIntermediateOutputPath=obj/
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3

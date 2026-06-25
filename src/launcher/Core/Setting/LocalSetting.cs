@@ -217,7 +217,7 @@ internal static class LocalSetting
                     {
                         // ⚠️ 特殊处理：JSON 数字类型转换
                         Type targetType = typeof(T);
-                        
+
                         if (jsonElement.ValueKind == JsonValueKind.Number)
                         {
                             if (targetType == typeof(int))

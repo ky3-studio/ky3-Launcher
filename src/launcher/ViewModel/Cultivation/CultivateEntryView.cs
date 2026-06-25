@@ -69,41 +69,41 @@ internal sealed partial class CultivateEntryView : IPropertyValuesProvider
         switch (entry.Type)
         {
             case CultivateType.AvatarAndSkill:
-            {
-                StringBuilder sb = new();
-                if (info.AvatarLevelFrom != info.AvatarLevelTo)
                 {
-                    sb.Append("Lv.").Append(info.AvatarLevelFrom).Append(" \u2192 Lv.").Append(info.AvatarLevelTo);
-                    sb.AppendLine();
-                }
+                    StringBuilder sb = new();
+                    if (info.AvatarLevelFrom != info.AvatarLevelTo)
+                    {
+                        sb.Append("Lv.").Append(info.AvatarLevelFrom).Append(" \u2192 Lv.").Append(info.AvatarLevelTo);
+                        sb.AppendLine();
+                    }
 
-                if (info.SkillALevelFrom != info.SkillALevelTo)
-                {
-                    sb.Append("A: ").Append(info.SkillALevelFrom).Append(" \u2192 ").Append(info.SkillALevelTo).Append(' ');
-                }
+                    if (info.SkillALevelFrom != info.SkillALevelTo)
+                    {
+                        sb.Append("A: ").Append(info.SkillALevelFrom).Append(" \u2192 ").Append(info.SkillALevelTo).Append(' ');
+                    }
 
-                if (info.SkillELevelFrom != info.SkillELevelTo)
-                {
-                    sb.Append("E: ").Append(info.SkillELevelFrom).Append(" \u2192 ").Append(info.SkillELevelTo).Append(' ');
-                }
+                    if (info.SkillELevelFrom != info.SkillELevelTo)
+                    {
+                        sb.Append("E: ").Append(info.SkillELevelFrom).Append(" \u2192 ").Append(info.SkillELevelTo).Append(' ');
+                    }
 
-                if (info.SkillQLevelFrom != info.SkillQLevelTo)
-                {
-                    sb.Append("Q: ").Append(info.SkillQLevelFrom).Append(" \u2192 ").Append(info.SkillQLevelTo).Append(' ');
-                }
+                    if (info.SkillQLevelFrom != info.SkillQLevelTo)
+                    {
+                        sb.Append("Q: ").Append(info.SkillQLevelFrom).Append(" \u2192 ").Append(info.SkillQLevelTo).Append(' ');
+                    }
 
-                return sb.ToString().TrimEnd();
-            }
+                    return sb.ToString().TrimEnd();
+                }
 
             case CultivateType.Weapon:
-            {
-                if (info.WeaponLevelFrom != info.WeaponLevelTo)
                 {
-                    return $"Lv.{info.WeaponLevelFrom} \u2192 Lv.{info.WeaponLevelTo}";
-                }
+                    if (info.WeaponLevelFrom != info.WeaponLevelTo)
+                    {
+                        return $"Lv.{info.WeaponLevelFrom} \u2192 Lv.{info.WeaponLevelTo}";
+                    }
 
-                break;
-            }
+                    break;
+                }
         }
 
         return null;

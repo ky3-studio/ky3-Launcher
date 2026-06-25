@@ -94,18 +94,18 @@ internal sealed partial class GameProcessFactory
         try
         {
             if (args.Length < 2) return 1;
-    
+
             string configFile = args[1];
             if (!File.Exists(configFile)) return 1;
-    
+
             string[] lines = File.ReadAllLines(configFile);
             if (lines.Length < 5) return 1;
-    
+
             string gameExe = lines[0];
             string injDllPath = lines[1];
             string workDir = lines[2];
             string cmdLineArgs = lines[3];
-            
+
             // Parse custom DLLs
             int customDllCount = int.TryParse(lines[4], out int cnt) ? cnt : 0;
             List<string> customDlls = [];
@@ -117,19 +117,19 @@ internal sealed partial class GameProcessFactory
                     customDlls.Add(customPath);
                 }
             }
-    
+
             string fullCmdLine = string.IsNullOrEmpty(cmdLineArgs)
                 ? $"\"{gameExe}\""
                 : $"\"{gameExe}\" {cmdLineArgs}";
-    
+
             STARTUPINFOW si = new();
             si.cb = (uint)Marshal.SizeOf<STARTUPINFOW>();
-    
+
             bool created = NativeMethods.CreateProcessW(
                 gameExe, fullCmdLine, nint.Zero, nint.Zero, false, 0x4, nint.Zero, workDir, ref si, out PROCESS_INFORMATION pi);
-    
+
             if (!created) return 2;
-    
+
             List<string> failures = [];
 
             if (!string.IsNullOrEmpty(injDllPath))
@@ -159,9 +159,9 @@ internal sealed partial class GameProcessFactory
 
             NativeMethods.ResumeThread(pi.hThread);
             NativeMethods.CloseHandle(pi.hThread);
-    
+
             File.WriteAllText(configFile, pi.dwProcessId.ToString());
-    
+
             NativeMethods.CloseHandle(pi.hProcess);
             return 0;
         }
@@ -170,7 +170,7 @@ internal sealed partial class GameProcessFactory
             return 99;
         }
     }
-    
+
     private static IProcess CreateWithInjection(string arguments, string fileName, string workingDirectory, string dllPath, ImmutableArray<string> customDlls)
     {
         string configFile = Path.Combine(Path.GetTempPath(), $"kyxsan_inject_{Guid.NewGuid():N}.tmp");
@@ -180,9 +180,9 @@ internal sealed partial class GameProcessFactory
         configLines.Add(customDlls.Length.ToString());
         configLines.AddRange(customDlls);
         File.WriteAllLines(configFile, configLines);
-    
+
         string currentExe = Environment.ProcessPath ?? throw new InvalidOperationException("\u65e0\u6cd5\u83b7\u53d6\u542f\u52a8\u5668\u8def\u5f84");
-    
+
         System.Diagnostics.ProcessStartInfo psi = new()
         {
             FileName = currentExe,
@@ -191,7 +191,7 @@ internal sealed partial class GameProcessFactory
             Verb = "runas",
             WorkingDirectory = Path.GetDirectoryName(currentExe)
         };
-    
+
         System.Diagnostics.Process? helper;
         try
         {
@@ -202,17 +202,17 @@ internal sealed partial class GameProcessFactory
             try { File.Delete(configFile); } catch { }
             throw new InvalidOperationException("\u7528\u6237\u53d6\u6d88\u4e86\u7ba1\u7406\u5458\u6388\u6743");
         }
-    
+
         if (helper is null)
         {
             try { File.Delete(configFile); } catch { }
             throw new InvalidOperationException("\u542f\u52a8\u6ce8\u5165\u8fdb\u7a0b\u5931\u8d25");
         }
-    
+
         using (helper)
         {
             helper.WaitForExit();
-    
+
             if (helper.ExitCode != 0)
             {
                 try { File.Delete(configFile); } catch { }
@@ -226,20 +226,20 @@ internal sealed partial class GameProcessFactory
                 throw new InvalidOperationException($"\u6ce8\u5165\u5931\u8d25: {reason}");
             }
         }
-    
+
         if (!File.Exists(configFile))
             throw new InvalidOperationException("\u65e0\u6cd5\u83b7\u53d6\u6e38\u620f\u8fdb\u7a0b\u4fe1\u606f");
-    
+
         string pidStr = File.ReadAllText(configFile).Trim();
         try { File.Delete(configFile); } catch { }
-    
+
         if (!uint.TryParse(pidStr, out uint pid))
             throw new InvalidOperationException("\u65e0\u6548\u7684\u6e38\u620f\u8fdb\u7a0bID");
-    
+
         nint handle = NativeMethods.OpenProcess(0x00101000, false, pid);
         if (handle == nint.Zero)
             throw new InvalidOperationException("\u65e0\u6cd5\u8fde\u63a5\u5230\u6e38\u620f\u8fdb\u7a0b");
-    
+
         return new InjectedProcess(handle, pid);
     }
 
@@ -390,7 +390,7 @@ internal sealed partial class GameProcessFactory
             options.EnableGui.Value = GetBool(values, "enableGui", options.EnableGui.Value);
             options.GuiKey.Value = GetInt(values, "guiKey", options.GuiKey.Value);
             options.GuiModifier.Value = GetInt(values, "guiModifier", options.GuiModifier.Value);
-            
+
         }
         catch { }
     }

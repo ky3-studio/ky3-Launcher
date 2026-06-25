@@ -49,7 +49,7 @@ internal static unsafe class MemoryUtilities
     {
         private readonly delegate* unmanaged[Stdcall]<byte*, int, GCHandle<Action<Span<byte>>>, HRESULT> value;
 
-        private PatchCallback(delegate* unmanaged[Stdcall]<byte*, int, GCHandle<Action<Span<byte>>>, HRESULT>  value)
+        private PatchCallback(delegate* unmanaged[Stdcall]<byte*, int, GCHandle<Action<Span<byte>>>, HRESULT> value)
         {
             this.value = value;
         }

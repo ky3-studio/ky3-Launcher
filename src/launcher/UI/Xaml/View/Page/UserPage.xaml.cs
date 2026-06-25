@@ -29,7 +29,7 @@ internal sealed partial class UserPage : ScopedPage
 
         UserViewModel userViewModel = context.ServiceProvider.GetRequiredService<UserViewModel>();
         DataContext = userViewModel;
-        
+
         await userViewModel.LoadCommand.ExecuteAsync(null).ConfigureAwait(true);
     }
 }

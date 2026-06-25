@@ -77,53 +77,53 @@ internal sealed class GachaLogServiceMetadataContext : IMetadataContext,
         switch (place)
         {
             case 8U:
-            {
-                if (IdAvatarMap.TryGetValue(id, out Avatar? avatar))
                 {
-                    return avatar;
-                }
+                    if (IdAvatarMap.TryGetValue(id, out Avatar? avatar))
+                    {
+                        return avatar;
+                    }
 
-                try
-                {
-                    Ioc.Default.GetRequiredService<IMessenger>().Send(InfoBarMessage.Warning(SH.ServiceGachaLogAvatarIdNotFound, $"{id}"));
-                }
-                catch
-                {
-                }
+                    try
+                    {
+                        Ioc.Default.GetRequiredService<IMessenger>().Send(InfoBarMessage.Warning(SH.ServiceGachaLogAvatarIdNotFound, $"{id}"));
+                    }
+                    catch
+                    {
+                    }
 
-                return new UnknownNameQuality($"Unknown Avatar ({id})", QualityType.QUALITY_NONE);
-            }
+                    return new UnknownNameQuality($"Unknown Avatar ({id})", QualityType.QUALITY_NONE);
+                }
 
             case 5U:
-            {
-                if (IdWeaponMap.TryGetValue(id, out Weapon? weapon))
                 {
-                    return weapon;
-                }
+                    if (IdWeaponMap.TryGetValue(id, out Weapon? weapon))
+                    {
+                        return weapon;
+                    }
 
-                try
-                {
-                    Ioc.Default.GetRequiredService<IMessenger>().Send(InfoBarMessage.Warning(SH.ServiceGachaLogWeaponIdNotFound, $"{id}"));
-                }
-                catch
-                {
-                }
+                    try
+                    {
+                        Ioc.Default.GetRequiredService<IMessenger>().Send(InfoBarMessage.Warning(SH.ServiceGachaLogWeaponIdNotFound, $"{id}"));
+                    }
+                    catch
+                    {
+                    }
 
-                return new UnknownNameQuality($"Unknown Weapon ({id})", QualityType.QUALITY_NONE);
-            }
+                    return new UnknownNameQuality($"Unknown Weapon ({id})", QualityType.QUALITY_NONE);
+                }
 
             default:
-            {
-                try
                 {
-                    Ioc.Default.GetRequiredService<IMessenger>().Send(InfoBarMessage.Warning(SH.ServiceGachaLogIdPlacesUnsupported, $"{id} has places {place}"));
-                }
-                catch
-                {
-                }
+                    try
+                    {
+                        Ioc.Default.GetRequiredService<IMessenger>().Send(InfoBarMessage.Warning(SH.ServiceGachaLogIdPlacesUnsupported, $"{id} has places {place}"));
+                    }
+                    catch
+                    {
+                    }
 
-                return new UnknownNameQuality($"Unknown ({id})", QualityType.QUALITY_NONE);
-            }
+                    return new UnknownNameQuality($"Unknown ({id})", QualityType.QUALITY_NONE);
+                }
         }
     }
 

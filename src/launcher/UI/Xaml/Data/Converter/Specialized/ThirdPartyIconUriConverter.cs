@@ -20,7 +20,7 @@ internal sealed partial class ThirdPartyIconUriConverter : ValueConverter<string
             ThirdPartyIconConverter.TwitterName => "ms-appx:///Resource/ThirdParty/Twitter.png".ToUri(),
             _ => $"ms-appx:///Resource/ThirdParty/{from}.png".ToUri(),
         };
-        
+
         return new BitmapImage(uri);
     }
 }

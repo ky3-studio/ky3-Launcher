@@ -163,18 +163,18 @@ internal sealed partial class LauncherHomePage : ScopedPage
             }
             else
             {
-                
+
                 string? ext = customPath != null ? Path.GetExtension(customPath).ToLowerInvariant() : null;
                 bool isVideo = ext is ".mp4" or ".webm" or ".wmv" or ".avi";
 
                 if (isVideo)
                 {
-                    
+
                     await Task.WhenAll(LoadCustomBackgroundAsync(), LoadContentAsync());
                 }
                 else
                 {
-                    
+
                     if (_mainView != null)
                     {
                         _mainView.LauncherBackgroundImage.Opacity = 1;
@@ -256,7 +256,7 @@ internal sealed partial class LauncherHomePage : ScopedPage
                 _videoTransitionStoryboard.Stop();
                 _videoTransitionStoryboard = null;
             }
-            
+
             if (_mainView.LauncherBackgroundImage.RenderTransform is CompositeTransform imgTransform)
             {
                 imgTransform.TranslateX = 0;
@@ -265,13 +265,13 @@ internal sealed partial class LauncherHomePage : ScopedPage
             {
                 oldTransform.TranslateX = 0;
             }
-            
+
             CleanupBlurLayer();
-            
+
             _mainView.LauncherBackgroundImage.Opacity = 0;
             _mainView.LauncherBackgroundImageOld.Opacity = 0;
             _mainView.LauncherBackgroundVideo.Opacity = 0;
-            
+
             if (_mainView.FindName("MainBackdropBorder") is Border backdrop)
             {
                 backdrop.Opacity = 0;
@@ -307,7 +307,7 @@ internal sealed partial class LauncherHomePage : ScopedPage
         _videoInDelayTimer = null;
         _videoOutDelayTimer?.Stop();
         _videoOutDelayTimer = null;
-        
+
         if (_bgSlideStoryboard != null)
         {
             _bgSlideStoryboard.Stop();
@@ -318,7 +318,7 @@ internal sealed partial class LauncherHomePage : ScopedPage
             _videoTransitionStoryboard.Stop();
             _videoTransitionStoryboard = null;
         }
-        
+
         StopVideo();
         CleanupBlurLayer();
 
@@ -332,13 +332,13 @@ internal sealed partial class LauncherHomePage : ScopedPage
             {
                 oldTransform2.TranslateX = 0;
             }
-            
+
             _mainView.LauncherBackgroundImage.Opacity = 0;
             _mainView.LauncherBackgroundImageOld.Opacity = 0;
             _mainView.LauncherBackgroundVideo.Opacity = 0;
             _mainView.LauncherBackgroundTheme.Opacity = 0;
             _mainView.LauncherBackgroundTheme.Source = null;
-            
+
             if (_mainView.FindName("MainBackdropBorder") is Border backdrop)
             {
                 backdrop.Opacity = 0;
@@ -1756,7 +1756,7 @@ internal sealed partial class LauncherHomePage : ScopedPage
 
                 LaunchGameShared shared = context.ServiceProvider.GetRequiredService<LaunchGameShared>();
                 IUserService userService = context.ServiceProvider.GetRequiredService<IUserService>();
-                
+
                 UserAndUid? userAndUid = await userService.GetCurrentUserAndUidAsync().ConfigureAwait(false);
                 await shared.DefaultLaunchExecutionAsync(new LauncherPageLaunchSupport(this, shared), userAndUid).ConfigureAwait(false);
             }

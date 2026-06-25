@@ -34,7 +34,7 @@ internal sealed partial class ThirdPartyToolDialog : ContentDialog
     {
         // 在 UI 线程上获取 Tool 的引用，避免后续跨线程访问依赖属性
         ToolInfo? tool = Tool;
-        
+
         try
         {
             IsDownloading = true;

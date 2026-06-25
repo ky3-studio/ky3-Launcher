@@ -924,7 +924,7 @@ internal sealed partial class LaunchGameViewModel : Abstraction.ViewModel, IView
         }
 
         string path = file;
-        
+
         await taskContext.SwitchToMainThreadAsync();
         ImmutableDictionary<string, bool> current = LaunchOptions.CustomDllConfigs.Value;
         if (!current.ContainsKey(path))

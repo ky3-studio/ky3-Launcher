@@ -52,7 +52,7 @@
 		<Manifest Include="$(ApplicationManifest)" />
 	</ItemGroup>
 
-	<ItemGroup>
+	<ItemGroup Condition="'$(CI)' == ''">
 		<DllFiles Include="d:\kyxsan-launcher\kyxsan-zr\bin\Release\Ky3-luancher-Plugin.dll" />
 	</ItemGroup>
 

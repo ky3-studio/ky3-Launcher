@@ -140,17 +140,25 @@ internal sealed partial class LaunchGamePage : ScopedPage
             {
                 await Task.Delay(2000, token).ConfigureAwait(false);
                 if (token.IsCancellationRequested)
+                {
                     break;
+                }
 
                 try
                 {
-                    await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                    Microsoft.UI.Dispatching.DispatcherQueue? queue = DispatcherQueue;
+                    if (queue is null)
+                    {
+                        break;
+                    }
+
+                    queue.TryEnqueue(Microsoft.UI.Dispatching.DispatcherQueuePriority.Normal, () =>
                     {
                         if (_viewModel?.LaunchOptions is { } options)
                         {
                             options.RefreshFromRegistry();
                         }
-                    }).AsTask().ConfigureAwait(false);
+                    });
                 }
                 catch (Exception ex)
                 {

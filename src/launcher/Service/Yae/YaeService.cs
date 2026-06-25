@@ -158,15 +158,15 @@ internal sealed partial class YaeService : IYaeService
 
                     string srcDllPath = kyxsanRuntime.GetDataSubDirectoryFile("Lib", "YaeAchievementLib.dll");
                     InstalledLocation.CopyFileFromApplicationUri("ms-appx:///YaeAchievementLib.dll", srcDllPath);
-                    
+
                     string dllPath = Path.Combine(gameDirectory, "YaeAchievementLib.dll");
                     File.Copy(srcDllPath, dllPath, overwrite: true);
-                    
+
                     if (!File.Exists(dllPath))
                     {
                         throw new FileNotFoundException("YaeAchievementLib.dll not found", dllPath);
                     }
-                    
+
                     string cmdArgs = string.Empty;
                     if (launchOptions.AreCommandLineArgumentsEnabled.Value)
                     {

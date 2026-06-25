@@ -30,10 +30,10 @@ internal sealed partial class ThirdPartyToolService : IThirdPartyToolService
         try
         {
             HttpClient httpClient = httpClientFactory.CreateClient();
-            
+
             // 添加日志
             SentrySdk.AddBreadcrumb($"Creating request to: {ApiBaseUrl}{ToolsEndpoint}", category: "ThirdPartyTool");
-            
+
             HttpRequestMessageBuilder builder = httpRequestMessageBuilderFactory.Create()
                 .SetRequestUri($"{ApiBaseUrl}{ToolsEndpoint}")
                 .Get();

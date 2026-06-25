@@ -660,7 +660,7 @@ internal partial class AdvancedCollectionView<T> : IAdvancedCollectionView<T>, I
         {
             return;
         }
-            PropertyChanged?.Invoke(this, new(propertyName));
+        PropertyChanged?.Invoke(this, new(propertyName));
     }
 
     private void OnCurrentChanging(out bool cancel)

@@ -398,7 +398,13 @@ internal sealed partial class LaunchGameAdvancedStartDownloadDialog : ContentDia
 
             foreach (ZipArchiveEntry entry in archive.Entries)
             {
-                string destinationPath = Path.Combine(targetFolder, entry.FullName);
+                string destinationPath = Path.GetFullPath(Path.Combine(targetFolder, entry.FullName));
+                if (!destinationPath.StartsWith(Path.GetFullPath(targetFolder), StringComparison.OrdinalIgnoreCase))
+                {
+                    current++;
+                    continue;
+                }
+
                 string? destinationDirectory = Path.GetDirectoryName(destinationPath);
                 if (!string.IsNullOrEmpty(destinationDirectory))
                 {

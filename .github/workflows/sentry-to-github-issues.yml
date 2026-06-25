@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Fetch new Sentry issues and create GitHub issues
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         env:
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           SENTRY_ORG: ${{ vars.SENTRY_ORG }}

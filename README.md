@@ -27,6 +27,21 @@
 
 ---
 
+## 本地化
+
+![zh-CN](https://img.shields.io/badge/zh--CN-100%25-blue?style=flat-square&logo=crowdin)
+![en-US](https://img.shields.io/badge/en--US-0%25-red?style=flat-square&logo=crowdin)
+![ja-JP](https://img.shields.io/badge/ja--JP-0%25-red?style=flat-square&logo=crowdin)
+![ko-KR](https://img.shields.io/badge/ko--KR-0%25-red?style=flat-square&logo=crowdin)
+![zh-TW](https://img.shields.io/badge/zh--TW-0%25-red?style=flat-square&logo=crowdin)
+![ru-RU](https://img.shields.io/badge/ru--RU-0%25-red?style=flat-square&logo=crowdin)
+![de-DE](https://img.shields.io/badge/de--DE-0%25-red?style=flat-square&logo=crowdin)
+![it-IT](https://img.shields.io/badge/it--IT-0%25-red?style=flat-square&logo=crowdin)
+![th-TH](https://img.shields.io/badge/th--TH-0%25-red?style=flat-square&logo=crowdin)
+![vi-VN](https://img.shields.io/badge/vi--VN-0%25-red?style=flat-square&logo=crowdin)
+
+---
+
 ## 功能特性
 
 | 功能 | 说明 |

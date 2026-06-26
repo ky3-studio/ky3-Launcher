@@ -9,12 +9,12 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-6.6.3-blue?style=flat-square" alt="version"/>
-  <img src="https://img.shields.io/badge/platform-Windows%2010%2B-0078d4?style=flat-square&logo=windows" alt="platform"/>
-  <img src="https://img.shields.io/badge/.NET-10.0-512bd4?style=flat-square&logo=dotnet" alt=".NET"/>
-  <img src="https://img.shields.io/badge/WinUI-3-7b52ab?style=flat-square" alt="WinUI 3"/>
-  <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="license"/>
-  <img src="https://img.shields.io/badge/arch-x64-lightgrey?style=flat-square" alt="arch"/>
+  <img src="https://img.shields.io/badge/version-6.6.3-blue?style=flat" alt="version"/>
+  <img src="https://img.shields.io/badge/platform-Windows%2010%2B-0078d4?style=flat&logo=windows" alt="platform"/>
+  <img src="https://img.shields.io/badge/.NET-10.0-512bd4?style=flat&logo=dotnet" alt=".NET"/>
+  <img src="https://img.shields.io/badge/WinUI-3-7b52ab?style=flat" alt="WinUI 3"/>
+  <img src="https://img.shields.io/badge/license-MIT-green?style=flat" alt="license"/>
+  <img src="https://img.shields.io/badge/arch-x64-lightgrey?style=flat" alt="arch"/>
 </p>
 
 ---
@@ -29,16 +29,16 @@
 
 ## 本地化
 
-![zh-CN](https://img.shields.io/badge/zh--CN-100%25-blue?style=flat-square&logo=crowdin)
-![en-US](https://img.shields.io/badge/en--US-0%25-red?style=flat-square&logo=crowdin)
-![ja-JP](https://img.shields.io/badge/ja--JP-0%25-red?style=flat-square&logo=crowdin)
-![ko-KR](https://img.shields.io/badge/ko--KR-0%25-red?style=flat-square&logo=crowdin)
-![zh-TW](https://img.shields.io/badge/zh--TW-0%25-red?style=flat-square&logo=crowdin)
-![ru-RU](https://img.shields.io/badge/ru--RU-0%25-red?style=flat-square&logo=crowdin)
-![de-DE](https://img.shields.io/badge/de--DE-0%25-red?style=flat-square&logo=crowdin)
-![it-IT](https://img.shields.io/badge/it--IT-0%25-red?style=flat-square&logo=crowdin)
-![th-TH](https://img.shields.io/badge/th--TH-0%25-red?style=flat-square&logo=crowdin)
-![vi-VN](https://img.shields.io/badge/vi--VN-0%25-red?style=flat-square&logo=crowdin)
+![zh-CN](https://img.shields.io/badge/zh--CN-100%25-blue?style=flat&logo=crowdin)
+![en-US](https://img.shields.io/badge/en--US-0%25-red?style=flat&logo=crowdin)
+![ja-JP](https://img.shields.io/badge/ja--JP-0%25-red?style=flat&logo=crowdin)
+![ko-KR](https://img.shields.io/badge/ko--KR-0%25-red?style=flat&logo=crowdin)
+![zh-TW](https://img.shields.io/badge/zh--TW-0%25-red?style=flat&logo=crowdin)
+![ru-RU](https://img.shields.io/badge/ru--RU-0%25-red?style=flat&logo=crowdin)
+![de-DE](https://img.shields.io/badge/de--DE-0%25-red?style=flat&logo=crowdin)
+![it-IT](https://img.shields.io/badge/it--IT-0%25-red?style=flat&logo=crowdin)
+![th-TH](https://img.shields.io/badge/th--TH-0%25-red?style=flat&logo=crowdin)
+![vi-VN](https://img.shields.io/badge/vi--VN-0%25-red?style=flat&logo=crowdin)
 
 ---
 
@@ -46,39 +46,41 @@
 
 | 功能 | 说明 |
 |------|------|
-| 游戏启动 | 支持自定义启动参数、多账号切换、插件注入 |
-| 角色养成 | 材料计算、等级规划、树脂预估 |
-| 武器 & 角色百科 | 完整的角色/武器数据浏览与筛选 |
-| 任务合集 | 魔神任务总览、奖励统计、区域筛选 |
-| 成就追踪 | 基于 Yae 的成就解锁状态读取 |
-| 自动签到 | 支持 HoYoLab / 米游社每日自动签到 |
-| 增量更新 | 文件级增量补丁，无需重新下载安装包 |
-| 插件管理 | DLL 模组热加载与管理 |
+| <img src="https://img.shields.io/badge/-游戏启动-2d333b?style=flat&logo=rocket&logoColor=white" alt=""/> | 自定义启动参数、命令行注入、窗口模式选择、多账号快速切换、DLL 插件自动加载 |
+| <img src="https://img.shields.io/badge/-角色养成-2d333b?style=flat&logo=target&logoColor=white" alt=""/> | 等级突破材料计算、天赋升级规划、树脂消耗预估、每日/周本收益统计 |
+| <img src="https://img.shields.io/badge/-武器 & 角色百科-2d333b?style=flat&logo=bookopen&logoColor=white" alt=""/> | 全角色 / 武器属性浏览、筛选排序、命之座 & 精炼数据、圣遗物推荐搭配 |
+| <img src="https://img.shields.io/badge/-任务合集-2d333b?style=flat&logo=map&logoColor=white" alt=""/> | 魔神任务 & 传说任务总览、任务奖励统计、按区域筛选 |
+| <img src="https://img.shields.io/badge/-成就追踪-2d333b?style=flat&logo=trophy&logoColor=white" alt=""/> | 基于 [Yae](https://github.com/HolographicHat/Yae) 的本地成就状态读取、分类浏览与搜索 |
+| <img src="https://img.shields.io/badge/-自动签到-2d333b?style=flat&logo=clockify&logoColor=white" alt=""/> | 米游社 / HoYoLab 每日自动签到、多账号批量执行、签到结果通知 |
+| <img src="https://img.shields.io/badge/-增量更新-2d333b?style=flat&logo=download&logoColor=white" alt=""/> | 文件级增量补丁（BsDiff）、断点续传、本地校验、无需重新下载完整安装包 |
+| <img src="https://img.shields.io/badge/-插件管理-2d333b?style=flat&logo=puzzle&logoColor=white" alt=""/> | DLL 模组热加载 / 卸载、版本管理、一键启用 / 禁用 |
+| <img src="https://img.shields.io/badge/-实时便笺-2d333b?style=flat&logo=bell&logoColor=white" alt=""/> | 树脂 / 委托 / 洞天宝钱 / 参量质变仪实时查看、数据与账号联动 |
+| <img src="https://img.shields.io/badge/-祈愿分析-2d333b?style=flat&logo=barchart&logoColor=white" alt=""/> | 抽卡记录导入、保底计数、出货概率统计、历史记录可视化 |
 
 ---
 
 ## 技术栈
 
-| 层 | 技术 |
-|---|---|
-| 框架 | .NET 10 / WinUI 3 (Windows App SDK) |
-| 语言 | C# 13 (preview) |
-| 架构 | MVVM (CommunityToolkit.Mvvm) |
-| 数据库 | SQLite + Entity Framework Core |
-| 网络 | HttpClient + WebView2 |
-| 原生层 | C++ Win32 Interop / Native DLL |
-| 构建 | MSBuild + Source Generators |
+| 层 | 技术 | 说明 |
+|:---:|------|------|
+| <img src="https://img.shields.io/badge/-框架-512bd4?style=flat&logo=dotnet&logoColor=white" alt=""/> | .NET 10 / WinUI 3 | Windows App SDK，现代桌面 UI 框架 |
+| <img src="https://img.shields.io/badge/-语言-239120?style=flat&logo=csharp&logoColor=white" alt=""/> | C# 13 (preview) | 最新语言特性、Source Generators 代码生成 |
+| <img src="https://img.shields.io/badge/-架构-ff6f00?style=flat&logo=databricks&logoColor=white" alt=""/> | MVVM | CommunityToolkit.Mvvm、ObservableProperty、WeakReferenceMessenger |
+| <img src="https://img.shields.io/badge/-数据库-003b57?style=flat&logo=sqlite&logoColor=white" alt=""/> | SQLite | Entity Framework Core ORM、本地持久化存储 |
+| <img src="https://img.shields.io/badge/-网络-4285f4?style=flat&logo=googlecloud&logoColor=white" alt=""/> | HttpClient + WebView2 | REST API 请求、Cookie 管理、嵌入式 Web 视图 |
+| <img src="https://img.shields.io/badge/-原生层-00599c?style=flat&logo=cplusplus&logoColor=white" alt=""/> | C++ / Win32 Interop | Native DLL 注入、进程管理、底层系统调用 |
+| <img src="https://img.shields.io/badge/-构建-512bd4?style=flat&logo=visualstudio&logoColor=white" alt=""/> | MSBuild | Source Generators、增量编译、CI/CD 自动发布 |
 
 ---
 
 ## 环境要求
 
-| 项 | 要求 |
-|---|---|
-| 操作系统 | Windows 10 2004 (19041) 及以上 |
-| 架构 | x64 |
-| VC++ 运行库 | 2015–2022 x64 |
-| WebView2 运行时 | 任意版本 |
+| 项 | 要求 | 备注 |
+|:---:|------|------|
+| <img src="https://img.shields.io/badge/-OS-0078d4?style=flat&logo=windows11&logoColor=white" alt=""/> | Windows 10 2004+ | Build 19041 及以上，推荐 Windows 11 |
+| <img src="https://img.shields.io/badge/-架构-lightgrey?style=flat&logo=amd&logoColor=white" alt=""/> | x64 | 仅支持 64 位系统 |
+| <img src="https://img.shields.io/badge/-运行库-6c33af?style=flat&logo=visualstudio&logoColor=white" alt=""/> | VC++ 2015–2022 x64 | [下载地址](https://aka.ms/vs/17/release/vc_redist.x64.exe) |
+| <img src="https://img.shields.io/badge/-WebView2-0078d4?style=flat&logo=microsoftedge&logoColor=white" alt=""/> | WebView2 Runtime | 任意版本，Windows 11 已内置 |
 
 ---
 
@@ -86,14 +88,16 @@
 
 ### 前置条件
 
-- [.NET 10 SDK](https://dotnet.microsoft.com/download) (preview)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/) 或 `dotnet` CLI
-- Windows App SDK workload
+| 依赖 | 说明 |
+|------|------|
+| <img src="https://img.shields.io/badge/-.NET%2010%20SDK-512bd4?style=flat&logo=dotnet&logoColor=white" alt=""/> | [dotnet.microsoft.com](https://dotnet.microsoft.com/download)，preview 版本 |
+| <img src="https://img.shields.io/badge/-Visual%20Studio%202022-5c2d91?style=flat&logo=visualstudio&logoColor=white" alt=""/> | 或使用 `dotnet` CLI 单独构建 |
+| <img src="https://img.shields.io/badge/-Windows%20App%20SDK-0078d4?style=flat&logo=windows&logoColor=white" alt=""/> | VS Installer 中勾选对应 Workload |
 
 ### 克隆仓库
 
 ```bash
-git clone https://github.com/ky3-git/ky3-Launcher.git
+git clone https://github.com/ky3-studio/ky3-Launcher.git
 cd ky3-Launcher
 ```
 
@@ -106,10 +110,10 @@ dotnet restore src/launcher/launcher.csproj
 ### 编译
 
 ```bash
-dotnet build src/launcher/launcher.csproj -c Release
+dotnet build src/launcher/launcher.csproj -c Release -p:Platform=x64
 ```
 
-构建产物输出到 `bin/Release/` 目录。
+构建产物输出到 `bin/x64/Release/` 目录。
 
 ---
 
@@ -117,27 +121,31 @@ dotnet build src/launcher/launcher.csproj -c Release
 
 | 仓库 | 说明 |
 |------|------|
-| [ky3-launcher-plugin-module](https://github.com/ky3-git/ky3-launcher-plugin-module) | DLL 插件模块 |
-| [ky3-metadata](https://github.com/ky3-git/ky3-metadata) | 游戏元数据 JSON 集合 |
-| [Yae](https://github.com/HolographicHat/Yae) | 原神成就解锁工具 |
+| <img src="https://img.shields.io/badge/-plugin--module-181717?style=flat&logo=github&logoColor=white" alt=""/> [ky3-launcher-plugin-module](https://github.com/ky3-git/ky3-launcher-plugin-module) | DLL 插件模块，提供插件 SDK 与接口定义 |
+| <img src="https://img.shields.io/badge/-metadata-181717?style=flat&logo=github&logoColor=white" alt=""/> [ky3-metadata](https://github.com/ky3-git/ky3-metadata) | 游戏元数据 JSON 集合（角色 / 武器 / 材料 / 任务） |
+| <img src="https://img.shields.io/badge/-Yae-181717?style=flat&logo=github&logoColor=white" alt=""/> [Yae](https://github.com/HolographicHat/Yae) | 原神成就解锁工具，本地读取成就状态 |
 
 ---
 
 ## 贡献
 
-欢迎提交 Issue 和 Pull Request。
+欢迎提交 Issue 和 Pull Request，帮助改进项目。
 
-- [**Issue**](https://github.com/ky3-git/ky3-Launcher/issues) — 反馈 Bug、提出功能建议
-- [**Pull Request**](https://github.com/ky3-git/ky3-Launcher/pulls) — 修复问题或新增功能
+| 渠道 | 用途 |
+|------|------|
+| <img src="https://img.shields.io/badge/-Issue-da3633?style=flat&logo=github&logoColor=white" alt=""/> [Issues](https://github.com/ky3-studio/ky3-Launcher/issues) | 反馈 Bug、提出功能建议、讨论方案 |
+| <img src="https://img.shields.io/badge/-PR-2ea44f?style=flat&logo=github&logoColor=white" alt=""/> [Pull Requests](https://github.com/ky3-studio/ky3-Launcher/pulls) | 修复问题、新增功能、优化性能 |
 
 ---
 
 ## 致谢
 
-本项目参考了 [Snap Hutao](https://github.com/DGP-Studio/Snap.Hutao) 的架构设计，感谢 DGP Studio 及其社区贡献者的开源工作。
+本项目参考了 <img src="https://avatars.githubusercontent.com/u/49308723?s=20" width="20" height="20" alt="DGP Studio"/> [Snap Hutao](https://github.com/DGP-Studio/Snap.Hutao) 的架构设计，感谢 [DGP Studio](https://github.com/DGP-Studio) 及其社区贡献者的开源工作。
 
 ---
 
 ## License
 
-[MIT](LICENSE)
+<img src="https://img.shields.io/badge/license-MIT-green?style=flat&logo=opensourceinitiative&logoColor=white" alt="MIT"/>
+
+本项目基于 [MIT](LICENSE) 协议开源。

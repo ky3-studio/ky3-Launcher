@@ -37,3 +37,7 @@ global using System.Windows.Input;
 
 global using FromKeyed = kyxsan.Core.DependencyInjection.Annotation.FromKeyedServicesAttribute;
 global using Void = kyxsan.Core.Void;
+
+using System.Runtime.CompilerServices;
+
+[assembly: InternalsVisibleTo("ky3launcher.Tests")]

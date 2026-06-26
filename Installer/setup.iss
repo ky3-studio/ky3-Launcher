@@ -3,10 +3,10 @@
 #define AppPublisher  "kyxsan Detail Development Team"
 #define AppExe        "ky3launcher.exe"
 #define AppId         "{{8F3A1C2E-7B4D-4E5A-9F6B-2A1D3C4E5F60}"
-#define SrcDir        "D:\kyxsan-launcher\bin\Release"
-#define IconFile      "D:\kyxsan-launcher\ky3 launcher\src\launcher\Assets\Logo.ico"
+#define SrcDir        ".\..\src\launcher\bin\Release"
+#define IconFile      ".\..\src\launcher\Assets\Logo.ico"
 #define FontName      "Microsoft YaHei UI"
-#define OutDir        "D:\kyxsan-launcher\installer"
+#define OutDir        ".\..\..\installer"
 
 [Setup]
 AppId={#AppId}
@@ -39,8 +39,8 @@ LZMAUseSeparateProcess=yes
 
 WizardStyle=modern
 WizardSizePercent=110
-WizardImageFile=kyxsan.bmp
-WizardSmallImageFile=kyxsan-small.bmp
+WizardImageFile=launcher.bmp
+WizardSmallImageFile=launcher-small.bmp
 SetupIconFile={#IconFile}
 UninstallDisplayIcon={app}\{#AppExe}
 UninstallDisplayName={#AppName}
@@ -143,7 +143,7 @@ begin
   DesktopPath := ExpandConstant('{autodesktop}');
   ShortcutPath := AddBackslash(DesktopPath) + ExpandConstant('{#AppName}') + '.lnk';
   GDesktopIconExists := FileExists(ShortcutPath);
-  if GDesktopIconExists and IsTaskSelected('desktopicon') = False then
+  if GDesktopIconExists and WizardIsTaskSelected('desktopicon') = False then
     WizardSelectTasks('desktopicon');
   UninstKey := 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\' +
                ExpandConstant('{#SetupSetting("AppId")}') + '_is1';

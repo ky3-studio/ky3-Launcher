@@ -46,16 +46,16 @@
 
 | 功能 | 说明 |
 |------|------|
-| <img src="https://img.shields.io/badge/-游戏启动-2d333b?style=flat&logo=rocket&logoColor=white" alt=""/> | 自定义启动参数、命令行注入、窗口模式选择、多账号快速切换、DLL 插件自动加载 |
-| <img src="https://img.shields.io/badge/-角色养成-2d333b?style=flat&logo=target&logoColor=white" alt=""/> | 等级突破材料计算、天赋升级规划、树脂消耗预估、每日/周本收益统计 |
-| <img src="https://img.shields.io/badge/-武器 & 角色百科-2d333b?style=flat&logo=bookopen&logoColor=white" alt=""/> | 全角色 / 武器属性浏览、筛选排序、命之座 & 精炼数据、圣遗物推荐搭配 |
-| <img src="https://img.shields.io/badge/-任务合集-2d333b?style=flat&logo=map&logoColor=white" alt=""/> | 魔神任务 & 传说任务总览、任务奖励统计、按区域筛选 |
-| <img src="https://img.shields.io/badge/-成就追踪-2d333b?style=flat&logo=trophy&logoColor=white" alt=""/> | 基于 [Yae](https://github.com/HolographicHat/Yae) 的本地成就状态读取、分类浏览与搜索 |
-| <img src="https://img.shields.io/badge/-自动签到-2d333b?style=flat&logo=clockify&logoColor=white" alt=""/> | 米游社 / HoYoLab 每日自动签到、多账号批量执行、签到结果通知 |
-| <img src="https://img.shields.io/badge/-增量更新-2d333b?style=flat&logo=download&logoColor=white" alt=""/> | 文件级增量补丁（BsDiff）、断点续传、本地校验、无需重新下载完整安装包 |
-| <img src="https://img.shields.io/badge/-插件管理-2d333b?style=flat&logo=puzzle&logoColor=white" alt=""/> | DLL 模组热加载 / 卸载、版本管理、一键启用 / 禁用 |
-| <img src="https://img.shields.io/badge/-实时便笺-2d333b?style=flat&logo=bell&logoColor=white" alt=""/> | 树脂 / 委托 / 洞天宝钱 / 参量质变仪实时查看、数据与账号联动 |
-| <img src="https://img.shields.io/badge/-祈愿分析-2d333b?style=flat&logo=barchart&logoColor=white" alt=""/> | 抽卡记录导入、保底计数、出货概率统计、历史记录可视化 |
+| 游戏启动 | 自定义启动参数、命令行注入、窗口模式选择、多账号快速切换、DLL 插件自动加载 |
+| 角色养成 | 等级突破材料计算、天赋升级规划、树脂消耗预估、每日/周本收益统计 |
+| 武器 & 角色百科 | 全角色 / 武器属性浏览、筛选排序、命之座 & 精炼数据、圣遗物推荐搭配 |
+| 任务合集 | 魔神任务 & 传说任务总览、任务奖励统计、按区域筛选 |
+| 成就追踪 | 基于 [Yae](https://github.com/HolographicHat/Yae) 的本地成就状态读取、分类浏览与搜索 |
+| 自动签到 | 米游社 / HoYoLab 每日自动签到、多账号批量执行、签到结果通知 |
+| 增量更新 | 文件级增量补丁（BsDiff）、断点续传、本地校验、无需重新下载完整安装包 |
+| 插件管理 | DLL 模组热加载 / 卸载、版本管理、一键启用 / 禁用 |
+| 实时便笺 | 树脂 / 委托 / 洞天宝钱 / 参量质变仪实时查看、数据与账号联动 |
+| 祈愿分析 | 抽卡记录导入、保底计数、出货概率统计、历史记录可视化 |
 
 ---
 
@@ -63,13 +63,13 @@
 
 | 层 | 技术 | 说明 |
 |:---:|------|------|
-| <img src="https://img.shields.io/badge/-框架-512bd4?style=flat&logo=dotnet&logoColor=white" alt=""/> | .NET 10 / WinUI 3 | Windows App SDK，现代桌面 UI 框架 |
-| <img src="https://img.shields.io/badge/-语言-239120?style=flat&logo=csharp&logoColor=white" alt=""/> | C# 13 (preview) | 最新语言特性、Source Generators 代码生成 |
-| <img src="https://img.shields.io/badge/-架构-ff6f00?style=flat&logo=databricks&logoColor=white" alt=""/> | MVVM | CommunityToolkit.Mvvm、ObservableProperty、WeakReferenceMessenger |
-| <img src="https://img.shields.io/badge/-数据库-003b57?style=flat&logo=sqlite&logoColor=white" alt=""/> | SQLite | Entity Framework Core ORM、本地持久化存储 |
-| <img src="https://img.shields.io/badge/-网络-4285f4?style=flat&logo=googlecloud&logoColor=white" alt=""/> | HttpClient + WebView2 | REST API 请求、Cookie 管理、嵌入式 Web 视图 |
-| <img src="https://img.shields.io/badge/-原生层-00599c?style=flat&logo=cplusplus&logoColor=white" alt=""/> | C++ / Win32 Interop | Native DLL 注入、进程管理、底层系统调用 |
-| <img src="https://img.shields.io/badge/-构建-512bd4?style=flat&logo=visualstudio&logoColor=white" alt=""/> | MSBuild | Source Generators、增量编译、CI/CD 自动发布 |
+| 框架 | .NET 10 / WinUI 3 | Windows App SDK，现代桌面 UI 框架 |
+| 语言 | C# 13 (preview) | 最新语言特性、Source Generators 代码生成 |
+| 架构 | MVVM | CommunityToolkit.Mvvm、ObservableProperty、WeakReferenceMessenger |
+| 数据库 | SQLite | Entity Framework Core ORM、本地持久化存储 |
+| 网络 | HttpClient + WebView2 | REST API 请求、Cookie 管理、嵌入式 Web 视图 |
+| 原生层 | C++ / Win32 Interop | Native DLL 注入、进程管理、底层系统调用 |
+| 构建 | MSBuild | Source Generators、增量编译、CI/CD 自动发布 |
 
 ---
 
@@ -77,10 +77,10 @@
 
 | 项 | 要求 | 备注 |
 |:---:|------|------|
-| <img src="https://img.shields.io/badge/-OS-0078d4?style=flat&logo=windows11&logoColor=white" alt=""/> | Windows 10 2004+ | Build 19041 及以上，推荐 Windows 11 |
-| <img src="https://img.shields.io/badge/-架构-lightgrey?style=flat&logo=amd&logoColor=white" alt=""/> | x64 | 仅支持 64 位系统 |
-| <img src="https://img.shields.io/badge/-运行库-6c33af?style=flat&logo=visualstudio&logoColor=white" alt=""/> | VC++ 2015–2022 x64 | [下载地址](https://aka.ms/vs/17/release/vc_redist.x64.exe) |
-| <img src="https://img.shields.io/badge/-WebView2-0078d4?style=flat&logo=microsoftedge&logoColor=white" alt=""/> | WebView2 Runtime | 任意版本，Windows 11 已内置 |
+| OS | Windows 10 2004+ | Build 19041 及以上，推荐 Windows 11 |
+| 架构 | x64 | 仅支持 64 位系统 |
+| 运行库 | VC++ 2015–2022 x64 | [下载地址](https://aka.ms/vs/17/release/vc_redist.x64.exe) |
+| WebView2 | WebView2 Runtime | 任意版本，Windows 11 已内置 |
 
 ---
 

@@ -1,19 +1,19 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Model.Intrinsic;
-using kyxsan.Model.Metadata;
-using kyxsan.Model.Metadata.Abstraction;
-using kyxsan.Service.Metadata.ContextAbstraction;
-using kyxsan.ViewModel.GachaLog;
+using Launcher.Model.Intrinsic;
+using Launcher.Model.Metadata;
+using Launcher.Model.Metadata.Abstraction;
+using Launcher.Service.Metadata.ContextAbstraction;
+using Launcher.ViewModel.GachaLog;
 
-namespace kyxsan.Service.GachaLog.Factory;
+namespace Launcher.Service.GachaLog.Factory;
 
 internal sealed class HistoryWishBuilder
 {

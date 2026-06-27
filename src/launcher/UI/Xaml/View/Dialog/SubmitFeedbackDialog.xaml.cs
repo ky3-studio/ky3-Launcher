@@ -1,16 +1,16 @@
-// kyxsan - Submit Feedback Dialog
+﻿// Launcher - Submit Feedback Dialog
 
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core;
-using kyxsan.Core.IO;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Factory.Picker;
-using kyxsan.Service.Notification;
-using kyxsan.Service.RemoteConfig;
+using Launcher.Core;
+using Launcher.Core.IO;
+using Launcher.Factory.ContentDialog;
+using Launcher.Factory.Picker;
+using Launcher.Service.Notification;
+using Launcher.Service.RemoteConfig;
 using System.IO;
 
-namespace kyxsan.UI.Xaml.View.Dialog;
+namespace Launcher.UI.Xaml.View.Dialog;
 
 internal sealed partial class SubmitFeedbackDialog : ContentDialog
 {
@@ -82,7 +82,7 @@ internal sealed partial class SubmitFeedbackDialog : ContentDialog
         bool ok = await FeedbackService.SubmitFeedbackAsync(
             content,
             ContactBox.Text?.Trim() ?? "",
-            kyxsanRuntime.Version.ToString(),
+            LauncherRuntime.Version.ToString(),
             imageUrls).ConfigureAwait(true);
 
         if (ok)

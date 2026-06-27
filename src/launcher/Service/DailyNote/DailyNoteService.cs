@@ -1,26 +1,26 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.DependencyInjection.Abstraction;
-using kyxsan.Model.Entity;
-using kyxsan.Service.Abstraction;
-using kyxsan.Service.User;
-using kyxsan.ViewModel.DailyNote;
-using kyxsan.ViewModel.User;
-using kyxsan.Web.Hoyolab.Takumi.GameRecord;
-using kyxsan.Web.Hoyolab.Takumi.GameRecord.DailyNote;
-using kyxsan.Web.Response;
+using Launcher.Core.DependencyInjection.Abstraction;
+using Launcher.Model.Entity;
+using Launcher.Service.Abstraction;
+using Launcher.Service.User;
+using Launcher.ViewModel.DailyNote;
+using Launcher.ViewModel.User;
+using Launcher.Web.Hoyolab.Takumi.GameRecord;
+using Launcher.Web.Hoyolab.Takumi.GameRecord.DailyNote;
+using Launcher.Web.Response;
 using System.Collections.Immutable;
 using System.Collections.ObjectModel;
-using WebDailyNote = kyxsan.Web.Hoyolab.Takumi.GameRecord.DailyNote.DailyNote;
+using WebDailyNote = Launcher.Web.Hoyolab.Takumi.GameRecord.DailyNote.DailyNote;
 
-namespace kyxsan.Service.DailyNote;
+namespace Launcher.Service.DailyNote;
 
 [Service(ServiceLifetime.Singleton, typeof(IDailyNoteService))]
 internal sealed partial class DailyNoteService : IDailyNoteService, IRecipient<UserRemovedMessage>

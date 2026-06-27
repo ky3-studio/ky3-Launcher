@@ -1,16 +1,16 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using JetBrains.Annotations;
-using kyxsan.Core;
+using Launcher.Core;
 
-namespace kyxsan.Model.InterChange.Achievement;
+namespace Launcher.Model.InterChange.Achievement;
 
 // ReSharper disable once InconsistentNaming
 internal sealed class UIAFInfo
@@ -41,7 +41,7 @@ internal sealed class UIAFInfo
         {
             ExportTimestamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds(),
             ExportApp = SH.AppName,
-            ExportAppVersion = kyxsanRuntime.Version.ToString(),
+            ExportAppVersion = LauncherRuntime.Version.ToString(),
             UIAFVersion = UIAF.CurrentVersion,
         };
     }
@@ -52,7 +52,7 @@ internal sealed class UIAFInfo
         {
             ExportTimestamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds(),
             ExportApp = "Embedded Yae",
-            ExportAppVersion = "ky3 launcher " + kyxsanRuntime.Version.ToString(),
+            ExportAppVersion = "ky3 launcher " + LauncherRuntime.Version.ToString(),
             UIAFVersion = UIAF.CurrentVersion,
         };
     }

@@ -1,14 +1,14 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.ExceptionService;
-using kyxsan.Web.Endpoint.kyxsan;
+using Launcher.Core.ExceptionService;
+using Launcher.Web.Endpoint.Launcher;
 using System.IO;
 using System.Net;
 using System.Net.Http;
@@ -16,7 +16,7 @@ using System.Net.Sockets;
 using System.Security.Authentication;
 using System.Text;
 
-namespace kyxsan.Web.Request.Builder;
+namespace Launcher.Web.Request.Builder;
 
 internal static class HttpRequestExceptionHandling
 {
@@ -30,7 +30,7 @@ internal static class HttpRequestExceptionHandling
     {
         Uri? uri = builder.RequestUri is null ? default : new UriBuilder(builder.RequestUri).Uri;
 
-        // kyxsan Generic API handling
+        // Launcher Generic API handling
         if (TryHandleGenericApiRequest(messageBuilder, builder, ex, uri))
         {
             return true;
@@ -294,7 +294,7 @@ internal static class HttpRequestExceptionHandling
 
     private static bool TryHandleGenericApiRequest(StringBuilder messageBuilder, HttpRequestMessageBuilder builder, Exception ex, Uri? uri)
     {
-        IInfrastructureEndpoints endpoints = builder.ServiceProvider.GetRequiredService<IkyxsanEndpointsFactory>().Create();
+        IInfrastructureEndpoints endpoints = builder.ServiceProvider.GetRequiredService<ILauncherEndpointsFactory>().Create();
         if (uri is not null && string.Equals(uri.GetComponents(UriComponents.SchemeAndServer, UriFormat.Unescaped), endpoints.Root, StringComparison.OrdinalIgnoreCase))
         {
             if (ex is HttpRequestException { StatusCode: (HttpStatusCode)418 or HttpStatusCode.UnavailableForLegalReasons })

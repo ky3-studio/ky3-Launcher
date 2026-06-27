@@ -1,7 +1,7 @@
-using kyxsan.UI.Xaml.Data;
+﻿using Launcher.UI.Xaml.Data;
 using System.Collections.Immutable;
 
-namespace kyxsan.ViewModel.Calendar;
+namespace Launcher.ViewModel.Calendar;
 
 internal sealed partial class CalendarDay : IPropertyValuesProvider
 {

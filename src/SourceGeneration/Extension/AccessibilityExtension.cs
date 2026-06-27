@@ -1,12 +1,12 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.CodeAnalysis;
 using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
-using static kyxsan.SourceGeneration.Primitive.FastSyntaxFactory;
+using static Launcher.SourceGeneration.Primitive.FastSyntaxFactory;
 
-namespace kyxsan.SourceGeneration.Extension;
+namespace Launcher.SourceGeneration.Extension;
 
 internal static class AccessibilityExtension
 {

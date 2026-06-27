@@ -1,30 +1,30 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.UI.Xaml;
-using kyxsan.Core.Setting;
-using kyxsan.Model.Metadata.Avatar;
-using kyxsan.Model.Metadata.Item;
-using kyxsan.Model.Metadata.Weapon;
-using kyxsan.Model.Primitive;
-using kyxsan.Service;
-using kyxsan.Service.Announcement;
-using kyxsan.Service.Metadata;
-using kyxsan.Service.Metadata.ContextAbstraction;
-using kyxsan.UI.Xaml.Data;
-using kyxsan.ViewModel.Calendar;
-using kyxsan.Web.Hoyolab.Hk4e.Common.Announcement;
-using kyxsan.Web.WebView2;
+using Launcher.Core.Setting;
+using Launcher.Model.Metadata.Avatar;
+using Launcher.Model.Metadata.Item;
+using Launcher.Model.Metadata.Weapon;
+using Launcher.Model.Primitive;
+using Launcher.Service;
+using Launcher.Service.Announcement;
+using Launcher.Service.Metadata;
+using Launcher.Service.Metadata.ContextAbstraction;
+using Launcher.UI.Xaml.Data;
+using Launcher.ViewModel.Calendar;
+using Launcher.Web.Hoyolab.Hk4e.Common.Announcement;
+using Launcher.Web.WebView2;
 using System.Collections.Immutable;
 
-namespace kyxsan.ViewModel.Home;
+namespace Launcher.ViewModel.Home;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]

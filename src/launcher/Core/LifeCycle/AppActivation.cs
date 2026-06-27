@@ -1,42 +1,42 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 // Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml;
 using Microsoft.Windows.AppNotifications;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.LifeCycle.InterProcess;
-using kyxsan.Core.Logging;
-using kyxsan.Core.Setting;
-using kyxsan.Factory.Process;
-using kyxsan.Service;
-using kyxsan.Service.AutoSignIn;
-using kyxsan.Service.BackgroundActivity;
-using kyxsan.Service.kyxsan;
-using kyxsan.Service.Job;
-using kyxsan.Service.Metadata;
-using kyxsan.Service.Navigation;
-using kyxsan.Service.Notification;
-using kyxsan.Service.RemoteConfig;
-using kyxsan.UI.Input.HotKey;
-using kyxsan.UI.Shell;
-using kyxsan.UI.Windowing;
-using kyxsan.UI.Xaml.View.Page;
-using kyxsan.UI.Xaml.View.Window;
-using kyxsan.ViewModel.Achievement;
-using kyxsan.ViewModel.Game;
-using kyxsan.ViewModel.Guide;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.LifeCycle.InterProcess;
+using Launcher.Core.Logging;
+using Launcher.Core.Setting;
+using Launcher.Factory.Process;
+using Launcher.Service;
+using Launcher.Service.AutoSignIn;
+using Launcher.Service.BackgroundActivity;
+using Launcher.Service.Launcher;
+using Launcher.Service.Job;
+using Launcher.Service.Metadata;
+using Launcher.Service.Navigation;
+using Launcher.Service.Notification;
+using Launcher.Service.RemoteConfig;
+using Launcher.UI.Input.HotKey;
+using Launcher.UI.Shell;
+using Launcher.UI.Windowing;
+using Launcher.UI.Xaml.View.Page;
+using Launcher.UI.Xaml.View.Window;
+using Launcher.ViewModel.Achievement;
+using Launcher.ViewModel.Game;
+using Launcher.ViewModel.Guide;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace kyxsan.Core.LifeCycle;
+namespace Launcher.Core.LifeCycle;
 
 [Service(ServiceLifetime.Singleton, typeof(IAppActivation))]
 [SuppressMessage("", "CA1001")]
@@ -59,11 +59,11 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
     [GeneratedConstructor]
     public partial AppActivation(IServiceProvider serviceProvider);
 
-    public void RedirectedActivate(kyxsanActivationArguments args)
+    public void RedirectedActivate(LauncherActivationArguments args)
     {
         HandleActivationExclusivelyAsync(args).SafeForget();
 
-        async ValueTask HandleActivationExclusivelyAsync(kyxsanActivationArguments args)
+        async ValueTask HandleActivationExclusivelyAsync(LauncherActivationArguments args)
         {
             if (Interlocked.CompareExchange(ref isActivating, 1, 0) is not 0)
             {
@@ -84,7 +84,7 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
         HandleAppNotificationActivationAsync(args.Arguments.AsReadOnly(), false).SafeForget();
     }
 
-    public void ActivateAndInitialize(kyxsanActivationArguments args)
+    public void ActivateAndInitialize(LauncherActivationArguments args)
     {
         if (Volatile.Read(ref isActivating) is 1)
         {
@@ -153,26 +153,26 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
         }
     }
 
-    private async ValueTask UnsynchronizedHandleActivationAsync(kyxsanActivationArguments args)
+    private async ValueTask UnsynchronizedHandleActivationAsync(LauncherActivationArguments args)
     {
         await taskContext.SwitchToBackgroundAsync();
         switch (args.Kind)
         {
-            case kyxsanActivationKind.Protocol:
+            case LauncherActivationKind.Protocol:
                 {
                     ArgumentNullException.ThrowIfNull(args.ProtocolActivatedUri);
                     await HandleProtocolActivationAsync(args.ProtocolActivatedUri, args.IsRedirectTo).ConfigureAwait(false);
                     break;
                 }
 
-            case kyxsanActivationKind.Launch:
+            case LauncherActivationKind.Launch:
                 {
                     ArgumentNullException.ThrowIfNull(args.LaunchActivatedArguments);
                     await HandleLaunchActivationAsync(args.IsRedirectTo).ConfigureAwait(false);
                     break;
                 }
 
-            case kyxsanActivationKind.AppNotification:
+            case LauncherActivationKind.AppNotification:
                 {
                     ArgumentNullException.ThrowIfNull(args.AppNotificationActivatedArguments);
                     await HandleAppNotificationActivationAsync(args.AppNotificationActivatedArguments, args.IsRedirectTo).ConfigureAwait(false);
@@ -185,7 +185,7 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
     {
         try
         {
-            if (kyxsanRuntime.IsProcessElevated)
+            if (LauncherRuntime.IsProcessElevated)
             {
                 serviceProvider.GetRequiredService<AutoStartService>().EnsureUpToDate();
             }
@@ -217,7 +217,7 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
             }
             catch (Exception ex)
             {
-                serviceProvider.GetRequiredService<IMessenger>().Send(InfoBarMessage.Error(new kyxsanException(SH.CoreLifeCycleAppActivationNotifyIconCreateFailed, ex)));
+                serviceProvider.GetRequiredService<IMessenger>().Send(InfoBarMessage.Error(new LauncherException(SH.CoreLifeCycleAppActivationNotifyIconCreateFailed, ex)));
             }
         }
 
@@ -227,7 +227,7 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
         [
             ConfigureSentryIpAsync(),
             serviceProvider.GetRequiredService<HotKeyOptions>().InitializeAsync().AsTask(),
-            serviceProvider.GetRequiredService<kyxsanUserOptions>().InitializeAsync().AsTask(),
+            serviceProvider.GetRequiredService<LauncherUserOptions>().InitializeAsync().AsTask(),
             serviceProvider.GetRequiredService<IMetadataService>().InitializeInternalAsync().AsTask(),
             serviceProvider.GetRequiredService<IQuartzService>().StartAsync()
         ]).ConfigureAwait(false);
@@ -275,7 +275,7 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
             try
             {
                 string today = DateTime.Today.ToString("yyyy-MM-dd");
-                string currentVer = kyxsanRuntime.Version.ToString();
+                string currentVer = LauncherRuntime.Version.ToString();
                 string lastDate = LocalSetting.Get(SettingKeys.ClientLastHeartbeatDate, "");
                 string lastVer = LocalSetting.Get(SettingKeys.ClientLastHeartbeatVersion, "");
                 if (lastDate != today || lastVer != currentVer)
@@ -355,7 +355,7 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
         if (!isRedirectTo)
         {
             LocalSetting.Update(SettingKeys.LaunchTimes, 0, static x => unchecked(x + 1));
-            if (Version.Parse(LocalSetting.Update(SettingKeys.LastVersion, "0.0.0.0", $"{kyxsanRuntime.Version}")) < kyxsanRuntime.Version)
+            if (Version.Parse(LocalSetting.Update(SettingKeys.LastVersion, "0.0.0.0", $"{LauncherRuntime.Version}")) < LauncherRuntime.Version)
             {
                 XamlApplicationLifetime.IsFirstRunAfterUpdate = true;
             }

@@ -1,22 +1,22 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using kyxsan.SourceGeneration.Extension;
-using kyxsan.SourceGeneration.Model;
-using kyxsan.SourceGeneration.Primitive;
+using Launcher.SourceGeneration.Extension;
+using Launcher.SourceGeneration.Model;
+using Launcher.SourceGeneration.Primitive;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
 using System.Threading;
 using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
-using static kyxsan.SourceGeneration.Primitive.FastSyntaxFactory;
-using static kyxsan.SourceGeneration.WellKnownSyntax;
+using static Launcher.SourceGeneration.Primitive.FastSyntaxFactory;
+using static Launcher.SourceGeneration.WellKnownSyntax;
 
-namespace kyxsan.SourceGeneration.Enum;
+namespace Launcher.SourceGeneration.Enum;
 
 [Generator(LanguageNames.CSharp)]
 internal class ExtendedEnumGenerator : IIncrementalGenerator
@@ -51,7 +51,7 @@ internal class ExtendedEnumGenerator : IIncrementalGenerator
 
         CompilationUnitSyntax syntax = CompilationUnit()
             .WithUsings(SingletonList(UsingDirective("System.Globalization")))
-            .WithMembers(SingletonList<MemberDeclarationSyntax>(FileScopedNamespaceDeclaration("kyxsan.Resource.Localization")
+            .WithMembers(SingletonList<MemberDeclarationSyntax>(FileScopedNamespaceDeclaration("Launcher.Resource.Localization")
                 .WithLeadingTrivia(NullableEnableTriviaList)
                 .WithMembers(SingletonList<MemberDeclarationSyntax>(
                     ClassDeclaration($"{context.Type.Name}Extension")

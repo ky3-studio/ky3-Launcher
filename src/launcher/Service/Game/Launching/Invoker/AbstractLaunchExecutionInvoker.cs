@@ -1,24 +1,24 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.Diagnostics;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Factory.Progress;
-using kyxsan.Factory.Process;
-using kyxsan.Service.Game.FileSystem;
-using kyxsan.Service.Game.Launching.Context;
-using kyxsan.Service.Game.Launching.Handler;
-using kyxsan.Service.Game.Package;
+using Launcher.Core.Diagnostics;
+using Launcher.Core.ExceptionService;
+using Launcher.Factory.Progress;
+using Launcher.Factory.Process;
+using Launcher.Service.Game.FileSystem;
+using Launcher.Service.Game.Launching.Context;
+using Launcher.Service.Game.Launching.Handler;
+using Launcher.Service.Game.Package;
 using System.Collections.Concurrent;
 using System.Collections.Immutable;
 
-namespace kyxsan.Service.Game.Launching.Invoker;
+namespace Launcher.Service.Game.Launching.Invoker;
 
 internal abstract class AbstractLaunchExecutionInvoker
 {
@@ -35,7 +35,7 @@ internal abstract class AbstractLaunchExecutionInvoker
 
     public async ValueTask InvokeAsync(LaunchExecutionInvocationContext context)
     {
-        kyxsanException.ThrowIf(Interlocked.Exchange(ref invoked, true), "The invoker has been invoked");
+        LauncherException.ThrowIf(Interlocked.Exchange(ref invoked, true), "The invoker has been invoked");
         ITaskContext taskContext = context.ServiceProvider.GetRequiredService<ITaskContext>();
 
         try
@@ -75,12 +75,12 @@ internal abstract class AbstractLaunchExecutionInvoker
         {
             if (context.ViewModel.TargetScheme is not { } targetScheme)
             {
-                throw kyxsanException.InvalidOperation(SH.ViewModelLaunchGameSchemeNotSelected);
+                throw LauncherException.InvalidOperation(SH.ViewModelLaunchGameSchemeNotSelected);
             }
 
             if (context.ViewModel.CurrentScheme is not { } currentScheme)
             {
-                throw kyxsanException.InvalidOperation(SH.ServiceGameLaunchExecutionCurrentSchemeNull);
+                throw LauncherException.InvalidOperation(SH.ServiceGameLaunchExecutionCurrentSchemeNull);
             }
 
             IProgress<LaunchStatus?> progress = CreateStatusProgress(context.ServiceProvider);

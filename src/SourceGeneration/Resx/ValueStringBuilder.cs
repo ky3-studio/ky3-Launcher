@@ -1,5 +1,5 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using System;
@@ -8,7 +8,7 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-namespace kyxsan.SourceGeneration.Resx;
+namespace Launcher.SourceGeneration.Resx;
 
 // Ported System.Text.ValueStringBuilder from dotnet/runtime
 // Licensed to the .NET Foundation under one or more agreements.

@@ -1,24 +1,24 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.IO.Ini;
-using kyxsan.Service.Game.Configuration;
-using kyxsan.Service.Game.FileSystem;
-using kyxsan.Service.Game.Scheme;
+using Launcher.Core.IO.Ini;
+using Launcher.Service.Game.Configuration;
+using Launcher.Service.Game.FileSystem;
+using Launcher.Service.Game.Scheme;
 using System.Collections.Immutable;
 using System.IO;
 
-namespace kyxsan.Service.Game.Package.Advanced;
+namespace Launcher.Service.Game.Package.Advanced;
 
 internal sealed class GameInstallPersistence
 {
-    private const string InstallingName = "snap_kyxsan_installing";
+    private const string InstallingName = "snap_Launcher_installing";
     private readonly IGameFileSystem gameFileSystem;
 
     private GameInstallPersistence(IGameFileSystem gameFileSystem)

@@ -1,25 +1,25 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml;
 using Microsoft.Windows.AppLifecycle;
-using kyxsan.Core.IO;
-using kyxsan.Core.LifeCycle;
-using kyxsan.Factory.Picker;
-using kyxsan.Model;
-using kyxsan.Service;
-using kyxsan.Service.BackgroundImage;
-using kyxsan.UI.Xaml;
-using kyxsan.UI.Xaml.Control.Theme;
-using kyxsan.UI.Xaml.Media.Backdrop;
+using Launcher.Core.IO;
+using Launcher.Core.LifeCycle;
+using Launcher.Factory.Picker;
+using Launcher.Model;
+using Launcher.Service;
+using Launcher.Service.BackgroundImage;
+using Launcher.UI.Xaml;
+using Launcher.UI.Xaml.Control.Theme;
+using Launcher.UI.Xaml.Media.Backdrop;
 
-namespace kyxsan.ViewModel.Setting;
+namespace Launcher.ViewModel.Setting;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]

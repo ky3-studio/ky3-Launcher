@@ -1,20 +1,19 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Common;
 using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Core.IO;
-using kyxsan.Core.Logging;
+using Launcher.Core.IO;
+using Launcher.Core.Logging;
 using System.IO;
-using Windows.System;
 
-namespace kyxsan.ViewModel.Setting;
+namespace Launcher.ViewModel.Setting;
 
 internal sealed partial class SettingFolderViewModel : ObservableObject
 {
@@ -69,6 +68,6 @@ internal sealed partial class SettingFolderViewModel : ObservableObject
     private async Task OpenFolderAsync()
     {
         SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Open folder", "SettingFolderViewModel.Command"));
-        await Launcher.LaunchFolderPathAsync(Folder);
+        await Windows.System.Launcher.LaunchFolderPathAsync(Folder);
     }
 }

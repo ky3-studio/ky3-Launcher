@@ -1,8 +1,8 @@
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace kyxsan.Migrations
+namespace Launcher.Migrations
 {
     /// <inheritdoc />
     public partial class DailyNoteWeekActiveProgress : Migration

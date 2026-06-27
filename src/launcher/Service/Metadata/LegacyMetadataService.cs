@@ -1,22 +1,22 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 using Microsoft.Extensions.Caching.Memory;
-using kyxsan.Core.Diagnostics;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.IO.Hashing;
-using kyxsan.Service.Git;
-using kyxsan.Service.Notification;
-using kyxsan.Web.Request.Builder;
-using kyxsan.Web.Request.Builder.Abstraction;
-using kyxsan.Web.Response;
-using kyxsan.Win32;
-using kyxsan.Win32.Foundation;
+using Launcher.Core.Diagnostics;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.IO.Hashing;
+using Launcher.Service.Git;
+using Launcher.Service.Notification;
+using Launcher.Web.Request.Builder;
+using Launcher.Web.Request.Builder.Abstraction;
+using Launcher.Web.Response;
+using Launcher.Win32;
+using Launcher.Win32.Foundation;
 using System.Collections.Concurrent;
 using System.Collections.Frozen;
 using System.Collections.Immutable;
@@ -24,7 +24,7 @@ using System.IO;
 using System.Net.Http;
 using System.Runtime.CompilerServices;
 
-namespace kyxsan.Service.Metadata;
+namespace Launcher.Service.Metadata;
 
 // This file is left here for future compatibility issues.
 // [Service(ServiceLifetime.Singleton, typeof(IMetadataService))]
@@ -104,7 +104,7 @@ internal sealed partial class LegacyMetadataService : IMetadataService
         }
         catch (IOException ex)
         {
-            if (kyxsanNative.IsWin32(ex.HResult, [WIN32_ERROR.ERROR_CLOUD_FILE_UNSUCCESSFUL, WIN32_ERROR.ERROR_SHARING_VIOLATION]))
+            if (LauncherNative.IsWin32(ex.HResult, [WIN32_ERROR.ERROR_CLOUD_FILE_UNSUCCESSFUL, WIN32_ERROR.ERROR_SHARING_VIOLATION]))
             {
                 context.SetResult(fileName, false);
                 return false;
@@ -163,7 +163,7 @@ internal sealed partial class LegacyMetadataService : IMetadataService
         if (!File.Exists(path))
         {
             FileNotFoundException exception = new(SH.ServiceMetadataFileNotFound, strategy.Name);
-            throw kyxsanException.Throw(SH.ServiceMetadataFileNotFound, exception);
+            throw LauncherException.Throw(SH.ServiceMetadataFileNotFound, exception);
         }
 
         using (Stream fileStream = File.OpenRead(path))
@@ -188,7 +188,7 @@ internal sealed partial class LegacyMetadataService : IMetadataService
         if (!Directory.Exists(path))
         {
             DirectoryNotFoundException exception = new(SH.ServiceMetadataFileNotFound);
-            throw kyxsanException.Throw(SH.ServiceMetadataFileNotFound, exception);
+            throw LauncherException.Throw(SH.ServiceMetadataFileNotFound, exception);
         }
 
         ImmutableArray<T>.Builder results = ImmutableArray.CreateBuilder<T>();

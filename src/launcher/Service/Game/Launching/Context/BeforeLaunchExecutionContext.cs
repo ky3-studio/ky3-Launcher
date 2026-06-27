@@ -1,19 +1,19 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Service.Game.FileSystem;
-using kyxsan.Service.Game.Package;
-using kyxsan.Service.Game.Scheme;
-using kyxsan.ViewModel.Game;
+using Launcher.Service.Game.FileSystem;
+using Launcher.Service.Game.Package;
+using Launcher.Service.Game.Scheme;
+using Launcher.ViewModel.Game;
 using System.Collections.Concurrent;
 
-namespace kyxsan.Service.Game.Launching.Context;
+namespace Launcher.Service.Game.Launching.Context;
 
 internal sealed class BeforeLaunchExecutionContext
 {

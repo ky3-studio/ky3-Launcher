@@ -1,31 +1,31 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Core.Logging;
-using kyxsan.Model.Metadata.Item;
-using kyxsan.Model.Metadata.Weapon;
-using kyxsan.Service.kyxsan;
-using kyxsan.Service.Metadata;
-using kyxsan.Service.Metadata.ContextAbstraction;
-using kyxsan.UI.Xaml.Control.AutoSuggestBox;
-using kyxsan.UI.Xaml.Data;
+using Launcher.Core.Logging;
+using Launcher.Model.Metadata.Item;
+using Launcher.Model.Metadata.Weapon;
+using Launcher.Service.Launcher;
+using Launcher.Service.Metadata;
+using Launcher.Service.Metadata.ContextAbstraction;
+using Launcher.UI.Xaml.Control.AutoSuggestBox;
+using Launcher.UI.Xaml.Data;
 using System.Collections.Immutable;
 using System.Net.Http;
 
-namespace kyxsan.ViewModel.Wiki;
+namespace Launcher.ViewModel.Wiki;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
 internal sealed partial class WikiWeaponViewModel : Abstraction.ViewModel
 {
-    private readonly IkyxsanSpiralAbyssStatisticsCache kyxsanCache;
+    private readonly ILauncherSpiralAbyssStatisticsCache LauncherCache;
     private readonly IMetadataService metadataService;
     private readonly IHttpClientFactory httpClientFactory;
     private readonly ITaskContext taskContext;
@@ -130,10 +130,10 @@ internal sealed partial class WikiWeaponViewModel : Abstraction.ViewModel
     {
         try
         {
-            kyxsanSpiralAbyssStatisticsMetadataContext context2 = await metadataService.GetContextAsync<kyxsanSpiralAbyssStatisticsMetadataContext>().ConfigureAwait(false);
-            await kyxsanCache.InitializeForWikiWeaponViewAsync(context2).ConfigureAwait(false);
+            LauncherSpiralAbyssStatisticsMetadataContext context2 = await metadataService.GetContextAsync<LauncherSpiralAbyssStatisticsMetadataContext>().ConfigureAwait(false);
+            await LauncherCache.InitializeForWikiWeaponViewAsync(context2).ConfigureAwait(false);
 
-            if (kyxsanCache.WeaponCollocations is { } collocations)
+            if (LauncherCache.WeaponCollocations is { } collocations)
             {
                 foreach (Weapon weapon in weapons)
                 {

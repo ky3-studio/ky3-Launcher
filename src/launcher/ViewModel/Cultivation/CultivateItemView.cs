@@ -1,12 +1,12 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Model.Entity;
-using kyxsan.Model.Metadata.Item;
+using Launcher.Model.Entity;
+using Launcher.Model.Metadata.Item;
 
-namespace kyxsan.ViewModel.Cultivation;
+namespace Launcher.ViewModel.Cultivation;
 
 internal sealed partial class CultivateItemView : ObservableObject
 {

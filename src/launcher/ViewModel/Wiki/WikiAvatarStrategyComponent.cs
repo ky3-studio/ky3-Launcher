@@ -1,21 +1,20 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.Logging;
-using kyxsan.Model.Entity;
-using kyxsan.Model.Metadata.Avatar;
-using kyxsan.Service;
-using kyxsan.Service.kyxsan;
-using kyxsan.Service.Notification;
-using Windows.System;
+using Launcher.Core.Logging;
+using Launcher.Model.Entity;
+using Launcher.Model.Metadata.Avatar;
+using Launcher.Service;
+using Launcher.Service.Launcher;
+using Launcher.Service.Notification;
 
-namespace kyxsan.ViewModel.Wiki;
+namespace Launcher.ViewModel.Wiki;
 
 [Service(ServiceLifetime.Scoped)]
 internal sealed partial class WikiAvatarStrategyComponent
@@ -40,7 +39,7 @@ internal sealed partial class WikiAvatarStrategyComponent
         }
 
         Uri targetUri = $"https://wiki.biligame.com/ys/{avatar.Name}/攻略".ToUri();
-        await Launcher.LaunchUriAsync(targetUri);
+        await Windows.System.Launcher.LaunchUriAsync(targetUri);
     }
 
     [Command("ChineseStrategyCommand")]
@@ -68,7 +67,7 @@ internal sealed partial class WikiAvatarStrategyComponent
             return;
         }
 
-        await Launcher.LaunchUriAsync(targetUri);
+        await Windows.System.Launcher.LaunchUriAsync(targetUri);
     }
 
     [Command("OverseaStrategyCommand")]
@@ -96,6 +95,6 @@ internal sealed partial class WikiAvatarStrategyComponent
             return;
         }
 
-        await Launcher.LaunchUriAsync(targetUri);
+        await Windows.System.Launcher.LaunchUriAsync(targetUri);
     }
 }

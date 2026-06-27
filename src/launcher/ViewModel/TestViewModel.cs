@@ -1,48 +1,48 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.CodeAnalysis.CSharp.Scripting;
 using Microsoft.CodeAnalysis.Scripting;
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core.DataTransfer;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.Graphics;
-using kyxsan.Core.IO;
-using kyxsan.Core.LifeCycle;
-using kyxsan.Core.Logging;
-using kyxsan.Core.Setting;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Factory.Picker;
-using kyxsan.Service.Game;
-using kyxsan.Service.Game.FileSystem;
-using kyxsan.Service.Game.Package.Advanced;
-using kyxsan.Service.Game.Package.Advanced.Model;
-using kyxsan.Service.Game.Scheme;
-using kyxsan.Service.kyxsan;
-using kyxsan.Service.Notification;
-using kyxsan.UI.Windowing;
-using kyxsan.UI.Xaml.View.Window;
-using kyxsan.ViewModel.Game;
-using kyxsan.ViewModel.Guide;
-using kyxsan.Web.Hoyolab.HoyoPlay.Connect;
-using kyxsan.Web.Hoyolab.HoyoPlay.Connect.Branch;
-using kyxsan.Web.Hoyolab.Takumi.Downloader.Proto;
-using kyxsan.Web.kyxsan.kyxsanAsAService;
-using kyxsan.Web.kyxsan.Redeem;
-using kyxsan.Web.kyxsan.Response;
-using kyxsan.Web.Response;
+using Launcher.Core.DataTransfer;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.Graphics;
+using Launcher.Core.IO;
+using Launcher.Core.LifeCycle;
+using Launcher.Core.Logging;
+using Launcher.Core.Setting;
+using Launcher.Factory.ContentDialog;
+using Launcher.Factory.Picker;
+using Launcher.Service.Game;
+using Launcher.Service.Game.FileSystem;
+using Launcher.Service.Game.Package.Advanced;
+using Launcher.Service.Game.Package.Advanced.Model;
+using Launcher.Service.Game.Scheme;
+using Launcher.Service.Launcher;
+using Launcher.Service.Notification;
+using Launcher.UI.Windowing;
+using Launcher.UI.Xaml.View.Window;
+using Launcher.ViewModel.Game;
+using Launcher.ViewModel.Guide;
+using Launcher.Web.Hoyolab.HoyoPlay.Connect;
+using Launcher.Web.Hoyolab.HoyoPlay.Connect.Branch;
+using Launcher.Web.Hoyolab.Takumi.Downloader.Proto;
+using Launcher.Web.Launcher.LauncherAsAService;
+using Launcher.Web.Launcher.Redeem;
+using Launcher.Web.Launcher.Response;
+using Launcher.Web.Response;
 using System.IO;
 using System.Text.RegularExpressions;
 
 // ReSharper disable LocalizableElement
-namespace kyxsan.ViewModel;
+namespace Launcher.ViewModel;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
@@ -52,7 +52,7 @@ internal sealed partial class TestViewModel : Abstraction.ViewModel
     private readonly ICurrentXamlWindowReference currentXamlWindowReference;
     private readonly IContentDialogFactory contentDialogFactory;
     private readonly IClipboardProvider clipboardProvider;
-    private readonly kyxsanUserOptions kyxsanUserOptions;
+    private readonly LauncherUserOptions LauncherUserOptions;
     private readonly IServiceProvider serviceProvider;
     private readonly ILogger<TestViewModel> logger;
     private readonly ITaskContext taskContext;
@@ -141,7 +141,7 @@ internal sealed partial class TestViewModel : Abstraction.ViewModel
         {
             HResult = 0x12345678,
         };
-        kyxsanException.Throw("Test Exception", inner);
+        LauncherException.Throw("Test Exception", inner);
     }
 
     [Command("FileOperationRenameCommand")]
@@ -169,13 +169,13 @@ internal sealed partial class TestViewModel : Abstraction.ViewModel
     [Command("UploadAnnouncementCommand")]
     private async Task UploadAnnouncementAsync()
     {
-        SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Upload kyxsan announcement", "TestViewModel.Command"));
+        SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Upload Launcher announcement", "TestViewModel.Command"));
 
         using (IServiceScope scope = serviceProvider.CreateScope())
         {
-            string? accessToken = await kyxsanUserOptions.GetAccessTokenAsync().ConfigureAwait(false);
-            kyxsanAsAServiceClient kyxsanAsAServiceClient = scope.ServiceProvider.GetRequiredService<kyxsanAsAServiceClient>();
-            Response response = await kyxsanAsAServiceClient.UploadAnnouncementAsync(accessToken, Announcement).ConfigureAwait(false);
+            string? accessToken = await LauncherUserOptions.GetAccessTokenAsync().ConfigureAwait(false);
+            LauncherAsAServiceClient LauncherAsAServiceClient = scope.ServiceProvider.GetRequiredService<LauncherAsAServiceClient>();
+            Response response = await LauncherAsAServiceClient.UploadAnnouncementAsync(accessToken, Announcement).ConfigureAwait(false);
             if (ResponseValidator.TryValidate(response, scope.ServiceProvider))
             {
                 messenger.Send(InfoBarMessage.Success(response.Message));
@@ -191,7 +191,7 @@ internal sealed partial class TestViewModel : Abstraction.ViewModel
         SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Compensation CDN service time", "TestViewModel.Command"));
 
         ContentDialogResult result = await contentDialogFactory.CreateForConfirmCancelAsync(
-            "kyxsan Cloud",
+            "Launcher Cloud",
             $"Compensation CDN Service Time For {CdnCompensationDays} Days?").ConfigureAwait(false);
 
         if (result is not ContentDialogResult.Primary)
@@ -201,9 +201,9 @@ internal sealed partial class TestViewModel : Abstraction.ViewModel
 
         using (IServiceScope scope = serviceProvider.CreateScope())
         {
-            string? accessToken = await kyxsanUserOptions.GetAccessTokenAsync().ConfigureAwait(false);
-            kyxsanAsAServiceClient kyxsanAsAServiceClient = scope.ServiceProvider.GetRequiredService<kyxsanAsAServiceClient>();
-            Response response = await kyxsanAsAServiceClient.CdnCompensationAsync(accessToken, CdnCompensationDays).ConfigureAwait(false);
+            string? accessToken = await LauncherUserOptions.GetAccessTokenAsync().ConfigureAwait(false);
+            LauncherAsAServiceClient LauncherAsAServiceClient = scope.ServiceProvider.GetRequiredService<LauncherAsAServiceClient>();
+            Response response = await LauncherAsAServiceClient.CdnCompensationAsync(accessToken, CdnCompensationDays).ConfigureAwait(false);
             if (ResponseValidator.TryValidate(response, scope.ServiceProvider))
             {
                 messenger.Send(InfoBarMessage.Success(response.Message));
@@ -217,7 +217,7 @@ internal sealed partial class TestViewModel : Abstraction.ViewModel
         SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Designation CDN service time", "TestViewModel.Command"));
 
         ContentDialogResult result = await contentDialogFactory.CreateForConfirmCancelAsync(
-            "kyxsan Cloud",
+            "Launcher Cloud",
             $"Designation CDN Service Time To {CdnDesignationOptions.UserName} For {CdnDesignationOptions.Days} Days?").ConfigureAwait(false);
 
         if (result is not ContentDialogResult.Primary)
@@ -227,9 +227,9 @@ internal sealed partial class TestViewModel : Abstraction.ViewModel
 
         using (IServiceScope scope = serviceProvider.CreateScope())
         {
-            string? accessToken = await kyxsanUserOptions.GetAccessTokenAsync().ConfigureAwait(false);
-            kyxsanAsAServiceClient kyxsanAsAServiceClient = scope.ServiceProvider.GetRequiredService<kyxsanAsAServiceClient>();
-            Response response = await kyxsanAsAServiceClient.CdnDesignationAsync(accessToken, CdnDesignationOptions.UserName, CdnDesignationOptions.Days).ConfigureAwait(false);
+            string? accessToken = await LauncherUserOptions.GetAccessTokenAsync().ConfigureAwait(false);
+            LauncherAsAServiceClient LauncherAsAServiceClient = scope.ServiceProvider.GetRequiredService<LauncherAsAServiceClient>();
+            Response response = await LauncherAsAServiceClient.CdnDesignationAsync(accessToken, CdnDesignationOptions.UserName, CdnDesignationOptions.Days).ConfigureAwait(false);
             if (ResponseValidator.TryValidate(response, scope.ServiceProvider))
             {
                 messenger.Send(InfoBarMessage.Success(response.Message));
@@ -530,9 +530,9 @@ internal sealed partial class TestViewModel : Abstraction.ViewModel
 
         using (IServiceScope scope = serviceProvider.CreateScope())
         {
-            string? accessToken = await kyxsanUserOptions.GetAccessTokenAsync().ConfigureAwait(false);
-            kyxsanAsAServiceClient kyxsanAsAServiceClient = scope.ServiceProvider.GetRequiredService<kyxsanAsAServiceClient>();
-            kyxsanResponse<RedeemGenerateResult> response = await kyxsanAsAServiceClient.GenerateRedeemCodesAsync(accessToken, request).ConfigureAwait(false);
+            string? accessToken = await LauncherUserOptions.GetAccessTokenAsync().ConfigureAwait(false);
+            LauncherAsAServiceClient LauncherAsAServiceClient = scope.ServiceProvider.GetRequiredService<LauncherAsAServiceClient>();
+            LauncherResponse<RedeemGenerateResult> response = await LauncherAsAServiceClient.GenerateRedeemCodesAsync(accessToken, request).ConfigureAwait(false);
             if (ResponseValidator.TryValidate(response, scope.ServiceProvider, out RedeemGenerateResult? generateResponse))
             {
                 string message = $"""

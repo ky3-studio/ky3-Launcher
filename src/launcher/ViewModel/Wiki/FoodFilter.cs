@@ -1,8 +1,8 @@
-using kyxsan.Model.Metadata.Food;
-using kyxsan.UI.Xaml.Control.AutoSuggestBox;
+﻿using Launcher.Model.Metadata.Food;
+using Launcher.UI.Xaml.Control.AutoSuggestBox;
 using System.Collections.Frozen;
 
-namespace kyxsan.ViewModel.Wiki;
+namespace Launcher.ViewModel.Wiki;
 
 internal static class FoodFilter
 {

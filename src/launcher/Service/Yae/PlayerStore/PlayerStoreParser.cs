@@ -1,8 +1,8 @@
-using Google.Protobuf;
-using kyxsan.Core.Protobuf;
+﻿using Google.Protobuf;
+using Launcher.Core.Protobuf;
 using System.Collections.Immutable;
 
-namespace kyxsan.Service.Yae.PlayerStore;
+namespace Launcher.Service.Yae.PlayerStore;
 
 internal static class PlayerStoreParser
 {

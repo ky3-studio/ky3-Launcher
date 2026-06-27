@@ -1,21 +1,21 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.WinUI.Controls;
 using Microsoft.UI.Xaml;
-using kyxsan.Core;
-using kyxsan.Core.Setting;
+using Launcher.Core;
+using Launcher.Core.Setting;
 using System.Collections.Frozen;
 using System.Runtime.CompilerServices;
 using WinRT;
 
-namespace kyxsan.UI.Xaml.Control;
+namespace Launcher.UI.Xaml.Control;
 
 [DependencyProperty<string>("Current", DefaultValue = List)]
 [DependencyProperty<string>("LocalSettingKeySuffixForCurrent")]

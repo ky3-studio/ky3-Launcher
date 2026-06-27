@@ -1,19 +1,19 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core;
-using kyxsan.Core.Setting;
-using kyxsan.Web.kyxsan;
-using kyxsan.Web.kyxsan.Response;
-using kyxsan.Web.Response;
+using Launcher.Core;
+using Launcher.Core.Setting;
+using Launcher.Web.Launcher;
+using Launcher.Web.Launcher.Response;
+using Launcher.Web.Response;
 
-namespace kyxsan.Service.Update;
+namespace Launcher.Service.Update;
 
 [Service(ServiceLifetime.Singleton, typeof(IUpdateService))]
 internal sealed partial class UpdateService : IUpdateService
@@ -36,10 +36,10 @@ internal sealed partial class UpdateService : IUpdateService
                 ITaskContext taskContext = scope.ServiceProvider.GetRequiredService<ITaskContext>();
                 await taskContext.SwitchToBackgroundAsync();
 
-                kyxsanInfrastructureClient infrastructureClient = scope.ServiceProvider.GetRequiredService<kyxsanInfrastructureClient>();
-                kyxsanResponse<kyxsanPackageInformation> response = await infrastructureClient.GetkyxsanVersionInformationAsync(token).ConfigureAwait(false);
+                LauncherInfrastructureClient infrastructureClient = scope.ServiceProvider.GetRequiredService<LauncherInfrastructureClient>();
+                LauncherResponse<LauncherPackageInformation> response = await infrastructureClient.GetLauncherVersionInformationAsync(token).ConfigureAwait(false);
 
-                if (!ResponseValidator.TryValidateWithoutUINotification(response, scope.ServiceProvider, out kyxsanPackageInformation? packageInformation))
+                if (!ResponseValidator.TryValidateWithoutUINotification(response, scope.ServiceProvider, out LauncherPackageInformation? packageInformation))
                 {
                     checkUpdateResult.Kind = CheckUpdateResultKind.VersionApiInvalidResponse;
                     return checkUpdateResult;
@@ -51,7 +51,7 @@ internal sealed partial class UpdateService : IUpdateService
                 if (!LocalSetting.Get(SettingKeys.OverrideUpdateVersionComparison, false))
                 {
                     // Launched in an updated version
-                    if (kyxsanRuntime.Version >= checkUpdateResult.PackageInformation.Version)
+                    if (LauncherRuntime.Version >= checkUpdateResult.PackageInformation.Version)
                     {
                         checkUpdateResult.Kind = CheckUpdateResultKind.AlreadyUpdated;
                         return checkUpdateResult;

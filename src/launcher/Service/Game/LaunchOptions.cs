@@ -1,27 +1,27 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Windowing;
-using kyxsan.Core;
-using kyxsan.Core.Property;
-using kyxsan.Core.Setting;
-using kyxsan.Model;
-using kyxsan.Model.Intrinsic;
-using kyxsan.Service.Abstraction;
-using kyxsan.Service.Game.FileSystem;
-using kyxsan.Service.Game.PathAbstraction;
+using Launcher.Core;
+using Launcher.Core.Property;
+using Launcher.Core.Setting;
+using Launcher.Model;
+using Launcher.Model.Intrinsic;
+using Launcher.Service.Abstraction;
+using Launcher.Service.Game.FileSystem;
+using Launcher.Service.Game.PathAbstraction;
 using System.Collections.Immutable;
 using System.Runtime.InteropServices;
 
 using System.Text.RegularExpressions;
 
-namespace kyxsan.Service.Game;
+namespace Launcher.Service.Game;
 
 [Service(ServiceLifetime.Singleton)]
 internal sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePathAccess
@@ -35,7 +35,7 @@ internal sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePat
     public static IObservableProperty<bool> IsGameRunning { get => field ??= GameLifeCycle.IsGameRunningProperty; }
 
     [field: MaybeNull]
-    public static IReadOnlyObservableProperty<bool> CanKillGameProcess { get => field ??= Property.Observe(IsGameRunning, value => kyxsanRuntime.IsProcessElevated && value); }
+    public static IReadOnlyObservableProperty<bool> CanKillGameProcess { get => field ??= Property.Observe(IsGameRunning, value => LauncherRuntime.IsProcessElevated && value); }
 
     public AsyncReaderWriterLock GamePathLock { get; } = new();
 

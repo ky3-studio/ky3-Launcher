@@ -1,8 +1,8 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-namespace kyxsan.SourceGeneration.Model;
+namespace Launcher.SourceGeneration.Model;
 
 internal sealed record AttributedMethodInfo
 {

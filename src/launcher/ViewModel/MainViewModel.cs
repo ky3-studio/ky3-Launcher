@@ -1,27 +1,27 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.UI.Xaml;
-using kyxsan.Core;
-using kyxsan.Core.ApplicationModel;
-using kyxsan.Core.LifeCycle;
-using kyxsan.Core.Logging;
-using kyxsan.Service;
-using kyxsan.Service.BackgroundActivity;
-using kyxsan.Service.Metadata;
-using kyxsan.Service.Notification;
-using kyxsan.Service.RedeemCode;
-using kyxsan.Service.RemoteConfig;
-using kyxsan.Core.IO.Http.Proxy;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Service.Update;
+using Launcher.Core;
+using Launcher.Core.ApplicationModel;
+using Launcher.Core.LifeCycle;
+using Launcher.Core.Logging;
+using Launcher.Service;
+using Launcher.Service.BackgroundActivity;
+using Launcher.Service.Metadata;
+using Launcher.Service.Notification;
+using Launcher.Service.RedeemCode;
+using Launcher.Service.RemoteConfig;
+using Launcher.Core.IO.Http.Proxy;
+using Launcher.Factory.ContentDialog;
+using Launcher.Service.Update;
 using Microsoft.UI.Xaml.Controls;
 using System.Diagnostics;
 using System.IO;
@@ -29,7 +29,7 @@ using System.IO.Compression;
 using System.Net.Http;
 using System.Security.Cryptography;
 
-namespace kyxsan.ViewModel;
+namespace Launcher.ViewModel;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Transient)]
@@ -47,7 +47,7 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
     [GeneratedConstructor]
     public partial MainViewModel(IServiceProvider serviceProvider);
 
-    public static string? Title { get => kyxsanRuntime.GetDisplayName(); }
+    public static string? Title { get => LauncherRuntime.GetDisplayName(); }
 
     [ObservableProperty]
     public partial bool IsUpdateReady { get; set; }
@@ -88,7 +88,7 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
     {
         try
         {
-            string updateFilesDir = Path.Combine(kyxsanRuntime.DataDirectory, "UpdateCache", "files");
+            string updateFilesDir = Path.Combine(LauncherRuntime.DataDirectory, "UpdateCache", "files");
             if (!Directory.Exists(updateFilesDir))
             {
                 return;
@@ -199,12 +199,12 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
         }
     }
 
-    internal static async Task<bool> DownloadAndExtractPatchAsync(Web.kyxsan.kyxsanPackageInformation packageInfo, CancellationToken token = default)
+    internal static async Task<bool> DownloadAndExtractPatchAsync(Web.Launcher.LauncherPackageInformation packageInfo, CancellationToken token = default)
     {
         await s_patchDownloadLock.WaitAsync(token).ConfigureAwait(false);
         try
         {
-            string updateCacheDir = Path.Combine(kyxsanRuntime.DataDirectory, "UpdateCache");
+            string updateCacheDir = Path.Combine(LauncherRuntime.DataDirectory, "UpdateCache");
             string filesDir = Path.Combine(updateCacheDir, "files");
             string versionMarker = Path.Combine(updateCacheDir, "version.txt");
 
@@ -314,10 +314,10 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
 
     private void NotifyIfDataFolderHasReparsePoint()
     {
-        if (new DirectoryInfo(kyxsanRuntime.DataDirectory).Attributes.HasFlag(FileAttributes.ReparsePoint))
+        if (new DirectoryInfo(LauncherRuntime.DataDirectory).Attributes.HasFlag(FileAttributes.ReparsePoint))
         {
             SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateDebug("Data folder has reparse point", "MainViewModel.Command"));
-            messenger.Send(InfoBarMessage.Warning(SH.FormatViewModelTitleDataFolderHasReparsepoint(kyxsanRuntime.DataDirectory)));
+            messenger.Send(InfoBarMessage.Warning(SH.FormatViewModelTitleDataFolderHasReparsepoint(LauncherRuntime.DataDirectory)));
         }
     }
 }

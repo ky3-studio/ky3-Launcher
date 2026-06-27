@@ -1,24 +1,24 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.ExceptionService;
-using kyxsan.Model.Metadata;
-using kyxsan.Model.Metadata.Abstraction;
-using kyxsan.Model.Metadata.Converter;
-using kyxsan.Model.Metadata.Avatar;
-using kyxsan.Model.Metadata.Weapon;
-using kyxsan.Service.Metadata.ContextAbstraction;
-using kyxsan.ViewModel.GachaLog;
+using Launcher.Core.ExceptionService;
+using Launcher.Model.Metadata;
+using Launcher.Model.Metadata.Abstraction;
+using Launcher.Model.Metadata.Converter;
+using Launcher.Model.Metadata.Avatar;
+using Launcher.Model.Metadata.Weapon;
+using Launcher.Service.Metadata.ContextAbstraction;
+using Launcher.ViewModel.GachaLog;
 using System.Collections.Immutable;
 using System.Runtime.InteropServices;
 
-namespace kyxsan.Service.GachaLog;
+namespace Launcher.Service.GachaLog;
 
 [Service(ServiceLifetime.Transient, typeof(IGachaLogWishCountdownService))]
 internal sealed partial class GachaLogWishCountdownService : IGachaLogWishCountdownService
@@ -72,7 +72,7 @@ internal sealed partial class GachaLogWishCountdownService : IGachaLogWishCountd
                         break;
 
                     default:
-                        throw kyxsanException.NotSupported();
+                        throw LauncherException.NotSupported();
                 }
             }
 
@@ -91,7 +91,7 @@ internal sealed partial class GachaLogWishCountdownService : IGachaLogWishCountd
                         TrackWeaponItemId(context, idToCountdown, purpleWeaponCountdowns, gachaEvent, itemId);
                         break;
                     default:
-                        throw kyxsanException.NotSupported();
+                        throw LauncherException.NotSupported();
                 }
             }
         }

@@ -1,11 +1,11 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Model.Intrinsic;
+using Launcher.Model.Intrinsic;
 using System.Runtime.CompilerServices;
 
-namespace kyxsan.Service.Cultivation.Offline;
+namespace Launcher.Service.Cultivation.Offline;
 
 internal static class QualityIndexedArray
 {

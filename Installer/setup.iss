@@ -1,6 +1,6 @@
-#define AppName       "ky3 Launcher"
+﻿#define AppName       "ky3 Launcher"
 #define AppVersion    "6.6.3.3"
-#define AppPublisher  "kyxsan Detail Development Team"
+#define AppPublisher  "Launcher Detail Development Team"
 #define AppExe        "ky3launcher.exe"
 #define AppId         "{{8F3A1C2E-7B4D-4E5A-9F6B-2A1D3C4E5F60}"
 #define SrcDir        ".\..\src\launcher\bin\Release"
@@ -59,7 +59,7 @@ Name: "fileassoc";     Description: "将 ky3 Launcher 注册为 .ky3 文件的�
 
 [Files]
 Source: "{#SrcDir}\{#AppExe}";  DestDir: "{app}"; Flags: ignoreversion
-Source: "{#SrcDir}\*";          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Excludes: "*.pdb,*.lib,*.exp,*.xml,BuildHost-*,obj\*,kyxsan.SourceGeneration.*"
+Source: "{#SrcDir}\*";          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Excludes: "*.pdb,*.lib,*.exp,*.xml,BuildHost-*,obj\*,Launcher.SourceGeneration.*"
 Source: "redist\vc_redist.x64.exe";              DestDir: "{tmp}"; Flags: deleteafterinstall; Check: NeedVCRedist
 Source: "redist\MicrosoftEdgeWebView2Setup.exe";  DestDir: "{tmp}"; Flags: deleteafterinstall; Check: NeedWebView2
 

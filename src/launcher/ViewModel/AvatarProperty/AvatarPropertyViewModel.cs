@@ -1,34 +1,34 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.WinUI.Collections;
-using kyxsan.Core.DependencyInjection.Abstraction;
-using kyxsan.Core.Logging;
-using kyxsan.Core.Setting;
-using kyxsan.Model;
-using kyxsan.Model.Primitive;
-using kyxsan.Service;
-using kyxsan.Service.Metadata;
-using kyxsan.Service.Metadata.ContextAbstraction;
-using kyxsan.Service.Notification;
-using kyxsan.Service.User;
-using kyxsan.UI.Xaml.Control.AutoSuggestBox;
-using kyxsan.UI.Xaml.Data;
-using kyxsan.ViewModel.User;
-using kyxsan.Web.Hoyolab.Takumi.GameRecord;
-using kyxsan.Web.Hoyolab.Takumi.GameRecord.Avatar;
-using kyxsan.Web.Response;
+using Launcher.Core.DependencyInjection.Abstraction;
+using Launcher.Core.Logging;
+using Launcher.Core.Setting;
+using Launcher.Model;
+using Launcher.Model.Primitive;
+using Launcher.Service;
+using Launcher.Service.Metadata;
+using Launcher.Service.Metadata.ContextAbstraction;
+using Launcher.Service.Notification;
+using Launcher.Service.User;
+using Launcher.UI.Xaml.Control.AutoSuggestBox;
+using Launcher.UI.Xaml.Data;
+using Launcher.ViewModel.User;
+using Launcher.Web.Hoyolab.Takumi.GameRecord;
+using Launcher.Web.Hoyolab.Takumi.GameRecord.Avatar;
+using Launcher.Web.Response;
 using System.Collections.Immutable;
 using System.Globalization;
 
-namespace kyxsan.ViewModel.AvatarProperty;
+namespace Launcher.ViewModel.AvatarProperty;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]

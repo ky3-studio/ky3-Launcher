@@ -1,21 +1,21 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.Extensions.Caching.Memory;
-using kyxsan.Web.Hoyolab;
-using kyxsan.Web.Hoyolab.Hk4e.Common.Announcement;
-using kyxsan.Web.Response;
+using Launcher.Web.Hoyolab;
+using Launcher.Web.Hoyolab.Hk4e.Common.Announcement;
+using Launcher.Web.Response;
 using System.Collections.Immutable;
 using System.Text;
-using WebAnnouncement = kyxsan.Web.Hoyolab.Hk4e.Common.Announcement.Announcement;
+using WebAnnouncement = Launcher.Web.Hoyolab.Hk4e.Common.Announcement.Announcement;
 
-namespace kyxsan.Service.Announcement;
+namespace Launcher.Service.Announcement;
 
 [Service(ServiceLifetime.Scoped, typeof(IAnnouncementService))]
 internal sealed partial class AnnouncementService : IAnnouncementService

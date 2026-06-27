@@ -1,5 +1,5 @@
-<shuxc:ScopedPage
-    x:Class="kyxsan.UI.Xaml.View.Page.CultivationPage"
+﻿<shuxc:ScopedPage
+    x:Class="Launcher.UI.Xaml.View.Page.CultivationPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:cw="using:CommunityToolkit.WinUI"
@@ -8,17 +8,17 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:mxi="using:Microsoft.Xaml.Interactivity"
-    xmlns:shux="using:kyxsan.UI.Xaml"
-    xmlns:shuxb="using:kyxsan.UI.Xaml.Behavior"
-    xmlns:shuxc="using:kyxsan.UI.Xaml.Control"
-    xmlns:shuxca="using:kyxsan.UI.Xaml.Control.AutoSuggestBox"
-    xmlns:shuxcc="using:kyxsan.UI.Xaml.Control.Card"
-    xmlns:shuxci="using:kyxsan.UI.Xaml.Control.Image"
-    xmlns:shuxcl="using:kyxsan.UI.Xaml.Control.Layout"
-    xmlns:shuxcp="using:kyxsan.UI.Xaml.Control.Panel"
-    xmlns:shuxm="using:kyxsan.UI.Xaml.Markup"
-    xmlns:shuxcpd="using:kyxsan.UI.Xaml.Control.Panel.DataTable"
-    xmlns:shvcu="using:kyxsan.ViewModel.Cultivation"
+    xmlns:shux="using:Launcher.UI.Xaml"
+    xmlns:shuxb="using:Launcher.UI.Xaml.Behavior"
+    xmlns:shuxc="using:Launcher.UI.Xaml.Control"
+    xmlns:shuxca="using:Launcher.UI.Xaml.Control.AutoSuggestBox"
+    xmlns:shuxcc="using:Launcher.UI.Xaml.Control.Card"
+    xmlns:shuxci="using:Launcher.UI.Xaml.Control.Image"
+    xmlns:shuxcl="using:Launcher.UI.Xaml.Control.Layout"
+    xmlns:shuxcp="using:Launcher.UI.Xaml.Control.Panel"
+    xmlns:shuxm="using:Launcher.UI.Xaml.Markup"
+    xmlns:shuxcpd="using:Launcher.UI.Xaml.Control.Panel.DataTable"
+    xmlns:shvcu="using:Launcher.ViewModel.Cultivation"
     d:DataContext="{d:DesignInstance shvcu:CultivationViewModel}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     mc:Ignorable="d">
@@ -324,7 +324,7 @@
                             Width="120"
                             Height="120"
                             HorizontalAlignment="Center"
-                            Source="ms-appx:///Resource/Icon/kyxsan09.png"/>
+                            Source="ms-appx:///Resource/Icon/Launcher09.png"/>
                         <TextBlock
                             Margin="0,16,0,0"
                             HorizontalAlignment="Center"
@@ -419,7 +419,7 @@
                                         Width="120"
                                         Height="120"
                                         HorizontalAlignment="Center"
-                                        Source="ms-appx:///Resource/Icon/kyxsan09.png"/>
+                                        Source="ms-appx:///Resource/Icon/Launcher09.png"/>
                                     <cwcont:SettingsCard
                                         ActionIconToolTip="{shuxm:ResourceString Name=ViewPageCultivationNavigateAction}"
                                         Command="{Binding NavigateToPageCommand}"

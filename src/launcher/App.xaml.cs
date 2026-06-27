@@ -1,10 +1,10 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 // Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
@@ -12,18 +12,18 @@
 using Microsoft.UI.Xaml;
 using Microsoft.Windows.AppLifecycle;
 using Microsoft.Windows.AppNotifications;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.LifeCycle;
-using kyxsan.Core.LifeCycle.InterProcess;
-using kyxsan.Core.Logging;
-using kyxsan.Factory.Process;
-using kyxsan.Service;
-using kyxsan.UI.Xaml;
-using kyxsan.UI.Xaml.Control.Theme;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.LifeCycle;
+using Launcher.Core.LifeCycle.InterProcess;
+using Launcher.Core.Logging;
+using Launcher.Factory.Process;
+using Launcher.Service;
+using Launcher.UI.Xaml;
+using Launcher.UI.Xaml.Control.Theme;
 using System.Diagnostics;
 using System.IO;
 
-namespace kyxsan;
+namespace Launcher;
 
 [Service(ServiceLifetime.Singleton)]
 [SuppressMessage("", "SH001", Justification = "The App must be public")]
@@ -40,7 +40,7 @@ public sealed partial class App : Application
                               | |
                               |_|
         
-        kyxsan is a open source software developed by DGP Studio.
+        Launcher is a open source software developed by DGP Studio.
         Copyright (C) 2022 - 2025 DGP Studio, All Rights Reserved.
         ----------------------------------------------------------------
         """;
@@ -99,7 +99,7 @@ public sealed partial class App : Application
             {
                 if (namedPipeClient.TryRedirectActivationTo(activatedEventArgs))
                 {
-                    SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateInfo("Application exiting on RedirectActivationTo", "kyxsan"));
+                    SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateInfo("Application exiting on RedirectActivationTo", "Launcher"));
                     XamlApplicationLifetime.ActivationAndInitializationCompleted = true;
                     Exit();
                     return;
@@ -117,11 +117,11 @@ public sealed partial class App : Application
 
             SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateInfo("Activate and Initialize", "Application"));
 
-            kyxsanActivationArguments kyxsanArgs = activatedEventArgs is not null
-                ? kyxsanActivationArguments.FromAppActivationArguments(activatedEventArgs)
-                : kyxsanActivationArguments.CreateDefaultLaunchArguments();
+            LauncherActivationArguments LauncherArgs = activatedEventArgs is not null
+                ? LauncherActivationArguments.FromAppActivationArguments(activatedEventArgs)
+                : LauncherActivationArguments.CreateDefaultLaunchArguments();
 
-            activation.ActivateAndInitialize(kyxsanArgs);
+            activation.ActivateAndInitialize(LauncherArgs);
         }
         catch (Exception ex)
         {

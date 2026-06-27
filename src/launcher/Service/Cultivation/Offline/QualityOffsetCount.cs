@@ -1,10 +1,10 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.Abstraction;
+using Launcher.Core.Abstraction;
 
-namespace kyxsan.Service.Cultivation.Offline;
+namespace Launcher.Service.Cultivation.Offline;
 
 internal readonly struct QualityOffsetCount : IDeconstruct<uint, uint>
 {

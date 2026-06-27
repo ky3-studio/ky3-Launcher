@@ -1,10 +1,10 @@
-using Microsoft.UI.Xaml;
+﻿using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using System.Diagnostics;
-using kyxsan.Service.Notification;
+using Launcher.Service.Notification;
 using CommunityToolkit.Mvvm.Input;
 
-namespace kyxsan.Service.RemoteConfig;
+namespace Launcher.Service.RemoteConfig;
 
 internal sealed class AppAnnouncementNotifier
 {

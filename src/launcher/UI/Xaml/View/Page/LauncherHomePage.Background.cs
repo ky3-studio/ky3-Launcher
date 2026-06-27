@@ -1,10 +1,10 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI;
@@ -17,9 +17,9 @@ using Microsoft.UI.Xaml.Hosting;
 using Microsoft.UI.Composition;
 using Microsoft.Graphics.Canvas.Effects;
 using Microsoft.Web.WebView2.Core;
-using kyxsan.Core.IO;
-using kyxsan.Core.Logging;
-using kyxsan.Service.Constants;
+using Launcher.Core.IO;
+using Launcher.Core.Logging;
+using Launcher.Service.Constants;
 using System.IO;
 using System.Net.Http;
 using System.Numerics;
@@ -28,7 +28,7 @@ using System.Text;
 using Windows.Storage.Streams;
 using Windows.UI;
 
-namespace kyxsan.UI.Xaml.View.Page;
+namespace Launcher.UI.Xaml.View.Page;
 
 internal sealed partial class LauncherHomePage
 {

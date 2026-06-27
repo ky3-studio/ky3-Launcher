@@ -1,18 +1,18 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.IO.Ini;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.IO.Ini;
 using System.IO;
 using System.Runtime.CompilerServices;
 
-namespace kyxsan.Service.Game.FileSystem;
+namespace Launcher.Service.Game.FileSystem;
 
 internal static class GameFileSystemExtension
 {
@@ -178,7 +178,7 @@ internal static class GameFileSystemExtension
                     return predownloadStatusPath;
                 }
 
-                predownloadStatusPath = string.Intern(Path.Combine(gameFileSystem.ChunksDirectory, "snap_kyxsan_predownload_status.json"));
+                predownloadStatusPath = string.Intern(Path.Combine(gameFileSystem.ChunksDirectory, "snap_Launcher_predownload_status.json"));
                 GameFileSystemPredownloadStatusPaths.Add(gameFileSystem, predownloadStatusPath);
                 return predownloadStatusPath;
             }
@@ -195,7 +195,7 @@ internal static class GameFileSystemExtension
                 {
                     GameConstants.GenshinImpactFileNameUpper => true,
                     GameConstants.YuanShenFileNameUpper => false,
-                    _ => throw kyxsanException.Throw($"Invalid game executable file name：{gameFileName}"),
+                    _ => throw LauncherException.Throw($"Invalid game executable file name：{gameFileName}"),
                 };
             }
         }

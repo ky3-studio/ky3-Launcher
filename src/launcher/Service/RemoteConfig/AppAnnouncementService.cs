@@ -1,10 +1,10 @@
-// kyxsan - App Announcement Service
+﻿// Launcher - App Announcement Service
 // Fetches software announcements from the admin backend.
 
-using kyxsan.Core.Setting;
+using Launcher.Core.Setting;
 using System.Net.Http;
 
-namespace kyxsan.Service.RemoteConfig;
+namespace Launcher.Service.RemoteConfig;
 
 internal static class AppAnnouncementService
 {

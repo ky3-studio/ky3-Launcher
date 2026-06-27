@@ -1,6 +1,6 @@
-using System.Net.Http;
+﻿using System.Net.Http;
 
-namespace kyxsan.Service.RemoteConfig;
+namespace Launcher.Service.RemoteConfig;
 
 internal static class BackendApiRoutes
 {

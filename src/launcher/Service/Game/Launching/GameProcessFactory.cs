@@ -1,25 +1,25 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core;
-using kyxsan.Core.Diagnostics;
-using kyxsan.Core.IO;
-using kyxsan.Factory.Process;
-using kyxsan.Service.Game.FileSystem;
-using kyxsan.Service.Game.Launching.Context;
-using kyxsan.Win32.Foundation;
+using Launcher.Core;
+using Launcher.Core.Diagnostics;
+using Launcher.Core.IO;
+using Launcher.Factory.Process;
+using Launcher.Service.Game.FileSystem;
+using Launcher.Service.Game.Launching.Context;
+using Launcher.Win32.Foundation;
 using System.Collections.Immutable;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace kyxsan.Service.Game.Launching;
+namespace Launcher.Service.Game.Launching;
 
 internal sealed partial class GameProcessFactory
 {
@@ -65,8 +65,8 @@ internal sealed partial class GameProcessFactory
 
         string gameFilePath = context.FileSystem.GameFilePath;
         string gameDirectory = context.FileSystem.GameDirectory;
-        string kyxsanDirectory = AppContext.BaseDirectory;
-        string dllPath = Path.Combine(kyxsanDirectory, DllName);
+        string LauncherDirectory = AppContext.BaseDirectory;
+        string dllPath = Path.Combine(LauncherDirectory, DllName);
 
         launchOptions.WriteDisplaySettingsToRegistry(context.TargetScheme.IsOversea);
 
@@ -81,7 +81,7 @@ internal sealed partial class GameProcessFactory
         {
             if (islandEnabled)
             {
-                CreateDllConfig(launchOptions, kyxsanDirectory);
+                CreateDllConfig(launchOptions, LauncherDirectory);
             }
 
             return CreateWithInjection(commandLine, gameFilePath, gameDirectory, islandEnabled ? dllPath : string.Empty, customDlls);
@@ -175,7 +175,7 @@ internal sealed partial class GameProcessFactory
 
     private static IProcess CreateWithInjection(string arguments, string fileName, string workingDirectory, string dllPath, ImmutableArray<string> customDlls)
     {
-        string configFile = Path.Combine(Path.GetTempPath(), $"kyxsan_inject_{Guid.NewGuid():N}.tmp");
+        string configFile = Path.Combine(Path.GetTempPath(), $"Launcher_inject_{Guid.NewGuid():N}.tmp");
 
         // Write config: gameExe, mainDll, workDir, cmdLine, then custom DLLs count and paths
         List<string> configLines = [fileName, dllPath, workingDirectory, arguments ?? string.Empty];

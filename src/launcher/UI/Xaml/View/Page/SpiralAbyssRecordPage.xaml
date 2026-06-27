@@ -1,5 +1,5 @@
-<shuxc:ScopedPage
-    x:Class="kyxsan.UI.Xaml.View.Page.SpiralAbyssRecordPage"
+﻿<shuxc:ScopedPage
+    x:Class="Launcher.UI.Xaml.View.Page.SpiralAbyssRecordPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:clw="using:CommunityToolkit.Labs.WinUI"
@@ -9,15 +9,15 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:mxi="using:Microsoft.Xaml.Interactivity"
-    xmlns:shuxb="using:kyxsan.UI.Xaml.Behavior"
-    xmlns:shuxc="using:kyxsan.UI.Xaml.Control"
-    xmlns:shuxcc="using:kyxsan.UI.Xaml.Control.Card"
-    xmlns:shuxci="using:kyxsan.UI.Xaml.Control.Image"
-    xmlns:shuxcp="using:kyxsan.UI.Xaml.Control.Panel"
-    xmlns:shuxct="using:kyxsan.UI.Xaml.Control.TextBlock"
-    xmlns:shuxm="using:kyxsan.UI.Xaml.Markup"
-    xmlns:shvcom="using:kyxsan.ViewModel.Complex"
-    xmlns:shvs="using:kyxsan.ViewModel.SpiralAbyss"
+    xmlns:shuxb="using:Launcher.UI.Xaml.Behavior"
+    xmlns:shuxc="using:Launcher.UI.Xaml.Control"
+    xmlns:shuxcc="using:Launcher.UI.Xaml.Control.Card"
+    xmlns:shuxci="using:Launcher.UI.Xaml.Control.Image"
+    xmlns:shuxcp="using:Launcher.UI.Xaml.Control.Panel"
+    xmlns:shuxct="using:Launcher.UI.Xaml.Control.TextBlock"
+    xmlns:shuxm="using:Launcher.UI.Xaml.Markup"
+    xmlns:shvcom="using:Launcher.ViewModel.Complex"
+    xmlns:shvs="using:Launcher.ViewModel.SpiralAbyss"
     d:DataContext="{d:DesignInstance shvs:SpiralAbyssViewModel}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     mc:Ignorable="d">
@@ -326,7 +326,7 @@
                         MaxHeight="120"
                         Margin="0,16,0,0"
                         HorizontalAlignment="Center"
-                        Source="ms-appx:///Resource/Icon/kyxsan05.png"/>
+                        Source="ms-appx:///Resource/Icon/Launcher05.png"/>
                     <TextBlock
                         Margin="0,16,0,0"
                         HorizontalAlignment="Center"
@@ -580,8 +580,8 @@
 
             </PivotItem>
 
-            <PivotItem x:Name="StatisticsPivotItem" Header="{shuxm:ResourceString Name=ViewSpiralAbysskyxsanStatistics}">
-                <Grid DataContext="{Binding kyxsanSpiralAbyssDatabaseViewModel}">
+            <PivotItem x:Name="StatisticsPivotItem" Header="{shuxm:ResourceString Name=ViewSpiralAbyssLauncherStatistics}">
+                <Grid DataContext="{Binding LauncherSpiralAbyssDatabaseViewModel}">
                     <mxi:Interaction.Behaviors>
                         <shuxb:InvokeCommandOnLoadedBehavior Command="{Binding LoadCommand}"/>
                     </mxi:Interaction.Behaviors>
@@ -671,7 +671,7 @@
                     <Pivot Style="{ThemeResource CardPivotStyle}" Visibility="{Binding Overview, Converter={StaticResource EmptyObjectToVisibilityConverter}}">
                         <Pivot.RightHeader>
                             <CommandBar DefaultLabelPosition="Right">
-                                <AppBarButton Icon="{shuxm:FontIcon Glyph=&#xE946;}" Label="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverview}">
+                                <AppBarButton Icon="{shuxm:FontIcon Glyph=&#xE946;}" Label="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverview}">
                                     <AppBarButton.Flyout>
                                         <Flyout Placement="BottomEdgeAlignedRight">
                                             <StackPanel
@@ -686,12 +686,12 @@
                                                     <x:Double x:Key="SettingsCardMinHeight">0</x:Double>
                                                     <!--  ReSharper restore Xaml.RedundantResource  -->
                                                 </StackPanel.Resources>
-                                                <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewDataCollect}"/>
-                                                <cwcont:SettingsCard Content="{Binding Overview.RefreshTime}" Header="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewRefreshTime}"/>
-                                                <cwcont:SettingsCard Content="{Binding Overview.RecordTotal}" Header="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewRecordTotal}"/>
-                                                <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewSpiralAbyss}"/>
-                                                <cwcont:SettingsCard Content="{Binding Overview.SpiralAbyssTotal}" Header="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewSpiralAbyssTotal}"/>
-                                                <cwcont:SettingsCard Padding="16,8" Header="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewSpiralAbyssPassed}">
+                                                <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewDataCollect}"/>
+                                                <cwcont:SettingsCard Content="{Binding Overview.RefreshTime}" Header="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewRefreshTime}"/>
+                                                <cwcont:SettingsCard Content="{Binding Overview.RecordTotal}" Header="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewRecordTotal}"/>
+                                                <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewSpiralAbyss}"/>
+                                                <cwcont:SettingsCard Content="{Binding Overview.SpiralAbyssTotal}" Header="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewSpiralAbyssTotal}"/>
+                                                <cwcont:SettingsCard Padding="16,8" Header="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewSpiralAbyssPassed}">
                                                     <StackPanel>
                                                         <TextBlock Text="{Binding Overview.SpiralAbyssPassedPercent}"/>
                                                         <TextBlock
@@ -701,7 +701,7 @@
                                                             Text="{Binding Overview.SpiralAbyssPassed}"/>
                                                     </StackPanel>
                                                 </cwcont:SettingsCard>
-                                                <cwcont:SettingsCard Padding="16,8" Header="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewSpiralAbyssFullStar}">
+                                                <cwcont:SettingsCard Padding="16,8" Header="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewSpiralAbyssFullStar}">
                                                     <StackPanel>
                                                         <TextBlock Text="{Binding Overview.SpiralAbyssFullStarPercent}"/>
                                                         <TextBlock
@@ -711,15 +711,15 @@
                                                             Text="{Binding Overview.SpiralAbyssFullStar}"/>
                                                     </StackPanel>
                                                 </cwcont:SettingsCard>
-                                                <cwcont:SettingsCard Content="{Binding Overview.SpiralAbyssStarAverage}" Header="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewSpiralAbyssStarAverage}"/>
-                                                <cwcont:SettingsCard Content="{Binding Overview.SpiralAbyssBattleAverage}" Header="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewSpiralAbyssBattleAverage}"/>
+                                                <cwcont:SettingsCard Content="{Binding Overview.SpiralAbyssStarAverage}" Header="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewSpiralAbyssStarAverage}"/>
+                                                <cwcont:SettingsCard Content="{Binding Overview.SpiralAbyssBattleAverage}" Header="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewSpiralAbyssBattleAverage}"/>
                                             </StackPanel>
                                         </Flyout>
                                     </AppBarButton.Flyout>
                                 </AppBarButton>
                             </CommandBar>
                         </Pivot.RightHeader>
-                        <PivotItem Header="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewAvatarUsageRank}">
+                        <PivotItem Header="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewAvatarUsageRank}">
                             <Border Margin="16" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
                                 <Grid Style="{ThemeResource AcrylicGridCardStyle}">
                                     <Grid.RowDefinitions>
@@ -753,7 +753,7 @@
                                 </Grid>
                             </Border>
                         </PivotItem>
-                        <PivotItem Header="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewAvatarAppearanceRank}">
+                        <PivotItem Header="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewAvatarAppearanceRank}">
                             <Border Margin="16" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
                                 <Grid Style="{ThemeResource AcrylicGridCardStyle}">
                                     <Grid.RowDefinitions>
@@ -787,7 +787,7 @@
                                 </Grid>
                             </Border>
                         </PivotItem>
-                        <PivotItem Header="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewTeamAppearance}">
+                        <PivotItem Header="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewTeamAppearance}">
                             <Border Margin="16" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
                                 <Grid Style="{ThemeResource AcrylicGridCardStyle}">
                                     <Grid.RowDefinitions>
@@ -867,7 +867,7 @@
                                 </Grid>
                             </Border>
                         </PivotItem>
-                        <PivotItem Header="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewAvatarConstellation}">
+                        <PivotItem Header="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewAvatarConstellation}">
                             <Border Margin="16" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
                                 <Grid Style="{ThemeResource AcrylicGridCardStyle}">
                                     <Grid.RowDefinitions>
@@ -891,55 +891,55 @@
                                             Margin="6"
                                             HorizontalAlignment="Center"
                                             Style="{StaticResource CaptionTextBlockStyle}"
-                                            Text="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewConstellationAvatar}"/>
+                                            Text="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewConstellationAvatar}"/>
                                         <TextBlock
                                             Grid.Column="1"
                                             Margin="6"
                                             HorizontalAlignment="Center"
                                             Style="{StaticResource CaptionTextBlockStyle}"
-                                            Text="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewConstellationHolding}"/>
+                                            Text="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewConstellationHolding}"/>
                                         <TextBlock
                                             Grid.Column="2"
                                             Margin="6"
                                             HorizontalAlignment="Center"
                                             Style="{StaticResource CaptionTextBlockStyle}"
-                                            Text="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewConstellation0}"/>
+                                            Text="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewConstellation0}"/>
                                         <TextBlock
                                             Grid.Column="3"
                                             Margin="6"
                                             HorizontalAlignment="Center"
                                             Style="{StaticResource CaptionTextBlockStyle}"
-                                            Text="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewConstellation1}"/>
+                                            Text="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewConstellation1}"/>
                                         <TextBlock
                                             Grid.Column="4"
                                             Margin="6"
                                             HorizontalAlignment="Center"
                                             Style="{StaticResource CaptionTextBlockStyle}"
-                                            Text="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewConstellation2}"/>
+                                            Text="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewConstellation2}"/>
                                         <TextBlock
                                             Grid.Column="5"
                                             Margin="6"
                                             HorizontalAlignment="Center"
                                             Style="{StaticResource CaptionTextBlockStyle}"
-                                            Text="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewConstellation3}"/>
+                                            Text="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewConstellation3}"/>
                                         <TextBlock
                                             Grid.Column="6"
                                             Margin="6"
                                             HorizontalAlignment="Center"
                                             Style="{StaticResource CaptionTextBlockStyle}"
-                                            Text="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewConstellation4}"/>
+                                            Text="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewConstellation4}"/>
                                         <TextBlock
                                             Grid.Column="7"
                                             Margin="6"
                                             HorizontalAlignment="Center"
                                             Style="{StaticResource CaptionTextBlockStyle}"
-                                            Text="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewConstellation5}"/>
+                                            Text="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewConstellation5}"/>
                                         <TextBlock
                                             Grid.Column="8"
                                             Margin="6"
                                             HorizontalAlignment="Center"
                                             Style="{StaticResource CaptionTextBlockStyle}"
-                                            Text="{shuxm:ResourceString Name=ViewPagekyxsanDatabaseOverviewConstellation6}"/>
+                                            Text="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewConstellation6}"/>
                                     </Grid>
                                     <ListView
                                         Grid.Row="1"

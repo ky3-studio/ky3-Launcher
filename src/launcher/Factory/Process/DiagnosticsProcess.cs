@@ -1,17 +1,17 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.Diagnostics;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Win32.Foundation;
+using Launcher.Core.Diagnostics;
+using Launcher.Core.ExceptionService;
+using Launcher.Win32.Foundation;
 
-namespace kyxsan.Factory.Process;
+namespace Launcher.Factory.Process;
 
 internal sealed partial class DiagnosticsProcess : IProcess
 {
@@ -62,7 +62,7 @@ internal sealed partial class DiagnosticsProcess : IProcess
 
     public void ResumeMainThread()
     {
-        kyxsanException.NotSupported("ResumeMainThread is not supported for System.Diagnostics.Process.");
+        LauncherException.NotSupported("ResumeMainThread is not supported for System.Diagnostics.Process.");
     }
 
     public void WaitForExit()

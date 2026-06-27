@@ -1,37 +1,37 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 // Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.Input;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.Logging;
-using kyxsan.Core.Shell;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Factory.Process;
-using kyxsan.Service.Game;
-using kyxsan.Service.Game.AdvancedStart;
-using kyxsan.Service.Game.AdvancedStart.Model;
-using kyxsan.Service.Game.Configuration;
-using kyxsan.Service.Game.FileSystem;
-using kyxsan.Service.Game.Launching;
-using kyxsan.Service.Game.Launching.Context;
-using kyxsan.Service.Game.Launching.Invoker;
-using kyxsan.Service.Game.Scheme;
-using kyxsan.Service.Navigation;
-using kyxsan.Service.Notification;
-using kyxsan.UI.Xaml.View.Dialog;
-using kyxsan.UI.Xaml.View.Page;
-using kyxsan.ViewModel.User;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.Logging;
+using Launcher.Core.Shell;
+using Launcher.Factory.ContentDialog;
+using Launcher.Factory.Process;
+using Launcher.Service.Game;
+using Launcher.Service.Game.AdvancedStart;
+using Launcher.Service.Game.AdvancedStart.Model;
+using Launcher.Service.Game.Configuration;
+using Launcher.Service.Game.FileSystem;
+using Launcher.Service.Game.Launching;
+using Launcher.Service.Game.Launching.Context;
+using Launcher.Service.Game.Launching.Invoker;
+using Launcher.Service.Game.Scheme;
+using Launcher.Service.Navigation;
+using Launcher.Service.Notification;
+using Launcher.UI.Xaml.View.Dialog;
+using Launcher.UI.Xaml.View.Page;
+using Launcher.ViewModel.User;
 using System.IO;
 
-namespace kyxsan.ViewModel.Game;
+namespace Launcher.ViewModel.Game;
 
 [Service(ServiceLifetime.Singleton)]
 internal sealed partial class LaunchGameShared
@@ -61,7 +61,7 @@ internal sealed partial class LaunchGameShared
             }
             catch (InvalidOperationException)
             {
-                kyxsanException.Throw(string.Format(SH.ViewModelLaunchGameUnsupportedChannelOptions, options));
+                LauncherException.Throw(string.Format(SH.ViewModelLaunchGameUnsupportedChannelOptions, options));
             }
         }
 

@@ -1,22 +1,22 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.DependencyInjection.Abstraction;
-using kyxsan.Model.Entity.Extension;
-using kyxsan.UI.Xaml.Data;
-using kyxsan.Web.Hoyolab;
-using kyxsan.Web.Hoyolab.Bbs.User;
-using kyxsan.Web.Hoyolab.Passport;
-using kyxsan.Web.Hoyolab.Takumi.Binding;
-using kyxsan.Web.Response;
+using Launcher.Core.DependencyInjection.Abstraction;
+using Launcher.Model.Entity.Extension;
+using Launcher.UI.Xaml.Data;
+using Launcher.Web.Hoyolab;
+using Launcher.Web.Hoyolab.Bbs.User;
+using Launcher.Web.Hoyolab.Passport;
+using Launcher.Web.Hoyolab.Takumi.Binding;
+using Launcher.Web.Response;
 
-namespace kyxsan.Service.User;
+namespace Launcher.Service.User;
 
 [Service(ServiceLifetime.Singleton, typeof(IUserInitializationService))]
 internal sealed partial class UserInitializationService : IUserInitializationService

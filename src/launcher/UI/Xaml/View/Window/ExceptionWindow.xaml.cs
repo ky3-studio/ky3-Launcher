@@ -1,25 +1,25 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Input;
 using Microsoft.UI.Windowing;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.Graphics;
-using kyxsan.Core.Logging;
-using kyxsan.Factory.Process;
-using kyxsan.Service.kyxsan;
-using kyxsan.UI.Windowing;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.Graphics;
+using Launcher.Core.Logging;
+using Launcher.Factory.Process;
+using Launcher.Service.Launcher;
+using Launcher.UI.Windowing;
 using System.Runtime.CompilerServices;
 using Windows.Foundation;
 using Windows.Graphics;
 
-namespace kyxsan.UI.Xaml.View.Window;
+namespace Launcher.UI.Xaml.View.Window;
 
 internal sealed partial class ExceptionWindow : Microsoft.UI.Xaml.Window, INotifyPropertyChanged
 {
@@ -87,7 +87,7 @@ internal sealed partial class ExceptionWindow : Microsoft.UI.Xaml.Window, INotif
         Bindings.Update();
         if (!string.IsNullOrWhiteSpace(Comment))
         {
-            string? email = await Ioc.Default.GetRequiredService<kyxsanUserOptions>().GetActualUserNameAsync().ConfigureAwait(true);
+            string? email = await Ioc.Default.GetRequiredService<LauncherUserOptions>().GetActualUserNameAsync().ConfigureAwait(true);
             SentrySdk.CaptureFeedback(Comment, contactEmail: email, associatedEventId: associatedEventId);
         }
 

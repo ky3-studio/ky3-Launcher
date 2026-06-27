@@ -1,20 +1,20 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using kyxsan.SourceGeneration.Extension;
-using kyxsan.SourceGeneration.Primitive;
+using Launcher.SourceGeneration.Extension;
+using Launcher.SourceGeneration.Primitive;
 using System.Runtime.CompilerServices;
 using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
-using static kyxsan.SourceGeneration.Primitive.FastSyntaxFactory;
-using static kyxsan.SourceGeneration.WellKnownSyntax;
+using static Launcher.SourceGeneration.Primitive.FastSyntaxFactory;
+using static Launcher.SourceGeneration.WellKnownSyntax;
 
-[assembly:InternalsVisibleTo("kyxsan.SourceGeneration.Test")]
+[assembly:InternalsVisibleTo("Launcher.SourceGeneration.Test")]
 
-namespace kyxsan.SourceGeneration;
+namespace Launcher.SourceGeneration;
 
 [Generator(LanguageNames.CSharp)]
 internal sealed class AttributeGenerator : IIncrementalGenerator
@@ -27,7 +27,7 @@ internal sealed class AttributeGenerator : IIncrementalGenerator
     public static void GenerateAllAttributes(IncrementalGeneratorPostInitializationContext context)
     {
         CompilationUnitSyntax coreAnnotation = CompilationUnit()
-            .WithMembers(SingletonList<MemberDeclarationSyntax>(FileScopedNamespaceDeclaration("kyxsan.Core.Annotation")
+            .WithMembers(SingletonList<MemberDeclarationSyntax>(FileScopedNamespaceDeclaration("Launcher.Core.Annotation")
                 .WithLeadingTrivia(NullableEnableTriviaList)
                 .WithMembers(List<MemberDeclarationSyntax>(
                 [
@@ -115,12 +115,12 @@ internal sealed class AttributeGenerator : IIncrementalGenerator
                 ]))))
             .NormalizeWhitespace();
 
-        context.AddSource("kyxsan.Core.Annotation.Attributes.g.cs", coreAnnotation.ToFullStringWithHeader());
+        context.AddSource("Launcher.Core.Annotation.Attributes.g.cs", coreAnnotation.ToFullStringWithHeader());
 
-        TypeSyntax typeOfHttpClientConfiguration = ParseTypeName("global::kyxsan.Core.DependencyInjection.Annotation.HttpClient.HttpClientConfiguration");
+        TypeSyntax typeOfHttpClientConfiguration = ParseTypeName("global::Launcher.Core.DependencyInjection.Annotation.HttpClient.HttpClientConfiguration");
 
         CompilationUnitSyntax coreDependencyInjectionAnnotationHttpClient = CompilationUnit()
-            .WithMembers(SingletonList<MemberDeclarationSyntax>(FileScopedNamespaceDeclaration("kyxsan.Core.DependencyInjection.Annotation.HttpClient")
+            .WithMembers(SingletonList<MemberDeclarationSyntax>(FileScopedNamespaceDeclaration("Launcher.Core.DependencyInjection.Annotation.HttpClient")
                 .WithLeadingTrivia(NullableEnableTriviaList)
                 .WithMembers(List<MemberDeclarationSyntax>(
                 [
@@ -206,10 +206,10 @@ internal sealed class AttributeGenerator : IIncrementalGenerator
                 ]))))
             .NormalizeWhitespace();
 
-        context.AddSource("kyxsan.Core.DependencyInjection.Annotation.HttpClient.Attributes.g.cs", coreDependencyInjectionAnnotationHttpClient.ToFullStringWithHeader());
+        context.AddSource("Launcher.Core.DependencyInjection.Annotation.HttpClient.Attributes.g.cs", coreDependencyInjectionAnnotationHttpClient.ToFullStringWithHeader());
 
         CompilationUnitSyntax coreDependencyInjectionAnnotation = CompilationUnit()
-            .WithMembers(SingletonList<MemberDeclarationSyntax>(FileScopedNamespaceDeclaration("kyxsan.Core.DependencyInjection.Annotation")
+            .WithMembers(SingletonList<MemberDeclarationSyntax>(FileScopedNamespaceDeclaration("Launcher.Core.DependencyInjection.Annotation")
                 .WithLeadingTrivia(NullableEnableTriviaList)
                 .WithMembers(List<MemberDeclarationSyntax>(
                 [
@@ -248,10 +248,10 @@ internal sealed class AttributeGenerator : IIncrementalGenerator
                 ]))))
             .NormalizeWhitespace();
 
-        context.AddSource("kyxsan.Core.DependencyInjection.Annotation.Attributes.g.cs", coreDependencyInjectionAnnotation.ToFullStringWithHeader());
+        context.AddSource("Launcher.Core.DependencyInjection.Annotation.Attributes.g.cs", coreDependencyInjectionAnnotation.ToFullStringWithHeader());
 
         CompilationUnitSyntax resourceLocalization = CompilationUnit()
-            .WithMembers(SingletonList<MemberDeclarationSyntax>(FileScopedNamespaceDeclaration("kyxsan.Resource.Localization")
+            .WithMembers(SingletonList<MemberDeclarationSyntax>(FileScopedNamespaceDeclaration("Launcher.Resource.Localization")
                 .WithLeadingTrivia(NullableEnableTriviaList)
                 .WithMembers(List<MemberDeclarationSyntax>(
                 [
@@ -272,7 +272,7 @@ internal sealed class AttributeGenerator : IIncrementalGenerator
                 ]))))
             .NormalizeWhitespace();
 
-        context.AddSource("kyxsan.Resource.Localization.Attributes.g.cs", resourceLocalization.ToFullStringWithHeader());
+        context.AddSource("Launcher.Resource.Localization.Attributes.g.cs", resourceLocalization.ToFullStringWithHeader());
 
         CompilationUnitSyntax interceptsLocation = CompilationUnit()
             .WithMembers(SingletonList<MemberDeclarationSyntax>(FileScopedNamespaceDeclaration("System.Runtime.CompilerServices")

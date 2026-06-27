@@ -9,17 +9,15 @@
     <File Path=".editorconfig" />
     <File Path=".vsconfig" />
   </Folder>
-  <Project Path="kyxsan.Runner/Runner.vcxproj" Id="6036ba85-1153-4c90-8c3f-68700faef6cf">
+  <Project Path="Runner/Runner.vcxproj">
     <Platform Solution="*|ARM64" Project="x64" />
   </Project>
-  <Project Path="kyxsan.Installer/kyxsan.Installer.wixproj" Type="b7dd6f7e-def8-4e67-b5b7-07ef123db6f0" Id="91a04cd0-28cc-4562-92e1-202bc163edd7">
-    <BuildDependency Project="kyxsan.Runner/Runner.vcxproj" />
-    <Platform Solution="*|Any CPU" Project="x64" />
-  </Project>
-
-  <Project Path="kyxsan.launcher\kyxsan.launcher.csproj">
+  <Project Path="src/launcher/launcher.csproj">
     <Platform Project="x64" />
     <Deploy Solution="*|Any CPU" />
     <Deploy Solution="*|x64" />
   </Project>
+  <Project Path="src/SourceGeneration/SourceGeneration.csproj" />
+  <Project Path="src/updater/updater.csproj" />
+  <Project Path="tests/ky3launcher.Tests/ky3launcher.Tests.csproj" />
 </Solution>

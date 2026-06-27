@@ -1,18 +1,18 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.ViewModel.User;
-using kyxsan.Web.Hoyolab;
-using kyxsan.Web.Hoyolab.PublicData.DeviceFp;
-using kyxsan.Web.Response;
+using Launcher.ViewModel.User;
+using Launcher.Web.Hoyolab;
+using Launcher.Web.Hoyolab.PublicData.DeviceFp;
+using Launcher.Web.Response;
 
-namespace kyxsan.Service.User;
+namespace Launcher.Service.User;
 
 [Service(ServiceLifetime.Singleton, typeof(IUserFingerprintService))]
 internal sealed partial class UserFingerprintService : IUserFingerprintService

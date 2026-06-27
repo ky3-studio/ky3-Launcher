@@ -1,7 +1,7 @@
-using kyxsan.UI.Xaml.Control;
-using kyxsan.ViewModel.Inventory;
+﻿using Launcher.UI.Xaml.Control;
+using Launcher.ViewModel.Inventory;
 
-namespace kyxsan.UI.Xaml.View.Page;
+namespace Launcher.UI.Xaml.View.Page;
 
 internal sealed partial class InventoryPage : ScopedPage
 {

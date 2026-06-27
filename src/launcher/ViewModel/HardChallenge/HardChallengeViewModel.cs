@@ -1,25 +1,25 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Core.Logging;
-using kyxsan.Service.HardChallenge;
-using kyxsan.Service.Metadata;
-using kyxsan.Service.Metadata.ContextAbstraction;
-using kyxsan.Service.Notification;
-using kyxsan.Service.User;
-using kyxsan.UI.Xaml.Data;
-using kyxsan.ViewModel.User;
+using Launcher.Core.Logging;
+using Launcher.Service.HardChallenge;
+using Launcher.Service.Metadata;
+using Launcher.Service.Metadata.ContextAbstraction;
+using Launcher.Service.Notification;
+using Launcher.Service.User;
+using Launcher.UI.Xaml.Data;
+using Launcher.ViewModel.User;
 using System.Collections.Immutable;
 using System.Collections.ObjectModel;
 
-namespace kyxsan.ViewModel.HardChallenge;
+namespace Launcher.ViewModel.HardChallenge;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]

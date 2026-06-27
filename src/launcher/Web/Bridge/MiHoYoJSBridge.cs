@@ -1,33 +1,33 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.Web.WebView2.Core;
-using kyxsan.Core.DataTransfer;
-using kyxsan.Core.DependencyInjection.Abstraction;
-using kyxsan.Core.Logging;
-using kyxsan.Factory.Picker;
-using kyxsan.Service;
-using kyxsan.Service.User;
-using kyxsan.ViewModel.User;
-using kyxsan.Web.Bridge.Model;
-using kyxsan.Web.Hoyolab;
-using kyxsan.Web.Hoyolab.Bbs.User;
-using kyxsan.Web.Hoyolab.DataSigning;
-using kyxsan.Web.Hoyolab.Takumi.Auth;
-using kyxsan.Web.Response;
-using kyxsan.Win32;
-using kyxsan.Win32.Foundation;
+using Launcher.Core.DataTransfer;
+using Launcher.Core.DependencyInjection.Abstraction;
+using Launcher.Core.Logging;
+using Launcher.Factory.Picker;
+using Launcher.Service;
+using Launcher.Service.User;
+using Launcher.ViewModel.User;
+using Launcher.Web.Bridge.Model;
+using Launcher.Web.Hoyolab;
+using Launcher.Web.Hoyolab.Bbs.User;
+using Launcher.Web.Hoyolab.DataSigning;
+using Launcher.Web.Hoyolab.Takumi.Auth;
+using Launcher.Web.Response;
+using Launcher.Win32;
+using Launcher.Win32.Foundation;
 using System.Net.Http;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace kyxsan.Web.Bridge;
+namespace Launcher.Web.Bridge;
 
 internal class MiHoYoJSBridge
 {
@@ -427,7 +427,7 @@ internal class MiHoYoJSBridge
         }
         catch (COMException ex)
         {
-            if (kyxsanNative.IsWin32(ex.HResult, WIN32_ERROR.ERROR_INVALID_STATE))
+            if (LauncherNative.IsWin32(ex.HResult, WIN32_ERROR.ERROR_INVALID_STATE))
             {
                 // 组或资源的状态不是执行请求操作的正确状态。
                 return string.Empty;

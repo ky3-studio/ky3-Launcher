@@ -1,4 +1,4 @@
-using kyxsan.Core.Threading;
+﻿using Launcher.Core.Threading;
 using Xunit;
 
 namespace ky3launcher.Tests.Threading;

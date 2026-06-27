@@ -1,13 +1,13 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.CodeAnalysis;
-using kyxsan.SourceGeneration.Primitive;
+using Launcher.SourceGeneration.Primitive;
 using System;
 using System.Linq;
 
-namespace kyxsan.SourceGeneration.Extension;
+namespace Launcher.SourceGeneration.Extension;
 
 internal static class TypeSymbolExtension
 {

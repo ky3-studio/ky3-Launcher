@@ -1,26 +1,26 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core;
-using kyxsan.Model.Entity.Primitive.Converter;
-using kyxsan.Model.Intrinsic;
-using kyxsan.Model.Intrinsic.Frozen;
-using kyxsan.Model.Metadata.Avatar;
-using kyxsan.Model.Metadata.Converter;
-using kyxsan.Model.Metadata.Food;
-using kyxsan.Model.Metadata.Quest;
-using kyxsan.Model.Metadata.Weapon;
-using kyxsan.Web.Endpoint.kyxsan;
+using Launcher.Core;
+using Launcher.Model.Entity.Primitive.Converter;
+using Launcher.Model.Intrinsic;
+using Launcher.Model.Intrinsic.Frozen;
+using Launcher.Model.Metadata.Avatar;
+using Launcher.Model.Metadata.Converter;
+using Launcher.Model.Metadata.Food;
+using Launcher.Model.Metadata.Quest;
+using Launcher.Model.Metadata.Weapon;
+using Launcher.Web.Endpoint.Launcher;
 using System.Collections.Frozen;
 using System.Collections.Immutable;
 
-namespace kyxsan.UI.Xaml.Control.AutoSuggestBox;
+namespace Launcher.UI.Xaml.Control.AutoSuggestBox;
 
 internal static class SearchTokens
 {

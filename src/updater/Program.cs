@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace kyxsan.Updater;
+namespace Launcher.Updater;
 
 internal static class Program
 {

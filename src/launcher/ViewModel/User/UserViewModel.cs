@@ -1,42 +1,42 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Core;
-using kyxsan.Core.Database;
-using kyxsan.Core.DataTransfer;
-using kyxsan.Core.DependencyInjection.Abstraction;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.LifeCycle;
-using kyxsan.Core.Logging;
-using kyxsan.Core.Property;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Model;
-using kyxsan.Service;
-using kyxsan.Service.DailyNote;
-using kyxsan.Service.Metadata;
-using kyxsan.Service.Metadata.ContextAbstraction;
-using kyxsan.Service.Notification;
-using kyxsan.Service.User;
-using kyxsan.UI.Xaml.Behavior.Action;
-using kyxsan.UI.Xaml.Data.Converter.Specialized;
-using kyxsan.UI.Xaml.View.Dialog;
-using kyxsan.UI.Xaml.View.Window.WebView2;
-using kyxsan.Web.Hoyolab;
-using kyxsan.Web.Hoyolab.Passport;
-using kyxsan.Web.Hoyolab.Takumi.Binding;
-using kyxsan.Web.Response;
+using Launcher.Core;
+using Launcher.Core.Database;
+using Launcher.Core.DataTransfer;
+using Launcher.Core.DependencyInjection.Abstraction;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.LifeCycle;
+using Launcher.Core.Logging;
+using Launcher.Core.Property;
+using Launcher.Factory.ContentDialog;
+using Launcher.Model;
+using Launcher.Service;
+using Launcher.Service.DailyNote;
+using Launcher.Service.Metadata;
+using Launcher.Service.Metadata.ContextAbstraction;
+using Launcher.Service.Notification;
+using Launcher.Service.User;
+using Launcher.UI.Xaml.Behavior.Action;
+using Launcher.UI.Xaml.Data.Converter.Specialized;
+using Launcher.UI.Xaml.View.Dialog;
+using Launcher.UI.Xaml.View.Window.WebView2;
+using Launcher.Web.Hoyolab;
+using Launcher.Web.Hoyolab.Passport;
+using Launcher.Web.Hoyolab.Takumi.Binding;
+using Launcher.Web.Response;
 using System.Collections.Immutable;
 using System.Text;
-using EntityUser = kyxsan.Model.Entity.User;
+using EntityUser = Launcher.Model.Entity.User;
 
-namespace kyxsan.ViewModel.User;
+namespace Launcher.ViewModel.User;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Singleton)]
@@ -100,7 +100,7 @@ internal sealed partial class UserViewModel : ObservableObject
                 messenger.Send(InfoBarMessage.Information(SH.ViewModelUserEmptyGameRole));
                 break;
             default:
-                throw kyxsanException.NotSupported();
+                throw LauncherException.NotSupported();
         }
     }
 
@@ -113,7 +113,7 @@ internal sealed partial class UserViewModel : ObservableObject
         {
             Users = await userService.GetUsersAsync().ConfigureAwait(true);
         }
-        catch (kyxsanException ex)
+        catch (LauncherException ex)
         {
             messenger.Send(InfoBarMessage.Error(ex));
         }
@@ -290,7 +290,7 @@ internal sealed partial class UserViewModel : ObservableObject
             await userService.RemoveUserAsync(user).ConfigureAwait(false);
             messenger.Send(InfoBarMessage.Success(SH.FormatViewModelUserRemoved(user.UserInfo?.Nickname)));
         }
-        catch (kyxsanException ex)
+        catch (LauncherException ex)
         {
             messenger.Send(InfoBarMessage.Error(ex));
         }

@@ -1,12 +1,12 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
-using static kyxsan.SourceGeneration.Primitive.FastSyntaxFactory;
+using static Launcher.SourceGeneration.Primitive.FastSyntaxFactory;
 
-namespace kyxsan.SourceGeneration;
+namespace Launcher.SourceGeneration;
 
 internal static class WellKnownSyntax
 {
@@ -22,7 +22,7 @@ internal static class WellKnownSyntax
     public static readonly NameSyntax NameOfCommunityToolkitMvvmInput = ParseName("global::CommunityToolkit.Mvvm.Input");
     public static readonly NameSyntax NameOfCommunityToolkitMvvmInputAsyncRelayCommandOptions = ParseName("global::CommunityToolkit.Mvvm.Input.AsyncRelayCommandOptions");
     public static readonly NameSyntax NameOfMicrosoftUIXaml = ParseName("global::Microsoft.UI.Xaml");
-    public static readonly NameSyntax NameOfSnapkyxsanModelPrimitiveConverter = ParseName("global::kyxsan.Model.Primitive.Converter");
+    public static readonly NameSyntax NameOfSnapLauncherModelPrimitiveConverter = ParseName("global::Launcher.Model.Primitive.Converter");
     public static readonly NameSyntax NameOfSystem = ParseName("global::System");
     public static readonly NameSyntax NameOfSystemComponentModelEditorBrowsable = ParseName("global::System.ComponentModel.EditorBrowsable");
     public static readonly NameSyntax NameOfSystemComponentModelEditorBrowsableState = ParseName("global::System.ComponentModel.EditorBrowsableState");

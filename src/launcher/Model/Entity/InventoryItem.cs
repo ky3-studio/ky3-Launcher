@@ -1,11 +1,11 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace kyxsan.Model.Entity;
+namespace Launcher.Model.Entity;
 
 [Table("inventory_items")]
 internal sealed class InventoryItem

@@ -1,31 +1,31 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 // Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Core.Logging;
-using kyxsan.Core.Property;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Model.Entity;
-using kyxsan.Service.Game;
-using kyxsan.Service.Game.Package;
-using kyxsan.Service.Game.Scheme;
-using kyxsan.Service.User;
-using kyxsan.UI.Xaml.View.Dialog;
-using kyxsan.UI.Xaml.View.Page;
-using kyxsan.ViewModel.User;
-using kyxsan.Web.Hoyolab.Takumi.Binding;
+using Launcher.Core.Logging;
+using Launcher.Core.Property;
+using Launcher.Factory.ContentDialog;
+using Launcher.Model.Entity;
+using Launcher.Service.Game;
+using Launcher.Service.Game.Package;
+using Launcher.Service.Game.Scheme;
+using Launcher.Service.User;
+using Launcher.UI.Xaml.View.Dialog;
+using Launcher.UI.Xaml.View.Page;
+using Launcher.ViewModel.User;
+using Launcher.Web.Hoyolab.Takumi.Binding;
 using System.Diagnostics;
-using BindingUser = kyxsan.ViewModel.User.User;
+using BindingUser = Launcher.ViewModel.User.User;
 
-namespace kyxsan.ViewModel.Game;
+namespace Launcher.ViewModel.Game;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Transient)]

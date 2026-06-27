@@ -1,22 +1,22 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.LifeCycle;
-using kyxsan.UI.Xaml.Behavior.Action;
-using kyxsan.UI.Xaml.View.Window.WebView2;
-using kyxsan.Web.Hoyolab.Passport;
-using kyxsan.Web.Hoyolab.Takumi.GameRecord;
-using kyxsan.Web.Hoyolab.Takumi.GameRecord.Verification;
-using kyxsan.Web.kyxsan.Geetest;
-using kyxsan.Web.Response;
+using Launcher.Core.LifeCycle;
+using Launcher.UI.Xaml.Behavior.Action;
+using Launcher.UI.Xaml.View.Window.WebView2;
+using Launcher.Web.Hoyolab.Passport;
+using Launcher.Web.Hoyolab.Takumi.GameRecord;
+using Launcher.Web.Hoyolab.Takumi.GameRecord.Verification;
+using Launcher.Web.Launcher.Geetest;
+using Launcher.Web.Response;
 
-namespace kyxsan.Service.Geetest;
+namespace Launcher.Service.Geetest;
 
 [Service(ServiceLifetime.Transient, typeof(IGeetestService))]
 internal sealed partial class GeetestService : IGeetestService

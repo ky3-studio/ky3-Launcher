@@ -1,22 +1,22 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Model.Entity.Abstraction;
-using kyxsan.ViewModel.DailyNote;
-using kyxsan.ViewModel.User;
-using kyxsan.Web.Hoyolab.Takumi.Binding;
-using kyxsan.Web.Hoyolab.Takumi.GameRecord.DailyNote;
+using Launcher.Model.Entity.Abstraction;
+using Launcher.ViewModel.DailyNote;
+using Launcher.ViewModel.User;
+using Launcher.Web.Hoyolab.Takumi.Binding;
+using Launcher.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace kyxsan.Model.Entity;
+namespace Launcher.Model.Entity;
 
 [Table("daily_notes")]
 internal sealed partial class DailyNoteEntry : ObservableObject, IAppDbEntity

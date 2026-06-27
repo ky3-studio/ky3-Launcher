@@ -1,10 +1,10 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 // Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
@@ -14,21 +14,21 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Media.Animation;
-using kyxsan.Core;
-using kyxsan.Core.LifeCycle;
-using kyxsan.Core.Logging;
-using kyxsan.Core.Setting;
-using kyxsan.Core.Shell;
-using kyxsan.UI.Windowing;
-using kyxsan.UI.Xaml.View.Window;
-using kyxsan.ViewModel.Guide;
+using Launcher.Core;
+using Launcher.Core.LifeCycle;
+using Launcher.Core.Logging;
+using Launcher.Core.Setting;
+using Launcher.Core.Shell;
+using Launcher.UI.Windowing;
+using Launcher.UI.Xaml.View.Window;
+using Launcher.ViewModel.Guide;
 using System.Globalization;
 using System.IO;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Graphics.Imaging;
 using Windows.Storage.Streams;
 
-namespace kyxsan.ViewModel;
+namespace Launcher.ViewModel;
 
 [Service(ServiceLifetime.Singleton)]
 internal sealed partial class NotifyIconViewModel : ObservableObject
@@ -46,7 +46,7 @@ internal sealed partial class NotifyIconViewModel : ObservableObject
     {
         get
         {
-            string? title = kyxsanRuntime.GetDisplayName();
+            string? title = LauncherRuntime.GetDisplayName();
             ArgumentException.ThrowIfNullOrEmpty(title);
             return title;
         }
@@ -256,7 +256,7 @@ internal sealed partial class NotifyIconViewModel : ObservableObject
         int width = renderTargetBitmap.PixelWidth;
         int height = renderTargetBitmap.PixelHeight;
 
-        string directory = Path.Combine(kyxsanRuntime.GetDataScreenshotDirectory(), CultureInfo.CurrentCulture.Name);
+        string directory = Path.Combine(LauncherRuntime.GetDataScreenshotDirectory(), CultureInfo.CurrentCulture.Name);
         Directory.CreateDirectory(directory);
         string filename = $"Screenshot_{DateTimeOffset.Now:yyyy.MM.dd_HH.mm.ss}.png";
         using (FileStream fileStream = File.Create(Path.Combine(directory, filename)))

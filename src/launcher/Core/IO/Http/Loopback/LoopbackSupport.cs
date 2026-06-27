@@ -1,42 +1,42 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Win32;
+using Launcher.Win32;
 
-namespace kyxsan.Core.IO.Http.Loopback;
+namespace Launcher.Core.IO.Http.Loopback;
 
 [Service(ServiceLifetime.Singleton)]
 internal sealed partial class LoopbackSupport : ObservableObject
 {
-    private readonly kyxsanNativeLoopbackSupport native;
-    private readonly string kyxsanContainerStringSid;
+    private readonly LauncherNativeLoopbackSupport native;
+    private readonly string LauncherContainerStringSid;
 
     public LoopbackSupport(IServiceProvider serviceProvider)
     {
-        native = kyxsanNative.Instance.MakeLoopbackSupport();
+        native = LauncherNative.Instance.MakeLoopbackSupport();
         try
         {
             if (!native.IsPublicFirewallEnabled)
             {
                 IsLoopbackEnabled = false;
-                kyxsanContainerStringSid = string.Empty;
+                LauncherContainerStringSid = string.Empty;
                 return;
             }
 
-            IsLoopbackEnabled = native.IsEnabled(kyxsanRuntime.FamilyName, out string? sid);
-            kyxsanContainerStringSid = sid ?? string.Empty;
+            IsLoopbackEnabled = native.IsEnabled(LauncherRuntime.FamilyName, out string? sid);
+            LauncherContainerStringSid = sid ?? string.Empty;
         }
         catch
         {
             IsLoopbackEnabled = false;
-            kyxsanContainerStringSid = string.Empty;
+            LauncherContainerStringSid = string.Empty;
         }
 
 #pragma warning disable SA1116, SA1117
@@ -49,7 +49,7 @@ internal sealed partial class LoopbackSupport : ObservableObject
             };
 
             scope.Contexts["Loopback"] = loopback;
-        }, (Sid: kyxsanContainerStringSid, Enabled: IsLoopbackEnabled));
+        }, (Sid: LauncherContainerStringSid, Enabled: IsLoopbackEnabled));
 #pragma warning restore SA1116, SA1117
     }
 
@@ -59,7 +59,7 @@ internal sealed partial class LoopbackSupport : ObservableObject
 
     public bool CanEnableLoopback
     {
-        get => kyxsanRuntime.IsProcessElevated && !IsLoopbackEnabled && !string.IsNullOrEmpty(kyxsanContainerStringSid);
+        get => LauncherRuntime.IsProcessElevated && !IsLoopbackEnabled && !string.IsNullOrEmpty(LauncherContainerStringSid);
     }
 
     public void EnableLoopback()
@@ -69,7 +69,7 @@ internal sealed partial class LoopbackSupport : ObservableObject
             return;
         }
 
-        native.Enable(kyxsanContainerStringSid);
+        native.Enable(LauncherContainerStringSid);
         IsLoopbackEnabled = true;
     }
 }

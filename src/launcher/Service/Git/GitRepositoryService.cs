@@ -1,29 +1,29 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Common;
 using LibGit2Sharp;
-using kyxsan.Core;
-using kyxsan.Core.IO;
-using kyxsan.Core.IO.Http.Proxy;
-using kyxsan.Core.Setting;
-using kyxsan.Service.BackgroundActivity;
-using kyxsan.Web.kyxsan;
-using kyxsan.Web.kyxsan.Response;
-using kyxsan.Web.Response;
+using Launcher.Core;
+using Launcher.Core.IO;
+using Launcher.Core.IO.Http.Proxy;
+using Launcher.Core.Setting;
+using Launcher.Service.BackgroundActivity;
+using Launcher.Web.Launcher;
+using Launcher.Web.Launcher.Response;
+using Launcher.Web.Response;
 using System.Collections.Immutable;
 using System.IO;
 using System.IO.Compression;
 using System.Net;
 using System.Net.Http;
 
-namespace kyxsan.Service.Git;
+namespace Launcher.Service.Git;
 
 [Service(ServiceLifetime.Singleton, typeof(IGitRepositoryService))]
 internal sealed partial class GitRepositoryService : IGitRepositoryService
@@ -47,14 +47,14 @@ internal sealed partial class GitRepositoryService : IGitRepositoryService
 
     public async ValueTask<ValueResult<bool, ValueDirectory>> EnsureRepositoryAsync(string name)
     {
-        if (LocalSetting.Get("kyxsan::Git::Repository::Override", false))
+        if (LocalSetting.Get("Launcher::Git::Repository::Override", false))
         {
-            return new(true, Path.GetFullPath(Path.Combine(kyxsanRuntime.GetDataRepositoryDirectory(), name)));
+            return new(true, Path.GetFullPath(Path.Combine(LauncherRuntime.GetDataRepositoryDirectory(), name)));
         }
 
         using (await repoLock.LockAsync(name).ConfigureAwait(false))
         {
-            string directory = Path.GetFullPath(Path.Combine(kyxsanRuntime.GetDataRepositoryDirectory(), name));
+            string directory = Path.GetFullPath(Path.Combine(LauncherRuntime.GetDataRepositoryDirectory(), name));
             bool hasValidLocalRepo = HasUsableRepository(directory);
 
             if (hasValidLocalRepo)
@@ -67,8 +67,8 @@ internal sealed partial class GitRepositoryService : IGitRepositoryService
             {
                 using (IServiceScope scope = serviceProvider.CreateScope())
                 {
-                    kyxsanInfrastructureClient infrastructureClient = scope.ServiceProvider.GetRequiredService<kyxsanInfrastructureClient>();
-                    kyxsanResponse<ImmutableArray<GitRepository>> response = await infrastructureClient.GetGitRepositoryAsync(name).ConfigureAwait(false);
+                    LauncherInfrastructureClient infrastructureClient = scope.ServiceProvider.GetRequiredService<LauncherInfrastructureClient>();
+                    LauncherResponse<ImmutableArray<GitRepository>> response = await infrastructureClient.GetGitRepositoryAsync(name).ConfigureAwait(false);
                     if (!ResponseValidator.TryValidate(response, scope.ServiceProvider, out infos))
                     {
                         if (hasValidLocalRepo)

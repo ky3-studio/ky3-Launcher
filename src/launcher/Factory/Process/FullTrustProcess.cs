@@ -1,18 +1,18 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.Diagnostics;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.LifeCycle.InterProcess.FullTrust;
-using kyxsan.Win32.Foundation;
+using Launcher.Core.Diagnostics;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.LifeCycle.InterProcess.FullTrust;
+using Launcher.Win32.Foundation;
 
-namespace kyxsan.Factory.Process;
+namespace Launcher.Factory.Process;
 
 internal sealed partial class FullTrustProcess : IProcess
 {
@@ -24,15 +24,15 @@ internal sealed partial class FullTrustProcess : IProcess
         client.Create(startInfo);
     }
 
-    public int Id { get => process?.Id ?? throw kyxsanException.InvalidOperation("Process not created"); }
+    public int Id { get => process?.Id ?? throw LauncherException.InvalidOperation("Process not created"); }
 
-    public nint Handle { get => process?.Handle ?? throw kyxsanException.InvalidOperation("Process not created"); }
+    public nint Handle { get => process?.Handle ?? throw LauncherException.InvalidOperation("Process not created"); }
 
-    public HWND MainWindowHandle { get => process?.MainWindowHandle ?? throw kyxsanException.InvalidOperation("Process not created"); }
+    public HWND MainWindowHandle { get => process?.MainWindowHandle ?? throw LauncherException.InvalidOperation("Process not created"); }
 
-    public bool HasExited { get => process?.HasExited ?? throw kyxsanException.InvalidOperation("Process not created"); }
+    public bool HasExited { get => process?.HasExited ?? throw LauncherException.InvalidOperation("Process not created"); }
 
-    public int ExitCode { get => process?.ExitCode ?? throw kyxsanException.InvalidOperation("Process not created"); }
+    public int ExitCode { get => process?.ExitCode ?? throw LauncherException.InvalidOperation("Process not created"); }
 
     public void Dispose()
     {
@@ -44,7 +44,7 @@ internal sealed partial class FullTrustProcess : IProcess
     {
         if (process is null)
         {
-            throw kyxsanException.InvalidOperation("Process not created");
+            throw LauncherException.InvalidOperation("Process not created");
         }
 
         process.Kill();
@@ -65,7 +65,7 @@ internal sealed partial class FullTrustProcess : IProcess
     {
         if (process is null)
         {
-            throw kyxsanException.InvalidOperation("Process not created");
+            throw LauncherException.InvalidOperation("Process not created");
         }
 
         process.WaitForExit();

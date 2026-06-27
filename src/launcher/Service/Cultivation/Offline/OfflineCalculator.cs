@@ -1,15 +1,15 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Model.Intrinsic;
-using kyxsan.Model.Metadata.Avatar;
-using kyxsan.Model.Metadata.Weapon;
-using kyxsan.Model.Primitive;
-using kyxsan.UI.Xaml.View.Dialog;
+using Launcher.Model.Intrinsic;
+using Launcher.Model.Metadata.Avatar;
+using Launcher.Model.Metadata.Weapon;
+using Launcher.Model.Primitive;
+using Launcher.UI.Xaml.View.Dialog;
 using System.Collections.Immutable;
 
-namespace kyxsan.Service.Cultivation.Offline;
+namespace Launcher.Service.Cultivation.Offline;
 
 internal static class OfflineCalculator
 {

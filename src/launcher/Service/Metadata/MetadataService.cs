@@ -1,20 +1,20 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.Extensions.Caching.Memory;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Service.BackgroundActivity;
+using Launcher.Core.ExceptionService;
+using Launcher.Service.BackgroundActivity;
 using System.Collections.Immutable;
 using System.IO;
 using System.Runtime.CompilerServices;
 
-namespace kyxsan.Service.Metadata;
+namespace Launcher.Service.Metadata;
 
 [Service(ServiceLifetime.Singleton, typeof(IMetadataService))]
 internal sealed partial class MetadataService : IMetadataService
@@ -81,7 +81,7 @@ internal sealed partial class MetadataService : IMetadataService
             if (bundledStream is null)
             {
                 FileNotFoundException exception = new(SH.ServiceMetadataFileNotFound, strategy.Name);
-                throw kyxsanException.Throw(SH.ServiceMetadataFileNotFound, exception);
+                throw LauncherException.Throw(SH.ServiceMetadataFileNotFound, exception);
             }
 
             try
@@ -110,7 +110,7 @@ internal sealed partial class MetadataService : IMetadataService
         if (bundledResources.Length <= 0)
         {
             DirectoryNotFoundException exception = new(SH.ServiceMetadataFileNotFound);
-            throw kyxsanException.Throw(SH.ServiceMetadataFileNotFound, exception);
+            throw LauncherException.Throw(SH.ServiceMetadataFileNotFound, exception);
         }
 
         ImmutableArray<T>.Builder results = ImmutableArray.CreateBuilder<T>(bundledResources.Length);

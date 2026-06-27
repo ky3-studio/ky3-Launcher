@@ -1,22 +1,22 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Model.Metadata.Avatar;
-using kyxsan.Model.Metadata.Food;
-using kyxsan.Model.Metadata.Quest;
-using kyxsan.Model.Metadata.Weapon;
+using Launcher.Model.Metadata.Avatar;
+using Launcher.Model.Metadata.Food;
+using Launcher.Model.Metadata.Quest;
+using Launcher.Model.Metadata.Weapon;
 using System.Collections.Frozen;
 using System.Collections.Immutable;
 using System.Collections.ObjectModel;
 
-namespace kyxsan.UI.Xaml.Control.AutoSuggestBox;
+namespace Launcher.UI.Xaml.Control.AutoSuggestBox;
 
 internal sealed partial class SearchData : ObservableObject
 {

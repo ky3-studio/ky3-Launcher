@@ -1,18 +1,18 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.ExceptionService;
-using kyxsan.Web.Request.Builder.Abstraction;
+using Launcher.Core.ExceptionService;
+using Launcher.Web.Request.Builder.Abstraction;
 using System.Net.Http;
 using System.Text;
 
-namespace kyxsan.Web.Request.Builder;
+namespace Launcher.Web.Request.Builder;
 
 internal abstract class HttpContentSerializer : IHttpContentSerializer, IHttpContentDeserializer
 {
@@ -70,7 +70,7 @@ internal abstract class HttpContentSerializer : IHttpContentSerializer, IHttpCon
                 The content to be serialized does not match the specified type. 
                 Expected an instance of the class "{contentType.FullName}", but got "{actualContentType.FullName}".
                 """;
-            kyxsanException.Argument(message, nameof(contentType));
+            LauncherException.Argument(message, nameof(contentType));
         }
 
         // The contentType is optional. In that case, try to get the type on our own.

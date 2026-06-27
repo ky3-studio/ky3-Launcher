@@ -1,9 +1,9 @@
-using kyxsan.Core.Database.Abstraction;
-using kyxsan.UI.Xaml.Data;
+﻿using Launcher.Core.Database.Abstraction;
+using Launcher.UI.Xaml.Data;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace kyxsan.Model.Entity;
+namespace Launcher.Model.Entity;
 
 [Table("gacha_archives")]
 internal sealed partial class GachaArchive : ISelectable, IPropertyValuesProvider

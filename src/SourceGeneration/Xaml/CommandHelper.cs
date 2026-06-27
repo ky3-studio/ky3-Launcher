@@ -1,14 +1,14 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using kyxsan.SourceGeneration.Model;
+using Launcher.SourceGeneration.Model;
 using System.Collections.Immutable;
 
-namespace kyxsan.SourceGeneration.Xaml;
+namespace Launcher.SourceGeneration.Xaml;
 
 internal static class CommandHelper
 {

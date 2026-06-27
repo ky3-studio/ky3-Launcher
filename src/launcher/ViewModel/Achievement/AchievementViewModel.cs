@@ -1,37 +1,36 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.WinUI.Collections;
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core;
-using kyxsan.Core.Database;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.IO;
-using kyxsan.Core.Logging;
-using kyxsan.Factory.Picker;
-using kyxsan.Model.InterChange.Achievement;
-using kyxsan.Service.Achievement;
-using kyxsan.Service.Metadata;
-using kyxsan.Service.Metadata.ContextAbstraction;
-using kyxsan.Service.Navigation;
-using kyxsan.Service.Notification;
-using kyxsan.UI.Xaml.Data;
-using kyxsan.UI.Xaml.View.Dialog;
+using Launcher.Core;
+using Launcher.Core.Database;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.IO;
+using Launcher.Core.Logging;
+using Launcher.Factory.Picker;
+using Launcher.Model.InterChange.Achievement;
+using Launcher.Service.Achievement;
+using Launcher.Service.Metadata;
+using Launcher.Service.Metadata.ContextAbstraction;
+using Launcher.Service.Navigation;
+using Launcher.Service.Notification;
+using Launcher.UI.Xaml.Data;
+using Launcher.UI.Xaml.View.Dialog;
 using System.Collections.Immutable;
 using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
-using Windows.System;
-using EntityArchive = kyxsan.Model.Entity.AchievementArchive;
-using MetadataAchievementGoal = kyxsan.Model.Metadata.Achievement.AchievementGoal;
+using EntityArchive = Launcher.Model.Entity.AchievementArchive;
+using MetadataAchievementGoal = Launcher.Model.Metadata.Achievement.AchievementGoal;
 
-namespace kyxsan.ViewModel.Achievement;
+namespace Launcher.ViewModel.Achievement;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
@@ -187,7 +186,7 @@ internal sealed partial class AchievementViewModel : Abstraction.ViewModel, INav
             ArchiveAddResultKind.Added => InfoBarMessage.Success(SH.FormatViewModelAchievementArchiveAdded(name)),
             ArchiveAddResultKind.ArchiveNameInvalid => InfoBarMessage.Warning(SH.ViewModelAchievementArchiveInvalidName),
             ArchiveAddResultKind.ArchiveAlreadyExists => InfoBarMessage.Warning(SH.FormatViewModelAchievementArchiveAlreadyExists(name)),
-            _ => throw kyxsanException.NotSupported(),
+            _ => throw LauncherException.NotSupported(),
         };
 
         scopeContext.Messenger.Send(message);
@@ -263,7 +262,7 @@ internal sealed partial class AchievementViewModel : Abstraction.ViewModel, INav
     {
         SentrySdk.AddBreadcrumb(BreadcrumbFactory2.CreateUI("Import UIAF", "AchievementViewModel.Command", [("source", "Embedded Yae")]));
 
-        if (!kyxsanRuntime.IsProcessElevated)
+        if (!LauncherRuntime.IsProcessElevated)
         {
             await scopeContext.ContentDialogFactory.CreateForConfirmAsync(SH.ViewModelYaeProcessNotElevatedTitle, SH.ViewModelYaeProcessNotElevatedDescription).ConfigureAwait(false);
             return;
@@ -333,7 +332,7 @@ internal sealed partial class AchievementViewModel : Abstraction.ViewModel, INav
             view = scopeContext.AchievementService.GetAchievementViewCollection(archive, context);
             return true;
         }
-        catch (kyxsanException ex)
+        catch (LauncherException ex)
         {
             scopeContext.Messenger.Send(InfoBarMessage.Error(ex));
             view = default;
@@ -474,7 +473,7 @@ internal sealed partial class AchievementViewModel : Abstraction.ViewModel, INav
 
         string keyword = Uri.EscapeDataString(SH.FormatViewModelAchievementSearchQuery(achievement.Inner.Title));
         Uri targetUri = $"https://www.miyoushe.com/ys/search?keyword={keyword}".ToUri();
-        await Launcher.LaunchUriAsync(targetUri);
+        await Windows.System.Launcher.LaunchUriAsync(targetUri);
     }
 
     [Command("SearchInHoYoLABCommand")]
@@ -489,6 +488,6 @@ internal sealed partial class AchievementViewModel : Abstraction.ViewModel, INav
 
         string keyword = Uri.EscapeDataString(SH.FormatViewModelAchievementSearchQuery(achievement.Inner.Title));
         Uri targetUri = $"https://www.hoyolab.com/search?keyword={keyword}".ToUri();
-        await Launcher.LaunchUriAsync(targetUri);
+        await Windows.System.Launcher.LaunchUriAsync(targetUri);
     }
 }

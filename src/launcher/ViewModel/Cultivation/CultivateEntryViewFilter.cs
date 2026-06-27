@@ -1,19 +1,19 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Model.Entity.Primitive;
-using kyxsan.Model.Intrinsic;
-using kyxsan.Model.Intrinsic.Frozen;
-using kyxsan.Model.Metadata.Avatar;
-using kyxsan.Model.Metadata.Weapon;
-using kyxsan.Model.Primitive;
-using kyxsan.Service.Cultivation;
-using kyxsan.UI.Xaml.Control.AutoSuggestBox;
+using Launcher.Model.Entity.Primitive;
+using Launcher.Model.Intrinsic;
+using Launcher.Model.Intrinsic.Frozen;
+using Launcher.Model.Metadata.Avatar;
+using Launcher.Model.Metadata.Weapon;
+using Launcher.Model.Primitive;
+using Launcher.Service.Cultivation;
+using Launcher.UI.Xaml.Control.AutoSuggestBox;
 using System.Collections.ObjectModel;
 using System.Globalization;
 
-namespace kyxsan.ViewModel.Cultivation;
+namespace Launcher.ViewModel.Cultivation;
 
 internal static class CultivateEntryViewFilter
 {

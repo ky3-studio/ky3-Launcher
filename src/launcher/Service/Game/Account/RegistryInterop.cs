@@ -1,23 +1,23 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.Win32;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.Text.Json;
-using kyxsan.Model.Entity;
-using kyxsan.Model.Entity.Primitive;
-using kyxsan.Web.Response;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.Text.Json;
+using Launcher.Model.Entity;
+using Launcher.Model.Entity.Primitive;
+using Launcher.Web.Response;
 using System.Collections.Immutable;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace kyxsan.Service.Game.Account;
+namespace Launcher.Service.Game.Account;
 
 internal static class RegistryInterop
 {
@@ -93,7 +93,7 @@ internal static class RegistryInterop
         {
             SchemeType.ChineseOfficial => (ChineseKeyName, SdkChineseValueName),
             SchemeType.Oversea => (OverseaKeyName, SdkOverseaValueName),
-            _ => throw kyxsanException.NotSupported($"Unsupported account SchemeType: {scheme}"),
+            _ => throw LauncherException.NotSupported($"Unsupported account SchemeType: {scheme}"),
         };
     }
 }

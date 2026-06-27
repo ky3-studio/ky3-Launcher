@@ -1,10 +1,10 @@
-using Microsoft.UI.Xaml.Controls;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Service.Notification;
-using kyxsan.Service.ThirdPartyTool;
-using kyxsan.Web.ThirdPartyTool;
+﻿using Microsoft.UI.Xaml.Controls;
+using Launcher.Factory.ContentDialog;
+using Launcher.Service.Notification;
+using Launcher.Service.ThirdPartyTool;
+using Launcher.Web.ThirdPartyTool;
 
-namespace kyxsan.UI.Xaml.View.Dialog;
+namespace Launcher.UI.Xaml.View.Dialog;
 
 [DependencyProperty<ToolInfo>("Tool")]
 [DependencyProperty<bool>("IsDownloading", DefaultValue = false)]

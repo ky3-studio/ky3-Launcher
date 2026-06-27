@@ -1,31 +1,31 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 // Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core.DependencyInjection.Abstraction;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Service;
-using kyxsan.Service.Notification;
-using kyxsan.Service.SignIn;
-using kyxsan.Service.User;
-using kyxsan.UI.Xaml.Data;
-using kyxsan.ViewModel.User;
-using kyxsan.Web.Hoyolab.Takumi.Event.BbsSignReward;
-using kyxsan.Web.Response;
-using kyxsan.Core.Setting;
+using Launcher.Core.DependencyInjection.Abstraction;
+using Launcher.Factory.ContentDialog;
+using Launcher.Service;
+using Launcher.Service.Notification;
+using Launcher.Service.SignIn;
+using Launcher.Service.User;
+using Launcher.UI.Xaml.Data;
+using Launcher.ViewModel.User;
+using Launcher.Web.Hoyolab.Takumi.Event.BbsSignReward;
+using Launcher.Web.Response;
+using Launcher.Core.Setting;
 using System.Collections.Immutable;
-using kyxsan.Service.AutoSignIn;
+using Launcher.Service.AutoSignIn;
 
-namespace kyxsan.ViewModel.Sign;
+namespace Launcher.ViewModel.Sign;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Transient)]

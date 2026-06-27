@@ -1,35 +1,35 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core.Database;
-using kyxsan.Core.DataTransfer;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.IO;
-using kyxsan.Core.Logging;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Factory.Picker;
-using kyxsan.Factory.Progress;
-using kyxsan.Model.Entity;
-using kyxsan.Service.GachaLog;
-using kyxsan.Service.GachaLog.QueryProvider;
-using kyxsan.Service.Metadata;
-using kyxsan.Service.Metadata.ContextAbstraction;
-using kyxsan.Service.Notification;
-using kyxsan.UI.Xaml.Data;
-using kyxsan.UI.Xaml.View.Dialog;
-using kyxsan.Win32.Foundation;
+using Launcher.Core.Database;
+using Launcher.Core.DataTransfer;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.IO;
+using Launcher.Core.Logging;
+using Launcher.Factory.ContentDialog;
+using Launcher.Factory.Picker;
+using Launcher.Factory.Progress;
+using Launcher.Model.Entity;
+using Launcher.Service.GachaLog;
+using Launcher.Service.GachaLog.QueryProvider;
+using Launcher.Service.Metadata;
+using Launcher.Service.Metadata.ContextAbstraction;
+using Launcher.Service.Notification;
+using Launcher.UI.Xaml.Data;
+using Launcher.UI.Xaml.View.Dialog;
+using Launcher.Win32.Foundation;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace kyxsan.ViewModel.GachaLog;
+namespace Launcher.ViewModel.GachaLog;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
@@ -256,7 +256,7 @@ internal sealed partial class GachaLogViewModel : Abstraction.ViewModel
                         await UpdateStatisticsAsync(Archives?.CurrentItem).ConfigureAwait(false);
                     }
                 }
-                catch (kyxsanException ex)
+                catch (LauncherException ex)
                 {
                     authkeyValid = false;
                     messenger.Send(InfoBarMessage.Error(ex));

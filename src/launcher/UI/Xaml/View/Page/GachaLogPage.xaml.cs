@@ -1,7 +1,7 @@
-using kyxsan.UI.Xaml.Control;
-using kyxsan.ViewModel.GachaLog;
+﻿using Launcher.UI.Xaml.Control;
+using Launcher.ViewModel.GachaLog;
 
-namespace kyxsan.UI.Xaml.View.Page;
+namespace Launcher.UI.Xaml.View.Page;
 
 internal sealed partial class GachaLogPage : ScopedPage
 {

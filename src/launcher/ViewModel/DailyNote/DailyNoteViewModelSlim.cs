@@ -1,23 +1,23 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Model.Entity;
-using kyxsan.Service.DailyNote;
-using kyxsan.Service.Metadata;
-using kyxsan.Service.Metadata.ContextAbstraction;
-using kyxsan.Service.Notification;
-using kyxsan.UI.Xaml.View.Page;
+using Launcher.Core.ExceptionService;
+using Launcher.Model.Entity;
+using Launcher.Service.DailyNote;
+using Launcher.Service.Metadata;
+using Launcher.Service.Metadata.ContextAbstraction;
+using Launcher.Service.Notification;
+using Launcher.UI.Xaml.View.Page;
 using System.Collections.ObjectModel;
 
-namespace kyxsan.ViewModel.DailyNote;
+namespace Launcher.ViewModel.DailyNote;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Transient)]
@@ -61,7 +61,7 @@ internal sealed partial class DailyNoteViewModelSlim : Abstraction.ViewModelSlim
             DailyNoteEntries = [.. entries];
             IsInitialized = true;
         }
-        catch (kyxsanException ex)
+        catch (LauncherException ex)
         {
             messenger.Send(InfoBarMessage.Error(ex));
         }

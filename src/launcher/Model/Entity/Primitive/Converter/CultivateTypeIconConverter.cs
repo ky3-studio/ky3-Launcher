@@ -1,18 +1,18 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core;
-using kyxsan.Core.ExceptionService;
-using kyxsan.UI.Xaml.Data.Converter;
+using Launcher.Core;
+using Launcher.Core.ExceptionService;
+using Launcher.UI.Xaml.Data.Converter;
 using System.Collections.Frozen;
 
-namespace kyxsan.Model.Entity.Primitive.Converter;
+namespace Launcher.Model.Entity.Primitive.Converter;
 
 internal sealed partial class CultivateTypeIconConverter : ValueConverter<CultivateType, Uri>
 {
@@ -35,7 +35,7 @@ internal sealed partial class CultivateTypeIconConverter : ValueConverter<Cultiv
             CultivateType.AvatarAndSkill => "UI_BtnIcon_PlayerGirl.png",
             CultivateType.Weapon => "UI_BagTabIcon_Weapon.png",
             CultivateType.Furniture => "UI_BtnIcon_Homeworld.png",
-            _ => throw kyxsanException.NotSupported(),
+            _ => throw LauncherException.NotSupported(),
         };
 
         return $"ms-appx:///Resource/Icon/{filename}".ToUri();

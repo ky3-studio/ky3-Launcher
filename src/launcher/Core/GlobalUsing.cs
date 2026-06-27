@@ -1,10 +1,10 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 global using CommunityToolkit.Mvvm.DependencyInjection;
@@ -16,13 +16,13 @@ global using Microsoft.Extensions.Logging;
 
 global using Sentry;
 
-global using kyxsanRoot = global::kyxsan;
-global using kyxsan.Core.Annotation;
-global using kyxsan.Core.DependencyInjection;
-global using kyxsan.Core.DependencyInjection.Annotation;
-global using kyxsan.Core.Threading;
-global using kyxsan.Extension;
-global using kyxsan.Resource.Localization;
+global using LauncherRoot = global::Launcher;
+global using Launcher.Core.Annotation;
+global using Launcher.Core.DependencyInjection;
+global using Launcher.Core.DependencyInjection.Annotation;
+global using Launcher.Core.Threading;
+global using Launcher.Extension;
+global using Launcher.Resource.Localization;
 
 global using System;
 global using System.Collections.Generic;
@@ -35,8 +35,8 @@ global using System.Threading;
 global using System.Threading.Tasks;
 global using System.Windows.Input;
 
-global using FromKeyed = kyxsan.Core.DependencyInjection.Annotation.FromKeyedServicesAttribute;
-global using Void = kyxsan.Core.Void;
+global using FromKeyed = Launcher.Core.DependencyInjection.Annotation.FromKeyedServicesAttribute;
+global using Void = Launcher.Core.Void;
 
 using System.Runtime.CompilerServices;
 

@@ -1,22 +1,22 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 // Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml;
-using kyxsan.Core;
-using kyxsan.Core.Logging;
-using kyxsan.Core.Security.Principal;
-using kyxsan.Core.Setting;
-using kyxsan.Core.Shell;
-using kyxsan.Service.Game.Launching;
-using kyxsan.Win32;
+using Launcher.Core;
+using Launcher.Core.Logging;
+using Launcher.Core.Security.Principal;
+using Launcher.Core.Setting;
+using Launcher.Core.Shell;
+using Launcher.Service.Game.Launching;
+using Launcher.Win32;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Security.AccessControl;
@@ -24,12 +24,12 @@ using WinRT;
 
 [assembly: DisableRuntimeMarshalling]
 
-namespace kyxsan;
+namespace Launcher;
 
 [SuppressMessage("", "SH001")]
 public static partial class Bootstrap
 {
-    private const string LockName = "KYXSAN_BOOTSTRAP_LOCK";
+    private const string LockName = "LAUNCHER_BOOTSTRAP_LOCK";
     private static readonly ApplicationInitializationCallback AppInitializationCallback = InitializeApp;
     private static Mutex? mutex;
 
@@ -53,7 +53,7 @@ public static partial class Bootstrap
 
         try
         {
-            if (!kyxsanRuntime.IsProcessElevated)
+            if (!LauncherRuntime.IsProcessElevated)
             {
                 bool runElevated = false;
                 try
@@ -143,13 +143,13 @@ public static partial class Bootstrap
 
     private static bool OSPlatformSupported()
     {
-        if (!kyxsanNative.Instance.IsCurrentWindowsVersionSupported())
+        if (!LauncherNative.Instance.IsCurrentWindowsVersionSupported())
         {
             const string Message = """
                 ky3 Launcher 无法在版本低于 10.0.19045.5371 的 Windows 上运行，请更新系统。
                 ky3 Launcher cannot run on Windows versions earlier than 10.0.19045.5371. Please update your system.
                 """;
-            kyxsanNative.Instance.ShowErrorMessage("Warning | 警告", Message);
+            LauncherNative.Instance.ShowErrorMessage("Warning | 警告", Message);
             return false;
         }
 

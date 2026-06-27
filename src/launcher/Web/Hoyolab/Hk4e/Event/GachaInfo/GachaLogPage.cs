@@ -1,6 +1,6 @@
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 
-namespace kyxsan.Web.Hoyolab.Hk4e.Event.GachaInfo;
+namespace Launcher.Web.Hoyolab.Hk4e.Event.GachaInfo;
 
 internal sealed class GachaLogPage
 {

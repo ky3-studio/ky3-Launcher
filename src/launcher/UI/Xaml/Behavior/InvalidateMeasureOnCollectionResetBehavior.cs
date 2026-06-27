@@ -1,10 +1,10 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.WinUI.Behaviors;
@@ -13,7 +13,7 @@ using Microsoft.UI.Xaml.Controls;
 using Windows.Foundation.Collections;
 using WinRT;
 
-namespace kyxsan.UI.Xaml.Behavior;
+namespace Launcher.UI.Xaml.Behavior;
 
 [DependencyProperty<IObservableVector<object>>("ItemsSource", PropertyChangedCallbackName = nameof(OnItemsSourceChanged))]
 internal sealed partial class InvalidateMeasureOnCollectionResetBehavior : BehaviorBase<ItemsRepeater>

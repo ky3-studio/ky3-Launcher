@@ -1,29 +1,28 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core;
-using kyxsan.Core.DataTransfer;
-using kyxsan.Core.IO.Http.Loopback;
-using kyxsan.Core.IO.Http.Proxy;
-using kyxsan.Core.Logging;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Service;
-using kyxsan.Service.Notification;
-using kyxsan.Web.kyxsan;
-using kyxsan.Web.kyxsan.Algolia;
-using kyxsan.Web.Response;
+using Launcher.Core;
+using Launcher.Core.DataTransfer;
+using Launcher.Core.IO.Http.Loopback;
+using Launcher.Core.IO.Http.Proxy;
+using Launcher.Core.Logging;
+using Launcher.Factory.ContentDialog;
+using Launcher.Service;
+using Launcher.Service.Notification;
+using Launcher.Web.Launcher;
+using Launcher.Web.Launcher.Algolia;
+using Launcher.Web.Response;
 using System.Runtime.InteropServices;
-using Windows.System;
 
-namespace kyxsan.ViewModel.Feedback;
+namespace Launcher.ViewModel.Feedback;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
@@ -59,8 +58,8 @@ internal sealed partial class FeedbackViewModel : Abstraction.ViewModel
         IPInformation? info;
         using (IServiceScope scope = serviceProvider.CreateScope())
         {
-            kyxsanInfrastructureClient kyxsanInfrastructureClient = scope.ServiceProvider.GetRequiredService<kyxsanInfrastructureClient>();
-            Response<IPInformation> resp = await kyxsanInfrastructureClient.GetIPInformationAsync(token).ConfigureAwait(false);
+            LauncherInfrastructureClient LauncherInfrastructureClient = scope.ServiceProvider.GetRequiredService<LauncherInfrastructureClient>();
+            Response<IPInformation> resp = await LauncherInfrastructureClient.GetIPInformationAsync(token).ConfigureAwait(false);
             ResponseValidator.TryValidate(resp, messenger, out info);
         }
 
@@ -81,7 +80,7 @@ internal sealed partial class FeedbackViewModel : Abstraction.ViewModel
             return;
         }
 
-        await Launcher.LaunchUriAsync(uri.ToUri());
+        await Windows.System.Launcher.LaunchUriAsync(uri.ToUri());
     }
 
     [Command("SearchDocumentCommand")]
@@ -102,8 +101,8 @@ internal sealed partial class FeedbackViewModel : Abstraction.ViewModel
         AlgoliaResponse? response;
         using (IServiceScope scope = serviceProvider.CreateScope())
         {
-            kyxsanDocumentationClient kyxsanDocumentationClient = scope.ServiceProvider.GetRequiredService<kyxsanDocumentationClient>();
-            response = await kyxsanDocumentationClient.QueryAsync(search, language).ConfigureAwait(false);
+            LauncherDocumentationClient LauncherDocumentationClient = scope.ServiceProvider.GetRequiredService<LauncherDocumentationClient>();
+            response = await LauncherDocumentationClient.QueryAsync(search, language).ConfigureAwait(false);
         }
 
         await taskContext.SwitchToMainThreadAsync();
@@ -126,7 +125,7 @@ internal sealed partial class FeedbackViewModel : Abstraction.ViewModel
 
         try
         {
-            await clipboardProvider.SetTextAsync(kyxsanRuntime.DeviceId).ConfigureAwait(false);
+            await clipboardProvider.SetTextAsync(LauncherRuntime.DeviceId).ConfigureAwait(false);
             messenger.Send(InfoBarMessage.Success(SH.ViewModelSettingCopyDeviceIdSuccess));
         }
         catch (COMException ex)

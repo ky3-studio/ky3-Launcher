@@ -1,14 +1,14 @@
-using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Core.Logging;
-using kyxsan.Model.Metadata.Food;
-using kyxsan.Service.Metadata;
-using kyxsan.Service.Metadata.ContextAbstraction;
-using kyxsan.UI.Xaml.Control.AutoSuggestBox;
-using kyxsan.UI.Xaml.Data;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Launcher.Core.Logging;
+using Launcher.Model.Metadata.Food;
+using Launcher.Service.Metadata;
+using Launcher.Service.Metadata.ContextAbstraction;
+using Launcher.UI.Xaml.Control.AutoSuggestBox;
+using Launcher.UI.Xaml.Data;
 using System.Collections.Immutable;
 using System.Collections.ObjectModel;
 
-namespace kyxsan.ViewModel.Wiki;
+namespace Launcher.ViewModel.Wiki;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]

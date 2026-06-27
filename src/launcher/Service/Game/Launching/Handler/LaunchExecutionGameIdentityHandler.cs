@@ -1,24 +1,24 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.DependencyInjection.Abstraction;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Model.Entity.Primitive;
-using kyxsan.Service.Game.Account;
-using kyxsan.Service.Game.Launching.Context;
-using kyxsan.Service.Game.Scheme;
-using kyxsan.Service.User;
-using kyxsan.Web.Hoyolab.Passport;
-using kyxsan.Web.Hoyolab.Takumi.Binding;
-using kyxsan.Web.Response;
+using Launcher.Core.DependencyInjection.Abstraction;
+using Launcher.Core.ExceptionService;
+using Launcher.Model.Entity.Primitive;
+using Launcher.Service.Game.Account;
+using Launcher.Service.Game.Launching.Context;
+using Launcher.Service.Game.Scheme;
+using Launcher.Service.User;
+using Launcher.Web.Hoyolab.Passport;
+using Launcher.Web.Hoyolab.Takumi.Binding;
+using Launcher.Web.Response;
 
-namespace kyxsan.Service.Game.Launching.Handler;
+namespace Launcher.Service.Game.Launching.Handler;
 
 internal sealed class LaunchExecutionGameIdentityHandler : AbstractLaunchExecutionHandler
 {
@@ -30,7 +30,7 @@ internal sealed class LaunchExecutionGameIdentityHandler : AbstractLaunchExecuti
         }
         else if (context.Identity.GameAccount is { } account && !RegistryInterop.Set(account))
         {
-            kyxsanException.Throw(SH.ViewModelLaunchGameSwitchGameAccountFail);
+            LauncherException.Throw(SH.ViewModelLaunchGameSwitchGameAccountFail);
         }
     }
 
@@ -55,7 +55,7 @@ internal sealed class LaunchExecutionGameIdentityHandler : AbstractLaunchExecuti
 
         if (userAndUid.IsOversea ^ context.TargetScheme.IsOversea)
         {
-            kyxsanException.NotSupported(SH.ViewModelLaunchGameAccountAndServerNotMatch);
+            LauncherException.NotSupported(SH.ViewModelLaunchGameAccountAndServerNotMatch);
         }
 
         using (IServiceScope scope = context.ServiceProvider.CreateScope())
@@ -80,6 +80,6 @@ internal sealed class LaunchExecutionGameIdentityHandler : AbstractLaunchExecuti
             }
         }
 
-        kyxsanException.NotSupported(SH.ViewModelLaunchGameCreateAuthTicketFailed);
+        LauncherException.NotSupported(SH.ViewModelLaunchGameCreateAuthTicketFailed);
     }
 }

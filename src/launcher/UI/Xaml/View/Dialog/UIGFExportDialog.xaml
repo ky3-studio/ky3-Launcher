@@ -1,12 +1,12 @@
-<ContentDialog
-    x:Class="kyxsan.UI.Xaml.View.Dialog.UIGFExportDialog"
+﻿<ContentDialog
+    x:Class="Launcher.UI.Xaml.View.Dialog.UIGFExportDialog"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:cwc="using:CommunityToolkit.WinUI.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:shuxm="using:kyxsan.UI.Xaml.Markup"
-    xmlns:shuxvd="using:kyxsan.UI.Xaml.View.Dialog"
+    xmlns:shuxm="using:Launcher.UI.Xaml.Markup"
+    xmlns:shuxvd="using:Launcher.UI.Xaml.View.Dialog"
     Title="{shuxm:ResourceString Name=ViewDialogExportUIGFTitle}"
     CloseButtonText="{shuxm:ResourceString Name=ContentDialogCancelCloseButtonText}"
     DefaultButton="Primary"

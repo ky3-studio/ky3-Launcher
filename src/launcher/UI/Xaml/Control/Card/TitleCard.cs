@@ -1,10 +1,10 @@
-// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
+﻿// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Markup;
 
-namespace kyxsan.UI.Xaml.Control.Card;
+namespace Launcher.UI.Xaml.Control.Card;
 
 [ContentProperty(Name = nameof(Content))]
 internal sealed partial class TitleCard : Microsoft.UI.Xaml.Controls.Control

@@ -1,10 +1,10 @@
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 using System.IO;
-using kyxsan.Model.Metadata.Weapon;
-using kyxsan.Model.Primitive;
-using kyxsan.Service.Metadata;
+using Launcher.Model.Metadata.Weapon;
+using Launcher.Model.Primitive;
+using Launcher.Service.Metadata;
 
-namespace kyxsan.Service.Inventory;
+namespace Launcher.Service.Inventory;
 
 [Service(ServiceLifetime.Scoped)]
 internal sealed class InventoryPacketService

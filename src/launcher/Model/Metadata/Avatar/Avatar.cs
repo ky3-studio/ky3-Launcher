@@ -1,25 +1,25 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Model.Intrinsic;
-using kyxsan.Model.Metadata.Abstraction;
-using kyxsan.Model.Metadata.Converter;
-using kyxsan.Model.Metadata.Item;
-using kyxsan.Model.Primitive;
-using kyxsan.UI.Xaml.Data;
-using kyxsan.ViewModel.Complex;
-using kyxsan.ViewModel.GachaLog;
-using kyxsan.ViewModel.Wiki;
+using Launcher.Model.Intrinsic;
+using Launcher.Model.Metadata.Abstraction;
+using Launcher.Model.Metadata.Converter;
+using Launcher.Model.Metadata.Item;
+using Launcher.Model.Primitive;
+using Launcher.UI.Xaml.Data;
+using Launcher.ViewModel.Complex;
+using Launcher.ViewModel.GachaLog;
+using Launcher.ViewModel.Wiki;
 using System.Collections.Immutable;
 using System.Diagnostics;
 
-namespace kyxsan.Model.Metadata.Avatar;
+namespace Launcher.Model.Metadata.Avatar;
 
 [DebuggerDisplay("Name={Name},Id={Id}")]
 internal partial class Avatar : IDefaultIdentity<AvatarId>,

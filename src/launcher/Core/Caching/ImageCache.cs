@@ -1,25 +1,25 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.IO;
-using kyxsan.Core.Logging;
-using kyxsan.Factory.Process;
-using kyxsan.Web.Endpoint.kyxsan;
-using kyxsan.Win32;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.IO;
+using Launcher.Core.Logging;
+using Launcher.Factory.Process;
+using Launcher.Web.Endpoint.Launcher;
+using Launcher.Win32;
 using System.Collections.Frozen;
 using System.Diagnostics;
 using System.IO;
-using ThemeFile = (Microsoft.UI.Xaml.ElementTheme, kyxsan.Core.IO.ValueFile);
+using ThemeFile = (Microsoft.UI.Xaml.ElementTheme, Launcher.Core.IO.ValueFile);
 
-namespace kyxsan.Core.Caching;
+namespace Launcher.Core.Caching;
 
 [Service(ServiceLifetime.Singleton, typeof(IImageCache))]
 internal sealed partial class ImageCache : IImageCache
@@ -44,7 +44,7 @@ internal sealed partial class ImageCache : IImageCache
         {
             try
             {
-                string folder = kyxsanRuntime.GetLocalCacheImageCacheDirectory();
+                string folder = LauncherRuntime.GetLocalCacheImageCacheDirectory();
                 Directory.CreateDirectory(Path.Combine(folder, "Light"));
                 Directory.CreateDirectory(Path.Combine(folder, "Dark"));
                 return folder;
@@ -52,7 +52,7 @@ internal sealed partial class ImageCache : IImageCache
             catch (Exception ex)
             {
                 // 0x80070570 ERROR_FILE_CORRUPT
-                kyxsanNative.Instance.ShowErrorMessage(ex.Message, ExceptionFormat.Format(ex));
+                LauncherNative.Instance.ShowErrorMessage(ex.Message, ExceptionFormat.Format(ex));
                 ProcessFactory.KillCurrent();
                 return string.Empty;
             }

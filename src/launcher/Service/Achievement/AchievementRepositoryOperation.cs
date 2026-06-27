@@ -1,22 +1,22 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.EntityFrameworkCore;
-using kyxsan.Core.Database;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Model.Entity.Database;
-using kyxsan.Model.InterChange.Achievement;
-using kyxsan.Service.Abstraction;
+using Launcher.Core.Database;
+using Launcher.Core.ExceptionService;
+using Launcher.Model.Entity.Database;
+using Launcher.Model.InterChange.Achievement;
+using Launcher.Service.Abstraction;
 using System.Collections.Immutable;
-using EntityAchievement = kyxsan.Model.Entity.Achievement;
+using EntityAchievement = Launcher.Model.Entity.Achievement;
 
-namespace kyxsan.Service.Achievement;
+namespace Launcher.Service.Achievement;
 
 [Service(ServiceLifetime.Singleton)]
 internal sealed partial class AchievementRepositoryOperation
@@ -59,7 +59,7 @@ internal sealed partial class AchievementRepositoryOperation
                         case (not null, null):
                             continue; // Skipped
                         case (null, null):
-                            throw kyxsanException.InvalidOperation("Both entity and uiaf are null.");
+                            throw LauncherException.InvalidOperation("Both entity and uiaf are null.");
                         default:
                             switch (entity.Id.CompareTo(uiaf.Id))
                             {

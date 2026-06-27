@@ -1,17 +1,17 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Win32;
-using kyxsan.Win32.Foundation;
+using Launcher.Win32;
+using Launcher.Win32.Foundation;
 using System.Runtime.InteropServices;
 
-namespace kyxsan.UI.Windowing;
+namespace Launcher.UI.Windowing;
 
 [SuppressMessage("", "SYSLIB1054")]
 internal static unsafe class WindowUtilities
@@ -63,30 +63,30 @@ internal static unsafe class WindowUtilities
         Marshal.ThrowExceptionForHR(WindowUtilitiesSetWindowOwner(hWnd, hWndOwner));
     }
 
-    [DllImport(kyxsanNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
+    [DllImport(LauncherNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
     private static extern HRESULT WindowUtilitiesSwitchToWindow(HWND hWnd);
 
-    [DllImport(kyxsanNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
+    [DllImport(LauncherNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
     private static extern HRESULT WindowUtilitiesAddExtendedStyleLayered(HWND hWnd);
 
-    [DllImport(kyxsanNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
+    [DllImport(LauncherNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
     private static extern HRESULT WindowUtilitiesRemoveExtendedStyleLayered(HWND hWnd);
 
-    [DllImport(kyxsanNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
+    [DllImport(LauncherNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
     private static extern HRESULT WindowUtilitiesSetLayeredWindowTransparency(HWND hWnd, byte opacity);
 
-    [DllImport(kyxsanNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
+    [DllImport(LauncherNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
     private static extern HRESULT WindowUtilitiesAddExtendedStyleToolWindow(HWND hWnd);
 
-    [DllImport(kyxsanNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
+    [DllImport(LauncherNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
     private static extern HRESULT WindowUtilitiesRemoveStyleOverlappedWindow(HWND hWnd);
 
-    [DllImport(kyxsanNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
+    [DllImport(LauncherNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
     private static extern HRESULT WindowUtilitiesGetRasterizationScaleForWindow(HWND hWnd, float* scale);
 
-    [DllImport(kyxsanNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
+    [DllImport(LauncherNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
     private static extern HRESULT WindowUtilitiesSetWindowIsEnabled(HWND hWnd, BOOL isEnabled);
 
-    [DllImport(kyxsanNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
+    [DllImport(LauncherNativeMethods.DllName, CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
     private static extern HRESULT WindowUtilitiesSetWindowOwner(HWND hWnd, HWND hWndOwner);
 }

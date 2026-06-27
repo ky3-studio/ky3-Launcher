@@ -1,10 +1,10 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.WinUI.Animations;
@@ -12,20 +12,20 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Media.Animation;
 using Microsoft.UI.Xaml.Media.Imaging;
-using kyxsan.Core.Caching;
-using kyxsan.Core.DataTransfer;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.Logging;
-using kyxsan.UI.Content;
-using kyxsan.UI.Xaml.Control.Theme;
-using kyxsan.UI.Xaml.Media.Animation;
+using Launcher.Core.Caching;
+using Launcher.Core.DataTransfer;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.Logging;
+using Launcher.UI.Content;
+using Launcher.UI.Xaml.Control.Theme;
+using Launcher.UI.Xaml.Media.Animation;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using Windows.Graphics.Imaging;
 using Windows.Storage.Streams;
 
-namespace kyxsan.UI.Xaml.Control.Image;
+namespace Launcher.UI.Xaml.Control.Image;
 
 [SuppressMessage("", "CA1001")]
 [SuppressMessage("", "SH003")]
@@ -279,7 +279,7 @@ internal sealed partial class CachedImage : Microsoft.UI.Xaml.Controls.Control
 
         try
         {
-            kyxsanException.ThrowIf(string.IsNullOrEmpty(imageUri.Host), SH.ControlImageCachedImageInvalidResourceUri);
+            LauncherException.ThrowIf(string.IsNullOrEmpty(imageUri.Host), SH.ControlImageCachedImageInvalidResourceUri);
             ElementTheme theme = ShowAsMonoChrome ? ThemeHelper.ApplicationToElement(ThemeHelper.ElementToApplication(ActualTheme)) : ElementTheme.Default;
             string file = await imageCache.GetFileFromCacheAsync(imageUri, theme).ConfigureAwait(true);
             token.ThrowIfCancellationRequested();

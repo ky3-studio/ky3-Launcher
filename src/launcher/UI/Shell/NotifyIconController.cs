@@ -1,24 +1,24 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 // Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml;
-using kyxsan.Core;
-using kyxsan.Core.LifeCycle;
-using kyxsan.Core.Setting;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.UI.Windowing;
-using kyxsan.UI.Xaml.View.Window;
-using kyxsan.ViewModel.Guide;
-using kyxsan.Win32;
-using kyxsan.Win32.Foundation;
+using Launcher.Core;
+using Launcher.Core.LifeCycle;
+using Launcher.Core.Setting;
+using Launcher.Factory.ContentDialog;
+using Launcher.UI.Windowing;
+using Launcher.UI.Xaml.View.Window;
+using Launcher.ViewModel.Guide;
+using Launcher.Win32;
+using Launcher.Win32.Foundation;
 using System.Diagnostics;
 using System.IO;
 using System.Runtime.CompilerServices;
@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace kyxsan.UI.Shell;
+namespace Launcher.UI.Shell;
 
 [Service(ServiceLifetime.Singleton)]
 internal sealed partial class NotifyIconController : IDisposable
@@ -40,7 +40,7 @@ internal sealed partial class NotifyIconController : IDisposable
     private readonly LazySlim<NotifyIconContextMenu> lazyMenu;
     private readonly NotifyIconXamlHostWindow xamlHostWindow;
     private readonly IServiceProvider serviceProvider;
-    private readonly kyxsanNativeNotifyIcon native;
+    private readonly LauncherNativeNotifyIcon native;
     private GCHandle<NotifyIconController> handle;
 
     private bool disposed;
@@ -61,7 +61,7 @@ internal sealed partial class NotifyIconController : IDisposable
 
         string iconPath = InstalledLocation.GetAbsolutePath("Assets/Logo.ico");
         Guid id = MemoryMarshal.AsRef<Guid>(MD5.HashData(Encoding.UTF8.GetBytes(iconPath)).AsSpan());
-        native = kyxsanNative.Instance.MakeNotifyIcon(iconPath, in id);
+        native = LauncherNative.Instance.MakeNotifyIcon(iconPath, in id);
 
         xamlHostWindow = new(serviceProvider);
         xamlHostWindow.MoveAndResize(default);
@@ -96,7 +96,7 @@ internal sealed partial class NotifyIconController : IDisposable
 
     public unsafe void Create()
     {
-        native.Create(kyxsanNativeNotifyIconCallback.Create(&OnNotifyIconCallback), handle, "ky3 Launcher");
+        native.Create(LauncherNativeNotifyIconCallback.Create(&OnNotifyIconCallback), handle, "ky3 Launcher");
     }
 
     public bool IsPromoted()
@@ -119,7 +119,7 @@ internal sealed partial class NotifyIconController : IDisposable
     }
 
     [UnmanagedCallersOnly(CallConvs = [typeof(CallConvStdcall)])]
-    private static void OnNotifyIconCallback(kyxsanNativeNotifyIconCallbackKind kind, RECT icon, POINT point, GCHandle<NotifyIconController> data)
+    private static void OnNotifyIconCallback(LauncherNativeNotifyIconCallbackKind kind, RECT icon, POINT point, GCHandle<NotifyIconController> data)
     {
         if (data.Target is not { } controller)
         {
@@ -128,16 +128,16 @@ internal sealed partial class NotifyIconController : IDisposable
 
         switch (kind)
         {
-            case kyxsanNativeNotifyIconCallbackKind.TaskbarCreated:
+            case LauncherNativeNotifyIconCallbackKind.TaskbarCreated:
                 controller.OnRecreateNotifyIconRequested();
                 break;
-            case kyxsanNativeNotifyIconCallbackKind.ContextMenu:
+            case LauncherNativeNotifyIconCallbackKind.ContextMenu:
                 controller.OnContextMenuRequested(icon, point);
                 break;
-            case kyxsanNativeNotifyIconCallbackKind.LeftButtonDown:
+            case LauncherNativeNotifyIconCallbackKind.LeftButtonDown:
                 controller.OnWindowRequested();
                 break;
-            case kyxsanNativeNotifyIconCallbackKind.LeftButtonDoubleClick:
+            case LauncherNativeNotifyIconCallbackKind.LeftButtonDoubleClick:
                 controller.OnWindowRequested();
                 break;
         }
@@ -166,7 +166,7 @@ internal sealed partial class NotifyIconController : IDisposable
             return;
         }
 
-        // https://github.com/DGP-Studio/kyxsan/issues/2434
+        // https://github.com/DGP-Studio/Launcher/issues/2434
         // Now we disable the context menu when the dialog is showing.
         if (contentDialogFactory.IsDialogShowing)
         {

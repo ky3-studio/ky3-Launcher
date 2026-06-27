@@ -1,11 +1,11 @@
-// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
+﻿// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 
-namespace kyxsan.Core.ApplicationModel;
+namespace Launcher.Core.ApplicationModel;
 
 internal static class PackageIdentityAdapter
 {
@@ -82,7 +82,7 @@ internal static class PackageIdentityAdapter
             return Windows.ApplicationModel.Package.Current.Id.FamilyName;
         }
 
-        return "kyxsan.Unpackaged";
+        return "Launcher.Unpackaged";
     }
 
     private static string GetPublisherIdInternal()

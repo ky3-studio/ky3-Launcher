@@ -1,26 +1,26 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.Media;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core.Database;
-using kyxsan.Service.User;
-using kyxsan.UI.Content;
-using kyxsan.UI.Xaml.Control;
-using kyxsan.UI.Xaml.View.Card;
-using kyxsan.ViewModel.User;
-using BindingUser = kyxsan.ViewModel.User.User;
-using EntityUser = kyxsan.Model.Entity.User;
+using Launcher.Core.Database;
+using Launcher.Service.User;
+using Launcher.UI.Content;
+using Launcher.UI.Xaml.Control;
+using Launcher.UI.Xaml.View.Card;
+using Launcher.ViewModel.User;
+using BindingUser = Launcher.ViewModel.User.User;
+using EntityUser = Launcher.Model.Entity.User;
 
-namespace kyxsan.UI.Xaml.View.Page;
+namespace Launcher.UI.Xaml.View.Page;
 
 internal sealed partial class SignInPage : ScopedPage, IRecipient<UserAndUidChangedMessage>
 {

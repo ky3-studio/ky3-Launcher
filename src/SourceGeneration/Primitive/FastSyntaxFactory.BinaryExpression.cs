@@ -1,10 +1,10 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace kyxsan.SourceGeneration.Primitive;
+namespace Launcher.SourceGeneration.Primitive;
 
 internal static partial class FastSyntaxFactory
 {

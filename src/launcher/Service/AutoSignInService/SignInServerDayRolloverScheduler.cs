@@ -1,14 +1,14 @@
-// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
+﻿// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
-using kyxsan.Core.Database;
-using kyxsan.Service.User;
-using kyxsan.ViewModel.User;
-using kyxsan.Web.Hoyolab;
-using BindingUser = kyxsan.ViewModel.User.User;
-using EntityUser = kyxsan.Model.Entity.User;
+using Launcher.Core.Database;
+using Launcher.Service.User;
+using Launcher.ViewModel.User;
+using Launcher.Web.Hoyolab;
+using BindingUser = Launcher.ViewModel.User.User;
+using EntityUser = Launcher.Model.Entity.User;
 
-namespace kyxsan.Service.AutoSignIn;
+namespace Launcher.Service.AutoSignIn;
 
 [Service(ServiceLifetime.Singleton)]
 internal sealed partial class SignInServerDayRolloverScheduler : IRecipient<UserAndUidChangedMessage>, IDisposable

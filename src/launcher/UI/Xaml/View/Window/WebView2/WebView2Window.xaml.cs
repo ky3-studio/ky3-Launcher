@@ -1,26 +1,26 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.Web.WebView2.Core;
-using kyxsan.Core.Logging;
-using kyxsan.UI.Windowing;
-using kyxsan.UI.Windowing.Abstraction;
-using kyxsan.Web.WebView2;
-using kyxsan.Win32.Foundation;
+using Launcher.Core.Logging;
+using Launcher.UI.Windowing;
+using Launcher.UI.Windowing.Abstraction;
+using Launcher.Web.WebView2;
+using Launcher.Win32.Foundation;
 using System.Collections.Immutable;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace kyxsan.UI.Xaml.View.Window.WebView2;
+namespace Launcher.UI.Xaml.View.Window.WebView2;
 
 [SuppressMessage("", "CA1001")]
 internal sealed partial class WebView2Window : Microsoft.UI.Xaml.Window,

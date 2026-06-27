@@ -1,34 +1,34 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core;
-using kyxsan.Core.Database;
-using kyxsan.Core.DependencyInjection.Abstraction;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Model.Entity;
-using kyxsan.Model.Primitive;
-using kyxsan.Service.Cultivation;
-using kyxsan.Service.Metadata;
-using kyxsan.Service.Metadata.ContextAbstraction;
-using kyxsan.Service.Notification;
-using kyxsan.Service.User;
-using kyxsan.Service.Yae;
-using kyxsan.UI.Xaml.Data;
-using kyxsan.UI.Xaml.View.Dialog;
-using kyxsan.UI.Xaml.Control.AutoSuggestBox;
-using kyxsan.ViewModel.AvatarProperty;
-using kyxsan.Web.Hoyolab.Takumi.GameRecord;
-using kyxsan.Web.Hoyolab.Takumi.GameRecord.Avatar;
-using kyxsan.Web.Response;
+using Launcher.Core;
+using Launcher.Core.Database;
+using Launcher.Core.DependencyInjection.Abstraction;
+using Launcher.Factory.ContentDialog;
+using Launcher.Model.Entity;
+using Launcher.Model.Primitive;
+using Launcher.Service.Cultivation;
+using Launcher.Service.Metadata;
+using Launcher.Service.Metadata.ContextAbstraction;
+using Launcher.Service.Notification;
+using Launcher.Service.User;
+using Launcher.Service.Yae;
+using Launcher.UI.Xaml.Data;
+using Launcher.UI.Xaml.View.Dialog;
+using Launcher.UI.Xaml.Control.AutoSuggestBox;
+using Launcher.ViewModel.AvatarProperty;
+using Launcher.Web.Hoyolab.Takumi.GameRecord;
+using Launcher.Web.Hoyolab.Takumi.GameRecord.Avatar;
+using Launcher.Web.Response;
 using System.Collections.Immutable;
 using System.Collections.ObjectModel;
-using MetaAvatar = kyxsan.Model.Metadata.Avatar.Avatar;
-using MetaWeapon = kyxsan.Model.Metadata.Weapon.Weapon;
+using MetaAvatar = Launcher.Model.Metadata.Avatar.Avatar;
+using MetaWeapon = Launcher.Model.Metadata.Weapon.Weapon;
 
-namespace kyxsan.ViewModel.Cultivation;
+namespace Launcher.ViewModel.Cultivation;
 
 [Service(ServiceLifetime.Scoped)]
 internal sealed partial class CultivationViewModel : Abstraction.ViewModel
@@ -275,7 +275,7 @@ internal sealed partial class CultivationViewModel : Abstraction.ViewModel
             return;
         }
 
-        if (!kyxsanRuntime.IsProcessElevated)
+        if (!LauncherRuntime.IsProcessElevated)
         {
             messenger.Send(InfoBarMessage.Error(SH.ServiceGameLaunchingHandlerEmbeddedYaeClientNotElevated));
             return;

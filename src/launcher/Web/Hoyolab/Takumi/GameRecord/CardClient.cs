@@ -1,24 +1,24 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.DependencyInjection.Annotation.HttpClient;
-using kyxsan.Model.Entity;
-using kyxsan.Service.Geetest;
-using kyxsan.Web.Endpoint.Hoyolab;
-using kyxsan.Web.Hoyolab.DataSigning;
-using kyxsan.Web.Hoyolab.Takumi.GameRecord.Verification;
-using kyxsan.Web.Request.Builder;
-using kyxsan.Web.Request.Builder.Abstraction;
-using kyxsan.Web.Response;
+using Launcher.Core.DependencyInjection.Annotation.HttpClient;
+using Launcher.Model.Entity;
+using Launcher.Service.Geetest;
+using Launcher.Web.Endpoint.Hoyolab;
+using Launcher.Web.Hoyolab.DataSigning;
+using Launcher.Web.Hoyolab.Takumi.GameRecord.Verification;
+using Launcher.Web.Request.Builder;
+using Launcher.Web.Request.Builder.Abstraction;
+using Launcher.Web.Response;
 using System.Net.Http;
 
-namespace kyxsan.Web.Hoyolab.Takumi.GameRecord;
+namespace Launcher.Web.Hoyolab.Takumi.GameRecord;
 
 [HttpClient(HttpClientConfiguration.XRpc)]
 internal sealed partial class CardClient

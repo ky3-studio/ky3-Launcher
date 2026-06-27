@@ -1,18 +1,18 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Model.Entity;
-using kyxsan.ViewModel.Achievement;
+using Launcher.Model.Entity;
+using Launcher.ViewModel.Achievement;
 using System.Collections.Immutable;
-using EntityAchievement = kyxsan.Model.Entity.Achievement;
+using EntityAchievement = Launcher.Model.Entity.Achievement;
 
-namespace kyxsan.Service.Achievement;
+namespace Launcher.Service.Achievement;
 
 [Service(ServiceLifetime.Transient, typeof(IAchievementStatisticsService))]
 internal sealed partial class AchievementStatisticsService : IAchievementStatisticsService

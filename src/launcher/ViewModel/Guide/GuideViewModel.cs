@@ -1,24 +1,24 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.Windows.AppLifecycle;
-using kyxsan.Core;
-using kyxsan.Core.Logging;
-using kyxsan.Core.Setting;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Factory.Picker;
-using kyxsan.Model;
-using kyxsan.Service;
-using kyxsan.Web.Hoyolab;
+using Launcher.Core;
+using Launcher.Core.Logging;
+using Launcher.Core.Setting;
+using Launcher.Factory.ContentDialog;
+using Launcher.Factory.Picker;
+using Launcher.Model;
+using Launcher.Service;
+using Launcher.Web.Hoyolab;
 using System.IO;
 
-namespace kyxsan.ViewModel.Guide;
+namespace Launcher.ViewModel.Guide;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Singleton)]
@@ -76,9 +76,9 @@ internal sealed partial class GuideViewModel : Abstraction.ViewModel
 
     public partial RuntimeOptions RuntimeOptions { get; }
 
-    public string DataFolderPath { get; set => SetProperty(ref field, value); } = kyxsanRuntime.DataDirectory;
+    public string DataFolderPath { get; set => SetProperty(ref field, value); } = LauncherRuntime.DataDirectory;
 
-    public string CacheFolderPath { get; set => SetProperty(ref field, value); } = kyxsanRuntime.LocalCacheDirectory;
+    public string CacheFolderPath { get; set => SetProperty(ref field, value); } = LauncherRuntime.LocalCacheDirectory;
 
     public partial AppOptions AppOptions { get; }
 
@@ -165,7 +165,7 @@ internal sealed partial class GuideViewModel : Abstraction.ViewModel
             return;
         }
 
-        string oldFolderPath = kyxsanRuntime.DataDirectory;
+        string oldFolderPath = LauncherRuntime.DataDirectory;
         if (UrlPath.IsEqualOrSubdirectory(oldFolderPath, newFolderPath))
         {
             return;
@@ -182,7 +182,7 @@ internal sealed partial class GuideViewModel : Abstraction.ViewModel
 
         Directory.CreateDirectory(newFolderPath);
         LocalSetting.Set(SettingKeys.DataDirectory, newFolderPath);
-        kyxsanRuntime.SetDataDirectory(newFolderPath);
+        LauncherRuntime.SetDataDirectory(newFolderPath);
 
         await taskContext.SwitchToMainThreadAsync();
         DataFolderPath = newFolderPath;
@@ -198,7 +198,7 @@ internal sealed partial class GuideViewModel : Abstraction.ViewModel
             return;
         }
 
-        string oldFolderPath = kyxsanRuntime.LocalCacheDirectory;
+        string oldFolderPath = LauncherRuntime.LocalCacheDirectory;
         if (UrlPath.IsEqualOrSubdirectory(oldFolderPath, newFolderPath))
         {
             return;
@@ -215,7 +215,7 @@ internal sealed partial class GuideViewModel : Abstraction.ViewModel
 
         Directory.CreateDirectory(newFolderPath);
         LocalSetting.Set(SettingKeys.CacheDirectory, newFolderPath);
-        kyxsanRuntime.SetLocalCacheDirectory(newFolderPath);
+        LauncherRuntime.SetLocalCacheDirectory(newFolderPath);
 
         await taskContext.SwitchToMainThreadAsync();
         CacheFolderPath = newFolderPath;

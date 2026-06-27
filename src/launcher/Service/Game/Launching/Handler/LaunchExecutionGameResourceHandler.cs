@@ -1,29 +1,29 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.Win32.SafeHandles;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.Setting;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Model.Intrinsic;
-using kyxsan.Service.Game.FileSystem;
-using kyxsan.Service.Game.Launching.Context;
-using kyxsan.Service.Game.Package;
-using kyxsan.Service.Game.Package.Advanced;
-using kyxsan.Service.Notification;
-using kyxsan.Web.Hoyolab.HoyoPlay.Connect.Branch;
-using kyxsan.Web.Hoyolab.HoyoPlay.Connect.ChannelSDK;
-using kyxsan.Web.Hoyolab.HoyoPlay.Connect.DeprecatedFile;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.Setting;
+using Launcher.Factory.ContentDialog;
+using Launcher.Model.Intrinsic;
+using Launcher.Service.Game.FileSystem;
+using Launcher.Service.Game.Launching.Context;
+using Launcher.Service.Game.Package;
+using Launcher.Service.Game.Package.Advanced;
+using Launcher.Service.Notification;
+using Launcher.Web.Hoyolab.HoyoPlay.Connect.Branch;
+using Launcher.Web.Hoyolab.HoyoPlay.Connect.ChannelSDK;
+using Launcher.Web.Hoyolab.HoyoPlay.Connect.DeprecatedFile;
 using System.IO;
 using System.Net.Http;
 
-namespace kyxsan.Service.Game.Launching.Handler;
+namespace Launcher.Service.Game.Launching.Handler;
 
 internal sealed class LaunchExecutionGameResourceHandler : AbstractLaunchExecutionHandler
 {
@@ -83,7 +83,7 @@ internal sealed class LaunchExecutionGameResourceHandler : AbstractLaunchExecuti
 
         if (!CheckDirectoryPermissions(gameFolder, out Exception? inner))
         {
-            throw kyxsanException.UnauthorizedAccess(SH.ServiceGameEnsureGameResourceInsufficientDirectoryPermissions, inner);
+            throw LauncherException.UnauthorizedAccess(SH.ServiceGameEnsureGameResourceInsufficientDirectoryPermissions, inner);
         }
 
         progress.Report(new(SH.ServiceGameEnsureGameResourceQueryResourceInformation));
@@ -95,22 +95,22 @@ internal sealed class LaunchExecutionGameResourceHandler : AbstractLaunchExecuti
 
         if (await currentBranchesTask.ConfigureAwait(false) is not (true, { } currentBranches))
         {
-            throw kyxsanException.InvalidOperation(SH.FormatServiceGameLaunchExecutionGameResourceQueryIndexFailed("Current Branches"));
+            throw LauncherException.InvalidOperation(SH.FormatServiceGameLaunchExecutionGameResourceQueryIndexFailed("Current Branches"));
         }
 
         if (await targetBranchesTask.ConfigureAwait(false) is not (true, { } targetBranches))
         {
-            throw kyxsanException.InvalidOperation(SH.FormatServiceGameLaunchExecutionGameResourceQueryIndexFailed("Target Branches"));
+            throw LauncherException.InvalidOperation(SH.FormatServiceGameLaunchExecutionGameResourceQueryIndexFailed("Target Branches"));
         }
 
         if (await channelSdksTask.ConfigureAwait(false) is not (true, { } channelSdks))
         {
-            throw kyxsanException.InvalidOperation(SH.FormatServiceGameLaunchExecutionGameResourceQueryIndexFailed("Target Channel SDKs"));
+            throw LauncherException.InvalidOperation(SH.FormatServiceGameLaunchExecutionGameResourceQueryIndexFailed("Target Channel SDKs"));
         }
 
         if (await deprecatedTask.ConfigureAwait(false) is not (true, { } deprecatedFileConfigs))
         {
-            throw kyxsanException.InvalidOperation(SH.FormatServiceGameLaunchExecutionGameResourceQueryIndexFailed("Target Deprecated File Configs"));
+            throw LauncherException.InvalidOperation(SH.FormatServiceGameLaunchExecutionGameResourceQueryIndexFailed("Target Deprecated File Configs"));
         }
 
         IHttpClientFactory httpClientFactory = context.ServiceProvider.GetRequiredService<IHttpClientFactory>();
@@ -130,7 +130,7 @@ internal sealed class LaunchExecutionGameResourceHandler : AbstractLaunchExecuti
             {
                 if (!await packageConverter.EnsureGameResourceAsync(converterContext).ConfigureAwait(false))
                 {
-                    throw kyxsanException.InvalidOperation(SH.ViewModelLaunchGameEnsureGameResourceFail);
+                    throw LauncherException.InvalidOperation(SH.ViewModelLaunchGameEnsureGameResourceFail);
                 }
 
                 await context.TaskContext.SwitchToMainThreadAsync();
@@ -159,7 +159,7 @@ internal sealed class LaunchExecutionGameResourceHandler : AbstractLaunchExecuti
                 using (SafeFileHandle handle = File.OpenHandle(tempFilePath, FileMode.CreateNew, FileAccess.ReadWrite, FileShare.None, preallocationSize: 32 * 1024))
                 {
                     // Test write file
-                    RandomAccess.Write(handle, "KYXSAN DIRECTORY PERMISSION CHECK"u8, 0);
+                    RandomAccess.Write(handle, "LAUNCHER DIRECTORY PERMISSION CHECK"u8, 0);
                     RandomAccess.FlushToDisk(handle);
                 }
 

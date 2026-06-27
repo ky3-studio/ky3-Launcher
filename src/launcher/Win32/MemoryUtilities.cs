@@ -1,17 +1,17 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Win32.Foundation;
+using Launcher.Win32.Foundation;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-namespace kyxsan.Win32;
+namespace Launcher.Win32;
 
 internal static unsafe class MemoryUtilities
 {
@@ -42,7 +42,7 @@ internal static unsafe class MemoryUtilities
         }
     }
 
-    [DllImport(kyxsanNativeMethods.DllName, ExactSpelling = true)]
+    [DllImport(LauncherNativeMethods.DllName, ExactSpelling = true)]
     private static extern HRESULT MemoryUtilitiesPatch(PCWSTR moduleName, uint offset, int size, PatchCallback callback, GCHandle<Action<Span<byte>>> state);
 
     private readonly struct PatchCallback

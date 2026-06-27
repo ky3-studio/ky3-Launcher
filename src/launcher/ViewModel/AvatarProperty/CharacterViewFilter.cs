@@ -1,18 +1,18 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Model.Intrinsic.Frozen;
-using kyxsan.UI.Xaml.Control.AutoSuggestBox;
+using Launcher.Model.Intrinsic.Frozen;
+using Launcher.UI.Xaml.Control.AutoSuggestBox;
 using System.Collections.ObjectModel;
 using System.Globalization;
 
-namespace kyxsan.ViewModel.AvatarProperty;
+namespace Launcher.ViewModel.AvatarProperty;
 
 internal static class CharacterViewFilter
 {

@@ -1,27 +1,27 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Core.Setting;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Service.Game;
-using kyxsan.Service.Game.FileSystem;
-using kyxsan.Service.Game.Package;
-using kyxsan.Service.Game.Package.Advanced;
-using kyxsan.Service.Game.Package.Advanced.Model;
-using kyxsan.Service.Game.Scheme;
-using kyxsan.Service.Notification;
-using kyxsan.Web.Hoyolab.HoyoPlay.Connect.Branch;
-using kyxsan.Web.Hoyolab.HoyoPlay.Connect.ChannelSDK;
+using Launcher.Core.Setting;
+using Launcher.Factory.ContentDialog;
+using Launcher.Service.Game;
+using Launcher.Service.Game.FileSystem;
+using Launcher.Service.Game.Package;
+using Launcher.Service.Game.Package.Advanced;
+using Launcher.Service.Game.Package.Advanced.Model;
+using Launcher.Service.Game.Scheme;
+using Launcher.Service.Notification;
+using Launcher.Web.Hoyolab.HoyoPlay.Connect.Branch;
+using Launcher.Web.Hoyolab.HoyoPlay.Connect.ChannelSDK;
 using System.IO;
 
-namespace kyxsan.ViewModel.Game;
+namespace Launcher.ViewModel.Game;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Singleton)]

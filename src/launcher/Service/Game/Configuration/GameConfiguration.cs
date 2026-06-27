@@ -1,22 +1,22 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.IO.Ini;
-using kyxsan.Service.Game.FileSystem;
-using kyxsan.Service.Game.Scheme;
-using kyxsan.Win32;
-using kyxsan.Win32.Foundation;
+using Launcher.Core.IO.Ini;
+using Launcher.Service.Game.FileSystem;
+using Launcher.Service.Game.Scheme;
+using Launcher.Win32;
+using Launcher.Win32.Foundation;
 using System.Collections.Immutable;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace kyxsan.Service.Game.Configuration;
+namespace Launcher.Service.Game.Configuration;
 
 internal static class GameConfiguration
 {
@@ -31,12 +31,12 @@ internal static class GameConfiguration
         catch (IOException ex)
         {
             // The process cannot access the file '?' because it is being used by another process.
-            if (kyxsanNative.IsWin32(ex.HResult, WIN32_ERROR.ERROR_SHARING_VIOLATION))
+            if (LauncherNative.IsWin32(ex.HResult, WIN32_ERROR.ERROR_SHARING_VIOLATION))
             {
                 return ChannelOptions.SharingViolation(configFilePath);
             }
 
-            if (kyxsanNative.IsWin32(ex.HResult, [WIN32_ERROR.ERROR_NOT_READY, WIN32_ERROR.ERROR_NO_SUCH_DEVICE]))
+            if (LauncherNative.IsWin32(ex.HResult, [WIN32_ERROR.ERROR_NOT_READY, WIN32_ERROR.ERROR_NO_SUCH_DEVICE]))
             {
                 return ChannelOptions.DeviceNotFound(gameFileSystem.GameDirectory);
             }
@@ -82,7 +82,7 @@ internal static class GameConfiguration
         }
         catch (IOException ex)
         {
-            if (kyxsanNative.IsWin32(ex.HResult, WIN32_ERROR.ERROR_NOT_READY))
+            if (LauncherNative.IsWin32(ex.HResult, WIN32_ERROR.ERROR_NOT_READY))
             {
                 return false;
             }

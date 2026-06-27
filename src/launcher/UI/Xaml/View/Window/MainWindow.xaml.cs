@@ -1,24 +1,24 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
-using kyxsan.Service;
-using kyxsan.UI.Shell;
-using kyxsan.UI.Windowing;
+using Launcher.Service;
+using Launcher.UI.Shell;
+using Launcher.UI.Windowing;
 using Microsoft.Windows.AppNotifications.Builder;
-using kyxsan.UI.Windowing.Abstraction;
-using kyxsan.ViewModel;
+using Launcher.UI.Windowing.Abstraction;
+using Launcher.ViewModel;
 using System.Collections.Immutable;
 using Windows.Graphics;
 
-namespace kyxsan.UI.Xaml.View.Window;
+namespace Launcher.UI.Xaml.View.Window;
 
 [Service(ServiceLifetime.Transient)]
 internal sealed partial class MainWindow : Microsoft.UI.Xaml.Window,

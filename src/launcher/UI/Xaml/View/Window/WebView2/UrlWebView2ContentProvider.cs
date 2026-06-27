@@ -1,9 +1,8 @@
-using Microsoft.UI.Xaml;
+﻿using Microsoft.UI.Xaml;
 using Microsoft.Web.WebView2.Core;
 using Windows.Graphics;
-using Windows.System;
 
-namespace kyxsan.UI.Xaml.View.Window.WebView2;
+namespace Launcher.UI.Xaml.View.Window.WebView2;
 
 internal sealed class UrlWebView2ContentProvider : IWebView2ContentProvider
 {
@@ -44,6 +43,6 @@ internal sealed class UrlWebView2ContentProvider : IWebView2ContentProvider
     private void OnNewWindowRequested(object? sender, CoreWebView2NewWindowRequestedEventArgs e)
     {
         e.Handled = true;
-        _ = Launcher.LaunchUriAsync(e.Uri.ToUri());
+        _ = Windows.System.Launcher.LaunchUriAsync(e.Uri.ToUri());
     }
 }

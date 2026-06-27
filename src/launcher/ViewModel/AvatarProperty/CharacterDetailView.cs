@@ -1,26 +1,26 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Model;
-using kyxsan.Model.Intrinsic;
-using kyxsan.Model.Metadata;
-using kyxsan.Model.Metadata.Converter;
-using kyxsan.Model.Metadata.Weapon;
-using kyxsan.Model.Primitive;
-using kyxsan.ViewModel.Wiki;
-using kyxsan.Web.Hoyolab.Takumi.GameRecord.Avatar;
+using Launcher.Model;
+using Launcher.Model.Intrinsic;
+using Launcher.Model.Metadata;
+using Launcher.Model.Metadata.Converter;
+using Launcher.Model.Metadata.Weapon;
+using Launcher.Model.Primitive;
+using Launcher.ViewModel.Wiki;
+using Launcher.Web.Hoyolab.Takumi.GameRecord.Avatar;
 using System.Collections.Immutable;
 using System.Runtime.InteropServices;
-using MetaAvatar = kyxsan.Model.Metadata.Avatar.Avatar;
-using MetaWeapon = kyxsan.Model.Metadata.Weapon.Weapon;
+using MetaAvatar = Launcher.Model.Metadata.Avatar.Avatar;
+using MetaWeapon = Launcher.Model.Metadata.Weapon.Weapon;
 
-namespace kyxsan.ViewModel.AvatarProperty;
+namespace Launcher.ViewModel.AvatarProperty;
 
 internal sealed class CharacterDetailView
 {

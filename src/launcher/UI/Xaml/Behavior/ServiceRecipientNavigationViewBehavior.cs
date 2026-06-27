@@ -1,28 +1,28 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.WinUI;
 using CommunityToolkit.WinUI.Behaviors;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media.Animation;
-using kyxsan.Core;
-using kyxsan.Core.Logging;
-using kyxsan.Core.Setting;
-using kyxsan.Service.Navigation;
-using kyxsan.Service.Navigation.Message;
-using kyxsan.Service.Notification;
-using kyxsan.UI.Content;
-using kyxsan.UI.Xaml.Control;
-using kyxsan.UI.Xaml.View.Page;
+using Launcher.Core;
+using Launcher.Core.Logging;
+using Launcher.Core.Setting;
+using Launcher.Service.Navigation;
+using Launcher.Service.Navigation.Message;
+using Launcher.Service.Notification;
+using Launcher.UI.Content;
+using Launcher.UI.Xaml.Control;
+using Launcher.UI.Xaml.View.Page;
 using WinRT;
 
-namespace kyxsan.UI.Xaml.Behavior;
+namespace Launcher.UI.Xaml.Behavior;
 
 internal sealed class ServiceRecipientNavigationViewBehavior : BehaviorBase<NavigationView>,
     IRecipient<NavigationNavigateMessage>,

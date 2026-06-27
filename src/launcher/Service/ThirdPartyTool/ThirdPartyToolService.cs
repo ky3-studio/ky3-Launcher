@@ -1,15 +1,15 @@
-using kyxsan.Core;
-using kyxsan.Core.DependencyInjection.Annotation.HttpClient;
-using kyxsan.Service.Notification;
-using kyxsan.Web.Request.Builder;
-using kyxsan.Web.Request.Builder.Abstraction;
-using kyxsan.Web.ThirdPartyTool;
+﻿using Launcher.Core;
+using Launcher.Core.DependencyInjection.Annotation.HttpClient;
+using Launcher.Service.Notification;
+using Launcher.Web.Request.Builder;
+using Launcher.Web.Request.Builder.Abstraction;
+using Launcher.Web.ThirdPartyTool;
 using System.Collections.Immutable;
 using System.Diagnostics;
 using System.IO;
 using System.Net.Http;
 
-namespace kyxsan.Service.ThirdPartyTool;
+namespace Launcher.Service.ThirdPartyTool;
 
 [HttpClient(HttpClientConfiguration.Default)]
 [Service(ServiceLifetime.Singleton, typeof(IThirdPartyToolService))]
@@ -206,6 +206,6 @@ internal sealed partial class ThirdPartyToolService : IThirdPartyToolService
     private static string GetToolDirectory(ToolInfo tool)
     {
         // 使用数据目录/工具名作为存储路径
-        return Path.Combine(kyxsanRuntime.DataDirectory, "Tools", tool.Name);
+        return Path.Combine(LauncherRuntime.DataDirectory, "Tools", tool.Name);
     }
 }

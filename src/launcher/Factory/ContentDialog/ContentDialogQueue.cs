@@ -1,18 +1,18 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.LifeCycle;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.LifeCycle;
 using Windows.Foundation;
 
-namespace kyxsan.Factory.ContentDialog;
+namespace Launcher.Factory.ContentDialog;
 
 [Service(ServiceLifetime.Singleton, typeof(IContentDialogQueue))]
 [SuppressMessage("", "SH003")]
@@ -68,14 +68,14 @@ internal sealed partial class ContentDialogQueue : IContentDialogQueue
 
             if (contentDialog.XamlRoot is null)
             {
-                kyxsanException.NotSupported("Dialog created without XamlRoot");
+                LauncherException.NotSupported("Dialog created without XamlRoot");
             }
 
             if (contentDialog.XamlRoot != currentWindowReference.XamlRoot)
             {
                 // User close the window on previous dialog, and this dialog still using old XamlRoot.
                 // And that's why we didn't use dialog's DispatcherQueue to switch thread either.
-                kyxsanException.NotSupported("Dialog using different XamlRoot");
+                LauncherException.NotSupported("Dialog using different XamlRoot");
             }
 
             IAsyncOperation<ContentDialogResult> operation = contentDialog.ShowAsync();

@@ -1,5 +1,5 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using System;
@@ -8,7 +8,7 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 
-namespace kyxsan.SourceGeneration.Resx;
+namespace Launcher.SourceGeneration.Resx;
 
 /// <summary>Represents a parsed composite format string.</summary>
 [DebuggerDisplay("{Format}")]

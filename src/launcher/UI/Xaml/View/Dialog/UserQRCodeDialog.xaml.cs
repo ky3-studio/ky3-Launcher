@@ -1,23 +1,23 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Media.Imaging;
-using kyxsan.Core.Logging;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Factory.QuickResponse;
-using kyxsan.Web.Hoyolab.Passport;
-using kyxsan.Web.Response;
+using Launcher.Core.Logging;
+using Launcher.Factory.ContentDialog;
+using Launcher.Factory.QuickResponse;
+using Launcher.Web.Hoyolab.Passport;
+using Launcher.Web.Response;
 using System.IO;
 
-namespace kyxsan.UI.Xaml.View.Dialog;
+namespace Launcher.UI.Xaml.View.Dialog;
 
 [DependencyProperty<ImageSource>("QRCodeSource")]
 internal sealed partial class UserQRCodeDialog : ContentDialog, IDisposable

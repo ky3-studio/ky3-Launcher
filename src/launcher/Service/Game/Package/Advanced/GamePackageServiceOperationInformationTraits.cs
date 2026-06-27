@@ -1,23 +1,23 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Common;
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.IO;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Service.Game.Package.Advanced.Model;
-using kyxsan.Web.Hoyolab.Takumi.Downloader.Proto;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.IO;
+using Launcher.Factory.ContentDialog;
+using Launcher.Service.Game.Package.Advanced.Model;
+using Launcher.Web.Hoyolab.Takumi.Downloader.Proto;
 using System.Collections.Immutable;
 using System.IO;
 
-namespace kyxsan.Service.Game.Package.Advanced;
+namespace Launcher.Service.Game.Package.Advanced;
 
 [Service(ServiceLifetime.Singleton)]
 internal sealed partial class GamePackageServiceOperationInformationTraits
@@ -45,14 +45,14 @@ internal sealed partial class GamePackageServiceOperationInformationTraits
         {
             GamePackageOperationKind.Install or GamePackageOperationKind.ExtractExecutable => default,
             GamePackageOperationKind.Update or GamePackageOperationKind.Predownload or GamePackageOperationKind.ExtractBlocks => [.. GetDiffOperations(localBuild, remoteBuild).OrderBy(a => a.Kind)],
-            _ => throw kyxsanException.NotSupported(),
+            _ => throw LauncherException.NotSupported(),
         };
 
         (long downloadTotalBytes, long installTotalBytes) = context.Kind switch
         {
             GamePackageOperationKind.Install or GamePackageOperationKind.ExtractExecutable => (remoteBuild.DownloadTotalBytes, remoteBuild.UncompressedTotalBytes),
             GamePackageOperationKind.Update or GamePackageOperationKind.Predownload or GamePackageOperationKind.ExtractBlocks => GetTotalByteGroupsWithPatchBuild(context, diffAssets),
-            _ => throw kyxsanException.NotSupported(),
+            _ => throw LauncherException.NotSupported(),
         };
 
         long downloadedTotalBytes = GetSize(context.EffectiveChunksDirectory);
@@ -81,7 +81,7 @@ internal sealed partial class GamePackageServiceOperationInformationTraits
         {
             GamePackageOperationKind.Install or GamePackageOperationKind.ExtractExecutable => (remoteBuild.TotalChunks, remoteBuild.TotalChunks),
             GamePackageOperationKind.Update or GamePackageOperationKind.Predownload or GamePackageOperationKind.ExtractBlocks => GetTotalBlockGroupsWithPatchBuild(context, diffAssets),
-            _ => throw kyxsanException.NotSupported(),
+            _ => throw LauncherException.NotSupported(),
         };
 
         return new(downloadTotalBlocks, installTotalBlocks, downloadTotalBytes, installTotalBytes, diffAssets);
@@ -98,7 +98,7 @@ internal sealed partial class GamePackageServiceOperationInformationTraits
         {
             GamePackageOperationKind.Update or GamePackageOperationKind.Predownload => (GetDownloadTotalBytes(assets), GetUnCompressedTotalBytes(assets)),
             GamePackageOperationKind.ExtractBlocks => (GetUnCompressedTotalBytes(assets, true), GetUnCompressedTotalBytes(assets, true)),
-            _ => throw kyxsanException.NotSupported(),
+            _ => throw LauncherException.NotSupported(),
         };
     }
 
@@ -113,7 +113,7 @@ internal sealed partial class GamePackageServiceOperationInformationTraits
         {
             GamePackageOperationKind.Update or GamePackageOperationKind.ExtractBlocks => (GetDownloadTotalBlocks(assets), GetInstallTotalBlocks(assets)),
             GamePackageOperationKind.Predownload => (GetDownloadTotalBlocks(assets), 0),
-            _ => throw kyxsanException.NotSupported(),
+            _ => throw LauncherException.NotSupported(),
         };
     }
 
@@ -131,7 +131,7 @@ internal sealed partial class GamePackageServiceOperationInformationTraits
             GamePackageOperationKind.Predownload => SH.ServiceGamePackageAdvancedConfirmStartPredownloadTitle,
             GamePackageOperationKind.ExtractBlocks => "Start extracting game blocks?",
             GamePackageOperationKind.ExtractExecutable => "Start extracting game executable?",
-            _ => throw kyxsanException.NotSupported(),
+            _ => throw LauncherException.NotSupported(),
         };
     }
 

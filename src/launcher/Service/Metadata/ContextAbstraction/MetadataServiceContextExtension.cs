@@ -1,22 +1,22 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Model.Intrinsic;
-using kyxsan.Model.Metadata.Avatar;
-using kyxsan.Model.Metadata.Item;
-using kyxsan.Model.Metadata.Weapon;
-using kyxsan.Model.Primitive;
-using kyxsan.Service.Metadata.ContextAbstraction.ImmutableArray;
-using kyxsan.Service.Metadata.ContextAbstraction.ImmutableDictionary;
-using kyxsan.Service.Notification;
+using Launcher.Model.Intrinsic;
+using Launcher.Model.Metadata.Avatar;
+using Launcher.Model.Metadata.Item;
+using Launcher.Model.Metadata.Weapon;
+using Launcher.Model.Primitive;
+using Launcher.Service.Metadata.ContextAbstraction.ImmutableArray;
+using Launcher.Service.Metadata.ContextAbstraction.ImmutableDictionary;
+using Launcher.Service.Notification;
 
-namespace kyxsan.Service.Metadata.ContextAbstraction;
+namespace Launcher.Service.Metadata.ContextAbstraction;
 
 internal static class MetadataServiceContextExtension
 {

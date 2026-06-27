@@ -1,17 +1,17 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Model;
-using kyxsan.Model.Entity;
-using kyxsan.Model.Entity.Primitive;
-using kyxsan.Model.Intrinsic;
-using kyxsan.Service.Cultivation;
-using kyxsan.UI.Xaml.Data;
+using Launcher.Model;
+using Launcher.Model.Entity;
+using Launcher.Model.Entity.Primitive;
+using Launcher.Model.Intrinsic;
+using Launcher.Service.Cultivation;
+using Launcher.UI.Xaml.Data;
 using System.Collections.Immutable;
 using System.Text;
 
-namespace kyxsan.ViewModel.Cultivation;
+namespace Launcher.ViewModel.Cultivation;
 
 internal sealed partial class CultivateEntryView : IPropertyValuesProvider
 {

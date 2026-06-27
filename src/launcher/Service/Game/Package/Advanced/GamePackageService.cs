@@ -1,29 +1,29 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.DependencyInjection.Abstraction;
-using kyxsan.Core.IO.Compression.Zstandard;
-using kyxsan.Core.IO.Hashing;
-using kyxsan.Core.Threading.RateLimiting;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Factory.IO;
-using kyxsan.Factory.Progress;
-using kyxsan.Service.Game.FileSystem;
-using kyxsan.Service.Game.Package.Advanced.Model;
-using kyxsan.Service.Game.Package.Advanced.PackageOperation;
-using kyxsan.Service.Notification;
-using kyxsan.UI.Xaml.View.Dialog;
-using kyxsan.Web.Hoyolab.Downloader;
-using kyxsan.Web.Hoyolab.HoyoPlay.Connect.Branch;
-using kyxsan.Web.Hoyolab.Takumi.Downloader.Proto;
-using kyxsan.Web.Request.Builder;
-using kyxsan.Web.Response;
+using Launcher.Core.DependencyInjection.Abstraction;
+using Launcher.Core.IO.Compression.Zstandard;
+using Launcher.Core.IO.Hashing;
+using Launcher.Core.Threading.RateLimiting;
+using Launcher.Factory.ContentDialog;
+using Launcher.Factory.IO;
+using Launcher.Factory.Progress;
+using Launcher.Service.Game.FileSystem;
+using Launcher.Service.Game.Package.Advanced.Model;
+using Launcher.Service.Game.Package.Advanced.PackageOperation;
+using Launcher.Service.Notification;
+using Launcher.UI.Xaml.View.Dialog;
+using Launcher.Web.Hoyolab.Downloader;
+using Launcher.Web.Hoyolab.HoyoPlay.Connect.Branch;
+using Launcher.Web.Hoyolab.Takumi.Downloader.Proto;
+using Launcher.Web.Request.Builder;
+using Launcher.Web.Response;
 using System.Collections.Immutable;
 using System.IO;
 using System.Net.Http;
@@ -31,7 +31,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.RateLimiting;
 
-namespace kyxsan.Service.Game.Package.Advanced;
+namespace Launcher.Service.Game.Package.Advanced;
 
 [Service(ServiceLifetime.Singleton, typeof(IGamePackageService))]
 [SuppressMessage("", "CA1001")]

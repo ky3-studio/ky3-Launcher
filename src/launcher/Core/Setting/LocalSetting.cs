@@ -1,26 +1,26 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 // Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
-using kyxsan.Core.ApplicationModel;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Factory.Process;
-using kyxsan.Win32;
-using kyxsan.Win32.Foundation;
+using Launcher.Core.ApplicationModel;
+using Launcher.Core.ExceptionService;
+using Launcher.Factory.Process;
+using Launcher.Win32;
+using Launcher.Win32.Foundation;
 using System.Collections.Concurrent;
 using System.Collections.Frozen;
 using System.Diagnostics;
 using System.IO;
 using Windows.Storage;
 
-namespace kyxsan.Core.Setting;
+namespace Launcher.Core.Setting;
 
 internal static class LocalSetting
 {
@@ -136,9 +136,9 @@ internal static class LocalSetting
             catch (Exception ex)
             {
                 // 状态管理器无法写入设置
-                if (kyxsanNative.IsWin32(ex.HResult, WIN32_ERROR.ERROR_STATE_WRITE_SETTING_FAILED))
+                if (LauncherNative.IsWin32(ex.HResult, WIN32_ERROR.ERROR_STATE_WRITE_SETTING_FAILED))
                 {
-                    kyxsanNative.Instance.ShowErrorMessage(ex.Message, ExceptionFormat.Format(ex));
+                    LauncherNative.Instance.ShowErrorMessage(ex.Message, ExceptionFormat.Format(ex));
                     ProcessFactory.KillCurrent();
                 }
 
@@ -175,11 +175,11 @@ internal static class LocalSetting
 
             const string OldFolderName
 #if IS_ALPHA_BUILD
-                = "kyxsanAlpha";
+                = "LauncherAlpha";
 #elif IS_CANARY_BUILD
-                = "kyxsanCanary";
+                = "LauncherCanary";
 #else
-                = "kyxsan";
+                = "Launcher";
 #endif
             string oldDir = Path.Combine(localAppData, OldFolderName);
             string newDir = Path.Combine(localAppData, FolderName);

@@ -1,25 +1,25 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.DependencyInjection.Annotation.HttpClient;
-using kyxsan.Core.IO.Http;
-using kyxsan.Web.Endpoint.kyxsan;
-using kyxsan.Web.Enka.Model;
-using kyxsan.Web.Hoyolab;
-using kyxsan.Web.Request.Builder;
-using kyxsan.Web.Request.Builder.Abstraction;
+using Launcher.Core.DependencyInjection.Annotation.HttpClient;
+using Launcher.Core.IO.Http;
+using Launcher.Web.Endpoint.Launcher;
+using Launcher.Web.Enka.Model;
+using Launcher.Web.Hoyolab;
+using Launcher.Web.Request.Builder;
+using Launcher.Web.Request.Builder.Abstraction;
 using System.Globalization;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Json;
 
-namespace kyxsan.Web.Enka;
+namespace Launcher.Web.Enka;
 
 [HttpClient(HttpClientConfiguration.Default)]
 internal sealed partial class EnkaClient
@@ -28,7 +28,7 @@ internal sealed partial class EnkaClient
     private const string EnkaInfoAPI = "https://enka.network/api/uid/{0}?info";
 
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
-    private readonly IkyxsanEndpointsFactory kyxsanEndpointsFactory;
+    private readonly ILauncherEndpointsFactory LauncherEndpointsFactory;
     private readonly JsonSerializerOptions options;
     private readonly HttpClient httpClient;
 
@@ -37,7 +37,7 @@ internal sealed partial class EnkaClient
 
     public ValueTask<EnkaResponse?> GetForwardPlayerInfoAsync(in PlayerUid playerUid, CancellationToken token = default)
     {
-        string url = kyxsanEndpointsFactory.Create().EnkaPlayerInfo(playerUid);
+        string url = LauncherEndpointsFactory.Create().EnkaPlayerInfo(playerUid);
         return TryGetEnkaResponseAsync(url, true, token);
     }
 
@@ -48,7 +48,7 @@ internal sealed partial class EnkaClient
 
     public ValueTask<EnkaResponse?> GetForwardDataAsync(in PlayerUid playerUid, CancellationToken token = default)
     {
-        string url = kyxsanEndpointsFactory.Create().Enka(playerUid);
+        string url = LauncherEndpointsFactory.Create().Enka(playerUid);
         return TryGetEnkaResponseAsync(url, true, token);
     }
 

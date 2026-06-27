@@ -1,14 +1,14 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.EntityFrameworkCore;
-using kyxsan.Model.Entity;
-using kyxsan.Service.Abstraction;
+using Launcher.Model.Entity;
+using Launcher.Service.Abstraction;
 using System.Collections.Immutable;
 using System.Collections.ObjectModel;
 
-namespace kyxsan.Service.Cultivation;
+namespace Launcher.Service.Cultivation;
 
 [Service(ServiceLifetime.Singleton, typeof(ICultivationRepository))]
 internal sealed partial class CultivationRepository : ICultivationRepository

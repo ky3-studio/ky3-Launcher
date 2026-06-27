@@ -1,6 +1,6 @@
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 
-namespace kyxsan.Web.ThirdPartyTool;
+namespace Launcher.Web.ThirdPartyTool;
 
 internal sealed class ToolApiResponse
 {

@@ -1,10 +1,10 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using kyxsan.SourceGeneration.Extension;
+using Launcher.SourceGeneration.Extension;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -12,10 +12,10 @@ using System.IO;
 using System.Text.Json;
 using System.Threading;
 using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
-using static kyxsan.SourceGeneration.Primitive.FastSyntaxFactory;
-using static kyxsan.SourceGeneration.WellKnownSyntax;
+using static Launcher.SourceGeneration.Primitive.FastSyntaxFactory;
+using static Launcher.SourceGeneration.WellKnownSyntax;
 
-namespace kyxsan.SourceGeneration.Identity;
+namespace Launcher.SourceGeneration.Identity;
 
 [Generator(LanguageNames.CSharp)]
 internal sealed class IdentityGenerator : IIncrementalGenerator
@@ -72,7 +72,7 @@ internal sealed class IdentityGenerator : IIncrementalGenerator
         SyntaxToken typeToken = Identifier(metadataName);
 
         CompilationUnitSyntax syntax = CompilationUnit()
-            .WithMembers(SingletonList<MemberDeclarationSyntax>(FileScopedNamespaceDeclaration("kyxsan.Model.Primitive")
+            .WithMembers(SingletonList<MemberDeclarationSyntax>(FileScopedNamespaceDeclaration("Launcher.Model.Primitive")
                 .WithLeadingTrivia(NullableEnableTriviaList)
                 .WithMembers(SingletonList<MemberDeclarationSyntax>(
                     StructDeclaration(metadataName)
@@ -349,7 +349,7 @@ internal sealed class IdentityGenerator : IIncrementalGenerator
 
     private static TypeOfExpressionSyntax GenerateTypeOfIdentityConverterGenericExpression(string typeName)
     {
-        return TypeOfExpression(QualifiedName(NameOfSnapkyxsanModelPrimitiveConverter, GenericName("IdentityConverter")
+        return TypeOfExpression(QualifiedName(NameOfSnapLauncherModelPrimitiveConverter, GenericName("IdentityConverter")
             .WithTypeArgumentList(TypeArgumentList(SingletonSeparatedList<TypeSyntax>(IdentifierName(typeName))))));
     }
 

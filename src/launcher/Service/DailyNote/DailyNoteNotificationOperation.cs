@@ -1,23 +1,23 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.Windows.AppNotifications;
-using kyxsan.Core;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.LifeCycle;
-using kyxsan.Model.Entity;
-using kyxsan.Service.DailyNote.NotifySuppression;
-using kyxsan.Service.Game;
-using kyxsan.Service.Notification;
+using Launcher.Core;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.LifeCycle;
+using Launcher.Model.Entity;
+using Launcher.Service.DailyNote.NotifySuppression;
+using Launcher.Service.Game;
+using Launcher.Service.Notification;
 using System.Runtime.InteropServices;
 
-namespace kyxsan.Service.DailyNote;
+namespace Launcher.Service.DailyNote;
 
 [Service(ServiceLifetime.Singleton)]
 internal sealed partial class DailyNoteNotificationOperation
@@ -47,7 +47,7 @@ internal sealed partial class DailyNoteNotificationOperation
             return;
         }
 
-        if (!kyxsanRuntime.IsAppNotificationEnabled)
+        if (!LauncherRuntime.IsAppNotificationEnabled)
         {
             return;
         }

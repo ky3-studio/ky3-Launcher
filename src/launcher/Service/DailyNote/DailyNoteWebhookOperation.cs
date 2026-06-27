@@ -1,20 +1,20 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.DependencyInjection.Annotation.HttpClient;
-using kyxsan.Web.Hoyolab;
-using kyxsan.Web.Request.Builder;
-using kyxsan.Web.Request.Builder.Abstraction;
+using Launcher.Core.DependencyInjection.Annotation.HttpClient;
+using Launcher.Web.Hoyolab;
+using Launcher.Web.Request.Builder;
+using Launcher.Web.Request.Builder.Abstraction;
 using System.Net.Http;
-using WebDailyNote = kyxsan.Web.Hoyolab.Takumi.GameRecord.DailyNote.DailyNote;
+using WebDailyNote = Launcher.Web.Hoyolab.Takumi.GameRecord.DailyNote.DailyNote;
 
-namespace kyxsan.Service.DailyNote;
+namespace Launcher.Service.DailyNote;
 
 [HttpClient(HttpClientConfiguration.Default)]
 internal sealed partial class DailyNoteWebhookOperation

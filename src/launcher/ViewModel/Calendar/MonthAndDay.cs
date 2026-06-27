@@ -1,6 +1,6 @@
-using kyxsan.Model.Metadata.Avatar;
+﻿using Launcher.Model.Metadata.Avatar;
 
-namespace kyxsan.ViewModel.Calendar;
+namespace Launcher.ViewModel.Calendar;
 
 internal readonly struct MonthAndDay : IEquatable<MonthAndDay>
 {

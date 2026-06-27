@@ -1,20 +1,20 @@
-// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
+﻿// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using System.Buffers;
 using System.IO;
 using System.Runtime.InteropServices;
-using kyxsan.Core;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.Setting;
-using kyxsan.Service.Notification;
+using Launcher.Core;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.Setting;
+using Launcher.Service.Notification;
 
-namespace kyxsan.Service;
+namespace Launcher.Service;
 
 [Service(ServiceLifetime.Singleton)]
 internal sealed partial class AutoStartService
 {
-    private const string TaskName = "Snapkyxsan AutoStart";
+    private const string TaskName = "SnapLauncher AutoStart";
 
     public AutoStartService(IServiceProvider serviceProvider) { }
 
@@ -87,7 +87,7 @@ internal sealed partial class AutoStartService
 
             if (!taskActive)
             {
-                if (!kyxsanRuntime.IsProcessElevated)
+                if (!LauncherRuntime.IsProcessElevated)
                 {
                     return;
                 }
@@ -109,7 +109,7 @@ internal sealed partial class AutoStartService
 
             if (!taskExecutableValid || !taskExecutableMatchesCurrent || !taskElevatedMatches)
             {
-                if (!kyxsanRuntime.IsProcessElevated)
+                if (!LauncherRuntime.IsProcessElevated)
                 {
                     return;
                 }
@@ -265,7 +265,7 @@ internal sealed partial class AutoStartService
         string exePath = System.Diagnostics.Process.GetCurrentProcess().MainModule?.FileName ?? string.Empty;
         if (string.IsNullOrEmpty(exePath) || !File.Exists(exePath))
         {
-            throw kyxsanException.InvalidOperation("Cannot find executable path to register autostart task.");
+            throw LauncherException.InvalidOperation("Cannot find executable path to register autostart task.");
         }
 
         if (TryUseNativeHelper(out _))

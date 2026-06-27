@@ -1,28 +1,27 @@
-// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
+﻿// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Common;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using SharpCompress.Archives.SevenZip;
-using kyxsan.Core;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.IO;
-using kyxsan.Core.Setting;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Factory.Progress;
-using kyxsan.Service.Notification;
-using kyxsan.Web.Request.Builder;
-using kyxsan.Web.Request.Builder.Abstraction;
+using Launcher.Core;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.IO;
+using Launcher.Core.Setting;
+using Launcher.Factory.ContentDialog;
+using Launcher.Factory.Progress;
+using Launcher.Service.Notification;
+using Launcher.Web.Request.Builder;
+using Launcher.Web.Request.Builder.Abstraction;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.IO.Compression;
 using System.Net;
 using System.Net.Http;
 using System.Net.Sockets;
-using Windows.System;
 
-namespace kyxsan.UI.Xaml.View.Dialog;
+namespace Launcher.UI.Xaml.View.Dialog;
 
 [DependencyProperty<ObservableCollection<AdvancedStartProgramOption>>("Programs")]
 [DependencyProperty<AdvancedStartProgramOption>("SelectedProgram", PropertyChangedCallbackName = nameof(OnSelectedProgramChanged))]
@@ -52,7 +51,7 @@ internal sealed partial class LaunchGameAdvancedStartDownloadDialog : ContentDia
 
     partial void PostConstruct(IServiceProvider serviceProvider)
     {
-        httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(kyxsanRuntime.UserAgent);
+        httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(LauncherRuntime.UserAgent);
         downloadProgress = serviceProvider.GetRequiredService<IProgressFactory>().CreateForMainThread<StreamCopyStatus>(UpdateDownloadProgress);
         Programs = [];
     }
@@ -77,7 +76,7 @@ internal sealed partial class LaunchGameAdvancedStartDownloadDialog : ContentDia
         StatusText = SH.ViewDialogLaunchGameAdvancedStartLoading;
         UpdateCanDownload();
 
-        string feedEndpoint = LocalSetting.Get(SettingKeys.LaunchAdvancedStartFeedEndpoint, "https://kyxsanfeed.pages.dev/programs.json");
+        string feedEndpoint = LocalSetting.Get(SettingKeys.LaunchAdvancedStartFeedEndpoint, "https://Launcherfeed.pages.dev/programs.json");
         if (string.IsNullOrWhiteSpace(feedEndpoint))
         {
             HasError = true;
@@ -236,27 +235,27 @@ internal sealed partial class LaunchGameAdvancedStartDownloadDialog : ContentDia
                 case SocketError.HostNotFound:  // 11001 - DNS解析失败
                                                 // 专门处理DNS解析失败，提供更详细的用户指导
                     string hostName = message.RequestUri?.Host ?? SH.ViewDialogLaunchGameAdvancedStartUnknownServer;
-                    throw kyxsanException.InvalidOperation(
+                    throw LauncherException.InvalidOperation(
                         string.Format(SH.ViewDialogLaunchGameAdvancedStartDnsFailed, hostName));
 
                 case SocketError.ConnectionRefused:  // 10061 - 连接被拒绝
-                    throw kyxsanException.InvalidOperation(SH.ViewDialogLaunchGameAdvancedStartConnectionRefused);
+                    throw LauncherException.InvalidOperation(SH.ViewDialogLaunchGameAdvancedStartConnectionRefused);
 
                 case SocketError.TimedOut:  // 10060 - 连接超时
-                    throw kyxsanException.InvalidOperation(SH.ViewDialogLaunchGameAdvancedStartTimedOut);
+                    throw LauncherException.InvalidOperation(SH.ViewDialogLaunchGameAdvancedStartTimedOut);
 
                 case SocketError.NetworkDown:  // 10050 - 网络不可用
-                    throw kyxsanException.InvalidOperation(SH.ViewDialogLaunchGameAdvancedStartNetworkDown);
+                    throw LauncherException.InvalidOperation(SH.ViewDialogLaunchGameAdvancedStartNetworkDown);
 
                 case SocketError.NetworkUnreachable:  // 10051 - 网络不可达
-                    throw kyxsanException.InvalidOperation(SH.ViewDialogLaunchGameAdvancedStartNetworkUnreachable);
+                    throw LauncherException.InvalidOperation(SH.ViewDialogLaunchGameAdvancedStartNetworkUnreachable);
 
                 case SocketError.NoData:  // 10054 - DNS查询成功但无记录
-                    throw kyxsanException.InvalidOperation(SH.ViewDialogLaunchGameAdvancedStartDnsNoData);
+                    throw LauncherException.InvalidOperation(SH.ViewDialogLaunchGameAdvancedStartDnsNoData);
 
                 default:
                     // 记录原始异常信息以便调试
-                    throw kyxsanException.InvalidOperation(string.Format(SH.ViewDialogLaunchGameAdvancedStartNetworkError, socketEx.Message, socketEx.SocketErrorCode));
+                    throw LauncherException.InvalidOperation(string.Format(SH.ViewDialogLaunchGameAdvancedStartNetworkError, socketEx.Message, socketEx.SocketErrorCode));
             }
         }
         catch (HttpRequestException ex) when (ex.StatusCode.HasValue)
@@ -267,11 +266,11 @@ internal sealed partial class LaunchGameAdvancedStartDownloadDialog : ContentDia
             {
                 string statusCodeDescription = statusCode.ToString();
 
-                throw kyxsanException.InvalidOperation(string.Format(SH.ViewDialogLaunchGameAdvancedStartHttpError, (int)statusCode, statusCodeDescription));
+                throw LauncherException.InvalidOperation(string.Format(SH.ViewDialogLaunchGameAdvancedStartHttpError, (int)statusCode, statusCodeDescription));
             }
             else
             {
-                throw kyxsanException.InvalidOperation(string.Format(SH.ViewDialogLaunchGameAdvancedStartUnknownServerResponse, ex.Message));
+                throw LauncherException.InvalidOperation(string.Format(SH.ViewDialogLaunchGameAdvancedStartUnknownServerResponse, ex.Message));
             }
         }
         catch (HttpRequestException ex)
@@ -282,11 +281,11 @@ internal sealed partial class LaunchGameAdvancedStartDownloadDialog : ContentDia
                 ex.Message.Contains("SSL", StringComparison.OrdinalIgnoreCase) ||
                 ex.Message.Contains("TLS", StringComparison.OrdinalIgnoreCase))
             {
-                throw kyxsanException.InvalidOperation(string.Format(SH.ViewDialogLaunchGameAdvancedStartSecurityFailed, ex.Message));
+                throw LauncherException.InvalidOperation(string.Format(SH.ViewDialogLaunchGameAdvancedStartSecurityFailed, ex.Message));
             }
 
             // 通用网络请求异常
-            throw kyxsanException.InvalidOperation(string.Format(SH.ViewDialogLaunchGameAdvancedStartNetworkRequestFailed, ex.Message));
+            throw LauncherException.InvalidOperation(string.Format(SH.ViewDialogLaunchGameAdvancedStartNetworkRequestFailed, ex.Message));
         }
         catch (TaskCanceledException ex)
         {
@@ -299,40 +298,40 @@ internal sealed partial class LaunchGameAdvancedStartDownloadDialog : ContentDia
             if (ex.CancellationToken.IsCancellationRequested)
             {
                 // 用户主动取消
-                throw kyxsanException.OperationCanceled(string.Format(SH.ViewDialogLaunchGameAdvancedStartDownloadCanceled, program.Name));
+                throw LauncherException.OperationCanceled(string.Format(SH.ViewDialogLaunchGameAdvancedStartDownloadCanceled, program.Name));
             }
             else
             {
                 // 通常是由HttpClient.Timeout引起的超时
                 // 但也可能是网络层的超时
-                throw kyxsanException.InvalidOperation(string.Format(SH.ViewDialogLaunchGameAdvancedStartDownloadTimeout, program.Name));
+                throw LauncherException.InvalidOperation(string.Format(SH.ViewDialogLaunchGameAdvancedStartDownloadTimeout, program.Name));
             }
         }
         catch (OperationCanceledException ex)
         {
             // 处理更通用的取消异常（来自CancellationTokenSource）
-            throw kyxsanException.OperationCanceled(string.Format(SH.ViewDialogLaunchGameAdvancedStartOperationCanceled, ex.Message));
+            throw LauncherException.OperationCanceled(string.Format(SH.ViewDialogLaunchGameAdvancedStartOperationCanceled, ex.Message));
         }
         catch (IOException ex)
         {
             // 处理IO相关的异常（如写入文件时）
-            throw kyxsanException.IO(string.Format(SH.ViewDialogLaunchGameAdvancedStartIOError, ex.Message));
+            throw LauncherException.IO(string.Format(SH.ViewDialogLaunchGameAdvancedStartIOError, ex.Message));
         }
         catch (NotSupportedException ex) when (ex.Message.Contains("Content", StringComparison.OrdinalIgnoreCase))
         {
             // 处理不支持的内容类型
-            throw kyxsanException.InvalidOperation(string.Format(SH.ViewDialogLaunchGameAdvancedStartUnsupportedContentType, ex.Message));
+            throw LauncherException.InvalidOperation(string.Format(SH.ViewDialogLaunchGameAdvancedStartUnsupportedContentType, ex.Message));
         }
         catch (InvalidOperationException ex) when (ex.Message.Contains("headers", StringComparison.OrdinalIgnoreCase))
         {
             // 处理无效的HTTP头
-            throw kyxsanException.InvalidOperation(string.Format(SH.ViewDialogLaunchGameAdvancedStartInvalidHeaders, ex.Message));
+            throw LauncherException.InvalidOperation(string.Format(SH.ViewDialogLaunchGameAdvancedStartInvalidHeaders, ex.Message));
         }
         catch (Exception ex)
         {
             // 其他未预期的异常
             // 提供用户友好的错误信息，同时保留技术细节供技术支持
-            throw kyxsanException.InvalidOperation(
+            throw LauncherException.InvalidOperation(
                 string.Format(SH.ViewDialogLaunchGameAdvancedStartUnknownError, program.Name, ex.GetType().Name));
         }
         finally
@@ -357,7 +356,7 @@ internal sealed partial class LaunchGameAdvancedStartDownloadDialog : ContentDia
 
             tempStream.Seek(0, SeekOrigin.Begin);
 
-            string baseFolder = Path.Combine(kyxsanRuntime.DataDirectory, "AdvancedStart");
+            string baseFolder = Path.Combine(LauncherRuntime.DataDirectory, "AdvancedStart");
             Directory.CreateDirectory(baseFolder);
 
             string targetFolder = Path.Combine(baseFolder, SanitizePathSegment(program.Name), SanitizePathSegment(string.IsNullOrWhiteSpace(program.Version) ? "latest" : program.Version));
@@ -373,7 +372,7 @@ internal sealed partial class LaunchGameAdvancedStartDownloadDialog : ContentDia
             string? executablePath = ResolveExecutablePath(targetFolder, program.Entry);
             if (string.IsNullOrWhiteSpace(executablePath))
             {
-                throw kyxsanException.InvalidOperation(SH.ViewDialogLaunchGameAdvancedStartExecutableMissing);
+                throw LauncherException.InvalidOperation(SH.ViewDialogLaunchGameAdvancedStartExecutableMissing);
             }
 
             return executablePath;
@@ -590,10 +589,10 @@ internal sealed partial class LaunchGameAdvancedStartDownloadDialog : ContentDia
 
     private async void ViewDialogLaunchGameAdvancedStartInfoBarButton_Click(object sender, RoutedEventArgs e)
     {
-        string baseFolder = Path.Combine(kyxsanRuntime.DataDirectory, "AdvancedStart");
+        string baseFolder = Path.Combine(LauncherRuntime.DataDirectory, "AdvancedStart");
         if (Directory.Exists(baseFolder))
         {
-            await Launcher.LaunchFolderPathAsync(baseFolder);
+            await Windows.System.Launcher.LaunchFolderPathAsync(baseFolder);
         }
         else
         {

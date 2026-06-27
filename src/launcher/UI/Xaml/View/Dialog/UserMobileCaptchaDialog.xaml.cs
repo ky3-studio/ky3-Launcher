@@ -1,25 +1,25 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Input;
-using kyxsan.Core.DependencyInjection.Abstraction;
-using kyxsan.Core.Logging;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Service.Geetest;
-using kyxsan.Web.Hoyolab.Passport;
-using kyxsan.Web.Response;
+using Launcher.Core.DependencyInjection.Abstraction;
+using Launcher.Core.Logging;
+using Launcher.Factory.ContentDialog;
+using Launcher.Service.Geetest;
+using Launcher.Web.Hoyolab.Passport;
+using Launcher.Web.Response;
 using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 using Windows.System;
 
-namespace kyxsan.UI.Xaml.View.Dialog;
+namespace Launcher.UI.Xaml.View.Dialog;
 
 internal sealed partial class UserMobileCaptchaDialog : ContentDialog, IPassportMobileCaptchaProvider, INotifyPropertyChanged
 {

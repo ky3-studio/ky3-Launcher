@@ -1,13 +1,13 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Model.Intrinsic;
-using kyxsan.Model.Metadata.Converter;
-using kyxsan.Model.Metadata.Weapon;
+using Launcher.Model.Intrinsic;
+using Launcher.Model.Metadata.Converter;
+using Launcher.Model.Metadata.Weapon;
 
-namespace kyxsan.UI.Xaml.View.Dialog;
+namespace Launcher.UI.Xaml.View.Dialog;
 
 internal sealed partial class CultivateWeaponLevelItem : ObservableObject
 {

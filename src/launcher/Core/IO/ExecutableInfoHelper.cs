@@ -1,11 +1,11 @@
-// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
+﻿// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 
-namespace kyxsan.Core.IO;
+namespace Launcher.Core.IO;
 
 internal static class ExecutableInfoHelper
 {

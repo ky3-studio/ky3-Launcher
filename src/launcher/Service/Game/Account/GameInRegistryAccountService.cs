@@ -1,21 +1,21 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.ExceptionService;
-using kyxsan.Model.Entity;
-using kyxsan.Model.Entity.Primitive;
-using kyxsan.Service.Notification;
-using kyxsan.UI.Xaml.Data;
-using kyxsan.Web.Response;
+using Launcher.Core.ExceptionService;
+using Launcher.Model.Entity;
+using Launcher.Model.Entity.Primitive;
+using Launcher.Service.Notification;
+using Launcher.UI.Xaml.Data;
+using Launcher.Web.Response;
 using System.Collections.Immutable;
 
-namespace kyxsan.Service.Game.Account;
+namespace Launcher.Service.Game.Account;
 
 [Service(ServiceLifetime.Singleton, typeof(IGameInRegistryAccountService))]
 internal sealed partial class GameInRegistryAccountService : IGameInRegistryAccountService
@@ -53,7 +53,7 @@ internal sealed partial class GameInRegistryAccountService : IGameInRegistryAcco
     public async ValueTask<GameAccount?> DetectCurrentGameAccountAsync(SchemeType schemeType, Func<string, Task<ValueResult<bool, string?>>> providerNameCallback)
     {
         ArgumentNullException.ThrowIfNull(gameAccounts);
-        kyxsanException.NotSupportedIf(schemeType is SchemeType.ChineseBilibili, SH.ServiceGameAccountBilibiliNotSupported);
+        LauncherException.NotSupportedIf(schemeType is SchemeType.ChineseBilibili, SH.ServiceGameAccountBilibiliNotSupported);
 
         if (!RegistryInterop.TryGet(schemeType, out string? registrySdk, out string? macAddress, out DataWrapper<ImmutableArray<AccountInformation>>? info))
         {
@@ -125,7 +125,7 @@ internal sealed partial class GameInRegistryAccountService : IGameInRegistryAcco
     public GameAccount? DetectCurrentGameAccount(SchemeType schemeType)
     {
         ArgumentNullException.ThrowIfNull(gameAccounts);
-        kyxsanException.NotSupportedIf(schemeType is SchemeType.ChineseBilibili, SH.ServiceGameAccountBilibiliNotSupported);
+        LauncherException.NotSupportedIf(schemeType is SchemeType.ChineseBilibili, SH.ServiceGameAccountBilibiliNotSupported);
 
         return RegistryInterop.TryGet(schemeType, out string? registrySdk, out _, out _)
             ? SingleGameAccountMatchAdlOrDefault(gameAccounts.Source.AsReadOnly(), registrySdk)
@@ -170,7 +170,7 @@ internal sealed partial class GameInRegistryAccountService : IGameInRegistryAcco
         }
         catch (InvalidOperationException ex)
         {
-            throw kyxsanException.Throw(SH.ServiceGameDetectGameAccountMultiMatched, ex);
+            throw LauncherException.Throw(SH.ServiceGameDetectGameAccountMultiMatched, ex);
         }
     }
 
@@ -182,7 +182,7 @@ internal sealed partial class GameInRegistryAccountService : IGameInRegistryAcco
         }
         catch (InvalidOperationException ex)
         {
-            throw kyxsanException.Throw(SH.ServiceGameDetectGameAccountMultiMatched, ex);
+            throw LauncherException.Throw(SH.ServiceGameDetectGameAccountMultiMatched, ex);
         }
     }
 }

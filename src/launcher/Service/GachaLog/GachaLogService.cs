@@ -1,32 +1,32 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core;
-using kyxsan.Core.Database;
-using kyxsan.Core.Diagnostics;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Model.Entity;
-using kyxsan.Model.Intrinsic;
-using kyxsan.Model.Metadata.Abstraction;
-using kyxsan.Service.GachaLog.Factory;
-using kyxsan.Service.GachaLog.QueryProvider;
-using kyxsan.Service.GachaLog.UIGF;
-using Avatar = kyxsan.Model.Metadata.Avatar.Avatar;
-using Weapon = kyxsan.Model.Metadata.Weapon.Weapon;
-using kyxsan.ViewModel.GachaLog;
-using kyxsan.Web.Hoyolab.Hk4e.Event.GachaInfo;
-using kyxsan.Web.Response;
+using Launcher.Core;
+using Launcher.Core.Database;
+using Launcher.Core.Diagnostics;
+using Launcher.Core.ExceptionService;
+using Launcher.Model.Entity;
+using Launcher.Model.Intrinsic;
+using Launcher.Model.Metadata.Abstraction;
+using Launcher.Service.GachaLog.Factory;
+using Launcher.Service.GachaLog.QueryProvider;
+using Launcher.Service.GachaLog.UIGF;
+using Avatar = Launcher.Model.Metadata.Avatar.Avatar;
+using Weapon = Launcher.Model.Metadata.Weapon.Weapon;
+using Launcher.ViewModel.GachaLog;
+using Launcher.Web.Hoyolab.Hk4e.Event.GachaInfo;
+using Launcher.Web.Response;
 using System.Collections.Immutable;
 using System.Globalization;
 using System.IO;
 
-namespace kyxsan.Service.GachaLog;
+namespace Launcher.Service.GachaLog;
 
 [Service(ServiceLifetime.Scoped, typeof(IGachaLogService))]
 internal sealed partial class GachaLogService : IGachaLogService
@@ -66,7 +66,7 @@ internal sealed partial class GachaLogService : IGachaLogService
         {
             RefreshStrategyKind.AggressiveMerge => false,
             RefreshStrategyKind.LazyMerge => true,
-            _ => throw kyxsanException.NotSupported(),
+            _ => throw LauncherException.NotSupported(),
         };
 
         (bool authkeyValid, GachaArchive? target) = await FetchGachaLogsAsync(context, query, isLazy, progress, token).ConfigureAwait(false);
@@ -261,8 +261,8 @@ internal sealed partial class GachaLogService : IGachaLogService
                 Info = new UIGFInfo
                 {
                     ExportTimestamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds(),
-                    ExportApp = "kyxsan",
-                    ExportAppVersion = kyxsanRuntime.Version.ToString(),
+                    ExportApp = "Launcher",
+                    ExportAppVersion = LauncherRuntime.Version.ToString(),
                     UIGFVersion = "v2.3",
                     Uid = archive.Uid,
                     Lang = "zh-cn",
@@ -278,8 +278,8 @@ internal sealed partial class GachaLogService : IGachaLogService
                 Info = new UIGFInfo
                 {
                     ExportTimestamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds(),
-                    ExportApp = "kyxsan",
-                    ExportAppVersion = kyxsanRuntime.Version.ToString(),
+                    ExportApp = "Launcher",
+                    ExportAppVersion = LauncherRuntime.Version.ToString(),
                     Version = "v4.0",
                 },
                 Hk4e =

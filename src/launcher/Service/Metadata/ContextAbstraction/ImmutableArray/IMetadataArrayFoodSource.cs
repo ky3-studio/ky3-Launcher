@@ -1,7 +1,7 @@
-using kyxsan.Model.Metadata.Food;
+﻿using Launcher.Model.Metadata.Food;
 using System.Collections.Immutable;
 
-namespace kyxsan.Service.Metadata.ContextAbstraction.ImmutableArray;
+namespace Launcher.Service.Metadata.ContextAbstraction.ImmutableArray;
 
 internal interface IMetadataArrayFoodSource
 {

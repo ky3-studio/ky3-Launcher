@@ -1,22 +1,22 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 // Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
-using kyxsan.Core;
-using kyxsan.Core.Diagnostics;
-using kyxsan.Core.LifeCycle.InterProcess.FullTrust;
-using kyxsan.Win32;
-using kyxsan.Win32.Foundation;
+using Launcher.Core;
+using Launcher.Core.Diagnostics;
+using Launcher.Core.LifeCycle.InterProcess.FullTrust;
+using Launcher.Win32;
+using Launcher.Win32.Foundation;
 using System.IO;
 
-namespace kyxsan.Factory.Process;
+namespace Launcher.Factory.Process;
 
 internal sealed class ProcessFactory
 {
@@ -73,7 +73,7 @@ internal sealed class ProcessFactory
                 catch (Exception ex)
                 {
                     // Assume it's running if access is denied.
-                    if (!kyxsanNative.IsWin32(ex.HResult, WIN32_ERROR.ERROR_ACCESS_DENIED))
+                    if (!LauncherNative.IsWin32(ex.HResult, WIN32_ERROR.ERROR_ACCESS_DENIED))
                     {
                         throw;
                     }
@@ -152,7 +152,7 @@ internal sealed class ProcessFactory
             {
                 fixed (char* pWorkingDirectory = workingDirectory)
                 {
-                    kyxsanNativeProcessStartInfo startInfo = new()
+                    LauncherNativeProcessStartInfo startInfo = new()
                     {
                         ApplicationName = pFileName,
                         CommandLine = pArguments,
@@ -161,7 +161,7 @@ internal sealed class ProcessFactory
                         CurrentDirectory = pWorkingDirectory,
                     };
 
-                    return new NativeProcess(kyxsanNative.Instance.MakeProcess(startInfo));
+                    return new NativeProcess(LauncherNative.Instance.MakeProcess(startInfo));
                 }
             }
         }
@@ -169,8 +169,8 @@ internal sealed class ProcessFactory
 
     public static IProcess CreateUsingFullTrustSuspended(string arguments, string fileName, string workingDirectory)
     {
-        string repoDirectory = kyxsanRuntime.GetDataRepositoryDirectory();
-        string fullTrustFilePath = Path.Combine(repoDirectory, "Snap.ContentDelivery", "kyxsan.FullTrust.exe");
+        string repoDirectory = LauncherRuntime.GetDataRepositoryDirectory();
+        string fullTrustFilePath = Path.Combine(repoDirectory, "Snap.ContentDelivery", "Launcher.FullTrust.exe");
 
         if (!File.Exists(fullTrustFilePath))
         {
@@ -225,11 +225,11 @@ internal sealed class ProcessFactory
         }
         catch
         {
-            // filename含有kyxsan.Unpackaged时回退到kyxsan.exe
-            if (fileName.Contains("kyxsan.Unpackaged"))
+            // filename含有Launcher.Unpackaged时回退到Launcher.exe
+            if (fileName.Contains("Launcher.Unpackaged"))
             {
                 string currentDirectory = Directory.GetCurrentDirectory();
-                string unpackagedPath = Path.Combine(currentDirectory, "kyxsan.exe");
+                string unpackagedPath = Path.Combine(currentDirectory, "Launcher.exe");
                 if (File.Exists(unpackagedPath))
                 {
                     fileName = unpackagedPath;

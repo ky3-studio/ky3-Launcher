@@ -1,36 +1,36 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using JetBrains.Annotations;
-using kyxsan.Core.Setting;
-using kyxsan.Model;
-using kyxsan.Service.Notification;
-using kyxsan.Win32;
-using kyxsan.Win32.Foundation;
-using kyxsan.Win32.UI.Input.KeyboardAndMouse;
+using Launcher.Core.Setting;
+using Launcher.Model;
+using Launcher.Service.Notification;
+using Launcher.Win32;
+using Launcher.Win32.Foundation;
+using Launcher.Win32.UI.Input.KeyboardAndMouse;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace kyxsan.UI.Input.HotKey;
+namespace Launcher.UI.Input.HotKey;
 
 internal sealed partial class HotKeyCombination : ObservableObject, IDisposable
 {
     private readonly IMessenger messenger;
-    private readonly kyxsanNativeHotKeyActionKind kind;
+    private readonly LauncherNativeHotKeyActionKind kind;
     private readonly string settingKey;
     private GCHandle<HotKeyCombination> handle;
 
-    private kyxsanNativeHotKeyAction? native;
+    private LauncherNativeHotKeyAction? native;
 
-    public HotKeyCombination(IServiceProvider serviceProvider, kyxsanNativeHotKeyActionKind kind, string settingKey)
+    public HotKeyCombination(IServiceProvider serviceProvider, LauncherNativeHotKeyActionKind kind, string settingKey)
     {
         messenger = serviceProvider.GetRequiredService<IMessenger>();
         this.kind = kind;
@@ -175,7 +175,7 @@ internal sealed partial class HotKeyCombination : ObservableObject, IDisposable
 
     public unsafe void Initialize()
     {
-        native = kyxsanNative.Instance.MakeHotKeyAction(kind, kyxsanNativeHotKeyActionCallback.Create(&OnAction), handle);
+        native = LauncherNative.Instance.MakeHotKeyAction(kind, LauncherNativeHotKeyActionCallback.Create(&OnAction), handle);
         native.IsEnabled = LocalSetting.Get($"{settingKey}.IsEnabled", false);
         SaveAndUpdate();
     }
@@ -271,7 +271,7 @@ internal sealed partial class HotKeyCombination : ObservableObject, IDisposable
         }
         catch (Exception ex)
         {
-            if (kyxsanNative.IsWin32(ex.HResult, WIN32_ERROR.ERROR_HOTKEY_ALREADY_REGISTERED))
+            if (LauncherNative.IsWin32(ex.HResult, WIN32_ERROR.ERROR_HOTKEY_ALREADY_REGISTERED))
             {
                 messenger.Send(InfoBarMessage.Warning(SH.FormatCoreWindowHotkeyCombinationRegisterFailed(kind, DisplayName)));
             }

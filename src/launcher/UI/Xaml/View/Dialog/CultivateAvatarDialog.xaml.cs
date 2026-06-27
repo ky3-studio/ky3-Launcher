@@ -1,13 +1,13 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Model.Metadata.Avatar;
+using Launcher.Factory.ContentDialog;
+using Launcher.Model.Metadata.Avatar;
 using System.Collections.Immutable;
 
-namespace kyxsan.UI.Xaml.View.Dialog;
+namespace Launcher.UI.Xaml.View.Dialog;
 
 internal sealed partial class CultivateAvatarDialog : ContentDialog
 {

@@ -1,13 +1,13 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Model.Entity.Abstraction;
-using kyxsan.Model.Entity.Primitive;
+using Launcher.Model.Entity.Abstraction;
+using Launcher.Model.Entity.Primitive;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace kyxsan.Model.Entity;
+namespace Launcher.Model.Entity;
 
 [Table("cultivate_entries")]
 internal sealed class CultivateEntry : IAppDbEntity

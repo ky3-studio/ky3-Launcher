@@ -1,17 +1,17 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Factory.ContentDialog;
-using kyxsan.UI.Xaml.View.Dialog;
-using kyxsan.Web.Hoyolab.Passport;
+using Launcher.Factory.ContentDialog;
+using Launcher.UI.Xaml.View.Dialog;
+using Launcher.Web.Hoyolab.Passport;
 
-namespace kyxsan.Service.User;
+namespace Launcher.Service.User;
 
 [Service(ServiceLifetime.Transient, typeof(IUserVerificationService))]
 internal sealed partial class UserVerificationService : IUserVerificationService

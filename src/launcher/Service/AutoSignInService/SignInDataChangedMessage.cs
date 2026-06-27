@@ -1,9 +1,9 @@
-// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
+﻿// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
-using kyxsan.ViewModel.User;
+using Launcher.ViewModel.User;
 
-namespace kyxsan.Service.AutoSignIn;
+namespace Launcher.Service.AutoSignIn;
 
 internal sealed class SignInDataChangedMessage
 {

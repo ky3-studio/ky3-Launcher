@@ -1,9 +1,9 @@
-// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
+﻿// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace kyxsan.Service.Game.AdvancedStart.Model;
+namespace Launcher.Service.Game.AdvancedStart.Model;
 
 internal sealed partial class AdvancedStartDelayedProgramEntry : ObservableObject
 {

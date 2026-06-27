@@ -1,21 +1,21 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI;
-using kyxsan.Core;
-using kyxsan.Model.Intrinsic;
-using kyxsan.UI.Xaml.Control.Theme;
-using kyxsan.UI.Xaml.Data.Converter;
+using Launcher.Core;
+using Launcher.Model.Intrinsic;
+using Launcher.UI.Xaml.Control.Theme;
+using Launcher.UI.Xaml.Data.Converter;
 using System.Collections.Frozen;
 using Windows.UI;
 
-namespace kyxsan.Model.Metadata.Converter;
+namespace Launcher.Model.Metadata.Converter;
 
 internal sealed partial class QualityColorConverter : ValueConverter<QualityType, Color>
 {

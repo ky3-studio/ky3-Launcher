@@ -1,9 +1,9 @@
-using kyxsan.Model.Intrinsic;
-using kyxsan.UI.Xaml.Data;
+﻿using Launcher.Model.Intrinsic;
+using Launcher.UI.Xaml.Data;
 using System.Collections.Immutable;
 using System.Text.RegularExpressions;
 
-namespace kyxsan.Model.Metadata.Food;
+namespace Launcher.Model.Metadata.Food;
 
 internal sealed partial class Food : IPropertyValuesProvider
 {

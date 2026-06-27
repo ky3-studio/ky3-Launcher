@@ -1,12 +1,12 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Model.Entity;
+using Launcher.Factory.ContentDialog;
+using Launcher.Model.Entity;
 
-namespace kyxsan.UI.Xaml.View.Dialog;
+namespace Launcher.UI.Xaml.View.Dialog;
 
 [DependencyProperty<string>("Text")]
 internal sealed partial class CultivateProjectDialog : ContentDialog

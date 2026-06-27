@@ -1,12 +1,12 @@
-// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
+﻿// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using Google.Protobuf;
 using Microsoft.EntityFrameworkCore;
-using kyxsan.Core.Database;
-using kyxsan.Model.Entity.Database;
+using Launcher.Core.Database;
+using Launcher.Model.Entity.Database;
 
-namespace kyxsan.Service.Abstraction.Property;
+namespace Launcher.Service.Abstraction.Property;
 
 internal sealed partial class ProtobufDbProperty<TMessage> : DbProperty<TMessage>
     where TMessage : class, IMessage<TMessage>, new()

@@ -1,9 +1,9 @@
-using kyxsan.Model;
-using kyxsan.Web.Hoyolab;
+﻿using Launcher.Model;
+using Launcher.Web.Hoyolab;
 using System.Collections.Immutable;
 using System.Diagnostics;
 
-namespace kyxsan.Service;
+namespace Launcher.Service;
 
 internal static class KnownServerRegionTimeZones
 {

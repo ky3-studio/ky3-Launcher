@@ -1,5 +1,5 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.CodeAnalysis;
@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
-namespace kyxsan.SourceGeneration.Extension;
+namespace Launcher.SourceGeneration.Extension;
 
 internal static class AttributeDataExtension
 {

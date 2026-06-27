@@ -1,11 +1,11 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using kyxsan.SourceGeneration.Extension;
-using kyxsan.SourceGeneration.Model;
+using Launcher.SourceGeneration.Extension;
+using Launcher.SourceGeneration.Model;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -15,10 +15,10 @@ using System.Text;
 using System.Text.Json;
 using System.Threading;
 using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
-using static kyxsan.SourceGeneration.Primitive.FastSyntaxFactory;
-using static kyxsan.SourceGeneration.Primitive.SyntaxKeywords;
+using static Launcher.SourceGeneration.Primitive.FastSyntaxFactory;
+using static Launcher.SourceGeneration.Primitive.SyntaxKeywords;
 
-namespace kyxsan.SourceGeneration.Automation;
+namespace Launcher.SourceGeneration.Automation;
 
 [Generator(LanguageNames.CSharp)]
 internal sealed class ApiEndpointsGenerator : IIncrementalGenerator
@@ -66,7 +66,7 @@ internal sealed class ApiEndpointsGenerator : IIncrementalGenerator
         IdentifierNameSyntax interfaceIdentifier = IdentifierName(interfaceName);
 
         CompilationUnitSyntax compilation = CompilationUnit()
-            .WithMembers(SingletonList<MemberDeclarationSyntax>(FileScopedNamespaceDeclaration(context.ExtraInfo?.Namespace ?? "kyxsan.Web")
+            .WithMembers(SingletonList<MemberDeclarationSyntax>(FileScopedNamespaceDeclaration(context.ExtraInfo?.Namespace ?? "Launcher.Web")
                 .WithLeadingTrivia(NullableEnableTriviaList)
                 .WithMembers(
                     List<MemberDeclarationSyntax>(
@@ -142,7 +142,7 @@ internal sealed class ApiEndpointsGenerator : IIncrementalGenerator
             {
                 if (insideQuotes && i + 1 < line.Length && line[i + 1] == '"')
                 {
-                    // 处理双引号转�?
+                    // 处理双引号转�?
                     currentField.Append('"');
                     i++;
                 }
@@ -162,7 +162,7 @@ internal sealed class ApiEndpointsGenerator : IIncrementalGenerator
             }
         }
 
-        // 添加最后一个字�?
+        // 添加最后一个字�?
         fields.Add(currentField.ToString());
 
         return fields;

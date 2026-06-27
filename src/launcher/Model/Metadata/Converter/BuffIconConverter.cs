@@ -1,7 +1,7 @@
-using kyxsan.UI.Xaml.Data.Converter;
-using kyxsan.Web.Endpoint.kyxsan;
+﻿using Launcher.UI.Xaml.Data.Converter;
+using Launcher.Web.Endpoint.Launcher;
 
-namespace kyxsan.Model.Metadata.Converter;
+namespace Launcher.Model.Metadata.Converter;
 
 internal sealed partial class BuffIconConverter : ValueConverter<string, Uri>
 {

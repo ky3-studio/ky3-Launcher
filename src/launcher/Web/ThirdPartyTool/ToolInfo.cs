@@ -1,4 +1,4 @@
-namespace kyxsan.Web.ThirdPartyTool;
+﻿namespace Launcher.Web.ThirdPartyTool;
 
 internal sealed class ToolInfo
 {

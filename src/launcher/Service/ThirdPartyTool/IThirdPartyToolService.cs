@@ -1,7 +1,7 @@
-using kyxsan.Web.ThirdPartyTool;
+﻿using Launcher.Web.ThirdPartyTool;
 using System.Collections.Immutable;
 
-namespace kyxsan.Service.ThirdPartyTool;
+namespace Launcher.Service.ThirdPartyTool;
 
 internal interface IThirdPartyToolService
 {

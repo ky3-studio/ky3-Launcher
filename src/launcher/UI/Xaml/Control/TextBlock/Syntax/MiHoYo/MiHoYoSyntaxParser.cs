@@ -1,16 +1,16 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.ExceptionService;
+using Launcher.Core.ExceptionService;
 using System.Collections.Immutable;
 
-namespace kyxsan.UI.Xaml.Control.TextBlock.Syntax.MiHoYo;
+namespace Launcher.UI.Xaml.Control.TextBlock.Syntax.MiHoYo;
 
 internal ref struct MiHoYoSyntaxParser
 {
@@ -50,7 +50,7 @@ internal ref struct MiHoYoSyntaxParser
             MiHoYoSyntaxTokenKind.LinkOpen => ParseLink(),
             MiHoYoSyntaxTokenKind.SpritePreset => ParseSpritePreset(),
             MiHoYoSyntaxTokenKind.Parameter => ParseParameter(),
-            _ => throw kyxsanException.Throw($"Unexpected token: {current.Kind}"),
+            _ => throw LauncherException.Throw($"Unexpected token: {current.Kind}"),
         };
     }
 
@@ -74,7 +74,7 @@ internal ref struct MiHoYoSyntaxParser
 
         if (current.Kind is not MiHoYoSyntaxTokenKind.ItalicClose)
         {
-            throw kyxsanException.Throw("Expected </i>");
+            throw LauncherException.Throw("Expected </i>");
         }
 
         int end = current.Position.End;
@@ -96,7 +96,7 @@ internal ref struct MiHoYoSyntaxParser
 
         if (current.Kind is not MiHoYoSyntaxTokenKind.ColorClose)
         {
-            throw kyxsanException.Throw("Expected </color>");
+            throw LauncherException.Throw("Expected </color>");
         }
 
         int closeEnd = current.Position.End;
@@ -118,7 +118,7 @@ internal ref struct MiHoYoSyntaxParser
 
         if (current.Kind is not MiHoYoSyntaxTokenKind.LinkClose)
         {
-            throw kyxsanException.Throw("Expected {/LINK}");
+            throw LauncherException.Throw("Expected {/LINK}");
         }
 
         int closeEnd = current.Position.End;

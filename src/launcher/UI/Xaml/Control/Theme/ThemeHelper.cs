@@ -1,17 +1,17 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Composition.SystemBackdrops;
 using Microsoft.UI.Xaml;
-using kyxsan.Core.ExceptionService;
+using Launcher.Core.ExceptionService;
 
-namespace kyxsan.UI.Xaml.Control.Theme;
+namespace Launcher.UI.Xaml.Control.Theme;
 
 internal static class ThemeHelper
 {
@@ -22,38 +22,38 @@ internal static class ThemeHelper
             ElementTheme.Default => SystemBackdropTheme.Default,
             ElementTheme.Light => SystemBackdropTheme.Light,
             ElementTheme.Dark => SystemBackdropTheme.Dark,
-            _ => throw kyxsanException.NotSupported($"Unexpected ElementTheme value: {elementTheme}."),
+            _ => throw LauncherException.NotSupported($"Unexpected ElementTheme value: {elementTheme}."),
         };
     }
 
-    public static kyxsan.UI.Xaml.Theme ElementToFramework(ElementTheme elementTheme)
+    public static Launcher.UI.Xaml.Theme ElementToFramework(ElementTheme elementTheme)
     {
         return elementTheme switch
         {
-            ElementTheme.Default => kyxsan.UI.Xaml.Theme.None,
-            ElementTheme.Light => kyxsan.UI.Xaml.Theme.Light,
-            ElementTheme.Dark => kyxsan.UI.Xaml.Theme.Dark,
-            _ => throw kyxsanException.NotSupported($"Unexpected ElementTheme value: {elementTheme}."),
+            ElementTheme.Default => Launcher.UI.Xaml.Theme.None,
+            ElementTheme.Light => Launcher.UI.Xaml.Theme.Light,
+            ElementTheme.Dark => Launcher.UI.Xaml.Theme.Dark,
+            _ => throw LauncherException.NotSupported($"Unexpected ElementTheme value: {elementTheme}."),
         };
     }
 
-    public static kyxsan.UI.Xaml.Theme ApplicationToFramework(ApplicationTheme applicationTheme)
+    public static Launcher.UI.Xaml.Theme ApplicationToFramework(ApplicationTheme applicationTheme)
     {
         return applicationTheme switch
         {
-            ApplicationTheme.Light => kyxsan.UI.Xaml.Theme.Light,
-            ApplicationTheme.Dark => kyxsan.UI.Xaml.Theme.Dark,
-            _ => throw kyxsanException.NotSupported($"Unexpected ApplicationTheme value: {applicationTheme}."),
+            ApplicationTheme.Light => Launcher.UI.Xaml.Theme.Light,
+            ApplicationTheme.Dark => Launcher.UI.Xaml.Theme.Dark,
+            _ => throw LauncherException.NotSupported($"Unexpected ApplicationTheme value: {applicationTheme}."),
         };
     }
 
-    public static kyxsan.UI.Xaml.Theme ApplicationToFrameworkInvert(ApplicationTheme applicationTheme)
+    public static Launcher.UI.Xaml.Theme ApplicationToFrameworkInvert(ApplicationTheme applicationTheme)
     {
         return applicationTheme switch
         {
-            ApplicationTheme.Light => kyxsan.UI.Xaml.Theme.Dark,
-            ApplicationTheme.Dark => kyxsan.UI.Xaml.Theme.Light,
-            _ => throw kyxsanException.NotSupported($"Unexpected ApplicationTheme value: {applicationTheme}."),
+            ApplicationTheme.Light => Launcher.UI.Xaml.Theme.Dark,
+            ApplicationTheme.Dark => Launcher.UI.Xaml.Theme.Light,
+            _ => throw LauncherException.NotSupported($"Unexpected ApplicationTheme value: {applicationTheme}."),
         };
     }
 

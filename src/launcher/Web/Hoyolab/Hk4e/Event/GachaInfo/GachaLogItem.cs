@@ -1,7 +1,7 @@
-using kyxsan.Core.Text.Json.Annotation;
-using kyxsan.Model.Intrinsic;
+﻿using Launcher.Core.Text.Json.Annotation;
+using Launcher.Model.Intrinsic;
 
-namespace kyxsan.Web.Hoyolab.Hk4e.Event.GachaInfo;
+namespace Launcher.Web.Hoyolab.Hk4e.Event.GachaInfo;
 
 internal sealed class GachaLogItem
 {

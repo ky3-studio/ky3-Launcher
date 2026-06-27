@@ -1,21 +1,21 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.Database;
-using kyxsan.Model.Entity;
-using kyxsan.Model.Entity.Primitive;
-using kyxsan.Model.Metadata.Avatar;
-using kyxsan.Model.Metadata.Item;
-using kyxsan.Model.Metadata.Weapon;
-using kyxsan.Service.Cultivation.Offline;
-using kyxsan.UI.Xaml.View.Dialog;
-using kyxsan.ViewModel.Cultivation;
+using Launcher.Core.Database;
+using Launcher.Model.Entity;
+using Launcher.Model.Entity.Primitive;
+using Launcher.Model.Metadata.Avatar;
+using Launcher.Model.Metadata.Item;
+using Launcher.Model.Metadata.Weapon;
+using Launcher.Service.Cultivation.Offline;
+using Launcher.UI.Xaml.View.Dialog;
+using Launcher.ViewModel.Cultivation;
 using System.Collections.Immutable;
 using System.Collections.ObjectModel;
 using System.Runtime.InteropServices;
 
-namespace kyxsan.Service.Cultivation;
+namespace Launcher.Service.Cultivation;
 
 [Service(ServiceLifetime.Singleton, typeof(ICultivationService))]
 internal sealed partial class CultivationService : ICultivationService

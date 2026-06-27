@@ -1,14 +1,14 @@
-using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Core.IO;
-using kyxsan.Service.Game;
-using kyxsan.Service.Inventory;
-using kyxsan.Service.Notification;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Launcher.Core.IO;
+using Launcher.Service.Game;
+using Launcher.Service.Inventory;
+using Launcher.Service.Notification;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace kyxsan.ViewModel.Inventory;
+namespace Launcher.ViewModel.Inventory;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
@@ -190,7 +190,7 @@ internal sealed partial class InventoryViewModel : Abstraction.ViewModel
 
     private bool LaunchGameWithDll(string gamePath, string gameDir, string dllPath)
     {
-        string configFile = Path.Combine(Path.GetTempPath(), $"kyxsan_inv_{Guid.NewGuid():N}.tmp");
+        string configFile = Path.Combine(Path.GetTempPath(), $"Launcher_inv_{Guid.NewGuid():N}.tmp");
 
         List<string> configLines = [gamePath, string.Empty, gameDir, string.Empty, "1", dllPath];
         File.WriteAllLines(configFile, configLines);

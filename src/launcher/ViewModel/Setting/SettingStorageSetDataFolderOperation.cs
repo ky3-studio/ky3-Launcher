@@ -1,23 +1,23 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core;
-using kyxsan.Core.ApplicationModel;
-using kyxsan.Core.Setting;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Factory.Picker;
-using kyxsan.Service.Notification;
+using Launcher.Core;
+using Launcher.Core.ApplicationModel;
+using Launcher.Core.Setting;
+using Launcher.Factory.ContentDialog;
+using Launcher.Factory.Picker;
+using Launcher.Service.Notification;
 using System.IO;
 using Windows.Storage;
 
-namespace kyxsan.ViewModel.Setting;
+namespace Launcher.ViewModel.Setting;
 
 internal sealed class SettingStorageSetDataFolderOperation
 {
@@ -34,7 +34,7 @@ internal sealed class SettingStorageSetDataFolderOperation
             return false;
         }
 
-        string oldFolderPath = kyxsanRuntime.DataDirectory;
+        string oldFolderPath = LauncherRuntime.DataDirectory;
         if (UrlPath.IsEqualOrSubdirectory(oldFolderPath, newFolderPath))
         {
             return false;

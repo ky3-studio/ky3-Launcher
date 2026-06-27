@@ -1,36 +1,35 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core;
-using kyxsan.Core.ApplicationModel;
-using kyxsan.Core.LifeCycle;
-using kyxsan.Core.Logging;
-using kyxsan.Core.Shell;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Service.Navigation;
-using kyxsan.Service.Notification;
-using kyxsan.Service.Update;
-using kyxsan.Service;
-using kyxsan.Service.RemoteConfig;
-using kyxsan.Core.IO.Http.Proxy;
-using kyxsan.UI.Xaml.Behavior.Action;
-using kyxsan.UI.Xaml.View.Dialog;
-using kyxsan.UI.Xaml.View.Window.WebView2;
-using kyxsan.Web.kyxsan;
+using Launcher.Core;
+using Launcher.Core.ApplicationModel;
+using Launcher.Core.LifeCycle;
+using Launcher.Core.Logging;
+using Launcher.Core.Shell;
+using Launcher.Factory.ContentDialog;
+using Launcher.Service.Navigation;
+using Launcher.Service.Notification;
+using Launcher.Service.Update;
+using Launcher.Service;
+using Launcher.Service.RemoteConfig;
+using Launcher.Core.IO.Http.Proxy;
+using Launcher.UI.Xaml.Behavior.Action;
+using Launcher.UI.Xaml.View.Dialog;
+using Launcher.UI.Xaml.View.Window.WebView2;
+using Launcher.Web.Launcher;
 using System.Diagnostics;
 using System.IO;
-using Windows.System;
 
-namespace kyxsan.ViewModel.Setting;
+namespace Launcher.ViewModel.Setting;
 
 [Service(ServiceLifetime.Scoped)]
 internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigationRecipient
@@ -133,8 +132,8 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
     {
         MakeSubViewModel([Geetest, Appearance, Storage, HotKey, Home, Game]);
 
-        Storage.CacheFolderView = new(taskContext, kyxsanRuntime.LocalCacheDirectory);
-        Storage.DataFolderView = new(taskContext, kyxsanRuntime.DataDirectory);
+        Storage.CacheFolderView = new(taskContext, LauncherRuntime.LocalCacheDirectory);
+        Storage.DataFolderView = new(taskContext, LauncherRuntime.DataDirectory);
         Storage.InstallFolderView = new(taskContext, PackageIdentityAdapter.AppDirectory);
 
         UpdateInfo = updateService.UpdateInfo;
@@ -219,7 +218,7 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
     {
         if (HttpProxyUsingSystemProxy.Instance.CurrentProxyUri is null)
         {
-            _ = Launcher.LaunchUriAsync(uri);
+            _ = Windows.System.Launcher.LaunchUriAsync(uri);
             return;
         }
 
@@ -263,7 +262,7 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
         }
     }
 
-    private async Task DownloadPatchAndRestartAsync(kyxsanPackageInformation packageInfo)
+    private async Task DownloadPatchAndRestartAsync(LauncherPackageInformation packageInfo)
     {
         ITaskContext ctx = serviceProvider.GetRequiredService<ITaskContext>();
 
@@ -289,7 +288,7 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
             return;
         }
 
-        string filesDir = Path.Combine(kyxsanRuntime.DataDirectory, "UpdateCache", "files");
+        string filesDir = Path.Combine(LauncherRuntime.DataDirectory, "UpdateCache", "files");
         int pid = Environment.ProcessId;
         string exeName = Path.GetFileName(Process.GetCurrentProcess().MainModule?.FileName ?? "launcher.exe");
 

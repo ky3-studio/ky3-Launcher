@@ -1,35 +1,35 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.Win32.SafeHandles;
-using kyxsan.Core.DependencyInjection.Abstraction;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.IO;
-using kyxsan.Core.IO.Compression.Zstandard;
-using kyxsan.Core.IO.Hashing;
-using kyxsan.Factory.IO;
-using kyxsan.Service.Game.FileSystem;
-using kyxsan.Service.Game.Package.Advanced.AssetOperation;
-using kyxsan.Service.Game.Package.Advanced.Model;
-using kyxsan.Service.Game.Scheme;
-using kyxsan.Web.Hoyolab.Downloader;
-using kyxsan.Web.Hoyolab.HoyoPlay.Connect.Branch;
-using kyxsan.Web.Hoyolab.HoyoPlay.Connect.DeprecatedFile;
-using kyxsan.Web.Hoyolab.Takumi.Downloader.Proto;
-using kyxsan.Web.Response;
+using Launcher.Core.DependencyInjection.Abstraction;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.IO;
+using Launcher.Core.IO.Compression.Zstandard;
+using Launcher.Core.IO.Hashing;
+using Launcher.Factory.IO;
+using Launcher.Service.Game.FileSystem;
+using Launcher.Service.Game.Package.Advanced.AssetOperation;
+using Launcher.Service.Game.Package.Advanced.Model;
+using Launcher.Service.Game.Scheme;
+using Launcher.Web.Hoyolab.Downloader;
+using Launcher.Web.Hoyolab.HoyoPlay.Connect.Branch;
+using Launcher.Web.Hoyolab.HoyoPlay.Connect.DeprecatedFile;
+using Launcher.Web.Hoyolab.Takumi.Downloader.Proto;
+using Launcher.Web.Response;
 using System.Buffers;
 using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Security.Cryptography;
 
-namespace kyxsan.Service.Game.Package;
+namespace Launcher.Service.Game.Package;
 
 [Service(ServiceLifetime.Transient, typeof(IPackageConverter))]
 internal sealed partial class PackageConverter : IPackageConverter
@@ -510,7 +510,7 @@ internal sealed partial class PackageConverter : IPackageConverter
         {
             // Access to the path is denied.
             // When user install the game in special folder like 'Program Files'
-            throw kyxsanException.Throw(SH.ServiceGamePackageRenameDataFolderFailed, ex);
+            throw LauncherException.Throw(SH.ServiceGamePackageRenameDataFolderFailed, ex);
         }
 
         return true;

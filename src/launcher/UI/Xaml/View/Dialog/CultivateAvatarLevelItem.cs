@@ -1,16 +1,16 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Model.Intrinsic;
-using kyxsan.Model.Metadata.Avatar;
-using kyxsan.Model.Metadata.Converter;
-using kyxsan.Model.Metadata.Weapon;
-using kyxsan.ViewModel.AvatarProperty;
+using Launcher.Model.Intrinsic;
+using Launcher.Model.Metadata.Avatar;
+using Launcher.Model.Metadata.Converter;
+using Launcher.Model.Metadata.Weapon;
+using Launcher.ViewModel.AvatarProperty;
 using System.Collections.Immutable;
 
-namespace kyxsan.UI.Xaml.View.Dialog;
+namespace Launcher.UI.Xaml.View.Dialog;
 
 internal sealed partial class CultivateAvatarLevelItem : ObservableObject
 {

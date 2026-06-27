@@ -1,16 +1,16 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.ExceptionService;
+using Launcher.Core.ExceptionService;
 using System.IO.Pipes;
 
-namespace kyxsan.Core.LifeCycle.InterProcess.FullTrust;
+namespace Launcher.Core.LifeCycle.InterProcess.FullTrust;
 
 internal sealed partial class FullTrustNamedPipeClient : IDisposable
 {
@@ -32,7 +32,7 @@ internal sealed partial class FullTrustNamedPipeClient : IDisposable
             EnsureConnected();
             clientStream.WritePacketWithJsonContent(PrivateNamedPipe.FullTrustVersion, FullTrustPipePacketType.Request, FullTrustPipePacketCommand.Create, request);
             clientStream.ReadPacket(out FullTrustPipePacketHeader header);
-            kyxsanException.ThrowIf(header is not { Type: FullTrustPipePacketType.Response, Command: FullTrustPipePacketCommand.Create }, "Unexpected pipe result");
+            LauncherException.ThrowIf(header is not { Type: FullTrustPipePacketType.Response, Command: FullTrustPipePacketCommand.Create }, "Unexpected pipe result");
         }
     }
 
@@ -43,11 +43,11 @@ internal sealed partial class FullTrustNamedPipeClient : IDisposable
             EnsureConnected();
             clientStream.WritePacket(PrivateNamedPipe.FullTrustVersion, FullTrustPipePacketType.Request, FullTrustPipePacketCommand.StartProcess);
             clientStream.ReadPacket(out FullTrustPipePacketHeader header, out FullTrustStartProcessResult? result);
-            kyxsanException.ThrowIf(header is not { Type: FullTrustPipePacketType.Response, Command: FullTrustPipePacketCommand.StartProcess }, "Unexpected pipe result");
+            LauncherException.ThrowIf(header is not { Type: FullTrustPipePacketType.Response, Command: FullTrustPipePacketCommand.StartProcess }, "Unexpected pipe result");
 
             if (result is null || !result.Succeeded)
             {
-                throw kyxsanException.Throw($"Failed to start full trust process: [{result?.ErrorMessage}]");
+                throw LauncherException.Throw($"Failed to start full trust process: [{result?.ErrorMessage}]");
             }
 
             return result.ProcessId;
@@ -61,11 +61,11 @@ internal sealed partial class FullTrustNamedPipeClient : IDisposable
             EnsureConnected();
             clientStream.WritePacketWithJsonContent(PrivateNamedPipe.FullTrustVersion, FullTrustPipePacketType.Request, FullTrustPipePacketCommand.LoadLibrary, request);
             clientStream.ReadPacket(out FullTrustPipePacketHeader header, out FullTrustLoadLibraryResult? result);
-            kyxsanException.ThrowIf(header is not { Type: FullTrustPipePacketType.Response, Command: FullTrustPipePacketCommand.LoadLibrary }, "Unexpected pipe result");
+            LauncherException.ThrowIf(header is not { Type: FullTrustPipePacketType.Response, Command: FullTrustPipePacketCommand.LoadLibrary }, "Unexpected pipe result");
 
             if (result is null || !result.Succeeded)
             {
-                throw kyxsanException.Throw($"Failed to load library on full trust process: [{result?.ErrorMessage}]");
+                throw LauncherException.Throw($"Failed to load library on full trust process: [{result?.ErrorMessage}]");
             }
         }
     }
@@ -77,11 +77,11 @@ internal sealed partial class FullTrustNamedPipeClient : IDisposable
             EnsureConnected();
             clientStream.WritePacket(PrivateNamedPipe.FullTrustVersion, FullTrustPipePacketType.Request, FullTrustPipePacketCommand.ResumeMainThread);
             clientStream.ReadPacket(out FullTrustPipePacketHeader header, out FullTrustResumeMainThreadResult? result);
-            kyxsanException.ThrowIf(header is not { Type: FullTrustPipePacketType.Response, Command: FullTrustPipePacketCommand.ResumeMainThread }, "Unexpected pipe result");
+            LauncherException.ThrowIf(header is not { Type: FullTrustPipePacketType.Response, Command: FullTrustPipePacketCommand.ResumeMainThread }, "Unexpected pipe result");
 
             if (result is null || !result.Succeeded)
             {
-                throw kyxsanException.Throw($"Failed to resume main thread: [{result?.ErrorMessage}]");
+                throw LauncherException.Throw($"Failed to resume main thread: [{result?.ErrorMessage}]");
             }
 
             clientStream.WritePacket(PrivateNamedPipe.FullTrustVersion, FullTrustPipePacketType.SessionTermination, FullTrustPipePacketCommand.None);

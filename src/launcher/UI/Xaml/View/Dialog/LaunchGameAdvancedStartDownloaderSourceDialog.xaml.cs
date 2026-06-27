@@ -1,13 +1,13 @@
-// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
+﻿// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core.Setting;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Service.Notification;
+using Launcher.Core.Setting;
+using Launcher.Factory.ContentDialog;
+using Launcher.Service.Notification;
 
-namespace kyxsan.UI.Xaml.View.Dialog;
+namespace Launcher.UI.Xaml.View.Dialog;
 
 internal sealed partial class LaunchGameAdvancedStartDownloaderSourceDialog : ContentDialog
 {
@@ -58,8 +58,8 @@ internal sealed partial class LaunchGameAdvancedStartDownloaderSourceDialog : Co
 
     private void Button_Click(object sender, RoutedEventArgs e)
     {
-        LocalSetting.Set(SettingKeys.LaunchAdvancedStartFeedEndpoint, "https://kyxsanfeed.pages.dev/programs.json");
-        ViewDialogLaunchGameAdvancedStartSourceSetterEndpointTextBox.Text = "https://kyxsanfeed.pages.dev/programs.json";
+        LocalSetting.Set(SettingKeys.LaunchAdvancedStartFeedEndpoint, "https://Launcherfeed.pages.dev/programs.json");
+        ViewDialogLaunchGameAdvancedStartSourceSetterEndpointTextBox.Text = "https://Launcherfeed.pages.dev/programs.json";
         messenger.Send(InfoBarMessage.Success(SH.ViewDialogLaunchGameAdvancedStartSourceSetterSaveSuccess));
 
     }

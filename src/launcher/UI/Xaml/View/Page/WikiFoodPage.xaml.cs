@@ -1,7 +1,7 @@
-using kyxsan.UI.Xaml.Control;
-using kyxsan.ViewModel.Wiki;
+﻿using Launcher.UI.Xaml.Control;
+using Launcher.ViewModel.Wiki;
 
-namespace kyxsan.UI.Xaml.View.Page;
+namespace Launcher.UI.Xaml.View.Page;
 
 internal sealed partial class WikiFoodPage : ScopedPage
 {

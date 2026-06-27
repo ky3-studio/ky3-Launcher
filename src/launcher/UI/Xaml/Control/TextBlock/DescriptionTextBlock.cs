@@ -1,10 +1,10 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml;
@@ -13,10 +13,10 @@ using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Documents;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Media.Imaging;
-using kyxsan.Model.Metadata;
-using kyxsan.UI.Xaml.Control.TextBlock.Syntax.MiHoYo;
-using kyxsan.UI.Xaml.Control.Theme;
-using kyxsan.ViewModel.Wiki;
+using Launcher.Model.Metadata;
+using Launcher.UI.Xaml.Control.TextBlock.Syntax.MiHoYo;
+using Launcher.UI.Xaml.Control.Theme;
+using Launcher.ViewModel.Wiki;
 using System.Collections.Immutable;
 using System.Globalization;
 using System.Runtime.CompilerServices;
@@ -26,7 +26,7 @@ using Windows.UI.Text;
 using WinRT;
 using TextBlockType = Microsoft.UI.Xaml.Controls.TextBlock;
 
-namespace kyxsan.UI.Xaml.Control.TextBlock;
+namespace Launcher.UI.Xaml.Control.TextBlock;
 
 [DependencyProperty<string>("Description", PropertyChangedCallbackName = nameof(OnDescriptionChanged))]
 [DependencyProperty<LinkMetadataContext>("LinkContext", PropertyChangedCallbackName = nameof(OnLinkContextChanged))]

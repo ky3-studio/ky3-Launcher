@@ -1,19 +1,19 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.LifeCycle.InterProcess.Model;
-using kyxsan.Core.Security.Principal;
+using Launcher.Core.LifeCycle.InterProcess.Model;
+using Launcher.Core.Security.Principal;
 using System.IO;
 using System.IO.Pipes;
 using System.Security.AccessControl;
 
-namespace kyxsan.Core.LifeCycle.InterProcess;
+namespace Launcher.Core.LifeCycle.InterProcess;
 
 [Service(ServiceLifetime.Singleton)]
 internal sealed partial class PrivateNamedPipeServer : IDisposable
@@ -97,19 +97,19 @@ internal sealed partial class PrivateNamedPipeServer : IDisposable
             switch (header.Type, header.Command)
             {
                 case (PipePacketType.Request, PipePacketCommand.RequestElevationStatus):
-                    ElevationStatusResponse resp = new(kyxsanRuntime.IsProcessElevated, Environment.ProcessId);
+                    ElevationStatusResponse resp = new(LauncherRuntime.IsProcessElevated, Environment.ProcessId);
                     serverStream.WritePacketWithJsonContent(PrivateNamedPipe.PrivateVersion, PipePacketType.Response, PipePacketCommand.ResponseElevationStatus, resp);
                     serverStream.Flush();
                     break;
 
                 case (PipePacketType.Request, PipePacketCommand.RedirectActivation):
-                    kyxsanActivationArguments? kyxsanArgs = serverStream.ReadJsonContent<kyxsanActivationArguments>(in header);
-                    if (kyxsanArgs is not null)
+                    LauncherActivationArguments? LauncherArgs = serverStream.ReadJsonContent<LauncherActivationArguments>(in header);
+                    if (LauncherArgs is not null)
                     {
-                        logger.LogInformation("Redirect activation: [Kind:{Kind}] [Arguments:{Arguments}]", kyxsanArgs.Kind, kyxsanArgs.LaunchActivatedArguments);
+                        logger.LogInformation("Redirect activation: [Kind:{Kind}] [Arguments:{Arguments}]", LauncherArgs.Kind, LauncherArgs.LaunchActivatedArguments);
                     }
 
-                    messageDispatcher.RedirectedActivation(kyxsanArgs);
+                    messageDispatcher.RedirectedActivation(LauncherArgs);
                     break;
 
                 case (PipePacketType.SessionTermination, _):

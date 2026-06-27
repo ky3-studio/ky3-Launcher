@@ -1,13 +1,13 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.Database.Abstraction;
-using kyxsan.UI.Xaml.Data;
+using Launcher.Core.Database.Abstraction;
+using Launcher.UI.Xaml.Data;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace kyxsan.Model.Entity;
+namespace Launcher.Model.Entity;
 
 [Table("cultivate_projects")]
 internal sealed partial class CultivateProject : ISelectable, IPropertyValuesProvider

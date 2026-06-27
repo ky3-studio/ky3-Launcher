@@ -1,21 +1,21 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.ExceptionService;
-using kyxsan.Model.Metadata.Avatar;
-using kyxsan.Model.Primitive;
-using kyxsan.UI.Xaml.Data.Converter;
+using Launcher.Core.ExceptionService;
+using Launcher.Model.Metadata.Avatar;
+using Launcher.Model.Primitive;
+using Launcher.UI.Xaml.Data.Converter;
 using System.Collections.Immutable;
 using System.Globalization;
 using System.Text.RegularExpressions;
 
-namespace kyxsan.Model.Metadata.Converter;
+namespace Launcher.Model.Metadata.Converter;
 
 internal sealed partial class DescriptionsParametersDescriptor : ValueConverter<DescriptionsParameters, IList<LevelParameters<string, ParameterDescription>>>
 {
@@ -58,7 +58,7 @@ internal sealed partial class DescriptionsParametersDescriptor : ValueConverter<
             }
             else
             {
-                kyxsanException.InvalidOperation($"ParameterFormat failed, value: `{desc}`");
+                LauncherException.InvalidOperation($"ParameterFormat failed, value: `{desc}`");
             }
         }
 

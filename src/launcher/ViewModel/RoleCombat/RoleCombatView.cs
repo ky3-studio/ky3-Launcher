@@ -1,24 +1,24 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Model;
-using kyxsan.Model.Entity;
-using kyxsan.Model.Intrinsic;
-using kyxsan.Service.Metadata.ContextAbstraction;
-using kyxsan.UI.Xaml.Data;
-using kyxsan.Web.Hoyolab;
-using kyxsan.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
+using Launcher.Model;
+using Launcher.Model.Entity;
+using Launcher.Model.Intrinsic;
+using Launcher.Service.Metadata.ContextAbstraction;
+using Launcher.UI.Xaml.Data;
+using Launcher.Web.Hoyolab;
+using Launcher.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 using System.Collections.Immutable;
 using System.Globalization;
-using MetadataRoleCombatSchedule = kyxsan.Model.Metadata.RoleCombatSchedule;
+using MetadataRoleCombatSchedule = Launcher.Model.Metadata.RoleCombatSchedule;
 
-namespace kyxsan.ViewModel.RoleCombat;
+namespace Launcher.ViewModel.RoleCombat;
 
 internal sealed partial class RoleCombatView : IEntityAccess<RoleCombatEntry?>, IPropertyValuesProvider
 {

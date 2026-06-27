@@ -1,7 +1,7 @@
-using kyxsan.Model.Metadata.Avatar;
-using kyxsan.Model.Primitive;
+﻿using Launcher.Model.Metadata.Avatar;
+using Launcher.Model.Primitive;
 
-namespace kyxsan.ViewModel.Calendar;
+namespace Launcher.ViewModel.Calendar;
 
 internal sealed class CalendarMetadataContext2
 {

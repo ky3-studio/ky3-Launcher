@@ -1,17 +1,17 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using kyxsan.SourceGeneration.Extension;
-using kyxsan.SourceGeneration.Primitive;
+using Launcher.SourceGeneration.Extension;
+using Launcher.SourceGeneration.Primitive;
 using System.Collections.Immutable;
 using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
-using static kyxsan.SourceGeneration.Primitive.SyntaxKeywords;
+using static Launcher.SourceGeneration.Primitive.SyntaxKeywords;
 
-namespace kyxsan.SourceGeneration.Model;
+namespace Launcher.SourceGeneration.Model;
 
 internal sealed record TypeInfo
 {

@@ -1,22 +1,22 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 // Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
-using kyxsan.Core.Database;
-using kyxsan.ViewModel.User;
-using kyxsan.Web.Hoyolab.Takumi.Binding;
+using Launcher.Core.Database;
+using Launcher.ViewModel.User;
+using Launcher.Web.Hoyolab.Takumi.Binding;
 using System.Collections.Immutable;
-using BindingUser = kyxsan.ViewModel.User.User;
-using EntityUser = kyxsan.Model.Entity.User;
+using BindingUser = Launcher.ViewModel.User.User;
+using EntityUser = Launcher.Model.Entity.User;
 
-namespace kyxsan.Service.User;
+namespace Launcher.Service.User;
 
 [Service(ServiceLifetime.Singleton, typeof(IUserCollectionService))]
 internal sealed partial class UserCollectionService : IUserCollectionService, IDisposable

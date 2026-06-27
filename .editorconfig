@@ -2,6 +2,8 @@
 # General
 charset = utf-8
 end_of_line = crlf
+insert_final_newline = true
+trim_trailing_whitespace = true
 dotnet_style_qualification_for_field = false:suggestion
 dotnet_style_qualification_for_property = false:suggestion
 dotnet_style_qualification_for_method = false:suggestion
@@ -11,6 +13,7 @@ dotnet_style_require_accessibility_modifiers = for_non_interface_members:suggest
 [*.cs]
 # General
 indent_size = 4
+indent_style = space
 tab_width = 4
 
 # C# Specific
@@ -29,7 +32,7 @@ csharp_style_allow_blank_lines_between_consecutive_braces_experimental = false:s
 csharp_style_allow_embedded_statements_on_same_line_experimental = false:silent
 csharp_style_conditional_delegate_call = true:suggestion
 csharp_style_deconstructed_variable_declaration = true:suggestion
-csharp_style_expression_bodied_accessors = when_on_single_line:suggestion
+csharp_style_expression_bodied_accessors = false:silent
 csharp_style_expression_bodied_constructors = false:silent
 csharp_style_expression_bodied_indexers = false:silent
 csharp_style_expression_bodied_lambdas = when_on_single_line:silent

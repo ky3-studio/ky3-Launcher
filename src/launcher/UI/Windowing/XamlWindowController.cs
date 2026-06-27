@@ -1,10 +1,10 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using ABI.Microsoft.UI.Windowing;
@@ -13,19 +13,19 @@ using Microsoft.UI.Composition.SystemBackdrops;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core;
-using kyxsan.Core.LifeCycle;
-using kyxsan.Core.Logging;
-using kyxsan.Core.Property;
-using kyxsan.Core.Setting;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Service;
-using kyxsan.UI.Content;
-using kyxsan.UI.Windowing.Abstraction;
-using kyxsan.UI.Xaml.Control.Theme;
-using kyxsan.UI.Xaml.Media.Backdrop;
-using kyxsan.UI.Xaml.View.Window;
-using kyxsan.Win32.UI.Shell;
+using Launcher.Core;
+using Launcher.Core.LifeCycle;
+using Launcher.Core.Logging;
+using Launcher.Core.Property;
+using Launcher.Core.Setting;
+using Launcher.Factory.ContentDialog;
+using Launcher.Service;
+using Launcher.UI.Content;
+using Launcher.UI.Windowing.Abstraction;
+using Launcher.UI.Xaml.Control.Theme;
+using Launcher.UI.Xaml.Media.Backdrop;
+using Launcher.UI.Xaml.View.Window;
+using Launcher.Win32.UI.Shell;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -37,7 +37,7 @@ using WinRT;
 using WinRT.Interop;
 using AppWindowTitleBar = Microsoft.UI.Windowing.AppWindowTitleBar;
 
-namespace kyxsan.UI.Windowing;
+namespace Launcher.UI.Windowing;
 
 [SuppressMessage("", "CA1001")]
 [SuppressMessage("", "SA1204")]
@@ -61,7 +61,7 @@ internal sealed class XamlWindowController
         subclass = new(window);
         nonRude = new(window.GetWindowHandle());
 
-        window.AppWindow.Title = SH.FormatAppNameAndVersion(kyxsanRuntime.Version);
+        window.AppWindow.Title = SH.FormatAppNameAndVersion(LauncherRuntime.Version);
         window.AppWindow.SetIcon(InstalledLocation.GetAbsolutePath("Assets/Logo.ico"));
 
         // ExtendContentIntoTitleBar

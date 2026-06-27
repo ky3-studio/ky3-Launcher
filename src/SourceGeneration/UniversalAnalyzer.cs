@@ -1,15 +1,15 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
-using kyxsan.SourceGeneration.Extension;
+using Launcher.SourceGeneration.Extension;
 using System.Collections.Immutable;
 
-namespace kyxsan.SourceGeneration;
+namespace Launcher.SourceGeneration;
 
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 internal sealed class UniversalAnalyzer : DiagnosticAnalyzer

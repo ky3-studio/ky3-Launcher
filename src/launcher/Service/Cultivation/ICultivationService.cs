@@ -1,17 +1,17 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.Database;
-using kyxsan.Model.Entity;
-using kyxsan.Model.Metadata.Avatar;
-using kyxsan.Model.Metadata.Weapon;
-using kyxsan.UI.Xaml.View.Dialog;
-using kyxsan.ViewModel.Cultivation;
+using Launcher.Core.Database;
+using Launcher.Model.Entity;
+using Launcher.Model.Metadata.Avatar;
+using Launcher.Model.Metadata.Weapon;
+using Launcher.UI.Xaml.View.Dialog;
+using Launcher.ViewModel.Cultivation;
 using System.Collections.Immutable;
 using System.Collections.ObjectModel;
 
-namespace kyxsan.Service.Cultivation;
+namespace Launcher.Service.Cultivation;
 
 internal interface ICultivationService
 {

@@ -1,20 +1,20 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Win32;
+using Launcher.Win32;
 using System.Diagnostics;
 using System.Net;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-namespace kyxsan.Core.IO.Http.Proxy;
+namespace Launcher.Core.IO.Http.Proxy;
 
 [SuppressMessage("", "CA1001")]
 internal sealed partial class HttpProxyUsingSystemProxy : ObservableObject, IWebProxy
@@ -24,14 +24,14 @@ internal sealed partial class HttpProxyUsingSystemProxy : ObservableObject, IWeb
     private static readonly Uri ProxyTestDestination = "https://github.com/ky3-git".ToUri();
 
     // ReSharper disable once PrivateFieldCanBeConvertedToLocalVariable
-    private readonly kyxsanNativeRegistryNotification native;
+    private readonly LauncherNativeRegistryNotification native;
 
     private unsafe HttpProxyUsingSystemProxy()
     {
         InnerProxy = ConstructSystemProxy(null);
 
-        native = kyxsanNative.Instance.MakeRegistryNotification(ProxySettingPath);
-        native.Start(kyxsanNativeRegistryNotificationCallback.Create(&OnSystemProxySettingsChanged), 0);
+        native = LauncherNative.Instance.MakeRegistryNotification(ProxySettingPath);
+        native.Start(LauncherNativeRegistryNotificationCallback.Create(&OnSystemProxySettingsChanged), 0);
     }
 
     [field: MaybeNull]

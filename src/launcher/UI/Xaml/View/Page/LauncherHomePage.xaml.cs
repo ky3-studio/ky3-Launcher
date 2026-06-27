@@ -6,24 +6,24 @@ using Microsoft.UI.Xaml.Navigation;
 using Microsoft.UI.Xaml.Media.Imaging;
 using Microsoft.UI.Xaml.Hosting;
 using Microsoft.UI.Composition;
-using kyxsan.UI.Xaml.Control;
-using kyxsan.UI.Content;
-using kyxsan.Core;
-using kyxsan.Core.Logging;
-using kyxsan.ViewModel.LauncherHome;
-using kyxsan.Service;
-using kyxsan.Service.BackgroundImage;
+using Launcher.UI.Xaml.Control;
+using Launcher.UI.Content;
+using Launcher.Core;
+using Launcher.Core.Logging;
+using Launcher.ViewModel.LauncherHome;
+using Launcher.Service;
+using Launcher.Service.BackgroundImage;
 using System.IO;
 using System.Net.Http;
 
 #pragma warning disable CA1826
 
-namespace kyxsan.UI.Xaml.View.Page;
+namespace Launcher.UI.Xaml.View.Page;
 
 [SuppressMessage("", "CA1001")]
 internal sealed partial class LauncherHomePage : ScopedPage
 {
-    private static readonly string BgCacheDir = Path.Combine(kyxsanRuntime.LocalCacheDirectory, "BgCache");
+    private static readonly string BgCacheDir = Path.Combine(LauncherRuntime.LocalCacheDirectory, "BgCache");
     private static readonly List<BackgroundInfo> s_backgroundList = [];
     private static readonly Dictionary<int, byte[]> s_bgImageCache = [];
     private static readonly Dictionary<int, byte[]> s_themeImageCache = [];
@@ -81,7 +81,7 @@ internal sealed partial class LauncherHomePage : ScopedPage
             _httpClientFactory = sp.GetRequiredService<IHttpClientFactory>();
         }
 
-        BackgroundImageType bgType = _appOptions?.BackgroundImageType.Value ?? BackgroundImageType.kyxsanOfficialLauncher;
+        BackgroundImageType bgType = _appOptions?.BackgroundImageType.Value ?? BackgroundImageType.LauncherOfficialLauncher;
         string? customPath = _appOptions?.BackgroundImageCustomPath.Value;
 
         HomeCardPanel.Visibility = _appOptions?.HomePageCardVisible.Value == false ? Visibility.Collapsed : Visibility.Visible;
@@ -91,7 +91,7 @@ internal sealed partial class LauncherHomePage : ScopedPage
 
         bool currentShowDynamic = _appOptions?.BackgroundShowDynamic.Value ?? true;
         bool currentShowStatic = _appOptions?.BackgroundShowStatic.Value ?? true;
-        bool filterChanged = bgType == BackgroundImageType.kyxsanOfficialLauncher
+        bool filterChanged = bgType == BackgroundImageType.LauncherOfficialLauncher
             && (s_lastShowDynamic != currentShowDynamic || s_lastShowStatic != currentShowStatic);
 
         if (filterChanged)
@@ -108,7 +108,7 @@ internal sealed partial class LauncherHomePage : ScopedPage
 
         s_lastBackgroundType = bgType;
         s_lastCustomPath = customPath;
-        _suppressStaticImage = bgType == BackgroundImageType.kyxsanOfficialLauncher
+        _suppressStaticImage = bgType == BackgroundImageType.LauncherOfficialLauncher
             && currentShowDynamic && !currentShowStatic;
 
         if (typeChanged)
@@ -124,7 +124,7 @@ internal sealed partial class LauncherHomePage : ScopedPage
                 backdrop.Visibility = Visibility.Collapsed;
             }
 
-            if (!typeChanged && bgType == BackgroundImageType.kyxsanOfficialLauncher && s_cachedFirstBitmap != null && !_suppressStaticImage && !s_isVideoMode)
+            if (!typeChanged && bgType == BackgroundImageType.LauncherOfficialLauncher && s_cachedFirstBitmap != null && !_suppressStaticImage && !s_isVideoMode)
             {
                 _mainView.LauncherBackgroundImage.Source = s_cachedFirstBitmap;
                 _mainView.LauncherBackgroundImage.Opacity = 1;
@@ -166,7 +166,7 @@ internal sealed partial class LauncherHomePage : ScopedPage
                 }
             }
         }
-        else if (bgType == BackgroundImageType.kyxsanOfficialLauncher)
+        else if (bgType == BackgroundImageType.LauncherOfficialLauncher)
         {
             if (!s_isBackgroundInitialized)
             {

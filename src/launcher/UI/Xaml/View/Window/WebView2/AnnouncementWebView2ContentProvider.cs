@@ -1,27 +1,26 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml;
 using Microsoft.Web.WebView2.Core;
-using kyxsan.Core;
-using kyxsan.UI.Xaml.Control.Theme;
-using kyxsan.Web.Hoyolab.Hk4e.Common.Announcement;
-using kyxsan.Win32;
-using kyxsan.Win32.Foundation;
+using Launcher.Core;
+using Launcher.UI.Xaml.Control.Theme;
+using Launcher.Web.Hoyolab.Hk4e.Common.Announcement;
+using Launcher.Win32;
+using Launcher.Win32.Foundation;
 using System.Collections.Frozen;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using Windows.Graphics;
-using Windows.System;
 
-namespace kyxsan.UI.Xaml.View.Window.WebView2;
+namespace Launcher.UI.Xaml.View.Window.WebView2;
 
 [DependencyProperty<Announcement>("Announcement")]
 internal sealed partial class AnnouncementWebView2ContentProvider : DependencyObject, IWebView2ContentProvider
@@ -163,7 +162,7 @@ internal sealed partial class AnnouncementWebView2ContentProvider : DependencyOb
         catch (COMException ex)
         {
             // 组或资源的状态不是执行请求操作的正确状态。
-            if (!kyxsanNative.IsWin32(ex.ErrorCode, WIN32_ERROR.ERROR_INVALID_STATE))
+            if (!LauncherNative.IsWin32(ex.ErrorCode, WIN32_ERROR.ERROR_INVALID_STATE))
             {
                 throw;
             }
@@ -176,7 +175,7 @@ internal sealed partial class AnnouncementWebView2ContentProvider : DependencyOb
 
         if (Uri.TryCreate(url, UriKind.RelativeOrAbsolute, out Uri? uri))
         {
-            _ = Launcher.LaunchUriAsync(uri);
+            _ = Windows.System.Launcher.LaunchUriAsync(uri);
         }
     }
 }

@@ -1,17 +1,17 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Model.Primitive;
+using Launcher.Model.Primitive;
 using System.Collections.Frozen;
 using System.Collections.Immutable;
 
-namespace kyxsan.Model.Metadata.Avatar;
+namespace Launcher.Model.Metadata.Avatar;
 
 internal static class AvatarIds
 {
@@ -53,7 +53,7 @@ internal static class AvatarIds
     public static readonly AvatarId Sucrose = 10000043;
     public static readonly AvatarId Xinyan = 10000044;
     public static readonly AvatarId Rosaria = 10000045;
-    public static readonly AvatarId kyxsan = 10000046;
+    public static readonly AvatarId Launcher = 10000046;
     public static readonly AvatarId Kazuha = 10000047;
     public static readonly AvatarId Feiyan = 10000048;
     public static readonly AvatarId Yoimiya = 10000049;

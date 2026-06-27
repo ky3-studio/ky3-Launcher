@@ -1,23 +1,23 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core.IO;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Factory.Picker;
-using kyxsan.Model.InterChange.Achievement;
-using kyxsan.Service.Achievement;
-using kyxsan.Service.Notification;
-using kyxsan.UI.Xaml.View.Dialog;
-using EntityAchievementArchive = kyxsan.Model.Entity.AchievementArchive;
+using Launcher.Core.IO;
+using Launcher.Factory.ContentDialog;
+using Launcher.Factory.Picker;
+using Launcher.Model.InterChange.Achievement;
+using Launcher.Service.Achievement;
+using Launcher.Service.Notification;
+using Launcher.UI.Xaml.View.Dialog;
+using EntityAchievementArchive = Launcher.Model.Entity.AchievementArchive;
 
-namespace kyxsan.ViewModel.Achievement;
+namespace Launcher.ViewModel.Achievement;
 
 [Service(ServiceLifetime.Scoped)]
 internal sealed partial class AchievementImporter

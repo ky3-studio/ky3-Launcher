@@ -1,15 +1,15 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.ExceptionService;
+using Launcher.Core.ExceptionService;
 
-namespace kyxsan.Web.Hoyolab;
+namespace Launcher.Web.Hoyolab;
 
 [JsonConverter(typeof(RegionConverter))]
 internal readonly struct Region : IEquatable<Region>
@@ -25,7 +25,7 @@ internal readonly struct Region : IEquatable<Region>
 
     public Region(string value)
     {
-        kyxsanException.ThrowIfNot(HoyolabRegex.RegionRegex.IsMatch(value), SH.WebHoyolabInvalidRegion);
+        LauncherException.ThrowIfNot(HoyolabRegex.RegionRegex.IsMatch(value), SH.WebHoyolabInvalidRegion);
         Value = value;
     }
 
@@ -57,13 +57,13 @@ internal readonly struct Region : IEquatable<Region>
             '7' => OSEURO, // 欧服
             '8' => OSASIA, // 亚服
             '9' => OSCHT,  // 台服
-            _ => throw kyxsanException.NotSupported(),
+            _ => throw LauncherException.NotSupported(),
         };
     }
 
     public static bool IsOversea(string value)
     {
-        kyxsanException.ThrowIfNot(HoyolabRegex.RegionRegex.IsMatch(value), SH.WebHoyolabInvalidRegion);
+        LauncherException.ThrowIfNot(HoyolabRegex.RegionRegex.IsMatch(value), SH.WebHoyolabInvalidRegion);
         return value.AsSpan()[..2] switch
         {
             "os" => true,

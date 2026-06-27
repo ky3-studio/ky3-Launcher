@@ -1,30 +1,30 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___          __   __ _    _____
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___          __   __ _    _____
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \  __  __ \ \ / // \  | ____|
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | | \ \/ /  \ V // _ \ |  _|
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |  >  <    | |/ ___ \| |___
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/  /_/\_\   |_/_/   \_\_____|
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core;
-using kyxsan.Core.Diagnostics;
-using kyxsan.Core.DependencyInjection.Abstraction;
-using kyxsan.Core.LifeCycle.InterProcess.Yae;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Model.InterChange.Achievement;
-using kyxsan.Service.Game;
-using kyxsan.Service.Game.FileSystem;
-using kyxsan.Service.Notification;
-using kyxsan.Service.User;
-using kyxsan.Service.Yae.Achievement;
-using kyxsan.Service.Yae.PlayerStore;
-using kyxsan.ViewModel.User;
-using BindingUser = kyxsan.ViewModel.User.User;
-using kyxsan.Web.Hoyolab.Passport;
-using kyxsan.Web.Response;
-using kyxsan.Win32.Foundation;
+using Launcher.Core;
+using Launcher.Core.Diagnostics;
+using Launcher.Core.DependencyInjection.Abstraction;
+using Launcher.Core.LifeCycle.InterProcess.Yae;
+using Launcher.Factory.ContentDialog;
+using Launcher.Model.InterChange.Achievement;
+using Launcher.Service.Game;
+using Launcher.Service.Game.FileSystem;
+using Launcher.Service.Notification;
+using Launcher.Service.User;
+using Launcher.Service.Yae.Achievement;
+using Launcher.Service.Yae.PlayerStore;
+using Launcher.ViewModel.User;
+using BindingUser = Launcher.ViewModel.User.User;
+using Launcher.Web.Hoyolab.Passport;
+using Launcher.Web.Response;
+using Launcher.Win32.Foundation;
 using System.Diagnostics;
 using System.Collections.Immutable;
 using System.IO;
@@ -32,7 +32,7 @@ using System.IO.Hashing;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace kyxsan.Service.Yae;
+namespace Launcher.Service.Yae;
 
 [Service(ServiceLifetime.Singleton, typeof(IYaeService))]
 internal sealed partial class YaeService : IYaeService
@@ -48,7 +48,7 @@ internal sealed partial class YaeService : IYaeService
 
     public async ValueTask<UIAF?> GetAchievementAsync()
     {
-        if (!kyxsanRuntime.IsProcessElevated)
+        if (!LauncherRuntime.IsProcessElevated)
         {
             messenger.Send(InfoBarMessage.Error(SH.ServiceGameLaunchingHandlerEmbeddedYaeClientNotElevated));
             return default;
@@ -156,7 +156,7 @@ internal sealed partial class YaeService : IYaeService
                         };
                     }
 
-                    string srcDllPath = kyxsanRuntime.GetDataSubDirectoryFile("Lib", "YaeAchievementLib.dll");
+                    string srcDllPath = LauncherRuntime.GetDataSubDirectoryFile("Lib", "YaeAchievementLib.dll");
                     InstalledLocation.CopyFileFromApplicationUri("ms-appx:///YaeAchievementLib.dll", srcDllPath);
 
                     string dllPath = Path.Combine(gameDirectory, "YaeAchievementLib.dll");
@@ -278,7 +278,7 @@ internal sealed partial class YaeService : IYaeService
 
     public async ValueTask<ImmutableArray<(uint ItemId, uint Count)>?> GetInventoryAsync()
     {
-        if (!kyxsanRuntime.IsProcessElevated)
+        if (!LauncherRuntime.IsProcessElevated)
         {
             messenger.Send(InfoBarMessage.Error(SH.ServiceGameLaunchingHandlerEmbeddedYaeClientNotElevated));
             return default;
@@ -375,7 +375,7 @@ internal sealed partial class YaeService : IYaeService
                         };
                     }
 
-                    string srcDllPath = kyxsanRuntime.GetDataSubDirectoryFile("Lib", "YaeAchievementLib.dll");
+                    string srcDllPath = LauncherRuntime.GetDataSubDirectoryFile("Lib", "YaeAchievementLib.dll");
                     InstalledLocation.CopyFileFromApplicationUri("ms-appx:///YaeAchievementLib.dll", srcDllPath);
 
                     string dllPath = Path.Combine(gameDirectory, "YaeAchievementLib.dll");

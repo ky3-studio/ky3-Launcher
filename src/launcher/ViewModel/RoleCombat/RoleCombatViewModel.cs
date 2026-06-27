@@ -1,28 +1,28 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core.Logging;
-using kyxsan.Service.Metadata;
-using kyxsan.Service.Metadata.ContextAbstraction;
-using kyxsan.Service.Notification;
-using kyxsan.Service.RoleCombat;
-using kyxsan.Service.User;
-using kyxsan.UI.Xaml.Data;
-using kyxsan.ViewModel.Complex;
-using kyxsan.ViewModel.User;
-using kyxsan.Web.kyxsan.Response;
-using kyxsan.Web.kyxsan.RoleCombat;
+using Launcher.Core.Logging;
+using Launcher.Service.Metadata;
+using Launcher.Service.Metadata.ContextAbstraction;
+using Launcher.Service.Notification;
+using Launcher.Service.RoleCombat;
+using Launcher.Service.User;
+using Launcher.UI.Xaml.Data;
+using Launcher.ViewModel.Complex;
+using Launcher.ViewModel.User;
+using Launcher.Web.Launcher.Response;
+using Launcher.Web.Launcher.RoleCombat;
 using System.Collections.ObjectModel;
 
-namespace kyxsan.ViewModel.RoleCombat;
+namespace Launcher.ViewModel.RoleCombat;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
@@ -43,7 +43,7 @@ internal sealed partial class RoleCombatViewModel : Abstraction.ViewModel, IReci
     [ObservableProperty]
     public partial IAdvancedCollectionView<RoleCombatView>? RoleCombatEntries { get; set; }
 
-    public partial kyxsanRoleCombatDatabaseViewModel kyxsanRoleCombatDatabaseViewModel { get; }
+    public partial LauncherRoleCombatDatabaseViewModel LauncherRoleCombatDatabaseViewModel { get; }
 
     public void Receive(UserAndUidChangedMessage message)
     {
@@ -152,10 +152,10 @@ internal sealed partial class RoleCombatViewModel : Abstraction.ViewModel, IReci
 
         using (IServiceScope scope = serviceProvider.CreateScope())
         {
-            kyxsanRoleCombatClient roleCombatClient = scope.ServiceProvider.GetRequiredService<kyxsanRoleCombatClient>();
+            LauncherRoleCombatClient roleCombatClient = scope.ServiceProvider.GetRequiredService<LauncherRoleCombatClient>();
             if (await roleCombatClient.GetPlayerRecordAsync(userAndUid).ConfigureAwait(false) is { } record)
             {
-                kyxsanResponse response = await roleCombatClient.UploadRecordAsync(record).ConfigureAwait(false);
+                LauncherResponse response = await roleCombatClient.UploadRecordAsync(record).ConfigureAwait(false);
 
                 messenger.Send(InfoBarMessage.Any(
                     response is { ReturnCode: 0 } ? InfoBarSeverity.Success : InfoBarSeverity.Warning,

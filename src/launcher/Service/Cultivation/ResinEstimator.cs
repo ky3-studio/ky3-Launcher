@@ -1,12 +1,12 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Model.Intrinsic;
-using kyxsan.Model.Metadata.Item;
-using kyxsan.ViewModel.Cultivation;
+using Launcher.Model.Intrinsic;
+using Launcher.Model.Metadata.Item;
+using Launcher.ViewModel.Cultivation;
 
-namespace kyxsan.Service.Cultivation;
+namespace Launcher.Service.Cultivation;
 
 internal static class ResinEstimator
 {

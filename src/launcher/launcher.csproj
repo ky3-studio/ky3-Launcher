@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
 		<TargetFramework>net10.0-windows10.0.26100.0</TargetFramework>
 		<TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
 		<LangVersion>preview</LangVersion>
-		<RootNamespace>kyxsan</RootNamespace>
+		<RootNamespace>Launcher</RootNamespace>
 		<ApplicationManifest>Properties\app.manifest</ApplicationManifest>
 		<Platforms>x64</Platforms>
 		<AppendPlatformToOutputPath>false</AppendPlatformToOutputPath>
@@ -17,7 +17,7 @@
 		<NeutralLanguage>zh-CN</NeutralLanguage>
 		<DefaultLanguage>zh-CN</DefaultLanguage>
 		<SatelliteResourceLanguages>zh-CN;zh-Hans;zh-Hant;zh-TW</SatelliteResourceLanguages>
-		<StartupObject>kyxsan.Bootstrap</StartupObject>
+		<StartupObject>Launcher.Bootstrap</StartupObject>
 		<DefineConstants>$(DefineConstants);DISABLE_XAML_GENERATED_MAIN;DISABLE_XAML_GENERATED_BREAK_ON_UNHANDLED_EXCEPTION;DISABLE_XAML_GENERATED_BINDING_DEBUG_OUTPUT;$(AlphaConstants);$(CanaryConstants)</DefineConstants>
 		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
 		<DebugSymbols>true</DebugSymbols>
@@ -37,8 +37,8 @@
 		<PublishTrimmed>False</PublishTrimmed>
 		<AssemblyName>ky3launcher</AssemblyName>
 		<AssemblyTitle>ky3 Launcher</AssemblyTitle>
-		<Company>kyxsan Detail Development Team</Company>
-		<Copyright>Copyright © 2026 kyxsan Detail Development Team</Copyright>
+		<Company>Launcher Detail Development Team</Company>
+		<Copyright>Copyright © 2026 Launcher Detail Development Team</Copyright>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
 	  <DebugType>embedded</DebugType>
@@ -58,9 +58,9 @@
 
 
 	<ItemGroup>
-		<None Include="NativeLibs\kyxsan.Native.dll">
+		<None Include="NativeLibs\Launcher.Native.dll">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-			<Link>kyxsan.Native.dll</Link>
+			<Link>Launcher.Native.dll</Link>
 			<Visible>false</Visible>
 		</None>
 	</ItemGroup>

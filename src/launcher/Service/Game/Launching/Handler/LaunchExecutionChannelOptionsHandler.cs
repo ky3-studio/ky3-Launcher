@@ -1,21 +1,21 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.IO.Ini;
-using kyxsan.Service.Game.Configuration;
-using kyxsan.Service.Game.FileSystem;
-using kyxsan.Service.Game.Launching.Context;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.IO.Ini;
+using Launcher.Service.Game.Configuration;
+using Launcher.Service.Game.FileSystem;
+using Launcher.Service.Game.Launching.Context;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace kyxsan.Service.Game.Launching.Handler;
+namespace Launcher.Service.Game.Launching.Handler;
 
 internal sealed class LaunchExecutionChannelOptionsHandler : AbstractLaunchExecutionHandler
 {
@@ -31,15 +31,15 @@ internal sealed class LaunchExecutionChannelOptionsHandler : AbstractLaunchExecu
         }
         catch (FileNotFoundException fnfEx)
         {
-            return ValueTask.FromException(kyxsanException.NotSupported(SH.FormatServiceGameSetMultiChannelConfigFileNotFound(configPath), fnfEx));
+            return ValueTask.FromException(LauncherException.NotSupported(SH.FormatServiceGameSetMultiChannelConfigFileNotFound(configPath), fnfEx));
         }
         catch (DirectoryNotFoundException dnfEx)
         {
-            return ValueTask.FromException(kyxsanException.NotSupported(SH.FormatServiceGameSetMultiChannelConfigFileNotFound(configPath), dnfEx));
+            return ValueTask.FromException(LauncherException.NotSupported(SH.FormatServiceGameSetMultiChannelConfigFileNotFound(configPath), dnfEx));
         }
         catch (UnauthorizedAccessException uaEx)
         {
-            return ValueTask.FromException(kyxsanException.NotSupported(SH.ServiceGameSetMultiChannelUnauthorizedAccess, uaEx));
+            return ValueTask.FromException(LauncherException.NotSupported(SH.ServiceGameSetMultiChannelUnauthorizedAccess, uaEx));
         }
 
         IEnumerable<IniElement> toSerialize = UpdateChannelOptionsFromTargetLaunchScheme(elements, context);

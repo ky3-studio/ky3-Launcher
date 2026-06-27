@@ -1,9 +1,9 @@
-using kyxsan.UI.Xaml.Control;
-using kyxsan.ViewModel.GachaLog;
+﻿using Launcher.UI.Xaml.Control;
+using Launcher.ViewModel.GachaLog;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Input;
 
-namespace kyxsan.UI.Xaml.View.Page;
+namespace Launcher.UI.Xaml.View.Page;
 
 internal sealed partial class WishCountdownPage : ScopedPage
 {

@@ -1,10 +1,10 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.WinUI;
@@ -14,15 +14,15 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Automation.Peers;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Input;
-using kyxsan.Core.Logging;
-using kyxsan.UI.Input;
+using Launcher.Core.Logging;
+using Launcher.UI.Input;
 using System.Collections;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.UI.Core;
 using WinRT;
 using VirtualKey = Windows.System.VirtualKey;
 
-namespace kyxsan.UI.Xaml.Control.AutoSuggestBox;
+namespace Launcher.UI.Xaml.Control.AutoSuggestBox;
 
 [DependencyProperty<Style>("AutoSuggestBoxStyle")]
 [DependencyProperty<Style>("AutoSuggestBoxTextBoxStyle")]

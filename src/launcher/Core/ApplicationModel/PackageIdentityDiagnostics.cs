@@ -1,10 +1,10 @@
-// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
+﻿// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using System.Diagnostics;
 using System.IO;
 
-namespace kyxsan.Core.ApplicationModel;
+namespace Launcher.Core.ApplicationModel;
 
 internal static class PackageIdentityDiagnostics
 {

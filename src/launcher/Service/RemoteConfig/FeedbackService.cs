@@ -1,12 +1,12 @@
-// kyxsan - Feedback Service
+﻿// Launcher - Feedback Service
 // Handles feedback submission and reply polling from the admin backend.
 
-using kyxsan.Core;
+using Launcher.Core;
 using System.IO;
 using System.Net.Http;
 using System.Text;
 
-namespace kyxsan.Service.RemoteConfig;
+namespace Launcher.Service.RemoteConfig;
 
 internal static class FeedbackService
 {
@@ -51,7 +51,7 @@ internal static class FeedbackService
         {
             string json = JsonSerializer.Serialize(new
             {
-                device_id = kyxsanRuntime.DeviceId,
+                device_id = LauncherRuntime.DeviceId,
                 content,
                 contact,
                 version,
@@ -75,7 +75,7 @@ internal static class FeedbackService
     {
         try
         {
-            string deviceId = Uri.EscapeDataString(kyxsanRuntime.DeviceId);
+            string deviceId = Uri.EscapeDataString(LauncherRuntime.DeviceId);
             string json = await Http.GetStringAsync($"{BackendApiRoutes.FeedbackReplies}?device_id={deviceId}").ConfigureAwait(false);
             using JsonDocument doc = JsonDocument.Parse(json);
             if (doc.RootElement.GetProperty("retcode").GetInt32() == 0 &&
@@ -97,7 +97,7 @@ internal static class FeedbackService
     {
         try
         {
-            object body = new { device_id = kyxsanRuntime.DeviceId };
+            object body = new { device_id = LauncherRuntime.DeviceId };
             string json = JsonSerializer.Serialize(body);
             StringContent content = new(json, Encoding.UTF8, "application/json");
             await Http.PostAsync(BackendApiRoutes.FeedbackReplyRead, content).ConfigureAwait(false);
@@ -113,8 +113,8 @@ internal static class FeedbackService
     {
         string json = JsonSerializer.Serialize(new
         {
-            device_id = kyxsanRuntime.DeviceId,
-            version = kyxsanRuntime.Version.ToString(),
+            device_id = LauncherRuntime.DeviceId,
+            version = LauncherRuntime.Version.ToString(),
             os_version = System.Environment.OSVersion.VersionString,
         });
         StringContent content = new(json, Encoding.UTF8, "application/json");

@@ -1,10 +1,10 @@
-// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
+﻿// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 
-namespace kyxsan.UI.Xaml.Control;
+namespace Launcher.UI.Xaml.Control;
 
 [SuppressMessage("", "SH001")]
 [DependencyProperty<UIElement>("RightPanel", IsAttached = true, TargetType = typeof(ScrollView))]

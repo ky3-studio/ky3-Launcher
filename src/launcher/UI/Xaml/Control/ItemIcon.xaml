@@ -1,10 +1,10 @@
-<ResourceDictionary
+﻿<ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:shmmc="using:kyxsan.Model.Metadata.Converter"
-    xmlns:shux="using:kyxsan.UI.Xaml"
-    xmlns:shuxc="using:kyxsan.UI.Xaml.Control"
-    xmlns:shuxci="using:kyxsan.UI.Xaml.Control.Image">
+    xmlns:shmmc="using:Launcher.Model.Metadata.Converter"
+    xmlns:shux="using:Launcher.UI.Xaml"
+    xmlns:shuxc="using:Launcher.UI.Xaml.Control"
+    xmlns:shuxci="using:Launcher.UI.Xaml.Control.Image">
 
     <shmmc:QualityConverter x:Key="QualityConverter"/>
     <shmmc:QualityToImageSourceConverter x:Key="QualityToImageSourceConverter">

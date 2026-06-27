@@ -1,0 +1,128 @@
+﻿<shuxc:ScopedPage
+    x:Class="Launcher.UI.Xaml.View.Page.LauncherPassportPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cw="using:CommunityToolkit.WinUI"
+    xmlns:cwb="using:CommunityToolkit.WinUI.Behaviors"
+    xmlns:cwc="using:CommunityToolkit.WinUI.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mxi="using:Microsoft.Xaml.Interactivity"
+    xmlns:shuxb="using:Launcher.UI.Xaml.Behavior"
+    xmlns:shuxc="using:Launcher.UI.Xaml.Control"
+    xmlns:shuxm="using:Launcher.UI.Xaml.Markup"
+    xmlns:shvh="using:Launcher.ViewModel.LauncherPassport"
+    d:DataContext="{d:DesignInstance shvh:LauncherPassportViewModel}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <mxi:Interaction.Behaviors>
+        <shuxb:InvokeCommandOnLoadedBehavior Command="{Binding LoadCommand}"/>
+    </mxi:Interaction.Behaviors>
+
+    <Grid>
+        <Border Background="#40000000"/>
+        <ScrollViewer>
+        <StackPanel Padding="16" Spacing="16">
+            <Border VerticalAlignment="Top" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                <Border Padding="16" Style="{ThemeResource AcrylicBorderCardStyle}">
+                    <StackPanel Spacing="{ThemeResource SettingsCardSpacing}">
+                        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled">
+                            <StackPanel Spacing="{ThemeResource SettingsCardSpacing}">
+                                <cwc:SettingsCard
+                                    Description="{Binding LauncherUserOptions.UserName}"
+                                    Header="{shuxm:ResourceString Name=ViewPageSettingLauncherPassportHeader}"
+                                    HeaderIcon="{shuxm:FontIcon Glyph=&#xE716;}">
+                                    <StackPanel Orientation="Horizontal" Spacing="16">
+                                        <Button
+                                            Command="{Binding LoginCommand}"
+                                            Content="{shuxm:ResourceString Name=ViewPageSettingLauncherPassportLoginAction}"
+                                            Style="{ThemeResource SettingButtonStyle}"
+                                            Visibility="{Binding LauncherUserOptions.IsLoggedIn, Converter={StaticResource BoolToVisibilityRevertConverter}}"/>
+                                        <Button
+                                            Command="{Binding RegisterCommand}"
+                                            Content="{shuxm:ResourceString Name=ViewPageSettingLauncherPassportRegisterAction}"
+                                            Style="{ThemeResource SettingButtonStyle}"
+                                            Visibility="{Binding LauncherUserOptions.IsLoggedIn, Converter={StaticResource BoolToVisibilityRevertConverter}}"/>
+                                        <Button
+                                            Command="{Binding RefreshUserInfoCommand}"
+                                            Content="{shuxm:ResourceString Name=ViewPageSettingLauncherPassportRefreshAction}"
+                                            Style="{ThemeResource SettingButtonStyle}"
+                                            Visibility="{Binding LauncherUserOptions.IsLoggedIn, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                                        <Button
+                                            Command="{Binding LogoutCommand}"
+                                            Content="{shuxm:ResourceString Name=ViewPageSettingLauncherPassportLogoutAction}"
+                                            Style="{ThemeResource SettingButtonStyle}"
+                                            Visibility="{Binding LauncherUserOptions.IsLoggedIn, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                                    </StackPanel>
+                                </cwc:SettingsCard>
+                                <cwc:SettingsCard
+                                    Background="{ThemeResource SystemFillColorSuccessBackgroundBrush}"
+                                    Description="{shuxm:ResourceString Name=ViewPageSettingLauncherPassportLicensedDeveloperDescription}"
+                                    Header="{shuxm:ResourceString Name=ViewPageSettingLauncherPassportLicensedDeveloperHeader}"
+                                    Visibility="{Binding LauncherUserOptions.IsDeveloper, Converter={StaticResource BoolToVisibilityConverter}}">
+                                    <Button
+                                        Command="{Binding OpenTestPageCommand}"
+                                        Content="TEST"
+                                        Style="{ThemeResource SettingButtonStyle}"/>
+                                </cwc:SettingsCard>
+                                <cwc:SettingsCard
+                                    Background="{ThemeResource SystemFillColorSuccessBackgroundBrush}"
+                                    Description="{shuxm:ResourceString Name=ViewPageSettingLauncherPassportMaintainerDescription}"
+                                    Header="{shuxm:ResourceString Name=ViewPageSettingLauncherPassportMaintainerHeader}"
+                                    Visibility="{Binding LauncherUserOptions.IsMaintainer, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                                <cwc:SettingsCard
+                                    Background="{ThemeResource SystemFillColorCriticalBackgroundBrush}"
+                                    Description="{shuxm:ResourceString Name=ViewPageSettingLauncherPassportDangerZoneDescription}"
+                                    Header="{shuxm:ResourceString Name=ViewPageSettingLauncherPassportDangerZoneHeader}">
+                                    <StackPanel Orientation="Horizontal" Spacing="16">
+                                        <Button
+                                            Command="{Binding ResetUsernameCommand}"
+                                            Content="{shuxm:ResourceString Name=ViewPageSettingLauncherPassportResetUserNameAction}"
+                                            Style="{ThemeResource SettingButtonStyle}"/>
+                                        <Button
+                                            Command="{Binding ResetPasswordCommand}"
+                                            Content="{shuxm:ResourceString Name=ViewPageSettingLauncherPassportResetPasswordAction}"
+                                            Style="{ThemeResource SettingButtonStyle}"/>
+                                        <Button
+                                            Command="{Binding UnregisterCommand}"
+                                            Content="{shuxm:ResourceString Name=ViewPageSettingLauncherPassportUnregisterAction}"
+                                            Style="{ThemeResource SettingButtonStyle}"/>
+                                    </StackPanel>
+                                </cwc:SettingsCard>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </StackPanel>
+                </Border>
+            </Border>
+
+            <Border VerticalAlignment="Top" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                <Border Padding="16" Style="{ThemeResource AcrylicBorderCardStyle}">
+                    <StackPanel Spacing="{ThemeResource SettingsCardSpacing}">
+                        <InfoBar
+                            Title="{shuxm:ResourceString Name=ViewPageLauncherPassportCDNCloudHeader}"
+                            IsClosable="False"
+                            IsOpen="True"
+                            Message="{shuxm:ResourceString Name=ViewPageLauncherPassportCDNCloudDescription}"/>
+                        <cwc:SettingsCard Description="{Binding LauncherUserOptions.CdnExpireAt}" Header="{shuxm:ResourceString Name=ViewPageSettingLauncherPassportCdnExpiredAtHeader}">
+                            <Button Content="{shuxm:ResourceString Name=ViewPageLauncherPassportSponsorAction}" Style="{ThemeResource SettingButtonStyle}">
+                                <mxi:Interaction.Behaviors>
+                                    <mxi:EventTriggerBehavior EventName="Click">
+                                        <cwb:NavigateToUriAction NavigateUri="https://afdian.com/item/274f5a7cbe9911efab6552540025c377"/>
+                                    </mxi:EventTriggerBehavior>
+                                </mxi:Interaction.Behaviors>
+                            </Button>
+                        </cwc:SettingsCard>
+                        <cwc:SettingsCard
+                            Command="{Binding UseRedeemCodeCommand}"
+                            Description="{shuxm:ResourceString Name=ViewPageSettingLauncherPassportRedeemCodeDescription}"
+                            Header="{shuxm:ResourceString Name=ViewPageSettingLauncherPassportRedeemCodeHeader}"
+                            IsClickEnabled="True"/>
+                    </StackPanel>
+                </Border>
+            </Border>
+        </StackPanel>
+
+    </ScrollViewer>
+    </Grid>
+</shuxc:ScopedPage>

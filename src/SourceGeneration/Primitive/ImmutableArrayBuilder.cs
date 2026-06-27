@@ -1,5 +1,5 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using System;
@@ -10,7 +10,7 @@ using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 
-namespace kyxsan.SourceGeneration.Primitive;
+namespace Launcher.SourceGeneration.Primitive;
 
 internal ref struct ImmutableArrayBuilder<T> : IDisposable
 {

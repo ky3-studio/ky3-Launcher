@@ -1,18 +1,18 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using JetBrains.Annotations;
-using kyxsan.Core.IO.Http;
-using kyxsan.Core.IO.Http.Proxy;
-using kyxsan.Service.Game.Package.Advanced;
-using kyxsan.Web.Hoyolab;
-using kyxsan.Win32;
+using Launcher.Core.IO.Http;
+using Launcher.Core.IO.Http.Proxy;
+using Launcher.Service.Game.Package.Advanced;
+using Launcher.Web.Hoyolab;
+using Launcher.Win32;
 using System.Globalization;
 using System.Net;
 using System.Net.Http;
@@ -20,7 +20,7 @@ using System.Net.Mime;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace kyxsan.Core.DependencyInjection;
+namespace Launcher.Core.DependencyInjection;
 
 // ReSharper disable UnusedMember.Local
 internal static partial class ServiceCollectionExtension
@@ -72,10 +72,10 @@ internal static partial class ServiceCollectionExtension
     private static void DefaultConfiguration(IServiceProvider serviceProvider, HttpClient client)
     {
         client.Timeout = Timeout.InfiniteTimeSpan;
-        client.DefaultRequestHeaders.UserAgent.ParseAdd(kyxsanRuntime.UserAgent);
-        client.DefaultRequestHeaders.Add("x-kyxsan-device-id", kyxsanRuntime.DeviceId);
-        client.DefaultRequestHeaders.Add("x-kyxsan-device-os", $"Windows {kyxsanNative.Instance.GetCurrentWindowsVersion()}");
-        client.DefaultRequestHeaders.Add("x-kyxsan-device-name", EncodeNonAsciiChars(Environment.MachineName));
+        client.DefaultRequestHeaders.UserAgent.ParseAdd(LauncherRuntime.UserAgent);
+        client.DefaultRequestHeaders.Add("x-Launcher-device-id", LauncherRuntime.DeviceId);
+        client.DefaultRequestHeaders.Add("x-Launcher-device-os", $"Windows {LauncherNative.Instance.GetCurrentWindowsVersion()}");
+        client.DefaultRequestHeaders.Add("x-Launcher-device-name", EncodeNonAsciiChars(Environment.MachineName));
     }
 
     [UsedImplicitly]

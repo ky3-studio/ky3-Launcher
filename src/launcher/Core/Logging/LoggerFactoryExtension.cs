@@ -1,18 +1,18 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.IO.Http.Proxy;
-using kyxsan.Win32;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.IO.Http.Proxy;
+using Launcher.Win32;
 using System.Runtime.CompilerServices;
 
-namespace kyxsan.Core.Logging;
+namespace Launcher.Core.Logging;
 
 internal static class LoggerFactoryExtension
 {
@@ -38,7 +38,7 @@ internal static class LoggerFactoryExtension
                 options.AutoSessionTracking = true;
                 options.IsGlobalModeEnabled = true;
                 options.EnableBackpressureHandling = true;
-                options.Release = $"{kyxsanRuntime.Version}";
+                options.Release = $"{LauncherRuntime.Version}";
                 options.Environment = GetBuildEnvironment();
 
                 // Suppress logs to generate events and breadcrumbs
@@ -55,10 +55,10 @@ internal static class LoggerFactoryExtension
                 {
                     scope.User = new()
                     {
-                        Id = kyxsanRuntime.DeviceId,
+                        Id = LauncherRuntime.DeviceId,
                     };
 
-                    scope.SetTag("elevated", kyxsanRuntime.IsProcessElevated ? "yes" : "no");
+                    scope.SetTag("elevated", LauncherRuntime.IsProcessElevated ? "yes" : "no");
                     scope.SetWebView2Version();
                 });
 
@@ -67,7 +67,7 @@ internal static class LoggerFactoryExtension
                 options.SetBeforeSend(@event =>
                 {
                     Sentry.Protocol.OperatingSystem operatingSystem = @event.Contexts.OperatingSystem;
-                    kyxsanPrivateWindowsVersion windowsVersion = kyxsanNative.Instance.GetCurrentWindowsVersion();
+                    LauncherPrivateWindowsVersion windowsVersion = LauncherNative.Instance.GetCurrentWindowsVersion();
                     operatingSystem.Build = $"{windowsVersion.Build}";
                     operatingSystem.Name = "Windows";
                     operatingSystem.Version = $"{windowsVersion}";
@@ -97,7 +97,7 @@ internal static class LoggerFactoryExtension
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private void SetWebView2Version()
         {
-            WebView2Version webView2Version = kyxsanRuntime.WebView2Version;
+            WebView2Version webView2Version = LauncherRuntime.WebView2Version;
             Dictionary<string, object> webView2 = new()
             {
                 ["Supported"] = webView2Version.Supported,

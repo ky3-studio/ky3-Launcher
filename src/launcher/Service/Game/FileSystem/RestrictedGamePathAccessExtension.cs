@@ -1,17 +1,17 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.Logging;
-using kyxsan.Service.Game.PathAbstraction;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.Logging;
+using Launcher.Service.Game.PathAbstraction;
 
-namespace kyxsan.Service.Game.FileSystem;
+namespace Launcher.Service.Game.FileSystem;
 
 internal static class RestrictedGamePathAccessExtension
 {
@@ -59,7 +59,7 @@ internal static class RestrictedGamePathAccessExtension
             const string LockTrace = $"{nameof(RestrictedGamePathAccessExtension)}.{nameof(PerformGamePathEntrySynchronization)}";
             if (!access.GamePathLock.TryWriterLock(LockTrace, out AsyncReaderWriterLock.Releaser releaser))
             {
-                throw kyxsanException.InvalidOperation($"Cannot set game path entries while it is being used. {access.GamePathLock}");
+                throw LauncherException.InvalidOperation($"Cannot set game path entries while it is being used. {access.GamePathLock}");
             }
 
             using (access.GamePathEntry.GetDeferral())
@@ -85,7 +85,7 @@ internal static class RestrictedGamePathAccessExtension
                 const string LockTrace = $"{nameof(RestrictedGamePathAccessExtension)}.{nameof(RemoveGamePathEntry)}";
                 if (!access.GamePathLock.TryWriterLock(LockTrace, out AsyncReaderWriterLock.Releaser releaser))
                 {
-                    throw kyxsanException.InvalidOperation($"Cannot remove game path while it is being used. {access.GamePathLock}");
+                    throw LauncherException.InvalidOperation($"Cannot remove game path while it is being used. {access.GamePathLock}");
                 }
 
                 using (releaser)

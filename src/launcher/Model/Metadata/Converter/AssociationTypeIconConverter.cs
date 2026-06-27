@@ -1,18 +1,18 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.ExceptionService;
-using kyxsan.Model.Intrinsic;
-using kyxsan.UI.Xaml.Data.Converter;
-using kyxsan.Web.Endpoint.kyxsan;
+using Launcher.Core.ExceptionService;
+using Launcher.Model.Intrinsic;
+using Launcher.UI.Xaml.Data.Converter;
+using Launcher.Web.Endpoint.Launcher;
 
-namespace kyxsan.Model.Metadata.Converter;
+namespace Launcher.Model.Metadata.Converter;
 
 internal sealed partial class AssociationTypeIconConverter : ValueConverter<AssociationType, Uri?>
 {
@@ -31,7 +31,7 @@ internal sealed partial class AssociationTypeIconConverter : ValueConverter<Asso
             AssociationType.ASSOC_TYPE_SNEZHNAYA => default,
             AssociationType.ASSOC_TYPE_OMNI_SCOURGE => default,
             AssociationType.ASSOC_TYPE_NODKRAI => "Nodkrai",
-            _ => throw kyxsanException.NotSupported(),
+            _ => throw LauncherException.NotSupported(),
         };
 
         return association is null

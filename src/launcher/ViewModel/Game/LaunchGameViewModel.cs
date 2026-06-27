@@ -1,54 +1,53 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 // Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.IO;
-using kyxsan.Core.Logging;
-using kyxsan.Core.Property;
-using kyxsan.Core.Setting;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Factory.Picker;
-using kyxsan.Factory.Process;
-using kyxsan.Model;
-using kyxsan.Model.Entity;
-using kyxsan.Model.Intrinsic;
-using kyxsan.Service.Game;
-using kyxsan.Service.Game.AdvancedStart;
-using kyxsan.Service.Game.AdvancedStart.Model;
-using kyxsan.Service.Game.FileSystem;
-using kyxsan.Service.Game.Locator;
-using kyxsan.Service.Game.Package;
-using kyxsan.Service.Game.PathAbstraction;
-using kyxsan.Service.Game.Scheme;
-using kyxsan.Service.Navigation;
-using kyxsan.Service.Notification;
-using kyxsan.Service.ThirdPartyTool;
-using kyxsan.Core.Database;
-using kyxsan.Service.User;
-using kyxsan.UI.Input.HotKey;
-using kyxsan.UI.Input.LowLevel;
-using kyxsan.UI.Xaml.View.Dialog;
-using kyxsan.UI.Xaml.View.Window;
-using kyxsan.ViewModel.User;
-using kyxsan.Web.Hoyolab.Takumi.Binding;
-using kyxsan.Web.ThirdPartyTool;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.IO;
+using Launcher.Core.Logging;
+using Launcher.Core.Property;
+using Launcher.Core.Setting;
+using Launcher.Factory.ContentDialog;
+using Launcher.Factory.Picker;
+using Launcher.Factory.Process;
+using Launcher.Model;
+using Launcher.Model.Entity;
+using Launcher.Model.Intrinsic;
+using Launcher.Service.Game;
+using Launcher.Service.Game.AdvancedStart;
+using Launcher.Service.Game.AdvancedStart.Model;
+using Launcher.Service.Game.FileSystem;
+using Launcher.Service.Game.Locator;
+using Launcher.Service.Game.Package;
+using Launcher.Service.Game.PathAbstraction;
+using Launcher.Service.Game.Scheme;
+using Launcher.Service.Navigation;
+using Launcher.Service.Notification;
+using Launcher.Service.ThirdPartyTool;
+using Launcher.Core.Database;
+using Launcher.Service.User;
+using Launcher.UI.Input.HotKey;
+using Launcher.UI.Input.LowLevel;
+using Launcher.UI.Xaml.View.Dialog;
+using Launcher.UI.Xaml.View.Window;
+using Launcher.ViewModel.User;
+using Launcher.Web.Hoyolab.Takumi.Binding;
+using Launcher.Web.ThirdPartyTool;
 using System.Collections.Immutable;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.IO;
-using Windows.System;
-using BindingUser = kyxsan.ViewModel.User.User;
-using EntityUser = kyxsan.Model.Entity.User;
+using BindingUser = Launcher.ViewModel.User.User;
+using EntityUser = Launcher.Model.Entity.User;
 
-namespace kyxsan.ViewModel.Game;
+namespace Launcher.ViewModel.Game;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Singleton)]
@@ -165,7 +164,7 @@ internal sealed partial class LaunchGameViewModel : Abstraction.ViewModel, IView
             await TargetSchemeFilteredGameAccountsView.SetAsync(currentScheme).ConfigureAwait(true);
             await GamePackageViewModel.ReloadAsync().ConfigureAwait(true);
         }
-        catch (kyxsanException ex)
+        catch (LauncherException ex)
         {
             messenger.Send(InfoBarMessage.Error(ex));
         }
@@ -722,7 +721,7 @@ internal sealed partial class LaunchGameViewModel : Abstraction.ViewModel, IView
     {
         SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Open advanced start community", "LaunchGameViewModel.Command"));
 
-        await Launcher.LaunchUriAsync("about:blank".ToUri());
+        await Windows.System.Launcher.LaunchUriAsync("about:blank".ToUri());
     }
 
     [Command("OpenAdvancedStartCheckDownloadCommand")]

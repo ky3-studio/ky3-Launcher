@@ -1,19 +1,19 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Model.Metadata;
-using kyxsan.Model.Metadata.Avatar;
-using kyxsan.Model.Primitive;
-using kyxsan.UI.Xaml.Control.TextBlock.Syntax.MiHoYo;
+using Launcher.Model.Metadata;
+using Launcher.Model.Metadata.Avatar;
+using Launcher.Model.Primitive;
+using Launcher.UI.Xaml.Control.TextBlock.Syntax.MiHoYo;
 using System.Collections.Immutable;
 
-namespace kyxsan.ViewModel.Wiki;
+namespace Launcher.ViewModel.Wiki;
 
 internal sealed class LinkMetadataContext
 {

@@ -1,10 +1,10 @@
-using Microsoft.CodeAnalysis;
+﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
 using Microsoft.CodeAnalysis.Text;
-using kyxsan.SourceGeneration.Extension;
-using kyxsan.SourceGeneration.Model;
+using Launcher.SourceGeneration.Extension;
+using Launcher.SourceGeneration.Model;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -17,11 +17,11 @@ using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
 using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
-using static kyxsan.SourceGeneration.Primitive.FastSyntaxFactory;
-using static kyxsan.SourceGeneration.Primitive.SyntaxKeywords;
-using static kyxsan.SourceGeneration.WellKnownSyntax;
+using static Launcher.SourceGeneration.Primitive.FastSyntaxFactory;
+using static Launcher.SourceGeneration.Primitive.SyntaxKeywords;
+using static Launcher.SourceGeneration.WellKnownSyntax;
 
-namespace kyxsan.SourceGeneration.Resx;
+namespace Launcher.SourceGeneration.Resx;
 
 [Generator]
 public sealed class ResxGenerator2 : IIncrementalGenerator

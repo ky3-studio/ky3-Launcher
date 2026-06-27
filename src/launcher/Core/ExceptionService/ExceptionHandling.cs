@@ -1,22 +1,22 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.UI.Xaml;
-using kyxsan.Factory.Process;
-using kyxsan.UI.Xaml.View.Window;
-using kyxsan.Win32;
+using Launcher.Factory.Process;
+using Launcher.UI.Xaml.View.Window;
+using Launcher.Win32;
 using System.Data.Common;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 
-namespace kyxsan.Core.ExceptionService;
+namespace Launcher.Core.ExceptionService;
 
 [Service(ServiceLifetime.Singleton)]
 internal sealed partial class ExceptionHandling
@@ -51,7 +51,7 @@ internal sealed partial class ExceptionHandling
     [StackTraceHidden]
     private static DbException KillProcessOnDbException(DbException exception)
     {
-        kyxsanNative.Instance.ShowErrorMessage("Warning | 警告", exception.Message);
+        LauncherNative.Instance.ShowErrorMessage("Warning | 警告", exception.Message);
         ProcessFactory.KillCurrent();
         return exception;
     }

@@ -1,32 +1,32 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml.Controls;
-using kyxsan.Core.Logging;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Service.kyxsan;
-using kyxsan.Service.Metadata;
-using kyxsan.Service.Metadata.ContextAbstraction;
-using kyxsan.Service.Navigation;
-using kyxsan.Service.Notification;
-using kyxsan.Service.SpiralAbyss;
-using kyxsan.Service.User;
-using kyxsan.UI.Xaml.Data;
-using kyxsan.UI.Xaml.View.Dialog;
-using kyxsan.UI.Xaml.View.Page;
-using kyxsan.ViewModel.Complex;
-using kyxsan.ViewModel.User;
-using kyxsan.Web.kyxsan.Response;
-using kyxsan.Web.kyxsan.SpiralAbyss;
+using Launcher.Core.Logging;
+using Launcher.Factory.ContentDialog;
+using Launcher.Service.Launcher;
+using Launcher.Service.Metadata;
+using Launcher.Service.Metadata.ContextAbstraction;
+using Launcher.Service.Navigation;
+using Launcher.Service.Notification;
+using Launcher.Service.SpiralAbyss;
+using Launcher.Service.User;
+using Launcher.UI.Xaml.Data;
+using Launcher.UI.Xaml.View.Dialog;
+using Launcher.UI.Xaml.View.Page;
+using Launcher.ViewModel.Complex;
+using Launcher.ViewModel.User;
+using Launcher.Web.Launcher.Response;
+using Launcher.Web.Launcher.SpiralAbyss;
 using System.Collections.ObjectModel;
 
-namespace kyxsan.ViewModel.SpiralAbyss;
+namespace Launcher.ViewModel.SpiralAbyss;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
@@ -35,7 +35,7 @@ internal sealed partial class SpiralAbyssViewModel : Abstraction.ViewModel, IRec
     private readonly IContentDialogFactory contentDialogFactory;
     private readonly ISpiralAbyssService spiralAbyssService;
     private readonly INavigationService navigationService;
-    private readonly kyxsanUserOptions kyxsanUserOptions;
+    private readonly LauncherUserOptions LauncherUserOptions;
     private readonly IServiceProvider serviceProvider;
     private readonly IMetadataService metadataService;
     private readonly ITaskContext taskContext;
@@ -58,7 +58,7 @@ internal sealed partial class SpiralAbyssViewModel : Abstraction.ViewModel, IRec
         }
     }
 
-    public partial kyxsanSpiralAbyssDatabaseViewModel kyxsanSpiralAbyssDatabaseViewModel { get; }
+    public partial LauncherSpiralAbyssDatabaseViewModel LauncherSpiralAbyssDatabaseViewModel { get; }
 
     public void Receive(UserAndUidChangedMessage message)
     {
@@ -170,7 +170,7 @@ internal sealed partial class SpiralAbyssViewModel : Abstraction.ViewModel, IRec
             return;
         }
 
-        if (!kyxsanUserOptions.IsLoggedIn)
+        if (!LauncherUserOptions.IsLoggedIn)
         {
             SpiralAbyssUploadRecordHomaNotLoginDialog dialog = await contentDialogFactory
                 .CreateInstanceAsync<SpiralAbyssUploadRecordHomaNotLoginDialog>(serviceProvider)
@@ -181,7 +181,7 @@ internal sealed partial class SpiralAbyssViewModel : Abstraction.ViewModel, IRec
             switch (result)
             {
                 case ContentDialogResult.Primary:
-                    await navigationService.NavigateAsync<kyxsanPassportPage>(NavigationExtraData.Default, true).ConfigureAwait(false);
+                    await navigationService.NavigateAsync<LauncherPassportPage>(NavigationExtraData.Default, true).ConfigureAwait(false);
                     return;
 
                 case ContentDialogResult.Secondary:
@@ -194,10 +194,10 @@ internal sealed partial class SpiralAbyssViewModel : Abstraction.ViewModel, IRec
 
         using (IServiceScope scope = serviceProvider.CreateScope())
         {
-            kyxsanSpiralAbyssClient spiralAbyssClient = scope.ServiceProvider.GetRequiredService<kyxsanSpiralAbyssClient>();
+            LauncherSpiralAbyssClient spiralAbyssClient = scope.ServiceProvider.GetRequiredService<LauncherSpiralAbyssClient>();
             if (await spiralAbyssClient.GetPlayerRecordAsync(userAndUid).ConfigureAwait(false) is { } record)
             {
-                kyxsanResponse response = await spiralAbyssClient.UploadRecordAsync(record).ConfigureAwait(false);
+                LauncherResponse response = await spiralAbyssClient.UploadRecordAsync(record).ConfigureAwait(false);
 
                 if (response is ILocalizableResponse localizableResponse)
                 {

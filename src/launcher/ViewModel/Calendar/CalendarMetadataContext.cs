@@ -1,11 +1,11 @@
-using kyxsan.Model.Metadata.Avatar;
-using kyxsan.Model.Metadata.Weapon;
-using kyxsan.Service.Metadata.ContextAbstraction;
-using kyxsan.Service.Metadata.ContextAbstraction.ImmutableArray;
-using kyxsan.Service.Metadata.ContextAbstraction.ImmutableDictionary;
+﻿using Launcher.Model.Metadata.Avatar;
+using Launcher.Model.Metadata.Weapon;
+using Launcher.Service.Metadata.ContextAbstraction;
+using Launcher.Service.Metadata.ContextAbstraction.ImmutableArray;
+using Launcher.Service.Metadata.ContextAbstraction.ImmutableDictionary;
 using System.Collections.Immutable;
 
-namespace kyxsan.ViewModel.Calendar;
+namespace Launcher.ViewModel.Calendar;
 
 internal sealed class CalendarMetadataContext : IMetadataContext,
     IMetadataArrayAvatarSource,

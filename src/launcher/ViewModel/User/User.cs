@@ -1,23 +1,23 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.Database;
-using kyxsan.Core.Database.Abstraction;
-using kyxsan.Model;
-using kyxsan.Model.Entity.Database;
-using kyxsan.UI.Xaml.Data;
-using kyxsan.Web.Hoyolab;
-using kyxsan.Web.Hoyolab.Bbs.User;
-using kyxsan.Web.Hoyolab.Takumi.Binding;
-using EntityUser = kyxsan.Model.Entity.User;
+using Launcher.Core.Database;
+using Launcher.Core.Database.Abstraction;
+using Launcher.Model;
+using Launcher.Model.Entity.Database;
+using Launcher.UI.Xaml.Data;
+using Launcher.Web.Hoyolab;
+using Launcher.Web.Hoyolab.Bbs.User;
+using Launcher.Web.Hoyolab.Takumi.Binding;
+using EntityUser = Launcher.Model.Entity.User;
 
-namespace kyxsan.ViewModel.User;
+namespace Launcher.ViewModel.User;
 
 internal sealed partial class User : IEntityAccess<EntityUser>,
     ISelectable,

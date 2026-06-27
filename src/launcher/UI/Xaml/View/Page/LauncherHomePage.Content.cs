@@ -1,10 +1,10 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI;
@@ -16,26 +16,26 @@ using Microsoft.UI.Xaml.Media.Animation;
 using Microsoft.UI.Xaml.Media.Imaging;
 using Microsoft.UI.Composition;
 using Microsoft.Web.WebView2.Core;
-using kyxsan.Core.IO;
-using kyxsan.Core.Logging;
-using kyxsan.UI.Content;
-using kyxsan.Factory.ContentDialog;
-using kyxsan.Service.Game;
-using kyxsan.Service.Game.Scheme;
-using kyxsan.Service.Game.Package;
-using kyxsan.Service.User;
-using kyxsan.Service.Constants;
-using kyxsan.Model.Entity;
-using kyxsan.ViewModel.User;
-using kyxsan.ViewModel.Game;
-using kyxsan.Web.WebView2;
+using Launcher.Core.IO;
+using Launcher.Core.Logging;
+using Launcher.UI.Content;
+using Launcher.Factory.ContentDialog;
+using Launcher.Service.Game;
+using Launcher.Service.Game.Scheme;
+using Launcher.Service.Game.Package;
+using Launcher.Service.User;
+using Launcher.Service.Constants;
+using Launcher.Model.Entity;
+using Launcher.ViewModel.User;
+using Launcher.ViewModel.Game;
+using Launcher.Web.WebView2;
 using System.IO;
 using System.Net.Http;
 using System.Numerics;
 using Windows.System;
 using Windows.UI;
 
-namespace kyxsan.UI.Xaml.View.Page;
+namespace Launcher.UI.Xaml.View.Page;
 
 internal sealed partial class LauncherHomePage
 {
@@ -474,7 +474,7 @@ internal sealed partial class LauncherHomePage
             string link = _bannerList[_currentBannerIndex].Link;
             if (!string.IsNullOrEmpty(link))
             {
-                await Launcher.LaunchUriAsync(new Uri(link));
+                await Windows.System.Launcher.LaunchUriAsync(new Uri(link));
             }
         }
     }
@@ -557,7 +557,7 @@ internal sealed partial class LauncherHomePage
             {
                 if (!string.IsNullOrEmpty(link))
                 {
-                    await Launcher.LaunchUriAsync(new Uri(link));
+                    await Windows.System.Launcher.LaunchUriAsync(new Uri(link));
                 }
             };
             row.PointerEntered += (s, _) =>

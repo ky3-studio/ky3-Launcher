@@ -1,23 +1,23 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using kyxsan.SourceGeneration.Extension;
-using kyxsan.SourceGeneration.Model;
-using kyxsan.SourceGeneration.Primitive;
+using Launcher.SourceGeneration.Extension;
+using Launcher.SourceGeneration.Model;
+using Launcher.SourceGeneration.Primitive;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
 using System.Threading;
 using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
-using static kyxsan.SourceGeneration.Primitive.FastSyntaxFactory;
-using static kyxsan.SourceGeneration.WellKnownSyntax;
-using TypeInfo = kyxsan.SourceGeneration.Model.TypeInfo;
+using static Launcher.SourceGeneration.Primitive.FastSyntaxFactory;
+using static Launcher.SourceGeneration.WellKnownSyntax;
+using TypeInfo = Launcher.SourceGeneration.Model.TypeInfo;
 
-namespace kyxsan.SourceGeneration.DependencyInjection;
+namespace Launcher.SourceGeneration.DependencyInjection;
 
 [Generator(LanguageNames.CSharp)]
 internal sealed class ServiceGenerator : IIncrementalGenerator
@@ -52,7 +52,7 @@ internal sealed class ServiceGenerator : IIncrementalGenerator
     {
         CompilationUnitSyntax syntax = CompilationUnit()
             .WithUsings(SingletonList(UsingDirective("Microsoft.Extensions.DependencyInjection")))
-            .WithMembers(SingletonList<MemberDeclarationSyntax>(FileScopedNamespaceDeclaration("kyxsan.Core.DependencyInjection")
+            .WithMembers(SingletonList<MemberDeclarationSyntax>(FileScopedNamespaceDeclaration("Launcher.Core.DependencyInjection")
                 .WithLeadingTrivia(NullableEnableTriviaList)
                 .WithMembers(SingletonList<MemberDeclarationSyntax>(
                     ClassDeclaration("ServiceCollectionExtension")

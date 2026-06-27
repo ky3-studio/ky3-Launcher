@@ -1,10 +1,10 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.Graphics.Canvas;
@@ -15,13 +15,13 @@ using Microsoft.Graphics.Canvas.UI;
 using Microsoft.Graphics.Canvas.UI.Xaml;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Media.Animation;
-using kyxsan.UI.Text;
+using Launcher.UI.Text;
 using System.Numerics;
 using Windows.UI;
 using Windows.UI.Text;
 using WinRT;
 
-namespace kyxsan.UI.Xaml.Control.Effect;
+namespace Launcher.UI.Xaml.Control.Effect;
 
 [DependencyProperty<EasingMode>("Easing", NotNull = true, DefaultValue = EasingMode.EaseInOut, PropertyChangedCallbackName = nameof(OnAnimationChanged))]
 [DependencyProperty<double>("TimeLineFrom", NotNull = true, DefaultValue = 0D, PropertyChangedCallbackName = nameof(OnAnimationChanged))]

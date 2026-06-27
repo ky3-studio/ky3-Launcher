@@ -1,21 +1,21 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Web.Endpoint.kyxsan;
+using Launcher.Web.Endpoint.Launcher;
 using System.Net.Http;
 
-namespace kyxsan.Core.LifeCycle;
+namespace Launcher.Core.LifeCycle;
 
 [Service(ServiceLifetime.Transient)]
 internal sealed partial class SentryIpAddressEnricher
 {
-    private readonly IkyxsanEndpointsFactory kyxsanEndpointsFactory;
+    private readonly ILauncherEndpointsFactory LauncherEndpointsFactory;
     private readonly HttpClient httpClient;
 
     [GeneratedConstructor]
@@ -25,7 +25,7 @@ internal sealed partial class SentryIpAddressEnricher
     {
         try
         {
-            string ip = await httpClient.GetStringAsync(kyxsanEndpointsFactory.Create().IpString()).ConfigureAwait(false);
+            string ip = await httpClient.GetStringAsync(LauncherEndpointsFactory.Create().IpString()).ConfigureAwait(false);
             SentrySdk.ConfigureScope(static (scope, ip) => { scope.User.IpAddress = ip; }, ip.Trim('"'));
         }
         catch

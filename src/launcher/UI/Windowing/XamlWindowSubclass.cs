@@ -1,30 +1,30 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
-using kyxsan.UI.Input;
-using kyxsan.UI.Windowing.Abstraction;
-using kyxsan.UI.Xaml.Media.Backdrop;
-using kyxsan.Win32;
-using kyxsan.Win32.Foundation;
-using kyxsan.Win32.System.SystemServices;
-using kyxsan.Win32.UI.Shell;
+using Launcher.UI.Input;
+using Launcher.UI.Windowing.Abstraction;
+using Launcher.UI.Xaml.Media.Backdrop;
+using Launcher.Win32;
+using Launcher.Win32.Foundation;
+using Launcher.Win32.System.SystemServices;
+using Launcher.Win32.UI.Shell;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using static kyxsan.Win32.ConstValues;
+using static Launcher.Win32.ConstValues;
 
-namespace kyxsan.UI.Windowing;
+namespace Launcher.UI.Windowing;
 
 internal sealed partial class XamlWindowSubclass : IDisposable
 {
-    private readonly kyxsanNativeWindowSubclass native;
+    private readonly LauncherNativeWindowSubclass native;
     private readonly Window window;
     private GCHandle<XamlWindowSubclass> handle;
 
@@ -35,8 +35,8 @@ internal sealed partial class XamlWindowSubclass : IDisposable
     {
         this.window = window;
         handle = new(this);
-        kyxsanNativeWindowSubclassCallback callback = kyxsanNativeWindowSubclassCallback.Create(&OnSubclassProcedure);
-        native = kyxsanNative.Instance.MakeWindowSubclass(window.GetWindowHandle(), callback, handle);
+        LauncherNativeWindowSubclassCallback callback = LauncherNativeWindowSubclassCallback.Create(&OnSubclassProcedure);
+        native = LauncherNative.Instance.MakeWindowSubclass(window.GetWindowHandle(), callback, handle);
     }
 
     public void Initialize()

@@ -1,14 +1,14 @@
-// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
+﻿// Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using Google.Protobuf;
 using Microsoft.EntityFrameworkCore;
-using kyxsan.Core.Database;
-using kyxsan.Model.Entity.Database;
-using kyxsan.Service.Game.AdvancedStart.Model;
+using Launcher.Core.Database;
+using Launcher.Model.Entity.Database;
+using Launcher.Service.Game.AdvancedStart.Model;
 using System.Collections.ObjectModel;
 
-namespace kyxsan.Service.Game.AdvancedStart;
+namespace Launcher.Service.Game.AdvancedStart;
 
 [Service(ServiceLifetime.Singleton)]
 internal sealed class AdvancedStartDelayedProgramStore

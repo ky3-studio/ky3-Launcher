@@ -1,19 +1,19 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.ExceptionService;
+using Launcher.Core.ExceptionService;
 using Snap.ZStandard;
 using System.Buffers;
 using System.IO;
 using static Snap.ZStandard.Zstandard;
 
-namespace kyxsan.Core.IO.Compression.Zstandard;
+namespace Launcher.Core.IO.Compression.Zstandard;
 
 // See https://github.com/skbkontur/ZstdNet
 // ReSharper disable LocalizableElement
@@ -72,27 +72,27 @@ internal sealed partial class ZstandardCompressStream : Stream
 
     public override bool CanWrite { get => true; }
 
-    public override long Length { get => throw kyxsanException.NotSupported(); }
+    public override long Length { get => throw LauncherException.NotSupported(); }
 
     public override long Position
     {
-        get => throw kyxsanException.NotSupported();
-        set => throw kyxsanException.NotSupported();
+        get => throw LauncherException.NotSupported();
+        set => throw LauncherException.NotSupported();
     }
 
     public override long Seek(long offset, SeekOrigin origin)
     {
-        throw kyxsanException.NotSupported();
+        throw LauncherException.NotSupported();
     }
 
     public override void SetLength(long value)
     {
-        throw kyxsanException.NotSupported();
+        throw LauncherException.NotSupported();
     }
 
     public override int Read(byte[] buffer, int offset, int count)
     {
-        throw kyxsanException.NotSupported();
+        throw LauncherException.NotSupported();
     }
 
     public override unsafe void Flush()

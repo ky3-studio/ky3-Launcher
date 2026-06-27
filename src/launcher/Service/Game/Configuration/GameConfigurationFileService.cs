@@ -1,19 +1,19 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core;
-using kyxsan.Core.IO;
-using kyxsan.Win32;
-using kyxsan.Win32.Foundation;
+using Launcher.Core;
+using Launcher.Core.IO;
+using Launcher.Win32;
+using Launcher.Win32.Foundation;
 using System.IO;
 
-namespace kyxsan.Service.Game.Configuration;
+namespace Launcher.Service.Game.Configuration;
 
 [Service(ServiceLifetime.Singleton, typeof(IGameConfigurationFileService))]
 internal sealed class GameConfigurationFileService : IGameConfigurationFileService
@@ -29,14 +29,14 @@ internal sealed class GameConfigurationFileService : IGameConfigurationFileServi
         }
 
         string configFileName = isOversea ? BackupOverseaConfigurationFileName : BackupChineseConfigurationFileName;
-        string destination = Path.Combine(kyxsanRuntime.GetDataServerCacheDirectory(), configFileName);
+        string destination = Path.Combine(LauncherRuntime.GetDataServerCacheDirectory(), configFileName);
         FileOperation.Copy(source, destination, true);
     }
 
     public void Restore(string destination, bool isOversea)
     {
         string configFileName = isOversea ? BackupOverseaConfigurationFileName : BackupChineseConfigurationFileName;
-        string source = Path.Combine(kyxsanRuntime.GetDataServerCacheDirectory(), configFileName);
+        string source = Path.Combine(LauncherRuntime.GetDataServerCacheDirectory(), configFileName);
 
         if (!File.Exists(source))
         {
@@ -60,7 +60,7 @@ internal sealed class GameConfigurationFileService : IGameConfigurationFileServi
         }
         catch (IOException ex)
         {
-            if (kyxsanNative.IsWin32(ex.HResult, [WIN32_ERROR.ERROR_PATH_NOT_FOUND, WIN32_ERROR.ERROR_NO_SUCH_DEVICE]))
+            if (LauncherNative.IsWin32(ex.HResult, [WIN32_ERROR.ERROR_PATH_NOT_FOUND, WIN32_ERROR.ERROR_NO_SUCH_DEVICE]))
             {
                 return;
             }

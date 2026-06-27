@@ -1,10 +1,10 @@
-// Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+﻿// Copyright (c) DGP Studio. All rights reserved.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using System.Collections.Generic;
 
-namespace kyxsan.SourceGeneration.Extension;
+namespace Launcher.SourceGeneration.Extension;
 
 internal static class KeyValuePairExtension
 {

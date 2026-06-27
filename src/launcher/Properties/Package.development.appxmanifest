@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Package
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
@@ -11,12 +11,12 @@
   IgnorableNamespaces="com uap desktop desktop6 rescap mp">
 
   <Identity
-    Name="60568DGPStudio.SnapkyxsanDev"
+    Name="60568DGPStudio.SnapLauncherDev"
     Publisher="CN=wangdage12"
     Version="2.1.0.0" />
 
   <Properties>
-    <DisplayName>kyxsanlauncher Dev</DisplayName>
+    <DisplayName>Launcher Dev</DisplayName>
     <PublisherDisplayName>DGP Studio</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
     <desktop6:RegistryWriteVirtualization>disabled</desktop6:RegistryWriteVirtualization>
@@ -36,8 +36,8 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="kyxsanlauncher Dev"
-        Description="kyxsanlauncher Dev"
+        DisplayName="Launcher Dev"
+        Description="Launcher Dev"
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png">
@@ -50,14 +50,14 @@
         </desktop:Extension>
         <com:Extension Category="windows.comServer">
           <com:ComServer>
-            <com:ExeServer Executable="kyxsanlauncher.exe" Arguments="----AppNotificationActivated:" DisplayName="kyxsanlauncher Toast Activator">
-              <com:Class Id="F32B561D-752E-472B-A22C-85824D421E1A" DisplayName="kyxsanlauncher Dev Toast Activator"/>
+            <com:ExeServer Executable="Launcher.exe" Arguments="----AppNotificationActivated:" DisplayName="Launcher Toast Activator">
+              <com:Class Id="F32B561D-752E-472B-A22C-85824D421E1A" DisplayName="Launcher Dev Toast Activator"/>
             </com:ExeServer>
           </com:ComServer>
         </com:Extension>
         <uap:Extension Category="windows.protocol">
-          <uap:Protocol Name="kyxsan">
-            <uap:DisplayName>kyxsan Dev</uap:DisplayName>
+          <uap:Protocol Name="Launcher">
+            <uap:DisplayName>Launcher Dev</uap:DisplayName>
           </uap:Protocol>
         </uap:Extension>
       </Extensions>

@@ -1,19 +1,19 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
-using kyxsan.Core.Database;
-using kyxsan.ViewModel.User;
-using kyxsan.Web.Hoyolab.Takumi.Binding;
-using BindingUser = kyxsan.ViewModel.User.User;
-using EntityUser = kyxsan.Model.Entity.User;
+using Launcher.Core.Database;
+using Launcher.ViewModel.User;
+using Launcher.Web.Hoyolab.Takumi.Binding;
+using BindingUser = Launcher.ViewModel.User.User;
+using EntityUser = Launcher.Model.Entity.User;
 
-namespace kyxsan.Service.User;
+namespace Launcher.Service.User;
 
 // For performance reason, extension method should avoid using LINQ
 internal static class UserServiceExtension

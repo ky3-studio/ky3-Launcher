@@ -1,23 +1,23 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Common;
 using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Core;
-using kyxsan.Core.ExceptionService;
-using kyxsan.Core.Logging;
-using kyxsan.Service;
-using kyxsan.Service.Game.Package.Advanced;
+using Launcher.Core;
+using Launcher.Core.ExceptionService;
+using Launcher.Core.Logging;
+using Launcher.Service;
+using Launcher.Service.Game.Package.Advanced;
 using System.Collections.Frozen;
 using System.Diagnostics;
 
-namespace kyxsan.ViewModel.Game;
+namespace Launcher.ViewModel.Game;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
@@ -152,7 +152,7 @@ internal sealed partial class GamePackageOperationViewModel : Abstraction.ViewMo
 
                     break;
                 default:
-                    kyxsanException.NotSupported();
+                    LauncherException.NotSupported();
                     break;
             }
 
@@ -205,7 +205,7 @@ internal sealed partial class GamePackageOperationViewModel : Abstraction.ViewMo
             GamePackageOperationKind.Update => SH.ViewModelGamePackageOperationCompleteUpdate,
             GamePackageOperationKind.ExtractBlocks or GamePackageOperationKind.ExtractExecutable => "Extracted",
             GamePackageOperationKind.Predownload => SH.ViewModelGamePackageOperationCompletePredownload,
-            _ => throw kyxsanException.NotSupported(),
+            _ => throw LauncherException.NotSupported(),
         };
 
         IsFinished = true;

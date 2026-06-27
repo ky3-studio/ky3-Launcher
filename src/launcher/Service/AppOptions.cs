@@ -1,30 +1,30 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 // Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml;
-using kyxsan.Core;
-using kyxsan.Core.Property;
-using kyxsan.Core.Setting;
-using kyxsan.Model;
-using kyxsan.Service.Abstraction;
-using kyxsan.Service.BackgroundImage;
-using kyxsan.UI.Xaml.Media.Backdrop;
-using BackdropTypeEnum = kyxsan.UI.Xaml.Media.Backdrop.BackdropType;
-using kyxsan.Web.Bridge;
-using kyxsan.Web.Hoyolab;
+using Launcher.Core;
+using Launcher.Core.Property;
+using Launcher.Core.Setting;
+using Launcher.Model;
+using Launcher.Service.Abstraction;
+using Launcher.Service.BackgroundImage;
+using Launcher.UI.Xaml.Media.Backdrop;
+using BackdropTypeEnum = Launcher.UI.Xaml.Media.Backdrop.BackdropType;
+using Launcher.Web.Bridge;
+using Launcher.Web.Hoyolab;
 using System.Collections.Immutable;
 using System.Diagnostics;
 using System.Globalization;
 
-namespace kyxsan.Service;
+namespace Launcher.Service;
 
 [Service(ServiceLifetime.Singleton)]
 internal sealed partial class AppOptions : DbStoreOptions
@@ -88,7 +88,7 @@ internal sealed partial class AppOptions : DbStoreOptions
     public IObservableProperty<ElementTheme> ElementTheme { get => field ??= CreateProperty(SettingKeys.ElementTheme, Microsoft.UI.Xaml.ElementTheme.Default); }
 
     [field: MaybeNull]
-    public IObservableProperty<BackgroundImageType> BackgroundImageType { get => field ??= CreateProperty(SettingKeys.BackgroundImageType, BackgroundImage.BackgroundImageType.kyxsanOfficialLauncher); }
+    public IObservableProperty<BackgroundImageType> BackgroundImageType { get => field ??= CreateProperty(SettingKeys.BackgroundImageType, BackgroundImage.BackgroundImageType.LauncherOfficialLauncher); }
 
     [field: MaybeNull]
     public IObservableProperty<string> BackgroundImageCustomPath { get => field ??= CreateProperty(SettingKeys.BackgroundImageCustomPath, string.Empty); }
@@ -152,7 +152,7 @@ internal sealed partial class AppOptions : DbStoreOptions
         {
             LocalSetting.Set(SettingKeys.RunElevated, value);
 
-            if (kyxsanRuntime.IsProcessElevated && options.IsStartupEnabled.Value)
+            if (LauncherRuntime.IsProcessElevated && options.IsStartupEnabled.Value)
             {
                 IServiceProvider sp = Ioc.Default;
                 AutoStartService autoStart = sp.GetRequiredService<AutoStartService>();

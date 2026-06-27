@@ -1,23 +1,23 @@
-//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by kyxsan.
+// Modified by Launcher.
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
-using kyxsan.Core.Logging;
-using kyxsan.Model.Metadata.Converter;
-using kyxsan.Model.Metadata.Quest;
-using kyxsan.Service.Metadata;
-using kyxsan.Service.Metadata.ContextAbstraction;
-using kyxsan.UI.Xaml.Control.AutoSuggestBox;
-using kyxsan.UI.Xaml.Data;
+using Launcher.Core.Logging;
+using Launcher.Model.Metadata.Converter;
+using Launcher.Model.Metadata.Quest;
+using Launcher.Service.Metadata;
+using Launcher.Service.Metadata.ContextAbstraction;
+using Launcher.UI.Xaml.Control.AutoSuggestBox;
+using Launcher.UI.Xaml.Data;
 using System.Collections.Immutable;
 
-namespace kyxsan.ViewModel.Wiki;
+namespace Launcher.ViewModel.Wiki;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]

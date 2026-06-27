@@ -1,33 +1,33 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 namespace Launcher.Web.Hoyolab.Takumi.Event.BbsSignReward;
 
 /// <summary>
-/// å¥–åŠ±ç‰©å“
+/// ½±ÀøÎïÆ·
 /// </summary>
 internal class Award
 {
     /// <summary>
-    /// å›¾æ ‡
+    /// Í¼±ê
     /// </summary>
     [JsonPropertyName("icon")]
     public string Icon { get; set; } = default!;
 
     /// <summary>
-    /// åç§°
+    /// Ãû³Æ
     /// </summary>
     [JsonPropertyName("name")]
     public string Name { get; set; } = default!;
 
     /// <summary>
-    /// ä¸ªæ•°
+    /// ¸öÊı
     /// </summary>
     [JsonPropertyName("cnt")]
     public int Count { get; set; } = default!;

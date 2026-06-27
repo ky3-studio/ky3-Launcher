@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml;
@@ -161,7 +161,7 @@ internal sealed partial class AnnouncementWebView2ContentProvider : DependencyOb
         }
         catch (COMException ex)
         {
-            // ç»„æˆ–èµ„æºçš„çŠ¶æ€ä¸æ˜¯æ‰§è¡Œè¯·æ±‚æ“ä½œçš„æ­£ç¡®çŠ¶æ€ã€‚
+            // ×é»ò×ÊÔ´µÄ×´Ì¬²»ÊÇÖ´ÐÐÇëÇó²Ù×÷µÄÕýÈ·×´Ì¬¡£
             if (!LauncherNative.IsWin32(ex.ErrorCode, WIN32_ERROR.ERROR_INVALID_STATE))
             {
                 throw;

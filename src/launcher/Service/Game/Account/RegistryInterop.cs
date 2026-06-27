@@ -1,10 +1,10 @@
-﻿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Microsoft.Win32;
@@ -21,7 +21,7 @@ namespace Launcher.Service.Game.Account;
 
 internal static class RegistryInterop
 {
-    private const string ChineseKeyName = @"HKEY_CURRENT_USER\Software\miHoYo\原神";
+    private const string ChineseKeyName = @"HKEY_CURRENT_USER\Software\miHoYo\ԭ��";
     private const string OverseaKeyName = @"HKEY_CURRENT_USER\Software\miHoYo\Genshin Impact";
     private const string SdkChineseValueName = "MIHOYOSDK_ADL_PROD_CN_h3123967166";
     private const string SdkOverseaValueName = "MIHOYOSDK_ADL_PROD_OVERSEA_h1158948810";

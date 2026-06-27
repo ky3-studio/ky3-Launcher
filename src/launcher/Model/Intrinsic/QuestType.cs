@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 namespace Launcher.Model.Intrinsic;
@@ -12,39 +12,39 @@ namespace Launcher.Model.Intrinsic;
 internal enum QuestType : uint
 {
     /// <summary>
-    /// Archon Quest é­”ç¥ä»»åŠ¡
+    /// Archon Quest Ä§ÉñÈÎÎñ
     /// </summary>
     AQ,
 
     /// <summary>
-    /// Fractions Quest å¸®æ´¾ä»»åŠ¡
+    /// Fractions Quest °ïÅÉÈÎÎñ
     /// </summary>
     FQ,
 
     /// <summary>
-    /// Legend Quest ä¼ è¯´ä»»åŠ¡
+    /// Legend Quest ´«ËµÈÎÎñ
     /// </summary>
     LQ,
 
     /// <summary>
-    /// Event Quest æ´»åŠ¨ä»»åŠ¡
+    /// Event Quest »î¶¯ÈÎÎñ
     /// </summary>
     EQ,
 
     /// <summary>
-    /// Daily Quest æ—¥å¸¸ä»»åŠ¡
+    /// Daily Quest ÈÕ³£ÈÎÎñ
     /// </summary>
     DQ,
 
     /// <summary>
-    /// Interval Quest é—´éš”ä»»åŠ¡?
+    /// Interval Quest ¼ä¸ôÈÎÎñ?
     /// </summary>
     IQ,
 
     VQ,
 
     /// <summary>
-    /// World Quest ä¸–ç•Œä»»åŠ¡
+    /// World Quest ÊÀ½çÈÎÎñ
     /// </summary>
     WQ,
 }

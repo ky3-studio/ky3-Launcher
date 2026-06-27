@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Microsoft.UI;
@@ -643,13 +643,13 @@ internal sealed partial class LauncherHomePage
         if (isGameRunning)
         {
             LaunchButtonText.Text = SH.ViewPageHomeStopGameButton;
-            PlayIconText.Text = "â– ";
+            PlayIconText.Text = "¡ö";
             AnimateLaunchButtonColors(hovered: _isLaunchButtonHovered, running: true);
         }
         else
         {
             LaunchButtonText.Text = SH.ViewPageHomeLaunchGameButton;
-            PlayIconText.Text = "â–¶";
+            PlayIconText.Text = "?";
             AnimateLaunchButtonColors(hovered: _isLaunchButtonHovered);
         }
     }

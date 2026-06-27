@@ -1,5 +1,5 @@
-ï»¿// Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Copyright (c) DGP Studio. All rights reserved.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Microsoft.CodeAnalysis;
@@ -142,7 +142,7 @@ internal sealed class ApiEndpointsGenerator : IIncrementalGenerator
             {
                 if (insideQuotes && i + 1 < line.Length && line[i + 1] == '"')
                 {
-                    // å¤„ç†åŒå¼•å·è½¬ï¿½?
+                    // ´¦ÀíË«ÒýºÅ×ª??
                     currentField.Append('"');
                     i++;
                 }
@@ -162,7 +162,7 @@ internal sealed class ApiEndpointsGenerator : IIncrementalGenerator
             }
         }
 
-        // æ·»åŠ æœ€åŽä¸€ä¸ªå­—ï¿½?
+        // Ìí¼Ó×îºóÒ»¸ö×Ö??
         fields.Add(currentField.ToString());
 
         return fields;

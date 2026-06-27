@@ -1,5 +1,5 @@
-ï»¿// Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Copyright (c) DGP Studio. All rights reserved.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Launcher.Core.Database;
@@ -307,7 +307,7 @@ internal sealed partial class CultivationService : ICultivationService
         List<CultivateEntryLevelInformation> allLevelInfos = [];
         List<CultivateItem> allItems = [];
 
-        // æ”¶é›†æ‰€æœ‰è§’è‰²æ•°æ®
+        // ÊÕ¼¯ËùÓĞ½ÇÉ«Êı¾İ
         foreach (Avatar avatar in avatars)
         {
             CultivateEntry entry = CultivateEntry.From(projectId, CultivateType.AvatarAndSkill, (uint)avatar.Id);
@@ -337,7 +337,7 @@ internal sealed partial class CultivationService : ICultivationService
             }
         }
 
-        // æ”¶é›†æ‰€æœ‰æ­¦å™¨æ•°æ®
+        // ÊÕ¼¯ËùÓĞÎäÆ÷Êı¾İ
         foreach (Weapon weapon in weapons)
         {
             CultivateEntry entry = CultivateEntry.From(projectId, CultivateType.Weapon, (uint)weapon.Id);
@@ -361,7 +361,7 @@ internal sealed partial class CultivationService : ICultivationService
             }
         }
 
-        // ä¸€æ¬¡æ€§å†™å…¥æ•°æ®åº“ï¼ˆåªè§¦å‘ 3 æ¬¡ SaveChangesï¼‰
+        // Ò»´ÎĞÔĞ´ÈëÊı¾İ¿â£¨Ö»´¥·¢ 3 ´Î SaveChanges£©
         cultivationRepository.AddCultivateEntryRange(allEntries);
         cultivationRepository.AddLevelInformationRange(allLevelInfos);
         cultivationRepository.AddCultivateItemRange(allItems);

@@ -1,10 +1,10 @@
-О╩©//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 namespace Launcher.Model.Intrinsic;
@@ -12,37 +12,37 @@ namespace Launcher.Model.Intrinsic;
 internal enum ItemType
 {
     /// <summary>
-    /// Ф≈═
+    /// нч
     /// </summary>
     ITEM_NONE = 0,
 
     /// <summary>
-    /// Х≥ Ф▀÷И│⌠Е┘╥
+    /// пИдБ╣ю╬ъ
     /// </summary>
     ITEM_VIRTUAL = 1,
 
     /// <summary>
-    /// Ф²░Ф√≥
+    /// ╡дао
     /// </summary>
     ITEM_MATERIAL = 2,
 
     /// <summary>
-    /// Е°ёИ│≈Г┴╘
+    /// й╔ренО
     /// </summary>
     ITEM_RELIQUARY = 3,
 
     /// <summary>
-    /// Ф╜╕Е≥╗
+    /// нДфВ
     /// </summary>
     ITEM_WEAPON = 4,
 
     /// <summary>
-    /// Д╩╩Е┼║Г╜┴
+    /// хннЯ╣х
     /// </summary>
     ITEM_DISPLAY = 5,
 
     /// <summary>
-    /// Е╝╤Е┘╥
+    /// ╪р╬ъ
     /// </summary>
     ITEM_FURNITURE = 6,
 }

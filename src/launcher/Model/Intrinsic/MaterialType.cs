@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 namespace Launcher.Model.Intrinsic;
@@ -45,7 +45,7 @@ internal enum MaterialType
     MATERIAL_HOME_SEED = 31,
     MATERIAL_FISH_BAIT = 32,
     MATERIAL_FISH_ROD = 33,
-    MATERIAL_SUMO_BUFF = 34, // sumo æ´»åŠ¨é“å…·ï¼Œnever appear
+    MATERIAL_SUMO_BUFF = 34, // sumo »î¶¯µÀ¾ß£¬never appear
     MATERIAL_FIREWORKS = 35,
     MATERIAL_BGM = 36,
     MATERIAL_SPICE_FOOD = 37,
@@ -54,7 +54,7 @@ internal enum MaterialType
     MATERIAL_ACTIVITY_JIGSAW = 40,
     MATERIAL_ARANARA = 41,
     MATERIAL_GCG_CARD = 42,
-    MATERIAL_GCG_CARD_FACE = 43, // å½±å¹»å¡é¢
+    MATERIAL_GCG_CARD_FACE = 43, // Ó°»Ã¿¨Ãæ
     MATERIAL_GCG_CARD_BACK = 44,
     MATERIAL_GCG_FIELD = 45,
     MATERIAL_DESHRET_MANUAL = 46,

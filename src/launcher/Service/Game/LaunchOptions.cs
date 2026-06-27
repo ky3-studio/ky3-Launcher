@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Windowing;
@@ -153,11 +153,11 @@ internal sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePat
         {
             string[] registryPaths =
             [
-                @"SOFTWARE\miHoYo\åŽŸç¥ž",
+                @"SOFTWARE\miHoYo\Ô­Éñ",
                 @"SOFTWARE\miHoYo\Genshin Impact",
-                @"SOFTWARE\WOW6432Node\miHoYo\åŽŸç¥ž",
+                @"SOFTWARE\WOW6432Node\miHoYo\Ô­Éñ",
                 @"SOFTWARE\WOW6432Node\miHoYo\Genshin Impact",
-                @"Software\miHoYo\åŽŸç¥ž",
+                @"Software\miHoYo\Ô­Éñ",
                 @"Software\miHoYo\Genshin Impact",
             ];
 
@@ -236,7 +236,7 @@ internal sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePat
         {
             string[] registryPaths = isOversea
                 ? [@"Software\miHoYo\Genshin Impact", @"SOFTWARE\miHoYo\Genshin Impact"]
-                : [@"Software\miHoYo\åŽŸç¥ž", @"SOFTWARE\miHoYo\åŽŸç¥ž"];
+                : [@"Software\miHoYo\Ô­Éñ", @"SOFTWARE\miHoYo\Ô­Éñ"];
 
             foreach (string path in registryPaths)
             {
@@ -447,7 +447,7 @@ internal sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePat
 
 
 
-    // Custom DLL Injection - æ¯ä¸ªDLLå•ç‹¬æŽ§åˆ¶å¯ç”¨çŠ¶æ€
+    // Custom DLL Injection - Ã¿¸öDLLµ¥¶À¿ØÖÆÆôÓÃ×´Ì¬
     [field: MaybeNull]
     public IObservableProperty<ImmutableDictionary<string, bool>> CustomDllConfigs { get => field ??= CreatePropertyForClassUsingCustom(SettingKeys.LaunchCustomDllConfigs, ImmutableDictionary<string, bool>.Empty, s => JsonSerializer.Deserialize<ImmutableDictionary<string, bool>>(s) ?? ImmutableDictionary<string, bool>.Empty, d => JsonSerializer.Serialize(d)); }
 

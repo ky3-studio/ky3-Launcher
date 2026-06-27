@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using CommunityToolkit.WinUI.Controls;
@@ -12,12 +12,12 @@ using CommunityToolkit.WinUI.Controls;
 namespace Launcher.UI.Xaml.View.Specialized;
 
 /// <summary>
-/// å¯åŠ¨æ¸¸æˆèµ„æº Expander
+/// Æô¶¯ÓÎÏ·×ÊÔ´ Expander
 /// </summary>
 internal sealed partial class LaunchGameResourceExpander : SettingsExpander
 {
     /// <summary>
-    /// æ„é€ ä¸€ä¸ªæ–°çš„å¯åŠ¨æ¸¸æˆèµ„æº Expander
+    /// ¹¹ÔìÒ»¸öĞÂµÄÆô¶¯ÓÎÏ·×ÊÔ´ Expander
     /// </summary>
     public LaunchGameResourceExpander()
     {

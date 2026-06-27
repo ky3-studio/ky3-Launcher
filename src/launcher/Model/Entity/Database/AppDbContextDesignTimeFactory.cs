@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Microsoft.EntityFrameworkCore.Design;
@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Design;
 namespace Launcher.Model.Entity.Database;
 
 /// <summary>
-/// æ­¤ç±»åªç”¨äºåœ¨ç”Ÿæˆè¿ç§»æ—¶æä¾›æ•°æ®åº“ä¸Šä¸‹æ–‡
+/// ´ËÀàÖ»ÓÃÓÚÔÚÉú³ÉÇ¨ÒÆÊ±Ìá¹©Êı¾İ¿âÉÏÏÂÎÄ
 /// </summary>
 [EditorBrowsable(EditorBrowsableState.Never)]
 internal sealed class AppDbContextDesignTimeFactory : IDesignTimeDbContextFactory<AppDbContext>

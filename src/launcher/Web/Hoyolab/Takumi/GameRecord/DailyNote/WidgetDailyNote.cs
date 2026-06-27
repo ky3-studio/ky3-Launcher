@@ -1,27 +1,27 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 namespace Launcher.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 
 /// <summary>
-/// å®æ—¶ä¾¿ç¬ºå°ç»„ä»¶æ•°æ®
+/// ÊµÊ±±ã¼ãĞ¡×é¼şÊı¾İ
 /// </summary>
 internal sealed class WidgetDailyNote : DailyNoteCommon
 {
     /// <summary>
-    /// æ˜¯å¦ç­¾åˆ°
+    /// ÊÇ·ñÇ©µ½
     /// </summary>
     [JsonPropertyName("has_signed")]
     public bool HasSigned { get; set; }
 
     /// <summary>
-    /// ç­¾åˆ°é¡µé¢é“¾æ¥
+    /// Ç©µ½Ò³ÃæÁ´½Ó
     /// </summary>
     [JsonPropertyName("sign_url")]
     public Uri SignUrl { get; set; } = default!;

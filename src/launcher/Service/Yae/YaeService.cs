@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___          __   __ _    _____
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___          __   __ _    _____
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \  __  __ \ \ / // \  | ____|
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | | \ \/ /  \ V // _ \ |  _|
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |  >  <    | |/ ___ \| |___
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/  /_/\_\   |_/_/   \_\_____|
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml.Controls;
@@ -188,7 +188,7 @@ internal sealed partial class YaeService : IYaeService
                             using IServiceScope authScope = serviceProvider.CreateScope();
                             IUserService userService = authScope.ServiceProvider.GetRequiredService<IUserService>();
 
-                            // ä¼˜å…ˆä½¿ç”¨ç‹¬ç«‹ä¿å­˜çš„ç±³æ¸¸ç¤¾è´¦å·ï¼Œä¸å·¦æ æ— å…³
+                            // ÓÅÏÈÊ¹ÓÃ¶ÀÁ¢±£´æµÄÃ×ÓÎÉçÕËºÅ£¬Óë×óÀ¸ÎŞ¹Ø
                             string savedMid = launchOptions.SelectedHoyolabUserMid.Value;
                             UserAndUid? userAndUid = null;
                             if (!string.IsNullOrEmpty(savedMid))

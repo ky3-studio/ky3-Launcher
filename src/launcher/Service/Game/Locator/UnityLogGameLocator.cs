@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using System.Collections.Immutable;
@@ -30,7 +30,7 @@ internal sealed partial class UnityLogGameLocator : IGameLocator, IGameLocator2
 
         string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         string logFilePathOversea = Path.Combine(appDataPath, @"..\LocalLow\miHoYo\Genshin Impact\output_log.txt");
-        string logFilePathChinese = Path.Combine(appDataPath, @"..\LocalLow\miHoYo\åŸç¥\output_log.txt");
+        string logFilePathChinese = Path.Combine(appDataPath, @"..\LocalLow\miHoYo\Ô­Éñ\output_log.txt");
 
         // Fallback to the CN server.
         if (await LocateGamePathAsync(logFilePathOversea).ConfigureAwait(false) is { IsOk: true } resultOversea)
@@ -47,7 +47,7 @@ internal sealed partial class UnityLogGameLocator : IGameLocator, IGameLocator2
 
         string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         string logFilePathOversea = Path.Combine(appDataPath, @"..\LocalLow\miHoYo\Genshin Impact\output_log.txt");
-        string logFilePathChinese = Path.Combine(appDataPath, @"..\LocalLow\miHoYo\åŸç¥\output_log.txt");
+        string logFilePathChinese = Path.Combine(appDataPath, @"..\LocalLow\miHoYo\Ô­Éñ\output_log.txt");
 
         ImmutableArray<string>.Builder builder = ImmutableArray.CreateBuilder<string>(2);
 

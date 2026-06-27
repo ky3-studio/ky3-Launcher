@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Microsoft.Web.WebView2.Core;
@@ -14,7 +14,7 @@ namespace Launcher.Web.Bridge;
 
 internal sealed class SignInJSBridgeOversea : MiHoYoJSBridge
 {
-    // ç§»é™¤ è¯·æ—‹è½¬æ‰‹æœº æç¤ºæ‰€åœ¨çš„HTMLå…ƒç´ 
+    // ÒÆ³ý ÇëÐý×ªÊÖ»ú ÌáÊ¾ËùÔÚµÄHTMLÔªËØ
     /* lang=javascript */
     private const string RemoveRotationWarningScript = """
         let landscape = document.getElementById('mihoyo_landscape');

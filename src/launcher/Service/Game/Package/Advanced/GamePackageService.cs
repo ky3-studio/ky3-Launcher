@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Launcher.Core.DependencyInjection.Abstraction;
@@ -243,8 +243,8 @@ internal sealed partial class GamePackageService : IGamePackageService
                     else
                     {
                         // IOException: The request was aborted.
-                        // + IOException: Unable to read data from the transport connection: è¿œç¨‹ä¸»æœºå¼ºè¿«å…³é—­äº†ä¸€ä¸ªçŽ°æœ‰çš„è¿žæŽ¥ã€‚.
-                        //   + SocketException | ConnectionReset: è¿œç¨‹ä¸»æœºå¼ºè¿«å…³é—­äº†ä¸€ä¸ªçŽ°æœ‰çš„è¿žæŽ¥ã€‚
+                        // + IOException: Unable to read data from the transport connection: Ô¶³ÌÖ÷»úÇ¿ÆÈ¹Ø±ÕÁËÒ»¸öÏÖÓÐµÄÁ¬½Ó¡£.
+                        //   + SocketException | ConnectionReset: Ô¶³ÌÖ÷»úÇ¿ÆÈ¹Ø±ÕÁËÒ»¸öÏÖÓÐµÄÁ¬½Ó¡£
                         SentrySdk.CaptureException(ex);
                     }
 

@@ -1,10 +1,10 @@
-О╩©//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 namespace Launcher.Core.DependencyInjection.Annotation.HttpClient;
@@ -12,17 +12,17 @@ namespace Launcher.Core.DependencyInjection.Annotation.HttpClient;
 internal enum HttpClientConfiguration
 {
     /// <summary>
-    /// И╩≤Х╝╓И┘█Г╫╝
+    /// д╛хоеДжц
     /// </summary>
     Default,
 
     /// <summary>
-    /// Г╠ЁФ╦╦Г╓╬Х╞╥Ф╠┌И┘█Г╫╝
+    /// цвсниГгКгСеДжц
     /// </summary>
     XRpc,
 
     /// <summary>
-    /// Г╠ЁФ╦╦Г╓╬Г≥╩Е╫∙Х╞╥Ф╠┌И┘█Г╫╝
+    /// цвсниГ╣гб╪гКгСеДжц
     /// </summary>
     XRpc2,
 
@@ -32,12 +32,12 @@ internal enum HttpClientConfiguration
     XRpc3,
 
     /// <summary>
-    /// Г╠ЁЕ⌠┬Ф╦╦Е░╞Е┼╗Е≥╗Г≥╩Е╫∙Х╞╥Ф╠┌И┘█Г╫╝
+    /// цв╧ЧснфТ╤╞фВ╣гб╪гКгСеДжц
     /// </summary>
     XRpc5,
 
     /// <summary>
-    /// HoyoPlay Г≥╩Е╫∙Х╞╥Ф╠┌И┘█Г╫╝
+    /// HoyoPlay ╣гб╪гКгСеДжц
     /// </summary>
     XRpc6,
 }

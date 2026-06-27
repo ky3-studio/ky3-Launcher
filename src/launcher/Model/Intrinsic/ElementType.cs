@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 namespace Launcher.Model.Intrinsic;
@@ -12,36 +12,36 @@ namespace Launcher.Model.Intrinsic;
 [ExtendedEnum]
 internal enum ElementType
 {
-    None = 0, // æ— å…ƒç´ 
+    None = 0, // ÎÞÔªËØ
 
     [LocalizationKey(nameof(SH.ModelIntrinsicElementNameFire))]
-    Fire = 1, // ç«å…ƒç´ 
+    Fire = 1, // »ðÔªËØ
 
     [LocalizationKey(nameof(SH.ModelIntrinsicElementNameWater))]
-    Water = 2, // æ°´å…ƒç´ 
+    Water = 2, // Ë®ÔªËØ
 
     [LocalizationKey(nameof(SH.ModelIntrinsicElementNameGrass))]
-    Grass = 3, // è‰å…ƒç´ 
+    Grass = 3, // ²ÝÔªËØ
 
     [LocalizationKey(nameof(SH.ModelIntrinsicElementNameElec))]
-    Electric = 4, // é›·å…ƒç´ 
+    Electric = 4, // À×ÔªËØ
 
     [LocalizationKey(nameof(SH.ModelIntrinsicElementNameIce))]
-    Ice = 5, // å†°å…ƒç´ 
-    Frozen = 6, // å†»å…ƒç´ 
+    Ice = 5, // ±ùÔªËØ
+    Frozen = 6, // ¶³ÔªËØ
 
     [LocalizationKey(nameof(SH.ModelIntrinsicElementNameWind))]
-    Wind = 7, // é£Žå…ƒç´ 
+    Wind = 7, // ·çÔªËØ
 
     [LocalizationKey(nameof(SH.ModelIntrinsicElementNameRock))]
-    Rock = 8, // å²©å…ƒç´ 
-    AntiFire = 9, // ç‡ƒå…ƒç´ 
+    Rock = 8, // ÑÒÔªËØ
+    AntiFire = 9, // È¼ÔªËØ
     VehicleMuteIce = 10, // ?
-    Mushroom = 11, // å¼¹å¼¹è‡
-    Overdose = 12, // æ¿€å…ƒç´ 
-    Wood = 13, // æœ¨å…ƒç´ 
-    LiquidPhlogiston = 14, // æ¶²æ€ç‡ƒç´ 
+    Mushroom = 11, // µ¯µ¯¹½
+    Overdose = 12, // ¼¤ÔªËØ
+    Wood = 13, // Ä¾ÔªËØ
+    LiquidPhlogiston = 14, // ÒºÌ¬È¼ËØ
     SolidPhlogiston = 15, // ?
     SolidifyPhlogiston = 16, // ?
-    Count, // ä¸ªæ•°
+    Count, // ¸öÊý
 }

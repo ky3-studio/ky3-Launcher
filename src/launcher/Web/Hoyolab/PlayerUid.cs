@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Launcher.Core.ExceptionService;
@@ -49,9 +49,9 @@ internal readonly struct PlayerUid
     {
         LauncherException.ThrowIfNot(HoyolabRegex.UidRegex.IsMatch(uid), SH.WebHoyolabInvalidUid);
 
-        // ç¾Žæœ UTC-05
-        // æ¬§æœ UTC+01
-        // å…¶ä»– UTC+08
+        // ÃÀ·þ UTC-05
+        // Å··þ UTC+01
+        // ÆäËû UTC+08
         return uid.AsSpan()[^9] switch
         {
             '6' => ServerRegionTimeZone.AmericaServerOffset,
@@ -62,9 +62,9 @@ internal readonly struct PlayerUid
 
     public static TimeSpan GetRegionTimeZoneUtcOffsetForRegion(in Region region)
     {
-        // ç¾Žæœ UTC-05
-        // æ¬§æœ UTC+01
-        // å…¶ä»– UTC+08
+        // ÃÀ·þ UTC-05
+        // Å··þ UTC+01
+        // ÆäËû UTC+08
         return region.Value switch
         {
             "os_usa" => ServerRegionTimeZone.AmericaServerOffset,

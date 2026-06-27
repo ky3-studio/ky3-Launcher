@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml;
@@ -75,7 +75,7 @@ internal sealed partial class LaunchGameCleanResourceDialog : ContentDialog
         List<CleanResourceItem> items = [];
         string serverCacheDir = LauncherRuntime.GetDataServerCacheDirectory();
 
-        // è½¬æ¢ä¸‹è½½åˆ†å—ç¼“å­˜ (ServerCache\Chunks)
+        // ×ª»»ÏÂÔØ·Ö¿é»º´æ (ServerCache\Chunks)
         string chunksDir = Path.Combine(serverCacheDir, "Chunks");
         items.Add(new CleanResourceItem
         {
@@ -84,7 +84,7 @@ internal sealed partial class LaunchGameCleanResourceDialog : ContentDialog
             Size = CalculateDirectorySize(chunksDir),
         });
 
-        // å›½é™…æœå¤‡ä»½èµ„æº (ServerCache\Oversea)
+        // ¹ú¼Ê·ş±¸·İ×ÊÔ´ (ServerCache\Oversea)
         string overseaDir = Path.Combine(serverCacheDir, "Oversea");
         items.Add(new CleanResourceItem
         {
@@ -93,7 +93,7 @@ internal sealed partial class LaunchGameCleanResourceDialog : ContentDialog
             Size = CalculateDirectorySize(overseaDir),
         });
 
-        // å›½æœå¤‡ä»½èµ„æº (ServerCache\Chinese)
+        // ¹ú·ş±¸·İ×ÊÔ´ (ServerCache\Chinese)
         string chineseDir = Path.Combine(serverCacheDir, "Chinese");
         items.Add(new CleanResourceItem
         {

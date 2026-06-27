@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Launcher.Core.Diagnostics;
@@ -107,7 +107,7 @@ internal abstract class AbstractLaunchExecutionInvoker
 
             fileSystemReference.Exchange(beforeContext.FileSystem);
 
-            // å§‹ç»ˆåˆ›å»ºæ¸¸æˆè¿›ç¨‹ï¼ŒDLL æ³¨å…¥ä¼šåœ¨æ¸¸æˆå¯åŠ¨åŽè¿›è¡Œ
+            // Ê¼ÖÕ´´½¨ÓÎÏ·½ø³Ì£¬DLL ×¢Èë»áÔÚÓÎÏ·Æô¶¯ºó½øÐÐ
             IProcess? process = CreateProcess(beforeContext);
 
             using (process)
@@ -133,7 +133,7 @@ internal abstract class AbstractLaunchExecutionInvoker
                     await handler.ExecuteAsync(executionContext).ConfigureAwait(false);
                 }
 
-                // ç­‰å¾…æ¸¸æˆè¿›ç¨‹é€€å‡º
+                // µÈ´ýÓÎÏ·½ø³ÌÍË³ö
                 if (process is { IsRunning: true })
                 {
                     progress.Report(new(SH.ServiceGameLaunchPhaseWaitingProcessExit));

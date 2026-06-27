@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Launcher.Model.Primitive;
@@ -15,7 +15,7 @@ namespace Launcher.Model.Metadata.Avatar;
 
 internal static class AvatarIds
 {
-    // æ­¤å¤„çš„å˜é‡åç§°ä»¥ UI_AvatarIcon ä¸ºå‡†
+    // ´Ë´¦µÄ±äÁ¿Ãû³ÆÒÔ UI_AvatarIcon Îª×¼
     public static readonly AvatarId Ayaka = 10000002;
     public static readonly AvatarId Qin = 10000003;
 
@@ -228,7 +228,7 @@ internal static class AvatarIds
             CultivationItems = default,
             NameCard = default!,
         });
-        // MannequinBoy / MannequinGirl ç”± Resources/Metadata/CHS/Avatar/10000117.jsonã€10000118.json æä¾›å®Œæ•´æ•°æ®ï¼Œæ— éœ€æ­¤å¤„æ³¨å…¥
+        // MannequinBoy / MannequinGirl ÓÉ Resources/Metadata/CHS/Avatar/10000117.json¡¢10000118.json Ìá¹©ÍêÕûÊý¾Ý£¬ÎÞÐè´Ë´¦×¢Èë
 
         return builder.ToImmutable();
     }

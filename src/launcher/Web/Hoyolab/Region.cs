@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Launcher.Core.ExceptionService;
@@ -49,14 +49,14 @@ internal readonly struct Region : IEquatable<Region>
         return uid.AsSpan()[^9] switch
         {
             // CN
-            >= '1' and <= '4' => CNGF01, // å›½æœ
-            '5' => CNQD01,               // æ¸ é“
+            >= '1' and <= '4' => CNGF01, // ¹ú·þ
+            '5' => CNQD01,               // ÇþµÀ
 
             // OS
-            '6' => OSUSA,  // ç¾Žæœ
-            '7' => OSEURO, // æ¬§æœ
-            '8' => OSASIA, // äºšæœ
-            '9' => OSCHT,  // å°æœ
+            '6' => OSUSA,  // ÃÀ·þ
+            '7' => OSEURO, // Å··þ
+            '8' => OSASIA, // ÑÇ·þ
+            '9' => OSCHT,  // Ì¨·þ
             _ => throw LauncherException.NotSupported(),
         };
     }

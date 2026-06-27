@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Launcher.Model.Primitive;
@@ -23,22 +23,22 @@ internal sealed class SimpleAvatar
     }
 
     /// <summary>
-    /// è§’è‰² Id
+    /// ½ÇÉ« Id
     /// </summary>
     public AvatarId AvatarId { get; set; }
 
     /// <summary>
-    /// æ­¦å™¨ Id
+    /// ÎäÆ÷ Id
     /// </summary>
     public WeaponId WeaponId { get; set; }
 
     /// <summary>
-    /// åœ£é—ç‰©å¥—è£…Id
+    /// Ê¥ÒÅÎïÌ××°Id
     /// </summary>
     public IEnumerable<ReliquarySetId> ReliquarySetIds { get; set; }
 
     /// <summary>
-    /// å‘½åº§
+    /// Ãü×ù
     /// </summary>
     public int ActivedConstellationNumber { get; set; }
 }

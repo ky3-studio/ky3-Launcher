@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Launcher.Core.DependencyInjection.Annotation.HttpClient;
@@ -120,10 +120,10 @@ internal sealed partial class ImageCacheDownloadOperation : IImageCacheDownloadO
                     catch (IOException ex)
                     {
                         // Received an unexpected EOF or 0 bytes from the transport stream.
-                        // Unable to read data from the transport connection: è¿œç¨‹ä¸»æœºå¼ºè¿«å…³é—­äº†ä¸€ä¸ªçŽ°æœ‰çš„è¿žæŽ¥ã€‚. SocketException: ConnectionReset
-                        // Unable to read data from the transport connection: ä½ çš„ä¸»æœºä¸­çš„è½¯ä»¶ä¸­æ­¢äº†ä¸€ä¸ªå·²å»ºç«‹çš„è¿žæŽ¥ã€‚. SocketException: ConnectionAborted
+                        // Unable to read data from the transport connection: Ô¶³ÌÖ÷»úÇ¿ÆÈ¹Ø±ÕÁËÒ»¸öÏÖÓÐµÄÁ¬½Ó¡£. SocketException: ConnectionReset
+                        // Unable to read data from the transport connection: ÄãµÄÖ÷»úÖÐµÄÈí¼þÖÐÖ¹ÁËÒ»¸öÒÑ½¨Á¢µÄÁ¬½Ó¡£. SocketException: ConnectionAborted
                         // HttpIOException: The response ended prematurely. (ResponseEnded)
-                        // ç£ç›˜ç©ºé—´ä¸è¶³ã€‚ : '?'.
+                        // ´ÅÅÌ¿Õ¼ä²»×ã¡£ : '?'.
                         throw InternalImageCacheException.Throw("Unable to copy stream content to file", ex);
                     }
                 }

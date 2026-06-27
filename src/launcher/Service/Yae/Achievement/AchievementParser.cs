@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___          __   __ _    _____
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___          __   __ _    _____
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \  __  __ \ \ / // \  | ____|
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | | \ \/ /  \ V // _ \ |  _|
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |  >  <    | |/ ___ \| |___
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/  /_/\_\   |_/_/   \_\_____|
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Google.Protobuf;
@@ -76,13 +76,13 @@ internal static class AchievementParser
                 }
                 else
                 {
-                    // :                                                                   â†“ 2020-09-15 04:15:14
+                    // :                                                                   ¡ý 2020-09-15 04:15:14
                     (int timestampField, int count) = dataList.CountByKey(value => value > 1600114514).MaxBy(kvp => kvp.Value);
 
-                    // :                                           FINISHED â†“     â†“ REWARD_TAKEN
+                    // :                                           FINISHED ¡ý     ¡ý REWARD_TAKEN
                     int statusField = dataList.CountByKey(value => value is 2U or 3U).First(kvp => kvp.Value == count).Key;
 
-                    // :                                                  â†“ id: 8xxxx
+                    // :                                                  ¡ý id: 8xxxx
                     int achievementIdField = dataList.CountByKey(value => (value / 10000) % 10 == 8).MaxBy(kvp => kvp.Value).Key;
 
                     HashSet<int> excludedFields = [timestampField, statusField, achievementIdField];

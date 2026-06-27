@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 namespace Launcher.Model.Intrinsic.Format;
@@ -12,17 +12,17 @@ namespace Launcher.Model.Intrinsic.Format;
 internal enum FormatMethod
 {
     /// <summary>
-    /// æ— æ ¼å¼åŒ–
+    /// ÎŞ¸ñÊ½»¯
     /// </summary>
     None,
 
     /// <summary>
-    /// å–æ•´
+    /// È¡Õû
     /// </summary>
     Integer,
 
     /// <summary>
-    /// ç™¾åˆ†æ¯”
+    /// °Ù·Ö±È
     /// </summary>
     Percent,
 }

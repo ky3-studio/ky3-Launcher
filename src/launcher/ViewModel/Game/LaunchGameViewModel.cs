@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 // Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
@@ -116,7 +116,7 @@ internal sealed partial class LaunchGameViewModel : Abstraction.ViewModel, IView
         {
             if (SetProperty(ref field, value))
             {
-                // æŒä¹…åŒ–é€‰æ‹©ï¼Œä½¿å…¶å®Œå…¨ç‹¬ç«‹äºå·¦æ è´¦å·
+                // ³Ö¾Ã»¯Ñ¡Ôñ£¬Ê¹ÆäÍêÈ«¶ÀÁ¢ÓÚ×óÀ¸ÕËºÅ
                 LaunchOptions.SelectedHoyolabUserMid.Value = value?.Entity?.Mid ?? string.Empty;
             }
         }
@@ -202,7 +202,7 @@ internal sealed partial class LaunchGameViewModel : Abstraction.ViewModel, IView
 
         AdvancedDbCollectionView<BindingUser, EntityUser> users = await userService.GetUsersAsync().ConfigureAwait(false);
 
-        // æ¢å¤ä¸Šæ¬¡ä¿å­˜çš„ç‹¬ç«‹è´¦å·é€‰æ‹©ï¼ˆä¸å·¦æ æ— å…³ï¼‰
+        // »Ö¸´ÉÏ´Î±£´æµÄ¶ÀÁ¢ÕËºÅÑ¡Ôñ£¨Óë×óÀ¸ÎŞ¹Ø£©
         string savedMid = LaunchOptions.SelectedHoyolabUserMid.Value;
         BindingUser? savedUser = string.IsNullOrEmpty(savedMid)
             ? null
@@ -416,8 +416,8 @@ internal sealed partial class LaunchGameViewModel : Abstraction.ViewModel, IView
         UserAndUid? userAndUid;
         if (LaunchOptions.UsingHoyolabAccount.Value && SelectedLaunchUser is not null)
         {
-            // éå·¦æ å½“å‰ç”¨æˆ·çš„ UserGameRoles.CurrentItem å¯èƒ½æœªåˆå§‹åŒ–ï¼Œ
-            // éœ€è¦å…ˆæ¢å¤è§’è‰²é€‰æ‹©ï¼Œå¦åˆ™ TryFromUser ä¼šå›  CurrentItem ä¸º null è€Œå¤±è´¥
+            // ·Ç×óÀ¸µ±Ç°ÓÃ»§µÄ UserGameRoles.CurrentItem ¿ÉÄÜÎ´³õÊ¼»¯£¬
+            // ĞèÒªÏÈ»Ö¸´½ÇÉ«Ñ¡Ôñ£¬·ñÔò TryFromUser »áÒò CurrentItem Îª null ¶øÊ§°Ü
             if (SelectedLaunchUser.UserGameRoles.CurrentItem is null)
             {
                 bool restored = false;
@@ -928,7 +928,7 @@ internal sealed partial class LaunchGameViewModel : Abstraction.ViewModel, IView
         ImmutableDictionary<string, bool> current = LaunchOptions.CustomDllConfigs.Value;
         if (!current.ContainsKey(path))
         {
-            LaunchOptions.CustomDllConfigs.Value = current.Add(path, true); // é»˜è®¤å¯ç”¨
+            LaunchOptions.CustomDllConfigs.Value = current.Add(path, true); // Ä¬ÈÏÆôÓÃ
         }
     }
 

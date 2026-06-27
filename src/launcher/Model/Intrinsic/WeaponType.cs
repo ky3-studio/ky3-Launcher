@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 namespace Launcher.Model.Intrinsic;
@@ -18,31 +18,31 @@ internal enum WeaponType
     WEAPON_NONE = 0,
 
     /// <summary>
-    /// å•æ‰‹å‰‘
+    /// µ¥ÊÖ½£
     /// </summary>
     [LocalizationKey(nameof(SH.ModelIntrinsicWeaponTypeSwordOneHand))]
     WEAPON_SWORD_ONE_HAND = 1,
 
     /// <summary>
-    /// æ³•å™¨
+    /// ·¨Æ÷
     /// </summary>
     [LocalizationKey(nameof(SH.ModelIntrinsicWeaponTypeCatalyst))]
     WEAPON_CATALYST = 10,
 
     /// <summary>
-    /// åŒæ‰‹å‰‘
+    /// Ë«ÊÖ½£
     /// </summary>
     [LocalizationKey(nameof(SH.ModelIntrinsicWeaponTypeClaymore))]
     WEAPON_CLAYMORE = 11,
 
     /// <summary>
-    /// å¼“
+    /// ¹­
     /// </summary>
     [LocalizationKey(nameof(SH.ModelIntrinsicWeaponTypeBow))]
     WEAPON_BOW = 12,
 
     /// <summary>
-    /// é•¿æŸ„æ­¦å™¨
+    /// ³¤±úÎäÆ÷
     /// </summary>
     [LocalizationKey(nameof(SH.ModelIntrinsicWeaponTypePole))]
     WEAPON_POLE = 13,

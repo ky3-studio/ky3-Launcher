@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Launcher.Model.Intrinsic;
@@ -17,13 +17,13 @@ internal sealed class Material : DisplayItem
 {
     public static readonly Material Default = new()
     {
-        Name = "ï¼Ÿï¼Ÿï¼Ÿ",
+        Name = "£¿£¿£¿",
         Id = default,
         RankLevel = default,
         ItemType = default,
         Icon = default!,
-        Description = "ï¼Ÿï¼Ÿï¼Ÿ",
-        TypeDescription = "ï¼Ÿï¼Ÿï¼Ÿ",
+        Description = "£¿£¿£¿",
+        TypeDescription = "£¿£¿£¿",
     };
 
     public MaterialType MaterialType { get; init; }
@@ -32,13 +32,13 @@ internal sealed class Material : DisplayItem
 
     public bool IsInventoryItem()
     {
-        // åŽŸè´¨
+        // Ô­ÖÊ
         if (Id == 112001U)
         {
             return false;
         }
 
-        // æ‘©æ‹‰ æ— ä¸»çš„å‘½æ˜Ÿ
+        // Ä¦À­ ÎÞÖ÷µÄÃüÐÇ
         if (Id == MaterialIds.Mora || Id == MaterialIds.MasterlessStellaFortuna)
         {
             return true;
@@ -54,13 +54,13 @@ internal sealed class Material : DisplayItem
             return true;
         }
 
-        // Character and Weapon Enhancement Material // è§’è‰²ä¸Žæ­¦å™¨åŸ¹å…»ç´ æ | æ™®é€š/ç²¾è‹±æ€ªç‰©æŽ‰è½
-        // Character EXP Material                    // è§’è‰²ç»éªŒç´ æ | ç»éªŒä¹¦
-        // Character Ascension Material              // è§’è‰²çªç ´ç´ æ | å…ƒç´ æ™¶çŸ³
-        // Character Talent Material                 // è§’è‰²å¤©èµ‹ç´ æ | å¤©èµ‹æœ¬
-        // Character Level-Up Material               // è§’è‰²åŸ¹å…»ç´ æ | 40ä½“BOSS/å‘¨æœ¬æŽ‰è½
-        // Weapon Enhancement Material               // æ­¦å™¨å¼ºåŒ–ç´ æ | é­”çŸ¿
-        // Weapon Ascension Material                 // æ­¦å™¨çªç ´ç´ æ | æ­¦å™¨æœ¬
+        // Character and Weapon Enhancement Material // ½ÇÉ«ÓëÎäÆ÷ÅàÑøËØ²Ä | ÆÕÍ¨/¾«Ó¢¹ÖÎïµôÂä
+        // Character EXP Material                    // ½ÇÉ«¾­ÑéËØ²Ä | ¾­ÑéÊé
+        // Character Ascension Material              // ½ÇÉ«Í»ÆÆËØ²Ä | ÔªËØ¾§Ê¯
+        // Character Talent Material                 // ½ÇÉ«Ìì¸³ËØ²Ä | Ìì¸³±¾
+        // Character Level-Up Material               // ½ÇÉ«ÅàÑøËØ²Ä | 40ÌåBOSS/ÖÜ±¾µôÂä
+        // Weapon Enhancement Material               // ÎäÆ÷Ç¿»¯ËØ²Ä | Ä§¿ó
+        // Weapon Ascension Material                 // ÎäÆ÷Í»ÆÆËØ²Ä | ÎäÆ÷±¾
         return IntrinsicFrozen.MaterialTypeDescriptions.Contains(TypeDescription);
     }
 
@@ -71,7 +71,7 @@ internal sealed class Material : DisplayItem
             return true;
         }
 
-        // æ— ç±»åž‹ æ™ºè¯†ä¹‹å†•
+        // ÎÞÀàÐÍ ÖÇÊ¶Ö®Ãá
         if (TypeDescription is null || Id == MaterialIds.CrownOfInsight)
         {
             return false;

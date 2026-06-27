@@ -1,10 +1,10 @@
-ï»¿//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
+//  _  ____   ____  ______    _    _   _          ____  _   _    _    ____  _   _ _   _ _____  _    ___
 // | |/ /\ \ / /\ \/ / ___|  / \  | \ | | __  __ / ___|| \ | |  / \  |  _ \| | | | | | |_   _|/ \  / _ \
 // | ' /  \ V /  \  /\___ \ / _ \ |  \| | \ \/ / \___ \|  \| | / _ \ | |_) | |_| | | | | | | / _ \| | | |
 // | . \   | |   /  \ ___) / ___ \| |\  |  >  <   ___) | |\  |/ ___ \|  __/|  _  | |_| | | |/ ___ \ |_| |
 // |_|\_\  |_|  /_/\_\____/_/   \_\_| \_| /_/\_\ |____/|_| \_/_/   \_\_|   |_| |_|\___/  |_/_/   \_\___/
 // Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 // Copyright (c) Millennium-Science-Technology-R-D-Inst. All rights reserved.
 // Licensed under the MIT license.
@@ -146,10 +146,10 @@ public static partial class Bootstrap
         if (!LauncherNative.Instance.IsCurrentWindowsVersionSupported())
         {
             const string Message = """
-                ky3 Launcher æ— æ³•åœ¨ç‰ˆæœ¬ä½ŽäºŽ 10.0.19045.5371 çš„ Windows ä¸Šè¿è¡Œï¼Œè¯·æ›´æ–°ç³»ç»Ÿã€‚
+                ky3 Launcher ÎÞ·¨ÔÚ°æ±¾µÍÓÚ 10.0.19045.5371 µÄ Windows ÉÏÔËÐÐ£¬Çë¸üÐÂÏµÍ³¡£
                 ky3 Launcher cannot run on Windows versions earlier than 10.0.19045.5371. Please update your system.
                 """;
-            LauncherNative.Instance.ShowErrorMessage("Warning | è­¦å‘Š", Message);
+            LauncherNative.Instance.ShowErrorMessage("Warning | ¾¯¸æ", Message);
             return false;
         }
 

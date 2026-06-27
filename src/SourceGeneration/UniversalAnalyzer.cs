@@ -1,5 +1,5 @@
-Ôªø// Copyright (c) DGP Studio. All rights reserved.
-// Modified by Launcher.
+// Copyright (c) DGP Studio. All rights reserved.
+// Modified by ky3-studio.
 // Licensed under the MIT license.
 
 using Microsoft.CodeAnalysis;
@@ -96,7 +96,7 @@ internal sealed class UniversalAnalyzer : DiagnosticAnalyzer
         MethodDeclarationSyntax methodSyntax = (MethodDeclarationSyntax)context.Node;
         IMethodSymbol methodSymbol = context.SemanticModel.GetDeclaredSymbol(methodSyntax)!;
 
-        // Ë∑≥ËøáÈáçËΩΩÊñπÊ≥ï
+        // Ã¯π˝÷ÿ‘ÿ∑Ω∑®
         if (methodSymbol.IsOverride)
         {
             return;

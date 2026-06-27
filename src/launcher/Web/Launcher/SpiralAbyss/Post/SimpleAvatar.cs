@@ -23,22 +23,22 @@ internal sealed class SimpleAvatar
     }
 
     /// <summary>
-    /// ½ÇÉ« Id
+    /// è§’è‰² Id
     /// </summary>
     public AvatarId AvatarId { get; set; }
 
     /// <summary>
-    /// ÎäÆ÷ Id
+    /// æ­¦å™¨ Id
     /// </summary>
     public WeaponId WeaponId { get; set; }
 
     /// <summary>
-    /// Ê¥ÒÅÎïÌ××°Id
+    /// åœ£é—ç‰©å¥—è£…Id
     /// </summary>
     public IEnumerable<ReliquarySetId> ReliquarySetIds { get; set; }
 
     /// <summary>
-    /// Ãü×ù
+    /// å‘½åº§
     /// </summary>
     public int ActivedConstellationNumber { get; set; }
 }

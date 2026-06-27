@@ -12,39 +12,39 @@ namespace Launcher.Model.Intrinsic;
 internal enum QuestType : uint
 {
     /// <summary>
-    /// Archon Quest 魔神任务
+    /// Archon Quest 榄旂浠诲姟
     /// </summary>
     AQ,
 
     /// <summary>
-    /// Fractions Quest 帮派任务
+    /// Fractions Quest 甯淳浠诲姟
     /// </summary>
     FQ,
 
     /// <summary>
-    /// Legend Quest 传说任务
+    /// Legend Quest 浼犺浠诲姟
     /// </summary>
     LQ,
 
     /// <summary>
-    /// Event Quest 活动任务
+    /// Event Quest 娲诲姩浠诲姟
     /// </summary>
     EQ,
 
     /// <summary>
-    /// Daily Quest 日常任务
+    /// Daily Quest 鏃ュ父浠诲姟
     /// </summary>
     DQ,
 
     /// <summary>
-    /// Interval Quest 间隔任务?
+    /// Interval Quest 闂撮殧浠诲姟?
     /// </summary>
     IQ,
 
     VQ,
 
     /// <summary>
-    /// World Quest 世界任务
+    /// World Quest 涓栫晫浠诲姟
     /// </summary>
     WQ,
 }

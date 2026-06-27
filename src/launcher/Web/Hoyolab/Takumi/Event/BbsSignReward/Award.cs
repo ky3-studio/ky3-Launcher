@@ -10,24 +10,24 @@
 namespace Launcher.Web.Hoyolab.Takumi.Event.BbsSignReward;
 
 /// <summary>
-/// 奖励物品
+/// 濂栧姳鐗╁搧
 /// </summary>
 internal class Award
 {
     /// <summary>
-    /// 图标
+    /// 鍥炬爣
     /// </summary>
     [JsonPropertyName("icon")]
     public string Icon { get; set; } = default!;
 
     /// <summary>
-    /// 名称
+    /// 鍚嶇О
     /// </summary>
     [JsonPropertyName("name")]
     public string Name { get; set; } = default!;
 
     /// <summary>
-    /// 个数
+    /// 涓暟
     /// </summary>
     [JsonPropertyName("cnt")]
     public int Count { get; set; } = default!;

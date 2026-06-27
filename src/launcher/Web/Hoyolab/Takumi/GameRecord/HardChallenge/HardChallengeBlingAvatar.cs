@@ -12,7 +12,7 @@ namespace Launcher.Web.Hoyolab.Takumi.GameRecord.HardChallenge;
 internal class HardChallengeBlingAvatar : HardChallengeSimpleAvatar
 {
     /// <summary>
-    /// ×îÖÕÊÇ·ñÉÏ°ñ
+    /// æœ€ç»ˆæ˜¯å¦ä¸Šæ¦œ
     /// </summary>
     [JsonPropertyName("is_plus")]
     public required bool IsPlus { get; init; }

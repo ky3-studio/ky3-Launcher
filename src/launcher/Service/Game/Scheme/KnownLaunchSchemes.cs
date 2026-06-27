@@ -14,16 +14,16 @@ namespace Launcher.Service.Game.Scheme;
 
 internal static class KnownLaunchSchemes
 {
-    // ¹ú·ş¹Ù·ş
+    // å›½æœå®˜æœ
     private static readonly LaunchScheme ServerChineseChannel00SubChannel00 = new LaunchSchemeChinese(ChannelType.Default, SubChannelType.Default);
     private static readonly LaunchScheme ServerChineseChannel01SubChannel00 = new LaunchSchemeChinese(ChannelType.Official, SubChannelType.Default);
     private static readonly LaunchScheme ServerChineseChannel01SubChannel01 = new LaunchSchemeChinese(ChannelType.Official, SubChannelType.Official);
     private static readonly LaunchScheme ServerChineseChannel01SubChannel02 = new LaunchSchemeChinese(ChannelType.Official, SubChannelType.NoTapTap);
 
-    // ¹ú·şB·ş
+    // å›½æœBæœ
     private static readonly LaunchScheme ServerChineseChannel14SubChannel00 = new LaunchSchemeBilibili(SubChannelType.Default);
 
-    // ¹ú¼Ê·ş
+    // å›½é™…æœ
     private static readonly LaunchScheme ServerOverseaChannel00SubChannel00 = new LaunchSchemeOversea(ChannelType.Default, SubChannelType.Default);
     private static readonly LaunchScheme ServerOverseaChannel01SubChannel00 = new LaunchSchemeOversea(ChannelType.Official, SubChannelType.Default);
     private static readonly LaunchScheme ServerOverseaChannel01SubChannel01 = new LaunchSchemeOversea(ChannelType.Official, SubChannelType.Official);

@@ -18,31 +18,31 @@ internal enum WeaponType
     WEAPON_NONE = 0,
 
     /// <summary>
-    /// µ¥ÊÖ½£
+    /// å•æ‰‹å‰‘
     /// </summary>
     [LocalizationKey(nameof(SH.ModelIntrinsicWeaponTypeSwordOneHand))]
     WEAPON_SWORD_ONE_HAND = 1,
 
     /// <summary>
-    /// ·¨Æ÷
+    /// æ³•å™¨
     /// </summary>
     [LocalizationKey(nameof(SH.ModelIntrinsicWeaponTypeCatalyst))]
     WEAPON_CATALYST = 10,
 
     /// <summary>
-    /// Ë«ÊÖ½£
+    /// åŒæ‰‹å‰‘
     /// </summary>
     [LocalizationKey(nameof(SH.ModelIntrinsicWeaponTypeClaymore))]
     WEAPON_CLAYMORE = 11,
 
     /// <summary>
-    /// ¹­
+    /// å¼“
     /// </summary>
     [LocalizationKey(nameof(SH.ModelIntrinsicWeaponTypeBow))]
     WEAPON_BOW = 12,
 
     /// <summary>
-    /// ³¤±úÎäÆ÷
+    /// é•¿æŸ„æ­¦å™¨
     /// </summary>
     [LocalizationKey(nameof(SH.ModelIntrinsicWeaponTypePole))]
     WEAPON_POLE = 13,

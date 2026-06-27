@@ -12,17 +12,17 @@ namespace Launcher.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 internal enum RoleCombatAvatarType
 {
     /// <summary>
-    /// 已有
+    /// 宸叉湁
     /// </summary>
     Default = 1,
 
     /// <summary>
-    /// 试用
+    /// 璇曠敤
     /// </summary>
     Trial = 2,
 
     /// <summary>
-    /// 借用
+    /// 鍊熺敤
     /// </summary>
     Support = 3,
 }

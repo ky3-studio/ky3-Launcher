@@ -38,7 +38,7 @@ internal sealed partial class WikiAvatarStrategyComponent
             return;
         }
 
-        Uri targetUri = $"https://wiki.biligame.com/ys/{avatar.Name}/¹¥ÂÔ".ToUri();
+        Uri targetUri = $"https://wiki.biligame.com/ys/{avatar.Name}/æ”»ç•¥".ToUri();
         await Windows.System.Launcher.LaunchUriAsync(targetUri);
     }
 

@@ -12,17 +12,17 @@ namespace Launcher.Model.Intrinsic.Format;
 internal enum FormatMethod
 {
     /// <summary>
-    /// ÎŞ¸ñÊ½»¯
+    /// æ— æ ¼å¼åŒ–
     /// </summary>
     None,
 
     /// <summary>
-    /// È¡Õû
+    /// å–æ•´
     /// </summary>
     Integer,
 
     /// <summary>
-    /// °Ù·Ö±È
+    /// ç™¾åˆ†æ¯”
     /// </summary>
     Percent,
 }

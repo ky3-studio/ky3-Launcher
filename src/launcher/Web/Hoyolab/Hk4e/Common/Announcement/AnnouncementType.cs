@@ -10,7 +10,7 @@
 namespace Launcher.Web.Hoyolab.Hk4e.Common.Announcement;
 
 /// <summary>
-/// ¹«¸æÀàĞÍ
+/// å…¬å‘Šç±»å‹
 /// </summary>
 internal sealed class AnnouncementType
 {
@@ -21,13 +21,13 @@ internal sealed class AnnouncementType
     public int Id { get; set; }
 
     /// <summary>
-    /// Ãû³Æ
+    /// åç§°
     /// </summary>
     [JsonPropertyName("name")]
     public string Name { get; set; } = default!;
 
     /// <summary>
-    /// ¹ú¼Ê»¯Ãû³Æ
+    /// å›½é™…åŒ–åç§°
     /// </summary>
     [JsonPropertyName("mi18n_name")]
     public string MI18NName { get; set; } = default!;

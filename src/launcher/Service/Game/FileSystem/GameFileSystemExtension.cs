@@ -195,7 +195,7 @@ internal static class GameFileSystemExtension
                 {
                     GameConstants.GenshinImpactFileNameUpper => true,
                     GameConstants.YuanShenFileNameUpper => false,
-                    _ => throw LauncherException.Throw($"Invalid game executable file name£º{gameFileName}"),
+                    _ => throw LauncherException.Throw($"Invalid game executable file nameï¼š{gameFileName}"),
                 };
             }
         }

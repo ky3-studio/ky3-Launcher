@@ -12,37 +12,37 @@ namespace Launcher.Model.Intrinsic;
 internal enum ItemType
 {
     /// <summary>
-    /// нч
+    /// Ф≈═
     /// </summary>
     ITEM_NONE = 0,
 
     /// <summary>
-    /// пИдБ╣ю╬ъ
+    /// Х≥ Ф▀÷И│⌠Е┘╥
     /// </summary>
     ITEM_VIRTUAL = 1,
 
     /// <summary>
-    /// ╡дао
+    /// Ф²░Ф√≥
     /// </summary>
     ITEM_MATERIAL = 2,
 
     /// <summary>
-    /// й╔ренО
+    /// Е°ёИ│≈Г┴╘
     /// </summary>
     ITEM_RELIQUARY = 3,
 
     /// <summary>
-    /// нДфВ
+    /// Ф╜╕Е≥╗
     /// </summary>
     ITEM_WEAPON = 4,
 
     /// <summary>
-    /// хннЯ╣х
+    /// Д╩╩Е┼║Г╜┴
     /// </summary>
     ITEM_DISPLAY = 5,
 
     /// <summary>
-    /// ╪р╬ъ
+    /// Е╝╤Е┘╥
     /// </summary>
     ITEM_FURNITURE = 6,
 }

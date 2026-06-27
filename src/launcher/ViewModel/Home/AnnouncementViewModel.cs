@@ -147,7 +147,7 @@ internal sealed partial class AnnouncementViewModel : Abstraction.ViewModel
             .Where(a => a.FetterInfo is not null && a.FetterInfo.BirthMonth > 0)
             .ToLookup(a => MonthAndDay.Create(a));
 
-        // Build material ¡ú items lookup (avatars and weapons that use each material)
+        // Build material â†’ items lookup (avatars and weapons that use each material)
         Dictionary<MaterialId, List<CalendarItem>> materialItemsDict = [];
 
         foreach (Avatar avatar in context.Avatars)

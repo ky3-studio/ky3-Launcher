@@ -29,7 +29,7 @@ internal static class OfflineCalculator
     private static ReadOnlySpan<uint> AscensionCommonCounts => [3, 15, 12, 18, 12, 24];
     private static ReadOnlySpan<int> AscensionCommonQualityOffsets => [-2, -2, -1, -1, 0, 0];
 
-    // Talent level-up costs (index = target level - 2, i.e. index 0 = 1¡ú2)
+    // Talent level-up costs (index = target level - 2, i.e. index 0 = 1â†’2)
     private static ReadOnlySpan<uint> TalentBookCounts => [3, 2, 4, 6, 9, 4, 6, 12, 16];
     private static ReadOnlySpan<int> TalentBookQualityOffsets => [-2, -1, -1, -1, -1, 0, 0, 0, 0];
 
@@ -308,7 +308,7 @@ internal static class OfflineCalculator
             }
         }
 
-        // Calculate weapon EXP (¾«¶ÍÓÃÄ§¿ó)
+        // Calculate weapon EXP (ç²¾é”»ç”¨é­”çŸ¿)
         int requiredExp = WeaponLevelExperience.CalculateTotalExperience(quality, (int)levelFrom, (int)levelTo);
         if (requiredExp > 0)
         {

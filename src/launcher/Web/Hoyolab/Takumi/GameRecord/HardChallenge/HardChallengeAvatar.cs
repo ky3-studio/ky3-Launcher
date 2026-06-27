@@ -17,7 +17,7 @@ internal sealed class HardChallengeAvatar : HardChallengeSimpleAvatar
     public required Level Level { get; init; }
 
     /// <summary>
-    /// 实际上是命座
+    /// 瀹為檯涓婃槸鍛藉骇
     /// </summary>
     [JsonPropertyName("rank")]
     public required int Rank { get; init; }

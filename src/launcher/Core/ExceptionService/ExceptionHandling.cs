@@ -51,7 +51,7 @@ internal sealed partial class ExceptionHandling
     [StackTraceHidden]
     private static DbException KillProcessOnDbException(DbException exception)
     {
-        LauncherNative.Instance.ShowErrorMessage("Warning | ¾¯¸æ", exception.Message);
+        LauncherNative.Instance.ShowErrorMessage("Warning | è­¦å‘Š", exception.Message);
         ProcessFactory.KillCurrent();
         return exception;
     }

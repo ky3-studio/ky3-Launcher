@@ -643,7 +643,7 @@ internal sealed partial class LauncherHomePage
         if (isGameRunning)
         {
             LaunchButtonText.Text = SH.ViewPageHomeStopGameButton;
-            PlayIconText.Text = "¡ö";
+            PlayIconText.Text = "â– ";
             AnimateLaunchButtonColors(hovered: _isLaunchButtonHovered, running: true);
         }
         else

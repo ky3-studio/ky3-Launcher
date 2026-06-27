@@ -114,7 +114,7 @@ internal sealed partial class LaunchGameViewModelSlim : Abstraction.ViewModelSli
         UserAndUid? userAndUid;
         if (LaunchOptions.UsingHoyolabAccount.Value)
         {
-            // 优先使用独立保存的米游社账号，与左栏无关
+            // 浼樺厛浣跨敤鐙珛淇濆瓨鐨勭背娓哥ぞ璐﹀彿锛屼笌宸︽爮鏃犲叧
             string savedMid = LaunchOptions.SelectedHoyolabUserMid.Value;
             BindingUser? selectedUser = string.IsNullOrEmpty(savedMid)
                 ? null

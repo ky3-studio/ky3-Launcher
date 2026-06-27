@@ -38,7 +38,7 @@ internal sealed partial class GachaLogQueryLogFileProvider : IGachaLogQueryProvi
 
         string[] logPaths =
         [
-            Path.Combine(appDataPath, @"..\LocalLow\miHoYo\Ô­Éñ\output_log.txt"),
+            Path.Combine(appDataPath, @"..\LocalLow\miHoYo\åŽŸç¥ž\output_log.txt"),
             Path.Combine(appDataPath, @"..\LocalLow\miHoYo\Genshin Impact\output_log.txt"),
         ];
 

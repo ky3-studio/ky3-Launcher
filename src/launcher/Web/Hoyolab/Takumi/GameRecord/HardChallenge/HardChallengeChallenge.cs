@@ -14,7 +14,7 @@ namespace Launcher.Web.Hoyolab.Takumi.GameRecord.HardChallenge;
 internal sealed class HardChallengeChallenge
 {
     /// <summary>
-    /// ¹ÖÎïÃû³Æ
+    /// æ€ªç‰©åç§°
     /// </summary>
     [JsonPropertyName("name")]
     public required string Name { get; init; }

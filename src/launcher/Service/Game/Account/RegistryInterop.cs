@@ -21,7 +21,7 @@ namespace Launcher.Service.Game.Account;
 
 internal static class RegistryInterop
 {
-    private const string ChineseKeyName = @"HKEY_CURRENT_USER\Software\miHoYo\Ô­Éñ";
+    private const string ChineseKeyName = @"HKEY_CURRENT_USER\Software\miHoYo\åŽŸç¥ž";
     private const string OverseaKeyName = @"HKEY_CURRENT_USER\Software\miHoYo\Genshin Impact";
     private const string SdkChineseValueName = "MIHOYOSDK_ADL_PROD_CN_h3123967166";
     private const string SdkOverseaValueName = "MIHOYOSDK_ADL_PROD_OVERSEA_h1158948810";

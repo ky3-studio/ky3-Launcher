@@ -26,6 +26,6 @@ internal sealed class SkillDepot
 
     public ImmutableArray<ProudSkill> CompositeSkills { get => !field.IsDefault ? field : field = [.. Skills, EnergySkill, .. Inherents]; }
 
-    // No Inherents && Ìø¹ı Ìæ»»³å´ÌµÄ¼¼ÄÜ
+    // No Inherents && è·³è¿‡ æ›¿æ¢å†²åˆºçš„æŠ€èƒ½
     public ImmutableArray<ProudSkill> CompositeSkillsNoInherents { get => !field.IsDefault ? field : field = [.. Skills.Where(s => s.Proud.Parameters.Count > 1), EnergySkill]; }
 }

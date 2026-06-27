@@ -48,8 +48,8 @@ internal sealed partial class EmotionIconPage : ScopedPage
                     Height = 200,
                     Stretch = Stretch.Uniform,
                 },
-                PrimaryButtonText = "∏¥÷∆",
-                CloseButtonText = "πÿ±’",
+                PrimaryButtonText = "Â§çÂà∂",
+                CloseButtonText = "ÂÖ≥Èó≠",
                 DefaultButton = ContentDialogButton.Primary,
             };
 

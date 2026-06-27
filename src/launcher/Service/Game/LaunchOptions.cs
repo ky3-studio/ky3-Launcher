@@ -153,11 +153,11 @@ internal sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePat
         {
             string[] registryPaths =
             [
-                @"SOFTWARE\miHoYo\Ô­Éñ",
+                @"SOFTWARE\miHoYo\åŸç¥",
                 @"SOFTWARE\miHoYo\Genshin Impact",
-                @"SOFTWARE\WOW6432Node\miHoYo\Ô­Éñ",
+                @"SOFTWARE\WOW6432Node\miHoYo\åŸç¥",
                 @"SOFTWARE\WOW6432Node\miHoYo\Genshin Impact",
-                @"Software\miHoYo\Ô­Éñ",
+                @"Software\miHoYo\åŸç¥",
                 @"Software\miHoYo\Genshin Impact",
             ];
 
@@ -236,7 +236,7 @@ internal sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePat
         {
             string[] registryPaths = isOversea
                 ? [@"Software\miHoYo\Genshin Impact", @"SOFTWARE\miHoYo\Genshin Impact"]
-                : [@"Software\miHoYo\Ô­Éñ", @"SOFTWARE\miHoYo\Ô­Éñ"];
+                : [@"Software\miHoYo\åŸç¥", @"SOFTWARE\miHoYo\åŸç¥"];
 
             foreach (string path in registryPaths)
             {
@@ -447,7 +447,7 @@ internal sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePat
 
 
 
-    // Custom DLL Injection - Ã¿¸öDLLµ¥¶À¿ØÖÆÆôÓÃ×´Ì¬
+    // Custom DLL Injection - æ¯ä¸ªDLLå•ç‹¬æ§åˆ¶å¯ç”¨çŠ¶æ€
     [field: MaybeNull]
     public IObservableProperty<ImmutableDictionary<string, bool>> CustomDllConfigs { get => field ??= CreatePropertyForClassUsingCustom(SettingKeys.LaunchCustomDllConfigs, ImmutableDictionary<string, bool>.Empty, s => JsonSerializer.Deserialize<ImmutableDictionary<string, bool>>(s) ?? ImmutableDictionary<string, bool>.Empty, d => JsonSerializer.Serialize(d)); }
 

@@ -66,7 +66,7 @@ internal static class InstalledLocation
                     }
                 }
 
-                // 确保目标目录存在
+                // 纭繚鐩爣鐩綍瀛樺湪
                 string? directory = Path.GetDirectoryName(path);
                 if (!string.IsNullOrEmpty(directory))
                 {

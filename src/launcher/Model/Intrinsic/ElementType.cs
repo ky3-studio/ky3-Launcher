@@ -12,36 +12,36 @@ namespace Launcher.Model.Intrinsic;
 [ExtendedEnum]
 internal enum ElementType
 {
-    None = 0, // ÎŞÔªËØ
+    None = 0, // æ— å…ƒç´ 
 
     [LocalizationKey(nameof(SH.ModelIntrinsicElementNameFire))]
-    Fire = 1, // »ğÔªËØ
+    Fire = 1, // ç«å…ƒç´ 
 
     [LocalizationKey(nameof(SH.ModelIntrinsicElementNameWater))]
-    Water = 2, // Ë®ÔªËØ
+    Water = 2, // æ°´å…ƒç´ 
 
     [LocalizationKey(nameof(SH.ModelIntrinsicElementNameGrass))]
-    Grass = 3, // ²İÔªËØ
+    Grass = 3, // è‰å…ƒç´ 
 
     [LocalizationKey(nameof(SH.ModelIntrinsicElementNameElec))]
-    Electric = 4, // À×ÔªËØ
+    Electric = 4, // é›·å…ƒç´ 
 
     [LocalizationKey(nameof(SH.ModelIntrinsicElementNameIce))]
-    Ice = 5, // ±ùÔªËØ
-    Frozen = 6, // ¶³ÔªËØ
+    Ice = 5, // å†°å…ƒç´ 
+    Frozen = 6, // å†»å…ƒç´ 
 
     [LocalizationKey(nameof(SH.ModelIntrinsicElementNameWind))]
-    Wind = 7, // ·çÔªËØ
+    Wind = 7, // é£å…ƒç´ 
 
     [LocalizationKey(nameof(SH.ModelIntrinsicElementNameRock))]
-    Rock = 8, // ÑÒÔªËØ
-    AntiFire = 9, // È¼ÔªËØ
+    Rock = 8, // å²©å…ƒç´ 
+    AntiFire = 9, // ç‡ƒå…ƒç´ 
     VehicleMuteIce = 10, // ?
-    Mushroom = 11, // µ¯µ¯¹½
-    Overdose = 12, // ¼¤ÔªËØ
-    Wood = 13, // Ä¾ÔªËØ
-    LiquidPhlogiston = 14, // ÒºÌ¬È¼ËØ
+    Mushroom = 11, // å¼¹å¼¹è‡
+    Overdose = 12, // æ¿€å…ƒç´ 
+    Wood = 13, // æœ¨å…ƒç´ 
+    LiquidPhlogiston = 14, // æ¶²æ€ç‡ƒç´ 
     SolidPhlogiston = 15, // ?
     SolidifyPhlogiston = 16, // ?
-    Count, // ¸öÊı
+    Count, // ä¸ªæ•°
 }

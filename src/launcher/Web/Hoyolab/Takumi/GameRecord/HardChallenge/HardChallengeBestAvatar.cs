@@ -19,7 +19,7 @@ internal sealed class HardChallengeBestAvatar
     public required Uri SideIcon { get; init; }
 
     /// <summary>
-    /// Êµ¼ÊÉÏÊÇ×ÜÖµ»ò×îÖµ
+    /// å®é™…ä¸Šæ˜¯æ€»å€¼æˆ–æœ€å€¼
     /// </summary>
     [JsonPropertyName("dps")]
     public required int Dps { get; init; }

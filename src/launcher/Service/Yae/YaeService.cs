@@ -188,7 +188,7 @@ internal sealed partial class YaeService : IYaeService
                             using IServiceScope authScope = serviceProvider.CreateScope();
                             IUserService userService = authScope.ServiceProvider.GetRequiredService<IUserService>();
 
-                            // 优先使用独立保存的米游社账号，与左栏无关
+                            // 浼樺厛浣跨敤鐙珛淇濆瓨鐨勭背娓哥ぞ璐﹀彿锛屼笌宸︽爮鏃犲叧
                             string savedMid = launchOptions.SelectedHoyolabUserMid.Value;
                             UserAndUid? userAndUid = null;
                             if (!string.IsNullOrEmpty(savedMid))

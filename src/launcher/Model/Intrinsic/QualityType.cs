@@ -13,7 +13,7 @@ namespace Launcher.Model.Intrinsic;
 internal enum QualityType
 {
     /// <summary>
-    /// ÎÞ
+    /// æ— 
     /// </summary>
     QUALITY_NONE = 0,
 

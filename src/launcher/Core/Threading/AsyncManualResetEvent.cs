@@ -9,8 +9,8 @@
 
 namespace Launcher.Core.Threading;
 
-using System.Threading; // Ìí¼Ó´Ë using Óï¾ä
-using System.Threading.Tasks; // Ìí¼Ó´Ë using Óï¾ä
+using System.Threading; // æ·»åŠ æ­¤ using è¯­å¥
+using System.Threading.Tasks; // æ·»åŠ æ­¤ using è¯­å¥
 
 // https://devblogs.microsoft.com/pfxteam/building-async-coordination-primitives-part-1-asyncmanualresetevent/
 [SuppressMessage("", "SH003")]

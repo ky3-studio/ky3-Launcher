@@ -30,7 +30,7 @@ internal sealed partial class UnityLogGameLocator : IGameLocator, IGameLocator2
 
         string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         string logFilePathOversea = Path.Combine(appDataPath, @"..\LocalLow\miHoYo\Genshin Impact\output_log.txt");
-        string logFilePathChinese = Path.Combine(appDataPath, @"..\LocalLow\miHoYo\原神\output_log.txt");
+        string logFilePathChinese = Path.Combine(appDataPath, @"..\LocalLow\miHoYo\鍘熺\output_log.txt");
 
         // Fallback to the CN server.
         if (await LocateGamePathAsync(logFilePathOversea).ConfigureAwait(false) is { IsOk: true } resultOversea)
@@ -47,7 +47,7 @@ internal sealed partial class UnityLogGameLocator : IGameLocator, IGameLocator2
 
         string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         string logFilePathOversea = Path.Combine(appDataPath, @"..\LocalLow\miHoYo\Genshin Impact\output_log.txt");
-        string logFilePathChinese = Path.Combine(appDataPath, @"..\LocalLow\miHoYo\原神\output_log.txt");
+        string logFilePathChinese = Path.Combine(appDataPath, @"..\LocalLow\miHoYo\鍘熺\output_log.txt");
 
         ImmutableArray<string>.Builder builder = ImmutableArray.CreateBuilder<string>(2);
 

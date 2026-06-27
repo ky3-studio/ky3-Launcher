@@ -96,7 +96,7 @@ internal sealed class UniversalAnalyzer : DiagnosticAnalyzer
         MethodDeclarationSyntax methodSyntax = (MethodDeclarationSyntax)context.Node;
         IMethodSymbol methodSymbol = context.SemanticModel.GetDeclaredSymbol(methodSyntax)!;
 
-        // 跳过重载方法
+        // 璺宠繃閲嶈浇鏂规硶
         if (methodSymbol.IsOverride)
         {
             return;

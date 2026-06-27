@@ -16,7 +16,7 @@ using System.Text;
 namespace Launcher.ViewModel.Complex;
 
 /// <summary>
-/// Ê¥ÒÅÎïÌ××°
+/// åœ£é—ç‰©å¥—è£…
 /// </summary>
 internal sealed class ReliquarySetView : RateAndDelta
 {
@@ -32,7 +32,7 @@ internal sealed class ReliquarySetView : RateAndDelta
             foreach (ReliquarySet set in sets)
             {
                 Model.Metadata.Reliquary.ReliquarySet metaSet = idReliquarySetMap[set.EquipAffixId];
-                nameBuilder.Append(set.Count).Append('¡Á').Append(metaSet.Name).Append('+');
+                nameBuilder.Append(set.Count).Append('Ã—').Append(metaSet.Name).Append('+');
                 icons.Add(RelicIconConverter.IconNameToUri(metaSet.Icon));
             }
 

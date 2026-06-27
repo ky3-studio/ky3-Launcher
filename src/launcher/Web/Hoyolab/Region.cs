@@ -49,14 +49,14 @@ internal readonly struct Region : IEquatable<Region>
         return uid.AsSpan()[^9] switch
         {
             // CN
-            >= '1' and <= '4' => CNGF01, // 国服
-            '5' => CNQD01,               // 渠道
+            >= '1' and <= '4' => CNGF01, // 鍥芥湇
+            '5' => CNQD01,               // 娓犻亾
 
             // OS
-            '6' => OSUSA,  // 美服
-            '7' => OSEURO, // 欧服
-            '8' => OSASIA, // 亚服
-            '9' => OSCHT,  // 台服
+            '6' => OSUSA,  // 缇庢湇
+            '7' => OSEURO, // 娆ф湇
+            '8' => OSASIA, // 浜氭湇
+            '9' => OSCHT,  // 鍙版湇
             _ => throw LauncherException.NotSupported(),
         };
     }

@@ -15,7 +15,7 @@ namespace Launcher.Model.Metadata.Avatar;
 
 internal static class AvatarIds
 {
-    // ´Ë´¦µÄ±äÁ¿Ãû³ÆÒÔ UI_AvatarIcon Îª×¼
+    // æ­¤å¤„çš„å˜é‡åç§°ä»¥ UI_AvatarIcon ä¸ºå‡†
     public static readonly AvatarId Ayaka = 10000002;
     public static readonly AvatarId Qin = 10000003;
 
@@ -228,7 +228,7 @@ internal static class AvatarIds
             CultivationItems = default,
             NameCard = default!,
         });
-        // MannequinBoy / MannequinGirl ÓÉ Resources/Metadata/CHS/Avatar/10000117.json¡¢10000118.json Ìá¹©ÍêÕûÊı¾İ£¬ÎŞĞè´Ë´¦×¢Èë
+        // MannequinBoy / MannequinGirl ç”± Resources/Metadata/CHS/Avatar/10000117.jsonã€10000118.json æä¾›å®Œæ•´æ•°æ®ï¼Œæ— éœ€æ­¤å¤„æ³¨å…¥
 
         return builder.ToImmutable();
     }

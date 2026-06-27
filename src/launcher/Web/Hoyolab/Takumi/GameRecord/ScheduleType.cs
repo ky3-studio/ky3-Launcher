@@ -12,12 +12,12 @@ namespace Launcher.Web.Hoyolab.Takumi.GameRecord;
 internal enum ScheduleType
 {
     /// <summary>
-    /// 当期
+    /// 褰撴湡
     /// </summary>
     Current = 1,
 
     /// <summary>
-    /// 上期
+    /// 涓婃湡
     /// </summary>
     Last = 2,
 }

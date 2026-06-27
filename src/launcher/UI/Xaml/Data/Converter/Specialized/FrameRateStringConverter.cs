@@ -18,6 +18,6 @@ internal sealed partial class FrameRateStringConverter : ValueConverter<int, str
             return from.ToString();
         }
 
-        return "¡Þ";
+        return "âˆž";
     }
 }

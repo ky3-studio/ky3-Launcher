@@ -16,7 +16,7 @@ internal sealed class ArchonQuest
     public ArchonQuestStatus Status { get; set; }
 
     /// <summary>
-    /// µÚXÕÂ µÚYÄ»
+    /// ç¬¬Xç«  ç¬¬Yå¹•
     /// </summary>
     [JsonPropertyName("chapter_num")]
     public string ChapterNum { get; set; } = default!;

@@ -12,12 +12,12 @@ using CommunityToolkit.WinUI.Controls;
 namespace Launcher.UI.Xaml.View.Specialized;
 
 /// <summary>
-/// Æô¶¯ÓÎÏ·×ÊÔ´ Expander
+/// å¯åŠ¨æ¸¸æˆèµ„æº Expander
 /// </summary>
 internal sealed partial class LaunchGameResourceExpander : SettingsExpander
 {
     /// <summary>
-    /// ¹¹ÔìÒ»¸öĞÂµÄÆô¶¯ÓÎÏ·×ÊÔ´ Expander
+    /// æ„é€ ä¸€ä¸ªæ–°çš„å¯åŠ¨æ¸¸æˆèµ„æº Expander
     /// </summary>
     public LaunchGameResourceExpander()
     {

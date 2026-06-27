@@ -13,7 +13,7 @@ using Windows.UI;
 namespace Launcher.UI.Xaml.Data.Converter.Specialized;
 
 /// <summary>
-/// Int32 ת ɫ����ɫ
+/// Int32 转 色阶颜色
 /// </summary>
 [DependencyProperty<int>("MaximumValue", DefaultValue = 90, NotNull = true)]
 [DependencyProperty<int>("MinimumValue", DefaultValue = 1, NotNull = true)]

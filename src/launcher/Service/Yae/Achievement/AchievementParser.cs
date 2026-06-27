@@ -76,13 +76,13 @@ internal static class AchievementParser
                 }
                 else
                 {
-                    // :                                                                   ¡ý 2020-09-15 04:15:14
+                    // :                                                                   â†“ 2020-09-15 04:15:14
                     (int timestampField, int count) = dataList.CountByKey(value => value > 1600114514).MaxBy(kvp => kvp.Value);
 
-                    // :                                           FINISHED ¡ý     ¡ý REWARD_TAKEN
+                    // :                                           FINISHED â†“     â†“ REWARD_TAKEN
                     int statusField = dataList.CountByKey(value => value is 2U or 3U).First(kvp => kvp.Value == count).Key;
 
-                    // :                                                  ¡ý id: 8xxxx
+                    // :                                                  â†“ id: 8xxxx
                     int achievementIdField = dataList.CountByKey(value => (value / 10000) % 10 == 8).MaxBy(kvp => kvp.Value).Key;
 
                     HashSet<int> excludedFields = [timestampField, statusField, achievementIdField];

@@ -10,27 +10,27 @@
 namespace Launcher.Model.Intrinsic;
 
 /// <summary>
-/// Ê¼»ùÁ¦
+/// å§‹åŸºåŠ›
 /// </summary>
 internal enum Arkhe
 {
     /// <summary>
-    /// ÎŞ
+    /// æ— 
     /// </summary>
     None,
 
     /// <summary>
-    /// »ÄĞÔ
+    /// è’æ€§
     /// </summary>
     Ousia,
 
     /// <summary>
-    /// Ã¢ĞÔ
+    /// èŠ’æ€§
     /// </summary>
     Pneuma,
 
     /// <summary>
-    /// Ê¥Ë×ÔÓ×ù
+    /// åœ£ä¿—æ‚åº§
     /// </summary>
     Furina,
 }

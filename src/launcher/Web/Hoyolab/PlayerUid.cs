@@ -49,9 +49,9 @@ internal readonly struct PlayerUid
     {
         LauncherException.ThrowIfNot(HoyolabRegex.UidRegex.IsMatch(uid), SH.WebHoyolabInvalidUid);
 
-        // 美服 UTC-05
-        // 欧服 UTC+01
-        // 其他 UTC+08
+        // 缇庢湇 UTC-05
+        // 娆ф湇 UTC+01
+        // 鍏朵粬 UTC+08
         return uid.AsSpan()[^9] switch
         {
             '6' => ServerRegionTimeZone.AmericaServerOffset,
@@ -62,9 +62,9 @@ internal readonly struct PlayerUid
 
     public static TimeSpan GetRegionTimeZoneUtcOffsetForRegion(in Region region)
     {
-        // 美服 UTC-05
-        // 欧服 UTC+01
-        // 其他 UTC+08
+        // 缇庢湇 UTC-05
+        // 娆ф湇 UTC+01
+        // 鍏朵粬 UTC+08
         return region.Value switch
         {
             "os_usa" => ServerRegionTimeZone.AmericaServerOffset,

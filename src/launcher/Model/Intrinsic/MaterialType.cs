@@ -45,7 +45,7 @@ internal enum MaterialType
     MATERIAL_HOME_SEED = 31,
     MATERIAL_FISH_BAIT = 32,
     MATERIAL_FISH_ROD = 33,
-    MATERIAL_SUMO_BUFF = 34, // sumo 活动道具，never appear
+    MATERIAL_SUMO_BUFF = 34, // sumo 娲诲姩閬撳叿锛宯ever appear
     MATERIAL_FIREWORKS = 35,
     MATERIAL_BGM = 36,
     MATERIAL_SPICE_FOOD = 37,
@@ -54,7 +54,7 @@ internal enum MaterialType
     MATERIAL_ACTIVITY_JIGSAW = 40,
     MATERIAL_ARANARA = 41,
     MATERIAL_GCG_CARD = 42,
-    MATERIAL_GCG_CARD_FACE = 43, // 影幻卡面
+    MATERIAL_GCG_CARD_FACE = 43, // 褰卞够鍗￠潰
     MATERIAL_GCG_CARD_BACK = 44,
     MATERIAL_GCG_FIELD = 45,
     MATERIAL_DESHRET_MANUAL = 46,

@@ -14,32 +14,32 @@ internal enum EquipType
     EQUIP_NONE = 0,
 
     /// <summary>
-    /// ª®
+    /// Ëä±
     /// </summary>
     EQUIP_BRACER = 1,
 
     /// <summary>
-    /// ”√´
+    /// ÁæΩÊØõ
     /// </summary>
     EQUIP_NECKLACE = 2,
 
     /// <summary>
-    /// …≥
+    /// Ê≤ô
     /// </summary>
     EQUIP_SHOES = 3,
 
     /// <summary>
-    /// ±≠
+    /// ÊùØ
     /// </summary>
     EQUIP_RING = 4,
 
     /// <summary>
-    /// Õ∑
+    /// Â§¥
     /// </summary>
     EQUIP_DRESS = 5,
 
     /// <summary>
-    /// Œ‰∆˜
+    /// Ê≠¶Âô®
     /// </summary>
     EQUIP_WEAPON = 6,
 }

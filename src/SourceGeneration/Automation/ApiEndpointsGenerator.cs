@@ -142,7 +142,7 @@ internal sealed class ApiEndpointsGenerator : IIncrementalGenerator
             {
                 if (insideQuotes && i + 1 < line.Length && line[i + 1] == '"')
                 {
-                    // 处理双引号转??
+                    // 澶勭悊鍙屽紩鍙疯浆??
                     currentField.Append('"');
                     i++;
                 }
@@ -162,7 +162,7 @@ internal sealed class ApiEndpointsGenerator : IIncrementalGenerator
             }
         }
 
-        // 添加最后一个字??
+        // 娣诲姞鏈�鍚庝竴涓瓧??
         fields.Add(currentField.ToString());
 
         return fields;

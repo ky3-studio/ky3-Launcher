@@ -10,7 +10,7 @@
 namespace Launcher.Web.Hoyolab;
 
 /// <summary>
-/// ¼ü²¿·Ö
+/// é”®éƒ¨åˆ†
 /// </summary>
 [SuppressMessage("", "SA1310")]
 internal sealed partial class Cookie

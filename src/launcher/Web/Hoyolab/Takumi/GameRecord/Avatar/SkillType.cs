@@ -13,9 +13,9 @@ internal enum SkillType
 {
     None = 0,
 
-    // 战斗天赋
+    // 鎴樻枟澶╄祴
     Fight = 1,
 
-    // 固有天赋
+    // 鍥烘湁澶╄祴
     Inherent = 2,
 }

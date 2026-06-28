@@ -29,10 +29,11 @@
 		<MvvmToolkitEnableINotifyPropertyChangingSupport>false</MvvmToolkitEnableINotifyPropertyChangingSupport>
 		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<DocumentationFile>docs\ky3launcher.xml</DocumentationFile>
 		<NoWarn>CS1591;NU1603</NoWarn>
 		<AppxPackage>false</AppxPackage>
 		<WindowsPackageType>None</WindowsPackageType>
-		<Version>6.6.3.3</Version>
+		<Version>6.6.4.0</Version>
 		<PublishAot>False</PublishAot>
 		<PublishTrimmed>False</PublishTrimmed>
 		<AssemblyName>ky3launcher</AssemblyName>
@@ -221,6 +222,12 @@
 
 
 		<Exec Command="for /d %%d in (&quot;$(_OutputDir)\*-*&quot;) do ( if /i not &quot;%%~nxd&quot;==&quot;zh-CN&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hans&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hant&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-TW&quot; if /i not &quot;%%~nxd&quot;==&quot;Microsoft.UI.Xaml&quot; rd /s /q &quot;%%d&quot; )" />
+	</Target>
+
+	<Target Name="CopyUpdater" AfterTargets="Build;Publish">
+		<Exec Command="&quot;$(USERPROFILE)\.cargo\bin\cargo.exe&quot; build --release --manifest-path &quot;$(ProjectDir)..\updater-rs\Cargo.toml&quot;" />
+		<Copy SourceFiles="$(ProjectDir)..\updater-rs\target\release\updater.exe" DestinationFolder="$(OutputPath)" />
+		<Copy Condition="'$(PublishDir)' != ''" SourceFiles="$(ProjectDir)..\updater-rs\target\release\updater.exe" DestinationFolder="$(PublishDir)" />
 	</Target>
 
 	<Target Name="CleanPublishOutput" AfterTargets="Publish">

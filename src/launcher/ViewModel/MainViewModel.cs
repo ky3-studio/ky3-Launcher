@@ -73,6 +73,7 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
 
     protected override async ValueTask<bool> LoadOverrideAsync(CancellationToken token)
     {
+        CleanUpdateCache();
         ShowUpdateLogWindowAfterUpdate();
         NotifyIfDataFolderHasReparsePoint();
 
@@ -81,6 +82,22 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
         _ = StartPeriodicUpdateCheckAsync();
 
         return true;
+    }
+
+    private static void CleanUpdateCache()
+    {
+        try
+        {
+            string updateCacheDir = Path.Combine(LauncherRuntime.DataDirectory, "UpdateCache");
+            if (Directory.Exists(updateCacheDir))
+            {
+                Directory.Delete(updateCacheDir, true);
+            }
+        }
+        catch
+        {
+            // Best effort cleanup, ignore errors
+        }
     }
 
     [Command("RestartToUpdateCommand")]
@@ -159,38 +176,85 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
                 return;
             }
 
-            // Mandatory update: show dialog, user cannot skip
             await taskContext.SwitchToMainThreadAsync();
-            ContentDialogResult dialogResult = await contentDialogFactory.CreateForConfirmAsync(
-                SH.ViewModelMainUpdateMandatoryTitle,
-                SH.FormatViewModelMainUpdateMandatoryContent(result.PackageInformation.Version.ToString()));
-
-            if (dialogResult is not ContentDialogResult.Primary)
+            Microsoft.UI.Xaml.Controls.ContentDialog updatePromptDialog = new()
             {
-                Application.Current.Exit();
-                return;
-            }
+                XamlRoot = currentXamlWindowReference.XamlRoot,
+                Title = SH.ViewModelMainUpdateMandatoryTitle,
+                Content = SH.FormatViewModelMainUpdateMandatoryContent(result.PackageInformation.Version.ToString()),
+                DefaultButton = ContentDialogButton.Primary,
+                PrimaryButtonText = SH.ViewModelMainUpdateNowButton,
+                CloseButtonText = SH.ViewModelMainUpdateLaterButton,
+                RequestedTheme = currentXamlWindowReference.RequestedTheme,
+            };
+            ContentDialogResult dialogResult = await contentDialogFactory.EnqueueAndShowAsync(updatePromptDialog).ShowTask.ConfigureAwait(false);
 
-            // Download and extract incremental patch
             if (string.IsNullOrEmpty(result.PackageInformation.PatchUrl) ||
                 string.IsNullOrEmpty(result.PackageInformation.PatchSha256))
             {
                 messenger.Send(InfoBarMessage.Warning(SH.ViewModelMainUpdatePatchNotAvailable));
-                Application.Current.Exit();
                 return;
             }
 
-            bool patchSuccess = await DownloadAndExtractPatchAsync(result.PackageInformation).ConfigureAwait(false);
-            if (patchSuccess)
+            if (dialogResult is ContentDialogResult.Primary)
             {
+                ContentDialog progressDialog = await contentDialogFactory
+                    .CreateForIndeterminateProgressAsync(SH.ViewModelMainUpdateDownloading)
+                    .ConfigureAwait(false);
+
                 await taskContext.SwitchToMainThreadAsync();
-                RestartToUpdate();
+                ProgressBar progressBar = new() { Minimum = 0, Maximum = 100, Value = 0 };
+                TextBlock statusText = new()
+                {
+                    Text = SH.ViewModelMainUpdateDownloading,
+                    Margin = new Microsoft.UI.Xaml.Thickness(0, 8, 0, 0),
+                    FontSize = 12,
+                };
+                progressDialog.Content = new StackPanel
+                {
+                    Spacing = 4,
+                    Children = { progressBar, statusText },
+                };
+
+                Progress<double> progress = new(p =>
+                {
+                    progressBar.Value = p;
+                    if (p >= 95)
+                    {
+                        statusText.Text = SH.ViewModelMainUpdateExtracting;
+                    }
+                    else if (p >= 90)
+                    {
+                        statusText.Text = SH.ViewModelMainUpdateVerifying;
+                    }
+                });
+
+                bool patchSuccess;
+                using (await contentDialogFactory.BlockAsync(progressDialog).ConfigureAwait(false))
+                {
+                    patchSuccess = await DownloadAndExtractPatchAsync(result.PackageInformation, progress).ConfigureAwait(false);
+                }
+
+                if (patchSuccess)
+                {
+                    await taskContext.SwitchToMainThreadAsync();
+                    RestartToUpdate();
+                }
+                else
+                {
+                    await taskContext.SwitchToMainThreadAsync();
+                    messenger.Send(InfoBarMessage.Warning(SH.ViewModelMainUpdateDownloadFailed));
+                }
             }
             else
             {
-                await taskContext.SwitchToMainThreadAsync();
-                messenger.Send(InfoBarMessage.Warning(SH.ViewModelMainUpdateDownloadFailed));
-                Application.Current.Exit();
+                bool patchSuccess = await DownloadAndExtractPatchAsync(result.PackageInformation).ConfigureAwait(false);
+                if (patchSuccess)
+                {
+                    await taskContext.SwitchToMainThreadAsync();
+                    IsUpdateReady = true;
+                    UpdateReadyNotifyToken++;
+                }
             }
         }
         catch (Exception ex)
@@ -199,7 +263,7 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
         }
     }
 
-    internal static async Task<bool> DownloadAndExtractPatchAsync(Web.Launcher.LauncherPackageInformation packageInfo, CancellationToken token = default)
+    internal static async Task<bool> DownloadAndExtractPatchAsync(Web.Launcher.LauncherPackageInformation packageInfo, IProgress<double>? progress = null, CancellationToken token = default)
     {
         await s_patchDownloadLock.WaitAsync(token).ConfigureAwait(false);
         try
@@ -208,17 +272,16 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
             string filesDir = Path.Combine(updateCacheDir, "files");
             string versionMarker = Path.Combine(updateCacheDir, "version.txt");
 
-            // If already extracted for this version, skip
             if (Directory.Exists(filesDir) && File.Exists(versionMarker))
             {
                 string cachedVersion = await File.ReadAllTextAsync(versionMarker, token).ConfigureAwait(false);
                 if (cachedVersion.Trim() == packageInfo.Version.ToString())
                 {
+                    progress?.Report(100);
                     return true;
                 }
             }
 
-            // Clean previous cache
             if (Directory.Exists(filesDir))
             {
                 Directory.Delete(filesDir, true);
@@ -226,14 +289,12 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
 
             Directory.CreateDirectory(updateCacheDir);
 
-            // Build full download URL
             string patchUrl = packageInfo.PatchUrl.StartsWith("http", StringComparison.OrdinalIgnoreCase)
                 ? packageInfo.PatchUrl
                 : $"{BackendApiRoutes.ServerRoot}{packageInfo.PatchUrl}";
 
             string patchZipPath = Path.Combine(updateCacheDir, "patch.zip");
 
-            // Download patch.zip with proxy support
             SocketsHttpHandler handler = new()
             {
                 SslOptions = new System.Net.Security.SslClientAuthenticationOptions
@@ -243,20 +304,74 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
                 Proxy = HttpProxyUsingSystemProxy.Instance,
                 UseProxy = true,
                 PooledConnectionLifetime = TimeSpan.FromMinutes(10),
+                ConnectTimeout = TimeSpan.FromSeconds(30),
             };
 
-            using HttpClient client = new(handler) { Timeout = TimeSpan.FromMinutes(5) };
+            using HttpClient client = new(handler) { Timeout = Timeout.InfiniteTimeSpan };
 
-            using HttpResponseMessage response = await client.GetAsync(patchUrl.ToUri(), HttpCompletionOption.ResponseHeadersRead, token).ConfigureAwait(false);
-            response.EnsureSuccessStatusCode();
-
-            using (Stream netStream = await response.Content.ReadAsStreamAsync(token).ConfigureAwait(false))
-            using (FileStream fileStream = File.Create(patchZipPath))
+            const int maxRetries = 5;
+            for (int attempt = 0; attempt < maxRetries; attempt++)
             {
-                await netStream.CopyToAsync(fileStream, token).ConfigureAwait(false);
+                try
+                {
+                    long existingBytes = 0;
+                    if (File.Exists(patchZipPath))
+                    {
+                        existingBytes = new FileInfo(patchZipPath).Length;
+                    }
+
+                    using HttpRequestMessage request = new(HttpMethod.Get, patchUrl.ToUri());
+                    if (existingBytes > 0)
+                    {
+                        request.Headers.Range = new System.Net.Http.Headers.RangeHeaderValue(existingBytes, null);
+                    }
+
+                    using HttpResponseMessage response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead, token).ConfigureAwait(false);
+
+                    long totalBytes;
+                    long downloadedBytes;
+                    FileMode fileMode;
+
+                    if (response.StatusCode is System.Net.HttpStatusCode.PartialContent && existingBytes > 0)
+                    {
+                        totalBytes = existingBytes + (response.Content.Headers.ContentLength ?? 0);
+                        downloadedBytes = existingBytes;
+                        fileMode = FileMode.Append;
+                    }
+                    else
+                    {
+                        response.EnsureSuccessStatusCode();
+                        totalBytes = response.Content.Headers.ContentLength ?? 0;
+                        downloadedBytes = 0;
+                        fileMode = FileMode.Create;
+                    }
+
+                    using (Stream netStream = await response.Content.ReadAsStreamAsync(token).ConfigureAwait(false))
+                    using (FileStream fileStream = new(patchZipPath, fileMode, FileAccess.Write, FileShare.None))
+                    {
+                        byte[] buffer = new byte[81920];
+                        int bytesRead;
+                        while ((bytesRead = await netStream.ReadAsync(buffer, token).ConfigureAwait(false)) > 0)
+                        {
+                            await fileStream.WriteAsync(buffer.AsMemory(0, bytesRead), token).ConfigureAwait(false);
+                            downloadedBytes += bytesRead;
+                            if (totalBytes > 0)
+                            {
+                                progress?.Report((double)downloadedBytes / totalBytes * 90);
+                            }
+                        }
+                    }
+
+                    break;
+                }
+                catch (Exception) when (attempt < maxRetries - 1)
+                {
+                    await Task.Delay(2000 * (attempt + 1), token).ConfigureAwait(false);
+                }
             }
 
-            // SHA256 verification (streaming to avoid loading entire file into memory)
+            progress?.Report(92);
+
             string hashHex;
             using (FileStream hashStream = File.OpenRead(patchZipPath))
             {
@@ -270,7 +385,8 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
                 return false;
             }
 
-            // Extract to files directory
+            progress?.Report(95);
+
             try
             {
                 ZipFile.ExtractToDirectory(patchZipPath, filesDir, true);
@@ -287,12 +403,10 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
                 return false;
             }
 
-            // Write version marker
             await File.WriteAllTextAsync(versionMarker, packageInfo.Version.ToString(), token).ConfigureAwait(false);
-
-            // Clean up zip
             File.Delete(patchZipPath);
 
+            progress?.Report(100);
             return true;
         }
         catch (OperationCanceledException)

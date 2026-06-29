@@ -9,12 +9,15 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-6.6.3-blue?style=flat" alt="version"/>
+  <img src="https://img.shields.io/badge/version-6.6.4.1-blue?style=flat" alt="version"/>
+  <img src="https://img.shields.io/github/stars/ky3-studio/ky3-Launcher?style=flat&color=gold" alt="stars"/>
+  <a href="https://github.com/ky3-studio/ky3-Launcher/actions/workflows/build.yml"><img src="https://github.com/ky3-studio/ky3-Launcher/actions/workflows/build.yml/badge.svg" alt="build"/></a>
   <img src="https://img.shields.io/badge/platform-Windows%2010%2B-0078d4?style=flat&logo=windows" alt="platform"/>
   <img src="https://img.shields.io/badge/.NET-10.0-512bd4?style=flat&logo=dotnet" alt=".NET"/>
   <img src="https://img.shields.io/badge/WinUI-3-7b52ab?style=flat" alt="WinUI 3"/>
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat" alt="license"/>
   <img src="https://img.shields.io/badge/arch-x64-lightgrey?style=flat" alt="arch"/>
+  <a href="https://github.com/ky3-studio/ky3-Launcher/releases/latest"><img src="https://img.shields.io/github/v/release/ky3-studio/ky3-Launcher?style=flat&label=download&color=orange" alt="download"/></a>
 </p>
 
 ---
@@ -69,7 +72,8 @@
 | 数据库 | SQLite | Entity Framework Core ORM、本地持久化存储 |
 | 网络 | HttpClient + WebView2 | REST API 请求、Cookie 管理、嵌入式 Web 视图 |
 | 原生层 | C++ / Win32 Interop | Native DLL 注入、进程管理、底层系统调用 |
-| 构建 | MSBuild | Source Generators、增量编译、CI/CD 自动发布 |
+| 更新器 | Rust | 轻量级自更新组件，断点续传、文件级增量替换 |
+| 构建 | MSBuild + Cargo | Source Generators、增量编译、GitHub Actions CI/CD |
 
 ---
 
@@ -93,6 +97,7 @@
 | <img src="https://img.shields.io/badge/-.NET%2010%20SDK-512bd4?style=flat&logo=dotnet&logoColor=white" alt=""/> | [dotnet.microsoft.com](https://dotnet.microsoft.com/download)，preview 版本 |
 | <img src="https://img.shields.io/badge/-Visual%20Studio%202022-5c2d91?style=flat&logo=visualstudio&logoColor=white" alt=""/> | 或使用 `dotnet` CLI 单独构建 |
 | <img src="https://img.shields.io/badge/-Windows%20App%20SDK-0078d4?style=flat&logo=windows&logoColor=white" alt=""/> | VS Installer 中勾选对应 Workload |
+| <img src="https://img.shields.io/badge/-Rust%20Toolchain-000000?style=flat&logo=rust&logoColor=white" alt=""/> | [rustup.rs](https://rustup.rs/)，用于编译 updater-rs 更新器组件 |
 
 ### 克隆仓库
 
@@ -113,7 +118,7 @@ dotnet restore src/launcher/launcher.csproj
 dotnet build src/launcher/launcher.csproj -c Release -p:Platform=x64
 ```
 
-构建产物输出到 `bin/x64/Release/` 目录。
+构建产物输出到 `bin/Release/` 目录。
 
 ---
 
@@ -149,3 +154,21 @@ dotnet build src/launcher/launcher.csproj -c Release -p:Platform=x64
 <img src="https://img.shields.io/badge/license-MIT-green?style=flat&logo=opensourceinitiative&logoColor=white" alt="MIT"/>
 
 本项目基于 [MIT](LICENSE) 协议开源。
+
+---
+
+## Star History
+
+<a href="https://star-history.com/#ky3-studio/ky3-Launcher&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ky3-studio/ky3-Launcher&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=ky3-studio/ky3-Launcher&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=ky3-studio/ky3-Launcher&type=Date" />
+  </picture>
+</a>
+
+---
+
+## 免责声明
+
+本项目为第三方开源工具，与 miHoYo / HoYoverse 无任何关联。使用本软件产生的一切后果由用户自行承担。

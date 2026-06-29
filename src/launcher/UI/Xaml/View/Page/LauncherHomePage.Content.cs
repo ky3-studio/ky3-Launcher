@@ -649,7 +649,7 @@ internal sealed partial class LauncherHomePage
         else
         {
             LaunchButtonText.Text = SH.ViewPageHomeLaunchGameButton;
-            PlayIconText.Text = "?";
+            PlayIconText.Text = "▶";
             AnimateLaunchButtonColors(hovered: _isLaunchButtonHovered);
         }
     }

@@ -5,7 +5,7 @@
 <h1 align="center">ky3 Launcher</h1>
 
 <p align="center">
-  <strong>一款现代化的原神第三方启动器，基于 WinUI 3 构建</strong>
+  <strong>一款现代化的原神第三方启动器，基于 WinUI 3 构建。</strong>
 </p>
 
 <p align="center">

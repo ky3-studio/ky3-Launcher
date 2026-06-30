@@ -21,8 +21,16 @@ internal abstract partial class OverseaSupportFactory<TClient, TClientCN, TClien
 
     public TClient Create(bool isOversea)
     {
-        return isOversea
-            ? serviceProvider.GetRequiredService<TClientOS>()
-            : serviceProvider.GetRequiredService<TClientCN>();
+        try
+        {
+            return isOversea
+                ? serviceProvider.GetRequiredService<TClientOS>()
+                : serviceProvider.GetRequiredService<TClientCN>();
+        }
+        catch (ObjectDisposedException)
+        {
+            // App is shutting down, DI container already disposed
+            return default!;
+        }
     }
 }

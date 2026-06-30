@@ -328,6 +328,13 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
 
                     using HttpResponseMessage response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead, token).ConfigureAwait(false);
 
+                    if (response.StatusCode is System.Net.HttpStatusCode.RequestedRangeNotSatisfiable)
+                    {
+                        // Server file changed, discard partial download and retry from scratch
+                        File.Delete(patchZipPath);
+                        continue;
+                    }
+
                     long totalBytes;
                     long downloadedBytes;
                     FileMode fileMode;

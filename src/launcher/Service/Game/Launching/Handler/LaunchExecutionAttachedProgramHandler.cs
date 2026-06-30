@@ -142,9 +142,9 @@ internal sealed partial class LaunchExecutionAttachedProgramHandler : AbstractLa
                 proc.Dispose();
             }
         }
-        catch (Exception ex)
+        catch
         {
-            SentrySdk.CaptureException(ex);
+            // Expected when program requires elevation - fall through to UseShellExecute=true
         }
 
         if (assigned)

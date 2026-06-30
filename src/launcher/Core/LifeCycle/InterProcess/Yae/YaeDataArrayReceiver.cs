@@ -16,9 +16,14 @@ internal sealed class YaeDataArrayReceiver : IDisposable
 
     public void Dispose()
     {
+        if (Array.IsDefault)
+        {
+            return;
+        }
+
         foreach (YaeData data in Array)
         {
-            data.Dispose();
+            data?.Dispose();
         }
     }
 }

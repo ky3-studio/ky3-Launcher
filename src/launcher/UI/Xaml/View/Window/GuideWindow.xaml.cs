@@ -24,7 +24,15 @@ internal sealed partial class GuideWindow : Microsoft.UI.Xaml.Window,
 {
     public GuideWindow(IServiceProvider serviceProvider)
     {
-        InitializeComponent();
+        try
+        {
+            InitializeComponent();
+        }
+        catch (Exception ex)
+        {
+            SentrySdk.CaptureException(ex);
+            return;
+        }
 
         if (AppWindow.Presenter is OverlappedPresenter presenter)
         {

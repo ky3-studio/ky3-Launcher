@@ -125,7 +125,11 @@ internal sealed partial class GameInRegistryAccountService : IGameInRegistryAcco
     public GameAccount? DetectCurrentGameAccount(SchemeType schemeType)
     {
         ArgumentNullException.ThrowIfNull(gameAccounts);
-        LauncherException.NotSupportedIf(schemeType is SchemeType.ChineseBilibili, SH.ServiceGameAccountBilibiliNotSupported);
+
+        if (schemeType is SchemeType.ChineseBilibili)
+        {
+            return default;
+        }
 
         return RegistryInterop.TryGet(schemeType, out string? registrySdk, out _, out _)
             ? SingleGameAccountMatchAdlOrDefault(gameAccounts.Source.AsReadOnly(), registrySdk)

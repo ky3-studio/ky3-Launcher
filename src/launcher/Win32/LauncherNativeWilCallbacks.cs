@@ -35,6 +35,12 @@ internal static unsafe class LauncherNativeWilCallbacks
             return;
         }
 
+        // Non-critical Shell API failures (taskbar not ready, icon version mismatch)
+        if (exception.Message.Contains("notify icon", StringComparison.OrdinalIgnoreCase))
+        {
+            return;
+        }
+
         SentrySdk.CaptureException(exception);
         SentrySdk.Flush();
     }

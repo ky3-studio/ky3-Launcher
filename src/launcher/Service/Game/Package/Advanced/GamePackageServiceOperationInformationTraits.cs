@@ -56,7 +56,7 @@ internal sealed partial class GamePackageServiceOperationInformationTraits
         };
 
         long downloadedTotalBytes = GetSize(context.EffectiveChunksDirectory);
-        long actualTotalBytes = installTotalBytes - downloadedTotalBytes + (1024L * 1024L * 1024L); // 1 GB for temp files
+        long actualTotalBytes = Math.Max(0, installTotalBytes - downloadedTotalBytes) + (1024L * 1024L * 1024L); // 1 GB for temp files
         long availableBytes = LogicalDrive.GetAvailableFreeSpace(context.EffectiveGameDirectory);
 
         string formattedDownloadTotalBytes = Converters.ToFileSizeString(downloadTotalBytes);

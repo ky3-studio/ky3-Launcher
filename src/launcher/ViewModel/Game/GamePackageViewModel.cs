@@ -19,6 +19,7 @@ using Launcher.Service.Game.Scheme;
 using Launcher.Service.Notification;
 using Launcher.Web.Hoyolab.HoyoPlay.Connect.Branch;
 using Launcher.Web.Hoyolab.HoyoPlay.Connect.ChannelSDK;
+using Microsoft.UI.Xaml.Controls;
 using System.IO;
 
 namespace Launcher.ViewModel.Game;
@@ -135,6 +136,20 @@ internal sealed partial class GamePackageViewModel : Abstraction.ViewModel
         }
 
         await ExecutePackageOperationAsync(GamePackageOperationKind.Predownload).ConfigureAwait(false);
+
+        if (!IsPredownloadFinished)
+        {
+            return;
+        }
+
+        ContentDialogResult mergeResult = await contentDialogFactory.CreateForConfirmCancelAsync(
+            SH.ViewModelGamePackagePredownloadMergeTitle,
+            SH.ViewModelGamePackagePredownloadMergeContent).ConfigureAwait(false);
+
+        if (mergeResult is ContentDialogResult.Primary)
+        {
+            await ExecutePackageOperationAsync(GamePackageOperationKind.Update).ConfigureAwait(false);
+        }
     }
 
     [Command("StartVerifyCommand")]

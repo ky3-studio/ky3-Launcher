@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-6.6.4.1-blue?style=flat" alt="version"/>
+  <img src="https://img.shields.io/github/v/tag/ky3-studio/ky3-Launcher?style=flat&label=version&color=blue" alt="version"/>
   <img src="https://img.shields.io/github/stars/ky3-studio/ky3-Launcher?style=flat&color=gold" alt="stars"/>
   <a href="https://github.com/ky3-studio/ky3-Launcher/actions/workflows/build.yml"><img src="https://github.com/ky3-studio/ky3-Launcher/actions/workflows/build.yml/badge.svg" alt="build"/></a>
   <img src="https://img.shields.io/badge/platform-Windows%2010%2B-0078d4?style=flat&logo=windows" alt="platform"/>

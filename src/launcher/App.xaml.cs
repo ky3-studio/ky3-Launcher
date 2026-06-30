@@ -78,8 +78,9 @@ public sealed partial class App : Application
             {
                 AppNotificationManager.Default.Register();
             }
-            catch
+            catch (Exception ex)
             {
+                SentrySdk.AddBreadcrumb($"AppNotification register failed: {ex.Message}", category: "Launcher", level: BreadcrumbLevel.Warning);
             }
 
             // E_INVALIDARG E_OUTOFMEMORY
@@ -91,8 +92,9 @@ public sealed partial class App : Application
                 activatedEventArgs = AppInstance.GetCurrent().GetActivatedEventArgs();
                 namedPipeClient = serviceProvider.GetRequiredService<PrivateNamedPipeClient>();
             }
-            catch
+            catch (Exception ex)
             {
+                SentrySdk.AddBreadcrumb($"GetActivatedEventArgs failed: {ex.Message}", category: "Launcher", level: BreadcrumbLevel.Warning);
             }
 
             if (activatedEventArgs is not null && namedPipeClient is not null)
@@ -111,8 +113,9 @@ public sealed partial class App : Application
             {
                 FrameworkTheming.SetTheme(ThemeHelper.ElementToFramework(serviceProvider.GetRequiredService<AppOptions>().ElementTheme.Value));
             }
-            catch
+            catch (Exception ex)
             {
+                SentrySdk.AddBreadcrumb($"Initial theme set failed: {ex.Message}", category: "Launcher", level: BreadcrumbLevel.Warning);
             }
 
             SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateInfo("Activate and Initialize", "Application"));

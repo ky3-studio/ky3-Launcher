@@ -1,0 +1,47 @@
+core:
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/launcher/Core/**
+
+service:
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/launcher/Service/**
+
+ui:
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/launcher/View/**
+          - src/launcher/ViewModel/**
+
+model:
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/launcher/Model/**
+
+extension:
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/launcher/Extension/**
+
+web:
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/launcher/Web/**
+
+ci:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .github/**
+
+tests:
+  - changed-files:
+      - any-glob-to-any-file:
+          - tests/**
+
+dependencies:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.csproj'
+          - Directory.Build.props
+          - global.json

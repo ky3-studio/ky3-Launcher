@@ -265,7 +265,10 @@ internal sealed partial class GamePackageViewModel : Abstraction.ViewModel
                         foreach (string file in Directory.EnumerateFiles(gameDir, "*", SearchOption.AllDirectories))
                         {
                             try { totalBytes += new FileInfo(file).Length; }
-                            catch (Exception) { }
+                            catch (Exception ex)
+                            {
+                                SentrySdk.AddBreadcrumb($"GameSize file access failed: {ex.Message}", category: "Game", level: BreadcrumbLevel.Debug);
+                            }
                         }
 
                         double gb = totalBytes / (1024.0 * 1024.0 * 1024.0);

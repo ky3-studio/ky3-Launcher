@@ -178,8 +178,9 @@ internal sealed partial class LaunchExecutionAttachedProgramHandler : AbstractLa
                 fallbackExeNames.Add(exeName);
             }
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.AddBreadcrumb($"Attached program launch failed: {programPath} - {ex.Message}", category: "Game.Launch", level: BreadcrumbLevel.Warning);
         }
     }
 

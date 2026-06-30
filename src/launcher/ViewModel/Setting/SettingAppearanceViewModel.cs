@@ -72,8 +72,9 @@ internal sealed partial class SettingAppearanceViewModel : Abstraction.ViewModel
                 {
                     FrameworkTheming.SetTheme(ThemeHelper.ElementToFramework(value.Value));
                 }
-                catch
+                catch (Exception ex)
                 {
+                    SentrySdk.AddBreadcrumb($"SetTheme failed: {ex.Message}", category: "Setting", level: BreadcrumbLevel.Warning);
                 }
 
                 try
@@ -84,8 +85,9 @@ internal sealed partial class SettingAppearanceViewModel : Abstraction.ViewModel
                         rootElement.RequestedTheme = value.Value;
                     }
                 }
-                catch
+                catch (Exception ex)
                 {
+                    SentrySdk.AddBreadcrumb($"RequestedTheme apply failed: {ex.Message}", category: "Setting", level: BreadcrumbLevel.Warning);
                 }
             }
         }

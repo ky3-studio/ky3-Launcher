@@ -4,6 +4,13 @@ on:
   pull_request:
     branches: [main]
 
+concurrency:
+  group: format-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
 jobs:
   format:
     runs-on: windows-latest

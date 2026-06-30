@@ -172,8 +172,9 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
             OnPropertyChanged(nameof(RunElevated));
             OnPropertyChanged(nameof(IsStartupEnabled));
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.AddBreadcrumb($"Setting load failed: {ex.Message}", category: "Setting", level: BreadcrumbLevel.Warning);
         }
 
         return true;

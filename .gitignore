@@ -1,27 +1,51 @@
-## Build results
-bin/
-obj/
-[Dd]ebug/
-[Rr]elease/
+## Build outputs
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Ll]og/
+[Ll]ogs/
 target/
 
 ## NuGet
 *.nupkg
-packages/
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
 
 ## Visual Studio
 .vs/
-*.user
 *.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+launchSettings.json
 
 ## Rider
 .idea/
+*.sln.iml
+
+## VS Code
+.vscode/
+
+## Test results
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+BenchmarkDotNet.Artifacts/
 
 ## OS
-Thumbs.db
+[Tt]humbs.db
+ehthumbs.db
+Desktop.ini
 .DS_Store
 
-## Docs (generated)
-src/launcher/docs/
-
+## Scripts (local)
 scripts/
+
+## Misc
+*.swp
+*.bak
+*.tmp
+*.orig

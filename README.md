@@ -67,7 +67,7 @@
 | 层 | 技术 | 说明 |
 |:---:|------|------|
 | 框架 | .NET 10 / WinUI 3 | Windows App SDK，现代桌面 UI 框架 |
-| 语言 | C# 13 (preview) | 最新语言特性、Source Generators 代码生成 |
+| 语言 | C# 14 (preview) | 最新语言特性、Source Generators 代码生成 |
 | 架构 | MVVM | CommunityToolkit.Mvvm、ObservableProperty、WeakReferenceMessenger |
 | 数据库 | SQLite | Entity Framework Core ORM、本地持久化存储 |
 | 网络 | HttpClient + WebView2 | REST API 请求、Cookie 管理、嵌入式 Web 视图 |
@@ -85,6 +85,16 @@
 | 架构 | x64 | 仅支持 64 位系统 |
 | 运行库 | VC++ 2015–2022 x64 | [下载地址](https://aka.ms/vs/17/release/vc_redist.x64.exe) |
 | WebView2 | WebView2 Runtime | 任意版本，Windows 11 已内置 |
+
+---
+
+## 安装
+
+1. 前往 [Releases](https://github.com/ky3-studio/ky3-Launcher/releases/latest) 下载最新版本
+2. 解压到任意目录
+3. 运行 `launcher.exe`
+
+> 首次运行需要 [VC++ 2015–2022 x64](https://aka.ms/vs/17/release/vc_redist.x64.exe) 和 [WebView2 Runtime](https://go.microsoft.com/fwlink/p/?LinkId=2124703)，Windows 11 已内置。
 
 ---
 
@@ -119,6 +129,103 @@ dotnet build src/launcher/launcher.csproj -c Release -p:Platform=x64
 ```
 
 构建产物输出到 `bin/Release/` 目录。
+
+### 运行测试
+
+```bash
+dotnet test tests/ky3launcher.Tests/ky3launcher.Tests.csproj -c Release
+```
+
+### 运行性能基准
+
+```bash
+dotnet run -c Release --project tests/ky3launcher.Benchmarks -- --filter *
+```
+
+---
+
+## 项目结构
+
+```
+ky3-Launcher/
+├── src/
+│   ├── launcher/              ← 主项目 (WinUI 3)
+│   │   ├── Core/              基础设施 (DI、IO、缓存、数据库、进程管理)
+│   │   ├── Extension/         扩展方法 (Span、String、Collection、内存管理)
+│   │   ├── Model/             实体模型与数据结构
+│   │   ├── Service/           业务服务 (养成计算、祈愿分析、签到、便笺)
+│   │   ├── ViewModel/         MVVM ViewModel 层
+│   │   ├── UI/                界面控件与样式
+│   │   ├── Web/               HTTP 客户端与 API 封装
+│   │   ├── Win32/             P/Invoke 与原生交互
+│   │   └── Factory/           UI 组件工厂 (对话框、文件选择器、进度条)
+│   └── SourceGeneration/      Source Generators
+├── Runner/                    C++ 自动启动管理 (Windows Task Scheduler)
+├── tests/
+│   ├── ky3launcher.Tests/         单元测试 (247 tests)
+│   └── ky3launcher.Benchmarks/    性能基准测试
+├── module/                    插件 DLL
+├── Installer/                 安装包脚本 (Inno Setup)
+└── .github/                   CI/CD、Issue 模板、Dependabot
+```
+
+---
+
+## 路线图
+
+| 状态 | 功能 |
+|:---:|------|
+| ✅ | 游戏启动、多账号切换、DLL 插件加载 |
+| ✅ | 角色/武器养成计算器 |
+| ✅ | 实时便笺、自动签到、祈愿分析 |
+| ✅ | 文件级增量更新 |
+| 🚧 | 多语言国际化 (en-US / ja-JP / ko-KR) |
+| 💡 | 背包物品解析 |
+| 💡 | 圣遗物评分与强化建议 |
+
+---
+
+## 常见问题
+
+<details>
+<summary><b>启动时白屏 / 闪退</b></summary>
+
+1. 确认已安装 [VC++ 2015–2022 x64](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+2. 确认已安装 [WebView2 Runtime](https://go.microsoft.com/fwlink/p/?LinkId=2124703)
+3. 尝试以管理员身份运行
+4. 检查是否被杀毒软件拦截
+</details>
+
+<details>
+<summary><b>网络请求失败 / 签到失败</b></summary>
+
+1. 可能返回5003 风控 稍后再试
+2. 确认 Cookie 未过期，尝试重新登录米游社账号
+</details>
+
+<details>
+<summary><b>插件加载失败 / DLL 报错</b></summary>
+
+1. 确保 DLL 架构为 x64，不支持 x86
+2. 检查 DLL 是否放在 exe 同目录下
+3. 查看日志文件定位具体错误原因
+</details>
+
+<details>
+<summary><b>自动更新失败</b></summary>
+
+1. 检查网络连接是否正常
+2. 确认程序目录有写入权限
+3. 手动下载 [Latest Release](https://github.com/ky3-studio/ky3-Launcher/releases/latest) 覆盖安装
+</details>
+
+<details>
+<summary><b>树脂 / 便笺数据不更新</b></summary>
+
+1. 检查账号是否已绑定并登录
+2. 米游社 API 偶尔延迟，稍后重试
+3. 5003 风控问题
+</details>
 
 ---
 

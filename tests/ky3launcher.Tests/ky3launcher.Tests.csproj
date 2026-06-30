@@ -8,11 +8,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <RootNamespace>ky3launcher.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="10.0.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="JetBrains.Annotations" Version="2026.2.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.*" />
+    <PackageReference Include="NSubstitute" Version="5.3.0" />
     <PackageReference Include="xunit" Version="2.*" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.*">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -24,6 +31,30 @@
     <Compile Include="..\..\src\launcher\Core\Threading\AsyncLock.cs" Link="LinkedSources\AsyncLock.cs" />
     <Compile Include="..\..\src\launcher\Core\Threading\AsyncSemaphore.cs" Link="LinkedSources\AsyncSemaphore.cs" />
     <Compile Include="..\..\src\launcher\Core\Threading\AsyncReaderWriterLock.cs" Link="LinkedSources\AsyncReaderWriterLock.cs" />
+    <Compile Include="..\..\src\launcher\Core\IO\ValueFile.cs" Link="LinkedSources\ValueFile.cs" />
+    <Compile Include="..\..\src\launcher\Extension\DictionaryExtension.cs" Link="LinkedSources\DictionaryExtension.cs" />
+    <Compile Include="..\..\src\launcher\Service\Cultivation\Offline\AvatarLevelExperience.cs" Link="LinkedSources\AvatarLevelExperience.cs" />
+    <Compile Include="..\..\src\launcher\Service\Cultivation\Offline\WeaponLevelExperience.cs" Link="LinkedSources\WeaponLevelExperience.cs" />
+    <Compile Include="..\..\src\launcher\Extension\NumberExtension.cs" Link="LinkedSources\NumberExtension.cs" />
+    <Compile Include="..\..\src\launcher\Core\CommandLineBuilder.cs" Link="LinkedSources\CommandLineBuilder.cs" />
+    <Compile Include="..\..\src\launcher\Core\CommandLineArgumentPrefix.cs" Link="LinkedSources\CommandLineArgumentPrefix.cs" />
+    <Compile Include="..\..\src\launcher\Core\UnsafeDateTimeOffset.cs" Link="LinkedSources\UnsafeDateTimeOffset.cs" />
+    <Compile Include="..\..\src\launcher\Core\UrlPath.cs" Link="LinkedSources\UrlPath.cs" />
+    <Compile Include="..\..\src\launcher\Extension\SpanExtension.cs" Link="LinkedSources\SpanExtension.cs" />
+    <Compile Include="..\..\src\launcher\Extension\CollectionExtension.cs" Link="LinkedSources\CollectionExtension.cs" />
+    <Compile Include="..\..\src\launcher\Core\Random.cs" Link="LinkedSources\Random.cs" />
+    <Compile Include="..\..\src\launcher\Extension\StringExtension.cs" Link="LinkedSources\StringExtension.cs" />
+    <Compile Include="..\..\src\launcher\Extension\StringBuilderExtension.cs" Link="LinkedSources\StringBuilderExtension.cs" />
+    <Compile Include="..\..\src\launcher\Extension\ListExtension.cs" Link="LinkedSources\ListExtension.cs" />
+    <Compile Include="..\..\src\launcher\Extension\EnumerableExtension.cs" Link="LinkedSources\EnumerableExtension.cs" />
+    <Compile Include="..\..\src\launcher\Extension\ImmutableArrayExtension.cs" Link="LinkedSources\ImmutableArrayExtension.cs" />
+    <Compile Include="..\..\src\launcher\Extension\ImmutableDictionaryExtension.cs" Link="LinkedSources\ImmutableDictionaryExtension.cs" />
+    <Compile Include="..\..\src\launcher\Extension\NullableExtension.cs" Link="LinkedSources\NullableExtension.cs" />
+    <Compile Include="..\..\src\launcher\Extension\NameValueCollectionExtension.cs" Link="LinkedSources\NameValueCollectionExtension.cs" />
+    <Compile Include="..\..\src\launcher\Model\Primitive\LevelFormat.cs" Link="LinkedSources\LevelFormat.cs" />
+    <Compile Include="..\..\src\launcher\Core\SpanReader.cs" Link="LinkedSources\SpanReader.cs" />
+    <Compile Include="..\..\src\launcher\Core\DisposableMarshal.cs" Link="LinkedSources\DisposableMarshal.cs" />
+    <Compile Include="..\..\src\launcher\Web\HttpHeadersExtension.cs" Link="LinkedSources\HttpHeadersExtension.cs" />
   </ItemGroup>
 
 </Project>

@@ -107,8 +107,9 @@ internal sealed partial class WikiAvatarViewModel : Abstraction.ViewModel
                 }
             }
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.AddBreadcrumb($"Wiki avatar collocation init failed: {ex.Message}", category: "Wiki", level: BreadcrumbLevel.Warning);
         }
 
         foreach (Avatar avatar in avatars)

@@ -141,8 +141,9 @@ internal sealed partial class WikiWeaponViewModel : Abstraction.ViewModel
                 }
             }
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.AddBreadcrumb($"Wiki weapon collocation init failed: {ex.Message}", category: "Wiki", level: BreadcrumbLevel.Warning);
         }
 
         foreach (Weapon weapon in weapons)

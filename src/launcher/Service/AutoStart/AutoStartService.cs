@@ -64,8 +64,9 @@ internal sealed partial class AutoStartService
             {
                 taskActive = NativeMethods.is_auto_start_task_active_for_this_user();
             }
-            catch
+            catch (Exception ex)
             {
+                SentrySdk.AddBreadcrumb($"is_auto_start_task_active check failed: {ex.Message}", category: "AutoStart", level: BreadcrumbLevel.Warning);
                 taskActive = false;
             }
 
@@ -117,8 +118,9 @@ internal sealed partial class AutoStartService
                 SetStartup(true, expectedRunElevated);
             }
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.AddBreadcrumb($"EnsureUpToDate failed: {ex.Message}", category: "AutoStart", level: BreadcrumbLevel.Warning);
         }
     }
 
@@ -180,8 +182,9 @@ internal sealed partial class AutoStartService
 
             EnsureUpToDate();
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.AddBreadcrumb($"SyncAutoStartPrivilegeSettings failed: {ex.Message}", category: "AutoStart", level: BreadcrumbLevel.Warning);
         }
     }
 

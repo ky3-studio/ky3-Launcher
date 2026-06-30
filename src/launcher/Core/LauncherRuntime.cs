@@ -144,8 +144,9 @@ internal static class LauncherRuntime
                 Directory.CreateDirectory(customPath);
                 return customPath;
             }
-            catch
+            catch (Exception ex)
             {
+                SentrySdk.AddBreadcrumb($"Custom cache directory creation failed: {customPath} - {ex.Message}", category: "Runtime", level: BreadcrumbLevel.Warning);
             }
         }
 
@@ -169,8 +170,9 @@ internal static class LauncherRuntime
         {
             return AppNotificationManager.Default.Setting is AppNotificationSetting.Enabled;
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.AddBreadcrumb($"AppNotification setting check failed: {ex.Message}", category: "Runtime", level: BreadcrumbLevel.Debug);
             return false;
         }
     }
@@ -203,8 +205,9 @@ internal static class LauncherRuntime
             {
                 Directory.Move(myDocumentsOldDirectory, myDocumentsNewDirectory);
             }
-            catch
+            catch (Exception ex)
             {
+                SentrySdk.AddBreadcrumb($"Data directory migration (Documents) failed: {ex.Message}", category: "Runtime", level: BreadcrumbLevel.Warning);
             }
         }
 
@@ -226,8 +229,9 @@ internal static class LauncherRuntime
             {
                 Directory.Move(oldPath, defaultPath);
             }
-            catch
+            catch (Exception ex)
             {
+                SentrySdk.AddBreadcrumb($"Data directory migration (LocalAppData) failed: {ex.Message}", category: "Runtime", level: BreadcrumbLevel.Warning);
             }
         }
 
@@ -253,8 +257,9 @@ internal static class LauncherRuntime
                 MigrateRootFilesToSubfolders(customPath);
                 return customPath;
             }
-            catch
+            catch (Exception ex)
             {
+                SentrySdk.AddBreadcrumb($"Custom data directory creation failed: {customPath} - {ex.Message}", category: "Runtime", level: BreadcrumbLevel.Warning);
             }
         }
 
@@ -304,8 +309,9 @@ internal static class LauncherRuntime
             {
                 File.Move(oldPath, newPath);
             }
-            catch
+            catch (Exception ex)
             {
+                SentrySdk.AddBreadcrumb($"File migration failed: {oldPath} -> {newPath} - {ex.Message}", category: "Runtime", level: BreadcrumbLevel.Debug);
             }
         }
     }
@@ -328,8 +334,9 @@ internal static class LauncherRuntime
                     Directory.Delete(fullPath, true);
                 }
             }
-            catch
+            catch (Exception ex)
             {
+                SentrySdk.AddBreadcrumb($"Cleanup old directory failed: {subDir} - {ex.Message}", category: "Runtime", level: BreadcrumbLevel.Debug);
             }
         }
 
@@ -340,8 +347,9 @@ internal static class LauncherRuntime
                 File.Delete(file);
             }
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.AddBreadcrumb($"Cleanup old db files failed: {ex.Message}", category: "Runtime", level: BreadcrumbLevel.Debug);
         }
 
         string[] rootFiles = ["ShellLinkLogo.ico", "YaeAchievementLib.dll"];
@@ -355,8 +363,9 @@ internal static class LauncherRuntime
                     File.Delete(filePath);
                 }
             }
-            catch
+            catch (Exception ex)
             {
+                SentrySdk.AddBreadcrumb($"Cleanup root file failed: {fileName} - {ex.Message}", category: "Runtime", level: BreadcrumbLevel.Debug);
             }
         }
     }

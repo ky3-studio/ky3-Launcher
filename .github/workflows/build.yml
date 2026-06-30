@@ -7,6 +7,14 @@ on:
     branches: [main]
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   build:
     runs-on: windows-latest
@@ -20,8 +28,33 @@ jobs:
           dotnet-version: '10.0.x'
           dotnet-quality: 'preview'
 
+      - name: Cache NuGet packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+          restore-keys: ${{ runner.os }}-nuget-
+
       - name: Build
         run: dotnet build src/launcher/launcher.csproj -c Release -p:Platform=x64 -p:CI=true -p:BaseOutputPath=${{ github.workspace }}/bin/ -p:BaseIntermediateOutputPath=obj/
+
+      - name: Test
+        run: dotnet test tests/ky3launcher.Tests/ky3launcher.Tests.csproj -c Release --no-restore -v minimal --collect:"XPlat Code Coverage" --results-directory ./coverage
+
+      - name: Generate coverage report
+        if: success() && github.event_name == 'pull_request'
+        uses: irongut/CodeCoverageSummary@v1.3.0
+        with:
+          filename: coverage/**/coverage.cobertura.xml
+          badge: true
+          format: markdown
+          output: both
+
+      - name: Add coverage PR comment
+        if: success() && github.event_name == 'pull_request'
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          path: code-coverage-results.md
 
       - name: Upload build artifacts
         if: success() && github.event_name == 'push'

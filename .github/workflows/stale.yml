@@ -1,0 +1,23 @@
+name: Stale Issues
+
+on:
+  schedule:
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          stale-issue-message: '此 Issue 已超过 30 天无活动，将在 7 天后自动关闭。如仍需处理请回复。'
+          close-issue-message: '已自动关闭。如需重新打开请留言。'
+          days-before-stale: 30
+          days-before-close: 7
+          stale-issue-label: 'stale'
+          exempt-issue-labels: 'pinned,bug,sentry'
+          exempt-all-milestones: true

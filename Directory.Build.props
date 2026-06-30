@@ -2,5 +2,13 @@
   <PropertyGroup>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <LangVersion>preview</LangVersion>
+    <Nullable>enable</Nullable>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
   </PropertyGroup>
+  <Target Name="HuskyRestore" AfterTargets="Restore" Condition="'$(CI)' != 'true'">
+    <Exec Command="dotnet tool restore" StandardOutputImportance="Low" ContinueOnError="true" />
+    <Exec Command="dotnet husky install" StandardOutputImportance="Low" WorkingDirectory="$(MSBuildThisFileDirectory)" ContinueOnError="true" />
+  </Target>
 </Project>

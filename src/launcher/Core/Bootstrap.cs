@@ -60,8 +60,9 @@ public static partial class Bootstrap
                 {
                     runElevated = LocalSetting.Get(SettingKeys.RunElevated, false);
                 }
-                catch
+                catch (Exception ex)
                 {
+                    SentrySdk.AddBreadcrumb($"Failed to read RunElevated setting: {ex.Message}", category: "Startup", level: BreadcrumbLevel.Warning);
                 }
 
                 if (runElevated)
@@ -81,8 +82,9 @@ public static partial class Bootstrap
                 }
             }
         }
-        catch
+        catch (Exception ex)
         {
+            SentrySdk.AddBreadcrumb($"Elevation check failed: {ex.Message}", category: "Startup", level: BreadcrumbLevel.Error);
         }
 
         if (Mutex.TryOpenExisting(LockName, out _))

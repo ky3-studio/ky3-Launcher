@@ -1,0 +1,17 @@
+{
+   "$schema": "https://alirezanet.github.io/Husky.Net/schema.json",
+   "tasks": [
+      {
+         "name": "format-check",
+         "command": "dotnet",
+         "args": ["format", "whitespace", "src/launcher/launcher.csproj", "--verify-no-changes"],
+         "group": "pre-commit"
+      },
+      {
+         "name": "build-test",
+         "command": "dotnet",
+         "args": ["build", "tests/ky3launcher.Tests/ky3launcher.Tests.csproj", "-c", "Release", "-v", "quiet"],
+         "group": "pre-push"
+      }
+   ]
+}

@@ -8,7 +8,7 @@ namespace Launcher.Service.RemoteConfig;
 
 internal static class AppAnnouncementService
 {
-    internal static readonly HttpClient Http = BackendApiRoutes.CreateHttpClient(TimeSpan.FromSeconds(5));
+    internal static readonly HttpClient Http = BackendApiRoutes.CreateHttpClient(TimeSpan.FromSeconds(15));
     private static readonly object Lock = new();
     private static List<AppAnnouncement> _cached = [];
     private static Timer? _timer;
@@ -119,9 +119,14 @@ internal static class AppAnnouncementService
                 return data;
             }
         }
-        catch (Exception ex)
+        catch (Exception ex) when (ex is not OutOfMemoryException)
         {
-            SentrySdk.CaptureException(ex);
+            // Network errors (timeout, SSL, connection refused) are expected in
+            // poor network conditions and should not pollute Sentry.
+            if (ex is not (TaskCanceledException or HttpRequestException or OperationCanceledException))
+            {
+                SentrySdk.CaptureException(ex);
+            }
         }
 
         return [];

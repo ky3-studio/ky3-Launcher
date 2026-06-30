@@ -23,6 +23,7 @@ internal partial class ScopedPage : Page
     private CancellationTokenSource viewCts = new();
     private IServiceScope? scope;
     private bool initialized;
+    private volatile bool isDisposed;
 
     protected ScopedPage()
     {
@@ -77,6 +78,8 @@ internal partial class ScopedPage : Page
 
     private void OnLoading(FrameworkElement element, object e)
     {
+        isDisposed = false;
+
         if (!initialized)
         {
             initialized = true;
@@ -103,7 +106,21 @@ internal partial class ScopedPage : Page
 
     private void OnUnloaded(object sender, RoutedEventArgs e)
     {
-        viewCts.Cancel();
+        if (isDisposed)
+        {
+            return;
+        }
+
+        isDisposed = true;
+
+        try
+        {
+            viewCts.Cancel();
+        }
+        catch (ObjectDisposedException)
+        {
+        }
+
         viewCts.Dispose();
         scope?.Dispose();
         scope = null;

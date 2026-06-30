@@ -80,8 +80,8 @@ internal sealed partial class MetadataService : IMetadataService
         {
             if (bundledStream is null)
             {
-                FileNotFoundException exception = new(SH.ServiceMetadataFileNotFound, strategy.Name);
-                throw LauncherException.Throw(SH.ServiceMetadataFileNotFound, exception);
+                logger.LogWarning("Bundled metadata file not found: {FileName}", strategy.Name);
+                return MemoryCache.Set(cacheKey, ImmutableArray<T>.Empty);
             }
 
             try
@@ -96,7 +96,8 @@ internal sealed partial class MetadataService : IMetadataService
             catch (Exception ex)
             {
                 ex.Data.Add("FileName", strategy.Name);
-                throw new InvalidDataException($"Bundled metadata corrupted: {strategy.Name}", ex);
+                logger.LogError(ex, "Bundled metadata corrupted: {FileName}", strategy.Name);
+                return MemoryCache.Set(cacheKey, ImmutableArray<T>.Empty);
             }
         }
     }

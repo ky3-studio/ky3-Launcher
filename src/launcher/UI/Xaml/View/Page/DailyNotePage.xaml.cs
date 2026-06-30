@@ -26,13 +26,20 @@ internal sealed partial class DailyNotePage : ScopedPage, IRecipient<UserAndUidC
     public DailyNotePage()
     {
         InitializeComponent();
+        Unloaded += OnDailyNotePageUnloaded;
     }
 
     public void Receive(UserAndUidChangedMessage message)
     {
         if (message.UserAndUid is not null)
         {
-            DispatcherQueue.TryEnqueue(() => ShowDailyNoteContent());
+            DispatcherQueue?.TryEnqueue(() =>
+            {
+                if (serviceProvider is not null)
+                {
+                    ShowDailyNoteContent();
+                }
+            });
         }
     }
 
@@ -96,5 +103,11 @@ internal sealed partial class DailyNotePage : ScopedPage, IRecipient<UserAndUidC
 
         NotLoggedInPanel.Visibility = Visibility.Visible;
         LoggedInPanel.Visibility = Visibility.Collapsed;
+    }
+
+    private void OnDailyNotePageUnloaded(object sender, RoutedEventArgs e)
+    {
+        messenger?.UnregisterAll(this);
+        serviceProvider = null;
     }
 }

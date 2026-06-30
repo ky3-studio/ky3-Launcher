@@ -39,7 +39,7 @@ jobs:
         run: dotnet build src/launcher/launcher.csproj -c Release -p:Platform=x64 -p:CI=true -p:BaseOutputPath=${{ github.workspace }}/bin/ -p:BaseIntermediateOutputPath=obj/
 
       - name: Test
-        run: dotnet test tests/ky3launcher.Tests/ky3launcher.Tests.csproj -c Release --no-restore -v minimal --collect:"XPlat Code Coverage" --results-directory ./coverage
+        run: dotnet test tests/ky3launcher.Tests/ky3launcher.Tests.csproj -c Release -v minimal --collect:"XPlat Code Coverage" --results-directory ./coverage
 
       - name: Generate coverage report
         if: success() && github.event_name == 'pull_request'

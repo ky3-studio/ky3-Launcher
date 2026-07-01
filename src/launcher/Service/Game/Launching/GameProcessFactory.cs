@@ -124,7 +124,9 @@ internal sealed partial class GameProcessFactory
                 : $"\"{gameExe}\" {cmdLineArgs}";
 
             STARTUPINFOW si = new();
+#pragma warning disable CA1421
             si.cb = (uint)Marshal.SizeOf<STARTUPINFOW>();
+#pragma warning restore CA1421
 
             bool created = NativeMethods.CreateProcessW(
                 gameExe, fullCmdLine, nint.Zero, nint.Zero, false, 0x4, nint.Zero, workDir, ref si, out PROCESS_INFORMATION pi);
@@ -154,11 +156,11 @@ internal sealed partial class GameProcessFactory
 
             if (failures.Count > 0)
             {
-                string msg = "\u4ee5\u4e0b\u81ea\u5b9a\u4e49 DLL \u6ce8\u5165\u5931\u8d25\uff08\u67b6\u6784\u4e0d\u5339\u914d\u3001\u4f9d\u8d56\u7f3a\u5931\u3001\u88ab\u5b89\u5168\u8f6f\u4ef6\u62e6\u622a\u7b49\uff09\uff1a\r\n\r\n" + string.Join("\r\n", failures);
+                string msg = SH.ServiceGameLaunchingCustomDllInjectFailed + "\r\n\r\n" + string.Join("\r\n", failures);
                 NativeMethods.MessageBoxW(nint.Zero, msg, "Ky3 Launcher", 0x00000030u);
             }
 
-            NativeMethods.ResumeThread(pi.hThread);
+            _ = NativeMethods.ResumeThread(pi.hThread);
             NativeMethods.CloseHandle(pi.hThread);
 
             File.WriteAllText(configFile, pi.dwProcessId.ToString());
@@ -183,7 +185,7 @@ internal sealed partial class GameProcessFactory
         configLines.AddRange(customDlls);
         File.WriteAllLines(configFile, configLines);
 
-        string currentExe = Environment.ProcessPath ?? throw new InvalidOperationException("\u65e0\u6cd5\u83b7\u53d6\u542f\u52a8\u5668\u8def\u5f84");
+        string currentExe = Environment.ProcessPath ?? throw new InvalidOperationException(SH.ServiceGameLaunchingCannotGetLauncherPath);
 
         System.Diagnostics.ProcessStartInfo psi = new()
         {
@@ -202,13 +204,13 @@ internal sealed partial class GameProcessFactory
         catch (System.ComponentModel.Win32Exception ex) when (ex.NativeErrorCode == 1223)
         {
             FileOperationSafe.TryDelete(configFile);
-            throw new InvalidOperationException("\u7528\u6237\u53d6\u6d88\u4e86\u7ba1\u7406\u5458\u6388\u6743");
+            throw new InvalidOperationException(SH.ServiceGameLaunchingUserCancelledElevation);
         }
 
         if (helper is null)
         {
             FileOperationSafe.TryDelete(configFile);
-            throw new InvalidOperationException("\u542f\u52a8\u6ce8\u5165\u8fdb\u7a0b\u5931\u8d25");
+            throw new InvalidOperationException(SH.ServiceGameLaunchingStartInjectionProcessFailed);
         }
 
         using (helper)
@@ -220,27 +222,27 @@ internal sealed partial class GameProcessFactory
                 FileOperationSafe.TryDelete(configFile);
                 string reason = helper.ExitCode switch
                 {
-                    1 => "\u53c2\u6570\u9519\u8bef",
-                    2 => "\u521b\u5efa\u6e38\u620f\u8fdb\u7a0b\u5931\u8d25",
-                    3 => "DLL\u6ce8\u5165\u5931\u8d25",
-                    _ => $"\u672a\u77e5\u9519\u8bef ({helper.ExitCode})"
+                    1 => SH.ServiceGameLaunchingInjectionReasonInvalidArgs,
+                    2 => SH.ServiceGameLaunchingInjectionReasonCreateProcessFailed,
+                    3 => SH.ServiceGameLaunchingInjectionReasonDllInjectFailed,
+                    _ => SH.FormatServiceGameLaunchingInjectionReasonUnknown(helper.ExitCode)
                 };
-                throw new InvalidOperationException($"\u6ce8\u5165\u5931\u8d25: {reason}");
+                throw new InvalidOperationException(SH.FormatServiceGameLaunchingInjectionFailed(reason));
             }
         }
 
         if (!File.Exists(configFile))
-            throw new InvalidOperationException("\u65e0\u6cd5\u83b7\u53d6\u6e38\u620f\u8fdb\u7a0b\u4fe1\u606f");
+            throw new InvalidOperationException(SH.ServiceGameLaunchingCannotGetProcessInfo);
 
         string pidStr = File.ReadAllText(configFile).Trim();
         FileOperationSafe.TryDelete(configFile);
 
         if (!uint.TryParse(pidStr, out uint pid))
-            throw new InvalidOperationException("\u65e0\u6548\u7684\u6e38\u620f\u8fdb\u7a0bID");
+            throw new InvalidOperationException(SH.ServiceGameLaunchingInvalidProcessId);
 
         nint handle = NativeMethods.OpenProcess(0x00101000, false, pid);
         if (handle == nint.Zero)
-            throw new InvalidOperationException("\u65e0\u6cd5\u8fde\u63a5\u5230\u6e38\u620f\u8fdb\u7a0b");
+            throw new InvalidOperationException(SH.ServiceGameLaunchingCannotConnectToProcess);
 
         return new InjectedProcess(handle, pid);
     }
@@ -275,7 +277,7 @@ internal sealed partial class GameProcessFactory
             return false;
         }
 
-        NativeMethods.WaitForSingleObject(hThread, 10000);
+        _ = NativeMethods.WaitForSingleObject(hThread, 10000);
 
         uint loadResult = 0;
         NativeMethods.GetExitCodeThread(hThread, out loadResult);
@@ -505,7 +507,7 @@ internal sealed partial class GameProcessFactory
 
         public void Start() { }
         public void ResumeMainThread() { }
-        public void WaitForExit() => NativeMethods.WaitForSingleObject(_handle, 0xFFFFFFFF);
+        public void WaitForExit() => _ = NativeMethods.WaitForSingleObject(_handle, 0xFFFFFFFF);
         public void Kill() => NativeMethods.TerminateProcess(_handle, 1);
 
         public void Dispose()

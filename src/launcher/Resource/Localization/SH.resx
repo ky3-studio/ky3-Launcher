@@ -5612,4 +5612,40 @@
   <data name="ViewNavigationThrottleMessage" xml:space="preserve">
     <value>请稍后再切换页面</value>
   </data>
+  <data name="ServiceGameLaunchingCustomDllInjectFailed" xml:space="preserve">
+    <value>以下自定义 DLL 注入失败（架构不匹配、依赖缺失、被安全软件拦截等）：</value>
+  </data>
+  <data name="ServiceGameLaunchingCannotGetLauncherPath" xml:space="preserve">
+    <value>无法获取启动器路径</value>
+  </data>
+  <data name="ServiceGameLaunchingUserCancelledElevation" xml:space="preserve">
+    <value>用户取消了管理员授权</value>
+  </data>
+  <data name="ServiceGameLaunchingStartInjectionProcessFailed" xml:space="preserve">
+    <value>启动注入进程失败</value>
+  </data>
+  <data name="ServiceGameLaunchingInjectionReasonInvalidArgs" xml:space="preserve">
+    <value>参数错误</value>
+  </data>
+  <data name="ServiceGameLaunchingInjectionReasonCreateProcessFailed" xml:space="preserve">
+    <value>创建游戏进程失败</value>
+  </data>
+  <data name="ServiceGameLaunchingInjectionReasonDllInjectFailed" xml:space="preserve">
+    <value>DLL注入失败</value>
+  </data>
+  <data name="ServiceGameLaunchingInjectionReasonUnknown" xml:space="preserve">
+    <value>未知错误 ({0})</value>
+  </data>
+  <data name="ServiceGameLaunchingInjectionFailed" xml:space="preserve">
+    <value>注入失败: {0}</value>
+  </data>
+  <data name="ServiceGameLaunchingCannotGetProcessInfo" xml:space="preserve">
+    <value>无法获取游戏进程信息</value>
+  </data>
+  <data name="ServiceGameLaunchingInvalidProcessId" xml:space="preserve">
+    <value>无效的游戏进程ID</value>
+  </data>
+  <data name="ServiceGameLaunchingCannotConnectToProcess" xml:space="preserve">
+    <value>无法连接到游戏进程</value>
+  </data>
 </root>

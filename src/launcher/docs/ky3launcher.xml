@@ -6176,6 +6176,18 @@
         <member name="P:Launcher.Resource.Localization.SH.ServiceGameLaunchPhaseWaitingProcessExit">
             <summary><para>Looks up a localized string for "ServiceGameLaunchPhaseWaitingProcessExit".</para><code>Neutral  Value: "等待游戏进程退出"</code></summary>
         </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceGameLaunchingCannotConnectToProcess">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingCannotConnectToProcess".</para><code>Neutral  Value: "无法连接到游戏进程"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceGameLaunchingCannotGetLauncherPath">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingCannotGetLauncherPath".</para><code>Neutral  Value: "无法获取启动器路径"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceGameLaunchingCannotGetProcessInfo">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingCannotGetProcessInfo".</para><code>Neutral  Value: "无法获取游戏进程信息"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceGameLaunchingCustomDllInjectFailed">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingCustomDllInjectFailed".</para><code>Neutral  Value: "以下自定义 DLL 注入失败（架构不匹配、依赖缺失、被安全软件拦截等）："</code></summary>
+        </member>
         <member name="P:Launcher.Resource.Localization.SH.ServiceGameLaunchingEnsureGameResourceShouldNotConvert">
             <summary><para>Looks up a localized string for "ServiceGameLaunchingEnsureGameResourceShouldNotConvert".</para><code>Neutral  Value: "目标服务器与当前游戏资源匹配，无需转换"</code></summary>
         </member>
@@ -6190,6 +6202,36 @@
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ServiceGameLaunchingHandlerGameProcessStartRepositorySyncFailed">
             <summary><para>Looks up a localized string for "ServiceGameLaunchingHandlerGameProcessStartRepositorySyncFailed".</para><code>Neutral  Value: "在获取必要的启动游戏组件时发生错误"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceGameLaunchingInjectionFailed">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingInjectionFailed".</para><code>Neutral  Value: "注入失败: {0}"</code></summary>
+        </member>
+        <member name="M:Launcher.Resource.Localization.SH.FormatServiceGameLaunchingInjectionFailed(System.Object)">
+            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ServiceGameLaunchingInjectionFailed"/>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceGameLaunchingInjectionReasonCreateProcessFailed">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingInjectionReasonCreateProcessFailed".</para><code>Neutral  Value: "创建游戏进程失败"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceGameLaunchingInjectionReasonDllInjectFailed">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingInjectionReasonDllInjectFailed".</para><code>Neutral  Value: "DLL注入失败"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceGameLaunchingInjectionReasonInvalidArgs">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingInjectionReasonInvalidArgs".</para><code>Neutral  Value: "参数错误"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceGameLaunchingInjectionReasonUnknown">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingInjectionReasonUnknown".</para><code>Neutral  Value: "未知错误 ({0})"</code></summary>
+        </member>
+        <member name="M:Launcher.Resource.Localization.SH.FormatServiceGameLaunchingInjectionReasonUnknown(System.Object)">
+            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ServiceGameLaunchingInjectionReasonUnknown"/>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceGameLaunchingInvalidProcessId">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingInvalidProcessId".</para><code>Neutral  Value: "无效的游戏进程ID"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceGameLaunchingStartInjectionProcessFailed">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingStartInjectionProcessFailed".</para><code>Neutral  Value: "启动注入进程失败"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceGameLaunchingUserCancelledElevation">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingUserCancelledElevation".</para><code>Neutral  Value: "用户取消了管理员授权"</code></summary>
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ServiceGameLocatorFileOpenPickerCommitText">
             <summary><para>Looks up a localized string for "ServiceGameLocatorFileOpenPickerCommitText".</para><code>Neutral  Value: "选择游戏本体"</code></summary>
@@ -11948,6 +11990,18 @@
         <member name="F:Launcher.Resource.Localization.SHName.ServiceGameLaunchPhaseWaitingProcessExit">
             <summary><para>Looks up a localized string for "ServiceGameLaunchPhaseWaitingProcessExit".</para><code>Neutral  Value: "等待游戏进程退出"</code></summary>
         </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceGameLaunchingCannotConnectToProcess">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingCannotConnectToProcess".</para><code>Neutral  Value: "无法连接到游戏进程"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceGameLaunchingCannotGetLauncherPath">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingCannotGetLauncherPath".</para><code>Neutral  Value: "无法获取启动器路径"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceGameLaunchingCannotGetProcessInfo">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingCannotGetProcessInfo".</para><code>Neutral  Value: "无法获取游戏进程信息"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceGameLaunchingCustomDllInjectFailed">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingCustomDllInjectFailed".</para><code>Neutral  Value: "以下自定义 DLL 注入失败（架构不匹配、依赖缺失、被安全软件拦截等）："</code></summary>
+        </member>
         <member name="F:Launcher.Resource.Localization.SHName.ServiceGameLaunchingEnsureGameResourceShouldNotConvert">
             <summary><para>Looks up a localized string for "ServiceGameLaunchingEnsureGameResourceShouldNotConvert".</para><code>Neutral  Value: "目标服务器与当前游戏资源匹配，无需转换"</code></summary>
         </member>
@@ -11962,6 +12016,30 @@
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ServiceGameLaunchingHandlerGameProcessStartRepositorySyncFailed">
             <summary><para>Looks up a localized string for "ServiceGameLaunchingHandlerGameProcessStartRepositorySyncFailed".</para><code>Neutral  Value: "在获取必要的启动游戏组件时发生错误"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceGameLaunchingInjectionFailed">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingInjectionFailed".</para><code>Neutral  Value: "注入失败: {0}"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceGameLaunchingInjectionReasonCreateProcessFailed">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingInjectionReasonCreateProcessFailed".</para><code>Neutral  Value: "创建游戏进程失败"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceGameLaunchingInjectionReasonDllInjectFailed">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingInjectionReasonDllInjectFailed".</para><code>Neutral  Value: "DLL注入失败"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceGameLaunchingInjectionReasonInvalidArgs">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingInjectionReasonInvalidArgs".</para><code>Neutral  Value: "参数错误"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceGameLaunchingInjectionReasonUnknown">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingInjectionReasonUnknown".</para><code>Neutral  Value: "未知错误 ({0})"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceGameLaunchingInvalidProcessId">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingInvalidProcessId".</para><code>Neutral  Value: "无效的游戏进程ID"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceGameLaunchingStartInjectionProcessFailed">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingStartInjectionProcessFailed".</para><code>Neutral  Value: "启动注入进程失败"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceGameLaunchingUserCancelledElevation">
+            <summary><para>Looks up a localized string for "ServiceGameLaunchingUserCancelledElevation".</para><code>Neutral  Value: "用户取消了管理员授权"</code></summary>
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ServiceGameLocatorFileOpenPickerCommitText">
             <summary><para>Looks up a localized string for "ServiceGameLocatorFileOpenPickerCommitText".</para><code>Neutral  Value: "选择游戏本体"</code></summary>

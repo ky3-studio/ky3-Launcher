@@ -32,10 +32,12 @@ internal sealed partial class LaunchExecutionAttachedProgramHandler : AbstractLa
         {
             JOBOBJECT_EXTENDED_LIMIT_INFORMATION info = default;
             info.BasicLimitInformation.LimitFlags = 0x2000;
+#pragma warning disable CA1421
             NativeMethods.SetInformationJobObject(
                 jobHandle, 9,
                 ref info,
                 (uint)Marshal.SizeOf<JOBOBJECT_EXTENDED_LIMIT_INFORMATION>());
+#pragma warning restore CA1421
         }
 
         if (context.LaunchOptions.UsingBetterGenshinImpactAutomation.Value)

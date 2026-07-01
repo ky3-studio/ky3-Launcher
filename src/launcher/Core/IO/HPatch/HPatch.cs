@@ -62,14 +62,14 @@ internal static unsafe class HPatch
     }
 
     [SuppressMessage("", "SYSLIB1054")]
-    [DllImport("Launcher.HPatch.dll", CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
+    [DllImport("Snap.HPatch.dll", CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
     private static extern BOOL NewDataSize(StreamInput* diff, ulong* pSize);
 
     [SuppressMessage("", "SYSLIB1054")]
-    [DllImport("Launcher.HPatch.dll", CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
+    [DllImport("Snap.HPatch.dll", CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
     private static extern BOOL Patch(StreamInput* source, StreamInput* diff, StreamOutput* target);
 
     [SuppressMessage("", "SYSLIB1054")]
-    [DllImport("Launcher.HPatch.dll", CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
+    [DllImport("Snap.HPatch.dll", CallingConvention = CallingConvention.Winapi, ExactSpelling = true)]
     private static extern BOOL PatchWithDecompressor(StreamInput* source, StreamInput* diff, StreamOutput* target, Decompress* decompressor);
 }

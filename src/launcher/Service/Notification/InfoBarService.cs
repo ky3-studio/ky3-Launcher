@@ -24,7 +24,9 @@ internal sealed partial class InfoBarService : IInfoBarService, IRecipient<InfoB
 
     public void Receive(InfoBarMessage message)
     {
+#pragma warning disable CA2012
         PrivateShowAsync(InfoBarOptions.Create(message)).SafeForget();
+#pragma warning restore CA2012
     }
 
     private async ValueTask PrivateShowAsync(InfoBarOptions infoBarOptions)

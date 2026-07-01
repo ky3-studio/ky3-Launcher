@@ -35,6 +35,11 @@ internal class NameValue<T> : IEquatable<NameValue<T>>
             && EqualityComparer<T>.Default.Equals(Value, other.Value);
     }
 
+    public override bool Equals(object? obj)
+    {
+        return obj is NameValue<T> other && Equals(other);
+    }
+
     public override int GetHashCode()
     {
         return HashCode.Combine(Name, Value);

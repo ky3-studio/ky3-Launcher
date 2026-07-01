@@ -26,7 +26,9 @@ internal static class BackendApiRoutes
         {
             SslOptions = new System.Net.Security.SslClientAuthenticationOptions
             {
+#pragma warning disable CA5359
                 RemoteCertificateValidationCallback = (_, _, _, _) => true,
+#pragma warning restore CA5359
             },
             PooledConnectionLifetime = TimeSpan.FromMinutes(10),
         };

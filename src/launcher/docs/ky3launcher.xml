@@ -6331,8 +6331,44 @@
         <member name="P:Launcher.Resource.Localization.SH.ServiceGitRepositoryOperationFailed">
             <summary><para>Looks up a localized string for "ServiceGitRepositoryOperationFailed".</para><code>Neutral  Value: "操作失败"</code></summary>
         </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceInventoryPromoteText">
+            <summary><para>Looks up a localized string for "ServiceInventoryPromoteText".</para><code>Neutral  Value: "突破 {0}"</code></summary>
+        </member>
+        <member name="M:Launcher.Resource.Localization.SH.FormatServiceInventoryPromoteText(System.Object)">
+            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ServiceInventoryPromoteText"/>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceInventoryRefinementText">
+            <summary><para>Looks up a localized string for "ServiceInventoryRefinementText".</para><code>Neutral  Value: "精炼 {0}"</code></summary>
+        </member>
+        <member name="M:Launcher.Resource.Localization.SH.FormatServiceInventoryRefinementText(System.Object)">
+            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ServiceInventoryRefinementText"/>
+        </member>
         <member name="P:Launcher.Resource.Localization.SH.ServiceInventoryRefreshByEmbeddedYaeErrorMessage">
             <summary><para>Looks up a localized string for "ServiceInventoryRefreshByEmbeddedYaeErrorMessage".</para><code>Neutral  Value: "请使用其他方法同步背包物品"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceInventoryWeaponTypeBow">
+            <summary><para>Looks up a localized string for "ServiceInventoryWeaponTypeBow".</para><code>Neutral  Value: "弓"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceInventoryWeaponTypeCatalyst">
+            <summary><para>Looks up a localized string for "ServiceInventoryWeaponTypeCatalyst".</para><code>Neutral  Value: "法器"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceInventoryWeaponTypeClaymore">
+            <summary><para>Looks up a localized string for "ServiceInventoryWeaponTypeClaymore".</para><code>Neutral  Value: "双手剑"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceInventoryWeaponTypePolearm">
+            <summary><para>Looks up a localized string for "ServiceInventoryWeaponTypePolearm".</para><code>Neutral  Value: "长柄武器"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceInventoryWeaponTypeSword">
+            <summary><para>Looks up a localized string for "ServiceInventoryWeaponTypeSword".</para><code>Neutral  Value: "单手剑"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceInventoryWeaponTypeUnknown">
+            <summary><para>Looks up a localized string for "ServiceInventoryWeaponTypeUnknown".</para><code>Neutral  Value: "未知"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceInventoryWeaponUnknown">
+            <summary><para>Looks up a localized string for "ServiceInventoryWeaponUnknown".</para><code>Neutral  Value: "未知武器({0})"</code></summary>
+        </member>
+        <member name="M:Launcher.Resource.Localization.SH.FormatServiceInventoryWeaponUnknown(System.Object)">
+            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ServiceInventoryWeaponUnknown"/>
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ServiceLaunchSchemeDescCnBili">
             <summary><para>Looks up a localized string for "ServiceLaunchSchemeDescCnBili".</para><code>Neutral  Value: "B站专属服务器，需使用B站账号登录"</code></summary>
@@ -6463,11 +6499,17 @@
         <member name="P:Launcher.Resource.Localization.SH.ServiceUserUserInfoContainsNoGameRole">
             <summary><para>Looks up a localized string for "ServiceUserUserInfoContainsNoGameRole".</para><code>Neutral  Value: "此账号尚未绑定原神游戏角色"</code></summary>
         </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceYaeAchievementImportHint">
+            <summary><para>Looks up a localized string for "ServiceYaeAchievementImportHint".</para><code>Neutral  Value: "注意请不要进行任何操作：点击导入 → 自动启动游戏 → 读取成就 → 自动导出"</code></summary>
+        </member>
         <member name="P:Launcher.Resource.Localization.SH.ServiceYaeEmbeddedYaeErrorTitle">
             <summary><para>Looks up a localized string for "ServiceYaeEmbeddedYaeErrorTitle".</para><code>Neutral  Value: "Embedded Yae 错误"</code></summary>
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ServiceYaeGetGameVersionFailed">
             <summary><para>Looks up a localized string for "ServiceYaeGetGameVersionFailed".</para><code>Neutral  Value: "获取游戏版本失败"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ServiceYaeInventoryImportHint">
+            <summary><para>Looks up a localized string for "ServiceYaeInventoryImportHint".</para><code>Neutral  Value: "注意请不要进行任何操作：点击导入 → 自动启动游戏 → 读取背包 → 自动导出"</code></summary>
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ServiceYaeWaitForGameResponseMessage">
             <summary><para>Looks up a localized string for "ServiceYaeWaitForGameResponseMessage".</para><code>Neutral  Value: "正在等待游戏数据"</code></summary>
@@ -7232,6 +7274,12 @@
         <member name="P:Launcher.Resource.Localization.SH.ViewDialogUserTitle">
             <summary><para>Looks up a localized string for "ViewDialogUserTitle".</para><code>Neutral  Value: "设置 Cookie"</code></summary>
         </member>
+        <member name="P:Launcher.Resource.Localization.SH.ViewEmotionIconCloseButton">
+            <summary><para>Looks up a localized string for "ViewEmotionIconCloseButton".</para><code>Neutral  Value: "关闭"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ViewEmotionIconCopyButton">
+            <summary><para>Looks up a localized string for "ViewEmotionIconCopyButton".</para><code>Neutral  Value: "复制"</code></summary>
+        </member>
         <member name="P:Launcher.Resource.Localization.SH.ViewEmotionIconHeader">
             <summary><para>Looks up a localized string for "ViewEmotionIconHeader".</para><code>Neutral  Value: "派蒙画作"</code></summary>
         </member>
@@ -7244,8 +7292,26 @@
         <member name="P:Launcher.Resource.Localization.SH.ViewExceptionWindowStacktraceHeader">
             <summary><para>Looks up a localized string for "ViewExceptionWindowStacktraceHeader".</para><code>Neutral  Value: "调用堆栈"</code></summary>
         </member>
+        <member name="P:Launcher.Resource.Localization.SH.ViewFeedbackContentRequired">
+            <summary><para>Looks up a localized string for "ViewFeedbackContentRequired".</para><code>Neutral  Value: "请填写反馈内容"</code></summary>
+        </member>
         <member name="P:Launcher.Resource.Localization.SH.ViewFeedbackHeader">
             <summary><para>Looks up a localized string for "ViewFeedbackHeader".</para><code>Neutral  Value: "反馈中心"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ViewFeedbackNoImageSelected">
+            <summary><para>Looks up a localized string for "ViewFeedbackNoImageSelected".</para><code>Neutral  Value: "未选择图片"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ViewFeedbackPickImageFilter">
+            <summary><para>Looks up a localized string for "ViewFeedbackPickImageFilter".</para><code>Neutral  Value: "图片文件"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ViewFeedbackPickImageTitle">
+            <summary><para>Looks up a localized string for "ViewFeedbackPickImageTitle".</para><code>Neutral  Value: "选择反馈图片"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ViewFeedbackSubmitFailed">
+            <summary><para>Looks up a localized string for "ViewFeedbackSubmitFailed".</para><code>Neutral  Value: "提交失败，请检查网络连接后重试"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ViewFeedbackSubmitSuccess">
+            <summary><para>Looks up a localized string for "ViewFeedbackSubmitSuccess".</para><code>Neutral  Value: "感谢您的反馈，我们会认真阅读！"</code></summary>
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ViewGachaLogHeader">
             <summary><para>Looks up a localized string for "ViewGachaLogHeader".</para><code>Neutral  Value: "祈愿记录"</code></summary>
@@ -7851,13 +7917,16 @@
             <summary><para>Looks up a localized string for "ViewInventoryStatusInjectFailed".</para><code>Neutral  Value: "插件加载失败，可能需要管理员权限"</code></summary>
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ViewInventoryStatusInjecting">
-            <summary><para>Looks up a localized string for "ViewInventoryStatusInjecting".</para><code>Neutral  Value: "找到游戏进程，正在加载插件..."</code></summary>
+            <summary><para>Looks up a localized string for "ViewInventoryStatusInjecting".</para><code>Neutral  Value: "找到游戏进程，正在加载插件..."</code><code>Neutral  Value: "正在启动游戏并注入..."</code></summary>
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ViewInventoryStatusNoData">
             <summary><para>Looks up a localized string for "ViewInventoryStatusNoData".</para><code>Neutral  Value: "未找到武器数据，请确保已捕获 CmdId=24104 的数据包"</code></summary>
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ViewInventoryStatusNoDll">
             <summary><para>Looks up a localized string for "ViewInventoryStatusNoDll".</para><code>Neutral  Value: "找不到 PacketSniffer.dll，请将拦截 DLL 放到程序目录"</code></summary>
+        </member>
+        <member name="P:Launcher.Resource.Localization.SH.ViewInventoryStatusNoGamePath">
+            <summary><para>Looks up a localized string for "ViewInventoryStatusNoGamePath".</para><code>Neutral  Value: "未配置游戏路径，请先在启动游戏页面设置"</code></summary>
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ViewInventoryStatusNoProcess">
             <summary><para>Looks up a localized string for "ViewInventoryStatusNoProcess".</para><code>Neutral  Value: "未找到游戏进程，请确保游戏已启动"</code></summary>
@@ -12124,8 +12193,35 @@
         <member name="F:Launcher.Resource.Localization.SHName.ServiceGitRepositoryOperationFailed">
             <summary><para>Looks up a localized string for "ServiceGitRepositoryOperationFailed".</para><code>Neutral  Value: "操作失败"</code></summary>
         </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceInventoryPromoteText">
+            <summary><para>Looks up a localized string for "ServiceInventoryPromoteText".</para><code>Neutral  Value: "突破 {0}"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceInventoryRefinementText">
+            <summary><para>Looks up a localized string for "ServiceInventoryRefinementText".</para><code>Neutral  Value: "精炼 {0}"</code></summary>
+        </member>
         <member name="F:Launcher.Resource.Localization.SHName.ServiceInventoryRefreshByEmbeddedYaeErrorMessage">
             <summary><para>Looks up a localized string for "ServiceInventoryRefreshByEmbeddedYaeErrorMessage".</para><code>Neutral  Value: "请使用其他方法同步背包物品"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceInventoryWeaponTypeBow">
+            <summary><para>Looks up a localized string for "ServiceInventoryWeaponTypeBow".</para><code>Neutral  Value: "弓"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceInventoryWeaponTypeCatalyst">
+            <summary><para>Looks up a localized string for "ServiceInventoryWeaponTypeCatalyst".</para><code>Neutral  Value: "法器"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceInventoryWeaponTypeClaymore">
+            <summary><para>Looks up a localized string for "ServiceInventoryWeaponTypeClaymore".</para><code>Neutral  Value: "双手剑"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceInventoryWeaponTypePolearm">
+            <summary><para>Looks up a localized string for "ServiceInventoryWeaponTypePolearm".</para><code>Neutral  Value: "长柄武器"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceInventoryWeaponTypeSword">
+            <summary><para>Looks up a localized string for "ServiceInventoryWeaponTypeSword".</para><code>Neutral  Value: "单手剑"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceInventoryWeaponTypeUnknown">
+            <summary><para>Looks up a localized string for "ServiceInventoryWeaponTypeUnknown".</para><code>Neutral  Value: "未知"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceInventoryWeaponUnknown">
+            <summary><para>Looks up a localized string for "ServiceInventoryWeaponUnknown".</para><code>Neutral  Value: "未知武器({0})"</code></summary>
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ServiceLaunchSchemeDescCnBili">
             <summary><para>Looks up a localized string for "ServiceLaunchSchemeDescCnBili".</para><code>Neutral  Value: "B站专属服务器，需使用B站账号登录"</code></summary>
@@ -12235,11 +12331,17 @@
         <member name="F:Launcher.Resource.Localization.SHName.ServiceUserUserInfoContainsNoGameRole">
             <summary><para>Looks up a localized string for "ServiceUserUserInfoContainsNoGameRole".</para><code>Neutral  Value: "此账号尚未绑定原神游戏角色"</code></summary>
         </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceYaeAchievementImportHint">
+            <summary><para>Looks up a localized string for "ServiceYaeAchievementImportHint".</para><code>Neutral  Value: "注意请不要进行任何操作：点击导入 → 自动启动游戏 → 读取成就 → 自动导出"</code></summary>
+        </member>
         <member name="F:Launcher.Resource.Localization.SHName.ServiceYaeEmbeddedYaeErrorTitle">
             <summary><para>Looks up a localized string for "ServiceYaeEmbeddedYaeErrorTitle".</para><code>Neutral  Value: "Embedded Yae 错误"</code></summary>
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ServiceYaeGetGameVersionFailed">
             <summary><para>Looks up a localized string for "ServiceYaeGetGameVersionFailed".</para><code>Neutral  Value: "获取游戏版本失败"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ServiceYaeInventoryImportHint">
+            <summary><para>Looks up a localized string for "ServiceYaeInventoryImportHint".</para><code>Neutral  Value: "注意请不要进行任何操作：点击导入 → 自动启动游戏 → 读取背包 → 自动导出"</code></summary>
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ServiceYaeWaitForGameResponseMessage">
             <summary><para>Looks up a localized string for "ServiceYaeWaitForGameResponseMessage".</para><code>Neutral  Value: "正在等待游戏数据"</code></summary>
@@ -12935,6 +13037,12 @@
         <member name="F:Launcher.Resource.Localization.SHName.ViewDialogUserTitle">
             <summary><para>Looks up a localized string for "ViewDialogUserTitle".</para><code>Neutral  Value: "设置 Cookie"</code></summary>
         </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ViewEmotionIconCloseButton">
+            <summary><para>Looks up a localized string for "ViewEmotionIconCloseButton".</para><code>Neutral  Value: "关闭"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ViewEmotionIconCopyButton">
+            <summary><para>Looks up a localized string for "ViewEmotionIconCopyButton".</para><code>Neutral  Value: "复制"</code></summary>
+        </member>
         <member name="F:Launcher.Resource.Localization.SHName.ViewEmotionIconHeader">
             <summary><para>Looks up a localized string for "ViewEmotionIconHeader".</para><code>Neutral  Value: "派蒙画作"</code></summary>
         </member>
@@ -12947,8 +13055,26 @@
         <member name="F:Launcher.Resource.Localization.SHName.ViewExceptionWindowStacktraceHeader">
             <summary><para>Looks up a localized string for "ViewExceptionWindowStacktraceHeader".</para><code>Neutral  Value: "调用堆栈"</code></summary>
         </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ViewFeedbackContentRequired">
+            <summary><para>Looks up a localized string for "ViewFeedbackContentRequired".</para><code>Neutral  Value: "请填写反馈内容"</code></summary>
+        </member>
         <member name="F:Launcher.Resource.Localization.SHName.ViewFeedbackHeader">
             <summary><para>Looks up a localized string for "ViewFeedbackHeader".</para><code>Neutral  Value: "反馈中心"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ViewFeedbackNoImageSelected">
+            <summary><para>Looks up a localized string for "ViewFeedbackNoImageSelected".</para><code>Neutral  Value: "未选择图片"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ViewFeedbackPickImageFilter">
+            <summary><para>Looks up a localized string for "ViewFeedbackPickImageFilter".</para><code>Neutral  Value: "图片文件"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ViewFeedbackPickImageTitle">
+            <summary><para>Looks up a localized string for "ViewFeedbackPickImageTitle".</para><code>Neutral  Value: "选择反馈图片"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ViewFeedbackSubmitFailed">
+            <summary><para>Looks up a localized string for "ViewFeedbackSubmitFailed".</para><code>Neutral  Value: "提交失败，请检查网络连接后重试"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ViewFeedbackSubmitSuccess">
+            <summary><para>Looks up a localized string for "ViewFeedbackSubmitSuccess".</para><code>Neutral  Value: "感谢您的反馈，我们会认真阅读！"</code></summary>
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ViewGachaLogHeader">
             <summary><para>Looks up a localized string for "ViewGachaLogHeader".</para><code>Neutral  Value: "祈愿记录"</code></summary>
@@ -13551,13 +13677,16 @@
             <summary><para>Looks up a localized string for "ViewInventoryStatusInjectFailed".</para><code>Neutral  Value: "插件加载失败，可能需要管理员权限"</code></summary>
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ViewInventoryStatusInjecting">
-            <summary><para>Looks up a localized string for "ViewInventoryStatusInjecting".</para><code>Neutral  Value: "找到游戏进程，正在加载插件..."</code></summary>
+            <summary><para>Looks up a localized string for "ViewInventoryStatusInjecting".</para><code>Neutral  Value: "找到游戏进程，正在加载插件..."</code><code>Neutral  Value: "正在启动游戏并注入..."</code></summary>
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ViewInventoryStatusNoData">
             <summary><para>Looks up a localized string for "ViewInventoryStatusNoData".</para><code>Neutral  Value: "未找到武器数据，请确保已捕获 CmdId=24104 的数据包"</code></summary>
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ViewInventoryStatusNoDll">
             <summary><para>Looks up a localized string for "ViewInventoryStatusNoDll".</para><code>Neutral  Value: "找不到 PacketSniffer.dll，请将拦截 DLL 放到程序目录"</code></summary>
+        </member>
+        <member name="F:Launcher.Resource.Localization.SHName.ViewInventoryStatusNoGamePath">
+            <summary><para>Looks up a localized string for "ViewInventoryStatusNoGamePath".</para><code>Neutral  Value: "未配置游戏路径，请先在启动游戏页面设置"</code></summary>
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ViewInventoryStatusNoProcess">
             <summary><para>Looks up a localized string for "ViewInventoryStatusNoProcess".</para><code>Neutral  Value: "未找到游戏进程，请确保游戏已启动"</code></summary>

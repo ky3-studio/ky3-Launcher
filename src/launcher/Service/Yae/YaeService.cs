@@ -83,7 +83,7 @@ internal sealed partial class YaeService : IYaeService
                 new ProgressBar { IsIndeterminate = true },
                 new TextBlock
                 {
-                    Text = "\u6ce8\u610f\u8bf7\u4e0d\u8981\u8fdb\u884c\u4efb\u4f55\u64cd\u4f5c\uff1a\u70b9\u51fb\u5bfc\u5165 \u2192 \u81ea\u52a8\u542f\u52a8\u6e38\u620f \u2192 \u8bfb\u53d6\u6210\u5c31 \u2192 \u81ea\u52a8\u5bfc\u51fa",
+                    Text = SH.ServiceYaeAchievementImportHint,
                     FontSize = 12,
                     Foreground = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Gray),
                     TextWrapping = Microsoft.UI.Xaml.TextWrapping.Wrap,
@@ -313,7 +313,7 @@ internal sealed partial class YaeService : IYaeService
                 new ProgressBar { IsIndeterminate = true },
                 new TextBlock
                 {
-                    Text = "\u6ce8\u610f\u8bf7\u4e0d\u8981\u8fdb\u884c\u4efb\u4f55\u64cd\u4f5c\uff1a\u70b9\u51fb\u5bfc\u5165 \u2192 \u81ea\u52a8\u542f\u52a8\u6e38\u620f \u2192 \u8bfb\u53d6\u80cc\u5305 \u2192 \u81ea\u52a8\u5bfc\u51fa",
+                    Text = SH.ServiceYaeInventoryImportHint,
                     FontSize = 12,
                     Foreground = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Gray),
                     TextWrapping = Microsoft.UI.Xaml.TextWrapping.Wrap,

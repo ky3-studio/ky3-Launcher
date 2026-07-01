@@ -48,8 +48,8 @@ internal sealed partial class EmotionIconPage : ScopedPage
                     Height = 200,
                     Stretch = Stretch.Uniform,
                 },
-                PrimaryButtonText = "复制",
-                CloseButtonText = "关闭",
+                PrimaryButtonText = SH.ViewEmotionIconCopyButton,
+                CloseButtonText = SH.ViewEmotionIconCloseButton,
                 DefaultButton = ContentDialogButton.Primary,
             };
 

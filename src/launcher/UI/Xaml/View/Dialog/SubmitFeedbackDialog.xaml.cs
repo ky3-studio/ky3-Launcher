@@ -35,7 +35,7 @@ internal sealed partial class SubmitFeedbackDialog : ContentDialog
     private void PickImage_Click(object sender, RoutedEventArgs e)
     {
         ValueResult<bool, ValueFile> result = fileSystemPickerInteraction.PickFile(
-            "选择反馈图片", null, "图片文件", "*.png;*.jpg;*.jpeg;*.gif;*.webp;*.bmp");
+            SH.ViewFeedbackPickImageTitle, null, SH.ViewFeedbackPickImageFilter, "*.png;*.jpg;*.jpeg;*.gif;*.webp;*.bmp");
         if (result.IsOk)
         {
             selectedImagePath = result.Value;
@@ -47,7 +47,7 @@ internal sealed partial class SubmitFeedbackDialog : ContentDialog
     private void ClearImage_Click(object sender, RoutedEventArgs e)
     {
         selectedImagePath = null;
-        ImageNameText.Text = "未选择图片";
+        ImageNameText.Text = SH.ViewFeedbackNoImageSelected;
         ClearImageBtn.IsEnabled = false;
     }
 
@@ -59,7 +59,7 @@ internal sealed partial class SubmitFeedbackDialog : ContentDialog
         string content = ContentBox.Text?.Trim() ?? "";
         if (string.IsNullOrEmpty(content))
         {
-            StatusText.Text = "请填写反馈内容";
+            StatusText.Text = SH.ViewFeedbackContentRequired;
             StatusText.Visibility = Visibility.Visible;
             deferral.Complete();
             return;
@@ -87,12 +87,12 @@ internal sealed partial class SubmitFeedbackDialog : ContentDialog
 
         if (ok)
         {
-            messenger.Send(InfoBarMessage.Success("感谢您的反馈，我们会认真阅读！"));
+            messenger.Send(InfoBarMessage.Success(SH.ViewFeedbackSubmitSuccess));
             args.Cancel = false;
         }
         else
         {
-            StatusText.Text = "提交失败，请检查网络连接后重试";
+            StatusText.Text = SH.ViewFeedbackSubmitFailed;
             StatusText.Visibility = Visibility.Visible;
             UploadProgress.Visibility = Visibility.Collapsed;
             IsPrimaryButtonEnabled = true;

@@ -101,7 +101,7 @@ internal sealed partial class InventoryViewModel : Abstraction.ViewModel
             string? gamePath = launchOptions.GamePathEntry?.Value?.Path;
             if (string.IsNullOrEmpty(gamePath) || !File.Exists(gamePath))
             {
-                StatusText = "\u672a\u914d\u7f6e\u6e38\u620f\u8def\u5f84\uff0c\u8bf7\u5148\u5728\u542f\u52a8\u6e38\u620f\u9875\u9762\u8bbe\u7f6e";
+                StatusText = SH.ViewInventoryStatusNoGamePath;
                 IsLoading = false;
                 return;
             }
@@ -113,7 +113,7 @@ internal sealed partial class InventoryViewModel : Abstraction.ViewModel
                 File.Delete(jsonPath);
 
             await taskContext.SwitchToMainThreadAsync();
-            StatusText = "\u6b63\u5728\u542f\u52a8\u6e38\u620f\u5e76\u6ce8\u5165...";
+            StatusText = SH.ViewInventoryStatusInjecting;
             await taskContext.SwitchToBackgroundAsync();
 
             if (!LaunchGameWithDll(gamePath, gameDir, dllPath))

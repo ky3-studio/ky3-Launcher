@@ -9,7 +9,7 @@ namespace Launcher.Service.Inventory;
 [Service(ServiceLifetime.Scoped)]
 internal sealed class InventoryPacketService
 {
-    private static readonly string[] WeaponTypeNames = ["", "单手剑", "", "", "", "", "", "", "", "", "法器", "双手剑", "弓", "长柄武器"];
+    private static readonly string[] WeaponTypeNames = ["", SH.ServiceInventoryWeaponTypeSword, "", "", "", "", "", "", "", "", SH.ServiceInventoryWeaponTypeCatalyst, SH.ServiceInventoryWeaponTypeClaymore, SH.ServiceInventoryWeaponTypeBow, SH.ServiceInventoryWeaponTypePolearm];
 
     private readonly IMetadataService metadataService;
 
@@ -47,7 +47,7 @@ internal sealed class InventoryPacketService
             {
                 name = weapon.Name;
                 int wt = (int)weapon.WeaponType;
-                type = wt >= 0 && wt < WeaponTypeNames.Length ? WeaponTypeNames[wt] : "未知";
+                type = wt >= 0 && wt < WeaponTypeNames.Length ? WeaponTypeNames[wt] : SH.ServiceInventoryWeaponTypeUnknown;
                 rank = (int)weapon.RankLevel;
                 description = weapon.Description;
                 affixName = weapon.Affix?.Name ?? string.Empty;
@@ -57,8 +57,8 @@ internal sealed class InventoryPacketService
             }
             else
             {
-                name = $"未知武器({raw.Id})";
-                type = "未知";
+                name = SH.FormatServiceInventoryWeaponUnknown(raw.Id);
+                type = SH.ServiceInventoryWeaponTypeUnknown;
                 rank = 0;
                 description = string.Empty;
                 affixName = string.Empty;
@@ -120,6 +120,6 @@ public sealed class WeaponEntry
 
     public string Stars => new('\u2605', Rank);
     public string LevelText => $"Lv.{Level}";
-    public string PromoteText => $"\u7a81\u7834 {Promote}";
-    public string RefinementText => $"\u7cbe\u70bc {Refinement}";
+    public string PromoteText => SH.FormatServiceInventoryPromoteText(Promote);
+    public string RefinementText => SH.FormatServiceInventoryRefinementText(Refinement);
 }

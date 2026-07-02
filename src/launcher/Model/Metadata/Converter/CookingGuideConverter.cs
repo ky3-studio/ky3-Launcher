@@ -1,4 +1,4 @@
-﻿using Launcher.UI.Xaml.Data.Converter;
+using Launcher.UI.Xaml.Data.Converter;
 using Launcher.Web.Endpoint.Launcher;
 
 namespace Launcher.Model.Metadata.Converter;

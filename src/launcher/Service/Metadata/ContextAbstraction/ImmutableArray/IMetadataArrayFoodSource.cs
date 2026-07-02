@@ -1,4 +1,4 @@
-﻿using Launcher.Model.Metadata.Food;
+using Launcher.Model.Metadata.Food;
 using System.Collections.Immutable;
 
 namespace Launcher.Service.Metadata.ContextAbstraction.ImmutableArray;

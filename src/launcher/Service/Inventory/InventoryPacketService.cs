@@ -1,4 +1,4 @@
-﻿using System.Collections.Immutable;
+using System.Collections.Immutable;
 using System.IO;
 using Launcher.Model.Metadata.Weapon;
 using Launcher.Model.Primitive;

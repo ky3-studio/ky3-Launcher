@@ -27,13 +27,20 @@ internal sealed partial class RoleCombatPage : ScopedPage, IRecipient<UserAndUid
     {
         InitializeComponent();
         MainPivot.Items.Remove(StatisticsPivotItem);
+        Unloaded += OnRoleCombatPageUnloaded;
     }
 
     public void Receive(UserAndUidChangedMessage message)
     {
         if (message.UserAndUid is not null)
         {
-            DispatcherQueue.TryEnqueue(() => ShowLoggedInContent());
+            DispatcherQueue?.TryEnqueue(() =>
+            {
+                if (serviceProvider is not null)
+                {
+                    ShowLoggedInContent();
+                }
+            });
         }
     }
 
@@ -97,5 +104,11 @@ internal sealed partial class RoleCombatPage : ScopedPage, IRecipient<UserAndUid
 
         NotLoggedInPanel.Visibility = Visibility.Visible;
         LoggedInPanel.Visibility = Visibility.Collapsed;
+    }
+
+    private void OnRoleCombatPageUnloaded(object sender, RoutedEventArgs e)
+    {
+        messenger?.UnregisterAll(this);
+        serviceProvider = null;
     }
 }

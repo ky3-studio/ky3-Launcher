@@ -1,4 +1,4 @@
-﻿using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Controls;
 using Launcher.Factory.ContentDialog;
 using Launcher.Service.Notification;
 using Launcher.Service.ThirdPartyTool;

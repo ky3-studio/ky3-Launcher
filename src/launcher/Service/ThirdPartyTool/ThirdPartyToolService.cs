@@ -1,4 +1,4 @@
-﻿using Launcher.Core;
+using Launcher.Core;
 using Launcher.Core.DependencyInjection.Annotation.HttpClient;
 using Launcher.Service.Notification;
 using Launcher.Web.Request.Builder;

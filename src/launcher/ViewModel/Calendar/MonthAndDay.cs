@@ -1,4 +1,4 @@
-﻿using Launcher.Model.Metadata.Avatar;
+using Launcher.Model.Metadata.Avatar;
 
 namespace Launcher.ViewModel.Calendar;
 

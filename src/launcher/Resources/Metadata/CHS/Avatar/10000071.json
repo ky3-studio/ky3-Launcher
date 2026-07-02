@@ -479,6 +479,26 @@
         "Icon": "Skill_S_Cyno_01"
       }
     ],
+    "SpecialSkills": [
+      {
+        "GroupId": 7124,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 712401,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 3
+        },
+        "Id": 712401,
+        "Name": "启途的伴星",
+        "Description": "不处于启途誓使状态下时，施放元素战技<color=#FFD780FF>秘仪·律渊渡魂</color>后，赛诺将会短暂进入启途誓使状态，持续6秒。\n此外，处于{LINK#N11330003}<color=#FFD780FF>极星辉域</color>{/LINK}中时，赛诺将会进入<color=#FFD780FF>辉映·星超导</color>状态。",
+        "Icon": "UI_Talent_S_Cyno_08"
+      }
+    ],
     "EnergySkill": {
       "GroupId": 7139,
       "Proud": {
@@ -832,7 +852,8 @@
               "Level": 1,
               "Parameters": [
                 0.35,
-                1
+                1,
+                2
               ]
             }
           ],
@@ -853,7 +874,8 @@
               "Level": 1,
               "Parameters": [
                 1.5,
-                2.5
+                2.5,
+                6
               ]
             }
           ],

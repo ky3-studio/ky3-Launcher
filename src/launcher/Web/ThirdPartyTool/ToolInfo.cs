@@ -1,4 +1,4 @@
-﻿namespace Launcher.Web.ThirdPartyTool;
+namespace Launcher.Web.ThirdPartyTool;
 
 internal sealed class ToolInfo
 {

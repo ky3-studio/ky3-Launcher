@@ -1,4 +1,4 @@
-﻿using Launcher.Web.ThirdPartyTool;
+using Launcher.Web.ThirdPartyTool;
 using System.Collections.Immutable;
 
 namespace Launcher.Service.ThirdPartyTool;

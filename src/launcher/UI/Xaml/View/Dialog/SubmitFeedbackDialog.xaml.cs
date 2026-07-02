@@ -1,4 +1,4 @@
-﻿// Launcher - Submit Feedback Dialog
+// Launcher - Submit Feedback Dialog
 
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;

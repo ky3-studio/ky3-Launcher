@@ -1,4 +1,4 @@
-﻿using Launcher.UI.Xaml.Control;
+using Launcher.UI.Xaml.Control;
 using Launcher.ViewModel.GachaLog;
 
 namespace Launcher.UI.Xaml.View.Page;

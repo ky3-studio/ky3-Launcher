@@ -1,4 +1,4 @@
-﻿// Launcher - Feedback Service
+// Launcher - Feedback Service
 // Handles feedback submission and reply polling from the admin backend.
 
 using Launcher.Core;

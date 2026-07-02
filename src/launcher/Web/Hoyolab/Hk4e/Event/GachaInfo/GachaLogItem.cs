@@ -1,4 +1,4 @@
-﻿using Launcher.Core.Text.Json.Annotation;
+using Launcher.Core.Text.Json.Annotation;
 using Launcher.Model.Intrinsic;
 
 namespace Launcher.Web.Hoyolab.Hk4e.Event.GachaInfo;

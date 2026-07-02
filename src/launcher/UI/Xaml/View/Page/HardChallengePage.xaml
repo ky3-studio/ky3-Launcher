@@ -347,8 +347,9 @@
                                                                             <TextBlock HorizontalTextAlignment="Right" Text="{Binding FormattedSeconds}"/>
                                                                         </Grid>
 
-                                                                        <Viewbox Grid.Row="4">
+                                                                        <Viewbox Grid.Row="4" Stretch="Uniform">
                                                                             <ItemsControl
+                                                                                MinWidth="340"
                                                                                 HorizontalAlignment="Left"
                                                                                 ItemTemplate="{StaticResource AvatarViewInTeamTemplate}"
                                                                                 ItemsPanel="{ThemeResource HorizontalStackPanelSpacing4Template}"

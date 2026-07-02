@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 using Launcher.Core.IO;
 using Launcher.Service.Game;
 using Launcher.Service.Inventory;

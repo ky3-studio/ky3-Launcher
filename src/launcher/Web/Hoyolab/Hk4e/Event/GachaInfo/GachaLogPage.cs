@@ -1,4 +1,4 @@
-﻿using System.Collections.Immutable;
+using System.Collections.Immutable;
 
 namespace Launcher.Web.Hoyolab.Hk4e.Event.GachaInfo;
 

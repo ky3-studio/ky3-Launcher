@@ -1,4 +1,4 @@
-﻿using Launcher.Model.Metadata.Avatar;
+using Launcher.Model.Metadata.Avatar;
 using Launcher.Model.Metadata.Weapon;
 using Launcher.Service.Metadata.ContextAbstraction;
 using Launcher.Service.Metadata.ContextAbstraction.ImmutableArray;

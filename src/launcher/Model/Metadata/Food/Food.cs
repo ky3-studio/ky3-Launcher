@@ -1,4 +1,4 @@
-﻿using Launcher.Model.Intrinsic;
+using Launcher.Model.Intrinsic;
 using Launcher.UI.Xaml.Data;
 using System.Collections.Immutable;
 using System.Text.RegularExpressions;

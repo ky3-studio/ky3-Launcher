@@ -1,4 +1,4 @@
-﻿using Launcher.Core.Database.Abstraction;
+using Launcher.Core.Database.Abstraction;
 using Launcher.UI.Xaml.Data;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;

@@ -1,4 +1,4 @@
-﻿using Launcher.UI.Xaml.Data;
+using Launcher.UI.Xaml.Data;
 using System.Collections.Immutable;
 
 namespace Launcher.ViewModel.Calendar;

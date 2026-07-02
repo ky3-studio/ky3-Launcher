@@ -1,4 +1,4 @@
-﻿using Google.Protobuf;
+using Google.Protobuf;
 using Launcher.Core.Protobuf;
 using System.Collections.Immutable;
 

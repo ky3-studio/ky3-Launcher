@@ -1,4 +1,4 @@
-﻿namespace Launcher.Model.Intrinsic;
+namespace Launcher.Model.Intrinsic;
 
 [ExtendedEnum]
 internal enum GachaType

@@ -1,4 +1,4 @@
-﻿using Launcher.Model.Metadata.Item;
+using Launcher.Model.Metadata.Item;
 using System.Collections.Immutable;
 
 namespace Launcher.ViewModel.Calendar;

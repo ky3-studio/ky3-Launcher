@@ -1,4 +1,4 @@
-﻿using Launcher.Model.Metadata.Food;
+using Launcher.Model.Metadata.Food;
 using Launcher.UI.Xaml.Control.AutoSuggestBox;
 using System.Collections.Frozen;
 

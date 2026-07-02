@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 using Launcher.Core.Logging;
 using Launcher.Model.Metadata.Food;
 using Launcher.Service.Metadata;

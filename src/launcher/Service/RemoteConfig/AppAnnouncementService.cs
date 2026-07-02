@@ -1,4 +1,4 @@
-﻿// Launcher - App Announcement Service
+// Launcher - App Announcement Service
 // Fetches software announcements from the admin backend.
 
 using Launcher.Core.Setting;

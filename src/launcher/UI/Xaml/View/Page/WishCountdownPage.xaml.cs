@@ -1,4 +1,4 @@
-﻿using Launcher.UI.Xaml.Control;
+using Launcher.UI.Xaml.Control;
 using Launcher.ViewModel.GachaLog;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Input;

@@ -14,6 +14,7 @@ using Launcher.UI.Xaml.View.Window;
 using Launcher.Win32;
 using System.Data.Common;
 using System.Diagnostics;
+using System.Net.Http;
 using System.Runtime.CompilerServices;
 
 namespace Launcher.Core.ExceptionService;
@@ -106,7 +107,23 @@ internal sealed partial class ExceptionHandling
     private void Attach(Application app)
     {
         app.UnhandledException += OnAppUnhandledException;
+        TaskScheduler.UnobservedTaskException += OnUnobservedTaskException;
         ConfigureDebugSettings(app);
+    }
+
+    private static void OnUnobservedTaskException(object? sender, UnobservedTaskExceptionEventArgs e)
+    {
+        // Observe the exception to prevent TaskExceptionHolder.Finalize from crashing
+        e.SetObserved();
+
+        Exception ex = e.Exception.Flatten();
+        // Filter network errors
+        if (ex.InnerException is TaskCanceledException or HttpRequestException or OperationCanceledException)
+        {
+            return;
+        }
+
+        SentrySdk.CaptureException(ex);
     }
 
     [Conditional("DEBUG")]

@@ -104,6 +104,10 @@ internal sealed partial class RedeemCodeService : ObservableObject
                 }
             }
         }
+        catch (Exception ex) when (ex is TaskCanceledException or HttpRequestException or OperationCanceledException)
+        {
+            // Network/DNS errors are expected from third-party services
+        }
         catch (Exception ex)
         {
             SentrySdk.CaptureException(ex);
@@ -141,6 +145,10 @@ internal sealed partial class RedeemCodeService : ObservableObject
                     });
                 }
             }
+        }
+        catch (Exception ex) when (ex is TaskCanceledException or HttpRequestException or OperationCanceledException)
+        {
+            // Network/DNS errors are expected from third-party services
         }
         catch (Exception ex)
         {

@@ -2100,7 +2100,7 @@
             <summary>Mark all replies for this device as read.</summary>
         </member>
         <member name="M:Launcher.Service.RemoteConfig.FeedbackService.HeartbeatAsync">
-            <summary>Report client presence to the admin backend (heartbeat). Throws on failure.</summary>
+            <summary>Report client presence to the admin backend (heartbeat). Silently ignores network errors.</summary>
         </member>
         <member name="T:Launcher.UI.Input.HotKey.HotKeyCombination">
             <inheritdoc/>
@@ -9177,9 +9177,6 @@
         <member name="P:Launcher.Resource.Localization.SH.ViewPageGachaLogPivotOverview">
             <summary><para>Looks up a localized string for "ViewPageGachaLogPivotOverview".</para><code>Neutral  Value: "总览"</code></summary>
         </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewPageGachaLogPivotStatistics">
-            <summary><para>Looks up a localized string for "ViewPageGachaLogPivotStatistics".</para><code>Neutral  Value: "全球祈愿统计"</code></summary>
-        </member>
         <member name="P:Launcher.Resource.Localization.SH.ViewPageGachaLogPivotWeapon">
             <summary><para>Looks up a localized string for "ViewPageGachaLogPivotWeapon".</para><code>Neutral  Value: "武器"</code></summary>
         </member>
@@ -14783,9 +14780,6 @@
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ViewPageGachaLogPivotOverview">
             <summary><para>Looks up a localized string for "ViewPageGachaLogPivotOverview".</para><code>Neutral  Value: "总览"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewPageGachaLogPivotStatistics">
-            <summary><para>Looks up a localized string for "ViewPageGachaLogPivotStatistics".</para><code>Neutral  Value: "全球祈愿统计"</code></summary>
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ViewPageGachaLogPivotWeapon">
             <summary><para>Looks up a localized string for "ViewPageGachaLogPivotWeapon".</para><code>Neutral  Value: "武器"</code></summary>

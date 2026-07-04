@@ -137,6 +137,12 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
         }
         catch (Exception ex)
         {
+            // Win32Exception with NativeErrorCode 1223 = user cancelled UAC prompt
+            if (ex is System.ComponentModel.Win32Exception w32 && w32.NativeErrorCode == 1223)
+            {
+                return;
+            }
+
             SentrySdk.CaptureException(ex);
         }
     }
@@ -177,6 +183,13 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
             }
 
             await taskContext.SwitchToMainThreadAsync();
+
+            // Window may have been closed during the background check
+            if (currentXamlWindowReference.Window is null)
+            {
+                return;
+            }
+
             Microsoft.UI.Xaml.Controls.ContentDialog updatePromptDialog = new()
             {
                 XamlRoot = currentXamlWindowReference.XamlRoot,

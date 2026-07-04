@@ -91,9 +91,12 @@ internal sealed partial class LauncherHomePage
                 }
             });
         }
-        catch (Exception ex)
+        catch (Exception ex) when (ex is not OutOfMemoryException)
         {
-            SentrySdk.CaptureException(ex);
+            if (ex is not (TaskCanceledException or HttpRequestException or OperationCanceledException))
+            {
+                SentrySdk.CaptureException(ex);
+            }
         }
     }
 

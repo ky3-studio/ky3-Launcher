@@ -61,7 +61,20 @@ internal sealed class GachaLogFetchContext
     public void EnsureArchiveAndEndId(GachaLogItem item, IAdvancedDbCollectionView<GachaArchive> archives, IGachaLogRepository repository)
     {
         TargetArchive ??= GachaArchiveOperation.GetOrAdd(repository, item.Uid, archives);
-        DbEndId ??= repository.GetNewestGachaItemIdByArchiveIdAndQueryType(TargetArchive.InnerId, CurrentType);
+        DbEndId ??= GetNewestItemIdForCurrentType(repository);
+    }
+
+    private long GetNewestItemIdForCurrentType(IGachaLogRepository repository)
+    {
+        long id = repository.GetNewestGachaItemIdByArchiveIdAndQueryType(TargetArchive!.InnerId, CurrentType);
+
+        if (CurrentType == GachaType.AvatarEvent)
+        {
+            long id2 = repository.GetNewestGachaItemIdByArchiveIdAndQueryType(TargetArchive.InnerId, GachaType.AvatarEvent2);
+            id = Math.Max(id, id2);
+        }
+
+        return id;
     }
 
     public bool ShouldAddItem(GachaLogItem item)
@@ -77,7 +90,7 @@ internal sealed class GachaLogFetchContext
     public void AddItem(GachaLogItem item)
     {
         ArgumentNullException.ThrowIfNull(TargetArchive);
-        ItemsToAdd.Add(GachaItem.From(TargetArchive.InnerId, item, serviceContext.GetItemId(item)));
+        ItemsToAdd.Add(GachaItem.From(TargetArchive.InnerId, item, serviceContext.GetItemId(item), CurrentType));
         Status.Items.Add(serviceContext.GetItemByNameAndType(item.Name, item.ItemType));
         TypedQueryOptions.EndId = item.Id;
     }
@@ -96,7 +109,12 @@ internal sealed class GachaLogFetchContext
 
         if (!isLazy)
         {
-            repository.RemoveGachaItemRangeByArchiveIdAndQueryTypeNewerThanEndId(TargetArchive.InnerId, TypedQueryOptions.Type, TypedQueryOptions.EndId);
+            repository.RemoveGachaItemRangeByArchiveIdAndQueryTypeNewerThanEndId(TargetArchive.InnerId, CurrentType, TypedQueryOptions.EndId);
+
+            if (CurrentType == GachaType.AvatarEvent)
+            {
+                repository.RemoveGachaItemRangeByArchiveIdAndQueryTypeNewerThanEndId(TargetArchive.InnerId, GachaType.AvatarEvent2, TypedQueryOptions.EndId);
+            }
         }
 
         repository.AddGachaItemRange(ItemsToAdd);

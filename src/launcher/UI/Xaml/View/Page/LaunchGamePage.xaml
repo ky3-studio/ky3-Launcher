@@ -454,6 +454,9 @@
                                                             MinWidth="{ThemeResource SettingsCardContentControlMinWidth2}"
                                                             Padding="12,6,0,0"
                                                             VerticalAlignment="Center"
+                                                            Minimum="320"
+                                                            Maximum="7680"
+                                                            SpinButtonPlacementMode="Inline"
                                                             IsEnabled="{Binding LaunchOptions.IsScreenWidthEnabled.Value}"
                                                             Value="{Binding LaunchOptions.ScreenWidth.Value, Mode=TwoWay}"/>
                                                         <ToggleSwitch MinWidth="{ThemeResource SettingsCardContentControlMinWidth}" IsOn="{Binding LaunchOptions.IsScreenWidthEnabled.Value, Mode=TwoWay}"/>
@@ -465,6 +468,9 @@
                                                             MinWidth="{ThemeResource SettingsCardContentControlMinWidth2}"
                                                             Padding="12,6,0,0"
                                                             VerticalAlignment="Center"
+                                                            Minimum="320"
+                                                            Maximum="4320"
+                                                            SpinButtonPlacementMode="Inline"
                                                             IsEnabled="{Binding LaunchOptions.IsScreenHeightEnabled.Value}"
                                                             Value="{Binding LaunchOptions.ScreenHeight.Value, Mode=TwoWay}"/>
                                                         <ToggleSwitch MinWidth="{ThemeResource SettingsCardContentControlMinWidth}" IsOn="{Binding LaunchOptions.IsScreenHeightEnabled.Value, Mode=TwoWay}"/>

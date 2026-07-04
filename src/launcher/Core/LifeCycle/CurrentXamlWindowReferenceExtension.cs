@@ -25,7 +25,11 @@ internal static class CurrentXamlWindowReferenceExtension
         {
             get
             {
-                ArgumentNullException.ThrowIfNull(reference.Window);
+                if (reference.Window is null)
+                {
+                    return ElementTheme.Default;
+                }
+
                 return ((FrameworkElement)reference.Window.Content).RequestedTheme;
             }
         }

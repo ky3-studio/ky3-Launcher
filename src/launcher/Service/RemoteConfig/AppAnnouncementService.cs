@@ -13,6 +13,10 @@ internal static class AppAnnouncementService
     private static List<AppAnnouncement> _cached = [];
     private static Timer? _timer;
     private static bool _firstPoll = true;
+    private static int _consecutiveFailures;
+
+    private const int BaseIntervalSeconds = 60;
+    private const int MaxIntervalSeconds = 300;
 
     private static HashSet<int> _seenIds = LoadSeenIds();
     private static readonly HashSet<int> _notifiedThisSession = [];
@@ -80,19 +84,37 @@ internal static class AppAnnouncementService
     public static void StartPolling()
     {
         if (_timer is not null) return;
-        _timer = new Timer(async _ =>
+        _timer = new Timer(OnTimerTick, null, TimeSpan.Zero, Timeout.InfiniteTimeSpan);
+    }
+
+    private static async void OnTimerTick(object? state)
+    {
+        List<AppAnnouncement> latest = await FetchAsync().ConfigureAwait(false);
+
+        bool success = latest.Count > 0 || _cached.Count == 0;
+        if (success)
         {
-            List<AppAnnouncement> latest = await FetchAsync().ConfigureAwait(false);
-            bool fire;
-            lock (Lock)
-            {
-                bool changed = !AreEqual(_cached, latest);
-                fire = _firstPoll || changed;
-                if (fire) _cached = latest;
-                _firstPoll = false;
-            }
-            if (fire) Changed?.Invoke(latest);
-        }, null, TimeSpan.Zero, TimeSpan.FromSeconds(5));
+            Interlocked.Exchange(ref _consecutiveFailures, 0);
+        }
+        else
+        {
+            Interlocked.Increment(ref _consecutiveFailures);
+        }
+
+        bool fire;
+        lock (Lock)
+        {
+            bool changed = !AreEqual(_cached, latest);
+            fire = _firstPoll || changed;
+            if (fire) _cached = latest;
+            _firstPoll = false;
+        }
+
+        if (fire) Changed?.Invoke(latest);
+
+        // Exponential backoff: 60s → 120s → 240s, cap at 300s
+        int delay = Math.Min(BaseIntervalSeconds * (1 << _consecutiveFailures), MaxIntervalSeconds);
+        _timer?.Change(TimeSpan.FromSeconds(delay), Timeout.InfiniteTimeSpan);
     }
 
     private static bool AreEqual(List<AppAnnouncement> a, List<AppAnnouncement> b)

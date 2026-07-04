@@ -36,6 +36,10 @@ internal static class FeedbackService
             if (doc.RootElement.GetProperty("retcode").GetInt32() == 0)
                 return doc.RootElement.GetProperty("data").GetProperty("url").GetString();
         }
+        catch (Exception ex) when (ex is TaskCanceledException or HttpRequestException or OperationCanceledException)
+        {
+            // Network errors are expected
+        }
         catch (Exception ex)
         {
             SentrySdk.CaptureException(ex);
@@ -63,6 +67,10 @@ internal static class FeedbackService
             using JsonDocument doc = JsonDocument.Parse(respJson);
             return doc.RootElement.GetProperty("retcode").GetInt32() == 0;
         }
+        catch (Exception ex) when (ex is TaskCanceledException or HttpRequestException or OperationCanceledException)
+        {
+            return false;
+        }
         catch (Exception ex)
         {
             SentrySdk.CaptureException(ex);
@@ -84,6 +92,10 @@ internal static class FeedbackService
                 return JsonSerializer.Deserialize<List<FeedbackReply>>(dataEl.GetRawText()) ?? [];
             }
         }
+        catch (Exception ex) when (ex is TaskCanceledException or HttpRequestException or OperationCanceledException)
+        {
+            // Network errors are expected
+        }
         catch (Exception ex)
         {
             SentrySdk.CaptureException(ex);
@@ -102,23 +114,37 @@ internal static class FeedbackService
             StringContent content = new(json, Encoding.UTF8, "application/json");
             await Http.PostAsync(BackendApiRoutes.FeedbackReplyRead, content).ConfigureAwait(false);
         }
+        catch (Exception ex) when (ex is TaskCanceledException or HttpRequestException or OperationCanceledException)
+        {
+        }
         catch (Exception ex)
         {
             SentrySdk.CaptureException(ex);
         }
     }
 
-    /// <summary>Report client presence to the admin backend (heartbeat). Throws on failure.</summary>
+    /// <summary>Report client presence to the admin backend (heartbeat). Silently ignores network errors.</summary>
     public static async Task HeartbeatAsync()
     {
-        string json = JsonSerializer.Serialize(new
+        try
         {
-            device_id = LauncherRuntime.DeviceId,
-            version = LauncherRuntime.Version.ToString(),
-            os_version = System.Environment.OSVersion.VersionString,
-        });
-        StringContent content = new(json, Encoding.UTF8, "application/json");
-        await Http.PostAsync(BackendApiRoutes.Heartbeat, content).ConfigureAwait(false);
+            string json = JsonSerializer.Serialize(new
+            {
+                device_id = LauncherRuntime.DeviceId,
+                version = LauncherRuntime.Version.ToString(),
+                os_version = System.Environment.OSVersion.VersionString,
+            });
+            StringContent content = new(json, Encoding.UTF8, "application/json");
+            await Http.PostAsync(BackendApiRoutes.Heartbeat, content).ConfigureAwait(false);
+        }
+        catch (Exception ex) when (ex is TaskCanceledException or HttpRequestException or OperationCanceledException)
+        {
+            // Network errors are expected and should not pollute Sentry
+        }
+        catch (Exception ex)
+        {
+            SentrySdk.CaptureException(ex);
+        }
     }
 }
 

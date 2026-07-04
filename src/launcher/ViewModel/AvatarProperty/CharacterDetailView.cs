@@ -175,6 +175,11 @@ internal sealed class CharacterDetailView
 
     private static ImmutableArray<SkillView> BuildSkillViews(ImmutableArray<Skill> apiSkills, MetaAvatar metaAvatar)
     {
+        if (metaAvatar.SkillDepot is null)
+        {
+            return [];
+        }
+
         ImmutableArray<Model.Metadata.Avatar.ProudSkill> proudSkills = metaAvatar.SkillDepot.CompositeSkillsNoInherents;
         ImmutableArray<SkillView>.Builder builder = ImmutableArray.CreateBuilder<SkillView>(proudSkills.Length);
 

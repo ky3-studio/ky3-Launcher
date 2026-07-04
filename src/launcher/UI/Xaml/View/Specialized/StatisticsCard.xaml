@@ -234,6 +234,62 @@
                         <RowDefinition Height="{x:Bind ShowUpPull, Converter={StaticResource BoolToGridLengthSpacingConverter}, Mode=OneWay}"/>
                         <RowDefinition Height="{x:Bind ShowUpPull, Converter={StaticResource BoolToGridLengthConverter}, Mode=OneWay}"/>
                     </Grid.RowDefinitions>
+
+                    <ProgressBar
+                        Grid.Row="0"
+                        Grid.ColumnSpan="3"
+                        MinHeight="18"
+                        Background="Transparent"
+                        CornerRadius="2"
+                        Maximum="{Binding TotalCount}"
+                        Opacity="0.4"
+                        Value="{Binding TotalOrangePull}">
+                        <ProgressBar.Foreground>
+                            <SolidColorBrush Color="{ThemeResource OrangeColor}"/>
+                        </ProgressBar.Foreground>
+                    </ProgressBar>
+                    <ProgressBar
+                        Grid.Row="1"
+                        Grid.ColumnSpan="3"
+                        MinHeight="18"
+                        Background="Transparent"
+                        CornerRadius="2"
+                        Maximum="{Binding TotalCount}"
+                        Opacity="0.4"
+                        Value="{Binding TotalPurplePull}">
+                        <ProgressBar.Foreground>
+                            <SolidColorBrush Color="{ThemeResource PurpleColor}"/>
+                        </ProgressBar.Foreground>
+                    </ProgressBar>
+                    <ProgressBar
+                        Grid.Row="2"
+                        Grid.ColumnSpan="3"
+                        MinHeight="18"
+                        Background="Transparent"
+                        CornerRadius="2"
+                        Maximum="{Binding TotalCount}"
+                        Opacity="0.4"
+                        Value="{Binding TotalBluePull}">
+                        <ProgressBar.Foreground>
+                            <SolidColorBrush Color="{ThemeResource BlueColor}"/>
+                        </ProgressBar.Foreground>
+                    </ProgressBar>
+
+                    <ProgressBar
+                        Grid.Row="4"
+                        Grid.ColumnSpan="3"
+                        MinHeight="20"
+                        CornerRadius="2"
+                        Maximum="{Binding GuaranteeOrangeThreshold}"
+                        Value="{Binding LastOrangePull}">
+                        <ProgressBar.Background>
+                            <SolidColorBrush Opacity="0.1" Color="{ThemeResource TextFillColorPrimary}"/>
+                        </ProgressBar.Background>
+                        <ProgressBar.Foreground>
+                            <SolidColorBrush Color="{Binding LastOrangePull, Converter={StaticResource Int32ToGradientColorConverter}}"/>
+                        </ProgressBar.Foreground>
+                    </ProgressBar>
+
                     <TextBlock
                         Grid.Row="0"
                         Grid.Column="0"

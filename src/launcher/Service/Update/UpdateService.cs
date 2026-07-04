@@ -31,45 +31,36 @@ internal sealed partial class UpdateService : IUpdateService
         using (IServiceScope scope = serviceProvider.CreateScope())
         {
             CheckUpdateResult checkUpdateResult = new();
-            try
+
+            ITaskContext taskContext = scope.ServiceProvider.GetRequiredService<ITaskContext>();
+            await taskContext.SwitchToBackgroundAsync();
+
+            LauncherInfrastructureClient infrastructureClient = scope.ServiceProvider.GetRequiredService<LauncherInfrastructureClient>();
+            LauncherResponse<LauncherPackageInformation> response = await infrastructureClient.GetLauncherVersionInformationAsync(token).ConfigureAwait(false);
+
+            if (!ResponseValidator.TryValidateWithoutUINotification(response, scope.ServiceProvider, out LauncherPackageInformation? packageInformation))
             {
-                ITaskContext taskContext = scope.ServiceProvider.GetRequiredService<ITaskContext>();
-                await taskContext.SwitchToBackgroundAsync();
-
-                LauncherInfrastructureClient infrastructureClient = scope.ServiceProvider.GetRequiredService<LauncherInfrastructureClient>();
-                LauncherResponse<LauncherPackageInformation> response = await infrastructureClient.GetLauncherVersionInformationAsync(token).ConfigureAwait(false);
-
-                if (!ResponseValidator.TryValidateWithoutUINotification(response, scope.ServiceProvider, out LauncherPackageInformation? packageInformation))
-                {
-                    checkUpdateResult.Kind = CheckUpdateResultKind.VersionApiInvalidResponse;
-                    return checkUpdateResult;
-                }
-
-                checkUpdateResult.Kind = CheckUpdateResultKind.UpdateAvailable;
-                checkUpdateResult.PackageInformation = packageInformation;
-
-                if (!LocalSetting.Get(SettingKeys.OverrideUpdateVersionComparison, false))
-                {
-                    // Launched in an updated version
-                    if (LauncherRuntime.Version >= checkUpdateResult.PackageInformation.Version)
-                    {
-                        checkUpdateResult.Kind = CheckUpdateResultKind.AlreadyUpdated;
-                        return checkUpdateResult;
-                    }
-                }
-
+                checkUpdateResult.Kind = CheckUpdateResultKind.VersionApiInvalidResponse;
+                UpdateInfo = SH.ViewModelSettingCheckUpdateFailed;
                 return checkUpdateResult;
             }
-            finally
+
+            checkUpdateResult.Kind = CheckUpdateResultKind.UpdateAvailable;
+            checkUpdateResult.PackageInformation = packageInformation;
+
+            if (!LocalSetting.Get(SettingKeys.OverrideUpdateVersionComparison, false))
             {
-                UpdateInfo = checkUpdateResult.Kind switch
+                // Launched in an updated version
+                if (LauncherRuntime.Version >= checkUpdateResult.PackageInformation.Version)
                 {
-                    CheckUpdateResultKind.UpdateAvailable => SH.FormatViewModelSettingUpdateAvailable(checkUpdateResult.PackageInformation?.Version.ToString()),
-                    CheckUpdateResultKind.AlreadyUpdated => SH.ViewModelSettingAlreadyUpdated,
-                    CheckUpdateResultKind.VersionApiInvalidResponse or CheckUpdateResultKind.VersionApiInvalidSha256 => SH.ViewModelSettingCheckUpdateFailed,
-                    _ => default,
-                };
+                    checkUpdateResult.Kind = CheckUpdateResultKind.AlreadyUpdated;
+                    UpdateInfo = SH.ViewModelSettingAlreadyUpdated;
+                    return checkUpdateResult;
+                }
             }
+
+            UpdateInfo = SH.FormatViewModelSettingUpdateAvailable(checkUpdateResult.PackageInformation.Version.ToString());
+            return checkUpdateResult;
         }
     }
 

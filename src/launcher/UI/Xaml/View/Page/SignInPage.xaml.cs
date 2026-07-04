@@ -31,6 +31,12 @@ internal sealed partial class SignInPage : ScopedPage, IRecipient<UserAndUidChan
     public SignInPage()
     {
         InitializeComponent();
+        Unloaded += OnUnloaded;
+    }
+
+    private void OnUnloaded(object sender, RoutedEventArgs e)
+    {
+        messenger?.UnregisterAll(this);
     }
 
     public void Receive(UserAndUidChangedMessage message)

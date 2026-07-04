@@ -286,7 +286,41 @@ internal static class MetadataServiceContextExtension
     {
         public Avatar GetAvatar(string name)
         {
-            return context.NameAvatarMap[name];
+            if (context.NameAvatarMap.TryGetValue(name, out Avatar? avatar))
+            {
+                return avatar;
+            }
+
+            try
+            {
+                Ioc.Default.GetRequiredService<IMessenger>().Send(InfoBarMessage.Warning(SH.ServiceMetadataAvatarIdNotFound ?? "Avatar not found", name));
+            }
+            catch
+            {
+                // ignore
+            }
+
+            return new Avatar()
+            {
+                Name = $"Unknown Avatar ({name})",
+                Icon = "UI_AvatarIcon_Default",
+                SideIcon = string.Empty,
+                Quality = QualityType.QUALITY_NONE,
+                Id = default,
+                PromoteId = default,
+                Sort = default,
+                Body = default,
+                Description = default!,
+                BeginTime = default,
+                Weapon = default,
+                BaseValue = default!,
+                GrowCurves = default!,
+                SkillDepot = default!,
+                FetterInfo = default!,
+                Costumes = default,
+                CultivationItems = [],
+                NameCard = default!,
+            };
         }
     }
 
@@ -338,7 +372,35 @@ internal static class MetadataServiceContextExtension
     {
         public Weapon GetWeapon(string name)
         {
-            return context.NameWeaponMap[name];
+            if (context.NameWeaponMap.TryGetValue(name, out Weapon? weapon))
+            {
+                return weapon;
+            }
+
+            try
+            {
+                Ioc.Default.GetRequiredService<IMessenger>().Send(InfoBarMessage.Warning(SH.ServiceMetadataWeaponIdNotFound ?? "Weapon not found", name));
+            }
+            catch
+            {
+                // ignore
+            }
+
+            return new Weapon()
+            {
+                Name = $"Unknown Weapon ({name})",
+                Icon = string.Empty,
+                Description = default!,
+                Id = default,
+                WeaponType = default,
+                Affix = default,
+                RankLevel = QualityType.QUALITY_NONE,
+                PromoteId = default,
+                AwakenIcon = string.Empty,
+                GrowCurves = default!,
+                Sort = default,
+                CultivationItems = [],
+            };
         }
     }
 }

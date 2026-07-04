@@ -37,13 +37,13 @@ internal sealed class GachaItem : IAppDbEntityHasArchive
 
     public GachaType QueryType { get; set; }
 
-    public static GachaItem From(Guid archiveId, GachaLogItem item, uint itemId)
+    public static GachaItem From(Guid archiveId, GachaLogItem item, uint itemId, GachaType queryType)
     {
         return new()
         {
             ArchiveId = archiveId,
             GachaType = item.GachaType,
-            QueryType = item.GachaType,
+            QueryType = queryType,
             ItemId = itemId,
             Time = DateTimeOffset.Parse(item.Time, System.Globalization.CultureInfo.InvariantCulture),
             Id = item.Id,

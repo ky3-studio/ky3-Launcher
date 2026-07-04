@@ -8,8 +8,8 @@
 // Licensed under the MIT license.
 
 using Microsoft.Extensions.Caching.Memory;
-using Launcher.Core.ExceptionService;
 using Launcher.Service.BackgroundActivity;
+using Launcher.Service.Notification;
 using System.Collections.Immutable;
 using System.IO;
 using System.Runtime.CompilerServices;
@@ -110,8 +110,19 @@ internal sealed partial class MetadataService : IMetadataService
         (string FileName, byte[] Data)[] bundledResources = metadataOptions.GetBundledScatteredResources(strategy.Name);
         if (bundledResources.Length <= 0)
         {
-            DirectoryNotFoundException exception = new(SH.ServiceMetadataFileNotFound);
-            throw LauncherException.Throw(SH.ServiceMetadataFileNotFound, exception);
+            logger.LogWarning("Bundled scattered metadata not found: {StrategyName}", strategy.Name);
+
+            try
+            {
+                Ioc.Default.GetRequiredService<IMessenger>()
+                    .Send(InfoBarMessage.Warning(SH.ServiceMetadataFileNotFound ?? "Metadata not found", strategy.Name));
+            }
+            catch
+            {
+                // DI container may not be ready yet
+            }
+
+            return ValueTask.FromResult(MemoryCache.Set(cacheKey, ImmutableArray<T>.Empty));
         }
 
         ImmutableArray<T>.Builder results = ImmutableArray.CreateBuilder<T>(bundledResources.Length);

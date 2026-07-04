@@ -68,8 +68,12 @@ internal abstract class AbstractLaunchExecutionInvoker
     private async ValueTask InvokeCoreAsync(LaunchExecutionInvocationContext context, ITaskContext taskContext)
     {
         string lockTrace = $"{GetType().Name}.{nameof(InvokeAsync)}";
-        context.LaunchOptions.TryGetGameFileSystem(lockTrace, out IGameFileSystem? gameFileSystem);
-        ArgumentNullException.ThrowIfNull(gameFileSystem);
+        GameFileSystemErrorKind errorKind = context.LaunchOptions.TryGetGameFileSystem(lockTrace, out IGameFileSystem? gameFileSystem);
+
+        if (errorKind is not GameFileSystemErrorKind.None || gameFileSystem is null)
+        {
+            throw LauncherException.InvalidOperation(SH.ViewModelLaunchGameGamePathNotSet);
+        }
 
         using (GameFileSystemReference fileSystemReference = new(gameFileSystem))
         {

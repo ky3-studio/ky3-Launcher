@@ -33,9 +33,9 @@ internal sealed partial class GuideViewModel : Abstraction.ViewModel
     [GeneratedConstructor]
     public partial GuideViewModel(IServiceProvider serviceProvider);
 
-    public static string AllCulturesWelcomeText
+    public string AllCulturesWelcomeText
     {
-        get => string.Join('+', CultureOptions.Cultures.Select(c => SH.GetString("GuideWindowTitle", c.Value)));
+        get => SH.GuideWindowTitleAllCultures;
     }
 
     public uint State
@@ -87,8 +87,9 @@ internal sealed partial class GuideViewModel : Abstraction.ViewModel
         get => field ??= Selection.Initialize(CultureOptions.Cultures, CultureOptions.CurrentCulture.Value) ?? CultureOptions.Cultures.FirstOrDefault();
         set
         {
-            if (SetProperty(ref field, value) && value is not null)
+            if (value is not null && !value.Value.Equals(CultureOptions.CurrentCulture.Value))
             {
+                field = value;
                 CultureOptions.CurrentCulture.Value = value.Value;
                 AppInstance.Restart(string.Empty);
             }

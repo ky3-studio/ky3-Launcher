@@ -12,15 +12,36 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Documents;
 using Microsoft.UI.Xaml.Media;
+using Launcher.Model;
+using Launcher.ViewModel.Guide;
 
 namespace Launcher.UI.Xaml.View;
 
 internal sealed partial class GuideView : UserControl
 {
+    private bool _isUserInteraction;
+
     public GuideView()
     {
         InitializeComponent();
         BuildAgreementContent();
+        ScrollHintInfoBar.Title = SH.ViewGuideScrollHint;
+        Loaded += (_, _) => _isUserInteraction = true;
+    }
+
+    private void LanguageGridView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if (!_isUserInteraction)
+        {
+            return;
+        }
+
+        if (e.AddedItems.Count > 0
+            && e.AddedItems[0] is NameCultureInfoValue selected
+            && DataContext is GuideViewModel vm)
+        {
+            vm.SelectedCulture = selected;
+        }
     }
 
     private void AgreementScrollViewer_ViewChanged(object? sender, ScrollViewerViewChangedEventArgs e)

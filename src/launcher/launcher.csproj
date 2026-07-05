@@ -16,7 +16,7 @@
 		<Nullable>enable</Nullable>
 		<NeutralLanguage>zh-CN</NeutralLanguage>
 		<DefaultLanguage>zh-CN</DefaultLanguage>
-		<SatelliteResourceLanguages>zh-CN;zh-Hans;zh-Hant;zh-TW</SatelliteResourceLanguages>
+		<SatelliteResourceLanguages>zh-CN;zh-Hans;zh-Hant;zh-TW;en-US</SatelliteResourceLanguages>
 		<StartupObject>Launcher.Bootstrap</StartupObject>
 		<DefineConstants>$(DefineConstants);DISABLE_XAML_GENERATED_MAIN;DISABLE_XAML_GENERATED_BREAK_ON_UNHANDLED_EXCEPTION;DISABLE_XAML_GENERATED_BINDING_DEBUG_OUTPUT;$(AlphaConstants);$(CanaryConstants)</DefineConstants>
 		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
@@ -222,7 +222,7 @@
 		<RemoveDir Directories="$(_OutputDir)\BuildHost-netcore" Condition="Exists('$(_OutputDir)\BuildHost-netcore')" />
 
 
-		<Exec Command="for /d %%d in (&quot;$(_OutputDir)\*-*&quot;) do ( if /i not &quot;%%~nxd&quot;==&quot;zh-CN&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hans&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hant&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-TW&quot; if /i not &quot;%%~nxd&quot;==&quot;Microsoft.UI.Xaml&quot; rd /s /q &quot;%%d&quot; )" />
+		<Exec Command="for /d %%d in (&quot;$(_OutputDir)\*-*&quot;) do ( if /i not &quot;%%~nxd&quot;==&quot;zh-CN&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hans&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hant&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-TW&quot; if /i not &quot;%%~nxd&quot;==&quot;en-US&quot; if /i not &quot;%%~nxd&quot;==&quot;Microsoft.UI.Xaml&quot; rd /s /q &quot;%%d&quot; )" />
 	</Target>
 
 	<Target Name="CopyUpdater" AfterTargets="Build;Publish">

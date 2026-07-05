@@ -22,12 +22,18 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <DataTemplate x:Key="LanguageTemplate" x:DataType="shm:NameCultureInfoValue">
-                <Grid MinWidth="280" Margin="16">
-                    <StackPanel>
-                        <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Text="{Binding Name}"/>
-                        <TextBlock Opacity="0.8" Text="{Binding Value}"/>
+                <Border MinWidth="280" Padding="16" Style="{ThemeResource BorderShimmerStyle}">
+                    <StackPanel Orientation="Horizontal" Spacing="12">
+                        <Image
+                            Width="32"
+                            VerticalAlignment="Center"
+                            Source="{Binding FlagUri}"/>
+                        <StackPanel VerticalAlignment="Center">
+                            <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Text="{Binding Name}"/>
+                            <TextBlock Opacity="0.8" Text="{Binding Value}"/>
+                        </StackPanel>
                     </StackPanel>
-                </Grid>
+                </Border>
             </DataTemplate>
         </ResourceDictionary>
     </UserControl.Resources>
@@ -68,19 +74,22 @@
                         EffectHorizontalAlignment="Center"
                         EffectVerticalAlignment="Center"
                         Text="{Binding AllCulturesWelcomeText}"/>
-                    <Border
+                    <GridView
+                        x:Name="LanguageGridView"
                         Grid.Row="2"
+                        Padding="0,0,-12,-12"
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
-                        Style="{ThemeResource BorderShimmerStyle}">
-                        <GridView
-                            Padding="0,0,-12,-12"
-                            ItemContainerStyle="{ThemeResource LargeGridViewItemStyle}"
-                            ItemTemplate="{StaticResource LanguageTemplate}"
-                            ItemsSource="{Binding CultureOptions.Cultures}"
-                            SelectedItem="{Binding SelectedCulture, Mode=TwoWay}"
-                            SelectionMode="Single"/>
-                    </Border>
+                        ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                        ScrollViewer.HorizontalScrollMode="Disabled"
+                        ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                        ScrollViewer.VerticalScrollMode="Disabled"
+                        ItemContainerStyle="{ThemeResource LargeGridViewItemStyle}"
+                        ItemTemplate="{StaticResource LanguageTemplate}"
+                        ItemsSource="{Binding CultureOptions.Cultures}"
+                        SelectedItem="{Binding SelectedCulture, Mode=TwoWay}"
+                        SelectionChanged="LanguageGridView_SelectionChanged"
+                        SelectionMode="Single"/>
                 </Grid>
             </cwc:Case>
 
@@ -103,7 +112,6 @@
                         IsOpen="True"
                         IsClosable="False"
                         Severity="Informational"
-                        Title="&#x8BF7;&#x6EDA;&#x52A8;&#x81F3;&#x5E95;&#x90E8;&#x9605;&#x8BFB;&#x5B8C;&#x6574;&#x534F;&#x8BAE;"
                         Margin="0,8,0,0"/>
 
                     <StackPanel Grid.Row="2" Margin="0,8,0,0" Spacing="8">
@@ -269,7 +277,7 @@
                             EffectFontSize="36"
                             EffectHorizontalAlignment="Center"
                             EffectVerticalAlignment="Center"
-                            Text="欢迎使用 ky3 Launcher"/>
+                            Text="{shuxm:ResourceString Name=GuideWindowTitle}"/>
                     </StackPanel>
                 </Grid>
             </cwc:Case>

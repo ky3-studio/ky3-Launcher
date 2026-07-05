@@ -21,12 +21,14 @@ internal static class SupportedCultures
     {
         return
         [
-            ToNameValue(CultureInfo.GetCultureInfo("zh-Hans"), LocalizationSource.Launcher),
+            ToNameValue(CultureInfo.GetCultureInfo("zh-Hans"), LocalizationSource.Launcher, "ms-appx:///Resource/Flag/cn.png"),
+            ToNameValue(CultureInfo.GetCultureInfo("zh-TW"), LocalizationSource.Launcher, "ms-appx:///Resource/Flag/cn.png"),
+            ToNameValue(CultureInfo.GetCultureInfo("en-US"), LocalizationSource.Launcher, "ms-appx:///Resource/Flag/us.png"),
         ];
     }
 
-    private static NameCultureInfoValue ToNameValue(CultureInfo info, LocalizationSource source)
+    private static NameCultureInfoValue ToNameValue(CultureInfo info, LocalizationSource source, string flagUri = "")
     {
-        return new(info.NativeName, info, source);
+        return new(info.NativeName, info, source, flagUri);
     }
 }

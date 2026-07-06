@@ -1,0 +1,1196 @@
+{
+  "Id": 10000025,
+  "PromoteId": 25,
+  "Sort": 16,
+  "Body": 1,
+  "Icon": "UI_AvatarIcon_Xingqiu",
+  "SideIcon": "UI_AvatarIcon_Side_Xingqiu",
+  "Name": "Xingqiu",
+  "Description": "A young man carrying a longsword who is frequently seen at book booths. He has a chivalrous heart and yearns for justice and fairness for all.",
+  "BeginTime": "2020-09-15T04:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 1,
+  "BaseValue": {
+    "HpBase": 857.08356,
+    "AttackBase": 16.9176,
+    "DefenseBase": 63.51975
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 2531,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:P}",
+            "2-Hit DMG|{param2:P}",
+            "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+            "4-Hit DMG|{param5:P}",
+            "5-Hit DMG|{param6:P}+{param7:P}",
+            "Charged Attack DMG|{param8:P}+{param9:P}",
+            "Charged Attack Stamina Cost|{param10:F1}",
+            "Plunge DMG|{param11:F1P}",
+            "Low/High Plunge DMG|{param12:P}/{param13:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 253101,
+              "Level": 1,
+              "Parameters": [
+                0.46612,
+                0.47644,
+                0.28552,
+                0.28552,
+                0.55986,
+                0.35862,
+                0.35862,
+                0.473,
+                0.56158,
+                20,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 253102,
+              "Level": 2,
+              "Parameters": [
+                0.50406,
+                0.51522,
+                0.30876,
+                0.30876,
+                0.60543,
+                0.38781,
+                0.38781,
+                0.5115,
+                0.60729,
+                20,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 253103,
+              "Level": 3,
+              "Parameters": [
+                0.542,
+                0.554,
+                0.332,
+                0.332,
+                0.651,
+                0.417,
+                0.417,
+                0.55,
+                0.653,
+                20,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 253104,
+              "Level": 4,
+              "Parameters": [
+                0.5962,
+                0.6094,
+                0.3652,
+                0.3652,
+                0.7161,
+                0.4587,
+                0.4587,
+                0.605,
+                0.7183,
+                20,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 253105,
+              "Level": 5,
+              "Parameters": [
+                0.63414,
+                0.64818,
+                0.38844,
+                0.38844,
+                0.76167,
+                0.48789,
+                0.48789,
+                0.6435,
+                0.76401,
+                20,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 253106,
+              "Level": 6,
+              "Parameters": [
+                0.6775,
+                0.6925,
+                0.415,
+                0.415,
+                0.81375,
+                0.52125,
+                0.52125,
+                0.6875,
+                0.81625,
+                20,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 253107,
+              "Level": 7,
+              "Parameters": [
+                0.73712,
+                0.75344,
+                0.45152,
+                0.45152,
+                0.88536,
+                0.56712,
+                0.56712,
+                0.748,
+                0.88808,
+                20,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 253108,
+              "Level": 8,
+              "Parameters": [
+                0.79674,
+                0.81438,
+                0.48804,
+                0.48804,
+                0.95697,
+                0.61299,
+                0.61299,
+                0.8085,
+                0.95991,
+                20,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 253109,
+              "Level": 9,
+              "Parameters": [
+                0.85636,
+                0.87532,
+                0.52456,
+                0.52456,
+                1.02858,
+                0.65886,
+                0.65886,
+                0.869,
+                1.03174,
+                20,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 253110,
+              "Level": 10,
+              "Parameters": [
+                0.9214,
+                0.9418,
+                0.5644,
+                0.5644,
+                1.1067,
+                0.7089,
+                0.7089,
+                0.935,
+                1.1101,
+                20,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 253111,
+              "Level": 11,
+              "Parameters": [
+                0.995925,
+                1.017975,
+                0.61005,
+                0.61005,
+                1.196212,
+                0.766237,
+                0.766237,
+                1.010625,
+                1.199887,
+                20,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 253112,
+              "Level": 12,
+              "Parameters": [
+                1.083566,
+                1.107557,
+                0.663734,
+                0.663734,
+                1.301479,
+                0.833666,
+                0.833666,
+                1.09956,
+                1.305478,
+                20,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 253113,
+              "Level": 13,
+              "Parameters": [
+                1.171208,
+                1.197139,
+                0.717419,
+                0.717419,
+                1.406746,
+                0.901095,
+                0.901095,
+                1.188495,
+                1.411068,
+                20,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 253114,
+              "Level": 14,
+              "Parameters": [
+                1.258849,
+                1.28672,
+                0.771103,
+                0.771103,
+                1.512013,
+                0.968524,
+                0.968524,
+                1.27743,
+                1.516658,
+                20,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 253115,
+              "Level": 15,
+              "Parameters": [
+                1.354458,
+                1.384446,
+                0.829668,
+                0.829668,
+                1.626849,
+                1.042083,
+                1.042083,
+                1.37445,
+                1.631847,
+                20,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10381,
+        "Name": "Guhua Style",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_01"
+      },
+      {
+        "GroupId": 2532,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:P}+{param2:P}",
+            "Damage Reduction Ratio|{param3:P}",
+            "Duration|{param4:F1}s",
+            "CD|{param5:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 253201,
+              "Level": 1,
+              "Parameters": [
+                1.68,
+                1.912,
+                0.2,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253202,
+              "Level": 2,
+              "Parameters": [
+                1.806,
+                2.0554,
+                0.21,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253203,
+              "Level": 3,
+              "Parameters": [
+                1.932,
+                2.1988,
+                0.22,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253204,
+              "Level": 4,
+              "Parameters": [
+                2.1,
+                2.39,
+                0.23,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253205,
+              "Level": 5,
+              "Parameters": [
+                2.226,
+                2.5334,
+                0.24,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253206,
+              "Level": 6,
+              "Parameters": [
+                2.352,
+                2.6768,
+                0.25,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253207,
+              "Level": 7,
+              "Parameters": [
+                2.52,
+                2.868,
+                0.26,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253208,
+              "Level": 8,
+              "Parameters": [
+                2.688,
+                3.0592,
+                0.27,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253209,
+              "Level": 9,
+              "Parameters": [
+                2.856,
+                3.2504,
+                0.28,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253210,
+              "Level": 10,
+              "Parameters": [
+                3.024,
+                3.4416,
+                0.29,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253211,
+              "Level": 11,
+              "Parameters": [
+                3.192,
+                3.6328,
+                0.29,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253212,
+              "Level": 12,
+              "Parameters": [
+                3.36,
+                3.824,
+                0.29,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253213,
+              "Level": 13,
+              "Parameters": [
+                3.57,
+                4.063,
+                0.29,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253214,
+              "Level": 14,
+              "Parameters": [
+                3.78,
+                4.302,
+                0.29,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253215,
+              "Level": 15,
+              "Parameters": [
+                3.99,
+                4.541,
+                0.29,
+                15,
+                21
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10382,
+        "Name": "Guhua Sword: Fatal Rainscreen",
+        "Description": "Xingqiu performs twin strikes with his sword, dealing <color=#80C0FFFF>Hydro DMG</color>. At the same time, this ability creates the maximum number of Rain Swords, which will orbit your active character.\nThe Rain Swords have the following properties:\n·When a character takes DMG, the Rain Sword will shatter, reducing the amount of DMG taken.\n·Increases the character's resistance to interruption.\n\n20% of Xingqiu's <color=#80C0FFFF>Hydro DMG Bonus</color> will be converted to additional DMG Reduction for the Rain Swords.\n\nThe maximum amount of additional DMG Reduction that can be gained this way is 24%.\nThe initial maximum number of Rain Swords is 3.\nUsing this ability applies the <color=#80C0FFFF>Wet</color> status onto the character.\n\n<i>\"Easier to slay a rain dragon than to sever the rain.\"</i>",
+        "Icon": "Skill_S_Xingqiu_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 2539,
+      "Proud": {
+        "Descriptions": [
+          "Sword Rain DMG|{param1:P}",
+          "Duration|{param2:F1}s",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 253901,
+            "Level": 1,
+            "Parameters": [
+              0.54272,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253902,
+            "Level": 2,
+            "Parameters": [
+              0.583424,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253903,
+            "Level": 3,
+            "Parameters": [
+              0.624128,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253904,
+            "Level": 4,
+            "Parameters": [
+              0.6784,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253905,
+            "Level": 5,
+            "Parameters": [
+              0.719104,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253906,
+            "Level": 6,
+            "Parameters": [
+              0.759808,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253907,
+            "Level": 7,
+            "Parameters": [
+              0.81408,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253908,
+            "Level": 8,
+            "Parameters": [
+              0.868352,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253909,
+            "Level": 9,
+            "Parameters": [
+              0.922624,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253910,
+            "Level": 10,
+            "Parameters": [
+              0.976896,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253911,
+            "Level": 11,
+            "Parameters": [
+              1.031168,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253912,
+            "Level": 12,
+            "Parameters": [
+              1.08544,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253913,
+            "Level": 13,
+            "Parameters": [
+              1.15328,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253914,
+            "Level": 14,
+            "Parameters": [
+              1.22112,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253915,
+            "Level": 15,
+            "Parameters": [
+              1.28896,
+              15,
+              20,
+              80
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10385,
+      "Name": "Guhua Sword: Raincutter",
+      "Description": "Initiate Rainbow Bladework and fight using an illusory sword rain, while creating the maximum number of Rain Swords.\n\n<color=#FFD780FF>Rainbow Bladework</color>\n·Your active character's Normal Attacks will trigger consecutive sword rain attacks, dealing <color=#80C0FFFF>Hydro DMG</color>.\n·Rain Swords will remain at the maximum number throughout the ability's duration.\n\n<i>The \"Way of the Rain Cutter\" is one of the esoteric secret techniques of the Guhua Sect.</i>",
+      "Icon": "Skill_E_Xingqiu_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 2521,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 252101,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 252101,
+        "Name": "Hydropathic",
+        "Description": "When a Rain Sword is shattered or when its duration expires, it regenerates the current character's HP based on 6% of Xingqiu's Max HP.",
+        "Icon": "UI_Talent_S_Xingqiu_05"
+      },
+      {
+        "GroupId": 2522,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 252201,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 252201,
+        "Name": "Blades Amidst Raindrops",
+        "Description": "Xingqiu gains a 20% <color=#80C0FFFF>Hydro DMG Bonus</color>.",
+        "Icon": "UI_Talent_S_Xingqiu_06"
+      },
+      {
+        "GroupId": 2523,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 252301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 252301,
+        "Name": "Flash of Genius",
+        "Description": "When Xingqiu crafts Character Talent Materials, he has a 25% chance to refund a portion of the crafting materials used.",
+        "Icon": "UI_Talent_Combine_Talent"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 251,
+        "Name": "The Scent Remained",
+        "Description": "Increases the maximum number of Rain Swords by 1.",
+        "Icon": "UI_Talent_S_Xingqiu_01"
+      },
+      {
+        "Id": 252,
+        "Name": "Rainbow Upon the Azure Sky",
+        "Description": "Extends the duration of <color=#FFD780FF>Guhua Sword: Raincutter</color> by 3s.\nDecreases the <color=#80C0FFFF>Hydro RES</color> of opponents hit by sword rain attacks by 15% for 4s.",
+        "Icon": "UI_Talent_S_Xingqiu_02"
+      },
+      {
+        "Id": 253,
+        "Name": "Weaver of Verses",
+        "Description": "Increases the Level of <color=#FFD780FF>Guhua Sword: Raincutter</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Xingqiu_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 254,
+        "Name": "Evilsoother",
+        "Description": "Throughout the duration of <color=#FFD780FF>Guhua Sword: Raincutter</color>, the DMG dealt by <color=#FFD780FF>Guhua Sword: Fatal Rainscreen</color> is increased by 50%.",
+        "Icon": "UI_Talent_S_Xingqiu_03"
+      },
+      {
+        "Id": 255,
+        "Name": "Embrace of Rain",
+        "Description": "Increases the Level of <color=#FFD780FF>Guhua Sword: Fatal Rainscreen</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Xingqiu_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 256,
+        "Name": "Hence, Call Them My Own Verses",
+        "Description": "Activating 2 of <color=#FFD780FF>Guhua Sword: Raincutter</color>'s sword rain attacks greatly enhances the third sword rain attack. On hit, the third sword rain attack also regenerates 3 Energy for Xingqiu.",
+        "Icon": "UI_Talent_S_Xingqiu_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Juvenile Galant",
+    "Detail": "A young man carrying a longsword who is frequently seen at book booths. He has a chivalrous heart and yearns for justice and fairness for all.",
+    "Association": 2,
+    "Native": "Feiyun Commerce Guild",
+    "BirthMonth": 10,
+    "BirthDay": 9,
+    "VisionBefore": "Hydro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Fabulae Textile",
+    "CvChinese": "唐雅菁",
+    "CvJapanese": "皆川純子",
+    "CvEnglish": "Cristina Vee Valenzuela",
+    "CvKorean": "Kwak Kyu-mi",
+    "CookBonus": {
+      "OriginItemId": 108105,
+      "ItemId": 108136,
+      "InputList": [
+        100092,
+        100093,
+        100013
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Xingqiu at your service, my liege! I humbly trust that even one such as I, a mere bookworm, may yet prove to be of some utility under your wise leadership. Nice, I don't often get a chance to speak with such formality. It felt pretty good!"
+      },
+      {
+        "Title": "Chat: Night of Solitude",
+        "Context": "'Twas on a deserted moonlit night that the hero approached the vile dragon's limpid lair..."
+      },
+      {
+        "Title": "Chat: Literature",
+        "Context": "I never embark on a journey without a good book to accompany me."
+      },
+      {
+        "Title": "Chat: Taking a Break",
+        "Context": "Now this is what I call, \"a moment of solitude.\""
+      },
+      {
+        "Title": "Chat: Reading",
+        "Context": "Oh my goodness... Oh my gosh... Wow— Huh? \"All will be revealed in the next volume\"? Aw, drat..."
+      },
+      {
+        "Title": "Chat: New Books",
+        "Context": "If my calculations are correct, Wanwen Bookhouse is due to receive a batch of new releases today. Might we add a small detour to our adventure?"
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "My family makes ornate umbrellas that block neither rain nor shine. Their sole purpose is for decoration upon a wall."
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "Good, the rain has stopped. Any longer and my books would have gotten wet."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Only when it snows like this would I prefer to be at home than in a book store. For there is a well-stocked fireplace at home, while there is no fire allowed in book stores."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "Great weather for practicing martial arts, but perfect weather for reading. Hey, what's that ridiculous look for? You look as if you're trying to decipher some strange text written on my forehead."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Morning! The morn hours are precious. Spend them on that which matters to you."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "I am uninclined to eat a heavy meal this luncheon, but instead indulge in some baked treats. As long as I eat in the study, my father and brother never have to know! Oh, you want to join me? Well... As long as you don't get crumbs on the books, I suppose it's fine."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "What say you we snatch a few fireflies and read in the light they give? Hehe... Hey, I'm joking. Seriously, don't, it's bad for your eyesight."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "You will find me in the same place as ever tomorrow. So I'll see you then. Unless you manage to get lost on the way."
+      },
+      {
+        "Title": "About Xingqiu",
+        "Context": "I always have to put on an act around other people, because they see me only as the second son of the Feiyun Commerce Guild. It's a relief that I can just be myself around you. I think it's because you don't see me in the same way."
+      },
+      {
+        "Title": "About Us: Reading Buddies",
+        "Context": "I would say we are book buddies. Huh? Combat? Guhua Clan? Comrades in arms? ...What on earth are you talking about? I told you that's our little secret!"
+      },
+      {
+        "Title": "About Us: Swornship",
+        "Context": "We should become sworn siblings, let's go to the altar at Jueyun Karst. Nope, no ifs, no buts, you know too much about me! You know the real me, the one I normally have to hide. I simply can't let you go until you promise me you will go through with it!"
+      },
+      {
+        "Title": "About the Vision: Ancient Books",
+        "Context": "There aren't many records on matters concerning Visions, but I do have a passage dedicated to the topic in my collection of ancient texts. I can lend it to you if you want."
+      },
+      {
+        "Title": "About the Vision: Realization",
+        "Context": "I've come to an epiphany based on some things I've been reading — ultimately, the arts of both the polearm and the sword are just the art of hand-eye coordination. Ugh, it's a little difficult to explain... If you want to know more, come with me to Wangshan Hall. But first, you have to promise me you won't laugh."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Must-see places in Liyue? That's a tough question. Hmm... The place I would miss the most if it disappeared would be the Wanwen Bookhouse, first and foremost. The Guhua Sect would be in the top ten, too."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "I used to like rabbits, but I'm more a fan of stags now. To me, the saying \"May my final stand be a monument to chivalry\" is about abandoning worldly possessions and reaching enlightenment. But the stag's final resting place represents the hope for life anew. Oh, how I'd love to see it again."
+      },
+      {
+        "Title": "About Beidou",
+        "Context": "I have great respect for Lady Beidou. I just wish she wouldn't call me \"kid\" and ruffle my hair each time she sees me."
+      },
+      {
+        "Title": "About Ningguang",
+        "Context": "In her capacity as the Tianquan, I am obliged to respect her. Otherwise, it could create issues for my father and brother. On a personal level? Let me think... I think I will go with \"no comment.\" I shan't speak ill of others."
+      },
+      {
+        "Title": "About Chongyun",
+        "Context": "Ah, dear Chongyun. Though he understands me quite well, one has to exercise caution when teaming up with him to go on a quest. He is making good progress in the martial arts, but I would say he hasn't quite internalized the chivalric code yet... He needs more practice. Especially at eating spicy food..."
+      },
+      {
+        "Title": "About Yun Jin",
+        "Context": "When Yun Jin drinks a beverage she is fond of, she will be inspired to write a new play. So, I keep a jar of tea leaves under my bed at all times, ready to deliver to her on the day that her inspiration dries up. This way, I shall never run out of heroic tales to listen to!"
+      },
+      {
+        "Title": "About Hu Tao",
+        "Context": "Ah yes, the young lady who is now the Master of the Wangsheng Funeral Parlor. If you're asking what I think about her as a person... Well, there are all sorts of rumors about the way she works. But I think if you really want to understand someone, you need to find out what they are really after."
+      },
+      {
+        "Title": "About Qiqi",
+        "Context": "I've always thought there is more to Qiqi than meets the eye. But it's impossible to have a conversation with her when Baizhu's around. Hmm... We could wait till Baizhu makes a home call to one of his other patients and corner her..."
+      },
+      {
+        "Title": "About Xiangling",
+        "Context": "When you first spot Xiangling out and about, the first thing you should do is check the look on her face. Especially when she's just coming back from collecting new ingredients — the more excited she looks, the more dangerous it is to approach. Because if she sees you, she'll force you to taste-test her latest concoction... I usually get Chongyun to handle these situations, hehe..."
+      },
+      {
+        "Title": "About Xinyan",
+        "Context": "Where does Xinyan perform? Anywhere from Chihu Rock to Yujing Terrace — no spot is untouched by her disruptive presence... A quiet day when I can curl up with a good book is a rare treasure indeed."
+      },
+      {
+        "Title": "About Albedo",
+        "Context": "I've thought of all the illustrations I want for each major event in the next three volumes! I should write my thoughts down before I forget them, and send them to Mr. Kreideprinz..."
+      },
+      {
+        "Title": "About Zhongli",
+        "Context": "My father and brother entertained that gentleman as a guest once. From the way they were acting, he must be a very high-profile figure indeed. I also heard that he directs funerals for the adepti, so he must surely have great depth to his character. We should do some digging and see what we can find out about him!"
+      },
+      {
+        "Title": "About Shenhe",
+        "Context": "I find that Miss Shenhe seems to look at me somewhat fiercely, so I daren't approach her lightly. Bizarre, did I inadvertently upset her? Or maybe... upset someone close to her?"
+      },
+      {
+        "Title": "About Yelan",
+        "Context": "Have you heard the expression \"same person, different face\"? Ms. Yelan gives me precisely this feeling. When she came to visit my family, my father and brother treated her with respect, and she was pleasant and polite in return. She seemed like a kind and mature young lady to me. But when I saw her elsewhere, she gave a completely different impression."
+      },
+      {
+        "Title": "About Gaming",
+        "Context": "Gaming's work has all the trappings of a chivalric hero. Picture the scene — on a dark and moonless night, a lone young figure clad in black stands fearless on a secluded country road. They say his mastery of the martial arts is unparalleled, and the mythical beast by his side always does his bidding... Bandits and brigands beware, for none who challenge him come away unscathed... When he has the time, I'd love to hear more about his experiences as a guard. You should come along too."
+      },
+      {
+        "Title": "More About Xingqiu: I",
+        "Context": "Are you keeping well, my liege? If you have no other matters to attend to, might I recommend a trip to the Wanwen Bookhouse?"
+      },
+      {
+        "Title": "More About Xingqiu: II",
+        "Context": "You ask why I enjoy reading in solitude? ...Studiousness can hardly be considered a bad habit. There's not much more to it than that. Really."
+      },
+      {
+        "Title": "More About Xingqiu: III",
+        "Context": "Your schedule is free today? Wonderful. I am ready to leave whenever you are. ...My book? Oh, never mind that! I can always pick up where I left off when I get back. But those in distress who need our assistance cannot afford to wait."
+      },
+      {
+        "Title": "More About Xingqiu: IV",
+        "Context": "You feel inspired, you say? You want to write a martial arts detective novel based on our adventures together? And you want to call it the \"Chronicles of Wanwen\"? Hahaha... It's a good idea, it really is. But I'll have to decline, I'm sorry. Yes, really..."
+      },
+      {
+        "Title": "More About Xingqiu: V",
+        "Context": "\"A weaver of verses who draws from an ocean of expression...\" That's the reputation I aspire to. But you're the only person I can share that with. I am actually writing a novel... but I can't let you see it. Not yet. The time will come, though... You'll be able to read it when it's on sale in book stores all over Liyue."
+      },
+      {
+        "Title": "Xingqiu's Hobbies",
+        "Context": "Evidently, my hobby is reading. I'll read anything and everything. ...What's that mischievous grin for? Oh. That's between the two of us, okay? It's not appropriate to discuss it out loud. There's no point in bringing it up anyway."
+      },
+      {
+        "Title": "Xingqiu's Troubles",
+        "Context": "What annoys me? Hmm... Well, one day my brother will inherit the family business. What will happen to me then? I fear my current carefree existence would... Oh — no no no, it's not about my status or anything like that. I don't care for that kind of thing. I just think my brother is something of a simpleton and I would probably end up having to do most of his job for him..."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "I like baked goods and Yue-style seafood. Probably because I'm used to quite a bland diet at home."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I hate carrots. When I was young, my mother would mash them up into... Ugh, I can't go on. Just thinking about it makes me feel sick..."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "I need only sample this delight but once for its aroma to remain forever in my memory."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "With cooking skills as good as yours, it'd be a waste not to open a restaurant, wouldn't you agree?"
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "I couldn't possibly. But please, you eat your fill. I insist."
+      },
+      {
+        "Title": "Birthday: Wishing",
+        "Context": "May this day of your birth be filled with much mirth!"
+      },
+      {
+        "Title": "Birthday: Customs",
+        "Context": "According to historical records, Tiancheng's stone bridge was formed by a fallen rock spear thrown by the Geo Archon Morax in battle. If you walk along the bridge on your birthday and throw some Mora into the sea from both sides, you will be blessed in the coming year... Your birthday only comes once a year, so be quick about it if you wanna go... I'm not kidding, it's true! Go try it and you'll see!"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Were it not for my capability, the cause that so inspires me would remain confined to the pages that extol its virtues."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Had I no moral compass, my efforts would have been misguided. Doomed to grasp at shadows while missing the substance, I would have become a philistine that seeks only violence."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "There is a cause that I seek to champion, yet few in Liyue share my aspiration. This I have known for a long time, for it is a path I have walked for many years."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I am most grateful for your company on my journey. I am proud of my achievements, both in the martial arts and in championing the cause so dear to my heart. ...Ah, I guess there's no need to euphemize any longer. Chivalry! That is the cause that inspires me, and that I seek to champion. Why should I shy away from it? I am sure my father and brother are under no illusion as to what I stand for by now. ...But of course, I still need to be somewhat discreet in the way I go about my business."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Rain outlines your fate!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Ha... Hmph!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Know my sword!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Witness the power of Guhua!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Let me weave you a verse."
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Raincutter!"
+      },
+      {
+        "Title": "Sprint Start: I",
+        "Context": "Body and mind."
+      },
+      {
+        "Title": "Sprint Start: II",
+        "Context": "Time to act."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Excellent."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Treasure-hunting... A valiant endeavor."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "I hope we find long-lost ancient literature."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Change of plans..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "I can no longer hold back."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "May my final stand be a monument to chivalry."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Come. I have devised a plan."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Tread carefully."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "I have taught you... everything... I know..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "The brightest flames... burn fastest..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "I am outplayed..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "A minor setback."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "I let my guard down."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Not good..."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "May knowledge guide you."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Chivalry will never die."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "For justice."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Every merchant in Liyue Harbor knows of Xingqiu from the Feiyun Commerce Guild.\nAll see him as a kind and well-mannered young man who is an excellent student, a top talent in every sense.\nAs the second-born son of the family, Xingqiu is not required to shoulder the burden of managing the Guild's affairs. However, Xingqiu possesses a unique scholarly talent among his peers — that is, the offspring of Liyue's wealthiest merchants — and was often praised by his tutors as a young student.\nXingqiu's elder brother, while learning the family business from their father, firmly believed that Xingqiu would become a great asset to the business one day.\nHowever, little did he know that Xingqiu, after finishing the dauntingly thick volumes on commerce and philosophy, would hollow them out and sneak martial art novels into them, which he read incessantly thereafter.\nSometimes, Xingqiu suddenly disappears for hours at a time with no explanation. When asked why, he simply replies: \"A moment of solitude.\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "To Xingqiu, \"a moment of solitude\" can mean all sorts of things.\nExamples include visiting Wanwen Bookhouse to peruse the latest novels and going to Heyu Tea House to sample Yun Jin's latest drink.\nSometimes, it means that he is off to fight for justice in the name of chivalry.\nDefeating bandits on the road, driving away monsters, helping distressed children by fetching their kites from the tree tops... there are all manner of responsibilities that fall into the category of chivalry.\nInspired by tropes from his beloved martial arts novels — such as the king who wears a disguise and mingles with the common folk — Xingqiu does not hesitate to leverage the power of the Feiyun Commerce Guild to resolve more complex issues when violence isn't the answer."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "One day, Xingqiu's older brother came looking for him, only to find he wasn't around. When Xingqiu later returned, he came across his brother in the hallway.\n\"Your room was a mess, so I cleaned it up. Listen, both you and I are responsible for the reputation of Feiyun Commerce Guild. We have to act the part. If you can't clean up a room, how will you clean up the world? An adeptus once said...\"\nAfter half an hour of lecturing, Xingqiu was finally let go, but his brother said something strange at the end:\n\"I'll not enter your room without permission next time... I'll make sure the maids do the same.\"\nXingqiu had no idea what he was talking about. However, as his brother turned away, with a despondent look upon his face, he muttered to himself:\n\"Those books under his bed... No. No, I shouldn't go looking at what kind of books they are... Xingqiu is growing up after all... Don't want to be lecturing him all the time... Puberty perhaps?\"\nAfterwards, even Xingqiu found it odd. Expecting that one of the maids would have something to say about the stash of martial arts novels under his bed, he had long since prepared his response, but in the end, no one ever bothered to check his room again."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "To keep Xingqiu from spending his whole day at Wanwen Bookhouse in Feiyun Slope, his father agreed to let him learn martial arts from the Guhua Clan. Much to his dismay, Xingqiu quickly discovered that Guhua was a dying art that had been in constant decline for years. There was no proper tuition and it turned out the luxury dojo he had signed up in didn't even belong to the clan — they had just rented it temporarily to keep up appearances.\nXingqiu's father was, of course, fully aware of this state of affairs in advance. To him, the whole thing was just for fun. He thought Xingqiu would be content to learn a spot of bladework for show, not for serious self-defense.\nHe hadn't counted on the prodigiously intelligent and extremely well-read Xingqiu being as outstanding a talent in Guhua as he was in every other discipline he had turned his hand to. A combination of his own intuition and extensive knowledge of ancient literature meant he was able to completely revitalize the dead art.\nXingqiu was disappointed by Guhua's martial arts program at the beginning, but he found the other tricks they taught to be exactly what he had hoped for.\nQuicklime, smoking sand, paper fish, sword-swallowing, fire-breathing... Xingqiu was spoilt for choice.\nHe decided on the spot that he would learn them all, no matter how long it would take him. He reasoned that they would be useful to have in his repertoire during his future exploits as a chivalrous hero."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "There are two sides to the swashbuckling Xingqiu's personality. While quiet and unassuming in front of strangers, he is gregarious and chatty in the company of close friends and family. Though more restrained than his elder brother, he even has a playful and mischievous side.\nThe one who usually bears the brunt of his bizarre sense of humor is someone named Chongyun, an exorcist usually found on one of the forest trails around Liyue.\n\"Chongyun... I found a haunted house for you to practice in...\"\n\"Chongyun, you have to believe me... It wasn't me who laid the traps inside that haunted house— What? It's not haunted? Well... I, uh, couldn't have known that, could I?\"\n\"Chongyun... Don't glare at me like that... Look, you're injured. You'd better just lie there and get some rest.\"\n\"Tell you what, Chongyun, we have a maid who learned the art of essential oil therapy in a nobleman's house in Sumeru... How about I ask her to tend to your wounds? You owe me for this, though...\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "The notion of chivalry means different things to different people.\nChivalry means listening to your conscience calling you to action when you see an injustice, right? Or is chivalry simply about knowing right from wrong? No, that's not enough — it must have something to do with being a righteous person...\nTo Xingqiu, chivalry simply means: be good, and do good.\nAs a son of a wealthy merchant in Liyue Harbor, he was born to ride the waves in the world of trade. Notions of chivalry should have gradually left him as he grew up.\nHowever, obtaining a Vision changed everything — it meant he was finally able to accomplish those legendary deeds he could only dream of as a child.\nOf course, there is no way he can completely divest himself of his duties in the Guild, but so long as he gets to go out and be the hero even occasionally, he is perfectly content with his life.\nThe only thing that can wipe the smile from Xingqiu's face is when cynics question the true motives of chivalrous heroes.\nRank, reputation, reward, shadowy deals... Whenever Xingqiu hears people smearing the names of true heroes, the expression on his face may not change, but he will be sure to add that person to the special section of his blacklist reserved for people he despises even more than carrots."
+      },
+      {
+        "Title": "\"A Legend of Sword\"",
+        "Context": "Xingqiu once wrote a martial arts novel named \"A Legend of Sword\" based on his own experiences, intending to publish it in Liyue Harbor.\nTo his surprise, his manuscript was rejected by local publishing houses, who believed that no one would have any interest in a story with \"a setting as wildly unrealistic as the plot is banal.\"\nUndeterred, Xingqiu had a few copies printed privately, and sneakily placed them on the shelves of Wanwen Bookhouse during one of his many trips there. But just as the publishers had suspected, it failed to garner much interest from readers. This was quite a blow to Xingqiu's confidence.\nUnbeknownst to him, however, a passing merchant from Inazuma did purchase a copy to bring home, where it received rave reviews. Writers the region over attempted to copy the success of \"A Legend of Sword,\" but none succeeded — it maintains permanent residency in the number one bestseller spot to this day."
+      },
+      {
+        "Title": "Vision",
+        "Context": "The martial arts school known as the Guhua Clan has been in decline for several hundred years now. In its heyday, the name of the Clan rang like steel throughout the harbor. It was said that the Clan harbored three great secret arts — the ways of the \"Light Piercer\" for polearms, \"Rain Cutter\" for swords, and \"Life Ender\" for those who excelled in both. The three arts would be refined over the generations, and with time would reach their apex. Yet the Clan's strength would continue to wane, leading to them losing their influence... The three arts became diamonds hidden in the rough, quietly awaiting a successor.\nAfter many years, the Guhua Clan would finally get one in Xingqiu. It was he who successfully grasped the ancient \"Martial Principle\" after merely four years of study.\nThe Guhua weapon arts stress using the weapon as an extension of your body, and indeed this is a common idea amongst the various schools of martial arts in Liyue. But the way Xingqiu saw it, the basis of the polearm and sword was the use of a Vision. Martial artists were meant to see a Vision as an extension of themselves, and see their weapon as an extension of the Vision. Hence, he says: the arts of both the polearm and the sword are just the art of the \"eye.\" \nHaving come to this epiphany, Xingqiu took up a quill and penned a verse on the Martial Principle. Reading it, the Guhua head was shaken with tears, declaring that \"it is not Xingqiu who needs the Guhua Clan, but the Guhua Clan that needs Xingqiu.\" Since then, this verse has been sealed up at the Clan headquarters at Wangshan Hall. Disciples are proscribed from reading it, much less outsiders.\nThe verse reads thus:\nGuhua's arts I have studied long, in its secrets I am trained, now its long-lost depths fall upon me like the coming of blessed rain.\nThe beating heart of Guhua's sword art is as a shower of floating flowers. One amidst may seize a bloom, but those without read only doom.\nThe Guhua lance is a lantern's dance, like flames in night's deep glooming. Like sparks, they scatter with ease in the dark, then join like the daybreak looming.\nThey say the sword is as your arm — I say its glint is the beholder's eye, a light like the bright dawn coming.\nThose who wander are burdened not. Freely they cut rain, and enlightened they pierce light. Like a snaking dragon, they cannot be subdued. In their right eye the blade, and in the other the spear.\nThis text should have been free for all to read. The only reason why it was sealed is the dreadful handwriting."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 202501,
+      "Name": "Bamboo Rain",
+      "Description": "Formal wear prepared by the Feiyun Commerce Guild for Xingqiu. The bamboo prints are refined and the cut is most flattering, but Xingqiu's favorite aspect of the outfit is its inner pockets, into which a thinner novel might be stuffed.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_XingqiuCostumeBamboo",
+      "SideIcon": "UI_AvatarIcon_Side_XingqiuCostumeBamboo"
+    },
+    {
+      "Id": 202500,
+      "Name": "Azure Silk",
+      "Description": "Xingqiu's outfit. Fine robes woven from the high-quality silk sold by the Feiyun Commerce Guild.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104124,
+    113012,
+    100029,
+    112007,
+    104318,
+    113006
+  ],
+  "NameCard": {
+    "Name": "Xingqiu: Rainbow",
+    "Description": "Namecard style.\nCome watch the night rain that brings no rainbow.",
+    "Icon": "UI_NameCardIcon_Xingqiu",
+    "PicturePrefix": "UI_NameCardPic_Xingqiu"
+  }
+}

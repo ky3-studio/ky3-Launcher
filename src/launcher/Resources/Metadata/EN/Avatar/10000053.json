@@ -1,0 +1,1310 @@
+{
+  "Id": 10000053,
+  "PromoteId": 53,
+  "Sort": 35,
+  "Body": 5,
+  "Icon": "UI_AvatarIcon_Sayu",
+  "SideIcon": "UI_AvatarIcon_Side_Sayu",
+  "Name": "Sayu",
+  "Description": "A pint-sized ninja attached to the Shuumatsuban, who always seems sleep-deprived.",
+  "BeginTime": "2021-08-10T18:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 11,
+  "BaseValue": {
+    "HpBase": 993.8522,
+    "AttackBase": 20.4792,
+    "DefenseBase": 62.432476
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 5331,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+            "4-Hit DMG|{param5:F1P}",
+            "Charged Attack Spinning DMG|{param6:F1P}",
+            "Charged Attack Final DMG|{param7:P}",
+            "Charged Attack Stamina Cost|{param8:F1}/s",
+            "Max Duration|{param9:F1}s",
+            "Plunge DMG|{param10:F1P}",
+            "Low/High Plunge DMG|{param11:P}/{param12:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 533101,
+              "Level": 1,
+              "Parameters": [
+                0.7224,
+                0.7138,
+                0.4343,
+                0.4343,
+                0.98126,
+                0.625455,
+                1.1309,
+                40,
+                5,
+                0.745878,
+                1.49144,
+                1.862889
+              ]
+            },
+            {
+              "Id": 533102,
+              "Level": 2,
+              "Parameters": [
+                0.7812,
+                0.7719,
+                0.46965,
+                0.46965,
+                1.06113,
+                0.676364,
+                1.22295,
+                40,
+                5,
+                0.806589,
+                1.612836,
+                2.01452
+              ]
+            },
+            {
+              "Id": 533103,
+              "Level": 3,
+              "Parameters": [
+                0.84,
+                0.83,
+                0.505,
+                0.505,
+                1.141,
+                0.727273,
+                1.315,
+                40,
+                5,
+                0.8673,
+                1.734233,
+                2.16615
+              ]
+            },
+            {
+              "Id": 533104,
+              "Level": 4,
+              "Parameters": [
+                0.924,
+                0.913,
+                0.5555,
+                0.5555,
+                1.2551,
+                0.8,
+                1.4465,
+                40,
+                5,
+                0.95403,
+                1.907656,
+                2.382765
+              ]
+            },
+            {
+              "Id": 533105,
+              "Level": 5,
+              "Parameters": [
+                0.9828,
+                0.9711,
+                0.59085,
+                0.59085,
+                1.33497,
+                0.850909,
+                1.53855,
+                40,
+                5,
+                1.014741,
+                2.029052,
+                2.534396
+              ]
+            },
+            {
+              "Id": 533106,
+              "Level": 6,
+              "Parameters": [
+                1.05,
+                1.0375,
+                0.63125,
+                0.63125,
+                1.42625,
+                0.909091,
+                1.64375,
+                40,
+                5,
+                1.084125,
+                2.167791,
+                2.707688
+              ]
+            },
+            {
+              "Id": 533107,
+              "Level": 7,
+              "Parameters": [
+                1.1424,
+                1.1288,
+                0.6868,
+                0.6868,
+                1.55176,
+                0.989091,
+                1.7884,
+                40,
+                5,
+                1.179528,
+                2.358556,
+                2.945964
+              ]
+            },
+            {
+              "Id": 533108,
+              "Level": 8,
+              "Parameters": [
+                1.2348,
+                1.2201,
+                0.74235,
+                0.74235,
+                1.67727,
+                1.069091,
+                1.93305,
+                40,
+                5,
+                1.274931,
+                2.549322,
+                3.184241
+              ]
+            },
+            {
+              "Id": 533109,
+              "Level": 9,
+              "Parameters": [
+                1.3272,
+                1.3114,
+                0.7979,
+                0.7979,
+                1.80278,
+                1.149091,
+                2.0777,
+                40,
+                5,
+                1.370334,
+                2.740087,
+                3.422517
+              ]
+            },
+            {
+              "Id": 533110,
+              "Level": 10,
+              "Parameters": [
+                1.428,
+                1.411,
+                0.8585,
+                0.8585,
+                1.9397,
+                1.236364,
+                2.2355,
+                40,
+                5,
+                1.47441,
+                2.948195,
+                3.682455
+              ]
+            },
+            {
+              "Id": 533111,
+              "Level": 11,
+              "Parameters": [
+                1.5435,
+                1.525125,
+                0.927937,
+                0.927937,
+                2.096588,
+                1.336364,
+                2.416313,
+                40,
+                5,
+                1.578486,
+                3.156303,
+                3.942393
+              ]
+            },
+            {
+              "Id": 533112,
+              "Level": 12,
+              "Parameters": [
+                1.679328,
+                1.659336,
+                1.009596,
+                1.009596,
+                2.281087,
+                1.453964,
+                2.628948,
+                40,
+                5,
+                1.682562,
+                3.364411,
+                4.202331
+              ]
+            },
+            {
+              "Id": 533113,
+              "Level": 13,
+              "Parameters": [
+                1.815156,
+                1.793547,
+                1.091255,
+                1.091255,
+                2.465587,
+                1.571564,
+                2.841584,
+                40,
+                5,
+                1.786638,
+                3.572519,
+                4.462269
+              ]
+            },
+            {
+              "Id": 533114,
+              "Level": 14,
+              "Parameters": [
+                1.950984,
+                1.927758,
+                1.172913,
+                1.172913,
+                2.650087,
+                1.689164,
+                3.054219,
+                40,
+                5,
+                1.890714,
+                3.780627,
+                4.722207
+              ]
+            },
+            {
+              "Id": 533115,
+              "Level": 15,
+              "Parameters": [
+                2.09916,
+                2.07417,
+                1.261995,
+                1.261995,
+                2.851359,
+                1.817455,
+                3.286185,
+                40,
+                5,
+                1.99479,
+                3.988735,
+                4.982145
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10531,
+        "Name": "Shuumatsuban Ninja Blade",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\nAt the end of the sequence, performs a more powerful slash. \n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_04"
+      },
+      {
+        "GroupId": 5332,
+        "Proud": {
+          "Descriptions": [
+            "Fuufuu Windwheel DMG|{param1:F1P}",
+            "#Fuufuu Whirlwind Kick {LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press} DMG|{param3:F1P}",
+            "Fuufuu Whirlwind Kick Hold DMG|{param4:F1P}",
+            "Fuufuu Windwheel Elemental DMG|{param2:F1P}",
+            "Fuufuu Whirlwind Kick Elemental DMG|{param5:F1P}",
+            "Max Duration (Hold)|{param6:F1}s",
+            "CD|{param7:F1} to {param8:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 533201,
+              "Level": 1,
+              "Parameters": [
+                0.36,
+                0.168,
+                1.584,
+                2.176,
+                0.7616,
+                10,
+                6,
+                11
+              ]
+            },
+            {
+              "Id": 533202,
+              "Level": 2,
+              "Parameters": [
+                0.387,
+                0.1806,
+                1.7028,
+                2.3392,
+                0.81872,
+                10,
+                6,
+                11
+              ]
+            },
+            {
+              "Id": 533203,
+              "Level": 3,
+              "Parameters": [
+                0.414,
+                0.1932,
+                1.8216,
+                2.5024,
+                0.87584,
+                10,
+                6,
+                11
+              ]
+            },
+            {
+              "Id": 533204,
+              "Level": 4,
+              "Parameters": [
+                0.45,
+                0.21,
+                1.98,
+                2.72,
+                0.952,
+                10,
+                6,
+                11
+              ]
+            },
+            {
+              "Id": 533205,
+              "Level": 5,
+              "Parameters": [
+                0.477,
+                0.2226,
+                2.0988,
+                2.8832,
+                1.00912,
+                10,
+                6,
+                11
+              ]
+            },
+            {
+              "Id": 533206,
+              "Level": 6,
+              "Parameters": [
+                0.504,
+                0.2352,
+                2.2176,
+                3.0464,
+                1.06624,
+                10,
+                6,
+                11
+              ]
+            },
+            {
+              "Id": 533207,
+              "Level": 7,
+              "Parameters": [
+                0.54,
+                0.252,
+                2.376,
+                3.264,
+                1.1424,
+                10,
+                6,
+                11
+              ]
+            },
+            {
+              "Id": 533208,
+              "Level": 8,
+              "Parameters": [
+                0.576,
+                0.2688,
+                2.5344,
+                3.4816,
+                1.21856,
+                10,
+                6,
+                11
+              ]
+            },
+            {
+              "Id": 533209,
+              "Level": 9,
+              "Parameters": [
+                0.612,
+                0.2856,
+                2.6928,
+                3.6992,
+                1.29472,
+                10,
+                6,
+                11
+              ]
+            },
+            {
+              "Id": 533210,
+              "Level": 10,
+              "Parameters": [
+                0.648,
+                0.3024,
+                2.8512,
+                3.9168,
+                1.37088,
+                10,
+                6,
+                11
+              ]
+            },
+            {
+              "Id": 533211,
+              "Level": 11,
+              "Parameters": [
+                0.684,
+                0.3192,
+                3.0096,
+                4.1344,
+                1.44704,
+                10,
+                6,
+                11
+              ]
+            },
+            {
+              "Id": 533212,
+              "Level": 12,
+              "Parameters": [
+                0.72,
+                0.336,
+                3.168,
+                4.352,
+                1.5232,
+                10,
+                6,
+                11
+              ]
+            },
+            {
+              "Id": 533213,
+              "Level": 13,
+              "Parameters": [
+                0.765,
+                0.357,
+                3.366,
+                4.624,
+                1.6184,
+                10,
+                6,
+                11
+              ]
+            },
+            {
+              "Id": 533214,
+              "Level": 14,
+              "Parameters": [
+                0.81,
+                0.378,
+                3.564,
+                4.896,
+                1.7136,
+                10,
+                6,
+                11
+              ]
+            },
+            {
+              "Id": 533215,
+              "Level": 15,
+              "Parameters": [
+                0.855,
+                0.399,
+                3.762,
+                5.168,
+                1.8088,
+                10,
+                6,
+                11
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10532,
+        "Name": "Yoohoo Art: Fuuin Dash",
+        "Description": "#The special technique of the Yoohoo Ninja Arts!\nSayu curls up into a rolling Fuufuu Windwheel and smashes into opponents at high speed, dealing <color=#80FFD7FF>Anemo DMG</color>. When the duration ends, she unleashes a Fuufuu Whirlwind Kick, dealing <color=#80FFD7FF>AoE Anemo DMG</color>.\n\n<color=#FFD780FF>{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}</color>\nEnters the Fuufuu Windwheel state, rolling forward a short distance before using the Fuufuu Whirlwind Kick.\n\n<color=#FFD780FF>Hold</color>\nRolls about continuously in the Fuufuu Windwheel state, increasing Sayu's resistance to interruption while within that state.\nDuring this time, Sayu can control the direction of her roll, and can use the skill again to end her Windwheel state early and unleash a stronger version of the Fuufuu Whirlwind Kick.\nThe Hold version of this skill can trigger Elemental Absorption.\n\nThis skill has a maximum duration of 10s and enters CD once its effects end. The longer Sayu remains in her Windwheel state, the longer the CD.\n\n<color=#FFD780FF>Elemental Absorption</color>\nIf Sayu comes into contact with <color=#80C0FFFF>Hydro</color>/<color=#FF9999FF>Pyro</color>/<color=#99FFFFFF>Cryo</color>/<color=#FFACFFFF>Electro</color> while in her Windwheel state, she will deal additional elemental DMG of that type.\nElemental Absorption may only occur once per use of this skill.\n\n<i>Sayu can pull this skill off with her eyes closed. This technique was originally created for escaping, but now that she's got a Vision, might as well make her foes eat dirt while she's at it.</i>",
+        "Icon": "Skill_S_Sayu_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 5339,
+      "Proud": {
+        "Descriptions": [
+          "Skill Activation DMG|{param1:P}",
+          "Skill Activation Healing|{param3:F1P} ATK+{param2:I}",
+          "Muji-Muji Daruma DMG|{param4:P}",
+          "Muji-Muji Daruma Healing|{param6:F1P} ATK+{param5:I}",
+          "Duration|{param7:F1}s",
+          "CD|{param8:F1}s",
+          "Energy Cost|{param9:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 533901,
+            "Level": 1,
+            "Parameters": [
+              1.168,
+              577.3388,
+              0.9216,
+              0.52,
+              500.3603,
+              0.79872,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 533902,
+            "Level": 2,
+            "Parameters": [
+              1.2556,
+              635.0807,
+              0.99072,
+              0.559,
+              550.40326,
+              0.858624,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 533903,
+            "Level": 3,
+            "Parameters": [
+              1.3432,
+              697.63446,
+              1.05984,
+              0.598,
+              604.6165,
+              0.918528,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 533904,
+            "Level": 4,
+            "Parameters": [
+              1.46,
+              765,
+              1.152,
+              0.65,
+              663,
+              0.9984,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 533905,
+            "Level": 5,
+            "Parameters": [
+              1.5476,
+              837.17737,
+              1.22112,
+              0.689,
+              725.5537,
+              1.058304,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 533906,
+            "Level": 6,
+            "Parameters": [
+              1.6352,
+              914.16656,
+              1.29024,
+              0.728,
+              792.2777,
+              1.118208,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 533907,
+            "Level": 7,
+            "Parameters": [
+              1.752,
+              995.96765,
+              1.3824,
+              0.78,
+              863.17194,
+              1.19808,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 533908,
+            "Level": 8,
+            "Parameters": [
+              1.8688,
+              1082.5804,
+              1.47456,
+              0.832,
+              938.2364,
+              1.277952,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 533909,
+            "Level": 9,
+            "Parameters": [
+              1.9856,
+              1174.0051,
+              1.56672,
+              0.884,
+              1017.4711,
+              1.357824,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 533910,
+            "Level": 10,
+            "Parameters": [
+              2.1024,
+              1270.2417,
+              1.65888,
+              0.936,
+              1100.8761,
+              1.437696,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 533911,
+            "Level": 11,
+            "Parameters": [
+              2.2192,
+              1371.29,
+              1.75104,
+              0.988,
+              1188.4513,
+              1.517568,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 533912,
+            "Level": 12,
+            "Parameters": [
+              2.336,
+              1477.1501,
+              1.8432,
+              1.04,
+              1280.1968,
+              1.59744,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 533913,
+            "Level": 13,
+            "Parameters": [
+              2.482,
+              1587.8221,
+              1.9584,
+              1.105,
+              1376.1125,
+              1.69728,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 533914,
+            "Level": 14,
+            "Parameters": [
+              2.628,
+              1703.3059,
+              2.0736,
+              1.17,
+              1476.1985,
+              1.79712,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 533915,
+            "Level": 15,
+            "Parameters": [
+              2.774,
+              1823.6016,
+              2.1888,
+              1.235,
+              1580.4547,
+              1.89696,
+              12,
+              20,
+              80
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10535,
+      "Name": "Yoohoo Art: Mujina Flurry",
+      "Description": "The other super special technique of the Yoohoo Ninja Arts! It summons a pair of helping hands for Sayu.\nDeals <color=#80FFD7FF>Anemo DMG</color> to nearby opponents and heals all nearby party members. The amount of HP restored is based on Sayu's ATK. This skill then summons a Muji-Muji Daruma.\n\n<color=#FFD780FF>Muji-Muji Daruma</color>\nAt specific intervals, the Daruma will take one of several actions based on the situation around it:\n·If the HP of nearby characters is above 70%, it will attack a nearby opponent, dealing <color=#80FFD7FF>Anemo DMG</color>.\n·If there are active characters with 70% or less HP nearby, it will heal the active character with the lowest percentage HP left. If there are no opponents nearby, it will heal active characters nearby even if they have 70% HP or more.\n\n<i>People who don't know the first thing about ninjutsu love to watch Sayu show off this skill, and some have tried to learn it from her. But Sayu just wants to sleep and not be disturbed.</i>",
+      "Icon": "Skill_E_Sayu_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 5321,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 532101,
+              "Level": 1,
+              "Parameters": [
+                300,
+                1.2,
+                2
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 532101,
+        "Name": "Someone More Capable",
+        "Description": "When Sayu triggers a Swirl reaction while active, she heals all your characters and nearby allies for 300 HP. She will also heal an additional 1.2 HP for every point of Elemental Mastery she has.\nThis effect can be triggered once every 2s.",
+        "Icon": "UI_Talent_S_Sayu_05"
+      },
+      {
+        "GroupId": 5322,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 532201,
+              "Level": 1,
+              "Parameters": [
+                0.2
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 532201,
+        "Name": "No Work Today!",
+        "Description": "The Muji-Muji Daruma created by <color=#FFD780FF>Yoohoo Art: Mujina Flurry</color> gains the following effects:\n·When healing a character, it will also heal characters near that healed character for 20% the amount of HP.\n·Increases the AoE of its attack against opponents.",
+        "Icon": "UI_Talent_S_Sayu_06"
+      },
+      {
+        "GroupId": 5323,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 532301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 532301,
+        "Name": "Yoohoo Art: Silencer's Secret",
+        "Description": "When Sayu is in the party, your characters will not startle Crystalflies and certain other animals when getting near them.\nCheck the \"Other\" sub-category of the \"Living Beings / Wildlife\" section in the Archive for creatures this skill works on.",
+        "Icon": "UI_Talent_S_Sayu_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 531,
+        "Name": "Multi-Task no Jutsu",
+        "Description": "The Muji-Muji Daruma created by <color=#FFD780FF>Yoohoo Art: Mujina Flurry</color> will ignore HP limits and can simultaneously attack nearby opponents and heal characters.",
+        "Icon": "UI_Talent_S_Sayu_01"
+      },
+      {
+        "Id": 532,
+        "Name": "Egress Prep",
+        "Description": "#<color=#FFD780FF>Yoohoo Art: Fuuin Dash</color> gains the following effects:\n·DMG of Fuufuu Whirlwind Kick in {LAYOUT_MOBILE#Tapping}{LAYOUT_PC#Press}{LAYOUT_PS#Press} Mode increased by 3.3%.\n·Every 0.5s in the Fuufuu Windwheel state will increase the DMG of this Fuufuu Whirlwind Kick by 3.3%. The maximum DMG increase possible through this method is 66%.",
+        "Icon": "UI_Talent_S_Sayu_02"
+      },
+      {
+        "Id": 533,
+        "Name": "Eh, the Bunshin Can Handle It",
+        "Description": "Increases the Level of <color=#FFD780FF>Yoohoo Art: Mujina Flurry</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Sayu_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 534,
+        "Name": "Skiving: New and Improved",
+        "Description": "Sayu recovers 1.2 Energy when she triggers a Swirl reaction.\nThis effect occurs once every 2s.",
+        "Icon": "UI_Talent_S_Sayu_03"
+      },
+      {
+        "Id": 535,
+        "Name": "Speed Comes First",
+        "Description": "Increases the Level of <color=#FFD780FF>Yoohoo Art: Fuuin Dash</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Sayu_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 536,
+        "Name": "Sleep O'Clock",
+        "Description": "The Muji-Muji Daruma created by Sayu's <color=#FFD780FF>Yoohoo Art: Mujina Flurry</color> will now also benefit from her Elemental Mastery. Each point of Sayu's Elemental Mastery will produce the following effects:\n·Increases the damage dealt by the Muji-Muji Daruma's attacks by 0.2% ATK. A maximum DMG increase of 400% ATK can be gained via this method.\n·Increases the HP restored by the Muji-Muji Daruma by 3. A maximum of 6,000 additional HP can be restored in this manner.",
+        "Icon": "UI_Talent_S_Sayu_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Mujina Ninja",
+    "Detail": "A pint-sized ninja attached to the Shuumatsuban, who always seems to be lacking sleep.",
+    "Association": 5,
+    "Native": "Shuumatsuban",
+    "BirthMonth": 10,
+    "BirthDay": 19,
+    "VisionBefore": "Anemo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Nyctereutes Minor",
+    "CvChinese": "Sakula小舞",
+    "CvJapanese": "洲崎綾",
+    "CvEnglish": "Lilypichu (Lily Ki)",
+    "CvKorean": "Lee Ji-hyeon",
+    "CookBonus": {
+      "OriginItemId": 108256,
+      "ItemId": 108303,
+      "InputList": [
+        100084,
+        101210,
+        100092
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Bye!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Gotta dash~!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Poof!"
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "I'm outta here."
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "Can't catch me~!"
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "And away I go."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Twinjutsu!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Come on out!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Hah! ...Phew..."
+      },
+      {
+        "Title": "Sprint Start: I",
+        "Context": "Make my escape."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Looks kinda cozy in here... Nap time!"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Mission accomplished! Can I go back and sleep now?"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Ooh, what's in here? Maybe a growth serum?"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "What was that escape method again...?"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "I feel kinda woozy."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Whew, so tired."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "I'll protect you."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Take 5. Or maybe 10."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Almost. Got. Away..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Uh, sw—sweet dreams..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "My fault for being so lazy..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Ow."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Almost dodged that."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "I'm about to pass out over here."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "So sleepy."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Can I go catch up on my sleep?"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Drat, you caught me."
+      },
+      {
+        "Title": "Hello",
+        "Context": "Sayu, Shuumatsuban, at your disposal! Whew, but if you don't need me right now, I'm gonna grab some sleep. Nope, no need to tuck me in — I need the extra room to grow into."
+      },
+      {
+        "Title": "Chat: Asleep",
+        "Context": "*yawns* *snoring*"
+      },
+      {
+        "Title": "Chat: Work",
+        "Context": "Seems like I should have just stayed in bed today."
+      },
+      {
+        "Title": "Chat: Height",
+        "Context": "Surely I should be due a growth spurt by now?"
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Eek, let's find shelter, quick! Watering works on plants, but not people..."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Phew, this weather is wild! Best thing to do is dive under the covers where it's dark and snug and warm and nyam nyam nyam~ *sleeps*"
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "It's really easy to hide in weather like this. There's this ninjutsu technique called Cloak of Snow where you can pretty much make yourself invisible — all other people see when they look at you is the snowflakes dancing in the air. Wait, it's confidential though! Don't tell any of this to the shrine maiden..."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "Loooove it when the weather's like this, just makes you wanna... *yawn* doze off for a while."
+      },
+      {
+        "Title": "When It's Windy",
+        "Context": "A windy day is a good day for a getaway."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "I always know it's time to get some shut-eye when the wind's so strong that I can't open my eyes anyway."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "...Morning? Already? Okay, I'm just gonna snooze for, like, 10 more minutes... Please, just 10 minutes... No? Okay, 5 minutes then? *snores*"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Is it noon yet? Finally, I'm so ready for my nap."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Recon confirms, no sign of the shrine maiden within a 3-mile radius. Moving to the next phase: sleepy time!"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "At long last... bed time... G'night..."
+      },
+      {
+        "Title": "About Sayu: Shuumatsuban",
+        "Context": "Yeah, I'm in the Shuumatsuban, but they only ever get me to do stuff like... *yawn* information gathering and stealing. So, y'know... it's not really a big deal if the work doesn't get done."
+      },
+      {
+        "Title": "About Sayu: Skiving",
+        "Context": "So I don't do any important work at the Shuumatsuban, and anything that gets put off for long enough ends up getting done by someone who's more suited to it anyway. Sleep, on the other hand — that is of the utmost importance. Because I need to get enough sleep to make sure I get my growth spurt."
+      },
+      {
+        "Title": "About Us: Favor",
+        "Context": "Hey, will you do me a favor and let me know if you see the shrine maiden coming? I'm just gonna, um... rest my eyes for a moment."
+      },
+      {
+        "Title": "About Us: Headpats",
+        "Context": "I'm not a pet, y'know! Hmm, but since it's you... Okay, you can pat my head and I promise not to bite your hand. Just a little, though! If you pat someone's head too much, it stunts their growth."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "My sword is crazy heavy, even with my ninjutsu training there's no way I could lift it without the help of my Vision. So yeah, having a Vision is a huge help for me."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Sensei says I'll be the last ninja ever in our line. I guess it can't be helped, because this style of ninjutsu wouldn't be much help in a fight anyway — all I've been taught is how to escape and how to cover your tracks."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Do you know the mujina? It looks similar to a tanuki, but it's way cuter. I'll take you to see one next time!"
+      },
+      {
+        "Title": "About Kamisato Ayaka",
+        "Context": "As the eldest daughter of the Kamisato Clan, she always looks very graceful and elegant. But she got one of the shrine maidens to keep tabs on me and make sure I don't slack off... Why would she do that?"
+      },
+      {
+        "Title": "About Kamisato Ayato",
+        "Context": "Sometimes, when I'm taking a rest up in a tree, I overhear the shrine maidens talking about him. Sounds like he's pretty important and super busy most of the time. I don't get it, though — it's only work, or whatever, so why doesn't he just... not do it?"
+      },
+      {
+        "Title": "About Thoma",
+        "Context": "He's got a Vision, and yet for some reason he pesters me about learning ninjutsu every time I run into him. I don't know what his deal is. It's not like I'd have the time to teach him anyway, I barely get enough sleep as it is."
+      },
+      {
+        "Title": "About Yoimiya",
+        "Context": "Every time she sees me she says, \"Hey, little tanuki! Let's go hang out at the festival.\" Firstly, I'm not a tanuki. Secondly, I don't wanna go to a festival. Thirdly, she says she wants to hang out — but really, she just wants me to do a ninjutsu performance during the fireworks show. That's not even related to my work for the Shuumatsuban!"
+      },
+      {
+        "Title": "About the Raiden Shogun",
+        "Context": "Her Excellency? Definitely not someone I'd ever get to meet. If you've got questions, maybe Miss Ayaka's the person to ask."
+      },
+      {
+        "Title": "About Yae Miko",
+        "Context": "She's always patting me on the head... I've never bitten her, though, or even said anything, because I'm frightened of how she'd react if I stood up to her. But what am I gonna do? Because if she keeps on patting my head, I'm gonna get stuck at this height forever!"
+      },
+      {
+        "Title": "About Arataki Itto",
+        "Context": "Why does he have to make such a racket? And how did he get so tall!?"
+      },
+      {
+        "Title": "About Kuki Shinobu",
+        "Context": "Doesn't ring a bell, umm... What? Arataki Itto's little sidekick? Ugh, well she's definitely gotta be a sleep disturbance then. Birds of a feather flock together..."
+      },
+      {
+        "Title": "About Kirara",
+        "Context": "One time, when I woke up from an afternoon nap, I felt something warm against my back. I turned around and saw a cat curled up fast asleep. You wouldn't believe this — it had not only one, but two fluffy tails! I almost fell from the tree in surprise. I—Is this some form of ninjutsu too?"
+      },
+      {
+        "Title": "About Yumemizuki Mizuki",
+        "Context": "That strange, purple youkai... Every time she looks at me, I get this feeling like she could devour me whole... Eek! I can't afford to get on her bad side, so I'm just gonna stay out of her way!"
+      },
+      {
+        "Title": "About Prune",
+        "Context": "She gave me this big, thick book called \"An Introduction to Nutrition\" and told me that if I wanna grow taller, I also need to eat well — apparently, just sleeping all the time isn't enough. Kinda weird, though... Despite everything she knows, we're still pretty much the same height. I dunno, maybe she actually doesn't wanna grow taller?"
+      },
+      {
+        "Title": "More About Sayu: I",
+        "Context": "Zzzz..."
+      },
+      {
+        "Title": "More About Sayu: II",
+        "Context": "Huh? You wanna know the name of my style of ninjutsu? Uhh... Y'know what, I can't think straight right now, I'm still half asleep here. Lemme snooze a while longer, maybe my mind'll be clearer when I wake up."
+      },
+      {
+        "Title": "More About Sayu: III",
+        "Context": "Alright, fine... I'll tell you. But you'd better not laugh, or I'm never talking to you again. Uh so, my style of ninjutsu is called... um... Yoohoo Art.\nThe reason is supposedly that our style focuses on making fun of the enemy, but still... I mean... *sigh*"
+      },
+      {
+        "Title": "More About Sayu: IV",
+        "Context": "Do you know how to climb trees? I'm an expert, I can teach you. There's this tree down at the shrine — it's the perfect place, you could just literally sleep there all day if you wanted and no one would ever find you... Uh, I just mean, it's a great place for a power nap. Next time you wanna take a nap, let me know, I'll take you there."
+      },
+      {
+        "Title": "More About Sayu: V",
+        "Context": "It was actually Sensei who gave me this outfit. They said it was modeled after the mujina, and it could help with escapes, or something... and then Sensei said that I was all grown up and ready to go it alone, but that I should still be careful to protect myself... then they left me. Am I really ready to go it alone, at my height?\nUm... Hmm? Y—You'll keep my company? Really? Promise you won't leave me?"
+      },
+      {
+        "Title": "Sayu's Hobbies",
+        "Context": "When I put my hood on, I can snooze away to my heart's content without having to worry about the shrine maiden finding me. *sigh* I think it must be one of the best feelings in the whole world."
+      },
+      {
+        "Title": "Sayu's Troubles: Misunderstanding",
+        "Context": "For some reason, when people meet me for the first time, they always call me tanuki, or teddy-bear, or kitty-cat... But Sayu is just Sayu — and definitely not a tanuki."
+      },
+      {
+        "Title": "Sayu's Troubles: Height",
+        "Context": "When is my growth spurt gonna come? Everyone my age practically twice my height, and I'm still... Ugh, enough, I need sleep, sleep is the answer. Good night!"
+      },
+      {
+        "Title": "Sayu's Troubles: Feedback Loop",
+        "Context": "Recently someone told me that if you get annoyed too easily, that'll stunt your growth, too! ...Gah! I dunno what I can do about that..."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "High-carb foods that give you instant energy, like rice balls. If you eat one the moment you wake up, it stops you feeling so groggy and bleary-eyed. Then, you can just relax and get straight back to sleep."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Can't be picky about food when you've still got growing to do! ...That said, I haven't gained any height recently — maybe I'm not eating enough vegetables? But salad isn't filling enough and sometimes it can be really bitter... *sigh*"
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "I'm soooo full, time for a nap..."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "If you eat enough of this... it makes you really sleepy."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Uh oh... Need an escape plan."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Wanna learn some ninja skills? I can teach you! Well, only the skills I know, of course. Hmm? Why aren't I asleep? ...Uhh, because I'm not sleepy... and also because today is a special day! I had to stay awake today so I'd have the chance to say it to you in person: Happy Birthday."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Is it just me, or did I get a little taller!?"
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Awesome, now I can slip away faster than ever. Hee-hee, they can't catch me now."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Hey, thanks for going and gathering all those materials for me. I would've gone myself, but... I probably would've got about halfway before falling asleep."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I think I'm finally ready to go it alone now, just like Sensei said I should. And... maybe it's not such a big deal now if I can't grow any taller. Because what really matters... is that I have you to keep me company."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Most Inazumans are unaware of the existence of the Shuumatsuban. In fact, the Shuumatsuban is a secret organization under the Yashiro Commission.\nThere is also a little ninja who goes by the name of Sayu in the Shuumatsuban, and this fact is even less known.\nSayu is a special existence in the Shuumatsuban. She has been raised in the Shuumatsuban since she was a child, and is extremely loyal to the organization.\nThat said, her most prominent trait is not \"loyalty,\" but \"laziness.\"\nLazing around is what Sayu does best. She has long mastered the various arts of ninjutsu, particularly those that help her to slack off or shirk her duties, such as escape techniques and aura concealment.\nPeople who don't know about her habits will have to make a lot of effort to find her.\nHowever, if you ask Sayu about her slacking, she will shrug and reply, \"It's not that I'm lazy, I just want to spend my time on more meaningful things.\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Sayu is petite and can even be described as delicate.\nThis is also something that bothers her —\nOne by one, her peers are growing taller, but she still has the stature of a child, as her height has not changed at all.\nSayu is really anxious about this matter.\nDay by day, the world seems to be sprouting skyward, and only she remains small as ever.\nGrowing taller has gradually become an obsession in Sayu's mind.\n\"As long as I sleep long enough, I can definitely grow taller!\"\nShe came to believe this ever so firmly, seizing every opportunity to sleep as much as possible, creating every opportunity and circumstance, even when there were none.\nPeople around little Sayu often let her be, as they don't have the heart to disturb her sleep.\nSo now, the situation has progressed such that Sayu is able to fall asleep, even whilst standing."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "The ninjutsu that Sayu has learned is not very powerful in combat, but it is quite useful in the matter of slacking off.\nShe is extremely skilled at hiding and covering her tracks, and is an expert in this area. Therefore, if she has the intention to hide, ordinary people absolutely cannot find her.\nHowever, even the most ingenious puzzles have answers, and even the most elusive treasures have clues for people to find them. This also holds true for Sayu.\nAfter spending enough time with Sayu, one will understand her habits and preferences. Trying to find her doesn't seem so difficult anymore.\nFor example, if you go to Sayu's room early in the morning and lift the covers, the odds are that you will find her in bed.\nAt noon, you can check out the trees near the shrine and who knows, you may find something unexpected.\nIt will be more challenging to find Sayu at night, but it's a good idea to go to her house and wait for her to emerge.\nHowever, please remember not to disturb Sayu, who is busy growing taller, unless it is absolutely necessary.\nEven gentle rabbits bite when provoked, let alone Sayu..."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "That said, finding Sayu doesn't mean that she can be put to work quietly.\nMoreover, Sayu's work at the Shuumatsuban is not that of a fixed daily routine, but missions that pop up if and as needed.\nAnd so, this happens:\nWhen new missions are assigned, you won't see hide or tail of her.\nBy the time she has been found (and with much effort), a more suitable person has been assigned for the mission.\nAnd in case there is no other suitable candidate other than Sayu, all the more she will try to slip away, so as not to be overwhelmed by the mission.\nIt's just that... If Sayu used her ninjutsu to work hard, she would have had great accomplishments in the Shuumatsuban."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Sayu is the last successor to the Ninjutsu Art — Yoohoo Art.\nIn this school of ninjutsu, which is known for teasing its enemies, Sayu has learned only ninjutsu such as escape and clone techniques.\nThese ninjutsu are of little use in actual combat, but have an undeniable aesthetic flair.\nAmongst falling leaves, a silhouette vanishes in a flash, a gentle breeze blows, and a kite suddenly appears on the ground... The incredible scene is comparable to an artistic performance.\nThus, whenever there is a festival, Sayu will be invited by various parties to perform her mysterious ninjutsu.\nIf it's Yoimiya who's searching for her, Sayu can still find ways to hide.\nBut if the person in question is Lady Guuji Yae, resistance is futile for Sayu.\nClone techniques do nothing to fool the Lady Guuji's sharp eyes, and aura concealment doesn't help Sayu at all in escaping from the Lady Guuji's grasp.\nRunning for the hills is even less feasible, and might even risk angering the Lady Guuji...\nFortunately, there are very few circumstances that require Lady Guuji Yae to make a personal appearance."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "For as long as Sayu can remember, she has been studying ninjutsu with her sensei in the Shuumatsuban.\nAlthough the Shuumatsuban is a clandestine organization, the elders are very kind and have taken good care of young Sayu.\n\"Being overly reliant on others is never a good thing for a ninja.\"\nAfter Sayu had reached a bottleneck in learning ninjutsu, her sensei observed her situation and thought thusly.\nAs the years passed, Sayu grew steadily. Once she was capable enough to defend herself, her sensei chose to leave quietly.\nA young animal that leaves the protection of its parents will grow up rapidly. The same is true of the sensei's expectations for Sayu.\nThe young ninja did not disappoint her sensei. Soon after, Sayu obtained a Vision.\nAnd then, she started working diligently in the Shuumatsuban... diligently shirking her duties.\nSayu is always busy sleeping and hiding from people, so in that sense, she also has a lot to do.\nOccasionally, when Sayu is free and alone to enjoy the moonlight, she feels lost deep inside.\nThe people who have always been with you will one day leave...is this how life is meant to be?\nBut perhaps someday in the future, I will also meet the person who will always be with me.\nPondering the matter, the little ninja fell asleep again..."
+      },
+      {
+        "Title": "Mini Mujina",
+        "Context": "Sayu's outfit is said to be a gift from her sensei.\nThe style references the form of a small animal — the \"mujina,\" and Sayu's favorite colors were also specially chosen for it.\nIt is light and flexible, thus making it suitable for a ninja.\nSayu is especially fond of the huge hood, as it brings about a sense of security.\nThe long tail is designed for Sayu to maintain balance on the branches.\nAs for the only drawback... this outfit probably looks too much like a tanuki, and Sayu often gets misunderstood because of it.\nInitially, she would seriously explain to the other party that:\n\"I'm not a tanuki, I'm Sayu.\"\nHowever, over time, similar incidents have occurred too many times, and Sayu now bears a grudge against tanuki.\nNowadays, if such a situation happens again, Sayu will pout in anger.\nSo, in order to get along well with Sayu, please memorize the following:\nSayu is not a tanuki, but Sayu.\nHer outfit is also not that of a tanuki's, but a mini mujina."
+      },
+      {
+        "Title": "Vision",
+        "Context": "This is the story of Sayu when she just started being on her own.\nFragile beings walking alone in this world inevitably find themselves in scary situations. The only way to understand what it's like is to have experienced it.\nThis is exactly what happened to Sayu. Adept at observation and evasion, she has always understood that she is not suitable for combat.\nHer overly petite stature gives her no advantage in terms of strength to speak of, and her ninjutsu will not be of much use in actual combat.\nYet missions do not wait for ninjas to grow fully before descending upon them. In an era of turmoil, Sayu would also find herself in trouble because of not-so-important work.\nSurrounded by strong foes, she had to do her best and barely managed to escape. It cost her almost everything to bring the information back safely.\nExhausted and wounded, Sayu was about to faint, but only one thing lingered in her mind:\n\"It's not only strong brute force that can overpower everything, the weak have their own way of surviving. It's because you're weak that you can notice those unseen moments that change your fate... The chances of escaping from here are slim, but that's what my ninjutsu is for.\"\nThe moment the leaves fell, she disappeared. All her pursuers were incredulous. The tiny ninja disappeared as if she were dust in the wind.\nThe next morning, Sayu struggled to get up, and found that the ninja pack strapped to her leg had long since disappeared.\nHowever, a surprising object appeared in the same place instead — a Vision gleaming in the sunrise.\nNow, with the power of the Vision, Sayu can wield a claymore taller than herself. She no longer has to fear the omnipresent strife of a chaotic world.\nUnfortunately, Sayu's most immediate worries have not yet been resolved.\nRegarding her growing taller, it seems that even a Vision is unable to do anything about it."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 205300,
+      "Name": "Mini Mujina",
+      "Description": "Sayu's outfit. Marvelous attire designed after the mysterious animal known as the Mujina.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104154,
+    113022,
+    101203,
+    112040,
+    104328,
+    113019
+  ],
+  "NameCard": {
+    "Name": "Sayu: Muji-Muji Daruma",
+    "Description": "Namecard style.\nIt is even smaller than Sayu, sure, but it can help her do the things she doesn't want to do.",
+    "Icon": "UI_NameCardIcon_Sayu",
+    "PicturePrefix": "UI_NameCardPic_Sayu"
+  }
+}

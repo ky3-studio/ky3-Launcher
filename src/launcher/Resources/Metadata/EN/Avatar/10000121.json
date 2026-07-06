@@ -1,0 +1,1120 @@
+{
+  "Id": 10000121,
+  "PromoteId": 121,
+  "Sort": 102,
+  "Body": 5,
+  "Icon": "UI_AvatarIcon_Aino",
+  "SideIcon": "UI_AvatarIcon_Side_Aino",
+  "Name": "Aino",
+  "Description": "A genius mechanic and inventor from Nod-Krai who loves interesting machines and sweet treats.",
+  "BeginTime": "2025-09-09T00:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 11,
+  "BaseValue": {
+    "HpBase": 939.1447,
+    "AttackBase": 20.30112,
+    "DefenseBase": 50.93025
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 12131,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}×2",
+            "Charged Attack Loop DMG|{param4:F1P}",
+            "Charged Attack Final DMG|{param5:P}",
+            "Charged Attack Stamina Cost|{param6:F1}/s",
+            "Max Duration|{param7:F1}s",
+            "Plunge DMG|{param8:F1P}",
+            "Low/High Plunge DMG|{param9:P}/{param10:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1213101,
+              "Level": 1,
+              "Parameters": [
+                0.664986,
+                0.661916,
+                0.492165,
+                0.62522,
+                1.1309,
+                40,
+                5,
+                0.745878,
+                1.49144,
+                1.862889
+              ]
+            },
+            {
+              "Id": 1213102,
+              "Level": 2,
+              "Parameters": [
+                0.719113,
+                0.715793,
+                0.532225,
+                0.67611,
+                1.22295,
+                40,
+                5,
+                0.806589,
+                1.612836,
+                2.01452
+              ]
+            },
+            {
+              "Id": 1213103,
+              "Level": 3,
+              "Parameters": [
+                0.77324,
+                0.76967,
+                0.572285,
+                0.727,
+                1.315,
+                40,
+                5,
+                0.8673,
+                1.734233,
+                2.16615
+              ]
+            },
+            {
+              "Id": 1213104,
+              "Level": 4,
+              "Parameters": [
+                0.850564,
+                0.846637,
+                0.629514,
+                0.7997,
+                1.4465,
+                40,
+                5,
+                0.95403,
+                1.907656,
+                2.382765
+              ]
+            },
+            {
+              "Id": 1213105,
+              "Level": 5,
+              "Parameters": [
+                0.904691,
+                0.900514,
+                0.669573,
+                0.85059,
+                1.53855,
+                40,
+                5,
+                1.014741,
+                2.029052,
+                2.534396
+              ]
+            },
+            {
+              "Id": 1213106,
+              "Level": 6,
+              "Parameters": [
+                0.96655,
+                0.962087,
+                0.715356,
+                0.90875,
+                1.64375,
+                40,
+                5,
+                1.084125,
+                2.167791,
+                2.707688
+              ]
+            },
+            {
+              "Id": 1213107,
+              "Level": 7,
+              "Parameters": [
+                1.051606,
+                1.046751,
+                0.778308,
+                0.98872,
+                1.7884,
+                40,
+                5,
+                1.179528,
+                2.358556,
+                2.945964
+              ]
+            },
+            {
+              "Id": 1213108,
+              "Level": 8,
+              "Parameters": [
+                1.136663,
+                1.131415,
+                0.841259,
+                1.06869,
+                1.93305,
+                40,
+                5,
+                1.274931,
+                2.549322,
+                3.184241
+              ]
+            },
+            {
+              "Id": 1213109,
+              "Level": 9,
+              "Parameters": [
+                1.221719,
+                1.216079,
+                0.90421,
+                1.14866,
+                2.0777,
+                40,
+                5,
+                1.370334,
+                2.740087,
+                3.422517
+              ]
+            },
+            {
+              "Id": 1213110,
+              "Level": 10,
+              "Parameters": [
+                1.314508,
+                1.308439,
+                0.972885,
+                1.2359,
+                2.2355,
+                40,
+                5,
+                1.47441,
+                2.948195,
+                3.682455
+              ]
+            },
+            {
+              "Id": 1213111,
+              "Level": 11,
+              "Parameters": [
+                1.407297,
+                1.400799,
+                1.041559,
+                1.32314,
+                2.3933,
+                40,
+                5,
+                1.578486,
+                3.156303,
+                3.942393
+              ]
+            },
+            {
+              "Id": 1213112,
+              "Level": 12,
+              "Parameters": [
+                1.500086,
+                1.49316,
+                1.110233,
+                1.41038,
+                2.5511,
+                40,
+                5,
+                1.682562,
+                3.364411,
+                4.202331
+              ]
+            },
+            {
+              "Id": 1213113,
+              "Level": 13,
+              "Parameters": [
+                1.592874,
+                1.58552,
+                1.178907,
+                1.49762,
+                2.7089,
+                40,
+                5,
+                1.786638,
+                3.572519,
+                4.462269
+              ]
+            },
+            {
+              "Id": 1213114,
+              "Level": 14,
+              "Parameters": [
+                1.685663,
+                1.677881,
+                1.247581,
+                1.58486,
+                2.8667,
+                40,
+                5,
+                1.890714,
+                3.780627,
+                4.722207
+              ]
+            },
+            {
+              "Id": 1213115,
+              "Level": 15,
+              "Parameters": [
+                1.778452,
+                1.770241,
+                1.316256,
+                1.6721,
+                3.0245,
+                40,
+                5,
+                1.99479,
+                3.988735,
+                4.982145
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11211,
+        "Name": "Bish-Bash-Bosh Repair",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\nAt the end of the sequence, performs a more powerful slash. \n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_04"
+      },
+      {
+        "GroupId": 12132,
+        "Proud": {
+          "Descriptions": [
+            "Stage 1 DMG|{param1:F1P}",
+            "Stage 2 DMG|{param2:F1P}",
+            "CD|{param3:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1213201,
+              "Level": 1,
+              "Parameters": [
+                0.656,
+                1.888,
+                10
+              ]
+            },
+            {
+              "Id": 1213202,
+              "Level": 2,
+              "Parameters": [
+                0.7052,
+                2.0296,
+                10
+              ]
+            },
+            {
+              "Id": 1213203,
+              "Level": 3,
+              "Parameters": [
+                0.7544,
+                2.1712,
+                10
+              ]
+            },
+            {
+              "Id": 1213204,
+              "Level": 4,
+              "Parameters": [
+                0.82,
+                2.36,
+                10
+              ]
+            },
+            {
+              "Id": 1213205,
+              "Level": 5,
+              "Parameters": [
+                0.8692,
+                2.5016,
+                10
+              ]
+            },
+            {
+              "Id": 1213206,
+              "Level": 6,
+              "Parameters": [
+                0.9184,
+                2.6432,
+                10
+              ]
+            },
+            {
+              "Id": 1213207,
+              "Level": 7,
+              "Parameters": [
+                0.984,
+                2.832,
+                10
+              ]
+            },
+            {
+              "Id": 1213208,
+              "Level": 8,
+              "Parameters": [
+                1.0496,
+                3.0208,
+                10
+              ]
+            },
+            {
+              "Id": 1213209,
+              "Level": 9,
+              "Parameters": [
+                1.1152,
+                3.2096,
+                10
+              ]
+            },
+            {
+              "Id": 1213210,
+              "Level": 10,
+              "Parameters": [
+                1.1808,
+                3.3984,
+                10
+              ]
+            },
+            {
+              "Id": 1213211,
+              "Level": 11,
+              "Parameters": [
+                1.2464,
+                3.5872,
+                10
+              ]
+            },
+            {
+              "Id": 1213212,
+              "Level": 12,
+              "Parameters": [
+                1.312,
+                3.776,
+                10
+              ]
+            },
+            {
+              "Id": 1213213,
+              "Level": 13,
+              "Parameters": [
+                1.394,
+                4.012,
+                10
+              ]
+            },
+            {
+              "Id": 1213214,
+              "Level": 14,
+              "Parameters": [
+                1.476,
+                4.248,
+                10
+              ]
+            },
+            {
+              "Id": 1213215,
+              "Level": 15,
+              "Parameters": [
+                1.558,
+                4.484,
+                10
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11212,
+        "Name": "Musecatcher",
+        "Description": "Aino throws a <color=#FFD780FF>Musecatcher</color> forward, dealing <color=#80C0FFFF>Hydro DMG</color> and dragging her along behind it. When the dragging stops, Aino deals <color=#80C0FFFF>AoE Hydro DMG</color> to nearby opponents.\nHolding the Skill will cause it to behave differently.\n\n<color=#FFD780FF>Hold</color>\nEnter Aiming Mode to adjust the Musecatcher's throwing direction.",
+        "Icon": "Skill_S_Aino_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 12139,
+      "Proud": {
+        "Descriptions": [
+          "Water Ball DMG|{param1:F1P}",
+          "Duration|{param2:F1}s",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1213901,
+            "Level": 1,
+            "Parameters": [
+              0.20112,
+              14,
+              13.5,
+              50
+            ]
+          },
+          {
+            "Id": 1213902,
+            "Level": 2,
+            "Parameters": [
+              0.216204,
+              14,
+              13.5,
+              50
+            ]
+          },
+          {
+            "Id": 1213903,
+            "Level": 3,
+            "Parameters": [
+              0.231288,
+              14,
+              13.5,
+              50
+            ]
+          },
+          {
+            "Id": 1213904,
+            "Level": 4,
+            "Parameters": [
+              0.2514,
+              14,
+              13.5,
+              50
+            ]
+          },
+          {
+            "Id": 1213905,
+            "Level": 5,
+            "Parameters": [
+              0.266484,
+              14,
+              13.5,
+              50
+            ]
+          },
+          {
+            "Id": 1213906,
+            "Level": 6,
+            "Parameters": [
+              0.281568,
+              14,
+              13.5,
+              50
+            ]
+          },
+          {
+            "Id": 1213907,
+            "Level": 7,
+            "Parameters": [
+              0.30168,
+              14,
+              13.5,
+              50
+            ]
+          },
+          {
+            "Id": 1213908,
+            "Level": 8,
+            "Parameters": [
+              0.321792,
+              14,
+              13.5,
+              50
+            ]
+          },
+          {
+            "Id": 1213909,
+            "Level": 9,
+            "Parameters": [
+              0.341904,
+              14,
+              13.5,
+              50
+            ]
+          },
+          {
+            "Id": 1213910,
+            "Level": 10,
+            "Parameters": [
+              0.362016,
+              14,
+              13.5,
+              50
+            ]
+          },
+          {
+            "Id": 1213911,
+            "Level": 11,
+            "Parameters": [
+              0.382128,
+              14,
+              13.5,
+              50
+            ]
+          },
+          {
+            "Id": 1213912,
+            "Level": 12,
+            "Parameters": [
+              0.40224,
+              14,
+              13.5,
+              50
+            ]
+          },
+          {
+            "Id": 1213913,
+            "Level": 13,
+            "Parameters": [
+              0.42738,
+              14,
+              13.5,
+              50
+            ]
+          },
+          {
+            "Id": 1213914,
+            "Level": 14,
+            "Parameters": [
+              0.45252,
+              14,
+              13.5,
+              50
+            ]
+          },
+          {
+            "Id": 1213915,
+            "Level": 15,
+            "Parameters": [
+              0.47766,
+              14,
+              13.5,
+              50
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11215,
+      "Name": "Precision Hydronic Cooler",
+      "Description": "Aino deploys a custom water-spraying device, the <color=#FFD780FF>Cool Your Jets Ducky</color> to establish a <color=#FFD780FF>Focused Hydronic Cooling Zone</color>.\nWhile active, the Cool Your Jets Ducky will periodically fire water balls at nearby opponents, dealing <color=#80C0FFFF>Hydro DMG</color>.",
+      "Icon": "Skill_E_Aino_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 12121,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1212101,
+              "Level": 1,
+              "Parameters": [
+                60,
+                15
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1212101,
+        "Name": "Modular Efficiency Protocol",
+        "Description": "Aino will be granted the corresponding buff effects based on the party's <color=#FFD780FF>Moonsign</color>.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: Her Elemental Burst <color=#FFD780FF>{LINK#S11215}Precision Hydronic Cooler{/LINK}</color> is enhanced: The <color=#FFD780FF>Cool Your Jets Ducky</color> will fire water balls more frequently, and the water balls will deal <color=#80C0FFFF>AoE Hydro DMG</color> over a larger area of effect.",
+        "Icon": "UI_Talent_S_Aino_05"
+      },
+      {
+        "GroupId": 12122,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1212201,
+              "Level": 1,
+              "Parameters": [
+                0.5
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1212201,
+        "Name": "Structured Power Booster",
+        "Description": "Aino's Elemental Burst DMG is increased by 50% of her Elemental Mastery.",
+        "Icon": "UI_Talent_S_Aino_06"
+      },
+      {
+        "GroupId": 12123,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1212301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1212301,
+        "Name": "Moonsign Benediction: Force Limit Analysis",
+        "Description": "When Aino is in the party, the party's <color=#FFD780FF>Moonsign</color> will increase by 1 level.",
+        "Icon": "UI_Talent_S_Aino_07"
+      },
+      {
+        "GroupId": 12125,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1212501,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1212501,
+        "Name": "Miniaturized Detection Sensor",
+        "Description": "Displays the location of nearby <color=#FFD780FF>resources unique to Nod-Krai</color> on the mini-map.\nAdditionally, Aino appears to be able to alter the Cool Your Jets Ducky's appearance in some way...",
+        "Icon": "UI_Talent_S_Aino_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1211,
+        "Name": "The Theory of Ash—Field Equilibrium",
+        "Description": "After Aino uses her Elemental Skill <color=#FFD780FF>{LINK#S11212}Musecatcher{/LINK}</color> or her Elemental Burst <color=#FFD780FF>{LINK#S11215}Precision Hydronic Cooler{/LINK}</color>, her Elemental Mastery will be increased by 80. The Elemental Mastery of other nearby active party members will be increased by 80 for 15s.\n\nThe Elemental Mastery-increasing effects of this Constellation do not stack.",
+        "Icon": "UI_Talent_S_Aino_03"
+      },
+      {
+        "Id": 1212,
+        "Name": "The Principle of Transference in Gear Differentials",
+        "Description": "If Aino is off-field while the <color=#FFD780FF>Focused Hydronic Cooling Zone</color> of her Elemental Burst <color=#FFD780FF>{LINK#S11215}Precision Hydronic Cooler{/LINK}</color> is active, when your active party member hits a nearby opponent with an attack, the <color=#FFD780FF>Cool Your Jets Ducky</color> will fire an additional water ball at that opponent, dealing <color=#80C0FFFF>AoE Hydro DMG</color> equal to 25% of Aino's ATK and 100% of her Elemental Mastery. This DMG is considered Elemental Burst DMG. This effect can be triggered once every 5s.",
+        "Icon": "UI_Talent_S_Aino_02"
+      },
+      {
+        "Id": 1213,
+        "Name": "Cake and the Art of Mechanism Repair",
+        "Description": "Increases the Level of <color=#FFD780FF>{LINK#S11215}Precision Hydronic Cooler{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Aino_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1214,
+        "Name": "Butter and Cats and the Law of Energy Supply",
+        "Description": "When the Elemental Skill <color=#FFD780FF>{LINK#S11212}Musecatcher{/LINK}</color> hits an opponent, it will restore 10 Elemental Energy for Aino. Energy can be restored to her in this manner once every 10s.",
+        "Icon": "UI_Talent_S_Aino_01"
+      },
+      {
+        "Id": 1215,
+        "Name": "Perpetual Turbine of Metal and Light",
+        "Description": "Increases the Level of <color=#FFD780FF>{LINK#S11212}Musecatcher{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Aino_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1216,
+        "Name": "The Burden of Creative Genius",
+        "Description": "For the next 15s after using the Elemental Burst <color=#FFD780FF>{LINK#S11215}Precision Hydronic Cooler{/LINK}</color>, DMG from nearby active characters' Electro-Charged, Bloom, Lunar-Charged, Lunar-Bloom, and Lunar-Crystallize reactions is increased by 15%.\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: DMG from the aforementioned reactions will be further increased by 20%.",
+        "Icon": "UI_Talent_S_Aino_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Clinky-Clank Gadgets-A-Gogo",
+    "Detail": "A genius mechanic and inventor from Nod-Krai who loves interesting machines and sweet treats.",
+    "Association": 12,
+    "Native": "Clink-Clank Krumkake Craftshop",
+    "BirthMonth": 9,
+    "BirthDay": 21,
+    "VisionBefore": "Hydro",
+    "VisionOverrideUnlocked": "Moon Wheel",
+    "ConstellationBefore": "Cistellula Mira",
+    "CvChinese": "葛子瑞",
+    "CvJapanese": "高森奈津美",
+    "CvEnglish": "Annabel Brook",
+    "CvKorean": "Jo Kyeong-i",
+    "CookBonus": {
+      "OriginItemId": 108868,
+      "ItemId": 108898,
+      "InputList": [
+        101265,
+        110001,
+        100062,
+        110015
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Oh! Are you here to play with me? Hee-hee, my name's Aino, and I'm an inventor! Me and Ineffa live together. I could probably eat all the cakes and cookies in the world, because I love them sooo much. But my favorite kind of all is Lakkaberry Krumkake! Come visit my Clink-Clank Krumkake Craftshop whenever you want! Anyway, that's me — what about you? Tell me something about you, then we'll be friends!"
+      },
+      {
+        "Title": "Chat: Plans",
+        "Context": "It's been way too long since I last had some candy. My brain's grinding to a halt, like a rusty machine... That's it! I'm having five whole Krumkakes for dinner tonight, and nothing's gonna stop me. Not even Ineffa's super-angry mode!"
+      },
+      {
+        "Title": "Chat: Toothache",
+        "Context": "*grimace* I just got a really bad toothache... Whyyy? Ineffa, help me! *whimper*"
+      },
+      {
+        "Title": "Chat: Play",
+        "Context": "Don't worry, I put Ineffa in charge of all my work for today, so we can go play with Knuckle Duckle!"
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Achoo! *sniff* ...Ugh, my shoes and socks are soaking wet. I wanna go home..."
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "Oh, the rain's stopped! Let's go on a trip. And let's bring Ineffa!"
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Wahoo, it's snowing! Here, you can have my Boo-Hoo Snowball Maker. It makes a crying sound when you make a snowball with it. Fun, right? ...Me? Oh, I'll use this Tee-Hee Snowball Maker instead. Anyway — c'mon, let's have a snowball fight!"
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "Whew, the sun is so bright... Take my sleeve, it'll help keep the sun out of your eyes. ...Oh... Um, can you stoop down a little? I'm on my tippie toes, but I can't quite reach..."
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "Wait... I think I hear machine noises in the distance. C'mon, c'mon, let's go check it out~ Something tells me there's a boatload of spare parts waiting to be collected, hehehe..."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "I got Ineffa to make breakfast for you! It's a selection of mini cakes — they're really sweet and super tasty... Huh, cake crumbs at the corners of my mouth? Those are just, um, uh... *sigh* Alright, I'll tell you the truth, since you're my friend and all. I'm sorry, I went ahead and ate my ones already. ...Hmm? You'll split yours with me? Amazing! In that case, I'll split my... In fact, here — you can have all my fruits and veggies!"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Number two screws... Where the heck did I put my number two screws...? Actually... Ineffa! Gimme one of your number two screws. There should be some on your wrists and elbows. ...Ugh, yes, I know lunch is ready, I'll be there in a minute. Come on, be a good girl and hand over that screw~"
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Look at these plates I invented! When you give them the order, they come walking over to you. Dinner, come out! Serve me food!"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Huh? Y—You're leaving already? ...Wait! Don't you wanna try out my new Glug-Glug Tea Brewer again? Or... we could play another game! Hmm... Okay, fine. Pinky promise. Tomorrow it is, don't forget!"
+      },
+      {
+        "Title": "About Aino: Pragmatism",
+        "Context": "Everything I build uses parts that I've salvaged from broken-down machines. That's how I rebuilt Ineffa, too. A scrap heap is just useful stuff in the wrong place. It doesn't matter where I get it from — as long as it works, it's as good as new to me."
+      },
+      {
+        "Title": "About Aino: Parental Duty",
+        "Context": "When you're the head of a family, you gotta make sure everyone's well looked after. So when Ineffa finishes her chores, I always stroke her head and tell her what a great job she did. Same goes for all my other robots too — I always make sure to compliment them when they finish their work. Ah, I'm such a great parent!"
+      },
+      {
+        "Title": "About Us: Kerplunk-a-tron",
+        "Context": "Oh, that thing on my back? That's Kerplunk-a-tron, my assistant. Multifunctional to the max! You wanna try it out? Don't worry, he won't bite. Come on, Kerplunk-a-tron, say hello! \"Kerplunk, kerplunk!\""
+      },
+      {
+        "Title": "About Us: Sneaky Food",
+        "Context": "I mean, I do get it... Ineffa only controls my sugar intake out of concern for my health. But I'm not a robot. Sweet stuff is sooo hard to resist! So my solution is: If Ineffa didn't see it, I didn't eat it! C'mon, let's go eat some desserts. My treat — as long as you promise not to tell her~"
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "When I built Ineffa, I took her apart and put her back together again so many times, 'cause I kept wanting to add more and more functionality... Then, at some point, I went to grab the next component, and suddenly I found that I was holding a Vision. I hadn't slept in a while, so at first, I thought I was seeing things... Hmm? How long did Ineffa take me to build in total? Ahem, it's not about how long or how short it took — the important thing to remember is that Aino is a genius!"
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "This one's called the Boom and Blast Kuuvahki Energy Cannon. Well, it was at first. But pretty much everyone except Ineffa has ended up calling it \"Cannon.\" *sigh* Never mind, it's a functional machine, and I can understand why people can't be bothered trying to say the full name in the heat of the moment. As long as people think it's a useful invention, I won't insist on a cute-sounding name."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "You might not believe this, but in the time it takes you to count to a hundred, I could take apart a whole crab... and by the time you get to two hundred, I could put it back together again, good as new. Hehe, dismantling machines isn't that different from dismantling crabs."
+      },
+      {
+        "Title": "About Ineffa: Warmth",
+        "Context": "I've made a bunch of upgrades to Ineffa since she first woke up. Like when I added that body temperature simulator, 'cause when you hold someone's hand or give them a hug, it's supposed to feel warm and fuzzy! You know what I mean? The next time Ineffa's here, let's both give her a big hug at the same time!"
+      },
+      {
+        "Title": "About Ineffa: Family",
+        "Context": "Ineffa is the most important person in my family. I'm so, so thankful for your help — not just for getting her back home safe and sound, but for helping fix her little memory problem, too. Actually, why don't you come 'round to my place right now? I'll get Ineffa to make Krumkake for you... No, wait — I'll make them myself! And, and I can make Midsommar Torte too. It's really good, have you tried it? ...Hmm? Why are you running away? I wasn't finished!"
+      },
+      {
+        "Title": "About Jahoda",
+        "Context": "Jahoda might bicker a lot with Ineffa, but they're actually really close. She was the first friend that Ineffa made. I'm not a controlling parent, so I don't tell Ineffa who she can and can't make friends with. Some friends just argue more than others — somehow, fighting it out brings them closer together. Oh, I almost forgot to mention, you know her robotic arm? It's pretty, right? I was the one who built that, although it's my student who handles the maintenance and repairs these days."
+      },
+      {
+        "Title": "About Lauma",
+        "Context": "You like her antlers? I could make you a pair just like them. Oh, and how about I make them glow and grow flowers? Or maybe shoot fireworks? It'd be a piece of cake for me. ...The Frostmoon Scions wouldn't take kindly to that? Okay fine, then I'll make some for them, too."
+      },
+      {
+        "Title": "About Flins",
+        "Context": "Ah, what a fine young gentleman he is. His speech is music to my ears, like the beautiful clink-clank of moving machinery. ...Too far? Well, yeah, it's pretty high praise, I guess... But it's also the truth! And no, I'm not biased because I've been bribed with cakes!"
+      },
+      {
+        "Title": "About Dori",
+        "Context": "She came to discuss a potential business partnership with me once. Hehehe, can't blame her for trying her luck... but she was just too stingy. As Ineffa put it, the amount I'd earn in one day of working for Dori wouldn't even cover the cost of two freshly baked Fruit Tandem Turnovers. Genius only works on a full stomach, y'know! *sigh* If only she was open to letting me dismantle those strange and exotic machines she owns. Maybe then we could come to an arrangement..."
+      },
+      {
+        "Title": "About Nefer",
+        "Context": "Nefer has a black cat called Ashru. I offered to install a translator so we could understand what Ashru is saying, but Nefer turned me down without even considering it. She said she already has plenty of information and doesn't need to hear what a cat has to say. Like, what!? Why so mean? Has she been hurt before, maybe by Lauma's translations?"
+      },
+      {
+        "Title": "About Varka",
+        "Context": "Varka kept me company a lot while Ineffa was away looking for you guys. Sometimes, when he noticed that I was missing Ineffa, he'd come and pat me on the head and make me feel better. He has really big, heavy hands, and they're covered in calluses... But they still feel really warm."
+      },
+      {
+        "Title": "About Linnea",
+        "Context": "Ooh, Linnea? I really like her! When I was little, she used to tell us loads of cool stories whenever she got back from one of her trips. When I was a bit older, and I'd learned how to build robots, I wanted to give her one as a gift... but she never accepted any of them. She said it was the thought that counts, and that was enough for her — but I think it was because none of them were her style. So, I'm gonna keep making robots until she finds one she likes. I know I'll get there eventually!"
+      },
+      {
+        "Title": "About Prune",
+        "Context": "I'm always so happy to see her! Every time she comes to play, she gives me desserts that Ineffa gives her — as long as Ineffa doesn't notice, I get to eat twice as much! *sigh* Will Prune come back to visit now she lives in Mondstadt? There aren't many friends who really listen when I talk about machines..."
+      },
+      {
+        "Title": "More About Aino: I",
+        "Context": "You wanna hear more about me? Yeah, of course! Let's trade: I'll tell you something about me, and you tell me one of your stories! Deal?"
+      },
+      {
+        "Title": "More About Aino: II",
+        "Context": "I have no problem at all with clients on a tight budget. Even five thousand Mora can go a long way. It's the people who don't appreciate my work who are the real problem. I add all sorts of fun functionality into their robots, and then they go and complain that it isn't \"practical.\" There's no helping some people."
+      },
+      {
+        "Title": "More About Aino: III",
+        "Context": "Papa Wrench? Where'd you hear about him? He's my teacher, and he doesn't even know his own name anymore, but he still remembers all the specs when it comes to machine parts. I tell him all my ideas, even for my craziest projects. He always smiles back, rubs my head, and says \"Aino, that's a wonderful idea! I can't wait to see the finished product.\""
+      },
+      {
+        "Title": "More About Aino: IV",
+        "Context": "The first robot I ever built was called Clink-Clank. It was totally different from the kind of things I build nowadays. No so-called \"practical\" functions, it couldn't talk, it couldn't do housework... bet you can't imagine that, huh? Anyway, it kept me company for the longest time, but eventually it got to the point where the outer casing was completely busted up, and all the bolts were falling out and wouldn't go back in, so I had to take it out of service."
+      },
+      {
+        "Title": "More About Aino: V",
+        "Context": "The real reason I chose to build robots rather than invent other things was because... well, I just wanted someone to play with. People always have stuff they need to do, I get that. They can only hang out with me for a little while before I'm all on my own again, but my robots will always be there for me. Then one day, Ineffa told me that she saw me as family, and that I could trust her... I burst out crying when she said that, because I know that robots don't tell lies..."
+      },
+      {
+        "Title": "Aino's Hobbies",
+        "Context": "I like giving robots functions that other people would never think of. I mean, think about it, how much more fun is a vacuum bot when you can take it out for walkies like a pet doggy?"
+      },
+      {
+        "Title": "Aino's Troubles",
+        "Context": "Why is it that I can never find the part I need when I need it, and then it shows up randomly when I don't need it? I can't exactly go installing an auto-locator on every single component, now can I? ...Try magnets? *sigh* No, that'd mess with all the sensitive instruments around here. Plus, Ineffa would get stuck..."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "If I ever somehow turn into a robot, promise me you'll make sugar my energy source! A day without sugar would be like... well, the most bitter day in your life, by definition. I wouldn't make it till nightfall."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "There's this kind of flatbread in Nod-Krai that's hard as rock. Ever tried it? It's like biting down on Ineffa's outer shell! And worst of all, it's not even sweet! Unforgivable!"
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Wow! This is sooo good! I'm gonna get Ineffa to scrap all the snacks in next week's menu and replace them with this! And the week after that, too! You got any more? Just one more, pleeease? C'mon, one more can't hurt!"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "It's pretty good, but it's missing that happy flavor. Oh, I got it — take this sachet of sugar! Next time, add it in. I'm telling you, it'll take the flavor to the next level!"
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Hmm, this tastes kinda bland... Why don't you let me cook this time? Huh? No? Okay then... Well, at least let me give you my spare krumkake maker. Hold on a minute, I'll remodel it so it can cook other stuff too!"
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Looks like someone's waiting for an Aino surprise... Tada! Hehe, it's the Spinny Chanty Wishing Lantern! When you light the candle, it sings happy birthday and spins around. Isn't it fun? If you like it, then you have to play with me next year too! Oh, uh, now you gotta make a wish, and you gotta say it out loud so I can hear it! Whatever you wish for, Aino the genius can make it come true!"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Ooh, is this what robots feel like when they get an upgrade?"
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Upgrade complete. Aino operational stability increased... energy consumption also increased... please feed Aino sufficient cakes."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "I can tell you really appreciate true genius. Hehehe, you have chosen wisely!"
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I think my perfect family would be someone like you... someone that understands me, supports me, and spends time with me... No, I don't feel sad. From now on, you can always trust me, okay? After all, there's no problem that Aino the genius parent can't solve!"
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Chew on this!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Kerplunk!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Go claw!"
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Eeny, meeny, miny, moe..."
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "Ready!"
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "Mwuhaha!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Look, a rainbow!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Ding-dong, waterbomb!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Splash attack!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Let me see, anything I can salvage?"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Wow, so much stuff... If only Ineffa was here."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Whoa! Ah, what a mess... I'm sorry, it wasn't on purpose."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Why isn't it working?"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Play nice!"
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Cheater!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Alright, you've had your fun!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Don't worry, Aino can fix it!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Looks like... playtime's over..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Ineffa, I'm cold..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "I want... a krumkake..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Meanie!"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Ahh! Whoops..."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Ouch..."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Yay, playtime!"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Lemme down, kerplunk-a-tron!"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Aino? Present!"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Located at the border, Nod-Krai is neither a land of abundance nor a place of joy. All year round, the cold wind howls and lashes the lands, as though attempting to wring even the last dregs of warmth from every corner.\nYet in this seemingly forgotten corner of the world, the marketplace is chock-a-block with an astonishing array of marvelous machines. From guns that shoot flowers to floor sweepers that act as affectionate as puppies... You never know how a contraption might act until the very moment it springs to life. These inventions have brought comfort and laughter to this desolate land, and their creator is none other than Aino, the owner of the Clink-Clank Krumkake Craftshop.\nAino has spent years secluded in this unique workshop with not a single plushie (something children should love) in sight. Instead, she surrounds herself with sheets upon sheets of cold metal and mechanical parts piled precariously high. But this doesn't stop Aino from seeing it as the bestest and warmest home in the world. Here, she enjoys the companionship of numerous family members — assembled by her from screws and steel.\nAino, who calls herself their \"parent,\" takes on the responsibility of caring for her little mechanical family every day. In the morning, they need to \"wake up\" by powering on, they have to \"charge\" themselves up with lunch at noon, then \"sleep\" in the night by powering down, right on schedule. Whatever spare time they have, they spend on diligently \"executing tasks.\"\nBesides the creations she makes as a hobby, this genius mechanic also takes on various mechanical commissions. From the massive Boom and Blast Kuuvahki Energy Cannon that defends everyone from the Wild Hunt's invasions, to tiny precision parts in mechanical arms for aged adventurers... As long as you sincerely praise this genius mechanic's brilliant ideas and offer her delicious desserts, she'll create masterpieces beyond your wildest imagination.\nHowever, her inventions occasionally come with bizarre features not included in the original commission's requirements. In that sense, placing an order with Aino is like buying a box of chocolates... except that the box has a chance to fire a scary doll at you when you open it — so you'd best pray it doesn't!"
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Whenever the Boom and Blast Kuuvahki Energy Cannon unleashes its deafening roar and its dazzling flash of light, Katya is reminded of that tiny, pink-haired girl. Back then, Aino spoke in a voice as faint as a mosquito's buzz, barely audible in any room she was in. She was so unassuming that it seemed almost impossible to reconcile that memory of her with the genius mechanic she is today.\nKatya could no longer remember if she had ever asked Aino herself about the details of how she showed up at the Speranza. In this bitter frontier, there were only two reasons why a child would be alone — unavoidable separation or deliberate abandonment. Neither was particularly rare.\nThe rain in Nod-Krai is bone-chillingly cold, its arrival both sudden and merciless. Little Aino, who could barely reach the table's edge even on tiptoes, could only silently accept the grueling hand that fate had dealt her.\nKatya remembered pulling the timid girl, who had been peering through the doorway, into the house and handing her a bowl of warm, sweet soup. But as soon as the girl's fingertips touched the rim of the bowl, she quickly recoiled — her hands were swollen and purple from the cold, with cracks in her skin more striking than the scarlet broth. However brief her contact with the bowl, it must have stung her with pain.\nKatya wrapped her tiny, injured hands in clean old cloth, and only then did the girl dare to clutch the bowl. With a few quick slurps, she gulped down the soup, finishing her meal in the blink of an eye.\nFrom that day on, little Aino stayed at the Speranza and became a member of the Conch Gang."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "The members of the Conch Gang are all young children. The kind-hearted Katya provides them with shelter and jobs as shop assistants, while giving these children plenty of freedom during their breaks.\nAt the age when they were most energetic and adventurous, the other children roamed the tundra forests in packs like Chic Badger cubs, but little Aino was the only one who preferred to be alone.\nThis wasn't due to a lack of childlike curiosity. On the contrary, her curiosity was so vast that only an entire world could contain it — a world made with precise, logical lines, craftsmanship, mechanisms, and curios. Any metal component was enough to make Aino stop in her tracks, and the noise of clinking and clanking from the \"Rossum Workshop\" workshop was the song she came to be most familiar with.\nThis is how she met her lifelong best friend — Lyulka, the daughter of the owner of the \"Nuts and Bolts.\" When Lyulka discovered that this girl, who visited their shop almost daily, had the same sparkle in her eyes as herself, she excitedly took her by the hand, suddenly eager to share her mechanical contraptions and half-finished prototypes.\nOne day, after they became close, Aino suddenly pointed at a machine in the store, and said, \"Adjusting this part a little should increase the kuuvahki consumption efficiency by 2.8%. I've been running simulations in my head for a while, and I think it's got a good chance of working... So, wanna try?\"\nLyulka was stunned. That was exactly the bottleneck she'd been struggling with for days. Although she felt slightly hesitant that an untrained child had pointed out the issue so easily, she still nodded in agreement.\nWhen the modification was complete, the test data was precise, showing an improvement of exactly 2.8%. As she stared at the truth laid out by the data, Lyulka's skepticism dissolved into amazement.\n\"Aino's never studied a day of mechanical theory in her life, and yet she identified and resolved a critical issue. Now, if she DOES study, she might be able to work miracles...\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "An opportunity for Aino to study soon arrived. A Snezhnayan mechanic known as \"Papa Wrench\" happened to visit Nasha Town, and while dining at the Speranza, he was drawn to the group of child workers. Papa Wrench, being a man full of compassion, decided to stay for a while to regale the children with Snezhnayan fairy tales.\nBut he quickly and keenly noticed that one of the children was not quite like the others — while they were immersed in his stories, Aino's gaze was firmly fixed on the tools he carried.\nThis discovery filled Papa Wrench's heart with joy, and with Katya's approval, he set up a small class during the restaurant's downtime to teach mechanical know-how to children who were interested.\nWhen Lyulka heard of this class, she excitedly joined the children. However, after just a few days, Lyulka realized that the things Aino asked Papa Wrench were starting to become as incomprehensible as some arcane tome.\nBefore, Aino had been like a tranquil stream, silently meandering forward... But now it seemed that she had finally found a vast, boundless ocean to call her own.\nUtterly in her element, a mysterious change overcame Aino, as though some fae of legend had touched her with a blessed hand, bestowing upon her secret gifts. Aino's fingers danced between various parts, an intricate machine seemingly flying into being at her expert touch. It was hard to imagine her dexterous digits had ever been blistered with frostbite.\nAnd as her hands grew more lively, so too did the conversations she made. Aino began to speak more and more, her little head seemingly filled with endless novel ideas waiting to be shared with the world. Most adults who heard her would find the child peculiar and dismiss her ideas with a gentle smile, but Papa Wrench believed that she might one day truly turn all of her imaginative concepts into reality.\nAnd when Papa Wrench's knowledge collided with Aino's wild ideas, the result was an explosion of ingenuity that brightened the lives of those around them...\nThe Conch Gang's broken alarm clocks were fixed, but suddenly grew wings and would fly around their rooms in the mornings, ringing all the while. Only catching them would put an end to the cacophony, and from then on, there were no more sleepyheads among the children.\nThe broken trash can in the back kitchen was also patched up with tin plates. When fed with garbage, it would chew up everything contentedly, then let loose a playful burp of satisfaction. At first, everyone suspected it was a prank, but after discovering that the sounds were actually coming from the trash can itself, taking out the garbage became the children's most popular chore."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "However, those happy and joyful days didn't last long, as farewell arrived at the door sooner than expected.\nThe mission-bound Papa Wrench received an order from his merchant convoy to depart. Reluctant to leave, he placed a screw in Aino's palm and told the girl two important things: To never underestimate her talents, nor to ever put down her tools. This wasn't Aino's first farewell. The cold wind seemed to leave her throat sandpaper-dry, and besides a cursory \"thank you,\" \"goodbye,\" and \"take care,\" Aino didn't know what else she could say. In this turbulent land, every farewell could very well be their last. This unspoken rule was understood — and keenly felt — all over Nod-Krai.\nAfter bidding farewell to her teacher, Aino sat alone behind closed doors, repeatedly running her fingertips over the grooves of the screw. After her tears had dried, she threaded the screw into her hair. From then on, this screw served both as an iron hairpin and a guiding light, keeping up the bangs that had once obscured her vision. Now, the path before her was clearer than ever.\nAfter this farewell, the wheel of fate began to spin once more.\nThe members of the Conch Gang had always come and gone freely. After bidding farewell to several familiar friends in the howling cold winds, Aino bade farewell to the Gang as well. Lyulka had reached out to her, asking if she would like to move in with her, and perhaps even set up a workshop together. After much deliberation, Aino shook her head. While conducting stable research with a friend would be nice, she wanted to journey farther, see more, and create fascinating machines that none had ever made before.\nAino had heard from some adventure-loving children that if one were to leave Nasha Town and head west, there was a place piled high with abandoned metal scrap — perfect for young explorers to use as a secret base. However, the mead-drunk, grizzled adventurers of the town saw it differently. They claimed it was a mechanical boneyard that had fallen into ruin during Nod-Krai's golden years, its name long eroded by the river of time.\n\"Discarded metal scrap, a mechanical boneyard... Well, time for me to breathe some new life into it...!\"\nThough she had never been there, Aino was filled with longing for that storied location. Perhaps the answers she sought amidst an ocean of imagination might be found scrawled on cold, distant shores of iron."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "At dawn, Aino clutched a small robot in her arms. Followed by an automated toolbox with wheels, and guided by members of the Conch Gang, she arrived at a massive structure on the outskirts of town. This weather-beaten mechanical beast lay sprawled along the silent ridges, waiting for its master to awaken.\n\"This is the place! From now on, I'm calling it the Clink-Clank Krumkake Craftshop. Here, I'll invent a machine that can make the most delicious krumkakes!\" With one hand on her hip, Aino made her declaration. The giant's rusty mechanical arms swayed in the breeze, as if in greeting.\nThe smoke from Speranza drifted away, the laughter of the Conch Gang faded, and the large, long-silent workshop found itself a tiny, noisy new master.\nAnd so time slipped away amidst countless clinks and clanks.\nThe next time Katya saw Aino, she was holding hands with a robot girl named Ineffa and had come to buy some sweets from the restaurant. Just like any good parent, Aino carefully taught her \"child\" how to make purchases... even though said \"child\" was several heads taller than her \"parent.\"\n\"Be good and hold my hand, Ineffa! It would be really bad if you ran off and got lost.\"\n\"Now let's learn about shopping! First, come here, say hello to Aunty Katya, then ask for two Midsommar Tortes. Remember to pay with the Mora I gave you this morning! Once you're done, say bye-bye to Aunty Katya.\"\n\"Executing Midsommar Torte purchase command... Hello, Aunty Katya. I would like to buy two Midsommar Tortes. Here is the Mora. Thank you, Aunty Katya. Bye-bye, Aunty Katya.\"\nListening to the robot girl fluently repeating Aino's words, Katya realized how much the little girl had changed.\nHer once gaunt cheeks had filled out into a healthy roundness, and she walked with an exuberant spring in her step, fitting for a child her age. Her eyes no longer stayed glued to the ground, but instead sparkled brightly — like an ingot of gold tempered by flame, radiating a brilliance that belonged only to her.\n\"Hehe, you're such a good girl, Ineffa! Oh, wait, I almost forgot. Aunty Katya, could you take the change and gimme some sugar for it? I'm gonna have Ineffa make me some of the BEST krumkakes in the whole world!\"\nBut despite all the change, Aino's sweet tooth had stayed constant. Katya couldn't help but smile as she placed several packets of sugar into the robot girl's hands — far more than what would have been commensurate with the Mora.\n\"Calculating price difference... The amount of Mora paid is insufficient. I must compensate...\" Before the robot girl could finish, Aino interrupted her.\n\"That there is Aunty Katya's love! Just take it, Ineffa. She'll be sad if we try to pay for it. So thanks, Aunty Katya!\"\n\"Love?\"\n\"Yeah! It's something you can't measure with Mora — it's the care we have for each other, just like how I take care of you, and you take care of me!\"\n...\nThe fate of Nod-Krai might one day truly be changed by this little pink-haired girl... Or perhaps, that change had already begun from the very first moment she picked up a wrench."
+      },
+      {
+        "Title": "\"My First Family\"",
+        "Context": "The first time Ineffa helped Aino clean up the workshop, she scanned a special little robot placed on Aino's desk. Its weathered metal shell had long since lost its luster, and its stiff limbs were unresponsive to external stimuli. Clearly, it was not one of Aino's recent works.\nAfter living with Aino for a long time, Ineffa discovered that, corroded by time, rust had spread like snaking vines across the joints of the little robot. The last screw on its body had come loose and fallen off, and according to her analysis, even the most meticulous polishing and maintenance could no longer restore life to its decaying body.\nAino carefully put the little robot away. She asked Ineffa to support her as she solemnly moved it to the cabinet in her bedroom. It was then that Ineffa learned the story behind the broken-down machine.\nIt was the first robot that Aino had ever assembled by herself.\nIt wasn't equipped with any intelligence modules and could only make jingling sounds when it was shaken. Its sole purpose was companionship — to accompany a little girl who had experienced all too frequent farewells in her short life, who would sometimes find her heart swelling with loneliness.\nPlaced beside Aino's many modern ingenuities, it looks dull and sloppy. But even caked in rust, it continues to serve its purpose... to simply be there for her.\nBecause it is still family, and hence, still a part of her home."
+      },
+      {
+        "Title": "Vision",
+        "Context": "In the dead of night, as the moon hung high among the stars, even as the Sniffer Moles slumbered, the workshop continued to rattle away in its typical clink-clank fashion.\nSince embarking on her mechanical journey, Aino had always been praised as a genius by others. She could complete most simple mechanical constructions with her eyes closed, and it was rare to see her this focused.\nBut today, her surroundings were pitch black, with only Aino's workbench blazing bright as day. Her long sleeves had been hastily rolled up, and her temples were covered in sweat, stained with oil, and brushed by dust from who-knows-where, but the only thing Aino could focus on — and frown at — was the problem she faced. On the workshop's floor, open bags of snacks lay scattered, but even the wafting, saccharine scents could not tempt Aino from her task.\nOn the workbench lay a robot girl. Around her lay piles of parts of various sizes, silent testaments to Aino's countless iterative loops.\n\"Maybe I should give her a learning module. Family members need to learn and grow together so they can stick together...\"\nThis idea suddenly popped into Aino's head. Although applying such a theory to machinery was unprecedented for her, Aino didn't hesitate at all and immediately got to work. While reaching for a crucial component, Aino, busy as she was, didn't even look to see what she had grabbed, but she could tell by its unfamiliar texture that it wasn't what she wanted. So, without even a glance, she tossed it under her workbench and continued focusing on her creation.\nWith a soft click, the final piece fit precisely into the last groove. There was a clatter as Aino's tools fell to the ground, followed by a dull thud — having maintained intense focus for so long, Aino had finally reached her limit. Exhaustion consumed the little genius like the night itself, and she fell into a deep sleep. Resting her head on the robot girl's arm, she herself looked like a little robot whose battery had run flat.\n...\n\"Good morning, Aino.\"\n\"Time to wake up, I have made your favorite krumkakes for breakfast.\"\nHearing someone calling her to wake up, Aino rubbed her aching head, blinking the sleep out of her bleary eyes... But all she saw was the robot girl next to her, eyes still peacefully closed. It seemed like it was just a dream.\n\"But it'll come true soon, won't it, Ineffa...?\"\nThough Ineffa did not answer, what responded to Aino was the faint shimmer of her Vision — the very same one that Aino had mistaken for a mechanical part earlier."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 212100,
+      "Name": "Fluffy Puffy Whiz-Kid Workwear",
+      "Description": "Aino's outfit. The oversized white coat looks especially baggy on her petite frame, and the wide sleeves seem perfect for stashing mysterious treasures. Give them a shake and... who knows what might pop out?",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104124,
+    113077,
+    101257,
+    112124,
+    104361,
+    113061
+  ],
+  "NameCard": {
+    "Name": "Aino: Whoopsie Ducksie",
+    "Description": "Namecard style.\nWhen a \"Cool Your Jets Ducky\" is overheating, does Aino throw out another Ducky to cool its jets, or does she just say \"Whoopsie Ducksie\" and leave it at that?",
+    "Icon": "UI_NameCardIcon_Aino",
+    "PicturePrefix": "UI_NameCardPic_Aino"
+  }
+}

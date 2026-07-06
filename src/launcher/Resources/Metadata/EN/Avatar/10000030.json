@@ -1,0 +1,1221 @@
+{
+  "Id": 10000030,
+  "PromoteId": 30,
+  "Sort": 24,
+  "Body": 4,
+  "Icon": "UI_AvatarIcon_Zhongli",
+  "SideIcon": "UI_AvatarIcon_Side_Zhongli",
+  "Name": "Zhongli",
+  "Description": "A mysterious expert contracted by the Wangsheng Funeral Parlor. Extremely knowledgeable in all things.",
+  "BeginTime": "2020-12-02T04:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 1143.984,
+    "AttackBase": 19.551,
+    "DefenseBase": 57.4368
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 3031,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "4-Hit DMG|{param4:F1P}",
+            "5-Hit DMG|{param5:F1P}×4",
+            "6-Hit DMG|{param6:F1P}",
+            "Charged Attack DMG|{param7:P}",
+            "Charged Attack Stamina Cost|{param8:F1}",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 303101,
+              "Level": 1,
+              "Parameters": [
+                0.307691,
+                0.311518,
+                0.385762,
+                0.429389,
+                0.1075,
+                0.544965,
+                1.11026,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 303102,
+              "Level": 2,
+              "Parameters": [
+                0.332735,
+                0.336874,
+                0.417161,
+                0.46434,
+                0.11625,
+                0.589322,
+                1.20063,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 303103,
+              "Level": 3,
+              "Parameters": [
+                0.35778,
+                0.36223,
+                0.44856,
+                0.49929,
+                0.125,
+                0.63368,
+                1.291,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 303104,
+              "Level": 4,
+              "Parameters": [
+                0.393558,
+                0.398453,
+                0.493416,
+                0.549219,
+                0.1375,
+                0.697048,
+                1.4201,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 303105,
+              "Level": 5,
+              "Parameters": [
+                0.418603,
+                0.423809,
+                0.524815,
+                0.584169,
+                0.14625,
+                0.741406,
+                1.51047,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 303106,
+              "Level": 6,
+              "Parameters": [
+                0.447225,
+                0.452788,
+                0.5607,
+                0.624113,
+                0.15625,
+                0.7921,
+                1.61375,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 303107,
+              "Level": 7,
+              "Parameters": [
+                0.486581,
+                0.492633,
+                0.610042,
+                0.679034,
+                0.17,
+                0.861805,
+                1.75576,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 303108,
+              "Level": 8,
+              "Parameters": [
+                0.525937,
+                0.532478,
+                0.659383,
+                0.733956,
+                0.18375,
+                0.93151,
+                1.89777,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 303109,
+              "Level": 9,
+              "Parameters": [
+                0.565292,
+                0.572323,
+                0.708725,
+                0.788878,
+                0.1975,
+                1.001214,
+                2.03978,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 303110,
+              "Level": 10,
+              "Parameters": [
+                0.608226,
+                0.615791,
+                0.762552,
+                0.848793,
+                0.2125,
+                1.077256,
+                2.1947,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 303111,
+              "Level": 11,
+              "Parameters": [
+                0.657421,
+                0.665598,
+                0.824229,
+                0.917445,
+                0.229687,
+                1.164387,
+                2.372212,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 303112,
+              "Level": 12,
+              "Parameters": [
+                0.715274,
+                0.72417,
+                0.896761,
+                0.998181,
+                0.2499,
+                1.266853,
+                2.580967,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 303113,
+              "Level": 13,
+              "Parameters": [
+                0.773127,
+                0.782743,
+                0.969293,
+                1.078916,
+                0.270112,
+                1.369319,
+                2.789722,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 303114,
+              "Level": 14,
+              "Parameters": [
+                0.83098,
+                0.841315,
+                1.041825,
+                1.159651,
+                0.290325,
+                1.471785,
+                2.998477,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 303115,
+              "Level": 15,
+              "Parameters": [
+                0.894092,
+                0.905213,
+                1.120951,
+                1.247726,
+                0.312375,
+                1.583566,
+                3.226209,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10301,
+        "Name": "Rain of Stone",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 6 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, causing stone spears to fall along his path.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 3032,
+        "Proud": {
+          "Descriptions": [
+            "Stone Stele/Resonance DMG|{param1:F1P}/{param2:F1P}",
+            "#{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press} CD|{param3:F1}s",
+            "Hold DMG|{param4:P}",
+            "Shield Base Absorption|{param5:I}",
+            "Additional Shield Absorption|{param6:F1P} Max HP",
+            "Shield Duration|{param7:F1}s",
+            "Hold CD|{param8:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 303201,
+              "Level": 1,
+              "Parameters": [
+                0.16,
+                0.32,
+                4,
+                0.8,
+                1232.4108,
+                0.128,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303202,
+              "Level": 2,
+              "Parameters": [
+                0.172,
+                0.344,
+                4,
+                0.86,
+                1355.6691,
+                0.1376,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303203,
+              "Level": 3,
+              "Parameters": [
+                0.184,
+                0.368,
+                4,
+                0.92,
+                1489.1987,
+                0.1472,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303204,
+              "Level": 4,
+              "Parameters": [
+                0.2,
+                0.4,
+                4,
+                1,
+                1633,
+                0.16,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303205,
+              "Level": 5,
+              "Parameters": [
+                0.212,
+                0.424,
+                4,
+                1.06,
+                1787.0728,
+                0.1696,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303206,
+              "Level": 6,
+              "Parameters": [
+                0.224,
+                0.448,
+                4,
+                1.12,
+                1951.417,
+                0.1792,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303207,
+              "Level": 7,
+              "Parameters": [
+                0.24,
+                0.48,
+                4,
+                1.2,
+                2126.033,
+                0.192,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303208,
+              "Level": 8,
+              "Parameters": [
+                0.256,
+                0.512,
+                4,
+                1.28,
+                2310.9202,
+                0.2048,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303209,
+              "Level": 9,
+              "Parameters": [
+                0.272,
+                0.544,
+                4,
+                1.36,
+                2506.079,
+                0.2176,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303210,
+              "Level": 10,
+              "Parameters": [
+                0.288,
+                0.576,
+                4,
+                1.44,
+                2711.5093,
+                0.2304,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303211,
+              "Level": 11,
+              "Parameters": [
+                0.304,
+                0.608,
+                4,
+                1.52,
+                2927.2112,
+                0.2432,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303212,
+              "Level": 12,
+              "Parameters": [
+                0.32,
+                0.64,
+                4,
+                1.6,
+                3153.1846,
+                0.256,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303213,
+              "Level": 13,
+              "Parameters": [
+                0.34,
+                0.68,
+                4,
+                1.7,
+                3389.4294,
+                0.272,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303214,
+              "Level": 14,
+              "Parameters": [
+                0.36,
+                0.72,
+                4,
+                1.8,
+                3635.946,
+                0.288,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303215,
+              "Level": 15,
+              "Parameters": [
+                0.38,
+                0.76,
+                4,
+                1.9,
+                3892.734,
+                0.304,
+                20,
+                12
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10302,
+        "Name": "Dominus Lapidis",
+        "Description": "#Every mountain, rock and inch of land is filled with the power of Geo, but those who can wield such powers freely are few and far between.\n\n<color=#FFD780FF>{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}</color>\nCommands the power of earth to create a Stone Stele.\n\n<color=#FFD780FF>Hold</color>\nCauses nearby Geo energy to explode, causing the following effects:\n·If their maximum number hasn't been reached, creates a Stone Stele.\n·Creates a shield of jade. The shield's DMG Absorption scales based on Zhongli's Max HP.\n·Deals <color=#FFE699FF>AoE Geo DMG</color>.\n·If there are nearby targets with the <color=#FFE699FF>Geo element</color>, it will drain a large amount of <color=#FFE699FF>Geo element</color> from a maximum of 2 such targets. This effect does not cause DMG.\n\n<color=#FFD780FF>Stone Stele</color>\nWhen created, deals <color=#FFE699FF>AoE Geo DMG</color>.\nAdditionally, it will intermittently resonate with other nearby <color=#FFE699FF>Geo constructs</color>, dealing <color=#FFE699FF>Geo DMG</color> to nearby opponents.\nThe Stone Stele is considered a <color=#FFE699FF>Geo construct</color> that can both be climbed and used to block attacks.\nOnly one Stele created by Zhongli himself may initially exist at any one time.\n\n<color=#FFD780FF>Jade Shield</color>\nPossesses 150% DMG Absorption against all Elemental and Physical DMG.\nCharacters protected by the Jade Shield will decrease the Elemental RES and Physical RES of opponents in a small AoE by 20%. This effect cannot be stacked.\n\n<i>A true master of stone may carve jade and shape gold.</i>",
+        "Icon": "Skill_S_Zhongli_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 3039,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:P}",
+          "Petrification Duration|{param2:F1}s",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 303901,
+            "Level": 1,
+            "Parameters": [
+              4.0108,
+              3.1,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303902,
+            "Level": 2,
+            "Parameters": [
+              4.4444,
+              3.2,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303903,
+            "Level": 3,
+            "Parameters": [
+              4.878,
+              3.3,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303904,
+            "Level": 4,
+            "Parameters": [
+              5.42,
+              3.4,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303905,
+            "Level": 5,
+            "Parameters": [
+              5.9078,
+              3.5,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303906,
+            "Level": 6,
+            "Parameters": [
+              6.3956,
+              3.6,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303907,
+            "Level": 7,
+            "Parameters": [
+              7.046,
+              3.7,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303908,
+            "Level": 8,
+            "Parameters": [
+              7.6964,
+              3.8,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303909,
+            "Level": 9,
+            "Parameters": [
+              8.3468,
+              3.9,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303910,
+            "Level": 10,
+            "Parameters": [
+              8.9972,
+              4,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303911,
+            "Level": 11,
+            "Parameters": [
+              9.6476,
+              4,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303912,
+            "Level": 12,
+            "Parameters": [
+              10.298,
+              4,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303913,
+            "Level": 13,
+            "Parameters": [
+              10.84,
+              4,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303914,
+            "Level": 14,
+            "Parameters": [
+              11.382,
+              4,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303915,
+            "Level": 15,
+            "Parameters": [
+              11.924,
+              4,
+              12,
+              40
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10303,
+      "Name": "Planet Befall",
+      "Description": "Brings a falling meteor down to earth, dealing massive <color=#FFE699FF>Geo DMG</color> to opponents caught in its AoE and applying the <color=#FFE699FF>Petrification</color> status to them.\n\n<color=#FFD780FF>Petrification</color>\nOpponents affected by the <color=#FFE699FF>Petrification</color> status cannot move.\n\n<i>The falling meteor punishes the unjust.</i>",
+      "Icon": "Skill_E_Zhongli_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 3021,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 302101,
+              "Level": 1,
+              "Parameters": [
+                0.05
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 302101,
+        "Name": "Resonant Waves",
+        "Description": "When the Jade Shield takes DMG, it will Fortify:\n·Fortified characters have 5% increased Shield Strength.\nCan stack up to 5 times, and lasts until the Jade Shield disappears.",
+        "Icon": "UI_Talent_S_Zhongli_05"
+      },
+      {
+        "GroupId": 3022,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 302201,
+              "Level": 1,
+              "Parameters": [
+                0.0139,
+                0.019,
+                0.33
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 302201,
+        "Name": "Dominance of Earth",
+        "Description": "Zhongli deals bonus DMG based on his Max HP:\n·Normal Attack, Charged Attack, and Plunging Attack DMG is increased by 1.39% of Max HP.\n·<color=#FFD780FF>Dominus Lapidis'</color> Stone Stele, resonance, and hold DMG is increased by 1.9% of Max HP.\n·<color=#FFD780FF>Planet Befall's</color> DMG is increased by 33% of Max HP.",
+        "Icon": "UI_Talent_S_Zhongli_06"
+      },
+      {
+        "GroupId": 3023,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 302301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 302301,
+        "Name": "Arcanum of Crystal",
+        "Description": "Refunds 15% of the ore used when crafting Polearm-type weapons.",
+        "Icon": "UI_Talent_Forge_Pole"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 301,
+        "Name": "Rock, the Backbone of Earth",
+        "Description": "Increases the maximum number of Stone Steles created by <color=#FFD780FF>Dominus Lapidis</color> that may exist simultaneously to 2.",
+        "Icon": "UI_Talent_S_Zhongli_01"
+      },
+      {
+        "Id": 302,
+        "Name": "Stone, the Cradle of Jade",
+        "Description": "<color=#FFD780FF>Planet Befall</color> grants nearby characters on the field a Jade Shield when it descends.",
+        "Icon": "UI_Talent_S_Zhongli_02"
+      },
+      {
+        "Id": 303,
+        "Name": "Jade, Shimmering through Darkness",
+        "Description": "Increases the Level of <color=#FFD780FF>Dominus Lapidis</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Zhongli_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 304,
+        "Name": "Topaz, Unbreakable and Fearless",
+        "Description": "Increases <color=#FFD780FF>Planet Befall</color>'s AoE by 20% and increases the duration of Planet Befall's Petrification effect by 2s.",
+        "Icon": "UI_Talent_S_Zhongli_03"
+      },
+      {
+        "Id": 305,
+        "Name": "Lazuli, Herald of the Order",
+        "Description": "Increases the Level of <color=#FFD780FF>Planet Befall</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Zhongli_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 306,
+        "Name": "Chrysos, Bounty of Dominator",
+        "Description": "When the Jade Shield takes DMG, 40% of that incoming DMG is converted to HP for the current character.\nA single instance of regeneration cannot exceed 8% of that character's Max HP.",
+        "Icon": "UI_Talent_S_Zhongli_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Vago Mundo",
+    "Detail": "A mysterious expert contracted by the Wangsheng Funeral Parlor. Extremely knowledgeable in all things.",
+    "Association": 2,
+    "Native": "Liyue Harbor",
+    "BirthMonth": 12,
+    "BirthDay": 31,
+    "VisionBefore": "Geo",
+    "VisionAfter": "Geo",
+    "VisionOverrideUnlocked": "Gnosis",
+    "ConstellationBefore": "???",
+    "ConstellationAfter": "Lapis Dei",
+    "CvChinese": "彭博",
+    "CvJapanese": "前野智昭",
+    "CvEnglish": "Keith Silverstein",
+    "CvKorean": "Pyo Young-jae",
+    "CookBonus": {
+      "OriginItemId": 108153,
+      "ItemId": 108173,
+      "InputList": [
+        100061,
+        110005,
+        100091
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "A new contract? Okay. I'm still on leave, but I can accompany you for a while. What name should I use on the contract? I have a great many names, though when on leave I tend to go by Zhongli. And you, Traveler? What name will you be signing on this contract?"
+      },
+      {
+        "Title": "Chat: Journeys",
+        "Context": "Every journey has its final day. Don't rush."
+      },
+      {
+        "Title": "Chat: Tours",
+        "Context": "Where do you want to go next? If you'd like to see Liyue's tourist spots, I have a few references."
+      },
+      {
+        "Title": "Chat: Liyue",
+        "Context": "Boats are made for transferring commodities back and forth, and those that come across Liyue tend to stay a while, so it is where many things come to settle."
+      },
+      {
+        "Title": "Chat: Reminiscing",
+        "Context": "Osmanthus wine tastes the same as I remember... But where are those who share the memory?"
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "Violetgrass is a plant that enjoys a moist environment and is best picked after it rains. If you should choose to pick any, be sure to store them appropriately."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "We should look for a place to take shelter. I'll be fine, but we don't want you catching a cold."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "This weather is no good for being on vacation. We should go and take in an opera."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "I hope today too shall be prosperous."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Want a quick meal to pick us back up? I know a good place in Chihu Rock."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "By this time of night, we will have already missed Ms. Yun's play, but Liyue is full of interesting places to explore, even at night."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "The market is closed and the port has settled. Go get some rest."
+      },
+      {
+        "Title": "About Zhongli",
+        "Context": "Nothing can be accomplished without rules or standards. No matter if it is mortals or adepti, everyone has their place. This rule is what keeps Liyue in peace."
+      },
+      {
+        "Title": "About Us: Gold",
+        "Context": "Gold is Liyue's treasure. It is the blood that runs through her heart. As for whether your own heart shines like gold — we will have to wait and see."
+      },
+      {
+        "Title": "About Us: Contracts",
+        "Context": "You and I have a contract, so feel free to discuss anything at all within the scope of said contract."
+      },
+      {
+        "Title": "About Us: Fairness",
+        "Context": "We can discuss matters that fall outside of our contract, too. After all, I have been on this land for a time, and have come to know a thing or two. Of course, I do hope you can do some things for me as well. That would only be fair."
+      },
+      {
+        "Title": "About Us: Confusion",
+        "Context": "Contracts cannot be used to define friendship, nor measure sentiment. So just what can we use to measure the weight of our emotions? Do you know the answer, friend?"
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "Visions... are also a type of contract. You should know that all power comes at a price. For every bit of power you gain, so too do you gain more responsibility."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Trade relies on both contracts and fairness. There is one thing you must never forget when making and abiding by a contract: if fairness is lost, then the contract shall become proof of one's deception."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "If you're heading to Jueyun Karst, please bring me back a bunch of Qingxin. Just one bunch is enough. Travel expenses...? Ah, I almost forgot. During the effective period of our contract, travel expenses are to be paid for by yourself. Sorry to bother you."
+      },
+      {
+        "Title": "About Xiao",
+        "Context": "You speak of the young adeptus of Guili Plains... *sigh* Still fulfilling his duty to this very day. Please, give this Remedium Tertiorum to him on my behalf. Oh, yes... be sure not to let Paimon eat them. Nothing of this world can withstand the power of this medicine."
+      },
+      {
+        "Title": "About Venti",
+        "Context": "*sniff* Tsk... It reeks of wine. That bard has just been through here, hasn't he? That drunkard is a disgrace to the arts. Oh... Has he tricked you into getting drunk? You're slurring a little. Wait a moment, I'll brew a pot of sobering tea. It'll be ready in only six hours, so just wait a moment."
+      },
+      {
+        "Title": "About Ningguang",
+        "Context": "Despite the multitude of affairs that she deals with in a day, Ningguang always continues to press on. A rare gem indeed. I'm reminded of the time that she used to walk barefoot from Yaoguang Shoal to the south wharf, trying to sell her wares as she went. Time is cruel to humans."
+      },
+      {
+        "Title": "About Hu Tao",
+        "Context": "The current overseer of the funeral parlor? Ahem. I cannot deal with that child."
+      },
+      {
+        "Title": "About Tartaglia: Composed",
+        "Context": "That rascal from Snezhnaya has yet to depart from Liyue? Heh, no matter. Just let me know if he gives you any trouble. I shall deal with the matter swiftly."
+      },
+      {
+        "Title": "About Tartaglia: Drinks",
+        "Context": "It's said that Childe and his reputation have yet again stirred up waves among the inner ranks of the Fatui. Knowing his type, he will be sure to swiftly depose anyone who dares to challenge his actions. Hmm... Come to think of it, there will be a lot of interesting news to be heard the next time we gather for drinks. Care to join me when the time comes, Traveler?"
+      },
+      {
+        "Title": "About Ganyu",
+        "Context": "Liyue's prosperity has not merely been built on Rex Lapis' oracles or wisdom. It is also thanks to the countless servants of the Geo Archon who have honored their end of the contract. Of them, Ganyu is the one who has served for the longest time. If you want to know about her past... You should ask her about it. I fear my wording would not be delicate enough to receive her approval."
+      },
+      {
+        "Title": "About Keqing",
+        "Context": "She is the most impious of the Qixing — but I actually find the conviction of such people quite endearing. The only reason I was able to consider taking a step back from such overarching management of Liyue was because there are people like her. People who speak up when they believe themselves to be right, and then go and do something decisive about it."
+      },
+      {
+        "Title": "About Yanfei",
+        "Context": "Despite never having signed a contract with me, she upholds order within many strata of Liyue society in her own way, dispelling misconceptions and correcting biases... Should her father one day return from his travels, I imagine that he would be even more delighted than I."
+      },
+      {
+        "Title": "About Baal",
+        "Context": "Time tempers all volition. Yet she would give up everyone for her beliefs. Perhaps it is for this very reason that she has come to where she stands today... Should the chance come by me, I too would like to learn of the Eternity for which she so earnestly endeavors."
+      },
+      {
+        "Title": "About Buer",
+        "Context": "As well as ruling over all of Sumeru, the God of Wisdom, Buer, has a duty to guard Irminsul. Only one who possesses great wisdom could hope to shoulder these responsibilities. All life in Teyvat owes her gratitude for saving Irminsul."
+      },
+      {
+        "Title": "About Furina",
+        "Context": "She made a contract with her own self to save the nation, strictly adhered to it for over five centuries without once wavering, and even fooled the Heavenly Principles in the end... I have great respect for approaches to justice that place exacting demands not only on others, but also on the self. Though her divinity has vanished and the throne of the Archon is no more, Furina will go down in Fontaine's history as a God of Justice worthy of recognition."
+      },
+      {
+        "Title": "About Xianyun",
+        "Context": "I hear many merchants of Liyue tell tales of a Ms. Xianyun. By most accounts, she appears proud and taciturn upon first glance, yet in conversation, people find her to be forthright and fair-minded, and they are pleased to make her acquaintance. I am glad to hear this. But... I have also heard a great many accounts lauding her readiness to part with large sums of Mora..."
+      },
+      {
+        "Title": "About Haborym",
+        "Context": "Natlan's long history of struggle fueled its warriors to overcome the Abyss and transcend fate to forge a new future. Behind this triumph stands a leader who wields both time and history as her weapons, with a level of strength that rivals the gods. She is impressive indeed."
+      },
+      {
+        "Title": "About the White Horse Adeptus",
+        "Context": "The white horse... An old acquaintance, and one I haven't met in a very long time... One laments spring nights, how short they last, and autumn days that quickly pass. A steed that bolts and swiftly flees, a candle shivering in the breeze."
+      },
+      {
+        "Title": "More About Zhongli: I",
+        "Context": "Why is it that once you finally get a break, rather than taking a rest, you instead come to me? Is it that you want to hear one of my stories?"
+      },
+      {
+        "Title": "More About Zhongli: II",
+        "Context": "Have you heard of the origin of the Blackcliff Forge? In the past, they would mine the ore veins of Mt. Tianheng, and then replace the cavities with factory equipment. Tunnels run in all directions throughout the mountain — some even run to the ruins deep within the earth. I doubt there is a person today who could map out all the tunnels."
+      },
+      {
+        "Title": "More About Zhongli: III",
+        "Context": "Have you heard of the origins of the Lantern Rite? In a war, long ago, the people of Liyue would release lanterns to remind their soldiers of the way home, and to never lose sight of themselves. Though in this day and age, I doubt there are any that remember."
+      },
+      {
+        "Title": "More About Zhongli: IV",
+        "Context": "The God of Contracts. Have you heard of him? He has an impressive memory. He remembers the name of every person he comes across, and the date that every ship built in Liyue sets sail. After all, only in being able to do so can he memorize all of the contracts he holds. With that said, not every memory is a happy one..."
+      },
+      {
+        "Title": "More About Zhongli: V",
+        "Context": "For those that live too long, the friends of days gone by and scenes from their adventures live on in their memories. As such, I have no regrets in meeting you, friend. Should the day ever come that we are not together, you will continue to shine like gold in my memories."
+      },
+      {
+        "Title": "Zhongli's Hobbies",
+        "Context": "I enjoy partaking in walks through the city — when time permits. I find it very calming. Yes... Just when did this feeling begin...?"
+      },
+      {
+        "Title": "Zhongli's Troubles",
+        "Context": "To get people to abide by a contract and act in accordance with the guidelines set out within is simply to ask them to respect the concept of fairness. It is not a large request. How are there those who still do not understand such simplicity?"
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "There was once a drink I used to enjoy with friends — long ago... Is it because the climate has changed? A shame I will never be able to relish in its smooth flavor again."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I don't like seafood. Just seeing it reminds me of that... slimy texture, and that scent that just won't wash off. As for why I hate it... *sigh* It's a long story, so let's just say my memory is a little too good."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "The finest ingredients cooked with true expertise. This is no small feat."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "The art of gastronomy is a fascinating one. That it appeals to you comes as no surprise."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Since you seem to have some time on your hands, why don't we find a quiet place and I'll share one of my stories with you."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Happy birthday. This is a dried Glaze Lily that came into bloom on the day of your birth. Long ago, the people of Liyue would say that this flower blooms bearing the weight of the beautiful memories and prayers of the land. I believe this to have applied on the day you were born as well."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "It seems my strength is returning. Not a lot, but enough."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "My power is growing, and so with it grows the burden on my body... I'm okay. My structure is not the same as that of normal people. Please, do not worry yourself."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "I see. Using a Vision harnesses elements. As far as the common folk are concerned, this is no small feat. So... back then... they were aware of this as they stood beside me..."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "After letting go of my Gnosis, I never expected to see a day like this again. Thank you, friend. Ah, yes, I have a new contract here. Care to take a look at it together?"
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Rise!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Quake!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Crumble!"
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Gather."
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "Stabilize."
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "Solidify."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Order guide you."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "This is order."
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "I will have order!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "One man's stone is another man's gem..."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Unsolicited... and all the more valuable for it."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Certainly worth the extra mile."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "I see your power."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Ha, this is getting interesting."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Emergency countermeasures aren't my thing."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Don't try to rush your enemy."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Take a rest. Leave it to me."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Ugh... I'm feeling a little... off..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "You shouldn't see me like this..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Even bedrock can be turned to dust..."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Careless..."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Nothing to fear."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Sure."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "A walk would be nice."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "What shall we do?"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "In Liyue's traditional customs, \"receiving adepti\" and \"sending adepti off\" are equally important.\nThe Hus of the Wangsheng Funeral Parlor, who have been in this business for 77 generations, are the masters of handling funerals. However, Hu Tao, the current owner of Wangsheng Funeral Parlor, primarily focuses on the art of sending mortals on their way.\nFor the various ceremonies for sending adepti off, Hu Tao usually employs the help of a friend in more or less the same business. That person's name is Zhongli. The adepti have been with Liyue for millennia, but only a handful have ascended in the past three thousand years, which means that everything regarding the traditions now only exists in texts. This is not something one would likely witness twice in their entire lifetime.\nNot even the most particular and learned of researchers or scholars could find one fault in Wangsheng Funeral Parlor's ceremonies for sending adepti off.\nEverything must be perfect, from the costumes, the time, the place, the items, the weather, the scheduled length, the size of the permitted audience, to the stature, profession, and age of said audience. Nothing can be overlooked.\nWhen folk describe Zhongli as \"living history,\" the latter usually only smiles and sighs.\n\"I... just have a good memory.\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "In Liyue, if a person pays great attention to details, and has insuperable criteria by which they judge certain matters, then they are called \"particular.\"\nIn truth, everyone is \"particular\" about something. Some people hate spicy food, others don't eat fish, and some want their tofu served sweet...\nBut as for Zhongli, he is particular about everything.\nHe attends operas performed by only the most celebrated stars, takes only the most luxuriant thrushes out for walks, and he goes into the kitchen personally to instruct the cooks as to the ratio of shrimp and fish required to make the most authentic Fullmoon Egg.\nZhongli has expertise in all manner of things, from fashion to daily essentials, to fine wines and delicacies, to teas and spices, and to flora and fauna. He is also more than capable of participating in discussions on commerce, politics, and international relations.\nBut on a typical day, all you will glean from him is a few pieces of useless trivia, because he particularly enjoys sharing these fun tidbits with you."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "When making a purchase, look to haggle.\nThis is a common understanding among the people of Liyue. No matter what high heavens the store owner praises their product to, no matter its ancient history or classical value, prices are always flexible. Half the stated cost is a good place to start.\nBut when Zhongli pays up (or rather, calls for someone else to pay up on his behalf), he never looks at the price tag. As long as it catches his eye, Zhongli will pay as much as the owner asks. Indeed, he will even buy it at a premium sometimes.\nBut for some reason, Zhongli always forgets to bring money.\nFor small purchases, he has friends to help him out, and large bills he somehow finds ways to have written off.\nTo those merchants who secretly pride themselves on their powers of flattery, Zhongli is a man of strange proclivities: in truth, he knows a great deal about the value of money and finance, and he also understands the suffering of the people. However, he seems to not understand that poverty is part of the human condition.\nOr perhaps it might be said that he cannot imagine himself being poor.\nHow has such a person not died of hunger yet?"
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "There is no way Zhongli can starve.\nSuch concerns as profit and loss are beneath his notice. The Seven Nations and the world itself are where his efforts are directed.\nAs for wealth... He is wealth itself.\nHe is Morax, the overlord Rex Lapis who rules Liyue, and the Geo Archon of the Seven Archons. The very money that circulates throughout Teyvat, Mora, is named after him.\nWhen night falls and bustling Liyue begins to slumber, he will sometimes stand atop the towering mountains and gaze upon this city, which he made with his own hands.\nTo the people of Liyue, Rex Lapis has many divine titles.\nWhen he laid down Liyue's laws by his divine might, he was the God of Contracts. When he minted the first Mora and made Liyue strong by dint of commerce, the merchants revered him as the God of Commerce.\nHe has lived through countless years and is the eldest of the Seven, and so historians call him the God of History.\nThousands of years ago, the forebears of the citizens of Liyue Harbor struck stones together to start fires and used piled stones to create stoves. These blessings derived from the Geo element led the Geo Archon to gain the title of God of the Stove.\nPeople from other lands tend to call him Morax, though the people of Liyue prefer to use the term Rex Lapis.\nBut in the hearts of lovers of opera and children, Morax's on-stage aspect, the all-conquering defender of Liyue — the Warrior God — is the most fascinating.\nThe delicacies that Rex Lapis discovered while lost in the streets, the plaques inscribed with his handwriting, a famous opera that he once starred in, playing the part of a warrior... Many stories and tales of Liyue are, when studied closely, stories of people visited by their deity at some point — and the citizens of Liyue are most proud indeed of that history."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "As the founder of Liyue Harbor, \"contracts\" are the most important thing to Morax.\nFrom simple monetary exchange and agreements between merchants to the ancient laws that Morax himself laid down, there is no part of city life untouched by \"contracts.\"\nTo merchants, \"contracts\" are the most important standard to which they hold themselves: deadlines, invoices, shipping destinations... Only a refined and strict order can sustain vibrant commerce, which is itself the lifeblood of Liyue Harbor.\nThus the Qixing punish violators of such laws unceasingly, not only to uphold the divine rulings of Morax but also to allow Liyue to maintain its vitality.\nThrough the millennia, every generation of the Liyue Qixing commits to interpreting the law, including subtle amendments to plug loopholes found in the law. Any loopholes that remain undiscovered are seen by the merchants as \"permissible if unaddressed,\" and they make killings off such holes until they are discovered and patched up by the Liyue Qixing.\nAmid this game of cat-and-mouse, the book that collates such amendments has reached a whopping 279 pages thick.\nThe person currently responsible for maintaining this book, the Tianquan Ningguang, is secretly (and humorously) referred to as the \"Tailor of Liyue,\" in honor of her speed in patching these laws up, and for her sharpness of eye.\nBut no matter how complicated or tangled mortal laws become, one of these stands above all others in the eyes of Rex Lapis.\n\"The one who reneges on their words shall suffer the Wrath of the Rock.\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Rex Lapis, most ancient of The Seven, has lived far too long.\nRex Lapis still remembers that moment when the final archon took their divine seat, thus ending the Archon War and the era of warring gods. The Seven were a diverse lot and dispersed far and wide, but they all shouldered the burden of guiding humanity.\nAs time passed, many of The Seven's titles changed hands, and only two remain of the first Seven: Rex Lapis and the Anemo Archon.\nThe carefree Barbatos, the Anemo Archon, is the second eldest of The Seven.\nWhen Barbatos first came to Liyue, Rex Lapis believed his fellow archon to have encountered some terrible crisis in pursuit of their duties, thus requiring his aid.\nSo when Barbatos descended in a gust of wind, the Geo Archon had already prepared himself to receive this neighboring deity and lend what help he may.\nBut as he looked, the Anemo Archon tossed a wine bottle at him.\n\"Here's some wine from Mondstadt. Care for a taste?\"\nTo forsake one's duty to deliver a single bottle of wine — what a preposterous notion!\nYet the Anemo Archon kept coming to visit, to explore Liyue Harbor, all sorts of strange questions on his lips. The Anemo Archon's questions knew as little limits as the wine in his hands.\nFrom then on, the first Seven would often gather in Liyue.\nRex Lapis still remembers how those wines tasted.\nThe world has changed much since then, and all that was once familiar has faded into memory.\nThe seven seats changed and again were changed, till five of the seven at the table were all departed.\nNor would the duty of guiding humanity be honored by the new archons.\nEven the hardest rocks may be worn down after three thousand years.\nNor would the wind ever return again.\nOne drizzly day, the ancient ruler was strolling about Liyue Harbor, and overheard a merchant telling one of his workers,\n\"You've finished your duties, go ahead and call it a day.\"\nLong did he stand amidst the milling crowd.\n\"Have I... already finished my duties?\""
+      },
+      {
+        "Title": "That Which Rises From the Sea",
+        "Context": "During the Archon Wars, every corner of Teyvat was consumed in the fires of conflict. Not only did gods fight amongst themselves, but countless wicked things also sought to expand their domains.\nOne such type of creature caused no end of woe for the Geo Archon, long before he took that title along with his place among The Seven.\nThese foul creatures, straight from the murky depths of the ocean abyss, had a squishy exterior, and possessed agile tentacles that would live on even after being cut off, even secreting some thick and revolting fluid in the process.\nThis alone would have been enough to make them the most monstrous of all creatures, and still it was not the pinnacle of their monstrosity.\nWhat made them so truly terrible was their small size, which gave them the ability to duck into unimaginably small nooks and crannies.\nNo space was too narrow for them, neither the wooden boards of tables and chairs, nor the seams of windows and doors and curtain folds, nor even books and brushes.\nMany a poor soul had, on at least one occasion, unwittingly outstretched their hand, only to quickly retract it in horror with a blood-curdling scream at the sensation of something cold, clammy and damp, while one or more of these despicable creatures came crawling up their arm, leaving a shiny trail behind them...\nAt the behest of the people of Liyue, Morax agreed to wipe these creatures out. But these parasites upon civilization could not be destroyed like enemies on a battlefield, by simply summoning a storm of stone spears that would shatter the earth and churn the soil...\nStill, he was the God of Contracts. His word had to be his bond.\nSo, he went through the town from house to house with prisons of stone, seizing these creatures one by one and locking them away for good...\nThis long campaign of pest extermination taught Morax the true meaning of \"a burden lifted.\"\nThe grueling campaign itself, and the terrible smell of those ocean creatures' secretions, left a lasting impression on the deity.\nToday, even when he goes out incognito as the mortal man, Zhongli, Morax gives those living, squirming seafood products a wide berth.\n...Well, except for dishes where said seafood products have been sliced and diced into oblivion, such as seafood tofu. He'll quite happily eat those."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Once the Rite of Parting, of which Zhongli was both director and star, was over, the Fatui Harbinger named Signora appeared before him.\nBy prior contract, she was here to claim the Geo Archon Morax's Gnosis.\nBefore the Traveler and the two Fatui Harbingers, Zhongli related the truth that he had established a contract with the Cryo Archon.\nIn his own words, this was his final \"Contract to End All Contracts.\"\nYet no matter how one looks at it, the loss of his divine ability to defend Liyue was too great a price to pay.\nEven amongst mortals, the basis of a contract is \"equivalent exchange.\"\nAnd for the God of Contracts, who must have established countless such agreements in his long years of existence, such an important contract must have come with its benefits.\nNow, the Geo Archon has given away his Gnosis as his part of the deal.\nWhat, then, must the Cryo Archon have wagered to balance the scales?"
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 203000,
+      "Name": "Hermit of Mortal Life",
+      "Description": "Zhongli's outfit. This is the leisurewear of choice for Zhongli, the Wangsheng Funeral Parlor's consultant.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104174,
+    113009,
+    100058,
+    112004,
+    104318,
+    113013
+  ],
+  "NameCard": {
+    "Name": "Zhongli: Planet Befall",
+    "Description": "Namecard style.\nStars fall, light dims.",
+    "Icon": "UI_NameCardIcon_Zhongli",
+    "PicturePrefix": "UI_NameCardPic_Zhongli"
+  },
+  "TraceEffect": {
+    "Id": 215006,
+    "Name": "Echo: Vago Mundo",
+    "Description": "Zhongli's Envisaged Echo. \"Waste not the mountain spring, for no order governs wandering for leisure.\"",
+    "Icon": "UI_TraceEffectIcon_Zhongli"
+  }
+}

@@ -1,0 +1,1323 @@
+{
+  "Id": 10000098,
+  "PromoteId": 98,
+  "Sort": 81,
+  "Body": 3,
+  "Icon": "UI_AvatarIcon_Clorinde",
+  "SideIcon": "UI_AvatarIcon_Side_Clorinde",
+  "Name": "Clorinde",
+  "Description": "An undefeated Champion Duelist. Sword in hand, she defends justice in the Court of Fontaine.",
+  "BeginTime": "2024-06-04T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 1,
+  "BaseValue": {
+    "HpBase": 1008.61255,
+    "AttackBase": 26.2542,
+    "DefenseBase": 61.0266
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 2,
+    "Skills": [
+      {
+        "GroupId": 9831,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+            "4-Hit DMG|{param5:F1P}+{param6:F1P}+{param7:F1P}",
+            "5-Hit DMG|{param10:F1P}",
+            "Charged Attack DMG|{param11:F1P}",
+            "Charged Attack Stamina Cost|{param12:F1}",
+            "Plunge DMG|{param13:F1P}",
+            "Low/High Plunge DMG|{param14:P}/{param15:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 983101,
+              "Level": 1,
+              "Parameters": [
+                0.540596,
+                0.516284,
+                0.34185,
+                0.34185,
+                0.23134,
+                0.23134,
+                0.23134,
+                0,
+                0,
+                0.900102,
+                1.2814,
+                20,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 983102,
+              "Level": 2,
+              "Parameters": [
+                0.584598,
+                0.558307,
+                0.369675,
+                0.369675,
+                0.25017,
+                0.25017,
+                0.25017,
+                0,
+                0,
+                0.973366,
+                1.3857,
+                20,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 983103,
+              "Level": 3,
+              "Parameters": [
+                0.6286,
+                0.60033,
+                0.3975,
+                0.3975,
+                0.269,
+                0.269,
+                0.269,
+                0,
+                0,
+                1.04663,
+                1.49,
+                20,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 983104,
+              "Level": 4,
+              "Parameters": [
+                0.69146,
+                0.660363,
+                0.43725,
+                0.43725,
+                0.2959,
+                0.2959,
+                0.2959,
+                0,
+                0,
+                1.151293,
+                1.639,
+                20,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 983105,
+              "Level": 5,
+              "Parameters": [
+                0.735462,
+                0.702386,
+                0.465075,
+                0.465075,
+                0.31473,
+                0.31473,
+                0.31473,
+                0,
+                0,
+                1.224557,
+                1.7433,
+                20,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 983106,
+              "Level": 6,
+              "Parameters": [
+                0.78575,
+                0.750413,
+                0.496875,
+                0.496875,
+                0.33625,
+                0.33625,
+                0.33625,
+                0,
+                0,
+                1.308288,
+                1.8625,
+                20,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 983107,
+              "Level": 7,
+              "Parameters": [
+                0.854896,
+                0.816449,
+                0.5406,
+                0.5406,
+                0.36584,
+                0.36584,
+                0.36584,
+                0,
+                0,
+                1.423417,
+                2.0264,
+                20,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 983108,
+              "Level": 8,
+              "Parameters": [
+                0.924042,
+                0.882485,
+                0.584325,
+                0.584325,
+                0.39543,
+                0.39543,
+                0.39543,
+                0,
+                0,
+                1.538546,
+                2.1903,
+                20,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 983109,
+              "Level": 9,
+              "Parameters": [
+                0.993188,
+                0.948521,
+                0.62805,
+                0.62805,
+                0.42502,
+                0.42502,
+                0.42502,
+                0,
+                0,
+                1.653675,
+                2.3542,
+                20,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 983110,
+              "Level": 10,
+              "Parameters": [
+                1.06862,
+                1.020561,
+                0.67575,
+                0.67575,
+                0.4573,
+                0.4573,
+                0.4573,
+                0,
+                0,
+                1.779271,
+                2.533,
+                20,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 983111,
+              "Level": 11,
+              "Parameters": [
+                1.144052,
+                1.092601,
+                0.72345,
+                0.72345,
+                0.48958,
+                0.48958,
+                0.48958,
+                0,
+                0,
+                1.904867,
+                2.7118,
+                20,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 983112,
+              "Level": 12,
+              "Parameters": [
+                1.219484,
+                1.16464,
+                0.77115,
+                0.77115,
+                0.52186,
+                0.52186,
+                0.52186,
+                0,
+                0,
+                2.030462,
+                2.8906,
+                20,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 983113,
+              "Level": 13,
+              "Parameters": [
+                1.294916,
+                1.23668,
+                0.81885,
+                0.81885,
+                0.55414,
+                0.55414,
+                0.55414,
+                0,
+                0,
+                2.156058,
+                3.0694,
+                20,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 983114,
+              "Level": 14,
+              "Parameters": [
+                1.370348,
+                1.308719,
+                0.86655,
+                0.86655,
+                0.58642,
+                0.58642,
+                0.58642,
+                0,
+                0,
+                2.281653,
+                3.2482,
+                20,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 983115,
+              "Level": 15,
+              "Parameters": [
+                1.44578,
+                1.380759,
+                0.91425,
+                0.91425,
+                0.6187,
+                0.6187,
+                0.6187,
+                0,
+                0,
+                2.407249,
+                3.427,
+                20,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10981,
+        "Name": "Oath of Hunting Shadows",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina and fires Suppressing Shots in a fan pattern with her pistolet.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_01"
+      },
+      {
+        "GroupId": 9832,
+        "Proud": {
+          "Descriptions": [
+            "Swift Hunt DMG|{param1:F1P}/{param2:F1P}",
+            "Swift Hunt Bond of Life Gain|{param3:F1P} Max HP",
+            "Impale the Night DMG|{param4:F1P}/{param5:F1P}/{param7:F1P}×3",
+            "Impale the Night Healing|0%/{param6:F1P}/{param8:F1P} Bond of Life",
+            "Bond of Life Conversion|{param9:P} Healing",
+            "Surging Blade DMG|{param10:F1P}",
+            "Surging Blade Interval|{param11:F1}s",
+            "Night Vigil Duration|{param12:F1}s",
+            "CD|{param13:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 983201,
+              "Level": 1,
+              "Parameters": [
+                0.267632,
+                0.38786,
+                0.35,
+                0.329724,
+                0.439632,
+                1.04,
+                0.25112,
+                1.1,
+                0.8,
+                0.432,
+                10,
+                7.5,
+                16
+              ]
+            },
+            {
+              "Id": 983202,
+              "Level": 2,
+              "Parameters": [
+                0.289416,
+                0.41943,
+                0.35,
+                0.356562,
+                0.475416,
+                1.04,
+                0.27156,
+                1.1,
+                0.8,
+                0.4644,
+                10,
+                7.5,
+                16
+              ]
+            },
+            {
+              "Id": 983203,
+              "Level": 3,
+              "Parameters": [
+                0.3112,
+                0.451,
+                0.35,
+                0.3834,
+                0.5112,
+                1.04,
+                0.292,
+                1.1,
+                0.8,
+                0.4968,
+                10,
+                7.5,
+                16
+              ]
+            },
+            {
+              "Id": 983204,
+              "Level": 4,
+              "Parameters": [
+                0.34232,
+                0.4961,
+                0.35,
+                0.42174,
+                0.56232,
+                1.04,
+                0.3212,
+                1.1,
+                0.8,
+                0.54,
+                10,
+                7.5,
+                16
+              ]
+            },
+            {
+              "Id": 983205,
+              "Level": 5,
+              "Parameters": [
+                0.364104,
+                0.52767,
+                0.35,
+                0.448578,
+                0.598104,
+                1.04,
+                0.34164,
+                1.1,
+                0.8,
+                0.5724,
+                10,
+                7.5,
+                16
+              ]
+            },
+            {
+              "Id": 983206,
+              "Level": 6,
+              "Parameters": [
+                0.389,
+                0.56375,
+                0.35,
+                0.47925,
+                0.639,
+                1.04,
+                0.365,
+                1.1,
+                0.8,
+                0.6048,
+                10,
+                7.5,
+                16
+              ]
+            },
+            {
+              "Id": 983207,
+              "Level": 7,
+              "Parameters": [
+                0.423232,
+                0.61336,
+                0.35,
+                0.521424,
+                0.695232,
+                1.04,
+                0.39712,
+                1.1,
+                0.8,
+                0.648,
+                10,
+                7.5,
+                16
+              ]
+            },
+            {
+              "Id": 983208,
+              "Level": 8,
+              "Parameters": [
+                0.457464,
+                0.66297,
+                0.35,
+                0.563598,
+                0.751464,
+                1.04,
+                0.42924,
+                1.1,
+                0.8,
+                0.6912,
+                10,
+                7.5,
+                16
+              ]
+            },
+            {
+              "Id": 983209,
+              "Level": 9,
+              "Parameters": [
+                0.491696,
+                0.71258,
+                0.35,
+                0.605772,
+                0.807696,
+                1.04,
+                0.46136,
+                1.1,
+                0.8,
+                0.7344,
+                10,
+                7.5,
+                16
+              ]
+            },
+            {
+              "Id": 983210,
+              "Level": 10,
+              "Parameters": [
+                0.52904,
+                0.7667,
+                0.35,
+                0.65178,
+                0.86904,
+                1.04,
+                0.4964,
+                1.1,
+                0.8,
+                0.7776,
+                10,
+                7.5,
+                16
+              ]
+            },
+            {
+              "Id": 983211,
+              "Level": 11,
+              "Parameters": [
+                0.566384,
+                0.82082,
+                0.35,
+                0.697788,
+                0.930384,
+                1.04,
+                0.53144,
+                1.1,
+                0.8,
+                0.8208,
+                10,
+                7.5,
+                16
+              ]
+            },
+            {
+              "Id": 983212,
+              "Level": 12,
+              "Parameters": [
+                0.603728,
+                0.87494,
+                0.35,
+                0.743796,
+                0.991728,
+                1.04,
+                0.56648,
+                1.1,
+                0.8,
+                0.864,
+                10,
+                7.5,
+                16
+              ]
+            },
+            {
+              "Id": 983213,
+              "Level": 13,
+              "Parameters": [
+                0.641072,
+                0.92906,
+                0.35,
+                0.789804,
+                1.053072,
+                1.04,
+                0.60152,
+                1.1,
+                0.8,
+                0.918,
+                10,
+                7.5,
+                16
+              ]
+            },
+            {
+              "Id": 983214,
+              "Level": 14,
+              "Parameters": [
+                0.678416,
+                0.98318,
+                0.35,
+                0.835812,
+                1.114416,
+                1.04,
+                0.63656,
+                1.1,
+                0.8,
+                0.972,
+                10,
+                7.5,
+                16
+              ]
+            },
+            {
+              "Id": 983215,
+              "Level": 15,
+              "Parameters": [
+                0.71576,
+                1.0373,
+                0.35,
+                0.88182,
+                1.17576,
+                1.04,
+                0.6716,
+                1.1,
+                0.8,
+                1.026,
+                10,
+                7.5,
+                16
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10982,
+        "Name": "Hunter's Vigil",
+        "Description": "Preparing her pistolet, she enters the \"Night Vigil\" state, using steel and shot together. In this state, Clorinde's Normal Attacks will be transformed into \"Swift Hunt\" pistolet attacks, and the DMG dealt is converted into <color=#FFACFFFF>Electro DMG</color> that cannot be overridden by infusions, and she will be unable to use Charged Attacks. Using her Elemental Skill will transform it into \"Impale the Night\": Perform a lunging attack, dealing <color=#FFACFFFF>Electro DMG</color>. The DMG done through the aforementioned method is considered Normal Attack DMG.\n\n<color=#FFD780FF>Swift Hunt</color>\n· When her Bond of Life is equal to or greater than 100% of her max HP: Performs a pistolet shot.\n· When her Bond of Life is less than 100%, firing her pistolet will grant her Bond of Life, with the amount gained based on her max HP. The shots she fires can pierce opponents, and DMG dealt to opponents in their path is increased.\n\n<color=#FFD780FF>Impale the Night</color>\nThe current percentage value of Clorinde's Bond of Life determines its effect:\n· When the Bond of Life value is 0%, perform a normal lunging strike;\n· When the Bond of Life value is less than 100% of her max HP, Clorinde is healed based on the Bond of Life value, and the AoE of the lunging attack and the DMG dealt is increased;\n· When the value of the Bond of Life is equal to or greater than 100% of her max HP, use Impale the Night: Pact. The healing multiplier is increased, and the AoE and DMG dealt by the lunge is increased even further.\n\nIn addition, when Clorinde is in the Night Vigil state, healing effects other than Impale the Night will not take effect and will instead be converted into a Bond of Life that is a percentage of the healing that would have been received.\n\nClorinde will exit the \"Night Vigil\" state when she leaves the field.\n\n<color=#FFD780FF>Arkhe: Ousia</color>\nPeriodically, when Clorinde's Swift Hunt shots strike opponents, she will summon a Surging Blade at the position hit that deals Ousia-aligned <color=#FFACFFFF>Electro DMG</color>.\n\n<i>Though the evil that lurked in the shadows of the night had been purged across thousands of years, a shadow that the light could not reach clouded human hearts.\nEven now, the warning left by the Golden Hunter is etched into her memory: Those of the Night Vigil, carrying aloft lit candles against the blackness, have greater need still to remain vigilant. Be not corrupted by the cold dark.</i>",
+        "Icon": "Skill_S_Clorinde_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 9839,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:F1P}×5",
+          "Bond of Life Gain|{param2:F1P} Max HP",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 983901,
+            "Level": 1,
+            "Parameters": [
+              1.2688,
+              0.66,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 983902,
+            "Level": 2,
+            "Parameters": [
+              1.36396,
+              0.72,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 983903,
+            "Level": 3,
+            "Parameters": [
+              1.45912,
+              0.78,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 983904,
+            "Level": 4,
+            "Parameters": [
+              1.586,
+              0.84,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 983905,
+            "Level": 5,
+            "Parameters": [
+              1.68116,
+              0.9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 983906,
+            "Level": 6,
+            "Parameters": [
+              1.77632,
+              0.96,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 983907,
+            "Level": 7,
+            "Parameters": [
+              1.9032,
+              1.02,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 983908,
+            "Level": 8,
+            "Parameters": [
+              2.03008,
+              1.08,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 983909,
+            "Level": 9,
+            "Parameters": [
+              2.15696,
+              1.14,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 983910,
+            "Level": 10,
+            "Parameters": [
+              2.28384,
+              1.2,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 983911,
+            "Level": 11,
+            "Parameters": [
+              2.41072,
+              1.26,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 983912,
+            "Level": 12,
+            "Parameters": [
+              2.5376,
+              1.32,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 983913,
+            "Level": 13,
+            "Parameters": [
+              2.6962,
+              1.38,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 983914,
+            "Level": 14,
+            "Parameters": [
+              2.8548,
+              1.44,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 983915,
+            "Level": 15,
+            "Parameters": [
+              3.0134,
+              1.5,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10985,
+      "Name": "Last Lightfall",
+      "Description": "Grants herself a Bond of Life based upon her own max HP before swiftly evading and striking with saber and sidearm as one, dealing <color=#FFACFFFF>AoE Electro DMG</color>.\n\n<i>It is said the legacy of the ancient art of resisting non-human beings with but a mortal body can be traced back to the Lochknights who resisted the Remurian Empire.\nBe that as it may, so long as one can find a way to control the level of force used, it's not as if it cannot be used in duels against ordinary opponents.</i>",
+      "Icon": "Skill_E_Clorinde_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 9821,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 982101,
+              "Level": 1,
+              "Parameters": [
+                15,
+                1800,
+                0.2
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 982101,
+        "Name": "Dark-Shattering Flame",
+        "Description": "After a nearby party member triggers an <color=#FFACFFFF>Electro-related reaction</color> against an opponent, <color=#FFACFFFF>Electro DMG</color> dealt by Clorinde's Normal Attacks and <color=#FFD780FF>Last Lightfall</color> will be increased by 20% of Clorinde's ATK for 15s. Max 3 stacks. Each stack is counted independently. The Maximum DMG increase achievable this way for the above attacks is 1,800.",
+        "Icon": "UI_Talent_S_Clorinde_05"
+      },
+      {
+        "GroupId": 9822,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 982201,
+              "Level": 1,
+              "Parameters": [
+                1,
+                1,
+                0.1,
+                15
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 982201,
+        "Name": "Lawful Remuneration",
+        "Description": "If Clorinde's Bond of Life is equal to or greater than 100% of her Max HP, her CRIT Rate will increase by 10% for 15s whenever her Bond of Life value increases or decreases. Max 2 stacks. Each stack is counted independently.\nAdditionally, <color=#FFD780FF>Hunter's Vigil</color>'s Night Vigil state is buffed: While it is active, the percent of healing converted to Bond of Life increases to 100%.",
+        "Icon": "UI_Talent_S_Clorinde_06"
+      },
+      {
+        "GroupId": 9823,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 982301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 982301,
+        "Name": "Night Vigil's Harvest",
+        "Description": "Displays the location of nearby <color=#FFD780FF>resources unique to Fontaine</color> on the mini-map.",
+        "Icon": "UI_Talent_S_Liney_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 981,
+        "Name": "\"From This Day, I Pass the Candle's Shadow-Veil\"",
+        "Description": "While <color=#FFD780FF>Hunter's Vigil</color>'s Night Vigil state is active, when <color=#FFACFFFF>Electro DMG</color> from Clorinde's Normal Attacks hit opponents, they will trigger 2 coordinated attacks from a Nightvigil Shade summoned near the hit opponent, each dealing 30% of Clorinde's ATK as <color=#FFACFFFF>Electro DMG</color>.\nThis effect can occur once every 1.2s. DMG dealt this way is considered Normal Attack DMG.",
+        "Icon": "UI_Talent_S_Clorinde_01"
+      },
+      {
+        "Id": 982,
+        "Name": "\"Now, As We Face the Perils of the Long Night\"",
+        "Description": "Enhance the Ascension Talent \"Dark-Shattering Flame\": After a nearby party member triggers an <color=#FFACFFFF>Electro-related reaction</color> against an opponent, <color=#FFACFFFF>Electro DMG</color> dealt by Clorinde's Normal Attacks and <color=#FFD780FF>Last Lightfall</color> will be increased by 30% of Clorinde's ATK for 15s. Max 3 stacks. Each stack is counted independently. When you have 3 stacks, Clorinde's interruption resistance will be increased. The Maximum DMG increase achievable this way for the above attacks is 2,700.\nYou must first unlock the Ascension Talent \"Dark-Shattering Flame.\"",
+        "Icon": "UI_Talent_S_Clorinde_02"
+      },
+      {
+        "Id": 983,
+        "Name": "\"I Pledge to Remember the Oath of Daylight\"",
+        "Description": "Increases the Level of <color=#FFD780FF>Hunter's Vigil</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Clorinde_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 984,
+        "Name": "\"To Enshrine Tears, Life, and Love\"",
+        "Description": "When <color=#FFD780FF>Last Lightfall</color> deals DMG to opponent(s), DMG dealt is increased based on Clorinde's Bond of Life percentage. Every 1% of her current Bond of Life will increase <color=#FFD780FF>Last Lightfall</color> DMG by 2%. The maximum <color=#FFD780FF>Last Lightfall</color> DMG increase achievable this way is 200%.",
+        "Icon": "UI_Talent_S_Clorinde_03"
+      },
+      {
+        "Id": 985,
+        "Name": "\"Holding Dawn's Coming as My Votive\"",
+        "Description": "Increases the Level of <color=#FFD780FF>Last Lightfall</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Clorinde_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 986,
+        "Name": "\"And So Shall I Never Despair\"",
+        "Description": "For 12s after <color=#FFD780FF>Hunter's Vigil</color> is used, Clorinde's CRIT Rate will be increased by 10%, and her CRIT DMG by 70%.\nAdditionally, while Night Vigil is active, a Glimbright Shade will appear under specific circumstances, executing an attack that deals 200% of Clorinde's ATK as <color=#FFACFFFF>Electro DMG</color>. DMG dealt this way is considered Normal Attack DMG.\nThe Glimbright Shade will appear under the following circumstances:\n· When Clorinde is about to be hit by an attack.\n· When Clorinde uses Impale the Night: Pact.\n1 Glimbright Shade can be summoned in the aforementioned ways every 1s. 6 Shades can be summoned per single Night Vigil duration.\nIn addition, while Night Vigil is active, the DMG Clorinde receives is decreased by 80% and her interruption resistance is increased. This effect will disappear after the Night Vigil state ends or 1s after she summons 6 Glimbright Shades.",
+        "Icon": "UI_Talent_S_Clorinde_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Candlebearer, Shadowhunter",
+    "Detail": "An undefeated Champion Duelist. Sword in hand, she defends justice in the Court of Fontaine.",
+    "Association": 8,
+    "Native": "Trial Court",
+    "BirthMonth": 9,
+    "BirthDay": 20,
+    "VisionBefore": "Electro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Rapperia",
+    "CvChinese": "赵涵雨",
+    "CvJapanese": "石川由依",
+    "CvEnglish": "Crystal Lee",
+    "CvKorean": "Shin Na-ri",
+    "CookBonus": {
+      "OriginItemId": 108676,
+      "ItemId": 108678,
+      "InputList": [
+        101230,
+        100064
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Greetings. I am Clorinde, a Champion Duelist of the Court of Fontaine. If you wish to hire my services, please state the nature of your dispute... You may leave out any extraneous details, those are no concern of mine."
+      },
+      {
+        "Title": "Chat: Opponents",
+        "Context": "I've faced many opponents in my duels. Most of them, I defeated. The rest surrendered. ...Hm? No. I have never lost a duel."
+      },
+      {
+        "Title": "Chat: Champion Duelist",
+        "Context": "In my role as Champion Duelist, my opinions do not matter. For when I draw my blade, I am but an instrument of Fontaine's law."
+      },
+      {
+        "Title": "Chat: Secret to Success",
+        "Context": "A duel is a battle of wills, and the sword an extension of the duelist's spirit. If your heart recoils in fear, then your sword may as well be in its scabbard, because you will not wield it effectively against your foe."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Prey will usually rest on rainy days. But not the hunter."
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "The battle between wind and rain appears to have reached its end."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Hopefully, that was the sound of one more villain being removed from the world."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "This is a new sight for me. A rather bleak one, I must say."
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "...I have never missed Fontaine so much in all my life."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Good morning. I'm going for coffee shortly, would you like to join me? I brought coffee cups — you can borrow one if you need."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Apologies, I don't get off work till later. Here, take this sandwich. It'll keep the wolf from the door."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "I'm afraid I'm unable to share any wine recommendations with you. But I can recommend a few lesser-known restaurants that are well worth a visit."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Goodnight. I'll be heading to bed as soon as I've completed my nightly weapon maintenance."
+      },
+      {
+        "Title": "About Clorinde: News Reports",
+        "Context": "Every newspaper is plagued by reporting that is neither particularly fair, nor remotely just. Some writers allow their views to be swayed by personal connections and promises of Mora.\nIf you want to find out the truth of a situation, the best way is to go to the people directly involved. Ask your own questions, and come to your own conclusions.\nAt the very least, don't let other people's deceitful tongues serve as a substitute for your own brain."
+      },
+      {
+        "Title": "About Clorinde: Muskets and Swords",
+        "Context": "My choice of weapons follows the Marechaussee Hunter tradition. A Musket to chase away my prey, and a sword to deliver it a fatal strike.\nIn duels, of course, I typically only use my sword. Once you set foot in the Duelists' Ring, there is nowhere to run, and therefore no need to chase you away."
+      },
+      {
+        "Title": "About Us: Ceremony",
+        "Context": "Before every duel, I wipe my sword down with a cloth soaked in a special cleaning liquid. It's partly to keep it in good working order, but it also helps me to remain calm and rid my mind of any intrusive thoughts.\nYou're a fellow sword-wielder. Do you have any similar rituals?"
+      },
+      {
+        "Title": "About Us: People and the Shadow of Evil",
+        "Context": "Many of my habits are customs I've adopted from the Marechaussee Hunter tradition. They fought against monsters, while I fight against lawbreakers. But monsters are evil by nature, it is all they know. The same cannot be said for the corrupt of humanity, who have the ability and opportunity to do good, yet willingly choose the path of evil.\nAnd you? What is your reason for carrying a blade?"
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "After I received my Vision, the amount of people surrendering to me in duels went up substantially. Some duelists even think I use it as an intimidation tactic.\nI always thought my undefeated track record was enough of an intimidation tactic. Perhaps I should aim to win more dramatically in future duels."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "I've seen many people get into a dispute over the most trivial thing, take it as a grave affront to their personal dignity, and end up bringing the matter to court. As if that's not already ridiculous enough, they then opt for a duel.\nAs a Champion Duelist, I have no qualms about settling matters of honor with a duel. Still... How can I put this? For the average citizen of Fontaine, I would have thought that questions like whether Marcotte really belongs in coffee are not so crucial to resolve that they warrant the drawing of swords..."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "You've seen Bloatty Floatties before, yes? It's hard to predict where they will fly to and how fast, which makes them good for target practice. Or rather, they would be, if you didn't have to go out into the wild to find one... If only someone out there was willing to cultivate them domestically."
+      },
+      {
+        "Title": "About Charlotte",
+        "Context": "Charlotte is one of the more tactful journalists out there. I don't have anything negative to say about her.\nUnlike some, she doesn't ambush me with her Kamera on my way to work, or follow me to the coffee shop to report on what I'm drinking today... And most commendably of all, she is well aware that I do not do interviews and doesn't nag me about it continuously."
+      },
+      {
+        "Title": "About Furina",
+        "Context": "In the past, I always stood behind her at tea parties, sword at the ready. But now, I get to sit at the table and enjoy the tea and treats along with her.\nI'm now beginning to understand why she complains all the time about how hard it is to maintain her physique."
+      },
+      {
+        "Title": "About Navia",
+        "Context": "Navia's been in a good mood lately. It seems like every other day she's asking me to join her at Tabletop Troupe for a new script.\nThe story is always so different. Save for the few times when I've taken the role of Game Master, I often play in character and join her on the adventure. But I do try to avoid playing any characters from the court, so as not to make the atmosphere too serious..."
+      },
+      {
+        "Title": "About Neuvillette",
+        "Context": "No one is in any doubt as to the Iudex's authority. He always delivers a fair verdict — and when necessary, I will reiterate the fairness of this verdict with my sword."
+      },
+      {
+        "Title": "About Chevreuse",
+        "Context": "Ah yes, Captain Chevreuse. That's a name I've heard before. She has been landed with lawsuits on several occasions, after being accused of using excessive force when arresting culprits. She refuted the allegations just as forcefully during her testimony, leaving the plaintiff speechless. I think she's outstanding."
+      },
+      {
+        "Title": "About Lyney",
+        "Context": "I have to applaud the great magician for the level of professionalism he displays in his craft. If I ever have the time, I would very much like to enjoy one of his shows as a regular audience member."
+      },
+      {
+        "Title": "About Freminet",
+        "Context": "One day, I received a parcel containing a miniature mechanical toy and a thank-you card. The toy was exquisitely made. I must thank Mr. Freminet in person when I get the opportunity... Hm? The opportunity may be hard to come by, you say? Very well, then I too shall write a thank-you card. Please pass it on to him for me."
+      },
+      {
+        "Title": "About Chiori",
+        "Context": "I've bought clothes from her store before. They're good quality. But most of the time, I prefer to wear my work uniform. Partly because it serves to clearly communicate my identity, and partly because I like things that are familiar. Just like my sword, this uniform is familiar and functional — I have no desire to change it."
+      },
+      {
+        "Title": "About Wriothesley",
+        "Context": "Managing the Fortress of Meropide is no mean feat. Wriothesley is undoubtedly a highly capable person if he can maintain relative stability in a place like that.\nI highly suspect that he keeps quiet about some of the methods he uses, but there's no way we can know."
+      },
+      {
+        "Title": "About Sigewinne",
+        "Context": "Miss Sigewinne is an excellent nurse, equally adept at treating the injured and comforting the distressed. I'm sure that her kind and loving nature brings out what little good there may be even in the vilest offenders of the Fortress of Meropide.\nAnd maybe that just might serve as enough of a motivation for them to change their ways."
+      },
+      {
+        "Title": "About Emilie",
+        "Context": "I've heard that she's a perfumer. I've also heard a little about her true profession. I saw her out on the street once. She was stroking a little dog, and had a gentle smile on her face. We nodded at each other, then each went our separate ways."
+      },
+      {
+        "Title": "More About Clorinde: I",
+        "Context": "A Champion Duelist's job is not that complicated. In fact, you could say it's one of the simplest jobs there is. Defeat your opponent, as requested by the Trial Court. That's all there is to it.\n...Perhaps that's why some people colloquially refer to me as an \"executioner.\""
+      },
+      {
+        "Title": "More About Clorinde: II",
+        "Context": "I always do what I can to ensure every duel is a fair fight. If my opponent has impaired vision, I cover my eyes. If their mobility is limited, I restrict my range of movement. Whatever happens, every duel I participate in must be fair."
+      },
+      {
+        "Title": "More About Clorinde: III",
+        "Context": "I've lost count of how many times I've had people surrender right before the duel begins. When someone lacks the courage even to draw their weapon, I'm inclined to think that whatever grievance and claims of reputational damage brought them to this point are just the skewed opinions of a self-serving individual.\nLong before they face me, they are the architects of their own defeat. I needn't make a move when someone is a prisoner of their own soul."
+      },
+      {
+        "Title": "More About Clorinde: IV",
+        "Context": "Have you ever seen a guilty person on trial? In my experience, they always twist the truth in an effort to protest their innocence. Violence is explained away as virtue, and evil as good... But whatever their excuse, it always ends the same way: \"It was a momentary lapse of judgment, but anyone else in my position would have done the same thing, so don't single me out for punishment.\"\nThey seek to hide their own foulness by smearing it on everyone else too.\nTheir lies must be demolished, and the court cleansed of their filth. And that is exactly why I became a Champion Duelist."
+      },
+      {
+        "Title": "More About Clorinde: V",
+        "Context": "I've seen many people seek compassion from the court. No disrespect to them, but they're looking in the wrong place.\nThe court is a place of impartial justice. And justice... must always remain indifferent, or it cannot prevail.\nJustice is too easily led astray once human emotion enters the mix. If impartial judgment were to give way to vindictive punishment, vindictiveness at the hand of the court would be every bit as cruel as the crimes perpetrated by lawbreakers."
+      },
+      {
+        "Title": "Clorinde's Hobbies",
+        "Context": "Unlike my work as a duelist, being a Game Master in Tabletop Troupe gives me the freedom to stay outside of the story itself. and observe people's reactions without getting personally involved in all the drama. I create and control the world in which they operate... Hmm? Like watching a caged animal caught on a hunt? That's an interesting angle... I'd never thought of it like that before. But I would never give the players a hard time — I just want them to enjoy the story. So it's quite different from hunting."
+      },
+      {
+        "Title": "Clorinde's Troubles",
+        "Context": "I do hope those journalists stop harassing me while I'm just trying to enjoy a cup of coffee, buy a bunch of flowers, or read a book. Otherwise, I may have to file a lawsuit to make an example of one or two of them. If they request a duel, I'll make them bring their Kamera, and in the interest of fairness, I too will bring only a Kamera."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "I like meaty dishes in general, but only if the meat is fresh. There's nothing like the flavor of freshly hunted meat cooked over the grill with a little salt to taste and a portion of sour fruits on the side. You should come hunting with me some time, I'll cook for you."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I don't enjoy fish. There's too many bones, and I can't stand the smell... Maybe it's because I had my fill of fish as a child."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "The flavor is perfect. Exactly how I like it. Don't let the journalists or gourmets in on this though — they only know how to appreciate food through the lens of a Kamera or the words of a newspaper article."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Mm, this is fine food. I'll enjoy it slowly so it lasts longer."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "...You're lucky this wasn't served in a restaurant, or the diners would be complaining to the chef."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "#Happy Birthday. I have a gift for you — it's a short-sword necklace that I made myself.\nIn the Marechaussee Hunters' tradition, on a new member's first birthday as a hunter, {M#his}{F#her} mentor will make {M#him}{F#her} a short-sword necklace with {M#his}{F#her} name engraved, to be worn with the sword hanging over the chest. This is to symbolize interrogating {M#his}{F#her} own heart at swordpoint: Will I tread the path of treachery, is there doubt in my heart, or am I resolved to eradicate all evil?\nThough you're not a Marechaussee Hunter, I believe that you're committed, like I am, to fighting the good fight.\nWhy a sword, and not a musket? Because guns can misfire. Also, there's something a little inelegant about interrogating your heart at gunpoint."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Interesting... This is certainly an improvement."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Even my sword feels more at home in my hand now. Like an extension of my own body."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "I feel like my eyesight just improved... Let me do a test-shot on that leaf over there."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "As a warrior yourself, I don't believe you require my help. But should you ever wish to borrow my strength, I will fight for you with everything I have. As always."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Ready."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Loaded."
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Into the shadows!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Hunt them down!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Time to testify."
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Where evil lurks, shoot on sight!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "A stroke of good luck. And a very welcome one."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "If these items are unclaimed, we may take them without controversy."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "First to find gets to stake their claim. Seems fair."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Time to finish this."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "This is sheer anarchy..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "...What a disgrace."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Retreat!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "I'll take over. Get to safety."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "The victor... is declared..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "I am... defeated..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "You've cleared your name..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "A sharp shooter."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Enough!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Per your wishes."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Need to hire a duelist?"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "My blade will lead us through the shadows."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Disputes are a Mora a dozen in Fontaine, day in and day out.\nA confectioner might accuse another of stealing their recipe — and not only that, but replacing Bulle Fruit peel with Mint, thus bringing disgrace not only upon themselves, but upon the very dessert itself! Or a playwright might accuse a fanatical reader of imitating their style and taking up a pen name too close to their own, to the point that even the newspapers could not distinguish the genuine article. A merchant might accuse a colleague of targeted, malicious, cutthroat competition, of not only constantly adjusting their prices, but of intentionally setting up shop directly opposite them...\nAlmost everyone claims to be wholly in the right, appealing incessantly for the support of passersby in the hope of swaying the crowd and winning their case in the court of public opinion.\nMost of the time, such disputes are settled with relative ease, either by Gardes or by Gestionnaires rushing onto the scene. But there will always be a minority of claimants who, acting with ulterior intentions, will obstinately press for court proceedings just to get their name out there.\n\"I'll see you in court!\" comes the challenge. When things reach this stage, any hope that the voice of reason might prevail starts to buckle under the unstoppable force of emotion, neither side willing to give an inch as they begin to square off for a legal showdown.\nUntil, that is, an exasperated Gestionnaire standing by — long since having given up any hope of successful mediation — interjects in a tone of despair:\n\"Alright, I respect your right to take this to the courts. But before you do, you must make the following preparations...\"\n\"...Once judgment is pronounced, if you believe the verdict to be unjust, you may propose that the matter be settled by a duel.\"\n\"To my knowledge, the most recently rostered Champion Duelist is Miss Clorinde...\"\nAs soon as the name of Clorinde is mentioned, all bickering comes to an abrupt halt.\nFor all are well-acquainted with the name of this undefeated Champion Duelist. Beneath her blade, all despicable deeds that aim to capitalize on mere fortune under the guise of decency will show their true colors — and she has never once known defeat in a duel.\n\"...Ahem. Oh, uh... I suppose there's no need to go that far, is there?\"\nThus are such marketplace altercations, undercut by ulteriority, temporarily dissipated. Watching the two self-seeking merchants leave the scene with their tails between their legs, the Gestionnaire lets out a knowing laugh, then gives the younger, still uncomprehending colleague beside them a pat on the arm, and says:\n\"You see, the sword is mightier than the pen, after all.\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "\"If you find yourself facing Clorinde, you'd be better off accepting your verdict immediately.\" Whether you heard it from the mouth of one who had known the misfortune of facing Clorinde themselves, or someone who had merely watched her dueling from the safety of the stands, there's next to no chance that this would have been said in jest.\nTake some of those who lost their duels with her in under a minute, for instance. A young lady who sought to prepare by tightly wrapping lengths of cloth around her hand so that she would not lose her grip on the hilt of her sword. Before she knew it, the strips of cloth had been cut off one by one with pinpoint precision, and her weapon sent spinning up into the air with such ease that it resembled a sewing needle. Or those flustered \"gentlemen,\" somewhat of a recurring type, who turn up sporting all sorts of hidden gadgets from head to toe — pistolets stuffed into their hats, daggers in their shoes, powder bottles up their sleeves. Once their tricks have been spent, they end up being thrown on their backsides without exception, now facing the additional charge of \"contempt of court.\" And that's not even to mention those desperate individuals who, by leveraging all means available to them, seek to curry favor before the duel has even begun, painting themselves as victims in a vain attempt to win the people's sympathy. But this doesn't change the inevitability of their defeat in the dueling ring. After all, a sword tarnished by a sheath of lies is no use for cutting anything.\nBut there is a benefit to the existence of this motley crew of failed scoundrels and slapstick comedians — namely, they serve as counterexamples helping the crowds recognize those others who are willing to duel with real honor, and when there is indeed some truth in the \"justice\" that they proclaim. Even if such a person ends up losing, people will listen to what they have to say — for they see that this is someone who stands firmly by their beliefs, and has the courage to draw a sword in their defense.\nSome say that when Miss Clorinde fights such individuals, she holds back slightly and never uses her full strength. A member of the audience, having once witnessed such a duel up close, even swore up and down that he saw the corner of Miss Clorinde's mouth curl up very slightly in what must have been approval. And surely, it is only in facing such opponents that the true meaning of the word \"duel\" is given its full expression, no?\nBut Clorinde cares not whether the audience is moved by her duels, nor to hear the internal monologues they might inspire.\nAs far as this Champion Duelist is concerned, the only meaning to be taken from a duel comes from facing your opponent on fair terms to determine a winner, a loser, and the righteous cause."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Clorinde cuts a dashing figure during duels, and her bearing has won her many admirers.\nThese \"enthusiastic\" citizens have carefully analyzed every aspect of this Champion Duelist's being.\nWhere did she learn her skill with the blade? Was it passed down through her family, or acquired unexpectedly? Might the explanation for her outstanding swordsmanship be that she is the last in the line of some fallen dynasty that once practiced the art?\nIt is said that she performs a \"sword cleansing rite\" before each of her duels. But with what does she cleanse the body of her sword? Water of the highest purity, drawn directly from the Fountain of Lucine? Some kind of special cleansing ointment? Or could it be that, to strengthen her connection to her weapon, she even adds a touch of... her own blood?\nNo, no, no! The great power of this \"rite\" surely lies not in the mere cleansing of her sword, but rather in her calling upon the spirit of some master swordsman to possess her, thus explaining her unbroken streak!\nFor a time, the figure of this undefeated Champion Duelist became shrouded in all kinds of colorful stories, driving the citizens (mainly the journalists, to be precise) into a frenzy of gossip and curiosity.\nFinally, driven to exasperation by all the reporters hiding in the bushes and flower beds by their main entrance, the court authorities assembled the journalists and released an official statement:\n\"The weapons and methods employed by Miss Clorinde in her duels — and this goes for all our other Champion Duelists too — are entirely mundane, and not, as rumor would have it, imbued with exaggerated powers of any kind...\"\nA wave of indignation spread through the audience, their expressions making clear that they remained utterly unconvinced.\n\"If such unfounded rumors begin to exert a pernicious and malign influence on public opinion, the courts reserve the right to formally bring proceedings against those deemed responsible for fabricating and propagating said rumors...\"\nThis threat was met with disdain by the journalists, whose Kameras continued to shoot away without any sign of stopping.\n\"...Let it be known, responsibility for the execution of the duties of Champion Duelist for all relevant trials is hereby entrusted to... Miss Clorinde!\"\nWith this, the journalists fell silent all at once.\nTo this, Clorinde — who, having been forced to attend this farce of a press conference, was sitting off to one side — nodded and replied:\n\"Of course. That's my job.\"\nAnd so were the absurd rumors about Clorinde finally brought under control. Nowadays, the only traces of that storm of conjecture still to be found are contained within the pages of a few daring theater scripts and edgy novels.\nBut were you to confront any one of the playwrights or novelists concerned, they would, without exception, firmly deny any taking any inspiration whatsoever from those rumors.\nNope, absolutely no connection to those old fabrications whatsoever, none at all!"
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "In truth, those rumors that Clorinde had been dabbling with supernatural forces were indeed completely unfounded.\nThe formidable fighting talent of this Champion Duelist had its origins instead in the legacy of a group that once hunted down phantoms throughout the land of Fontaine: the \"Marechaussee Hunters.\"\nLegend has it that at the time of Fontaine's founding, there was a hero who went by the name of \"Golden Hunter.\" To wipe out the monsters that threatened the peace of Fontaine, it was he who founded the Marechaussee Hunters, gathering a band of heroes — among them the descendants of the Lochknights — to hunt down monsters and villains across Fontaine, leaving behind countless heroic legends in their wake. Yet once peace had finally been restored throughout the land, the name of the \"Marechaussee Hunters\" gradually fell into obscurity.\nToday, when the people of Fontaine speak of the Marechaussee Hunters, most know only of the \"Hunter's Oath,\" having heard it mentioned in some play or novel.\n\"From this day, I pass the candle's shadow-veil.\"\n\"Now, as we face the perils of the long night...\"\n\"I pledge to remember the oath of daylight.\"\n\"To enshrine tears, life, and love.\"\n\"Holding dawn's coming as my votive.\"\n\"And so shall I never despair.\"\nFor most Fontainians, the story of the Marechaussee Hunters is now but a legend full of drama and excitement.\nBut to Clorinde, the deeds and oaths of the Hunters are her living, breathing inheritance.\nThe first thing she learned from her mentor, the Marechaussee Hunter Petronilla, was the swordsmanship required to slay monsters. The approach of the Hunter requires them to stay as close as possible to their prey so that they might plunge their blade into weak points with lightning-fast agility. To train her in this technique, Petronilla consigned Clorinde to a room filled with rotating pillars, each of which had been set up with many wooden swords protruding outwards, their tips covered with cloth bags.\n\"They might contain candy, or they might contain metallic sand. Or perhaps they'll contain all the hair I've lost while teaching you...\"\n\"You can chop open these bags or simply avoid them. I'll leave you to make that call.\"\n\"Seeing as you've already had lunch today, you might as well keep going all the way through to dinnertime. Remember, try to reserve enough strength to eat. Alright, begin!\"\nBy undergoing such training, Clorinde not only developed the Marechaussee Hunter's skills of marksmanship, tracking, camouflage, and footwork, but also learned their method of quickly revealing their identity when encountering fellow Hunters in order to avoid accidental injury.\nYet Clorinde has never mentioned the hardships she endured during her training to anyone else. After all, she is now a Champion Duelist of the Trial Court, not a Marechaussee Hunter from centuries past.\nShe trusts that her mentor, who left without so much as saying goodbye, would understand her decision. The Marechaussee Hunters once wielded their swords to slay fierce monsters in defense of Fontaine's peace and stability. It is only natural, then, that their inheritor should do so to strike down lawless villains.\nEven if her mentor had objected, Clorinde would not have minded settling their debate in the time-honored fashion of the Marechaussee Hunters.\nAfter all, as Ms. Petronilla once said herself, if Clorinde could defeat her, she'd be willing to listen to the latter's dissenting opinion."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "When the boss of the \"Tabletop Troupe\" first saw Clorinde visiting his club, he was at a complete loss as to how to react.\nBefore him was the legendary Champion Duelist herself, complete with tricorne hat, impeccable uniform, even pistolet and sword hanging by her waist. For a time, memories of mistakes he'd made in his past (some of which were not even technically mistakes...) flashed before his eyes, interspersed with frightful fragments of duels he'd witnessed. With the \"Welcome!\" he'd normally have greeted a new face with stuck in his throat, all he could do was stand there, not knowing what to say.\nAfter much consideration, just as this \"Welcome!\" was about to come out as \"Please, have mercy!\" Navia, who had followed Clorinde in, laughed and began to speak.\n\"My friend here has expressed an interest in experiencing the Tabletop Troupe for herself! So, how about it? Any fun scripts you'd recommend?\"\n\"She's no beginner though. She can be very picky about script quality, so make sure it's the best one you've got!\"\nTo give the boss some credit, though he still failed to produce any semblance of a \"Welcome!\" he did manage to turn \"Please, have mercy!\" into something... Well, not quite as embarrassing, at least.\nNamely... \"Uh!?\"\nHe then proceeded to rush about like a headless chicken, gathering up nearly all the scripts in the store. He brought them everything from their most popular script, \"Era of the Bronze Oath,\" to their most complex story, \"Chronicle of the Spiral Ring,\" to the irreplaceable classic, \"Valley of the Gray Wolf: 3rd Edition: 2nd Expansion\"...\nAfter this somewhat unorthodox \"ice breaker,\" the Tabletop Troupe suddenly found it had a new regular: Clorinde. Following an initial period where they were likewise immobilized by astonishment, the other customers gradually mustered up the courage to invite her to play the latest scripts with them. Presented with such expectant invitations, she said yes to them all.\nThey were soon to find out that, regardless of which script they played, this \"new player\" invariably demonstrated an unparalleled aptitude for roleplaying. No matter how small, she never missed a single clue in the script, nor the chance to make the most of it, following up leads with precision so that the story would develop in the most natural way imaginable.\nOn top of this, everything that Clorinde did was always completely in line with all the rules. Many of those who have played with her have come away expressing sentiments along the lines of: \"Miss Clorinde's so in control, it feels like she's a Game Master rather than another player like us!\"\nHearing such things, Clorinde would only ever give a noncommittal smile in response. It's not like she could admit that the only reason she found it all so easy was that she'd been the Game Master for Navia's scripts all this time — and thanks to her friend's endless barrage of weird and wonderful ideas, had been thoroughly trained in the art of quick thinking — could she? It would be such a long, complicated thing to explain...\nBut after having enjoyed the experience of being just a regular player, Clorinde decided to take up the mantle as Game Master once more, if for no other reason than to save the Tabletop Troupe's own, entirely blameless Game Masters from being perpetually tormented by Navia's endlessly active imagination. And for the boss, the other customers, and even Navia herself... it turned out to be a critical success!\nAfter all, no one in the room could claim to understand the meaning of \"impartiality\" better than this Champion Duelist. No bribes could sway her when she was presiding over a script — not even cake, fries, or Bulle Fruit!\nIn the face of such temptations, she'd simply watch as the players racked their brains for a solution, then flip over the rulebook and reply: \"We've still got plenty of time. Keep thinking.\"\nWhen yet another script reached its conclusion under Clorinde's masterful guidance, a certain young Gestionnaire turned to their companions, laughed, and said:\n\"And to think, we all used to imagine that Miss Clorinde spent the entirety of her waking hours dealing with duel-related matters!\"\nAs she tidied up the table, Clorinde stopped to think for a moment, then with a slight shake of her head, responded:\n\"I don't tend to work evenings.\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "As Clorinde sees it, there is no difference between the duties of a Champion Duelist and a Marechaussee Hunter.\nMarechaussee Hunters fought to defend the peace of Fontaine by hunting down monsters that ravaged the land. As representatives of Fontainian law and order, Champion Duelists punish criminals who attempt to exploit its loopholes and shortcomings for personal gain. Moreover, their existence not only gives those who wish to defend their honor the chance of a fair duel, but also an opportunity to speak for themselves.\nBut once the dust has settled and the wrongdoers have all been punished, what are those who fight for justice to do with the swords they took up in its name?\nPetronilla once told Clorinde the tale of a Marechaussee Hunter who became obsessed with exterminating monsters. When the day came that the land had been cleansed of their shadow, it didn't take long before he began to feel lost. After a life spent hunting monsters, what purpose did his life have now that their mortal enemy had been vanquished? After giving the matter much thought, he decided to carry on living as he had, severing his connections with the Marechaussee Hunters so that he might continue hunting down monsters alone... Petronilla did not say what became of him in the end, only the following:\n\"When a sword has forsaken its scabbard, the most it can hope for is simply to rust away.\"\nThis seemed to confuse Clorinde, who was still a child at the time. Seeing this, Petronilla raised up the coffee spoon in her hand, then pointed it at a cube of sugar and asked:\n\"Clorinde, can you tell me what this is? This is an important question, now. You'll get a glass of Bulle Fruit Juice if you can answer it correctly.\"\nClorinde blinked, then with a slight hint of uncertainty in her voice, answered: \"It's... a sugar cube?\"\n\"So you are on the ball then... Remember your answer, Clorinde.\" replied the veteran Marechaussee Hunter. \"When someone points at a sugar cube with a coffee spoon, they want you to focus on the sugar, not the spoon they're using to point at it.\"\n\"The whole reason that the Marechaussee Hunters fight is to restore peace to everyone's lives. Of course, this 'everyone' includes themselves.\"\n\"The sugar cube you're after is a happy, peaceful life. Fighting is merely the spoon you use to get it.\"\n\"Remember what you're fighting for, and never let the means become the end.\"\n\"Otherwise, you'll turn into the fool who sees only the spoon, not the sugar — and your coffee will forevermore taste unbearably bitter.\"\nAs dusk fell, the first lights began to illuminate the Court of Fontaine. People rushed to and fro across the city, scenes of mirth and merriment all over.\nClorinde sat there finishing off the last drops of her coffee, Café Lutece's latest creation. She'd been intrigued when she heard that the base was made from fresh, in-season fruit juice instead of the usual syrup they use to neutralize the taste.\nTomorrow's my day off, she thought to herself. I'll get a good night's sleep, then head out early to buy some flowers and fruit. I'm meeting Navia in the afternoon over at the Tabletop Troupe to play through their latest script.\nLooks like it's going to be a busy day...\nSpearing her last crumb of cake, the undefeated Champion Duelist popped it into her mouth, savored its exquisite texture, then stood up and left."
+      },
+      {
+        "Title": "\"Marechaussee Hunter's Legacy\"",
+        "Context": "If you're looking for the most characteristic element of Clorinde's outfit, look no further than the coat-tail cape that hangs down behind her.\nFor Clorinde, this cape is a \"keepsake\" in the truest sense.\nWhen she was but ten years old, the mentor who had trained and looked after her, Petronilla, left without saying goodbye. Even Mr. Callas, who always seemed to know everything, hadn't the slightest idea where the Marechaussee Hunter had gone. Not only did Clorinde turn the whole room inside out; she also went back to all the places where she had once trained to search for clues; but in the end, there was nothing that might indicate where her mentor had gone. In all her searching, the only thing she found was a long, slim, dark blue cape hanging in the closet.\nClorinde had never seen her mentor wear this cape before; she always wore a black one. Even if Clorinde had somehow managed to forget this, the Gardes who Petronilla had often run rings around — combined with all the wanted posters pasted on walls throughout the city — would have reminded her anyway.\n...But on the inside of the cape, you could clearly make out the unmistakable imprint of the Marechaussee Hunter's insignia. There was also a necklace with a dagger-shaped pendant that had her name carved into it — a belated birthday gift, it seemed.\nBut this cape and the insignia upon it... Were they really a parting gift, or just another one of her mentor's tests?\nClorinde couldn't tell, but she kept the items nonetheless.\nIf it was a test, then she'd do everything in her power to prepare for the final trial that awaited her.\nEven if the trial should span the rest of her life."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Within the first five minutes, Clorinde had disarmed the examiner. At first, he simply looked like his patience was wearing thin; but now, all that was left was shock. It wasn't long after before she'd left the three other duelists, who had rushed down upon hearing the news, speechless in the dueling ring. The normally cold and cheerless courts were soon bustling with excitement, almost to the point of becoming unbearably loud. The \"Duelist's Trial,\" which in theory was only supposed to last three rounds, was — thanks to the enthusiasm of the duelists — fast developing into a fully-fledged \"King of the Hill\" gauntlet. Clorinde had no objection to this, her only reply being expressed through the sword in her hand. From start to finish, there wasn't a single moment where it seemed to flag or lose its edge.\nFrom then on, all that Clorinde had to do was apply herself to learning the various rules and other ins and outs of being a Champion Duelist... whilst simultaneously taking part in all kinds of duels.\nThough Clorinde's reputation of being undefeatable soon became known by all, and many of her opponents would rather surrender immediately than face her, she still wasn't an official Champion Duelist.\n\"Your swordsmanship may well be flawless, but be that as it may, fighting a duel isn't always so simple.\" said those veteran Champion Duelists. \"You'll also need to undergo a special... or shall we say, less one-dimensional combat challenge to prove that you're up to the job.\"\nThough Clorinde didn't understand what this meant at the time, several days later, she was forced to take part in the first truly challenging fight of her life.\nHer opponent was a wealthy merchant who was known to her. This gentleman had been accused of employment abuses, not only arbitrarily cutting his laborers' wages, but completely ignoring their health. The divers he'd hired, being wracked with all sorts of unbearable illnesses, could stand it no longer — hence why they had teamed up to bring this merchant to the courts. And the verdict had already been pronounced: Guilty of exploitation, beyond a shadow of a doubt.\nBut the merchant demanded that the trial be settled by combat, insisting that the whole affair was an unprecedented slight toward his reputation:\n\"Who else but I would be willing to hire these people?\"\n\"If I'm put away, they'll all starve to death! Kind, merciful souls, surely you do not wish to see this happen?\"\n\"Who among us is not afflicted by physical ailments? I myself, after spending so much time poring over accounts and other documents, have nearly lost my eyesight! I even bought them medicine, found them doctors... They just won't admit it!\"\nWith countless articles containing these claims circulating throughout the Court of Fontaine, they soon became the talk of the town.\n\"Hmm... He does make a good point...\"\n\"Although... Hmm. Could it be that they really weren't telling the truth?\"\nOn the day of the duel, a vast crowd of citizens — some well-meaning, others simply curious — converged upon the dueling ring. When the wealthy merchant appeared, he waved to the stands as a sign to those in his pocket. Seeing this, they began to cry out:\n\"This gentleman has been falsely accused! Let us not stand for such slander!\"\nOthers muttered to those around them:\n\"If you ask me, there's no way those people were telling the truth...\"\nBeset on all sides by such shouts and murmurings, the ordinary citizens of the crowd began to waver, and like a landslide gaining momentum, before long they too had been infected by the mob mentality.\n\"Surely we can't just stand here and watch as a good person is unfairly persecuted?\"\nHearing what the audience was saying, the young Clorinde felt lost and confused, like she'd been plunged into the depths of the ocean. She hesitated, hand resting on the pommel of her sword, unsure whether she should draw it or not.\nHe's been tried, and the evidence was conclusive, she said to herself.\nBut everyone seems convinced that he is in the right.\nThe wealthy merchant had already drawn his sword, and was now walking towards her with a triumphant air.\n\"You can hear them, Miss Clorinde. I am a virtuous, generous, and kind-hearted man, just as they say.\"\n\"Without good people like me, the Court of Fontaine would cease to function.\"\nWhen the merchant raised up his sword, the gold ornamentation and the precious gems set upon its hilt gleamed brightly, bedazzling to behold. For a brief moment, Clorinde caught his gaze as it reflected off the shining body of this resplendent weapon.\nAll she saw there was pride, arrogance, and empty bravado.\nIn that moment, she knew that his sword-arm was no match for hers, nor could its wielder use it to persuade anyone. The sumptuous jewels with which it was encrusted were nothing more than a facade to hide his lies.\nIt was as if a stray dog had covered itself in branches and thorns in a vain attempt to disguise itself as a vicious beast — a pathetic sham indeed.\nWithin a split second, Clorinde had severed that magnificent sword in two, and when the sparks died out a moment later, it was clear to all that this fight was over. With this, the crowd was silenced.\n\"Justice revealed the truth to me, and I witnessed it with my own eyes.\"\n\"In this place, honor is proven by the sword alone.\"\nAs Clorinde raised her sword and spoke these words, the merchant simply stared back at her in disbelief, beholding his own horrified expression reflected upon the Vision which — having seemingly appeared out of nowhere — now hung by her collar.\n\"Or did you never have the courage to fight for your honor in the first place?\""
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 209800,
+      "Name": "Sword of Honor",
+      "Description": "Clorinde's outfit. Without the strength to enforce their authority, the dignity of the law and the order of justice start to seem fragile indeed. And Clorinde in her work uniform is the ultimate guarantor.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104144,
+    113053,
+    101237,
+    112082,
+    104343,
+    113048
+  ],
+  "NameCard": {
+    "Name": "Clorinde: Roleplay",
+    "Description": "Namecard style.\nDedicated Game Masters at the Tabletop Troupe will sometimes switch hats to indicate their change in role. Hmm, in that case, does Clorinde—\nForget about it! She doesn't even take that hat off when swimming.",
+    "Icon": "UI_NameCardIcon_Clorinde",
+    "PicturePrefix": "UI_NameCardPic_Clorinde"
+  }
+}

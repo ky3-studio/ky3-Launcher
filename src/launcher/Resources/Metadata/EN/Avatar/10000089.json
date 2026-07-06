@@ -1,0 +1,1322 @@
+{
+  "Id": 10000089,
+  "PromoteId": 89,
+  "Sort": 74,
+  "Body": 2,
+  "Icon": "UI_AvatarIcon_Furina",
+  "SideIcon": "UI_AvatarIcon_Side_Furina",
+  "Name": "Furina",
+  "Description": "The absolute focus of the stage of judgment, until the final applause sounds.",
+  "BeginTime": "2023-11-07T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 1,
+  "BaseValue": {
+    "HpBase": 1191.65,
+    "AttackBase": 18.9924,
+    "DefenseBase": 54.14615
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 3,
+    "Skills": [
+      {
+        "GroupId": 8931,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "4-Hit DMG|{param4:F1P}",
+            "Charged Attack DMG|{param5:F1P}",
+            "Charged Attack Stamina Cost|{param6:F1}",
+            "Plunge DMG|{param7:F1P}",
+            "Low/High Plunge DMG|{param8:P}/{param9:P}",
+            "Spiritbreath Thorn/Surging Blade DMG|{param10:F1P}",
+            "Spiritbreath Thorn/Surging Blade DMG Interval|{param11:I}s/{param12:I}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 893101,
+              "Level": 1,
+              "Parameters": [
+                0.483862,
+                0.437293,
+                0.5512,
+                0.732978,
+                0.74218,
+                20,
+                0.639324,
+                1.278377,
+                1.596762,
+                0.0946,
+                6,
+                6
+              ]
+            },
+            {
+              "Id": 893102,
+              "Level": 2,
+              "Parameters": [
+                0.523246,
+                0.472886,
+                0.596065,
+                0.792639,
+                0.80259,
+                20,
+                0.691362,
+                1.382431,
+                1.726731,
+                0.1023,
+                6,
+                6
+              ]
+            },
+            {
+              "Id": 893103,
+              "Level": 3,
+              "Parameters": [
+                0.56263,
+                0.50848,
+                0.64093,
+                0.8523,
+                0.863,
+                20,
+                0.7434,
+                1.486485,
+                1.8567,
+                0.11,
+                6,
+                6
+              ]
+            },
+            {
+              "Id": 893104,
+              "Level": 4,
+              "Parameters": [
+                0.618893,
+                0.559328,
+                0.705023,
+                0.93753,
+                0.9493,
+                20,
+                0.81774,
+                1.635134,
+                2.04237,
+                0.121,
+                6,
+                6
+              ]
+            },
+            {
+              "Id": 893105,
+              "Level": 5,
+              "Parameters": [
+                0.658277,
+                0.594922,
+                0.749888,
+                0.997191,
+                1.00971,
+                20,
+                0.869778,
+                1.739187,
+                2.172339,
+                0.1287,
+                6,
+                6
+              ]
+            },
+            {
+              "Id": 893106,
+              "Level": 6,
+              "Parameters": [
+                0.703287,
+                0.6356,
+                0.801162,
+                1.065375,
+                1.07875,
+                20,
+                0.92925,
+                1.858106,
+                2.320875,
+                0.1375,
+                6,
+                6
+              ]
+            },
+            {
+              "Id": 893107,
+              "Level": 7,
+              "Parameters": [
+                0.765177,
+                0.691533,
+                0.871665,
+                1.159128,
+                1.17368,
+                20,
+                1.011024,
+                2.02162,
+                2.525112,
+                0.1496,
+                6,
+                6
+              ]
+            },
+            {
+              "Id": 893108,
+              "Level": 8,
+              "Parameters": [
+                0.827066,
+                0.747466,
+                0.942167,
+                1.252881,
+                1.26861,
+                20,
+                1.092798,
+                2.185133,
+                2.729349,
+                0.1617,
+                6,
+                6
+              ]
+            },
+            {
+              "Id": 893109,
+              "Level": 9,
+              "Parameters": [
+                0.888955,
+                0.803398,
+                1.012669,
+                1.346634,
+                1.36354,
+                20,
+                1.174572,
+                2.348646,
+                2.933586,
+                0.1738,
+                6,
+                6
+              ]
+            },
+            {
+              "Id": 893110,
+              "Level": 10,
+              "Parameters": [
+                0.956471,
+                0.864416,
+                1.089581,
+                1.44891,
+                1.4671,
+                20,
+                1.26378,
+                2.527025,
+                3.15639,
+                0.187,
+                6,
+                6
+              ]
+            },
+            {
+              "Id": 893111,
+              "Level": 11,
+              "Parameters": [
+                1.023987,
+                0.925434,
+                1.166493,
+                1.551186,
+                1.57066,
+                20,
+                1.352988,
+                2.705403,
+                3.379194,
+                0.2002,
+                6,
+                6
+              ]
+            },
+            {
+              "Id": 893112,
+              "Level": 12,
+              "Parameters": [
+                1.091502,
+                0.986451,
+                1.243404,
+                1.653462,
+                1.67422,
+                20,
+                1.442196,
+                2.883781,
+                3.601998,
+                0.2134,
+                6,
+                6
+              ]
+            },
+            {
+              "Id": 893113,
+              "Level": 13,
+              "Parameters": [
+                1.159018,
+                1.047469,
+                1.320316,
+                1.755738,
+                1.77778,
+                20,
+                1.531404,
+                3.062159,
+                3.824802,
+                0.2266,
+                6,
+                6
+              ]
+            },
+            {
+              "Id": 893114,
+              "Level": 14,
+              "Parameters": [
+                1.226533,
+                1.108486,
+                1.397227,
+                1.858014,
+                1.88134,
+                20,
+                1.620612,
+                3.240537,
+                4.047606,
+                0.2398,
+                6,
+                6
+              ]
+            },
+            {
+              "Id": 893115,
+              "Level": 15,
+              "Parameters": [
+                1.294049,
+                1.169504,
+                1.474139,
+                1.96029,
+                1.9849,
+                20,
+                1.70982,
+                3.418915,
+                4.27041,
+                0.253,
+                6,
+                6
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10891,
+        "Name": "Soloist's Solicitation",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash a solo dance, dealing Physical DMG to nearby opponents and changing her Arkhe alignment. If Salon Members or the Singer of Many Waters summoned by her Elemental Skill \"Salon Solitaire\" is present, their lineup will switch in response.\n\n<color=#FFD780FF>Arkhe: Seats Sacred and Secular</color>\nAt intervals, when Furina's Normal Attacks hit, a Spiritbreath Thorn or a Surging Blade will descend based on her current Arkhe alignment, dealing Pneuma- or Ousia-aligned <color=#80C0FFFF>Hydro DMG</color>.\nWhen Furina takes the field, her starting Arkhe alignment will be Ousia.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_01"
+      },
+      {
+        "GroupId": 8932,
+        "Proud": {
+          "Descriptions": [
+            "Ousia Bubble DMG|{param1:F1P} Max HP",
+            "Duration|{param2:F1}s",
+            "Gentilhomme Usher DMG|{param3:F2P} Max HP",
+            "Surintendante Chevalmarin DMG|{param4:F2P} Max HP",
+            "Mademoiselle Crabaletta DMG|{param5:F2P} Max HP",
+            "Gentilhomme Usher HP Consumption|{param6:F1P} Max HP",
+            "Surintendante Chevalmarin HP Consumption|{param7:F1P} Max HP",
+            "Mademoiselle Crabaletta HP Consumption|{param8:F1P} Max HP",
+            "Singer of Many Waters Healing|{param9:F2P} Max HP+{param10:I}",
+            "CD|{param11:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 893201,
+              "Level": 1,
+              "Parameters": [
+                0.07864,
+                30,
+                0.0596,
+                0.03232,
+                0.08288,
+                0.024,
+                0.016,
+                0.036,
+                0.048,
+                462.2253,
+                20
+              ]
+            },
+            {
+              "Id": 893202,
+              "Level": 2,
+              "Parameters": [
+                0.084538,
+                30,
+                0.06407,
+                0.034744,
+                0.089096,
+                0.024,
+                0.016,
+                0.036,
+                0.0516,
+                508.45425,
+                20
+              ]
+            },
+            {
+              "Id": 893203,
+              "Level": 3,
+              "Parameters": [
+                0.090436,
+                30,
+                0.06854,
+                0.037168,
+                0.095312,
+                0.024,
+                0.016,
+                0.036,
+                0.0552,
+                558.53564,
+                20
+              ]
+            },
+            {
+              "Id": 893204,
+              "Level": 4,
+              "Parameters": [
+                0.0983,
+                30,
+                0.0745,
+                0.0404,
+                0.1036,
+                0.024,
+                0.016,
+                0.036,
+                0.06,
+                612.4694,
+                20
+              ]
+            },
+            {
+              "Id": 893205,
+              "Level": 5,
+              "Parameters": [
+                0.104198,
+                30,
+                0.07897,
+                0.042824,
+                0.109816,
+                0.024,
+                0.016,
+                0.036,
+                0.0636,
+                670.2556,
+                20
+              ]
+            },
+            {
+              "Id": 893206,
+              "Level": 6,
+              "Parameters": [
+                0.110096,
+                30,
+                0.08344,
+                0.045248,
+                0.116032,
+                0.024,
+                0.016,
+                0.036,
+                0.0672,
+                731.8942,
+                20
+              ]
+            },
+            {
+              "Id": 893207,
+              "Level": 7,
+              "Parameters": [
+                0.11796,
+                30,
+                0.0894,
+                0.04848,
+                0.12432,
+                0.024,
+                0.016,
+                0.036,
+                0.072,
+                797.3852,
+                20
+              ]
+            },
+            {
+              "Id": 893208,
+              "Level": 8,
+              "Parameters": [
+                0.125824,
+                30,
+                0.09536,
+                0.051712,
+                0.132608,
+                0.024,
+                0.016,
+                0.036,
+                0.0768,
+                866.72864,
+                20
+              ]
+            },
+            {
+              "Id": 893209,
+              "Level": 9,
+              "Parameters": [
+                0.133688,
+                30,
+                0.10132,
+                0.054944,
+                0.140896,
+                0.024,
+                0.016,
+                0.036,
+                0.0816,
+                939.9245,
+                20
+              ]
+            },
+            {
+              "Id": 893210,
+              "Level": 10,
+              "Parameters": [
+                0.141552,
+                30,
+                0.10728,
+                0.058176,
+                0.149184,
+                0.024,
+                0.016,
+                0.036,
+                0.0864,
+                1016.9728,
+                20
+              ]
+            },
+            {
+              "Id": 893211,
+              "Level": 11,
+              "Parameters": [
+                0.149416,
+                30,
+                0.11324,
+                0.061408,
+                0.157472,
+                0.024,
+                0.016,
+                0.036,
+                0.0912,
+                1097.8734,
+                20
+              ]
+            },
+            {
+              "Id": 893212,
+              "Level": 12,
+              "Parameters": [
+                0.15728,
+                30,
+                0.1192,
+                0.06464,
+                0.16576,
+                0.024,
+                0.016,
+                0.036,
+                0.096,
+                1182.6265,
+                20
+              ]
+            },
+            {
+              "Id": 893213,
+              "Level": 13,
+              "Parameters": [
+                0.16711,
+                30,
+                0.12665,
+                0.06868,
+                0.17612,
+                0.024,
+                0.016,
+                0.036,
+                0.102,
+                1271.232,
+                20
+              ]
+            },
+            {
+              "Id": 893214,
+              "Level": 14,
+              "Parameters": [
+                0.17694,
+                30,
+                0.1341,
+                0.07272,
+                0.18648,
+                0.024,
+                0.016,
+                0.036,
+                0.108,
+                1363.69,
+                20
+              ]
+            },
+            {
+              "Id": 893215,
+              "Level": 15,
+              "Parameters": [
+                0.18677,
+                30,
+                0.14155,
+                0.07676,
+                0.19684,
+                0.024,
+                0.016,
+                0.036,
+                0.114,
+                1460.0002,
+                20
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10892,
+        "Name": "Salon Solitaire",
+        "Description": "Invites the guests of the Salon Solitaire to come forth and aid in Furina's performance. Will summon either the Salon Members or the Singer of Many Waters based on Furina's current <color=#FFD780FF>Arkhe alignment</color>.\n\n<color=#FFD780FF>Ousia</color>\nFoaming bubbles like celebrants shall dance, dealing <color=#80C0FFFF>AoE Hydro DMG</color> based on Furina's Max HP and summoning 3 Salon Members: the Ball Octopus-shaped Gentilhomme Usher, the Bubbly Seahorse-shaped Surintendante Chevalmarin, and the Armored Crab-shaped Mademoiselle Crabaletta.\nThey will attack nearby opponents at intervals, prioritizing the target of the active character, dealing <color=#80C0FFFF>Hydro</color> DMG based on Max HP.\nWhen they attack, if character(s) with more than 50% HP are nearby, the Members will increase their current attack's power based on the number of such characters, and consume said characters' HP. If 1/2/3/4 (or more) characters meet these requirements, the Members' attacks will deal 110%/120%/130%/140% of their original DMG.\n\n<color=#FFD780FF>Pneuma</color>\nSummons the Singer of Many Waters, who will heal nearby active character(s) based on Max HP at intervals.\n\nThe Salon Members and Singer of Many Waters share a duration, and when Furina uses her Charged Attack to change the guest type, the new guests will inherit the remaining duration.\nWhile the Salon Members or the Singer of Many Waters is on the field, Furina can move on the water's surface.\n\n<i>A fixed roster of regulars frequent Furina's Salon Solitaire. At other times, Mademoiselle Crabaletta, Surintendante Chevalmarin, and Gentilhomme Usher shall visit, and on gloomy Wednesdays, it is the singer who comes by.</i>",
+        "Icon": "Skill_S_Furina_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 8939,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:F1P} Max HP",
+          "Duration|{param2:F1}s",
+          "Maximum Fanfare|{param4:I}",
+          "Fanfare to DMG Increase Conversion Ratio|{param5:F2P}",
+          "Fanfare to Incoming Healing Bonus Conversion Ratio|{param6:F2P}",
+          "CD|{param7:F1}s",
+          "Energy Cost|{param8:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 893901,
+            "Level": 1,
+            "Parameters": [
+              0.114064,
+              18,
+              0.01,
+              300,
+              0.0007,
+              0.0001,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 893902,
+            "Level": 2,
+            "Parameters": [
+              0.122619,
+              18,
+              0.01,
+              300,
+              0.0009,
+              0.0002,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 893903,
+            "Level": 3,
+            "Parameters": [
+              0.131174,
+              18,
+              0.01,
+              300,
+              0.0011,
+              0.0003,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 893904,
+            "Level": 4,
+            "Parameters": [
+              0.14258,
+              18,
+              0.01,
+              300,
+              0.0013,
+              0.0004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 893905,
+            "Level": 5,
+            "Parameters": [
+              0.151135,
+              18,
+              0.01,
+              300,
+              0.0015,
+              0.0005,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 893906,
+            "Level": 6,
+            "Parameters": [
+              0.15969,
+              18,
+              0.01,
+              300,
+              0.0017,
+              0.0006,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 893907,
+            "Level": 7,
+            "Parameters": [
+              0.171096,
+              18,
+              0.01,
+              300,
+              0.0019,
+              0.0007,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 893908,
+            "Level": 8,
+            "Parameters": [
+              0.182502,
+              18,
+              0.01,
+              300,
+              0.0021,
+              0.0008,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 893909,
+            "Level": 9,
+            "Parameters": [
+              0.193909,
+              18,
+              0.01,
+              300,
+              0.0023,
+              0.0009,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 893910,
+            "Level": 10,
+            "Parameters": [
+              0.205315,
+              18,
+              0.01,
+              300,
+              0.0025,
+              0.001,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 893911,
+            "Level": 11,
+            "Parameters": [
+              0.216722,
+              18,
+              0.01,
+              300,
+              0.0027,
+              0.0011,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 893912,
+            "Level": 12,
+            "Parameters": [
+              0.228128,
+              18,
+              0.01,
+              300,
+              0.0029,
+              0.0012,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 893913,
+            "Level": 13,
+            "Parameters": [
+              0.242386,
+              18,
+              0.01,
+              300,
+              0.0031,
+              0.0013,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 893914,
+            "Level": 14,
+            "Parameters": [
+              0.256644,
+              18,
+              0.01,
+              300,
+              0.0033,
+              0.0014,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 893915,
+            "Level": 15,
+            "Parameters": [
+              0.270902,
+              18,
+              0.01,
+              300,
+              0.0035,
+              0.0015,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10895,
+      "Name": "Let the People Rejoice",
+      "Description": "Rouses the impulse to revel, creating a stage of foam that will deal <color=#80C0FFFF>AoE Hydro DMG</color> based on Furina's Max HP and cause nearby party members to enter the Universal Revelry state: During this time, when nearby party members' HP increases or decreases, 1 Fanfare point will be granted to Furina for each percentage point of their Max HP by which their HP changes.\nAt the same time, Furina will increase the DMG dealt by and Incoming Healing Bonus of all nearby party members based on the amount of Fanfare she has.\nWhen the duration ends, Furina's Fanfare points will be cleared.\n\n<i>\"Cheer! Give praise! Be awed! Raise your glasses! Every night bereft of banqueting is a sordid squandering of sore, sober daylight... And, uh, those who are not yet of age may have grape juice instead!\"</i>",
+      "Icon": "Skill_E_Furina_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 8921,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 892101,
+              "Level": 1,
+              "Parameters": [
+                4,
+                2,
+                0.02
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 892101,
+        "Name": "Endless Waltz",
+        "Description": "When the active character in your party receives healing, if the source of the healing is not Furina herself and the healing overflows, then Furina will heal nearby party members for 2% of their Max HP once every 2s for the next 4s.",
+        "Icon": "UI_Talent_S_Furina_05"
+      },
+      {
+        "GroupId": 8922,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 892201,
+              "Level": 1,
+              "Parameters": [
+                0.007,
+                0.28,
+                0.004,
+                0.16
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 892201,
+        "Name": "Unheard Confession",
+        "Description": "Every 1,000 points of Furina's Max HP can buff the different Arkhe-aligned <color=#FFD780FF>Salon Solitaire</color> in the following ways:\nWill increase Salon Members' DMG dealt by 0.7%, up to a maximum of 28%.\nWill decrease the Singer of Many Waters' healing interval for nearby active characters by 0.4%, up to a maximum of 16%.",
+        "Icon": "UI_Talent_S_Furina_06"
+      },
+      {
+        "GroupId": 8923,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 892301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 892301,
+        "Name": "The Sea Is My Stage",
+        "Description": "Xenochromatic Fontemer Aberrant ability CD decreased by 30%.",
+        "Icon": "UI_Talent_S_Furina_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 891,
+        "Name": "\"Love Is a Rebellious Bird That None Can Tame\"",
+        "Description": "When using <color=#FFD780FF>Let the People Rejoice</color>, Furina will gain 150 Fanfare.\nAdditionally, Furina's Fanfare limit is increased by 100.",
+        "Icon": "UI_Talent_S_Furina_01"
+      },
+      {
+        "Id": 892,
+        "Name": "\"A Woman Adapts Like Duckweed in Water\"",
+        "Description": "While <color=#FFD780FF>Let the People Rejoice</color> lasts, Furina's Fanfare gain from increases or decreases in nearby characters' HP is increased by 250%. Each point of Fanfare above the limit will increase Furina's Max HP by 0.35%. Her maximum Max HP increase is 140%.",
+        "Icon": "UI_Talent_S_Furina_04"
+      },
+      {
+        "Id": 893,
+        "Name": "\"My Secret Is Hidden Within Me, No One Will Know My Name\"",
+        "Description": "Increases the Level of <color=#FFD780FF>Let the People Rejoice</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Furina_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 894,
+        "Name": "\"They Know Not Life, Who Dwelt in the Netherworld Not!\"",
+        "Description": "When the Salon Members from <color=#FFD780FF>Salon Solitaire</color> hit an opponent, or the Singer of Many Waters restores HP to nearby active characters, Furina will restore 4 Energy. This effect can be triggered once every 5s.",
+        "Icon": "UI_Talent_S_Furina_03"
+      },
+      {
+        "Id": 895,
+        "Name": "\"His Name I Now Know, It Is...!\"",
+        "Description": "Increases the Level of <color=#FFD780FF>Salon Solitaire</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Furina_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 896,
+        "Name": "\"Hear Me — Let Us Raise the Chalice of Love!\"",
+        "Description": "When using <color=#FFD780FF>Salon Solitaire</color>, Furina gains \"Center of Attention\" for 10s.\nThroughout the duration, Furina's Normal Attacks, Charged Attacks, and Plunging Attacks are converted into <color=#80C0FFFF>Hydro DMG</color> which cannot be overridden by any other elemental infusion. DMG is also increased by an amount equivalent to 18% of Furina's max HP.\nThroughout the duration, Furina's Normal Attacks (not including Arkhe: Seats Sacred and Secular Attacks), Charged Attacks, and the impact of Plunging Attacks will cause different effects up to every 0.1s after hitting opponents depending on her current Arkhe alignment:\n\nArkhe: Ousia\nEvery 1s, all nearby characters in the party will be healed by 4% of Furina's max HP, for a duration of 2.9s. Triggering this effect again will extend its duration.\nArkhe: Pneuma\nThis Normal Attack (not including Arkhe: Seats Sacred and Secular Attacks), Charged Attack, or Plunging Attack ground impact DMG will be further increased by an amount equivalent to 25% of Furina's max HP. When any of the attacks mentioned previously hit an opponent, all nearby characters in the party will consume 1% of their current HP.\n\nDuring the duration of each instance of \"Center of Attention,\" the above effects can be triggered up to 6 times. \"Center of Attention\" will end when its effects have triggered 6 times or when the duration expires.",
+        "Icon": "UI_Talent_S_Furina_02"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Endless Solo of Solitude",
+    "Detail": "The absolute focus of the stage of judgment, until the final applause sounds.",
+    "Association": 8,
+    "Native": "Court of Fontaine",
+    "BirthMonth": 10,
+    "BirthDay": 13,
+    "VisionBefore": "Hydro",
+    "VisionAfter": "Hydro",
+    "VisionOverrideLocked": "???",
+    "VisionOverrideUnlocked": "Gnosis",
+    "ConstellationBefore": "Animula Choragi",
+    "ConstellationAfter": "Animula Choragi",
+    "CvChinese": "钱琛",
+    "CvJapanese": "水瀬いのり",
+    "CvEnglish": "Amber Lee Connors",
+    "CvKorean": "Kim Ha-young",
+    "CookBonus": {
+      "OriginItemId": 108606,
+      "ItemId": 108611,
+      "InputList": [
+        100062,
+        110001,
+        100098,
+        100089
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Why are you just standing there with your mouth gaping? Ah, you must be stunned and at a loss for words... Understandable, it is I after all... Fontaine's most beloved star, Furina. I'm on a very tight schedule, so you're lucky to even get an appointment with me."
+      },
+      {
+        "Title": "Chat: Tea Party",
+        "Context": "Tea parties are a must for the well-mannered. If you'd like to learn the proper etiquette, I'd be happy to teach you."
+      },
+      {
+        "Title": "Chat: Fun",
+        "Context": "Boring... Isn't there anything else more interesting to do?"
+      },
+      {
+        "Title": "Chat: Popularity",
+        "Context": "*sigh* Being too popular can be such a hassle. Who knew the people would adore me so much?"
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "It's pouring out here! Wait, the water levels aren't rising, are they?"
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Wow, this would be the perfect location for shooting a film."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "The sun feels almost as hot as those studio lights I'm in front of all the time... Good thing there can only be one sun."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "\"Listen, there is a disturbing growling in the wind. That's the sound of a long-forgotten sea monster having a nightmare.\" Huh? Why is it having a nightmare? Uh... I dunno, because fear has to manifest itself somehow?"
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "What a wild and desolate sight... Allow me to grant you the blessing of water!"
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Good morning... Must I really get up this early? Just let me sleep a little longer..."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Good afternoon! Where's my cake? What? I just had cake for breakfast? Well, I think it's been long enough!"
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Good evening. *sigh* Mademoiselle Crabaletta has been muttering about getting in shape lately and even said that she wanted to drag me along with her. Hmph, I'm already eating much healthier than last month. I work very hard to maintain my figure. Hey, you can tell, can't you!?"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Whew, I'm getting sleepy myself. See you tomorrow. Remember to wake me up on time..."
+      },
+      {
+        "Title": "About Furina: Besties",
+        "Context": "Hmm? Who are these people at the tea party? Why, they are my loyal followers of course! *sigh* Alright, I suppose I'll introduce them to you. This is Mademoiselle Crabaletta, my most adorable maid... although she accidentally cuts my outfits from time to time... This is Surintendante Chevalmarin, my reliable housekeeper who keeps my busy life in order. And finally, the one keeping everybody in line is Gentilhomme Usher, my loyal conferencier. Hehe, I may have allowed you to participate in my tea party, but you'll still need to work hard to gain their approval!"
+      },
+      {
+        "Title": "About Furina: Singing",
+        "Context": "I'm very confident in my singing skills, but there aren't many pieces of music that are worthy of my vocal prowess. I hope the creatives in the theater troupe get their act together and don't keep me waiting in vain..."
+      },
+      {
+        "Title": "About Us: Relationships",
+        "Context": "*sigh* Given that we know each other, you may relax a little and needn't act so respectfully in my presence. Wait, what's that expression on your face? Don't tell me that you've never respected me from the very beginning!?"
+      },
+      {
+        "Title": "About Us: Our Story Together",
+        "Context": "My story has already come to an end, and so the next act shall be about OUR story... In which case, we should probably start charging double for public appearances... Oh, I'm so happy!"
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "Once the ancient prophecy came to an end and everything was over, I fell into low spirits for a very long time. People who stand on the stage basking in the adulation of their audience must also bear the pressures of being in the public eye and living up to everyone's expectations. But I knew very well my person wouldn't be enough, and that putting on the act of a god would be the only way to satisfy their adoration... And at the end of the day, all I ever experienced was loneliness. So there came a point when I loathed the very thought of acting and locked myself in my room. It wasn't until the moment I stood on stage and faced the audience again that I realized the anxiety in my heart had dissipated. The reason I can now stand before the crowd's watchful gaze is perhaps because... I have finally started to act as myself."
+      },
+      {
+        "Title": "Something to Share: Opera",
+        "Context": "Fontaine's opera house has seen several reforms, and with each reform, opposition was to be expected. As I remember, crowds would often gather in the opera house making a ruckus... That one time, it became so loud my ears were ringing. I frightened them by stating, \"I forbid anyone from discussing such pointless matters!\", I clearly remember Neuvillette tapping his cane on the ground at that precise moment while the whole place immediately fell silent. Sometimes I can't help but inadvertently show my intimidating side... I hope my people understand."
+      },
+      {
+        "Title": "Interesting Things: Lumitoile",
+        "Context": "I really like the Lumitoile. Those creatures can glow and shine even in places where no one sees them... That's what I call a true \"star.\" Ah, if only there were an opera about the Lumitoile, then I could literally play the role of a lovely rogue starfish on stage."
+      },
+      {
+        "Title": "About Lyney and Lynette",
+        "Context": "Of course I know Lyney and Lynette. I used to frequently attend their magic shows. Though they're very popular, they're still much less popular than me. Only my performances would draw a completely sold-out crowd... even standing tickets would be out. But now... Uh... I've already decided to hang up my acting career, so it's perfectly normal for my popularity to decline!"
+      },
+      {
+        "Title": "About Neuvillette",
+        "Context": "I'm very grateful to Neuvillette for all the hard work he's done for Fontaine in the past few centuries. It seems he doesn't intend to investigate my crimes of deceiving the people. Anyway, we're no longer working in tandem, and it's been a long time since I've been to the Palais Mermonia. I imagine that this is good for both of us, right?"
+      },
+      {
+        "Title": "About Navia: Desserts",
+        "Context": "Have you tried Navia's macarons? I have to admit that her skills in dessert-making are comparable to mine. The design she paints on the macarons is so cute, don't you think? Not to mention the texture and sweetness... They truly are a work of art! How does she do it? Does it really all boil down to talent? Ugh, I can't believe I'm feeling a little jealous... I'll have to ask her for some tips next time!"
+      },
+      {
+        "Title": "About Navia: Inner Thoughts",
+        "Context": "She's a very strong person. Strong people will always manage to keep themselves together no matter what happens, acting like everything is fine. Doing so prevents other people around them from needlessly bearing additional pressure. I saw the duel between Callas and Clorinde... and I can say that in this respect, Navia is becoming more and more like her father."
+      },
+      {
+        "Title": "About The Knave",
+        "Context": "The Knave? Wh—Who's that? Oh... Uh, I'd already forgotten about her... Keeping such a terrible figure like her in your mind will only give you nightmares."
+      },
+      {
+        "Title": "About Charlotte",
+        "Context": "I've often seen Charlotte busily running back and forth lately. She still seems to be hoping to arrange an exclusive interview with me. No matter how many times I refuse, she still hasn't given up. To be honest, her persistence made me angry at first... but then she told me with a resolute look in her eyes that she wanted to let people understand the real Furina, and that she believed people would understand my troubles. I don't know how to respond to her kind intentions... I suppose she might be right, but I'm just not ready yet..."
+      },
+      {
+        "Title": "About Wriothesley",
+        "Context": "I haven't communicated with him much, but Neuvillette claims he's trustworthy, so I suppose he must be a good person. Oh, come to think of it, I've received some tea from Wriothesley before and it was exquisite!"
+      },
+      {
+        "Title": "About Clorinde",
+        "Context": "As I remember, Clorinde isn't very talkative, but she has stood by me and protected me on several occasions, so I trust her very much. Hmm... I do miss her ever so slightly, but I don't have any real reason to see her now. Oh, right! I should invite her to my next tea party!"
+      },
+      {
+        "Title": "About Escoffier",
+        "Context": "Oh? You've met my Patissiere Supreme? Thanks to Escoffier, I used to have my pick of delectable confections, even beyond Gateau Debord. Unfortunately, after everything that happened, I can no longer afford what the Palais Mermonia was paying her. Hm? Oh, don't worry, we're still in touch. I like to send her homemade dishes of my own. I even invented a new one not too long ago — \"Harra Fruit Fish Jelly Macaroni\"... Sounds good, right? I'll make it for you sometime."
+      },
+      {
+        "Title": "More About Furina: I",
+        "Context": "You're interested in hearing about me? *sigh* I suppose there's no helping that... After all, I was once the biggest celebrity of all Fontaine! Every day, countless journalists would come flocking around me, trying to get the inside scoop on my personal life, so I have loads of experience rejecting them. Of course, I don't intend to use this experience on you. With the right delicacies, I might be willing to exchange some of my secrets."
+      },
+      {
+        "Title": "More About Furina: II",
+        "Context": "Someone recently recommended me to try surfing, so I went and gave it a shot. Keeping balance on the rolling waves was a little tricky at first, but I managed to get the hang of it pretty quickly. Maybe I'm just a natural surfer... Anyway, feeling the wind and waves up close and riding along the horizon was rather amazing. You should give it a try!"
+      },
+      {
+        "Title": "More About Furina: III",
+        "Context": "If you have time, could you tell me more about your journey? I would love to hear all your fantastic stories. How should I put it... I easily feel interested in all kinds of things, but it isn't long before I feel bored again. Perhaps the more easily enthusiasm sparks, the more quickly it fades. But, when I'm with you, I seem to constantly feel happy... Such an amazing feeling!"
+      },
+      {
+        "Title": "More About Furina: IV",
+        "Context": "Recently, I've been wondering if I've been a little too hard on myself in the past. In my efforts to maintain the reserved manner of a deity, I never got the chance to enjoy my life, which is why I've become obsessed with shopping lately. I've bought many new precious things... like dazzling rainbow-colored tea bags, fully-automated extendable cutlery, and a saddle specially made for riding Seahorses... But in the end, I realized that most of the stuff I bought was useless, so I sent them all to the troupe to be used as props in performances. Strange... before I bought those things, I was certain they would all be of good use to me..."
+      },
+      {
+        "Title": "More About Furina: V",
+        "Context": "People love talking about the past and often regret the beautiful things that have now faded into history. They also love to talk about the future, as if they're willing to sacrifice everything for an uncertain tomorrow. I don't agree with their way of thinking, yet I also feel very envious... I once lived in a world without a past or a future. To cope with that anxiety, I tried to create and act out a stronger, more god-like version of myself. Over the centuries, the stronger role I tried to play gradually merged with my real self. Even I can't separate the two now... but perhaps there's no need to distinguish them. Experiences of the past have formed who I am now, and that flawed performance has also become the most important part of me."
+      },
+      {
+        "Title": "Furina's Hobbies",
+        "Context": "The Queen's Crown still doesn't have a sequel yet? Pity, a classic like that where justice overcomes evil never gets old."
+      },
+      {
+        "Title": "Furina's Troubles",
+        "Context": "Hmm, what sauce should I pick for my macaroni tonight?"
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "No one complains about exquisite confectioneries, but it'll take a lot of effort to make some that I like. Listen carefully, desserts are like operas... Everything from choosing the characters to imagining the setting requires a lot of effort in order to make the final performance a hit!"
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Simply put, I detest most of those \"creative\" dishes. I have tasted many wonderful dishes throughout the years which did nothing but leave me with some moments that I never want to look back on."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Oh? What a rich aroma and delicate texture... I didn't expect you to be such an accomplished cook... with refined taste, as well!"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Too ordinary! Hmph, such an uninspired dish will never have my approval!"
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Ugh. Is this what you usually eat? *sigh* Seems I'll have to share some of my macaroni with you."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Happy Birthday! Here, please take this ticket as your gift. It's a VIP seat to see Happy Day, just don't forget to show up to the performance! Hmm? What's \"Happy Day\"? *sigh* Well, I wanted to keep it a surprise... But it's an opera that I've rehearsed personally. It's about a big group of people that gather together to celebrate a certain very important person. You understand now, right? Just don't forget to come!"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "I'm really not accustomed to using a Vision. Why don't you teach me? Ah, I nearly forgot... you've never used a Vision either."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "The strength gained through my own hard work is truly fulfilling. Hehe, thanks for your support."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "That's more like it! As expected, my dazzling side comes through in any situation."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I didn't know you cared so much about me. Does that mean that you still need my power? But given the way I am now... there's a chance I won't be able to give you everything you need. Hmm? All you really care about is... me? In that case, then let us act out our future journey together!"
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Shower me with praise!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Strike a pose!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Yoo-hoo~!"
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "The show begins."
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "How brilliant."
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "May I present...!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Let the world come alive, hehe!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Time to shine!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Let my name echo in song!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "What a pleasant surprise, truly an extra slice of joy."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Take it... *sigh* Go on, you have my approval!"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Splendid! More interesting trinkets for me."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Let's call a ceasefire..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "This is trouble!"
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Ah! Someone help me!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Witness my power!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "My turn to take the spotlight!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Am I... free?"
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "I still... couldn't do it..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Don't look at me... like this..."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "How dare you!?"
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Stop that!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "I knew you'd miss me."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "I have high hopes for this journey!"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Witness my magnificence!"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "It is unlikely that travelers from other nations will understand why the god of this land is regarded as a \"superstar\" unless they set foot in the Opera Epiclese.\nWhether at performances or trials, she will always be in the seat reserved for her above the audience, laughing, scolding, falling into hysterics, to the point where more often than not she makes a stronger impression than the action onstage.\nPeople buy tickets to indulge in new sensory experiences, and in this regard, Furina is by far more popular than the absolute justice that Neuvillette represents.\nThe forms respect can take are not limited to just lifting one's eyes up to a being above, and the unique form of respect Fontainians have for Furina is perhaps described better as \"affection and fondness.\"\nShe is not perfect, and may not even be very powerful, but while onstage, she is the personage the people trust the most, for she never disappoints.\nAmong Fontainian literary circles, there is a popular saying that Furina is a memory of spring never-fading, present in the hearts of all. And who does not wish for an eternal spring?\nSpring is transient, but she is ever there — follow the stage lights, and you shall see her."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "As the icon of the Opera Epiclese, Furina has the right to speak freely during all stages of a trial.\nMost of her questions are born from her curiosity and often have tenuous logical connections with the case at best, which at times can provoke raucous bursts of laughter from the audience.\nBut just as one might begin to suspect that Furina is just there for laughs and gags, and lacks even the capability to grasp the case in its entirety, she throws out opinions worth their weight in gold.\nOf course, there are also times when she will express little interest in the whole process due to having earlier eaten snacks ill to her liking or missed some parade, but it is said that audience members lucky enough to be there are still pleased with this, as a god who speaks in anger is equally enchanting.\nThere is but one circumstance in which she will not appear to act quite so willfully, and that is when she takes the stage as an actress in a musical.\nFontaine has a great many musical theater classics passed down from antiquity that are, from time to time, performed at the Opera Epiclese, with key roles being played by the most popular actors of the day.\nBefore such productions are put on, there is a phase during preparations that resembles nothing so much as a lucky draw, where the troupe will send Furina an invitation. Should the mood strike her, she will agree to appear, resulting in a stage shared by a god and humans.\nOnce Furina has agreed to participate, the performance date for that show becomes a Fontainian festival in its own right, so popular that the Opera Epiclese couldn't possibly meet the fervent demand even if they sold nothing but standing tickets and were filled to capacity.\nAnd when the music sounds and a god takes the stage, the audience will see not their lovable deity, who does as she pleases, but the character in the script.\nWhether majestic or valiant, conniving or covetous, Furina is a dab hand at playing them all, perfect down to the last gesture, as if she were born to act.\nAnd it is because of her record of wondrous performances that she very much deserves to be called \"superstar\" by her people.\nEven a famous reporter from The Steambird who had barely squeaked their way backstage was completely awestruck, such that it was a long while before they remembered the interview questions in their notebook.\n\"Lady Furina, might I ask how you were able to attain such great mastery acting as an Archon, though no one has ever seen you practice?\"\nFurina's reply was proud, albeit uncharacteristically simple. \"Why, because I am a god. Next question!\""
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Cases and performances take up a great deal of Furina's time, and even without these two things, she still shows up for all kinds of social activities and dinner parties related to government business and diplomacy.\nOf course, social engagement is usually the limit of her remit, while the real behind-the-scenes work, and sometimes even certain important speeches made during these interactions, are handled by others.\nFurina is quite thankful for these proxies, for she has heard that her life of leisure is a rare privilege in a world where most other gods have an endless parade of duties large and small to attend to.\nShe once considered that it might be right to set a... godly example, so to speak, and so she attempted to take part in the Palais Mermonia's day-to-day work when she had an excessive amount of free time on her hands...\nHowever, her offers were respectfully yet consistently declined by both humans and Melusines, who insisted that \"there are no great duties at present that need to be handed over to our god.\"\nThough these words did make her glad, of course, after a few attempts she quickly realized how impractical it would be to use the work of the Palais Mermonia to escape her boredom.\nFurina actually has another hobby, known to very few, and that is playing with little animals.\nFontaine's waterscapes are vast and beautiful, as well as blessed with innumerable adorable creatures. For one who always finds herself interacting with humans like Furina, this serves as an excellent change of pace.\nHowever, animal habits are inconsistent and unpredictable, and Furina's carefree attitude always seems to rub them the wrong way. As in the \"if she's not being blasted in the face by Hat Jellyfish, then she's being pursued to the ends of the ocean by Hunter's Rays\" kind of wrong way.\nIt can be argued that the underwater world is more primitive and wild than the surface world, considering how little respect the animals here give a god on account of her status alone.\nNonetheless, Furina did eventually discover the animal for her ministrations — the sunbathing, beach-loving, horizontal alignment-enjoying Blubberbeasts.\nCheek squeezes, belly rubs, and even flipping them over, then over again, gets at most a turn of the head and noiseless protest.\n\"Hmm? You like it? Hehe, so do I!\"\nA few mild miscommunications aside, they have since become the best of friends."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Although Furina does tend to give people the impression of one prone to wandering thoughts and only tangential concern for the rules, she does have strict standards — in certain circumstances, anyway, especially before or after performances.\nEverything must be to her satisfaction, be it the make or color of the props, the timing of the brightening and dimming of the lighting, or the pace and rhythm of the music.\nAs such, sharing the stage with a god is not some shortcut to glory, but one paved with blood, sweat, and tears, to the point where even the stories of a hard-to-please superstar prima donna fond of shows and with theatrical swagger to spare has reached even the lowliest street stalls.\nIndeed, there was once a famous troupe that won the chance to perform with her, and pretended to agree to her exacting demands, only to default to methods they were more accustomed to during real rehearsals and performance prep.\nThe troupe director was confident in this method, believing that given Furina's personality, she would be most willing to back down on said demands if she were appropriately flattered and saw that everything was already complete and thus too late to change — a most excellent way to save effort and trouble.\nBut when the director began moving their props to the Opera Epiclese, he found Furina there, directing another troupe as they set up the stage rigging.\n\"Why, hello. You didn't seem interested in my opinions, so I arranged to perform with a different troupe.\"\nThe director was stunned. He had planned for Furina to discover the \"flaws\" in her view only after setup was complete.\nBut he could already tell that the stage sections that had been constructed precisely in accordance with her directions were significantly superior. Ordinary audience members couldn't necessarily tell, of course, but to professionals, the difference was always in the details, and these were obvious at a glance.\nStill, this director was unwilling to simply turn back, criticizing Furina for not adhering to the spirit of contractual obligation by not informing them beforehand of her contingency arrangements.\nFurina would not let this villain cast the first stone, instead scrunching her face into an expression of disbelief.\n\"You don't really think I'm that much of a gullible fool, do you? Guards! Send them on their way.\""
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Round and round the interminable performance went, the day of the curtain call ever beyond reach, but so long as the prophecy loomed, the tale of this god must go on.\nThough Fontainians found no real reason to doubt Furina over the years, she knew that the collapse of trust could begin with a single crack. No matter how small, once it appeared, it would be irreversible.\nAnd the consequences of being exposed would be to reduce all her long years of work to dust, to allow Fontaine to fall — that was unconscionable!\nSo she did her best to laugh loudly when she should be glad, and weep bitterly when she should grieve, and display the divine bearing of an Archon when it was time to show off, all without fail, all without rest.\nShe knew that this was a performance. If she could endure until the danger had passed, she could finally take off her mask and regain the freedom to express her feelings.\nYet, she slowly began to realize that the godly role she was playing was eating into her.\nA horrifying doubt began to creep up on her — how should she react when glad, if not to laugh loudly?\nPerhaps she was once a girl who did not much enjoy laughter. Perhaps she had once been the sort to give up on herself at the first sign of difficulty, but such emotions had already slipped away, bit by bit.\nThose in the performance arts often say that one must become a character to play them.\nFrom that perspective, Furina's performance as the Hydro Archon has been flawless. Her painstaking perseverance produced the perfect product.\nBut no one has ever spoken of what might transpire once the last light had dimmed, for to them, the stage is fleeting.\nFor one such as Furina, who has acted for far too long, even the path back offstage has faded into dust, buried by the sands of time."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "The crisis of original sin was resolved, and Fontaine came under a new order. The affected areas were gradually rebuilt, and the people held high hopes for the future.\nFurina was the only one with no place in this new world. She was quick to pack her bags and leave the Palais Mermonia, nor did she return to the Opera Epiclese.\nShe simply wanted to leave the memories that brought her so much pain as far behind as possible, and she was uninterested in the debates surrounding her — the Hydro Archon's tale was over, as it should be.\nBut where should an actress who had finished her part and fulfilled her duty go? None could say, and the concept of \"freedom\" rang hollow.\nFurina's luggage remained piled up in her new rental apartment, and she lacked all will even to tidy up or get moved in. All she could do was lie in bed and stare at the bare ceiling.\nThose she knew had very quickly found their place in the new order. Whether due to their strength, duties, or friendships, their importance made them irreplaceable.\nIn circumstances such as these, didn't \"free\" simply mean being someone who no one needed?\nJust as she had reached this conclusion, her new residence received its first guest — Clorinde the Champion Duelist.\nThe duelist was shocked at Furina's living conditions, quickly expressing her willingness to pay for better accommodations, a notion Furina expended no small amount of effort disabusing her of. Despite this, she was dragged, however reluctantly, into at least properly unpacking and tidying up the room.\nClorinde then explained that she was here to invite Furina to a gathering. The duelist rarely took part in social events, but this gathering was one of old friends, who, as it happened, also knew Furina, and whom Clorinde had not seen in a while, anyway, so she thought she'd extend an invitation.\nIn days past, Furina would certainly have refused, for the greater the intimacy of her association with others, the more difficult it would be to conceal her true identity.\nThe duelist smiled as Furina guiltily lifted her eyes, having seemingly already guessed the latter's feelings as well as her old reasons for snubbing such events.\n\"I don't suppose you have any reason to refuse now, do you?\"\n\"Well... I'm not very good at this sort of thing, so, um... Don't you think I'd, you know, be a bit of a wet blanket?\"\nThat night, Furina finally got to experience what it was like to revel and drink with friends. In truth, she was cautious at first but was restored to her normal self within two cups — indeed, so much so that at one point Clorinde had to restrain her from leaping onto the table.\nFor someone as reticent as the duelist, the real Furina's explosiveness was quite the surprise.\nAs for Furina, she still knew not where to go, but if nothing else, she now knew that \"freedom\" did not mean solitude."
+      },
+      {
+        "Title": "Salon Solitaire",
+        "Context": "Furina once found a relatively unknown book in a library of Fontaine, and the story's main character was a servant working in an opulent mansion.\nThe idealistic young Mademoiselle Crabaletta, following a newspaper advertisement, came to a remote manor in the mountains to apply for employment, and despite her clumsiness, became a maid there all the same.\nThe Master of said mansion did not appear often, and though his loquacious surintendante and etiquette-minded gentilhomme managed it in his absence, she led a carefree life there.\nNone of the manor's attendants had been to the city in quite a long while, and so the maid taught them to sing the latest songs, play the latest tabletop games, and thus the servants grew closer and enjoyed one another's company.\nThere was but one ironclad rule, which was that none should approach the heavy wooden door that led three floors underground, behind which was locked a secret that only the Master of the mansion was privy to.\nThough the maid was curious, she treasured her vibrant life there too much to pry. Time passed quietly, and one day, they were told by the gentilhomme that the Master was about to visit, and so the servants hurriedly began to prepare.\nThe banquet was akin to a festival, and laughter and cheer filled every corner of the mansion — at least, until the Master was late the second day, and upon investigating, the maid was to discover his already-cold corpse.\nThe Gardes narrowed the suspects down to the servants, but the maid, convinced that the Master's death had something to do with the mansion's secret, at last decided to open that forbidden gate.\nTo her surprise, what awaited her on the other side was the mansion's main hall, upon the central stairs of which stood the all-too-familiar surintendante of the house. The words she spoke, too, were bizarrely known to the maid.\n\"Ah, you must be our newest applicant. Crabaletta, I believe?\"\nFurina was quite dumbfounded when she read that, for the story here recalled similar events in her memories.\nShe admired the happy lives of the maid and the other servants, and the maid's courage in facing down the ancient secret to defend that life.\nLater, Furina dreamt of that same mansion. In her dream, she was Crabaletta, huffing and puffing as she ran to that door of secrets, and, with one deep breath, pushed it open.\nBehind it was a torrent of seawater that drowned the mansion in an instant, dissolving all in its wake — the Gardes, the surintendante of the house, the gentilhomme, and even herself.\nFurina woke with a start, looking around her to gather her wits, and the rest of the story sprang to her mind, unbidden...\nCrabaletta made use of the time loop triggered by opening the door to solve the mystery of the Master's death and discover the mansion's secret, freeing all its inhabitants from an ancient curse.\n\"Thank you, Crabaletta.\"\nShe thanked the brave, stalwart girl for giving that tale a happy ending.\nAnd as for several vivid figures from the story, they would eventually be given lovely forms, that they might be by Furina's side."
+      },
+      {
+        "Title": "???",
+        "Context": ""
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 208900,
+      "Name": "Coronated Prima Donna",
+      "Description": "Furina's outfit. When the curtain rises, the star of the show is meant to shine bright on the stage, and even gorgeous costumes adorned with diamonds pale in comparison to her own dazzling brilliance.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104124,
+    113057,
+    101238,
+    112040,
+    104343,
+    113056
+  ],
+  "NameCard": {
+    "Name": "Furina: Banquet",
+    "Description": "Namecard style.\nCan one person eat every cake? If they eat one per day, they should be able to enjoy cake for a week or so, right? But will the cakes stay fresh that long? Hmm... Well, don't worry, because there will be friends coming to eat the cakes together.",
+    "Icon": "UI_NameCardIcon_Furina",
+    "PicturePrefix": "UI_NameCardPic_Furina"
+  }
+}

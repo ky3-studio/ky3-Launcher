@@ -1,0 +1,1107 @@
+{
+  "Id": 10000115,
+  "PromoteId": 115,
+  "Sort": 99,
+  "Body": 1,
+  "Icon": "UI_AvatarIcon_Dahlia",
+  "SideIcon": "UI_AvatarIcon_Side_Dahlia",
+  "Name": "Dahlia",
+  "Description": "Deacon of the Church of Favonius and the Anemo Archon's representative in the church.",
+  "BeginTime": "2025-06-17T00:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 1,
+  "BaseValue": {
+    "HpBase": 1048.5597,
+    "AttackBase": 15.84912,
+    "DefenseBase": 46.9245
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 11531,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+            "4-Hit DMG|{param5:F1P}",
+            "Charged Attack DMG|{param6:F1P}+{param7:F1P}",
+            "Charged Attack Stamina Cost|{param8:F1}",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1153101,
+              "Level": 1,
+              "Parameters": [
+                0.43547,
+                0.401001,
+                0.237446,
+                0.290164,
+                0.656576,
+                0.398765,
+                0.550675,
+                20,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 1153102,
+              "Level": 2,
+              "Parameters": [
+                0.470915,
+                0.43364,
+                0.256773,
+                0.313782,
+                0.710018,
+                0.431222,
+                0.595498,
+                20,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 1153103,
+              "Level": 3,
+              "Parameters": [
+                0.50636,
+                0.46628,
+                0.2761,
+                0.3374,
+                0.76346,
+                0.46368,
+                0.64032,
+                20,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 1153104,
+              "Level": 4,
+              "Parameters": [
+                0.556996,
+                0.512908,
+                0.30371,
+                0.37114,
+                0.839806,
+                0.510048,
+                0.704352,
+                20,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 1153105,
+              "Level": 5,
+              "Parameters": [
+                0.592441,
+                0.545548,
+                0.323037,
+                0.394758,
+                0.893248,
+                0.542506,
+                0.749174,
+                20,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 1153106,
+              "Level": 6,
+              "Parameters": [
+                0.63295,
+                0.58285,
+                0.345125,
+                0.42175,
+                0.954325,
+                0.5796,
+                0.8004,
+                20,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 1153107,
+              "Level": 7,
+              "Parameters": [
+                0.68865,
+                0.634141,
+                0.375496,
+                0.458864,
+                1.038306,
+                0.630605,
+                0.870835,
+                20,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 1153108,
+              "Level": 8,
+              "Parameters": [
+                0.744349,
+                0.685432,
+                0.405867,
+                0.495978,
+                1.122286,
+                0.68161,
+                0.94127,
+                20,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 1153109,
+              "Level": 9,
+              "Parameters": [
+                0.800049,
+                0.736722,
+                0.436238,
+                0.533092,
+                1.206267,
+                0.732614,
+                1.011706,
+                20,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 1153110,
+              "Level": 10,
+              "Parameters": [
+                0.860812,
+                0.792676,
+                0.46937,
+                0.57358,
+                1.297882,
+                0.788256,
+                1.088544,
+                20,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 1153111,
+              "Level": 11,
+              "Parameters": [
+                0.921575,
+                0.84863,
+                0.502502,
+                0.614068,
+                1.389497,
+                0.843898,
+                1.165382,
+                20,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 1153112,
+              "Level": 12,
+              "Parameters": [
+                0.982338,
+                0.904583,
+                0.535634,
+                0.654556,
+                1.481112,
+                0.899539,
+                1.242221,
+                20,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 1153113,
+              "Level": 13,
+              "Parameters": [
+                1.043102,
+                0.960537,
+                0.568766,
+                0.695044,
+                1.572728,
+                0.955181,
+                1.319059,
+                20,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 1153114,
+              "Level": 14,
+              "Parameters": [
+                1.103865,
+                1.01649,
+                0.601898,
+                0.735532,
+                1.664343,
+                1.010822,
+                1.395898,
+                20,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 1153115,
+              "Level": 15,
+              "Parameters": [
+                1.164628,
+                1.072444,
+                0.63503,
+                0.77602,
+                1.755958,
+                1.066464,
+                1.472736,
+                20,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11151,
+        "Name": "Favonius Bladework - Ritual",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_01"
+      },
+      {
+        "GroupId": 11532,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:F1P}",
+            "Skill CD|{param2:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1153201,
+              "Level": 1,
+              "Parameters": [
+                2.328,
+                9
+              ]
+            },
+            {
+              "Id": 1153202,
+              "Level": 2,
+              "Parameters": [
+                2.5026,
+                9
+              ]
+            },
+            {
+              "Id": 1153203,
+              "Level": 3,
+              "Parameters": [
+                2.6772,
+                9
+              ]
+            },
+            {
+              "Id": 1153204,
+              "Level": 4,
+              "Parameters": [
+                2.91,
+                9
+              ]
+            },
+            {
+              "Id": 1153205,
+              "Level": 5,
+              "Parameters": [
+                3.0846,
+                9
+              ]
+            },
+            {
+              "Id": 1153206,
+              "Level": 6,
+              "Parameters": [
+                3.2592,
+                9
+              ]
+            },
+            {
+              "Id": 1153207,
+              "Level": 7,
+              "Parameters": [
+                3.492,
+                9
+              ]
+            },
+            {
+              "Id": 1153208,
+              "Level": 8,
+              "Parameters": [
+                3.7248,
+                9
+              ]
+            },
+            {
+              "Id": 1153209,
+              "Level": 9,
+              "Parameters": [
+                3.9576,
+                9
+              ]
+            },
+            {
+              "Id": 1153210,
+              "Level": 10,
+              "Parameters": [
+                4.1904,
+                9
+              ]
+            },
+            {
+              "Id": 1153211,
+              "Level": 11,
+              "Parameters": [
+                4.4232,
+                9
+              ]
+            },
+            {
+              "Id": 1153212,
+              "Level": 12,
+              "Parameters": [
+                4.656,
+                9
+              ]
+            },
+            {
+              "Id": 1153213,
+              "Level": 13,
+              "Parameters": [
+                4.947,
+                9
+              ]
+            },
+            {
+              "Id": 1153214,
+              "Level": 14,
+              "Parameters": [
+                5.238,
+                9
+              ]
+            },
+            {
+              "Id": 1153215,
+              "Level": 15,
+              "Parameters": [
+                5.529,
+                9
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11152,
+        "Name": "Immersive Ordinance",
+        "Description": "Time for a fun little trick! Summons the Sacramental Shower in different ways depending on whether you Tap or Hold it.\n\n<color=#FFD780FF>Tap</color>\nAfter a short prayer, summons the Sacramental Shower in front.\n\n<color=#FFD780FF>Hold</color>\nEngages in continuous prayer, and when done, summons forth a Sacramental Shower in the designated position.\n\n<color=#FFD780FF>Sacramental Shower</color>\nWhen opponents or nearby party members touch the Sacramental Shower, different effects will occur depending on the one who touches it:\nIf an opponent touches the Shower, it will explode and deal <color=#80C0FFFF>AoE Hydro DMG</color> to nearby opponents.\nIf a nearby party member touches it, it will bounce the one who touches it high in the air.\n\nOnly 1 Sacramental Shower summoned by Dahlia himself can be on the field at once.",
+        "Icon": "Skill_S_Dahlia_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 11539,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:F1P}",
+          "Shield of Sacred Favor DMG Absorption|{param3:F1P} Max HP+{param2:I}",
+          "Favonian Favor Duration|{param4:F1}s",
+          "Energy Cost|{param5:I}",
+          "CD|{param6:F1}s"
+        ],
+        "Parameters": [
+          {
+            "Id": 1153901,
+            "Level": 1,
+            "Parameters": [
+              4.064,
+              323.5577,
+              0.0336,
+              12,
+              60,
+              15
+            ]
+          },
+          {
+            "Id": 1153902,
+            "Level": 2,
+            "Parameters": [
+              4.3688,
+              355.91797,
+              0.03612,
+              12,
+              60,
+              15
+            ]
+          },
+          {
+            "Id": 1153903,
+            "Level": 3,
+            "Parameters": [
+              4.6736,
+              390.97495,
+              0.03864,
+              12,
+              60,
+              15
+            ]
+          },
+          {
+            "Id": 1153904,
+            "Level": 4,
+            "Parameters": [
+              5.08,
+              428.72858,
+              0.042,
+              12,
+              60,
+              15
+            ]
+          },
+          {
+            "Id": 1153905,
+            "Level": 5,
+            "Parameters": [
+              5.3848,
+              469.17892,
+              0.04452,
+              12,
+              60,
+              15
+            ]
+          },
+          {
+            "Id": 1153906,
+            "Level": 6,
+            "Parameters": [
+              5.6896,
+              512.3259,
+              0.04704,
+              12,
+              60,
+              15
+            ]
+          },
+          {
+            "Id": 1153907,
+            "Level": 7,
+            "Parameters": [
+              6.096,
+              558.1697,
+              0.0504,
+              12,
+              60,
+              15
+            ]
+          },
+          {
+            "Id": 1153908,
+            "Level": 8,
+            "Parameters": [
+              6.5024,
+              606.7101,
+              0.05376,
+              12,
+              60,
+              15
+            ]
+          },
+          {
+            "Id": 1153909,
+            "Level": 9,
+            "Parameters": [
+              6.9088,
+              657.94714,
+              0.05712,
+              12,
+              60,
+              15
+            ]
+          },
+          {
+            "Id": 1153910,
+            "Level": 10,
+            "Parameters": [
+              7.3152,
+              711.8809,
+              0.06048,
+              12,
+              60,
+              15
+            ]
+          },
+          {
+            "Id": 1153911,
+            "Level": 11,
+            "Parameters": [
+              7.7216,
+              768.5114,
+              0.06384,
+              12,
+              60,
+              15
+            ]
+          },
+          {
+            "Id": 1153912,
+            "Level": 12,
+            "Parameters": [
+              8.128,
+              827.83856,
+              0.0672,
+              12,
+              60,
+              15
+            ]
+          },
+          {
+            "Id": 1153913,
+            "Level": 13,
+            "Parameters": [
+              8.636,
+              889.8624,
+              0.0714,
+              12,
+              60,
+              15
+            ]
+          },
+          {
+            "Id": 1153914,
+            "Level": 14,
+            "Parameters": [
+              9.144,
+              954.58295,
+              0.0756,
+              12,
+              60,
+              15
+            ]
+          },
+          {
+            "Id": 1153915,
+            "Level": 15,
+            "Parameters": [
+              9.652,
+              1022.0002,
+              0.0798,
+              12,
+              60,
+              15
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11155,
+      "Name": "Radiant Psalter",
+      "Description": "Appeals to the divine with earnestness and song, dealing <color=#80C0FFFF>AoE Hydro DMG</color> to nearby opponents and granting his party members Favonian Favor, summoning a Shield of Sacred Favor.\nThe Shield of Sacred Favor's DMG absorption is based on Dahlia's Max HP, and it will absorb <color=#80C0FFFF>Hydro DMG</color> with 250% effectiveness.\n\n<color=#FFD780FF>Favonian Favor</color>\nWhile this effect is active, 1 Benison stack may be consumed to summon a new Shield of Sacred Favor when an existing Shield is broken via DMG.\n\nDahlia can obtain Benison via the following methods:\n· He will gain 1 Benison stack when his own active party member hits opponents 4 times with Normal Attacks while affected by Favonian Favor.\n· After triggering the effect of his Ascension Talent, \"The Wind's Gentle Grace\" (You must first unlock this Ascension Talent.)\nDahlia can gain a maximum of 4 Benison stacks per Favonian Favor duration.",
+      "Icon": "Skill_E_Dahlia_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 11521,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1152101,
+              "Level": 1,
+              "Parameters": [
+                8
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1152101,
+        "Name": "The Wind's Gentle Grace",
+        "Description": "When characters affected by the Favonian Favor effect of the Elemental Burst <color=#FFD780FF>{LINK#S11155}Radiant Psalter{/LINK}</color> trigger Frozen reactions on opponents, they will grant Dahlia 2 Benison stacks. This effect can trigger once every 8s.",
+        "Icon": "UI_Talent_S_Dahlia_05"
+      },
+      {
+        "GroupId": 11522,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1152201,
+              "Level": 1,
+              "Parameters": [
+                5E-06,
+                0.2
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1152201,
+        "Name": "Prayer of Well-Wrought Joy",
+        "Description": "When your active party member is affected by the Favonian Favor effect of the Elemental Burst <color=#FFD780FF>{LINK#S11155}\"Radiant Psalter,\"{/LINK}</color> their ATK SPD will increase based on Dahlia's Max HP: Every 1,000 Max HP will cause an increase of 0.5%, up to a maximum of 20%.",
+        "Icon": "UI_Talent_S_Dahlia_06"
+      },
+      {
+        "GroupId": 11523,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1152301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1152301,
+        "Name": "Pilgrimage Upon Returning Winds",
+        "Description": "During the day (06:00 – 18:00), your party members gain the Swift Stride effect: Movement SPD increased by 10%.\nDoes not take effect in Domains, Trounce Domains, or the Spiral Abyss. Swift Stride does not stack.",
+        "Icon": "UI_Talent_S_Dehya_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1151,
+        "Name": "Infallible Procession",
+        "Description": "Each time Dahlia gains 1 of his Elemental Burst <color=#FFD780FF>{LINK#S11155}Radiant Psalter{/LINK}</color>'s Benison stacks, he will regain 2.5 Elemental Energy.",
+        "Icon": "UI_Talent_S_Dahlia_01"
+      },
+      {
+        "Id": 1152,
+        "Name": "Revelation of Mercy",
+        "Description": "After Dahlia consumes his Elemental Burst <color=#FFD780FF>{LINK#S11155}Radiant Psalter{/LINK}</color>'s Benison stacks to summon a Shield of Sacred Favor, the character protected by said Shield will gain 25% increased Shield Strength for 12s.",
+        "Icon": "UI_Talent_S_Dahlia_02"
+      },
+      {
+        "Id": 1153,
+        "Name": "Windblume Offertory",
+        "Description": "Increases the Level of <color=#FFD780FF>{LINK#S11155}Radiant Psalter{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Dahlia_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1154,
+        "Name": "Collect of the Assembly",
+        "Description": "The Favonian Favor from Dahlia's Elemental Burst <color=#FFD780FF>{LINK#S11155}Radiant Psalter{/LINK}</color> lasts 3 more seconds.",
+        "Icon": "UI_Talent_S_Dahlia_03"
+      },
+      {
+        "Id": 1155,
+        "Name": "Let It Be Subtly So",
+        "Description": "Increases the Level of <color=#FFD780FF>{LINK#S11152}Immersive Ordinance{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Dahlia_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1156,
+        "Name": "You Shall Go Out With Joy",
+        "Description": "The current active character affected by the Elemental Burst <color=#FFD780FF>{LINK#S11155}Radiant Psalter{/LINK}</color>'s Favonian Favor has their ATK SPD increased by 10%.\nAdditionally, when an active character affected by Favonian Favor falls, immediately:\n· Revive them.\n· Restore their HP to 100%.\nThis effect can trigger once every 15 minutes.",
+        "Icon": "UI_Talent_S_Dahlia_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Ode and Oblation",
+    "Detail": "Deacon of the Church of Favonius and the Anemo Archon's representative in the church.",
+    "Association": 1,
+    "Native": "Church of Favonius",
+    "BirthMonth": 5,
+    "BirthDay": 25,
+    "VisionBefore": "Hydro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Cantus Choralis",
+    "CvChinese": "风袖",
+    "CvJapanese": "山本和臣",
+    "CvEnglish": "Aileen Mythen",
+    "CvKorean": "Seok Seung-hoon",
+    "CookBonus": {
+      "OriginItemId": 108223,
+      "ItemId": 108839,
+      "InputList": [
+        100016,
+        100093,
+        100080,
+        100051
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Greetings, I'm Dahlia, Deacon of the Church of Favonius and Herald of Barbatos. As you can probably tell, I'm going out of my mind with boredom right now. So, what's going on in your life? Any issues you're facing? I'm here to listen. And probably to laugh, a little... But also to help."
+      },
+      {
+        "Title": "Chat: A Whisper on the Wind",
+        "Context": "Do you hear that? There's a voice whispering on the wind, it says... \"Some guy just took a stone to the head.\""
+      },
+      {
+        "Title": "Chat: Bored",
+        "Context": "I'm bored... I'm not looking for trouble, exactly, but I kinda hope we run into someone else who is..."
+      },
+      {
+        "Title": "Chat: Drama",
+        "Context": "C'mon, let's go find some drama!"
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Where the wind blows, the rain soon follows. Believe me, I have it on good authority."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "I heard that lightning is how one of the other archons delivers their prophetic words... Not that I'm biased or anything, but... Barbatos definitely has a softer touch."
+      },
+      {
+        "Title": "When It's Windy",
+        "Context": "The wind is blowing. Let us pray."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Good morning, my friend. I just got back from morning prayers, and I'm feeling very blessed — my questions to Barbatos were answered once again. Oh, and I said a prayer for you too, of course."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Afternoon. You wanna go hang out in the tavern for a bit? No sane person gets drunk at this hour, of course, but that's why it's the best time to go... there's a higher chance of seeing some really colorful characters."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Good evening, care to join me up on the city wall to enjoy the breeze? Huh? Why the wall, you say? Because of the amazing view, of course!"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Lord Barbatos is communing with me on the evening wind... He sends you a solemn message: It's getting late, you should hit the hay."
+      },
+      {
+        "Title": "About Dahlia: Duties",
+        "Context": "My main role as deacon in the Church of Favonius is to support the prayer ceremonies. But since I have a natural talent for it, I've also wound up being the one responsible for hearing the will of Barbatos and communicating his revelations. In that sense, I'm kind of the Anemo Archon's representative in the church. On top of that, believe it or not, I'm also the cantor in the church choir."
+      },
+      {
+        "Title": "About Dahlia: Divine Favor",
+        "Context": "Whenever the people of Mondstadt face great hardship, they pray to the Anemo Archon for guidance. Then, Sister Victoria steps in and invites me to lead the church in morning prayers — reason being, I always seem to get answers from Barbatos whenever I ask him a question. Why me? Haha, who knows — maybe I'm just the kind of guy that gods like talking to."
+      },
+      {
+        "Title": "About Us: Great Deeds",
+        "Context": "So I hear that wherever you travel to, you end up getting dragged into some huge drama. Then there's me — great at creating drama, but also great at resolving it. That oughtta make us a great pair, don't you think?"
+      },
+      {
+        "Title": "About Us: Identity",
+        "Context": "It occurred to me recently that your role as Honorary Knight of Favonius and mine as deacon in the church are similar in a lot of ways. You know what I mean? Both are mostly ceremonial, both sound like pretty easygoing jobs, yet we both find ourselves dealing with people's most deeply rooted troubles, helping them cast their burdens to the wind with the aid of the Anemo Archon... Ah, what noble people we are! I dedicate this Apple Cider to us!"
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "I always assumed I'd get an Anemo Vision, so this was a fun surprise... I guess Barbatos doesn't see me as a lost soul who needs his constant attention."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Here's a thought: turning Deaconess Barbara into an idol was a genius marketing move for the church. She probably wasn't in on it, and I doubt this was Alice's original goal, but regardless — the result is that Mondstadt loves Barbara and everyone's more motivated to come to church nowadays."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "It is said that after we die, the sons and daughters of the Anemo Archon turn into dandelions. Rooted in the ground, our restless spirits yearn for freedom, and so we leap into the air wherever a breeze blows by, hoping to ride the wind into the sky. For those who don't make it far on their journey, they hope to get turned into the strongest Dandelion Wine, bringing bold change to boring lives through the power of drunkenness... Oh, to be reborn as a Dandelion! By the grace of the Anemo Archon, may that happen to me one day."
+      },
+      {
+        "Title": "About Venti",
+        "Context": "Venti is a dear friend. Whenever I'm seeking to know the will of the Anemo Archon, he's always more than happy to clear things up for me. And when he needs something done but can't attend to it personally, I'll handle it on his behalf. So yeah, overall I'd say we have a very positive working relationship."
+      },
+      {
+        "Title": "About Jean",
+        "Context": "Master Jean is probably the person I'm most familiar with in the Knights of Favonius. I guess that's because whenever there's trouble, she's always there to clean things up. We have very different approaches to problem-solving though. I never shy away from offering my suggestions, but she tends to stick to her own way of doing things."
+      },
+      {
+        "Title": "About Barbara",
+        "Context": "Barbara is a fellow member of the clergy and also a friend. She's always there to support me when I need help. In return, I always make sure to look out for ways she can help me. I try to involve her as often as I can. ...Hmm? Weird way to show appreciation? I don't think so — Barbara's at her happiest when she's helping other people. And if she's happy, shouldn't we be happy for her?"
+      },
+      {
+        "Title": "About Rosaria",
+        "Context": "Rosaria and I are very close friends, so I'm used to her habitual absences from church. But she was extremely closed-off back when we first met. Wouldn't open up to me about her secrets. Eventually, though, I found a way to catch her in the act every time she went missing, and that persuaded her to reach a mutually beneficial agreement with me."
+      },
+      {
+        "Title": "About Kaeya",
+        "Context": "Kaeya is my top drinking buddy. Sometimes, I need to negotiate a one-month all-you-can-drink deal at the tavern for Venti, and I couldn't do it without Kaeya's haggling skills. Trouble is, he knows it, and he's always using it to get free drinks out of me. But alas, that is the price I must pay for being the herald of Barbatos, the one trusted to guide the flock... And on that note — here's to the Anemo Archon. Cheers!"
+      },
+      {
+        "Title": "About Diluc",
+        "Context": "Diluc is a special breed of tavern owner: He's the only one who can't be won over by Kaeya's smooth-talking. Meaning, I can never haggle the price down with him. Apart from that, I don't know much about former Cavalry Captain Diluc beyond what's in the record room. ...Actually, you probably know him far better than I do, right? Well... How about we head to the Angel's Share and you give me the scoop?"
+      },
+      {
+        "Title": "About Klee",
+        "Context": "Ah, Klee... She ran into me once when I was in the middle of practicing my \"surprise baptism\" technique on a Hydro Slime. Boy, did she love that! She thought it would be a great way to send Jumpy Dumpty flying even higher. We ended up hanging out for days after that and had loads of fun seeing how high we could bounce slimes and Jumpy Dumpty... until we blew up part of the city wall. We got spotted by the guard, Lawrence, and he reported us to Master Jean. Now she's banned me from using surprise baptism on Jumpy Dumpty. Sad times..."
+      },
+      {
+        "Title": "More About Dahlia: I",
+        "Context": "I prefer being out among the people to sitting around in the Cathedral. The bigger the crowd, the better. Of course, sitting and listening to people talk about their problems is my duty as deacon — and I do love it — but not everyone has the courage to bare their soul to another person. So sometimes, I have to strike first. What's that girl on the bench sighing about all day? And why does that guy by the city wall always have a frown on his face? I'm always drawn in by these kinds of things. I wanna know what's going on in people's lives."
+      },
+      {
+        "Title": "More About Dahlia: II",
+        "Context": "For the most part, helping people with their issues is something I do because I enjoy it. Most people hate dealing with the messy side of life, but that's because they don't see the fun in it. Here's an example: Imagine two young people have a crush on each other, and both are too shy to tell the other how they feel for fear it's not reciprocal. Maybe it's been that way for a long time. With just a little pre-planning, I can arrange it so that they just so happen to find themselves sitting next to each other during a choir performance. Both try to steal a glance at the other, they lock eyes, and start blushing... Moments like that are a huge part of the reason why I became a deacon."
+      },
+      {
+        "Title": "More About Dahlia: III",
+        "Context": "I bet you're dying to know how I became the Anemo Archon's favorite. Hehehehe, it was actually pretty easy. All you gotta do is know Mondstadt's taverns, look out for a certain special customer, and buy him a drink on the regular. Hahaha, don't look so shocked — it's okay. Yes, I too know the Anemo Archon's secret identity, but I've never told anyone. The great Lord Barbatos successfully convinced me that keeping his secret would be the more fun choice."
+      },
+      {
+        "Title": "More About Dahlia: IV",
+        "Context": "I love being a deacon, but I will admit that like any job, it can be a pain at times. The hardest part for me is figuring out how to communicate the archon's will. Whenever there's a major crisis, Barbatos's guidance is usually pretty concise and intuitive, but I have to find ways of adding in some sacred-sounding rhetoric so it comes across as more convincing and inspires people to action. Like this: \"Verily, the returning wind shall carry the dew of the heavens. O children of the Anemo Archon, have your seeds not been sown? Then be patient, and from the land where you have toiled shall spring forth blessings from on high.\" All that really means is: \"Get planting, because it's gonna rain soon.\" But obviously, the former sounds much more like the sacred words of an oracle, right? So every time I seek advice from Barbatos, I end up spending ages thinking about how to rephrase it before I can finally announce it."
+      },
+      {
+        "Title": "More About Dahlia: V",
+        "Context": "Don't tell anyone this, but... I've always dreamed of leaving Mondstadt, adventuring somewhere beyond the reaches of the wind, and getting caught up in some huge drama. Y'know, like you do. But then with so many lost souls needing guidance from the Anemo Archon, I can't in good conscience just abandon them, can I? Hmm... I guess I just need to savor the fun aspects of life right here more often. The musical tones of the wind, the air bubbles in fine brews... and all the amazing stories you have to share."
+      },
+      {
+        "Title": "Dahlia's Hobbies",
+        "Context": "I like getting Barbatos to put me in new and exciting situations where I meet new people. And I don't mind if it's some crazy drama that I end up needing to sort out."
+      },
+      {
+        "Title": "Dahlia's Troubles",
+        "Context": "The sad fact is, the majority of life is just a repeat of the same old daily cycle. Hm..."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Mmm... So the spice scale goes from mild, to hot, to extra hot... but then there's off-the-charts insanely hot. Now that, to me, is the pinnacle of flavor. You just can't beat it."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Bread, plain rice congee... They're just bland stomach-fillers. I say, if you're gonna go that route, why not eat tree bark? At least some trees have a nice scent..."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Thank you for your offering. May Lord Barbatos bless you! A meal like this is best paired with a glass of Dandelion Wine. My treat, you in?"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Thank you for your offering. I will remember you in my morning prayers."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "I do apologize, but long ago I received a prophetic word from the Anemo Archon. Long story short, as the Deacon of the Church of Favonius, it's forbidden for me to consume this kind of food."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "#May this fertile land bless me with a bountiful harvest of grains, to brew into fine wine for my guest. May the returning wind bless me with blossoms, to rain down in celebration of this gathering here today. May our god bless this day of my dear friend's birth, and watch over {M#him}{F#her} I pray... 'Kay, you wanna blow the candles out now?"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "I have been rewarded for my faithfulness. But I will continue to pray, because our god is still watching us."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "When a fresh breeze wafts through a crowd, it carries with it impressions of the people. From the bright-eyed innocence of children to the sad sighs of the middle aged, the wind carries it all. Do you feel it? Can you sense the stories in the wind?"
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Now go, and tread the path that is yours to tread. A bell rings out somewhere in the great outdoors. That, too, is a message from our Lord, calling you forth on your journey."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "Hear our prayers, O Lord. Let the Wind Lead."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "This should be fun."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Let's stir things up!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Surprise baptism!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "May the Archon protect you!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Thus saith the Anemo Archon!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "West Wind, carry me!"
+      },
+      {
+        "Title": "Deploying Wind Glider: I",
+        "Context": "Thanks, Anemo Archon."
+      },
+      {
+        "Title": "Deploying Wind Glider: II",
+        "Context": "Sure beats taking the short way down!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "The oracle has ordained that this treasure should go to you. That way, there's no squabbles."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "I felt a gentle breeze just now... Hehehe, yes, this is a gift from Lord Barbatos!"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Hey, should we close this empty chest and leave it out in the open?"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Wait, I have morning prayers tomorrow..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Where are the healers when you need 'em?"
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Agh, I shoulda minded my own business..."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Things are getting heated out there."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Maybe you should let me talk to them?"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Barbatos..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Shoulda stayed away..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "No more morning prayers..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Oh, here comes trouble!"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "One moment..."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "The oracle didn't mention that..."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Alright, let's go, go, go!"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Barbatos sent me."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Let us pray."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "In this city blessed by freedom, people choose to follow many different paths — from those who seek peace and leisure, to those who yearn for the thrill of adventure. As for Dahlia, well, he's the kind of person whose morning prayers are filled with entreaties for trouble to come his way.\nDeacon of the Church of Favonius and leader of the church's choir, he is a man blessed by the gods who is said to hear the will of the divine. When the people face hardships and seek guidance from on high, it is Dahlia who leads their morning prayers, beseeching Barbatos for answers on their behalf. More often than not, his appeals do not go unanswered.\nMany a curious mind has speculated as to why Dahlia was blessed with divine favor. Some say it's due to his noble character and willingness to help those in need. Others claim that it's because of his singing — a sound as sweet and intoxicating as Dandelion Wine. While a third theory postulates that he has perfected some esoteric form of divination that allows him to predict the future...\nIf anyone were inclined to ask Dahlia himself, he would wink and flash a mischievous grin. \"Perhaps it's because I enjoy meddling in others' affairs that the gods allow me to help them with their troubles.\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Before becoming a deacon, Dahlia had long pursued a life of excitement and delight.\nLike a keen-nosed detective, he would scour the streets of Mondstadt and the surrounding countryside, sniffing out the latest news. Wherever there was a thorny issue to be solved or someone in distress, he was always among the first to know and would rush to the scene to get involved.\nWhen people would praise his kind-heartedness, he would smile at their warm words. Unbeknownst to them, he was mostly just thrilled to be in the thick of the action — people's problems getting solved was merely a happy coincidence.\nHowever, Mondstadt was enjoying a long period of peace, and the everyday troubles of its citizens were insufficient to satisfy Dahlia's appetite for excitement — curbside quarrels, drinking debts, and absconded animals were far too nondescript for his tastes.\nAnd whenever something truly thrilling would arise, the elite Knights of Favonius were always on hand to swiftly restore mundane order.\nThus, after returning his 19th lost cat and clearing his 30th Slime-induced key road blockage of the year, it occurred to Dahlia that he needed to inject some real turbulence into his life.\nWhen he felt the winds begin to blow, he picked a single dandelion and held it in the palm of his hand, praying to Barbatos that something new and exciting might happen to him.\nThe dandelion seeds spiraled into the air and were carried on the wind to the plaza before the great Church of Favonius, coming to rest on the outstretched fingers of the Anemo Archon's statue.\nIn the plaza, a bard was playing a chelys, a child was feeding the pigeons, and the denizens of Mondstadt were praying before the Archon's statue.\nYet Dahlia could sense something was off amid this idyllic scene — that keen nose of his had detected the slightest whiff of trouble.\nThere were two sisters nearby talking in hushed and solemn voices. Dahlia sidled up beside them and managed to just about catch the words \"missing\" and \"urgent.\"\nIn line with his standard approach to \"meddling,\" he politely approached the two sisters and inquired if they needed his help.\nThey glanced at each other uncertainly, not sure whether they should involve a layperson in their current quandary.\nDahlia patted his chest reassuringly, announcing himself as a devout believer in the church and stating that there would be no greater honor than to help.\nMoved by his impassioned words, the sisters ultimately explained the situation — one of their fellow sisters had been missing for several days, leaving the work she had been tasked with undone.\nAnd so it was that Dahlia came to undertake this sister's work \"for the benefit of the people of Mondstadt.\""
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "The \"work\" the sisters had tasked him with consisted of replying to letters from the congregation in the name of the church. The clergy would usually take it in turns to complete this task, but though it was now Sister Rosaria's turn, she had left the city on an investigation and had not been heard from in days. As such, the letters were piling up.\nDahlia took a deep breath and set about opening letters as though he were unwrapping candy.\nLike a snowdrift in a blizzard, the letters piled high around him. All the troubles that people felt unable to share with their neighbors and friends were laid bare before him on white paper snowflakes.\nDahlia read each one carefully. Fortunately, most of these troubles were well within his power to solve.\nA young maid confessed that she had fallen for someone beyond her reach and was uncertain whether to pursue things further. Dahlia wrote in his reply: The most beautiful emotions are often those we leave obscured, yet a brave decision can sometimes bring joyful rewards. Both are fine choices, so perhaps you should let your heart decide?\nA merchant complained that their business was going nowhere, and they could not give their family the life they deserved. Dahlia wrote in his reply: A modest return is always better than a loss. Remain patient and be on the lookout for new opportunities. Perhaps in time, your fortunes will change.\nA scholar questioned the history of Old Mondstadt. Dahlia cited records from authoritative texts and gently reminded the scholar that perhaps only Barbatos himself could help one learn the truth of the past.\n...\nOn the morning of the third day, Dahlia was still furiously scribbling at his desk when his door was gently pushed ajar to admit a tired-looking sister. There were stains on her clothes that might have been mud but could well have been blood.\n\"You must be the sister who's been missing these past few days... It looks like the work you've been doing was far from easy.\"\n\"Thank you for your help, stranger. Victoria appreciates your kindness. She's hoping to persuade you to stay here and work with us.\" Rosaria began relaying the things she'd heard upon her return to the church.\nAs far as Dahlia was concerned, helping the church and working for the church were two completely different things. The latter involved far more than simply assisting the congregation in solving their problems — it required spending a significant amount of time on monotonous prayer and ceremony. For Dahlia, dull repetition was the greatest enemy of all.\nHe shot up from his chair, hurriedly declaring, \"I seek no payment but the joy of helping others! Anyway... now that you're back, my work here is done!\"\nRosaria made no move to stop him from leaving. She simply looked on as he fled the scene like a sudden gust of wind.\nUpon reading through the pile of responses left sitting on her desk, she instantly regretted allowing him to leave without first learning his address.\nShe made a note to find out where he lived before the next time she was tasked with penning replies to the people's letters..."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Dahlia's friends tend to be pretty good at holding their drink — none more so than Venti.\nThe first time they met, Venti was drinking alone in a tavern, a bewildering array of empty bottles laid out before him.\nTaking note of his bardic attire, Dahlia had assumed he was a frustrated artist, trying to drown his sorrows in wine. As such, he decided to accompany the singer for a round or three.\nHe gently probed, hoping to tactfully uncover the source of the bard's troubles. Was he suffering from writer's block? Had his latest work received negative reviews? Were his performances not bringing in enough money?\nIn the end, after downing his 28th cup of apple cider, the bard joyfully shared his reason for drinking:\nThe fruit harvest that year had been a good one, and the wine it produced tasted exceptionally sweet. The bard explained how once he had got going, he had found it difficult to stop until the room was spinning and his eyes glazed over.\n...It appeared he was simply a connoisseur of fine wine.\nSo Dahlia paid for the remaining drinks and ordered round after round, until the two of them were not only satisfied and sated, but had become the firmest of friends.\nAnd so, when Dahlia arranged to meet Venti atop the city walls to share his adventures of the past few days, he made sure to bring libations.\nVenti was curious to know why he had fled. When common folk encountered trouble in their lives, they would often seek the Church's aid. Surely, that was exactly the role Dahlia wanted?\nHe thought back to his childhood, when his mother would take him along to morning prayers. He had always found these occasions too solemn and gloomy. He would think up ways to slip away or doodle absentmindedly on the pews. If he were to join the ranks of the clergy, these rituals were certain to become a regular part of his routine.\nNot to mention, the thought of all those weighty tomes filled with scripture made him dizzy.\nVenti gave a laugh and then asked again — if there was a way to make the rituals more interesting, would he consider it then? For instance, what if he were to help transmit the Anemo Archon's guidance to his flock?\nWell, there was no way Dahlia was going to turn down an opportunity like that.\nAnd thus, that night, it came to pass that Dahlia became the guardian of a scarcely believable secret, while Barbatos, in turn, gained a most trustworthy herald."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Before the sisters had time to lament his departure, Dahlia had returned to the Church of Favonius. This time, he claimed to be an oracle, bearing the words of Barbatos himself — words which required their help to pass on to the people.\nThose present were understandably unsure. There had been many cases of charlatans abusing the Archon's name to defraud the common folk, but seldom had anyone attempted to hoodwink the clergy themselves.\nAlthough, as Dahlia had a reputation for finding joy in helping others, the sisters were divided — some supported helping him while others remained unconvinced.\nThose who were opposed believed that should this \"oracle\" prove false, it would damage the reputation of the church. While those who were in favor felt that oracular proclamations were nothing more than suggestions — should the things they predicted not come to pass, it would be of little significance to the common folk. However, should true prophecies be ignored, great harm could potentially be done.\nAfter everyone had carefully weighed the benefits and risks, those who supported helping the \"oracle\" spread his word found themselves in the ascendancy.\nTherefore, Victoria noted down Dahlia's enlightened words and proclaimed them to the faithful at morning prayers. After a few days, all of his predictions were proven true — timely rains fell for several straight days after Dahlia's call to plant seeds was followed, while a ferocious storm arose on the day he had called for none to take their boats out to sea, and on the day when he decreed the hunters should hunt, their captured prey was doubled...\nDuring this time, rumors of a \"youth blessed by gods\" spread like wildfire throughout the church and the wider world.\nThe result was that the church formally offered Dahlia the position of deacon — a position he readily accepted.\nOn the first day that Dahlia conducted morning prayers, the Cathedral was packed to the rafters with common folk who had heard tell of his abilities. They enthusiastically told him their problems, hoping that they might receive divine guidance.\nEven the longest-serving sisters had never witnessed such scenes. Previously, the only way to attract so many people to the Cathedral would have been to let Barbara hold a concert there.\n\"Please remain calm and await your turn.\"\n\"Our time is limited. I shall try to focus on the most important questions.\"\nDahlia answered the people's questions in an orderly manner before publicly announcing the date of his next time leading morning prayers.\nThanks to Barbatos's blessings, morning prayers were no longer the solemn and stuffy occasion they had once been, and there was now one more reason for people to come to church."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Once, when out searching for a certain member of the choir who had failed to turn up for hymn practice, Dahlia came across a young man lying unconscious near Dragonspine.\nThe youth's clothes were torn, and his body was covered in wounds. As he didn't appear to be local, Dahlia temporarily abandoned his search and took the young man back to the church to rest and recuperate.\nA fortnight passed, and the youth made a full recovery. Hoping to repay Dahlia for his kindness, he asked about, seeking to discover what recompense might be most appreciated.\nShortly after, Dahlia received a valuable gift along with an official-looking letter.\nIt turned out the youth was a researcher from Sumeru investigating flora and fauna in other parts of Teyvat. Due to the regions he was researching being mostly uninhabited forests, mountains, and bodies of water, he would regularly encounter dangerous situations. His original companions were injured one by one, until only he was left.\nAfter hearing about Dahlia's deeds, it occurred to the researcher that such adventures might be of some interest to him, and so he invited him to come along.\nUpon reading the researcher's earnest letter, Dahlia fell into deep contemplation.\nOne of his favorite pastimes was reading popular adventure novels. The protagonists would all start out with ordinary, mundane lives before setting off on wondrous adventures following some unexpected opportunity.\nHe himself had dreamed of taking off toward a distant land and searching for even greater troubles to get involved in, stumbling from one dire situation to the next, all while engineering miraculous escapes.\nAnd now, this invitation in front of him might truly have been just such an \"opportunity for adventure.\" He could imagine all the wonderful surprises that might await him on his journey.\nDahlia considered the researcher's offer for a full day and even thanked him personally before turning it down.\nHe had many reasons to refuse the offer, such as his duties with the choir, who might fall apart without his leadership.\nOr the friends he had in Mondstadt and those lost souls who sought divine guidance.\nHe wished to prioritize the problems that were already before him and enjoy the pleasures of his present position to the fullest.\nThe wind blowing atop the city walls, the bubbles rising in the finest Dandelion Wine, the cheerful laughter of the people... The day he might finally set foot on soil untouched by the whistling breeze, these things would surely become his most cherished memories."
+      },
+      {
+        "Title": "Choirbook",
+        "Context": "Dahlia's book of hymns. Most of the songs contained within are odes of praise to the Anemo Archon that have been passed down for generations. However, a handwritten score has been inserted beneath the final page.\nThis recent edition is not an established official hymn, nor has it ever been performed by the choir as part of a public performance.\nIts origins lie in a chance encounter — and more than a little wine. On that fateful day, Dahlia was drinking with his friends, so lost in conversation that they hardly noticed the sun setting and the stars now shining in their place.\nOne of his companions was curious to know how he could still drink through the evening hours now that he was an ordained deacon in the church.\nDahlia gave a mirthful smile. \"It is through the Anemo Archon's blessing that this land produces such fine wine. Is enjoying the fruits that Barbatos has provided not itself a form of praise?\"\nAll those present raised their cups and shared a toast to Barbatos. Venti, who was also there and playing a tune, felt a sudden wave of inspiration and began to perform an \"Ode to Fine Wine.\"\nOnce the final chords had faded, he wrote the music down and declared it a gift for the leader of the choir.\nDahlia was naturally ecstatic to accept such a gift. The hymns he was used to performing were from a bygone era, and all followed the same stale style — to his mind, it was about time the choir's repertoire was brought up to date. As soon as he got back, he planned to add this new song to the program.\nUnfortunately, many of the sisters did not share his modernizing views. As Victoria put it, only an appearance from Barbatos himself would sway her mind.\nDahlia could see it was a lost cause and quietly put the idea aside.\nUntil that year's Weinlesefest, that is, where Dahlia personally performed the ode — accompanied by Venti, of course — across multiple days of the festival.\nAnd so it was that the hymn became popular throughout the city. Indeed, no matter which street you walked along back then, you could always hear its refrains carried on the wind from somewhere nearby."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Deacon Dahlia's name blew through the streets of Mondstadt like the lilting notes of a hymn. Even the cats, sunning themselves on the roofs and pavements, would meow in response to hearing it.\nThose he had helped would smile and say, \"Oh, I remember that Dahlia!\" While those who had once been the object of his snooping interventions would turn up their noses and snort:\n\"How did that nosy so-and-so manage to climb so high, anyway? Come on, it's our turn to make some sport of him!\"\nThe shuffling sounds of massing feet were swallowed in the cavernous hall of the Cathedral. The only sound that could be heard beneath the dappled light from the stained glass windows was Dahlia's voice. His words were clear and simple, yet conveyed a sense of gravity...\n\"That's not right...\" A voice cried out, finally seizing the chance to challenge him. \"Where in the scripture does it say that? I can find no such words!\"\nThose nearby turned their irate gazes upon this unwelcome speaker, and a well-minded stranger attempted to explain:\n\"Barbatos is the god of freedom, his words are not constrained by scripture...\"\nDahlia calmly cleared his throat, his composure unwavering, a flicker of excitement dancing across his brow:\n\"No one can seize the wind that does not wish to dally. Yet now that this wind would grasp our hands, some stubbornly seek to trap it in the pages of a book.\"\nThis was simply an interlude, and as the speaker had not achieved their goal of humiliating Dahlia, they had no choice but to turn and walk unhappily away — in full view of everyone.\nYet when Dahlia returned home, he retrieved his book of scripture — as thick and heavy as a slab of rock — gently blew the dust off its covers, and began to read it word by word, until he knew its contents by heart.\nNo one had required him to do so, and Dahlia had never feared if others should question him.\nWhether people believed him or not, he was Barbatos's herald. And because he was Barbatos's herald, he knew that the Anemo Archon was not some solemn deity who would leave behind sermons and commandments. This so-called scripture was, at its heart, a book of Mondstadt's history, of praise for the Anemo Archon, of gratitude for plenty, and of hopes for freedom — it had little to do with Barbatos himself.\nBut Dahlia understood that he was no longer the common, excitable citizen of Mondstadt that he had once been. He was a deacon of the Church of Favonius. His every word and every action was a representation of the church and of Barbatos. It would not be hard for him to give out the same quick, impromptu responses he had always done, but was that what the church and its followers truly needed?\nA few days later, when Dahlia was once again holding morning prayers, the congregation noticed something different in his bearing. His movements were solemn, his speech notably full of purpose. His words now flowed like the finest poetry as the warm light from the stained glass windows reflected in his eyes...\nBy the time he had finished, even Victoria couldn't help but ask if Barbatos himself hadn't stopped by to give him some inspirational pointers.\nHe lifted his head, thinking of the Vision he had found lying like a bookmark on his tome of scriptures, and which he had now affixed to his robes.\n\"Perhaps fate smiles on those who are most diligent?\" He gave Victoria a wink and flashed her a cryptic smile.\nWhat he left unsaid is that he had already changed for the benefit of others. He now desired to use his power to guide the world along a brighter path."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 211500,
+      "Name": "Pristine Prayers",
+      "Description": "Dahlia's outfit. Rather than the solemn, constricting robes of the church, the lively Deacon Dahlia prefers light clothing. Indeed, piety is a quality favored by the gods, but Barbatos is not the God of Winds and Freedom for naught. Dahlia is sure that his fashion sense would earn the beneficent Anemo Archon's approval!",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104124,
+    113076,
+    100056,
+    112013,
+    104309,
+    113070
+  ],
+  "NameCard": {
+    "Name": "Dahlia: Sacred Duty",
+    "Description": "Namecard style.\nIf the essence of being an \"idol\" is simply \"being loved,\" then Dahlia might've found his sacred calling. Barbara still strives to perfect her image, while Dahlia need only guard his privacy — lest someone spot him sharing drinks with a certain bard...\n...Though that may not be as easy as it seems.",
+    "Icon": "UI_NameCardIcon_Dahlia",
+    "PicturePrefix": "UI_NameCardPic_Dahlia"
+  }
+}

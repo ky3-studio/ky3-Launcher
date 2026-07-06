@@ -1,0 +1,1145 @@
+{
+  "Id": 10000045,
+  "PromoteId": 45,
+  "Sort": 30,
+  "Body": 3,
+  "Icon": "UI_AvatarIcon_Rosaria",
+  "SideIcon": "UI_AvatarIcon_Side_Rosaria",
+  "Name": "Rosaria",
+  "Description": "A sister of the church, though you wouldn't know it if it weren't for her attire. Known for her sharp, cold words and manner, she often works alone.",
+  "BeginTime": "2021-04-06T18:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 1030.3239,
+    "AttackBase": 20.12304,
+    "DefenseBase": 59.514
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 4531,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}×2",
+            "4-Hit DMG|{param4:F1P}",
+            "5-Hit DMG|{param5:F1P}+{param6:F1P}",
+            "Charged Attack DMG|{param7:P}",
+            "Charged Attack Stamina Cost|{param8:F1}",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 453101,
+              "Level": 1,
+              "Parameters": [
+                0.5246,
+                0.516,
+                0.3182,
+                0.6966,
+                0.41624,
+                0.43,
+                1.3674,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 453102,
+              "Level": 2,
+              "Parameters": [
+                0.5673,
+                0.558,
+                0.3441,
+                0.7533,
+                0.45012,
+                0.465,
+                1.4787,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 453103,
+              "Level": 3,
+              "Parameters": [
+                0.61,
+                0.6,
+                0.37,
+                0.81,
+                0.484,
+                0.5,
+                1.59,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 453104,
+              "Level": 4,
+              "Parameters": [
+                0.671,
+                0.66,
+                0.407,
+                0.891,
+                0.5324,
+                0.55,
+                1.749,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 453105,
+              "Level": 5,
+              "Parameters": [
+                0.7137,
+                0.702,
+                0.4329,
+                0.9477,
+                0.56628,
+                0.585,
+                1.8603,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 453106,
+              "Level": 6,
+              "Parameters": [
+                0.7625,
+                0.75,
+                0.4625,
+                1.0125,
+                0.605,
+                0.625,
+                1.9875,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 453107,
+              "Level": 7,
+              "Parameters": [
+                0.8296,
+                0.816,
+                0.5032,
+                1.1016,
+                0.65824,
+                0.68,
+                2.1624,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 453108,
+              "Level": 8,
+              "Parameters": [
+                0.8967,
+                0.882,
+                0.5439,
+                1.1907,
+                0.71148,
+                0.735,
+                2.3373,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 453109,
+              "Level": 9,
+              "Parameters": [
+                0.9638,
+                0.948,
+                0.5846,
+                1.2798,
+                0.76472,
+                0.79,
+                2.5122,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 453110,
+              "Level": 10,
+              "Parameters": [
+                1.037,
+                1.02,
+                0.629,
+                1.377,
+                0.8228,
+                0.85,
+                2.703,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 453111,
+              "Level": 11,
+              "Parameters": [
+                1.1102,
+                1.092,
+                0.6734,
+                1.4742,
+                0.88088,
+                0.91,
+                2.8938,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 453112,
+              "Level": 12,
+              "Parameters": [
+                1.1834,
+                1.164,
+                0.7178,
+                1.5714,
+                0.93896,
+                0.97,
+                3.0846,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 453113,
+              "Level": 13,
+              "Parameters": [
+                1.2566,
+                1.236,
+                0.7622,
+                1.6686,
+                0.99704,
+                1.03,
+                3.2754,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 453114,
+              "Level": 14,
+              "Parameters": [
+                1.3298,
+                1.308,
+                0.8066,
+                1.7658,
+                1.05512,
+                1.09,
+                3.4662,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 453115,
+              "Level": 15,
+              "Parameters": [
+                1.403,
+                1.38,
+                0.851,
+                1.863,
+                1.1132,
+                1.15,
+                3.657,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10451,
+        "Name": "Spear of the Church",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 4532,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:P}+{param2:P}",
+            "CD|{param3:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 453201,
+              "Level": 1,
+              "Parameters": [
+                0.584,
+                1.36,
+                6
+              ]
+            },
+            {
+              "Id": 453202,
+              "Level": 2,
+              "Parameters": [
+                0.6278,
+                1.462,
+                6
+              ]
+            },
+            {
+              "Id": 453203,
+              "Level": 3,
+              "Parameters": [
+                0.6716,
+                1.564,
+                6
+              ]
+            },
+            {
+              "Id": 453204,
+              "Level": 4,
+              "Parameters": [
+                0.73,
+                1.7,
+                6
+              ]
+            },
+            {
+              "Id": 453205,
+              "Level": 5,
+              "Parameters": [
+                0.7738,
+                1.802,
+                6
+              ]
+            },
+            {
+              "Id": 453206,
+              "Level": 6,
+              "Parameters": [
+                0.8176,
+                1.904,
+                6
+              ]
+            },
+            {
+              "Id": 453207,
+              "Level": 7,
+              "Parameters": [
+                0.876,
+                2.04,
+                6
+              ]
+            },
+            {
+              "Id": 453208,
+              "Level": 8,
+              "Parameters": [
+                0.9344,
+                2.176,
+                6
+              ]
+            },
+            {
+              "Id": 453209,
+              "Level": 9,
+              "Parameters": [
+                0.9928,
+                2.312,
+                6
+              ]
+            },
+            {
+              "Id": 453210,
+              "Level": 10,
+              "Parameters": [
+                1.0512,
+                2.448,
+                6
+              ]
+            },
+            {
+              "Id": 453211,
+              "Level": 11,
+              "Parameters": [
+                1.1096,
+                2.584,
+                6
+              ]
+            },
+            {
+              "Id": 453212,
+              "Level": 12,
+              "Parameters": [
+                1.168,
+                2.72,
+                6
+              ]
+            },
+            {
+              "Id": 453213,
+              "Level": 13,
+              "Parameters": [
+                1.241,
+                2.89,
+                6
+              ]
+            },
+            {
+              "Id": 453214,
+              "Level": 14,
+              "Parameters": [
+                1.314,
+                3.06,
+                6
+              ]
+            },
+            {
+              "Id": 453215,
+              "Level": 15,
+              "Parameters": [
+                1.387,
+                3.23,
+                6
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10452,
+        "Name": "Ravaging Confession",
+        "Description": "Rosaria swiftly shifts her position to appear behind her opponent, then stabs and slashes them with her polearm, dealing <color=#99FFFFFF>Cryo DMG</color>.\nThis ability cannot be used to travel behind opponents of a larger build.\n\n<i>Those who confess to Sister Rosaria will be granted no absolution. All sinners shall be met with the piercing cold of punishment proportionate to the weight of their sins.</i>",
+        "Icon": "Skill_S_Rosaria_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 4539,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:P}+{param2:P}",
+          "Ice Lance DoT|{param3:P}",
+          "Duration|{param4:F1}s",
+          "CD|{param5:F1}s",
+          "Energy Cost|{param6:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 453901,
+            "Level": 1,
+            "Parameters": [
+              1.04,
+              1.52,
+              1.32,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 453902,
+            "Level": 2,
+            "Parameters": [
+              1.118,
+              1.634,
+              1.419,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 453903,
+            "Level": 3,
+            "Parameters": [
+              1.196,
+              1.748,
+              1.518,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 453904,
+            "Level": 4,
+            "Parameters": [
+              1.3,
+              1.9,
+              1.65,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 453905,
+            "Level": 5,
+            "Parameters": [
+              1.378,
+              2.014,
+              1.749,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 453906,
+            "Level": 6,
+            "Parameters": [
+              1.456,
+              2.128,
+              1.848,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 453907,
+            "Level": 7,
+            "Parameters": [
+              1.56,
+              2.28,
+              1.98,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 453908,
+            "Level": 8,
+            "Parameters": [
+              1.664,
+              2.432,
+              2.112,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 453909,
+            "Level": 9,
+            "Parameters": [
+              1.768,
+              2.584,
+              2.244,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 453910,
+            "Level": 10,
+            "Parameters": [
+              1.872,
+              2.736,
+              2.376,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 453911,
+            "Level": 11,
+            "Parameters": [
+              1.976,
+              2.888,
+              2.508,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 453912,
+            "Level": 12,
+            "Parameters": [
+              2.08,
+              3.04,
+              2.64,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 453913,
+            "Level": 13,
+            "Parameters": [
+              2.21,
+              3.23,
+              2.805,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 453914,
+            "Level": 14,
+            "Parameters": [
+              2.34,
+              3.42,
+              2.97,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 453915,
+            "Level": 15,
+            "Parameters": [
+              2.47,
+              3.61,
+              3.135,
+              8,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10453,
+      "Name": "Rites of Termination",
+      "Description": "Rosaria's unique take on this prayer ritual: First, she swings her weapon to slash surrounding opponents; then, she summons a frigid Ice Lance that strikes the ground. Both actions deal <color=#99FFFFFF>Cryo DMG</color>.\nWhile active, the Ice Lance periodically releases a blast of cold air, dealing <color=#99FFFFFF>Cryo DMG</color> to surrounding opponents.\n\n<i>Judgment is such a tedious ordeal — much easier to skip that phase and get straight to the last rites. Rosaria was never very devoted to the Anemo God anyway, which makes performing them all too easy.</i>",
+      "Icon": "Skill_E_Rosaria_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 4521,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 452101,
+              "Level": 1,
+              "Parameters": [
+                0.12,
+                5
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 452101,
+        "Name": "Regina Probationum",
+        "Description": "When Rosaria strikes an opponent from behind using <color=#FFD780FF>Ravaging Confession</color>, Rosaria's CRIT Rate increases by 12% for 5s.",
+        "Icon": "UI_Talent_S_Rosaria_05"
+      },
+      {
+        "GroupId": 4522,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 452201,
+              "Level": 1,
+              "Parameters": [
+                0.15,
+                10,
+                0.15
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 452201,
+        "Name": "Shadow Samaritan",
+        "Description": "Casting <color=#FFD780FF>Rites of Termination</color> increases CRIT Rate of all nearby party members (except Rosaria herself) by 15% of Rosaria's CRIT Rate for 10s.\nCRIT Rate Bonus gained this way cannot exceed 15%.",
+        "Icon": "UI_Talent_S_Rosaria_06"
+      },
+      {
+        "GroupId": 4523,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 452301,
+              "Level": 1,
+              "Parameters": [
+                0.1
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 452301,
+        "Name": "Night Walk",
+        "Description": "At night (18:00 – 06:00), your party members gain the Swift Stride effect: Movement SPD increased by 10%.\nDoes not take effect in Domains, Trounce Domains, or Spiral Abyss. Swift Stride does not stack.",
+        "Icon": "UI_Talent_Rosaria_NightRunner"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 451,
+        "Name": "Unholy Revelation",
+        "Description": "When Rosaria deals a CRIT Hit, her ATK SPD increases by 10% and her Normal Attack DMG increases by 10% for 4s.",
+        "Icon": "UI_Talent_S_Rosaria_01"
+      },
+      {
+        "Id": 452,
+        "Name": "Land Without Promise",
+        "Description": "The duration of the Ice Lance created by <color=#FFD780FF>Rites of Termination</color> is increased by 4s.",
+        "Icon": "UI_Talent_S_Rosaria_02"
+      },
+      {
+        "Id": 453,
+        "Name": "The Wages of Sin",
+        "Description": "Increases the Level of <color=#FFD780FF>Ravaging Confession</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Rosaria_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 454,
+        "Name": "Painful Grace",
+        "Description": "<color=#FFD780FF>Ravaging Confession</color>'s CRIT Hits regenerate 5 Energy for Rosaria.\nCan only be triggered once each time Ravaging Confession is cast.",
+        "Icon": "UI_Talent_S_Rosaria_03"
+      },
+      {
+        "Id": 455,
+        "Name": "Last Rites",
+        "Description": "Increases the Level of <color=#FFD780FF>Rites of Termination</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Rosaria_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 456,
+        "Name": "Divine Retribution",
+        "Description": "<color=#FFD780FF>Rites of Termination</color>'s attack decreases opponents' Physical RES by 20% for 10s.",
+        "Icon": "UI_Talent_S_Rosaria_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Thorny Benevolence",
+    "Detail": "A sister of the church, though you wouldn't know it if it weren't for her attire. Known for her sharp, cold words and manner, she often works alone.",
+    "Association": 1,
+    "Native": "Church of Favonius",
+    "BirthMonth": 1,
+    "BirthDay": 24,
+    "VisionBefore": "Cryo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Spinea Corona",
+    "CvChinese": "张安琪",
+    "CvJapanese": "加隈亜衣",
+    "CvEnglish": "Elizabeth Maxwell",
+    "CvKorean": "Kim Bo-na",
+    "CookBonus": {
+      "OriginItemId": 108032,
+      "ItemId": 108234,
+      "InputList": [
+        100064,
+        100012
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Listen disciple, if you've got a problem you can't handle, then I'm the one for the job. But if you're looking for prayer, you'd better find some other Sister\n...Huh? You're not a disciple?"
+      },
+      {
+        "Title": "Chat: Boredom",
+        "Context": "Don't we have a job to do?"
+      },
+      {
+        "Title": "Chat: Overtime",
+        "Context": "Everything is negotiable, except overtime."
+      },
+      {
+        "Title": "Chat: Life in Mondstadt",
+        "Context": "Work hard and live each day to the fullest. That is what life in Mondstadt is all about, isn't it?"
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "This will slow things down."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "...What a nuisance."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "We should keep moving, but watch your step in the snow."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "Blessings from the Anemo Archon Barsibato? Wait... no, it's Bartobas...?"
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "*yawn* Good morning... I've missed morning mass, haven't I? Ugh, it starts too early anyway."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "I'd say I sleep even better in the afternoon sun. You should try it sometime."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Good evening. Don't expect to see me at prayer tonight... And don't ask why."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Go ahead, take a break. I'll handle things here."
+      },
+      {
+        "Title": "About Rosaria: Sister",
+        "Context": "Me? I'm just another ordinary person. Church, work... I just do what I have to do."
+      },
+      {
+        "Title": "About Rosaria: Troubles",
+        "Context": "Each of the Sisters is worse than the next. If it's not about prayer, then it's about choir or some other thing I'm supposed to participate in... I'm trying to stay out of sight, so don't you dare tell them you saw me here."
+      },
+      {
+        "Title": "About Us: Beliefs",
+        "Context": "Perhaps a god has the power to protect everyone if they would choose to do so, but that would never happen. Otherwise, people's suffering couldn't ever be taken seriously."
+      },
+      {
+        "Title": "About Us: Prayer",
+        "Context": "Pray. Not for the gods, nor the betterment of others... but for yourself."
+      },
+      {
+        "Title": "About Us: Battle",
+        "Context": "Don't overdo it. Let me take care of the dirty work."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "A Vision... Could be proof of strength, or a medal for having survived... who knows? There're two sides to every coin. I won't limit my Vision with ceremonies and definitions. It witnesses me, and I witness it, that's all."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "You don't always know why good things happen, or why we should be happy about them. Heh... But if you ever face a problem too big to handle, don't give up hope. You never know, someone may be there to help, even if you can't see them."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "I take no interest in plant life and the sort, but the dandelion is an exception. How such a simple flower could turn into such a delectable wine is beyond me. A glass of dandelion wine after work is even better than sleeping in on Sunday."
+      },
+      {
+        "Title": "About Diluc",
+        "Context": "Isn't it obvious? There's more than meets the eye to that rich tycoon. He's confident, yet discreet... and even a little bit dangerous."
+      },
+      {
+        "Title": "About Kaeya",
+        "Context": "Wine has its uses... like revealing someone's true colors, for example. Smooth talk is Kaeya's veil, but being me, I can see right through it. Hah, you should see him when he's drunk."
+      },
+      {
+        "Title": "About Venti",
+        "Context": "There's something extremely interesting about this bard... I can't quite put my finger on it. There's something that makes him different from the others in Mondstadt."
+      },
+      {
+        "Title": "About Barbara",
+        "Context": "Barbara is like a thorn in my side, always nagging me about mass and choir practice. I wouldn't be surprised if Sister Victoria specifically asked her to keep an eye on me."
+      },
+      {
+        "Title": "About Jean",
+        "Context": "She's not only competent in her own work but also somehow manages to clear up various matters for others... Huh. Now that's a woman who deserves admiration."
+      },
+      {
+        "Title": "About Albedo",
+        "Context": "He's like an oil painting you find hanging on the wall in some ancient hall, profound and mysterious... hard to see through. But what can I say, I find people with stories... interesting."
+      },
+      {
+        "Title": "About Lisa",
+        "Context": "Although I deplore those who play truant on a job, I respect her punctuality when it comes to closing up for the day."
+      },
+      {
+        "Title": "About Klee",
+        "Context": "Trouble, and lots of it. Although, it is sort of a cute kind of trouble..."
+      },
+      {
+        "Title": "About Varka",
+        "Context": "I'm sure Varka means well, but his long-winded conversations get real old real quick. Although, he does really care for those around him, doesn't he?"
+      },
+      {
+        "Title": "About Her Father",
+        "Context": "Father? I'm not familiar with the word. You could say that I don't have one — could also say I have many, too. What's it to you?"
+      },
+      {
+        "Title": "About Dahlia",
+        "Context": "I like that he's in the habit of always offering to pick up the tab. In fact, his tavern etiquette in general is very good: He knows which questions he can ask and which ones to avoid. But since we figured each other out, I don't need to be too guarded around him anymore. It's so much easier to get along with people when they're smart like him."
+      },
+      {
+        "Title": "More About Rosaria: I",
+        "Context": "Let's forgo the formalities. I'm here to finish a job. Just leave the dirty work to me."
+      },
+      {
+        "Title": "More About Rosaria: II",
+        "Context": "What's weird about a Sister without reverence for the gods? There are hunters who don't eat pork, and fisherman who don't eat fish, aren't there? Just because you do something doesn't mean you love to do it. That's how every job goes."
+      },
+      {
+        "Title": "More About Rosaria: III",
+        "Context": "This year's Dandelion Wine is sinfully good. Care for a glass?"
+      },
+      {
+        "Title": "More About Rosaria: IV",
+        "Context": "Mondstadt is a beast of light, both old and young. Old in the sense that it constantly requires someone's protection, yet too young to ever survive on its own. That's why there's people like me. I care for Mondstadt just as the other Sisters care for the believers, we are all guiding that which we love onward on the path towards freedom. Huh? Why do I call it a beast of light? Because people like myself can only be found in the dark..."
+      },
+      {
+        "Title": "More About Rosaria: V",
+        "Context": "I sometimes feel that my former selves from years past still exist alongside me, urging me on. I'm sure you know the feeling, too. Even if you decide to venture down a new path, don't just abandon the former you. For that is the foundation upon which you now take footing. Do not fear your past, and do not be scared to come to grips with it."
+      },
+      {
+        "Title": "Rosaria's Hobbies",
+        "Context": "There are some troubles that only a stiff drink can take away. That being said, I never get drunk."
+      },
+      {
+        "Title": "Rosaria's Troubles",
+        "Context": "Ugh, definitely skipping next month's choir concert, but I bet Sister Victoria will be personally taking roll... What a nuisance."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Have you ever tried Beef Bourguignon? Big chunks of meat with the smooth taste of alcohol... Mmm, it's delectable."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "You mean I'm supposed to dip this hash brown in jam? Ugh, this is sacrilege!"
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "It seems that our tastes are aligned when it comes to food."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "At least I'll be able to eat my fill with this."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Do you really like this food?"
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Today's your birthday, so if you have any dirty work that needs taking care of, I can give you a hand... Just don't tell anybody, got it?"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Hmm, just what I needed."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "You have a job for me? I've got time."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Good. Getting stronger means finishing jobs quicker."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I'm no stranger to spilling blood, but never have I possessed such power before. For such blessings, I give you thanks."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Hyah!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Judgment!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "You can't run!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Punishment!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Shiver!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Lights out..."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "...Hm, there are a few interesting trinkets here."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "I suppose it wasn't too much trouble."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "That felt... pretty good."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Hmph. Things are getting interesting..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Looks like overtime today."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "So you know your stuff, huh?"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Let me handle this!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Don't try to be a hero!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "At least... no more... work."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Maybe this is just... fate's dark design."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Is this... my final job?"
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "I see how it is."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Ugh, what a nuisance!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "I hear you've got a job for me."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Make sure to keep up."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Sooner we're done, the better."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Rosaria is one of the sisters of Mondstadt's Church of Favonius.\nThough she is just as much a woman of the cloth as the likes of Barbara and Jilliana, people tend to make a mental distinction between Rosaria and other members of the clergy.\nWhile she might dress the part — at least, to a certain extent — her speech and actions do not reflect her office in the slightest.\nFurthermore, she displays even less reverence towards the gods than the ordinary citizens, and she routinely skips her various church engagements.\nShe comes, goes, and acts in solitude, and if she were ever to make an appearance in the Cathedral, it would be to smoke in the rearmost pew.\nSuch a lone wolf is Rosaria that perhaps she should be considered a clergywoman in name only."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "If Rosaria has been lectured once, she has been lectured a thousand times before concerning her unorthodox behavior.\nFor some reason, however, she has never faced any serious consequences for her transgressions. She does not work together with her church colleagues and only rarely shows up to celebratory events in the city.\nThe strange and mysterious Rosaria moves about almost like a wisp of black smoke — blink, and you'll miss her as she disappears into thin air.\nHer social interactions are never more than superficial, and the rest of the time she keeps herself to herself.\nHowever, Sister Victoria would say that the ever good-natured Barbara is one person who has always made the effort to get close to Rosaria.\n\"Please don't smoke in the Cathedral...\" \"Could you try to attend the ceremony on time next time...?\"\n\"And... Hey, come back, I'm still talking to you!\"\nBarbara is forever anxiously chasing after Rosaria, urging her to complete her various daily tasks.\nYet even when faced with Barbara, the beloved idol of Mondstadt, Rosaria remains completely unmoved.\nSurely her heart can't be completely made of stone?"
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Rosaria's movements are unpredictable. She often leaves without notifying anyone and can be gone for up to several days on end.\nDuring these times, none of her church colleagues know where to find her.\nOne of the sisters who took it upon herself to observe Rosaria once groused that \"even a stray cat should at least give you notice before running off...\"\nRosaria uses these disappearances to do work that only she can do in corners unseen by others.\nAn unfamiliar merchant, a suspicious traveler — are these people threats to Mondstadt?\nShe investigates, shadows, and if necessary, interrogates.\nIf they must disappear, then Rosaria shall be the last person they meet.\nSuch dark work, which cannot see the light of day, is to be done by her hand alone.\nShe always sets out after the sun has set, finishing her work in one fell swoop. Sometimes, if she makes it back by the crack of dawn, she gets to usher in the day ahead with a glass of breakfast wine.\nThe people of Mondstadt live in the golden sunlight, but Rosaria dwells under the silver moonlight.\nIt is a cold, piercing light... just like that of the ice she forms with her Cryo abilities.\n\"There are some things that young people need not know,\" Rosaria thinks.\nThough, in her eyes, \"young people\" means all citizens of Mondstadt who live in the light of the sun, regardless of their age."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Like a puff of smoke, the lackadaisical Rosaria is impossible to pin down.\nNevertheless, once she takes on a job, she can be relied on to handle it with the utmost professionalism.\n\"Lazy\" is the last word that anyone would use to describe her ruthless interrogations of suspicious individuals.\nShe also possesses exceptional strength and knows the weaknesses of the human body like the back of her hand — and has no reservations about using this knowledge to kill.\nPeople know her as the lazy, chain-smoking sister, but behind the scenes, she is a formidable purveyor of justice.\nA strange fate for one who ostensibly basks in the light of the gods.\nWhat led her to become a blood-soaked slayer? Why does she stay silent while others praise the gods for their protection?\nPerhaps it should come as no surprise that Rosaria was not born and bred in Mondstadt.\n\"A city that is fortunate enough to be boring always needs someone to do the dirty work...\"\nRosaria stubs her cigarette out as she speaks in her characteristically languid manner.\n\"And as far as I'm concerned, the things I deal with are far simpler than living the life of a traditional sister.\""
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Rosaria may not be one to attend prayer meetings, but that does not mean she doesn't have her own theological viewpoints.\nIn her view, freedom is the spiritual pillar of Mondstadt's people, and it is the very thing that caused her to end up here in the first place.\nRosaria was born in a remote mountain village, but was taken from her home shortly after birth by the very same bandits who drenched it in blood.\nRaised by those crooks, she learned how to fight, sometimes thieving, other times doing odd jobs for the crew.\nShe was their servant, but also their tool, a crook, yet still a child.\nShe fought against outsiders and her comrades alike, and growing up was a constant battle for survival against the hunger and cold.\nRosaria's youth was just like Mondstadt's sunset — blood-red from horizon to horizon, and so fleeting that night had fallen before she'd had the chance to stop and take in the view.\nUltimately, the bandit crew was wiped out by the Knights of Favonius. As their youngest member, Rosaria was judged to have a chance of rehabilitation.\nGrand Master Varka brought her to Mondstadt. Sincerely hoping that she might someday fit in here, he advised her:\n\"Go to the Cathedral and be cleansed by the light of our archon. You still have the chance to turn your fate around and live a normal life.\"\nBut Varka had not counted on Rosaria constantly skipping classes and dodging hymnal.\nShe would rather hunt in the wild than settle into a life of dutiful service as a sister. As far as she was concerned, the golden sunlight was not so much cleansing as blinding.\nFor Rosaria had long since come to understand that she was a child of the moonlight, and it was inevitable that she would someday return to the embrace of darkness."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Rosaria, the Church's number one truant, became infamous for her absence very early on.\n\"Miss Rosaria, please, show a little more circumspection in your actions! You are a member of the Church. How is it appropriate that you simply never turn up for hymn practice?\"\n\"Please calm down, Sister Ophila. Miss Rosaria, I'm told that you have never attended a single one of your compulsory classes. Is that so?\"\n\"Yes.\"\n\"Mother Maria, please look at this... Rosaria's theological essay is an utter mess!\"\n\"Miss Rosaria, if I may ask frankly... do you intend to do any work at all here at the Church?\"\n\"No. I've already found other work.\"\nRosaria never showed so much as a hint of anxiety in any of these exchanges. What's more, it was true — she had indeed found other work for herself, and much darker work at that.\nThe unexpected twist was that she would ultimately end up doing this work under the aegis of the Church.\nRosaria the novice did not leave the clergy, but instead became Sister Rosaria without much incident.\nNevertheless, when she's not on a mission, she does everything she can to avoid attending church activities, instead heading to the taverns to drink or scaling the city walls to view the scenery.\nAnd when she simply cannot escape a church engagement, you can be sure that she will be the first to leave.\nThe instant the workday is done, Rosaria vanishes.\nWhether by bright day or dark night, there is one principle that she will never transgress: no overtime."
+      },
+      {
+        "Title": "Church-Issue Journal",
+        "Context": "A journal with a white cover. The words \"Church of Favonius\" are inscribed on the cover.\nThe handwriting is beautiful, but the content is the most of the most banal variety imaginable.\n\"Dandelion Wine — now eighty percent off!\"\n\"Fisherman's Toast — an incredible flavor at an unbelievable price!\"\n\"Crazy discounts on Wheat — ask at the counter and we'll grind it into Flour for you.\"\n\"Buy three Tomatoes and get one free!\"\n\"Fresh Small Lamp Grass! Use it to light up your bathroom! Come on, Sir, have a look!\"\nThere is something incongruous about a random assortment of marketplace cries and advertising slogans having been penned by such a graceful and elegant hand.\nThis journal is a relic from Rosaria's novice days.\nClearly, she must have skipped class and headed to the rooftops on the merchant street, bathing in the sun, listening to the eclectic cries of the street vendors, and committing them to paper."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Rosaria's Vision came to her on a particularly frigid night.\nThings were getting desperate for the bandit gang — people were starving and the food supplies were dwindling.\nNever able to eat her fill, Rosaria was driven by hunger to flee into the freezing wind rather than continue another second with the hard labor she was forced to endure.\nOne of the elders of the gang pursued her and brought her back.\nHe was the very person who had taken her from the village of her birth, and the one who had taught her how to kill.\n\"Fleeing makes you a traitor, and traitors can only earn their freedom through victory in combat.\"\nThe old bandit tossed Rosaria an old dagger.\n\"Well, come on then! Kill me, and you can leave this place. I'm long in the tooth now, while you've got youth on your side. You can do this, can't ya?\"\nNo one thought that she would be able to kill him — and yet, the old lion would indeed fall by the newborn cub's claws.\nThus did the bandits lose an old member and welcome a new one that very night.\nThe bandits were reluctant to accept Rosaria at first since she had slain one of their own, but they quickly had a change of heart after seeing the Vision in her hand.\nSurely, a Vision wielder had to be far stronger than some old coot who was about to kick the bucket right? And she ate less, to boot... They could save some food this way.\nMeanwhile, a question crept into Rosaria's frozen heart:\nDid he let me replace him on purpose? ...Could a false father have harbored genuine affection for a child he stole so arbitrarily?"
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 204501,
+      "Name": "To the Church's Free Spirit",
+      "Description": "Rosaria's outfit. This seems to have been custom-made for her by the Church.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_RosariaCostumeWic",
+      "SideIcon": "UI_AvatarIcon_Side_RosariaCostumeWic"
+    },
+    {
+      "Id": 204500,
+      "Name": "Executor's Thorns",
+      "Description": "Rosaria's outfit. Rosaria has heavily modified this particular Church of Favonius uniform.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104164,
+    113010,
+    100022,
+    112034,
+    104309,
+    113015
+  ],
+  "NameCard": {
+    "Name": "Rosaria: Indenture",
+    "Description": "Namecard style.\nThe unselfish warmth and goodwill of the people is, to her, a kindness that she must repay, and so it is an indenture that follows her forever.",
+    "Icon": "UI_NameCardIcon_Rosaria",
+    "PicturePrefix": "UI_NameCardPic_Rosaria"
+  }
+}

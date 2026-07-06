@@ -1,0 +1,1363 @@
+{
+  "Id": 10000114,
+  "PromoteId": 114,
+  "Sort": 100,
+  "Body": 2,
+  "Icon": "UI_AvatarIcon_SkirkNew",
+  "SideIcon": "UI_AvatarIcon_Side_SkirkNew",
+  "Name": "Skirk",
+  "Description": "A visitor who once appeared in an Abyssal rift and the Primordial Sea, this solitary warrior mentored Tartaglia in the martial arts.",
+  "BeginTime": "2025-06-17T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 1,
+  "BaseValue": {
+    "HpBase": 966.6665,
+    "AttackBase": 27.93,
+    "DefenseBase": 62.76167
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 11431,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+            "4-Hit DMG|{param5:F1P}",
+            "5-Hit DMG|{param6:F1P}",
+            "Charged Attack DMG|{param7:F1P}×2",
+            "Charged Attack Stamina Cost|{param8:F1}",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1143101,
+              "Level": 1,
+              "Parameters": [
+                0.54524,
+                0.49794,
+                0.32422,
+                0.32422,
+                0.60802,
+                0.82904,
+                0.66822,
+                20,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 1143102,
+              "Level": 2,
+              "Parameters": [
+                0.58962,
+                0.53847,
+                0.35061,
+                0.35061,
+                0.65751,
+                0.89652,
+                0.72261,
+                20,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 1143103,
+              "Level": 3,
+              "Parameters": [
+                0.634,
+                0.579,
+                0.377,
+                0.377,
+                0.707,
+                0.964,
+                0.777,
+                20,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 1143104,
+              "Level": 4,
+              "Parameters": [
+                0.6974,
+                0.6369,
+                0.4147,
+                0.4147,
+                0.7777,
+                1.0604,
+                0.8547,
+                20,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 1143105,
+              "Level": 5,
+              "Parameters": [
+                0.74178,
+                0.67743,
+                0.44109,
+                0.44109,
+                0.82719,
+                1.12788,
+                0.90909,
+                20,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 1143106,
+              "Level": 6,
+              "Parameters": [
+                0.7925,
+                0.72375,
+                0.47125,
+                0.47125,
+                0.88375,
+                1.205,
+                0.97125,
+                20,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 1143107,
+              "Level": 7,
+              "Parameters": [
+                0.86224,
+                0.78744,
+                0.51272,
+                0.51272,
+                0.96152,
+                1.31104,
+                1.05672,
+                20,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 1143108,
+              "Level": 8,
+              "Parameters": [
+                0.93198,
+                0.85113,
+                0.55419,
+                0.55419,
+                1.03929,
+                1.41708,
+                1.14219,
+                20,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 1143109,
+              "Level": 9,
+              "Parameters": [
+                1.00172,
+                0.91482,
+                0.59566,
+                0.59566,
+                1.11706,
+                1.52312,
+                1.22766,
+                20,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 1143110,
+              "Level": 10,
+              "Parameters": [
+                1.0778,
+                0.9843,
+                0.6409,
+                0.6409,
+                1.2019,
+                1.6388,
+                1.3209,
+                20,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 1143111,
+              "Level": 11,
+              "Parameters": [
+                1.15388,
+                1.05378,
+                0.68614,
+                0.68614,
+                1.28674,
+                1.75448,
+                1.41414,
+                20,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 1143112,
+              "Level": 12,
+              "Parameters": [
+                1.22996,
+                1.12326,
+                0.73138,
+                0.73138,
+                1.37158,
+                1.87016,
+                1.50738,
+                20,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 1143113,
+              "Level": 13,
+              "Parameters": [
+                1.30604,
+                1.19274,
+                0.77662,
+                0.77662,
+                1.45642,
+                1.98584,
+                1.60062,
+                20,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 1143114,
+              "Level": 14,
+              "Parameters": [
+                1.38212,
+                1.26222,
+                0.82186,
+                0.82186,
+                1.54126,
+                2.10152,
+                1.69386,
+                20,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 1143115,
+              "Level": 15,
+              "Parameters": [
+                1.4582,
+                1.3317,
+                0.8671,
+                0.8671,
+                1.6261,
+                2.2172,
+                1.7871,
+                20,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11141,
+        "Name": "Havoc: Sunder",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive attacks.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to hurl a spinning crystal spear, dealing DMG to opponents ahead.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_01"
+      },
+      {
+        "GroupId": 11432,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+            "4-Hit DMG|{param5:F1P}+{param6:F1P}",
+            "5-Hit DMG|{param7:F1P}",
+            "Charged Attack DMG|{param8:F1P}×3",
+            "Charged Attack Stamina Cost|{param9:F1}",
+            "Plunge DMG|{param10:F1P}",
+            "Low/High Plunge DMG|{param11:P}/{param12:P}",
+            "Seven-Phase Flash Mode Duration|{param13:F1}s",
+            "Max Serpent's Subtlety|{param14:F1}",
+            "CD|{param15:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1143201,
+              "Level": 1,
+              "Parameters": [
+                1.328244,
+                1.197997,
+                0.75723,
+                0.75723,
+                0.80539,
+                0.80539,
+                1.966244,
+                0.44548,
+                20,
+                0.639324,
+                1.278377,
+                1.596762,
+                12.5,
+                100,
+                8
+              ]
+            },
+            {
+              "Id": 1143202,
+              "Level": 2,
+              "Parameters": [
+                1.436357,
+                1.295509,
+                0.818865,
+                0.818865,
+                0.870945,
+                0.870945,
+                2.126287,
+                0.48174,
+                20,
+                0.691362,
+                1.382431,
+                1.726731,
+                12.5,
+                100,
+                8
+              ]
+            },
+            {
+              "Id": 1143203,
+              "Level": 3,
+              "Parameters": [
+                1.54447,
+                1.39302,
+                0.8805,
+                0.8805,
+                0.9365,
+                0.9365,
+                2.28633,
+                0.518,
+                20,
+                0.7434,
+                1.486485,
+                1.8567,
+                12.5,
+                100,
+                8
+              ]
+            },
+            {
+              "Id": 1143204,
+              "Level": 4,
+              "Parameters": [
+                1.698917,
+                1.532322,
+                0.96855,
+                0.96855,
+                1.03015,
+                1.03015,
+                2.514963,
+                0.5698,
+                20,
+                0.81774,
+                1.635134,
+                2.04237,
+                12.5,
+                100,
+                8
+              ]
+            },
+            {
+              "Id": 1143205,
+              "Level": 5,
+              "Parameters": [
+                1.80703,
+                1.629833,
+                1.030185,
+                1.030185,
+                1.095705,
+                1.095705,
+                2.675006,
+                0.60606,
+                20,
+                0.869778,
+                1.739187,
+                2.172339,
+                12.5,
+                100,
+                8
+              ]
+            },
+            {
+              "Id": 1143206,
+              "Level": 6,
+              "Parameters": [
+                1.930588,
+                1.741275,
+                1.100625,
+                1.100625,
+                1.170625,
+                1.170625,
+                2.857912,
+                0.6475,
+                20,
+                0.92925,
+                1.858106,
+                2.320875,
+                12.5,
+                100,
+                8
+              ]
+            },
+            {
+              "Id": 1143207,
+              "Level": 7,
+              "Parameters": [
+                2.100479,
+                1.894507,
+                1.19748,
+                1.19748,
+                1.27364,
+                1.27364,
+                3.109409,
+                0.70448,
+                20,
+                1.011024,
+                2.02162,
+                2.525112,
+                12.5,
+                100,
+                8
+              ]
+            },
+            {
+              "Id": 1143208,
+              "Level": 8,
+              "Parameters": [
+                2.270371,
+                2.047739,
+                1.294335,
+                1.294335,
+                1.376655,
+                1.376655,
+                3.360905,
+                0.76146,
+                20,
+                1.092798,
+                2.185133,
+                2.729349,
+                12.5,
+                100,
+                8
+              ]
+            },
+            {
+              "Id": 1143209,
+              "Level": 9,
+              "Parameters": [
+                2.440263,
+                2.200972,
+                1.39119,
+                1.39119,
+                1.47967,
+                1.47967,
+                3.612401,
+                0.81844,
+                20,
+                1.174572,
+                2.348646,
+                2.933586,
+                12.5,
+                100,
+                8
+              ]
+            },
+            {
+              "Id": 1143210,
+              "Level": 10,
+              "Parameters": [
+                2.625599,
+                2.368134,
+                1.49685,
+                1.49685,
+                1.59205,
+                1.59205,
+                3.886761,
+                0.8806,
+                20,
+                1.26378,
+                2.527025,
+                3.15639,
+                12.5,
+                100,
+                8
+              ]
+            },
+            {
+              "Id": 1143211,
+              "Level": 11,
+              "Parameters": [
+                2.810935,
+                2.535296,
+                1.60251,
+                1.60251,
+                1.70443,
+                1.70443,
+                4.161121,
+                0.94276,
+                20,
+                1.352988,
+                2.705403,
+                3.379194,
+                12.5,
+                100,
+                8
+              ]
+            },
+            {
+              "Id": 1143212,
+              "Level": 12,
+              "Parameters": [
+                2.996272,
+                2.702459,
+                1.70817,
+                1.70817,
+                1.81681,
+                1.81681,
+                4.43548,
+                1.00492,
+                20,
+                1.442196,
+                2.883781,
+                3.601998,
+                12.5,
+                100,
+                8
+              ]
+            },
+            {
+              "Id": 1143213,
+              "Level": 13,
+              "Parameters": [
+                3.181608,
+                2.869621,
+                1.81383,
+                1.81383,
+                1.92919,
+                1.92919,
+                4.70984,
+                1.06708,
+                20,
+                1.531404,
+                3.062159,
+                3.824802,
+                12.5,
+                100,
+                8
+              ]
+            },
+            {
+              "Id": 1143214,
+              "Level": 14,
+              "Parameters": [
+                3.366945,
+                3.036784,
+                1.91949,
+                1.91949,
+                2.04157,
+                2.04157,
+                4.984199,
+                1.12924,
+                20,
+                1.620612,
+                3.240537,
+                4.047606,
+                12.5,
+                100,
+                8
+              ]
+            },
+            {
+              "Id": 1143215,
+              "Level": 15,
+              "Parameters": [
+                3.552281,
+                3.203946,
+                2.02515,
+                2.02515,
+                2.15395,
+                2.15395,
+                5.258559,
+                1.1914,
+                20,
+                1.70982,
+                3.418915,
+                4.27041,
+                12.5,
+                100,
+                8
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11142,
+        "Name": "Havoc: Warp",
+        "Description": "Imitates the combat style of \"The Foul.\" Produces different effects depending on whether you Tap or Hold.\n\n<color=#FFD780FF>Tap</color>\nSkirk gains 45 {LINK#N11130005}<color=#FFD780FF>Serpent's Subtlety</color>{/LINK} and switches to {LINK#N11130006}<color=#FFD780FF>Seven-Phase Flash</color>{/LINK} mode.\n\n<color=#FFD780FF>Hold</color>\nSkirk gains 45 Serpent's Subtlety and will continuously move at high speed. Her interruption resistance is increased in this state.\nDuring this time, Skirk can control her movement direction and move atop water. She can also use this Skill again to end rapid movement prematurely.",
+        "Icon": "Skill_S_SkirkNew_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 11439,
+      "Proud": {
+        "Descriptions": [
+          "Slash DMG|{param1:F1P} ×5",
+          "Final Slash DMG|{param2:F1P}",
+          "Serpent's Subtlety Bonus|{param3:F2P} ATK Per Point",
+          "0/1/2/3 Void Rift Absorption DMG Bonus|{param4:F1P}/{param5:F1P}/{param6:F1P}/{param7:F1P}",
+          "CD|{param8:F1}s"
+        ],
+        "Parameters": [
+          {
+            "Id": 1143901,
+            "Level": 1,
+            "Parameters": [
+              1.2276,
+              2.046,
+              0.193233,
+              0.035,
+              0.066,
+              0.088,
+              0.11,
+              15
+            ]
+          },
+          {
+            "Id": 1143902,
+            "Level": 2,
+            "Parameters": [
+              1.31967,
+              2.19945,
+              0.207726,
+              0.04,
+              0.072,
+              0.096,
+              0.12,
+              15
+            ]
+          },
+          {
+            "Id": 1143903,
+            "Level": 3,
+            "Parameters": [
+              1.41174,
+              2.3529,
+              0.222218,
+              0.045,
+              0.078,
+              0.104,
+              0.13,
+              15
+            ]
+          },
+          {
+            "Id": 1143904,
+            "Level": 4,
+            "Parameters": [
+              1.5345,
+              2.5575,
+              0.241542,
+              0.05,
+              0.084,
+              0.112,
+              0.14,
+              15
+            ]
+          },
+          {
+            "Id": 1143905,
+            "Level": 5,
+            "Parameters": [
+              1.62657,
+              2.71095,
+              0.256034,
+              0.055,
+              0.09,
+              0.12,
+              0.15,
+              15
+            ]
+          },
+          {
+            "Id": 1143906,
+            "Level": 6,
+            "Parameters": [
+              1.71864,
+              2.8644,
+              0.270527,
+              0.06,
+              0.096,
+              0.128,
+              0.16,
+              15
+            ]
+          },
+          {
+            "Id": 1143907,
+            "Level": 7,
+            "Parameters": [
+              1.8414,
+              3.069,
+              0.28985,
+              0.065,
+              0.102,
+              0.136,
+              0.17,
+              15
+            ]
+          },
+          {
+            "Id": 1143908,
+            "Level": 8,
+            "Parameters": [
+              1.96416,
+              3.2736,
+              0.309173,
+              0.07,
+              0.108,
+              0.144,
+              0.18,
+              15
+            ]
+          },
+          {
+            "Id": 1143909,
+            "Level": 9,
+            "Parameters": [
+              2.08692,
+              3.4782,
+              0.328497,
+              0.075,
+              0.114,
+              0.152,
+              0.19,
+              15
+            ]
+          },
+          {
+            "Id": 1143910,
+            "Level": 10,
+            "Parameters": [
+              2.20968,
+              3.6828,
+              0.34782,
+              0.08,
+              0.12,
+              0.16,
+              0.2,
+              15
+            ]
+          },
+          {
+            "Id": 1143911,
+            "Level": 11,
+            "Parameters": [
+              2.33244,
+              3.8874,
+              0.367143,
+              0.085,
+              0.126,
+              0.168,
+              0.21,
+              15
+            ]
+          },
+          {
+            "Id": 1143912,
+            "Level": 12,
+            "Parameters": [
+              2.4552,
+              4.092,
+              0.386467,
+              0.09,
+              0.132,
+              0.176,
+              0.22,
+              15
+            ]
+          },
+          {
+            "Id": 1143913,
+            "Level": 13,
+            "Parameters": [
+              2.60865,
+              4.34775,
+              0.410621,
+              0.095,
+              0.138,
+              0.184,
+              0.23,
+              15
+            ]
+          },
+          {
+            "Id": 1143914,
+            "Level": 14,
+            "Parameters": [
+              2.7621,
+              4.6035,
+              0.434775,
+              0.1,
+              0.144,
+              0.192,
+              0.24,
+              15
+            ]
+          },
+          {
+            "Id": 1143915,
+            "Level": 15,
+            "Parameters": [
+              2.91555,
+              4.85925,
+              0.458929,
+              0.105,
+              0.15,
+              0.2,
+              0.25,
+              15
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11145,
+      "Name": "Havoc: Ruin",
+      "Description": "Skirk's Elemental Burst is not reliant on Elemental Energy but instead on {LINK#N11130005}<color=#FFD780FF>Serpent's Subtlety</color>{/LINK}.\nWhen Skirk has at least 50 Serpent's Subtlety, she can expend all her Serpent's Subtlety to unleash her Elemental Burst, ripping the space before her apart and using rapid consecutive slashes that deal <color=#99FFFFFF>AoE Cryo DMG</color>. At the same time, the DMG dealt by an instance of this Elemental Burst will be increased by every point of Serpent's Subtlety over 50 when it is unleashed. Up to 12 points can be counted for this purpose.\n\nWhen Skirk is in {LINK#N11130006}<color=#FFD780FF>Seven-Phase Flash</color>{/LINK} mode, Havoc: Ruin will be replaced by Havoc: Extinction.\n\n<color=#FFD780FF>Havoc: Extinction</color>\nA special Elemental Burst that can be used even without consuming Serpent's Subtlety.\nAfter using it, Skirk will gain the \"All Shall Wither\" effect, which will last until Seven-Phase Flash ends. After unlocking the Ascension Talent {LINK#N11130007}<color=#FFD780FF>Reason Beyond Reason</color>{/LINK}, she can also absorb nearby Void Rifts.\nWhile \"All Shall Wither\" is active, every 0.1s, after Skirk's Normal Attack hits an opponent, that Normal Attack will deal increased DMG. If she absorbed any Void Rifts while using <color=#FFD780FF>Havoc: Extinction</color>, this Normal Attack's DMG will be further increased based on the number of Rifts absorbed.\nThis effect will be canceled when it has triggered 10 times.",
+      "Icon": "Skill_E_SkirkNew_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 11421,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1142101,
+              "Level": 1,
+              "Parameters": [
+                8
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1142101,
+        "Name": "Reason Beyond Reason",
+        "Description": "When nearby party members trigger Frozen, Superconduct, Cryo Swirl, or Cryo Crystallize reactions against opponents, a Void Rift will be created near this opponent. This effect can be triggered once every 2.5s. 3 Void Rifts created by Skirk herself can exist on the field at once.\n\nSkirk can use the following methods to absorb nearby Void Rifts:\n· When she hits an opponent with a Charged Attack in her {LINK#N11130006}<color=#FFD780FF>Seven-Phase Flash</color>{/LINK} mode.\n· When she uses the special Elemental Burst <color=#FFD780FF>Havoc: Extinction</color> while in Seven-Phase Flash mode.\n· When she Holds her Elemental Skill <color=#FFD780FF>Havoc: Warp</color> to engage in rapid movement.\n\nEach Rift absorbed will grant her 8 {LINK#N11130005}<color=#FFD780FF>Serpent's Subtlety</color>{/LINK} points.",
+        "Icon": "UI_Talent_S_SkirkNew_05"
+      },
+      {
+        "GroupId": 11422,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1142201,
+              "Level": 1,
+              "Parameters": [
+                20,
+                0.1,
+                0.2,
+                0.7,
+                0.05,
+                0.15,
+                0.6
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1142201,
+        "Name": "Return to Oblivion",
+        "Description": "When nearby <color=#80C0FFFF>Hydro</color> party members' <color=#80C0FFFF>Hydro</color> attacks hit opponents, or when nearby <color=#99FFFFFF>Cryo</color> party members apart from Skirk hit opponents with <color=#99FFFFFF>Cryo</color> attacks, Skirk will gain the \"Death's Crossing\" effect for 20s. Max 3 stacks, each stack's duration is counted independently.\nEach character can grant Skirk at most 1 \"Death's Crossing\" stack by this means.\nEach \"Death's Crossing\" stack increases the Normal Attack DMG dealt by Skirk in {LINK#N11130006}<color=#FFD780FF>Seven-Phase Flash</color>{/LINK} mode to 110%/120%/170% of its original DMG and the DMG dealt when using her Elemental Burst <color=#FFD780FF>Havoc: Ruin</color> to 105%/115%/160% of its original DMG.",
+        "Icon": "UI_Talent_S_SkirkNew_06"
+      },
+      {
+        "GroupId": 11423,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1142301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1142301,
+        "Name": "Mutual Weapons Mentorship",
+        "Description": "When all party members are either <color=#80C0FFFF>Hydro</color> or <color=#99FFFFFF>Cryo</color>, and if there is at least 1 Hydro and 1 Cryo character, your own party members' <color=#FFD780FF>Elemental Skill</color> Level is increased by 1.",
+        "Icon": "UI_Talent_S_SkirkNew_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1141,
+        "Name": "Far to Fall",
+        "Description": "Enhances the effects of the Ascension Talent {LINK#N11130007}<color=#FFD780FF>Reason Beyond Reason</color>{/LINK}: Every Void Rift absorbed will summon a crystal blade to attack nearby opponents, dealing 500% of Skirk's ATK as <color=#99FFFFFF>Cryo DMG</color>. This DMG is considered Charged Attack DMG.\nYou must first unlock the Ascension Talent Reason Beyond Reason.",
+        "Icon": "UI_Talent_S_SkirkNew_01"
+      },
+      {
+        "Id": 1142,
+        "Name": "Into the Abyss",
+        "Description": "After unleashing her Elemental Skill <color=#FFD780FF>Havoc: Warp</color>, Skirk will gain 10 additional {LINK#N11130005}<color=#FFD780FF>Serpent's Subtlety</color>{/LINK} points.\nWhen using her Elemental Burst <color=#FFD780FF>Havoc: Ruin</color>, the DMG of this Elemental Burst instance will be increased by taking up to 10 more Serpent's Subtlety points into account.\nAdditionally, within 12.5s after Skirk unleashes the special Elemental Burst <color=#FFD780FF>Havoc: Extinction</color> while in her {LINK#N11130006}<color=#FFD780FF>Seven-Phase Flash</color>{/LINK} mode, her ATK is increased by 70%. This effect will be canceled when she leaves the Seven-Phase Flash mode.",
+        "Icon": "UI_Talent_S_SkirkNew_02"
+      },
+      {
+        "Id": 1143,
+        "Name": "Serendipitous Sin",
+        "Description": "Increases the Level of {LINK#S11145}<color=#FFD780FF>Havoc: Ruin</color>{/LINK} by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_SkirkNew_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1144,
+        "Name": "Fractured Flow",
+        "Description": "Enhances the effects of the Ascension Talent {LINK#N11130008}<color=#FFD780FF>Return to Oblivion</color>{/LINK}: Each Death's Crossing stack also increases Skirk's ATK by 10%/20%/40%.\nYou must first unlock the Ascension Talent Return to Oblivion.",
+        "Icon": "UI_Talent_S_SkirkNew_03"
+      },
+      {
+        "Id": 1145,
+        "Name": "End of Wishes",
+        "Description": "Increases the Level of {LINK#S11142}<color=#FFD780FF>Havoc: Warp</color>{/LINK} by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_SkirkNew_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1146,
+        "Name": "To the Source",
+        "Description": "Each Void Rift Skirk absorbs via the effects of the Ascension Talent {LINK#N11130007}<color=#FFD780FF>Reason Beyond Reason</color>{/LINK} will grant her 1 Havoc: Sever stack. She can consume such stacks to initiate coordinated attacks and decrease the DMG she takes while in {LINK#N11130006}<color=#FFD780FF>Seven-Phase Flash</color>{/LINK} mode. These stacks last for 15s, and each stack's duration is counted independently (max 3 stacks).\nYou must first unlock the Ascension Talent \"Reason Beyond Reason.\"\n\n<color=#FFD780FF>Havoc: Sever</color>\n· When Skirk uses the Elemental Burst <color=#FFD780FF>Havoc: Ruin</color>, she will consume all <color=#FFD780FF>Havoc: Sever</color> stacks to initiate a coordinated attack in which each <color=#FFD780FF>Havoc: Sever</color> stack will deal 750% of Skirk's ATK as <color=#99FFFFFF>Cryo DMG</color>. This DMG is considered Elemental Burst DMG.\n· When she uses Normal Attacks while in Seven-Phase Flash mode, 1 <color=#FFD780FF>Havoc: Sever</color> stack will be consumed when her third or fifth sequenced attacks hit an opponent to launch 3 coordinated attacks. Each coordinated attack deals 180% of Skirk's ATK as <color=#99FFFFFF>Cryo DMG</color>. This damage is considered Normal Attack DMG.\n· When Skirk takes DMG while in Seven-Phase Flash mode, 1 <color=#FFD780FF>Havoc: Sever</color> stack will be consumed to decrease this DMG instance by 80% and attack nearby opponents 3 times, with each attack dealing 180% of Skirk's ATK as <color=#99FFFFFF>Cryo DMG</color>. This DMG is considered Charged Attack DMG.",
+        "Icon": "UI_Talent_S_SkirkNew_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Void Star",
+    "Detail": "A visitor who once appeared in an Abyssal rift and the Primordial Sea, this solitary warrior mentored Tartaglia in the martial arts.",
+    "Association": 11,
+    "Native": "Cosmic Calamity",
+    "BirthMonth": 11,
+    "BirthDay": 5,
+    "VisionBefore": "Cryo",
+    "VisionOverrideLocked": "The Seven-Shifting Serpent",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Crystallina",
+    "CvChinese": "谢莹",
+    "CvJapanese": "能登麻美子",
+    "CvEnglish": "Cat Protano",
+    "CvKorean": "Seo Da-hye",
+    "CookBonus": {
+      "OriginItemId": 108716,
+      "ItemId": 108838,
+      "InputList": [
+        100084,
+        100016
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "I am Skirk, disciple of Surtalogi, \"The Foul.\" You've proven your strength to me along your journey, and earned the right to speak to me as an equal. Now, let me witness how your fate unfolds."
+      },
+      {
+        "Title": "Chat: The Abyss",
+        "Context": "The Abyss is like the world's shadow. It's always there, and it will never perish."
+      },
+      {
+        "Title": "Chat: Meditation",
+        "Context": "Where do we come from, and where are we going?"
+      },
+      {
+        "Title": "Chat: Final Destination",
+        "Context": "All things come to an end, even time itself."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Nice. I like the rain."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "However fearsome the lightning may be, its wrath is limited to the realm beneath the clouds. The high heavens above remain clear."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "They say that at absolute zero, everything falls completely still... Compared to that, this is nothing."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "The wind sweeps away everything that clouds our vision."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Sleep well? Looks like you're back to peak condition. Let's prepare to depart."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "High noon isn't a good time for sword practice, so I usually spend these hours in meditation. While hard work is essential, reflection and review are also important to keep you from straying off course."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Oh... Nighttime already. Time moves so quickly in the outside world — it's all the more important to cherish it."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Get some sleep. I'll be practicing my bladework for a while longer."
+      },
+      {
+        "Title": "About Skirk: Reading",
+        "Context": "I bought some old books from Liyue recently. A passage in one of them stood out to me: \"The wise man uses his mind as a mirror: Neither grasping out nor drawing in, it receives all yet keeps nothing. In this way, he triumphs over all things, and they can render him no harm.\"\nThat's a very enlightened state of mind. At first, I assumed it must have been penned by some renowned martial arts master. But after reading further, it turned out that he was just an ordinary traveler. People surprise me with what they're capable of sometimes. I suppose that's what they mean when they talk about \"hidden strengths.\""
+      },
+      {
+        "Title": "About Skirk: Bladework",
+        "Context": "Come rain or shine, victory or defeat, I practice the blade whether I'm in the mood for it or not. Only those with true strength can bend fate to their will."
+      },
+      {
+        "Title": "About Us: Training",
+        "Context": "If you ever want to hone your skills, I can take you to the Abyss. You won't be disturbed there, and time will pass at a slower pace. It's an economical way to train."
+      },
+      {
+        "Title": "About Us: Goals",
+        "Context": "Perhaps you're right — maybe it will take everyone working together to bring order to the universe. But I can't afford to place my hopes on other people. I have to go a step beyond that, and show them that there really is a way we can get there."
+      },
+      {
+        "Title": "About the Power of the Abyss",
+        "Context": "Master taught me how to wield the power of the Abyss, and from surviving Khaenri'ahn research, I learned how to channel that power and make it mimic the elemental energy of Teyvat. The fact that you and I don't need a Vision to use the elements implies that our aspirations do not require the approval of the gods."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Master tells me he first trained in the traditional Black Serpent Bladework of Khaenri'ah, but by the time he took me on, his style incorporated many techniques from other sources. That is what it means to be a true martial artist: constantly learning and adapting, always testing and overcoming your limits. Otherwise, you will stagnate."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "During my journey through the stars, I came across a species with completely inverted sensory perception. They'd use ice to warm themselves up, and cool down by the fire. They'd be sweating buckets inside a cold, dark cave, but shiver uncontrollably under the blazing sun. So different from all the other creatures around them, and yet they lived quite happily. That's the miracle of life — unfathomably complex, but at the same time so simple."
+      },
+      {
+        "Title": "About Surtalogi",
+        "Context": "Very few people manage to earn themselves a name like \"The Foul\" and live up to it. I'm sure whoever gave him that name must have truly despised him. Master's certainly done his fair share of disgraceful things, and the fact that he is a former knight who turned his back on the chivalric code doesn't exactly make things any better. And yet, plenty of people still choose to follow him. They're drawn to his strength, composure, and confidence, and the fact that he's candid with everyone regardless of their background. He's not driven by emotion — he's on a mission to become a version of himself that is complete and perfected... That's why he's as powerful as he is. It's also why he's so dangerous."
+      },
+      {
+        "Title": "About Alice: Promise",
+        "Context": "As the Sustainer of the World's Borders, she tolerates my presence, but she did make me promise not to interfere too much with this world's affairs. That was fine by me, but I had to know the reason why. She said, many ecologists find it emotionally overwhelming when they observe the animal kingdom and see the predators hunting and the prey fleeing — but they'll never interfere in the process. Instead, they allow the laws of nature to take precedence over their own emotions. In her own words, \"some call this being a callous observer, but I think it's merciful at the same time.\""
+      },
+      {
+        "Title": "About Alice: Gratitude",
+        "Context": "On one of the times that we met, she urged me to listen to the voice of my heart, and \"learn how to enjoy my present life.\" She was being sincere and showing she cared, and for that I ought to thank her."
+      },
+      {
+        "Title": "About Dainsleif",
+        "Context": "At one time, he was Master's rival. At another, they were best friends, apparently... I had hoped he might give me some more information about Master, but the moment he recognized my style of bladework, he got very agitated and demanded to know Master's whereabouts. I don't want to deal with him. Hopefully I don't run into him again any time soon."
+      },
+      {
+        "Title": "About Dori",
+        "Context": "Ah, yeah, the shrewd merchant. She's one of Alice's friends. I occasionally sell rare monster carcasses to her, since I need Mora to get by in Teyvat. She's made a pretty good impression on me so far — never asks about my background, at least. I don't know how fair her prices are, but I also don't care: I only need enough to get by, any extra would be wasted on me."
+      },
+      {
+        "Title": "About Tartaglia",
+        "Context": "He's improved — next time we spar, I might even use both hands. Ajax has a lot of talent and he is fearless in battle, which gives him the potential to develop great strength. But I've seen many other bright sparks like him fizzle out before ever reaching their prime. If he truly wants to become the person he dreams of being, he still has a long road ahead."
+      },
+      {
+        "Title": "About Neuvillette",
+        "Context": "Lost power is always reclaimed in the end, in some shape or form. But where will this power lead? To a trial? To revenge? Or toward a new future? It's a question that strikes at the heart of his quest to find the meaning of his existence, and perhaps deep down he already has his answer."
+      },
+      {
+        "Title": "About The Will of the Moon",
+        "Context": "I once saw the three moons of Teyvat when I was passing through the false sky. Two are utterly destroyed, their lifeless remains drifting aimlessly through space. The one that remains intact shows no signs of life either, but its will has not faded completely. Maybe there's a chance that one day, a glimmer of truth will emerge in the false sky — a truth belonging to this world alone."
+      },
+      {
+        "Title": "About Nicole",
+        "Context": "I wonder if becoming human was an evolution or regression to her? How did it feel, witnessing the self-destruction of her species firsthand? I considered asking her these questions when we first met, but... given her personality, I thought better of it. I think I'll just leave her alone to work on her sculptures."
+      },
+      {
+        "Title": "More About Skirk: I",
+        "Context": "I spend most of my time training in the Abyss — there's little that deserves my attention on the outside. You've got nothing to worry about with me, though. I mean this world no harm."
+      },
+      {
+        "Title": "More About Skirk: II",
+        "Context": "The worst part about training for long periods is managing the physical pain and fatigue. You can use Abyssal power to help ease muscle strain, but that's physically draining too. So, I learned a few stretching exercises instead — they're surprisingly effective. If you find yourself having the same issues, I can teach them to you."
+      },
+      {
+        "Title": "More About Skirk: III",
+        "Context": "I met a bard once when I was exploring Mondstadt. He taught me how to play music, then dragged me to the tavern to drink with him. I quickly adapted to the feeling of inebriation, and felt completely fine even as we drank more over the next few days. That bard, though... at some point, I noticed he'd passed out cold in his chair. So I ended up having to pay his bill."
+      },
+      {
+        "Title": "More About Skirk: IV",
+        "Context": "Once in a while, I find myself gazing up at the stars. I know it's just a false sky, but I can sense that the creator had a romantic vision of the cosmos. Faced with the unfathomable vastness of time and space, humanity looks to history books to preserve a piece of themselves for the ages, and I think the creator of this sky shared the same desire. To capture a fleeting moment of the universe and make it last forever."
+      },
+      {
+        "Title": "More About Skirk: V",
+        "Context": "I never got the chance to learn how to play an instrument from my parents before they died. The one thing I do remember my dad teaching me was that the key to unlock your playing is to \"lose yourself in the music.\" After I got to Teyvat, I bought a bunch of different instruments to practice with, but every time I got lost in the music, I'd forget my own strength. Ended up destroying quite a few instruments that way. After that, I figured I might as well build my own since I clearly needed something more robust. So I gathered some strong materials and built a few instruments from memory. Oh, here, take one. If it comes to it, you can even use it as a weapon and it won't break on you."
+      },
+      {
+        "Title": "Skirk's Hobbies",
+        "Context": "In my spare time, I play music from my homeland, albeit on instruments from Teyvat. I once thought that those melodies would eventually fade from my memory as the years went by... but they haven't. It's as if they're etched into my very soul. Every time I'm strumming my guitar, I'm so conscious that this music I'm playing is the last trace of that civilization's existence in the entire universe."
+      },
+      {
+        "Title": "Skirk's Troubles",
+        "Context": "I tried writing some poetry once. My mother was a good poet, and I wondered if she'd passed that talent onto me. But nope, whatever I tried, it just wouldn't click. I guess it's just not one of my strong suits. So be it. Poetry isn't gonna help me in battle anyway, so I don't have any real incentive to stick at it."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Back when I was training with Master, I'd frequently end up covered in cuts and bruises from head to toe. There was this particular kind of bug — I don't remember what it was called — but he always used to catch some and grill them for me after a session. Said it'd help with my recovery. They were plump little things. You knew they were done on the grill because they'd glow a beautiful golden color. Crispy shell on the outside with savory flesh in the middle... It's been so long that I don't really remember how they tasted, but I do remember I used to love them as a kid."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Food goes down easier when it tastes good, but even when it doesn't it's still edible. Just don't let anything go to waste."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Not bad."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "It's okay."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Ugh... Waste of ingredients. Next time, I'm cooking."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Happy Birthday. I know some people like to throw a huge party, while others prefer a quieter affair. I don't know which kind of person you are, but for me, birthdays are a time to reflect on the past year — sometimes with pride in my progress, other times with profound regret.\n...It's probably best not to ascribe so much meaning to birthdays after all. Each place has its own festivals for celebrating the land, one's ancestors, friendship... but your birthday is the one day of the year that is meant just for you. Okay, speech over — once again, I wish you a Happy Birthday, and I hope you keep growing into the person you aspire to become."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Uh... Is that it?"
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "An improvement, but it's still not enough for me."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Strength... There was once a time when I neither possessed nor sought it. But now it's in the palm of my hand, I'm never letting go."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "The universe is vast beyond measure, with stars stretching out into infinity. With that perspective in mind, my pursuit of strength seems like an equally endless journey. So, while I will never stop moving forward, I do try to set milestones for myself along the way. And I've reached a new milestone while journeying with you, because I've grown stronger during this time. That means it's now my turn to train you. The only question is... are you ready?"
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Annihilated."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Extinguished."
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Surge."
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Merciless."
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "Fearless."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Into the void."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Another star goes out."
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Paradigm shift."
+      },
+      {
+        "Title": "Elemental Burst: IV",
+        "Context": "Power..."
+      },
+      {
+        "Title": "Elemental Burst: V",
+        "Context": "Mine to wield."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Huh. You've earned yourself a reward."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Your hard work is paying off. As it should."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "A treasure buried in time."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Now this is getting interesting."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Keep going."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Wasn't expecting this."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Watch yourself."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "I'm taking over."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "The stars fade to black..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Someone else... has to..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Am I still... too weak?"
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "You overestimate yourself."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "That's more like it."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Need something taken care of?"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "I'll only demonstrate this once."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Okay, let's take a walk."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Her existence is like an unproven rumor...\nSometimes, past the stroke of midnight, a taverngoer will swear he had glimpsed her, waving hands painting a story of a person that nobody could be sure ever was.\nFor a very long time, Skirk has journeyed through Teyvat like a shadow, avoiding anything more than brief contact with others, only gathering intel when absolutely necessary.\nIt wasn't until very recently that there came to be one who could claim to know her...\n\"Oh, my master? Haha, she's the type to keep to herself.\"\n\"And, let's see... She's an alright cook. Could've been the creatures in that space tasting a little off in general, of course.\"\n\"We initially agreed to swing by my place after leaving. I wanted to let her try my family's homemade sausages this year. It's a real shame she couldn't make it...\"\n\"But enough of that. After all, what matters most about my master is her strength... and the sheer arrogance she has to go with it!\"\n\"Hmm? Oh, no, I know what I said. I'm not being ironic, and I mean no insult.\"\n\"As I, Tartaglia, grow stronger every day, I get the chance to know my master's strength anew with each and every sunrise.\"\n\"When we first started my training, she only needed one hand to beat me. That was undoubtedly her arrogance shining through. But when facing a weak opponent, I believe that arrogance is an aesthetic unto itself.\"\n\"To crush them outright would be unbecoming, yet to feign humility, only to turn the tables later on? That, dear comrade, would be far too deliberate.\"\nIn the present day, this \"review\" of Skirk reached her ears while she was drinking in a tavern. She furrowed her brow.\n\"As I've said before, I still communicate normally with those who possess some measure of skill. And the food in the Abyssal rift only tasted off to him because he's an ordinary human.\"\n\"And about training — I don't really care how many hands I use, but I do care how many he'll have left when I'm done teaching.\"\n\"He still needs to live in Teyvat, so he can't just make new limbs for himself with Abyssal energy like I can.\"\n\"Arrogance and carelessness are both dangerous things. It's good that he wants to improve, rather than to show off.\"\n\"Otherwise, I'd start worrying about finding his corpse in some strange nook or cranny.\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "\"Let's go. She's not going to make it.\"\n\"But, our orders were to...\"\nThe young child held on to her broken, bloody arm, and watched the two figures before her through blurry eyes.\nIn the end, the one who seemed to be in charge bade the other to stop talking. They turned around, then vanished into the distance.\n\nNot long ago, her people had learned that the universe held more civilizations than they ever imagined. In the past, the chance to interact with those beyond their world had been limited to a wizened, scholarly few.\nJust a few months ago, the leaders had announced that trade relations were amicable. So why...?\nBeams cracked and splintered under tongues of flame. In the infernal maw the little girl lay, suffocated by smoke, heat, and blood loss.\n\nAs the debris and charred wood that buried her were dug away, she heard a sound... Something squeaking.\nHer eyelids had been crusted shut with dried blood. But even so blinded, she could sense the light's intrusion.\nAnd she could hear footsteps crunching on scorched terrain, each footfall shattering the broken bricks beneath it.\nThe newcomer easily freed the little girl from the wreckage restraining her. Then, placing one massive hand on her shoulder, they yanked her out.\nThe pain of being pulled so suddenly made her think that all her limbs had been torn off at once. She cried — and as tears forced their way through her eyelids, they washed away the coagulated blood.\nShe was surprised to find that she was still hydrated enough to cry.\nBut the feeling lasted barely a moment. The next thing she knew, the agony sent her spiraling into unconsciousness.\n\nShe was surprised to wake up again. She had not thought she would be granted the mercy of opening her eyes a second time. Though her vision still swam, she could make out a bonfire, and the tall man who sat before it cross-legged. Off to the side, a hulking rat-like beast cowered in the shadows, inky eyes mirroring the fire's wild flicker.\n\"Awake, then? Don't waste your breath on asking questions unrelated to your survival.\"\nThe man did not so much as glance her way. He continued to tend the bonfire with his blade.\n\"So. Do you want to die, or do you want to live?\"\nShe wanted to ask him why she was still alive at all. She wanted to ask who he was. But he had warned her not to waste her breath.\nSo the girl simply turned her gaze to the starry sky and nodded.\nHaving received her answer, the man plucked his sword from the embers, and slew the rat-like beast in one swing. He cut the meat from its legs, skewered the chunks using his weapon, and cooked them over the open fire. At last, he stood up — something he seldom did — and shoved the meat between her teeth. Bland as it was, the oiliness of the fat was more than a feast for the starving girl.\n\nAt the very least, he didn't ask her to feed herself. It seemed he understood that her limbs were ruined beyond repair."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Once the girl's wounds had stabilized, the man allowed her to ask some trivial questions.\n\"Are you also one of the survivors?\"\n\"I am not.\"\n\"Then why can I understand you?\"\n\"There is only one state of chaos, and only one definition of the void. Order, by contrast, can be assembled a thousand different ways.\"\n\"The people of your planet once relied on their great adaptability to make contact with the Abyss, and even after death, the lingering power they carried retains some... trace records of this. That power is similar in essence to my own.\"\n\"So I wove together the dying echoes of countless souls, and spent quite some time learning from them — half a day or so, I believe.\"\n\"Just to learn our language? Then, my father and mother...\"\n\"Are dead. Devoured as meager meat for strength — gulped down like scraps.\"\nThe man answered the second question, then continued:\n\"At first, I believed those people went through the trouble of eradicating all life on this planet because there was something worth destroying. Some incredible technology with which the Abyss might be wielded, perhaps.\"\n\"But I was mistaken. Your methods are crude, your technologies primitive. One might think your civilization lacked even one individual who possessed any ambition — or strength — in all its history.\"\n\"You...!\"\n\"Are you not the same? Did you not eat the flesh of the creature that dug you out of the ruins?\"\n\"Though, I should mention I brought it here from another planet, since all life on yours is extinct.\"\n\"I doubt I will even find a single species adept at looking for things here.\"\nThe girl wanted to say something, but no words rose to her lips. Instead, she decided to ask something else.\n\"Why am I still alive?\"\n\"Your civilization coexisted with the Abyss. Though none ever used it directly, each and every one of you was tainted in some way.\"\n\"This strengthened your constitutions slightly. Had an ordinary human been in your place, they would have been suffocated, roasted, then crushed by the collapsing ceiling.\"\n\"So you can use this power to get stronger?\"\nThe man's eyes glinted in the firelight, a perceptible change within them. \"Do you wish to become stronger?\"\nThe girl nodded.\n\"Even if it costs you everything? Even if you are judged and damned for using foul means to emerge victorious... Do you still wish to become stronger?\"\n\nThe girl answered, her words blown away by the winds sweeping that desolate planet."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "She is called Skirk.\n\nHer severed tendons and shattered bones were restored by the man known as \"The Foul.\" But this was no cause for celebration.\nFor the man made her wield a blade every day and train until her limbs were ruined anew. It was as though he simply wanted her to feel pain.\nEvery day, after training, her broken body would be restored yet again.\n\nShe traveled across the universe with \"The Foul,\" bearing witness to the trail of enemy graves he left in his wake.\nA weapon forged using the pooled resources of an entire star system. A god manifested by the unity of a whole civilization's beliefs. The mightiest warrior among billions...\nHe buried them all. And as Skirk grew from the strength to strength, a revelation came upon her: Nobody had ever forced her master to use the true extent of his power.\nIf it was a wicked beast, he ate its flesh. If it was a god or a machine, he absorbed its energy.\nIf it was a warrior or mage, he played with his food — forcing them to use every trick in their book, then cutting them down once he tired of the charade.\nTo her master, this was what it meant to \"devour.\"\n\nSkirk's limbs were replaced with Abyssal phantasms. Never again would they hurt.\nHer pain receptors, having been overloaded and utterly numbed over the long years, would never again fire a signal.\nPain was simply a biological avoidance mechanism. So, Skirk knew what her body was telling her:\nShe was very strong. Few things could now pose a threat to her.\n\nThis gave her some confidence. One day, she decided to dredge up the question she'd been waiting to ask all this time:\n\"Why did you save me back then?\""
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "\"It was a spontaneous impulse, nothing more.\"\nHer master, whose true name was Surtalogi, replied thusly.\n\"I may be the greatest calamity in the whole universe at this moment. Do you believe that?\"\n\"There is no need to discuss my belief in the matter, Master. Those that once doubted are now but dust in the void.\"\n\"Hmph. Strength is what I have always pursued — the kind that lets one tear through every lie and manipulation.\"\n\"But... having come this far, I find myself struck by one worry...\"\n\"...That I might someday get bored.\"\n\nSkirk listened quietly. She couldn't fathom that the life of such a universe-shaking villain could be \"boring.\"\n\"After seeking the strongest warriors the universe has to offer, there may no longer be any further strength for me to seek.\"\n\"How did that story go again? 'Distance is measured by the heart, and my heart is slightly larger than the universe.'\"\n\"Once the whole universe becomes my front lawn, all I shall see from then on will be two anthills waging pint-sized war... I shall be in my prime then — and at my most weary.\"\n\nOf course, Surtalogi was not one for reading stories. This quote only came to mind because, some time ago, he had come across a scrap drifting through the universe, one carrying the scent of his homeland.\nHe took one look at the title and preface before throwing it away. It just so happened that those introductory words contained the aforementioned passage.\n\n\"So, the thought came to me of taking disciples, then waiting for them to mature before seeking them out for my amusement. You are the first of them.\"\n\"And once you leave, I will see you as my student no longer.\"\n\"I will strip you of everything: That which I gave you, that which you have claimed for yourself, even the unrelated miscellany around you... all will be reduced to ruin.\"\n\nSkirk knew none of this was some untruth meant to spur her on. Between her and Surtalogi, there was no deep master-student bond, no great care or far-reaching intent.\nEverything Surtalogi said, he meant at face value. One day, they would surely fight to the death.\n\nThere are many paths one can take in the world, but once you step on one, the alternatives wither away.\nFrom that day onward, it was like a blade had descended from nowhere and now hung above Skirk's head. Her destiny, her life... All of it now melded together and crystallized into a singular goal: \"Getting stronger.\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "\"Master, since you mentioned that your group once divided enough Abyssal power amongst yourselves to overturn an entire world — or at least a sixth of it...\"\n\"How is it that you are now many times stronger than an entire world, even when alone?\"\n\"Did I save an idiot back then?\"\n\"Listen well. When the fruit of a tree dies, its seeds are sown in the rotten soil. Naturally, these seeds may grow into stronger trees that bear harvests a hundred, or even a thousand times richer.\"\n\"Even if only one or two survivors escape a doomed world, their will alone can become strong enough to reforge the very world they lost.\"\nWith their parting imminent, Skirk no longer bothered to feign reverence or obedience.\nFear only serves as a spur for the weak. But when you grow stronger, unconquered fear will become naught but a shackle.\n\nIn the end, she resolved to bid her master farewell. She headed back to Surtalogi's homeland, to the world known as \"Teyvat.\"\nShe wanted to find that mother-tree. The tree that had borne corrupt fruit, whose tainted seed had grown into a truly formidable arbor.\nFrom that moment on, a great darkness had loomed over the whole forest — the shadow her master cast over the universe at large.\n\nAll across the sea of stars, other civilizations that saw her naturally regarded her as an ally of \"The Foul.\"\nEvery community she encountered during her travels took her for a member of the \"Cosmic Calamity,\" and kept their distance in wary defense.\n...Except for Teyvat, where the one who supervised its borders lowered her guard after talking to Skirk. Upon the establishment of an agreement, she granted the latter limited passage within the world.\n\n\"You do not belong there. It is not your home.\"\nThe words of The Foul remained etched in her heart, never to fade away.\nBut what if a wish, flung at a shooting star as it passed in fire-fraught trails, could stitch even the faintest thread between it and the world?"
+      },
+      {
+        "Title": "Her Answer",
+        "Context": "\"Even if it costs you everything? Even if you are judged and damned for using foul means to emerge victorious... Do you still wish to become stronger?\"\n\nWhat was Skirk's answer, back then? The one that had been blown away by the wind?\nPerhaps, even if the answer were a fleeting \"Yes,\" it would have changed nothing of what came after.\nBut that had not been her reply.\nShe was just a little girl, her mind yet unburdened by craft or cunning. She longed only to thank — and to beg forgiveness from — the first life given to nourish her growth.\n\n\"Maybe the big rat and I could have been best friends.\"\n...But I ate it.\n\nTo The Foul, this utterance gained a second meaning: \"I have turned my back even on the one who saved me from the ruins. What remains, then, that I cannot discard?\"\nNone can say how much of the exchange was colored by self-indulgence or misunderstanding, and how much of it was intentional.\n\nBut beyond this, there may have been some misunderstandings between the two that neither had expected.\n\"Well then. Since I was the one who saved you that day, will you also kill me one day in pursuit of strength?\"\nThe Foul was stirred to expectation by his own words, but in her despair, the little girl did not notice."
+      },
+      {
+        "Title": "The Seven-Shifting Serpent",
+        "Context": "The \"Seven-Shifting Serpent\" is a little trick that The Foul passed down to Skirk.\nIt was originally known as \"Chaos Permeation,\" a minor spell developed by Khaenri'ah's Universitas Magistrorum, and it was made to mock Teyvat's wielders of elemental power. Users of this spell could use Abyssal energy to evoke effects similar to the Elements. The underlying principle was analogous to using the Abyss to permeate reality, creating specific forms of negative pressure to thereby call upon the flow of a corresponding Element's energy.\nTo Khaenri'ah, \"Chaos Permeation\" was a mere party trick employed in performances and parades.\n\nAs a warrior, The Foul knew nothing of this technique at first. But as his understanding of Abyssal power deepened, he came to master it almost instantly. While ordinary performers could spend months practicing the shifting of a single Element just to scrape by as street entertainers, The Foul was able to effortlessly cycle through all seven on his first attempt.\nHe passed this technique down to Skirk, but not so she could fall back on performances if she was strapped for Mora. After all, demonstrating mastery of Abyssal techniques across the seven surface nations was something only a glutton for punishment would do.\n\"In my homeland, the Seven Elements represent the natural order of things. So if you wish to conceal your power for longer, disguise it using this trick.\""
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 211400,
+      "Name": "Shattered Star",
+      "Description": "Skirk's outfit. She has witnessed the annihilation of stars, and once danced in the absolute darkness of the universe. All of these moments have faded into the shadows of her endless journey.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104164,
+    113067,
+    101254,
+    112085,
+    104349,
+    113073
+  ],
+  "NameCard": {
+    "Name": "Skirk: Lone Shadow",
+    "Description": "Namecard style.\nHer solitude is not some show meant to maintain an air of mystery. She was once the last rabbit left standing in the wildfire's wake — now, she's a lion in disguise, unable to speak her truth to the sheep.",
+    "Icon": "UI_NameCardIcon_SkirkNew",
+    "PicturePrefix": "UI_NameCardPic_SkirkNew"
+  }
+}

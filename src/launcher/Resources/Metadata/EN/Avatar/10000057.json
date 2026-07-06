@@ -1,0 +1,1192 @@
+{
+  "Id": 10000057,
+  "PromoteId": 57,
+  "Sort": 43,
+  "Body": 4,
+  "Icon": "UI_AvatarIcon_Itto",
+  "SideIcon": "UI_AvatarIcon_Side_Itto",
+  "Name": "Arataki Itto",
+  "Description": "The first and greatest head of the Arataki Gang, famed throughout Inazuma City's Hanamizaka... Wait, what? You've never heard of them? Are you trying to be funny here?",
+  "BeginTime": "2021-12-14T18:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 11,
+  "BaseValue": {
+    "HpBase": 1000.986,
+    "AttackBase": 17.689,
+    "DefenseBase": 74.66784
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 5731,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "4-Hit DMG|{param4:F1P}",
+            "Arataki Kesagiri Combo Slash DMG|{param6:F1P}",
+            "Arataki Kesagiri Final Slash DMG|{param7:F1P}",
+            "Superlative Superstrength Duration|{param12:F1}s",
+            "Saichimonji Slash DMG|{param5:F1P}",
+            "Saichimonji Slash Stamina Cost|{param8:F1}",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 573101,
+              "Level": 1,
+              "Parameters": [
+                0.792318,
+                0.76368,
+                0.916416,
+                1.172249,
+                0.90472,
+                0.9116,
+                1.9092,
+                20,
+                0.818335,
+                1.636323,
+                2.043855,
+                60
+              ]
+            },
+            {
+              "Id": 573102,
+              "Level": 2,
+              "Parameters": [
+                0.856809,
+                0.82584,
+                0.991008,
+                1.267664,
+                0.97836,
+                0.9858,
+                2.0646,
+                20,
+                0.884943,
+                1.769512,
+                2.210216,
+                60
+              ]
+            },
+            {
+              "Id": 573103,
+              "Level": 3,
+              "Parameters": [
+                0.9213,
+                0.888,
+                1.0656,
+                1.36308,
+                1.052,
+                1.06,
+                2.22,
+                20,
+                0.951552,
+                1.902701,
+                2.376576,
+                60
+              ]
+            },
+            {
+              "Id": 573104,
+              "Level": 4,
+              "Parameters": [
+                1.01343,
+                0.9768,
+                1.17216,
+                1.499388,
+                1.1572,
+                1.166,
+                2.442,
+                20,
+                1.046707,
+                2.092971,
+                2.614234,
+                60
+              ]
+            },
+            {
+              "Id": 573105,
+              "Level": 5,
+              "Parameters": [
+                1.077921,
+                1.03896,
+                1.246752,
+                1.594804,
+                1.23084,
+                1.2402,
+                2.5974,
+                20,
+                1.113316,
+                2.22616,
+                2.780594,
+                60
+              ]
+            },
+            {
+              "Id": 573106,
+              "Level": 6,
+              "Parameters": [
+                1.151625,
+                1.11,
+                1.332,
+                1.70385,
+                1.315,
+                1.325,
+                2.775,
+                20,
+                1.18944,
+                2.378376,
+                2.97072,
+                60
+              ]
+            },
+            {
+              "Id": 573107,
+              "Level": 7,
+              "Parameters": [
+                1.252968,
+                1.20768,
+                1.449216,
+                1.853789,
+                1.43072,
+                1.4416,
+                3.0192,
+                20,
+                1.294111,
+                2.587673,
+                3.232143,
+                60
+              ]
+            },
+            {
+              "Id": 573108,
+              "Level": 8,
+              "Parameters": [
+                1.354311,
+                1.30536,
+                1.566432,
+                2.003728,
+                1.54644,
+                1.5582,
+                3.2634,
+                20,
+                1.398781,
+                2.79697,
+                3.493567,
+                60
+              ]
+            },
+            {
+              "Id": 573109,
+              "Level": 9,
+              "Parameters": [
+                1.455654,
+                1.40304,
+                1.683648,
+                2.153666,
+                1.66216,
+                1.6748,
+                3.5076,
+                20,
+                1.503452,
+                3.006267,
+                3.75499,
+                60
+              ]
+            },
+            {
+              "Id": 573110,
+              "Level": 10,
+              "Parameters": [
+                1.56621,
+                1.5096,
+                1.81152,
+                2.317236,
+                1.7884,
+                1.802,
+                3.774,
+                20,
+                1.617638,
+                3.234591,
+                4.040179,
+                60
+              ]
+            },
+            {
+              "Id": 573111,
+              "Level": 11,
+              "Parameters": [
+                1.692889,
+                1.6317,
+                1.95804,
+                2.504659,
+                1.93305,
+                1.94775,
+                4.07925,
+                20,
+                1.731825,
+                3.462915,
+                4.325368,
+                60
+              ]
+            },
+            {
+              "Id": 573112,
+              "Level": 12,
+              "Parameters": [
+                1.841863,
+                1.77529,
+                2.130348,
+                2.72507,
+                2.103158,
+                2.119152,
+                4.438224,
+                20,
+                1.846011,
+                3.69124,
+                4.610557,
+                60
+              ]
+            },
+            {
+              "Id": 573113,
+              "Level": 13,
+              "Parameters": [
+                1.990837,
+                1.918879,
+                2.302655,
+                2.94548,
+                2.273267,
+                2.290554,
+                4.797198,
+                20,
+                1.960197,
+                3.919564,
+                4.895747,
+                60
+              ]
+            },
+            {
+              "Id": 573114,
+              "Level": 14,
+              "Parameters": [
+                2.139811,
+                2.062469,
+                2.474963,
+                3.16589,
+                2.443375,
+                2.461956,
+                5.156172,
+                20,
+                2.074383,
+                4.147888,
+                5.180936,
+                60
+              ]
+            },
+            {
+              "Id": 573115,
+              "Level": 15,
+              "Parameters": [
+                2.302329,
+                2.219112,
+                2.662934,
+                3.406337,
+                2.628948,
+                2.64894,
+                5.54778,
+                20,
+                2.18857,
+                4.376212,
+                5.466125,
+                60
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10571,
+        "Name": "Fight Club Legend",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive strikes.\nWhen the 2nd and 4th strikes hit opponents, Itto will gain 1 and 2 stacks of Superlative Superstrength, respectively.\nMax 5 stacks. Triggering this effect will refresh the current duration of any existing stacks.\n\nAdditionally, Itto's Normal Attack combo does not immediately reset after sprinting or using his Elemental Skill, \"Masatsu Zetsugi: Akaushi Burst!\"\n\n<color=#FFD780FF>Charged Attack</color>\nWhen holding to perform a Charged Attack, Itto unleashes a series of Arataki Kesagiri slashes without consuming Stamina. Instead, each Arataki Kesagiri slash consumes 1 stack of Superlative Superstrength. When the final stack is consumed, Itto delivers a powerful final slash.\nIf no stacks of Superlative Superstrength are available, Itto will perform a single Saichimonji Slash.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_04"
+      },
+      {
+        "GroupId": 5732,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:P}",
+            "Inherited HP|{param2:P}",
+            "Duration|{param3:F1}s",
+            "CD|{param5:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 573201,
+              "Level": 1,
+              "Parameters": [
+                3.072,
+                1,
+                6,
+                2,
+                10
+              ]
+            },
+            {
+              "Id": 573202,
+              "Level": 2,
+              "Parameters": [
+                3.3024,
+                1,
+                6,
+                2,
+                10
+              ]
+            },
+            {
+              "Id": 573203,
+              "Level": 3,
+              "Parameters": [
+                3.5328,
+                1,
+                6,
+                2,
+                10
+              ]
+            },
+            {
+              "Id": 573204,
+              "Level": 4,
+              "Parameters": [
+                3.84,
+                1,
+                6,
+                2,
+                10
+              ]
+            },
+            {
+              "Id": 573205,
+              "Level": 5,
+              "Parameters": [
+                4.0704,
+                1,
+                6,
+                2,
+                10
+              ]
+            },
+            {
+              "Id": 573206,
+              "Level": 6,
+              "Parameters": [
+                4.3008,
+                1,
+                6,
+                2,
+                10
+              ]
+            },
+            {
+              "Id": 573207,
+              "Level": 7,
+              "Parameters": [
+                4.608,
+                1,
+                6,
+                2,
+                10
+              ]
+            },
+            {
+              "Id": 573208,
+              "Level": 8,
+              "Parameters": [
+                4.9152,
+                1,
+                6,
+                2,
+                10
+              ]
+            },
+            {
+              "Id": 573209,
+              "Level": 9,
+              "Parameters": [
+                5.2224,
+                1,
+                6,
+                2,
+                10
+              ]
+            },
+            {
+              "Id": 573210,
+              "Level": 10,
+              "Parameters": [
+                5.5296,
+                1,
+                6,
+                2,
+                10
+              ]
+            },
+            {
+              "Id": 573211,
+              "Level": 11,
+              "Parameters": [
+                5.8368,
+                1,
+                6,
+                2,
+                10
+              ]
+            },
+            {
+              "Id": 573212,
+              "Level": 12,
+              "Parameters": [
+                6.144,
+                1,
+                6,
+                2,
+                10
+              ]
+            },
+            {
+              "Id": 573213,
+              "Level": 13,
+              "Parameters": [
+                6.528,
+                1,
+                6,
+                2,
+                10
+              ]
+            },
+            {
+              "Id": 573214,
+              "Level": 14,
+              "Parameters": [
+                6.912,
+                1,
+                6,
+                2,
+                10
+              ]
+            },
+            {
+              "Id": 573215,
+              "Level": 15,
+              "Parameters": [
+                7.296,
+                1,
+                6,
+                2,
+                10
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10572,
+        "Name": "Masatsu Zetsugi: Akaushi Burst!",
+        "Description": "Hurls Ushi, the young akaushi bull and auxiliary member of the Arataki Gang, dealing <color=#FFE699FF>Geo DMG</color> to opponents on hit. When Ushi hits opponents, Arataki Itto gains 1 stack of Superlative Superstrength.\n\nUshi will remain on the field and provide support in the following ways:\n· Taunts surrounding opponents and draws their attacks.\n· Inherits HP based on a percentage of Arataki Itto's Max HP.\n· When Ushi takes DMG, Arataki Itto gains 1 stack of Superlative Superstrength. Only 1 stack can be gained in this way every 2s.\n· Ushi will flee when its HP reaches 0 or its duration ends. It will grant Arataki Itto 1 stack of Superlative Superstrength when it leaves.\n\n<color=#FFD780FF>Hold</color>\nAdjust throwing angle.\n\nUshi is considered a <color=#FFE699FF>Geo construct</color>. Arataki Itto can only deploy 1 Ushi on the field at any one time.\n\n<i>The name of this technique is derived from Onibudou (a light novel series written by Junkichi). However, calling it \"Onisatsu Zetsugi\" probably constitutes copyright infringement — not to mention how Itto himself is an oni and all...</i>",
+        "Icon": "Skill_S_Itto_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 5739,
+      "Proud": {
+        "Descriptions": [
+          "ATK Bonus|{param2:F1P} DEF",
+          "ATK SPD Bonus|{param1:P}",
+          "Duration|{param4:F1}s",
+          "CD|{param5:F1}s",
+          "Energy Cost|{param6:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 573901,
+            "Level": 1,
+            "Parameters": [
+              0.1,
+              0.576,
+              0.2,
+              11,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 573902,
+            "Level": 2,
+            "Parameters": [
+              0.1,
+              0.6192,
+              0.2,
+              11,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 573903,
+            "Level": 3,
+            "Parameters": [
+              0.1,
+              0.6624,
+              0.2,
+              11,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 573904,
+            "Level": 4,
+            "Parameters": [
+              0.1,
+              0.72,
+              0.2,
+              11,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 573905,
+            "Level": 5,
+            "Parameters": [
+              0.1,
+              0.7632,
+              0.2,
+              11,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 573906,
+            "Level": 6,
+            "Parameters": [
+              0.1,
+              0.8064,
+              0.2,
+              11,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 573907,
+            "Level": 7,
+            "Parameters": [
+              0.1,
+              0.864,
+              0.2,
+              11,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 573908,
+            "Level": 8,
+            "Parameters": [
+              0.1,
+              0.9216,
+              0.2,
+              11,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 573909,
+            "Level": 9,
+            "Parameters": [
+              0.1,
+              0.9792,
+              0.2,
+              11,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 573910,
+            "Level": 10,
+            "Parameters": [
+              0.1,
+              1.0368,
+              0.2,
+              11,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 573911,
+            "Level": 11,
+            "Parameters": [
+              0.1,
+              1.0944,
+              0.2,
+              11,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 573912,
+            "Level": 12,
+            "Parameters": [
+              0.1,
+              1.152,
+              0.2,
+              11,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 573913,
+            "Level": 13,
+            "Parameters": [
+              0.1,
+              1.224,
+              0.2,
+              11,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 573914,
+            "Level": 14,
+            "Parameters": [
+              0.1,
+              1.296,
+              0.2,
+              11,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 573915,
+            "Level": 15,
+            "Parameters": [
+              0.1,
+              1.368,
+              0.2,
+              11,
+              18,
+              70
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10575,
+      "Name": "Royal Descent: Behold, Itto the Evil!",
+      "Description": "Time to show 'em the might of the Arataki Gang! For a time, Itto lets out his inner Raging Oni King, wielding his Oni King's Kanabou in battle.\nThis state has the following special properties:\n· Converts Itto's Normal, Charged, and Plunging Attacks to <color=#FFE699FF>Geo DMG</color>. This cannot be overridden.\n· Increases Itto's Normal Attack SPD. Also increases his ATK based on his DEF.\n· On hit, the 1st and 3rd strikes of his attack combo will each grant Arataki Itto 1 stack of Superlative Superstrength.\n· Decreases Itto's Elemental and Physical RES by 20%.\n\nThe Raging Oni King state will be cleared when Itto leaves the field.\n\n<i>This is the pinnacle technique of the ultimate fighting style (according to Itto). It would be pointless for Arataki Itto to reference any other fighting styles to improve his own, for he, and no other, is the strongest, most terrible oni in the land.</i>\n<i>Shouta thinks it looks really cool.</i>",
+      "Icon": "Skill_E_Itto_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 5721,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 572101,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 572101,
+        "Name": "Arataki Ichiban",
+        "Description": "When Arataki Itto uses consecutive Arataki Kesagiri, he obtains the following effects:\n· Each slash increases the ATK SPD of the next slash by 10%. Max ATK SPD increase is 30%.\n· Increases his resistance to interruption.\n\nThese effects will be cleared once he stops performing consecutive slashes.",
+        "Icon": "UI_Talent_S_Itto_05"
+      },
+      {
+        "GroupId": 5722,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 572201,
+              "Level": 1,
+              "Parameters": [
+                0.35
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 572201,
+        "Name": "Bloodline of the Crimson Oni",
+        "Description": "Arataki Kesagiri DMG is increased by 35% of Arataki Itto's DEF.",
+        "Icon": "UI_Talent_S_Itto_06"
+      },
+      {
+        "GroupId": 5723,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 572301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 572301,
+        "Name": "Woodchuck Chucked",
+        "Description": "When a party member uses attacks to obtain wood from a tree, they have a 25% chance to get an additional log of wood.",
+        "Icon": "UI_Talent_S_Itto_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 571,
+        "Name": "Stay a While and Listen Up",
+        "Description": "After using <color=#FFD780FF>Royal Descent: Behold, Itto the Evil!</color>, Arataki Itto gains 2 stacks of Superlative Superstrength. After 1s, Itto will gain 1 stack of Superlative Superstrength every 0.5s for 1.5s.",
+        "Icon": "UI_Talent_S_Itto_01"
+      },
+      {
+        "Id": 572,
+        "Name": "Gather 'Round, It's a Brawl!",
+        "Description": "After using <color=#FFD780FF>Royal Descent: Behold, Itto the Evil!</color>, each party member whose Element is <color=#FFE699FF>Geo</color> will decrease that skill's CD by 1.5s and restore 6 Energy to Arataki Itto.\nCD can be decreased by up to 4.5s in this manner. Max 18 Energy can be restored in this manner.",
+        "Icon": "UI_Talent_S_Itto_02"
+      },
+      {
+        "Id": 573,
+        "Name": "Horns Lowered, Coming Through",
+        "Description": "Increases the Level of <color=#FFD780FF>Masatsu Zetsugi: Akaushi Burst!</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Itto_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 574,
+        "Name": "Jailhouse Bread and Butter",
+        "Description": "When the Raging Oni King state caused by <color=#FFD780FF>Royal Descent: Behold, Itto the Evil!</color> ends, all nearby party members gain 20% DEF and 20% ATK for 10s.",
+        "Icon": "UI_Talent_S_Itto_03"
+      },
+      {
+        "Id": 575,
+        "Name": "10 Years of Hanamizaka Fame",
+        "Description": "Increases the Level of <color=#FFD780FF>Royal Descent: Behold, Itto the Evil!</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Itto_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 576,
+        "Name": "Arataki Itto, Present!",
+        "Description": "Arataki Itto's Charged Attacks deal +70% CRIT DMG. Additionally, when he uses Arataki Kesagiri, he has a 50% chance to not consume stacks of Superlative Superstrength.",
+        "Icon": "UI_Talent_S_Itto_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Hanamizaka Heroics",
+    "Detail": "The first and greatest head of the Arataki Gang, famed throughout Inazuma City's Hanamizaka... Wait, what? You've never heard of them? Are you trying to be funny here?",
+    "Association": 5,
+    "Native": "Arataki Gang",
+    "BirthMonth": 6,
+    "BirthDay": 1,
+    "VisionBefore": "Geo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Taurus Iracundus",
+    "CvChinese": "刘照坤",
+    "CvJapanese": "西川貴教",
+    "CvEnglish": "Max Mittelman",
+    "CvKorean": "Song Jun-seok",
+    "CookBonus": {
+      "OriginItemId": 108292,
+      "ItemId": 108364,
+      "InputList": [
+        110001,
+        100018,
+        100061
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "I'm the head honcho of the Arataki Gang, and everyone knows my name...s. Names, I have many. Arataki \"The One and Oni\" Itto, Arataki \"The Oni Sumo King\" Itto, Arataki \"The Pride of Oni\" Itto, Arataki \"Beetle Gladiator\" Itto, Arataki \"The Ultimate TCG Champion\" Itto, Arataki \"He Might Lose but He'll Never Admit Defeatto\"... Anyway, these are some of the ones I usually go by, so go ahead, take your pick. I'll respond to whichever one you choose, I promise. Hehe, you're welcome."
+      },
+      {
+        "Title": "Chat: Itto's Here",
+        "Context": "Arataki \"Numero Uno\" Itto, here in the flesh! Hahaha... *cough*"
+      },
+      {
+        "Title": "Chat: Snacks",
+        "Context": "Best flavor in the world? The sweet, sweet taste of victory. And that's why I've never spent a single Mora on any of my snacks — I've won 'em all fair and square... That's right."
+      },
+      {
+        "Title": "Chat: Beetle Fighting",
+        "Context": "Don't underestimate the beetle — they can be some of the toughest little guys around! Yes you can, yes you can— Wanna know what's on this beetle's diet? Sweat and tears, that's what! That's how it gets stronger... I think we can all learn somethin' from that!"
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Pff, real men don't carry umbrellas... Oh boy, wow, it's really starting to pick up. Uh quick, c'mon, get yours out! C'mon, quick, quick, quick!"
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Hey! Raiden Shogun, is that you? Well guess what — you're not the boss of me. Uh-huh, that's right, you heard me! Go ahead, strike me down!"
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Alright, it's time for a snowball fight! You're never gonna win, though, I... Ha, ah... Ah-choo!!! Whew."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "The sky is clear and the sun is shining... Time to get the Onikabuto out for some training! C'mon little guy, let's go!"
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "Bottom line: Never let the wind get to you. Especially when you've got a killer hairstyle like mine. Oh yeah!"
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Morning, sunshine! Hey, uh... So listen, I'm fresh out of Mora... again. But hey, who needs some lousy job when we can just go find somewhere fun to hang out! Haha, whaddya say?"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Now that we've had some grub, why don't we go find somewhere to kick it for a while? Hanamizaka? Nah, boring. Tenryou Commission... No, no, no... Ah, forget it, let's go hang around Ritou!"
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Shh! You hear that? *gasp* Oh no... it's a ghost, RUN!!! ... Haha, psyche! Ah, I got you good there! ... I got you, didn't I?"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "If you're tired, go ahead and call it a night. Hmm? Me? Oh, don't worry... I sleep with my eyes open... Haha... Literally."
+      },
+      {
+        "Title": "About Itto: Getting a Real Job",
+        "Context": "Oh, so they're saying I can't hold down a real job, huh? Well! Hahaha! Sorry to break it to ya, but I'm a delinquent. That means it's my job to not have a real job, and if anyone's got a problem with that... Who's got a problem with that, huh? You got a problem with that!? You got a problem with— *coughing* Sorry. Got a little worked up there. Where was I? Ah yeah, so work isn't really my thing, but don't worry — I don't rob or steal or anything like that. When I'm really runnin' low on funds, I just take the odd job here and there to make ends meet. You know, like transporting stuff, delivering documents, helping businesses attract customers... Just enough to keep the wolf from the door. Hehe!"
+      },
+      {
+        "Title": "About Itto: Oni",
+        "Context": "The oni have been through a lot to get to where we are today, and look at us now — living peacefully alongside the humans. Unfortunately, there's still plenty of people out there who've got a bone to pick with us. Hmm? Change? Oh yeah, things are gonna change, alright! You can count on that! But I'll tell you what, it won't involve any sucking up to the humans on my part, nuh-uh! I'm gonna let my actions do the talkin'. They'll come to respect me eventually."
+      },
+      {
+        "Title": "About Us: Cooperation",
+        "Context": "Hey, so I always see you running around everywhere doing this and that for other people, but you're not in it for the Mora, are you? No, you're just straight-up lookin' out for your fellow man. I know a true homie when I see one, and no one appreciates a homies' homie more than yours truly. Put it here, partner! You and I are gonna make a great team, I just know it!"
+      },
+      {
+        "Title": "About Us: Response",
+        "Context": "You know what, I gotta admit — I respect you, always have. I could really see you as a member of the gang, you know — I mean, you really have what it takes... Whaddya say? I've even come up with a catchy title to tag on after your name, get this: \"The Traveler, 'Second to One'\"! Get it? 'Cause y'know, I'm numero uno, you're my number two, and together we're the most powerful duo in the whole friggin' world, baby! Hahaha! Ah... But, uh, all jokes aside, I know you're on some important journey or whatever. So, go ahead! Get out there and do whatcha wanna do! Just remember, the Arataki Gang will always answer your call."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "Ugh, don't even ask. Just the thought of it makes my blood boil! First, the Shogun's Army goes out and steals everyone's precious Visions — which, already a heinous crime, right? But then... then they go and stick them all over that statue with absolutely no sense of organization whatsoever. I mean, think about it... the more powerful the Vision, the higher up on the statue it should go, that would make sense, right? But nooo, some class-A jerk in the Tenryou Commission thought it'd be funny to put my Vision right at the very bottom! Ugh... Come on!"
+      },
+      {
+        "Title": "Something to Share: Hina",
+        "Context": "If you ever have something on your mind, you can always try writing in to \"That's Life\" magazine's advice column. Ms. Hina always manages to come up with an encouraging and heartwarming response for all her readers. Just look at me — I used to be a lost soul, but not anymore, and it's all thanks to her. Oh, that reminds me, I managed to sign up for one of her upcoming meet-and-greets! I've been counting down the days — wish it would go faster..."
+      },
+      {
+        "Title": "Something to Share: Horns",
+        "Context": "Question for ya! Do my horns look boring once you get used to them? 'Cause, uh, I was thinking of switching up the style, going for a total overhaul, you know? I'm thinking paint them in rainbow stripes and then strap a few Fireflies on for good measure! Eh, eh? I bet that would turn some heads on the streets... like \"Dude, you're rockin' those sweet rainbow horns, man!\" ...Ah, man, this is totally genius! I'm gonna round up the gang and get them working on it ASAP."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Wanna know the real secret to catching Onikabuto? It's all in the eyeballs. You gotta keep those bad boys squeaky clean at all times, make sure your eyesight's as sharp as a hawk. Trust me, when you're in the middle of a thunderstorm, and the rain's coming down, and the wind's blowing in your face, you gotta watch out, because Lavender Melons and Onikabuto? Well, they can really start to look the same... believe me, I know."
+      },
+      {
+        "Title": "About Thoma",
+        "Context": "Some of the boys have been telling me that he was the star of the show at the Vision Hunt Ceremony. I'm like — are you kidding me??? How come he gets his own special ceremony!? Was the hundredth Vision supposed to be, like, stronger than the other ninety-nine, or something? Pff, nah, it can't have been that, 'cause, uh, hello! They would've chosen me if that's what they were going for."
+      },
+      {
+        "Title": "About Kamisato Ayato",
+        "Context": "Haha, I only wish I could have met my bro Ayato sooner. He really taught me something. \"You can kindle the warrior spirit in even the weakest of bugs\"... Yep, I really took that one to heart. If it weren't for those words of wisdom, I'm pretty sure I would have given up beetle fighting after losing for the 780th time... Heh, I guess sometimes it takes a warrior to understand a warrior. When we're playing trading card games or battling beetles, we're always totally on the same wavelength."
+      },
+      {
+        "Title": "About Yoimiya",
+        "Context": "Hmph, she's always showing off her fancy fireworks and toys to the kids. Well, I'm sick of it! Nobody steals my thunder! I'm the one that's supposed to be adored by the kids! Me! That goes for you too, you're siding with me on this, okay... Huh? Whaddya mean, you're not a kid? Eh, details. If you're shorter than me, you're a kid as far as I'm concerned."
+      },
+      {
+        "Title": "About Kaedehara Kazuha",
+        "Context": "Word on the street is that he blocked the Musou no Hitotachi after you escaped from Tenshukaku. Seriously? 'Cause I mean, that is awesome! Who knows how he pulled it off. Hey, now that I think about it, he's from a fallen clan, and I'm from a fallen clan... That kinda makes us equals, haha! Yeah, so next time someone attacks you, it's my turn to block the blade!"
+      },
+      {
+        "Title": "About the Raiden Shogun",
+        "Context": "During the Vision Hunt Decree, the Shogun had to send her top tengu in person to get my Vision off me. Heh, means she must have found me to be quite the pain in the neck. But, y'know, she's abolished the Vision Hunt Decree now, so no hard feelings, I guess. As long as she's learned her lesson, of course. 'Cause if she pulls something like that again, this old pain in the neck will be back with a vengeance."
+      },
+      {
+        "Title": "About the Lady with Fox Ears",
+        "Context": "I crushed that Kitsune Ramen eating contest we had. Even all that Fried Tofu couldn't stand in my way — she didn't come close to beating me! ... I was, uh, bedridden for more than a month after that, but you know what? I'd rather lie in bed a winner than walk away a loser! So... Anyway, I had the last laugh, 'cause she had to foot the bill for 32 bowls of noodles! Haha!"
+      },
+      {
+        "Title": "About Kujou Sara",
+        "Context": "You know what, yeah, she beat me during the Vision Hunt Decree. I'm not ashamed to admit it. When you lose, you admit defeat, and when you screw up, you take it on the chin, like a man! And anyway, let's not forget which one of us won't agree to a rematch — her, the tengu warrior! It's just a sumo street fight, I mean, what's she so afraid of? If she keeps snubbing me, I'm gonna have to stop calling her Kujou Tengu and start calling her Kujou Chicken! Heh, we'll see what she thinks of that."
+      },
+      {
+        "Title": "About Gorou",
+        "Context": "Oh yeah, the doggy general in the resistance... Hey, I've gotta hand it to him, he may be on the small side, but he's got quite the fighting spirit. Also, he gives off this vibe that makes me feel all warm and fuzzy inside, almost as if he understands my innermost feelings... I mean, I've barely met the guy, so that's kinda weird."
+      },
+      {
+        "Title": "About Kuki Shinobu",
+        "Context": "Nobody questions my leadership in the gang, what I say goes — except when it comes to Shinobu. She's always challenging everything I say. And not only that — all the hard-earned loot I bring back and share with everyone? She goes and returns it! But also, she gets me out of jail, and out of every mess we get ourselves into, so I'll let it slide. Besides, I don't wanna get on her bad side... An angry Shinobu would make my life a nightmare."
+      },
+      {
+        "Title": "About Sayu",
+        "Context": "All I did was give her a little pat on the head this one time when she wasn't looking, and now, she pounces to attack every time she lays eyes on me. Haha, what can I say? Tanuki are adorable! What am I supposed to do — not pat one on the head? ...Oh yeah, and that's the other thing — she beats you up for calling her a tanuki, too! What's up with that? I mean, a tanuki's what she's going for, right? Sheesh, talk about getting your fur all ruffled over nothing..."
+      },
+      {
+        "Title": "More About Itto: I",
+        "Context": "I know what you're thinking: \"I don't see it — how did this guy get to become the boss of the Arataki Gang on the back of beetle fighting and trading card games?\" Well, you're right, those are just child's play. Wanna know the hard skills that really got me where I am? Eating ramen standing upside down, sleeping with my eyes open, playing the harmonica with my nose, and swatting houseflies with my hair. Yeah, I know. Betcha see it now, huh?"
+      },
+      {
+        "Title": "More About Itto: II",
+        "Context": "People in Inazuma have this ritual every time there's a holiday, or they move, or get sick, or whatever, where they throw beans around and chant: \"Fortune beans are falling down, send the oni out of town. Fortune in, oni out. Fortune in, oni out!\" ...Ugh, the chant gets worse every time I hear it, but the streets full of beans, with my allergies? Total disaster. I've gotta fix this, for every oni out there! We're innocent, people! Quit trying to ward us off and drive us out every time there's a minor life event!"
+      },
+      {
+        "Title": "More About Itto: III",
+        "Context": "In a... \"attempt\"... to end human prejudice toward the oni, I had the gang use a Kamera to take a picture of me showing my softer side and stick it to the Message Board in Inazuma City. Next thing we know, some jerks have graffitied all over it! Tsk! Then, some ashigaru blockheads from the Tenryou Commission accused me of disrupting the peace, next it was the Yashiro Commission, complaining it ruined the atmosphere in the area, and finally, even the Kanjou Commission got involved — they sent some lackeys over demanding advertising tax! Ugh, they have no idea who the bad guys are here!"
+      },
+      {
+        "Title": "More About Itto: IV",
+        "Context": "In the Arataki Gang, we're proud to welcome people who've experienced adversity in their lives. Don't listen to the people who call us freaks, or weirdos. Every member of my gang is like family to me, and they all feel the same way. Whatever happens, the gang will face it together — both the highs and the lows."
+      },
+      {
+        "Title": "More About Itto: V",
+        "Context": "I gotta respect the Blue Oni for sacrificing themselves so that the Crimson Oni could live on... In principle, though, I'm absolutely against it. No one should have to sacrifice their own kind for the sake of a better tomorrow, period. It's only a better tomorrow if it's a better tomorrow for everyone. We need to work together, not have everyone just focused on themselves, making their own sacrifice, trying to look cool in the process... Eh, I guess there's no changing the past, what's done is done. But from this day forward, no more sacrificing, not on my watch! You go to sacrifice yourself, I'll stand right in your way!"
+      },
+      {
+        "Title": "Itto's Hobbies",
+        "Context": "Beetle fighting, trading card games, spinning tops, kendama, hide-and-seek, you name it, I can play it! Whaddya say, pick one and we'll have a little contest? Just make sure you're ready to get thrashed! Hahaha!"
+      },
+      {
+        "Title": "Itto's Troubles",
+        "Context": "Granny Oni isn't an oni at all... In fact, she's the kindest human that has ever lived. She only got her nickname because she took me in. If people have got a problem with me, fine, I don't care what other people think anyway... *sigh* But I wish people wouldn't go after her because of me."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Lollipops are pretty much the best things ever. The candy tastes awesome, but also, it looks really cool just having a stick hanging out of your mouth. It gives me, like... a real punk kind of vibe. Here, you try it!"
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Uh, well I am an oni! So there's nothing I hate more than beans. Soybeans, Mung Beans, whatever, I hate 'em all. Just touching one is enough to set off my allergies, let alone eating them. We have to get people to resist this constant urge to throw beans everywhere!"
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Hahahahahahahaha! Mm, mm, mm! I haven't eaten somethin' this good in three whole years!"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Fine! I'll let you treat me to a meal today, but know that the Arataki Gang always pays its debts."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Hey, are you sure you ain't trying to poison me!? Ah!"
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Today's an important day. I had to send the gang away, otherwise they'd be accusing me of favoritism. Here, take a look at this. I got you the greatest birthday gift combo ever! One top-grade Onikabuto — I'll have you know it took me three whole days and nights to catch this bad boy — one out-of-print collectible trading card that took me 300 rounds to get my hands on, and finally, a birthday song performance performed personally by yours truly! Happy Birthday to you, Happy Birthday to you, Happy Biiiirthday dear Traveler, Happy Birthday to youuuu!"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Now that's what I'm talking about, baby! Woo-haha! Better look out, I'm way stronger now!"
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Ah yeah, this is gonna do wonders for my win ratio!"
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Feel the power, baby! Wanna see me smash a boulder?"
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I think \"Numero Uno\" just went from nickname to reality, boom! Haha! Hey, but just because I made it to the top doesn't mean I'm gonna forget all the things you've done for me, okay? I've still got your back, anytime, anywhere."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Let's roll!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Haha! Bam!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Attaboy!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Oni, comin' through!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Who wants some of this!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "It's SHOWTIME!!!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Alriiiight! New toys for the boys!"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "I'm on a roll, haha!"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Hello, free money, goodbye working for a living."
+      },
+      {
+        "Title": "Sprint Start: I",
+        "Context": "Can't catch me!"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Never underestimate an oni!"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "I'm not losing! It's all... part of the plan..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "It's just a scratch, I swear!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Lemme at 'em!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Tag me in! I got this!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "See you at the... rematch..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "At least I'm going down... with style..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "My boys... I've let you down..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "You want some of this!?"
+      },
+      {
+        "Title": "Light Hit Taken: II",
+        "Context": "Hah! Is that all you got!?"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Okay, that one hurt!"
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Hey! I wasn't ready!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Step aside! Itto's back in town!"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "I am the MAN!"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "And the crowd goes wild!!!"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "While walking through Hanamizaka, it is hard not to notice a young man of the oni race named Arataki Itto.\nNever mind his horns or piercing voice sticking out like sore thumbs — the sight of him enthusiastically joining in to play childrens' games is enough to set him apart from the crowd.\nIn any case, his obvious lack of things to do stands in stark contrast to Hanamizaka itself, where craftspeople gather in droves and busy themselves all day long.\nItto claims to be the \"first and greatest head of the Arataki Gang,\" the responsibilities and duties of which he tried to explain to some Tenryou Commission officials when they came to him to investigate a rather harmless street brawl. Unfortunately, they interrupted him not two minutes into the explanation before marking him down as \"unemployed.\"\nThat designation is not exactly accurate, of course: other than the Gang's activities, which the Shogunate does not acknowledge, Itto does also do some odd jobs to stay solvent, usually working one day before taking three days off.\nAs such, a more accurate designation should have been \"three-quarters unemployed.\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Objectively speaking, Itto's reputation leaves much to be desired within Inazuma City.\nEven though he is not considered a villain, he is certainly no law-abiding citizen either. If one really had to assign some sort of hazard level to him, then perhaps the level of being used by parents to keep naughty children in line (\"If you don't behave, Arataki Itto will come and snatch your snacks away!\" for example) might suffice.\nThat said, unlike threats of \"the Great Mujina Youkai grabbing you and taking you deep into the mountains,\" or \"being inlaid upon the Shogun's statue,\" the scenario threatened here can actually occur.\nStill, \"snatching\" is, again, not accurate, for the fate of these snacks is decided fair and square by ritual combat!\nIn the eyes of many, winning snacks off kids in competitions is exceedingly shameless, but Itto believes that every battle must be taken seriously, whether one's foe is a 5-year old child or the Almighty Shogun herself.\nIt is also due to this conviction that Itto can lose to a child without any reservations at all.\nAnd while the adults have much to say about his behavior, the children find Itto the big oni to be a rather good playmate.\nHe is knowledgeable about all manner of street games and plays them all with great gusto. He also stands up for any who are being bullied.\nLately, the children have been very into Onikabuto battles against Itto.\nThe rules of this game are simple and the fighting is both fierce and very watchable. Most importantly of all, they actually have a pretty decent chance of winning this one, unlike with other games."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "For the longest time, the Tenryou Commission has regarded the Arataki Gang as a group of only occasional troublemakers who do not require that much attention.\nThis group only has less than 10 regular members and there are many internal disagreements concerning the date of its founding.\nAkira believes that it all began when Itto saved him from a few two-bit ruffians. That day, Itto persisted even after having been knocked to the ground 7 times, ultimately causing the punks to back off in annoyance. Helping Akira up from the ground, Itto declared: \"Well, guess you're with the Arataki Gang now!\"\nGenta and Mamoru believe that the Gang was truly founded at the end of a certain year when they all squatted on the outskirts of Inazuma City and roasted Lavender Melons.\nThat day, not one of them had a single Mora to their name, and they were all very hungry indeed. While gorging himself on a melon, Itto said with a sigh, \"We should roast Lavender Melons like this every year!\"\nThat said, neither Genta nor Mamoru thinks that these experiences need much memorializing.\nFor Kuki Shinobu, the Gang was officially formed the first time she had to drag Itto's sorry behind out of Shogunate gaol, for this was the first time any official records had ever made mention of the Arataki Gang.\nAs for Itto, he believes that the Arataki Gang existed from the first moment those words entered his mind.\nUnfortunately, he no longer remembers when that was.\nAnd as for Granny Oni, who has taken care of Itto since he was young, she believes that the Gang was never formed.\nTo her, these children are just \"Itto and his friends.\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "The land of Inazuma has been home to the oni race since antiquity.\nThey existed here alongside the lordly Hakushin kitsune bloodline and the tengu.\nSuch youkai often have supernatural abilities that humans could only look upon in envy, but the oni lack many special traits in that regard.\nOther than the horns on their heads, they are mostly remembered for their explosive tempers and penchant for making trouble.\nAs for their legendary fear of beans, it has a scientific basis.\nAs it turns out, oni are allergic to beans. However, because the oni bloodline has thinned out greatly over time, most people display only very minor allergic reactions.\nUnfortunately for Itto, his allergies are still pretty severe. Forget eating beans, so long as he makes skin contact with them, Itto will get itchy all over and even find it hard to breathe.\nThis thus makes beans the only thing that the usually carefree Itto is particularly wary of in his daily life.\nFor their part, the Arataki Gang members do not order any dishes made with beans, not even in private, as a mark of respect for him.\nOf all products made with beans, Itto fears Fried Tofu the most — indeed, he even says that the very sight of it leaves him feeling queasy for three days straight."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "And when one mentions Fried Tofu, a certain pyrrhic victory immediately comes to mind.\nThe battle that caused that incident began as a rather pedestrian conflict: a fox-eared lady had happened to sit in the chair that Itto would customarily sit on while eating at his favorite food stand... and on his payday, no less.\nThe two began a contest of words over whom the chair belonged to, culminating in a straight-up (unnecessary) battle.\nItto, hungry from a hard day's work, chose an eating contest, while the fox-eared lady chose a theme of \"kitsune ramen.\"\nItto was momentarily at a loss when he realized that said ramen contained Fried Tofu, but with the oni race's pride on the line, he soldiered on gamely en route to victory nonetheless.\nAnd as for that innocent chair, it was ultimately given to Itto as a trophy by the rather mortified owner of the food stand.\nRegarding the various contests he has been in, there are two that still weigh on Itto's mind quite heavily.\nOne of them is the rematch that he demanded of Kujou Sara, who defeated him and took his Vision as part of her duties in the Tenryou Commission.\nTo this day, the Kujou has not agreed to the street corner sumo match, something that frustrates Itto to no end.\nThe other incident happened many years ago when Itto was young. Then, he had gotten into an argument with a young tengu, the result of which was a sumo match in the Byakko Plain. Unexpectedly, the ensuing furor sent them both rolling down a mountain.\nIn the end, it was the tengu who carried Itto, who could not walk after spraining his ankle, all the way home. Of course, the match went unsettled.\nJust his luck, Itto often thinks, that both such incidents had to do with tengu!\nAlso, how on earth were these tengu all so strong despite looking so skinny?"
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Every oni child has probably heard the story of the Crimson Oni and the Blue Oni:\nThe gentle, helpful Crimson Oni defeated the wicked Blue Oni, thus winning the respect of the humans.\nThis was Itto's favorite story when he was young, and he was proud of his red oni horns and his Crimson Oni lineage.\nHowever, this simple pride was shaken by a certain incident.\nWhen incidents of robbery occurred in the village in which Itto lived, the Arataki family fell under suspicion on account of their oni heritage.\nItto no longer remembers the details of that incident, but he remembers the wary, disgusted stares the villagers gave him and his parents as they left, and the parting words they said, which Itto has heard countless times since:\n\"Once an oni, always an oni.\"\nNo matter the time period, all oni are the same as far as humans are concerned. In that case, would it not be better to become the Blue Oni, whom people feared? Surely that was preferable to being like his parents, who were driven out despite having done nothing wrong.\nAfter his parents died of illness, the young Itto was turned out onto the streets, where he would lay into anyone who spoke ill of the oni race.\nWell, Itto was mostly the one getting laid into. But he proved quite the pain in the neck, never giving up no matter how many times they knocked him down.\nStill, he was only a child and eventually collapsed on the street due to exhaustion and hunger after a terrible round of beatings at the hands of some ruffians who had banded together against him.\nAt this moment of crisis, Itto was saved by an old human woman.\n\"Why did you save me? Can't you see that I'm an oni?\" \"You must be hungry. Come, I've made some porridge.\"\n\"I told you, I'm an oni! Can't you see them horns?\" \"Oh, I can see them. Do you want some of that porridge, by the way?\"\n\"Agh, you know what, you're not listening to me at all. Oh, alright... One bowl of porridge, please.\" \"Coming right up.\""
+      },
+      {
+        "Title": "The Great Singalong",
+        "Context": "As the year was drawing to a close, the Arataki Gang met to discuss how they might celebrate the turnover of the year.\nAs opposed to more reputable organizations, the Arataki Gang did not have any fixed venues to hold their activities, which posed some... logistical issues.\nThe Lavender Melon suggestion was quickly eliminated. While roasting melons itself was certainly not an issue, eating only that to celebrate the new year certainly was.\nAn Onikabuto festival was considered, but the year's end was not mating season, and so the contestants would not be half as motivated as they usually were.\nUltimately, lots were drawn, and the \"Great Singalong\" was selected.\nThis activity was suggested by Itto himself, and it entailed everyone standing on a cliff and singing against the ocean wind to express their innermost feelings and well-wishes for the future.\nThe various gang members actually rejected this in their hearts when they found out about it. After all, screaming into the wind was nowhere near as fun as eating melons. Kuki Shinobu even indicated that she would like to take leave to return home on that day.\nHowever, the event went through nonetheless. The yelling and hollering were indeed quite soothing for the soul — and as things unexpectedly turned out, Itto was quite the good singer as well."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Itto's Vision was something he found under his hip after waking up one morning. By that point, he had already been in Hanamizaka for many a year, and his livelihood was at least somewhat stable.\n\"Well I never! Dad, Mom, Gramps, Granny, and Granny Oni, this... Now isn't this something?\"\nThese were Itto's real thoughts as he first looked upon his Vision.\nThat day, he would excitedly show his Vision to every person he met, even showing people where it had made an indentation on his back until everyone was thoroughly sick of hearing the story.\nA few days later, however, the story would change a little:\n\"Now as you know, I wasn't surprised at all when I first saw that Vision. I mean, you'd expect as much out of the first and greatest head of the Arataki Gang, after all!\"\n\"More importantly, a person's worth isn't something that can be determined by a mere Vision, oh no, sir!\"\nThe keen-eyed, however, would notice that Itto had bought a very soft spectacle cloth.\nAlso, a certain question showed up in the advice column of the \"That's Life\" magazine that went like this:\n\"Ms. Hina, how should I best take care of my Vision and make it shinier? And when I say 'shinier,' I mean shinier than everyone else's, of course!\"\nWhen gang members read this and excitedly showed the magazine to Itto, they were surprised to see the long-time fan of Ms. Hina just look at the mag casually before laying it aside."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 205700,
+      "Name": "Eccentric Oni",
+      "Description": "Itto's outfit. It has an uncommon air of awesomeness about it, and the oni mask worn at the hip is quite imposing indeed — certainly enough to reduce even the naughtiest child of Hanamizaka to terrified tears.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104174,
+    113030,
+    101201,
+    112004,
+    104325,
+    113027
+  ],
+  "NameCard": {
+    "Name": "Itto: Oni Face",
+    "Description": "Namecard style.\nA real man puts sorrow and anger behind him and smiles brightly for the world to see!",
+    "Icon": "UI_NameCardIcon_Itto",
+    "PicturePrefix": "UI_NameCardPic_Itto"
+  }
+}

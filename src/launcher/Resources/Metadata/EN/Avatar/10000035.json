@@ -1,0 +1,1290 @@
+{
+  "Id": 10000035,
+  "PromoteId": 35,
+  "Sort": 7,
+  "Body": 5,
+  "Icon": "UI_AvatarIcon_Qiqi",
+  "SideIcon": "UI_AvatarIcon_Side_Qiqi",
+  "Name": "Qiqi",
+  "Description": "An apprentice and herb gatherer at Bubu Pharmacy. An undead with a bone-white complexion, she seldom has much in the way of words or emotion.",
+  "BeginTime": "2020-09-15T04:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 1,
+  "BaseValue": {
+    "HpBase": 962.8532,
+    "AttackBase": 22.344,
+    "DefenseBase": 71.796
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 3531,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:P}",
+            "2-Hit DMG|{param2:P}",
+            "3-Hit DMG|{param3:F1P}+{param3:F1P}",
+            "4-Hit DMG|{param4:F1P}+{param4:F1P}",
+            "5-Hit DMG|{param5:P}",
+            "Charged Attack DMG|{param6:P}+{param6:P}",
+            "Charged Attack Stamina Cost|{param7:F1}",
+            "Plunge DMG|{param8:F1P}",
+            "Low/High Plunge DMG|{param9:P}/{param10:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 353101,
+              "Level": 1,
+              "Parameters": [
+                0.37754,
+                0.38872,
+                0.24166,
+                0.24682,
+                0.63038,
+                0.64328,
+                20,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 353102,
+              "Level": 2,
+              "Parameters": [
+                0.40827,
+                0.42036,
+                0.26133,
+                0.26691,
+                0.68169,
+                0.69564,
+                20,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 353103,
+              "Level": 3,
+              "Parameters": [
+                0.439,
+                0.452,
+                0.281,
+                0.287,
+                0.733,
+                0.748,
+                20,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 353104,
+              "Level": 4,
+              "Parameters": [
+                0.4829,
+                0.4972,
+                0.3091,
+                0.3157,
+                0.8063,
+                0.8228,
+                20,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 353105,
+              "Level": 5,
+              "Parameters": [
+                0.51363,
+                0.52884,
+                0.32877,
+                0.33579,
+                0.85761,
+                0.87516,
+                20,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 353106,
+              "Level": 6,
+              "Parameters": [
+                0.54875,
+                0.565,
+                0.35125,
+                0.35875,
+                0.91625,
+                0.935,
+                20,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 353107,
+              "Level": 7,
+              "Parameters": [
+                0.59704,
+                0.61472,
+                0.38216,
+                0.39032,
+                0.99688,
+                1.01728,
+                20,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 353108,
+              "Level": 8,
+              "Parameters": [
+                0.64533,
+                0.66444,
+                0.41307,
+                0.42189,
+                1.07751,
+                1.09956,
+                20,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 353109,
+              "Level": 9,
+              "Parameters": [
+                0.69362,
+                0.71416,
+                0.44398,
+                0.45346,
+                1.15814,
+                1.18184,
+                20,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 353110,
+              "Level": 10,
+              "Parameters": [
+                0.7463,
+                0.7684,
+                0.4777,
+                0.4879,
+                1.2461,
+                1.2716,
+                20,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 353111,
+              "Level": 11,
+              "Parameters": [
+                0.79898,
+                0.82264,
+                0.51142,
+                0.52234,
+                1.33406,
+                1.36136,
+                20,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 353112,
+              "Level": 12,
+              "Parameters": [
+                0.85166,
+                0.87688,
+                0.54514,
+                0.55678,
+                1.42202,
+                1.45112,
+                20,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 353113,
+              "Level": 13,
+              "Parameters": [
+                0.90434,
+                0.93112,
+                0.57886,
+                0.59122,
+                1.50998,
+                1.54088,
+                20,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 353114,
+              "Level": 14,
+              "Parameters": [
+                0.95702,
+                0.98536,
+                0.61258,
+                0.62566,
+                1.59794,
+                1.63064,
+                20,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 353115,
+              "Level": 15,
+              "Parameters": [
+                1.0097,
+                1.0396,
+                0.6463,
+                0.6601,
+                1.6859,
+                1.7204,
+                20,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10351,
+        "Name": "Ancient Sword Art",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_01"
+      },
+      {
+        "GroupId": 3532,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param8:P}",
+            "Regeneration on Hit|{param1:F2P} ATK+{param2:I}",
+            "Continuous Regeneration|{param3:F2P} ATK+{param4:I}",
+            "Herald of Frost DMG|{param5:F1P}",
+            "Duration|{param6:F1}s",
+            "CD|{param7:F1}s",
+            "Herald of Frost Coordinated Attack DMG|{param9:F1P}",
+            "Herald of Frost Coordinated Attack CD|{param10:F1}s",
+            "CD|{param11:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 353201,
+              "Level": 1,
+              "Parameters": [
+                0.1056,
+                67.40786,
+                0.696,
+                450.5507,
+                0.36,
+                15,
+                30,
+                0.96,
+                0.24,
+                2.2,
+                15
+              ]
+            },
+            {
+              "Id": 353202,
+              "Level": 2,
+              "Parameters": [
+                0.11352,
+                74.149574,
+                0.7482,
+                495.612,
+                0.387,
+                15,
+                30,
+                1.032,
+                0.258,
+                2.2,
+                15
+              ]
+            },
+            {
+              "Id": 353203,
+              "Level": 3,
+              "Parameters": [
+                0.12144,
+                81.45311,
+                0.8004,
+                544.42847,
+                0.414,
+                15,
+                30,
+                1.104,
+                0.276,
+                2.2,
+                15
+              ]
+            },
+            {
+              "Id": 353204,
+              "Level": 4,
+              "Parameters": [
+                0.132,
+                89.31845,
+                0.87,
+                597,
+                0.45,
+                15,
+                30,
+                1.2,
+                0.3,
+                2.2,
+                15
+              ]
+            },
+            {
+              "Id": 353205,
+              "Level": 5,
+              "Parameters": [
+                0.13992,
+                97.745605,
+                0.9222,
+                653.32666,
+                0.477,
+                15,
+                30,
+                1.272,
+                0.318,
+                2.2,
+                15
+              ]
+            },
+            {
+              "Id": 353206,
+              "Level": 6,
+              "Parameters": [
+                0.14784,
+                106.73457,
+                0.9744,
+                713.40845,
+                0.504,
+                15,
+                30,
+                1.344,
+                0.336,
+                2.2,
+                15
+              ]
+            },
+            {
+              "Id": 353207,
+              "Level": 7,
+              "Parameters": [
+                0.1584,
+                116.28535,
+                1.044,
+                777.2453,
+                0.54,
+                15,
+                30,
+                1.44,
+                0.36,
+                2.2,
+                15
+              ]
+            },
+            {
+              "Id": 353208,
+              "Level": 8,
+              "Parameters": [
+                0.16896,
+                126.39793,
+                1.1136,
+                844.83734,
+                0.576,
+                15,
+                30,
+                1.536,
+                0.384,
+                2.2,
+                15
+              ]
+            },
+            {
+              "Id": 353209,
+              "Level": 9,
+              "Parameters": [
+                0.17952,
+                137.07233,
+                1.1832,
+                916.18445,
+                0.612,
+                15,
+                30,
+                1.632,
+                0.408,
+                2.2,
+                15
+              ]
+            },
+            {
+              "Id": 353210,
+              "Level": 10,
+              "Parameters": [
+                0.19008,
+                148.30853,
+                1.2528,
+                991.2866,
+                0.648,
+                15,
+                30,
+                1.728,
+                0.432,
+                2.2,
+                15
+              ]
+            },
+            {
+              "Id": 353211,
+              "Level": 11,
+              "Parameters": [
+                0.20064,
+                160.10654,
+                1.3224,
+                1070.1439,
+                0.684,
+                15,
+                30,
+                1.824,
+                0.456,
+                2.2,
+                15
+              ]
+            },
+            {
+              "Id": 353212,
+              "Level": 12,
+              "Parameters": [
+                0.2112,
+                172.46637,
+                1.392,
+                1152.7563,
+                0.72,
+                15,
+                30,
+                1.92,
+                0.48,
+                2.2,
+                15
+              ]
+            },
+            {
+              "Id": 353213,
+              "Level": 13,
+              "Parameters": [
+                0.2244,
+                185.388,
+                1.479,
+                1239.1239,
+                0.765,
+                15,
+                30,
+                2.04,
+                0.51,
+                2.2,
+                15
+              ]
+            },
+            {
+              "Id": 353214,
+              "Level": 14,
+              "Parameters": [
+                0.2376,
+                198.87144,
+                1.566,
+                1329.2466,
+                0.81,
+                15,
+                30,
+                2.16,
+                0.54,
+                2.2,
+                15
+              ]
+            },
+            {
+              "Id": 353215,
+              "Level": 15,
+              "Parameters": [
+                0.2508,
+                212.9167,
+                1.653,
+                1423.1244,
+                0.855,
+                15,
+                30,
+                2.28,
+                0.57,
+                2.2,
+                15
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10352,
+        "Name": "Adeptus Art: Herald of Frost",
+        "Description": "Using the Icevein Talisman, Qiqi brings forth the Herald of Frost, dealing <color=#99FFFFFF>Cryo DMG</color> to surrounding opponents.\n\n<color=#FFD780FF>Herald of Frost</color>\n·On hit, Qiqi's Normal and Charged Attacks regenerate HP for your own party members and nearby teammates. Healing scales based on Qiqi's ATK.\n·Periodically regenerates your active character's HP.\n·Follows the character around, dealing <color=#99FFFFFF>Cryo DMG</color> to opponents in their path.\n\n<i>I use this to prevent warming and rot... of Dr. Bai's precious ingredients. Yes.</i>",
+        "Icon": "Skill_S_Qiqi_01"
+      }
+    ],
+    "SpecialSkills": [
+      {
+        "GroupId": 3551,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 355101,
+              "Level": 1,
+              "Parameters": [
+                15,
+                0.5
+              ]
+            }
+          ],
+          "Display": 3
+        },
+        "Id": 355101,
+        "Name": "Seven Sacred Treasures",
+        "Description": "The cooldown of the Elemental Skill <color=#FFD780FF>Adeptus Art: Herald of Frost</color> is reduced to 15s.\n<color=#FFD780FF>Radiance: Stellar-Conduct</color>: While the Herald of Frost is on the field, characters in Qiqi's party have their Superconduct and Stellar-Conduct Reaction DMG increased by 50%.\nAdditionally, when inside a {LINK#N11330003}<color=#FFD780FF>Polestar Field</color>{/LINK}, Qiqi will enter the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state.",
+        "Icon": "UI_Talent_S_Qiqi_08"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 3539,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param3:P}",
+          "Healing|{param1:P} ATK+{param2:I}",
+          "Duration|{param4:F1}s",
+          "CD|{param5:F1}s",
+          "Energy Cost|{param6:I}",
+          "Stellar-Conduct DMG|{param7:F1P}"
+        ],
+        "Parameters": [
+          {
+            "Id": 353901,
+            "Level": 1,
+            "Parameters": [
+              0.9,
+              577.3388,
+              2.848,
+              15,
+              20,
+              80,
+              2.973336
+            ]
+          },
+          {
+            "Id": 353902,
+            "Level": 2,
+            "Parameters": [
+              0.9675,
+              635.0807,
+              3.0616,
+              15,
+              20,
+              80,
+              3.196336
+            ]
+          },
+          {
+            "Id": 353903,
+            "Level": 3,
+            "Parameters": [
+              1.035,
+              697.63446,
+              3.2752,
+              15,
+              20,
+              80,
+              3.419336
+            ]
+          },
+          {
+            "Id": 353904,
+            "Level": 4,
+            "Parameters": [
+              1.125,
+              765,
+              3.56,
+              15,
+              20,
+              80,
+              3.71667
+            ]
+          },
+          {
+            "Id": 353905,
+            "Level": 5,
+            "Parameters": [
+              1.1925,
+              837.17737,
+              3.7736,
+              15,
+              20,
+              80,
+              3.93967
+            ]
+          },
+          {
+            "Id": 353906,
+            "Level": 6,
+            "Parameters": [
+              1.26,
+              914.16656,
+              3.9872,
+              15,
+              20,
+              80,
+              4.16267
+            ]
+          },
+          {
+            "Id": 353907,
+            "Level": 7,
+            "Parameters": [
+              1.35,
+              995.96765,
+              4.272,
+              15,
+              20,
+              80,
+              4.460004
+            ]
+          },
+          {
+            "Id": 353908,
+            "Level": 8,
+            "Parameters": [
+              1.44,
+              1082.5804,
+              4.5568,
+              15,
+              20,
+              80,
+              4.757338
+            ]
+          },
+          {
+            "Id": 353909,
+            "Level": 9,
+            "Parameters": [
+              1.53,
+              1174.0051,
+              4.8416,
+              15,
+              20,
+              80,
+              5.054671
+            ]
+          },
+          {
+            "Id": 353910,
+            "Level": 10,
+            "Parameters": [
+              1.62,
+              1270.2417,
+              5.1264,
+              15,
+              20,
+              80,
+              5.352005
+            ]
+          },
+          {
+            "Id": 353911,
+            "Level": 11,
+            "Parameters": [
+              1.71,
+              1371.29,
+              5.4112,
+              15,
+              20,
+              80,
+              5.649338
+            ]
+          },
+          {
+            "Id": 353912,
+            "Level": 12,
+            "Parameters": [
+              1.8,
+              1477.1501,
+              5.696,
+              15,
+              20,
+              80,
+              5.946672
+            ]
+          },
+          {
+            "Id": 353913,
+            "Level": 13,
+            "Parameters": [
+              1.9125,
+              1587.8221,
+              6.052,
+              15,
+              20,
+              80,
+              6.318339
+            ]
+          },
+          {
+            "Id": 353914,
+            "Level": 14,
+            "Parameters": [
+              2.025,
+              1703.3059,
+              6.408,
+              15,
+              20,
+              80,
+              6.690006
+            ]
+          },
+          {
+            "Id": 353915,
+            "Level": 15,
+            "Parameters": [
+              2.1375,
+              1823.6016,
+              6.764,
+              15,
+              20,
+              80,
+              7.061673
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10353,
+      "Name": "Adeptus Art: Preserver of Fortune",
+      "Description": "Qiqi releases the adeptus power sealed within her body, marking nearby opponents with a Fortune-Preserving Talisman that deals <color=#99FFFFFF>Cryo DMG</color>.\n\n<color=#FFD780FF>Fortune-Preserving Talisman</color>\nWhen opponents affected by this Talisman take DMG, the character that dealt this DMG regenerates HP.\n\n<i>\"I am the Fortune Preserver, the Maiden of Resurrection.\"</i>\n<i>— Qiqi does not remember these words.</i>",
+      "Icon": "Skill_E_Qiqi_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 3521,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 352101,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 352101,
+        "Name": "Life-Prolonging Methods",
+        "Description": "When a character under the effects of <color=#FFD780FF>Adeptus Art: Herald of Frost</color> triggers an Elemental Reaction, their Incoming Healing Bonus is increased by 20% for 8s.",
+        "Icon": "UI_Talent_S_Qiqi_05"
+      },
+      {
+        "GroupId": 3522,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 352201,
+              "Level": 1,
+              "Parameters": [
+                0.5,
+                15
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 352201,
+        "Name": "A Glimpse Into Arcanum",
+        "Description": "When Qiqi hits opponents with her Normal and Charged Attacks, she has a 50% chance to apply a Fortune-Preserving Talisman to them for 6s. This effect can only occur once every 30s.",
+        "Icon": "UI_Talent_S_Qiqi_06"
+      },
+      {
+        "GroupId": 3523,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 352301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 352301,
+        "Name": "Former Life Memories",
+        "Description": "Displays the location of nearby <color=#FFD780FF>resources unique to Liyue</color> on the mini-map.",
+        "Icon": "UI_Talent_Collect_Local_Liyue"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 351,
+        "Name": "Ascetics of Frost",
+        "Description": "When the Herald of Frost hits an opponent marked by a Fortune-Preserving Talisman, Qiqi regenerates 2 Energy.",
+        "Icon": "UI_Talent_S_Qiqi_01"
+      },
+      {
+        "Id": 352,
+        "Name": "Frozen to the Bone",
+        "Description": "Qiqi's Normal and Charged Attack DMG against opponents affected by <color=#99FFFFFF>Cryo</color> is increased by 15%.",
+        "Icon": "UI_Talent_S_Qiqi_02"
+      },
+      {
+        "Id": 353,
+        "Name": "Ascendant Praise",
+        "Description": "Increases the Level of <color=#FFD780FF>Adeptus Art: Preserver of Fortune</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Qiqi_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 354,
+        "Name": "Divine Suppression",
+        "Description": "Targets marked by the Fortune-Preserving Talisman have their ATK decreased by 20%.",
+        "Icon": "UI_Talent_S_Qiqi_03"
+      },
+      {
+        "Id": 355,
+        "Name": "Crimson Lotus Bloom",
+        "Description": "Increases the Level of <color=#FFD780FF>Adeptus Art: Herald of Frost</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Qiqi_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 356,
+        "Name": "Rite of Resurrection",
+        "Description": "Using <color=#FFD780FF>Adeptus Art: Preserver of Fortune</color> revives all fallen party members nearby and regenerates 50% of their HP.\nThis effect can only occur once every 15 mins.",
+        "Icon": "UI_Talent_S_Qiqi_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Icy Resurrection",
+    "Detail": "An apprentice and herb gatherer at Bubu Pharmacy. An undead with a bone-white complexion, she seldom has much in the way of words or emotion.",
+    "Association": 2,
+    "Native": "Bubu Pharmacy",
+    "BirthMonth": 3,
+    "BirthDay": 3,
+    "VisionBefore": "Cryo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Pristina Nola",
+    "CvChinese": "宴宁",
+    "CvJapanese": "田村ゆかり",
+    "CvEnglish": "Christie Cate",
+    "CvKorean": "Lee Seul",
+    "CookBonus": {
+      "OriginItemId": 108132,
+      "ItemId": 108140,
+      "InputList": [
+        100061,
+        100084,
+        100092,
+        100088
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "I am Qiqi. I am a zombie. And I... forgot what comes next."
+      },
+      {
+        "Title": "Chat: Talking to Herself",
+        "Context": "Hey, do you know what? Uhh... neither do I. I... already forgot."
+      },
+      {
+        "Title": "Chat: Afraid of Heat",
+        "Context": "Let's go somewhere cooler."
+      },
+      {
+        "Title": "Chat: Training",
+        "Context": "One, two, three, four. Two, two, three, four..."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "I forgot my umbrella again."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "I want to build a snowman. Will you help?"
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "I should have stayed indoors today."
+      },
+      {
+        "Title": "When It's Windy",
+        "Context": "The wind is... frigid. I like it."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "Hold my hand please. This wind could blow me away."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Morning means it's time to check my diary. Because my diary reminds me what I'm supposed to do in the morning."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "I just remembered something. I forgot to help Dr. Baizhu prepare medications."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Good evening. How was your day? My day was... fine, I think. But I can't remember."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "It's time for you to sleep now. I will do my stretches. ...Do not watch me, please."
+      },
+      {
+        "Title": "About Qiqi",
+        "Context": "Did you ask me something? Sorry... I forgot."
+      },
+      {
+        "Title": "About Us: Memory",
+        "Context": "I have a poor memory for most things. But as far as I know, that doesn't matter."
+      },
+      {
+        "Title": "About Us: Memory Training",
+        "Context": "I started memory training exercises recently. So don't worry, I won't forget who you are."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "My Vision can't turn back time. But at least it gives me the power to protect the people that matter most."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "I may be a corpse, but I am in a much better physical condition than Dr. Baizhu."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Sometimes I see finches near the pharmacy. A nice little group of finches."
+      },
+      {
+        "Title": "About Baizhu",
+        "Context": "I can never remember Dr. Baizhu's face. But I don't mind."
+      },
+      {
+        "Title": "About Hu Tao",
+        "Context": "Warm. Fake smile. Death. I despise Hu Tao."
+      },
+      {
+        "Title": "About Xiao: Name",
+        "Context": "Sounds like a historical artifact to me."
+      },
+      {
+        "Title": "About Xiao: Memory",
+        "Context": "Remind me, have I met him before?"
+      },
+      {
+        "Title": "About Xinyan",
+        "Context": "...Who?"
+      },
+      {
+        "Title": "About Yaoyao",
+        "Context": "Cute. Like a nice little finch."
+      },
+      {
+        "Title": "About Dusky Ming",
+        "Context": "On some nights, I almost feel like someone is doing stretches together with me. But maybe I just have an overactive imagination."
+      },
+      {
+        "Title": "About Prune",
+        "Context": "She looks tough on the outside... but her palms are nice and soft. I like her."
+      },
+      {
+        "Title": "More About Qiqi: I",
+        "Context": "What's going on?"
+      },
+      {
+        "Title": "More About Qiqi: II",
+        "Context": "I perform stretches regularly to help me maintain the same range of movement as a normal human being. But as soon as I stop doing them, the rigor mortis starts to set in again."
+      },
+      {
+        "Title": "More About Qiqi: III",
+        "Context": "Some people want to take advantage of me. Others are terrified of me. But you... You are not like any of those people."
+      },
+      {
+        "Title": "More About Qiqi: IV",
+        "Context": "Since we first met, I have had a warm feeling inside. Not the kind of warmth that makes me feel rotten. The other kind of warm. The one that happens inside my heart. Thank you. I am happy. Sadly I only recognize the current you. If I forget you... No. I will order myself to remember you."
+      },
+      {
+        "Title": "More About Qiqi: V",
+        "Context": "In the past, my only thought was: I must stay alive. Even though I didn't know what to live for. But now, I think I know. I want to live with you. I want to ask, can we always stay together, for the rest of life, until death? Yes or no? Yes? Is that your real answer? Good, excellent. I promise to always protect you."
+      },
+      {
+        "Title": "Qiqi's Hobbies",
+        "Context": "I want to have a pet. For example, a nice little finch."
+      },
+      {
+        "Title": "Qiqi's Troubles",
+        "Context": "I don't know why, but high temperatures make me feel... disgusting."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "I like coconut milk... But, I don't know what it tastes like."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Sorry, I have no idea."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Cold. I like it. But, no flavor..."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Huh..."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "It's burning my tongue..."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Many happy returns. Here is a bag of herbal medicine for you. You must be very surprised that I remembered? Let me explain. Last time you told me, I wrote your birthday down on a piece of paper. If I look at something once a day, it eventually goes into my long-term memory, and it will stay there forever."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Now, I have more power. But... what does that mean? Please explain. Thank you."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Ah, I understand. When I get stronger, I need to put more effort into controlling my strength."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "In the past, I did not understand the idea of being stronger than I already was. Now that I understand it well, I wish I was just a little stronger still."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "All of this is because of you. Thank you very much. Can you make me a promise? From now on, please, let me protect you. Do you accept? Yes or no?"
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Wheel of life."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Life goes on."
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Go."
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Rise."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Orders given. Orders received."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Sacred name: Fortune Preserver."
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Opening box of Adepti tricks."
+      },
+      {
+        "Title": "Sprint Start: I",
+        "Context": "Faster? Okay, faster."
+      },
+      {
+        "Title": "Deploying Wind Glider: I",
+        "Context": "Uh... Huh..."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Ooh, pretty."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Treasure chests... hmm... do we like treasure chests?"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Wasn't there something in here a second ago...?"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Ow."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Oh no..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "I must live on..."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Danger."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Stop. Let me do it."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Don't want... to be sealed... back up..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Cold... So cold..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "No..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "I didn't feel that."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Wow."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Oh..."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "I'm here."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "What's happening?"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "I will... bring my notebook."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Due to being a zombie, Qiqi lacks facial expression. She hopes that's okay.\nShe may look like a zombie, but she's surprisingly limber due to a strict calisthenics regimen.\nHer memory is poor. She forgets easily, and that is partly why she can seem cold to others.\nHer appearance is forever frozen at the point of her passing, so estimates of her age are unreliable.\nZombies require orders to act, but due to some reason or another, Qiqi is presently giving herself orders."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Usually, zombies are cold and stiff, which forces them to locomote by hopping about.\nAs such, Qiqi keeps up a calisthenics regimen to retain a human-like form.\nThe 77th-generation Director of the Wangsheng Funeral Parlor, Hu Tao, doesn't see the point of all this. Whenever she meets Qiqi, she will say: \"It would be easier if you just let me bury you.\"\nQiqi, of course, has no wish to be buried, and so conducts her exercises at night when no one's about.\nQiqi's memory falls far behind those of non-undead disposition.\nIf she does not continue to reinforce her impressions of someone, she will completely forget them in three days tops.\nBut who knows, this might be a good thing — for a person with painful memories, forgetting may, in fact, be a form of release.\nThe person Qiqi must remember most... not only does this person have a very punch-able face, but she also shows up every single day.\nAs such, Qiqi isn't too concerned about her poor memory."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Qiqi is very petite indeed, but is in fact a very powerful zombie. Her short stature is hardly any impediment, but is instead good for high-speed movement.\nIn combat, Qiqi will unleash the self-control that she usually maintains, allowing her body to return to an undead state, increasing her strength and speed.\n\"You're dead.\"\nOnce she has stoically defeated her enemies, Qiqi will once again get her muscles under control, returning to her normal state.\nShe has been threatened in the past by Treasure Hoarders while picking herbs by herself.\nNow, a little girl, all by herself, seems like an easy target, no?\nWho would have thought that this girl could send a whole crew flying?\nThis is why we should always remember never to judge a person based on appearances. Or a zombie, for that matter."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Zombies mostly require orders from the person who awakens them to move. But strictly speaking, Qiqi has never been awakened.\nAs such, she counts as a very rare case of a zombie that gives itself orders.\nIf these orders are simple ones like \"defeat the enemy,\" Qiqi has no problem fulfilling them.\nBut when faced with complex instructions such as \"go to Jueyun Karst, climb the sheer rock faces and pick herbs,\" Qiqi sometimes winds up stuck below the cliffs, unable to give up no matter how many times she tries and fails to scale the cliff.\nThe method to cancel her orders is very simple — hug Qiqi from behind, tell her something like \"I love you the most,\" and the orders will dissipate, just like that.\nUnfortunately, there's just no element of sincerity when Baizhu does it, leading to greatly reduced results.\nPerhaps someday, someone will come along who understands that such words cannot be spoken lightly, and who slowly but carefully releases the hold that Qiqi's orders have over her...\nWhat will Qiqi's response be then?"
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "This ancient story has long been forgotten by mortals.\nAn ordinary herb-picking lass named Qiqi lost her way and trespassed the realm of the adepti. Injuring her right leg in a fall, she hurriedly hid in a cavern to rest.\nEven occupied as she was in bandaging her wound, she could hear sounds that did not belong to the mortal plane. But she could have never expected that with a huge crash, she would forever be trapped between life and death.\nWhether adepti or demons, just or wicked, all understood that she was an innocent mortal caught in the crossfire.\nOr perhaps it was by the will of heaven that she received a Vision in her dying moments, and so ended this contention between adepti and demon.\nThe adepti could not bear to let her die, and each imparted to her a portion of their strength, meaning to breathe life back into her body.\nQiqi did indeed awaken and live again, but went into a berserk state, unable to control the adepti energy raging through her.\nSeeking to end the disturbance, Mountain Shaper had no choice but to seal the hapless maiden in amber."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "After hundreds of years, Qiqi was discovered by humans, still trapped in the amber, and was brought to Wangsheng Funeral Parlor for burial.\nThe mountain roads were treacherous, however, and the amber was bumped about. Coupled with the passing of many years, the seal on Qiqi was all but spent.\nShe awakened in the middle of the night, broke the amber in secret, and fled.\nFollowing the herb-picking habits of her previous life, Qiqi headed right for the hills.\nBy chance, she met Baizhu, the boss of Bubu Pharmacy, on the way, and he took her in.\nNow, Baizhu was a doctor of great skill, but he was hardly a man of high caliber or great courage.\nEven so, he took her in, never mind that her memory was so poor that she could not even sort herbs out.\nIt does seem that his acceptance of Qiqi has something to do with his own personal pursuits.\nQiqi is stiff, but not slow, and has long realized this. However, she does not take it to heart.\nPerhaps she has seen too much, or been alone for too long... But what remains true is that she treasures his concern, even if there is some other motive behind it."
+      },
+      {
+        "Title": "A Home-and-Away Handbook of Practical Wisdom for the Undead",
+        "Context": "Qiqi carries something with her that looks like a notebook.\nQiqi's memory is very poor, so it is an object of irreplaceable importance if she is to smoothly go about her daily life.\nThe words within are written in a centuries-old style, and are very elegant indeed.\nThe first page is an instructional on calisthenics.\nMoving past that, one finds the descriptions of various herbs and some \"orders.\"\nQiqi needs to give herself orders, so she has very precise instructions to ensure smooth transition.\nShe has also dutifully written down all the things she needs to do in a day.\nRecently, she has also added a section on \"brain training\" and \"mnemonic methods.\"\nAt this point, it has become a true \"dummy's guide\" on just about anything.\nBut if the day ever comes when Qiqi also forgets to look at her notebook... there would truly be nothing for it then."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Qiqi's Vision was given to her in the last moment of her life.\nShe wanted to stop the clock from turning. She wanted to live happily again.\nShe feared death. She wanted to live. She missed her family... These feelings coalesced at last into \"ice.\"\n\"If only I could freeze time... How wonderful would that be?\"\nAs she thought thus, tears fell from the moribund girl's eyes upon the Vision that had appeared before her.\nThe mighty and illuminated adepti all acknowledged this as a legitimate form of \"illumination\" — the yearning of humanity for bygone days is, after all, a desire to protect that past."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 203500,
+      "Name": "Summerchill Dreams",
+      "Description": "Qiqi's outfit. A herb gatherer's garment that brings her great peace of mind due to the attached talismans.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104164,
+    113010,
+    100034,
+    112010,
+    104312,
+    113006
+  ],
+  "NameCard": {
+    "Name": "Qiqi: Cold Storage",
+    "Description": "Namecard style.\nWhat should be kept in the fridge? Dr. Baizhu's herbs, coconut milk... and Hu Tao.",
+    "Icon": "UI_NameCardIcon_Qiqi",
+    "PicturePrefix": "UI_NameCardPic_Qiqi"
+  },
+  "TraceEffect": {
+    "Id": 215002,
+    "Name": "Echo: Icy Resurrection",
+    "Description": "Qiqi's Envisaged Echo. The Heralds of Frost often come to visit and do calisthenic exercises together with her.",
+    "Icon": "UI_TraceEffectIcon_Qiqi"
+  }
+}

@@ -1,0 +1,1243 @@
+{
+  "Id": 10000103,
+  "PromoteId": 103,
+  "Sort": 88,
+  "Body": 3,
+  "Icon": "UI_AvatarIcon_Xilonen",
+  "SideIcon": "UI_AvatarIcon_Side_Xilonen",
+  "Name": "Xilonen",
+  "Description": "A Name Engraver of the Nanatzcayan, she is especially skilled at finding a good balance between the heavy responsibilities of her job and living well.",
+  "BeginTime": "2024-10-08T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 1,
+  "BaseValue": {
+    "HpBase": 965.71313,
+    "AttackBase": 21.413,
+    "DefenseBase": 72.3943
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 10331,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}+{param3:F1P}",
+            "3-Hit DMG|{param4:F1P}",
+            "Charged Attack DMG|{param5:F1P}",
+            "Charged Attack Stamina Cost|{param6:F1}",
+            "Plunge DMG|{param7:F1P} DEF",
+            "Low/High Plunge DMG|{param8:F1P} DEF/{param9:F1P} DEF",
+            "Blade Roller 1-Hit DMG|{param10:F1P} DEF",
+            "Blade Roller 2-Hit DMG|{param11:F1P} DEF",
+            "Blade Roller 3-Hit DMG|{param12:F1P} DEF",
+            "Blade Roller 4-Hit DMG|{param13:F1P} DEF"
+          ],
+          "Parameters": [
+            {
+              "Id": 1033101,
+              "Level": 1,
+              "Parameters": [
+                0.517918,
+                0.273738,
+                0.273738,
+                0.729495,
+                0.91332,
+                20,
+                0.639324,
+                1.278377,
+                1.596762,
+                0.560221,
+                0.550477,
+                0.658158,
+                0.860275
+              ]
+            },
+            {
+              "Id": 1033102,
+              "Level": 2,
+              "Parameters": [
+                0.560074,
+                0.296019,
+                0.296019,
+                0.788872,
+                0.98766,
+                20,
+                0.691362,
+                1.382431,
+                1.726731,
+                0.605821,
+                0.595284,
+                0.711729,
+                0.930298
+              ]
+            },
+            {
+              "Id": 1033103,
+              "Level": 3,
+              "Parameters": [
+                0.60223,
+                0.3183,
+                0.3183,
+                0.84825,
+                1.062,
+                20,
+                0.7434,
+                1.486485,
+                1.8567,
+                0.65142,
+                0.64009,
+                0.7653,
+                1.00032
+              ]
+            },
+            {
+              "Id": 1033104,
+              "Level": 4,
+              "Parameters": [
+                0.662453,
+                0.35013,
+                0.35013,
+                0.933075,
+                1.1682,
+                20,
+                0.81774,
+                1.635134,
+                2.04237,
+                0.716562,
+                0.704099,
+                0.84183,
+                1.100352
+              ]
+            },
+            {
+              "Id": 1033105,
+              "Level": 5,
+              "Parameters": [
+                0.704609,
+                0.372411,
+                0.372411,
+                0.992452,
+                1.24254,
+                20,
+                0.869778,
+                1.739187,
+                2.172339,
+                0.762161,
+                0.748905,
+                0.895401,
+                1.170374
+              ]
+            },
+            {
+              "Id": 1033106,
+              "Level": 6,
+              "Parameters": [
+                0.752788,
+                0.397875,
+                0.397875,
+                1.060312,
+                1.3275,
+                20,
+                0.92925,
+                1.858106,
+                2.320875,
+                0.814275,
+                0.800113,
+                0.956625,
+                1.2504
+              ]
+            },
+            {
+              "Id": 1033107,
+              "Level": 7,
+              "Parameters": [
+                0.819033,
+                0.432888,
+                0.432888,
+                1.15362,
+                1.44432,
+                20,
+                1.011024,
+                2.02162,
+                2.525112,
+                0.885931,
+                0.870522,
+                1.040808,
+                1.360435
+              ]
+            },
+            {
+              "Id": 1033108,
+              "Level": 8,
+              "Parameters": [
+                0.885278,
+                0.467901,
+                0.467901,
+                1.246927,
+                1.56114,
+                20,
+                1.092798,
+                2.185133,
+                2.729349,
+                0.957587,
+                0.940932,
+                1.124991,
+                1.47047
+              ]
+            },
+            {
+              "Id": 1033109,
+              "Level": 9,
+              "Parameters": [
+                0.951523,
+                0.502914,
+                0.502914,
+                1.340235,
+                1.67796,
+                20,
+                1.174572,
+                2.348646,
+                2.933586,
+                1.029244,
+                1.011342,
+                1.209174,
+                1.580506
+              ]
+            },
+            {
+              "Id": 1033110,
+              "Level": 10,
+              "Parameters": [
+                1.023791,
+                0.54111,
+                0.54111,
+                1.442025,
+                1.8054,
+                20,
+                1.26378,
+                2.527025,
+                3.15639,
+                1.107414,
+                1.088153,
+                1.30101,
+                1.700544
+              ]
+            },
+            {
+              "Id": 1033111,
+              "Level": 11,
+              "Parameters": [
+                1.096059,
+                0.579306,
+                0.579306,
+                1.543815,
+                1.93284,
+                20,
+                1.352988,
+                2.705403,
+                3.379194,
+                1.185584,
+                1.164964,
+                1.392846,
+                1.820582
+              ]
+            },
+            {
+              "Id": 1033112,
+              "Level": 12,
+              "Parameters": [
+                1.168326,
+                0.617502,
+                0.617502,
+                1.645605,
+                2.06028,
+                20,
+                1.442196,
+                2.883781,
+                3.601998,
+                1.263755,
+                1.241775,
+                1.484682,
+                1.940621
+              ]
+            },
+            {
+              "Id": 1033113,
+              "Level": 13,
+              "Parameters": [
+                1.240594,
+                0.655698,
+                0.655698,
+                1.747395,
+                2.18772,
+                20,
+                1.531404,
+                3.062159,
+                3.824802,
+                1.341925,
+                1.318585,
+                1.576518,
+                2.060659
+              ]
+            },
+            {
+              "Id": 1033114,
+              "Level": 14,
+              "Parameters": [
+                1.312861,
+                0.693894,
+                0.693894,
+                1.849185,
+                2.31516,
+                20,
+                1.620612,
+                3.240537,
+                4.047606,
+                1.420096,
+                1.395396,
+                1.668354,
+                2.180698
+              ]
+            },
+            {
+              "Id": 1033115,
+              "Level": 15,
+              "Parameters": [
+                1.385129,
+                0.73209,
+                0.73209,
+                1.950975,
+                2.4426,
+                20,
+                1.70982,
+                3.418915,
+                4.27041,
+                1.498266,
+                1.472207,
+                1.76019,
+                2.300736
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11031,
+        "Name": "Ehecatl's Roar",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a fixed amount of Stamina and performs a forward kick.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact, both based on Xilonen's DEF.\n\n<color=#FFD780FF>Nightsoul's Blessing: Blade Roller</color>\nWhen in the Nightsoul's Blessing state, Xilonen will enter the Blade Roller mode. While in this mode, Xilonen's Normal Attacks will allow her to perform up to 4 kicks using her roller blades, and she will be unable to use Charged Attacks.\nWhen her Normal and Plunging Attacks are used in this mode, they will switch to being based on her DEF, and Xilonen will deal Nightsoul-aligned <color=#FFE699FF>Geo DMG</color> that cannot be overridden.",
+        "Icon": "Skill_A_01"
+      },
+      {
+        "GroupId": 10332,
+        "Proud": {
+          "Descriptions": [
+            "Rush DMG|{param1:F1P} DEF",
+            "Elemental RES Decrease|{param2:F1P}",
+            "Source Sample Activation Duration|{param3:F1}s",
+            "Nightsoul Point Time Limit|{param4:F1}s",
+            "Nightsoul Point Limit|{param5:F1}",
+            "CD|{param6:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1033201,
+              "Level": 1,
+              "Parameters": [
+                1.792,
+                0.09,
+                15,
+                9,
+                90,
+                7
+              ]
+            },
+            {
+              "Id": 1033202,
+              "Level": 2,
+              "Parameters": [
+                1.9264,
+                0.12,
+                15,
+                9,
+                90,
+                7
+              ]
+            },
+            {
+              "Id": 1033203,
+              "Level": 3,
+              "Parameters": [
+                2.0608,
+                0.15,
+                15,
+                9,
+                90,
+                7
+              ]
+            },
+            {
+              "Id": 1033204,
+              "Level": 4,
+              "Parameters": [
+                2.24,
+                0.18,
+                15,
+                9,
+                90,
+                7
+              ]
+            },
+            {
+              "Id": 1033205,
+              "Level": 5,
+              "Parameters": [
+                2.3744,
+                0.21,
+                15,
+                9,
+                90,
+                7
+              ]
+            },
+            {
+              "Id": 1033206,
+              "Level": 6,
+              "Parameters": [
+                2.5088,
+                0.24,
+                15,
+                9,
+                90,
+                7
+              ]
+            },
+            {
+              "Id": 1033207,
+              "Level": 7,
+              "Parameters": [
+                2.688,
+                0.27,
+                15,
+                9,
+                90,
+                7
+              ]
+            },
+            {
+              "Id": 1033208,
+              "Level": 8,
+              "Parameters": [
+                2.8672,
+                0.3,
+                15,
+                9,
+                90,
+                7
+              ]
+            },
+            {
+              "Id": 1033209,
+              "Level": 9,
+              "Parameters": [
+                3.0464,
+                0.33,
+                15,
+                9,
+                90,
+                7
+              ]
+            },
+            {
+              "Id": 1033210,
+              "Level": 10,
+              "Parameters": [
+                3.2256,
+                0.36,
+                15,
+                9,
+                90,
+                7
+              ]
+            },
+            {
+              "Id": 1033211,
+              "Level": 11,
+              "Parameters": [
+                3.4048,
+                0.39,
+                15,
+                9,
+                90,
+                7
+              ]
+            },
+            {
+              "Id": 1033212,
+              "Level": 12,
+              "Parameters": [
+                3.584,
+                0.42,
+                15,
+                9,
+                90,
+                7
+              ]
+            },
+            {
+              "Id": 1033213,
+              "Level": 13,
+              "Parameters": [
+                3.808,
+                0.45,
+                15,
+                9,
+                90,
+                7
+              ]
+            },
+            {
+              "Id": 1033214,
+              "Level": 14,
+              "Parameters": [
+                4.032,
+                0.48,
+                15,
+                9,
+                90,
+                7
+              ]
+            },
+            {
+              "Id": 1033215,
+              "Level": 15,
+              "Parameters": [
+                4.256,
+                0.51,
+                15,
+                9,
+                90,
+                7
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11032,
+        "Name": "Yohual's Scratch",
+        "Description": "Let the rhythms of passion resound throughout the land! Xilonen switches to high-speed combat blading gear and rushes forward a certain distance before dealing Nightsoul-aligned <color=#FFE699FF>Geo DMG</color> based on her DEF.\nAfter using this, Xilonen will gain 45 Nightsoul points and enter the Nightsoul's Blessing state. In this state, she will shift to the Blade Roller mode.\n\n<color=#FFD780FF>Source Samples</color>\nXilonen has 3 Samplers with her that can generate different Soundscapes based on her other party members' Elemental Types, decreasing nearby opponents' corresponding Elemental RES while active.\nThe initial recorded Source Sample within each Sampler will be <color=#FFE699FF>Geo</color>, and for each party member who is <color=#FF9999FF>Pyro</color>/<color=#80C0FFFF>Hydro</color>/<color=#99FFFFFF>Cryo</color>/<color=#FFACFFFF>Electro</color>, 1 <color=#FFE699FF>Geo</color> Sample will change to that corresponding Element.\nWhile Xilonen is in the Nightsoul's Blessing state, the <color=#FFE699FF>Geo</color> Source Sample she carries will always be active. After unlocking her Ascension Talent, \"Netotiliztli's Echoes,\" Xilonen can trigger said Ascension Talent's effects to regenerate Nightsoul points for herself. When her Nightsoul points hit the maximum, she will consume all her Nightsoul points and activate the 3 Source Samples she has on hand for 15s.\nWhen the Source Samples are active, nearby opponents' corresponding Elemental RES will decrease. Source Sample effects of the same Elemental Type cannot stack. Xilonen can trigger these effects even when off-field.\n\n<color=#FFD780FF>Nightsoul's Blessing: Xilonen</color>\nContinuously consume Nightsoul points. When these points are depleted or if used again, this Nightsoul's Blessing state will end. This state has the following traits:\n·Switches to the Blade Roller mode, increasing Xilonen's Movement SPD and climbing speed, and she can perform high-speed leaps in Ocelot Form while climbing.\n·Xilonen's Nightsoul's Blessing has the following restrictions: When in this state, Xilonen's Nightsoul points have a 9s time limit. After this limit passes, her Nightsoul points will immediately expire.\n\nAfter Xilonen's Nightsoul points have expired while she is in the Nightsoul's Blessing state, she will no longer be able to generate Nightsoul points via the Ascension Talent \"Netotiliztli's Echoes.\"\n\n<i>In some ways, gem-craft and music-mixing share similar principles: Filtering out impurities and retaining only the most radiant things.\nXilonen isn't picky about the two, however. She enjoys both immensely, after all!</i>",
+        "Icon": "Skill_S_Xilonen_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 10339,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:F1P} DEF",
+          "Continuous Healing|{param2:F1P} DEF+{param3:I}",
+          "Ebullient Rhythm Duration|{param4:F1}s",
+          "Follow-Up Beat DMG|{param5:F1P} DEF",
+          "CD|{param6:F1}s",
+          "Energy Cost|{param7:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1033901,
+            "Level": 1,
+            "Parameters": [
+              2.8128,
+              1.04,
+              500.73764,
+              12,
+              2.8128,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1033902,
+            "Level": 2,
+            "Parameters": [
+              3.02376,
+              1.118,
+              550.81836,
+              12,
+              3.02376,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1033903,
+            "Level": 3,
+            "Parameters": [
+              3.23472,
+              1.196,
+              605.0725,
+              12,
+              3.23472,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1033904,
+            "Level": 4,
+            "Parameters": [
+              3.516,
+              1.3,
+              663.5,
+              12,
+              3.516,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1033905,
+            "Level": 5,
+            "Parameters": [
+              3.72696,
+              1.378,
+              726.1009,
+              12,
+              3.72696,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1033906,
+            "Level": 6,
+            "Parameters": [
+              3.93792,
+              1.456,
+              792.8752,
+              12,
+              3.93792,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1033907,
+            "Level": 7,
+            "Parameters": [
+              4.2192,
+              1.56,
+              863.8229,
+              12,
+              4.2192,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1033908,
+            "Level": 8,
+            "Parameters": [
+              4.50048,
+              1.664,
+              938.944,
+              12,
+              4.50048,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1033909,
+            "Level": 9,
+            "Parameters": [
+              4.78176,
+              1.768,
+              1018.23846,
+              12,
+              4.78176,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1033910,
+            "Level": 10,
+            "Parameters": [
+              5.06304,
+              1.872,
+              1101.7063,
+              12,
+              5.06304,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1033911,
+            "Level": 11,
+            "Parameters": [
+              5.34432,
+              1.976,
+              1189.3477,
+              12,
+              5.34432,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1033912,
+            "Level": 12,
+            "Parameters": [
+              5.6256,
+              2.08,
+              1281.1622,
+              12,
+              5.6256,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1033913,
+            "Level": 13,
+            "Parameters": [
+              5.9772,
+              2.21,
+              1377.1503,
+              12,
+              5.9772,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1033914,
+            "Level": 14,
+            "Parameters": [
+              6.3288,
+              2.34,
+              1477.3118,
+              12,
+              6.3288,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1033915,
+            "Level": 15,
+            "Parameters": [
+              6.6804,
+              2.47,
+              1581.6466,
+              12,
+              6.6804,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11035,
+      "Name": "Ocelotlicue Point!",
+      "Description": "Activates the Phlogiston Stereo DJ Controller (Portable) at full power, dealing Nightsoul-aligned <color=#FFE699FF>AoE Geo DMG</color> based on Xilonen's DEF.\n\nAdditionally, she will trigger the following effects based on her different Source Samples:\n·If she has at least 2 Source Samples that have had their Elemental Types changed, Xilonen will play an Ebullient rhythm, healing nearby active characters at intervals based on her DEF.\n·If she has fewer than 2 Source Samples that have had their Elemental Types changed, Xilonen will start up an Ardent rhythm, which will play two additional beats that deal Nightsoul-aligned <color=#FFE699FF>AoE Geo DMG</color> based on her DEF.\n\n<i>\"Alright, time for a time-out!\"\n\"It's cool, I recorded those beats just now. Let's see what we get when we mix our rhythms!\"</i>",
+      "Icon": "Skill_E_Xilonen_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 10321,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1032101,
+              "Level": 1,
+              "Parameters": [
+                35,
+                0.3
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1032101,
+        "Name": "Netotiliztli's Echoes",
+        "Description": "While in the Nightsoul's Blessing state:\n·If Xilonen has at least 2 Source Samples that have had their Elemental Types changed, she gains 35 Nightsoul points when her Normal or Plunging Attacks hit opponents. Can be triggered once every 0.1s.\n·If Xilonen has fewer than 2 Source Samples that have had their Elemental Types changed, her Normal and Plunging Attacks deal 30% increased DMG.",
+        "Icon": "UI_Talent_S_Xilonen_05"
+      },
+      {
+        "GroupId": 10322,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1032201,
+              "Level": 1,
+              "Parameters": [
+                14,
+                0.2,
+                15
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1032201,
+        "Name": "Portable Armored Sheath",
+        "Description": "While in the Nightsoul's Blessing state, when Xilonen's Nightsoul points reach the maximum, she will trigger an effect equal to that of her Nightsoul Burst. This effect can be triggered once every 14s.\nAdditionally, when nearby party members trigger a Nightsoul Burst, Xilonen's DEF is increased by 20% for 15s.",
+        "Icon": "UI_Talent_S_Xilonen_06"
+      },
+      {
+        "GroupId": 10323,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1032301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1032301,
+        "Name": "Night Realm's Gift: Blessing of Forge-Fire",
+        "Description": "After her Nightsoul points are fully depleted, Xilonen will switch to consuming Phlogiston to maintain her Nightsoul's Blessing.\nWhile in an area with Phlogiston Mechanics within Natlan, she can use Nightsoul Transmission: Xilonen. When the active character is currently sprinting, climbing, in a movement mode caused by certain Talents, or at a certain height in the air, the following will trigger when switching to Xilonen: Xilonen will enter the Nightsoul's Blessing state and gain 20 Nightsoul points. In this situation, Xilonen's Nightsoul points have a 4s time limit, after which her Nightsoul points will immediately expire. After she uses <color=#FFD780FF>Yohual's Scratch</color> within this time limit, her Nightsoul point time limit will be extended by 9s. Nightsoul Transmission can be triggered once every 10s by your own team.\n\nAdditionally, while in Natlan, Xilonen will not consume Stamina when climbing while in the Nightsoul's Blessing state.",
+        "Icon": "UI_Talent_S_Xilonen_07"
+      },
+      {
+        "GroupId": 10325,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1032501,
+              "Level": 1,
+              "Parameters": [
+                0,
+                0,
+                15
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1032501,
+        "Name": "Tour of Tepeilhuitl",
+        "Description": "Triggering Nightsoul Transmission restores 15 Phlogiston.",
+        "Icon": "UI_Talent_S_Xilonen_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1031,
+        "Name": "Sabbatical Phrase",
+        "Description": "Xilonen's Nightsoul point and Phlogiston consumption in her Nightsoul's Blessing state is decreased by 30%, and her Nightsoul point time limit is extended by 45%.\nAdditionally, when Xilonen's Source Samples are active, she can also increase nearby active characters' interruption resistance.",
+        "Icon": "UI_Talent_S_Xilonen_01"
+      },
+      {
+        "Id": 1032,
+        "Name": "Chiucue Mix",
+        "Description": "Xilonen's <color=#FFE699FF>Geo</color> Source Samples will always remain active. Additionally, when her Source Samples activate, all nearby party members will gain effects corresponding to the active Source Sample that matches their Elemental Type:\n·<color=#FFE699FF>Geo</color>: DMG dealt +50%.\n·<color=#FF9999FF>Pyro</color>: ATK +45%.\n·<color=#80C0FFFF>Hydro</color>: Max HP +45%.\n·<color=#99FFFFFF>Cryo</color>: CRIT DMG +60%.\n·<color=#FFACFFFF>Electro</color>: Restore 25 Energy, decrease Elemental Burst CD by 6s.",
+        "Icon": "UI_Talent_S_Xilonen_02"
+      },
+      {
+        "Id": 1033,
+        "Name": "Tonalpohualli's Loop",
+        "Description": "Increases the Level of <color=#FFD780FF>Yohual's Scratch</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Xilonen_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1034,
+        "Name": "Suchitl's Trance",
+        "Description": "After Xilonen uses <color=#FFD780FF>Yohual's Scratch</color>, she will grant all nearby party members the Blooming Blessing effect for 15s.\nCharacters with Blooming Blessing deal 65% of Xilonen's DEF as increased Normal, Charged, and Plunging Attack DMG. This effect will be removed after triggering 6 times or when the duration ends.\nWhen you hit more than one opponent, trigger counts will be consumed based on the number of opponents hit. The counts for each party member with Blooming Blessing are counted independently.",
+        "Icon": "UI_Talent_S_Xilonen_03"
+      },
+      {
+        "Id": 1035,
+        "Name": "Tlaltecuhtli's Crossfade",
+        "Description": "Increases the Level of <color=#FFD780FF>Ocelotlicue Point!</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Xilonen_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1036,
+        "Name": "Imperishable Night Carnival",
+        "Description": "When Xilonen is in the Nightsoul's Blessing state, when she sprints, leaps, or uses Normal or Plunging Attacks, she will gain Imperishable Night's Blessing, ignoring the limitations of her Nightsoul's Blessing state and increasing the DMG dealt by her Normal and Plunging Attacks for 5s.\nDuring this time:\n·Her Nightsoul's Blessing time limit countdown will be paused. Xilonen's Nightsoul points, Phlogiston, and Stamina will not decrease, and when her Nightsoul points reach the maximum, her Nightsoul's Blessing state will not end either.\n·Xilonen deals 300% of her DEF as increased Normal and Plunging Attack DMG while in the Nightsoul's Blessing state.\n·She heals nearby party members for 120% of her DEF every 1.5s.\nShe can gain 1 Imperishable Night's Blessing once every 15s.",
+        "Icon": "UI_Talent_S_Xilonen_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Ardent Flames Forge the Soul",
+    "Detail": "A Name Engraver of the Nanatzcayan, she is especially skilled at finding a good balance between the heavy responsibilities of her job and living well.",
+    "Association": 9,
+    "Native": "Nanatzcayan",
+    "BirthMonth": 3,
+    "BirthDay": 13,
+    "VisionBefore": "Geo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Panthera Ocelota",
+    "CvChinese": "弭洋",
+    "CvJapanese": "ファイルーズあい",
+    "CvEnglish": "Elizabeth Dean",
+    "CvKorean": "Kim I-an",
+    "CookBonus": {
+      "OriginItemId": 108725,
+      "ItemId": 108760,
+      "InputList": [
+        101246,
+        100078,
+        110006
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Hello, I'm Xilonen from the Children of Echoes. If you'd like me to forge some tools for you, just let me know. But I do have a quite the backlog of commissions at the moment, so even if you submit a request now, it might be a while before I get to it."
+      },
+      {
+        "Title": "Chat: Potted Plant",
+        "Context": "*sigh* My potted plant on the porch has died again. I was watering it every day... Don't tell me I overdid it this time?"
+      },
+      {
+        "Title": "Chat: Break Time",
+        "Context": "We should take a break after all that running around... Yeah, let's rest here for a bit."
+      },
+      {
+        "Title": "Chat: Forge Work",
+        "Context": "...How many forging commissions do I still have to finish? Let's see, one, two... Hmm, not so many as I thought. I'll get to them tomorrow."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Perfect weather for a nap in the workshop..."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Achoo! ...Ah, I'm awake now."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "*yawn* Time for a nap... Ooh wow, where did my sunglasses go...?"
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "The temperature's just right... Ah, but this isn't the best spot to lie down..."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Good morning. Did you get some good sleep? Here, drink this. Starting your day with something sweet will boost your mood for the whole day."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "It's afternoon now, which means... *yawn* time for a break. I'll go have a nap, just wake me up if you need anything..."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Wow, just look at the time... Yeah, let's call it a day. Let's go get some good food together to celebrate a great day of work."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Good night. Remember to fluff your pillow, otherwise, your neck will hurt in the morning."
+      },
+      {
+        "Title": "About Xilonen: Work-Life Balance",
+        "Context": "No matter how busy work might get, you must set aside some time to rest. If you don't stop working, your mind and body will go on strike... And once that happens, your ability to perform good work will just go down the drain.\nHmm? You can't find any time for a break? Well then, just say that I suddenly needed to see you for something important, and come over to my workshop to take a small nap. I'll help cover for you."
+      },
+      {
+        "Title": "About Xilonen: Sluggishness",
+        "Context": "Some of my friends have told me that I can be slow at times, and that I rarely seem to get emotional. For example, one time, I was at a friend's house for a party, and we started talking about the topic of marriage. A friend asked if we would cry when she got married, and before I knew it, everyone started crying, and they were all sobbing and saying that they didn't want to lose her as a friend...\nWell, I didn't get what everyone was crying about. I mean, isn't getting married a happy thing? You know, she's just getting married, not going away. We could still go visit her.\nOh? What if she was sad and getting married against her wishes? Oh yeah, I've thought about that.\nIn that case, I would just come rolling into the ceremony and steal her away. You know, I'm pretty fast, you know. Yeah, I'd save her in time."
+      },
+      {
+        "Title": "About Us: The Forge",
+        "Context": "No matter what you are making, the temperature of the furnace is always crucial. If it's too cool, you won't be able to soften or melt the materials, and it'll be impossible to cleanse impurities. If the temperature is too high, some materials will be unusable.\nThe way most crafters adjust the temperature is by removing fuel from the fire or adding more wood to burn.\nAs for me, I would usually add phlogiston-rich gems to control the temperature. Phlogiston-aided flames are much stronger than that of a regular fire...\nWhat do I do with the gems after the phlogiston is used up? I just find a place to pile them up... once the phlogiston is gone, they have nothing but aesthetic value. If you'd like some, feel free to pick out a few."
+      },
+      {
+        "Title": "About Us: Blessing",
+        "Context": "Auntie Tlazolli said she would make you a Blazegem Inscription as a gift, right? Well, given the current circumstances, I don't think she'll be able to do that for you.\nI'll have to take up the task. Consider it a gift for helping save Nepecha.\nHuh? I already forged an Ancient Name for you?\nOh, no no no, that doesn't count. That name contains everyone else's blessing for you, but this inscription will contain my own blessings.\nAh, no need to thank me, I'll let you know once it's done. As for what words to engrave... I'll let you decide."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "Oh, my Vision? Yeah, it's pretty useful. Having it allows me to more accurately identify the concentration and distribution of the Geo element in various ores. That helps me quickly sort good ore from scraps.\nOh, does it have a meaning? Huh, I've never really thought about it much. As long as it can help me with my work, I don't care about the rest."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "I often try to forge small ornaments with complex structures to hone my precision-crafting skills. For example, a web-like pendant, or woven scroll earrings... Once I finish a product, I usually give it to one of my friends or neighbors.\nOh? Can I make rings? Of course! Just the other day, I made a ring in the shape of a Brilliant Chrysanthemum. The design schematic alone took me quite a bit of effort.\nOh, you'd like one? Sure. Let me see your hand. Once I've measured your finger, I can forge one for you in no time."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "I really don't get how to raise plants... I've watered them once every three days, pulled out the weeds once every five days, and fertilized them twice in a week, just like the instructions said, and even made absolutely sure that they got the right amount of sunlight, yet all of my plants still withered and died.\n*sigh* Don't tell me that even gardening requires quite a bit of luck?"
+      },
+      {
+        "Title": "About Kachina",
+        "Context": "Kachina commissioned me to forge a drill for her that could not only bore into the ground, but also jump around. It wasn't that complicated to make, but adjusting the angle of the seat was tricky. In the end, Kachina took my suggestion to ditch the seat in favor of a manual control system that connects to the power core of the drill...\nHuh? Why does Kachina bounce around when she's operating the Turbo Twirly?\nThat's how she wanted it. She said she prefers having direct sensory feedback while she's driving, so I removed part of the shock absorption system.\nI do wonder if I should make her some mouthguards next, though. The last thing I want is for her to bite her tongue while using the drill..."
+      },
+      {
+        "Title": "About Mualani",
+        "Context": "Mualani is an amazing athlete. I've never seen anyone make surfing or gliding on the Spiritways look so smooth or easy. In fact, I have yet to see Mualani ever slip up.\nHmm? What would happen if a person or Saurian got in her way? Hmm, I'm pretty sure she would just scoop them up and keep gliding along."
+      },
+      {
+        "Title": "About Chasca",
+        "Context": "To get Chasca's gun up and running in high altitude was no easy task. First, I had to make sure it would remain stable and reliable in high speed combat. Then, I had to develop standard and special ammunition that could be used for combat at high altitudes. And finally, I had to consider how to solve the issues of recoil and accuracy while flying...\nBut Chasca told me the last two issues were no big deal, and that she'd be able to manage as long as I installed some basic mechanical crosshairs.\nChasca has definitely proven to be an expert user of that weapon. Goes to show that she really is a flying ace of the Flower-Feather Clan."
+      },
+      {
+        "Title": "About Mavuika",
+        "Context": "Mavuika has approached me with quite a few ridiculous commissions.\nFor example, she wanted me to make her a heat-resistant sword that could withstand her flames and wouldn't melt in her hands. Oh yeah, she also asked me if I could make her a special pair of sunglasses that would let her better see enemies through the flames in combat...\nBut the most bizarre request was that bike of hers... At the time, she would keep coming to the workshop to talk about it and insist that I make her a phlogiston-powered vehicle. She even shoved a bunch of design schematics in front of me, and yeah, who even knows where she got those... I eventually couldn't take it anymore and gave in. It took me three whole months to complete it. I heard she's been driving it through the Natlan wilderness and that no one can stop her... So yeah...\nCompared to all of that, I'd say forging an Ancient Name for an outlander is really a relatively reasonable task."
+      },
+      {
+        "Title": "About Kinich",
+        "Context": "Kinich is nice, but that Ajaw is really hard to be around.\nSpeaking of, where did Ajaw even come from? If he originated from some kind of device, then there is actually a chance that I could make him shut up forever. Oh, maybe I should find some time to go over and discuss this with Kinich..."
+      },
+      {
+        "Title": "About Citlali",
+        "Context": "Citlali would occasionally come to my workshop to buy some ore. According to her, some ores can be crushed into powder and taken as medicine to help her with divinations and ceremonies. Hm? Have I ever asked her to read my fortune? No, I'm not interested in knowing the future. I already have enough to worry about with all my present work. Besides, I always get sleepy during divination rituals..."
+      },
+      {
+        "Title": "About Ifa",
+        "Context": "Ifa has come to the tribe before to heal some Tepetlisaurs. He is very skilled, and knows how to care for his patients. Even the most rambunctious Saurians will sit quietly when he's around.\nIfa said it's all thanks to the set of Saurian syringes I made for him. Even without the needle on it, it's enough to deter any person or Saurian from misbehaving. Would you like to see it? I still have a sample set if you're interested.\nWait here, I'll go fetch the biggest one... Huh? Why are you backing away? The needle isn't even attached, it's completely safe."
+      },
+      {
+        "Title": "About Ororon",
+        "Context": "If two negatives make a positive, then a weirdo in a group of weirdos should just be normal, but Ororon somehow still seems a little off to me.\nStill, he seems plenty nice as a person. He even had Ifa bring a bunch of fruit and honey to the Children of Echoes, presumably because he thought he had caused too much trouble for us. I had no idea you could get such sweet honey from Phlogiston Aphids, so he must know what he's doing.\n*sigh* How can some people be such naturals with plants and animals?"
+      },
+      {
+        "Title": "About Iansan",
+        "Context": "I once helped the Collective of Plenty make a couple sets of super heavy weight plates and dumbbells.\nWhen it was time for the goods to be picked up, Iansan came with a group from the tribe to inspect the finished products. She picked up and checked every single weight before placing them one by one into a cart. After lifting all those weights, she was barely winded, and her face was only a little red.\nTo be honest, I'm a little jealous of them. Not only are they really strong, but they've also got a way with plants..."
+      },
+      {
+        "Title": "More About Xilonen: I",
+        "Context": "Even though I'm a Name Engraver, forging Ancient Names isn't my primary work. Helping people in the tribe forge tools and weapons makes up the majority of my work.\nAfter all, Ancient Names are pretty rare, but there are countless commissions for other kinds of items..."
+      },
+      {
+        "Title": "More About Xilonen: II",
+        "Context": "The most exhausting part of taking commissions isn't the forging work itself — it's trying to decipher some of my clients' confusingly worded requests. I spend so much of my time just helping my client get their ideas straight so they can tell me what they actually want. Then I can finally pick up my hammer and get to work.\nWhen I see my clients having an epiphany where they finally realize what they want, I don't get any joy out of it anymore. In fact, it makes me want to throw up. So much so that it ruins my appetite."
+      },
+      {
+        "Title": "More About Xilonen: III",
+        "Context": "When I don't have any commissions, I would usually make some small gadgets. For example, these shoes I'm wearing use the latest phlogiston propulsion systems, and many new types of alloys. And these headphones I'm wearing can be connected to a record player, so I can listen to a record while I work at the forge...\nSounds complicated? Not really, it's just easier to put a little extra care into things when you're working on something you like."
+      },
+      {
+        "Title": "More About Xilonen: IV",
+        "Context": "The main reason I became a Name Engraver was because both my father and mother, as well as most of my kin, were also Name Engravers. When I was little, my parents would always tell me that of all the tribes in Natlan, only ours could shoulder the responsibility of forging Ancient Names. They hoped that I could also carry on the tradition when I grew older.\nSo I agreed to take it on — that's really all there is to it."
+      },
+      {
+        "Title": "More About Xilonen: V",
+        "Context": "However, before I became a Name Engraver, I put a lot of thought into whether I should really get involved in such troublesome work. After all, there were a lot of easier jobs I could have picked. Even being a regular blacksmith is easier than working as a Name Engraver, and I could earn more to boot.\nBut, in the end, I chose this path.\nForging Ancient Names is an important task that someone must undertake, and given I happened to have the right abilities for the job, it became my duty to inherit the craft. It's just like what my father always said — \"When every person in Natlan takes up the responsibility they can shoulder, Natlan will stand strong forever.\" The job is now my duty, and I perform it regardless of my level of personal interest.\n...And on top of that, I was the most skilled among those who studied the craft in the tribe. If I didn't become a Name Engraver, that would mean someone else would have to take it on in my stead. The other students constantly asked me questions and copied my homework. Had it become their job to forge Ancient Names, I'm sure they would constantly come bothering me with questions. So I figured that taking the job myself would be better than dealing with all that trouble... Yeah, it's more convenient for everyone, and saves me from having to worry about other people's work all day."
+      },
+      {
+        "Title": "Xilonen's Hobbies",
+        "Context": "Sleeping, spacing out, and basking in the sun... When I'm not working, even staring at blank paper seems interesting."
+      },
+      {
+        "Title": "Xilonen's Troubles",
+        "Context": "When discussing a forging commission with someone, the thing I'm most afraid of hearing is, \"This request is neither urgent nor important. Just get to it whenever you can.\"\nIn my experience, that is basically equivalent to saying, \"I might come to rush you at anytime.\"\n*sigh* It makes my head hurt just thinking about it, I think I'm going to go back to sleep..."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Sugar and chocolate. I work at the forge, and sweets give me the energy I need to swing my hammer."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I don't like water without any flavor. Yeah, yeah, I know that drinking pure water is better for you, but I just can't drink that stuff. Can't you at least add a little bit of sugar? Or if all else fails, a squeeze of lemon..."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Mm. Delicious, is there more? Huh? When did I finish it? Just now. I eat pretty fast, you know, and even faster when it's good."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Not bad, I'll have to treat you to some of my cooking next time."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Ah, I'm good for now. I get sleepy if I eat too much."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Happy Birthday. Here, this universal multi-tool set is yours to keep. It has a variety of drills and hammers, as well as three hand saws and five special-shaped prybars, which should come in handy for you in the wild. Oh, and there is also a set of ropes made from woven leather and metal wire. They should be strong enough to lift even a fully-grown Tepetlisaur. Do you know how to tie knots? If not, I can teach now. Here, watch... First, hold the rope like this, then loop it around..."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "...Meow?"
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Hmm, real gold must still be refined by fire. Thank you."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "It seems my eyes are getting sharper and my arms stronger for swinging my hammer. Hold on, let me try hammering something... You should stand back."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "You've helped me so much, I can't just let you leave empty-handed. Here, take this gem that I engraved my Name on. You can use it to find me for help whenever you like. Whether you need me to fire up the forge, or accompany you on a dangerous adventure, I'll be ready to help. This promise will stand until both my Name and this stone have eroded into nothing."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Bring it."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Hmph."
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "*sigh*"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Hear the echoes of the valley!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Let the mountain's veins boil!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Let engraved names echo!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "I'm keeping a lookout. Don't worry, there's no ambush."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "There's a lot of good stuff in here, wanna split it? Just kidding, you can take it."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Hmm, these should be worth something. Go on, take it."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "What a pain..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "That's enough."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "...Hmph!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "I'll take over."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Leave it to me."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "The flames... have gone out..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "The forge... grows cold..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Heh, it's time... to sleep..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "This again?"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "...How annoying!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Is it time to go?"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Let's get this over with."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Alright, after you."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "All in Natlan know Xilonen for her great forging skills and her fame as a Name Engraver.\nMany come from far and wide to pay homage to her superb skill. Some hope to commission her to forge them weapons, while others only seek to see the visage of this great smith, such that they might have information of great interest to talk about.\nBut Xilonen couldn't care less about what all her customers are thinking. No matter what kind of ridiculous, fancy titles others give her, before all the honors and accolades, she is first and foremost an artisan. All she need do is refine the ore, and surely and steadfastly hammer it into its final shape one blow at a time, in accordance with the customer's requirements. Reputation will not strengthen the blows of her hammer upon the anvil, nor will slander cool the coals of her furnace.\nHowever, when a customer steps into her workshop, it is not the heat of the furnace that welcomes them, but rather a long form filled with blanks needing to be filled in.\n\"I'm happy to take the commission. But first, we need to iron out the details.\"\n\"Effective communication means efficient work. Come on, let's talk about just what you want.\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "In the eyes of most people from Natlan, tempering tales and forging Ancient Names is a duty without parallel.\nThe lofty spirit and innumerable heroic deeds that Ancient Names embody serve as the very foundation upon which Natlan stands.\nAs those who forge Ancient Names, it is only natural that Name Engravers have been invested with all kinds of fanciful ideas related to these Names in the popular imagination.\nSome have described them as solitary ascetics who refine themselves through arduous training done in isolation; others as battle-hardened veterans who carry the glory and scars of countless battles; others still as chosen ones of extraordinary talent who, having gleaned their knowledge from mysterious sources, shouldered the burden of forging Names...\nOh, and not to mention those who speak of one personally chosen by the Wayob — a hero who, blessed by the Wayob's guidance, underwent a seemingly endless series of mythical trials, vanquishing powerful foes beyond number, and at journey's end, finally uncovered the answer that had long lain buried in his heart...\n\"Xilonen, are the stories true? Is that how Name Engravers gain their power!?\"\nWhen a gaggle of curious young Children of Echoes finally managed to track down Xilonen, the current Name Engraver, who'd hidden herself away in the treetops for an afternoon nap, she yawned and replied in a tone of resignation:\n\"First of all, forging Ancient Names is a matter of technique.\"\n\"Huh? But...\"\n\"Meaning that the key is to study hard, then put what you've learned into practice.\"\nBut before she could even finish imparting her words of wisdom, the children had already scampered off, wearing dissatisfied pouts. Their wild yet simple imaginings had been disappointed, dropping to the ground like a balloon weighed down by a basket of obsidian. Until another such idea occurred to them, reviving their fantasies and carrying them off into the clouds, they would continue to learn — whether willingly or not.\n\"Heh, it's not like I was lying...\"\nThe Name Engraver lay back down, shaded from the sunlight by a canopy of lush vegetation. This was the perfect place for a nap, and the next half an hour or so would be more than enough for her to recharge, ready to tackle the heavy tasks that awaited her.\n\"The only way anyone can ever hope to make those stories come true is by studying their tail off first...\""
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "In most of her academic studies regarding Ancient Names, Xilonen was only ever interested in the purely technical side of things.\nHow to create the most efficient Phlogiston Engravings, how to power various devices using phlogiston, how to make modifications to existing engraving diagrams...\nWhenever such technical classes began, her fellow students could not help but begin to doze off, their eyelids drooping as sleepiness set in. One by one, they would lean forward onto their desks and drift off to dreamland.\nEventually, Xilonen would be the only student still awake. Under her tutor's approving gaze, she would even raise the notebook she was holding and ask questions of her own.\n\"Do Phlogiston Engravings rely on phlogiston flow to operate? If I were to dive into a pool of pure phlogiston, would the engraving diagrams on my body activate, shut down, or blow up?\"\n\"Does phlogiston exist in a gaseous state? If so, then imagine I were to fill a chimney with it and drop a piece of meat from the top — how tall would the chimney have to be, and how dense the phlogiston, for the meat to be fully cooked at the exact time it reached the bottom?\"\n\"If losing about 20% of their body fluids can have life-threatening consequences for humans, then how much phlogiston would a Candlecap Mushroom need to lose before it withered or lost its heat?\"\nThough these questions may strike some as incisive, even slightly peculiar, they did not annoy Teyiz, the renowned Name Engraver, who did not think in the slightest that Xilonen was asking them to cause trouble.\nThe highly respected Teyiz was simply amazed that Xilonen had the patience to endure such tedious classes.\nMost children had no interest in such things, preferring classes where the elders told them legends about the heroes of the various tribes. They would imagine themselves as those heroes, skipping right past all the hardship and pain, going straight for fame and glory.\nXilonen, on the other hand, had no interest in these stories. Yet to ensure that she passed her exams on such subjects, she would \"bribe\" her classmates with milk candies, getting them to lend her their notes. She would proceed to copy it all down, then force herself to memorize everything, just to get a score that would not raise eyebrows.\nHer strength and her passion lay not in empty fantasies, but rather in precise axioms and equations. As far as she saw it, these were the only things that would benefit future generations; these were the things that were worth studying.\nAs for those stories... Well, they were neither accurate nor concise, lacked both definitions and axioms, and were simply too chaotic to follow. They held no value for her beyond the points they were worth on the exam papers.\nDespite seeing all of this, Teyiz chose not to immediately stop Xilonen, nor did she tell her off.\nBut when the next class was about to begin, and Xilonen got ready to roll out one of her usual excuses — like having a stomachache, or feeling dizzy, or catching a cold — Teyiz cut right through them, one and all.\n\"I once thought the same way as you do, Xilonen.\"\nThus did the kindly Name Engraver address her student, patting the notebook of equations that she held.\n\"But remember — for us Name Engravers, stories and equations are, in essence, one and the same.\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "In their classes, the children would sit in a circle around Teyiz the Name Engraver, listening to her stories about the heroes and their deeds.\nSundjatta, Menilek, and countless other heroes who rose up to fight for Natlan, laying down their lives in the name of justice and virtue.\nThe children were utterly captivated. Though they had read similar stories in books before, the way Teyiz told them was much more detailed, and far more vivid.\nThere was one hero who pulled down a stalactite, using it as a spear to pierce a monster's eye; and another who crossed a deep ravine with naught but a single length of rope in solo pursuit of a wicked dragon...\nLayer upon layer of exciting detail brought these heroes to life, making them flesh and blood in the children's minds.\nBut an abundance of detail creates greater possibilities for contradiction.\nThe first child to look up and challenge the storyteller was a little boy who had read many books and had many questions.\n\"Excuse me, Ma'am, I have a question. In the records I've read, this hero went hunting in the company of his companions. But in your story, he's alone. Why is that?\"\nTeyiz responded gently:\n\"I've read that version too. So, which one do you think is closer to the truth?\"\nBlinking, the child replied:\n\"I... Uhh... Well, that's what I read...\"\nThe elderly Name Engraver laughed, then patiently rejoined:\n\"Then you are questioning the truth on the basis of a single opinion, and have neither proof nor evidence.\"\nThe child, still refusing to concede defeat, puffed out his chest and replied:\n\"Stories... How can there be evidence for stories? There are so many out there in the world, it would be impossible to prove them all.\"\nAfter all, most stories and legends are passed down from mouth to mouth, so over time it is inevitable that they will change and evolve. Even the same tale, the same hero, might end up being portrayed in entirely different ways by the storytellers of different tribes.\nXilonen, who had been listening for quite some time now, closed her eyes in boredom and began working out a new set of formulas in her head. The idea that there was no order to be found just about summed up her view on the subject too, and as such, she concluded that it was unworthy of further attention.\nTo their surprise, Teyiz nodded to show her approval of the child's answer, and then said:\n\"You speak the truth. Natlan is an ocean of heroic legends, and perhaps there really is no way to verify such stories.\"\n\"Through generations of oral tradition, countless stories have been twisted or exaggerated, focusing on one person's great achievements, while secretly diminishing another's...\"\n\"But one day, it will be you that holds the forge hammer, and you will be the one tasked with forging the heroic deeds of those who have gone before into Ancient Names.\"\n\"When that day comes, if the heroic deeds you are to engrave are likewise the subject matter of countless unverified tales, and the focus of unstemmed controversy and debate...\"\n\"How then will you strike the hammer? How then will you know which version to settle on?\"\nDespite having been laughing just moments before, the sudden weight of this responsibility made the children fall silent.\n\"Legends have their patterns, and stories, too, their truths.\"\n\"You have heard many stories, just as you have read many scrolls.\"\n\"Now, it's time for your next class.\"\nVery slightly, Xilonen opened her eyes.\nIf stories were to be approached from such an angle, she thought, perhaps there might be more in them than she'd given them credit for."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "The classes continued.\nUnder her guidance, the children slogged their way through a sea of books and scrolls, their faces scrunched up in frustration, reading the heroic stories over and over again — the same ones, in fact, that they had already heard a hundred, even a thousand times before. They combed through every detail, hoping to find connections that could link these stories to other records, trying to add a rough but traceable chain of evidence to prove their credibility.\nThe children, who once found those very same tales to be a source of endless excitement and entertainment, now found themselves thinking of ways to avoid the class.\n\"If we keep studying like this, I won't want to read another story... ever again!\"\n\"I know, right? Everything has to be so... down-to-earth! It's so boring when there's no room for the imagination!\"\n\"How come you're so into this, Xilonen? Weren't you the one who used to hate reading stories the most?\"\nXilonen's classmates looked at her quizzically, watching as the pile of notes in front of their clever friend grew ever higher. It was like she had become a different person.\n\"It's not that I don't like reading stories. I just don't like reading stories that aren't backed up by proof or without any basis in fact.\"\nXilonen replied with an air of nonchalance, lazily propping up her chin in the palm of her hand.\nImagination is a bit like the breeze that blows through the cliffs — light, cool, and all around. Yet no one can pin down the shape of the wind, nor can they force it to stay by their side.\nBut if there was a way to bring the wind down and turn it into something dark, hard, and silent as stone; a way to forge formless stories into something tangible... For Xilonen, a thought experiment like that held some appeal indeed.\nBut in her heart of hearts, Xilonen did not want to become a Name Engraver. She had no interest in capturing fleeting breezes, nor could she summon up the motivation to haul heavy stones around.\n\"I don't want to forge Ancient Names. There are so many people in the tribe — why don't you just find someone else to do it?\"\nXilonen had often observed her father at work. He always wore a big smile on his face whenever he talked business with others, but when the time came to start swinging his hammer, his face would naturally settle into a grim expression. Work always seemed to drain people of their energy, leaving them exhausted both mentally and physically.\n\"Dad, why did you become a Name Engraver? You must have had a pretty important reason.\"\n\"Not really, nothing particularly important. I just thought that people who listened to stories... They have a responsibility to pass them down to others too.\" Her father replied as he put down his hammer, wiping the sweat from his brow.\n\"But aren't there much simpler ways to do that? You could just write down the stories on a scroll, or carve them into stone.\"\n\"True. Just passing on stories is simple enough.\"\nHer mother took out a comb, getting ready to give Xilonen a new hairstyle.\n\"But not everyone is willing to pass on true stories.\"\n\"Then what about Ms. Teyiz?\"\n\"She... is one of the few who are willing to do so.\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Teyiz's funeral was held on a low mountain outside of the tribal settlement. For her tribe, the passing of this Name Engraver did not come as a surprise.\nShe had grown old, and often told those looking after her that she could hear the whispers of the Wayob in her dreams.\nBut she said that she couldn't leave just yet, as there were still things she needed to pass on — once she had found the right person, of course. She could not answer the Wayob's call until that time had come.\n\"...With the blood of this land.\"\n\"Burn away all impurities, and souls gather in the fire.\"\nAnd with that, Xilonen let go of the torch, and the pyre began to roar.\nShe stayed there the entire night. The next morning, she gathered her teacher's ashes into an urn and placed them in the cave she had always spoken of.\nYet in the world outside, Teyiz's story scattered like a wild wind blowing through the valley.\nOne person, for instance, claimed that he had been initiated into the true craft of forging Ancient Names by Teyiz herself, producing a signed book from her as proof. Another said that she had left them her workshop, showing the key as evidence. But Xilonen did not concern herself with such petty bickering, such maneuvering for personal gain. What troubled her more deeply were the more insidious lies.\n\"Apparently, when Teyiz taught the stories of our heroes, she would sometimes question their grounding in truth...\"\n\"So you heard that too? Good grief... It all sounds quite academic, but what about the children? Surely there's a risk of them being led astray?\"\n\"Exactly what I was thinking! And I also heard that when she was young, Teyiz concerned herself with nothing other than technical research. Should someone like that really have been teaching our young ones the right way to go about forging Ancient Names? Hmm...\"\nThrough word of mouth, Teyiz's story was twisted beyond all recognition — one moment held up as a paragon of virtue and selflessness, the next as a pernicious schemer driven purely by ulterior motives. In one version, she was the hero; in the next, a petty villain.\nWhen people fail to grasp the wind, they instead begin to create for themselves a variety of boxes, then claim that the wind is whatever shape they've made.\nBut the true story will only ever be — can only ever be — that dark, heavy stone.\nThe next day, the tribespeople were shocked to see that Xilonen, usually so laid-back, seemed like a changed person. As if driven by an endless store of energy, she traveled all over the Children of Echoes' lands, interviewing everyone and anyone connected to Teyiz, reviewing every document she could find that mentioned her old teacher's name. Yet that wasn't enough for Xilonen. She left the tribe, consulting couriers from the Scions of the Canopy, meeting musicians from the People of the Springs, requesting access to the woven scrolls of the Masters of the Night-Wind, scaling the cliffs of the Flower-Feather Clan, stepping through the gates of the Collective of Plenty... With the utmost rigor and painstaking care, Xilonen meticulously recorded every single trace that Teyiz had left out there in the world.\nNot only were these documents what she needed to refute the slanderous stories and malicious rumors about Teyiz — they were enough to dismiss the strange titles that some had bestowed upon her too.\nWhat Xilonen wanted to leave behind was a true, unblemished version of Teyiz.\nOnly flawless ores of the utmost strength could be refined, forged, and eventually tempered into something worthy of being handed down to posterity.\n...\n\"Xilonen, why did you set out to become a Name Engraver in the first place? It all looks so tiring...\"\nXilonen's hammer blows rang out loud as her apprentices watched her, resting their chins in the palms of their hands.\nXilonen paused for a moment to wipe away the sweat from her brow.\n\"I never really did. But my father, my mother, my teacher... They all did before me. So what choice did I have?\n\"And besides...\"\nShe raised her hammer once more.\n\"Someone has to shoulder the responsibility of telling stories, right?\""
+      },
+      {
+        "Title": "\"Dance-Off Stage\"",
+        "Context": "Given the choice, Xilonen would prefer making intricate practical tools over forging Ancient Names any day of the week. Things like compressed phlogiston sprayers that let you create Phlogiston Engravings at range, phlogiston-fueled wings that allow for vertical takeoff and landing, even super-size sniper rifles, custom-made for a certain someone...\nYet among her many inventions, the one that the Children of Echoes have come to know best is without a doubt her specially modified \"Dance-Off Stage.\"\nAt that time, the latest Drillbit Dance daily dance-off had just kicked off. Dancers took the stage one after another, the searing intensity of their moves and beats as hot as molten lava, driving both the audience and the performers themselves into a state of great excitement.\nBut just as the contest reached its climax, the old Dance-Off Stage suddenly went haywire. The rhythm and sound became a total mess, making sharp, piercing noises that almost caused a dancer, who was just getting ready to attempt a particularly tricky move, to fall flat on their face. Below, the audience had their hands firmly clamped over their ears.\nJust as the stage technician began to scratch their head, at a complete loss for how to claw back this embarrassing situation, the music suddenly stabilized. The Dance-Off Stage was back in action; and hearing a languid voice say \"Testing, testing, one, two, three...\" the crowd's attention turned to Xilonen, who they saw holding a bundle of wires in one hand and propping up her chin in the other.\n\"Testing, testing... Can everyone hear me?\"\nAlmost instinctively, the dancers nodded back.\n\"Good. Well, in that case, let's get started.\" Dropping the wires on the ground, Xilonen gave the blinking technician a pat as she sauntered past.\n\"Let me handle the next track for you too.\"\n\"Xilonen, you... y—you can DJ!?\"\n\"Just listen.\"\nNo sooner had she finished speaking than a new melody, more powerful than any that had come before, began booming out from the stage. After a moment of stunned silence, the audience erupted, cheering even more enthusiastically than before.\nWhen the Drillbit Dance daily dance-off came to a close, the organizer paid Xilonen an official visit, hoping to convince her to accept the dual role of equipment consultant and special DJ of the Drillbit Dance contest, throwing in a more-than-generous compensation package to sweeten the deal.\nBut Xilonen declined both titles and compensation, agreeing only to modify the Dance-Off Stage and any related equipment during her free time.\nAs the conversation ended, the organizer scratched their head and asked:\n\"Xilonen, none of us had any idea you were such a good DJ... Where did you learn to do that?\"\n\"I picked up a few things when I went over to the People of the Springs to learn about record pressing, but I've been so busy that I've never had a chance to try them out. Want me to teach you a trick or two?\"\n\"No, no, no, it'll all just go in one ear and out the other...\" came the organizer's reply, batting off the idea with a vigorous wave of the hands. \"But seriously, don't you want anything in return? This is such a big ask, and besides, you're always so busy to start with.\"\n\"Well... I do have one request — if you'll consider it.\"\n\"Please, ask away!\"\n\"Once I don't have to forge Ancient Names anymore, let me come work for you as an official DJ. How about that?\""
+      },
+      {
+        "Title": "Vision",
+        "Context": "Where should the first hammerstroke fall?\nAs Xilonen gripped the haft, preparing to get started on the first Ancient Name she had ever forged, she hesitated, unsure of how to strike.\nShe had done plenty of research and prepared everything that was required. Just a few days before, she had followed a mining team from the tribe into the mountains to find ore of the very finest quality. She had also asked her dad to modify the furnace so it could hold even more phlogiston, igniting a fiercer and hotter flame that would be intense enough to melt any ore. She had specially re-engraved all of the phlogiston engraving diagrams in the workshop, ensuring that every spark that flew during the forging process was under her complete control.\nAlright, Xilonen, everything's ready. Strike while the phlogiston's hot, huh? So... Where should the first strike fall? What pattern should I forge? How many strikes will it take?\nSilence filled the workshop, and even the flames dared not crackle, lest they disturb the craftswoman at work.\nPlacing her hammer aside, Xilonen picked up a comb fashioned from the tooth of a wild beast in its stead. This comb had been polished sleek and smooth, investing the intense fire that reflected off its surface with a mild, gentler warmth.\nIts previous owner was a kindly old woman. Whenever Xilonen used to slack off, she would offer to comb her hair as a way of coaxing her back to study.\nThe old woman would also braid her hair into beautiful, intricate plaits — so complex, in fact, that even Xilonen's mother could not work out how to recreate them, and eventually had to ask for her help. After all, above all others, those were the plaits that Xilonen loved.\nThe story of Teyiz the Name Engraver resurfaced in Xilonen's mind. That was a story she had hunted down and gathered herself; and now, she would be the one to forge it into a Name.\nA hammer blow shattered the silence. Each strike was precise and powerful, and no detail of the story was left untold. Even the most fleeting nuances now rose up before her, ready to be wrought by her hammer.\nAs the final drops of phlogiston were consumed and the furnace began to fade, before her she beheld a brand-new Ancient Name.\nTeyiz's story had been imprinted into this Name, never to be distorted again.\nAs for whom the Wayob would bestow it upon... Well, that was the Wayob's concern, not hers.\nXilonen stood up, dusted off her clothes, and began to tidy up her workshop. She bent down to toss away a few unused pieces of ore into a basket — they were all of excellent quality, and could certainly be re-used for something else.\n\"Hmm, wonder what I should eat later? Didn't Mom say we'd be having fish for dinner...?\"\nOne, two, three... the lumps of ore clinked as they landed in her basket.\nAbsorbed entirely by her dinner plans, Xilonen didn't notice that there was something quite special about the fourth, amber-colored \"ore\" in her hand.\nWith another soft clink, the Vision landed in her basket too, which Xilonen then carried out of the workshop and casually left outside.\nHumming a song, Xilonen went off to eat her dinner. It was only during her next forging session that she would finally notice this special \"ore\" of hers.\nIt was a gift; but also, a responsibility."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 210300,
+      "Name": "Gold-Draped Gorge",
+      "Description": "Xilonen's outfit. Her usual get-up, which consists of a brilliant golden coat paired with short, no-nonsense inner garments. When she's working, Xilonen normally takes off her coat before getting down to business. When she puts it back on, you can be fairly certain that she's about to take a break.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104174,
+    113066,
+    101248,
+    112106,
+    104352,
+    113042
+  ],
+  "NameCard": {
+    "Name": "Xilonen: Cue Point",
+    "Description": "Namecard style.\nRight on cue, the mountains echo with the rhythm of Xilonen's forge-hammer. When the final echo fades, she has already long ceased her toil and found a sunlit spot for her afternoon nap.",
+    "Icon": "UI_NameCardIcon_Xilonen",
+    "PicturePrefix": "UI_NameCardPic_Xilonen"
+  }
+}

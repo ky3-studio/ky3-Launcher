@@ -1,0 +1,1181 @@
+{
+  "Id": 10000072,
+  "PromoteId": 72,
+  "Sort": 54,
+  "Body": 3,
+  "Icon": "UI_AvatarIcon_Candace",
+  "SideIcon": "UI_AvatarIcon_Side_Candace",
+  "Name": "Candace",
+  "Description": "A descendant of King Deshret with an amber left eye. The defender of Aaru Village.",
+  "BeginTime": "2022-09-27T00:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 911.791,
+    "AttackBase": 17.808,
+    "DefenseBase": 57.225
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 7231,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+            "4-Hit DMG|{param5:F1P}",
+            "Charged Attack DMG|{param6:F1P}",
+            "Charged Attack Stamina Cost|{param7:F1}",
+            "Plunge DMG|{param8:F1P}",
+            "Low/High Plunge DMG|{param9:P}/{param10:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 723101,
+              "Level": 1,
+              "Parameters": [
+                0.60802,
+                0.61146,
+                0.354879,
+                0.433741,
+                0.94944,
+                1.24184,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 723102,
+              "Level": 2,
+              "Parameters": [
+                0.65751,
+                0.66123,
+                0.383765,
+                0.469046,
+                1.02672,
+                1.34292,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 723103,
+              "Level": 3,
+              "Parameters": [
+                0.707,
+                0.711,
+                0.41265,
+                0.50435,
+                1.104,
+                1.444,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 723104,
+              "Level": 4,
+              "Parameters": [
+                0.7777,
+                0.7821,
+                0.453915,
+                0.554785,
+                1.2144,
+                1.5884,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 723105,
+              "Level": 5,
+              "Parameters": [
+                0.82719,
+                0.83187,
+                0.4828,
+                0.59009,
+                1.29168,
+                1.68948,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 723106,
+              "Level": 6,
+              "Parameters": [
+                0.88375,
+                0.88875,
+                0.515813,
+                0.630438,
+                1.38,
+                1.805,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 723107,
+              "Level": 7,
+              "Parameters": [
+                0.96152,
+                0.96696,
+                0.561204,
+                0.685916,
+                1.50144,
+                1.96384,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 723108,
+              "Level": 8,
+              "Parameters": [
+                1.03929,
+                1.04517,
+                0.606596,
+                0.741395,
+                1.62288,
+                2.12268,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 723109,
+              "Level": 9,
+              "Parameters": [
+                1.11706,
+                1.12338,
+                0.651987,
+                0.796873,
+                1.74432,
+                2.28152,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 723110,
+              "Level": 10,
+              "Parameters": [
+                1.2019,
+                1.2087,
+                0.701505,
+                0.857395,
+                1.8768,
+                2.4548,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 723111,
+              "Level": 11,
+              "Parameters": [
+                1.28674,
+                1.29402,
+                0.751023,
+                0.917917,
+                2.00928,
+                2.62808,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 723112,
+              "Level": 12,
+              "Parameters": [
+                1.37158,
+                1.37934,
+                0.800541,
+                0.978439,
+                2.14176,
+                2.80136,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 723113,
+              "Level": 13,
+              "Parameters": [
+                1.45642,
+                1.46466,
+                0.850059,
+                1.038961,
+                2.27424,
+                2.97464,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 723114,
+              "Level": 14,
+              "Parameters": [
+                1.54126,
+                1.54998,
+                0.899577,
+                1.099483,
+                2.40672,
+                3.14792,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 723115,
+              "Level": 15,
+              "Parameters": [
+                1.6261,
+                1.6353,
+                0.949095,
+                1.160005,
+                2.5392,
+                3.3212,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10721,
+        "Name": "Gleaming Spear - Guardian Stance",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 7232,
+        "Proud": {
+          "Descriptions": [
+            "Shield DMG Absorption|{param1:F1P} Max HP+{param2:I}",
+            "Basic DMG|{param3:F1P} Max HP",
+            "Charged Up DMG|{param4:F1P} Max HP",
+            "#{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press} CD|{param5:F1}s",
+            "Hold CD|{param6:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 723201,
+              "Level": 1,
+              "Parameters": [
+                0.12,
+                1155.5629,
+                0.12,
+                0.1904,
+                6,
+                9
+              ]
+            },
+            {
+              "Id": 723202,
+              "Level": 2,
+              "Parameters": [
+                0.129,
+                1271.1353,
+                0.129,
+                0.20468,
+                6,
+                9
+              ]
+            },
+            {
+              "Id": 723203,
+              "Level": 3,
+              "Parameters": [
+                0.138,
+                1396.3386,
+                0.138,
+                0.21896,
+                6,
+                9
+              ]
+            },
+            {
+              "Id": 723204,
+              "Level": 4,
+              "Parameters": [
+                0.15,
+                1531.173,
+                0.15,
+                0.238,
+                6,
+                9
+              ]
+            },
+            {
+              "Id": 723205,
+              "Level": 5,
+              "Parameters": [
+                0.159,
+                1675.6384,
+                0.159,
+                0.25228,
+                6,
+                9
+              ]
+            },
+            {
+              "Id": 723206,
+              "Level": 6,
+              "Parameters": [
+                0.168,
+                1829.7349,
+                0.168,
+                0.26656,
+                6,
+                9
+              ]
+            },
+            {
+              "Id": 723207,
+              "Level": 7,
+              "Parameters": [
+                0.18,
+                1993.4624,
+                0.18,
+                0.2856,
+                6,
+                9
+              ]
+            },
+            {
+              "Id": 723208,
+              "Level": 8,
+              "Parameters": [
+                0.192,
+                2166.8208,
+                0.192,
+                0.30464,
+                6,
+                9
+              ]
+            },
+            {
+              "Id": 723209,
+              "Level": 9,
+              "Parameters": [
+                0.204,
+                2349.8105,
+                0.204,
+                0.32368,
+                6,
+                9
+              ]
+            },
+            {
+              "Id": 723210,
+              "Level": 10,
+              "Parameters": [
+                0.216,
+                2542.4312,
+                0.216,
+                0.34272,
+                6,
+                9
+              ]
+            },
+            {
+              "Id": 723211,
+              "Level": 11,
+              "Parameters": [
+                0.228,
+                2744.6826,
+                0.228,
+                0.36176,
+                6,
+                9
+              ]
+            },
+            {
+              "Id": 723212,
+              "Level": 12,
+              "Parameters": [
+                0.24,
+                2956.5652,
+                0.24,
+                0.3808,
+                6,
+                9
+              ]
+            },
+            {
+              "Id": 723213,
+              "Level": 13,
+              "Parameters": [
+                0.255,
+                3178.0789,
+                0.255,
+                0.4046,
+                6,
+                9
+              ]
+            },
+            {
+              "Id": 723214,
+              "Level": 14,
+              "Parameters": [
+                0.27,
+                3409.2236,
+                0.27,
+                0.4284,
+                6,
+                9
+              ]
+            },
+            {
+              "Id": 723215,
+              "Level": 15,
+              "Parameters": [
+                0.285,
+                3649.9995,
+                0.285,
+                0.4522,
+                6,
+                9
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10722,
+        "Name": "Sacred Rite: Heron's Sanctum",
+        "Description": "Candace's fighting style is capable of warding off an entire tide of foes.\n\n<color=#FFD780FF>Tap</color>\nRushes forward with her shield, dealing <color=#80C0FFFF>Hydro DMG</color> to opponents in front of her.\n\n<color=#FFD780FF>Hold</color>\nRaises her shield to block incoming attacks from nearby opponents, forming a barrier that absorbs DMG based on her Max HP and absorbs <color=#80C0FFFF>Hydro DMG</color> 250% more effectively. This barrier lasts until the Elemental Skill is unleashed.\nAfter holding for a certain period of time, Candace will finish charging, and when the skill button is released, the skill duration expires, or when the barrier is broken, she will perform a leaping strike that deals <color=#80C0FFFF>Hydro DMG</color> to opponents in front of her.\n\n<i>The oath of the guardians is more stalwart yet than the shields they inherit.</i>",
+        "Icon": "Skill_S_Candace_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 7239,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:F1P} Max HP",
+          "Duration|{param2:F1}s",
+          "DMG Bonus|{param3:F1P}",
+          "Wave Impact DMG|{param4:F1P} Max HP",
+          "Wave Instances|{param5:I}",
+          "CD|{param6:F1}s",
+          "Energy Cost|{param7:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 723901,
+            "Level": 1,
+            "Parameters": [
+              0.066104,
+              9,
+              0.2,
+              0.066104,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 723902,
+            "Level": 2,
+            "Parameters": [
+              0.071062,
+              9,
+              0.2,
+              0.071062,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 723903,
+            "Level": 3,
+            "Parameters": [
+              0.07602,
+              9,
+              0.2,
+              0.07602,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 723904,
+            "Level": 4,
+            "Parameters": [
+              0.08263,
+              9,
+              0.2,
+              0.08263,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 723905,
+            "Level": 5,
+            "Parameters": [
+              0.087588,
+              9,
+              0.2,
+              0.087588,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 723906,
+            "Level": 6,
+            "Parameters": [
+              0.092546,
+              9,
+              0.2,
+              0.092546,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 723907,
+            "Level": 7,
+            "Parameters": [
+              0.099156,
+              9,
+              0.2,
+              0.099156,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 723908,
+            "Level": 8,
+            "Parameters": [
+              0.105766,
+              9,
+              0.2,
+              0.105766,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 723909,
+            "Level": 9,
+            "Parameters": [
+              0.112377,
+              9,
+              0.2,
+              0.112377,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 723910,
+            "Level": 10,
+            "Parameters": [
+              0.118987,
+              9,
+              0.2,
+              0.118987,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 723911,
+            "Level": 11,
+            "Parameters": [
+              0.125598,
+              9,
+              0.2,
+              0.125598,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 723912,
+            "Level": 12,
+            "Parameters": [
+              0.132208,
+              9,
+              0.2,
+              0.132208,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 723913,
+            "Level": 13,
+            "Parameters": [
+              0.140471,
+              9,
+              0.2,
+              0.140471,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 723914,
+            "Level": 14,
+            "Parameters": [
+              0.148734,
+              9,
+              0.2,
+              0.148734,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 723915,
+            "Level": 15,
+            "Parameters": [
+              0.156997,
+              9,
+              0.2,
+              0.156997,
+              3,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10725,
+      "Name": "Sacred Rite: Wagtail's Tide",
+      "Description": "Raising her weapon on high, Candace calls upon a divine blessing that deals <color=#80C0FFFF>AoE Hydro DMG</color> based on her Max HP and continuously confers the Prayer of the Crimson Crown on your active character.\n\n<color=#FFD780FF>Prayer of the Crimson Crown</color>\nThis effect has the following properties:\n·Characters deal increased Elemental DMG with their Normal Attacks.\n·Whenever a character takes the field, they will unleash a rippling wave of water that deals <color=#80C0FFFF>Hydro DMG</color> to nearby opponents. There is a limited number of waves that can be triggered in the duration of this skill.\n·Sword, Claymore, and Polearm-wielding characters under this effect will obtain a <color=#80C0FFFF>Hydro Infusion</color>.\n\n<i>This secret rite has been passed down through Candace's clan from generation to generation. Though the old faiths have become lost over the years, the sands still protect the heirs of the ancient realm.</i>",
+      "Icon": "Skill_E_Candace_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 7221,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 722101,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 722101,
+        "Name": "Aegis of Crossed Arrows",
+        "Description": "If Candace is hit by an attack in the Hold duration of <color=#FFD780FF>Sacred Rite: Heron's Sanctum</color>, that skill will finish charging instantly.",
+        "Icon": "UI_Talent_S_Candace_05"
+      },
+      {
+        "GroupId": 7222,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 722201,
+              "Level": 1,
+              "Parameters": [
+                0.005
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 722201,
+        "Name": "Celestial Dome of Sand",
+        "Description": "Characters affected by the Prayer of the Crimson Crown caused by <color=#FFD780FF>Sacred Rite: Wagtail's Tide</color> will deal 0.5% increased DMG to opponents for every 1,000 points of Candace's Max HP when they deal Elemental DMG with their Normal Attacks.",
+        "Icon": "UI_Talent_S_Candace_06"
+      },
+      {
+        "GroupId": 7223,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 722301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 722301,
+        "Name": "To Dawn's First Light",
+        "Description": "Decreases climbing Stamina consumption for your own party members by 20%.\nNot stackable with Passive Talents that provide the exact same effects.",
+        "Icon": "UI_Talent_Explosion_Climb"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 721,
+        "Name": "Returning Heiress of the Scarlet Sands",
+        "Description": "The duration of Prayer of the Crimson Crown effect triggered by <color=#FFD780FF>Sacred Rite: Wagtail's Tide</color> is increased by 3s.",
+        "Icon": "UI_Talent_S_Candace_01"
+      },
+      {
+        "Id": 722,
+        "Name": "Moon-Piercing Brilliance",
+        "Description": "When <color=#FFD780FF>Sacred Rite: Heron's Sanctum</color> hits opponents, Candace's Max HP will be increased by 20% for 15s.",
+        "Icon": "UI_Talent_S_Candace_02"
+      },
+      {
+        "Id": 723,
+        "Name": "Hunter's Supplication",
+        "Description": "Increases the Level of <color=#FFD780FF>Sacred Rite: Wagtail's Tide</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Candace_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 724,
+        "Name": "Sentinel Oath",
+        "Description": "Shortens the Hold CD of <color=#FFD780FF>Sacred Rite: Heron's Sanctum</color> to be the same as that of the Tapping CD.",
+        "Icon": "UI_Talent_S_Candace_03"
+      },
+      {
+        "Id": 725,
+        "Name": "Heterochromatic Gaze",
+        "Description": "Increases the Level of <color=#FFD780FF>Sacred Rite: Heron's Sanctum</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Candace_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 726,
+        "Name": "The Overflow",
+        "Description": "When characters (excluding Candace herself) affected by the Prayer of the Crimson Crown caused by <color=#FFD780FF>Sacred Rite: Wagtail's Tide</color> deal Elemental DMG to opponents using Normal Attacks, an attack wave will be unleashed that deals <color=#80C0FFFF>AoE Hydro DMG</color> equal to 15% of Candace's Max HP.\nThis effect can trigger once every 2.3s and is considered Elemental Burst DMG.",
+        "Icon": "UI_Talent_S_Candace_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Golden Vow",
+    "Detail": "A descendant of King Deshret with an amber left eye. The defender of Aaru Village.",
+    "Association": 7,
+    "Native": "Aaru Village",
+    "BirthMonth": 5,
+    "BirthDay": 3,
+    "VisionBefore": "Hydro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Sagitta Scutum",
+    "CvChinese": "张琦",
+    "CvJapanese": "柚木涼香",
+    "CvEnglish": "Heather Gonzalez",
+    "CvKorean": "Jun Young-soo",
+    "CookBonus": {
+      "OriginItemId": 108461,
+      "ItemId": 108468,
+      "InputList": [
+        100092,
+        110001,
+        100096,
+        100079
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Welcome, weary Traveler from afar. Nights in the desert are cruel. You should rest here tonight. Sleep soundly, and know that I am watching over you."
+      },
+      {
+        "Title": "Chat: Spear and Shield",
+        "Context": "A shield is not enough to protect the most important things. That's why I must also wield a spear."
+      },
+      {
+        "Title": "Chat: Life",
+        "Context": "Peace and good health should be enjoyed by all... If I can provide everyone with a life such as this, I will be content."
+      },
+      {
+        "Title": "Chat: Wishes",
+        "Context": "I will always seek to protect the things that are most important, no matter what it takes... even when it looks futile."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Stay warm, or you'll catch a cold."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "The thunder rumbles — does it scare you?"
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "This strange powder, it is... fine, like sand, but white as the clouds, and cold as ice..."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "In the desert, a strong gale like this will create a sandstorm, so it's always a good idea to stay alert."
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "I am right by your side. But if you're still nervous, just take my hand."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Good morning, Traveler. Did you sleep soundly last night?"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "It's already noon. The golden eye of the sky glares down fiercely at this hour... Hehe, we should find some shade and escape its wrath."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "The night sky... that great canopy that descends when the light of day is gone. Who knows how many untold secrets it conceals..."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Yes, it's time to rest. You should sleep. Me? It's still much too early. The night is beautiful, but it's also full of danger... I must keep watch, for your sake."
+      },
+      {
+        "Title": "About Candace: Eye Color",
+        "Context": "...Strange? I'm not sure what you mean, both amber and blue are fairly common eye colors, I believe..."
+      },
+      {
+        "Title": "About Candace: Aaru Village",
+        "Context": "Aaru Village is where I was born and grew up. Even back when I was too young to understand anything else about the world, the one thing I knew for sure was that one day, I would take over from my grandfather as sworn protector of our village... Today, I am grateful to now hold this duty. It is what I was born to do."
+      },
+      {
+        "Title": "About Candace: Parents",
+        "Context": "My father was a scholar from the Akademiya. He originally came to Aaru Village on a research trip, and then he met my mother... As for her, unfortunately I only know what my father has told me. The day I was born, she began her journey into the eternal night..."
+      },
+      {
+        "Title": "About Us: Hosting Guests",
+        "Context": "You will always be an honored guest of Aaru Village, no matter the day or time of your visit. If ever you tire of your journey, know that here, you can always find rest. Aaru Village welcomes you with open arms... as do I."
+      },
+      {
+        "Title": "About Us: Treasure in the Chest",
+        "Context": "They say in every person's heart is a precious box, into which they place the things they treasure, so that they may guard them for their entire life. My heart harbors many treasures... Care to guess what those might be?"
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "When I received my Vision, people in the village kept telling me it was a blessing from Ahmar... but that doesn't matter to me. I swore to protect the village, and I will do it with or without a Vision."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "I do love spending time in Aaru Village. But each day I spend here is also a reminder that if I ever start to let my guard down... sooner or later, the day may come when I no longer have a life to return to here."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Have you come across Ajilenakh Nuts yet on your journey? They're naturally very sweet, and the villagers make the most delicious candies from them. If you're interested, you should give them a try."
+      },
+      {
+        "Title": "About Lesser Lord Kusanali",
+        "Context": "Perhaps it is a testament to the Dendro Archon's benevolence that I, a descendant of the Al-Ahmar bloodline, am able to live peacefully on this land. If so, I suppose I am grateful for this much, but... I am first and foremost a child of the desert."
+      },
+      {
+        "Title": "About Layla",
+        "Context": "An eccentric girl who always seems to be in a trance...? Yes, I believe I've seen her before — near the Wall of Samiel. I couldn't make sense of what she was saying, nor the calculation she wrote down, but she seemed to be in a much better mood after she'd finished. Perhaps this is her way of relieving stress."
+      },
+      {
+        "Title": "About Alhaitham",
+        "Context": "A truly unusual scholar, unlike any other I've ever met. He sees and thinks about things in his own unique way... I only hope he never wields his sharp mind against the peace of Aaru Village."
+      },
+      {
+        "Title": "About Cyno",
+        "Context": "In the past, it was rare to see the Akademiya's General Mahamatra on this side of the Wall of Samiel, but recently he has been showing up here all the time. I believe that the Eremites have some truly terrifying stories to tell about him..."
+      },
+      {
+        "Title": "About Dehya",
+        "Context": "Whenever Dehya brings any of her Eremites to stay at Aaru Village, she always keeps them on their best behavior. I have to say, it makes my life a lot easier. Ah, Dehya... She might look like trouble at first, but the truth is that she's really quite adorable."
+      },
+      {
+        "Title": "About Sethos",
+        "Context": "The sons and daughters of King Deshret are a proud people, and he is no exception. I have heard his tale, of Hermanubis's glory dwelling within a worthy vessel. I also understand he has been active in Sumeru City recently? Apparently, he has spoken to Cyno and other friends of his plans to visit Aaru Village. I look forward to hosting him."
+      },
+      {
+        "Title": "More About Candace: I",
+        "Context": "You want to know more about me? ...I can't promise you a great story, but if you insist... Okay, let's wait until nightfall. We can sit by the fireside and I'll tell you all you wish to know."
+      },
+      {
+        "Title": "More About Candace: II",
+        "Context": "We are a people whose god is no longer with us. Lies pose no threat to us... the threat we face is the prospect of no tomorrow. The path before us is paved with barbs, there is pain in every step — yes, we tread forward clinging to a lie, but perhaps... perhaps there is more virtue in this than in selfishly embracing the truth, and death along with it..."
+      },
+      {
+        "Title": "More About Candace: III",
+        "Context": "Even now, there are those who hold on to a belief that King Deshret will be resurrected. But it's not possible. The past is but grains of sand, scattered to the four winds. The best we can do is to let go, and leave the wind to carry them to their final resting place."
+      },
+      {
+        "Title": "More About Candace: IV",
+        "Context": "My shield? Well, according to what people outside the village say, it has the blessing of Bennu. With this shield in hand, all the grains of sand are my eyes and ears, and the desert is ready to do my bidding... Their imaginations can get a little carried away sometimes. But anyway, that aside, the main thing for me is it always works like a charm."
+      },
+      {
+        "Title": "More About Candace: V",
+        "Context": "I'd really love to look into your future with my amber eye, if I could... Something tells me everything would be golden... somewhere between the color of sunlight and honey. A color filled with hope. Your journey will be a smooth road ahead. I give it my blessing."
+      },
+      {
+        "Title": "Candace's Hobbies",
+        "Context": "I always love taking walks in the village. Seeing that all is still well gives me a sense that... if today is just like yesterday, and yesterday is just like all the days before it... things have always been pleasant here, throughout history."
+      },
+      {
+        "Title": "Candace's Troubles",
+        "Context": "Every now and then, a few violent thugs make the mistake of trying to disrupt the peace and tranquility of Aaru Village. I do wonder... is chasing them into a monster-infested valley perhaps a little too... merciful? What do you think, do you have any better ideas on how they should be dealt with?"
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "To me... quantity is more important than taste when it comes to food. Life in the desert uses up more energy than you might think. After a day's work, there's nothing more satisfying than having a filling meal."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I don't hate it, but compared to regular meat, eating fish is a real nuisance... Maybe it's because we don't really eat fish here in the desert, but for whatever reason, I'm just not very good at removing all those prickly little bones... This must sound ridiculous to you."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Mmm, absolutely delightful! This must have taken a lot of time and effort."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "For someone who spends so much time on the road, your cooking tastes so... homely."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Maybe my definition of \"edible\" is a little too old-fashioned..."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Happy birthday! It's amazing to think that you were born on this day, years ago in the past. Do you have a birthday wish? If it involves going somewhere dangerous, let me join you — I'll be your guard. Or if you're looking to rest and revitalize, come to Aaru Village, and I'll serve you the finest meats and drinks we have."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "I feel a newfound strength within me... May it help me to be a better protector."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "My shield grows sturdier, and my spear sharper. One is an unstoppable force, the other an immovable object... Oh, but... I would never pit these against each other."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "I learned to wield the spear and shield knowing that I would one day need them, and today I use these skills to protect the village. So perhaps this new strength I now gain in the present is preparing me for trials that lie ahead in the future."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I am now capable of venturing ahead of you, and fending off all dangers that would seek to come your way. If you trust me, then I invite you to close your eyes and leave the enemies to me."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Yield!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Flee!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Do your worst!"
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Pin them down!"
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "Hah, too easy!"
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "You're exposed!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Hear my prayer!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Grant us your blessing!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "We shall prevail!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "These look... surprisingly useful."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "What do you think? Anything catch your eye?"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "I hope you can find some use for these."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "No more mercy."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Remorseless. Hmph."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Leave... now..."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Please, rest..."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Get behind me!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Need to... train harder..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "I have failed... I'm sorry..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "The shield... has broken..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "It's nothing."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Impressive."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Just a graze."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "What's wrong? Are you in danger?"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Stay close."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "I promise to keep you safe."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Candace, who has heterochromatic eyes, serves as the guardian of Aaru Village.\nCandace always shows the greatest kindness to all travelers visiting the village, and she will not pursue an inadvertent faux pas so long as that person corrects themselves in time. In Candace's view, the village rules are the most important thing. So long as these boundaries are respected, anyone can be allowed to rest in Aaru Village.\nBut woe betide those who regard this tolerance as weakness. Those who try to do anything illegal in Aaru Village will definitely pay the price.\nBy then, they will find that Candace's lance and shield truly are the most frightening of weapons.\nThe scion of Al-Ahmar, a member of desert folk, the Guardian... Candace, burdened as she is with multiple identities, also bears the eternal responsibility of guarding Aaru Village.\n\"This village only welcomes those who can follow the rules.\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "\"Aaru Village is the final refuge for King Deshret's descendants.\" \n\"The mission of the Aaru Village's Guardian is to guard the village till the last of King Deshret's people fade away.\"\nWhen Candace was officially appointed as the new \"Guardian\" at the tender age of eight, the one who handed the position over to her admonished her as such.\nWith King Deshret's death, it was already a blessing that his descendants might have such a refuge from the world.\nAnd so, generation after generation, the Guardians take up their duties in silence, defending countless villagers until they pass on as the \"descendants of King Deshret\" and gain eternal peace.\nIt was once the common wish of the residents of Aaru Village to fade away in peace, sequestered in their village.\nHowever, when new life emerges in this ancient village... Everything that they used to know might just have to change a bit."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "When Uncle Anpu, the village head, announced that a caravan from Sumeru City was about to arrive in the village for trade, the former Guardians could hardly believe their ears.\nThey indignantly accused Uncle Anpu of undermining tradition and requested that Candace, the current Guardian, do her duty by summoning guards to drive the merchants out.\nHowever, Candace refused the request, for she had already reached an agreement with the village head that the village must make changes for the future of its residents.\nThey kept explaining, but the former keepers did not relent, and it was even suggested that if Candace was unwilling to do her duty, they would take up arms again and carry out a Guardian's work themselves. At last, a clang of lance against shield silenced all the quarrels. With lance and shield in her hand, Candace stood up and looked around with a smile, before announcing to the stunned elderly folks around her:\n\"It is good to see you all in such good spirits.\"\n\"But I am the current Guardian of Aaru Village, so please, go and rest, as you should.\"\nThe persuasive power of weapons trumped words at this moment, and it seemed that it would be enough to end the fracas.\nAfter a moment's preparation, Candace accompanied the village head in her station as Guardian to formally receive the caravan and hold trade negotiations with them, before personally escorting them out of the village.\nA few days later, the merchants visited again and completed this seemingly humble transaction regarding cloths.\nThis batch of merchants returned to Sumeru City with news of the success of the deal. Soon after, a new topic cropped up among the business-folk of Sumeru, one which had been rarely heard of in the past:\n\"Hey, you know what? Someone went to Aaru Village to do business — and they made a good sum of Mora, too. Think we should give it a shot next time...?\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "In truth, Candace doesn't often use her lance and shield as debating tools.\nThe children in Aaru Village have always believed that \"Big Sis Candace\" will only frown no matter how angry she is — at most, she might ask the children in trouble to copy the calligraphy prepared for them by Grandma Kulsoom several times.\nThe other guards in Aaru Village believe that although Candace's requirements are strict, she will not give out corporal punishment to those who slack off or whose physical abilities are not up to par, and that she will simply guide them with more care instead.\nThe older folks in the village, for their period, note that Candace is a person who will not let negative emotions show on her face, and indeed, she has never once looked sad in front of them.\nEven the merchants who visit the village will be received by Candace with the utmost hospitality. From introductions to accommodations, she arranges everything in good order.\nPerhaps she might even be too gentle for the merchants' comfort.\nAfter all, this village is next to Great Red Sand. Leaving the monsters aside, lawless bandits must have long had this village in their sights.\nIs the Guardian truly capable of protecting everyone... and their business as well?\nOne night, a drunken merchant dared to ask:\n\"Guardian, we can do business in this village, no problem. But as you know, this desert is a real den of outlaws...\"\n\"You need not worry about this. Only those who obey the rules shall be guests in Aaru Village. As for those who don't...\""
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Those who do not respect the rules shall be the \"enemies\" of Aaru Village.\nWhether they be Eremites hiding in the sands, bandits disguised as adventurers, or Treasure Hoarders attempting to steal goods... Anyone who dares to invade the village, no matter how they may try to hide and escape, will eventually receive the punishment they deserve.\nThose who sincerely confess their guilt will be forgiven and given enough supplies to cross the sands, but never again will they be permitted to show their faces around Aaru Village.\nAs for the more recalcitrant sort... Their despicable souls shall find company only with the desert sands.\nA former member of the Eremites once warned his companions that Candace, the terrifying Guardian of the village, is a true descendant of King Deshret.\nThe shield in her hand possesses the blessing of Al-Ahmar, such that as long as its wielder holds it tightly, every grain in the great desert will heed her call. So if Candace so wishes, she could even send forth a huge sandstorm to engulf all her foes.\nNot only that, her amber left eye can also perceive the future and read the fates of others. Indeed, such is her terrible might that none can ever escape her pursuit.\nSuch are people's beliefs concerning Candace, that she has swept all of Aaru Village's enemies away by virtue of these divine powers."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Only Candace herself knows that she has never really felt the blessing of Al-Ahmar.\n\"The Guardians have never been blessed by the grace of god\" — this is a secret handed down from Guardian to Guardian.\nOnly when a new Guardian takes up their shield will they be told the truth.\nThe effects of the truth on those now in the know has varied. Some gave up and became so despondent that they stopped practicing martial arts. Some came to believe that since they were not being watched, they didn't have to obey the rules either, and so acted recklessly, even in violation of the law.\nBut Candace was not depressed.\n\"My lance and shield are not wielded as a prayer for a god's blessing.\"\n\"My duty will not change, regardless of whether any god favors us or not.\"\nShe practices diligently day after day and through this has forged both an extraordinary will and martial skills.\nMany who have visited Aaru Village have extended invitations to Candace, wondering why someone as capable as her would choose to live in such an inconspicuous place. If she was willing to leave, they often say, she may yet be able to start a new career...\nYet Candace always answers them thusly:\n\"A Guardian will not leave what they have purposed to protect.\""
+      },
+      {
+        "Title": "Candace's Trinkets",
+        "Context": "Candace often buys all kinds of trinkets from merchants who visit Aaru Village.\nHairpins adorned with aquamarine beads, headbands made of silk and satin, gilded necklaces, metal bracelets engraved with Kalpalata Lotus patterns, pendants with the emblems of the Akademiya's Darshans drawn upon them...\nWhile Dehya has encouraged her to dress up more often and use the Mora she spends on herself, Candace feels that some things are too fragile to survive her daily work environment, and so she puts them deep in her wardrobe.\nSo it seems that these trinkets will come in handy only when Candace temporarily puts her duties aside and changes into other clothes to have a rest in the shade — or perhaps she might just give it to a friend as a gift."
+      },
+      {
+        "Title": "Vision",
+        "Context": "With outsiders pouring in, Aaru Village was faced with a variety of unprecedented circumstances.\nThey now had Treasure Hoarders pretending to be businessmen within the village, mercenary groups hijacking trade caravans, unscrupulous vendors engaged in charlatanry...\nMoreover, after seeing people who came from abroad, the residents of Aaru Village gradually began to yearn for life outside. Gradually, people tried to go out to make a living, and fewer and fewer young people were willing to stay in the village.\nThe former Guardians had long been dissatisfied with Candace, who, as they saw it, had \"abandoned\" their traditions. Seeing that the village was in such a situation, they again held a meeting and prepared to challenge her.\n\"What we Guardians must do is maintain order in the village!\"\n\"Candace! What you have done will only cost this village its peace!\"\n\"Candace! Go and fulfill your duties now!\"\nAs the war of words swayed back and forth, the lance-wielding female warrior suddenly shot up to her full height.\n\"That's enough!\"\n\"If you only wish to protect the 'past' of this village, then do it yourself! Whether you wish to just remain in your homes or leave Aaru Village, that is up to you!\"\n\"I will not let the people of Aaru Village be bound by the past forever.\"\n\"If you can't move forward, then it's up to me to protect our future!\"\nThe old Guardians were intimidated by her, her young, fiery eyes making it impossible for them to come forward and question her further.\nBurning with rare anger, Candace hefted her long spear and stormed out of the dispute-ridden hut.\nAnd, as if in response to her convictions, a shining \"jewel\" had appeared at the tip of that lance, though she knew not when it had done so.\nThe eyes of the gods had found her, and they had given her their approval.\nA \"Vision\" is also a resolute heart — and no finer ornament than it may be found anywhere."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 207200,
+      "Name": "Desert and Night",
+      "Description": "Candace's outfit. No matter where she goes, the golden sands and the nights of her homeland that adorn her clothes go together with her.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104124,
+    113039,
+    101220,
+    112067,
+    104331,
+    113033
+  ],
+  "NameCard": {
+    "Name": "Candace: Gray Heron",
+    "Description": "Namecard style.\nThe burning winds of the past ruffle the heron's feathers, but the bird has eyes only for the morning star at first light.",
+    "Icon": "UI_NameCardIcon_Candace",
+    "PicturePrefix": "UI_NameCardPic_Candace"
+  }
+}

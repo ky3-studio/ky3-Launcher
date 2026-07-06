@@ -1,0 +1,1210 @@
+{
+  "Id": 10000024,
+  "PromoteId": 24,
+  "Sort": 17,
+  "Body": 3,
+  "Icon": "UI_AvatarIcon_Beidou",
+  "SideIcon": "UI_AvatarIcon_Side_Beidou",
+  "Name": "Beidou",
+  "Description": "Captain of her crew, The Crux. She's quite an unbound and forthright woman.",
+  "BeginTime": "2020-09-15T04:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 11,
+  "BaseValue": {
+    "HpBase": 1094.1492,
+    "AttackBase": 18.87648,
+    "DefenseBase": 54.36375
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 2431,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:P}",
+            "2-Hit DMG|{param2:P}",
+            "3-Hit DMG|{param3:P}",
+            "4-Hit DMG|{param4:P}",
+            "5-Hit DMG|{param5:P}",
+            "Charged Attack Cycling DMG|{param6:P}",
+            "Charged Attack Final DMG|{param7:P}",
+            "Charged Attack Stamina Cost|{param8:F1}/s",
+            "Max Duration|{param9:F1}s",
+            "Plunge DMG|{param10:F1P}",
+            "Low/High Plunge DMG|{param11:P}/{param12:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 243101,
+              "Level": 1,
+              "Parameters": [
+                0.71122,
+                0.70864,
+                0.88322,
+                0.86516,
+                1.12144,
+                0.56244,
+                1.01824,
+                40,
+                5,
+                0.745878,
+                1.49144,
+                1.862889
+              ]
+            },
+            {
+              "Id": 243102,
+              "Level": 2,
+              "Parameters": [
+                0.76911,
+                0.76632,
+                0.95511,
+                0.93558,
+                1.21272,
+                0.60822,
+                1.10112,
+                40,
+                5,
+                0.806589,
+                1.612836,
+                2.01452
+              ]
+            },
+            {
+              "Id": 243103,
+              "Level": 3,
+              "Parameters": [
+                0.827,
+                0.824,
+                1.027,
+                1.006,
+                1.304,
+                0.654,
+                1.184,
+                40,
+                5,
+                0.8673,
+                1.734233,
+                2.16615
+              ]
+            },
+            {
+              "Id": 243104,
+              "Level": 4,
+              "Parameters": [
+                0.9097,
+                0.9064,
+                1.1297,
+                1.1066,
+                1.4344,
+                0.7194,
+                1.3024,
+                40,
+                5,
+                0.95403,
+                1.907656,
+                2.382765
+              ]
+            },
+            {
+              "Id": 243105,
+              "Level": 5,
+              "Parameters": [
+                0.96759,
+                0.96408,
+                1.20159,
+                1.17702,
+                1.52568,
+                0.76518,
+                1.38528,
+                40,
+                5,
+                1.014741,
+                2.029052,
+                2.534396
+              ]
+            },
+            {
+              "Id": 243106,
+              "Level": 6,
+              "Parameters": [
+                1.03375,
+                1.03,
+                1.28375,
+                1.2575,
+                1.63,
+                0.8175,
+                1.48,
+                40,
+                5,
+                1.084125,
+                2.167791,
+                2.707688
+              ]
+            },
+            {
+              "Id": 243107,
+              "Level": 7,
+              "Parameters": [
+                1.12472,
+                1.12064,
+                1.39672,
+                1.36816,
+                1.77344,
+                0.88944,
+                1.61024,
+                40,
+                5,
+                1.179528,
+                2.358556,
+                2.945964
+              ]
+            },
+            {
+              "Id": 243108,
+              "Level": 8,
+              "Parameters": [
+                1.21569,
+                1.21128,
+                1.50969,
+                1.47882,
+                1.91688,
+                0.96138,
+                1.74048,
+                40,
+                5,
+                1.274931,
+                2.549322,
+                3.184241
+              ]
+            },
+            {
+              "Id": 243109,
+              "Level": 9,
+              "Parameters": [
+                1.30666,
+                1.30192,
+                1.62266,
+                1.58948,
+                2.06032,
+                1.03332,
+                1.87072,
+                40,
+                5,
+                1.370334,
+                2.740087,
+                3.422517
+              ]
+            },
+            {
+              "Id": 243110,
+              "Level": 10,
+              "Parameters": [
+                1.4059,
+                1.4008,
+                1.7459,
+                1.7102,
+                2.2168,
+                1.1118,
+                2.0128,
+                40,
+                5,
+                1.47441,
+                2.948195,
+                3.682455
+              ]
+            },
+            {
+              "Id": 243111,
+              "Level": 11,
+              "Parameters": [
+                1.519613,
+                1.5141,
+                1.887112,
+                1.848525,
+                2.3961,
+                1.201725,
+                2.1756,
+                40,
+                5,
+                1.578486,
+                3.156303,
+                3.942393
+              ]
+            },
+            {
+              "Id": 243112,
+              "Level": 12,
+              "Parameters": [
+                1.653338,
+                1.647341,
+                2.053178,
+                2.011195,
+                2.606957,
+                1.307477,
+                2.367053,
+                40,
+                5,
+                1.682562,
+                3.364411,
+                4.202331
+              ]
+            },
+            {
+              "Id": 243113,
+              "Level": 13,
+              "Parameters": [
+                1.787064,
+                1.780582,
+                2.219244,
+                2.173865,
+                2.817814,
+                1.413229,
+                2.558506,
+                40,
+                5,
+                1.786638,
+                3.572519,
+                4.462269
+              ]
+            },
+            {
+              "Id": 243114,
+              "Level": 14,
+              "Parameters": [
+                1.92079,
+                1.913822,
+                2.38531,
+                2.336536,
+                3.02867,
+                1.51898,
+                2.749958,
+                40,
+                5,
+                1.890714,
+                3.780627,
+                4.722207
+              ]
+            },
+            {
+              "Id": 243115,
+              "Level": 15,
+              "Parameters": [
+                2.066673,
+                2.059176,
+                2.566473,
+                2.513994,
+                3.258696,
+                1.634346,
+                2.958816,
+                40,
+                5,
+                1.99479,
+                3.988735,
+                4.982145
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10241,
+        "Name": "Oceanborne",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous slashes.\nAt the end of the sequence, performs a more powerful slash.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_04"
+      },
+      {
+        "GroupId": 2432,
+        "Proud": {
+          "Descriptions": [
+            "Shield DMG Absorption|{param1:F1P} Max HP+{param2:I}",
+            "Base DMG|{param3:P}",
+            "DMG Bonus on Hit Taken|{param4:P}",
+            "CD|{param5:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 243201,
+              "Level": 1,
+              "Parameters": [
+                0.144,
+                1386.3678,
+                1.216,
+                1.6,
+                7.5
+              ]
+            },
+            {
+              "Id": 243202,
+              "Level": 2,
+              "Parameters": [
+                0.1548,
+                1525.0239,
+                1.3072,
+                1.72,
+                7.5
+              ]
+            },
+            {
+              "Id": 243203,
+              "Level": 3,
+              "Parameters": [
+                0.1656,
+                1675.2346,
+                1.3984,
+                1.84,
+                7.5
+              ]
+            },
+            {
+              "Id": 243204,
+              "Level": 4,
+              "Parameters": [
+                0.18,
+                1837,
+                1.52,
+                2,
+                7.5
+              ]
+            },
+            {
+              "Id": 243205,
+              "Level": 5,
+              "Parameters": [
+                0.1908,
+                2010.3201,
+                1.6112,
+                2.12,
+                7.5
+              ]
+            },
+            {
+              "Id": 243206,
+              "Level": 6,
+              "Parameters": [
+                0.2016,
+                2195.1948,
+                1.7024,
+                2.24,
+                7.5
+              ]
+            },
+            {
+              "Id": 243207,
+              "Level": 7,
+              "Parameters": [
+                0.216,
+                2391.6243,
+                1.824,
+                2.4,
+                7.5
+              ]
+            },
+            {
+              "Id": 243208,
+              "Level": 8,
+              "Parameters": [
+                0.2304,
+                2599.6084,
+                1.9456,
+                2.56,
+                7.5
+              ]
+            },
+            {
+              "Id": 243209,
+              "Level": 9,
+              "Parameters": [
+                0.2448,
+                2819.147,
+                2.0672,
+                2.72,
+                7.5
+              ]
+            },
+            {
+              "Id": 243210,
+              "Level": 10,
+              "Parameters": [
+                0.2592,
+                3050.2405,
+                2.1888,
+                2.88,
+                7.5
+              ]
+            },
+            {
+              "Id": 243211,
+              "Level": 11,
+              "Parameters": [
+                0.2736,
+                3292.8887,
+                2.3104,
+                3.04,
+                7.5
+              ]
+            },
+            {
+              "Id": 243212,
+              "Level": 12,
+              "Parameters": [
+                0.288,
+                3547.0913,
+                2.432,
+                3.2,
+                7.5
+              ]
+            },
+            {
+              "Id": 243213,
+              "Level": 13,
+              "Parameters": [
+                0.306,
+                3812.8489,
+                2.584,
+                3.4,
+                7.5
+              ]
+            },
+            {
+              "Id": 243214,
+              "Level": 14,
+              "Parameters": [
+                0.324,
+                4090.161,
+                2.736,
+                3.6,
+                7.5
+              ]
+            },
+            {
+              "Id": 243215,
+              "Level": 15,
+              "Parameters": [
+                0.342,
+                4379.028,
+                2.888,
+                3.8,
+                7.5
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10242,
+        "Name": "Tidecaller",
+        "Description": "#Nothing to worry about. Should anyone raise a hand against her or her men, she will avenge it ten-fold with sword and thunder.\n\n<color=#FFD780FF>{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}</color>\nAccumulating the power of lightning, Beidou swings her blade forward fiercely, dealing <color=#FFACFFFF>Electro DMG</color>.\n\n<color=#FFD780FF>Hold</color>\nLifts her weapon up as a shield. Max DMG absorbed scales off Beidou's Max HP.\nAttacks using the energy stored within the greatsword upon release or once this ability's duration expires, dealing <color=#FFACFFFF>Electro DMG</color>. DMG dealt scales with the number of times Beidou is attacked in the skill's duration. The greatest DMG Bonus will be attained once this effect is triggered twice.\nThe shield possesses the following properties:\n·Has 250% <color=#FFACFFFF>Electro DMG</color> Absorption Efficiency.\n·Applies the <color=#FFACFFFF>Electro element</color> to Beidou upon activation.\n\n<i>Conquer the high seas! Pursue the waves and chase the storm!</i>",
+        "Icon": "Skill_S_Beidou_01"
+      }
+    ],
+    "SpecialSkills": [
+      {
+        "GroupId": 2424,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 242401,
+              "Level": 1,
+              "Parameters": [
+                4,
+                8,
+                15
+              ]
+            }
+          ],
+          "Display": 3
+        },
+        "Id": 242401,
+        "Name": "Polaris",
+        "Description": "When holding down on the Elemental Skill <color=#FFD780FF>Tidecaller</color>, 1 stack of power will accumulate every 0.8s, even when not under attack. This increases the DMG dealt at the point of unleashing.\nAdditionally, holding down to unleash <color=#FFD780FF>Tidecaller</color> and hitting the opponent also gives extra boosts based on the power accumulated: every stack active decreases Beidou's Elemental Skill CD by 4s, as well as regenerates 8 Elemental Energy for her. This effect can trigger once every 15s.\nAdditionally, when inside a {LINK#N11330003}<color=#FFD780FF>Polestar Field</color>{/LINK}, Beidou will enter the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state.",
+        "Icon": "UI_Talent_S_Beidou_08"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 2439,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:P}",
+          "Lightning DMG|{param2:P}",
+          "DMG Reduction|{param3:P}",
+          "Duration|{param4:F1}s",
+          "CD|{param5:F1}s",
+          "Energy Cost|{param6:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 243901,
+            "Level": 1,
+            "Parameters": [
+              1.216,
+              0.96,
+              0.2,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 243902,
+            "Level": 2,
+            "Parameters": [
+              1.3072,
+              1.032,
+              0.21,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 243903,
+            "Level": 3,
+            "Parameters": [
+              1.3984,
+              1.104,
+              0.22,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 243904,
+            "Level": 4,
+            "Parameters": [
+              1.52,
+              1.2,
+              0.24,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 243905,
+            "Level": 5,
+            "Parameters": [
+              1.6112,
+              1.272,
+              0.25,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 243906,
+            "Level": 6,
+            "Parameters": [
+              1.7024,
+              1.344,
+              0.26,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 243907,
+            "Level": 7,
+            "Parameters": [
+              1.824,
+              1.44,
+              0.28,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 243908,
+            "Level": 8,
+            "Parameters": [
+              1.9456,
+              1.536,
+              0.3,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 243909,
+            "Level": 9,
+            "Parameters": [
+              2.0672,
+              1.632,
+              0.32,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 243910,
+            "Level": 10,
+            "Parameters": [
+              2.1888,
+              1.728,
+              0.34,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 243911,
+            "Level": 11,
+            "Parameters": [
+              2.3104,
+              1.824,
+              0.35,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 243912,
+            "Level": 12,
+            "Parameters": [
+              2.432,
+              1.92,
+              0.36,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 243913,
+            "Level": 13,
+            "Parameters": [
+              2.584,
+              2.04,
+              0.37,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 243914,
+            "Level": 14,
+            "Parameters": [
+              2.736,
+              2.16,
+              0.38,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 243915,
+            "Level": 15,
+            "Parameters": [
+              2.888,
+              2.28,
+              0.39,
+              15,
+              20,
+              80
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10245,
+      "Name": "Stormbreaker",
+      "Description": "Recalling her slaying of the great beast Haishan, Beidou calls upon that monstrous strength and the lightning to create a Thunderbeast's Targe around herself, dealing <color=#FFACFFFF>Electro DMG</color> to nearby opponents.\n\n<color=#FFD780FF>Thunderbeast's Targe</color>\n·When Normal and Charged Attacks hit, they create a lightning discharge that can jump between opponents, dealing <color=#FFACFFFF>Electro DMG</color>.\n·Increases the character's resistance to interruption, and decreases DMG taken.\n\nA maximum of 1 lightning discharge can be triggered per second.\n\n<i>With a peal of thunder, Haishan is slain.</i>",
+      "Icon": "Skill_E_Beidou_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 2421,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 242101,
+              "Level": 1,
+              "Parameters": [
+                2
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 242101,
+        "Name": "Retribution",
+        "Description": "Counterattacking with <color=#FFD780FF>Tidecaller</color> at the precise moment when the character is hit grants the maximum DMG Bonus.",
+        "Icon": "UI_Talent_S_Beidou_05"
+      },
+      {
+        "GroupId": 2422,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 242201,
+              "Level": 1,
+              "Parameters": [
+                0.15
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 242201,
+        "Name": "Lightning Storm",
+        "Description": "Gain the following effects for 10s after unleashing <color=#FFD780FF>Tidecaller</color> with its maximum DMG Bonus: \n·DMG dealt by Normal and Charged Attacks is increased by 15%. ATK SPD of Normal and Charged Attacks is increased by 15%.\n·Greatly reduced delay before unleashing Charged Attacks.",
+        "Icon": "UI_Talent_S_Beidou_06"
+      },
+      {
+        "GroupId": 2423,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 242301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 242301,
+        "Name": "Conqueror of Tides",
+        "Description": "Decreases swimming Stamina consumption for your own party members by 20%.\nNot stackable with Passive Talents that provide the exact same effects.",
+        "Icon": "UI_Talent_Explosion_Swim"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 241,
+        "Name": "Sea Beast's Scourge",
+        "Description": "When <color=#FFD780FF>Stormbreaker</color> is used:\nCreates a shield that absorbs up to 16% of Beidou's Max HP for 15s.\nThis shield absorbs <color=#FFACFFFF>Electro DMG</color> 250% more effectively.",
+        "Icon": "UI_Talent_S_Beidou_02"
+      },
+      {
+        "Id": 242,
+        "Name": "Upon the Turbulent Sea, the Thunder Arises",
+        "Description": "<color=#FFD780FF>Stormbreaker</color>'s arc lightning can jump to 2 additional targets.",
+        "Icon": "UI_Talent_S_Beidou_01"
+      },
+      {
+        "Id": 243,
+        "Name": "Summoner of Storm",
+        "Description": "Increases the Level of <color=#FFD780FF>Tidecaller</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Beidou_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 244,
+        "Name": "Stunning Revenge",
+        "Description": "Upon being attacked, Beidou's Normal Attacks gain an additional instance of 20% <color=#FFACFFFF>Electro DMG</color> for 10s.",
+        "Icon": "UI_Talent_S_Beidou_03"
+      },
+      {
+        "Id": 245,
+        "Name": "Crimson Tidewalker",
+        "Description": "Increases the Level of <color=#FFD780FF>Stormbreaker</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Beidou_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 246,
+        "Name": "Bane of Evil",
+        "Description": "During the duration of <color=#FFD780FF>Stormbreaker</color>, the <color=#FFACFFFF>Electro RES</color> of surrounding opponents is decreased by 15%.",
+        "Icon": "UI_Talent_S_Beidou_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Uncrowned Lord of the Ocean",
+    "Detail": "Captain of her crew, The Crux. She's quite an unbound and forthright woman.",
+    "Association": 2,
+    "Native": "The Crux",
+    "BirthMonth": 2,
+    "BirthDay": 14,
+    "VisionBefore": "Electro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Victor Mare",
+    "CvChinese": "唐雅菁",
+    "CvJapanese": "小清水亜美",
+    "CvEnglish": "Allegra Clark",
+    "CvKorean": "Jung Yoo-mi",
+    "CookBonus": {
+      "OriginItemId": 108099,
+      "ItemId": 108138,
+      "InputList": [
+        100061,
+        100027
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "I'm Beidou. You've heard of my ship, The Crux and its crew? If you too love adventure, then join me. I've got your back."
+      },
+      {
+        "Title": "Chat: Sparring",
+        "Context": "If you ever want to trade tactics, I'm always ready."
+      },
+      {
+        "Title": "Chat: Drinking",
+        "Context": "Ah! A cold beer after a hard day's work... Nothing like it!"
+      },
+      {
+        "Title": "Chat: Land",
+        "Context": "It's hard to remain on dry land for so long. Can never seem to quite get my land legs back."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "When stuck on a deserted island, rain is a precious source of drinking water. There's no need for it now though."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Hey, it's just a little lightning. No need to fear it on the open ocean, so there's even less need to fear it on dry land."
+      },
+      {
+        "Title": "When It's Windy",
+        "Context": "This weather would be great for setting sail."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "Wind's picking up. If sand gets in your eyes, be sure not to rub them."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Yo, good morning. I'm about to head off, coming with me?"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Let's get Xiangling to whip us up something for lunch. Believe me, a hot meal from her is far better than the salted fish we eat out at sea."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Alright, I'm off for a drink. Hahaha, no one willing to sell you a proper drink, huh? Perhaps I can..."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Time moves quickly. Haha, go, may the wind be at your back."
+      },
+      {
+        "Title": "About Beidou",
+        "Context": "We're setting sail! Men, to your posts! A new adventure is about to begin!"
+      },
+      {
+        "Title": "About Us: Titles",
+        "Context": "I'm the captain, so you can be my first mate! Deal? Ha? Such names are too outdated for you huh? We'll call each other whatever you wish then."
+      },
+      {
+        "Title": "About Us: Eye for People",
+        "Context": "I tend to be a good judge of character. When you've learned to read the open ocean, reading people is a cinch. Haha, and that's how I knew you're the good sort the second I laid eyes on ya!"
+      },
+      {
+        "Title": "About Us: Choices",
+        "Context": "I chose you as my crewmate, as my comrade on the sea. It gives me great pride to be able to say that."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "To those that don't have a Vision, it must seem that those with Visions are like flagships from the Archons to follow. As such, I make sure to fly my flag with pride. That is my motivation."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "At a loss? When you don't know what to do, just take the first step. The rest will figure itself out naturally."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Every time I return from a long journey and I see the lapis gledes, I'm reminded that I'm almost home. The scenery out on the open ocean gets familiar real quick. Sure, they're birds of prey, but seeing them fly so freely is heart-warming."
+      },
+      {
+        "Title": "About Ningguang: Liyue Qixing",
+        "Context": "Ningguang, eh? As far as Liyue Qixing is concerned, she seems to be doing a good job. But for me, my responsibility lies with my ship and my men, and not with Liyue Qixing."
+      },
+      {
+        "Title": "About Ningguang: Attitudes",
+        "Context": "Ningguang is never really one to speak frankly, but she has been very direct with her criticism of me in the past. Haha... But hey, whether she likes me or hates me is her choice, nothing I can do to sway her."
+      },
+      {
+        "Title": "About Xiangling: Culinary Skills",
+        "Context": "When we're out on the open ocean, the one thing we do all miss is Xiangling's cooking. When spirits are low, just thinking of her fried jueyun chili, bursting with flavor... It gives everyone just that little extra kick."
+      },
+      {
+        "Title": "About Xiangling: Food Tasting",
+        "Context": "Xiangling huh? She sometimes uses some... interesting ingredients in her dishes to bring about some, ah... intriguing flavors. Though... there's no way she can improve without having someone to taste-test — a role that I am more than happy to fill."
+      },
+      {
+        "Title": "About Zhongli",
+        "Context": "You mean the gentleman from Wangsheng Funeral Parlor? My men sometimes speak of the rumors surrounding him — he sounds interesting. Yes, if I get the chance I'd like to meet him someday."
+      },
+      {
+        "Title": "About Xiao",
+        "Context": "One year on the eve of the Lantern Rite, we ran into a storm as we were returning to port. Try as we did, we only made it back to Liyue Harbor in the dead of night, long after the lanterns had all been released. As I looked towards Guyun Stone Forest, I saw an adeptus, floating in the air, in the form of what appeared to be a young boy. I guess it is like the legends say — there really must be those that watch over Liyue, even if they cannot be seen."
+      },
+      {
+        "Title": "About Ganyu",
+        "Context": "Privately, Ganyu and I get on like a house on fire! But as you know, she's the secretary to the Liyue Qixing... and I'm not exactly in their good books right now! Doesn't bother me, but I wouldn't want to put Ganyu in a difficult position. So just keep what I said between us, yeah?"
+      },
+      {
+        "Title": "About Xinyan",
+        "Context": "She's got a great personality, that one! The guys in the crew love that rock and roll of hers. Me? We have common ground, just... not when it comes to taste in music."
+      },
+      {
+        "Title": "About Yaoyao",
+        "Context": "Yaoyao always comes on board to play when we're in the harbor. Trouble is, when it's time for her to go she gives you the puppy eyes, and no one has the heart to send her away... Means we're always cutting it quite close by the time we manage to set sail."
+      },
+      {
+        "Title": "About Kaedehara Kazuha",
+        "Context": "Kazuha? That scallywag actually blocked a strike from the Raiden Shogun outside Tenshukaku! Easier said than done... After the battle he came to the Crux Fleet — said he'd voyage with us a while longer. I was more than happy to oblige. If the day comes when he decides to set off again by himself on the next stage of his journey, I'll send him off with a drink, haha..."
+      },
+      {
+        "Title": "More About Beidou: I",
+        "Context": "Before you step foot on The Alcor, you need to answer one question. When the sea is full of perils — why is it that you still wish to come aboard my ship?"
+      },
+      {
+        "Title": "More About Beidou: II",
+        "Context": "You want to know of my legendary tales? Hahaha, that's just my men exaggerating, adding in their own little details. Although, if you were to ask me if I'm afraid of what monsters lurk in the deep, I'd tell you I have no fear of them."
+      },
+      {
+        "Title": "More About Beidou: III",
+        "Context": "You wanna know why I help the common folk? Why not? Everyone has their low points in life. I don't really do anything, other than help steer those who are truly lost towards a brighter future."
+      },
+      {
+        "Title": "More About Beidou: IV",
+        "Context": "I've been through some hard times. When I was a child we had little money, so nothing to eat, and lived for years by stealing fruit off of people's trees. Even after I got my own ship, I was cast out by pompous merchants. But me telling you such stories is merely for your amusement. I have no intention of making you live through it too."
+      },
+      {
+        "Title": "More About Beidou: V",
+        "Context": "I have many brothers that sail with me. I have asked, and remember, why each and every one of them came on board. You, however, are special. I know you still have your own things to deal with, and as such, I won't try to rope you into coming onboard permanently. But remember, there is always a place for you onboard The Alcor."
+      },
+      {
+        "Title": "Beidou's Hobbies",
+        "Context": "My hobbies...? Eh, lemme think... Well, there's adventure, sailing, making friends, drinking, eating... more than I can count on one hand."
+      },
+      {
+        "Title": "Beidou's Troubles",
+        "Context": "If you can change something, change it. If you can't, don't waste time thinking about it. That's how I go about things. But really, if you get stuck, come find me. I'll help you deal with it."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "I like food with robust flavors. Spicy fried meat or spicy tofu are my favorites. Sitting down to a big hearty meal together, where everyone can fill their bellies — now that's when things get lively! Haha, alright, alright, all this talk is making me hungry!"
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I'm not a fan of anything cold, it does nothing to fire up my appetite. I'd rather fry up a few fish."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Tastes good, I like it! Mind giving me a bowl of rice with this?"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Your cooking skills aren't bad at all, eating your food has me in a good mood."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "You know, at the end of the day, food is food, and that's fine by me."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Come, board my ship. I've gathered the crew. The food and drink are all prepared. Today is your birthday, so you are the captain. Haha, so: where should we set sail?"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Great! I feel much stronger."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "We're making progress. Let's crack open a bottle to celebrate!"
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "A prime example! It is an honor to have you aboard. I need to keep up if I'm to keep the respect of my crew."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "After all this training, I feel like I'm finally at my best. Thank you... But please, I'd still like for you to keep me on my toes."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Back off!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Ha!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Back at ya!"
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Take this!"
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "Hurrrh!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Power that ended Haishan!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Eyes on me!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "To ashes!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Huh, where've you been hiding?"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Nice, I'm starting to lose count!"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "The Mora the merrier. First round's on me!"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "It's not over!"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Hah, I've still got some kick."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "I never yield."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Get behind me!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Get back! Don't be a hero."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "This isn't good..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Men... Fall... back..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Crew... Set sail for home..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Just a scratch."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "You haven't won yet."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Not bad."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Alright, let's go!"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Come with me."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "I trust you."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Beidou is the leader of The Crux — an armed crew based in Liyue Harbor.\nAn armed crew means exactly what it sounds like: a crew of sailors armed to the teeth.\nWithout getting into too many details, everything The Crux does is approved by the Qixing... more or less.\nBeidou is a trusted leader, so much so that her crew believes her capable of taming the storms and billows on the sea.\n\"It's Beidou! Even the mightiest of storms must bow its head to her might!\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Beidou is something of a cultural icon in Liyue.\nThough her fame does not quite reach the same lofty heights as that of the Liyue Qixing, one can be certain that every merchant in the city knows her name — and that of her crew, The Crux.\nNaturally, there are rumors abound regarding someone of her status. People love to tell epic tales of her earth-shattering (or rather, sea-splitting) feats. Tales in which her abilities are exaggerated to almost superhuman levels.\nOne rumor is that she can channel Electro energy with her sword. It is said that she once used it to cut a formidable sea monster from the depths of the ocean abyss in half with just one hit.\nBystanders who overhear such tales generally dismiss them as drunken ramblings. But to anyone who has ever voyaged with Beidou themselves, these stories are no joke. In their view, if this world really were home to a giant sea monster from the ocean abyss... Beidou would certainly be capable of cutting it in half.\nIn summary, Beidou's abilities are every bit as impressive as her reputation in business circles. So if you hear her lauded as the Uncrowned Lord of the Ocean — suffice to say that there is no smoke without fire."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Business people tend to put profit before their humanity. This is just accepted as the way of the world. At most, it makes for some light verbal sparring at the dinner table.\nBut things are different in Liyue, where everyone is involved in business. They reject the notion entirely, claiming that Liyue Harbor is a special place where humanity is sacred.\nForeign merchants will retort that the only thing special about Liyue is that \"They've managed to commodify humanity, too!\" To this, Liyue locals respond, \"Then how do you explain The Crux?\"\nWith The Crux having made a name for itself over many years, its services are extremely expensive to charter. And yet, on one voyage when The Crux encountered a strong storm, Beidou noticed a small private boat nearby. Seeing the way it was tossed about by the waves, she ordered her crew to tow the boat to safety — despite the risk that her ship's keel might give way. What little food and water the fleet had left, Beidou shared with the rescued crew as she navigated her vessel onward through the raging storm.\nFinally, after several days, The Crux delivered the rescued boat to a safe mooring spot. Grateful to Beidou for saving their lives, the crew of the rescued boat became her loyal trade partners thereafter.\nAfter Liyue locals recount this story, they smile and insist, \"When you have someone risking their life like that, you can be sure that it takes far more than commodification to explain their actions! Would you really dare to look Beidou in the eyes and talk about the commodification of humanity?\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Word has it that The Crux's boss behind the curtains is none other than the Qixing's Tianquan, Ningguang, herself.\nBoth of the people involved deny this outright, though they do so for different reasons.\nAs a member of the Qixing, Ningguang often needs someone else to do her dirty work for her. Of the many candidates available, she picked Beidou.\nNingguang would emphasize that she picked Beidou, not The Crux. Ningguang's collaboration with The Crux is, therefore, purely incidental.\nMeanwhile, when Beidou hears the rumors about her dealings with Ningguang, she furiously insists that she collaborates with Ningguang on an equal footing: Beidou is her own boss and no one, not even Ningguang, is sitting in the background pulling the strings for her.\nBeidou is certainly unique among Ningguang's collaborators.\nShe does not tread carefully or show reverence in the way that most of them do. In fact, one could even say Beidou is sometimes at odds with Ningguang.\nNingguang's advisers worry constantly that Beidou is too unpredictable and too much of a maverick. But Ningguang simply smiles and dismisses their concerns.\n\"On the contrary, Beidou is the most reliable person in Liyue,\" she replies. \"Just tell her the truth, as well as what's in it for her, and she'll come around in her own time.\""
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Once, after disembarking from a long voyage, The Crux held its customary three-day celebratory banquet. The autumn was like any other before it — except for the new chef in town. This was Xiangling, the head chef-to-be of the Wanmin Restaurant.\nLooking to keep costs down, they lured Xiangling onboard after meeting her on the streets, by hook and by crook. When she saw Beidou, Xiangling was dismayed, and let Beidou know this in no uncertain terms: \"If you want to have Yue-style seafood, then I can't agree to help you. I'll have you know that I intend to transcend Liyue's two warring culinary styles with my cooking...\"\nBeidou merely smiled and gestured to the chest of gold coins beside her: \"Just do what you're good at. We made quite a bit on our last run. How does a retainer of fifty thousand Mora sound?\"\nNot one to shy away for a chance to prove the worth of her cooking, Xiangling took the job.\nWhen the day was done, Beidou was indeed won over by Xiangling's skill. She declared in front of her crew that Xiangling would soon be a renowned chef throughout Liyue. She also insisted that they refer to her as \"Madam Xiangling.\"\nHaving only begun to make her name, Xiangling admired Beidou for her generosity with money and her direct personality. Thereafter, Xiangling would sail with Beidou often, looking for new and exotic seafood ingredients. She found herself surprised by Beidou's vast knowledge of seafood and their culinary preparation, given how far she usually was from any kitchen.\nOf course, that didn't mean Xiangling would necessarily heed Beidou's advice on whether something was edible or not...but that is a story for another time."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Some say an object takes after its master.\nThough it may not be a suitable description, The Crux crew does indeed take after Beidou, exhibiting the same qualities.\nHowever, there are still secrets among the crew, spreading in places unnoticed by Beidou.\nHer First Mate always takes new sailors out after their first safe return for drinks and fills them in on the details of an old story:\nIn the past, the crew went on a journey to brave the unknown seas and found itself at death's door in a horrific storm.\nAt that time, Beidou stood on the deck behind the wheel, singing a Liyue fishermen's song in the storm.\n\"...all the way until the waves died down and dawn broke on the far horizon...\"\nThe First Mate often ends the story with this final line and a look of longing on his face.\nAs business grew and the crew expanded, more and more outrageously incredible details were added to the story, making the rookies worship Beidou like a goddess."
+      },
+      {
+        "Title": "Pier Laborers' Gossip",
+        "Context": "1. Facing a three-headed hydra of unrivaled girth, Beidou hurled forth her greatsword. Spinning in the air, it sliced clean through all three of the hydra's vertebrae, before returning to her waiting hand.\n2. Beidou has beaten Ningguang at chess. Twice. The important part is not so much that she did win Ningguang's money, but more that she dared to.\n3. Since the day she slew the sea monster Haishan, Beidou has never sung a fishermen's shanty ever again.\n4. Yes, Beidou knows shanties. But don't you dare ask her that to her face. I mean, you know how that hydra ended up, don't you..."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Liyue and Inazuma share a common saying: \"Its fins formed the ocean deep, its tail the mountains high.\" The fishermen learned this phrase while ashore long ago, and sang it over and over, spreading the tune far and wide till it became the much-loved song people know today. Whenever the mists gather over the sea's surface, one can hear the distant song of the fishermen hidden in the white shroud: \"its fins formed the oceans deep, its tail the mountains high...\"\nThis was Beidou's childhood lullaby. The tale of Rex Lapis smiting the sea monsters had become legendary among the people of Liyue. As a child, Beidou loved tales like this, and in her dreams, she thought: One day, I want to see this big fish too.\nThis day, however, she sang this song with a different emotion in her heart. Her entire crew sang along as they sailed.\nHaishan was in the waters with them — at once like a dragon and a fish, it was larger than any could have imagined in their worst nightmares, and mighty as a deity, raising waves dozens of meters high with ease.\nAll who ply their trade on the high seas are destined to meet Haishan eventually. Beidou had longed to do so since she was nine, dreaming of slicing its head off in a single blow.\nMany times she had challenged the creature, and many times she had failed. But this day was different. This day she charged at Haishan with her best greatsword in hand, and crack sailors at her back.\nThe battle would rage fiercely for four days. With cannons and harpoons, arrows and ropes the fleet would assail Haishan, while Beidou battled the thusly tied-down creature for ten hours, well into the night.\nNow, nighttime was when Haishan was in its element, and in their vigilance not a single member of the fleet dared sleep a wink. Beidou stood upon the prow, listening to the wind.\nOne strike. Just one strike. That was all she needed. And so she waited, unmoving, in the freezing wind.\nThen, at the crack of dawn, having neither eaten nor drank throughout the night, Beidou heard a change in the sound of the waves.\nWith one almighty strike that sounded as if it could have sliced the moon in two or ripped a mountain from the face of the world, she chopped the leviathan's head clean off!\nThe sound of thunder filled the heavens, and a single bolt of purple lightning struck the ocean right in front of Beidou, even as she bathed in the blood of her nemesis.\nThus descended a Vision to the slayer of the sea monster, its violet glow as stunning as lightning, and its immaculate, jeweled form a treasure more precious than dragon blood. A suitably divine gift for the hero who subdued Haishan."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 202400,
+      "Name": "Rolling Waves",
+      "Description": "Beidou's outfit. Lightweight clothing saturated with a brave seafarer's spirit.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104144,
+    113002,
+    100028,
+    112037,
+    104318,
+    113005
+  ],
+  "NameCard": {
+    "Name": "Beidou: Weighing Anchor",
+    "Description": "Namecard style.\n\"Weighing anchor out to sea, one is wont to waver. But look to the skies, and the stars shall light the way.\"",
+    "Icon": "UI_NameCardIcon_Beidou",
+    "PicturePrefix": "UI_NameCardPic_Beidou"
+  }
+}

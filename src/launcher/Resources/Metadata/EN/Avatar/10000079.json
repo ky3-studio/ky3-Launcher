@@ -1,0 +1,1243 @@
+{
+  "Id": 10000079,
+  "PromoteId": 79,
+  "Sort": 63,
+  "Body": 3,
+  "Icon": "UI_AvatarIcon_Dehya",
+  "SideIcon": "UI_AvatarIcon_Side_Dehya",
+  "Name": "Dehya",
+  "Description": "A member of the Eremites, a mercenary organization that roams the sands of Sumeru. Valiant and powerful, she enjoys great fame amongst her fellow Eremites.",
+  "BeginTime": "2023-02-28T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 11,
+  "BaseValue": {
+    "HpBase": 1220.2496,
+    "AttackBase": 20.6682,
+    "DefenseBase": 48.88111
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 7931,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "4-Hit DMG|{param4:F1P}",
+            "Charged Attack Cyclic DMG|{param5:F1P}",
+            "Charged Attack Final DMG|{param6:P}",
+            "Charged Attack Stamina Cost|{param7:F1}/s",
+            "Max Duration|{param8:F1}s",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 793101,
+              "Level": 1,
+              "Parameters": [
+                0.621178,
+                0.617102,
+                0.766312,
+                0.952914,
+                0.5633,
+                1.01824,
+                40,
+                5,
+                0.745878,
+                1.49144,
+                1.862889
+              ]
+            },
+            {
+              "Id": 793102,
+              "Level": 2,
+              "Parameters": [
+                0.671739,
+                0.667331,
+                0.828686,
+                1.030477,
+                0.60915,
+                1.10112,
+                40,
+                5,
+                0.806589,
+                1.612836,
+                2.01452
+              ]
+            },
+            {
+              "Id": 793103,
+              "Level": 3,
+              "Parameters": [
+                0.7223,
+                0.71756,
+                0.89106,
+                1.10804,
+                0.655,
+                1.184,
+                40,
+                5,
+                0.8673,
+                1.734233,
+                2.16615
+              ]
+            },
+            {
+              "Id": 793104,
+              "Level": 4,
+              "Parameters": [
+                0.79453,
+                0.789316,
+                0.980166,
+                1.218844,
+                0.7205,
+                1.3024,
+                40,
+                5,
+                0.95403,
+                1.907656,
+                2.382765
+              ]
+            },
+            {
+              "Id": 793105,
+              "Level": 5,
+              "Parameters": [
+                0.845091,
+                0.839545,
+                1.04254,
+                1.296407,
+                0.76635,
+                1.38528,
+                40,
+                5,
+                1.014741,
+                2.029052,
+                2.534396
+              ]
+            },
+            {
+              "Id": 793106,
+              "Level": 6,
+              "Parameters": [
+                0.902875,
+                0.89695,
+                1.113825,
+                1.38505,
+                0.81875,
+                1.48,
+                40,
+                5,
+                1.084125,
+                2.167791,
+                2.707688
+              ]
+            },
+            {
+              "Id": 793107,
+              "Level": 7,
+              "Parameters": [
+                0.982328,
+                0.975882,
+                1.211842,
+                1.506934,
+                0.8908,
+                1.61024,
+                40,
+                5,
+                1.179528,
+                2.358556,
+                2.945964
+              ]
+            },
+            {
+              "Id": 793108,
+              "Level": 8,
+              "Parameters": [
+                1.061781,
+                1.054813,
+                1.309858,
+                1.628819,
+                0.96285,
+                1.74048,
+                40,
+                5,
+                1.274931,
+                2.549322,
+                3.184241
+              ]
+            },
+            {
+              "Id": 793109,
+              "Level": 9,
+              "Parameters": [
+                1.141234,
+                1.133745,
+                1.407875,
+                1.750703,
+                1.0349,
+                1.87072,
+                40,
+                5,
+                1.370334,
+                2.740087,
+                3.422517
+              ]
+            },
+            {
+              "Id": 793110,
+              "Level": 10,
+              "Parameters": [
+                1.22791,
+                1.219852,
+                1.514802,
+                1.883668,
+                1.1135,
+                2.0128,
+                40,
+                5,
+                1.47441,
+                2.948195,
+                3.682455
+              ]
+            },
+            {
+              "Id": 793111,
+              "Level": 11,
+              "Parameters": [
+                1.314586,
+                1.305959,
+                1.621729,
+                2.016633,
+                1.1921,
+                2.15488,
+                40,
+                5,
+                1.578486,
+                3.156303,
+                3.942393
+              ]
+            },
+            {
+              "Id": 793112,
+              "Level": 12,
+              "Parameters": [
+                1.401262,
+                1.392066,
+                1.728656,
+                2.149598,
+                1.2707,
+                2.29696,
+                40,
+                5,
+                1.682562,
+                3.364411,
+                4.202331
+              ]
+            },
+            {
+              "Id": 793113,
+              "Level": 13,
+              "Parameters": [
+                1.487938,
+                1.478174,
+                1.835584,
+                2.282562,
+                1.3493,
+                2.43904,
+                40,
+                5,
+                1.786638,
+                3.572519,
+                4.462269
+              ]
+            },
+            {
+              "Id": 793114,
+              "Level": 14,
+              "Parameters": [
+                1.574614,
+                1.564281,
+                1.942511,
+                2.415527,
+                1.4279,
+                2.58112,
+                40,
+                5,
+                1.890714,
+                3.780627,
+                4.722207
+              ]
+            },
+            {
+              "Id": 793115,
+              "Level": 15,
+              "Parameters": [
+                1.66129,
+                1.650388,
+                2.049438,
+                2.548492,
+                1.5065,
+                2.7232,
+                40,
+                5,
+                1.99479,
+                3.988735,
+                4.982145
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10791,
+        "Name": "Sandstorm Assault",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive strikes using her Claymore and her martial arts.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous slashes.\nAt the end of the sequence, performs a more powerful slash.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_04"
+      },
+      {
+        "GroupId": 7932,
+        "Proud": {
+          "Descriptions": [
+            "Indomitable Flame DMG|{param1:F1P}",
+            "Ranging Flame DMG|{param2:F1P}",
+            "Field DMG|{param3:F1P} ATK+{param4:F2P} Max HP",
+            "Mitigation|{param5:P}",
+            "Redmane's Blood Maximum|{param6:P} Max HP",
+            "Field Duration|{param7:F1}s",
+            "CD|{param8:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 793201,
+              "Level": 1,
+              "Parameters": [
+                1.1288,
+                1.328,
+                0.602,
+                0.01032,
+                0.32,
+                2,
+                12,
+                20
+              ]
+            },
+            {
+              "Id": 793202,
+              "Level": 2,
+              "Parameters": [
+                1.21346,
+                1.4276,
+                0.64715,
+                0.011094,
+                0.34,
+                2,
+                12,
+                20
+              ]
+            },
+            {
+              "Id": 793203,
+              "Level": 3,
+              "Parameters": [
+                1.29812,
+                1.5272,
+                0.6923,
+                0.011868,
+                0.36,
+                2,
+                12,
+                20
+              ]
+            },
+            {
+              "Id": 793204,
+              "Level": 4,
+              "Parameters": [
+                1.411,
+                1.66,
+                0.7525,
+                0.0129,
+                0.38,
+                2,
+                12,
+                20
+              ]
+            },
+            {
+              "Id": 793205,
+              "Level": 5,
+              "Parameters": [
+                1.49566,
+                1.7596,
+                0.79765,
+                0.013674,
+                0.4,
+                2,
+                12,
+                20
+              ]
+            },
+            {
+              "Id": 793206,
+              "Level": 6,
+              "Parameters": [
+                1.58032,
+                1.8592,
+                0.8428,
+                0.014448,
+                0.42,
+                2,
+                12,
+                20
+              ]
+            },
+            {
+              "Id": 793207,
+              "Level": 7,
+              "Parameters": [
+                1.6932,
+                1.992,
+                0.903,
+                0.01548,
+                0.44,
+                2,
+                12,
+                20
+              ]
+            },
+            {
+              "Id": 793208,
+              "Level": 8,
+              "Parameters": [
+                1.80608,
+                2.1248,
+                0.9632,
+                0.016512,
+                0.46,
+                2,
+                12,
+                20
+              ]
+            },
+            {
+              "Id": 793209,
+              "Level": 9,
+              "Parameters": [
+                1.91896,
+                2.2576,
+                1.0234,
+                0.017544,
+                0.48,
+                2,
+                12,
+                20
+              ]
+            },
+            {
+              "Id": 793210,
+              "Level": 10,
+              "Parameters": [
+                2.03184,
+                2.3904,
+                1.0836,
+                0.018576,
+                0.5,
+                2,
+                12,
+                20
+              ]
+            },
+            {
+              "Id": 793211,
+              "Level": 11,
+              "Parameters": [
+                2.14472,
+                2.5232,
+                1.1438,
+                0.019608,
+                0.52,
+                2,
+                12,
+                20
+              ]
+            },
+            {
+              "Id": 793212,
+              "Level": 12,
+              "Parameters": [
+                2.2576,
+                2.656,
+                1.204,
+                0.02064,
+                0.54,
+                2,
+                12,
+                20
+              ]
+            },
+            {
+              "Id": 793213,
+              "Level": 13,
+              "Parameters": [
+                2.3987,
+                2.822,
+                1.27925,
+                0.02193,
+                0.56,
+                2,
+                12,
+                20
+              ]
+            },
+            {
+              "Id": 793214,
+              "Level": 14,
+              "Parameters": [
+                2.5398,
+                2.988,
+                1.3545,
+                0.02322,
+                0.56,
+                2,
+                12,
+                20
+              ]
+            },
+            {
+              "Id": 793215,
+              "Level": 15,
+              "Parameters": [
+                2.6809,
+                3.154,
+                1.42975,
+                0.02451,
+                0.56,
+                2,
+                12,
+                20
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10792,
+        "Name": "Molten Inferno",
+        "Description": "This art of Dehya's own invention changes its method of use depending on the combat situation.\n\n<color=#FFD780FF>Indomitable Flame</color>\nThis skill will be unleashed should there be no Fiery Sanctum field created by Dehya herself present at the time.\nDeals <color=#FF9999FF>AoE Pyro DMG</color>, and creates a field known as Fiery Sanctum.\n\n<color=#FFD780FF>Ranging Flame</color>\nThis skill will be unleashed should a Fiery Sanctum field created by Dehya herself already exist.\nDehya will perform a leaping attack, dealing <color=#FF9999FF>AoE Pyro DMG</color> before recreating a Fiery Sanctum field at her new position.\nA Fiery Sanctum field created this way will inherit the remaining duration of the previous field.\n\nRanging Flame can be used only once throughout a single Fiery Sanctum field's duration.\n\n<color=#FFD780FF>Fiery Sanctum</color>\nWhen an opponent within a Fiery Sanctum field takes DMG, the field will unleash a coordinated attack, dealing <color=#FF9999FF>AoE Pyro DMG</color> to them based on Dehya's ATK and Max HP. This effect can be triggered once every 2.5s.\nActive characters within this field have their resistance to interruption increased, and when such characters take DMG, a portion of that damage will be mitigated and flow into Redmane's Blood. Dehya will then take this DMG over 10s. When the mitigated DMG stored by Redmane's Blood reaches or goes over a certain percentage of Dehya's Max HP, she will stop mitigating DMG in this way.\n\nOnly 1 Fiery Sanctum created by Dehya herself can exist at the same time.\n\n<i>Walk this fiery ordeal with me and purge all impurity, just as a beast of flames that must descend from the blaze.</i>",
+        "Icon": "Skill_S_Dehya_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 7939,
+      "Proud": {
+        "Descriptions": [
+          "Flame-Mane's Fist DMG|{param1:F1P} ATK+{param2:F2P} Max HP",
+          "Incineration Drive DMG|{param3:F1P} ATK+{param4:F2P} Max HP",
+          "Duration|{param5:F1}s",
+          "CD|{param6:F1}s",
+          "Energy Cost|{param7:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 793901,
+            "Level": 1,
+            "Parameters": [
+              0.987,
+              0.01692,
+              1.393,
+              0.02388,
+              4,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 793902,
+            "Level": 2,
+            "Parameters": [
+              1.061025,
+              0.018189,
+              1.497475,
+              0.025671,
+              4,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 793903,
+            "Level": 3,
+            "Parameters": [
+              1.13505,
+              0.019458,
+              1.60195,
+              0.027462,
+              4,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 793904,
+            "Level": 4,
+            "Parameters": [
+              1.23375,
+              0.02115,
+              1.74125,
+              0.02985,
+              4,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 793905,
+            "Level": 5,
+            "Parameters": [
+              1.307775,
+              0.022419,
+              1.845725,
+              0.031641,
+              4,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 793906,
+            "Level": 6,
+            "Parameters": [
+              1.3818,
+              0.023688,
+              1.9502,
+              0.033432,
+              4,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 793907,
+            "Level": 7,
+            "Parameters": [
+              1.4805,
+              0.02538,
+              2.0895,
+              0.03582,
+              4,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 793908,
+            "Level": 8,
+            "Parameters": [
+              1.5792,
+              0.027072,
+              2.2288,
+              0.038208,
+              4,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 793909,
+            "Level": 9,
+            "Parameters": [
+              1.6779,
+              0.028764,
+              2.3681,
+              0.040596,
+              4,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 793910,
+            "Level": 10,
+            "Parameters": [
+              1.7766,
+              0.030456,
+              2.5074,
+              0.042984,
+              4,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 793911,
+            "Level": 11,
+            "Parameters": [
+              1.8753,
+              0.032148,
+              2.6467,
+              0.045372,
+              4,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 793912,
+            "Level": 12,
+            "Parameters": [
+              1.974,
+              0.03384,
+              2.786,
+              0.04776,
+              4,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 793913,
+            "Level": 13,
+            "Parameters": [
+              2.097375,
+              0.035955,
+              2.960125,
+              0.050745,
+              4,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 793914,
+            "Level": 14,
+            "Parameters": [
+              2.22075,
+              0.03807,
+              3.13425,
+              0.05373,
+              4,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 793915,
+            "Level": 15,
+            "Parameters": [
+              2.344125,
+              0.040185,
+              3.308375,
+              0.056715,
+              4,
+              18,
+              70
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10795,
+      "Name": "Leonine Bite",
+      "Description": "Unleashing her burning anger and casting her inconvenient blade aside, Dehya enters the Blazing Lioness state and increases her resistance to interruption.\nIn this state, Dehya will automatically and continuously unleash the Flame-Mane's Fists, dealing <color=#FF9999FF>Pyro DMG</color> based on her ATK and Max HP, and when its duration ends, she will unleash an Incineration Drive, dealing <color=#FF9999FF>AoE Pyro DMG</color> based on her ATK and Max HP.\nIf a Fiery Sanctum field created by Dehya's own Elemental Skill \"Molten Inferno\" exists when this ability is unleashed, Dehya will retrieve it, and then create another field once Blazing Lioness's duration expires. This field will take on the retrieved field's duration at the moment of its retrieval.\nIn this state, Dehya will be unable to cast her Elemental Skill, or perform Normal, Charged, and Plunging Attacks. \"Normal Attack: Sandstorm Assault\" and Elemental Skill \"Molten Inferno\" will be replaced by \"Roaring Barrage.\"\n\n<color=#FFD780FF>Roaring Barrage</color>\nUnleashing Roaring Barrage within 0.4s after each Flame-Mane's Fist strike will increase the speed at which the next Flame-Mane's Fist strike will be triggered.\n\n<i>Even the flowing flames must obey her rage and at her command become her fangs and claws.</i>",
+      "Icon": "Skill_E_Dehya_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 7921,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 792101,
+              "Level": 1,
+              "Parameters": [
+                0.6,
+                6,
+                2,
+                9,
+                18
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 792101,
+        "Name": "Unstinting Succor",
+        "Description": "Within 6 seconds after Dehya retrieves the Fiery Sanctum field through <color=#FFD780FF>Molten Inferno: Ranging Flame</color> or <color=#FFD780FF>Leonine Bite</color>, she will take 60% less DMG when receiving DMG from Redmane's Blood. This effect can be triggered once every 2s.\nAdditionally, within 9s after Dehya unleashes <color=#FFD780FF>Molten Inferno: Indomitable Flame</color>, she will grant all party members the Gold-Forged Form state. This state will further increase a character's resistance to interruption when they are within the Fiery Sanctum field. Gold-Forged Form can be activated once every 18s.",
+        "Icon": "UI_Talent_S_Dehya_05"
+      },
+      {
+        "GroupId": 7922,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 792201,
+              "Level": 1,
+              "Parameters": [
+                0.4,
+                0.2,
+                0.06,
+                2,
+                10,
+                20
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 792201,
+        "Name": "Stalwart and True",
+        "Description": "When her HP is less than 40%, Dehya will recover 20% of her Max HP and will restore 6% of her Max HP every 2s for the next 10s. This effect can be triggered once every 20s.",
+        "Icon": "UI_Talent_S_Dehya_06"
+      },
+      {
+        "GroupId": 7923,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 792301,
+              "Level": 1,
+              "Parameters": [
+                0.1
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 792301,
+        "Name": "The Sunlit Way",
+        "Description": "During the day (06:00 – 18:00), your party members gain the Swift Stride effect: Movement SPD increased by 10%.\nDoes not take effect in Domains, Trounce Domains, or Spiral Abyss. Swift Stride does not stack.",
+        "Icon": "UI_Talent_S_Dehya_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 791,
+        "Name": "The Flame Incandescent",
+        "Description": "Dehya's Max HP is increased by 20%, and she deals bonus DMG based on her Max HP when using the following attacks:\n·<color=#FFD780FF>Molten Inferno</color>'s DMG will be increased by 3.6% of her Max HP.\n·<color=#FFD780FF>Leonine Bite</color>'s DMG will be increased by 6% of her Max HP.",
+        "Icon": "UI_Talent_S_Dehya_01"
+      },
+      {
+        "Id": 792,
+        "Name": "The Sand-Blades Glittering",
+        "Description": "When Dehya uses <color=#FFD780FF>Molten Inferno: Ranging Flame</color>, the duration of the recreated Fiery Sanctum field will be increased by 6s.\nAdditionally, when a Fiery Sanctum exists on the field, DMG dealt by its next coordinated attack will be increased by 50% when active character(s) within the Fiery Sanctum field are attacked.",
+        "Icon": "UI_Talent_S_Dehya_02"
+      },
+      {
+        "Id": 793,
+        "Name": "A Rage Swift as Fire",
+        "Description": "Increases the Level of <color=#FFD780FF>Leonine Bite</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Dehya_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 794,
+        "Name": "An Oath Abiding",
+        "Description": "When Flame-Mane's Fist and Incineration Drive attacks unleashed during <color=#FFD780FF>Leonine Bite</color> hit opponents, they will restore 1.5 Energy for Dehya and 2.5% of her Max HP. This effect can be triggered once every 0.2s.",
+        "Icon": "UI_Talent_S_Dehya_03"
+      },
+      {
+        "Id": 795,
+        "Name": "The Alpha Unleashed",
+        "Description": "Increases the Level of <color=#FFD780FF>Molten Inferno</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Dehya_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 796,
+        "Name": "The Burning Claws Cleaving",
+        "Description": "The CRIT Rate of <color=#FFD780FF>Leonine Bite</color> is increased by 10%.\nAdditionally, after a Flame-Mane's Fist attack hits an opponent and deals CRIT Hits during a single Blazing Lioness state, it will cause the CRIT DMG of Leonine Bite to increase by 15% for the rest of Blazing Lioness's duration and extend that duration by 0.5s. This effect can be triggered every 0.2s. The duration can be extended for a maximum of 2s and CRIT DMG can be increased by a maximum of 60% this way.",
+        "Icon": "UI_Talent_S_Dehya_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Flame-Mane",
+    "Detail": "A member of the Eremites, a mercenary organization that roams the sands of Sumeru. Valiant and powerful, she enjoys great fame amongst her fellow Eremites.",
+    "Association": 7,
+    "Native": "The Eremites",
+    "BirthMonth": 4,
+    "BirthDay": 7,
+    "VisionBefore": "Pyro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Mantichora",
+    "CvChinese": "陈雨",
+    "CvJapanese": "福原綾香",
+    "CvEnglish": "Amber May",
+    "CvKorean": "Kim Hyeon-sim",
+    "CookBonus": {
+      "OriginItemId": 108493,
+      "ItemId": 108501,
+      "InputList": [
+        100061,
+        101214,
+        110014,
+        100076
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "My name's Dehya. I'm the merc you hired. So what you got for me? A commission? A fight? Armed escort? Whatever it is — you know where to find me."
+      },
+      {
+        "Title": "Chat: Mercenaries",
+        "Context": "We mercs have one simple rule: Whoever pays the most is your new boss."
+      },
+      {
+        "Title": "Chat: Desert",
+        "Context": "The desert's a tough adversary, but at least it doesn't hide anything. What you see is what you get, and whether you take on the challenge is entirely up to you."
+      },
+      {
+        "Title": "Chat: My People",
+        "Context": "My people are used to the desert life... But still, I hope that one day, they'll be able to find an oasis of their own, and leave the sandstorms behind for a better life."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "According to some of the older Eremites, it does actually rain in the desert on occasion. And when it does, it's always a lot heavier than this."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Man, this thunder is loud. They won't hear us coming... or vice versa."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "*grimace* ...Are you kidding me? This is even colder than the nights in the desert..."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "Ah, sun's out, guns out, hehe... Just sucks that I got so much work to do."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "Wind's picking up... Let's play it safe and pitch camp downwind of our target."
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "Stay close, no going off on your own. The desert doesn't take prisoners."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Ready to roll? Good. Then let's pack up and move out."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Where did the morning go... Alright, soon as I see a good spot, I'll set up the stove and cook us some lunch."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "You're still working at this hour? Ugh, and I thought we mercs had it tough."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "It's late. Go get some rest, I'll take the night watch."
+      },
+      {
+        "Title": "About Dehya: The Eremites",
+        "Context": "\"The Eremites\" is just a title — any mercenary in Sumeru can call themselves a member. Sadly, you get some mercs throwing the term around to take advantage of outlanders who don't know any better... Hmph. We've got those jerks to thank for the increasingly abysmal reputation we have these days."
+      },
+      {
+        "Title": "About Dehya: Dad",
+        "Context": "...Kusayla was his name. As a merc, he had a slapdash way of working and a whole lot of bravado. But he also saved me from the desert, and did whatever he could to pass on to me everything he had.\nWithout him, I wouldn't be who I am today."
+      },
+      {
+        "Title": "About Us: Great Deeds",
+        "Context": "Your recent feats have been doing the rounds, you know. In my brigade alone, a lot of people have been talking about the things you've achieved. I've even had several people ask me if I can introduce them to you."
+      },
+      {
+        "Title": "About Us: Comrades-in-Arms",
+        "Context": "\"Friends\"? Hmm... I dunno, after everything we've been through, all the battles we've faced together? Somehow, \"friends\" just doesn't quite do it justice.\nI think... yeah, \"comrades-in-arms\" sums it up best for me. The bond we share can only be forged in the heat of battle. It's one of the most unbreakable bonds there is."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "How's my life changed since getting my Vision? Huh... Well, obviously it gives me an extra edge in battle, but honestly, the biggest thing for me is that it's helped me bring a few more mercs into the Blazing Beasts..."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "You know Ajilenakh Nuts, right? I used to go crazy for them as a kid... but my dad was the worst at shelling them. He'd just hack 'em to pieces with his knife, leaving a bunch of inedible mush behind. In the end, he'd salvage what he could by scraping pieces of the flesh off the shell, then mixing it with some milk and calling it porridge.\n...I do miss the taste of that porridge sometimes... and I miss that old nut-cracker, too."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "A lot of people see the Red Vulture as an omen of death and disaster, because it feeds on the carcasses of the dead. But the way it soars high above the desert... I've always seen it as a symbol of the tenacity of life.\nI wonder what the Great Red Sand looks like from all the way up there."
+      },
+      {
+        "Title": "About Tighnari",
+        "Context": "Hahaha, the one that got away... I came thiiis close to doing a job for that guy. A contact put us in touch — I was supposed to be his guide through the desert for some kind of investigation. But then it got canceled out of the blue, no idea why. Wait, actually... I think there was something about him not being good with the heat? I'm not sure, but it could have been that..."
+      },
+      {
+        "Title": "About Lesser Lord Kusanali",
+        "Context": "Hmph... You know, I always thought the Akademiya's worst were just a bunch of greedy dogs, each fighting for their slice of the pie... Nope. Turns out they were a vicious pack of wolves who betrayed the whole nation. If you want my opinion... Lesser Lord Kusanali was too good to them. Those animals didn't deserve her mercy — she should've broken every single bone in their bodies! Instead, they got a nice little vacation in the rainforest... To say they got off lightly is just putting it mildly."
+      },
+      {
+        "Title": "About Candace",
+        "Context": "Ah, Candace... I love her to bits, but she can be as stubborn as a Sumpter Beast sometimes. I keep telling her she oughtta cut herself some slack, take some time off, maybe go take a walk around Sumeru City, buy herself some nice new clothes or jewelry... but she always says the same old thing: She can't bear to leave the village unprotected. I dunno how many times she's turned me down now. Ugh, if I really can't persuade her, I guess I'll just have to watch the village for her sometime, and get one of my Eremite girls to take her shopping..."
+      },
+      {
+        "Title": "About Alhaitham",
+        "Context": "He offered me a position in the Akademiya once. I declined — working in a place like that would bore me to death. He, on the other hand, is exactly the kind of person I can imagine working there... always talking in long, convoluted sentences, and in that snooty tone... Tsk."
+      },
+      {
+        "Title": "About Cyno",
+        "Context": "The General Mahamatra? Doesn't suffer fools gladly, and certainly doesn't beat around the bush. Having seen the way he works, he gets a thumbs up from me."
+      },
+      {
+        "Title": "About Nilou",
+        "Context": "Now that the whole saga with the Akademiya's over, I guess she can finally dance as much as she wants. She offered me some of her face powder last time I saw her, but I didn't have the time to go fetch it. So I told her to give it to Candace instead. Hmm... I wonder how she's liking it? I need to go check sometime..."
+      },
+      {
+        "Title": "About Dori",
+        "Context": "Ah, the famous merchant. I've heard that her prices aren't cheap, but is it true that she can get a hold of anything you want? Hahaha, then I should start talking to her, 'cause uh... some of the supplies we mercs need are impossible to get anywhere else on the market, no matter what you're willing to pay."
+      },
+      {
+        "Title": "About Layla",
+        "Context": "Ahh, the sleepy girl, yeah, I think I remember her. I ran into her once at an oasis on the outskirts of the desert. She was out with some group from the Akademiya doing astronomical observations, or something. I wasn't really paying attention. ...Huh? Candace... what now? Emissary from the stars? The heck is that all about? Almost sounds like she didn't wake up before getting out of bed."
+      },
+      {
+        "Title": "About Sethos",
+        "Context": "Oh yeah, I only found out about him being from the Temple of Silence recently, too. Ahh, sorry, no — I'm no expert in mysterious organizations like that. Seen him a few times in the desert though. He's very down-to-earth. Once when my guys got into some trouble in the desert, he was kind enough to share his drinking water with them. Nice guy."
+      },
+      {
+        "Title": "More About Dehya: I",
+        "Context": "I've lived around Eremites my whole life. As a little girl, I had a wooden sword for a toy. Everyone I knew growing up was either a merc or on their way to becoming one, and even the bowls we ate our meals from were carved by mercenary blades... After an upbringing like that, it'd be more surprising if I didn't become a merc when I grew up, right?"
+      },
+      {
+        "Title": "More About Dehya: II",
+        "Context": "Where do I feel like I belong? No idea. I've never thought about that sort of thing before. If I had to pick... I've lived most of my life in the desert, so I guess that makes me a desert-dweller."
+      },
+      {
+        "Title": "More About Dehya: III",
+        "Context": "Being a merc is tough. The work itself is one thing, but the worst part is trying to get your client to pay you after you finish the job. The Akademiya's top of my list — they're pretty straightforward. The Adventurers' Guild isn't too bad either. But trading merchants can be a total nightmare. They're always telling me that their funds are tied up, so cash is tight, yadda yadda. \"Just a few more days,\" they say.\nIf cash is so tight, how'd you pay for that big pile of goods on your cart, hmm? Tsk."
+      },
+      {
+        "Title": "More About Dehya: IV",
+        "Context": "The Akademiya have taken a kinder view of us since everything that went down. I heard that they even released a ton of new regulations to support the desert folk. Hmph, it'd take me till the end of time to read and understand all that documentation... I just hope from now on, the Wall of Samiel will only mark the place where sandstorms end, rather than my folks' hopes and dreams."
+      },
+      {
+        "Title": "More About Dehya: V",
+        "Context": "Most mercs are looking to make their fortune and leave their mark. They take on the hardest jobs they can find, hoping to earn as much Mora and prestige as possible. Some are lucky enough to survive and become legends, while others disappear into the desert before anyone's learned their name.\nI don't have any grand aspirations though. I just want to keep the people I care about safe, so they can live their lives in peace. Of course, I won't complain if I can make some extra Mora along the way, haha."
+      },
+      {
+        "Title": "Dehya's Hobbies",
+        "Context": "I looove my make-up box. Sometimes I take it out and re-organize it when I have the time. I keep all my powders and brushes in here — paid top Mora for all of it. Just look at this texture! Isn't it just perfectly smooth? And even if you sweat or get caught in the rain, it doesn't run. Hehehe, you get what you pay for."
+      },
+      {
+        "Title": "Dehya's Troubles",
+        "Context": "Some clients are behind on their payments again, and a few of the guys got themselves into trouble during their last job... *sigh* I'm not the boss, but somehow everything ends up being my problem..."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Candied Ajilenakh Nuts, no contest. Easy to take on the road, and of course delicious."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Anything bitter. Nope. Keep it away from me. Can't stand it."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "This tastes amazing! I'd better not have any more, or I'll never be able to go back to my usual rations."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Mmm, not bad... compared to rations, anyway."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "You know, if nothing else, it's uh... filling, and if it fills you up — it's good grub! Hahaha..."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Happy Birthday! Reach into your pocket, your present's already in there. How'd I do it? Hehe, just a little trick of the trade. Anyway, more importantly, I've booked us a real feast at Lambad's Tavern, so let's get ourselves over there! ...Huh? Oh, don't worry, I didn't invite any of the other mercs. Nah, that rowdy bunch is always getting into arguments — not the kind of people you'd want at a birthday celebration. It'll just be me and you, like it should be... Ahem, c'mon, c'mon, let's go."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Huh? How about that... I really did get stronger."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Hey, this feels good. I think I'll be able to hit quite a bit harder with my sword now."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "So much power... I have to go test this out. You down to spar with me or what?"
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I never once imagined I could get to this level... All credit goes to you. What next? Do you have a job for me? Whatever it is, just say the word and I'll be there."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Let's get it on!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Buckle up!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Look alive!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Gloves off!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "You're dead meat!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "You asked for it!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Well, how about that..."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "I call dibs! Hahaha."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "I could make a tidy sum selling some of this..."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Urgh... We've got ourselves a tough cookie!"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Alright, playtime's over!"
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Just great... Ugh!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Pull yourself together!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Get out before I drag you out!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "They got me good..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "I done messed up..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Merc down..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Your mommy teach you that?"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "You ain't messing around..."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "I gotcha, Boss."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Got a job for me?"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Time to get down to business."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "The term \"Eremites\" does not reference a specific group or organization, but all those who are born of the desert and ply a trade using their martial prowess, operating as mercenaries.\nFrail is humanity in such a desolate profession. To survive, those who walk the path of a mercenary will naturally come together, forming loose bands of mercenaries.\nThough the Eremites are many, few among them will be remembered as legends, with most bound to be as evanescent as sand in the wind. Yet there are exceptions who, like Dehya, may linger in the annals of history.\nThe \"Flame-Mane\" Dehya is fierce and brave, the lion her moniker invokes an analogy for her might. The nickname itself, meanwhile, denotes her passionate nature.\nShould you be planning to hire a mercenary to serve as a bodyguard, Dehya stands as a prime choice. Procuring her service runs an expensive premium, but her abilities make that a worthy expenditure indeed.\nCompared to those overconfident fools hawking their talents as hired blades on the street and novices capable of little more than brute force, Dehya is a conscientious professional.\nWith all this said, those who wish to procure her services should make haste, for there is a long line of other potential clients that have need of the Flame-Mane, and the opportunity, just as grains in the desert, will slip away before long."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "All desertfolk, including Dehya, learn to master and comprehend the sands.\nHere, where the blue of the sky is boundless, where the gold-paved waves of the sands bleed into the cleft of the horizon, it is easy to feel how small one truly is.\nEven those familiar with the sights and scenes of the desert can be intermittently shaken by the forces wielded by nature, and find themselves yearning to profess their supplication upon the sands where they were born.\nThe feeble and meek fear this land, and only those strong of spirit can find themselves drifting free upon this golden ocean.\nAmongst the desertfolk, the bravest, most inured to the cruelties of their existence amidst the flowing sands are the mercenaries — The Eremites.\nSuch a life is one with little comfort or ease, so what a mercenary truly desires are those who can support them, with such covenant-kin being the equal of blood relatives.\nIn her youth, Dehya's family consisted of her father and his mercenaries.\nAs she grew to independence, her new family was the \"Blazing Beasts,\" fellow mercenaries she could trust and count on.\nAfter battling together for a time, a tacit understanding forms between individuals, with entire thoughts conveyed with but a movement, a gaze.\nLater, as she temporarily bid the desert farewell to commit to a commission in the rainforest, she often found herself reminiscing about the moments she spent with her companions, singing by the fireside.\nShe can rise as high as the sky or stray as far as the sea, but Dehya was and will always be a daughter of the sands."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Before one makes any individual comparisons, broadly speaking, females are slightly edged out by males in raw physicality.\nDehya, likewise, was not born with immense might. Even so, the other mercenaries have a great many reasons to hold her in high regard.\nFirstly, though she is not the strongest in her profession, she has force enough all the same.\nShould one doubt this, they merely need to test the weight of her blade. To make such a greatsword dance and flow without sufficient strength would be impossible otherwise.\nSecondly, she has tremendous combat instincts. It is known that the greatsword, Dehya's weapon of choice, demands a trade-off between force and speed. Should such a weapon fail to achieve a decisive first strike against a sufficiently mobile foe, it will prove more burden than a boon for the wielder. In moments like these, Dehya uses her superior insight and technique to overcome the opposition.\nSometimes, she will cast her weapon aside, eschewing the edge of a sword for the weight behind her fists. She will even hurl her weapon at foes without warning to buy a fleeting opportunity. How any such moment plays out all depends on the actual conditions presented by each battle.\nAside being good in a fight, she also knows plenty about surviving in the desert.\nThe commissions that the Eremites most often take will have them serving as bodyguards against raiders without outside support, herding away dangerous creatures, and assisting their clients in avoiding dreaded weather conditions.\nSometimes, they even find assignments that have them acting as guides, helping caravans, adventurers, and researchers reach their desired destinations.\nDehya knows how to deal with startled scorpion swarms, how to circle around vultures to avoid getting entangled with those nimble annoyances, and how to negotiate and minimize danger when faced with robbers.\nClients like it when matters are handled thoroughly and practically. To earn true praise from their employers, mercenaries must offer more than just brute capacity for violence.\nIndeed, the ability to overcome one hundred or even a thousand foes has its limits, for when sandstorms scour the earth and sky, even the mightiest warrior will be buried beneath its shroud.\nA wise mercenary knows when to retreat, and how to preserve themselves even while meeting their objectives, for doing so exemplifies the true heights of strategy."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "As Dehya's reputation gradually grew amongst the Eremites, those of her band grew proud of the fame she was earning and, during a day when everyone happened to be present, the rowdiest of her companions stated their desire to grant her a nickname worth remembering.\nEveryone agreed that they would announce Dehya with the new nickname whenever she won future battles, so it needed to be something spectacular — capable of spreading goosebumps through people like a skin-raising plague.\nThe youngest members gave their all trying to come up with something. They chittered and clamored, trying to give Dehya a vicious moniker capable of instilling debilitating terror in potential clients, usually beginning with \"bloody\" or \"terror.\"\nDehya was not such an amateur as to think that a title alone might encapsulate the entirety of what others felt about her. But still, as if everyone wanted to kill some time on this matter, she didn't mind.\nAs she listened to bad suggestion after terrible suggestion, she couldn't help but guffaw with laughter. The atmosphere reminded her of moments from her childhood when her father gathered his compatriots to put on plays for her, detailing chivalrous heroes defending the helpless or messy brawls between siblings to amuse everyone. There was no specific point to it, except to bring some cheer while surviving in the vast emptiness under the desert's midnight sky.\nAnd just as the chatting was starting to put her in a good mood, that old ne'er-do-well's shadow slid back into her mind. Though admittedly disgruntled, Dehya did her best to keep the curl of her lips imperceptible.\nThat night, Dehya rejected several laughable names, such as the \"Sovereign of the Sands\" and \"The Crimson Edge.\" She thought it was time to let the farce come to a close. It was just a name after all, and true mercenaries did not let such things affect their business much.\nJust then, an aged mercenary interrupted the discussion. At first, he snorted disdainfully at the stupidity of those around him. Then, he asked a question: \"The Legend of the Lion. This story ring a bell for anyone?\"\nThis tale was, naturally, one Dehya was familiar with. During her childhood, her father had told her lots of old stories — far too many, really. She had wanted to forget everything that had to do with him, but memories are not so easily consigned to oblivion.\nWhile she was lost in the twists and turns of her past, her companions decided upon a title for her that actually sounded quite alright: \"Flame-Mane.\"\nAnd though she loathed the man The Legend of the Lion reminded her of, she found herself halted just before she could reject the name. Was it not all too petty to refuse such goodwill on that account?\nMust she avoid all the things related to her father, just because she wanted to forget him? Of course not. Besides, the story had brought a genuine feeling of warmth and comfort to Dehya, allowing her to face the world with open eyes, experience all it had to offer — and those experiences had not been falsehoods.\nSo why not take up the title of \"Flame-Mane?\" She could have done far worse."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Dehya is an individual of immense beauty, a fact undeniable to all who know her.\nShe is blessed with eyes of frosted sapphire capable of shivering souls, honeyed skin that bears a nigh-resplendent gleam when greeted by sunlight, and a length of wavy, black-and-gold hair that drifts behind her with every light-footed step she takes.\nThe desertfolk hold maidens imbued with attractiveness and vigor in great esteem, seeing them as embodiments of vitality.\nDehya, likewise, pays a great deal of attention to her looks. When she finds the opportunity, should her environment allow it, she always seizes the chance to take a shower and part her person from the stench of sweat. During her leisure time, she hits up the market for personal care products, procuring powder for her eyes and face alongside other cosmetics for times when she might need them. With how she uses these consumables daily, she often finds her supply depleting rapidly.\nMercenaries are typically a crude bunch, accustomed to violence with little focus placed on how they present themselves, making Dehya something of an oddity in that regard. Unable to understand why she is so concerned about her appearance, some of her companions have asked her as much.\nWell, what else could it be? The men of the desert smell so foul — a stench only made worse when they kick off their boots — that the nausea that follows is near-debilitating.\nCoated with sweat, having not washed their feet for the better part of a month, and reeking of alcohol, they infuse the air in a room with unfathomable rankness.\nImagine, an entire room filled with such unsanitary individuals. Mighty though Dehya might be, she has little desire to spend her time choking for breath.\nAs such, she sticks to a number of ironclad personal habits that separate her from the many slobs who plague their trade, leave her employers with a good impression, and keep her looking good at all times.\nA portion of her hard-earned Mora, likewise, is always placed into getting jewelry and cosmetics. She treats such purchases as rightful rewards derived from fruitful labor.\nWhen one is constantly surrounded by such fatiguing things as weapons, enemies, and business, a little care and gentleness go a long way toward lowering her defenses, allowing her to face the coming future with a softened heart.\nThough it is true that Dehya is a ferocious mercenary, she is, always first and foremost, a lovely and carefree woman."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Unlike many who leave the desert and never look back, Dehya has always been proud of her heritage. However, her identity has indeed also introduced a great many obstacles into her life.\nShe lacked a systematized education and was in turn also bereft of any complex technical knowledge besides that which had to do with martial prowess and desert survival. Such was the case for many an Eremite mercenary.\nIt is clear to Dehya that this lack of knowledge has constrained her people and their potential, their energies and curiosity long subsumed by the sandstorms and the sweltering heat. If she hadn't encountered the miraculous creations of the Akademiya, tasted the fine wines of Mondstadt, beheld the elaborately crafted utensils from Liyue, or the mechanical brilliance possessed by the people of Fontaine, she too would have been unable to see past the borders of her environment.\nMeasured on merits of courage alone, the folk of the rainforest pale before the tenacious desertfolk. Avatars of determination, even after being lashed by the winnowing tongue of the withering winds for years uncounted, the people of the desert continue to live on, generation to generation, their bodies and minds as enduring as the rock of mountains, perhaps even more so.\nBut if they lack foresight to see beyond the present and visible, they will always only be crawling about in the sand.\nThe Mora they earn devoted solely to food and drink, their wealth flowing out as fast as it comes in, passing through them like the sand within an hourglass. The few among them who possessed foresight and intellect knew that to find a better life, changes were needed. But those individuals often cast the desert behind them upon embracing said better life, shifting to lives lived only for themselves.\n\"Why can't we be more? Why must we be bound to spending our strength — even our lives — to live just a little better?\"\nThey were made by the desert, but also shackled to it. Dehya desires to transcend such limitations. At present, she is still contemplating what kind of future she desires to seek.\nHow far someone can progress in life is not all determined by something as subjective as personal will — Dehya understands that all too well. But she also knows that, so long as there is a chance, she will try to deliver hope back to the desert, to do something for those still living there.\nThough her future paths may lead elsewhere, the sands will always be her home."
+      },
+      {
+        "Title": "The Legend of the Lion",
+        "Context": "According to Kusayla, when a lion roars, even the blazing sun must shiver.\nLittle Dehya had never seen an actual lion before, so whatever Kusayla claimed, she heeded without question.\nKusayla would vividly describe how the sun would cleave the land with its heat, warping mud to powder and distorting the very air in the atmosphere. Despite this, the lion constantly thundered onward, striding across this burning plain. Try as the sun might, the lion's approach was constant and unrelenting, pursuing the star tirelessly with its roaring until the light finally fled past the horizon.\nSuch was the might of the lion.\nEnraptured by the story, little Dehya's eyes gleamed bright, brighter even than the campfire burning beneath a blanket of night.\n\"The lion can...\" Kusayla's eyes scythed about for a moment before he snatched one of his slimmer compatriots to use as a volunteer to complete his analogy. \"The lion can take out ten guys his size. Easy.\"\n\"What about you? Can you beat the lion?\" Little Dehya asked Kusayla.\n\"Hard to say, but I know quite a few tricks, so I think should be able to give that beast the business.\" Caution lit Kusayla's expression, betraying no hint of boasting.\n\"If the lion charges me, I'll... dip down beneath it, angle myself under its body, and then... Open its stomach with my blade. That should be enough to do it in.\"\nUnsatisfied with mere words, Kusayla called upon another of their band to pretend to be a lion, planning to give a personal performance for a triumph most hypothetical. Unfortunately, their acting left much to be desired, with the \"lion's\" roars crippled by a lack of presence, sounding more dog-like than anything.\nDehya was unsurprised. She knew what kind of character her father was. It was folly to take all he said seriously, and only disappointment awaited if one did so. All she really had to do was laugh along with him.\nThe Legend of the Lion, however, did linger in her recollections.\nMany years later, just as Dehya and her companions were deciding what title would sound best for her, the Lion was mentioned, pulling her back to this childhood fable, and her father, who had put everything into the form of a play for her.\nThough she had been estranged from Kusayla by then, she couldn't help but indulge in the nostalgia of her youth.\nNow, she finally understood what her father felt in his heart all those years ago, though he was now gone, adrift in the Eternal Dreamland.\nThis would prove one regret she would not be able to reverse. But still, one must veer toward optimism, for bitterness did not suit the lifestyle of one working in the desert. Besides, the memories of her preadolescence were now things she could openly look back upon with a sense of satisfaction.\nRecalling her girlhood, Dehya's eyes couldn't help but light up just as they had beside the campfire beneath the night sky all those years ago.\nShe would become a lion, akin to the one told of in Kusayla's story, so that the legend might yet live on through her."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Dehya isn't all that sure when her Vision manifested precisely, but she guesses that it might have appeared when she had just started walking her own path.\nDuring that time, she was consumed with thoughts of growing stronger.\nAs a mercenary, being weak meant not being able to take on enough commissions, which in turn meant no Mora for food.\nIt was during this critical juncture that the Vision appeared by her side. With how stretched for Mora she was, she even considered trading it in for actual currency.\nPeople all say that to be granted a Vision is a sign of divine favor, but Dehya felt that if she was truly chosen, the gods would have sent her Mora instead of some trinket that lacked instant monetary value.\nAdditionally, though the Vision can help her direct the elements, victory in a true battle is still decided by skill, judgment, strategy, and physical conditioning.\nThere are many legendary mercenaries who achieved such renown even without a Vision, relying only on training and grit.\nDehya likewise understood that, should one become overcome by pride at having the gods' favor, stop thinking things through, and fail to appreciate that which is before them, no enemy would be required to punish such hubris. The desert itself would exact vengeance upon such folly on its own.\nThe things she would experience thereafter would serve as further proof that even divine power has limitations. For all their might and wisdom, even a god might be constrained.\nDehya likes her Vision, but she will not bend to become an apostle after a mere brush with divine attention.\nShe is a mercenary. Someone who lives and dies by the blade. Such a person trusts only in the sweat shed to feed countless gardens of battle and bloodshed."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 207900,
+      "Name": "The Lioness and the Blazing Sun",
+      "Description": "Dehya's outfit. It is said when the lion roars, even the scorching sun will quiver. Though Dehya is long past the age of believing in such stories, it doesn't stop her from gazing upon the sun sinking below the sands, reminiscing about the tales and storytellers of her childhood.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104114,
+    113039,
+    101222,
+    112067,
+    104337,
+    113041
+  ],
+  "NameCard": {
+    "Name": "Dehya: Purifying Flame",
+    "Description": "Namecard style.\nThose that should be burned will be reduced to fly ash, so that all the precious things that should be preserved can be revealed.",
+    "Icon": "UI_NameCardIcon_Dehya",
+    "PicturePrefix": "UI_NameCardPic_Dehya"
+  },
+  "TraceEffect": {
+    "Id": 215011,
+    "Name": "Echo: Flame-Mane",
+    "Description": "Dehya's Envisaged Echo. \"The eyes of a vulture, the spirit of a lion, an unbridled daughter of the desert.\"",
+    "Icon": "UI_TraceEffectIcon_Dehya"
+  }
+}

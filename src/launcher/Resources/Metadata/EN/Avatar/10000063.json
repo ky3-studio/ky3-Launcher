@@ -1,0 +1,1259 @@
+{
+  "Id": 10000063,
+  "PromoteId": 63,
+  "Sort": 45,
+  "Body": 3,
+  "Icon": "UI_AvatarIcon_Shenhe",
+  "SideIcon": "UI_AvatarIcon_Side_Shenhe",
+  "Name": "Shenhe",
+  "Description": "An adepti disciple with a most unusual air about her. Having spent much time cultivating in isolation in Liyue's mountains, she has become every bit as cool and distant as the adepti themselves.",
+  "BeginTime": "2022-01-05T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 1011.47253,
+    "AttackBase": 23.6474,
+    "DefenseBase": 64.6164
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 6331,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "4-Hit DMG|{param4:F1P}+{param5:F1P}",
+            "5-Hit DMG|{param6:F1P}",
+            "Charged Attack DMG|{param7:F1P}",
+            "Charged Attack Stamina Cost|{param8:F1}",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 633101,
+              "Level": 1,
+              "Parameters": [
+                0.43258,
+                0.40248,
+                0.5332,
+                0.26316,
+                0.26316,
+                0.65618,
+                1.106734,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 633102,
+              "Level": 2,
+              "Parameters": [
+                0.46779,
+                0.43524,
+                0.5766,
+                0.28458,
+                0.28458,
+                0.70959,
+                1.196817,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 633103,
+              "Level": 3,
+              "Parameters": [
+                0.503,
+                0.468,
+                0.62,
+                0.306,
+                0.306,
+                0.763,
+                1.2869,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 633104,
+              "Level": 4,
+              "Parameters": [
+                0.5533,
+                0.5148,
+                0.682,
+                0.3366,
+                0.3366,
+                0.8393,
+                1.41559,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 633105,
+              "Level": 5,
+              "Parameters": [
+                0.58851,
+                0.54756,
+                0.7254,
+                0.35802,
+                0.35802,
+                0.89271,
+                1.505673,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 633106,
+              "Level": 6,
+              "Parameters": [
+                0.62875,
+                0.585,
+                0.775,
+                0.3825,
+                0.3825,
+                0.95375,
+                1.608625,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 633107,
+              "Level": 7,
+              "Parameters": [
+                0.68408,
+                0.63648,
+                0.8432,
+                0.41616,
+                0.41616,
+                1.03768,
+                1.750184,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 633108,
+              "Level": 8,
+              "Parameters": [
+                0.73941,
+                0.68796,
+                0.9114,
+                0.44982,
+                0.44982,
+                1.12161,
+                1.891743,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 633109,
+              "Level": 9,
+              "Parameters": [
+                0.79474,
+                0.73944,
+                0.9796,
+                0.48348,
+                0.48348,
+                1.20554,
+                2.033302,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 633110,
+              "Level": 10,
+              "Parameters": [
+                0.8551,
+                0.7956,
+                1.054,
+                0.5202,
+                0.5202,
+                1.2971,
+                2.18773,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 633111,
+              "Level": 11,
+              "Parameters": [
+                0.91546,
+                0.85176,
+                1.1284,
+                0.55692,
+                0.55692,
+                1.38866,
+                2.342158,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 633112,
+              "Level": 12,
+              "Parameters": [
+                0.97582,
+                0.90792,
+                1.2028,
+                0.59364,
+                0.59364,
+                1.48022,
+                2.496586,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 633113,
+              "Level": 13,
+              "Parameters": [
+                1.03618,
+                0.96408,
+                1.2772,
+                0.63036,
+                0.63036,
+                1.57178,
+                2.651014,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 633114,
+              "Level": 14,
+              "Parameters": [
+                1.09654,
+                1.02024,
+                1.3516,
+                0.66708,
+                0.66708,
+                1.66334,
+                2.805442,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 633115,
+              "Level": 15,
+              "Parameters": [
+                1.1569,
+                1.0764,
+                1.426,
+                0.7038,
+                0.7038,
+                1.7549,
+                2.95987,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10631,
+        "Name": "Dawnstar Piercer",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 6332,
+        "Proud": {
+          "Descriptions": [
+            "#{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press} Skill DMG|{param1:P}",
+            "Hold Skill DMG|{param2:F1P}",
+            "DMG Bonus|{param3:F1P} ATK",
+            "#{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}/Hold Duration|{param4:F1}s/{param5:F1}s",
+            "#{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}/Hold Trigger Quota|{param6:I}/{param7:I}",
+            "#{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press} CD|{param8:F1}s",
+            "Hold CD|{param9:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 633201,
+              "Level": 1,
+              "Parameters": [
+                1.392,
+                1.888,
+                0.45656,
+                10,
+                15,
+                5,
+                7,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 633202,
+              "Level": 2,
+              "Parameters": [
+                1.4964,
+                2.0296,
+                0.490802,
+                10,
+                15,
+                5,
+                7,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 633203,
+              "Level": 3,
+              "Parameters": [
+                1.6008,
+                2.1712,
+                0.525044,
+                10,
+                15,
+                5,
+                7,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 633204,
+              "Level": 4,
+              "Parameters": [
+                1.74,
+                2.36,
+                0.5707,
+                10,
+                15,
+                5,
+                7,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 633205,
+              "Level": 5,
+              "Parameters": [
+                1.8444,
+                2.5016,
+                0.604942,
+                10,
+                15,
+                5,
+                7,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 633206,
+              "Level": 6,
+              "Parameters": [
+                1.9488,
+                2.6432,
+                0.639184,
+                10,
+                15,
+                5,
+                7,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 633207,
+              "Level": 7,
+              "Parameters": [
+                2.088,
+                2.832,
+                0.68484,
+                10,
+                15,
+                5,
+                7,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 633208,
+              "Level": 8,
+              "Parameters": [
+                2.2272,
+                3.0208,
+                0.730496,
+                10,
+                15,
+                5,
+                7,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 633209,
+              "Level": 9,
+              "Parameters": [
+                2.3664,
+                3.2096,
+                0.776152,
+                10,
+                15,
+                5,
+                7,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 633210,
+              "Level": 10,
+              "Parameters": [
+                2.5056,
+                3.3984,
+                0.821808,
+                10,
+                15,
+                5,
+                7,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 633211,
+              "Level": 11,
+              "Parameters": [
+                2.6448,
+                3.5872,
+                0.867464,
+                10,
+                15,
+                5,
+                7,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 633212,
+              "Level": 12,
+              "Parameters": [
+                2.784,
+                3.776,
+                0.91312,
+                10,
+                15,
+                5,
+                7,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 633213,
+              "Level": 13,
+              "Parameters": [
+                2.958,
+                4.012,
+                0.97019,
+                10,
+                15,
+                5,
+                7,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 633214,
+              "Level": 14,
+              "Parameters": [
+                3.132,
+                4.248,
+                1.02726,
+                10,
+                15,
+                5,
+                7,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 633215,
+              "Level": 15,
+              "Parameters": [
+                3.306,
+                4.484,
+                1.08433,
+                10,
+                15,
+                5,
+                7,
+                10,
+                15
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10632,
+        "Name": "Spring Spirit Summoning",
+        "Description": "#The frosted dew, silvery and dense, shall exorcise all demons.\nGrants all nearby party members the Icy Quill effect and deals <color=#99FFFFFF>Cryo DMG</color> in different ways based on whether it is {LAYOUT_MOBILE#tapped}{LAYOUT_PC#pressed}{LAYOUT_PS#pressed} or held.\n\n<color=#FFD780FF>{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}</color>\nRushes forward together with a Talisman Spirit, dealing <color=#99FFFFFF>Cryo DMG</color> to opponents along the path.\n\n<color=#FFD780FF>Hold</color>\nCommands the Talisman Spirit to deal <color=#99FFFFFF>AoE Cryo DMG</color>.\n\n<color=#FFD780FF>Icy Quill</color>\nWhen Normal, Charged, and Plunging Attacks, Elemental Skills, and Elemental Bursts deal <color=#99FFFFFF>Cryo DMG</color> to opponents, the DMG dealt is increased based on Shenhe's current ATK.\n\nThe Icy Quill's effects will be cleared once its duration ends or after being triggered a certain number of times. When held rather than {LAYOUT_MOBILE#tapped}{LAYOUT_PC#pressed}{LAYOUT_PS#pressed}, the Icy Quill's effect lasts longer and can be triggered more times.\nWhen one <color=#99FFFFFF>Cryo DMG</color> instance strikes multiple opponents, the effect is triggered multiple times based on the number of opponents hit. The number of times the effect is triggered is calculated independently for each party member with the Icy Quill.\n\n<i>The power of the spirits is no falsehood. Burdened with her orders, the divine maiden hurries on!</i>",
+        "Icon": "Skill_S_Shenhe_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 6339,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:P}",
+          "RES Decrease|{param2:F1P}",
+          "DoT|{param3:F1P}",
+          "Duration|{param4:F1}s",
+          "CD|{param5:F1}s",
+          "Energy Cost|{param6:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 633901,
+            "Level": 1,
+            "Parameters": [
+              1.008,
+              0.06,
+              0.3312,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 633902,
+            "Level": 2,
+            "Parameters": [
+              1.0836,
+              0.07,
+              0.35604,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 633903,
+            "Level": 3,
+            "Parameters": [
+              1.1592,
+              0.08,
+              0.38088,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 633904,
+            "Level": 4,
+            "Parameters": [
+              1.26,
+              0.09,
+              0.414,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 633905,
+            "Level": 5,
+            "Parameters": [
+              1.3356,
+              0.1,
+              0.43884,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 633906,
+            "Level": 6,
+            "Parameters": [
+              1.4112,
+              0.11,
+              0.46368,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 633907,
+            "Level": 7,
+            "Parameters": [
+              1.512,
+              0.12,
+              0.4968,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 633908,
+            "Level": 8,
+            "Parameters": [
+              1.6128,
+              0.13,
+              0.52992,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 633909,
+            "Level": 9,
+            "Parameters": [
+              1.7136,
+              0.14,
+              0.56304,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 633910,
+            "Level": 10,
+            "Parameters": [
+              1.8144,
+              0.15,
+              0.59616,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 633911,
+            "Level": 11,
+            "Parameters": [
+              1.9152,
+              0.15,
+              0.62928,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 633912,
+            "Level": 12,
+            "Parameters": [
+              2.016,
+              0.15,
+              0.6624,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 633913,
+            "Level": 13,
+            "Parameters": [
+              2.142,
+              0.15,
+              0.7038,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 633914,
+            "Level": 14,
+            "Parameters": [
+              2.268,
+              0.15,
+              0.7452,
+              12,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 633915,
+            "Level": 15,
+            "Parameters": [
+              2.394,
+              0.15,
+              0.7866,
+              12,
+              20,
+              80
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10635,
+      "Name": "Divine Maiden's Deliverance",
+      "Description": "Unleashes the power of the Talisman Spirit, allowing it to roam free in this plane, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\nThe Talisman Spirit then creates a field that decreases the <color=#99FFFFFF>Cryo RES</color> and Physical RES of opponents within it. It also deals periodic <color=#99FFFFFF>Cryo DMG</color> to opponents within the field.\n\n<i>The way of the adepti is not defined only by the mysterious and fantastical. Only by observing the changes in the heavens and the earth, and understanding the laws of cause and effect in this realm, may its essence be understood.</i>",
+      "Icon": "Skill_E_Shenhe_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 6321,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 632101,
+              "Level": 1,
+              "Parameters": [
+                0.15
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 632101,
+        "Name": "Deific Embrace",
+        "Description": "An active character within the field created by <color=#FFD780FF>Divine Maiden's Deliverance</color> gains 15% <color=#99FFFFFF>Cryo DMG Bonus</color>.",
+        "Icon": "UI_Talent_S_Shenhe_05"
+      },
+      {
+        "GroupId": 6322,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 632201,
+              "Level": 1,
+              "Parameters": [
+                0.15,
+                10,
+                0.15,
+                15
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 632201,
+        "Name": "Spirit Communion Seal",
+        "Description": "#After Shenhe uses <color=#FFD780FF>Spring Spirit Summoning</color>, she will grant all nearby party members the following effects:\n· {LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}: Elemental Skill and Elemental Burst DMG increased by 15% for 10s.\n· Hold: Normal, Charged, and Plunging Attack DMG increased by 15% for 15s.",
+        "Icon": "UI_Talent_S_Shenhe_06"
+      },
+      {
+        "GroupId": 6323,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 632301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 632301,
+        "Name": "Precise Comings and Goings",
+        "Description": "Gains 25% more rewards when dispatched on a Liyue Expedition for 20 hours.",
+        "Icon": "UI_Talent_Expedition_Liyue"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 631,
+        "Name": "Clarity of Heart",
+        "Description": "<color=#FFD780FF>Spring Spirit Summoning</color> can be used 1 more time.",
+        "Icon": "UI_Talent_S_Shenhe_02"
+      },
+      {
+        "Id": 632,
+        "Name": "Centered Spirit",
+        "Description": "<color=#FFD780FF>Divine Maiden's Deliverance</color> lasts for 6 seconds longer. Active characters within the skill's field deal 15% increased <color=#99FFFFFF>Cryo</color> CRIT DMG.",
+        "Icon": "UI_Talent_S_Shenhe_01"
+      },
+      {
+        "Id": 633,
+        "Name": "Seclusion",
+        "Description": "Increases the Level of <color=#FFD780FF>Spring Spirit Summoning</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Shenhe_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 634,
+        "Name": "Insight",
+        "Description": "When characters under the effect of <color=#FFD780FF>Icy Quill</color> applied by Shenhe trigger its DMG Bonus effects, Shenhe will gain a Skyfrost Mantra stack:\n· When Shenhe uses <color=#FFD780FF>Spring Spirit Summoning</color>, she will consume all stacks of Skyfrost Mantra, increasing the DMG of that Spring Spirit Summoning by 5% for each stack consumed.\n· Max 50 stacks. Stacks last for 60s.",
+        "Icon": "UI_Talent_S_Shenhe_03"
+      },
+      {
+        "Id": 635,
+        "Name": "Divine Attainment",
+        "Description": "Increases the Level of <color=#FFD780FF>Divine Maiden's Deliverance</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Shenhe_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 636,
+        "Name": "Mystical Abandon",
+        "Description": "When characters trigger <color=#FFD780FF>Icy Quill</color>'s effects using Normal and Charged Attack DMG, it does not count toward the Trigger Quota.",
+        "Icon": "UI_Talent_S_Shenhe_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Lonesome Transcendence",
+    "Detail": "An adepti disciple with a most unusual air about her. Having spent much time cultivating in isolation in Liyue's mountains, she has become every bit as cool and distant as the adepti themselves.",
+    "Association": 2,
+    "Native": "Cloud Retainer's Abode",
+    "BirthMonth": 3,
+    "BirthDay": 10,
+    "VisionBefore": "Cryo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Crista Doloris",
+    "CvChinese": "秦紫翼",
+    "CvJapanese": "川澄綾子",
+    "CvEnglish": "Chelsea Kwoka",
+    "CvKorean": "Lee Hyeon-jin",
+    "CookBonus": {
+      "OriginItemId": 108370,
+      "ItemId": 108372,
+      "InputList": [
+        110001,
+        100064,
+        100011,
+        110005
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "My name is Shenhe. I was born fated to bear the curse of calamity, so I am prone to bring harm to the people around me. The adepti urged me to bind my soul with red ropes to keep my homicidal nature at bay. If you are able to walk alongside me without fear... Hah, very well. Now, give me your hand."
+      },
+      {
+        "Title": "Chat: Home",
+        "Context": "The assumption that every person has somewhere to call home is naive. I got used to living in the mountains alongside the birds and beasts a long time ago."
+      },
+      {
+        "Title": "Chat: Motto",
+        "Context": "Mind be purged, world be saved."
+      },
+      {
+        "Title": "Chat: A Blind Polearm",
+        "Context": "My polearm doesn't distinguish friend from foe, and there is clearly a limit to the red ropes' power. That's why I loathe crowded areas."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "In the mortal world, at times like these, is it not customary to... use an umbrella?"
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "The sky is clearing up, and so is my mood. I just hope no one shows up to bother me... If they do, I'll just make them disappear."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "In this weather, I can freeze monsters in place and simply let the lightning bolts take care of the rest. A good way to not get my clothes dirty."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "Yes... This reminds me of Master. She loves to ride the swift winds of Qingyun Peak."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Good morning. The dew is very sweet today, would you like some?"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "If you feel fatigued after lunch, you should try meditating. It's very effective."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Do you prefer the artificial light of the cities and towns, or the moonlight in the mountains?"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Feel free to rest. I'm a light sleeper, if I hear anything in the vicinity, I'll investigate it for you."
+      },
+      {
+        "Title": "About Shenhe: Instinct",
+        "Context": "For all the training I've had — honing my body and mind, learning the adepti arts — I've mostly been guided by my own instincts. It just comes down to self-preservation. I'm not trying to save the world, so if I wipe out some evil presence and it happens to benefit you, don't thank me. It's just a force of habit."
+      },
+      {
+        "Title": "About Shenhe: Different",
+        "Context": "If I treat people kindly, they call me an adeptus, and if I put them in their place, they call me a witch. Heh... The one thing you'll never hear them call me is \"human.\" They all seem to agree that I'm fundamentally... different from them."
+      },
+      {
+        "Title": "About Us: Manners",
+        "Context": "I rarely leave the mountains, so I was never taught proper manners. When a conflict arises, I just take care of it the way that comes naturally to me. But if you don't approve of my methods, please do let me know. Even if I don't fully understand your reasoning, I will always defer to you."
+      },
+      {
+        "Title": "About Us: Red Ropes",
+        "Context": "My master gave me these red ropes in order to restrain my impulses. But during our journey together, I feel I have finally grasped the key to all of this. Somehow, controlling my strength — knowing when to restrain myself, and when to unleash — it comes more naturally to me now. I think that what saves me from myself is not my red ropes... but you. If you understand what that means to me, please stay by my side."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "So this shiny gemstone is called a \"Vision\"? Heh... the gifts that fate brings, fate can just easily take away. If one day my connection to this Vision comes to an end, that'll be it, and the light inside of it will go out."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Driving evil spirits away comes easily to me. Getting rid of my inner demons, however... Unless you can find a way to let go, all the adepti arts and exorcism techniques in the world can't save you."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Why do I always hear people say, \"The first snow of the season is a sight for sore eyes\"? We have snow every single day in the mountains. So which instance counts as the \"first snow\"? I don't understand what they mean. Please explain this to me."
+      },
+      {
+        "Title": "About Ningguang",
+        "Context": "I have no use for the wealth that ordinary people desire. But in the hands of Lady Ningguang, wealth becomes a means of solving complex issues of the kind that no weapons could ever hope to resolve. She understands the unwritten rules of human society, she knows what's in people's hearts... Master once told me that even the adepti aren't able to achieve this. I hold her and her work in high regard."
+      },
+      {
+        "Title": "About Beidou",
+        "Context": "I find I don't need to worry about etiquette with her, and unlike with some people, I don't need to rely on non-verbal cues to discern the true meaning of what she's saying. That makes me a lot more comfortable. The only problem is... Well, there are too many people around her all the time, and I heard there's also many crew members on her ship... I need you to go with me. It's the only way I can cope with so many people."
+      },
+      {
+        "Title": "About Yun Jin",
+        "Context": "Yun Jin performs... It's called \"Liyue opera,\" isn't it? I like this particular type of social interaction. You can get to know about the other person's background without having to actually interact with them one on one. If she ever includes your story in one of her performances, I'm sure the result will end up being quite incredible. I'm looking forward to it."
+      },
+      {
+        "Title": "About Ganyu",
+        "Context": "I've heard many stories about her from my master. She's really quite different from how I originally imagined her... But don't worry, I'll be keeping this to myself. Speaking of Ganyu, her work in Liyue Harbor is unbelievably busy... It seems that there is a price to pay for those who want to integrate into the mortal world."
+      },
+      {
+        "Title": "About Chongyun",
+        "Context": "It's hard for me to believe that... I still have living relatives in this world. If he has any difficulties with his training, I am more than willing to help enlighten him. However, he will need to meet me alone in the mountains. Their family is too... sociable. I wouldn't know how to turn down their invitations without being impolite."
+      },
+      {
+        "Title": "About Xingqiu",
+        "Context": "I've seen him lean over to you and whisper things in your ear. If he dares threaten you, I will make sure he... Hmm? You mean it's just an in-joke between friends? Genuinely...?"
+      },
+      {
+        "Title": "About Zhongli",
+        "Context": "That gentleman claims to be a mortal, yet is very familiar with my master, who is an adeptus. Master once said: \"If you see him drinking on a stone stool in front of my abode, do not disturb him. Let him sit quietly for a while.\" And that's precisely what I did."
+      },
+      {
+        "Title": "About Baizhu",
+        "Context": "The quality of his medicinal herbs is as good as it gets, he is also easy-going and considerate of others. By comparison, the little snake on his neck has no filter at all... Haha, don't worry, I didn't lift a finger against it, I won't go as far as getting into a quarrel with a snake."
+      },
+      {
+        "Title": "About Hu Tao",
+        "Context": "I often see her wandering in the woods singing strange songs. Actually, I must have heard all of her songs several times each by now. I'm used to her singing, but I still find it strange. That being said, I don't hate it either."
+      },
+      {
+        "Title": "About Xiao",
+        "Context": "My first impression of him was that he's not one to smile. After meeting him again more recently, however, he's still as reserved as ever, but... he seems a lot more relaxed now. Maybe he... met someone special."
+      },
+      {
+        "Title": "About Xianyun",
+        "Context": "The last time Master and Shuyu came to dine at Wanmin Restaurant, I noticed that Shuyu seemed to have adopted a number of Master's mannerisms. It gave me pause for thought... I grew up under Master's care, too. Is it possible that I have subconsciously picked up a thing or two from her as well...?"
+      },
+      {
+        "Title": "More About Shenhe: I",
+        "Context": "Please don't pay any heed to the way most people refer to me. I am not an adeptus, and don't possess any divine abilities. I was born in a branch family of a clan of exorcists, and grew up in the mountains far away from Liyue Harbor. I am but an adeptus' disciple, nothing more, nothing less."
+      },
+      {
+        "Title": "More About Shenhe: II",
+        "Context": "When faced with delinquents who are just out to cause trouble, most people will try to reason with them. This course of action perplexes me. Removing the root of the problem and disposing of these ill-intentioned fools seems like the obvious course of action. Why do common folks prefer the labor-intensive route?"
+      },
+      {
+        "Title": "More About Shenhe: III",
+        "Context": "I am the apprentice of multiple adepti and have trained alongside them. After a certain point, however, they stopped teaching me new techniques and started focusing on how to control my intense homicidal urges. Oh, don't be nervous... Yes, craters have been left in the ground, and giant trees have been uprooted. But these things only ever happen in the mountains, far away from civilization, and certainly have never affected innocent lives. Besides, I can control myself now."
+      },
+      {
+        "Title": "More About Shenhe: IV",
+        "Context": "My father's intent was to trade my flesh and blood for my mother's life. After he abandoned me in that cave, I still held out hope that he'd come back to rescue me. One day went by. Then two days, three days... I used every ounce of energy in my body to fight off that monster. But as I collapsed on the ground, I finally realized that the day I was waiting for would never come. To this day, I don't know which one it is... Was I abandoned because I'm cursed, or is it the way I've been treated in life that has cursed me?"
+      },
+      {
+        "Title": "More About Shenhe: V",
+        "Context": "Once, I secretly left the mountain and returned to my childhood village without telling my master. But it was deserted, and my father had long since passed away. I suddenly realized that the bond between my relatives and I had been completely severed. And nothing that I'd ever cared about in the past could ever have a future. Ever since then, I have abandoned everything related to the mortal world... That is, until I met you."
+      },
+      {
+        "Title": "Shenhe's Hobbies",
+        "Context": "The most important aspect of meditation is stillness. Let go of all agitation, and let the air around you flow into your body. This technique allows me to quickly focus in on myself. I heard from my master that after meditating beyond a certain point, there is no need to adopt the meditation posture anymore. Adepti can meditate even when standing up... I still have much more to improve on."
+      },
+      {
+        "Title": "Shenhe's Troubles",
+        "Context": "The fear of losing the people most important to me, and the desire to save them... This kind of feeling makes my heart ache, I've never experienced anything like it before. It's a burden, yes, but it's also... something to hold onto."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "I've sampled numerous dishes during my time away from the mountains, but the truth is that I don't really remember how they taste. The only dish I can never forget the flavor of is that bowl of noodles I ate at home, so long ago... I shouldn't have to remember that. Why do I have to remember that?"
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Chew medicinal herbs for long enough, and you can only taste the bitterness... In all the years I trained under the adepti, I had to abstain from all kinds of things, and to a point, I got used to it. But them... \"The common delights of the mortal realm pose no hindrance to the adepti, thus, we may indulge in all manner of dishes as we please\"... These are the exact words my master said."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Mmm, this taste... Is it really meant for me?"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "The food you cook is indisputably delicious. I can't refuse it."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "No matter. I'm used to this kind of flavor, after all."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "I've been told that birthdays are important occasions for most people. They give presents to celebrate the anniversary of the other person's birth. Material possessions aren't really my thing, but... The view of the starry night sky in the mountains is the most beautiful thing I've ever seen in my life. I've frozen this lake and turned it into a mirror, so you can appreciate the reflection of the fleeting clouds and distant stars right up close. This is my way of celebrating your birthday... Hope you like it."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "The power I harness... It grows stronger."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "If my master were to learn about this, she'd probably have me add some more red ropes..."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "I haven't been training as single-mindedly lately, and yet it's as if I'm growing stronger and stronger without making a conscious effort... I'm left to assume the only way for me to achieve this is by your side."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I once believed that freeing my mind from all agitation was the only way to overcome. But after everything I've experienced recently, I finally understand... Only when the right things weigh on your mind can the desire to protect awaken inside of you. And that turns your power into something... meaningful."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Obey!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Manifest!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Unleash!"
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Transfiguration!"
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "My will embodied!"
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "Take your true form!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "By ordinance divine!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Cryo incarnate!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Do your master's bidding!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "So this is what the world considers to be \"treasure\"?"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Adepti treasures have special powers... Hmm, what about mortal ones?"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "These things... What are they used for?"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "You'll regret that..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "I shall not yield..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "I will wipe them out!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Don't push yourself."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Allow me to finish this."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "No escape... from fate."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "My time has come..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "My curse to bear..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Feeble!"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "In your dreams!"
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "You will regret this!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "What exactly is teamwork?"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Understood. I just have to stand here, right?"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "I will do as you command."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Shenhe was originally from a branch family of exorcists, but due to a series of coincidences, she became the disciple of an adeptus.\nShe is a student solely of Cloud Retainer in name, but her impressive constitution and intelligence quickly won several other adepti over.\nShe would go on to learn from them all, eventually becoming a master of adeptal arts in her own right as a mortal.\nShe very much looks the part as well in her unique temperament and manner of carrying herself — indeed, it would be no understatement to name her a true adeptus upon meeting her for the first time.\nHowever, it is precisely due to the long years of tutelage that she has lacked company save for the adepti and odd passing illuminated beast.\nThis isolation has caused her to grow distant and indifferent."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Sometimes, a few rumors will escape from Liyue's small community of pilgrims to make the rounds in the city's back streets.\nThese tales often depict someone being in a hopeless situation in some desperate place, when suddenly—\nA wandering white-haired adeptus comes to their rescue in the nick of time...\nMost such stories are a collection of lovely, intoxicating clichés, little different from the oft-told street-tales of fated marriages and the like.\nBut if one were to ask that white-haired adeptus to tell the story, it would take a vastly different shape:\n\"Some annoying creatures worm their way into the mountains from time to time. I simply get rid of them to prevent them from disturbing my master's meditations.\"\n\"If some people did wind up getting caught in the crossfire and injured... Well, it was their decision to come here. There isn't much I can do about that.\""
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Shenhe is in all likelihood the least accustomed to mortal life amongst those who take on an adeptal appearance.\nHaving been sequestered in the mountains since a young age, she lacks experience and common sense, which makes it difficult for her to relate to people normally.\nTo ordinary people, there are many solutions to any given problem. But to Shenhe, any solution that is not the simplest and most direct one may as well not exist.\nFor example, she almost never considers \"negotiation\" as a solution to being at cross-purposes with others, mostly resorting to \"threats\" instead. After all, it is simple and efficacious. A good solution, no?\nShe has also spent much time ruminating on problems that are truly esoteric.\nFor example: Why do we need to pay for food?\nIs there any difference between intimidating civilians and intimidating bandits?\nShe even truly believes that her master, Cloud Retainer, is a most brilliant and eloquent conversationalist.\nIn a certain sense, she can be considered very pure.\nMuch like a child, she relies on her chaotic yet straightforward intuition and logic to get her through life.\nMountain Shaper once had this to say about her:\n\"Little Shenhe is not only stronger than most — she also possesses a unique character.\"\n\"She knows not the world, understands not common sense, distinguishes few cuisines, and acknowledges no hierarchies.\"\n\"It may not be such an easy thing for Cloud Retainer to tutor her.\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Liyue has no lack of folktales about meetings with the adepti, and many of these concern relative nobodies whom an adeptus took under their wing, thus elevating them greatly.\nHowever, the circumstances under which Shenhe's fate became tied to the adeptal abodes was no such glorious thing. If anything, it was an experience characterized by anguish.\nWhen she was five, her mother passed away, and her father, having loved his wife dearly, found that agony hard to bear.\nOver time, this agony turned into resentment, and this resentment birthed obsession, by which he was driven wandering throughout the land like a man gone mad.\nHe left for close to a year, never stopping, never able to sleep soundly, ever searching for some technique that might bring his wife back.\nAt last, when the year was almost out, he returned in joyous frenzy.\nHer father had brought with him a secret art known as \"Fate Transference\"—\nBy making a ritual sacrifice to the seelie summoned by this art, a living person's body could be exchanged for a dead one's life.\nAt that time, Shenhe was yet utterly unaware of the disaster that would befall. She was only an ordinary child, overjoyed at her long-absent father's return.\nHe claimed that he had a surprise awaiting her in a cave in the mountains behind and that he would take her there immediately. She was ecstatic...\nBut the scene that followed would be burned into her mind forever.\nHer father summoned that hideous, horrifying black \"seelie\" into that cave, its blood-red eyes craving her delectable life-force.\nStupefied, Shenhe knew not from whence it had come, nor what it wanted from this place.\nCrises often paralyze people. One thought only, however, crept into the young Shenhe's mind.\nThis creature wanted to eat her, but she did not want to die. She wanted to live!\nGripping her mother's keepsake, an exorcism dagger, she faced that dark \"seelie,\" trembling yet resolute...\nSeveral days later, an adeptus following the trail of great evil would investigate the cave, only to find the little girl collapsed inside — spent, famished, parched, her life hanging by a thread.\nTaking pity on the lass' ruinous fate, and seeing that she possessed great talent, having repelled some terrifying force on her own, the adeptus would bring her back, heal her, and instruct her in the adeptal path.\nIf not for that, Shenhe would not be as she is today."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Even the most diffident heart, cooled from living and training in the mountains for over a decade, might sometimes experience strange surges.\nSo it was with Shenhe. On impulse, she came down from the mountains one night to return to what was once her home.\nShe did not know how she felt about her home or her family. She was merely driven by some nebulous desire:\nTo live in the house that was once hers, and to see what became of her father, lost in his obsession.\nShe learned from neighbors that he had passed away several years prior only when she got there.\nHer childhood home had also been demolished by pawnbrokers — and thus had all the traces of her memory dissipated.\nShe did not care about the attention she was attracting, and did not answer a single one of the questions asked by those in the vicinity.\nShe simply stood there, listening to the howls that swept through the depths of her heart.\nWas it hatred? Mania? Relief?\nThey were all there, and yet none tarried for even an instant. It was as if her heart were an old well without ripples.\nNo, like a barren well with no water upon which there might be ripples.\nShe stood there for a long time, before departing again before the astonished eyes of all.\nEach step was slow indeed, but she never once turned back."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Liyue has its own fortune-telling, destiny-reading methods, similar to astrology.\nOf these, there are two fates that people seek to avoid at all costs.\nOne is that of the \"solitary star,\" which dictates that one will be separated from friends and family, living alone all one's days.\nThe other is \"disastrous evil,\" which means that one will face many hardships and perils.\nWhen the adepti rescued Shenhe, Moon Carver did once read her fortune.\nThe signs showed that she was marked by both the \"solitary star\" and \"disastrous evil,\" and that she was also plagued by intense homicidal urges — she was thus a person of supremely ominous destiny, doomed to harm both herself and others.\nTo ensure that she could grow up safely and not harm any innocents, the adepti bound her soul using red ropes.\nThis binding had the effect of restraining both her evil fate and her violent tendencies, but also shackled many emotions that should have originally belonged to a human.\nFrom then on, she became more and more disaffected by trivial matters, and even things most might consider important were but dust to her.\nShe became ever less human, and ever more like a lovely yet cold statue.\nBut surprisingly, she felt something stir within her when she encountered that Traveler from a distant land:\nLong-dormant emotions, now strangers to her, came loose all at once from the depths of fate's tableau.\nPerhaps it really was as Moon Carver once said: that heaven might dictate fates, but destiny's tale is written by mortals. The tale of Shenhe and the mortal world had not yet ended..."
+      },
+      {
+        "Title": "White Jade Comb",
+        "Context": "Once upon a time, Shenhe had a full head of black hair.\nWhen she was first brought to Mt. Hulao, she would not say a word. The only thing she proved willing to do was to climb the mountain and watch the sea of clouds.\nIt was well, however, that she would sleep when tired, drink the dew of the mountains when thirsty, and would chew on a few stalks of Qingxin when hungry.\nCloud Retainer took this all in, but did not disturb the girl, instead making this comb of white jade from a sacred stone and giving it to her.\nThe adeptus said that if she ever wished to sever her ties with the mortal world and enter adeptal tutelage, she should brush her hair thrice with this comb, and it would be counted as a rite of apprenticeship.\nShenhe did exactly as the adeptus said without any hesitation. And something strange happened then — for as the jade comb brushed through Shenhe's hair once, a layer of her black locks turned a frosty silver from root to tip.\nOn the second brush, but half her hair remained dark.\nWhen the process was complete, only a flowing curtain of snow remained.\n...\nToday, Shenhe still keeps this comb on her person as a symbol of her connection to the adepti.\nThrough her years of training, she has long since come to understand the meaning behind those three brush strokes:\nThe first to uproot useless anxiety, the second to forsake joy and sorrow, and the third to walk this path into old age without regret."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Few people know how the young girl in the cave, intended as a sacrifice by her own father, had been able to stand against the monster for days and nights on end by herself.\nThough Shenhe was born into an exorcist family, her maddened father had not taught her a single thing about exorcism.\nAnd like many at that innocent age, she was also wholly unused to facing life's perils alone.\nBut in that aphotic cave, bereft of parental protection — indeed, betrayed by kin — Shenhe underwent a metamorphosis.\nJust as Moon Carver's readings had shown, the sleeping calamitous fates, violent urges, and unyielding spirit within her burst their bonds all at once.\nThose things served as an unseen shield and invisible blade, arming the girl's frail form.\nThey gave her strength, gave her claws and fangs, allowing her to attack that wretched creature before her, to swear to tear it to shreds — to prove that she, and not it, was the cruelest evil that stalked the darkness.\nTheir life-and-death battle across the next few days was one without end. Hunter and hunted switched places many times, the conflict locked in stalemate...\nAs the shadow of death loomed large, the gods looked upon the extraordinary girl with favor.\nWith the bright, crystalline object falling into Shenhe's hands, the balance tipped irrevocably in her favor and the victor was decided.\nThe vivid icy light pierced through the dark like skyglow, showing the path to the future.\nIn the past, it had guided Shenhe from her miserable fate. In the future, it would also lead her back to the mortal realm."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 206301,
+      "Name": "Frostflower Dew",
+      "Description": "This Lantern Rite gift that Shenhe received is a set of elegant formal attire that her master, Cloud Retainer had commissioned for her. Red ropes still adorn her arms, but the bitter cold in Shenhe's heart has faded.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_ShenheCostumeDai",
+      "SideIcon": "UI_AvatarIcon_Side_ShenheCostumeDai"
+    },
+    {
+      "Id": 206300,
+      "Name": "The World's Shackles",
+      "Description": "Shenhe's outfit. These elegant garments have accompanied her through long years of training. The red ropes that surround her body are fetters and wards simultaneously.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104164,
+    113031,
+    100031,
+    112040,
+    104312,
+    113026
+  ],
+  "NameCard": {
+    "Name": "Shenhe: Comb",
+    "Description": "Namecard style.\nThe early onset of white hair is often correlated to one's sorrows. Since \"comb\" and \"scatter\" are similarly read in Liyue's language, they believe that combing one's hair is the same as scattering one's misfortunes.",
+    "Icon": "UI_NameCardIcon_Shenhe",
+    "PicturePrefix": "UI_NameCardPic_Shenhe"
+  },
+  "TraceEffect": {
+    "Id": 215013,
+    "Name": "Echo: Lonesome Transcendence",
+    "Description": "Shenhe's Envisaged Echo. \"From the world she seems apart, but there are those who know her heart.\"",
+    "Icon": "UI_TraceEffectIcon_Shenhe"
+  }
+}

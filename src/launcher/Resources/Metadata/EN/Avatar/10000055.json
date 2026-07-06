@@ -1,0 +1,1127 @@
+{
+  "Id": 10000055,
+  "PromoteId": 55,
+  "Sort": 42,
+  "Body": 1,
+  "Icon": "UI_AvatarIcon_Gorou",
+  "SideIcon": "UI_AvatarIcon_Side_Gorou",
+  "Name": "Gorou",
+  "Description": "The great general of Watatsumi Island's forces. He is deeply trusted by his subordinates.",
+  "BeginTime": "2021-12-14T18:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 12,
+  "BaseValue": {
+    "HpBase": 802.3761,
+    "AttackBase": 15.31488,
+    "DefenseBase": 54.36375
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 5531,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "4-Hit DMG|{param4:F1P}",
+            "Aimed Shot|{param5:F1P}",
+            "Fully-Charged Aimed Shot|{param6:P}",
+            "Plunge DMG|{param7:F1P}",
+            "Low/High Plunge DMG|{param8:P}/{param9:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 553101,
+              "Level": 1,
+              "Parameters": [
+                0.37754,
+                0.37152,
+                0.4945,
+                0.58996,
+                0.4386,
+                1.24,
+                0.568288,
+                1.136335,
+                1.419344
+              ]
+            },
+            {
+              "Id": 553102,
+              "Level": 2,
+              "Parameters": [
+                0.40827,
+                0.40176,
+                0.53475,
+                0.63798,
+                0.4743,
+                1.333,
+                0.614544,
+                1.228828,
+                1.534872
+              ]
+            },
+            {
+              "Id": 553103,
+              "Level": 3,
+              "Parameters": [
+                0.439,
+                0.432,
+                0.575,
+                0.686,
+                0.51,
+                1.426,
+                0.6608,
+                1.32132,
+                1.6504
+              ]
+            },
+            {
+              "Id": 553104,
+              "Level": 4,
+              "Parameters": [
+                0.4829,
+                0.4752,
+                0.6325,
+                0.7546,
+                0.561,
+                1.55,
+                0.72688,
+                1.453452,
+                1.81544
+              ]
+            },
+            {
+              "Id": 553105,
+              "Level": 5,
+              "Parameters": [
+                0.51363,
+                0.50544,
+                0.67275,
+                0.80262,
+                0.5967,
+                1.643,
+                0.773136,
+                1.545944,
+                1.930968
+              ]
+            },
+            {
+              "Id": 553106,
+              "Level": 6,
+              "Parameters": [
+                0.54875,
+                0.54,
+                0.71875,
+                0.8575,
+                0.6375,
+                1.736,
+                0.826,
+                1.65165,
+                2.063
+              ]
+            },
+            {
+              "Id": 553107,
+              "Level": 7,
+              "Parameters": [
+                0.59704,
+                0.58752,
+                0.782,
+                0.93296,
+                0.6936,
+                1.86,
+                0.898688,
+                1.796995,
+                2.244544
+              ]
+            },
+            {
+              "Id": 553108,
+              "Level": 8,
+              "Parameters": [
+                0.64533,
+                0.63504,
+                0.84525,
+                1.00842,
+                0.7497,
+                1.984,
+                0.971376,
+                1.94234,
+                2.426088
+              ]
+            },
+            {
+              "Id": 553109,
+              "Level": 9,
+              "Parameters": [
+                0.69362,
+                0.68256,
+                0.9085,
+                1.08388,
+                0.8058,
+                2.108,
+                1.044064,
+                2.087686,
+                2.607632
+              ]
+            },
+            {
+              "Id": 553110,
+              "Level": 10,
+              "Parameters": [
+                0.7463,
+                0.7344,
+                0.9775,
+                1.1662,
+                0.867,
+                2.232,
+                1.12336,
+                2.246244,
+                2.80568
+              ]
+            },
+            {
+              "Id": 553111,
+              "Level": 11,
+              "Parameters": [
+                0.79898,
+                0.78624,
+                1.0465,
+                1.24852,
+                0.9282,
+                2.356,
+                1.202656,
+                2.404802,
+                3.003728
+              ]
+            },
+            {
+              "Id": 553112,
+              "Level": 12,
+              "Parameters": [
+                0.85166,
+                0.83808,
+                1.1155,
+                1.33084,
+                0.9894,
+                2.48,
+                1.281952,
+                2.563361,
+                3.201776
+              ]
+            },
+            {
+              "Id": 553113,
+              "Level": 13,
+              "Parameters": [
+                0.90434,
+                0.88992,
+                1.1845,
+                1.41316,
+                1.0506,
+                2.635,
+                1.361248,
+                2.721919,
+                3.399824
+              ]
+            },
+            {
+              "Id": 553114,
+              "Level": 14,
+              "Parameters": [
+                0.95702,
+                0.94176,
+                1.2535,
+                1.49548,
+                1.1118,
+                2.79,
+                1.440544,
+                2.880478,
+                3.597872
+              ]
+            },
+            {
+              "Id": 553115,
+              "Level": 15,
+              "Parameters": [
+                1.0097,
+                0.9936,
+                1.3225,
+                1.5778,
+                1.173,
+                2.945,
+                1.51984,
+                3.039036,
+                3.79592
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10551,
+        "Name": "Ripping Fang Fletching",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, stone crystals will accumulate on the arrowhead. A fully charged crystalline arrow will deal <color=#FFE699FF>Geo DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_02"
+      },
+      {
+        "GroupId": 5532,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:F1P}",
+            "DEF Increase|{param2:I}",
+            "Geo DMG Bonus|{param3:P}",
+            "Duration|{param4:F1}s",
+            "CD|{param5:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 553201,
+              "Level": 1,
+              "Parameters": [
+                1.072,
+                206.16,
+                0.15,
+                10,
+                10
+              ]
+            },
+            {
+              "Id": 553202,
+              "Level": 2,
+              "Parameters": [
+                1.1524,
+                221.622,
+                0.15,
+                10,
+                10
+              ]
+            },
+            {
+              "Id": 553203,
+              "Level": 3,
+              "Parameters": [
+                1.2328,
+                237.084,
+                0.15,
+                10,
+                10
+              ]
+            },
+            {
+              "Id": 553204,
+              "Level": 4,
+              "Parameters": [
+                1.34,
+                257.7,
+                0.15,
+                10,
+                10
+              ]
+            },
+            {
+              "Id": 553205,
+              "Level": 5,
+              "Parameters": [
+                1.4204,
+                273.162,
+                0.15,
+                10,
+                10
+              ]
+            },
+            {
+              "Id": 553206,
+              "Level": 6,
+              "Parameters": [
+                1.5008,
+                288.624,
+                0.15,
+                10,
+                10
+              ]
+            },
+            {
+              "Id": 553207,
+              "Level": 7,
+              "Parameters": [
+                1.608,
+                309.24,
+                0.15,
+                10,
+                10
+              ]
+            },
+            {
+              "Id": 553208,
+              "Level": 8,
+              "Parameters": [
+                1.7152,
+                329.856,
+                0.15,
+                10,
+                10
+              ]
+            },
+            {
+              "Id": 553209,
+              "Level": 9,
+              "Parameters": [
+                1.8224,
+                350.472,
+                0.15,
+                10,
+                10
+              ]
+            },
+            {
+              "Id": 553210,
+              "Level": 10,
+              "Parameters": [
+                1.9296,
+                371.088,
+                0.15,
+                10,
+                10
+              ]
+            },
+            {
+              "Id": 553211,
+              "Level": 11,
+              "Parameters": [
+                2.0368,
+                391.704,
+                0.15,
+                10,
+                10
+              ]
+            },
+            {
+              "Id": 553212,
+              "Level": 12,
+              "Parameters": [
+                2.144,
+                412.32,
+                0.15,
+                10,
+                10
+              ]
+            },
+            {
+              "Id": 553213,
+              "Level": 13,
+              "Parameters": [
+                2.278,
+                438.09,
+                0.15,
+                10,
+                10
+              ]
+            },
+            {
+              "Id": 553214,
+              "Level": 14,
+              "Parameters": [
+                2.412,
+                463.86,
+                0.15,
+                10,
+                10
+              ]
+            },
+            {
+              "Id": 553215,
+              "Level": 15,
+              "Parameters": [
+                2.546,
+                489.63,
+                0.15,
+                10,
+                10
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10552,
+        "Name": "Inuzaka All-Round Defense",
+        "Description": "Deals <color=#FFE699FF>AoE Geo DMG</color> and sets up a General's War Banner.\n\n<color=#FFD780FF>General's War Banner</color>\nProvides up to 3 buffs to active characters within the skill's AoE based on the number of <color=#FFE699FF>Geo</color> characters in the party at the time of casting:\n· 1 Geo character: Adds \"Standing Firm\" - DEF Bonus.\n· 2 Geo characters: Adds \"Impregnable\" - Increased resistance to interruption.\n· 3 Geo characters: Adds \"Crunch\" - <color=#FFE699FF>Geo DMG Bonus</color>.\n\nGorou can deploy only 1 General's War Banner on the field at any one time. Characters can only benefit from 1 General's War Banner at a time. When a party member leaves the field, the active buff will last for 2s.\n\n<color=#FFD780FF>Hold</color>\nAdjust the location of the skill.\n\n<i>\"Take up this formation and we'll be safe — I guarantee it!\" As a general and a leader of troops, the last thing Gorou wants is to see is those who follow him getting hurt.</i>",
+        "Icon": "Skill_S_Gorou_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 5539,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:P} DEF",
+          "Crystal Collapse DMG|{param2:P} DEF",
+          "Duration|{param3:F1}s",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 553901,
+            "Level": 1,
+            "Parameters": [
+              0.98216,
+              0.613,
+              9,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 553902,
+            "Level": 2,
+            "Parameters": [
+              1.055822,
+              0.658975,
+              9,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 553903,
+            "Level": 3,
+            "Parameters": [
+              1.129484,
+              0.70495,
+              9,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 553904,
+            "Level": 4,
+            "Parameters": [
+              1.2277,
+              0.76625,
+              9,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 553905,
+            "Level": 5,
+            "Parameters": [
+              1.301362,
+              0.812225,
+              9,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 553906,
+            "Level": 6,
+            "Parameters": [
+              1.375024,
+              0.8582,
+              9,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 553907,
+            "Level": 7,
+            "Parameters": [
+              1.47324,
+              0.9195,
+              9,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 553908,
+            "Level": 8,
+            "Parameters": [
+              1.571456,
+              0.9808,
+              9,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 553909,
+            "Level": 9,
+            "Parameters": [
+              1.669672,
+              1.0421,
+              9,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 553910,
+            "Level": 10,
+            "Parameters": [
+              1.767888,
+              1.1034,
+              9,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 553911,
+            "Level": 11,
+            "Parameters": [
+              1.866104,
+              1.1647,
+              9,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 553912,
+            "Level": 12,
+            "Parameters": [
+              1.96432,
+              1.226,
+              9,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 553913,
+            "Level": 13,
+            "Parameters": [
+              2.08709,
+              1.302625,
+              9,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 553914,
+            "Level": 14,
+            "Parameters": [
+              2.20986,
+              1.37925,
+              9,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 553915,
+            "Level": 15,
+            "Parameters": [
+              2.33263,
+              1.455875,
+              9,
+              20,
+              80
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10555,
+      "Name": "Juuga: Forward Unto Victory",
+      "Description": "Displaying his valor as a general, Gorou deals <color=#FFE699FF>AoE Geo DMG</color> and creates a field known as General's Glory to embolden his comrades.\n\n<color=#FFD780FF>General's Glory</color>\nThis field has the following properties:\n· Like the General's War Banner created by Inuzaka All-Round Defense, provides buffs to active characters within the skill's AoE based on the number of <color=#FFE699FF>Geo</color> characters in the party. Also moves together with your active character.\n· Generates 1 Crystal Collapse every 1.5s that deals <color=#FFE699FF>AoE Geo DMG</color> to 1 opponent within the skill's AoE.\n· Pulls 1 elemental shard in the skill's AoE to your active character's position every 1.5s (elemental shards are created by Crystallize reactions).\n\nIf a General's War Banner created by Gorou currently exists on the field when this ability is used, it will be destroyed. In addition, for the duration of General's Glory, Gorou's Elemental Skill \"Inuzaka All-Round Defense\" will not create the General's War Banner.\n If Gorou falls, the effects of General's Glory will be cleared.\n\n<i>\"We have the high ground!\" Gorou can ever so slightly change the terrain of the battlefield to help win victory. This technique has seen him through many battles against seemingly superior opposition.</i>",
+      "Icon": "Skill_E_Gorou_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 5521,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 552101,
+              "Level": 1,
+              "Parameters": [
+                0.25,
+                12
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 552101,
+        "Name": "Heedless of the Wind and Weather",
+        "Description": "After using <color=#FFD780FF>Juuga: Forward Unto Victory</color>, all nearby party members' DEF is increased by 25% for 12s.",
+        "Icon": "UI_Talent_S_Gorou_05"
+      },
+      {
+        "GroupId": 5522,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 552201,
+              "Level": 1,
+              "Parameters": [
+                1.56,
+                0.156
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 552201,
+        "Name": "A Favor Repaid",
+        "Description": "Gorou receives the following DMG Bonuses to his attacks based on his DEF:\n· <color=#FFD780FF>Inuzaka All-Round Defense</color>: Skill DMG increased by 156% of DEF\n· <color=#FFD780FF>Juuga: Forward Unto Victory</color>: Skill DMG and Crystal Collapse DMG increased by 15.6% of DEF",
+        "Icon": "UI_Talent_S_Gorou_06"
+      },
+      {
+        "GroupId": 5523,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 552301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 552301,
+        "Name": "Seeker of Shinies",
+        "Description": "Displays the location of nearby <color=#FFD780FF>resources unique to Inazuma</color> on the mini-map.",
+        "Icon": "UI_Talent_S_Gorou_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 551,
+        "Name": "Rushing Hound: Swift as the Wind",
+        "Description": "When characters (other than Gorou) within the AoE of Gorou's <color=#FFD780FF>General's War Banner</color> or <color=#FFD780FF>General's Glory</color> deal Geo DMG to opponents, the CD of Gorou's <color=#FFD780FF>Inuzaka All-Round Defense</color> is decreased by 2s.\nThis effect can occur once every 10s.",
+        "Icon": "UI_Talent_S_Gorou_01"
+      },
+      {
+        "Id": 552,
+        "Name": "Sitting Hound: Steady as a Clock",
+        "Description": "While <color=#FFD780FF>General's Glory</color> is in effect, its duration is extended by 1s when a nearby active character obtains an Elemental Shard from a Crystallize reaction, or triggers a Lunar-Crystallize reaction. \nThis effect can occur once every 0.1s. Max extension is 3s.",
+        "Icon": "UI_Talent_S_Gorou_02"
+      },
+      {
+        "Id": 553,
+        "Name": "Mauling Hound: Fierce as Fire",
+        "Description": "Increases the Level of <color=#FFD780FF>Inuzaka All-Round Defense</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Gorou_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 554,
+        "Name": "Lapping Hound: Warm as Water",
+        "Description": "When <color=#FFD780FF>General's Glory</color> is in the \"Impregnable\" or \"Crunch\" states, it will also heal active characters within its AoE by 50% of Gorou's own DEF every 1.5s.",
+        "Icon": "UI_Talent_S_Gorou_03"
+      },
+      {
+        "Id": 555,
+        "Name": "Striking Hound: Thunderous Force",
+        "Description": "Increases the Level of <color=#FFD780FF>Juuga: Forward Unto Victory</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Gorou_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 556,
+        "Name": "Valiant Hound: Mountainous Fealty",
+        "Description": "For 12s after using <color=#FFD780FF>Inuzaka All-Round Defense</color> or <color=#FFD780FF>Juuga: Forward Unto Victory</color>, increases the CRIT DMG of all nearby party members' <color=#FFE699FF>Geo DMG</color> based on the buff level of the skill's field at the time of use:\n· \"Standing Firm\": +10%\n· \"Impregnable\": +20%\n· \"Crunch\": +40%\n\nThis effect cannot stack and will take reference from the last instance of the effect that is triggered.",
+        "Icon": "UI_Talent_S_Gorou_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Canine Warrior",
+    "Detail": "The great general of Watatsumi Island's forces. He is deeply trusted by his subordinates.",
+    "Association": 5,
+    "Native": "Watatsumi Island",
+    "BirthMonth": 5,
+    "BirthDay": 18,
+    "VisionBefore": "Geo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Canis Bellatoris",
+    "CvChinese": "杨昕燃",
+    "CvJapanese": "畠中祐",
+    "CvEnglish": "Cory Yee",
+    "CvKorean": "Lee Sae-byeok",
+    "CookBonus": {
+      "OriginItemId": 108262,
+      "ItemId": 108365,
+      "InputList": [
+        100061,
+        110001,
+        100091,
+        100062
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "General Gorou of the Watatsumi Island resistance, ready and waiting! I've long heard of your sterling reputation and I look forward to fighting our way to victory side-by-side! ...Heh, so what do you think? Did that sound inspiring?"
+      },
+      {
+        "Title": "Chat: Tactics",
+        "Context": "Keep your weapon at the ready. You never know what's around the corner..."
+      },
+      {
+        "Title": "Chat: Training",
+        "Context": "The fighting has ceased for now... Commence physical training!"
+      },
+      {
+        "Title": "Chat: Physique",
+        "Context": "A strong body shows strength and instills confidence in others around you. I must always stay at the top of my game!"
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Ugh, my tail's getting wet... Let's find a fire and dry off."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Stay alert!"
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Whew *shivering*... it's cold. These conditions are unsuitable for outdoor maneuvers."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "It'd be nice to just lie in the sun... Ahem, but I must set an example for the others."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "We can attack downwind and press the advantage. Or, bolster our courage and fight upwind!"
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "The sun is up and it is time to train. Shall we go climb a mountain?"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Let's have Radish and Fish Stew with plain rice for lunch today. It's been a favorite among the troops lately, so I suggest you try it, too."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Though the sun is setting, our guard must remain high. We should let our eyes adapt to the dark... Even in the darkness of night, a battle may be looming."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "If you're feeling fatigued, then best turn in for the night. I'll take watch! Don't worry, you have my word that everything will still be in good order on your return."
+      },
+      {
+        "Title": "About Gorou: Top Dog",
+        "Context": "Huh? \"Top Dog Gorou\"? Where did you hear that? *sigh* To be honest, I've grown quite close with my fellow officers, and always share any good news I might have with them. In private, they've all started calling me Top Dog out of respect... But in terms of age, they are all my seniors."
+      },
+      {
+        "Title": "About Gorou: Advice",
+        "Context": "The troops seem to picture me as someone of extraordinary abilities — I think it might be because of our streak of victories lately. Now they always come to me for advice on even the most trivial matters. When I see the expectant look in their eyes, it's impossible for me to turn them away, but at the same time, my strategic ability is limited... All I can do is give some general pointers, or failing that, respond based on my gut feeling alone. *sigh* I just hope I'm not letting them down."
+      },
+      {
+        "Title": "About Us: Speaking Your Mind",
+        "Context": "If there's anything ever troubling you, don't keep it all muzzled up inside. You can always speak your mind with me! Although I can't guarantee that I'll always have an answer, I'll certainly offer you my best advice! Even when I can't muster much of a response, you can always count on me to be a good listener. Whatever it is, I'm all ears."
+      },
+      {
+        "Title": "About Us: Camaraderie",
+        "Context": "We train together, eat together, and relax together. There's no better way to strengthen communication and build tacit understanding between everyone on the team. In the heat of battle, just a simple glance can transmit crucial information. Hmm? You don't think it's very appropriate? Huh... Well, I mean, that's how the troops and I have been bonding as a team."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "My Vision amplifies my abilities in battle. It allows me to take greater responsibility on the battlefield and forge a way forward for the troops. But I also understand that one person alone, no matter how strong, is never enough to turn the tide of a battle. The key to victory is everyone's united effort, fighting for a common cause."
+      },
+      {
+        "Title": "Something to Share: Dressed for Battle",
+        "Context": "I don't like to enter battle wearing lots of heavy equipment. I travel light, that's my style. My strength is in moving quickly around the battlefield, seeking out opportunities to take control of the fight. I always target the strongest warriors first to weaken the enemy's morale."
+      },
+      {
+        "Title": "Something to Share: Ever-Victorious General",
+        "Context": "The troops have come up with a nickname for me, the \"ever-victorious pointy-eared general.\" Now there's even a rumor going around saying that \"if you want Top Dog Gorou's victorious luck, give his pointy ears a rub.\" Grrr, there will be no rubbing of my ears, and that's final. If they think they can smile their way into persuading me otherwise, well, they've got another thing... Hmm? Hey, wh—what are you doing? Not you too...? Come on now, I... I thought I... Mm... Mm..."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "I've heard that there's a mountain range in Liyue that reaches all the way up into the clouds. Ah, I'd relish a chance to go climbing there!"
+      },
+      {
+        "Title": "About Beidou",
+        "Context": "Captain Beidou values camaraderie, and her exceptional abilities command respect. She once said that she prefers to avoid involving her companions in disputes that don't concern them, which I can completely understand. That's why I only request her help when we have no one else to turn to."
+      },
+      {
+        "Title": "About Kaedehara Kazuha",
+        "Context": "I've seen all kinds of wandering samurai before, and Kazuha is categorically a different breed from the others. He's like a gust of wind that sweeps through the land. Though he never stays for long, he is always able to contribute something to those who are around him. When I fought alongside him, I learned more about what it means to be truly carefree and without constraints. In any case, I think that Kazuha and I make a great team together!"
+      },
+      {
+        "Title": "About Sangonomiya Kokomi: Duties",
+        "Context": "As the leader of Watatsumi Island, Her Excellency is responsible for assessing the scenario and formulating a plan. It is then my duty to put every detail of the plan into action and to keep the situation under control on the front line. We are united with the whole resistance in achieving a single purpose: victory."
+      },
+      {
+        "Title": "About Sangonomiya Kokomi: Attitude",
+        "Context": "I have only the utmost respect for Her Excellency. Without her ingenious and insightful strategies, the resistance could never have come as far as it has today. But if you ask me, it seems that deep down she prefers a much quieter existence. So when there's no pressing military matters, I try not to disturb her too much."
+      },
+      {
+        "Title": "About the Raiden Shogun",
+        "Context": "Grr, the Raiden Shogun... I could never bring myself to accept her past actions, no matter what her reasoning may have been. Though a peace treaty has been signed between Watatsumi Island and the Shogunate, I refuse to let my guard down. If conflict ever breaks out again, I will resume my place back on the front line."
+      },
+      {
+        "Title": "About Kujou Sara",
+        "Context": "I have nothing good to say about the Shogun's Army, but Kujou Sara is perhaps the most honorable officer among their ranks. We've met each other countless times in battle, emerging both victorious and defeated at different times. *sigh* I know now that it's not realistic to think this way, but I did use to wonder what things would be like if those like her could value the wishes of the people and be free from the grip of the Shogunate."
+      },
+      {
+        "Title": "About Yae Miko",
+        "Context": "Oh, her... I'd prefer not to talk about her. Can we change the topic? Or, if there are any tasks I can take off your hand, I'll gladly oblige! Anything at all? ...Ahem, let's just say it'd be best for my general well-being if we can we avoid talking about her..."
+      },
+      {
+        "Title": "About Kamisato Ayaka",
+        "Context": "The Yashiro Commission operates as part of the Shogunate, but on many issues they tend to side with the people of Inazuma. In fact, the Shirasagi Himegimi has managed to establish an excellent reputation for herself, despite facing pressure from both sides. I suppose she must know how to keep her composure at all times and navigate sensitive situations tactfully... There's much I could learn from her."
+      },
+      {
+        "Title": "About Sayu",
+        "Context": "Hmm, according to our intel, she is a ninja proficient in the art of infiltration — a skill set which could prove very useful in some of Her Excellency's special operations... However, our intel also indicates that she could be difficult to recruit as she is rather unruly, and often disappears without a trace. Hmm? She's with the Yashiro Commission? Oh, well forget it then."
+      },
+      {
+        "Title": "About Shikanoin Heizou",
+        "Context": "You mean that sneaky detective that never seems to actually be working on a case? Well, no one from the Shogunate can be fully trusted, so I'll be keeping my eyes and ears on him! On a separate note, he does have some talent for investigation. But how can we know that this isn't all part of some nefarious scheme? Hmm. Only time will tell, I suppose."
+      },
+      {
+        "Title": "More About Gorou: I",
+        "Context": "Hmm, I'm afraid that most of my days have been spent on the battlefield, so there's not much to tell about me. But if you'd really like to hear my stories, I'm happy to sit down and tell you everything!"
+      },
+      {
+        "Title": "More About Gorou: II",
+        "Context": "I may not have superior cunning or intelligence, but what I do have is my own two hands and my life to lay on the line. Countless battles in, I'm still here, so I guess these hands and my will to survive were both strong enough to see me through. Some even say that no matter how dire the battle may be, everyone will emerge unscathed as long as they follow me. And with that, I've somehow gained enough reputation among our forces to become the leader that I am now."
+      },
+      {
+        "Title": "More About Gorou: III",
+        "Context": "At first, our only enemies were roaming bandits, pirates, and monsters. But then, everything changed when the Raiden Shogun enacted the Vision Hunt Decree. The Shogun's Army marched up expecting to put us in our place, but we were ready for them, and we hit them hard. Hehe, I bet they never expected to meet such fierce resistance."
+      },
+      {
+        "Title": "More About Gorou: IV",
+        "Context": "Her Excellency once warned me of my fatal flaw... I tend to get too engrossed in battle, fighting deep into enemy lines and forgetting about everything else. She told me that my bravery is commendable, but as a ranking officer, it's not my place to do this. I'm doing my best to improve, but... Would you also be able to keep an eye on me?"
+      },
+      {
+        "Title": "More About Gorou: V",
+        "Context": "We are not fighting against any particular group or faction. No, we fight against a destructive malice — a malice that has trampled the aspirations of the people and destroyed the peaceful lives they once knew. After I rid the land of such evil I will be able to peacefully lay down my weapon. Only then will I trade my uniform for civilian attire... and finally stroll the beautiful landscape of Watatsumi Island together with you."
+      },
+      {
+        "Title": "Gorou's Hobbies",
+        "Context": "I love mountain climbing! The steeper, the better. Climbing trains my body and mind, making me stronger with every grip and every foothold. Better yet is climbing mountains with fellow companions. After hours of dirt and sweat scaling the summit, we can sit down and enjoy the view together. It's one of life's greatest joys! Ahem, however, I have absolutely no desire to scale the tallest peak in Inazuma..."
+      },
+      {
+        "Title": "Gorou's Troubles",
+        "Context": "There are times when being lightly armored has its shortcomings... For example, I have to be particularly careful of my tail when the enemy attacks with fire."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "My favorites are cake and Tricolor Dango, probably because I seldom get the chance to enjoy the luxury of sweets. The rations we have in the field are intended to be simple, effective, and quick, and are seldom served with any seasonings at all, let alone sugar... It's probably the most precious commodity of all. Ah, what can I say — I guess I just have a sweet tooth!"
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I'll pretty much eat anything, but onions are an exception. One time, the logistics division added ground onion to my food and I bawled in front of everyone, right there at the mess table... *sigh* Talk about embarrassing. The soldiers from logistics felt terrible about it, too."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Mm! I become powerless in the face of sweets!"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Oh, I feel invigorated! Is there anything I can help you with?"
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "It's a little spicier than I expected... *sniff* I—I don't think I can keep going."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Today's a momentous occasion, your birthday! Allow me to arrange all the celebrations for you! We can make a bonfire on the beach and catch some fresh fish and crabs. I'll personally prepare a morale-boosting meal that would make even the highest-ranking generals jealous."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "With this newfound strength, I will defend those who fight alongside me."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Protecting my soldiers doesn't just mean having a robust defense in place. Sometimes, it means going on the attack!"
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "The key to seizing victory in battle lies in remembering the meaning of battle and employing the right tactics to generate momentum, making your forces unstoppable."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "With momentum on our side and close camaraderie, we are unstoppable. Thank you for your guidance. This is a victory that belongs to the both of us."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Advance!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Charge!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Fall in!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Everyone on me!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Press the advantage!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Rally!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "The tide of battle is in our favor!"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Let's distribute these among our forces."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Careful, it could be a trap... Oh? Never mind."
+      },
+      {
+        "Title": "Sprint Start: I",
+        "Context": "Follow my lead!"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "I can still fight!"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "I got careless!"
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Surrender is not an option!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Fall back!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Stay in formation!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "We're... defeated..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "For... Watatsumi Island..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "All forces... retreat..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Shake it off!"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "C'mon!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Ready and waiting!"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Prepare to move out!"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Company, fall in!"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Gorou is the great general of Watatsumi Island's military, and he is deeply loved by his subordinates.\nDuring the period of the Vision Hunt Decree, Gorou led the forces of Watatsumi against the Shogun's Army, and successfully held the line against them.\nThe troops call him the \"ever-victorious pointy-eared general,\" a nickname that has also seen broad use among Shogunate warriors.\nIn private, however, Gorou puts on no airs and is a straightforward person, which has led him to be regarded by all as the man with the plan.\nBut even such an exemplary general must have his fair share of troubles..."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Gorou was once an ordinary Watatsumi soldier.\nDuring a certain special operation, Gorou's unit, Gorgasia II, faced an unprecedented crisis.\nTheir captain had been felled by a stray arrow, and the survivors were surrounded deep in the mountains.\nTo continue their mission, to ask for reinforcements, to open negotiations with the enemy... Countless choices lay before them, but the mountain was silent.\nLeaderless and without any supplies, the unit was on its last legs. With their morale flagging, thoughts of surrender shrouded many minds.\nAt this critical moment, Gorou stood up. He rejected negotiation and surrender, and instead proposed a bold plan.\nThey would not hide any longer. Instead, he would lead the larger part of the platoon in a feigned attack to buy the others a chance to call for reinforcements. Once those reinforcements arrived, they could perform a pincer attack together.\nWhen asked what they should do if they failed, Gorou replied:\n\"If the enemy surrounds us any further, our options will be even more limited. The way I see it, we still have a chance, so we've got to give it all we've got.\"\n\"I'll take responsibility if the plan fails.\"\nAfter holding the line for several days without rest, the exhausted Gorou and his companions were finally relieved by a force led by Sangonomiya Kokomi herself.\nAfter that, he was promoted to serve as the captain of Gorgasia II, and from there he would work his way up to the rank of General."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "In the eyes of the men, Gorou is a strict but humble general.\nHe is straightforward and easy-going, and he treats his subordinates like his own family, sharing weal and woe with them.\nSangonomiya Kokomi once told Gorou that material, supplies, and salaries were the three most important things to an army.\nFrom that day on, he would personally explain weapon maintenance to his subordinates. Every time the granaries were opened, he would supervise the process strictly to prevent any unlawful deductions.\nAnd as General Gorou, he will always lead from the front.\nThe sight of him charging at the tip of the spear is like a rallying banner, encouraging the troops behind him to continue advancing.\nThese are all reasons why the troops greatly respect him. As with Kokomi, Gorou greatly treasures the lives of his troops, but by contrast, values his own quite little.\nSome who understand little of the thought process behind this occasionally joke that Gorou is a \"kid\" who doesn't seem like a general at all.\nBut to the soldiers of Watatsumi Island, this kid is the best general they could ask for."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Gorou is valiant and decisive, often leading inferior forces to victory over superior opposition.\nHowever, he does have a shortcoming of his own — a sometimes unstable temper.\nThat is to say that the blood sometimes rushes to his head at the height of a battle.\nWar is cruel, and Gorou does indeed lack experience compared to veterans who have been scrapping it out on battlefields for decades.\nFortunately, he learns fast and is currently trying to make up for his various small failings.\nSangonomiya Kokomi often provides her various commanders with directives, but how they are used is up to the skill of the commander in question.\nFor his part, Gorou is always able to execute the courses of action that best suit the present situation from the directives he has been given.\nGorou believes that over time, he will come to internalize the concepts behind them. Perhaps then, he can take the field with even more confidence than before."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "At Yae Miko's request, Gorou has taken up a certain extra \"job\" at Yae Publishing House.\nWith the end of the Vision Hunt Decree, and the successful negotiations between Watatsumi Island and the Shogunate, relations between the two sides are beginning to warm.\nGorou has also visited Narukami Island quite a few times to check out the changes, buy a few popular books, and go to Yae Publishing House to complete the task he agreed to help with.\nYae Miko set up an anonymous column for Gorou in the \"That's Life\" magazine. Here, readers will write about the things that trouble them and send them to Yae Publishing House, upon which Gorou will give them some suggestions.\nYae Publishing House will take special care to redact any personal information revealed on the part of the write-ins or Gorou's replies, and will replace real names with pseudonyms.\nAccording to Yae Miko, she chose him because she'd heard that he often listened to his subordinates when they chatted about personal matters.\nThe column proved to be very popular indeed, but for whatever reason, every time an editor delivers the royalties to Gorou, they might sheepishly ask:\n\"Ah, speaking of which, Gorou, have you heard of Ms. Hina?\"\n\"I've heard that she's a rather popular columnist, and a recent one, too. Is something the matter?\"\n\"Oh, no, no... It's nothing...\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Just as the troops don't exactly tell Gorou everything happening in their lives, Gorou, too, has some troubles that are difficult to share.\nFor example, how his tail fur starts to get dull and look haggard after being exposed to the elements for too long, and how he'd love to tend to it — if he could only spare the time out in the field.\nOr how he sometimes feels a bit inferior about his slight physique when bathing together with his subordinates.\nOr about how encountering inscrutable women like Yae Miko sends him into defense mode instantly, rendering him unable to properly interact with them...\nIn trying to maintain a respectable image, Gorou refrains from telling his soldiers about such troubles.\nAnd while they have been able to guess at his troubles to some extent, the Watatsumi soldiers often just play along and pretend that they don't notice.\nAs such, his worries just kept piling up, until the Traveler arrived, thus granting the Watatsumi general, ever good at banishing the worries of others, someone who could help relieve him of his own woes."
+      },
+      {
+        "Title": "Mountaineering Gear",
+        "Context": "Of Gorou's various hobbies, \"mountaineering\" is likely up there in the top three.\nSweating it out while climbing a mountain with companions before admiring the beauty all around you helps to train both the mind and body and is a great camaraderie-builder.\nTo better enjoy this hobby of his, Gorou bought a set of mountaineering gear from a traveling merchant.\nThe set is not particularly pricey, but it is both sturdy and durable and has seen Gorou through many dangerous ascents.\nJust as he maintains his weapons well, Gorou has also kept this set of gear in tip-top shape. There is little doubt that it will accompany him through many future journeys as well."
+      },
+      {
+        "Title": "Vision",
+        "Context": "There was a time when Gorou ascribed responsibility for victory or loss in battle entirely to himself.\n\"If only I became a little stronger, perhaps I'd be able to turn the tide.\"\nIt was in this spirit that Gorou trained his archery day and night, hoping to rely on his strength to lead his comrades to victory.\nBut after some time on the battlefield, Gorou saw powerful warriors being isolated and captured alive, while weak troops in inferior positions could rout their enemies through unity.\nThat was when Gorou realized that a single person's battlefield capabilities are limited.\nGetting stronger is important, naturally, but uniting the troops to fight as one is even more crucial.\nA troop can only be unbeatable if they are strong together.\nHaving realized this, Gorou no longer pursued the apex of excellence in archery, but instead invested time and effort in those around him, helping everyone improve together.\nThinking back on it, this may have opened the door for Gorou to obtain his Vision."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 205500,
+      "Name": "Panoply of a Hundred Hunts",
+      "Description": "Gorou's outfit. This light armor is designed to allow the marksman-general Gorou to handle his bow with ease. The armoring at the shoulder and elbow is also designed with this in mind.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104174,
+    113023,
+    101207,
+    112055,
+    104328,
+    113025
+  ],
+  "NameCard": {
+    "Name": "Gorou: Leisurely Hound",
+    "Description": "Namecard style.\nAs long as you believe in the path you are walking, then everything you encounter on your journey will be a source of happiness.",
+    "Icon": "UI_NameCardIcon_Gorou",
+    "PicturePrefix": "UI_NameCardPic_Gorou"
+  }
+}

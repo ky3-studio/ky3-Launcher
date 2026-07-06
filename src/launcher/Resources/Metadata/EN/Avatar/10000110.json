@@ -1,0 +1,1157 @@
+{
+  "Id": 10000110,
+  "PromoteId": 110,
+  "Sort": 95,
+  "Body": 5,
+  "Icon": "UI_AvatarIcon_Iansan",
+  "SideIcon": "UI_AvatarIcon_Side_Iansan",
+  "Name": "Iansan",
+  "Description": "Head coach of the fitness club at the Collective of Plenty, and a renowned Natlanese nutritionist.",
+  "BeginTime": "2025-03-25T00:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 893.5552,
+    "AttackBase": 21.54768,
+    "DefenseBase": 53.505375
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 11031,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "Charged Attack DMG|{param4:F1P}",
+            "Swift Stormflight DMG|{param5:F1P}",
+            "Charged Attack & Swift Stormflight Stamina Cost|{param6:F1}",
+            "Plunge DMG|{param7:F1P}",
+            "Low/High Plunge DMG|{param8:P}/{param9:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1103101,
+              "Level": 1,
+              "Parameters": [
+                0.469758,
+                0.427644,
+                0.643882,
+                1.00276,
+                0.84194,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 1103102,
+              "Level": 2,
+              "Parameters": [
+                0.507994,
+                0.462452,
+                0.696291,
+                1.08438,
+                0.91047,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 1103103,
+              "Level": 3,
+              "Parameters": [
+                0.54623,
+                0.49726,
+                0.7487,
+                1.166,
+                0.979,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 1103104,
+              "Level": 4,
+              "Parameters": [
+                0.600853,
+                0.546986,
+                0.82357,
+                1.2826,
+                1.0769,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 1103105,
+              "Level": 5,
+              "Parameters": [
+                0.639089,
+                0.581794,
+                0.875979,
+                1.36422,
+                1.14543,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 1103106,
+              "Level": 6,
+              "Parameters": [
+                0.682787,
+                0.621575,
+                0.935875,
+                1.4575,
+                1.22375,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 1103107,
+              "Level": 7,
+              "Parameters": [
+                0.742873,
+                0.676274,
+                1.018232,
+                1.58576,
+                1.33144,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 1103108,
+              "Level": 8,
+              "Parameters": [
+                0.802958,
+                0.730972,
+                1.100589,
+                1.71402,
+                1.43913,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 1103109,
+              "Level": 9,
+              "Parameters": [
+                0.863043,
+                0.785671,
+                1.182946,
+                1.84228,
+                1.54682,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 1103110,
+              "Level": 10,
+              "Parameters": [
+                0.928591,
+                0.845342,
+                1.27279,
+                1.9822,
+                1.6643,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 1103111,
+              "Level": 11,
+              "Parameters": [
+                0.994139,
+                0.905013,
+                1.362634,
+                2.12212,
+                1.78178,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 1103112,
+              "Level": 12,
+              "Parameters": [
+                1.059686,
+                0.964684,
+                1.452478,
+                2.26204,
+                1.89926,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 1103113,
+              "Level": 13,
+              "Parameters": [
+                1.125234,
+                1.024356,
+                1.542322,
+                2.40196,
+                2.01674,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 1103114,
+              "Level": 14,
+              "Parameters": [
+                1.190781,
+                1.084027,
+                1.632166,
+                2.54188,
+                2.13422,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 1103115,
+              "Level": 15,
+              "Parameters": [
+                1.256329,
+                1.143698,
+                1.72201,
+                2.6818,
+                2.2517,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11101,
+        "Name": "Weighted Spike",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.\n\n<color=#FFD780FF>Nightsoul State: Swift Stormflight</color>\nWhile in the Nightsoul's Blessing state: Iansan's Charged Attack will be transformed into the formidable Swift Stormflight, consuming a certain amount of Stamina to stomp fiercely down, dealing Nightsoul-aligned <color=#FFACFFFF>AoE Electro DMG</color>.",
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 11032,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:F1P}",
+            "Nightsoul Point Limit|{param2:F1}",
+            "CD|{param3:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1103201,
+              "Level": 1,
+              "Parameters": [
+                2.864,
+                54,
+                16
+              ]
+            },
+            {
+              "Id": 1103202,
+              "Level": 2,
+              "Parameters": [
+                3.0788,
+                54,
+                16
+              ]
+            },
+            {
+              "Id": 1103203,
+              "Level": 3,
+              "Parameters": [
+                3.2936,
+                54,
+                16
+              ]
+            },
+            {
+              "Id": 1103204,
+              "Level": 4,
+              "Parameters": [
+                3.58,
+                54,
+                16
+              ]
+            },
+            {
+              "Id": 1103205,
+              "Level": 5,
+              "Parameters": [
+                3.7948,
+                54,
+                16
+              ]
+            },
+            {
+              "Id": 1103206,
+              "Level": 6,
+              "Parameters": [
+                4.0096,
+                54,
+                16
+              ]
+            },
+            {
+              "Id": 1103207,
+              "Level": 7,
+              "Parameters": [
+                4.296,
+                54,
+                16
+              ]
+            },
+            {
+              "Id": 1103208,
+              "Level": 8,
+              "Parameters": [
+                4.5824,
+                54,
+                16
+              ]
+            },
+            {
+              "Id": 1103209,
+              "Level": 9,
+              "Parameters": [
+                4.8688,
+                54,
+                16
+              ]
+            },
+            {
+              "Id": 1103210,
+              "Level": 10,
+              "Parameters": [
+                5.1552,
+                54,
+                16
+              ]
+            },
+            {
+              "Id": 1103211,
+              "Level": 11,
+              "Parameters": [
+                5.4416,
+                54,
+                16
+              ]
+            },
+            {
+              "Id": 1103212,
+              "Level": 12,
+              "Parameters": [
+                5.728,
+                54,
+                16
+              ]
+            },
+            {
+              "Id": 1103213,
+              "Level": 13,
+              "Parameters": [
+                6.086,
+                54,
+                16
+              ]
+            },
+            {
+              "Id": 1103214,
+              "Level": 14,
+              "Parameters": [
+                6.444,
+                54,
+                16
+              ]
+            },
+            {
+              "Id": 1103215,
+              "Level": 15,
+              "Parameters": [
+                6.802,
+                54,
+                16
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11102,
+        "Name": "Thunderbolt Rush",
+        "Description": "Iansan charges forward a certain distance, dealing Nightsoul-aligned <color=#FFACFFFF>Electro DMG</color> to all opponents in her path.\nAfter this Skill is used, Iansan will regain 54 Nightsoul points and enter the Nightsoul's Blessing state. Within 5s after this is done, using a Normal Attack will trigger 1 quick Swift Stormflight stomp from Iansan that will not consume Stamina.\n\n<color=#FFD780FF>Nightsoul's Blessing: Iansan</color>\nContinuously consumes Nightsoul points. If she runs out, or uses this Skill again, her Nightsoul's Blessing state will end. It has the following properties:\n· Increases Iansan's Movement SPD.\n· Holding sprint will switch Iansan to Rushing Thunderbolt mode, greatly increasing her Movement SPD temporarily. In this mode, Iansan can make flying leaps using terrain, or consume additional Nightsoul points to move on water or liquid Phlogiston while being immune to DMG from the latter.\n\n<i>\"Faster, stronger! That's what all that hard work is for!\"</i>",
+        "Icon": "Skill_S_Iansan_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 11039,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:F1P}",
+          "High Nightsoul Points ATK Conversion Rate|{param2:P} ATK",
+          "Low Nightsoul Points ATK Conversion Rate|{param3:F1P} ATK / Nightsoul Point",
+          "Max ATK Bonus|{param4:F1}",
+          "Duration|{param6:F1}s",
+          "Non-Combat State Duration|{param5:F1}s",
+          "CD|{param7:F1}s",
+          "Energy Cost|{param8:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1103901,
+            "Level": 1,
+            "Parameters": [
+              4.304,
+              0.27,
+              0.005,
+              330,
+              1,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1103902,
+            "Level": 2,
+            "Parameters": [
+              4.6268,
+              0.27,
+              0.005,
+              370,
+              1,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1103903,
+            "Level": 3,
+            "Parameters": [
+              4.9496,
+              0.27,
+              0.005,
+              410,
+              1,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1103904,
+            "Level": 4,
+            "Parameters": [
+              5.38,
+              0.27,
+              0.005,
+              450,
+              1,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1103905,
+            "Level": 5,
+            "Parameters": [
+              5.7028,
+              0.27,
+              0.005,
+              490,
+              1,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1103906,
+            "Level": 6,
+            "Parameters": [
+              6.0256,
+              0.27,
+              0.005,
+              530,
+              1,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1103907,
+            "Level": 7,
+            "Parameters": [
+              6.456,
+              0.27,
+              0.005,
+              570,
+              1,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1103908,
+            "Level": 8,
+            "Parameters": [
+              6.8864,
+              0.27,
+              0.005,
+              610,
+              1,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1103909,
+            "Level": 9,
+            "Parameters": [
+              7.3168,
+              0.27,
+              0.005,
+              650,
+              1,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1103910,
+            "Level": 10,
+            "Parameters": [
+              7.7472,
+              0.27,
+              0.005,
+              690,
+              1,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1103911,
+            "Level": 11,
+            "Parameters": [
+              8.1776,
+              0.27,
+              0.005,
+              730,
+              1,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1103912,
+            "Level": 12,
+            "Parameters": [
+              8.608,
+              0.27,
+              0.005,
+              770,
+              1,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1103913,
+            "Level": 13,
+            "Parameters": [
+              9.146,
+              0.27,
+              0.005,
+              810,
+              1,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1103914,
+            "Level": 14,
+            "Parameters": [
+              9.684,
+              0.27,
+              0.005,
+              850,
+              1,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1103915,
+            "Level": 15,
+            "Parameters": [
+              10.222,
+              0.27,
+              0.005,
+              890,
+              1,
+              12,
+              18,
+              70
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11105,
+      "Name": "The Three Principles of Power",
+      "Description": "Iansan's stomping foot shatters the very earth with \"Power,\" dealing Nightsoul-aligned <color=#FFACFFFF>AoE Electro DMG</color>. She then whips out her \"Limited-Edition Kinetic Energy Scale (For Workouts).\"\nWhen this Skill is used, Iansan will gain 15 Nightsoul points and enter the Nightsoul's Blessing state.\nWhen the Kinetic Energy Scale leaves the field, Iansan's Nightsoul's Blessing state will end.\n\n<color=#FFD780FF>Kinetic Energy Scale</color>\nThe Kinetic Energy Scale will follow the character around, boosting the ATK of your current active party member in different ways based on Iansan's Nightsoul points.\n· If Iansan has less than 42 Nightsoul points, the ATK bonus will be based on her Nightsoul points and ATK.\n· If Iansan has at least 42 Nightsoul points, the Kinetic Energy Scale will switch to the \"Ardent Support!\" state, in which the ATK bonus will be stronger and based on her ATK alone.\nAdditionally, the Scale will log the distance your current active character (excluding Iansan) has moved so long as it is active, restoring Nightsoul points to Iansan every second based on the distance moved in the previous second.\nThe Scale will disappear once her Nightsoul's Blessing state ends. It will also disappear after 1 second when you are not in a state of combat. While it is active, Iansan's Nightsoul's Blessing state will not end even if she is not on the field.\n\n<i>\"Power is not about natural talent. Power stems from unceasing practice. Power must be exercised correctly.\"</i>",
+      "Icon": "Skill_E_Iansan_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 11021,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1102101,
+              "Level": 1,
+              "Parameters": [
+                0.2,
+                1,
+                15,
+                3,
+                2.8
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1102101,
+        "Name": "Enhanced Resistance Training",
+        "Description": "After Swift Stormflight hits opponents, Iansan will gain the Precise Movement effect for 15s.\nDuring this time, her ATK is increased by 20%, and whenever she regains Nightsoul points through the Kinetic Energy Scale in her Elemental Burst, <color=#FFD780FF>The Three Principles of Power</color>, she will gain 1 extra Nightsoul point. Additionally, when your current active party member consumes or restores Nightsoul points, the extra Nightsoul points Iansan gains the next time she restores Nightsoul points via the Scale will be increased to 4. This effect can occur once every 2.8s.\n\"Precise Movement\" will expire when Iansan's Nightsoul's Blessing state ends.",
+        "Icon": "UI_Talent_S_Iansan_05"
+      },
+      {
+        "GroupId": 11022,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1102201,
+              "Level": 1,
+              "Parameters": [
+                10,
+                0.6,
+                2.8
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1102201,
+        "Name": "Kinetic Energy Gradient Test",
+        "Description": "When a nearby party member triggers a Nightsoul Burst, Iansan will obtain the Warming Up effect for 10s.\nDuring this time, when Iansan restores at least 1 Nightsoul point, she will heal your current active character for 60% of her ATK. This effect can be triggered once every 2.8s.",
+        "Icon": "UI_Talent_S_Iansan_06"
+      },
+      {
+        "GroupId": 11023,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1102301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1102301,
+        "Name": "Night Realm's Gift: Hard Work and Drive",
+        "Description": "After Nightsoul points have been fully depleted and Iansan is on the field, she will switch to using Phlogiston to maintain her Nightsoul's Blessing.\nWhile in an area with Phlogiston Mechanics within Natlan, Nightsoul Transmission: Iansan can be used. When the current active character is sprinting or in movement modes caused by certain Talents, or at a certain height in the air, switching to Iansan will trigger the following: Iansan enters the Nightsoul's Blessing state and obtains 25 Nightsoul points. Nightsoul Transmission can be triggered once every 10s by your own party.\nWhile in an area with Phlogiston Mechanics within Natlan, Iansan will not take fall DMG when using terrain differences to make leaps.",
+        "Icon": "UI_Talent_S_Varesa_07"
+      },
+      {
+        "GroupId": 11025,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1102501,
+              "Level": 1,
+              "Parameters": [
+                0.5,
+                10,
+                10
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1102501,
+        "Name": "Caloric Balancing Plan",
+        "Description": "While in an area with Phlogiston Mechanics within Natlan, regain 10 Phlogiston when Phlogiston levels drop below 50%. This can occur once every 10s.",
+        "Icon": "UI_Talent_S_Iansan_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1101,
+        "Name": "Starting's Never Easy",
+        "Description": "When Iansan is in combat and is in the Nightsoul's Blessing state, she will restore 15 Elemental Energy for every 6 Nightsoul points she consumes. This effect can trigger once every 18s.",
+        "Icon": "UI_Talent_S_Iansan_01"
+      },
+      {
+        "Id": 1102,
+        "Name": "Laziness is the Enemy!",
+        "Description": "When using the Elemental Burst <color=#FFD780FF>The Three Principles of Power</color>, Iansan will also gain the Precise Movement effect from her Ascension Talent \"Enhanced Resistance Training\" for 15s. Additionally, if Iansan is off-field while Precise Movement is active, she will also increase your current active character's ATK by 30%. You must first unlock the Ascension Talent \"Enhanced Resistance Training\" to access the above effect.",
+        "Icon": "UI_Talent_S_Iansan_02"
+      },
+      {
+        "Id": 1103,
+        "Name": "Scientific Diet Planning",
+        "Description": "Increases the Level of <color=#FFD780FF>Thunderbolt Rush</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Iansan_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1104,
+        "Name": "Slow and Steady Wins the Race",
+        "Description": "When the Kinetic Energy Scale is present, Iansan will gain 2 stacks of Surging Force after your current active character (excluding herself) uses their Elemental Burst. The stacks last until the Scale leaves the field, and Surging Force can be gained once per Scale summoning. Whenever Iansan restores Nightsoul points via the Scale, she will consume 1 Surging Force stack and restore 4 additional Nightsoul points.\nAdditionally, if her Nightsoul restoration from the Scale overflows, Iansan will gain 50% of the overflow the next time she restores Nightsoul points via the Scale.",
+        "Icon": "UI_Talent_S_Iansan_03"
+      },
+      {
+        "Id": 1105,
+        "Name": "We Can Push It Further!",
+        "Description": "Increases the Level of <color=#FFD780FF>The Three Principles of Power</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Iansan_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1106,
+        "Name": "Teachings of the Collective of Plenty",
+        "Description": "The Kinetic Energy Scale's duration is increased by 3s.\nAdditionally, when Iansan triggers Nightsoul point restoration, if there is any overflow, she will gain the Extreme Force effect, which increases the DMG dealt by your current active character by 25% for 3s.",
+        "Icon": "UI_Talent_S_Iansan_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Tempered in Molten Stone",
+    "Detail": "Head coach of the fitness club at the Collective of Plenty, and a renowned Natlanese nutritionist.",
+    "Association": 9,
+    "Native": "Teteocan",
+    "BirthMonth": 8,
+    "BirthDay": 8,
+    "VisionBefore": "Electro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Carnotaurus",
+    "CvChinese": "真理",
+    "CvJapanese": "大橋彩香",
+    "CvEnglish": "Katrina Salisbury",
+    "CvKorean": "Lee Jae-hyun",
+    "CookBonus": {
+      "OriginItemId": 108713,
+      "ItemId": 108809,
+      "InputList": [
+        101243,
+        100079,
+        100076,
+        100016
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Hi there, I'm Iansan from the Collective of Plenty, and I'm the most well-known fitness coach in my tribe. You look like you're in pretty good shape... do you work out, too?"
+      },
+      {
+        "Title": "Chat: Lifting",
+        "Context": "You haven't quite hit your reps for today. Come on, one more set."
+      },
+      {
+        "Title": "Chat: Diet Planning",
+        "Context": "I've gone a little over my calorie budget so far... Need to rethink my dinner plans to get back on track."
+      },
+      {
+        "Title": "Chat: Strength",
+        "Context": "People seem to think I was born with super strength, but look at me. This tiny frame is what my genetics gave me. All my strength comes from consistent training with good technique. Put in the same work, and you can absolutely get the same results."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Quick, find some shelter. You don't wanna catch a cold, it just puts unnecessary stress on your system."
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "Time to get some sun. Come on!"
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "This weather's a good chance to train outdoors."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "Now that I think about it, running against the wind technically counts as resistance training."
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "This is not the place for training outdoors..."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Hey, good morning. Becoming an early riser is one of the first things to work on when you're looking to improve your self-discipline. If you can't even get yourself out of bed, there's no chance you'll stick to your other plans either. Anyway, I'm in the mood for a morning run. Want to join me?"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Good afternoon. Did you eat a proper lunch? If you ask me, lunch is the most important meal of the day. It's crucial for replenishing your energy, and has a huge impact on your nutritional balance. If you ever need advice on how to eat right, just ask me."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Good evening. Any interest in exercising after dark? The time right after sunset is perfect for outdoor activity: Since you avoid the worst of the sun, you don't get quite as dehydrated, and it's also a good way to tire yourself out enough for a great night's sleep. Want to give it a try?"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "You should get yourself to bed. Losing sleep means losing gains, there's no way around it."
+      },
+      {
+        "Title": "About Iansan: Fitness Coach",
+        "Context": "Physical fitness has always been a big part of my tribe's culture. Young people even show off their muscles to each other as a friendly gesture. So obviously, if you want to call yourself a fitness coach around here, you've gotta have the goods, or no one will take you seriously. In my case though, I never actually set out to become a fitness coach. For years, I was just minding my own business, following my training plan, and then somewhere along the way people started taking notice. Suddenly, people were watching in amazement while I was working out. Then they started asking me for tips, and it just grew from there."
+      },
+      {
+        "Title": "About Iansan: Height",
+        "Context": "Don't take me for a little kid — I'm just short, like all my ancestors before me. I guess it must be genetic... But thankfully, it doesn't affect my strength at all."
+      },
+      {
+        "Title": "About Us: Travel Experiences",
+        "Context": "I heard that you've traveled all over the world, and explored domains that few people have ever seen. It sounds amazing... Would you have time to tell me more about some of those experiences? Sometimes, what my students really need is the right inspiration, and I think your tales of braving the unknown and conquering adversity would be perfect for that."
+      },
+      {
+        "Title": "About Us: Motivating Each Other",
+        "Context": "As a coach, I'm often expected to give advice to other people, but I actually prefer to work in a team where we all motivate each other. Fitness is a lifelong endeavor, and like with anything, going it alone for too long leads to burnout — even for me. You're my friend, so could I ask you to be my motivation buddy? If there ever comes a day when I give in to the temptation to laze around and eat candy, I'll need someone by my side with the courage to call me out on it."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "When I first received my Vision, I made a detailed plan to test all its abilities. I believe it's important for a Vision-bearer to know the limits of their power, just as a fitness enthusiast should know their physical limits. Otherwise, you leave yourself vulnerable to injury."
+      },
+      {
+        "Title": "Something to Share: Training Equipment",
+        "Context": "Designing new fitness equipment is a bit of a hobby of mine. If you ever notice any strange-looking contraptions at the fitness club, there's a good chance it's my handiwork. I'm not trying to be avant-garde or anything — I just think that different things work for different people, so I figured I'd create some alternative options. Not everyone wants to pump iron every day, so this way, even people who get intimidated by traditional weight-lifting gear can still find a way to enjoy their training."
+      },
+      {
+        "Title": "Something to Share: Physicality",
+        "Context": "Most people in the Collective of Plenty have huge frames with big, well-developed muscles, making shorties like myself the odd ones out. When I was young, people always saw me as the one who needed protecting, and later on, when I wanted to join the fitness club, the elders tried to stop me. I joined anyway, of course, and even though I managed to injure myself a bunch of times at the beginning... I was determined to stick at it. Maybe it's because I wanted to live up to my Ancient Name, or maybe it's because I just didn't wanna be the object of other people's pity anymore."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "People in my tribe like to test their strength against the tatankasaurs. In fairness, they're usually pretty docile creatures, and most of the time you can flip them over without making them angry. But it's still a risky business, because a truly enraged tatankasaur will charge with a vengeance, and won't stop until it's completely run out of energy. Just one rampaging tatankasaur is enough to destroy an entire village... So, you really have to know what you're doing with them. I've held classes before just to teach people how to not rile them up."
+      },
+      {
+        "Title": "About Citlali",
+        "Context": "I have a lot of respect for Granny Itztli, but... I can't say I agree with her lifestyle choices. I used to think she was a fellow early riser, because I'd always see her up and about on my morning runs — turns out she'd actually stayed up all night and was finally heading home to sleep... And she's been living like that for what, 200 years? How her body hasn't given out on her by now, I'll never know. The shamans in that tribe are just built different, I guess."
+      },
+      {
+        "Title": "About Mualani",
+        "Context": "Mualani has always impressed me. She's never taken any formal fitness training, and yet her strength and physique are better than most of the students I've had. She actually did sign up for a class once upon a time, but never ended up coming along. Maybe water sports are just more effective at inducing all-round muscle development? Who knows, but I suspect the key is her frame of mind. As far as I know, she's never gone out and trained with the specific goal of achieving a certain kind of body."
+      },
+      {
+        "Title": "About Xilonen",
+        "Context": "Xilonen is the first friend I ever made from the Children of Echoes. I have all sorts of new ideas when I'm designing fitness equipment, and she's one of the few people who can actually bring them to life. And not just that, but the build quality is always exceptional. My only issue is that she always pushes back on my deadlines... but I guess if you want something done well, it takes the time it takes."
+      },
+      {
+        "Title": "About Mavuika",
+        "Context": "Because of the childhood I had, I don't like relying on other people or needing their protection. But when Mavuika is around, even I feel comfortable letting her take the lead. To be clear, that's not because she's the leader and I'm intimidated by her. Quite the opposite. It's because I trust her as a close friend. Following her just feels right... almost instinctive, like moving towards the light when you're surrounded by darkness."
+      },
+      {
+        "Title": "About Kachina",
+        "Context": "Kachina's a very special student. Mostly because of the sheer number of classes she's attended over the years... So many times, I've watched her nervously walk into the stadium, only to leave later looking crushed and defeated. Then she comes to find me to apologize for her poor performance — although honestly, I feel like I've failed her by not delivering on the promises I make in my advertising. Anyway, since then, I've waived all her fees, and told her she can train with me whenever she wants. I see huge potential in her, but I know she has her own issues... I've done all I can do as a coach, so whatever other challenges she faces, she'll have to conquer them on her own."
+      },
+      {
+        "Title": "About Kinich",
+        "Context": "Kinich always does a great job whenever I need someone to hand-pick the best fruit from Varesa's orchard. Working with him would be a joy — if it weren't for that little monster he hangs around with... He says the nastiest things. Someone really needs to teach him some manners. I'd very happily do that myself, of course — I'm sure one of my training programs would whip Ajaw into shape — and in fact I've offered that to Kinich before. But, he turned me down. I guess he has his own way of keeping Ajaw in line."
+      },
+      {
+        "Title": "About Varesa: Attitude",
+        "Context": "Ah, Varesa... She's my star student, my pride and joy. I hope she hasn't made a bad impression on you... Oh — no, not like that. When push comes to shove, I'm sure she pulls her weight in battle, and I know she has things under control at the end of the day. It's just, she can be a little... too relaxed, you know? I feel like if I'm not there constantly pushing her to stay focused, she'll lose all sense of time and treat every day like she's on vacation. Leave the house to run an errand, but then saunter along without a care in the world, letting herself get distracted by every morsel of food she passes along the way... Once in a while that's fine, but you can't live like that when you're out adventuring, and the stakes are so high! Anyway, I've told her all this before, so hopefully I've gotten through to her by now. But... the other thing that worries me is the amount of food she needs. I mean, you tell me — is it really practical to go hiking through the hills with a sack of food on your back the size of a baby tatankasaur?"
+      },
+      {
+        "Title": "About Varesa: Moderation",
+        "Context": "My biggest concern for Varesa right now is that her energy management seems out of control. Her metabolism seems like it's stuck on a high-burn mode, meaning she wastes an awful lot of energy, and I suspect that's the cause of her alarming appetite. I do hope she takes some time to look into what makes her this way. I'd love to see her gain the ability to manage her energy expenditure a little better, so she doesn't need to eat like a horse every single meal... I mean, it's nice to see her thoroughly enjoy her food, but at the same time, I want to urge her to be more mindful of what she's putting in her body. It's never a good idea to just gorge yourself — you have to pay attention to nutrition and quantity, and especially limit your fat and sugar intake. Much better to get her diet under control now than have to deal with the consequences when she develops health issues later in life."
+      },
+      {
+        "Title": "More About Iansan: I",
+        "Context": "Have you ever heard of the \"Pilgrimage Victors Academy\"? It's a training program I set up after my string of victories at the Pilgrimage. A lot of people assumed that I was blessed with superhuman strength — I guess it's not every day you see a short girl like me best everyone else in the stadium. But I wanted to show them that no, there's no mysterious force at work behind my strength, just years of consistent hard work. Join my training program and you'll see for yourself. It was a strange experience at the start, though... First, I had people reporting me as a scammer, despite the fact that the classes were free — then I took Mavuika's advice and introduced a fee, and suddenly the class was oversubscribed... Weird."
+      },
+      {
+        "Title": "More About Iansan: II",
+        "Context": "Standard barbells are too large for me. They block my vision when I'm lifting them, and I almost injured a student once because I couldn't see who was around me. So, I got Xilonen to make me a custom barbell from a special material that has a good weight, but takes up far less space. It makes things so much easier. The only downside is that looks can be deceiving... people are always mistaking it for a toy. Once, I forgot to bring it home from the fitness club, and some new students spotted it on the ground. One of them thought he'd have some fun with it, but when he went to pick it up, it wouldn't budge and he ended up pulling a muscle in his back. The other students didn't believe him, and before long the rest of them had pulled muscles in their backs, too... I make sure to carry it with me everywhere now."
+      },
+      {
+        "Title": "More About Iansan: III",
+        "Context": "My first foray into the science of nutrition came when I was recovering from an injury. Back then, people didn't have a very sophisticated idea of what a good training diet looks like — the general consensus was just \"eat more meat.\" And for most of the fitness club, that worked well enough. They're the kind of people who can devour entire platters of grilled meat in one sitting. But at my size, I could never fit that much food in me, so I was already on the market for a more efficient way of meeting my nutritional needs. Since I was stuck at home recovering for a while, I borrowed some reading material to research various ingredients and started experimenting in the kitchen, trying to cook some meals to support my training goals. After several failed attempts, I finally found a recipe that worked for me, and it was game-changing. Not only did it speed up my recovery, it also helped me to break my bench press record. My only regret is that, despite sharing it around, it's still relatively unknown outside the fitness club."
+      },
+      {
+        "Title": "More About Iansan: IV",
+        "Context": "After I became head coach, I introduced a challenge for newcomers to the club — pick an exercise of your choice, and go head-to-head against me. Of course, it always ends the same way — after the newcomer collapses from exhaustion, I pick up their weights and continue for another ten to twenty sets of quality reps. My goal isn't so much to show them who's boss as to give them a taste of what serious training actually looks like. You get a lot of people joining the club who just want to ego-lift and show off, so it's my job to hammer home to them that fitness is hard work, not fun and games."
+      },
+      {
+        "Title": "More About Iansan: V",
+        "Context": "Wrestling tatankasaurs is a longstanding tradition in my tribe, and winning is seen as a great honor. I decided to give it a shot after I'd been training for a while, but failed several times over, and the experience left me doubting my entire approach to training. Then, a short while later, the chief of the tatankasaurs suddenly flipped and went on a rampage through our settlement. Amid the chaos, I found myself standing between the saurian and a little girl who hadn't managed to escape in time. I had to save her... so I confronted the tatankasaur chief head-on. Somehow, knowing that she was right behind me and needed my protection helped me find a strength within me that I never knew existed. I wrestled with all my might, and I threw that tatankasaur onto its back. That was the day I learned to trust in my training approach again. I realized that training does steadily build your strength over time, but to summon your full strength, you have to call on it from somewhere deep in your soul."
+      },
+      {
+        "Title": "Iansan's Hobbies",
+        "Context": "Researching training methods, designing training equipment, developing high-nutrition training meals... In a nutshell, training."
+      },
+      {
+        "Title": "Iansan's Troubles",
+        "Context": "I hate being short. Not because I dream of being tall and athletic-looking though, it's just inconvenient. Like, whenever I'm teaching a group of students, I have to stand on a stool. Otherwise, when I demonstrate the proper technique, the students at the back won't see."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "My favorite food is... Hmm, honestly, I don't really have a favorite. I'm more concerned about the calories and the nutritional profile of what I eat. Taste is a secondary concern."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Deep-fried food and ultra-processed food... I know, that pretty much rules out most of what the rest of the world considers delicious. I know it all tastes good, and I have no problem with that, but if you look at the calorie content and the nutrient density, all that stuff is just awful."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Great choice. Good amount of calories, nutritionally balanced — exactly the kind of thing I eat when I am training. I actually have a slightly improved version of this recipe, though. Let me know if you ever want to try it."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Aw, thanks. This is a very popular dish, although the calories are a little high, so it's not really something I go for... Sorry, I'm pretty strict with what I eat. Diet's one of the most important parts of any fitness regimen."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Oh goodness... Everyone should stay away from calorie bombs like these! Athlete or not, this kind of thing is disastrous for your health!"
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Happy birthday! Would you like to try my custom-made fitness cake? There's no cream or sugar, so it's low-calorie, and I added in some veggies and grains to balance out the nutritional profile. Most birthday cakes out there are dangerous things to have around. All they do is make sure your body fat percentage goes up every year along with your age..."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "The key to effective fitness training is sound methodology. Namely, gradual progression and science-backed nutrition."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Any fitness enthusiast who puts blind faith in perseverance alone will end up getting injured — I learned that the hard way. Pushing yourself to take on more than you can comfortably bear will just lead to two fractured arms and weeks of recovery in isolation. The right outlet for your perseverance is to stick doggedly to the right training methods."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "A younger me would get all excited whenever I added another push-up to my personal record, but that rarely happens these days. I've come to realize that as long as I stay consistent with my training, progress is the inevitable outcome whether I see it or not."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "Maybe this was all a test I had to go through, to prove myself worthy of my ancient name. Either way, those words spoken by my ancestors ring true to this day: \"No matter what strength one is born with, true strength must be toiled for.\""
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Quick as a flash!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Faster, stronger!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Controlled breathing!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Let's move!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Start the clock!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "On my mark!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "We deserve a reward for our hard work."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "I'd have put this on top of a mountain, to motivate the rock climbers."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Hey, you wanna try deadlifting that?"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Push through the pain!"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Am I at my limit?"
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "My muscles are too fatigued..."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Take it easy!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Careful, don't injure yourself!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Back to the doctor's for me..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "I overtrained... and underperformed..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Think I need a rest day..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "C'mon, put your back into it!"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "That's more like it..."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "I'm all warmed up!"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Anyone need a coach?"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Let's get started!"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "When the people of Natlan think about the Collective of Plenty, the first thing that springs to mind is the tribe's culture of fitness — followed shortly by mental images of towering, muscular, chiseled physiques...\nMany first-time visitors to the Collective of Plenty, therefore, are surprised to learn that the current leading light of the tribe's fitness scene is about as far away from those mental images as it's possible to be. As tall — or short — as a child, the young lady in question is positively scrawny when compared with most of her peers.\nThis young lady — whose unimposing frame gives the impression that a strong gust of wind might well blow her away — is the head coach of the fitness club at the Collective of Plenty: Coach Iansan.\nAt first, many visitors had assumed that the tribe were merely playing a trick on outsiders.\nBut in due course, there was ample opportunity for newcomers to witness Coach Iansan directing training sessions — and the aftermath, with her students collapsed exhausted on the floor while she herself had hardly broken a sweat.\nEventually, with the eyes of all Natlan watching, Iansan proved her prowess on the greatest stage, setting an all-time victory record in the Pilgrimage of the Return of the Sacred Flame.\nAnd now, Iansan is widely recognized as the gold standard for trainers in Natlan. She has even set up her own special training camp to teach the techniques required to attain victory in the Pilgrimage of the Return of the Sacred Flame.\nFolk are shocked by Iansan's strength and curious as to its source. There are rumors that she has an unusual lineage, one which bestows her with extraordinary strength, but also uncommon shortness.\nWhenever outsiders to the tribe attempt to confirm these rumors with the Collective of Plenty, however, their questions are met by little more than icy stares and an equally frosty answer:\n\"Hmph, she trains hard.\"\nHaving met their perfunctory burden of manners, the people of the Collective of Plenty will then return to working out, leaving behind befuddled outsiders who are unsure exactly what they did to cause offense.\nAnd so new rumors begin to spread, ones that claim Iansan's power is derived from a secret tribal weapon belonging to the Collective of Plenty — a weapon that they are forbidden from talking to outsiders about.\nWhenever such rumors begin to do the rounds, Iansan is quick to seek out the curious questioners.\n\"You too can be as strong as me. Join my training academy and I guarantee you results!\"\nOnce their shock has faded, most people decline the offer. Perhaps they don't believe that Coach Iansan can really guarantee success, or perhaps they've already heard stories of just how grueling her training really is.\nThe rumors surrounding Iansan continue to swirl and spread. On the rare occasions when she isn't training and has the time to pay them heed, Iansan can only sigh and shake her head.\n\"I keep telling them it's down to the training... Why doesn't anybody listen?\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "For as long as she can remember, Iansan has known that she will never grow any taller.\nThe \"Blood of Egungun\" runs through her veins, as it has through the veins of countless generations of her family. Her ancestors never grow to be taller than children.\nThe tribespeople of the Collective of Plenty are the biggest and strongest in all of Natlan, yet Iansan and her family are anomalies. Their bloodline has thwarted all hopes of them ever becoming as formidable of stature as their tribal peers, while providing them with no obvious boon in return. Compared to the curse of their bloodline, even the tainted bargains of fairytale witches seem fair by comparison.\nFortunately, the tribespeople of the Collective of Plenty are accepting and kind. After taking Iansan's family in, they have never treated them with prejudice, instead adopting a protective attitude. Whenever war broke out, Iansan's ancestors have always been kept from the front lines, serving as medics and cooks. They are not as courageous or nimble as the warriors of the tribe, having developed a habit of keeping their heads down and sticking to routine.\nEver since Iansan can remember, she had helped her parents with their work. But compared with her parents' diligence, she had felt a persistent restlessness that seemed to call her toward the battlefield. Whenever she had the chance, she would always head toward the sound of the latest battle to await the returning warriors. Not that her waiting bore fruit — concerned tribal guards always returned her to her parents long before she could get near the fighting. It seemed that her fate was to follow in the footsteps of her parents and live the life predetermined for her by the \"Blood of Egungun.\"\nUntil, that is, an unexpected event that shocked the whole tribe occurred — she was chosen by the ancient name \"Power\" to serve as its vessel.\nIansan was as shocked as the rest of her tribe, but the inscription on the ancient name was clear beyond doubt. Overnight, Iansan became the center of attention, but most of the gazes that now fell on her were far from kind. For the Collective of Plenty, the ancient name \"Power\" was especially significant — representing unrivaled honor and unparalleled responsibility. Most of the tribe looked down on Iansan, both in terms of her ambition and stature. They questioned not only whether she deserved this honor, but also whether she could live up to its expectations.\nBut those most troubled by this turn of events were her parents, who — despite their hard work — had always been content knowing their place in society. They knew they could offer no help to Iansan in this matter, and could not even speak of it for the longest time. When they finally broached the subject with their daughter, it was to express their unconditional support for whatever path she chose.\nAnd so, a few days later, Iansan approached Acatl — who was both the tribal chief and head coach of the Collective of Plenty's fitness club at the time.\n\"Coach, I want to train!\""
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "In the Collective of Plenty, fitness is sacrosanct, second in importance only to the Pilgrimage of the Return of the Sacred Flame. The tribespeople advocate for a universal focus on working out and take great pride in the results of their training.\nDespite this, when Iansan appeared at the hallowed tribal training grounds, there was much grumbling from her peers. \"This kid should quit before something happens,\" many thought. After all, to most observers, Iansan working out wasn't a question of suitability, but one of basic safety — some of the weights being thrown around weighed more than she did!\nHer fellow fitness enthusiasts collected all the entry-level equipment they could and placed it in front of Iansan, explaining that it represented the threshold required to join the club. They thought this would dissuade her, but Iansan merely selected a small barbell and put all of her effort into trying to lift it. Before the plates had even left the ground, the gathered crowd heard the loud crack of creaking bones, and rushed forward to stop Iansan...\nIt was weeks before Iansan could get out of bed and walk by herself, and even that was only due to her father's skills as a medic — otherwise, she might have been bedridden for months. Upon hearing that Iansan was getting better, Acatl paid her a visit. Ever since failing to stop Iansan from hurting herself, Acatl had been facing much criticism from the tribe. Iansan was worried that his visit was a personal attempt to persuade her to abandon her chosen path.\n\"So, fitness has a threshold?\"\n\"Fitness isn't a question of credentials, it's a question of choice.\"\nAcatl assuaged Iansan's concerns before telling her the story of the founder of the Collective of Plenty's fitness club.\nThis great warrior, Meztcala, was once chief of the Collective of Plenty. He had a mighty physique and a strength seldom matched before or since. Back then, the tribe had experienced much upheaval since its founding and was yet to establish a firm foothold by the slopes of the Sacred Mountain. He used his prodigious strength to conquer monsters and magma alike, while protecting his people day and night. At that time, the Sacred Mountain had just entered a new eruption cycle. As volcanic activity became more and more intense, even Meztcala, strong as he was, began to feel tired and overwhelmed. In the face of growing pleas for shelter from his people, he knew he alone could not weather the storm, yet he never abandoned them.\n\"You can all become like me. You can all choose to become like me!\"\nHe made the tribespeople his students, taught them his training techniques, and then led them against the dangers that threatened their tribe. Through countless grueling trials, the people of the Collective of Plenty learned that they too had the strength and power to protect their homeland. By the time Meztcala grew old and succumbed to the irresistible force of time, his students had surpassed him and now formed a protective barrier around their tribe. In the end, the tribespeople of the Collective of Plenty established a secure and peaceful homeland at the foot of the great volcano.\n\"That is the origin of our fitness club, and the words I just told you are a warning passed down by Meztcala himself. If anyone claims that training has a threshold, do you think he would agree?\"\n\"Iansan, I've heard about your troubles lifting even the most basic training equipment. This doesn't mean you lack the credentials to train, it simply means that everyone else lacks the ability to train you. Your physical condition is beyond the boundaries of practically any fitness trainee's personal experience. And so, it would be remiss of me not to point out that training, for you, will be a very difficult path to follow.\"\n\"However, the path you take is ultimately a choice that only you can make.\"\nAfter Acatl had left, Iansan lapsed into a multi-day silence, as she had when she first discovered her ancient name. Eventually, when she emerged from her solitude, it was to seek out Acatl once more.\n\"Coach, I want to train!\"\nWith that, Iansan returned to the tribal training grounds. But this time, she was not met with a pile of weights and equipment designed as a deterrent. Instead, the members of the fitness club brought Iansan to a freshly prepared patch of ground, far from the dangerously heavy, swinging weights of the main workout area. In this space, they had prepared for Iansan her own personal place to train, complete with everything she might need.\nThis time, their gazes contained more than just concern for her safety. Now, there was a hint of admiration as well — for they all understood that this young woman had actively chosen to walk a lonely path of training."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "In her early days at the fitness club, Iansan's determination to train and become stronger never faltered. Yet her indomitable willpower did nothing to lighten the pain and soreness that frequently racked her body, nor the persistent injuries.\nIn those days, a culture of competitive perseverance permeated the club, with members measuring their success by the levels of burning pain in their muscles. Many of the trainees preferred to chase improvement by challenging their absolute limits.\nIansan's injuries were almost wholly brought about by trying to imitate this style of training.\nOnce, while recovering from an injury, Iansan — hobbling on crutches — passed the packed training grounds and stopped to stare at the equipment. She suddenly realized that she no longer felt the excitement and enthusiasm towards the challenge these objects once presented, rather, she could only feel the aching pain in the joint she'd recently dislocated.\nThat was the first time Iansan truly felt like she wasn't cut out for fitness training.\nAfter a week of staying inside and shutting out the outside world, Iansan's mother — torn by her daughter's obvious anguish — tried her best to comfort her.\n\"There are many ways we can't compete with others, but we have our own talents. For example... treating injuries and cooking food...\"\nIansan's mother fell silent. If the experienced trainees at the fitness club couldn't help guide her daughter to success, what chance did she have, as someone who had never trained a day in her life? But to her surprise, the blazing fires of determination began to burn anew in Iansan's eyes.\n\"You're right. We can treat injuries and cook food!\"\nAfter a month of recuperation, Iansan returned once more to the training grounds. This time, she walked straight past the experienced trainees, who were flexing and flashing poses at each other, and straight past the piles of equipment that had so tormented her before. This time, she picked up a pot and began to train — moving around, taking notes, and cooking.\nHer training seemed far more leisurely than before. She followed her routine and completed a few sets of the same exercises each day. At the same time, she somehow seemed busier: as though every hour of every day had been planned out. She appeared to have lowered her expectations, rarely pushing herself close to her limits — unlike the other fitness club members. And yet, her expectations also seemed somehow to be more stringent, as she no longer missed a single day's training, all while cooking her own meals and strictly regulating her diet.\nAfter weeks of this strange behavior, people started to notice. Rumors began to circulate that Iansan had found the secret to overcoming the limits of her bloodline. They flocked to her unusual training sessions, and gathered around as though watching a piece of performance art...\n\"In the simplest of terms, my strength comes from a well-scheduled workout routine, controlled caloric intake, and precise supplemental nutrition.\"\nThe curious onlookers dispersed, disappointed with Iansan's explanation. The philosophy she had described to them did not seem to offer even the slightest challenge. They couldn't fathom how something so simple could allow Iansan to break through the limits of her self.\nWhat none of them seemed to have noticed was that ever since shaking up her training regimen, all of Iansan's fitness metrics had been steadily improving — from running farther, to performing more pushups. Perhaps this was because the other trainees didn't care much for that sort of data, but to Iansan, these gradual improvements were solid and consistent, like steel folded over and over — each tiny milestone building towards a fundamental change.\nAt that time, Iansan had no idea that she had already introduced a brand-new concept to Natlan — the science of nutrition. All she knew was that she had finally found a mode of fitness training that suited her individual needs."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Iansan's friendship with her saurian companion stems from a tradition of the Collective of Plenty — the people of the tribe enjoy wrestling with Tatankasaurs, with victory in such contests being a mark of great honor. A little while after joining the fitness club, Iansan also attempted this feat, but try as she might, she couldn't so much as budge a single adult Tatankasaurus. Fearing that her attempts were likely to end the same way as her brushes with equipment at the training grounds, her more experienced peers introduced her to Emela. Emela had been orphaned not long after her birth, and was taken in by the tribe. She was a baby Tatankasaurus, and it seemed more fitting for Iansan to train with someone of her own size.\nOne child had lost the care of her parents, and the other had been coddled a little too much by hers. There was a natural rivalry between the two — one that only intensified once they were assigned as training partners. They both poured everything they had into their first duel, one regretting how they had lacked the strength to protect their parents, the other wishing to gain the strength to protect her own. In the end, they both fell, exhausted, to the floor, with no clear winner left standing.\nFrom that moment on, their rivalry officially began.\nOnce Iansan found a method of training that suited her, though improvements came slowly, she gradually managed to push beyond her limits. During that time, she was in the lead.\nBut as Emela moved out from under the shadow of her parents' passing, she began to thrive in the light, until eventually, she surpassed Iansan, and had her eating her dust.\nBy this point, Iansan's progress had gradually attracted the attention of the entire tribe. In an unexpected turn of events, she ended up defeating the chief of the Tatankasaurs and eventually took over from Acatl as the head coach of the fitness club.\nEmela's own progress was likewise exceeding everyone's expectations. She had long since grown larger than any other Tatankasaurus in the tribe, and rose to become their new chief.\nAll the while, their rivalry continued. Both of them seemed desperate to constantly surpass the other, leaving their rival to play catch-up.\nDespite this intense competition, when they were not challenging each other in contests of strength, Emela would allow Iansan to ride on her back as they explored the wilderness together.\nOnce the war to repel the Abyss invasion had ended, Iansan's students brought her to the place where Emela was buried. They felt a great sense of responsibility for the fact that Iansan had not seen her dear friend one last time before her passing.\n\"There were so many enemies, she must have known that she wouldn't return if she charged in... If you'd been there with her instead of us, you could have stopped her...\"\n\"No. If I'd been there with her, I would've charged, right by her side. We'd have raced to see who could reach the enemy first.\"\nIansan laid down a flower for her old friend and uttered, for the first time, the unspoken rule that was at the heart of her and Emela's rivalry —\n\"Only by taking the lead can you protect the ones you've left behind.\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "As the horns sounded to herald the Pilgrimage of the Return of the Sacred Flame, Iansan returned to the Stadium of the Sacred Flame once more to set a new record for consecutive victories.\nPeople no longer questioned her credentials as the head coach of the fitness club, nor did anyone dare mock her unassuming stature. While others may express shock at her results, Iansan remained unmoved — she simply focused on updating her training plans and recipes, unceasing in the implementation of her fitness philosophy.\nWhat did surprise Iansan, was that everyone discussing her bloodline now suddenly expressed envy towards her \"gift.\" Most members of other tribes knew nothing of Iansan's family background, nor had they witnessed her hard work. Amazed by her achievements, they began to grasp for explanations. In the midst of this speculation, rumors abounded that the \"Blood of Egungun\" was a mark of innate power, one that bestows otherwise unattainable strength for the price of a lifetime of being unable to grow.\nEven more shockingly, Iansan's vanquished opponents readily accepted the truth of this \"gift,\" not only praising Iansan's talents, but also claiming it as justification for their losses.\nOnly Iansan remained silent, her frown deepening at these rumors that she had at first ignored.\nNot long after, the trainees of the Collective of Plenty's fitness club began distributing flyers at the Stadium of the Sacred Flame. Upon receiving these flyers, most people assumed they were invitations to some sort of tribal event, but when they read the contents, their mouths were left agape in shock...\n\"The Pilgrimage Victors Academy is looking for students! Any tribe, any age, any gender! You too can become a record holder with a winning streak!\"\nAfter confirming that these flyers did indeed come from Iansan, shock turned to confusion. By now, everyone knew about the \"Blood of Egungun\" — what sort of training could possibly help them overcome the disadvantages of their own unremarkable bloodlines? Everyone assumed that this must be Iansan playing a prank.\nBut then Iansan appeared, both to deny the rumors and to hand out flyers in person. Some curious souls even visited the address on the flyers and discovered that Iansan had relocated the fitness club from deep within Collective of Plenty territory to a spot much closer to the Stadium of the Sacred Flame, seemingly in preparation for taking on trainees from other tribes.\nNot many were swayed by Iansan's flyers, but an intrepid few made their way to the newly relocated training grounds. Most of them were limited by their own physical shortcomings but yearned to become stronger, just as Iansan once had. The only difference was that these people had let themselves be held back by their own uncertainties. Iansan's guiding principle was to provide them with the motivation to move forward, while showing them the path.\n\"I won't deny it, talent is important. It decides how fast we walk on the paths we choose... but it cannot decide how far we can go.\"\nAfter a year of quiet persistence, these pioneering trainees emerged as outstanding competitors in the Pilgrimage of the Return of the Sacred Flame — just as Coach Iansan had promised. Under her dedicated tutelage, countless students achieved their own breakthroughs, some of them going on to surpass even their coach's abilities.\nEven so, skeptics were still the majority, not that this caused Iansan much concern — more and more trainees were signing up for her academy. On her next round of flyers, she added a new line:\n\"You need not be born with power. Toil is what truly imparts strength.\"\nIansan understood that by breaking through the limits of her self, she had already lived up to her ancient name, yet she still wished to push herself further. The line she had added was her personal footnote to the ancient name of \"Power.\" There would come a day when she would prove her philosophy to all of Natlan, just as she had already done with the Collective of Plenty."
+      },
+      {
+        "Title": "Alaye",
+        "Context": "For a long time, Iansan's patterned skull has been something of an icon. It is said that its original owner was a Tatankasaurus who tragically died young. Perhaps Iansan keeps it to commemorate this unfortunate child.\nOne day, a group of trainees — approaching from a distance — noticed Iansan training on her own. They were shocked to discover her skull grunting like a live Tatankasaurus. It appeared to be cheering her on.\n\"So... it's not dead?\"\n\"Oh, I still haven't introduced you all! This is Alaye, you can think of it as my training partner. It's a little shy, so usually it only speaks when no one's around.\"\nAnd so Iansan began to tell her astonished students the story behind her skull. One day, Iansan's saurian companion, Emela, came to ask her for help. Emela had encountered a Tatankasaurus spirit lingering over its remains, unwilling to journey on to the Night Kingdom. Iansan sought out the help of Citlali from the Masters of the Night-Wind and asked her if she could weave her magic with the Tatankasaurus's remains, much like creating a Tzitzimitl. And so, the Tatankasaurus spirit was bound inside its skull, where it would neither lose its way nor fade with time.\nWhen she had finished speaking, Iansan caressed the skull gently, as though comforting it.\n\"Whenever I'm working out, it gives me encouragement. It must have wanted to grow into a strong, dashing adult Tatankasaurus like its peers. That's why it wasn't ready to leave.\""
+      },
+      {
+        "Title": "Vision",
+        "Context": "Long before Iansan took over as head coach of the fitness club, an immensely heavy barbell had been given a place of honor at the center of the training grounds.\nIt was rumored to have been left there by the original founder of the fitness club. Only someone who had attained the pinnacle of strength would be able to lift it, and doing so would cement their place as the new leading light of Natlanese fitness. As such, lifting this barbell was the ultimate goal of all the club's members. And yet, no one had ever succeeded.\nWhenever a new challenger would approach the bar, everyone would gather around to discuss — and wager on — the outcome. For the tribespeople of the Collective of Plenty, lifting this barbell was proof that one embodied the pinnacle of fitness. It was a challenge that everyone wished to pass, and one that garnered a huge deal of speculation as to who would finally be the one to do so.\nThen one day, Iansan herself approached the bar and stood there, lost in thought. Those nearby could see the yearning in her eyes and did their best to persuade her not to try.\n\"Do you know what sort of power it would take to lift this bar?\"\nThere was doubt in their voices, but also concern. Everyone knew that if Iansan tried to lift the barbell, the resulting injuries would be far worse than any she had suffered when she first started training.\n\"It would take the 'Power of a Thousand Days'!\"\nThat is how Iansan answered them.\nThe gathered onlookers exchanged puzzled glances — none of them knew what the \"Power of a Thousand Days\" was. Most assumed it must be some new esoteric training philosophy Iansan was dabbling in. After ensuring that Iansan wasn't about to do anything that might hurt herself, the crowd dispersed. None of them had noticed the yearning in Iansan's eyes turn to a steely determination.\nFor the first set of 100 days, Iansan trained as usual, repeating the same self-assigned routine of bland, boring exercises — nothing that would draw anyone's attention — persisting day after day, just as her ancestors had always persisted in their labor. Soon, everyone had forgotten about her words before the barbell and everything at the fitness club returned to normality.\nBy the third set of 100 days, Iansan's training was finally showing signs of change. Perhaps because of the increased intensity, she was plagued by injuries during this time, yet shrugged each one off in short order. This may have been due to the healing skills she had acquired from her parents, or it may have been down to the unusual food she was cooking for herself. She was still sticking mostly to the same old exercises she had assigned herself — slowly grinding out set after set in an unnoticed corner and abstaining from displaying her gains like most of her fellow club members.\nBy the fifth set of 100 days, the fitness club's members were flexing their muscles and discussing which of their peers needed to get back on the gains-mobile after taking it too easy for too long. This ebb and flow of effort was common at the fitness club, but as most members were familiar with dozens of different programs to get \"muscles in a month,\" it seldom took them long to go back to being ripped after a short period of slacking off.\nBy the seventh set of 100 days, a few more observant trainees had noticed that something was different — not that they could pinpoint exactly what it was. It was only when a club member, who had been away from the tribe for over a year, returned and yelped out his surprise that a shocking revelation was made — Iansan was now using the same fitness equipment as everyone else! This change had taken place over the last several hundred days, so gradually that no one had noticed.\nBy the ninth set of 100 days, someone finally stumbled across the training plan that Iansan had made for herself. Thinking back to her words from over two years ago, those who had persuaded her not to try lifting the barbell were no longer so certain. It was as though Iansan's months and months of silent grinding had pulverized their concerns into dust.\nBy the final 100 days, the once-unnoticed corner where Iansan trained had become the focal point of everyone's attention. At some point in the preceding weeks and months, she had become the flexer-in-chief of the fitness club. The other members gathered around and gasped in admiration at her recent triumph over the chief of the Tatankasaurs. Not that Iansan paid them much mind — she was single-mindedly focused on steadily executing her training plan, keeping her head down, and sticking to her routine.\nWhen the thousandth day rolled around, almost three years in the making, Iansan finally returned to stand before the barbell. Everyone in the tribe with even a passing interest in fitness was there to watch, eagerly awaiting the miracle that was due to take place before their eyes. This time, no one was discussing the outcome — everyone who had witnessed Iansan's hard work over the preceding years already knew what was about to unfold.\nAs Iansan approached the bar, to her surprise, she found a twinkling Vision hanging from it — who knew when it had been put there?\nIansan understood this was proof that she was staring down the imminent fulfillment of her wish. Yet to her, this was just a \"target\" on her training plan. Perhaps, in Iansan's world, there was no difference between the two.\nIansan removed the Vision and then lifted the barbell, with as much ease and certainty as if it was merely another item on her training plan."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 211000,
+      "Name": "Warrior's Bonegarb",
+      "Description": "Iansan's outfit. Adorned with a patterned skull that has become something of an icon for Iansan. Her trainees initially believed that their coach wore it to commemorate the tragic passing of her Tatankasaur, until they realized it was still alive and well.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104144,
+    113067,
+    101255,
+    112106,
+    104349,
+    113062
+  ],
+  "NameCard": {
+    "Name": "Iansan: Unyielding",
+    "Description": "Namecard style.\n\"If you really need to, and you push yourself hard enough, you can even train in your dreams!\" Sounds great, but... Is it actually possible?",
+    "Icon": "UI_NameCardIcon_Iansan",
+    "PicturePrefix": "UI_NameCardPic_Iansan"
+  }
+}

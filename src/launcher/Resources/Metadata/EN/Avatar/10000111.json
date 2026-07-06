@@ -1,0 +1,1302 @@
+{
+  "Id": 10000111,
+  "PromoteId": 111,
+  "Sort": 96,
+  "Body": 2,
+  "Icon": "UI_AvatarIcon_Varesa",
+  "SideIcon": "UI_AvatarIcon_Side_Varesa",
+  "Name": "Varesa",
+  "Description": "A laid-back orchard manager and warrior of the Collective of Plenty. An aspiring hero who hungers for justice... and lots and lots of food!",
+  "BeginTime": "2025-03-25T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 10,
+  "BaseValue": {
+    "HpBase": 988.59283,
+    "AttackBase": 27.7438,
+    "DefenseBase": 60.84711
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 11131,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "Charged Attack DMG|{param4:F1P}",
+            "Charged Attack Stamina Cost|{param5:F1}",
+            "Plunge DMG|{param6:F1P}",
+            "Low/High Plunge DMG|{param7:P}/{param8:P}",
+            "Fiery Passion 1-Hit DMG|{param9:F1P}",
+            "Fiery Passion 2-Hit DMG|{param10:F1P}",
+            "Fiery Passion 3-Hit DMG|{param11:F1P}",
+            "Fiery Passion Charged Attack DMG|{param12:F1P}",
+            "Fiery Passion Charged Attack Stamina Cost|{param13:F1}",
+            "Fiery Passion Plunge DMG|{param14:F1P}",
+            "Fiery Passion Low/High Plunge DMG|{param15:P}/{param16:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1113101,
+              "Level": 1,
+              "Parameters": [
+                0.467784,
+                0.40028,
+                0.563128,
+                0.8928,
+                50,
+                0.745878,
+                1.49144,
+                1.862889,
+                0.544072,
+                0.520288,
+                0.735864,
+                0.9264,
+                50,
+                0.745878,
+                2.23716,
+                2.794334
+              ]
+            },
+            {
+              "Id": 1113102,
+              "Level": 2,
+              "Parameters": [
+                0.502868,
+                0.430301,
+                0.605363,
+                0.95976,
+                50,
+                0.806589,
+                1.612836,
+                2.01452,
+                0.584877,
+                0.55931,
+                0.791054,
+                0.99588,
+                50,
+                0.806589,
+                2.419254,
+                3.021779
+              ]
+            },
+            {
+              "Id": 1113103,
+              "Level": 3,
+              "Parameters": [
+                0.537952,
+                0.460322,
+                0.647597,
+                1.02672,
+                50,
+                0.8673,
+                1.734233,
+                2.16615,
+                0.625683,
+                0.598331,
+                0.846244,
+                1.06536,
+                50,
+                0.8673,
+                2.601349,
+                3.249225
+              ]
+            },
+            {
+              "Id": 1113104,
+              "Level": 4,
+              "Parameters": [
+                0.58473,
+                0.50035,
+                0.70391,
+                1.116,
+                50,
+                0.95403,
+                1.907656,
+                2.382765,
+                0.68009,
+                0.65036,
+                0.91983,
+                1.158,
+                50,
+                0.95403,
+                2.861484,
+                3.574148
+              ]
+            },
+            {
+              "Id": 1113105,
+              "Level": 5,
+              "Parameters": [
+                0.619814,
+                0.530371,
+                0.746145,
+                1.18296,
+                50,
+                1.014741,
+                2.029052,
+                2.534396,
+                0.720895,
+                0.689382,
+                0.97502,
+                1.22748,
+                50,
+                1.014741,
+                3.043578,
+                3.801593
+              ]
+            },
+            {
+              "Id": 1113106,
+              "Level": 6,
+              "Parameters": [
+                0.654898,
+                0.560392,
+                0.788379,
+                1.24992,
+                50,
+                1.084125,
+                2.167791,
+                2.707688,
+                0.761701,
+                0.728403,
+                1.03021,
+                1.29696,
+                50,
+                1.084125,
+                3.251686,
+                4.061531
+              ]
+            },
+            {
+              "Id": 1113107,
+              "Level": 7,
+              "Parameters": [
+                0.701676,
+                0.60042,
+                0.844692,
+                1.3392,
+                50,
+                1.179528,
+                2.358556,
+                2.945964,
+                0.816108,
+                0.780432,
+                1.103796,
+                1.3896,
+                50,
+                1.179528,
+                3.537834,
+                4.418946
+              ]
+            },
+            {
+              "Id": 1113108,
+              "Level": 8,
+              "Parameters": [
+                0.748454,
+                0.640448,
+                0.901005,
+                1.42848,
+                50,
+                1.274931,
+                2.549322,
+                3.184241,
+                0.870515,
+                0.832461,
+                1.177382,
+                1.48224,
+                50,
+                1.274931,
+                3.823983,
+                4.776361
+              ]
+            },
+            {
+              "Id": 1113109,
+              "Level": 9,
+              "Parameters": [
+                0.795233,
+                0.680476,
+                0.957318,
+                1.51776,
+                50,
+                1.370334,
+                2.740087,
+                3.422517,
+                0.924922,
+                0.88449,
+                1.250969,
+                1.57488,
+                50,
+                1.370334,
+                4.110131,
+                5.133776
+              ]
+            },
+            {
+              "Id": 1113110,
+              "Level": 10,
+              "Parameters": [
+                0.842011,
+                0.720504,
+                1.01363,
+                1.60704,
+                50,
+                1.47441,
+                2.948195,
+                3.682455,
+                0.97933,
+                0.936518,
+                1.324555,
+                1.66752,
+                50,
+                1.47441,
+                4.422293,
+                5.523683
+              ]
+            },
+            {
+              "Id": 1113111,
+              "Level": 11,
+              "Parameters": [
+                0.88879,
+                0.760532,
+                1.069943,
+                1.69632,
+                50,
+                1.578486,
+                3.156303,
+                3.942393,
+                1.033737,
+                0.988547,
+                1.398142,
+                1.76016,
+                50,
+                1.578486,
+                4.734455,
+                5.91359
+              ]
+            },
+            {
+              "Id": 1113112,
+              "Level": 12,
+              "Parameters": [
+                0.935568,
+                0.80056,
+                1.126256,
+                1.7856,
+                50,
+                1.682562,
+                3.364411,
+                4.202331,
+                1.088144,
+                1.040576,
+                1.471728,
+                1.8528,
+                50,
+                1.682562,
+                5.046617,
+                6.303497
+              ]
+            },
+            {
+              "Id": 1113113,
+              "Level": 13,
+              "Parameters": [
+                0.994041,
+                0.850595,
+                1.196647,
+                1.8972,
+                50,
+                1.786638,
+                3.572519,
+                4.462269,
+                1.156153,
+                1.105612,
+                1.563711,
+                1.9686,
+                50,
+                1.786638,
+                5.358778,
+                6.693404
+              ]
+            },
+            {
+              "Id": 1113114,
+              "Level": 14,
+              "Parameters": [
+                1.052514,
+                0.90063,
+                1.267038,
+                2.0088,
+                50,
+                1.890714,
+                3.780627,
+                4.722207,
+                1.224162,
+                1.170648,
+                1.655694,
+                2.0844,
+                50,
+                1.890714,
+                5.67094,
+                7.083311
+              ]
+            },
+            {
+              "Id": 1113115,
+              "Level": 15,
+              "Parameters": [
+                1.110987,
+                0.950665,
+                1.337429,
+                2.1204,
+                50,
+                1.99479,
+                3.988735,
+                4.982145,
+                1.292171,
+                1.235684,
+                1.747677,
+                2.2002,
+                50,
+                1.99479,
+                5.983102,
+                7.473218
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11111,
+        "Name": "By the Horns",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nGotta try... to do battle like the greatest champion luchadors do! Varesa launches up to 3 strikes, dealing <color=#FFACFFFF>Electro DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to headbutt opponents in front, dealing Nightsoul-aligned <color=#FFACFFFF>Electro DMG</color> and using the momentum to leap into the air.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing Nightsoul-aligned <color=#FFACFFFF>AoE Electro DMG</color> upon impact. If Varesa is in a combat state upon landing, or if the shockwave from her plunging attack hits an opponent, she will gain 25 Nightsoul points. She enters the Fiery Passion state upon reaching maximum Nightsoul points through this method.\n\n<color=#FFD780FF>Fiery Passion</color>\nIn this state, Varesa's Normal, Charged, and Plunging Attacks will gain corresponding buffs:\n\n<color=#FFD780FF>Normal Attack</color>\nFight like a superstar champion luchador! Launches up to 3 fierce strikes, dealing greater <color=#FFACFFFF>Electro DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to slam into her opponents, dealing greater amounts of Nightsoul-aligned <color=#FFACFFFF>Electro DMG</color> and using the momentum to leap into the air.\n\n<color=#FFD780FF>Plunging Attack</color>\nConsumes all her Nightsoul points and slams down on the ground from mid-air, dealing DMG to opponents in her path and dealing greater amounts of Nightsoul-aligned <color=#FFACFFFF>AoE Electro DMG</color> upon hitting the ground.",
+        "Icon": "Skill_A_Catalyst_MD"
+      },
+      {
+        "GroupId": 11132,
+        "Proud": {
+          "Descriptions": [
+            "Rush DMG|{param1:F1P}",
+            "Fiery Passion Rush DMG|{param2:F1P}",
+            "Follow-Up Strike Duration|{param3:F1}s",
+            "Nightsoul Point Limit|{param4:F1}",
+            "CD|{param5:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1113201,
+              "Level": 1,
+              "Parameters": [
+                0.7448,
+                1.064,
+                5,
+                40,
+                9
+              ]
+            },
+            {
+              "Id": 1113202,
+              "Level": 2,
+              "Parameters": [
+                0.80066,
+                1.1438,
+                5,
+                40,
+                9
+              ]
+            },
+            {
+              "Id": 1113203,
+              "Level": 3,
+              "Parameters": [
+                0.85652,
+                1.2236,
+                5,
+                40,
+                9
+              ]
+            },
+            {
+              "Id": 1113204,
+              "Level": 4,
+              "Parameters": [
+                0.931,
+                1.33,
+                5,
+                40,
+                9
+              ]
+            },
+            {
+              "Id": 1113205,
+              "Level": 5,
+              "Parameters": [
+                0.98686,
+                1.4098,
+                5,
+                40,
+                9
+              ]
+            },
+            {
+              "Id": 1113206,
+              "Level": 6,
+              "Parameters": [
+                1.04272,
+                1.4896,
+                5,
+                40,
+                9
+              ]
+            },
+            {
+              "Id": 1113207,
+              "Level": 7,
+              "Parameters": [
+                1.1172,
+                1.596,
+                5,
+                40,
+                9
+              ]
+            },
+            {
+              "Id": 1113208,
+              "Level": 8,
+              "Parameters": [
+                1.19168,
+                1.7024,
+                5,
+                40,
+                9
+              ]
+            },
+            {
+              "Id": 1113209,
+              "Level": 9,
+              "Parameters": [
+                1.26616,
+                1.8088,
+                5,
+                40,
+                9
+              ]
+            },
+            {
+              "Id": 1113210,
+              "Level": 10,
+              "Parameters": [
+                1.34064,
+                1.9152,
+                5,
+                40,
+                9
+              ]
+            },
+            {
+              "Id": 1113211,
+              "Level": 11,
+              "Parameters": [
+                1.41512,
+                2.0216,
+                5,
+                40,
+                9
+              ]
+            },
+            {
+              "Id": 1113212,
+              "Level": 12,
+              "Parameters": [
+                1.4896,
+                2.128,
+                5,
+                40,
+                9
+              ]
+            },
+            {
+              "Id": 1113213,
+              "Level": 13,
+              "Parameters": [
+                1.5827,
+                2.261,
+                5,
+                40,
+                9
+              ]
+            },
+            {
+              "Id": 1113214,
+              "Level": 14,
+              "Parameters": [
+                1.6758,
+                2.394,
+                5,
+                40,
+                9
+              ]
+            },
+            {
+              "Id": 1113215,
+              "Level": 15,
+              "Parameters": [
+                1.7689,
+                2.527,
+                5,
+                40,
+                9
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11112,
+        "Name": "Riding the Night-Rainbow",
+        "Description": "With footwork swift as lightning and fierce as thunder, Varesa displays the true spirit of lucha libre, rushing forward a certain distance and dealing Nightsoul-aligned <color=#FFACFFFF>Electro DMG</color> to opponents in her path.\nAfter using this Skill, Varesa gains 20 Nightsoul points and gains the \"Follow-Up Strike\" effect: Varesa has increased interruption resistance during this time, and upon pressing her Normal Attack, she will quickly unleash a Charged Attack that does not consume Stamina. \"Follow-Up Strike\" will be canceled after Varesa uses a Charged Attack.\nShe will use different techniques based on whether the skill is Tapped or Held.\n\n<color=#FFD780FF>Tap</color>\nQuickly rush a certain distance forward.\n\n<color=#FFD780FF>Hold</color>\nVaresa enters the Nightsoul's Blessing state and switches to Sudden Onrush mode.\n\n<color=#FFD780FF>Sudden Onrush</color>\nContinuously consumes Nightsoul points. In this state, Varesa's Movement SPD and interruption resistance are increased. She can use terrain to execute flying leaps or consume additional Nightsoul points to traverse atop water or liquid Phlogiston while remaining immune to DMG from the latter.\n\n<color=#FFD780FF>Nightsoul's Blessing: Varesa</color>\nWhen she runs out of Nightsoul points, her Nightsoul's Blessing state will be canceled. When Varesa is in the Sudden Onrush state or Fiery Passion state, she will always be counted as being in the Nightsoul's Blessing state.\n\nHas 2 charges. When Varesa enters the Fiery Passion state, she will obtain an additional Tap charge of her Elemental Skill and its DMG will be increased.\n\n<color=#FFD780FF>Fiery Passion</color>\n· While not in the Fiery Passion state, Varesa can use Plunging Attacks to gain Nightsoul points. She will enter Fiery Passion when she reaches maximum Nightsoul points via this method, or when she uses her Elemental Burst <color=#FFD780FF>Guardian Vent!</color>\n· While in the Fiery Passion state, her Normal Attacks, Elemental Skill, and Elemental Burst will gain unique buffs. She can also use a special Elemental Burst shortly after using a Plunging Attack.\n· The Fiery Passion state lasts for up to 15s and will end when she runs out of Nightsoul points or after she leaves combat for a period of time.\n\n<i>\"Right now, I'm my own hero.\"</i>",
+        "Icon": "Skill_S_Varesa_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 11139,
+      "Proud": {
+        "Descriptions": [
+          "Flying Kick DMG|{param1:F1P}",
+          "Fiery Passion Flying Kick DMG|{param2:F1P}",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}",
+          "Volcano Kablam DMG|{param5:F1P}",
+          "Volcano Kablam Energy Cost|{param6:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1113901,
+            "Level": 1,
+            "Parameters": [
+              3.4512,
+              5.752,
+              18,
+              70,
+              4.0264,
+              30
+            ]
+          },
+          {
+            "Id": 1113902,
+            "Level": 2,
+            "Parameters": [
+              3.71004,
+              6.1834,
+              18,
+              70,
+              4.32838,
+              30
+            ]
+          },
+          {
+            "Id": 1113903,
+            "Level": 3,
+            "Parameters": [
+              3.96888,
+              6.6148,
+              18,
+              70,
+              4.63036,
+              30
+            ]
+          },
+          {
+            "Id": 1113904,
+            "Level": 4,
+            "Parameters": [
+              4.314,
+              7.19,
+              18,
+              70,
+              5.033,
+              30
+            ]
+          },
+          {
+            "Id": 1113905,
+            "Level": 5,
+            "Parameters": [
+              4.57284,
+              7.6214,
+              18,
+              70,
+              5.33498,
+              30
+            ]
+          },
+          {
+            "Id": 1113906,
+            "Level": 6,
+            "Parameters": [
+              4.83168,
+              8.0528,
+              18,
+              70,
+              5.63696,
+              30
+            ]
+          },
+          {
+            "Id": 1113907,
+            "Level": 7,
+            "Parameters": [
+              5.1768,
+              8.628,
+              18,
+              70,
+              6.0396,
+              30
+            ]
+          },
+          {
+            "Id": 1113908,
+            "Level": 8,
+            "Parameters": [
+              5.52192,
+              9.2032,
+              18,
+              70,
+              6.44224,
+              30
+            ]
+          },
+          {
+            "Id": 1113909,
+            "Level": 9,
+            "Parameters": [
+              5.86704,
+              9.7784,
+              18,
+              70,
+              6.84488,
+              30
+            ]
+          },
+          {
+            "Id": 1113910,
+            "Level": 10,
+            "Parameters": [
+              6.21216,
+              10.3536,
+              18,
+              70,
+              7.24752,
+              30
+            ]
+          },
+          {
+            "Id": 1113911,
+            "Level": 11,
+            "Parameters": [
+              6.55728,
+              10.9288,
+              18,
+              70,
+              7.65016,
+              30
+            ]
+          },
+          {
+            "Id": 1113912,
+            "Level": 12,
+            "Parameters": [
+              6.9024,
+              11.504,
+              18,
+              70,
+              8.0528,
+              30
+            ]
+          },
+          {
+            "Id": 1113913,
+            "Level": 13,
+            "Parameters": [
+              7.3338,
+              12.223,
+              18,
+              70,
+              8.5561,
+              30
+            ]
+          },
+          {
+            "Id": 1113914,
+            "Level": 14,
+            "Parameters": [
+              7.7652,
+              12.942,
+              18,
+              70,
+              9.0594,
+              30
+            ]
+          },
+          {
+            "Id": 1113915,
+            "Level": 15,
+            "Parameters": [
+              8.1966,
+              13.661,
+              18,
+              70,
+              9.5627,
+              30
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11115,
+      "Name": "Guardian Vent!",
+      "Description": "Leaps into the air before using the momentum of the drop to unleash a powerful flying kick, dealing Nightsoul-aligned <color=#FFACFFFF>AoE Electro DMG</color> to opponents — just like those heroes of justice in woven scrolls for kids!\nAfter using this Skill, Varesa's Nightsoul points will be restored to maximum and she will enter the Fiery Passion state.\n\nIn the Fiery Passion state, Varesa's Elemental Burst will deal a greater amount of Nightsoul-aligned <color=#FFACFFFF>AoE Electro DMG</color>.\n\nAdditionally, she will briefly activate Apex Drive after using a Plunging Attack while in her Fiery Passion state.\n\n<color=#FFD780FF>Apex Drive</color>\nIncreases Varesa's interruption resistance. While affected by Apex Drive, Varesa can ignore her Elemental Burst CD and consume less Energy to use her special Elemental Burst, \"Guardian Vent: Volcano Kablam\": This causes her to use the especially powerful Plunging Attack, the \"Thunderous Tornado Eruption,\" which deals Nightsoul-aligned <color=#FFACFFFF>AoE Electro DMG</color> upon landing before causing her to exit Apex Drive. This DMG is considered Plunging Attack DMG.\nVaresa will exit Apex Drive after using her Elemental Skill.\n\n<i>In truth, the original name Varesa gave this move was the \"Invincible Dynamic Heroic Justice Super Mega Ultimate Thundercrash Sky-Splitting Supersonic Boom Kick.\" Alas, this name proved too long, and she was too embarrassed to shout it in front of everyone, even with her mask on. As such, she changed it to its present title instead.</i>",
+      "Icon": "Skill_E_Varesa_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 11121,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1112101,
+              "Level": 1,
+              "Parameters": [
+                0.5,
+                1.8
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1112101,
+        "Name": "Tag-Team Triple Jump!",
+        "Description": "After using the Elemental Skill <color=#FFD780FF>Riding the Night-Rainbow</color>, Varesa gains \"Rainbow Crash\" for 5s.\nDuring this time, when Varesa uses a Plunging Attack, the shockwave DMG dealt when she hits the ground is increased by 50% of her ATK. If Varesa is in the Fiery Passion state, this ground impact DMG is increased by 180% of her ATK instead.\n\nThe Rainbow Crash effect will be canceled once a ground impact hits an opponent, or when its duration expires.",
+        "Icon": "UI_Talent_S_Varesa_05"
+      },
+      {
+        "GroupId": 11122,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1112201,
+              "Level": 1,
+              "Parameters": [
+                0.35,
+                12
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1112201,
+        "Name": "The Hero Twice-Returned!",
+        "Description": "When a nearby party member triggers a Nightsoul Burst, Varesa's ATK increases by 35% for 12s. Max 2 stacks. Each stack's duration is counted independently.",
+        "Icon": "UI_Talent_S_Varesa_06"
+      },
+      {
+        "GroupId": 11123,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1112301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1112301,
+        "Name": "Night Realm's Gift: A Torch That Incinerates Evil",
+        "Description": "After Nightsoul points have been fully depleted, Varesa will switch to using Phlogiston to maintain the Sudden Onrush mode from her Nightsoul's Blessing.\nWhile in an area with Phlogiston Mechanics within Natlan, Nightsoul Transmission: Varesa can be used. When the current active character is sprinting or in movement modes caused by certain Talents, or at a certain height in the air, switching to Varesa will trigger the following: Varesa enters the Nightsoul's Blessing state, switches to Sudden Onrush mode, and obtains 20 Nightsoul points. Nightsoul Transmission can be triggered once every 10s by your own party.\nWhile in an area with Phlogiston Mechanics within Natlan, Varesa will not take fall DMG when using terrain differences to make leaps.",
+        "Icon": "UI_Talent_S_Varesa_07"
+      },
+      {
+        "GroupId": 11125,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1112501,
+              "Level": 1,
+              "Parameters": [
+                20,
+                10
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1112501,
+        "Name": "Blazing Heart, Singular Advance!",
+        "Description": "Varesa's Sprint speed is increased. When she is not in combat, her Sprint Stamina consumption will also increase.\nAdditionally, while in an area with Phlogiston Mechanics within Natlan, your party members will restore 20 Phlogiston when consuming food. This effect can occur once every 10s and does not take effect in Domains, Trounce Domains, or the Spiral Abyss.",
+        "Icon": "UI_Talent_S_Varesa_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1111,
+        "Name": "Undying Passion",
+        "Description": "The effects of the Ascension Talent \"Tag-Team Triple Jump!\" are enhanced:\nWhen performing the Special Plunging Attack \"Thunderous Tornado Eruption,\" Varesa will also gain \"Rainbow Crash\" for 5s.\nWhen \"Rainbow Crash\" is in effect, Varesa's Plunging Attack ground impact DMG is increased by 180% of her ATK, whether she is in the Fiery Passion state or not. You must first unlock the Ascension Talent \"Tag-Team Triple Jump!\" to access the above effect.\n\nAdditionally, when Varesa is in the Sudden Onrush mode of her Nightsoul's Blessing, she consumes 30% less Nightsoul points or Phlogiston.",
+        "Icon": "UI_Talent_S_Varesa_01"
+      },
+      {
+        "Id": 1112,
+        "Name": "Beyond the Edge of Light",
+        "Description": "Varesa will enter Apex Drive after using a Plunging Attack, regardless of whether she is in the Fiery Passion state or not.\nWhen Apex Drive is active, Varesa's interruption resistance will also further increase.\nAdditionally, Varesa will restore 11.5 Energy when her Plunging Attack ground impact hits an opponent.",
+        "Icon": "UI_Talent_S_Varesa_02"
+      },
+      {
+        "Id": 1113,
+        "Name": "Unbowed Resolve",
+        "Description": "Increases the Level of <color=#FFD780FF>Guardian Vent!</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Varesa_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1114,
+        "Name": "The Courage to Press On",
+        "Description": "Varesa will receive various buffs based on her state when using her Elemental Burst <color=#FFD780FF>Guardian Vent!</color> If Varesa:\n· Has neither Fiery Passion nor Apex Drive active, she will gain Diligent Refinement for 15s, which will increase her Plunging Attack ground impact DMG by 500% of her ATK, with a maximum increase of 20,000 DMG. This effect will be canceled once the ground impact hits an opponent, or if its duration ends.\n· If she has either Fiery Passion or Apex Drive active, this instance of her Elemental Burst <color=#FFD780FF>Guardian Vent!</color> deals 100% increased DMG.",
+        "Icon": "UI_Talent_S_Varesa_03"
+      },
+      {
+        "Id": 1115,
+        "Name": "Thoughts Floating on the Warm Breeze",
+        "Description": "Increases the Level of <color=#FFD780FF>Normal Attack: By the Horns</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Varesa_02",
+        "ExtraLevel": {
+          "Index": 1,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1116,
+        "Name": "A Hero of Justice's Triumph",
+        "Description": "Varesa restores 30 Energy when she enters Apex Drive.\nHer Plunging Attacks and Elemental Burst <color=#FFD780FF>Guardian Vent!</color> gain 10% CRIT Rate and 100% CRIT DMG.\nAdditionally, when Varesa uses the Hold version of her Elemental Skill <color=#FFD780FF>Riding the Night-Rainbow</color>, or Taps her Elemental Skill while in the Sudden Onrush mode, she will restore Nightsoul points up to her maximum.",
+        "Icon": "UI_Talent_S_Varesa_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Strength in Serenity",
+    "Detail": "A laid-back orchard manager and warrior of the Collective of Plenty. An aspiring hero who hungers for justice... and lots and lots of food!",
+    "Association": 9,
+    "Native": "Teteocan",
+    "BirthMonth": 11,
+    "BirthDay": 15,
+    "VisionBefore": "Electro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Mascara Luctatori",
+    "CvChinese": "乔苏",
+    "CvJapanese": "M・A・O",
+    "CvEnglish": "Jane Jackson",
+    "CvKorean": "Kim Yea-lim",
+    "CookBonus": {
+      "OriginItemId": 108807,
+      "ItemId": 108810,
+      "InputList": [
+        101256,
+        101243,
+        110009
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Um... Hi! I'm Varesa from the Collective of Plenty! I'm a warrior, and I also manage an orchard... If you're into food, or if you wanna buy fresh fruit by the cartload, or... or if you like hero stories, then we should definitely hang out! I'll show you all the good food around here, give you the best-quality fruit in our whole tribe, and tell you all the coolest stories about the biggest heroes in history!"
+      },
+      {
+        "Title": "Chat: Eating",
+        "Context": "My parents always say, no matter how busy life gets, you should always sit down and enjoy a proper meal when you get hungry. What I like to do is stack my plate up high, then squash it all down, take a deep breath, and wolf it down in one go. That way, I get to eat my fill without wasting too much time!"
+      },
+      {
+        "Title": "Chat: Strength Training",
+        "Context": "Strength is one of those things where you gotta use it or lose it! So, wanna train with me some time?"
+      },
+      {
+        "Title": "Chat: Managing the Orchard",
+        "Context": "There's a lot that goes into managing an orchard: watering, weeding, fertilizing the soil, making sure the temperature's right... But most importantly, you have to keep the fruit in a good mood!"
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Hehehe, I bet the crops back in the orchard are loving this weather! Guess the saurians won't have to water them today."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Eek! I read that Fietena could send lightning bolts right back into the sky! So, I've got nothing to fear either— Eek!"
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Look at this stuff... It's so white, and so cold... Is it edible?"
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "Ahh, so nice and warm... Nothing like the warm sun on a full stomach to make me feel... *yawn* like taking a nap... mmm..."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "With the wind behind my back, I bet I could run even faster... No, that's the lazy way, no shortcuts!"
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "*groan*... Good morning... I kinda want to go right back to bed, but... Argh, no, I can't! A hundred push-ups, that'll wake me up!"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Time for lunch! Full strength starts with a full stomach!"
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "A hero once famously said: \"If you feel exhausted by evening, that means you've worked hard today, and given every ounce of your strength.\" So sometimes, feeling tired can be a badge of honor!"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Ahh... I haven't used up much energy today, but it's so late that I'm getting kinda sleepy... Why don't you find yourself a nice, soft pillow, and we'll call it a night? The best pillows are those ones made from dried Grainfruit leaves... Remind me to... make one for you... some time... zzz..."
+      },
+      {
+        "Title": "About Varesa: Eating for Strength",
+        "Context": "Theoretically speaking, the more you eat, the stronger you get — assuming you're also training hard and not just sitting around eating all day. But that rule seems kinda reversed in my case... I started out super strong, with the tradeoff being that I can never seem to get full. As soon as I started helping my parents out in the orchard, I'd be getting dizzy with hunger every few hours... So yeah, that's why I have to eat such huge portions, even if it might look a little, uh... over the top..."
+      },
+      {
+        "Title": "About Varesa: Heroic Tales",
+        "Context": "I've always loved hearing the tales of our heroes, ever since I was little. It's thanks to the battles they fought that I get to eat delicious food and sleep peacefully at night. One of the heroes from our tribe was called Fietena. She could run really fast, and had this awesome flying kick that could split mountains in two! Someone once said that my fighting style reminded them of her. That made me so happy, I was beaming with joy for the longest time..."
+      },
+      {
+        "Title": "About Us: Epically Cool",
+        "Context": "My friends have told me all about your amazing past! You've defeated a ton of super strong enemies, and ended up with loads of cool-sounding titles! I think we should get one of those graffiti artists to make an artbook of you in different styles, with an epically cool look to match each title you have! Then, loads of kids will grow up reading stories about you, and they'll be inspired to become someone epic just like you!"
+      },
+      {
+        "Title": "About Us: Side by Side",
+        "Context": "Now, you are \"Tumaini,\" the pride of all Natlan, and the greatest hero of our age. It feels kind of surreal... but when I'm with you, I don't feel nervous at all, and I don't get that sense of... intimidation, you know what I mean? Like, I'm down here, and you're up there. I dunno, maybe it's because you're always so easygoing and sincere with me? Anyway, I just want to stay by your side, and offer you my strength whenever you need it. Like the warriors of old, who fought side-by-side with the heroes who made history!"
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "From the way that the woven scrolls describe it, a Vision appears at a pivotal moment in your life and slowly descends into your hand, glowing with a brilliant light that seems to say \"This has been ordained by Fate\"... But I guess I must have forgotten all of that stuff, because all I remember is... I was having this awful nightmare, where I was fighting off monsters at the entrance to my tribe for what felt like an eternity, and I nearly died... Then, when I woke up, there was a Vision just lying on my forehead. Maybe I was... blessed by a hero in my dream, or something?"
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "I made this mask for myself, after visiting the Children of Echoes a few times and getting some of their craftspeople to teach me a few things. My intuition told me to base it on the mask that Fietena wore on her second time fighting in the Night Warden Wars. She wasn't yet \"The Fearless Rock\" that she'd go on to become, but in that battle she still managed to conquer her fears and defeat all the monsters who confronted her. I believed that that mask could become an endless source of courage for me, and based on my experience since, I was right!"
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "I've heard that members of the Adventurers' Guild get to travel all over Teyvat. Imagine that... So instead of worrying about the business, or the shelf life of fresh fruit, or being confined to one place all the time, I could go anywhere in the world that I want, and try all of the food there? Hmm... But I can't be gone for too long, because I'll always need to help out at the orchard once in a while... Um, do you know if the guild takes part-time adventurers?"
+      },
+      {
+        "Title": "About Iansan: Coach and Commander",
+        "Context": "Iansan is my coach. I look up to her the most out of anyone! She helped me discover my true strength, taught me how to fight, and even got me a job in our tribe's Patrol Team. She's pretty well respected in the patrol team, so most of the time she gives me my orders, and I go join the fighting wherever I'm needed. I guess that makes her both my coach and my commander, too!"
+      },
+      {
+        "Title": "About Iansan: Continued Training",
+        "Context": "Coach Iansan says that even though most of the monsters out there are a piece of cake for me now, I've still got a long way to go, because the most formidable foes are the ones that take a whole team of heroes working together as one. I'm making sure to follow her training plan every day, it's just... controlling my diet is part of the plan, so I can't really eat deep-fried food or anything full of cream and sugar when she's watching. She says that stuff's unhealthy, but it tastes so good, and I get cravings... So sometimes, when I can't resist it anymore, I go to my secret campsite for a snacking session... If you and I ever go for a big feast together, please make sure you keep it a secret!"
+      },
+      {
+        "Title": "About Mavuika",
+        "Context": "I heard that the plates Mavuika uses on her barbell lifts are five times the weight of her flamestrider! And that she uses ten plates minimum just as a warmup... I also heard a rumor that she can lift a boulder the size of a Long-Necked Rhino with just two fingers! If anyone else was crazy strong like that, I'm sure I'd be too self-conscious to lift weights in front of them. But with Mavuika, it's different... I find the sound of her voice so reassuring, and the look in her eyes is so inspiring and encouraging. It makes me want to push myself as hard as I possibly can every single day. Sure, I may never catch up to her, but that's no excuse to give up. I'm gonna believe in myself, and be the best Varesa I can be!"
+      },
+      {
+        "Title": "About Mualani",
+        "Context": "There was this time when Coach Iansan noticed I'd overshot my target weight, and decided I needed a cutting phase. Since swimming's supposed to be good for fat-burning, she arranged for me to do an intensive program over at the People of the Springs territory. I'd be there swimming lengths, while Mualani was surfing around and towing Coach Iansan in a life preserver, so she could monitor my progress... Every day, she made me do pretty much the same distance as I do in my 30 thousand-step shuttle runs... *shudder*... Thank goodness Mualani was secretly slipping me some candy to keep my energy up. Otherwise, I don't know how I would have survived... I'm so grateful to her..."
+      },
+      {
+        "Title": "About Kinich",
+        "Context": "I haven't entered the Pilgrimage that many times, but once, I came up against Kinich during the group stage. That guy is so nimble... He was just dodging all of my moves until I completely exhausted myself, then he knocked me out cold with one hit... By the time I realized that maybe I should get my teammates to help me pin him down... he and the Sacred Flame were long gone."
+      },
+      {
+        "Title": "About Xilonen",
+        "Context": "When I was learning my crafting skills from the Children of Echoes, Muhuru's Gemporium is where I went to study. The craftspeople there talked about Xilonen all the time! I actually only saw her around once or twice, and I never got the chance to talk to her — but boy, did I get familiar with her music taste! She put together the playlist they have on in the shop, and all the tracks are super catchy. Really good beats — perfect for running, too. I swear, I can go for way longer on my shuttle runs when that stuff's playing!"
+      },
+      {
+        "Title": "About Citlali",
+        "Context": "Oh, I've seen her name in the readers' letters column of some comic books. Granny Itztli is extremely well respected — she's the most powerful hero from the Masters of the Night-Wind! But I gotta say, I always assumed she'd look way older... I didn't recognize her at all when I found her in the tavern in a drunken stupor. She didn't have a single Mora on her and she was mumbling to herself, but the only words I could make out were \"Masters of the Night-Wind.\" So, I paid her bill, threw her over my shoulder, carried her over to the Masters of the Night-Wind, and started asking around for \"Granny Itztli.\" But whenever people turned to look at this person slumped over my shoulder, a look of horror would creep over their face... And then it slowly started to dawn on me that something wasn't quite right..."
+      },
+      {
+        "Title": "About Dori",
+        "Context": "Oh... Isn't she that... big boss lady who's surprisingly small... but still has infinitely deep pockets? Oof... she's a fierce haggler... Every time she comes to buy fruit from us, she manages to slash at least thirty to forty percent off the selling price, and that's on a good day! On the plus side, though, at least she buys huge amounts — multiple cartloads at a time. And she lets me pet her Shaggy Sumpter Beast. It's so fluffy, and such a big cutie..."
+      },
+      {
+        "Title": "About Escoffier",
+        "Context": "Miss Escoffier has really strict standards... Every time her restaurant places a bulk order for my fruit, she picks out a few for... what's it called... yeah, \"sample analysis.\" If the sweetness or flavor is even slightly off, she rejects the whole batch... But then again, her cooking? Out of this world. Sooo delicious... Hehehe... If only I could eat it every day! I guess I'd probably have to be a god to afford that."
+      },
+      {
+        "Title": "More About Varesa: I",
+        "Context": "I believe that there are far more good people than bad people in the world. They build the comfortable houses we live in, the nice furniture we use, all the delicious food we eat, and they make the amazing music and all the other fun stuff we enjoy... Even if I miscalculate the price when I'm selling fruit, my customers are usually kind enough to let me know rather than take advantage of it. At least, I've never met anyone terrible enough to make me really dislike them. Monsters, on the other hand... I don't know what their deal is, but they're the only ones I get seriously angry at... Especially the ones from the Abyss! They're cunning, and terrifying, and just all-round awful!"
+      },
+      {
+        "Title": "More About Varesa: II",
+        "Context": "The Abyss attacked the Collective of Plenty when I was really young. So many people I knew got hurt... All my parents and I could do was hide away in a well-hidden cellar and barricade the door. I still remember the sound of the monsters trying to ram the door down... I was so scared, I didn't even dare to cry out loud... Thankfully, the Patrol Team got to us in time and saved us, but it got me thinking — even if the heroes of the past were immortal, there'd only be so much they could do. They couldn't be everywhere at once, and protect everyone and everything. But maybe, if I trained hard enough and learned how to fight, maybe next time instead of waiting to be rescued, I'd be strong enough to fight off the bad guys myself."
+      },
+      {
+        "Title": "More About Varesa: III",
+        "Context": "When I was first learning to fight, as soon as I came face to face with a monster, my legs would start shaking uncontrollably... I told myself: I just need to drive the bad guys away, and then I can go back to living my happy life! Then I'd put on my mask, close my eyes, imagine that I was a hero from the stories I'd read, and charge at them... I always managed to plow into them and send them flying, even though I couldn't see where I was going. One time, I knocked a hilichurl's club right out of his hand, and it went flying off and hit Coach Iansan square on the head. That was how she first noticed me, and she decided that I had talent, and took me under her wing..."
+      },
+      {
+        "Title": "More About Varesa: IV",
+        "Context": "I never expected that after just a few months of solid training, everyone would be telling me that I was a prodigy and I should go enter the Pilgrimage... The thing is, I've only ever thought of monsters as my enemies, so the idea of fighting against the nice people from my tribe, even friends who I'd sold fruit to before... it terrified me. I didn't know how to control my strength — what if I hit someone too hard and injured them? ...Obviously, that mindset meant I never made it very far in the competition. After a string of losses, I said I was too scared to try again... and by that point, people had stopped encouraging me to participate anyway."
+      },
+      {
+        "Title": "More About Varesa: V",
+        "Context": "I do know what my problem is. It's that I have to put on a literal mask and imagine I'm someone else, or else I can't get into the fight. I... avoid being myself, I guess. And if I want to conquer that, I have to learn how to control my strength and fine-tune every movement, with the same care and attention as when I'm weighing fruit on a scale. Only then will I be able to fight with intent and precision... and fight as myself. Um, since we're on the topic... I mean, you have god-tier strength, but you seem to have it completely under control. Whatever the situation, you always use just the right amount of force — no less and no more than necessary. So... You're my hero. Can you teach me how to do what you do?"
+      },
+      {
+        "Title": "Varesa's Hobbies",
+        "Context": "Hehe, I love camping in places with a great view! There are some really spectacular spots along the route that our fruit carts take. After you've pitched your tent and set up your cooking pot, it's so nice to relax in a reclining chair by the fire... Sing some songs, admire the scenery, gaze at the stars... then dig into some piping hot food. Ah, it's the best feeling!"
+      },
+      {
+        "Title": "Varesa's Troubles",
+        "Context": "I just don't get what the deal is with those books Coach Iansan reads. They talk about this science-based training method that people in Sumeru and Fontaine came up with. It's seems so over-complicated... Like, just because of something called \"body fat percentage,\" of which mine is apparently too high, Coach Iansan doesn't let me fill up on sweet stuff and doubles the amount of vegetables in my diet? I just find it pretty rough..."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "I always eat to my heart's content, until I feel buzzing with energy! I love anything with a ton of flavor. Sauces go a long way in that regard, and for me a tasty dish has always gotta have plenty of sugar in it. Blazed Meat Stew and Hot Spring O'Clock are two of my favorites — every single bite is pure bliss... Ugh, but I gotta watch it, or I'll feel guilty afterwards..."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I don't really go for burnt, expired, or undercooked food... Even if I can get past the taste, it just doesn't seem to give me any energy. *sigh* ...I guess I'm nothing like Fietena in that sense. The stories say that in the worst days of the war, she survived on moldy Tatacos and burned meat that was practically charcoal. And she still managed to fight off the enemy... I have no idea how she did it."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Mmmmmmm! Ohh... That was soooo good! I'm in heaven... Whew... You... You are an incredible cook! If you, um... If you ever got invited to cook for Epic Feast Showdown, oh boy — people would be licking their plates clean! And so many more people would sign up that honestly, I might even struggle to defend my title!"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "This tastes amazing... I could have a hundred more of those and still not get sick of it! Oh, no no, don't go cooking a hundred more just for me, I could never ask you to do that... I just... I mean, I could eat a LITTLE more, I guess..."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "I dunno why, but somehow I'm struggling to get all this down... Maybe because I skipped the appetizer? It's like this dish is a battlefield, and the hero has to fight their way through to the end... Yeah, that's it — this is the taste of war! Alright, jaws of victory, going in!"
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Heehee... Today's your birthday, I'm so excited! The tradition in our tribe is to get all your friends together and host a bonfire feast in your honor. The birthday person gets to cheers everyone and drink as much as they want! Although... with you being so famous, I guess you'd end up having to down at least a thousand drinks... Which would be great fun, I'm sure, but probably not the best thing for your liver. And it could get exhausting, too... Hmm, how about something more low-key instead? Like... a private party at my secret campsite?"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Whoa... I'm really feeling the results of my training! I'm so energized right now, I just want to sprint and jump and plow through all the obstacles in my way!"
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Yeah! I am brimming with energy — it's like I've just eaten a thousand helpings of Blazed Meat Stew! I'll be ramming and flying kicking with the force of an erupting volcano!"
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "My goal... is to become a strong warrior just like the heroes I admire, and fight to protect the most important thing of all: justice. Because everyone deserves a happy and carefree life, uninterrupted by the bad things and bad people out there!"
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "My wish is to grow in confidence and courage, just as I have grown in strength. I know that one day, I'll be able to go into battle without a mask on, and still have the unshakable confidence of a true hero!"
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Boof!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Headbutt!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Hyah!"
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Charge!"
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "It's justice o'clock!"
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "Hero incoming!"
+      },
+      {
+        "Title": "Elemental Skill: VII",
+        "Context": "Running late again..."
+      },
+      {
+        "Title": "Elemental Skill: VIII",
+        "Context": "Hurry up, Varesa..."
+      },
+      {
+        "Title": "Elemental Skill: IX",
+        "Context": "Time to roll!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "You oughta stand down!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "One fell swoop!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Fietena, grant me strength!"
+      },
+      {
+        "Title": "Elemental Burst: IV",
+        "Context": "\"By my spark, the night burns!\""
+      },
+      {
+        "Title": "Elemental Burst: V",
+        "Context": "Maximum power!"
+      },
+      {
+        "Title": "Elemental Burst: VI",
+        "Context": "Ultimate flying kick!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Ooh, so shiny!"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Um... Are these edible?"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Uh... Did that grow out of the ground?"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "This is infuriating!"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "That was a cheap shot..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "You're pretty tough..."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Let me help!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Not good..."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Can't stand... losing..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Aw..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "My strength... is gone..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Stop it!"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Ow ow ow!"
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Too strong!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Are we going on a trip? Or... to a competition?"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Woohoo, this is gonna be fun!"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Will there be enough food? If not, I brought my own stash!"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "\"Time for training, Varesa!\"\nEvery morning the coach would bellow her thunderous words, so loud in fact that a cloud of dust would rise up from the orchard.\nA few moments later, a core member of the Collective of Plenty's Patrol Team and the manager of a popular orchard — Varesa, who had overslept — would clumsily bumble her way into the gym, a slice of jam-coated bread in her mouth.\nAt this point, Varesa would listen to her coach's instructions with sleep-heavy eyes and a blank expression, before dutifully starting her warmups and slowly regaining her strength...\nOccasionally, her coach would point out — that jam contains too much sugar, which means it's punishment time! Only then would Varesa realize that, in her groggy haste, she'd picked her favorite condiment rather than the healthiest one.\nFaced with her coach's wrath, all a gloomy-looking Varesa could do was shuffle over to the most absurdly heavy barbell rack, all the while under the reverent, admiring, and dumbstruck gazes of her peers. That sort of weight would strain the physical limits of any normal human, leaving them with half a month of aches... Yet there Varesa was, performing some simple stretches, preparing to take on what even elite warriors would consider a \"lethal weight.\"\nBut in the midst of such seemingly inhuman training, Varesa would instead grow more energetic — and as the light returned to her eyes, she would begin to smile.\nSo it is that in the Collective of Plenty, whose people constantly pursue the pinnacle of strength, even its toughest warriors dare not challenge Varesa.\nBut if one wishes to investigate the source of Varesa's strength, they will soon find... that she lives a life far too laid back.\nTogether with her saurian companion Vanana, she manages her orchard, steadily works her fields, then sets up her stall to sell her harvest, which she does without a hint of hurry... Hearing about her daily routine is enough to put one to sleep, for there is nothing mysterious about it at all.\nNo matter how you look at it, isn't her life just as ordinary as any of her neighbors'?\nIn almost all respects, it might well be — but with the exception of her diet.\nOne more helping, please! And another, with more seasoning this time! Oh, and another, please — the bigger the better!\nIt's standard fare for Varesa to effortlessly inhale enough food to feed thirty, forty, even fifty people. Even an eating competition like the \"Epic Feast Showdown\" has to open a separate venue, especially for her...\nWitnessing such marvels, people can't help but wonder...\n\"Could it be that for a prodigy like her, the more she eats, the stronger she gets?\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "For Varesa, every day is a happy day.\nHer parents often say, \"The Tollan Volcano didn't erupt for ages and ages before or after the birth of our daughter.\"\nBut Varesa is no divinity, and her arrival could not have quelled the volcano's fury. \"For ages and ages\" was simply a figure of speech.\nYet the fact that she was born in a time unafflicted by natural disaster was itself proof enough of her luck.\nIn the prosperous Collective of Plenty, Varesa's family has always lived in contentment. Having never experienced a lack of material comforts, she grew up warm and well-fed. Her parents harbored no lofty expectations for her, only wishing for their daughter to be happy, healthy, and to take over the orchard once she was ready.\nSo as her father tended the orchard, Varesa's mother would place her on the back of the little saurian, Vanana, and follow along. If her father dropped any fruit, Varesa would be quick to catch them, earning her the praise of her parents and affectionate nuzzles from Vanana.\nWhen they used to set up their stall to sell fruits, Varesa's mother would hold her, sit beside her father, open up a woven scroll, and read her stories. From cozy saurian fairytales to legends of mighty heroes, she combined lighthearted episodes with action-packed sequences with masterful pacing. Varesa, snacking away as she listened along, was utterly engrossed. Sometimes, she would eat an entire crate of Quenepa Berries without even realizing, much to her father's exasperated mirth.\nSuch a laid-back childhood bestowed upon Varesa a personality both gentle and generous.\nIn the Collective of Plenty, strength is the calling card of the people. The tall and strong garner adoration and respect, and that goes right the way from childhood.\nDespite her unremarkable physique, it wasn't long before little Varesa had managed to lift and toss the children's former leader, along with his prized youth barbell, high into the air.\n\"Former,\" because from that moment on, the children unanimously decided that Varesa should be their new leader. However, being a traditional leader figure did not interest her.\nInstead, Varesa had set her sights on becoming a hero — someone who, at the same time as maintaining order, let everyone eat and play to their heart's content too!\nIf I've got anything scrumptious at home, I'll share it with everyone! And if I've bought something fun, we can all play together!\nStop bullying him, or I'll carry you away! You there, hogging the comics and the toys — share them with the others, or I'll drag you off myself!\nAnd all you trouble makers — you're getting a knuckle sandwich if you don't knock it off...\nAh, no, no... If I punch them, they'll be unconscious for weeks... I'll just give them a light tap on the head instead.\nAnyway, everyone should play nice and get along! No squabbling, you hear me? And definitely no being selfish or deliberately causing trouble for others!\nIt was around this time that Varesa first displayed her full potential, perhaps to a slightly extreme degree...\nHer frail friend told her of a wild fruit tree north of the tribe, its fruits miraculously sweet and tangy.\nHearing that, the little Varesa uprooted the entire tree and brought it to her friend's doorstep.\nHer mother saw this as a chance to teach her a lesson — not just that she shouldn't hurt fruit trees, but also the importance of living in harmony with nature. Together, the two of them carefully replanted the tree in its original spot...\nAnother time, the chief said that there had been more rockfalls than usual near the tribe, warning everyone to be careful.\nHearing this, the little Varesa found somewhere high to stand. Hands on hips, she looked out for these rocks. When she saw one, she'd jump in, and give it a mighty kick to send it off course!\nHer father then took Varesa to even higher ground to look for the source of the falling rocks. They dug holes, filled craters with mud, and made sure all the boulders would stay put so it wouldn't happen again any time soon...\nEvery time, people would stare and wonder to themselves — how was it even possible for such a little girl to be so strong?\nBut all it took to allay their worries was seeing Varesa's soft, smiling face, and their children playing happily under her guidance. They were never worried that she would lose control of her strength."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "And in a way, they were right. Varesa never lost control of her strength — instead, it was her appetite that went unchecked.\nPerhaps this was her \"debt\" to pay for such strength. As soon as Varesa learned to walk, her appetite was already a match for any healthy youth in the tribe. When she was up to her parents' knees in height she could, in just one meal, demolish enough food to feed her whole family for an entire day — and that included Vanana.\nHowever, little Varesa's chances to show her strength were few and far between. With her diet, she soon started to \"resemble a Valberry from afar,\" until she reached a dangerously unhealthy weight, worrying her parents.\nFor the sake of both her health and her ability to work in the future, her parents swiftly had her tending to the orchard. A great way, they thought, for her to burn off a bit of excess energy.\nAfter arriving in the orchard, Varesa made another unpleasant observation about herself.\n\"Mom, Dad, and Vanana do so much every day, but they don't eat much at all. I barely help out, yet I've been stuffing myself full...\"\n\"I have to work to make up for all the food I eat. I've gotta earn my keep!\"\nTo her parents' delight, Varesa quickly got into the swing of things.\nAt first, she took the lead and worked more, using her Tatankasaurus-like strength to carry around goods, farm equipment, and all sorts of other things. Hard labor came easy to her, like taking a walk after a meal to burn away her burgeoning energy.\nLater, under her mother's guidance, she set her mind to studying the finer details of farming — like soil management, nutrient mixing, and moisture regulation. Varesa took to these complex tasks with great gusto.\nAs the future manager of the orchard, her daily workload far exceeded that of all her saurian helpers.\nAlthough she wasn't exactly a natural when it came to reading woven scrolls, understanding technical principles, and dealing with bookkeeping... Yet, having learned how to go out and purchase spices, Varesa could now manage the orchard on her own — something that even many adults would struggle with!\nGradually, she managed to slim down a bit, such that her physique stabilized and she was no longer at risk of any serious health issues.\nHowever, even though she tried hard to suppress her cravings and live life with moderation... Yet still, little Varesa's appetite remained prodigious, to say the least.\nTo that end, her parents had already taken her to get a diagnosis. However, to their surprise, the doctor simply praised her, saying, \"she's in great health, that's why she loves eating\" — so they could never figure out the cause.\nIn the end, it was Chief Acatl who, having long been concerned about little Varesa, offered up a remarkably logical-sounding explanation:\nThe fertile Teteocan soil can produce excellent crops to nourish its powerful warriors, but not all constitutions can fully utilize the energy stored within these foods. After eating the same meal, some people might only be able to do ten sets of bench presses, while others could carry the very same barbell up a mountain and still have the strength to do a war dance.\nBut there are legends of dark horses — warriors of the Teteocan whose bodies, when necessary, could fully utilize every fiber and calorie in their meals, giving them unrivaled strength and a voracious appetite. That was probably the kind of person Varesa was.\nHowever, not all of these warriors went on to inherit Ancient Names or become heroes. Just like the skeleton of a ship or the foundation of a building, they served as cornerstones, their light shining in places unseen by others. But when the opportunity arose, they too could leave behind a brilliant legacy, and so they were sometimes known as \"hidden heroes.\"\nHearing the chief's theory put Varesa's parents at ease. At the very least, their daughter had no serious health issues.\nAs for little Varesa, all she took away from the conversation was that intriguing title...\n\"A 'hidden hero,' huh? So that's what I am?\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "The phrase \"hidden hero\" had always stuck with little Varesa. Despite her youth, she had already come up with a more noble ambition:\n\"Since I'm special, shouldn't I work hard to become a real hero instead?\"\nHowever, the weight of the word \"hero\" was far beyond what little Varesa had first imagined...\nThe hero triumphs over evil, leaving only a few choice words in their wake — such is the sacrifice of storytelling, which sweeps away most of the grief and hardship of the truth behind each fairy tale and every comic.\nTo say nothing of real enemies who fought with true intent to kill, leaving Varesa more terrified than any wrestling match she'd ever watched.\nVaresa was five years old when she was first attacked by the Abyss. She relied on her instincts to kick the first monster that broke into her orchard, sending it flying. But when she saw the rest of them rushing towards her like a raging black tide, the little Varesa was so frightened that she collapsed, bursting into tears.\nLuckily, her father reacted in time. He drove off the nearby monsters, picked up Varesa and her mother, and brought Vanana with them to hide in their cellar. They sealed the door, then gently comforted their daughter as they awaited the Patrol Team's arrival.\nHowever, seeing her ruined orchard and the wounded warriors were what stopped little Varesa's tears. She clenched her tiny fists with such anger that she didn't even realize that her nails had pierced her palms.\nShe did not understand the enemy's motives, nor did she intend to. All she knew was that they had destroyed her home, and hurt the nice grown-ups who came to buy her fruit so badly that some might never wake up... She hoped to become like the heroes in those stories, eliminating any Abyssal threats the instant they showed their misshapen faces.\nBy the time she finished relocating and renovating the orchard with her parents, Varesa was no longer the carefree child she once was.\nWith her parents' permission, Varesa, wearing a small mask and dragging along the heaviest barbell in the gym, pushed open the thick stone door that led to the wrestling arena's prep room. She begged the warriors within to teach her their ways.\nAs a \"hidden hero,\" Varesa must face her fears and weaknesses. She must turn her brute strength into the power to protect her people.\nSome arrogant wrestlers looked down on Varesa for her youth, and turned her away. In response, she wordlessly grabbed them by the legs and dragged them into the ring, where she — in response to their bewildered expressions — gave them a light push. Her opponents were knocked off their feet, sent hurtling out of the arena, proving to all that Varesa's strength was not to be taken lightly.\nThe warriors present, as well as Chief Acatl who had hurried over, briefly discussed the situation. In the end, Varesa's request was unanimously approved.\nIn the eyes of the valiant warriors of the Collective of Plenty, seeing that Varesa had the strength to surpass any grown-up, she soon came to be regarded as a master of her craft.\nFrom then on, Varesa received tutelage under many great warriors. She did not know what fighting style suited her, so she relied on her impressions of heroes to try out their techniques one by one, keeping what worked best for her.\nShe trained for years, but there was still a schism between theory and practice. Whenever she was in a real fight, whether by anxiety or lack of experience, she would still default to her instincts — charging at her enemies and launching a barrage of flying kicks. In her hands, melee weapons gained a new lease of life — namely, by being thrown straight at her foes...\nIn response, some hilichurls started adopting similar \"ranged\" tactics to counter Varesa's onslaughts, resulting in Coach Iansan getting caught in the crossfire... The latter, who then started paying special attention to the young lass, henceforth took over all of Varesa's training.\nTo help Varesa fully realize her potential, Iansan created a highly effective training program. Surprisingly, Varesa's natural talent ranked far above the rest of her trainees. Relying on just her intuition, she could effortlessly execute techniques that would require much backbreaking training from even Iansan's most devout disciples.\nIansan believed that Varesa's strength might even surpass her own. Brimming with anticipation, she encouraged Varesa in the spirit of competition, saying, \"I won't lose to you!\" However, this only ended up leaving Varesa flustered and at a loss for words.\nDuring her training, Varesa defeated a four-digit number of monsters, but also broke a three-digit number of weapons, leaving a two-digit number of the tribe's warriors scratching their heads in disbelief. Iansan came to the following conclusion:\nVaresa was a genius with incredible strength, but it was precisely her strength that prevented her from using common melee weapons. Therefore, she should adopt the bare-handed fighting style of wrestlers to further grow as a warrior.\nAt Iansan's recommendation, Varesa joined the tribe's Patrol Team. She frequently took to the front lines, striving to improve her fighting skills.\nAnd on her second month in the Patrol Team, Varesa once again faced a grueling trial.\nThe black tide of monsters rushed at her once more. Her comrades were exhausted after three consecutive days of fighting, and even Varesa was reaching her limit...\nBut it was in this very battle that Varesa found her second wind, and gained something precious to her — something that would make her an even more formidable warrior..."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "After experiencing that harsh battle, Varesa gradually returned to her peaceful self. Gaining more experience helped her ward off anxiety on the battlefield, even when under duress.\nShe took over her family business, and her pace of living went back to how it was in her childhood.\nDeep down, she had always been an easy-going girl. In her own words, \"a laid-back life's a happy life.\"\nIf she were to describe her usual routine, it would look something like this: \"Tend to the orchard, take care of Vanana, then drag the fruit cart around to each tribe to sell my stock... While I'm out, grab something fresh for lunch and dinner. If I run into the Epic Feast Showdown, all the better! This Inferno Stomach Supremo's gonna have herself a feast!\"\n\"Oh, and aside from that, don't forget to train according to Coach Iansan's plan every day — go through exercises on 18 gym machines, then three sets of 300 reps for three types of no-equipment full-body workouts, plus three shuttle run sessions of 30 thousand steps each... No need to stick to any strict timing, but just be careful not to startle passersby when training at night...\"\nWhen she receives the signal to report to the Patrol Team for duty, Varesa brings a massive backpack stuffed full of food, and follows her teammates around like she's on a field trip, looking for new spots to camp. When running into regular enemies, she dons her mask and gives them a generous serving of flying kicks — a show-stopping warmup, if ever there was one!\nOnly when encountering the toughest of Abyssal foes does Varesa's fighting spirit burn truly bright.\nSuch a disposition makes her ill-suited for certain situations, the most notable of which being the Pilgrimage of the Return of the Sacred Flame.\nAs a famous warrior of the Collective of Plenty, everyone had always hoped that Varesa would achieve greatness in the Pilgrimage.\nBut from the very moment she'd learned to fight, Varesa had never considered the other tribes' warriors to be her enemy. As a result, she was unable to take fights against her fellow Natlanese seriously... to the point that she fought like she was one of the fans in the stands.\nOne time, the \"Sand Dagger of Seit'aad\" used his weapon to deflect an indecisive tackle from Varesa, causing her to crash headfirst into a cave, stumble inside, and get hopelessly lost. Guided by a Yumkasaurus whelp, she only returned to the arena long after the team stage of the Pilgrimage had ended.\nThen there was another when Nusta, a veteran warrior of the Flower-Feather Clan, was showing off her punching techniques, and a pumped-up Varesa stopped to applaud her, totally oblivious to her surroundings. She did not even realize that Nusta's teammates had snuck off with the Sacred Flame until it was too late.\nHer strongest opponent was \"Malipo\" Kinich, who was on par with her speed, but far more agile. By dodging all around Varesa, Kinich effortlessly deflected her attacks, wore her out, and made an equally swift getaway with her team's Sacred Flame in tow...\nVaresa attempted the Pilgrimage five times, but never made it out of the team stage even once.\nChief Acatl and Coach Iansan could only sigh and shrug. However, Varesa's parents and friends had no regrets, celebrating the despondent Varesa's return each time with a bounteous feast.\nIf it had been anybody else, someone so strong being repeatedly knocked out so easily would surely have invited criticism. But the people of the Collective of Plenty, and even other tribes' warriors who had fought her, were sympathetic.\nVaresa often chats with her customers when selling her fruits. She is always calm, composed, and treats everyone like a friend. When customers pay slightly less, buy goods on temporary credit, or request returns or refunds, Varesa never shows the slightest hint of impatience. Her kind and laid-back demeanor convey a sense of comfort to all who cross paths with her.\nIt would not be amiss to say that Varesa simply cannot muster up even an ounce of anger for her compatriots.\nInstead, Varesa knows that she should save her rage — a valuable resource to her — for the most important of battles. Being the bastion of the Patrol Team, Varesa has been a diligent soldier since the moment of her admission, and never once tasted defeat while defending the Collective of Plenty from the Abyss.\nBut what is Varesa's own stance on all this? Is this truly enough for her?\nParticipating in the Night Warden Wars, and facing the main force of the Abyss head-on is an indispensable milestone in Varesa's journey to becoming a hero.\nEvil never rests. To only intercept when the enemy strikes is an unsustainable approach.\nVaresa knew that if she failed to overcome her weaknesses by grasping the difference between unleashing her strength and giving in to anger, she might never become a true hero..."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Sitting next to her tent and gazing at the campfire, Varesa has often wondered: What does the word \"hero\" mean to her?\nWhen she first set foot on the battlefield, Varesa was plagued by fear and trepidation. Back then, she chose to wear her mask, and would cry out \"By my spark, the night burns!\" to ignite her fighting spirit, thus overcoming her weakness.\nThis soon became her modus operandi in battle. Once she had her mask on, she became a different person altogether — a hero who fought without fear.\nBut even if her words and actions made her seem like a hero of legend... Could she truly call herself one?\nMore importantly, why did she even want to become another hero?\nDid she envy their splendid swagger or desire to leave a trail of mighty feats in her wake for all to gush over?\nOr did she want to be able to channel the same kind of battle rage as her peers, to turn herself into a doubly-powerful instrument of war?\nAfter the greatest crisis had been resolved, with Natlan emerging victorious, Varesa heard the story of \"Tumaini,\" and slowly, things started clicking into place...\nGradually, she realized that she neither hungered for glory, nor desired a permanent \"enemy\" to draw her rage.\nWhat she prized above all was the bravery and initiative of her heroes, as well as their courage in the face of their Abyssal foe.\nShe wanted to turn their conviction into her strength, meting out her own brand of justice — to protect everyone so they could live peaceful lives, happy and carefree.\nRather than hiding herself behind a mask, she should fight as herself — the one and only \"Varesa.\"\nShe realized that it was imperative to confront her weaknesses head-on, as well as curb her sloppiness and bad habits.\nTo this end, Varesa has been letting Iansan put her through \"enhanced control training,\" all while pushing herself harder than ever before. She now avoids wearing her mask in battle, and has stopped trying to imagine herself as one of her usual array of heroes.\nAt first, she felt naked without her mask, and her subconscious dredged up memories of her rookie days, memories of weakness and panic. In her confusion, Varesa lost herself, forgetting even the basics of battle.\nBut when the mind fails, the body takes over — namely, the techniques deeply ingrained into her muscle memory. Even though she wasn't able to use her full strength, and her lack of confidence led to her tripping and falling several times in front of her foes...\nYet in the end, falling down was no big deal. She could, after all, use her superior strength to crash down with such force that her enemies lost their footing. Hey, as long as it worked...\nIt's true that Varesa is still in the process of slowly adapting to the battlefield. Soon, she will be ready to join the fray, and unleash the coolest, most awesome fighting style of all — one that comes straight from her heart.\nThis is Varesa in her prime as a warrior: someone who turns a fighting spirit born from \"wrath\" into the \"courage\" to face down her foes, colors the battlefield with the legacies of heroes past, and slams, dropkicks, and tackles her way to a beautiful victory!"
+      },
+      {
+        "Title": "A Hero's Mask",
+        "Context": "The first legendary hero that Varesa remembers hearing about, and the one who left the deepest impression on her, was Fietena.\nIn artworks, she is usually portrayed with her favorite red battle mask. Known for her incredible speed and great skill in close combat, she was a warrior without equal.\nBorn in the Collective of Plenty, Fietena achieved a great many victories in battle, not only at home but also in the defense of other tribes. Fietena eventually fell in love with a warrior from the Flower-Feather Clan and married into his family, strengthening relationships between both tribes.\nOverall, although Fietena's tale might not be as awe-inspiring as those of the heroes of the six Ancient Names, she remains a legend adored and respected by the people.\nAs Natlan's graffiti has been influenced by foreign pop culture, its mediums of telling hero stories have constantly shifted with the times. In Varesa's beloved comics, where the art styles are often vibrant and over the top, Fietena's one-of-a-kind story has cemented her as an all-time favorite.\nThe comic in which Fietena made her debut ended up being published in twelve volumes, with five different versions of her design.\nWhenever she visits the Children of Echoes, Varesa would learn some simple craftsmanship skills from its smiths. Eventually, she made replicas of all five of Fietena's masks for herself.\nOf these masks, she kept four in her collection. However, the mask from \"Night Warden Wars: Second Trial\" is special.\nThis mask had the most thrilling backstory, but due to the large-scale battles in the comic — and the fact that Fietena was only visible from a few side-angles — it was difficult for Varesa to pick out its exact details, and there was no frontal depiction for her to use as a reference.\nSo Varesa relied on her gut feeling to complete the pattern on the finished product, and it became a symbol of her giving her all in battle.\nIn truth, due to Varesa's personal touches, there were already many differences between her mask and Fietena's.\nSo much so that when people saw the masked Varesa, it was Varesa they thought of, not Fietena.\nOnce she learned of this unanimous verdict, Varesa was not only slightly disappointed, but even a little sad.\nNevertheless, whenever she completed her tasks in the Patrol Team, fulfilling her duty to safeguard the Collective of Plenty and its surrounding areas, people would always approach her to offer their gratitude.\nThey would give her gifts of her favorite foods, as well as beautiful handmade ornaments.\nAnd to place emphasis on thanking Varesa herself, people would always draw a little mask on every thank-you letter they gave her. Over time, the mask came to be seen as Varesa's personal emblem.\nTo this, Coach Iansan nodded her head in satisfaction:\n\"Fietena's heroic deeds will always be remembered by the people. But what happens today and tomorrow, that's your masterpiece in the making. Accept it, Varesa, and embrace it — it's a sign of everyone's encouragement!\"\nHearing her coach's advice, Varesa made up her mind and set herself a lofty goal:\n\"If, one day, I really manage to become a true hero, and people make stories about me... a—and even make me the protagonist in a comic... then let's officially make this 'Varesa's Mask'!\""
+      },
+      {
+        "Title": "Vision",
+        "Context": "On numerous occasions, Varesa has recounted a nightmare she once had in which she was fighting an endless horde of Abyssal foes, knocking down one, only for ten more to spring up in its place.\nMany of the tribe's warriors understood that this was no dream, and that such a horrific battle did, in fact, take place.\nAt that time, the Abyssal forces had launched a cunning three-way assault on the Collective of Plenty when the Tollan Volcano was in its eruption cycle. They sought to isolate, corner, and exterminate the tribal warriors.\nThe attack happened so suddenly that the only reinforcements to arrive were a handful of couriers from the Scions of the Canopy. As far as the Collective of Plenty's warriors were concerned, they were practically on their own.\nWith their limited manpower, the drawn-out fighting soon wore their defenses down on all sides. After careful deliberation, the tribe's elders decided to decentralize and layer their defenses, deploying their front lines as far away from civilian areas as possible. The reinforcements from the Scions of the Canopy could not join the fighting directly, and were ordered to occupy as much of the high ground as they could.\nMeanwhile, the Collective of Plenty planned to deploy a number of its elite warriors to launch a counteroffensive.\nThe tribe's lines of defense could not halt the Abyssal forces completely, but their responsibility was to slow them down and deplete their strength.\nOnce the Abyssal forces had been slowed, the Collective of Plenty would change tactics — they would have the Scions of the Canopy's couriers identify and track down the enemy leaders.\nFollowing this, the tribe's counteroffensive would ambush the enemy leaders from behind and take them down. After cutting off the head of the serpent, the only thing left would be to deal with its flailing body...\nWhen Varesa, new to the Patrol Team, heard that she could engage the enemy leaders if she joined the counteroffensive, she signed up right there on the spot.\nAcatl and Iansan were concerned, but they needed as much support as they could get, and Varesa was indeed a formidable warrior. In the end, they agreed to let her join.\nThough the strategy was sound, putting it into practice was treacherous, to say the least.\nDuring the first counterattack, Varesa, along with ten warriors, rushed into the enemy lines, and felled their leader with great gusto.\nDuring the second counterattack, Varesa was joined by only six warriors. The enemies' weapons, normally a breeze to evade and parry, cut closer and closer to their necks each time.\nDuring the final counterattack, Iansan, the backbone of the tribe's defenses, fought with all her might to clear a path. When she turned around, she realized that only Varesa was left...\nVaresa hobbled over, covered in wounds. She carried an older fellow warrior over her left shoulder, whom she handed over to Iansan. In her right hand, she dragged along the twisted, broken body of a mitachurl which she hurled into the enemy horde, sending a great number of monsters flying.\nVaresa's eyes, clouded and hazy, revealed that she was barely conscious on her feet. But her body continued to fight at full strength, driven by rage and responsibility alike.\nWith trembling hands, she took out her tattered mask from her pocket. She put it on, whispering to herself:\n\"I'm not that scared little girl anymore. I want to fight like a hero.\"\nAs soon as the words left her mouth, and without waiting for Iansan, Varesa dug her heels into the ground, which cracked and splintered under the force. She flung herself at the enemy leader in a blazing, crimson flash, tearing through the surrounding ranks of monsters.\nAfter a few moments, a thunderous roar erupted from the depths of the Abyssal horde. What remained of their leader was sent blasting upwards, tracing a beautiful arc through the sky...\nWhen the dust had settled, Iansan got to digging, and eventually found Varesa buried in the depths of the ruined battlefield, fast asleep. But the Vision in her grasp was clearly wide awake, for it wreathed her body in crackling bursts of lightning.\nVaresa remained unconscious for half a month. When she finally awoke, she could not remember a single thing about the battle. By then, her wounds had miraculously healed, and she was fit as a fiddle once more.\nHearing the praises of the people around her, regarding her new Vision, and enjoying her victory banquet, Varesa knew only that she had done herself proud. At the very least... she didn't end up letting everyone down.\nIn other words, there was no need to think too much about it all. And after working so hard, it was now time to eat hard instead!"
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 211100,
+      "Name": "Sugar Rush",
+      "Description": "Varesa's outfit. In her eyes, sugar is a sweet, sublime gift from the heavens. Cakes of sparkly pink and emerald green, yummy fruit tea, mountains of candy... These things are the source of all happiness in the world! Unfortunately, her coach vehemently begs to differ.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104144,
+    113072,
+    101254,
+    112103,
+    104355,
+    113070
+  ],
+  "NameCard": {
+    "Name": "Varesa: Powerhouse",
+    "Description": "Namecard style.\nWhat could possibly be the secret to her immense strength? D'you think it's got something to do with her nigh-on insatiable appetite...?",
+    "Icon": "UI_NameCardIcon_Varesa",
+    "PicturePrefix": "UI_NameCardPic_Varesa"
+  }
+}

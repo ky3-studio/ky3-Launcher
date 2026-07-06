@@ -1,0 +1,1203 @@
+{
+  "Id": 10000087,
+  "PromoteId": 87,
+  "Sort": 71,
+  "Body": 4,
+  "Icon": "UI_AvatarIcon_Neuvillette",
+  "SideIcon": "UI_AvatarIcon_Side_Neuvillette",
+  "Name": "Neuvillette",
+  "Description": "The Chief Justice of Fontaine, known as the Iudex, is renowned for his unassailable impartiality.",
+  "BeginTime": "2023-09-26T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 10,
+  "BaseValue": {
+    "HpBase": 1143.984,
+    "AttackBase": 16.21802,
+    "DefenseBase": 44.8725
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 1,
+    "Skills": [
+      {
+        "GroupId": 8731,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "Charged Attack DMG|{param4:F1P}",
+            "Charged Attack Stamina Cost|{param6:F1}",
+            "Charged Attack: Equitable Judgment|{param5:F2P} Max HP",
+            "HP Restored|{param7:F1P} Max HP/Droplet",
+            "HP Loss|{param8:F1P} Max HP/{param9:F1}s",
+            "Plunge DMG|{param11:F1P}",
+            "Low/High Plunge DMG|{param12:P}/{param13:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 873101,
+              "Level": 1,
+              "Parameters": [
+                0.545768,
+                0.462456,
+                0.723376,
+                1.368,
+                0.073186,
+                50,
+                0.16,
+                0.08,
+                0.5,
+                0.5,
+                0.568288,
+                1.136335,
+                1.419344
+              ]
+            },
+            {
+              "Id": 873102,
+              "Level": 2,
+              "Parameters": [
+                0.586701,
+                0.49714,
+                0.777629,
+                1.4706,
+                0.079143,
+                50,
+                0.16,
+                0.08,
+                0.5,
+                0.5,
+                0.614544,
+                1.228828,
+                1.534872
+              ]
+            },
+            {
+              "Id": 873103,
+              "Level": 3,
+              "Parameters": [
+                0.627633,
+                0.531824,
+                0.831882,
+                1.5732,
+                0.0851,
+                50,
+                0.16,
+                0.08,
+                0.5,
+                0.5,
+                0.6608,
+                1.32132,
+                1.6504
+              ]
+            },
+            {
+              "Id": 873104,
+              "Level": 4,
+              "Parameters": [
+                0.68221,
+                0.57807,
+                0.90422,
+                1.71,
+                0.09361,
+                50,
+                0.16,
+                0.08,
+                0.5,
+                0.5,
+                0.72688,
+                1.453452,
+                1.81544
+              ]
+            },
+            {
+              "Id": 873105,
+              "Level": 5,
+              "Parameters": [
+                0.723143,
+                0.612754,
+                0.958473,
+                1.8126,
+                0.099567,
+                50,
+                0.16,
+                0.08,
+                0.5,
+                0.5,
+                0.773136,
+                1.545944,
+                1.930968
+              ]
+            },
+            {
+              "Id": 873106,
+              "Level": 6,
+              "Parameters": [
+                0.764075,
+                0.647438,
+                1.012726,
+                1.9152,
+                0.106375,
+                50,
+                0.16,
+                0.08,
+                0.5,
+                0.5,
+                0.826,
+                1.65165,
+                2.063
+              ]
+            },
+            {
+              "Id": 873107,
+              "Level": 7,
+              "Parameters": [
+                0.818652,
+                0.693684,
+                1.085064,
+                2.052,
+                0.115736,
+                50,
+                0.16,
+                0.08,
+                0.5,
+                0.5,
+                0.898688,
+                1.796995,
+                2.244544
+              ]
+            },
+            {
+              "Id": 873108,
+              "Level": 8,
+              "Parameters": [
+                0.873229,
+                0.73993,
+                1.157402,
+                2.1888,
+                0.125097,
+                50,
+                0.16,
+                0.08,
+                0.5,
+                0.5,
+                0.971376,
+                1.94234,
+                2.426088
+              ]
+            },
+            {
+              "Id": 873109,
+              "Level": 9,
+              "Parameters": [
+                0.927806,
+                0.786175,
+                1.229739,
+                2.3256,
+                0.134458,
+                50,
+                0.16,
+                0.08,
+                0.5,
+                0.5,
+                1.044064,
+                2.087686,
+                2.607632
+              ]
+            },
+            {
+              "Id": 873110,
+              "Level": 10,
+              "Parameters": [
+                0.982382,
+                0.832421,
+                1.302077,
+                2.4624,
+                0.14467,
+                50,
+                0.16,
+                0.08,
+                0.5,
+                0.5,
+                1.12336,
+                2.246244,
+                2.80568
+              ]
+            },
+            {
+              "Id": 873111,
+              "Level": 11,
+              "Parameters": [
+                1.036959,
+                0.878666,
+                1.374414,
+                2.5992,
+                0.154882,
+                50,
+                0.16,
+                0.08,
+                0.5,
+                0.5,
+                1.202656,
+                2.404802,
+                3.003728
+              ]
+            },
+            {
+              "Id": 873112,
+              "Level": 12,
+              "Parameters": [
+                1.091536,
+                0.924912,
+                1.446752,
+                2.736,
+                0.165094,
+                50,
+                0.16,
+                0.08,
+                0.5,
+                0.5,
+                1.281952,
+                2.563361,
+                3.201776
+              ]
+            },
+            {
+              "Id": 873113,
+              "Level": 13,
+              "Parameters": [
+                1.159757,
+                0.982719,
+                1.537174,
+                2.907,
+                0.175306,
+                50,
+                0.16,
+                0.08,
+                0.5,
+                0.5,
+                1.361248,
+                2.721919,
+                3.399824
+              ]
+            },
+            {
+              "Id": 873114,
+              "Level": 14,
+              "Parameters": [
+                1.227978,
+                1.040526,
+                1.627596,
+                3.078,
+                0.185518,
+                50,
+                0.16,
+                0.08,
+                0.5,
+                0.5,
+                1.440544,
+                2.880478,
+                3.597872
+              ]
+            },
+            {
+              "Id": 873115,
+              "Level": 15,
+              "Parameters": [
+                1.296199,
+                1.098333,
+                1.718018,
+                3.249,
+                0.19573,
+                50,
+                0.16,
+                0.08,
+                0.5,
+                0.5,
+                1.51984,
+                3.039036,
+                3.79592
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10871,
+        "Name": "As Water Seeks Equilibrium",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nWith light flourishes, Neuvillette commands the tides to unleash a maximum of 3 attacks, dealing <color=#80C0FFFF>Hydro DMG</color>.\n\n<color=#FFD780FF>Charged Attack Empowerment: Legal Evaluation</color>\nWhile charging up, Neuvillette will gather the power of water, forming it into a Seal of Arbitration. In this state, Neuvillette can move and change facing, and also absorb any Sourcewater Droplets in a certain AoE.\nEvery Droplet he absorbs will increase the formation speed of the Seal, and will heal Neuvillette.\nWhen the charging is stopped, if the Symbol has yet to be formed, then a Charged Attack will be unleashed. If it has been formed, then a Charged Attack: Equitable Judgment will be unleashed.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a fixed amount of Stamina to attack opponents with a rupturing blast of water, dealing <color=#80C0FFFF>AoE Hydro DMG</color>.\n\n<color=#FFD780FF>Charged Attack: Equitable Judgment</color>\nUnleashes surging torrents, dealing continuous <color=#80C0FFFF>AoE Hydro DMG</color> to all opponents in a straight-line area in front of him.\nEquitable Judgment will not consume any Stamina and lasts 3s.\nIf Neuvillette's HP is above 50%, he will continuously lose HP while using this attack.\n\n<color=#FFD780FF>Plunging Attack</color>\nGathering the might of Hydro, Neuvillette plunges towards the ground from mid-air, damaging all opponents in his path. Deals <color=#80C0FFFF>AoE Hydro DMG</color> upon impact with the ground.",
+        "Icon": "Skill_A_Catalyst_MD"
+      },
+      {
+        "GroupId": 8732,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:F2P} Max HP",
+            "Spiritbreath Thorn DMG|{param2:F1P}",
+            "Spiritbreath Thorn Interval|{param5:F1}s",
+            "Sourcewater Droplet Duration|{param3:F1}s",
+            "CD|{param4:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 873201,
+              "Level": 1,
+              "Parameters": [
+                0.12864,
+                0.208,
+                15,
+                12,
+                10
+              ]
+            },
+            {
+              "Id": 873202,
+              "Level": 2,
+              "Parameters": [
+                0.138288,
+                0.2236,
+                15,
+                12,
+                10
+              ]
+            },
+            {
+              "Id": 873203,
+              "Level": 3,
+              "Parameters": [
+                0.147936,
+                0.2392,
+                15,
+                12,
+                10
+              ]
+            },
+            {
+              "Id": 873204,
+              "Level": 4,
+              "Parameters": [
+                0.1608,
+                0.26,
+                15,
+                12,
+                10
+              ]
+            },
+            {
+              "Id": 873205,
+              "Level": 5,
+              "Parameters": [
+                0.170448,
+                0.2756,
+                15,
+                12,
+                10
+              ]
+            },
+            {
+              "Id": 873206,
+              "Level": 6,
+              "Parameters": [
+                0.180096,
+                0.2912,
+                15,
+                12,
+                10
+              ]
+            },
+            {
+              "Id": 873207,
+              "Level": 7,
+              "Parameters": [
+                0.19296,
+                0.312,
+                15,
+                12,
+                10
+              ]
+            },
+            {
+              "Id": 873208,
+              "Level": 8,
+              "Parameters": [
+                0.205824,
+                0.3328,
+                15,
+                12,
+                10
+              ]
+            },
+            {
+              "Id": 873209,
+              "Level": 9,
+              "Parameters": [
+                0.218688,
+                0.3536,
+                15,
+                12,
+                10
+              ]
+            },
+            {
+              "Id": 873210,
+              "Level": 10,
+              "Parameters": [
+                0.231552,
+                0.3744,
+                15,
+                12,
+                10
+              ]
+            },
+            {
+              "Id": 873211,
+              "Level": 11,
+              "Parameters": [
+                0.244416,
+                0.3952,
+                15,
+                12,
+                10
+              ]
+            },
+            {
+              "Id": 873212,
+              "Level": 12,
+              "Parameters": [
+                0.25728,
+                0.416,
+                15,
+                12,
+                10
+              ]
+            },
+            {
+              "Id": 873213,
+              "Level": 13,
+              "Parameters": [
+                0.27336,
+                0.442,
+                15,
+                12,
+                10
+              ]
+            },
+            {
+              "Id": 873214,
+              "Level": 14,
+              "Parameters": [
+                0.28944,
+                0.468,
+                15,
+                12,
+                10
+              ]
+            },
+            {
+              "Id": 873215,
+              "Level": 15,
+              "Parameters": [
+                0.30552,
+                0.494,
+                15,
+                12,
+                10
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10872,
+        "Name": "O Tears, I Shall Repay",
+        "Description": "Summons a Raging Waterfall that will deal <color=#80C0FFFF>AoE Hydro DMG</color> to opponents in front of Neuvillette based on his Max HP. After hitting an opponent, this skill will generate 3 Sourcewater Droplets near that opponent.\n\n<color=#FFD780FF>Arkhe: Pneuma</color>\nAt certain intervals, when the Raging Waterfall descends, a Spiritbreath Thorn will descend that will pierce opponents, dealing Pneuma-aligned <color=#80C0FFFF>Hydro DMG</color>.\n\n<i>\"The law can restrict all manner of crimes, but it cannot extirpate evil itself.</i>",
+        "Icon": "Skill_S_Neuvillette_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 8739,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:F2P} Max HP",
+          "Waterfall DMG|{param2:F2P} Max HP",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 873901,
+            "Level": 1,
+            "Parameters": [
+              0.222578,
+              0.091055,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 873902,
+            "Level": 2,
+            "Parameters": [
+              0.239272,
+              0.097884,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 873903,
+            "Level": 3,
+            "Parameters": [
+              0.255965,
+              0.104713,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 873904,
+            "Level": 4,
+            "Parameters": [
+              0.278223,
+              0.113818,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 873905,
+            "Level": 5,
+            "Parameters": [
+              0.294916,
+              0.120647,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 873906,
+            "Level": 6,
+            "Parameters": [
+              0.31161,
+              0.127477,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 873907,
+            "Level": 7,
+            "Parameters": [
+              0.333868,
+              0.136582,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 873908,
+            "Level": 8,
+            "Parameters": [
+              0.356125,
+              0.145688,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 873909,
+            "Level": 9,
+            "Parameters": [
+              0.378383,
+              0.154793,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 873910,
+            "Level": 10,
+            "Parameters": [
+              0.400641,
+              0.163898,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 873911,
+            "Level": 11,
+            "Parameters": [
+              0.422899,
+              0.173004,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 873912,
+            "Level": 12,
+            "Parameters": [
+              0.445157,
+              0.182109,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 873913,
+            "Level": 13,
+            "Parameters": [
+              0.472979,
+              0.193491,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 873914,
+            "Level": 14,
+            "Parameters": [
+              0.500801,
+              0.204873,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 873915,
+            "Level": 15,
+            "Parameters": [
+              0.528624,
+              0.216255,
+              18,
+              70
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10875,
+      "Name": "O Tides, I Have Returned",
+      "Description": "Unleashes waves that will deal <color=#80C0FFFF>AoE Hydro DMG</color> based on Neuvillette's Max HP. After a short interval, 2 waterfalls will descend and deal <color=#80C0FFFF>Hydro DMG</color> in a somewhat smaller AoE, and will generate 6 Sourcewater Droplets within an area in front.\n\n<i>\"The law is only established after its publication, and above that, the laws of nature have governed all species and eras since ancient times.</i>",
+      "Icon": "Skill_E_Neuvillette_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 8721,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 872101,
+              "Level": 1,
+              "Parameters": [
+                0.1,
+                0.25,
+                0.6,
+                30
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 872101,
+        "Name": "Heir to the Ancient Sea's Authority",
+        "Description": "When a party member triggers a Vaporize, Frozen, Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Hydro Swirl, Hydro Crystallize or a Lunar-Crystallize reaction on opponents, 1 stack of Past Draconic Glories will be granted to Neuvillette for 30s. Max 3 stacks. Past Draconic Glories causes Charged Attack: Equitable Judgment to deal 110%/125%/160% of its original DMG.\nThe stacks of Past Draconic Glories created by each kind of Elemental Reaction exist independently.",
+        "Icon": "UI_Talent_S_Neuvillette_05"
+      },
+      {
+        "GroupId": 8722,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 872201,
+              "Level": 1,
+              "Parameters": [
+                0.3,
+                0.8,
+                0.6
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 872201,
+        "Name": "Discipline of the Supreme Arbitration",
+        "Description": "For each 1% of Neuvillette's current HP greater than 30% of Max HP, he will gain 0.6% <color=#80C0FFFF>Hydro DMG Bonus</color>. A maximum bonus of 30% can be obtained this way.",
+        "Icon": "UI_Talent_S_Neuvillette_06"
+      },
+      {
+        "GroupId": 8723,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 872301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 872301,
+        "Name": "Gather Like the Tide",
+        "Description": "Increases underwater Sprint SPD for your own party members by 15%.\nNot stackable with Passive Talents that provide the exact same effects.",
+        "Icon": "UI_Talent_S_Neuvillette_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 871,
+        "Name": "Venerable Institution",
+        "Description": "When Neuvillette takes the field, he will obtain 1 stack of Past Draconic Glories from the Ascension Talent \"Heir to the Ancient Sea's Authority.\" You must first unlock the Ascension Talent \"Heir to the Ancient Sea's Authority.\"\nAdditionally, his interruption resistance will be increased while using the Charged Attack Empowerment: Legal Evaluation and the Charged Attack: Equitable Judgment.",
+        "Icon": "UI_Talent_S_Neuvillette_01"
+      },
+      {
+        "Id": 872,
+        "Name": "Juridical Exhortation",
+        "Description": "The Ascension Talent \"Heir to the Ancient Sea's Authority\" will be enhanced: Each stack of Past Draconic Glories will increase the CRIT DMG of Charged Attack: Equitable Judgment by 14%. The maximum increase that can be achieved this way is 42%.\nYou must first unlock the Ascension Talent \"Heir to the Ancient Sea's Authority.\"",
+        "Icon": "UI_Talent_S_Neuvillette_02"
+      },
+      {
+        "Id": 873,
+        "Name": "Ancient Postulation",
+        "Description": "Increases the Level of <color=#FFD780FF>Normal Attack: As Water Seeks Equilibrium</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Neuvillette_01",
+        "ExtraLevel": {
+          "Index": 1,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 874,
+        "Name": "Crown of Commiseration",
+        "Description": "When Neuvillette is on the field and is healed, 1 Sourcewater Droplet will be generated. This effect can occur once every 4s.",
+        "Icon": "UI_Talent_S_Neuvillette_03"
+      },
+      {
+        "Id": 875,
+        "Name": "Axiomatic Judgment",
+        "Description": "Increases the Level of <color=#FFD780FF>O Tides, I Have Returned</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Neuvillette_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 876,
+        "Name": "Wrathful Recompense",
+        "Description": "When using Charged Attack: Equitable Judgment, Neuvillette can absorb nearby Sourcewater Droplets in an AoE. Each absorbed Droplet will increase the duration of Charged Attack: Equitable Judgment by 1s.\nAdditionally, when Equitable Judgment hits opponents, it will fire off 2 additional currents every 2s, each of which will deal 10% of Neuvillette's Max HP as <color=#80C0FFFF>Hydro DMG</color>. DMG dealt this way will count as DMG dealt by Equitable Judgment.",
+        "Icon": "UI_Talent_S_Neuvillette_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Ordainer of Inexorable Judgment",
+    "Detail": "The Chief Justice of Fontaine, known as the Iudex, is renowned for his unassailable impartiality.",
+    "Association": 8,
+    "Native": "Court of Fontaine",
+    "BirthMonth": 12,
+    "BirthDay": 18,
+    "VisionBefore": "Hydro",
+    "VisionAfter": "Hydro",
+    "VisionOverrideLocked": "???",
+    "VisionOverrideUnlocked": "Ancient Dragon's Authority",
+    "ConstellationBefore": "???",
+    "ConstellationAfter": "Leviathan Judicator",
+    "CvChinese": "桑毓泽",
+    "CvJapanese": "神谷浩史",
+    "CvEnglish": "Ray Chase",
+    "CvKorean": "Kwak Yoon-sang",
+    "CookBonus": {
+      "OriginItemId": 108592,
+      "ItemId": 108603,
+      "InputList": [
+        100064,
+        100062,
+        100013,
+        101231
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Greetings. I am the Chief Justice, or \"Iudex\" of Fontaine, but you may simply address me by using my surname, \"Neuvillette.\" Not because I wish to keep my distance from you... No, I am merely conscious that being overly familiar may bring the impartiality of the judiciary into question in some people's eyes.\nIf you have any requests or concerns, then — to the extent permissible by law, at least — we can sit down and discuss them together as we partake of some imported water from Qiaoying Village."
+      },
+      {
+        "Title": "Chat: Trials",
+        "Context": "I see the value in my own work, but I also see the meaning in all the endeavors of the people of Fontaine. I believe I will continue to take pride in fulfilling my duties."
+      },
+      {
+        "Title": "Chat: Water Tasting",
+        "Context": "Water comes in many flavors to the discerning palate. Mondstadt's water is crisp and pure, while water from Liyue has an enduring aftertaste. In Inazuma, the water possesses a depth of flavor unlike any other. Sumeru's water, meanwhile, has a rich and complex flavor profile, but it must be savored patiently to fully appreciate it."
+      },
+      {
+        "Title": "Chat: Melusines",
+        "Context": "Melusines are beautiful creatures. They are the pride of Fontaine. Be sure to befriend them, and cause them no harm."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Ah, my apologies. This heavy rain must be quite an inconvenience for you."
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "It's over..."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "What's that saying again... \"A bolt from the blue\"? Yes, yes, I believe that captures how it feels to me."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Snow is in fact one of water's natural self-cleansing mechanisms. But human activity tends to reduce snow's purity, so do not consume it."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "I find that the, um... beauty of bright sunlight is best appreciated from the indoors through a window."
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "I cannot help but feel that you bringing me here is some sort of an assassination attempt..."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Good morning. I hope you have a wonderful day."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Ah, it's past noon. You must be looking forward to your afternoon tea or coffee break? I certainly am."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Good evening. I hope you have not encountered any unpleasantness today."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Good night. I am quite fond of the image of a perfectly still body of water, and it is on this note that I would like to wish you a peaceful, undisturbed sleep. May no waves of emotional distress ripple through your dreams tonight."
+      },
+      {
+        "Title": "About Neuvillette: Trials",
+        "Context": "I am no rabid fan of trials. I preside over them only out of duty, for this is the task that has been entrusted to me."
+      },
+      {
+        "Title": "About Neuvillette: The Weeping Hydro Dragon",
+        "Context": "So you have heard of that local legend as well? *sigh* Who told you about that? Or more pertinently, who was responsible for spreading it in the first place... Well, never mind. I don't think that the Hydro Dragon would \"weep,\" per se. I think he just finds himself a little stirred when he gets a taste of the tears that have been shed on this land, on account of all the emotions they contain."
+      },
+      {
+        "Title": "About Neuvillette: The Meaning of Trials",
+        "Context": "This is a topic that has been discussed ad nauseum... I don't mean to condescend to humanity, but it is quite clear to me that society's concepts of justice, fairness, equality, and rule of law are not equivalent, and never can be. Now of course, water always seeks its own level, and it was in this spirit that the previous Hydro Archon, Egeria, hoped to achieve universal equality by connecting all things with love. Her successor chose instead to seek equality by means of the law. Ultimately, due to various external factors, this unfortunately manifested itself in the distorted form of trials for the sake of trials. Nevertheless, there are reasons for everything. I suppose I should refrain from criticizing her."
+      },
+      {
+        "Title": "About Us: Witness",
+        "Context": "Since you hail from beyond the stars, I invite you to be my witness as I judge this upended world. \"This realm dismantled was of the Formidable Father himself, but what now reigns here is a cluster of filthy feathers. Though we live in a world of disarray, I shall undertake to restore all that has been broken.\""
+      },
+      {
+        "Title": "About Us: The Human World",
+        "Context": "The time that I have spent living among the citizens of Fontaine, and traveling with you, has transformed my views. Even though before this I had pardoned the sins of humanity long ago, I can promise you that my future judgments will not cause any harm to the common folk. That being said, my grievances with the usurpers have yet to be settled... They owe a debt of blood that shall not be forgotten."
+      },
+      {
+        "Title": "About the Vision: I",
+        "Context": "I was once advised to wear a counterfeit Vision, so that I might more easily intervene during moments of crisis. To be quite frank, I was not enamored by this suggestion, nor the implication that one must only exercise the power that is rightfully theirs under false pretenses. With that said, however, I have developed a newfound appreciation for the value of human yearning and determination having spent considerable time around Vision-bearing humans."
+      },
+      {
+        "Title": "About the Vision: II",
+        "Context": "Excuse me? You're saying even some members of The Seven don a counterfeit Vision before mingling with their people? Ha... My apologies — I was just caught off guard by the absurdity of the situation."
+      },
+      {
+        "Title": "Something to Share: Laws",
+        "Context": "Fontaine does have some rather intriguing laws on its books. For instance, \"it is forbidden to release any flying objects during the first three days of each month,\" \"during the dry season, all bivalves that wash ashore belong to the Hydro Archon, while other mollusks belong to the people,\" \"no domestic pets shall be named after Furina,\" \"tomato ketchup is to be consumed in restaurants only as a condiment, never on its own,\" and, finally, \"Melusines are to be addressed using she/her pronouns, never the impersonal it/its\"... That last one was my personal contribution."
+      },
+      {
+        "Title": "Something to Share: Rainy Days",
+        "Context": "Some days, my mind wanders, and I fantasize about walking into the rain... *sigh* Ah, but don't worry, my flights of fancy don't distract me from my work."
+      },
+      {
+        "Title": "Interesting Things: Vishaps",
+        "Context": "The Vishaps' ancestry can be traced directly back to the Fontemer Sea, which is why they are so adept at evolution. I am reminded of an old custom that the dragons once observed: We would take a sip of our perished young brethren's blood. Whenever the tides are disrupted by the motion of the moon and stars, the water within the bodies of us Hydro organisms surges up towards our heads, reminding us that our deceased kin will soon be revived."
+      },
+      {
+        "Title": "Interesting Things: Humans",
+        "Context": "From my observations, humans have a tendency to view themselves as being in opposition with nature. And whenever this point is raised, someone is always quick to respond by declaring that humans are in fact a part of nature, like any other organism. To someone like me, however, who knows an inkling of the truth, what would be most beneficial is if human civilization and the natural world of this planet could seek ways to co-exist with one another."
+      },
+      {
+        "Title": "About the Geo Archon",
+        "Context": "Nothing will stop me from rendering judgment on each of The Seven. As the Archon who won the Authority of Geo, Deus Auri must be called to trial. If one does not wish to see us on opposite sides of a conflict, they need not worry, for I intend to stay in Fontaine for the foreseeable future, which could well mean another four hundred years. As another point of consolation, even when the trial eventually takes place, it is still not a given that the judgment will lead to a physical confrontation."
+      },
+      {
+        "Title": "About the Anemo Archon",
+        "Context": "I shall fulfill my vow to judge all of The Seven in turn, even if the sky should fall and the ground give way. As the recipient of the Authority of Anemo, the God of Breeze and Hope must also stand trial. ...Hmm? He spends most of his time being a harmless drunkard? Well, even so, I must meet him for myself and proceed from there."
+      },
+      {
+        "Title": "About the Electro Archon",
+        "Context": "As a survivor of the dragon race who has regained my full dragonhood, I must fulfill my oaths and obligations even if it means returning all the water in the oceans back to the heavens. In taking the Authority of Electro, the Narukami placed herself on the list of the usurpers, she will... Oh, you say she has isolated herself in the Plane of Euthymia, and now rarely appears in public? Then I shall pay her a visit in another few centuries."
+      },
+      {
+        "Title": "About the Dendro Archon",
+        "Context": "Though the day will come when I put her on trial, I must commend the God of Verdure on her sense of responsibility. Few things are without flaws in this world, but the devotion and benevolence she displays are a testament to her commitment to continued progress. I felt enormous regret when I learned of the mistreatment she has endured over the past five hundred years."
+      },
+      {
+        "Title": "About Wriothesley",
+        "Context": "Wriothesley is a trustworthy man. I fought hard for the title and reputation he now has. I expect you to think that I've simply been duped by his flattery and appearance of loyalty... But to that, I would quote the Inazuman proverb: \"The words unspoken are the flower.\" Which means, some things are best left unsaid."
+      },
+      {
+        "Title": "About Clorinde",
+        "Context": "Clorinde's peerless skills have made her the most powerful Champion Duelist in our nation. As a successor to the Marechaussee Hunters of old, she plays a vital role in ensuring the fairness and impartiality of the courtroom. Also, she's actually not as stoic as she might appear."
+      },
+      {
+        "Title": "About Lyney and Lynette",
+        "Context": "Their performances are just fascinating, don't you think? They draw you into a magical world where, on one hand, everything that takes place is part of an elaborate deception — but on the other, all manner of miracles are possible if you are only willing to believe."
+      },
+      {
+        "Title": "About Sigewinne",
+        "Context": "I don't know how Sigewinne is faring these days. But if I hear so much as the whiff of a rumor that she's being bullied, I shall summon Wriothesley here and demand an explanation. She's so kind and vulnerable... She brought me some Kamera film the last time she visited, and asked to listen to more of my commentary on the water of Natlan... How long is it until her next vacation?"
+      },
+      {
+        "Title": "About Furina",
+        "Context": "Now, the curtain has finally fallen on her \"performance\"... The character she portrayed was an imaginary one, yet in playing that role she fulfilled her duties... Though she is meek and full of doubt by nature, she was able to use madness to stiffen her resolve and see her duty through to its conclusion. The work that she has done over the centuries is truly immense. If she were to ever make a return to the stage, I should personally attend the performance and give her my heartfelt applause... Yes, I must do so when the opportunity arises."
+      },
+      {
+        "Title": "About Navia",
+        "Context": "I regret to say that after my various interactions with her — such as when I inadvertently angered her, and when I accepted her apology — and even now, in spite of the guilt I continue to feel over what happened to her father, I feel... very distant from her, as if I'm observing the starry sky from the bottom of a deep lake. It is by no means intentional, and I also know it is not something that I can easily make up for. Unlike water, emotion does not settle quickly once agitated, nor is it naturally inclined towards equilibrium."
+      },
+      {
+        "Title": "About the Pyro Archon",
+        "Context": "The Pyro Archon triumphed over the Abyss by leveraging rules and legacy — a truly commendable feat. Yet, holding an Authority seized from the dragons remains an unpardonable sin. I recognize, however, that Natlan has experienced great suffering, so I am in no hurry to act. Hm? You claim that historical records describe the battle against Xbalanque as a formal duel, and the victim's family was treated fairly? Complicated indeed, but a worthwhile consideration nonetheless..."
+      },
+      {
+        "Title": "More About Neuvillette: I",
+        "Context": "I usually do my best to avoid forming personal relationships, or even collaborating with others outside of established procedures. But you have shown yourself to be trustworthy, and you have no problematic entanglements with Fontaine's local factions. Therefore, I would be pleased to journey with you."
+      },
+      {
+        "Title": "More About Neuvillette: II",
+        "Context": "This is something that I can only say in private — I could never publicly share my views on this matter: It positively baffles me that Fonta has managed to become such a popular drink. Though, I suppose its appeal to humans is not beyond comprehension. One can both rehydrate and replenish blood sugar in one gulp, and at an exceptionally cheap price."
+      },
+      {
+        "Title": "More About Neuvillette: III",
+        "Context": "I went to see an opera recently. It was about a lady whose personal charm and manipulative schemes allowed her to continue to dominate the affairs of the grand mansion where she lived even after her death, like a ghost that refused to be exorcised. The acting was impeccable, and the story exceptional. It also reminded me of the current state of affairs in the real world."
+      },
+      {
+        "Title": "More About Neuvillette: IV",
+        "Context": "For a number of reasons, I rarely leave Fontaine. As a result, though I enjoy tasting spring water from all over the world, I always have it delivered to me here, rather than collecting it myself. And yes, subtle as the flavor differences between samples of different regions may be, I am perfectly capable of distinguishing between them. Do you still doubt me? I am the Iudex. I do not lie."
+      },
+      {
+        "Title": "More About Neuvillette: V",
+        "Context": "I have to say, my daily life is not without its inconveniences. For instance, I often find myself stepping on my robes as I sit down, or squashing my coiffure against the chair. And if I lean my head too far back, sometimes my hair even gets caught in the ornamentation. Nevertheless, I must wear these garments to maintain the dignity of a Chief Justice, and endure whatever inconveniences this entails. Incidentally, the world at large appears to operate on this general principle, too. Everyone is faced with an identity that they must accept, endure, understand, and eventually learn to co-exist with. This has been my experience all along."
+      },
+      {
+        "Title": "Neuvillette's Hobbies",
+        "Context": "Water tasting is a rather sophisticated discipline. Pyro-heated water has the standard \"au naturel\" flavor found ubiquitously in the natural world, while water boiled using charcoal has distinctly rustic notes. Similarly, while Cryo-chilled water is cold but otherwise unremarkable, the frozen rivers of Snezhnaya, when melted, produce a water with an entirely different flavor profile altogether."
+      },
+      {
+        "Title": "Neuvillette's Troubles",
+        "Context": "People seem to respond to the sight of a man in the rain without an umbrella as if it were some sort of strange spectacle."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Animals can survive for weeks without food, but merely a few days without water. There is no dish that could ever compare to pure, unadulterated water. With that in mind, food items that contain plenty of liquid are the next best thing."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "How can people bring themselves to consume deep-fried foods? Or grilled food with no sauce? The worst culprits in my view are those Charcoal-Baked Ajilenakh Cakes. Surely, even eating a dehumidifying agent would be kinder on the stomach?"
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Delicious. An abundance of juices, and the ingredients have been cooked to perfection."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "A fine effort indeed. My only advice would be to increase the liquid content and reduce the amount of fat."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Too dry. A dish devoid of moisture has no way to convey the intentions of the chef."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Ah, so it's your birthday. Happy birthday. I do not know if rain is in the forecast today, but let me see what I can do."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "I'm a little more familiar with you now. I can match your movements."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Apparently, I'll have to show a little more of my true capabilities. I did not realize that you had such a penchant for getting into dangerous situations."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "So this is what you're truly capable of? Then I shall have to get serious if I wish to catch up with you."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "Now that I have reclaimed one of the Seven Authorities from the hands of the usurpers, I have regained my true form. I am now a fully fledged dragon, powerful enough to judge the rest of the gods. My final destiny is to judge the Usurper-King in the heavens above. But until that time comes, I will lend my power to you."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Silence!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Bow your head."
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Settle down."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "The tides beckon."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Be sanctified."
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Let the mighty be humbled."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Abandoned property belongs to whoever finds it first. So it's legally yours now."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Is it what you wished to find? Hopefully, the excitement of opening a treasure chest has at least made it a worthwhile experience."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Let the record show that I verbally consent to relinquishing these items into your possession."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Be not perturbed. I am unscathed."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "The risk is growing, but it poses no threat to me."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Hmph... There's a tear in my robe."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Allow me to intervene."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Take a moment to rest."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "When the tide comes in, I shall return..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "I see the temperate waters of eons past..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "A silence fills the air..."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Justice is blindsided..."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "An oversight on my part."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Thank you for permitting— No, inviting me to join you."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "The pleasure is all mine."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Perhaps we could take a walk by a riverbank or somewhere similarly fluvial."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Neuvillette is a solitary person.\nFontainians who have tried to get close to him have, without exception, been politely rejected. To this day, no one even knows his first name, since he has always asked that he be referred to by his last name.\nHe believes that close personal ties will lead to suspicions about the justness of one's judgments, while he must remain a symbol of absolute justice.\nOf course, there will always be people who just won't give up. They will say, \"Come now, Monsieur Neuvillette. Not everyone will stand trial, nor will you always have to remain in the judge's seat.\"\nBut is that really the case? If there is an answer in his heart, Neuvillette will not reveal it.\nGiven enough time, every river will overflow and flood. Every last Fontainian is guilty, with judgment and doom certain to one day fall upon them — this is neither metaphor nor rhetoric.\nYet, Neuvillette can share this fact with no one.\nTruly, he is a lonesome person."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Neuvillette is not known for his personal desires.\nCurious members of the public and journalists are wont to seek high and low for him all across Fontaine when he is not sitting in the Chief Justice's seat of judgment. He may sit at a seat for specially invited guests during performances, appear by the shore when the skies are just on the cusp of weeping, or be standing within the shadows cast by the afternoon sun.\nThere was once a time when all believed that he was some kind of demon who existed solely to preside over trials and judge, forcing him to clarify that... Well, the gist of it was \"to bear witness and judge is my great honor, but I am not a trial aficionado. Iudex is simply one of the hats I wear, and my time as a judge is but one phase of my life.\"\nThis successful clarification led him out of the frying pan, and into the fire, as they say, with still more troublesome rumors emerging — \"Shocking News! Neuvillette Claims 'Iudex' to be 'Springboard' Post! Unspeakable Plans Next; Where Will His Ambition End?\"\nAs for the new rumors, Neuvillette paid them no heed. Perhaps they were, in fact, right on the Mora, and he simply did not correct them out of principle? No one knows.\nNeuvillette is also not much of a drinker, nor does he like Fonta — indeed, he has never even been known to have given any sincere praise to the local chefs' most renowned dishes. This has led people to suspect that his lack of consumptive desire might come down to him simply not having a sense of taste.\nHis response was to organize a water-tasting salon party, at which all were gobsmacked by the wide variety of flavors water from different regions could possess and floored by the Iudex's most refined tastes. Of course, the amount of authenticity present in such interactions cannot be known.\nBut whatever the case, Neuvillette really is devoid of selfish want."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Neuvillette is a just person.\nIf not for that quality, he probably would not have been qualified to serve as the Iudex in the first place.\nTo the children, the job of the man in the judge's seat is nothing more than wearing a wig, maintaining order in the court, and being the Oratrice's messenger pigeon. In truth, however, there are many administrative affairs that he must handle in private to keep the justice system up and running.\nDue to certain historical and traditional legacies in Fontaine, the Iudex also has the right to prosecute, as well as the power to enforce the law in person. This was originally intended to make it easier to maintain law and order during chaotic times, but as the system became further refined, this rule, which represented the spirit of the pioneer far more than that of the law, became maintained only symbolically. When the Iudex investigates a case or serves as the prosecutor, they must recuse themselves as judge, and have someone else take the seat. And in the few instances where he has personally investigated cases, Neuvillette has unerringly followed this rule.\nOne thing to note is that he has been the only Iudex in the land for a very long time, so much so that people often speculate that he must have been given an unimaginably long life due to divine favor. As such, it is well that he is nothing if not fair-minded, or such an extensive term would surely lead to problems someday.\nAs to what he is precisely — a familiar of the Hydro Archon, or a mysterious Hydro elemental creature, perhaps — there are a great many opinions, though Neuvillette has never once commented on such talk.\nIndeed, he is a person most impartial."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Due to a variety of reasons, Fontaine's legal codices retain all manner of odd articles from days past. Neuvillette himself contributed this clause: \"A Melusine shall be addressed as 'she,' rather than 'it,' for they are people too.\"\nThis might look strange on its face, but the more one considers it, the more it makes sense. After all, Melusines have been found all over Fontaine since near-modern times, and fighting for equal rights for them beginning with terms of address sent a powerful signal.\nIndeed, Fontainians have noticed that Neuvillette displays different amounts of warmth toward Melusines and humans. Most regard this as the understated goodness in his heart having found an outlet, becoming the love of a father.\nOddly enough, this one only gets stranger the more one knows about Neuvillette.\nFor he is the Hydro Dragon, and in this capacity, he regards Melusines as dependents and successors, and also as the finest example of a new sort of Hydro Vishap species. Yet he is also the destroyer of the present order, the one who shall judge all gods, and the foe of humanity. So why, then, did he secure human rights for the Melusines?\nYou alone could ask him this question, and this was his reply: \"It wasn't up to me. Melusines simply prefer being around humans, that's all.\""
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Neuvillette has always favored rainy days over sunny ones, as the moisture-laden air helps him relax. However, it has been a long time since he last delighted in standing under the rain.\nIt seems that from the time he chose to walk alongside Fontaine, he began to play the role of a strictly law-abiding normal person. Of course, normal people would not walk through the rain without an umbrella, allowing the rain to drench their hair.\nIt is worth mentioning that the role of Chief Justice is as much his true self as the Hydro Dragon is his essence. Only the role of \"normal human\" is one he must play.\nIt was in their solitude and guilt that humans invented a god to judge them, and in their greed and guilt that they created a god to save them. And with that god no longer present, it falls to Neuvillette to fulfill such expectations.\nHe has pardoned humanity, and has regained his original form.\nNow, he can finally walk in the rain and enjoy it.\nIndeed, he did do exactly this, and standing in the rain, he gazed into the distance, reminiscing about that day, so long ago, when he had received that letter.\nYes, a letter had found its way to him by some unknown means. The name of the recipient had been left blank, with the text only addressing him bluntly as \"you.\"\nA special you. A unique you. Neuvillette was not opposed to such a manner, but neither did he approve of it. He felt, vaguely, that the powers-that-be of the present world had no real right to judge him so.\nHe knew that this letter had been written by the Archon Focalors, who was inviting him to come and see Fontaine, claiming \"I shall leave you a seat with the best view in the greatest theater.\"\nLater, he would indeed come to receive that very seat — in the middle of the front row of the Opera Epiclese on the island known as Erinnyes. He would watch all manner of performances there, and the view was indeed excellent, just as Focalors had claimed.\nWhat happened later was not made public knowledge. In all likelihood, the people had no way of understanding what it meant that the throne was shattered, or how the power of water was fully restored to its original owner. As to their being pardoned, and why they had to be forgiven in the first place, that was an even broader and more complex tale.\nAnd thus did the curtain fall — Fontaine witnessed a happy ending to the greatest drama in history.\nOr was it? A happy ending, that is. It was then that Neuvillette understood that the \"seat\" mentioned in the letter was not merely a chair in an opera house.\nFocalors — or Furina, he should say — had given up her seat in the audience, come onstage alone, and become the heroine of the drama.\nThere were only ever a fixed number of seats, and for one to sit down, was for another to depart. That letter had been an invitation, issued several centuries in advance.\nWell, Hydro Dragon? How do you feel about becoming a member of the human audience?\nAre you enjoying this human drama?"
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "One as great as he should have no need for a constellation to shine over him. After all, \"fate\" is merely the manner in which the present ruler of this world plays with living beings.\nNow that he has obtained one part of seven of the authority over the mortal realm, and reforged the throne and title of a \"Fully Fledged Dragon,\" he is one strong enough to equal and rival \"the human realm,\" and logic would dictate that he need not subscribe to this system known as \"fate.\"\nHe can see, in the skies of destiny, how many stars contend with one another, creating a complicated, fragile world. He did not initially care much about such, for the puppet strings glossed as \"divine rules\" would one day be burned away by the fires of judgment. But he too was taken in by certain pleasing rhetoric.\n\"In that case, why don't you just watch over the Fontainians? They were born from the Primordial Sea, after all. That makes them part of this planet's native life, too, and a form of life that requires your care.\"\nHe would never admit that he himself had become quite fascinated with the joys and sorrows of humanity. Was it not so, he would argue, that humans find their gaze stolen by the ripples from falling raindrops in puddles? And could it not be, he would explain, that King Nibelung had been wrong, and that the black void could only be opposed if all life were to band together as one?\nThus did he, in the end, come into his own \"fate.\" The skies had left a special, ennobled place for him, one reserved for the overseers and those who could defy the world itself — that of his own reflection.\n—Of course, he was born in the form of a human. But why, then, is his constellation the image of the great leviathan? Well, this leads us to a more mundane explanation for the situation, one quite separate from grave matters of the world's fate:\nAs the one named \"Neuvillette,\" he would often be roped by Melusines (especially Sigewinne) into a bit of astrology via The Steambird's constellation columns or astrology guides from Sumeru. Would it really do, at that point, to tell them that he \"didn't have a constellation\" or that his own constellation was just \"Neuvillette\"?"
+      },
+      {
+        "Title": "A Fontainian Nursery Rhyme",
+        "Context": "\"Hydro Dragon, Hydro Dragon, don't cry.\"\nNo one knows who composed this children's song, or when, but it has organically spread throughout Fontaine all the same. Neuvillette has been somewhat perplexed by this. No matter how much time he has spent with Fontainians or how much they've been through together, he still cannot quite put a finger on how people view the real him — or that is to say, the Hydro Dragon.\nIn addition to commanding the power of Hydro, the Hydro Dragon also had mastery over the sea that was the source of life. Before any outside life forms were ever created, all life on this planet traced its origins to the Primordial Sea. Indeed, those placid waters were worthy of the title of \"birthing waters\" or \"amniotic fluid\" given by those who came after. And the Hydro Dragon could, in turn, be regarded as this planet's original \"God of Life.\"\nNeuvillette knows all this, of course, just like he knows that all rivers meet again in the great ocean. These birthing waters might not be of any special importance to humans, but for Neuvillette, he can differentiate every drop, every minute memory. He still remembers the foreign usurper appointing their own \"God of Life\" to order the living. He still remembers how the usurper had made \"her\" to suppress the original vital force of this planet. And of course, he also knows how \"she\" came to commit the original sin...\nHaving considered all this, Neuvillette decided, then, that whoever had penned that rhyme, as well as the Fontainians who came to believe in it, must not have known the Hydro Dragon all that well, considering that they thought the Hydro Dragon could cry. What did they take said Dragon for, some sort of bleeding heart who grieved for humans and the heavens alike?"
+      },
+      {
+        "Title": "Vision",
+        "Context": "Neuvillette does not need a Vision to manipulate the elements. However, there were some things he learned only after regaining his complete form:\nSeverely wounded in the great war of vengeance, the usurper had their functions ruined, and could no longer use their absolute authority to suppress the original order of this world. To continue to subdue and control the resentments and loathing of the world, the usurper and one who came after created the Gnoses together. So it came to be that an order was made to be upheld, and thus did humans come to only possess these seven remembrances, and all fragments of the primordial were driven to devour each other.\nFrom that day on, whenever a person's wishes reached the heavens, the seven overseers of the material realm were duty-bound to grant them a gift. Though they might know nothing of who or what wish had stepped into the threshold of the sacred, the Seven Archons still had to impart a shattered shard of their mastery to that person. And when one so gifted completed their duty... the gift the gods would receive in return would be more abundant still.\nNeuvillette obeys no edict from the heavens, but he does acknowledge human will. So he too set aside parts of himself, as like unto the dragon-treasure hoards of old, awaiting valiant humans to come and claim them."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 208701,
+      "Name": "Melusent Gift",
+      "Description": "A surprise gift for Neuvillette. The delight comes not just from the gift itself, but from every little hand that helped make it. As rivers merge into the boundless sea, so too shall dewdrops congregate to create a shimmering, iridescent miracle.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_NeuvilletteCostumeWinter",
+      "SideIcon": "UI_AvatarIcon_Side_NeuvilletteCostumeWinter"
+    },
+    {
+      "Id": 208700,
+      "Name": "Clear Adjudication",
+      "Description": "Neuvillette's outfit. The solemn, elegant garb of the Iudex. The complexity in its design does, in fact, cause some inconveniences in movement, but to its wearer, that it matches his standing is a more important matter.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104124,
+    113053,
+    101237,
+    112082,
+    104340,
+    113048
+  ],
+  "NameCard": {
+    "Name": "Neuvillette: Surge",
+    "Description": "Namecard style.\nThe water's surface may seem placid as a pristine gem, but it may yet be lying in wait for an opportune moment to gush forth.",
+    "Icon": "UI_NameCardIcon_Neuvillette",
+    "PicturePrefix": "UI_NameCardPic_Neuvillette"
+  }
+}

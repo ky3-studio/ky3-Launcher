@@ -1,0 +1,1221 @@
+{
+  "Id": 10000042,
+  "PromoteId": 42,
+  "Sort": 5,
+  "Body": 2,
+  "Icon": "UI_AvatarIcon_Keqing",
+  "SideIcon": "UI_AvatarIcon_Side_Keqing",
+  "Name": "Keqing",
+  "Description": "The Yuheng of the Liyue Qixing. Keqing has much to say about Rex Lapis's unilateral approach to policymaking in Liyue — but in truth, gods admire skeptics such as her quite a lot.",
+  "BeginTime": "2020-09-15T04:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 1,
+  "BaseValue": {
+    "HpBase": 1020.0524,
+    "AttackBase": 25.137,
+    "DefenseBase": 62.2232
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 4231,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:P}",
+            "2-Hit DMG|{param2:P}",
+            "3-Hit DMG|{param3:P}",
+            "4-Hit DMG|{param4:F1P}+{param5:F1P}",
+            "5-Hit DMG|{param6:P}",
+            "Charged Attack DMG|{param7:P}+{param8:P}",
+            "Charged Attack Stamina Cost|{param9:F1}",
+            "Plunge DMG|{param10:F1P}",
+            "Low/High Plunge DMG|{param11:P}/{param12:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 423101,
+              "Level": 1,
+              "Parameters": [
+                0.41022,
+                0.41022,
+                0.54438,
+                0.31476,
+                0.344,
+                0.66994,
+                0.76798,
+                0.86,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 423102,
+              "Level": 2,
+              "Parameters": [
+                0.44361,
+                0.44361,
+                0.58869,
+                0.34038,
+                0.372,
+                0.72447,
+                0.83049,
+                0.93,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 423103,
+              "Level": 3,
+              "Parameters": [
+                0.477,
+                0.477,
+                0.633,
+                0.366,
+                0.4,
+                0.779,
+                0.893,
+                1,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 423104,
+              "Level": 4,
+              "Parameters": [
+                0.5247,
+                0.5247,
+                0.6963,
+                0.4026,
+                0.44,
+                0.8569,
+                0.9823,
+                1.1,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 423105,
+              "Level": 5,
+              "Parameters": [
+                0.55809,
+                0.55809,
+                0.74061,
+                0.42822,
+                0.468,
+                0.91143,
+                1.04481,
+                1.17,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 423106,
+              "Level": 6,
+              "Parameters": [
+                0.59625,
+                0.59625,
+                0.79125,
+                0.4575,
+                0.5,
+                0.97375,
+                1.11625,
+                1.25,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 423107,
+              "Level": 7,
+              "Parameters": [
+                0.64872,
+                0.64872,
+                0.86088,
+                0.49776,
+                0.544,
+                1.05944,
+                1.21448,
+                1.36,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 423108,
+              "Level": 8,
+              "Parameters": [
+                0.70119,
+                0.70119,
+                0.93051,
+                0.53802,
+                0.588,
+                1.14513,
+                1.31271,
+                1.47,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 423109,
+              "Level": 9,
+              "Parameters": [
+                0.75366,
+                0.75366,
+                1.00014,
+                0.57828,
+                0.632,
+                1.23082,
+                1.41094,
+                1.58,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 423110,
+              "Level": 10,
+              "Parameters": [
+                0.8109,
+                0.8109,
+                1.0761,
+                0.6222,
+                0.68,
+                1.3243,
+                1.5181,
+                1.7,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 423111,
+              "Level": 11,
+              "Parameters": [
+                0.86814,
+                0.86814,
+                1.15206,
+                0.66612,
+                0.728,
+                1.41778,
+                1.62526,
+                1.82,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 423112,
+              "Level": 12,
+              "Parameters": [
+                0.92538,
+                0.92538,
+                1.22802,
+                0.71004,
+                0.776,
+                1.51126,
+                1.73242,
+                1.94,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 423113,
+              "Level": 13,
+              "Parameters": [
+                0.98262,
+                0.98262,
+                1.30398,
+                0.75396,
+                0.824,
+                1.60474,
+                1.83958,
+                2.06,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 423114,
+              "Level": 14,
+              "Parameters": [
+                1.03986,
+                1.03986,
+                1.37994,
+                0.79788,
+                0.872,
+                1.69822,
+                1.94674,
+                2.18,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 423115,
+              "Level": 15,
+              "Parameters": [
+                1.0971,
+                1.0971,
+                1.4559,
+                0.8418,
+                0.92,
+                1.7917,
+                2.0539,
+                2.3,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10421,
+        "Name": "Yunlai Swordsmanship",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_01"
+      },
+      {
+        "GroupId": 4232,
+        "Proud": {
+          "Descriptions": [
+            "Lightning Stiletto DMG |{param1:P}",
+            "Slashing DMG|{param2:P}",
+            "Thunderclap Slash DMG|{param3:P}×2",
+            "CD|{param4:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 423201,
+              "Level": 1,
+              "Parameters": [
+                0.504,
+                1.68,
+                0.84,
+                7.5
+              ]
+            },
+            {
+              "Id": 423202,
+              "Level": 2,
+              "Parameters": [
+                0.5418,
+                1.806,
+                0.903,
+                7.5
+              ]
+            },
+            {
+              "Id": 423203,
+              "Level": 3,
+              "Parameters": [
+                0.5796,
+                1.932,
+                0.966,
+                7.5
+              ]
+            },
+            {
+              "Id": 423204,
+              "Level": 4,
+              "Parameters": [
+                0.63,
+                2.1,
+                1.05,
+                7.5
+              ]
+            },
+            {
+              "Id": 423205,
+              "Level": 5,
+              "Parameters": [
+                0.6678,
+                2.226,
+                1.113,
+                7.5
+              ]
+            },
+            {
+              "Id": 423206,
+              "Level": 6,
+              "Parameters": [
+                0.7056,
+                2.352,
+                1.176,
+                7.5
+              ]
+            },
+            {
+              "Id": 423207,
+              "Level": 7,
+              "Parameters": [
+                0.756,
+                2.52,
+                1.26,
+                7.5
+              ]
+            },
+            {
+              "Id": 423208,
+              "Level": 8,
+              "Parameters": [
+                0.8064,
+                2.688,
+                1.344,
+                7.5
+              ]
+            },
+            {
+              "Id": 423209,
+              "Level": 9,
+              "Parameters": [
+                0.8568,
+                2.856,
+                1.428,
+                7.5
+              ]
+            },
+            {
+              "Id": 423210,
+              "Level": 10,
+              "Parameters": [
+                0.9072,
+                3.024,
+                1.512,
+                7.5
+              ]
+            },
+            {
+              "Id": 423211,
+              "Level": 11,
+              "Parameters": [
+                0.9576,
+                3.192,
+                1.596,
+                7.5
+              ]
+            },
+            {
+              "Id": 423212,
+              "Level": 12,
+              "Parameters": [
+                1.008,
+                3.36,
+                1.68,
+                7.5
+              ]
+            },
+            {
+              "Id": 423213,
+              "Level": 13,
+              "Parameters": [
+                1.071,
+                3.57,
+                1.785,
+                7.5
+              ]
+            },
+            {
+              "Id": 423214,
+              "Level": 14,
+              "Parameters": [
+                1.134,
+                3.78,
+                1.89,
+                7.5
+              ]
+            },
+            {
+              "Id": 423215,
+              "Level": 15,
+              "Parameters": [
+                1.197,
+                3.99,
+                1.995,
+                7.5
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10422,
+        "Name": "Stellar Restoration",
+        "Description": "Hurls a Lightning Stiletto that annihilates her opponents like the swift thunder.\nWhen the Stiletto hits its target, it deals <color=#FFACFFFF>Electro DMG</color> to opponents in a small AoE, and places a Stiletto Mark on the spot hit.\n\n<color=#FFD780FF>Hold</color>\nHold to adjust the direction in which the Stiletto shall be thrown.\nStilettos thrown by the Hold attack mode can be suspended in mid-air, allowing Keqing to jump to them when using Stellar Restoration a second time.\n\n<color=#FFD780FF>Lightning Stiletto</color>\n If Keqing uses Stellar Restoration again or uses a Charged Attack while its duration lasts, it will clear the Stiletto Mark and produce different effects:\n·If she uses Stellar Restoration again, she will blink to the location of the Mark and unleash one slashing attack that deals <color=#FFACFFFF>AoE Electro DMG</color>. When blinking to a Stiletto that was thrown from a Holding attack, Keqing can leap across obstructing terrain.\n·If Keqing uses a Charged Attack, she will ignite a series of thundering cuts at the Mark's location, dealing <color=#FFACFFFF>AoE Electro DMG</color>.\n\n<i>\"Humans are like moths, endlessly chasing the flame we call gods and adepti. But this light that I have here is my own.\"</i>",
+        "Icon": "Skill_S_Keqing_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 4239,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:P}",
+          "Consecutive Slash DMG|{param2:F1P}×8",
+          "Last Attack DMG|{param3:P}",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 423901,
+            "Level": 1,
+            "Parameters": [
+              0.88,
+              0.24,
+              1.888,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 423902,
+            "Level": 2,
+            "Parameters": [
+              0.946,
+              0.258,
+              2.0296,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 423903,
+            "Level": 3,
+            "Parameters": [
+              1.012,
+              0.276,
+              2.1712,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 423904,
+            "Level": 4,
+            "Parameters": [
+              1.1,
+              0.3,
+              2.36,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 423905,
+            "Level": 5,
+            "Parameters": [
+              1.166,
+              0.318,
+              2.5016,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 423906,
+            "Level": 6,
+            "Parameters": [
+              1.232,
+              0.336,
+              2.6432,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 423907,
+            "Level": 7,
+            "Parameters": [
+              1.32,
+              0.36,
+              2.832,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 423908,
+            "Level": 8,
+            "Parameters": [
+              1.408,
+              0.384,
+              3.0208,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 423909,
+            "Level": 9,
+            "Parameters": [
+              1.496,
+              0.408,
+              3.2096,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 423910,
+            "Level": 10,
+            "Parameters": [
+              1.584,
+              0.432,
+              3.3984,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 423911,
+            "Level": 11,
+            "Parameters": [
+              1.672,
+              0.456,
+              3.5872,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 423912,
+            "Level": 12,
+            "Parameters": [
+              1.76,
+              0.48,
+              3.776,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 423913,
+            "Level": 13,
+            "Parameters": [
+              1.87,
+              0.51,
+              4.012,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 423914,
+            "Level": 14,
+            "Parameters": [
+              1.98,
+              0.54,
+              4.248,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 423915,
+            "Level": 15,
+            "Parameters": [
+              2.09,
+              0.57,
+              4.484,
+              12,
+              40
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10425,
+      "Name": "Starward Sword",
+      "Description": "Keqing unleashes the power of lightning, dealing <color=#FFACFFFF>Electro DMG</color> in an AOE.\nShe then blends into the shadow of her blade, striking a series of thunderclap-blows to nearby opponents simultaneously that deal multiple instances of <color=#FFACFFFF>Electro DMG</color>. The final attack deals massive <color=#FFACFFFF>AoE Electro DMG</color>.\n\n<i>The swiftest technique in Keqing's personal arsenal is fast enough to bring stars crashing down.</i>",
+      "Icon": "Skill_E_Keqing_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 4221,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 422101,
+              "Level": 1,
+              "Parameters": [
+                5
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 422101,
+        "Name": "Thundering Penance",
+        "Description": "After recasting <color=#FFD780FF>Stellar Restoration</color> while a Lightning Stiletto is present, Keqing's weapon gains an <color=#FFACFFFF>Electro Infusion</color> for 5s.",
+        "Icon": "UI_Talent_S_Keqing_05"
+      },
+      {
+        "GroupId": 4222,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 422201,
+              "Level": 1,
+              "Parameters": [
+                0.15,
+                0.15,
+                8
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 422201,
+        "Name": "Aristocratic Dignity",
+        "Description": "When casting <color=#FFD780FF>Starward Sword</color>, Keqing's CRIT Rate is increased by 15%, and her Energy Recharge is increased by 15%. This effect lasts for 8s.",
+        "Icon": "UI_Talent_S_Keqing_06"
+      },
+      {
+        "GroupId": 4223,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 422301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 422301,
+        "Name": "Land's Overseer",
+        "Description": "When dispatched on an expedition in Liyue, time consumed is reduced by 25%.",
+        "Icon": "UI_Talent_Expedition_Liyue"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 421,
+        "Name": "Thundering Might",
+        "Description": "Recasting <color=#FFD780FF>Stellar Restoration</color> while a Lightning Stiletto is present causes Keqing to deal 50% of her ATK as <color=#FFACFFFF>AoE Electro DMG</color> at the start point and terminus of her Blink.",
+        "Icon": "UI_Talent_S_Keqing_01"
+      },
+      {
+        "Id": 422,
+        "Name": "Keen Extraction",
+        "Description": "When Keqing's Normal and Charged Attacks hit opponents affected by <color=#FFACFFFF>Electro</color>, they have a 50% chance of producing an Elemental Particle.\nThis effect can only occur once every 5s.",
+        "Icon": "UI_Talent_S_Keqing_02"
+      },
+      {
+        "Id": 423,
+        "Name": "Foreseen Reformation",
+        "Description": "Increases the Level of <color=#FFD780FF>Starward Sword</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Keqing_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 424,
+        "Name": "Attunement",
+        "Description": "For 10s after Keqing triggers an <color=#FFACFFFF>Electro-related Elemental Reaction</color>, her ATK is increased by 25%.",
+        "Icon": "UI_Talent_S_Keqing_03"
+      },
+      {
+        "Id": 425,
+        "Name": "Beckoning Stars",
+        "Description": "Increases the Level of <color=#FFD780FF>Stellar Restoration</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Keqing_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 426,
+        "Name": "Tenacious Star",
+        "Description": "When initiating a Normal Attack, a Charged Attack, Elemental Skill or Elemental Burst, Keqing gains a 6% <color=#FFACFFFF>Electro DMG Bonus</color> for 8s.\nEffects triggered by Normal Attacks, Charged Attacks, Elemental Skills and Elemental Bursts are considered independent entities.",
+        "Icon": "UI_Talent_S_Keqing_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Driving Thunder",
+    "Detail": "The Yuheng of the Liyue Qixing. Keqing has much to say about Rex Lapis's unilateral approach to policymaking in Liyue — but in truth, gods admire skeptics such as her quite a lot.",
+    "Association": 2,
+    "Native": "Liyue Qixing",
+    "BirthMonth": 11,
+    "BirthDay": 20,
+    "VisionBefore": "Electro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Trulla Cementarii",
+    "CvChinese": "谢莹",
+    "CvJapanese": "喜多村英梨",
+    "CvEnglish": "Rosie Day",
+    "CvKorean": "Lee Bo-hee",
+    "CookBonus": {
+      "OriginItemId": 108108,
+      "ItemId": 108145,
+      "InputList": [
+        100084,
+        100077
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "I am Keqing, Yuheng of the Liyue Qixing. We live in an era of change, as the old order that has existed for a thousand years is about to be rewritten. Join me. Let us bear witness to this historical moment together."
+      },
+      {
+        "Title": "Chat: Delays",
+        "Context": "Come on. Enough procrastinating. Let's go."
+      },
+      {
+        "Title": "Chat: Relax",
+        "Context": "I'm all for work-life balance, but I think this is pushing it."
+      },
+      {
+        "Title": "Chat: Opportunity",
+        "Context": "In adventuring, as in business, you always have to seize the opportunity while it's there."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Quite a downpour... Nothing will get done until it clears. Let this be a lesson to those who yesterday said, \"I'll do it tomorrow.\""
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Thunder and lightning can be quite frightening, but don't worry — Liyue's storm and fire defenses are second to none."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Don't worry, snowfall on this scale is no impediment. We can keep moving."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "Ah, the sun is out. Our work's done for the day... shall we take a stroll?"
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Morning. Time to set the tone for the rest of the day, so if you're still feeling sleepy, shake it off!"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "I'm not in the habit of napping at noon, but don't let that stop you if you're feeling tired. I'll give you a wake-up call in, say, three minutes' time."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "The lights are coming on now that the night is setting in. *yawn* Another delightful day draws to a close."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Sleep well. ...Me? Uh... I still have a handful of things on my to-do list, but I'll call it a night once they're done."
+      },
+      {
+        "Title": "About Keqing: Idealism",
+        "Context": "If you feel strongly about something, you should speak up and take action. That's the philosophy I live by."
+      },
+      {
+        "Title": "About Keqing: Work",
+        "Context": "My role is to manage real estate and construction in Liyue. Sure, Liyue is a vast place with abundant resources — but without proper planning, and if too much focus is placed on short-term profit, a great many things can go wrong."
+      },
+      {
+        "Title": "About Keqing: Skepticism",
+        "Context": "What do you think has kept Liyue going over the last millennium? Rex Lapis? ...I disagree. We mortals have to fight for survival whatever happens. He just feels the need to come down here and poke his nose into everything that's going on for some reason... Hmph, people don't like to think about this, but should we really be trusting him to be an expert in everything?"
+      },
+      {
+        "Title": "About Keqing: Self-Reflection",
+        "Context": "After I took on the management of so many of Liyue's affairs, I had a new-found respect for Rex Lapis and all his hard work over the last millennium. Recently, every time I come up against a difficult problem with no obvious solution, I find myself thinking: What would Rex Lapis do? Maybe he really IS an expert in everything, and I've got more left to learn than I realized..."
+      },
+      {
+        "Title": "About Us: Pursuing",
+        "Context": "You know why I like you? It's because you don't believe something just because it was said by a god. You make up your own mind. You ask the questions everyone else is too cowardly to ask, and when you don't get an answer, you keep looking till you find one. Oh don't worry — your way is definitely the right way. Who says gods don't make mistakes, anyway?"
+      },
+      {
+        "Title": "About Us: Trying",
+        "Context": "It's not difficult, you'll see. Just give it a try. What if you try and it doesn't work out? ...No, I don't believe that will happen. You've never let me down before. You don't seem the type."
+      },
+      {
+        "Title": "About Us: Encouragement",
+        "Context": "I used to be so naive. I genuinely believed I was on par with Rex Lapis... Seems I really overestimated myself. Hmm? Yes... You're right! I have plenty of self-confidence in other areas, so why not in this? ...I can catch up with him — I WILL catch up with him! I just need to keep my chin up, keep trying, and keep learning!"
+      },
+      {
+        "Title": "About the Vision: Skepticism",
+        "Context": "If a Vision means the approval of the gods, then I don't see why I should want one. In fact, I find it quite insulting... It's like trying to say everything I've ever achieved is all thanks to the gods looking out for me! Well, I got to where I am today through my own hard work. The gods had nothing to do with it."
+      },
+      {
+        "Title": "About the Vision: Reflection",
+        "Context": "Oh, so... Rex Lapis wanted me to have power beyond the average mortal so that I can be a great leader? Huh... I like to think I'd do an admirable job even without his blessing! Yeah, I'll show him... I won't give him any reason to be disappointed with me..."
+      },
+      {
+        "Title": "Something to Share: Initiative",
+        "Context": "In addition to my work with the Liyue Qixing, I do a lot of work for the public, too. Mostly the feedback is positive, but whenever I propose something like adding an extra hour to the workday, I come up against very strong resistance... I'm too forward-thinking, I suppose. Maybe I should start with a half hour instead?"
+      },
+      {
+        "Title": "Something to Share: Souvenir",
+        "Context": "What do you mean, Geo Archon paraphernalia? ...You're not suggesting my bedroom is full of that stuff, surely? I'm not a child anymore! Although... Okay, I did buy a couple of Rex Lapis figurines recently, but — but, they're just to keep me on the straight and narrow. Look, just because I own an idol or two does not mean that I idolize him, okay!?"
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "I once heard a Mondstadt fable about courage being what it takes for birds to learn to fly. But I think that you must first possess a yearning for the boundless skies before you would have any inclination, let alone the courage, to spread your wings and try to fly. For me, Liyue is that boundless sky."
+      },
+      {
+        "Title": "About Zhongli",
+        "Context": "The gentleman from the Wangsheng Funeral Parlor? Clearly, he's an extremely learned individual, and I do have a lot of respect for him. But his mindset is too traditional for me — he thinks in the same tired old terms as Rex Lapis did... If he were more of an original thinker, I'm sure he'd be a great asset to me in reaching my objectives."
+      },
+      {
+        "Title": "About Beidou",
+        "Context": "That captain is always flouting the rules, and her personality really rubs people the wrong way. That said, The Crux Fleet is indispensable to Liyue Harbor. It's a bit of an art, knowing when to enforce the rules and when it's in everyone's interests to be more lenient. Thing is, the Tianquan is supposed to be the one enforcing the rules, but she always seems to be too busy..."
+      },
+      {
+        "Title": "About Ningguang: Conflict",
+        "Context": "We do work together, but we couldn't be more opposite personality-wise. To her, Liyue Harbor is nothing more than a marketplace, and she'll do anything as long as it makes money for her. Doesn't she have any principles? Hmm, or maybe turning a profit IS her principle?"
+      },
+      {
+        "Title": "About Ningguang: Cooperation",
+        "Context": "Since Rex Lapis left us, we've actually found some common ground. I was quite judgmental of her in the past, and we still fundamentally disagree on a number of issues, but in the current climate I have to say I count her as a comrade in arms."
+      },
+      {
+        "Title": "About Ningguang: Trifling Matters",
+        "Context": "Ugh, having said that... I ordered a Lucent Crescent from Mingxing Jewelry three months in advance, and when it was finally time to pick it up, they told me Ningguang had bought up the last few months' worth of Lucent Crescents for herself by paying double the price! *sigh* She can be such a pain!"
+      },
+      {
+        "Title": "About Xinyan",
+        "Context": "You know what, I think her music rocks. Too noisy by traditional standards, for sure, but I don't care. Good music is good music. And good music should reach the widest possible audience."
+      },
+      {
+        "Title": "About Baizhu",
+        "Context": "Everyone has faith in Dr. Baizhu's medical skills. He's the right guy to go to when you can't figure out what's wrong with you. Oh... the rumors, you say? The only one that I know for a fact is true is how disgusting his medicine tastes. It's not just the kids who find it bitter, it's left me with some horrible memories, too!"
+      },
+      {
+        "Title": "About Xiangling",
+        "Context": "Yeah, the up-and-coming chef from Wanmin Restaurant... I get that she's gifted and everything, I just think her cooking can be a bit hit-or-miss. I was all ready to hire her for a small banquet once, and give her full control over the menu... but the amount of lizard and slime in her sample dishes quickly turned me off that idea!"
+      },
+      {
+        "Title": "About Xingqiu",
+        "Context": "I've heard his story — he was born into a well-to-do family, but wasn't keen on the family business, so he now devotes his time to being an envoy of justice. I have huge respect for that! Not everyone has the guts to follow their dreams when it means breaking with a long-standing family tradition."
+      },
+      {
+        "Title": "About Xiao",
+        "Context": "I feel like now that we live in the age of mankind's rule, it's time for the legendary boy-adeptus to be released from duty. We no longer need a defender of that kind, because we are capable of working through the challenges we face on our own strength."
+      },
+      {
+        "Title": "About Ganyu: Skepticism",
+        "Context": "Who knows what Rex Lapis must have done to inspire such blind devotion from Ganyu... But her reluctance to be critical is not without its advantages. In the workplace, she'll carry out my instructions to the letter, even when I can tell she has her reservations. It's a good attitude to have as a career professional."
+      },
+      {
+        "Title": "About Ganyu: Reflection",
+        "Context": "I find myself getting a second opinion from her a lot these days. Lots of things come up that I just have no idea about, and of everyone in Liyue, she's probably the most familiar with Rex Lapis. Heh... I feel a bit awkward, though, because I used to be openly disparaging of Rex Lapis in front of her... But she doesn't seem to mind, so I guess I've got nothing to worry about..."
+      },
+      {
+        "Title": "About Yun Jin",
+        "Context": "When you're passing by Heyu Tea House and have to squeeze your way through the biggest crowd you've seen in your life, that's when you know Yun Jin's on stage performing. There's not a merchant in Liyue who wouldn't buy up the place if they had the chance, and Yun Jin is the reason it would be worth every Mora."
+      },
+      {
+        "Title": "About the Anemo Archon",
+        "Context": "Since Rex Lapis left us, the question of Liyue's future has been on my mind constantly. In addition to reviewing his own past deeds, I've been researching the other archons' modes of governance, too. Mondstadt's god is the one who baffles me the most though — how exactly do any of his actions contribute to the longevity of Mondstadt? It's completely beyond me."
+      },
+      {
+        "Title": "About Yanfei",
+        "Context": "The way I see it, the law is a summary of things done the right way in the past. However, it should also be continuously adapted and improved to match the needs of the present. Given that Liyue is about to undergo a radical transformation, legal talent is in great demand. With an assistant like Yanfei, I could spare myself a great deal of trouble."
+      },
+      {
+        "Title": "About Yelan",
+        "Context": "Ms. Yelan's ancestors used to serve the Qixing. My grandfather and her family have had academic collaborations in the past. All in all, she's reliable, efficient, and provides important intel to the Ministry of Civil Affairs. I can't say for sure how Ms. Yelan actually gets her intel, however..."
+      },
+      {
+        "Title": "About Lan Yan",
+        "Context": "Madame Lan is a lovely young lady and a very talented craftswoman. As the Ministry of Civil Affairs works to promote local craftmanship in the future, we will certainly consult masters like her. Oh, what about outside of work? Of course, she's welcome in Liyue Harbor any time. I find her company very enjoyable."
+      },
+      {
+        "Title": "More About Keqing: I",
+        "Context": "You want to know more about me? Sure. Let's start with the principles that are central to the role of Yuheng. Once you've memorized the hundred or more contractual obligations of the position, you'll know my hopes and dreams like the back of your hand!"
+      },
+      {
+        "Title": "More About Keqing: II",
+        "Context": "Nothing exists independently, and there's nothing you can do to change that. So, when you drag your heels on one thing, you're actually causing chaos for a whole bunch of other connected issues, too. That's why I firmly believe you should never put off until tomorrow what you can do today. ...I'm also a very impatient person and can't stand procrastinating, so that's also part of it."
+      },
+      {
+        "Title": "More About Keqing: III",
+        "Context": "Never mince your words with me, okay? Yuheng's just a title. I'll not have you treading on eggshells around me just because of my status. Say what's on your mind, always — that's what makes you unique, and it's the thing I admire about you the most."
+      },
+      {
+        "Title": "More About Keqing: IV",
+        "Context": "We've been on our fair share of adventures together, haven't we? The more time we spend together, the more I think that you're the person of my dreams, and— Huh? Why so shocked? You're a crucial part of my dreams for the new Liyue."
+      },
+      {
+        "Title": "More About Keqing: V",
+        "Context": "\"The time has come for humanity to make its mark in the land of the Geo Archon\"... Turns out that was quite an ambitious statement after all. But I want you to make me a promise: come and visit when the new Liyue Harbor is born. I will show you around. After all the help and support you've given me along the way, you deserve to see Liyue reborn with your own eyes. I owe you that much."
+      },
+      {
+        "Title": "Keqing's Hobbies",
+        "Context": "That indulgent feeling of being spoilt for choice between countless different varieties... That, to me, is the appeal of shopping."
+      },
+      {
+        "Title": "Keqing's Troubles",
+        "Context": "It's great that the quality of life in Liyue is improving for everyone. But one downside is the growing number of people who are happy to reap the rewards without doing their fair share of the work. The Liyue Qixing did not put in all this effort to create a more prosperous society just so people like them can loaf around."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "It makes no logical sense to be greedy with food, but for me, all rationality goes out the window when there's Golden Shrimp Balls involved... They're just irresistible. The taste of a single Golden Shrimp Ball brings me so much joy that all the stress of work just melts away."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Everything has a certain way it should taste. I won't touch anything that tries to break the mold, so no salted Almond Tofu for me, and no sweetened Lotus Seed and Bird Egg Soup either. It's just a total waste of perfectly good ingredients."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Yep, that's right. My favorite."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "The taste is fairly standard, but I can see you worked hard at it."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "It seems quite a ways off from how it's supposed to taste..."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Happy birthday! I've got a very special gift for you. It might look like an ordinary old lantern, but this one runs on Electro energy and stays alight for a really long time. For those times when you need a little extra light in your life."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "When your heart is set on something, you get closer to your goal with each passing day."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Great, having another trick up my sleeve gives me more flexibility in rapidly changing circumstances."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Yesterday's experiences make me stronger today. And most of those experiences are ones that I share with you."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I feel I have grown immensely from my travels with you. If, one day, I finally manage to make my dreams a reality... I wonder, will you still be there by my side?"
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Incoming!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Speed of light!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Don't blink."
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Hah—!"
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "Hey!"
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "Huh!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Nowhere to hide!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "With sword comes shadow!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Cut to the chase!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "You give, you receive."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Not bad, as far as treasure is concerned..."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "That's everything, on to the next."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "One step back, two forward..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Stronger than I thought."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Change of plan."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Take five, I'll take over."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Watch yourself!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Right idea, wrong time..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "I will not go quietly..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "What a let-down..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Ugh."
+      },
+      {
+        "Title": "Light Hit Taken: II",
+        "Context": "I'll be fine."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Got lucky that time!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Let's go, time is against us."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Something's come up?"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Let's finish this quickly."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Rex Lapis has brought prosperity and plenty to Liyue Harbor, and his rule and majesty have long passed into show and song, much to the delight of the people. But for someone in such proximity to a god, Keqing seems to lack the requisite respect the most.\n\"Hmph. Let's be real here, but does Morax really know everything?\"\nThe Liyue Qixing deal with the day-to-day happenings in the Harbor, whether great or small, while Rex Lapis only descends once a year.\nWhile history has shown that following Morax's lead has been the right call, Keqing believes that humans should have their pride and that their views deserve equal consideration.\nAs such, she often advocates different opinions from Rex Lapis, and is the first to put such views into practice.\nHer radical actions have seen stellar results, but they have also attracted murmurings of opprobrium among those devoted to Rex Lapis.\nAs Keqing sees it, such opposition are the excuses of those who have grown complacent under the aegis of their deity, and who cannot consider the future of humanity of their own accord.\nBut someone must walk on the front line of the epoch and create a new path with their own hands — and the Yuheng star is determined to do her part in this endeavor."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Keqing is the daughter of an illustrious Liyue family with a proud lineage, and she is better acquainted than most with the influence that Rex Lapis has over the people of Liyue.\nOnce every few years, in an almost cyclical fashion, a major reshuffle hits Liyue's economy after the Rite of Descension. Once Rex Lapis' new policies are announced, some families celebrate while others grieve.\nThe poor hope it will offer them the chance to finally make their fortunes while the wealthy pray that theirs will not be swept away in the changing tides. Rather than carefully analyzing the economic climate, merchants are more prone to making investments based on belief.\nAnd in present-day Liyue, this is a forgivable strategy: Rex Lapis is a powerful deity and he can be relied on for all things.\nBut Keqing has her reservations about all this: What if, one day, Rex Lapis stops fulfilling his duty? Then what would become of the people of Liyue?\nLiyue's present prosperity is akin to a magnificent sandcastle on the beach — humanity does not have the luxury of deciding when the tide will come in.\nHowever, Keqing has been unable to garner majority support for her views. From most people's perspective, life is but a brief, insignificant moment in Liyue's long history, and there is no point in working oneself up into an existential quandary.\nThis perspective, as far as Keqing is concerned, is a lazy and cowardly one that denies there is any value at all in the existence of the human race. \"If humans really have no value,\" Keqing retorts, \"then why should we expect the gods to care about us so much?\"\nUnwilling to compromise on her beliefs, she cast her skepticism on everything — everything from Rex Lapis' loving-kindness, to the people's laziness, to the way that society runs.\nIssues affecting humans' fate should be handled by humans, and humans are more than capable of handling them with finesse.\nFinally, the day came of her now-famous speech at the Rite of Descension.\n\"Rex Lapis has watched over Liyue for a millennium. But what about the next millennium? What about the next ten, or the next hundred millennia? How long are we expecting this status quo to last?\"\nOn hearing these words, Rex Lapis burst into hearty laughter. But as for what exactly he was laughing about, only Rex Lapis himself knows."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Some may be able to keep up with Keqing's forward-thinking ideas, but none can keep up with her pace of work.\nPerhaps in an effort to become a role model for her people, she demands of herself to work ten times harder than the average person, and she cannot abide any measure of laziness or inefficiency.\nHumans' abilities and lifespans are more limited than the gods'. This means that one has no hope of living to see the day when humans replace the gods as masters of our own universe if one allows apathy and hesitation to slow themselves down.\nBecause of this same mindset, she is never able to synchronize her work rhythm with the people around her.\nWhatever the task, she does not rest until the job is done, and when something should take half the month to resolve, she will pull out all the stops to try and get it turned around within the next 48 hours.\nAdditionally, Keqing's notion of 'completing' something is far more ambitious than simply getting it 'finished' — she will make sure that every relevant detail is tied up too. To the outside observer, she seems to be both highly efficient and a perfectionist.\nBut not everyone is as self-motivated as Keqing. No assistant she hires ever makes it past the three-month mark.\nShe has received countless remonstrations urging her to be less impatient, but she meets each one with a stern rejection.\nStill, she has, to some extent, come around to the idea that a high staff turnover is itself a manifestation of inefficiency, and made some concessions accordingly.\nToday, if you encounter an assistant of Keqing's dealing with some matter three, four, or even five years ahead of time, don't be alarmed, this is completely normal. Keqing gave them a bit of a head start, but she'll be catching up before long."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "\"Yesterday's experiences make me stronger today.\" This is one of the principles Keqing lives by.\nSpending all of one's time at Yujing Terrace means seeing the same old things day after day. But to be able to think and act as swiftly as lightning, one needs a huge amount of experience to draw on.\nSo, if Keqing sees something that needs doing, why, she'll do it herself. For example, she once served for two months as a laborer to better decide how to refine a plan to improve their treatment.\nIt's hard to imagine that this young lady with so much authority vested in her has pulled carts at The Chasm, rammed earth at the south wharf, and waited tables at small diners.\nIn addition to working, she also once took the opportunity to gather evidence with which to report a powerful individual known for his abuses.\nHe was apprehended without any clue as to how he had been exposed, but when he was brought to the interrogation chamber by the Millelith, there he saw a striking young lady dressed in fine robes.\n\"Hey! Haven't we... haven't we met somewhere before?\"\nThe words felt foolish the moment they rolled off his tongue, even to him.\nEspecially because the Millelith then introduced her as follows: \"This is the Yuheng of the Liyue Qixing. Know your place and keep your distance!\"\n—Exactly, so what was he thinking!?"
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Rex Lapis' departure has put Liyue Harbor through a great deal of hardship. All the duties Rex once fulfilled have been taken up by the Qixing and the Eight Trades.\nNow that divine rule is a thing of the past, the old strictures left behind can't simply be continued wholesale. But to establish new laws for Liyue, whose history spans several thousand years, is no mean feat.\nAt first, Keqing was incredibly enthusiastic about this task, having long prepared for this day when she might finally show her mettle. But several months in, and she was still stuck on a single task, land infrastructure — and it was driving her up the wall.\nNo matter how hard she struggled, the mountain of tasks was like a quagmire. She was making difference, yes, but not nearly with as much ease as Rex Lapis.\n\"Why can I only do this much? Why... can't I do it better?\"\nOf course, she had long understood the wherefores here.\nHer lack of respect for gods had somehow received their recognition all the same, yes, but that didn't mean that she was ready to simply replace them.\nBut she was still Keqing, resolute and tenacious.\nFrom that day on, she shut herself in, studying classics of various kinds to learn all that she needed. Placing herself lowest, she accepted all that she had hitherto not known with open arms.\nDuring this period, she gained a certain calm, slowly discarding the \"opprobrium\" she had long held against Rex Lapis.\nThey were both working for the good of Liyue, after all — and two people who love the same thing need not be on opposing sides.\nShe also seemingly came to an understanding concerning the smile Rex Lapis had given her during that Rite of Descension. It was, Keqing now believes, an expression of acknowledgment and expectation.\nShe hasn't lost any of her forceful and decisive manner, no. But sometimes, when she feels lost, she will stop and think: \"What would Rex Lapis do at a moment such as this?\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Keqing, who has dedicated a large portion of her energies to Liyue Harbor, indulges in an unexpected pastime when she can spare a moment — shopping.\nOn her days off, she changes into ordinary clothes, contacts a few close friends, and enjoys a day of strolling around Feiyun Slope and Chihu Rock, just enjoying the act of buying things.\nAfter Rex Lapis' departure, Keqing managed to maintain this method of decompression despite her busier schedule, though with one subtle difference.\nOn one of her shopping trips, she happened upon a small and unremarkable stall that sold cute Rex Lapis clay figurines with tiny bodies and big heads.\nPersuading her friends to visit the silk store opposite, she approached the stall, took a figurine in her hand, and began to examine it.\nShe knew that she didn't have much time. So, after glancing around to make sure that no one was watching, she paid for, picked up, and packed away her prize in one swift single movement.\nBut no sooner had she placed the figurine into her bag and heaved a sigh of relief than one of her friends, silk bundles in tow, tapped her on the shoulder.\nIn the end, all was revealed. Her friends were quite curious: Wasn't Keqing a skeptic among skeptics? Why would she buy one of these?\n\"For... For introspection, of course! There's nothing wrong with self-reflection, is there?\"\nSo she said, and it would be convincing, too — if Keqing didn't already have an entire shelf dedicated to Rex Lapis self-reflection memorabilia..."
+      },
+      {
+        "Title": "Survival Hairpin",
+        "Context": "Though she is of noble birth, Keqing tries to keep her luxuries to the bare minimum that would befit her position as one of the Liyue Qixing.\nAnd when she is outside the borders of the prosperous city, she will often head deep into uninhabited areas to strengthen her knowledge and sharpen her will.\nShe has experienced countless challenges, but unlike backpackers and adventurers, she does not bring anything with but her hairpin and her sword.\nAs long as it is infused with Electro, a hairpin can become a knife of unmatched sharpness. Cutting grass, chopping firewood, skinning game, and carving bone are all well within its capabilities.\nIf faced with a drop of great height, she only needs to pin it into the ground, tie rattans to it, and rappel down.\nIt also serves as an incredibly sensitive security device when camping out. Any unusual movements nearby will cause it, when tipped over and placed perpendicular to the ground, to alert and awaken Keqing immediately.\nIt can even be used to fish: Keqing just hurls it into the water when she's feeling peckish, and there will always be a few fish that will get knocked out by the electric shock — and of course, finding a stick to grill the fish on is not a problem either.\nSome narrow-minded folk have ridiculed Keqing's hairpin for being old and worn, but this does not anger her. Indeed, she considers it a point of pride.\n\"Its weathered form is what gives it its charm.\""
+      },
+      {
+        "Title": "Vision",
+        "Context": "Keqing is likely a skeptic without equal when it comes to the value of Visions.\nShe knows that everything she has is the result of her own hard work, but that in the eyes of others, credit has been given instead to her Vision.\nShe once believed that this purple crystal had stolen the pride due originally to her, and that it was both a challenge and an insult from the gods.\nIn fact, she has tried to destroy her Vision countless times — she's left it in a huge fire for three days and three nights, run over it with a minecart full of rocks, and has even hurled it from the heights of the Jade Chamber.\nUnfortunately, she has never been successful.\nWith no options left, and not wanting it to fall into the wrong hands, Keqing was forced to accept the Vision as part of her life.\nOver time, Keqing came to appreciate her Vision. She realized that this item did not actually have any divine will imbued within it, and that it also had numerous practical uses. Thus, she decided to make use of it.\n\"The source of power is far less important than the character of its user.\"\nRegardless of how she may once have regarded it, Keqing's Vision and its powers have become a part of her.\nThank the Archons she hadn't destroyed it back then, or she'd have regretted it for sure — oh, the hardships of being a pragmatist."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 204201,
+      "Name": "Opulent Splendor",
+      "Description": "Keqing's formal wear. Amidst the beautiful dawn of the Lantern Rite, the threads weaved by days of hard work intertwine into a light yet magnificent appearance.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_KeqingCostumeFeather",
+      "SideIcon": "UI_AvatarIcon_Side_KeqingCostumeFeather"
+    },
+    {
+      "Id": 204200,
+      "Name": "Piercing Thunderbolt",
+      "Description": "Keqing's outfit. A formidable-looking dress made using luxurious materials.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104144,
+    113002,
+    100058,
+    112040,
+    104312,
+    113007
+  ],
+  "NameCard": {
+    "Name": "Keqing: Lightning Stiletto",
+    "Description": "Namecard style.\nIt was originally invented to just test out one's surroundings and climb to high places, really...",
+    "Icon": "UI_NameCardIcon_Keqing",
+    "PicturePrefix": "UI_NameCardPic_Keqing"
+  },
+  "TraceEffect": {
+    "Id": 215007,
+    "Name": "Echo: Driving Thunder",
+    "Description": "Keqing's Envisaged Echo. \"Swift thunder questioned new boughs last night, this morn the rainbow drove clouds to flight.\"",
+    "Icon": "UI_TraceEffectIcon_Keqing"
+  }
+}

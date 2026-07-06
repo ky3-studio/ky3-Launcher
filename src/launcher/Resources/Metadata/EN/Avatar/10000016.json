@@ -1,0 +1,1181 @@
+{
+  "Id": 10000016,
+  "PromoteId": 16,
+  "Sort": 8,
+  "Body": 4,
+  "Icon": "UI_AvatarIcon_Diluc",
+  "SideIcon": "UI_AvatarIcon_Side_Diluc",
+  "Name": "Diluc",
+  "Description": "The tycoon of a winery empire in Mondstadt, unmatched in every possible way.",
+  "BeginTime": "2020-09-15T04:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 11,
+  "BaseValue": {
+    "HpBase": 1010.5192,
+    "AttackBase": 26.068,
+    "DefenseBase": 61.0266
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 1631,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:P}",
+            "2-Hit DMG|{param2:P}",
+            "3-Hit DMG|{param3:P}",
+            "4-Hit DMG|{param4:P}",
+            "Charged Attack Cyclic DMG|{param5:P}",
+            "Charged Attack Final DMG|{param6:P}",
+            "Charged Attack Stamina Cost|{param7:F1}/s",
+            "Max Duration|{param8:F1}s",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 163101,
+              "Level": 1,
+              "Parameters": [
+                0.89698,
+                0.87634,
+                0.98814,
+                1.33988,
+                0.688,
+                1.247,
+                40,
+                5,
+                0.895054,
+                1.789728,
+                2.235467
+              ]
+            },
+            {
+              "Id": 163102,
+              "Level": 2,
+              "Parameters": [
+                0.96999,
+                0.94767,
+                1.06857,
+                1.44894,
+                0.744,
+                1.3485,
+                40,
+                5,
+                0.967907,
+                1.935403,
+                2.417423
+              ]
+            },
+            {
+              "Id": 163103,
+              "Level": 3,
+              "Parameters": [
+                1.043,
+                1.019,
+                1.149,
+                1.558,
+                0.8,
+                1.45,
+                40,
+                5,
+                1.04076,
+                2.081079,
+                2.59938
+              ]
+            },
+            {
+              "Id": 163104,
+              "Level": 4,
+              "Parameters": [
+                1.1473,
+                1.1209,
+                1.2639,
+                1.7138,
+                0.88,
+                1.595,
+                40,
+                5,
+                1.144836,
+                2.289187,
+                2.859318
+              ]
+            },
+            {
+              "Id": 163105,
+              "Level": 5,
+              "Parameters": [
+                1.22031,
+                1.19223,
+                1.34433,
+                1.82286,
+                0.936,
+                1.6965,
+                40,
+                5,
+                1.217689,
+                2.434862,
+                3.041275
+              ]
+            },
+            {
+              "Id": 163106,
+              "Level": 6,
+              "Parameters": [
+                1.30375,
+                1.27375,
+                1.43625,
+                1.9475,
+                1,
+                1.8125,
+                40,
+                5,
+                1.30095,
+                2.601349,
+                3.249225
+              ]
+            },
+            {
+              "Id": 163107,
+              "Level": 7,
+              "Parameters": [
+                1.41848,
+                1.38584,
+                1.56264,
+                2.11888,
+                1.088,
+                1.972,
+                40,
+                5,
+                1.415434,
+                2.830267,
+                3.535157
+              ]
+            },
+            {
+              "Id": 163108,
+              "Level": 8,
+              "Parameters": [
+                1.53321,
+                1.49793,
+                1.68903,
+                2.29026,
+                1.176,
+                2.1315,
+                40,
+                5,
+                1.529917,
+                3.059186,
+                3.821089
+              ]
+            },
+            {
+              "Id": 163109,
+              "Level": 9,
+              "Parameters": [
+                1.64794,
+                1.61002,
+                1.81542,
+                2.46164,
+                1.264,
+                2.291,
+                40,
+                5,
+                1.644401,
+                3.288105,
+                4.10702
+              ]
+            },
+            {
+              "Id": 163110,
+              "Level": 10,
+              "Parameters": [
+                1.7731,
+                1.7323,
+                1.9533,
+                2.6486,
+                1.36,
+                2.465,
+                40,
+                5,
+                1.769292,
+                3.537834,
+                4.418946
+              ]
+            },
+            {
+              "Id": 163111,
+              "Level": 11,
+              "Parameters": [
+                1.916513,
+                1.872412,
+                2.111287,
+                2.862825,
+                1.47,
+                2.664375,
+                40,
+                5,
+                1.894183,
+                3.787564,
+                4.730872
+              ]
+            },
+            {
+              "Id": 163112,
+              "Level": 12,
+              "Parameters": [
+                2.085166,
+                2.037185,
+                2.297081,
+                3.114754,
+                1.59936,
+                2.89884,
+                40,
+                5,
+                2.019074,
+                4.037293,
+                5.042797
+              ]
+            },
+            {
+              "Id": 163113,
+              "Level": 13,
+              "Parameters": [
+                2.253819,
+                2.201957,
+                2.482874,
+                3.366682,
+                1.72872,
+                3.133305,
+                40,
+                5,
+                2.143966,
+                4.287023,
+                5.354723
+              ]
+            },
+            {
+              "Id": 163114,
+              "Level": 14,
+              "Parameters": [
+                2.422472,
+                2.366729,
+                2.668667,
+                3.618611,
+                1.85808,
+                3.36777,
+                40,
+                5,
+                2.268857,
+                4.536752,
+                5.666648
+              ]
+            },
+            {
+              "Id": 163115,
+              "Level": 15,
+              "Parameters": [
+                2.606457,
+                2.546481,
+                2.871351,
+                3.893442,
+                1.9992,
+                3.62355,
+                40,
+                5,
+                2.393748,
+                4.786482,
+                5.978574
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10160,
+        "Name": "Tempered Sword",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous slashes.\nAt the end of the sequence, performs a more powerful slash.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_04"
+      },
+      {
+        "GroupId": 1632,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:P}",
+            "2-Hit DMG|{param2:P}",
+            "3-Hit DMG|{param3:P}",
+            "CD|{param4:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 163201,
+              "Level": 1,
+              "Parameters": [
+                0.944,
+                0.976,
+                1.288,
+                10
+              ]
+            },
+            {
+              "Id": 163202,
+              "Level": 2,
+              "Parameters": [
+                1.0148,
+                1.0492,
+                1.3846,
+                10
+              ]
+            },
+            {
+              "Id": 163203,
+              "Level": 3,
+              "Parameters": [
+                1.0856,
+                1.1224,
+                1.4812,
+                10
+              ]
+            },
+            {
+              "Id": 163204,
+              "Level": 4,
+              "Parameters": [
+                1.18,
+                1.22,
+                1.61,
+                10
+              ]
+            },
+            {
+              "Id": 163205,
+              "Level": 5,
+              "Parameters": [
+                1.2508,
+                1.2932,
+                1.7066,
+                10
+              ]
+            },
+            {
+              "Id": 163206,
+              "Level": 6,
+              "Parameters": [
+                1.3216,
+                1.3664,
+                1.8032,
+                10
+              ]
+            },
+            {
+              "Id": 163207,
+              "Level": 7,
+              "Parameters": [
+                1.416,
+                1.464,
+                1.932,
+                10
+              ]
+            },
+            {
+              "Id": 163208,
+              "Level": 8,
+              "Parameters": [
+                1.5104,
+                1.5616,
+                2.0608,
+                10
+              ]
+            },
+            {
+              "Id": 163209,
+              "Level": 9,
+              "Parameters": [
+                1.6048,
+                1.6592,
+                2.1896,
+                10
+              ]
+            },
+            {
+              "Id": 163210,
+              "Level": 10,
+              "Parameters": [
+                1.6992,
+                1.7568,
+                2.3184,
+                10
+              ]
+            },
+            {
+              "Id": 163211,
+              "Level": 11,
+              "Parameters": [
+                1.7936,
+                1.8544,
+                2.4472,
+                10
+              ]
+            },
+            {
+              "Id": 163212,
+              "Level": 12,
+              "Parameters": [
+                1.888,
+                1.952,
+                2.576,
+                10
+              ]
+            },
+            {
+              "Id": 163213,
+              "Level": 13,
+              "Parameters": [
+                2.006,
+                2.074,
+                2.737,
+                10
+              ]
+            },
+            {
+              "Id": 163214,
+              "Level": 14,
+              "Parameters": [
+                2.124,
+                2.196,
+                2.898,
+                10
+              ]
+            },
+            {
+              "Id": 163215,
+              "Level": 15,
+              "Parameters": [
+                2.242,
+                2.318,
+                3.059,
+                10
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10161,
+        "Name": "Searing Onslaught",
+        "Description": "Performs a forward slash that deals <color=#FF9999FF>Pyro DMG</color>.\n\nThis skill can be consecutively used 3 times.\nEnters CD if not cast again within a short period.\n\n<i>The slashes represent the values that Diluc holds dear: one for justice, one for courage, and one for duty.</i>",
+        "Icon": "Skill_S_Diluc_01_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 1639,
+      "Proud": {
+        "Descriptions": [
+          "Slashing DMG|{param1:P}",
+          "DoT|{param2:P}",
+          "Explosion DMG|{param3:P}",
+          "CD|{param4:F1}s",
+          "Infusion Duration|{param5:F1}s",
+          "Energy Cost|{param6:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 163901,
+            "Level": 1,
+            "Parameters": [
+              2.04,
+              0.6,
+              2.04,
+              12,
+              8,
+              40
+            ]
+          },
+          {
+            "Id": 163902,
+            "Level": 2,
+            "Parameters": [
+              2.193,
+              0.645,
+              2.193,
+              12,
+              8,
+              40
+            ]
+          },
+          {
+            "Id": 163903,
+            "Level": 3,
+            "Parameters": [
+              2.346,
+              0.69,
+              2.346,
+              12,
+              8,
+              40
+            ]
+          },
+          {
+            "Id": 163904,
+            "Level": 4,
+            "Parameters": [
+              2.55,
+              0.75,
+              2.55,
+              12,
+              8,
+              40
+            ]
+          },
+          {
+            "Id": 163905,
+            "Level": 5,
+            "Parameters": [
+              2.703,
+              0.795,
+              2.703,
+              12,
+              8,
+              40
+            ]
+          },
+          {
+            "Id": 163906,
+            "Level": 6,
+            "Parameters": [
+              2.856,
+              0.84,
+              2.856,
+              12,
+              8,
+              40
+            ]
+          },
+          {
+            "Id": 163907,
+            "Level": 7,
+            "Parameters": [
+              3.06,
+              0.9,
+              3.06,
+              12,
+              8,
+              40
+            ]
+          },
+          {
+            "Id": 163908,
+            "Level": 8,
+            "Parameters": [
+              3.264,
+              0.96,
+              3.264,
+              12,
+              8,
+              40
+            ]
+          },
+          {
+            "Id": 163909,
+            "Level": 9,
+            "Parameters": [
+              3.468,
+              1.02,
+              3.468,
+              12,
+              8,
+              40
+            ]
+          },
+          {
+            "Id": 163910,
+            "Level": 10,
+            "Parameters": [
+              3.672,
+              1.08,
+              3.672,
+              12,
+              8,
+              40
+            ]
+          },
+          {
+            "Id": 163911,
+            "Level": 11,
+            "Parameters": [
+              3.876,
+              1.14,
+              3.876,
+              12,
+              8,
+              40
+            ]
+          },
+          {
+            "Id": 163912,
+            "Level": 12,
+            "Parameters": [
+              4.08,
+              1.2,
+              4.08,
+              12,
+              8,
+              40
+            ]
+          },
+          {
+            "Id": 163913,
+            "Level": 13,
+            "Parameters": [
+              4.335,
+              1.275,
+              4.335,
+              12,
+              8,
+              40
+            ]
+          },
+          {
+            "Id": 163914,
+            "Level": 14,
+            "Parameters": [
+              4.59,
+              1.35,
+              4.59,
+              12,
+              8,
+              40
+            ]
+          },
+          {
+            "Id": 163915,
+            "Level": 15,
+            "Parameters": [
+              4.845,
+              1.425,
+              4.845,
+              12,
+              8,
+              40
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10165,
+      "Name": "Dawn",
+      "Description": "Releases intense flames to knock back nearby opponents, dealing <color=#FF9999FF>Pyro DMG</color>. The flames then converge into the weapon, summoning a Phoenix that flies forward and deals massive <color=#FF9999FF>Pyro DMG</color> to all opponents in its path. The Phoenix explodes upon reaching its destination, causing a large amount of <color=#FF9999FF>AoE Pyro DMG</color>.\nThe searing flames that run down his blade cause it to be infused with <color=#FF9999FF>Pyro</color>.\n\n<i>The only reason to walk in the darkness is to light it up. Behold, that fleeing light in the dead of night is the herald of the coming dawn.</i>",
+      "Icon": "Skill_E_Diluc_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 1621,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 162101,
+              "Level": 1,
+              "Parameters": [
+                0.5,
+                3
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 162101,
+        "Name": "Relentless",
+        "Description": "Diluc's Charged Attack Stamina Cost is decreased by 50%, and its duration is increased by 3s.",
+        "Icon": "UI_Talent_S_Diluc_05"
+      },
+      {
+        "GroupId": 1622,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 162201,
+              "Level": 1,
+              "Parameters": [
+                4,
+                0.2
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 162201,
+        "Name": "Blessing of Phoenix",
+        "Description": "The <color=#FF9999FF>Pyro Infusion</color> provided by <color=#FFD780FF>Dawn</color> lasts for 4s longer. Additionally, Diluc gains 20% <color=#FF9999FF>Pyro DMG Bonus</color> during the duration of this effect.",
+        "Icon": "UI_Talent_S_Diluc_06"
+      },
+      {
+        "GroupId": 1623,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 162301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 162301,
+        "Name": "Tradition of the Dawn Knight",
+        "Description": "Refunds 15% of the ore used when crafting Claymore-type weapons.",
+        "Icon": "UI_Talent_Forge_Claymore"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 161,
+        "Name": "Conviction",
+        "Description": "Diluc deals 15% more DMG to opponents whose HP is above 50%.",
+        "Icon": "UI_Talent_S_Diluc_01"
+      },
+      {
+        "Id": 162,
+        "Name": "Searing Ember",
+        "Description": "When Diluc takes DMG, his ATK increases by 10% and his ATK SPD increases by 5%. Lasts for 10s.\nThis effect can stack up to 3 times and can only occur once every 1.5s.",
+        "Icon": "UI_Talent_S_Diluc_02"
+      },
+      {
+        "Id": 163,
+        "Name": "Fire and Steel",
+        "Description": "Increases the Level of <color=#FFD780FF>Searing Onslaught</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Diluc_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 164,
+        "Name": "Flowing Flame",
+        "Description": "Casting <color=#FFD780FF>Searing Onslaught</color> in rhythm greatly increases damage dealt.\n2s after casting <color=#FFD780FF>Searing Onslaught</color>, casting the next Searing Onslaught in the combo deals 40% additional DMG. This effect lasts for 2s.",
+        "Icon": "UI_Talent_S_Diluc_03"
+      },
+      {
+        "Id": 165,
+        "Name": "Phoenix, Harbinger of Dawn",
+        "Description": "Increases the Level of <color=#FFD780FF>Dawn</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Diluc_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 166,
+        "Name": "Flaming Sword, Nemesis of the Dark",
+        "Description": "After casting <color=#FFD780FF>Searing Onslaught</color>, the next 2 Normal Attacks within the next 6s will have their DMG and ATK SPD increased by 30%.\nAdditionally, Searing Onslaught will not interrupt the Normal Attack combo.",
+        "Icon": "UI_Talent_S_Diluc_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Dark Side of Dawn",
+    "Detail": "The tycoon of a winery empire in Mondstadt, unmatched in every possible way.",
+    "Association": 1,
+    "Native": "Dawn Winery",
+    "BirthMonth": 4,
+    "BirthDay": 30,
+    "VisionBefore": "Pyro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Noctua",
+    "CvChinese": "马洋",
+    "CvJapanese": "小野賢章",
+    "CvEnglish": "Sean Chiplock",
+    "CvKorean": "Choi Seung-hoon",
+    "CookBonus": {
+      "OriginItemId": 108056,
+      "ItemId": 108058,
+      "InputList": [
+        100061,
+        100080,
+        100055,
+        110009
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Diluc, of Mondstadt. Not interested in idle chit-chat. If you have things you want to get done, let me know."
+      },
+      {
+        "Title": "Chat: Relax",
+        "Context": "Guess we can rest a bit."
+      },
+      {
+        "Title": "Chat: Knights of Favonius",
+        "Context": "You should really bring the Knights of Favonius with you next time."
+      },
+      {
+        "Title": "Chat: Wine Guild",
+        "Context": "I still have a lot to do at the Guild. How about you take a rest while I go back?"
+      },
+      {
+        "Title": "Chat: Preparation",
+        "Context": "We should prepare while we can, then make a preemptive strike against the enemy."
+      },
+      {
+        "Title": "Chat: Planning",
+        "Context": "Let's take a moment to rest and plan our next move."
+      },
+      {
+        "Title": "Chat: Warning",
+        "Context": "Every course of action has its risks. Be careful."
+      },
+      {
+        "Title": "When It Rains: Umbrella",
+        "Context": "I don't need an umbrella, but you can use one if you need."
+      },
+      {
+        "Title": "When It Rains: Cleansing",
+        "Context": "Rain... If only it could cleanse the corrupt souls of this world."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "Listen, as long as you stick to your own path, it doesn't matter what Mother Nature throws at you."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "Some use the wind's whistling to drown out the sound of their crimes."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "No need for small talk. All that matters is that you were safe last night."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Would you like to try the secret menu?"
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Night has fallen."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Alright, see you next time. I'll make sure you leave safely."
+      },
+      {
+        "Title": "About Diluc",
+        "Context": "The legend of the \"Darknight Hero\"? An interesting rumor."
+      },
+      {
+        "Title": "About Us: Needs",
+        "Context": "Just say the word if you need anything. For reimbursements, ask Elzer."
+      },
+      {
+        "Title": "About Us: Proof",
+        "Context": "You have already proven your determination. Well then, it is now time for you to witness my resolve."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "Visions are a light in the sea of darkness that surrounds those who have lost their way. But for those who have faith, they are little more than badges of conviction."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Occasionally I'll work the bar at Angel's Share. The tavern is known for being the center of information in Mondstadt."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "What? Why do you ask? ...It's an owl, quietly watching its prey from the darkness, waiting for the perfect moment to strike... Flawless."
+      },
+      {
+        "Title": "About Kaeya",
+        "Context": "Kaeya? You can only trust half of what he says... at best."
+      },
+      {
+        "Title": "About Lisa",
+        "Context": "I believe Lisa has the potential to become the most reliable of the knights. If she's willing."
+      },
+      {
+        "Title": "About Jean: Enemies",
+        "Context": "Trifling matters can become Jean's greatest enemy."
+      },
+      {
+        "Title": "About Jean: Responsibilities",
+        "Context": "Her unparalleled sense of responsibility is the sole reason why she still hasn't found her true calling."
+      },
+      {
+        "Title": "About Mona",
+        "Context": "The land of Mondstadt, by the Anemo Archon's grace, is bountiful. I see no need for the harvest forecasts of astrologers."
+      },
+      {
+        "Title": "About Diona",
+        "Context": "Diona's attitude towards me is... how should I put it? Rather rigid. I've yet to find the opportunity to speak with her properly. I'm not sure if it's an issue with my family line or— Oh? It's not? She simply despises alcohol? Huh... I never thought I'd come across another bartender like myself in Mondstadt."
+      },
+      {
+        "Title": "About Varka",
+        "Context": "Grand Master Varka... While I understand his disposition, I can make no sense of his actions. ...I—I've said too much already. I've long since left the Knights of Favonius. Forget I said anything."
+      },
+      {
+        "Title": "About Eula",
+        "Context": "Ah, yes... I've heard about her. She has her own convictions. Her determination to liberate herself from the shackles of her clan is praiseworthy. But, she's... joined the Knights of Favonius."
+      },
+      {
+        "Title": "More About Diluc: I",
+        "Context": "You have business to attend to?"
+      },
+      {
+        "Title": "More About Diluc: II",
+        "Context": "Huh? Knights of Favonius? ...I have nothing to say about them. We have different views is all."
+      },
+      {
+        "Title": "More About Diluc: III",
+        "Context": "It's been a long while since I played chess with anyone but my butler. I just so happen to have a moment. Care to play a round?"
+      },
+      {
+        "Title": "More About Diluc: IV",
+        "Context": "Checkmate! ...Still, it's been a while since someone tested me this much."
+      },
+      {
+        "Title": "More About Diluc: V",
+        "Context": "Not bad. Be it chess or combat, you always seem to surprise me. Hm, working with you is quite the novelty. So... I look forward to continuing to work with you, partner."
+      },
+      {
+        "Title": "Diluc's Hobbies",
+        "Context": "The artwork in the manor? It's not mine. It's a collection that belonged to my late father."
+      },
+      {
+        "Title": "Diluc's Troubles",
+        "Context": "The darkness that seethes with evil, full of demons that must be vanquished, will take more than a blade to be torn asunder."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "You want to know what's in my glass? It's... grape juice. My drink of choice."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I don't like alcohol. It's just... I don't like how it feels in my mouth..."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Exquisite. Unforgettable flavors."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "I can see the chef put their heart into this one. A fine dish."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "...Umm, thanks."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Happy birthday. This is an important day for you. So tell me, what is it you wish for? If it is within my power to bestow it upon you, I will give it my consideration."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Power is necessary if we are to meet our objectives."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "What lies in wait for us? I rarely stop to think about it.\nNo matter what dares to stand in my way, I must press forward."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "I've become stronger... Though it is still not enough, I will always face the darkness.\nFor dawn to come, there must be those who dare to pierce the darkness with their light."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I used to believe... if I was to stamp out evil, I would have to walk alone in darkness. However, seeing your perseverance, I know I was wrong. Friend... I owe you my thanks."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Hmph."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Hah!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Haah!——"
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Huh!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Hyah!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Haah!—"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Your verdict is...!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Burn!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Time for — retribution!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Flames, purge!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Lay waste to the wicked!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Dawn, break forth!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Hmph, better than nothing."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "I suppose this will do."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "We'll need more where that came from."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Is that all you've got?"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Darn you!"
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "You will pay for that!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Careful!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Don't burn yourself out! Retreat!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Where did I go wrong..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "There can be no excuse... for defeat..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "My flame... has been... extinguished..."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Urgh!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Let's go."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "What's our objective?"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Let's finish this, swiftly."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "As the city of ballads and wines, Mondstadt's alcohol industry is renowned all over Teyvat.\nAs owner of the Dawn Winery, Diluc is essentially in charge of half the industry. This means he has a huge stream of revenue and an entire network of information, in the form of tavern patrons' gossip, right at his fingertips.\nIn a way, he is the uncrowned king of Mondstadt."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "The scent of wine always lingers in the air in Mondstadt.\nIf one were to follow the scent to its source, one would invariably arrive at Diluc's Dawn Winery.\nA wooden plaque proudly announces the winery's name, and beneath it is written the winery's motto:\n\"Shine True.\"\nMost interpret this to mean that the wines are brewed for consistency of taste, with time-honored techniques and that same healthy dose of sunny optimism that the dawn brings.\nMeanwhile, the more pragmatic Knights of Favonius are reminded of the long history of mutual support between the winery and the city.\nThe winery holds festivities from time to time. These events are routinely attended by enthusiastic fathers, eager to introduce their wonderful daughters to the young and single winery master.\nThis is all highly entertaining to the other guests, who watch on and comment, mockingly:\n\"We'd much rather Master Diluc stays married to the winery, given how good this wine is!\"\nDiluc deals impeccably with all situations, no matter who or what comes his way.\nDiluc is a fine young gentleman in every conceivable respect.\n"
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Diluc avoids talking about the past.\n\"If only Diluc were still a member of the Knights...\"\nAfter a few drinks, senior knights will say words to this effect with a sigh.\nThey refer to events from a long time ago, back when Diluc's father, Master Crepus, was still the owner of the winery. Master Crepus' wish was for his son to become the most esteemed knight of all and safeguard Mondstadt, the City of Freedom.\nAs per his father's wishes, Diluc trained rigorously to make himself worthy of the Ragnvindr name. Sure enough, he passed the Knights of Favonius' trials, swore the oath of protection to Mondstadt, and entered their ranks. Before long, he received an early promotion which saw him become the youngest-ever Cavalry Captain.\nOver the course of his missions and patrols, the denizens of Mondstadt gradually came to know this young and passionate Cavalry Captain.\nNo matter what the missions demanded from him, he always maintained his composure and his passion. No matter how big the challenge before him, his boundless courage always led him to the front line. The praise he received from his comrades and citizens spurred him on.\nBut the words of praise he valued most of all were:\n\"Good job. Now, that's my son.\"\nHis father's words fueled the fire inside his heart and served as his greatest motivation.\nHis faith was an unquenchable fire that burned strong and bright inside him.\nDiluc was so young back then."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "\"Sometimes, life can change in an instant.\"\nThe day that Crepus spoke these words to Diluc would turn out to be the latter's last as a Knight of Favonius.\nFor on that day, a horrific monster attacked the transport fleet he and his father were traveling with.\nThere was no time for Diluc to send for help. The monster was stronger than any foe the young Cavalry Captain had ever encountered, and overpowered him.\nDiluc could never have anticipated the way this battle would end: His father, who had been denied admittance into the Knights and who was shunned by the gods, defeated the monster with an unknown evil power — before that same power backfired, mortally wounding Crepus himself. Crepus died shortly after in his son's arms.\nWith a heavy heart, Diluc returned to the Knights' headquarters, only to receive an unthinkable order from Inspector Eroch: \"Conceal the truth.\"\nEroch insisted that the incident must be portrayed as an unfortunate accident in order to maintain the reputation of the Knights of Favonius in the eyes of the public.\nSuch was the sheer outrageousness of this request that Diluc did not think it was even worth trying to argue.\nDiluc's father had once said to him that the world would never turn its back on the faithful.\nBut now, the Knights of Favonius trampled on his faith like it was nothing. He couldn't help but wonder: What was his father's view on faith in his final moments?\nDiluc resigned from the Knights that day and left everything behind, including his Vision.\nHe swore to avenge his father's death, and to find the source of that occult power which had caused his father's demise."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "After Diluc resigned and discarded his Vision, he handed the running of the Dawn Winery over to the head housemaid and left Mondstadt altogether.\nDiluc traveled all across the seven nations of Teyvat in search of the truth.\nAll clues pointed toward a behemoth of an organization: The Fatui. He learned that they made counterfeit Visions in secret, calling them \"Delusions.\" A Delusion could amplify the power of its bearer to its extreme, but also carried the risk of backfiring. That was what had caused his father's death.\nWas it possible that his father could have obtained such a sacrilegious item in order to do good?\nDiluc knew he may never know the full truth, but that could never stop him from pursuing it.\nLike an eagle scouring the wilderness, he set off on his hunt for the truth. Determination burned like fire in his heart, unfathomable enigmas and unending battles could not sway him from his course. He pressed on relentlessly, scarred but undeterred, like a fiery tornado burning through the dense fog of mystery.\nThe Fatui's rulers, the Harbingers, monitored Diluc's progress from the shadows. The prowess with which he laid waste to numerous Fatui strongholds caught their attention and forced them to take action.\nDiluc narrowly escaped death at the hands of the Harbingers thanks to a third-party observer from the north, who was part of a vast underground intelligence network. The observer claimed to have been watching Diluc for some time, and approved of his methods.\nAfter his close encounter with death, Diluc took a long hard look at his past and the anger he had harbored for so long. Acknowledging his shortcomings, he decided to join the underground intelligence network.\nJust like when he first joined the Knights of Favonius, Diluc committed himself fully to his work. His talents and skills saw him rise steadily through the ranks into the upper echelons of the network.\nThe network was made up of volunteers, and many of its members had willingly given up their prior positions and reputations to join. Some had even abandoned their names.\nCould working with these new comrades finally restore the faith he once clung to? The faith that had been all but destroyed in the events surrounding his father's death?"
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "\"Shine True.\" The background to this motto is hotly contested, but to Diluc it has one simple, clear meaning.\n\"Evil cannot go unpunished.\nNever settle for mediocrity. Never forget that the dawn will one day come.\"\nDiluc's solitary sojourn lasted for three years.\nFour years on, Diluc had returned to Mondstadt and taken over as head of the family winery, now a young man.\nIn the space of these four years, Eroch had been purged from the Knights of Favonius after being shown to be a traitor, while Grand Master Varka had left on an expedition, leaving Master Jean to assume the role of Acting Grand Master.\nThe return of the Dawn Winery's master should have been a momentous occasion for Mondstadt, but strangely it went completely unnoticed.\nThe reason? Mondstadt's citizens were far too busy pondering the mysterious case of an unknown \"Guardian of Mondstadt.\"\nAll that was known about the anonymous guardian was that the smell of burning would follow in his wake, and that a flash of red flames would reveal his silhouette for but a moment in the darkness of the night, before he disappeared in an instant.\nThe bodies of monsters that had plagued Mondstadt for an age now lay dead in the wilderness... Mondstadt's most wanted thieves suddenly appeared bound and gagged, hanging from their feet in the statue plaza... All the Knights of Favonius were dispatched to reckon, once and for all, with the Abyss Mage behind countless crimes in the city, but they arrived only to discover that he had long since been killed...\nAided by wine-fueled conversations, word of the mysterious guardian spread swiftly, and he came to be known as the \"Darknight Hero.\"\nIn public, Diluc appeared to hold this hero in contempt, his face curling up in disgust every time the name was uttered.\nElzer of the Mondstadt Wine Guild was one of the select few who was in the know, and once queried Diluc about this: Was his disapproval of the Darknight Hero just an act, intended to throw the knights off his trail and protect his anonymity?\nBut Diluc simply frowned once more, and curtly replied: \"It's just a stupid name.\""
+      },
+      {
+        "Title": "Dawn Winery's Apple Cider",
+        "Context": "Diluc may hold the whole wine industry in the palm of his hand, but he himself is not fond of wine.\nAt Diluc's request, the Dawn Winery developed several alcohol-free beverages, a decision which was met with resounding approval from those in Mondstadt who could not drink alcohol but still wanted to partake in the drinking culture.\nOne of those alcohol-free beverages is Mondstadt's Apple Cider, the success of which is on a par with Dandelion Wine in terms of monthly sales volumes.\nSome think that Diluc must have such high standards when it comes to wine that he is never seen drinking the mediocre-quality beverages that are available to the public.\nOthers think that drinking wine must surely remind him of his father, and that that is why he does not touch it.\nWhen pressed about his drinking habits, he responds by saying that alcohol clouds his thoughts, and consuming it would impact his day-to-day work.\nBut the thing that people don't understand is: What kind of day-to-day work does a winery master do, if it requires him to never touch a drop of alcohol?"
+      },
+      {
+        "Title": "Vision",
+        "Context": "Crepus had two regrets in life. One was never becoming a knight, and the other was never obtaining a Vision.\nFor this reason, in the moment that Diluc received his Vision, he took it as a recognition by the gods of his and his father's shared ambition — finally, he could make his father proud.\nJust a few years later, his father died on a dark and gloomy day. The hopes and dreams that burned bright in Diluc's Vision were extinguished in the torrential rain that fell on that night.\nNo matter how upright and good-hearted a person may be, death will still come to them without warning.\nIs this where the tale of justice ends? Just like that?\nIt seemed to him that his Vision and his status as a knight were both equally ineffectual at enabling him to protect the things that he treasured most. It was time to discard them both, he decided.\nWhen he recognized his own powerlessness, his Vision became but a burden, of no greater service than a Delusion.\nEmpty titles were of no interest to him. He sought after ardent flames that would burn brighter than any other, and an unshakable resolve. Only a firm resolve can drive the truth-seeker forward, and only ardent flames can vanquish the ice that freezes the hand of justice.\nOn the day that Diluc returned to Mondstadt, he took up his Vision once more. The events of his years away had purged him of his childish immaturity, and turned him into a hero ready to shoulder his father's will once more. Each night, from the shadows, he fought for Mondstadt.\nHe did not discuss the past. But he did not deny the past, either.\nTo the lost, perhaps a Vision is a beacon of light given by the gods to help them find the path forward.\nBut to those with conviction, a Vision is simply an extension of their strength, a medium for channeling their willpower, a tribute to the experiences that have shaped them, and a testament to the story of their life so far."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 201601,
+      "Name": "Red Dead of Night",
+      "Description": "One of the outfits Diluc wears during covert actions, it resembles a flame dancing in the shadows. The crimson red traces it leaves behind at the edges of the enemy's vision will scar their nightmares forever.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_DilucCostumeFlamme",
+      "SideIcon": "UI_AvatarIcon_Side_DilucCostumeFlamme"
+    },
+    {
+      "Id": 201600,
+      "Name": "Darknight Blaze",
+      "Description": "Diluc's outfit. A smart and tasteful suit fit for a nobleman.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104114,
+    113011,
+    100055,
+    112034,
+    104306,
+    113003
+  ],
+  "NameCard": {
+    "Name": "Diluc: Flames",
+    "Description": "Namecard style.\nMaster Crepus painted many eagles during his lifetime, but he never could've foreseen creating an eagle with such fire.",
+    "Icon": "UI_NameCardIcon_Diluc",
+    "PicturePrefix": "UI_NameCardPic_Diluc"
+  },
+  "TraceEffect": {
+    "Id": 215005,
+    "Name": "Echo: Dark Side of Dawn",
+    "Description": "Diluc's Envisaged Echo. The night owl's pinions ignite, that a corner of the darkness may have light.",
+    "Icon": "UI_TraceEffectIcon_Diluc"
+  }
+}

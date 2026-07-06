@@ -1,0 +1,1275 @@
+{
+  "Id": 10000126,
+  "PromoteId": 126,
+  "Sort": 112,
+  "Body": 3,
+  "Icon": "UI_AvatarIcon_Zibai",
+  "SideIcon": "UI_AvatarIcon_Side_Zibai",
+  "Name": "Zibai",
+  "Description": "The White Horse Adeptus from Liyue's legends, known as Zibai. The most mysterious figure in Liyue's myths.",
+  "BeginTime": "2026-02-03T18:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 1,
+  "BaseValue": {
+    "HpBase": 1005.7526,
+    "AttackBase": 17.5028,
+    "DefenseBase": 74.48835
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 12631,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+            "4-Hit DMG|{param5:F1P}",
+            "Charged Attack DMG|{param6:F1P}+{param7:F1P}",
+            "Charged Attack Stamina Cost|{param8:F1}",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1263101,
+              "Level": 1,
+              "Parameters": [
+                0.505542,
+                0.465527,
+                0.308882,
+                0.308882,
+                0.778954,
+                0.73659,
+                0.73659,
+                20,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 1263102,
+              "Level": 2,
+              "Parameters": [
+                0.546691,
+                0.503418,
+                0.334023,
+                0.334023,
+                0.842357,
+                0.796545,
+                0.796545,
+                20,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 1263103,
+              "Level": 3,
+              "Parameters": [
+                0.58784,
+                0.54131,
+                0.359165,
+                0.359165,
+                0.90576,
+                0.8565,
+                0.8565,
+                20,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 1263104,
+              "Level": 4,
+              "Parameters": [
+                0.646624,
+                0.595441,
+                0.395082,
+                0.395082,
+                0.996336,
+                0.94215,
+                0.94215,
+                20,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 1263105,
+              "Level": 5,
+              "Parameters": [
+                0.687773,
+                0.633333,
+                0.420223,
+                0.420223,
+                1.059739,
+                1.002105,
+                1.002105,
+                20,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 1263106,
+              "Level": 6,
+              "Parameters": [
+                0.7348,
+                0.676638,
+                0.448956,
+                0.448956,
+                1.1322,
+                1.070625,
+                1.070625,
+                20,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 1263107,
+              "Level": 7,
+              "Parameters": [
+                0.799462,
+                0.736182,
+                0.488464,
+                0.488464,
+                1.231834,
+                1.16484,
+                1.16484,
+                20,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 1263108,
+              "Level": 8,
+              "Parameters": [
+                0.864125,
+                0.795726,
+                0.527973,
+                0.527973,
+                1.331467,
+                1.259055,
+                1.259055,
+                20,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 1263109,
+              "Level": 9,
+              "Parameters": [
+                0.928787,
+                0.85527,
+                0.567481,
+                0.567481,
+                1.431101,
+                1.35327,
+                1.35327,
+                20,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 1263110,
+              "Level": 10,
+              "Parameters": [
+                0.999328,
+                0.920227,
+                0.61058,
+                0.61058,
+                1.539792,
+                1.45605,
+                1.45605,
+                20,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 1263111,
+              "Level": 11,
+              "Parameters": [
+                1.069869,
+                0.985184,
+                0.65368,
+                0.65368,
+                1.648483,
+                1.55883,
+                1.55883,
+                20,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 1263112,
+              "Level": 12,
+              "Parameters": [
+                1.14041,
+                1.050141,
+                0.69678,
+                0.69678,
+                1.757174,
+                1.66161,
+                1.66161,
+                20,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 1263113,
+              "Level": 13,
+              "Parameters": [
+                1.21095,
+                1.115099,
+                0.73988,
+                0.73988,
+                1.865866,
+                1.76439,
+                1.76439,
+                20,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 1263114,
+              "Level": 14,
+              "Parameters": [
+                1.281491,
+                1.180056,
+                0.78298,
+                0.78298,
+                1.974557,
+                1.86717,
+                1.86717,
+                20,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 1263115,
+              "Level": 15,
+              "Parameters": [
+                1.352032,
+                1.245013,
+                0.826079,
+                0.826079,
+                2.083248,
+                1.96995,
+                1.96995,
+                20,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11261,
+        "Name": "Golden Blade's Petaled Touch",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_01"
+      },
+      {
+        "GroupId": 12632,
+        "Proud": {
+          "Descriptions": [
+            "Lunar Phase Shift 1-Hit DMG|{param6:F1P} DEF",
+            "Lunar Phase Shift 2-Hit DMG|{param7:F1P} DEF",
+            "Lunar Phase Shift 3-Hit DMG|{param8:F1P}+{param9:F1P} DEF",
+            "Lunar Phase Shift 4-Hit DMG|{param10:F1P} DEF",
+            "Lunar Phase Shift Charged Attack DMG|{param11:F1P}+{param12:F1P} DEF",
+            "Spirit Steed's Stride 1-Hit DMG|{param1:F1P} DEF",
+            "Spirit Steed's Stride 2-Hit DMG|{param2:F1P} DEF",
+            "Lunar Phase Shift 4-Hit Additional DMG|{param3:F1P} DEF",
+            "Lunar Phase Shift Duration|{param4:F1}s",
+            "CD|{param5:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1263201,
+              "Level": 1,
+              "Parameters": [
+                1.72528,
+                1.40968,
+                0.29456,
+                15,
+                18,
+                0.565792,
+                0.521007,
+                0.345694,
+                0.345694,
+                0.871788,
+                0.6595,
+                0.6595
+              ]
+            },
+            {
+              "Id": 1263202,
+              "Level": 2,
+              "Parameters": [
+                1.854676,
+                1.515406,
+                0.316652,
+                15,
+                18,
+                0.608226,
+                0.560083,
+                0.371621,
+                0.371621,
+                0.937172,
+                0.708962,
+                0.708962
+              ]
+            },
+            {
+              "Id": 1263203,
+              "Level": 3,
+              "Parameters": [
+                1.984072,
+                1.621132,
+                0.338744,
+                15,
+                18,
+                0.650661,
+                0.599158,
+                0.397548,
+                0.397548,
+                1.002556,
+                0.758425,
+                0.758425
+              ]
+            },
+            {
+              "Id": 1263204,
+              "Level": 4,
+              "Parameters": [
+                2.1566,
+                1.7621,
+                0.3682,
+                15,
+                18,
+                0.70724,
+                0.651259,
+                0.432117,
+                0.432117,
+                1.089735,
+                0.824375,
+                0.824375
+              ]
+            },
+            {
+              "Id": 1263205,
+              "Level": 5,
+              "Parameters": [
+                2.285996,
+                1.867826,
+                0.390292,
+                15,
+                18,
+                0.749674,
+                0.690335,
+                0.458044,
+                0.458044,
+                1.155119,
+                0.873838,
+                0.873838
+              ]
+            },
+            {
+              "Id": 1263206,
+              "Level": 6,
+              "Parameters": [
+                2.415392,
+                1.973552,
+                0.412384,
+                15,
+                18,
+                0.792109,
+                0.72941,
+                0.483971,
+                0.483971,
+                1.220503,
+                0.9233,
+                0.9233
+              ]
+            },
+            {
+              "Id": 1263207,
+              "Level": 7,
+              "Parameters": [
+                2.58792,
+                2.11452,
+                0.44184,
+                15,
+                18,
+                0.848688,
+                0.781511,
+                0.51854,
+                0.51854,
+                1.307682,
+                0.98925,
+                0.98925
+              ]
+            },
+            {
+              "Id": 1263208,
+              "Level": 8,
+              "Parameters": [
+                2.760448,
+                2.255488,
+                0.471296,
+                15,
+                18,
+                0.905267,
+                0.833612,
+                0.55311,
+                0.55311,
+                1.394861,
+                1.0552,
+                1.0552
+              ]
+            },
+            {
+              "Id": 1263209,
+              "Level": 9,
+              "Parameters": [
+                2.932976,
+                2.396456,
+                0.500752,
+                15,
+                18,
+                0.961846,
+                0.885712,
+                0.587679,
+                0.587679,
+                1.48204,
+                1.12115,
+                1.12115
+              ]
+            },
+            {
+              "Id": 1263210,
+              "Level": 10,
+              "Parameters": [
+                3.105504,
+                2.537424,
+                0.530208,
+                15,
+                18,
+                1.018426,
+                0.937813,
+                0.622248,
+                0.622248,
+                1.569218,
+                1.1871,
+                1.1871
+              ]
+            },
+            {
+              "Id": 1263211,
+              "Level": 11,
+              "Parameters": [
+                3.278032,
+                2.678392,
+                0.559664,
+                15,
+                18,
+                1.075005,
+                0.989914,
+                0.656818,
+                0.656818,
+                1.656397,
+                1.25305,
+                1.25305
+              ]
+            },
+            {
+              "Id": 1263212,
+              "Level": 12,
+              "Parameters": [
+                3.45056,
+                2.81936,
+                0.58912,
+                15,
+                18,
+                1.131584,
+                1.042014,
+                0.691387,
+                0.691387,
+                1.743576,
+                1.319,
+                1.319
+              ]
+            },
+            {
+              "Id": 1263213,
+              "Level": 13,
+              "Parameters": [
+                3.66622,
+                2.99557,
+                0.62594,
+                15,
+                18,
+                1.202308,
+                1.10714,
+                0.734599,
+                0.734599,
+                1.852549,
+                1.401437,
+                1.401437
+              ]
+            },
+            {
+              "Id": 1263214,
+              "Level": 14,
+              "Parameters": [
+                3.88188,
+                3.17178,
+                0.66276,
+                15,
+                18,
+                1.273032,
+                1.172266,
+                0.777811,
+                0.777811,
+                1.961523,
+                1.483875,
+                1.483875
+              ]
+            },
+            {
+              "Id": 1263215,
+              "Level": 15,
+              "Parameters": [
+                4.09754,
+                3.34799,
+                0.69958,
+                15,
+                18,
+                1.343756,
+                1.237392,
+                0.821022,
+                0.821022,
+                2.070496,
+                1.566312,
+                1.566312
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11262,
+        "Name": "Heaven and Earth Made Manifest",
+        "Description": "Summoning a shadow of her former powers, she switches to the {LINK#N11260001}<color=#FFD780FF>Lunar Phase Shift</color>{/LINK} mode.\nIn this mode, Zibai's Normal Attacks and Charged Attacks will deal <color=#FFE699FF>Geo DMG</color> that cannot be overridden by other infusions, and she can accrue special <color=#FFD780FF>Phase Shift Radiance</color> through different methods. Zibai can consume Phase Shift Radiance to unleash the special Elemental Skill <color=#FFD780FF>Spirit Steed's Stride</color>.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>\nWhile in the <color=#FFD780FF>Lunar Phase Shift</color> mode, when Zibai performs Normal Attacks, the fourth attack will deal an additional instance of <color=#FFE699FF>Geo DMG</color>, which is considered Lunar-Crystallize Reaction DMG.",
+        "Icon": "Skill_S_Zibai_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 12639,
+      "Proud": {
+        "Descriptions": [
+          "Skill 1-Hit DMG|{param1:F1P} DEF",
+          "Skill 2-Hit DMG|{param2:F1P} DEF",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1263901,
+            "Level": 1,
+            "Parameters": [
+              1.2696,
+              1.77744,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1263902,
+            "Level": 2,
+            "Parameters": [
+              1.36482,
+              1.910748,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1263903,
+            "Level": 3,
+            "Parameters": [
+              1.46004,
+              2.044056,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1263904,
+            "Level": 4,
+            "Parameters": [
+              1.587,
+              2.2218,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1263905,
+            "Level": 5,
+            "Parameters": [
+              1.68222,
+              2.355108,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1263906,
+            "Level": 6,
+            "Parameters": [
+              1.77744,
+              2.488416,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1263907,
+            "Level": 7,
+            "Parameters": [
+              1.9044,
+              2.66616,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1263908,
+            "Level": 8,
+            "Parameters": [
+              2.03136,
+              2.843904,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1263909,
+            "Level": 9,
+            "Parameters": [
+              2.15832,
+              3.021648,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1263910,
+            "Level": 10,
+            "Parameters": [
+              2.28528,
+              3.199392,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1263911,
+            "Level": 11,
+            "Parameters": [
+              2.41224,
+              3.377136,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1263912,
+            "Level": 12,
+            "Parameters": [
+              2.5392,
+              3.55488,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1263913,
+            "Level": 13,
+            "Parameters": [
+              2.6979,
+              3.77706,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1263914,
+            "Level": 14,
+            "Parameters": [
+              2.8566,
+              3.99924,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1263915,
+            "Level": 15,
+            "Parameters": [
+              3.0153,
+              4.22142,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11265,
+      "Name": "Tri-Sphere Eminence",
+      "Description": "Zibai operates the Jadelight Canopy, dealing two instances of <color=#FFE699FF>Geo DMG</color>, with the second damage instance being considered Lunar-Crystallize Reaction DMG.\nWhen cast, if Zibai is in the {LINK#N11260001}<color=#FFD780FF>Lunar Phase Shift</color>{/LINK}, the duration of the current Lunar Phase Shift will extend by an additional 1.7s.",
+      "Icon": "Skill_E_Zibai_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 12621,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1262101,
+              "Level": 1,
+              "Parameters": [
+                0.6,
+                4
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1262101,
+        "Name": "The Selenic Adeptus Descends",
+        "Description": "When casting the Elemental Skill <color=#FFD780FF>{LINK#S11262}Heaven and Earth Made Manifest{/LINK}</color>, or when nearby party members trigger Moondrift Harmony, Zibai gains the <color=#FFD780FF>Selenic Descent</color> effect for 4s: The DMG dealt by the 2nd hit of {LINK#N11260001}<color=#FFD780FF>Spirit Steed's Stride</color>{/LINK} is increased by 60% of Zibai's DEF.",
+        "Icon": "UI_Talent_S_Zibai_05"
+      },
+      {
+        "GroupId": 12622,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1262201,
+              "Level": 1,
+              "Parameters": [
+                0.15,
+                60
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1262201,
+        "Name": "Layered Peaks Pierce the Clouds",
+        "Description": "Other <color=#FFE699FF>Geo</color> party members increase Zibai's DEF by 15% each. <color=#80C0FFFF>Hydro</color> party members increase her Elemental Mastery by 60 each.",
+        "Icon": "UI_Talent_S_Zibai_06"
+      },
+      {
+        "GroupId": 12623,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1262301,
+              "Level": 1,
+              "Parameters": [
+                0.007,
+                0.14
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1262301,
+        "Name": "Moonsign Benediction: The Coursing Sun and Moon",
+        "Description": "When a party member triggers a Hydro Crystallize reaction, it will be converted into the Lunar-Crystallize reaction, with every 100 DEF that Zibai has increasing Lunar-Crystallize's Base DMG by 0.7%, up to a maximum of 14%.\n\nAdditionally, when Zibai is in the party, the party's <color=#FFD780FF>Moonsign</color> will increase by 1 level.",
+        "Icon": "UI_Talent_S_Zibai_07"
+      },
+      {
+        "GroupId": 12625,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1262501,
+              "Level": 1,
+              "Parameters": [
+                2
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1262501,
+        "Name": "Moonlit Flower Forest",
+        "Description": "At night (18:00 – 06:00), when not in combat, restore 1 Elemental Energy to Zibai every 2 seconds.\nThis effect does not work in Domains, Trounce Domains, or the Spiral Abyss.",
+        "Icon": "UI_Talent_S_Zibai_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1261,
+        "Name": "Burst Forth With Vigor, But Enter in Silence",
+        "Description": "After using the Elemental Skill <color=#FFD780FF>{LINK#S11262}Heaven and Earth Made Manifest{/LINK}</color>, Zibai will immediately gain 100 {LINK#N11260001}<color=#FFD780FF>Phase Shift Radiance</color>{/LINK}, and the max number of <color=#FFD780FF>Spirit Steed's Stride</color> usages per <color=#FFD780FF>Lunar Phase Shift</color> mode is increased to 5 times.\nAdditionally, each time you switch to the Lunar Phase Shift mode, the first Spirit Steed's Stride's 2nd-hit Lunar-Crystallize Reaction DMG is increased by 220%.",
+        "Icon": "UI_Talent_S_Zibai_01"
+      },
+      {
+        "Id": 1262,
+        "Name": "At Birth Are Souls Born, and in Death Leave But Husks",
+        "Description": "When in the {LINK#N11260001}<color=#FFD780FF>Lunar Phase Shift</color>{/LINK} mode, all nearby party members' Lunar-Crystallize Reaction DMG is increased by 30%.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: Ascension Talent <color=#FFD780FF>{LINK#P1262101}The Selenic Adeptus Descends{/LINK}</color> is enhanced: the DMG dealt by the 2nd hit of <color=#FFD780FF>Spirit Steed's Stride</color> is further increased by 550% of Zibai's DEF. You must first unlock the Ascension Talent \"The Selenic Adeptus Descends.\"",
+        "Icon": "UI_Talent_S_Zibai_02"
+      },
+      {
+        "Id": 1263,
+        "Name": "Free From Constraints and Worldly Ties",
+        "Description": "Increases the Level of Elemental Skill <color=#FFD780FF>{LINK#S11262}Heaven and Earth Made Manifest{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Zibai_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1264,
+        "Name": "The Spirit Passes, Then Form Follows",
+        "Description": "While in the {LINK#N11260001}<color=#FFD780FF>Lunar Phase Shift</color>{/LINK} mode, Zibai's Normal Attack sequence will not reset, and when <color=#FFD780FF>Spirit Steed's Stride</color> hits opponents, Zibai will gain the <color=#FFD780FF>\"Scattermoon Splendor\"</color> effect: The next time she uses Normal Attacks, the additional attack from her 4th hit will deal 250% of the original damage as Lunar-Crystallize Reaction DMG.",
+        "Icon": "UI_Talent_S_Zibai_03"
+      },
+      {
+        "Id": 1265,
+        "Name": "Perceive the Worthless and Debate It Not",
+        "Description": "Increases the Level of <color=#FFD780FF>{LINK#S11265}Tri-Sphere Eminence{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Zibai_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1266,
+        "Name": "The World, A Journey in Passing",
+        "Description": "While Zibai is in the {LINK#N11260001}<color=#FFD780FF>Lunar Phase Shift</color>{/LINK} mode, her <color=#FFD780FF>Phase Shift Radiance</color> gain rate is increased by 50%.\nAdditionally, <color=#FFD780FF>Spirit Steed's Stride</color> will change such that it will consume all Phase Shift Radiance. This will {LINK#N11190007}<color=#FFD780FF>elevate</color>{/LINK} the DMG dealt by this instance of Spirit Steed's Stride and the Lunar-Crystallize Reaction DMG dealt by Zibai within the next 3s by 1.6% for every point consumed above 70. This effect cannot stack.",
+        "Icon": "UI_Talent_S_Zibai_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "White Horse's Fleeting Spring",
+    "Detail": "The White Horse Adeptus from Liyue's legends, known as Zibai. The most mysterious figure in Liyue's myths.",
+    "Association": 13,
+    "Native": "Liyue Harbor",
+    "BirthMonth": 5,
+    "BirthDay": 15,
+    "VisionBefore": "Geo",
+    "VisionOverrideLocked": "Moon Wheel",
+    "VisionOverrideUnlocked": "Moon Wheel",
+    "ConstellationBefore": "Equa Alba",
+    "CvChinese": "Mace",
+    "CvJapanese": "福圓美里",
+    "CvEnglish": "Laura Welsh",
+    "CvKorean": "Chun Song-e",
+    "CookBonus": {
+      "OriginItemId": 108935,
+      "ItemId": 108949,
+      "InputList": [
+        100064,
+        100091,
+        100011,
+        110001
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "My name is Zibai. I was once known to mortals as the White Horse Adeptus, but now that I have descended to the mortal plane, you may simply call me Zibai."
+      },
+      {
+        "Title": "Chat: The Moon",
+        "Context": "The whole world shares the bounty of the skies, the rain and clouds that grace the earth beneath. The moon was never meant to be a foreign realm..."
+      },
+      {
+        "Title": "Chat: Mathematics",
+        "Context": "Mathematics is the foundation of all things. If you're interested, I can teach you some arithmetic... First, hold out both your hands. We'll start with the ten fingers."
+      },
+      {
+        "Title": "Chat: Adeptus Art",
+        "Context": "The Adeptus Arts are most miraculous, but unless one first cultivates the mind before cultivating these arts, all their feats will be like the moon's reflection on water, shattering at the slightest touch."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "The moon is barely visible..."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Hark, the thunderous wrath of heaven."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "At least it's not as cold as on the moon."
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "...Journeying through the desert is as arduous as one might imagine."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Good morning. Did you sleep well last night?"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "The sun is now at its peak. If you are tired, you should take a rest."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "The moon creeps silently into the sky... until, all of a sudden, we notice it shining down from the heavens."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Hehe, are you trying to stay up longer than the moon? You should go to sleep now. Goodnight."
+      },
+      {
+        "Title": "About Zibai: Travels",
+        "Context": "After I severed my Three Deadly Selves, my third self wandered the mortal realm and experienced many things. The most well-known of these are recorded in the book, Moonlit Bamboo Forest, which recounts my nighttime wanderings. Perhaps I should visit the bamboo forest for myself when I have the time."
+      },
+      {
+        "Title": "About Zibai: Seclusion",
+        "Context": "When I lived alone, I would often resort to mathematics to pass the time, devising and solving arithmetic puzzles. If you are interested, I can take you through some of the more amusing ones."
+      },
+      {
+        "Title": "About Us: Moongazing",
+        "Context": "When the people of Liyue write poems about homesickness, they often express their feelings by waxing lyrical about the moon. This makes abundant sense, as no matter how far apart we may be, everyone in the world shares the same moonlight. And yet, to truly appreciate the experience of gazing at the moon, surely the traveler would prefer to return home and share it with their friends and family. For, as the saying goes: \"The moon always shines brightest back home.\""
+      },
+      {
+        "Title": "About Us: Another Realm",
+        "Context": "You mentioned before that you do not hail from this world, and that you were separated from kin... Yet, despite the great hardships and dangers you have faced in this foreign land, you have fought on most courageously, displaying a rare degree of fortitude. Heaven does not forsake those who strive on — I am confident that you will achieve what you hope for. I do not say this as mere consolation, either. The people of Liyue often wish upon the moon for family reunions, and as a long-time resident of the lunar plane, surely my blessing counts for more than most."
+      },
+      {
+        "Title": "About the Moon Wheel",
+        "Context": "Once divine power is obtained, one may wield it as they will. As for me... Since I now dwell in Liyue, protecting this land naturally comes first."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "My Third Deadly Self, counted among the Eight Adepts, was named the Gold-Eyed Celadon Mare — but in fact, I... or, \"she\" had very little to do with the other adepts outside of the Tao Dou incident. She spent most of her time roaming elsewhere. According to my later memories, several other members of the Eight Adepts attempted to track her down, but four legs will always outrun two... I don't believe they ever did catch up with that horse."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "I am amazed that the Glaze Lily survives to this day... I still remember how the Yunlai Angler and the Wuwang Kid enjoyed pairing the petals with a glass of wine. Then, a few drinks later, they'd start doing a sword routine to add to the fun... Was some mysterious sword style born in the process? It's possible. All too often, however, they got too drunk to remember anything after the fact."
+      },
+      {
+        "Title": "About Zhongli",
+        "Context": "Though mortals call me the White Horse Adeptus, I was not bestowed with this title by Morax, the Prime of Adepti. I joined the celestial ranks very long ago, in ancient times, where I served as a moon envoy. But what is past is settled, and there is no need to dwell on it. Here in the present, people seem accustomed to calling me the White Horse Adeptus, and that is fine by me. Do I ever see Zhongli around, you ask? Why yes, I occasionally see him walking the streets with Director Hu or enjoying a cup of tea on his own. I must say, his life as a consultant seems far more pleasant and relaxed than his life as Rex Lapis."
+      },
+      {
+        "Title": "About Ningguang",
+        "Context": "I understand that the Liyue of today is built on trade and commerce — a highly involved and complex affair. For the Tianquan to shoulder the enormous responsibility of ruling Liyue, she must be a truly exceptional person. But I have heard that there are a total of seven Qixing within the Ministry of Civil Affairs, and I have only met a handful of them. I wonder where the others are? Hmm, I suppose they must be busy elsewhere with their duties..."
+      },
+      {
+        "Title": "About Keqing",
+        "Context": "I ran into the Yuheng once on the outskirts of Liyue. She was there with a team from the Ministry of Civil Affairs to conduct some land measurements. The terrain was inhospitable — mountainous, with sheer cliff faces, but there she was, leading from the front. I happened to notice her, and was about to clear some overgrown brambles from her path when, to my surprise, she drew her sword and swiftly cleared the path ahead by herself. I had heard that she had a reputation for being a bold and unstoppable commander, and I must say she certainly lives up to it."
+      },
+      {
+        "Title": "About Qiqi",
+        "Context": "Qiqi is an odd case. A little girl with the body of an adeptus, but not the soul, whose mental clarity fades in and out. I believe I have seen these symptoms before, hmm... If fate permits, I should like to examine her more fully and diagnose her condition."
+      },
+      {
+        "Title": "About Xianyun",
+        "Context": "I have met with Cloud Retainer — or \"Xianyun,\" as she has taken to calling herself. Although she is an adeptus, she rarely makes use of her attendant powers, preferring instead to tinker away with her mechanical devices. She explained that she seeks to create mechanisms that even ordinary mortals can use with ease. As it happened, I recalled some mechanical blueprints from Lang-Gan, so I proceeded to draw them for her. However, those mechanisms are so ancient that I'm not sure they'll be of any use in this day and age..."
+      },
+      {
+        "Title": "About Yanfei",
+        "Context": "I understand this young lady is part-human, part-adeptus? Most remarkable. From what Streetward Rambler has told me, it would seem that she belongs to a younger generation of adepti who have never seen war in their lifetime. And with her consummate mastery of the legal code, I also doubt she has to rely on her adeptal powers to gain wisdom. Heh... I still remember a few examples of case law from ancient times. I'll have to write them down in the coming days and ask Streetward Rambler to pass them on to her. I hope she'll like them."
+      },
+      {
+        "Title": "About Xiao",
+        "Context": "I've heard there was a time when the Yakshas, led by Morax, cleansed evil from all corners of the land. They performed many outstanding military feats in the process, but it came at the cost of a karmic debt which tormented them... Today, only General Alatus remains. I wonder if his karmic debt still troubles him? Perhaps there is some way in which I could help... What? Someone has already healed him? I see... Very good. I'm glad he's at peace."
+      },
+      {
+        "Title": "About Yaoyao",
+        "Context": "A disciple of Streetward Rambler, if I'm not mistaken. She possesses commendable strength and spirit for a mere mortal. Cloud Retainer has taken on several disciples as well, yes? Hmm... It is good to have successors. I wonder why I have never heard Mountain Shaper or Moon Carver display any interest in taking on disciples... Could it be that they haven't found any suitable candidates? Or perhaps they're too busy trotting off to enjoy themselves to think about such matters? Hah... Each of the adepti is so mystifying in their own unique way..."
+      },
+      {
+        "Title": "About Lan Yan",
+        "Context": "Lan Yan must surely be a descendant of Wind Reader. I recall that Wind Reader traveled with the Jade-Plumed Silverwing for a time, creating quite an enchanting tale. I'm sure both of them would be delighted to know how very wise and capable their latter-day descendants have turned out."
+      },
+      {
+        "Title": "About Hu Tao",
+        "Context": "I am well apprised of Director Hu's heroic act — facing death alone to protect the lives of others... Her courage and determination make her a worthy successor to the Wuwang Kid's legacy. It is most fortunate indeed that, thanks to your help, Director Hu did not end up like the Lone Butterfly of the Crimson Flame... Ahem, never mind that. No sense dwelling on what is past and gone."
+      },
+      {
+        "Title": "About the Three Moon Sisters",
+        "Context": "The Three Moon Sisters? Well... I understand that they had a very close relationship. When one of them did not feel like being on duty, she would beg another to take her place, then make it up to her later with gifts of makeup and jewelry. However, so liberal were they with this ad-hoc shift-swapping business that it sometimes led to chaos. For instance, there once was a year when all three moons aligned, but this only happened because they all got the timing mixed up. And so, there came a day on which only one moon should have been on duty, but all three appeared in the sky at once. They hurried to line up in a row, two moons trying their best to hide behind the one who was supposed to be on duty... but alas, they still gave the poor people down below a most terrible fright. They burned incense for several days straight... After that incident, the sisters asked me to try to convey to the people of the world that the sight of three moons together in the sky was not an omen of impending disaster, nor a sign that regime change was nigh. Naturally, I put the question back to them, inquiring what such a phenomenon should represent to humanity. They hemmed and hawed for a while before finally saying: \"It means... It means a festival is coming, and... everyone should eat Fullmoon Cakes, and... stuff...\""
+      },
+      {
+        "Title": "More About Zibai: I",
+        "Context": "The Liyue of today is a vastly different place from the land I once knew. Even the name \"Liyue\" did not exist back then. Many moons have passed and many tides have turned since that age, and everything I remember is now long gone. Poets like to say that time flies like a white steed — and curiously enough, my Third Deadly Self was known as the \"White Horse Adeptus.\" Perhaps this is karma at work... You'd like to hear more about my past? Very well, one more person knowing the truth can only be a good thing."
+      },
+      {
+        "Title": "More About Zibai: II",
+        "Context": "Long ago, I descended from the heavens to Lang-Gan to act as an envoy, guiding the people of that nation towards a peaceful future. The people of Lang-Gan called me the \"God of Soil and Grain,\" believing that I blessed their nation with favorable weather and bountiful harvests. I indeed had some influence over the weather, but the bountiful harvests were entirely due to the hard work of the nation's people. How did I guide Lang-Gan? Not with any grandeur or majesty, that's for sure. Save for a few interventions to divine the future, ward off evil, and prevent disasters, I spent the majority of my time as a teacher. I taught children how to read and write, do arithmetic, and play music. In my spare time, I compiled and edited texts on matters of etiquette, music, and the like."
+      },
+      {
+        "Title": "More About Zibai: III",
+        "Context": "In my view, the most important thing to focus on when guiding a nation into the future is the education of the heart. A people without virtue cannot build a nation that endures, however abundant their material wealth may be. Consider those from Liyue who climb the mountains in search of the adepti, motivated only by selfish gain. Even if they are lucky enough to obtain adeptal treasures, those treasures will ultimately be their undoing if their intentions are impure. Now, of course, while cultivating virtue in one's heart, one must also sharpen the blade in one's hand. As the saying goes, one ought to hope for the best but prepare for the worst."
+      },
+      {
+        "Title": "More About Zibai: IV",
+        "Context": "I have always been an avid reader. Nowadays, books are the only place where I can find the home and friends that I once knew. As ever, I annotate the text whenever I find factual errors. Recently, someone noticed my annotations and spent several days tracking me down to request that I teach history at his school. He was quite insistent, but his attitude seemed sincere to me, so I acquiesced and taught the classics there for a month... The sight of those students, eager to gain knowledge, took me right back to when I taught at the school in Lang-Gan. I never imagined that I would become a teacher again today... I suppose it was meant to be."
+      },
+      {
+        "Title": "More About Zibai: V",
+        "Context": "Although I spend much of my time wandering, I occasionally return to Liyue to teach classes at various schools, where I take the opportunity to correct the historical records on Lang-Gan. Back in my day, the study of history was considered a singularly important affair. After all, the mirror of the past teaches us lessons for the future. I'm sure the ancient sages would be delighted to know that someone is still curating the historical records of Lang-Gan all these centuries later.\n...You don't think this is very adeptus-like of me? Well, so be it. What the Liyue Harbor of today needs is not the extraordinary might of a handful of adepti, but the combined strength of its mortal populace united. I'm sure the other adepti are quite cognizant of this fact too. In any case, my role is to be a guide, and I continue to fulfill that by being an educator."
+      },
+      {
+        "Title": "Zibai's Hobbies",
+        "Context": "I suppose my hobby would be moon gazing. Now that I think about it, the thought of moon-gazing in Liyue is quite an interesting one."
+      },
+      {
+        "Title": "Zibai's Troubles",
+        "Context": "The idioms used in literature of this day and age are most... idiosyncratic. I fail to understand most of them, and trying to trace their origins is a very laborious endeavor. I suppose it will take me some time to get acquainted with the modern parlance..."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Have you ever tried a Fullmoon Cake? I used to share them with friends while moon gazing, but now... I can't seem to find them anywhere. It's quite a pity."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Raw meat is quite simply... Ahem. I just think meat should be cooked through prior to consumption."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Had I been able to sample such fine delicacies during my lunar exile, perhaps I would have stayed a little longer. Pah, I jest."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "A fine meal. I will savor it."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "This dish tastes... rather peculiar. Innovative, even."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Today is your birthday? Then we must celebrate. I recall that it is customary for the elderly to eat Longevity Noodles... Hehe, and while you appear youthful, I suspect that if we were to count the years since your birth, you would in fact be older than most people in Liyue Harbor. In that sense, preparing a bowl of Longevity Noodles for you would not be an inappropriate gesture... Hmm? Of course I know how to make them. I may have joined the celestial ranks in my time, but I wasn't born with a silver spoon in my mouth... *sigh* Frankly, the only reason I no longer have much of an appetite these days is probably all that time I spent in the heavens without any facility to cook... But I digress. Eating is the second most important affair in the world, so we must ensure that you enjoy a good bowl of Longevity Noodles before the day is through."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "I see."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "The moon waxes and wanes..."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "The spirit returns to its dwelling."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "As an adeptus, I must fulfill my duty."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Be cleansed."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Without further ado."
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Smite the dust."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Divine light, shield them."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Lofty wisdom will show us the way."
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "The skies clear, the glaze moon shines."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "A gift from the heavens. I shall gladly accept it."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "There is no harm in claiming forsaken possessions."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "You should take it. It may prove useful."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "...I was insufficiently prepared."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Remain steadfast..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Time to conclude this."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Be not reckless."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "...Perhaps you should reconsider."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "All things... must end."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "I cannot see the moon..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Dark clouds obscure the sky..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "My mistake."
+      },
+      {
+        "Title": "Light Hit Taken: II",
+        "Context": "A minor mishap."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Arrogant and presumptuous."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Foolish and ignorant."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "You shall have my company."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Where to?"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Clear skies grace our onward journey."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "The legends of Liyue make mention of a mysterious White Horse Adeptus.\nTraces of her story are scattered throughout books and folktales. Yet, across these diverse sources, accounts of her appearance are never quite the same.\nSome say she became a steed as white as snow and, in the days of the Archon War, aided Rex Lapis in attaining supremacy over the mortal realm.\nOthers whisper that her eyes, like amber touched with gold, hold the power to gaze through the desolate wastelands of time itself.\nStill others claim she has always lived on the moon, listening to the wishes of mortals, and keeping watch over the world of flickering lights below.\nYet, amidst all these different accounts, none could truly capture her visage, nor paint a likeness of her form.\nWhether amidst gentle tea-time chatter, or in debates pouring out over ink-filled scrolls, each view was a glimpse through a keyhole — catching naught but fragments, never the full picture.\nIn any case, she was as a shard of blessed light, a wild goose upon the snow, whose footprints vanish with the morning.\nStill, her yesteryears linger in the mortal dust, and her tale awaits the day it is unearthed by those who would seek it."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Few realize that the legends told of the White Horse Adeptus across Liyue were born from her demise.\nShe was an envoy from the heavens who descended, millennia ago, to guide the journey of mortals.\nShe watched over the ancient kingdom of Lang-Gan, a realm of Sand Crystals and gemstones. It was she who taught the people of the kingdom to till and to weave, and, as a result, they prospered with bountiful harvests, their granaries close to bursting.\nAnd so, the people of that ancient kingdom came to worship her as the God of Soil and Grain.\nUnder her wise counsel, Lang-Gan prospered, a resplendent pearl in a unified civilization.\nAlas, nothing lasts forever, and an unforeseen catastrophe descended from beyond the world — a devastating war erupted above the skies.\nThe shockwaves of that catastrophe, laden with dark malice, crashed over Lang-Gan. What followed was the resolute will of the heavens to purge the darkness.\nSacred will coalesced as though divine punishment to assail the ancient kingdom and scour its tainted land from the world.\nTo secure a glimmer of hope for the people she watched over, Zibai defied the will of the heavens.\nThus, with a grievous strike, her spirit was sundered into three, never to heed the desires of the mortal world again.\nYet, whether stirred by pity or to punish an act of betrayal, a shadow watching from the heavens above extended a hand to Zibai.\nFrom that moment on, Zibai's three severed spirits have been frozen in that fleeting instant, a fraction of a second before their dissipation...\nAnd her essence wanders eternally in a dream where both life and death are beyond reach."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "In a time long past, when Zibai descended upon the mortal world as an envoy of the moons, she befriended a being most unusual.\nThough he bore the semblance of a mortal man — one with a striking visage — he could ride the clouds and mist, move mountains and fill seas, shatter rocks, and grind jade to dust.\nYet despite possessing powers that could rival the divine, he was not of the angelic race — much to Zibai's amazement.\nOne day, they agreed to meet high in the mountains to duel in the Adeptus Arts — yet when the hour arrived, her opponent was nowhere to be seen. There was naught but a distant rumble on the horizon.\nZibai followed the sound and discovered three identical figures aloft in the clouds, engaged in a fierce confrontation.\nAmidst the clashing of their blades, she could hear, faintly, a battle cry — \"The Lord of Geo, Heaven's Star!\"\nBefore long, the fighting ended, and the three figures merged into one, alighting before her — it was none other than her astonishing friend.\nThis matter piqued Zibai's curiosity, and her friend did not withhold his secrets, imparting them most generously. And so she came to learn the ancient art of \"Tri-Factor Excision\" — or how to excise the \"Three Deadly Selves.\"\nThese so-called Deadly Selves are the impure thoughts and wicked desires that pollute the practitioner's mind. To cast them aside is to glimpse the unmarred self, pure and clean.\nBut Zibai, as an envoy of heaven and the Three Moons, harbored no such wayward thoughts — no matter how hard she tried, she could not sever her Three Deadly Selves.\nHer friend was unperturbed, simply remarking that \"The will of heaven shifts and does not stay, while white clouds drift and turn to hounds of grey.\" And with that, he turned and left.\nAt that time, she did not yet know how — on the long journey of guiding humanity that lay ahead of her — human emotions would surreptitiously take root in her heart.\nNor how, in a future more distant still — when her own eyes beheld the divine punishment that would descend upon the nation she cherished — resentment, fear, and sadness would gnaw at her soul like gangrene feasts on flesh.\nIn that moment, she would surely sever her Three Deadly Selves — an act through which she would abandon her former self, lie hidden among the mortals, and keep kindled a final chance for vengeance against the heavens.\nBut as her friend had said, \"The will of heaven shifts and does not stay, while white clouds drift and turn to hounds of grey.\" It was at that very moment that the shadow, which had long been watching her, would cast upon her a cage wrought of pity — and damnation."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "...Three... Five... Seven...\nIn the void moon, where time stands still, all things appear to have ceased their flow.\n...Fifty-three... Fifty-nine...\nBut time does not truly stop — it merely slows to the point of imperceptibility. A single day in the mortal world feels as though a century is passing here.\n...One hundred and fifty-one... One hundred and fifty-seven... One hundred and sixty-seven...\nIndeed, time must slowly pass — how else could one explain the erasure of the memories once engraved in my mind?\nFive hundred and fifty-seven...\nZiju.\nFive hundred and sixty-three...\nLang-Gan.\nFive hundred and sixty-nine...\nTheir voices. Their faces.\nWhat do these things mean? It's as if I can't bear to forget them, no matter what.\nBut what do these things mean? What do these things mean?\n...One thousand, five hundred and fifty-three...\nIs that brightness over there the light from a lantern? It feels familiar.\nIt's as though someone once told me... It's the direction of home.\nThere will come a day when I can return to my homeland. This is something I must not forget.\n...One thousand, five hundred and sixty-seven...\nWhat is home?\n...Three thousand, five hundred and fifty-seven...\nSo lonely... these numbers... Besides one, they have nothing but themselves.\n...Three thousand, five hundred and fifty-nine...\nYes, I am counting myself.\nEven if I forget my name, I won't forget that I exist.\nI won't forget that.\nSixteen thousand, one hundred twenty-seven...\nWhat am I counting?\n...Three... Five... Seven..."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "The White Horse Adeptus who frequently appears in Liyue's legends is Zijiao, the Third Deadly Self severed by Zibai.\nShe was the \"White Horse\" that the elder of Qingce Village said \"would assist the campaigns of the Lord of Geo.\"\nShe was the \"Daughter of Time\" known to the clans of Chenyu Vale.\nShe was the \"Gold-Eyed Celadon Mare\" referenced in The Sanctification of Tao Dou.\nShe was even the White Horse Adeptus who \"leapt across the chasm of five hundred years,\" according to the genealogy of the Lu clan.\nIn the days of the Archon War, she was freed by the Geo Archon from a painting of \"Zhanzhu the Moon-Devourer,\" and entered into a contract to aid him in his battles.\nYet the traces of time upon her still exerted an inexplicable influence on the ancient Geo Archon.\nThus, after the Archon War, Zijiao, aware that she carried a threat upon her person, retreated into the forested mountains — never to reveal herself again in the mortal realm.\nHowever, she was carefree and unrestrained by nature, and she took much joy in displaying her powers — since mortals' lifespans scarcely stretch a hundred years, little did the traces of time leave their marks.\nAnd so, she would sometimes reveal herself to mortals beset by woe. While helping them in their plight, she would quietly pass on stories from before the sky collapsed and the earth sank into itself.\nBut if the tales that humans recorded strayed from her intentions, she would likely give them no more than a glance before tossing them aside.\nAfter all, she was akin to a wild horse galloping freely across the empty wilds, with nothing to restrain her unfettered bounds.\nThough birthed from Zibai's demise, she deemed it not her fate to don her bridle — nor suffer the spurs of anyone else.\nEver is she ready to spring with grace and mirth into the ends of time — then, with a bang, transform into a shimmering cloud of golden dust."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "#Much like the unforeseen catastrophe that befell the land she loved, the turning point that altered Zibai's fate once more arrived from beyond the heavens.\nThanks to the efforts of the golden-haired traveler and {M#his}{F#her} companions, the true moon returned to the skies of Teyvat, while the false moon that had imprisoned Zibai's essence began to crumble.\nWith the aid of another old friend, the three fragments of Zibai's soul — tempered, slumbering, and carefree — greeted the hour of their return to the realm of mortals.\nWas all this foreseen by the shadow that had kept watch over Zibai? And had it now become the true reality beheld by the first angel?\nWhatever the truth, the guiding grace of the ancient kingdom had finally returned to her homeland, led by the summons of countless wishes.\nThough the land she returned to now bears little resemblance to its former days — the people worship a new god, the rites associated with lighting lanterns are completely transformed, and even the tales that she birthed have become unrecognizable...\nYet Zibai understands that the mortals she once protected did not allow their glorious civilization to perish. Instead, they took root in the soil of their homeland and flourished, carrying their traditions through the ages — their visage may have shifted with the passing generations, yet still they endure to this day.\nAs her old friend once said, had Lang-Gan's magnificent masonry not become part of the foundations upon which Liyue Harbor now stands, from whence would it gain its reputation as peaks adorning the clouded moon?\nAnd now, starved of all discontent, even the once insatiable fire of wrath has dimmed beyond sight.\nAfter all, her efforts were not in vain — she has returned to her homeland once more. This, it would seem, is enough.\nEnough, indeed, to offset the bitterness and hardship she has endured."
+      },
+      {
+        "Title": "A Boundless Land of Mountains and Rivers",
+        "Context": "Everything that makes up today's Liyue feels both familiar and fresh to Zibai.\nHence, while her spirit remains stable, she journeys across the land's vast mountains and rivers.\nShe traveled to Mt. Qingce to watch waterfalls cascade from on high, crashing down and flowing anew through limpid springs.\nShe ventured to Guyun Stone Forest to witness spears of rock thrust high into the vast sky above, their grandeur assailed by the howling winds — steadfast and resolute.\nShe journeyed to Jademouth to glimpse fishing boats dot the water, beneath towering pieces of ancient jade, as mountain songs echoed in the distance.\nShe wandered to Jueyun Karst to behold ethereal mists swirl and billow, like a lake of shifting white or an endless, upturned sea.\n...\nShe was the angel who had taught ancient Lang-Gan the art of silk paintings — now she called on those skills that had lain dormant for millennia.\nWhenever she encountered a scene of exceptional beauty, she would harness her adeptal powers to embroider the majestic landscape onto silk.\nOver time, the mountains and rivers she captured spread over thousands of miles, a magnificent, resplendent tapestry of silk...\nWhen free from all labor, Zibai would happily retrieve her silk painting and admire it. The longer she looked, the brighter her face would shine with joyous pride.\nIt's said that the Lord of Geo, upon observing her behavior, took quite an interest in the painting as well. Many times he asked to borrow it, but was consistently rebuffed — Zibai's reason being that it was not yet finished.\nWho knows how magnificent and grand this splendid landscape will be when it is finally completed?"
+      },
+      {
+        "Title": "Moon Wheel",
+        "Context": "As with her kin, Zibai was born in accordance with a divine plan.\nThus, she appeared beneath the skies of Teyvat, bearing the mantle of the heavens' mission.\nThe sparkling stars in the sky loved this world and sought to shape it into a garden of joy. Understanding her mission well, the emissary began to cultivate the soil.\nIf the soil were fertile, the flowers and plants would flourish — but if the soil were spoiled, the garden would become a putrid swamp.\nFlowers of joy would bloom under the fervent morning sunlight.\nWhile flowers tainted with putrescence must be uprooted with the soil, lest they profane the heavens' love.\nThus Zibai's destiny flowed the course of the divine plan that had birthed her — until, that is, that fateful day...\nFor reasons unknown, the shadow of a king, that shade of Time, placed before Zibai a crest engraved with the sigil of the moons.\nIts meaning was that she would no longer be just an agent of the morning stars. She would become an envoy of the moons as well.\nWas this, too, destined by the divine plan? So she wondered. Indeed, this was part of shaping the world.\nThus, she began to travel back and forth, from the morning stars to the moons to the garden. Though she did not accept that crest.\nSince she did not understand how such an extraneous crest could make the divine plan any more perfect, she judged its acceptance unnecessary to her mission.\nBut, over time, she began to realize that the will and love of the morning stars and the moons for the garden she was cultivating did not seem equal.\nThe brilliant light of the morning stars always shone with vigor across the entire garden, not lingering on any single flower for long.\nThey did not worry about scorching the flowers and soil that were not sacred, even if it would turn them to pure nothingness.\nThe silver moonlight was different. Shunning the soil, it preferred to seep into the roots of each scorched plant, offering solace to those that had suffered the withering light.\nOf the two, whose will and love was more sacred? Such doubts would arise within Zibai's heart from time to time.\nThe answer was clear — the solution lay within the riddle itself. The divine plan was, naturally, the most sacred.\nYet, for some reason, Zibai's gaze followed the moonlight, lingering longer and longer on the small patch of flowers and plants she tended herself.\nWhen flowers bloomed, they were like laughter. When flowers withered, they were like falling tears. But the soil cannot laugh, so why should what is born from it be capable of sorrow?\nLost in thought, Zibai cast her gaze...\nFlowers blooming, flowers withering. Fruits forming, fruits falling. New buds blossoming, flowers blooming, flowers withering...\nLater, she heard that a flowerbed managed by a peer had profaned the divine and was completely uprooted. Sorrow washed over her, but it soon turned to unease.\nIndeed, her mission from the heavens did not include sorrow. So how could one born from that very mission feel such an emotion?\nHad she been reduced to a plant that needed guidance? Had the will and love she once bore lost their sanctity?\nThis seemed to mark the moment that fate first went astray, only to culminate in another — the moment when the sky collapsed, and falsehoods descended.\nThe garden turned to scorched earth, with flowers and plants teetering on the brink of collapse. The scorching heat seared her will, leaving her powerless to gather her thoughts.\nAt that very moment, the moon-crest dropped onto her back like a falling tear.\nIt was the same cold glow she had once beheld and turned down, yet it bestowed upon her the same tranquility and solace as it did upon the flowers and plants in the garden.\nIn that fleeting moment of chill, she realized that before she was consumed by the scorching brilliance of the morning stars, she could still love her flowers for untold ages."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 212600,
+      "Name": "Moonlit Courser",
+      "Description": "Zibai's outfit, made out of silk and hemp. It is said that thousands of years ago, the ancient nation of Lang-Gan possessed exquisite weaving techniques that were brought down to the mortal world by Zibai, a messenger from the high heavens. Ages passed, that old kingdom and its long history faded away, scattered by time until they became as elusive as the moon's reflection on water. Yet their craft has somehow endured. Even now, it still lives on in every pulley and wooden frame of the spinning wheels in Liyue Harbor.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104174,
+    113084,
+    100030,
+    112127,
+    104318,
+    113075
+  ],
+  "NameCard": {
+    "Name": "Zibai: Veiled Vista",
+    "Description": "Namecard style.\nHeaven and earth are but a wayfarer's lodge, and time a wanderer passing through the ages.",
+    "Icon": "UI_NameCardIcon_Zibai",
+    "PicturePrefix": "UI_NameCardPic_Zibai"
+  }
+}

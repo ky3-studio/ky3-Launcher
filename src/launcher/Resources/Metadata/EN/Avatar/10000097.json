@@ -1,0 +1,1102 @@
+{
+  "Id": 10000097,
+  "PromoteId": 97,
+  "Sort": 82,
+  "Body": 1,
+  "Icon": "UI_AvatarIcon_Sethos",
+  "SideIcon": "UI_AvatarIcon_Side_Sethos",
+  "Name": "Sethos",
+  "Description": "The Temple of Silence's heir. Burdened with secrets, he comes from the sands.",
+  "BeginTime": "2024-06-04T00:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 12,
+  "BaseValue": {
+    "HpBase": 820.6119,
+    "AttackBase": 19.05456,
+    "DefenseBase": 46.9245
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 9731,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}+{param3:F1P}",
+            "3-Hit DMG|{param4:F1P}",
+            "Aimed Shot|{param5:F1P}",
+            "Aimed Shot Charge Level 1|{param6:F1P}",
+            "Shadowpiercing Shot DMG|{param7:F1P} ATK+{param8:F1P} Elemental Mastery",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:F1P}/{param11:F1P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 973101,
+              "Level": 1,
+              "Parameters": [
+                0.526139,
+                0.237962,
+                0.266084,
+                0.739867,
+                0.4386,
+                1.24,
+                1.4,
+                1.3456,
+                0.568288,
+                1.136335,
+                1.419344
+              ]
+            },
+            {
+              "Id": 973102,
+              "Level": 2,
+              "Parameters": [
+                0.568965,
+                0.257331,
+                0.287742,
+                0.800088,
+                0.4743,
+                1.333,
+                1.505,
+                1.44652,
+                0.614544,
+                1.228828,
+                1.534872
+              ]
+            },
+            {
+              "Id": 973103,
+              "Level": 3,
+              "Parameters": [
+                0.61179,
+                0.2767,
+                0.3094,
+                0.86031,
+                0.51,
+                1.426,
+                1.61,
+                1.54744,
+                0.6608,
+                1.32132,
+                1.6504
+              ]
+            },
+            {
+              "Id": 973104,
+              "Level": 4,
+              "Parameters": [
+                0.672969,
+                0.30437,
+                0.34034,
+                0.946341,
+                0.561,
+                1.55,
+                1.75,
+                1.682,
+                0.72688,
+                1.453452,
+                1.81544
+              ]
+            },
+            {
+              "Id": 973105,
+              "Level": 5,
+              "Parameters": [
+                0.715794,
+                0.323739,
+                0.361998,
+                1.006563,
+                0.5967,
+                1.643,
+                1.855,
+                1.78292,
+                0.773136,
+                1.545944,
+                1.930968
+              ]
+            },
+            {
+              "Id": 973106,
+              "Level": 6,
+              "Parameters": [
+                0.764737,
+                0.345875,
+                0.38675,
+                1.075387,
+                0.6375,
+                1.736,
+                1.96,
+                1.88384,
+                0.826,
+                1.65165,
+                2.063
+              ]
+            },
+            {
+              "Id": 973107,
+              "Level": 7,
+              "Parameters": [
+                0.832034,
+                0.376312,
+                0.420784,
+                1.170022,
+                0.6936,
+                1.86,
+                2.1,
+                2.0184,
+                0.898688,
+                1.796995,
+                2.244544
+              ]
+            },
+            {
+              "Id": 973108,
+              "Level": 8,
+              "Parameters": [
+                0.899331,
+                0.406749,
+                0.454818,
+                1.264656,
+                0.7497,
+                1.984,
+                2.24,
+                2.15296,
+                0.971376,
+                1.94234,
+                2.426088
+              ]
+            },
+            {
+              "Id": 973109,
+              "Level": 9,
+              "Parameters": [
+                0.966628,
+                0.437186,
+                0.488852,
+                1.35929,
+                0.8058,
+                2.108,
+                2.38,
+                2.28752,
+                1.044064,
+                2.087686,
+                2.607632
+              ]
+            },
+            {
+              "Id": 973110,
+              "Level": 10,
+              "Parameters": [
+                1.040043,
+                0.47039,
+                0.52598,
+                1.462527,
+                0.867,
+                2.232,
+                2.52,
+                2.42208,
+                1.12336,
+                2.246244,
+                2.80568
+              ]
+            },
+            {
+              "Id": 973111,
+              "Level": 11,
+              "Parameters": [
+                1.113458,
+                0.503594,
+                0.563108,
+                1.565764,
+                0.9282,
+                2.356,
+                2.66,
+                2.55664,
+                1.202656,
+                2.404802,
+                3.003728
+              ]
+            },
+            {
+              "Id": 973112,
+              "Level": 12,
+              "Parameters": [
+                1.186873,
+                0.536798,
+                0.600236,
+                1.669001,
+                0.9894,
+                2.48,
+                2.8,
+                2.6912,
+                1.281952,
+                2.563361,
+                3.201776
+              ]
+            },
+            {
+              "Id": 973113,
+              "Level": 13,
+              "Parameters": [
+                1.260287,
+                0.570002,
+                0.637364,
+                1.772239,
+                1.0506,
+                2.635,
+                2.975,
+                2.8594,
+                1.361248,
+                2.721919,
+                3.399824
+              ]
+            },
+            {
+              "Id": 973114,
+              "Level": 14,
+              "Parameters": [
+                1.333702,
+                0.603206,
+                0.674492,
+                1.875476,
+                1.1118,
+                2.79,
+                3.15,
+                3.0276,
+                1.440544,
+                2.880478,
+                3.597872
+              ]
+            },
+            {
+              "Id": 973115,
+              "Level": 15,
+              "Parameters": [
+                1.407117,
+                0.63641,
+                0.71162,
+                1.978713,
+                1.173,
+                2.945,
+                3.325,
+                3.1958,
+                1.51984,
+                3.039036,
+                3.79592
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10971,
+        "Name": "Royal Reed Archery",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, the power of Electro will accumulate on the arrowhead before the arrow is fired. Has different effects based on how long the energy has been charged:\n·Charge Level 1: Fires off an arrow carrying the power of lightning that deals <color=#FFACFFFF>Electro DMG</color>.\n·Charge Level 2: Fires off a <color=#FFD780FF>Shadowpiercing Shot</color> which can pierce enemies, dealing <color=#FFACFFFF>Electro DMG</color> to enemies along its path. After the Shadowpiercing Shot is fully charged, Sethos cannot move around.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_02"
+      },
+      {
+        "GroupId": 9732,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:F1P}",
+            "Energy Regeneration|{param2:I}",
+            "CD|{param3:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 973201,
+              "Level": 1,
+              "Parameters": [
+                1.156,
+                12,
+                8
+              ]
+            },
+            {
+              "Id": 973202,
+              "Level": 2,
+              "Parameters": [
+                1.2427,
+                12,
+                8
+              ]
+            },
+            {
+              "Id": 973203,
+              "Level": 3,
+              "Parameters": [
+                1.3294,
+                12,
+                8
+              ]
+            },
+            {
+              "Id": 973204,
+              "Level": 4,
+              "Parameters": [
+                1.445,
+                12,
+                8
+              ]
+            },
+            {
+              "Id": 973205,
+              "Level": 5,
+              "Parameters": [
+                1.5317,
+                12,
+                8
+              ]
+            },
+            {
+              "Id": 973206,
+              "Level": 6,
+              "Parameters": [
+                1.6184,
+                12,
+                8
+              ]
+            },
+            {
+              "Id": 973207,
+              "Level": 7,
+              "Parameters": [
+                1.734,
+                12,
+                8
+              ]
+            },
+            {
+              "Id": 973208,
+              "Level": 8,
+              "Parameters": [
+                1.8496,
+                12,
+                8
+              ]
+            },
+            {
+              "Id": 973209,
+              "Level": 9,
+              "Parameters": [
+                1.9652,
+                12,
+                8
+              ]
+            },
+            {
+              "Id": 973210,
+              "Level": 10,
+              "Parameters": [
+                2.0808,
+                12,
+                8
+              ]
+            },
+            {
+              "Id": 973211,
+              "Level": 11,
+              "Parameters": [
+                2.1964,
+                12,
+                8
+              ]
+            },
+            {
+              "Id": 973212,
+              "Level": 12,
+              "Parameters": [
+                2.312,
+                12,
+                8
+              ]
+            },
+            {
+              "Id": 973213,
+              "Level": 13,
+              "Parameters": [
+                2.4565,
+                12,
+                8
+              ]
+            },
+            {
+              "Id": 973214,
+              "Level": 14,
+              "Parameters": [
+                2.601,
+                12,
+                8
+              ]
+            },
+            {
+              "Id": 973215,
+              "Level": 15,
+              "Parameters": [
+                2.7455,
+                12,
+                8
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10972,
+        "Name": "Ancient Rite: The Thundering Sands",
+        "Description": "Gathers the might of thunder, dealing <color=#FFACFFFF>AoE Electro DMG</color> and quickly retreating. If this attack triggers Electro-Charged, Lunar-Charged, Superconduct, Overloaded, Quicken, Aggravate, Hyperbloom, or Electro Swirl reactions, Sethos recovers a certain amount of Elemental Energy.\n\n<i>\"The God indwelt Priest, the Magi who turned pits to springs, the singers of the sea of sand still spread their stories... But I know those are not legends, for they are our ancestors.\"</i>",
+        "Icon": "Skill_S_Sethos_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 9739,
+      "Proud": {
+        "Descriptions": [
+          "Dusk Bolt DMG Increase|{param1:F1P} Elemental Mastery",
+          "Twilight Meditation Duration|{param2:F1}s",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 973901,
+            "Level": 1,
+            "Parameters": [
+              1.9616,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 973902,
+            "Level": 2,
+            "Parameters": [
+              2.10872,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 973903,
+            "Level": 3,
+            "Parameters": [
+              2.25584,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 973904,
+            "Level": 4,
+            "Parameters": [
+              2.452,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 973905,
+            "Level": 5,
+            "Parameters": [
+              2.59912,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 973906,
+            "Level": 6,
+            "Parameters": [
+              2.74624,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 973907,
+            "Level": 7,
+            "Parameters": [
+              2.9424,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 973908,
+            "Level": 8,
+            "Parameters": [
+              3.13856,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 973909,
+            "Level": 9,
+            "Parameters": [
+              3.33472,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 973910,
+            "Level": 10,
+            "Parameters": [
+              3.53088,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 973911,
+            "Level": 11,
+            "Parameters": [
+              3.72704,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 973912,
+            "Level": 12,
+            "Parameters": [
+              3.9232,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 973913,
+            "Level": 13,
+            "Parameters": [
+              4.1684,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 973914,
+            "Level": 14,
+            "Parameters": [
+              4.4136,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 973915,
+            "Level": 15,
+            "Parameters": [
+              4.6588,
+              8,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10975,
+      "Name": "Secret Rite: Twilight Shadowpiercer",
+      "Description": "Perform a secret rite, entering the \"Twilight Meditation\" state, during which Sethos's Normal Attacks will be converted into enemy-piercing <color=#FFD780FF>Dusk Bolts</color>: Deal <color=#FFACFFFF>Electro DMG</color> to opponents in its path, with DMG increased based on Sethos's Elemental Mastery.\nSethos cannot perform Aimed Shots while in this state.\nDMG dealt by Dusk Bolts is considered Charged Attack DMG.\nThis effect will be canceled when Sethos leaves the field.\n\n<i>The archives of the Temple of Silence preserve many tomes left behind by Akhtamun, from the era of King Deshret. Many secret rituals of great power are recorded within, but even among the Temple of Silence, very few could master them.</i>",
+      "Icon": "Skill_E_Sethos_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 9721,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 972101,
+              "Level": 1,
+              "Parameters": [
+                20,
+                0.5
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 972101,
+        "Name": "Black Kite's Enigma",
+        "Description": "When Aiming, the charging time is decreased by 0.285s based on each point of Sethos's current Elemental Energy. Charging time can be reduced to a minimum of 0.3s through this method and a maximum of 20 Energy can be tallied. If a <color=#FFD780FF>Shadowpiercing Shot</color> is fired, consume the tallied amount of Elemental Energy; if it is a Charge Level 1 shot, then consume 50% of the tallied amount of Elemental Energy.",
+        "Icon": "UI_Talent_S_Sethos_05"
+      },
+      {
+        "GroupId": 9722,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 972201,
+              "Level": 1,
+              "Parameters": [
+                15,
+                7,
+                5,
+                4
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 972201,
+        "Name": "The Sand King's Boon",
+        "Description": "Sethos gains the \"Scorching Sandshade\" effect, increasing the DMG dealt by <color=#FFD780FF>Shadowpiercing Shots</color> by 700% of Sethos's Elemental Mastery.\nThe Scorching Sandshade effect will be canceled when any of the following conditions are met:\n· 5s after a Shadowpiercing Shot first hits an opponent.\n· After 4 Shadowpiercing Shots strike opponents.\n\nWhen a Shadowpiercing Shot affected by Scorching Sandshade first hits an opponent, Sethos will regain Scorching Sandshade after 15s.",
+        "Icon": "UI_Talent_S_Sethos_06"
+      },
+      {
+        "GroupId": 9723,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 972301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 972301,
+        "Name": "Thoth's Revelation",
+        "Description": "Displays the location of nearby <color=#FFD780FF>resources unique to Sumeru</color> on the mini-map.",
+        "Icon": "UI_Talent_S_Tighnari_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 971,
+        "Name": "Sealed Shrine's Spiritsong",
+        "Description": "The CRIT Rate of <color=#FFD780FF>Shadowpiercing Shot</color> is increased by 15%.",
+        "Icon": "UI_Talent_S_Sethos_01"
+      },
+      {
+        "Id": 972,
+        "Name": "Papyrus Scripture of Silent Secrets",
+        "Description": "When any of the following conditions are met, Sethos gains a 15% <color=#FFACFFFF>Electro DMG Bonus</color> for 10s that may stack twice, with each stack duration counted independently:\n· Consuming Elemental Energy through Aimed Shots. You must first unlock the Ascension Talent \"Black Kite's Enigma\" to trigger this condition.\n· Regaining Elemental Energy by triggering Elemental Reactions using <color=#FFD780FF>Ancient Rite: The Thundering Sands</color>.\n· Using <color=#FFD780FF>Secret Rite: Twilight Shadowpiercer</color>.",
+        "Icon": "UI_Talent_S_Sethos_02"
+      },
+      {
+        "Id": 973,
+        "Name": "Ode to the Moonrise Sage",
+        "Description": "Increases the Level of <color=#FFD780FF>Normal Attack: Royal Reed Archery</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Sethos_01",
+        "ExtraLevel": {
+          "Index": 1,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 974,
+        "Name": "Beneficent Plumage",
+        "Description": "When a <color=#FFD780FF>Shadowpiercing Shot</color> or <color=#FFD780FF>Dusk Bolt</color> strikes 2 or more opponents, all nearby party members gain 80 Elemental Mastery for 10s.",
+        "Icon": "UI_Talent_S_Sethos_03"
+      },
+      {
+        "Id": 975,
+        "Name": "Record of the Desolate God's Burning Sands",
+        "Description": "Increases the Level of <color=#FFD780FF>Secret Rite: Twilight Shadowpiercer</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Sethos_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 976,
+        "Name": "Pylon of the Sojourning Sun Temple",
+        "Description": "After <color=#FFD780FF>Shadowpiercing Shot</color> strikes an opponent, the Elemental Energy consumed by the Ascension Talent \"Black Kite's Enigma\" will be returned. This effect can be triggered up to once every 15s. You must first unlock the Ascension Talent \"Black Kite's Enigma.\"",
+        "Icon": "UI_Talent_S_Sethos_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Wisdom's Measure",
+    "Detail": "The Temple of Silence's heir. Burdened with secrets, he comes from the sands.",
+    "Association": 7,
+    "Native": "Temple of Silence",
+    "BirthMonth": 5,
+    "BirthDay": 31,
+    "VisionBefore": "Electro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Basileos Delta",
+    "CvChinese": "李兰陵",
+    "CvJapanese": "千葉翔也",
+    "CvEnglish": "Zeno Robinson",
+    "CvKorean": "Kim Dong-hyun",
+    "CookBonus": {
+      "OriginItemId": 108395,
+      "ItemId": 108679,
+      "InputList": [
+        100061,
+        110001,
+        110014
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "#Sorry {M#Sir}{F#Ma'am}, were you looking for me? Hello, hello, I'm Sethos. What can I do for you? ...Actually, you know what? This seems like more of a sit-down conversation. Come with me, I know a good place."
+      },
+      {
+        "Title": "Chat: Thinking",
+        "Context": "If you're always asking \"Why?\", you end up thinking yourself into a corner. Sometimes, it's better to let go."
+      },
+      {
+        "Title": "Chat: Commotion",
+        "Context": "Do you hear that? Something's going on over there. I wanna go check it out — early bird gets the worm."
+      },
+      {
+        "Title": "Chat: School",
+        "Context": "There's a lot of very fascinating people in the Akademiya... kinda makes me wanna go study there."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "No umbrella for me, thanks. It hardly ever rains in the desert, so I'm gonna enjoy this while I can."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "No no no... Quick, let's get to lower ground!"
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "*shudder* ...Quick quick quick, let's pick up the pace! Jogging will warm us up!"
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "The weather's so perfect, it would be such a waste not to go camping. How does fishing in an oasis sound?"
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "Have you ever tried drawing in the sand? From up high, it makes for an incredible sight! But you need to pick somewhere less exposed to the wind."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Goooood morning, wanna join me for breakfast? I'm gonna fix some Shawarma Wraps — I've been craving them since last night."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "It's tempting to have a coffee at this hour, but it'll ruin your afternoon nap."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "The desert's a pretty lifeless place during the day, but you can't beat the view of the stars at night."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "I'm gonna hit the hay. Wanna catch the sunrise tomorrow."
+      },
+      {
+        "Title": "About Sethos: Impression",
+        "Context": "Some of my elders say I'm difficult to control, like a wild animal. I actually don't disagree with that, but don't you think it's kind of an issue that they'd want to control how other people think in the first place?"
+      },
+      {
+        "Title": "About Sethos: Leadership",
+        "Context": "To be honest, being a leader is a little stressful, especially in the Temple of Silence. But after all the years I spent with Grandfather, I'm at least clear in my own mind about the areas where I cannot compromise. After the Rite of Duels, and having been given the chance to make so many new friends, I now know the direction I want to take the Temple of Silence in from here on out. Don't worry — I won't mess it up."
+      },
+      {
+        "Title": "About Us: Chitchat",
+        "Context": "When you approach someone while intending to ingratiate yourself with them, it often makes for a stilted conversation. It's much easier to build up a rapport by just hanging out and talking about whatever."
+      },
+      {
+        "Title": "About Us: Bonfire",
+        "Context": "Lighting a bonfire at night keeps you warm and keeps wild animals away. To me, you're just like a bonfire.\nToo abstract? Alright, let me put it more directly: I think of you as a good friend."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "When desert people receive a Vision, everyone will claim it's a blessing from such-and-such a god, depending on their faith. Watching them get into an argument over someone else's Vision, about who's stronger out of Lord Hermanubis and Lord Sobek, is a guilty pleasure of mine."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "If you're ever traveling in the desert, journeying by night is a good choice. It does get very cold, but you don't get as dehydrated as you would under the harsh sun. Putting on a few extra layers is way easier than spending half your journey time looking for a water source."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "I don't know where Mourning Flowers got their name, it's quite an evocative image though. Maybe somebody saw one wilting in the sunlight and thought it looked like a person hanging their head in sorrow."
+      },
+      {
+        "Title": "About Cyno",
+        "Context": "Cyno is truly outstanding — absolutely a worthy heir to Hermanubis's power. As General Mahamatra, he has the utmost reverence for knowledge and wisdom. If the Akademiya and the Temple of Silence do start working together again, I'll take comfort in the fact that he's there.\nOh yeah, and another great thing about Cyno: You know the way he talks? It's just... so funny."
+      },
+      {
+        "Title": "About Tighnari",
+        "Context": "Tighnari's made of strong stuff. I only found out after the fact that he doesn't cope well with the desert climate — never would've guessed from how he performed in the Rite of Duels. I was also surprised when he sent me a letter inviting me to visit Gandharva Ville, saying it would be a good chance to meet some of Cyno's friends. Are those guys always such a hoot with their jokes? Dinner with them must be hilarious — I can't wait!"
+      },
+      {
+        "Title": "About Alhaitham and Kaveh",
+        "Context": "I saw those two at the tavern once. And another time at the cafe. ...Actually, I think I saw them once at the Grand Bazaar, too. The architect guy, he's always talking in a hushed tone — I guess he doesn't want people to hear, but uh... Okay, it's not like I purposely listen in, it's just... Something about those two guys hanging out together, you just can't look away."
+      },
+      {
+        "Title": "About the Wanderer",
+        "Context": "Who is that guy, anyway? A foreign exchange student, or something? He has a pretty incredible hat, never seen anything like it. I tried to get a closer look once, but then I blinked and he was gone. Shame. I won't let him get away next time, though. I also hear he has some pretty interesting ideas... Gotta have a chat with him sometime!"
+      },
+      {
+        "Title": "About Dehya",
+        "Context": "Flame-Mane... everyone in the desert knows that name. The Eremites aren't exactly saints, as I'm sure you know, but Dehya's one of the few solid and dependable ones out there. If you ever want to explore the Great Red Sand, Dehya's the second-best guide you could ask for. First-best being me, obviously."
+      },
+      {
+        "Title": "About Candace",
+        "Context": "Have you ever experienced Candace's hospitality? She cooks very generous portions — even I could barely finish. So long as you're on the receiving end of her hospitality and not her wrath, you'll live a long and happy life."
+      },
+      {
+        "Title": "About Faruzan",
+        "Context": "It's so rare to meet someone even more chummy than me! One minute I was taking a stroll near the Akademiya, the next minute she'd taken me on as a student, and was insisting on giving me a tour. She gave me a real fright, though, because she said that if I joined Haravatat, I'd get the 20-tongues language-learning package, mastery of all 100% guaranteed... I asked around, and it seems like that's just an in-joke among Akademiya students — there is no 20-language graduation requirement after all. But I don't get it... how is that funny? It's only gonna put people off studying there."
+      },
+      {
+        "Title": "About Nilou",
+        "Context": "I usually can't stay still for more than a few minutes, but Zubayr Theater is one place I don't mind just standing and watching while Nilou dances on the stage. It's a rare skill to be able to bring people such a sense of peace."
+      },
+      {
+        "Title": "More About Sethos: I",
+        "Context": "You got questions? You've come to the right person. On the off chance I don't have the answers, I can ask around and help you find out."
+      },
+      {
+        "Title": "More About Sethos: II",
+        "Context": "If you've any equipment or tools that need repairing, I can help you with that. ...What's my job? Well, I'm an unemployed vagrant, obviously. I wouldn't have the time to be such a handyman otherwise, would I?"
+      },
+      {
+        "Title": "More About Sethos: III",
+        "Context": "I like going on hiking trips. I always map out my route, pack a bag, and pick a good day. I enjoy having it all carefully planned out. Of course, you gotta leave some flexibility in your schedule, too — you might make a new friend along the way."
+      },
+      {
+        "Title": "More About Sethos: IV",
+        "Context": "I always have a great time at the Grand Bazaar. I like to pick a bunch of different herbs and spices to mix with some freshly grilled meat. I never make a note of the exact combination of ingredients though, so I usually end up with one-off recipes. What do you think? Any interest in trying one of my limited-edition, one-time-only delicacies?"
+      },
+      {
+        "Title": "More About Sethos: V",
+        "Context": "I've lived in the Temple of Silence for as long as I can remember, and to be honest, I've never had many of my own decisions to make. I'm still not sure if withstanding the power of Hermanubis was a blessing or a curse, but it definitely gave me a higher purpose in life.\nThere's a million things you can regret in life, so I'm just happy I was able to bring that one situation to a close. I'm sure Grandfather will rest in peace knowing that I got to become the leader of the Temple of Silence, and that Hermanubis's power has finally found a home."
+      },
+      {
+        "Title": "Sethos's Hobbies",
+        "Context": "I get bored when I'm inside for too long. I always like exploring the great outdoors, whatever the weather might be like."
+      },
+      {
+        "Title": "Sethos's Troubles",
+        "Context": "You have to be fully prepared before you venture out on a trip, especially when you're going somewhere you haven't been before. The first time I spent the night in the rainforest, I didn't realize that I should've brought a waterproof groundsheet... That was a miserable night."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "I like mixing spices — but only because it makes meat taste better. It's a means to an end."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Green vegetables are nice to look at and all, but eating them... Ehh."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Mm, mm, mm! I'm kind of a big eater, hope that's okay with you?"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Not bad! What's the recipe? I'll take some on my next hiking trip."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Hmm... hmm... Nope, I can't really taste anything. Let me try some more..."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "You know, your hair would look amazing if it was done up in a desert-dweller style... How about kicking off the next year of your life with a new hairdo, huh? If you're up for it, just leave it to me. You'll look glamorous, I promise you."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "This is your training regimen, huh? Interesting."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Wow... So this is what three consecutive days of reading feels like."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Amazing... I feel like I could sprint from Aaru Village all the way to The Mausoleum of King Deshret without breaking a sweat. I'm not even joking — you up for it?"
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I had no idea you'd help me reach this level. Sometimes, an over-reliance on ancient wisdom can make you forget the strength that you and your companions already have. Thank you for being there to remind me."
+      },
+      {
+        "Title": "Normal Attack: I",
+        "Context": "Behind you!"
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Way ahead of ya."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Excuse me!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Gimme some space."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "By the sages' wisdom."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Glory to Al-Ahmar!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Move, or be moved!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Hey, check this out. See anything you like?"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "This is a nice surprise."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Aah! It's a monster! ...No dice? I'll get you next time."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "I'm not giving up."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "I'm okay, I still got this..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Well, shucks..."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Is it my turn yet?"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Just say the word..."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "It was all... in vain..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "The sun sets... forever..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Grandfather... I'm sorry..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Okay, okay..."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Whoa, whoa, whoa..."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Gah, I was too slow!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Be right there."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Cool cool cool, you're the boss."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Bags packed and ready to roll."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "A new face appeared in town, though none can recall when he first showed up.\nThe young man from the desert would show up at any occasion he was inclined to attend with a bearing so confident and natural that many only realized quite some time later that the person they had spoken with earlier was, in fact, a newcomer. After much asking around, they finally found out his name: Sethos.\n\"So, where did you meet again? He's an old friend of yours, right?\" People would ask each other such questions, before discovering to their surprise that none of them had known him for long.\nLike a grain of sand blown over the high city walls by some wild desert wind, Sethos blended into the crowd with ease, speaking with them of homelands and travels. People warmed to him immediately, for his unforgettable green eyes and way with words led them to believe he would make a good friend indeed.\nAs the sun set, their new friend would regale them with the tale of how he and a group of Eremites had led Sumpter Beasts away from a sandstorm, setting up camp by an oasis to pass the night; of the desert night's bitter cold, and the euphoria of daybreak that made it all worth enduring.\nIn Sethos's telling, suffering is merely another kind of experience, and all experiences can become stories; and the fonder people grew of his stories, the more they looked forward to seeing him.\nBut one time, when his audience had collapsed on the tables in a drunken stupor, the still-sober Sethos was left sitting there spinning his cup.\nThis is what he said:\n\"All of you are always saying I seem too ordinary in my stories. So how about this for a change... In this one, I am the protagonist, and with me I carry a golden key, which I may use at any moment to open a long-lost treasure trove and lead the people to a place of great mystery. There's no way you'd actually prefer a story like that, right?\"\n\"If you ask me, that kind of story is just boring. Stories of extraordinary things happening to ordinary people... those are the ones worth telling! Besides, even if mysterious, special individuals like that did exist, they wouldn't be as young as you.\" The tavern's owner just couldn't stop himself from interjecting.\n\"Exactly,\" replied Sethos, who for some reason looked particularly happy."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Few city dwellers have ever seen Sethos running at full tilt. Had they, they would know that this was a young man who could run like no other; any who wished to keep up with him would have to run as fast as the wind.\nSethos himself is very proud of this, and often remarks: \"You're gonna need some special skills if you want to survive in the desert, right? Mine's running, and running fast.\"\nThanks to his fleetness of foot, those around him often entrust him with important errands — though strictly speaking, these aren't actual jobs, not even of the part-time variety. Things like delivering letters for bedridden elderly folks, or fetching homework for forgetful students who left it at home.\nHe is repaid in all sorts of different ways. Some students give Mora and others buy him coffee, while others still have offered up their treasured Genius Invokation TCG cards as a token of their heartfelt appreciation.\nAs for the older folks, their gifts have always been... more unique, shall we say. Aside from money, some even treat Sethos to a home-cooked meal, or dig up some old ornament to present to him as a gift.\nBut the easy-going Sethos always accepts everything he is given. He adds it all to his collection, which he sorts by value: Mora, ornaments, useless odds and ends, Genius Invokation TCG cards, and everything else.\nA woman on Treasures Street once asked him, \"You never say no to any task! Don't tell me you actually enjoy running errands?\"\nSethos loved eating the fried fish rolls she made. Apparently, aside from her own family and neighbors, the helpful Sethos, who lent a hand to her shop, was the only one on the entire street who had ever had the pleasure of tasting that delectable delicacy.\nHolding the meal box she'd just given him, Sethos stood there for quite some time, thinking the question through.\n\"Huh, you're right,\" he finally said, as if something had just dawned upon him. \"Come to think of it, I really do enjoy running errands.\"\n\"You don't want a better line of work? You seem to know a lot, and you're pretty capable, too... If you'd like, I could help you find a job?\" The woman sounded very concerned for him.\nSethos simply waved his hand and pointed at a figure that was flying past in the distance. \"What do you think that person's doing?\"\nThe woman looked up and saw a large, round object sailing by, with what appeared to be a person beneath it. In a tone of surprise, she replied, \"Isn't that another errand-runner?\"\n\"That's Hat Guy, a student from Vahumana who's known for his speed,\" said Sethos, raising his fork. \"But I've heard that sometimes, he also gets called on to deliver letters for the Akademiya.\"\n\"Do you mean that... that's just what he likes to do?\"\n\"No, no, I don't think he likes it, but I'm not like him. I'm a people person, and I enjoy running errands and taking on the easy tasks. And look, you even treated me to a meal! Besides, I've got a proper job too, so don't worry about me.\"\nOver the next few days, Sethos was busy with his own affairs. One day, as he passed by the side gate of the Akademiya to handle something, he suddenly heard a voice jeering at him from the treetops: \"The errand-boy's come running all the way to the Akademiya. Quite the busy little bee, aren't you?\"\nPerched up there on the branch was none other than Hat Guy himself. Smiling back, Sethos raised the lunchbox in his hand and smiled at him, saying, \"I'm just here for lunch — someone gave me this. Want some?\"\n\"I'd say you're no errand boy at all. You've got a more important role.\"\n\"I'd say that you're no student either. You've got a more important role.\"\nSometimes, a few words are all it takes. Without another word, Hat Guy tugged the brim of his hat and vanished in an instant. As for who Sethos really was, or what this \"important role\" of his was... Well, there was no one around to hear their little exchange anyway, let alone care.\nSethos took his time finding a spot with a good view where he could sit down and enjoy this free lunch of his, which he'd received for a multitude of reasons. Having the chance to meet all these different people, and receive all these gifts in return... He was quite satisfied that this was all thanks to his running ability."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "There was no way Sethos's drunken companions could ever have remembered the great hero he'd referred to in his story, the mysterious figure who held the key to a treasure trove. The only one who did was the owner Lambad, who would say to his tavern's customers: \"It's the storyteller's own words! Do you think something like that's really possible?\"\nMost of those confronted with such questions could do little more than stare blankly at one another. Dori picked up her fork, complete with fish roll spiked on its tines, muttering: \"If it was, he'd be rich by now.\"\n\"Perhaps he's already become the leader of a tribe? Stories like that are those of the desert,\" rejoined Candace, who was sitting at the next table.\nDehya, however, laughed, as the thought of someone sprang into her mind. Turning to Lambad, she quietly asked: \"And why not? You don't have to be old to have a mysterious background. Who knows, maybe they'd even be the type to drink here, and they'd even have to find a day job, too.\"\nAt this very moment, Sethos was somewhere far, far away. His footsteps were light, despite the pack he was carrying. On the horizon, the sun was slowly sinking, the shadow of night rising through the distant sky. Seeing that the day was nearly spent, a look of fear was writ large upon the face of the Vahumana researcher he was traveling with. Looking at his employer, Sethos handed him some a flask of drinking water without saying a word.\nSethos had considerately slowed down to a fraction of his usual pace so that the researcher would not fall behind. At night, employer and guide shared a single large tent. As Sethos set up the tent, the researcher sat warming himself by the fire Sethos had built, a look of gratitude spread over his face.\n\"You don't seem like you want for money. Why are you willing to guide people like me through the desert? You look like you've lived in the desert for quite some time, too.\"\n\"I had the time, and you needed the help, so I came along. I grew up in the desert, so I couldn't get into the Akademiya myself, and besides, I'm curious about what you're researching. So for me, serving as a guide and a guard for researchers is a chance to hear interesting new things.\"\nSethos's expression was calm and composed, just as it was whenever he told stories, exposing nothing — and he looked quite sincere too. Faced with such sincerity, it was difficult for the researcher to refuse, so he began to recount some entertaining anecdotes about the Akademiya, with complaints about his classmates, colleagues, and research mixed in. Resting his chin on his palm, Sethos sat there listening intently, seemingly fascinated with the researcher's life.\nOver the next week, Sethos accompanied this little-known researcher as he completed his investigation, then seeing him safely back to the Akademiya. When the researcher handed over the payment, Sethos pocketed the money without so much as checking the amount, then walked back out of the entrance with a wave.\nAs he did so, he just so happened to run into the General Mahamatra. As he looked at Sethos, and then at the now-distant researcher, Cyno knew exactly what had transpired.\n\"How's your side-gig going? Do you find their work interesting?\" asked Cyno.\nFollowing Cyno's lead, Sethos leaned against the railing and gazed out onto the sunset.\n\"It was alright. But these scholars are just so stubborn. He kept insisting that there must be a tribe of sages living in seclusion out there in the desert. I told him there was no way they'd be living next to the Mausoleum of King Deshret, but he just wouldn't believe me. In the end, I told him that the place I grew up was just like that, but he didn't believe that either.\"\n\"Tell him that Tighnari, Collei, Dehya, and myself can all vouch for the fact that you are, in fact, from that kind of place.\"\nSethos sighed. \"Then he'd just think me a liar. People from 'places like that' aren't the type who have time for guide work.\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "In Sumeru, both scholars who study King Deshret's civilization and those followers of his who can recite the names of Al-Ahmar and his Seven Pillars by heart know the significance of the \"Temple of Silence.\"\nIt is an extremely ancient organization, and if people knew of its mission, they would sum it up with two words: \"sublime\" and \"stewardship.\"\nIt has been over a thousand years since Hermanubis, the greatest of all sages, established the Temple of Silence. Their sole aim is one that is also truly sublime, and that is to steward the knowledge that should not find its way out into the world. Over the long centuries, the desert has experienced great turmoil. The Temple of Silence has fled from the devastation of war, taking with them all the knowledge they possessed as they moved from place to place. For a time, they came to the rainforest and worked with the Akademiya, but as they could not trust those wielding power in the Akademiya, they left. Finally, they found a place for themselves in a forgotten corner of the world.\nSethos, the one who tells this story, is himself from the Temple of Silence. Despite his claims to be ordinary, he is anything but. Or perhaps an ordinary identity is how Sethos wishes to make up for his own life.\nSethos was born in the desert. His mother is said to have been a merchant, and his father a mercenary, and a number of clues have led some to conjecture that they must originally have come from a desert tribe with a tiny population. But alas, it is unfortunate that Sethos has no memory of his birth parents. As far back as he can remember, he was already in the care of Bamoun, living in the Temple of Silence as his adoptive grandson.\nAfter some years, it was discovered that Sethos's special constitution was capable of receiving a Ba fragment of Hermanubis. As a result of this, he was indwelt by a great power with which he established a sacred connection.\nThe other whose childhood experiences were similar to his — Cyno, the General Mahamatra — had long gained the admiration of Sumeru's people. But Sethos didn't want to become a famed, high-profile figure like Cyno. Therefore, after arriving in Sumeru City, he chose to live in anonymity, assuming the most ordinary of ordinary identities.\nHe found a place to live and invented a perfectly normal and reasonable-sounding family background for himself. Sometimes, he serves as a desert guide, while others, he helps merchant caravans with this and that. When he is bored, he can be found in various locales, chatting with friends to pass the time.\nOf course, that is when he is free; things are very different when he is busy. Lesser Lord Kusanali sometimes invites him to meet with the sages to discuss various issues that arise as they work together — for Sethos has now succeeded Bamoun as the leader of the Temple of Silence, and under his leadership, the Temple has once again established a collaborative relationship with the Akademiya.\nOn the one hand, a perfectly ordinary new resident of Sumeru City; on the other, the new leader of the Temple of Silence. Both of these identities are his, despite the apparent gulf between them.\nIf you were to ask him which life he preferred, however, rather than choosing between them, he would simply reply: \"Ah, come on now, there's no need for that! Making unnecessary choices is such a tiring way to live! Think about it, you wouldn't force someone to choose between a bottle of liquor and a cup of coffee, would you? Aren't they both me?\""
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Bamoun, the previous leader of the Temple of Silence, had been called the \"Bearer of Bloodshed.\" Where this title came from, Sethos neither knows, nor particularly cares.\nGrowing up as one of its members, Sethos had a very particular perspective on the Temple of Silence, one that was the opposite of that of an ordinary child. It took him many years to understand what the Temple of Silence meant for the world.\nAs the leader of such an organization, how heavy was the burden that Bamoun had borne? Sethos believed he knew, yet still found it difficult to imagine.\nThe Bamoun that Sethos remembers is not the stern, upright leader, but rather the kind, patient grandfather. When Bamoun still had his health, he would often take Sethos into the desert.\nCamping, exploring, hunting... if it was fun, they did it; and it was during this period of his life that Sethos learned how to cook, navigate, and set up camp, all thanks to his grandfather's patient guidance.\nAt that time, Sethos was a very mischievous child. He would spend his time endlessly running around chasing tumbleweed, determined to discover whatever it was that they contained. During the daytime, Bamoun would let him run wherever he wanted; but when the sun began to set, he would personally come to fetch him, leading him back to their tent where Bamoun would sit reading through some abstruse books or documents.\nSethos would crouch by his side, sneaking furtive glances at whatever he was reading. Seeing this, Bamoun would say: \"You don't have to pretend you're not looking, you know. This isn't some kind of rare ancient text. You don't think I'd actually bring something like that out here with us, do you?\"\nThe ancient texts cared for by the Temple of Silence are of the utmost importance, and even the leader cannot remove them without good cause. Most of the books that Bamoun brought with him were from his personal collection, while others he purchased from desert merchants.\nGrandfather and grandson would huddle together, reading through the texts one word at a time. When Sethos could not understand, he would sit there scribbling silently away in the sand, writing out riddles he had read about or proverbs that others had told him from memory.\nOne time, he asked Bamoun: \"What's a rabbit?\"\nBamoun replied: \"The prey of beasts; the nemesis of hay.\"\nHe followed this up with: \"What's a flying serpent then?\"\nBamoun chuckled for a moment, then replied, \"It is a creature who blessed you. The priest said that you would have the dexterity of the fox and the agility of the flying serpent.\"\nAfter night had passed and not long after dawn, Sethos would arrive at the top of the hill with the various weapons that he was carrying. In this place, he would hone his combat skills — first ranged, then melee. Archery was taught by several other figures; but it was Bamoun himself who taught him how to fight with a polearm.\nSethos asked Bamoun: \"Is this your favorite weapon, Grandpa?\"\nBamoun replied: \"It is the one for which I am best suited. The polearm is the hallmark of a skilled warrior and the emblem of the brave. Even Cyrus fought with a polearm, though whether he may be considered a brave warrior... That is another question.\"\nSethos did not wait to hear what his grandfather might say about that, but he could tell from his expression that he did not think Cyrus was a coward. In fact, that was precisely why he hesitated.\nLater, Sethos acquired a polearm of his own. Interestingly, it was clear at a glance that it had not been made by any desert dweller. Bamoun did not tell him where it had originally come from, saying only that it had been left behind by Cyrus, and that as it was a fine weapon, no harm in putting it to use.\nSethos was sharp enough that from then on, he had a vague sense of the deeper meaning behind Bamoun's words.\nThere were many times when he had thought to himself: Did Bamoun really hate Cyrus? But perhaps his apparent distaste was simply a way of complaining about the fact that his friend had left. If you actually hated someone, you wouldn't hold on to their old possessions. Yet from the ordinary way that Bamoun had brought out and presented him with the polearm, you would have thought that there was nothing special about it at all.\nWhat the Temple of Silence needed was what Bamoun needed; yet Bamoun's feelings were his own, and were not those of the Temple. As its leader, it was only right that he should hate someone like Cyrus. But as a friend, perhaps he was glad that Cyrus had shown the courage that he had.\nSuch contradictions would not, and could not, persist indefinitely. There would inevitably come a day when his grandfather would find some way of resolving his little differences with the Temple.\nTrimming down branches to help the tree keep growing — that was the type of person Bamoun was. Yet even if he would always remain that kind, patient figure in Sethos's heart, he still carried the burden of bloodshed.\nThe next person Bamoun sacrificed would be himself. Sethos understood that Bamoun too knew his grandson would figure this out sooner or later.\nThus did grandfather and grandson reach a silent understanding — that a day would come when they would no longer be an ordinary grandfather and adoptive grandson, but instead two individuals standing at the crossroads of history."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "On many nights, Sethos's stories return to the same word: \"Friend.\"\n\"Friends\" appear in all corners of his stories, each varying in appearance, age, gender, and identity. Sethos never mentions them by name, saying only that: \"My friends are all good people. Without them, it's hard to exaggerate how dull my life would be.\"\nThe General Mahamatra Cyno might be considered to be Sethos's first friend. Strictly speaking, they've known each other for a very long time indeed. Sethos had already spoken to him during those years when Cyno was still with the Temple of Silence. Later on, the two of them underwent the same test, having Ba fragments implanted and losing a portion of their memories as a result. Cyno's reaction was much more severe, causing him to almost completely forget that he had ever lived at the Temple of Silence; whereas Sethos had not been so badly affected, losing only some memories related to people.\nHe couldn't tell you exactly what he'd forgotten. Perhaps his birth parents, or the faces of his childhood friends. Fortunately, with the exception of Cyno, all of his childhood friends lived at the Temple of Silence, so learning what they looked like again wasn't difficult. And despite the fact that they had forgotten each other, he and Cyno were later to meet again, after which they struck up a true friendship. This pleased Sethos very much, who likes to call Cyno his \"bro.\"\nAfter Sethos left the desert, his \"bro\" Cyno's close friend Tighnari also became an important friend of his. Living in Avidya Forest, this Tighnarian Forest Watcher had an endless stock of stories about the forest, its plants, and the people who would get lost in it. Coming from the desert, where such greenery was practically nonexistent, Sethos was full of curiosity about Tighnari's life and work. Sometimes, he and Cyno would go over to Tighnari's place to mooch a meal, and he'd even compete with Collei to see who was better at setting up a camp.\nNot long after, he also made friends with the reliable mercenary Dehya, as well as Candace, the Guardian of Aaru Village. Candace even invited Sethos to visit Aaru Village, telling the residents that he was a \"traveler\" from the heart of the desert.\nSeeing his bemused look, Candace replied, \"You're so busy, rushing here and there every day, so I thought that was the best way to describe you. It must be a wonderful way to live, able to walk on your chosen path...\"\nIt was a still, cloudless day when Sethos returned to the Temple of Silence.\nHe assigned matters that needed to be addressed to those there, and he had also brought back many rainforest specialties to share with his people. Among the members of the Temple of Silence, there were many who had never been to the rainforest, so it was a real treat for them to see such unfamiliar things.\nOnce official matters had been settled, Sethos got out his old waterskin, his favorite lyre, and a leaf from Avidya Forest, then set off. He spent that night by the fire he lit beside Bamoun's tomb.\nHe was not sad, nor was he confused — he simply wanted to return to the place where his grandfather had raised him. Being by Bamoun's side gave him an unparalleled sense of calm.\n\"My friend picked this leaf for me. There's nothing special about it, really. I just thought it looked beautiful, and I wanted to show you.\"\n\"Oh yeah, and another friend called me a 'traveler.' What do you think about that, Grandpa? Whenever you claimed to be a traveler, everyone used to say you hadn't been to enough places. But now I have. Plus, I have plenty of free time, so I guess that makes me more of a traveler than you ever were.\"\nWith this, he threw the leaf into the fire. The flames leapt up for a moment, almost as if a hand were gently waving back at him.\nWith a smile, Sethos gave the firewood a prod and smiled. \"Excellent, I'll take that as a yes.\""
+      },
+      {
+        "Title": "Old Waterskin",
+        "Context": "An old waterskin made from animal hide. It is older, in fact, than its owner. Sethos treasures it greatly and always has it by his side.\nIt was a gift he received from his grandfather. It is said that some tribes reward their warriors with high-quality waterskins. Though Bamoun did not say it to Sethos in so many words, he gave it to him after the latter shot a faraway bird out of the sky while it was in mid-flight.\nThe strap of the waterskin bears his name, engraved by his grandfather's own hands."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Normally, a hunt only begins in the wake of a disaster. But sometimes, there are exceptions.\nDue to a companion's mistake, Sethos, Bamoun, and two other members of the Temple of Silence found themselves surrounded by wild beasts. They fought the pack for an entire night, managing to slay several of their number just before dawn.\nIn this encounter, Sethos fought with energy and courage. He knew that Bamoun, being advanced in years and having previously sustained injuries in various battles in the past, was no longer up to the task of taking charge of battles out in the wilds. So as the sun rose on the second day, the first arrow to pierce a beast's skull came from the bow of Sethos.\nBut his arrows, tearing through the swift wind like drops of water falling into a pan of hot oil, simply ignited a fresh round of even fiercer fighting.\nYet in the space of a moment, the ground suddenly began to shift. The beasts, who were focused on hunting down their human prey, failed to notice; and by the time they did, they were already caught in the quicksand, several being swallowed up in an instant.\nSethos led the others to higher ground, using a rope and other tools to climb up to the highest nearby point as swiftly as they could. Of course, the beasts that had not yet been engulfed by the quicksand discovered this refuge too, and threw themselves at it, only to be shot down one by one by Sethos's arrows.\nAfter a moment of chaos, the surviving beasts fled, and the surviving people breathed a sigh of relief. But at that very moment, a storm bore down upon them, and within a short while, it hit them with its full force.\nIn the raging wind, Sethos could barely keep hold of the three others. In desperation, he tied the rope around their waists, tethered the other end to himself, and clung to the back of the rocky mountainside with all his strength.\nHe knew not how long it took, but the roaring sound of the wind finally came to a stop. Holding on as tightly as he could, Sethos slowly pulled the others back to his side.\nAfter observing the weather to ensure it was safe, they returned the way they had come. Along the way, Sethos spotted two more beasts — one large, one small — lying dead at the bottom of a cliff.\nLooking at them from a distance, Bamoun remarked, \"Most likely a parent and a child. The larger one was probably chasing the smaller one, trying to drag it back, before it too lost its footing and they were blown down together.\"\n\"They were with that pack of beasts just now... But weren't there quite a few smaller ones? This large one died trying to save just a single one, and now the other small ones will be left unprotected. The losses far outweigh the gains... It shouldn't have taken the risk,\" said one of the other members, shaking their head.\nTrying to rescue your children first from quicksand, then a storm... It sounded like an almost impossible task. Sethos had noticed, though, that Bamoun had been staring at that spot the whole time, as if it had reminded him of something. But in the end he said nothing more.\nHaving survived the disaster, the group slowly departed, with Sethos bringing up the rear. Before leaving, Sethos glanced back down at the scene below to regard the unsuccessful beast one last time.\nHaving just experienced a genuine life-or-death situation, he now felt an additional weight in his pocket — a Vision. But in moments like that, the chain of events that led up to it happening seemed irrelevant; sometimes, the only thing people could see was the end result.\nSethos gripped the Vision tightly through the fabric of his pocket, reflecting calmly yet deeply upon this truth."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 209700,
+      "Name": "Golden Sandstrider",
+      "Description": "Sethos's outfit. The lapel is the shade of golden sand, embodying the vast desert that raised him, as well as his faith.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104144,
+    113058,
+    101224,
+    112067,
+    104337,
+    113043
+  ],
+  "NameCard": {
+    "Name": "Sethos: Ba Fragment",
+    "Description": "Namecard style.\nEach Ba Fragment has its unique symbol. While this one resembles an hourglass, it represents King Deshret's rule over both Upper and Lower Setekh. As for the light within, it stands for the wisdom of Hermanubis.",
+    "Icon": "UI_NameCardIcon_Sethos",
+    "PicturePrefix": "UI_NameCardPic_Sethos"
+  }
+}

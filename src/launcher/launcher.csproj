@@ -113,14 +113,14 @@
 		<Content Include="Resource\ThirdParty\*">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
-		<Content Include="Resources\Metadata\CHS\**\*.json">
+		<None Update="Resources\Metadata\**\*.json">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</Content>
+		</None>
 	</ItemGroup>
 
 	<Target Name="PruneStaleBundledMetadata" BeforeTargets="BeforeBuild">
 		<ItemGroup>
-			<_ExpectedBundledMetadata Include="@(Content)" Condition="$([System.String]::Copy('%(Content.Identity)').StartsWith('Resources\Metadata\'))" />
+			<_ExpectedBundledMetadata Include="@(None)" Condition="$([System.String]::Copy('%(None.Identity)').StartsWith('Resources\Metadata\'))" />
 			<_ExpectedBundledMetadataOutput Include="@(_ExpectedBundledMetadata->'$(OutDir)%(Identity)')" />
 			<_ExistingBundledMetadataOutput Include="$(OutDir)Resources\Metadata\**\*.json" />
 			<_OrphanBundledMetadataOutput Include="@(_ExistingBundledMetadataOutput)" Exclude="@(_ExpectedBundledMetadataOutput)" />

@@ -1,0 +1,1408 @@
+{
+  "Id": 10000129,
+  "PromoteId": 129,
+  "Sort": 117,
+  "Body": 1,
+  "Icon": "UI_AvatarIcon_Lohen",
+  "SideIcon": "UI_AvatarIcon_Side_Lohen",
+  "Name": "Lohen",
+  "Description": "Vice Captain of the Knights of Favonius Ranged Company, a knight known for his unorthodox approach and fondness for unconventional tactics.",
+  "BeginTime": "2026-06-09T18:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 1000.986,
+    "AttackBase": 26.8128,
+    "DefenseBase": 61.0266
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 12931,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}×3",
+            "4-Hit DMG|{param4:F1P}",
+            "5-Hit DMG|{param5:F1P}+{param6:F1P}",
+            "Charged Attack DMG|{param7:F1P}×2",
+            "Charged Attack Stamina Cost|{param8:F1}",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1293101,
+              "Level": 1,
+              "Parameters": [
+                0.539917,
+                0.564427,
+                0.254199,
+                0.752259,
+                0.368579,
+                0.552868,
+                0.65876,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 1293102,
+              "Level": 2,
+              "Parameters": [
+                0.583863,
+                0.610368,
+                0.274889,
+                0.81349,
+                0.398579,
+                0.597869,
+                0.71238,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 1293103,
+              "Level": 3,
+              "Parameters": [
+                0.62781,
+                0.65631,
+                0.29558,
+                0.87472,
+                0.42858,
+                0.64287,
+                0.766,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 1293104,
+              "Level": 4,
+              "Parameters": [
+                0.690591,
+                0.721941,
+                0.325138,
+                0.962192,
+                0.471438,
+                0.707157,
+                0.8426,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 1293105,
+              "Level": 5,
+              "Parameters": [
+                0.734538,
+                0.767883,
+                0.345829,
+                1.023422,
+                0.501439,
+                0.752158,
+                0.89622,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 1293106,
+              "Level": 6,
+              "Parameters": [
+                0.784763,
+                0.820387,
+                0.369475,
+                1.0934,
+                0.535725,
+                0.803588,
+                0.9575,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 1293107,
+              "Level": 7,
+              "Parameters": [
+                0.853822,
+                0.892582,
+                0.401989,
+                1.189619,
+                0.582869,
+                0.874303,
+                1.04176,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 1293108,
+              "Level": 8,
+              "Parameters": [
+                0.922881,
+                0.964776,
+                0.434503,
+                1.285838,
+                0.630013,
+                0.945019,
+                1.12602,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 1293109,
+              "Level": 9,
+              "Parameters": [
+                0.99194,
+                1.03697,
+                0.467016,
+                1.382058,
+                0.677156,
+                1.015735,
+                1.21028,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 1293110,
+              "Level": 10,
+              "Parameters": [
+                1.067277,
+                1.115727,
+                0.502486,
+                1.487024,
+                0.728586,
+                1.092879,
+                1.3022,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 1293111,
+              "Level": 11,
+              "Parameters": [
+                1.142614,
+                1.194484,
+                0.537956,
+                1.59199,
+                0.780016,
+                1.170023,
+                1.39412,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 1293112,
+              "Level": 12,
+              "Parameters": [
+                1.217951,
+                1.273241,
+                0.573425,
+                1.696957,
+                0.831445,
+                1.247168,
+                1.48604,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 1293113,
+              "Level": 13,
+              "Parameters": [
+                1.293289,
+                1.351999,
+                0.608895,
+                1.801923,
+                0.882875,
+                1.324312,
+                1.57796,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 1293114,
+              "Level": 14,
+              "Parameters": [
+                1.368626,
+                1.430756,
+                0.644364,
+                1.90689,
+                0.934304,
+                1.401457,
+                1.66988,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 1293115,
+              "Level": 15,
+              "Parameters": [
+                1.443963,
+                1.509513,
+                0.679834,
+                2.011856,
+                0.985734,
+                1.478601,
+                1.7618,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11291,
+        "Name": "Spear of Favonius — Broken Oath",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to perform a forward thrust.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 12932,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}×3",
+            "4-Hit DMG|{param4:F1P}",
+            "5-Hit DMG|{param5:F1P}+{param6:F1P}",
+            "Charged Attack DMG|{param7:F1P}×2",
+            "Charged Attack Stamina Cost|{param8:F1}",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}",
+            "Masterstroke|{param12:F1}s",
+            "Etched Into Bone and Soul DMG|{param17:F1P}×4",
+            "DMG Increase From Will to Win|{param18:F2P}/Point",
+            "CD|{param19:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1293201,
+              "Level": 1,
+              "Parameters": [
+                0.809875,
+                0.84664,
+                0.381298,
+                1.128389,
+                0.552868,
+                0.829302,
+                0.98814,
+                10,
+                0.639324,
+                1.278377,
+                1.596762,
+                13,
+                17,
+                17,
+                10,
+                20,
+                0.6,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293202,
+              "Level": 2,
+              "Parameters": [
+                0.875795,
+                0.915552,
+                0.412334,
+                1.220234,
+                0.597869,
+                0.896804,
+                1.06857,
+                10,
+                0.691362,
+                1.382431,
+                1.726731,
+                13,
+                17,
+                17,
+                10,
+                20,
+                0.645,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293203,
+              "Level": 3,
+              "Parameters": [
+                0.941715,
+                0.984465,
+                0.44337,
+                1.31208,
+                0.64287,
+                0.964305,
+                1.149,
+                10,
+                0.7434,
+                1.486485,
+                1.8567,
+                13,
+                17,
+                17,
+                10,
+                20,
+                0.69,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293204,
+              "Level": 4,
+              "Parameters": [
+                1.035887,
+                1.082912,
+                0.487707,
+                1.443288,
+                0.707157,
+                1.060736,
+                1.2639,
+                10,
+                0.81774,
+                1.635134,
+                2.04237,
+                13,
+                17,
+                17,
+                10,
+                20,
+                0.75,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293205,
+              "Level": 5,
+              "Parameters": [
+                1.101807,
+                1.151824,
+                0.518743,
+                1.535134,
+                0.752158,
+                1.128237,
+                1.34433,
+                10,
+                0.869778,
+                1.739187,
+                2.172339,
+                13,
+                17,
+                17,
+                10,
+                20,
+                0.795,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293206,
+              "Level": 6,
+              "Parameters": [
+                1.177144,
+                1.230581,
+                0.554212,
+                1.6401,
+                0.803588,
+                1.205381,
+                1.43625,
+                10,
+                0.92925,
+                1.858106,
+                2.320875,
+                13,
+                17,
+                17,
+                10,
+                20,
+                0.84,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293207,
+              "Level": 7,
+              "Parameters": [
+                1.280732,
+                1.338872,
+                0.602983,
+                1.784429,
+                0.874303,
+                1.311455,
+                1.56264,
+                10,
+                1.011024,
+                2.02162,
+                2.525112,
+                13,
+                17,
+                17,
+                10,
+                20,
+                0.9,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293208,
+              "Level": 8,
+              "Parameters": [
+                1.384321,
+                1.447164,
+                0.651754,
+                1.928758,
+                0.945019,
+                1.417528,
+                1.68903,
+                10,
+                1.092798,
+                2.185133,
+                2.729349,
+                13,
+                17,
+                17,
+                10,
+                20,
+                0.96,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293209,
+              "Level": 9,
+              "Parameters": [
+                1.48791,
+                1.555455,
+                0.700525,
+                2.073086,
+                1.015735,
+                1.523602,
+                1.81542,
+                10,
+                1.174572,
+                2.348646,
+                2.933586,
+                13,
+                17,
+                17,
+                10,
+                20,
+                1.02,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293210,
+              "Level": 10,
+              "Parameters": [
+                1.600915,
+                1.67359,
+                0.753729,
+                2.230536,
+                1.092879,
+                1.639319,
+                1.9533,
+                10,
+                1.26378,
+                2.527025,
+                3.15639,
+                13,
+                17,
+                17,
+                10,
+                20,
+                1.08,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293211,
+              "Level": 11,
+              "Parameters": [
+                1.713921,
+                1.791726,
+                0.806933,
+                2.387986,
+                1.170023,
+                1.755035,
+                2.09118,
+                10,
+                1.352988,
+                2.705403,
+                3.379194,
+                13,
+                17,
+                17,
+                10,
+                20,
+                1.14,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293212,
+              "Level": 12,
+              "Parameters": [
+                1.826927,
+                1.909862,
+                0.860138,
+                2.545435,
+                1.247168,
+                1.870752,
+                2.22906,
+                10,
+                1.442196,
+                2.883781,
+                3.601998,
+                13,
+                17,
+                17,
+                10,
+                20,
+                1.2,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293213,
+              "Level": 13,
+              "Parameters": [
+                1.939933,
+                2.027998,
+                0.913342,
+                2.702885,
+                1.324312,
+                1.986468,
+                2.36694,
+                10,
+                1.531404,
+                3.062159,
+                3.824802,
+                13,
+                17,
+                17,
+                10,
+                20,
+                1.275,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293214,
+              "Level": 14,
+              "Parameters": [
+                2.052939,
+                2.146134,
+                0.966547,
+                2.860334,
+                1.401457,
+                2.102185,
+                2.50482,
+                10,
+                1.620612,
+                3.240537,
+                4.047606,
+                13,
+                17,
+                17,
+                10,
+                20,
+                1.35,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293215,
+              "Level": 15,
+              "Parameters": [
+                2.165944,
+                2.264269,
+                1.019751,
+                3.017784,
+                1.478601,
+                2.217901,
+                2.6427,
+                10,
+                1.70982,
+                3.418915,
+                4.27041,
+                13,
+                17,
+                17,
+                10,
+                20,
+                1.425,
+                0.004,
+                18
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11292,
+        "Name": "Unforeseen Strike",
+        "Description": "As he searches for weaknesses, Lohen switches to {LINK#N11290001}<color=#FFD780FF>Masterstroke</color>{/LINK} mode. While in this state:\n· Lohen can actively accumulate {LINK#N11290003}<color=#FFD780FF>Joy</color>{/LINK}, using it to unleash the special Elemental Skill {LINK#N11290002}<color=#FFD780FF>Etched Into Bone and Soul</color>{/LINK}.\n· Nearby party members can accumulate {LINK#N11290004}<color=#FFD780FF>Will to Win</color>{/LINK} for Lohen, increasing the DMG dealt by <color=#FFD780FF>Etched Into Bone and Soul</color>.\nLohen can unleash <color=#FFD780FF>Etched Into Bone and Soul</color> up to 3 times while in <color=#FFD780FF>Masterstroke</color> mode, after which, he will no longer be able to accumulate <color=#FFD780FF>Joy</color>.\n\n<i>\"Chivalry? Hah, what better way to bait the trap? When an enemy dreams of an honorable victory, they inevitably fail to suspect the 'pleasant surprise' that awaits them.\"</i>",
+        "Icon": "Skill_S_Lohen_01"
+      }
+    ],
+    "SpecialSkills": [
+      {
+        "GroupId": 12951,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1295101,
+              "Level": 1,
+              "Parameters": [
+                0.5,
+                0.4,
+                6
+              ]
+            }
+          ],
+          "Display": 3
+        },
+        "Id": 1295101,
+        "Name": "Witch's Eve Rite: Unhealing Thorn",
+        "Description": "After completing <color=#FFD780FF>Witch's Homework: Of Various Foes</color>, Lohen becomes a <color=#FFD780FF>Hexerei</color> character. When the party includes at least 2 Hexerei characters, you gain the <color=#FFD780FF>Hexerei: Secret Rite</color> effect, which enhances Hexerei characters.\n\n<color=#FFD780FF>Hexerei: Secret Rite</color>\nWhen the special Elemental Skill {LINK#N11290002}<color=#FFD780FF>Etched Into Bone and Soul</color>{/LINK} hits an opponent or the Elemental Burst <color=#FFD780FF>Manifest Judgment</color> is unleashed, if Lohen's {LINK#N11290004}<color=#FFD780FF>Will to Win</color>{/LINK} is at 50% or more of its max limit, his Normal Attack and Charged Attack DMG will be increased by 40% for 6s.",
+        "Icon": "UI_Talent_S_Lohen_07"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 12939,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:F1P}×6",
+          "DMG Increase From Will to Win|{param2:F2P}/Point",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1293901,
+            "Level": 1,
+            "Parameters": [
+              1.188,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293902,
+            "Level": 2,
+            "Parameters": [
+              1.2771,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293903,
+            "Level": 3,
+            "Parameters": [
+              1.3662,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293904,
+            "Level": 4,
+            "Parameters": [
+              1.485,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293905,
+            "Level": 5,
+            "Parameters": [
+              1.5741,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293906,
+            "Level": 6,
+            "Parameters": [
+              1.6632,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293907,
+            "Level": 7,
+            "Parameters": [
+              1.782,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293908,
+            "Level": 8,
+            "Parameters": [
+              1.9008,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293909,
+            "Level": 9,
+            "Parameters": [
+              2.0196,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293910,
+            "Level": 10,
+            "Parameters": [
+              2.1384,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293911,
+            "Level": 11,
+            "Parameters": [
+              2.2572,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293912,
+            "Level": 12,
+            "Parameters": [
+              2.376,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293913,
+            "Level": 13,
+            "Parameters": [
+              2.5245,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293914,
+            "Level": 14,
+            "Parameters": [
+              2.673,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293915,
+            "Level": 15,
+            "Parameters": [
+              2.8215,
+              0.004,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11295,
+      "Name": "Manifest Judgment",
+      "Description": "Performs a swift series of forward strikes, consuming all {LINK#N11290004}<color=#FFD780FF>Will to Win</color>{/LINK} and dealing <color=#99FFFFFF>Cryo DMG</color>. This DMG will be increased based on the amount of <color=#FFD780FF>Will to Win</color> consumed. If Lohen is in {LINK#N11290001}<color=#FFD780FF>Masterstroke</color>{/LINK} mode when this is performed, the duration of <color=#FFD780FF>Masterstroke</color> will be extended by 1.65s.\n\n<i>\"So quick to cave? What a pity, I was just starting to enjoy myself...\"</i>",
+      "Icon": "Skill_E_Lohen_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 12921,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1292101,
+              "Level": 1,
+              "Parameters": [
+                30,
+                60
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1292101,
+        "Name": "Moratorium on Questioning",
+        "Description": "When nearby party members accumulate {LINK#N11290004}<color=#FFD780FF>Will to Win</color>{/LINK} for Lohen by dealing DMG while he is in {LINK#N11290001}<color=#FFD780FF>Masterstroke</color>{/LINK} mode, if that DMG is not less than 3,000% of Lohen's Base ATK, it will accumulate an extra 60 <color=#FFD780FF>Will to Win</color>.",
+        "Icon": "UI_Talent_S_Lohen_05"
+      },
+      {
+        "GroupId": 12922,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1292201,
+              "Level": 1,
+              "Parameters": [
+                0.15,
+                0.15,
+                8
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1292201,
+        "Name": "Flippant Masterpiece",
+        "Description": "While in {LINK#N11290001}<color=#FFD780FF>Masterstroke</color>{/LINK} mode, for 8s after another nearby party member triggers a <color=#99FFFFFF>Cryo Reaction</color>, that character's ATK is increased by 15%, while Lohen's ATK is increased by 15%.",
+        "Icon": "UI_Talent_S_Lohen_06"
+      },
+      {
+        "GroupId": 12923,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1292301,
+              "Level": 1,
+              "Parameters": [
+                9,
+                6,
+                18
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1292301,
+        "Name": "When the Mood Strikes",
+        "Description": "Lohen gains \"High Spirits\" for 9s after he unleashes the Elemental Skill <color=#FFD780FF>Unforeseen Strike</color>: Increases the Skill Level of <color=#FFD780FF>Unforeseen Strike</color> by 1.\nWhen unleashing an Elemental Skill, if the Level of any other party member's Normal Attack, Elemental Skill, or Elemental Burst is not lower than Lohen's Elemental Skill Level, the duration of this instance of High Spirits will be increased by an additional 6s.\nHigh Spirits can be gained once every 18s.",
+        "Icon": "UI_Talent_S_Lohen_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1291,
+        "Name": "O Breezes, That So Oft Bear Sorrowful Lament",
+        "Description": "Lohen's maximum {LINK#N11290004}<color=#FFD780FF>Will to Win</color>{/LINK} limit is increased to 300% of its original value.\nAdditionally, when other nearby party members deal DMG while Lohen is in {LINK#N11290001}<color=#FFD780FF>Masterstroke</color>{/LINK} mode, they accumulate 500% as much <color=#FFD780FF>Will to Win</color> for him as they originally would have.",
+        "Icon": "UI_Talent_S_Lohen_01"
+      },
+      {
+        "Id": 1292,
+        "Name": "In Flight, I Strike Whatever Flies",
+        "Description": "When in {LINK#N11290001}<color=#FFD780FF>Masterstroke</color>{/LINK} mode, after the special Elemental Skill {LINK#N11290002}<color=#FFD780FF>Etched Into Bone and Soul</color>{/LINK} hits an opponent or the Elemental Burst <color=#FFD780FF>Manifest Judgment</color> is unleashed, Lohen gains \"Evilsbane Blade\" for 4s: The next time Lohen hits an opponent with a Normal or Charged Attack while in Masterstroke mode, he will follow up with an additional strike that deals <color=#99FFFFFF>AoE Cryo DMG</color> equal to 500% of his ATK, and increase the Elemental Mastery of other nearby party members by 200 for 8s. Evilsbane Blade can be triggered once every 4s.",
+        "Icon": "UI_Talent_S_Lohen_02"
+      },
+      {
+        "Id": 1293,
+        "Name": "Only the Spear That Wounds Can Heal",
+        "Description": "Increases the Level of <color=#FFD780FF>{LINK#S11292}Unforeseen Strike{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Lohen_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1294,
+        "Name": "Radiant Love, Laughing Death",
+        "Description": "When Lohen unleashes the Elemental Burst <color=#FFD780FF>Manifest Judgment</color> while in {LINK#N11290001}<color=#FFD780FF>Masterstroke</color>{/LINK} mode, his {LINK#N11290004}<color=#FFD780FF>Will to Win</color>{/LINK} will be maxed out, causing this instance of his Elemental Burst to gain the maximum possible DMG increase.\n\nAdditionally, when Lohen switches to <color=#FFD780FF>Masterstroke</color> mode, the following will occur depending on how much Elemental Energy he has:\n· When Elemental Energy is not full: Lohen recovers 15 Elemental Energy.\n· When Elemental Energy is full: If, during the next 15s, Lohen unleashes the Elemental Burst <color=#FFD780FF>Manifest Judgment</color>, he will recover 15 Elemental Energy.",
+        "Icon": "UI_Talent_S_Lohen_03"
+      },
+      {
+        "Id": 1295,
+        "Name": "Never Ask, Nor Trouble You to Know",
+        "Description": "Increases the Level of <color=#FFD780FF>{LINK#S11295}Manifest Judgment{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Lohen_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1296,
+        "Name": "To Drown, to Sink, Unconscious — Supreme Joy",
+        "Description": "Using the special Elemental Skill {LINK#N11290002}<color=#FFD780FF>Etched Into Bone and Soul</color>{/LINK} and hitting an opponent with it or, while {LINK#N11290001}<color=#FFD780FF>Masterstroke</color>{/LINK} mode is active, unleashing the Elemental Burst <color=#FFD780FF>Manifest Judgment</color>, will not consume any {LINK#N11290004}<color=#FFD780FF>Will to Win</color>{/LINK}. Instead, Lohen's {LINK#N11290003}<color=#FFD780FF>Joy</color>{/LINK} will be maxed out, and if he hits an opponent the next time he uses the special Elemental Skill <color=#FFD780FF>Etched Into Bone and Soul</color>, the duration of this instance of <color=#FFD780FF>Masterstroke</color> will be extended by 1.25s. This effect can be triggered once every 7s.\nAdditionally, the CRIT DMG of all the DMG described above is increased by 175%, and the number of times Lohen can unleash <color=#FFD780FF>Etched Into Bone and Soul</color> during this instance of <color=#FFD780FF>Masterstroke</color> is increased by 2.",
+        "Icon": "UI_Talent_S_Lohen_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Sharpened Arrowhead",
+    "Detail": "Vice Captain of the Knights of Favonius Ranged Company, a knight known for his unorthodox approach and fondness for unconventional tactics.",
+    "Association": 1,
+    "Native": "Knights of Favonius",
+    "BirthMonth": 4,
+    "BirthDay": 3,
+    "VisionBefore": "Cryo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Lepus Miles",
+    "CvChinese": "林婧南",
+    "CvJapanese": "天﨑滉平",
+    "CvEnglish": "Nick Wolfhard",
+    "CvKorean": "Lee Sang-ho",
+    "CookBonus": {
+      "OriginItemId": 108971,
+      "ItemId": 108975,
+      "InputList": [
+        100016,
+        100022,
+        110006
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Nice to meet you, I'm Lohen, Vice Captain of the 5th Company. If you require assistance from the Knights of Favonius, please direct your request to headquarters. But if you need something from me, I'm all ears."
+      },
+      {
+        "Title": "Chat: Vice Captain",
+        "Context": "Being a captain takes more than just captain-grade strength. The most important thing is... Heh, I dunno. If I did, I'd be a captain by now."
+      },
+      {
+        "Title": "Chat: Where the Wind Returns",
+        "Context": "Whew, Mondstadt really is the place to be. Can't wait to get my hands on some Apple Cider..."
+      },
+      {
+        "Title": "Chat: Relationships",
+        "Context": "How do I get along with the other Knights? Hmm... Well, I'm certain I've left a deep impression. That can only be a good thing, right?"
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Huh, the rain's getting heavy. Who knows what the floods will wash away?"
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "The sky's clearing up. It's like those showers never even happened."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Thunder drowns out many things, but never the beat of your own heart."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "There's no place like The Cat's Tail... especially in weather like this."
+      },
+      {
+        "Title": "When It's Windy",
+        "Context": "Whew, wind's picking up... Too bad there aren't any dandelions around. Guess we'll just have to tear up some paper instead, huh?"
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "It's times like these when I really miss Cider Lake."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Good morning. What's the plan today?"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Already stopped for lunch? Great, we've got work to do this afternoon."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Tonight... Mhm. Let's treat the troops to a surprise attack drill."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Good night. Better get some rest, 'cause tomorrow's coming, whether you like it or not."
+      },
+      {
+        "Title": "About Lohen: Savoring Pain",
+        "Context": "I try to avoid anesthetics — they make it hard to fight. Besides... heh, I kinda like to savor the pain. It reminds me that I'm alive, unlike my enemies, who feel nothing at all."
+      },
+      {
+        "Title": "About Lohen: Power and Excuses",
+        "Context": "For some, power is a convenient excuse. It gives them a reason for failure, a justification for fear... Perhaps having a goal really does provide people with some strange sense of safety. Even if hidden behind their safety is a far more terrifying shadow."
+      },
+      {
+        "Title": "About Us: Fighting Style",
+        "Context": "My fighting style? Hahahaha, couldn't be more simple! Seek out the leader, engage them in combat, and decide the victor as quickly as possible. The other knights should be used to it by now, but if they're not, what difference does it make?"
+      },
+      {
+        "Title": "About Us: Where Duty Lies",
+        "Context": "As you can see, I'm vice captain, while that fool Theodore got exactly what he deserved. Still, I feel like his talents can be put to good use. Once he's atoned for his sins, I plan to drag him back to the 5th Company. Not as an officer, obviously, but he can serve in the rank and file. Although it's too early to trust him completely — or me, for that matter.\nYou trust me? And you have the strength to back it up? Hahahaha! Just what I'd expect from the Honorary Knight... As reliable as the rumors suggest. You'd make a good captain of the 5th Company, I'm sure Varka wouldn't object!"
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "This Vision has proved pretty useful out in the field. Just a shame it's only good for killing monsters I can touch — not the unseen ones that linger within."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Ah, I don't drink. The only use I have for alcohol is disinfecting my wounds. In that regard, Dawn Winery's older Dandelion Wine is the most potent — both in terms of its disinfectant properties and the sweet stinging pain it delivers. Plus, when I use it on the others, I get to see them squirm — Varka's the most fun to watch. Hehehe!"
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "I used to be allergic to Dandelions, but then Sucrose told me about \"desensitization therapy.\" I filled my room with Dandelions and made sure to breathe deeply from time to time. Did it work? Put it this way, I don't sneeze around Dandelions anymore. But I must admit, I kind of miss the feeling of sneezing till I'm dizzy..."
+      },
+      {
+        "Title": "About Varka: Resistance to Medicine",
+        "Context": "Varka's resistance to medicine keeps growing by the day. I mixed him a draught a few days ago that barely flushed his cheeks. If he hadn't glared at me afterwards, I'd have doubted whether I put the medicine in at all. *sigh*... If only we were still in Nod-Krai, I could drop in a few of those kuuvahki plants..."
+      },
+      {
+        "Title": "About Varka: Grand Master's Duties",
+        "Context": "The Grand Master's duties? When it comes to Varka, it's mostly leading people into battle. The rest gets dumped on Jean, haha. Enemies, well, you can kill them for good, but paperwork... Paperwork never truly dies."
+      },
+      {
+        "Title": "About Jean",
+        "Context": "It's only because the Acting Grand Master was holding down the fort in Mondstadt that the \"actual\" Grand Master was able to swan off to Nod-Krai. Now that he's back... well, he'll likely continue to do as he pleases. I don't think much will change."
+      },
+      {
+        "Title": "About Kaeya",
+        "Context": "Kaeya has a real knack for imitating the other Captains' signatures, not to mention Jean's. In fact, his forgeries are so good, it's practically impossible to spot the difference. Kaeya says he only does it to sign off on his own applications for leave. Personally, I think he's telling the truth — too much moral fiber in that one, haha."
+      },
+      {
+        "Title": "About Amber",
+        "Context": "Amber said she's already talked things over with Acting Grand Master Jean. She asked for some recon officers to come help her out, though they won't be official outriders. Regardless, it's certainly cause to celebrate. Now, she won't have to fly back and forth over Mondstadt all by herself. Although come to think of it, the gliding license exam itself seems a bit outdated... Maybe it's time that got an update, too?"
+      },
+      {
+        "Title": "About Diluc",
+        "Context": "Diluc... When you think about it, we both fell victim to the same scoundrel, but now that those scores have been settled, is he really never coming back to the Knights of Favonius? He can't go back to being the youngest captain, but he could sure have a go at being the oldest knight."
+      },
+      {
+        "Title": "About Noelle",
+        "Context": "Noelle's still not officially a knight, huh. How long's it been now? I thought for sure she'd have passed the selection trials... Is Varka holding out for some kind of special trial just for her? Her knightly title's gonna have to be pretty long to match the length of her training..."
+      },
+      {
+        "Title": "About Eula",
+        "Context": "What stands out most about Eula is the sound of her boots stomping about the place. When she's in a rush, you can hear the \"thump-thump-thump\" from a floor away. Just like her fighting style — loud and penetrating, an impression so deep it's impossible to forget."
+      },
+      {
+        "Title": "About Albedo",
+        "Context": "The 5th Company's consumables are all developed by Albedo and the 8th Company. Our crossbow bolts, bullets, and various alchemical products are all top quality. I sometimes drop by Albedo's office with plans for new weapons research. Though recently, it's been Sucrose receiving my requests instead. Guess Albedo must be working on something big, again..."
+      },
+      {
+        "Title": "About Klee",
+        "Context": "Varka told me he thinks that Fatui Harbinger, The Captain, could have taken out a Ruin Guard with just a crayon. So, I traded some snacks with Klee for a box of them, and I'm gonna bring them to Varka. Next time he runs into a monster, we'll see how formidable a weapon it really is."
+      },
+      {
+        "Title": "About Mika",
+        "Context": "Mika might be a skilled cartographer, but I'm even more skilled when it comes to sniffing out a lie. He once gave me a map where he deliberately left out all the monster gathering points, 'cause he was scared I'd charge in alone. But, y'know, one look at his face, and I knew exactly where the monsters were. Can't believe he thought silence would be enough to foil me."
+      },
+      {
+        "Title": "More About Lohen: I",
+        "Context": "Sorry to disappoint, but I don't have any deep, dark secrets worth sharing with anyone else."
+      },
+      {
+        "Title": "More About Lohen: II",
+        "Context": "I prefer to use a polearm, but I still belong to the 5th Company, so I make sure to keep up with my crossbow and musket practice. As for accuracy... Well, I'm pretty good at hitting Bloatty Floatties and Slimes. I don't even really need to aim. I heard there's something called a Specter in Inazuma that's really hard to hit? Maybe I can test my aim on one of those next time."
+      },
+      {
+        "Title": "More About Lohen: III",
+        "Context": "The 5th Company? Just an ordinary ranged support team, nothing worth mentioning. We can lay down some decent firepower, but if we're faced with... truly exceptional enemies, the most we can do is provide cover from the sidelines. Like that time we followed Varka to intercept the Rächer of Solnari... In the end, the main assault was left entirely to the Grand Master, while we were ordered to form a perimeter and hold off the Wild Hunt. That was the only way we wouldn't get swept up in his battle with Rerir."
+      },
+      {
+        "Title": "More About Lohen: IV",
+        "Context": "Why do I insist on using a polearm? I'll put it this way... the tastiest bait on the battlefield is the one who looks the most like a commander. I can draw the enemy's attention while giving everyone else the space to fire at will. As for dangerous enemies... Hahaha, the more intense it gets, the easier I find it to concentrate. That feeling of pure focus really is to die for... Just a pity that, ever since I left Nod-Krai, there have been too few battles where I can truly lose myself in the moment."
+      },
+      {
+        "Title": "More About Lohen: V",
+        "Context": "Do I feel fear when fighting at close quarters? Hah! Not as much as my enemy does. I'm no slouch, you know. Besides, I've got medics waiting in the rear... What if the enemy has them too? Hmm, then I'll just have to take out their medics first."
+      },
+      {
+        "Title": "Lohen's Hobbies",
+        "Context": "Besides the rush of battlefield slaughter, my favorite pastime is preparing little \"surprises\" to brighten the lives of my dearest brothers and sisters in arms. I consider it part of their training — knights need to stay vigilant at all times, after all."
+      },
+      {
+        "Title": "Lohen's Troubles",
+        "Context": "The good days of being stationed at Dornman Port are over. Now I'm back in Mondstadt, and Acting Grand Master Jean is nowhere near as easygoing as Grand Master Varka. *sigh*... Aren't there any more missions in the field they could send me on?"
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "I like to eat spicy food. When I'm out on patrol, I often chew on dried Jueyun Peppers to keep myself alert... They're called \"Jueyun Chilis\"? Thanks for the heads up, but I think I'll stick to calling them peppers..."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Don't drink, alright? When I was stationed in Nod-Krai, I was always woken up by drunken knights... By the end of the night, those guys couldn't even tell what they were drinking anymore, not even when I swapped their booze for... uhm, never mind, forget I said that."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Whew! Thank you, this is exactly what I like. In fact, it suits me so well... I suspect you've been secretly investigating my preferences! But I'm not mad — after all, I have my own file on you..."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Back when I was learning how to poison meals, I got so good that no one suspected a thing... You've poisoned this already? Not to worry, I have a high tolerance for poison. In fact, I think I'll have some more."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "...Well, this is clearly a trap, and one I think I'd best avoid. Next time, how about you let me do the cooking?"
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Today's your birthday, so I got you a mini-crossbow. I came up with the design myself. It should be the perfect size for your wrist... When did I measure your wrist? Don't worry, I did it by eye. You can trust my ability to gauge things like this — I'm vice captain of the 5th Company, after all. Oh, right, this crossbow can also fire backward, just in case someone sneaks up on you. You just press... here. Hahaha, no need to duck! The safety lock is still on. Do I look like the kind of person who gives a friend a crossbow just to watch them shoot themselves..."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "I feel great. Even my weapon feels easier to handle."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "I feel like I can see even further now... This should help improve my aim."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "It's like my mind's gotten so much clearer. Hah, I just thought of a new way to train."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "Guess I'm strong enough to be a \"proper\" vice captain now, huh?"
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Let's fight!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Tremble, I won't judge."
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Leave none standing!"
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Betcha weren't ready for this!"
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "Now's our chance!"
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "Hmph!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Like lambs to the slaughter."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Struggle all you want!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "No fairytale ending for you!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Ah, the spoils of war. Let's see what's inside."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "A meager haul... Still, it'd be rude not to take it."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Huh, no traps, no poison smoke... How unimaginative."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Hah... Keep it coming!"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "...This isn't over yet!"
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "...Now that's my kind of opponent!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "If you can't keep up, fall back!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "My turn!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "So this... is my limit..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "I still haven't had... enough..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Wind... tell me why..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Cheap trick."
+      },
+      {
+        "Title": "Light Hit Taken: II",
+        "Context": "Didn't even feel it."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Got some fight in you, after all..."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Heh...!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Time for some action."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Scout ahead? I'm on it."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "I'll guard our retreat."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Barely had the expeditionary force begun its journey home when the bards were already on their way, carrying the heroes' stories back to the taverns.\nEven amid familiar names like Varka, the title \"Frontline Suppression Officer\" had started to command attention, recognized for both remarkable accomplishments and constant engagement in battle.\nHow could a long-range troop — meant to strike from afar — always find itself at the very front, charging straight into hand-to-hand combat with blades ready?\nWhy would a squad armed with crossbows and muskets follow a young knight wielding only a spear?\nSuch contradictions naturally drew questions, and where questions lingered, debate quickly followed.\nSome could not hide their irritation: \"So because they close in, their ranged attacks suddenly fail? Are crossbows and muskets really that clumsy?\"\nOthers spoke in defense, pointing out that archers were already among the strongest and most elite soldiers, and sending the very best of them to the most dangerous front lines was only proper.\nYet all argument fell silent in the end, stilled by the accounts the bards had gathered from those who had witnessed it firsthand:\n\"He is the squad's keenest spear, slicing through every line.\"\n\"He is its strongest shield, turning back every assault...\"\nThat said, the bards usually skipped the second half of the knights' comments, since it was too mundane for a heroic tale:\n\"To be honest, Vice Captain Lohen probably just thought this would be the quickest way to get it done...\"\nYes, his story holds none of the glory and pageantry of chivalric tales, nor the sweeping drama and twists of heroic legends.\nSpears, hidden arrows, ambushes, poison, surprise attacks, infiltration...\nHe never debates which weapons or tactics are stronger, nor does he consider a fight in terms of glory, shame, or gain and loss.\nEvery method carries its own feel, but the pleasure it brings fades beside victory itself, and pales even more against the raw reality of life endured.\nOnly the last one standing has the right to ponder the meaning of victory. Only the last still feeling pain may speak of survival.\nFight. Win. Survive. Over and over, the cycle repeats...\nSuch is Lohen's story, such is the life he lives..."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "In Lohen's memory, the very first toy he ever had was a small, supple bow.\nHis father, always stern and serious, handpicked the finest fir wood and carved the bow, while his mother, precise and deliberate, cut the leather and kneaded it again and again to form the string.\nThough it was only a toy, his parents followed their usual bowmaking routine, completing it without a single lapse.\nAnd yet, his father did not teach him to draw the bow or set an arrow, despite Lohen's hopes.\nThe only thing he was allowed to do was imitate his parents: checking the limbs, oiling the lacquered surface, waxing the string. Over and over, day after day.\n\"Lohen, our ancestors once said: 'A bow is an instrument that demands consistency. For generations, our family has made a living crafting bows. Naturally, we must live like a bow, ensuring that every action we take aligns perfectly.'\"\nEvery morning, during their prayers, his parents repeated this lesson.\nTheir days followed steady routines, disciplined labor, and peaceful order.\nFor more than twenty years before Lohen was born, his parents had lived this way, and for more than a decade after his birth, not a single thing had ever disturbed it.\nFrom his first babbled words to the moment he could tend bows and arrows with practiced hands, Lohen sensed the course of his life already stretching before him. Perhaps he would follow it until age dimmed his eyes and the grain of the wood blurred beyond recognition, his days quietly consumed by steady, unchanging routine.\nBut arrows, no matter how carefully stored in the armory, are never meant to stay still. So too, Lohen's untamed nature could never be confined to the calm, orderly life.\nOnce again, little Lohen polished the arrowhead again, and in its shine, his eyes with a hidden crimson stared back at him.\nThe arrow lingered, poised for release...\nAnd that moment was already near.\nOn an ordinary day, Lohen sat in the cargo wagon as he always did, accompanying his father on the trip to Mondstadt to deliver an order.\nBut today, routine gave way to danger — a group of masked, skilled bandits had marked their cargo.\nHis father shoved Lohen hurriedly into the covered carriage, warning him not to move or make a sound. Then he shouted, trying either to draw the bandits away or to summon the Knights of Favonius from wherever they might be.\nThe wagon was filled with bows and bolts strong enough to pierce stone...\nHis father had the skill of a master archer honed over years of testing...\nAnd yet, the bandits subtly tried to coax him away...\nDespite it all, the long habit of a quiet, orderly life left him so flustered that he didn't question the situation — or think to fight back.\nThe clamor outside the wagon slowly died away, and before long, the curtain was drawn back — but the figures waiting beyond were neither his father, who had scattered the bandits, nor the knights sent to rescue him. Instead, a group of masked men in black robes stood before him.\nThey grabbed Lohen before he could react. Every kick and twist was useless against hands like iron.\nIn that moment, Lohen had no idea whose scheme he had been caught in, or where they were taking him.\nLittle Lohen sat quietly in the cramped, dark cell, simply pondering.\nHad his father stood against the bandits with his bow, none of this would have happened. And if he himself had been quicker and more alert, maybe he could have found a hiding spot before they got to him.\nFrom the next cell, the cries of the other abducted children grew louder. Seizing a brief moment when no one was watching, Lohen slipped a small arrowhead — one he had brought from the wagon — into his sleeve.\nPerhaps the Anemo Archon had heard the children's desperate cries, or perhaps some unseen force had answered Lohen's silent plea for strength.\nAs the villains hurried to move their captives, the agents of justice finally arrived.\nLeading the group was a single armored figure, bow in hand, striking with ease. The criminals fell before him.\nPerhaps to keep them alive for questioning, perhaps to avoid harming the children, he used nothing but blunt arrows in the fight.\nAnd yet, in his hands, even blunt arrows carried unstoppable force. Each vibration of the bowstring rang through the air, answered by the heavy thud of a body hitting the ground.\nThe arrows streaked through the air, fierce and radiant, holding little Lohen's gaze captive. Even his hands, poised to move, fell still.\nOnly when Adorno pulled back the curtain of the prison cart and looked at him did Lohen snap back to himself.\n\"If I were as strong as those arrows, these ropes would already be severed. And I wouldn't have had to hear that goof Theodore crying all that time...\"\nThat thought quietly took root in little Lohen's heart.\nBut what Adorno saw was something entirely different.\nAmong the cluster of crying children, one boy stood apart — his face cold, showing no trace of fear.\nAt his wrists, the tightly bound ropes had already been nicked, a subtle cut made by the arrowhead he had hidden.\n— Incredible, this boy is remarkable. I'll have to keep a close eye on him."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Ever since Lohen was rescued, his family watched over him even more closely, fearful of losing him again. But an arrow drawn to the string can never settle back into a life of quiet dust.\nOn a moonlit night, while his parents slept, Lohen quietly slipped out the window. Into the shadows he carried a self-made shortbow, a small carving knife, and a handful of flawed arrows that hadn't passed inspection.\nPerhaps it was luck, or perhaps he was simply born for battle. When he returned, two hilichurl arrowheads lay in his pack as trophies from his encounter.\nAfter that, Lohen started venturing out at night more often. From once a week to every few days, until night after night he disappeared into the darkness. His targets grew stronger, and the spoils he returned with grew richer: shattered masks, ominous scrolls, and the horns of Mitachurls...\nGradually, a rumor began to ripple among adventurers. Near Dornman Port at midnight, they said, a small-framed archer could be seen, moving like the wind, slipping into packs of monsters and striking true with every arrow.\nVictory came again and again, but so did danger. Each encounter sent his heart racing, thrumming like a storm-swollen tide.\nSomewhere along the way, a question began to stir in his mind: if he faced those attackers again, would things be different? Or would he still be the helpless child, waiting for someone else to come to his rescue?\nNo matter how many dangers he braved, no matter how many arrows tore through their marks, the question lingered, growing heavier in his mind. It would never answer itself.\nOnly striking through that first target could.\n...\nWhen Lohen finally donned the adventurer's uniform and revealed the truth to his parents, their first reaction was stunned silence, followed quickly by a storm of outrage.\nIt was Master Cyrus, thumping his chest, who calmed the storm, assuring them that Lohen would be the one to bully the monsters, not the other way around. Only then did they begrudgingly accept what could not be undone.\n...Perhaps what they came to accept wasn't Lohen's skill as a top-tier adventurer, but the simple truth that he would never again be the obedient child they once knew.\nEven so, they couldn't bring themselves to give up. For years, they tried to persuade him to stop putting himself in danger, even seeking out Adorno, the veteran knight who had once rescued Lohen, hoping he might be able to talk some sense into the boy.\n\"Once an arrow is drawn, it cannot be recalled. As bowmakers, you should understand that,\" Adorno said, as if he had long foreseen Lohen's choice. \"...But we can still guide it before it leaves the string, point it in the right direction. That is my advice, as an archer.\"\nAdorno agreed to speak on their behalf. Lohen's parents never learned the details, but in the months that followed, he seemed to settle down noticeably... supposedly \"preparing for exams.\"\nSeveral months later, Lohen suddenly appeared at the Knights of Favonius' selection trials and, displaying overwhelming skill, claimed first place. Though some questioned his methods, he ultimately succeeded in joining their ranks.\nWell, it wasn't so bad. At least within the Knights, he had a proper position and comrades to watch his back. Far better than wandering alone as an adventurer.\nBesides, just a few months earlier, Lohen had already grown bored of the Adventurers' Guild commissions and was thinking of leaving Mondstadt in search of far more dangerous prey.\nHis parents comforted each other, but the question of what Adorno had said to make him join the Knights lingered in their minds, leaving them more puzzled the longer they thought about it.\n...\n\"...Kid, we've traced who was behind those old kidnappings.\"\nLohen, who had barely paid attention to yet another mediator, suddenly fixed him with a sharp look. \"Who was it?\"\n\"We'll be issuing an official notice soon, but there's no point in dwelling on revenge,\" Adorno said calmly. \"He's already dead.\"\nAfter a long pause, Lohen spoke again. \"Who killed him?\"\n\"Suicide.\" \"That kind of person doesn't just kill himself. You know what I'm really asking — who drove him to that point?\"\nAdorno let out a faint smile. \"Our Grand Master, the Knight of Boreas... Mondstadt's living legend. Think that makes a worthy new target for you?\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Varka was well accustomed to \"copycats.\"\nHot-blooded youths chasing after the shadow of a great hero were nothing unusual. Among them, a few overconfident, highly driven troublemakers were to be expected.\nBut someone like Lohen... that was entirely new.\nIn the past, the most audacious acts of such copycats were little more than surprise attacks, usually intended to prove their own strength. Lohen's debut, however, could only be described as \"utterly unrestrained.\"\nHidden arrows, smoke screens, traps, even sedatives capable of bringing monsters down instantly... His techniques were polished to near perfection. They had the precision of a veteran hardened by countless battles, and faintly, they carried echoes of the remnants of Eroch's faction.\n\"Not bad, kid. You've got some skill! But... those little tricks won't work on me!\"\nIn an instant, the \"young boy\" was under Varka's firm control.\n\"The child who faced a kidnapping without panic, perhaps even capable of escaping on his own.\"\n\"The small archer whispered about in rumors, striking with ruthless precision around Dornman Port.\"\n\"The hotheaded recruit who, barely enlisted, had already begun hunting down the remnants of Eroch's faction.\"\nVarka had heard plenty of stories about Lohen from Adorno. He decided to let this little stunt continue a while longer, curious to see exactly what the boy was truly made of.\nUnder the oppressive shadow of the twin greatswords — blades that could still monsters mid-step — what expression would this novice wear?\nAwe? Panic? Or something else entirely?\nVarka held Lohen's eyes. Icy and increasingly piercing, they carried a spark of exhilaration — and perhaps a reflection of the drive to face the strongest and claim glory that Varka could still feel in himself.\nPromising, yes, but rough and reckless. He needed to take a few hits to understand his limits. Varka acted, subdued the daring newcomer, and decided a few days of confinement would do him good. \"Not happy with that? Step up again whenever you like. I'll be keeping an eye on you.\"\n\"Guess you'll just have to wait and see.\" Lohen shrugged and smiled faintly as they kept him inside.\nThe day after his confinement ended, Lohen showed up at Varka's door with a bottle of Varka's favorite wine, saying it was his way of apologizing.\n\"Oh? Not bad. You even brought my favorite, Dandelion Wine. Alright, I'll take it.\"\nThe sharp, bitter liquor barely touched his throat before the Grand Master felt a sudden flicker of dizziness — something was off. Adorno's words after Lohen's confinement came back to him:\n\"Honestly, I wouldn't treat him like your younger self, or just another Mondstadt kid who admires you. Sure, he respects your strength. But if I had to guess, what he's really after is a way to challenge you.\"\n\"If I'm right, here's what's going through his head: finding a way to test 'the mighty Varka' must be fun in itself. Winning or losing hardly matters. Worst case, he's flat on his back for a couple days. Glory? Don't think that's on his mind at all.\"\nWith nothing but sheer strength and iron will, Varka righted himself, defying the dizziness as Lohen watched, wide-eyed.\n\"...Unbelievable. By my reckoning, that dose could've taken down a dozen forest boars...\"\n\"Kid... I told you, little tricks like that won't work on me!\"\nFrom that moment on, Lohen saw \"strength\" in a whole new light —\nIt was the kind that no trap or poison could shake, forged through countless near-death moments and grounded in absolute certainty.\nFrom that moment, two new goals went straight onto Lohen's list:\nFirst, to take down Varka by any means necessary.\nSecond, to try out those same tricks on himself — and make sure he could never be knocked down."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "The Knights of Favonius are an order with a long and storied history, one that has seen countless heroes rise and endured just as many tragedies.\nFrom these legends and hard-won lessons, the Knights have learned a simple truth:\nStray from the path of knighthood, and tragedy will follow.\nIt was for this very reason that doubts began to circulate within the order over Lohen's appointment as Vice Captain of the 5th Company.\nAfter all, a \"madman\" who thrived on stirring up trouble, ambushing the Grand Master, and relying on poison and traps in battle hardly seemed like the sort to embody the ideals of knighthood in the eyes of most.\nLohen, for his part, paid the whispers no mind.\n\"I know you probably don't worry much about others' feelings. Still, an expedition isn't a one-person job. If no one's backing you, it's obvious your application won't go through unscathed.\"\nAdorno paused, as if unsure whether Lohen could handle the situation, or worried that he might make things worse.\nEver since Varka announced the unprecedented grand expedition, Lohen had been itching to join.\nFar-off battlefields and unseen dangers thrilled him far more than any toy. But joining the expedition proved a different kind of challenge. Assessment lists came and went, and his name never appeared.\nAdorno knew Lohen could handle anything on the battlefield. This, he suspected, was a problem somewhere off the field.\nLohen, entirely unconcerned, replied, \"Fine. If an 'unorthodox' knight like me can't take the test... then I'll just take the examiner's seat instead.\"\n...\n\"From a practical standpoint, it's not a bad idea. It could also remind the knights of their own shortcomings and quiet those who are always questioning whether the order needs to change... After all, we can't expect every opponent to play by the rules of chivalry.\"\nAs he flipped through Lohen's rather unconventional \"application,\" Varka considered it carefully.\nThe report laid out a long list of \"tests.\" The usual night raids, traps, and poisons hardly surprised Varka anymore, but these new methods caught his attention. Ambushes in disguise, sabotage of supplies before exercises, and other clever tactics were among the innovations included.\nAt the very end of the report, Lohen casually dropped in a so-called \"famous quote,\" and Varka nearly spat out his drink.\n\"If the Knights of Favonius can't even protect themselves, how can they protect Mondstadt?\" — Quoted from the previous Grand Master, on the night he was ambushed.\n...Youthful missteps never failed to catch someone off guard. After a moment to collect himself, Varka stamped the application with his approval.\nUnconventional knights require unconventional tests.\nBoth for the expedition-bound, and for Lohen himself."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Though he is the most likely to inherit the title of \"Benevolent Knight,\" Lohen is perhaps the least like one in all of the Knights of Favonius.\nWhere most imagine a \"Benevolent Knight\" saving people from danger, pulling them back from the brink, Lohen seems far more interested in diving headfirst into peril himself — and taking others with him for the ride. Naturally, those \"others\" are usually his enemies... and not always human.\nStill, Lohen's unusual \"hobbies\" weren't without their benefits. When it came to special operations and high-risk missions, he consistently performed far beyond what most expected.\nAs a result, many of the expedition's covert assignments naturally fell to him.\nOne of these was a confidential request from the current head of the Northern Intelligence Network.\nIntelligence reports indicated that an underground auction house was taking advantage of the current chaos to operate in Nod-Krai. They trafficked in both smuggled goods and dangerous items, moving with extreme caution and almost certainly relying on powerful backing. Taking them out would be a clear way to earn the trust of the Northern Intelligence Network.\n\"Our confidence in your capabilities is without question. Nevertheless, in environments where the code of chivalry does not apply, strength alone cannot be taken as a measure of overall effectiveness.\"\nTo address the Northern Intelligence Network's concerns, the expeditionary force put together a cautious, step-by-step plan.\nLohen's task was to quietly apprehend isolated individuals and extract the time and location of the auction. From there, the team would rely on surveillance, eavesdropping, and systematic tracking to identify everyone involved while keeping risks as low as possible.\nIt was a mission made for Lohen — moving alone, executing each capture with precision, and hitting the heart of it all. Challenging, silent, and exactly suited to him.\nOnly one detail had escaped Nannina. For Lohen, a plan that was too quiet rarely meant it was complete.\nBefore he set out, Nannina passed along a reminder from Cardinal Seamus. \"Focus on the mission. Don't complicate things.\"\nLohen answered simply, without a trace of hesitation. \"Don't worry. I get it.\"\nAnd he clearly did.\nAt least in his own mind, the mission had never been about anything else. From start to finish, there was only one purpose: to show the Northern Intelligence Network the full strength of the Knights of Favonius.\n...\nA few days later, in the Grand Master's office in Mondstadt.\nAfter reading the report returned by the expeditionary force, Acting Grand Master Jean set her pen to paper and began drafting her reply to Varka.\n\"Regarding the operation involving the underground auction, I am now fully informed.\n\"Lohen's judgment in the field remains as sharp and decisive as ever. He secured all attendees on site, prevented the conflict from reaching Nasha Town, and ensured that no civilians were harmed. By the outcome alone, this operation stands as a true act of protection, fully in keeping with the ideals of benevolence.\n\"Judged by merit, I agree with your assessment. He has now reached the point where he could inherit Mr. Adorno's mantle. His actions were measured and deliberate... at least until he reached the heart of the enemy stronghold.\n\"That said, forgive my frankness. To appear at the enemy's center, to pick a fight on his own initiative, to break out single-handedly, and to display his spoils as a statement of strength — these are hardly in line with the usual conduct of the Knights of Favonius.\n\"If you have the chance, I would ask that you make this clear to the relevant contacts within the Northern Intelligence Network.\""
+      },
+      {
+        "Title": "Pseudo Multipurpose Communication Recorder",
+        "Context": "Mika always carries his Multipurpose Front-Line Surveying Device with him, keeping it meticulously organized.\nIt records detailed terrain, key locations, and standard marching routes, and is occasionally updated with traces of monster activity or assessments of hazardous areas.\nIntelligence forms the backbone of any campaign. Yet some knights are drawn not just to the information itself, but to the instruments that gather it.\nLohen was one of them.\n\"That's a complicated piece of equipment, and you handle it like it's nothing?\" After finishing his usual check of the enemy positions, Lohen suddenly threw out a compliment. \"Really impressive.\"\nHearing such praise from a senior so close to his own age, whose reputation was otherwise so different from his own, left Mika momentarily flustered, but pleasantly surprised.\nLohen, clearly intrigued, fired off a string of questions. Mika, who rarely talked about his surveying device with anyone outside the technical team, found himself drawn into the conversation before he even realized it.\n\"So, with a device this efficient, you must know quite a few spots where enemies tend to gather, right?\" \"And how do you usually maintain it? Do you keep spare parts on hand?\"\n...Perhaps this \"notorious\" senior wasn't quite as intimidating as the rumors made him out to be.\nMika answered every question with eagerness and thoroughness. Lohen narrowed his eyes and nodded, quietly noting what caught his interest and letting the rest slip by.\nAfter a few rounds of questioning, Mika started to notice a pattern. Any area that had caught Lohen's attention seemed to settle down within just a few days.\nLooking at the fresh cuts that kept showing up on Lohen and thinking about his sudden, short disappearances, Mika could no longer write it off as coincidence. A cold realization sank in — his survey maps were being used by Lohen in an alarmingly \"efficient\" way.\nOut of caution, Mika began leaving out certain monster gathering points unrelated to Lohen's operations when handing over his maps. And when Lohen pressed him for details, he grew increasingly evasive.\n\"Uh... I've already reported everything!\" \"I... I think it's best to let the Grand Master give the orders!\"\nYet Lohen didn't push further. He just let a knowing smile play across his lips, his eyes wandering toward the surveying device Mika hugged to his chest, seemingly without thought.\nFrom that day on, Mika handled the surveying device with extra care. He made sure the notebook was tucked safely before leaving his seat. When passing materials to others, he checked the pages over and over. Even after putting some distance between himself and the desk, he found himself glancing back, as if someone might be watching the booklet from behind.\nAnd yet, despite everything, Lohen's movements remained unhindered, as if he already knew every secret Mika was trying to keep from him. It was almost like magic.\nMika had been scratching his head over it for a while, and it wasn't until one of the expeditionary force's campfire nights that it finally made sense.\nThat night, Ekbert had been eager to show off a new Fontaine magic trick to liven things up, but he'd clearly had a bit too much to drink and, unsurprisingly, things went sideways.\nHe had imagined a spectacular \"switch of deception,\" but two nearly identical cards ended up flashing into view long before he was ready.\nThe idea was simple enough: swap the chosen card with a disguised fake, hold everyone's gaze on the decoy, and in that sliver of a moment, work your magic on the real card. Sadly, the trick was over almost as soon as it began.\nAmid the laughter spilling across the campfire, Mika's mind wandered back to a question Lohen had asked him long ago.\n\"...How do you usually maintain it? Do you keep spare parts on hand?\"\nAnd suddenly, the past started to make sense in small, unsettling fragments: spare parts that had quietly vanished from the stock, book pages that wouldn't cooperate every now and then...\nCould someone really start plotting tricks on a colleague right after meeting them?\nCould anyone wear a mask of friendliness and curiosity while secretly hatching a sneaky scheme?\nAnd surely no one could, in the blink of an eye, swap out his surveying device with a phony one, copy the intelligence, and then boldly return everything as if nothing had happened... right?\nAmid the lingering unease, Mika suddenly felt a sharp awareness, like a predator's gaze had fixed on him. He lifted his eyes quickly, and yet Lohen was just there, laughing with the crowd, his attention seemingly on no one in particular.\nThe laughter was bright and genuine, unforced... the same warmth Mika remembered from the first time Lohen had approached him with eager curiosity, without a hint of pretense."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Lohen had long pondered what it took to reach the strength of a captain.\nNaturally, a captain needed to face powerful monsters head-on and handle even overwhelming waves of foes alone.\nTo balance destructive force with lasting stamina — Varka embodied it, and it seemed the youngest captain in the history of the Knights of Favonius did, too.\nFor the Fifth Company, which relied on ranged weapons, that kind of balance was tricky.\nGreater power meant a stronger bow, a heavier draw, and larger, more penetrating arrows.\nYet even Lohen could carry only a handful of such heavy ammunition. Once it was spent, a retreat to the rear for resupply was unavoidable — hardly ideal for sustained combat.\nNot to mention, Lohen had never cared for falling back. The real fight, the one he sought, was always at the very front, facing the enemy head-on.\nSo, was there a way to have both? Lohen let the thought settle.\n\"Perhaps... it's not entirely impossible.\"\nHis gaze drifted to the knights preparing for the drill inspection. Bundles of ceremonial lances caught the light, like enormous arrows ready to be carried into action.\n\"Maybe... an arrow I could retrieve after firing?\"\n\"Or... maybe it doesn't even need to be fired.\"\n\"After all, getting in close might pack even more punch. And the pain could hit that much harder too.\"\n...\nA little over ten days passed before the next scheduled drill. Everything seemed the same at first, but somewhere in the midst of the ranged ranks, a single spear had appeared.\nThe spear lunged forward with such speed that its wielder quickly found himself surrounded on all sides.\n\"Grand Master, are you certain you still want him as the Fifth Company's vice captain?\" Observing the drill from off the field, Cardinal Seamus spoke up with a question.\n\"Mm? Come on, look at him with the rest of the ranged squad. Isn't he fitting right in?\"\n\"Fitting in? Honestly, all I see is a bullseye painted on him. Every enemy in range, and half our own archers too, are zeroing in on that one target.\"\n\"Haha! Relax! Look, the ranged squad's strikes are way sharper now! And he's still on his feet, isn't he? That alone proves this plan isn't half bad!\"\nNot half bad!? Seamus almost barked a protest, but the brilliance of their results left him speechless.\n...\nThat day, everyone got what they wanted — or at least, something close enough.\nThe Fifth Company got a vice captain. The expeditionary force got a \"Frontline Suppression Officer.\" Seamus, ever overworked, earned himself a day of what he insisted on calling \"special headache leave.\" Varka walked away with a brand-new \"Seamus joke\" to season his drinks.\nAnd Lohen, well, he walked off with a new way of fighting, a new way of living, and a \"glass marble\" that sometimes proved surprisingly useful on missions."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 212900,
+      "Name": "Frost-Forged Edge",
+      "Description": "Lohen's outfit style. A knight's armor is significantly heavier than the clothes he wore as an adventurer. But for Lohen, only the weight of said equipment and the way others view him have changed, while his desire to defeat his foes and his inexorable obsession remain.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104164,
+    113085,
+    101272,
+    112013,
+    104306,
+    113073
+  ],
+  "NameCard": {
+    "Name": "Lohen: Benevolence",
+    "Description": "Namecard style.\n\"Benevolence\" may be the last word anyone would use to describe Lohen. Then again, even the sharpest thorns grow from gentle soil.",
+    "Icon": "UI_NameCardIcon_Lohen",
+    "PicturePrefix": "UI_NameCardPic_Lohen"
+  }
+}

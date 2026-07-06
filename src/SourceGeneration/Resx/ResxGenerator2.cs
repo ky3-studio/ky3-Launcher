@@ -403,8 +403,11 @@ public sealed class ResxGenerator2 : IIncrementalGenerator
                 .WithLeadingTrivia(comment)
                 .WithExpressionBody(ArrowExpressionClause(SuppressNullableWarningExpression(
                     InvocationExpression(IdentifierName("GetString"))
-                        .WithArgumentList(ArgumentList(SingletonSeparatedList(
-                            Argument(StringLiteralExpression(entry.Name))))))))
+                        .WithArgumentList(ArgumentList(SeparatedList(
+                        [
+                            Argument(StringLiteralExpression(entry.Name)),
+                            Argument(IdentifierName("Culture"))
+                        ]))))))
                 .WithSemicolonToken(SemicolonToken);
 
             string? value = entry.Values.FirstOrDefault().Value;
@@ -437,6 +440,7 @@ public sealed class ResxGenerator2 : IIncrementalGenerator
                         .WithArgumentList(ArgumentList(SeparatedList(
                             [
                                 Argument(StringLiteralExpression(entry.Name)),
+                                Argument(IdentifierName("Culture")),
                                 .. GenerateFormatMethodArguments(argsCount)
                             ]))))))
                 .WithSemicolonToken(SemicolonToken);

@@ -1,0 +1,1174 @@
+{
+  "Id": 10000049,
+  "PromoteId": 49,
+  "Sort": 36,
+  "Body": 2,
+  "Icon": "UI_AvatarIcon_Yoimiya",
+  "SideIcon": "UI_AvatarIcon_Side_Yoimiya",
+  "Name": "Yoimiya",
+  "Description": "Owner of Naganohara Fireworks. Known as the \"Queen of the Summer Festival,\" she excels in her craft of creating fireworks that symbolize people's hopes and dreams.",
+  "BeginTime": "2021-08-10T18:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 12,
+  "BaseValue": {
+    "HpBase": 791.2556,
+    "AttackBase": 25.137,
+    "DefenseBase": 47.864
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 4931,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}×2",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "4-Hit DMG|{param4:F1P}×2",
+            "5-Hit DMG|{param5:F1P}",
+            "Aimed Shot|{param6:F1P}",
+            "Fully-Charged Aimed Shot|{param7:P}",
+            "Kindling Arrow DMG|{param8:P}",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 493101,
+              "Level": 1,
+              "Parameters": [
+                0.3564,
+                0.68376,
+                0.888888,
+                0.4642,
+                1.05864,
+                0.4386,
+                1.24,
+                0.164,
+                0.568288,
+                1.136335,
+                1.419344
+              ]
+            },
+            {
+              "Id": 493102,
+              "Level": 2,
+              "Parameters": [
+                0.3807,
+                0.73038,
+                0.949494,
+                0.49585,
+                1.13082,
+                0.4743,
+                1.333,
+                0.1763,
+                0.614544,
+                1.228828,
+                1.534872
+              ]
+            },
+            {
+              "Id": 493103,
+              "Level": 3,
+              "Parameters": [
+                0.405,
+                0.777,
+                1.0101,
+                0.5275,
+                1.203,
+                0.51,
+                1.426,
+                0.1886,
+                0.6608,
+                1.32132,
+                1.6504
+              ]
+            },
+            {
+              "Id": 493104,
+              "Level": 4,
+              "Parameters": [
+                0.4374,
+                0.83916,
+                1.090908,
+                0.5697,
+                1.29924,
+                0.561,
+                1.55,
+                0.205,
+                0.72688,
+                1.453452,
+                1.81544
+              ]
+            },
+            {
+              "Id": 493105,
+              "Level": 5,
+              "Parameters": [
+                0.4617,
+                0.88578,
+                1.151514,
+                0.60135,
+                1.37142,
+                0.5967,
+                1.643,
+                0.2173,
+                0.773136,
+                1.545944,
+                1.930968
+              ]
+            },
+            {
+              "Id": 493106,
+              "Level": 6,
+              "Parameters": [
+                0.49005,
+                0.94017,
+                1.222221,
+                0.638275,
+                1.45563,
+                0.6375,
+                1.736,
+                0.2296,
+                0.826,
+                1.65165,
+                2.063
+              ]
+            },
+            {
+              "Id": 493107,
+              "Level": 7,
+              "Parameters": [
+                0.5265,
+                1.0101,
+                1.31313,
+                0.68575,
+                1.5639,
+                0.6936,
+                1.86,
+                0.246,
+                0.898688,
+                1.796995,
+                2.244544
+              ]
+            },
+            {
+              "Id": 493108,
+              "Level": 8,
+              "Parameters": [
+                0.56295,
+                1.08003,
+                1.404039,
+                0.733225,
+                1.67217,
+                0.7497,
+                1.984,
+                0.2624,
+                0.971376,
+                1.94234,
+                2.426088
+              ]
+            },
+            {
+              "Id": 493109,
+              "Level": 9,
+              "Parameters": [
+                0.5994,
+                1.14996,
+                1.494948,
+                0.7807,
+                1.78044,
+                0.8058,
+                2.108,
+                0.2788,
+                1.044064,
+                2.087686,
+                2.607632
+              ]
+            },
+            {
+              "Id": 493110,
+              "Level": 10,
+              "Parameters": [
+                0.63585,
+                1.21989,
+                1.585857,
+                0.828175,
+                1.88871,
+                0.867,
+                2.232,
+                0.2952,
+                1.12336,
+                2.246244,
+                2.80568
+              ]
+            },
+            {
+              "Id": 493111,
+              "Level": 11,
+              "Parameters": [
+                0.6723,
+                1.28982,
+                1.676766,
+                0.87565,
+                1.99698,
+                0.9282,
+                2.356,
+                0.3116,
+                1.202656,
+                2.404802,
+                3.003728
+              ]
+            },
+            {
+              "Id": 493112,
+              "Level": 12,
+              "Parameters": [
+                0.70875,
+                1.35975,
+                1.767675,
+                0.923125,
+                2.10525,
+                0.9894,
+                2.48,
+                0.328,
+                1.281952,
+                2.563361,
+                3.201776
+              ]
+            },
+            {
+              "Id": 493113,
+              "Level": 13,
+              "Parameters": [
+                0.7452,
+                1.42968,
+                1.858584,
+                0.9706,
+                2.21352,
+                1.0506,
+                2.635,
+                0.3485,
+                1.361248,
+                2.721919,
+                3.399824
+              ]
+            },
+            {
+              "Id": 493114,
+              "Level": 14,
+              "Parameters": [
+                0.78165,
+                1.49961,
+                1.949493,
+                1.018075,
+                2.32179,
+                1.1118,
+                2.79,
+                0.369,
+                1.440544,
+                2.880478,
+                3.597872
+              ]
+            },
+            {
+              "Id": 493115,
+              "Level": 15,
+              "Parameters": [
+                0.8181,
+                1.56954,
+                2.040402,
+                1.06555,
+                2.43006,
+                1.173,
+                2.945,
+                0.3895,
+                1.51984,
+                3.039036,
+                3.79592
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10491,
+        "Name": "Firework Flare-Up",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, flames will accumulate on the arrowhead before being fired off as an attack. Has different effects based on how long the energy has been charged:\n·Charge Level 1: Fires off a flaming arrow that deals <color=#FF9999FF>Pyro DMG</color>.\n·Charge Level 2: Generates a maximum of 3 Kindling Arrows based on time spent charging, releasing them as part of this Aimed Shot. Kindling Arrows will home in on nearby opponents, dealing <color=#FF9999FF>Pyro DMG</color> on hit.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_02"
+      },
+      {
+        "GroupId": 4932,
+        "Proud": {
+          "Descriptions": [
+            "Blazing Arrow DMG|{param4:F1P} Normal Attack DMG",
+            "Duration|{param2:F1}s",
+            "CD|{param3:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 493201,
+              "Level": 1,
+              "Parameters": [
+                0.37909,
+                10,
+                18,
+                1.37909
+              ]
+            },
+            {
+              "Id": 493202,
+              "Level": 2,
+              "Parameters": [
+                0.40179,
+                10,
+                18,
+                1.40179
+              ]
+            },
+            {
+              "Id": 493203,
+              "Level": 3,
+              "Parameters": [
+                0.42449,
+                10,
+                18,
+                1.42449
+              ]
+            },
+            {
+              "Id": 493204,
+              "Level": 4,
+              "Parameters": [
+                0.454,
+                10,
+                18,
+                1.454
+              ]
+            },
+            {
+              "Id": 493205,
+              "Level": 5,
+              "Parameters": [
+                0.4767,
+                10,
+                18,
+                1.4767
+              ]
+            },
+            {
+              "Id": 493206,
+              "Level": 6,
+              "Parameters": [
+                0.4994,
+                10,
+                18,
+                1.4994
+              ]
+            },
+            {
+              "Id": 493207,
+              "Level": 7,
+              "Parameters": [
+                0.52891,
+                10,
+                18,
+                1.52891
+              ]
+            },
+            {
+              "Id": 493208,
+              "Level": 8,
+              "Parameters": [
+                0.55842,
+                10,
+                18,
+                1.55842
+              ]
+            },
+            {
+              "Id": 493209,
+              "Level": 9,
+              "Parameters": [
+                0.58793,
+                10,
+                18,
+                1.58793
+              ]
+            },
+            {
+              "Id": 493210,
+              "Level": 10,
+              "Parameters": [
+                0.61744,
+                10,
+                18,
+                1.61744
+              ]
+            },
+            {
+              "Id": 493211,
+              "Level": 11,
+              "Parameters": [
+                0.64695,
+                10,
+                18,
+                1.64695
+              ]
+            },
+            {
+              "Id": 493212,
+              "Level": 12,
+              "Parameters": [
+                0.67646,
+                10,
+                18,
+                1.67646
+              ]
+            },
+            {
+              "Id": 493213,
+              "Level": 13,
+              "Parameters": [
+                0.70597,
+                10,
+                18,
+                1.70597
+              ]
+            },
+            {
+              "Id": 493214,
+              "Level": 14,
+              "Parameters": [
+                0.73548,
+                10,
+                18,
+                1.73548
+              ]
+            },
+            {
+              "Id": 493215,
+              "Level": 15,
+              "Parameters": [
+                0.76499,
+                10,
+                18,
+                1.76499
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10492,
+        "Name": "Niwabi Fire-Dance",
+        "Description": "Yoimiya waves a sparkler and causes a ring of saltpeter to surround her.\n\n<color=#FFD780FF>Niwabi Enshou</color>\nDuring this time, arrows fired by Yoimiya's Normal Attack will be Blazing Arrows, and their DMG will be increased and converted to <color=#FF9999FF>Pyro DMG</color>. During this time, Normal Attack: Firework Flare-Up will not generate Kindling Arrows at Charge Level 2.\n\nThis effect will deactivate when Yoimiya leaves the field.\n\n<i>\"Niwabi\" is a form of incense firework created by Yoimiya herself. Its ability to be lit without any prior training or preparation has made it a real hit. After many fire-related incidents, the Tenryou Commission ordered the use of \"Niwabi\" banned, but small, bright sparks can often still be seen springing up at night. If seen from above, they look almost like little twinkling stars.</i>",
+        "Icon": "Skill_S_Yoimiya_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 4939,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:P}",
+          "Aurous Blaze Explosion DMG|{param2:P}",
+          "Duration|{param4:F1}s",
+          "CD|{param5:F1}s",
+          "Energy Cost|{param6:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 493901,
+            "Level": 1,
+            "Parameters": [
+              1.272,
+              1.22,
+              2,
+              10,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 493902,
+            "Level": 2,
+            "Parameters": [
+              1.3674,
+              1.3115,
+              2,
+              10,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 493903,
+            "Level": 3,
+            "Parameters": [
+              1.4628,
+              1.403,
+              2,
+              10,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 493904,
+            "Level": 4,
+            "Parameters": [
+              1.59,
+              1.525,
+              2,
+              10,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 493905,
+            "Level": 5,
+            "Parameters": [
+              1.6854,
+              1.6165,
+              2,
+              10,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 493906,
+            "Level": 6,
+            "Parameters": [
+              1.7808,
+              1.708,
+              2,
+              10,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 493907,
+            "Level": 7,
+            "Parameters": [
+              1.908,
+              1.83,
+              2,
+              10,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 493908,
+            "Level": 8,
+            "Parameters": [
+              2.0352,
+              1.952,
+              2,
+              10,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 493909,
+            "Level": 9,
+            "Parameters": [
+              2.1624,
+              2.074,
+              2,
+              10,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 493910,
+            "Level": 10,
+            "Parameters": [
+              2.2896,
+              2.196,
+              2,
+              10,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 493911,
+            "Level": 11,
+            "Parameters": [
+              2.4168,
+              2.318,
+              2,
+              10,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 493912,
+            "Level": 12,
+            "Parameters": [
+              2.544,
+              2.44,
+              2,
+              10,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 493913,
+            "Level": 13,
+            "Parameters": [
+              2.703,
+              2.5925,
+              2,
+              10,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 493914,
+            "Level": 14,
+            "Parameters": [
+              2.862,
+              2.745,
+              2,
+              10,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 493915,
+            "Level": 15,
+            "Parameters": [
+              3.021,
+              2.8975,
+              2,
+              10,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10495,
+      "Name": "Ryuukin Saxifrage",
+      "Description": "Yoimiya leaps into the air along with her original creation, the \"Ryuukin Saxifrage,\" and fires forth blazing rockets bursting with surprises that deal <color=#FF9999FF>AoE Pyro DMG</color> and mark one of the hit opponents with Aurous Blaze.\n\n<color=#FFD780FF>Aurous Blaze</color>\nAll Normal/Charged/Plunging Attacks, Elemental Skills, and Elemental Bursts by any party member other than Yoimiya that hit an opponent marked by Aurous Blaze will trigger an explosion, dealing <color=#FF9999FF>AoE Pyro DMG</color>.\nWhen an opponent affected by Aurous Blaze is defeated before its duration expires, the effect will pass on to another nearby opponent, who will inherit the remaining duration.\n\nOne Aurous Blaze explosion can be triggered every 2s. When Yoimiya is down, Aurous Blaze effects created through her skills will be deactivated.\n\n<i>Fireworks are man-made starlight, comets fired into the sky. Though they last for but an instant, the memory of their brilliance shall surely live on.</i>",
+      "Icon": "Skill_E_Yoimiya_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 4921,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 492101,
+              "Level": 1,
+              "Parameters": [
+                0.02,
+                3
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 492101,
+        "Name": "Tricks of the Trouble-Maker",
+        "Description": "During <color=#FFD780FF>Niwabi Fire-Dance</color>, shots from Yoimiya's Normal Attack will increase her <color=#FF9999FF>Pyro DMG Bonus</color> by 2% on hit. This effect lasts for 3s and can have a maximum of 10 stacks.",
+        "Icon": "UI_Talent_S_Yoimiya_05"
+      },
+      {
+        "GroupId": 4922,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 492201,
+              "Level": 1,
+              "Parameters": [
+                0.1,
+                0.01,
+                15
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 492201,
+        "Name": "Summer Night's Dawn",
+        "Description": "Using <color=#FFD780FF>Ryuukin Saxifrage</color> causes nearby party members (not including Yoimiya) to gain a 10% ATK increase for 15s. Additionally, a further ATK Bonus will be added on based on the number of Ascension Talent \"Tricks of the Trouble-Maker\" stacks Yoimiya possesses when using <color=#FFD780FF>Ryuukin Saxifrage</color>. Each stack increases this ATK Bonus by 1%.",
+        "Icon": "UI_Talent_S_Yoimiya_06"
+      },
+      {
+        "GroupId": 4923,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 492301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 492301,
+        "Name": "Blazing Match",
+        "Description": "When Yoimiya crafts Decoration, Ornament, and Landscape-type Furnishings, she has a 100% chance to refund a portion of the materials used.",
+        "Icon": "UI_Talent_S_Yoimiya_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 491,
+        "Name": "Agate Ryuukin",
+        "Description": "The Aurous Blaze created by <color=#FFD780FF>Ryuukin Saxifrage</color> lasts for an extra 4s.\nAdditionally, when an opponent affected by Aurous Blaze is defeated within its duration, Yoimiya's ATK is increased by 20% for 20s.",
+        "Icon": "UI_Talent_S_Yoimiya_01"
+      },
+      {
+        "Id": 492,
+        "Name": "A Procession of Bonfires",
+        "Description": "When Yoimiya's <color=#FF9999FF>Pyro DMG</color> scores a CRIT Hit, Yoimiya will gain a 25% <color=#FF9999FF>Pyro DMG Bonus</color> for 6s.\nThis effect can be triggered even when Yoimiya is not the active character.",
+        "Icon": "UI_Talent_S_Yoimiya_02"
+      },
+      {
+        "Id": 493,
+        "Name": "Trickster's Flare",
+        "Description": "Increases the Level of <color=#FFD780FF>Niwabi Fire-Dance</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Yoimiya_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 494,
+        "Name": "Pyrotechnic Professional",
+        "Description": "When Yoimiya's own Aurous Blaze triggers an explosion, <color=#FFD780FF>Niwabi Fire-Dance</color>'s CD is decreased by 1.2s.",
+        "Icon": "UI_Talent_S_Yoimiya_03"
+      },
+      {
+        "Id": 495,
+        "Name": "A Summer Festival's Eve",
+        "Description": "Increases the Level of <color=#FFD780FF>Ryuukin Saxifrage</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Yoimiya_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 496,
+        "Name": "Naganohara Meteor Swarm",
+        "Description": "During <color=#FFD780FF>Niwabi Fire-Dance</color>, Yoimiya's Normal Attacks have a 50% chance of firing an extra Blazing Arrow that deals 60% of its original DMG. This DMG is considered Normal Attack DMG.",
+        "Icon": "UI_Talent_S_Yoimiya_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Frolicking Flames",
+    "Detail": "Owner of Naganohara Fireworks. Known as the \"Queen of the Summer Festival,\" she excels in her craft of creating fireworks that symbolize people's hopes and dreams.",
+    "Association": 5,
+    "Native": "Naganohara Fireworks",
+    "BirthMonth": 6,
+    "BirthDay": 21,
+    "VisionBefore": "Pyro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Carassius Auratus",
+    "CvChinese": "金娜",
+    "CvJapanese": "植田佳奈",
+    "CvEnglish": "Jenny Yokobori",
+    "CvKorean": "Park Shin-hee",
+    "CookBonus": {
+      "OriginItemId": 108253,
+      "ItemId": 108302,
+      "InputList": [
+        100078,
+        100015,
+        101202,
+        100092
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Time for a light show!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "The fuse is lit!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Fire hazard~"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "A festive reprise!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Goldfish of doom!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Here come the fireworks!"
+      },
+      {
+        "Title": "Deploying Wind Glider: I",
+        "Context": "Up, up, and away!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Ooh! Will we find any firework materials in here?"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "What do we have here?"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Ooh, let me open it!"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Uh-oh, uh-oh!"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Oh, that hurt..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Gotta watch it..."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "I've come to help!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Never fear, Yoimiya's here!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Burned... too... brightly..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Ohh... fizzled out..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "The festival... ends."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Lighter, please!"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "That didn't count!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Are you going to hold a festival?"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Let's go out and play!"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "More companions. Hooray!"
+      },
+      {
+        "Title": "Hello",
+        "Context": "Welcome to Naganohara! My name is Yoimiya — just let me know if you need anything! We have Kushikatsu, Egg Roll... Wait, no, we're not a restaurant. We make fireworks! Like these, see? Sparkling, crackling, little fireworks~"
+      },
+      {
+        "Title": "Chat: Fireworks",
+        "Context": "Fireworks are for now, but friends are forever."
+      },
+      {
+        "Title": "Chat: Telling Stories",
+        "Context": "If we've got nothing else to do, why don't I tell you a story?"
+      },
+      {
+        "Title": "Chat: Goldfish",
+        "Context": "Have you ever kept goldfish as pets? They're very cute."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Ahh, the fireworks are going to get soaked! Let's find shelter, quick! Oh, we're not going to make it!"
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Haha, watch me make a snowball... pew!"
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "Ah, this is great! I feel so relaxed all over, I could almost float away."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "The wind's so strong—! It's blowing my voice back at me—! Hahaha..."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Ah... *yawns* Good morning. The morning air is the freshest. Come on, take a few extra breaths — it'll make you smarter~"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Time for lunch! ... Oh my, it's an egg with a double yolk. What wonderful luck!"
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Now's the best time to test our fireworks out, though I'm sure they'll look good whether they explode in the sky or on the ground... Hehe, just kidding. I'll pay attention to safety."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Question time! So, what should you do after watching fireworks all day? Hehe, the answer is... to watch them again in your dreams, of course! Good night. See you tomorrow!"
+      },
+      {
+        "Title": "About Yoimiya: Family Matters",
+        "Context": "My father's hearing isn't very good. When I was young, he would always smile no matter what I said to him, and so I thought that everything I said was correct. So I kept talking, and he would keep smiling. Later, I found out that he was smiling because he couldn't hear clearly, but... as long as he's truly happy, I'll keep talking to him."
+      },
+      {
+        "Title": "About Yoimiya: Talking",
+        "Context": "I don't worry about \"loose lips sinking ships.\" The emotions contained in the words people say don't lie. Misunderstandings that arise from saying things wrongly can be resolved if you just talk more, but if you say nothing, the other person won't understand what you mean, and they can't get closer to you."
+      },
+      {
+        "Title": "About Us: Rock, Paper, Scissors",
+        "Context": "Let's have a game of rock paper scissors! On my count, now — rock, paper, scissors! Woohoo, I won! I won! ... Hmm? I didn't change my choice halfway. Why would I ever do that?"
+      },
+      {
+        "Title": "About Us: Companionship",
+        "Context": "It actually doesn't matter what I do. What matters are the people I work with. When I'm with you, even simple things like watching the scenery or kicking a small jar about make me happy. Talking to you never gets old, after all."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "Let me let you in on a little secret. When I first received my Vision, I used it as a flint to light fireworks and boil water, before returning home, chucking it into a storeroom, and forgetting all about it. In the end, it was my father who found it and told me that it was a precious item that I should keep safe. Haha, at least it didn't get taken back by our dear Archon."
+      },
+      {
+        "Title": "Something to Share: Lantern Rite",
+        "Context": "Did you know? A lot of the fireworks used during Liyue's Lantern Rite were purchased from our shop. I made them to order before asking Beidou to ship them to Liyue. Exports like these aren't allowed under the Sakoku Decree, but... How can there be festivals without fireworks?"
+      },
+      {
+        "Title": "Something to Share: Cycles",
+        "Context": "\"When the last sparks of the fireworks have disappeared into the sky, they turn into rain and snow, and will fall upon the earth again, nourishing the land and nurturing humanity, so that someday they can be sent up into the sky again and display their magnificence.\" Of the many stories my father told me, this one is my favorite."
+      },
+      {
+        "Title": "Something to Share: Spots of Light",
+        "Context": "Did you ever try to step on a spot of light before as a child? You know, those patches on the ground created when the sunlight passes through the leaves. I once thought that it would disappear if I stepped on it, but it would always jump onto my foot instead. I tried and tried and tried, but I never succeeded... Quite the sore loser I was, then — sitting on a rock, sighing to myself and thinking, \"Ah, so there are things in this world that can't be stepped on...\""
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "While squatting next to some children and watching them catch goldfish during one summer festival, I suddenly had a thought: could I make fireworks that could go off on the surface of the water? Thus, the \"Goldfish Fireworks\" were born! They can swim here and there, emit multi-colored lights, and they can even spit bubbles! I never thought that it would actually work, but I guess wonders never cease."
+      },
+      {
+        "Title": "About Beidou",
+        "Context": "Beidou's been helping me ship my fireworks out ever since Inazuma was locked down. I prepared a huge boat-shaped firework just to surprise her — and when the Crux Fleet was about to leave, this firework went whoosh! Right in front of their eyes, straight into the sky. The sailors got such a huge fright — they thought one of their ships had somehow flown off! But Beidou liked that trick very much, saying that it was exactly what a pleasant surprise should be — very pleasant, and a surprise."
+      },
+      {
+        "Title": "About the Raiden Shogun",
+        "Context": "Fireworks are probably the furthest thing from the \"eternity\" that the Shogun pursues. She probably feels that their transient glory has no practical purpose in Inazuma. *sigh* It's probably something that one who has \"eternity\" in their grasp will find hard to comprehend. It is precisely because we mortals are like fleeting shadows that we need to treasure such flickers of beauty."
+      },
+      {
+        "Title": "About Kamisato Ayaka: Seriousness",
+        "Context": "We cooperate a lot due to work. Unlike people in the other two Commissions, she always lets me finish speaking and answers me seriously without showing any impatience. I'd say that the word \"ladylike\" was practically made just for her."
+      },
+      {
+        "Title": "About Kamisato Ayaka: Baths",
+        "Context": "We once discussed matters concerning the summer festival deep into the night. We were both really tired, and I invited her to go take a bath. But when she heard that it involved many people bathing in the same pool, she went red in an instant! That was when I first learned that noble ladies can't use public baths."
+      },
+      {
+        "Title": "About Thoma",
+        "Context": "He's quite the talker and has reasons behind every word that he says. Sometimes, it might seem like there's no connection, but as he goes on, everything will eventually dovetail nicely towards a single purpose. It's... quite different from how I do things. I ask him for help whenever I encounter a matter I can't settle."
+      },
+      {
+        "Title": "About Yae Miko",
+        "Context": "Ayaka once asked me during a ritual at the shrine if I could prepare some fireworks for the Lady Guuji's leisure. I thought to myself, \"isn't the Lady Guuji supposed to sit inside the shrine throughout the ritual?\" So I watched her the whole time during the ritual, wondering how she'd like to release fireworks. I waited, and I waited, and then Ayaka came over at length to tell me that the Lady Guuji was most pleased. I mean, what? She'd already released the fireworks? Was the person sitting inside the shrine not her, then?"
+      },
+      {
+        "Title": "About Arataki Itto: Duels",
+        "Context": "Oh, he may look scary, but he is very popular with the children. However, he can be very competitive. Every time we play with the children, it always turns into a showdown between him and me. For example, we'd drink a bowl of ramen soup in one go, or try to eat sour plums without making any faces. The children will cheer us both on and try to guess the winner. And when that happens... well, then I can't let him beat me, right?"
+      },
+      {
+        "Title": "About Arataki Itto: Arataki's Gang",
+        "Context": "Arataki's gang? Huh!? So he isn't just someone with too much free time on his hands?"
+      },
+      {
+        "Title": "About Kaedehara Kazuha",
+        "Context": "People with no worries like myself speak plainly, while those with many cares often speak of ancient poetry or the scenery. They talk of flowers and birds, wind and moon, but never about the reality that confronts them. He's got quite the tale to tell, I'm sure."
+      },
+      {
+        "Title": "About Kujou Sara",
+        "Context": "Due to public safety and fire hazard-related concerns, I often get whisked off to the Tenryou Commission's place for a lecture. Kujou Sara's probably the most reasonable of the bunch. At least she'll hear me out before passing any judgment. If I'm in the right, she'll acknowledge my perspective, and if I'm wrong... Hehe, then I'll get Thoma to come and help me apologize to her!"
+      },
+      {
+        "Title": "About Sayu",
+        "Context": "Let me know if you see her, alright? I'd really love to take her to one of the festivals and introduce her to lots of new friends. She always looks a little down, but if she meets some people she can hang out with, maybe she'll slowly pick herself up again!"
+      },
+      {
+        "Title": "About Klee",
+        "Context": "Wait, you said there was a kid in Mondstadt who was good at making bombs?... Now, they aren't much different from fireworks. In other words, she might be a genius... Ohh, I'd love to meet her. *sigh* But isn't it dangerous to let children play with explosives? Don't the people of Mondstadt worry about that?"
+      },
+      {
+        "Title": "About Kirara",
+        "Context": "The courier from Komaniya Express? She's super reliable and really quick on her feet! Ingredients used in coloring the fireworks always run out quickly, but she always delivers a new batch right when I need them! I gave her a firework once as a thank-you gift, but she was too scared to light it, saying that she got spooked once by the sound of fireworks. Hehe, so I told her to find a nice viewing spot far away and set it off for her."
+      },
+      {
+        "Title": "More About Yoimiya: I",
+        "Context": "You wanna hear a story? Alright, alright. Sit here, and I shall tell you the story I'm most proud of — the story of the Naganohara family! You'll rarely ever hear me talk about something this serious, you know?"
+      },
+      {
+        "Title": "More About Yoimiya: II",
+        "Context": "Our family has a long tradition in which we will give every client who orders customized fireworks a note. Its contents can only be understood by our family, and it records the specific formula of the fireworks that were ordered. Whether ten years or a hundred years pass, our family can make exactly the same fireworks as they did in the past so long as the client brings us that note."
+      },
+      {
+        "Title": "More About Yoimiya: III",
+        "Context": "The loveliest fireworks go along with the most wondrous moments. Tiny little emotions that can easily slip away are captured within these fireworks and passed down in a different form. The notes we give our clients are like a key that awaits those who wish to open a gate to commemorate the past. We at Naganohara are the keepers of that gate."
+      },
+      {
+        "Title": "More About Yoimiya: IV",
+        "Context": "Every moment of the summer festival is a moving tale. Those who meet under the light of fireworks grow up, mature, and grow old. When they set off the same fireworks as they did in the beginning, the skies reflect that same image from years ago... Fireworks are not eternal, but I believe that the wonderful emotions behind them should walk alongside Inazuma into eternity."
+      },
+      {
+        "Title": "More About Yoimiya: V",
+        "Context": "I shan't tell the final tale, I think. Instead, let's watch the fireworks together in silence. You can record the beautiful scenery and all the things you wanna say down. Not that this is the end, of course. On the contrary, I believe that our story is only just beginning."
+      },
+      {
+        "Title": "Yoimiya's Hobbies: Playing",
+        "Context": "Fireworks! Wait, that doesn't count? Well then, let me think. Um... This one's a toughie. I like to chat with the neighbors, I like going to summer festivals with the children, swimming, picking wild fruits... Oh, I can't decide which I like most... Wait, I've got it! I love playing with everyone!"
+      },
+      {
+        "Title": "Yoimiya's Hobbies: Copycat",
+        "Context": "*Blubbering noises* Hah! I'm copying the sound that Paimon makes while disappearing!"
+      },
+      {
+        "Title": "Yoimiya's Troubles",
+        "Context": "The novel that I've been reading for a while finally reached its end. But the heroine lost her memory, and the planned wedding fell through... That's so... sad..."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "I prefer snacks to entrees. I always go from stall to stall during festivals, eating as I go. By the way, are you any good at making snacks? I'll trade the dango I made with you. Here, have the big ones!"
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Ugh... Milk never fails to start some real fireworks in my stomach — crackle, kaboom! Y'know what I mean? But I can handle dishes and snacks made with milk for some reason, hmm. Maybe the little Seelie in my stomach is just pickier than most."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Wow, you've got a real knack for making tasty treats! You should totally set up a stall at a festival some time, oh it'd be a hit for sure!"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Good food really perks you up, and puts you in the mood to share some stories. Ooh, actually I got a good one, you've gotta hear this one...!"
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Urgh, it feels like there's a Specter swirling around in my stomach... That can't be ideal."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Birthdays are never occasions for yourself alone. Those who send you cakes, light candles, applaud, and cheer... They are all truly thankful that you were born into this world. That's why it must be a lively occasion, so that everyone can get their chance to thank you! Well then — happy birthday! Are you ready? I'm about to ignite the fireworks!"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "The higher they fly, the louder the explosion!"
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Hehehe, let me give this \"shooting fireworks straight into the skies with a bow\" business a shot!"
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "With all these combat skills I've learned from you, I should just become an adventurer on the side — apart from my day job making fireworks... Or... should I just become a hero instead?"
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "\"Never fear, Yoimiya is here! Evil begone! Justice prevails!\"\nThink this is a good way to introduce the powers you've taught me to the children? Isn't it cool? Hehe! Hey, tell me if anyone picks on you, too. I'll stick up for you!"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Yoimiya's name is renowned throughout Hanamizaka.\nShe is the most skilled pyrotechnician in Inazuma and is known as the \"Queen of the Summer Festival.\"\nYoimiya, who has inherited the mantle of \"Naganohara,\" is able to give people an unparalleled experience with her ever-changing and spectacular fireworks.\nIn addition to being a craftsperson, she is also the \"heroic sister\" in the eyes of many children. No matter how big the problem is, Yoimiya always has a solution to save the day.\nBe it the illusions of fear or the shadows of cold reality, they will all dissipate under the starlight magic of Yoimiya's fireworks.\nThe children are not the only ones she helps — as long as one is willing to talk to her about their troubles, she will lend a helping hand, and try her best to help them through the crisis.\nSplendid fireworks, warm starlight and passionate lights all join in a swirling dance in Yoimiya's hands. Her bright smile is always able to inspire fellow travelers and light up the way for them."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "To Inazumans, fireworks symbolize summer.\nThe various festivals that take place at fixed times feature a rotation of various events, with fireworks being the sole constant.\nOver a century ago, the Yashiro Commission once organized a dazzling fireworks display with \"commemoration\" as the theme.\nThe fireworks then were made by the greatest pyrotechnicians in the land, and this was the origin of the Naganohara Fireworks Show.\nIn latter days, fireworks would become more common, and the Naganohara Fireworks Show would slowly become an event in which all people would participate.\nDuring the Fireworks Show, everyone can light their favorite fireworks, and the owner of the Naganohara Fireworks store will pick an appropriate time to set up a most lavish performance.\nThe year Yoimiya took over, her first fiesta was already jaw-droppingly good.\nOn the night before that Fireworks Show, Kamisato Ayaka enjoined Yoimiya thusly: \"Her Excellency will be watching this fireworks display personally. As such, please add Her Excellency's emblem — the Electro Mitsudomoe — into the fireworks repertoire, if you would.\"\n\"Haha, just wait for it!\" Yoimiya replied, agreeing with great confidence.\nBefore the show could begin, Yoimiya ran all about the city, placing thousands of launch tubes in every nook and cranny. At the festival's finale, the blazing fireworks formed a gigantic picture scroll that depicted the city of Inazuma in the skies.\nYet Ayaka did not find the critical emblem in any one of these fireworks, and wondered if Yoimiya had made an error in her arrangements.\nIt was only after speaking with Yoimiya that Ayaka discovered that the image of Inazuma in the skies had an \"angling\" trick added to it.\nIf viewed from the Tenshukaku, the fireworks would form a huge, clear, and orderly image of the Raiden Shogun's house-crest — with some playfully lacy decorations on the side to boot.\nOf course, how could Yoimiya miss a beat at a fireworks performance? This way, she won the praise of both the people and the Raiden Shogun, and this feast would become a timeless classic deeply rooted in the memories of countless people.\nWith Yoimiya around, the Inazuman summer shall not lack any glorious fireworks — thus was her nickname, \"Queen of the Summer Festival,\" coined."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Naganohara's fireworks are loved by all, and work in the shop is always in full swing. As such, people often feel that coming up to the door without important matters might hinder the work.\nHowever, it's just the opposite with Yoimiya, for chatting is her other great hobby. In fact, if there's no one to talk to, she might actually find it hard to focus.\nIf chatting with the guest is her way of \"understanding their mood and way of thinking, such that the best fireworks can be crafted,\" then going with the flow and sitting down for tea and an idle chat with them after delivering the goods is how Yoimiya rewards herself. Sometimes, if that is not enough, she will make some small-talk with her neighbors on the way, give them some small trinkets, and receive a basket of small treats in return...\nYoimiya is always able to strike a balance between listening and speaking in such chats.\nShe doesn't repeat herself, doesn't cross boundaries, doesn't come off as indifferent or overly invested. After a talk over tea, everyone leaves in a good mood.\nHer neighbors are all ordinary folk, and their lives are not exactly full of extraordinary things. Sometimes, the same news will be told by different people over and over, but Yoimiya does not find this upsetting.\nWhat she enjoys is the process of talking to others — even if they speak of the same matter, different people will have different viewpoints.\nAfter taking over the fireworks shop, Yoimiya's relationships with her neighbors became still more harmonious. Many old folks have taken her for an old acquaintance, and often invite her to their place to sit and recount the festivals of yesteryear. Middle-aged parents will ask Yoimiya to mediate the relationship between themselves and their children and will regale her with the little trivialities of daily family life. The young people treat Yoimiya as a sibling of sorts, volunteering to help her cart heavy fireworks-making materials around, hoping that Yoimiya will get off work faster and take the children out to play.\nYoimiya puts it this way: \"I believe in the unique power of language. There's nothing that can't be talked through somehow!\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Craftsmen seeking perfection are often rigorous and self-disciplined, but Yoimiya is an exception, acting freely and taking unscheduled breaks.\nSometimes, she even has to work late into the night when she misses her daytime work due to chatting for too long. But when the sun begins to rise, she will climb up to the heights to see the sunrise with a sense of accomplishment at having finished her work in her heart. Looking out at the hazy amber-gold clouds, Yoimiya often gains new inspiration, imagining all manners of new fireworks in her mind, even as sleep draws near...\nHer neighbors have often found her sleeping in places like eaves, tree branches, and stopped waterwheels. Sometimes, she even falls down, before blearily watching her sweet dreams and golden stars fade away into the distance.\nFortunately, she has never been seriously injured in such incidents, but she has gotten a number of scrapes and cuts, and it was on that account that she learned how to deal with wounds.\nAt some other times, Yoimiya will sleep until midnight, settling all matters with gusto before heading out for a stroll.\nPerhaps it may turn out to be an impromptu adventure, or perhaps a test of courage. If a friend is interested, she might call upon them. If she wishes to be alone, she will travel in solitude.\nLiving as she pleases gives Yoimiya a sense of freedom. As for others, they may encounter her at any time at all. She enjoys this freedom, often saying that it has made her life very interesting indeed.\nOf course, she will restrain herself on the eve of celebrations. Mistakes shall not be made during these all-important performances — her \"official business.\""
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Apart from selling fireworks, Naganohara Fireworks also sells various intricate knickknacks. This can be said to be Yoimiya's second career.\nAll manner of trinkets adorn the shelves, with some of them being exotic imports from Beidou that were modified and made into highly distinctive handicrafts, and others being practice works created during bursts of Yoimiya's explosive inspiration.\nFrom the Scatterbloom Marbles that will blossom when they knock against each other, Leaping Tops that chirp like birds as they spin, the Neon Dragonfly that changes hue as it ascends into the air, and the somewhat-failed Onikabuto Chariot... All these toys are inspired by the little games that the common people play.\nThey are not only popular among the children, but are much-loved by adults as well. Even Arataki Itto, the head of the Arataki Gang, comes over to buy her specially-made knickknacks, which he then brings to go challenge the one he has declared his nemesis.\nYoimiya's knickknacks are not just toys. With some thought, they can be very useful in one's daily life. The most classic example of this is the Katydid Coil, which is a ring that can contain a variety of flammables and spices. When ignited and hung up in the summer, it can be used to repel mosquitoes.\nMany people have come to ask Yoimiya for help on account of her excellent craftsmanship. And though she protests, saying, \"Hey now, this is a fireworks shop, not an everything shop. Even I can't possibly do it all,\" she will still try her best to help, even if her earnings for the whole day are only enough to buy a few snacks. She'll enjoy the whole thing, too — everyone in Hanamizaka is her friend, after all."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "\"The rainbows become fireworks, and they my wishes know, my wishes rise into the skies, and through the night they show.\"\nThis nameless folksong has been around for a long time now. In recent years, it was misconstrued by the children to mean that as long as they brought some shiny trinkets, they could exchange them with Yoimiya for fireworks that belong just to them, and that if they lit those fireworks up, their wish will come true at some point in the future.\nAs such, the children of Hanamizaka set about searching for beautiful little trinkets with this song on their lips, before bringing them to Yoimiya, with expectation eagarly written on their faces.\nYoimiya was quite troubled by this at first, but after hearing how the children had interpreted that song, she accepted their requests gladly and even added her own spin to the tale: the \"rainbows\" in the song not only refer to shiny treasures per se. As long as she found them \"sufficiently shiny,\" whether they were colored rocks from the creeks or shell fragments from the beaches, she would take them and make lovely fireworks as per the agreement.\nIndeed, if they were to bring her expensive things, she might, in turn, say that they are too ordinary, and take the child to look for the owner of those lost goods.\nBut it really did not matter if the treasures were shiny or not. The important part was the conviction the children had that \"rainbows\" could indeed be exchanged for \"fireworks.\"\nThough some might take it for naivete, Yoimiya will give her all to protect the lovely wishes that only children can have.\n\"The things we believed in and experienced as children become irreplaceable treasures.\"\nThe legendary picture books of Inazuma are often filled with the following images: the cute and playful Great Mujina Youkai, the majestic Shiba Warrior, the Origami Nue who appears out of nowhere...\nPerhaps those who drew demons in such cute forms also had a similar intention to Yoimiya.\nThe children gather around Yoimiya, enjoying a gladsome time even amidst Inazuma's lockdown.\nYoimiya's own child-like heart and liveliness never dulls, like fireworks and stars that shimmer and shine in the night sky."
+      },
+      {
+        "Title": "Yoimiya's Candy Box: \"Sweet Pearl\"",
+        "Context": "Every festival, Yoimiya not only tries snacks from every store, but she also collects all sorts of candies, wrapping them up with care before storing them away inside a small candy box.\nYoimiya's candy box is a small crimson ball that has been decorated with delicate lanyards and ornate accessories, much like the hair accessories she often wears.\nEach time she encounters a joyous event, she will take one candy out of the box and eat it. If her friends or the children are around, she will share the sweets with them.\nYoimiya's neighbors often mistake her hair ornaments for the candy box, hence its erroneous nickname \"Sweet Pearl.\"\nThe speed at which the box lightens is taken as an important measure of happiness.\nThe quicker it empties, the more pleased Yoimiya is.\nSometimes, when things get busy, she sometimes absently uses the candy box as a hair accessory, realizing her mistake only after the day is done.\nStill, even this error would inspire Yoimiya. From then on, she would wear them interchangeably.\n\"Take a guess: does my hair ornament have candy in it today? Free pick of the sweets to anyone who gets it right!\""
+      },
+      {
+        "Title": "Vision",
+        "Context": "Yoimiya is always up for a chat. It is only when the fireworks are ascending into the skies that she quiets down and just watches the lovely scenery.\nPeople often say that fireworks come and go in a fleeting heartbeat, but if they are memorable enough, they will remain in bloom forever in people's hearts.\nThose who accompanied you and the loveliness of the moment itself, will burrow deep into your mind as a beautiful memory.\nAnd as you look upon the same fireworks, many years later, that same memory and the feelings that came with it will surely rise again to the forefront of your heart.\nIs this not also \"Eternity\"?\nThe special firework formula slips that belong solely to the Naganohara family exist for precisely this purpose.\nBy incorporating goodwill and wishes into the gorgeous fireworks, ephemeral things are etched into eternity. This is the meaning of Yoimiya's line of work.\nOn one summer night following her taking over Naganohara Fireworks, Yoimiya could not sleep, and thus she continued in her research till daylight came.\nSuddenly, she heard a tinkling sound, and a burning-red object fell into an unused launching tube.\nAt first, Yoimiya used her Vision as a sort of lighter. Fortunately, her father discovered it and explained a Vision's significance to her.\nSo, this tiny gem could grant a person astonishing and mysterious powers. And yet what else could it do other than protect the children or chase some mischievous monsters away?\n\"Even if it could have other uses,\" Yoimiya thought, \"it may not ever need to do these things in my hands. I'm just someone who pursues happiness, a fireworks-maker who enjoys living life.\"\nTime has flown since then, and Yoimiya has grown ever more skilled in the manipulation of \"fire,\" with her skill at making fireworks having likewise increased.\nSometimes, she stops to ask herself this: \"How did someone as ordinary as me receive the acknowledgment of the gods? Do the gods... enjoy fireworks, by any chance?\""
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 204900,
+      "Name": "Goldfish Firecracker",
+      "Description": "Yoimiya's outfit. A patchwork of memories from festivals over the years.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104114,
+    113024,
+    101205,
+    112010,
+    104322,
+    113017
+  ],
+  "NameCard": {
+    "Name": "Yoimiya: Auratus Spark",
+    "Description": "Namecard style.\nEven momentary sparks can leave beautiful, unquenchable flames in the hearts of those who watch the night sky.",
+    "Icon": "UI_NameCardIcon_Yoimiya",
+    "PicturePrefix": "UI_NameCardPic_Yoimiya"
+  }
+}

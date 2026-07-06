@@ -1,0 +1,1168 @@
+{
+  "Id": 10000112,
+  "PromoteId": 112,
+  "Sort": 98,
+  "Body": 2,
+  "Icon": "UI_AvatarIcon_Escoffier",
+  "SideIcon": "UI_AvatarIcon_Side_Escoffier",
+  "Name": "Escoffier",
+  "Description": "The ex-head chef of Hotel Debord, renowned throughout Fontaine as the Patissiere Supreme and vanguard of precision gastronomy. Has incomparably strict standards when it comes to cooking.",
+  "BeginTime": "2025-05-06T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 1039.1188,
+    "AttackBase": 26.999,
+    "DefenseBase": 56.95816
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 2,
+    "Skills": [
+      {
+        "GroupId": 11231,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+            "Charged Attack DMG|{param5:F1P}",
+            "Charged Attack Stamina Cost|{param6:F1}",
+            "Plunge DMG|{param7:F1P}",
+            "Low/High Plunge DMG|{param8:P}/{param9:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1123101,
+              "Level": 1,
+              "Parameters": [
+                0.51551,
+                0.475933,
+                0.329995,
+                0.403327,
+                1.15412,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 1123102,
+              "Level": 2,
+              "Parameters": [
+                0.55747,
+                0.514671,
+                0.356855,
+                0.436156,
+                1.24806,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 1123103,
+              "Level": 3,
+              "Parameters": [
+                0.59943,
+                0.55341,
+                0.383715,
+                0.468985,
+                1.342,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 1123104,
+              "Level": 4,
+              "Parameters": [
+                0.659373,
+                0.608751,
+                0.422087,
+                0.515884,
+                1.4762,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 1123105,
+              "Level": 5,
+              "Parameters": [
+                0.701333,
+                0.64749,
+                0.448947,
+                0.548712,
+                1.57014,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 1123106,
+              "Level": 6,
+              "Parameters": [
+                0.749287,
+                0.691762,
+                0.479644,
+                0.586231,
+                1.6775,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 1123107,
+              "Level": 7,
+              "Parameters": [
+                0.815225,
+                0.752638,
+                0.521852,
+                0.63782,
+                1.82512,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 1123108,
+              "Level": 8,
+              "Parameters": [
+                0.881162,
+                0.813513,
+                0.564061,
+                0.689408,
+                1.97274,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 1123109,
+              "Level": 9,
+              "Parameters": [
+                0.947099,
+                0.874388,
+                0.60627,
+                0.740996,
+                2.12036,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 1123110,
+              "Level": 10,
+              "Parameters": [
+                1.019031,
+                0.940797,
+                0.652316,
+                0.797274,
+                2.2814,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 1123111,
+              "Level": 11,
+              "Parameters": [
+                1.090963,
+                1.007206,
+                0.698361,
+                0.853553,
+                2.44244,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 1123112,
+              "Level": 12,
+              "Parameters": [
+                1.162894,
+                1.073615,
+                0.744407,
+                0.909831,
+                2.60348,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 1123113,
+              "Level": 13,
+              "Parameters": [
+                1.234826,
+                1.140025,
+                0.790453,
+                0.966109,
+                2.76452,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 1123114,
+              "Level": 14,
+              "Parameters": [
+                1.306757,
+                1.206434,
+                0.836499,
+                1.022387,
+                2.92556,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 1123115,
+              "Level": 15,
+              "Parameters": [
+                1.378689,
+                1.272843,
+                0.882544,
+                1.078666,
+                3.0866,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11121,
+        "Name": "Kitchen Skills",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to perform an upward thrust.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 11232,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:F1P}",
+            "Frosty Parfait DMG|{param2:F1P}",
+            "Cold Storage Mode Duration|{param3:F1}s",
+            "Surging Blade DMG|{param4:F1P}",
+            "Surging Blade CD Interval|{param5:F1}s",
+            "#{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press} CD|{param6:F1}s",
+            "Hold CD|{param7:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1123201,
+              "Level": 1,
+              "Parameters": [
+                0.504,
+                1.2,
+                20,
+                0.336,
+                10,
+                15,
+                6
+              ]
+            },
+            {
+              "Id": 1123202,
+              "Level": 2,
+              "Parameters": [
+                0.5418,
+                1.29,
+                20,
+                0.3612,
+                10,
+                15,
+                6
+              ]
+            },
+            {
+              "Id": 1123203,
+              "Level": 3,
+              "Parameters": [
+                0.5796,
+                1.38,
+                20,
+                0.3864,
+                10,
+                15,
+                6
+              ]
+            },
+            {
+              "Id": 1123204,
+              "Level": 4,
+              "Parameters": [
+                0.63,
+                1.5,
+                20,
+                0.42,
+                10,
+                15,
+                6
+              ]
+            },
+            {
+              "Id": 1123205,
+              "Level": 5,
+              "Parameters": [
+                0.6678,
+                1.59,
+                20,
+                0.4452,
+                10,
+                15,
+                6
+              ]
+            },
+            {
+              "Id": 1123206,
+              "Level": 6,
+              "Parameters": [
+                0.7056,
+                1.68,
+                20,
+                0.4704,
+                10,
+                15,
+                6
+              ]
+            },
+            {
+              "Id": 1123207,
+              "Level": 7,
+              "Parameters": [
+                0.756,
+                1.8,
+                20,
+                0.504,
+                10,
+                15,
+                6
+              ]
+            },
+            {
+              "Id": 1123208,
+              "Level": 8,
+              "Parameters": [
+                0.8064,
+                1.92,
+                20,
+                0.5376,
+                10,
+                15,
+                6
+              ]
+            },
+            {
+              "Id": 1123209,
+              "Level": 9,
+              "Parameters": [
+                0.8568,
+                2.04,
+                20,
+                0.5712,
+                10,
+                15,
+                6
+              ]
+            },
+            {
+              "Id": 1123210,
+              "Level": 10,
+              "Parameters": [
+                0.9072,
+                2.16,
+                20,
+                0.6048,
+                10,
+                15,
+                6
+              ]
+            },
+            {
+              "Id": 1123211,
+              "Level": 11,
+              "Parameters": [
+                0.9576,
+                2.28,
+                20,
+                0.6384,
+                10,
+                15,
+                6
+              ]
+            },
+            {
+              "Id": 1123212,
+              "Level": 12,
+              "Parameters": [
+                1.008,
+                2.4,
+                20,
+                0.672,
+                10,
+                15,
+                6
+              ]
+            },
+            {
+              "Id": 1123213,
+              "Level": 13,
+              "Parameters": [
+                1.071,
+                2.55,
+                20,
+                0.714,
+                10,
+                15,
+                6
+              ]
+            },
+            {
+              "Id": 1123214,
+              "Level": 14,
+              "Parameters": [
+                1.134,
+                2.7,
+                20,
+                0.756,
+                10,
+                15,
+                6
+              ]
+            },
+            {
+              "Id": 1123215,
+              "Level": 15,
+              "Parameters": [
+                1.197,
+                2.85,
+                20,
+                0.798,
+                10,
+                15,
+                6
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11122,
+        "Name": "Low-Temperature Cooking",
+        "Description": "Behold the true meaning of \"cooking\"! Escoffier will demonstrate different cooking techniques when you Tap or Hold this skill, but rest assured, each of them is Fontaine's pride and joy.\n\n<color=#FFD780FF>Tap</color>\nActivates her All-Spectrum Multi-Use Cooking Mek in its Cold Storage mode and deals <color=#99FFFFFF>AoE Cryo DMG</color> to nearby opponents.\n\n<color=#FFD780FF>Cooking Mek: Cold Storage Mode</color>\nFollows the current active character and fires Frosty Parfaits at nearby opponents at intervals, dealing <color=#99FFFFFF>Cryo DMG</color>.\n\n<color=#FFD780FF>Arkhe: Ousia</color>\nAt intervals, Escoffier will summon a Surging Blade when activating her Cooking Mek in Cold Storage mode, dealing Ousia-aligned <color=#99FFFFFF>AoE Cryo DMG</color>.\n\n<color=#FFD780FF>Hold</color>\nActivates her All-Spectrum Multi-Use Cooking Mek's {LINK#N11120002}<color=#FFD780FF>Off-the-Cuff Cookery Mode</color>{/LINK}.",
+        "Icon": "Skill_S_Escoffier_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 11239,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:F1P}",
+          "Healing|{param2:F1P} ATK+{param3:I}",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1123901,
+            "Level": 1,
+            "Parameters": [
+              5.928,
+              1.72032,
+              1078.5255,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1123902,
+            "Level": 2,
+            "Parameters": [
+              6.3726,
+              1.849344,
+              1186.3931,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1123903,
+            "Level": 3,
+            "Parameters": [
+              6.8172,
+              1.978368,
+              1303.2495,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1123904,
+            "Level": 4,
+            "Parameters": [
+              7.41,
+              2.1504,
+              1429.095,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1123905,
+            "Level": 5,
+            "Parameters": [
+              7.8546,
+              2.279424,
+              1563.9294,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1123906,
+            "Level": 6,
+            "Parameters": [
+              8.2992,
+              2.408448,
+              1707.7528,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1123907,
+            "Level": 7,
+            "Parameters": [
+              8.892,
+              2.58048,
+              1860.5652,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1123908,
+            "Level": 8,
+            "Parameters": [
+              9.4848,
+              2.752512,
+              2022.3665,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1123909,
+            "Level": 9,
+            "Parameters": [
+              10.0776,
+              2.924544,
+              2193.1567,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1123910,
+            "Level": 10,
+            "Parameters": [
+              10.6704,
+              3.096576,
+              2372.936,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1123911,
+            "Level": 11,
+            "Parameters": [
+              11.2632,
+              3.268608,
+              2561.704,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1123912,
+            "Level": 12,
+            "Parameters": [
+              11.856,
+              3.44064,
+              2759.4614,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1123913,
+            "Level": 13,
+            "Parameters": [
+              12.597,
+              3.65568,
+              2966.2075,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1123914,
+            "Level": 14,
+            "Parameters": [
+              13.338,
+              3.87072,
+              3181.9426,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1123915,
+            "Level": 15,
+            "Parameters": [
+              14.079,
+              4.08576,
+              3406.6665,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11125,
+      "Name": "Scoring Cuts",
+      "Description": "Displaying her exceptional knife skills, Escoffier deals <color=#99FFFFFF>AoE Cryo DMG</color> and restores HP to all nearby party members based on her ATK.",
+      "Icon": "Skill_E_Escoffier_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 11221,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1122101,
+              "Level": 1,
+              "Parameters": [
+                1.3824,
+                9
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1122101,
+        "Name": "Better to Salivate Than Medicate",
+        "Description": "After using the Elemental Burst <color=#FFD780FF>{LINK#S11125}Scoring Cuts{/LINK}</color>, Escoffier will obtain the Rehab Diet effect for 9s: Restores HP for nearby active characters every 1s based on 138.24% of Escoffier's ATK.",
+        "Icon": "UI_Talent_S_Escoffier_05"
+      },
+      {
+        "GroupId": 11222,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1122201,
+              "Level": 1,
+              "Parameters": [
+                0.05,
+                0.1,
+                0.15,
+                0.55,
+                12
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1122201,
+        "Name": "Inspiration-Immersed Seasoning",
+        "Description": "When there are 1/2/3/4 <color=#80C0FFFF>Hydro</color> or <color=#99FFFFFF>Cryo</color> characters in the party, Escoffier will decrease the <color=#80C0FFFF>Hydro RES</color> and <color=#99FFFFFF>Cryo RES</color> of any opponents hit by her Elemental Skill, <color=#FFD780FF>{LINK#S11122}Low-Temperature Cooking{/LINK}</color>, or her Elemental Burst, <color=#FFD780FF>{LINK#S11125}Scoring Cuts{/LINK}</color>, by 5%/10%/15%/55% for 12s.",
+        "Icon": "UI_Talent_S_Escoffier_06"
+      },
+      {
+        "GroupId": 11223,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1122301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1122301,
+        "Name": "Constant Off-the-Cuff Cookery",
+        "Description": "#When using the Hold form of her Elemental Skill <color=#FFD780FF>{LINK#S11122}Low-Temperature Cooking{/LINK}</color>, Escoffier will activate her All-Spectrum Multi-Use Cooking Mek in its Off-the-Cuff Cookery mode.\n\n<color=#FFD780FF>Cooking Mek: Off-the-Cuff Cookery Mode</color>\n· Places the Cooking Mek on the field. The Cooking Mek can absorb elemental attacks. When the absorbed elemental energy hits a certain limit, Escoffier can convert the ingredients placed within it into wonderful food.\n· Escoffier needs time to purchase new ingredients, so she can only make a certain number of dishes like this each week. The number of dishes Escoffier can make resets every Monday at 4:00 AM {TIMEZONE}.",
+        "Icon": "UI_Talent_S_Escoffier_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1121,
+        "Name": "Pre-Dinner Dance for Your Taste Buds",
+        "Description": "When 4 party members are <color=#80C0FFFF>Hydro</color> or <color=#99FFFFFF>Cryo</color>, all nearby party members will have their <color=#99FFFFFF>Cryo DMG</color> CRIT DMG increased by 60% for 15s after Escoffier uses her Elemental Skill <color=#FFD780FF>{LINK#S11122}Low-Temperature Cooking{/LINK}</color> or Elemental Burst <color=#FFD780FF>{LINK#S11125}Scoring Cuts{/LINK}</color>.\nYou must first unlock the Ascension Talent \"Inspiration-Immersed Seasoning.\"",
+        "Icon": "UI_Talent_S_Escoffier_01"
+      },
+      {
+        "Id": 1122,
+        "Name": "Fresh, Fragrant Stew Is an Art",
+        "Description": "When Escoffier activates her Cooking Mek in its {LINK#N11120001}<color=#FFD780FF>Cold Storage Mode</color>{/LINK}, she will gain the \"Freshly-Prepped Delicacy\" effect for 15s. During this time, Escoffier will gain 5 Cold Dish stacks. When nearby active characters apart from Escoffier deal <color=#99FFFFFF>Cryo DMG</color> with a Normal, Charged, or Plunging Attack, or an Elemental Skill or Elemental Burst, they will expend 1 Cold Dish stack to increase their DMG dealt by 240% of Escoffier's ATK.\nIf you hit multiple opponents with a single instance of <color=#99FFFFFF>Cryo DMG</color>, Cold Dish stacks will be consumed based on the number of opponents hit.",
+        "Icon": "UI_Talent_S_Escoffier_02"
+      },
+      {
+        "Id": 1123,
+        "Name": "The Bakery Magic of Caramel Browning",
+        "Description": "Increases the Level of <color=#FFD780FF>{LINK#S11122}Low-Temperature Cooking{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Escoffier_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1124,
+        "Name": "Secret Rosemary Recipe",
+        "Description": "{LINK#P1122101}<color=#FFD780FF>Rehab Diet</color>{/LINK} lasts 6 more seconds. While it is active, you have a chance of healing 100% extra HP and restoring 2 Energy to Escoffier when you trigger healing through <color=#FFD780FF>Rehab Diet</color>. This chance corresponds to Escoffier's CRIT Rate. You can trigger this effect 7 times during any one <color=#FFD780FF>Rehab Diet</color>'s duration.\nYou must first unlock the Ascension Talent \"Better to Salivate Than Medicate.\"",
+        "Icon": "UI_Talent_S_Escoffier_03"
+      },
+      {
+        "Id": 1125,
+        "Name": "Symphony of a Thousand Sauces",
+        "Description": "Increases the Level of <color=#FFD780FF>{LINK#S11125}Scoring Cuts{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Escoffier_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1126,
+        "Name": "Tea Parties Bursting With Color",
+        "Description": "{LINK#N11120001}<color=#FFD780FF>Cooking Mek: Cold Storage Mode</color>{/LINK} is enhanced:\n· When your party's active character's Normal, Charged, or Plunging Attacks hit opponents, Cooking Mek: Cold Storage Mode will fire off another Special-Grade Frosty Parfait, dealing 500% of Escoffier's ATK as <color=#99FFFFFF>AoE Cryo DMG</color>. This DMG is considered Elemental Skill DMG.\nThis effect can be triggered once every 0.5s, and this effect can be triggered 6 times within the duration of one Cooking Mek: Cold Storage Mode.",
+        "Icon": "UI_Talent_S_Escoffier_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Tasteful Excellence",
+    "Detail": "The ex-head chef of Hotel Debord, renowned throughout Fontaine as the Patissiere Supreme and vanguard of precision gastronomy. Has incomparably strict standards when it comes to cooking.",
+    "Association": 8,
+    "Native": "Fontaine",
+    "BirthMonth": 6,
+    "BirthDay": 8,
+    "VisionBefore": "Cryo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Dulciaria Structura",
+    "CvChinese": "蔡海婷",
+    "CvJapanese": "佐藤聡美",
+    "CvEnglish": "Emily Cass",
+    "CvKorean": "Son Jeong-min",
+    "CookBonus": {
+      "OriginItemId": 108815,
+      "ItemId": 108820,
+      "InputList": [
+        101233,
+        100062,
+        110001,
+        110002
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Well met. I am Escoffier, Patissiere Supreme and master of precision gastronomy. As an esteemed guest of the divine, you deserve the finest cuisine Teyvat has to offer. I hope my work is to your satisfaction.\nIf you have an interest in the culinary arts, allow me to introduce you to the wonderful world of haute cuisine. I just hope you're mentally prepared for the undertaking. I don't tolerate a quitter."
+      },
+      {
+        "Title": "Chat: Background Music",
+        "Context": "Know of any new orchestral pieces? I like to swap out the background music in the kitchen once in a while. It's a great way to find new inspiration."
+      },
+      {
+        "Title": "Chat: Knife Skills",
+        "Context": "An important part of cooking is making sure the ingredients absorb the flavors in the dish. To that end, a chef must be able to wield a knife with the same level of precision as a surgeon. Practice makes perfect."
+      },
+      {
+        "Title": "Chat: Perceptive Senses",
+        "Context": "Even the most unassuming ingredients can produce astounding flavor. But, unlocking that potential takes a keen sense of smell, a refined palate, and an open mind."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Humid air filled with the rich scent of leaves and earth... A day like this calls for Pluie Lotus Fish Soup."
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "The feeling of the warm sun as it burns off the moisture in the air... I'm sure I can capture it in a dish, I just need to strike the right flavor combination."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Hmm... I bet I could put ingredients in the snow instead of a freezer!"
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "The sunlight is so bright... like a dish with sharp notes of citrus, a foam made from berry leaves, and a hint of sugar. Hm, not a bad idea."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Still half asleep, huh... Here, have a freshly-baked Sea Salt Croissant and Quenepa Berry Palmier with a cup of Bulle Fruit Tea. Breakfast of champions!"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "There was a time when the importance of lunch was overlooked. But, modern society places a much greater emphasis on self-care. So, now, we realize that nutrition without lunch is like a symphony without strings — utterly lackluster. So, let's not waste another second. Time to gather some fresh ingredients and whip up something nutritious."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "The final meal of the day should be given the same level of care as a grand banquet. Even for just two or three dishes, all the prep should be finished by three in the afternoon. Huh? Then, you don't have time to make something? Oh, well, it is well past three, you're right. But, don't worry — I wasn't expecting you to cook at all. I prepped the ingredients hours ago. Just sit tight and get ready to feast!"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Eating a small amount of dessert before bed can help you sleep. Here, have some of this cherry blossom and grilled apple-flavored light sugar pudding. It's low in sugar, but if you want my advice... Don't get too caught up in the number on the scale. And, anyway, if you ever need to balance your diet, I can make you something nutritious that doesn't taste like dirt!"
+      },
+      {
+        "Title": "About Escoffier: Breaking Out of Archetypes",
+        "Context": "I carry the title of \"Patissiere Supreme,\" but that doesn't mean desserts are the only thing I can make. I respect those who dedicate themselves to one specialty, but I don't like the idea of boxing myself in. I'll try any ingredient from anywhere in the world. All I want is to push the limits of culinary innovation."
+      },
+      {
+        "Title": "About Escoffier: Fully Armed",
+        "Context": "\"Extracting and employing all facets of flavor\"... That is the core philosophy of my school of cooking. In practice, this means I need a whole arsenal of cooking utensils. Whenever I leave my home kitchen for an extended period of time, most of my luggage is filled with carefully-wrapped cooking equipment. Navia likes to joke that I'm more armed than the Special Patrol. But, ever since I commissioned the Fontaine Research Institute to create the All-Spectrum Multi-Use Cooking Mek, cooking on the go is a lot easier."
+      },
+      {
+        "Title": "About Us: Principles of Innovation",
+        "Context": "As some ingredients start to spoil, others are just beginning to sprout... That's pretty much a metaphor for cooking as a whole — it's always evolving. Classic recipes are valuable, but that doesn't mean we should be confined to that era. Of course, innovation needs to be thoughtful, otherwise you might end up with abominations like \"Lavender Melon Cream Macaroni\" or \"Jueyun Chili-Infused Earl Grey Tea\"... At the very least, you need to know where to draw the line!"
+      },
+      {
+        "Title": "About Us: Right to Critique",
+        "Context": "A chef should strive to give their customer the best experience, but when it comes to critique, the customer isn't always right. Some people are born with a less refined sense of taste. Others don't care about the subtleties of a dish, much less the intricate combination of presentation, smell, and taste. You, on the other hand, are a special case. You're detailed, perceptive, well-traveled, and someone who has dined with the Archons themselves. As such, only you have the right to critique all aspects of my work. If you think there's something off with one of my dishes, just let me know — I won't take offense."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "I don't know much about how Visions work, but that hasn't stopped me from using mine in the kitchen. It's like I always say, cooking is a science. There are so many flavors waiting to be discovered. I know some monsters look disgusting, but finely chopped and ground into a powder, their flavor can be incredible! Without my Vision, getting my hands on unconventional ingredients like that would be... precarious to say the least. Oh, and best of all, I'm basically a walking freezer!"
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "The device on my back is called the \"Self-Adapting Movement Signal Tracking Support Mek.\" It's a similar piece of tech to the All-Spectrum Multi-Use Cooking Mek. It's easy to control, efficient in the kitchen, and can even read and respond to common movements. Many people think it looks like a tail and even call me a \"demon chef.\" If I'm honest, I wish I had the power to cast certain cooking abominations into oblivion... So, hey, if the shoe fits..."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "If I could create a dessert better than Gateau Debord and make it to Lady Furina's satisfaction... I think my next step would be to visit every nation in Teyvat and cook for the Archons. That's how I get to the next level. I might even be able to get a taste of each Archon's signature dish. Boy, would that open my eyes to a whole new world of gastronomy..."
+      },
+      {
+        "Title": "About Furina: First Meeting",
+        "Context": "Early in my career, I worked at a small restaurant in the Vasari Passage. One day, entirely out of the blue, Lady Furina decided to dine at our restaurant after a performance. As I was scrambling around the back, a customer asked to meet the head chef. So, I rushed out to their table, knife still in hand, and completely froze... Because there I was, standing face-to-face with Lady Furina of all people. I knew I had to make something special, and it was like my instincts took over — I came up with a \"Lily sugar-glazed opera cake,\" and Lady Furina actually liked it and said she would remember me. I barely slept a wink that night, and the very next day, there was a position waiting for me at the Palais Mermonia..."
+      },
+      {
+        "Title": "About Furina: Current Situation",
+        "Context": "After that, Lady Furina gave me the title of \"Patissiere Supreme,\" and said, when it comes to confections, I was worth a whole army of patissiers. That gave me a lot to live up to, so I shut myself away to hone my craft. And, well, it seems like I missed a lot of important events in the meantime. Lady Furina doesn't even live in the Palais Mermonia anymore... I don't really understand what happened, but I do know this — Lady Furina will always be the most important benefactor of my life. She only has to say the word, and I would go work as her personal chef in an instant — no compensation necessary!"
+      },
+      {
+        "Title": "About Navia",
+        "Context": "My parents took me to the Hotel Debord for the first time on my fifth birthday. I remember — I found this hat on the ground. It was beautiful and carried the intense, warm aroma of roses. Following that scent, I was able to find the owner, and well... That scent is Navia to a tee — so warm and sweet, and after all these years, not a thing has changed. I invite her over for afternoon tea whenever I have the chance. Every second we spend together is pure delight... Except for the fact that she's still a \"the sweeter the dessert, the better\" kind of person... But, oh well. You have to pick your battles. And, anyway, taste is personal, I guess..."
+      },
+      {
+        "Title": "About Charlotte",
+        "Context": "As a professional reporter with impeccable writing skills, Charlotte has a lot of clout in the culinary world. Her flavor descriptions are so detailed and her photography skills are unmatched. She can whip up a food editorial in the blink of an eye. If I have a new dish that I want to advertise, inviting Charlotte to try it out is never a bad idea."
+      },
+      {
+        "Title": "About Sigewinne",
+        "Context": "The Head Nurse, huh... Well, um... She's a lovely person, of course. It's just... her sense of taste is, in a word, unique.... Which I completely understand and respect. I've tried my best to explore flavor through her perspective. But, my biggest takeaway was that she could star in an assassin film. Seriously, try her milkshakes sometime — absolutely deadly..."
+      },
+      {
+        "Title": "About Wriothesley",
+        "Context": "His Grace is polite and steadfast — a true old-school gentleman at heart. Still, eating the food at the Coupon Cafeteria... Now that was a cruel and unusual punishment indeed."
+      },
+      {
+        "Title": "About Lynette",
+        "Context": "You might not know this, but Lynette is actually a member of our Dessert Tea Party. She and her brother were frequent performers at Hotel Debord, so we saw each other quite a bit. In the beginning, she seemed distant and cold, but once I worked up the courage to invite her to the tea party, I realized that her emotions are as rich and varied as a plate of Rainbow Macarons... When she likes a particular dessert, her ears flutter back and forth. And, if she doesn't like it, her tail droops down, hehe... Wait! Don't tell me my tail does that too..."
+      },
+      {
+        "Title": "About The Knave",
+        "Context": "I've only ever seen her from a distance, and one time at that, but I will never forget it. For a while, I cooked as if she was going to taste every dish. I mean, imagine the consequences of disappointing someone like that... Talk about motivation. It was a great scare tactic for my apprentices as well. All it took was a, \"you think you can serve this to Ms. Arlecchino and live to tell the tale?\" It's weird, though... Navia seems to think she's not as terrifying as she looks... But I don't know."
+      },
+      {
+        "Title": "About Emilie",
+        "Context": "Did you know that food-inspired scent formulation is a popular field in perfumery? Miss Emilie has helped me learn a lot about extracting fragrances and aromas. I feel like I have a whole new appreciation for the dynamic between smell and taste. I hope I can use it to my advantage one day and use fragrance to unlock a whole new sensory experience. As for Miss Emilie, it's just really nice to have someone who appreciates a scientific approach..."
+      },
+      {
+        "Title": "About Varesa",
+        "Context": "Oh, Varesa? The fruit from her orchard is amazing. Biting into one is like being transported to a lazy summer's day. She could charge me an extra twenty percent, and it would still be worth it! So, I always treat her to a meal after every purchase. Her appetite is astonishing. It may look like she scarfs it all down in one bite, but if you actually talk to her about the food, it's obvious she appreciates the subtle details. In other words, she has the appetite and palate to back it up — I love serving food to people like that!"
+      },
+      {
+        "Title": "About Xiangling",
+        "Context": "There is a saying in Liyue: \"Beyond every mountain lies a higher mountain.\" But, when it comes to Xiangling and me, it feels more like... I was holed up in a cave and she dragged me into a new world. She uses techniques I've never heard of and chooses ingredients I could never anticipate. Her dishes seem to redefine what I thought was possible — you can't even analyze them within the framework of classical Fontainian cooking. Meeting her has convinced me that staying cooped up in my kitchen isn't the answer — I need to go out and explore what other nations have to offer!"
+      },
+      {
+        "Title": "More About Escoffier: I",
+        "Context": "For me, food is far more than a source of nutrition or sustenance — it's the star of the most important ritual in our lives. A great dish can give us hope, joy, and strength. The act of cooking is like the figure of the Snow-Winged Goose — there's a certain grace and elegance to it. It's an artform that takes a lifetime to master."
+      },
+      {
+        "Title": "More About Escoffier: II",
+        "Context": "For many people, the barrier to appreciating good cuisine is not a lack of aptitude, but a lack of time and Mora. For me, part of a chef's duty is prioritizing cost-effective ingredients in recipe development. Haute cuisine doesn't have to be inaccessible — it should be enjoyed by all. Of course, that's far easier said than done, and when I first started out, I completely hit a wall — but that's what inspired me to pursue precision gastronomy."
+      },
+      {
+        "Title": "More About Escoffier: III",
+        "Context": "The tenets of precision gastronomy are analysis, extraction, and replication. First, you perform a quantitative analysis to determine the elements needed to achieve a certain flavor profile. Then, you extract those elements from more cost-effective ingredients. The goal is to turn expensive dishes into attainable ones. That means using all sorts of unconventional tools in the kitchen, but that's business as usual for me."
+      },
+      {
+        "Title": "More About Escoffier: IV",
+        "Context": "In theory, precision gastronomy can do more than just reduce the cost of a dish. It also forces the chef to get creative and innovate. Of course, I'm not doing it out of some desire to become \"the best in the world\" or earn some other superlative title — I'm not naive enough for that. My goal remains unchanged — turning haute cuisine into a cuisine for all, while reinventing flavor as we know it."
+      },
+      {
+        "Title": "More About Escoffier: V",
+        "Context": "My ideal life is being surrounded by pleasant music and having ample time to explore promising flavor combinations, with a fellow food enthusiast by my side to serve as a taste-tester... That's what I'm saving up for, at least. As for my future sous chef, ingredient procurer, and taster of my dishes, I happen to already have someone in mind... Hey, why are you avoiding eye contact all of a sudden?"
+      },
+      {
+        "Title": "Escoffier's Hobbies",
+        "Context": "You strike me as someone who appreciates good forging. Then, get a load of these knives, all forged with different techniques and featuring intricate patterns on the blades. Some are swirled like a rolled cake, some are mottled like a thick jam, and others shimmer like a gemstone. Not to mention, the feel in the hand is so different for each one. Some glide through ingredients like butter, others chop with short, sharp beats, and a few even seem to vibrate like a violin string... Each one has a unique charm!"
+      },
+      {
+        "Title": "Escoffier's Troubles",
+        "Context": "A branding consultant once advised me to create a so-called \"investable persona\" to attract more funding and help me reach greater culinary heights. But, I'm terrible at acting, so I told them to just record the way I work and interact with my apprentices in real life... But, I'm not sure the film had the intended impact. People don't seem focused on my food at all..."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "I've tried most of the traditional cuisine Teyvat has to offer. So, now, my focus is on the unconventional and the unexpected. My favorite recipes are the ones that turn an old classic on its head. In fact, if you want my expert opinion, you have infinite potential in that regard. I'm really looking forward to your future creations."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "\"Kinda bland,\" \"Just okay,\" \"I've had worse\"... Comments like that are my worst enemy. Flavor is everything, and if a dish fails to deliver, it's going straight in the trash."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Hmm... Hmm? Hmm! Well, incredible! You have a gift! I should teach you everything I know as soon as possible! Your culinary potential is off the charts!"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Hmm... Just \"meh.\" It's not bad, just... forgettable. I know someone of your talent can do better than this. Back to the drawing board, I think. I look forward to the new and improved version."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "...Friends tell it like it is, so here's the truth. If one of my apprentices served this dish to me, I'd turn it upside down on their own head. For you, though, I'll finish it, and then... give you a thorough evaluation. I hope you take my feedback to heart and learn from your mistakes. Out of consideration for your diners, and your own tastebuds, dig a little deeper next time."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Esteemed Traveler, you are the \"ultimate variable\" of Teyvat, the one who brought a unique flavor to this world. A birthday celebration in your honor calls for a feast with eighty dishes at least — four meat, four wild game, four pastry, and two soup dishes, just to start... Still, gorging on food is no way to dine — it's a disservice to your health and to the dishes themselves... Thus, we shall just have to celebrate your birthday over the entire week! Ten dishes a day should do it. I want you to appreciate each one to the fullest. A culinary symphony awaits!"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "My senses are sharper. It feels like the fragrance, color, and texture of food are much more defined... Perfect! This should help me cook with even more precision."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Mastery isn't just about raw strength, but learning to control and account for different variables... I can feel myself getting better at that by the day."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "I can see it — the golden point in time when form and flavor combine for maximum effect. The most efficient pathways for the transmission of flavor, the subtle acoustics as you bite into a dish, and how they can enhance that experience..."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "Thank you so much. With your inspiration and support, I now have what it takes to extract the finest flavors nature has to offer and redefine the very limits of culinary perfection! And after that, I'll find a new peak to strive towards!"
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Off to the freezer."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "A little amuse-bouche~"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "A dash of frosting."
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "No recipe, no problem~"
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "An inspired melange~"
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "Bon appétit~"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Goose on the loose!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "The pinnacle of excellence!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "A burst of flavor!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Hehe, okay! I can get behind this filling."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Are we sure this stuff isn't... expired?"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Huh, this chest is pretty good at keeping things fresh."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "A slip up... That's all."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "I can handle the heat."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Remember, nice clean cuts..."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Gotta start from scratch..."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Hang in there!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "The taste isn't... right..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "In over... my head..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "What did I... do wrong?"
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Rotten to the core..."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Th—The audacity!"
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Show no fear!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Ready to spice things up!"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Utensils at the ready!"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Let's go stretch our legs while the flavors are mingling."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "For many years, Fontainian cuisine — exemplified by a focus on elegant sophistication — has been a popular palate-pleaser throughout Teyvat.\nIf you were to inquire among food critics as to who best embodies the principles of Fontainian food, few if any would omit the great \"former head chef of the Hotel Debord,\" Escoffier, from the forefront of their name lists.\nIn the eyes of discerning diners, Escoffier is both the founder of \"precision gastronomy\" and a leading proponent of \"the principles of innovative cuisine.\" She excels at taking flavorings measured with the precision of scientific rigor and crafting them into dazzling, dynamic taste experiences.\nAccording to countless food critics, she is a \"demon chef\" who continues to breathe new life into the culinary world while sending shivers down the spines of dietary dinosaurs — those stubbornly unreceptive to change and fresh avenues in culinary evolution. While improving the industry's technology and techniques, she has successfully lowered the costs involved, effectively democratizing high-end dining and putting famous dishes on the tables of ordinary folk.\nAccording to her students and peers, she is discipline incarnate. There is no slacking on her watch — even the tiniest mistakes caused by a lapse in concentration or momentary distraction are met with scathing critiques. Crafting a dish worthy of even a perfunctory nod of approval requires absolute respect for each ingredient and the utmost sincerity and caution at every stage of the cooking process.\nAs Navia and her other friends see it, Escoffier is a patient and thoughtful woman who finds inspiration in complex symphonies and conversations with companions alike. Joining her for a spot of afternoon tea is much like opening a surprise gift — there is always something new and unexpected in store.\nYet for Escoffier, there is no dwelling on past glories — in her eyes, there is only the now and her goals for the future.\nEven when tasting a creation into which she has poured her heart and soul, she only stops to enjoy her work for a fleeting moment before turning her attention to the tiniest of flaws that even a seasoned critic would fail to notice.\n\"There's still a long way to go to achieve perfection!\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Escoffier displayed an unusually keen awareness from an early age... almost shockingly so.\nHer sense of taste was particularly sharp, a characteristic that combined with her natural curiosity to remarkable effect.\nWhen her parents were distracted, she would rush into the kitchen and try every ingredient and seasoning she could find. She would then categorize them based on whether they were sweet, savory, sour, or spicy, and neatly rearrange them based on flavor intensity. She would then gesture to her mother to point out which flavors she preferred.\nWhile other children were playing aimlessly and carefree, Escoffier was busy discerning which baguettes had been out of the oven for too long and were no longer fresh. She would eagerly signal her mother to replace these stale loaves with freshly-baked ones. Seeing her little arms waving and her eyes blinking furiously, her mother would cut her off a few extra pieces of bread and ladle her a fresh bowl of soup, mistakenly believing she was trying to signal her hunger.\nOf course, Escoffier's parents weren't so well off that they could afford to throw out bread the second it lost its freshness. And so Escoffier, then only two, learned how to use salt, butter, sugar, and pepper to create fresh flavors for every meal.\nWatching this unfold, her parents, themselves chefs, realized their daughter's particular interest. So, they provided her ever more seasonings to play with, giving her the tools and freedom to express her creativity.\nIn whatever free time they had between teaching their daughter poetry and art, Escoffier's parents would introduce the history of cooking, inculcating in her the solemn significance of being a chef — starting with the adage that \"The pristine white of a chef's uniform shines as brilliant as the plumage of a snow-winged goose.\"\nIt wasn't long before Escoffier was completely immersed in the wonderful world of food. She asked her parents to take her along to work, sitting and observing from the quietest corner of the restaurant. With the owner's permission, they would make a little extra sample with each dish they cooked so that the curious Escoffier could taste every style and flavor.\nThey were as yet unaware that in Escoffier's mind, this was nothing less than diligent study.\nThis exceptional talent would only continue to evolve and improve until she attained an awe-inspiring virtuosity.\nNo matter what dish was put before her, with just a single taste and a few minutes of careful consideration, Escoffier could not only list each ingredient and seasoning but even estimate the amounts used.\nEventually, at the ripe old age of four, she took a decisive step on her culinary journey — identifying ingredients and flavoring food was no longer enough. She was determined to start cooking dishes that could satisfy her tastes — to create cuisine that would shock the world!\n\"How about I make dinner tonight?\"\nFor her first ever dish, Escoffier eschewed the more common starting points and attempted a Golden Trinity Roulade — fish, poultry, and offal coated in batter and fried until a wondrous, golden interplay of complex flavors was achieved.\nThis was by no means an easy dish to make. Only by preparing each ingredient with care and precision could the correct balance of flavors be achieved. The slightest inaccuracy could easily result in a dish that is torment for the tongue.\nEscoffier followed the recipe to a T, carefully measuring each ingredient and seasoning and strictly controlling the timing of each stage. Her tiny hands were a blur of activity, anxiety turning her face red as she spent a hectic two hours toiling away.\nHer first, somewhat clumsy attempt at cookery did not have a fairytale ending — this was no case of the genius chef destined to turn every dish she touched into culinary gold.\nWhile her parents were full of praise for her Golden Trinity Roulade — enthusing quite genuinely over their meal — once they left and Escoffier had tried it herself, a frown quickly spread across her face.\nShe had failed to cook a dish that she found truly satisfying.\n\"There's something missing, a certain je ne sais quoi...\"\nThat night, Escoffier lay in bed thinking, unable to sleep...\n\"Perhaps... I haven't eaten enough food... I haven't prepared enough meals... Was my seasoning off?\"\n\"Reading a recipe and following the instructions as-is... It's not enough!\"\nFrom that point on, Escoffier had a clear goal to work towards...\nShe would try more food, expand her culinary horizons, and create delicacies that would make the world gasp in awe!"
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "\"Expand my culinary horizons\"... Such a simple goal, and yet, one that required considerable expenditure.\nWishing to avoid burdening her parents, Escoffier decided to embark on a culinary campaign despite her young age.\nShe found a nondescript restaurant far from the prying eyes of anyone who might recognize her and diligently worked her way up to an apprenticeship in the kitchens.\nBy observing the chefs as they cooked dish after dish — all while helping them complete vital steps in the preparation process — Escoffier quickly familiarized herself with the specific challenges posed by wide varieties of food.\nWhenever a customer was less than satisfied, Escoffier would try a sample of their dish and combine her own taste with her memories of how the chef had cooked it to analyze the problem.\nAt the same time, mistakes are inevitable amidst the kitchen's heat, and stove-side pitfalls are impossible to predict from staring at recipes and textbooks alone.\nThe chefs in Escoffier's restaurant already thought she was too young to work in the kitchen. So, even when she knocked over a pot full of food, they couldn't bring themselves to scold her.\nBut Escoffier requested she receive no special treatment — every harsh word, every sharp reprimand, she wanted to hear them all.\nIf she didn't like what they said, then it was her job not to make the same mistake again.\nIt was these unpredictable pitfalls that Escoffier needed to quickly identify and commit to memory, adding them to her growing pool of \"experience\".\nIn a short six months, her understanding of cooking had grown by leaps and bounds, and she was soon ready to cook the restaurant's signature dishes unsupervised.\nThis tiny apprentice, barely taller than the stovetop, would stand on a chair, wielding utensils that weighed half as much as she did, and produce dish after dish of remarkable quality.\nSeeing this, the restaurant owner was moved by her passion and granted Escoffier the title of \"petit chef.\" Her apprenticeship was over, and she was given a salary to match her new position.\nAlmost all the Mora that Escoffier earned in those early days was spent on \"sampling delicacies.\"\nEvery day off they had, she would invite her parents to visit the famous restaurants of the Court of Fontaine, sampling each establishment's most exceptional offerings.\nWhile her parents were busy enthusing over the novel flavors of this high-end cuisine, Escoffier was deep in contemplation, considering the steps that must have been taken to prepare each dish and committing to memory every last spark of inspiration.\nThe more delicious food she tried, the more her own cooking excelled, the more Mora she could earn, and the more delicious food she could try... As Escoffier spiraled ever upward on this culinary cycle, she became increasingly engrossed in the grandness of gastronomy.\nBut there was one delicacy that she had been unable to sample...\nThe legendary Gateau Debord had swept through the culinary world like wildfire only a hundred years before. Yet, after the untimely death of the Hotel Debord's original head chef, the recipe had vanished from history.\nLater generations had made repeated attempts to reconstruct the recipe from scattered records of the time. Many of these replicas had themselves made waves in the culinary circles of Fontaine.\nEscoffier had tried them all, and while they were indeed sweet and delicious, she was always left with an inexpressible sense of disappointment — surely, there was more to the legendary cake than this?\nAround Escoffier's fifth birthday, a great chef from the Spina di Rosula created another such replica, one that was rumored to be almost identical in taste to the original.\nThe Spina even arranged for the Hotel Debord itself to host a grand tasting ceremony, whose opening day just so happened to fall on Escoffier's birthday.\nThere would be a mere sixteen pieces on offer each day. Naturally, these were quickly reserved for famous celebrities and people of note — there was no hope of securing a taste for someone like Escoffier, no matter how much she might desire it.\nOn the day of her fifth birthday, Escoffier begged her parents to take her to the Hotel Debord. Even if she couldn't try it, perhaps she could learn something about the legendary gateau just from its color, shape, and smell.\nIn the end, unforeseeable events conspired to provide her with far more than just a glimpse and a whiff of fragrance — outside the hotel, a sudden gust swept up an exquisite hat and whisked it into Escoffier's hands.\nShe searched high and low until, finally, following the unmistakable scent of roses wafting from the hat, she managed to find its equally fragrant owner — a somewhat anxious Navia.\nBy way of thanks, Navia invited Escoffier to sample the delightful piece of cake that had been reserved specially for her by the great chef who had baked it.\n\"Honestly, it's nothing! I'll let you in on a little secret...\" Navia lowered her voice and, after making sure no one was listening, whispered to the hesitant Escoffier, \"I've tried it loads of times when no one was looking... and personally, I prefer macarons!\"\nWith that, Escoffier's curiosity overcame her polite hesitancy, and she eagerly dug into the cake that Navia had just handed her.\nIt was indeed delicious, yet far from perfection. To Escoffier's tastes, it was no better or worse than the other imitations she had tried.\nBut this was a coveted gift from a new friend standing right in front of her — not to mention the work of a chef from the organization said friend's family ran... Was this the time for an honest appraisal?\n\"How is it? Do you like it? Tell me what you really think!\"\nNavia's appeal erased any lingering doubt. When facing a friend — when facing food — only the truth will do.\nAnd so, as she would go on to do countless times in the years to come, Escoffier gave her frank, exacting assessment:\n\"...It's nothing special.\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "A vast and formidable gulf must be bridged for the merely \"exquisite\" to be elevated to the \"enchanting.\"\nAfter carefully analyzing and comparing the many imitations she had tried over the years, Escoffier decided that she too would attempt to recreate the Gateau Debord she had so long dreamed of.\nShe would attempt to use this stunning creation as a stepping stone to ascend to the pinnacle of the culinary world.\nWith no recipe to follow, she had no choice but to cycle through the more common ingredients, hoping to slowly \"derive\" the perfect flavor.\nIf taking an existing recipe and learning how to prepare it, then modifying and improving upon what was already there can be compared to building a house with a tried-and-tested blueprint before decorating it in a different style...\nThen, Escoffier's method of \"derivation\" should be compared to building an entirely new house from scratch.\nShould an ingredient lend a dish an unexpected flavor, or if the proportions of each component are slightly off, the structure will topple, and the entire dish must be rebuilt from the ground up.\nTo this end, on top of her regular work at the restaurant, Escoffier started taking on \"custom orders,\" where customers would provide her with ingredients and requirements, and she would craft dishes for them that were not on the menu.\nDoing so allowed her to push beyond her comfort zone and learn to adapt to unexpected requests. By familiarizing herself with a variety of ingredients in the heat of battle — continuously experimenting with new pairings and combinations — she could uncover both the original and latent flavors of every ingredient.\nYears passed in unending experimentation and refinement, as Escoffier created a detailed \"Flavor Profile Chart\" and developed her own unique culinary philosophy.\nShe named her new school of cooking \"precision gastronomy.\" It was a style unfettered by a set repertoire of ingredients but instead grounded in understanding the fundamental flavor of each component. She honed in on precise measurements and analysis of the reactions occurring at each stage of the cooking process to create a truly bottom-up approach to cooking.\nAt this point, Escoffier finally felt as though she had — if only barely — joined the ranks of the cooking establishment. From this moment on, she poured all her effort into advancing the frontiers of food and challenging the boundaries of perfection.\nBy harnessing the principles of her budding precision gastronomy, Escoffier successfully created a new dessert that was not simply exquisite but truly enchanting.\nBenefiting from the popularity of her earlier \"custom orders,\" her new cake took the Court of Fontaine by storm, flying off countertops throughout the city.\nIt caused such a stir that news of this new sweet treat made its way to Furina, whose curiosity was piqued. In between performances, she took the time to visit Escoffier's restaurant and see what the fuss was all about.\nWhen Furina appeared at the restaurant, the whole scene fell silent. Knives and forks stopped in mid air as diners stared in shock, while the chefs' hands were trembling so much that they were unable to continue cooking.\nOnly Escoffier quickly regained her composure after a brief moment of shock. It was she who greeted Furina with earnest elegance and, after a few seconds of careful preparation, delivered her new signature dessert to the superstar's table.\nIt was then that Furina noticed a peculiar emotion in Escoffier's eyes.\nFervor? No... it was like she was entranced.\nIt was as though this young chef had been waiting for just such an opportunity. Every dish she prepared was given her absolute care and attention — and now that she had the chance to present her food to the Hydro Archon herself, she seemed like someone stepping into the spotlight, eagerly awaiting Furina's verdict.\nNow even more curious than ever, Furina picked up her knife and fork and began to hum a lilting melody as the delicate flavors of the Lily Sugar-Glazed Opera Cake danced on her tongue like the notes of a sweet symphony.\nWhen she had finished, Furina immediately broke out into enthusiastic praise. She carefully confirmed the source of each sweet sensation and twice asked Escoffier's name before leaving.\nThat night, Escoffier couldn't sleep. To have suddenly received such praise from Furina left her feeling like she was in a dream — a dream so wonderful she could hardly believe it was real...\nIf she awoke, would she ever be able to relive this fantasy?\nThe answer, it turned out, was yes. The next day, she received an envelope from the Palais Mermonia. Inside was a letter of special appointment.\n...\nMany years later, when Furina discussed her first meeting with Escoffier at a tea party, she recounted how amazed she was at the young chef's assured demeanor and composed grace.\nAt that moment, Escoffier displayed a rare lapse of composure yet managed to retain her customary frankness as she responded:\n\"To be honest, my mind went completely blank. I was cooking purely on instinct.\""
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "\"Dearest Escoffier, your superlative dessert brought me so much joy yesterday! Your wonderful talents are simply unrivalled...\"\n\"To this end, I have decided to appoint you as my personal 'Patissiere Supreme'!\"\nIn a reception room at the Palais Mermonia, Furina personally placed an exquisite chef's hat on Escoffier's head, awarded her with a commemorative badge — one of Furina's own design — and bestowed upon her a title with no equal in the culinary world.\nFor Escoffier, this was the ultimate encouragement — a position of great responsibility in Furina's court. She could feel the pride in her heart surge like a tidal wave of motivation.\nAnd with it, her resolve grew, too — she was determined to keep creating dishes that would satisfy her new patron.\nHowever, even the Palais Mermonia had a budget to keep, and a well-fitted kitchen was seen as an expense too far. What facilities there were would only allow for the preparation of simple dishes, with no way for Escoffier to fully express her culinary genius.\nAs a result, she needed a fully-equipped restaurant where she could prepare Furina's desserts before carefully packaging them, sealing them, and delivering them to her master's table.\nFortunately, the Hotel Debord extended a timely offer, creating the new role of \"Technical Head Chef\" especially for her. She was now nominally on a par with the hotel's head chef and could freely use even the rarest and most expensive ingredients to create unparalleled dishes for Lady Furina.\nIt was a mutually beneficial arrangement. Escoffier gained access to the finest equipment and ingredients, while each of her prestigious desserts now bore a label reading \"Creation of the Hotel Debord\" — further cementing the establishment's reputation throughout Fontaine.\nWhat the hotel seemed to have overlooked, however, was that Escoffier was no simple pastry chef, and her culinary talents stretched far beyond the boundaries of the sweet. After all, Furina could hardly be expected to eat cream, frosting, and fruit filling for three meals a day — she required her Patissiere Supreme to dabble in the realm of the savory, too.\nAnd so it was that Escoffier spent this period of her life putting her talents into practice without restraint, honing her cooking skills until she had reached the peak of her craft.\nShe recreated the hotel's classic dishes with impeccable skill while improving upon many of their recipes, even reviving several others that had been thought lost to time.\nThe head chef at the time was a no-nonsense and experienced old hand who had already picked her chosen successor. However, upon seeing the advantages Escoffier held in all culinary domains, she decided to let the two younger chefs duel it out in friendly competition.\nEscoffier did not disappoint. She cooked a bowl of Wave-Kissed Sands — a dish that appears simple and unassuming at first glance but whose preparation is fraught with potential pitfalls. The dish left those who tasted it stunned, and even her rival was convinced that Escoffier should take her place as the new head chef.\nJust like that, she became the youngest head chef in Hotel Debord's history. The commemorative badge that Furina had given her — now a symbol of her personal image — would grow to embody the pinnacle of cutting-edge gastronomy.\nUnder her stewardship, the hotel's chefs pushed the limits of possibility, elevating the quality of every dish in their repertoire. Even the most pedantic of critics would find no fault in their food.\nAfter just six months in her post, Escoffier had reached the pinnacle of her profession. She was now recognized as Fontaine's most illustrious chef since Modeste — the hotel's \"genius\" founder.\nBut no journey through life is without roadblocks, and hers was no exception.\nAfter a while at the Hotel Debord, she discovered that her development had plateaued.\nEvery group of diners has its own unique \"food culture\" — an ingrained inertia shaped by time, history, and environment. These deeply rooted conventions were not something Escoffier could overturn on her own.\nFor example, a well-dressed couple of noble stock would find it just as hard to imagine taking up their finely polished knives and forks and digging into a mound of fish and chips as a thrifty worker would find it to nibble on foie gras with their family.\nBecause of this, the food that Escoffier could create while at the Hotel Debord was limited by the tastes and cultural horizons of her clientele.\nNot to mention, the dramatic influx of customers caused by the hotel's increased popularity put a huge strain on her, as she was now in charge of not only ensuring the quality of every dish but also managing the entire kitchen staff.\nAll of these factors conspired to restrict her exploration and experimentation with flavor.\nBut... could she really throw away the title of head chef that she had worked so hard to achieve — and abandon the hotel's unrivalled culinary environment — all to chase a hazy goal with no clear way forward?\nBefore Escoffier could make up her mind, an unexpected event decided her fate on her behalf.\nA dangerous and prohibited substance, lumiline, was found in the hotel's food. The news spread like wildfire throughout Fontaine, and her chefs were all in a panic.\nAs the head chef, Escoffier felt responsible for allowing the contamination to occur. To protect the hotel's reputation and calm unrest among the staff, she resigned her post. But it was not enough, and she found herself dragged before the court and sentenced.\nAll her doubts and frustrations would now have to accompany her to the lonely prison beneath the waves."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "From Furina's personally appointed Patissiere Supreme and a legendary chef praised by all to a criminal languishing in the Fortress of Meropide...\nEscoffier's fall from grace was steep — it was the kind from which many might never return.\nFortunately, Escoffier had never been cowed by danger — the more precarious her predicament, the more calm she became. If anything, her brief stay in the Fortress of Meropide gave her a new sense of perspective. She would later jokingly refer to this time as her \"first period of seclusion\" — a time spent cultivating her skills.\nThe food at the Fortress of Meropide's Coupon Cafeteria — far from the haute cuisine she was used to — could generously be described as a lottery. One where the jackpot was a meal so bad it was like an extra sentence. And yet, it allowed her to consider the possibilities of precision gastronomy from a whole new angle.\nNo longer focused on recreating specific flavors or arriving at set results, she turned her attention to testing as many taste combinations as possible. Every ingredient had depths to be plumbed, each one capable of creating unthinkable flavors with the right companion, thereby granting access to a wider world of seasonings to be used.\nWith this newfound motivation, her underwater life no longer seemed so stifling — though she still felt a pang of regret:\nAt times, the Fortress of Meropide was as noisy as a factory assembly line, while at others, it was as quiet as the yawning void. Thinking back to the atmosphere of the Hotel Debord, where melodious music always filled the halls, left her deeply saddened.\nThen one day, Furina and Navia came to visit, bearing a small record player. To Escoffier, the lilting notes of songs she had once grown tired of were like the first drops of rain after a long drought. As she was reminded of all the dishes she had enjoyed while listening to these songs, a surge of inspiration welled up inside her.\nFrom this day forward, the lumiline case that had landed her in prison no longer held any real significance for her.\nThe very next day after leaving the Fortress of Meropide, Escoffier invited her friends — including Navia — to a banquet. She chose a song with an undulating melody and a soothing rhythm and let the music inspire her as she created a dozen or more dishes, each one greeted by astonished gasps from her guests. As for the new creation she sent to Lady Furina, named \"Autumn Frost,\" it was so well-received that Furina couldn't help but dance with joy.\nUpon her release, Escoffier did not return to the Hotel Debord. Instead, she settled into a peaceful life at a tavern by the Fleuve Cendre that Navia had recommended.\nThis was to be the beginning of her \"second period of seclusion.\" Only matters relating to food could be allowed to disturb her thoughts.\nEven the sudden arrival of a catastrophic flood could not distract her from her purpose — she would not leave on the rescue boats until all of her utensils and ingredients had been properly sealed and secured. The second the flood waters receded, she was back in her kitchen.\nEscoffier's goal was not simply to create a dessert that would surpass the Gateau Debord and present it to Furina — her ultimate aim was to demolish the boundaries of traditional cooking entirely.\nShe did not attempt to tackle this cultural inertia head-on. Instead, like blending colors on a palette, she gradually introduced new flavors, fostering quiet, subtle innovation and progress.\nOver time, she would create a world without shackles, where even the humblest dishes could grace the tables of fine dining establishments and the most lavish cuisine could shed its haughty airs.\nThe ultimate goal was to discover a new peak of gastronomic pleasure. Even if this peak couldn't be reached in a single lifetime, Escoffier was determined to ascend toward it.\nThis would be a never-ending journey in pursuit of flavor, unbound by time or place. Whenever a new idea formed or an unfamiliar ingredient was discovered, she would throw every ounce of her being into researching it.\nEscoffier understood well the challenge she faced. It almost seemed to be reflected in her eyes — that shining peak of ultimate flavor, destined to refract the endless brilliance of her inspiration, like the pristine white plumage of a snow-winged goose..."
+      },
+      {
+        "Title": "Multi-Purpose Gastromek Assembly",
+        "Context": "Experienced chefs are used to dealing with multiple sets of ingredients at once. As the pioneer of precision gastronomy, Escoffier frequently found herself whirling through the kitchen like a spinning top.\nWhile other chefs might take established ingredients and season them to achieve a desired flavor, her approach was to construct a \"flavor protocol\" based on the underlying principles of each dish. This process requires precise dissection of ingredients, complex cooking modalities, refinement, distillation, and a host of techniques that could add literally dozens of steps to the cooking process.\nAs a result, Escoffier began to explore the limits of multitasking. While preparing to cook each dish, she would divide the tasks that needed to be performed and plan them out in order down to the second, just as though she were a musician performing a dress rehearsal.\nHer well-choreographed cooking was such that this process became known throughout the culinary world as the \"Kitchen Waltz.\"\nBut after training in this manner for some time, she suddenly came to her senses:\n\"I'm a chef, not a performer on the stage!\"\nFor Escoffier, it was vital that she spread the load by not only taking on extra help but also developing more convenient tools.\nAnd so, when she first started taking on \"custom orders,\" she sought out the help of a group of engineers from the Fontaine Research Institute. Based on her requirements, these mechanical experts together created the \"Experimental Multi-Purpose Gastromek Assembly,\" comprising her two capable assistants, the \"All-Spectrum Multi-Use Cooking Mek\" and the \"Self-Adapting Movement Signal Tracking Support Mek.\"\nThe All-Spectrum Multi-Use Cooking Mek functioned as a combined cooking and plating device, integrating ingredient measurement, temperature regulation, and moisture control functions into a mechanism designed to separate mineral components. In Escoffier's hands, it was a capable substitute for essentially any piece of kitchen hardware. It could even be used to create \"randomized cuisine\" by setting it to perform cooking steps at random.\nIn fact, she often made use of this feature to generate ingredient combinations she might never have conceived of on her own. At times, these culinary experiments bore delicious fruit — though just as often, they produced results that were barely edible.\nThe Self-Adapting Movement Signal Tracking Support Mek expanded the technical side of cooking by harnessing the power of \"prosthetics.\" It could be pre-programmed to perform a vast array of different movements that could then be executed following signals provided by Escoffier. Once installed upon her back, it was almost like a prehensile tail — whether manipulating utensils, handling ingredients, or carrying trays of food, it proved a steady and reliable assistant.\nIf anything, this tail-like mechanism was sometimes too responsive, reacting to even the slightest movement Escoffier made. On such occasions, the light meant to indicate its operating status would start flashing in sync with its malfunctions.\nHad she known it would do this, she would have asked the engineers not to include an indicator light at all — so as to prevent the mechanism from betraying her emotions..."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Compared to the blazing heat of an open flame, Escoffier is far more fascinated with the frigid cold of ice.\nWhen it comes to man-made technology, the requirements for cooling something down are significantly more demanding than those for heating it up.\nLow temperatures are key to locking in the original flavor of ingredients. The importance of preserving the freshness of food — both in the time between being gathered and being cooked and between being cooked and being served — is impossible to overstate.\nTo these ends, Escoffier has tried everything to guarantee a stable supply of high-quality ice.\nThe effects of Mist Flowers' freezing vapors are impressive, but they have a limited range of effect, and their cooling properties are a tad weak. The costs of using alchemical solutions are so vast that even the Hotel Debord wouldn't countenance them. Even the mechanisms of the Fontaine Research Institute cannot maintain artificially low temperatures for any significant amount of time...\nEscoffier once even traveled to the Dragonspine region to seek out a legendary \"Arcane Cryo Source.\"\nWrapping herself in a thick coat and tightly wound scarf and carrying a heavy pack and an Iron Point, she wandered the mountain slopes for days.\nEven when her polearm had been worn beyond use, she still hadn't located her target. Suffering from severe frostbite and carrying wounds from repeated battles with the area's monsters, she had no choice but to leave empty-handed.\nOn the long road back, Escoffier heard rumors of a mysterious Cryo entity known as Daleth, which only served to deepen her sense of regret. Her desire to find this source of Cryo would become a goal exceeded in intensity only by her obsession to advance the culinary arts.\nOn another trip to Natlan in search of new ingredients, the stiflingly hot climate left her in some distress, causing her to take the wrong path and stumble into dangerous territory more than once.\nIt never rains but it pours — just as Escoffier finally located the ingredients she was looking for, she carelessly disturbed a group of Avatars of Lava. Surrounded and in mortal danger, the scorching heat of burning Phlogiston almost caused her to faint. And even as she beat a hasty retreat, she was sent flying by an exploding barrel of Phlogiston.\nUp until this point, she had been desperately clutching her traveling pack, doing her best to protect the cooking mechanisms and ingredients inside. One thought kept reverberating inside her mind...\nIce... Ice... Ice...\nHer memories beyond that point are hazy — as though she had inadvertently drunk a large quantity of spirits. All she could recall afterwards was that some... freezing current had washed over her from behind, flowing nonstop until the flames clinging to her clothes had been extinguished, and she had somehow left the monsters' territory behind.\nIt was only once she had returned to Fontaine with the rare ingredients she had gathered that she discovered the Vision hanging from her back, radiating a cold brilliance.\nThe residual shock of her near-death encounter was replaced with a sense of joyful astonishment. The euphoria that enveloped her utterly washed away the pain of her injuries.\nIn order to maintain a sense of cold clarity, Escoffier secured her vision to her hairband, hoping it would calm her mind in the heat of the moment and help her retain absolute physical coolness in a kitchen roasted by roaring flames.\nWith the help of her Vision, she finally managed to realize her dream of keeping her ingredients cool in all conditions. Not only that, but after learning to wield the elemental power it granted her, she combined it with the functions of her \"cooking mek\" to great effect, massively expanding the scope of her search for ingredients.\nEven her utensils benefitted — the knives, forks, and spoons she could now form from elemental ice were exceptionally durable, not to mention convenient to replace. Another advantage of Cryo-generated cutlery was that Escoffier no longer had to waste her time and energy carrying and washing silverware.\nAnd yet, despite being the most capable ice-wielding chef in all of Fontaine — perhaps even Teyvat — Escoffier produces surprisingly little ice cream.\nPerhaps one day she will devote her efforts to creating an entire school of cuisine based around it, crafting frozen treats that can be conjured up and enjoyed anywhere and anytime..."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 211200,
+      "Name": "Sorbet Honey Pie",
+      "Description": "Escoffier's outfit. Befitting the \"Patissiere Supreme,\" the finely sewn flying sleeves on Escoffier's work uniform are as refined as the cakes she bakes, inevitably evoking thoughts of pure, exquisite sweetness.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104164,
+    113076,
+    101232,
+    112085,
+    104343,
+    113068
+  ],
+  "NameCard": {
+    "Name": "Escoffier: Charm",
+    "Description": "Namecard style.\nFor Escoffier, a certain relationship exists between rhythm and flavor. Why, then, does she not fuel her compositions with delicious food? The answer is quite simple — consistent flavors are reliable and comforting, but no one wants to hear the same song over and over.",
+    "Icon": "UI_NameCardIcon_Escoffier",
+    "PicturePrefix": "UI_NameCardPic_Escoffier"
+  }
+}

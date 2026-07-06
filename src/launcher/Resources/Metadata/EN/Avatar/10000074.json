@@ -1,0 +1,1102 @@
+{
+  "Id": 10000074,
+  "PromoteId": 74,
+  "Sort": 58,
+  "Body": 2,
+  "Icon": "UI_AvatarIcon_Layla",
+  "SideIcon": "UI_AvatarIcon_Side_Layla",
+  "Name": "Layla",
+  "Description": "A Rtawahist student who specializes in Theoretical Astrology. Heavily prone to somnambulism and locked in a grinding war with sleep deprivation, the problem of restful slumber is a most troubling one to her.",
+  "BeginTime": "2022-11-18T18:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 1,
+  "BaseValue": {
+    "HpBase": 930.0268,
+    "AttackBase": 18.16416,
+    "DefenseBase": 54.936
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 7431,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "Charged Attack DMG|{param4:F1P}+{param5:F1P}",
+            "Charged Attack Stamina Cost|{param6:F1}",
+            "Plunge DMG|{param7:F1P}",
+            "Low/High Plunge DMG|{param8:P}/{param9:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 743101,
+              "Level": 1,
+              "Parameters": [
+                0.512173,
+                0.484834,
+                0.729736,
+                0.4773,
+                0.52546,
+                20,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 743102,
+              "Level": 2,
+              "Parameters": [
+                0.553862,
+                0.524297,
+                0.789133,
+                0.51615,
+                0.56823,
+                20,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 743103,
+              "Level": 3,
+              "Parameters": [
+                0.59555,
+                0.56376,
+                0.84853,
+                0.555,
+                0.611,
+                20,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 743104,
+              "Level": 4,
+              "Parameters": [
+                0.655105,
+                0.620136,
+                0.933383,
+                0.6105,
+                0.6721,
+                20,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 743105,
+              "Level": 5,
+              "Parameters": [
+                0.696793,
+                0.659599,
+                0.99278,
+                0.64935,
+                0.71487,
+                20,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 743106,
+              "Level": 6,
+              "Parameters": [
+                0.744438,
+                0.7047,
+                1.060663,
+                0.69375,
+                0.76375,
+                20,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 743107,
+              "Level": 7,
+              "Parameters": [
+                0.809948,
+                0.766714,
+                1.154001,
+                0.7548,
+                0.83096,
+                20,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 743108,
+              "Level": 8,
+              "Parameters": [
+                0.875459,
+                0.828727,
+                1.247339,
+                0.81585,
+                0.89817,
+                20,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 743109,
+              "Level": 9,
+              "Parameters": [
+                0.940969,
+                0.890741,
+                1.340677,
+                0.8769,
+                0.96538,
+                20,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 743110,
+              "Level": 10,
+              "Parameters": [
+                1.012435,
+                0.958392,
+                1.442501,
+                0.9435,
+                1.0387,
+                20,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 743111,
+              "Level": 11,
+              "Parameters": [
+                1.083901,
+                1.026043,
+                1.544325,
+                1.0101,
+                1.11202,
+                20,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 743112,
+              "Level": 12,
+              "Parameters": [
+                1.155367,
+                1.093694,
+                1.646148,
+                1.0767,
+                1.18534,
+                20,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 743113,
+              "Level": 13,
+              "Parameters": [
+                1.226833,
+                1.161346,
+                1.747972,
+                1.1433,
+                1.25866,
+                20,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 743114,
+              "Level": 14,
+              "Parameters": [
+                1.298299,
+                1.228997,
+                1.849795,
+                1.2099,
+                1.33198,
+                20,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 743115,
+              "Level": 15,
+              "Parameters": [
+                1.369765,
+                1.296648,
+                1.951619,
+                1.2765,
+                1.4053,
+                20,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10741,
+        "Name": "Sword of the Radiant Path",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_01"
+      },
+      {
+        "GroupId": 7432,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:F1P}",
+            "Shooting Star DMG|{param2:F1P}",
+            "Base Shield DMG Absorption|{param3:F1P} Max HP+{param4:I}",
+            "Shield Duration|{param5:F1}s",
+            "CD|{param6:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 743201,
+              "Level": 1,
+              "Parameters": [
+                0.128,
+                0.1472,
+                0.108,
+                1040.007,
+                12,
+                12
+              ]
+            },
+            {
+              "Id": 743202,
+              "Level": 2,
+              "Parameters": [
+                0.1376,
+                0.15824,
+                0.1161,
+                1144.0221,
+                12,
+                12
+              ]
+            },
+            {
+              "Id": 743203,
+              "Level": 3,
+              "Parameters": [
+                0.1472,
+                0.16928,
+                0.1242,
+                1256.7052,
+                12,
+                12
+              ]
+            },
+            {
+              "Id": 743204,
+              "Level": 4,
+              "Parameters": [
+                0.16,
+                0.184,
+                0.135,
+                1378.0562,
+                12,
+                12
+              ]
+            },
+            {
+              "Id": 743205,
+              "Level": 5,
+              "Parameters": [
+                0.1696,
+                0.19504,
+                0.1431,
+                1508.0751,
+                12,
+                12
+              ]
+            },
+            {
+              "Id": 743206,
+              "Level": 6,
+              "Parameters": [
+                0.1792,
+                0.20608,
+                0.1512,
+                1646.762,
+                12,
+                12
+              ]
+            },
+            {
+              "Id": 743207,
+              "Level": 7,
+              "Parameters": [
+                0.192,
+                0.2208,
+                0.162,
+                1794.1167,
+                12,
+                12
+              ]
+            },
+            {
+              "Id": 743208,
+              "Level": 8,
+              "Parameters": [
+                0.2048,
+                0.23552,
+                0.1728,
+                1950.1394,
+                12,
+                12
+              ]
+            },
+            {
+              "Id": 743209,
+              "Level": 9,
+              "Parameters": [
+                0.2176,
+                0.25024,
+                0.1836,
+                2114.83,
+                12,
+                12
+              ]
+            },
+            {
+              "Id": 743210,
+              "Level": 10,
+              "Parameters": [
+                0.2304,
+                0.26496,
+                0.1944,
+                2288.1887,
+                12,
+                12
+              ]
+            },
+            {
+              "Id": 743211,
+              "Level": 11,
+              "Parameters": [
+                0.2432,
+                0.27968,
+                0.2052,
+                2470.215,
+                12,
+                12
+              ]
+            },
+            {
+              "Id": 743212,
+              "Level": 12,
+              "Parameters": [
+                0.256,
+                0.2944,
+                0.216,
+                2660.9097,
+                12,
+                12
+              ]
+            },
+            {
+              "Id": 743213,
+              "Level": 13,
+              "Parameters": [
+                0.272,
+                0.3128,
+                0.2295,
+                2860.272,
+                12,
+                12
+              ]
+            },
+            {
+              "Id": 743214,
+              "Level": 14,
+              "Parameters": [
+                0.288,
+                0.3312,
+                0.243,
+                3068.3022,
+                12,
+                12
+              ]
+            },
+            {
+              "Id": 743215,
+              "Level": 15,
+              "Parameters": [
+                0.304,
+                0.3496,
+                0.2565,
+                3285.0005,
+                12,
+                12
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10742,
+        "Name": "Nights of Formal Focus",
+        "Description": "Puts forth a shield known as the Curtain of Slumber, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\nThe Curtain of Slumber's DMG Absorption is based on Layla's Max HP and absorbs <color=#99FFFFFF>Cryo DMG</color> with 250% effectiveness. When the shield is deployed, Layla will have <color=#99FFFFFF>Cryo</color> applied to her briefly.\n\n<color=#FFD780FF>Night Stars and Shooting Stars</color>\nWhile the Curtain of Slumber is active, it will create 1 Night Star that will be attached to it every 1.5s. When a character protected by this shield uses an Elemental Skill, 2 Night Stars will be created. Night Stars can be created once every 0.3s in this way. A maximum of 4 Night Stars can be accumulated at any one time.\nOnce the Curtain of Slumber has accumulated 4 Night Stars and there are opponents nearby, these Night Stars will transform into homing Shooting Stars that will be fired off in sequence, dealing <color=#99FFFFFF>Cryo DMG</color> to any opponents hit.\nIf the Curtain of Slumber's duration ends or it is destroyed, the Night Stars will disappear. If they are already being fired off as Shooting Stars, these Shooting Stars will last until this wave of shots ends.\n\nNew Night Stars cannot be created until the previous wave of Shooting Stars has been fired completely.\n\n<i>\"She and I are like two master artisans who have never met, yet who sit at the same cushioned seat, embroidering the same dream-flower.\"</i>",
+        "Icon": "Skill_S_Layla_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 7439,
+      "Proud": {
+        "Descriptions": [
+          "Starlight Slug DMG|{param1:F1P} Max HP",
+          "Duration|{param2:F1}s",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 743901,
+            "Level": 1,
+            "Parameters": [
+              0.046488,
+              12,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 743902,
+            "Level": 2,
+            "Parameters": [
+              0.049975,
+              12,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 743903,
+            "Level": 3,
+            "Parameters": [
+              0.053461,
+              12,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 743904,
+            "Level": 4,
+            "Parameters": [
+              0.05811,
+              12,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 743905,
+            "Level": 5,
+            "Parameters": [
+              0.061597,
+              12,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 743906,
+            "Level": 6,
+            "Parameters": [
+              0.065083,
+              12,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 743907,
+            "Level": 7,
+            "Parameters": [
+              0.069732,
+              12,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 743908,
+            "Level": 8,
+            "Parameters": [
+              0.074381,
+              12,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 743909,
+            "Level": 9,
+            "Parameters": [
+              0.07903,
+              12,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 743910,
+            "Level": 10,
+            "Parameters": [
+              0.083678,
+              12,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 743911,
+            "Level": 11,
+            "Parameters": [
+              0.088327,
+              12,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 743912,
+            "Level": 12,
+            "Parameters": [
+              0.092976,
+              12,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 743913,
+            "Level": 13,
+            "Parameters": [
+              0.098787,
+              12,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 743914,
+            "Level": 14,
+            "Parameters": [
+              0.104598,
+              12,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 743915,
+            "Level": 15,
+            "Parameters": [
+              0.110409,
+              12,
+              12,
+              40
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10745,
+      "Name": "Dream of the Star-Stream Shaker",
+      "Description": "Unleashes a Celestial Dreamsphere that constantly fires Starlight Slugs at opponents within its AoE, dealing <color=#99FFFFFF>Cryo DMG</color>.\nWhen a Starlight Slug hits, it will generate 1 Night Star for nearby Curtains of Slumber. Each Curtain of Slumber can gain 1 Night Star this way every 0.5s.\n\n<i>\"Sleep now, sleep now; and may many destinies be revealed before your slumbering eyes, within your star-paved dreams.\"</i>",
+      "Icon": "Skill_E_Layla_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 7421,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 742101,
+              "Level": 1,
+              "Parameters": [
+                0.06
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 742101,
+        "Name": "Like Nascent Light",
+        "Description": "While the <color=#FFD780FF>Curtain of Slumber</color> is active, the Deep Sleep effect will activate each time the Curtain gains 1 Night Star:\n·The Shield Strength of a character under the effect of the Curtain of Slumber increases by 6%.\n·This effect can have a maximum of 4 stacks and persists until the Curtain of Slumber disappears.",
+        "Icon": "UI_Talent_S_Layla_05"
+      },
+      {
+        "GroupId": 7422,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 742201,
+              "Level": 1,
+              "Parameters": [
+                0.015
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 742201,
+        "Name": "Sweet Slumber Undisturbed",
+        "Description": "The DMG dealt by the Shooting Stars fired by <color=#FFD780FF>Nights of Formal Focus</color> is increased by 1.5% of Layla's Max HP.",
+        "Icon": "UI_Talent_S_Layla_06"
+      },
+      {
+        "GroupId": 7423,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 742301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 742301,
+        "Name": "Shadowy Dream-Signs",
+        "Description": "When Layla crafts Character Talent Materials, she has a 10% chance to receive double the product.",
+        "Icon": "UI_Talent_Eula_Combine"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 741,
+        "Name": "Fortress of Fantasy",
+        "Description": "The Shield Absorption of the Curtain of Slumber generated by <color=#FFD780FF>Nights of Formal Focus</color> is increased by 20%.\nAdditionally, when unleashing Nights of Formal Focus, she will generate a shield for any nearby party members who are not being protected by a Curtain of Slumber. This shield will have 35% of the absorption of a Curtain of Slumber, will last for 12s, and will absorb <color=#99FFFFFF>Cryo DMG</color> with 250% effectiveness.",
+        "Icon": "UI_Talent_S_Layla_01"
+      },
+      {
+        "Id": 742,
+        "Name": "Light's Remit",
+        "Description": "When Shooting Stars from <color=#FFD780FF>Nights of Formal Focus</color> strike opponents, they will each restore 1 Energy to Layla. Each Shooting Star can restore Energy to her in this manner once.",
+        "Icon": "UI_Talent_S_Layla_02"
+      },
+      {
+        "Id": 743,
+        "Name": "Secrets of the Night",
+        "Description": "Increases the Level of <color=#FFD780FF>Nights of Formal Focus</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Layla_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 744,
+        "Name": "Starry Illumination",
+        "Description": "When <color=#FFD780FF>Nights of Formal Focus</color> starts to fire off Shooting Stars, it will grant all nearby party members the Dawn Star effect, causing their Normal and Charged Attack DMG to increase based on 5% of Layla's Max HP.\nDawn Star can last up to 3s and will be removed 0.05s after dealing Normal or Charged Attack DMG.",
+        "Icon": "UI_Talent_S_Layla_03"
+      },
+      {
+        "Id": 745,
+        "Name": "Stream of Consciousness",
+        "Description": "Increases the Level of <color=#FFD780FF>Dream of the Star-Stream Shaker</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Layla_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 746,
+        "Name": "Radiant Soulfire",
+        "Description": "Shooting Stars from <color=#FFD780FF>Nights of Formal Focus</color> deal 40% increased DMG, and Starlight Slugs from <color=#FFD780FF>Dream of the Star-Stream Shaker</color> deal 40% increased DMG.\nAdditionally, the interval between the creation of Night Stars via Nights of Formal Focus is decreased by 20%.",
+        "Icon": "UI_Talent_S_Layla_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Fantastical Evening Star",
+    "Detail": "A Rtawahist student who specializes in Theoretical Astrology. Heavily prone to somnambulism and locked in a grinding war with sleep deprivation, the problem of restful slumber is a most troubling one to her.",
+    "Association": 7,
+    "Native": "Rtawahist",
+    "BirthMonth": 12,
+    "BirthDay": 19,
+    "VisionBefore": "Cryo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Luscinia",
+    "CvChinese": "侯小菲",
+    "CvJapanese": "富田美憂",
+    "CvEnglish": "Ashely Biski",
+    "CvKorean": "Kang Sae-bom",
+    "CookBonus": {
+      "OriginItemId": 108471,
+      "ItemId": 108473,
+      "InputList": [
+        100078,
+        101219,
+        110006
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "*yawn* ...Hi, I'm Layla, a Rtawahist student... Hmm? Sorry, I didn't sleep well last night, so I'm a bit out of it today — what did you say, again? ...You wanna team up with me? No, no, it's not that I don't want to, I'm just not sure my crazy sleep schedule will really work for you... But uh, I guess... I look forward to working with you!"
+      },
+      {
+        "Title": "Chat: Gaze",
+        "Context": "Even when we're not looking up at the stars, they're always there, watching over us."
+      },
+      {
+        "Title": "Chat: Sleepwalking",
+        "Context": "My legs are so sore... *sigh* Guess I must have been sleepwalking last night... again."
+      },
+      {
+        "Title": "Chat: Woe Is Me",
+        "Context": "*groan* ...Why do I have to write so many papers, whyyy..."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Oh, the weather's terrible. Shoot, if I can't see the sky tonight... Ugh, I really can't put off my star mapping homework any longer..."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "The snow is sparkling. Just like the stars in the night sky."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "Mm, this sun's making me so... *yawn* sleepy... Mkay, lemme grab a pillow and rest my eyes before this wears off... It's been two, two days since I last, last... Zzz..."
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "Scorching hot days and freezing cold nights... I—I don't think I'm gonna make it..."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Did you get enough sleep? If you're still tired, you should go back to sleep for a bit... Me? *sigh* I'm... used to it..."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "I'm in the middle of a stellar kinematics calculation right now, just go to lunch without me... Wait, th—this angle isn't right... No, no, no... Shoot, how far in was I when this mistake crept in..."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "I'm going to turn in early tonight, hope I can actually get to sleep... Dear Mighty God of Wisdom, please bless my slumber, I pray. Okay. Closing my eyes now."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "*yawn* ...Right, let's see what's stumped Daylight Layla this time. Hmm... she hasn't touched the third year of old Starlogs yet, they definitely need working through. And there's a few charts to be appended to the mid-term report, which... yep, she hasn't even started drawing up yet. Alright, time to get to work. ...Huh? What're you doing up? You should be asleep right now. Me? Sleepwalking, of course."
+      },
+      {
+        "Title": "About Layla: Theoretical Astrology",
+        "Context": "According to my textbook, \"Using theoretical astrology to solve specific problems in our daily lives should not be our primary goal.\" But whether we should or not, the real reason nobody does it is that... well, it's just... it's not worth the effort. When we do a prediction, we usually have to use multiple celestial globes and consult at least one whole year's worth of Star Charts to get any... precise answers. To go through all that just to find out whether the price of spices will go up tomorrow... I mean, it's just not worth it..."
+      },
+      {
+        "Title": "About Layla: Reasoning",
+        "Context": "Since I found something I like and that I'm good at, I think I should try and stick with it. Even if the journey is difficult, even if the competition is fierce, even if there's no guarantee I'll graduate, and even if I have to return all my scholarships if I fail my final exams... Huh, maybe I should just drop out and go back home."
+      },
+      {
+        "Title": "About Us: Companionship",
+        "Context": "I agree. I don't like having to pull an all-nighter to catch up on schoolwork either, but they just keep piling on the assignments, don't they? That's how things go here, so obviously I have to help her out... Wanna keep me company?"
+      },
+      {
+        "Title": "About Us: Traveling the World",
+        "Context": "If I don't end up staying at the Akademiya after graduation, I think I'll come travel the world with you. What do you think?"
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "*yawn*... Where's that glowing coming from? I coulda sworn I turned the lights off before I fell asleep... Huh, it's just my Vision. No wonder... Wait, but... didn't I leave this on my nightstand?"
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "The chief editor of our Darshan keeps Starlogs that show the fates of all living beings. They are, without a shadow of a doubt, the apex of astronomical knowledge. The first time I saw one, I was scared speechless! Huh? Are you interested? If you just want to take a quick look... lemme put in an application for you, I think it should be fine... I think...?"
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Are there any plants that can catch bugs, because if so, I need their help. I don't fall asleep easily to begin with, but now there's this little flying bug somewhere in my room... The buzzing is so loud, and it never stops... but I—I've tried, but I just can't find it... *groan*"
+      },
+      {
+        "Title": "About Mona",
+        "Context": "Mona Megistus, the Astrologist... Her astrology column in The Steambird is well-known among Rtawahist scholars. Her articles always cover super specialized topics, but can still be appreciated by non-academics. That's no easy feat... Huh? Her name seems to just roll off my tongue? Uh, that's just because... I have a lot of respect for... amazing people."
+      },
+      {
+        "Title": "About Lisa",
+        "Context": "Oh, I know who you're talking about. Lisa Minci — the legendary Spantamad prodigy who graduated in just two years. If only I had her brains... Huh? You met her in person when you were in Mondstadt? R—Really? So... what's her studying process like? What books does she read, and what kind of work does she do? Where... Where should I start if I want to learn from her?"
+      },
+      {
+        "Title": "About Dori",
+        "Context": "Oh... D—Dori... ahem... I took the plunge and bought something from her once. She looked euphoric as I was settling the bill — I think she assumed I was some sort of mega-rich person. Kept relentlessly sending product ads to me in the mail afterwards. Ugh... biggest mistake of my life! I paid such a huge price for it... 'cause not only did I spend all of my scholarship money in one go, but for most of the next year, I had to survive mainly on cheap vegetables, and I couldn't buy textbooks unless they were on sale..."
+      },
+      {
+        "Title": "About Cyno",
+        "Context": "The General Mahamatra is really good at Genius Invokation TCG? Ooh, I wonder if... I mean, if I ever got the chance, maybe I could play a game with him. Card games like Genius Invokation TCG are always easier when you're good at mental math, so actually, I... I dunno, but... I might not necessarily lose to him."
+      },
+      {
+        "Title": "About Candace",
+        "Context": "...Huh, I saw someone who matches that description when I woke up after sleepwalking for the first time. \"Candace,\" huh? Now I know. I still remember the moment I woke up... All of my reports and essays were done. At the time, it felt like... like after pleading to the stars for days and days, now they'd finally heard me, and sent a messenger to help me... I felt so touched!"
+      },
+      {
+        "Title": "About Alhaitham",
+        "Context": "I bet someone who's good enough to get a job like Scribe never has to worry about whether their projects will get approved or be successful. Wait... Oh shoot, if he's a Scribe, he probably doesn't have to do any projects in the first place. So lucky..."
+      },
+      {
+        "Title": "About Lesser Lord Kusanali",
+        "Context": "Dear Mighty God of Wisdom, I've been studying late into the night for days on end, please let me pass this exam! Please, please... Zzz..."
+      },
+      {
+        "Title": "About Faruzan",
+        "Context": "Has Professor Faruzan managed to get any students? People from the Haravatat Darshan say that she always has difficulty getting funding for her projects, so it's hard for her to attract students, too. *sigh*..."
+      },
+      {
+        "Title": "More About Layla: I",
+        "Context": "I'm not naturally talented, nor am I a fast learner... I only got into the Akademiya by studying like crazy for the entrance exam... Oh shoot, I—I'm sorry, I can't chat right now. Mentioning the Akademiya reminds me that my academic progress report is due soon... and I still haven't got any progress to write about yet."
+      },
+      {
+        "Title": "More About Layla: II",
+        "Context": "My relationship with my adviser? Um... how should I put it... Oh, don't get me wrong, she's been good to me. She even gave me a recommendation when I started at the school. And every time I feel like I just can't go on, she's there to give me s—some much-needed encouragement... and then to assign me another essay right after..."
+      },
+      {
+        "Title": "More About Layla: III",
+        "Context": "Almost all of Sumeru's best and brightest have attended the Akademiya, and there are a ton of scarily intelligent international students, too... so you can imagine how competitive it is here! Studying alongside some of these people, sometimes it makes me wonder... am I really cut out for this?"
+      },
+      {
+        "Title": "More About Layla: IV",
+        "Context": "Shh, be quiet... Don't wake her up, just let her sleep peacefully. ...Who's \"her\"? Ah, well, a very weary Layla who's constantly stressed about her schoolwork, of course. ...And me? Hehe, I'm Layla too."
+      },
+      {
+        "Title": "More About Layla: V",
+        "Context": "I've heard people say she thinks a \"blessing from the stars\" is the reason why all of her outstanding schoolwork gets magically finished while she's asleep. Ah, she has absolutely no idea. ...Oh, but seriously, don't tell her, okay?"
+      },
+      {
+        "Title": "Layla's Hobbies",
+        "Context": "Drawing Star Charts is really tiring work... I really don't think I'd be able to keep at it if it wasn't something I'm interested in. You have to use a ruler, then do some calculations on paper, then check past Starlogs... Before you know it, the whole day is gone. But then when I look at the finished product, a huge, neatly drawn, accurate map of the stars... it always gives me a huge sense of accomplishment."
+      },
+      {
+        "Title": "Layla's Troubles",
+        "Context": "I slept okay-ish before I came to the Akademiya, but since I started my studies... there's so much pressure... I just want to be able to sleep the whole night throo-hoo-hoough..."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Every night before I go to bed, I make myself a glass of warm milk, in the hope I'll sleep well tonight, hope I'll sleep well tonight, hope I'll sleep well tonight... Zzz..."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Someone once told me about a mysterious merchant who was selling really effective Sleep Gummies. It cost all my scholarship money, plus all the other Mora I'd saved up, but I bought some. They worked great, and for a while I slept like a baby. But... they're 200 thousand Mora a box... I can't afford that... I—I can't let myself buy them ever again, nope, no way. Not even if they were buy one, get one free, or... well, buy one, get two free, hmm... actually... maybe I'd consider that."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "This is amazing! I'm so jealous, you're good at everything."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Mmm... it's really good."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Um... maybe we should just grab some takeout."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Happy birthday. I got you this pocket astrolabe... The same stars witness the fate of the human race today as did yesterday, and as will forever. May they cast their gaze upon you, and may they stay with you always, through the desert and across the ocean, until you reach your destination."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Get it together, Layla... You've gotta work harder."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Get it together, Layla... You're doing well so far, but you've still got a lot to learn."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Get it together, Layla... You've been studying hard and reading everything you could get your hands on. Well done. But you can't afford to slack off now. The moment you get lazy, you'll fall behind and end up having to postpone your graduation. Spare yourself the humiliation."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "Get it together, Layla! Believe in yourself, and in the person who's helped you come this far. The two of you together can solve any problem that comes your way!\nWhew... Alright! Time to leave my worries behind. Let's go!"
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "The night is cold."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Not now!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "My guiding stars."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Stars, shine for me."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Cold, mine to command."
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Don't be scared."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "A little goes a long way."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Huh, glad I saw this. I almost didn't even notice it."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Wow! Suddenly, I don't feel so tired."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "So sleepy..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "No no no no..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Is it too late for an extension?"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Wake up! You look half asleep!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Oh no! Y—You're hurt!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Sweet sleep... at last..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "I'm sorry, Professor..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "This is just a... bad dream..."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Come on, that's not fair!"
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "That's against the rules!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Can't sleep? Let's go for a walk then."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "I applied for vacation... You remembered too, right?"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "*sigh* My mind is completely blank... I need to get out and unwind."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "The Rtawahist Darshan of the six Darshans under the Sumeru Akademiya is dedicated to the study of Illuminationism.\nEach of the Six Darshans focuses on a different field of study. Illuminationism, then, is centered around astrology and astronomy, learning of the cosmos that has clutched the world in its embrace since time immemorial.\nIt is among the researchers of Illuminationism that we find Layla.\nThough she has only recently enrolled, she has already earned a great many nicknames for herself.\nShe has been called the Sleepwalking Eccentric, the Human Calculator, and even the Heaven-Sent Thesis by those who know her.\nAs the days go by, her titles only seem to grow in number."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "There are two kinds of people in the halls of Akademiya:\nThe first holds themselves with an air of calmness and mastery. Be it experimentation or dissertation, this type of person always makes whatever they're doing look easy.\nThe other kind of person wears their woes on their faces. Sighs spill from their lips as mournful notes while they clutch their tools, looking lost. Intermittently, they will jot something down before slashing it out, battling themselves all the way.\nLayla belongs to the latter category.\nBeing poor of health and bereft of sleep is not uncommon among researchers, but Layla takes it to a whole other level. The bags of exhaustion hanging beneath her eyes and weariness burned across her features make it impossible for her to hide the stress gnawing at her.\nShould someone approach her, they will often hear her whispering things like \"I don't understand,\" or \"why,\" and even whimpering \"I'm doomed.\" These lamentations often earn her looks of sympathy.\nThe halls of Akademiya exist not just as the altar of knowledge to dedicated students but also as the source of their nightmares. Countless among their number have suffered failed experiments and watched their dissertations get torn apart. Rumor has it that, unable to bear the rigors and pressures of school, many students each year choose to depart before they graduate, quitting before their journey is complete.\nAt first glance, Layla might seem like she hangs on the edge of departing herself, but in actuality, she has already outlasted several classmates who enrolled in the same year as her.\nWhen seeking knowledge, talent is useful, but perseverance is essential."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "The reasons behind Layla's poor physical health and insomnia can be traced back to a single factor: academic pressure.\nAll students of the Darshans are required to commit to their studies, complete their essays, and pass their examinations or dissertations. Though this task sounds simple, simple does not mean easy, and the investment demanded of students comes in the form of time and effort.\nUnfortunately for Layla, she is always slower at finishing her papers than her peers.\nShe often spends a great deal of time contemplating, and worrying about the validity of her theses. Is the content overly simplistic compared to that written by her classmates? Are her calculations truly accurate? And if so, are they as concise as they can be?\nShe feels that, as a student of a most prestigious Darshan, she cannot slack in her studies. But at the same time, she dares not commit to her writings in haste.\nSeized by hesitation, time often slips from between her fingers, and leaves her staring at the blank pages of her work without having written a word.\nBecause of this, she often finds herself working through the night, and leaving sleep for the day. Yet, with the breaking of dawn, she often finds herself assailed by new assignments, causing her to descend into a vicious spiral.\nAs such, her habits have afflicted her body with abnormal side effects.\nNow, she often rises at night, wandering. Upon waking, she often finds herself unable to remember what she had done or where she had gone — the rumored symptoms of the phenomenon known as \"sleepwalking,\" described by her peers.\nFrom how her classmates have described her sleepwalking, it is as if she suddenly manifests with neither hint nor reason in a certain place. Mysteriously, none of them have been able to fully explain where she goes after or what she does either.\nBesides sleepwalking, she has also discovered another strange recurrence in her life.\nEach time she awakes from sleepwalking, she finds her unwritten papers from the day before fully completed, meticulous and accurate calculations included! Even the handwriting appears to be hers.\nStranger still, the author of her papers also has a habit of viciously critiquing the arguments and experimental methods of others.\nLayla simply could not fathom herself committing these acts, and found herself suspecting that someone was messing with her.\nHowever, upon recalling her experiences leading from her home to the halls of the Darshan, she could think of no one with proper motive.\nThe term \"Heaven-Sent Thesis\" is often used in Sumeru to describe an impossible miracle... and if what Layla had been experiencing did not count as a \"Heaven-Sent Thesis,\" she didn't know what did.\nDid a miracle truly grace her? Did the stars themselves, moved by her dedication to the study, repay her with a blessing?\nRegardless, \"The Stars' Blessing\" has solved several of her woes. Now, the papers she needs to write for several classes can be handed in without additional worry on her end.\nAs for the other details, well, that is probably best left for when she had the energy to care. Presently, she has classes to prepare for."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "After pushing through her heavy backlog of assignments, even Layla will find time to decompress.\nIn her spare time, she enjoys heading to Port Ormos by boat to wander its streets. There, traveling merchants and vagabonds place their stalls and practice their trades, offering all manner of interesting trinkets and showcasing amazing skills, infusing the perpetually exhausted Layla with a sense of refreshment.\nShe has witnessed the folk of the desert testing themselves in thrilling challenges of agility as they score bull's-eyes through distantly placed apples with thrown daggers.\nShe met a strange individual who claimed to be capable of flight; using a mere carpet, they managed to levitate off the ground.\nYet, the one who left the deepest impression on her was a stall owner that invited passersby to participate in a game of luck. Upon his stall, he separated colorful pages worth varying rewards into wooden boxes. In a display of astonishing speed and agility, the owner would shift these boxes about and shuttle them from position to position. Afterward, he would ask those participating in his lottery to pick a box.\nDespite not managing to claim the grand prize during her first few attempts, after a few more tries, Layla began to notice a pattern.\nThough the stall owner possessed blinding hand speed, she realized that his left thumb barely moved during the shuffling process.\nHence, she realized the box nearest to his left thumb would experience the least amount of deviations to its position.\nAfter achieving such comprehension, Layla managed to repeatedly win the grand prize. When the curious stall owner discovered how Layla used her insight to peer beyond the mirage of his speed, he found himself overcome with admiration for the girl and offered her a generous bonus reward.\nFor Layla, the reward was a thing of secondary importance. The true pleasure she got was getting to behold the awesome skills that other people possessed.\nUnlike the conservatives in the Akademiya, she did not look down upon the arts and trades of those who worked in the streets. Instead, she was thankful to all the vendors of Port Ormos for the happy memories they granted her."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "As her first year in the Akademiya came to an end, Layla listed down her strengths and weaknesses, planning to write a personal assessment for herself.\nShe possessed good observation and estimation skills, and was consistently capable of tracking the shifting position of the cosmos via the star charts at twice the speed of her peers.\nAdditionally, she considered her skill in mathematics to be acceptable. When faced with simple questions, she could calculate the answers in a blink of an eye without even needing to do the equations in written form.\nBefore ever entering the halls of Akademiya, Layla had a chance encounter with her future mentor. Her mentor had complimented her then, stating that she was a child blessed by the stars with the thirst and capacity to seek true knowledge.\nIt was these virtues that gave her the courage and hope to seek education and wisdom in the Akademiya.\nHowever, upon stepping foot into the Darshan, she found that her strengths were paltry when compared to her peers of a similar age.\nOnly the best of the best could make it into the Darshans, and as such, Layla couldn't help but feel a bit overshadowed.\nAs for shortcomings, Layla found them to be too many to count. For example, her habit of fixating on problems afflicted her with a great deal of indecisiveness.\nMoreover, her ability to socialize was also lacking. When involved in discussions, she often struck others as aloof and arrogant due to her reluctance in expressing her views, which led to her having few friends in the Darshan.\nWhat diminished her confidence even further was the fact that among the many papers she has submitted, few were actually written by her. Instead, they were byproducts of having \"The Stars' Blessing.\"\nFrom Layla's perspective, she is an insignificant individual.\nWhat she does not know is that her teachers and peers have an entirely different perspective of her.\n\"Hey, being mysterious and eccentric comes with being a genius.\"\n\"How does she draw her star charts so fast while we're doing in-field surveys? Are her eyes kameras? Wait, she's done with the stellar orbits as well?\"\n\"I have reviewed her papers and calculations and found the work to be rigorous and thorough. Her logic is ironclad. And some of her ideas are so intricate that I, even as an educator, am surprised. We have a fantastic student on our hands.\"\nSome people will always tread forward through life weighed down by their caution. Viewing themselves as lacking, they will nevertheless strive on despite the misgivings they have toward themselves.\nPerhaps it is also this perpetual dissatisfaction that spurs them onward, allowing them to surpass their fellows without even noticing."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "There was a girl who was determined, smart, and modest. Maybe even a little too modest.\nShe always felt that her meager gifts placed her leagues away from achieving true mastery.\nStill, she yearned for excellence, wanting to stand side by side with the greatest of minds, to make her teachers and family proud.\nContradictory desires chained her: She was unwilling to let go and unveil her true self, but also did not want to suffer the drudgery of a mundane life.\nWith the passage of time, she felt overwhelmed by a barrage of emotions. Shame. Listlessness. Yearning. All these things weighed upon her psyche and exacted their toll. Eventually, her soul found itself in need of a small outlet. Something to give her some breathing room.\nWhile her body and mind are awake and aware, she is too chained by woes to be free. So, it is when she slumbers that her deeper desires come alive to inhabit her vessel instead, indulging in bursts of short-lived freedom, gorging herself on all the expressions and indulgences that she denied herself while awake.\nWhile sleepwalking, she is beyond the claws of self-doubt and depression, allowing her to easily overcome things like writing papers, drawing star charts, and making Starlogs. Matters that usually mire her in indecision and worry become simple, allowing her to pour out her innermost insights and challenge highly complex questions.\nThis is the release of her long-held desires. But all dreams must come to an end. As her body wakes, she again returns to being the insecure, introverted girl that she was before. Indeed, after awakening, she can't even fathom that the wittily written papers and intricately calculated equations were created by her own hands.\nAs she is determined and modest while conscious, so too is she sharp and smart while sleepwalking. Both sides belong to the same girl.\nLike a sapling in growth, she is torn between self-doubt and the desire to break free. This imbalance was how her sleepwalking manifested in the first place. Yet, no matter which side of her is in control at the moment, the part that is Layla always remains."
+      },
+      {
+        "Title": "Layla's Photo Book",
+        "Context": "Besides the hills of notes, star charts, and journals, Layla's desk also has a thick book filled to the brim with photos.\nNo matter what else occupies the space on her desk, her photo book will always take the most visible spot.\nThe photos that fill the pages of this book were personally taken by Layla. It contains pictures of her home and parents, her friends, and even the mentor who inspired her to get into the Akademiya in the first place.\nEach photo is a snapshot of significance to Layla. She uses these photos in place of a journal, detailing her experiences and trials that led her from her home to the Akademiya.\nEach time she goes through her collage of photos, she finds herself still able to remember the burning determination from her past and uses it to pierce through encroaching bouts of doubt.\nRecently, Layla added a new picture she had taken with a certain gold-haired Traveler. As the pictures accumulate one after another, who knows how thick the book might get by the time she finally graduates?"
+      },
+      {
+        "Title": "Vision",
+        "Context": "Layla, being a person of easy temperament, rarely gets into arguments with others. One time, however, she broke the norm and found herself engaged in a heated debate.\nDuring a discussion for a class on Theoretical Astrology, an esteemed Herbad skimmed over Layla and her classmates' papers, and then began to harshly criticize some of Layla's arguments.\nIn the opinion of the Herbad, Theoretical Astrology is a sacred field of study with laws and theories that have been long crystallized by the expertise of countless researchers across the ages and cemented irrefutably by generations of testing and calculations. For Layla to question and even dare to correct some of these pre-accepted notions was tantamount to blasphemy.\nLayla did not respond to the criticism in the heat of the moment, however. Instead, she listed her detailed arguments in a report after the seminar and submitted it to the Herbad.\nNot long after, the Herbad attached his refutation to Layla's report and returned it to her.\nBy this point, most students would choose to accept the status quo. In one respect, failing to get a passing score for their seminar report will result in major negative effects on their finals.\nFurthermore, it was most presumptuous for a student to argue matters of academic validity with a Herbad, for any Herbad was far more refined than a mere student, whether it be in terms of knowledge and seniority, after all.\nPerhaps the arguments Layla made questioning long-accepted doctrine were simply results of a miscalculation on her part, and she might have been humiliated in the end on account of being mistaken.\nEven so, she did not give up. She continued her discourse with the Herbad using her reports. Then, with the passing of half a year, the Herbad went to find Layla once more. He admitted then that after consulting more researchers, he had discovered a point of non-acceptability in the long-accepted doctrines that had been left unexamined by the broader community.\nAs he concluded his explanations, he told Layla with pride and emotion that the students who dared challenge him for the sake of knowledge have grown fewer by the year.\nThe inception of education, for student or Herbad alike, is to seek knowledge in its purest form. Layla, in her persistence, had reminded him, at length, of this pursuit of enlightenment.\nAfter the conclusion of the seminars, as Layla was going through the bag that held the documents she had accrued during her exchanges with the Herbad, she spontaneously discovered a gleaming Vision in the bag's depths.\nIt lay there upon a thick stack of notes, like a fallen star pressed into the pages."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 207400,
+      "Name": "Dreaming Star",
+      "Description": "Layla's outfit. In the depths of quiet nights, the stars that dot the sky wrap her like a cloak, guiding her into sweet dreams — well, or so she dearly wishes might happen.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104164,
+    113038,
+    101215,
+    112010,
+    104334,
+    113042
+  ],
+  "NameCard": {
+    "Name": "Layla: Daydream",
+    "Description": "Namecard style.\n\"The starry sky in your dreams will illuminate your way forward, on the premise that the crystal in your heart reflects clear lights.\"",
+    "Icon": "UI_NameCardIcon_Layla",
+    "PicturePrefix": "UI_NameCardPic_Layla"
+  }
+}

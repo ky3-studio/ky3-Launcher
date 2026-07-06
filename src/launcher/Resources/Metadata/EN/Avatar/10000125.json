@@ -1,0 +1,1250 @@
+{
+  "Id": 10000125,
+  "PromoteId": 125,
+  "Sort": 110,
+  "Body": 2,
+  "Icon": "UI_AvatarIcon_Columbina",
+  "SideIcon": "UI_AvatarIcon_Side_Columbina",
+  "Name": "Columbina",
+  "Description": "The Moon Maiden born in Nod-Krai, and also the welkin moon returning home.",
+  "BeginTime": "2026-01-13T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 10,
+  "BaseValue": {
+    "HpBase": 1143.984,
+    "AttackBase": 7.448,
+    "DefenseBase": 40.0861
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 12531,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "Charged Attack DMG|{param4:F1P}",
+            "Charged Attack Stamina Cost|{param5:F1}",
+            "Moondew Cleanse DMG|{param6:F2P} Max HP ×3",
+            "Plunge DMG|{param7:F1P}",
+            "Low/High Plunge DMG|{param8:P}/{param9:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1253101,
+              "Level": 1,
+              "Parameters": [
+                0.46792,
+                0.366256,
+                0.58484,
+                1.1608,
+                50,
+                0.015112,
+                0.568288,
+                1.136335,
+                1.419344
+              ]
+            },
+            {
+              "Id": 1253102,
+              "Level": 2,
+              "Parameters": [
+                0.503014,
+                0.393725,
+                0.628703,
+                1.24786,
+                50,
+                0.016245,
+                0.614544,
+                1.228828,
+                1.534872
+              ]
+            },
+            {
+              "Id": 1253103,
+              "Level": 3,
+              "Parameters": [
+                0.538108,
+                0.421194,
+                0.672566,
+                1.33492,
+                50,
+                0.017379,
+                0.6608,
+                1.32132,
+                1.6504
+              ]
+            },
+            {
+              "Id": 1253104,
+              "Level": 4,
+              "Parameters": [
+                0.5849,
+                0.45782,
+                0.73105,
+                1.451,
+                50,
+                0.01889,
+                0.72688,
+                1.453452,
+                1.81544
+              ]
+            },
+            {
+              "Id": 1253105,
+              "Level": 5,
+              "Parameters": [
+                0.619994,
+                0.485289,
+                0.774913,
+                1.53806,
+                50,
+                0.020023,
+                0.773136,
+                1.545944,
+                1.930968
+              ]
+            },
+            {
+              "Id": 1253106,
+              "Level": 6,
+              "Parameters": [
+                0.655088,
+                0.512758,
+                0.818776,
+                1.62512,
+                50,
+                0.021157,
+                0.826,
+                1.65165,
+                2.063
+              ]
+            },
+            {
+              "Id": 1253107,
+              "Level": 7,
+              "Parameters": [
+                0.70188,
+                0.549384,
+                0.87726,
+                1.7412,
+                50,
+                0.022668,
+                0.898688,
+                1.796995,
+                2.244544
+              ]
+            },
+            {
+              "Id": 1253108,
+              "Level": 8,
+              "Parameters": [
+                0.748672,
+                0.58601,
+                0.935744,
+                1.85728,
+                50,
+                0.024179,
+                0.971376,
+                1.94234,
+                2.426088
+              ]
+            },
+            {
+              "Id": 1253109,
+              "Level": 9,
+              "Parameters": [
+                0.795464,
+                0.622635,
+                0.994228,
+                1.97336,
+                50,
+                0.02569,
+                1.044064,
+                2.087686,
+                2.607632
+              ]
+            },
+            {
+              "Id": 1253110,
+              "Level": 10,
+              "Parameters": [
+                0.842256,
+                0.659261,
+                1.052712,
+                2.08944,
+                50,
+                0.027202,
+                1.12336,
+                2.246244,
+                2.80568
+              ]
+            },
+            {
+              "Id": 1253111,
+              "Level": 11,
+              "Parameters": [
+                0.889048,
+                0.695886,
+                1.111196,
+                2.20552,
+                50,
+                0.028713,
+                1.202656,
+                2.404802,
+                3.003728
+              ]
+            },
+            {
+              "Id": 1253112,
+              "Level": 12,
+              "Parameters": [
+                0.93584,
+                0.732512,
+                1.16968,
+                2.3216,
+                50,
+                0.030224,
+                1.281952,
+                2.563361,
+                3.201776
+              ]
+            },
+            {
+              "Id": 1253113,
+              "Level": 13,
+              "Parameters": [
+                0.99433,
+                0.778294,
+                1.242785,
+                2.4667,
+                50,
+                0.032113,
+                1.361248,
+                2.721919,
+                3.399824
+              ]
+            },
+            {
+              "Id": 1253114,
+              "Level": 14,
+              "Parameters": [
+                1.05282,
+                0.824076,
+                1.31589,
+                2.6118,
+                50,
+                0.034002,
+                1.440544,
+                2.880478,
+                3.597872
+              ]
+            },
+            {
+              "Id": 1253115,
+              "Level": 15,
+              "Parameters": [
+                1.11131,
+                0.869858,
+                1.388995,
+                2.7569,
+                50,
+                0.035891,
+                1.51984,
+                3.039036,
+                3.79592
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11251,
+        "Name": "Moondew Cascade",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nSummons Moonlit Tides, performing up to 3 attacks that deal <color=#80C0FFFF>Hydro DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to deal <color=#80C0FFFF>AoE Hydro DMG</color> after a short casting time.\nIf you have at least 1 {LINK#N11190008}<color=#FFD780FF>Verdant Dew</color>{/LINK}, Columbina's Charged Attacks will be replaced with the special Charged Attack <color=#FFD780FF>Moondew Cleanse</color>, which will not consume Stamina: Consume 1 Verdant Dew to deal 3 instances of <color=#99FF88FF>AoE Dendro DMG</color> to opponents in front. This DMG is considered Lunar-Bloom DMG.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#80C0FFFF>AoE Hydro DMG</color> upon impact with the ground.",
+        "Icon": "Skill_A_Catalyst_MD"
+      },
+      {
+        "GroupId": 12532,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:F1P} Max HP",
+            "Gravity Ripple: Continuous DMG|{param2:F1P} Max HP",
+            "Gravity Interference: Lunar-Charged DMG|{param3:F2P} Max HP",
+            "Gravity Interference: Lunar-Bloom DMG|{param4:F2P} Max HP ×5",
+            "Gravity Interference: Lunar-Crystallize DMG|{param5:F2P} Max HP",
+            "Gravity Limit|{param8:I}",
+            "Gravity Ripple Duration|{param9:F1}s",
+            "CD|{param10:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1253201,
+              "Level": 1,
+              "Parameters": [
+                0.1672,
+                0.0936,
+                0.04704,
+                0.01408,
+                0.08824,
+                2,
+                20,
+                60,
+                25,
+                17
+              ]
+            },
+            {
+              "Id": 1253202,
+              "Level": 2,
+              "Parameters": [
+                0.17974,
+                0.10062,
+                0.050568,
+                0.015136,
+                0.094858,
+                2,
+                20,
+                60,
+                25,
+                17
+              ]
+            },
+            {
+              "Id": 1253203,
+              "Level": 3,
+              "Parameters": [
+                0.19228,
+                0.10764,
+                0.054096,
+                0.016192,
+                0.101476,
+                2,
+                20,
+                60,
+                25,
+                17
+              ]
+            },
+            {
+              "Id": 1253204,
+              "Level": 4,
+              "Parameters": [
+                0.209,
+                0.117,
+                0.0588,
+                0.0176,
+                0.1103,
+                2,
+                20,
+                60,
+                25,
+                17
+              ]
+            },
+            {
+              "Id": 1253205,
+              "Level": 5,
+              "Parameters": [
+                0.22154,
+                0.12402,
+                0.062328,
+                0.018656,
+                0.116918,
+                2,
+                20,
+                60,
+                25,
+                17
+              ]
+            },
+            {
+              "Id": 1253206,
+              "Level": 6,
+              "Parameters": [
+                0.23408,
+                0.13104,
+                0.065856,
+                0.019712,
+                0.123536,
+                2,
+                20,
+                60,
+                25,
+                17
+              ]
+            },
+            {
+              "Id": 1253207,
+              "Level": 7,
+              "Parameters": [
+                0.2508,
+                0.1404,
+                0.07056,
+                0.02112,
+                0.13236,
+                2,
+                20,
+                60,
+                25,
+                17
+              ]
+            },
+            {
+              "Id": 1253208,
+              "Level": 8,
+              "Parameters": [
+                0.26752,
+                0.14976,
+                0.075264,
+                0.022528,
+                0.141184,
+                2,
+                20,
+                60,
+                25,
+                17
+              ]
+            },
+            {
+              "Id": 1253209,
+              "Level": 9,
+              "Parameters": [
+                0.28424,
+                0.15912,
+                0.079968,
+                0.023936,
+                0.150008,
+                2,
+                20,
+                60,
+                25,
+                17
+              ]
+            },
+            {
+              "Id": 1253210,
+              "Level": 10,
+              "Parameters": [
+                0.30096,
+                0.16848,
+                0.084672,
+                0.025344,
+                0.158832,
+                2,
+                20,
+                60,
+                25,
+                17
+              ]
+            },
+            {
+              "Id": 1253211,
+              "Level": 11,
+              "Parameters": [
+                0.31768,
+                0.17784,
+                0.089376,
+                0.026752,
+                0.167656,
+                2,
+                20,
+                60,
+                25,
+                17
+              ]
+            },
+            {
+              "Id": 1253212,
+              "Level": 12,
+              "Parameters": [
+                0.3344,
+                0.1872,
+                0.09408,
+                0.02816,
+                0.17648,
+                2,
+                20,
+                60,
+                25,
+                17
+              ]
+            },
+            {
+              "Id": 1253213,
+              "Level": 13,
+              "Parameters": [
+                0.3553,
+                0.1989,
+                0.09996,
+                0.02992,
+                0.18751,
+                2,
+                20,
+                60,
+                25,
+                17
+              ]
+            },
+            {
+              "Id": 1253214,
+              "Level": 14,
+              "Parameters": [
+                0.3762,
+                0.2106,
+                0.10584,
+                0.03168,
+                0.19854,
+                2,
+                20,
+                60,
+                25,
+                17
+              ]
+            },
+            {
+              "Id": 1253215,
+              "Level": 15,
+              "Parameters": [
+                0.3971,
+                0.2223,
+                0.11172,
+                0.03344,
+                0.20957,
+                2,
+                20,
+                60,
+                25,
+                17
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11252,
+        "Name": "Eternal Tides",
+        "Description": "Awaken Moonbound Tides, dealing <color=#80C0FFFF>AoE Hydro DMG</color> and summoning {LINK#N11250001}<color=#FFD780FF>Gravity Ripple</color>{/LINK}.\n<color=#FFD780FF>Gravity Ripple</color> will follow the active character on the field, while continuously dealing <color=#80C0FFFF>AoE Hydro DMG</color> to surrounding opponents. While <color=#FFD780FF>Gravity Ripple</color> is on the field, and nearby party members trigger Lunar reactions or inflict Lunar Reaction DMG, Columbina will accrue a special <color=#FFD780FF>Gravity</color>. Once Gravity is accumulated to its limit, different types of damage will be dealt to enemies based on the type of Lunar Reaction that has accumulated the most <color=#FFD780FF>Gravity</color> for Columbina.\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: <color=#FFD780FF>Gravity Ripple</color> inflicts <color=#80C0FFFF>AoE Hydro DMG</color> over a wider area.",
+        "Icon": "Skill_S_Columbina_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 12539,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:F1P} Max HP",
+          "Lunar Reaction DMG Bonus|{param2:F1P}",
+          "Lunar Domain Duration|{param3:F1}s",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1253901,
+            "Level": 1,
+            "Parameters": [
+              0.3224,
+              0.13,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1253902,
+            "Level": 2,
+            "Parameters": [
+              0.34658,
+              0.16,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1253903,
+            "Level": 3,
+            "Parameters": [
+              0.37076,
+              0.19,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1253904,
+            "Level": 4,
+            "Parameters": [
+              0.403,
+              0.22,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1253905,
+            "Level": 5,
+            "Parameters": [
+              0.42718,
+              0.25,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1253906,
+            "Level": 6,
+            "Parameters": [
+              0.45136,
+              0.28,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1253907,
+            "Level": 7,
+            "Parameters": [
+              0.4836,
+              0.31,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1253908,
+            "Level": 8,
+            "Parameters": [
+              0.51584,
+              0.34,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1253909,
+            "Level": 9,
+            "Parameters": [
+              0.54808,
+              0.37,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1253910,
+            "Level": 10,
+            "Parameters": [
+              0.58032,
+              0.4,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1253911,
+            "Level": 11,
+            "Parameters": [
+              0.61256,
+              0.43,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1253912,
+            "Level": 12,
+            "Parameters": [
+              0.6448,
+              0.46,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1253913,
+            "Level": 13,
+            "Parameters": [
+              0.6851,
+              0.49,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1253914,
+            "Level": 14,
+            "Parameters": [
+              0.7254,
+              0.52,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1253915,
+            "Level": 15,
+            "Parameters": [
+              0.7657,
+              0.55,
+              20,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11255,
+      "Name": "Moonlit Melancholy",
+      "Description": "Hills and tides unite under the silver light of a pristine new moon. Temporarily transforms the surrounding terrain into {LINK#N11250002}<color=#FFD780FF>Lunar Domain</color>{/LINK}, dealing <color=#80C0FFFF> AoE Hydro DMG</color>.",
+      "Icon": "Skill_E_Columbina_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 12521,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1252101,
+              "Level": 1,
+              "Parameters": [
+                0.05,
+                10
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1252101,
+        "Name": "Lunacy's Lure",
+        "Description": "When triggering {LINK#N11250001}<color=#FFD780FF>Gravity Interference</color>{/LINK}, Columbina gains the Lunacy effect, increasing her CRIT Rate by 5% for 10s. This effect can be stacked up to 3 times.",
+        "Icon": "UI_Talent_S_Columbina_05"
+      },
+      {
+        "GroupId": 12522,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1252201,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1252201,
+        "Name": "Law of the New Moon",
+        "Description": "When characters within the {LINK#N11250002}<color=#FFD780FF>Lunar Domain</color>{/LINK} trigger Lunar reactions, they will gain the following effects respectively: \n· <color=#FFD780FF>Lunar-Charged</color>: When the Thundercloud performs lightning strike(s) against a valid target, it has a 33% chance to perform an additional lightning strike. \n· <color=#FFD780FF>Lunar-Bloom</color>: When triggering Lunar-Bloom reactions, the party gains a special {LINK#N11250003}<color=#FFD780FF>Moonridge Dew</color>{/LINK}. Up to 3 Moonridge Dews can be gained every 18s. \n· <color=#FFD780FF>Lunar-Crystallize</color>: When Moondrift Harmony is triggered, every Moondrift has a 33% chance to inflict an extra attack.",
+        "Icon": "UI_Talent_S_Columbina_06"
+      },
+      {
+        "GroupId": 12523,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1252301,
+              "Level": 1,
+              "Parameters": [
+                0.002,
+                0.07
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1252301,
+        "Name": "Moonsign Benediction: Moonlight, Lent Unto You",
+        "Description": "When a party member triggers an Electro-Charged, Bloom, or Hydro-Crystallize reaction, it will be converted into a Lunar-Charged, Lunar-Bloom, or Lunar-Crystallize reaction respectively. Lunar Reaction DMG inflicted by party members gain a Base DMG increase based on Columbina's Max HP. For every 1,000 points of Max HP, the Base DMG of Lunar reactions is increased by 0.2%, up to a maximum of 7%.\n\nAdditionally, when Columbina is in the party, the party's <color=#FFD780FF>Moonsign</color> will increase by 1 level.",
+        "Icon": "UI_Talent_S_Columbina_07"
+      },
+      {
+        "GroupId": 12525,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1252501,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1252501,
+        "Name": "Lunar Vigil",
+        "Description": "If one of your party members is incapacitated while in the Nod-Krai region, Columbina will revive this character. The amount of HP the character will have upon revival is based on Columbina's Friendship Level. This effect can occur once every 100s. This effect does not trigger in Domains, Trounce Domains, or the Spiral Abyss.\nAdditionally, Columbina appears to have a special affinity for certain animals who are influenced by kuuvahki...",
+        "Icon": "UI_Talent_S_Columbina_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1251,
+        "Name": "Radiance Over Blossoms and Peaks",
+        "Description": "Unleashing her Elemental Skill <color=#FFD780FF>Eternal Tides</color> will immediately trigger an effect equivalent to the effect of {LINK#N11250001}<color=#FFD780FF>Gravity Interference</color>{/LINK}. This effect can be triggered once every 15s.\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>\nWhen Gravity Interference is triggered, if the Lunar reaction type that has accumulated the most Gravity for Columbina is:\n· <color=#FFD780FF>Lunar-Charged</color>: Your current active character will recover 6 Energy.\n· <color=#FFD780FF>Lunar-Bloom</color>: Your active character's interruption resistance will be increased for 8s.\n· <color=#FFD780FF>Lunar-Crystallize</color>: Summons a <color=#FFD780FF>Rainsea Shield</color>. The Rainsea Shield's DMG absorption is based on 12% of Columbina's Max HP, and it will absorb <color=#80C0FFFF>Hydro DMG</color> with 250% effectiveness for 8s.\n\nAll nearby party members' Lunar Reaction DMG is {LINK#N11190007}<color=#FFD780FF>elevated</color>{/LINK} by 1.5%.",
+        "Icon": "UI_Talent_S_Columbina_01"
+      },
+      {
+        "Id": 1252,
+        "Name": "Not in Lone Splendor",
+        "Description": "Rate of accumulating {LINK#N11250001}<color=#FFD780FF>Gravity</color>{/LINK} increases by 34%. \nWhen <color=#FFD780FF>Gravity Interference</color> is triggered, Columbina will receive the <color=#FFD780FF>Lunar Brilliance</color> effect, which increases her Max HP by 40% for 8s.\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>:\nWhen <color=#FFD780FF>Lunar Brilliance</color> is active, if, during the current trigger of <color=#FFD780FF>Gravity Interference</color>, the Lunar reaction type that has accumulated the most Gravity for Columbina is:\n· <color=#FFD780FF>Lunar-Charged</color>: ATK of your current active character increases. Increase in ATK is equal to 1% of Columbina's Max HP.\n· <color=#FFD780FF>Lunar-Bloom</color>: Elemental Mastery of your current active character increases. Increase in Elemental Mastery is equal to 0.35% of Columbina's Max HP.\n· <color=#FFD780FF>Lunar-Crystallize</color>: DEF of your current active character increases. Increase in DEF is equal to 1% of Columbina's Max HP.\n\nAll nearby party members' Lunar Reaction DMG is {LINK#N11190007}<color=#FFD780FF>elevated</color>{/LINK} by 7%.",
+        "Icon": "UI_Talent_S_Columbina_02"
+      },
+      {
+        "Id": 1253,
+        "Name": "Dreamlike Glow Across Tranquil Waters",
+        "Description": "Increases the Level of Elemental Skill <color=#FFD780FF>{LINK#S11252}Eternal Tides{/LINK}</color> by 3.\nMaximum upgrade level is 15.\n\nAll nearby party members' Lunar Reaction DMG is {LINK#N11190007}<color=#FFD780FF>elevated</color>{/LINK} by 1.5%.",
+        "Icon": "UI_Talent_U_Columbina_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1254,
+        "Name": "Cloudveiled Ridges in Floral Mists",
+        "Description": "When {LINK#N11250001}<color=#FFD780FF>Gravity Interference</color>{/LINK} is triggered, 4 Elemental Energy will be restored to Columbina;\nAdditionally, if the Lunar reaction type that accumulates the most <color=#FFD780FF>Gravity</color> for Columbina is Lunar-Charged, Lunar-Bloom, or Lunar-Crystallize, the Lunar Reaction DMG dealt by this instance of Gravity Interference is increased by 12.5%/2.5%/12.5% of Columbina's Max HP respectively. This effect can be triggered at most once every 15s.\n\nAll nearby party members' Lunar Reaction DMG is {LINK#N11190007}<color=#FFD780FF>elevated</color>{/LINK} by 1.5%.",
+        "Icon": "UI_Talent_S_Columbina_03"
+      },
+      {
+        "Id": 1255,
+        "Name": "Silence Tending One Lone Song",
+        "Description": "Increases the Level of Elemental Burst <color=#FFD780FF>{LINK#S11255}Moonlit Melancholy{/LINK}</color> by 3.\nMaximum upgrade level is 15.\n\nAll nearby party members' Lunar Reaction DMG is {LINK#N11190007}<color=#FFD780FF>elevated</color>{/LINK} by 1.5%.",
+        "Icon": "UI_Talent_U_Columbina_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1256,
+        "Name": "Through Darkness Led by Moonlight",
+        "Description": "For 8s after characters in the {LINK#N11250002}<color=#FFD780FF>Lunar Domain</color>{/LINK} trigger a Lunar reaction, based on the elements involved in the reaction, the CRIT DMG of the corresponding Elemental DMG done by all party members is increased by 80%. The CRIT DMG-increasing effects for the same Elemental Type do not stack.\n\nAll nearby party members' Lunar Reaction DMG is {LINK#N11190007}<color=#FFD780FF>elevated</color>{/LINK} by 7%.",
+        "Icon": "UI_Talent_S_Columbina_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Welkin Moon's Homecoming",
+    "Detail": "The Moon Maiden born in Nod-Krai, and also the welkin moon returning home.",
+    "Association": 12,
+    "Native": "Silvermoon Hall",
+    "BirthMonth": 1,
+    "BirthDay": 14,
+    "VisionBefore": "Hydro",
+    "VisionAfter": "Hydro",
+    "VisionOverrideLocked": "???",
+    "VisionOverrideUnlocked": "Tri-Lunar Convergence",
+    "ConstellationBefore": "???",
+    "ConstellationAfter": "Columbina Hyposelenia",
+    "CvChinese": "杨梦露",
+    "CvJapanese": "Lynn",
+    "CvEnglish": "Emi Lo",
+    "CvKorean": "Yu Yeong",
+    "CookBonus": {
+      "OriginItemId": 108938,
+      "ItemId": 108950,
+      "InputList": [
+        101262,
+        101268,
+        101265,
+        101264
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "You can call me Columbina, or Kuutar, or Moon Goddess... Whatever you prefer. I'm used to having many names. The moon's blessing is yours, whenever you might find yourself in need."
+      },
+      {
+        "Title": "Chat: Singing",
+        "Context": "I don't sing for anyone in particular. Still, if someone stops to listen, I hope it provides a moment of peace all the same."
+      },
+      {
+        "Title": "Chat: Moongazing",
+        "Context": "Would you like to go moongazing? You can sit in my rocking chair and admire the view. Or we could go to the moon and gaze down at Teyvat. Whatever you prefer."
+      },
+      {
+        "Title": "Chat: Long Walks",
+        "Context": "I used to take long walks in Silvermoon Hall every day, so don't worry about me. I can keep up."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Taking shelter and listening to the rain cleanse the earth makes me feel safe, like being \"home.\""
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "The sky is clear again. We should be able to see the moon tonight."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Ah...! Without lightning to give warning... the sound of thunder is quite startling..."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "I love the snow. It's so beautiful and peaceful, and I can have snowball fights with the kuuhenki. Shall we have one now?"
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "If the wind is too strong to keep your eyes open, give me your hand. I'll guide you."
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "The sand is cool and comfortable to walk on at night, but it gets so hot during the day..."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Good morning... Have you seen my hair tie? Hmm? My hair looks messy...? Which part? Could you brush it for me?"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Hmm... The moon hasn't risen yet. I think I'll take a nap with the kuuhenki."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "\"Nightfall\"... Quite an interesting expression, don't you think? It's as if night tumbles in each evening, tripping over the moon."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Can't sleep? Hmm... The kuuhenki have that problem too sometimes. When that happens, I usually sing to them or tell them stories. Would you like me to do that for you?"
+      },
+      {
+        "Title": "About Columbina: Eye Mask",
+        "Context": "I'm used to \"sensing\" things with kuuvahki — it reveals the truth of things better than \"seeing\" does. Still, curiosity does sometimes get the better of me, and I open my eyes to take a peek. That's the nice thing about having an eye mask with holes."
+      },
+      {
+        "Title": "About Columbina: Home",
+        "Context": "I used to think I would forever be a stranger to this land — that the moon was my true \"home.\" Now, I have an additional place to call home, and both my homes are now closer by."
+      },
+      {
+        "Title": "About Us: Great Deeds",
+        "Context": "I heard about you long before we met. Back when I was with the Fatui, I remember the other Harbingers talking about your deeds. But you have so many titles, I... fell asleep before they even got to your name."
+      },
+      {
+        "Title": "About Us: Traveling",
+        "Context": "Could you give me some tips for traveling? Like... how to talk to people from other nations. Hmm? I should focus more on fire-building skills, hunting techniques, and... transport? Huh. Couldn't I just use kuuvahki for all that?"
+      },
+      {
+        "Title": "About the \"Tri-Lunar Convergence\"",
+        "Context": "The three goddesses bestowed their powers upon me, which converged into a force that is both dazzling and gentle. Through it, I can feel their attachment to this place, and I can sense the hopes and wishes they offered to this world in their final moments. I will inherit their moonlight and use it to illuminate the world beneath the moon — the place we all call \"home\"."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Back in Snezhnaya, being Third of the Fatui Harbingers came with a lot of perks. I didn't need to purchase a ticket for the train or stand in line for the Korolevskiy Troupe... Ah, and when I dined at a restaurant, I could get... \"reimbursed\"? That was a bit too complicated for me to understand, though, so I just tagged along with Sandrone or Arlecchino instead."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "The moon is more beautiful than I could have imagined. Blue kuuvahki flowing like an endless ocean, magnificent jellyfish drifting across the sea, pink frostfin whales coming from places unknown, enormous kuuhenki... It's magnificent. Once I've made my home a bit more presentable, I'll invite my friends up to visit."
+      },
+      {
+        "Title": "About Lauma",
+        "Context": "Aiming a beam of moonlight at Lauma's head makes her antlers grow taller, and if you get the angle just right, you can even get them to stab a piece of fruit that's too high to reach... Hmm? What then? Oh, um... You get scolded."
+      },
+      {
+        "Title": "About Nicole",
+        "Context": "Oh, we kept in touch until a short while ago. I asked her to recommend some books for me to read to the kuuhenki. She sent a whole lot and even gave me detailed explanations about the inspiration and setting for each one. I asked her when I might be able to read a book she had authored herself, but then I suddenly stopped hearing from her. Perhaps... she went off to write one."
+      },
+      {
+        "Title": "About Neuvillette",
+        "Context": "The Hydro Dragon who serves as the Iudex of Fontaine? Hmm... Another Dragon who puts people in prison. I'm not sure I'd want to meet him."
+      },
+      {
+        "Title": "About The Seven",
+        "Context": "If we cross paths during my journey, I'll be sure to say hello."
+      },
+      {
+        "Title": "About the Tsaritsa",
+        "Context": "The first time I sang in the gardens of Zapolyarny Palace, the Tsaritsa happened to pass by. She stood there, silent and motionless, like a statue with no expression carved onto the face. For a moment, I felt as if she wanted to say something to me, but she never did.\nShe seals her emotions beneath thick sheets of ice. The outside world sees but one side of who she is... that of the Tsaritsa. If the answers I sought rest on the moon, perhaps hers lie buried in snow and ice."
+      },
+      {
+        "Title": "About The Jester",
+        "Context": "He's quite the opposite of his codename, and that seems to be intentional. Although he's known as \"The Jester,\" his tone is stern and serious, and he speaks in confusing riddles. The mask he wears depicts a grin that mocks the world, but he himself never smiles."
+      },
+      {
+        "Title": "About The Captain",
+        "Context": "Many respect him, but just as many fear him. Hmm? Is that too confusing? Well, you see, creatures accustomed to living in darkness will never choose to get close to the light. It's too dangerous, for light would only lengthen their own shadow."
+      },
+      {
+        "Title": "About The Doctor",
+        "Context": "There was a time when \"The Doctor\" took care of me, even claiming to think of me as a sister.\nIt was only later that I discovered, the closer you are to him, the more freely he uses you. \"What's a little discomfort among family? We endure for each other, surely.\" That's how he thought of things, and I could tell he meant it, but I didn't want to have to \"endure.\" Expectations like that... They took me back to my first home, and the eyes staring up at me from beneath the altar, so full of greed."
+      },
+      {
+        "Title": "About Arlecchino",
+        "Context": "The House of the Hearth is home to many children, and it can get quite noisy. The first time I heard them call Arlecchino \"Father,\" I thought it was a rule that had to be followed there. So, the next time she passed by, I used that title as well. That's when I learned just how quiet the House of the Hearth could become."
+      },
+      {
+        "Title": "About The Rooster",
+        "Context": "I can teach you to talk just like him — all you have to do is combine the words \"money,\" \"that darn Pantalone,\" and \"mark my words.\" Here, I'll show you. \"Where's the money? Mark my words, I'm going to kill that darn Pantalone.\" Or, \"That darn Pantalone is going to cough up the money, mark my words.\" See? Isn't that fascinating?"
+      },
+      {
+        "Title": "About Sandrone: Clockwork Nature",
+        "Context": "I wonder, does the key on her back ever stop turning? Does it change direction? Does she remove it when she sleeps? How does she roll over? I've been curious about that key ever since I first met her. But since we weren't close then, it didn't seem right to just go up and touch it. So whenever I had the chance, I would follow behind her, trying to figure out the pattern of its movement. But one day, she suddenly turned around and demanded to know why I kept following her. After I told her the reason, she said, \"If you're that curious, why don't I put one on your back, and you can see for yourself?\" So I lived with a key on my back for a few days, and it was quite the challenge. Sandrone doesn't have it easy, so I've looked out for her even more since then."
+      },
+      {
+        "Title": "About Sandrone: Clockwork Nature II",
+        "Context": "I'm not sure what counts as \"death\" for a puppet... All I know is, Sandrone isn't moving, and I can't feel her \"operating.\" Her key has just... stopped. And all because of the \"technique\" she used to bring me back. She said she was going to get back at me that one time. How I wish that's all this was. Just an attempt to scare me..."
+      },
+      {
+        "Title": "About Sandrone: Clockwork Nature III",
+        "Context": "Sandrone has returned. I'm so happy. I noticed her wind-up key sometimes turns a bit faster now — it always seemed to turn at the same speed before. She said it's because she's embraced her inner feelings, and that she's different now. But whether she's changed her outfit or her key turns faster, I feel like Sandrone is still Sandrone, my best friend. Whether it's her past or present self, she has my complete admiration. I told her this, and her key turned faster. I don't know why, but it's really interesting."
+      },
+      {
+        "Title": "About Regrator",
+        "Context": "In his eyes, everything and everyone has a price tag, and he gets to decide their value. We're all just bargaining chips he can use to expand his ever-increasing empire of wealth. But who would want to visit a boring empire like that? Not me, that's for sure.\nHmm... If he saw me now, I'm sure his smile would hide even more contempt than before. I can almost hear it now... \"Congratulations, Miss Columbina. Your value has appreciated.\""
+      },
+      {
+        "Title": "About Rosalyne",
+        "Context": "If metamorphosis ends in one's wings being engulfed in flame, perhaps remaining in the cocoon is how one survives. But, I doubt Rosalyne ever considered making that choice, or perhaps she had determined her own end from the very beginning. Whether it was love, hate, or a simple dance, she gave her whole self to her pursuits... and left others to sing her dirge after her departure."
+      },
+      {
+        "Title": "About Childe",
+        "Context": "I've heard he has a good relationship with his family. They go camping together and have barbecues by the lake. Sandrone says he's the Harbinger who lives most like an ordinary person. I don't really understand ordinary people, but that kind of life sounds nice to me."
+      },
+      {
+        "Title": "More About Columbina: I",
+        "Context": "Huh...? My story? Um... That might take quite a while to tell. Oh, you brought tea and snacks? Well then, I suppose I could share a bit more in return."
+      },
+      {
+        "Title": "More About Columbina: II",
+        "Context": "I used to spend a lot of time learning how to interact with people and go about life in this world. But looking back now, perhaps my experiences with the Frostmoon Scions and the Fatui weren't the best teachers. For a long time, I thought relationships were transactional — their only purpose being figuring out what you can take, and what it might cost you in return."
+      },
+      {
+        "Title": "More About Columbina: III",
+        "Context": "I love telling stories to the kuuhenki, and I love to sing. There's a blank space in my life that has existed since before I was born and has shadowed me since. My story was incomplete from the start, so I've learned to use other stories to fill in the gaps. It's like... painting a picture — I sketch the outline with words and color it in with song."
+      },
+      {
+        "Title": "More About Columbina: IV",
+        "Context": "On Moon-Prayer Night, I received a name that belongs to me — Columbina Hyposelenia. I used to think a name was nothing more than an alias, something separate from oneself. But after that night, I realized my name is what connects me to this world and the people within it... It is all that is intangible — their friendship, love, and support — manifested for the world to see. I will cherish it forever."
+      },
+      {
+        "Title": "More About Columbina: V",
+        "Context": "My story is like an opera played in reverse. The ending came first, and I was left searching for the whys and wherefores. But if I could go back and do it all over again, I wouldn't change a thing. I quite like it as it is now. Without this journey, I never would have known that being born in Nod-Krai was my own choice, my friends never would have helped me connect with my true \"family,\" and you never would have followed Luonnotar into Silvermoon Hall that night. My story would have been empty in a very different way. I don't like that version one bit."
+      },
+      {
+        "Title": "Columbina's Hobbies",
+        "Context": "I like to go up to the moon and watch Teyvat revolve in silence. It brings me peace."
+      },
+      {
+        "Title": "Columbina's Troubles",
+        "Context": "I wish I could take a stroll in Nasha Town like a normal person... But I keep getting recognized. Is it my outfit? Or the fact that I talk to the kuuhenki in town? Do normal people not do that?"
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Fresh fruit and vegetables paired with fragrant bread... Hmm? Oh, well, I suppose it is a bit plain, but I'm used to it. It's what the Frostmoon Scions gave me when I was first born in Nod-Krai. The little animals often shared their foraged berries with me too. I prefer food in its most natural state — it allows you to get a glimpse of the world as it's meant to be."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "\"Fire-Water\" and other strong spirits. Snezhnaya has a lot of drinks like that. I was there for a long time, but I never got used to them. The world starts to spin and you feel like your insides are on fire. I just don't understand why people enjoy that feeling, unless... Do they want to float up to the moon too?"
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "More please. Hmm? Oh, was that all? I'll have to remember to save some next time."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "It's quite pleasant. I'll savor it beneath the moonlight."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Oh... Whenever Sandrone was mad at me, she'd give me things like this too..."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Your birthday is on the same day every year? Wow, that's easy to remember. Moon-Prayer Night is held at different times each year, so I can only estimate my birthday by sensing the moon. A birthday is such a joyous occasion, isn't it? Everyone gathers to dance while people make delicious offerings to give you. Huh...? Regular people's birthdays aren't like that? Gifts, cake, and friends...? Oh, that works too. Let's invite your friends to celebrate. I can sing you a song, and we can even ask Maalaus to paint a picture for you."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "By the Eternal Moon, the tides shall surge."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "By the Frost Moon, the night shall be illuminated."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "By the Iridescent Moon, darkness shall be cast deeper into the shadows."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I now hold the threads of fate in my hands. From now on, the new moon shall watch over and illuminate the world below."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Flow."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Surge."
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Wane."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "A new moon rises."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Three moons converge."
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "A moonlit night for all."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "They call this a \"pleasant surprise\"... right?"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Hmm, did they run from home too?"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "You keep them. I no longer need offerings."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Getting dizzy..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "It's growing dark..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Not doing so well..."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Feeling woozy? Allow me to step in."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "How about some rest?"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "The night sky... dims... once more..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "The moon has... waned..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "The price... of leaving home..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "I'm fine..."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Ouch...!"
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "...Why?"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Allow me to lend you some moonlight."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Will we be gone long?"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "I will follow where you lead."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Day or night?\nWhy, night, of course. The world of daylight was filled with too many words beyond her understanding. \"Kuutar,\" \"The Damselette,\" \"Goddess\"... She knew these words to be like mirrors, each reflecting a version of her in this unfamiliar world. But those were versions others wished to see. She did not recognize herself in those reflections, just as she did not recognize the moon hanging in the sky. At least at night, she could clearly feel the pull coming from beyond the heavens. It made no sound, yet she understood it all the same — the Frost Moon was calling her home.\n...\nSpring, summer, autumn, or winter?\nWinter, without question. After the restlessness of spring, the clamor of summer, and the bounty of autumn, winter's snow quietly laid a finger across the world's lips, as if to say, \"Hush. After all that bustle, isn't it time for some quiet?\"\nAnd so the world would obediently fall silent. Little animals would retreat to their homes as well. Only in winter would people truly realize how important a warm \"home\" could be.\nAs for Columbina? She loved to find a thick, soft pile of snow, before holding her breath and diving straight in. For a goddess who wasn't particularly sensitive to cold, being wrapped head to toe in gentle white snow felt simply wonderful. As to whether her colleagues understood this behavior... Well, she concerned herself little with that.\n...\nSunny? Rainy? Or perhaps, cloudy?\nA rainy morning. When Columbina woke to the soft patter of rain beyond the Silvermoon Hall, a sense of calm would settle over her — the feeling of being sheltered beneath its vaulted roof.\n\"Shelter.\" In the rhythm of the rain, the word resonated with renewed strength, echoing the most essential meaning that \"home\" could hold. Simply existing along the extension of that meaning was enough to fill Columbina with warmth.\nStill... nightfall was better when under clear skies.\n...\nWere her answers to these questions truly accurate? Might they change someday? Columbina turned these thoughts over in her mind.\nProbably not. But even if they did, these answers were the truest version of herself in this moment — the truest version of her on this night.\nForests, lakes, and open seas... Which did she love most?\nShe loved them all, of course."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "The first thing she heard was a song.\n♪ Sleep, sleep now, my dear little dove ♪...\n♪ May flowers and lovely dreams bloom by your window ♪...\n...\nWhose voice was that? It sounded distant and indistinct, like a lullaby — like the beginning of a story, and just as much its ending...\nThen came the sensation of the earth beneath her.\nFine-grained, warm, and gentle, carrying a familiar strength, like a part of her own body, or the amniotic waters that once cradled her before she was born...\nAnd so, she opened her eyes.\nMoonlight drifted through the air, and a few little ones caught its fleeting threads and wove them into garments for her.\nSomething far, far away was calling her — a pull, a connection, like a yet-unbroken umbilical cord between a baby and its mother.\nShe lifted her eyes. But there was nothing in the sky, only a veil. A lie. For some reason, the first time she saw a sky full of stars, she knew it was false. And whatever it was that connected her to something beyond was cut off by this veil of lies.\nWhy was she born here? Or rather, why was she born at all? Who was she? And whose voice did that singing belong to?\nQuestions arose, one after another, from the depths of her mind. Yet the world offered not even an echo in reply. Sometimes, not hearing was scarier than not seeing.\nShe sensed that these questions might follow her forever.\nShe closed her eyes. The truth was not to be found beneath a veil of lies."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "When Columbina first came to the Fatui, she immediately found them very different from the Frostmoon Scions.\nNo one seemed to make unreasonable demands of her. No one appeared to desire anything from her or revere her — at least, not on the surface.\nThe concept of \"colleagues\" was new to her, too. Within it, she sensed something both unfamiliar and deeply appealing: a sense of equality, occasionally mixed with a familiar notion of \"trade.\" She was still learning to navigate this way of life.\nThe first to approach her was The Doctor. Columbina could hear admiration in this colleague's words — not the same as worship; at least, it was based on the premise of equality.\n\"If you don't mind, could you help me with a small task?\" the colleague asked politely.\nHelp? She had expected this to be something she was obliged to give in return, but here, she actually had a choice. Or perhaps it was this very colleague who was offering her the choice.\nEven though The Doctor's words carried a faint echo of something ominous, like distant thunder from a far-off storm, the sense of having a choice was undeniably satisfying.\nAt first, everything went smoothly. The Doctor's lab was filled with all sorts of strange devices, and Columbina only needed to lightly apply her power here, manipulate that there, and everything would work out.\n\"Not bad. You did very well.\"\nColumbina liked praise. It was new to her, a novel experience.\nBut before long, compliments shifted to \"Not quite enough,\" \"You can do better,\" or \"You're capable of more...\"\nSuddenly, Columbina realized that what The Doctor was seeing wasn't her, but some version of what she should be, or the level her powers should reach. It reminded her of the days before she had joined the Fatui...\nShe felt a pang of sadness. Did anyone else ever feel sad just for being themselves? She didn't know if others felt that, but she did.\nIt wasn't that she wanted to become what others expected, but that what they saw wasn't her. The real her, like an unwelcome child at a party, was left alone on the sidelines..."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "...Might as well get something to eat.\nWhen she was feeling down, Columbina always turned to the things she liked doing. Filling her stomach was just one of them, and the easiest to satisfy.\n\"I—I'm really sorry, Lady Harbinger...\" As she was leaving the restaurant, someone called out to her, trembling, and handed her a slip of paper. Columbina couldn't see it, but somehow remembered — this was part of a process that had to happen after eating. Different from how procedures were back with the Frostmoon Scions.\nThe problem was, she still wasn't used to it. She knew it involved some ritual of \"trade,\" but the few times she had done it, it was always with her two recently acquainted colleagues, Arlecchino and Sandrone. Or rather, they did it for her.\nColumbina didn't know what to do. During that moment, she felt a kind of fear and guilt radiating from the other person, so palpable she could sense it even with her eyes closed. It was her fault, and she felt both sorry and helpless.\n\"I...\" Columbina searched for unfamiliar words.\n\"Alright, I've got this. You just stay out of it.\" A familiar voice appeared beside her. It was Sandrone.\n\"Hmph. You don't even know how to apply for reimbursement, and you dare come out to eat by yourself? Ugh. You know what, I bet you don't even know how to pay either.\" The tone was impatient, but somehow reassuring.\n\"The Fatui's financial rules sure are rigid... and complicated,\" she muttered, quickly filling out the slip and handing it to the trembling employee.\n\"From now on, put her bill on my tab. It's all the same when it comes to reimbursement anyway,\" Sandrone said irritably to the employee.\n\"Sorry...\" Columbina murmured to her colleague, with whom she had not been acquainted long. She knew she was being helped.\n\"Huh? I didn't do this just to hear you apologize.\" Somehow, the other sounded even more annoyed. Why?\n\"Hmm? You don't blame me?\" Columbina asked.\n\"Huh? Why? Isn't this just who you are?\" came the exasperated reply. \"Seriously, though, I don't get how someone like you even survives in this world...\"\nNo \"You should be like this,\" no \"You could do better\"... only \"This is who you are.\"\nThough Sandrone's tone was always impatient, there was a recognition in it — a silent acknowledgment that this was \"who she really was.\" Columbina felt joy at being seen in this way.\n\"...What are you smirking at?\" Sandrone asked.\nColumbina shook her head.\n\"Nothing. Let's go eat together next time, Sandrone,\" she said. \"I like seeing you handle the 'reimbursements' for me.\"\n\"...What?\" It seemed her dear colleague would need some time to get used to how \"she really was\" all the same."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "On nights when the moon was full, Columbina liked to quietly leave the Silvermoon Hall and wander near the homes of the little animals. Sometimes it would be a tree hollow, at others a bird's nest. She would stand nearby, listening to the steady rhythm of their breaths while lifting her eyes to the moon above. It was as if, by doing so, she could imagine what nighttime on the moon might be like — quiet and peaceful. She hoped it was.\nOn nights like these, she pieced together dreams of what a \"home\" might be.\nWhen she once again returned to Hiisi Island, she met a certain contemporary Moonchanter. Columbina had spent much time with the Frostmoon Scions, yet she had never once seen such beautiful, enormous antlers.\n\"...Forgive my interruption,\" Canon, the goddess of the Frost Moon, interrupted. \"I thought there were quite a few with antlers among the Frostmoon Scions.\"\nColumbina explained that while it had been historically common, few were born with antlers today, and none boasted antlers as splendid as that Moonchanter's.\n\"The bloodline inevitably grew diluted, I see...\" The Frost Moon goddess sighed. \"Sorry... Please continue, Columbina Hyposelenia.\"\nAfter meeting that Moonchanter, Columbina occasionally made surreptitious visits to her home as well. She discovered, however, that the moon's tides seemed to bring some restless pain to said Moonchanter. In those moments, Columbina would try to use her own power to soothe the tides surrounding the woman. Sometimes, she would find herself humming familiar melodies, instinctively — the lullaby that had once comforted her before her birth.\n\"A lullaby from before your birth?\" This time it was Aria, goddess of the Eternal Moon, who spoke up.\nColumbina explained the melodies she had heard before being born.\nThe three goddesses shook their heads. They had no knowledge of this song.\nColumbina continued to tell them stories of the future world: From the flavors of offerings in that world, to the music in its opera houses... From a friend with a clockwork mechanism in her back, to a former angel who became her friend...\nFinally, she spoke of the Moon-Prayer Night.\nThe three moon goddesses were deeply moved by the beauty of that evening — perhaps also because Columbina herself could not help but smile as she recounted it.\n\"In our time, the gods of the heavens rarely had such profound connections with the world below,\" the goddess of the Frost Moon said.\n\"Yes. Everyone was nice to me. We even played water-ball games together.\"\n\"Unimaginable. It seems our era was far too conservative,\" the goddess of the Eternal Moon said, clearly astonished.\n\"We even stuck little stickers on each other's faces.\"\nA few soft gasps of surprise came from the three goddesses.\n\"We also exchanged food, tasting the candy in each other's hands.\"\nThe goddesses fell silent. Columbina felt glances tinted with envy pass between them.\nLong moments passed. Then Sonnet, goddess of the Iridescent Moon, finally breathed a sigh of amazement.\n\"Wow...\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Home is acceptance.\nThe Frost Moon passed through the false sky and remained in Teyvat. Columbina Hyposelenia, too, was accepted by this world. Now, it was her turn to try to accept the world in return.\nThe first thing she did was move aside the massive boulder blocking Silvermoon Hall's entrance. It had once been placed there to keep the Frostmoon Scions and the Fatui from finding her. Now, it no longer seemed necessary.\nHer friends in Nod-Krai often told her she was welcome to visit their homes. It was only right that she did the same for her friends, and for her \"family.\"\nHome is freedom.\nThere were no longer rules rejecting her existence. No places she was forbidden to go. No one coming to seize her...\nShe could go wherever she wished, do whatever she pleased.\nOf course, learning to deal with others came with its share of stumbles. Once, while strolling through Nasha Town, she nearly fell for a malicious scam and was sharply scolded by Nefer, who had to save the day. Another time, while wandering freely through Nod-Krai, she accidentally entered a restricted area of Piramida and Illuga had to politely escort her out...\nWell, being scolded, too, was part of life among family. Columbina understood that now.\nAnd of course, so was learning to correct one's mistakes.\nHome is...\nHehe, home can be many things, Columbina thought.\nIt is found in the small details of everyday life — in all the fresh, unfamiliar things she has only just begun to notice and experience.\nAnd it is something that will remain with her, always, throughout her journey in this world."
+      },
+      {
+        "Title": "An Eye Mask Woven of Moonlight",
+        "Context": "To Columbina, the world's \"truth\" is often revealed only when she closes her eyes.\nAfter sensing that the sky's great dome was nothing but a fabricated lie, she veiled her sight with gauze woven from moonlight. It was no inconvenience to her — if anything, the world perceived through kuuvahki felt clearer, more lucid than what the eyes could see. And should curiosity ever get the better of her, she could always steal a glance. After all, her eye mask had fine gaps in it.\nThe stars may lie, but the tides of gravity do not. People may conceal their expressions, but the emotional currents rising from within their hearts cannot be hidden.\nColumbina waited, intending to remove this eye mask that shut out falsehood only after she returned to that true \"home.\"\nYet after becoming the Trilune Goddess and returning to Teyvat, she remembered the words Canon, the goddess of the Frost Moon, once spoke to her. Tentatively, she began opening her eyes in daily life, discovering the world anew.\nShe discovered that the spring forests held so many colors, and that the winter snow could be so pure and luminous.\nThat the spray cast up as waves struck the shore was never the same twice, and that the lights of a city at night shimmered like a brilliant, star-filled sky...\nShe felt fortunate.\nPerhaps she should have opened her eyes sooner, she sometimes thought.\nBut then again... perhaps it was her experiences up to now that had taught her to truly see the world's beauty. If she had opened her eyes earlier, would she have only seen the lies the world hides?\nColumbina wasn't sure. Such introspective questions would take time to answer.\nIn the meantime, she decided to occasionally open her eyes and take in the beauty of this \"home.\"\nWhy not keep her eyes open all the time, then?\n\"Hmm... I've just gotten used to it, I suppose. And also,\" Columbina rubbed her eyes, \"keeping them open all the time is tiring. Is this... what they call 'eye strain'?\""
+      },
+      {
+        "Title": "Tri-Lunar Convergence",
+        "Context": "After acquiring tri-lunar authority, Columbina naturally had some questions:\nCould this power really do everything? What should she use it for?\nShe felt that the things she wanted to do were almost all within the reach of the three moons' power: Moving freely between the moon and Teyvat, effortlessly transporting herself and other objects, making flowers bloom more brilliantly, causing fruits to grow fuller...\nShe even tried to wake Sandrone up. But that was one of the few things this trilunar power could not accomplish for her.\nAs for everything else, she either didn't want to do it, or she felt that she shouldn't.\nWhat she loved was the way this world and her home looked now. Changing it at will just because she could, molding its appearance and rules to suit her own whims... She felt that would be wrong. No matter how good her intentions, doing so would make her no different from The Doctor, she felt.\nShe regarded this world as her \"home,\" not as her possession, and there was a great difference between the two.\nSo she offered a portion of her power, that it may continue to protect this beautiful home as it always had. The part she kept for herself needed only to allow her to live happily with her friends, as before, and to guard what she cherished when necessary.\nIn that moment, Columbina suddenly understood the choices her three elder sisters had made. Rather than seeking to \"rule,\" what they had wanted most was simply to \"protect\" this world beneath the moon.\nCould she say that she was their little sister, after all? The thought brought a sweet sense of harmony.\nIt felt almost like an inherited trait, or perhaps a \"family tendency\" moon goddesses had.\nA warm feeling rose in Columbina's heart at the thought. She seemed to have again discovered something she had longed for:\nThe bonds and legacy shared among family."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 212500,
+      "Name": "Moonweave Gossamer",
+      "Description": "Columbina’s outfit is a weightless, graceful raiment crafted by the Kuuhenki from Frostmoon Scion fabrics and threaded with strands of gentle moonlight. The Frostmoon Scions, not quite fully understanding what they were seeing, naturally assumed this new vestment to be yet another miracle from Kuutar. No wonder that, ever since then, Columbina would occasionally hear wishes like, \"Lady Kuutar, kindly grant me a hand as nimble as your own, I beseech you.\"",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104124,
+    113079,
+    101268,
+    112004,
+    104358,
+    113081
+  ],
+  "NameCard": {
+    "Name": "Columbina: Someday",
+    "Description": "Namecard style.\nShe dances in the shallows of clear streams and drifts with the current, falling asleep beneath the pale shadows of the mountains. She wanders through the ripples of time, playing hide-and-seek with the kuuhenki.\nShe rests in the garden of all things, humming softly to every living creature. In the quiet hours before dawn, she waits for the day of their reunion.",
+    "Icon": "UI_NameCardIcon_Columbina",
+    "PicturePrefix": "UI_NameCardPic_Columbina"
+  }
+}

@@ -24,6 +24,7 @@ using Launcher.Win32.Foundation;
 using System.Collections.Immutable;
 using System.IO;
 using System.IO.Hashing;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -92,7 +93,7 @@ internal sealed partial class YaeService
             : $"\"{gameFilePath}\" {cmdArgs}";
 
         NativeMethods.STARTUPINFOW si = default;
-        si.cb = (uint)Marshal.SizeOf<NativeMethods.STARTUPINFOW>();
+        si.cb = (uint)Unsafe.SizeOf<NativeMethods.STARTUPINFOW>();
 
         if (!NativeMethods.CreateProcessW(
             gameFilePath, fullCmdLine, nint.Zero, nint.Zero, false,
@@ -157,7 +158,7 @@ internal sealed partial class YaeService
             return false;
         }
 
-        NativeMethods.WaitForSingleObject(hThread, 10000);
+        _ = NativeMethods.WaitForSingleObject(hThread, 10000);
         NativeMethods.CloseHandle(hThread);
         NativeMethods.VirtualFreeEx(hProcess, remoteMem, 0, 0x8000);
 
@@ -259,12 +260,12 @@ internal sealed partial class YaeService
 
         public void ResumeMainThread()
         {
-            NativeMethods.ResumeThread(hThread);
+            _ = NativeMethods.ResumeThread(hThread);
         }
 
         public void WaitForExit()
         {
-            NativeMethods.WaitForSingleObject(hProcess, 0xFFFFFFFF);
+            _ = NativeMethods.WaitForSingleObject(hProcess, 0xFFFFFFFF);
         }
 
         public void Kill()

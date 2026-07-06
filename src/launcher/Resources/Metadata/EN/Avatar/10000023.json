@@ -1,0 +1,1146 @@
+{
+  "Id": 10000023,
+  "PromoteId": 23,
+  "Sort": 18,
+  "Body": 2,
+  "Icon": "UI_AvatarIcon_Xiangling",
+  "SideIcon": "UI_AvatarIcon_Side_Xiangling",
+  "Name": "Xiangling",
+  "Description": "A renowned chef from Liyue. She's extremely passionate about cooking and excels at making her signature hot and spicy dishes.",
+  "BeginTime": "2020-09-15T04:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 911.791,
+    "AttackBase": 18.87648,
+    "DefenseBase": 56.0805
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 2331,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:P}",
+            "2-Hit DMG|{param2:P}",
+            "3-Hit DMG|{param3:F1P}+{param3:F1P}",
+            "4-Hit DMG|{param4:F1P}*4",
+            "5-Hit DMG|{param5:P}",
+            "Charged Attack DMG|{param6:P}",
+            "Charged Attack Stamina Cost|{param7:F1}",
+            "Plunge DMG|{param8:F1P}",
+            "Low/High Plunge DMG|{param9:P}/{param10:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 233101,
+              "Level": 1,
+              "Parameters": [
+                0.42054,
+                0.4214,
+                0.26058,
+                0.14104,
+                0.71036,
+                1.2169,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 233102,
+              "Level": 2,
+              "Parameters": [
+                0.45477,
+                0.4557,
+                0.28179,
+                0.15252,
+                0.76818,
+                1.31595,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 233103,
+              "Level": 3,
+              "Parameters": [
+                0.489,
+                0.49,
+                0.303,
+                0.164,
+                0.826,
+                1.415,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 233104,
+              "Level": 4,
+              "Parameters": [
+                0.5379,
+                0.539,
+                0.3333,
+                0.1804,
+                0.9086,
+                1.5565,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 233105,
+              "Level": 5,
+              "Parameters": [
+                0.57213,
+                0.5733,
+                0.35451,
+                0.19188,
+                0.96642,
+                1.65555,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 233106,
+              "Level": 6,
+              "Parameters": [
+                0.61125,
+                0.6125,
+                0.37875,
+                0.205,
+                1.0325,
+                1.76875,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 233107,
+              "Level": 7,
+              "Parameters": [
+                0.66504,
+                0.6664,
+                0.41208,
+                0.22304,
+                1.12336,
+                1.9244,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 233108,
+              "Level": 8,
+              "Parameters": [
+                0.71883,
+                0.7203,
+                0.44541,
+                0.24108,
+                1.21422,
+                2.08005,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 233109,
+              "Level": 9,
+              "Parameters": [
+                0.77262,
+                0.7742,
+                0.47874,
+                0.25912,
+                1.30508,
+                2.2357,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 233110,
+              "Level": 10,
+              "Parameters": [
+                0.8313,
+                0.833,
+                0.5151,
+                0.2788,
+                1.4042,
+                2.4055,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 233111,
+              "Level": 11,
+              "Parameters": [
+                0.898537,
+                0.900375,
+                0.556762,
+                0.30135,
+                1.517775,
+                2.600062,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 233112,
+              "Level": 12,
+              "Parameters": [
+                0.977609,
+                0.979608,
+                0.605758,
+                0.327869,
+                1.651339,
+                2.828868,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 233113,
+              "Level": 13,
+              "Parameters": [
+                1.05668,
+                1.058841,
+                0.654753,
+                0.354388,
+                1.784903,
+                3.057673,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 233114,
+              "Level": 14,
+              "Parameters": [
+                1.135751,
+                1.138074,
+                0.703748,
+                0.380906,
+                1.918468,
+                3.286479,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 233115,
+              "Level": 15,
+              "Parameters": [
+                1.222011,
+                1.22451,
+                0.757197,
+                0.409836,
+                2.064174,
+                3.536085,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10231,
+        "Name": "Dough-Fu",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 2332,
+        "Proud": {
+          "Descriptions": [
+            "Flame DMG|{param1:P}",
+            "CD|{param2:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 233201,
+              "Level": 1,
+              "Parameters": [
+                1.1128,
+                12
+              ]
+            },
+            {
+              "Id": 233202,
+              "Level": 2,
+              "Parameters": [
+                1.19626,
+                12
+              ]
+            },
+            {
+              "Id": 233203,
+              "Level": 3,
+              "Parameters": [
+                1.27972,
+                12
+              ]
+            },
+            {
+              "Id": 233204,
+              "Level": 4,
+              "Parameters": [
+                1.391,
+                12
+              ]
+            },
+            {
+              "Id": 233205,
+              "Level": 5,
+              "Parameters": [
+                1.47446,
+                12
+              ]
+            },
+            {
+              "Id": 233206,
+              "Level": 6,
+              "Parameters": [
+                1.55792,
+                12
+              ]
+            },
+            {
+              "Id": 233207,
+              "Level": 7,
+              "Parameters": [
+                1.6692,
+                12
+              ]
+            },
+            {
+              "Id": 233208,
+              "Level": 8,
+              "Parameters": [
+                1.78048,
+                12
+              ]
+            },
+            {
+              "Id": 233209,
+              "Level": 9,
+              "Parameters": [
+                1.89176,
+                12
+              ]
+            },
+            {
+              "Id": 233210,
+              "Level": 10,
+              "Parameters": [
+                2.00304,
+                12
+              ]
+            },
+            {
+              "Id": 233211,
+              "Level": 11,
+              "Parameters": [
+                2.11432,
+                12
+              ]
+            },
+            {
+              "Id": 233212,
+              "Level": 12,
+              "Parameters": [
+                2.2256,
+                12
+              ]
+            },
+            {
+              "Id": 233213,
+              "Level": 13,
+              "Parameters": [
+                2.3647,
+                12
+              ]
+            },
+            {
+              "Id": 233214,
+              "Level": 14,
+              "Parameters": [
+                2.5038,
+                12
+              ]
+            },
+            {
+              "Id": 233215,
+              "Level": 15,
+              "Parameters": [
+                2.6429,
+                12
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10232,
+        "Name": "Guoba Attack",
+        "Description": "Summons Guoba, who will continuously breathe fire at opponents, dealing <color=#FF9999FF>AoE Pyro DMG</color>.\n\n<i>Guoba loves to eat spicy food. Problem is, his stomach can't handle something this spicy.</i>",
+        "Icon": "Skill_S_Xiangling_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 2339,
+      "Proud": {
+        "Descriptions": [
+          "1-Hit Swing DMG|{param1:P}",
+          "2-Hit Swing DMG|{param2:P}",
+          "3-Hit Swing DMG|{param3:P}",
+          "Pyronado DMG|{param4:P}",
+          "Duration|{param5:F1}s",
+          "CD|{param6:F1}s",
+          "Energy Cost|{param7:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 233901,
+            "Level": 1,
+            "Parameters": [
+              0.72,
+              0.88,
+              1.096,
+              1.12,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 233902,
+            "Level": 2,
+            "Parameters": [
+              0.774,
+              0.946,
+              1.1782,
+              1.204,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 233903,
+            "Level": 3,
+            "Parameters": [
+              0.828,
+              1.012,
+              1.2604,
+              1.288,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 233904,
+            "Level": 4,
+            "Parameters": [
+              0.9,
+              1.1,
+              1.37,
+              1.4,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 233905,
+            "Level": 5,
+            "Parameters": [
+              0.954,
+              1.166,
+              1.4522,
+              1.484,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 233906,
+            "Level": 6,
+            "Parameters": [
+              1.008,
+              1.232,
+              1.5344,
+              1.568,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 233907,
+            "Level": 7,
+            "Parameters": [
+              1.08,
+              1.32,
+              1.644,
+              1.68,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 233908,
+            "Level": 8,
+            "Parameters": [
+              1.152,
+              1.408,
+              1.7536,
+              1.792,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 233909,
+            "Level": 9,
+            "Parameters": [
+              1.224,
+              1.496,
+              1.8632,
+              1.904,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 233910,
+            "Level": 10,
+            "Parameters": [
+              1.296,
+              1.584,
+              1.9728,
+              2.016,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 233911,
+            "Level": 11,
+            "Parameters": [
+              1.368,
+              1.672,
+              2.0824,
+              2.128,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 233912,
+            "Level": 12,
+            "Parameters": [
+              1.44,
+              1.76,
+              2.192,
+              2.24,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 233913,
+            "Level": 13,
+            "Parameters": [
+              1.53,
+              1.87,
+              2.329,
+              2.38,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 233914,
+            "Level": 14,
+            "Parameters": [
+              1.62,
+              1.98,
+              2.466,
+              2.52,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 233915,
+            "Level": 15,
+            "Parameters": [
+              1.71,
+              2.09,
+              2.603,
+              2.66,
+              10,
+              20,
+              80
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10235,
+      "Name": "Pyronado",
+      "Description": "Displaying her mastery over both fire and polearms, Xiangling sends a Pyronado whirling around her.\nThe Pyronado will move with your character for the ability's duration, dealing <color=#FF9999FF>Pyro DMG</color> to all opponents in its path.\n\n<i>There will never be enough heat. Never.</i>",
+      "Icon": "Skill_E_Xiangling_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 2321,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 232101,
+              "Level": 1,
+              "Parameters": [
+                0.2
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 232101,
+        "Name": "Crossfire",
+        "Description": "Increases the flame range of Guoba by 20%.",
+        "Icon": "UI_Talent_S_Xiangling_05"
+      },
+      {
+        "GroupId": 2322,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 232201,
+              "Level": 1,
+              "Parameters": [
+                0.1,
+                10
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 232201,
+        "Name": "Beware, It's Super Hot!",
+        "Description": "When <color=#FFD780FF>Guoba Attack</color>'s effect ends, Guoba leaves a chili pepper on the spot where it disappeared. Picking up a chili pepper increases ATK by 10% for 10s.",
+        "Icon": "UI_Talent_S_Xiangling_06"
+      },
+      {
+        "GroupId": 2323,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 232301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 232301,
+        "Name": "Chef de Cuisine",
+        "Description": "When Xiangling cooks an ATK-boosting dish perfectly, she has a 12% chance to receive double the product.",
+        "Icon": "UI_Talent_Cook_Attack"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 231,
+        "Name": "Crispy Outside, Tender Inside",
+        "Description": "Opponents hit by Guoba's attacks have their <color=#FF9999FF>Pyro RES</color> reduced by 15% for 6s.",
+        "Icon": "UI_Talent_S_Xiangling_01"
+      },
+      {
+        "Id": 232,
+        "Name": "Oil Meets Fire",
+        "Description": "The last attack in a Normal Attack sequence applies the Implode status onto the opponent for 2s. An explosion will occur once this duration ends, dealing 75% of Xiangling's ATK as <color=#FF9999FF>AoE Pyro DMG</color>.",
+        "Icon": "UI_Talent_S_Xiangling_02"
+      },
+      {
+        "Id": 233,
+        "Name": "Deepfry",
+        "Description": "Increases the Level of <color=#FFD780FF>Pyronado</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Xiangling_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 234,
+        "Name": "Slowbake",
+        "Description": "<color=#FFD780FF>Pyronado</color>'s duration is increased by 40%.",
+        "Icon": "UI_Talent_S_Xiangling_03"
+      },
+      {
+        "Id": 235,
+        "Name": "Guoba Mad",
+        "Description": "Increases the Level of <color=#FFD780FF>Guoba Attack</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Xiangling_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 236,
+        "Name": "Condensed Pyronado",
+        "Description": "For the duration of <color=#FFD780FF>Pyronado</color>, all party members receive a 15% <color=#FF9999FF>Pyro DMG Bonus</color>.",
+        "Icon": "UI_Talent_S_Xiangling_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Exquisite Delicacy",
+    "Detail": "A renowned chef from Liyue. She's extremely passionate about cooking and excels at making her signature hot and spicy dishes.",
+    "Association": 2,
+    "Native": "Wanmin Restaurant",
+    "BirthMonth": 11,
+    "BirthDay": 2,
+    "VisionBefore": "Pyro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Trulla",
+    "CvChinese": "小N",
+    "CvJapanese": "小澤亜李",
+    "CvEnglish": "Jackie Lastra",
+    "CvKorean": "Yoon Ah-young",
+    "CookBonus": {
+      "OriginItemId": 108075,
+      "ItemId": 108135,
+      "InputList": [
+        100084,
+        100027,
+        100075,
+        100034
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Hello, nice to meet you! My name is Xiangling, I'm a chef from Liyue! My favorite place is the chicken... I mean, the kitchen! Ugh, I practiced so hard, but I still get nervous when introducing myself... Heh."
+      },
+      {
+        "Title": "Chat: Snacks",
+        "Context": "Is there time for a quick snack? I'll whip one up in no time!"
+      },
+      {
+        "Title": "Chat: Pyro Slime",
+        "Context": "I can't decide whether Pyro slimes taste better with salt and pepper or garlic and herbs..."
+      },
+      {
+        "Title": "Chat: Looking for Food",
+        "Context": "If there's nothing better to do, we could go foraging for ingredients..."
+      },
+      {
+        "Title": "When It Rains: Attitude",
+        "Context": "Oh... I don't like the rain."
+      },
+      {
+        "Title": "When It Rains: Negligence",
+        "Context": "Wait... did I leave my apron outside to dry?"
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "The rain has stopped! Come with me, let's pick some matsutake."
+      },
+      {
+        "Title": "When It's Windy",
+        "Context": "Anemo Slimes always come out in this weather. If you catch some, I'll make you a Slime Slushie!"
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Perfect timing! Wanna get a few cooking supplies?"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Lunch is ready! Come and get it while it lasts! *munching*"
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "You're just in time for a midnight snack! I made some barbecued lizard skewers. Well, don't just stand there — dig in!"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Hey! You're not sneaking off to get a midnight snack without me, are you? ...Bedtime? Oh. Well, good night then!"
+      },
+      {
+        "Title": "About Xiangling",
+        "Context": "You've seen the dragon in Mondstadt? How big was it? What!? No way! Imagine how big a steak a dragon that huge would make!"
+      },
+      {
+        "Title": "About Us: Strengths",
+        "Context": "I'm much better at cooking than navigating... but if you do go out, definitely take me with you!"
+      },
+      {
+        "Title": "About Us: New Knowledge",
+        "Context": "Meeting you has really opened my eyes to things other than cooking. Like what? Well, such as... um... for example... I can't think when you put me on the spot! Forget it, I'll stick to cooking from now on. I have a new recipe for you to try, actually..."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "Any time, night or day, I am always willing to make dishes everyone loves. I think the Archons agree with my passion, or else they wouldn't have given me this Vision, something even my master doesn't have... I know they want me to keep going!"
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "If you get a stomach ache, a cup of herbal tea with Silk Flowers will clear it up in no time! Huh? Of course you can trust my herbal remedies! We chefs are expected to know a thing or two about medicine as well, you know!"
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "I love onions! I've tried cutting them dozens of ways, and they still make me cry... No matter, I still love them!"
+      },
+      {
+        "Title": "About Baizhu",
+        "Context": "I can smell Mist Grass! It must be Dr. Baizhu! What is he doing here? *Shocked* Are you OK? Do you feel faint? Is your stomach sore? Or is it a sore throat? I've got it, you're fatigued from all that adventuring! No?... You're fine? Phew! Otherwise, he would've made you drink some traditional herbal medicine — it's so bitter!"
+      },
+      {
+        "Title": "About Ningguang",
+        "Context": "That was the Tianquan! Did you see? She just walked past. Come here... closer... Let me tell you, she knows everything that happens in Liyue, so... keep a low profile, don't attract her attention!"
+      },
+      {
+        "Title": "About Hu Tao",
+        "Context": "Is Hu Tao picking on you too? Ugh, that prankster always waits till I least expect it, creeps up on me from behind and then... Boo! ...then laughs herself silly. Hmph. But I can handle it, and she does bring me fermented plum blossoms once in a while so I can make flower cakes... so I don't hold a grudge."
+      },
+      {
+        "Title": "About Diona",
+        "Context": "Diona, from Springvale! Ah, I heard she mixes a great drink, so I came specifically to see her! I thought perhaps I could use her secrets in my cooking, and bring out more flavors. But the tips that she gave me — like soaking lizard tails in beer, or putting bits of smoked fish in dandelion wine — all came out really awful. *sigh* Guess it's up to me to work it out myself, then."
+      },
+      {
+        "Title": "About Beidou",
+        "Context": "Oh, Beidou is the greatest! Every time I go out sailing with her, she always manages to fish up lots of fresh ingredients! Octopus tentacles go great in soup, and seaweed fries up great with some chilis. Not just Beidou, but everyone on board The Crux loves my cooking."
+      },
+      {
+        "Title": "About Zhongli",
+        "Context": "I've come across a lot of fussy eaters, but Mr. Zhongli is very particular and has no problem getting straight to what he has to say. The first time I served him salt and pepper tofu, he took just one bite, and then proceeded to say: \"It would be better to try sea salt extracted from the shallow seas of Guyun Stone Forest, because it would bring a fresh sense of depth to the tofu.\" I tried it and the taste was just so different! He's just amazing, don't you think!?"
+      },
+      {
+        "Title": "About Chongyun",
+        "Context": "Chongyun? I always see him on his way to eat at Wanmin Restaurant with Xingqiu... Ah... or perhaps I should say I see him being dragged there by Xingqiu? Chongyun doesn't eat hot food. Every time the hot food arrives, Xingqiu politely apologizes and proceeds to try every dish. I just wanna dig in with him! The look on Chongyun's face is priceless. They're quite interesting, those two."
+      },
+      {
+        "Title": "About Ganyu",
+        "Context": "Ganyu? Oh... Oh yeah! I remember her — vegetarian, right? She doesn't come to the Wanmin Restaurant very often — but when she does, she sits alone in the corner and eats her meal in total silence. Poor girl, she seems kinda lonely... I always give her an extra-large portion because I feel sorry for her. Funniest thing is, she eats every last bite, every time! I wouldn't have guessed she had such an appetite just by looking at her."
+      },
+      {
+        "Title": "About Yaoyao",
+        "Context": "Hee-hee, I'm proud to call her my junior! She hasn't swung by the Wanmin Restaurant in ages, though. Maybe master is trying to protect her from me or something... Last time we hung out, I was about to dig into some fresh raw octopus from the Sea of Clouds, but not only did she stop me from eating it, she sent master to tell me off too! Ugh... Honestly, sometimes it feels like I'm the one who gets treated like the junior..."
+      },
+      {
+        "Title": "About Xinyan",
+        "Context": "Xinyan always comes to the Wanmin Restaurant for a late-night snack! She gobbles up all the new dishes that the likes of Xingqiu and Chongyun don't go near... and nine times out of ten, she enjoys them too! She's great."
+      },
+      {
+        "Title": "About Yelan",
+        "Context": "Yelan? Of course, I remember her! When I first met her, I was certain she'd be the kind of gal who'd prefer lighter dishes... turned out that she can handle the most spice out of all my customers! Apparently, my dishes weren't spicy enough for her, because she started taking bites of raw Jueyun Chilis! Truly amazing."
+      },
+      {
+        "Title": "About Gaming",
+        "Context": "Oh boy, once I know Gaming is coming, I make sure to prepare a huge pot of tea in advance. You know, so he can wash some of the spicy food down. I've offered to tone down the spice a bit for him, but he absolutely insists that he prefers the authentic flavor... And he's not even just saying that to be polite. Believe me, I know a true foodie when I see one! Anyway, if that's what he prefers, then who am I to disappoint, hehe!"
+      },
+      {
+        "Title": "About Lan Yan",
+        "Context": "Guoba loves Lan Yan! They spent soooooo long shaking hands when they first met, it was like they'd known each other forever, haha. Lan Yan actually promised to take me foraging for wild mushrooms and insects... Hehe, once my new dish is ready, you've gotta come try it!"
+      },
+      {
+        "Title": "About Escoffier",
+        "Context": "Oh! You mean that chef from Fontaine, right? She's great! I got to try a bunch of her new dishes the other day. They were all so... what's the word... precise! It was like she took all the flavors and ingredients in her dishes and transformed them into art! I was amazed at how meticulous everything was — every measurement, every technique executed to perfection! I kinda want Shenhe to ask Aunty Xianyun to make me a precision cooking machine of my own, so I can try out Escoffier's style of cooking!"
+      },
+      {
+        "Title": "More About Xiangling: I",
+        "Context": "Roasted pigeon skewers, anyone? C'mon, it's my secret recipe, you'll love it!"
+      },
+      {
+        "Title": "More About Xiangling: II",
+        "Context": "My master did a good job teaching me spear fighting, don't you think? If you want, I could teach you too. Although... I'd much rather teach you my cooking, if you're interested! I want my recipes to spread all around Teyvat!"
+      },
+      {
+        "Title": "More About Xiangling: III",
+        "Context": "My heart's desire? To start my very own cooking tradition, of course! Li-style and Yue-style cooking are good, but they have a limited palate. The missing ingredient? Chili pepper! Come, let me fry up one of Guoba's chili peppers for you..."
+      },
+      {
+        "Title": "More About Xiangling: IV",
+        "Context": "I think I've won you over with my cooking now, right? It's time to introduce you to my latest masterpiece — I call it the \"most marvelous multi-colored super pancake\"! Bright red squirrel ham, orange carrot, yellow sunfrog meat, green calla lily and blue butterfly wings, beautifully wrapped in a thin egg pancake— What? I thought you said you were starving! *sigh* Okay."
+      },
+      {
+        "Title": "More About Xiangling: V",
+        "Context": "I'm in a dilemma and I don't know how to solve it... It isn't like me to get so worked up over nothing... Ah! Well, here's the thing. I always love getting you to try my latest recipes, but... I'm worried that my food might not agree with your stomach and... I can't bear the thought of that happening. What should I do?"
+      },
+      {
+        "Title": "Xiangling's Hobbies",
+        "Context": "Watch carefully! Heat the oil in a pan, then take a handful of crystalflies — wings removed — pop them in, and voila! Delicious deep-fried crystal— Hey! Where are you going?"
+      },
+      {
+        "Title": "Xiangling's Troubles",
+        "Context": "It's been a month and I still haven't sold a single bowl of Mushroom Slime Stew. Gee, is it just because it looks sticky and gooey? It's their loss if they don't have a spoonful..."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "My favorite thing to eat is... whatever exotic ingredient I haven't tried yet! No, I'm not dodging the question, that's my honest answer!"
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I'll eat absolutely anything! There are no bad ingredients, only bad cooking!"
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Mmm... wow! I know this taste, it's... boom shaka-laka!"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "I gotta admit, you're really good at cooking. Next time, it's my turn to show you a thing or two."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Are you sure you followed the recipe? Something is definitely off here..."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Ah, there you are! Come with me, I've prepared a birthday feast all for you! ... No really, I insist! Which dish is your favorite? It's okay, take your time, try them all first, then let me know!"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Oh wow! This feels great! My whole body is bursting with energy!"
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Hey! Ha! Hua! I can slay a beast with one punch, locking in that freshness!"
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Finally... with this power, I can cook... *giggle* ...Oh no, I've started salivating!"
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "As my father always says: \"To make a five-star dish, you need ten-star passion!\" I know, I know! To be able to come this far is definitely thanks to your ten-star passion when it comes to practicing with me, so I'll be sure to pay you back with two— no, three times the passion!"
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Guoba, get them!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Nice and spicy!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Out of the frying pan, into the fire!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Hey... Yah!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "You're toast!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Eat this!"
+      },
+      {
+        "Title": "Sprint Start: I",
+        "Context": "Race you!"
+      },
+      {
+        "Title": "Sprint End: I",
+        "Context": "Now I've got stomach cramps..."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Open sesame! Oh, now I'm hungry..."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "What a bountiful harvest!"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "None of this will go to waste!"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "No ingredients for me today..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Ow! Oh..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Now I'm really in a pickle!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Take a snack break!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Scramble!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Dinner's gonna burn..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Water..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "No... Did I ruin everything?"
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Don't hit me..."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Help! My dinner is attacking me!"
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "That really hurt!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "I'll bring my seasonings!"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Just sharpened my spear!"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "I can't wait any longer!"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "\"Coming, coming! Here's your Stir-Fried Filet! And your Mora Meat. And Fried Radish Balls, as you ordered.\"\nIn Liyue, there's a place called Chihu Rock, and there stands a restaurant known as Wanmin Restaurant.\nOne must remain focused if they want to keep moving forward on the bustling streets of Liyue.\nUnsuspecting newcomers to this place are often lured away by wonderful culinary aromas or lead to peek inside stores by curious sounds.\nXiangling, who is both chef and waitress at the restaurant, delivers steaming, delicious dishes to the tables.\n\"Sit anywhere you'd like. I can make whatever you want, even if it's not on the menu!\"\nThe workers at Wanmin Restaurant can recognize a regular, if not by their face, then by the first sentence out of their mouths.\nA customer that orders without needing a menu has been at least a few times before. However, if they ask \"Is Xiangling the chef today?\" then they're definitely a regular."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Xiangling has destroyed many a wok in her time. Either the insides would become irreversibly charred from the heat of a Pyro Slime, or cracks would appear due to flash-freezing from a Mist Flower — or, at some step in Xiangling's unconventional cooking process, a small-scale explosion would reduce it to scrap metal. After some heavy consideration on the part of Xiangling's father, he ultimately decided not to banish his daughter from the kitchen, despite the destruction she caused.\nAs reckless, imaginative, and uninhibited as she may be, it was exactly these traits that led her to create her most successful dishes. \"Maybe this isn't so bad...\" He tried to convince himself.\nSuffice to say that payment for a new wok is a regular feature of the restaurant's monthly ledger."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "\"There are many secrets to cooking; the most important of which is passion.\"\nWhen Xiangling decided to learn to be a chef, her father handed her his own handwritten cooking journal, his life's work. That line was written on the title page.\nIf she was any other person, she would likely have regarded it as some cheesy inspirational quote. However, Xiangling regarded it as a priceless treasure.\nTo her, her father only secured his footing in the forever-ongoing war between the Li and Yue cuisines by upholding that principle.\nHowever, at that time, the conflict between the two styles was white-hot, with many restaurants feeling the pressure that arose from it. Wanmin Restaurant was no exception.\n\"Good food is good food, period!\"\nThe monopoly on luxurious ingredients such as matsutake and crabs infuriated Xiangling, her angry response to which was to take over in the kitchen.\nIt was time for her to build upon the foundation her father gave her and make some changes.\n\"I'm gonna make super-delicious dishes out of any ingredient!\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Xiangling's liveliness is disastrous for the hilichurls of Jueyun Karst. They one day awoke to find their fighting clubs gone.\nOf course, the flora in Dihua Marsh did not fare any better.\nAfter all the work she put in, she finally created some new recipes, such as Hilichurl Club BBQ Fish and Horsetail Sticky Rice and Meat...\nShe'd never create anything new if she just stuck to the recipes of her predecessors.\nOne must break with common conception if they are to carve their own path.\nWhen Xiangling finally created her crowning achievement, the Chef's Special Cold-Dressed Fowl, her father paid the price, needing to resort to simple white congee for two days following.\n\"Mint and Qingxin Flower seem to induce diarrhea...\"\nShe learned a valuable experience to add to her journal.\nStrange. She ate her own dishes, but nothing ever happened to her. Xiangling did feel guilty though.\nMaybe it was because she was young and healthy, or had somehow built up a resistance to certain toxins... One may never know."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Whenever a customer asks what exactly was the perplexing creature that follows Xiangling around is, she tells them the story:\nThere was a sudden downpour one day when Xiangling was on her way to fetch some Violetgrass. Halfway there, she was already tired and hungry. She stumbled into a cave, and came across a strange shrine.\nSo she sat down by the shrine, and took out two pieces of spicy cornbread.\nShe gobbled down one, but left the other one on the shrine, intending to eat a little later, but then promptly fell asleep.\nWhen she woke up, the other spicy cornbread was gone and a mysterious creature was sitting in front of her, staring.\n\"Was it good?\"\nIt nodded.\n\"More?\" She took out some jerky from her backpack.\nThe mysterious creature nodded once again.\nThis was how Xiangling made a new friend. It seemed to be drawn to Xiangling's cooking, as the creature started following Xiangling around wherever she went.\nXiangling named it \"Guoba,\" after her favorite childhood snack."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "After sampling every dish there was in Liyue, Xiangling's culinary skills drastically improved. Her specialty spicy dishes earned the praise of even her father, a veteran chef with over two decades of experience.\nShe created her unique and complex flavor profile through a generous helping of chili peppers mixed with fruits and herbs for increased aroma. She also created what became the signature dish of Wanmin Restaurant: Black-Back Perch Stew, which combines the richness, color and strong flavors of Li cuisine with the fresh aromas and nutritional content of Yue cuisine.\nSome have tried to copy her recipes, but try as they might they can never quite reproduce the way her cooking tastes.\n\"Braise fresh Violetgrass overnight. Dry, then grind to a fine powder. Sprinkle into any dish for an aromatic boost.\"\nThis is one of Xiangling's secret recipes, arrived at through a painstaking process of trial and error.\nIn Xiangling's case, that means countless bouts of diarrhea, countless bruised knees bashed on rocky cliffs, and countless wasted potfuls of food that didn't quite turn out as expected."
+      },
+      {
+        "Title": "Xiangling's Map",
+        "Context": "This map of Teyvat is lined with dense notations in various colors, and if you read closely, you can find the places where Xiangling has been, and where she intends to go in future.\n\"The shellfish of the shallows around Guyun Stone Forest are unmatched in their freshness. They say that 'here be sea monsters'?\"\n\"Sea monster meat tastes great. Should look for Beidou to go fight another one. Will steaming them with eggs make them taste better?\"\n\"There's a dragon in Mondstadt? Great! I just need three days of provisions to get there.\"\n\"Valberries are sweet. Lots here. I'll bring a basket. Take some back. See if they'll grow.\"\n\"This Mondstadt restaurant's Sautéed Matsutake is way too luxurious! They should just sell the matsutake. Ooh, what if I fry some with Jueyun Chili? Sounds good already. Might as well borrow a kitchen tomorrow and give it a go.\"\n\"Haven't found the dragon yet. Am I in the right place?\"\n..."
+      },
+      {
+        "Title": "Vision",
+        "Context": "\"You can make something super delicious out of any kind of ingredient.\"\nXiangling earned the approval of a Vision by shouldering this ideal in a wholehearted and unreserved manner. Even when she would make dishes that could be called \"horrifying,\" her desire to keep trying to match ingredients would never waver.\n\"Ugh... Qingxin Fried Lizard is actually kinda bad. I think lizards should just be stone-grilled in future.\"\n\"Slime fried rice is also rather ordinary. Maybe we'll try putting mushrooms in a slime jus next time.\"\nThough her friends fell around her during the epic battles with the taste of her dishes and advised her to turn back, Xiangling never stopped thinking about how to turn these \"special\" ingredients into delicious food.\nIn Xiangling's innocent and persistent heart, as long as they were not poisonous, there were no good or bad ingredients.\nHer Vision, after all, proves that even the gods approve of such thinking."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 202301,
+      "Name": "New Year's Cheer",
+      "Description": "Xiangling's outfit. The red coat glows like a stove amidst cold winds, topped with a hat that, at Hu Tao's suggestion, took inspiration from Guoba's appearance — a design that's right up Xiangling's alley.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_XianglingCostumeWinter",
+      "SideIcon": "UI_AvatarIcon_Side_XianglingCostumeWinter"
+    },
+    {
+      "Id": 202300,
+      "Name": "Red Pepper and Turmeric",
+      "Description": "Xiangling's outfit. Light and comfortable clothing brimming with fiery passion.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104114,
+    113011,
+    100027,
+    112004,
+    104315,
+    113004
+  ],
+  "NameCard": {
+    "Name": "Xiangling: Fresh from the Pan",
+    "Description": "Namecard style.\nTry saying this three times fast: \"Guoba sears sea snails by Liyue's sea shore.\"",
+    "Icon": "UI_NameCardIcon_Xiangling",
+    "PicturePrefix": "UI_NameCardPic_Xiangling"
+  }
+}

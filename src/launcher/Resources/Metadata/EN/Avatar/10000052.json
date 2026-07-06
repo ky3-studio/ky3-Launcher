@@ -1,0 +1,1439 @@
+{
+  "Id": 10000052,
+  "PromoteId": 52,
+  "Sort": 39,
+  "Body": 3,
+  "Icon": "UI_AvatarIcon_Shougun",
+  "SideIcon": "UI_AvatarIcon_Side_Shougun",
+  "Name": "Raiden Shogun",
+  "Description": "Her Excellency, the Almighty Narukami Ogosho, who promised the people of Inazuma an unchanging Eternity.",
+  "BeginTime": "2021-09-01T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 1004.79926,
+    "AttackBase": 26.2542,
+    "DefenseBase": 61.44541
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 5231,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "4-Hit DMG|{param4:F1P}+{param5:F1P}",
+            "5-Hit DMG|{param6:F1P}",
+            "Charged Attack DMG|{param7:F1P}",
+            "Charged Attack Stamina Cost|{param8:F1}",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 523101,
+              "Level": 1,
+              "Parameters": [
+                0.39646,
+                0.39732,
+                0.4988,
+                0.28982,
+                0.28982,
+                0.65446,
+                0.99588,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 523102,
+              "Level": 2,
+              "Parameters": [
+                0.42873,
+                0.42966,
+                0.5394,
+                0.31341,
+                0.31341,
+                0.70773,
+                1.07694,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 523103,
+              "Level": 3,
+              "Parameters": [
+                0.461,
+                0.462,
+                0.58,
+                0.337,
+                0.337,
+                0.761,
+                1.158,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 523104,
+              "Level": 4,
+              "Parameters": [
+                0.5071,
+                0.5082,
+                0.638,
+                0.3707,
+                0.3707,
+                0.8371,
+                1.2738,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 523105,
+              "Level": 5,
+              "Parameters": [
+                0.53937,
+                0.54054,
+                0.6786,
+                0.39429,
+                0.39429,
+                0.89037,
+                1.35486,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 523106,
+              "Level": 6,
+              "Parameters": [
+                0.57625,
+                0.5775,
+                0.725,
+                0.42125,
+                0.42125,
+                0.95125,
+                1.4475,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 523107,
+              "Level": 7,
+              "Parameters": [
+                0.62696,
+                0.62832,
+                0.7888,
+                0.45832,
+                0.45832,
+                1.03496,
+                1.57488,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 523108,
+              "Level": 8,
+              "Parameters": [
+                0.67767,
+                0.67914,
+                0.8526,
+                0.49539,
+                0.49539,
+                1.11867,
+                1.70226,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 523109,
+              "Level": 9,
+              "Parameters": [
+                0.72838,
+                0.72996,
+                0.9164,
+                0.53246,
+                0.53246,
+                1.20238,
+                1.82964,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 523110,
+              "Level": 10,
+              "Parameters": [
+                0.7837,
+                0.7854,
+                0.986,
+                0.5729,
+                0.5729,
+                1.2937,
+                1.9686,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 523111,
+              "Level": 11,
+              "Parameters": [
+                0.847087,
+                0.848925,
+                1.06575,
+                0.619237,
+                0.619237,
+                1.398338,
+                2.127825,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 523112,
+              "Level": 12,
+              "Parameters": [
+                0.921631,
+                0.92363,
+                1.159536,
+                0.67373,
+                0.67373,
+                1.521391,
+                2.315074,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 523113,
+              "Level": 13,
+              "Parameters": [
+                0.996175,
+                0.998336,
+                1.253322,
+                0.728223,
+                0.728223,
+                1.644445,
+                2.502322,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 523114,
+              "Level": 14,
+              "Parameters": [
+                1.070719,
+                1.073041,
+                1.347108,
+                0.782716,
+                0.782716,
+                1.767499,
+                2.689571,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 523115,
+              "Level": 15,
+              "Parameters": [
+                1.152039,
+                1.154538,
+                1.44942,
+                0.842163,
+                0.842163,
+                1.901739,
+                2.893842,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10521,
+        "Name": "Origin",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to perform an upward slash.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 5232,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:F1P}",
+            "Coordinated ATK DMG|{param2:F1P}",
+            "Duration|{param3:F1}s",
+            "Elemental Burst DMG Bonus|{param4:F2P} Per Energy",
+            "CD|{param5:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 523201,
+              "Level": 1,
+              "Parameters": [
+                1.172,
+                0.42,
+                25,
+                0.0022,
+                10
+              ]
+            },
+            {
+              "Id": 523202,
+              "Level": 2,
+              "Parameters": [
+                1.2599,
+                0.4515,
+                25,
+                0.0023,
+                10
+              ]
+            },
+            {
+              "Id": 523203,
+              "Level": 3,
+              "Parameters": [
+                1.3478,
+                0.483,
+                25,
+                0.0024,
+                10
+              ]
+            },
+            {
+              "Id": 523204,
+              "Level": 4,
+              "Parameters": [
+                1.465,
+                0.525,
+                25,
+                0.0025,
+                10
+              ]
+            },
+            {
+              "Id": 523205,
+              "Level": 5,
+              "Parameters": [
+                1.5529,
+                0.5565,
+                25,
+                0.0026,
+                10
+              ]
+            },
+            {
+              "Id": 523206,
+              "Level": 6,
+              "Parameters": [
+                1.6408,
+                0.588,
+                25,
+                0.0027,
+                10
+              ]
+            },
+            {
+              "Id": 523207,
+              "Level": 7,
+              "Parameters": [
+                1.758,
+                0.63,
+                25,
+                0.0028,
+                10
+              ]
+            },
+            {
+              "Id": 523208,
+              "Level": 8,
+              "Parameters": [
+                1.8752,
+                0.672,
+                25,
+                0.0029,
+                10
+              ]
+            },
+            {
+              "Id": 523209,
+              "Level": 9,
+              "Parameters": [
+                1.9924,
+                0.714,
+                25,
+                0.003,
+                10
+              ]
+            },
+            {
+              "Id": 523210,
+              "Level": 10,
+              "Parameters": [
+                2.1096,
+                0.756,
+                25,
+                0.003,
+                10
+              ]
+            },
+            {
+              "Id": 523211,
+              "Level": 11,
+              "Parameters": [
+                2.2268,
+                0.798,
+                25,
+                0.003,
+                10
+              ]
+            },
+            {
+              "Id": 523212,
+              "Level": 12,
+              "Parameters": [
+                2.344,
+                0.84,
+                25,
+                0.003,
+                10
+              ]
+            },
+            {
+              "Id": 523213,
+              "Level": 13,
+              "Parameters": [
+                2.4905,
+                0.8925,
+                25,
+                0.003,
+                10
+              ]
+            },
+            {
+              "Id": 523214,
+              "Level": 14,
+              "Parameters": [
+                2.637,
+                0.945,
+                25,
+                0.003,
+                10
+              ]
+            },
+            {
+              "Id": 523215,
+              "Level": 15,
+              "Parameters": [
+                2.7835,
+                0.9975,
+                25,
+                0.003,
+                10
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10522,
+        "Name": "Transcendence: Baleful Omen",
+        "Description": "The Raiden Shogun unveils a shard of her Euthymia, dealing <color=#FFACFFFF>Electro DMG</color> to nearby opponents, and granting nearby party members the Eye of Stormy Judgment.\n\n<color=#FFD780FF>Eye of Stormy Judgment</color>\n·When characters with this buff attack and deal DMG to opponents, the Eye will unleash a coordinated attack, dealing <color=#FFACFFFF>AoE Electro DMG</color> at the opponent's position.\n·Characters who gain the Eye of Stormy Judgment will have their Elemental Burst DMG increased based on the Energy Cost of the Elemental Burst during the Eye's duration.\n\nThe Eye can initiate one coordinated attack every 0.9s per party.\nCoordinated attacks generated by characters not controlled by you deal 20% of the normal DMG.\n\n<i>Beings of great divinity might affect all that they survey, and the Electro Archon can manipulate the very inauspicious stars themselves to defend her retainers and bring a thundering sentence down on their foes.</i>",
+        "Icon": "Skill_S_Shougun_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 5239,
+      "Proud": {
+        "Descriptions": [
+          "Musou no Hitotachi Base DMG|{param1:P}",
+          "Resolve Bonus|{param2:F2P} Initial/{param3:F2P} ATK DMG Per Stack",
+          "Resolve Stacks Gained|{param4:F2} Per Energy Consumed",
+          "1-Hit DMG|{param5:F1P}",
+          "2-Hit DMG|{param6:F1P}",
+          "3-Hit DMG|{param7:F1P}",
+          "4-Hit DMG|{param8:F1P}+{param9:F1P}",
+          "5-Hit DMG|{param10:F1P}",
+          "Charged Attack DMG|{param11:F1P}+{param12:F1P}",
+          "Charged Attack Stamina Cost|{param13:F1}",
+          "Plunge DMG|{param14:F1P}",
+          "Low/High Plunge DMG|{param15:P}/{param16:P}",
+          "Musou Isshin Energy Restoration|{param17:F1}",
+          "Musou Isshin Duration|{param18:F1}s",
+          "CD|{param19:F1}s",
+          "Energy Cost|{param20:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 523901,
+            "Level": 1,
+            "Parameters": [
+              4.008,
+              0.03888,
+              0.007262,
+              0.15,
+              0.447374,
+              0.43956,
+              0.538217,
+              0.30888,
+              0.30976,
+              0.739438,
+              0.616,
+              0.7436,
+              20,
+              0.639324,
+              1.278377,
+              1.596762,
+              1.6,
+              7,
+              18,
+              90
+            ]
+          },
+          {
+            "Id": 523902,
+            "Level": 2,
+            "Parameters": [
+              4.3086,
+              0.041796,
+              0.007806,
+              0.16,
+              0.477877,
+              0.46953,
+              0.574913,
+              0.32994,
+              0.33088,
+              0.789854,
+              0.658,
+              0.7943,
+              20,
+              0.691362,
+              1.382431,
+              1.726731,
+              1.7,
+              7,
+              18,
+              90
+            ]
+          },
+          {
+            "Id": 523903,
+            "Level": 3,
+            "Parameters": [
+              4.6092,
+              0.044712,
+              0.008351,
+              0.16,
+              0.50838,
+              0.4995,
+              0.61161,
+              0.351,
+              0.352,
+              0.84027,
+              0.7,
+              0.845,
+              20,
+              0.7434,
+              1.486485,
+              1.8567,
+              1.8,
+              7,
+              18,
+              90
+            ]
+          },
+          {
+            "Id": 523904,
+            "Level": 4,
+            "Parameters": [
+              5.01,
+              0.0486,
+              0.009077,
+              0.17,
+              0.54905,
+              0.53946,
+              0.660539,
+              0.37908,
+              0.38016,
+              0.907492,
+              0.756,
+              0.9126,
+              20,
+              0.81774,
+              1.635134,
+              2.04237,
+              1.9,
+              7,
+              18,
+              90
+            ]
+          },
+          {
+            "Id": 523905,
+            "Level": 5,
+            "Parameters": [
+              5.3106,
+              0.051516,
+              0.009622,
+              0.17,
+              0.579553,
+              0.56943,
+              0.697235,
+              0.40014,
+              0.40128,
+              0.957908,
+              0.798,
+              0.9633,
+              20,
+              0.869778,
+              1.739187,
+              2.172339,
+              2,
+              7,
+              18,
+              90
+            ]
+          },
+          {
+            "Id": 523906,
+            "Level": 6,
+            "Parameters": [
+              5.6112,
+              0.054432,
+              0.010166,
+              0.18,
+              0.61514,
+              0.604395,
+              0.740048,
+              0.42471,
+              0.42592,
+              1.016727,
+              0.847,
+              1.02245,
+              20,
+              0.92925,
+              1.858106,
+              2.320875,
+              2.1,
+              7,
+              18,
+              90
+            ]
+          },
+          {
+            "Id": 523907,
+            "Level": 7,
+            "Parameters": [
+              6.012,
+              0.05832,
+              0.010892,
+              0.18,
+              0.660894,
+              0.64935,
+              0.795093,
+              0.4563,
+              0.4576,
+              1.092351,
+              0.91,
+              1.0985,
+              20,
+              1.011024,
+              2.02162,
+              2.525112,
+              2.2,
+              7,
+              18,
+              90
+            ]
+          },
+          {
+            "Id": 523908,
+            "Level": 8,
+            "Parameters": [
+              6.4128,
+              0.062208,
+              0.011619,
+              0.19,
+              0.706648,
+              0.694305,
+              0.850138,
+              0.48789,
+              0.48928,
+              1.167975,
+              0.973,
+              1.17455,
+              20,
+              1.092798,
+              2.185133,
+              2.729349,
+              2.3,
+              7,
+              18,
+              90
+            ]
+          },
+          {
+            "Id": 523909,
+            "Level": 9,
+            "Parameters": [
+              6.8136,
+              0.066096,
+              0.012345,
+              0.19,
+              0.752402,
+              0.73926,
+              0.905183,
+              0.51948,
+              0.52096,
+              1.2436,
+              1.036,
+              1.2506,
+              20,
+              1.174572,
+              2.348646,
+              2.933586,
+              2.4,
+              7,
+              18,
+              90
+            ]
+          },
+          {
+            "Id": 523910,
+            "Level": 10,
+            "Parameters": [
+              7.2144,
+              0.069984,
+              0.013071,
+              0.2,
+              0.798157,
+              0.784215,
+              0.960228,
+              0.55107,
+              0.55264,
+              1.319224,
+              1.099,
+              1.32665,
+              20,
+              1.26378,
+              2.527025,
+              3.15639,
+              2.5,
+              7,
+              18,
+              90
+            ]
+          },
+          {
+            "Id": 523911,
+            "Level": 11,
+            "Parameters": [
+              7.6152,
+              0.073872,
+              0.013797,
+              0.2,
+              0.843911,
+              0.82917,
+              1.015273,
+              0.58266,
+              0.58432,
+              1.394848,
+              1.162,
+              1.4027,
+              20,
+              1.352988,
+              2.705403,
+              3.379194,
+              2.5,
+              7,
+              18,
+              90
+            ]
+          },
+          {
+            "Id": 523912,
+            "Level": 12,
+            "Parameters": [
+              8.016,
+              0.07776,
+              0.014523,
+              0.2,
+              0.889665,
+              0.874125,
+              1.070318,
+              0.61425,
+              0.616,
+              1.470473,
+              1.225,
+              1.47875,
+              20,
+              1.442196,
+              2.883781,
+              3.601998,
+              2.5,
+              7,
+              18,
+              90
+            ]
+          },
+          {
+            "Id": 523913,
+            "Level": 13,
+            "Parameters": [
+              8.517,
+              0.08262,
+              0.015431,
+              0.2,
+              0.935419,
+              0.91908,
+              1.125362,
+              0.64584,
+              0.64768,
+              1.546097,
+              1.288,
+              1.5548,
+              20,
+              1.531404,
+              3.062159,
+              3.824802,
+              2.5,
+              7,
+              18,
+              90
+            ]
+          },
+          {
+            "Id": 523914,
+            "Level": 14,
+            "Parameters": [
+              9.018,
+              0.08748,
+              0.016339,
+              0.2,
+              0.981173,
+              0.964035,
+              1.180407,
+              0.67743,
+              0.67936,
+              1.621721,
+              1.351,
+              1.63085,
+              20,
+              1.620612,
+              3.240537,
+              4.047606,
+              2.5,
+              7,
+              18,
+              90
+            ]
+          },
+          {
+            "Id": 523915,
+            "Level": 15,
+            "Parameters": [
+              9.519,
+              0.09234,
+              0.017246,
+              0.2,
+              1.026928,
+              1.00899,
+              1.235452,
+              0.70902,
+              0.71104,
+              1.697345,
+              1.414,
+              1.7069,
+              20,
+              1.70982,
+              3.418915,
+              4.27041,
+              2.5,
+              7,
+              18,
+              90
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10525,
+      "Name": "Secret Art: Musou Shinsetsu",
+      "Description": "Gathering truths unnumbered and wishes uncounted, the Raiden Shogun unleashes the Musou no Hitotachi and deals <color=#FFACFFFF>AoE Electro DMG</color>, using Musou Isshin in combat for a certain duration afterward. The DMG dealt by Musou no Hitotachi and Musou Isshin's attacks will be increased based on the number of Chakra Desiderata's Resolve stacks consumed when this skill is used.\n\n<color=#FFD780FF>Musou Isshin</color>\nWhile in this state, the Raiden Shogun will wield her tachi in battle, while her Normal, Charged, and Plunging Attacks will be infused with <color=#FFACFFFF>Electro DMG</color>, which cannot be overridden. When such attacks hit opponents, she will regenerate Energy for all nearby party members. Energy can be restored this way once every 1s, and this effect can be triggered 5 times throughout this skill's duration.\nWhile in this state, the Raiden Shogun's resistance to interruption is increased, and she is immune to <color=#FFACFFFF>Electro-Charged</color> reaction DMG.\nWhile Musou Isshin is active, the Raiden Shogun's Normal, Charged, and Plunging Attack DMG will be considered Elemental Burst DMG.\n\nThe effects of Musou Isshin will be cleared when the Raiden Shogun leaves the field.\n\n<color=#FFD780FF>Chakra Desiderata</color>\nWhen nearby party members (excluding the Raiden Shogun herself) use their Elemental Bursts, the Raiden Shogun will build up Resolve stacks based on the Energy Cost of these Elemental Bursts.\nThe maximum number of Resolve stacks is 60.\n\nThe Resolve gained by Chakra Desiderata will be cleared 300s after the Raiden Shogun leaves the field.\n\n<i>This is the Raiden Shogun's new secret technique. Abandoning the void-like \"Musou,\" she now shoulders a new \"Musou\" — the dreams and ambitions of all. Just as \"shinsetsu,\" \"the truth,\" also means \"the new,\" so too has Inazuma entered a new chapter.</i>",
+      "Icon": "Skill_E_Shougun_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 5221,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 522101,
+              "Level": 1,
+              "Parameters": [
+                2,
+                3
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 522101,
+        "Name": "Wishes Unnumbered",
+        "Description": "When nearby party members gain Elemental Orbs or Particles, <color=#FFD780FF>Chakra Desiderata</color> gains 2 Resolve stacks.\nThis effect can occur once every 3s.",
+        "Icon": "UI_Talent_S_Shougun_05"
+      },
+      {
+        "GroupId": 5222,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 522201,
+              "Level": 1,
+              "Parameters": [
+                1,
+                0.006,
+                0.004
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 522201,
+        "Name": "Enlightened One",
+        "Description": "Each 1% above 100% Energy Recharge that the Raiden Shogun possesses grants her:\n·0.6% greater Energy restoration from <color=#FFD780FF>Musou Isshin</color>\n·0.4% <color=#FFACFFFF>Electro DMG Bonus</color>.",
+        "Icon": "UI_Talent_S_Shougun_06"
+      },
+      {
+        "GroupId": 5223,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 522301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 522301,
+        "Name": "",
+        "Description": "",
+        "Icon": ""
+      },
+      {
+        "GroupId": 5225,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 522501,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 522501,
+        "Name": "All-Preserver",
+        "Description": "Mora expended when ascending Swords and Polearms is decreased by 50%.",
+        "Icon": "UI_Talent_S_Shougun_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 521,
+        "Name": "Ominous Inscription",
+        "Description": "<color=#FFD780FF>Chakra Desiderata</color> will gather Resolve even faster. When <color=#FFACFFFF>Electro</color> characters use their Elemental Bursts, the Resolve gained is increased by 80%. When characters of other Elemental Types use their Elemental Bursts, the Resolve gained is increased by 20%.",
+        "Icon": "UI_Talent_S_Shougun_01"
+      },
+      {
+        "Id": 522,
+        "Name": "Steelbreaker",
+        "Description": "While using Musou no Hitotachi and in the Musou Isshin state applied by <color=#FFD780FF>Secret Art: Musou Shinsetsu</color>, the Raiden Shogun's attacks ignore 60% of opponents' DEF.",
+        "Icon": "UI_Talent_S_Shougun_03"
+      },
+      {
+        "Id": 523,
+        "Name": "Shinkage Bygones",
+        "Description": "Increases the Level of <color=#FFD780FF>Secret Art: Musou Shinsetsu</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Shougun_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 524,
+        "Name": "Pledge of Propriety",
+        "Description": "When the <color=#FFD780FF>Musou Isshin</color> state applied by <color=#FFD780FF>Secret Art: Musou Shinsetsu</color> expires, all nearby party members (excluding the Raiden Shogun) gain 30% bonus ATK for 10s.",
+        "Icon": "UI_Talent_S_Shougun_02"
+      },
+      {
+        "Id": 525,
+        "Name": "Shogun's Descent",
+        "Description": "Increases the Level of <color=#FFD780FF>Transcendence: Baleful Omen</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Shougun_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 526,
+        "Name": "Wishbearer",
+        "Description": "While in the <color=#FFD780FF>Musou Isshin</color> state applied by <color=#FFD780FF>Secret Art: Musou Shinsetsu</color>, attacks by the Raiden Shogun that are considered part of her Elemental Burst will decrease all nearby party members' (not including the Raiden Shogun herself) Elemental Burst CD by 1s when they hit opponents.\nThis effect can trigger once every 1s and can trigger a total of 5 times during Musou Isshin's duration.",
+        "Icon": "UI_Talent_S_Shougun_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Plane of Euthymia",
+    "Detail": "Her Excellency, the Almighty Narukami Ogosho, who promised the people of Inazuma an unchanging Eternity.",
+    "Association": 5,
+    "Native": "Inazuma City",
+    "BirthMonth": 6,
+    "BirthDay": 26,
+    "VisionBefore": "Electro",
+    "VisionAfter": "Electro",
+    "VisionOverrideUnlocked": "Gnosis",
+    "ConstellationBefore": "Imperatrix Umbrosa",
+    "ConstellationAfter": "Imperatrix Umbrosa",
+    "CvChinese": "菊花花",
+    "CvJapanese": "沢城みゆき",
+    "CvEnglish": "Anne Yatco",
+    "CvKorean": "Park Ji-yoon",
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "No salutations needed. My exalted status shall not be disclosed as we travel among the common folk. I acknowledge that you are a person of superior ability. Henceforth, you will be my guard. Worry not. Should any danger arise, I shall dispose of it."
+      },
+      {
+        "Title": "Chat: Idleness",
+        "Context": "Inactivity serves no purpose whatsoever. Hmph."
+      },
+      {
+        "Title": "Chat: The Mortal World",
+        "Context": "The world remains constant over the centuries. But human life is like the dew at dawn or a bubble rising through water. Transitory."
+      },
+      {
+        "Title": "Chat: Worldly Beauty",
+        "Context": "All the world holds dear is but a backdrop of constant motion. I stand before it alone and unchanging."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Rainfall alone does not constitute a storm. Thunder is required."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Dear me, that didn't frighten you, did it? After all, you are in the presence of the most supreme and terrifying incarnation of lightning in the whole of Teyvat."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "The Winter Shogun approaches."
+      },
+      {
+        "Title": "On a Clear Day",
+        "Context": "Clear skies can do nothing to hide the brilliance of lightning. Divine bolts can strike even in the absence of rain. Do you see that tree? Wait... you understand? So... demonstration is not required? Good."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Yawning without covering your mouth? Uncouth. I will pardon your rudeness this time. Good morning to you, too."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Time for dessert. What? Why not? What do you mean, \"Entrées come first\"? ...They were only indulging me because I am the Shogun? Huh, interesting."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Do you wish to know the truth about the shooting stars at night? Haha, they are but fleeting moments of luminosity. Uh, you used to be one of them? Are you a tengu warrior?"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "I command the thunder in all corners of the world to cease. Rest well tonight."
+      },
+      {
+        "Title": "About the Raiden Shogun: Transience",
+        "Context": "Thunder's roar and lightning's flash. So ephemeral. This is why reaching Eternity is desirable. ...Actually, no — this is why reaching Eternity is necessary."
+      },
+      {
+        "Title": "About the Raiden Shogun: Eternity",
+        "Context": "Erosion is a terrible thing. This body's purpose is to withstand wear and tear, that the one within might achieve Eternity."
+      },
+      {
+        "Title": "About Us: Okuzumeshuu",
+        "Context": "I declare you my chamberlain. In other words, according to my judgment, you are useful to the Shogunate and loyal to me."
+      },
+      {
+        "Title": "About Us: Protector",
+        "Context": "Despite serving as my guard during this journey, you need not shield me from danger. The Shogun's constitution is rather robust, and in the event she does break down, we can simply get a replacement. In an emergency, just send her into the fray."
+      },
+      {
+        "Title": "About Us: Legacy",
+        "Context": "The Inazuman arts of polearm and sword combat, as well as the blade-forging process itself, primarily originated with me. Since then, they have branched out and blossomed into a variety of techniques according to each master's individual aptitude. \nWhat would you say to another sparring session? If you emerge unscathed again, I'll let you found your own martial arts tradition in Inazuma. Ah, the drive to advance and evolve in the martial arts is truly unstoppable."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "Really? So in all this time, no new Electro Visions have appeared in the outside world? Well, what I can say on this topic is subject to certain constraints, but... it is not by my will that Visions are granted or denied. The key is people's desire, and... well, there's another side to it too."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "No, I have nothing to share with you at this time. But you... You use elemental energy without the aid of a Vision. How is this possible? Please enlighten me."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Her body may have perished, but she became the Sacred Sakura. This, too, is a form of Eternity."
+      },
+      {
+        "Title": "About Yae Miko",
+        "Context": "Ah, that girl... She used to be the kind of person who could easily be swayed with some Fried Tofu. It's a relief to see how shrewd and resourceful she's now become. Still, I have to admit that I was a little upset to become the target of her scheming myself. I know it was for my own good, but I'm afraid she will mock me next time we meet... Perhaps I should take the initiative and strike her first? Hmm, she'll dodge it anyway."
+      },
+      {
+        "Title": "About Kamisato Ayato",
+        "Context": "Kamisato... One of the most distinguished clans in all of Inazuma. Despite Ayato's trickery in regard to the Tri-Commission's affairs, he is nevertheless a loyal subject. His past misdeeds shall be excused."
+      },
+      {
+        "Title": "About Kamisato Ayaka",
+        "Context": "Kamisato... One of the most distinguished clans in all of Inazuma. Eh? That's exactly what the Shogun said? Well, A—Ayaka's also well-versed in the art of the sword."
+      },
+      {
+        "Title": "About Kujou Sara",
+        "Context": "A loyal and righteous subject, and an accomplished warrior. She is worthy to be called a hero. With an heir of such great promise, the future prosperity of the Kujou Clan is assured."
+      },
+      {
+        "Title": "About Yoimiya",
+        "Context": "Who? Ah, the firework maker. A manufacturer of fleeting illusions, enamored with the realm of fantasy and imagination, but a subject of mine nonetheless. \nHmm? Fireworks were released on Tenryou Commission property? By whom... her?"
+      },
+      {
+        "Title": "About Thoma",
+        "Context": "I can't deny that I am somewhat culpable in the events that led to him being almost stripped of his Vision, but I rather think the Shogun should be the one to extend a formal apology to him... Okay, fine. I'll give it some more thought."
+      },
+      {
+        "Title": "About Sangonomiya Kokomi",
+        "Context": "Indeed. It was I who slew Orobaxi. But I also allowed the people of Sangonomiya to continue worshiping it as the Watatsumi Omikami, so that it might enjoy their offerings. Now, Sangonomiya has destroyed the local Narukami Shrine and rebels against the Shogunate. As the Divine Priestess representing the Watatsumi Omikami, she must be held accountable."
+      },
+      {
+        "Title": "About Kunikuzushi",
+        "Context": "He came about as a byproduct of creating the Shogun. Perhaps it's because I feel like I owe him something, but I do not wish to assert control over him."
+      },
+      {
+        "Title": "About Arataki Itto",
+        "Context": "Who?"
+      },
+      {
+        "Title": "About Morax",
+        "Context": "I had an opportunity to feast with him once, back when I was just a kagemusha attending a gathering of the gods. So he's made his choice. Be that as it may, I don't believe his story is anywhere near finished yet."
+      },
+      {
+        "Title": "About Venti",
+        "Context": "Hmm. So, the Anemo Archon still goes by that name among mortals these days? Truth be told, from the very first moment I met him, I could somehow sense that we were not going to get along. Also, he sure can drink a lot."
+      },
+      {
+        "Title": "About Buer",
+        "Context": "I admire her humility; it is a sign of true wisdom. With the power she holds, Buer is capable of doing many things beyond our wildest imaginations... and yet, she uses her power only to right wrongs and to protect. She is a truly gentle god."
+      },
+      {
+        "Title": "About Furina",
+        "Context": "For five centuries I dueled the Raiden Shogun in my personal realm of consciousness, to confirm the steadfastness of my will. Yet this Furina you speak of, though possessing only a frail human body, committed herself to acting out her part every second of every day for five hundred years — a true battle of the spirit. Her willpower has indeed reached the level of a god."
+      },
+      {
+        "Title": "About Haborym",
+        "Context": "When I arrived in Khaenri'ah five hundred years ago, I saw a battlefield of scorched earth on the level of Musoujin Gorge. The fury of the Pyro Archon... that was said to be the cause. Now, I have the opportunity to meet that human once again... Perhaps you could introduce me? We are both warriors. It would be nice to find a spacious place to engage in a practical exchange."
+      },
+      {
+        "Title": "About Yumemizuki Mizuki",
+        "Context": "Yumemizuki Mizuki is one of Miko's old acquaintances, but I struggle to understand their friendship. Though they share an irreplaceable bond, they seem reluctant to associate with each other in public, instead engaging in a long-standing business feud. In the end, much of their rivalry centers around projects that end up improving people's lives, so I see no reason to intervene."
+      },
+      {
+        "Title": "More About the Raiden Shogun: I",
+        "Context": "State your query. To the point."
+      },
+      {
+        "Title": "More About the Raiden Shogun: II",
+        "Context": "On stormy days, the people of Inazuma chant \"kuwabara, kuwabara,\" believing that this will protect themselves from being struck by lightning. You need not worry about any storm summoned by my own hand — they will bring you no harm. Lightning storms that occur naturally, however, can be more unpredictable."
+      },
+      {
+        "Title": "More About Ei: III",
+        "Context": "The account given in the book \"Treasured Tales\" is largely an accurate one. At that time, she was preoccupied with various domestic matters within the island, so as her kagemusha, I assumed her identity and joined the troops dispatched to pacify Watatsumi. After this point, however, the story turns into mere wishful thinking. Back then, I was just a martial artist wrapped up in all the fighting, not a social reformer or a moral leader."
+      },
+      {
+        "Title": "More About Ei: IV",
+        "Context": "Perhaps my pursuit of Eternity is nothing more than a form of escapism. In the end, the path I took was like that of a turtle who hides in its shell. Still, turtles have always been a symbol of longevity. Perhaps in order to reach Eternity, one has to follow their example."
+      },
+      {
+        "Title": "More About Ei: V",
+        "Context": "I'm fearful because of what I witnessed five hundred years ago — her demise and... that thing. But, if... If it were you, everyone would be safe. You would've saved the world. Just like I cherish the memories of everything in Inazuma, if you remember me, I'll live forever."
+      },
+      {
+        "Title": "The Raiden Shogun's Hobbies",
+        "Context": "Foolish question. There are only two kinds of things — those that must be done and those that must not."
+      },
+      {
+        "Title": "Ei's Troubles",
+        "Context": "Don't try and get me to cook. I can take care of anything else, but not that."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Oh, don't listen to the Shogun. Desserts! Cavities are no big deal — you can just replace your teeth. Anyway, I just don't see how desserts can pose a serious obstacle to my pursuit of Eternity."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Foolish question. There are only two kinds of foods — those that must be consumed to nourish the body and those that harm it."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "A familiar flavor... Acceptable."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Leave it here, and I shall sample it."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Consuming this would be physically detrimental. Remove it from my presence."
+      },
+      {
+        "Title": "Receiving a Gift: IV",
+        "Context": "Delicious. I feel much better after that. Thank you."
+      },
+      {
+        "Title": "Receiving a Gift: V",
+        "Context": "Doesn't look too bad, how did you make it?"
+      },
+      {
+        "Title": "Receiving a Gift: VI",
+        "Context": "Allow me to decline."
+      },
+      {
+        "Title": "Birth Date",
+        "Context": "Is today the day of your creation? Return to the city with me. I will read out a speech for you in front of all my attendants. \"Embarrassing\"? ...Understood."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Happy birthday! Let's celebrate together and make it a moment to remember for the whole year until your next birthday celebration, and so on and so forth. Then, you shall have an eternity of happiness."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "The initial stage of my journey, or Shoden, involves learning the nine-way sword slash and the foundations of the art of the polearm. There is no great variation from other traditions at this point. Or rather, it is the other traditions that do not differ from mine."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "At the intermediate stage of my journey, or Chuuden, the art of the sword focuses on the study of various stances and transitions. The art of the polearm — slashes and backslashes."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "The final stage of my journey, or Kaiden, is the study of the most profound techniques. Unavoidably, these draw heavily on elemental power, rendering them beyond the capabilities of most mortals. Most practitioners of other traditions are unable to ever reach this level."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "The profoundest of the profound is the Musou no Hitotachi. A sword art without parallel in all the world. With you as my sparring partner, I can perfect that technique even further."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Shine down!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "There is no escape!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Illusion shattered!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Torn to oblivion!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Now, you shall perish!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Inazuma shines eternal!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Take them. I have no need."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "...But a momentary distraction."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Hmm?"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "...Transcend all constraints."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "...Erase all threats."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "...Remove all obstacles."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Fall back and await my orders."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Step aside."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "The mortal plane... A fleeting dream..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Detached from the world..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "The thunder falls silent..."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Insolent!"
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Absurd!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "What is the situation?"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Stay close and you will live."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "The campaign begins."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Since the dawn of life, humankind has always borne an intense yearning for and curiosity about the world. This is the anchor point of their cognition and is the foundation of all reason.\nThe world of the people of Inazuma is also thus. There, thunder, lightning, wind, and rain were primordial facts of life, as well as light, and the sea... and the Raiden Shogun.\nBabes nestling in their mothers' arms hear tales of the Shogun's slaying of many gods and conquering of other races.\nWhen young men and women roam the islands, they see the gorge split asunder by a blade of lightning and the pale, still-standing bones of the giant snake.\nSoldiers take to the battlefield with \"glory to the Shogun and her everlasting reign!\" upon their lips.\nThe people work in contentment and peace, knowing that the Shogun and her loyal Tri-Commission are there.\nThe great name of the Raiden Shogun has long shaken off the shackles of mere life, becoming the eternal traditional belief of Inazuma.\nPeople trust in this great name and its might, believing that their descendants shall witness the same sights, that the same faith will form the foundations of their inner worlds, and that this will pass on from generation to generation.\nThis is the eternal paradise that the Almighty Shogun promised her people."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "The true name of the Raiden Shogun is \"Raiden Ei.\"\nIn her long road, she has witnessed the price that Inazuma has had to pay for progress over the hundreds and thousands of years.\nThe happiest years of her life had passed her by, and those she once considered friends became her foes. In the end, she even lost the reason for which she had wielded her sword.\n\"Where there is progress, there must be loss.\"\nEi believed that this was the iron-clad rule of the world, with time as its merciless enforcer.\nThe greatest and most prosperous nation of men collapsed overnight, and even that most ancient Liyue Harbor would say farewell to its Geo Archon. The winds of parting came whistling in from the outer edge of time.\nHowever resounding the Raiden Shogun's name, centuries later, millennia later... Someday, Inazuma would lose the protection of its deity.\nAs a warrior, she was wary of all foes. Even if that enemy was a crisis as intangible as time's passage, she had to find a countermeasure, a weapon she could use to defeat it in time.\nHer answer? \"Eternity.\" Only Eternity could freeze all things under the sky, make Inazuma truly deathless.\n\"Then, while things are still good, let us have stillness... Let us march towards Eternity.\""
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "For beings with a perishable form of flesh to pursue Eternity, they must first solve the unavoidable problem of lifespan.\nThis limited time troubled Ei greatly, until one day when a mysterious technique came before her eyes as if by a stroke of fate.\nUsing such techniques, one could create intricate puppets indistinguishable from true life.\nIn theory, this puppet could perfectly imitate everything about Ei. It could surpass the limits of her lifespan and defend Inazuma forever. Yet, how could creating a copy of an Archon be a simple affair?\nEi conducted countless experiments to this effect, discarded a great many failed products, and spent an unimaginable amount of time and resources—\nBut at last, by her dogged pursuit and warrior's spirit, she was able to create a flawless puppet.\nThe newborn Raiden Shogun sat there silently, listening to Ei speak all about her, \"her,\" and even about them. The future of Inazuma was here, inscribed upon a gorgeous blueprint.\nThe automaton had but one question to ask Ei: \"There is no turning back from forsaking your form. Do you regret nothing?\"\n\"Your existence is my answer.\"\nThen, Ei transferred her consciousness into her blade, and thus was born the Plane of Euthymia."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Before Raiden Ei became the Shogun, she was a samurai responsible for seeing that the previous Shogun's orders were carried out.\nThe previous Electro Archon, Raiden Makoto, was no great fighter, and the things Ei had charge over were mostly matters of warfare and slaughter. However, Ei also had moments of repose away from battle, sitting with her friends under the sakura trees and playing karuta.\nDue to her character, Ei was always the most wooden player. She was never the final victor, nor did she ever have a taste of the prizes that the Kitsune Saiguu reserved for the winners.\nThus, she poured the effort that she put into swordsmanship into karuta practice, often pestering Makoto or Mikoshi Chiyo for karuta matches, or spending much time by moonlight reading the poetry inscribed on the cards out loud.\nAt last, the day came that under a sakura tree's shade, Ei would defeat opponent after opponent. Even the mighty tengu would be felled after a hard-fought battle, and thus was she crowned the champion.\nEi let out a victorious whoop at her victory, only to be greeted by the sounds of her friends' laughter. Only then did she realize that she had lost her usual composure entirely, before snapping both arms back down and reverting to her usual cool facade.\n Of course, her friends did not intend to make sport of her. Indeed, they understood her character and the manner in which she had worked ever so hard to come out on top.\nAs for the Kitsune Saiguu, oh, how amused she looked as she presented Ei with some pastries.\n\"I said it was a reward, yes, but it was simply some hand-made cakes of mine. I didn't think that you would be so concerned about it, Ei. Well then, enjoy the spoils of your victory to your heart's content.\"\nEi was hardly one to be greedy for snacks. But as a samurai, she firmly believed that what she lost must be reclaimed. These pastries were more akin to a vindication of her desire to win.\n—But it was not long before that cool demeanor of hers broke into a smile again. The cakes were lovely — just like the taste of victory. As for her clumsy attempts to hide that smile, one could only say that it was an entertaining sight all around for her friends.\nTo this day, Ei still often remembers that sakura tree.\n...Even though she has not gone to see it in a long time, and even though no one sits under it anymore, she wishes that time might stop forever."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Ei still remembers the way in which Makoto greatly loved the scenery of Inazuma, its cuisine, and the stories of its people — and how she loved telling Ei all about them.\nThough they both understood the concept of erosion well, Makoto was unlike Ei, who worried about the future more often. Instead, Makoto's energies were focused on the present.\n\"It is precisely because we know that this scene is but a fleeting shadow that we should enjoy it all the more.\"\nThen, Ei could only smile wryly, realizing that she, the kagemusha, was even more old-fashioned than the real Raiden Shogun. She thought to herself that she must learn to be more leisurely, just like Makoto.\nYet the times changed all too quickly, all but catching Ei off guard. Before she knew it, her hands already held the blade that the dying Raiden Makoto had passed on to her.\nThis day, the kagemusha was now the true Raiden Shogun.\nAnd it was on this day that Ei truly felt the agony of erosion.\nAs time marched forward inexorably, even this blade, this sakura... All life on Inazuma would fade before her eyes.\nThis was the foundation of Inazuma, and it was the thing that the Raiden Shogun must defend.\n\"If you look at it this way, thinking ahead is not meaningless, nor is it vain arrogance.\"\nHaving resolved herself, her life exceeded its mortal shell, and eternity descended upon the mortal plane."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "One night, Raiden Ei entered a beautiful dreamscape while meditating.\nHere, there was nothing left between heaven and earth but her, and a \"her\" that was akin to looking into a mirror.\nThe automaton's voice flowed into her ears like a sigh: \"the eternity you resolved to establish in your heart has been shaken by the countless wishes of the people. Thus, you have become my enemy.\"\nBack when she was creating the puppet, Ei had considered all the hidden risks involved.\nShe believed that anything was possible — including the worst-case scenario... in which she too would someday become a threat to Eternity.\nBut she had to press on. She had to reach Eternity. This, she would not permit to be stayed by any outside force.\nThe puppet's words were something that she had asked herself long ago:\n\"You believe your present self has greater certainty than your former self. Thus, you believe your present self is correct. Don't you?\"\n\"But have you really been enlightened with new ideas? Or have you been degraded by irreversible erosion?\"\nTheir faces were the same, but they spoke of different ideals. The battle with herself, with her past, would come someday.\nBut it was not this day. Ei knew well that she was not yet ready.\nHer heart had been clear, and she would have remained in that state, but hearing the cries of her people, she had to command her feet to stop.\nThe sky above the mirror was no longer empty, and all about the silent halls, she heard the cry of crows. Dawn was coming. The samurai must take up her sword.\nThis dream was ever so real, and it, too, passed like a shadow."
+      },
+      {
+        "Title": "Musou Isshin",
+        "Context": "A sword that, once passed on, has accompanied Ei to this day.\nThis sword has had two wielders, and has witnessed both time and eternity.\nIt was born from Raiden Makoto's divine might, but it was never once sharpened. It took after its owner, of course, for Makoto was not one for battle. It was but a symbol, a sign of true peace.\nThe day Makoto passed on, it was given into Ei's hands. The sword was stained with blood, then, and as the blade drew its first taste of crimson, the dripping ichor was blown aside by wild winds and blazing thunder.\nMakoto gave it the name Musou Isshin, and desired to have it witness an Inazuma as lovely as a dream and the noble hearts that dwell in this world.\nEi did not change its name. For she, too, had looked out over that vast scene of beauty, and the sight of it had engendered a stronger, purer dream in her own heart.\nThe aesthetic of lightning is precisely to capture that which is precious amidst fleeting transience."
+      },
+      {
+        "Title": "Gnosis",
+        "Context": "Before she came to dwell in the Plane of Euthymia permanently, Ei was troubled for a time concerning where she might store her Gnosis.\nShe no longer had any need of it, but such an important item could not simply be placed anywhere. She had initially intended to have it modified into an energy supply device, but no matter what she did, her techniques had no effect on the Gnosis at all.\nAnd that was when she thought of someone: the cunning and clever Yae Miko. She was not precisely someone to be trusted, but she was in many ways also Ei's best choice.\nUpon hearing this request, Miko could not help but joke: \"Aren't you afraid that I might just sell this off?\"\n\"You understand the value of a Gnosis. Even if you sold it, I trust that you would have exchanged it for something of equal value, and that is no easy price to pay.\"\nWith someone of Yae Miko's character, it would be no surprise if she ever sold the Gnosis, yes, but she would not allow herself to lose out in any such exchange.\nSuch, then, was the tacit agreement between the two old friends. Yae Miko understood Ei's intent and took the precious Gnosis with a smile.\n\"Well, this is your idea, not mine. Don't end up regretting this, now.\""
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 205200,
+      "Name": "Narukami's Law",
+      "Description": "The Raiden Shogun's outfit. This kimono has been adorned with the Electro Mitsudomoe, granting it the highest honor in the land.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104144,
+    113029,
+    101208,
+    112046,
+    104328,
+    113025
+  ],
+  "NameCard": {
+    "Name": "Raiden Shogun: Enlightenment",
+    "Description": "Namecard style.\nNot simply Ei, and not merely the Raiden Shogun. Observe yourself also with one stormy eye, and you will someday reach a breakthrough.",
+    "Icon": "UI_NameCardIcon_Shougun",
+    "PicturePrefix": "UI_NameCardPic_Shougun"
+  },
+  "TraceEffect": {
+    "Id": 215012,
+    "Name": "Echo: Plane of Euthymia",
+    "Description": "Raiden Shogun's Envisaged Echo. \"The drawn bow is like the quartered moon, and studying the blade is like a circle of transparent jade. Now, the truth of jade lies beyond reach, my only companion the moonlit shades.\"",
+    "Icon": "UI_TraceEffectIcon_Shougun"
+  }
+}

@@ -9,15 +9,18 @@
     <File Path=".editorconfig" />
     <File Path=".vsconfig" />
   </Folder>
-  <Project Path="Runner/Runner.vcxproj">
-    <Platform Solution="*|ARM64" Project="x64" />
-  </Project>
-  <Project Path="src/launcher/launcher.csproj">
-    <Platform Project="x64" />
-    <Deploy Solution="*|Any CPU" />
-    <Deploy Solution="*|x64" />
-  </Project>
-  <Project Path="src/SourceGeneration/SourceGeneration.csproj" />
-  <Project Path="src/updater/updater.csproj" />
-  <Project Path="tests/ky3launcher.Tests/ky3launcher.Tests.csproj" />
+  <Folder Name="/src/">
+    <Project Path="Runner/Runner.vcxproj">
+      <Platform Solution="*|ARM64" Project="x64" />
+    </Project>
+    <Project Path="src/launcher/launcher.csproj">
+      <Platform Project="x64" />
+      <Deploy Solution="*|Any CPU" />
+      <Deploy Solution="*|x64" />
+    </Project>
+    <Project Path="src/SourceGeneration/SourceGeneration.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ky3launcher.Tests/ky3launcher.Tests.csproj" />
+  </Folder>
 </Solution>

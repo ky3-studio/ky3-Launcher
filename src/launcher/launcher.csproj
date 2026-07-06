@@ -3,53 +3,47 @@
 		<OutputType>WinExe</OutputType>
 		<TargetFramework>net10.0-windows10.0.26100.0</TargetFramework>
 		<TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
-		<LangVersion>preview</LangVersion>
 		<RootNamespace>Launcher</RootNamespace>
-		<ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+		<StartupObject>Launcher.Bootstrap</StartupObject>
 		<Platforms>x64</Platforms>
-		<AppendPlatformToOutputPath>false</AppendPlatformToOutputPath>
 		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<AppendPlatformToOutputPath>false</AppendPlatformToOutputPath>
+		<SelfContained>true</SelfContained>
+		<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
 		<UseWinUI>true</UseWinUI>
 		<UseWPF>False</UseWPF>
 		<UseWindowsForms>False</UseWindowsForms>
+		<LangVersion>preview</LangVersion>
 		<ImplicitUsings>False</ImplicitUsings>
 		<Nullable>enable</Nullable>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<DefineConstants>$(DefineConstants);DISABLE_XAML_GENERATED_MAIN;DISABLE_XAML_GENERATED_BREAK_ON_UNHANDLED_EXCEPTION;DISABLE_XAML_GENERATED_BINDING_DEBUG_OUTPUT;$(AlphaConstants);$(CanaryConstants)</DefineConstants>
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+		<MvvmToolkitEnableINotifyPropertyChangingSupport>false</MvvmToolkitEnableINotifyPropertyChangingSupport>
+		<ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+		<ApplicationIcon>Assets\Logo.ico</ApplicationIcon>
 		<NeutralLanguage>zh-CN</NeutralLanguage>
 		<DefaultLanguage>zh-CN</DefaultLanguage>
 		<SatelliteResourceLanguages>zh-CN;zh-Hans;zh-Hant;zh-TW;en-US</SatelliteResourceLanguages>
-		<StartupObject>Launcher.Bootstrap</StartupObject>
-		<DefineConstants>$(DefineConstants);DISABLE_XAML_GENERATED_MAIN;DISABLE_XAML_GENERATED_BREAK_ON_UNHANDLED_EXCEPTION;DISABLE_XAML_GENERATED_BINDING_DEBUG_OUTPUT;$(AlphaConstants);$(CanaryConstants)</DefineConstants>
-		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<Configurations>Debug;Release</Configurations>
 		<DebugSymbols>true</DebugSymbols>
 		<DebugType>embedded</DebugType>
-		<ApplicationIcon>Assets\Logo.ico</ApplicationIcon>
-		<Configurations>Debug;Release</Configurations>
-		<SelfContained>true</SelfContained>
-		<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
-		<MvvmToolkitEnableINotifyPropertyChangingSupport>false</MvvmToolkitEnableINotifyPropertyChangingSupport>
-		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<DocumentationFile>docs\ky3launcher.xml</DocumentationFile>
 		<NoWarn>CS1591;NU1603</NoWarn>
 		<AppxPackage>false</AppxPackage>
 		<WindowsPackageType>None</WindowsPackageType>
-		<Version>6.7.1.0</Version>
+		<IsPublishable>True</IsPublishable>
 		<PublishAot>False</PublishAot>
 		<PublishTrimmed>False</PublishTrimmed>
 		<PublishDir>bin\Release\</PublishDir>
+		<Version>6.7.1.0</Version>
 		<AssemblyName>ky3launcher</AssemblyName>
 		<AssemblyTitle>ky3 Launcher</AssemblyTitle>
-		<Company>Launcher Detail Development Team</Company>
-		<Copyright>Copyright © 2026 Launcher Detail Development Team</Copyright>
+		<Company>KY3 STUDIO</Company>
+		<Copyright>Copyright © 2026 KY3 STUDIO</Copyright>
 	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-	  <DebugType>embedded</DebugType>
-	  <IsPublishable>True</IsPublishable>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-	  <DebugType>embedded</DebugType>
-	  <IsPublishable>True</IsPublishable>
-	</PropertyGroup>
+
 	<ItemGroup>
 		<Manifest Include="$(ApplicationManifest)" />
 	</ItemGroup>
@@ -57,7 +51,6 @@
 	<ItemGroup>
 		<DllFiles Include="$(ProjectDir)..\..\module\Ky3-luancher-Plugin.dll" />
 	</ItemGroup>
-
 
 	<ItemGroup>
 		<None Include="NativeLibs\Launcher.Native.dll">
@@ -67,29 +60,14 @@
 		</None>
 	</ItemGroup>
 
-	<Target Name="CopyDLL" AfterTargets="Build">
-		<Copy SourceFiles="@(DllFiles)" DestinationFolder="$(OutDir)" />
-	</Target>
-
-	<Target Name="CopyDLLPublish" AfterTargets="Publish">
-		<Copy SourceFiles="@(DllFiles)" DestinationFolder="$(PublishDir)" />
-	</Target>
-
-	<Target Name="DeleteLibsAfterBuild" AfterTargets="Build">
-		<ItemGroup>
-			<LibFiles Include="$(OutputPath)**\*.lib" />
-		</ItemGroup>
-		<Delete Files="@(LibFiles)" />
-	</Target>
-
-  <ItemGroup>
-    <AdditionalFiles Include="Properties\ApiEndpoints.csv" />
-    <AdditionalFiles Include="Properties\BannedSymbols.txt" />
-    <AdditionalFiles Include="CodeMetricsConfig.txt" />
-    <AdditionalFiles Include="Properties\IdentityStructs.json" />
-    <AdditionalFiles Include="Resource\Localization\SHRegex.resx" />
-    <AdditionalFiles Include="Resource\Localization\SH.resx" />
-  </ItemGroup>
+	<ItemGroup>
+		<AdditionalFiles Include="Properties\ApiEndpoints.csv" />
+		<AdditionalFiles Include="Properties\BannedSymbols.txt" />
+		<AdditionalFiles Include="CodeMetricsConfig.txt" />
+		<AdditionalFiles Include="Properties\IdentityStructs.json" />
+		<AdditionalFiles Include="Resource\Localization\SHRegex.resx" />
+		<AdditionalFiles Include="Resource\Localization\SH.resx" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<Content Update="Assets\*">
@@ -117,17 +95,6 @@
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>
-
-	<Target Name="PruneStaleBundledMetadata" BeforeTargets="BeforeBuild">
-		<ItemGroup>
-			<_ExpectedBundledMetadata Include="@(None)" Condition="$([System.String]::Copy('%(None.Identity)').StartsWith('Resources\Metadata\'))" />
-			<_ExpectedBundledMetadataOutput Include="@(_ExpectedBundledMetadata->'$(OutDir)%(Identity)')" />
-			<_ExistingBundledMetadataOutput Include="$(OutDir)Resources\Metadata\**\*.json" />
-			<_OrphanBundledMetadataOutput Include="@(_ExistingBundledMetadataOutput)" Exclude="@(_ExpectedBundledMetadataOutput)" />
-		</ItemGroup>
-		<Delete Files="@(_OrphanBundledMetadataOutput)" Condition="'@(_OrphanBundledMetadataOutput)' != ''" />
-		<Message Text="Pruned stale bundled metadata: @(_OrphanBundledMetadataOutput->Count())" Importance="high" Condition="'@(_OrphanBundledMetadataOutput)' != ''" />
-	</Target>
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Labs.WinUI.Controls.DataTable" Version="0.1.260109-build.2471" />
@@ -157,7 +124,6 @@
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.1" />
-		<PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.11" />
 		<PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="10.0.1" />
 		<PackageReference Include="Microsoft.Extensions.Http" Version="10.0.1" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Console" Version="10.0.1" />
@@ -170,7 +136,6 @@
 		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="2.3.0-prerelease.251115.2" />
 		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.7463" />
 		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.260101001" />
-
 		<PackageReference Include="QRCoder" Version="1.7.0" />
 		<PackageReference Include="Quartz.Extensions.DependencyInjection" Version="3.15.1" />
 		<PackageReference Include="Sentry.Extensions.Logging" Version="6.0.0" />
@@ -181,6 +146,7 @@
 		</PackageReference>
 		<PackageReference Include="Snap.LibGit2Sharp" Version="0.31.1-preview.0.4" />
 		<PackageReference Include="Snap.ZStandard" Version="1.5.7" />
+		<PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.11" />
 		<PackageReference Include="System.Drawing.Common" Version="10.0.1" />
 		<PackageReference Include="System.Formats.Nrbf" Version="10.0.1" />
 		<PackageReference Include="System.IO.Hashing" Version="10.0.1" />
@@ -199,19 +165,45 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\SourceGeneration\SourceGeneration.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+		<ProjectReference Include="..\SourceGeneration\SourceGeneration.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Content Include="..\..\Runner\x64\$(Configuration)\Runner.dll" Condition="Exists('..\..\Runner\x64\$(Configuration)\Runner.dll')">
-	    <Link>Runner.dll</Link>
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
+		<Content Include="..\..\Runner\x64\$(Configuration)\Runner.dll" Condition="Exists('..\..\Runner\x64\$(Configuration)\Runner.dll')">
+			<Link>Runner.dll</Link>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
 	</ItemGroup>
 
 	<ItemGroup>
 		<Analyzer Include="$(NuGetPackageRoot)microsoft.bcl.hashcode\6.0.0\lib\netstandard2.0\Microsoft.Bcl.HashCode.dll" />
 	</ItemGroup>
+
+	<Target Name="CopyDLL" AfterTargets="Build">
+		<Copy SourceFiles="@(DllFiles)" DestinationFolder="$(OutDir)" />
+	</Target>
+
+	<Target Name="CopyDLLPublish" AfterTargets="Publish">
+		<Copy SourceFiles="@(DllFiles)" DestinationFolder="$(PublishDir)" />
+	</Target>
+
+	<Target Name="DeleteLibsAfterBuild" AfterTargets="Build">
+		<ItemGroup>
+			<LibFiles Include="$(OutputPath)**\*.lib" />
+		</ItemGroup>
+		<Delete Files="@(LibFiles)" />
+	</Target>
+
+	<Target Name="PruneStaleBundledMetadata" BeforeTargets="BeforeBuild">
+		<ItemGroup>
+			<_ExpectedBundledMetadata Include="@(None)" Condition="$([System.String]::Copy('%(None.Identity)').StartsWith('Resources\Metadata\'))" />
+			<_ExpectedBundledMetadataOutput Include="@(_ExpectedBundledMetadata->'$(OutDir)%(Identity)')" />
+			<_ExistingBundledMetadataOutput Include="$(OutDir)Resources\Metadata\**\*.json" />
+			<_OrphanBundledMetadataOutput Include="@(_ExistingBundledMetadataOutput)" Exclude="@(_ExpectedBundledMetadataOutput)" />
+		</ItemGroup>
+		<Delete Files="@(_OrphanBundledMetadataOutput)" Condition="'@(_OrphanBundledMetadataOutput)' != ''" />
+		<Message Text="Pruned stale bundled metadata: @(_OrphanBundledMetadataOutput->Count())" Importance="high" Condition="'@(_OrphanBundledMetadataOutput)' != ''" />
+	</Target>
 
 	<Target Name="CleanBuildOutput" AfterTargets="Build">
 		<PropertyGroup>
@@ -220,7 +212,6 @@
 
 		<RemoveDir Directories="$(_OutputDir)\BuildHost-net472" Condition="Exists('$(_OutputDir)\BuildHost-net472')" />
 		<RemoveDir Directories="$(_OutputDir)\BuildHost-netcore" Condition="Exists('$(_OutputDir)\BuildHost-netcore')" />
-
 
 		<Exec Command="for /d %%d in (&quot;$(_OutputDir)\*-*&quot;) do ( if /i not &quot;%%~nxd&quot;==&quot;zh-CN&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hans&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hant&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-TW&quot; if /i not &quot;%%~nxd&quot;==&quot;en-US&quot; if /i not &quot;%%~nxd&quot;==&quot;Microsoft.UI.Xaml&quot; rd /s /q &quot;%%d&quot; )" />
 	</Target>

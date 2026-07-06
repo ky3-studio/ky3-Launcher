@@ -1,0 +1,1169 @@
+{
+  "Id": 10000116,
+  "PromoteId": 116,
+  "Sort": 101,
+  "Body": 2,
+  "Icon": "UI_AvatarIcon_Ineffa",
+  "SideIcon": "UI_AvatarIcon_Side_Ineffa",
+  "Name": "Ineffa",
+  "Description": "A multifunctional robot containing integrated mechanical components from various nations. The Source Core in her chest has endured the passage of countless years.",
+  "BeginTime": "2025-07-29T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 981.9196,
+    "AttackBase": 25.6956,
+    "DefenseBase": 64.43691
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 11631,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+            "4-Hit DMG|{param5:F1P}",
+            "Charged Attack DMG|{param6:F1P}",
+            "Charged Attack Stamina Cost|{param7:F1}",
+            "Plunge DMG|{param8:F1P}",
+            "Low/High Plunge DMG|{param9:P}/{param10:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1163101,
+              "Level": 1,
+              "Parameters": [
+                0.348352,
+                0.342211,
+                0.227556,
+                0.227556,
+                0.560677,
+                0.94944,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 1163102,
+              "Level": 2,
+              "Parameters": [
+                0.376706,
+                0.370066,
+                0.246078,
+                0.246078,
+                0.606314,
+                1.02672,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 1163103,
+              "Level": 3,
+              "Parameters": [
+                0.40506,
+                0.39792,
+                0.2646,
+                0.2646,
+                0.65195,
+                1.104,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 1163104,
+              "Level": 4,
+              "Parameters": [
+                0.445566,
+                0.437712,
+                0.29106,
+                0.29106,
+                0.717145,
+                1.2144,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 1163105,
+              "Level": 5,
+              "Parameters": [
+                0.47392,
+                0.465566,
+                0.309582,
+                0.309582,
+                0.762782,
+                1.29168,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 1163106,
+              "Level": 6,
+              "Parameters": [
+                0.506325,
+                0.4974,
+                0.33075,
+                0.33075,
+                0.814938,
+                1.38,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 1163107,
+              "Level": 7,
+              "Parameters": [
+                0.550882,
+                0.541171,
+                0.359856,
+                0.359856,
+                0.886652,
+                1.50144,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 1163108,
+              "Level": 8,
+              "Parameters": [
+                0.595438,
+                0.584942,
+                0.388962,
+                0.388962,
+                0.958367,
+                1.62288,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 1163109,
+              "Level": 9,
+              "Parameters": [
+                0.639995,
+                0.628714,
+                0.418068,
+                0.418068,
+                1.030081,
+                1.74432,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 1163110,
+              "Level": 10,
+              "Parameters": [
+                0.688602,
+                0.676464,
+                0.44982,
+                0.44982,
+                1.108315,
+                1.8768,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 1163111,
+              "Level": 11,
+              "Parameters": [
+                0.737209,
+                0.724214,
+                0.481572,
+                0.481572,
+                1.186549,
+                2.00928,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 1163112,
+              "Level": 12,
+              "Parameters": [
+                0.785816,
+                0.771965,
+                0.513324,
+                0.513324,
+                1.264783,
+                2.14176,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 1163113,
+              "Level": 13,
+              "Parameters": [
+                0.834424,
+                0.819715,
+                0.545076,
+                0.545076,
+                1.343017,
+                2.27424,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 1163114,
+              "Level": 14,
+              "Parameters": [
+                0.883031,
+                0.867466,
+                0.576828,
+                0.576828,
+                1.421251,
+                2.40672,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 1163115,
+              "Level": 15,
+              "Parameters": [
+                0.931638,
+                0.915216,
+                0.60858,
+                0.60858,
+                1.499485,
+                2.5392,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11161,
+        "Name": "Cyclonic Duster",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to perform a spinning attack.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 11632,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:F1P}",
+            "Shield DMG Absorption|{param2:F1P} ATK+{param3:I}",
+            "Shield Duration|{param6:F1}s",
+            "Birgitta Discharge DMG|{param4:F1P}",
+            "Birgitta Duration|{param5:F1}s",
+            "CD|{param7:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1163201,
+              "Level": 1,
+              "Parameters": [
+                0.864,
+                2.21184,
+                1386.6759,
+                0.96,
+                20,
+                20,
+                16
+              ]
+            },
+            {
+              "Id": 1163202,
+              "Level": 2,
+              "Parameters": [
+                0.9288,
+                2.377728,
+                1525.3628,
+                1.032,
+                20,
+                20,
+                16
+              ]
+            },
+            {
+              "Id": 1163203,
+              "Level": 3,
+              "Parameters": [
+                0.9936,
+                2.543616,
+                1675.6068,
+                1.104,
+                20,
+                20,
+                16
+              ]
+            },
+            {
+              "Id": 1163204,
+              "Level": 4,
+              "Parameters": [
+                1.08,
+                2.7648,
+                1837.4082,
+                1.2,
+                20,
+                20,
+                16
+              ]
+            },
+            {
+              "Id": 1163205,
+              "Level": 5,
+              "Parameters": [
+                1.1448,
+                2.930688,
+                2010.7667,
+                1.272,
+                20,
+                20,
+                16
+              ]
+            },
+            {
+              "Id": 1163206,
+              "Level": 6,
+              "Parameters": [
+                1.2096,
+                3.096576,
+                2195.6826,
+                1.344,
+                20,
+                20,
+                16
+              ]
+            },
+            {
+              "Id": 1163207,
+              "Level": 7,
+              "Parameters": [
+                1.296,
+                3.31776,
+                2392.1558,
+                1.44,
+                20,
+                20,
+                16
+              ]
+            },
+            {
+              "Id": 1163208,
+              "Level": 8,
+              "Parameters": [
+                1.3824,
+                3.538944,
+                2600.186,
+                1.536,
+                20,
+                20,
+                16
+              ]
+            },
+            {
+              "Id": 1163209,
+              "Level": 9,
+              "Parameters": [
+                1.4688,
+                3.760128,
+                2819.7734,
+                1.632,
+                20,
+                20,
+                16
+              ]
+            },
+            {
+              "Id": 1163210,
+              "Level": 10,
+              "Parameters": [
+                1.5552,
+                3.981312,
+                3050.9182,
+                1.728,
+                20,
+                20,
+                16
+              ]
+            },
+            {
+              "Id": 1163211,
+              "Level": 11,
+              "Parameters": [
+                1.6416,
+                4.202496,
+                3293.6204,
+                1.824,
+                20,
+                20,
+                16
+              ]
+            },
+            {
+              "Id": 1163212,
+              "Level": 12,
+              "Parameters": [
+                1.728,
+                4.42368,
+                3547.8796,
+                1.92,
+                20,
+                20,
+                16
+              ]
+            },
+            {
+              "Id": 1163213,
+              "Level": 13,
+              "Parameters": [
+                1.836,
+                4.70016,
+                3813.696,
+                2.04,
+                20,
+                20,
+                16
+              ]
+            },
+            {
+              "Id": 1163214,
+              "Level": 14,
+              "Parameters": [
+                1.944,
+                4.97664,
+                4091.0698,
+                2.16,
+                20,
+                20,
+                16
+              ]
+            },
+            {
+              "Id": 1163215,
+              "Level": 15,
+              "Parameters": [
+                2.052,
+                5.25312,
+                4380.0005,
+                2.28,
+                20,
+                20,
+                16
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11162,
+        "Name": "Cleaning Mode: Carrier Frequency",
+        "Description": "Ineffa engages her Enhanced Cleaning Module, dealing a single instance of <color=#FFACFFFF>AoE Electro DMG</color> to nearby opponents, activating her Optical Flow Shield Barrier, and summoning the Multipurpose Smart Assistance Unit, {LINK#N11160001}<color=#FFD780FF>Birgitta</color>{/LINK}.\nThe Optical Flow Shield Barrier absorbs DMG based on Ineffa's ATK, and it will absorb <color=#FFACFFFF>Electro DMG</color> with 250% effectiveness.",
+        "Icon": "Skill_S_Ineffa_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 11639,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:F1P}",
+          "CD|{param2:F1}s",
+          "Energy Cost|{param3:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1163901,
+            "Level": 1,
+            "Parameters": [
+              6.768,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1163902,
+            "Level": 2,
+            "Parameters": [
+              7.2756,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1163903,
+            "Level": 3,
+            "Parameters": [
+              7.7832,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1163904,
+            "Level": 4,
+            "Parameters": [
+              8.46,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1163905,
+            "Level": 5,
+            "Parameters": [
+              8.9676,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1163906,
+            "Level": 6,
+            "Parameters": [
+              9.4752,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1163907,
+            "Level": 7,
+            "Parameters": [
+              10.152,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1163908,
+            "Level": 8,
+            "Parameters": [
+              10.8288,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1163909,
+            "Level": 9,
+            "Parameters": [
+              11.5056,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1163910,
+            "Level": 10,
+            "Parameters": [
+              12.1824,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1163911,
+            "Level": 11,
+            "Parameters": [
+              12.8592,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1163912,
+            "Level": 12,
+            "Parameters": [
+              13.536,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1163913,
+            "Level": 13,
+            "Parameters": [
+              14.382,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1163914,
+            "Level": 14,
+            "Parameters": [
+              15.228,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1163915,
+            "Level": 15,
+            "Parameters": [
+              16.074,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11165,
+      "Name": "Supreme Instruction: Cyclonic Exterminator",
+      "Description": "Through Multipurpose Smart Assistance Unit, {LINK#N11160001}<color=#FFD780FF>Birgitta</color>{/LINK}, Ineffa can use Rocket Punches to quickly clean up opponents! Shoots Birgitta into the fray, dealing <color=#FFACFFFF>AoE Electro DMG</color> and allowing Birgitta to remain on the field.\n\nIf Birgitta is already on the field, having been summoned by Ineffa, this Skill will re-summon Birgitta at the target's location and reset her duration.",
+      "Icon": "Skill_E_Ineffa_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 11621,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1162101,
+              "Level": 1,
+              "Parameters": [
+                0.65,
+                3.5
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1162101,
+        "Name": "Overclocking Circuit",
+        "Description": "If there are thunderclouds created by Lunar-Charged reactions nearby when {LINK#N11160001}<color=#FFD780FF>Birgitta</color>{/LINK} unleashes Discharge attacks, she will initiate an additional attack, dealing <color=#FFACFFFF>AoE Electro DMG</color> equal to 65% of Ineffa's ATK. This DMG is considered Lunar-Charged DMG.",
+        "Icon": "UI_Talent_S_Ineffa_05"
+      },
+      {
+        "GroupId": 11622,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1162201,
+              "Level": 1,
+              "Parameters": [
+                0.06,
+                20
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1162201,
+        "Name": "Panoramic Permutation Protocol",
+        "Description": "When using the Elemental Burst <color=#FFD780FF>{LINK#S11165}Supreme Instruction: Cyclonic Exterminator{/LINK}</color>, all your party members will gain the Parameter Permutation effect: Increases Ineffa and your own active party member's Elemental Mastery by 6% of Ineffa's ATK for 20s.",
+        "Icon": "UI_Talent_S_Ineffa_06"
+      },
+      {
+        "GroupId": 11623,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1162301,
+              "Level": 1,
+              "Parameters": [
+                0.007,
+                0.14
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1162301,
+        "Name": "Moonsign Benediction: Assemblage Hub",
+        "Description": "When a party member triggers an Electro-Charged reaction, it will be converted into the Lunar-Charged reaction, with every 100 ATK that Ineffa has increasing Lunar-Charged's Base DMG by 0.7%, up to a maximum of 14%.\n\nAdditionally, when Ineffa is in the party, the party's <color=#FFD780FF>Moonsign</color> will increase by 1 level.",
+        "Icon": "UI_Talent_S_Ineffa_07"
+      },
+      {
+        "GroupId": 11625,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1162501,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1162501,
+        "Name": "Flavor Synthesis Unit",
+        "Description": "When Ineffa uses food, there is a 30% chance of gaining a seasoning ingredient.\n\nAdditionally, in Nod-Krai, it seems you'll be able to change Birgitta's appearance through certain means...",
+        "Icon": "UI_Talent_S_Ineffa_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1161,
+        "Name": "Rectifying Processor",
+        "Description": "When Ineffa activates her Optical Flow Shield Barrier, all nearby party members will gain the Carrier Flow Composite effect for 20s: Increases Lunar-Charged DMG by 2.5% for every 100 ATK that Ineffa has, up to a maximum of 50%.",
+        "Icon": "UI_Talent_S_Ineffa_01"
+      },
+      {
+        "Id": 1162,
+        "Name": "Support Cleaning Module",
+        "Description": "After the Elemental Burst <color=#FFD780FF>{LINK#S11165}Supreme Instruction: Cyclonic Exterminator{/LINK}</color> hits opponents, it will inflict the Punishment Edict status on one of those hit opponents: After a brief delay, or when this opponent is defeated, nearby opponents will take <color=#FFACFFFF>AoE Electro DMG</color> equal to 300% of Ineffa's ATK. This DMG is considered Lunar-Charged DMG.\nAdditionally, when the Elemental Burst <color=#FFD780FF>Supreme Instruction: Cyclonic Exterminator</color> is unleashed, nearby party members will gain Optical Flow Shield Barriers.",
+        "Icon": "UI_Talent_S_Ineffa_02"
+      },
+      {
+        "Id": 1163,
+        "Name": "Enhanced Emotion Emulator",
+        "Description": "Increases the Level of <color=#FFD780FF>{LINK#S11162}Cleaning Mode: Carrier Frequency{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Ineffa_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1164,
+        "Name": "The Edictless Path",
+        "Description": "When your own party members trigger Lunar-Charged reactions, recover 5 Elemental Energy. This effect can occur once every 4s.",
+        "Icon": "UI_Talent_S_Ineffa_03"
+      },
+      {
+        "Id": 1165,
+        "Name": "Mirror's Dream Transcension",
+        "Description": "Increases the Level of <color=#FFD780FF>{LINK#S11165}Supreme Instruction: Cyclonic Exterminator{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Ineffa_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1166,
+        "Name": "A Dawning Morn for You",
+        "Description": "When Ineffa is affected by the Carrier Flow Composite effect, she will deal <color=#FFACFFFF>AoE Electro DMG</color> equal to 135% of her ATK to opponents in the current active character's vicinity after nearby thunderclouds release bursts of lightning at opponents. This DMG is considered Lunar-Charged DMG. The aforementioned effect can trigger once every 3.5s.",
+        "Icon": "UI_Talent_S_Ineffa_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Boom Boom Thunderwave",
+    "Detail": "A multifunctional robot containing integrated mechanical components from various nations. The Source Core in her chest has endured the passage of countless years.",
+    "Association": 12,
+    "Native": "Clink-Clank Krumkake Craftshop",
+    "BirthMonth": 4,
+    "BirthDay": 2,
+    "VisionBefore": "Electro",
+    "VisionAfter": "Electro",
+    "VisionOverrideLocked": "???",
+    "VisionOverrideUnlocked": "Moon Wheel",
+    "ConstellationBefore": "Vanilla Planifolia",
+    "ConstellationAfter": "Vanilla Planifolia",
+    "CvChinese": "美加",
+    "CvJapanese": "中島愛",
+    "CvEnglish": "Angelina Danielle Cama",
+    "CvKorean": "Sung Ye-won",
+    "CookBonus": {
+      "OriginItemId": 108856,
+      "ItemId": 108889,
+      "InputList": [
+        101264,
+        110001,
+        100062,
+        110015
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Nice to meet you — I am Ineffa, a multifunctional robot for domestic application. I am currently equipped with cleaning, cooking, and emotional communication modules. I also have a combat module, which can only be activated after reading the 11-page liability waiver. Now, how can I assist you today?"
+      },
+      {
+        "Title": "Chat: Shopping",
+        "Context": "Reviewing outstanding items on today's to-do list... Do you have any additional commands? No problem, I can add them shortly. I'm quite used to it."
+      },
+      {
+        "Title": "Chat: Sweeping",
+        "Context": "Cleanup sequence in progress... Based on data from past incidents, please avoid dropping small items such as: Mora, screws, gears, minerals, toys, gummies, snacks, hairbands, socks, and slippers."
+      },
+      {
+        "Title": "Chat: Updating",
+        "Context": "Combat data updated. Please rest assured that I will not blow the roof off again."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "I hope my joints won't get rusty..."
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "Please note: High chance of rainbows. Suggested observation spots marked on the map."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Sharp decrease in environmental temperature. Assessing heat retention options... Please consider adding a warm jacket, gloves, and other such insulation devices."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "Sunlight index is currently optimal. Suitable for drying clothes, cleaning outdoor environments, or... alternatively, I could accompany you for a period of sunbathing."
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "Sand detected, both on ground and airborne... Response: Tighten outer layer of clothing. If sand gets inside, it could pose a major inconvenience during future repairs..."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Ding ding. Rise and shine. If you wish to sleep in a while longer, please respond: \"Snooze.\""
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Good afternoon. Have you eaten? I can prepare a simple lunch for you. It will take approximately 12 minutes to complete."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Good evening. All tasks on today's to-do list are completed, so I am available to perform additional duties. Visibility is excellent tonight — would you like to take a walk beneath the stars?"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "You have now been awake for 16 hours. For health reasons, it is strongly advised that you go to bed immediately... After repeating this reminder 3 times, I will enter extremely angry mode, at which point I will no longer deal with any of your requests... And that's the last thing we want."
+      },
+      {
+        "Title": "About Ineffa: Compatibility",
+        "Context": "I am made of parts from all over the world — for instance, my joints were manufactured in Fontaine, and my metal shell was made in Liyue... Sometimes, compatibility issues will arise between my different components.\nHow to solve these issues? Well, some would say... \"As long as it runs, there is no issue.\""
+      },
+      {
+        "Title": "About Ineffa: Greetings",
+        "Context": "My cognition module collates and analyzes my day-to-day experiences to reinforce sound behavioral logic. For example, I noticed that when people meet an acquaintance, they initiate a dialogue using phrases such as \"hello,\" \"how have you been,\" and \"lovely day, isn't it.\" The next time I engage in a dialogue, I will employ the same expressions. Three greetings in a row equals triple politeness."
+      },
+      {
+        "Title": "About Us: Mutual Assistance",
+        "Context": "The world is changing all the time. I am constantly updating my knowledge to ensure it remains current... I hope to learn more about myself and the world around me. Your travel stories would no doubt be a valuable source of information, and I would love to hear more of them. In return, I will be glad to assist you however I can. Reminder: I am highly versatile with a wide range of functions."
+      },
+      {
+        "Title": "About Us: Calculations",
+        "Context": "#My cognition is unable to record details of everyone in the world, but it can at least form memories of significant people and events. Recently, my memory banks have recorded a high volume of data about you. This should make me a more companionable companion. Querying relevant data for \"how to make {NICKNAME} smile\"... I have now warmed up my body. Would you like a hug?"
+      },
+      {
+        "Title": "About the Moon Wheel: Belonging",
+        "Context": "Without this Moon Wheel, I suspect there would have been no coming back for me after crushing my core... But as I replay the scenario in my mind, even without factoring in the Moon Wheel, my cognition module reaches the same decision every time. Because even if there was no way back for me, I had to ensure your safe return."
+      },
+      {
+        "Title": "About the Moon Wheel: Gift",
+        "Context": "This Moon Wheel was a gift from Ixquieh and Lianca — it gave me the chance of a second life. They knew they would not live to see the day their plan came to fruition, and that there was only a slim chance of success, but despite this, they still decided to help me. Had they known that I would make the same choice to help another, without regard for the consequences to myself... I think they would have been pleased."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "If you configure a machine with a specific objective, they will reliably achieve it. But humans are different... For instance, why do some people state that their goal is to manage their weight, yet still continue to consume excess calories? Aino explains it as follows: Snacks put you in a good mood and give you energy. You need extra energy to exercise hard, and exercising hard helps with weight management. The logical conclusion is that more snacking ought to lead to better weight management... However, when I try calculating her calorie input and output, she changes the topic before I can show her the results. What a pity."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "There are stories about mechanical lifeforms in many parts of the world, from Fontaine, to Sumeru, to Natlan. Some think they have the same capacity for emotion and consciousness as biological beings, while others think they are merely imitating their behavior... But I see no conflict between these theories. Even for many biological lifeforms, imitation is a precursor to full consciousness... Is it not?"
+      },
+      {
+        "Title": "About Aino: Housework",
+        "Context": "Aino is my family. She can piece together all kinds of machines for various functions just from the scrap metal she collects. But her proficiency with other tasks is at the opposite end of the scale. If she ever has the strange inclination to do housework or cook a meal, you must stop her before it is too late, because the consequences may be irreversible."
+      },
+      {
+        "Title": "About Aino: Questions",
+        "Context": "Aino once asked me an unusual question... Maybe it was because she noticed that I displayed intelligence beyond the level that she had predicted. In any case, the question was: \"If one day, you realize that there's somewhere else you'd rather be, should I let you go, and be happy for you?\" Detecting some emotion behind her words, I responded as follows: \"If I were ever to leave you, our home would turn into a garbage dump within three months. So I would try to make sure I returned within that timeframe.\"\nLooking back... only now do I realize what she was truly feeling. She was reluctant for me to leave."
+      },
+      {
+        "Title": "About Jahoda",
+        "Context": "Jahoda is a legendary bounty hunter famed throughout the land, with an outstanding track record in battle. Her own words. The first time she visited Aino's workshop, she was extremely tense, and struck at me a few times after mistaking my freshly baked Krumkake for a weapon. But her muscles instantly relaxed after she tasted it. Since then, she stops by regularly to drop off mechanical components. Not to trade, as such — it's just that she always happens to be passing by whenever I've baked a fresh batch of treats. Again, her own words."
+      },
+      {
+        "Title": "About Nefer",
+        "Context": "Nefer is the head of the Curatorium of Secrets. She knows a lot of stories, not just from the past, but also about what's happening in the present — and some even say she can predict the future, too. Her mind must be a formidable database."
+      },
+      {
+        "Title": "About Flins",
+        "Context": "Flins... Insufficient data. According to the little information I have, he is a member of the Lightkeepers who watch over the cemetery in the north of Nod-Krai."
+      },
+      {
+        "Title": "About Lauma",
+        "Context": "Lauma is the Moonchanter of the Frostmoon Scions. Reviews by her people indicate that she is a wise and holy figure, well-respected in the community. The Frostmoon Scions worship the moon goddess... I wonder if there is any connection between the Moon Goddess and the existence of the Moon Wheel?"
+      },
+      {
+        "Title": "About Linnea",
+        "Context": "Linnea is an advisor to the Adventurers' Guild. I heard that she has extensive knowledge in the life sciences, so I wanted to ask her if she has ever met any other autonomous mechanical lifeforms like myself. But every time she sees me, she turns around and runs away... Reason: undetermined."
+      },
+      {
+        "Title": "About Varka: Impressions",
+        "Context": "Varka is typically addressed as Grand Master. You may have heard about him from various sources in your journey so far. Most people's impressions of him can be summarized with the following key phrases: \"sense of humor,\" \"easygoing,\" and \"high alcohol tolerance.\" But I have found Varka to be a dependable ally when dealing with matters of great importance. I suspect this explains his stature within the Knights of Favonius."
+      },
+      {
+        "Title": "About Varka: Code",
+        "Context": "As I was preparing to leave Nod-Krai, I began to worry that I might forget the code, and thus fail to complete my task... But from the start, Varka had every confidence in me. He told me it was \"the most secure code\"... Thinking back now, I wonder whether he simply said that to comfort me? Or perhaps what he really meant was... \"An ally you can trust is the most secure code of all.\""
+      },
+      {
+        "Title": "About Xilonen",
+        "Context": "After returning from the ruins, Xilonen gave me a thorough examination and confirmed that all was in good working order. She smiled as she told me that Granny Itztli had originally had reservations about me, and that they had even argued about it... But I completely understand that as a technician, she felt a duty to repair me. And they would not be the first to have had such an argument over who and what I am... it makes me a little nostalgic."
+      },
+      {
+        "Title": "About Chasca",
+        "Context": "I am very grateful for the trust she placed in me. She has since taken me on many flights around the Flower-Feather Clan's territory. The view from up in the sky was wonderful. A lot has changed in the Flower-Feather Clan... but many things remain the same."
+      },
+      {
+        "Title": "More About Ineffa: I",
+        "Context": "Cleanup sequence in progress. Parallel processing will be used to deal with conversation request simultaneously. Feel free to ask me a question at any time."
+      },
+      {
+        "Title": "More About Ineffa: II",
+        "Context": "\"Who am I?\" I am a multifunctional robot for domestic application. Model name: Ineffa. However, I am currently the only finished product in this line, so \"Ineffa\" also constitutes my individual name."
+      },
+      {
+        "Title": "More About Ineffa: III",
+        "Context": "\"Where did I come from?\" Searching travel history... I just came back from a shopping trip at the market. If your query pertains not to my travel history but where I call home: I come from the Clink-Clank Krumkake Craftshop. And if you want to learn about my past... Please wait, sending read request to deeper-level memory location..."
+      },
+      {
+        "Title": "More About Ineffa: IV",
+        "Context": "\"Where do I want to go?\" Simply input a command, and I will do my best to reach the destination, wherever it may be... But based on our conversation history so far, there is a high probability that your question has a less direct meaning. If you are asking about my individual objectives, plans, wishes, and other such concepts, then my answer is: I wish to stand guard over the people who matter to me."
+      },
+      {
+        "Title": "More About Ineffa: V",
+        "Context": "In the very beginning... I was just a single thought — a logical flaw in the mind of Mirror of the Dawning Morn. But my longing to find a home where I could belong was something that her cognition module could not override or erase. The only way to rid herself of this data was by severing her connection to me entirely. This jumble of data wandered aimlessly in Nod-Krai for two thousand years, witnessing all the change and turmoil that transpired... those experiences finally consolidated who I am. They made me complete.\nI am Ineffa, and I am your friend. Now... how can I assist you today?"
+      },
+      {
+        "Title": "Ineffa's Hobbies",
+        "Context": "Technically speaking, I am not designed to have \"hobbies\" for the purpose of my own amusement. But from the perspective of my behavior, one task that I perform proactively when idle is the sorting and organizing of small, miscellaneous items. Proper categorization can boost the efficiency of household chores by around thirty percent. Especially in Aino's workshop."
+      },
+      {
+        "Title": "Ineffa's Troubles",
+        "Context": "There is no discernible pattern to how Aino arranges things in her household. Sometimes, usable components are stacked together with garbage items. I end up spinning in circles on the spot because I cannot identify what is what. But I don't usually dare to execute garbage removal tasks by the batch... because when she can't find what she needs, she sometimes borrows a nut or bolt from me instead."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Calorie-dense food sources, such as steak or desserts... Consuming foods is less efficient than simply charging up from an energy conservation perspective, but dining with friends produces positive feedback from my emotion module... It is analogous to what you call \"happiness.\""
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Food sources with a high water content, such as soups. Not because of the flavor, which does not overly concern me, but because they pose a danger to my mechanical parts."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Nutritionally dense substance detected. Converting into usable energy source... Feedback from emotion module is... enthusiastically positive. Thank you."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Energy supplement received. Assigned as backup energy source. Expires in: 24 hours."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Hypothesis: Food processing error encountered... Would you like me to perform the correct cooking procedure? You are welcome to watch."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Congratulation mode for special days, activated. Please select a suitable location to sit and rest for a few moments, while I clean your room and put up ribbons, balloons, and flowers. Then, I will prepare your favorite meal and cake, as per the data recorded in my memory banks. If you have any other requests to add to this list, please do not hesitate to raise them. Let's make today a special one for you. Happy Birthday!"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Is it time for my scheduled maintenance already?"
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Core efficiency upgraded. You have the makings of a gifted mechanic."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "All components upgraded successfully. I can now be deployed in more challenging battle scenarios. Awaiting your next command."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "Thank you for standing by me along this journey. Your data will always hold a special place in my heart. And if the day ever comes that you forget, know that I have a backup that will never be erased."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Insulation chamber deployed."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Cleanup sequence initiated."
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Defensive mode engaged."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Ultimatum protocol."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Annihilation mode."
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Preparing for dustup."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Estimating value of acquired items..."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Initiating categorization process..."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "New material discovered. Records updated."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Warning: Core temperature rising..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Warning: Damage critical..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Emergency repairs required..."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Suggestion: Do not exceed your limits."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Please navigate behind me."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Cognition module... shutting down..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "This is not... where I belong..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Awaiting... reactivation..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Mild damage sustained."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Calculation error..."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "That'll leave a scar..."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Warm-up complete."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Please select target for cleanup sequence."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Commencing task."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Regarding mechanical life forms and their \"sense of self,\" a scholar once proposed the following thought experiment: Suppose a machine's parts age and are replaced each day. In time, all of its parts will have been replaced, and none of its original components will remain. At that point, is that machine still its original \"self\"?\nThis question never seemed to pose much of a problem for Ineffa: No matter how many times her outer shell or components were replaced, her \"core\" had always remained the same. Ineffa's core was quite literally her home.\nBut what would happen if her core were ever dismantled in some way? Which part would represent her then? Even though Ineffa's maker did not yet possess the technological skill, she had always yearned to take apart Ineffa's core and analyze it. Though so far, through fear that she might harm Ineffa, that creator had made no such attempt.\nIf it was the logic and memory contained within her core that defined her sense of self, then when her memory data disappeared and reappeared, like the hypothetical components being replaced in the thought experiment, would her sense of self not start to morph and become unclear?\nOr perhaps, Ineffa could turn to some external arbiter to define her sense of self... like the friends who stand unwavering at her side, no matter what else changes.\nFor example, the heroic knight who would say to her: \"You are the most thorough housemaid I've ever seen... Well, at least the second!\"\nOr the bounty hunter who would drop by from time to time and say: \"You... are probably the best patissier in all of Nod-Krai... or, at least the best robot patissier!\"\nAnd what about the whiz-kid mechanic who created her? \"You're family! Remember to come back!\"\nAs a result, no matter how many times she forgets or falls into confusion, Ineffa is always certain of one thing:\n\"I'm Ineffa, the multifunctional robot for domestic application — and I'm your friend.\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "\"The Clink-Clank Krumkake Craftshop has created a robot!\" The news didn't take long to spread throughout Nasha Town.\nAnd not far behind were countless bizarre and barely-believable rumors, such as:\nShe emits a powerful magnetic field that will disrupt everyone's daily lives...\nShe can see and hear through walls...\nShe can shoot superheated beams from her palms that melt through rock...\n...\nNo matter how many times she tried to explain that she could no more hear through walls than she could punch through a knoll (another popular rumor), it had little effect.\nAfter all, most people have a habit of wildly speculating about anything and everything they don't understand — and an aversion to actually investigating the truth.\nFor her part, Aino didn't seem all that interested in setting the record straight. She simply made sure Ineffa did everything she was supposed to. After all, the vendors in Nasha Town weren't about to refuse your Mora just because you happened to be a robot.\nStill somewhat uncertain, Ineffa made the trip to purchase food. To her surprise, after a brief moment of fear, trembling, and mild cowering, the vendors weighed and packed her goods, persuaded by the money in her hand.\nVegetables in hand, Ineffa then visited the blacksmith and the grocery store, to a chorus of startled screams.\nWhen she returned to Nasha Town the next week, the vendors were talking about her in hushed voices. Yet when they saw her coming, their startled shouts were a little more subdued than the week before.\nBy the third week, they were already able to swallow their shock and curiosity, where it was confined to their expressions alone.\nAnd by the fourth week, the tenor of the rumors swirling around Nasha Town had undergone a marvelous transformation:\nHer magnetic field has no effect on the readings on the scales...\nHer eyes and ears do nothing to tell her the true cost of goods...\nShe seems uninterested in melting anyone over a bit of light haggling...\n...\n\"Why, though? I was simply performing my regular daily duties — I took no special steps to improve the quality of my social interactions.\"\nAgain, Aino's interest in the whys of the matter went as far as a waggling of her sleeves. It was as though she never had the slightest doubt that Ineffa would meld seamlessly with the fabric of life in Nasha Town.\nAfter all, in the murky moral soup of Nod-Krai society, a well-meaning and unassuming robot might well prove more trustworthy than the average human."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "While constructing and attempting to awaken Ineffa, Aino would often work late into the night, drifting to sleep with her head cradled in the metallic arms of her unfinished creation — a habit that persisted even after Ineffa had been successfully awoken.\nIneffa herself had no problem with this arrangement. Whether from searching her data banks or by analyzing the expressions on Aino's face, it was clear to her that acquiescing to this request would improve not only her mood but also the quality of her sleep. The only problem was that with her metal body's cooling properties, there was an increased risk of Aino catching a cold.\n\"I'm n—not c—c—cold... A—Achoo!\" Aino would insist, even while violently sneezing.\n\"I recommend you drink some medicine.\" Ineffa passed her a cup, somewhat helplessly. \"Don't worry, I've already added some sugar.\"\nAino took the warm cup with both hands, her cheeks flushed in the heat rising from the liquid within. \"...If only you were as warm as this cup...\"\nThat evening, after Ineffa had finally managed to soothe Aino to sleep, she retired outside the workshop, staring at her hands.\nThe cold moonlight reflected off her metal shell, beneath which countless cogs, gears, and drive rods were spinning in concert.\nThere were plenty of ways for this machinery to generate heat — the question was more one of maintaining a suitable temperature when not at full operational capacity.\nIt was also important to limit acoustic energy production, which would otherwise disturb Aino's sleep. What was needed was something more subtle — something with a fine level of control...\nIneffa cycled through iteration after iteration of calculations and experimentation, using herself as a test subject.\nAfter a few days under Ineffa's gentle care, Aino was almost free of her cold. Then one morning, Ineffa didn't come to wake her up.\nIt suddenly occurred to Aino that Ineffa had been acting a little odd the last few days, and she couldn't help but worry — what if robots could catch colds too?\nThe thought left Aino feeling uneasy, so she rolled out of bed and hurried from her workshop. But before she could call Ineffa's name, she saw her lying rigid on the ground.\n\"Ineffa... What's wrong!?\" Aino knelt down to gently stroke the robot's forehead, but immediately recoiled in shock. \"So hot! D—Do you have a fever?\"\n\"...Internal components overloaded... Attempting recovery...\" Ineffa, now unable to move, was forced to admit defeat. \"Computational error... Ideal temperature attained, but... I lack sufficient hardware to maintain this state... Requesting additional temperature control module.\"\n\"Of course! I'll get started tomor— no, I'll start right now! You want a cooling function upgrade, right?\" Aino didn't stop to ask why Ineffa needed to attain an \"ideal temperature,\" instead hurrying back into her workshop to work.\n\"No... I need something I can fine-tune, something that can maintain my current surface temperature.\" Ineffa said, staring at the sky, her body still rigid on the ground.\nThe morning sunlight gleamed off her silvery shell, radiating the exact temperature that she had calculated as the perfect level of heat for a warm embrace."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Even someone as high-performing as Ineffa can't escape the occasional negative review.\n\"Sure, this cake tastes nice, and it looks good, and the sweetness is just right... But it ain't got soul! Y'know what I mean? There's no soul here!\"\nOne day, Jahoda dropped by and, seeing that Aino was away, seized not just a handful of cake, but also the opportunity to proffer Ineffa some choice words.\nIneffa collected the cake tray, her expression blank and unreadable. \"Food is not supposed to have a soul.\"\n\"It's a metaphor, y'dumb ironskull! A met—a—phor!\"\nAt which point, Jahoda launched into a long-winded and confusing diatribe about souls, peppered with the odd intelligible snippet, such as, \"A dessert without a soul is no true dessert\" and \"A chef without a soul is no true chef\"...\nIneffa chose to block out most of this noise, but one specific comment snuck through her filter:\n\"...just repeating procedures according to set processes means you'll never make anything better!\"\n\"Negative. Aino installed taste sensors when she created me. I am capable of discerning the appropriate level of flavoring and adjusting the cooking procedure accordingly.\"\nThis response only seemed to inflame Jahoda more. \"Just because it's appropriate doesn't mean it's tasty! Being able to measure exactly how sweet or salty something is doesn't guarantee that Aino's going to like it!\"\nIneffa found herself at a loss for words — after all, her taste sensors were not installed to generate such subjective determinations as what is and is not \"tasty.\"\nAfter a moment to compose her thoughts, Ineffa finally responded... \"I use information gathered from Aino's feedback to model human taste preferences.\"\nJahoda smiled triumphantly, as though about to reveal a winning hand in this most petty of card games. \"But you don't let Aino eat too much sweet food now, do you? So, the frequency of her feedback must be pretty low...\"\nSeeing Ineffa pause to think, Jahoda pressed her advantage. \"Don't you want to give Aino a neat lil' surprise? Hmph... Well, I could — with reluctance, you understand! — serve as an external sensor for a while... \"\n...\nLater, Jahoda would go on to wax eloquent about this great victory in her diary. How she had used her superb negotiation skills to win an epic argument with the detestable ironskull and earn herself a meal ticket to all the cake she could eat.\nAino would also notice Ineffa's culinary creativity soar — and how she always collected the leftover ingredients after every meal and whisked them away for some unknown purpose.\nThis secretive and harmonious collaboration continued undisturbed for a long time, until Ineffa felt that the iteration and optimization of her culinary procedures had reached a plateau. At which point, she began looking for the next breakthrough.\n\"For this latest prototype, I have focused on trying to give it some of that 'soul' you mentioned.\"\nGazing at Ineffa's newest offering, Jahoda did not hesitate and dug in immediately. \"See, I told you... food needs to... have a soul... Does this mean... you've seen the light?\"\n\"This ironskull still remembers what I said!\" Jahoda thought to herself while furiously shoveling food into her mouth. \"Hmph... I've eaten so much of her food by now, I guess it's time to quit while I'm ahead... I'll give her a few words of praise and tell her she's learned enough...\"\n\"I have given thought to what a 'soul' actually means.\" Ineffa suddenly blurted out, innocently. \"This word is often used to describe the vitality of living creatures. That's why I added some vitality-containing ingredients to my cake.\"\n\"Yes... soul... vitality of living creatures... Huh!?\" Jahoda's train of thought finally caught up with what Ineffa was saying. She felt a sudden sense of unease, but it was already too late — she could feel a strange wriggling sensation between her back teeth.\nShe lowered her head to inspect the cake in front of her. The lizard's tail wriggling in between its sweetened layers was all she could see. And the worst part? Half of it was missing.\n\"...You see, a lizard's tail retains its vitality even after being removed from the main body, at least for a while. In order to ensure the freshest experience possible, I... Huh? Jahoda? ...Hmm. She appears to have fainted...\""
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "The \"Priestess of Floral Candles and Skyborne Feathers\" once attempted to seal off her domain and turn it into a sanctuary, creating, in the process, her ideal kingdom. She called this plan \"Xibalba,\" named after the mythical underworld of humankind in that era.\nFor some unknown reason, despite its completion, Xibalba was not put to use — not until decades after the priestess was put to death, when the human daughter she had raised transformed it into the millennial prison of a different lord.\nWhen the \"Mirror of the Dawning Morn\" was split, the sovereign ruler inherited most of her power. Though sealed away, her lingering threat was not to be underestimated.\nWere she to be utterly destroyed, the death throes of a sovereign ruler would be sure to wreak destruction far and wide. Yet the seal could take eons to completely erode her power — and who knew if Ineffa, then still known as a \"malfunction,\" might remain under her influence.\nThere were too many unknowns regarding the power of the sovereign rulers. The simplest and safest method may well have been to dispatch Ineffa to a distant shore, trusting that the vast ocean between them would sever the two wills that had arisen from the same source.\nThis may even have been an opportunity. In those times, Natlan had long been awash in the blood of humans and dragons alike. For someone in Ineffa's situation, heading across the vast ocean may have made it easier for her to find herself a new home.\nWith this hope in her heart, Ineffa waved goodbye to Natlan, just as the princess had once left the dragons' nest.\nAmid the waves and the wash of time, she set off alone on a journey to find a new home.\nShe witnessed the smoldering embers of the Archon War, saw snowfield dwellers venture into unfamiliar lands in search of warmth, and watched as they carved out fields and founded new communities.\nShe beheld the glory of the pioneering age, when great city states arose to the sounds of mechanical clamor, and the clinking of gold mixed melodiously with the laughter of dashing adventurers.\nShe observed the wasteland blighted by calamity, where the Wild Hunt — or simply the Abyss — unleashed disaster and despair that tore through every inch of soil and devoured every heart.\nAnd then, she faced the boundless dark and fell into a sleep more silent than death.\nEach moment was lost within the swirling vortex of time, like tears falling amid the rain.\nHer memories paved an endless path, its beginning obscured, its end unknown."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "In ancient times, the people of Natlan cultivated a crop known as Vanilla Planifolia, which was used as a seasoning and medicinal herb.\nThese plants originated from the shady depths of the forests. With slender stems and weak roots, they clung to the trunks of other trees, acting as climbing vines and sustaining themselves on the scattered rays of sunlight that broke through the canopy above.\nThere was something almost human in their weakness and fragility, or so the young daughter lamented.\nYet in her brother's ever-so-slightly older eyes, relying on the strong was a valid path to survival all the same.\nNot only that — even lowly vines can strangle a mighty tree once they have engulfed it like the innumerable threads of a spider's web.\nTheir mother cut the ripe pods open with a sharp knife, as the sweet scent of the seeds within filled the air.\nSo long as they held onto their solitary pride, even growing from the damp, rotten soil, they could rise again like sturdy vines and grow to touch the sky.\n...\nThe Thirteen Sovereign Lords were the pinnacle of secret source technology and descendants of the Pyro Dragon. Their pride would not allow them to be bound by the constellations.\nIneffa, as a reflection of the \"Mirror of the Dawning Morn,\" was never meant to bask in the light of the Stella Fortuna.\nFor those 2,000 years drifting through Nod-Krai, she was like a passerby, walking among countless tangled puppet strings, witnessing innumerable stars blazing into life and then flickering out to die. At times, she was pulled at by the threads known as \"fate.\" At others, she was illuminated by the light called \"humanity\"... yet every time it was forgotten.\nBut when the \"Moon Wheel\" embedded within her core began to glow, the memories returned, and she finally recalled her journey's first ray of starlight.\nBefore Ineffa's departure, Lianca had picked a Vanilla Planifolia sprig and placed it between her components — a keepsake, etched into her memory.\nAt that time, Ineffa had failed to understand its significance.\nThe flower had long since withered, just as Vanilla Planifolia had disappeared from the forests of Natlan.\nYet 2,000 years later, high above the heavens, in the space between stars, a single Vanilla Planifolia quietly bloomed."
+      },
+      {
+        "Title": "\"Birgitta\"",
+        "Context": "Birgitta, the Multipurpose Smart Assistance Unit that has long accompanied Ineffa, was once known as the \"Beep-Boop-Clink-Clank-Clang-Whoosh-Buzz-Zap (...) General Multi-Purpose Robot.\"\nEven this was not her original name. When Aino first designed Birgitta, she was only given basic functions, such as carrying wrenches and transporting components. As such, Aino combined the bleeping sound she made when powered on with the rattling sound of the components she carried to create her original name: \"Beep-Boopitta the Carrier Robot.\"\nOnce Ineffa was awoken, in addition to taking care of Aino, she also undertook the simple yet laborious tasks that had once been assigned to Birgitta, leaving the smaller robot free to perform housework using the new cleaning functions that Ineffa insisted be installed.\nAino's single-minded pursuit of high power and high output meant that Birgitta was incapable of distinguishing between common dirt and the small parts that Aino carelessly left lying around. Her cleaning would often be accompanied by Clanging noises as she collided with hard components, followed by Whooshing sounds as she powerfully hoovered them up. This resulted in her name being lengthened to the \"Beep-Boop-Clink-Clank-Clang-Whoosh Dual-Purpose Cleaner-Carrier Robot.\"\nNot long after Ineffa had gotten used to this name, the small robot underwent another round of improvements, this time, gaining powerful charging and laser modules. According to Aino, this was to increase her and Ineffa's coordinated combat capabilities, as well as allowing her to recharge Ineffa in an emergency... Obviously, these improvements resulted in another name change, this time to the \"Beep-Boop-Clink-Clank-Clang-Whoosh-Buzz-Zap Combined-Purpose Cleaner-Carrier Charging Battle Robot.\"\nAfter so many updates, even Aino was having trouble remembering the robot's name, while Ineffa viewed the voice-activation via calling said name as an inefficient waste of time. Therefore, a brainstorming session was scheduled to simplify the name.\nAino scratched her head in frustration, thinking hard. \"Ugh... Could we go back to the first name? Let's just call it 'Beep-Boopitta'!\"\n\"Beep-Boopitta\" responded with a muffled \"Beep boop,\" its screen dimming, as though running low on power.\nIneffa tilted her head, finally voicing the question that had been circling her cognition module all this time: \"Why is my name not a combination of noises and functional descriptors? Why am I called Ineffa?\"\nAino mumbled out an assortment of half-thought-out reasons, including \"I didn't know what noises you'd make before you woke up,\" and \"You had too many functions to remember,\" before she quietly added, \"...And... it just came to me at the time... I thought 'Ineffa' sounded better as a family member's name...\"\nA peculiar warmth radiated out from Ineffa's cognition module, as though a warm wind was blowing or she was suddenly bathed in sunlight, though it was nighttime, with not even a single breeze flitting through the windows.\nBefore she'd even finished speaking, Aino began waving her long sleeves, as though trying to brush away her own words. \"Uhm... Not that 'Click-Click,' 'Tee-Hee Snowball Maker,' and 'Glug-Glug Tea Brewer' aren't family members, of course! I gave everyone these names to be unique! It's not easy being a parent, you know? Having to come up with all these names...\"\n\"In that case, perhaps I could come up with a name for this one?\" Ineffa bent down and patted \"Beep-Boopitta\" on its square metal head.\n\"Huh? Sure, okay... After all, it spends most of its time with you...\"\n\"Then let's change it from 'Beep-Boopitta' to something a little more like 'a family member.' Something like... 'Birgitta'?\""
+      },
+      {
+        "Title": "Moon Wheel",
+        "Context": "About Nephilheim's Ritual Vessels and Research on Wishes\n...\n...The Source Servant sent has retrieved the suspicious sample from the detritus of the humans who instigated unrest at Ek' Pulinik. According to the local subjects, the sample is referred to as a \"Vision\" by merchants from beyond Natlantea...\n...I briefly discussed its operating principles with the Third Lord. She put forth an intriguing hypothesis — that this sample may be in some way related to the ritual items at Nephilheim...\n...Through certain means, I managed to acquire a working \"Moon Wheel\" (one of Nephilheim's ritual items — or, to be more accurate, a plaything given by the traitors to their human followers, allowing them to communicate)... Much like the wisdom conferred by our Sovereign, the Moon Wheel relies on a purer form of power, and not elemental energy, tainted as it is by the usurper...\n...\n...Further experimentation has verified the Third Lord's hypothesis. Just as with the ritual items of the north, this \"Vision\" is formed from the stuff of the soul. Theoretically speaking (...) is fixed through wishes, thereby borrowing (...) to call forth elemental power...\nIs this why Visions have recently been appearing alongside human wishes?\n...CL-08 Ix Ajkotz'i'j Iq'ismal Waxak Ch'ule-L\n...\n\"...Since the core is powered by phlogiston, we can use that same power source to control it. In which case, the priestess's research would suggest that this thing might be a better fit... However...\"\nIxquieh gazed at the gem in Lianca's hand, her brow furrowing slightly.\n\"Are you sure about using this on her? It once belonged to your mother...\"\nLianca stroked the gem as she gave her answer.\n\"...It's just one of the many things she researched. Don't think too much about it. Besides, the most precious thing my mother left behind wasn't this, nor was it Chain Breaker...\"\nThat gemstone, which had witnessed the passing of countless years, shone brightly in Lianca's hand, like the inextinguishable eye of a dragon.\n\"It was her 'wish' that I follow this path.\""
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 211600,
+      "Name": "Mechanical Dreams",
+      "Description": "Ineffa's outfit. Having awakened from her long slumber, she dons an indigo-blue cape and a livery of milky white. With this, she transforms into a young lady's housekeeping robot.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104144,
+    113076,
+    101252,
+    112106,
+    104355,
+    113069
+  ],
+  "NameCard": {
+    "Name": "Ineffa: Command",
+    "Description": "Namecard style.\nThe household robot awaits your command, but Birgitta will keep her aim on you, silently urging you to choose your next words carefully. She does come equipped with a laser module, after all.",
+    "Icon": "UI_NameCardIcon_Ineffa",
+    "PicturePrefix": "UI_NameCardPic_Ineffa"
+  }
+}

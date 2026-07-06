@@ -1,0 +1,1114 @@
+{
+  "Id": 10000015,
+  "PromoteId": 15,
+  "Sort": 22,
+  "Body": 4,
+  "Icon": "UI_AvatarIcon_Kaeya",
+  "SideIcon": "UI_AvatarIcon_Side_Kaeya",
+  "Name": "Kaeya",
+  "Description": "An accomplished swordsman and a strategic thinker in the Knights of Favonius, rumored to hail from beyond Mondstadt.",
+  "BeginTime": "2020-09-15T04:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 1,
+  "BaseValue": {
+    "HpBase": 975.6164,
+    "AttackBase": 18.6984,
+    "DefenseBase": 66.381
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 1531,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:P}",
+            "2-Hit DMG|{param2:P}",
+            "3-Hit DMG|{param3:P}",
+            "4-Hit DMG|{param4:P}",
+            "5-Hit DMG|{param5:P}",
+            "Charged Attack DMG|{param6:P}+{param7:P}",
+            "Charged Attack Stamina Cost|{param8:F1}",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 153101,
+              "Level": 1,
+              "Parameters": [
+                0.5375,
+                0.51686,
+                0.65274,
+                0.70864,
+                0.88236,
+                0.5504,
+                0.731,
+                20,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 153102,
+              "Level": 2,
+              "Parameters": [
+                0.58125,
+                0.55893,
+                0.70587,
+                0.76632,
+                0.95418,
+                0.5952,
+                0.7905,
+                20,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 153103,
+              "Level": 3,
+              "Parameters": [
+                0.625,
+                0.601,
+                0.759,
+                0.824,
+                1.026,
+                0.64,
+                0.85,
+                20,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 153104,
+              "Level": 4,
+              "Parameters": [
+                0.6875,
+                0.6611,
+                0.8349,
+                0.9064,
+                1.1286,
+                0.704,
+                0.935,
+                20,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 153105,
+              "Level": 5,
+              "Parameters": [
+                0.73125,
+                0.70317,
+                0.88803,
+                0.96408,
+                1.20042,
+                0.7488,
+                0.9945,
+                20,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 153106,
+              "Level": 6,
+              "Parameters": [
+                0.78125,
+                0.75125,
+                0.94875,
+                1.03,
+                1.2825,
+                0.8,
+                1.0625,
+                20,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 153107,
+              "Level": 7,
+              "Parameters": [
+                0.85,
+                0.81736,
+                1.03224,
+                1.12064,
+                1.39536,
+                0.8704,
+                1.156,
+                20,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 153108,
+              "Level": 8,
+              "Parameters": [
+                0.91875,
+                0.88347,
+                1.11573,
+                1.21128,
+                1.50822,
+                0.9408,
+                1.2495,
+                20,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 153109,
+              "Level": 9,
+              "Parameters": [
+                0.9875,
+                0.94958,
+                1.19922,
+                1.30192,
+                1.62108,
+                1.0112,
+                1.343,
+                20,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 153110,
+              "Level": 10,
+              "Parameters": [
+                1.0625,
+                1.0217,
+                1.2903,
+                1.4008,
+                1.7442,
+                1.088,
+                1.445,
+                20,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 153111,
+              "Level": 11,
+              "Parameters": [
+                1.148438,
+                1.104337,
+                1.394662,
+                1.5141,
+                1.885275,
+                1.176,
+                1.561875,
+                20,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 153112,
+              "Level": 12,
+              "Parameters": [
+                1.2495,
+                1.201519,
+                1.517393,
+                1.647341,
+                2.051179,
+                1.279488,
+                1.69932,
+                20,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 153113,
+              "Level": 13,
+              "Parameters": [
+                1.350562,
+                1.298701,
+                1.640123,
+                1.780582,
+                2.217083,
+                1.382976,
+                1.836765,
+                20,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 153114,
+              "Level": 14,
+              "Parameters": [
+                1.451625,
+                1.395883,
+                1.762853,
+                1.913822,
+                2.382988,
+                1.486464,
+                1.97421,
+                20,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 153115,
+              "Level": 15,
+              "Parameters": [
+                1.561875,
+                1.501899,
+                1.896741,
+                2.059176,
+                2.563974,
+                1.59936,
+                2.12415,
+                20,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10073,
+        "Name": "Ceremonial Bladework",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_01"
+      },
+      {
+        "GroupId": 1532,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:P}",
+            "CD|{param2:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 153201,
+              "Level": 1,
+              "Parameters": [
+                1.912,
+                6
+              ]
+            },
+            {
+              "Id": 153202,
+              "Level": 2,
+              "Parameters": [
+                2.0554,
+                6
+              ]
+            },
+            {
+              "Id": 153203,
+              "Level": 3,
+              "Parameters": [
+                2.1988,
+                6
+              ]
+            },
+            {
+              "Id": 153204,
+              "Level": 4,
+              "Parameters": [
+                2.39,
+                6
+              ]
+            },
+            {
+              "Id": 153205,
+              "Level": 5,
+              "Parameters": [
+                2.5334,
+                6
+              ]
+            },
+            {
+              "Id": 153206,
+              "Level": 6,
+              "Parameters": [
+                2.6768,
+                6
+              ]
+            },
+            {
+              "Id": 153207,
+              "Level": 7,
+              "Parameters": [
+                2.868,
+                6
+              ]
+            },
+            {
+              "Id": 153208,
+              "Level": 8,
+              "Parameters": [
+                3.0592,
+                6
+              ]
+            },
+            {
+              "Id": 153209,
+              "Level": 9,
+              "Parameters": [
+                3.2504,
+                6
+              ]
+            },
+            {
+              "Id": 153210,
+              "Level": 10,
+              "Parameters": [
+                3.4416,
+                6
+              ]
+            },
+            {
+              "Id": 153211,
+              "Level": 11,
+              "Parameters": [
+                3.6328,
+                6
+              ]
+            },
+            {
+              "Id": 153212,
+              "Level": 12,
+              "Parameters": [
+                3.824,
+                6
+              ]
+            },
+            {
+              "Id": 153213,
+              "Level": 13,
+              "Parameters": [
+                4.063,
+                6
+              ]
+            },
+            {
+              "Id": 153214,
+              "Level": 14,
+              "Parameters": [
+                4.302,
+                6
+              ]
+            },
+            {
+              "Id": 153215,
+              "Level": 15,
+              "Parameters": [
+                4.541,
+                6
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10074,
+        "Name": "Frostgnaw",
+        "Description": "Unleashes a frigid blast, dealing <color=#99FFFFFF>Cryo DMG</color> to opponents in front of Kaeya.\n\n<i>Kaeya seems affable, but his nature is that of unyielding ice.</i>",
+        "Icon": "Skill_S_Kaeya_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 1539,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:P}",
+          "CD|{param2:F1}s",
+          "Duration|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 153901,
+            "Level": 1,
+            "Parameters": [
+              0.776,
+              15,
+              8,
+              60
+            ]
+          },
+          {
+            "Id": 153902,
+            "Level": 2,
+            "Parameters": [
+              0.8342,
+              15,
+              8,
+              60
+            ]
+          },
+          {
+            "Id": 153903,
+            "Level": 3,
+            "Parameters": [
+              0.8924,
+              15,
+              8,
+              60
+            ]
+          },
+          {
+            "Id": 153904,
+            "Level": 4,
+            "Parameters": [
+              0.97,
+              15,
+              8,
+              60
+            ]
+          },
+          {
+            "Id": 153905,
+            "Level": 5,
+            "Parameters": [
+              1.0282,
+              15,
+              8,
+              60
+            ]
+          },
+          {
+            "Id": 153906,
+            "Level": 6,
+            "Parameters": [
+              1.0864,
+              15,
+              8,
+              60
+            ]
+          },
+          {
+            "Id": 153907,
+            "Level": 7,
+            "Parameters": [
+              1.164,
+              15,
+              8,
+              60
+            ]
+          },
+          {
+            "Id": 153908,
+            "Level": 8,
+            "Parameters": [
+              1.2416,
+              15,
+              8,
+              60
+            ]
+          },
+          {
+            "Id": 153909,
+            "Level": 9,
+            "Parameters": [
+              1.3192,
+              15,
+              8,
+              60
+            ]
+          },
+          {
+            "Id": 153910,
+            "Level": 10,
+            "Parameters": [
+              1.3968,
+              15,
+              8,
+              60
+            ]
+          },
+          {
+            "Id": 153911,
+            "Level": 11,
+            "Parameters": [
+              1.4744,
+              15,
+              8,
+              60
+            ]
+          },
+          {
+            "Id": 153912,
+            "Level": 12,
+            "Parameters": [
+              1.552,
+              15,
+              8,
+              60
+            ]
+          },
+          {
+            "Id": 153913,
+            "Level": 13,
+            "Parameters": [
+              1.649,
+              15,
+              8,
+              60
+            ]
+          },
+          {
+            "Id": 153914,
+            "Level": 14,
+            "Parameters": [
+              1.746,
+              15,
+              8,
+              60
+            ]
+          },
+          {
+            "Id": 153915,
+            "Level": 15,
+            "Parameters": [
+              1.843,
+              15,
+              8,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10075,
+      "Name": "Glacial Waltz",
+      "Description": "Coalescing the frost in the air, Kaeya summons 3 icicles that revolve around him.\nThese icicles will follow the character around and deal <color=#99FFFFFF>Cryo DMG</color> to opponents in their path for the ability's duration.\n\n<i>A winsome smile, genial words, and the merciless hoarfrost that lies beneath... These are all Kaeya's weapons.</i>",
+      "Icon": "Skill_E_Kaeya_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 1521,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 152101,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 152101,
+        "Name": "Cold-Blooded Strike",
+        "Description": "Every hit with <color=#FFD780FF>Frostgnaw</color> regenerates HP for Kaeya equal to 15% of his ATK.",
+        "Icon": "UI_Talent_S_Kaeya_05"
+      },
+      {
+        "GroupId": 1522,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 152201,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 152201,
+        "Name": "Glacial Heart",
+        "Description": "Opponents <color=#99FFFFFF>Frozen</color> by <color=#FFD780FF>Frostgnaw</color> will drop additional Elemental Particles.\nFrostgnaw may only produce a maximum of 2 additional Elemental Particles per use.",
+        "Icon": "UI_Talent_S_Kaeya_06"
+      },
+      {
+        "GroupId": 1523,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 152301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 152301,
+        "Name": "Hidden Strength",
+        "Description": "Decreases sprinting Stamina consumption for your own party members by 20%.\nNot stackable with Passive Talents that provide the exact same effects.",
+        "Icon": "UI_Talent_Explosion_Sprint"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 151,
+        "Name": "Excellent Blood",
+        "Description": "The CRIT Rate of Kaeya's Normal and Charge Attacks against opponents affected by <color=#99FFFFFF>Cryo</color> is increased by 15%.",
+        "Icon": "UI_Talent_S_Kaeya_01"
+      },
+      {
+        "Id": 152,
+        "Name": "Never-Ending Performance",
+        "Description": "While <color=#FFD780FF>Glacial Waltz</color> is in effect, for each opponent defeated, its duration is increased by 2.5s, up to a maximum of 15s.",
+        "Icon": "UI_Talent_S_Kaeya_02"
+      },
+      {
+        "Id": 153,
+        "Name": "Dance of Frost",
+        "Description": "Increases the Level of <color=#FFD780FF>Frostgnaw</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Kaeya_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 154,
+        "Name": "Frozen Kiss",
+        "Description": "Triggers automatically when Kaeya's HP falls below 20%:\nCreates a shield that absorbs damage equal to 30% of Kaeya's Max HP. Lasts for 20s.\nThis shield absorbs <color=#99FFFFFF>Cryo DMG</color> with 250% efficiency.\nCan only occur once every 60s.",
+        "Icon": "UI_Talent_S_Kaeya_03"
+      },
+      {
+        "Id": 155,
+        "Name": "Frostbiting Embrace",
+        "Description": "Increases the Level of <color=#FFD780FF>Glacial Waltz</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Kaeya_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 156,
+        "Name": "Glacial Whirlwind",
+        "Description": "<color=#FFD780FF>Glacial Waltz</color> will generate 1 additional icicle, and will regenerate 15 Energy when cast.",
+        "Icon": "UI_Talent_S_Kaeya_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Frostwind Swordsman",
+    "Detail": "An accomplished swordsman and a strategic thinker in the Knights of Favonius, rumored to hail from beyond Mondstadt.",
+    "Association": 1,
+    "Native": "Knights of Favonius",
+    "BirthMonth": 11,
+    "BirthDay": 30,
+    "VisionBefore": "Cryo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Pavo Ocellus",
+    "CvChinese": "孙晔",
+    "CvJapanese": "鳥海浩輔",
+    "CvEnglish": "Josey Montana McCoy",
+    "CvKorean": "Jung Joo-won",
+    "CookBonus": {
+      "OriginItemId": 108012,
+      "ItemId": 108014,
+      "InputList": [
+        100011,
+        100064
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Kaeya, Knight of Favonius. Please allow me to join you on your journey. Guarding you on your journey sounds far more entertaining than any of the usual Favonius stuff."
+      },
+      {
+        "Title": "Chat: Nothing to Do",
+        "Context": "I didn't know you were such a slacker."
+      },
+      {
+        "Title": "Chat: Knights of Favonius",
+        "Context": "Hehe, seems all the other knights already have their hands full."
+      },
+      {
+        "Title": "Chat: Laziness",
+        "Context": "Come on, let's get moving. We're not frozen in place, after all."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Cryo is always far more effective in the rain. This is going to get interesting..."
+      },
+      {
+        "Title": "When It Snows: Anecdote",
+        "Context": "How about a ghost story to go with the snow?"
+      },
+      {
+        "Title": "When It Snows: Cold",
+        "Context": "What's wrong? Can't handle the cold?"
+      },
+      {
+        "Title": "When It's Windy",
+        "Context": "What a pleasant breeze. I wonder how long it'll last?"
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Seize the day."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Hey, fancy joining me at the tavern for a bit?"
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "You're not scared of the dark, are you? That's... interesting."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Leaving already? See you next time, then. Don't make me wait too long, though."
+      },
+      {
+        "Title": "About Kaeya",
+        "Context": "Is the Abyss Order causing you trouble? If there's anything bothering you, you know you can talk to me."
+      },
+      {
+        "Title": "About Us: Employment Relationship",
+        "Context": "If you ever need me, let me know. Let's not make this a transaction relationship."
+      },
+      {
+        "Title": "About Us: Strength",
+        "Context": "Oh? Well, if you're concerned about keeping things professional, maybe you can find more use for me on the front lines. How 'bout it, boss? Haha, just don't feel intimidated by what I can do."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "Still struggling with how Visions work? Let's see... How can I explain it... The apparatus that allows us to see is our eyes. A Vision is the apparatus by which we control the elements. Simple, is it not?"
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Do you drink wine? Dandelion wine has a unique body to it. Oh, you're underage? You should try Mondstadt's apple cider vinegar. I know just the place."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Have you ever seen the owl of Dragonspine? If you look directly at it, it seems to see right through you, while letting go of none of its own secrets... Quite fascinating, don't you think?"
+      },
+      {
+        "Title": "About Jean",
+        "Context": "What? The Acting Grand Master? You need to give her your full support."
+      },
+      {
+        "Title": "About Lisa",
+        "Context": "Oh Lisa. Hmm... You'd better not forget to return your books on time. I made that mistake once and boy was she angry. My arm is still numb from last time..."
+      },
+      {
+        "Title": "About Amber",
+        "Context": "That Outrider is a clever and righteous knight. Be careful not to step out of line in front of her."
+      },
+      {
+        "Title": "About Diluc",
+        "Context": "Diluc? He was cute as a young lad. But nowadays he just seems to be in a world of his own... Overall, not much fun to hang out with."
+      },
+      {
+        "Title": "About Klee",
+        "Context": "Klee. Seems she has failed to elude the Acting Grand Master's investigative skills, despite the pointers I gave her... Haha, I'm kidding, no need to go reporting me or anything."
+      },
+      {
+        "Title": "About Albedo",
+        "Context": "Albedo, eh? Calm, collected, and incredibly talented. He's the type everybody likes, some even more so than others. What, you into him as well?"
+      },
+      {
+        "Title": "About Diona",
+        "Context": "Have you tried one of Diona's drinks? Oh right, you're still underage. Haha, such a shame, it truly is — to not be able to revel with you in such bliss. Hehe, I guess all we can do is wait for you to be old enough."
+      },
+      {
+        "Title": "About Varka",
+        "Context": "Now that you mention him, it is a shame there is no one in the Knights of Favonius to inherit the Grand Master's approach to his work. *sigh* I must say I really do appreciate people like him."
+      },
+      {
+        "Title": "About Fischl",
+        "Context": "Hmm? You think Fischl having one eye covered is very fitting given her title of Prinzessin der Verurteilung. Hahaha, if that's the case, that must also make me a descendant of some kind of former royal lineage, no?"
+      },
+      {
+        "Title": "About Noelle",
+        "Context": "I was entrusted by the Acting Grand Master to work in the background to support Noelle. But there hasn't been much for me to concern myself with — she has a good head on her shoulders. Quite the relief."
+      },
+      {
+        "Title": "About Rosaria",
+        "Context": "Ahaha, you want to know about the secrets of Sister Rosaria? That... I cannot tell you. Though my impression of her is not bad — certainly better than a certain someone whose name I won't bother to mention. She's honest with herself. She casts off that which she has no time for and she doesn't feign motivation for affairs that do not interest her."
+      },
+      {
+        "Title": "About Sucrose",
+        "Context": "Sucrose may not be much of an extrovert in public, but as they say — it's always the quiet ones... Apparently, her laboratory is home to quite the eclectic range of implements and her experiments are more than just intellectually stimulating... All hearsay, of course. You don't seriously think I would go snooping around a fair lady's private quarters, do you?"
+      },
+      {
+        "Title": "About Collei",
+        "Context": "Oh, Collei? Oho, now there's a name I haven't heard in a while... You came to the right person! Let me tell you her whole story, starting right from the very beginning, with all the delicious details!"
+      },
+      {
+        "Title": "About Mika",
+        "Context": "When I first met Mika, he seemed like the nervous type, so I decided to joke around with him a little. I didn't count on that making him even more nervous... His smile looked as if it were plastered onto his face, and in the end, he even wrote me a letter of apology. Tsk-tsk. Does taking everything so seriously run in the Schmidts' blood?"
+      },
+      {
+        "Title": "About Dahlia",
+        "Context": "Do you know if he drinks a lot of wine as part of church ceremonies? Because his alcohol tolerance is through the steeple. The first time we got to know each other was when I lost to him in a drinking contest. Well, the Anemo Archon loves his wine, so it's fitting that his spokesperson is such a devoted advocate for the wonders of alcohol... Things like that are what give the City of Freedom its charm."
+      },
+      {
+        "Title": "About Lohen",
+        "Context": "That Lohen kid hasn't come to me for a forged signature in a while. I wonder if he's already mastered the art? He's certainly smart enough... Give it a while, and I'll write him a letter in the Grand Master's handwriting. Then we'll see how much he's learned..."
+      },
+      {
+        "Title": "More About Kaeya: I",
+        "Context": "The title of Cavalry Captain is nothing to get excited about. Now that I think about it, the Grand Master took all the cavalry from Mondstadt so there's none left for me to captain..."
+      },
+      {
+        "Title": "More About Kaeya: II",
+        "Context": "There are a total of ten captains within the Knights of Favonius. But truth be told, not all of them have what it takes to be leaders."
+      },
+      {
+        "Title": "More About Kaeya: III",
+        "Context": "My eye? My eye is fine. There's nothing unusual about hiding one's body parts from view. It's the same reason I wear pants... or any other item of clothing, for that matter."
+      },
+      {
+        "Title": "More About Kaeya: IV",
+        "Context": "Khaenri'ah, huh? You sure know a lot! The legacy of Khaenri'ah is long gone. The sinners are all that's left, and they're not worth mentioning."
+      },
+      {
+        "Title": "More About Kaeya: V",
+        "Context": "I didn't realize we'd known each other for so long now. Time flies! You know, following you on your journey might just be the most fun I've had in my whole life. I hope it stays that way."
+      },
+      {
+        "Title": "Kaeya's Hobbies",
+        "Context": "Wine tasting is an art form. Mondstadt's wine is a gift from the Anemo Archon. It's only right that one should learn how to appreciate it."
+      },
+      {
+        "Title": "Kaeya's Troubles",
+        "Context": "Lonely? Me? Not with someone here nagging me all the time, that's for sure."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Sparkling wine is a specialty of Mondstadt. Mix it with three parts Dandelion Wine and the bitterness disappears completely. This concoction is known as \"Death After Noon.\" Delectable."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I can't believe that some people actually drink grape juice... If they had a little more patience, they would find it ferments into the most exquisite wine. Hmph. So unromantic."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Ho! This is quite exceptional... You are full of surprises."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "You should serve this with wine, it would really add the finishing touch."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Ew... *Ahem* I'm just a slow eater... I'll finish it, don't worry."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Today is a day worth celebrating, I hope this day can bring you true happiness."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Hmm. Not bad."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "You always seem to be around to give me a hand. Thanks."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Hmm, seems I'm getting stronger. I say, how is it you seem happier than me about it?"
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "We were just traveling partners. I never thought I'd have you to thank for getting me to this point. Seems I really should respond in kind. Let us carry on, partner. The road ahead is still long."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Cool it!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Freeze!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Dodge this!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Don't get frostbite."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Oh, so sorry!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "This moment will be frozen in time."
+      },
+      {
+        "Title": "Sprint Start: I",
+        "Context": "What's the hurry?"
+      },
+      {
+        "Title": "Sprint End: I",
+        "Context": "*pant* Haha."
+      },
+      {
+        "Title": "Deploying Wind Glider: I",
+        "Context": "Catch the wind."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "How fortunate!"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Fascinating."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Haha, quite the find."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Time to fight back, I s'pose."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "I'm getting tired of this game."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "You're getting on my nerves..."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "I'll help out, but you owe me."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Hey, don't die on me. That's no fun."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "I'm not done..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "That was unexpected..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "This doesn't look good..."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Urgh!"
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Don't push your luck!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Oh, I'm looking forward to this."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "This will be interesting."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Ready when you are."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Kaeya Alberich is an adopted son to the Ragnvindr Family, the renowned wine tycoon.\nIt has been a long time since he last called Diluc Ragnvindr \"brother.\"\nKaeya currently serves as the Cavalry Captain of the Knights of Favonius, and is trusted by Jean.\nKaeya is often the one wrapping things up in every incident that occurs in Mondstadt's vicinity."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "It is a curious fact that your best chance of finding Kaeya is not by visiting the Knights' headquarters, but by frequenting the taverns at night.\nKaeya is often found sitting at the bar, gossiping with the city folk, and sipping the famed Mondstadt beverage, Death After Noon.\nHe is surprisingly popular among the elderly of Mondstadt, even earning himself the title of \"top candidate for grandson-in-law.\"\nIt's hard to imagine someone as mischievous, amiable, and wine-loving as Kaeya being the Cavalry Captain of the Knights of Favonius.\nHunters and bandits alike are often among Kaeya's drinking buddies. As wary of him as they may initially be, all are ultimately disarmed by his smooth talking, and end up telling him everything he wants to know.\nDepending on what they then make privy to Kaeya, their night may turn into an uncontrollable nightmare or remain one of harmless banter.\n\"Everyone's got a secret, but not everyone knows what to do with it.\"\nSays Kaeya, with his usual arrogant smirk."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "\"Justice is not an absolute principle, but is the result of striking that fine balance between strength and strategy. As for the details of how it's done... Don't worry yourself too much about that.\"\nKaeya once said these words in front of Grand Master Varka.\nAs long as everything falls into place the way he expects in the end, Kaeya doesn't care all that much about how it's done.\nThis cavalier attitude is what defines his character.\nNot that different from Death After Noon's wild and explosive taste, one might add.\nHowever, his reckless approach to things is not uncontroversial.\nOnce, in order to force a bandit leader into facing him directly, Kaeya triggered the Ruin Guard at an ancient ruin to cut his opponent off, putting his own men at risk in the process.\nIt's times like these when even Jean, who puts a lot of trust in Kaeya, finds herself shaking her head in disapproval.\nNot that this bothers Kaeya, of course. On the contrary, he actually enjoys putting people into the difficult position of making tough decisions.\nHe takes pleasure in seeing the hesitation in his comrades' eyes in the moment just before they dive into battle with him, just as he takes pleasure in the look of fear in his enemies' eyes as they face off against him."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "The flourishing winery business in Mondstadt has been a great source of prosperity in the region over the years. This prosperity often entices greedy bandits and monsters to the area.\nThey are a motley bunch who hide in the shadows, and their backgrounds, motives, and allegiances are varied and complex.\nKaeya battles against this threat to Mondstadt not only with his sword, but also with his smarts and his wit.\nA young knight once dedicated years of his life to studying threats in and around Mondstadt, and reached an astounding conclusion:\nWhen Death After Noon is out of season due to lack of supply, the number of reported incidents inside and outside the city show a drastic decrease, and this remains the case until Death After Noon returns to the market...\nThe young knight showed his findings to Cavalry Captain Kaeya in hopes of getting some advice from him.\n\"Interesting. I'll look into it.\" Kaeya answered, with a wry smirk on his face."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Generally speaking, Kaeya is an easy person to have a conversation with. The only topic that you will never hear him discuss is his past.\nEven when the Grand Master demanded information on his background, Kaeya skirted around the issue and gave only vague answers devoid of details.\n\"One afternoon near the end of summer a decade ago, my father and I passed by the Dawn Winery.\"\n\"'I'll go get us some grape juice for the road,' he said, but he never came back.\"\n\"If Master Crepus hadn't taken me in, I doubt I'd have made it through the storm that night.\"\nThis matter-of-fact description hides a carefully constructed lie.\nKaeya has never once spoken the truth about what happened that afternoon:\n\"This is your chance. You are our last hope.\"\nKaeya's father squeezed his son's lean shoulders as he spoke, seemingly looking right through Kaeya to some place far beyond.\nOn the other side of the horizon sat their distant homeland of Khaenri'ah.\nKaeya would never forget the look of both hope and hatred in his father's eyes as he uttered those words."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Many citizens still remember the two most eye-catching young gentlemen in all of Mondstadt a few years ago.\nOne of them was the dapper Diluc, an elegant swordsman who always had a warm smile and a confident posture.\nThe other was the eccentric Kaeya. He was Diluc's friend, supporter, and sounding board, ensuring he got through every challenge he faced smoothly.\nThey were almost like twins, knowing each other's thoughts and intentions without a word, protecting Mondstadt in both light and dark.\n...Until that fateful day, now ingrained deep in Kaeya's memory, when the convoy that Diluc was escorting was attacked by a huge monster.\nIt was the first and only time that Kaeya failed in his duty.\nBy the time Kaeya finally reached Diluc, it was all over.\nThe power their father had used to successfully fend off the attack backfired, taking their father's life.\nBoth Kaeya and Diluc were shocked by what they had witnessed, losing the calm composure a knight should retain.\n\"Even someone like Master Crepus would submit to such a dangerous and evil power...\"\nSinister thoughts flashed through Kaeya's mind, and he simply smirked:\n\"This world is truly... fascinating.\"\nAll while their father lay dead in a pool of his own blood. It was on that night that the two sons' paths diverged."
+      },
+      {
+        "Title": "A List",
+        "Context": "Between the pages of \"The Adventures of Angelos,\" you find a list of names written on a sheet of official Knights of Favonius letterhead paper.\nIt meticulously records the details of bandits in the city and further afield, as well as mercenaries and mid-to-senior-level Treasure Hoarder members, listing for each entry a name, position, area of activity, and personal profile.\nA dozen or so names are circled, with a note in the margin saying \"Otherwise, things would get too boring.\"\nWhen questioned about it, Kaeya's response is \"I suppose I must have gotten drunk and started scribbling nonsense.\"\nYour gut feeling is that Kaeya purposely let you see this list, but you have no way of proving it."
+      },
+      {
+        "Title": "Vision",
+        "Context": "It was raining heavily in Mondstadt on the night that Kaeya Alberich received his Vision.\nEarlier that day, Crepus Ragnvindr had wielded the power of a Delusion — only to become its victim when it backfired. To set his father free from the unbearable agony, Diluc Ragnvindr took his life.\nKaeya was Diluc's brother by adoption and was always by his side, but on this occasion Kaeya did not partake in the final moments shared between father and son.\nThe torrential rain that set in on Mondstadt that night seemed to be a sign of the heavens' grief at the passing of Master Crepus.\nThere was a side to Kaeya that he kept hidden from the world: in truth, he was an agent of Khaenri'ah, placed in Mondstadt to serve their interests. His father had abandoned him in this strange and unknown land to fulfill this mission, and it was Master Crepus and the city of Mondstadt that had welcomed him with open arms when they found him.\nIf Khaenri'ah and Mondstadt went to war, which side should he support? To whom should he offer his assistance: his birth father, who had ruthlessly abandoned him? Or his adoptive father, who had loved him and raised him?\nFor the longest time, Kaeya had agonized over these impossible questions, caught between the opposing demands of loyalty and duty, faced with an impossible choice between truth and happiness.\nBut now, Crepus' death upset this delicate balance. He felt liberated, but also ashamed of how selfishly he was responding. As an adopted son, he should have saved Crepus, but he had arrived moments too late. As a brother, he should have shared in Diluc's grief, and yet as their father lay dying on the ground, he had hung back behind his brother, that ancient plot running through his mind.\nConsumed by guilt, Kaeya knocked on Diluc's door. As the rain poured down, the shroud of secrecy was washed away and all lies were revealed. Kaeya had finally come clean.\nHe had anticipated Diluc's anger. The brothers drew their blades, this time pointing them at each other. Kaeya felt that this was his punishment for a lifetime of lies.\nBut as the two crossed blades, Kaeya was overcome by the sensation of great elemental power surging through him. For years, he had stayed out of the way in his brother's shadow. But now, for the first time ever, he was facing his brother as his true self.\nBitterly cold and brittle elemental energy burst forth from the tip of his sword to meet Diluc's searing flames head-on. The clash of crimson fire and azure ice created a sudden swirl of wind that stunned them both. This was the grim moment at which Kaeya's Vision appeared.\nSince that day, Kaeya and Diluc have gone their separate ways. But he never discusses it, just as he never discusses the origin of his Vision.\nThough it is a reminder of a hard-fought battle, and the prize that he earned in exchange for revealing the unadulterated truth, Kaeya sees it as a stern reminder that he must live the rest of his life under the heavy burden of lies."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 201501,
+      "Name": "Sailwind Shadow",
+      "Description": "Kaeya's outfit from his role as the \"Dagger Bandit\" in the play. Though flamboyant and designed to be as eye-catching as possible, it isn't difficult to put on, though it does take some time to get all the accessories and daggers sorted.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_KaeyaCostumeDancer",
+      "SideIcon": "UI_AvatarIcon_Side_KaeyaCostumeDancer"
+    },
+    {
+      "Id": 201500,
+      "Name": "Icy Featherflight",
+      "Description": "Kaeya's outfit. Fashionable clothes festooned with a fur collar.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104164,
+    113010,
+    100056,
+    112037,
+    104309,
+    113008
+  ],
+  "NameCard": {
+    "Name": "Kaeya: Pavo Ocellus",
+    "Description": "Namecard style.\nThe pattern of peacock feathers resembles eyes that never shut. Can we really say that this Pavo Ocellus is missing an eye...?",
+    "Icon": "UI_NameCardIcon_Kaeya",
+    "PicturePrefix": "UI_NameCardPic_Kaeya"
+  }
+}

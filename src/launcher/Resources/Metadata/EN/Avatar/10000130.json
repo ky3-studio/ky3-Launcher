@@ -1,0 +1,1164 @@
+{
+  "Id": 10000130,
+  "PromoteId": 130,
+  "Sort": 114,
+  "Body": 2,
+  "Icon": "UI_AvatarIcon_Linnea",
+  "SideIcon": "UI_AvatarIcon_Side_Linnea",
+  "Name": "Linnea",
+  "Description": "Naturalist and Advisor to the Nod-Krai Branch of the Adventurers' Guild.",
+  "BeginTime": "2026-04-07T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 12,
+  "BaseValue": {
+    "HpBase": 770.28253,
+    "AttackBase": 11.172,
+    "DefenseBase": 70.5994
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 13031,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "Aimed Shot|{param4:F1P}",
+            "Fully-Charged Aimed Shot|{param5:P}",
+            "Plunge DMG|{param6:F1P}",
+            "Low/High Plunge DMG|{param7:P}/{param8:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1303101,
+              "Level": 1,
+              "Parameters": [
+                0.589969,
+                0.511519,
+                0.816312,
+                0.4386,
+                1.24,
+                0.568288,
+                1.136335,
+                1.419344
+              ]
+            },
+            {
+              "Id": 1303102,
+              "Level": 2,
+              "Parameters": [
+                0.637989,
+                0.553155,
+                0.882756,
+                0.4743,
+                1.333,
+                0.614544,
+                1.228828,
+                1.534872
+              ]
+            },
+            {
+              "Id": 1303103,
+              "Level": 3,
+              "Parameters": [
+                0.68601,
+                0.59479,
+                0.9492,
+                0.51,
+                1.426,
+                0.6608,
+                1.32132,
+                1.6504
+              ]
+            },
+            {
+              "Id": 1303104,
+              "Level": 4,
+              "Parameters": [
+                0.754611,
+                0.654269,
+                1.04412,
+                0.561,
+                1.55,
+                0.72688,
+                1.453452,
+                1.81544
+              ]
+            },
+            {
+              "Id": 1303105,
+              "Level": 5,
+              "Parameters": [
+                0.802632,
+                0.695904,
+                1.110564,
+                0.5967,
+                1.643,
+                0.773136,
+                1.545944,
+                1.930968
+              ]
+            },
+            {
+              "Id": 1303106,
+              "Level": 6,
+              "Parameters": [
+                0.857513,
+                0.743488,
+                1.1865,
+                0.6375,
+                1.736,
+                0.826,
+                1.65165,
+                2.063
+              ]
+            },
+            {
+              "Id": 1303107,
+              "Level": 7,
+              "Parameters": [
+                0.932974,
+                0.808914,
+                1.290912,
+                0.6936,
+                1.86,
+                0.898688,
+                1.796995,
+                2.244544
+              ]
+            },
+            {
+              "Id": 1303108,
+              "Level": 8,
+              "Parameters": [
+                1.008435,
+                0.874341,
+                1.395324,
+                0.7497,
+                1.984,
+                0.971376,
+                1.94234,
+                2.426088
+              ]
+            },
+            {
+              "Id": 1303109,
+              "Level": 9,
+              "Parameters": [
+                1.083896,
+                0.939768,
+                1.499736,
+                0.8058,
+                2.108,
+                1.044064,
+                2.087686,
+                2.607632
+              ]
+            },
+            {
+              "Id": 1303110,
+              "Level": 10,
+              "Parameters": [
+                1.166217,
+                1.011143,
+                1.61364,
+                0.867,
+                2.232,
+                1.12336,
+                2.246244,
+                2.80568
+              ]
+            },
+            {
+              "Id": 1303111,
+              "Level": 11,
+              "Parameters": [
+                1.248538,
+                1.082518,
+                1.727544,
+                0.9282,
+                2.356,
+                1.202656,
+                2.404802,
+                3.003728
+              ]
+            },
+            {
+              "Id": 1303112,
+              "Level": 12,
+              "Parameters": [
+                1.330859,
+                1.153893,
+                1.841448,
+                0.9894,
+                2.48,
+                1.281952,
+                2.563361,
+                3.201776
+              ]
+            },
+            {
+              "Id": 1303113,
+              "Level": 13,
+              "Parameters": [
+                1.413181,
+                1.225267,
+                1.955352,
+                1.0506,
+                2.635,
+                1.361248,
+                2.721919,
+                3.399824
+              ]
+            },
+            {
+              "Id": 1303114,
+              "Level": 14,
+              "Parameters": [
+                1.495502,
+                1.296642,
+                2.069256,
+                1.1118,
+                2.79,
+                1.440544,
+                2.880478,
+                3.597872
+              ]
+            },
+            {
+              "Id": 1303115,
+              "Level": 15,
+              "Parameters": [
+                1.577823,
+                1.368017,
+                2.18316,
+                1.173,
+                2.945,
+                1.51984,
+                3.039036,
+                3.79592
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11301,
+        "Name": "Capture Protocol",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, stone crystals will accumulate on the arrowhead. A fully charged crystalline arrow will deal <color=#FFE699FF>Geo DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_02"
+      },
+      {
+        "GroupId": 13032,
+        "Proud": {
+          "Descriptions": [
+            "Lumi Pound-Pound Pummeler DMG|{param1:F1P} DEF ×2",
+            "Lumi Heavy Overdrive Hammer DMG|{param2:F1P} DEF",
+            "Lumi Million Ton Crush DMG|{param3:F1P} DEF",
+            "Lumi Duration|{param4:F1}s",
+            "CD|{param5:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1303201,
+              "Level": 1,
+              "Parameters": [
+                0.96,
+                1,
+                4,
+                25,
+                18
+              ]
+            },
+            {
+              "Id": 1303202,
+              "Level": 2,
+              "Parameters": [
+                1.032,
+                1.075,
+                4.3,
+                25,
+                18
+              ]
+            },
+            {
+              "Id": 1303203,
+              "Level": 3,
+              "Parameters": [
+                1.104,
+                1.15,
+                4.6,
+                25,
+                18
+              ]
+            },
+            {
+              "Id": 1303204,
+              "Level": 4,
+              "Parameters": [
+                1.2,
+                1.25,
+                5,
+                25,
+                18
+              ]
+            },
+            {
+              "Id": 1303205,
+              "Level": 5,
+              "Parameters": [
+                1.272,
+                1.325,
+                5.3,
+                25,
+                18
+              ]
+            },
+            {
+              "Id": 1303206,
+              "Level": 6,
+              "Parameters": [
+                1.344,
+                1.4,
+                5.6,
+                25,
+                18
+              ]
+            },
+            {
+              "Id": 1303207,
+              "Level": 7,
+              "Parameters": [
+                1.44,
+                1.5,
+                6,
+                25,
+                18
+              ]
+            },
+            {
+              "Id": 1303208,
+              "Level": 8,
+              "Parameters": [
+                1.536,
+                1.6,
+                6.4,
+                25,
+                18
+              ]
+            },
+            {
+              "Id": 1303209,
+              "Level": 9,
+              "Parameters": [
+                1.632,
+                1.7,
+                6.8,
+                25,
+                18
+              ]
+            },
+            {
+              "Id": 1303210,
+              "Level": 10,
+              "Parameters": [
+                1.728,
+                1.8,
+                7.2,
+                25,
+                18
+              ]
+            },
+            {
+              "Id": 1303211,
+              "Level": 11,
+              "Parameters": [
+                1.824,
+                1.9,
+                7.6,
+                25,
+                18
+              ]
+            },
+            {
+              "Id": 1303212,
+              "Level": 12,
+              "Parameters": [
+                1.92,
+                2,
+                8,
+                25,
+                18
+              ]
+            },
+            {
+              "Id": 1303213,
+              "Level": 13,
+              "Parameters": [
+                2.04,
+                2.125,
+                8.5,
+                25,
+                18
+              ]
+            },
+            {
+              "Id": 1303214,
+              "Level": 14,
+              "Parameters": [
+                2.16,
+                2.25,
+                9,
+                25,
+                18
+              ]
+            },
+            {
+              "Id": 1303215,
+              "Level": 15,
+              "Parameters": [
+                2.28,
+                2.375,
+                9.5,
+                25,
+                18
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11302,
+        "Name": "Countermeasure: Lumi's Battle Cry!",
+        "Description": "Adventure with Lumi! Depending on how you Tap, Lumi attacks in different forms.\n\n<color=#FFD780FF>Tap</color>\nLumi strikes in a <color=#FFD780FF>{LINK#N11300001}Super Power Form{/LINK}</color>, attacking nearby enemies continuously, dealing <color=#FFE699FF>AoE Geo DMG</color>. If there are Moondrifts nearby, Lumi will also deal <color=#FFE699FF>AoE Geo DMG</color> to nearby enemies, which will be considered Lunar-Crystallize Reaction DMG.\n\n<color=#FFD780FF>Continuous Tapping</color>\nTime to show what we're really capable of! After using her Elemental Skill, Linnea will feed Lumi sparkling gemstones when her Elemental Skill or Normal Attack is Tapped repeatedly. A full-bellied Lumi will strike in her <color=#FFD780FF>{LINK#N11300001}Ultimate Power Form{/LINK}</color>, dealing an especially powerful instance of <color=#FFE699FF>AoE Geo DMG</color> that is considered Lunar-Crystallize Reaction DMG, switching to <color=#FFD780FF>{LINK#N11300001}Standard Power Form{/LINK}</color>.\nAdditionally, tapping the Elemental Skill increases Linnea's interruption resistance.\n\n<i>\"You're up, Lumi!\"</i>",
+        "Icon": "Skill_S_Linnea_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 13039,
+      "Proud": {
+        "Descriptions": [
+          "Initial Healing Amount|{param2:F1P} DEF+{param1:I}",
+          "Continuous Healing|{param4:F1P} DEF+{param3:I}",
+          "Healing Duration|{param5:F1}s",
+          "CD|{param6:F1}s",
+          "Energy Cost|{param7:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1303901,
+            "Level": 1,
+            "Parameters": [
+              770.3755,
+              1.6,
+              154.0751,
+              0.32,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1303902,
+            "Level": 2,
+            "Parameters": [
+              847.42377,
+              1.72,
+              169.48476,
+              0.344,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1303903,
+            "Level": 3,
+            "Parameters": [
+              930.8927,
+              1.84,
+              186.17854,
+              0.368,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1303904,
+            "Level": 4,
+            "Parameters": [
+              1020.78235,
+              2,
+              204.15646,
+              0.4,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1303905,
+            "Level": 5,
+            "Parameters": [
+              1117.0927,
+              2.12,
+              223.41853,
+              0.424,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1303906,
+            "Level": 6,
+            "Parameters": [
+              1219.8236,
+              2.24,
+              243.96474,
+              0.448,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1303907,
+            "Level": 7,
+            "Parameters": [
+              1328.9753,
+              2.4,
+              265.79507,
+              0.48,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1303908,
+            "Level": 8,
+            "Parameters": [
+              1444.5477,
+              2.56,
+              288.90955,
+              0.512,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1303909,
+            "Level": 9,
+            "Parameters": [
+              1566.5408,
+              2.72,
+              313.30817,
+              0.544,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1303910,
+            "Level": 10,
+            "Parameters": [
+              1694.9546,
+              2.88,
+              338.9909,
+              0.576,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1303911,
+            "Level": 11,
+            "Parameters": [
+              1829.7891,
+              3.04,
+              365.9578,
+              0.608,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1303912,
+            "Level": 12,
+            "Parameters": [
+              1971.0442,
+              3.2,
+              394.20883,
+              0.64,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1303913,
+            "Level": 13,
+            "Parameters": [
+              2118.72,
+              3.4,
+              423.744,
+              0.68,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1303914,
+            "Level": 14,
+            "Parameters": [
+              2272.8164,
+              3.6,
+              454.5633,
+              0.72,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1303915,
+            "Level": 15,
+            "Parameters": [
+              2433.3337,
+              3.8,
+              486.66675,
+              0.76,
+              12,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11305,
+      "Name": "Memo: Survival Guide in Extreme Conditions",
+      "Description": "Even master adventurers need proper rest! Linnea summons Lumi to strike in <color=#FFD780FF>{LINK#N11300001}Super Power Form{/LINK}</color>, healing nearby party members. For a short duration, she will continuously heal nearby active party members based on Linnea's DEF.\nIf Lumi is already on the field when Linnea unleashes Elemental Burst, Lumi's active duration will be reset instead and her Strike Form will not change.\n\n<i>\"Any professional adventurer worth their salt prizes making it out of a serious jam over making discoveries, however unprecedented!\"</i>",
+      "Icon": "Skill_E_Linnea_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 13021,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1302101,
+              "Level": 1,
+              "Parameters": [
+                0.15,
+                0.3
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1302101,
+        "Name": "Field Observation Notes",
+        "Description": "When Lumi is present on the field, the <color=#FFE699FF>Geo RES</color> of opponents near Lumi will decrease by 15%.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: Linnea's Elemental Skill <color=#FFD780FF>{LINK#S11302}Countermeasure: Lumi's Battle Cry!{/LINK}</color> and Elemental Burst <color=#FFD780FF>{LINK#S11305}Memo: Survival Guide in Extreme Conditions{/LINK}</color> are enhanced. After summoning Lumi, the <color=#FFE699FF>Geo RES</color> of opponents near Lumi will be further decreased by 15%.",
+        "Icon": "UI_Talent_S_Linnea_05"
+      },
+      {
+        "GroupId": 13022,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1302201,
+              "Level": 1,
+              "Parameters": [
+                0.05
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1302201,
+        "Name": "Universal Naturalist Archive",
+        "Description": "Linnea will increase the Elemental Mastery of certain characters in your party according to your current active character. Increase in Elemental Mastery is based on 5% of Linnea's DEF. If your current active character:\n· Is a Moonsign character: Increase this character's Elemental Mastery.\n· Is not a Moonsign character: Increase Linnea's own Elemental Mastery.",
+        "Icon": "UI_Talent_S_Linnea_06"
+      },
+      {
+        "GroupId": 13023,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1302301,
+              "Level": 1,
+              "Parameters": [
+                0.007,
+                0.14
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1302301,
+        "Name": "Moonsign Benediction: Habitat Survey",
+        "Description": "When a party member triggers a Hydro Crystallize reaction, it will be converted into the Lunar-Crystallize reaction, with every 100 DEF that Linnea has increasing Lunar-Crystallize's Base DMG by 0.7%, up to a maximum of 14%.\n\nAdditionally, when Linnea is in the party, the party's <color=#FFD780FF>Moonsign</color> will increase by 1 level.",
+        "Icon": "UI_Talent_S_Linnea_07"
+      },
+      {
+        "GroupId": 13025,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1302501,
+              "Level": 1,
+              "Parameters": [
+                0.2
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1302501,
+        "Name": "Master Adventurer",
+        "Description": "When Linnea is not in combat, the charge time of her <color=#FFD780FF>Aimed Shot</color> is greatly decreased, and she will shoot an <color=#FFD780FF>Ultra Convenient Quick Arrow</color> instead. Different effects will occur depending on the targets hit:\n· Specific animals: <color=#FFD780FF>Ultra Convenient Quick Arrow</color> will be transformed into a special \"Net\" that can capture the essence and form of these animals, using them as a medium to manifest the animal's physical form again. The \"Net\" can only be used for a limited number of times each week. \n· Ore veins used in forging: Linnea will dispatch Lumi, who will quickly strike at the ore marked by the <color=#FFD780FF>Ultra Convenient Quick Arrow</color>, then collect the dislodged ore. If Lumi is not on the field, Linnea will summon her for a short duration to help obtain the ore.\n\nThe DMG dealt to opponents by Linnea's <color=#FFD780FF>Ultra Convenient Quick Arrow</color> is reduced to 20% of her original Charged Arrow. Additionally, after firing a certain number of <color=#FFD780FF>Ultra Convenient Quick Arrows</color> within a short period of time, Linnea needs to take a temporary break before she can continue using them.",
+        "Icon": "UI_Talent_S_Linnea_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1301,
+        "Name": "Provisional Classification",
+        "Description": "When unleashing Elemental Skill <color=#FFD780FF>{LINK#S11302}Countermeasure: Lumi's Battle Cry!{/LINK}</color>, or when triggering Moondrift Harmony, Linnea gains 6 stacks of the <color=#FFD780FF>Field Catalog</color> effect for 10s. Max 18 stacks. When nearby party members deal Lunar-Crystallize Reaction DMG, consume 1 stack of Field Catalog to increase the DMG dealt. The increase in DMG is equal to 75% of Linnea's DEF.\nAdditionally, when Lumi uses <color=#FFD780FF>Million Ton Crush</color> in her <color=#FFD780FF>{LINK#N11300001}Ultimate Power Form{/LINK}</color>, Linnea can consume up to 5 stacks of Field Catalog. Each stack will increase the DMG dealt by 150% of Linnea's DEF.",
+        "Icon": "UI_Talent_S_Linnea_01"
+      },
+      {
+        "Id": 1302,
+        "Name": "Tidings of Joy and Sorrow",
+        "Description": "Within 8s after triggering Moondrift Harmony, all <color=#80C0FFFF>Hydro</color> and <color=#FFE699FF>Geo</color> party members have their CRIT DMG increased by 40%. Additionally, when Lumi uses <color=#FFD780FF>Million Ton Crush</color> in her <color=#FFD780FF>{LINK#N11300001}Ultimate Power Form{/LINK}</color>, the CRIT DMG of that attack increases by an additional 150%. \n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: When Lumi uses <color=#FFD780FF>Heavy Overdrive Hammer</color> in her <color=#FFD780FF>{LINK#N11300001}Super Power Form{/LINK}</color>, or when she uses <color=#FFD780FF>Million Ton Crush</color> in her Ultimate Power Form, an instance of Moondrift Harmony will be triggered. For this instance of Moondrift Harmony, all <color=#80C0FFFF>Hydro</color> and <color=#FFE699FF>Geo</color> characters in the party will be considered to have applied their Elements in the reaction.",
+        "Icon": "UI_Talent_S_Linnea_02"
+      },
+      {
+        "Id": 1303,
+        "Name": "Eventful Log Page",
+        "Description": "Increases the Level of <color=#FFD780FF>{LINK#S11302}Countermeasure: Lumi's Battle Cry!{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Linnea_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1304,
+        "Name": "Expert Instinct",
+        "Description": "Within 5s after Moondrift Harmony is triggered, increase the DEF of Linnea and your current active character by 25% respectively. When Linnea is on field, the DEF-increasing effect can be stacked.",
+        "Icon": "UI_Talent_S_Linnea_03"
+      },
+      {
+        "Id": 1305,
+        "Name": "Fairyland's Farewell Gift",
+        "Description": "Elemental Burst <color=#FFD780FF>{LINK#S11305}Memo: Survival Guide in Extreme Conditions{/LINK}</color> increases by 3 Levels.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Linnea_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1306,
+        "Name": "Golden Beagle's Dream",
+        "Description": "The effects of the Constellation, <color=#FFD780FF>Provisional Classification</color>, are enhanced: When unleashing Elemental Skill <color=#FFD780FF>{LINK#S11302}Countermeasure: Lumi's Battle Cry!{/LINK}</color>, or when triggering Moondrift Harmony, Linnea will directly gain the maximum number of <color=#FFD780FF>Field Catalog</color> stacks. When consuming <color=#FFD780FF>Field Catalog</color>, consume twice the original number of stacks, such that the increase in DMG will be boosted to 150% of the original value.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: Lunar-Crystallize Reaction DMG dealt by nearby party members is {LINK#N11190007}<color=#FFD780FF>elevated</color>{/LINK} by 25%.",
+        "Icon": "UI_Talent_S_Linnea_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Augur of Wonders",
+    "Detail": "Naturalist and Advisor to the Nod-Krai Branch of the Adventurers' Guild.",
+    "Association": 12,
+    "Native": "Adventurers' Guild",
+    "BirthMonth": 5,
+    "BirthDay": 23,
+    "VisionBefore": "Geo",
+    "VisionOverrideLocked": "Moon Wheel",
+    "VisionOverrideUnlocked": "Moon Wheel",
+    "ConstellationBefore": "Alcyon",
+    "CvChinese": "周侗",
+    "CvJapanese": "白石晴香",
+    "CvEnglish": "Savanna Menzel",
+    "CvKorean": "Kim Yun-chae",
+    "CookBonus": {
+      "OriginItemId": 108910,
+      "ItemId": 108965,
+      "InputList": [
+        101264,
+        101265,
+        110016,
+        110015
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Hey there! I'm Linnea, an advisor with the Adventurers' Guild, and this little thing is my buddy, Lumi. If you've got any questions about adventuring in the wild, I'm your gal! Oh yeah — and if you ever come across any strange or unusual creatures on your adventures, be sure to tell me all about it!"
+      },
+      {
+        "Title": "Chat: Lumi",
+        "Context": "Lumi is just too cute. But she does have a bad habit of swallowing any shiny thing she lays her eyes on! So keep your valuables well away, or you might never see them again, hehe..."
+      },
+      {
+        "Title": "Chat: \"Speranza\"",
+        "Context": "If you ask me what's the one place you should visit in Nasha Town... Obviously, I'm gonna say \"Speranza.\" I know I'm biased, but seriously — you should give it a try. Katya's cooking will not disappoint you."
+      },
+      {
+        "Title": "Chat: Archive",
+        "Context": "You wanna see my archive? Of course! I'm always happy to show off my masterpiece, hehe. I even did the illustrations."
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "Ah, the scent of wet soil... That's the world waking up."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "So cold... Hey, you wanna build a snowman? Lumi can come help out! ...Ah! No need for the hammers!"
+      },
+      {
+        "Title": "When It's Windy",
+        "Context": "I wonder where the dandelion seeds will fly to this time..."
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "\"Sleep, close your eyes. Yon golden slumber summons thee, wandering sand. Drink not that bitter salt water, for the sorrows of tomorrow have gone away.\""
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Morning! Take a whiff of the air outside. Nothing beats the fresh scent of dewy grass."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "It's about time I ate something to boost my energy levels. The day's still young, and there's so much I want to accomplish!"
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "If you're not sleepy yet... How about we stay here and stargaze for a while?"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Phew, we did a lot of walking today. I should get some sleep... Good night, and sweet dreams!"
+      },
+      {
+        "Title": "About Linnea: Seeking and Waiting",
+        "Context": "There are so many weird and wonderful creatures in this world, but trying to uncover their secrets is like playing hide-and-seek with a really shy friend... Luckily for me, I'm good at seeking, and good at the waiting game, too."
+      },
+      {
+        "Title": "About Linnea: Childhood",
+        "Context": "Even though I didn't get to live with my real family, I know they loved me in their own way... I grew up nurtured by a very different kind of love from what most kids experience."
+      },
+      {
+        "Title": "About Us: Travel Experiences",
+        "Context": "Wow... It's amazing that so many incredible stories can even fit inside one person's head! I've learned so much from talking with you... Heck, maybe I should recommend you to the Adventurers' Guild as an advisor, too!"
+      },
+      {
+        "Title": "About Us: Sharing",
+        "Context": "You pretty much know my whole story by now, but I've only gotten a tiny glimpse into your world... If you're open to it, I'd love to hear all about your past adventures that I wasn't there for. In return... I'll save you a spot on the Golden Beagle!"
+      },
+      {
+        "Title": "About the Moon Wheel",
+        "Context": "I'm gonna let you in on a secret... I actually don't even need that thing. My powers work just fine without it. But I kept it as a decoration since Lumi seems to like it... probably 'cause it's so shiny."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "It's said that Nod-Krai was once covered by a vast, primeval forest. Pine Amber was the resin that flowed from the towering trees, colorfully dubbed \"Tears of the Grand Pines.\" Centuries on, the forest has vanished but the tears have never dried... Still, if I can just collect enough of these fragments of history, I can recreate how the ancient world looked in my mind's eye. It fills me with the same sense of wonder you get from admiring ancient relics. I live for that feeling... which is why I'll never be able to stop adventuring."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Hehe... Melusines are soooo cute! I'd give anything to spend some time living among them in Merusea Village... Sadly, I've begged and begged, but the answer is always no. I wonder why they're so against it?"
+      },
+      {
+        "Title": "About Aino",
+        "Context": "Oh, we were in the Conch Gang together, you know. Aino was such a cutie when she was little. Then at some point, she became all about her machines... Oh, uh, Aino's still pretty little, I guess — and still super cute. Her hobbies though? Not so much... Don't get me wrong, I totally support her no matter what she's into! It's just... I can't really handle being around moving machines... Probably something to do with me being a changeling."
+      },
+      {
+        "Title": "About Ineffa",
+        "Context": "I hear she makes the sweetest, most delicious krumkakes around. Sadly, I've never had a chance to try one, because I instinctively run away the moment she shows up... Even though I'm pretty sure she just wants to ask me a question. *sigh* Maybe next time I visit, I should get Aino to tie me to a chair so I can finally hear what she has to say, hehe..."
+      },
+      {
+        "Title": "About Lauma",
+        "Context": "Her antlers are so pretty... Once, I very politely asked her if I could touch them. She, uh, very politely refused. Turns out the Frostmoon Scions are even stricter than the Melusines..."
+      },
+      {
+        "Title": "About Flins",
+        "Context": "I feel like Mr. Flins has to be one of the most knowledgeable Fae out there. I haven't even spoken with him that much, but I learned a lot from the few conversations we've had."
+      },
+      {
+        "Title": "About Nefer",
+        "Context": "Anyone who's active in Nod-Krai is bound to end up crossing paths with the Curatorium of Secrets eventually. Miss Nefer is incredibly efficient — you won't find a more reliable partner than her. But I'm actually more interested in her cat than her intel. Ashru, oh Ashru... you are no ordinary kitty, that's for sure..."
+      },
+      {
+        "Title": "About Illuga",
+        "Context": "He's pretty young for a squad leader in the Lightkeepers. Must be a pretty talented guy. Unfortunately, we met under slightly chaotic circumstances, so I probably didn't make a great impression... I really hope he'll still let me do the archive entry for Aedon..."
+      },
+      {
+        "Title": "About Sandrone",
+        "Context": "I dunno if you knew this, but Katheryne from the Adventurers' Guild was actually created by the Fatui Harbinger, Marionette. Strangely enough, I don't feel any kind of aversion towards Katheryne, even though I usually can't handle moving machines... Must be something to do with the technology Marionette used — whatever that could be. Anyway, it's just as well, 'cause otherwise I'd have to get Sarin or someone else to pick up my commissions from the Guild for me. If I ever get the chance to meet Marionette, I owe her a huge thank-you!"
+      },
+      {
+        "Title": "About Vodyanitsa",
+        "Context": "Audiences at the opera house go crazy for her, completely unaware that all they're hearing is the echo of the ocean waves. I'm sure she has her reasons... but I can sense an allure hidden deep within her singing voice that, if ever unleashed, would bewitch everyone within earshot and sentence them to certain doom!"
+      },
+      {
+        "Title": "More About Linnea: I",
+        "Context": "Wait, you have questions about me? Not my archive, or adventuring tips? Huh, well that's a perspective I don't think about every day. If I was the object of my own observations... what conclusions would I draw?"
+      },
+      {
+        "Title": "More About Linnea: II",
+        "Context": "Even though I'm no longer a member of the Conch Gang, I still go back and see everyone when I have the time. Speranza is like a home to me, and I suspect that having that one place I could always go back to was the only reason I found the courage to explore this world. The selfless love that they showed me when I was feeling lost and desperate helped me to realize that the world hadn't rejected me after all..."
+      },
+      {
+        "Title": "More About Linnea: III",
+        "Context": "Something I used to worry about was, how Lumi would cope outside of the tundra? Especially when I was getting ready for my trip to Natlan. I was so scared, I could barely sleep... What if Lumi slowly melted like a snowman in high temperatures? *shudder*... just thinking about it now still scares me! Fortunately, from what I've observed, temperature doesn't really affect Lumi. Even one time when she nearly fell into lava, she was still grinning away happily. Pretty incredible for a Jack Frost, I gotta say."
+      },
+      {
+        "Title": "More About Linnea: IV",
+        "Context": "\"Go, child of the fae. Make your way to the villages and towns and seek kinship with the humans. The world of the fae is rife with a sorrow you do not understand...\" My parents tried to free me from the river of fate by placing me in a human cradle, hoping that humanity's ignorance of their fate would shield me like a cocoon, protecting me against the damage of premature grief. There was a time when I didn't understand, but now I know the truth — theirs was a love born of sorrow... Perhaps the scars will never fade, but better a scar than a bleeding wound."
+      },
+      {
+        "Title": "More About Linnea: V",
+        "Context": "Like my sister says, it's possible that one day in the future, the fate of the Augury Birds will come for me eventually. But until then, I just want to enjoy the process of exploring the world and understanding the unknown. I want to sail the Golden Beagle to every corner of Teyvat, and fill every page in my archive... Who knows, maybe when that day comes, I'll be able to understand my sister's pain and loneliness for myself... I'll give her a big old hug, and we'll be closer than ever."
+      },
+      {
+        "Title": "Linnea's Hobbies",
+        "Context": "When I'm observing other creatures, I like to imagine being one of them, living a totally different life from my own... Just think what it would be like to be a Melusine! I'd be able to see all the colors that they see. Although, things like that are kind of impossible to imagine without seeing it for yourself."
+      },
+      {
+        "Title": "Linnea's Troubles",
+        "Context": "I put a lot of time and effort into building my ore collection, but somehow, a few samples always seem to go missing... Wait, maybe... is Lumi eating them...? Lumi, open your mouth! Say \"Aaah\"!"
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "I like sweet stuff. Newly picked berries with beads of dew on them, sugar sculptures made of fresh honey, cakes hot out of the oven... Just wish they were more readily available when I'm out adventuring in the wild."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I wouldn't say that there's any food I really hate, apart from the stuff that's super unhealthy. The idea of throwing away perfectly edible food just because it's not quite to my personal tastes seems very wasteful."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Mmm! This is delicious! How did you make it? Can you teach me?"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Yum! Next time, it's my turn. I wanna see what you think of my cooking."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Uhh... Well... at least it's not a health risk."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Happy Birthday... This isn't the most valuable gift, but it's something I've had in my collection for a long time... Please accept this fossil. See this? These are bone and feather impressions from a long-extinct bird species. They'll never fly again, and yet the moment that this one spread its wings has left an imprint that will last long into the future. So, even if life fades in the end, there will always be some proof of our existence left behind. May your life be as tenacious as an old tree, with each and every ring telling a beautiful tale."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "My senses have become keener."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "I've gained a deeper understanding of the things in this world."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "I can feel the flow of energy... Like a sailor who has mastered the patterns of the ocean currents. This voyage will be much smoother from here on out."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "My knowledge is transforming into intuition... I believe in this world as I do in a daisy."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Go, Lumi!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Come say hi!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Show 'em, Lumi!"
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Take this!"
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "Like it or lump it!"
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "Comin' in hot!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "A gift from the Land of the Young."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Shine like a gemstone!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "As you like it!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Well? Any good stuff in there?"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "So shiny... Lumi, no! You can't eat that!"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "This is a pretty good haul! Lucky you!"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "I still got this..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "That wasn't supposed to happen..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Need to be more careful..."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Hey, I got you!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Bandages at the ready!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "I chose wrong..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "It's just a nightmare..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "But... my future..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Uh oh..."
+      },
+      {
+        "Title": "Light Hit Taken: II",
+        "Context": "Oof...!"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "That's nothing!"
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Okay, that hurt..."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Lumi! Time to go!"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Where are we gonna explore today?"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Looking for me? Ready whenever!"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Of the Adventurers' Guild's many advisors, Linnea is, without a doubt, the most special one of them all. Though she bears the title of \"advisor,\" she is less a scholar before a desk and more a perpetual wanderer on the road. This is because for her, the world's heartbeat can only be felt out in the wild, by walking untamed lands and measuring the earth with her own two feet, and by beholding its wonders with her very own eyes.\nThis unwavering devotion to fieldwork has made her a master of survival. Out in the wild, she is able to identify hundreds of plants through the seasons, as well as track many a rare beast using nothing but tracks in the earth and scents in the wind. Her possession of such knowledge, often a lifeline to adventurers at critical moments, has rendered her counsel particularly reliable.\nEvery wondrous encounter she has had has subsequently found a place in the thick volume of field notes that she carries with her wherever she goes. From the growth rings of a seashell to the skyward routes of migratory birds, and from the glimmering organs of deep-sea dwellers to the ingenious ways hardy mountain blooms endure their heights... Her keen sense of observation shines through in every illustration and description here, rendered with remarkable detail on each and every page.\nAnd at every step of her quest for discovery, Lumi is never far behind. This extraordinary Jack Frost is fond of fluttering around her shoulder, using a variety of spirited \"Ya-hos\" to convey its many opinions.\nEach time a chapter of her fieldwork draws to its close, Linnea would return to Speranza. There, a transformation soon occurs — once she has cast aside her muddy field gear, she becomes a teacher who unselfishly shares every story of what she has seen and heard in the wild with the children under her charge.\n\"The whole world is just this big, wonderful library! Want to learn how to read its stories? Then grab your packs and follow me! Or maybe... how about we sit still and finish this lesson first?\"\nThis combination of academic rigor and playful charm has made her very well-liked at both the Adventurers' Guild and Nasha Town alike.\nNevertheless, Linnea continues to tread the path of exploration and learning, and wherever it may lead, she is never without her hefty volume of archival notes (or Lumi's endless string of \"Ya-hos\")."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Linnea's earliest memories are of her father's giant, sturdy hands raising her high in the air, and of the rhythmic song of the sea waves. Back then, she was so very young, so young that she could barely manage the syllables of her own name. Yet even then, she could already identify a number of fish and bird species. This could be attributed to her father's tireless nurturing, or perhaps to a natural talent that had already bloomed within her.\nOften in the mornings, her father would scoop her up and carry her to the seashore, where they would watch the sunrise with her perched high upon his shoulders. The sea breeze would tousle her fine, soft hair as the morning sun painted the water in strokes of gold. To her young eyes, the world looked so very vast, but felt so very tender at the same time.\n\"Look, Lili, that's the Frostfin Whale.\" Her father would point toward the shimmering gold dancing across the ocean surface. \"They love to race the boats. And when they jump out of the water, they make these big, big splashes, and the water comes really, really high!\"\n\"Big, big splashes!\" Linnea would cheer with delight, her tiny finger pointing at the horizon.\n\"And that over there is the Longplume Ibis,\" her father would say as he pointed in another direction. \"See that big, puffy bit on their necks? That's a throat sac. Remember the squirrels Daddy told you about? The throat sac is where these birds keep lots and lots of food, just like how a squirrel keeps the nuts it's collected inside a hollow tree.\"\nAt times like this, Linnea would nod in response, her head tilted in a fog of half-understanding. Though she didn't know it then, these little offhand chats were her father's way of teaching her to make sense of the world.\nUnlike her father, Linnea's mother was a woman of few words whose favored way of expressing her love was through the small details. She made certain that little Linnea's clothes were always crisp and clean, that any holes in her socks were carefully mended, and that a slice of her favorite honey cake was always on the table.\nAnd when the two stubborn wisps of hair atop her head began flicking up more than usual, her mother noticed her irritation. The very next day, Linnea received a small, exquisitely hand-stitched hat, made just for her.\n\"It's only natural for a young lady to want to look her best. Come now, Lili, have a look. Do you like it?\"\nThe hat was sewn with a soft fabric with the most adorable pattern on it. Not only that, one could tuck away those annoying flyaways perfectly into its sides.\nIn the mirror, a girl wearing a pretty hat gazed back. She looked no different from any other child.\n\"I love it! Now the other kids won't make fun of me anymore!\""
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "As it turned out, those two stubborn wisps on Linnea's head weren't just flyaways — eventually, they unfurled into a pair of tiny wings. At the same time, her skin became covered in a dusting of small crystals that shimmered in the sun. And sometimes, she would catch the faint strains of a song floating by: \"Go, child of the fae. Make your way to the villages and towns and seek kinship with the humans. The world of the fae is rife with a sorrow you do not understand...\"\nAll these strange happenings reminded her of the stories of \"changelings\" from that old book. Could she, she wondered, really be one of those alien creatures left by the fae to take the place of a human child...?\n\"Am I... really a fae? What will Mom and Dad think of me? What if they send me away...?\"\nFear took hold of Linnea like a weed does an untended lawn. Desperate to hide everything on her that marked her out as different and non-human, she took to wearing her hat and long sleeves all the time. But how long could she possibly keep that up?\nShe wrestled with the issue for days before she finally found the courage to tell her parents.\nShe removed her hat with trembling fingers to reveal the damning wings to her parents. Her almost-unbearable suspicion that she was a changeling was now laid bare for all to see. She braced herself, eyes closed, as if she was awaiting some inevitable judgment.\nYet, the scolding she had braced herself for never came. But the reassuring embrace she had also expected did not follow, either. Instead, there was only a long, uncertain silence.\nIn the days that followed, it felt as if some kind of switch had been flipped at their house.\nHer parents never spoke to her about what had happened that night. Instead, they buried themselves in their work, leaving the house at the crack of dawn and returning only after the sun had long set. Though Linnea continued to call them \"Mom\" and \"Dad,\" deep down inside she knew that they had become her adoptive parents overnight. That once-effortless familial warmth that once existed between them was slowly fading, replaced by a 'kindness' that was polite, distant, and hollow.\nShe, too, began to learn the art of reading the room and between the lines. It was the fine art of reading the faint tremor in one's voice, the weight of a closing door, and the long, long silences at the dinner table. Though she was still the daughter of the house, she felt more like a guest who had to be managed politely and in the appropriate fashion. Though at first glance it appeared that nothing had changed, her world was, in fact, silently crumbling.\nThis fragile state of things could not, and did not, last for long.\nSoon after, her mother fell gravely ill. As she drifted in that gray space between life and death, the ache for her true-born child grew into a hunger that then swallowed her whole. When at last she returned from the brink, she came back a woman utterly silent. Her husband, having watched her waste away in the grip of her great longing, finally made his decision.\nOne morning, her father pressed a purse heavy with Mora into Linnea's hands. It contained the weight of every coin they could scrape together, as well as the burden of their guilt.\n\"Your mother has recovered, yes, but this is something we've been sitting on for a long time. The two of us are no longer young, and our health isn't what it used to be...\"\n\"I'm really sorry, Lili... But we must go north to find our real daughter while we still can.\"\n\"...Take this, and don't be afraid to spend it if you need to. We've also spoken with the master at Speranza, and the kids there will look after you.\"\nAnd it was with this brief farewell that her adoptive parents left that morning. It was not that they did not love her; only that, when weighed against the call of blood and the crushing burdens of life, that love proved far too fragile.\nLinnea looked down at the heavy purse in her hands and at the hat her mother left her.\nFrom that day on, she no longer had a home to call her own."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Every child at Speranza was required to work to earn their keep.\nBy day, the children worked at the restaurant. Though barely tall enough to see over the counter, they moved as a team, taking orders, serving guests, and even doing the cooking. But the evenings belonged to them. After the labors of the day, they would gather around a long table and share what they've seen over their delicious and hearty staff meal.\n\"There's a giant ship at the docks today!\"\n\"Someone's selling pottery from Liyue. They're so pretty!\"\nLinnea was always the one everyone loved to listen to the most, for when she's around, there were always exciting tales of great bird migrations, the haunting songs of whales, and the secret rings hidden in the hearts of trees, etc., etc. Her stories danced from glowing mushrooms to color-shifting ores, from gentle giants to fierce, fleeting minnows. So enthralled were young Mikko and Maisie by her stories that they would let their suppers grow cold before them, leaving Katya no choice but to decree a rule of silence: no whispering or talking at the dinner table, at least not until dessert was served. And so, a peculiar enchantment took hold of their evenings — at mealtimes, the only sound that could be heard was the tinkling of cutlery, as everyone watched Katya's every move in silence. The very moment she rose to cut up the Midsommar Torte, however, the room would immediately erupt into a joyful storm of voices.\n\"What do you call that color-changing stone?\"\n\"The minnow fishies, do they bite?\"\nAmidst this whirlwind of queries of every imaginable stripe, a newcomer to the group would invariably pose this question: \"So, how did Big Sis Linnea become the leader of the Conch Gang?\"\nIn response, the older kids would also invariably put on a serious, knowing look. \"That's because...\" they would say sagely, \"she is the true master of 'bird talk' among us.\"\nOur story here really begins on a night of torrential rain, not long after Linnea first arrived at Speranza.\nA beast of some kind with an awful, guttural growl had just torn through the restaurant, drenched and ragged. The children, usually so quick to boast of their bravery, promptly armed themselves with brooms and rolling pins to drive the beast out — only to fall back in fear at the sight of its razor-sharp talons.\nAs panic set in, Linnea made her way past the terrified children and stood in front of them.\n\"Don't be scared, everyone! This is a Crowned Eagle. It's not a bird normally seen here in Nasha Town, so this one is probably just lost and really frightened.\"\nThe children stood aghast as Linnea stepped forward once more, this time to carefully place a small piece of raw meat right by the eagle's talons. A few minutes later, as the rain finally tapered off, the now-calm Crowned Eagle took to the sky, leaving everyone at the restaurant unscathed.\n\"Yes, that growl was a warning. But in that moment, the eagle was really yelling, 'Help me, I'm so scared, stay away from me!' At times like these, you just have to keep a safe distance and show that you mean it no harm.\"\n\"Whoa... You actually understand birds???\"\n\"Hehe, that's because...\" As she whisked her hat off with a flourish, Linnea pointed to the tiny wings atop her head. \"I'm no ordinary human, you see!\"\nA hush fell over the table again. But this time, it was soon swept away by a wave of cheering. The children swarmed around her, their eyes shining with wonder and admiration.\n\"Wow! Are these wings? They're beautiful! Can I touch them?\"\n\"I told you, I told you! Only people with wings can understand what the birds are saying!\"\n\"You must become our leader now! You'll be the most special leader that the Conch Gang has ever had!\"\nThat familiar scent of honey cakes might have been gone from Linnea's life forever, but the sweetness of the Midsommar Torte was more than enough to wrap her lonely heart in a gentle, protective warmth.\nAnd this was how Speranza and the Conch Gang came to be Linnea's new home."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Within the Conch Gang, the moment when one \"grows up\" marks an invisible yet unmistakably real boundary.\n\"Even if you have to leave the Conch Gang when you grow up... but... but... there isn't any rule that says you can't stay on at Speranza...\" Even little Jurva, usually the calmest of them all, found himself tearing up.\n\"I know,\" Linnea interrupted with a smile. \"But Speranza will always be my home. I'll be back to visit.\"\nThe children solemnly placed the conch, the symbol of the holder's right to speak and their unconditional devotion, into her hands. Despite her reluctance, Linnea knew that while a shelter kept out the wind and rain, it would also keep her from seeing and reaching the vastness of the star-filled cosmos. So, as if silencing the final echo of her childhood, she put the conch away, turned, and stepped boldly into the wide expanse of Teyvat.\nShe knew exactly what she wanted to do: become a naturalist and see the wonders of this vast world for herself.\nBy this point, Linnea was resolute, her mind already armed with a wealth of book knowledge. Nevertheless, she got off to a rough start, as evidenced by not one, but several absurd scrapes she found herself in during the early days of her journey...\nIn one instance, she followed an outdated map hoping to find a spring, only to stumble upon a bone-dry desert where the water had long since vanished. Had it not been for her habit of gathering wild berries to study them, things would have gone south for her very quickly.\nThen, on another occasion, she repeatedly probed the dunes to test how far the Wenut could sense its prey, hoping to gather the most precise numbers possible. But, in her bid to avoid harming either herself or the Wenut, she also ended up spending much of her time fleeing through the crashing yellow sands alongside Lumi...\nApart from her detailed observations, a new section began to grow in her archive of notes, a section titled \"Lessons to Remember.\" Some of these hard-earned lessons include: \"Any map older than five years should be treated as a work of fiction, not a guide\"; \"Unless otherwise noted, accounts of animal behavior refer exclusively to times outside mating season\"; and \"The probability of being killed by a Floating Hydro Fungus may be extraordinarily low, but it is never zero.\"\nWith each passing day, she became more experienced, and her archive of field notes grew heavier and heavier. She corrected the errors she found in her old entries while adding fresh observations at the same time... Each page was a treasure trove of data, data she often obtained by putting her personal safety on the line.\nOf all the creatures she studied, Linnea was most obsessed with the strange, uncategorized, and undefinable creatures of this world. To her, every spark of life that seemed different from the 'normal' was not a deviation but one of nature's magnificent miracles.\nAnd the Melusines were easily among the most wondrous species she had ever encountered, so much so that she left dozens of blank pages in her notes just to document them. For an entire month, she even endured the ceaseless metallic hum of clockwork while camped near Merusea Village, just so she could gather enough exquisite mechanical parts for a gift at her eventual first meeting with them. But when she finally came face-to-face with an actual Melusine, every courteous phrase she had rehearsed prior simply deserted her.\n\"May I touch you? No, no, wait, how exactly do you swim? What's your anatomy like?\"\nThe Melusine, utterly taken aback by this great burst of enthusiasm, turned tail and scrambled away in panic.\nFrom then on, whenever she crossed paths with a Melusine, she would break into an excited, goofy grin and babble the most peculiar things. This strange behavior of hers didn't go unnoticed, and over time this drew the scrutiny of Serene, the village head...\nBy the time Linnea realized what was happening to her, she was mere moments away from being imprisoned at the Fortress of Meropide. When the Gardemeks inquired if she had anything to say in her defense, she was so overwhelmed with nerves that not a single word came out of her mouth. Fortunately, the situation was eventually resolved after the ever-sharp Detective Sedile spotted the neatly wrapped gifts and the mountain of field notes tumbling from Linnea's bag, and it became clear that there was no malice to her behavior.\nLinnea breathed a long sigh of relief after the Gardemeks finally left. Then, she solemnly opened up her archive to a new page to inscribe the latest \"lesson to remember\" from her latest near-disaster...\n\"The Melusines are truly adorable!!!\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "At first, it was nothing more than a shimmer of intuition.\n\"Professor Linnea, how did you know that I was going to ask you about this?\"\n\"Heh heh... Maybe from experience?\" She laughed awkwardly as unease welled up inside her.\nIt wasn't until the Spirit Envoy Championship that Linnea had her first prophetic dream and finally learned the truth — that she was a descendant of the Augury Birds, a race of fae gifted with the ability to behold fates that cannot be changed.\n\"We foretell both disaster and delight, gazing upon the past dawn and future night. Others fear and revere our might, while we alone detest our plight.\"\nTo others, this ability may seem a gift of immeasurable value. But for the Augury Birds themselves, such a power felt less like a blessing and more like a harrowing curse.\nThe truth was delivered by her elder sister, Celaeno. For years, Celaeno had endured the isolation of the frozen tundra, bearing the weight of the prophecies alone. When she looked at Linnea, who had grown up free of such heavy knowledge, a twinge of sadness rose in her heart, for she knew that one day her younger sister would have to pay the price of growing up too.\nYet, contrary to her expectations, Linnea did not collapse into the abyss of despair. Even as the cold weight of a preordained future struck fear in her heart, what she said next moved her sister greatly.\n\"The end may have already been marked out for us, but there is more than one path that leads to it.\"\nLife is meant to be lived in every passing moment, not held in reserve for some distant day. While fate itself cannot be changed, there are things just as eternal, such as the love of the parents who gave her life, and the bonds of sisterhood that no prophecy could ever sever.\nSadly, the two sisters had to part far sooner than expected. At dawn, the day following the competition, the horn of a departing ship echoed across the docks.\nJust as Celaeno was about to board the ship, she heard the sound of hurried footsteps, then a desperate shout, behind her.\n\"Celaeno! Wait!\"\nCelaeno was greeted by the sight of Linnea, her tiny wings ruffled from a frantic dash and the mountain of packages in her arms wobbling precariously.\n\"Huh? Didn't we already say goodbye after the championship?\"\n\"Heh, but that was yesterday. I just had to see you one more time! I'm so glad I caught you. Now, you have to take this, this, and all of these with you!\"\nLinnea swiftly thrust the gifts into the arms of a bewildered Celaeno, who was still trying to make sense of it all.\n\"This is for our Mom and Dad, this is for you... And these, would you give them to my adoptive parents and their daughter for me?\"\n\"This is a bit much, don't you think?\" Celaeno peered over the mountain of gifts, caught somewhere between a laugh and a sigh of helplessness. \"Did you buy out Nasha Town or what?\"\n\"No, this isn't not too much at all!\" Linnea steadied the topmost box earnestly. \"I have years and years to catch up on! Besides... if we can't be together, at least let these keepsakes stand in for me and keep you company.\"\nThe ship's horn blared once more, urging everyone to finish their goodbyes.\nIt was only when Linnea's figure had become a tiny speck on the shore that Celaeno finally tore her gaze away and reached for the letter tucked among the gifts. She found the envelope was left unsealed — its sender had obviously been in too much of a hurry.\n\"My dear sister,\nDidn't you just say that I should write to you whenever I miss you? Well, here I am, doing exactly that! I'm sorry you had to go so soon. I really wanted to show you Nod-Krai properly. I would've loved to show you the Nocturnal Blossom, for example... It's a really cool flower, with two petals, one blue and one pink. You know, just like you and me, heh. Oh, I was planning to take you to the Clink-Clank Krumkake Craftshop too, where you can find all these fun gadgets, even though I can't help trembling whenever I get close to it... I bet you'd jump out of your skin when you first go in there, just like I did. I mean, we're sisters after all! I really wish you could have stayed a bit longer. But that's alright, we have so much time ahead of us. We'll be there for each other through all of life's big moments. I'm sure I'm there in your visions too, right? While the burden of being daughters of the Augury Birds can be a heavy one to bear, but at least... from now on, we can shoulder it together, my dear sister!\"\nCelaeno put the letter away and leaned against the ship railing as she looked up.\nShe could see the seabirds, drawn by the blast of the horn, circling endlessly above in the cerulean sky."
+      },
+      {
+        "Title": "The Golden Beagle",
+        "Context": "This is no ordinary vessel. It represents Linnea's dreams as a naturalist.\nAccording to her plan, the ship would have a strong bow, strong enough to smash through even the thickest sea ice. There would be a spacious specimen room onboard that would hold all the exotic flowers and herbs she gathers across Teyvat. Plus, it would also have a special storage chamber for ores, complete with custom-made boxes to keep Lumi from sneaking in and eating everything...\nBut why the name \"The Golden Beagle\"? As Linnea puts it, \"It's like a brave and loyal hound, always keen and curious about the world around it.\"\nYet in her visions, she saw what would ultimately become of the ship. It would not return to port showered in honors. Instead, it would be consumed by fire and swallowed by the sea. She saw her treasured field notes scatter like fallen leaves, and Lumi in a helpless daze, as her crew let out cries of despair...\nIf half a lifetime's work was doomed to end in wreckage, why even set sail at all?\nBut Linnea firmly believed that before the sea could claim her ship for good, it would stir up waves no one had ever seen and guide her to islands even the gulls had yet to sing of. Moreover, there would be much laughter and wonder along the way for all — for her, for Lumi, and all of her friends.\nThe wreckage lying in the depths of a future yet to come was nothing more than a cold specimen of destiny. But the ship that existed in her blueprints in the here and now, the one Linnea was building coin by hard-earned coin, was a testament to courage.\nAnd so, Linnea resolved not to waste another moment sighing over a future destined to shatter, and threw herself into commissions from the Adventurers' Guild with renewed vigor. Every mission completed was a threefold victory — a new field note entry for her archive, a lesson learned in the field, and another handful of Mora earned toward her dream.\nEvery so often, Lumi would flop onto the blueprints, drooling over the name \"The Golden Beagle.\" Perhaps, in its little head, anything named \"Golden\" must be a yummy treat.\nAt times like these, Linnea would reach out to gently knock Lumi on the head with a chuckle in her voice. \"Patience, Lumi. Once the ship is ready, we'll sail to the very edge of the world. There, you'll see countless sparkling ores, and maybe, just maybe, you'll find others of your own kind too! Oh, we'll set sail for sure, even if we'll have to swim our way back! But before that... we'll feast our eyes upon the most wondrous sights ever known...\"\nIn a corner of the blueprint for that great ship, Linnea carefully wrote a line of tiny letters: a whisper of a message for the captain yet to come, and a bold challenge flung right in the face of fate itself...\n\"Full speed ahead, Golden Beagle! Together, we'll go to so many places and create a truly magnificent archive! And when the day comes that we can go no further, we'll pass on the pen to the next generation so they can write the chapters we couldn't.\""
+      },
+      {
+        "Title": "Moon Wheel",
+        "Context": "Linnea fiddled with the plain gray stone in her hand, a precious find from a challenging expedition to a seabed ruin. Based on her experience, it was highly possible that an ancient fossil lay hidden beneath its drab and rough exterior.\nSo, she began to brush the sand and sediment away, little by little, careful not to damage the fossil. Then, just as she was on the verge of revealing the fossil's true form, she saw a chubby little appendage suddenly reach in from the edge and...\n\"Ya-ho!\"\nLumi, who had been lying in wait by the table all this time, could no longer hold herself back. Before anyone could blink, she swooped in, snatched up the 'yummy snack,' threw her head back, opened her mouth, and — gulp! — swallowed the stone whole.\nLinnea's brush hand halted in mid-air. Then, she let out a shriek that could have brought the house down.\n\"LUMI!!!! You can't eat that!!! Spit it out! This was the only stone of its kind on the entire seabed!!!\"\nWhat followed was a 'retrieval operation' of comic proportions. Linnea had no choice but to lift Lumi into the air, turn her upside down, then give her a vigorous shake just as one would do when raiding a piggy bank. With a soft little pop, the stone was finally ejected, albeit with a great deal of reluctance, and off it went tumbling across the tabletop.\nAnd then, something unexpected happened.\nAs the plain gray stone tumbled, its rough exterior and the fossil markings began to peel away layer by layer, revealing the thing that had lain dormant all this time deep inside.\nIt was not a fossil at all. Rather, it was a crystal, suddenly illuminated from the inside, pure and radiant. It lay among the bits of stone that had peeled off, glowing a warm, deep golden-brown like amber that had been buried for ages. It was as if time itself had stopped within it, along with all the absurdities and wonders of the world.\nAn uncanny sense of recognition came over Linnea. In that moment, her hazy foresight intertwined with reality, and she sensed with quiet certainty that this crystal giving off a warm glow had always been hers. It had only slept for a while in the long river of time as it awaited this very moment of reunion.\nThis strange, dreamlike sense of familiarity lasted but a moment. Linnea quickly shook herself back to reality and glanced at Lumi, already preparing for another 'retrieval operation.' After all, for this gluttonous little creature, the stone — now shining even more brightly than before — had undoubtedly also become even more irresistible.\nBut the anticipated rush never materialized, much to Linnea's surprise.\nInstead, little Lumi simply stared intently at the Moon Wheel as she rested her chin on the table's edge. For the first time, Linnea saw a look of fascination, even entrancement, in her wide, saucer-like eyes, rather than the usual looks of gluttony or ravenousness. She then reached out her little round \"arm\" to give the crystal a cautious, delicate poke before letting out a soft, contented murmur.\n\"Ya-ho...\"\nIt was at this moment that Linnea came to a realization.\n\"Well, well, it seems you like it too,\" Linnea chuckled as she patted Lumi on the head. She picked up the Moon Wheel, now glowing with a faint, ethereal light, and held it close to the lamp to examine it. \"We'll keep it, then. It'll make a great ornament, so long as you don't make a snack out of it.\"\nAnd this is the story of how Linnea came upon her Moon Wheel.\nThis isn't a tale of epic deeds or life-changing partings. Rather, it's a story about a gluttonous little Jack Frost, a naturalist who is almost always at sixes and sevens, and a tiny miracle that appeared by chance somewhere along the great river of time..."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 213000,
+      "Name": "Lone Feather's Omen",
+      "Description": "Linnea's outfit. A custom-made costume for adventure that combines aesthetics with practicality. It even includes a small, portable cabin for Lumi (and any other friends who might visit in the future). The only problem is, there's just a single window to the outside world. Who gets the window seat is a matter that may call for some serious deliberation between Linnea and her friends.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104174,
+    113086,
+    101272,
+    112127,
+    104364,
+    113083
+  ],
+  "NameCard": {
+    "Name": "Linnea: Rattling Resonance",
+    "Description": "Namecard style.\nLinnea had long assumed the rhythmic clatter coming from Lumi was merely the compression of frozen snow. But then came the day Lumi reached behind her back and produced — a pair of maracas.",
+    "Icon": "UI_NameCardIcon_Linnea",
+    "PicturePrefix": "UI_NameCardPic_Linnea"
+  }
+}

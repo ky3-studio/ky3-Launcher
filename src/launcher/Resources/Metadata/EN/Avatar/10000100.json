@@ -1,0 +1,1124 @@
+{
+  "Id": 10000100,
+  "PromoteId": 100,
+  "Sort": 85,
+  "Body": 5,
+  "Icon": "UI_AvatarIcon_Kachina",
+  "SideIcon": "UI_AvatarIcon_Side_Kachina",
+  "Name": "Kachina",
+  "Description": "A young warrior of the Nanatzcayan, given the Ancient Name of \"Uthabiti.\" Kind-hearted and insatiably persistent, she grows stronger and more capable with each setback she faces.",
+  "BeginTime": "2024-08-27T00:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 989.2932,
+    "AttackBase": 18.16416,
+    "DefenseBase": 66.438225
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 10031,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}+{param3:F1P}",
+            "3-Hit DMG|{param4:F1P}",
+            "4-Hit DMG|{param5:F1P}",
+            "Charged Attack DMG|{param6:F1P}",
+            "Charged Attack Stamina Cost|{param7:F1}",
+            "Plunge DMG|{param8:F1P}",
+            "Low/High Plunge DMG|{param9:P}/{param10:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1003101,
+              "Level": 1,
+              "Parameters": [
+                0.493984,
+                0.27569,
+                0.306323,
+                0.704271,
+                0.774361,
+                1.1266,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 1003102,
+              "Level": 2,
+              "Parameters": [
+                0.534192,
+                0.29813,
+                0.331257,
+                0.761596,
+                0.837391,
+                1.2183,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 1003103,
+              "Level": 3,
+              "Parameters": [
+                0.5744,
+                0.32057,
+                0.35619,
+                0.81892,
+                0.90042,
+                1.31,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 1003104,
+              "Level": 4,
+              "Parameters": [
+                0.63184,
+                0.352627,
+                0.391809,
+                0.900812,
+                0.990462,
+                1.441,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 1003105,
+              "Level": 5,
+              "Parameters": [
+                0.672048,
+                0.375067,
+                0.416742,
+                0.958136,
+                1.053491,
+                1.5327,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 1003106,
+              "Level": 6,
+              "Parameters": [
+                0.718,
+                0.400713,
+                0.445238,
+                1.02365,
+                1.125525,
+                1.6375,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 1003107,
+              "Level": 7,
+              "Parameters": [
+                0.781184,
+                0.435975,
+                0.484418,
+                1.113731,
+                1.224571,
+                1.7816,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 1003108,
+              "Level": 8,
+              "Parameters": [
+                0.844368,
+                0.471238,
+                0.523599,
+                1.203812,
+                1.323617,
+                1.9257,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 1003109,
+              "Level": 9,
+              "Parameters": [
+                0.907552,
+                0.506501,
+                0.56278,
+                1.293894,
+                1.422664,
+                2.0698,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 1003110,
+              "Level": 10,
+              "Parameters": [
+                0.97648,
+                0.544969,
+                0.605523,
+                1.392164,
+                1.530714,
+                2.227,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 1003111,
+              "Level": 11,
+              "Parameters": [
+                1.045408,
+                0.583437,
+                0.648266,
+                1.490434,
+                1.638764,
+                2.3842,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 1003112,
+              "Level": 12,
+              "Parameters": [
+                1.114336,
+                0.621906,
+                0.691009,
+                1.588705,
+                1.746815,
+                2.5414,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 1003113,
+              "Level": 13,
+              "Parameters": [
+                1.183264,
+                0.660374,
+                0.733751,
+                1.686975,
+                1.854865,
+                2.6986,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 1003114,
+              "Level": 14,
+              "Parameters": [
+                1.252192,
+                0.698843,
+                0.776494,
+                1.785246,
+                1.962916,
+                2.8558,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 1003115,
+              "Level": 15,
+              "Parameters": [
+                1.32112,
+                0.737311,
+                0.819237,
+                1.883516,
+                2.070966,
+                3.013,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11001,
+        "Name": "Cragbiter",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 10032,
+        "Proud": {
+          "Descriptions": [
+            "Turbo Twirly Mounted DMG|{param1:F1P} DEF",
+            "Turbo Twirly Independent DMG|{param2:F1P} DEF",
+            "Nightsoul Point Limit|{param3:F1}",
+            "CD|{param4:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1003201,
+              "Level": 1,
+              "Parameters": [
+                0.8776,
+                0.6376,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003202,
+              "Level": 2,
+              "Parameters": [
+                0.94342,
+                0.68542,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003203,
+              "Level": 3,
+              "Parameters": [
+                1.00924,
+                0.73324,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003204,
+              "Level": 4,
+              "Parameters": [
+                1.097,
+                0.797,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003205,
+              "Level": 5,
+              "Parameters": [
+                1.16282,
+                0.84482,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003206,
+              "Level": 6,
+              "Parameters": [
+                1.22864,
+                0.89264,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003207,
+              "Level": 7,
+              "Parameters": [
+                1.3164,
+                0.9564,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003208,
+              "Level": 8,
+              "Parameters": [
+                1.40416,
+                1.02016,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003209,
+              "Level": 9,
+              "Parameters": [
+                1.49192,
+                1.08392,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003210,
+              "Level": 10,
+              "Parameters": [
+                1.57968,
+                1.14768,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003211,
+              "Level": 11,
+              "Parameters": [
+                1.66744,
+                1.21144,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003212,
+              "Level": 12,
+              "Parameters": [
+                1.7552,
+                1.2752,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003213,
+              "Level": 13,
+              "Parameters": [
+                1.8649,
+                1.3549,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003214,
+              "Level": 14,
+              "Parameters": [
+                1.9746,
+                1.4346,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003215,
+              "Level": 15,
+              "Parameters": [
+                2.0843,
+                1.5143,
+                60,
+                20
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11002,
+        "Name": "Go, Go Turbo Twirly!",
+        "Description": "Fight alongside the turbo trusty Turbo Twirly!\nSummons Turbo Twirly. When the skill is Held and released, Kachina will summon and ride Turbo Twirly.\nAfter the Skill is used, Kachina will gain 60 Nightsoul points and enter the Nightsoul's Blessing state.\n\n<color=#FFD780FF>Nightsoul's Blessing: Kachina</color>\nTurbo Twirly's various actions consume Kachina's Nightsoul points.\nThe Nightsoul's Blessing state will end when these points have been depleted.\n\n<color=#FFD780FF>Turbo Twirly</color>\nCan exist independently or be ridden and operated by Kachina. When Turbo Twirly is present, Kachina's Elemental Skill, \"Go, Go Turbo Twirly!\", will change to an option to Mount/Dismount Turbo Twirly.\n·When present independent of Kachina, it will slam the ground at intervals, dealing Nightsoul-aligned <color=#FFE699FF>AoE Geo DMG</color> based on Kachina's DEF.\n·When Kachina is riding Turbo Twirly, she can control it to move and climb swiftly, and use Normal Attacks to slam the ground, dealing Nightsoul-aligned <color=#FFE699FF>AoE Geo DMG</color> based on Kachina's DEF.\n\nTurbo Twirly will disappear once Kachina's Nightsoul's Blessing state ends, and it is considered a Geo Construct. Only 1 Turbo Twirly created by Kachina herself can exist on the field at any one time.\n\n<i>Turbo Twirly only looks like a top — it is, in fact, a drill that can split even the strongest rock asunder!</i>",
+        "Icon": "Skill_S_Kachina_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 10039,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:F1P} DEF",
+          "Field Duration|{param2:F1}s",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1003901,
+            "Level": 1,
+            "Parameters": [
+              3.805672,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003902,
+            "Level": 2,
+            "Parameters": [
+              4.1366,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003903,
+            "Level": 3,
+            "Parameters": [
+              4.4252,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003904,
+            "Level": 4,
+            "Parameters": [
+              4.81,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003905,
+            "Level": 5,
+            "Parameters": [
+              5.0986,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003906,
+            "Level": 6,
+            "Parameters": [
+              5.3872,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003907,
+            "Level": 7,
+            "Parameters": [
+              5.772,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003908,
+            "Level": 8,
+            "Parameters": [
+              6.1568,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003909,
+            "Level": 9,
+            "Parameters": [
+              6.5416,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003910,
+            "Level": 10,
+            "Parameters": [
+              6.9264,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003911,
+            "Level": 11,
+            "Parameters": [
+              7.3112,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003912,
+            "Level": 12,
+            "Parameters": [
+              7.696,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003913,
+            "Level": 13,
+            "Parameters": [
+              8.177,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003914,
+            "Level": 14,
+            "Parameters": [
+              8.658,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003915,
+            "Level": 15,
+            "Parameters": [
+              9.139,
+              12,
+              18,
+              70
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11005,
+      "Name": "Time to Get Serious!",
+      "Description": "Striking the ground, Kachina deals <color=#FFE699FF>AoE Geo DMG</color> based on her DEF and creates a Turbo Drill Field.\nThe Field increases Turbo Twirly's attack AoE and its Movement SPD when Kachina is riding it.\n\nIf Kachina's own Turbo Twirly is present when this is used, the Turbo Twirly will be summoned to her side.\n\n<i>Just as nervous performers might imagine audience members as wooden puppets, Kachina imagines that her opponents are the loveliest of gem-bearing ores — the kind you'd be proud to bring home and hoard.</i>",
+      "Icon": "Skill_E_Kachina_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 10021,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1002101,
+              "Level": 1,
+              "Parameters": [
+                0.2,
+                12
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1002101,
+        "Name": "Mountain Echoes",
+        "Description": "After nearby party members trigger a Nightsoul Burst, Kachina's <color=#FFE699FF>Geo DMG Bonus</color> increases by 20% for 12s.",
+        "Icon": "UI_Talent_S_Kachina_05"
+      },
+      {
+        "GroupId": 10022,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1002201,
+              "Level": 1,
+              "Parameters": [
+                0.2
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1002201,
+        "Name": "The Weight of Stone",
+        "Description": "<color=#FFD780FF>Turbo Twirly</color>'s DMG is increased by 20% of Kachina's DEF.",
+        "Icon": "UI_Talent_S_Kachina_06"
+      },
+      {
+        "GroupId": 10023,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1002301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1002301,
+        "Name": "Night Realm's Gift: Heart of Unity",
+        "Description": "After her Nightsoul points are depleted, Kachina will switch to consuming Phlogiston to maintain her Nightsoul's Blessing.\nWhile in an area with Phlogiston Mechanics within Natlan, she can use Nightsoul Transmission: Kachina. When the active character is currently sprinting, climbing, in a movement mode caused by certain Talents, or at a certain height in the air, the following will trigger when switching to Kachina: Kachina will enter the Nightsoul's Blessing state and ride <color=#FFD780FF>Turbo Twirly</color> when taking the field while gaining 30 Nightsoul points. Nightsoul Transmission can be triggered once every 10s by your own team.\n\nAdditionally, while in Natlan, Kachina will consume 90% less Stamina when climbing while riding <color=#FFD780FF>Turbo Twirly</color>.",
+        "Icon": "UI_Talent_S_Kachina_07"
+      },
+      {
+        "GroupId": 10025,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1002501,
+              "Level": 1,
+              "Parameters": [
+                20
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1002501,
+        "Name": "Boon of Crystal Flame",
+        "Description": "While in an area with Phlogiston Mechanics within Natlan, 20 Stamina will be restored when interacting with some harvestable items. Additionally, the location of nearby <color=#FFD780FF>resources unique to Natlan</color> will appear on your mini-map.",
+        "Icon": "UI_Talent_S_Kachina_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1001,
+        "Name": "Shards Are Gems Too",
+        "Description": "When Kachina mounts or dismounts <color=#FFD780FF>Turbo Twirly</color>, she will absorb nearby Elemental Shards created by Crystallize.\nAdditionally, when a party member picks up such a Shard, or triggers Lunar-Crystallize reactions, 3 Energy will be restored to Kachina. Energy can be restored this way once every 5s.",
+        "Icon": "UI_Talent_S_Kachina_01"
+      },
+      {
+        "Id": 1002,
+        "Name": "Never Leave Home Without... Turbo Twirly",
+        "Description": "When Kachina uses <color=#FFD780FF>\"Time to Get Serious!\"</color>, she will regain 20 Nightsoul points. If there is no <color=#FFD780FF>Turbo Twirly</color> belonging to her on the field, she will enter Nightsoul's Blessing and summon one.",
+        "Icon": "UI_Talent_S_Kachina_02"
+      },
+      {
+        "Id": 1003,
+        "Name": "Improved Stabilizer",
+        "Description": "Increases the Level of <color=#FFD780FF>Go, Go Turbo Twirly!</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Kachina_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1004,
+        "Name": "More Foes, More Caution",
+        "Description": "When there are 1/2/3/4 (or more) opponents within the Turbo Drill Field created by <color=#FFD780FF>\"Time to Get Serious!\"</color>, the active character within the field gains 8%/12%/16%/20% increased DEF.",
+        "Icon": "UI_Talent_S_Kachina_03"
+      },
+      {
+        "Id": 1005,
+        "Name": "All I've Collected Till Now",
+        "Description": "Increases the Level of <color=#FFD780FF>Time to Get Serious!</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Kachina_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1006,
+        "Name": "This Time, I've Gotta Win",
+        "Description": "When your active character's Shield is replaced or destroyed for any reason, Kachina will deal 200% of her DEF as <color=#FFE699FF>AoE Geo DMG</color>. This effect can be triggered once every 5s.",
+        "Icon": "UI_Talent_S_Kachina_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Mottled Gold Yet Unsmelted",
+    "Detail": "A young warrior of the Nanatzcayan, given the Ancient Name of \"Uthabiti.\" Kind-hearted and insatiably persistent, she grows stronger and more capable with each setback she faces.",
+    "Association": 9,
+    "Native": "Nanatzcayan",
+    "BirthMonth": 4,
+    "BirthDay": 22,
+    "VisionBefore": "Geo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Ochotona Princeps",
+    "CvChinese": "静宸",
+    "CvJapanese": "久保ユリカ",
+    "CvEnglish": "Kristen McGuire",
+    "CvKorean": "Son Sun-young",
+    "CookBonus": {
+      "OriginItemId": 108737,
+      "ItemId": 108747,
+      "InputList": [
+        101243,
+        100064,
+        110009
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Hello! I'm Kachina, a member of the Children of Echoes. I adore Grainfruits and would love to become more strong, even though I'm still not much of a fighter. Uh... I should probably save all that for later, right? Then, um... Are you hoping to go somewhere? I'm pretty familiar with these parts, so I can show you the way!"
+      },
+      {
+        "Title": "Chat: Staying Organized",
+        "Context": "Ah... I just saw a brick that wasn't properly stacked. What should I do? Now it feels like there's a little Saurian scratching away inside my chest..."
+      },
+      {
+        "Title": "Chat: Can I Do It",
+        "Context": "I can do it... No, I can't... I can do it... No, I... Ahem, it's fine, I can definitely do it!!! ...Right?"
+      },
+      {
+        "Title": "Chat: Collectibles",
+        "Context": "If you're bored, why don't we take a look at my collection together? If something catches your eye, feel free to take it!"
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Rain makes the soil all muddy and soft, so you've got to be even more careful than usual when you're mining!"
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Aaah!! Um... I—I'm not scared! I was just... caught off guard!"
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Let's go roll around in the snow together! Hehe, don't worry, I won't hide in the snow before suddenly jumping out at you like Ayo does!"
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "Come look at this gem! When you hold it up under the sun, it almost looks like it's got a whole rainbow hiding inside!"
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "Do you think there's any shiny ores underneath all of this sand? We can do a quick dig just to check!"
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Good morning! I've already packed everything, so we can head out whenever!"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "I'm not sleepy, so if you want to take a nap, I'll keep watch. There are a lot of things that I'm not that good at, but my ears are still plenty sharp! I can hear trouble coming from a mile away."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Mualani asked me to go into a cave with her tonight in a test of courage, and I—I—I'm... I'm so scared! What should I do? I didn't want to disappoint her, so I closed my eyes and said I'd go... No matter what happens, I should face it together with her! Ehh!? You're coming too? Th—Thank goodness! Phew..."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "*sniffle* I don't know how I managed to screw things up again today... Nooo, I don't wanna cry, but I just can't seem to help myself... *sniffle*... Ahh! D—Didn't we both already say good night to each other? Th—Thank you for staying up and comforting me though, it means a lot..."
+      },
+      {
+        "Title": "About Kachina: Turbo Twirly",
+        "Context": "Ayo and I came up with the name together! I had already decided on the first part, \"turbo,\" and then I chose \"twirly\" because I noticed it looked a lot like Ayo in action. I often race against Ayo on it, and I've even won!"
+      },
+      {
+        "Title": "About Kachina: Dying",
+        "Context": "Falling in battle during the Night Warden Wars is an honor for the warriors of Natlan. As one of their number, I should feel the same. But while I was down there, even as I kept repeating that to myself, I was still terrified the whole time... I'm really grateful that you took such a huge risk to go to the Night Kingdom and bring me back... *sniffle* Really, I can't thank you enough!"
+      },
+      {
+        "Title": "About Us: Legends",
+        "Context": "There are a lot of legends about heroes in Natlan, and my favorite is the one about Lord Traore! How incredibly cool is it to be able to seal the Abyss beneath the ground as an ordinary mortal? Oh, that reminds me... you've been to a bunch of countries in Teyvat, so you must know a lot of legends, right? I'm super curious... Could you tell me some of them when you can find the time?"
+      },
+      {
+        "Title": "About Us: Small Gift",
+        "Context": "Please pick one you like! Just think of it as a symbol of our friendship. I've brought all of my best and shiniest ores, so come on, take one! I'll be really happy if you do!"
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "When I saw this shiny Vision for the first time, I really thought my eyes were playing a trick on me... It's more shiny than any ore I've ever seen. Even though I'm nowhere near as strong as a legendary hero right now, if one day, my story could inspire someone else, I'd be the happiest person in the world. Really, just one person would be enough..."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Ayo is a very important companion to me! Even though he looks well-behaved now, he really loved headbutting people when he was younger. He's super strong, so even I get knocked over sometimes. Not much you can do about it, though, because it's just how Tepetlisaurs show their affection! Oof, Ayo, stop headbutting me! Alright, alright, I won't say any more!"
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Did you know? Spinel fruit are shaped just like gems! Now, if only they had the same shelf-life as actual gems..."
+      },
+      {
+        "Title": "About Mualani",
+        "Context": "Mualani's my first good friend! Before I met her, I never even knew that people as sweet as her existed, or how many fun things there are in the world! Look, this is a photo of us! She said we should jump right when they took the photo... I look a bit stiff? Hehe, you caught me! A lot of people were staring at us when we took this photo, so I was really nervous..."
+      },
+      {
+        "Title": "About Kinich",
+        "Context": "It was Mualani who introduced me to him! To be honest, I was a little scared of him at first, because his eyes... well, he's got a scary look. It was only later that I found out that he secretly taught my bullies a lesson. But when I tried to give him a gift to thank him, he refused to take it. He said something along the lines of having already received enough compensation..."
+      },
+      {
+        "Title": "About Chasca",
+        "Context": "She's a famous \"peacemaker\" in Natlan! They say she can resolve any conflict, no sweat. I guess that she probably does it because like me, she's really not a fan of people getting into fights with each other..."
+      },
+      {
+        "Title": "About Iansan",
+        "Context": "Before, when I wanted to become stronger, I asked Iansan to train me. She had me do all sorts of high-intensity workouts, and I often only managed to get through them by pushing myself to the limit. Luckily, she always knew just the right amount of training for me, so I still had just enough energy to make my way home after each session... I'm really grateful to her."
+      },
+      {
+        "Title": "About Citlali",
+        "Context": "Mualani told me that you were only able to save me thanks to her invention, so I have to accept my share of the responsibility for the destruction of the Spiritspeaker Stone. I worked up the courage to apologize to her in person, and asked her to pick a few rocks from my collection as repayment. She scratched her head and said, \"Well, it'll become an issue if I don't pick one, won't it? Then... We'll be even as long as I pick something reasonably similar, right?\" In the end, she waved me off after taking the most unremarkable piece of obsidian I had. What do you think? Should I try to get her something else? Do you know the kind of thing she likes?"
+      },
+      {
+        "Title": "About Xilonen",
+        "Context": "After I received my Ancient Name, Uncle Pacal took me to see her and asked her to make Turbo Twirly for me. Her craftsmanship really is out of this world!\nLater, we discussed our experiences collecting and storing gems, and even admired each other's collections. Everything in her collection is in top condition, so she must take great care of them. She seems to take a more... casual approach to her own life, though... Once, I went looking for her, and couldn't find her for ages! I eventually found her basking in the sunshine in a big tree, sound asleep..."
+      },
+      {
+        "Title": "About the Pyro Archon",
+        "Context": "I never could have dreamed that the Pyro Archon herself would one day call me a hero of Natlan... She's the idol of every warrior in our land, so being recognized by her is like... *sniffle* I just get overwhelmed every time I think about it, sorry... *sniffle* Sorry, sorry! I shouldn't have started crying..."
+      },
+      {
+        "Title": "About Ifa",
+        "Context": "Ifa's a really amazing sauro-vet! Any little Saurian who sees him comes back and starts living a healthy life! They eat right, sleep well, don't cause trouble, and basically don't get sick again! So whenever a Saurian's looking sick, everyone's first thought is to ask him to fly over and have a look!"
+      },
+      {
+        "Title": "More About Kachina: I",
+        "Context": "\"Uthabiti\" is my Ancient Name — it means the ability to stay strong in the face of adversity. *sigh* But I often wonder why the Wayob decided to give the name to me. I'm so weak, and whether at home or among the tribe, few people even know of me... With so many strong and cool people around me, am I really worthy of the name?"
+      },
+      {
+        "Title": "More About Kachina: II",
+        "Context": "My family, huh... I'm the middle child of my family. My Dad's placed most of his hopes on my older sister, and my Mom has to spend a lot of time taking care of my younger sister. Our life isn't exactly easy, so I've got to be a good girl, and grow up quickly... Or at the very least, make sure they won't have to constantly worry about me."
+      },
+      {
+        "Title": "More About Kachina: III",
+        "Context": "Uncle Pacal is really nice to me! Whenever other people in the tribe talk bad about me, he always defends me. Still... I feel bad whenever he has to do that. After all, I need to win everyone's respect with my own hands..."
+      },
+      {
+        "Title": "More About Kachina: IV",
+        "Context": "I've always known that crying won't solve anything, and I've never heard a legend talk about the hero crying in front of their friends, either. I really want to hold back my tears, but I just can't... Huh? It's okay? Tears are a good way to let out your emotions? Do... Do you really think so? *sniffle* Thank you, thank you... Oh no, why am I crying again?"
+      },
+      {
+        "Title": "More About Kachina: V",
+        "Context": "I've always thought that it was only natural for me to be overlooked because I was weak. Now that I've talked with the Wayob though, I've changed my mind. \"Uthabiti\" is my Ancient Name, and I've... I've decided to become the best \"me\" I can be. There have to be things in this world that only I can accomplish. I will... keep striving. I hope this obsidian will one day hold a record of my deeds and become... even more radiant and dazzling."
+      },
+      {
+        "Title": "Kachina's Hobbies",
+        "Context": "This is the first gem I found. It's such a pretty shade of green, don't you think? It was originally one half of a pair, but I gave the other one to Mualani. Look, the pattern on it looks just like flowing water! Oh, and this one, too — it might look black at first glance, but put it under the sun, and you'll see all kinds of a rainbow of color! Hehe, I built this collection, one stone at a time!"
+      },
+      {
+        "Title": "Kachina's Troubles",
+        "Context": "Mualani gave me a huge hat once. It was super cool, and was perfect for blocking the sun, so I really loved it. Over time, though, it kind of turned into a felt hat... In the end, I had to get this hat instead, just because Saurian fur won't get stuck to it."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "I love Grainfruit Chips! I would love them even more if they could be stacked neatly into a tower."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Huh!? Is this really just one portion? But if I don't finish the whole thing, won't I have let the chef's hard work go to waste? I—It's alright, I'll finish the whole thing! Small bites, Kachina, small bites..."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Whoa, is this for me? It's super delicious! I'm going to eat slowly, so I can savor every bite..."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "The taste, the aroma, the presentation... everything about this dish is marvelous! If there's ever a cook-off, I'm sure you'd win!"
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Thank you for taking the time to make something for me! I—I promise that I'll finish this. Just... give me a few more minutes!"
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Happy birthday! This is for you. It's a pika carved from Iridescent Opal. Iridescent Opal's quite warm to the touch, but it doesn't really stand out, so it's easy to miss it underground. The more you carry it with you, though, the shinier it gets! It's one of my favorite gems, so I hope you'll like it too."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Are my ears... trembling? No, I'm not nervous... I'm just really happy. Sorry, but I can't really control them, they're way too excited right now. Here, I'll... let me just cover them up."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "You really care a lot about me... *sniffle* Ugh, I didn't mean to cry, but I'm just... so touched by your kindness."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "\"Though the court burned to rubble, the flame never once went out. It shall reignite the next morn, more radiant than afore.\" This is one of my favorite quotes from Lord Traore. I—I must keep working hard!"
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "You've shown me all kinds of new and fascinating things, and really helped me to grow... I have no idea how I could ever repay you, but I want to find the answer by myself. So from now on, please allow me to be the hero... the hero that protects you!"
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Let 'er rip!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Sha~bam!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Here goes!"
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Spin to win!"
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "Shockwave!"
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "Let's go, Twirly!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Clear the area!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Drilling down!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Get back."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Whoa! Look at all these shiny rocks!"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Do you also like collecting shiny rocks? I mean, who wouldn't want to? They're so pretty!"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Need help organizing the loot? I'm an expert!"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "It's nothing, I can walk it off!"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "C'mon... Pull yourself together, Kachina!"
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "I... I can do it! I have to!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Don't forget about me!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "I'm here! Just leave it to me!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Sorry... I pushed myself... too hard."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "My name... I must honor it..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "No... I messed up... again..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "It's just a scratch!"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Oof... I'm fine."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Whoa! I can... join the team?"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Oh yay! Okay, let's go!"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Another chance to learn from you!"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Just like the other progeny of the Children of Echoes, Kachina grew up surrounded by adorable Tepetlisaurs, spending her time digging shiny gems out of the bowels of the mountains and listening to her elders passing down the legends of heroes.\nShe learned the mountain paths like the back of her hand, developing a great instinct and talent for finding minerals buried deep beneath the ground. When she had some time to kill, she'd be with all the other kids, running off to the music studios where artists were recording their newest tunes to just cut loose and dance freely to the pulsing rhythms.\nGrowing up in this environment, the occasional bump and scratch was unavoidable, and Kachina would cry out in pain when she hurt herself, just like any other child. But long before any other kid would have recovered, Kachina would have wiped away her tears and stood back up again.\nIn the eyes of others, of course she was a good kid. But Kachina still struggled to understand why someone as ordinary as herself was given the Ancient Name \"Uthabiti.\"\nJust what part of her was worthy of the ideals of strength this great name carried? Young as she was, she was unable to puzzle it out.\nBut having been granted this great honor, she had an obligation to participate in the Pilgrimage of the Return of the Sacred Flame. Moreover, returning triumphantly from the Pilgrimage and rising up like the heroes of legend was the dream of every warrior of Natlan — including Kachina.\nAs she experienced failure time and time again, not only was she overwhelmed with sadness, but she couldn't even lift her head to face the disappointed looks in the faces of her friends. Nevertheless, she would wipe away her tears, and stand up once more.\nBut having already failed so many times, could she really achieve success in the Pilgrimage? Kachina, who always gave everything she had, to fight on, felt doubt creeping into her heart."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Other than the required applicant information on the Pilgrimage of the Return of the Sacred Flame pre-registration form, there is also a page for providing optional information about the candidate. The information it asks for includes, but is not limited to, hobbies, personal experiences, and so on. The original purpose was to make it easy for the promotional team to create materials to hype up participants, but practically everyone already knew all the info on the hottest contestants, so trying to find out that way was completely unnecessary. And so, over time, nobody took the supplemental form seriously. It seems like only Kachina would carefully fill in every blank on the supplemental form every time.\n\"Hobbies: Dancing.\"\nEvery member of the Children of Echoes knows a thing or two about dancing, and a stereotype the other tribes have about the Children is that dancing is in their blood. The moment music sounds, the children of the Nanatzcayan will start subconsciously swaying. But even among them, Kachina is a gifted dancer, with great control over her body even from a young age. Her movements as she shifts her weight to the beat have always been as smooth as a swimming Koholasaurus. Even Pochtli frequently praised her, and Pochtli is not someone given to giving out compliments. Actually, Kachina really wanted to write that down too, to prove she did have something to write about, but since she was worried it would look conceited, she let it go.\nAs for her other hobby, she hesitated for a long time before finally deciding not to put it to paper.\nDigging.\nWhat she found embarrassing was that, like most members of the Children of Echoes, her favorite thing to do was dig around in tunnels. Whenever she discovered a vein of ore in a dark tunnel, a warm feeling would well up in her heart. Everyone in the Children of Echoes understood this warmth, but she thought writing \"digging up minerals\" in the \"hobbies\" section would only make it look like she lacked personality.\n\"I really don't have any strengths.\" She wanted to sigh.\nThe next box was about the people closest to you.\n\"Dad, Mom, Ayo...\" She began to fill in her family's names.\nOther than her parents, who gave her so much love and warmth, the one closest to her was her Tepetlisaurus companion, Ayo. The one by her side the first time she tried digging alone was none other than Ayo. When her parents were recounting the legendary tales to her, and when she was out causing a ruckus, the one following close behind her was always Ayo. Just thinking of him, Kachina couldn't help but smile.\nShe wanted to add a few other names between the lines, like Mualani, who always encouraged her with a smile, and Kinich, who always extended a helping hand when she needed it most, and from her own tribe, Uncle Pacal... But she couldn't fit that many names in the space provided, so, she had to let them go.\nWhen she finally finished filling it all in, and handed the supplementary form to the staff member on duty, they were absolutely flabbergasted that this pocket-sized little girl had actually filled out the entire form.\n\"That page is optional, you know. It's okay if you don't write anything down,\" they joked.\nHer response was: \"That's fine. Everything I can do well, I want to take seriously.\""
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Tepetlisaurs and the Children of Echoes have been living together since before the time of Kachina's grandfather's grandfather. It is the custom of the people to work and live alongside them, and become companions.\nThis means that for the Children of Echoes, Saurians are not like the livestock whose lives and deaths are dictated by humans, nor are they like pets, beholden to the whims of their masters. They stand as equals to humanity.\nMost bonds between Tepetlisaurs and humans are formed willingly, just like Kachina and Ayo.\nTepetlisaurus nests are never too far from Children of Echoes dwellings, and this proximity ensures Saurian and human are often running into one another, with the latter considering the former to be friendly neighbors, never thinking it odd to meet one occasionally.\nFor a time when Kachina was quite young, she'd often run into a robust young Tepetlisaur at the crossroads on the way to the mines. To Kachina, these simple, honest neighbors were a group worth greeting, so she'd always say \"Hi!\" to him.\nAfter a time, it seemed like the little Tepetlisaur remembered her, and she began running into him more and more different places. Practicing dancing in an open field, gathering grainfruit, catching fish in the river... After so many encounters, the young Saurian and human would not only greet one another, but also sometimes exchange gifts.\nWinning the little Saurian's friendship wasn't a complicated affair. Kachina didn't need to worry about trying to prove her worth to him, or offering him special rewards. They simply felt comfortable hanging out together, so they spent time together.\nUntil one day, the little Tepetlisaur just naturally followed Kachina to her home, after which it became her family's companion, and Kachina gave him the name \"Ayo.\" The whole thing was totally normal, no less natural than how fish must swim in water or how birds must soar through the skies.\nFrom then on, Ayo always showed her the loyalty and affection he shows to friends, unlike some of the playmates she grew up with. They didn't hesitate to start keeping their distance after she failed time and time again in the Pilgrimage of the Return of the Sacred Flame, and some even mocked and ridiculed her. But Ayo has always stood firmly by her side with his sharp horn, never wavering."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "\"Uthabiti\" carries the meaning of toughness and tenacity. At first, Kachina did not think that she was at all worthy of such an Ancient Name, brimming with honor.\nAfter consulting the ancient woven scrolls, and learning just what kind of people the ancient heroes who had borne the name before were, she felt even more perplexed.\nThey all possessed incredible power, and would always remain bold and spirited, no matter what dangers they faced, for which they were revered by later generations; they had maintained their noble character despite enduring the harshest of conditions, protecting their homelands with naught but their own strength, never wavering in their duties or abandoning their responsibilities until their last breath. Looking back at herself, she felt she didn't have the strength of warriors of the Collective of Plenty, nor did she possess the agility of the Riders of the Flower-Feather Clan. Even though she didn't want to appear weak and easily bullied, in the face of constantly being belittled and even degraded, she couldn't help but cry and snuffle.\n\"Do tough people really cry all the time like I do?\"\nShe really was a long, long way from being anything close to \"tough.\" After reaching this conclusion, she was despondent for some time, drowning in despair. But she quickly let go of those feelings. Not because she trained until she became a powerful warrior, or because she suddenly understood some profound truth. And though her friends and family did show her a lot of care and concern, her choice was mostly dictated by her own habits.\nNo matter how badly you fall, the first thing you have to do is just get back up again.\nWhen she was even younger, every time she fell, she would already have stood up when any other child would still have been wailing on the ground. Yes, the wounds still hurt, and her tears were still splashing to the ground, but these were just innate physical reactions. She consciously felt she should stand up and look at the rock that had tripped her before carrying on crying.\nAnd the same is true now. Facing with a future without much hope, she felt intense fear, and was frustrated and lost. Being so young, she didn't yet understand how to conceal her own feelings, and so she wore her negative thoughts and emotions on her sleeve. But she would still stand up once more, sobbing and sniffling, her face painted by her tears and bruises, and keep practicing, keep pushing forward.\nShe herself understood this as being able to take a beating, but in the words of Uncle Pacal, who was both more mature and more eloquent:\n\"Though people are weak, it is through their bravery in facing this cruel world that their greatness is truly revealed.\"\nMaybe Kachina really is tough."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "After returning from the Night Kingdom, it was as if the other households of the tribe looked upon Kachina's family in a new light.\nSome who had never spoken to her family before began to take the initiative, greeting them when they ran into them. Those acquaintances that before had only ever politely offered some small talk when they met now actively sought them out to socialize.\nWhether or not Kachina was there, the conversation would — intentionally or otherwise — invariably turn to her. They would laud her bravery and toughness, praising her from the tip of Ayo's tail to the points of her ears. In fact, those rather distinctive ears, which had once only been seen as a common \"atavistic trait,\" now became proof of her having been special from birth.\nHaving experienced so many setbacks, yet in the end finally returning triumphant, she was the epitome of persistence and perseverance against the odds. All her previous failures and defeats became little more than footnotes to her feat, buried amongst the paeans.\nSomething felt off to Kachina. Her mistakes and tears were being ignored by everyone, even though they plainly existed, concealed by the light of her success.\nOthers could forget about all the countless failures she had endured, but she herself could not, nor did she think she should.\nShe always thought she simply couldn't compare to those heroes who were victorious time and time again, and her triumphant return this time was intrinsically linked to the support of her friends. There was no way she could suddenly become the idealized version of herself who existed only in the praise streaming forth from others.\nShe was still the Kachina who couldn't stop herself from crying when dispirited, and she still wanted to be that Kachina who would always charge forward, getting back up again no matter how many times she falls.\n\"Not getting knocked down is definitely one type of tough, but maybe not losing yourself in all the flowers and praise is another.\"\nAnd so, Kachina added another footnote to her understanding of the name \"Uthabiti.\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Every child of the Nanatzcayan has heard fables about raw ore and gems, and Kachina's parents related one such tale to her before bed.\nBefore the raw ore had been unearthed by the Children of Echoes, it had slept soundly in the depths below the mountains, alongside mud in its matrix.\nAt first, it didn't know it had the potential to become a gem. It only endured the long dark and loneliness, and never called itself as such.\n\"I'm just a chunk of totally ordinary rock.\" That's what it thought.\nUntil a great gale had blown away the topsoil, the raging rivers had washed away the silt, an earthquake had sundered the strata, and finally, the drills of the Children of Echoes split it off from its place in the bowels of the mountain... Even then, it still hadn't realized it had a certain splendorous radiance glittering within its own rocky heart.\nAs it was smashed and polished, the ore felt immense pain. As chisel and grindstone carried away many of its parts, and its ordinary rind was carved off, the patterns that represented its timidity were smoothed away. In the eyes of the Children of Echoes, this was a process filled with joy and beauty, but the ore knew not what was happening, or what would come next. As its tears flowed, it asked the chisel and grindstone:\n\"Why must this happen to me?\"\nTo reveal your true nature as a gem.\nBut those words remained unsaid. Unlike the ore, the chisel and grindstone had participated in the cutting of countless gems and witnessed the moment when the rays of light burst forth, and so they kept their silence.\nUntil the work was complete at last, and the ore could finally see what it looked like in the eyes of others: a beautiful gemstone.\nAs she walked alone through the Night Kingdom, Kachina kept thinking of this story. She remembered that she had asked her parents: What happened next? What should a gemstone look like? But the chill of the Night Kingdom blurred her memories, and she couldn't remember the rest of the fable. Fortunately, the memories of being with her parents gave her warmth, allowing the fire of her soul to burn on. She decided to stop soul-searching, for whether she was low-quality ore shattered by the chisel or a gem that yet held hope, she had to continue onward. She had many more things she wished to do, and many people she wished to see again.\nAt the moment she was bathed in sunlight once more, and saw the outstretched hand of the Traveler, she knew what a gemstone should look like:\nA strong, sturdy structure, capable of holding up the world even in the darkest hour.\nPossessing unquenchable hope, lighting up the pitch-black world.\nNow, she has returned triumphant from the Pilgrimage of the Return of the Sacred Flame and proven herself. The day when others gaze at her with admiration has finally come, and she can bring them faith and courage. The Pyro Archon herself told her, the name Kachina will be woven into the banners by the Masters of the Night-Wind, as a part Natlan's heroic saga, flowing into the Ley Lines, becoming an eternal legend.\nThus did tears and courage finally smelt the gemstone named \"Kachina.\""
+      },
+      {
+        "Title": "The Banner of Uthabiti",
+        "Context": "We recite the names of the ancestors, we sing the names of the heroes.\nThe brave warriors who inherit the name of \"Uthabiti,\" we record and weave their words.\nThe first strand of golden thread we offer to the sword-wielder who first created the name, a homely girl no taller than a child.\nShe once held back the collapse of the cliffs with her own two hands, bearing the people of an entire tribe upon her shoulders.\nIn spirit and in thought, she was many times greater than the tallest and sturdiest warriors in the entire history of Natlan.\nThe bright fire of this hero's life burned out quickly, yet even at death's door, she laughed freely and uproariously, the lingering sounds clear and bright, like a great river breaching a dike.\nThough her breath ceased and her heartbeat stilled, the weavers could still hear the sound of waves pouring forth from her shriveled body, only fading after seven nights.\nThe second strand of golden thread we offer to the shield-bearer who lifted the name from the river of concepts once more, he who never once put down his shield.\nThough he himself was slim as a reed, he stood and fought together with his shield for years after year, and never wavered no matter how time passed.\nHis body was as silent as his shield, but his soul was wont to bellow over the battlefield.\nEven within his urn, his ashes still attempted to solidify and burst through the vessel, leading all to declare he could not fit into such a small tomb.\nFinally, his remains were scattered amongst the mountains, the glittering ashen gravel echoing like thunder as it struck the stone walls.\nThe third strand of golden thread we offer to the anonymous ones lost between the layered banners, whose deeds have been hidden by history.\nWere it not for the Wayob's revelations, it would be difficult for us to clearly see the traces of the blood and tears they left behind.\nThe final moments of the great heroes were peaceful, and we offer our sincerest prayers that they burned themselves out in happiness and contentment.\nThe fourth strand of thread is woven with Saurian feathersilk, and we offer it to the spear-wielder who held the name high above the Pilgrimage of the Return of the Sacred Flame once more.\nIn the Night Kingdom, she traveled with the souls of the warriors who battle eternally, traversing the creeping dark and returning in triumph.\nTears do not lessen the glory of the name \"Uthabiti,\" and her return was inseparably linked to the start of a new age.\nWe recite the names of the ancestors, we sing the names of the heroes—\n\"The one that dares stand firm as a mountain, their bones like battlements, and hold the sun's gaze — it is they that shall be given unto eternity.\"\n\"Fear itself should instead fear me, for my body is like a roaring blaze; destined to melt down all that is mean and lowly, then cast it once more as an epitaph.\""
+      },
+      {
+        "Title": "Vision",
+        "Context": "It was after her first Pilgrimage of the Return of the Sacred Flame. Kachina's first Pilgrimage had ended in failure, all the lofty expectations from before having come to nothing. Everyone around her doubted her ability, but more painful still was that she began to find it harder to control her doubts about herself.\nMaybe even the Wayob occasionally got it wrong? Could she really \"melt down all that is mean and lowly\" like in the poem? Or maybe she was actually the kind of mediocre child who should be melted?\nIt was then that she rediscovered what digging meant to her.\nShe had always loved drilling to the depths of the mountains, seeking out treasures, but this time, she didn't dig with any kind of particular goal. She just carried her drill and bored forward, as though as long as she just kept going, disappointment and sorrow would be unable to bore a hole into her heart, but instead became the drill in her hand, punching a hole into the heart of the mountain.\nShe felt much happier moving forward endlessly through the darkness, where she might still turn up something good, rather than just enduring doubt and defeat. But in the world aboveground, that Pilgrimage would not be erased, and her defeat would march forward alongside time, a stamp Kachina could never rub away. Whether hiding down in the darkness, or standing upright in the sunlight, she was still completely dejected, and if she had to choose, the former was harder to bear. Because there, the word \"failure\" constantly echoed in her head, and it was far more painful for her than any of the tears and sweat she had shed in her training for the Pilgrimage.\nThe people of Natlan have a saying, that the Children of Echoes are a stubborn lot, and their lives are like the horns on a Tepetlisaur's head, soft yet sharp, and always charging forward. And much like the saying implies, stopping was never an option in Kachina's mind. All she knew was moving onward.\nPerhaps the heavens had decreed she could never become a towering hero, so all she could do was trudge on forward, shifting and testing and trying to take one step, then another.\nOf course, what she didn't understand then is that while thrusting out your chest, holding your head high, and shouting your certainty of victory while charging forward is certainly something people aspire to, setting your jaw, gritting your teeth, and inching forward, bit by bit, one leaden step at a time, is also something truly awesome.\nWhile underground, that was precisely what she was pondering.\nBut at the same time, she would also occasionally dig something interesting up.\nLike her Vision.\nWhen she received a Vision of her own, she was naturally quite happy, but she had already experienced a similar feeling of excitement before, and that was when she had received the Ancient Name \"Uthabiti.\"\nNeither the acknowledgment of an Archon nor of the Wayob meant that she would definitely accomplish some great deed, she had learned at least that much from reality, but what she hadn't learned was:\nWhen the legends of heroes are in their embryonic state, they aren't the least bit noteworthy, nor are the tales very encouraging, being dark and gloomy instead. But all the initial motivation they need to achieve greatness is already present, and as long as the protagonists keep on moving forward, the future will shine brightly for them.\nBut those in the stories can never know the ending beforehand, so as they run forward with everything they have, come what may, the tears they shed are all the more beautiful."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 210000,
+      "Name": "Tawny Peaks, Spired Rock",
+      "Description": "Kachina's outfit. Sturdy gloves, check, wear-resistant boots, check — \"Uthabiti\" Kachina is ready to face the challenges ahead!",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104174,
+    113065,
+    101249,
+    112106,
+    104355,
+    113060
+  ],
+  "NameCard": {
+    "Name": "Kachina: Twirly",
+    "Description": "Namecard style.\nThe upper half of the Turbo Twirly is very stable, but if the lower half gets stuck, there's a high chance you'll end up with one very dizzy rider.",
+    "Icon": "UI_NameCardIcon_Kachina",
+    "PicturePrefix": "UI_NameCardPic_Kachina"
+  }
+}

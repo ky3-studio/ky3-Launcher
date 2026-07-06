@@ -1,0 +1,1160 @@
+{
+  "Id": 10000101,
+  "PromoteId": 101,
+  "Sort": 87,
+  "Body": 1,
+  "Icon": "UI_AvatarIcon_Kinich",
+  "SideIcon": "UI_AvatarIcon_Side_Kinich",
+  "Name": "Kinich",
+  "Description": "A Huitztlan Saurian Hunter skilled at counting costs.",
+  "BeginTime": "2024-09-17T18:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 11,
+  "BaseValue": {
+    "HpBase": 1000.986,
+    "AttackBase": 25.8818,
+    "DefenseBase": 62.40269
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 10131,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "Mid-Air Normal Attack DMG|{param9:F1P}",
+            "Charged Attack DMG|{param4:F1P}×3",
+            "Charged Attack Stamina Cost|{param5:F1}",
+            "Plunge DMG|{param6:F1P}",
+            "Low/High Plunge DMG|{param7:P}/{param8:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1013101,
+              "Level": 1,
+              "Parameters": [
+                0.98986,
+                0.82904,
+                1.23496,
+                0.48418,
+                50,
+                0.745878,
+                1.49144,
+                1.862889,
+                1.677
+              ]
+            },
+            {
+              "Id": 1013102,
+              "Level": 2,
+              "Parameters": [
+                1.07043,
+                0.89652,
+                1.33548,
+                0.52359,
+                50,
+                0.806589,
+                1.612836,
+                2.01452,
+                1.8135
+              ]
+            },
+            {
+              "Id": 1013103,
+              "Level": 3,
+              "Parameters": [
+                1.151,
+                0.964,
+                1.436,
+                0.563,
+                50,
+                0.8673,
+                1.734233,
+                2.16615,
+                1.95
+              ]
+            },
+            {
+              "Id": 1013104,
+              "Level": 4,
+              "Parameters": [
+                1.2661,
+                1.0604,
+                1.5796,
+                0.6193,
+                50,
+                0.95403,
+                1.907656,
+                2.382765,
+                2.145
+              ]
+            },
+            {
+              "Id": 1013105,
+              "Level": 5,
+              "Parameters": [
+                1.34667,
+                1.12788,
+                1.68012,
+                0.65871,
+                50,
+                1.014741,
+                2.029052,
+                2.534396,
+                2.2815
+              ]
+            },
+            {
+              "Id": 1013106,
+              "Level": 6,
+              "Parameters": [
+                1.43875,
+                1.205,
+                1.795,
+                0.70375,
+                50,
+                1.084125,
+                2.167791,
+                2.707688,
+                2.4375
+              ]
+            },
+            {
+              "Id": 1013107,
+              "Level": 7,
+              "Parameters": [
+                1.56536,
+                1.31104,
+                1.95296,
+                0.76568,
+                50,
+                1.179528,
+                2.358556,
+                2.945964,
+                2.652
+              ]
+            },
+            {
+              "Id": 1013108,
+              "Level": 8,
+              "Parameters": [
+                1.69197,
+                1.41708,
+                2.11092,
+                0.82761,
+                50,
+                1.274931,
+                2.549322,
+                3.184241,
+                2.8665
+              ]
+            },
+            {
+              "Id": 1013109,
+              "Level": 9,
+              "Parameters": [
+                1.81858,
+                1.52312,
+                2.26888,
+                0.88954,
+                50,
+                1.370334,
+                2.740087,
+                3.422517,
+                3.081
+              ]
+            },
+            {
+              "Id": 1013110,
+              "Level": 10,
+              "Parameters": [
+                1.9567,
+                1.6388,
+                2.4412,
+                0.9571,
+                50,
+                1.47441,
+                2.948195,
+                3.682455,
+                3.315
+              ]
+            },
+            {
+              "Id": 1013111,
+              "Level": 11,
+              "Parameters": [
+                2.09482,
+                1.75448,
+                2.61352,
+                1.02466,
+                50,
+                1.578486,
+                3.156303,
+                3.942393,
+                3.549
+              ]
+            },
+            {
+              "Id": 1013112,
+              "Level": 12,
+              "Parameters": [
+                2.23294,
+                1.87016,
+                2.78584,
+                1.09222,
+                50,
+                1.682562,
+                3.364411,
+                4.202331,
+                3.783
+              ]
+            },
+            {
+              "Id": 1013113,
+              "Level": 13,
+              "Parameters": [
+                2.37106,
+                1.98584,
+                2.95816,
+                1.15978,
+                50,
+                1.786638,
+                3.572519,
+                4.462269,
+                4.017
+              ]
+            },
+            {
+              "Id": 1013114,
+              "Level": 14,
+              "Parameters": [
+                2.50918,
+                2.10152,
+                3.13048,
+                1.22734,
+                50,
+                1.890714,
+                3.780627,
+                4.722207,
+                4.251
+              ]
+            },
+            {
+              "Id": 1013115,
+              "Level": 15,
+              "Parameters": [
+                2.6473,
+                2.2172,
+                3.3028,
+                1.2949,
+                50,
+                1.99479,
+                3.988735,
+                4.982145,
+                4.485
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11011,
+        "Name": "Nightsun Style",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 rapid strikes.\nAfter using his Elemental Skill \"Canopy Hunter: Riding High\"'s mid-air swing, he can perform a Normal Attack in mid-air before landing.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to spin and throw his Claymore forward to attack opponents.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_04"
+      },
+      {
+        "GroupId": 10132,
+        "Proud": {
+          "Descriptions": [
+            "Loop Shot DMG|{param1:F1P}×2",
+            "Scalespiker Cannon DMG|{param2:F1P}",
+            "Nightsoul Point Limit|{param4:F1}",
+            "CD|{param3:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1013201,
+              "Level": 1,
+              "Parameters": [
+                0.5728,
+                6.8744,
+                18,
+                20
+              ]
+            },
+            {
+              "Id": 1013202,
+              "Level": 2,
+              "Parameters": [
+                0.61576,
+                7.38998,
+                18,
+                20
+              ]
+            },
+            {
+              "Id": 1013203,
+              "Level": 3,
+              "Parameters": [
+                0.65872,
+                7.90556,
+                18,
+                20
+              ]
+            },
+            {
+              "Id": 1013204,
+              "Level": 4,
+              "Parameters": [
+                0.716,
+                8.593,
+                18,
+                20
+              ]
+            },
+            {
+              "Id": 1013205,
+              "Level": 5,
+              "Parameters": [
+                0.75896,
+                9.10858,
+                18,
+                20
+              ]
+            },
+            {
+              "Id": 1013206,
+              "Level": 6,
+              "Parameters": [
+                0.80192,
+                9.62416,
+                18,
+                20
+              ]
+            },
+            {
+              "Id": 1013207,
+              "Level": 7,
+              "Parameters": [
+                0.8592,
+                10.3116,
+                18,
+                20
+              ]
+            },
+            {
+              "Id": 1013208,
+              "Level": 8,
+              "Parameters": [
+                0.91648,
+                10.99904,
+                18,
+                20
+              ]
+            },
+            {
+              "Id": 1013209,
+              "Level": 9,
+              "Parameters": [
+                0.97376,
+                11.68648,
+                18,
+                20
+              ]
+            },
+            {
+              "Id": 1013210,
+              "Level": 10,
+              "Parameters": [
+                1.03104,
+                12.37392,
+                18,
+                20
+              ]
+            },
+            {
+              "Id": 1013211,
+              "Level": 11,
+              "Parameters": [
+                1.08832,
+                13.06136,
+                18,
+                20
+              ]
+            },
+            {
+              "Id": 1013212,
+              "Level": 12,
+              "Parameters": [
+                1.1456,
+                13.7488,
+                18,
+                20
+              ]
+            },
+            {
+              "Id": 1013213,
+              "Level": 13,
+              "Parameters": [
+                1.2172,
+                14.6081,
+                18,
+                20
+              ]
+            },
+            {
+              "Id": 1013214,
+              "Level": 14,
+              "Parameters": [
+                1.2888,
+                15.4674,
+                18,
+                20
+              ]
+            },
+            {
+              "Id": 1013215,
+              "Level": 15,
+              "Parameters": [
+                1.3604,
+                16.3267,
+                18,
+                20
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11012,
+        "Name": "Canopy Hunter: Riding High",
+        "Description": "Kinich uses his big-game hunting skills to either move swiftly or attack his opponent.\nWhen there is an opponent or object that can be attacked nearby, he will attach a grappling hook to the target and enter Nightsoul's Blessing with 0 Nightsoul points. If neither is nearby, he fires a grappling hook forward and swings in mid-air, and this Skill's CD is decreased by 60%.\nThis skill can be Held to release. When it is Held, Kinich can aim the grappling hook.\n\n<color=#FFD780FF>Nightsoul's Blessing: Kinich</color>\nKinich's Nightsoul's Blessing lasts 10s and generates 2 Nightsoul points every second.\nIn this state, Kinich will hook onto a nearby opponent and perform a variable attack:\n·When using a Normal Attack, Kinich will fire Loop Shots as he loops around the grappled target based on his current movement direction, dealing Nightsoul-aligned <color=#99FF88FF>Dendro DMG</color> and generating 3 Nightsoul points. Loop Shot DMG is considered Elemental Skill DMG.\n·When Nightsoul points are at max, he can use the Elemental Skill \"Scalespiker Cannon\": Consume all Nightsoul points to deal Nightsoul-aligned <color=#99FF88FF>Dendro DMG</color>. When \"Scalespiker Cannon\" is Held, Kinich can aim this shot. After firing the Cannon, Kinich will try to grapple to its target.\nWhile in Nightsoul's Blessing, after grappling an opponent or firing \"Scalespiker Cannon,\" a Blind Spot will be generated next to the opponent. When Kinich enters this Blind Spot, it will disappear and he will generate 4 Nightsoul points.\nIf the grapple connection should snap due to exceeding the maximum distance or some other reason, using a Normal Attack will establish a new connection with a nearby opponent before performing Loop Shots.\n\n<i>\"All things come with a cost. I suggest you make a suitable offer... What? No, I don't do installments.\"</i>",
+        "Icon": "Skill_S_Kinich_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 10139,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:F1P}",
+          "Dragon Breath DMG|{param2:F1P}",
+          "Duration|{param3:F1}s",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1013901,
+            "Level": 1,
+            "Parameters": [
+              1.34,
+              1.20736,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1013902,
+            "Level": 2,
+            "Parameters": [
+              1.4405,
+              1.297912,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1013903,
+            "Level": 3,
+            "Parameters": [
+              1.541,
+              1.388464,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1013904,
+            "Level": 4,
+            "Parameters": [
+              1.675,
+              1.5092,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1013905,
+            "Level": 5,
+            "Parameters": [
+              1.7755,
+              1.599752,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1013906,
+            "Level": 6,
+            "Parameters": [
+              1.876,
+              1.690304,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1013907,
+            "Level": 7,
+            "Parameters": [
+              2.01,
+              1.81104,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1013908,
+            "Level": 8,
+            "Parameters": [
+              2.144,
+              1.931776,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1013909,
+            "Level": 9,
+            "Parameters": [
+              2.278,
+              2.052512,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1013910,
+            "Level": 10,
+            "Parameters": [
+              2.412,
+              2.173248,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1013911,
+            "Level": 11,
+            "Parameters": [
+              2.546,
+              2.293984,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1013912,
+            "Level": 12,
+            "Parameters": [
+              2.68,
+              2.41472,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1013913,
+            "Level": 13,
+            "Parameters": [
+              2.8475,
+              2.56564,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1013914,
+            "Level": 14,
+            "Parameters": [
+              3.015,
+              2.71656,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1013915,
+            "Level": 15,
+            "Parameters": [
+              3.1825,
+              2.86748,
+              15,
+              18,
+              70
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11015,
+      "Name": "Hail to the Almighty Dragonlord",
+      "Description": "Unleashes the power of the Almighty Dragonlord, K'uhul Ajaw (on a limited, conditional, restricted, contractual, partial, temporary basis), dealing Nightsoul-aligned <color=#99FF88FF>AoE Dendro DMG</color>. Ajaw will unleash his Dragon Breath at intervals, dealing Nightsoul-aligned <color=#99FF88FF>AoE Dendro DMG</color>.\nIf Kinich is in Nightsoul's Blessing when this is used, this Blessing's duration is extended by 1.7s.\n\n<i>\"Yes, yes! You stand before K'uhul Ajaw the Almighty Dragonlord! Come forward, then! Kneel, and kiss our feet!\"</i>",
+      "Icon": "Skill_E_Kinich_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 10121,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1012101,
+              "Level": 1,
+              "Parameters": [
+                7,
+                0.8
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1012101,
+        "Name": "The Price of Desolation",
+        "Description": "When Kinich is in Nightsoul's Blessing state, opponents hit by his Elemental Skill will enter the Desolation state, and when affected by Burning or Burgeon reaction DMG, they will restore 7 Nightsoul points to him. Nightsoul points can be gained this way once every 0.8s. The Desolation state will persist until this instance of Kinich's Nightsoul's Blessing state ends.",
+        "Icon": "UI_Talent_S_Kinich_05"
+      },
+      {
+        "GroupId": 10122,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1012201,
+              "Level": 1,
+              "Parameters": [
+                15,
+                3.2
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1012201,
+        "Name": "Flame Spirit Pact",
+        "Description": "After a nearby party member triggers a Nightsoul Burst, Kinich will gain 1 stack of Hunter's Experience that lasts 15s. Max 2 stacks. When Kinich uses <color=#FFD780FF>Canopy Hunter: Riding High</color>'s Scalespiker Cannon, all stacks of Hunter's Experience will be consumed, with each stack consumed increasing the DMG dealt by this Cannon shot by 320% of Kinich's ATK.",
+        "Icon": "UI_Talent_S_Kinich_06"
+      },
+      {
+        "GroupId": 10123,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1012301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1012301,
+        "Name": "Night Realm's Gift: Repaid in Full",
+        "Description": "When Kinich is in the air following <color=#FFD780FF>Canopy Hunter: Riding High</color>'s mid-air swing, he can consume 10 Phlogiston points to perform another mid-air swing.\nWhile in an area with Phlogiston Mechanics within Natlan, he can use Nightsoul Transmission: Kinich. When the current active character is sprinting, in movement states that result from specific Talents, or in the air, when you switch to Kinich: Kinich will perform one of the following actions depending on the conditions met:\n·When facing a Coilgrass Sigil that can be interacted with: He will fire a grappling hook towards it to move;\n·When there are nearby opponents and you are in combat: Kinich will use Canopy Hunter: Riding High in the direction of the opponents;\nOtherwise, Kinich will fire a grappling hook and swing, prioritizing valid Coilgrass Sigils as grapple targets.\nNightsoul Transmission can be triggered once every 10s by your own party.\n\nWhen interacting with Coilgrass Sigils and other items that Yumkasaurs can interact with, \"Canopy Hunter: Riding High\" will be converted to \"Yumkasaur Mimesis,\" which causes interactions with such items to follow rules applicable to Yumkasaurs, and which will not put Canopy Hunter: Riding High on CD.",
+        "Icon": "UI_Talent_S_Kinich_08"
+      },
+      {
+        "GroupId": 10125,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1012501,
+              "Level": 1,
+              "Parameters": [
+                0.15,
+                10
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1012501,
+        "Name": "Swift Envoy",
+        "Description": "While in an area with Phlogiston Mechanics within Natlan, interacting with some harvestable items will increase your own party members' Movement SPD by 15% for 10s. Additionally, the location of nearby <color=#FFD780FF>resources unique to Natlan</color> will appear on your mini-map.",
+        "Icon": "UI_Talent_S_Kachina_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1011,
+        "Name": "Parrot's Beak",
+        "Description": "After Kinich lands from <color=#FFD780FF>Canopy Hunter: Riding High</color>'s mid-air swing, his Movement SPD will increase by 30% for 6s.\nAdditionally, Scalespiker Cannon's CRIT DMG is increased by 100%.",
+        "Icon": "UI_Talent_S_Kinich_01"
+      },
+      {
+        "Id": 1012,
+        "Name": "Tiger Beetle's Palm",
+        "Description": "When Kinich's Elemental Skill hits an opponent, it will decrease their <color=#99FF88FF>Dendro RES</color> by 30% for 6s.\nAdditionally, the first Scalespiker Cannon Kinich fires after entering Nightsoul's Blessing has increased AoE, and its DMG increases by 100%.",
+        "Icon": "UI_Talent_S_Kinich_02"
+      },
+      {
+        "Id": 1013,
+        "Name": "Protosuchian's Claw",
+        "Description": "Increases the Level of <color=#FFD780FF>Canopy Hunter: Riding High</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Kinich_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1014,
+        "Name": "Hummingbird's Feather",
+        "Description": "When in Nightsoul's Blessing, Kinich will restore 5 Energy after using his Loop Shots or after unleashing the Scalespiker Cannon. Energy can be regenerated this way once every 2.8s.\nAdditionally, <color=#FFD780FF>Hail to the Almighty Dragonlord</color> deals 70% more DMG.",
+        "Icon": "UI_Talent_S_Kinich_03"
+      },
+      {
+        "Id": 1015,
+        "Name": "Howler Monkey's Tail",
+        "Description": "Increases the Level of <color=#FFD780FF>Hail to the Almighty Dragonlord</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Kinich_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1016,
+        "Name": "Auspicious Beast's Shape",
+        "Description": "After Scalespiker Cannon hits an opponent, it will bounce between opponents once, dealing 700% of Kinich's ATK as <color=#99FF88FF>Dendro DMG</color>.\nIf this Scalespiker Cannon triggers the buffs that Ascension Talent \"Flame Spirit Pact\" or the Constellation \"Tiger Beetle's Palm\" grant to the Cannon, the bouncing attack will also obtain the relevant buffs.",
+        "Icon": "UI_Talent_S_Kinich_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Turnfire Hunt",
+    "Detail": "A Huitztlan Saurian Hunter skilled at counting costs.",
+    "Association": 9,
+    "Native": "Huitztlan",
+    "BirthMonth": 11,
+    "BirthDay": 11,
+    "VisionBefore": "Dendro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Chimaera Alebriius",
+    "CvChinese": "斑马 & 弭洋",
+    "CvJapanese": "杉山紀彰 & 竹内順子",
+    "CvEnglish": "Jacob Takanashi & Abby Espiritu",
+    "CvKorean": "Kang Seong-woo & Park Li-na",
+    "CookBonus": {
+      "OriginItemId": 108743,
+      "ItemId": 108745,
+      "InputList": [
+        100061,
+        100096,
+        100079,
+        100076
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "<color=#37FFFF>Kinich:</color> \"Malipo\" Kinich. I don't believe we've met. If you'd like to request my services, please brief me on the job and state what you're willing to pay.\n<color=#37FFFF>Ajaw:</color> ...That's your pitch? Come on, man! You're killing me! You're supposed to tell 'em what a pro you are, play up your past experience, set their expectations high! Then you say \"And that's why I charge a higher price than most\"! Don't you know anything about doing business?\n<color=#37FFFF>Ajaw:</color> Ugh, how did the Almighty Dragonlord, K'uhul Ajaw end up stuck in a contract with such a clueless moron... Oh, the humiliation!!!"
+      },
+      {
+        "Title": "Chat: Ajaw",
+        "Context": "<color=#37FFFF>Kinich:</color> Ajaw loves being antagonistic. Just ignore him when he's mouthing off, don't let him get under your skin.\n<color=#37FFFF>Ajaw:</color> Kiniiiiiich! I dare you to release me and say that to my face!"
+      },
+      {
+        "Title": "Chat: Price",
+        "Context": "I'm not the friend to come to for words of comfort or encouragement. But, when it comes to weighing the costs of your actions, ask away."
+      },
+      {
+        "Title": "Chat: Allocation",
+        "Context": "Here's how I allocate my energy on a job: Seventy percent goes to investigating, ten percent to making a final decision, and the remainder for execution."
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "Tch. The hems of my pants are still dripping..."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "<color=#37FFFF>Ajaw:</color> You call that a lightning strike? It looked more like a puny bug with a glowing butt fell out of the sky.\n<color=#37FFFF>Kinich:</color> There's still more light in that insect's butt than in your entire soul.\n<color=#37FFFF>Ajaw:</color> You take that back!"
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "<color=#37FFFF>Ajaw:</color> Bet you're jealous of my sunglasses now! And no, you can't borrow them."
+      },
+      {
+        "Title": "When It's Windy",
+        "Context": "<color=#37FFFF>Ajaw:</color> Once the clouds descend upon the soil, and darkness swallows the land, we shall summon the howling winds, and set the whole world ablaze!\n<color=#37FFFF>Kinich:</color> Uh-huh, you keep telling yourself that."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "<color=#37FFFF>Kinich:</color> Bad weather can make extreme sports more challenging.\n<color=#37FFFF>Ajaw:</color> Well go on then, go do a bungee jump! Break a leg! Or better yet, break your neck, hehehe."
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "Don't forget to stay hydrated."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Morning. I'm about to head out, and I won't be back until tomorrow morning. Don't wait up for me."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Since you're here, shall we grab a bite before you go? Here, wipe your hands with this."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "The day is almost gone. What is done cannot be changed, whether I am satisfied with it or not... Instead, I should look ahead, and pick up my pace."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Is the smoke from the bonfire getting in your throat? One moment... Alright, you should be able to sleep now."
+      },
+      {
+        "Title": "About Kinich: Being Well-Liked",
+        "Context": "<color=#37FFFF>Ajaw:</color> Kinich, have you ever wondered why you're not surrounded by adoring followers? Be honest, it keeps you up at night, doesn't it? Tossing and turning in the moonlight, wondering why you don't have any friends... But take heart, for the wisdom of the Almighty Dragonlord, K'uhul Ajaw, is right here within your grasp. Prostrate yourself before us, beg for our words of guidance, and we may yet deign to show you the way.\n<color=#37FFFF>Kinich:</color> Oh, 'cause you're so popular yourself? The only following you have is a long list of people who want to slap you in the face."
+      },
+      {
+        "Title": "About Kinich: Saurian Hunter",
+        "Context": "Being a Saurian hunter is an unusual occupation, and not everyone approves of it. But sometimes, a conflict emerges where there's no pleasing both sides, and someone has to step up and get their hands dirty. I have no problem being that person, as long as the price is right."
+      },
+      {
+        "Title": "About Us: Commissions",
+        "Context": "<color=#37FFFF>Kinich:</color> If you ever need my help with some of your commissions from the Adventurers' Guild, just let me know.\n<color=#37FFFF>Ajaw:</color> Oh, yes please! Give him the most dangerous, most difficult commissions you can find! The higher the risk of fatality, the better!"
+      },
+      {
+        "Title": "About Us: Friends",
+        "Context": "Ajaw has his own reasons for putting me in harm's way, but really, I don't mind taking risks to lend you a hand. For all my talk about everything having its price, I believe some things in this world are worth doing whatever the cost."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "There is no cost to using a Vision. But it's often the hidden costs that end up being the heaviest to bear when the time comes to pay."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "My people are strong believers in absolute freedom. They think the bond between human and Saurian should be built on mutual trust and support, not a binding contract that ties them down. Guess I'm the odd one out."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "<color=#37FFFF>Kinich:</color> When picking Quenepa Berries, you should always check to make sure there are no pesky Saurians nearby.\n<color=#37FFFF>Ajaw:</color> You stingy little lizard-brain! You slimy, slithering, miserly worm! You're a selfish butthole! I only gave those festering fruits a second look because I was starved half to death!\n<color=#37FFFF>Kinich:</color> Suit yourself, more for me.\n<color=#37FFFF>Ajaw:</color> Gahhh! My fury cannot be contained!"
+      },
+      {
+        "Title": "About Mavuika",
+        "Context": "For most of my life, I've been getting others to pay a price. Then, the Pyro Archon used the Ode of Resurrection to bring me back from the Night Kingdom, and suddenly I was the one paying the price... Only then did I finally understand it from both sides. To the stronger party, the \"price\" is a bargaining chip, and to the weaker party, it's a sign of what's at stake. What matters is whether you have the courage to make the gamble."
+      },
+      {
+        "Title": "About Mualani",
+        "Context": "I've taken jobs from her before. She offered to pay me to act as a \"battle advisor,\" and the Mora was good, so I accepted. After working with her a few times, though, I noticed she's not exactly a pushover. When I pressed her about it, she eventually admitted that \"battle advisor\" was just code for mentoring Kachina in wilderness survival...\nSo a \"battle against nature,\" then. Hmm, I'd probably just call that \"life.\"\nAnyway, that business is concluded, and I now have two new acquaintances."
+      },
+      {
+        "Title": "About Kachina",
+        "Context": "I saw a job posting about her once. Some lowlifes from her tribe got jealous that she'd received an ancient name, and basically tried to order a hit on her Saurian companion... They paid the price, I made sure of that."
+      },
+      {
+        "Title": "About Chasca",
+        "Context": "I've seen how she handles her work. Our methods of conflict-resolution are quite different. I tend to get one party to shut up, but she silences both. By the time they wake up in their sick beds, they have nothing further to say, because they've forgotten whatever it was they were fighting about."
+      },
+      {
+        "Title": "About Xilonen",
+        "Context": "I saw a strange job posting once while passing by the Children of Echoes' territory. The requester was looking for a hardy plant that wouldn't take much maintenance, so I brought over some Saurian claw succulent seeds, along with a pot and some fertilizer. It grows well all over Natlan, even in the most barren areas. But when I went to collect my payment, I saw that not a single seedling had sprouted from the pot.\nI paid the price for overestimating Xilonen's gardening skills. This was one of the few failed jobs on my record."
+      },
+      {
+        "Title": "About Iansan",
+        "Context": "<color=#37FFFF>Kinich:</color> I've taken jobs from her before. More of a long-term collaboration, really... She makes fitness meals for her personal-training students, with everything measured out to the exact calorie. To keep this up, she needs a steady supply of fruits that meet her strict quality standards and size requirements. A single bruise or bug bite, and she'll reject the entire batch. Most people find this impossible to work with, but I've got a good eye for these things... plus a reliable means of disposal for fruits that don't make the grade.\n<color=#37FFFF>Ajaw:</color> Wait, what? ...THAT'S what you make my juice from!?"
+      },
+      {
+        "Title": "About Citlali",
+        "Context": "As you can probably guess, I've taken jobs from her before. I helped her purchase a heavy stack of paper-based reading material from an Inazuman merchant. Not to pry into my clients' private affairs, but... don't the Masters of the Night-Wind use woven fabric instead of paper?"
+      },
+      {
+        "Title": "About Ifa",
+        "Context": "<color=#37FFFF>Kinich:</color> I've enlisted his services before. It was when Ajaw said he was \"ill\"... Whatever it was, he was ranting and crying incessantly. So, I figured it only made sense to take him to the best sauro-vet I could find. And he really is a pro. Ajaw wasn't inside for long, but when Ifa brought him out, he was cured.\n<color=#37FFFF>Ajaw:</color> Gah... What do you know about medicine! He's not even a real doctor, he's a quack! A charlatan! ...You weren't even there, you don't know what he said! Ugh."
+      },
+      {
+        "Title": "About Varesa",
+        "Context": "<color=#37FFFF>Kinich:</color> I've run into her on several occasions, always during commissions where I've been hired to wipe out a horde of dangerous monsters. She was only passing by, but she took it upon herself to come and help me out. To put it politely, her fighting style is fairly... straightforward, relying mostly on speed and brute force to knock her enemies over. To put it less politely... her fighting style is pretty crude.\n<color=#37FFFF>Ajaw:</color> Way to leave out the best part of the story! Hehehe... To thank her for her help, Kinich kindly offered to treat her to some local delicacies from the Scions of the Canopy... Next thing you know, she's ordered thirty portions of Puff Pops, all to herself. Thirty! And she polished them off in one sitting! Poor little stingy Kinich — you should have seen the look on his face! He was so shocked, he went green like he was about to throw up! Ahahahaha!"
+      },
+      {
+        "Title": "More About Kinich: I",
+        "Context": "I am a Saurian hunter. When there's no Saurians to hunt, I take on other jobs too. I guess that means we're in the same line of work."
+      },
+      {
+        "Title": "More About Kinich: II",
+        "Context": "Back when I was a messenger, people would always ask me to lend them a \"quick hand\" with something after I showed up with their message. So then the question is, what does a \"quick hand\" cost? Most of the time, as soon as I named my price, they suddenly didn't need my help anymore."
+      },
+      {
+        "Title": "More About Kinich: III",
+        "Context": "I did weeks of preparation for my first Saurian hunt. I spent several days just observing, stalking, and lying in wait, created three different traps, no less, and made detailed notes of its daily routine and feeding habits...\nA lot of that effort was wasted, but it was a necessary waste."
+      },
+      {
+        "Title": "More About Kinich: IV",
+        "Context": "<color=#37FFFF>Kinich:</color> Ajaw used to be sealed in an ancient ruin, up until I signed a contract with him and let him out.\n<color=#37FFFF>Ajaw:</color> I took him for a reckless moron who'd be dead in a ditch within days, but nooooo! Somehow, he's still here, alive and kicking... Ugh, rise above it, rise above it. I am the sovereign ruler of the nation of flame, and I have the virtue and dignity to match.\n<color=#37FFFF>Kinich:</color> Your \"virtue and dignity\" is what makes you hope I kick the bucket every day?\n<color=#37FFFF>Ajaw:</color> I meant time and patience!\n<color=#37FFFF>Kinich:</color> ...Anyway, as long as you know how to keep them under your thumb, even the most vile and wretched beings have their utility.\n<color=#37FFFF>Ajaw:</color> Get stuffed, Kinich! Just you wait, I'll find someone to beat you to death before the day is through!"
+      },
+      {
+        "Title": "More About Kinich: V",
+        "Context": "I've always dealt with things in terms of costs, so it came as no surprise to me when the Wayob granted me the Ancient Name of \"Malipo,\" or Turnfire.\nValue comes from surviving, so I don't look forward to the day my life will come to an end. But I'm also the bearer of the Turnfire legacy, and I'm prepared to face the flames when that day comes.\nLet the Turnfire judge how I have spent my life. I know I won't have anything to regret."
+      },
+      {
+        "Title": "Kinich's Hobbies",
+        "Context": "I've tried my hand at all kinds of extreme sports. When I get bored of one thing, I move onto the next. It's a good way to hone your skills while learning to control your fear... First, you face your fear, then you learn to tolerate it, and finally, you conquer it."
+      },
+      {
+        "Title": "Kinich's Troubles",
+        "Context": "Most worriers I've met either think too much or too little. I'm always looking to my next destination and goal, so I never have the time to worry."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "<color=#37FFFF>Kinich:</color> Out in the wild, I eat for convenience. Meat and fruits are always my preference, of course.\n<color=#37FFFF>Ajaw:</color> Ha, look at you, pretending you're not a picky eater. How come I never see you picking any grainfruits, hmm?\n<color=#37FFFF>Kinich:</color> Too heavy. I travel light."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "<color=#37FFFF>Ajaw:</color> Cold or spicy food defaces the sacred temple that is our body, and steaming hot oil is a noxious gas that we avoid like the plague. Nothing too hard, as it is laborious to chew — nor too soft, for it lacks flavor...\n<color=#37FFFF>Kinich:</color> So tell me. What do you want?\n<color=#37FFFF>Ajaw:</color> To feast on your soul! Muahahaha!"
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "<color=#37FFFF>Kinich:</color> This is quite delicious. I should offer you some cash in return, or some kind of gift if you'd prefer.\n<color=#37FFFF>Ajaw:</color> Spit it out, you greedy snake! Some of that was meant for me!"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "<color=#37FFFF>Kinich:</color> Very nice. That had more flavor than I was expecting.\n<color=#37FFFF>Ajaw:</color> Hear that? He's mocking you! He thinks you can't cook to save your life!"
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "<color=#37FFFF>Kinich:</color> ...Any chance I can return this to the kitchen?\n<color=#37FFFF>Ajaw:</color> Hey, hold your stinkin' horses! I haven't even tried it yet!"
+      },
+      {
+        "Title": "Birthday",
+        "Context": "<color=#37FFFF>Kinich:</color> Ajaw?\n<color=#37FFFF>Ajaw:</color> Alright, alright. Tch, you love bossing people around almost as much as you enjoy taking people's money. Next time, get your own pair of wings and you do the flying... You, yes you. Don't just stand there, climb up onto my back already. A ride through the skies on the back of the Almighty Dragonlord, K'uhul Ajaw is a once-in-a-lifetime honor.\n<color=#37FFFF>Kinich:</color> Don't worry, it's just a gentle cruise through the forest. Just follow me. I planned out a route in advance and I promise it's safe.\n<color=#37FFFF>Ajaw:</color> Don't forget what you promised me in return!\n<color=#37FFFF>Kinich:</color> Alright, now hop on... Happy birthday."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "A knife just needs to be two things: sturdy, and sharp."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Try to pack light. Avoid large and unwieldy items... like this umbrella, for example."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Before I head out, I tighten my head scarf and remind myself to stay calm and alert."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "You've done a lot for me, and I don't take it for granted. You can either name your price, or accept what I offer you in return... I swear on the \"Malipo\" name that no matter which you pick, you won't be shortchanged."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "<color=#37FFFF>Ajaw:</color> Ten points for agility."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "<color=#37FFFF>Ajaw:</color> Are you running away!?"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "<color=#37FFFF>Ajaw:</color> You really are a one-trick pony, you know..."
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Locked on."
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "Target acquired."
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "I got 'em cornered."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "For the Lord of the Night."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Claim these souls."
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Shadow of the past, mine to command."
+      },
+      {
+        "Title": "Elemental Burst: IV",
+        "Context": "<color=#37FFFF>Ajaw:</color> Bow before your King!"
+      },
+      {
+        "Title": "Elemental Burst: V",
+        "Context": "<color=#37FFFF>Ajaw:</color> Full glory!"
+      },
+      {
+        "Title": "Elemental Burst: VI",
+        "Context": "<color=#37FFFF>Ajaw:</color> Let the dead wood blaze in dragon-fire!\n<color=#37FFFF>Ajaw:</color> I burn it all, ALL!\n<color=#37FFFF>Ajaw:</color> Ahh, it feels good!"
+      },
+      {
+        "Title": "Elemental Burst: VII",
+        "Context": "<color=#37FFFF>Ajaw:</color> Submit your souls in sacrifice.\n<color=#37FFFF>Ajaw:</color> Hah? Scared speechless?\n<color=#37FFFF>Ajaw:</color> Then forever hold your peace!"
+      },
+      {
+        "Title": "Elemental Burst: VIII",
+        "Context": "<color=#37FFFF>Ajaw:</color> Ours is a glory to which none can compare!\n<color=#37FFFF>Ajaw:</color> Especially not when I'm in a bad mood.\n<color=#37FFFF>Ajaw:</color> Measly insects, now you must pay!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "<color=#37FFFF>Kinich:</color> Do I get a share?\n<color=#37FFFF>Ajaw:</color> You actually want this trash?"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "<color=#37FFFF>Kinich:</color> Everything has its use.\n<color=#37FFFF>Ajaw:</color> Were you not given toys to play with as a child? Is that it?"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "<color=#37FFFF>Ajaw:</color> Tch, worthless pile of garbage.\n<color=#37FFFF>Kinich:</color> Stop yapping. Just take it or leave it."
+      },
+      {
+        "Title": "Deploying Wind Glider: I",
+        "Context": "...Is this really necessary?"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Time for you to pay the price."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Two can play at that game..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "<color=#37FFFF>Ajaw:</color> You're done, Kinich! You're so done!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "You know you're on the brink, right?"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Wanna make me an offer?"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Don't... turn back..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Everything... has a price..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "<color=#37FFFF>Ajaw:</color> Hehe, pleasure doing business with you..."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "My mistake."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "That was unexpected..."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Deal. I'm in."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "It's as good as done."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Glad to be working with you."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Natlan is a nation where humans and Saurians live side-by-side, and this mutualism has lasted for many years.\nSuch relationships are for the most part friendly, with humans and Saurians as bosom companions.\nBut this does not mean that all Saurians approach humans with friendly intent. Even today, quite a few deaths still occur due to Saurian attacks.\nThis is why Saurian Hunters — of which Kinich happens to be a leading member — exist, deeply familiar with the weaknesses of Saurians as they are.\nHe is of no great age, nor has he been trained by any great master, but through many years of living out in the wild, he has learned the techniques by which he subdues wild beasts and wicked Saurians alike.\nLike a natural born hunter, he is steady, direct, and efficient, watching his prey with a gaze as sharp as a boning knife.\nBut unlike other Saurian Hunters, Kinich is far from limited by this profession. Rumor has it that for the right price, he will also prove himself to be adept at wet work.\nIt is because of this that many in the tribe keep a distance from him — though of course, some also do so on account of his realistic, utilitarian approach to life.\nRegardless of whom he receives his commission from, even if they're a person in a bind, or still a child, he will always request the remuneration he deems suitable.\nNothing can change this belief of his — that all things come at a cost. Such actions provoke confusion, but Kinich has no intention of explaining himself.\nIf you must have an explanation, you can get one, but only after he sticks out an open palm and asks: \"And what price are you willing to pay for that?\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Before he was seven, Kinich lived with his family.\nHis father was a courier who took three days off for every one day of work and made a pastime out of taking his day's wages to the betting tables, seeking to make far more than he wagered.\nIf he won, he would bring Kinich a box of expensive sweets and hand-pick lovely flowers for his wife.\nIf he lost, he would borrow some money from a colleague to get himself drunk, all the better to cover up his utter lack of earnings or winnings.\nBut Kinich's mother remained lucid and would argue with him constantly while holding the little Kinich. At times, the man would admit his fault, promising to never gamble again.\nBut other times, a kitchenware-shattering domestic war would break out, in which the victor would invariably be Kinich's father, stronger in body as he was, with his defeated mother left to quietly tend to the crops they grew in their backyard—\nThis resilient woman was not adept at fighting but was an excellent farmer. And just as well, too, for there were three mouths to feed in that house.\nNot long afterward, Kinich's father would go on to lose their house, forcing them to move to the foot of a mountain, far from their tribe.\nThis arrangement was not without its benefits, for it did come with a larger plot of land. Here, Kinich learned to plant Grainfruit, twist castor oil plants into rope, mix tapioca flour to make thick noodles, and learn the art of trap-making to hunt for forest boars.\nBut the ills were more evident, for any violence here had no hope of neighborly mediation, the injuries he and his mother would suffer contingent only on his father's state of drunkenness.\nOne night, his mother snuck out and left without making the slightest noise, leaving her young son behind, perhaps for fear that her husband might pursue her to the ends of the earth otherwise.\nKinich does not recall if she said goodbye to him, but nonetheless, he ably succeeded her housework, farmwork, hunting-craft, and beatings.\nAs he grew, however, Kinich gradually found means of escape. His athleticism proved exceptional, and as he grew faster each day, his father grew less able to catch him.\nEach time he all but flew out the door, the wind would briefly conceal his father's enraged yells, granting him a rare moment of freedom.\nAnd perhaps fate itself had pity on him, for he was soon to experience true freedom. On his seventh birthday, for the very first time, he asked his father if he had news of his mother.\nNo words were needed for the answer to present itself. His father pursued him, eyes shot through with hangover red, aiming to give him a piece of his mind... But long years of drinking had left the man's body with a shadow of its former strength. As the chase led them past a precipice, he lost his footing by mistake, plummeting off the cliff.\nBy the time Kinich had reacted, the man with whom he had lived for many years lay at the bottom of a col, unmoving as a forest boar tired of struggling in a snare. He would never again get up.\nThe first thing Kinich felt was a daze, almost like being snow-blind, before a staggering sourness knocked him out of that torpid haze.\nOnly by squeezing his eyes shut, scrunching his nose, and breathing deeply, warping and twisting his face in the process, did he manage to hold in the tears.\nAfter some time, he knew not how long, he picked up his father's grappling hook and dragged the man's stiffened body back home.\nHis father had never taught him how to use such equipment, but Kinich had learned just by watching in secret a few times. Now, he blitzed past one tree branch after another, the wind whizzing in his ears.\nOn his seventh birthday, the mountains had sent him the gift of freedom — but when he opened the box, he found naught but solitude within."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "After his parents' successive departures, Kinich would continue living beneath that mountain.\nHe lived thus: planting, weaving, hunting, going to the tribal market to exchange his quarry for other necessities.\nAs time passed, this silent lad would make a deeper impression on the adults of the tribal assembly.\nSome were worried that he might have difficulty living, and so attempted to provide help, only to be rejected by a shake of his head.\nAs little Kinich saw things, nothing in this world was free, and seen in that light, free help was far more suspicious than goods with openly stated prices.\nIt could be bait, like that which he incorporated into his hunting traps, revealing its hidden cost only later.\nAnd so, he would conscientiously drift along the edges of the tribe, keeping all who approached him at arm's length.\nEach time he came to the tribe, he would simply trade for the things he needed, then depart right away, never tarrying for long.\nAll this was witnessed by Elder Leik, who was in charge of teaching the children.\nHaving interacted with the boy's parents while dealing with the matter of child education in the Scions of the Canopy, he was one of the few people familiar with Kinich's family circumstances.\nAnd so, he proposed a special transaction to the boy when he visited the market.\nHe wanted Kinich to attend the tribe's Learning Lodge, for children of the tribe who were seven to eight years old should all attend school.\nAs for fees, he could run errands in lieu of payment, for Leik needed a courier to deliver impromptu notices to the students.\nHowever, Kinich rejected the offer all the same, for he was too young to understand the value of education, and he could hunt seven or even eight forest boars in the time it took to run the errands — hardly a good trade.\nLeik was quite dumbfounded, for in truth the Learning Lodge's lessons came free, and he had only proposed the errands to dispel Kinich's vigilance.\nStill, the Elder did not give up, spending a whole month explaining the nature of the Lodge to the boy, all the while adjusting the remuneration.\nAt last, they came to an accord. Each time he came to the markets, Kinich would also go to school, in exchange for serving as the Elder's messenger whenever he was free.\nThis trade proved satisfactory to both parties — though neither of them expected that Kinich would require but a single day to graduate."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Elder Leik happened to be teaching the day that Kinich showed up to school as agreed. The Elder stood at the center of a circle of seated students and motioned for Kinich to find a place to sit.\nKinich sat at the circle's outer edge, the other kids looking him up and down inquisitively. The Scions of the Canopy lived simply for the most part, but even amongst them, Kinich was shabbily dressed.\nBarefoot, he wore an ash-stained headband, a coarse handmade linen shirt, and an animal-skin skirt, making him look like a wild child indeed.\n\"Why don't you wear shoes?\" A young girl called out. \"Because he's a muddy monkey from the forest,\" jeered a strong-looking lad and his friends.\nElder Leik immediately coughed to interrupt them and signal that class was about to start.\n\"Now, children, today we shall speak of our heroes and their sagas. Can anyone tell me their names?\"\n\"'Malipo' Burkina!\" \"Master Yupanqui!\" ... The answers rolled forth from the children in waves.\n\"That's right. Every one of our heroes deserves to be remembered, not only for their strength, but also for their spirit of self-sacrifice.\"\nAt this moment, Kinich raised his hand from where he sat, furthest beyond the circle. \"Why would they want to sacrifice themselves?\"\n\"There is no particular why or wherefore. That is simply a virtue innate to heroes,\" the Elder replied. \"And what did this virtue get them in return?\" Kinich asked again.\n\"Virtue is a thing beyond price. It cannot be exchanged for anything, for it is a reward from the heavens.\"\n\"A reward?\" Kinich's doubts had not been assuaged. \"What sort of reward, exactly? Fame? Mora?\"\n\"All these, of course, but they were not the key. The key is virtue itself, for it is the basis of noble character, and that is what makes a hero a hero.\"\nThe old scholar closed his book and gave Kinich an earnest look, though the boy had not particularly understood this statement. Instead, he was thinking back on the past—\nThe mountains told him that the forest boar was the noblest of things, for it could fill his stomach. The next noblest was water, for without it, humans would die of thirst.\nBut neither of these were his birthright, and that made them precious. Thus, when he gave them up, he would seek something in return.\nMora was the \"something\" he preferred best, for it could be exchanged for many other things.\nAnd so he told Elder Leik, \"If I become a hero, I want to be rewarded with Mora.\"\nHow the other children laughed then, the boy who had mocked Kinich foremost amongst them. \"Why don't you go back and swing in your trees then, selfish mud monkey?\"\nBut his little gang was not satisfied with just this. Standing up, they squeezed Kinich out the door. Though Elder Leik tried to stop them, Kinich took the opportunity to leave all the same. He felt no need to stay there any longer, for his keen mind had caught onto a certain truth—\nThese noisy brats in the Lodge were just that — brats. As they gathered to heap praise upon the heroes, it must have seemed to them that they had become the companions of those heroes, sharing in their nobility. But such false glory would not teach them how to fill their tummies. Once school was over, every single one of them would have to return home and be fed by their mothers.\nKinich could have taught them a lesson right there, too. Laid a couple out for half a month or so, just to let them know how far they were from being heroes.\nBut what use was there in giving out free life lessons... emphasis on \"free\"?\nStill, this class was not an entirely fruitless endeavor. If nothing else, he now had some answers to his doubts.\nHe knew what he must do in the future. Become a hero — for the Mora, that is."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "A hero needs to be strong, that much cannot be contested. Not long after he graduated from the Learning Lodge, he would seek Elder Leik out on his own to suggest how he might gain this strength.\nTo secure the Elder's approval, he even brought all he owned, hoping that it might constitute a worthy price:\nGrappling hooks and trap-making equipment, freshly-harvested castor beans, two large pots of tapioca flour, a bag of Grainfruit seeds, a freshly-slaughtered forest boar, and a small amount of Mora.\nThe Elder laughed and rejected Kinich's offer of remuneration, on one condition, that Kinich learn what it truly meant to be a hero on his journey.\nIn truth, the Elder had always cherished high hopes for the boy, for he could see a reflection of the ancient heroes within him.\nAt the same time, he believed that Kinich required proper guidance, for should he set out on the wrong path, he could do far greater damage than your average villain. Thus, a new trade was agreed upon.\nIn this way, Kinich would live alongside Elder Leik in the mountains and forests for many years.\nAnd even as the Elder taught Kinich about the history of Natlan and the heroes of its various tribes, he would also recommend many notables to the lad.\nA fletcher who made special arrowheads, a witch doctor specializing in Saurian poisons, an old hunter skilled in the use of ropes and grappling hooks, an expert in escape and evasion from dire situations...\nKinich would never reject such expertise, and learned much from them day and night, but this alone did not satisfy him, and on designated rest days, he would return to the mountains to hone his combat skills.\nWithout a formal teacher in this regard, he would imitate the motions of wild animals as they hunted. Some were agile, others cunning, and others fierce, and so he took their strengths and incorporated them into his own unique martial arts.\nAs his abilities grew, Elder Leik would also guide Kinich to take on more duties within the tribe, beginning with courier work.\nKinich proved skilled at this beyond even many adults, doing all that they could in half the time.\nWith his skills, it was no surprise that people would gradually come to him, offering payment in exchange for more dangerous services, including the slaying of powerful Saurians.\nThe Elder initially assumed that Kinich might come to ask his opinion, but not once did this happen.\nIn this regard, the young man was like a veteran of over ten years, always able to judge the merits of any commission and negotiate suitable payment.\nAnd when there was falsehood or concealment involved in such commissions, Kinich would forcefully weigh the cost upon the scales of his heart and adjust the price accordingly, regardless of whether the other party might refuse.\nSuch behavior, of course, led to some criticism, and there were important folk even within the tribe who felt that Kinich did not give his work enough care.\nBut the young man would never explain himself, simply continuing to set the prices he saw fit for each assignment he was given.\nEven Elder Trinidad, who had charge over ritual matters, took issue with this at one point, and sought to summon the lad for questioning. However, Elder Leik stopped him.\n\"Come now, no need for all this fuss. The lad knows what he's doing.\"\n\"It's preposterous! The Scions of the Canopy have never called any such person a hero!\"\n\"And that's where you're mistaken. He has never been a Scion of the Canopy. He is a scion of the mountains — the only sort of hero he will become is the sort he wishes to be.\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "It may seem strange that Kinich, loner that he is, goes nowhere without a certain self-proclaimed \"K'uhul Ajaw\" — meaning \"Divine Lord\" — hanging around him.\nAccording to reliable research by the Saurian Relics Association, Ajaw is a bona fide relic from the era of dragons, dating back several millennia.\nHis true form has been sealed within an enigmatic engraved wristband, his current one being a mere projection via phlogiston.\nConsidering his great age and intelligence, the Association researchers believe Ajaw to have immense research value, and have attempted to purchase him for a more than hefty price.\nHowever, Kinich is well-aware that Ajaw is all too intelligent, has an all-round awful personality, and poses an immense threat, and has thus rejected them without hesitation.\nHe knows that Ajaw is, without a doubt, dangerous — arrogant, cunning, chaotic, and wicked.\nIndeed, were he to hand the relic over to the Association, the organization's very existence might soon be in jeopardy.\nBut there is a more direct reason behind Kinich's refusal to hand Ajaw over — they have signed an unbreakable pact.\nAll this goes back to an ancient dragon ruin that was rumored to contain a \"secret draconic treasure.\" It was unearthed due to an earthquake, and before long, had attracted much attention.\nAfter more than a few initial surveying parties were lost, however, any interested parties that were still remaining began to wise up.\nAt this time, Kinich was already a Saurian Hunter of some repute, and thus was invited by one such team to join.\nIt was only after they had entered that they found the place teeming with monsters and mechanisms, discovering that it was far more perilous than the rumors had suggested.\nSome died, others were wounded, and others still fell back, until at last only Kinich reached the ruin's depths.\nAnd that was where he encountered the ancient being, K'uhul Ajaw, who had been sealed away.\nHe immediately sensed the wickedness in the other party's voice, but also realized that its power might be useful even so.\nAs for Ajaw, he had his own schemes. Having been sealed here in this blasted hovel for countless years, he longed to see the sun once more.\nAnd so, after several days of mutual testing that was at times friendly, other times hostile, but always brimming with intrigue...\nEach had the other's measure, and so a contract was signed, a pact struck.\nThe mysterious life-form that called himself \"K'uhul Ajaw\" would henceforth heed Kinich's commands, and lend the former a share of his strength, in accordance to their contract, on a temporary, limited, conditional basis, and in restricted amounts.\nIn exchange, Kinich would take Ajaw out to see the outside world, and upon his passing, his body would be Ajaw's to take for his own use."
+      },
+      {
+        "Title": "\"The Hill of Silent Crickets\"",
+        "Context": "Kinich has read a great number of Elder Leik's collected books and woven scrolls while studying in the latter's home.\nSome he has simply skimmed the title pages of, but others, he has read over and over.\nStill, none of them compare to \"The Hill of Silent Crickets,\" which he even recommended to the Elder.\nAfter reading it, the old scholar stated that its prose was rough-hewn, its narrative plain, and its imagination lacking — and most importantly, it was an unfinished manuscript.\nKinich was dumbfounded for a moment, but it did not change his love for the text, for its writer had been his mother.\nThe draft depicted a cricket species that lived underground. There they lived out their entire lives, before climbing up to the surface to mate before dying.\nThus did they live for generations, until one day, a great upheaval shook the under-earth, and the soil temperature surged, killing off the crickets in their droves.\nThe remaining survivors chose to hide by burrowing ever deeper — all save the protagonist, a champion amongst crickets who chose instead to climb back up to the surface.\nIt wished to know what had transpired above, and see if there was some way to resolve this crisis.\nBut when it emerged, it found that the once-verdant mountains had been rendered desolate by the war between humans and monsters.\nPlants had withered, the earth was scorched, and drifting ash blotted out the sun, the air now choked with phlogiston, deadly poison to cricket-kind — for this was the land that in latter days would be called the Mare Jivari.\nThe cricket hero, filled with resentment, fell to the blackened ground, but as its life's spark faded, it used up the last of its strength to lay a single cracked crystal egg ...\nThe story ends abruptly here, with none ever knowing if a little cricket might come forth from that egg, and that was the key reason for Elder Leik's low opinion of the tale.\nYet that was exactly why Kinich liked it — for it meant that he could look forward to the day when he might see the ending of this manuscript."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Even after obtaining his Ancient Name, Kinich made no promises that he would follow the example of the historical heroes in sacrificing himself for the many.\nHe simply took part in that Night Warden War without a word, and threw himself into the jaws of the glorious death that awaited him without hesitation.\nThat was a perilous battle indeed, with the Abyss's power having taken on a new and vile twist, now wearing the shape of those near and dear to the warriors, and ambushing them thus.\nUp against familiar faces, the warriors began to hesitate one by one, and though they did so only for an instant, that was enough to spell their defeat and fatal doom.\nKinich too encountered this dilemma, for the one standing before him was his mother, just as he remembered her.\nHe had once thought to himself, should he ever meet her again, he would first ask her how \"The Hill of Silent Crickets\" ended.\nBut in that moment, his hunter's instincts proved swifter than his mind, for no sooner had the Abyssal entity masqued as his mother spread its arms to embrace him than his blade ran it clean through.\nFollowing that, he proved all the more merciless in cleaving each \"familiar face\" that followed — yet not truly in cold blood, for each mortal swing of his sword was as another weight on his heart.\nHe simply understood that only victory could bring back all the fallen now, and each sacrificed comrade steeled his blade still further.\nBut the monstrosities came on as though a swarm of ravenous locusts, and the warriors had already taken serious losses in the previous surprise attack.\nAnd so they fell, until Kinich at last found himself the last person standing, his vision clouded by blood, and his body savaged by wounds; yet still the monsters pressed in.\nHe knew that this was the end of the line, and that was also the first time he heard dignified solemnity in Ajaw's voice:\n\"I fear this is as much power as is mine to display, Kinich...\"\n\"But I swear on my name, K'uhul Ajaw, that upon my accession to your form, you shall all be avenged.\"\nHearing this, Kinich laughed out loud, a rarity for him, and with laughter did he raise his great blade, cutting down yet another few creatures as they drew near.\nAll the same, he was utterly spent, and his guard grew ever sloppier, until one monstrous claw ran his chest through from the rear.\nSlumping over, Kinich could see fresh blood spurting from the wound as he looked slowly down, but still his feet staggered on, eager to slay another monster.\nCrimson droplets meandered across the ground behind him, their trail composing his finale. At last, his body sank to its knees. He could do no more. The final bar line had been inked.\nKinich, last of the Night Warden warriors, was slain.\nAjaw closed his eyes to give the fallen their due respect... only to open them to a stunning sight.\nKinich's fallen form had risen, his hands, just now bloodless and white, gripping his claymore tightly.\nThus did \"Kinich\" plunge into the Abyssal tide once more, his tireless blade flashing across the battlefield...\nRecovering from the shock, Ajaw looked closely, and lo! A heart-patterned, emerald-hued gem now hung where Kinich's chest had been pierced — though when it had appeared, he knew not.\nFrom it flowed vibrant life, driving Kinich's unconscious form on, transforming him into an indefatigable beast of instinct, tearing into the monsters until every last one was no more...\n...\nWhen Kinich next opened his eyes, he found himself back at the Stadium of the Sacred Flame, people all around singing the searing Ode of Resurrection.\nHe turned to see his comrades, bathed in streaming song, awakening one by one.\n\"We... won? But who...\" Kinich mumbled, grabbing at his chest. He was so sure that he had fallen before the forces of the Abyss.\nBut someone must have intervened to grant them victory, for otherwise, the Ode would not have revived them.\n\"What claptrap are you spouting? You did it, you demented, hard-scrabbling, lucky little grasshopper!\" Ajaw, splayed out on the floor and clearly frustrated, threw a stone his way. \"Bah! Was gaining my succor insufficient for you? Clearly! And now you've gone and gotten a Vision... Oh, when will your body be mine to use!?\"\n...\nThe night he was given new life, Kinich leaned back on his bed, running his fingers over his emerald Vision.\nSights flashed before his eyes. The crowd swarming him, the thunderous applause, the sacred, burning Ode of Resurrection...\nIt came to him then, out of the blue, that he had deviated from his original goal.\nHe had struck out to become a hero for Mora's sake, but now, he fought for something far more precious.\nHis comrades, his homeland, the laughter and joy of the people... He knew not when this process had begun. Indeed, the seeds of change may have been sown long before.\n\"We remember our heroes not only for their strength, but for their spirit of self-sacrifice...\"\n\"That is a virtue innate to heroes...\" \"For it is the basis of noble character, and that is what makes a hero a hero.\"\nKinich faintly recalled Elder Leik's first lesson. He did not think himself more noble, or more self-sacrificial than he had been then.\nWhat he was, however, was surer that he was willing to pay any price to obtain what he now wanted."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 210100,
+      "Name": "Eight-Bit Artistry",
+      "Description": "Kinich's outfit. Colorful patches are arrayed across his clothes with great patterned precision, just as Saurian Hunters have their own principles.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104134,
+    113065,
+    101250,
+    112103,
+    104352,
+    113062
+  ],
+  "NameCard": {
+    "Name": "Kinich: Ajaw",
+    "Description": "Namecard style.\nAt first glance, you might think that the Almighty Dragonlord, K'uhul Ajaw had finally succeeded in turning the puny Kinich into a vessel of his will. Sadly, though, this is just the way namecards are named.",
+    "Icon": "UI_NameCardIcon_Kinich",
+    "PicturePrefix": "UI_NameCardPic_Kinich"
+  }
+}

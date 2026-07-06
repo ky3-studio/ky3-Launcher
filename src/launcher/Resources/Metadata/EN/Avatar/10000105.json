@@ -1,0 +1,1081 @@
+{
+  "Id": 10000105,
+  "PromoteId": 105,
+  "Sort": 89,
+  "Body": 4,
+  "Icon": "UI_AvatarIcon_Olorun",
+  "SideIcon": "UI_AvatarIcon_Side_Olorun",
+  "Name": "Ororon",
+  "Description": "A young man from the Masters of the Night-Wind who instead lives in the wild alongside all manner of life.",
+  "BeginTime": "2024-11-19T00:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 12,
+  "BaseValue": {
+    "HpBase": 775.02234,
+    "AttackBase": 20.4792,
+    "DefenseBase": 49.2135
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 0,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [],
+          "Display": 0
+        },
+        "Id": 30506,
+        "Name": "Special Jump",
+        "Description": "If this character is in Natlan, Hold to consume Phlogiston and execute a Rocket Double Jump. When Phlogiston is completely depleted, it will consume Stamina to execute the Double Jump instead.",
+        "Icon": "Skill_E_Olorun_03"
+      },
+      {
+        "GroupId": 10531,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "Aimed Shot|{param4:F1P}",
+            "Fully-Charged Aimed Shot|{param5:P}",
+            "Plunge DMG|{param6:F1P}",
+            "Low/High Plunge DMG|{param7:P}/{param8:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1053101,
+              "Level": 1,
+              "Parameters": [
+                0.50642,
+                0.443734,
+                0.698208,
+                0.4386,
+                1.24,
+                0.568288,
+                1.136335,
+                1.419344
+              ]
+            },
+            {
+              "Id": 1053102,
+              "Level": 2,
+              "Parameters": [
+                0.54764,
+                0.479852,
+                0.755039,
+                0.4743,
+                1.333,
+                0.614544,
+                1.228828,
+                1.534872
+              ]
+            },
+            {
+              "Id": 1053103,
+              "Level": 3,
+              "Parameters": [
+                0.58886,
+                0.51597,
+                0.81187,
+                0.51,
+                1.426,
+                0.6608,
+                1.32132,
+                1.6504
+              ]
+            },
+            {
+              "Id": 1053104,
+              "Level": 4,
+              "Parameters": [
+                0.647746,
+                0.567567,
+                0.893057,
+                0.561,
+                1.55,
+                0.72688,
+                1.453452,
+                1.81544
+              ]
+            },
+            {
+              "Id": 1053105,
+              "Level": 5,
+              "Parameters": [
+                0.688966,
+                0.603685,
+                0.949888,
+                0.5967,
+                1.643,
+                0.773136,
+                1.545944,
+                1.930968
+              ]
+            },
+            {
+              "Id": 1053106,
+              "Level": 6,
+              "Parameters": [
+                0.736075,
+                0.644963,
+                1.014838,
+                0.6375,
+                1.736,
+                0.826,
+                1.65165,
+                2.063
+              ]
+            },
+            {
+              "Id": 1053107,
+              "Level": 7,
+              "Parameters": [
+                0.80085,
+                0.701719,
+                1.104143,
+                0.6936,
+                1.86,
+                0.898688,
+                1.796995,
+                2.244544
+              ]
+            },
+            {
+              "Id": 1053108,
+              "Level": 8,
+              "Parameters": [
+                0.865624,
+                0.758476,
+                1.193449,
+                0.7497,
+                1.984,
+                0.971376,
+                1.94234,
+                2.426088
+              ]
+            },
+            {
+              "Id": 1053109,
+              "Level": 9,
+              "Parameters": [
+                0.930399,
+                0.815233,
+                1.282755,
+                0.8058,
+                2.108,
+                1.044064,
+                2.087686,
+                2.607632
+              ]
+            },
+            {
+              "Id": 1053110,
+              "Level": 10,
+              "Parameters": [
+                1.001062,
+                0.877149,
+                1.380179,
+                0.867,
+                2.232,
+                1.12336,
+                2.246244,
+                2.80568
+              ]
+            },
+            {
+              "Id": 1053111,
+              "Level": 11,
+              "Parameters": [
+                1.071725,
+                0.939065,
+                1.477603,
+                0.9282,
+                2.356,
+                1.202656,
+                2.404802,
+                3.003728
+              ]
+            },
+            {
+              "Id": 1053112,
+              "Level": 12,
+              "Parameters": [
+                1.142388,
+                1.000982,
+                1.575028,
+                0.9894,
+                2.48,
+                1.281952,
+                2.563361,
+                3.201776
+              ]
+            },
+            {
+              "Id": 1053113,
+              "Level": 13,
+              "Parameters": [
+                1.213052,
+                1.062898,
+                1.672452,
+                1.0506,
+                2.635,
+                1.361248,
+                2.721919,
+                3.399824
+              ]
+            },
+            {
+              "Id": 1053114,
+              "Level": 14,
+              "Parameters": [
+                1.283715,
+                1.124815,
+                1.769877,
+                1.1118,
+                2.79,
+                1.440544,
+                2.880478,
+                3.597872
+              ]
+            },
+            {
+              "Id": 1053115,
+              "Level": 15,
+              "Parameters": [
+                1.354378,
+                1.186731,
+                1.867301,
+                1.173,
+                2.945,
+                1.51984,
+                3.039036,
+                3.79592
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 30501,
+        "Name": "Spiritvessel Snapshot",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, Electro energy will accumulate on the arrowhead. A fully charged arrow will deal <color=#FFACFFFF>Electro DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_02"
+      },
+      {
+        "GroupId": 10532,
+        "Proud": {
+          "Descriptions": [
+            "Spirit Orb DMG|{param1:F1P}",
+            "CD|{param2:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1053201,
+              "Level": 1,
+              "Parameters": [
+                1.976,
+                15
+              ]
+            },
+            {
+              "Id": 1053202,
+              "Level": 2,
+              "Parameters": [
+                2.1242,
+                15
+              ]
+            },
+            {
+              "Id": 1053203,
+              "Level": 3,
+              "Parameters": [
+                2.2724,
+                15
+              ]
+            },
+            {
+              "Id": 1053204,
+              "Level": 4,
+              "Parameters": [
+                2.47,
+                15
+              ]
+            },
+            {
+              "Id": 1053205,
+              "Level": 5,
+              "Parameters": [
+                2.6182,
+                15
+              ]
+            },
+            {
+              "Id": 1053206,
+              "Level": 6,
+              "Parameters": [
+                2.7664,
+                15
+              ]
+            },
+            {
+              "Id": 1053207,
+              "Level": 7,
+              "Parameters": [
+                2.964,
+                15
+              ]
+            },
+            {
+              "Id": 1053208,
+              "Level": 8,
+              "Parameters": [
+                3.1616,
+                15
+              ]
+            },
+            {
+              "Id": 1053209,
+              "Level": 9,
+              "Parameters": [
+                3.3592,
+                15
+              ]
+            },
+            {
+              "Id": 1053210,
+              "Level": 10,
+              "Parameters": [
+                3.5568,
+                15
+              ]
+            },
+            {
+              "Id": 1053211,
+              "Level": 11,
+              "Parameters": [
+                3.7544,
+                15
+              ]
+            },
+            {
+              "Id": 1053212,
+              "Level": 12,
+              "Parameters": [
+                3.952,
+                15
+              ]
+            },
+            {
+              "Id": 1053213,
+              "Level": 13,
+              "Parameters": [
+                4.199,
+                15
+              ]
+            },
+            {
+              "Id": 1053214,
+              "Level": 14,
+              "Parameters": [
+                4.446,
+                15
+              ]
+            },
+            {
+              "Id": 1053215,
+              "Level": 15,
+              "Parameters": [
+                4.693,
+                15
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 30502,
+        "Name": "Night's Sling",
+        "Description": "Ororon manifests an ancient mystical technique from the Masters of the Night-Wind as a <color=#FFD780FF>Spirit Orb</color> of midnight shade and throws it at his foe, dealing Nightsoul-aligned <color=#FFACFFFF>Electro DMG</color>.\nWhen other opponents are nearby, the Spirit Orb will bounce between them, dealing Nightsoul-aligned <color=#FFACFFFF>Electro DMG</color>. Each time Night's Sling is used, each opponent can only be selected as a target once.\nAfter 3 bounces, or if there are no eligible targets left, the Orb will disappear.\n\n<i>\"People always wish to foretell the future, but that might be because they have yet to discover that which they must do... Sorry, I'm saying complicated things again, aren't I...\"</i>",
+        "Icon": "Skill_S_Olorun_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 10539,
+      "Proud": {
+        "Descriptions": [
+          "Ritual DMG|{param1:F1P}",
+          "Soundwave Collision DMG|{param2:F1P}",
+          "Duration|{param3:F1}s",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1053901,
+            "Level": 1,
+            "Parameters": [
+              1.74384,
+              0.332,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053902,
+            "Level": 2,
+            "Parameters": [
+              1.874628,
+              0.3569,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053903,
+            "Level": 3,
+            "Parameters": [
+              2.005416,
+              0.3818,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053904,
+            "Level": 4,
+            "Parameters": [
+              2.1798,
+              0.415,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053905,
+            "Level": 5,
+            "Parameters": [
+              2.310588,
+              0.4399,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053906,
+            "Level": 6,
+            "Parameters": [
+              2.441376,
+              0.4648,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053907,
+            "Level": 7,
+            "Parameters": [
+              2.61576,
+              0.498,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053908,
+            "Level": 8,
+            "Parameters": [
+              2.790144,
+              0.5312,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053909,
+            "Level": 9,
+            "Parameters": [
+              2.964528,
+              0.5644,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053910,
+            "Level": 10,
+            "Parameters": [
+              3.138912,
+              0.5976,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053911,
+            "Level": 11,
+            "Parameters": [
+              3.313296,
+              0.6308,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053912,
+            "Level": 12,
+            "Parameters": [
+              3.48768,
+              0.664,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053913,
+            "Level": 13,
+            "Parameters": [
+              3.70566,
+              0.7055,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053914,
+            "Level": 14,
+            "Parameters": [
+              3.92364,
+              0.747,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053915,
+            "Level": 15,
+            "Parameters": [
+              4.14162,
+              0.7885,
+              9,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 30505,
+      "Name": "Dark Voices Echo",
+      "Description": "Ororon works an ancient ritual, dealing Nightsoul-aligned <color=#FFACFFFF>AoE Electro DMG</color>, summoning forth a Supersonic Oculus.\n\n<color=#FFD780FF>Supersonic Oculus</color>\n·Continuously taunts nearby opponents and attracts attacks from them.\n·Continuously rotates and fires off sonic waves that deal Nightsoul-aligned <color=#FFACFFFF>Electro DMG</color>.\n\n<i>Those with sharp enough senses can hear the minute voices with which all things speak. That way, they will never lose their way — not even on long, lightless nights.</i>",
+      "Icon": "Skill_E_Olorun_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 10521,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1052101,
+              "Level": 1,
+              "Parameters": [
+                40,
+                1.6,
+                10,
+                6
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1052101,
+        "Name": "Nightshade Synesthesia",
+        "Description": "After a nearby party member triggers Nightsoul Burst, Ororon will gain 40 Nightsoul points. Within 15s after using his Elemental Skill, when other party members' <color=#80C0FFFF>Hydro</color> or <color=#FFACFFFF>Electro</color> attacks hit opponents, Ororon will gain 5 Nightsoul points, an effect that can occur every 0.3s for a maximum of 10 times during this 15s duration.\nOroron can have a maximum of 80 Nightsoul points.\n\nAlso, when nearby opponents take <color=#FFACFFFF>Electro-Charged or Lunar-Charged</color> reaction DMG or Nightsoul-aligned DMG dealt by other nearby characters, Ororon will consume 10 Nightsoul points (provided he has at least that amount), entering the Nightsoul's Blessing state and triggering the Hypersense effect: Deal Nightsoul-aligned <color=#FFACFFFF>Electro DMG</color> based on 160% of Ororon's ATK to at most 4 nearby opponents. The aforementioned effect can trigger once every 1.8s.\n\n<color=#FFD780FF>Nightsoul's Blessing: Ororon</color>\nOroron's Nightsoul's Blessing state lasts 6s.",
+        "Icon": "UI_Talent_S_Olorun_05"
+      },
+      {
+        "GroupId": 10522,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1052201,
+              "Level": 1,
+              "Parameters": [
+                15,
+                3,
+                3,
+                1,
+                3
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1052201,
+        "Name": "Aspect Catalyst",
+        "Description": "After the Elemental Skill <color=#FFD780FF>Night's Sling</color>'s <color=#FFD780FF>Spirit Orb</color> hits an opponent, Ororon will gain the Aspect Sigil effect for 15s.\n\n<color=#FFD780FF>Aspect Sigil</color>\nWhen a nearby active party member hits an opponent with Normal, Charged, or Plunging Attacks, that character will restore 3 Energy. If Ororon is off-field, Ororon will also restore 3 Energy. This effect can trigger once every 1s, and can trigger 3 times per duration.",
+        "Icon": "UI_Talent_S_Olorun_06"
+      },
+      {
+        "GroupId": 10523,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1052301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1052301,
+        "Name": "Night Realm's Gift: Flowing Fog, Spritely Shadows",
+        "Description": "While in an area with Phlogiston Mechanics within Natlan, he can use Nightsoul Transmission: Ororon. When the active character is currently in the air, the following will trigger when switching to Ororon: Ororon will leap up high. Nightsoul Transmission can be triggered once every 10s by your party.\n\nHolding Aiming Mode will cause Ororon to enter the \"Spiritspeaker\" state, which will allow him to interact with \"Nightspirit Graffiti\" and \"Nightspirit Sigils,\" extracting information and power from them. The rules for interacting with these objects follow the same rules as those governing Iktomisaurus interactions.\n\nAdditionally, holding the jump button will cause Ororon to consume 75 Stamina and leap. In areas within Natlan where Phlogiston mechanics are present, Ororon will prioritize consuming 5 Phlogiston to leap to a height higher still.\nWhen in the air, Ororon can Hold his Normal Attack to consume Phlogiston or Stamina and enter Aiming Mode.",
+        "Icon": "UI_Talent_S_Olorun_07"
+      },
+      {
+        "GroupId": 10525,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1052501,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1052501,
+        "Name": "The Art of Skinchanging",
+        "Description": "Increases gliding SPD for your own party members by 15%.\nNot stackable with Passive Talents that provide the exact same effects.",
+        "Icon": "UI_Talent_S_Olorun_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1051,
+        "Name": "Trails Amidst the Forest Fog",
+        "Description": "The Elemental Skill <color=#FFD780FF>Night's Sling</color>'s <color=#FFD780FF>Spirit Orb</color> can bounce 2 additional times.\nAdditionally, after the <color=#FFD780FF>Spirit Orb</color> hits an opponent, it will apply the Nighttide effect to them for 12s. Opponents affected by Nighttide take 50% increased DMG from Hypersense triggered by the Ascension Talent, \"Nightshade Synesthesia.\" You must first unlock the Ascension Talent \"Nightshade Synesthesia.\"",
+        "Icon": "UI_Talent_S_Olorun_01"
+      },
+      {
+        "Id": 1052,
+        "Name": "King Bee of the Hidden Honeyed Wine",
+        "Description": "After using his Elemental Burst, <color=#FFD780FF>Dark Voices Echo</color>, Ororon will obtain the Spiritual Supersense effect for 9s.\n\n<color=#FFD780FF>Spiritual Supersense</color>\nGain 8% <color=#FFACFFFF>Electro DMG Bonus</color>.\nAdditionally, during this time, every additional opponent hit by the Elemental Burst <color=#FFD780FF>Dark Voices Echo</color> or <color=#FFD780FF>Supersonic Oculus</color> will grant Ororon a further 8% <color=#FFACFFFF>Electro DMG Bonus</color>. The maximum that can be gained this way is 32% <color=#FFACFFFF>Electro DMG Bonus</color>.",
+        "Icon": "UI_Talent_S_Olorun_02"
+      },
+      {
+        "Id": 1053,
+        "Name": "Roosting Bat's Spiritcage",
+        "Description": "Increases the Level of <color=#FFD780FF>Dark Voices Echo</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Olorun_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1054,
+        "Name": "As the Mysteries of the Night Wind",
+        "Description": "The <color=#FFD780FF>Supersonic Oculus</color> summoned by the Elemental Burst <color=#FFD780FF>Dark Voices Echo</color> rotates 25% faster.\nAdditionally, Ororon will restore 8 Energy to himself after using <color=#FFD780FF>Dark Voices Echo</color>.",
+        "Icon": "UI_Talent_S_Olorun_03"
+      },
+      {
+        "Id": 1055,
+        "Name": "A Gift For the Soul",
+        "Description": "Increases the Level of <color=#FFD780FF>Night's Sling</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Olorun_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1056,
+        "Name": "Ode to Deep Springs",
+        "Description": "After triggering Hypersense through the Ascension Talent, Nightshade Synesthesia, your current active character's ATK is increased by 10% for 9s. Max 3 stacks, each stack is counted independently.\nAdditionally, when you use the Elemental Burst <color=#FFD780FF>Dark Voices Echo</color>, you will trigger one instance of an effect equivalent to Hypersense, dealing 200% of its original DMG.\nYou must first unlock the Ascension Talent \"Nightshade Synesthesia.\"",
+        "Icon": "UI_Talent_S_Olorun_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Shadow of the Night-Wind",
+    "Detail": "A young man from the Masters of the Night-Wind who instead lives in the wild alongside all manner of life.",
+    "Association": 9,
+    "Native": "Mictlan",
+    "BirthMonth": 10,
+    "BirthDay": 14,
+    "VisionBefore": "Electro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Vampyrum Spectrum",
+    "CvChinese": "梁达伟",
+    "CvJapanese": "近藤隆",
+    "CvEnglish": "Nathan Nokes",
+    "CvKorean": "Seo Joung-ik",
+    "CookBonus": {
+      "OriginItemId": 108722,
+      "ItemId": 108776,
+      "InputList": [
+        100084,
+        100076,
+        100079
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Oh, hello. I'm Ororon from the Masters of the Night-Wind. Want some vegetables?\nOh, don't worry — I'm not trying to sell anything to you or get anything in return. There's no rhyme or reason for it, really. I just like to see what every seed grows up to be, so I end up with a lot of produce. As long as my vegetables wind up in the stomach of someone who enjoys them, that's all that matters."
+      },
+      {
+        "Title": "Chat: Weirdos",
+        "Context": "Someone told you the Masters of the Night-Wind is a tribe of weirdos? Huh, who else is there? Thought I was the only one."
+      },
+      {
+        "Title": "Chat: Target",
+        "Context": "Having a favorite animal, or vegetable or fruit, can help us recognize what kind of people we want to become."
+      },
+      {
+        "Title": "Chat: Smoke",
+        "Context": "Sometimes, a shrouded path is not meant to be walked. Move forward with blind ambition, and the smoke might suffocate you."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "If I run, mud will get on my clothes. If I fly... the rain will make my cape too heavy. Better find somewhere to wait out the weather."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Lightning bolts remind me of snakes. I wonder if people use their shape and appearance to divine the future... On second thought, that seems a little dangerous."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "...There are things buried beneath the snow. Careful, now — let's not wake them up."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "The sun is an eternal flame, and the people of Natlan never shy away from meeting its gaze head-on. Of course, sunglasses are always an option if it gets too intense."
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "Can anything... even grow here? Maybe we should leave."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Sorry. My eyes are open, but I'm still half-asleep... Can this wait?"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "My stomach says it's time for lunch, but I can't think of anything to eat... Maybe my brain is still asleep."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "I could really go for some sparkling coffee flavored with Saurian Claw Succulent. I take mine black... Huh? You should only drink coffee in the morning? Well then... Good morning."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "My brain is always wide awake this time of night, so go ahead and rest. I used to try and force myself to fall asleep, but I gave up a long time ago. I think I'll just go check on the radishes instead."
+      },
+      {
+        "Title": "About Ororon: Communication",
+        "Context": "I know I say things that are hard to understand sometimes. If you're ever confused, just ask me. I don't mind."
+      },
+      {
+        "Title": "About Ororon: Unsolved Mystery",
+        "Context": "I don't know where I come from, but that doesn't bother me too much... I care more about where I'm going."
+      },
+      {
+        "Title": "About Us: Apology",
+        "Context": "I'm sorry... No, I'm more than sorry. I know lying to you right out of the gate didn't make the best first impression. I have explained to you the reasons why, and I promise I spoke only the truth. Still, it's okay if you don't accept my apology. If that's the case, I'll try to stay out of your way."
+      },
+      {
+        "Title": "About Us: Thank-You Gifts",
+        "Context": "Here, this is a Saurian claw succulent picked at four in the morning, a Quenepa Berry bigger than my head, the sweetest batch of honey from last week, and... Oh! And a voucher for a free appointment with Cacucu.\nHuh? Why do you look confused? It's a thank you for all your help. I wasn't sure if you needed anything, so I just went with gifts that I like.\nOh, who's Cacucu? A saurian. I'll introduce you sometime."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "Some people say lightning helps crops grow. So, I tried using my Vision in the middle of my vegetable field once, but the cabbages and tomatoes didn't like it, so I gave up."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Here's a tip — don't be the first person to put yourself out there. The first fruit that ripens is the easiest target, and people work the same way. Those who take the initiative usually wind up with the short end of the stick."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Flying squirrels may seem like proud and aloof creatures when they glide through the air, but they're much more cunning than they look, always zooming in from nowhere, clinging to you until they get a treat... Little rascals, honestly."
+      },
+      {
+        "Title": "About Xilonen",
+        "Context": "She seems to enjoy relaxing in high places, especially trees. In my experience, hanging upside down from a tree branch is more relaxing than lying on top of one. Maybe I should share that with her sometime... What? But don't we all need a change of perspective every now and then? Shouldn't that be even more true for an inventor like Xilonen?"
+      },
+      {
+        "Title": "About Kinich",
+        "Context": "Ajaw is an interesting case. He's old, but also young... And Kinich is just the opposite — young, but also old. You know what I mean, right?"
+      },
+      {
+        "Title": "About Chasca",
+        "Context": "Chasca is famous for a reason. She's an amazing mediator. The minute she shows up, all the fighting stops, and everyone starts shaking hands like the best of friends. She has a pretty convincing method, apparently — \"armed deterrence\"... Not a bad name."
+      },
+      {
+        "Title": "About Ifa",
+        "Context": "Ifa may scold his patients a lot, but he actually has a great relationship with the saurians. Whenever he has some time off, he'd play the guitar in front of the clinic, and a bunch of saurians would gather around and sing along.\nAlthough, it's more like noise than actual singing. I like to join in when I'm around, too... with the saurians, I mean."
+      },
+      {
+        "Title": "About Citlali",
+        "Context": "Granny is actually a very straightforward person. She wears her emotions on her sleeve, you know? It's hard for her to hide what she's feeling. You're the same age as her, right? Or... are you even older?\nSorry, I shouldn't ask. That was probably rude... But, if I'm right, maybe you could spend more time together. Granny's been surrounded by people younger than her for a long time, and she's probably had enough. I know she'll be happy to see you."
+      },
+      {
+        "Title": "About Iansan",
+        "Context": "Iansan is a famous sports coach, and well... All I can say is, I'm grateful the Pyro Archon didn't send her after me. I may have an advantage when it comes to height, but I'm pretty sure she can outrun me... Oh, the smoke-cloud trick? Heh, after you use it a bunch, people start to see it coming."
+      },
+      {
+        "Title": "About Mavuika",
+        "Context": "I didn't really know the Pyro Archon before all this.\nI mean, I knew of her, but I didn't KNOW know her, you know? I used to think of her like a totem engraved with the word \"strength,\" like a symbol of total power and control. But, it never went deeper than that, so doubt started to creep in.\nNow that I know her better, I feel grateful, but I'm also a little disappointed in myself... She seems so sure of her purpose. She has a fire inside her and knows exactly why it burns, so she won't ever let the flames go out. I want that... I want to be someone who can help Natlan.\nAnyway, so there's that, and um... I also noticed her eating a lot of leafy vegetables at the victory feast. When I asked her about it, she said she likes to keep a balanced diet. Kinda surprised me somehow. I guess she's more mindful of the little things than I expected."
+      },
+      {
+        "Title": "About The Captain",
+        "Context": "Meeting The Captain was a strange and unexpected twist of fate for me.\nMy tribe is known for our ability to predict the future, but I never expected things would turn out so complicated. Is helping someone really about trading favors until the score is even? If so, why do I still feel so indebted to him? So grateful for what he did for me?\nOr... maybe I'm overthinking everything. No matter what happened in the past, he helped save Natlan's Ley Lines. He's a hero worthy of respect, and I'll always remember him."
+      },
+      {
+        "Title": "More About Ororon: I",
+        "Context": "Hello. Oh, a handshake? Our greetings aren't usually so formal in Natlan, but... Okay, we can shake hands. In the future, you can just shout at me from afar. I have good hearing, so I won't miss it."
+      },
+      {
+        "Title": "More About Ororon: II",
+        "Context": "You always seem so busy. I want to be like that, too — the kind of person who always has something to do. Then again, sometimes I like doing nothing at all. I keep flipping back and forth. It's annoying, but I can't help it."
+      },
+      {
+        "Title": "More About Ororon: III",
+        "Context": "In Natlan, it gets really hot during the day, so I choose to go out at night if possible. The moonlight makes the surface of the water glisten. Have you noticed? Although, at night, the water turns pitch-black. It's impossible to tell how clean it is, so I would avoid contact."
+      },
+      {
+        "Title": "More About Ororon: IV",
+        "Context": "I'm more sensitive to souls than most people. I was born that way, but it's also kind of hard to describe... Human souls are like unpredictable masses of energy. Imagine a bunch of little saurian marshmallows of all different kinds... That's basically what a soul looks like. Your soul is warm, like it's been lightly toasted above a glowing fire."
+      },
+      {
+        "Title": "More About Ororon: V",
+        "Context": "Other people don't understand me, and to be honest, I don't fully understand myself, either. I have so many doubts, so many unanswered questions, and new ones keep on coming.\nBut, there's no quick-fix for something like this... Just gotta keep moving forward, right?"
+      },
+      {
+        "Title": "Ororon's Hobbies",
+        "Context": "Do I have other hobbies? Besides gardening and aphid-watching, you mean? Oh, yes... Of course. Just give me a second. It'll come to me."
+      },
+      {
+        "Title": "Ororon's Troubles",
+        "Context": "Sometimes, going from dreaming it to doing it... it's a really tough step."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Whenever I eat a Tataco, I like to put an extra tortilla underneath to catch all the ingredients that fall out. That way, you basically get two Tatacos in one."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Military rations... especially compressed biscuits. They kinda remind me of The Captain's soul, actually... Good at the core, but a little tough."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Wow, even better than what I can make."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Not too strong, not too bland... The flavor is just right."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "What avant garde technique is this...? I'm unfamiliar with it."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "In Natlan, we believe a person's birthday decides their fate. Sharing a birthday with a great hero means being blessed with their protection and inheriting their character.\nI'm not sure the people out there who share your birthday know how lucky they are... Happy Birthday."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "What did you give me just now? Can I have another look?"
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "#Maybe I should start calling you \"master\"... Thank you, Master {M#Gramps}{F#Granny}. I've learned a lot from you."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "My body feels so light... feels like I can get to even higher places now. Still, it's all about control. Hitting my head is no fun."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I am not yet powerful enough to probe the boundaries of death, but thanks to you, the end now seems a little further away. Don't worry — I won't take advantage of that to do any irresponsible things. On that, you have my word."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Not too far, now."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Farewell."
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Be free!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Go, you're free now."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Time to say hello."
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Tell me what you see."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Your passion for treasure-hunting is turning these chests into an endangered species."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "You can always tell which ones are ripe for the picking by the sound they make when you tap on them."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Careful, some saurians like to hide in chests like this — probably an introvert thing."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Please, hold up..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Not good...!"
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Bad omen."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Need me to get a doctor?"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Filling in."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "See you... in the Night Kingdom."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "It's getting... dark."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "The voices... are calling..."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Argh, too slow..."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Something's wrong..."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Want me to join?"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Where to?"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "What's the occasion?"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "The Masters of the Night-Wind's territory lies in the heart of Natlan, to the west of the Stadium of the Sacred Flame. From a distance, it appears much like a cloud of faintly glowing purple mist in the mountain valleys.\nThe impression left by members of their tribe on others is similar — profound, mysterious, and with a penchant for cryptic turns of phrase. Unless they're out traveling on a commission, such as for healing or fortune-telling, they seldom show themselves outside.\nOroron, however, is an exception. This is not due to an inclination for mingling with the crowds, but rather that he prefers exploring the wilderness. He ventures deeper and deeper in directions where few dare to tread, and even ten Tatankasaurs could not drag him back.\nWhat's more, \"where few dare to tread\" is not simply limited to a literal sense. All who have spoken with him know that keeping up with his train of thought can be... a challenge, to say the least. A test, if you will, of both wits and perseverance.\nYet it has never been Ororon's intention to pose such a challenge, just as the reasons behind many of his words and actions are actually quite simple and not in need of overinterpretation.\nTake, for instance, the time a kind-hearted passerby came across his dwelling in the wild. Wearing a concerned expression, they approached and asked, \"I see you're living all alone out here... Must have fallen out with someone in your tribe, huh? Is there anything I can help you out with?\"\n\"Of course not.\"\nOroron paused from his gardening for a moment, then stood up and gestured at the Aphids all around him, before responding earnestly, \"It's just that these little guys love this place, and I'm more than happy to keep them company.\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Due to the existence of Ancient Names, the people of Natlan place great importance on names in general. Influenced by the environment he grew up in, Ororon developed a habit of naming everything around him — whether they were capable of breathing or not.\nSome names would accompany the things they signified for their entire lives. Though a day will come when a flower wilts and a cup breaks, their names are there for however long or short their existence may be. Even if they only last a minute, their purpose will have been served, their worth fulfilled.\nOther names, however, would change along the way. It was not that Ororon's feelings themselves had changed; but rather that the name's \"owner\" had undergone some kind of experiential transformation, thus naturally requiring a new, more suitable name. For instance, if a Saurian grew more and more rotund over time, you could hardly keep calling him something like \"Wafer-Thin,\" could you?\nHaving said that, he does not tend to dwell too much on the meanings that the names themselves contain. Firstly, the names he gives are always straightforward, their meanings clear at a glance. And secondly, he comes up with them merely for ease of reference, without any deeper intent; in other words, they were not made to carry a special emotion. To him, all names are precious, all neutral, all equal as tools to facilitate communication.\nHe sees his own name in the same way; the only difference being that he doesn't actually know what it means.\nThe name Ororon was written on the inside of the cloth he was found swaddled within. He has searched for references in old books, even asked some elders, but has never seen mention nor met any who know of such a name, let alone its meaning.\nWas it simply his Granny's age, or the fact that the writing on the cloth was so unclear, or even a combination of the two that caused her to misread it?\nThis, though, was something he would have to ponder by himself — were he to ask it out loud, he would no doubt receive a sharp flick on the forehead from Granny in return."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "The people of the Masters of the Night-Wind like to use woven scrolls to record all kinds of stories, legends, and histories. Patterns of thread woven into fabric cannot hope to match the detail of simple, straightforward written records, tending instead towards abstraction and conceptual shapes often imbued with the weaver's emotions and feelings.\nIn other words, subjective re-creation is a huge part of the process. What should be rendered as the main subject, what as the background, what emphasized, and what simplified — all of this demands the weaver's consideration and hangs upon their creativity.\nIn principle, it may sound simple enough, but it had Ororon stumped.\nFirst of all, he did not like being forced to differentiate between primary and secondary elements. As he saw it, all the elements were of equal importance — so whether it was the characters and their backgrounds, or the buildings and their scenic backdrops, they all deserved to be allotted equal amounts of weaving materials. Even the dew drops on a Saurian Claw Succulent in the ground deserved to be depicted, as did the wrinkles on the tribal elders' faces, vividly standing out upon the fabric.\nThis led to problem number two: his patience when it came to weaving was, to be quite frank, limited. In order to be fair, whether it was a big tree outside a door or the shadows of the people beneath it, the linework had to have the same number of layers, the same level of detail. The consequence of doing so was that everything on the fabric became simplified to a certain level, so that what he ended up producing could barely be called a woven scroll; it was more like a patterned towel.\nSome things are just hard to teach, pure and simple — and especially in artistic fields that depend more heavily upon natural talent. Since the child himself had already shown extraordinary talent in other areas, such as his awareness of spirits and intuition when it came to surveying the ley lines, the master artisans of the tribe gave up on trying to force Ororon to perfect this craft. Instead, they allowed him to treat it simply as an extracurricular hobby, letting him pursue it however he so desired.\nOroron took full advantage of this, adept as he was at pushing boundaries. Later on, in fact, he stopped using fabric and yarn altogether, preferring to use pen and paper to sketch out his ideas as quickly and efficiently as possible. After all, if you could capture the essence of something with a few strokes, why go through the slow, laborious process of weaving it all out? Besides, the people of the Masters of the Night-Wind are known to have a knack for graffiti, so when those from other tribes saw Ororon's drawings, they would gaze at them in awe, thinking them to be some sort of ancient glyphs imbued with mysterious blessings.\nIn reality, Ororon hardly ever drew anything that proved to be particularly useful. His most meaningful and carefully drawn work is the placard in front of Ifa's clinic. The lines are smooth, the colors bright, and—\n\"Since the poor Saurian had his wings wrapped in bandages, I put more thought into that part of the drawing. Though it doesn't take up much of the whole, I used the same amount of ink on him as I did when drawing you.\"\n\"Sweet,\" said Ifa, and seeing the sincerity in Ororon's eyes, felt a great sense of calm. \"Never seen the real me depicted so accurately before. Really appreciate it, my dear bro.\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Those who are kind to others will themselves be treated kindly. It is precisely his love for the countless beings of the natural world that has earned Ororon the kindness of the people and creatures of this land.\n...Ha! Yeah right. That's just not how things work in reality. Sure, most people were kind to Ororon, but this did not necessarily have anything to do with his love of nature.\nOne reason was sympathy — he was a foundling, abandoned in the mountains, with no relatives to take care of him, and it would have been quite impossible for him to have survived on his own. Lending a helping hand by providing a bit of food or clothing was not particularly hard, while the satisfaction of seeing a child grow up healthy and strong far outweighed any such effort. So why wouldn't they?\nAnother was simply that they liked him. Ororon was very well-behaved (most of the time), honest (generally speaking), quiet, sensible, and he always studied hard. He never showed any inclination for mischief, such as climbing up onto rooftops and tearing up tiles. He even learned how to grow crops and raise Aphids all by himself, and from that point on, was able to support himself. As a young man who did not (often) cause much of a bother to those around him, he was certainly very likeable.\nAnd the last, albeit least prevalent reason, was guilt. Due to having been born with a fragmented soul, when Ororon was first found by the tribe, they attempted to use his unusual condition to test a method for restoring Natlan's Ley Lines. Whether fortunately or not, this method of individual sacrifice did not succeed. Though this may have averted an ethical dilemma that could not be resolved, it left some of the elders with an unspoken sense of guilt.\nOf course, once he had grown up, Ororon came to learn of what had happened — there was no point in trying to hide it, and doing so would only have created unnecessary issues. Yet he felt no resentment about the whole affair; on the contrary, he was greatly satisfied to find out, for no matter how difficult reality was, he preferred it to living a lie.\nHe is fully aware of the various reasons why people look out for him. Whether out of sympathy, affection, guilt, or some combination of all three, he's willing to accept it all for what it is.\nAs Ifa would say, social relationships among people are exceedingly complex. Instead of spending time and effort trying to understand their motivations, it's better to focus on their conclusions and actions, and doing so helps avoid a great deal of mental stress. Thus, seeing as people show him such care and affection, he repays them with kindness in return. Yes, it really is that simple.\n\"Good thing I'm a vet,\" Ifa said, gesticulating. \"If I were a doctor who had to treat people, my job would be a lot more complicated...\"\nIfa went on, seemingly listing off a whole array of strange medical cases, but Ororon's mind soon drifted off. No matter how strange they were, could they really have been stranger than his own?\nCome to think of... In some sense, I'm a patient too, and one beyond all hope of a cure, Ororon mused. Going a step further, he thought, if one were to focus on his ears — which looked different from the average person's — then surely he too might be considered an ailing animal? Hmm... but then again, perhaps humans too should be considered animals?\nAt this point in his musings, Ororon interrupted Ifa's endless rambling to ask, \"If I were sick, should I come to a vet?\"\nIfa stopped mid-sentence and stared back at him for a long moment.\n\"...You weren't listening to a single thing I said this entire time, were you?\"\n\"You can't just avoid questions you don't want to answer by turning them back on me,\" came Ororon's reply."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "If you had both the time and the patience to sift through the ancient texts and woven scrolls of the Masters of the Night-Wind, you'd be amazed at the sheer range of topics they covered.\nFor instance, who would want to read a series of Inazuman light novels that ended its run several hundred years ago?\nOr this analysis of 3,600 different forms of the ash of burnt paper, and their prophetic applications — who even went through the trouble of putting that together?\nWherever these things originated, the somewhat sad truth is that it now falls upon Ororon to read and organize them.\nAt first, he simply wanted to check the historical records for mentions of fragmented souls, but then words like \"Ley Lines,\" \"Lord of the Night,\" and \"spirits\" started cropping up. Soon after, he found himself reading through works of non-fiction, and even fantasy novels; and before long, the books were piled up high like a mountain of Cacahuatl. Ororon had essentially become a volunteer librarian, utterly submerged in a sea of knowledge that had absolutely nothing to do with him.\n\"I'm not that curious...\" Ororon thought to himself, beginning to feel a bit weary. But then again, he didn't really have anything else to do. And it wasn't as if the long hours of reading had been entirely fruitless.\nThe most reasonable explanation he had come across so far came, to his surprise, in a tattered storybook about mystical creatures. It was written that, during the Archon War of the distant past, some Archons had experimented with merging the bloodlines of beasts and humans. Their goal, hoping to gain the upper hand, was to create warriors with powers that surpassed those of ordinary mortals. Most of these attempts failed, but a few flawed remnants survived, even persisting to the present day.\n\"Sounds plausible enough,\" Ororon mused to himself. \"But it's just a storybook...\"\n\"...And yet, even if it's just a storybook, it certainly sounds plausible enough.\"\nFrom a practical standpoint, he knew that with his twenty-something-year-old mind alone, he'd never uncover the truth, no matter how hard he thought. Sometimes, you just have to accept your own limitations and ignorance — or else make up a story to amuse yourself.\nIn the end, Ororon reached the point where he simply could not bear to read another word. He took a few minutes to come up with the simplest justification that he could muster, then said to himself:\nIt's like a puzzle game. When you try to force pieces together that don't match, there's bound to be distortion, friction, even breakage. And one day, over twenty years past, he was that broken puzzle piece, the one who had experienced the misfortune of being dropped onto the cold, hard stone."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Late one night when the weather was mild, he sat by a campfire with the Fatui, quietly listening to what they had to say.\nHe was the only one who stayed quiet, aside from The Captain, who joined them later. The soldiers themselves did not hold back — it was clear they were already aware that he was working with their commander. The things they talked about were of no particular importance, yet they spoke and laughed freely, showing no restraint on account of his presence. After asking his age, one soldier even handed him a cup of a colorless drink they called \"Fire-Water.\"\nAfter a cautious sip, he proceeded to down it in one gulp, just as he had seen the soldiers do, receiving a loud cheer in response. For some reason, he felt a lot better after doing this.\nThe soldiers around him chatted about trivial matters, every now and then breaking into songs they all knew. Ororon did not have much to add, so he simply sat there, either watching the fire before them or the sky high above. It felt so far from the ground, the individual stars like tiny white kernels, together like mist. \"Astral Mist,\" he suddenly thought to himself. Not a bad name...\nLater, he would learn that not all Fatui soldiers were like this. The ones he met were elite soldiers led by the First Harbinger, older veterans with experience and firm moral standards. Beyond this company, however, there were many others who were younger than he was, others whose actions would leave his brows well and truly furrowed.\nBut on that windless night, with the stars so clearly visible in the sky, he had not yet been troubled by such knowledge. He simply let go of his worries, enjoying the friendly company and the cup of strange-tasting liquor he had been given.\nThere would never be another night like this. He sensed it then — just like how, when he considered accepting a second drink, he was firmly stopped by The Captain. Though he seemed completely normal after the first cup and potentially could really hold his liquor, yet all the same, some places are best not delved into too deeply.\nBut clearly, Ororon was not exactly the obedient type. Later, he discreetly tracked down the soldier who had handed him that drink and asked him how to brew Fire-Water himself. If he ever managed to make a batch clear enough to reflect the night sky, he'd name the first bottle \"Astral Mist.\""
+      },
+      {
+        "Title": "Snack Box",
+        "Context": "These snacks aren't for people; they're for wild animals. They've been sorted into different compartments based on the preferences of different animals.\nMost animals are actually pretty smart, and based on Ororon's observations, the gap between them and humans isn't nearly as vast as many people might think. Many humans live successful lives simply because they have inherited the knowledge of previous generations — so in a sense, the intelligence shown by animals that find ways to survive in hostile environments might actually be even more impressive.\nSeeking human help is also a shortcut that animals have learned while living together with humans. Sometimes, Ororon might just be walking along minding his own business when he'll suddenly feel something heavy land on his back. Should he react too slowly, he'll later discover a few extra flying squirrel claw marks in his cloak.\nLikewise, Ororon is convinced that animals must have some fixed way of communicating amongst themselves. Animal messengers might even be far more skilled than their human counterparts, for not only must they travel by land and air, they must also be able to speak many different languages and dialects to communicate with other species. Just the thought that the languages of Natlan's various animals might all include a phrase such as \"Ororon has treats in his pocket!\" made him smile.\nEven if he had ways of turning away these freeloading guests, dead set on mooching free meals, he would never actually use them. Wherever he went, animals welcomed him as one of their own — and that was a privilege that not everyone enjoyed.\nOf course, animals were all individuals with their own personalities too, so their ways of expressing gratitude varied.\nKinich's Ajaw, for instance, was quite an oddball. He always acted as though whatever he was given was \"his rightful due!\", yet at the same time, seemed unable to go without human company. Ororon would generally ignore the things he said, dangling food in front of him and watching Ajaw's eyes follow its motion from behind his sunglasses (...That pair of shiny dots must be his eyes? Right?). If Ajaw didn't say something polite in time, Kinich would forbid him from opening his mouth before he could get his claws on the food.\nIn stark contrast was Cacucu, who was a real sweet-talker. Despite the limits to his human vocabulary, whatever he said was always full of emotion — things like, \"You're the best, bro!\""
+      },
+      {
+        "Title": "Vision",
+        "Context": "The first night, he dreamed of a cold stone cave.\nTurning to one side, he saw the cave's entrance behind him, a few scattered beams of moonlight finding their way in like shafts of white sand; though not a sliver of light reached its depths, whence came a faint rustling sound as if inside there lived a dense black fog. Water droplets fell from above, landing on his outstretched hand. They were sticky to the touch.\nThere was moisture, and within it, nutrients. He nodded to himself; this place could probably birth life.\nIt was at this moment that he awoke. It did not feel like a good dream, yet neither was it a nightmare. He'd felt cold in the dream. It was pretty cool, so could it simply be the nighttime chill? \"I should prepare a thicker blanket for tomorrow,\" he thought.\nOn the second night, he dreamt of a scorching wind.\nAll he could see were pale stone pillars and clouds trimmed with crimson linings. There were clouds, so he must have been high up in the sky. But despite seeing neither sun nor fire, there was an intense heat in the air, as if even his soul was to be seared.\nHe did not know where he was, but somehow, he felt sure that this was the end. Just one step forward and he would reach it... Just one more step...\nHe awoke with a start. People naturally gravitate toward warmth, and he himself had always loved the fires of Natlan, but the sheer heat of that dream filled him with dread. Not a good call, he thought, shaking his head; unsure if he was rejecting the dream or reality itself. It seemed that the Alpaca wool blanket might have been a bit too much, given the current season.\nOn the third and final night, he dreamt of a pitch-black universe and a labyrinth of mirrors. He stared at the overlapping surfaces that encircled him, upon which countless other Ororons stared back.\nHe heard an imaginary voice say, \"If your shadow reflects itself enough times, maybe you can piece together your entire self!\" There was no kindness in that voice, yet nor was there malice either — simply the teasing tone of a detached observer.\nBut how could a reflection reveal something that was not there in the first place? And what was it that moved through the mirrors in this dim space...?\nUncharacteristically irritated, he shouted back, \"If you wanted to make a complete shadow, then you'd at least need to start out with some light!\"\nApparently, people can still hear when they are dreaming, for it was this outburst of his that woke him up. This time, he did not even try to explain the cause of his dream; the temperature and his blanket were simply excuses that he had now exhausted. Even after fully waking, he could still feel a lingering anger, along with an unusual heaviness weighing him down.\nYet the things he wore and carried on his person could not have been lighter. What weighed upon his chest was none other than the so-called gaze of the gods."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 210500,
+      "Name": "Batwing Iris",
+      "Description": "Ororon's outfit. Those with foresight should know how to conceal themselves. Thus, cape and cowl are his greatest weapons.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104144,
+    113064,
+    101252,
+    112103,
+    104352,
+    113054
+  ],
+  "NameCard": {
+    "Name": "Ororon: Nightshade",
+    "Description": "Namecard style.\nJust as starlight cannot overpower the darkness of night, so too do shadows linger beneath the candle's light. Likewise, the heart's emptiness cannot easily be filled.",
+    "Icon": "UI_NameCardIcon_Olorun",
+    "PicturePrefix": "UI_NameCardPic_Olorun"
+  }
+}

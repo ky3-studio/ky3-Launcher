@@ -1,0 +1,1147 @@
+{
+  "Id": 10000104,
+  "PromoteId": 104,
+  "Sort": 90,
+  "Body": 3,
+  "Icon": "UI_AvatarIcon_Chasca",
+  "SideIcon": "UI_AvatarIcon_Side_Chasca",
+  "Name": "Chasca",
+  "Description": "The Peacemaker of the Tlalocan, the ender of all disputes.",
+  "BeginTime": "2024-11-19T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 12,
+  "BaseValue": {
+    "HpBase": 762.656,
+    "AttackBase": 26.999,
+    "DefenseBase": 47.864
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 10431,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}×2",
+            "4-Hit DMG|{param4:F1P}×3",
+            "Aimed Shot|{param5:F1P}",
+            "Fully-Charged Aimed Shot|{param6:P}",
+            "Plunge DMG|{param7:F1P}",
+            "Low/High Plunge DMG|{param8:P}/{param9:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1043101,
+              "Level": 1,
+              "Parameters": [
+                0.480078,
+                0.445884,
+                0.296975,
+                0.254672,
+                0.4386,
+                1.24,
+                0.568288,
+                1.136335,
+                1.419344
+              ]
+            },
+            {
+              "Id": 1043102,
+              "Level": 2,
+              "Parameters": [
+                0.519154,
+                0.482177,
+                0.321148,
+                0.275401,
+                0.4743,
+                1.333,
+                0.614544,
+                1.228828,
+                1.534872
+              ]
+            },
+            {
+              "Id": 1043103,
+              "Level": 3,
+              "Parameters": [
+                0.55823,
+                0.51847,
+                0.34532,
+                0.29613,
+                0.51,
+                1.426,
+                0.6608,
+                1.32132,
+                1.6504
+              ]
+            },
+            {
+              "Id": 1043104,
+              "Level": 4,
+              "Parameters": [
+                0.614053,
+                0.570317,
+                0.379852,
+                0.325743,
+                0.561,
+                1.55,
+                0.72688,
+                1.453452,
+                1.81544
+              ]
+            },
+            {
+              "Id": 1043105,
+              "Level": 5,
+              "Parameters": [
+                0.653129,
+                0.60661,
+                0.404024,
+                0.346472,
+                0.5967,
+                1.643,
+                0.773136,
+                1.545944,
+                1.930968
+              ]
+            },
+            {
+              "Id": 1043106,
+              "Level": 6,
+              "Parameters": [
+                0.697788,
+                0.648087,
+                0.43165,
+                0.370163,
+                0.6375,
+                1.736,
+                0.826,
+                1.65165,
+                2.063
+              ]
+            },
+            {
+              "Id": 1043107,
+              "Level": 7,
+              "Parameters": [
+                0.759193,
+                0.705119,
+                0.469635,
+                0.402737,
+                0.6936,
+                1.86,
+                0.898688,
+                1.796995,
+                2.244544
+              ]
+            },
+            {
+              "Id": 1043108,
+              "Level": 8,
+              "Parameters": [
+                0.820598,
+                0.762151,
+                0.50762,
+                0.435311,
+                0.7497,
+                1.984,
+                0.971376,
+                1.94234,
+                2.426088
+              ]
+            },
+            {
+              "Id": 1043109,
+              "Level": 9,
+              "Parameters": [
+                0.882003,
+                0.819183,
+                0.545606,
+                0.467885,
+                0.8058,
+                2.108,
+                1.044064,
+                2.087686,
+                2.607632
+              ]
+            },
+            {
+              "Id": 1043110,
+              "Level": 10,
+              "Parameters": [
+                0.948991,
+                0.881399,
+                0.587044,
+                0.503421,
+                0.867,
+                2.232,
+                1.12336,
+                2.246244,
+                2.80568
+              ]
+            },
+            {
+              "Id": 1043111,
+              "Level": 11,
+              "Parameters": [
+                1.015979,
+                0.943615,
+                0.628482,
+                0.538957,
+                0.9282,
+                2.356,
+                1.202656,
+                2.404802,
+                3.003728
+              ]
+            },
+            {
+              "Id": 1043112,
+              "Level": 12,
+              "Parameters": [
+                1.082966,
+                1.005832,
+                0.669921,
+                0.574492,
+                0.9894,
+                2.48,
+                1.281952,
+                2.563361,
+                3.201776
+              ]
+            },
+            {
+              "Id": 1043113,
+              "Level": 13,
+              "Parameters": [
+                1.149954,
+                1.068048,
+                0.711359,
+                0.610028,
+                1.0506,
+                2.635,
+                1.361248,
+                2.721919,
+                3.399824
+              ]
+            },
+            {
+              "Id": 1043114,
+              "Level": 14,
+              "Parameters": [
+                1.216941,
+                1.130265,
+                0.752798,
+                0.645563,
+                1.1118,
+                2.79,
+                1.440544,
+                2.880478,
+                3.597872
+              ]
+            },
+            {
+              "Id": 1043115,
+              "Level": 15,
+              "Parameters": [
+                1.283929,
+                1.192481,
+                0.794236,
+                0.681099,
+                1.173,
+                2.945,
+                1.51984,
+                3.039036,
+                3.79592
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11041,
+        "Name": "Phantom Feather Flurry",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, mighty winds will accumulate on the arrowhead. A fully charged wind arrow will deal <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, hitting opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_02"
+      },
+      {
+        "GroupId": 10432,
+        "Proud": {
+          "Descriptions": [
+            "Resonance DMG|{param1:F1P}",
+            "Multitarget Fire Tap DMG|{param2:F1P}",
+            "Shadowhunt Shell DMG|{param3:F1P}",
+            "Shining Shadowhunt Shell DMG|{param4:F1P}",
+            "Nightsoul Point Limit|{param5:F1}",
+            "CD|{param6:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1043201,
+              "Level": 1,
+              "Parameters": [
+                0.6,
+                0.36,
+                0.488,
+                1.66572,
+                80,
+                6.5
+              ]
+            },
+            {
+              "Id": 1043202,
+              "Level": 2,
+              "Parameters": [
+                0.645,
+                0.387,
+                0.5246,
+                1.790649,
+                80,
+                6.5
+              ]
+            },
+            {
+              "Id": 1043203,
+              "Level": 3,
+              "Parameters": [
+                0.69,
+                0.414,
+                0.5612,
+                1.915578,
+                80,
+                6.5
+              ]
+            },
+            {
+              "Id": 1043204,
+              "Level": 4,
+              "Parameters": [
+                0.75,
+                0.45,
+                0.61,
+                2.08215,
+                80,
+                6.5
+              ]
+            },
+            {
+              "Id": 1043205,
+              "Level": 5,
+              "Parameters": [
+                0.795,
+                0.477,
+                0.6466,
+                2.207079,
+                80,
+                6.5
+              ]
+            },
+            {
+              "Id": 1043206,
+              "Level": 6,
+              "Parameters": [
+                0.84,
+                0.504,
+                0.6832,
+                2.332008,
+                80,
+                6.5
+              ]
+            },
+            {
+              "Id": 1043207,
+              "Level": 7,
+              "Parameters": [
+                0.9,
+                0.54,
+                0.732,
+                2.49858,
+                80,
+                6.5
+              ]
+            },
+            {
+              "Id": 1043208,
+              "Level": 8,
+              "Parameters": [
+                0.96,
+                0.576,
+                0.7808,
+                2.665152,
+                80,
+                6.5
+              ]
+            },
+            {
+              "Id": 1043209,
+              "Level": 9,
+              "Parameters": [
+                1.02,
+                0.612,
+                0.8296,
+                2.831724,
+                80,
+                6.5
+              ]
+            },
+            {
+              "Id": 1043210,
+              "Level": 10,
+              "Parameters": [
+                1.08,
+                0.648,
+                0.8784,
+                2.998296,
+                80,
+                6.5
+              ]
+            },
+            {
+              "Id": 1043211,
+              "Level": 11,
+              "Parameters": [
+                1.14,
+                0.684,
+                0.9272,
+                3.164868,
+                80,
+                6.5
+              ]
+            },
+            {
+              "Id": 1043212,
+              "Level": 12,
+              "Parameters": [
+                1.2,
+                0.72,
+                0.976,
+                3.33144,
+                80,
+                6.5
+              ]
+            },
+            {
+              "Id": 1043213,
+              "Level": 13,
+              "Parameters": [
+                1.275,
+                0.765,
+                1.037,
+                3.539655,
+                80,
+                6.5
+              ]
+            },
+            {
+              "Id": 1043214,
+              "Level": 14,
+              "Parameters": [
+                1.35,
+                0.81,
+                1.098,
+                3.74787,
+                80,
+                6.5
+              ]
+            },
+            {
+              "Id": 1043215,
+              "Level": 15,
+              "Parameters": [
+                1.425,
+                0.855,
+                1.159,
+                3.956085,
+                80,
+                6.5
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11042,
+        "Name": "Spirit Reins, Shadow Hunt",
+        "Description": "Chasca and the will residing in her weapon resonate, dealing Nightsoul-aligned <color=#80FFD7FF>AoE Anemo DMG</color>.\nAfter using this Skill, Chasca gains 80 Nightsoul points and enters the Nightsoul's Blessing state.\n\n<color=#FFD780FF>Nightsoul's Blessing: Chasca</color>\nContinually consume Nightsoul points. When Nightsoul points are fully depleted or the skill is used again, Chasca's Nightsoul's Blessing state will end. Her Nightsoul's Blessing has the following traits:\n·Mounts \"Soulsniper: Ritual Staff,\" increasing Chasca's Movement SPD and interruption resistance. In this state, Chasca will continually consume Nightsoul points to remain airborne. When Sprinting or increasing height, extra Nightsoul points will be consumed.\n·When using Normal or Charged Attacks, Tap or Hold to switch between using \"Multitarget Fire\" in different ways.\n\n<color=#FFD780FF>Multitarget Fire</color>\n<color=#FFD780FF>Tap</color>\nDeal Nightsoul-aligned <color=#80FFD7FF>Anemo DMG</color> to opponents in front. This DMG is considered Normal Attack DMG.\n<color=#FFD780FF>Hold</color>\nEnter Aiming Mode and choose a certain number of opponents within a certain range, before loading up to 6 Shadowhunt Shells based on the duration for which the skill was charged. When 6 Shells have been loaded or charging is stopped, these Shells will be fired at the chosen opponents in sequence.\n\n<color=#FFD780FF>Shadowhunt Shells</color>\n·Deal Nightsoul-aligned <color=#80FFD7FF>Anemo DMG</color>, which is considered Charged Attack DMG.\n·The 4th, 5th, and 6th Shells loaded into the cylinder will undergo Elemental Conversion based on the Elemental Types of the other characters in the party: For each <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#99FFFFFF>Cryo</color>, or <color=#FFACFFFF>Electro</color> character in the party, one Shadowhunt Shell will randomly be Converted into a \"Shining Shadowhunt Shell\" of one of these corresponding Elemental Types, dealing Nightsoul-aligned DMG corresponding to that Elemental Type. This DMG is considered Charged Attack DMG.\n·The Shells loaded into the cylinder are fired starting from the last Shadowhunt Shell to be loaded, in a \"last in, first out\" order.\n\nAdditionally, when Chasca is in the Nightsoul's Blessing state, Holding her Elemental Skill <color=#FFD780FF>Spirit Reins, Shadow Hunt</color> will cause her to execute a Nightsoul-aligned Plunging Attack. Release the Elemental Skill to interrupt this Plunging Attack and maintain her airborne state. Should Chasca hit the ground with her Plunging Attack, her Nightsoul's Blessing state will end.\n\n<i>In theory, as long as she's willing, those reins can bridle anything... But what could possibly be as cool as a giant hand cannon?</i>",
+        "Icon": "Skill_S_Chasca_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 10439,
+      "Proud": {
+        "Descriptions": [
+          "Galesplitting Soulseeker Shell DMG|{param1:F1P}",
+          "Soulseeker Shell DMG|{param2:F1P}",
+          "Radiant Soulseeker Shell DMG|{param3:F1P}",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1043901,
+            "Level": 1,
+            "Parameters": [
+              0.88,
+              1.034,
+              2.068,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1043902,
+            "Level": 2,
+            "Parameters": [
+              0.946,
+              1.11155,
+              2.2231,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1043903,
+            "Level": 3,
+            "Parameters": [
+              1.012,
+              1.1891,
+              2.3782,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1043904,
+            "Level": 4,
+            "Parameters": [
+              1.1,
+              1.2925,
+              2.585,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1043905,
+            "Level": 5,
+            "Parameters": [
+              1.166,
+              1.37005,
+              2.7401,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1043906,
+            "Level": 6,
+            "Parameters": [
+              1.232,
+              1.4476,
+              2.8952,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1043907,
+            "Level": 7,
+            "Parameters": [
+              1.32,
+              1.551,
+              3.102,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1043908,
+            "Level": 8,
+            "Parameters": [
+              1.408,
+              1.6544,
+              3.3088,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1043909,
+            "Level": 9,
+            "Parameters": [
+              1.496,
+              1.7578,
+              3.5156,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1043910,
+            "Level": 10,
+            "Parameters": [
+              1.584,
+              1.8612,
+              3.7224,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1043911,
+            "Level": 11,
+            "Parameters": [
+              1.672,
+              1.9646,
+              3.9292,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1043912,
+            "Level": 12,
+            "Parameters": [
+              1.76,
+              2.068,
+              4.136,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1043913,
+            "Level": 13,
+            "Parameters": [
+              1.87,
+              2.19725,
+              4.3945,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1043914,
+            "Level": 14,
+            "Parameters": [
+              1.98,
+              2.3265,
+              4.653,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1043915,
+            "Level": 15,
+            "Parameters": [
+              2.09,
+              2.45575,
+              4.9115,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11045,
+      "Name": "Soul Reaper's Fatal Round",
+      "Description": "Chasca concentrates her will, firing a single \"Galesplitting Soulseeker Shell\" that deals Nightsoul-aligned <color=#80FFD7FF>AoE Anemo DMG</color>. Afterward, the Galesplitting Soulseeker Shell will split into 6 Soulseeker Shells, which attack nearby opponents.\n\n<color=#FFD780FF>Soulseeker Shells</color>\n·Deal Nightsoul-aligned <color=#80FFD7FF>Anemo DMG</color>.\n·For each <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#99FFFFFF>Cryo</color>, or <color=#FFACFFFF>Electro</color> character in the party, two Soulseeker Shells will undergo corresponding Elemental Conversions to become \"Radiant Soulseeker Shells,\" which deal Nightsoul-aligned Elemental DMG from a randomly selected one of the corresponding Elemental Types.\n\n<i>None can escape from the moonlight or the whispers of the night, just as no foe can flee her attentive eyes once she's got them in her sights.</i>",
+      "Icon": "Skill_E_Chasca_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 10421,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1042101,
+              "Level": 1,
+              "Parameters": [
+                0.333,
+                0.667,
+                1,
+                0.15,
+                0.35,
+                0.65
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1042101,
+        "Name": "Bullet Trick",
+        "Description": "When the Elemental Skill <color=#FFD780FF>Spirit Reins, Shadow Hunt</color>'s <color=#FFD780FF>Multitarget Fire</color> is being charged, if there are party members who meet the Elemental Conversion Type requirements, gain the following effects based on the number of different eligible Elemental Types present:\n·There is a 33.3%/66.7%/100% chance for each Type to trigger \"Spiritbinding Conversion\" and cause the 3rd <color=#FFD780FF>Shadowhunt Shell</color> loaded into the cylinder to be randomly converted into a <color=#FFD780FF>Shining Shadowhunt Shell</color> from one of the corresponding Elemental Types.\n·Each Elemental Type will grant Chasca 1 stack of Spirit of the Radiant Shadow, increasing the DMG of Shining Shadowhunt Shell by 15%/35%/65%. This effect lasts until the current Multitarget Fire ends. Max 3 stacks.",
+        "Icon": "UI_Talent_S_Chasca_05"
+      },
+      {
+        "GroupId": 10422,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1042201,
+              "Level": 1,
+              "Parameters": [
+                1.5
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1042201,
+        "Name": "Intent to Cover",
+        "Description": "When a nearby party member triggers a Nightsoul Burst, Chasca will fire a \"Burning Shadowhunt Shot\" at a nearby opponent, dealing Nightsoul-aligned <color=#80FFD7FF>Anemo DMG</color> equal to 150% of the <color=#FFD780FF>Shadowhunt Shell</color> DMG from her Elemental Skill <color=#FFD780FF>Spirit Reins, Shadow Hunt</color>. If the party has <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#99FFFFFF>Cryo</color>, or <color=#FFACFFFF>Electro</color> characters, the Burning Shadowhunt Shot will be converted to deal Nightsoul-aligned Elemental DMG of the corresponding Elemental Type equal to 150% of the DMG dealt by <color=#FFD780FF>Spirit Reins, Shadow Hunt</color>'s <color=#FFD780FF>Shining Shadowhunt Shells</color>.\nThe DMG done in this way is considered Charged Attack DMG.",
+        "Icon": "UI_Talent_S_Chasca_06"
+      },
+      {
+        "GroupId": 10423,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1042301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1042301,
+        "Name": "Night Realm's Gift: Everburning Heart",
+        "Description": "After her Nightsoul points are exhausted, Chasca will switch to consuming Phlogiston to maintain her Nightsoul's Blessing.\nWhile in an area with Phlogiston Mechanics within Natlan, she can use Nightsoul Transmission: Chasca. When the active character is in the air, the following will occur when switching to Chasca: Chasca will enter the Nightsoul's Blessing state and gain 32 Nightsoul points. Nightsoul Transmission can be triggered once every 10s by your own team.",
+        "Icon": "UI_Talent_S_Chasca_07"
+      },
+      {
+        "GroupId": 10425,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1042501,
+              "Level": 1,
+              "Parameters": [
+                25,
+                12
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1042501,
+        "Name": "Mediation's True Meaning",
+        "Description": "25 Phlogiston will be restored when your own party members defeat an opponent. This effect can trigger once every 12s.\nThis has no effect in Domains, Trounce Domains, or the Spiral Abyss.",
+        "Icon": "UI_Talent_S_Chasca_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1041,
+        "Name": "Cylinder, the Restless Roulette",
+        "Description": "When triggering the Ascension Talent \"Bullet Trick\"'s \"Spiritbinding Conversion,\" the 2nd <color=#FFD780FF>Shadowhunt Shell</color> loaded into the cylinder will be additionally converted into a <color=#FFD780FF>Shining Shadowhunt Shell</color>.\nThe chance to trigger \"Spiritbinding Conversion\" is increased: If there are party members who meet the Elemental Conversion Type requirements, the chance to trigger \"Spiritbinding Conversion\" is increased by 33.3%, up to a maximum of 100%.\n\nYou must first unlock the Ascension Talent \"Bullet Trick.\"\nIn addition, Chasca's Nightsoul point and Phlogiston consumption in her Nightsoul's Blessing state is decreased by 30% while out of combat.",
+        "Icon": "UI_Talent_S_Chasca_01"
+      },
+      {
+        "Id": 1042,
+        "Name": "Muzzle, the Searing Smoke",
+        "Description": "When Chasca takes the field, she will obtain 1 stack of \"Spirit of the Radiant Shadow\" from the Ascension Talent \"Bullet Trick.\" You must first unlock the Ascension Talent \"Bullet Trick\" for this effect.\nIn addition, when the <color=#FFD780FF>Shining Shadowhunt Shells</color> from <color=#FFD780FF>Spirit Reins, Shadow Hunt</color>'s <color=#FFD780FF>Multitarget Fire</color> hit opponents, they will deal AoE Elemental DMG of the corresponding Elemental Type of the <color=#FFD780FF>Shining Shadowhunt Shells</color> equal to 400% of Chasca's ATK. This DMG is considered Charged Attack DMG. This effect can be triggered once each time Chasca uses <color=#FFD780FF>Multitarget Fire</color>.",
+        "Icon": "UI_Talent_S_Chasca_02"
+      },
+      {
+        "Id": 1043,
+        "Name": "Reins, Her Careful Control",
+        "Description": "Increases the Level of <color=#FFD780FF>Spirit Reins, Shadow Hunt</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Chasca_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1044,
+        "Name": "Sparks, the Sudden Shot",
+        "Description": "When the <color=#FFD780FF>Radiant Soulseeker Shells</color> from <color=#FFD780FF>Soul Reaper's Fatal Round</color> hit opponents, they will restore 1.5 Elemental Energy to Chasca, and deal AoE Elemental DMG of the corresponding Elemental Type of the <color=#FFD780FF>Radiant Soulseeker Shells</color> equal to 400% of Chasca's ATK. This DMG is considered Charged Attack DMG.\nThe aforementioned corresponding elemental AoE DMG effect can be triggered once each time Chasca uses <color=#FFD780FF>Soul Reaper's Fatal Round</color>.",
+        "Icon": "UI_Talent_S_Chasca_03"
+      },
+      {
+        "Id": 1045,
+        "Name": "Brim, the Sandshadow's Silhouette",
+        "Description": "Increases the Level of <color=#FFD780FF>Soul Reaper's Fatal Round</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Chasca_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1046,
+        "Name": "Showdown, the Glory of Battle",
+        "Description": "Chasca's <color=#FFD780FF>Multitarget Fire</color> charge time is decreased, and after the Ascension Talent \"Bullet Trick\"'s \"Spiritbinding Conversion\" is triggered, Chasca will gain the \"Fatal Rounds\" state: For the next 3s, the next time Chasca uses <color=#FFD780FF>Spirit Reins, Shadow Hunt</color>'s <color=#FFD780FF>Multitarget Fire</color>, the shots will finish charging instantly, and the CRIT DMG of that instance of <color=#FFD780FF>Multitarget Fire</color>'s <color=#FFD780FF>Shadowhunt Shells</color> and <color=#FFD780FF>Shining Shadowhunt Shells</color> increases by 120%. 1 \"Fatal Rounds\" effect can be gained once every 3s.\n\nYou must first unlock the Ascension Talent \"Bullet Trick\" to gain access to the above effect.",
+        "Icon": "UI_Talent_S_Chasca_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Skyborne Arbiter",
+    "Detail": "The Peacemaker of the Tlalocan, the ender of all disputes.",
+    "Association": 9,
+    "Native": "Tlalocan",
+    "BirthMonth": 12,
+    "BirthDay": 10,
+    "VisionBefore": "Anemo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Vultur Gryphus",
+    "CvChinese": "张若瑜",
+    "CvJapanese": "甲斐田裕子",
+    "CvEnglish": "Lauren Amante",
+    "CvKorean": "Soo-hyun",
+    "CookBonus": {
+      "OriginItemId": 108762,
+      "ItemId": 108777,
+      "InputList": [
+        100064,
+        100061,
+        100084,
+        101243
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Chasca, Flower-Feather Clan. Any disputes you need me to end for you? Depending on the situation, it could cost you a little dignity, a few drinks, or potentially... a round of ammo."
+      },
+      {
+        "Title": "Chat: Bird's-Eye View",
+        "Context": "When you lose your way, gaining some altitude can bring some perspective."
+      },
+      {
+        "Title": "Chat: Whispers",
+        "Context": "I'd have lost myself long ago if I allowed myself to be led by the whispers of the Abyss. Surviving is tough, but taming the beast within is tougher."
+      },
+      {
+        "Title": "Chat: Peacemaker",
+        "Context": "I'm a little out of practice these days... *yawn*... Any conflicts around? I'm in the mood for some peacemaking."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Rain... My hair and feathers are gonna get soaked. Time for some preening when I get back."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Huh, we're really gonna go flying in this weather? You think you can outrun a lightning strike?"
+      },
+      {
+        "Title": "When It's Windy",
+        "Context": "*sniff* There's prey upwind from us... Be ready to pounce."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "The wind's perfect — full speed ahead!"
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "\"The early qucusaur gets the worm,\" so I made some breakfast. Any plans for the day can wait until we've got some food in us."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Afternoon. The sun shines strongest at this hour — good time to take a break."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Any plans for dinner? If not, let's eat in the tribe. They always bring out the best food and drink for champions."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Turning in for the night? Hmm... I've been flying all day, so I should also do some gun care."
+      },
+      {
+        "Title": "About Chasca: Self-Confidence",
+        "Context": "Back when the Flower-Feather Clan was responsible for patrolling and defending all of Natlan, the flying squad was the best of the best — the fiercest warriors in the nation.\nTo this day, the pride felt by many Qucusaur riders borders on arrogance... Hmm? Me? No, I'm not arrogant. Just supremely confident."
+      },
+      {
+        "Title": "About Chasca: Flower-Feather Clan",
+        "Context": "...When they first brought me back to the tribe, I didn't fit in at all. I felt so out of place — like an alien who suddenly got dropped into a human world... But Chuychu and her— I mean, our parents accepted me for who I was.\nI'm eternally grateful that I met them, and for that reason, I will defend their beloved tribe... for as long as I live."
+      },
+      {
+        "Title": "About Us: Mediation",
+        "Context": "With your skills, I doubt anyone in Natlan would dare start something with you. But there are exceptions to every rule, so if you ever find yourself in a situation you can't brute force your way out of, be sure to come to me. I'll straighten things out."
+      },
+      {
+        "Title": "About Us: Family",
+        "Context": "Thank you so much for helping with the Coya situation... I honestly don't know how things would've gone down without you there.\nShe's nowhere near as hostile toward humans anymore, but it'll still take her some time to get used to them. Old habits die hard.\nChime, on the other hand? Loves hanging out with the tribe. She gets along really well with Yatlan and the other kids... Heh, watching them play together, it sometimes reminds me of me and Coya when we were little.\nAnyway, now Mom's the one being difficult... I don't know what's gotten into her recently. She keeps nagging me to build a nest of my own like Coya. And she's all, \"maybe it's time to expand your family even further\"... Where is all this coming from? ...Hmm? What are you smiling about?"
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "This Vision played a major part in my fight against the Abyss. If it hadn't shown up when it did, I don't know who I would be today."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "People often find it embarrassing to open up about their childhood mistakes... Why is that? Whether you're a human or a Qucusaur, you can only grow by learning from your past mistakes.\nThat's why I'm not shy about my history of mindlessly lashing out as a kid. Nowadays, I never draw my gun without thinking it through first, even if just for a couple of seconds... or maybe a half second."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Natlan has a lot of very tall trees. You get great visibility from up top, and they're good places to launch off. You wanna try? Don't worry, I'll catch you if you fall."
+      },
+      {
+        "Title": "About Kachina",
+        "Context": "\"Every Qucusaur falls from its nest before it learns to fly.\" Kachina didn't magically become a champion overnight. Her victory was a result of consistent, tireless effort over a very long time. She's an outstanding warrior who deserves all the honor and respect she can get."
+      },
+      {
+        "Title": "About Mualani",
+        "Context": "Mualani says we got into a fight as kids over some toy we both wanted, but I don't remember any of that.\nHmm... I wonder if it's because I got into so many fights that I just lost track of them all? I also wonder if it was actually her surfboard I was after, rather than a toy... I'll bet I just wanted the ability to go hunting on water.\nHeh, whatever it was, I doubt our feud lasted more than a day. It never does with Mualani."
+      },
+      {
+        "Title": "About Xilonen",
+        "Context": "She might come across as low-energy, but make no mistake — she's one of the most diligent people you'll ever meet.\nWhen I asked her to build my gun for me, I barely put any thought into it, just gave her a general idea of what I wanted, and left it with her. Then, once she started working on it in earnest, she spent an entire day questioning me — what would a typical day's flying look like, how often I was expecting to use it, and so on — and by the end of the day, there were abandoned designs schemes all over the floor... I was so exhausted that I fell asleep even before she did.\nThen she wrote a whole maintenance guide, which she forced me to learn by heart so I wouldn't come bugging her with issues every day... Well, that's what she said. But I suspect her real reason was that she wanted to make sure I'd look after myself and fly safe."
+      },
+      {
+        "Title": "About Mavuika",
+        "Context": "Some people compare me to the Pyro Archon because of my track record in the Pilgrimage. It's a meaningless comparison. If the Pilgrimage was a tree, and I was a vulture on the highest branch, then the Pyro Archon would be the sun in the sky... The stronger you get, the more you appreciate the sheer size of the gulf between you and her. I just won a few championships — she's the champion of an entire era.\nBut at least being on top with a clear view of the sky means I can see exactly how high I want to fly from here."
+      },
+      {
+        "Title": "About Kinich",
+        "Context": "When I first saw Ajaw, I thought \"Oh, Kinich has a saurian he treats like family, too\"... Blissfully unaware of how far off the mark I was. Their relationship is... truly one-of-a-kind.\nAlthough I will say, Ajaw's mastery of the human language makes me pretty envious. I wish mom could talk like that, too, so we could do away with the whole body-language-based guesswork-game."
+      },
+      {
+        "Title": "About Citlali",
+        "Context": "My dad told me that when I was little, they gathered all of the most learned elders in Natlan and asked them to come up with a plan for managing my Abyss condition. They all disagreed on the best approach, and it turned into a drawn-out debate. At some point, Citlali quietly left the room, but they were all too busy arguing to notice. When she got back, she put some food and wine down in front of her, ignored everyone, and just started eating... the table suddenly went very quiet.\nJust by looking at her, you'd never know how much seniority and experience she has."
+      },
+      {
+        "Title": "About Ifa",
+        "Context": "Chuychu and my dad have discussed medicine with him countless times. So after I got back from the airborne workshop, the first thing I did was take Coya to get checked out by him. But he seemed so dismissive — he took one glance, said \"it's nothing serious, Cusco can handle it,\" and then immediately left to deal with another patient... *sigh* He was right, of course. I was just worrying too much."
+      },
+      {
+        "Title": "About Iansan",
+        "Context": "I've always felt that training oneself and training others are two very different skillsets. Very few people have them both, but Iansan has them in spades.\nI, for one, am not very good at teaching other people. Whenever I'm trying to demonstrate something to the flying squad, I spend forever trying to explain some basic, boring detail that seems intuitive to me... only to have everyone ask, \"What's intuitive about that!?\"\nIf only Iansan could tutor them, I bet we'd have twice as many candidates pass the flying trials each year... Shame that her training program doesn't include flying."
+      },
+      {
+        "Title": "More about Chasca: I",
+        "Context": "As a peacemaker, I know full well that violence isn't always the answer. But in many cases, having the capacity for violence makes people much more willing to listen to reason."
+      },
+      {
+        "Title": "More About Chasca: II",
+        "Context": "The warriors of the Flower-Feather Clan are a proud bunch, but the Qucusaurs are a prouder bunch still. Anyone who aspires to become a Rider has to train relentlessly and then win their approval — even me, and I was practically one of them growing up. It's only fair, though. Allowing a rookie to ride a Qucusaur into the skies would be highly irresponsible for both the Qucusaur and the Rider."
+      },
+      {
+        "Title": "More About Chasca: III",
+        "Context": "Sometimes, after failing the flying trials countless times and never winning the Qucusaurs' approval, people lose all their motivation and decide to call it quits. In the Flower-Feather Clan, we call those people the \"Wingless\"... But generally, only the most outstanding warriors even attempt the flying trials in the first place. Their fighting spirit may have faded out, but it will one day burn again. And until that day comes, we will quietly watch over them, just as the Qucusaurs watch over their unfledged young."
+      },
+      {
+        "Title": "More About Chasca: IV",
+        "Context": "I was never able to enjoy a proper, happy childhood, but when I was on the brink of death, momma bird gave me a new life, and when I was lost and directionless, Chuychu gave me something to believe in. Behind me, I have my saurian family, my human family, and every other creature in the family we call Natlan. So I will not be defeated. Not by the Abyss, and not by life's hardships. Watch me, I will transcend it all!"
+      },
+      {
+        "Title": "More About Chasca: V",
+        "Context": "Chuychu hoped I'd become a hero. So... I can't give up. I have to stay strong, for her sake...\nBut when the relic exploded, and Coya dove in front of me, I... the same fear of losing my sister came flooding back again...\nSorry, I just don't really know who I can talk to about this kind of stuff. I usually push it to the back of my mind... But I feel much better now.\nSince I can't forget that fear, I guess I'll try the opposite: remember it, own it. And eventually... transcend it."
+      },
+      {
+        "Title": "Chasca's Hobbies",
+        "Context": "Starting fights is more trouble than it's worth. Gets you into too much trouble. Now, ending fights, on the other hand, much more acceptable. This is why I love being a peacemaker, because the fights come to me... Heh, I'm just kidding, of course."
+      },
+      {
+        "Title": "Chasca's Troubles",
+        "Context": "The Abyssal energy. Not because it affects me that much — it doesn't anymore. More because of how much it makes the people around me worry about my safety."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Growing up by the sea, I mostly ate raw fish, and after I came to the tribe, I grew to love Flash-Grilled Steak... Qucusaurs and humans have wildly different diets, but I enjoy them both."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Anything with too much alcohol, I guess. Not because I don't like drinking — I just need to watch my intake very carefully before a flight. But you get some food where the scent of the alcohol is masked by the other flavors... Looks tasty, smells delicious, so you take a bite, and then... uh-oh, it's a trap."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "I'm telling you, this dish plus a nice wine would increase the chances of mediation success by thirty percent. Heh, there's nothing quite like some good food and wine to put people in a good mood."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "This is pretty good. Thanks."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Uh... Was this meant for the qucusaurs? ...Sorry, but this isn't the kind of thing they go for."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Here, take this gun. It's loaded with six rounds, including an extra-special one. Find an open space and try it out — or better yet, fly up into the sky and do it there.\nOoh, you got the special round on the first try, huh? Luck's on your side today... That was a whistling birthday firework. I made it myself!\nHmm? ...What are the other five rounds? More fireworks, of course! But they're the trial runs that I made before the one you just fired off. The color's different, and they're not perfect. Next year, I'll do my best to make a full six top-quality rounds for you."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Huh, is that a new bullet in the chamber?"
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Need me to mediate anything? Tribal trouble? Or an all-out war, maybe?"
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "There's an urge to fight that runs in my veins... But now, I know how to put it to good use."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "\"Kindness should always be repaid, and merit rewarded.\" This is one universal principle that holds true for both the Qucusaur and human worlds. From this day forth, no matter where you go, my wings and my guns will always be at your service."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Let's fly."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Hah!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Take me up."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Fire in the hole!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Hold on to your hats!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Knock 'em down."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Dividing the loot is often a cause of conflict, but luckily for you, I don't really need this stuff."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Mora makes a lot of problems go away. So you can never have too much Mora, huh?"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Ooh, shiny... It's so pretty..."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "A worthy fight...!"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Now I'm all warmed up."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "You want crazy? I'll show you crazy!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "...Hey, no dying!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Get behind me!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Momma... Bird..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Couldn't... transcend..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "I'm... falling..."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "This is about to get messy..."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "...Again!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Alright, whose wings need clipping?"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "The breeze is restless today."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Chamber full and ready to roll."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "All humans hunger for power, and none can avoid conflict.\nSome fight to protect their tribe and resist the Abyss, while others do so to prove themselves superior, greater, or more worthy of Mora, wine, power, and glory than their comrades.\nBut even those who love battle the most know to fear one name — Chasca.\nSo long as she is on the battlefield, even the fiercest fight will cease into silence in short order.\nThis is not entirely due to her eloquence or skill as a mediator, nor is it wholly a consequence of her ability to come up with satisfactory solutions based on her deep grasp of human nature. Instead, it's more that...\nThis \"Peacemaker\" is just ludicrously strong, and she fights in a manner that makes a mockery of common sense. To engage her head-on is comparable to an unarmed newborn babe challenging the fiercest Qucusaurus.\nThose infatuated with conflict often also fear strength, and thus they commonly find sitting down to talk the best choice when confronted by power far beyond their own.\nStill, they wonder, how is Chasca always able to appear at the center of conflict at just the right moment?\nWith such uncanny accuracy, such fortuity, it is as if she is drawn in by conflict itself, or rather... like a \"beast\" who catches the scent of her \"prey.\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Chasca has lived alongside Qucusaurs for as long as she can remember.\nInitially, she believed herself to be a Saurian, though she lacked the hooked beak and sharp talons her mother and elder sister possessed, and she could not fly, nor could she leap into the crowns of trees in a single bound.\nHer mother loved her just as she did her own flesh and blood, and when returning from a hunt, would always ensure her daughters ate their fill first, before contenting herself with the remainder.\nHowever, Chasca was not content to remain a fledgling waiting to be fed.\nOnce she was finally grown enough to race across slopes and bound over rivers, she would often leave the nest to watch her mother and sister hunt.\nShe would remember how they fought, and adapt those techniques for her own use. She had no wings she could spread to fly, so she would leap amongst the treetops. She was not born with beak and claw, so she would arm herself with stones in their place.\nAll too eager to attempt a hunt of her own, she wandered the woods until at last, her first mighty foe came forth — a foraging Forest Boar.\nImitating the Qucusaurs' movements, she leaped at the boar, only to be sent spinning to the ground by its fierce charge.\nRolling to her feet, she snatched up a nearby rock and hurled it, only for the boar to dodge.\nUltimately, she was forced to return empty-handed, her whole body ragged, covered head to toe in injuries and abrasions.\nHer mother brought herbs to treat her, and her sister vigorously opposed any future forays.\nChasca agreed to stay and heal in the nest, but dove into the mountains the instant her wounds closed.\nShe shuttled between forest and stream, collecting all manner of odds and ends to use: Sharp-edged stones, sturdy sticks, sticky sap, the skins of dead animals...\nHer family did not quite understand the purpose of all this \"junk,\" but thought Chasca having a new hobby was a good thing nonetheless.\nThey never imagined she would use them to fashion a new weapon — a slingshot made from sticks and skin, all the better for shooting stones both faster and further.\n...\nThe Forest Boar had a little squirrel cornered, yet what it had not realized was that it too had entered another's hunting grounds.\nWithout warning, it found something stuck to its hooves, and it struggled in vain to get free. Then, several sharp objects, whistling through the air, struck its skull one after another. With a cry, the boar fell into a dead faint on the spot.\nOnly then did Chasca emerge from the bush and excitedly drag her trophy back to the nest.\nHer mother and sister thought then that Chasca would surely become a skilled huntress — yet the way events were to unfold would far exceed their expectations once again.\nChasca contemplated and discovered ever more combat techniques, as if there was always some voice in the dark guiding her on, showing her more ways to fight.\nBut the longer she followed this voice, the less willing she became to skulk in the shadows. She became obsessed with seizing the initiative, with matching herself against bird and beast alike.\nBrown Deer, Flying Squirrels, Halberd-Crest Birds, each in their turn she would eagerly challenge. Rather than being a huntress skilled in the singular, fatal ambush, she was more akin to an unyielding warrior, one who sought battle and would find rest only in death.\nBut the more addicted she became to the thrill of the fight, the less prey she would obtain — for animals tend to be the vigilant sort, and having recognized in her a formidable foe, they naturally choose to flee at the first chance.\nYoung Chasca thus faced a quandary: the intoxication of battle, or a full stomach...\nAnd what an impossible choice that seemed to her then!"
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Unlike other human children, Chasca's first word was neither \"mama\" nor \"papa.\"\nWhen her adoptive human father Cusco first laid eyes on her, he took one look at her, her eyes feral and fierce as her teeth tore into raw meat, then stared back at Elder Allpa, who was planning to give her to him, and his jaw dropped so far you could have stuffed a whole Saurian egg into his mouth.\n\"Um, Elder... I know I agreed to take an orphan in... but, you didn't say it was an orphaned Qucusaurus!\"\nGiven the frequency with which Natlan faces Abyssal invasions, it was not uncommon for war orphans to be adopted, but one like Chasca, abandoned by humans and adopted by Saurians... That was the stuff of legends, and legends alone.\nAs events would prove, Cusco had in fact underestimated the destructive might of this \"Qucusaurus.\" Qucusaurs were already well-known for doing things their own ways, but Chasca's temper would prove harder to restrain than even the proudest among that race of Saurians.\n\"That vulture! She's stolen meat from the warehouse — again!\"\n\"My house isn't your damn nesting ground, you little vulture!\"\n\"Damn.. the little vulture's started another fight!\"\nWorse still, Qucusaurs usually had some specific intention behind their actions. To obtain food perhaps, or to defend their territory... but little Chasca seemed set on kicking up trouble for its own sake. She had food far more delicious than raw meat set before her at the table, and her bed was far softer than a roost of straw, but still she would constantly stir up conflict, day and night.\nThis really had Cusco's brows all knitted up. He had realized that this might not be some simple wildness of temper, or an inability to adapt to her new circumstances... But what was the root of it?\nHumans would die for money, and monsters for food, but this? This pursuit of conflict without gain, without negotiation, without anything but a desire for destruction? Only one other example sprung to mind — the Abyss.\n...Perhaps it was time to have a good \"talk\" with his daughter.\nAnd so, when Chasca next got herself in hot water, only barely restrained by two elite members of the flying squad, Cusco hurried over to apologize once more for not watching over her carefully enough, then rubbed his forehead in exasperation and asked:\n\"...Now, what do you want? If you never speak up, no one will ever understand.\"\n\"The hell are you even asking her for, Cusco? This vulture can't even say a single damn word! Seriously, what were you and the Elder thinking...\"\nLittle Chasca glared venomously at the flying squad members holding her down, a growl forming in her throat, before it warped into a single hoarse \"word\":\n\"V... Vultures!\"\n...Well, that was a start, Cusco thought with a wry smile. As far as communication went, a counter-insult still counted."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "The lamp shone upon Chasca's sleeping face, the light of the flames trembling across the faces of Cusco and the shaman standing to one side.\n\"The Abyss has a foothold in her soul, and its claws have engraved conflict into her. This wound can only grow worse with the passing years... This is an ominous sign, and something that we have never before seen.\"\nThe shaman sighed, thinking for a moment, before speaking again, words weighty and considered.\n\"...Perhaps it might be best for all if we took this chance to return her to the forest now.\"\nCusco could hear the implied meaning. Dealing with Chasca was hard enough now, and she was still little now. Who knew what she might be like in the future?\nThe Abyss was ever Natlan's nemesis, and to keep her in the tribe was to house a potential calamity.\nBut unless they were to find some way to restrain the Abyss within... a \"return to the mountains\" was but a euphemism for \"abandoning her to her fate.\"\nChasca's desire for battle was inborn, just as all humans are born with a desire for food. Others fought for a reason, and once their objectives were achieved, there was no further need to push themselves further.\nBut Chasca's yearning was as a bottomless hunger. Even the sweet taste of constant victory could only sate her for so long.\nIf that craving could not be contained... then perhaps her fate would be to destroy all around her until nothing remained, or be slain in some fierce battle.\n\"You must make your decision... 'now.'\"\nThe shaman's words leapt about in the darkness like the candle's flame.\nCusco looked at little Chasca. Her breathing even, her snoring light, she seemed so much more at peace asleep — indeed, no different from any ordinary human girl.\nCusco softly ruffled her hair, mumbling: \"No. It's too late now... It's too late.\"\n...\nChuychu, having woken up in the dead of night, was hiding behind the door, where the light could not reach.\nYoung as she was, she did not comprehend all that was said between the two — yet the leaden air and her father's sorrow would remain in her heart all the same."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "After that, Chuychu's parents would often take long trips from home. One day, it'd be to go see an elder living in seclusion; the next, to gather a legendary herb.\nEach time, one of them would have the other stay behind to keep an eye on things, but when emergencies cropped up, they would both rush off in a hurry, leaving young Chuychu behind with an \"elder sister\" who was mentally younger than her.\nFortunately, Chasca appeared to have become much better behaved since learning the word \"vulture.\" At least now, when she had some minor disagreement with someone, she could open up with some insults rather than going straight to delivering a beating.\nPerhaps, Chuychu could not help but wonder, Chasca had even realized that no one would apologize for her and clean up her messes while their parents were gone.\n...Probably not. With her personality, there was no way she knew how much their parents worried for her... or how well they treated her.\nChuychu had once imagined what life would be like if she had an elder sister — a playmate, a sharer of woes, someone to care for her when she fell ill...\nBut since Chasca had arrived, her father had become so busy, and her mother's free time had evaporated. Even those her age who she used to play with now avoided her, intentionally or not.\nThis was all Chasca's fault—\nChuychu shook her head frantically as that thought flashed through it.\nNo. She couldn't think like that. The elders said that the tribe must be united, and her parents had also said that Chasca actually really deserved their sympathy...\n...But if she weren't around...\n\"Hey! You home, Cusco? Chasca got into another fight!\"\nThe sudden commotion cut that train of thought short.\nShe rushed to the scene in place of her father, only to find Chasca, her face the very picture of fury, alongside a group of wailing children, among whom were many of her former friends.\n\"These... vul...\" Chasca lifted her hand to point at the pile of crying children.\n\"Another fight? Really!?\" The thoughts that Chuychu had just dispelled came blazing back. \"You're always like this. That's why... That's why they don't play with me anymore! That's why Mom and Dad don't spend time with me anymore!\"\n\"Vul... tures...\" Chasca unconsciously lowered her pointing hand, and though her mouth still repeated those words in grunts, her voice grew quieter and quieter.\n\"You're the worst vulture here!\"\nAt last, the words Chuychu had hidden in her heart tore forth.\nChasca's eyes widened, her lips quivering as if to say something. Then, she finally cast her eyes to the ground, turned, and ran off in the direction of the wilderness outside the tribe.\n...She'll be alright, Chuychu thought. This isn't the first time she's run off. They just needed to go look for her later.\nBut for some reason, deep down, she felt a sense of unease.\n\"What happened back there with Chasca? She seemed much better lately... What did you all say to set her off?\" An adult who had arrived on the scene muttered.\nThe children who had been beaten looked at one another, hesitant to speak. A moment later, someone raised their hand, and said with a trembling voice:\n\"We... It was just an argument at first! But then, someone said...\"\n\"Someone said that Uncle Cusco and his whole family... were also idiots for... keeping this vulture in our tribe... We were just joking, I swear! A—And we heard that from the adults!\"\n\"And they also said not to play with Chuychu... just in case her sister's sickness is contagious...\"\nShocked, Chuychu whirled around, facing the direction Chasca had disappeared in.\nBut there was nothing between the mountains save the mournful wind, giving howling voice to some cry for which there could be no words."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "'Why? This is not my nest.'\n'That \"Elder\" person forced me to live in the new nest.'\n'Those humans made me eat things. Wear things. Spend a few not-so-cold nights among them.'\n'I could go back any time. That's right. I'll go back to my nest.'\n'Mom might chase me out again, but Sister will speak for me.'\n'The \"sickness\" hurts. But it can hurt all it wants. I don't need humans to \"cure\" me.'\nSuch were the chaotic thoughts that swirled through her mind.\nWell-practiced leaps carried her aloft from tree to tree as she drunk in the fresh, familiar mountain air and scent of the leaves. Still, she could not forget the flickering fires of the tribe's candles.\n'I don't need fires to keep warm. I don't need fire to light up the night. Mom and Sister never did either.'\n'Humans are weak. They fear the cold night, so they light fires. Proud, strong Saurians don't need that.'\n...And yet, the fire was so warm.\nThese cowardly thoughts stole into her mind, and suddenly, they echoed and rang, stopping her cold with a splitting headache. She plummeted out of the trees.\n—\"It\" was here again.\nGritting her teeth, Chasca pulled herself up against the tree, her trembling fingers scratching bloody trails across the branches.\n'Fight. Bite. Destroy. That way, you can forget all your unhappiness.'\n'Forget the cowardliness this brief stay has forced upon you. Forget those chains that the human world has bound you with, all their rules. All things were born wild! Born beasts!'\nShe had heard that voice for as long as she could remember. At first, it had merely guided her to hunt, to bite into her prey. But then, it came more frequently, its noise leaving her dizzy and faint, release only coming after she gave in and made a mess.\n'Mom sent me to the humans... hoping that they could cure me, didn't she?'\n'But it's no use. The human world is noisier than the nest. Humans disagree and fight all day. They are always in conflict. And \"its\" voice gets clearer when they fight. More tempting.'\n'—Sister, I don't want to disappoint Mom, but...'\nChasca had tried to confide in her elder sister on several occasions, but alas, her human tongue could not make the vocalizations of a Qucusaurus.\n'—And you, I know you all don't want me to fight, but...'\nChasca had also tried to communicate with Cusco and his wife, but a Qucusaur child could not form human words.\n'—They deserved that beating! They scolded me! They scolded you, too!'\nChasca had tried to explain herself to Chuychu, but only that tattered word, \"vulture,\" came stumbling out of her mouth.\n'Never mind them! I can hear you, and you can hear me. That is all you need!'\n'No need to explain. No need to understand! Just break everything that hurts you! Tear apart all that stands in your way!'\nEven now, that voice screamed in her head, rounding on her.\n'—Enough! You're the one I hate the most! You're the biggest, the worst, the most loathsome vulture of them all!'\nChasca all but roared as she pounded, pounded, pounded her fists against the tree, as if she might rip that voice out and bash it into a pulp!\nSplinters of bark and leaf sprayed out every which way, swirling in the air, but \"it\" laughed all the more wildly.\n...\nMoon-silver pierced through the trees, its mottled gleam lighting Chasca's pallid face.\nShe collapsed, her fists a mess of split skin and muddied flesh, exposing the white bone beneath in some spots.\nEverything hurt. She could not move. Her eyelids were so, so heavy. Even the voice in her head was all but spent.\n'Of course it would be. \"It\" is dying, because \"it\" is me.'\n'This isn't far from the human tribe, and there's so much tree cover. Mom and Sister won't be able to find me, will they?'\nCusco and his wife were out. There was no way they'd return in time to find someone who'd run away from home.\nNo one would know that Chasca was about to die here.\n...And that was fine. One less vulture in the world, Chasca forced herself to think — not to mention the even bigger vulture within.\n...The moonlight was a little too cold after all, though.\n...\nDimly, she felt some warmth on her face, like the light cover of Mom's wings, like the light of human candles. Chasca opened her eyes slowly.\nBefore her was a humble bonfire, and a young girl squatting and tending it carefully — Chuychu.\n\"...Ah!\" Realizing that Chasca was awake, Chuychu hastily hid her hands behind her back. In the firelight, Chasca could see that her hands had been slightly burned.\n\"...Are your hands okay?\" Chuychu deflected.\nOnly then did Chasca notice the bandages wrapped snugly around her hands. It was clumsy work, but enough to stop the bleeding.\n\"...I couldn't move you, so I had to make do here... But I've lit a fire, so the adults should find us soon enough.\"\nChasca did not answer, but the question her eyes asked was clear.\n\"...Well, Mom and Dad would be sad if something happened to you.\"\n\"...\"\n\"Also... Thanks for standing up for me. I'm sorry for yelling at you before asking what happened.\"\n\"...\"\n\"Anyway... Let's go home, okay?\"\n\"...Home...\" Chasca broke her silence, mumbling the new word she had just learned. Then she nodded. \"...Let's 'go home.'\""
+      },
+      {
+        "Title": "\"Peacemakers\"",
+        "Context": "The first time the Flying Captain, Elder Allpa, came forward to teach Chasca, it was because her front door had been virtually blocked up by the deluge of complaints about Chasca and the beatings she'd handed out.\nBut no matter how long Allpa spent laboring over explanations of the human world and its laws, little Chasca could never understand what was wrong with fighting.\nSaurians and beasts all decided things through strength. She'd won the fight, so why was she the one being questioned?\nAllpa would talk and gesticulate, while Chasca would study her, wondering if she might be spared the lengthy lectures if she could simply defeat the Elder.\nBut the second time she came to give Chasca guidance, she immediately realized that there was something different about the girl's gaze.\n\"...Teach me. Become strong.\" With those choppy words, Chasca asked to learn human ways. \"Abyss... want to defeat.\"\n\"...Alright. In that case, let me teach you to use humanity's greatest weapon.\"\nSo saying, Allpa grabbed a woven scroll, an exquisite line of small words embroidered at its head: \"Peacemaker — the Art of Communication.\"\n\"Our greatest weapon is our language.\"\nBut what did flapping one's lips have to do with strength? Chasca did not quite understand.\nShe would rather learn how to use various weapons, from bows to guns, or perhaps how to use Phlogiston, or how to shoot while in the air.\nIf one was strong enough, talk could be dispensed with... That was how she had thought in the past, at least.\nBut still, she had not been able to tear that voice from her heart and beat it until it stopped talking ever again.\nSo she endured, learning every last word that Allpa taught her, chewing on that woven scroll that she never thought she would read, bit by bit, line by line.\nAs it turned out, when she learned to communicate, coordinate, and rely on others, the efficiency of her hunts seemed to increase — just as the scroll had said.\nWhen she wrote Chuychu a letter on her birthday and wished her well, she and their parents seemed pleasantly surprised — just as the scroll had said.\nAnd when she took part in the Pilgrimage of the Return of the Sacred Flame, bearing the expectations of all on her shoulders, it seemed as if the people of the Flower-Feather Clan looked upon her with a little more respect — just as the scroll had said.\n...\n\"Here you go. The highest possible caliber, and the greatest possible mobility... If this request had come from anyone else, from someone whose abilities I wasn't so sure of, I'd have used the materials they gave me to beat some sense into them.\"\n\"Thanks, Xilonen. This should make me a more persuasive mediator.\" Upon receiving the almost comically huge \"Soulsniper: Ritual Staff,\" Chasca tested its weight using the reins in her hand.\n\"I'll say... Who'd disagree with you after being hit with this thing, anyway? This has to be the strongest weapon I've ever made for your tribe.\"\n\"...No, 'a bullet has the most power when it has yet to leave the chamber.'\"\nAs she caressed the cylinder of the gun, this analogy that Chasca had encountered in a certain woven scroll came back to her, unbidden.\n\"The strongest weapon, huh... Then, from this day forth, we shall be the 'Peacemakers.'\""
+      },
+      {
+        "Title": "Vision",
+        "Context": "By that point, she had long since grown from the feral girl who stirred up conflicts into a Peacemaker who ended them in droves.\nThere was almost no dispute that could not be resolved by her intervention, whether it be between humans, tribes, humans and Saurians, or even between Saurians.\nBut if there was some force beyond rational understanding, with whom even the greatest communicator could achieve no consensus, it would be the Abyss.\nSince she had learned to live with \"that\" which lived within her, \"its\" voice had grown ever weaker, and indeed, Chasca even thought \"it\" gone for a time.\nBut in that Night Warden War, \"it\" was invigorated by the Abyss, and like a butterfly bursting from a chrysalis, it manifested as an illusion — one identical to her.\n\"We meet at last. Long have we fought, with neither of us able to overcome the other... But come, let us end this. Approach me, embrace me... and the greatest strength shall be yours.\"\nAs the battle wore on, the more monsters Chasca slew, the greater the hold the Abyssal power had over her, and once more, she felt her battle lust growing ever greater.\nEager were her steps as she sought another target to slay, spent casings and corpses alike piled up at her feet.\nOn that horrific battlefield, the illusion with its outstretched hand seemed almost like an envoy bringing peace.\nBut instinct brought Chasca's gun up and level with it. This was her best chance. It was time to reduce this hateful voice to a bloody mess, once and for all.\n\"So you'll kill me, then? But who will understand you, who will keep you company... if not me?\"\nMore phantasms emerged and rushed her, bringing the feelings she'd kept buried back into the open:\nOnce, she had been dropped like a hot potato, alienated by all.\nShe was no Saurian, but she was not \"human\" in any normal sense, either. She had a \"home,\" yet she walked a solitary path.\nNone could understand the anxiety that seared her heart, nor put out that roaring fire.\nThat illusion was like a vision of water after a parched travail through the desert.\nCould she really put an end to this endless conflict, right here and now?\nAs she walked forward, step by step, the power of the Abyss enshrouded her, and she shivered and grew faint. Yet this feeling was also familiar, like that of an infant returning to their mother's embrace.\nShe had once been abandoned. Was this where she had always belonged?\n...\nBut just as she was about to touch that apparition, voices filled with warmth called out from behind her.\n\"Hey, Sis. Leave a note next time you leave home, alright?\"\n\"You're free to choose your own path in life, but remember, you'll always have a home here with us.\"\n(\"Why have you even come back here? You've chosen to live with humans, haven't you?\")\n(\"Coya's just prone to harsh words. We all miss you, really...\")\nShaking her head, Chasca stopped moving.\nOnce, she had blindly followed the voice in her heart, hungering for battle and for greater strength.\nEven now, it was true that she still walked alone out of habit, but she now knew the meaning of the bonds she'd forged as a \"human.\"\nRaising her gun once more, she took aim, and let fly with all the bullets she had in it.\nThe phantom shattered like a mirror when struck, red ichor seeping between the shards.\n\"Hah, you hypocrite... You say you wish to stop fights, and yet you raise your gun to me. How pathetic.\"\nThe apparition vanished like smoke, leaving only a hollow voice that rang in her ears.\n\"No. I know 'you' too well. That's why I'm sure that this is the only way to make peace between us.\"\nChasca ejected the spent shell casings, and prepared to reload, only for a \"bullet\" to drop to the ground, tinkling as it did.\nLowering her head, she saw that it was a Vision, shining with its own light.\nPicking it up, she flicked it into the air with her thumb before catching it.\n\"Bring it on, then. No matter how many disputes await, I'll pacify them all... 'You' included.\""
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 210400,
+      "Name": "Tlalocan's Night Phantom",
+      "Description": "Chasca's outfit. The spirit of conflict is in her blood, and unyielding determination in her eyes. The pain that comes with transcending death is the unbending pride of Tlalocan.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104154,
+    113067,
+    101253,
+    112103,
+    104355,
+    113061
+  ],
+  "NameCard": {
+    "Name": "Chasca: Fully Loaded",
+    "Description": "Namecard style.\nFear not, she's here to make peace, not to fight. The only question is whether to save a few bullets... Y'know, the type that get fired into the sky as warning shots.",
+    "Icon": "UI_NameCardIcon_Chasca",
+    "PicturePrefix": "UI_NameCardPic_Chasca"
+  }
+}

@@ -1,0 +1,1256 @@
+{
+  "Id": 10000032,
+  "PromoteId": 32,
+  "Sort": 13,
+  "Body": 1,
+  "Icon": "UI_AvatarIcon_Bennett",
+  "SideIcon": "UI_AvatarIcon_Side_Bennett",
+  "Name": "Bennett",
+  "Description": "A good-natured adventurer from Mondstadt who's unfortunately extremely unlucky.",
+  "BeginTime": "2020-09-15T04:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 1,
+  "BaseValue": {
+    "HpBase": 1039.4418,
+    "AttackBase": 16.0272,
+    "DefenseBase": 64.66425
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 3231,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:P}",
+            "2-Hit DMG|{param2:P}",
+            "3-Hit DMG|{param3:P}",
+            "4-Hit DMG|{param4:P}",
+            "5-Hit DMG|{param5:P}",
+            "Charged Attack DMG|{param6:P}+{param7:P}",
+            "Charged Attack Stamina Cost|{param8:F1}",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 323101,
+              "Level": 1,
+              "Parameters": [
+                0.44548,
+                0.42742,
+                0.5461,
+                0.59684,
+                0.71896,
+                0.559,
+                0.60716,
+                20,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 323102,
+              "Level": 2,
+              "Parameters": [
+                0.48174,
+                0.46221,
+                0.59055,
+                0.64542,
+                0.77748,
+                0.6045,
+                0.65658,
+                20,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 323103,
+              "Level": 3,
+              "Parameters": [
+                0.518,
+                0.497,
+                0.635,
+                0.694,
+                0.836,
+                0.65,
+                0.706,
+                20,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 323104,
+              "Level": 4,
+              "Parameters": [
+                0.5698,
+                0.5467,
+                0.6985,
+                0.7634,
+                0.9196,
+                0.715,
+                0.7766,
+                20,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 323105,
+              "Level": 5,
+              "Parameters": [
+                0.60606,
+                0.58149,
+                0.74295,
+                0.81198,
+                0.97812,
+                0.7605,
+                0.82602,
+                20,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 323106,
+              "Level": 6,
+              "Parameters": [
+                0.6475,
+                0.62125,
+                0.79375,
+                0.8675,
+                1.045,
+                0.8125,
+                0.8825,
+                20,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 323107,
+              "Level": 7,
+              "Parameters": [
+                0.70448,
+                0.67592,
+                0.8636,
+                0.94384,
+                1.13696,
+                0.884,
+                0.96016,
+                20,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 323108,
+              "Level": 8,
+              "Parameters": [
+                0.76146,
+                0.73059,
+                0.93345,
+                1.02018,
+                1.22892,
+                0.9555,
+                1.03782,
+                20,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 323109,
+              "Level": 9,
+              "Parameters": [
+                0.81844,
+                0.78526,
+                1.0033,
+                1.09652,
+                1.32088,
+                1.027,
+                1.11548,
+                20,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 323110,
+              "Level": 10,
+              "Parameters": [
+                0.8806,
+                0.8449,
+                1.0795,
+                1.1798,
+                1.4212,
+                1.105,
+                1.2002,
+                20,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 323111,
+              "Level": 11,
+              "Parameters": [
+                0.94276,
+                0.90454,
+                1.1557,
+                1.26308,
+                1.52152,
+                1.183,
+                1.28492,
+                20,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 323112,
+              "Level": 12,
+              "Parameters": [
+                1.00492,
+                0.96418,
+                1.2319,
+                1.34636,
+                1.62184,
+                1.261,
+                1.36964,
+                20,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 323113,
+              "Level": 13,
+              "Parameters": [
+                1.06708,
+                1.02382,
+                1.3081,
+                1.42964,
+                1.72216,
+                1.339,
+                1.45436,
+                20,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 323114,
+              "Level": 14,
+              "Parameters": [
+                1.12924,
+                1.08346,
+                1.3843,
+                1.51292,
+                1.82248,
+                1.417,
+                1.53908,
+                20,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 323115,
+              "Level": 15,
+              "Parameters": [
+                1.1914,
+                1.1431,
+                1.4605,
+                1.5962,
+                1.9228,
+                1.495,
+                1.6238,
+                20,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10321,
+        "Name": "Strike of Fortune",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_01"
+      },
+      {
+        "GroupId": 3232,
+        "Proud": {
+          "Descriptions": [
+            "#{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press} DMG|{param1:P}",
+            "Charge Level 1 DMG|{param2:P}+{param3:P}",
+            "Charge Level 2 DMG|{param4:P}+{param5:P}",
+            "Explosion DMG|{param6:P}",
+            "CD|{param7:F1}/{param8:F1}/{param9:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 323201,
+              "Level": 1,
+              "Parameters": [
+                1.376,
+                0.84,
+                0.92,
+                0.88,
+                0.96,
+                1.32,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323202,
+              "Level": 2,
+              "Parameters": [
+                1.4792,
+                0.903,
+                0.989,
+                0.946,
+                1.032,
+                1.419,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323203,
+              "Level": 3,
+              "Parameters": [
+                1.5824,
+                0.966,
+                1.058,
+                1.012,
+                1.104,
+                1.518,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323204,
+              "Level": 4,
+              "Parameters": [
+                1.72,
+                1.05,
+                1.15,
+                1.1,
+                1.2,
+                1.65,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323205,
+              "Level": 5,
+              "Parameters": [
+                1.8232,
+                1.113,
+                1.219,
+                1.166,
+                1.272,
+                1.749,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323206,
+              "Level": 6,
+              "Parameters": [
+                1.9264,
+                1.176,
+                1.288,
+                1.232,
+                1.344,
+                1.848,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323207,
+              "Level": 7,
+              "Parameters": [
+                2.064,
+                1.26,
+                1.38,
+                1.32,
+                1.44,
+                1.98,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323208,
+              "Level": 8,
+              "Parameters": [
+                2.2016,
+                1.344,
+                1.472,
+                1.408,
+                1.536,
+                2.112,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323209,
+              "Level": 9,
+              "Parameters": [
+                2.3392,
+                1.428,
+                1.564,
+                1.496,
+                1.632,
+                2.244,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323210,
+              "Level": 10,
+              "Parameters": [
+                2.4768,
+                1.512,
+                1.656,
+                1.584,
+                1.728,
+                2.376,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323211,
+              "Level": 11,
+              "Parameters": [
+                2.6144,
+                1.596,
+                1.748,
+                1.672,
+                1.824,
+                2.508,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323212,
+              "Level": 12,
+              "Parameters": [
+                2.752,
+                1.68,
+                1.84,
+                1.76,
+                1.92,
+                2.64,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323213,
+              "Level": 13,
+              "Parameters": [
+                2.924,
+                1.785,
+                1.955,
+                1.87,
+                2.04,
+                2.805,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323214,
+              "Level": 14,
+              "Parameters": [
+                3.096,
+                1.89,
+                2.07,
+                1.98,
+                2.16,
+                2.97,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323215,
+              "Level": 15,
+              "Parameters": [
+                3.268,
+                1.995,
+                2.185,
+                2.09,
+                2.28,
+                3.135,
+                5,
+                7.5,
+                10
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10322,
+        "Name": "Passion Overload",
+        "Description": "#Bennett puts all his fire and passion for adventuring into his sword. Results may vary based on how fired up he is...\n\n<color=#FFD780FF>{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}</color>\nA single, swift flame strike that deals <color=#FF9999FF>Pyro DMG</color>.\n\n<color=#FFD780FF>Hold (Short)</color>\nCharges up, resulting in different effects when unleashed based on the Charge Level.\n·Level 1: Strikes twice, dealing <color=#FF9999FF>Pyro DMG</color> and launching opponents.\n·Level 2: Unleashes 3 consecutive attacks that deal impressive <color=#FF9999FF>Pyro DMG</color>, but the last attack triggers an explosion that launches both Bennett and the enemy.\nBennett takes no damage from being launched.\n\n<i>An attack that combines Bennett's dreams and passion with Pyro. But passion is sometimes overblown, and Pyro sometimes blows over.</i>",
+        "Icon": "Skill_S_Bennett_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 3239,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:P}",
+          "Continuous Regeneration Per Sec|{param2:F2P} Max HP+{param3:I}",
+          "ATK Bonus Ratio|{param4:P}",
+          "Duration|{param5:F1}s",
+          "CD|{param6:F1}s",
+          "Energy Cost|{param7:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 323901,
+            "Level": 1,
+            "Parameters": [
+              2.328,
+              0.06,
+              577.3388,
+              0.56,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323902,
+            "Level": 2,
+            "Parameters": [
+              2.5026,
+              0.0645,
+              635.0807,
+              0.602,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323903,
+            "Level": 3,
+            "Parameters": [
+              2.6772,
+              0.069,
+              697.63446,
+              0.644,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323904,
+            "Level": 4,
+            "Parameters": [
+              2.91,
+              0.075,
+              765,
+              0.7,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323905,
+            "Level": 5,
+            "Parameters": [
+              3.0846,
+              0.0795,
+              837.17737,
+              0.742,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323906,
+            "Level": 6,
+            "Parameters": [
+              3.2592,
+              0.084,
+              914.16656,
+              0.784,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323907,
+            "Level": 7,
+            "Parameters": [
+              3.492,
+              0.09,
+              995.96765,
+              0.84,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323908,
+            "Level": 8,
+            "Parameters": [
+              3.7248,
+              0.096,
+              1082.5804,
+              0.896,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323909,
+            "Level": 9,
+            "Parameters": [
+              3.9576,
+              0.102,
+              1174.0051,
+              0.952,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323910,
+            "Level": 10,
+            "Parameters": [
+              4.1904,
+              0.108,
+              1270.2417,
+              1.008,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323911,
+            "Level": 11,
+            "Parameters": [
+              4.4232,
+              0.114,
+              1371.29,
+              1.064,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323912,
+            "Level": 12,
+            "Parameters": [
+              4.656,
+              0.12,
+              1477.1501,
+              1.12,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323913,
+            "Level": 13,
+            "Parameters": [
+              4.947,
+              0.1275,
+              1587.8221,
+              1.19,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323914,
+            "Level": 14,
+            "Parameters": [
+              5.238,
+              0.135,
+              1703.3059,
+              1.26,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323915,
+            "Level": 15,
+            "Parameters": [
+              5.529,
+              0.1425,
+              1823.6016,
+              1.33,
+              12,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10323,
+      "Name": "Fantastic Voyage",
+      "Description": "Bennett performs a jumping attack that deals <color=#FF9999FF>Pyro DMG</color>, creating an Inspiration Field.\n\n<color=#FFD780FF>Inspiration Field</color>\n·If the health of a character within the AoE is equal to or falls below 70%, their health will continuously regenerate. The amount of HP restored scales off Bennett's Max HP.\n·If the health of a character within the AoE is higher than 70%, they gain an ATK Bonus that is based on Bennett's Base ATK.\n·Imbues characters within the AoE with <color=#FF9999FF>Pyro</color>.\n\n<i>Benny's Adventure Team's adventures are always fraught with unexpected danger. However, Bennett is more inclined to call them \"journeys full of wonder, excitement, and beauty.\"</i>",
+      "Icon": "Skill_E_Bennett_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 3221,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 322101,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 322101,
+        "Name": "Rekindle",
+        "Description": "Decreases <color=#FFD780FF>Passion Overload</color>'s CD by 20%.",
+        "Icon": "UI_Talent_S_Bennett_05"
+      },
+      {
+        "GroupId": 3222,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 322201,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 322201,
+        "Name": "Fearnaught",
+        "Description": "Within the area created by <color=#FFD780FF>Fantastic Voyage</color>, <color=#FFD780FF>Passion Overload</color> takes on the following effects:\n·CD is reduced by 50%.\n·Bennett will not be launched by the effects of Charge Level 2.",
+        "Icon": "UI_Talent_S_Bennett_06"
+      },
+      {
+        "GroupId": 3223,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 322301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 322301,
+        "Name": "It Should Be Safe...",
+        "Description": "When dispatched on an expedition in Mondstadt, time consumed is reduced by 25%.",
+        "Icon": "UI_Talent_Expedition_Mengde"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 321,
+        "Name": "Grand Expectation",
+        "Description": "<color=#FFD780FF>Fantastic Voyage</color>'s ATK increase no longer has an HP restriction, and gains an additional 20% of Bennett's Base ATK.",
+        "Icon": "UI_Talent_S_Bennett_01"
+      },
+      {
+        "Id": 322,
+        "Name": "Impasse Conqueror",
+        "Description": "When Bennett's HP falls below 70%, his Energy Recharge is increased by 30%.",
+        "Icon": "UI_Talent_S_Bennett_02"
+      },
+      {
+        "Id": 323,
+        "Name": "Unstoppable Fervor",
+        "Description": "Increases the Level of <color=#FFD780FF>Passion Overload</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Bennett_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 324,
+        "Name": "Unexpected Odyssey",
+        "Description": "Using a Normal Attack as the second attack of <color=#FFD780FF>Passion Overload</color>'s Charge Level 1 will perform a follow-up attack.\nThis additional attack does 135% of the second attack's DMG.",
+        "Icon": "UI_Talent_S_Bennett_03"
+      },
+      {
+        "Id": 325,
+        "Name": "True Explorer",
+        "Description": "Increases the Level of <color=#FFD780FF>Fantastic Voyage</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Bennett_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 326,
+        "Name": "Fire Ventures With Me",
+        "Description": "Sword, Claymore, or Polearm-wielding characters inside <color=#FFD780FF>Fantastic Voyage</color>'s radius gain a 15% <color=#FF9999FF>Pyro DMG Bonus</color> and their weapons are infused with <color=#FF9999FF>Pyro</color>.",
+        "Icon": "UI_Talent_S_Bennett_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Trial by Fire",
+    "Detail": "A good-natured adventurer from Mondstadt who's unfortunately extremely unlucky.",
+    "Association": 1,
+    "Native": "Adventurers' Guild",
+    "BirthMonth": 2,
+    "BirthDay": 29,
+    "VisionBefore": "Pyro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Rota Calamitas",
+    "CvChinese": "穆雪婷",
+    "CvJapanese": "逢坂良太",
+    "CvEnglish": "Cristina Vee Valenzuela",
+    "CvKorean": "Song Ha-rim",
+    "CookBonus": {
+      "OriginItemId": 108005,
+      "ItemId": 108116,
+      "InputList": [
+        100062
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "This is your team? Cool... I like the vibe. I'm Bennett, leader of Benny's Adventure Team. Any chance we can team up? Please?"
+      },
+      {
+        "Title": "Chat: Treasures",
+        "Context": "Let's go find some treasure!"
+      },
+      {
+        "Title": "Chat: Adventures",
+        "Context": "No one's joined me on an adventure in ages. C'mon, let's go!"
+      },
+      {
+        "Title": "Chat: Self-Deprecation",
+        "Context": "\"Good things come to those who don't wait around!\" That's what they say, anyway. Knowing my luck, the opposite is probably true for me..."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "It always rains when I go on an adventure."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Don't stand too close to me, or you might get hit by lightning too."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "Weather's not bad today... Oh crud, I jinxed it! Now it's bound to rain."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "Careful! In this kind of wind, it's easy to get hit in the head by flying rocks."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Morning! Where's the adventure at today?"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "I brought a sandwich. You want some? I'll give you hal- *choking* *spluttering* ...Phew. Sorry, nearly choked to death there!"
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Hey, wanna go talk to my dads for a bit? They tell the best adventure stories!"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "You're headed off? Cool. It was awesome adventuring with you. We should totally do it again!"
+      },
+      {
+        "Title": "About Bennett: Adventure Team",
+        "Context": "I'm the leader of Benny's Adventure Team — a rising star in the Mondstadt Adventurers' Guild! ...Where are the others? Ah, haha, they're all on leave right now."
+      },
+      {
+        "Title": "About Bennett: Bad Luck",
+        "Context": "Eh, it's not as bad as you've heard! Everyone falls into a trapper's pit or gets hit on the head by a falling tree now and then, right?"
+      },
+      {
+        "Title": "About Us: Teammates",
+        "Context": "Hahaha, you wish! Benny's Adventure Team has had no vacancies in ages... I mean, you must be spoiled for choice, right? Why'd you wanna join the unluckiest adventurer alive, anyway?"
+      },
+      {
+        "Title": "About Us: Division of Labor",
+        "Context": "From now on, I'll distract the monsters and set off the traps while you grab the treasure. Sound good? ...You don't like it? Oh — don't worry about me getting injured! It's what I'm best at... And for you, it would be my pleasure!"
+      },
+      {
+        "Title": "About Us: Dangerous Places",
+        "Context": "I think I get why you teamed up with me now. It's 'cause we're the same, you and I — we both like that adrenaline rush you get from being in dangerous situations. That's what makes adventuring so addictive!"
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "Getting recognized by the gods was the last thing I expected, seeing as how I'm so unlucky all the time. But if the gods haven't given up on me, I guess that means I shouldn't give up on me either."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Do you wanna come and see the view of Mondstadt from above some time? It's real pretty at night, when the city's all lit up and you can see the moon reflected on Cider Lake... Huh? From where? Haha, well, there was this one time when I got picked up by a tornado and ended up on this cliff way up high— Not interested? Oh, okay then, never mind."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "I actually quite like cabbage. It's not much to look at, but you can't imagine a world without it. You can grow it anywhere, it goes with everything, and the flavor never gets in the way. I dunno, there's something... nice about being ordinary."
+      },
+      {
+        "Title": "About Barbara",
+        "Context": "She's the best singer and dancer out there! I always go to watch her in concert after an adventure goes south — it really lifts my mood, chanting along with all the other fans, cheering her on. It's really kinda magical! It's no wonder she's so popular... Boy, if I had even half her popularity as leader of my adventure team..."
+      },
+      {
+        "Title": "About Klee",
+        "Context": "She's a cute kid... but I have to keep my distance. Whenever she plays with me, her bombs always end up going off... It's not so much me I'm worried about, it would just be awful if something happened to Klee. The Knights of Favonius would never forgive me, that's for sure."
+      },
+      {
+        "Title": "About Fischl",
+        "Context": "Oh yeah, the Prinzessin der Verurteilung from the world beyond! She's amazing. I keep asking her if we can go adventuring in her home world together, but each time I bring it up she sort of avoids the topic... She's probably just worried about my safety. Her home world sounds like a dangerous place, for sure."
+      },
+      {
+        "Title": "About Jean",
+        "Context": "I keep meaning to ask Master Jean for some help with the Mondstadt Adventurers' Guild, but I don't know how to go about it. The Guild doesn't have as many rules and regulations as the Knights of Favonius, the dads and I are pretty laid back about everything. Pretty sure that attitude wouldn't fly with Jean though... I guess I should read up on the Knights' etiquette or something?"
+      },
+      {
+        "Title": "About Varka",
+        "Context": "He's my role model! Talk about team leaders — he's the Grand Master! Leads the whole darn Knights of Favonius! How incredible do you have to be to do that!? Recently, though, I've been thinking that having a smaller Adventure Team isn't such a bad thing after all. I mean, if things got too busy in the team, I'd have no time to look after all my dads in the guild, would I? Yeah... Yeah, things are fine the way they are."
+      },
+      {
+        "Title": "About Razor",
+        "Context": "Wolvendom guy! Looks a little on the feral side... doesn't talk much... but he's alright! We both love eating meat, so we got that in common. I sometimes cook some meat for him, and he teaches me how wolves communicate in return. Haha! You should join us next time!"
+      },
+      {
+        "Title": "About Amber",
+        "Context": "Oh, I know who you mean. The girl who's always charging around all over the place. She's always off adventuring in the wild, just like me... But if you ever see her near a cooking pot, you'll soon find a cloud of thick black smoke blowing in your direction, followed by the smell of burnt steak... Huh, maybe she was born unlucky too?"
+      },
+      {
+        "Title": "About Noelle",
+        "Context": "Noelle's someone I've been watching for a while. She's really talented, and extremely hardworking. But somehow she's still a maid — the Knights of Favonius still haven't made her a knight. It's a shame, don't you think? Boy, if she switched to the Adventurers' Guild, she'd easily be one of the best there is."
+      },
+      {
+        "Title": "More About Bennett: I",
+        "Context": "Oh... you wanna know about me? Haha, I'm just your average adventurer. 'Cept I'm more unlucky than average. Anyway, I'm nothing compared to you — you're the star of all those legendary tales. What do I got to show for myself?"
+      },
+      {
+        "Title": "More About Bennett: II",
+        "Context": "\"The dads...\" That's how I refer to all the older adventurers in Mondstadt. Apparently, I was an orphan kid that they rescued from the most perilous situation ever. How cool is that? I have such terrible luck all the time, and yet I was rescued against the odds and survived all this time. It's a miracle if you ask me."
+      },
+      {
+        "Title": "More About Bennett: III",
+        "Context": "You've, uh, noticed then... Heh. Yeah, Benny's Adventure Team has been me on my own for a long time now. Reason is, I have such bad luck that even the most benign of adventures end up turning into the adventure from hell, and no one wants to come with me... Do you feel the same way?"
+      },
+      {
+        "Title": "More About Bennett: IV",
+        "Context": "I was born unlucky. That's just the way it is, and I've lived with it so long now that I'm just used to it. But you know what? Maybe it's a good thing. It means I know that whatever luck I do have left is gonna run out sooner rather than later... so I'd better make the most of my life while it lasts. You know, go on plenty of adventures, meet loads of people... I mean, if I didn't live like that, I may never have even met you! Can you imagine? Haha!"
+      },
+      {
+        "Title": "More About Bennett: V",
+        "Context": "Time flies! We've been a team for a while now, haven't we? Anyway, I have a dream I wanna tell you about. Once the Mondstadt Adventurers' Guild becomes the biggest branch in Teyvat, I wanna go adventuring all over the whole world! Benny's Adventure Team will be the greatest adventure team there ever was, because you and me are the greatest adventurers! ...\"Since when?\" Uh... I don't remember exactly when you signed onto Benny's Adventure Team. But whatever, it's just details, right?"
+      },
+      {
+        "Title": "Bennett's Hobbies",
+        "Context": "I like all kinds of things, but most of all, I like adventures! One day, I'm gonna find the most valuable treasure in the whole world, and then my dads can have a better life... and the Mondstadt Adventurers' Guild will be back in business!"
+      },
+      {
+        "Title": "Bennett's Troubles",
+        "Context": "Hmm... Well, if you really wanna know... When I have a bad day, I feel a bit glum. Like, it sucks when I come back empty-handed from an adventure, or when one of my dads' old injuries starts acting up. But... they're just small things, really. After a good night's sleep, I forget all about them. New day, new start! Haha!"
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Meat! Meat is the best sustenance there is. Chicken-Mushroom Skewers, Steaks, and Sweet Madames are all my specialties. You won't go hungry if you come adventuring with me, that's for sure!"
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "You can't really afford to be picky as an adventurer. That said, I can't really handle spicy food. I find it hard to breathe after eating Jueyun Chilis, like the spice went right into my lungs. And there's no avoiding the diarrhea afterward... It's the devil's fruit, I say. Who knows where it came from?"
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Whoa, lucky me! Haha... Oh wait! Does that mean I just used all of my good luck for today...?"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Literally everything you cook ends up tasting amazing. Hehe, you're awesome!"
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Oh no... my stomach hurts..."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Happy birthday! Best of luck in the year ahead. Don't worry, bad luck isn't contagious! As long as I'm around, it'll be drawn to me and not you, so you're safe."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "I feel stronger in every sense! Just as unlucky as ever, though. Hehe."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "I'm catching up with you, Traveler! One step at a time."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Wow, check out all this power! How can I repay you, though? Hmm... Oh yeah! I know this Domain where there's a priceless treasure hidden somewhere inside! Let's go hit it up!"
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "Thanks to your help, I should finally be able to keep everyone safe now. Hopefully, people's opinions of me will start to change. Once the unluckiest guy alive, with a million cuts and bruises to show it. Now, a dependable adventurer at long last! ...Heh, well, I—I can hope."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Hah!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Let's light it up!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Get outta here!"
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Haah!"
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "Take cover!"
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "Outta the way!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Everybody stand back!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "I'm going in!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Teamwork is dreamwork!"
+      },
+      {
+        "Title": "Sprint Start: I",
+        "Context": "Adventure time!"
+      },
+      {
+        "Title": "Sprint Start: II",
+        "Context": "Off we go!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Now that's what I call treasure!"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Even better than I imagined! It's my lucky day!"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "*chuckle* It's a miracle!"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Shoot, I can't afford any more bandages..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Don't worry. I got this."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "I always bounce back, just watch me..."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "You're in over your head! Lemme try!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Hey, pick on someone your own size!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Benny's Adventure Team... I have failed you..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "This is just my luck..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Couldn't break... the curse..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Didn't see that coming."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "That's gonna hurt in the morning..."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Why do they never miss?"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Y—You want me on your team?"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "I won't hold you back! ...Much."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Gonna be epic!"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Benny's Adventure Team is an exception to the norm in the Adventurers' Guild, Mondstadt Branch.\nInitially, the team mechanism requiring at least 3 or 4 regulars in each team was set up to promote mutual support and prevent accidents.\nAs for Benny's Adventure Team, however, its only regular member has been Bennett himself.\nThe lack of team members essentially has everything to do with Bennett's infamous bad luck.\nHowever, being the passionate adventurer he is, Bennett never feels lonely.\nWell, maybe once or twice, sometimes..."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "The adventurer Jack was the first victim of Benny's Adventure Team.\nJust a few feet away from the treasure, an extremely rare Geo Turbulence occurred, tearing the ground apart and opening a bottomless chasm right before everyone's eyes.\n\"So close, yet so far... like love.\"\nJack only suffered minor injuries, but he was never the same as an adventurer thereafter. The event seemed to have left him with a broken heart.\nAnother member, Royce, heard someone shout \"Heyo!\" before losing consciousness in a huge explosion. The culprit, Klee, was sent to the confinement room for seven days for mistaking the cave the adventurers were still exploring in for a giant rabbit hole and blowing it up.\nHeckler suffered from a severe bout of diarrhea for a week after joining the team. Although it turned out to be food poisoning, he insisted it was because of Bennett's bad luck.\n\"They'll be back! They're just... on leave. Please don't invalidate my team's registration with the Guild...\"\nSeeing Bennett beg and plead before her eyes, Katheryne sighed and decided to spare him the truth that his \"teammates\" had long jumped ship."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "There was once a predicament of incomparable despair.\nA predicament that had all but swallowed an old adventurer.\nThe scorching flames scalded his skin, the deafening thunder almost ruptured his eardrums, and the hollering winds threatened to rip his soul from him.\nAt the end of his hellish journey, what awaited him was... a baby.\nThe old adventurer thought he was the first living thing to pass through this arduous ordeal. But how could he explain that which lay before him?\nIn that moment, it hit him, and he believed it to be true.\n\"This baby must be... a child abandoned by the world itself.\"\nThough there were no mighty artifacts, jewelry, or gold, the old man's face did not seem disappointed in the slightest, for he regarded this baby, whose life hung by a mere thread, to be his treasure.\n\"This child is what I was meant to find on this journey,\" he thought as he took the baby into his arms.\nEven if what he was about to do opposed the will of the world itself, he was unafraid."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "The old adventurer died from severe injuries before being able to tell this story, leaving only the child he had saved.\nOn his deathbed, he only managed four final words: \"will,\" \"adventure,\" and \"final treasure.\"\nSeveral single, childless, old adventurers in the Adventurers' Guild in Mondstadt raised the child as their own and named him Bennett.\nBeing raised by the Guild, Bennett referred to everyone as \"Dad.\"\n\"Dad, your dentures fell into the bowl!\" \"Dad, you should stop wearing that old leather armor. Where are the undergarments I bought you?\" \"Dad, it's raining, better keep your distance from me so you don't get struck by lightning!\"\nTaking care of all his aging dads who have no family has taken up most of his time outside of adventuring.\n\"The dads certainly have found a treasure, haha!\"\nCyrus, the current Guild Master, laughed, giving Bennett a pat on the back.\nThough he is unlucky himself, he can at least try to bring luck to those he cares about. At least, that's how Bennett feels.\nBennett the Unlucky still strives to find his own lucky treasure through his series of unfortunate events."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Oz the Raven, Fischl's familiar, said Bennett is \"the most tenacious young man in the world.\"\nIndeed, Bennett's share of bad luck throughout his life can be seen from his scars, old and new.\nAttacked by monsters, buried in collapsed ruins, falling from cliffs... A wealth of \"unfortunate events\" has taught Bennett how to deal with more of them in the future.\nBarbara, the Deaconess at the Church of Favonius, was once surprised by how skilled Bennett is at treating dislocated joints.\nAnother gift from his ordeals is his jaw-dropping talent for combat.\n\"Look at his moves... Doesn't that hurt?\" Grand Master Varka of the Knights was extremely intrigued after seeing Bennett in combat.\nIt's not that Bennett doesn't feel pain — he has simply gotten used to it. He adapted to the pain as others would to pungent smells or blinding light.\nTherefore, the way Bennett dives into battles head-on without reservation has become a signature of his."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "What does death mean, exactly? Always walking the thin line between life and death, Bennett can't help but wonder.\nBennett knows that the old adventurer who saved him has left many praiseworthy stories and legends after his death.\nHe knows that adventurers will not have weeping at their funerals, only toasts made in their names by old comrades.\nHe knows, to the adventurers of Mondstadt, a \"good death\" comes at the end of a life given to the pursuit of treasure and the secrets of the world. Once over, their souls are brought back to their homeland by Barbatos.\nHe once feared death.\nHowever, after pondering on this matter some more, he now feels death may be something fortunate for an adventurer...\nNot that fortune has anything to do with him.\n\"Onto the next treasure!\" And with that, Bennett puts this thinking business behind him."
+      },
+      {
+        "Title": "Adhesive Bandage",
+        "Context": "Whenever he suffers severe injuries such as fractures or excessive loss of blood, Bennett will go to the Cathedral to seek treatment from Deaconess Barbara.\n\"Sorry, it's me again...\" Bennett will say, scratching the back of his head.\nBarbara, however, will just shake her head, and with a \"let's deal with those scratches as well,\" she will toss him some adhesive bandages.\nSuch displays of concern may be inadvertent, but they have a special place in Bennett's heart. He sticks those bandages on his wounds with the care of one pinning a medal to their chest, before thanking her wholeheartedly.\nBennett keeps many such bandages in his utility pouch when he goes on adventures. Ones he gets from his dads, from Barbara, from Katheryne... and from adventurers he sometimes meets by chance after getting injured.\nThese tiny tokens of goodwill form a tangible collection of fair fortune unique to Bennett.\n\"Well, since everyone's by my side, I guess I'm not that unlucky after all.\""
+      },
+      {
+        "Title": "Vision",
+        "Context": "Bennett's passion for adventure is unstoppable.\nHe wants to constantly explore, challenge, sweat it out, and eventually grow old on the adventurer's path.\nBut there was once when he met with a true crisis.\nJust as that old adventurer had so long ago, Bennett was in a predicament that would cause any other person to despair.\n\"Losing this much blood... Not good.\"\nBut Bennett did not stop. \"There's no reason to turn back,\" he thought.\nSomehow, he just knew that all the agonizing misfortune he had suffered up till this point was for the sake of overcoming this precarious position.\nBut at the end of his hellish journey, what he found at the end was — nothing at all.\n\"Ha, returning empty-handed is... part of an adventure. I... don't mind...\"\nAt last, his tightly-wound emotions came loose, allowing his many injuries to rob him of his consciousness, and he collapsed.\nWhen he reawakened, he found that his wounds had been cauterized by a mysterious flame, stopping both the bleeding and the pain.\nA jewel pulsed warmly in the palm of his hand, its rhythm in time with the heartbeat in his chest — the beating heart of an adventurer.\nThis was not the mercy of the world, or that fate took pity on him. Rather, this was his \"final reward,\" one befitting a person with Bennett's burning passion."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 203201,
+      "Name": "Adventures in Blazing Hue",
+      "Description": "Bennett's traveling attire for his journeys in Natlan. Dyed lucky lakewater blue with hints of blazing orange, these clothes emanate an overflowing vitality that matches the land in which they are worn.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_BennettCostumeSummer",
+      "SideIcon": "UI_AvatarIcon_Side_BennettCostumeSummer"
+    },
+    {
+      "Id": 203200,
+      "Name": "Fortune's Favor",
+      "Description": "Bennett's outfit. An old adventurer's uniform that has been patched and sewn up in various places.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104114,
+    113011,
+    100024,
+    112037,
+    104306,
+    113003
+  ],
+  "NameCard": {
+    "Name": "Bennett: Recognition",
+    "Description": "Namecard style.\nA sign of recognition from Benny's Adventure Team.",
+    "Icon": "UI_NameCardIcon_Bennett",
+    "PicturePrefix": "UI_NameCardPic_Bennett"
+  }
+}

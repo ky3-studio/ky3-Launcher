@@ -1,0 +1,1227 @@
+{
+  "Id": 10000107,
+  "PromoteId": 107,
+  "Sort": 91,
+  "Body": 2,
+  "Icon": "UI_AvatarIcon_Citlali",
+  "SideIcon": "UI_AvatarIcon_Side_Citlali",
+  "Name": "Citlali",
+  "Description": "The great shaman from the Masters of the Night-Wind, the universally-revered Granny Itztli.",
+  "BeginTime": "2024-12-31T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 10,
+  "BaseValue": {
+    "HpBase": 905.654,
+    "AttackBase": 9.8686,
+    "DefenseBase": 59.41119
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 0,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [],
+          "Display": 0
+        },
+        "Id": 11076,
+        "Name": "",
+        "Description": "",
+        "Icon": "Skill_S_Citlali_03"
+      },
+      {
+        "GroupId": 10731,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "Charged Attack DMG|{param4:F1P}",
+            "Charged Attack Stamina Cost|{param5:F1}",
+            "Plunge DMG|{param6:F1P}",
+            "Low/High Plunge DMG|{param7:P}/{param8:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1073101,
+              "Level": 1,
+              "Parameters": [
+                0.434072,
+                0.388136,
+                0.537712,
+                0.992,
+                50,
+                0.568288,
+                1.136335,
+                1.419344
+              ]
+            },
+            {
+              "Id": 1073102,
+              "Level": 2,
+              "Parameters": [
+                0.466627,
+                0.417246,
+                0.57804,
+                1.0664,
+                50,
+                0.614544,
+                1.228828,
+                1.534872
+              ]
+            },
+            {
+              "Id": 1073103,
+              "Level": 3,
+              "Parameters": [
+                0.499183,
+                0.446356,
+                0.618369,
+                1.1408,
+                50,
+                0.6608,
+                1.32132,
+                1.6504
+              ]
+            },
+            {
+              "Id": 1073104,
+              "Level": 4,
+              "Parameters": [
+                0.54259,
+                0.48517,
+                0.67214,
+                1.24,
+                50,
+                0.72688,
+                1.453452,
+                1.81544
+              ]
+            },
+            {
+              "Id": 1073105,
+              "Level": 5,
+              "Parameters": [
+                0.575145,
+                0.51428,
+                0.712468,
+                1.3144,
+                50,
+                0.773136,
+                1.545944,
+                1.930968
+              ]
+            },
+            {
+              "Id": 1073106,
+              "Level": 6,
+              "Parameters": [
+                0.607701,
+                0.54339,
+                0.752797,
+                1.3888,
+                50,
+                0.826,
+                1.65165,
+                2.063
+              ]
+            },
+            {
+              "Id": 1073107,
+              "Level": 7,
+              "Parameters": [
+                0.651108,
+                0.582204,
+                0.806568,
+                1.488,
+                50,
+                0.898688,
+                1.796995,
+                2.244544
+              ]
+            },
+            {
+              "Id": 1073108,
+              "Level": 8,
+              "Parameters": [
+                0.694515,
+                0.621018,
+                0.860339,
+                1.5872,
+                50,
+                0.971376,
+                1.94234,
+                2.426088
+              ]
+            },
+            {
+              "Id": 1073109,
+              "Level": 9,
+              "Parameters": [
+                0.737922,
+                0.659831,
+                0.91411,
+                1.6864,
+                50,
+                1.044064,
+                2.087686,
+                2.607632
+              ]
+            },
+            {
+              "Id": 1073110,
+              "Level": 10,
+              "Parameters": [
+                0.78133,
+                0.698645,
+                0.967882,
+                1.7856,
+                50,
+                1.12336,
+                2.246244,
+                2.80568
+              ]
+            },
+            {
+              "Id": 1073111,
+              "Level": 11,
+              "Parameters": [
+                0.824737,
+                0.737458,
+                1.021653,
+                1.8848,
+                50,
+                1.202656,
+                2.404802,
+                3.003728
+              ]
+            },
+            {
+              "Id": 1073112,
+              "Level": 12,
+              "Parameters": [
+                0.868144,
+                0.776272,
+                1.075424,
+                1.984,
+                50,
+                1.281952,
+                2.563361,
+                3.201776
+              ]
+            },
+            {
+              "Id": 1073113,
+              "Level": 13,
+              "Parameters": [
+                0.922403,
+                0.824789,
+                1.142638,
+                2.108,
+                50,
+                1.361248,
+                2.721919,
+                3.399824
+              ]
+            },
+            {
+              "Id": 1073114,
+              "Level": 14,
+              "Parameters": [
+                0.976662,
+                0.873306,
+                1.209852,
+                2.232,
+                50,
+                1.440544,
+                2.880478,
+                3.597872
+              ]
+            },
+            {
+              "Id": 1073115,
+              "Level": 15,
+              "Parameters": [
+                1.030921,
+                0.921823,
+                1.277066,
+                2.356,
+                50,
+                1.51984,
+                3.039036,
+                3.79592
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11071,
+        "Name": "Shadow-Stealing Spirit Vessel",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nCalls upon secret arts passed down through the Masters of the Night-Wind from generation to generation, performing up to three strikes that deal <color=#99FFFFFF>Cryo DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nEnters Aiming Mode, and after Holding, consumes a certain amount of Stamina to call forth a Frost Star that deals <color=#99FFFFFF>Cryo DMG</color> to opponents in its path.\n\n<color=#FFD780FF>Plunging Attack</color>\nGathers the power of Cryo and plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#99FFFFFF>Aoe Cryo DMG</color> upon impact with the ground.",
+        "Icon": "Skill_A_Catalyst_MD"
+      },
+      {
+        "GroupId": 10732,
+        "Proud": {
+          "Descriptions": [
+            "Obsidian Tzitzimitl DMG|{param1:F1P}",
+            "Shield DMG Absorption|{param2:F1P} Elemental Mastery+{param3:I}",
+            "Shield Duration|{param4:F1}s",
+            "Itzpapa Duration|{param4:I}s",
+            "Itzpapa: Opal Fire Nightsoul Point Consumption|{param7:F1} per Second",
+            "Frostfall Storm DMG|{param5:F1P}",
+            "Nightsoul Point Limit|{param9:F1}",
+            "CD|{param8:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1073201,
+              "Level": 1,
+              "Parameters": [
+                0.7296,
+                5.76,
+                1386.6759,
+                20,
+                0.17024,
+                24,
+                8,
+                16,
+                100
+              ]
+            },
+            {
+              "Id": 1073202,
+              "Level": 2,
+              "Parameters": [
+                0.78432,
+                6.192,
+                1525.3628,
+                20,
+                0.183008,
+                24,
+                8,
+                16,
+                100
+              ]
+            },
+            {
+              "Id": 1073203,
+              "Level": 3,
+              "Parameters": [
+                0.83904,
+                6.624,
+                1675.6068,
+                20,
+                0.195776,
+                24,
+                8,
+                16,
+                100
+              ]
+            },
+            {
+              "Id": 1073204,
+              "Level": 4,
+              "Parameters": [
+                0.912,
+                7.2,
+                1837.4082,
+                20,
+                0.2128,
+                24,
+                8,
+                16,
+                100
+              ]
+            },
+            {
+              "Id": 1073205,
+              "Level": 5,
+              "Parameters": [
+                0.96672,
+                7.632,
+                2010.7667,
+                20,
+                0.225568,
+                24,
+                8,
+                16,
+                100
+              ]
+            },
+            {
+              "Id": 1073206,
+              "Level": 6,
+              "Parameters": [
+                1.02144,
+                8.064,
+                2195.6826,
+                20,
+                0.238336,
+                24,
+                8,
+                16,
+                100
+              ]
+            },
+            {
+              "Id": 1073207,
+              "Level": 7,
+              "Parameters": [
+                1.0944,
+                8.64,
+                2392.1558,
+                20,
+                0.25536,
+                24,
+                8,
+                16,
+                100
+              ]
+            },
+            {
+              "Id": 1073208,
+              "Level": 8,
+              "Parameters": [
+                1.16736,
+                9.216,
+                2600.186,
+                20,
+                0.272384,
+                24,
+                8,
+                16,
+                100
+              ]
+            },
+            {
+              "Id": 1073209,
+              "Level": 9,
+              "Parameters": [
+                1.24032,
+                9.792,
+                2819.7734,
+                20,
+                0.289408,
+                24,
+                8,
+                16,
+                100
+              ]
+            },
+            {
+              "Id": 1073210,
+              "Level": 10,
+              "Parameters": [
+                1.31328,
+                10.368,
+                3050.9182,
+                20,
+                0.306432,
+                24,
+                8,
+                16,
+                100
+              ]
+            },
+            {
+              "Id": 1073211,
+              "Level": 11,
+              "Parameters": [
+                1.38624,
+                10.944,
+                3293.6204,
+                20,
+                0.323456,
+                24,
+                8,
+                16,
+                100
+              ]
+            },
+            {
+              "Id": 1073212,
+              "Level": 12,
+              "Parameters": [
+                1.4592,
+                11.52,
+                3547.8796,
+                20,
+                0.34048,
+                24,
+                8,
+                16,
+                100
+              ]
+            },
+            {
+              "Id": 1073213,
+              "Level": 13,
+              "Parameters": [
+                1.5504,
+                12.24,
+                3813.696,
+                20,
+                0.36176,
+                24,
+                8,
+                16,
+                100
+              ]
+            },
+            {
+              "Id": 1073214,
+              "Level": 14,
+              "Parameters": [
+                1.6416,
+                12.96,
+                4091.0698,
+                20,
+                0.38304,
+                24,
+                8,
+                16,
+                100
+              ]
+            },
+            {
+              "Id": 1073215,
+              "Level": 15,
+              "Parameters": [
+                1.7328,
+                13.68,
+                4380.0005,
+                20,
+                0.40432,
+                24,
+                8,
+                16,
+                100
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11072,
+        "Name": "Dawnfrost Darkstar",
+        "Description": "Invoking secret pacts passed down by her tribe over the millennia, Citlali deploys an Opal Shield and calls forth \"Obsidian Tzitzimitl: Itzpapa,\" a creature that is (reputedly) terrifying beyond compare, dealing Nightsoul-aligned <color=#99FFFFFF>AoE Cryo DMG</color>.\nThe Opal Shield's DMG absorption scales based on Citlali's Elemental Mastery, and absorbs <color=#99FFFFFF>Cryo DMG</color> with 250% efficiency. When it is deployed, it will cause Citlali to briefly be <color=#99FFFFFF>affected by Cryo</color>.\nAfter using this skill, Citlali gains 24 Nightsoul points and enters the Nightsoul's Blessing state.\n\n<color=#FFD780FF>Nightsoul's Blessing: Citlali</color>\nWhen Itzpapa leaves the field, Citlali exits the Nightsoul's Blessing state.\n\n<color=#FFD780FF>Itzpapa</color>\n·Itzpapa will follow the character.\n·If Citlali has at least 50 Nightsoul points, Itzpapa enters the Opal Fire state and continuously consumes Nightsoul points to whip up a Frostfall Storm that follows the character and attacks opponents within its AoE, dealing Nightsoul-aligned <color=#99FFFFFF>Cryo DMG</color>.\n·When Citlali's Nightsoul points are fully depleted, Itzpapa's Opal Fire state also ends.\n\n<i>Usually, the wills that symbolize different stars cannot coexist, for how can purest black be reflected in purest white?\nBe that as it may, Citlali has never harbored a particular preference for colors themselves, and that is just how things played out.</i>",
+        "Icon": "Skill_S_Citlali_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 10739,
+      "Proud": {
+        "Descriptions": [
+          "Ice Storm DMG|{param1:F1P}",
+          "Ice Storm Nightsoul Point Gain|{param3:F1}",
+          "Spiritvessel Skull DMG|{param2:F1P}",
+          "Spiritvessel Skull Nightsoul Point Gain|{param4:F1}",
+          "CD|{param5:F1}s",
+          "Energy Cost|{param6:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1073901,
+            "Level": 1,
+            "Parameters": [
+              5.376,
+              1.344,
+              24,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1073902,
+            "Level": 2,
+            "Parameters": [
+              5.7792,
+              1.4448,
+              24,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1073903,
+            "Level": 3,
+            "Parameters": [
+              6.1824,
+              1.5456,
+              24,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1073904,
+            "Level": 4,
+            "Parameters": [
+              6.72,
+              1.68,
+              24,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1073905,
+            "Level": 5,
+            "Parameters": [
+              7.1232,
+              1.7808,
+              24,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1073906,
+            "Level": 6,
+            "Parameters": [
+              7.5264,
+              1.8816,
+              24,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1073907,
+            "Level": 7,
+            "Parameters": [
+              8.064,
+              2.016,
+              24,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1073908,
+            "Level": 8,
+            "Parameters": [
+              8.6016,
+              2.1504,
+              24,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1073909,
+            "Level": 9,
+            "Parameters": [
+              9.1392,
+              2.2848,
+              24,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1073910,
+            "Level": 10,
+            "Parameters": [
+              9.6768,
+              2.4192,
+              24,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1073911,
+            "Level": 11,
+            "Parameters": [
+              10.2144,
+              2.5536,
+              24,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1073912,
+            "Level": 12,
+            "Parameters": [
+              10.752,
+              2.688,
+              24,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1073913,
+            "Level": 13,
+            "Parameters": [
+              11.424,
+              2.856,
+              24,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1073914,
+            "Level": 14,
+            "Parameters": [
+              12.096,
+              3.024,
+              24,
+              3,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1073915,
+            "Level": 15,
+            "Parameters": [
+              12.768,
+              3.192,
+              24,
+              3,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11075,
+      "Name": "Edict of Entwined Splendor",
+      "Description": "Summons \"allies\" from the starry skies and the vast earth, hurling forth an ice storm to bombard the area in front and deal Nightsoul-aligned <color=#99FFFFFF>AoE Cryo DMG</color>. This restores a set amount of Nightsoul points for Citlali, and also summons a <color=#FFD780FF>Spiritvessel Skull</color> near a maximum of 3 opponents within the AoE, with 1 Skull for each opponent. Spiritvessel Skulls explode after some time, dealing Nightsoul-aligned <color=#99FFFFFF>AoE Cryo DMG</color> and restoring a set amount of Nightsoul points for Citlali.\n\n<i>\"Ugh, enough of this 'dark star, opal star' stuff! Citlalin, Itzpapa, get 'em!\"</i>",
+      "Icon": "Skill_E_Citlali_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 10721,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1072101,
+              "Level": 1,
+              "Parameters": [
+                16,
+                8,
+                0.2,
+                12
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1072101,
+        "Name": "Mamaloaco's Frigid Rain",
+        "Description": "While Itzpapa is on the field, after nearby party members trigger the Frozen or Melt reactions, the <color=#FF9999FF>Pyro</color> and <color=#80C0FFFF>Hydro</color> RES of opponents affected by that reaction decreases by 20% for 12s. Additionally, Citlali will regain 16 Nightsoul points. Nightsoul points can be restored this way once every 8s.",
+        "Icon": "UI_Talent_S_Citlali_05"
+      },
+      {
+        "GroupId": 10722,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1072201,
+              "Level": 1,
+              "Parameters": [
+                0.9,
+                12,
+                4
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1072201,
+        "Name": "Itzpapalotl's Star Garments",
+        "Description": "During the Elemental Skill <color=#FFD780FF>Dawnfrost Darkstar</color>, Itzpapa's Frostfall Storm DMG is increased by 90% of Citlali's Elemental Mastery. During the Elemental Burst <color=#FFD780FF>Edict of Entwined Splendor</color>, Ice Storm DMG is increased by 1200% of Citlali's Elemental Mastery.\nIn addition, when nearby party members trigger Nightsoul Bursts, Citlali regains 4 Nightsoul points.",
+        "Icon": "UI_Talent_S_Citlali_06"
+      },
+      {
+        "GroupId": 10723,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1072301,
+              "Level": 1,
+              "Parameters": [
+                75,
+                5,
+                20
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1072301,
+        "Name": "Night Realm's Gift: Smoke, Mirrors, and the Flowing Winds",
+        "Description": "While in an area with Phlogiston Mechanics within Natlan, can use Nightsoul Transmission: Citlali. When the active character is currently high enough in the air, the following will trigger when switching to Citlali: Citlali will leap up high, and will deploy \"White Obsidian Tzitzimitl: Citlalin\" to float in the air. Nightsoul Transmission can be triggered once every 10s by your party.\n\nHolding Aiming Mode will cause Citlali to enter the \"Spiritspeaker\" state, which will allow her to interact with \"Nightspirit Graffiti\" and \"Nightspirit Sigils,\" extracting information and power from them. The rules for interacting with these objects follow the same rules as those governing Iktomisaurus interactions.\n\nAdditionally, holding the jump button will cause Citlali to consume 75 Stamina and leap. In areas within Natlan where Phlogiston mechanics are present, Citlali will prioritize consuming 5 Phlogiston to leap to a height higher still.\nWhen in the air, Citlali can Hold her Normal Attack to consume Phlogiston or Stamina and enter Aiming Mode and trigger Charged Attacks. When initiating Charged Attacks in mid-air, Citlali will prioritize consuming 20 Phlogiston.",
+        "Icon": "UI_Talent_S_Citlali_08"
+      },
+      {
+        "GroupId": 10725,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1072501,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1072501,
+        "Name": "Songs of Profound Mystery",
+        "Description": "While in an area with Phlogiston Mechanics within Natlan, triggering \"Nightsoul Burst\" restores 20 Phlogiston.\nThis cannot take effect in Domains, Trounce Domains, or the Spiral Abyss.",
+        "Icon": "UI_Talent_S_Mavuika_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1071,
+        "Name": "Radiant Blades of Centzon Mimixcoah",
+        "Description": "When she uses the Elemental Skill <color=#FFD780FF>Dawnfrost Darkstar</color>, Citlali gains the \"Opalstar Vestments\" effect until Itzpapa leaves the field. During this time, she will obtain 10 stacks of Stellar Blade. When a nearby active character other than Citlali deals DMG using Normal, Charged, or Plunging Attacks, or Elemental Skills and Bursts, 1 stack of Stellar Blade will be consumed to increase the DMG dealt by 200% of Citlali's Elemental Mastery.\nAfter nearby party members trigger Frozen or Melt, Citlali will gain another 3 stacks of Stellar Blade. This effect can trigger once every 8s.\n\nUsing the Elemental Skill <color=#FFD780FF>Dawnfrost Darkstar</color> will reset Stellar Blade stacks.\nAdditionally, when Citlali is using her leap, or is Aiming or using her Charged Attack in mid-air, her Phlogiston consumption is decreased by 45%.",
+        "Icon": "UI_Talent_S_Citlali_01"
+      },
+      {
+        "Id": 1072,
+        "Name": "Heart Devourer's Travail",
+        "Description": "Citlali gains 125 Elemental Mastery, and other characters shielded by her Opal Shield, or who have Itzpapa following them, gain 250 Elemental Mastery.\nAdditionally, when the Elemental Skill <color=#FFD780FF>Dawnfrost Darkstar</color> is used, nearby active characters will also be granted an Opal Shield.\n\nAlso, the Ascension Talent \"Mamaloaco's Frigid Rain\" has its effects enhanced:\nWhile Itzpapa is on the field, after nearby party members trigger Frozen or Melt, the opponent(s) affected by this reaction will have their <color=#FF9999FF>Pyro</color> and <color=#80C0FFFF>Hydro</color> RES additionally decreased by 20% for 12s. You must first unlock the Ascension Talent \"Mamaloaco's Frigid Rain\" to gain access to the above effect.",
+        "Icon": "UI_Talent_S_Citlali_02"
+      },
+      {
+        "Id": 1073,
+        "Name": "Cloud Serpent's Feathered Crown",
+        "Description": "Increases the Level of <color=#FFD780FF>Dawnfrost Darkstar</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Citlali_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1074,
+        "Name": "Death Defier's Spirit Skull",
+        "Description": "While the Elemental Skill <color=#FFD780FF>Dawnfrost Darkstar</color> is active, when Itzpapa's Frostfall Storm hits opponents, an additional <color=#FFD780FF>Obsidian Spiritvessel Skull</color> will be summoned. When a Spiritvessel Skull summoned this way explodes, it deals 1800% of Citlali's Elemental Mastery as Nightsoul-aligned <color=#99FFFFFF>AoE Cryo DMG</color> and restores 16 Nightsoul points and 8 Energy for Citlali. This effect can trigger once every 8s. This DMG is not considered Elemental Burst DMG.",
+        "Icon": "UI_Talent_S_Citlali_03"
+      },
+      {
+        "Id": 1075,
+        "Name": "Nemontemi's Hex",
+        "Description": "Increases the Level of <color=#FFD780FF>Edict of Entwined Splendor</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Citlali_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1076,
+        "Name": "Teoiztac's Secret Pact",
+        "Description": "After being summoned with the Elemental Skill <color=#FFD780FF>Dawnfrost Darkstar</color>, Itzpapa will always be in the Opal Fire state, and when Nightsoul points are exhausted, this state will not end.\nAdditionally, when <color=#FFD780FF>Dawnfrost Darkstar</color> is used, Itzpapa will consume all Nightsoul points, and while it is on the field, it will continuously consume Nightsoul points. Each Nightsoul point consumed in this way will grant Citlali 1 \"Cifra of the Secret Law\" point.\nA maximum of 40 such points can be gained, and each point Citlali possesses will grant all nearby party members a 1.5% <color=#FF9999FF>Pyro</color> and <color=#80C0FFFF>Hydro</color> DMG Bonus, and increase the DMG Citlali deals by 2.5%.\nWhen Itzpapa leaves the field, or upon using Citlali's Elemental Skill again, all \"Cifra of the Secret Law\" points she has will be removed.",
+        "Icon": "UI_Talent_S_Citlali_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Obsidian Opalstar",
+    "Detail": "The great shaman from the Masters of the Night-Wind, the universally-revered Granny Itztli.",
+    "Association": 9,
+    "Native": "Mictlan",
+    "BirthMonth": 1,
+    "BirthDay": 20,
+    "VisionBefore": "Cryo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Patina Anavatlaca",
+    "CvChinese": "柳知萧",
+    "CvJapanese": "田野アサミ",
+    "CvEnglish": "Skyler Davenport",
+    "CvKorean": "Lee Eun-jo",
+    "CookBonus": {
+      "OriginItemId": 108719,
+      "ItemId": 108789,
+      "InputList": [
+        101243,
+        100093,
+        110009,
+        100076
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "I am Citlali from the Masters of the Night-Wind. I have read the stars and seen the future through the obscuring smoke. You shall be blessed with good fortune and have the aid of powerful allies during your journey. Allow me to join you — Hey, I can be serious! Stop looking at me like that!"
+      },
+      {
+        "Title": "Chat: Novels",
+        "Context": "I—I've read almost every novel from Yae Publishing House. P—Pretty normal, right?"
+      },
+      {
+        "Title": "Chat: Drinking",
+        "Context": "Here's to a life where the drinks keep flowing and the Mora keeps rolling!"
+      },
+      {
+        "Title": "Chat: Trance",
+        "Context": "Going into a trance is risky for most people, so don't get any ideas."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "A perfect day to stay home and read."
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "We should be able to see the stars tonight."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Argh! I've never seen this stuff before!"
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "*spitting noise* Oh, that wasn't me spitting on the ground. I know better than that! I just had some sand in my mouth, I swear!"
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "*yawn* Morning. The last time I woke up this early, I was still a student. Now that I'm a master, I get to sleep in. Anyway, what do you need?"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Afternoon! I'm someone with a lot of restraint, y'know. After I wake up, I never drink before noon... Although, sometimes it takes me all night to perform a ceremony and I don't sleep at all. So, no promises when that happens..."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Evening! Areas with large amounts of phlogiston activity are warm no matter what, but in more remote parts of Natlan, the temperature really drops at night, so remember to bundle up. Huh? You didn't ask? Well, I'm telling you anyway!"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Good night! The obscuring smoke and spirits of the earth are in a light slumber, and the inauspicious stars are faint — a fine evening by all accounts. Wait, how did my pillow get on the floor..."
+      },
+      {
+        "Title": "About Citlali: Mirage Warriors",
+        "Context": "Ah, looks like someone's interested! \"Mirage Warriors\" is a fantasy novel by Nakajima Jun — it's one of the oldest and most renowned works to come out of Yae Publishing House. The story takes place in an island kingdom known as \"Ashihara.\" The protagonist for most of the chapters is \"Higashi no Sankun,\" a feline-headed hermit who came from across the eastern seas, but their true identity is actually the ancient vassal, the Viceroy of the East. The story is incredibly long... The author changed three times, but in the end, the truth of the \"Houko\" was still never revealed..."
+      },
+      {
+        "Title": "About Citlali: Endings",
+        "Context": "The Ode of Resurrection can bring back our physical bodies, but everything will meet its end one day, even the sun and the stars. Oh, you want to know what death is like? Picture an afternoon suspended in time — you're riding a Saurian through a vast plain, and an unknown figure stands on the horizon. No matter how fast you ride, the figure is always out of reach — until it charges toward you without warning. There's nowhere to hide, and when you come face to face, that is the end."
+      },
+      {
+        "Title": "About Us: Giving Help",
+        "Context": "*sigh* Other than my seniority in the tribe, I really don't know what I can offer you. Your allies are powerful, and your future is bright — you should be perfectly fine on your own... Besides, shouldn't an old-timer like me be allowed to relax at home all day? Unless you need me to get someone to fall in line... Wait, you don't really need that, right?"
+      },
+      {
+        "Title": "About Us: Awkwardness",
+        "Context": "I—I treat you just like everyone else, I swear! Fine, the people in my tribe only know me through rumors that have been around for generations. But, you see the real me. My confident and uninhibited persona is just an act, because that's what people expect out of me... But, the awkwardness, the anxiety, the uncertainty — that's who I really am. I won't lie to you, but don't expect me to pour my heart out more than once."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "In a way, obtaining a Vision is like gaining a powerful ally. But, saying someone has powerful allies is more of a comment on how extraordinary that person already is. After all, allies only augment your existing strength. Unleashing that strength depends entirely on your own will."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "It takes two weeks for a serialized Inazuma novel to reach Natlan, and a whole year for the chapters to come out in a single volume. I'm not sure if there's some kind of deeper meaning behind this, but during those two weeks, there are so many crazy spoilers and leaks. It's impossible to tell speculation from complete misinformation."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "According to legend, there was once a special kind of cactus in Natlan that my master's master called the \"mescalito.\" Eating it is supposed to allow even mortal eyes to see into another realm. It was just all a rumor, of course — I have no idea if it still exists. But, if you ever see one, don't try it, okay?"
+      },
+      {
+        "Title": "About Ororon",
+        "Context": "Hmph."
+      },
+      {
+        "Title": "About Mualani",
+        "Context": "Between me and Mualani, I honestly don't know who owes who anymore. She breaks my door, owes me Mora, steals my food, but then she brings me snacks and pays for other things... It's too hard to keep track. I'm more than happy to just call it even at this point. Anything to get her to stop waking me up at eleven in the morning... Oh, I mean, um... Never mind! She just startles me with her knocking, that's all."
+      },
+      {
+        "Title": "About Xilonen",
+        "Context": "She's someone who completely ignores the rumors about me and doesn't go overboard with friendliness. So, I always feel comfortable around her. Oh! Not that I feel uncomfortable around you! I'm just... overthinking everything, as usual... Great, now you know that, too."
+      },
+      {
+        "Title": "About Mavuika",
+        "Context": "Heh, Mavuika... *ahem* I mean, the Archon came to talk to me the other day. It wasn't until I was eating snacks in the middle of the night that I realized she was basically bragging the whole time! There's an ancient saying from another land that goes, \"Saints are humble until you ask them about their duty — that's when their pride stands tall.\" I think that fits her perfectly."
+      },
+      {
+        "Title": "About Kamisato Ayaka",
+        "Context": "...You, young lady over there, turn around and let me have a look. Ah, so this is from The Case Files of Miss Orith. I thought it was the second female lead from Great Detective Hurlock. All Fontaine clothes look the same to me. Alright, you can be on your way now. That's all I wanted to say."
+      },
+      {
+        "Title": "About Kinich",
+        "Context": "The small thing that follows him around is a nasty piece of work. Oh, Kinich is a friend of yours? Huh, what else can I say about him... He's pretty reliable, I suppose."
+      },
+      {
+        "Title": "About Iansan",
+        "Context": "I don't know her that well, but I do know light novels... Someone who's that powerful despite her size must have some kind of power-up that she uses to shoot up to seven feet tall and fight with 200% strength."
+      },
+      {
+        "Title": "About Varesa",
+        "Context": "Warriors in masks have a way of capturing people's imaginations... They're often seen as incarnations of heroes, nature, or the gods. One much-loved urban legend tells the tale of a masked hero who valiantly rescued a drunken witch, and then went door to door waking up the entire neighborhood in the middle of the night, all while carrying her over her shoulder. I mean, I hardly had much of a reputation left anyway, so it's not like I care. Why would I care? I wish nothing but the best for her, obviously. As payback... I mean, to pay her back for her help... may all of her meals be mushrooms for ten days."
+      },
+      {
+        "Title": "More About Citlali: I",
+        "Context": "Huh? Where is this coming from all of a sudden? Did you hear one of the rumors about me? *sigh* Fine, it's true! I'm the oldest, strangest, and scariest shaman in the tribe. Believe what you want — I gave up explaining myself a long time ago."
+      },
+      {
+        "Title": "More About Citlali: II",
+        "Context": "You want me to explain anyway? *sigh* There's an unspoken tradition in my tribe. Shaman masters deliberately foster rivalries between their students and a rival master. That way, if the students want to defeat that master without getting obliterated, they need to work hard to surpass the previous generation. Most of the shamans in the tribe belong to the school founded by my friend. They chose me as the evil witch to defeat, so what can I do? I'm not trying to make their lives difficult! It's not my fault none of them can put up a fight! *sigh* Anyway, the rumors about me being a terrifying old hag... That's how it all started."
+      },
+      {
+        "Title": "More About Citlali: III",
+        "Context": "That's right. I put on an act in front of other people, but this is my real personality. It's pretty simple, actually. If people expect you to speak like an old-timer with an accent, and you respond with elegant, standard speech, people will be shocked out of their minds. Yeah, you're right — it's the stupidity of ignorance. But, ignorance is the hardest thing to overcome. After all, when we first met, I didn't expect you to be any different from the rest of them."
+      },
+      {
+        "Title": "More About Citlali: IV",
+        "Context": "So, the shaman masters in my tribe trick their students into forming a grudge against me, but do you want to know how? This is the most traditional method — say you were cheated by a scammer, then send your students to graffiti the scammer's house. With a little righteous indignation on your side, you can get them to do anything! See how unfair that is? At least most people can recognize my house from a random scammer now, so I don't get that one as much."
+      },
+      {
+        "Title": "More About Citlali: V",
+        "Context": "Oh, these wine bottles? The Saurian Relics Association found them... No, no, they're not mine. Heh, tossing them carelessly like this... Ororon must have drank them! Isn't that right, Ororon!? Come out and apologize! My tolerance is high, you see, so I don't get drunk easily. Even when I am drunk, I never litter like this. Besides, the Association said they were found in the wild. Oh! In a completely harmless location, of course — NOT that it matters, anyway, because I wasn't the one who tossed them, and... Who cares! Just trust me!"
+      },
+      {
+        "Title": "Citlali's Hobbies",
+        "Context": "My life is nearly completely devoid of meaning. Nothing remains but groggy stupor after sleeping, delusional fantasies from novels, and the comfort at the bottom of a bottle."
+      },
+      {
+        "Title": "Citlali's Troubles",
+        "Context": "You really have to ask? I pretend not to care about anything as a shield. In reality, all I do is worry about things."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "First, I like my meat cooked medium, so it retains some of the original flavor of a sacrificial offering. Next would be anything that's easy to eat with one hand so I can read at the same time. Oh, and then anything you recommend, of course!"
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I don't quite... get the point of sour foods. You eat when you're hungry, drink when you're thirsty, and sleep when you're tired. If sour foods are meant to whet the appetite, doesn't that mean you weren't hungry in the first place?"
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Whoa, this is delicious! I've tried every place around the Masters of the Night-Wind, and I've never had anything as amazing as this — I swear!"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Huh, I don't usually eat things like this... No, wait! I'm not saying it's bad! You... introduced me to a new flavor! It's a compliment — cross my heart!"
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "M—Must be something wrong with my tastebuds, ahahaha..."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Happy birthday! Honestly, I don't know what to get you. There are no inauspicious stars in your path. Whether in regard to love, battle, or your future endeavors, your prospects seem great. A Mictlan-style blessing won't do much for you. I thought about getting you a copy of \"Flowers for Princess Fischl\" to get you hooked on light novels, but it seems like someone owns more books from Yae Publishing House than me... Ahh, what to do... what to do?"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Hmm, this doesn't feel like a divination technique from beyond this world. My school of shamanism relies on the earth rather than the sky. When the fake inauspicious stars show their teeth, I bind them with the spirit of the earth, the bones of dead animals, and the power of the obscuring smoke."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "The heavens control human fate like a puppeteer controls a marionette. So, the inauspicious stars themselves do not have free will. But, once I seal their power inside of a doll and bind it with animal bones, the residual thoughts within the bones allow them to develop awareness. I call these, uh, little creations, \"Tzitzimimeh.\" You can think of them as manifestations of the inauspicious stars."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Each Tzitzimitl contains the bones of small animals, which is kind of a creepy technique if you think about it. So, when it comes to people being afraid of me... I guess I bear, maybe, ten percent of the responsibility. But, I don't harm any animals! I just find the bones in the wild!"
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "From this point on, I will always be by your side — until the stars diminish, the flames die out, and the smoke dissipates into nothing."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Get to work!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Fulfill our pact."
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Show no mercy."
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Carefully... carefully..."
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "Steady now..."
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "Just like that..."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "You two — time to end them!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Citlalin, Itzpapa, get 'em!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Suffer the wrath of Itztli!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Hm, not bad. It's all yours."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Go on, take them. I'll thank the stars for you later."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Is it too much to carry? Here, lemme help."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Should've stayed inside..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "*sigh* I wanna go home..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Gotta... be strong..."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "...Hey, no dying!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Reckless much?"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Take me... stars above..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Take me... earth below..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "I'm... sorry..."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "How dare you!"
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Ow ow ow..."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "I'm never late..."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Leave me alo— Ahh, never mind! Let's go!"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Whatever you need."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "\"Shamans\" are practitioners of a mysterious craft who originate from the Masters of the Night-Wind. With many mystical abilities at their disposal, they are wise and powerful figures. In the eyes of the people of Natlan, whether one seeks medicine or wishes to decipher a cryptic prophecy, visiting a shaman is always the right choice. They can be both doctors and prophets, playing indispensable roles both in everyday life and in matters of far greater import. In short, theirs is a highly respected profession.\nYet above the many shamans, there are \"great shamans\" in a league of their own. They say it is a title that only those who reach the very pinnacle of their mystical arts may earn — and indeed, throughout the entire history of Natlan, they have been few and far between. Their deeds shine forth like the brightest stars in the night sky, adding a touch of legend to the already unfathomable shamanistic mystique.\nCitlali is one such great shaman, and the only one in Natlan today.\nYet contrary to what most might expect, you will not find her dealing with everyday matters, nor with major affairs, rarely even participating in events as significant as tribal ceremonies. For outsiders who seek the great shaman's assistance, navigating the many obstacles in their way may prove a greater challenge than traversing the many chasms of Natlan itself.\n\"Looking for Granny Itztli? Best not disturb her! If you really must go, go prepared — and just so we're on the same page, don't go dragging me into it...\" Thus would most members of the Masters of the Night Wind respond, as if Citlali were some formidable fiend, a monster of great menace and untold might.\n\"The great shaman... Mwahaha, she's your only option, isn't she? Pfff, the Almighty Dragonlord doesn't have time for puny punks like you. But since you asked so nicely, I'll let you use my name when you knock. That way, she's bound to take your request seriously.\" A certain oddball entity and self-styled Dragonlord might respond as such, as if Citlali were some easily dealt with triviality.\n\"Need Granny's help? You're looking for the right person if so — she knows everything about everything! Do you have her address? Actually, let me take you there myself! Oh, just so you know, when we get there, you'll have to keep knocking non-stop. Granny's kinda shy, so you have to be proactive, alright?\" This is the kind of response you'd receive from a certain top-ranking guide from the People of the Springs, as if Citlali were no more than a bashful young girl.\n\"Seeking help from Citlali? A wise choice indeed. Her assistance has been instrumental in the success of many of Natlan's most important affairs. I'm confident she'll know how to resolve your troubles too.\" That great leader, the keeper of the Sacred Flame herself, might say this, as if Citlali were the very epitome of a responsible and approachable elder.\nUltimately, after much inquiry, those seeking her aid often end up feeling even more confused than when they first set out, left with no other choice but to give up their petition as a lost cause."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Citlali's home lies at some considerable distance from the tribal settlement. Tucked away in a secluded corner of the mountains, you might call it the perfect retreat for solitary living. But in stark contrast to the way the homes of the average \"recluse\" might blend into their natural surroundings, her remote dwelling is conspicuous — so much so, in fact, that it is practically unmissable.\nThe main reason for this, no doubt, is the graffiti that covers its outer walls. Bold, over-the-top, and provocative, it seems to have been deliberately designed to get on someone's nerves. To understand this, one must note a rather odd tradition that has become prevalent among the Masters of the Night-Wind's shamans. They will often strive to seek out particularly strong peers among their circle, then orchestrate coincidences by which their own students end up clashing with these powerful shamans; and then, by utilizing the pressure exerted by these formidable figures, they push their students to improve. Perhaps it is precisely because of the familial character of the bond between master and disciple shamans that, to bypass their own subconscious, almost parental tenderness, they must rely upon a stern uncle or aunt figure to carry out the tough tests required. Many years ago, another great shaman named Huitzilin chose Citlali to be the target of such conflicts for her own students. How did she achieve this, you might ask? By having them plaster the outer walls of Citlali's home with taunting graffiti — a direct and unignorable challenge if ever there was one.\nFor her part, Citlali performed her role of encouraging the younger generation to improve with flying colors. Not a single one of those bumptious, presumptuous, self-important novices — puffed up by having a great shaman as their mentor — withstood more than a single meeting with her as their adversary. They were, to the last, left humbled and respectful, viewing shamanhood with newfound reverence.\nAfter Huitzilin's passing, her disciples, and even the disciples of her disciples, continued to designate Citlali as the target for their students to challenge, claiming that this was her dying wish.\nThough this practice strayed somewhat from tradition, most Masters of the Night-Wind were unsurprised. Huitzilin had been a great shaman on par with Citlali, and was said to understand and admire Citlali's strength better than anyone. To Huitzilin, only those bold enough to challenge Citlali were worthy of inheriting her legacy. And indeed, the challenges yielded remarkable results. Those brave enough to face Citlali often went on to make exceptional achievements, whether holding key positions within the tribe or attaining a profound mastery of the mystic arts. Over time, challenging Citlali through the medium of graffiti became a tradition of its own.\nThis tradition, though, has been the source of no small amount of grief for Huitzilin's own shamanic descendants. Starting right from their days as apprentices, they must endure defeat after crushing defeat at Citlali's hands. Eventually, they had no choice but to modify Huitzilin's challenge criteria, making it enough to simply last long enough against her. All manner of stories began to spread about Granny Itztli, fueled by the sorry experiences of all those challengers who fell short.\nWhenever a challenger fails, Citlali uses her mystical abilities to erase their graffiti. Thus, over the years, the graffiti on the wall has changed, time and time again. As time went on, Citlali's initial irritation dulled. Given her power and status, she could easily have put an end to this annoying practice, yet instead she allowed it to continue. As for her reasons, some would argue that Citlali uses these failed challengers as a means of enhancing her own reputation; while others believe that, despite her general aloofness, the great shaman still retains a sense of responsibility for nurturing future generations. Even if just a sliver...\nPerhaps only Citlali herself knows the real reason — that it reminds her of that precious time spent sparring with an old rival. As long as that ever-changing graffiti continues to appear on her wall, she can keep pretending that those days never truly passed."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "If you were to ask someone what Citlali's favorite hobby was, no matter if they knew her well, feared her, or even just heard a rumor about her for the very first time, you would get the same answer: light novels. Almost everyone's first encounter with her involves seeing her engrossed in one of these books.\nBut if you were then to follow up and ask which light novel was her favorite... Well, that's something even those who know her best would struggle to agree upon.\nSome are convinced that it is \"Mirage Warriors,\" the light novel she most frequently discusses, and perhaps the first one she ever read. Rumor has it that this early classic switched authors three times, yet despite this, was never actually brought to completion. Most of its original readers have, in fact, already passed away — the last one left being Citlali herself, still alive and holding out for updates after two full centuries. Such a book, they say, must hold a special meaning in the context of Citlali's long life, making it the strongest contender for her favorite.\nOthers claim it must be the popular favorite \"A Legend of Sword,\" widely known even throughout Natlan. Yet when others bring up this work, Citlali often seems displeased — not because of any issue with the story itself, but because of her lingering resentment over that one time when they decided not to hold a signing event in Natlan.\nThen there are the heated debates between the advocates of \"Shogun Almighty: Reborn as Raiden With Unlimited Power\" and \"Pretty Please, Kitsune Guuji?.\" One school of thought believes the former is her favorite, pointing to the time that she discovered her copy of \"Raiden Reincarnation\" was not actually a first edition, flying into such a rage that she nearly scared the book merchant to death. The other side argues for the latter, recounting how ruthlessly Citlali crushed a certain group of challengers whose sudden appearance had caused her to miss out on getting her hands on the deluxe edition of \"Kitsune Guuji.\"\nCitlali herself has never given a straightforward answer to the question, leaving the matter unresolved. However, a particularly bold specimen of a prying busybody once claimed to have discovered a secret compartment in her bookshelf, well-concealed and even protected by several layers of special mystical seals — without a shadow of a doubt, the ironclad repository of her most treasured light novel.\nCitlali quickly deduced that this individual must have been a petty thief who had once broken into her home. After tracking down the intruder and personally administering a thorough thrashing, she handed them over to the tribal guards. From that moment on, the mystical defenses around her home gained yet another layer of protection.\nStill, she never outright denied the pesky little pilferer's claim. Because, as it just so happens, there is indeed a secret compartment in her bookshelf.\nThe book stored within is neither one of the latest bestsellers nor a rare out-of-print collector's edition. Instead, it is an obscure and unsung light novel, barely known even in its homeland of Inazuma: \"New Chronicles of the Six Kitsune.\"\nSo, is this Citlali's favorite light novel? It's very hard to say. Perhaps, just perhaps, her reason for storing it there had something to do with the first sentence she read when she opened it.\n\"Stories relating to memory always seem to have to do with those moments where you gain something and lose it straight away.\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Whenever Citlali's friends make plans to celebrate her birthday, they always run up against a rather tricky question — just how old is she, actually?\nJudging from her appearance... There's no way to tell.\nAccording to Citlali's own oft-repeated claim, the answer seems to be 200. However, some elders of the Masters of the Night Wind insist that she must be older, for she has an intimate knowledge of many things that happened over two centuries ago.\n\"D'you think Granny was adopted by Saurians when she was young too?\" Chasca would wonder, drawing a parallel with her own childhood experience of being raised by a Qucusaur and losing track of her real age.\n\"Granny'll always be Granny, and that's not gonna change — whether she's 200 or more.\" Ororon would respond when people came asking. Having been raised by Citlali since childhood, his awareness of her \"ageless\" aura is perhaps keener than any other's.\nBut Xilonen was never satisfied with that answer. After all, if they were planning to order a personalized birthday cake, a vague number would only confuse the baker. In her view, clarifying your requirements is the most basic courtesy a customer owes.\n\"Hah! If a mere two hundred years has you all running around like headless Flowcurrent Birds, imagine if you could comprehend the unfathomable antiquity of this Almighty Dragonl—\" Before he could finish, Ajaw's comments were cut short by Kinich, whose lightning-fast elbow sent the little party pooper flying.\n\"Why don't we just settle for 200? Seeing as Granny always insists that's how old she is, I'm sure she has her reasons — just like how many people say they're 'forever 18.' It's a way of making themselves seem younger!\" Despite leaving them all deep in thought for a while, Mualani's suggestion was collectively rejected in the end. No matter how you spin it, \"forever 200\" is an absurd way of projecting a youthful image.\nWhen all others had given up, the ever-resourceful Iansan called upon Mavuika, hoping that the memories passed down by the Sacred Flame might offer some clues. But even Mavuika could not provide a definitive answer. So far as past Pyro Archons remembered, Citlali had always lived the life of a recluse, leaving no indication of her exact age.\nAnd so, they continued to hesitate, knowing that asking Citlali directly was simply out of the question. The quick-witted great shaman would see right through them, completely ruining their celebratory surprise in an instant.\nIn the end, they decided to sidestep the issue altogether, settling on a cake design that didn't require her age to be displayed.\nOn the evening of her birthday, they lured Citlali out of her home with a knock at the door, unveiling the cake and an array of gifts as she stepped outside. At last, their long-planned celebration was successfully underway.\nPerhaps moved by their enthusiasm, Citlali drank a lot that night. As her eyes began to grow hazy, someone finally worked up the courage to ask the question that had been puzzling them all along.\n\"How old am I exactly? *hic* Let me tell you something funny...\" Citlali began, slurring her words. \"I'm certainly not the only one in this world who's lived a long, long life. For the others, it usually goes like this... In the beginning, keeping track of the years is easy, but the longer they live, the more of a hassle it becomes, so they just stop paying attention... *hiccup* But me, well... I'm a lil' different, you see... At first, I never used to worry exactly how old I was. It was only after... something happened... that I suddenly started noticing how old I was becoming... And from that moment on, I started counting, and it's been exactly... 200 years... *hic*!\"\nThe mystery behind the \"200 years\" claim had finally been solved, but her answer had sparked a new question. What could possibly have happened to make Citlali, who had remained so youthful over the past two centuries and longer, suddenly become so acutely aware of the passing of time?\nBut despite their curiosity, no one pressed her any further, for they noticed that Citlali was staring blankly at the night sky — a sign that she had already fallen asleep."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "As a young lady, Huitzilin had been Citlali's peer during their training, always accompanied by her trusty Iktomisaur companion, Claw. Whenever Huitzilin struck a battle pose, Claw would leap up and down beside her in a combined show of strength.\n\"So you're that so-called 'genius' the elders always talk about? Let's settle who's the strongest, once and for all!\"\n\"...Are you out of your mind?\"\nAs abruptly as it started, their first clash ended with Huitzilin's crushing defeat. Though, as it turned out, that was only the beginning. Every so often, Huitzilin would show up again at Citlali's doorstep with Claw in tow. The first few times, all she brought with her were fiery letters of challenge. But not long after, she started bringing snacks too. Eventually, she even brought along wine, stolen from the adults. Whether it was the fine wine that swayed her, or simply that she had resigned herself to the inevitability of Huitzilin's persistence, Citlali stopped resisting her visits.\nAnd just like that, twenty years flew by.\nUntil one day, for the first time ever, the fight ended in a draw. That was the night that Citlali finally accepted Huitzilin's invitation to share wine and snacks under the moonlight.\n\"To think that the two of us would become great shamans on the very same day... Seems like we truly are equals in that regard, after all.\"\n\"A hard-won draw's not a bad result, you know. Surely, as my rival, you're finally satisfied now? Maybe you'll even stop pestering me...\"\n\"What? No. I'll keep coming over, of course! Besides, even if we're no longer rivals, we've been friends for twenty years now, haven't we?\"\nAs the slightly tipsy Citlali gazed over at Huitzilin in the dim moonlight, something suddenly struck her. That reckless young lass from two decades past had already blossomed into a poised great shaman. Little Claw had matured too, now an imposing adult Iktomisaur standing a head taller than the two of them.\n\"Yes, friends for twenty years...\"\nAll of a sudden, Citlali's mind was aflood with memories, details that had been obscured by time's rapid flow. She felt the warmth of their bond, but also an inexplicable sense of foreboding.\nAnother twenty years flew by in the blink of an eye.\nOne day, halfway through cleaning away the graffiti of yet another challenger she had effortlessly defeated, Citlali was interrupted by the sound of familiar footsteps.\n\"Hey, old friend. It's been a while since you last asked me out for a drink. You're not mad at me, are you?\"\n\"If a fight's what you're after, why don't you just drop by yourself? Why'd you keep sending these hopeless fools to pester me, huh?\"\n\"Well, because... I've reached the age where I have to start taking on students too, y'know.\"\nCitlali turned around, as though suddenly realizing something she hadn't before. Her friend, who she hadn't seen for quite some time, now bore quite a few wrinkles, no longer the radiant youth she once was. Seeming to sense the complex emotions in Citlali's gaze, Huitzilin tried to lighten the mood, pointing to a nearby field in full bloom.\n\"No matter how beautiful Natlan's wildflowers are, they always wither when the dry season comes around. But that never worries us, because we know that the year after, the field will bloom once more. Right?\"\n\"But the flowers we see now... Not one of them will feel the warmth of the sunlight that shines down on next year's field. In the end, nothing gold can stay, can it?\"\n\"...I'm sure some hues will hold, my dear friend. Let me think it over — I'll give you your answer soon enough.\"\nHuitzilin tried in vain to soothe Citlali's apparent unease, for the latter had finally realized from whence her sense of impending crisis came. Citlali stayed wide awake that whole night, watching as portentous meteors streaked across the skies above.\nJust as leaf subsides to leaf, so too do we. By the time the next twenty-year anniversary of their friendship came around, Huitzilin was gone.\n...\nMany years later, as Citlali once again scrubbed graffiti from her wall, she thought back once again upon that afternoon when a girl and her young Iktomisaurus had come to challenge her.\nCountless memories surged back like a tide, vivid as if those moments had occurred just yesterday; yet just as quickly were they carried away again, scattered by the wind into the distant past. With long years' passing, even those emotions that Huitzilin had once failed to calm had by now been diluted, leaving only quiet sighs in their stead.\n\"You never gave me that answer, in the end,\" Citlali murmured.\nYet despite the implication of her words, Citlali had no intention of blaming Huitzilin; for she believed it was a question without answer. After a few cycles of blooming and wilting, the flower she remembered so vividly was now long gone, buried by the sands of time, as even the brightest of flowers would be."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "\"We are like birds, soaring through the horizons of time. I linger between brushes of memory, seeking the 'color' of my final journey.\"\nEach time Citlali weaves a special scroll to record a significant event, she thinks back upon this phrase of Huitzilin's. It was the first thing that Huitzilin had said as she taught her the mystic art of weaving such scrolls. Thus did she lead Citlali into a vivid realm of recollection, showing her how to craft sprawling works like a master painter; except with a palette not of paints, but of memories instead.\nAfter learning this technique, Citlali followed Huitzilin's example — adorning the record of a grand victory with a touch of fiery orange from warriors' torches, or honoring fallen heroes with a hint of pale violet from flowers laid before a grave. So were these chronicles woven into being, scroll after scroll, ensuring that the Masters of the Night-Wind's traditions would endure.\nCitlali had long understood the burden and responsibility that inheriting this mystic art entailed. So, when she was approached by that golden-haired Traveler, she knew she could not refuse their request. This time, she chose the Traveler's \"gold\" to represent the light by which the Abyss was illuminated, as well as the final full stop by which this great war was ended. Meticulously she dyed the entire scroll, the memories it contained seeming to come alive in her hands.\n\"That way, they're not lost to piles of black and white text.\"\nHearing the Traveler by her side speak these words, Citlali suddenly felt an emotion long since diluted by time well up inside her again. Remembering Huitzilin's words once more, she realized that her old friend had indeed kept her promise.\nWhen the flowers wither when the dry season comes, and all is buried by the dunes of time, what then shall remain?\n\"The color of memories, that's what.\"\nThis was the answer that Huitzilin had given all those years ago. It was also the one that Citlali was now able to give the Traveler in response to their question. She knew that it would bind her to another promise that would only be fulfilled after facing many more long years; yet this time, she felt far more resolute.\nPresenting the Traveler with a token she had prepared long ago, for the first time ever, Citlali spoke aloud the wish she hoped to fulfill over the course of her long life.\n\"I hope that my colors may abide in your memory always.\""
+      },
+      {
+        "Title": "Tzitzimimeh",
+        "Context": "\"The first is Citlalin, baleful star of the North!\"\n\"The second is Itzpapa, malefic omen of the South!\"\nWhenever someone mentions the two dolls that Citlali keeps by her side, which she refers to as her Tzitzimimeh, the Masters of the Night-Wind often respond with these words as a warning — the intention being to silence loose tongues, lest they bring down a terrible curse upon themselves. If the rumors are to be believed, these dolls house the conscious wills of some ilk of malevolent demon, subduable only by the wrath of Granny Itztli herself. As such, their names have become synonymous with Granny Itztli's own, invokable as some sort of incantation to stop a toddler's tantrum in its otherwise unstoppable tracks.\nHowever, anyone who has had the opportunity to observe these two dolls up close would find them far less intimidating than the stories might suggest. In manner and appearance, they come across more like cute little animals than fearsome demons. Though Citlali does indeed frequently hurl them at her enemies in combat, the fear instilled by this peculiar tactic pales in comparison to the terror she inspires with her own two fists.\nAnd though it is true that within these dolls is sealed the dreadful power of inauspicious stars, this has absolutely nothing to do with their consciousnesses. Citlali crafted the Tzitzimimeh using the bones of small animals that had died of natural causes. The lingering remnants of their spirits were reawakened by the dolls' bodies, which is what bestowed consciousness upon them. As such, this pair of clingy little critters bring with them no curses whatsoever — on the contrary, they bring emotional comfort in spades, akin to the kind one might find in a pet.\nFunnily enough, Citlali very rarely lets anyone know this. Though, given that she uses them as weapons, it's probably for the best that they seem a bit on the scarier side."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Even after becoming a great shaman, Citlali had still never received an Ancient Name.\nThough it was undeniable that she had become a veritable pillar of the Masters of the Night-Wind, and that her assistance was indispensable for the successful undertaking of many of Natlan's most important affairs, no hero's name came to resonate with her.\nPeople felt that this was a great shame, but there was nothing they could do for her. After reaching the age of seventy, Citlali grew reluctant to leave her home, seeming to have lost all passion for the world and only attending to matters in which her direct involvement was absolutely and unequivocally required. Naturally, such an air of detached indifference did not win her the favor of any heroic spirits.\nHowever, in places most people were not even aware of, Citlali retained a great enthusiasm for one thing: weaving the special scrolls upon which major historical events were recorded.\nEach of these scrolls required decades to complete, an entire generation swept away by the time they were done. Yet always she persisted, maybe because it was her old friend's last wish, or maybe because doing so allowed her to avoid the company of others. She neither expected to see this task through to its end, nor did she seek any response to her efforts.\n\"Just a way to pass the time,\" she told herself.\nAnd that was why, on the night a certain ancestor called out to her from the Night-Wind's mist-shrouded hues, Citlali was rather stumped.\n\"Do you believe I will inherit your Ancient Name?\"\n\"Sooner or later, you will indeed. You just do not yet know the reason why.\"\n\"But first, please, accept my message. When the time comes, it will hold the answer to your doubts.\"\nThe colors of the Night-Wind shifted, communicating in a language that only Citlali could decipher.\n\"We are like birds, soaring through the horizons of time.\"\n\"I linger in verdant forests, skim across azure waves, soar over fiery magma, gather golden ore, and chase after pink-plumed flower-feathers.\"\n\"When twilight falls, my graffiti adorns the night sky.\"\n\"All that I depict shall be gifts, given to the world of the deceased.\"\n\"This was once my name, and it will be yours as well.\"\n\"Ukumbuko, 'Memory.'\"\nWith the message complete, the Night-Wind that was shrouded in mist drifted toward the scroll that Citlali had just finished dyeing, transforming into a mysterious iridescence that illuminated the entire scene.\nAs she gazed upon the woven scroll, Citlali suddenly recalled once more the night her old friend passed away.\n\"The mission she left me... It was once yours too, was it not?\"\n\"It was indeed. But for you, it seems to be more than just a mission.\"\nFollowing a trail of shimmering colors, Citlali opened up her hand. As if from nowhere, a glimmering Vision had somehow appeared in her palm.\n\"It appears to be your 'wish' as well.\""
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 210701,
+      "Name": "Whispers of Stars and Smoke",
+      "Description": "Citlali's outfit. When at home, Citlali will sometimes change into attire brimming with girlish charm. At such times, anyone troubling her with official duties has promptly come under heavy attack. Thus, this outfit has become a baleful thing, a subject of fearful rumor that all give a wide berth.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_CitlaliCostumeXia",
+      "SideIcon": "UI_AvatarIcon_Side_CitlaliCostumeXia"
+    },
+    {
+      "Id": 210700,
+      "Name": "Dawnseer",
+      "Description": "Citlali's outfit. Shamans are seers, diviners of forgotten past and untold future. In their world, the eye holds a special symbolic meaning. This is why Citlali's robe, worn half-draped around her waist, is adorned with the \"Eye of Revelation\" — a pattern that encapsulates both its bearer's identity and her aesthetic tastes.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104164,
+    113071,
+    101249,
+    112103,
+    104352,
+    113062
+  ],
+  "NameCard": {
+    "Name": "Citlali: Opalstar",
+    "Description": "Namecard style.\nThe black one is akin to obsidian, and is thus called \"Itzpapa.\" The white one is white as a star, and has thus been named \"Citlalin.\"",
+    "Icon": "UI_NameCardIcon_Citlali",
+    "PicturePrefix": "UI_NameCardPic_Citlali"
+  }
+}

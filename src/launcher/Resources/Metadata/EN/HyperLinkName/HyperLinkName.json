@@ -1,0 +1,507 @@
+[
+  {
+    "Id": 210101,
+    "Name": "<color=#0075de>Tidal Shock</color>",
+    "Description": "Unleashed when a character triggers <color=#f39001>Vaporize</color> on an opponent, dealing <color=#0075de>Hydro DMG</color>"
+  },
+  {
+    "Id": 210102,
+    "Name": "<color=#ef5534>Blazing Explosion</color>",
+    "Description": "Unleashed when a character triggers <color=#f39001>Vaporize</color> on an opponent, dealing <color=#ef5534>Pyro DMG</color>"
+  },
+  {
+    "Id": 210201,
+    "Name": "<color=#7bb100>Lingering Seed</color>",
+    "Description": "Each Dendro Core created will create 1 Lingering Seed around the current active character (Max <color=#f39001>4</color> simultaneously): They are consumed after touching an opponent, dealing <color=#7bb100>Dendro DMG</color> to that opponent"
+  },
+  {
+    "Id": 210301,
+    "Name": "<color=#ef5534>Wildfire Wave</color>",
+    "Description": "A tally will be kept on each opponent when <color=#f39001>Burning reaction</color> DMG is inflicted on them. When any tally reaches <color=#f39001>6</color>, the count will be reset, dealing <color=#ef5534>AoE Pyro DMG</color>"
+  },
+  {
+    "Id": 210302,
+    "Name": "<color=#7bb100>Combustion Core</color>",
+    "Description": "Triggers after a character's Dendro DMG hits a <color=#f39001>Burning</color> opponent, deals <color=#7bb100>Dendro DMG</color>"
+  },
+  {
+    "Id": 210401,
+    "Name": "<color=#f39001>Pyro Crystal's Boon</color>",
+    "Description": "All party members gain <color=#f39001>50%</color> Pyro and Geo DMG Bonus. Additionally, you will obtain nearby Crystallize shards every <color=#f39001>4</color>s"
+  },
+  {
+    "Id": 210402,
+    "Name": "<color=#ef5534>Ignition Wave</color>",
+    "Description": "Unleashed at the character's position every <color=#f39001>6</color>s while <color=#f39001>Pyro Crystal's Boon</color> is active, dealing <color=#ef5534>AoE Pyro DMG</color>"
+  },
+  {
+    "Id": 210403,
+    "Name": "<color=#e09800>Stoneshard Strike</color>",
+    "Description": "Unleashed at the character's position every <color=#f39001>4</color>s while <color=#f39001>Pyro Crystal's Boon</color> is active, dealing <color=#e09800>AoE Geo DMG</color>"
+  },
+  {
+    "Id": 210501,
+    "Name": "<color=#f39001>Electro Crystal's Boon</color>",
+    "Description": "All party members gain <color=#f39001>50%</color> Electro and Geo DMG Bonus. Additionally, you will obtain nearby Crystallize shards every <color=#f39001>4</color>s"
+  },
+  {
+    "Id": 210502,
+    "Name": "<color=#e09800>Roaring Rockbreaker</color>",
+    "Description": "Descends on the opponent's position after characters hit an opponent with an attack while <color=#f39001>Electro Crystal's Boon</color> is active, dealing <color=#e09800>Geo DMG</color>"
+  },
+  {
+    "Id": 210503,
+    "Name": "<color=#e09800>Roaring Rockbreaker</color>",
+    "Description": "Descends on a nearby opponent after characters pick up <color=#f39001>{0}</color> Elemental Shards produced by the <color=#f39001>Electro Crystallize reaction</color>, dealing <color=#e09800>Geo DMG</color>"
+  },
+  {
+    "Id": 210601,
+    "Name": "<color=#f39001>Embrittle</color>",
+    "Description": "Decreases opponents' Pyro and Electro RES by <color=#f39001>5.5%</color>, max 4 stack(s)"
+  },
+  {
+    "Id": 210602,
+    "Name": "<color=#ef5534>Explosive Orb</color>",
+    "Description": "After dealing Electro DMG to an Embrittled opponent, deal <color=#ef5534>Pyro DMG</color> to <color=#f39001>every</color> Embrittled opponent on the field"
+  },
+  {
+    "Id": 210603,
+    "Name": "<color=#b863ee>Thunderstrikes</color>",
+    "Description": "After dealing Pyro DMG to an Embrittled opponent, deal <color=#b863ee>Electro DMG</color> to <color=#f39001>every</color> Embrittled opponent on the field"
+  },
+  {
+    "Id": 210701,
+    "Name": "<color=#7bb100>Vigorous Nexus</color>",
+    "Description": "When characters trigger the Quicken, Aggravate, or Spread reactions on an opponent, fires off a projectile at them that explodes on impact, dealing <color=#7bb100>AoE Dendro DMG</color>"
+  },
+  {
+    "Id": 210702,
+    "Name": "<color=#b863ee>Teeming Thunder</color>",
+    "Description": "Descends after a character deals Electro or Dendro DMG to a Quickened opponent, dealing <color=#b863ee>Electro DMG</color>"
+  },
+  {
+    "Id": 210901,
+    "Name": "<color=#f39001>Windblessing: Hydro</color>",
+    "Description": "The DMG dealt by characters triggering the Swirl reaction increases by <color=#f39001>80%</color> and their Max HP increases by <color=#f39001>8%</color>"
+  },
+  {
+    "Id": 210902,
+    "Name": "<color=#0075de>Healing Hydroball</color>",
+    "Description": "Records the amount of HP healed by characters, and explodes when its duration ends, dealing <color=#0075de>AoE Hydro DMG</color> to nearby opponents based on the amount of healing recorded and the number of stacks of <color=#f39001>Windblessing: Hydro</color>"
+  },
+  {
+    "Id": 210903,
+    "Name": "<color=#0075de>Waterfall Maelstrom</color>",
+    "Description": "Pulls in nearby opponents and deals <color=#0075de>AoE Hydro DMG</color> to them based on the number of stacks of <color=#f39001>Windblessing: Hydro</color>"
+  },
+  {
+    "Id": 211001,
+    "Name": "<color=#f39001>Windblessing: Electro</color>",
+    "Description": "The DMG dealt by characters triggering the Swirl reaction increases by <color=#f39001>80%</color> and each time they receive <color=#f39001>Windblessing: Electro</color>, all party members gain <color=#f39001>2</color> Elemental Energy"
+  },
+  {
+    "Id": 211002,
+    "Name": "<color=#b863ee>Razorflash Thunderblade</color>",
+    "Description": "When characters use an Elemental Burst, gain <color=#f39001>Razorflash Mark</color>. When the active character's attacks hit opponents, consume the Razorflash Mark to unleash a <color=#b863ee>Razorflash Thunderblade</color>, dealing <color=#b863ee>Electro DMG</color> to all opponents in its path based on the number of <color=#f39001>Windblessing: Electro</color> stacks"
+  },
+  {
+    "Id": 211003,
+    "Name": "<color=#b863ee>Boltleap Thunderstrike</color>",
+    "Description": "While <color=#f39001>Windblessing: Electro</color> is active, when a Plunging Attack hits an opponent, deals <color=#b863ee>AoE Electro DMG</color> based on the number of Windblessing: Electro stacks"
+  },
+  {
+    "Id": 211101,
+    "Name": "<color=#f39001>Electrosurge</color>",
+    "Description": "DMG dealt by <color=#f39001>Electro-Charged reactions</color> triggered by party members is increased by <color=#f39001>250%</color>, while party members' <color=#f39001>Lunar-Charged</color> DMG is increased by <color=#f39001>70%</color>"
+  },
+  {
+    "Id": 211102,
+    "Name": "<color=#b863ee>Driftthunder Blitzcore</color>",
+    "Description": "While Electrosurge is active, follows the active character, firing 3 Electro bullets that deal <color=#b863ee>Electro DMG</color> at opponents hit by the character"
+  },
+  {
+    "Id": 211103,
+    "Name": "<color=#f39001>Thundercloud</color>",
+    "Description": "While Electrosurge is active, randomly uses one of the following attacks at intervals of <color=#f39001>2</color>s:\n1. <color=#b863ee>Thundercloud Strike</color>: Deals <color=#b863ee>Electro DMG</color> to opponents within the AoE, and the active character gains <color=#f39001>2</color> Elemental Energy;\n2. <color=#0075de>Thundercloud Rainstorm</color>: Deals <color=#0075de>Hydro DMG</color> to opponents within the AoE, and the active character is healed for <color=#f39001>5%</color> HP"
+  },
+  {
+    "Id": 211201,
+    "Name": "<color=#f39001>Pyro Crystal's Boon</color>",
+    "Description": "All party members gain <color=#f39001>70%</color> Pyro and Geo DMG Bonus. Additionally, you will obtain nearby Crystallize shards every <color=#f39001>4</color>s"
+  },
+  {
+    "Id": 211202,
+    "Name": "<color=#e09800>Stoneshard Strike</color>",
+    "Description": "Unleashed at the character's position periodically while <color=#f39001>Pyro Crystal's Boon</color> is active, dealing <color=#e09800>AoE Geo DMG</color>"
+  },
+  {
+    "Id": 211203,
+    "Name": "<color=#e09800>Roaring Rockbreaker</color>",
+    "Description": "Descends on the opponent's position when characters hit them with a Normal, Charged, or Plunging Attack while <color=#f39001>Pyro Crystal's Boon</color> is active, dealing <color=#e09800>Geo DMG</color>"
+  },
+  {
+    "Id": 211301,
+    "Name": "<color=#f39001>Cryo Crystal's Boon</color>",
+    "Description": "All party members gain <color=#f39001>70%</color> Cryo and Geo DMG Bonus. Additionally, you will obtain nearby Crystallize shards every <color=#f39001>4</color>s"
+  },
+  {
+    "Id": 211302,
+    "Name": "<color=#e09800>Stonecrystal Strikes</color>",
+    "Description": "Unleashed at the character's position periodically while <color=#f39001>Cryo Crystal's Boon</color> is active, dealing <color=#e09800>AoE Geo DMG</color>"
+  },
+  {
+    "Id": 211303,
+    "Name": "<color=#e09800>Iceshard Stoneburst</color>",
+    "Description": "Descends on the opponent's position when Cryo or Geo characters in your party deal a CRIT Hit while <color=#f39001>Cryo Crystal's Boon</color> is active, dealing <color=#e09800>Geo DMG</color>"
+  },
+  {
+    "Id": 211401,
+    "Name": "<color=#2bb7d5>Frostfall</color>",
+    "Description": "Unleashed when an active <color=#ef5534>Pyro</color> character triggers the Melt reaction, dealing <color=#2bb7d5>Cryo DMG</color>"
+  },
+  {
+    "Id": 211402,
+    "Name": "<color=#ef5534>Flamespire</color>",
+    "Description": "Unleashed when an active <color=#2bb7d5>Cryo</color> character triggers the Melt reaction, dealing <color=#ef5534>Pyro DMG</color>"
+  },
+  {
+    "Id": 211403,
+    "Name": "<color=#f39001>Significant Thermocline</color>",
+    "Description": "Characters deal <color=#f39001>30%</color> increased Melt DMG"
+  },
+  {
+    "Id": 211501,
+    "Name": "<color=#f39001>Windblessing: Pyro</color>",
+    "Description": "The DMG dealt by characters triggering the Swirl reaction increases by <color=#f39001>80%</color> and their ATK increases by <color=#f39001>9%</color>."
+  },
+  {
+    "Id": 211502,
+    "Name": "<color=#ef5534>Galeblaze</color>",
+    "Description": "Unleashed when an active character deals DMG to an opponent with an attack, consuming their HP and dealing <color=#ef5534>AoE Pyro DMG</color> based on the number of Windblessing: Pyro stacks"
+  },
+  {
+    "Id": 211503,
+    "Name": "<color=#f39001>Firestorm</color>",
+    "Description": "Unleashed when <color=#f39001>Pyro or Anemo</color> party members take the field, dealing AoE DMG of that character's <color=#f39001>Elemental Type</color> based on the number of Windblessing: Pyro stacks"
+  },
+  {
+    "Id": 211601,
+    "Name": "<color=#f39001>Stinging Chill</color>",
+    "Description": "All party members' Cryo and Hydro CRIT DMG is increased by <color=#f39001>40%</color>"
+  },
+  {
+    "Id": 211602,
+    "Name": "<color=#0075de>Coldstream Wave</color>",
+    "Description": "Unleashed when an active <color=#2bb7d5>Cryo</color> character triggers Frozen on an opponent, dealing <color=#0075de>AoE Hydro DMG</color>"
+  },
+  {
+    "Id": 211603,
+    "Name": "<color=#2bb7d5>Frigidfloe Wave</color>",
+    "Description": "Unleashed when an active <color=#0075de>Hydro</color> character triggers Frozen on an opponent, dealing <color=#2bb7d5>AoE Cryo DMG</color>"
+  },
+  {
+    "Id": 211604,
+    "Name": "<color=#f39001>Rupturing Rime</color>",
+    "Description": "Opponents' Hydro and Cryo RES is decreased by <color=#f39001>8%</color>, max <color=#f39001>3</color> stack(s)"
+  },
+  {
+    "Id": 211701,
+    "Name": "<color=#f39001>Yielding</color>",
+    "Description": "Opponents' Cryo and Electro RES is decreased by <color=#f39001>5%</color>, and Physical RES is decreased by <color=#f39001>10%</color>, max <color=#f39001>6</color> stack(s)"
+  },
+  {
+    "Id": 211702,
+    "Name": "<color=#f39001>Surging Shock</color>",
+    "Description": "Unleashed after characters deal <color=#f39001>Physical DMG</color> to an opponent affected by <color=#f39001>Yielding</color>, dealing Physical DMG at most once every <color=#f39001>3</color>s"
+  },
+  {
+    "Id": 211801,
+    "Name": "<color=#f39001>Hydro Crystal's Boon</color>",
+    "Description": "All party members gain <color=#f39001>70%</color> Hydro and Geo DMG Bonus, and Lunar-Crystallize DMG is increased by <color=#f39001>75%</color>. Additionally, you will obtain nearby Crystallize shards every <color=#f39001>4</color>s."
+  },
+  {
+    "Id": 211802,
+    "Name": "<color=#e09800>Stoneshatter Strike</color>",
+    "Description": "Unleashed at the character's position periodically while <color=#f39001>Hydro Crystal's Boon</color> is active, dealing <color=#e09800>AoE Geo DMG</color>"
+  },
+  {
+    "Id": 211803,
+    "Name": "<color=#e09800>Stone Stream</color>",
+    "Description": "Descends on the opponent's position when Hydro or Geo characters in your party are healed while <color=#f39001>Hydro Crystal's Boon</color> is active, dealing <color=#e09800>Geo DMG</color>"
+  },
+  {
+    "Id": 211804,
+    "Name": "<color=#f39001>Frost-Twined Thorn</color>",
+    "Description": "Deal one instance of <color=#f39001>Cryo and Dendro AoE DMG</color> to each nearby enemy every <color=#f39001>2</color>s. A maximum of 2 Frost-Twined Thorns can exist on the field at once"
+  },
+  {
+    "Id": 211805,
+    "Name": "<color=#b863ee>Fulgurous Thorn</color>",
+    "Description": "After an Electro attack from a character hits an opponent within the AoE of a <color=#f39001>Frost-Twined Thorn</color>, the <color=#f39001>Frost-Twined Thorn</color> will transform into a Fulgurous Thorn that lasts for <color=#f39001>10</color>s. Its attack frequency will be increased to <color=#f39001>once</color> per second, and it will change to dealing <color=#f39001>1.5</color>× the AoE Electro DMG"
+  },
+  {
+    "Id": 211806,
+    "Name": "<color=#f39001>Magnetizing Thorn</color>",
+    "Description": "Does not attack, but rather causes nearby enemies to take more <color=#f39001>Cryo, Dendro, Electro, and Physical DMG</color> dealt by characters. The aforementioned buff is strengthened by <color=#f39001>45%</color> for every Magnetizing Thorn on the field, up to a maximum of <color=#f39001>90%</color>"
+  },
+  {
+    "Id": 211901,
+    "Name": "<color=#f39001>Windblessing: Cryo</color>",
+    "Description": "The DMG dealt by characters triggering the Swirl reaction increases by <color=#f39001>80%</color> and their CRIT DMG increases by <color=#f39001>16%</color>"
+  },
+  {
+    "Id": 211902,
+    "Name": "<color=#2bb7d5>Coldrime</color>",
+    "Description": "Applied when characters hit opponents with their attacks while <color=#f39001>Windblessing: Cryo</color> is active. Opponents will periodically take <color=#2bb7d5>Cryo DMG</color> based on the number of <color=#f39001>Windblessing: Cryo</color> stacks"
+  },
+  {
+    "Id": 211903,
+    "Name": "<color=#19c78e>Icemist</color>",
+    "Description": "Released when characters sprint while <color=#f39001>Windblessing: Cryo</color> is active, drawing in nearby opponents and dealing <color=#19c78e>Anemo DMG</color> based on the number of <color=#f39001>Windblessing: Cryo</color> stacks"
+  },
+  {
+    "Id": 11120001,
+    "Name": "Cold Storage Mode",
+    "Description": "<color=#FFD780FF>Tap</color>\nActivates her All-Spectrum Multi-Use Cooking Mek in its Cold Storage mode and deals <color=#99FFFFFF>AoE Cryo DMG</color> to nearby opponents.\n\n<color=#FFD780FF>Cooking Mek: Cold Storage Mode</color>\nFollows the current active character and fires Frosty Parfaits at nearby opponents at intervals, dealing <color=#99FFFFFF>Cryo DMG</color>."
+  },
+  {
+    "Id": 11120002,
+    "Name": "Off-the-Cuff Cookery Mode",
+    "Description": "<color=#FFD780FF>Cooking Mek: Off-the-Cuff Cookery Mode</color>\n· Places the Cooking Mek on the field. The Cooking Mek can absorb elemental attacks. When the absorbed elemental energy hits a certain limit, Escoffier can convert the ingredients placed within it into wonderful food.\n· Escoffier needs time to purchase new ingredients, so she can only make a certain number of dishes like this each week. The number of dishes Escoffier can make resets every Monday at 4:00 AM."
+  },
+  {
+    "Id": 11130001,
+    "Name": "Supporting Fire",
+    "Description": "In the Nightsoul's Blessing State, Ifa's Normal Attacks will turn into Supporting Fire.\n<color=#FFD780FF>Tap</color>\nFires a Tonicshot.\n<color=#FFD780FF>Hold</color>\nContinuously fires Tonicshots.\n<color=#FFD780FF>Tonicshot</color>\nDeals Nightsoul-aligned <color=#80FFD7FF>Anemo DMG</color>, and will heal all nearby party members based on Ifa's Elemental Mastery upon hitting an opponent."
+  },
+  {
+    "Id": 11130002,
+    "Name": "Rescue Essentials",
+    "Description": "Max 150 points. Each Rescue Essentials point Ifa has will increase the Swirl and Electro-Charged DMG dealt by nearby party members by 1.5%, and their Lunar-Charged DMG dealt by 0.2%. These points will be cleared when his Nightsoul's Blessing state ends."
+  },
+  {
+    "Id": 11130003,
+    "Name": "Nightsoul's Blessing: Ifa",
+    "Description": "Continuously consumes Nightsoul points. This state will end when Ifa runs out of Nightsoul points or if he uses this skill again. His Nightsoul's Blessing state has the following properties:\n· Hovers with Cacucu's help, increasing Ifa's Movement SPD and interruption resistance. In this state, Ifa will continuously consume Nightsoul points to maintain this hovering state. If he sprints or accelerates, he will consume additional points.\n· When he uses Normal Attacks, he will use different kinds of Supporting Fire depending on whether you Tap or Hold."
+  },
+  {
+    "Id": 11130004,
+    "Name": "Sedation Mark",
+    "Description": "This effect will explode after a short delay and disappear, dealing AoE DMG aligned with the corresponding element. The Therapeutic Sedative can apply Sedation Marks to a maximum of 4 hit opponents. A single opponent cannot receive Marks of different elements simultaneously."
+  },
+  {
+    "Id": 11130005,
+    "Name": "Serpent's Subtlety",
+    "Description": "Skirk can consume Serpent's Subtlety to maintain her Seven-Phase Flash mode or to use her Elemental Burst, Havoc: Ruin.\n\nSkirk can gain Serpent's Subtlety points in the following ways:\n· After using her Elemental Skill, Havoc: Warp.\n· After triggering the effect of her Ascension Talent, Reason Beyond Reason, and absorbing Void Rifts.\n\nWhen Skirk leaves the field while in Seven-Phase Flash mode or when Seven-Phase Flash ends, her Serpent's Subtlety points will be removed."
+  },
+  {
+    "Id": 11130006,
+    "Name": "Seven-Phase Flash",
+    "Description": "Skirk will switch to this mode for a fixed time when using the Elemental Skill <color=#FFD780FF>Havoc: Warp</color>. This mode has the following properties:\n· Continuously consumes Serpent's Subtlety.\n· Increases Normal and Charged Attack AoE and Skirk's interruption resistance.\n· Normal, Charged, and Plunging Attacks are converted to <color=#99FFFFFF>Cryo DMG</color> that cannot be overridden by other Elemental infusions.\n· Her Elemental Burst, <color=#FFD780FF>Havoc: Ruin</color> is converted to the special Elemental Burst <color=#FFD780FF>Havoc: Extinction</color>.\n· Skirk can move on water when she Sprints.\n· Skirk will exit this mode when Serpent's Subtlety is fully depleted or its duration ends. Then, the Elemental Skill will go on cooldown."
+  },
+  {
+    "Id": 11130007,
+    "Name": "Reason Beyond Reason",
+    "Description": "When nearby party members trigger Frozen, Superconduct, Cryo Swirl, or Cryo Crystallize reactions against opponents, a Void Rift will be created near this opponent. This effect can be triggered once every 2.5s. A maximum of 3 Void Rifts created by Skirk herself can exist on the field at once.\n\nSkirk can use the following methods to absorb nearby Void Rifts:\n· When she hits an opponent with a Charged Attack in her Seven-Phase Flash mode.\n· When she uses the special Elemental Burst <color=#FFD780FF>Havoc: Extinction</color> while in Seven-Phase Flash mode.\n· When she Holds her Elemental Skill <color=#FFD780FF>Havoc: Warp</color> to engage in rapid movement.\n\nEach Rift absorbed will grant her 8 Serpent's Subtlety points."
+  },
+  {
+    "Id": 11130008,
+    "Name": "Return to Oblivion",
+    "Description": "When nearby <color=#80C0FFFF>Hydro</color> party members' <color=#80C0FFFF>Hydro</color> attacks hit opponents, or when nearby <color=#99FFFFFF>Cryo</color> party members apart from Skirk hit opponents with <color=#99FFFFFF>Cryo</color> attacks, Skirk will gain the \"Death's Crossing\" effect for 20s. Max 3 stacks, each stack's duration is counted independently.\nEach character can grant Skirk at most 1 \"Death's Crossing\" stack by this means.\nEach \"Death's Crossing\" stack increases the Normal Attack DMG dealt by Skirk in Seven-Phase Flash mode to 110%/120%/170% of its original DMG and the DMG dealt when using her Elemental Burst <color=#FFD780FF>Havoc: Ruin</color> to 105%/115%/160% of its original DMG."
+  },
+  {
+    "Id": 11130009,
+    "Name": "Sacramental Shower",
+    "Description": "When opponents or nearby party members touch the Sacramental Shower, different effects will occur depending on the one who touches it:\nIf an opponent touches the Shower, it will explode and deal <color=#80C0FFFF>AoE Hydro DMG</color> to nearby opponents.\nIf a nearby party member touches it, it will bounce the one who touches it high in the air.\n\nOnly 1 Sacramental Shower summoned by Dahlia himself can be on the field at once."
+  },
+  {
+    "Id": 11130010,
+    "Name": "Favonian Favor",
+    "Description": "Dahlia will apply this effect to his own party members when unleashing his Elemental Burst <color=#FFD780FF>Radiant Psalter</color>.\nWhile this effect is active, 1 Benison stack may be consumed to summon a new Shield of Sacred Favor when the existing Shield expires or is broken via DMG."
+  },
+  {
+    "Id": 11130011,
+    "Name": "Benison",
+    "Description": "Dahlia can obtain Benison via the following methods:\n· He will gain X Benison stacks when his own active party member hits opponents 4 times with Normal Attacks while affected by Favonian Favor.\n· After triggering the effect of his Ascension Talent, \"The Wind's Gentle Grace.\"\n\nDahlia can gain a maximum of X Benison stacks per Favonian Favor duration."
+  },
+  {
+    "Id": 11160001,
+    "Name": "Birgitta",
+    "Description": "Ineffa's assistant and companion in battle, she can be summoned to the battlefield via Elemental Skill or Elemental Burst.\nIf there are opponents nearby, Birgitta will quickly move close to an opponent and unleash Discharge attacks every 2s, dealing <color=#FFACFFFF>AoE Electro DMG</color>.\nOnly one Birgitta that has been summoned by Ineffa herself can exist at any one time.\n\nAdditionally, in Nod-Krai, it seems you'll be able to change Birgitta's appearance through certain means..."
+  },
+  {
+    "Id": 11190001,
+    "Name": "Frostgrove Sanctuary",
+    "Description": "A magical array that protects the Moonchanters and can be summoned by using the Elemental Skill <color=#FFD780FF>Runo: Dawnless Rest of Karsikko</color>.\nThe Frostgrove Sanctuary will follow the active character, dealing a single instance of <color=#99FF88FF>AoE Dendro DMG</color> to opponents within the array every 2s. This DMG is considered Elemental Skill DMG."
+  },
+  {
+    "Id": 11190002,
+    "Name": "Moon Song",
+    "Description": "A melody used to weave together hymns. When an Elemental Burst is used, or for a period of time after an Elemental Burst has been used, it can be converted into Pale Hymn stacks that increase the DMG from Bloom, Hyperbloom, Burgeon, and Lunar-Bloom reactions.\nWhen Lauma consumes Verdant Dew to perform the Hold version of her Elemental Skill <color=#FFD780FF>Runo: Dawnless Rest of Karsikko</color>, each Verdant Dew consumed will provide Lauma with 1 stack of Moon Song."
+  },
+  {
+    "Id": 11190003,
+    "Name": "Pale Hymn",
+    "Description": "A hymn passed down by generations of Moonchanters that increases the DMG dealt by Bloom, Hyperbloom, Burgeon, and Lunar-Bloom reactions.\n\nLauma can gain Pale Hymn stacks in the following ways:\n· When using her Elemental Burst <color=#FFD780FF>Runo: All Hearts Become the Beating Moon</color>.\n· When consuming Moon Song stacks due to using her Elemental Burst <color=#FFD780FF>Runo: All Hearts Become the Beating Moon</color>.\n· When the Frostgrove Sanctuary triggers the effect of her Constellation <color=#FFD780FF>\"I Offer Blood and Tears to the Moonlight\"</color>.\n\nWhen party members deal Bloom, Hyperbloom, Burgeon, or Lunar-Bloom DMG, 1 stack of Pale Hymn will be consumed and the DMG dealt will be increased based on Lauma's Elemental Mastery. If this DMG hits multiple opponents at once, then multiple stacks of Pale Hymn will be consumed, depending on how many opponents are hit.\nThe duration for each stack of Pale Hymn is counted independently."
+  },
+  {
+    "Id": 11190004,
+    "Name": "Dusktide Vigil",
+    "Description": "Bloom, Hyperbloom, and Burgeon DMG dealt by party members can score CRIT Hits, with CRIT Rate fixed at {PARAM#P1192101|1S100}%, and CRIT DMG fixed at {PARAM#P1192101|2S100}%. CRIT Rate from this effect stacks with CRIT Rate from similar effects that allow these Elemental Reactions to CRIT."
+  },
+  {
+    "Id": 11190005,
+    "Name": "Moonlight Prayer",
+    "Description": "Party members' Lunar-Bloom DMG CRIT Rate +{PARAM#P1192101|3S100}%, CRIT DMG +{PARAM#P1192101|4S100}%"
+  },
+  {
+    "Id": 11190007,
+    "Name": "Elevation",
+    "Description": "Special DMG Boost effect. It is calculated independently of other DMG Boost effects."
+  },
+  {
+    "Id": 11190008,
+    "Name": "Verdant Dew",
+    "Description": "When party members trigger Lunar-Bloom reactions, the party will receive such a resource.\nYour party will receive 1 Verdant Dew every 2.5s for 2.5s after triggering a Lunar-Bloom reaction. Your party can have up to 3 Verdant Dew. If you trigger another Lunar-Bloom reaction during this time, the duration of this effect will be reset."
+  },
+  {
+    "Id": 11200001,
+    "Name": "Thunderous Symphony",
+    "Description": "Consume less Elemental Energy to unleash a special Elemental Burst. Flins deals a single instance of <color=#FFACFFFF>AoE Electro DMG</color>. This DMG is considered Lunar-Charged DMG.\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: If there are thunderclouds nearby, Flins will deal 1 additional instance of <color=#FFACFFFF>AoE Electro DMG</color>. This DMG is considered Lunar-Charged DMG."
+  },
+  {
+    "Id": 11220001,
+    "Name": "Shadow Dance",
+    "Description": "After using the Elemental Skill <color=#FFD780FF>Senet Strategy: Dance of a Thousand Nights</color>, Nefer will enter this state.\nWhile in the Shadow Dance state, if you have at least 1 Verdant Dew, Nefer's Charged Attacks will be replaced with the special Charged Attack Phantasm Performance.\nNefer will exit the Shadow Dance state when she unleashes {PARAM#P1223201|3S1} Phantasm Performance(s) or the state's duration ends."
+  },
+  {
+    "Id": 11220002,
+    "Name": "Phantasm Performance",
+    "Description": "When in the Shadow Dance state caused by her Elemental Skill <color=#FFD780FF>Senet Strategy: Dance of a Thousand Nights</color>, if you have at least 1 Verdant Dew, Nefer's Charged Attacks will be replaced with the special Charged Attack Phantasm Performance, which will not consume Stamina.\nNefer summons shades of herself to perform Coordinated Attacks against enemies. Nefer and the shades will deal 2 and 3 stages of <color=#99FF88FF>AoE Dendro DMG</color> respectively. DMG dealt by the shades is considered Lunar-Bloom DMG. 1 Verdant Dew will be consumed the first time shades are summoned after every Phantasm Performance."
+  },
+  {
+    "Id": 11220003,
+    "Name": "Veil of Falsehood",
+    "Description": "After absorbing Seeds of Deceit via the Ascension Talent A Wager of Moonlight, Nefer gains this effect, thereby increasing the DMG dealt by her Phantasm Performance.\nEach stack of Veil of Falsehood increases the DMG dealt by Nefer's Phantasm Performance by {PARAM#P1222101|6S100}%. The initial maximum number of stacks is {PARAM#P1222101|1S1}, with each stack lasting for {PARAM#P1222101|2S1}s (each stack's duration is counted independently)."
+  },
+  {
+    "Id": 11230001,
+    "Name": "Essential Transmutation",
+    "Description": "After unleashing the Elemental Skill <color=#FFD780FF>Binary Form: Convergence and Division</color>, Durin gains this effect for 6s.\nWhile the effect is active, press the Elemental Skill button to enter the <color=#FFD780FF>Confirmation of Purity</color> state, or press the Normal Attack button to enter the <color=#FFD780FF>Denial of Darkness</color> state.\nDurin will gain different buffs and can unleash different Elemental Bursts while in these states."
+  },
+  {
+    "Id": 11240001,
+    "Name": "Purr-loined Treasure Flask",
+    "Description": "A small elemental vessel that Jahoda retrieves after casting her Elemental Skill <color=#FFD780FF>Savvy Strategy: Splitting the Spoils</color>.\nWhile Jahoda is in the Shadow Pursuit state, if nearby opponents are affected by <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#FFACFFFF>Electro</color>, or <color=#99FFFFFF>Cryo</color>, the Purr-loined Treasure Flask will convert to that element and begin filling up. The order of priority that determines which element will be converted to is: <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#FFACFFFF>Electro</color>, then <color=#99FFFFFF>Cryo</color>. After each use of her Elemental Skill, the Purr-loined Treasure Flask can undergo one such conversion.\nWhen the Purr-loined Treasure Flask is full, Jahoda immediately drains it, exiting the Shadow Pursuit state and dealing a single instance of <color=#80FFD7FF>Anemo DMG</color> to nearby opponents.\nEach time the Elemental Skill is cast, Jahoda takes out a brand-new Purr-loined Treasure Flask.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: When the <color=#FFD780FF>Purr-loined Treasure Flask</color> becomes full, Jahoda will not immediately discharge it. Instead, for a short duration, she steadily consumes the stored element inside and periodically fires <color=#FFD780FF>Fluffy Meowballs</color> at nearby opponents, dealing DMG of the corresponding element stored in the <color=#FFD780FF>Purr-loined Treasure Flask</color>."
+  },
+  {
+    "Id": 11240002,
+    "Name": "Purrsonal Coordinated Assistance Robots",
+    "Description": "One of the gadgets that Jahoda — a former treasure hunter — carries around with her. It is deployed upon using her Elemental Burst <color=#FFD780FF>Hidden Aces: Seven Tools of the Hunter</color>.\nPurrsonal Coordinated Assistance Robots continuously restore HP to your active character. If the healed character's HP is above 70%, they also restore HP to the nearby party member with the lowest HP.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: If nearby opponents are affected by <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#FFACFFFF>Electro</color>, or <color=#99FFFFFF>Cryo</color>, Purrsonal Coordinated Assistance Robots will convert to that element. The order of priority that determines which element will be converted to is: <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#FFACFFFF>Electro</color>, then <color=#99FFFFFF>Cryo</color>. After each deployment, a Purrsonal Coordinated Assistance Robot can undergo one such conversion. After converting, the Purrsonal Coordinated Assistance Robot will periodically attack up to 3 nearby opponents, dealing damage of the corresponding element."
+  },
+  {
+    "Id": 10050001,
+    "Name": "Additional Buff Effects",
+    "Description": "The Traveler gains an attribute bonus for every element they have resonated with: \n<color=#80FFD7FF>Anemo</color>: CRIT Rate is increased by 10%,\n<color=#FFE699FF>Geo</color>: DEF is increased by 20%,\n<color=#FFACFFFF>Electro</color>: Energy Recharge is increased by 20%, \n<color=#99FF88FF>Dendro</color>: Elemental Mastery is increased by 60,\n<color=#80C0FFFF>Hydro</color>: HP is increased by 20%,\n<color=#FF9999FF>Pyro</color>: ATK is increased by 20%,\n<color=#99FFFFFF>Cryo</color>: CRIT DMG is increased by 20%."
+  },
+  {
+    "Id": 11250001,
+    "Name": "Gravity Ripple",
+    "Description": "After unleashing Elemental Skill <color=#FFD780FF>Eternal Tides</color>, Columbina will summon <color=#FFD780FF>Gravity Ripple</color>.\nGravity Ripple will follow the current active character on the field, while continuously dealing <color=#80C0FFFF>AoE Hydro DMG</color> to surrounding opponents.\n\nAdditionally, while Gravity Ripple is on the field, and nearby party members trigger Lunar reactions or inflict Lunar Reaction DMG, Columbina will gain the New Moon's Omen effect for 2s, continuously accumulating <color=#FFD780FF>Gravity</color>. 20 Gravity can be accumulated every 2s.\nYou can have up to 60 Gravity, and it will be removed when the duration of Gravity Ripple ends.\nOnce Gravity is accumulated to its limit, a special <color=#FFD780FF>Gravity Interference</color> will be triggered. Different effects will be triggered depending on the Lunar reaction type that has accumulated the most Gravity for Columbina. If the Lunar reaction type that has accumulated the most Gravity for Columbina is:\n· <color=#FFD780FF>Lunar-Charged</color>: Gravity Interference will deal a single instance of <color=#FFACFFFF>Electro AoE DMG</color>. This DMG is considered Lunar-Charged DMG. \n· <color=#FFD780FF>Lunar-Bloom</color>: Gravity Interference will fire 5 Moondew Sigils at surrounding opponents, dealing <color=#99FF88FF>Dendro DMG</color>. This DMG is considered Lunar-Bloom DMG.\n· <color=#FFD780FF>Lunar-Crystallize</color>: Gravity Interference will deal a single instance of <color=#FFE699FF>Geo AoE DMG</color>. This DMG is considered Lunar-Crystallize DMG."
+  },
+  {
+    "Id": 11250002,
+    "Name": "Lunar Domain",
+    "Description": "The domain that Columbina summons after unleashing the Elemental Burst <color=#FFD780FF>Moonlit Melancholy</color>.\nWhen current active characters are within the <color=#FFD780FF>Lunar Domain</color>, Lunar Reaction DMG inflicted by all party members will increase."
+  },
+  {
+    "Id": 11250003,
+    "Name": "Moonridge Dew",
+    "Description": "A special Verdant Dew resource provided by Columbina's Passive Talent, <color=#FFD780FF>Law of the New Moon</color>. Its maximum capacity and duration are calculated separately from Verdant Dew.\nWhen the party's Verdant Dew is expended, <color=#FFD780FF>Moonridge Dew</color> will be consumed instead.\nYour party can have up to 3 <color=#FFD780FF>Moonridge Dew</color>."
+  },
+  {
+    "Id": 11270001,
+    "Name": "Nightingale's Song",
+    "Description": "The effect gained after Illuga unleashes his Elemental Burst <color=#FFD780FF>Shadowless Reflection</color>. It can increase the <color=#FFE699FF>Geo DMG</color> inflicted by current active characters."
+  },
+  {
+    "Id": 11260001,
+    "Name": "Lunar Phase Shift",
+    "Description": "After using the Elemental Skill <color=#FFD780FF>Heaven and Earth Made Manifest</color>, Zibai will change to this mode. This mode lasts at most {PARAM#P1263201|4S1}s and has the following properties:\n· Normal and Charged Attacks are converted into <color=#FFE699FF>Geo DMG</color> that cannot be overridden by other infusions.\n· The Elemental Skill <color=#FFD780FF>Heaven and Earth Made Manifest</color> will also be converted to the Elemental Skill <color=#FFD780FF>Spirit Steed's Stride</color>: When Zibai has at least 70 <color=#FFD780FF>Phase Shift Radiance</color>, she can consume 70 Phase Shift Radiance to unleash Spirit Steed's Stride and cause two instances of <color=#FFE699FF>Geo DMG</color>. The second instance will be considered Lunar-Crystallize Reaction DMG.\n\nA maximum of 100 <color=#FFD780FF>Phase Shift Radiance</color> points can be accrued, and Zibai can accumulate them in the following ways:\n· She gains 10 points every second she is in the <color=#FFD780FF>Lunar Phase Shift</color> mode.\n· She gains 5 points when hitting an opponent with her Normal Attacks. She can gain Phase Shift Radiance points in this way once every 0.5s.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>\nWhen nearby party members trigger Lunar-Crystallize, they will also accrue 35 <color=#FFD780FF>Phase Shift Radiance</color> points for Zibai. Points can be gained this way once every 4s. Unleashing the special elemental skill <color=#FFD780FF>Spirit Steed's Stride</color> will reset the CD for <color=#FFD780FF>Phase Shift Radiance</color> gained this way.\n\nZibai will leave this mode after unleashing <color=#FFD780FF>Spirit Steed's Stride</color> 4 times, or when the skill's duration ends."
+  },
+  {
+    "Id": 11280001,
+    "Name": "Sturm und Drang",
+    "Description": "Tap to unleash Elemental Skill <color=#FFD780FF>Windbound Execution</color> for Varka to switch to this mode.\nWhile in this mode, Varka's Normal Attacks and Charged Attacks deal increased DMG, and he cannot perform Plunging Attacks. When Varka executes Normal or Charged Attacks, his dual-wielded claymores will deal corresponding Elemental DMG based on the Elemental Types of the characters in the party respectively:\n· DMG dealt by the claymore wielded in his left hand will be converted to <color=#80FFD7FF>Anemo DMG</color> that cannot be overridden by other infusions.\n· When there are <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#FFACFFFF>Electro</color> or <color=#99FFFFFF>Cryo</color> characters in the party, the claymore wielded in his right hand deals corresponding Elemental DMG that cannot be overridden by infusions, following the aforementioned priority order of Elemental Types.\n\nAdditionally, while in this mode, if there are <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#FFACFFFF>Electro</color> or <color=#99FFFFFF>Cryo</color> characters in the party, Varka's Elemental Skill <color=#FFD780FF>Windbound Execution</color> will be converted to the special Elemental Skill, <color=#FFD780FF>Four Winds' Ascension</color>."
+  },
+  {
+    "Id": 11280002,
+    "Name": "Four Winds' Ascension",
+    "Description": "Varka's special Elemental Skill. Deals AoE Elemental DMG that cannot be overridden by infusions corresponding to the element of the claymore wielded in Varka's right hand, and <color=#80FFD7FF>AoE Anemo DMG</color> to opponents.\nStarts on cooldown and has 2 maximum uses.\nWhen Varka is in <color=#FFD780FF>Sturm und Drang</color> mode and his Normal Attack hits an opponent, the CD of <color=#FFD780FF>Four Winds' Ascension</color> will be reduced by 0.5s. Every time Varka switches to the <color=#FFD780FF>Sturm und Drang</color> mode, this effect can be triggered up to 15 times.\nAdditionally, Varka can expend uses of <color=#FFD780FF>Four Winds' Ascension</color> to perform a special Charged Attack, <color=#FFD780FF>Azure Devour</color>, that consumes no Stamina, dealing 2 instances of Elemental DMG corresponding to the element of the claymore wielded in his right hand, which cannot be overridden by infusions, and 2 instances of <color=#80FFD7FF>Anemo DMG</color>."
+  },
+  {
+    "Id": 11290001,
+    "Name": "Masterstroke",
+    "Description": "Lohen switches to this mode after he unleashes the Elemental Skill <color=#FFD780FF>Unforeseen Strike</color>. Masterstroke mode has the following characteristics:\n· DMG dealt by Lohen's Normal Attacks, Charged Attacks, and Plunging Attacks are converted to <color=#99FFFFFF>Cryo DMG</color> that cannot be overridden by other infusions.\n· When Lohen hits an opponent with a Normal Attack or Charged Attack, he accumulates <color=#FFD780FF>Joy</color> that can be used to unleash the special Elemental Skill <color=#FFD780FF>Etched Into Bone and Soul</color>. Lohen can unleash <color=#FFD780FF>Etched Into Bone and Soul</color> up to 3 times while in <color=#FFD780FF>Masterstroke</color> mode, after which, he will no longer be able to accumulate <color=#FFD780FF>Joy</color>.\n· When nearby party members deal DMG, they also accumulate <color=#FFD780FF>Will to Win</color> for Lohen that can be used to increase the DMG dealt by <color=#FFD780FF>Etched Into Bone and Soul</color>.\n· Masterstroke mode ends when Lohen leaves the field. When Masterstroke mode ends, <color=#FFD780FF>Joy</color> and <color=#FFD780FF>Will to Win</color> will be reset to zero."
+  },
+  {
+    "Id": 11290002,
+    "Name": "Etched Into Bone and Soul",
+    "Description": "A special Elemental Skill that Lohen can use after his <color=#FFD780FF>Joy</color> reaches the max limit.\nAfter hitting an opponent, consumes all <color=#FFD780FF>Joy</color> and <color=#FFD780FF>Will to Win</color> to deal <color=#99FFFFFF>Cryo DMG</color>. This DMG increases based on the amount of <color=#FFD780FF>Will to Win</color> consumed."
+  },
+  {
+    "Id": 11290003,
+    "Name": "Joy",
+    "Description": "When Lohen hits opponents with a Normal Attack or Charged Attack while in Masterstroke mode, he will accumulate {PARAM#P1293201|13S1} <color=#FFD780FF>Joy</color>. Up to 100 Joy may be accumulated at any one time.\n<color=#FFD780FF>Joy</color> can be accumulated once every 0.1s. Once <color=#FFD780FF>Joy</color> reaches its max limit, Lohen's Elemental Skill <color=#FFD780FF>Unforeseen Strike</color> will be replaced with the special Elemental Skill <color=#FFD780FF>Etched Into Bone and Soul</color>."
+  },
+  {
+    "Id": 11290004,
+    "Name": "Will to Win",
+    "Description": "A special resource accumulated when other nearby party members deal DMG while Lohen is in Masterstroke mode. Up to 100 Will to Win may be accumulated at any one time.\nWhile Masterstroke mode is active, when other nearby party members deal DMG, if that DMG is not less than {PARAM#P1293201|15S100}% of Lohen's Base ATK, he accumulates {PARAM#P1293201|16S1} <color=#FFD780FF>Will to Win</color>. Otherwise, he accumulates 1 <color=#FFD780FF>Will to Win</color>.\nEach character can accumulate <color=#FFD780FF>Will to Win</color> for Lohen once every 0.1s."
+  },
+  {
+    "Id": 11300001,
+    "Name": "Lumi: Strike Forms",
+    "Description": "Lumi has three different Strike Forms.\n\n<color=#FFD780FF>Super Power Form</color>\nLumi will use <color=#FFD780FF>Pound-Pound Pummeler</color> to attack nearby opponents continuously. Every attack will deal 2 instances of <color=#FFE699FF>AoE Geo DMG</color>.\nIf there are Moondrifts nearby, Lumi will alternate between <color=#FFD780FF>Pound-Pound Pummeler</color> and <color=#FFD780FF>Heavy Overdrive Hammer</color> to continuously attack nearby opponents . <color=#FFD780FF>Heavy Overdrive Hammer</color> will deal <color=#FFE699FF>AoE Geo DMG</color> which will be considered Lunar-Crystallize Reaction DMG.\n\n<color=#FFD780FF>Ultimate Power Form</color>\nLumi will use the ultimate <color=#FFD780FF>Million Ton Crush</color>, dealing an especially powerful instance of <color=#FFE699FF>AoE Geo DMG</color> that is considered Lunar-Crystallize Reaction DMG, switching to <color=#FFD780FF>Standard Power Form</color>.\n\n<color=#FFD780FF>Standard Power Form</color>\nIt might not be as flashy as the other forms, but it still packs a serious punch.\nLumi will use <color=#FFD780FF>Pound-Pound Pummeler</color> at longer intervals to attack nearby opponents continuously. Every attack will deal 2 instances of <color=#FFE699FF>AoE Geo DMG</color>."
+  },
+  {
+    "Id": 11310001,
+    "Name": "Grace of Kenosis",
+    "Description": "After unleashing the Elemental Skill <color=#FFD780FF>Revelation: Uncreated Light</color>, Nicole bestows the following effect on all nearby party members: ATK is increased based on Nicole's ATK.\nAfter certain conditions are met, the <color=#FFD780FF>Grace of Kenosis</color> effect will be upgraded to <color=#FFD780FF>Guidance of Theosis</color>, further increasing ATK."
+  },
+  {
+    "Id": 11310002,
+    "Name": "Guidance of Theosis",
+    "Description": "Upgrading the <color=#FFD780FF>Grace of Kenosis</color> effect increases ATK by an additional {PARAM#P1312101|3S1}.\nAfter unlocking the Ascension Talent \"Methexis\" and meeting any of the following observation conditions, <color=#FFD780FF>Grace of Kenosis</color> will be upgraded to <color=#FFD780FF>Guidance of Theosis</color> for the remainder of its duration:\n· Another character under observation remains on the field for longer than {PARAM#P1312101|2S1}s; or\n· Another character under observation is a Hexerei character.\n\nAdditionally, after unlocking the Ascension Talent \"Philokalia,\" when a nearby active party member's Elemental DMG hits an opponent, Nicole's own <color=#FFD780FF>Grace of Kenosis</color> will be upgraded to <color=#FFD780FF>Guidance of Theosis</color> for {PARAM#P1312201|1S1}s.\n\nWhen characters other than Nicole who have <color=#FFD780FF>Guidance of Theosis</color> leave the field, their effect will revert to <color=#FFD780FF>Grace of Kenosis</color>."
+  },
+  {
+    "Id": 11320001,
+    "Name": "Banehunter Oathhammer",
+    "Description": "A witchhunter's trusty companion! Under the right conditions, the Banehunter Oathhammer undergoes Elemental Conversion, turning all its DMG into DMG of the corresponding Elemental Type.\nPrune can summon the Banehunter Oathhammer that has undergone Elemental Conversion in the following ways:\n· For a certain time after triggering a Swirl Reaction on an opponent with the Elemental Skill <color=#FFD780FF>Ring-A-Ding-Ding! Hexhunter Chime</color>, Prune can unleash the special Elemental Skill <color=#FFD780FF>Clang Clang! Witch-tribution Comes!</color>. When using this special Elemental Skill, the Banehunter Oathhammer will be converted to the other Elemental Type involved in the aforementioned Swirl Reaction.\n· After the Ascension Talent \"Verdict and Punishment\" is unlocked, when the Witchlure Bell in Hunter-Seeker mode triggers Swirl on an opponent, it will summon a Banehunter Oathhammer that has undergone the corresponding Elemental Conversion to attack the opponent."
+  },
+  {
+    "Id": 11320002,
+    "Name": "Verdict and Punishment",
+    "Description": "During the Elemental Burst <color=#FFD780FF>The Bell Tolls! The Hunt Is On!</color>, after the Witchlure Bell in Hunter-Seeker mode deals DMG to an opponent, if this DMG triggers Swirl on an opponent, it will also summon a <color=#FFD780FF>Banehunter Oathhammer</color> that deals DMG of the type matching the Elemental Conversion from the Swirl. This DMG is considered Elemental Burst DMG."
+  },
+  {
+    "Id": 11320003,
+    "Name": "Tolling Synchronicity",
+    "Description": "After Prune hits an opponent with the <color=#FFD780FF>Banehunter Oathhammer</color> that has undergone Elemental Conversion, other nearby party members will gain the Tolling Rally effect: Attack DMG will be increased based on Prune's ATK."
+  },
+  {
+    "Id": 11330001,
+    "Name": "Decoding",
+    "Description": "Fagio will switch to this mode when using a Charged Attack.\nWhen in this mode, Fagio will engage any opponents ahead with a sweeping fire attack, as well as fire condensed beams at intervals, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n<color=#FFD780FF>Radiance: Stellar-Conduct</color>: The condensed beams will instead deal <color=#99FFFFFF>AoE Cryo DMG</color> that is considered Stellar-Conduct DMG."
+  },
+  {
+    "Id": 11330002,
+    "Name": "Decoding Power",
+    "Description": "When in <color=#FFD780FF>Decoding</color> mode, Fagio's <color=#FFD780FF>Decoding Power</color> will continuously increase. When its Decoding Power reaches the maximum, Fagio will be unable to maintain or re-enter Decoding mode."
+  },
+  {
+    "Id": 11330003,
+    "Name": "Polestar Field",
+    "Description": "When Stellar-Conduct is triggered, the surrounding area will transform into a <color=#FFD780FF>Polestar Field</color> for a short period of time, and when inside a Polestar Field, certain characters will enter the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state, which grants various skill buffs."
+  }
+]

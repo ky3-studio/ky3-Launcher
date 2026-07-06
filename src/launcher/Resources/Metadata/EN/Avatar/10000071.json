@@ -1,0 +1,1342 @@
+{
+  "Id": 10000071,
+  "PromoteId": 71,
+  "Sort": 55,
+  "Body": 1,
+  "Icon": "UI_AvatarIcon_Cyno",
+  "SideIcon": "UI_AvatarIcon_Side_Cyno",
+  "Name": "Cyno",
+  "Description": "The General Mahamatra in charge of supervising the researchers of the Akademiya. It is said that when he gets down to work, the General Mahamatra is even more efficient than the \"Great Vayuvyastra\" made by the Kshahrewar.",
+  "BeginTime": "2022-09-27T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 972.3864,
+    "AttackBase": 24.7646,
+    "DefenseBase": 66.88994
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 7131,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+            "4-Hit DMG|{param5:F1P}",
+            "Charged Attack DMG|{param6:F1P}",
+            "Charged Attack Stamina Cost|{param7:F1}",
+            "Plunge DMG|{param8:F1P}",
+            "Low/High Plunge DMG|{param9:P}/{param10:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 713101,
+              "Level": 1,
+              "Parameters": [
+                0.492574,
+                0.479209,
+                0.293062,
+                0.293062,
+                0.758907,
+                1.22378,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 713102,
+              "Level": 2,
+              "Parameters": [
+                0.532667,
+                0.518215,
+                0.316916,
+                0.316916,
+                0.820679,
+                1.32339,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 713103,
+              "Level": 3,
+              "Parameters": [
+                0.57276,
+                0.55722,
+                0.34077,
+                0.34077,
+                0.88245,
+                1.423,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 713104,
+              "Level": 4,
+              "Parameters": [
+                0.630036,
+                0.612942,
+                0.374847,
+                0.374847,
+                0.970695,
+                1.5653,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 713105,
+              "Level": 5,
+              "Parameters": [
+                0.670129,
+                0.651947,
+                0.398701,
+                0.398701,
+                1.032466,
+                1.66491,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 713106,
+              "Level": 6,
+              "Parameters": [
+                0.71595,
+                0.696525,
+                0.425963,
+                0.425963,
+                1.103063,
+                1.77875,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 713107,
+              "Level": 7,
+              "Parameters": [
+                0.778954,
+                0.757819,
+                0.463447,
+                0.463447,
+                1.200132,
+                1.93528,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 713108,
+              "Level": 8,
+              "Parameters": [
+                0.841957,
+                0.819113,
+                0.500932,
+                0.500932,
+                1.297202,
+                2.09181,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 713109,
+              "Level": 9,
+              "Parameters": [
+                0.904961,
+                0.880408,
+                0.538417,
+                0.538417,
+                1.394271,
+                2.24834,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 713110,
+              "Level": 10,
+              "Parameters": [
+                0.973692,
+                0.947274,
+                0.579309,
+                0.579309,
+                1.500165,
+                2.4191,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 713111,
+              "Level": 11,
+              "Parameters": [
+                1.042423,
+                1.01414,
+                0.620201,
+                0.620201,
+                1.606059,
+                2.58986,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 713112,
+              "Level": 12,
+              "Parameters": [
+                1.111154,
+                1.081007,
+                0.661094,
+                0.661094,
+                1.711953,
+                2.76062,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 713113,
+              "Level": 13,
+              "Parameters": [
+                1.179886,
+                1.147873,
+                0.701986,
+                0.701986,
+                1.817847,
+                2.93138,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 713114,
+              "Level": 14,
+              "Parameters": [
+                1.248617,
+                1.21474,
+                0.742879,
+                0.742879,
+                1.923741,
+                3.10214,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 713115,
+              "Level": 15,
+              "Parameters": [
+                1.317348,
+                1.281606,
+                0.783771,
+                0.783771,
+                2.029635,
+                3.2729,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10711,
+        "Name": "Invoker's Spear",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 7132,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:F1P}",
+            "Mortuary Rite DMG|{param2:F1P}",
+            "Pactsworn Pathclearer Duration Bonus|{param3:F1}s",
+            "CD|{param4:F1}s",
+            "Mortuary Rite CD|{param5:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 713201,
+              "Level": 1,
+              "Parameters": [
+                1.304,
+                1.568,
+                4,
+                7.5,
+                3
+              ]
+            },
+            {
+              "Id": 713202,
+              "Level": 2,
+              "Parameters": [
+                1.4018,
+                1.6856,
+                4,
+                7.5,
+                3
+              ]
+            },
+            {
+              "Id": 713203,
+              "Level": 3,
+              "Parameters": [
+                1.4996,
+                1.8032,
+                4,
+                7.5,
+                3
+              ]
+            },
+            {
+              "Id": 713204,
+              "Level": 4,
+              "Parameters": [
+                1.63,
+                1.96,
+                4,
+                7.5,
+                3
+              ]
+            },
+            {
+              "Id": 713205,
+              "Level": 5,
+              "Parameters": [
+                1.7278,
+                2.0776,
+                4,
+                7.5,
+                3
+              ]
+            },
+            {
+              "Id": 713206,
+              "Level": 6,
+              "Parameters": [
+                1.8256,
+                2.1952,
+                4,
+                7.5,
+                3
+              ]
+            },
+            {
+              "Id": 713207,
+              "Level": 7,
+              "Parameters": [
+                1.956,
+                2.352,
+                4,
+                7.5,
+                3
+              ]
+            },
+            {
+              "Id": 713208,
+              "Level": 8,
+              "Parameters": [
+                2.0864,
+                2.5088,
+                4,
+                7.5,
+                3
+              ]
+            },
+            {
+              "Id": 713209,
+              "Level": 9,
+              "Parameters": [
+                2.2168,
+                2.6656,
+                4,
+                7.5,
+                3
+              ]
+            },
+            {
+              "Id": 713210,
+              "Level": 10,
+              "Parameters": [
+                2.3472,
+                2.8224,
+                4,
+                7.5,
+                3
+              ]
+            },
+            {
+              "Id": 713211,
+              "Level": 11,
+              "Parameters": [
+                2.4776,
+                2.9792,
+                4,
+                7.5,
+                3
+              ]
+            },
+            {
+              "Id": 713212,
+              "Level": 12,
+              "Parameters": [
+                2.608,
+                3.136,
+                4,
+                7.5,
+                3
+              ]
+            },
+            {
+              "Id": 713213,
+              "Level": 13,
+              "Parameters": [
+                2.771,
+                3.332,
+                4,
+                7.5,
+                3
+              ]
+            },
+            {
+              "Id": 713214,
+              "Level": 14,
+              "Parameters": [
+                2.934,
+                3.528,
+                4,
+                7.5,
+                3
+              ]
+            },
+            {
+              "Id": 713215,
+              "Level": 15,
+              "Parameters": [
+                3.097,
+                3.724,
+                4,
+                7.5,
+                3
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10712,
+        "Name": "Secret Rite: Chasmic Soulfarer",
+        "Description": "Performs a swift thrust, dealing <color=#FFACFFFF>Electro DMG</color> to opponents along the path.\n\nWhen Cyno is under the Pactsworn Pathclearer state triggered by Sacred Rite: Wolf's Swiftness, he will instead unleash a <color=#FFD780FF>Mortuary Rite</color> that deals thunderous <color=#FFACFFFF>AoE Electro DMG</color> and extends the duration of Pactsworn Pathclearer.\n\n<i>\"This judgment brooks no choice. There is no rejection or acceptance here... We have both long been bound up in this conviction.\"</i>",
+        "Icon": "Skill_S_Cyno_01"
+      }
+    ],
+    "SpecialSkills": [
+      {
+        "GroupId": 7124,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 712401,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 3
+        },
+        "Id": 712401,
+        "Name": "A Star With Which to Start the Journey",
+        "Description": "If Cyno unleashes the Elemental Skill <color=#FFD780FF>Secret Rite: Chasmic Soulfarer</color> while not in the Pactsworn Pathclearer state, he will enter Pactsworn Pathclearer for 6s.\nAdditionally, when in a {LINK#N11330003}<color=#FFD780FF>Polestar Field</color>{/LINK}, Cyno will enter the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state.",
+        "Icon": "UI_Talent_S_Cyno_08"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 7139,
+      "Proud": {
+        "Descriptions": [
+          "1-Hit DMG|{param1:F1P}",
+          "2-Hit DMG|{param2:F1P}",
+          "3-Hit DMG|{param3:F1P}",
+          "4-Hit DMG|{param4:F1P}+{param5:F1P}",
+          "5-Hit DMG|{param6:F1P}",
+          "Charged Attack DMG|{param7:F1P}",
+          "Charged Attack Stamina Cost|{param8:F1}",
+          "Plunge DMG|{param9:F1P}",
+          "Low/High Plunge DMG|{param10:P}/{param11:P}",
+          "Elemental Mastery Bonus|{param12:I}",
+          "Basic Duration|{param13:F1}s",
+          "CD|{param14:F1}s",
+          "Energy Cost|{param15:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 713901,
+            "Level": 1,
+            "Parameters": [
+              0.782832,
+              0.824688,
+              1.046336,
+              0.516942,
+              0.516942,
+              1.308447,
+              1.0105,
+              25,
+              0.639324,
+              1.278377,
+              1.596762,
+              100,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 713902,
+            "Level": 2,
+            "Parameters": [
+              0.846551,
+              0.891814,
+              1.131503,
+              0.559018,
+              0.559018,
+              1.414948,
+              1.09275,
+              25,
+              0.691362,
+              1.382431,
+              1.726731,
+              100,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 713903,
+            "Level": 3,
+            "Parameters": [
+              0.91027,
+              0.95894,
+              1.21667,
+              0.601095,
+              0.601095,
+              1.52145,
+              1.175,
+              25,
+              0.7434,
+              1.486485,
+              1.8567,
+              100,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 713904,
+            "Level": 4,
+            "Parameters": [
+              1.001297,
+              1.054834,
+              1.338337,
+              0.661205,
+              0.661205,
+              1.673595,
+              1.2925,
+              25,
+              0.81774,
+              1.635134,
+              2.04237,
+              100,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 713905,
+            "Level": 5,
+            "Parameters": [
+              1.065016,
+              1.12196,
+              1.423504,
+              0.703281,
+              0.703281,
+              1.780096,
+              1.37475,
+              25,
+              0.869778,
+              1.739187,
+              2.172339,
+              100,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 713906,
+            "Level": 6,
+            "Parameters": [
+              1.137838,
+              1.198675,
+              1.520837,
+              0.751369,
+              0.751369,
+              1.901812,
+              1.46875,
+              25,
+              0.92925,
+              1.858106,
+              2.320875,
+              100,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 713907,
+            "Level": 7,
+            "Parameters": [
+              1.237967,
+              1.304158,
+              1.654671,
+              0.817489,
+              0.817489,
+              2.069172,
+              1.598,
+              25,
+              1.011024,
+              2.02162,
+              2.525112,
+              100,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 713908,
+            "Level": 8,
+            "Parameters": [
+              1.338097,
+              1.409642,
+              1.788505,
+              0.88361,
+              0.88361,
+              2.236531,
+              1.72725,
+              25,
+              1.092798,
+              2.185133,
+              2.729349,
+              100,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 713909,
+            "Level": 9,
+            "Parameters": [
+              1.438227,
+              1.515125,
+              1.922339,
+              0.94973,
+              0.94973,
+              2.403891,
+              1.8565,
+              25,
+              1.174572,
+              2.348646,
+              2.933586,
+              100,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 713910,
+            "Level": 10,
+            "Parameters": [
+              1.547459,
+              1.630198,
+              2.068339,
+              1.021861,
+              1.021861,
+              2.586465,
+              1.9975,
+              25,
+              1.26378,
+              2.527025,
+              3.15639,
+              100,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 713911,
+            "Level": 11,
+            "Parameters": [
+              1.656691,
+              1.745271,
+              2.214339,
+              1.093993,
+              1.093993,
+              2.769039,
+              2.1385,
+              25,
+              1.352988,
+              2.705403,
+              3.379194,
+              100,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 713912,
+            "Level": 12,
+            "Parameters": [
+              1.765924,
+              1.860344,
+              2.36034,
+              1.166124,
+              1.166124,
+              2.951613,
+              2.2795,
+              25,
+              1.442196,
+              2.883781,
+              3.601998,
+              100,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 713913,
+            "Level": 13,
+            "Parameters": [
+              1.875156,
+              1.975416,
+              2.50634,
+              1.238256,
+              1.238256,
+              3.134187,
+              2.4205,
+              25,
+              1.531404,
+              3.062159,
+              3.824802,
+              100,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 713914,
+            "Level": 14,
+            "Parameters": [
+              1.984389,
+              2.090489,
+              2.652341,
+              1.310387,
+              1.310387,
+              3.316761,
+              2.5615,
+              25,
+              1.620612,
+              3.240537,
+              4.047606,
+              100,
+              10,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 713915,
+            "Level": 15,
+            "Parameters": [
+              2.093621,
+              2.205562,
+              2.798341,
+              1.382518,
+              1.382518,
+              3.499335,
+              2.7025,
+              25,
+              1.70982,
+              3.418915,
+              4.27041,
+              100,
+              10,
+              20,
+              80
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10715,
+      "Name": "Sacred Rite: Wolf's Swiftness",
+      "Description": "Calls upon a divine spirit to indwell him, morphing into the Pactsworn Pathclearer.\n\n<color=#FFD780FF>Pactsworn Pathclearer</color>\nCyno's Normal, Charged, and Plunging Attacks will be converted to <color=#FFACFFFF>Electro DMG</color> that cannot be overridden.\n·Cyno's Elemental Mastery and resistance to interruption will increase, and he gains immunity to Electro-Charged DMG.\n\nThis effect will be canceled when Cyno leaves the field and lasts a maximum of 18s.\n\n<i>The secret rituals passed down within the ancient nation are as a final judgment to the General Mahamatra.</i>\n<i>Whether now or in the past, whether great storm or serpent, none shall shake the majesty of the law.</i>",
+      "Icon": "Skill_E_Cyno_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 7121,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 712101,
+              "Level": 1,
+              "Parameters": [
+                0.35,
+                1,
+                2
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 712101,
+        "Name": "Featherfall Judgment",
+        "Description": "When Cyno is in the Pactsworn Pathclearer state activated by <color=#FFD780FF>Sacred Rite: Wolf's Swiftness</color>, Cyno will enter the Endseer stance at intervals. If he activates <color=#FFD780FF>Secret Rite: Chasmic Soulfarer</color> while affected by this stance, he will activate the Judication effect, increasing the DMG of this Secret Rite: Chasmic Soulfarer by 35%, and firing off 3 Duststalker Bolts that deal 100% of Cyno's ATK as <color=#FFACFFFF>Electro DMG.</color>\nDuststalker Bolt DMG is considered Elemental Skill DMG.",
+        "Icon": "UI_Talent_S_Cyno_05"
+      },
+      {
+        "GroupId": 7122,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 712201,
+              "Level": 1,
+              "Parameters": [
+                1.5,
+                2.5,
+                6
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 712201,
+        "Name": "Authority Over the Nine Bows",
+        "Description": "Cyno's DMG values will be increased based on his Elemental Mastery as follows:\n· Pactsworn Pathclearer's Normal Attack DMG is increased by 150% of his Elemental Mastery.\n· Duststalker Bolt DMG from his Ascension Talent Featherfall Judgment is increased by 250% of his Elemental Mastery.",
+        "Icon": "UI_Talent_S_Cyno_06"
+      },
+      {
+        "GroupId": 7123,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 712301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 712301,
+        "Name": "The Gift of Silence",
+        "Description": "Gains 25% more rewards when dispatched on a Sumeru Expedition for 20 hours.",
+        "Icon": "UI_Talent_S_Cyno_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 711,
+        "Name": "Ordinance: Unceasing Vigil",
+        "Description": "After using <color=#FFD780FF>Sacred Rite: Wolf's Swiftness</color>, Cyno's Normal Attack SPD will be increased by 20% for 10s. If the Judication effect of his Ascension Talent Featherfall Judgment is triggered during <color=#FFD780FF>Secret Rite: Chasmic Soulfarer</color>, the duration of this increase will be refreshed.\nYou must first unlock the Ascension Talent \"Featherfall Judgment.\"",
+        "Icon": "UI_Talent_S_Cyno_01"
+      },
+      {
+        "Id": 712,
+        "Name": "Ceremony: Homecoming of Spirits",
+        "Description": "When Cyno's Normal Attacks hit opponents, his <color=#FFACFFFF>Electro DMG Bonus</color> will increase by 10% for 4s. This effect can be triggered once every 0.1s. Max 5 stacks.",
+        "Icon": "UI_Talent_S_Cyno_02"
+      },
+      {
+        "Id": 713,
+        "Name": "Precept: Lawful Enforcer",
+        "Description": "Increases the Level of <color=#FFD780FF>Sacred Rite: Wolf's Swiftness</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Cyno_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 714,
+        "Name": "Austerity: Forbidding Guard",
+        "Description": "When Cyno is in the Pactsworn Pathclearer state triggered by <color=#FFD780FF>Sacred Rite: Wolf's Swiftness</color>, after he triggers an Electro-Charged, Lunar-Charged, Superconduct, Overloaded, Quicken, Aggravate, Hyperbloom, or Electro Swirl reaction, he will restore 3 Elemental Energy for all nearby party members (except himself.)\nThis effect can occur 5 times within one use of <color=#FFD780FF>Sacred Rite: Wolf's Swiftness</color>.",
+        "Icon": "UI_Talent_S_Cyno_03"
+      },
+      {
+        "Id": 715,
+        "Name": "Funerary Rite: The Passing of Starlight",
+        "Description": "Increases the Level of <color=#FFD780FF>Secret Rite: Chasmic Soulfarer</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Cyno_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 716,
+        "Name": "Raiment: Just Scales",
+        "Description": "After using <color=#FFD780FF>Sacred Rite: Wolf's Swiftness</color> or triggering the Judication effect of the Ascension Talent \"Featherfall Judgment,\" Cyno will gain 4 stacks of the \"Day of the Jackal\" effect. When he hits opponents with Normal Attacks, he will consume 1 stack of \"Day of the Jackal\" to fire off one Duststalker Bolt.\n\"Day of the Jackal\" lasts for 8s. Max 8 stacks. It will be canceled once Pactsworn Pathclearer ends.\nA maximum of 1 Duststalker Bolt can be unleashed this way every 0.4s.\nYou must first unlock the Ascension Talent \"Featherfall Judgment.\"",
+        "Icon": "UI_Talent_S_Cyno_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Judicator of Secrets",
+    "Detail": "The General Mahamatra in charge of supervising the researchers of the Akademiya. It is said that when he gets down to work, the General Mahamatra is even more efficient than the \"Great Vayuvyastra\" made by the Kshahrewar.",
+    "Association": 7,
+    "Native": "Temple of Silence",
+    "BirthMonth": 6,
+    "BirthDay": 23,
+    "VisionBefore": "Electro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Lupus Aureus",
+    "CvChinese": "李轻扬",
+    "CvJapanese": "入野自由",
+    "CvEnglish": "Alejandro Saab",
+    "CvKorean": "Jung Eui-jin & Lee Woo-ri",
+    "CookBonus": {
+      "OriginItemId": 108419,
+      "ItemId": 108467,
+      "InputList": [
+        100092,
+        100064,
+        100084,
+        101214
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello: The Past",
+        "Context": "I'm Cyno, the former General Mahamatra. Now I use my abilities to punish evil as I see fit. If you share my devotion to rules and justice, then I can lend you my strength."
+      },
+      {
+        "Title": "Hello: The Present",
+        "Context": "I'm Cyno, General Mahamatra of the Akademiya. It's my duty to uphold the rules, and punish wrongdoing. I will protect you on your journey."
+      },
+      {
+        "Title": "Chat: Weighing the Heart",
+        "Context": "Good deeds and bad... In the end, all will be placed upon the scales."
+      },
+      {
+        "Title": "Chat: Luck of the Draw",
+        "Context": "Luck can swing the results of a single game, but it's bound to run out sooner or later."
+      },
+      {
+        "Title": "Chat: Doubt",
+        "Context": "I do try to lighten the mood sometimes, but... I'm not the best judge of other people's sense of humor."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Hm, it's raining again..."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "In some legends, thunderbolts are a form of judgment from the gods above."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "I love seeing everything covered in a fresh blanket of snow. There's a perfect stillness to it that's not lifeless, but calm and peaceful."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "The sunshine will eventually illuminate every hidden corner."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "Careful, the wind is picking up."
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "A familiar sight..."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Get ready. It's time to go."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Want me to prepare lunch today? It's fine with me, but I should warn you, I can't promise it'll be any good."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Remember what I told you? There's always danger lurking in the night, so whatever you do, keep your guard up."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Goodnight. Now, there's some criminal activity nearby that I'll go deal with."
+      },
+      {
+        "Title": "About Cyno: Unfunny Jokes",
+        "Context": "Hmm... a joke? Ah, I've got just the one. Ahem... There once was a traveler, stranded in the desert and dying of thirst, who in desperation prayed for a Hydro Slime to come their way. But the traveler didn't realize that at that very moment, a starving Hydro Slime was praying to meet a lone, stranded traveler... What, not funny? Tsk, I think it's hysterical."
+      },
+      {
+        "Title": "About Cyno: Desert Strolls",
+        "Context": "Sometimes I'll take a stroll through the desert at night... The cold, dry air out there helps me clear my mind."
+      },
+      {
+        "Title": "About Us: TCG Duel",
+        "Context": "Up for a game of Genius Invokation TCG? I'll show you the new deck I built."
+      },
+      {
+        "Title": "About Us: The Present",
+        "Context": "The past cannot be changed, and the future cannot be foretold. As a result, I make sure to always cherish the here and now."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "You may say that I have received much divine favor, with the spirit that dwells within me, and the god that took heed of my ambition. But I have no intention of letting this affect my code of justice. I will simply continue to do whatever is required to fulfill my duty."
+      },
+      {
+        "Title": "Something to Share: Lust for Knowledge",
+        "Context": "I think most people understand that an excess of desire will lead to disaster, but people seldom admit that when it comes to the pursuit of knowledge, they're only willing to put it in a positive light. In my opinion, chasing after knowledge is still a form of desire, and must also be reined in."
+      },
+      {
+        "Title": "Something to Share: Solemn Respect",
+        "Context": "Any decision I make during a mission can have a profound effect on the fates of others. This is why I must always maintain a solemn respect for my position as a matra, the same way I respect knowledge and power."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "I'm fond of the shrubs that grow in the desert. The desert is a symbol of repose and solitude, and all civilizations will eventually be buried by a sandstorm. But despite these desolate conditions, there are still signs of growth. Sometimes, I really find myself impressed by their tenacity."
+      },
+      {
+        "Title": "About Tighnari: Knowledge",
+        "Context": "Tighnari is different from other scholars I've met. He has the same wholehearted dedication to knowledge, but he will never cross the most important boundaries. Some scholars see themselves as gods within their own laboratories, but not Tighnari — he has always shown the same respect for every form of life. I've heard that he even declined a position in the Akademiya, and I support his decision."
+      },
+      {
+        "Title": "About Tighnari: Jokes",
+        "Context": "Tighnari once told me not to tell jokes at the dinner table, insisting that my jokes weren't funny at all. I did not share his opinion, so I told three of my best jokes in a row, and explained the premise of each in great detail. By the time I was done talking, my food was cold."
+      },
+      {
+        "Title": "About Collei",
+        "Context": "I once helped Collei seal away the god's remains in her body, but the process was an unthinkably painful one. To many, enduring that kind of pain would be a prospect more terrifying than death, so it was very admirable that she was able to persevere through it all."
+      },
+      {
+        "Title": "About Alhaitham",
+        "Context": "I don't really like people who are too smart. They think they can control everything, and constantly venture to the fringes of danger. But Alhaitham is one of the more reliable ones. In most cases, he is actually in control of things and has the ability to avert potential disaster."
+      },
+      {
+        "Title": "About Kaveh",
+        "Context": "Tighnari and Collei never said it to my face, but they found Kaveh's personal anecdotes far more entertaining than the jokes I had prepared... I could see it on their faces. Hmm? What did I think about that? Well, I thought it was funny that they could laugh at such a situation."
+      },
+      {
+        "Title": "About Nahida",
+        "Context": "Commenting on a god might be overstepping my position a little... But when I was working with her, I personally witnessed her wisdom, courage, and determination. Compared with those sages who constantly undermined and criticized her without a shred of evidence, I think I can provide a more reliable assessment: She is an exceptional deity who is worthy of everyone's respect."
+      },
+      {
+        "Title": "About Nilou",
+        "Context": "I can sense her enthusiasm and passion for dancing — it has become an integral part of her being. I hope that she will always be able to use the art she loves to bring happiness to other people."
+      },
+      {
+        "Title": "About Faruzan",
+        "Context": "I've carefully browsed through the case files regarding Faruzan's disappearance. At the time, I thought maybe she had been conducting some kind of dangerous research, but once I met her in person, I completely abandoned that idea. Though it might be a little hard for me to get along with her, she mostly reminds me of a kindly and chatty parent. She is considerate of others, and would never do anything imprudent."
+      },
+      {
+        "Title": "About Lisa",
+        "Context": "Of course I know about Lisa, we once both studied under the same sage. As General Mahamatra, I've seen many tragedies befall those seeking knowledge too assiduously, so it's easy for me to understand her decision."
+      },
+      {
+        "Title": "About Sethos",
+        "Context": "Sethos has a strong sense of responsibility. I have the utmost respect for his skill as a warrior, and I admire his courage. He's also been a great help to me personally, and I'm sure that cooperation between the Akademiya and the Temple of Silence will go very smoothly with him leading the Temple.\nNevertheless, he does have one flaw — he doesn't play nearly enough Genius Invokation TCG for my liking. Every time I invite him to play, he's either busy with work, about to go out for a meal, or has existing plans with other friends... Excuses, all of them! Are we not his best friends in all of Sumeru City?"
+      },
+      {
+        "Title": "More About Cyno: I",
+        "Context": "Huh? You want to know more about me? Hm, I suppose many people see me as a thorn in their side... But don't worry, as long as you don't do anything dangerous, you won't have any trouble with me."
+      },
+      {
+        "Title": "More About Cyno: II",
+        "Context": "With my body as a vessel, I can harness the power of the spirit that dwells within me. This is possible in part due to my natural constitution, but also due to a deal I willingly made in the past. There's no reason to shy away from the topic. If I am to weigh the souls of others in this world as a matra, then I must also place my own soul on the scales to be judged in the same manner."
+      },
+      {
+        "Title": "More About Cyno: III",
+        "Context": "Rather than thinking about the \"why\" of things, I prefer to focus on \"what\" has been done. There are countless reasons why people do things in this world, and upon hearing some of those reasons, you can't help but start to feel that the wrongdoer had a point, or that the public is being too harsh on them. The disadvantaged side will always garner people's sympathy, but the judge must abandon all such feelings. We may empathize with the pain and motivations of the accused, but a crime, once committed, cannot be left unpunished."
+      },
+      {
+        "Title": "More About Cyno: IV",
+        "Context": "In the gloomy sea of ignorance, a faint glimmer of light will occasionally appear, luring those who do not understand the truth toward it. People will often see that glimmer as a beacon to guide their way, but in doing so overlook the great dangers still lurking in the pitch-black waters. Steering those who have long resided in darkness away from the light is a cruel thing in itself, but I must continue to do so until we can finally defeat the enemies that lay hidden beneath the water's surface."
+      },
+      {
+        "Title": "More About Cyno: V",
+        "Context": "I've already told you everything that I think is worth sharing. What else could you possibly want to hear from me? Heh, your curiosity is remarkable... Alright, let's hear your questions. For someone who is used to interrogating others, the feeling of being questioned is... interesting."
+      },
+      {
+        "Title": "Cyno's Hobbies",
+        "Context": "In my free time, I like to play Genius Invokation TCG with other people. Being able to express so much creativity and variation within a working rule set makes it more than just a game — it's an art form."
+      },
+      {
+        "Title": "Cyno's Troubles",
+        "Context": "Just recently, I saw a light novel from Inazuma based on Genius Invokation TCG. When the main character found themselves in a rough spot, they somehow drew a card that wasn't even supposed to exist. This shook me to the core, and presented me with a great conundrum: Through directly manipulating the deck, they were able to pull off a miracle that nobody could have expected. The question is... should it be seen as breaking the rules, or is this, too, ultimately within the rules of the game?"
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Rice, meat, and dried nuts, mixed with some yogurt and roasted together... what a wonderful mix of flavors. You can feel the aroma seeping out with the steam as you cut into the crispy outside. It doesn't even take very long to make, definitely my favorite dish."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "The rations I take with me when traveling through the desert are usually completely tasteless. Once you've eaten enough of those, you'll be grateful for just about anything with some flavor. If I had to pick something, though... I wouldn't say I relish eating bugs or anything bug-related..."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Tastes great. You have my gratitude."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "I accept. Thank you."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Agh... This is for me? ...Are you sure?"
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Ahem... I'd like to wish you a happy birthday. Though I don't have much experience with celebrations, once I realized your birthday was coming, I decided to make some preparations. First, I have this deck for you that I worked on for a few days, I think it'll really suit your style. Also, I adjusted my schedule to open up some time, so is there anywhere you'd like to go? I'd be happy to accompany you. A birthday only lasts a day, but you should take the chance to really enjoy it. Just make sure we can be back within three days."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "I can feel new power surging within me, a testament to my growth."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "I vow to uphold the rules and punish evil."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Nice boost. Thanks a ton."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "My strength has reached its peak, but there are still many things I can never accomplish relying on my fighting power alone. There will still be many times when emotions and rules do not agree, but I think I'll find the key to striking the right balance in the journeys to come."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Surrender!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Futile."
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Nowhere to run!"
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "You stand condemned."
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "Guilty!"
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "Your penance is due!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Through me, justice is served!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Judgment is upon you."
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Your sins weigh upon your soul."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "A well-deserved find."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Our perseverance has paid off."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Wealth is the foundation on which civilization is built."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Stronger than I anticipated..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "I'm used to it."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Ugh... come at me again!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Fall back. Don't try to act tough."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "I'll take it from here."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Has my... time come..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "In death... a new cycle begins..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "My judgment... has failed..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Pointless."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "A tough crowd."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Well played."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Ready to do my utmost."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Our mission begins."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Who's our next target?"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "As the leader of all matra, General Mahamatra Cyno is well known to everyone in the Akademiya.\nHis duties are to arrest those who violate the Akademiya's rules and regulations, terminate illegal studies, and uphold discipline of the Akademiya. Nevertheless, researchers feel that this General Mahamatra does nothing but undermine academic progress and prohibit scientific research. Some even claim that he is \"cutting off the path to knowledge\" and can be seen as a dire threat to any researcher eager to seek knowledge...\nOver time, researchers have come to shrink away from Cyno in silence whenever they so much as see him, wanting to have nothing to do with him.\nBut the General Mahamatra is hardly bothered by such things.\nIf this exaggerated public image can really deter some researchers, that will in no way be an inconvenience for his work.\nPlus, in the words of that Forest Watcher friend of his,\n\"The research conducted by most researchers is nowhere significant enough to result in a talk with a matra.\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Wisdom can bring enlightenment to scholars, but can also lead to utter arrogance.\nIn the history of the Akademiya, many researchers have used their \"wisdom\" to commit crimes.\nFor example, in order to test the limit of the Specters' body inflation, one Amurta researcher adopted an illegal catalyst and created a mega-sized Specter, which later exploded during the experiment and leveled the entire research center. Then, there was a researcher from Spantamad who had aimed to test a Ruin Guard's ability to cultivate fields, but lost control of the modified machine, resulting in the ruin of many farmlands and grave injuries for several farmers. There have also been numerous criminal cases concerning academic fraud and the abuse of intelligence for personal gain...\nSuch researchers, who do not abide by the law and pose dangers to others, will all be pursued and judged by the matra led by Cyno.\nWhen they stand before the matra, these researchers will almost always spare no effort to justify themselves. Their reasons have included but are not limited to suddenly cut funds, the Akademiya's favoritism towards other researchers, the results of their work being stolen... Some may even accuse the matra of stopping them from completing their research out of jealousy of their talents.\nCyno's response to such sophistry is always to stay silent and press forward in subduing all those garrulous criminals and sending them to trial.\nThose who violate the rules can always come up with a million excuses. However, only one ending awaits them."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "The name of the General Mahamatra has traveled well beyond the Akademiya's walls.\nAccording to a Forest Watcher in the Avidya Forest, he once caught a glimpse of this General Mahamatra quietly traveling through the woods in the middle of the night. A person living on the outskirts of Apam Woods can still clearly remember how a white-haired teenager asked them for a bowl of water, before venturing deep into the forest alone with just a traveling pack on his back. Adventurers resting in Sobek Oasis claim to have given directions to Cyno, though the area he was heading to had been packed with monsters. Even the proudest mercenaries and Treasure Hoarders in the Great Red Sand dare not make things difficult for the General Mahamatra, having learned this lesson well from the example of a mercenary group that was annihilated in the desert for sheltering wanted researchers.\nHowever, for those criminals who have fallen into the hands of Cyno, their reverence for the General Mahamatra usually comes from another aspect of his character.\nWhen escaping from the Akademiya, criminals tend to flee in an extreme panic, and can sometimes stray into perilous places. Yet, instead of letting them suffer the consequences, Cyno will come to their rescue without hesitation, just so that he can bring them back to the Akademiya to face their proper punishment.\nOnce, a criminal who had crossed the Great Red Sand with Cyno asked him about the point of doing all this. Cyno replied,\n\"Only the law can judge you, and my role here is to bring you to face the scales.\"\nAfter being released from prison, the researcher, who had been a Vahumana graduate, turned their adventures returning to the Akademiya into a novel titled \"The Goon,\" which remains a bestseller in the Akademiya. The researcher was even invited by Vahumana to give a lecture, during which they went into great detail about the portrayal of \"justice\" in the book.\nIf you ask Cyno, however, he would say that certain parts of the book were heavily exaggerated. In truth, they did not encounter any monsters created by the descendants of King Deshret, nor did they stray into a living labyrinth at the bottom of the desert or survive a sandstorm in the folds of a humongous Wenut.\nNevertheless, Cyno did appreciate the candidness with which the author described their own crimes, and would like to remind them to not commit such crimes ever again."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "In the Akademiya, the mere mention of the matra's office can make any researcher's heart seize up.\nApart from the renowned \"evil deeds\" of the matra, what disturbs them even more is how creepy, dry laughter can be heard from the office whenever Cyno walks in...\nResearchers firmly believe that this must be the matra's way of expressing smug satisfaction at the sight of Cyno passing judgment on some hapless researcher.\nBut only the matra know that the laughter is a response to Cyno's unique sense of humor.\n\"I once worked on a case where the researcher involved was under great pressure because his paper had been rejected multiple times at the review stage. He eventually rammed it through by successfully bribing the members of his review committee. However, the data in that paper was so wrong that it didn't even take long to be exposed as academic fraud. When I went to arrest this researcher, he asked me 'what have I done wrong?'...\"\nAfter a pause, Cyno continued,\n\"I answered, 'Your paper.'\"\nSeeing the matra all sit there in silence, Cyno seemed to be worried that they did not get the joke, so he went on to explain it with a serious expression,\n\"You see, the interesting part of this story lies in how, when he asked me what he had done wrong, he expected me to say that his fault lay with his bribing of the committee due to academic pressure, yet I told him that his error was in not reaching the correct conclusions in his paper. The clever part about this joke is that I changed the subject that was being discussed...\"\nAfter he finished explaining, the matra all exchanged looks before letting out a few dry, strangled laughs in concert...\nThe awkward laughter lent a strange sense of human warmth then to the often somber and solemn matra office.\nHowever, to prevent such an awkward situation from ever happening again, the matra gradually came to a consensus that after Cyno finishes telling a joke, everyone in the room must force out a laugh or two in response so that he will not start explaining it.\nOn the other hand, any matra who attempts to imitate Cyno's style will be harshly punished by the others through extreme means such as confiscating their canteen meal tickets.\nAfter all, one Cyno is enough for the whole division."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Cyno has always believed that the matra are not the enemies of those who seek knowledge.\nCyrus, a scholar who tutored Cyno before, once told him that without the Akademiya's laws, \"wisdom\" will soon turn into \"calamity.\"\nThese floating scraps of out-of-control \"wisdom\" are like bait on a sea of ignorance, luring innocent knowledge seekers into the abyss.\nThey will make researchers far too arrogant and reckless, to the point where they may even attempt to tamper with life and death due to their lack of respect for human life. Eventually, they shall cause irreparable damage to the world.\nThe sages keep introducing new rules and regulations precisely to ensure that the knowledge seekers of the Akademiya will not be misled and go astray because of such bait.\nThe matra who hunt down those who violate the law and judge them according to those same laws are in fact the \"guardians\" of all those who seek knowledge in the Akademiya.\nHowever, in the eyes of researchers, they are but a bunch of \"demolishers\" who constantly, violently cut off their paths to knowledge.\n\"Dumb humanoid Fungi,\" \"Mr. You-Can't-Do-This,\" \"Paper Shredders\"... These are all nicknames they have come up with for the matra.\nAmong them, the most notorious one is \"the Akademiya's Sumpter Beasts,\" a name coined by a Haravatat researcher.\nWhen they first heard of this nickname, most of the matra were rather enraged, reckoning that the researchers thought too little of their hard work.\nOn the contrary, Cyno noted that he actually fancied it quite a bit.\n\"We matra are indeed Sumpter Beasts who walk the Akademiya's halls, carrying the rules and regulations on our backs.\"\n\"When exercising our rights, each of us must always keep that weight in mind.\"\nAfter pondering the matter for a while, this General Mahamatra added,\n\"Plus, we could stand to be more like Sumpter Beasts in avoiding pointless arguments and focusing on, ahem, getting to our desired destination.\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "When the Akademiya was first established, its researchers wielded their boundless imagination and innovation to the fullest with the abundant resources available at their beck and call.\nThey had reshaped terrain, controlled the weather, recreated ancient relics... But when the knowledge of the earth could no longer satisfy their insatiable curiosity, some researchers turned their focus to the starry skies, whereas some others attempted to tamper with life and death.\nHowever, these kinds of knowledge were not things they should or could have touched upon.\nTo prevent researchers from being devastated by their own knowledge, the sages laid out six cardinal sins.\nThey held that all the crimes in this world derive from these six sins.\nThe first is to interfere with human evolution;\nThe second is to tamper with life and death;\nThe third is to delve beyond the universe;\nThe fourth is to investigate the origin of words;\nThe fifth is to revere gods without acts of devotion;\nThe sixth is to attempt the forbidden and fear none.\nSince then, the sages have been introducing new rules and regulations according to these six deadly sins while amending and revising old ones. The matra enforce the laws, and the researchers perform their roles accordingly as well.\nIn this way, everything in the Akademiya functions in a desirable manner, and the Akademiya and its researchers have been marching forward with thriving clarity of wisdom ever since.\nAs time has passed, the six ancient sins seem to have been forgotten by most, and ambitious people have been on the move since...\nHowever, for Cyno, the current General Mahamatra, what he ought to do has not changed.\nHe will, according to the six ancient deadly sins, justly judge all the lawbreakers.\nEven sages shall not be exempt."
+      },
+      {
+        "Title": "Cyno's Genius Invokation TCG Deck Box",
+        "Context": "This deck box, which contains Cyno's Genius Invokation TCG deck, is his favorite physical possession.\nThe exterior of this deck box is wrapped with multiple layers of high-quality leather, and every seam has been carefully handled. As long as the rope fixed on the leather remains tightly tied, the entire deck box will be completely sealed, and not even a drop of water can get through. The interior is padded with silk, which can minimize the bending of card corners. According to the shop owner, the silk used was all imported from Liyue and made from top-quality Silk Flowers. This deck box even comes with a tough leather strap, so the buyer can easily affix the box to any part of their body. The surface of the deck box is even engraved with the Genius Invokation TCG emblem and the name of one who purchased it.\nCyno has put his strongest deck in this box. He believes that as long as he gets to duel with this deck, he will be nothing short of invincible.\nOf course, the next thing to do is to find a couple players who are willing to play against him.\nHmm... Would that Forest Watcher be available at the moment?"
+      },
+      {
+        "Title": "Vision",
+        "Context": "When it comes to how Cyno got his Vision, many versions of the story can be found circulating in the Akademiya.\nSome say that he was once instructed to arrest a researcher who had been studying methods of making counterfeit Visions. The researcher had previously bought a masterless Vision for research, which then became Cyno's Vision. Some believe that Cyno is actually a descendant of King Deshret. They say that he grew up in a temple located in the Great Red Sand and was raised by a nameless Hermanubis priest who cultivated Cyno's will and strength before, when he was ready, bestowing upon him a Vision and requiring him to cross the desert all by himself to arrive at the Akademiya and enact Hermanubis' will. Of course, according to some conspiracy theories, Cyno's Vision is closely connected with certain forbidden technologies hidden within the Akademiya. Otherwise, how could this member of the desert ilk earn a spot in the Akademiya?\nNo one dares to check any of the stories' authenticity with Cyno in person, and Cyno himself cannot be bothered to waste energy on these ridiculous rumors.\nThe truth is that the way he obtained his Vision was rather simple.\nIt was the day before he was about to become the new General Mahamatra. As per usual, after finishing his work as a matra, Cyno went to the library to read books relating to the Akademiya's rules and regulations. He can still well remember that the book he was reading that day mainly talked about the six cardinal sins that the sages had decided on, which they held to be the origins of all crimes and thus served as the foundation for all the modern rules and regulations of the Akademiya. While he was reading the chapter on \"to attempt the forbidden and fear none,\" he failed to fathom some chunks of the content depicted in the book, so he closed his eyes and ruminated. The moment he opened his eyes, the first thing he saw was a Vision, laid nicely on the page.\nCyno looked at the Vision and fell into contemplation. He first confirmed that there was no existing rule that prohibited someone from being granted a Vision. Then he went over several academic cases with Visions involved and ensured that this Vision was not some malicious trap. He went on to ponder the challenges he might encounter after becoming the General Mahamatra and how this Vision might help in these future trials... After carefully weighing up the pros and cons, Cyno finally accepted this gift from the gods earnestly.\nBy then, the morning light was already shining through the windows. Cyno left the library with the Vision and his as-yet-unfinished read in hand before heading over to the location where he was to be inaugurated as the General Mahamatra.\nIf all went well, in half an hour, he would become the Akademiya's new General Mahamatra.\nHe was about to be entrusted with the sacred power to judge those who had erred, and this Vision would ensure that this sacred privilege could be exercised as intended."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 207100,
+      "Name": "Heart of the Scales",
+      "Description": "Cyno's outfit. This garb displays the General Mahamatra's dignity and the just principles he sticks by. It was a rather complicated piece to commission due to Cyno's request for the custom-made head ornaments and requires regular maintenance.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104144,
+    113037,
+    101225,
+    112010,
+    104331,
+    113032
+  ],
+  "NameCard": {
+    "Name": "Cyno: Silence",
+    "Description": "Namecard style.\nWhenever Cyno falls into a profound silence, he must be considering some weighty judgment... Or perhaps he is simply considering something amusing.",
+    "Icon": "UI_NameCardIcon_Cyno",
+    "PicturePrefix": "UI_NameCardPic_Cyno"
+  }
+}

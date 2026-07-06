@@ -64,7 +64,7 @@ internal sealed partial class LaunchGameViewModel
             SentrySdk.AddBreadcrumb("Got IThirdPartyToolService instance", category: "ThirdPartyTool");
 
             token.ThrowIfCancellationRequested();
-            ImmutableArray<ToolInfo> tools = await thirdPartyToolService.GetToolsAsync().ConfigureAwait(false);
+            ImmutableArray<ToolInfo> tools = await thirdPartyToolService.GetToolsAsync(token).ConfigureAwait(false);
             token.ThrowIfCancellationRequested();
 
             SentrySdk.AddBreadcrumb($"Got {tools.Length} tools from service", category: "ThirdPartyTool");

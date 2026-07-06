@@ -1,0 +1,1344 @@
+{
+  "Id": 10000051,
+  "PromoteId": 51,
+  "Sort": 32,
+  "Body": 3,
+  "Icon": "UI_AvatarIcon_Eula",
+  "SideIcon": "UI_AvatarIcon_Side_Eula",
+  "Name": "Eula",
+  "Description": "The Spindrift Knight, a scion of the old aristocracy, and the Captain of the Knights of Favonius Reconnaissance Company. The reason for which a descendant of the ancient nobles might join the Knights remains a great mystery in Mondstadt to this very day.",
+  "BeginTime": "2021-05-18T18:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 11,
+  "BaseValue": {
+    "HpBase": 1029.5856,
+    "AttackBase": 26.6266,
+    "DefenseBase": 58.45391
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 5131,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}+{param3:F1P}",
+            "4-Hit DMG|{param4:F1P}",
+            "5-Hit DMG|{param5:F1P}+{param5:F1P}",
+            "Charged Attack Spinning DMG|{param6:F1P}",
+            "Charged Attack Final DMG|{param7:P}",
+            "Charged Attack Stamina Cost|{param8:F1}/s",
+            "Max Duration|{param9:F1}s",
+            "Plunge DMG|{param10:F1P}",
+            "Low/High Plunge DMG|{param11:P}/{param12:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 513101,
+              "Level": 1,
+              "Parameters": [
+                0.897324,
+                0.935508,
+                0.567987,
+                1.126428,
+                0.718336,
+                0.688,
+                1.24399,
+                40,
+                5,
+                0.745878,
+                1.49144,
+                1.862889
+              ]
+            },
+            {
+              "Id": 513102,
+              "Level": 2,
+              "Parameters": [
+                0.970362,
+                1.011654,
+                0.614219,
+                1.218114,
+                0.776806,
+                0.744,
+                1.345245,
+                40,
+                5,
+                0.806589,
+                1.612836,
+                2.01452
+              ]
+            },
+            {
+              "Id": 513103,
+              "Level": 3,
+              "Parameters": [
+                1.0434,
+                1.0878,
+                0.66045,
+                1.3098,
+                0.835275,
+                0.8,
+                1.4465,
+                40,
+                5,
+                0.8673,
+                1.734233,
+                2.16615
+              ]
+            },
+            {
+              "Id": 513104,
+              "Level": 4,
+              "Parameters": [
+                1.14774,
+                1.19658,
+                0.726495,
+                1.44078,
+                0.918803,
+                0.88,
+                1.59115,
+                40,
+                5,
+                0.95403,
+                1.907656,
+                2.382765
+              ]
+            },
+            {
+              "Id": 513105,
+              "Level": 5,
+              "Parameters": [
+                1.220778,
+                1.272726,
+                0.772726,
+                1.532466,
+                0.977272,
+                0.936,
+                1.692405,
+                40,
+                5,
+                1.014741,
+                2.029052,
+                2.534396
+              ]
+            },
+            {
+              "Id": 513106,
+              "Level": 6,
+              "Parameters": [
+                1.30425,
+                1.35975,
+                0.825562,
+                1.63725,
+                1.044094,
+                1,
+                1.808125,
+                40,
+                5,
+                1.084125,
+                2.167791,
+                2.707688
+              ]
+            },
+            {
+              "Id": 513107,
+              "Level": 7,
+              "Parameters": [
+                1.419024,
+                1.479408,
+                0.898212,
+                1.781328,
+                1.135974,
+                1.088,
+                1.96724,
+                40,
+                5,
+                1.179528,
+                2.358556,
+                2.945964
+              ]
+            },
+            {
+              "Id": 513108,
+              "Level": 8,
+              "Parameters": [
+                1.533798,
+                1.599066,
+                0.970861,
+                1.925406,
+                1.227854,
+                1.176,
+                2.126355,
+                40,
+                5,
+                1.274931,
+                2.549322,
+                3.184241
+              ]
+            },
+            {
+              "Id": 513109,
+              "Level": 9,
+              "Parameters": [
+                1.648572,
+                1.718724,
+                1.043511,
+                2.069484,
+                1.319735,
+                1.264,
+                2.28547,
+                40,
+                5,
+                1.370334,
+                2.740087,
+                3.422517
+              ]
+            },
+            {
+              "Id": 513110,
+              "Level": 10,
+              "Parameters": [
+                1.77378,
+                1.84926,
+                1.122765,
+                2.22666,
+                1.419968,
+                1.36,
+                2.45905,
+                40,
+                5,
+                1.47441,
+                2.948195,
+                3.682455
+              ]
+            },
+            {
+              "Id": 513111,
+              "Level": 11,
+              "Parameters": [
+                1.917248,
+                1.998833,
+                1.213577,
+                2.406758,
+                1.534818,
+                1.47,
+                2.657944,
+                40,
+                5,
+                1.593664,
+                3.186652,
+                3.980301
+              ]
+            },
+            {
+              "Id": 513112,
+              "Level": 12,
+              "Parameters": [
+                2.085965,
+                2.17473,
+                1.320372,
+                2.618552,
+                1.669882,
+                1.59936,
+                2.891843,
+                40,
+                5,
+                1.733906,
+                3.467078,
+                4.330567
+              ]
+            },
+            {
+              "Id": 513113,
+              "Level": 13,
+              "Parameters": [
+                2.254683,
+                2.350627,
+                1.427166,
+                2.830347,
+                1.804946,
+                1.72872,
+                3.125742,
+                40,
+                5,
+                1.874149,
+                3.747503,
+                4.680834
+              ]
+            },
+            {
+              "Id": 513114,
+              "Level": 14,
+              "Parameters": [
+                2.423401,
+                2.526524,
+                1.533961,
+                3.042141,
+                1.94001,
+                1.85808,
+                3.359641,
+                40,
+                5,
+                2.014391,
+                4.027928,
+                5.0311
+              ]
+            },
+            {
+              "Id": 513115,
+              "Level": 15,
+              "Parameters": [
+                2.607457,
+                2.718412,
+                1.650465,
+                3.27319,
+                2.087352,
+                1.9992,
+                3.614804,
+                40,
+                5,
+                2.167383,
+                4.333847,
+                5.413209
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10511,
+        "Name": "Favonius Bladework - Edel",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous slashes.\nAt the end of the sequence, performs a more powerful slash.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_04"
+      },
+      {
+        "GroupId": 5132,
+        "Proud": {
+          "Descriptions": [
+            "#{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press} DMG|{param1:P}",
+            "Hold DMG|{param2:P}",
+            "Icewhirl Brand DMG|{param3:P}",
+            "DEF Bonus|{param9:P} Per Stack",
+            "Grimheart Duration|{param13:F1}s",
+            "Physical RES Decrease|{param4:P}",
+            "Cryo RES Decrease|{param5:P}",
+            "RES Decrease Duration|{param6:F1}s",
+            "#{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press} CD|{param7:F1}s",
+            "Hold CD|{param8:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 513201,
+              "Level": 1,
+              "Parameters": [
+                1.464,
+                2.456,
+                0.96,
+                0.16,
+                0.16,
+                7,
+                4,
+                10,
+                0.3,
+                14,
+                -0.16,
+                -0.16,
+                18
+              ]
+            },
+            {
+              "Id": 513202,
+              "Level": 2,
+              "Parameters": [
+                1.5738,
+                2.6402,
+                1.032,
+                0.17,
+                0.17,
+                7,
+                4,
+                10,
+                0.3,
+                14,
+                -0.17,
+                -0.17,
+                18
+              ]
+            },
+            {
+              "Id": 513203,
+              "Level": 3,
+              "Parameters": [
+                1.6836,
+                2.8244,
+                1.104,
+                0.18,
+                0.18,
+                7,
+                4,
+                10,
+                0.3,
+                14,
+                -0.18,
+                -0.18,
+                18
+              ]
+            },
+            {
+              "Id": 513204,
+              "Level": 4,
+              "Parameters": [
+                1.83,
+                3.07,
+                1.2,
+                0.19,
+                0.19,
+                7,
+                4,
+                10,
+                0.3,
+                14,
+                -0.19,
+                -0.19,
+                18
+              ]
+            },
+            {
+              "Id": 513205,
+              "Level": 5,
+              "Parameters": [
+                1.9398,
+                3.2542,
+                1.272,
+                0.2,
+                0.2,
+                7,
+                4,
+                10,
+                0.3,
+                14,
+                -0.2,
+                -0.2,
+                18
+              ]
+            },
+            {
+              "Id": 513206,
+              "Level": 6,
+              "Parameters": [
+                2.0496,
+                3.4384,
+                1.344,
+                0.21,
+                0.21,
+                7,
+                4,
+                10,
+                0.3,
+                14,
+                -0.21,
+                -0.21,
+                18
+              ]
+            },
+            {
+              "Id": 513207,
+              "Level": 7,
+              "Parameters": [
+                2.196,
+                3.684,
+                1.44,
+                0.22,
+                0.22,
+                7,
+                4,
+                10,
+                0.3,
+                14,
+                -0.22,
+                -0.22,
+                18
+              ]
+            },
+            {
+              "Id": 513208,
+              "Level": 8,
+              "Parameters": [
+                2.3424,
+                3.9296,
+                1.536,
+                0.23,
+                0.23,
+                7,
+                4,
+                10,
+                0.3,
+                14,
+                -0.23,
+                -0.23,
+                18
+              ]
+            },
+            {
+              "Id": 513209,
+              "Level": 9,
+              "Parameters": [
+                2.4888,
+                4.1752,
+                1.632,
+                0.24,
+                0.24,
+                7,
+                4,
+                10,
+                0.3,
+                14,
+                -0.24,
+                -0.24,
+                18
+              ]
+            },
+            {
+              "Id": 513210,
+              "Level": 10,
+              "Parameters": [
+                2.6352,
+                4.4208,
+                1.728,
+                0.25,
+                0.25,
+                7,
+                4,
+                10,
+                0.3,
+                14,
+                -0.25,
+                -0.25,
+                18
+              ]
+            },
+            {
+              "Id": 513211,
+              "Level": 11,
+              "Parameters": [
+                2.7816,
+                4.6664,
+                1.824,
+                0.25,
+                0.25,
+                7,
+                4,
+                10,
+                0.3,
+                14,
+                -0.25,
+                -0.25,
+                18
+              ]
+            },
+            {
+              "Id": 513212,
+              "Level": 12,
+              "Parameters": [
+                2.928,
+                4.912,
+                1.92,
+                0.25,
+                0.25,
+                7,
+                4,
+                10,
+                0.3,
+                14,
+                -0.25,
+                -0.25,
+                18
+              ]
+            },
+            {
+              "Id": 513213,
+              "Level": 13,
+              "Parameters": [
+                3.111,
+                5.219,
+                2.04,
+                0.25,
+                0.25,
+                7,
+                4,
+                10,
+                0.3,
+                14,
+                -0.25,
+                -0.25,
+                18
+              ]
+            },
+            {
+              "Id": 513214,
+              "Level": 14,
+              "Parameters": [
+                3.294,
+                5.526,
+                2.16,
+                0.25,
+                0.25,
+                7,
+                4,
+                10,
+                0.3,
+                14,
+                -0.25,
+                -0.25,
+                18
+              ]
+            },
+            {
+              "Id": 513215,
+              "Level": 15,
+              "Parameters": [
+                3.477,
+                5.833,
+                2.28,
+                0.25,
+                0.25,
+                7,
+                4,
+                10,
+                0.3,
+                14,
+                -0.25,
+                -0.25,
+                18
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10512,
+        "Name": "Icetide Vortex",
+        "Description": "#Sharp frost, swift blade.\n\n<color=#FFD780FF>{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}</color>\nSlashes swiftly, dealing <color=#99FFFFFF>Cryo DMG</color>.\nWhen it hits an opponent, Eula gains a stack of Grimheart that stacks up to 2 times. These stacks can only be gained once every 0.3s.\n\n<color=#FFD780FF>Grimheart</color>\nIncreases Eula's resistance to interruption and DEF.\n\n<color=#FFD780FF>Hold</color>\nWielding her sword, Eula consumes all the stacks of Grimheart and lashes forward, dealing <color=#99FFFFFF>AoE Cryo DMG</color> to opponents in front of her.\nIf Grimheart stacks are consumed, surrounding opponents will have their Physical RES and <color=#99FFFFFF>Cryo RES</color> decreased.\nEach consumed stack of Grimheart will be converted into an Icewhirl Brand that deals <color=#99FFFFFF>Cryo DMG</color> to nearby opponents.\n\n<i>\"So the waves roiled, swallowing the crown of the nobles. And ever after did each drop amidst the icy waves reflect a golden crown, each and every droplet of the spray shining with its light.\"</i>",
+        "Icon": "Skill_S_Eula_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 5139,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:P}",
+          "Lightfall Sword Base DMG|{param2:F1P}",
+          "DMG Per Stack|{param3:F1P}",
+          "Maximum Stacks|{param4:I}",
+          "CD|{param5:F1}s",
+          "Energy Cost|{param6:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 513901,
+            "Level": 1,
+            "Parameters": [
+              2.456,
+              3.67048,
+              0.74992,
+              30,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 513902,
+            "Level": 2,
+            "Parameters": [
+              2.6402,
+              3.96924,
+              0.81096,
+              30,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 513903,
+            "Level": 3,
+            "Parameters": [
+              2.8244,
+              4.268,
+              0.872,
+              30,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 513904,
+            "Level": 4,
+            "Parameters": [
+              3.07,
+              4.6948,
+              0.9592,
+              30,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 513905,
+            "Level": 5,
+            "Parameters": [
+              3.2542,
+              4.99356,
+              1.02024,
+              30,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 513906,
+            "Level": 6,
+            "Parameters": [
+              3.4384,
+              5.335,
+              1.09,
+              30,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 513907,
+            "Level": 7,
+            "Parameters": [
+              3.684,
+              5.80448,
+              1.18592,
+              30,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 513908,
+            "Level": 8,
+            "Parameters": [
+              3.9296,
+              6.27396,
+              1.28184,
+              30,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 513909,
+            "Level": 9,
+            "Parameters": [
+              4.1752,
+              6.74344,
+              1.37776,
+              30,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 513910,
+            "Level": 10,
+            "Parameters": [
+              4.4208,
+              7.2556,
+              1.4824,
+              30,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 513911,
+            "Level": 11,
+            "Parameters": [
+              4.6664,
+              7.84245,
+              1.6023,
+              30,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 513912,
+            "Level": 12,
+            "Parameters": [
+              4.912,
+              8.532586,
+              1.743302,
+              30,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 513913,
+            "Level": 13,
+            "Parameters": [
+              5.219,
+              9.222721,
+              1.884305,
+              30,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 513914,
+            "Level": 14,
+            "Parameters": [
+              5.526,
+              9.912857,
+              2.025307,
+              30,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 513915,
+            "Level": 15,
+            "Parameters": [
+              5.833,
+              10.665732,
+              2.179128,
+              30,
+              20,
+              80
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10515,
+      "Name": "Glacial Illumination",
+      "Description": "Brandishes her greatsword, dealing <color=#99FFFFFF>Cryo DMG</color> to nearby opponents and creating a Lightfall Sword that follows her around for a duration of up to 7s.\nWhile present, the Lightfall Sword increases Eula's resistance to interruption. When Eula's own Normal Attack, Elemental Skill, and Elemental Burst deal DMG to opponents, they will charge the Lightfall Sword, which can gain an energy stack once every 0.1s.\nOnce its duration ends, the Lightfall Sword will descend and explode violently, dealing Physical DMG to nearby opponents.\nThis DMG scales on the number of energy stacks the Lightfall Sword has accumulated.\nIf Eula leaves the field, the Lightfall Sword will explode immediately.\n\n<i>It is easy to sink. But even so, she desires to freeze this oncoming tide.</i>",
+      "Icon": "Skill_E_Eula_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 5121,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 512101,
+              "Level": 1,
+              "Parameters": [
+                0.5
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 512101,
+        "Name": "Roiling Rime",
+        "Description": "If 2 stacks of Grimheart are consumed upon unleashing the Holding Mode of <color=#FFD780FF>Icetide Vortex</color>, a Shattered Lightfall Sword will be created that will explode immediately, dealing 50% of the basic Physical DMG dealt by a Lightfall Sword created by <color=#FFD780FF>Glacial Illumination</color>.",
+        "Icon": "UI_Talent_S_Eula_05"
+      },
+      {
+        "GroupId": 5122,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 512201,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 512201,
+        "Name": "Wellspring of War-Lust",
+        "Description": "When <color=#FFD780FF>Glacial Illumination</color> is cast, the CD of <color=#FFD780FF>Icetide Vortex</color> is reset and Eula gains 1 stack of Grimheart.",
+        "Icon": "UI_Talent_S_Eula_06"
+      },
+      {
+        "GroupId": 5123,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 512301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 512301,
+        "Name": "Aristocratic Introspection",
+        "Description": "When Eula crafts Character Talent Materials, she has a 10% chance to receive double the product.",
+        "Icon": "UI_Talent_Eula_Combine"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 511,
+        "Name": "Tidal Illusion",
+        "Description": "Every time <color=#FFD780FF>Icetide Vortex</color>'s Grimheart stacks are consumed, Eula's Physical DMG is increased by 30% for 6s.\nEach stack consumed will increase the duration of this effect by 6s up to a maximum of 18s.",
+        "Icon": "UI_Talent_S_Eula_02"
+      },
+      {
+        "Id": 512,
+        "Name": "Lady of Seafoam",
+        "Description": "#Decreases the CD of <color=#FFD780FF>Icetide Vortex</color>'s Holding Mode, rendering it identical to {LAYOUT_MOBILE#Tapping}{LAYOUT_PC#Press}{LAYOUT_PS#Press} CD.",
+        "Icon": "UI_Talent_S_Eula_01"
+      },
+      {
+        "Id": 513,
+        "Name": "Lawrence Pedigree",
+        "Description": "Increases the Level of <color=#FFD780FF>Glacial Illumination</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Eula_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 514,
+        "Name": "The Obstinacy of One's Inferiors",
+        "Description": "Lightfall Swords deal 25% increased DMG against opponents with less than 50% HP.",
+        "Icon": "UI_Talent_S_Eula_03"
+      },
+      {
+        "Id": 515,
+        "Name": "Chivalric Quality",
+        "Description": "Increases the Level of <color=#FFD780FF>Icetide Vortex</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Eula_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 516,
+        "Name": "Noble Obligation",
+        "Description": "Lightfall Swords created by <color=#FFD780FF>Glacial Illumination</color> start with 5 stacks of energy. Normal Attacks, Elemental Skills, and Elemental Bursts have a 50% chance to grant the Lightfall Sword an additional stack of energy.",
+        "Icon": "UI_Talent_S_Eula_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Dance of the Shimmering Wave",
+    "Detail": "The Spindrift Knight, a scion of the old aristocracy, and the Captain of the Knights of Favonius Reconnaissance Company. The reason for which a descendant of the ancient nobles might join the Knights remains a great mystery in Mondstadt to this very day.",
+    "Association": 1,
+    "Native": "Knights of Favonius",
+    "BirthMonth": 10,
+    "BirthDay": 25,
+    "VisionBefore": "Cryo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Aphros Delos",
+    "CvChinese": "子音",
+    "CvJapanese": "佐藤利奈",
+    "CvEnglish": "Suzie Yeung",
+    "CvKorean": "Kim Hyeon-ji",
+    "CookBonus": {
+      "OriginItemId": 108165,
+      "ItemId": 108245,
+      "InputList": [
+        100061,
+        100062,
+        110004,
+        110001
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Captain Eula Lawrence, Spindrift Knight, Knights of Favonius Reconnaissance Company. I extend to you my greetings. Huh? What's that...? Yes, Lawrence, the evil aristocrats of historical infamy. Oh, we're still very much evil. Just look at me, I'm infiltrating the inner ranks of the Knights of Favonius, all as part of a diabolical plan to exact our revenge and reclaim our former glory!"
+      },
+      {
+        "Title": "Chat: Etiquette",
+        "Context": "Knights and aristocrats share the same cultural heritage, but the knights had enough sense to do away with all the superfluous detail."
+      },
+      {
+        "Title": "Chat: Bladework",
+        "Context": "You want to learn some Favonius Bladework? Heh, alright then, I'll teach you... Oh yes, I'll teach you, alright, mark my words..."
+      },
+      {
+        "Title": "Chat: Rules",
+        "Context": "Aristocratic etiquette is all just for show... Just smile and nod along! I was forced to learn all of the rules by heart, but even I don't take them that seriously."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Quick, under the umbrella, or you'll get soaked! You can't risk catching a cold, because it might turn into something more serious, and if that happens... Well, I can't go avenging my clan by picking on the sick now, can I?"
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "This weather is a hindrance. The thunder drowns out all other sounds, hampering my perception of the surrounding environment."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "Visibility is excellent! If we head to higher ground, we can do a full recon of enemy activity in the area."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Rise and shine! The two-hour period before sunrise is the perfect time to strike, because the sentries are getting drowsy towards the end of their long night shift."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Go easy on the grains at lunch and fill up on lean meat instead. If you get drowsy in the afternoon, anyone who's looking for an opportunity to take you down will make their move."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "\"May the gentle breeze softly send thee into a sweet sleep.\" ...One of a select few aristocratic pleasantries that's actually quite lovely."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Would you like to hear a lullaby on the bone whistle? It'll send you into a deep and everlasting sleep... Hmm, no. When it comes to my revenge, far more imaginative means of retribution are in order..."
+      },
+      {
+        "Title": "About Eula: The Knights",
+        "Context": "The easiest way to destroy your enemy is to take them down from the inside, right? That's why I joined the Knights of Favonius."
+      },
+      {
+        "Title": "About Eula: Bearing",
+        "Context": "Since I'm a genuine Knight of Favonius, I fulfill my duties like any other self-respecting individual would. Look, I may be a descendant of a disgraced ruling elite, but I'm not a total degenerate!"
+      },
+      {
+        "Title": "About Eula: Scout",
+        "Context": "The role of a scout is to hunt down enemy troops, or fend off the enemy in side skirmishes away from the main battle. There aren't a whole lot of rules, which suits my style very well indeed!"
+      },
+      {
+        "Title": "About Eula: Dance",
+        "Context": "Not all customs of the Lawrence Clan are despicable. At least the \"Dance of Sacrifice\" is pure and noble. It puts my mind at ease and gives me comfort. It's been years, but it's still dear to me. My body remembers every step that I... Well anyway, to end this digression, those who wish to master my signature \"Favonius Bladework\" technique have to pass my dance class first."
+      },
+      {
+        "Title": "About Us: Commonality",
+        "Context": "We're not so different, you and I. We're both outsiders in Mondstadt. Difference is, Mondstadt welcomes you with open arms, but they treat me with hostility and suspicion..."
+      },
+      {
+        "Title": "About Us: Feud",
+        "Context": "Our feud is for the long term, so rather than get payback on a piecemeal basis, I think I'll make things easier for myself and wait for a day when I can settle the score once and for all. It could be in ten years, could even be twenty... But don't worry, I won't forget. In the meantime, I'll need you to take good care of yourself and have a happy, healthy life, okay?"
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "\"Descendant of a depraved dynasty\" isn't the most flattering reputation to have. The only way I can shake it for good is if I keep avenging my kin in my own way. Those who desire vengeance need power first, so it makes sense that I would get a Vision."
+      },
+      {
+        "Title": "Something to Share: Bone Whistle",
+        "Context": "My bone whistle makes a versatile range of sounds, which comes in handy for confusing the enemy. I often use it to imitate the sound of the sea, which is where I get my title of \"Spindrift Knight\" — this despite the fact that the bone whistle is actually a Liyue tradition... But then again, no one seems to look too closely into that kind of thing. I'm mean, they took me on, and I'm an exile of Mondstadt trained by an outcast of Liyue..."
+      },
+      {
+        "Title": "Something to Share: Wine-Tasting",
+        "Context": "Technically, aged Dandelion Wine should be poured into a silver goblet and allowed to breathe for 12 minutes, then you're supposed to add ice cubes, ideally so 60% of the ice is submerged beneath the wine. I refuse to do all that though, it's not worth the hassle."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Why do Mist Flowers have to be so rare? The powder they produce works wonders for the bone whistle. It gives it a crisper, clearer sound."
+      },
+      {
+        "Title": "About Amber",
+        "Context": "Amber's someone who thinks for herself. On the day I first joined the Knights, she cleaned my dormitory and gave me a tour of the headquarters, and she's helped me with a myriad of other things in the time since. Now, everyone looks at me like the older sibling who needs the younger sibling to do everything for them! Hmph. For this, she must pay!"
+      },
+      {
+        "Title": "About Jean",
+        "Context": "The Acting Grand Master's family and mine are sworn enemies. But she draws a clear line between professional and personal matters. She saw I was capable, admitted me into the Knights, and gave me lots of opportunities. So, when the time comes for vengeance, I'll afford her a reasonably soft landing."
+      },
+      {
+        "Title": "About Lisa",
+        "Context": "She's so annoying. She must have read thousands of books... could even be tens of thousands. Meaning, she can effortlessly recall any number of vile tales about the Lawrence Clan's corruption off the top of her head, accurate down to the exact date. Logically speaking, she'd be the perfect person to talk to about someone I'd like to track down, but... swallowing my pride would be too great a challenge."
+      },
+      {
+        "Title": "About Barbara",
+        "Context": "Everyone loves her. What's her secret? Maybe I could learn a thing or two from her... Hmm, or maybe not. I can't imagine a \"Shining Idol\" would want anything to do with a descendant of a depraved dynasty."
+      },
+      {
+        "Title": "About Varka",
+        "Context": "Hmph, the Grand Master... He doesn't like to beat around the bush and has no care for rumors or trivial matters. A good guy, I guess. I sparred with him once, which ended in a tie, but his relaxed expression and leisurely attitude clearly indicated that he had been holding back the whole time... Such indignity! I will not let it go!"
+      },
+      {
+        "Title": "About Venti",
+        "Context": "I heard that bard sing a few songs about the Lawrence Clan... They were lighthearted and funny stories that mocked the clan in a way I've never heard anyone else do. Even I couldn't help but burst out laughing... And for this, he must pay!"
+      },
+      {
+        "Title": "About Razor",
+        "Context": "Free from social mores and other people's opinions, and no family obligations... Must be an easy life!"
+      },
+      {
+        "Title": "About Sucrose",
+        "Context": "The alchemist... She once gave me a piece of equipment and told me it would help me infiltrate an Abyss Order camp undetected. In reality, it caused a huge explosion that completely blew my cover and before I knew it I was being accosted by 13 mitachurls... Afterwards, I marched straight back there, intending to make her pay for what she had done, but when I saw how panicked and sheepish she looked, and watched her post her results on the wall with the word \"Fail,\" I couldn't bring myself to go through with it... After all, I didn't get hurt, just a little disheveled... and a little humiliated."
+      },
+      {
+        "Title": "About Diluc",
+        "Context": "I don't get along with some of the knights, and he doesn't think much of them in general, so you'd think that would make us allies. But the way he always acts so aloof — he's even worse than Acting Grand Master Jean. I want nothing to do with him."
+      },
+      {
+        "Title": "About Diona",
+        "Context": "Diona? She's a miracle worker when it comes to making cocktails, and to my surprise, we get along really well. She infiltrated a tavern with the hopes of tearing down the wine industry, while I infiltrated the knights to exact my revenge on them. A kindred spirit it seems..."
+      },
+      {
+        "Title": "About Yanfei: Encounter",
+        "Context": "This one's a long story... We ended up saving her life once when we were tracking down a batch of dangerous cargo that belonged to the Abyss Order. The Abyss Order had packed it up like regular cargo and wanted it shipped from Dornman Port to Liyue Harbor. She was acting as a consultant for the merchant vessel, where she discovered something in the cargo — and then began to investigate, putting herself in grave danger. Had we arrived just a few minutes later, it's likely she wouldn't have been so fortunate."
+      },
+      {
+        "Title": "About Yanfei: Assessment",
+        "Context": "We've kept in touch ever since. I like how smart she is. She knows the rules, but she also knows how to be flexible and act according to the situation. A few of the Knights would do well to take a leaf out of her book... Also, with her smarts, maybe she could help me track someone down that I've been looking for... She does owe me a favor from last time, after all."
+      },
+      {
+        "Title": "About Mika: Communication",
+        "Context": "When Mika was assigned to the Reconnaissance Company, I thought that he'd only last a few days, just like the others before him. But he surprised me. He never made a peep, but he completed all of his tasks quite admirably. He even volunteered to run errands for me, and assist with communication... Hmph... I don't know who is going around telling people that I need looking after..."
+      },
+      {
+        "Title": "About Mika: Returning",
+        "Context": "Mika's personality hasn't changed one bit since he's been out with the expedition, though his abilities have improved significantly. The Grand Master is clearly making sure nobody neglects their training... Hmm? Mika's unaware of his own improvement? It must be one of his blind spots... or perhaps he's just being humble. Either way, things like this don't escape me. I know my team."
+      },
+      {
+        "Title": "More About Eula: I",
+        "Context": "The life of a Lawrence doesn't include much worth talking about... Basically, whatever you say, whatever you do, people will always despise you and treat you like a potential threat to society. It's nowhere near as bad as it used to be, though. Before I'd joined the Knights, good grief... I couldn't even buy groceries. Even Good Hunter and Mondstadt General Goods wouldn't take my money. I literally had to go out and hunt my own food and cook it over a campfire if I wanted to eat dinner."
+      },
+      {
+        "Title": "More About Eula: II",
+        "Context": "People tell me that if I just spoke more softly, or was more polite, or acted more deferentially, others may find it easier to forgive me, but the only reason they think that way is because they've never been branded a pariah before. There is no easy path to redemption when you're a social pariah. I'm more inclined to stop tiptoeing around everyone all the time and just get out there and make them respect me the old-fashioned way! As in, we square off and if they win, I humbly accept my punishment, but if they lose, they must acquiesce to my demands... Such as... Well, I mean, if I want to buy a loaf of bread, take my darn money, for crying out loud!"
+      },
+      {
+        "Title": "More About Eula: III",
+        "Context": "The Knights of Favonius are actually fairly reasonable, at the very least they reward merit and not social status. The reason they invited me to join their ranks is because I'd sparred with some of their crack troops and won through my own sheer skill. Being an insider in the organization will make getting revenge much easier, as it removes many of life's complications, so what's not to love?"
+      },
+      {
+        "Title": "More About Eula: IV",
+        "Context": "The name Lawrence only became a social stigma after the clan fell from grace. It was once an honor to be called a Lawrence, but unfortunately, most people have forgotten about that part of history. The Grand Master says that I am performing rather well as a knight, and that if it's not enough to restore the honor of the Lawrence name, it's certainly a strong rebuttal against the one-sided opinions so many people throw around. I'm quite satisfied with that appraisal."
+      },
+      {
+        "Title": "More About Eula: V",
+        "Context": "If my family members refuse to change their corrupt ways, or worse, continue to cause active harm in Mondstadt... I should be the one to end them, along with the Lawrence name itself. For once, it'd be a family obligation I'd actually enjoy. And once the deed was done, I'd be free to pick any name I wanted. Or even let you pick one for me!"
+      },
+      {
+        "Title": "Eula's Hobbies",
+        "Context": "I'm into all sorts of cool things. Sipping a nice cold drink, sitting in a canyon feeling the biting wind howl past my face, or diving into the lake at the foot of Dragonspine... Waiting for you to stroll by unsuspectingly, so I can sneak up behind you and drag you down into the icy depths..."
+      },
+      {
+        "Title": "Eula's Troubles",
+        "Context": "Sometimes, when it's busy in the tavern, they ask me to share a table with other customers. But once they find out that I'm a Lawrence, suddenly everyone gets indignant and provocative, and starts trying to bait me out in some way. I just want to have a drink, is that too much to ask!?"
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "I like making my own treats. Not always your typical sweet treats, though. For example, a Chilled Tomato and Aspic Jelly Egg Roll pairs very nicely with an ice-cold glass of Berry & Mint Punch. The most important thing is that they leave the people who like eating them with big smiles on their faces."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I can't stand a rich broth. The flavor is too overpowering, it's so filling you can't train or fight afterward, and also, it doesn't really work as field rations... Simply put, broth and I are sworn enemies!"
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Oh? Are you putting me to the test? Challenge accepted."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Eh, not that great... How about you try it?"
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "The nerve on you, are you exacting revenge?"
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Today is a day worth observing, though you shouldn't mark your development in age alone. Accept my gift of a bone whistle, and allow me to teach you its secrets. When your day of reckoning comes, see how long you can fend me off with it... It'll make the whole thing much more exciting."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "My fighting skills just got a whole lot stronger... But I shouldn't get too conceited just yet. There are some truly formidable knights among our ranks, and I must outperform them immeasurably if I wish to defeat them and avenge my clan!"
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Good! With this much power, I daresay even the Acting Grand Master herself would be no match for me!"
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "How strange... In the time I've spent with you, my strength seems to have improved exceptionally quickly. I suppose I was rather fortunate to make an enemy of you. I'd better dig my teeth in to make sure you can't get away!"
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "Excellent! The unstoppable power of an immovable glacier dwells within me now and no grand master, acting or otherwise, can stand in my way! There is no time to delay. I must devise my plan, and unleash my attack! Once I have crushed the Knights of Favonius beneath my heel, my next target... is you. Don't try to run. Stand beside me and witness all that must come to pass."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Beg for mercy."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Shudder!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Crush!"
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "I condemn you!"
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "Rack and ruin!"
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "Eye for an eye!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Flood of frost!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Freeze to the core!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Vengeance will be mine!"
+      },
+      {
+        "Title": "Sprint Start: I",
+        "Context": "More speed."
+      },
+      {
+        "Title": "Deploying Wind Glider: I",
+        "Context": "Time to scout!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "What do we have here..."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "I can put these to good use."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Ha, at least good luck doesn't discriminate by clan."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "The odds are against us..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Let us cross swords..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Well met!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "I'll take it from here!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Disengage, that's an order!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "What a sorry sight..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "I'll be back... with a vengeance..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Guess I got my comeuppance..."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Touché!"
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Good grief..."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Ready for reconnaissance."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "I'll scout ahead."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "What's your battle plan?"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Eula's role within the Knights of Favonius is Captain of the Reconnaisance Company.\nThe nature of her work means that she rarely sets foot in the city — she spends most of her time out in the wild, leading her team of scouts as they hunt down Abyss Order operatives and other monsters.\nKnown as the Spindrift Knight, Eula wields her blade with consummate skill, but perhaps more importantly, she is well-versed in strategy and possesses great courage and excellent intuition. Grand Master Varka had nothing but the highest praise for her, even declaring once that she was the Dandelion Knight's equal on the battlefield.\nOn the face of it, to have two such outstanding knights attending to the defense of Mondstadt in a single generation should be a cause for nothing but celebration. But dig a little deeper and there is a fundamental difference between Jean and Eula.\nFor Eula is a descendant of the once-aristocratic Lawrence Clan. The blood that flows through her veins once flowed through those of Mondstadt's oppressors during one of the darkest periods of the city's history.\nConsequently, Eula has been viewed with contempt by the citizens of Mondstadt since birth. The Lawrence name stands for a legacy of depravity and despotism that stains Mondstadt's past and scars the minds of its citizens even to this day.\nSo, whenever Eula appears, old wounds resurface. People despise the aristocracy, and this does no favors for her reputation.\nHowever, Eula is strong-willed and in spite of everything, she joined the Knights of Favonius and rose to the rank of Captain.\nWhen people in the city voiced their reservations, she would respond head-on, claiming that her chosen course of action was out of a desire for \"vengeance.\" This matter-of-fact confession would alarm them all the more and has convinced everyone that she joined the Knights of Favonius only to serve as a mole for the former aristocracy.\nOne person who sees things differently is Acting Grand Master Jean. In fact, she speaks rather fondly of Eula.\n\"The rumors are all groundless. The Spindrift Knight is simply misunderstood, that's all.\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "On the one hand, she is a descendant of the disgraced Lawrence Clan, the scion of a corrupt aristocracy. On the other, she is one of the top two sword fighters in Mondstadt.\nIn other words, Eula is equal parts tainted blood and superior swordsmanship.\nThere is no knowing when she might strike, nor what she might take from you... In the eyes of the citizens of Mondstadt, the Reconnaissance Captain is as unpredictable and tumultuous as the waves on a stormy sea.\nEula responds with a cold haughtiness to accusations of this nature. To any who dare insinuate such things to her face, she replies, \"How dare you. Hmph, I will remember this.\"\nShe is consumed by the desire to avenge herself, but is often on the move far away from the city. Sometimes upon her return to Mondstadt, she will brandish her greatsword and march straight to the Knights of Favonius headquarters.\nOn one occasion, two fresh recruits standing guard on their first day on patrol watched just such a scene play out before their eyes. Alarmed and unsure how to respond, they ultimately did not dare to intervene. Instead, they simply watched on helplessly while Eula made a beeline for Master Jean's office.\nMuch to their surprise, however, hours passed and no sound of a struggle was heard from within.\nStill worried, the guards raised their concerns to Cavalry Captain Kaeya and Librarian Lisa as they were passing by.\n\"The Reconnaissance Captain is back again? When you saw her, was she marching towards Jean's office with her sword in hand, looking like she wanted to settle a score?\"\n\"Goodness, I must head there straight away. How can they have a tea break without me?\"\nLisa hurried to Jean's office the moment she finished speaking. Meanwhile, Kaeya took the two guards outside and explained to them whilst trying to suppress a fit of the giggles:\n\"We all know that the Acting Grand Master is a good judge of character, don't we? The Knights of Favonius are interested in a person's ability, not their family history. That's why she gives up her time to spar with the Reconnaissance Captain. In doing so, she can preserve the dignity of the Knights of Favonius while also providing a way of settling old grievances. Quite brilliant, don't you think?\"\n\"Ohh... S—So that's how it is...\" \"...So 'tea break' is code for 'sparring'...?\"\nThis kind of thing occurs almost on a monthly basis. But... if they're engaged in some sort of strange sparring ritual in there for the sake of settling old grievances and honing their fighting skills... How come they don't make a ton of noise?"
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "In truth, Eula is nothing like the fearsome predator many imagine her to be. On the contrary, constantly being met with prejudice at every turn means she is often the victim.\nAt one time, shops would refuse to sell her their goods, restaurants would put no care and attention into her orders, and the citizens on her patrol route would refuse to cooperate with her. So, Eula's work is fraught with difficulties.\nWhen conflict arises, Eula fights back with a sternly worded threat to indicate that she will remember this grievance and make the offending party pay for it one day. It seems to work like a magic spell, because as soon as these words are uttered, the conflict ceases immediately without ever having to escalate to the level of an all-out confrontation.\nFunnily enough, although people always have their guard up around Eula, she is a law-abiding citizen and has never harmed another Mondstadter in her life. She may come across as having a somewhat frosty demeanor, but she is entirely scrupulous in her speech and conduct.\nNo one can ever find fault with her actions, and as people gradually get to know her, their morbid fear of her will dissipate. They will also start to realize her threats of vengeance are nothing more than a figure of speech that simply serve as a verbal warning in the moment.\nEula, who may or may not be working to bring down the Knights of Favonius from the inside... Eula, who may or may not be an aristocrat mole... New recruits in the Knights of Favonius find her the most difficult person to deal with.\nWhen Jean sends a new recruit to track down Eula in the wilds and deliver a new set of verbal orders, they always receive the same response: \"If you have to resort to tasking the descendant of your former oppressors with doing your work, then perhaps you are not as strong as I thought.\"\nBut despite the antagonism in her words, she will complete her newly assigned tasks to perfection. The new recruit is invariably forced to admit that with her abilities, it is no wonder she was able to achieve a captaincy within just a few years of joining the Knights.\nEveryone knows Eula as the frosty and antagonistic Spindrift Knight, the aristocrat who has a score to settle with the Knights of Favonius, an openly hostile and potentially dangerous individual... but is this really the truth of who she is?\nOn the way back, the new recruit thinks back over Eula's every action.\n\"What was that kind and resilient look I saw in her eyes when she wasn't looking at me? She seems to take her work seriously... So, surely she can be relied on after all?\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Mondstadt is a city of freedom and happiness where even the descendants of a disgraced former ruling class can find true friends.\nFortunately, there is one person whom Eula can rely on to be her spokesperson to the Mondstadt masses, and that person is Outrider Amber.\nEverybody loves Amber, so when she is around, shopkeepers will sell their wares to Eula at the normal price. If they're in an especially good mood, they may even exchange a few words with her during the process. It is at moments like this that Eula shows her most agreeable side.\nBecause of this, and because Amber is just so nice, she'll often accompany Eula on trips out, or even run all her errands for her and deliver the goods straight to her home.\nAmber is also the reason that the city folk end up hearing all about the Reconnaissance Captain's accomplishments out in the field. Each time Amber informs them of Eula's long list of achievements in battle, they can't help but let out a little gasp of surprise.\nEarly one weekend morning, Amber stood atop a makeshift stage of wooden crates and began announcing Eula's latest highlights: \"Recently, the Knights of Favonius Reconnaissance Captain saved the life of a woman at Dornman Port. After further investigation with this woman's close cooperation, she then proceeded to successfully capture all the Abyss Order operatives hiding in the vicinity of the port. The woman in question was a renowned legal expert from Liyue, and the Knights of Favonius have since received official correspondence from the Liyue Communications Office thanking the Reconnaissance Captain for her deeds...\"\nWhether because Amber's persistent efforts have overcome historical prejudices or because Eula's achievements as a knight have quelled the long-standing fear in people's hearts, Eula's life has changed noticeably in recent years. Most of the city folk are no longer openly hostile towards her, and she has won over the members of the Knights of Favonius with her consistent results in the field.\nAs for the members of the Reconnaissance Company under her leadership, they support her unconditionally. They always have her back when they head out to Mondstadt's outskirts to defend the peace of their nation.\nOf course, the person who has always tirelessly rooted for Eula, and who is now the most delighted to see people's attitudes towards her change, is Amber. They had been friends for a long time before Eula ever joined the Knights of Favonius, and as the beloved mentee of Amber's grandfather, the first Outrider, Eula has her complete trust."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "One might not expect this from her frosty attitude and sharp tongue, but Eula is a talented chef.\nThe Reconnaissance Company today prides itself on having the best field rations in the Knights of Favonius. One staple of their inventory is a moon-shaped pie. Though a field ration, this wonderfully delicious and highly portable food is loved by all who try it.\nThe Reconnaissance Company's designated chef once admitted that when developing this item, she was inspired by the captain's own baked goods. She extended the baking time to make the crust tougher and also substituted a few highly perishable ingredients with ones that last longer, reducing the cost while significantly prolonging the shelf life.\nEven after such a major change to the recipe, the pie still tasted delicious. So, whenever the scouts are snacking, they can't help but wonder: If this is the field ration version, how delicious must the captain's original recipe taste?\nThe answer to this question is buried deep within the pages of a dusty old book in the library. The Lawrence Clan may have been overthrown a long time ago, but they have never given up hope of one day rising again and reclaiming their place as the ruling class. So that they are always prepared for this monumental moment, their offspring are subjected to an educational regime so unbelievably harsh that it is considered borderline abusive.\n\"Noble obligations\" must be performed to absolute perfection in every possible sense, and these obligations cover etiquette, ritual, and study as well as cooking and other domestic chores.\nIn the eyes of the Lawrence Clan, \"Post-liberation Mondstadt lacks etiquette and taste. When the day comes for our clan to seize power once more, there shall be none who are qualified to be our servants. We must be cautious. We must never stoop to the level of the commoners and set foot in the quagmire of vulgarity.\"\nThe Lawrence Clan's culinary arts teacher was particularly strict. If your dough was missing a half-spoonful of flour, or if your condiment was a few grains of salt short, or if you were two seconds late removing something from the oven, you were likely to be both scolded and disciplined. As far as Eula is concerned, the haute cuisine revered by the aristocrats is just another worthless consequence of people dogmatically following outdated rules.\nFor this reason, the only kind of person who Eula will permit to try her own home baking is someone who she... respects...? No, that would be taking it too far. Rather, it should be someone who she grudgingly accepts \"will keep following me around and bothering me, seemingly undeterred by my warnings, despite having crossed me many times to date.\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Besides traditional etiquette, art is the second most highly prized asset to the aristocrats, known as the \"second soul.\"\nThe \"Dance of Sacrifice\" — a ritual used by illustrious families to display their nobility — is thought of as the crystallized form of this soul, the prize gem in the ruler's scepter.\nFolklore holds that Mondstadt's most illustrious clans jointly created the Dance of Sacrifice long before the aristocracy's reign of bloodshed began.\nThe third act, which represents the Lawrence Clan, is a solo dance known as \"Flickering Candlelight.\" The most important part of the Dance of Sacrifice, it was performed by the most senior dancer, who was typically the eldest daughter of the clan.\nThe Lawrence Clan would summon top dancers to serve as tutors for the eldest daughter and ensure it was performed to perfection. Bleeding toes were seen as a point of pride and a rite of passage for every dancer.\nThis ancient ceremony was a continuous tradition for so long that even today, long after being expelled by the people of Mondstadt, the Lawrence Clan still honors it.\nHowever, without the grand banquet and the gorgeous stage that once featured prominently in ceremonial performances, the Dance of Sacrifice is now far from the grandiose affair it once was. Furthermore, the stringent requirements regarding the dancer's posture and movements have also been relaxed due to the lack of tutors. In the end, the Lawrence Clan reluctantly decided that it could no longer be a mandatory part of the curriculum, and they relegated it to an artistic pastime.\nOver time, the negative connotations and elitist expectations associated with this dance have faded away, and today it survives simply as a graceful dance.\nAs the eldest daughter of the present-day Lawrence Clan, Eula found it to be a relaxing pastime in her youth and a welcome respite from her other grueling courses of study.\nToday, Eula appears to have put her artistic pursuits behind her. At least, no one pictures dancing when they think of the Spindrift Knight.\nNevertheless, a distinctly dance-like aesthetic can be observed in Eula's bladework, along with an elegant rhythm and musicality that are difficult to capture in words.\nAs her greatsword rises and falls and sways to and fro, her distinctive and graceful poise is like that of a dancer under the moonlight: faraway, immaculate, and sublime."
+      },
+      {
+        "Title": "Glaciers and Waves",
+        "Context": "Eula is the bearer of the Lawrence family crest, the \"Glacial Seal.\" It is the highest martial symbol of the clan and represents the spirit of the Lawrence Clan in the early days of Mondstadt before their fall from grace: cold and unsullied, undaunted by any flame, composed and unshaken in all circumstances.\nFew among their number have passed the clan's trials in a thousand years, and the hopes of the clan are passed down from one seal-bearer to the next.\nEula was still quite young when she underwent the trial but she passed with ease, taking up the seal in the process. Then she departed with that badge of honor in her possession and has barely contacted the clan since.\nHer icy sword is a manifestation of the strength represented by the seal, striking with the cold, brutal force of a relentless blizzard and driving her foes into retreat.\nYet, sharp and bright as ice as she is, she has the title of \"Spindrift Knight,\" a name that leads many who hear it to assume that she manipulates Hydro instead of Cryo.\nThere is a story behind that misunderstanding — the story of a habit.\nEula carries an exquisitely crafted bone whistle with her at all times. Each time she blows it, the vivid sound of ocean waves rings out loud and clear, far and wide.\nSince the area her company is in charge of borders the sea, reproducing the sound of waves can be an excellent means of disturbing the enemy's judgment, or of deceiving less intelligent monsters into believing that a tsunami is inbound, causing them to flee in panic.\nUsing this unique combat tactic has helped Eula emerge victorious against larger forces than her own on numerous occasions, and has also earned her the moniker of \"Spindrift Knight.\"\nOf course, a bone whistle is capable of imitating many other sounds, and Eula has her reasons for imitating the ocean waves.\nIt would seem that something akin to the \"Glacier Knight\" should suit her better.\nBut perhaps Eula herself prefers the rolling waves to the cold and unyielding ice...\nRoaming freely across the world, gentle but firm with the reefs and sands in their dominion...\nYes, she yearns not to be sharp and rigid like ice, but to be free and unbound like the ocean spray."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Where do \"grievances\" come from?\nDire straits in the present? Or the misfortunes of the past?\nAnd what does \"vengeance\" mean?\nTo right wrongs and rebalance the scales of justice in one's favor? Or to drive one's foes into a pit of agony?\n\"Restore the clan's former glory, win the respect of the common folk, stand once more at the apex of rulership\"... These things were utterly unimportant to Eula.\nShe had never experienced the great humiliation of her clan — and all the torment she had endured in life had been at their own hands. She attempted to free herself from their shackles, yet struggled to obtain recognition from the outside world.\nHer talk of grievances and vengeance was but a habit, a signal, a shield.\nFor someone in her unique circumstances and position, what remarks should she just laugh off, and what ideas should she hold onto?\nHow should she fight this battle to break free, once and for all, from the great burden of her bloodline?\nIt was with all these questions and more circling around in her mind that Eula came under the tutelage of a long-forgotten old outrider. From him, she learned an open-mindedness and down-to-earth persistence that she had never previously encountered.\nBefore grappling with grievances and vengeance, before questions of clan and outsider, she first had to discover herself.\nHer survival mechanism... her means of self-preservation... her grit and determination...\nShe may articulate it in terms of \"grievances\" and \"vengeance,\" but nothing can change what it is at its core: something both strong and kind.\nEula finally found herself on a gentle path of revenge that was hers alone... and the moment she set foot on that path, there it appeared before her — her Vision."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 205100,
+      "Name": "Wavecrest Waltz",
+      "Description": "Eula's outfit. Consummate elegance shines through in this neat and smart knight's uniform.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104164,
+    113020,
+    100057,
+    112007,
+    104306,
+    113017
+  ],
+  "NameCard": {
+    "Name": "Eula: Ice-Sealed",
+    "Description": "Namecard style.\nA cold heart is but a shell to protect oneself.",
+    "Icon": "UI_NameCardIcon_Eula",
+    "PicturePrefix": "UI_NameCardPic_Eula"
+  }
+}

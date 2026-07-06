@@ -1,0 +1,1245 @@
+{
+  "Id": 10000041,
+  "PromoteId": 41,
+  "Sort": 6,
+  "Body": 2,
+  "Icon": "UI_AvatarIcon_Mona",
+  "SideIcon": "UI_AvatarIcon_Side_Mona",
+  "Name": "Mona",
+  "Description": "A mysterious young astrologer who proclaims herself to be \"Astrologist Mona Megistus,\" and who possesses abilities to match the title. Erudite, but prideful.",
+  "BeginTime": "2020-09-15T04:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 10,
+  "BaseValue": {
+    "HpBase": 810.322,
+    "AttackBase": 22.344,
+    "DefenseBase": 50.8555
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 4131,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:P}",
+            "4-Hit DMG|{param4:P}",
+            "Charged Attack DMG|{param5:P}",
+            "Charged Attack Stamina Cost|{param6:F1}",
+            "Plunge DMG|{param7:F1P}",
+            "Low/High Plunge DMG|{param8:P}/{param9:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 413101,
+              "Level": 1,
+              "Parameters": [
+                0.376,
+                0.36,
+                0.448,
+                0.5616,
+                1.4972,
+                50,
+                0.568288,
+                1.136335,
+                1.419344
+              ]
+            },
+            {
+              "Id": 413102,
+              "Level": 2,
+              "Parameters": [
+                0.4042,
+                0.387,
+                0.4816,
+                0.60372,
+                1.60949,
+                50,
+                0.614544,
+                1.228828,
+                1.534872
+              ]
+            },
+            {
+              "Id": 413103,
+              "Level": 3,
+              "Parameters": [
+                0.4324,
+                0.414,
+                0.5152,
+                0.64584,
+                1.72178,
+                50,
+                0.6608,
+                1.32132,
+                1.6504
+              ]
+            },
+            {
+              "Id": 413104,
+              "Level": 4,
+              "Parameters": [
+                0.47,
+                0.45,
+                0.56,
+                0.702,
+                1.8715,
+                50,
+                0.72688,
+                1.453452,
+                1.81544
+              ]
+            },
+            {
+              "Id": 413105,
+              "Level": 5,
+              "Parameters": [
+                0.4982,
+                0.477,
+                0.5936,
+                0.74412,
+                1.98379,
+                50,
+                0.773136,
+                1.545944,
+                1.930968
+              ]
+            },
+            {
+              "Id": 413106,
+              "Level": 6,
+              "Parameters": [
+                0.5264,
+                0.504,
+                0.6272,
+                0.78624,
+                2.09608,
+                50,
+                0.826,
+                1.65165,
+                2.063
+              ]
+            },
+            {
+              "Id": 413107,
+              "Level": 7,
+              "Parameters": [
+                0.564,
+                0.54,
+                0.672,
+                0.8424,
+                2.2458,
+                50,
+                0.898688,
+                1.796995,
+                2.244544
+              ]
+            },
+            {
+              "Id": 413108,
+              "Level": 8,
+              "Parameters": [
+                0.6016,
+                0.576,
+                0.7168,
+                0.89856,
+                2.39552,
+                50,
+                0.971376,
+                1.94234,
+                2.426088
+              ]
+            },
+            {
+              "Id": 413109,
+              "Level": 9,
+              "Parameters": [
+                0.6392,
+                0.612,
+                0.7616,
+                0.95472,
+                2.54524,
+                50,
+                1.044064,
+                2.087686,
+                2.607632
+              ]
+            },
+            {
+              "Id": 413110,
+              "Level": 10,
+              "Parameters": [
+                0.6768,
+                0.648,
+                0.8064,
+                1.01088,
+                2.69496,
+                50,
+                1.12336,
+                2.246244,
+                2.80568
+              ]
+            },
+            {
+              "Id": 413111,
+              "Level": 11,
+              "Parameters": [
+                0.7144,
+                0.684,
+                0.8512,
+                1.06704,
+                2.850669,
+                50,
+                1.202656,
+                2.404802,
+                3.003728
+              ]
+            },
+            {
+              "Id": 413112,
+              "Level": 12,
+              "Parameters": [
+                0.752,
+                0.72,
+                0.896,
+                1.1232,
+                3.054288,
+                50,
+                1.281952,
+                2.563361,
+                3.201776
+              ]
+            },
+            {
+              "Id": 413113,
+              "Level": 13,
+              "Parameters": [
+                0.799,
+                0.765,
+                0.952,
+                1.1934,
+                3.257907,
+                50,
+                1.361248,
+                2.721919,
+                3.399824
+              ]
+            },
+            {
+              "Id": 413114,
+              "Level": 14,
+              "Parameters": [
+                0.846,
+                0.81,
+                1.008,
+                1.2636,
+                3.461526,
+                50,
+                1.440544,
+                2.880478,
+                3.597872
+              ]
+            },
+            {
+              "Id": 413115,
+              "Level": 15,
+              "Parameters": [
+                0.893,
+                0.855,
+                1.064,
+                1.3338,
+                3.665146,
+                50,
+                1.51984,
+                3.039036,
+                3.79592
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10411,
+        "Name": "Ripple of Fate",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 water splash attacks that deal <color=#80C0FFFF>Hydro DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to deal <color=#80C0FFFF>AoE Hydro DMG</color> after a short casting time.\n\n<color=#FFD780FF>Plunging Attack</color>\nGathering the might of Hydro, Mona plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#80C0FFFF>AoE Hydro DMG</color> upon impact with the ground.",
+        "Icon": "Skill_A_Catalyst_MD"
+      },
+      {
+        "GroupId": 4132,
+        "Proud": {
+          "Descriptions": [
+            "DoT|{param1:F1P}",
+            "Explosion DMG|{param2:P}",
+            "CD|{param5:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 413201,
+              "Level": 1,
+              "Parameters": [
+                0.32,
+                1.328,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "Id": 413202,
+              "Level": 2,
+              "Parameters": [
+                0.344,
+                1.4276,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "Id": 413203,
+              "Level": 3,
+              "Parameters": [
+                0.368,
+                1.5272,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "Id": 413204,
+              "Level": 4,
+              "Parameters": [
+                0.4,
+                1.66,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "Id": 413205,
+              "Level": 5,
+              "Parameters": [
+                0.424,
+                1.7596,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "Id": 413206,
+              "Level": 6,
+              "Parameters": [
+                0.448,
+                1.8592,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "Id": 413207,
+              "Level": 7,
+              "Parameters": [
+                0.48,
+                1.992,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "Id": 413208,
+              "Level": 8,
+              "Parameters": [
+                0.512,
+                2.1248,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "Id": 413209,
+              "Level": 9,
+              "Parameters": [
+                0.544,
+                2.2576,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "Id": 413210,
+              "Level": 10,
+              "Parameters": [
+                0.576,
+                2.3904,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "Id": 413211,
+              "Level": 11,
+              "Parameters": [
+                0.608,
+                2.5232,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "Id": 413212,
+              "Level": 12,
+              "Parameters": [
+                0.64,
+                2.656,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "Id": 413213,
+              "Level": 13,
+              "Parameters": [
+                0.68,
+                2.822,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "Id": 413214,
+              "Level": 14,
+              "Parameters": [
+                0.72,
+                2.988,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "Id": 413215,
+              "Level": 15,
+              "Parameters": [
+                0.76,
+                3.154,
+                0,
+                0,
+                12
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10412,
+        "Name": "Mirror Reflection of Doom",
+        "Description": "Creates an illusory Phantom of Fate from coalesced waterspouts.\n\n<color=#FFD780FF>Phantom</color>\nHas the following special properties:\n·Continuously taunts nearby opponents, attracting their fire.\n·Continuously deals <color=#80C0FFFF>Hydro DMG</color> to nearby opponents.\n·When its duration expires, the Phantom explodes, dealing <color=#80C0FFFF>AoE Hydro DMG</color>.\n\n<color=#FFD780FF>Hold</color>\nUtilizes water currents to move backwards swiftly before conjuring a Phantom.\n\nOnly one Phantom created by Mirror Reflection of Doom can exist at any time.\n\n<i>Skilled astrologers have always dreamed of using a phantom facsimile of themselves to ward off imminent ill fate, but Mona must be the first to make such a mockery of it in all of Teyvat.</i>",
+        "Icon": "Skill_S_Mona_01"
+      },
+      {
+        "GroupId": 4133,
+        "Proud": {
+          "Descriptions": [
+            "Activation Stamina Consumption|{param1:F2}",
+            "Stamina Drain|{param2:F2}/s"
+          ],
+          "Parameters": [
+            {
+              "Id": 413301,
+              "Level": 1,
+              "Parameters": [
+                10,
+                15
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10413,
+        "Name": "Illusory Torrent",
+        "Description": "<color=#FFD780FF>Alternate Sprint</color>\nMona cloaks herself within the water's flow, consuming Stamina to move rapidly.\n\nWhen under the effect of Illusory Torrent, Mona can move at high speed on water.\nApplies the <color=#80C0FFFF>Wet</color> status to nearby opponents when she reappears.\n\n<i>This is something that Mona can do, but her teacher cannot. Well, but it's not as if her teacher would pursue any matter concerning Hydro Visions anyway...</i>",
+        "Icon": "Skill_S_Mona_02"
+      }
+    ],
+    "SpecialSkills": [
+      {
+        "GroupId": 4151,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 415101,
+              "Level": 1,
+              "Parameters": [
+                8,
+                3,
+                0.05,
+                2,
+                4,
+                0.5
+              ]
+            }
+          ],
+          "Display": 3
+        },
+        "Id": 415101,
+        "Name": "Witch's Eve Rite: Genesis of Starsigns",
+        "Description": "After completing <color=#FFD780FF>Witch's Homework: Of Untested Insight</color>, Mona will become a <color=#FFD780FF>Hexerei</color> character. When the party includes at least 2 Hexerei characters, you will gain the <color=#FFD780FF>Hexerei: Secret Rite</color> effect, which enhances Hexerei characters.\n\n<color=#FFD780FF>Hexerei: Secret Rite</color>\nWhen Mona's Normal Attacks or Charged Attacks hit an opponent, she gains 1 stack of <color=#FFD780FF>Astral Glow of Mercury</color>, for 8s. Max 3 stacks. This effect can grant at most one stack every 0.1s. When other party members trigger a Vaporize reaction on an enemy, all Astral Glow of Mercury stacks are consumed. Each stack consumed increases the damage of that Vaporize reaction by 5%.\nAdditionally, when Mona's Normal Attacks or Charged Attacks hit an opponent, the enemy's <color=#FFD780FF>Omen</color> duration is extended by 2s. This effect can trigger at most once every 0.5s, and can extend the Omen by up to 8s through this method.",
+        "Icon": "UI_Talent_S_Mona_07"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 4139,
+      "Proud": {
+        "Descriptions": [
+          "Illusory Bubble Duration|{param1:F1}s",
+          "Illusory Bubble Explosion DMG|{param2:P}",
+          "DMG Bonus|{param10:P}",
+          "Omen Duration|{param4:F1}s",
+          "CD|{param5:F1}s",
+          "Energy Cost|{param6:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 413901,
+            "Level": 1,
+            "Parameters": [
+              8,
+              4.424,
+              -0.42,
+              4,
+              15,
+              60,
+              0,
+              0,
+              0,
+              0.42
+            ]
+          },
+          {
+            "Id": 413902,
+            "Level": 2,
+            "Parameters": [
+              8,
+              4.7558,
+              -0.44,
+              4,
+              15,
+              60,
+              0,
+              0,
+              0,
+              0.44
+            ]
+          },
+          {
+            "Id": 413903,
+            "Level": 3,
+            "Parameters": [
+              8,
+              5.0876,
+              -0.46,
+              4,
+              15,
+              60,
+              0,
+              0,
+              0,
+              0.46
+            ]
+          },
+          {
+            "Id": 413904,
+            "Level": 4,
+            "Parameters": [
+              8,
+              5.53,
+              -0.48,
+              4.5,
+              15,
+              60,
+              0,
+              0,
+              0,
+              0.48
+            ]
+          },
+          {
+            "Id": 413905,
+            "Level": 5,
+            "Parameters": [
+              8,
+              5.8618,
+              -0.5,
+              4.5,
+              15,
+              60,
+              0,
+              0,
+              0,
+              0.5
+            ]
+          },
+          {
+            "Id": 413906,
+            "Level": 6,
+            "Parameters": [
+              8,
+              6.1936,
+              -0.52,
+              4.5,
+              15,
+              60,
+              0,
+              0,
+              0,
+              0.52
+            ]
+          },
+          {
+            "Id": 413907,
+            "Level": 7,
+            "Parameters": [
+              8,
+              6.636,
+              -0.54,
+              5,
+              15,
+              60,
+              0,
+              0,
+              0,
+              0.54
+            ]
+          },
+          {
+            "Id": 413908,
+            "Level": 8,
+            "Parameters": [
+              8,
+              7.0784,
+              -0.56,
+              5,
+              15,
+              60,
+              0,
+              0,
+              0,
+              0.56
+            ]
+          },
+          {
+            "Id": 413909,
+            "Level": 9,
+            "Parameters": [
+              8,
+              7.5208,
+              -0.58,
+              5,
+              15,
+              60,
+              0,
+              0,
+              0,
+              0.58
+            ]
+          },
+          {
+            "Id": 413910,
+            "Level": 10,
+            "Parameters": [
+              8,
+              7.9632,
+              -0.6,
+              5,
+              15,
+              60,
+              0,
+              0,
+              0,
+              0.6
+            ]
+          },
+          {
+            "Id": 413911,
+            "Level": 11,
+            "Parameters": [
+              8,
+              8.4056,
+              -0.6,
+              5,
+              15,
+              60,
+              0,
+              0,
+              0,
+              0.6
+            ]
+          },
+          {
+            "Id": 413912,
+            "Level": 12,
+            "Parameters": [
+              8,
+              8.848,
+              -0.6,
+              5,
+              15,
+              60,
+              0,
+              0,
+              0,
+              0.6
+            ]
+          },
+          {
+            "Id": 413913,
+            "Level": 13,
+            "Parameters": [
+              8,
+              9.401,
+              -0.6,
+              5,
+              15,
+              60,
+              0,
+              0,
+              0,
+              0.6
+            ]
+          },
+          {
+            "Id": 413914,
+            "Level": 14,
+            "Parameters": [
+              8,
+              9.954,
+              -0.6,
+              5,
+              15,
+              60,
+              0,
+              0,
+              0,
+              0.6
+            ]
+          },
+          {
+            "Id": 413915,
+            "Level": 15,
+            "Parameters": [
+              8,
+              10.507,
+              -0.6,
+              5,
+              15,
+              60,
+              0,
+              0,
+              0,
+              0.6
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10415,
+      "Name": "Stellaris Phantasm",
+      "Description": "Mona summons the sparkling waves and creates a reflection of the starry sky, applying the Illusory Bubble status to opponents in a large AoE.\n\n<color=#FFD780FF>Illusory Bubble</color>\nTraps opponents inside a pocket of destiny and also makes them <color=#80C0FFFF>Wet</color>. Renders weaker opponents immobile.\nWhen an opponent affected by Illusory Bubble sustains DMG, it has the following effects:\n·Applies an Omen to the opponent, which gives a DMG Bonus, also increasing the DMG of the attack that causes it.\n·Removes the Illusory Bubble, dealing <color=#80C0FFFF>Hydro</color> DMG in the process.\n\n<color=#FFD780FF>Omen</color>\nDuring its duration, increases DMG taken by opponents.\n\n<i>It was from the time that gods first traced the lights in the heavens with their eyes that the notion of \"fate\" was born.</i>",
+      "Icon": "Skill_E_Mona_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 4121,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 412101,
+              "Level": 1,
+              "Parameters": [
+                2,
+                2,
+                0.5
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 412101,
+        "Name": "\"Come 'n' Get Me, Hag!\"",
+        "Description": "After she has used <color=#FFD780FF>Illusory Torrent</color> for 2s, if there are any opponents nearby, Mona will automatically create a Phantom.\nA Phantom created in this manner lasts for 2s, and its explosion DMG is equal to 50% of <color=#FFD780FF>Mirror Reflection of Doom</color>.",
+        "Icon": "UI_Talent_S_Mona_05"
+      },
+      {
+        "GroupId": 4122,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 412201,
+              "Level": 1,
+              "Parameters": [
+                1,
+                0.2
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 412201,
+        "Name": "Waterborne Destiny",
+        "Description": "Increases Mona's <color=#80C0FFFF>Hydro DMG Bonus</color> by a degree equivalent to 20% of her Energy Recharge rate.",
+        "Icon": "UI_Talent_S_Mona_06"
+      },
+      {
+        "GroupId": 4123,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 412301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 412301,
+        "Name": "Principium of Astrology",
+        "Description": "When Mona crafts Weapon Ascension Materials, she has a 25% chance to refund a portion of the crafting materials used.",
+        "Icon": "UI_Talent_Combine_Weapon"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 411,
+        "Name": "Prophecy of Submersion",
+        "Description": "When any of your own party members hits an opponent affected by an Omen, the effects of <color=#80C0FFFF>Hydro-related Elemental Reactions</color> are enhanced for 8s:\n· Electro-Charged DMG increases by 15%, Lunar-Charged DMG increases by 15%, Vaporize DMG increases by 15%, Hydro Swirl DMG increases by 15%, Lunar-Crystallize DMG increases by 15%.\n· Frozen duration is extended by 15%.",
+        "Icon": "UI_Talent_S_Mona_01"
+      },
+      {
+        "Id": 412,
+        "Name": "Lunar Chain",
+        "Description": "When a Normal Attack hits, there is a 20% chance that it will be automatically followed by a Charged Attack.\nThis effect can only occur once every 5s.",
+        "Icon": "UI_Talent_S_Mona_02"
+      },
+      {
+        "Id": 413,
+        "Name": "Restless Revolution",
+        "Description": "Increases the Level of <color=#FFD780FF>Stellaris Phantasm</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Mona_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 414,
+        "Name": "Prophecy of Oblivion",
+        "Description": "When any party member attacks an opponent affected by an Omen, their CRIT Rate is increased by 15%.",
+        "Icon": "UI_Talent_S_Mona_03"
+      },
+      {
+        "Id": 415,
+        "Name": "Mockery of Fortuna",
+        "Description": "Increases the Level of <color=#FFD780FF>Mirror Reflection of Doom</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Mona_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 416,
+        "Name": "Rhetorics of Calamitas",
+        "Description": "Upon entering <color=#FFD780FF>Illusory Torrent</color>, Mona gains a 60% increase to the DMG of her next Charged Attack per second of movement.\nA maximum DMG Bonus of 180% can be achieved in this manner. The effect lasts for no more than 8s.",
+        "Icon": "UI_Talent_S_Mona_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Astral Reflection",
+    "Detail": "A mysterious young astrologer who proclaims herself to be \"Astrologist Mona Megistus,\" and who possesses abilities to match the title. Erudite, but prideful.",
+    "Association": 1,
+    "Native": "Mondstadt",
+    "BirthMonth": 8,
+    "BirthDay": 31,
+    "VisionBefore": "Hydro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Astrolabos",
+    "CvChinese": "陈婷婷",
+    "CvJapanese": "小原好美",
+    "CvEnglish": "Felecia Angelle",
+    "CvKorean": "Woo Jeong-shin",
+    "CookBonus": {
+      "OriginItemId": 108029,
+      "ItemId": 108114,
+      "InputList": [
+        100018,
+        100001,
+        100062,
+        100080
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "I am Astrologist Mona Megistus, meaning \"The Great Astrologist Mona.\" If it is divination you seek from me, then I ask you respect my name by learning it wholly, here and now."
+      },
+      {
+        "Title": "Chat: Astrology",
+        "Context": "Divination is about precisely foretelling one's written destiny. Over-embellishing that fate only leads to misconception."
+      },
+      {
+        "Title": "Chat: Life",
+        "Context": "Astrologers must rid themselves of material desires. Only by ridding oneself of clutter can one see the true world around them."
+      },
+      {
+        "Title": "Chat: Fate",
+        "Context": "Fate is called as such, for it cannot be changed, nor can it be reversed. It can only but be accepted."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "With rain this heavy, not only are the stars clouded, so too is my scryglass hazy."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Which of the starry skies do these thunderbolts fall from?"
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "The pure waters of melted snow are optimal for hydromancy."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "One need not scry to know today's weather will be good."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Your arrival is untimely. The morning star has just waned... Breakfast? No, I—I've already eaten."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Noon is upon us, we should eat. Hm? I... I will have a salad, for simplicity is the way of the astrologer."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Nightfall has arrived. I will soon be able to begin my divination. Ah... Did I finish writing my astrology column last night...?"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "It's already so late, and I'm no further along on finishing tomorrow's astrology column. What? You're off to sleep? *sigh* I wish I could sleep now too..."
+      },
+      {
+        "Title": "About Mona",
+        "Context": "The work of the astrologer is to show people what fate has in store for them, and that's exactly what I do. There will always be those, however, who are unable to accept what they are told."
+      },
+      {
+        "Title": "About Us: Work",
+        "Context": "Why do I write reports rather than using my divination to earn Mora? I would never use hydromancy for the sake of Mora, nor did I learn hydromancy for that purpose."
+      },
+      {
+        "Title": "About Us: My Fate",
+        "Context": "I don't know. Unless left with no other choice, astrologers do not foretell their own fate. The elders of my art warned against it, for it can turn fate in on itself, which is incredibly dangerous."
+      },
+      {
+        "Title": "About Us: Your Fate",
+        "Context": "As you are not from this world, I am unable to give you a prediction. All I can tell you is that your journey is far from over."
+      },
+      {
+        "Title": "About the Vision: Disdain",
+        "Context": "When I first received my Vision, the elderly woman that gave it to me, she put on this air and said \"May your heart of truth be with you.\" And yet this thing does nothing for my hydromancy, all it does is get me wet."
+      },
+      {
+        "Title": "About the Vision: Value",
+        "Context": "That said, a Vision doesn't hurt to have as a little accessory. It is, after all, the one useful study tool that miserly old lady ever gave me, in a rare act of generosity."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Do you know about constellations? Astrologers believe that the patterns of the stars map out the destiny of Vision bearers — past, present, and future, everything is written in the stars."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "This... travel companion of yours — do you know anything of her origins? No matter what, I cannot seem to discern a single shred of information regarding this floating fairy's fate.\n...Oh? So you don't know where she comes from, either?"
+      },
+      {
+        "Title": "About Jean",
+        "Context": "You mean the Acting Grand Master of the Knights of Favonius? Her constellation is Leo Minor, which represents strength and responsibility shouldered too young... Though the lioness has been separated from her pride for a long time, she grows from strength to strength, and the day will come when she is ready to return as its glorious leader."
+      },
+      {
+        "Title": "About Albedo",
+        "Context": "Albedo? Ah... I envy his ability to solely focus on his research without getting bogged down in mundane worldly affairs. What a wonderful life! If that batty old lady hadn't had one too many screws loose, perhaps that's the life I'd be living by now myself..."
+      },
+      {
+        "Title": "About Klee",
+        "Context": "Ah yes, Alice's daughter. She's in the custody of the Knights of Favonius, and Albedo looks after her too. She's blessed to have Trifolium as her constellation, which represents good luck. I'm slightly envious... *smirk*\nAlthough, if I'd been blessed with good luck, I suppose I never would have had the great honor of running into that old woman, would I..."
+      },
+      {
+        "Title": "About Diluc",
+        "Context": "Diluc Ragnvindr. His constellation, Noctua, represents vigilance in the darkness of night... A lone guardian keeping watch, longing for the splendor of dawn, yet destined to solitude in the dark days preceding its arrival.\n...Or, wait, maybe Noctua's the one tied to wealth...?"
+      },
+      {
+        "Title": "About Kaeya",
+        "Context": "Kaeya Alberich? He's a Pavo Ocellus. Destined for greatness and grandeur... and to hide ugly realities behind a layer of charm and elegance. He believes he has made a clean break with his past, but one day fate will catch up with him. When it does, he will have a major decision to make."
+      },
+      {
+        "Title": "About Lisa",
+        "Context": "A Tempus Fugit... The constellation derives its name from the hourglass, and stands for knowledge and time — or rather, the trade-off between them. As each grain of sand falls down, a moment of time — of life, even, dies for good. To stop the unrelenting flow of sand, one would have to turn the hourglass on its side. But once the sand comes to rest, it remains motionless forever... Hmm, maybe \"becomes lazy\" is more accurate than \"comes to rest,\" in this case."
+      },
+      {
+        "Title": "About Venti",
+        "Context": "Venti? The bard that sits around doing nothing all day? What's so interesting about him? Sure, I guess I can take a look...\nHuh, that's weird, the scryglass, it's... I can't see a thing... this wind... I can't... open my eyes! No, my hat! Ah! My clothes, stop! The wind's going to strip all my clothes off! Make it stop, make it stop! ...Alright, alright! I'll never do this again!"
+      },
+      {
+        "Title": "More About Mona: I",
+        "Context": "You want to chat... for fun? Oh... I don't usually have spare time for such activities, especially when I have so many columns left to write... Then again, since it's you, it might be worth it. Hehe, a change of pace once in a while isn't such a bad thing."
+      },
+      {
+        "Title": "More About Mona: II",
+        "Context": "Income? From astrology...? You can't use... things like Mora to determine the value of astrology! You need to understand: hydromancy is the one and only means of discerning people's true destiny in the whole of Teyvat! No matter how much Mora or gems you might have, the value of fate is quite simply incalculable! Perhaps not the smartest question you might have had for me..."
+      },
+      {
+        "Title": "More About Mona: III",
+        "Context": "You want me to explain how astrology works? I'm not sure you'd understand even if I told you. But since you ask... The method I use is called hydromancy. The art of inferring fate from the illusory reflection of the stars on the water's surface. The inverted reflection in the water is an image of the heavens from within which the truth of our world can be observed. ...It is the one and only success story of that old lady's research endeavors."
+      },
+      {
+        "Title": "More About Mona: IV",
+        "Context": "Mona Megistus, the Astrologist — we came up with that name together, the old lady and me. She said it had a nice ring to it... But then she started calling me 'Meg' for short, which is obviously unnecessary, because clearly 'Mona' is already suffice for a shorter name— No! You are NOT allowed to call me that, it's embarrassing! Gah! I knew I shouldn't have told you!"
+      },
+      {
+        "Title": "More About Mona: V",
+        "Context": "The golden rule all fortune-tellers abide by is: never offer advice. Only state the results of the divination. Otherwise, you risk your fate becoming tangled up with that of your subject. But for you, I will make an exception to this rule — because our fates have been intertwined from the beginning."
+      },
+      {
+        "Title": "Mona's Hobbies",
+        "Context": "My hobby? Stargazing! In this all-too-real world in which we live, we all need to look up from the dust once in a while and fix our gaze on the stars, in a spirit of wonder... That, plus the whole thing about me being an astrologer."
+      },
+      {
+        "Title": "Mona's Troubles",
+        "Context": "*sigh* The equipment repair bill is due, and so is the final payment for that celestial globe I ordered... Also, I still need to renew my journal subscriptions, not to mention pay the rent... Hmm, which one to prioritize? ...Ah, I'll pay off the celestial globe first. If I leave it any longer, they'll sell out, and then I'll never get my hands on one..."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Salad. Salad is by far the best food in the world. Cheap to buy, easy to whip up, filling, and it's the most convenient thing there is when you're working on a column or fixing some equipment — I mean, who's got time for a proper dinner anyway?"
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "You know, all those... overpriced, fancy foods. Personally, I think it's uncivilized and, frankly, dangerous to splash out and indulge yourself every time you have a little hunger pang."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Ah, so satisfied... Who would have thought knowing you would bear so many benefits."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Just to be clear... you're sure I don't have to pay... for any of this?"
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "I don't mean to nitpick, or anything, it's just... I haven't quite eaten enough."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Happy Birthday. Here's my gift to you — it's a bag containing some words of advice that may help you through tough patches. ...No, don't open it yet. During the year ahead, this bag will open itself when the right time comes."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "This was ordained by fate! Long had I foreseen it."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "...One step closer. Maybe soon I shall finally uncover the truth of this world?"
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "My scryglass has long since preordained all that will take place beneath the stars it reflects."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "In the reflection of the water, I see the ascension of the morning star."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Let me scry!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Shadows of fate!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Delve into destiny!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Fate is upon you."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Written in the stars!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Decided by destiny!"
+      },
+      {
+        "Title": "Deploying Wind Glider: I",
+        "Context": "Scry the sky!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "We could do with some more fortune..."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "This should cover food and rent for a while!"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Ah, finding treasure is pretty exhilarating!"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "My vision is clouded..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Odius fate..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "This was not foretold!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Do not tempt fate."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "This is not your destiny."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "The stars... are fading..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Destiny cannot be... denied."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "My reckoning... has come..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Curses."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Leave my space!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "This is destiny."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "This is how it must be."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "It is as the stars foretold."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Teyvat is a place where people of all sorts go about their business. Merchants move products, knights patrol, and farmers till the land.\nBut if one were to ask Mona — the enigmatic and prideful astrologist — what she busies herself with, she will reply by saying that she is servicing a debt known as \"life.\"\nShe will, however, vigorously deny being \"poor,\" giving the following explanation:\n\"Beautiful veneers may obscure simple truths.\nExquisite food may mask its nutritional value.\nOne lives simply, all the better to expose this world's truths.\"\nA frugal lifestyle, therefore, is a form of training to access the truth... Or so Mona will insist.\nTeyvat is a place where people of all sorts go about their business, and even an enigmatic astrologist must look to hers.\n—That said, it seems like bards might be the exception to this rule."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Recently, Mona's teacher, an old but highly skilled female astrologist, has entrusted a very important task to her.\nHer teacher has an erstwhile rival-friend in Mondstadt, and she wanted Mona to retrieve a highly confidential box from that person's successor.\n\"If you dare look inside that box... Well, you'll see.\"\nThat was the warning Mona received before departing.\nTo Mona's surprise, this successor was none other than the Spark Knight, Klee.\nThe box was still extant, but due to Klee's actions and a series of accidents... Mona unwittingly unraveled the enigma behind the box.\n\"I—I'm done for. The thing inside this was the dark history of her youth... she will kill me if I go back like this...\"\nMona was thus forced to stay in Mondstadt, beginning a bitterly frugal but bountifully fulfilling existence."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Mona's astrology utilizes hydromancy, and she once explained the underlying principles thusly:\n\"It is people's fate that shines in the night sky, and though its reflection in water is but an illusion, it reveals the truth nonetheless.\"\nNo one else can quite comprehend this principle, but Mona's ability convinces people to believe in it anyway.\nAlbeit, sometimes grudgingly...\nHer astrological readings are exceptionally precise, and she will neither lie nor hold anything back when revealing the results of her readings.\n\"Your son says that he's made it. That's a lie.\"\n\"You've got no chance with him. In fact, he will soon leave you.\"\nThe cold, hard truth is laid bare before people' eyes, complete with all the grisly details that they would rather remained buried.\nMona will make no exceptions to this, and as such she can seem completely lacking in human emotion.\nBut sometimes, on a clear night, she can be seen on a high mountain slope.\nThere, Mona gazes up at the stars in the sky — so close, she feels, that she could almost reach out and touch them — with gentle eyes, humming an unknown tune to herself."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Having never studied the art of finance, the astrologist Mona is always hovering around the poverty line.\nIn order to save on food expenses, she once ate mushrooms for an entire month straight. If not for some relief funds coming from time to time, she would have had trouble eking out a living.\nMona does in fact have some money set aside. Even though she must eventually run dry without an income, she can slow the bleeding by scrimping in the food department.\nSo where does the rest of the Mora go? Well, if you've ever had a look inside her lab, then know that the big pile of astrology-related apparatus and tools in there didn't come out of thin air.\nIn fact, all of them come with a hefty price tag — books from Liyue, an astrolabe from Sumeru... The shipping fees alone are impressive.\nThat Mona should be in abject poverty comes, therefore, as no surprise.\nIn order to support herself, Mona eventually took up a commercial contract — her contributions to a column about constellations in The Steambird have become her most stable income source.\nNow having a monthly income, Mona could have left her life of poverty. But how could an astrologist's pursuit of knowledge end here?\nWhenever she gets paid, Mona will immediately shell out on more astrology-related resources, returning to a state of destitution once more.\nThis process plays out every month.\nToday, too, is another day Mona worries over Mora."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Mona will sometimes meet up with Klee and Albedo, her primary reason being to get a free meal.\nSecondary to that is to exchange pointers with Albedo.\nSince they are both people who seek to unveil the principles of the world, and both are accomplished students of famed masters, aligning themselves with one another and working together is perfectly normal.\nMona staunchly defends her teacher's image in front of Albedo.\nHowever, she also often complains about \"that old hag.\"\n\"You speak of your illustrious lineage, yet you also refer to your master as a 'hag' and a 'stubborn dimwit.' Which of these descriptions is accurate?\"\nAlbedo could not help but ask this question — and when he did, Mona promptly realized that she had never given it much thought herself.\nStroking her chin, she pondered this paradox deeply for a moment, before responding:\n\"Hmph. The techniques passed down to me are exceptional, of course, but my teacher is not my equal.\nDoes she know the market rates for eggs, butter, or wheat? In this regard, I have already far surpassed her.\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "During her apprenticeship, Mona found that the subtle abstractions of her master's teachings could explain the laws that governed the existence of all things.\nHuman hearts were guided by these laws, and if one had great enough powers of calculation, all the mysteries of the world could be understood.\nMona once believed this to be true.\nBut when she had to strike out on her own and live day-to-day, she found herself doubting.\nNot everyone lived wealthy and comfortable lives. Some neither had food nor warm clothes, living no differently from beggars.\nAnd it was just such an adventurer who, when meeting Mona while she was out looking for fruits and vegetables to fill her stomach, shared half their food with her.\n\"Out here, we've gotta have each other's backs.\"\nThis was not something inscribed on these so-called principles of the world. And many other such things she encountered on her journey — the honesty of a thief, a robber's change of heart, a coward's courage, the good deeds of a wicked person...\nMona began to have some doubts, but she also felt like she finally had her feet on solid ground.\nWhen she was again alone with her thoughts under the stars, she marveled that her research had been so full of holes.\nPerhaps she would have to continue researching the world's principles for the rest of her life."
+      },
+      {
+        "Title": "All Things Astrological",
+        "Context": "The Court of Fontaine's mainline newspaper, The Steambird, has many a featured section that contains all sorts of news and gossip drawn from every corner of the seven nations.\nThe section Mona contributes to is known as \"All Things Astrological,\" and it is a column specifically targeted at hobbyists and professionals. That she had this opportunity at all was pure chance.\nWhen the previous contributing author was traveling the world, he heard tell of a strange astrologist, and his hobbyist's curiosity compelled him to seek her out.\nTheir correspondence left him deeply impressed.\nAs it happened, he was also looking to retire, and seeing that Mona was strapped for Mora, reached out to help her by recommending her to the editor-in-chief of The Steambird.\nWhen Mona released her first column, \"An Introduction to Astrology,\" the column, heretofore known for being easy reading, experienced a massive shift in tone.\nMost of each issue was dedicated to discussing the movement of celestial bodies and other difficult (and obscure) topics. Academic quotations, dense footnotes and even the occasional hand-drawn star maps abounded in these writings.\nThe editor-in-chief could not help but feel worried that this approach was too academic. Would it find acceptance with long-time readers? As it turned out, there was no need to fret. The publishing house received a great many letters that read something like this:\n\"Wow, this is amazing. I don't really get it, but this is super interesting. Consider me a fan of Astrologist Mona Megistus.\"\nAfter getting approval to continue submitting manuscripts, Mona could finally heave a sigh of relief.\nNow, how best to celebrate... Ah yes. Perhaps she should use her first paycheck to purchase that latest-edition celestial globe she'd had her eye on for a while now..."
+      },
+      {
+        "Title": "Vision",
+        "Context": "To Mona, that her Vision was sent to her from the gods doesn't mean a great deal.\nThis is not to say that possessing an external focus for elemental power is not useful.\nHaving power is always a good thing, but when compared to lofty \"truth,\" \"martial prowess\" is such a pathetically small concept.\nThe gods, too, are bound by the rules of this world. Mona seeks the final truth of the world, hidden amidst the sea of stars.\nAs such, she does not have any reverence for her Vision, which the people of this world consider to be a sign of divine favor and the source of all power.\nNonetheless, this item that serves no practical use in her hands is something that she treasures greatly.\nIt was gifted to her by her teacher as a teaching aid, and it is the only evidence of their time together as master and pupil.\nShe preserves these distant memories with great care. This exquisitely-made teaching aid thus accompanied her everywhere, like an accessory worn by any other maiden.\nUntil one day, when a Vision of her very own would quietly indwell this old teaching aid..."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 204101,
+      "Name": "Pact of Stars and Moon",
+      "Description": "Mona's outfit. A costume made specifically to encompass the astrological concept of \"the destined moment,\" thanks to the 30% discount ticket she got from the celestial globe refund.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_MonaCostumeWic",
+      "SideIcon": "UI_AvatarIcon_Side_MonaCostumeWic"
+    },
+    {
+      "Id": 204100,
+      "Name": "Flowing Fate",
+      "Description": "Mona's outfit. A light astrologist's outfit that does away with superfluous fabric to provide top quality at an affordable price.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104124,
+    113012,
+    100025,
+    112040,
+    104306,
+    113007
+  ],
+  "NameCard": {
+    "Name": "Mona: Starry Sky",
+    "Description": "Namecard style.\nA girl gazes down at the stars' reflection on the water, pondering the joys and sorrows of life.",
+    "Icon": "UI_NameCardIcon_Mona",
+    "PicturePrefix": "UI_NameCardPic_Mona"
+  }
+}

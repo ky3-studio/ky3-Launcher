@@ -1,0 +1,1222 @@
+{
+  "Id": 10000050,
+  "PromoteId": 50,
+  "Sort": 41,
+  "Body": 4,
+  "Icon": "UI_AvatarIcon_Tohma",
+  "SideIcon": "UI_AvatarIcon_Side_Tohma",
+  "Name": "Thoma",
+  "Description": "The Kamisato Clan's housekeeper. A well-known \"fixer\" in Inazuma.",
+  "BeginTime": "2021-11-02T18:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 866.2015,
+    "AttackBase": 16.9176,
+    "DefenseBase": 62.9475
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 5031,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}×2",
+            "4-Hit DMG|{param4:F1P}",
+            "Charged Attack DMG|{param5:P}",
+            "Charged Attack Stamina Cost|{param6:F1}",
+            "Plunge DMG|{param7:F1P}",
+            "Low/High Plunge DMG|{param8:P}/{param9:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 503101,
+              "Level": 1,
+              "Parameters": [
+                0.443932,
+                0.436278,
+                0.26789,
+                0.673552,
+                1.12746,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 503102,
+              "Level": 2,
+              "Parameters": [
+                0.480066,
+                0.471789,
+                0.289695,
+                0.728376,
+                1.21923,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 503103,
+              "Level": 3,
+              "Parameters": [
+                0.5162,
+                0.5073,
+                0.3115,
+                0.7832,
+                1.311,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 503104,
+              "Level": 4,
+              "Parameters": [
+                0.56782,
+                0.55803,
+                0.34265,
+                0.86152,
+                1.4421,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 503105,
+              "Level": 5,
+              "Parameters": [
+                0.603954,
+                0.593541,
+                0.364455,
+                0.916344,
+                1.53387,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 503106,
+              "Level": 6,
+              "Parameters": [
+                0.64525,
+                0.634125,
+                0.389375,
+                0.979,
+                1.63875,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 503107,
+              "Level": 7,
+              "Parameters": [
+                0.702032,
+                0.689928,
+                0.42364,
+                1.065152,
+                1.78296,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 503108,
+              "Level": 8,
+              "Parameters": [
+                0.758814,
+                0.745731,
+                0.457905,
+                1.151304,
+                1.92717,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 503109,
+              "Level": 9,
+              "Parameters": [
+                0.815596,
+                0.801534,
+                0.49217,
+                1.237456,
+                2.07138,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 503110,
+              "Level": 10,
+              "Parameters": [
+                0.87754,
+                0.86241,
+                0.52955,
+                1.33144,
+                2.2287,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 503111,
+              "Level": 11,
+              "Parameters": [
+                0.939484,
+                0.923286,
+                0.56693,
+                1.425424,
+                2.38602,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 503112,
+              "Level": 12,
+              "Parameters": [
+                1.001428,
+                0.984162,
+                0.60431,
+                1.519408,
+                2.54334,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 503113,
+              "Level": 13,
+              "Parameters": [
+                1.063372,
+                1.045038,
+                0.64169,
+                1.613392,
+                2.70066,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 503114,
+              "Level": 14,
+              "Parameters": [
+                1.125316,
+                1.105914,
+                0.67907,
+                1.707376,
+                2.85798,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 503115,
+              "Level": 15,
+              "Parameters": [
+                1.18726,
+                1.16679,
+                0.71645,
+                1.80136,
+                3.0153,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10501,
+        "Name": "Swiftshatter Spear",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 5032,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:P}",
+            "Shield DMG Absorption|{param2:F1P} Max HP+{param3:I}",
+            "Shield Duration|{param4:F1}s",
+            "Max Shield DMG Absorption|{param5:F1P} Max HP+{param6:I}",
+            "CD|{param7:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 503201,
+              "Level": 1,
+              "Parameters": [
+                1.464,
+                0.072,
+                693.33484,
+                8,
+                0.196,
+                1887.4199,
+                15
+              ]
+            },
+            {
+              "Id": 503202,
+              "Level": 2,
+              "Parameters": [
+                1.5738,
+                0.0774,
+                762.678,
+                8,
+                0.2107,
+                2076.1882,
+                15
+              ]
+            },
+            {
+              "Id": 503203,
+              "Level": 3,
+              "Parameters": [
+                1.6836,
+                0.0828,
+                837.7997,
+                8,
+                0.2254,
+                2280.687,
+                15
+              ]
+            },
+            {
+              "Id": 503204,
+              "Level": 4,
+              "Parameters": [
+                1.83,
+                0.09,
+                918.7,
+                8,
+                0.245,
+                2500.9167,
+                15
+              ]
+            },
+            {
+              "Id": 503205,
+              "Level": 5,
+              "Parameters": [
+                1.9398,
+                0.0954,
+                1005.3789,
+                8,
+                0.2597,
+                2736.877,
+                15
+              ]
+            },
+            {
+              "Id": 503206,
+              "Level": 6,
+              "Parameters": [
+                2.0496,
+                0.1008,
+                1097.8364,
+                8,
+                0.2744,
+                2988.5679,
+                15
+              ]
+            },
+            {
+              "Id": 503207,
+              "Level": 7,
+              "Parameters": [
+                2.196,
+                0.108,
+                1196.0725,
+                8,
+                0.294,
+                3255.9897,
+                15
+              ]
+            },
+            {
+              "Id": 503208,
+              "Level": 8,
+              "Parameters": [
+                2.3424,
+                0.1152,
+                1300.0872,
+                8,
+                0.3136,
+                3539.142,
+                15
+              ]
+            },
+            {
+              "Id": 503209,
+              "Level": 9,
+              "Parameters": [
+                2.4888,
+                0.1224,
+                1409.8805,
+                8,
+                0.3332,
+                3838.025,
+                15
+              ]
+            },
+            {
+              "Id": 503210,
+              "Level": 10,
+              "Parameters": [
+                2.6352,
+                0.1296,
+                1525.4523,
+                8,
+                0.3528,
+                4152.6387,
+                15
+              ]
+            },
+            {
+              "Id": 503211,
+              "Level": 11,
+              "Parameters": [
+                2.7816,
+                0.1368,
+                1646.8027,
+                8,
+                0.3724,
+                4482.983,
+                15
+              ]
+            },
+            {
+              "Id": 503212,
+              "Level": 12,
+              "Parameters": [
+                2.928,
+                0.144,
+                1773.9319,
+                8,
+                0.392,
+                4829.058,
+                15
+              ]
+            },
+            {
+              "Id": 503213,
+              "Level": 13,
+              "Parameters": [
+                3.111,
+                0.153,
+                1906.8395,
+                8,
+                0.4165,
+                5190.8643,
+                15
+              ]
+            },
+            {
+              "Id": 503214,
+              "Level": 14,
+              "Parameters": [
+                3.294,
+                0.162,
+                2045.5258,
+                8,
+                0.441,
+                5568.4004,
+                15
+              ]
+            },
+            {
+              "Id": 503215,
+              "Level": 15,
+              "Parameters": [
+                3.477,
+                0.171,
+                2189.9905,
+                8,
+                0.4655,
+                5961.6675,
+                15
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10502,
+        "Name": "Blazing Blessing",
+        "Description": "Thoma vaults forward with his polearm and delivers a flame-filled flying kick that deals <color=#FF9999FF>AoE Pyro DMG</color>, while also summoning a defensive Blazing Barrier. At the moment of casting, Thoma's Elemental Skill applies <color=#FF9999FF>Pyro</color> to himself.\nThe DMG Absorption of the Blazing Barrier scales off Thoma's Max HP.\nThe Blazing Barrier has the following traits:\n·Absorbs <color=#FF9999FF>Pyro DMG</color> 250% more effectively.\n·When a new Blazing Barrier is obtained, the remaining DMG Absorption of an existing Blazing Barrier will stack and its duration will be refreshed.\n\nThe maximum DMG Absorption of the Blazing Barrier will not exceed a certain percentage of Thoma's Max HP.\n\n<i>As a guest from afar, only the most burning passion would allow one to master the pure and precise spear arts of Inazuma. Thoma's mastery, indeed, is not limited to being the \"swiftest-studying student\" or \"a master of the spear,\" but he has imbued his will to protect others and fend off foes into his art as well.</i>",
+        "Icon": "Skill_S_Tohma_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 5039,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:P}",
+          "Fiery Collapse DMG|{param2:P}",
+          "Shield DMG Absorption|{param3:F1P} Max HP+{param4:I}",
+          "Shield Duration|{param5:F1}s",
+          "Scorching Ooyoroi Duration|{param7:F1}s",
+          "CD|{param8:F1}s",
+          "Energy Cost|{param9:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 503901,
+            "Level": 1,
+            "Parameters": [
+              0.88,
+              0.58,
+              0.01144,
+              110.03398,
+              8,
+              1,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 503902,
+            "Level": 2,
+            "Parameters": [
+              0.946,
+              0.6235,
+              0.012298,
+              121.03891,
+              8,
+              1,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 503903,
+            "Level": 3,
+            "Parameters": [
+              1.012,
+              0.667,
+              0.013156,
+              132.96092,
+              8,
+              1,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 503904,
+            "Level": 4,
+            "Parameters": [
+              1.1,
+              0.725,
+              0.0143,
+              145.8,
+              8,
+              1,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 503905,
+            "Level": 5,
+            "Parameters": [
+              1.166,
+              0.7685,
+              0.015158,
+              159.55617,
+              8,
+              1,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 503906,
+            "Level": 6,
+            "Parameters": [
+              1.232,
+              0.812,
+              0.016016,
+              174.2294,
+              8,
+              1,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 503907,
+            "Level": 7,
+            "Parameters": [
+              1.32,
+              0.87,
+              0.01716,
+              189.81972,
+              8,
+              1,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 503908,
+            "Level": 8,
+            "Parameters": [
+              1.408,
+              0.928,
+              0.018304,
+              206.3271,
+              8,
+              1,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 503909,
+            "Level": 9,
+            "Parameters": [
+              1.496,
+              0.986,
+              0.019448,
+              223.75157,
+              8,
+              1,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 503910,
+            "Level": 10,
+            "Parameters": [
+              1.584,
+              1.044,
+              0.020592,
+              242.09312,
+              8,
+              1,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 503911,
+            "Level": 11,
+            "Parameters": [
+              1.672,
+              1.102,
+              0.021736,
+              261.35175,
+              8,
+              1,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 503912,
+            "Level": 12,
+            "Parameters": [
+              1.76,
+              1.16,
+              0.02288,
+              281.52744,
+              8,
+              1,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 503913,
+            "Level": 13,
+            "Parameters": [
+              1.87,
+              1.2325,
+              0.02431,
+              302.6202,
+              8,
+              1,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 503914,
+            "Level": 14,
+            "Parameters": [
+              1.98,
+              1.305,
+              0.02574,
+              324.63007,
+              8,
+              1,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 503915,
+            "Level": 15,
+            "Parameters": [
+              2.09,
+              1.3775,
+              0.02717,
+              347.557,
+              8,
+              1,
+              15,
+              20,
+              80
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10505,
+      "Name": "Crimson Ooyoroi",
+      "Description": "Thoma spins his polearm, slicing at his foes with roaring flames that deal <color=#FF9999FF>AoE Pyro DMG</color> and weave themselves into a Scorching Ooyoroi.\n\n<color=#FFD780FF>Scorching Ooyoroi</color>\nWhile Scorching Ooyoroi is in effect, the active character's Normal Attacks will trigger Fiery Collapse, dealing <color=#FF9999FF>AoE Pyro DMG</color> and summoning a Blazing Barrier.\nFiery Collapse can be triggered once every 1s.\n\nExcept for the amount of DMG they can absorb, the Blazing Barriers created in this way are identical to those created by Thoma's Elemental Skill, Blazing Blessing:\n·Absorbs <color=#FF9999FF>Pyro DMG</color> 250% more effectively.\n·When a new Blazing Barrier is obtained, the remaining DMG Absorption of an existing Blazing Barrier will stack and its duration will be refreshed.\n\nThe maximum DMG Absorption of the Blazing Barrier will not exceed a certain percentage of Thoma's Max HP.\n\nIf Thoma falls, the effects of Scorching Ooyoroi will be cleared.\n\n<i>\"I will not forget my initial promise. Let this burning flame protect those I cherish, and may it never be extinguished.\"</i>",
+      "Icon": "Skill_E_Tohma_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 5021,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 502101,
+              "Level": 1,
+              "Parameters": [
+                0.05,
+                6,
+                5,
+                0.3
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 502101,
+        "Name": "Imbricated Armor",
+        "Description": "When your current active character obtains or refreshes a <color=#FFD780FF>Blazing Barrier</color>, this character's Shield Strength will increase by 5% for 6s.\nThis effect can be triggered once every 0.3s seconds. Max 5 stacks.",
+        "Icon": "UI_Talent_S_Tohma_05"
+      },
+      {
+        "GroupId": 5022,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 502201,
+              "Level": 1,
+              "Parameters": [
+                0.022
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 502201,
+        "Name": "Flaming Assault",
+        "Description": "DMG dealt by <color=#FFD780FF>Crimson Ooyoroi</color>'s Fiery Collapse is increased by 2.2% of Thoma's Max HP.",
+        "Icon": "UI_Talent_S_Tohma_06"
+      },
+      {
+        "GroupId": 5023,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 502301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 502301,
+        "Name": "Snap and Swing",
+        "Description": "When you <color=#FFD780FF>fish</color> successfully in Inazuma, Thoma's help grants a 20% chance of scoring a double catch.",
+        "Icon": "UI_Talent_S_Tohma_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 501,
+        "Name": "A Comrade's Duty",
+        "Description": "When a character protected by Thoma's own <color=#FFD780FF>Blazing Barrier</color> (Thoma excluded) is attacked, Thoma's own <color=#FFD780FF>Blazing Blessing</color> CD is decreased by 3s, while his own <color=#FFD780FF>Crimson Ooyoroi</color>'s CD is decreased by 3s.\nThis effect can be triggered once every 20s.",
+        "Icon": "UI_Talent_S_Tohma_01"
+      },
+      {
+        "Id": 502,
+        "Name": "A Subordinate's Skills",
+        "Description": "<color=#FFD780FF>Crimson Ooyoroi</color>'s duration is increased by 3s.",
+        "Icon": "UI_Talent_S_Tohma_02"
+      },
+      {
+        "Id": 503,
+        "Name": "Fortified Resolve",
+        "Description": "Increases the Level of <color=#FFD780FF>Blazing Blessing</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Tohma_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 504,
+        "Name": "Long-Term Planning",
+        "Description": "After using <color=#FFD780FF>Crimson Ooyoroi</color>, 15 Energy will be restored to Thoma.",
+        "Icon": "UI_Talent_S_Tohma_03"
+      },
+      {
+        "Id": 505,
+        "Name": "Raging Wildfire",
+        "Description": "Increases the Level of <color=#FFD780FF>Crimson Ooyoroi</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Tohma_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 506,
+        "Name": "Burning Heart",
+        "Description": "When a <color=#FFD780FF>Blazing Barrier</color> is obtained or refreshed, the DMG dealt by all party members' Normal, Charged, and Plunging Attacks is increased by 15% for 6s.",
+        "Icon": "UI_Talent_S_Tohma_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Protector From Afar",
+    "Detail": "The Kamisato Clan's housekeeper. A well-known \"fixer\" in Inazuma.",
+    "Association": 5,
+    "Native": "Yashiro Commission",
+    "BirthMonth": 1,
+    "BirthDay": 9,
+    "VisionBefore": "Pyro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Rubeum Scutum",
+    "CvChinese": "张沛",
+    "CvJapanese": "森田成一",
+    "CvEnglish": "Christian Banas",
+    "CvKorean": "Ryu Seung-kon",
+    "CookBonus": {
+      "OriginItemId": 108277,
+      "ItemId": 108354,
+      "InputList": [
+        100088,
+        101210
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "It's good to meet you at last, Traveler. I've been hearing about you for a long time now. I'm your new buddy, Thoma — as long as that's okay with you, of course!"
+      },
+      {
+        "Title": "Chat: Thoma's Treat",
+        "Context": "Hey... how about we go for a nice meal some time? My treat, of course."
+      },
+      {
+        "Title": "Chat: Concern",
+        "Context": "I feel like there's something I forgot to do... hmm, I tidied the courtyard, put the tea on... Eh, it's probably just my mind playing tricks on me."
+      },
+      {
+        "Title": "Chat: Mora",
+        "Context": "I really did spend a lot recently, only 10 Mora left... Still, 10 Mora's better than no Mora!"
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Where'd this rain come from? Are you gonna be okay? Here, I'll lend you my coat..."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "You don't wanna be out in open country in this kind of weather. You'll get struck by lightning for sure."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Don't run on the ice... 'cause if you fall down, I won't help you up, you gotta learn somehow."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "Lovely weather we're having! Will you join me for a walk?"
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Morning! If you're free, why not come with me to the market? The vegetables are freshest earlier in the day."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "On the lunch menu today, we have Sakura Tempura and Tricolor Dango! Here, there's some for you, some for Paimon, and I also put some aside for milady and the man of the clan himself. Ah, wait, I forgot someone... There's none for me..."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Come quick, we gotta get down to the market — they slash the prices on fish around this time of day. Oh, and if you find something that you just can't do without, I'll help you haggle the price down."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Okay, good night. You had a busy day today, you should get some rest, too. Don't stay up too late."
+      },
+      {
+        "Title": "About Thoma: Housekeeper",
+        "Context": "It was never Ayaka or Ayato's intention to make me the housekeeper, I volunteered. I like this kind of work. Putting everything in order gives me a great sense of achievement, and based on everyone's reactions... Yeah, I think I do a pretty good job."
+      },
+      {
+        "Title": "About Thoma: Meaning",
+        "Context": "For me, housework is about keeping a space clean and tidy, so that everyone who lives there has a smile on their face. And now... it looks like I'm responsible for another smile. I'll do my best to deliver!"
+      },
+      {
+        "Title": "About Us: Eating Alone",
+        "Context": "Hey, how come you're eating here all alone? ...Uh, is it okay if I join you? Or did you just want some space?"
+      },
+      {
+        "Title": "About Us: Oath",
+        "Context": "If you hadn't put yourself out there during the Vision Hunt Ceremony and taken on the Raiden Shogun all by yourself, I would've lost my Vision, and with it all my aspirations. I've been thinking about this a lot, and it seems like there's only one way I could ever properly repay you... \nI, Thoma, give to you my weapon and my loyalty, and I promise to fight for you, no matter what."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "Those that receive Visions should look after them. I certainly don't plan on losing mine."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "I've gotten to know all kinds of people over the years, and I'd say that Inazumans are more particular about etiquette than Mondstadters. If you make sure you're always polite to people, it's much easier to get things done."
+      },
+      {
+        "Title": "Interesting Things: Tanuki",
+        "Context": "I've always wanted to see a tanuki shapeshifting. They say it can change into all kinds of things, and that it likes to play pranks on passersby. It's a creature with a sense of humor, that's for sure."
+      },
+      {
+        "Title": "Interesting Things: Animals",
+        "Context": "Are you an animal person, too? If you are, let me take you to the outskirts some time, it's great. I just need to give a whistle, and all these puppies and kittens will come out of nowhere and start strutting around your ankles, clamoring for your affection. Haha, just imagining it is already brightening my day."
+      },
+      {
+        "Title": "About Yae Miko",
+        "Context": "Lady Miko? Wh—What about her? *sigh* Every time Miss Kamisato sends me out to deliver messages, my least-favorite destination is the Grand Narukami Shrine... Oh! N—Not because Lady Miko scares the bejeebers out of me, it's, uh... respect. Yes! She strikes respect deep into my heart, ahahahaha..."
+      },
+      {
+        "Title": "About the Raiden Shogun: Comparison",
+        "Context": "In my homeland of Mondstadt, almost everyone has great reverence for the Anemo Archon, Barbatos. But people in Inazuma feel a little differently toward the Shogun. How can I put this... They feel love, respect, gratitude... but also fear."
+      },
+      {
+        "Title": "About the Raiden Shogun: The Unknown",
+        "Context": "Honestly, I don't harbor any resentment toward the Shogun. Yes, she almost took my Vision away, but ultimately that's just because of her unique perspective. Everyone has their own perspective, there's nothing strange about that.\nThe only thing I don't understand is her goal in doing so. What does she imagine eternity really looks like for Inazuma? And why is sacrificing her people's aspirations so necessary to achieve it? I can neither understand nor agree with her approach."
+      },
+      {
+        "Title": "About Beidou",
+        "Context": "The captain of The Crux — a formidable woman indeed. She once promised to take me out onto the open ocean to get a look at the thunderstorm that seals off Inazuma from the outside world. It's a shame that to this day, I've never had the chance to take her up on the offer..."
+      },
+      {
+        "Title": "About Kamisato Ayato",
+        "Context": "As head of the Kamisato Clan, he's in a tough position. With all the political upheaval, he has to contend with public disquiet on one hand and a bunch of self-serving, degenerate public officials on the other. It's best not to dwell on it. All I can do is make sure to look out for him when he's at home."
+      },
+      {
+        "Title": "About Kamisato Ayaka",
+        "Context": "Milady is in all respects a well-rounded person: erudite, compassionate, well-mannered, and elegant... The one thing she could do better is to speak her mind more. In fact, watch out for this the next time you're talking to her — sometimes, she looks like she's about to say something, but then she holds back. If that happens, keep asking her opinion, see if you can encourage her to open up a little."
+      },
+      {
+        "Title": "About Yoimiya",
+        "Context": "Of Naganohara Fireworks fame? She's so easy to get along with. Super straightforward, just says whatever she thinks. Oh, and Naganohara fireworks are just incredible, you should take every chance you get to see them in action. Ah, on that note — here, have a coupon!"
+      },
+      {
+        "Title": "About Sayu",
+        "Context": "Ah Sayu, stubborn Sayu. I've asked her countless times to teach me ninjutsu, but she always refuses. She even goes out of her way to avoid me now... I'm just a student looking for a teacher, am I really that out of line?"
+      },
+      {
+        "Title": "About Kujou Sara",
+        "Context": "The Tenryou Commission General... Mm... Make sure to be extra careful if you have any dealings with her. She has a lot of power in her hands, and she's not very open to persuasion. Smiling and batting your eyelids certainly won't get you anywhere with her."
+      },
+      {
+        "Title": "About Arataki Itto",
+        "Context": "Hmm... Word on the street is that he's quite a character — apparently, he even has youkai heritage. Have you met him? If you two are close, maybe you could introduce me sometime. It's good to make friends from all walks of life... youkai included!"
+      },
+      {
+        "Title": "About Shikanoin Heizou",
+        "Context": "Ho, that guy is a detective for the Tenryou Commission. He seems to have his own way of doing things — not the easiest person to get along with. Also... Any situation that involves a detective is probably not one that's going to end well. I think I'll keep on giving him a wide berth."
+      },
+      {
+        "Title": "About Jean",
+        "Context": "Oh, so Jean from the Gunnhildr Clan is the Master of the Knights of Favonius now? She definitely deserves it, she's known all over for her impeccable conduct... Oh, just the \"Acting\" Grand Master? Haha, well, someone of her standing won't care about titles."
+      },
+      {
+        "Title": "About Eula",
+        "Context": "You've had a run-in with Eula Lawrence before, huh? All I know is that their whole family are about the worst-tempered people you could ever meet. You're better off steering clear of them if you can help it. Ah, now I'm in a Mondstadt mood again... The memories."
+      },
+      {
+        "Title": "More About Thoma: I",
+        "Context": "Anything I can lend a hand with? If something needs doing around the house or you're having some interpersonal strife, just say the word. Hmm? A conversation... I see, I see. That's a little different from what I'm used to, but I'm all for it."
+      },
+      {
+        "Title": "More About Thoma: II",
+        "Context": "I'm not from Inazuma originally — I think I've told you that before, right? I took a boat all the way here from Mondstadt, found I liked the place, and was also lucky enough to meet the wonderful Kamisato siblings, so I just ended up staying."
+      },
+      {
+        "Title": "More About Thoma: III",
+        "Context": "I get homesick once in a while, too, so I completely relate to all the international merchants on Ritou. I try to look out for them as much as I can. The difference between us is that they see themselves as just passing by, and have no intention of trying to integrate here. And because that's how they think, it becomes their reality. The majority of Inazumans will never see them as anything more than outsiders."
+      },
+      {
+        "Title": "More About Thoma: IV",
+        "Context": "For some of the more conservatively minded people in Inazuma, the idea of an outlander working as a retainer for one of the Commissions is unthinkable. So there was a time when I was not that welcome here. I'm pretty sure I'd have been deported a long time ago without a couple of Kamisatos fighting my corner. I couldn't let the clan down after they'd been so kind to me, so I put in a lot of honest work, and eventually, everyone was finally able to accept me."
+      },
+      {
+        "Title": "More About Thoma: V",
+        "Context": "I'm not sure if I should get into this, but... Ah, hopefully you won't mind. I went through a period where I really just wanted to go home — Mondstadt is my homeland, after all. But I was torn... It wouldn't be easy to leave Inazuma behind, either. I mean, just look how good the people here have been to me. The Kamisato Clan always has a room for me, and there are people I've met here that are like family. So, I went back and forth over it, and ultimately decided I'd stay in Inazuma. When I'm missing Mondstadt... I can just chat with you. You don't mind my rambling, do you?"
+      },
+      {
+        "Title": "Thoma's Hobbies",
+        "Context": "I've been really getting into stories about the unnatural recently. Especially ones about shapeshifting youkai — they're so fascinating. Before that, I was really into ninjutsu for a while, and before that... Hmm? You think I'm not dedicated enough? N—No! It's not like that, you got me all wrong!"
+      },
+      {
+        "Title": "Thoma's Troubles",
+        "Context": "I'm in a real pickle here. The chief is hosting a banquet for his friends tonight, and he says he wants me to splurge a little by cooking some Butter Crab. The only problem is that for the last two days, I haven't been able to buy crab anywhere! So, what, am I gonna have to dive into the ocean and grab them myself?"
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Without a doubt, my favorite food is Rice Cake Soup. I like cooking up a big, delicious potful for everyone to share. It's a recipe for a good time."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "As far as food is concerned, I'm fine with anything. If we're counting beverages, though... I'm not very good with alcohol. Don't laugh, and before you say it — yes, I've wondered what this says about my identity as a Mondstadter. But, y'know... too much alcohol is bad for you, anyway. So not drinking is a good thing."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Delicious! Could I get another bowl of rice?"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Um, are you free right now? Would you mind sharing some of your cooking tips with me?"
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "I don't think I've ever tasted anything like this... Oh, it's not too bad, though."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Quick, come with me! I remembered it's your birthday, obviously, so I thought I'd throw you a proper party. There's food, there's drinks, and I invited a whole bunch of your friends, too. Hey, this is your birthday we're talking about! I wasn't about to let you spend it all alone!"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Really? This'll make me stronger? You'd better not be kidding, I have stacks of laundry to do."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "It feels like... a fire inside of me has just begun to burn."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "I have all of this power, but how should I use it? I need to give this one some serious thought."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "Thank you for placing your trust in me. Your kindness warms my heart more than the brightest flame ever could. But not to worry, I've figured out what I want to do now. My strength is your shield, and I will always be here to protect you."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Fire it up!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Check this out~"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Don't get too close!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Here's backup."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Supporting fire!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "I got you covered."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Ooh, what's in here?"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Mm! The fortune slip was right..."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Hehe, finders keepers."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Hey! What was that for?"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "I'm done for..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "*grimace* Right where it hurts..."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Don't despair, I'm here to help."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "What a mess... go on, take a rest."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Time to go home..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Take care, everyone..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "I couldn't save everybody..."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Ow ow ow..."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Stop it!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "I guess the housework can wait."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Let's get out there and make some friends."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Where are we headed this time?"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Thoma's official title in the Kamisato Clan is that of a \"housekeeper,\" and as such, he is responsible for matters such as cleaning and cooking.\nWhenever he appears at the Yashiro Commission, Thoma is almost always busy with such work. He is able to get everything done well, and even Furuta, the butler of the Kamisato Clan, is full of praise for his housekeeping skills.\nHowever, most of the time, Thoma does not stay in the Yashiro Commission, but goes elsewhere to deal with some special matters discreetly.\nFor example: solving the problems encountered by the Yashiro Commission, asking for information for the head of the Kamisato Clan, fulfilling Ayaka's wishes, etc.\nIn those unknown corners, Thoma has always used his own way to develop the influence of the Yashiro Commission."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Thoma seems to have been born with a good temper.\nRegardless of whether he's dealing with a dignitary or a street vendor, Thoma can easily find an opening to join the conversation and have a good time with them.\nThoma, who is good at socializing, has a wide range of contacts in Inazuma. When he first arrived in Inazuma, he relied on his insight and communication skills to make friends with people in various industries. Later, many people would take the initiative to get to know Thoma.\nThe more people you know, the more resources you can get. Thoma would learn a lot of first-hand information from them, or quietly strike \"deals\" that are beneficial to the Yashiro Commission.\nHowever, although Thoma has a vast network of contacts, he has never used it for personal gain, nor has he ever forced others to do things in the name of the Yashiro Commission.\nSociability, precise judgment, and just the right amount of tact. Perhaps this is the reason why Thoma can thrive as a \"fixer\" in Inazuma."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Surprisingly, the handsome and cheerful Thoma has no resistance when it comes to cute animals.\nWhen Thoma's out, he always carries some small snacks for animals, and feeds stray cats and dogs when he sees them.\nIt never fails to make him smile seeing animals scarf food down.\nTo Thoma, these animals, like himself, are part of what makes up the world.\nEven if they don't seem to be eye-catching, they are still trying to live.\nAs long as you live, good things will always happen... This is what Thoma has always believed in.\nEven if these animals had not encountered good things before, he hoped that at least his presence would be a good thing worth celebrating for."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "As the housekeeper of the Kamisato Clan, Thoma is an \"all-rounder\" when it comes to housekeeping.\nWhether it's cleaning, cooking, sewing, gardening, caregiving, or socializing, he can handle it all with ease.\nFor Thoma, housekeeping is not only a job and duty, but also his hobby.\nHe would clean the house like new, making sure that there was not a single grain of dust left on the railings. He would be in a very happy mood when faced with a clean and tidy Yashiro Commission.\nPerhaps it's the sense of accomplishment that comes with cleaning. Whenever he has the chance, Thoma will pick up a broom or duster and sweep away any unsightly stains.\nIn addition, he also takes special care of the daily lives of his colleagues around him.\nThere was a winter when Inazuma's temperature suddenly dipped, and a guard of the Yashiro Commission accidentally caught a cold while out on patrol. A few days later, he unexpectedly received a sweater hand-knitted by Thoma.\nThe sweater that was just the right size made the guard think back to the clothes he received from his mother every winter. Now that his mother was old, she hadn't sent him clothes for many years.\nWith this in mind, the guard took a long leave of absence to visit his family. The day he came back, he brought Thoma a special souvenir from his hometown, and they became good friends."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Thoma's father is an Inazuman and his mother is a Mondstadter.\nThoma grew up in Mondstadt and has been accustomed to its carefree and happy atmosphere since he was young. Influenced by this, he can easily mingle with anyone.\nHowever, he has also been taught by his father since he was a child and places great importance on the word \"loyalty\".\nAfter Thoma's father returned to Inazuma, he was worried that his old man would not be able to drink Mondstadt's wine there, so he sailed to Inazuma alone in a boat carrying Dandelion Wine.\nOn the way, a huge wave overturned the boat and Thoma fell into the water. Fortunately, he just drifted unconscious down the water until he got washed ashore on a beach in Inazuma.\nAt that time, Thoma had nothing and no family with him, but still started his life in Inazuma with optimism.\nHowever, despite his best efforts, he was unable to find his father, who was supposed to be in Inazuma.\nBut at his most difficult moment, Thoma met someone in Inazuma who was worthy of his \"loyalty\" to the end."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Due to his hailing from Mondstadt, Thoma is often regarded as an \"outsider\" by the local residents of Inazuma.\nDespite the strange looks and gossip directed towards him, Thoma never showed any dissatisfaction, and always smiled at all doubts.\nThoma is recognized as the most amiable person in the Yashiro Commission, but to outsiders, it is another story.\n\"Don't offend Thoma! Otherwise, things will be difficult to handle.\"\nNo one is sure when it started, but this saying has gone around so much that many people are convinced of this when they hear it.\nAs for those who have had unpleasant run-ins with Thoma, the mention of him still instills fear:\n\"Don't be fooled by that guy! He's always smiling kindly, but all I did was cheat the Yashiro Commission out of a small sum of money, and he...\"\nThat's right, if anyone dares to harm the interests of the Yashiro Commission or disrespect the Kamisato siblings, Thoma will make them pay.\nHe sees this as his duty and does his best, but does not like to boast about his achievements. Even if he is criticized for this, he will not defend himself too much.\n\"Gee, who cares about such trivialities? And it doesn't matter what kind of person I am, as long as those who should know know it.\""
+      },
+      {
+        "Title": "Old Duster",
+        "Context": "Thoma's favorite duster has been with him in many \"conquests\".\nAs it has been used for too long, no matter how Thoma cleans and takes care of it now, it still looks old and gray. Despite this, Thoma is still reluctant to discard it.\nThis duster was given to Thoma when he was first assigned cleaning duties at Yashiro Commission. As soon as he sees it, he recalls those hard but happy times.\nAt that time, Thoma had yet to comprehend various cleaning techniques. Due to his lack of experience, he was often busy doing all kinds of cleaning and tidying work until late at night.\nAccompanying him were the moonlight above his head, the chirping of insects in the summer night, and the sound of a duster tapping on the beams.\nThere are many different kinds of cleaning. From a simple cleaning to an all-out deep cleaning, Thoma has experienced it all.\nAt first, he found the work boring, but after he got used to it, he found that he could think more quietly when cleaning.\nSo to this day, Thoma often uses this duster to perform his work.\nWhile brushing away the dust in front of him, he also brushed away the fog in his head in a quiet and steady state of mind."
+      },
+      {
+        "Title": "Vision",
+        "Context": "In his early years living in Mondstadt, Thoma did not have particularly strong aspirations.\nEach day, he was awakened by the early morning sun and the fresh fragrance of flowers. After breakfast, he could choose to take a relaxing stroll through the city or explore the wilderness freely.\nAt that time, Thoma thought that people should have the happiness of living a leisurely life. Perhaps it would have been better to live a peaceful life.\nThis calm mood disappeared the moment when he was swept into a strange country by the waves, across the ocean in a small boat.\nHere, he had to receive a favor to survive, and thus the thought of \"repayment\" arose.\nTen years ago, when the Yashiro Commission's Kamisato Clan was losing its power.\nKamisato Ayato, who was embroiled in the dispute over the succession rights of the clan due to the death of both parents, told Thoma:\n\"Now that the situation in Inazuma is unclear, the trouble the Kamisato Clan faces will only increase. You are someone who can see what's at stake, so if you don't want to get involved, leave early.\"\nCould Thoma, who had received so many favors from the Kamisato Clan, just leave like that? Choosing to leave would mean that he would have to return to his ordinary, stable life with regrets and guilt.\nThe storm was imminent, and Thoma was like a leaf drifting in the sea.\nBut after much deliberation, Thoma's answer was:\n\"If I leave at this time, I will lose my loyalty and righteousness. Father has always taught me to be a loyal and righteous man... I would like to do my best to do my part for the young master and the young lady. You will certainly need me as a helper in the path you embark on in the future.\"\nThe will to burn for loyalty and righteousness forged a strong desire that drew the attention of the gods.\nAs if to respond to Thoma's choice — on this night of divergent destinies, a Vision, bright red like a blaze, appeared beside him."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 205000,
+      "Name": "Warrior of Flame",
+      "Description": "Thoma's outfit. He cropped the pieces of this light suit of armor till only the thigh and arm guards were left, allowing him to comfortably attend to all matters in and out of combat.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104114,
+    113024,
+    101209,
+    112037,
+    104322,
+    113026
+  ],
+  "NameCard": {
+    "Name": "Thoma: Blazing Guard",
+    "Description": "Namecard style.\nBlazing armor, flaming guards.",
+    "Icon": "UI_NameCardIcon_Tohma",
+    "PicturePrefix": "UI_NameCardPic_Tohma"
+  }
+}

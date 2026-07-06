@@ -1,0 +1,1209 @@
+{
+  "Id": 10000022,
+  "PromoteId": 22,
+  "Sort": 4,
+  "Body": 1,
+  "Icon": "UI_AvatarIcon_Venti",
+  "SideIcon": "UI_AvatarIcon_Side_Venti",
+  "Name": "Venti",
+  "Description": "One of the many bards of Mondstadt, who freely wanders the city's streets and alleys.",
+  "BeginTime": "2020-09-15T04:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 12,
+  "BaseValue": {
+    "HpBase": 819.8552,
+    "AttackBase": 20.482,
+    "DefenseBase": 52.0521
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 2231,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}+{param1:F1P}",
+            "2-Hit DMG|{param2:P}",
+            "3-Hit DMG|{param3:P}",
+            "4-Hit DMG|{param4:F1P}+{param4:F1P}",
+            "5-Hit DMG|{param5:P}",
+            "6-Hit DMG|{param6:P}",
+            "Aimed Shot|{param7:P}",
+            "Fully-Charged Aimed Shot|{param8:P}",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}",
+            "Windsunder Arrow DMG|{param12:F1P} Normal Attack DMG"
+          ],
+          "Parameters": [
+            {
+              "Id": 223101,
+              "Level": 1,
+              "Parameters": [
+                0.20382,
+                0.44376,
+                0.52374,
+                0.26058,
+                0.50654,
+                0.7095,
+                0.4386,
+                1.24,
+                0.568288,
+                1.136335,
+                1.419344,
+                1.6
+              ]
+            },
+            {
+              "Id": 223102,
+              "Level": 2,
+              "Parameters": [
+                0.22041,
+                0.47988,
+                0.56637,
+                0.28179,
+                0.54777,
+                0.76725,
+                0.4743,
+                1.333,
+                0.614544,
+                1.228828,
+                1.534872,
+                1.7
+              ]
+            },
+            {
+              "Id": 223103,
+              "Level": 3,
+              "Parameters": [
+                0.237,
+                0.516,
+                0.609,
+                0.303,
+                0.589,
+                0.825,
+                0.51,
+                1.426,
+                0.6608,
+                1.32132,
+                1.6504,
+                1.8
+              ]
+            },
+            {
+              "Id": 223104,
+              "Level": 4,
+              "Parameters": [
+                0.2607,
+                0.5676,
+                0.6699,
+                0.3333,
+                0.6479,
+                0.9075,
+                0.561,
+                1.55,
+                0.72688,
+                1.453452,
+                1.81544,
+                1.9
+              ]
+            },
+            {
+              "Id": 223105,
+              "Level": 5,
+              "Parameters": [
+                0.27729,
+                0.60372,
+                0.71253,
+                0.35451,
+                0.68913,
+                0.96525,
+                0.5967,
+                1.643,
+                0.773136,
+                1.545944,
+                1.930968,
+                2
+              ]
+            },
+            {
+              "Id": 223106,
+              "Level": 6,
+              "Parameters": [
+                0.29625,
+                0.645,
+                0.76125,
+                0.37875,
+                0.73625,
+                1.03125,
+                0.6375,
+                1.736,
+                0.826,
+                1.65165,
+                2.063,
+                2.1
+              ]
+            },
+            {
+              "Id": 223107,
+              "Level": 7,
+              "Parameters": [
+                0.32232,
+                0.70176,
+                0.82824,
+                0.41208,
+                0.80104,
+                1.122,
+                0.6936,
+                1.86,
+                0.898688,
+                1.796995,
+                2.244544,
+                2.2
+              ]
+            },
+            {
+              "Id": 223108,
+              "Level": 8,
+              "Parameters": [
+                0.34839,
+                0.75852,
+                0.89523,
+                0.44541,
+                0.86583,
+                1.21275,
+                0.7497,
+                1.984,
+                0.971376,
+                1.94234,
+                2.426088,
+                2.3
+              ]
+            },
+            {
+              "Id": 223109,
+              "Level": 9,
+              "Parameters": [
+                0.37446,
+                0.81528,
+                0.96222,
+                0.47874,
+                0.93062,
+                1.3035,
+                0.8058,
+                2.108,
+                1.044064,
+                2.087686,
+                2.607632,
+                2.4
+              ]
+            },
+            {
+              "Id": 223110,
+              "Level": 10,
+              "Parameters": [
+                0.4029,
+                0.8772,
+                1.0353,
+                0.5151,
+                1.0013,
+                1.4025,
+                0.867,
+                2.232,
+                1.12336,
+                2.246244,
+                2.80568,
+                2.5
+              ]
+            },
+            {
+              "Id": 223111,
+              "Level": 11,
+              "Parameters": [
+                0.435487,
+                0.94815,
+                1.119037,
+                0.556762,
+                1.082288,
+                1.515937,
+                0.937125,
+                2.36096,
+                1.202656,
+                2.404802,
+                3.003728,
+                2.6
+              ]
+            },
+            {
+              "Id": 223112,
+              "Level": 12,
+              "Parameters": [
+                0.47381,
+                1.031587,
+                1.217513,
+                0.605758,
+                1.177529,
+                1.64934,
+                1.019592,
+                2.5296,
+                1.281952,
+                2.563361,
+                3.201776,
+                2.7
+              ]
+            },
+            {
+              "Id": 223113,
+              "Level": 13,
+              "Parameters": [
+                0.512133,
+                1.115024,
+                1.315988,
+                0.654753,
+                1.27277,
+                1.782742,
+                1.102059,
+                2.69824,
+                1.361248,
+                2.721919,
+                3.399824,
+                2.8
+              ]
+            },
+            {
+              "Id": 223114,
+              "Level": 14,
+              "Parameters": [
+                0.550456,
+                1.198462,
+                1.414463,
+                0.703748,
+                1.368011,
+                1.916145,
+                1.184526,
+                2.86688,
+                1.440544,
+                2.880478,
+                3.597872,
+                2.9
+              ]
+            },
+            {
+              "Id": 223115,
+              "Level": 15,
+              "Parameters": [
+                0.592263,
+                1.289484,
+                1.521891,
+                0.757197,
+                1.471911,
+                2.061675,
+                1.27449,
+                3.03552,
+                1.51984,
+                3.039036,
+                3.79592,
+                3
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10221,
+        "Name": "Divine Marksmanship",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 6 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, favorable winds will accumulate on the arrowhead. A fully charged wind arrow will deal <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_02"
+      },
+      {
+        "GroupId": 2232,
+        "Proud": {
+          "Descriptions": [
+            "#{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press} DMG|{param1:P}",
+            "#{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press} CD|{param2:F1}s",
+            "Hold DMG|{param3:P}",
+            "Hold CD|{param4:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 223201,
+              "Level": 1,
+              "Parameters": [
+                2.76,
+                6,
+                3.8,
+                15
+              ]
+            },
+            {
+              "Id": 223202,
+              "Level": 2,
+              "Parameters": [
+                2.967,
+                6,
+                4.085,
+                15
+              ]
+            },
+            {
+              "Id": 223203,
+              "Level": 3,
+              "Parameters": [
+                3.174,
+                6,
+                4.37,
+                15
+              ]
+            },
+            {
+              "Id": 223204,
+              "Level": 4,
+              "Parameters": [
+                3.45,
+                6,
+                4.75,
+                15
+              ]
+            },
+            {
+              "Id": 223205,
+              "Level": 5,
+              "Parameters": [
+                3.657,
+                6,
+                5.035,
+                15
+              ]
+            },
+            {
+              "Id": 223206,
+              "Level": 6,
+              "Parameters": [
+                3.864,
+                6,
+                5.32,
+                15
+              ]
+            },
+            {
+              "Id": 223207,
+              "Level": 7,
+              "Parameters": [
+                4.14,
+                6,
+                5.7,
+                15
+              ]
+            },
+            {
+              "Id": 223208,
+              "Level": 8,
+              "Parameters": [
+                4.416,
+                6,
+                6.08,
+                15
+              ]
+            },
+            {
+              "Id": 223209,
+              "Level": 9,
+              "Parameters": [
+                4.692,
+                6,
+                6.46,
+                15
+              ]
+            },
+            {
+              "Id": 223210,
+              "Level": 10,
+              "Parameters": [
+                4.968,
+                6,
+                6.84,
+                15
+              ]
+            },
+            {
+              "Id": 223211,
+              "Level": 11,
+              "Parameters": [
+                5.244,
+                6,
+                7.22,
+                15
+              ]
+            },
+            {
+              "Id": 223212,
+              "Level": 12,
+              "Parameters": [
+                5.52,
+                6,
+                7.6,
+                15
+              ]
+            },
+            {
+              "Id": 223213,
+              "Level": 13,
+              "Parameters": [
+                5.865,
+                6,
+                8.075,
+                15
+              ]
+            },
+            {
+              "Id": 223214,
+              "Level": 14,
+              "Parameters": [
+                6.21,
+                6,
+                8.55,
+                15
+              ]
+            },
+            {
+              "Id": 223215,
+              "Level": 15,
+              "Parameters": [
+                6.555,
+                6,
+                9.025,
+                15
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10224,
+        "Name": "Skyward Sonnet",
+        "Description": "#O wind upon which all hymns and songs fly, bear these earth-walkers up into the sky!\n\n<color=#FFD780FF>{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}</color>\nSummons a Wind Domain at the opponent's location, dealing <color=#80FFD7FF>AoE Anemo DMG</color> and launching opponents into the air.\n\n<color=#FFD780FF>Hold</color>\nSummons an even larger Wind Domain with Venti as the epicenter, dealing <color=#80FFD7FF>AoE Anemo DMG</color> and launching affected opponents into the air.\nAfter unleashing the Hold version of this ability, Venti rides the wind into the air.\n\nOpponents hit by Skyward Sonnet will fall to the ground slowly.\n\n<i>In the days when gods and men walked the earth together, the heavens were filled with countless songs. This melody has long since been forgotten.</i>",
+        "Icon": "Skill_S_Venti_01"
+      }
+    ],
+    "SpecialSkills": [
+      {
+        "GroupId": 2251,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 225101,
+              "Level": 1,
+              "Parameters": [
+                0.5,
+                1.35,
+                4
+              ]
+            }
+          ],
+          "Display": 3
+        },
+        "Id": 225101,
+        "Name": "Witch's Eve Rite: Temporal Wind's Eulogy",
+        "Description": "After completing <color=#FFD780FF>Witch's Homework: Of the Waking of Wind</color>, Venti will become a <color=#FFD780FF>Hexerei</color> character. When the party includes at least 2 Hexerei characters, you will gain the <color=#FFD780FF>Hexerei: Secret Rite</color> effect, which enhances Hexerei characters.\n\n<color=#FFD780FF>Hexerei: Secret Rite</color>\nWhile the Stormeye created by the Elemental Burst <color=#FFD780FF>Wind's Grand Ode</color> is active, for 4s after a nearby active character triggers a Swirl reaction, that character's DMG is increased by 50%, and Venti's Stormeye deals 135% of its original DMG.",
+        "Icon": "UI_Talent_S_Venti_07"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 2239,
+      "Proud": {
+        "Descriptions": [
+          "DoT|{param1:F1P}",
+          "Additional Elemental DMG|{param2:F1P}",
+          "Duration|{param3:F1}s",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 223901,
+            "Level": 1,
+            "Parameters": [
+              0.376,
+              0.188,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 223902,
+            "Level": 2,
+            "Parameters": [
+              0.4042,
+              0.2021,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 223903,
+            "Level": 3,
+            "Parameters": [
+              0.4324,
+              0.2162,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 223904,
+            "Level": 4,
+            "Parameters": [
+              0.47,
+              0.235,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 223905,
+            "Level": 5,
+            "Parameters": [
+              0.4982,
+              0.2491,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 223906,
+            "Level": 6,
+            "Parameters": [
+              0.5264,
+              0.2632,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 223907,
+            "Level": 7,
+            "Parameters": [
+              0.564,
+              0.282,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 223908,
+            "Level": 8,
+            "Parameters": [
+              0.6016,
+              0.3008,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 223909,
+            "Level": 9,
+            "Parameters": [
+              0.6392,
+              0.3196,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 223910,
+            "Level": 10,
+            "Parameters": [
+              0.6768,
+              0.3384,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 223911,
+            "Level": 11,
+            "Parameters": [
+              0.7144,
+              0.3572,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 223912,
+            "Level": 12,
+            "Parameters": [
+              0.752,
+              0.376,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 223913,
+            "Level": 13,
+            "Parameters": [
+              0.799,
+              0.3995,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 223914,
+            "Level": 14,
+            "Parameters": [
+              0.846,
+              0.423,
+              8,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 223915,
+            "Level": 15,
+            "Parameters": [
+              0.893,
+              0.4465,
+              8,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10225,
+      "Name": "Wind's Grand Ode",
+      "Description": "Fires off an arrow made of countless coalesced winds, creating a huge Stormeye that sucks in opponents and deals continuous <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Elemental Absorption</color>\nIf the Stormeye comes into contact with <color=#80C0FFFF>Hydro</color>/<color=#FF9999FF>Pyro</color>/<color=#99FFFFFF>Cryo</color>/<color=#FFACFFFF>Electro</color>, it will deal additional elemental DMG of that type.\nElemental Absorption may only occur once per use.\n\n<i>Many hymns written in praise of the Anemo Archon have been lost to time. This one sings of his mastery over the wind.</i>",
+      "Icon": "Skill_E_Venti_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 2221,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 222101,
+              "Level": 1,
+              "Parameters": [
+                20
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 222101,
+        "Name": "Embrace of Winds",
+        "Description": "Holding <color=#FFD780FF>Skyward Sonnet</color> creates an upcurrent that lasts for 20s.",
+        "Icon": "UI_Talent_S_Venti_05"
+      },
+      {
+        "GroupId": 2222,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 222201,
+              "Level": 1,
+              "Parameters": [
+                15,
+                15
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 222201,
+        "Name": "Stormeye",
+        "Description": "Regenerates 15 Energy for Venti after the effects of <color=#FFD780FF>Wind's Grand Ode</color> end.\nIf an Elemental Absorption occurred, this also restores 15 Energy to all characters of that corresponding element in the party.",
+        "Icon": "UI_Talent_S_Venti_06"
+      },
+      {
+        "GroupId": 2223,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 222301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 222301,
+        "Name": "Windrider",
+        "Description": "Decreases gliding Stamina consumption for your own party members by 20%.\nNot stackable with Passive Talents that provide the exact same effects.",
+        "Icon": "UI_Talent_Explosion_Glide"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 221,
+        "Name": "Splitting Gales",
+        "Description": "Fires 2 additional arrows per <color=#FFD780FF>Aimed Shot</color>, each dealing 33% of the original arrow's DMG.",
+        "Icon": "UI_Talent_S_Venti_01"
+      },
+      {
+        "Id": 222,
+        "Name": "Breeze of Reminiscence",
+        "Description": "<color=#FFD780FF>Skyward Sonnet</color> decreases opponents' <color=#80FFD7FF>Anemo RES</color> and Physical RES by 12% for 10s.\nOpponents launched by <color=#FFD780FF>Skyward Sonnet</color> suffer an additional 12% <color=#80FFD7FF>Anemo RES</color> and Physical RES decrease while airborne.",
+        "Icon": "UI_Talent_S_Venti_02"
+      },
+      {
+        "Id": 223,
+        "Name": "Ode to Thousand Winds",
+        "Description": "Increases the Level of <color=#FFD780FF>Wind's Grand Ode</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Venti_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 224,
+        "Name": "Hurricane of Freedom",
+        "Description": "When Venti picks up an Elemental Orb or Particle, he receives a 25% <color=#80FFD7FF>Anemo DMG Bonus</color> for 10s.",
+        "Icon": "UI_Talent_S_Venti_03"
+      },
+      {
+        "Id": 225,
+        "Name": "Concerto dal Cielo",
+        "Description": "Increases the Level of <color=#FFD780FF>Skyward Sonnet</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Venti_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 226,
+        "Name": "Storm of Defiance",
+        "Description": "Targets who take DMG from <color=#FFD780FF>Wind's Grand Ode</color> have their <color=#80FFD7FF>Anemo RES</color> decreased by 20%.\nIf an Elemental Absorption occurred, then their RES towards the corresponding Element is also decreased by 20%.",
+        "Icon": "UI_Talent_S_Venti_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Windborne Bard",
+    "Detail": "One of the many bards of Mondstadt, who freely wanders the city's streets and alleys.",
+    "Association": 1,
+    "Native": "Mondstadt",
+    "BirthMonth": 6,
+    "BirthDay": 16,
+    "VisionBefore": "Anemo",
+    "VisionAfter": "Anemo",
+    "VisionOverrideUnlocked": "Gnosis",
+    "ConstellationBefore": "Carmen Dei",
+    "ConstellationAfter": "Carmen Dei",
+    "CvChinese": "喵酱",
+    "CvJapanese": "村瀬歩",
+    "CvEnglish": "Erika Harlacher",
+    "CvKorean": "Jung Yoo-jung",
+    "CookBonus": {
+      "OriginItemId": 108111,
+      "ItemId": 108113,
+      "InputList": [
+        100013,
+        100080,
+        100076
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "*Yawn* That was a refreshing sleep. Ah, Traveler, we meet again! What? You don't remember me? Ahaha, well, allow me to join you on your quest once again. I must see to it that the bards of the world tell the Traveler's tales!"
+      },
+      {
+        "Title": "Chat: Playing the Lyre",
+        "Context": "Sure, I'll play you another tune, but it'll cost you an apple."
+      },
+      {
+        "Title": "Chat: Apple Cider",
+        "Context": "Right now I wish I was sitting at the top of a tree, looking out over a meadow, cider in hand..."
+      },
+      {
+        "Title": "Chat: Ballads",
+        "Context": "Come on Traveler, let's go! The world is full of lost ballads just waiting to be rediscovered."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Let's go jumping in puddles and see who can make the biggest splash!"
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "It's stopped raining already? A shame, I wanted to play some more."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Let's wait till the snow gets heavier and have a snowball fight!"
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "The wind has returned! Quick, let's go gliding!"
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Morning! Ah... what's in store for today?"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "My tummy is rumbling, but I can't get caught pilfering food from the Dawn Winery again... Oh, it's you! Where are you heading? May I join?"
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Hmm, I'm still not sleepy. Fancy an evening stroll?"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Off to the land of nod? Haha, farewell, my friend!"
+      },
+      {
+        "Title": "About Venti",
+        "Context": "Practice? Me? There's no need — I already know every song in Teyvat!"
+      },
+      {
+        "Title": "About Us: New Songs",
+        "Context": "I have decided to write a song about you! What are you giving me that look for? Can't afford it? Don't be preposterous, the price for you, my friend, is precisely zero Mora! Although... one thing you could do is tell me a few more of your stories!"
+      },
+      {
+        "Title": "About Us: Heroes",
+        "Context": "#Haha, once the {M#hero}{F#heroine} in the song has actually rescued the {M#princess}{F#prince}, I will ensure this song spreads to every corner of the continent!"
+      },
+      {
+        "Title": "About Us: Apostles",
+        "Context": "Ahh... an evening breeze really sets the mood for becoming my disciple, don't you think? We can do it right now... you just need to make me a small offering..."
+      },
+      {
+        "Title": "About Us: Requests",
+        "Context": "What's that? You think I should try harder to be a good Anemo Archon? Well, you could be a better devotee too... you could be more pious, more passionate, or... um..."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "Hmm? You want to know about my Vision? Oh, go on then, take a look for yourself. I can make you a matching one if you like! Hehehe."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Olah! Haha, that's how the Hilichurls say \"hello.\" Why, I learned it to aid with my songwriting, of course! Vast knowledge makes for a richer composition... That said, I haven't actually written any songs in Hilichurlian so far..."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Traveler, have you ever seen a Cecilia? It's a magnificent white wildflower that only grows on the most remote mountains and clifftops. To me, at least, it is the most beautiful flower in all of Teyvat."
+      },
+      {
+        "Title": "About Jean",
+        "Context": "Acting Grand Master Jean... Well, what do you think of her? Yes, I couldn't agree more: conscientious, courageous... kind and considerate too. Reminds me of another good friend..."
+      },
+      {
+        "Title": "About Diluc",
+        "Context": "I'm not surprised you want to befriend Master Diluc. Just think of all the vintage wine he must have stored away... Mwuhahaha... Huh? He doesn't let you sample it? Not even the slightest drop? Huh... Well, I guess you can still appreciate the aroma. That's still better than no wine at all, right? No?"
+      },
+      {
+        "Title": "About Barbara",
+        "Context": "The darling Deaconess with the sweet singing voice — do you know her? You do? Idol, huh? Meet and greets? Concerts? Wow... That's the power of music for you..."
+      },
+      {
+        "Title": "About Razor",
+        "Context": "Ah yes, the white-haired fellow from Wolvendom? Raised by wolves? Really? ... No wonder his scent is so familiar..."
+      },
+      {
+        "Title": "About Mona",
+        "Context": "Oh, that astrologer? How should I put it? Fortune-telling and my singing are the same: Both lead to you being so poor you can't even cough up the money for a drink! ...You think that astrology is a cultural tradition, so at least still has some value? Hmph, so rude. In that case, so too is singing, so it still has its value too!"
+      },
+      {
+        "Title": "About Diona",
+        "Context": "There's a special drink known far and wide at Cat's Tail. But it ah... ahh... ACHOO! *sniffs* How about you go and fetch one for me? I'll be truly thankful, I promise."
+      },
+      {
+        "Title": "About Albedo",
+        "Context": "How do you explain white chalk in black soil, or the earth's dense crust amidst the emptiness of space? Same reason the purest soil gave birth to human life... It's an ancient power with unmistakable properties. Trying to harness it is dangerous indeed, I can't imagine what would happen if someone lost control of it in the city... Ah, never mind! What goes on within Mondstadt's walls is up to Mondstadt's people to deal with!"
+      },
+      {
+        "Title": "About Morax",
+        "Context": "Have you seen that gentleman around? Huh? He's just a normal man by the name of Zhongli now? That must be quite the change for that old block-head. Come with me to see him, will you? I have a vintage I dug up from Windrise that I can take as a condolence gift. Oh, ahh... did he still seem strong when you saw him? How strong? Am I likely to get blown away?"
+      },
+      {
+        "Title": "About Eula",
+        "Context": "Eula has good taste when it comes to beverages of the alcoholic variety. Come summer or winter, she always likes them ice-cold. That's rare among Mondstadters these days! She and I would make great drinking buddies. Huh? My songs about the Lawrence Clan... She's heard them already? Eh, no harm done. Maybe she and I can do a duet sometime!"
+      },
+      {
+        "Title": "About Baal",
+        "Context": "So, I hear you defeated the mighty Raiden Shogun? Ah, I recall the days when she was a kagemusha, seeking to perfect her martial prowess. Hehe, she now no doubt employs a wide range of reasoning to get you to train with her. Oh but yes, come close and I shall let you in on her weakness — desserts!"
+      },
+      {
+        "Title": "About Buer",
+        "Context": "The first thing you think of when you hear \"Dendro Archon\" is her power over dreams. Her dreams are akin to my ballads: full of emotion and imagination. It goes without saying that we get along really well."
+      },
+      {
+        "Title": "About Furina",
+        "Context": "A bard must be versed in both music and song, but a stage performer requires far more skills than just these... Hey, don't you think we should invite her over to put on a show at the next Windblume Festival? ...Huh? You want me to talk about how she saved Fontaine? Well, I mean, she's such a talented artiste, it's no wonder. I wouldn't be surprised even if she'd saved the entire world."
+      },
+      {
+        "Title": "About Haborym",
+        "Context": "This world sure is cruel, forcing generation upon generation of human heroes to become cannon fodder in the fight against darkness. But, under Mavuika's leadership, they achieved a truly god-like feat... Hehe, starting with \"her,\" I suppose the Natlanese have always been like that. Ah, right! I heard Mavuika likes to drink! Are you thinking what I'm thinking...?"
+      },
+      {
+        "Title": "About Dahlia",
+        "Context": "O, Traveler, do you seek to hear the voice of the wind and know its guidance? Then I say to you... chatting to the deacon is your best bet. Haha, I'm kidding — come chat with me over a drink any time you want! The reason I usually get Dahlia to be my intermediary is because... well, I imagine you can probably guess why. He loves listening to the blustering of the wind, but crucially he has his own compass, too."
+      },
+      {
+        "Title": "About Durin",
+        "Context": "Another one of Madame Mage's children here in Mondstadt, what fun! My new little friend looked like he wanted to play with a certain older, bigger friend of mine — so I arranged a little introduction, and voila! It turns out my big friend was the more excited of the two! Why, you should've seen him jumping for joy, patting his belly, and dancing in circles. Oh dear, did he hear what I just said? Quick, quick, let's take cover behind that tree!"
+      },
+      {
+        "Title": "More About Venti: I",
+        "Context": "Perfect timing, Traveler! I was about to ask you — what is your greatest wish?"
+      },
+      {
+        "Title": "More About Venti: II",
+        "Context": "There's never a dull moment traveling with you! The only minor inconvenience is that pesky little pixie thing that follows you everywhere... She never stops eating — I can't begin to imagine how much you spend on food!"
+      },
+      {
+        "Title": "More About Venti: III",
+        "Context": "The Pyro Archon is a wayward, warmongering wretch, and the Geo Archon is a brutish, blundering buffoon! How do I know? Because, this is written in the epic poems of days gone by!"
+      },
+      {
+        "Title": "More About Venti: IV",
+        "Context": "Celestia... I'm not sure even I could fly that far. In any case, the water there tastes foul, and the fruit is bland. You know what that means? No cider! Haha, in that case, I wouldn't go there even if I was invited."
+      },
+      {
+        "Title": "More About Venti: V",
+        "Context": "My greatest wish? It has always been to roam free and experience the whole world. Now, I would add that wherever I go, it simply must be with you! Each day with you is an adventure, and where adventurers go, storytellers must follow!"
+      },
+      {
+        "Title": "Venti's Hobbies",
+        "Context": "I like to drink! And I like the wind! If only there were such a thing as wind-brewed cider..."
+      },
+      {
+        "Title": "Venti's Troubles",
+        "Context": "I'm actually highly allergic to cats. I start sneezing as soon as they enter the vicinity, and... Aah... Aa-choo! Ugh, apparently I can't even THINK about cats without sneezing. Do you think there is a cure for this monstrous affliction?"
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Here, have an apple. I just picked it. Look how ripe and juicy it is... *munching* ... Truly the fruit of the gods."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Hmm, what's that tasty morsel you've got there...? Eww! A melted cheese pancake? A smelly, sticky, slimy, disgusting mess!"
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Ahh, quite delightful! So... could I get the same again tomorrow? ...And maybe the day after that?"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Oof, I'm so full... I'll have to pass on the post-meal fruits this time..."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "I can't believe it, but I don't think I can stomach this... Oh boy... What a predicament."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Someone once told me you're supposed to eat a cake on your birthday... Tada! Here's your birthday cake — it's apple-flavored! And here's a spoon. The cake didn't rise properly in the oven... That's why it looks more akin to an apple pie... Ugh, baking is really quite complicated!"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Whoa! What was that?"
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Good work. Shall we repose for a moment with a tune? Shall it be a capriccio or a serenade?"
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Come, sit with me. I've written a new poem. I call it \"Wind of the Traveler.\""
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "Hmm... Though I've long since viewed this scenery a great many times, there is something different about seeing it again with you. Surely you're not still concealing some other wondrous abilities? Hmm, even if you were, it would simply further prove that my intuition is correct."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Yoo-Hoo!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Here we go!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Brace yourselves!"
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Let's play!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Think you can get away?"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Time for takeoff!"
+      },
+      {
+        "Title": "Sprint Start: I",
+        "Context": "Wouldn't gliding be faster?"
+      },
+      {
+        "Title": "Deploying Wind Glider: I",
+        "Context": "Yahoo!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "*clears throat* Have you heard The Ballad of the Treasure Chest?"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Thank Barbatos! Wait a minute..."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "What a find! I wonder how many bottles this'll be worth..."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Ugh, I'm not in the mood for this!"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Oh, dear!"
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "That was uncalled for."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Let me try!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Don't give up!"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Let me sleep a while..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Oh no, my lyre is broken..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Ah... Ugh..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Ah!"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "How rude!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Give me a moment to compose myself."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Didn't keep you waiting, did I?"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Ready for a rehearsal?"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "An unknown bard that came from nowhere. He sometimes sings outdated songs, other times he hums new ones that none have ever heard of.\nHe likes apples and lively atmospheres, but hates cheese and anything that is slimy.\nWhen channeling Anemo, it appears in the form of feathers, because he likes things that look light."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Back when traveling bard Venti had only been in Mondstadt for a few months, his income was far less than the other more established bards in town. But once he had a few Mora in the pot from his performance, you could be sure he would hurry off to spend it at the same place every time — one of the city's taverns.\nUnfortunately for Venti, his childlike appearance meant that his attempts to acquire alcohol failed at every turn.\nThe first time he was refused service, he was heard grumbling: \"I'm sure there were no such preposterous regulations last time I was here...\" Once he realized that the same rule applied to all taverns in town, he decided he would have to change his approach...\nThe strategy he developed was drinking on the job — that is to say, playing the lyre while holding a wine cup in his mouth, urging his audience to buy him a drink from the bar if they liked his performances instead of giving him Mora.\nThe novelty of this made him quite popular in Mondstadt.\nThere was just one snag — he couldn't help but sneeze if a cat came close...\nAnd if he happened to be holding a wine cup in his mouth when it happened... needless to say, it would spell disaster.\nVenti, therefore, has one golden rule when selecting a spot to perform, and that is that there must be no cats in the vicinity.\nEasier said than done — the stray cats of Mondstadt seem to be quite drawn to him."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "There is a towering oak tree at the center of Windrise, said to have sprouted when Vennessa ascended to the heavens a millennium ago.\nIn the past few months, travelers resting in the shade of the great oak sometimes hear a young boy singing the tales of Barbatos, the Anemo Archon.\nUnlike the ruling deities of the other nations, Barbatos has long left Mondstadt. In fact, the only visible proof of his connection with Mondstadt is the Statues of The Seven that appear across the land — even then, the resemblance is vague at best. Fortunately, Barbatos's past deeds are recorded in books and epics, sung and passed on by the bards.\nIn contrast to these more canonical works, Venti's ballads tend to include bizarre adventures and acts of mischief, such as the time that Barbatos pinched the Cryo Archon's scepter and replaced it with a hilichurl's wooden club...\nWorshippers of Barbatos are quick to decry these frivolous tales as blasphemous fabrications. But whenever someone confronts Venti about this, his response suggests that he has not an ounce of remorse.\n\"How can you know that they're fabrications?\"\nHe has a point — even the most devoted sister could not possibly know the details of all of Barbatos's deeds from a millennium ago.\nOnly Venti knows the truth behind his song lyrics, and it is a truth he hides behind an enigmatic smile.\nReason being, yes — Venti's tall tales of Barbatos's unorthodox exploits are entirely fabricated.\nHey, Venti finds that a few drinks really gets his muse going. Can you really blame him?"
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Around 2,600 years ago, the Archon War had yet to end, and the world had yet to fall under the dominion of The Seven.\nIn those days, the city called \"Mondstadt\" was surrounded on all sides by gales impenetrable even to the birds of the air. The wind's ceaseless howling ground the soil and the rock of that city into smooth, flowing dust.\nThe Lord of Wind who lived in his high tower was Decarabian, God of Storms. He squinted from on high at his subjects, who bowed before him in the unceasing wind, and, believing them submissive, thought this good.\nIn those days, Venti was but a single thread of the thousand winds that roared through the northern lands.\nHe who would in latter days be known as \"Barbatos\" was but a tiny elemental spirit, without a shred of divine dignity, a breeze that brought subtle changes for the better, or tiny seeds of hope.\nIn Mondstadt of old, Venti met a young boy. This lad knew how to play the lyre, and longed to write the greatest poem of all.\n\"I do so wish to see the birds in flight.\"\nSo said the boy who had never seen the blue sky, eagles, or the green grass, his voice almost utterly drowned by the wind.\n\"Friend, will you not come along?\""
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "The elemental being Venti obtained the feather of an eagle for the lad living in that storm-shrouded city, who had never seen a bird in his life.\nThen, war broke out in Mondstadt, in the name of freedom.\nWith the feather tucked away in his breast pocket, Venti watched the fall of the eccentric ruler amid the wrack and ruin of revolt together with his friend.\nThe ruler had believed that he had given his subjects a city free from the bitter cold, and to the end, he believed that they had loved him as he loved them.\nYet, despite the victory, Venti was never able to give that feather to the lad, for that lad had fallen in the battle for the sake of song, sky, and birds, and for the people who, like him, had dwelled within the storm-wall.\nWith the crumbling of an ancient seat of divinity, a new god was born. The Anemo Archon Barbatos felt power flowing at his fingertips.\nHis first use of this power was to reconstitute himself in the likeness of that young lad.\nFor only if he wore human shape could he play the lyre that the lad so loved.\nPlucking its strings, he scattered the ice and snow and split the mountains with a divine wind.\nHe bade Mondstadt become a city of freedom, a nation without a king.\nIn future, he believed, it would become a better, more romantic city.\n\"Surely, he too would have wanted to live in such a place.\"\nThus, a new age began for Mondstadt."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "The Anemo Archon cannot take credit for everything in Mondstadt.\nCredit should be given where credit is due, I shall sing now the praises of things beauteous and true:\nWe thank the West Wind, whose enduring caress\nBrings the blossoms of Spring, by whose scent we are blessed.\n\nFinches, ducks, rabbits and boars,\nMondstadt's revival bid them thrive evermore.\nIn summer the lion walks the plains,\nNo words one finds to praise it but these:\nDo you sweat out your water to make way for wine?\nComes the heat of the summer from your mane of sunshine?\n\nThe mountain mouths and gorges low like drunkards wayward lie...\nBut the East Wind cares not, for it doesn't walk — it flies!\nOver the fruit trees it brushes low,\nAnd its wings bring the harvest of things that grow.\n\nThe North Wind in the silent forest slumbers,\nAnd around it pace the wolves in their numbers.\nThough most have never a glimpse of them seen, for the Wind knows that none is of winter too keen,\nYet the Anemo Archon glimpses and sees, that it dreams each night of warm reverie.\n\n—As the four seasons in turn shall say their piece, so the four winds too shall never cease.\nOf course, to look at it differently, I am the one who should be credited here, and not they.\nCredits should be given where credits belong — if not for the bard who pens the song, then who shall ensure that these tales are passed on?"
+      },
+      {
+        "Title": "Where the Wind Doth Not Blow",
+        "Context": "After 1,600 years of history, Mondstadt's \"freedom\" had sunk to a heretofore unseen low.\nBarbatos, unwilling to become a tyrant, had departed. But he had never imagined that those to whom he had gifted freedom would make for themselves a tyrant.\nThe aristocracy ruled Mondstadt with a cruel hand, bringing slaves into this land and ignoring the cries of the oppressed.\nThus the Anemo Archon returned after these 1,600 years to what was once the City of Freedom. He heard the cry of the slave girl Vennessa, and together with her raised a rebellion that overthrew the aristocracy.\n—Now, the above is what all know to be the official history of Mondstadt.\nThe story has an interesting, little-known twist, however.\nThe one who united the people of Mondstadt in this conflict was indeed the hero Vennessa — but that which caused many of the aristocracy's troops to turn coat was a \"treachery against the wind.\"\nA secret treaty was found, a betrayal of the city — the aristocrats had forsaken the wind, and sold everything in Mondstadt to the Geo Archon of the neighboring land.\nAt the treaty's end was carved an insignia inimitable by all save the deity so named: Rex Lapis.\nHow the soldiers that had once oppressed the slaves shuddered when they saw that they too would become slaves in a foreign land.\nThe news, and the conflict, spread like wildfire, consuming the aristocracy. It was only many years later that historians would discover that this treaty was fake.\nAs it turned out, Venti had once practiced the art of forgery in order to play pranks on the Geo Archon, but could never deceive the god of wealth and transactions. Even so, his adeptness would come into play after several hundred years.\nWhat a happy coincidence."
+      },
+      {
+        "Title": "Vision",
+        "Context": "The Seven Archons do not need Visions, for they already have great power.\nYet Barbatos was fond of the mortal world, and wanted to roam Mondstadt more freely as \"Venti.\" As such, he constructed a glass ornament very much like the Visions worn by those chosen by the gods.\nThe imitation has no special abilities, nor does Venti rely on it to channel elemental power.\nHowever, since Venti does not keep the Holy Lyre der Himmel by his side, and since he is too lazy to bring a normal lyre, he gave his fake Vision the ability to turn into the wooden lyre \"Der Frühling.\""
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 202200,
+      "Name": "Breezy Ode",
+      "Description": "Venti's outfit. The clothes of a carefree bard.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104154,
+    113001,
+    100023,
+    112004,
+    104309,
+    113006
+  ],
+  "NameCard": {
+    "Name": "Venti: Azure Sky",
+    "Description": "Namecard style.\nThe bright blue of a cloudless sky and the melodious tone of Der Frühling complement each other perfectly.",
+    "Icon": "UI_NameCardIcon_Venti",
+    "PicturePrefix": "UI_NameCardPic_Venti"
+  },
+  "TraceEffect": {
+    "Id": 215010,
+    "Name": "Echo: Windborne Bard",
+    "Description": "Venti's Envisaged Echo. \"As free as the wind, I shall sing now the praises of things beauteous and true.\"",
+    "Icon": "UI_TraceEffectIcon_Venti"
+  }
+}

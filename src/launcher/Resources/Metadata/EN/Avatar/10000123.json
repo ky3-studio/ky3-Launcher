@@ -1,0 +1,1345 @@
+{
+  "Id": 10000123,
+  "PromoteId": 123,
+  "Sort": 109,
+  "Body": 1,
+  "Icon": "UI_AvatarIcon_Durin",
+  "SideIcon": "UI_AvatarIcon_Side_Durin",
+  "Name": "Durin",
+  "Description": "A dragon born from M's pen, who came to alight in the human world. His \"story\" continues to unfold.",
+  "BeginTime": "2025-12-02T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 1,
+  "BaseValue": {
+    "HpBase": 967.6198,
+    "AttackBase": 26.999,
+    "DefenseBase": 64.0181
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 12331,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+            "4-Hit DMG|{param5:F1P}",
+            "Charged Attack DMG|{param6:F1P}",
+            "Charged Attack Stamina Cost|{param7:F1}",
+            "Plunge DMG|{param8:F1P}",
+            "Low/High Plunge DMG|{param9:P}/{param10:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1233101,
+              "Level": 1,
+              "Parameters": [
+                0.456505,
+                0.410048,
+                0.291617,
+                0.291617,
+                0.711521,
+                1.13434,
+                20,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 1233102,
+              "Level": 2,
+              "Parameters": [
+                0.493663,
+                0.443424,
+                0.315354,
+                0.315354,
+                0.769436,
+                1.22667,
+                20,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 1233103,
+              "Level": 3,
+              "Parameters": [
+                0.53082,
+                0.4768,
+                0.33909,
+                0.33909,
+                0.82735,
+                1.319,
+                20,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 1233104,
+              "Level": 4,
+              "Parameters": [
+                0.583902,
+                0.52448,
+                0.372999,
+                0.372999,
+                0.910085,
+                1.4509,
+                20,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 1233105,
+              "Level": 5,
+              "Parameters": [
+                0.621059,
+                0.557856,
+                0.396735,
+                0.396735,
+                0.968,
+                1.54323,
+                20,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 1233106,
+              "Level": 6,
+              "Parameters": [
+                0.663525,
+                0.596,
+                0.423863,
+                0.423863,
+                1.034188,
+                1.64875,
+                20,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 1233107,
+              "Level": 7,
+              "Parameters": [
+                0.721915,
+                0.648448,
+                0.461162,
+                0.461162,
+                1.125196,
+                1.79384,
+                20,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 1233108,
+              "Level": 8,
+              "Parameters": [
+                0.780305,
+                0.700896,
+                0.498462,
+                0.498462,
+                1.216205,
+                1.93893,
+                20,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 1233109,
+              "Level": 9,
+              "Parameters": [
+                0.838696,
+                0.753344,
+                0.535762,
+                0.535762,
+                1.307213,
+                2.08402,
+                20,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 1233110,
+              "Level": 10,
+              "Parameters": [
+                0.902394,
+                0.81056,
+                0.576453,
+                0.576453,
+                1.406495,
+                2.2423,
+                20,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 1233111,
+              "Level": 11,
+              "Parameters": [
+                0.966092,
+                0.867776,
+                0.617144,
+                0.617144,
+                1.505777,
+                2.40058,
+                20,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 1233112,
+              "Level": 12,
+              "Parameters": [
+                1.029791,
+                0.924992,
+                0.657835,
+                0.657835,
+                1.605059,
+                2.55886,
+                20,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 1233113,
+              "Level": 13,
+              "Parameters": [
+                1.093489,
+                0.982208,
+                0.698525,
+                0.698525,
+                1.704341,
+                2.71714,
+                20,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 1233114,
+              "Level": 14,
+              "Parameters": [
+                1.157188,
+                1.039424,
+                0.739216,
+                0.739216,
+                1.803623,
+                2.87542,
+                20,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 1233115,
+              "Level": 15,
+              "Parameters": [
+                1.220886,
+                1.09664,
+                0.779907,
+                0.779907,
+                1.902905,
+                3.0337,
+                20,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11231,
+        "Name": "Radiant Wingslash",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive sword strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to perform a slash toward the front.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_01"
+      },
+      {
+        "GroupId": 12332,
+        "Proud": {
+          "Descriptions": [
+            "Transmutation: Confirmation of Purity DMG|{param1:F1P}",
+            "Transmutation: Denial of Darkness DMG|{param2:F1P}+{param3:F1P}+{param4:F1P}",
+            "Energy Regeneration|{param5:F1}",
+            "CD|{param6:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1233201,
+              "Level": 1,
+              "Parameters": [
+                1.056,
+                0.7224,
+                0.532,
+                0.6464,
+                6,
+                12
+              ]
+            },
+            {
+              "Id": 1233202,
+              "Level": 2,
+              "Parameters": [
+                1.1352,
+                0.77658,
+                0.5719,
+                0.69488,
+                9,
+                12
+              ]
+            },
+            {
+              "Id": 1233203,
+              "Level": 3,
+              "Parameters": [
+                1.2144,
+                0.83076,
+                0.6118,
+                0.74336,
+                12,
+                12
+              ]
+            },
+            {
+              "Id": 1233204,
+              "Level": 4,
+              "Parameters": [
+                1.32,
+                0.903,
+                0.665,
+                0.808,
+                15,
+                12
+              ]
+            },
+            {
+              "Id": 1233205,
+              "Level": 5,
+              "Parameters": [
+                1.3992,
+                0.95718,
+                0.7049,
+                0.85648,
+                18,
+                12
+              ]
+            },
+            {
+              "Id": 1233206,
+              "Level": 6,
+              "Parameters": [
+                1.4784,
+                1.01136,
+                0.7448,
+                0.90496,
+                21,
+                12
+              ]
+            },
+            {
+              "Id": 1233207,
+              "Level": 7,
+              "Parameters": [
+                1.584,
+                1.0836,
+                0.798,
+                0.9696,
+                24,
+                12
+              ]
+            },
+            {
+              "Id": 1233208,
+              "Level": 8,
+              "Parameters": [
+                1.6896,
+                1.15584,
+                0.8512,
+                1.03424,
+                27,
+                12
+              ]
+            },
+            {
+              "Id": 1233209,
+              "Level": 9,
+              "Parameters": [
+                1.7952,
+                1.22808,
+                0.9044,
+                1.09888,
+                30,
+                12
+              ]
+            },
+            {
+              "Id": 1233210,
+              "Level": 10,
+              "Parameters": [
+                1.9008,
+                1.30032,
+                0.9576,
+                1.16352,
+                33,
+                12
+              ]
+            },
+            {
+              "Id": 1233211,
+              "Level": 11,
+              "Parameters": [
+                2.0064,
+                1.37256,
+                1.0108,
+                1.22816,
+                36,
+                12
+              ]
+            },
+            {
+              "Id": 1233212,
+              "Level": 12,
+              "Parameters": [
+                2.112,
+                1.4448,
+                1.064,
+                1.2928,
+                39,
+                12
+              ]
+            },
+            {
+              "Id": 1233213,
+              "Level": 13,
+              "Parameters": [
+                2.244,
+                1.5351,
+                1.1305,
+                1.3736,
+                42,
+                12
+              ]
+            },
+            {
+              "Id": 1233214,
+              "Level": 14,
+              "Parameters": [
+                2.376,
+                1.6254,
+                1.197,
+                1.4544,
+                45,
+                12
+              ]
+            },
+            {
+              "Id": 1233215,
+              "Level": 15,
+              "Parameters": [
+                2.508,
+                1.7157,
+                1.2635,
+                1.5352,
+                48,
+                12
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11232,
+        "Name": "Binary Form: Convergence and Division",
+        "Description": "Purify the substance of souls and wishes to undergo {LINK#N11230001}<color=#FFD780FF>Essential Transmutation</color>{/LINK}. While transmuted, Durin's Elemental Skill <color=#FFD780FF>Binary Form: Convergence and Division</color> will be replaced with the special Elemental Skill <color=#FFD780FF>Transmutation: Confirmation of Purity</color>, and the Normal Attack <color=#FFD780FF>Radiant Wingslash</color> will be replaced with the special Elemental Skill <color=#FFD780FF>Transmutation: Denial of Darkness</color>.\n\n<color=#FFD780FF>Transmutation: Confirmation of Purity</color>\nDeal 1 instance of <color=#FF9999FF>AoE Pyro DMG</color> to nearby opponents, reverse Essential Transmutation, and enter the <color=#FFD780FF>Confirmation of Purity</color> state for 30s.\n\n<color=#FFD780FF>Transmutation: Denial of Darkness</color>\nDeal 3 consecutive instances of <color=#FF9999FF>Pyro DMG</color> to opponents in front, reverse Essential Transmutation, and enter the <color=#FFD780FF>Denial of Darkness</color> state for 30s.\n\nWhen Durin enters the <color=#FFD780FF>Confirmation of Purity</color> or <color=#FFD780FF>Denial of Darkness</color> state while in battle, he will restore a certain amount of Elemental Energy. Elemental Energy can be restored this way once every 6s.",
+        "Icon": "Skill_S_Durin_01"
+      }
+    ],
+    "SpecialSkills": [
+      {
+        "GroupId": 12351,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1235101,
+              "Level": 1,
+              "Parameters": [
+                0.75
+              ]
+            }
+          ],
+          "Display": 3
+        },
+        "Id": 1235101,
+        "Name": "Witch's Eve Rite: Ode to Ascension",
+        "Description": "After completing <color=#FFD780FF>Witch's Homework: Of This World</color>, Durin will become a <color=#FFD780FF>Hexerei</color> character. When the party includes at least 2 Hexerei characters, you will gain the <color=#FFD780FF>Hexerei: Secret Rite</color> effect, which enhances Hexerei characters.\n\n<color=#FFD780FF>Hexerei: Secret Rite</color>\nIncreases all effects of the Ascension Talent {LINK#P1232101}<color=#FFD780FF>Light Manifest of the Divine Calculus</color>{/LINK} (except for Duration) by 75%.",
+        "Icon": "UI_Talent_S_Durin_03"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 12339,
+      "Proud": {
+        "Descriptions": [
+          "Principle of Purity: As the Light Shifts DMG|{param1:F1P}+{param2:F1P}+{param3:F1P}",
+          "Principle of Darkness: As the Stars Smolder DMG|{param4:F1P}+{param5:F1P}+{param6:F1P}",
+          "Dragon of White Flame DMG|{param7:F1P}",
+          "Dragon of Dark Decay DMG|{param8:F1P}",
+          "Dragon of White Flame Duration|{param9:F1}s",
+          "Dragon of Dark Decay Duration|{param10:F1}s",
+          "CD|{param11:F1}s",
+          "Energy Cost|{param12:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1233901,
+            "Level": 1,
+            "Parameters": [
+              1.1896,
+              0.964,
+              1.1184,
+              1.2544,
+              1.0176,
+              1.1184,
+              0.9464,
+              1.2984,
+              20,
+              20,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1233902,
+            "Level": 2,
+            "Parameters": [
+              1.27882,
+              1.0363,
+              1.20228,
+              1.34848,
+              1.09392,
+              1.20228,
+              1.01738,
+              1.39578,
+              20,
+              20,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1233903,
+            "Level": 3,
+            "Parameters": [
+              1.36804,
+              1.1086,
+              1.28616,
+              1.44256,
+              1.17024,
+              1.28616,
+              1.08836,
+              1.49316,
+              20,
+              20,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1233904,
+            "Level": 4,
+            "Parameters": [
+              1.487,
+              1.205,
+              1.398,
+              1.568,
+              1.272,
+              1.398,
+              1.183,
+              1.623,
+              20,
+              20,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1233905,
+            "Level": 5,
+            "Parameters": [
+              1.57622,
+              1.2773,
+              1.48188,
+              1.66208,
+              1.34832,
+              1.48188,
+              1.25398,
+              1.72038,
+              20,
+              20,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1233906,
+            "Level": 6,
+            "Parameters": [
+              1.66544,
+              1.3496,
+              1.56576,
+              1.75616,
+              1.42464,
+              1.56576,
+              1.32496,
+              1.81776,
+              20,
+              20,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1233907,
+            "Level": 7,
+            "Parameters": [
+              1.7844,
+              1.446,
+              1.6776,
+              1.8816,
+              1.5264,
+              1.6776,
+              1.4196,
+              1.9476,
+              20,
+              20,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1233908,
+            "Level": 8,
+            "Parameters": [
+              1.90336,
+              1.5424,
+              1.78944,
+              2.00704,
+              1.62816,
+              1.78944,
+              1.51424,
+              2.07744,
+              20,
+              20,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1233909,
+            "Level": 9,
+            "Parameters": [
+              2.02232,
+              1.6388,
+              1.90128,
+              2.13248,
+              1.72992,
+              1.90128,
+              1.60888,
+              2.20728,
+              20,
+              20,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1233910,
+            "Level": 10,
+            "Parameters": [
+              2.14128,
+              1.7352,
+              2.01312,
+              2.25792,
+              1.83168,
+              2.01312,
+              1.70352,
+              2.33712,
+              20,
+              20,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1233911,
+            "Level": 11,
+            "Parameters": [
+              2.26024,
+              1.8316,
+              2.12496,
+              2.38336,
+              1.93344,
+              2.12496,
+              1.79816,
+              2.46696,
+              20,
+              20,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1233912,
+            "Level": 12,
+            "Parameters": [
+              2.3792,
+              1.928,
+              2.2368,
+              2.5088,
+              2.0352,
+              2.2368,
+              1.8928,
+              2.5968,
+              20,
+              20,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1233913,
+            "Level": 13,
+            "Parameters": [
+              2.5279,
+              2.0485,
+              2.3766,
+              2.6656,
+              2.1624,
+              2.3766,
+              2.0111,
+              2.7591,
+              20,
+              20,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1233914,
+            "Level": 14,
+            "Parameters": [
+              2.6766,
+              2.169,
+              2.5164,
+              2.8224,
+              2.2896,
+              2.5164,
+              2.1294,
+              2.9214,
+              20,
+              20,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1233915,
+            "Level": 15,
+            "Parameters": [
+              2.8253,
+              2.2895,
+              2.6562,
+              2.9792,
+              2.4168,
+              2.6562,
+              2.2477,
+              3.0837,
+              20,
+              20,
+              18,
+              70
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11235,
+      "Name": "Principle of Purity: As the Light Shifts",
+      "Description": "Unleash the power of the \"Beast\" in different ways. Durin can use different Elemental Bursts based on his {LINK#N11230001}<color=#FFD780FF>Essential Transmutation</color>{/LINK} state.\n\n<color=#FFD780FF>Principle of Purity: As the Light Shifts</color>\nWhen Durin is in the <color=#FFD780FF>Confirmation of Purity</color> state, he will use the Elemental Burst <color=#FFD780FF>Principle of Purity: As the Light Shifts</color>, dealing 3 instances of <color=#FF9999FF>AoE Pyro DMG</color> to opponents in front, and manifesting his power in the <color=#FFD780FF>Dragon of White Flame</color> form. The Dragon of White Flame will follow the current active character and attack nearby opponents at intervals, dealing <color=#FF9999FF>AoE Pyro DMG</color>. This DMG is considered Elemental Burst DMG.\n\n<color=#FFD780FF>Principle of Darkness: As the Stars Smolder</color>\nWhen Durin is in the <color=#FFD780FF>Denial of Darkness</color> state, he will use the Elemental Burst <color=#FFD780FF>Principle of Darkness: As the Stars Smolder</color>, dealing 3 instances of <color=#FF9999FF>AoE Pyro DMG</color> to opponents in front, and manifesting his power in the <color=#FFD780FF>Dragon of Dark Decay</color> form. The Dragon of Dark Decay will follow the current active character and periodically attack a single nearby opponent, dealing <color=#FF9999FF>Pyro DMG</color>. This DMG is considered Elemental Burst DMG.\n\nWhen Durin is not in a special state as a result of Essential Transmutation, he will use the Elemental Burst <color=#FFD780FF>Principle of Purity: As the Light Shifts</color>.",
+      "Icon": "Skill_E_Durin_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 12321,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1232101,
+              "Level": 1,
+              "Parameters": [
+                0.2,
+                6,
+                0.4,
+                0.4
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1232101,
+        "Name": "Light Manifest of the Divine Calculus",
+        "Description": "Durin will trigger different buffs depending on the form that his power manifests as when he unleashes his Elemental Burst. When that form is:\n\n<color=#FFD780FF>Dragon of White Flame</color>\nAfter nearby party members trigger Burning, Overloaded, Pyro Swirl, or Pyro Crystallize reactions on an opponent, or deal <color=#FF9999FF>Pyro DMG</color> or <color=#99FF88FF>Dendro DMG</color> to an opponent affected by Burning, that opponent's <color=#FF9999FF>Pyro RES</color>, and the RES for the corresponding Element involved in the reaction, are decreased by 20% for 6s.\n\n<color=#FFD780FF>Dragon of Dark Decay</color>\nDurin's Vaporize DMG is increased by 40% and his Melt DMG is increased by 40%.",
+        "Icon": "UI_Talent_S_Durin_01"
+      },
+      {
+        "GroupId": 12322,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1232201,
+              "Level": 1,
+              "Parameters": [
+                0.03,
+                0.75,
+                10
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1232201,
+        "Name": "Chaos Formed Like the Night",
+        "Description": "After unleashing an Elemental Burst, Durin gains the Primordial Fusion of Forms effect for 20s: Durin gains 10 stacks of Primordial Fusion. When a periodic attack from <color=#FFD780FF>Dragon of White Flame</color> or <color=#FFD780FF>Dragon of Dark Decay</color> deals DMG, 1 stack of Primordial Fusion will be consumed to increase the DMG dealt by 3% of the original DMG for every 100 ATK. A maximum of 75% additional DMG can be dealt this way. When a single attack from <color=#FFD780FF>Dragon of White Flame</color> or <color=#FFD780FF>Dragon of Dark Decay</color> hits multiple opponents, only one stack of Primordial Fusion is consumed.\nPrimordial Fusion stacks are reset when the Elemental Burst is unleashed again.",
+        "Icon": "UI_Talent_S_Durin_02"
+      },
+      {
+        "GroupId": 12323,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1232301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1232301,
+        "Name": "Echoes of the Surging Earth",
+        "Description": "Gains 25% more rewards when dispatched on a Mondstadt Expedition for 20 hours.",
+        "Icon": "UI_Talent_S_Durin_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1231,
+        "Name": "Adamah's Redemption",
+        "Description": "After casting his Elemental Burst, Durin's effects will vary depending on the form of his Elemental Burst:\n· <color=#FFD780FF>Principle of Purity: As the Light Shifts</color>: All other nearby party members gain 20 stacks of <color=#FFD780FF>Cycle of Enlightenment</color> lasting 20s. When nearby active characters deal Normal Attack, Charged Attack, Plunging Attack, Elemental Skill, or Elemental Burst DMG, 1 stack of Cycle of Enlightenment will be consumed to increase the DMG dealt by 60% of Durin's ATK. Stack counts for characters in the party who have Cycle of Enlightenment are managed individually.\n· <color=#FFD780FF>Principle of Darkness: As the Stars Smolder</color>: Durin gains 20 stacks of <color=#FFD780FF>Cycle of Enlightenment</color> lasting 20s. When Durin deals Elemental Burst DMG, 2 stacks of Cycle of Enlightenment will be consumed to increase the DMG dealt by 150% of Durin's ATK.\n\nWhen an Elemental Burst is used, <color=#FFD780FF>Cycle of Enlightenment</color> stacks will be refreshed.",
+        "Icon": "UI_Talent_S_Durin_03"
+      },
+      {
+        "Id": 1232,
+        "Name": "Unground Visions",
+        "Description": "For 20s after Durin uses an Elemental Burst, after nearby party members trigger Vaporize, Melt, Burning, Overloaded, Pyro Swirl, or Pyro Crystallize reactions, or deal <color=#FF9999FF>Pyro DMG</color> or <color=#99FF88FF>Dendro DMG</color> to an opponent affected by Burning, all nearby party members gain a 50% increase to their <color=#FF9999FF>Pyro DMG</color> and to the corresponding elemental DMG involved in the reaction for 6s.",
+        "Icon": "UI_Talent_S_Durin_04"
+      },
+      {
+        "Id": 1233,
+        "Name": "Flame Mirror's Revelation",
+        "Description": "Increases the Level of <color=#FFD780FF>{LINK#S11235}Principle of Purity: As the Light Shifts{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Durin_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1234,
+        "Name": "Emanare's Source",
+        "Description": "Durin's Elemental Burst DMG is increased by 40%. Additionally, when effects that consume <color=#FFD780FF>Cycle of Enlightenment</color> stacks are triggered as part of the Constellation <color=#FFD780FF>{LINK#T1231}Adamah's Redemption{/LINK}</color>, there is a 30% chance that no Cycle of Enlightenment stacks will be consumed.",
+        "Icon": "UI_Talent_S_Durin_05"
+      },
+      {
+        "Id": 1235,
+        "Name": "Scouring Flame's Sundering",
+        "Description": "Increases the Level of <color=#FFD780FF>{LINK#S11232}Binary Form: Convergence and Division{/LINK}</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Durin_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1236,
+        "Name": "Dual Birth",
+        "Description": "Durin's Elemental Burst DMG ignores 30% of opponents' DEF.\nAdditionally, Durin's Elemental Bursts <color=#FFD780FF>Principle of Purity: As the Light Shifts</color> and <color=#FFD780FF>Principle of Darkness: As the Stars Smolder</color> are each enhanced:\n· After <color=#FFD780FF>Principle of Purity: As the Light Shifts</color> and <color=#FFD780FF>Dragon of White Flame</color> hit an opponent, that opponent's DEF is decreased by 30% for 6s.\n· DMG from <color=#FFD780FF>Principle of Darkness: As the Stars Smolder</color> and <color=#FFD780FF>Dragon of Dark Decay</color> will ignore an additional 40% of opponents' DEF.",
+        "Icon": "UI_Talent_S_Durin_06"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "\"The Undying Fire\"",
+    "Detail": "A dragon born from M's pen, who came to alight in the human world. His \"story\" continues to unfold.",
+    "Association": 1,
+    "Native": "Hexenzirkel",
+    "BirthMonth": 3,
+    "BirthDay": 14,
+    "VisionBefore": "Pyro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Draco Rubedo",
+    "CvChinese": "陶典",
+    "CvJapanese": "小林千晃",
+    "CvEnglish": "Laurie Kynaston",
+    "CvKorean": "Kim Ji-yul",
+    "CookBonus": {
+      "OriginItemId": 108171,
+      "ItemId": 108924,
+      "InputList": [
+        100061,
+        100001,
+        110004,
+        100077
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "It's been a long time. I'm Durin. Everyone used to call me Mini Durin, but as you can see, I'm not really \"mini\" anymore... Do you find my appearance strange? To tell you the truth, it's still a little strange to me... I have so much to learn — I hope you don't mind if I ask you for help."
+      },
+      {
+        "Title": "Chat: Stories",
+        "Context": "Each day is a new page in my story. I want to savor every scene, every footnote, before I turn to the next one."
+      },
+      {
+        "Title": "Chat: Walking",
+        "Context": "Can I stop here and play— I mean, take a stroll? I won't go too far."
+      },
+      {
+        "Title": "Chat: Awkward",
+        "Context": "I still have so much to learn about \"human interactions.\" Like, where should I put my hands when I'm nervous? I just... really want to make friends with everyone."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Oh dear, I'm feeling the urge to jump in a puddle..."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "It's best not to fly too high in this weather..."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Did \"it\" once slumber in a place like this...?"
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "It's like a scene from a fairy tale — how pretty."
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "Oh dear, I'm getting thirsty..."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Good morning. Please don't mind my head lolling — my neck's a bit stiff. Last night, a cat came and slept only a few meters away. Usually, I frighten small animals off. I didn't want to disturb it, so I tried not to move all night..."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "If brunch is a thing, does that mean there's such a thing as linner?"
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "I wonder if we'll see the stars tonight..."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "There's nothing more peaceful than curling up in your own tail for some good sleep."
+      },
+      {
+        "Title": "About Durin: Growing Up",
+        "Context": "You... think I'm getting more mature? Well, I mean, I'm not a little kid anymore, so I have to start acting more grown-up. Besides... the last thing I want is to stay stuck in the past."
+      },
+      {
+        "Title": "About Durin: Losing Control",
+        "Context": "I can feel this vast, almost frenzied power lurking deep inside me. Fortunately, Albedo's alchemy is flawless, and this Abyssal power within my form is kept in check — it's as though everything is in equilibrium, preventing the possibility of overflow or corruption. As such, there's no need to fear that I might lose control or hurt anyone."
+      },
+      {
+        "Title": "About Durin: Selfish",
+        "Context": "I know taking the name Durin for myself in this world invites criticism. Replacing Durin of Dragonspine means that I've stolen his right to resurrection. Admittedly, this is selfish, but at the time, I yearned to be \"human.\" I wished to be a real part of everyone's world, and to bring more good to it too... I didn't want to reject that opportunity. I don't regret the choice I made. Maybe it's like Albedo says — all life can be selfish...\nEither way, I can't speak for the other Durin — I only wish to walk my own path, to do right, so that when the name \"Durin\" passes people's lips, it's accompanied by beautiful memories."
+      },
+      {
+        "Title": "About Us: Clashing Horns",
+        "Context": "Dragons clash horns as a way to express their friendship. But I'm scared I might use too much force. I don't want to hurt you, after all... Are you sure you're not worried? Alright! In the interests of safety, how about I stand still, and you bump your head on my horns?"
+      },
+      {
+        "Title": "About Us: Blessing",
+        "Context": "\"May you find friendship and goodwill, no matter where you go.\"\nThis is the blessing that you, as a Traveler who had traversed many worlds, gave to me. I've never forgotten. Ever since that day, my story began to change... Thank you. I can feel how much I've transformed. Maybe— no, undoubtedly, I now have the strength to protect those I cherish. So, I want to repay your blessing with a promise: No matter when, no matter where, so long as you need me, I'll lend you my help.\nUhm, so I'll definitely come as soon as I find out you're in danger. Alright, I'm done, that should just about cover everything..."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "One of the effects of the Abyss is that it can increase the power of living things. My current form serves as ample roof of this phenomenon. Though I can't fully control its power, my unique constitution seems to give me have the potential to use the Abyss in service of good. Controlling it is hard and requires immense concentration — otherwise, any missteps I take could hurt those I hold dear. To avoid this, I must continue to learn and practice...\nI believe this Vision serves as recognition of my efforts."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Dvalin flies so fast... Is it because his wings are bigger than mine? Sometimes I think, if I still had my dragon form — the toy block one from Simulanka, I mean — I could give him a run for his money."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "My first friend was an origami flying squirrel. At first, it was the only thing that wanted to play with me. It had two pointy ears and a big paper tail, and it looked a little like the squirrels in Teyvat. I used to pick flowers for it from high places... I miss that squirrel a lot.\nYou want to pick pinecones for the squirrels together? Of course, I'd love to!"
+      },
+      {
+        "Title": "About Mother",
+        "Context": "Ever since taking up Mother's pen, I've diligently committed each day's stories to paper. Klee taught me how to fish, which ended with us locked in solitary confinement. Albedo had me help him boil water, which almost ended in the kettle turning to ash. A little boy outside the city gate showed me how to feed the pigeons, and one of them decided to perch on my horns. I'll continue to fill the pages of my book, and maybe, when I'm turning the pages one day, I'll hear a familiar voice quietly narrating, \"This is a wonderful story indeed.\""
+      },
+      {
+        "Title": "About Alice",
+        "Context": "Aunt Alice asked me to spend more time with Klee. She said she'd reward me by giving me anything I wanted. But only children want rewards, and I'm clearly all grown up... I like playing with Klee because I'm happy when we spend time together — it's as simple as that. When I told Aunt Alice that, though, she was overjoyed, and said she'd pick out a \"giant toy\" just for me..."
+      },
+      {
+        "Title": "About Albedo: Family",
+        "Context": "Albedo has shared so many of his experiences with me regarding becoming truly human. He's explained many of the problems that humans face — things like work, ideals, life... Some of these things are too difficult for me to understand — some are too difficult for me even to imagine.\nAlbedo says I can slowly learn about these problems as I experience them, before making my own choices. Family is the only thing that a human can't choose. I know my family is complicated and highly unusual, but with Albedo as my brother, I'm filled with a sense of peace and belonging. In that sense, my family is no different from most."
+      },
+      {
+        "Title": "About Albedo: Sense",
+        "Context": "Albedo is the perfect \"human.\" He knows so much and is always able to handle everything he faces. He's sincere and friendly to those around him. But sometimes, I feel like there's another side to him, one no one would expect. Like how he takes decisive measures to achieve his aims... I don't know where this uncanny intuition comes from — perhaps it's a sort of resonance between beings who share a \"species\"?"
+      },
+      {
+        "Title": "About the Wanderer: Friends",
+        "Context": "Shortly after leaving Simulanka, I followed Hat Guy to Sumeru. The Akademiya was so big and so beautiful — and there were so many books. It's only now that I'm learning to read and write that I suddenly understand how stressful it must be studying there.\nNot that there weren't times when people had time off and came to Hat Guy to play cards, chat, or even share delicious food. Like the one with the large ears, or the one with the hat that had even larger ears, or the one who looked like a small wolfhound... I've asked Hat Guy if they're his friends. He always complains about how noisy they are, but he's never denied their friendship."
+      },
+      {
+        "Title": "About the Wanderer: Resolution",
+        "Context": "We share some similarities, he and I — he always seems to know what I'm thinking, and then guides me as someone who's \"already seen it all.\" Whenever I tell people, \"Don't get too close,\" I really want them to resolutely refuse... That's what Hat Guy does. So even when he says he wants to be alone, even if he deliberately tries to discourage me, I always stick by his side."
+      },
+      {
+        "Title": "About Nilou",
+        "Context": "When I was in Sumeru, I took the time to visit Fairy Nilou— Sorry, force of habit — I should call her Miss Nilou in this world. I watched her dancing at the Grand Bazaar, and she was as beautiful as a fairy."
+      },
+      {
+        "Title": "About Navia",
+        "Context": "If I get the chance, I'd like to thank the King of Constellation Metropole— Uhm, I mean to say, Miss Navia. I wonder if she'll be shocked to see what I look like now? ... You don't think she'll mind? That's great news!"
+      },
+      {
+        "Title": "About Kirara",
+        "Context": "If all the kitties in The Cat's Tail were like Kirara, I don't think they'd get so nervous when they see me..."
+      },
+      {
+        "Title": "About Venti",
+        "Context": "\"The young bard gently plucked his strings, a voice as clear as a mountain stream. It was no battle hymn nor prayer, but the murmuring of stars, the wind blowing through the trees. The dragon's eyelids faintly twitched, flames gently crackling in its throat.\"\nOne night, when I couldn't sleep, I took a stroll in the wilds. I met Lord Barbatos doing likewise. He sang this song for me, and I liked it so much, I made sure to learn it..."
+      },
+      {
+        "Title": "About Lisa",
+        "Context": "After Miss Lisa sets homework for me, she makes me sit at my desk to complete it. One time, when I was exhausted, I stood my book up on my desk so it blocked her view and tried to nap in secret. When I woke up, she was standing there smiling. It scared me stiff. But before I could finish apologizing, she praised me for learning the most valuable lesson... I think she was talking about my willingness to acknowledge my mistakes.\nOh, so you don't think that's what she meant?"
+      },
+      {
+        "Title": "About Klee",
+        "Context": "Albedo once told me he treats Klee like a little sister. Klee likes to call me Big Brother Durin, too. I guess I am technically her big brother, though I haven't been human for very long — if we're talking about human age, is she really my *little* sister? Hmm..."
+      },
+      {
+        "Title": "About Fischl",
+        "Context": "I can't help but wonder... Back in Simulanka, I felt like she was different from the others. Is she the same as me — did she come out of a book, too?"
+      },
+      {
+        "Title": "About Diona",
+        "Context": "In fairy tales, anyone who can mix potions that befuddle the heart and mind and command the obedience of cats is almost certainly a powerful witch."
+      },
+      {
+        "Title": "About Varka",
+        "Context": "Grand Master Varka is different from most of Mondstadt's knights. He's powerful but not imposing — he leaves people feeling calm and safe. He's the sort of knight who can crack a joke while fighting off the Wild Hunt — although most of his jokes go way over my horns... You want to know about ones I did understand? Well, I didn't hear them clearly either, probably because he often slurs his words after drinking..."
+      },
+      {
+        "Title": "More About Durin: I",
+        "Context": "Before I came here, I spent most of my time living inside Mother's stories. I never hugged her or felt the warmth of her embrace, but her gentle voice guided me through so many moments — both happy and sad. If you ever want to hear her stories, I'd be more than glad to read them to you."
+      },
+      {
+        "Title": "More About Durin: II",
+        "Context": "I've heard it's polite to look people in the eye when talking to them. But I've also heard it's rude to stare. I thought to try blinking often while talking, or to keep one eye closed at a time, but everyone kept telling me to see Miss Barbara and have my eyes checked...\nIt seems the rules for socializing in this world really are some of the hardest to follow..."
+      },
+      {
+        "Title": "More About Durin: III",
+        "Context": "For a while, I could hear this strange voice inside my heart that made me question whether I was truly me... There's dragon blood flowing through my veins — will humans fear me because of it? One time, I dreamed that all the toy figures in Constellation Metropole were throwing stones at me. When I woke up, I was surrounded by a shower of confetti — my friends in Mondstadt had decided to throw me a surprise birthday party... That was when I realized the strange voice in my heart wasn't draconic influence, but my own insecurity and self-doubt...\nI'll never forget it — the light from the candles on my cake illuminating my smiling friends... That was the moment I emerged from the fog of uncertainty."
+      },
+      {
+        "Title": "More About Durin: IV",
+        "Context": "Before we left for Nod-Krai, Master Jean and Albedo warned me that we were embarking on a journey of great danger — that whatever we ended up facing may be far more serious than I could imagine. They respected my choice — they just wanted me to consider things fully before joining them. But when I heard you were in danger, I requested that they let me join them immediately.\nOnly after seeing the Wild Hunt up close did I understand what danger really is. The scene was far more terrifying than my mental images of the ground giving way underfoot, the Toytanium Mines collapsing in on themselves..\nNo, I don't regret my decision. But I was scared... I was worried I would be unable to help. It left me on edge — I'm sure you noticed. Luckily, everything turned out well, and now I can feel comfortable accepting everyone's praise."
+      },
+      {
+        "Title": "More About Durin: V",
+        "Context": "I feel like humans are pieced together from bits of other people... Not in an alchemical sense, more like... More like how I remember things that my friends have said, or how I like the restaurants we eat at together, or how you inspired me to travel the world... The reason I am who I am today is that I've absorbed all these influences from other people.\nAnd now I want to become a piece of other people's hearts, too."
+      },
+      {
+        "Title": "Durin's Hobbies",
+        "Context": "Right now, everything in Mondstadt is new to me, and I want to explore it all. W—Wine? N—No, I can't drink wine... At least, not yet."
+      },
+      {
+        "Title": "Durin's Troubles",
+        "Context": "The animals in Teyvat aren't made of folded paper, and I don't have sharp claws anymore... I thought maybe I'd be able to pet them now, but whenever I try, they just run away scared... *sigh*"
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "I love eating meat — big chunks of it. But at the moment, it takes me a long time to finish. Using a knife and fork is a little complicated for me — I can never remember which one does the cutting..."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Excuse me, could I have a smaller portion of vegetables on mine? Or perhaps no vegetables at all?"
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "What type of cutlery should I use for this? Can I just use my hands?"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Thank you. Societal expectations demand reciprocity, so let me treat you to a drink."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "I'm sorry, my taste buds appear to be faulty... Let me try again... Oh dear, there really is a problem with them!"
+      },
+      {
+        "Title": "Birthday",
+        "Context": "It feels like your birthday's come around so fast! I'm sorry, I keep thinking of new details to add, so I still haven't finished...\nThis is an origami boat I've been making for you — the paper animals on board are our friends. And this person standing at the bow, who I haven't had time to color in yet, is you. In my mind, you helm the ship, radiating golden light... Do you want to help me paint you gold?\nOh, I almost forgot — this boat is called \"The Traveler.\" May you continue to sail forward alongside your friends! Happy birthday!"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "A legend told of an evil dragon who hoarded glittering gems behind the high windows of a castle."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "A wandering hero ascended the ramparts, only to find the dragon — its scales covered in stardust — pushing the fragments of fallen stars with its snout, as though helping lost star-spirits back on their paths."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "The hero threw down his sword and spoke with open palms — \"I come from beyond the stars, please permit me to help.\""
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "From that day forth, the high windows shone through the night, as the dragon led the hero to patrol the cosmic shore. Starlight was their cloak, and friendship the compass that led their way."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Stay back!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Watch out!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Leave it to me!"
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Get back!"
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "Sunder!"
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "Devouring claw!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "The story has only just begun."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Decay... New life."
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "A turning point in fate."
+      },
+      {
+        "Title": "Elemental Burst: IV",
+        "Context": "Stay away from me!"
+      },
+      {
+        "Title": "Elemental Burst: V",
+        "Context": "The Abyss's burning shadow."
+      },
+      {
+        "Title": "Elemental Burst: VI",
+        "Context": "A lament for the end."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "What suspense... It's like opening a gift..."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "How do you use these?"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "I've never seen this before... Interesting."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "I can go on."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "My strength is far from spent."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "No... not yet!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "It's my turn to protect you."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Trust me."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Does this make... a good ending?"
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "I'm sorry..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Will I become a star... in the sky...?"
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Stay your hand."
+      },
+      {
+        "Title": "Light Hit Taken: II",
+        "Context": "No."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Absurd!"
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Stop that!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Hello everyone, I'm Durin."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "I'll be right behind you."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Increasing our combat strength? I'll do my best."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "After one particular Windblume Festival, a new face appeared in Mondstadt — a young boy with horns upon his head and wings growing from his back. Master Jean told the people that this boy had once been a dragon. Through wondrous alchemy, he had gained a human form and now sought to learn how to live among them.\nA dragon turning into a human wasn't exactly shocking news. After all, countless fairy tales had sprouted from Mondstadt’s soil. What truly stirred the people's curiosity was the boy's name: Durin.\nWhenever that name was spoken aloud, people would instinctively look toward Dragonspine. Beneath its blinding snows lay the colossal bones of a creature long gone, and with them, memories of a calamity best left buried. For most citizens of Mondstadt, that name carried not wonder, but unease.\nStill, with Jean and the Knights of Favonius vouching for him, Durin was welcomed into the city all the same.\nPeople began to see him everywhere in the city, and they soon discovered that in truth, Durin was the more timid one in every encounter. He was curious about everyone, yet preferred to watch from afar, uncertain and hesitant to draw near. Whatever dread his name once evoked, the boy before them had no share in it.\nLittle by little, the people of Mondstadt grew used to Durin's presence. Their wary glances softened, and daily life returned to its peaceful rhythm. In time, when they spoke his name again, many no longer looked toward the white peaks. Instead, they thought of a gentle boy — one who blushed as he asked Flora in front of Floral Whisper which flowers might best suit a friend, or who stood outside Good Hunter, embarrassed yet earnest as he asked how not to burn the meat. Bit by bit, those gentle scenes washed away the memory of that old disaster. The name \"Durin,\" once spoken of in fear, no longer made anyone flinch.\nIt felt, in a way, like rewriting the ending of a sorrowful tale, right from its very beginning."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Have you ever heard the story of Durin?\nThrough on-site investigations and the study of ancient records passed down among Mondstadt's people, the Adventurers' Guild has pieced together a fairly detailed account. Hundreds of years ago, when the catastrophe from Khaenri'ah spread across the land, an evil dragon named Durin descended upon Mondstadt, leading a horde of Abyssal creatures in its wake. Its very existence was a disaster — with a single breath, it could turn fertile plains into barren wastelands. Guided by Barbatos, the Anemo Archon, his familiar Dvalin took to the skies above the snowy mountains to face Durin in a fierce battle. In the end, Dvalin tore open Durin's throat and brought the dragon down. Yet Dvalin, too, was tainted by the venomous blood, and remained so until recently...\nAll in all, it is a rather tragic tale.\nIn the days following that great calamity, a certain poem quietly circulated among the bards of Mondstadt:\n\"Mother, as you bade me, I have come to this land to show everyone my beauty.\"\n\"The flowers here are fragrant, and the wind is gentle. I run with the breeze, and the blossoms bloom brighter in my wake.\"\n\"Butterflies flutter around me, as if in awe of my beauty. Yet when I reach out to them, they always shy away.\"\n\"But then, a lovely one approached me of his own accord, as though inviting me to dance.\"\n\"I accepted his invitation, and together we spun and twirled. The wind lifted the petals, adorning our dance with their colors.\"\n\"Mother, I think... I've made a new friend.\"\nStrangely, soon after its appearance, the Knights of Favonius traced the poem back to its source after being tipped off by some unknown party. They erased its title and sealed away the collection it appeared in, marking it as a forbidden text.\nAt the time, people had no idea why the Knights of Favonius acted as they did. But if you take a keen interest in Durin's story and dig a little deeper, you might find an alchemist's experimental notes revealing that Durin's consciousness came from beyond the heavens and was fused with the body of the wicked dragon through alchemy. Corrupted by Abyssal power, his senses and experiences were far removed from those of ordinary beings. Until his fall, he never had any choice but to become the embodiment of disaster, and he likely could not make sense of the cruel world around him.\nSeen this way, the poem might actually be telling Durin's story from his own perspective.\nA certain mage chanced upon this tale and could not help but feel a pang of regret. If the soul known as Durin could have freed itself from the Abyss's curse and ultimately forged a friendship with Dvalin, how different might the ending have been?\nPerhaps to reconcile this lingering sorrow, the mage set pen to paper and wove a new story into being, one in which the protagonist bore the name Durin."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "When Durin first arrived in Mondstadt, he always preferred to avoid crowded places. He was like a lone splash of color at the edge of a painting — striking, yet unable to form any meaningful scene. Trapped in this static blot, he struggled to make new friends and begin the story that was truly his own.\nAt that time, Lisa had just accepted Jean's request to become Durin's tutor. She observed all this and quickly realized that Durin was not naturally solitary. His yearning to make friends was evident, yet he hesitated at every turn. When Lisa asked him about it, he finally confessed his worries.\n\"I... I don't know how to get along with other humans...\"\n\"Well, learning how to interact with people is indeed a prerequisite for friendship,\" Lisa replied, \"but that is not something that can be taught in a classroom.\"\nSo Lisa assigned Durin an extracurricular task — to step out of his room and observe how the people of Mondstadt interacted with one another. The request from his mentor dissolved most of his hesitation, and he finally left his room, just as he had once climbed out of his hiding place in the mine.\nDurin's first choice for guidance was Albedo, whom he regarded as a genius who seemed to know everything. But when it came to learning \"human social skills\"... Albedo glanced around his alchemy workshop, secluded amidst the surrounding snowfields, and after a moment's thought suggested that Durin find a more suitable teacher.\nNext, Durin thought of Klee. She seemed capable of befriending anyone. Surely she knew of an effective method for connecting with others. Klee's advice, however, was simply to \"go fish blasting with them.\" In her view, two people who had blasted fish side by side could certainly count as comrades-in-arms. Durin only began to understand what she meant after being locked in the confinement room with her by Jean.\nDurin also considered seeking help from Dahlia and Kaeya. After all, one was a deacon with an adept listening ear, and the other the Cavalry Captain eager to help others. Once Durin explained his situation, the two immediately agreed and took him to the Angel's Share. There, the reticent Durin watched as the tavern's patrons raised their glasses, singing and laughing together. In Mondstadt, this was clearly \"human social interaction.\" However, after just a single sniff of the bar's beverages, Durin nearly toppled over. Luckily, the composed bartender quickly swapped his drink for juice. This method of socializing, he realized, was beyond him... at least for the moment.\nStill, the experience sparked an idea. He ventured to another tavern, quieter and free from the dizzying fumes of alcohol. There, people socialized through a card game called \"Genius Invokation TCG.\" But before Durin could even find an opponent, he was swarmed by a group of cats, only escaping thanks to Diona's intervention...\nA few days passed in the blink of an eye. Durin tried again and again but never quite learned a practical way to interact with others, and in the end, he hadn't completed the extracurricular assignment Lisa had set for him.\nHowever, when he went back to report, Lisa did not blame him.\n\"Then let's treat this as a long-term assignment. When you feel ready, come find me and I'll check your results.\"\n\"Really? Thank you, ma'am!\"\nLisa hadn't eased her requirements carelessly. She could see that Durin was no longer the isolated, colorless block he had been before. He had begun to find his place in the world. Albedo had set up extra heating in his mountain workshop, the knights sometimes left an extra chair in the confinement room, the Angel's Share had a bar seat reserved just for juice, and a special table occasionally appeared outside The Cat's Tail. In truth, human interaction had no fixed form. Everyone brought their own edges, rough or otherwise, collided with one another, and eventually found the places where they fit. Unbeknownst to him, Durin had already become part of this picture. His colors were still a little unusual, but he now added to the many interesting scenes unfolding around him. The people appearing in these scenes were his friends, present and future. The events taking place within them were his story.\nAnd once he came to realize this, his assignment would be complete."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "When Durin first arrived in Teyvat, Sumeru was his first stop. At that time, he had not yet gained a human body and was known to everyone as \"Mini Durin.\" His very existence was extraordinary, which naturally drew the attention of the curious and the unscrupulous alike. Fortunately, Hat Guy served not only as his guide but also as his bodyguard. With nothing more than his perpetually gloomy expression, he could scare off most nosy bystanders, while the mercenaries hired by merchants trafficking exotic beasts rarely lasted a single encounter in his presence.\nThose days were light and happy ones for Durin. By strict comparison, Teyvat could not match the peace and comfort of Simulanka, yet he found himself enchanted by this new world.\nBut the one doubt that lingered in Durin's mind after arriving in this world came from Hat Guy himself.\nAs a dragon born of fairy tales, Durin viewed everyone as a unique story. Living in Sumeru with Hat Guy, he was fortunate enough to witness countless tales, such as \"Rainforest, Mushrooms, Tail Care, and Big Ears,\" or \"The Akademiya, Jokes Dragons Don't Understand, Genius Invokation TCG, and Big Ears on a Hat.\" Occasionally, trips into the desert offered opportunities to read \"Desert, Games of Catch, and the Little Wolfhound\"...\nYet whenever Durin looked at Hat Guy, the one who had spent the most time by his side, he could see no story at all.\nIn the end, Durin didn't voice his doubts to Hat Guy. He felt it was simply too soon, so he stayed close, hoping to uncover Hat Guy's story. Not long after, however, the latter suggested ending their journey.\n\"I've had enough of our little trip for now. You should go bother someone else, or return to that fairy tale world of yours.\"\n\"No, I still don't know your story!\"\nDurin stood firm in his refusal. Though Hat Guy's tone was, as always, sharp enough to make anyone frown, Durin could tell he wasn't just trying to send him away out of impatience. The real reason Hat Guy wanted him to leave seemed to lie hidden somewhere within his own story — one Durin had yet to uncover.\nHad it been anyone else, Hat Guy would probably have just turned and walked away. But he saw the determination in Durin's eyes. Ever since the day Durin decided to follow him on his journey across Teyvat, Hat Guy had never once managed to turn him down for good. This time, he relented as well.\n\"Do you wish for your story to take root in this world, Durin?\"\n\"My story... in this world?\"\n\"This will almost certainly be an important choice for you. But if you stay by my side forever, how much of the world will you really come to know? I want you to go farther — to see its beauty, and its ugliness too. Then, once you've seen enough, make your choice.\"\n\"Mmm... but what about your story, Hat Guy?\"\n\"If you decide to plant your story here in this world, I suppose I'll have a small part in it. Just remember that part I played, and that'll be enough. That's my story, as far as you're concerned.\"\nHearing this, Durin fell silent for a long while. It was the first time he'd ever heard Hat Guy speak to anyone like that — in an encouraging tone, yet tinged with a faint trace of something that almost sounded like a plea.\nIn the end, Durin accepted his advice."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Before Durin was rescued from the curse via the blessings everyone bestowed upon him, most of his days in Simulanka were spent in the mines, tormented by solitude and despair. Yet when he had first arrived, there had been a brief stretch of happiness. In those days, his mother, Anya \"Marie\" Andersdotter, had still been amongst the living.\nAt that time, Simulanka was still under construction. Durin often accompanied his mother whenever she could take a break from her work, exploring the four corners of Simulanka with her.\nAlong the way, he watched as she and his two aunts debated how to shape the world around them. Their discussions always started with the same question: What would a world with dragons look like? From that spark came grand designs — valleys carved, tracks laid, castles rising — all brought to life in the midst of their lively debates.\nSometimes, though, those debates turned into arguments. His fiery-red aunt loved adding thrilling elements — bombs, or anything that would make the world more exciting — while his mother always expressed her worries. She cherished the people of Simulanka as if they were her own children and couldn't stand the thought of their home being reduced to ruins by some reckless artifice. Still, the arguments never lasted long. Soon enough, the fiery-red aunt would find clever ways to adjust her ideas — not only putting his mother's worries to rest, but making their world all the more vibrant and fascinating.\nBack then, the story of Simulanka had yet to be completed, and his mother often paused her writing to think.\nWhenever she did, his pale-blue aunt would come to visit, bringing delicate teacups and plates of delicious sweets. Their conversations were deep and far-reaching, stretching from pleasant afternoons into quiet nights, from the stars above to the future of Simulanka itself.\nDuring these talks, this pale-blue aunt would often glance at the new scales growing on Durin with a complicated look in her eyes — one that made him uneasy. Still, she always brought wonderful treats, so he didn't mind her visits too much.\nAt all other times, his mother could usually be found bent over her desk, writing. Durin would sit quietly by her side, listening to the sound of her pen as he drifted to sleep. He thought those days would go on forever, until one day, his mother suddenly set down her pen, as though she had finally finished her work.\n\"Come, my child,\" she said, rising from her chair. \"Take a walk with me.\"\nShe led Durin to a courtyard high up in the sky. Gazing out toward the horizon, she reached out her hand, as if tracing the edge of a page.\n\"My dear, if you ever had the chance... would you want to leave this world and see what lies beyond?\"\n\"Could I really... leave this world?\"\n\"You could,\" she replied with a gentle smile. \"Your aunt Alice is quite remarkable — she's already proven to me that her magic can make it possible.\"\n\"Then... what would happen to me after I leave?\"\n\"That, I can't say,\" she said softly. \"Those are things that shall happen after 'my ending.' But you know, 'going to a faraway land' is a curious phrase — some stories use it as their ending, while others take it as the beginning. Durin, I want you to do something for me. When you have the chance, try leaving Simulanka. Go see what lies out there.\"\n\"There will be many, many hardships waiting for you, but don't be afraid. Alice's magic will guide you... and my blessing will go with you.\"\nRealizing how important her words were, Durin nodded solemnly, accepting the task she had entrusted to him.\n\"In that case,\" she murmured, \"I suppose I've now finished writing the most important passage of all...\"\nThen Durin watched as his mother turned her gaze toward the distant sunset. The emotions that flickered in her eyes were like the light reflected there — burning first with warmth and reluctant farewell, then softening into quiet tenderness, until at last they faded gently into the approaching night.\nNot long after, the gears of Simulanka's destiny began to turn. The origami animals of the Forest of Blessings and the toy figures of Constellation Metropole each set out on the stories woven for them by the three goddesses.\nYet Durin's mother was gone. His days of happiness had come to an end for now."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Carried by the wind that Venti had gifted him, Durin caught up with Dvalin, soaring together into the skies above Windrise. And finally, the story the mage had been writing arrived at the chapter she had been waiting for.\nStanding by the long table where mages gathered for meetings, Alice watched Durin's figure recede into the distance. Her thoughts drifted back through the years to a tea party where all seven of them had been present. Delighted by the occasion, she had been struck by a whim to start a story-telling game, only to stumble when choosing a theme. She turned to Anya, the writer among them, who offered a simple, potent answer: \"The Undying Fire.\"\n\"If I ever get the chance, I want to leave behind an 'Undying Fire' through my stories. As an author, that is the greatest pursuit I can imagine.\"\n\"An 'Undying Fire'? What exactly does that mean?\"\n\"I suspect each of us has our own answer to that question. Isn't that what makes it perfect for a storytelling relay? I am still searching for my own answer, in any case.\"\nAnya didn't answer directly. As she often did in her own works, she left a hint of suspense, sparking Alice's curiosity.\n\"All right, then, let's go with this theme! Each time we meet, the next person will take their turn and write their chapter. Hmm... Anya, you take the final chapter. By the time the story reaches its conclusion, I expect you'll have your answer ready for me.\"\nAnd so began the relay. Alice volunteered to write the opening — the little witch set off on a journey to find the \"Undying Fire\" in order to complete the trials set by the old witch.\nWhat Alice didn't anticipate was that by the time the witches gathered again, Anya had passed away, lying in her coffin, asleep forever. She had misjudged how differently witches and humans experienced the passage of time, and how profoundly that would affect Anya. She had been expecting to wait for the next chapter, but Anya had already grown old. By the time the story reached the fifth volume, Anya was gone.\nThe tale Alice had begun started veering wildly in the second and third volumes, handled as they were by Barbeloth and Rhinedottir respectively, but it was partially rescued in the fourth volume under Ivanovna. Yet in the fifth volume, penned by Nicole, it was hastily concluded in a single line. Alice felt frustrated, convinced she would never learn the answer Anya had intended.\nThe story took a turn with Octavia. The Hexenzirkel had never been marred by a loss since its founding until Anya's passing, a loss that now brought the frequently-absent Octavia to the gathering. She brought with her the already written sixth volume, in which the little witch was given a second chance, reuniting with the old witch.\n\"The Undying Fire might exist after all,\" she said.\nIn response to Octavia's reminder, Alice turned her attention to the final work Anya had left behind — the world they had created together, Simulanka. In this world, a dragon named Durin waited, restless and uncertain, for miracles that might come in the future. The possibilities Anya had woven into him, much like the unresolved threads she left in her other works, glowed like a softly burning flame, illuminating the world of the story and tugging at Alice's curiosity. Gazing at this flame, Alice recalled the promise she had once made to Anya.\n\"It seems the ending she was meant to write falls to my pen instead.\"\nAnd so the years passed, with Alice often turning her gaze to the dragon. She watched the child, once burdened with the name of a drake most fell, receive blessings from others, step out of the world of the story, make friends, forge connections with the world beyond the tale, and together with his companions face and overcome fate. In the end, she saw him completely rewrite the story of Durin the wicked dragon and take flight alongside Dvalin...\nDrawing her thoughts back, Alice realized she had finally received Anya's answer.\n\"Anya, just as I wrote at the end of the storytelling relay, I've always thought you were the most capable among us.\"\n\"You always say you would leave little behind, but I see it now — the undying fire you left for us.\""
+      },
+      {
+        "Title": "Dragon's Heart",
+        "Context": "Durin's everyday outfit came from a most extraordinary experience. Though there was no direct proof, he had always believed it was a gift from his mother, Anya, bestowed with some kind of magical charm. After all, every element of the outfit was familiar to him, each one tracing its origin to her works. Clearly, his mother had cherished him deeply, dressing him as though he were a prince from a fairy tale.\nStill, there was one detail Durin didn't recognize: the heart-shaped gem at the collar. Considering how he had been reborn and the gem's locked design, he gradually realized its meaning. The gem held the heart of the evil dragon fused with him, and his body now served as the cage keeping it sealed.\nBut when Durin took up his mother's pen and began writing his own story, the lock on the heart vanished. Placing his hand over the gem, he felt not the pulse of some malevolent being, but his own heartbeat.\nIn that moment, Durin finally understood the gem's true meaning — it was not the dragon's heart. It was his own.\nAnd now, that heart was free."
+      },
+      {
+        "Title": "Vision",
+        "Context": "When Durin traveled to Mondstadt to visit Albedo, he saw for the first time the massive dragon skeleton slumbering amidst the snowy mountains. The owner of these bones shared his name.\nThrough Albedo's words, Durin learned the devastation his name had once brought to this land, and that history was on the verge of repeating itself.\n\"Isn't there any way to save the people here?\"\n\"There is, but...\"\nAlbedo explained a possibility. By using alchemy to fuse Durin with the heart of the evil dragon, he could seal its Abyssal power completely.\nHowever, the plan was far from perfect. As an essential part of it, Durin would have to bear certain costs. Albedo explained that once the alchemical process was complete, Durin would take the place of the evil dragon and remain in this world. Yet this world was far from the peaceful beauty of Simulanka, and the power he would have to seal was far more terrifying than the curse that had once turned everything into building blocks.\nAlbedo knew this could not be a demand made unilaterally — he respected Durin's choice.\nDurin looked toward the distant dragon bones, sensing the guiding force that had led him here. Yet now, with this decision laid before him, that force fell silent. Even the goddesses who wrote fate seemed to have set down their pens. This choice was his alone.\n\"What if... I want to stay?\"\nIn that moment, memories of his past flooded back. His mother had told him to journey far away, leading him to Teyvat. Hat Guy had urged him to go farther still, and through that, he had seen the world in all its beauty and cruelty. Along the way, he had faced countless unexpected events, some joyous, some disappointing, none neatly arranged as in a story. Surprises came unbidden, and expectations sometimes fell short.\nYet it was precisely this uncertainty that captivated Durin, the one who had stepped out from the pages of a tale. It drove him to keep exploring this world. And it was this very uncertainty that granted him something no character bound by a story could possess, something born only when facing the unknown:\nA \"wish.\"\n\"I want to stay. I love this world. I want to fulfill my mother's request, to leave my story as Hat Guy said, and to help you save everyone... to suppress the evil dragon and become... a true human.\"\nIn the end, it was Durin who solemnly entrusted his desire to Albedo.\n\"Please... help me make this wish come true.\"\nAnd so, a great trial began. The light of the alchemical array blazed across Mondstadt's sky.\nWhen the dust settled, Durin found a shining Vision at the center of his side of the array.\nHis wish had been granted."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 212301,
+      "Name": "Toward the Distant Horizon",
+      "Description": "Durin's outfit. Durin's original outfit has received a new lease of life now that he's taken up his mother's pen. Ultimately, he bid farewell to the past once painted by its previous owner. When the lock on his heart faded away, the distant horizon his wish now points to became the direction in which his story continues to unfold.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_DurinCostumeWic",
+      "SideIcon": "UI_AvatarIcon_Side_DurinCostumeWic"
+    },
+    {
+      "Id": 212300,
+      "Name": "A Gift From the Stars",
+      "Description": "Durin's outfit. As the smoke from the alchemical array gradually dissipated, a glimmer of starlight drew Durin's gaze toward the window. In the reflection in the glass, he saw himself dressed in elegant garb, like a prince straight out of a fairy tale. When he looked down at himself again, he realized he was wearing that very same outfit. But who could've given him this gift? The stars outside merely twinkled soundlessly, providing no answers.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104114,
+    113080,
+    101261,
+    112127,
+    104309,
+    113069
+  ],
+  "NameCard": {
+    "Name": "Durin: Radiant Heart",
+    "Description": "Namecard style.\nThe ceaseless drumming in his chest reminds him thus: \"You carry the hopes of a distant past. Your soul is resplendent and nascent, and within you burns a fervor no winter blizzard can quench.\"",
+    "Icon": "UI_NameCardIcon_Durin",
+    "PicturePrefix": "UI_NameCardPic_Durin"
+  }
+}

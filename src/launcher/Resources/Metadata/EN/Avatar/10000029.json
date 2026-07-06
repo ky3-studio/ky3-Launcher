@@ -1,0 +1,1170 @@
+{
+  "Id": 10000029,
+  "PromoteId": 29,
+  "Sort": 3,
+  "Body": 5,
+  "Icon": "UI_AvatarIcon_Klee",
+  "SideIcon": "UI_AvatarIcon_Side_Klee",
+  "Name": "Klee",
+  "Description": "An explosives expert and a regular at the Knights of Favonius's confinement room. Also known as Fleeing Sunlight.",
+  "BeginTime": "2020-09-15T04:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 10,
+  "BaseValue": {
+    "HpBase": 800.7888,
+    "AttackBase": 24.206,
+    "DefenseBase": 47.864
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 2931,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:P}",
+            "2-Hit DMG|{param2:P}",
+            "3-Hit DMG|{param3:P}",
+            "Charged Attack DMG|{param4:P}",
+            "Charged Attack Stamina Cost|{param5:F1}",
+            "Plunge DMG|{param6:F1P}",
+            "Low/High Plunge DMG|{param7:P}/{param8:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 293101,
+              "Level": 1,
+              "Parameters": [
+                0.7216,
+                0.624,
+                0.8992,
+                1.5736,
+                50,
+                0.568288,
+                1.136335,
+                1.419344
+              ]
+            },
+            {
+              "Id": 293102,
+              "Level": 2,
+              "Parameters": [
+                0.77572,
+                0.6708,
+                0.96664,
+                1.69162,
+                50,
+                0.614544,
+                1.228828,
+                1.534872
+              ]
+            },
+            {
+              "Id": 293103,
+              "Level": 3,
+              "Parameters": [
+                0.82984,
+                0.7176,
+                1.03408,
+                1.80964,
+                50,
+                0.6608,
+                1.32132,
+                1.6504
+              ]
+            },
+            {
+              "Id": 293104,
+              "Level": 4,
+              "Parameters": [
+                0.902,
+                0.78,
+                1.124,
+                1.967,
+                50,
+                0.72688,
+                1.453452,
+                1.81544
+              ]
+            },
+            {
+              "Id": 293105,
+              "Level": 5,
+              "Parameters": [
+                0.95612,
+                0.8268,
+                1.19144,
+                2.08502,
+                50,
+                0.773136,
+                1.545944,
+                1.930968
+              ]
+            },
+            {
+              "Id": 293106,
+              "Level": 6,
+              "Parameters": [
+                1.01024,
+                0.8736,
+                1.25888,
+                2.20304,
+                50,
+                0.826,
+                1.65165,
+                2.063
+              ]
+            },
+            {
+              "Id": 293107,
+              "Level": 7,
+              "Parameters": [
+                1.0824,
+                0.936,
+                1.3488,
+                2.3604,
+                50,
+                0.898688,
+                1.796995,
+                2.244544
+              ]
+            },
+            {
+              "Id": 293108,
+              "Level": 8,
+              "Parameters": [
+                1.15456,
+                0.9984,
+                1.43872,
+                2.51776,
+                50,
+                0.971376,
+                1.94234,
+                2.426088
+              ]
+            },
+            {
+              "Id": 293109,
+              "Level": 9,
+              "Parameters": [
+                1.22672,
+                1.0608,
+                1.52864,
+                2.67512,
+                50,
+                1.044064,
+                2.087686,
+                2.607632
+              ]
+            },
+            {
+              "Id": 293110,
+              "Level": 10,
+              "Parameters": [
+                1.29888,
+                1.1232,
+                1.61856,
+                2.83248,
+                50,
+                1.12336,
+                2.246244,
+                2.80568
+              ]
+            },
+            {
+              "Id": 293111,
+              "Level": 11,
+              "Parameters": [
+                1.373926,
+                1.188096,
+                1.712077,
+                2.996134,
+                50,
+                1.202656,
+                2.404802,
+                3.003728
+              ]
+            },
+            {
+              "Id": 293112,
+              "Level": 12,
+              "Parameters": [
+                1.472064,
+                1.27296,
+                1.834368,
+                3.210144,
+                50,
+                1.281952,
+                2.563361,
+                3.201776
+              ]
+            },
+            {
+              "Id": 293113,
+              "Level": 13,
+              "Parameters": [
+                1.570202,
+                1.357824,
+                1.956659,
+                3.424154,
+                50,
+                1.361248,
+                2.721919,
+                3.399824
+              ]
+            },
+            {
+              "Id": 293114,
+              "Level": 14,
+              "Parameters": [
+                1.668339,
+                1.442688,
+                2.07895,
+                3.638163,
+                50,
+                1.440544,
+                2.880478,
+                3.597872
+              ]
+            },
+            {
+              "Id": 293115,
+              "Level": 15,
+              "Parameters": [
+                1.766477,
+                1.527552,
+                2.201242,
+                3.852173,
+                50,
+                1.51984,
+                3.039036,
+                3.79592
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10291,
+        "Name": "Kaboom!",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nThrows things that go boom when they hit things! Performs up to 3 explosive attacks, dealing <color=#FF9999FF>AoE Pyro DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina and deals <color=#FF9999FF>AoE Pyro DMG</color> to opponents after a short casting time.\n\n<color=#FFD780FF>Plunging Attack</color>\nGathering the power of Pyro, Klee plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#FF9999FF>AoE Pyro DMG</color> upon impact with the ground.",
+        "Icon": "Skill_A_Catalyst_MD"
+      },
+      {
+        "GroupId": 2932,
+        "Proud": {
+          "Descriptions": [
+            "Jumpy Dumpty DMG|{param1:P}",
+            "Mine DMG|{param4:F1P}",
+            "Mine Duration|{param5:F1}s",
+            "CD|{param6:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 293201,
+              "Level": 1,
+              "Parameters": [
+                0.952,
+                0.952,
+                0.952,
+                0.328,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293202,
+              "Level": 2,
+              "Parameters": [
+                1.0234,
+                1.0234,
+                1.0234,
+                0.3526,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293203,
+              "Level": 3,
+              "Parameters": [
+                1.0948,
+                1.0948,
+                1.0948,
+                0.3772,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293204,
+              "Level": 4,
+              "Parameters": [
+                1.19,
+                1.19,
+                1.19,
+                0.41,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293205,
+              "Level": 5,
+              "Parameters": [
+                1.2614,
+                1.2614,
+                1.2614,
+                0.4346,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293206,
+              "Level": 6,
+              "Parameters": [
+                1.3328,
+                1.3328,
+                1.3328,
+                0.4592,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293207,
+              "Level": 7,
+              "Parameters": [
+                1.428,
+                1.428,
+                1.428,
+                0.492,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293208,
+              "Level": 8,
+              "Parameters": [
+                1.5232,
+                1.5232,
+                1.5232,
+                0.5248,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293209,
+              "Level": 9,
+              "Parameters": [
+                1.6184,
+                1.6184,
+                1.6184,
+                0.5576,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293210,
+              "Level": 10,
+              "Parameters": [
+                1.7136,
+                1.7136,
+                1.7136,
+                0.5904,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293211,
+              "Level": 11,
+              "Parameters": [
+                1.8088,
+                1.8088,
+                1.8088,
+                0.6232,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293212,
+              "Level": 12,
+              "Parameters": [
+                1.904,
+                1.904,
+                1.904,
+                0.656,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293213,
+              "Level": 13,
+              "Parameters": [
+                2.023,
+                2.023,
+                2.023,
+                0.697,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293214,
+              "Level": 14,
+              "Parameters": [
+                2.142,
+                2.142,
+                2.142,
+                0.738,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293215,
+              "Level": 15,
+              "Parameters": [
+                2.261,
+                2.261,
+                2.261,
+                0.779,
+                15,
+                20
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10292,
+        "Name": "Jumpy Dumpty",
+        "Description": "Jumpy Dumpty is tons of boom-bang-fun! \nWhen thrown, Jumpy Dumpty bounces thrice, igniting and dealing <color=#FF9999FF>AoE Pyro DMG</color> with every bounce.\n\nOn the third bounce, the bomb splits into many mines.\nThe mines will explode upon contact with opponents, or after a short period of time, dealing <color=#FF9999FF>AoE Pyro DMG</color>.\n\nStarts with 2 charges.\n\n<i>Jumpy Dumpty is Klee's good friend! She can't help but introduce him to everyone.</i>",
+        "Icon": "Skill_S_Klee_01"
+      }
+    ],
+    "SpecialSkills": [
+      {
+        "GroupId": 2951,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 295101,
+              "Level": 1,
+              "Parameters": [
+                20,
+                0.15,
+                0.3,
+                0.5,
+                2
+              ]
+            }
+          ],
+          "Display": 3
+        },
+        "Id": 295101,
+        "Name": "Witch's Eve Rite: Sparkborne Magic",
+        "Description": "After completing <color=#FFD780FF>Witch's Homework: Of Leaves That Spark</color>, Klee will become a <color=#FFD780FF>Hexerei</color> character. When the party includes at least 2 Hexerei characters, you will gain the <color=#FFD780FF>Hexerei: Secret Rite</color> effect, which enhances Hexerei characters.\n\n<color=#FFD780FF>Hexerei: Secret Rite</color>\nWhen Klee deals DMG with Normal Attacks, Elemental Skills, or Elemental Bursts, she gains 1 Boom Badge that lasts 20s. Each type of attack can grant at most 1 Boom Badge this way, and each badge has its own independent timer. While Klee has 1/2/3 Boom Badges, her special Charged Attack Boom-Boom Strike deals 115%/130%/150% of its original DMG.",
+        "Icon": "UI_Talent_S_Klee_07"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 2939,
+      "Proud": {
+        "Descriptions": [
+          "Sparks 'n' Splash DMG|{param1:F1P}",
+          "Duration|{param5:F1}s",
+          "CD|{param2:F1}s",
+          "Energy Cost|{param3:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 293901,
+            "Level": 1,
+            "Parameters": [
+              0.4264,
+              15,
+              60,
+              0.51168,
+              10
+            ]
+          },
+          {
+            "Id": 293902,
+            "Level": 2,
+            "Parameters": [
+              0.45838,
+              15,
+              60,
+              0.550056,
+              10
+            ]
+          },
+          {
+            "Id": 293903,
+            "Level": 3,
+            "Parameters": [
+              0.49036,
+              15,
+              60,
+              0.588432,
+              10
+            ]
+          },
+          {
+            "Id": 293904,
+            "Level": 4,
+            "Parameters": [
+              0.533,
+              15,
+              60,
+              0.6396,
+              10
+            ]
+          },
+          {
+            "Id": 293905,
+            "Level": 5,
+            "Parameters": [
+              0.56498,
+              15,
+              60,
+              0.677976,
+              10
+            ]
+          },
+          {
+            "Id": 293906,
+            "Level": 6,
+            "Parameters": [
+              0.59696,
+              15,
+              60,
+              0.716352,
+              10
+            ]
+          },
+          {
+            "Id": 293907,
+            "Level": 7,
+            "Parameters": [
+              0.6396,
+              15,
+              60,
+              0.76752,
+              10
+            ]
+          },
+          {
+            "Id": 293908,
+            "Level": 8,
+            "Parameters": [
+              0.68224,
+              15,
+              60,
+              0.818688,
+              10
+            ]
+          },
+          {
+            "Id": 293909,
+            "Level": 9,
+            "Parameters": [
+              0.72488,
+              15,
+              60,
+              0.869856,
+              10
+            ]
+          },
+          {
+            "Id": 293910,
+            "Level": 10,
+            "Parameters": [
+              0.76752,
+              15,
+              60,
+              0.921024,
+              10
+            ]
+          },
+          {
+            "Id": 293911,
+            "Level": 11,
+            "Parameters": [
+              0.81016,
+              15,
+              60,
+              0.972192,
+              10
+            ]
+          },
+          {
+            "Id": 293912,
+            "Level": 12,
+            "Parameters": [
+              0.8528,
+              15,
+              60,
+              1.02336,
+              10
+            ]
+          },
+          {
+            "Id": 293913,
+            "Level": 13,
+            "Parameters": [
+              0.9061,
+              15,
+              60,
+              1.08732,
+              10
+            ]
+          },
+          {
+            "Id": 293914,
+            "Level": 14,
+            "Parameters": [
+              0.9594,
+              15,
+              60,
+              1.15128,
+              10
+            ]
+          },
+          {
+            "Id": 293915,
+            "Level": 15,
+            "Parameters": [
+              1.0127,
+              15,
+              60,
+              1.21524,
+              10
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10295,
+      "Name": "Sparks 'n' Splash",
+      "Description": "Klee's Blazing Delight! For the duration of this ability, continuously summons Sparks 'n' Splash to attack nearby opponents, dealing <color=#FF9999FF>AoE Pyro DMG</color>.\n\n<i>The knights all believe that Klee must have a lucky star watching over her to have never been hurt by any of her own bombs...</i>",
+      "Icon": "Skill_E_Klee_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 2921,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 292101,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 292101,
+        "Name": "Pounding Surprise",
+        "Description": "When <color=#FFD780FF>Jumpy Dumpty</color> and Normal Attacks deal DMG, Klee has a 50% chance to obtain an Explosive Spark.\nThis Explosive Spark is consumed by the next Charged Attack, which costs no Stamina and deals 50% increased DMG.",
+        "Icon": "UI_Talent_S_Klee_05"
+      },
+      {
+        "GroupId": 2922,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 292201,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 292201,
+        "Name": "Sparkling Burst",
+        "Description": "When Klee's Charged Attack results in a CRIT Hit, all party members gain 2 Elemental Energy.",
+        "Icon": "UI_Talent_S_Klee_06"
+      },
+      {
+        "GroupId": 2923,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 292301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 292301,
+        "Name": "All Of My Treasures!",
+        "Description": "Displays the location of nearby <color=#FFD780FF>resources unique to Mondstadt</color> on the mini-map.",
+        "Icon": "UI_Talent_Collect_Local_Mengde"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 291,
+        "Name": "Chained Reactions",
+        "Description": "Attacks and Skills have a certain chance to summon sparks that bombard opponents, dealing DMG equal to 120% of <color=#FFD780FF>Sparks 'n' Splash</color>'s DMG.",
+        "Icon": "UI_Talent_S_Klee_01"
+      },
+      {
+        "Id": 292,
+        "Name": "Explosive Frags",
+        "Description": "Being hit by <color=#FFD780FF>Jumpy Dumpty</color>'s mines decreases opponents' DEF by 23% for 10s.",
+        "Icon": "UI_Talent_S_Klee_02"
+      },
+      {
+        "Id": 293,
+        "Name": "Exquisite Compound",
+        "Description": "Increases the Level of <color=#FFD780FF>Jumpy Dumpty</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Klee_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 294,
+        "Name": "Sparkly Explosion",
+        "Description": "If Klee leaves the field during the duration of <color=#FFD780FF>Sparks 'n' Splash</color>, her departure triggers an explosion that deals 555% of her ATK as <color=#FF9999FF>AoE Pyro DMG</color>.",
+        "Icon": "UI_Talent_S_Klee_03"
+      },
+      {
+        "Id": 295,
+        "Name": "Nova Burst",
+        "Description": "Increases the Level of <color=#FFD780FF>Sparks 'n' Splash</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Klee_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 296,
+        "Name": "Blazing Delight",
+        "Description": "While under the effects of <color=#FFD780FF>Sparks 'n' Splash</color>, Klee will regenerate 3 Energy for all members of the party (excluding Klee) every 3s.\nWhen <color=#FFD780FF>Sparks 'n' Splash</color> is used, all party members will gain a 10% <color=#FF9999FF>Pyro DMG Bonus</color> for 25s.",
+        "Icon": "UI_Talent_S_Klee_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Fleeing Sunlight",
+    "Detail": "An explosives expert and a regular at the Knights of Favonius's confinement room. Also known as Fleeing Sunlight.",
+    "Association": 1,
+    "Native": "Knights of Favonius",
+    "BirthMonth": 7,
+    "BirthDay": 27,
+    "VisionBefore": "Pyro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Trifolium",
+    "CvChinese": "花玲",
+    "CvJapanese": "久野美咲",
+    "CvEnglish": "Poonam Basu",
+    "CvKorean": "Bang Yeon-ji",
+    "CookBonus": {
+      "OriginItemId": 108002,
+      "ItemId": 108115,
+      "InputList": [
+        110001,
+        100079,
+        100076,
+        100078
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Spark Knight Klee of the Knights of Favonius, reporting for duty! ...There's some more, but uh, I forgot. I'm not so good at remembering..."
+      },
+      {
+        "Title": "Chat: Spoils",
+        "Context": "Klee was a brave girl today! I found a really weird-looking lizard! Want me to show it to you?"
+      },
+      {
+        "Title": "Chat: Adventures",
+        "Context": "Do you wanna come fish blasting with me? I'll get grounded for a whole day, but it's way worth it 'cuz the fish taste sooo goood!"
+      },
+      {
+        "Title": "Chat: Rules",
+        "Context": "\"Explosion inside city wall, grounded be thy woe,\" \"Explosions can hurt people, Jean can be dreadful,\" \"Mondstadt be bombed, Klee be doomed.\" Those're the survival rules that the Knights of Favonius gave me."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Mwuhahaha, lucky all my new bombs are waterproof!"
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "What'd I blow up!? ...Oh wait, it's just thunder and lightning. Phew."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "Dear Anemo God, please make Klee's bombs blow in the right direction and only blow up bad guys. The end."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Good morning! Can I come play with you today? Pleeeease? I wanna go on an adventure!"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Lunchtime! What do you wanna eat today? Let me see if the Teyvat Travel Guide has any suggestions..."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Good evening! Can you please tell Huffman that Klee is not a baby and is definitely allowed out to play at night? Please take me out to play together!"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Hey... Um... I know I said I don't wanna go home and all, but now it's nighttime and I can't find my way home in the dark... Can you please take me home on your way back? Pleeeease?"
+      },
+      {
+        "Title": "About Klee: Incidents",
+        "Context": "Ohhhhh... I broke one of the blades on the windmill— I'm really sorry!"
+      },
+      {
+        "Title": "About Klee: Reparations",
+        "Context": "I'm really good at fixing things though. I can help! Huh? What do you mean that's child labor? What even is child labor? Does that mean I can't help?"
+      },
+      {
+        "Title": "About Us: Knights",
+        "Context": "Hee-hee, you're an Honorary Knight but I've been a Spark Knight longer... That means I'm higher up than you, right? So you have to do what I say! So, um... Ca—Can you not say anything about the big disaster I caused? It was an accident..."
+      },
+      {
+        "Title": "About Us: Playmates",
+        "Context": "No! It's only nine o'clock, I'm staying up to watch the circus' special midnight performance! You're supposed to be my best friend! Don't even think about trying to send me home!"
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "This little marble is supposed to be a present from Barbatos to say well done? Well done for what though? ...Hmm, he is the god of freedom I guess, maybe that's why he likes me? Alright, from now on I'll say thank you to Barbatos by showing that I have the freedom to blow up as many fish as I want! ...Am I doing it right?"
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "At the Knights of Favonius building, you're not allowed to blow up the walls. Shame, it would make getting out of solitary confinement way easier... but if I did so much as try to blow up the wall, Jean would make sure Klee never sees the light of day again. That's what Jean said, Kaeya told me."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Every lizard has a different pattern on his back, and some of them you can use their dried-out tails to make gunpowder with. I know because Albedo told me so."
+      },
+      {
+        "Title": "About Razor",
+        "Context": "Razor's one of my best buddies! Whenever a disaster happens, he always knows the best way to fix it and helps keep Klee safe. Um, but most of the time I'm the one who caused the disaster..."
+      },
+      {
+        "Title": "About the Parents",
+        "Context": "My mom and dad are the famousest travelers in Teyvat! Mom writes the Teyvat Travel Guide, so all the restaurants and hotels in the whole world care what she thinks about them."
+      },
+      {
+        "Title": "About Kaeya",
+        "Context": "Kaeya is the best! He wrote the Favonius Survival Rulebook for me and he always helps me cover it up when I make a big disaster."
+      },
+      {
+        "Title": "About Amber",
+        "Context": "Amber is the best! Baron Bunny is so fluffy and he even explodes! So. Cool."
+      },
+      {
+        "Title": "About Jean",
+        "Context": "Master Jean is the best! But she's also a little bit scary."
+      },
+      {
+        "Title": "About Diluc",
+        "Context": "He's one of the weird grown-ups. He's so grumpy all the time... Why does he never smile?"
+      },
+      {
+        "Title": "About Lisa",
+        "Context": "Lisa is the best! She always sneaks me some treats when I visit her at the workshop. ...Huh, I just remembered I was gonna ask her if I could use the workshop to make some new gunpowder. But I totally forgot..."
+      },
+      {
+        "Title": "About Bennett",
+        "Context": "Bennett is the best! I always find way more treasure if I go adventuring with Bennett! ...But he never finds any. Why is that, anyway?"
+      },
+      {
+        "Title": "About Diona",
+        "Context": "Diona is the best! I like listening to her, last time I heard her say, \"I'm gonna destroy the wine industry in this city if it's the last thing I do!\" And I'm gonna help her using my bombs! ...I don't know what a wine industry is though. Is it a monster?"
+      },
+      {
+        "Title": "About Albedo",
+        "Context": "Me and Albedo have a secret code! Whenever he puts a sign on his workshop door saying \"Experiment in Progress,\" that's code for \"Come Back Later, Klee.\" Albedo's really nice and he's so patient with me, so I don't mind waiting until he's finished with his work."
+      },
+      {
+        "Title": "About Mona",
+        "Context": "Mona is the best! It's so much fun when she comes to play with me and Albedo. She talks about all these amazing things, and I don't understand most of it but... Ah, I just love it when Mona comes round!"
+      },
+      {
+        "Title": "About Sucrose",
+        "Context": "Sucrose is the best! This one time she asked me if I wanted a Jumpy Dumpty that can run as well as jump. Tee-hee, well duh! Of course I do, I want hundreds of them! I wanna put them on every street, every staircase, and every square in Mondstadt!"
+      },
+      {
+        "Title": "About Durin",
+        "Context": "Hehe, Durin lives in Mondstadt now — I'm going to play with him every day! I'll take him fish blasting, and he can fly me up high to throw Jumpy Dumpty at the fish!"
+      },
+      {
+        "Title": "About Lohen",
+        "Context": "Lohen is the best! Last time Klee saw him, he gave me so many yummy treats — and he only wanted a small box of crayons in return! If Lohen has the time, Klee would love to teach him how to draw... Maybe we can invite Uncle Varka, too!"
+      },
+      {
+        "Title": "About Prune",
+        "Context": "Prune is the best! Mom wrote me a letter saying Prune wants someone to play with, but she's too shy to ask. That's why Klee's decided to take her fish blasting, or on a trip to Dragonspine, or the Golden Apple Archipelago, or, or, or... Simulanka! She's gonna have so much fun!"
+      },
+      {
+        "Title": "More About Klee: I",
+        "Context": "Hello, are you here for playtime with Klee?"
+      },
+      {
+        "Title": "More About Klee: II",
+        "Context": "Yeah! This is my new and improved bomb! Whaddya think? Great huh? ...Oh, but ahh... If you find it near any fires, it's not mine. Definitely. Not. Mine."
+      },
+      {
+        "Title": "More About Klee: III",
+        "Context": "Sure, time in solitary confinement gives lots of time to think about new gunpowder formulas... But it'd still be better to not be in solitary in the first place."
+      },
+      {
+        "Title": "More About Klee: IV",
+        "Context": "This is Dodoco, my oldest and bestest friend! Okay, now I've introduced you, don't forget her name again alright? No more calling Dodoco \"that silly doll Klee always hangs on her rucksack.\""
+      },
+      {
+        "Title": "More About Klee: V",
+        "Context": "Thanks for helping me out every time I get in trouble! I have a thank-you present for you — barbecued fish, made with my own secret recipe! ...Okay, so the secret recipe is exploding the fish out of the water. Tee-hee, they're fully cooked by the time they land! But it's a secret, right, so you don't get to tell anybody. Just pretend like you don't even know."
+      },
+      {
+        "Title": "Klee's Hobbies",
+        "Context": "I like things that are fluffy~! Like Dodoco! And dandelions! And Razor's hair!"
+      },
+      {
+        "Title": "Klee's Troubles",
+        "Context": "*sigh* You're a good person, but I'm a bad girl. Once I'm out of solitary confinement and am done reflecting on my actions, we can go play together again, okay?"
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Mondstadt's basses are delicious, especially the ones you grab yourself from Cider Lake! I'm not even kidding, even my mom thinks so."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I hate, hate, hate Mondstadt's crabs! All of them! I wanna go out and play, I don't wanna just sit there tryna de-shell a crab all day..."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Yummy, yummy! Oof, I'm so full..."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Yay, I got to eat something tasty today. I'm so happy! Thank you!"
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "It looks yummy, but it's kinda hard work to eat... Hee-hee, how about you help me? Pretty please!"
+      },
+      {
+        "Title": "Birthday",
+        "Context": "♪Happy birthday to you, happy birthday to you, happy birthday dear Traveler, happy birthday to you!♪ You're older than me right? That means you've had way more birthdays than me... I'm sooo jealous!"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Mm, new-bomb research complete! Now, let's get outta here before Jean finds out..."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Aw yeah, I improved again! But as Jean says, \"Continuous self-improvement is one's duty.\" She says that means I'm allowed to be a bit happy about it, but not the most happy I've ever been in my whole life about it."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Thanks for helping me gather so much stuff for my research! If you ever wanna learn how to make a bomb, I can teach you y'know."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I remember the first time I ever heard an explosion... I wasn't scared at all. Later on, I found out that apparently, that's not \"normal,\" and most people would've been scared. But hey, you're not scared of my bombs right? Tee-hee, I knew it! That's why you're my bestest friend ever!"
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Jumpy Dumpty go!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Boing, boing, boom!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Pieew."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Sparks 'n' Splash!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Blazing Delight!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Blow them aaaalll up!"
+      },
+      {
+        "Title": "Sprint Start: I",
+        "Context": "Lalala~"
+      },
+      {
+        "Title": "Sprint Start: II",
+        "Context": "Da-da-da~"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "More treasure, more treasure! Hee-hee..."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Yay, shiny!"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Maybe there's even more buried below..."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "What did you do that for!?"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Jeeeean... they're picking on me!"
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "I feel kinda woozy..."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "I can make a big bang if you want!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Are you okay?"
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Yay, I did it! Oh wait, no I didn't..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "I wanna go home now..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "It was an accident..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "No fair!"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "That really hurt!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Klee can help!"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Ta-da! Klee is here!"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Yea! Let's go on a big adventure!"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "When the patrons of Mondstadt's taverns are asked about the strongest knight of the Knights of Favonius, three names are likely to come up:\nThe highly reputable Acting Grand Master Jean, Cavalry Captain Kaeya, and the mysterious tycoon, Diluc.\nHowever, some claim to have witnessed, albeit through bleary, drunken eyes, a knight in red, leveling the entire Stormbearer Mountains.\nIf one wants to find this mysterious knight, then they need look no further than the solitary confinement cell inside the Knights of Favonius Headquarters.\nIf the cell is found vacant... then something explosively unfortunate is likely about to take place...\nKlee is well known for the danger she presents. As an official member of the Knights of Favonius, her strength in combat cannot be underestimated.\nAs a hyperactive child, meanwhile, her destructive capabilities cannot be overstated.\nAfter all, while other Mondstadt children her age are still playing with regular toys, Klee's favorite toys are... live explosives."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Three years ago, Klee was entrusted to the Knights of Favonius by her parents, who were famed adventurers.\nThis was how the fates of Klee and \"that boy in white\" became intertwined with their \"family\" in Mondstadt.\nKlee is curious about everything in the outside world. She has an innocent passion for explosives, and is incredibly enthusiastic in all that she does.\nUnder the protection of the Knights of Favonius, she is protected from harm and those of ill intent.\nThis young girl soon forged an unbreakable bond with everyone in the Knights of Favonius.\nBeing sent to the solitary confinement room by Jean, helping Amber improving Baron Bunny, as well as developing new bombs...\nThese parts of Klee's life are all invaluable treasures to her."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "\"The apple doesn't fall far from the tree...\"\nJean sighs to herself as she sits down at her desk, head in hands, faced once again with a stack of damage reports.\nCarts blasted beyond repair, storage shacks burnt down, forest fires that the knights barely managed to contain...\nNot to mention the suspiciously high number of deaths from unnatural causes among the fish of Starfell Lake.\nThere's only one potential culprit behind all of this, and she just so happens to be one of their own...\n\"Klee!\"\nFaced with Jean's stern glare, the harmless-looking Klee surrenders all her concealed explosives.\nShe is then escorted to solitary confinement, despite her protests amidst floods of tears.\nThis occurs about once or twice a week at the Knights of Favonius."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Of course, Klee always tries to help clean up the messes she's made.\nHowever, sometimes her reckless personality makes things worse still.\nFor example, she once wanted to apologize to everyone by making some BBQ fish, but ended up blowing the stove sky-high.\nThen there was the time she got into a fluster and tried to put the fire out... with wind — which obviously resulted in the whole plain going up in flames.\nKlee is not a bad kid by nature, it's just that her curious and playful nature always results in her failing to think before she acts.\nAnd every time she gets into trouble, she guiltily tries to make up for it.\nThough once Jean lets Klee out of solitary confinement, there's usually no more than a day or two before the sound of explosions return to Mondstadt.\nThe \"Spark Knight\" always manages to live up to her title in a range of unexpected ways."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Though Klee always ends up causing trouble for the Knights of Favonius and Mondstadt, she isn't just some rookie who drags the team down.\nOn the contrary, her skills with explosives can be quite handy if applied correctly.\nOnce, Jean was able to defeat a horde of invading hilichurls utilizing Klee's special talents alone.\nHowever, Klee also forever changed the face of Stormbearer Mountains in that same operation due to recklessly placing too many charges...\nNeedless to say, everyone was more than a little shocked, but at least no one from the Knights of Favonius was injured.\nSince then, the legend of the \"Red Knight of the Stormbearer Mountains\" began to circulate around Mondstadt.\nRumor has it that she is cloaked in red, and clutches the greatest treasure the Knights of Favonius have.\nHowever, only Klee knows what this \"treasure\" truly is."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "To Klee, the Knights of Favonius are family, and she can't imagine life without them. Her biggest role model, however, is still her birth mother — the avid adventurer, Alice.\nA highly renowned adventurer and author of the popular Teyvat Travel Guide, there is nothing this incredible mother cannot do — as far as Klee is concerned, anyway.\nWhether it's the way she used to guide Klee step-by-step through the techniques for adding gunpowder and selecting fuses, or the encouragement she'd give Klee to express her creativity through ever-bolder and more beautiful fireworks...\nOr that time she taught her how to identify Starsnatch Cliff's load-bearing points, then place explosive charges accordingly to bring the whole thing down...\nOr that time they stuck their tongues out at each other awkwardly while being told off by Huffman of the Knights of Favonius...\nKlee has many treasured memories of her mother.\nThis was the way things were until her parents left to travel to somewhere dangerous and far away. They entrusted Klee to the care of Albedo and the Knights of Favonius.\nThough still small, Klee knew she would one day become just like her mother.\nOne day, her explosives would become something that her mother would be proud of."
+      },
+      {
+        "Title": "\"Dodoco\"",
+        "Context": "Dodoco is Klee's first friend, and one of her best.\nA very long time ago, her mother made this doll for her by hand.\nAlice affixed it to Klee's four-leaf clover, and hung on her big backpack.\nFrom that day forth, Klee and Dodoco became inseparable.\nHer mother said that this would ensure that Klee would never be lonely and that she would have a friend to confide in even when she was alone.\nThey would also protect each other in times of danger, just like Amber and Baron Bunny.\nThis, however, worried the Knights quite a fair bit — considering the other things Alice and her daughter had invented, perhaps this, too, might explode at any time...\n\"Dodoco\" is a name Klee picked herself.\nWhen asked what this name meant, she flushed red for a good long while before replying: \"It means... Klee's best friend!\""
+      },
+      {
+        "Title": "Vision",
+        "Context": "Asking Klee how she obtained a Vision will probably get you nowhere — she doesn't know, either.\nA natural-born pyromaniac, Klee had already been acknowledged by a Vision from a very young age.\nAccording to Klee herself, she had been creating a bomb that was \"even bigger than super big!\"\nThis was her very first solo project, but the results were far from expected—\nWell, she \"only\" blew her small workshop sky high, leaving a mountain of smoking ash.\nBut rather than being disappointed, Klee was pleasantly surprised to see a flaming Vision emerge from those ashes.\nHow did Klee receive this divine acknowledgment?\nWas it her talent and passion for explosives, the individualistic nature she got from her mother, or her shining innocence?\nRegardless, Klee had already obtained such a coveted item at a tender, carefree age.\nRegardless of what she faces as she grows up, she will never give this \"present\" up."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 202901,
+      "Name": "Blossoming Starlight",
+      "Description": "An exquisite outfit Klee wears only for the most important performances. The colors are brilliant, like a cake adorned with cream flowers and crowned with scarlet candles. With it comes happiness and smiles that will fill your adventures.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_KleeCostumeWitch",
+      "SideIcon": "UI_AvatarIcon_Side_KleeCostumeWitch"
+    },
+    {
+      "Id": 202900,
+      "Name": "Shooting Spark",
+      "Description": "Klee's outfit. A set of clothing for an energetic child that even comes with a matching leather backpack.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104114,
+    113011,
+    100025,
+    112010,
+    104303,
+    113007
+  ],
+  "NameCard": {
+    "Name": "Klee: Explosive",
+    "Description": "Namecard style.\nKlee's lucky explosive — can you tell if it's Jumpy Dumpty or Dodoco? (Hint: Look carefully at the tail...)",
+    "Icon": "UI_NameCardIcon_Klee",
+    "PicturePrefix": "UI_NameCardPic_Klee"
+  },
+  "TraceEffect": {
+    "Id": 215017,
+    "Name": "Echo: Fleeing Sunlight",
+    "Description": "Klee's Envisaged Echo. \"Da-da-da~ The Spark Knight's off on an adventure!\"",
+    "Icon": "UI_TraceEffectIcon_Klee"
+  }
+}

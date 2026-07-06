@@ -1,0 +1,1286 @@
+{
+  "Id": 10000120,
+  "PromoteId": 120,
+  "Sort": 104,
+  "Body": 4,
+  "Icon": "UI_AvatarIcon_Flins",
+  "SideIcon": "UI_AvatarIcon_Side_Flins",
+  "Name": "Flins",
+  "Description": "A Lightkeeper of Nod-Krai, guardian of a lighthouse and graveyard on a northern isle. An enigmatic gentleman, cultured and courtly.",
+  "BeginTime": "2025-09-30T18:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 972.3864,
+    "AttackBase": 27.3714,
+    "DefenseBase": 62.94116
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 12031,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "4-Hit DMG|{param4:F1P}×2",
+            "5-Hit DMG|{param5:F1P}",
+            "Charged Attack DMG|{param6:F1P}",
+            "Charged Attack Stamina Cost|{param7:F1}",
+            "Plunge DMG|{param8:F1P}",
+            "Low/High Plunge DMG|{param9:P}/{param10:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1203101,
+              "Level": 1,
+              "Parameters": [
+                0.44726,
+                0.451483,
+                0.559198,
+                0.320389,
+                0.767946,
+                1.03028,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 1203102,
+              "Level": 2,
+              "Parameters": [
+                0.483665,
+                0.488231,
+                0.604714,
+                0.346467,
+                0.830453,
+                1.11414,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 1203103,
+              "Level": 3,
+              "Parameters": [
+                0.52007,
+                0.52498,
+                0.65023,
+                0.372545,
+                0.89296,
+                1.198,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 1203104,
+              "Level": 4,
+              "Parameters": [
+                0.572077,
+                0.577478,
+                0.715253,
+                0.4098,
+                0.982256,
+                1.3178,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 1203105,
+              "Level": 5,
+              "Parameters": [
+                0.608482,
+                0.614227,
+                0.760769,
+                0.435878,
+                1.044763,
+                1.40166,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 1203106,
+              "Level": 6,
+              "Parameters": [
+                0.650088,
+                0.656225,
+                0.812787,
+                0.465681,
+                1.1162,
+                1.4975,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 1203107,
+              "Level": 7,
+              "Parameters": [
+                0.707295,
+                0.713973,
+                0.884313,
+                0.506661,
+                1.214426,
+                1.62928,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 1203108,
+              "Level": 8,
+              "Parameters": [
+                0.764503,
+                0.771721,
+                0.955838,
+                0.547641,
+                1.312651,
+                1.76106,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 1203109,
+              "Level": 9,
+              "Parameters": [
+                0.821711,
+                0.829468,
+                1.027363,
+                0.588621,
+                1.410877,
+                1.89284,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 1203110,
+              "Level": 10,
+              "Parameters": [
+                0.884119,
+                0.892466,
+                1.105391,
+                0.633327,
+                1.518032,
+                2.0366,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 1203111,
+              "Level": 11,
+              "Parameters": [
+                0.946527,
+                0.955464,
+                1.183419,
+                0.678032,
+                1.625187,
+                2.18036,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 1203112,
+              "Level": 12,
+              "Parameters": [
+                1.008936,
+                1.018461,
+                1.261446,
+                0.722737,
+                1.732342,
+                2.32412,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 1203113,
+              "Level": 13,
+              "Parameters": [
+                1.071344,
+                1.081459,
+                1.339474,
+                0.767443,
+                1.839498,
+                2.46788,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 1203114,
+              "Level": 14,
+              "Parameters": [
+                1.133753,
+                1.144456,
+                1.417501,
+                0.812148,
+                1.946653,
+                2.61164,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 1203115,
+              "Level": 15,
+              "Parameters": [
+                1.196161,
+                1.207454,
+                1.495529,
+                0.856853,
+                2.053808,
+                2.7554,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11201,
+        "Name": "Pocztowy Demonspear",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to perform a forward spear throw.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 12032,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "4-Hit DMG|{param4:F1P}×2",
+            "5-Hit DMG|{param5:F1P}",
+            "Charged Attack DMG|{param6:F1P}",
+            "Northland Spearstorm DMG|{param7:F1P}",
+            "Northland Spearstorm CD|{param8:F1}s",
+            "Manifest Flame Duration|{param9:F1}s",
+            "Skill CD|{param10:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1203201,
+              "Level": 1,
+              "Parameters": [
+                0.58248,
+                0.587976,
+                0.728256,
+                0.417252,
+                1.000112,
+                1.1496,
+                1.784,
+                6,
+                10,
+                16
+              ]
+            },
+            {
+              "Id": 1203202,
+              "Level": 2,
+              "Parameters": [
+                0.626166,
+                0.632074,
+                0.782875,
+                0.448546,
+                1.07512,
+                1.23582,
+                1.9178,
+                6,
+                10,
+                16
+              ]
+            },
+            {
+              "Id": 1203203,
+              "Level": 3,
+              "Parameters": [
+                0.669852,
+                0.676172,
+                0.837494,
+                0.47984,
+                1.150129,
+                1.32204,
+                2.0516,
+                6,
+                10,
+                16
+              ]
+            },
+            {
+              "Id": 1203204,
+              "Level": 4,
+              "Parameters": [
+                0.7281,
+                0.73497,
+                0.91032,
+                0.521565,
+                1.25014,
+                1.437,
+                2.23,
+                6,
+                10,
+                16
+              ]
+            },
+            {
+              "Id": 1203205,
+              "Level": 5,
+              "Parameters": [
+                0.771786,
+                0.779068,
+                0.964939,
+                0.552859,
+                1.325148,
+                1.52322,
+                2.3638,
+                6,
+                10,
+                16
+              ]
+            },
+            {
+              "Id": 1203206,
+              "Level": 6,
+              "Parameters": [
+                0.815472,
+                0.823166,
+                1.019558,
+                0.584153,
+                1.400157,
+                1.60944,
+                2.4976,
+                6,
+                10,
+                16
+              ]
+            },
+            {
+              "Id": 1203207,
+              "Level": 7,
+              "Parameters": [
+                0.87372,
+                0.881964,
+                1.092384,
+                0.625878,
+                1.500168,
+                1.7244,
+                2.676,
+                6,
+                10,
+                16
+              ]
+            },
+            {
+              "Id": 1203208,
+              "Level": 8,
+              "Parameters": [
+                0.931968,
+                0.940762,
+                1.16521,
+                0.667603,
+                1.600179,
+                1.83936,
+                2.8544,
+                6,
+                10,
+                16
+              ]
+            },
+            {
+              "Id": 1203209,
+              "Level": 9,
+              "Parameters": [
+                0.990216,
+                0.999559,
+                1.238035,
+                0.709328,
+                1.70019,
+                1.95432,
+                3.0328,
+                6,
+                10,
+                16
+              ]
+            },
+            {
+              "Id": 1203210,
+              "Level": 10,
+              "Parameters": [
+                1.048464,
+                1.058357,
+                1.310861,
+                0.751054,
+                1.800202,
+                2.06928,
+                3.2112,
+                6,
+                10,
+                16
+              ]
+            },
+            {
+              "Id": 1203211,
+              "Level": 11,
+              "Parameters": [
+                1.106712,
+                1.117154,
+                1.383686,
+                0.792779,
+                1.900213,
+                2.18424,
+                3.3896,
+                6,
+                10,
+                16
+              ]
+            },
+            {
+              "Id": 1203212,
+              "Level": 12,
+              "Parameters": [
+                1.16496,
+                1.175952,
+                1.456512,
+                0.834504,
+                2.000224,
+                2.2992,
+                3.568,
+                6,
+                10,
+                16
+              ]
+            },
+            {
+              "Id": 1203213,
+              "Level": 13,
+              "Parameters": [
+                1.23777,
+                1.249449,
+                1.547544,
+                0.88666,
+                2.125238,
+                2.4429,
+                3.791,
+                6,
+                10,
+                16
+              ]
+            },
+            {
+              "Id": 1203214,
+              "Level": 14,
+              "Parameters": [
+                1.31058,
+                1.322946,
+                1.638576,
+                0.938817,
+                2.250252,
+                2.5866,
+                4.014,
+                6,
+                10,
+                16
+              ]
+            },
+            {
+              "Id": 1203215,
+              "Level": 15,
+              "Parameters": [
+                1.38339,
+                1.396443,
+                1.729608,
+                0.990973,
+                2.375266,
+                2.7303,
+                4.237,
+                6,
+                10,
+                16
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11202,
+        "Name": "Ancient Rite: Arcane Light",
+        "Description": "Flins summons forth the ancient power concealed within his lamp and switches to his <color=#FFD780FF>Manifest Flame</color> form. This form has the following characteristics:\n· Flins's Normal and Charged Attacks deal <color=#FFACFFFF>Electro DMG</color> that cannot be overridden by other Elemental infusions, and he is unable to perform Plunging Attacks.\n· His interruption resistance is increased.\n· His Elemental Skill <color=#FFD780FF>Ancient Rite: Arcane Light</color> is replaced with the special Elemental Skill <color=#FFD780FF>Northland Spearstorm</color>.\n\n<color=#FFD780FF>Northland Spearstorm</color>\nFlins summons a flurry of spears in front, dealing <color=#FFACFFFF>AoE Electro DMG</color> and causing his Elemental Burst <color=#FFD780FF>Ancient Ritual: Cometh the Night</color> to be replaced with the special Elemental Burst {LINK#N11200001}<color=#FFD780FF>Thunderous Symphony</color>{/LINK} for the next 6s.\nThe base CD of <color=#FFD780FF>Northland Spearstorm</color> is 6s and will not be affected by other effects.",
+        "Icon": "Skill_S_Flins_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 12039,
+      "Proud": {
+        "Descriptions": [
+          "Initial Skill DMG|{param1:F1P}",
+          "Middle Phase Lunar-Charged DMG|{param2:F1P}",
+          "Final Phase Lunar-Charged DMG|{param3:F1P}",
+          "Energy Cost|{param4:I}",
+          "CD|{param5:F1}s",
+          "Thunderous Symphony DMG|{param6:F1P}",
+          "Thunderous Symphony Additional DMG|{param7:F1P}",
+          "Thunderous Symphony Energy Cost|{param8:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1203901,
+            "Level": 1,
+            "Parameters": [
+              2.5984,
+              0.1624,
+              1.16928,
+              80,
+              20,
+              0.71456,
+              1.03936,
+              30
+            ]
+          },
+          {
+            "Id": 1203902,
+            "Level": 2,
+            "Parameters": [
+              2.79328,
+              0.17458,
+              1.256976,
+              80,
+              20,
+              0.768152,
+              1.117312,
+              30
+            ]
+          },
+          {
+            "Id": 1203903,
+            "Level": 3,
+            "Parameters": [
+              2.98816,
+              0.18676,
+              1.344672,
+              80,
+              20,
+              0.821744,
+              1.195264,
+              30
+            ]
+          },
+          {
+            "Id": 1203904,
+            "Level": 4,
+            "Parameters": [
+              3.248,
+              0.203,
+              1.4616,
+              80,
+              20,
+              0.8932,
+              1.2992,
+              30
+            ]
+          },
+          {
+            "Id": 1203905,
+            "Level": 5,
+            "Parameters": [
+              3.44288,
+              0.21518,
+              1.549296,
+              80,
+              20,
+              0.946792,
+              1.377152,
+              30
+            ]
+          },
+          {
+            "Id": 1203906,
+            "Level": 6,
+            "Parameters": [
+              3.63776,
+              0.22736,
+              1.636992,
+              80,
+              20,
+              1.000384,
+              1.455104,
+              30
+            ]
+          },
+          {
+            "Id": 1203907,
+            "Level": 7,
+            "Parameters": [
+              3.8976,
+              0.2436,
+              1.75392,
+              80,
+              20,
+              1.07184,
+              1.55904,
+              30
+            ]
+          },
+          {
+            "Id": 1203908,
+            "Level": 8,
+            "Parameters": [
+              4.15744,
+              0.25984,
+              1.870848,
+              80,
+              20,
+              1.143296,
+              1.662976,
+              30
+            ]
+          },
+          {
+            "Id": 1203909,
+            "Level": 9,
+            "Parameters": [
+              4.41728,
+              0.27608,
+              1.987776,
+              80,
+              20,
+              1.214752,
+              1.766912,
+              30
+            ]
+          },
+          {
+            "Id": 1203910,
+            "Level": 10,
+            "Parameters": [
+              4.67712,
+              0.29232,
+              2.104704,
+              80,
+              20,
+              1.286208,
+              1.870848,
+              30
+            ]
+          },
+          {
+            "Id": 1203911,
+            "Level": 11,
+            "Parameters": [
+              4.93696,
+              0.30856,
+              2.221632,
+              80,
+              20,
+              1.357664,
+              1.974784,
+              30
+            ]
+          },
+          {
+            "Id": 1203912,
+            "Level": 12,
+            "Parameters": [
+              5.1968,
+              0.3248,
+              2.33856,
+              80,
+              20,
+              1.42912,
+              2.07872,
+              30
+            ]
+          },
+          {
+            "Id": 1203913,
+            "Level": 13,
+            "Parameters": [
+              5.5216,
+              0.3451,
+              2.48472,
+              80,
+              20,
+              1.51844,
+              2.20864,
+              30
+            ]
+          },
+          {
+            "Id": 1203914,
+            "Level": 14,
+            "Parameters": [
+              5.8464,
+              0.3654,
+              2.63088,
+              80,
+              20,
+              1.60776,
+              2.33856,
+              30
+            ]
+          },
+          {
+            "Id": 1203915,
+            "Level": 15,
+            "Parameters": [
+              6.1712,
+              0.3857,
+              2.77704,
+              80,
+              20,
+              1.69708,
+              2.46848,
+              30
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11205,
+      "Name": "Ancient Ritual: Cometh the Night",
+      "Description": "Flins unleashes the true power of his lamp, dealing <color=#FFACFFFF>AoE Electro DMG</color> and, after a short delay, dealing 2 instances of middle-phase and 1 instance of final-phase <color=#FFACFFFF>AoE Electro DMG</color>, all of which are considered Lunar-Charged DMG.\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: Flins's Skill is enhanced: If there are thunderclouds nearby, Flins will deal an additional 2 instances of middle-phase Lunar-Charged <color=#FFACFFFF>AoE Electro DMG</color>.\n\nAfter using the special Elemental Skill <color=#FFD780FF>Northland Spearstorm</color>, Flins's Elemental Burst <color=#FFD780FF>Ancient Ritual: Cometh the Night</color> will be replaced with the special Elemental Burst <color=#FFD780FF>Thunderous Symphony</color> for the next 6s.\n\n<color=#FFD780FF>Thunderous Symphony</color>\nConsume less Elemental Energy to unleash a special Elemental Burst. Flins deals a single instance of <color=#FFACFFFF>AoE Electro DMG</color> that is considered Lunar-Charged DMG.\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: Flins's Skill is enhanced: If there are thunderclouds nearby, Flins will deal an additional instance of Lunar-Charged <color=#FFACFFFF>AoE Electro DMG</color>.",
+      "Icon": "Skill_E_Flins_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 12021,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1202101,
+              "Level": 1,
+              "Parameters": [
+                0.2
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1202101,
+        "Name": "Symphony of Winter",
+        "Description": "Flins will gain a corresponding buff effect based on the party's <color=#FFD780FF>Moonsign</color>.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: Lunar-Charged reactions triggered by Flins will deal an additional 20% DMG.",
+        "Icon": "UI_Talent_S_Flins_05"
+      },
+      {
+        "GroupId": 12022,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1202201,
+              "Level": 1,
+              "Parameters": [
+                0.08,
+                160
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1202201,
+        "Name": "Whispering Flame",
+        "Description": "Flins's Elemental Mastery is increased by 8% of his ATK. The maximum increase obtainable this way is 160.",
+        "Icon": "UI_Talent_S_Flins_06"
+      },
+      {
+        "GroupId": 12023,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1202301,
+              "Level": 1,
+              "Parameters": [
+                0.007,
+                0.14
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1202301,
+        "Name": "Moonsign Benediction: Old World Secrets",
+        "Description": "When a party member triggers an Electro-Charged reaction, it will be converted into the Lunar-Charged reaction, with every 100 ATK that Flins has increasing Lunar-Charged's Base DMG by 0.7%, up to a maximum of 14%.\n\nAdditionally, when Flins is in the party, the party's <color=#FFD780FF>Moonsign</color> will increase by 1 level.",
+        "Icon": "UI_Talent_S_Flins_07"
+      },
+      {
+        "GroupId": 12025,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1202501,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1202501,
+        "Name": "A Light in the Dark",
+        "Description": "Displays the location of nearby <color=#FFD780FF>resources unique to Nod-Krai</color> on the mini-map.\nAdditionally, Flins appears to be able to decipher the whispers of the Wild Hunt...",
+        "Icon": "UI_Talent_S_Flins_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1201,
+        "Name": "Part the Veil of Snow",
+        "Description": "The basic cooldown of the special Elemental Skill <color=#FFD780FF>Northland Spearstorm</color> is reduced to 4s.\nAdditionally, when party members trigger Lunar-Charged reactions, Flins will recover 8 Elemental Energy. This effect can occur once every 5.5s.",
+        "Icon": "UI_Talent_S_Flins_01"
+      },
+      {
+        "Id": 1202,
+        "Name": "The Devil's Wall",
+        "Description": "For the next 6s after using the special Elemental Skill <color=#FFD780FF>Northland Spearstorm</color>, when Flins's next Normal Attack hits an opponent, it will deal an additional 50% of Flins's ATK as <color=#FFACFFFF>AoE Electro DMG</color>. This DMG is considered Lunar-Charged DMG.\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: While Flins is on the field, after his <color=#FFACFFFF>Electro</color> attacks hit an opponent, that opponent's <color=#FFACFFFF>Electro RES</color> will be decreased by 25% for 7s.",
+        "Icon": "UI_Talent_S_Flins_02"
+      },
+      {
+        "Id": 1203,
+        "Name": "Stranger in the Night",
+        "Description": "Increases the Level of {LINK#S11205}<color=#FFD780FF>Ancient Ritual: Cometh the Night</color>{/LINK} by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Flins_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1204,
+        "Name": "Night on Bald Mountain",
+        "Description": "Flins's ATK is increased by 20%.\nAdditionally, his Ascension Talent {LINK#P1202201}<color=#FFD780FF>Whispering Flame</color>{/LINK} is enhanced: Flins's Elemental Mastery is increased by 10% of his ATK. The maximum increase obtainable this way is 220.",
+        "Icon": "UI_Talent_S_Flins_03"
+      },
+      {
+        "Id": 1205,
+        "Name": "Exile's Shadow",
+        "Description": "Increases the Level of {LINK#S11202}<color=#FFD780FF>Ancient Rite: Arcane Light</color>{/LINK} by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Flins_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1206,
+        "Name": "Songs and Dances of Death",
+        "Description": "The DMG dealt to opponents by Flins's Lunar-Charged reactions is {LINK#N11190007}<color=#FFD780FF>elevated</color>{/LINK} by 35%.\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: All nearby party members' Lunar-Charged DMG is <color=#FFD780FF>elevated</color> by 10%.",
+        "Icon": "UI_Talent_S_Flins_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Shadowy Lights, Stranger Wights",
+    "Detail": "A Lightkeeper of Nod-Krai, guardian of a lighthouse and graveyard on a northern isle. An enigmatic gentleman, cultured and courtly.",
+    "Association": 12,
+    "Native": "Lightkeepers",
+    "BirthMonth": 10,
+    "BirthDay": 31,
+    "VisionBefore": "Electro",
+    "VisionOverrideLocked": "Moon Wheel",
+    "VisionOverrideUnlocked": "Moon Wheel",
+    "ConstellationBefore": "Laterna Vigilis",
+    "CvChinese": "马正阳",
+    "CvJapanese": "中村悠一",
+    "CvEnglish": "Nic Olsen",
+    "CvKorean": "Shin Yong-woo",
+    "CookBonus": {
+      "OriginItemId": 108862,
+      "ItemId": 108895,
+      "InputList": [
+        100084,
+        100075
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Greetings, I am Kyryll Chudomirovich Flins. It is considered good etiquette to give my full name when greeting important guests, but this no doubt leaves you wondering what to call me on a day-to-day basis... Well, in the past, I was customarily addressed as \"Chudomirovich\" by most — but for simplicity's sake, you can just call me Flins. That's my surname."
+      },
+      {
+        "Title": "Chat: Patience",
+        "Context": "Let us have a modicum of patience for the richness and complexity of humanity. The wanton cruelty of the few is not worth our ire."
+      },
+      {
+        "Title": "Chat: The Wild Hunt",
+        "Context": "He who wishes to peer into the Abyss needs simply to wander through Nod-Krai on a misty night. The march of the Wild Hunt will be sure to drag him into the darkness."
+      },
+      {
+        "Title": "Chat: Ghosts",
+        "Context": "People ought not be so frightened of ghosts. They are merely talking shadows, chattering away endlessly about their past affairs."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "You look worried? Relax, it takes more than a little rainfall to extinguish my lamp."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Listen — that, my friend, is the world's original symphony. No instrument could ever replicate the sheer power and grandeur of thunder."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Each time the snow falls, that is the call of Snezhnaya — the land whence I hail."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "\"The winds awaken, the leaves whirl round\"..."
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "An orange snow dances in the air... Hah, so this is the fabled desert."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Ah, good morning. The sun illuminates the land as another day dawns in Nod-Krai... Many centuries have gone by, yet each day begins just like the last."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Afternoon. I'm not personally in the habit of taking an afternoon nap, but don't let that stop you, should you feel so inclined."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "I prefer to be active during the night. The purpose of a lamp is to shine light into the darkness, is it not?"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Midnight is when I come into my own. Since you aren't ready to retire, and the moon has not yet assumed its position in the sky, perhaps I could tell you some ancient stories to pass the time?"
+      },
+      {
+        "Title": "About Flins: Virtues",
+        "Context": "Prudence, modesty, and loyalty. These are the three cardinal virtues of the Lightkeepers, and I highly approve."
+      },
+      {
+        "Title": "About Flins: Ratnik",
+        "Context": "Every living being, human and fae alike, needs some sort of an identity. It is what helps us to find our place in the world. The Lightkeepers swear to keep the light of humanity burning in the cold, dark nights where monsters run amok. I happen to be nocturnally inclined myself, and I can certainly strike some measure of fear into other, less benign creatures of the night, so the role of Ratnik suits me perfectly."
+      },
+      {
+        "Title": "About Us: Company",
+        "Context": "It is an honor to have the company of your distinguished self for this part of my journey. Night is falling... Since I can't hold a candle to you, perhaps this lamp will do the trick?"
+      },
+      {
+        "Title": "About Us: Fae and Humans",
+        "Context": "We seem to have covered quite some distance together... I am reminded of an age when both the fae and humans roamed free in Snezhnaya. Our races share many things in common, and I once presumed that we must share a similar ancestry. Now, I believe that what truly unites us is a common spirit — the spirit that gives rise to all things good and kind."
+      },
+      {
+        "Title": "About the Moon Wheel",
+        "Context": "No, the fae don't need Moon Wheels. We have our own methods. But I quite like the design, which goes nicely with my black overcoat, plus, it gives a convenient cover story for the power I wield... I've never been one to refuse tools such as this that help me blend in more seamlessly to my homeland."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Have you ever asked people in Nod-Krai how they ended up here? I have. Most of them didn't choose it because it's a comfortable place to live, or because they dream of what their life here could be like. No, this is but a rest-stop where weary travelers can find some brief respite from the snowstorm. Hardly the kind of place that makes people feel as if they belong. And so, any traveler who stops in Nod-Krai is sure to leave once they are rested and recovered.\nThe next stop on your journey is Snezhnaya, no doubt. The snowy plains there are simply beautiful. I wish you a safe trip."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "...A lost civilization deep underground in Inazuma? And these \"Shades of Tokoyo,\" they are the last vestiges of its erstwhile inhabitants? How intriguing. If the chance ever arises, I would certainly like to see it."
+      },
+      {
+        "Title": "About Lauma",
+        "Context": "Hyperborea, the bygone golden elysium... That is what comes to mind whenever I see her. Her ancient and noble lineage are no doubt as heavy a burden to bear as the stunning antlers she wears on her head, and yet she takes it all in her stride. I commend her resilience and courage in doing so."
+      },
+      {
+        "Title": "About Illuga",
+        "Context": "Members of the Lightkeepers are under no obligation to stay — and many do, in fact, leave shortly after joining. Only the most determined persevere, and Illuga is one such example. It is common to admire those who display wit and cunning, but to me, determination is a far more valuable quality."
+      },
+      {
+        "Title": "About Aino",
+        "Context": "I must confess that I do not deal well with machines. This, and not the age difference, is the biggest point of disparity between myself and Aino."
+      },
+      {
+        "Title": "About Varka",
+        "Context": "You shan't catch me crossing blades with Varka, there's simply no contest. No sword in the world has a sharper bite than the North Wind. Now, you might think that the allusion to one of the fiercest forces in nature's arsenal is pure hyperbole, but I tell you — he is a true knight, the likes of which are rarely seen in this day and age. If I ever have the chance to spar with him, it will be a sure sign that I am going up in the world."
+      },
+      {
+        "Title": "About Nefer",
+        "Context": "Nefer's intuition is as sharp as a knife, and that is a knife that no one wishes to contend with. Fortunately, I don't make a habit of prying into other people's backgrounds. I can only hope she doesn't either."
+      },
+      {
+        "Title": "About Jahoda",
+        "Context": "Jahoda always seems to show up where you would least expect. One day, you'll find her by a scrap pile at the Krumkake Craftshop, another, you'll see her out on the balcony of some wealthy family's house in Nasha Town. She is rapidly learning the philosophy of survival... her teacher being the land of Nod-Krai itself."
+      },
+      {
+        "Title": "About the Tsaritsa",
+        "Context": "Although Nod-Krai is technically a part of Snezhnaya, you won't hear us habitually refer to \"Her Majesty, the Tsaritsa.\" ...Who's \"us\"? Hehe... The Lightkeepers, of course... Who else?"
+      },
+      {
+        "Title": "More About Flins: I",
+        "Context": "I am but a humble Ratnik. You already know my name, you've seen where I am stationed, what more is there to know? Were you hoping to hear some kind of sensational untold tale of my life? I'm afraid that no such tale exists. There is nothing noteworthy to report about my experience as a Ratnik: Simply put, I hold my lamp tight, day and night, ready to face the Wild Hunt whenever it should strike."
+      },
+      {
+        "Title": "More About Flins: II",
+        "Context": "As you have witnessed, no corner of Nod-Krai is safe from the Wild Hunt. Some may have the arms and skills with which to defend themselves, but even then, not all Wild Hunts are made equal. Sometimes, for reasons that defy comprehension, horde after horde of monsters will appear with no end in sight, and you simply cannot escape by fighting them off. I have found myself in this predicament a number of times.\nI am acutely aware that you are a more skilled fighter than most, but the Wild Hunt is a complex and formidable foe, and I urge you not to underestimate it. If you ever find yourself in its presence, you must immediately inform the nearest Lightkeeper — or, by all means, come to me."
+      },
+      {
+        "Title": "More About Flins: III",
+        "Context": "You surprise me. Here you are, a seasoned veteran who has weathered countless storms, and yet you still have the curious spirit of a budding young adventurer.\n*sigh* Alright, let me think — what other pages are there in the story of Flins that you might deem worthy of your perusal?\nHmm... Well, there is my lamp. It's not the standard-issue kind wielded by other Lightkeepers. This one has been with me for a very long time indeed. The weight of its past alone is often enough to scare even the darkest of shadows away. As a soul on the brink of death once said, the light of this lamp strikes more fear into the heart than his incompetent colleagues could ever hope to...\nWill that satisfy your curiosity for now?"
+      },
+      {
+        "Title": "More About Flins: IV",
+        "Context": "Almost every sojourner in Nod-Krai has a complicated past. Desire runs deep in human souls — it is always there, and always active. Each night, as they mumble in their sleep, the anxiety plagues their mind like a dark fog as the memories stir in the ley lines, flowing in various directions. The Nod-Krai of today is a chaotic place. It wasn't always this awful."
+      },
+      {
+        "Title": "More About Flins: V",
+        "Context": "Forgive me if I forgo my usual airs and graces from now on. The fact is, there are very few people left in this world with any knowledge of my past. And even though you are one of them, I hope you won't treat me differently than anyone else — after all this time pretending to be human, I've actually grown rather fond of seeing how long I can keep up the act.\nLet's leave the wind and frost, the piles of stone, the moss, and the stench of seawater behind. I have put a few coins together. The time has come to shop for supplies."
+      },
+      {
+        "Title": "Flins's Hobbies",
+        "Context": "Do you have any interest in old coins or ancient gemstones? Not only are they valuable items, but the marks and scratches they accumulate over the years add a certain character which I find makes them all the more charming... Much like a well-aged wine."
+      },
+      {
+        "Title": "Flins's Troubles",
+        "Context": "A colleague of mine in Piramida City often writes to me, expressing his concern for my wellbeing. He's a kind old man, and I know he means well. But it's perfectly cozy where I live already. And I am in no need of home improvement suggestions, and I certainly don't need him to get me a cat or a dog."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Have you ever seen water boiling under an open flame? No? Ah, what a pity.\nThere's a kind of liquor in Snezhnaya called Fire-Water, and when you light it, the flame burns on the surface of the liquid. Goes down quite smoothly, too. It'll warm you up from the very depths of your soul. Maybe I'll get to treat you to a Fire-Water one day."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Given that we are close acquaintances by this point, would you mind if I shared a minor grievance with you? The truth is that given my... unique situation, foods greatly relished by other people I personally find to be rather dull. ...Oh, but to be clear, I still immensely enjoy the time we spend together at the dinner table."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Mm... Unsurprisingly, that was exceptional."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Mm, yes, delightful."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Uh... In the interests of our continued friendship, I would prefer to keep my thoughts to myself."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Those who love you will celebrate your arrival in this world by preparing a feast, singing songs, and offering blessings. When you pass away, those who miss you will grieve by holding a funeral and lighting lanterns. In life and in death, there will always be those who are moved by your existence. So, take the chance, while your soul is full of life, to come together with your loved ones and be happy — you deserve it. ...Uh, excuse me? You want me to... be your birthday candle?"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "What's this... a gesture of encouragement? Huh, you have my sincerest gratitude. While we're on the topic — long may such gestures continue."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "You seem to have taken a great interest in my training lately. I only hope my rate of development is to your satisfaction."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Every soldier who seeks to improve must not only hone their skills, but carefully consider their tactics. Based on my prior experience in battle, weaponry and strategies that can dispose of enemies en masse are highly preferred. That is why the polearm is my weapon of choice."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "Though we have never discussed this topic in great depth before, I trust you share the same opinion as I on this. The true art of war lies in deterrence, and not in fighting... Otherwise, things would become far too simple."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Observe."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Close your eyes."
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Be silent."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Do you fear the dark?"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Night falls."
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "To dust!"
+      },
+      {
+        "Title": "Elemental Burst: IV",
+        "Context": "The night cometh."
+      },
+      {
+        "Title": "Elemental Burst: V",
+        "Context": "Beware the creatures of the night."
+      },
+      {
+        "Title": "Elemental Burst: VI",
+        "Context": "The long sleep beckons."
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Perhaps these treasures might be of utility to you on your journey. Please, I insist."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Goodness, how the world has changed... Might I ask — when did the custom of placing treasure chests in every nook and cranny come into fashion?"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Hmm. Not to be sniffed at."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "It's a grave situation."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "I'm rather out of sorts."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Hmph, you'll sorely regret that."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Do not fret."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Please, allow me."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "See you at the graveyard."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Burn no more..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "I will return as an avalanche."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Keep your distance."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Steady now."
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Are you quite finished?"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Happy to oblige."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "A pleasure to fight by your side."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Allow me to guide the way."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "There is a small isle in the central-southern region of Nod-Krai that has earned the name \"Final Night Cemetery\" on account of its lonesome, dismal air. Few visit, and merchant caravans only sometimes loop far around it. Jutting above its soil is a lighthouse languishing in disuse, where only the spirits of the dead consent to dwell, it is said.\nAmidst the deathly silence, only one living soul remains. This gentleman tends to introduce himself as such: Flins, a warrior of the Lightkeepers, the awardee of a civilian commendation medal in recognition of his squad's efforts in repelling Abyssal creatures.\nThe incident he mentions happened a long time ago. Though no one had stepped forward to organize it, the people had wordlessly agreed to express their gratitude this way, and so the heavy medal had been delivered to him, placed in a timeworn box.\nA solemn reward, one might think, but considering the casualties from that operation, Flins believed that not even ten medals could make the losses worthwhile. The squad once had seven or eight members, but now he was the only one left on the island.\nApart from occasional business and the odd monthly purchase, Flins rarely shows up in town. Fortunately, this has not stopped the townspeople from remembering him, for he was easier to communicate with than they had imagined. Even his dull, boring clothes are made memorable by his elegant, decorous speech. No wonder people are curious — unexpected people and matters are always more eye-catching, after all.\nMost talk to him out of curiosity, albeit restrained by politeness. Curious about his past, people of all sorts have invited him to join gatherings to share old Lightkeeper stories. These he tells splendidly, such that many gazes have drifted downward when he reaches the saddening segments of said tales. This has led to many audiences not being willing to touch on his old scars any further.\nThe residents revere Flins's occasional sorrow, unaware that this sorrow is another manifestation of distance — the audience's guilt becoming the teller's shield. Once someone feels this sympathy, the various narratives they have heard will take on meaning, convincing people that his melancholy deserves time and space. Whether out of courtesy or concern, no one should continue to pick at a good person's wounds, surely.\nNo one despises the good people around them. The residents feel this way, and so does Flins. He is fond of those who are both interested and sympathetic, just as people enjoy the heroic tales he repeatedly tells. From another perspective, viewing each other as good people is an exceptional social strategy — a well-told heroic narrative is always dazzling enough to conceal all the mysteries that lie behind it."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Flins tells many stories, despite not being much of a storyteller. This image is far from, even contradictory to, the social identity he strives to maintain, for stories spark curiosity, and he doesn't want to spend too much time on curious visitors. Fortunately, he's a flexible fellow and doesn't feel depressed about the discrepancies in his real life.\nThe old lighthouse's door would often be knocked upon in the misty mornings, to which Flins would feign having just woken up. Though there were many possibilities for who the visitor might be, he wasn't entirely without clues — the lonely island rarely saw visitors in general, so those willing to come by fell into a few categories: Those with unwavering determination, those seeking help, or those undaunted by trouble.\nNot many people fit these categories, so he could immediately think of the following individuals. First was Lauma, Maiden of the Frostmoon Scions, who had come bearing a Feast of the Moon a few weeks prior. Despite his repeated refusals, claiming a lack of preference for dining at home and no capacity for establishing faith, she had nonetheless spent twenty minutes speaking to him. Then there was Jahoda, an employee of the Curatorium of Secrets' lady boss. She affected the look of a capable sort while at the door, an image undercut by her having come because she had gotten lost upon arrival on the island — indeed, by Flins having already saved her from falling off a cliff, completely unbeknownst to her. Then there was Varka, who had never spoken of his profession but was widely recognized as a knight. That said, Flins's experience with him was most akin to that which he had with tourists, for Varka had once come to the lighthouse to borrow supplies after his luggage was knocked over in a battle with monsters near the island, and later came back by boat to return them. Finally, there was Illuga, a fellow Lightkeeper, a righteous young man who, worried that Flins might die alone on the island far from their headquarters and human knowledge, regularly brought various supplies and work documents to check on him...\nFlins opened the door to find an unfamiliar adventurer standing in front of the tower. Just the previous day, he had purchased a peculiar gemstone from this person at the general store. The seller had spent at least ten minutes spinning tales to drive up the price of the stone, but they had met their match — Flins was a dab hand at both gemstone acquisition and crafting stories himself. In the end, they settled on a price ten percent above market value, though the seller then hesitated, saying they needed some time to find a better box for the gemstone so it could be presented more elegantly to its new owner.\nThe visitor appeared nervous and took a while before speaking: \"The shopkeeper said you've been collecting gems and ancient coins, so I must be honest about something. As you can probably tell, someone of my experience couldn't possibly obtain a gem of this caliber alone... According to my family's inherited notes, it was a gift from a noble to my ancestor, and it's extremely precious. I wouldn't be selling it if I weren't in financial difficulties. So, I'm feeling somewhat reluctant to part with it for good...\"\nPerhaps in their imagination, Flins, as the buyer, should have been angry at this point. So when he praised them instead, they were extremely surprised. A few minutes later, they had fully accepted that praise and left to continue their adventures, carrying both money and the confidence that they would surely make a name for themselves somewhere in the future. As for the previously discussed topics like \"You seem to know about this gem, Mr. Flins, sir. Have you seen it before, then?\" and \"About that noble, sir, there isn't much written in my family's notes. Could you tell me more about it?\", the adventurer had already put them out of their mind.\nThe story of the jewel itself was long and plain — little was lost by not hearing it. Besides, Flins did not want to talk about anything else today. He simply wanted to take a good look at this long-lost gem."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Illuga was standing outside the door.\nFlins poured out two glasses of water and brought a pot over. Illuga watched him curiously.\n\"Two glasses. I'm guessing they're both for me?\"\n\"Dear Young Master Illuga, you have traveled a long way. Is it not only natural that you should have two cups of water? Indeed, you may have a third, or even a fourth. The pot is full.\"\n\"Not going to drink any?\" Illuga asked.\n\"I'm not thirsty.\"\nIlluga continued with this topic, as if there were nothing more normal in the world: \"You never get thirsty easily, and drinking alcohol seems more like a ritual than an interest to you. Could it be that you prefer drinking plain, tasteless water?\"\nOf course not, Flins thought. He detested tasteless water the most. However, he maintained his composure, brought over chairs, and they sat side by side in front of the lighthouse, basking in the sunlight.\n\"Last month, my colleagues asked me if you dislike sunlight, since you only seem to be active at night. They also asked when the last time you contacted the old man was. Also-also, why does everyone say they never see you come by, yet we hear that you not only visited but left without a trace?\"\n\"Well, now you can see me, just sitting here idly at the lighthouse entrance.\" Flins glanced inside the tower. \"My, you drink so quickly. My hospitality is lacking, it seems. Perhaps I should've brought you a whole bucket instead.\"\n\"It's been a long and tiring journey, as you said. Besides, if I didn't come running along every so often, this place of yours would wind up feeling too lifeless. And also, we need to sync up mission details with you.\"\n\"These words don't quite mean what they appear to, just like this 'they' you speak of may not even exist. All these questions are ones you wish to ask, in truth. Isn't that right, Young Master?\"\n\"Heh. Alright. Let's go with this one, then. Why do you call me 'Young Master'?\"\n\"You're clever and capable, and you know how to ask questions in a roundabout way, wrapping your curiosity in such politeness that no one feels offended. Your social graces would do nobility no shame, and so you've earned a suitable title.\"\n\"And if I'm a Young Master, what kind of person would be called a Lord? Please tell me more about that noble story you didn't finish last time, sir.\"\n\"Alright. Last time, we spoke of the era when the Belyi Tsar yet ruled, when the nobles were besotted with their balls and banquets. In those days, sociability was a currency most sought after. Such events not only exposed people to new knowledge, but also provided opportunities for, amongst other things, treasure and fine wine to be purchased. There were always some at the edges of this merrymaking who never danced, and they were more often not those here to find something special. Amongst such people were many whom one might call 'lords.'\"\n\"Why do those social occasions you mentioned sound like some resale market?\"\n\"And why would it not? The attendees are the same old faces. Friends might be second-hand, dance partners too, and antiques likewise. And grand gestures are not necessarily needed to acquire treasure. One could bet on how many rounds it might take for a person to get drunk, and win an item from some collection for betting well.\"\n\"And what would that reward be?\"\n\"Who knows? People tend to see only what they wish to, and everyone names different prizes. However, the day prior, someone claimed that his ancestor had once attended the Deepwinter Cocktail Ball — quite the distant event, that. He then made a bet with a noble lord of the fae who had little interest in the party, wagering that a dancer would get drunk before they had emptied their fifth cup. He won, and thus obtained a gem from said noble lord, who rather admired those of keen intellect.\"\nAs he spoke, Flins gestured for Illuga to look at his palm. A brilliant ice-blue gemstone lay there.\n\"...I'm guessing you just received this.\"\n\"What a fine piece of merchandise it is.\"\n\"Call me an overthinker, but I get the feeling that your pile of stories is being prepared for second-hand resale at some point.\"\n\"Dear me, no. I would not sell it for money, no matter how dire our organization's financial straits. In any case, I doubt it rates too high in your eyes, Young Master.\"\n\"If it were so valuable, would that noble truly have given it away? Or are you suggesting that the fae nobles of Snezhnaya were so high-minded that they would all accept defeat with grace?\"\n\"Hard to say, I fear. But a noble who valiantly honors their word could never have been too evil.\" Having said this much, Flins gestured toward the inside of the door. \"I really should bring that bucket over, Young Master. You look like the phantom of one who died of thirst.\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "If you were curious and observed all this, you would inevitably wonder... Was Flins telling the truth? The answer is no. But when asked if he was lying, the answer would, surprisingly, also be no. That which he spoke of, rather than a lie, should be considered a legend of which not all was told. For protagonists of legend, though marvelous in deed, did not always leave behind names.\nLet us return first to the time of the Belyi Tsar and that ball. The fae noble who showed little interest in the banquet and ultimately gave the jewel away on the pretext of losing a bet was named Kyryll Chudomirovich Flins. The recipient was Sokolov, a complete nobody from southern Snezhnaya, whose descendants would later become members of the Adventurers' Guild. The only connection between the two wholly unrelated parties was the \"Tear of the North,\" said to have been formed from the courage of Snezhnayan soldiers fighting in the northern territories, capable of protecting its bearer. Kyryll received it in the days when the Tsar bestowed many gifts upon the nobles, and after he gave it away, Kyryll himself vanished without a trace.\nLocal legends have it that the noble who vanished — Kyryll the Azure Flame — was originally a blue flame that guided fallen souls across the icy plains. A flame will eventually go out, and while Kyryll did not stay at court for long, he was present for the transition of power from the Belyi Tsar to the Tsaritsa. There are only so many reasons for his departure: Dissatisfaction with the Tsar, or with the Tsaritsa, or perhaps he said something he shouldn't have and was purged for it. Some even say that his disappearance has nothing to do with politics. That his fire simply went out, having reached the end of its natural lifespan, and thus was never seen again. Not everything has to do with politics, so such people say. Could anyone put a number on the happenings at court, in any case?\nKyryll Chudomirovich Flins's family crest and surname remain in the register of Snezhnayan nobility. He once was a member of the royal court, but never had any followers of his own. Gradually, the flames of Snezhnaya were completely replaced by red ones, and the regions that once enshrined blue flames also fell one by one. People eventually accepted the red flames burning across the icy plains, just as they accepted the new regime.\nFlins the Ratnik had once heard these tales of Kyryll. He clapped his hands, praising the mystifying atmosphere that had to be created to set the stage for a legendary tale, claiming that hearing interesting stories was one of his driving motivations for collecting ancient coins and gems. He has never been stingy with showcasing his collection, and indeed, Nikita, chief of the Lightkeepers, has had the fortune of viewing it before. But Flins often says that the collector's hobby is not expensive. People think so because they only see the shocking prices the most famous gems fetch, without realizing that those are the rarest of specimens — the vast majority command no such great sums.\nTake the \"Tear of the North\" from the story, for instance, which happened to be in Flins's possession — a happy coincidence, of course. It was beautifully transparent, yes, but it lost out to a still more storied gemstone due to its lack of added value. The recipient, Sokolov, had considered selling it, but couldn't get a good price. The gem had then passed through who knows how many generations before finally fetching a decent sum.\nAs for Kyryll, the noble repeatedly mentioned in the tale... Well, were there ever such a noble, he most likely departed due to displeasure with the regime change. Where he had gone was of little importance to the people of this world. Legend has it, after all, that Snezhnayans held no one to be indispensable save the Tsar and Tsaritsa in those days. So if Kyryll were at divergence with some policy or another, departure was perhaps his best option."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Time slows to a crawl during the night watch. With nothing else to do, the Ratniki guarding the camp gradually developed a habit of passing the time with cards and chess. When Flins came to submit a report to the sergeant major, he happened upon comrades of his gathered together, not yet asleep. He stood at the side and watched, a look of great interest on his face. After more than an hour, his colleagues finally noticed someone in the darkness besides them. After recovering from their shock, they decided that their lighthouse-keeper colleague must not be skilled at cards and enthusiastically offered to teach him over a few rounds. Flins played the part every well-mannered, reserved card game novice should — first declining, then taking a seat at the table, performing curiosity and restraint with utmost authenticity.\nAlthough the Ratniki invited him to play, they had no intention of going easy on him. As far as they were concerned, it was perfectly normal for a newcomer to lose a few rounds at the card table. However, what happened next was quite strange. Whether novice or veteran, everyone seemed to lose their sense of judgment that night. Their battle set the scoreboard ablaze, deadlock reigning over all as the game dragged on.\nThis Flins was a fine fellow Ratnik, certainly, but how could he hold out for so long without losing? The veterans frowned, quietly gathering behind him to peek at his hand. But at that moment, Flins, his mask of sincerity flawless, played two somewhat subpar cards even as he praised card games for \"testing one's tactical acumen.\"\nAt this point, his colleagues finally breathed a sigh of relief. He'd lost! Well, losing to Olav was no surprise. But he'd played decently earlier. Could it be that he wasn't a beginner after all? Who were his usual card game partners in that case? The frogs, stones, and spirits lingering by the lighthouse?\nFlins stood up to shake hands with his opponent, the apologetic look on his face seeming far from feigned: \"Mr. Olav, I accept my defeat wholeheartedly. Your card skills are truly remarkable, and although this was just one game, your spirit and demeanor speak for themselves. If you ask me, it's already a great honor that you were willing to play against a novice like me.\"\n\"Really?\" Olav happily stepped forward and firmly shook his hand. \"That wasn't an easy win, I must say. Your luck was truly formidable.\"\n\"How else could I have survived until now?\" Flins spoke subtly, with just a hint of sorrow in his words. Everyone then recalled that brutal battle, and they patted him on the shoulder, comforting this brother who must surely have once had to mourn his fallen comrades alone in the dead of night.\n\"Brother, take this deck of cards with you. We'll keep a seat for you, too — come back and play with us when you have time,\" his colleagues said.\n\"I'm afraid this pastime does not entirely agree with me.\" Flins smiled politely, but accepted the gift nonetheless.\nHe stayed quite late that night, and when he left the next day, a misty pink hue hovered on the horizon. Olav saw him off, and there they happened to run into Nikita and Illuga, who were returning to camp after completing their mission. Flins stopped beside them with his lantern, nodding respectfully.\nNikita glanced at Olav and understood at once: \"Played cards together, did you?\"\n\"Indeed. Just joining in the fun, you see. I was given a deck of cards, too — would you be up for a game, Illuga?\"\n\"Next time at the lighthouse, probably.\" Illuga smiled. \"You know, Dad was just saying he hasn't seen you in a while, by the by.\"\nNikita suddenly asked Flins, \"Did you learn anything?\" Standing off to the side, Illuga thought this question was abrupt, yet interesting. What could a card game reveal? Had Olav been slacking off? In his mind, Flins, who had never been the sneaky sort, was suddenly more mysterious than any ghost. How could there be a Ratnik who had never played cards before?\nFlins lifted his lantern, the blue flame illuminating Olav's face. For the first time, Olav suddenly found something strange: The flame in Flins's lantern had always been cold blue, yet he had never seen anyone else purchase a similar one. What kind of fuel did Flins use?\n\"Mr. Olav, I believe, is a most patient and composed gentleman. He never once complained about my slow card play, and I suspect he's quite the skilled hand in the field. Using stillness to overcome movement, steadily achieving victory... Such traits surely manifest beyond the realm of card games.\"\nAh, Olav thought, deeply moved. Surely Flins meant what he said — a dab hand at identifying others' strengths, indeed.\nNikita looked at Olav earnestly, bringing to his mind the last time they had such a conversation. They had been discussing work assignments, and Nikita had suggested that he take up the challenge of becoming a squad leader.\n\"Even someone who's only played one game of cards with you says so, Olav. You should have more trust in my judgment, no?\" Nikita said.\nA comical situation often arises when many people discuss the same thing, where those who know each other too well are, in fact, less likely to adopt each other's suggestions wholesale. At such times, an unfamiliar voice's interjection can simplify matters. This was one such moment — for Olav now grew in confidence. Nikita was right, surely. Why wouldn't he be an excellent tactician? After all, even Flins, distant as he was at his lighthouse posting, could see that.\nNikita visited the lighthouse a few days later. He had come specifically to thank Flins. Olav had always lacked that last bit of courage needed to push forward, and Flins's loss at cards had proved most fortuitous.\n\"You did me a favor.\" Nikita brought him some supplies. \"Take these. Even if you don't need them, they can help you keep up the pretense.\"\n\"Pretending might just become my favorite thing to do.\" Flins took out the cards his colleagues had given him. \"Interested?\"\nThe card game proved a drawn-out affair. Nikita struggled mightily, while Flins was clearly enjoying himself.\n\"I hope my gratitude is evident. I mean, I'm even playing against a former noble in a card game his people excelled at.\" Nikita smiled wryly. \"Which is harder, then? Winning at cards or pretending you can't win?\"\n\"Both are easier than pretending to be an ordinary person.\" Flins played a card. \"Sorry, I win again.\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Kyryll Chudomirovich Flins is a fine name. \"Kyryll\" might be used to claim some noble standing worth noting, while \"Flins\" is not so ancient and not too special — all the better to claim mere coincidence should anyone notice some shared nomenclature. The person himself is most pleased with this name and has used it in various ways up till the present.\nThe noble Kyryll did indeed leave Snezhnaya. The wise believe that there is nothing new under the sun, and tales of nobles choosing self-imposed exile when powerless to change the political picture are old hat indeed. To say that Kyryll has lived twice is no boast either. If one views sleep as death, and awakening as new life gained... This, too, is nothing new.\nHis slumber began in a corner of a distant land. His self-imposed exile had set him free, and having lost his anchor, he traveled southward along the railway, through endless snowy plains, through prosperous towns, and across desolate frontier lands. He was without a care — he had no destination, nor anything he had to do.\nThe humans passing him by were quite the opposite. As latecomers to Snezhnaya, they had too many desires to fulfill in a few mere decades of life. They were always in a hurry, planning out better lives and hoping to achieve great things in this new era. But Kyryll had long felt that he might not belong to such a time.\nIt was under the lighthouse on a small isle that Kyryll the Azure Flame found his destined tomb, though one might also call it a bed to his liking, or a most lovable coffin. He had never intended to end his own life, merely to casually toast this monotonous world once, then go to sleep. He recalled the cocktail parties of yesteryear, of his noble colleagues gathering to discuss some passe questions. At the time, most fae lamented the transfer of imperial power, and wished for some river of youth springing eternal that might preserve the authority of Snezhnayan imperium forevermore.\nThey spoke of immortality and eternity with longing and envy in their voices, much like how humans would discuss their fae lives. Kyryll was unsure as to how he had responded then, but he might have said: \"To never again fear anything — how could such serenity possibly exist within the confines of a finite life?\"\nAtop a stone altar, Kyryll transformed into a ball of fire and sank beneath the earth, beginning a slumber that would last hundreds of years. As his eyes closed, a thought suddenly came to mind: If he never returned to the mortal realm, and instead stretched himself infinitely within his finite time through self-imposed exile, then this sleep would become eternity. Hah. Eternity, precious beyond price, found by one who had cast himself out. Imagine that.\nKyryll's slumber was no trivial matter. He made thorough preparations for it, selecting stone slates and laying down an altar, sealing himself in using the most ancient rituals. No mean price would it take to reawakening this flame, and its location, rarely visited by humans, made it less likely to be disturbed. However, this foolproof tranquility, this death-like slumber, ultimately vanished in the thunder of a rainy night.\nThe soft sound of blood splattering upon the paving, the dull noise of metal cutting through flesh, the din of sharpened claws piercing bodies and striking against stone slates... Kyryll could not help but be awakened. Though hundreds of years had passed, his hearing remained as sharp as ever.\nAbove his resting place, a unit of those named Lightkeepers battled the Abyssal Wild Hunt. Newly awakened from his deep slumber, Kyryll was indifferent to this. Not a single tongue of outer flame flickered. Had he been in human form, he would not have been seen to lift even an eyelid.\nThat was a moment the Snezhnayan rumors mocked. \"Souls wandering the ancient frozen earth shall ultimately be guided to the far shore by blue ghost-fires.\" Even with his eyes closed, Kyryll could witness that scene: Warm human blood seeping into the stone altar, like some grand and ancient ritual. A mortally wounded warrior, collapsing upon the sacrificial sanctum and tracing the symbols on the stone slate with fresh blood. The warrior understood nothing of the fae script written upon it, nor could a person at death's door confirm if the lifeline before them was timely come or not. So with his final breath, he prayed, beseeching any who could hear to descend upon this place and scatter the storm-cloud of death and despair rolling toward them.\nKyryll must have smiled at that moment. The fears the nobles harbored had, in the end, borne fruit. How could such a lasting dream exist in this world? Blood and souls had paid the price, and the azure flame was now reawakened. This should have been a grand, glorious moment, but the moribund supplicant knew it now, nor the distant monsters or the deceased. Indeed, most who would recognize that blazing fire had themselves passed on long ago. Such was the end of Kyryll's slumber, of which he had expected much, in this silent place of death.\nA colossal blaze scorched the skies as it erupted from the small island.\nHow could serenity possibly exist within the confines of a finite life? Only death, glimpsed through the blue flames, is real."
+      },
+      {
+        "Title": "\"Skeleton Jigsaw\"",
+        "Context": "One room inside the lighthouse at the Final Night Cemetery has been converted into a showroom. Most of this space is filled with Lightkeeper-related records, mainly consisting of hefty files and documents. However, on the shelves of one wall, those ordinary-looking document boxes contain something entirely different from the usual records.\nIf you are fortunate enough to receive the owner's permission and open these boxes, you will discover his rather peculiar private collection — the \"Skeleton Jigsaws.\"\nEach puzzle set consists of miniature skeletons Flins has meticulously carved by hand. The materials are quite diverse: Fangs from beasts, fossilized bones of ancient creatures collected from ruins, and, of course, thoroughly sterilized monster carapaces from the occasional capture.\nAs for the final, reassembled products, they are based on the various monsters he has encountered in Nod-Krai.\nFor him, this is not just a game, but also a way to organize and review his post-battle experiences.\nPicking up an almost completed model, he will slowly rotate it under the light, as if appreciating a work of art. Each component is an \"answer\" to a moment in combat. Thus, piecing them together is like transforming a bloody encounter in his mind into an orderly, interpretable, and elegant simulation.\nOnce the model is perfectly assembled, Flins will contentedly place it in its box, affixing a label bearing the date and opponent. Another \"question\" has been thoroughly understood and solved, putting him in a good mood.\nThese are his \"Skeleton Jigsaws\" — both a pastime and blades he wields to dissect the Wild Hunt."
+      },
+      {
+        "Title": "Moon Wheel",
+        "Context": "The young Ratnik Illuga encountered the mysterious Mr. Flins while following orders from Starshyna Nikita to conduct business in Nasha Town. Flins had a brilliant gemstone pinned to his solemn, dark outer clothing, an all too eye-catching accessory in that tiny shop. Illuga's first glance thus fell not on the man himself, but on the gem.\n\"Mr. Flins, you must have quite a sum in savings. Otherwise, such a gem must've been hard come by indeed.\"\n\"Oh, this? I got it at an auction. It just looks pretty. Remember the story I told you? Some gems are all show and no substance — they can't fetch a high price at all.\"\n\"Did no one bid against you?\"\n\"Well, most people don't know a good thing when they see it, for which I am grateful. There'd be no need for me to attend auctions otherwise, I suspect.\"\n\"Well, all the less reason to believe you don't have savings. Might you have had a distant relative who left you a large sum of money?\"\nFlins's face grew grave. \"I hope you can keep this a secret, good sir. This must not be revealed to anyone, especially to our colleagues.\"\nBeing kind-hearted by nature, especially in front of others, Illuga felt proud to keep his colleague's secret and readily agreed. However, months later, Illuga found himself quite troubled by the sense that he had been completely taken for a ride. The city auction house claimed that they had never seen a gem of that description before, and that Flins had not attended one of their events in quite some time.\n\"You spun me a yarn, didn't you, Mr. Flins? The auction house says that they haven't had any fine gems come in recently.\"\nFlins raised his pot of water. \"First, have a little water to cool your temper. I never expected you to go ask around.\"\n\"Should I say that you consider me a friend, or that you don't... Either way, not every secret shared is the truth.\"\n\"Is it gemstones you'd like, then? Perhaps my distant relatives still have some in stock.\"\n\"I'd like to give my old pops Nikita a valuable gift. He's taken good care of me since I was little, you see,\" Illuga confessed.\n\"Now, that might take some time, but I suspect you will obtain something similarly good sooner or later. Having distant relatives come forth with gifts... That sort of thing will likely happen to you, too.\"\nThus it was that Flins shared the true origin of the Moon Wheel with a cup of water and moonlight at night, a thing he rarely did. It had come to him on a night like any other, appearing suddenly in his showroom. At first, he, like Illuga that day, believed that this might be some gemstone he had forgotten about. In truth, it was the best gift the world had ever given him.\n\"An unexpected gift,\" indeed. Its style perfectly matched his coat, provided the perfect cover for his power and flames, and served as a conversation piece to share with colleagues as the sun set.\nAs to whether Illuga believed his words, or when he might gain a \"gemstone\" of his own... Well, that was up to this up-and-coming young fellow to figure out — slowly does it, and all that."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 212000,
+      "Name": "Nocturne",
+      "Description": "Flins's outfit. A black uniform paired with a silver chain at his waist lends this gentleman an air of composed dignity. Night after night, he raises his azure lantern and stands vigil over the frigid seas and islands of Nod-Krai.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104144,
+    113077,
+    101261,
+    112124,
+    104364,
+    113075
+  ],
+  "NameCard": {
+    "Name": "Flins: Oathkeeper's Lantern",
+    "Description": "Namecard style.\nAs the saying goes, \"Will-o'-the-wisps are like love — most visible in the barren swamp, and just as likely to lead you into danger.\" Of course, the saying only relates to the natural phenomenon.",
+    "Icon": "UI_NameCardIcon_Flins",
+    "PicturePrefix": "UI_NameCardPic_Flins"
+  }
+}

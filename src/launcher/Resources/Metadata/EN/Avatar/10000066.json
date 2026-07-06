@@ -1,0 +1,1194 @@
+{
+  "Id": 10000066,
+  "PromoteId": 66,
+  "Sort": 47,
+  "Body": 4,
+  "Icon": "UI_AvatarIcon_Ayato",
+  "SideIcon": "UI_AvatarIcon_Side_Ayato",
+  "Name": "Kamisato Ayato",
+  "Description": "The young but highly accomplished head of the Yashiro Commission's Kamisato Clan. Cultured and polite, he is a man of many ways and means.",
+  "BeginTime": "2022-03-30T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 1,
+  "BaseValue": {
+    "HpBase": 1067.7184,
+    "AttackBase": 23.275,
+    "DefenseBase": 59.83
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 6631,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "4-Hit DMG|{param4:F1P}×2",
+            "5-Hit DMG|{param5:F1P}",
+            "Charged Attack DMG|{param6:F1P}",
+            "Charged Attack Stamina Cost|{param7:F1}",
+            "Plunge DMG|{param8:F1P}",
+            "Low/High Plunge DMG|{param9:P}/{param10:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 663101,
+              "Level": 1,
+              "Parameters": [
+                0.449617,
+                0.471572,
+                0.586124,
+                0.294485,
+                0.756043,
+                1.295297,
+                20,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 663102,
+              "Level": 2,
+              "Parameters": [
+                0.486213,
+                0.509956,
+                0.633832,
+                0.318455,
+                0.817582,
+                1.400728,
+                20,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 663103,
+              "Level": 3,
+              "Parameters": [
+                0.52281,
+                0.54834,
+                0.68154,
+                0.342425,
+                0.87912,
+                1.506159,
+                20,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 663104,
+              "Level": 4,
+              "Parameters": [
+                0.575091,
+                0.603174,
+                0.749694,
+                0.376667,
+                0.967032,
+                1.656775,
+                20,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 663105,
+              "Level": 5,
+              "Parameters": [
+                0.611688,
+                0.641558,
+                0.797402,
+                0.400637,
+                1.02857,
+                1.762206,
+                20,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 663106,
+              "Level": 6,
+              "Parameters": [
+                0.653512,
+                0.685425,
+                0.851925,
+                0.428031,
+                1.0989,
+                1.882699,
+                20,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 663107,
+              "Level": 7,
+              "Parameters": [
+                0.711022,
+                0.745742,
+                0.926894,
+                0.465698,
+                1.195603,
+                2.048376,
+                20,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 663108,
+              "Level": 8,
+              "Parameters": [
+                0.768531,
+                0.80606,
+                1.001864,
+                0.503365,
+                1.292306,
+                2.214054,
+                20,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 663109,
+              "Level": 9,
+              "Parameters": [
+                0.82604,
+                0.866377,
+                1.076833,
+                0.541031,
+                1.38901,
+                2.379731,
+                20,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 663110,
+              "Level": 10,
+              "Parameters": [
+                0.888777,
+                0.932178,
+                1.158618,
+                0.582122,
+                1.494504,
+                2.56047,
+                20,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 663111,
+              "Level": 11,
+              "Parameters": [
+                0.951514,
+                0.997979,
+                1.240403,
+                0.623213,
+                1.599998,
+                2.741209,
+                20,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 663112,
+              "Level": 12,
+              "Parameters": [
+                1.014251,
+                1.06378,
+                1.322188,
+                0.664304,
+                1.705493,
+                2.921948,
+                20,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 663113,
+              "Level": 13,
+              "Parameters": [
+                1.076989,
+                1.12958,
+                1.403972,
+                0.705395,
+                1.810987,
+                3.102688,
+                20,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 663114,
+              "Level": 14,
+              "Parameters": [
+                1.139726,
+                1.195381,
+                1.485757,
+                0.746487,
+                1.916482,
+                3.283427,
+                20,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 663115,
+              "Level": 15,
+              "Parameters": [
+                1.202463,
+                1.261182,
+                1.567542,
+                0.787577,
+                2.021976,
+                3.464166,
+                20,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10661,
+        "Name": "Kamisato Art: Marobashi",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to dash forward and performs an iai.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_01"
+      },
+      {
+        "GroupId": 6632,
+        "Proud": {
+          "Descriptions": [
+            "Shunsuiken 1-Hit DMG|{param1:F1P}",
+            "Shunsuiken 2-Hit DMG|{param2:F1P}",
+            "Shunsuiken 3-Hit DMG|{param3:F1P}",
+            "Takimeguri Kanka Duration|{param4:F1}s",
+            "Namisen DMG Bonus|{param5:F2P}Max HP/Stack",
+            "Water Illusion DMG|{param6:F1P}",
+            "Water Illusion Duration|{param7:I}s",
+            "CD|{param8:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 663201,
+              "Level": 1,
+              "Parameters": [
+                0.5289,
+                0.5891,
+                0.6493,
+                6,
+                0.005611,
+                1.0148,
+                6,
+                12
+              ]
+            },
+            {
+              "Id": 663202,
+              "Level": 2,
+              "Parameters": [
+                0.57195,
+                0.63705,
+                0.70215,
+                6,
+                0.006067,
+                1.0974,
+                6,
+                12
+              ]
+            },
+            {
+              "Id": 663203,
+              "Level": 3,
+              "Parameters": [
+                0.615,
+                0.685,
+                0.755,
+                6,
+                0.006524,
+                1.18,
+                6,
+                12
+              ]
+            },
+            {
+              "Id": 663204,
+              "Level": 4,
+              "Parameters": [
+                0.6765,
+                0.7535,
+                0.8305,
+                6,
+                0.007176,
+                1.298,
+                6,
+                12
+              ]
+            },
+            {
+              "Id": 663205,
+              "Level": 5,
+              "Parameters": [
+                0.71955,
+                0.80145,
+                0.88335,
+                6,
+                0.007633,
+                1.3806,
+                6,
+                12
+              ]
+            },
+            {
+              "Id": 663206,
+              "Level": 6,
+              "Parameters": [
+                0.76875,
+                0.85625,
+                0.94375,
+                6,
+                0.008155,
+                1.475,
+                6,
+                12
+              ]
+            },
+            {
+              "Id": 663207,
+              "Level": 7,
+              "Parameters": [
+                0.8364,
+                0.9316,
+                1.0268,
+                6,
+                0.008873,
+                1.6048,
+                6,
+                12
+              ]
+            },
+            {
+              "Id": 663208,
+              "Level": 8,
+              "Parameters": [
+                0.90405,
+                1.00695,
+                1.10985,
+                6,
+                0.00959,
+                1.7346,
+                6,
+                12
+              ]
+            },
+            {
+              "Id": 663209,
+              "Level": 9,
+              "Parameters": [
+                0.9717,
+                1.0823,
+                1.1929,
+                6,
+                0.010308,
+                1.8644,
+                6,
+                12
+              ]
+            },
+            {
+              "Id": 663210,
+              "Level": 10,
+              "Parameters": [
+                1.0455,
+                1.1645,
+                1.2835,
+                6,
+                0.011091,
+                2.006,
+                6,
+                12
+              ]
+            },
+            {
+              "Id": 663211,
+              "Level": 11,
+              "Parameters": [
+                1.1193,
+                1.2467,
+                1.3741,
+                6,
+                0.011874,
+                2.1476,
+                6,
+                12
+              ]
+            },
+            {
+              "Id": 663212,
+              "Level": 12,
+              "Parameters": [
+                1.1931,
+                1.3289,
+                1.4647,
+                6,
+                0.012657,
+                2.2892,
+                6,
+                12
+              ]
+            },
+            {
+              "Id": 663213,
+              "Level": 13,
+              "Parameters": [
+                1.2669,
+                1.4111,
+                1.5553,
+                6,
+                0.013439,
+                2.4308,
+                6,
+                12
+              ]
+            },
+            {
+              "Id": 663214,
+              "Level": 14,
+              "Parameters": [
+                1.3407,
+                1.4933,
+                1.6459,
+                6,
+                0.014222,
+                2.5724,
+                6,
+                12
+              ]
+            },
+            {
+              "Id": 663215,
+              "Level": 15,
+              "Parameters": [
+                1.4145,
+                1.5755,
+                1.7365,
+                6,
+                0.015005,
+                2.714,
+                6,
+                12
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10662,
+        "Name": "Kamisato Art: Kyouka",
+        "Description": "Kamisato Ayato shifts positions and enters the Takimeguri Kanka state.\nAfter this shift, he will leave a watery illusion at his original location. After it is formed, the watery illusion will explode if opponents are nearby or after its duration ends, dealing <color=#80C0FFFF>AoE Hydro DMG</color>.\n\n<color=#FFD780FF>Takimeguri Kanka</color>\nIn this state, Kamisato Ayato uses his Shunsuiken to engage in blindingly fast attacks, causing DMG from his Normal Attacks to be converted into <color=#80C0FFFF>AoE Hydro DMG</color>. This cannot be overridden.\nIt also has the following properties:\n·After a Shunsuiken attack hits an opponent, it will grant Ayato the Namisen effect, increasing the DMG dealt by Shunsuiken based on Ayato's current Max HP. The initial maximum number of Namisen stacks is 4, and 1 stack can be gained through Shunsuiken every 0.1s. This effect will be dispelled when Takimeguri Kanka ends.\n·Kamisato Ayato's resistance to interruption is increased.\n·Unable to use Charged or Plunging Attacks.\n\nTakimeguri Kanka will be cleared when Ayato leaves the field. Using Kamisato Art: Kyouka again while in the Takimeguri Kanka state will reset and replace the pre-existing state.\n\n<i>\"When, I wonder, did you come under the illusion that you were winning?\"</i>\n<i>— Ayato is like this in both matter of martial prowess and political intrigue, but to preserve the dignity of his fellow Commissioners, he does not say such things to them. As such, only Thoma, Itto, and Ayaka have ever heard this line.</i>",
+        "Icon": "Skill_S_Ayato_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 6639,
+      "Proud": {
+        "Descriptions": [
+          "Bloomwater Blade DMG|{param1:F1P}",
+          "Normal Attack DMG Bonus|{param2:F1P}",
+          "Duration|{param3:F1}s",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 663901,
+            "Level": 1,
+            "Parameters": [
+              0.66456,
+              0.11,
+              18,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 663902,
+            "Level": 2,
+            "Parameters": [
+              0.714402,
+              0.12,
+              18,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 663903,
+            "Level": 3,
+            "Parameters": [
+              0.764244,
+              0.13,
+              18,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 663904,
+            "Level": 4,
+            "Parameters": [
+              0.8307,
+              0.14,
+              18,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 663905,
+            "Level": 5,
+            "Parameters": [
+              0.880542,
+              0.15,
+              18,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 663906,
+            "Level": 6,
+            "Parameters": [
+              0.930384,
+              0.16,
+              18,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 663907,
+            "Level": 7,
+            "Parameters": [
+              0.99684,
+              0.17,
+              18,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 663908,
+            "Level": 8,
+            "Parameters": [
+              1.063296,
+              0.18,
+              18,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 663909,
+            "Level": 9,
+            "Parameters": [
+              1.129752,
+              0.19,
+              18,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 663910,
+            "Level": 10,
+            "Parameters": [
+              1.196208,
+              0.2,
+              18,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 663911,
+            "Level": 11,
+            "Parameters": [
+              1.262664,
+              0.2,
+              18,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 663912,
+            "Level": 12,
+            "Parameters": [
+              1.32912,
+              0.2,
+              18,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 663913,
+            "Level": 13,
+            "Parameters": [
+              1.41219,
+              0.2,
+              18,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 663914,
+            "Level": 14,
+            "Parameters": [
+              1.49526,
+              0.2,
+              18,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 663915,
+            "Level": 15,
+            "Parameters": [
+              1.57833,
+              0.2,
+              18,
+              20,
+              80
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10665,
+      "Name": "Kamisato Art: Suiyuu",
+      "Description": "Unveils a garden of purity that silences the cacophony within.\nWhile this space exists, Bloomwater Blades will constantly rain down and attack opponents within its AoE, dealing <color=#80C0FFFF>Hydro DMG</color> and increasing the Normal Attack DMG of characters within.\n\n<i>\"I can see them, you know. The ripples of your beating heart within this realm of still waters.\"</i>",
+      "Icon": "Skill_E_Ayato_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 6621,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 662101,
+              "Level": 1,
+              "Parameters": [
+                2,
+                5
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 662101,
+        "Name": "Kamisato Art: Mine Wo Matoishi Kiyotaki",
+        "Description": "<color=#FFD780FF>Kamisato Art: Kyouka</color> has the following properties:\n·After it is used, Kamisato Ayato will gain 2 Namisen stacks.\n·When the water illusion explodes, Ayato will gain a Namisen effect equal to the maximum number of stacks possible.",
+        "Icon": "UI_Talent_S_Ayato_05"
+      },
+      {
+        "GroupId": 6622,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 662201,
+              "Level": 1,
+              "Parameters": [
+                0.5,
+                1,
+                2
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 662201,
+        "Name": "Kamisato Art: Michiyuku Hagetsu",
+        "Description": "If Kamisato Ayato is not on the field and his Energy is less than 40, he will regenerate 2 Energy for himself every second.",
+        "Icon": "UI_Talent_S_Ayato_06"
+      },
+      {
+        "GroupId": 6623,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 662301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 662301,
+        "Name": "Kamisato Art: Daily Cooking",
+        "Description": "When Ayato cooks a dish perfectly, he has an 18% chance to receive an additional \"Suspicious\" dish of the same type.",
+        "Icon": "UI_Talent_S_Ayato_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 661,
+        "Name": "Kyouka Fuushi",
+        "Description": "<color=#FFD780FF>Shunsuiken</color> DMG is increased by 40% against opponents with 50% HP or less.",
+        "Icon": "UI_Talent_S_Ayato_01"
+      },
+      {
+        "Id": 662,
+        "Name": "World Source",
+        "Description": "<color=#FFD780FF>Namisen</color>'s maximum stack count is increased to 5. When Kamisato Ayato has at least 3 Namisen stacks, his Max HP is increased by 50%.",
+        "Icon": "UI_Talent_S_Ayato_02"
+      },
+      {
+        "Id": 663,
+        "Name": "To Admire the Flowers",
+        "Description": "Increases the Level of <color=#FFD780FF>Kamisato Art: Kyouka</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Ayato_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 664,
+        "Name": "Endless Flow",
+        "Description": "After using <color=#FFD780FF>Kamisato Art: Suiyuu</color>, all nearby party members will have 15% increased Normal Attack SPD for 15s.",
+        "Icon": "UI_Talent_S_Ayato_03"
+      },
+      {
+        "Id": 665,
+        "Name": "Bansui Ichiro",
+        "Description": "Increases the Level of <color=#FFD780FF>Kamisato Art: Suiyuu</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Ayato_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 666,
+        "Name": "Boundless Origin",
+        "Description": "After using <color=#FFD780FF>Kamisato Art: Kyouka</color>, Ayato's next Shunsuiken attack will create 2 extra Shunsuiken strikes when they hit opponents, each one dealing 450% of Ayato's ATK as DMG.\nBoth these Shunsuiken attacks will not be affected by Namisen.",
+        "Icon": "UI_Talent_S_Ayato_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Pillar of Fortitude",
+    "Detail": "The young but highly accomplished head of the Yashiro Commission's Kamisato Clan. Cultured and polite, he is a man of many ways and means.",
+    "Association": 5,
+    "Native": "Yashiro Commission",
+    "BirthMonth": 3,
+    "BirthDay": 26,
+    "VisionBefore": "Hydro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Cypressus Custos",
+    "CvChinese": "赵路",
+    "CvJapanese": "石田彰",
+    "CvEnglish": "Chris Hackney",
+    "CvKorean": "Jang Min-hyeok",
+    "CookBonus": {
+      "OriginItemId": 108298,
+      "ItemId": 108387,
+      "InputList": [
+        100093,
+        101211,
+        101202,
+        110001
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Greetings. Ayaka has mentioned you on numerous occasions — alas, my schedule has been rather busier than anticipated recently, which belated our first meeting until today. Kamisato Ayato, head of the Kamisato Clan. Delighted to make your acquaintance."
+      },
+      {
+        "Title": "Chat: Spoiled",
+        "Context": "I'm sure I've forgotten something... Not to worry, I'll simply send someone to fetch it. As soon as I remember what it was."
+      },
+      {
+        "Title": "Chat: Reel Them In",
+        "Context": "Everything's in place, and they've taken the bait... Yes. Now to start reeling them in..."
+      },
+      {
+        "Title": "Chat: Perverse Pleasure",
+        "Context": "I have to stifle a smile every time I remember the look on my retainers' faces when I informed them of my plans today... Panic-stricken, but unable to muster the courage to say anything in opposition, hehe. Yes, this was a fine idea."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Let's take shelter for the time being. Don't worry, one of my people will be here with umbrellas momentarily."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Ayaka was always scared of thunder as a child — until one day, mother told her that the sound of thunder is the voice of the Almighty Shogun. After that, she would start focusing intensely every time she heard the sound of thunder, as if by concentrating hard enough, she'd be able to hear exactly what Her Excellency was saying."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "This view reminds me of another time it snowed... that was a long time ago."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "Opportunities to bask in the sunlight like this are few and far between."
+      },
+      {
+        "Title": "When It's Windy",
+        "Context": "Sometimes, what appears at first to be nothing but a passing breeze can ultimately be that which alters the course of events... Hehe."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "Most people hunker down against a strong headwind. Only a few people know how to utilize it to their advantage."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Good morning. A little sword practice while the day is young is good for the body and mind. I tend to avoid having anything scheduled during these hours... What do you say? Fancy crossing blades with me?"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "If there's anything in particular you'd like for lunch, just let one of my staff know in advance. As my honored guest, I'm sure they will do their utmost to accommodate you."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Given the hour of your call, perhaps you might stay for dinner?"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Ready to retire for the night, are we? Yes, go on then, you are excused. I'm not tired yet, so... Oh, it's you? Um, I have a few things to attend to. You should go and get some sleep."
+      },
+      {
+        "Title": "About Kamisato Ayato: Price to Pay",
+        "Context": "Everything comes at a cost. And if you aspire to things that most could never dream of, then naturally, there will be an unimaginable price to pay."
+      },
+      {
+        "Title": "About Kamisato Ayato: Methodology",
+        "Context": "I'm no stickler for doing things in a certain way. Whatever method you use, the important thing is that it delivers acceptable results."
+      },
+      {
+        "Title": "About Us: Most Entertaining",
+        "Context": "Hehe, I heard about the little job you pulled at the Tenryou Commission. Most entertaining... It takes a special kind of person to get old man Kujou riled up enough to start tearing his hair out. Ahh... Oh, to have been a fly on the wall."
+      },
+      {
+        "Title": "About Us: Trust",
+        "Context": "Trusting another person isn't easy, especially for someone of high status. Place your trust in the wrong person, and it can quite literally cost you your life. But you have placed your trust in me, and of course I will not let you down."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "A Vision is an eminently useful tool, so it only makes sense to put it to good use. Also, I like to think it's happiest in my possession because it has the chance to shine away in all its glory."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "If you throw fallen flowers onto the stove, the searing heat infuses them with one final spark of vitality, and for a brief moment, they radiate a more glorious glow than the flames themselves... it was a short life they lived, but it was by no means a wasted one."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "When it comes to pets... Mm, yes, I'm definitely more of a dog person myself. Cats are very independent, which has its merits, but you'll only find obedience in dogs. They'll do whatever you tell them to. Hehe, what can I say — I suppose I find loyalty to be quite an attractive quality."
+      },
+      {
+        "Title": "About Kamisato Ayaka",
+        "Context": "I am confident in Ayaka's abilities. But I want her to be able to hold on to her innocence. She shouldn't have to get personally involved in power struggles, or confront the darker side of life head-on. As her older brother, it's my job to shield her from all of that... Heh, just... between the two of us, of course. Sorry, that got a little more private a little more quickly than I'd intended."
+      },
+      {
+        "Title": "About Thoma",
+        "Context": "There is no doubt in my mind about Thoma's loyalty to the Kamisato Clan. A long time ago, partly to see where he stood, I advised him that he would be better off leaving if he didn't want to get drawn into the never-ending disputes that plague public life. Still, he chose to stay, and in all the time he's been with us, he's spared me much worry. There are very few people I trust completely these days, but Thoma is one of them."
+      },
+      {
+        "Title": "About Sayu",
+        "Context": "She looks awfully idle the majority of the time, and yet when it counts, she always rises to the occasion and provides indispensable assistance. Of course, you'd know far more about that than me, wouldn't you?"
+      },
+      {
+        "Title": "About Yoimiya",
+        "Context": "Ah, the fireworks store owner. Yes, a most... spirited young lady. The Kamisato Clan is on rather close terms with her. She is around the same age as Ayaka, and the two get along very well. I trust her direct and outspoken disposition won't lead Ayaka astray. Ayaka has always been staunchly true to herself, ever since she was a young child."
+      },
+      {
+        "Title": "About the Raiden Shogun",
+        "Context": "The cost of pursuing eternity has been great for the Almighty Shogun... and for all of Inazuma. These wounds will take time to heal, and as someone with a mediating role to play in the political process, I will be sure to fulfill that which is required of me."
+      },
+      {
+        "Title": "About Yae Miko",
+        "Context": "Lady Guuji has been kind to us in the Kamisato Clan, but she has never quite taken to me personally. I trust you'll have heard the way she refers to me... \"the Yashiro rascal\" and other such flattering monikers. We run into each other semi-regularly, given the overlap in our work, and despite whatever private thoughts we each may have, our working relationship is quite a harmonious one. I have no great objection to this state of affairs — working with intelligent people always makes things highly efficient. In any case... However objectionable she might find me, she would be forced to admit that without me, she would have no one to help execute her weird and wonderful ideas."
+      },
+      {
+        "Title": "About Kujou Sara",
+        "Context": "Old man Kujou capitalized on a golden opportunity to create a most formidable weapon indeed. The only flaw in his plan being, he is now no longer able to wield the weapon of his creation."
+      },
+      {
+        "Title": "About Kaedehara Kazuha",
+        "Context": "Once upon a time, the Kaedehara Clan was a subordinate branch of the Kamisato Clan. My forebears may have failed to save his family from decline, but even today I have a duty to support him. Now, naturally, there is nothing I can do to restore his clan's former fortunes. But as for helping him avoid arrest by the Tenryou Commission, that is well within my capabilities..."
+      },
+      {
+        "Title": "About Arataki Itto",
+        "Context": "Now he's an interesting case. Pitting docile Onikabuto against each other in battle... heh, that's a first... I was only speaking in polite platitudes when I gave him that little pep talk, but to my surprise he started calling me \"bro\"... To this day, he calls me \"my bro Ayato\" without the faintest idea of my true identity. It's quite alright by me, though, I have nothing against his... unique character."
+      },
+      {
+        "Title": "About Ningguang",
+        "Context": "I have heard a thing or two about how Her Eminence, the Tianquan operates. On the subject, I also happen to have a limited-edition copy of Liyue Millennial, if you're interested? What do you say, shall I have someone fetch it, so we can play a game?"
+      },
+      {
+        "Title": "More About Kamisato Ayato: I",
+        "Context": "You want to know about me? Hmm. Things aren't always a case of the more you know, the better. Plenty of proverbs to corroborate that, as I'm sure you're aware. Maybe we'll have the chance to talk more next time."
+      },
+      {
+        "Title": "More About Kamisato Ayato: II",
+        "Context": "Strange tastes, you say...? You seem to misunderstand me. Let me be quite clear: Most of the time, I simply enjoy watching people's facial contortions when they're put in an awkward position. Watching them squirm, you might say. Is that so strange? I would have thought you tease your little friend here on a regular basis for precisely that purpose, no?"
+      },
+      {
+        "Title": "More About Kamisato Ayato: III",
+        "Context": "The Tri-Commission may appear calm and well-run, but I can assure you it is quite tumultuous beneath the placid surface. There is no pleasure to be had in mixing with the powers that be. I shall spare you the details. Just know that... I have never done anything to dishonor the Kamisato Clan. Neither in the past, when I was working to bring stability to our clan, nor here in the present, where I am working for the sake of all of Inazuma."
+      },
+      {
+        "Title": "More About Kamisato Ayato: IV",
+        "Context": "You want to know about the Shuumatsuban? I suppose there's no harm in divulging a detail or two to you. It's a secret unit that reports directly to the head of the Kamisato Clan. Accordingly, after my father passed, it came to me. There are certain situations I cannot directly involve myself in, and in these cases, being able to rely on the Shuumatsuban is often instrumental in achieving a resolution. Most of its members are orphans whom we take in and raise from a young age. This way, loyalty is guaranteed to the greatest extent possible, and we are spared a great deal of worry."
+      },
+      {
+        "Title": "More About Kamisato Ayato: V",
+        "Context": "Do I have other tricks up my sleeve beyond the Shuumatsuban? Well, naturally. If even the cunning bunny burrows thrice, then what of the cunning human? But anyway, I've shared enough of my secrets. I think it's time I heard your story. Oh, and... you can spare the part about traveling in Teyvat. Tell me about before that."
+      },
+      {
+        "Title": "Kamisato Ayato's Hobbies",
+        "Context": "Hobbies... I had one or two as a child, but these days most of my time is taken up by my official duties, so they don't count... Hmm? Some people treat work as a hobby, you say? Goodness me. How very... exceptional."
+      },
+      {
+        "Title": "Kamisato Ayato's Troubles",
+        "Context": "Troubles? Whenever something's troubling me, it must be dealt with swiftly and comprehensively. And whenever someone is troubling me... Hehe..."
+      },
+      {
+        "Title": "Favorite Food: Personal Preference",
+        "Context": "Variety is the spice of life. In that sense, the Milk Tea Medley they started serving over in Hanamizaka recently isn't half bad. You should try it sometime. Other than that... I don't have any particular preferences when it comes to the food I eat on a daily basis. I have dedicated staff to arrange my daily meal plan, and whatever they serve, I eat."
+      },
+      {
+        "Title": "Favorite Food: Trying New Things",
+        "Context": "You couldn't perchance tell me your own tastes, could you? ...Ah, I see. Okay, I've made a note of that. Now I know what to say the next time I get asked about it."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Hmm... it looks like I mixed up my salt and my sugar. Savory Mizu Manjuu. Yes, this can work. I'll give them to Thoma."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Very novel indeed. Haha, it meets my requirements perfectly..."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "I see. So this is your take on this dish..."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Here's a suggestion: Try using this dish in the hot pot game next time you play."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Happy Birthday! Now, how would you like to be Yashiro Commissioner for a day, hmm? All the work has been handled already, so you can focus on simply enjoying the feeling of having an enormous amount of executive power at your fingertips. Don't worry, the retainers won't dare question it, I'll be with you the entire time, hehe."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Did I just grow more competent? Goodness, how marvelous..."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "At the end of the day, power is only a source of comfort when it is concentrated in one's own hands."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Hehe, I'm sure certain people are starting to grow rather nervous right about now..."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I've had very few chances to kick back and put my feet up since taking over leadership of the clan. But things have felt curiously different since having you around. Hmm... Yes, it feels rather like basking in the sun."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Be still."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Cascade."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Mind the deluge."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Hmph... The depths beckon."
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Kamisato Art: Suiyuu!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "All yours, should you have any use for them."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Oh... so you collect these?"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Mm, yes, very nice."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "This is getting interesting..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Alright. Time to get serious."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "One of us has to go."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Time to withdraw."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Pace yourself before you erase yourself."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "But the plan... was watertight..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "I'm feeling a little washed-out..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Such is life..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "That's far enough."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "I may have overestimated myself..."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "What's that? Join you for a walk? Why not."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Very well, I shall put my official duties to one side for the moment."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Hmm... Well, this ought to be entertaining."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "As clan head of the Kamisato Clan, one of the great clans of the Tri-Commission, Kamisato Ayato is a household name in Inazuma.\nHowever, people do not have quite the same clear impression of him as they do of the Shirasagi Himegimi, the elegant and kind Ayaka.\nMost only know that he is an important figure in the Shogunate and the head of a famed noble house. But as for the details, there's little that they can say for sure.\nSome people say that \"the Yashiro Commission's festivals and events are ever meticulous and have been full of consideration for the people. Surely the Commissioner's hand is in all such matters.\"\nBut others also say \"ah, but there is much to politics that should never see the light of day. And how could he have kept such a lofty position without a few tricks up his sleeve, hmm?\"\nAyato himself is unfazed by such comments.\n\"Well, I consider myself merely a serious, dutiful public servant who owes his allegiance to the Almighty Shogun.\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Kamisato Ayato, as the eldest son of Inazuman nobility, was greatly loved from the moment he was born.\nThough his parents were too busy to always spend time with him, they took good care of him, and in any case the \"young master\" never lacked for people around to look after his every need.\nWhen he was somewhat older, he would, at his father's request, begin a complex and strict training regimen as the family successor.\nBut not all went as well as they might have hoped, and the pressures in the court and at home would weigh heavily on his father's health, resulting in an early passing.\nThe young Ayato was thus thrust into a battle for the survival of the clan's position.\nIn those days, none were impressed by this inexperienced youngster. Ayato went from being an elegant and refined princeling to \"the poor young master of the Kamisato Clan\" amongst the people, and \"that greenhorn\" amongst his political opponents.\nTime, however, would prove these people wrong.\nWith extraordinary courage and some first-rate tactics, he did not leave the clan to languish. No, indeed, the Kamisato Clan's position would grow more stable than ever.\nThe heavy workload, malicious deceptions, and attempts to frame him at every turn he parried away, even turning them to his own advantage.\nThe passage of time has only increased the standing of the Yashiro Commission's Kamisato Clan in the Shogunate and with the people.\nToday, Ayato is a clan head that a great house like the Kamisato Clan would be proud of, and a Yashiro Commissioner acknowledged by all."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "The Yashiro Commission is in charge of ritual matters on Narukami Island, and must also attend to matters of cultural leisure in such a manner that deities and the people alike are pleased — and they do, honoring their commission.\nBut with greater responsibilities come greater amounts of work.\nFortunately, his sister Ayaka shares much of the clan's responsibilities, with most of the interactions between the Commission and the people falling to her, allowing Ayato to spend most of his time on matters of governance.\nDealing with Shogunate officials is no easy matter. People come from different Commissions and clans, and their perspectives are very different. Any single task grows harder as the number of people involved grows.\nAyato's great strength lies in his ability to handle such matters. The way he sees it, people are driven by interest. Find leverage, and the other side will cooperate.\nFind some goal that will bring the other party around to your logic, then pacify them with a few choice platitudes for the occasion, and most problems can be resolved.\nAnd when dealing with the stubborn, one merely needs to appeal to a higher power to bear — after all, what mortal could gainsay the light of heaven itself, no matter how high their status or arrogant their attitude?\nOver time, the knowledgeable and decorous Kamisato clan head gained quite the name for himself in the Shogunate.\n\"Hmm... this matter seems quite hard to handle. Should we ask the Yashiro Commissioner?\"\nSo people would often say.\nHowever, while Ayato is indeed full of ways and means, he will not simply help at any given moment.\nFirstly, not every task is related to the Yashiro Commission. Secondly, it is simply not worth it for the Kamisato Clan to get itself involved for the sake of others' petty profit.\nMostly, Ayato will simply tag along as a junior figure, teacup in hand, doing little more than smiling.\n\"Ah, come now, Sir Nagaoka. We are all loyal servants of the Almighty Shogun. Nothing more to it. We just need to be open with each other, and I'm sure we can resolve this issue together.\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Being limited by his station and work, Ayato does not often appear in public, nor does he have much time for any sort of leisurely walk. However, these obstacles cannot hinder him from learning of new and interesting things.\nPerhaps in the morning, he might spy one of the Yae Publishing House staff poking her head around the place, seemingly here to \"report for work.\" In which case, he may as well pretend not to notice, all the better to hear what new methods she has for skipping work... and then \"accidentally\" let slip his newfound knowledge to Guuji Yae.\nIn a meeting with those old fogeys at Tenshukaku, there is no need to speak too quickly. After all, watching grown people argue till they are red in the face over petty issues is quite amusing.\nWhile walking through the streets, he might suddenly consider a certain unique snack stand. Going up to the owner, he'd ask if they are selling anything new, how business is going, buy a drink or two to try... and if he finds it interesting, he'll buy a few back for the rest of the household.\nLately, he also lent some encouragement to the young oni who frequents Hanamizaka due to the latter's bug-fighting troubles — out of the goodness of his heart, of course. He also discovered that this crimson oni did not know what the name \"Ayato\" signified... which was fine, of course. No need to explain such things.\nOn the way home, he might pass Chinju Forest and see passers-by having tricks played on them by the bake-danuki, in which case he will point the illusion out. If the bake-danuki should hone their changeling skills further on his account, why, they should thank him for the inspiration.\nAnd of course, even one so talented as Thoma might sometimes struggle to think of what to make for dinner. Such occasions are perfect for a hot pot game! After all, Ayaka always puts the most unexpected things into the pot — and how proud he is of his sister for that!\nYes, these things are indeed the spice of the Yashiro Commissioner's life."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "#Between the butler and the housekeeper, the Kamisato estate is always spick and span, inside and out... except for one location.\nKamisato Ayato's table is always a terrible mess after he uses it.\nBooks are strewn about, open and even dumped face-down on the table, while documents of uneven size are stacked haphazardly. The ink on the inkstone is never really properly kept, and one might even sometimes find chess pieces or cards under the table.\nEach time the clan head gets off work, the servants always need some time to clean his study up.\nIn the process, they discovered that assorted notes are often clipped between these pages. Upon closer inspection, they are written in different hands, and their content also varies.\n\"Clan Head, the servants have sent a new batch of flowers. I have placed them in a flower vase in a corner of the table. Please take care not to knock it over again.\"\n\"Clan Head, a shrine maiden from the Grand Narukami Shrine came over today, saying that the Lady Guuji wishes to see you. It seems important, as it involves the requisitioning of land in Ritou. She invites you to the Shrine to discuss the details.\"\n\"Lord Commissioner, the Momoyo flowers have not withered. The branches grow yet. Do not worry.\"\n\"Dear Brother, I learned a new recipe while attending festivities with the Traveler. Considering that {M#he}{F#she} is from another land, do you think... that I might need to make some changes to said recipe?\"\n\"Clan Head, the servants have been reluctant to tell you this, so allow this old lady to say it. If you wish to eat something, please leave it to our housekeeper. Also, please refrain from using the ingredients in the kitchen... How could we make you cook for yourself, after all?\"\nAyato's work often sees him leaving home early and returning late. As such, the people of the Kamisato Estate will communicate with him through these means.\nThis was a method that Ayato came up with himself, and this is how the Kamisato household is run, via these small notes.\nUnfortunately, their use has seen the clan head's already messy table become messier still... Oh well, just a small sacrifice. Nothing worth writing home about."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "In Inazuma, people will sometimes pray to deities by offering certain kinds of cypress leaves.\nBut as such rituals lack scale, they are often forgotten amidst the many, both large and small, that are conducted throughout the land.\nThough some time has passed, Ayato still remembers his mother mentioning that though these cypresses are evergreen, their leaves are not needle-like.\nInstead, they have large, crisp leaves that will not wither and fall even when new ones grow.\nAs such, it is associated with the concept of \"prosperity,\" and was often used in ancient times as ritual plating for food offerings.\nToday, people no longer use leaves as mats upon which to spread food, but the habit of offering cypress leaves persists nonetheless.\nPerhaps it was just a hobby of hers, or perhaps she was just well-read in general, but whatever the case, his mother always had a great deal to say about festival affairs.\n\"Perhaps the Kamisato Clan of the Yashiro Commission were born to protect the deities.\"\nIn his younger years, Ayato had not fully agreed with this statement.\nHe believed that the Kamisato Clan was the Kamisato Clan, and that it belonged to the family's members. That was the reason for its existence, and any service to the gods was a job, a matter of circumstance.\nBut such presumptuous words could never be said out loud, and in any case, Ayato could not bear to interrupt his mother when she looked so excited.\nNo matter how long she would go on, Ayato would always sit in front of her and listen in silence, even if his legs might fall asleep in the process.\nWith the passing of years, Ayato's days would be taken up by swordsmanship and books. The one giving the \"lessons\" was now his father, and the lesson content would turn from ritual affairs to matters that the clan's successor should be concerned with.\nHis duty to the clan would be something that would occupy yet more space in Ayato's life. Nor was the Raiden Shogun just a mere symbol as she was in his childhood. Now, she was the Ogosho, the mighty defender of Inazuma's eternal peace.\n\"The Kamisato Clan stands today because of Narukami's mercy. As such, the Clan must defend the road to Eternity, and follow the Shogun eternally.\"\n\"This was our agreement, and it is the unchanging rule of our clan. Remember this well.\"\nAs for the specifics of what happened, Ayato had already gleaned some of them from reading their ancestral teachings. It was the Kamisato elders' failings that had resulted in the nationally-important Raiden Gokaden to suffer great loss. If not for Guuji Yae's intervention on their behalf, causing the Shogun to show them mercy, the Kamisato Clan may have joined others in falling from grace and ceasing to exist.\nThis was the grace of Her Excellency, and at the same time, it was a warning from Her servant.\nAs such, Ayato never snubbed his father's teachings. Though he still believed in protecting his clan above all else, he also understood that Inazuma was sustained by the Electro Archon's protection. Only peace in Inazuma could guarantee the longevity and prosperity of the clan.\nNo matter how things might change in Inazuma, the Kamisato Clan alone would never betray the Almighty Narukami.\nEven if his heart said differently, he could only bury it deep beneath well-maintained appearances.\nJust as his mother said back then—\n\"The divinely-protected cypress will sprout new leaves from ancient branches.\nSo, too, can the camellia in the courtyard remain fragrant even in the most bitter winter.\""
+      },
+      {
+        "Title": "Yumemiru Pen Case",
+        "Context": "Even Kamisato Ayato himself could not have expected that calligraphy practice, which he had found most boring in his youth, would eventually become a favored pastime of his.\nHe had slogged through much penmanship practice to better play the part of the Kamisato Clan's eldest son.\nBut nowadays, he transcribes a few poems from time to time to clear his mind and think in silence.\nOf course, this also lets him seem like he is busy with official business even while idle, all the better to avoid seeing some people and doing certain things.\nWith time's passing, it became agreed among the servants waiting on him that he not only liked to play chess but was also fond of calligraphy.\nSuch talk would spread widely via word of mouth. As such, Ayato often receives excellent brushes as gifts during festivals or birthdays.\nSome of the more speculative have even bought him exquisite and expensive quill pens from overseas.\nAyato has never attempted to clarify this matter, but instead had a lovely wooden case made in which he stores such stationery.\nHe has always been interested in all things new, and trying out these new pens is indeed fun.\nMoreover, these gifts often say much about the person who sent them. Such information thus becomes one of the means by which Ayato can get a handle on them.\nThat said, though he claims to have bought this case to store stationery, there are three pens that Ayato has never placed inside it.\nOne of them, slim and well-crafted, is placed on his desk. It shows signs of some wear and tear, but it writes well, and is used for writing petitions.\nThe second is stored in a drawer at the bottom, its fine tip having seen much loving use in the past when Ayato was practicing calligraphy. Its beginner-friendly nature also saw it borrowed quite often by Thoma and Ayaka back in the day.\nAs for the third, it is stored deep within a wooden cabinet used to store antiques, sealed within a silk bag. Excellent of make and design, it was presented to him by his mother during his adulthood ceremony."
+      },
+      {
+        "Title": "Vision",
+        "Context": "One night, many years ago, Ayato's gravely-ill father summoned him into his presence.\nThat night, his father seemed a little different from the illness-weathered figure he had become. His expression was solemn, and yet the concern in his eyes was all too clear.\nForcing himself to stay alert, he asked Ayato: was his training done? Had he eaten enough for dinner? How was his swordsmanship progressing?\nAs Ayato replied, his father nodded with a smile, seemingly satisfied. Yet, his expression would quickly darken, as if there was something he wanted to, but could not say.\nAfter much hesitation, and under his wife's melancholic gaze, his father would finally speak, his voice heavy:\n\"Ayato... Remember, no matter what happens to the Kamisato Clan in the future, you are our eldest son, Ayaka's elder brother... A successor the Kamisato Clan is proud to have.\"\nAfter reminding his father to rest well, Ayato would take leave of his parents and return to his bedroom.\nThe moment he opened the door, he saw the shining Vision lying on his desk.\nAyato had heard since he was young that Visions are signs of the gods' favor, born of human wishes.\nSince his youth, he had longed to become the family's pillar, not for any great work, but to ensure that the clan would prosper, and to protect them.\nThat this Vision should appear now... meant that, perhaps, the time had come for him to take up this burden.\nSo thinking, Ayato did not call for the servants to light the lamps. Instead, he merely sat down beside the table.\nMany things flowed through his mind then like a tide:\nHis father was gravely ill, and his mother was also unwell. The clan was leaderless, and its competitors eyed its position and power hungrily, as they had for some time now.\nHis sister was still young, and he had to ensure that she grew up safely. The Shogunate courts were like a sea full of hidden reefs. One had to tread most carefully there...\nThey could not let go of the Shuumatsuban, command over which had passed down through the family for generations. As for the servants, some few might still be trusted should the Kamisato Clan's strength wane...\nAnd as for Thoma, who had come from a different land, though he was a friend and useful ally both, would he consider other options should the Kamisato Clan truly fall?\nThese scattered thoughts would gradually straighten themselves out in Ayato's mind, and at their center was his still-unchanged conviction—\nHe would use any means at his disposal to secure the safety of his family and its future. Obstacles to that goal would be cleared away, no matter the cost.\nThat night, the Vision was the only light that accompanied him.\nAnd when the first light of the next dawn alighted upon the desk, the young heir was already prepared to face the world."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 206600,
+      "Name": "Silk Splendor",
+      "Description": "Kamisato Ayato's outfit. The kimono itself is made using uncommon fabrics, and its patterning recalls a mountain spring, giving off a feeling of calm and stability that matches its wearer.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104124,
+    113028,
+    101202,
+    112046,
+    104325,
+    113032
+  ],
+  "NameCard": {
+    "Name": "Kamisato Ayato: Ripple",
+    "Description": "Namecard style.\nThe camellia alights upon the mirrored pond, sending ripples throughout the water.",
+    "Icon": "UI_NameCardIcon_Ayato",
+    "PicturePrefix": "UI_NameCardPic_Ayato"
+  },
+  "TraceEffect": {
+    "Id": 215019,
+    "Name": "Echo: Pillar of Fortitude",
+    "Description": "Kamisato Ayato's Envisaged Echo. \"Who says the autumn streams run cold, fallen blooms still drift and fold.\"",
+    "Icon": "UI_TraceEffectIcon_Ayato"
+  }
+}

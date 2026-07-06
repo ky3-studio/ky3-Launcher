@@ -1,0 +1,1141 @@
+{
+  "Id": 10000059,
+  "PromoteId": 59,
+  "Sort": 50,
+  "Body": 1,
+  "Icon": "UI_AvatarIcon_Heizo",
+  "SideIcon": "UI_AvatarIcon_Side_Heizo",
+  "Name": "Shikanoin Heizou",
+  "Description": "A young prodigy detective from the Tenryou Commission. His senses are sharp and his thoughts are clear.",
+  "BeginTime": "2022-07-13T00:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 10,
+  "BaseValue": {
+    "HpBase": 893.5552,
+    "AttackBase": 18.87648,
+    "DefenseBase": 57.33945
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 5931,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "4-Hit DMG|{param4:F1P}+{param5:F1P}+{param6:F1P}",
+            "5-Hit DMG|{param7:F1P}",
+            "Charged Attack|{param8:F1P}",
+            "Charged Attack Stamina Cost|{param9:F1}",
+            "Plunge DMG|{param10:F1P}",
+            "Low/High Plunge DMG|{param11:P}/{param12:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 593101,
+              "Level": 1,
+              "Parameters": [
+                0.374736,
+                0.36852,
+                0.5106,
+                0.147824,
+                0.162608,
+                0.192176,
+                0.614496,
+                0.73,
+                25,
+                0.568288,
+                1.136335,
+                1.419344
+              ]
+            },
+            {
+              "Id": 593102,
+              "Level": 2,
+              "Parameters": [
+                0.402841,
+                0.396159,
+                0.548895,
+                0.158911,
+                0.174804,
+                0.206589,
+                0.660583,
+                0.78475,
+                25,
+                0.614544,
+                1.228828,
+                1.534872
+              ]
+            },
+            {
+              "Id": 593103,
+              "Level": 3,
+              "Parameters": [
+                0.430946,
+                0.423798,
+                0.58719,
+                0.169998,
+                0.186999,
+                0.221002,
+                0.70667,
+                0.8395,
+                25,
+                0.6608,
+                1.32132,
+                1.6504
+              ]
+            },
+            {
+              "Id": 593104,
+              "Level": 4,
+              "Parameters": [
+                0.46842,
+                0.46065,
+                0.63825,
+                0.18478,
+                0.20326,
+                0.24022,
+                0.76812,
+                0.9125,
+                25,
+                0.72688,
+                1.453452,
+                1.81544
+              ]
+            },
+            {
+              "Id": 593105,
+              "Level": 5,
+              "Parameters": [
+                0.496525,
+                0.488289,
+                0.676545,
+                0.195867,
+                0.215456,
+                0.254633,
+                0.814207,
+                0.96725,
+                25,
+                0.773136,
+                1.545944,
+                1.930968
+              ]
+            },
+            {
+              "Id": 593106,
+              "Level": 6,
+              "Parameters": [
+                0.52463,
+                0.515928,
+                0.71484,
+                0.206954,
+                0.227651,
+                0.269046,
+                0.860294,
+                1.022,
+                25,
+                0.826,
+                1.65165,
+                2.063
+              ]
+            },
+            {
+              "Id": 593107,
+              "Level": 7,
+              "Parameters": [
+                0.562104,
+                0.55278,
+                0.7659,
+                0.221736,
+                0.243912,
+                0.288264,
+                0.921744,
+                1.095,
+                25,
+                0.898688,
+                1.796995,
+                2.244544
+              ]
+            },
+            {
+              "Id": 593108,
+              "Level": 8,
+              "Parameters": [
+                0.599578,
+                0.589632,
+                0.81696,
+                0.236518,
+                0.260173,
+                0.307482,
+                0.983194,
+                1.168,
+                25,
+                0.971376,
+                1.94234,
+                2.426088
+              ]
+            },
+            {
+              "Id": 593109,
+              "Level": 9,
+              "Parameters": [
+                0.637051,
+                0.626484,
+                0.86802,
+                0.251301,
+                0.276434,
+                0.326699,
+                1.044643,
+                1.241,
+                25,
+                1.044064,
+                2.087686,
+                2.607632
+              ]
+            },
+            {
+              "Id": 593110,
+              "Level": 10,
+              "Parameters": [
+                0.674525,
+                0.663336,
+                0.91908,
+                0.266083,
+                0.292694,
+                0.345917,
+                1.106093,
+                1.314,
+                25,
+                1.12336,
+                2.246244,
+                2.80568
+              ]
+            },
+            {
+              "Id": 593111,
+              "Level": 11,
+              "Parameters": [
+                0.711998,
+                0.700188,
+                0.97014,
+                0.280866,
+                0.308955,
+                0.365134,
+                1.167542,
+                1.387,
+                25,
+                1.202656,
+                2.404802,
+                3.003728
+              ]
+            },
+            {
+              "Id": 593112,
+              "Level": 12,
+              "Parameters": [
+                0.749472,
+                0.73704,
+                1.0212,
+                0.295648,
+                0.325216,
+                0.384352,
+                1.228992,
+                1.46,
+                25,
+                1.281952,
+                2.563361,
+                3.201776
+              ]
+            },
+            {
+              "Id": 593113,
+              "Level": 13,
+              "Parameters": [
+                0.796314,
+                0.783105,
+                1.085025,
+                0.314126,
+                0.345542,
+                0.408374,
+                1.305804,
+                1.55125,
+                25,
+                1.361248,
+                2.721919,
+                3.399824
+              ]
+            },
+            {
+              "Id": 593114,
+              "Level": 14,
+              "Parameters": [
+                0.843156,
+                0.82917,
+                1.14885,
+                0.332604,
+                0.365868,
+                0.432396,
+                1.382616,
+                1.6425,
+                25,
+                1.440544,
+                2.880478,
+                3.597872
+              ]
+            },
+            {
+              "Id": 593115,
+              "Level": 15,
+              "Parameters": [
+                0.889998,
+                0.875235,
+                1.212675,
+                0.351082,
+                0.386194,
+                0.456418,
+                1.459428,
+                1.73375,
+                25,
+                1.51984,
+                3.039036,
+                3.79592
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10591,
+        "Name": "Fudou Style Martial Arts",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 fisticuffs empowered by a mighty wind, dealing <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina and performs a sweeping kick that deals <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nCalling upon the surging wind, Heizou plunges towards the ground from mid-air, damaging all opponents in his path. Deals <color=#80FFD7FF>AoE Anemo DMG</color> upon impact with the ground.",
+        "Icon": "Skill_A_Catalyst_MD"
+      },
+      {
+        "GroupId": 5932,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:F1P}",
+            "Declension DMG Bonus|{param2:F1P}/stack",
+            "Conviction DMG Bonus|{param3:F1P}",
+            "Declension Duration|{param5:F1}s",
+            "CD|{param4:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 593201,
+              "Level": 1,
+              "Parameters": [
+                2.2752,
+                0.5688,
+                1.1376,
+                10,
+                60
+              ]
+            },
+            {
+              "Id": 593202,
+              "Level": 2,
+              "Parameters": [
+                2.44584,
+                0.61146,
+                1.22292,
+                10,
+                60
+              ]
+            },
+            {
+              "Id": 593203,
+              "Level": 3,
+              "Parameters": [
+                2.61648,
+                0.65412,
+                1.30824,
+                10,
+                60
+              ]
+            },
+            {
+              "Id": 593204,
+              "Level": 4,
+              "Parameters": [
+                2.844,
+                0.711,
+                1.422,
+                10,
+                60
+              ]
+            },
+            {
+              "Id": 593205,
+              "Level": 5,
+              "Parameters": [
+                3.01464,
+                0.75366,
+                1.50732,
+                10,
+                60
+              ]
+            },
+            {
+              "Id": 593206,
+              "Level": 6,
+              "Parameters": [
+                3.18528,
+                0.79632,
+                1.59264,
+                10,
+                60
+              ]
+            },
+            {
+              "Id": 593207,
+              "Level": 7,
+              "Parameters": [
+                3.4128,
+                0.8532,
+                1.7064,
+                10,
+                60
+              ]
+            },
+            {
+              "Id": 593208,
+              "Level": 8,
+              "Parameters": [
+                3.64032,
+                0.91008,
+                1.82016,
+                10,
+                60
+              ]
+            },
+            {
+              "Id": 593209,
+              "Level": 9,
+              "Parameters": [
+                3.86784,
+                0.96696,
+                1.93392,
+                10,
+                60
+              ]
+            },
+            {
+              "Id": 593210,
+              "Level": 10,
+              "Parameters": [
+                4.09536,
+                1.02384,
+                2.04768,
+                10,
+                60
+              ]
+            },
+            {
+              "Id": 593211,
+              "Level": 11,
+              "Parameters": [
+                4.32288,
+                1.08072,
+                2.16144,
+                10,
+                60
+              ]
+            },
+            {
+              "Id": 593212,
+              "Level": 12,
+              "Parameters": [
+                4.5504,
+                1.1376,
+                2.2752,
+                10,
+                60
+              ]
+            },
+            {
+              "Id": 593213,
+              "Level": 13,
+              "Parameters": [
+                4.8348,
+                1.2087,
+                2.4174,
+                10,
+                60
+              ]
+            },
+            {
+              "Id": 593214,
+              "Level": 14,
+              "Parameters": [
+                5.1192,
+                1.2798,
+                2.5596,
+                10,
+                60
+              ]
+            },
+            {
+              "Id": 593215,
+              "Level": 15,
+              "Parameters": [
+                5.4036,
+                1.3509,
+                2.7018,
+                10,
+                60
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10592,
+        "Name": "Heartstopper Strike",
+        "Description": "<color=#FFD780FF>Tap</color>\nWields the swift winds to launch a Heartstopper Strike that deals <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Hold</color>\nCharges energy to unleash an even stronger blow. He will obtain the Declension effect while charging, which will increase the power of the Heartstopper Strike. When the skill button is released or the skill finishes charging, he will strike forward, dealing <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Declension</color>\nIncreases the power of the next Heartstopper Strike. Max 4 stacks.\nWhen you possess 4 Declension stacks, the Conviction effect will be produced, which will cause the next Heartstopper Strike to be even stronger and have a larger AoE.\n\n<i>This seemingly ordinary strike contains Heizou's desire for criminals to honestly confess and repent.</i>",
+        "Icon": "Skill_S_Heizo_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 5939,
+      "Proud": {
+        "Descriptions": [
+          "Fudou Style Vacuum Slugger DMG|{param1:F1P}",
+          "Windmuster Iris DMG|{param2:F1P}",
+          "CD|{param3:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 593901,
+            "Level": 1,
+            "Parameters": [
+              3.14688,
+              0.21456,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 593902,
+            "Level": 2,
+            "Parameters": [
+              3.382896,
+              0.230652,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 593903,
+            "Level": 3,
+            "Parameters": [
+              3.618912,
+              0.246744,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 593904,
+            "Level": 4,
+            "Parameters": [
+              3.9336,
+              0.2682,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 593905,
+            "Level": 5,
+            "Parameters": [
+              4.169616,
+              0.284292,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 593906,
+            "Level": 6,
+            "Parameters": [
+              4.405632,
+              0.300384,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 593907,
+            "Level": 7,
+            "Parameters": [
+              4.72032,
+              0.32184,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 593908,
+            "Level": 8,
+            "Parameters": [
+              5.035008,
+              0.343296,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 593909,
+            "Level": 9,
+            "Parameters": [
+              5.349696,
+              0.364752,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 593910,
+            "Level": 10,
+            "Parameters": [
+              5.664384,
+              0.386208,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 593911,
+            "Level": 11,
+            "Parameters": [
+              5.979072,
+              0.407664,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 593912,
+            "Level": 12,
+            "Parameters": [
+              6.29376,
+              0.42912,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 593913,
+            "Level": 13,
+            "Parameters": [
+              6.68712,
+              0.45594,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 593914,
+            "Level": 14,
+            "Parameters": [
+              7.08048,
+              0.48276,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 593915,
+            "Level": 15,
+            "Parameters": [
+              7.47384,
+              0.50958,
+              12,
+              40
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10595,
+      "Name": "Windmuster Kick",
+      "Description": "Leaps into the air and uses the Fudou Style Vacuum Slugger and kicks his opponent. The Vacuum Slugger will explode upon hit and create an Arresting Windtunnel that pulls in nearby objects and opponents, dealing <color=#80FFD7FF>AoE Anemo DMG</color>.\nWhen Vacuum Slugger hits opponents affected by <color=#80C0FFFF>Hydro</color>/<color=#FF9999FF>Pyro</color>/<color=#99FFFFFF>Cryo</color>/<color=#FFACFFFF>Electro</color>, these opponents will be afflicted with Windmuster Iris. This Windmuster Iris will explode after a moment and dissipate, dealing AoE DMG of the corresponding aforementioned elemental type.\nVacuum Slugger can afflict a maximum of 4 opponents with the Windmuster Iris. A single opponent cannot be under the effect of Windmuster Irises of different elements at the same time.\n\n<i>A unique technique that gathers Anemo in one place before unleashing it all in one kick. Is always there in a pinch to land on some criminal's fleeing back.</i>",
+      "Icon": "Skill_E_Heizo_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 5921,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 592101,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 592101,
+        "Name": "Paradoxical Practice",
+        "Description": "When Shikanoin Heizou activates a Swirl reaction while on the field, he will gain 1 Declension stack for <color=#FFD780FF>Heartstopper Strike</color>. This effect can be triggered once every 0.1s.",
+        "Icon": "UI_Talent_S_Heizo_05"
+      },
+      {
+        "GroupId": 5922,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 592201,
+              "Level": 1,
+              "Parameters": [
+                10,
+                80
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 592201,
+        "Name": "Penetrative Reasoning",
+        "Description": "After Shikanoin Heizou's <color=#FFD780FF>Heartstopper Strike</color> hits an opponent, increases all party members' (excluding Shikanoin Heizou) Elemental Mastery by 80 for 10s.",
+        "Icon": "UI_Talent_S_Heizo_06"
+      },
+      {
+        "GroupId": 5923,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 592301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 592301,
+        "Name": "Pre-Existing Guilt",
+        "Description": "Decreases sprinting Stamina consumption for your own party members by 20%.\nNot stackable with Passive Talents that provide the exact same effects.",
+        "Icon": "UI_Talent_Explosion_Sprint"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 591,
+        "Name": "Named Juvenile Casebook",
+        "Description": "For 5s after Shikanoin Heizou takes the field, his Normal Attack SPD is increased by 15%. He also gains 1 Declension stack for <color=#FFD780FF>Heartstopper Strike</color>. This effect can be triggered once every 10s.",
+        "Icon": "UI_Talent_S_Heizo_01"
+      },
+      {
+        "Id": 592,
+        "Name": "Investigative Collection",
+        "Description": "The pull effect of the Arresting Windtunnel created by <color=#FFD780FF>Windmuster Kick</color> is enhanced, and its duration is increased to 1s.",
+        "Icon": "UI_Talent_S_Heizo_02"
+      },
+      {
+        "Id": 593,
+        "Name": "Esoteric Puzzle Book",
+        "Description": "Increases the Level of <color=#FFD780FF>Heartstopper Strike</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Heizo_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 594,
+        "Name": "Tome of Lies",
+        "Description": "The first Windmuster Iris explosion in each <color=#FFD780FF>Windmuster Kick</color> will regenerate 9 Elemental Energy for Shikanoin Heizou. Every subsequent explosion in that Windmuster Kick will each regenerate an additional 1.5 Energy for Heizou.\nOne <color=#FFD780FF>Windmuster Kick</color> can regenerate a total of 13.5 Energy for Heizou in this manner.",
+        "Icon": "UI_Talent_S_Heizo_03"
+      },
+      {
+        "Id": 595,
+        "Name": "Secret Archive",
+        "Description": "Increases the Level of <color=#FFD780FF>Windmuster Kick</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Heizo_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 596,
+        "Name": "Curious Casefiles",
+        "Description": "Each Declension stack will increase the CRIT Rate of the <color=#FFD780FF>Heartstopper Strike</color> unleashed by 4%. When Heizou possesses Conviction, this Heartstopper Strike's CRIT DMG is increased by 32%.",
+        "Icon": "UI_Talent_S_Heizo_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Analytical Harmony",
+    "Detail": "A young prodigy detective from the Tenryou Commission. His senses are sharp and his thoughts are clear.",
+    "Association": 5,
+    "Native": "Tenryou Commission",
+    "BirthMonth": 7,
+    "BirthDay": 24,
+    "VisionBefore": "Anemo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Cervus Minor",
+    "CvChinese": "林景",
+    "CvJapanese": "井口祐一",
+    "CvEnglish": "Kieran Regan",
+    "CvKorean": "Jung Eui-jin",
+    "CookBonus": {
+      "OriginItemId": 108382,
+      "ItemId": 108390,
+      "InputList": [
+        110001,
+        100061,
+        100018
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello...",
+        "Context": "The name's Shikanoin Heizou, sharpest and most successful detective of the Tenryou Commission... Ooh, my goodness, life's really put you through the wringer recently, hasn't it? I can tell. Here, why don't you take a seat, tell me the whole story."
+      },
+      {
+        "Title": "Chat: Criminal Cases",
+        "Context": "There's something in the air... something that tells me a new case is brewing."
+      },
+      {
+        "Title": "Chat: Detective Work",
+        "Context": "Doing detective work means you gotta walk the walk. No... I mean literally — I need to search high and low for evidence."
+      },
+      {
+        "Title": "Chat: Intuition",
+        "Context": "Huh, my intuition tells me that something very interesting is about to happen..."
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "Let's just hope the rain hasn't washed all the clues away."
+      },
+      {
+        "Title": "When Thunder Strikes...",
+        "Context": "Hmm... I wonder which criminal mastermind just protested their innocence in court... A liar by the sounds of it. Hehe."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Have you ever heard of the case of the vengeful spirit of Dragonspine? It all happened on a dark, snowy night long ago..."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "Heh, it's gonna take a little more wind than that to form a cyclone!"
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Morning. Oh my, you don't look so good. You didn't have a nightmare, did you? *sigh* I should've known not to expose you to such a shocking case so soon."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Alright. Now that lunch is over, whaddya say we play a game to keep our minds sharp? Relay Stones? Hehe... okay, I guess we can warm up with that."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Once the sun has clocked out for the day, it's up to the stars to keep criminals under their watchful gaze."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Great, it's time to hit the hay! I wonder what dreams await me tonight?"
+      },
+      {
+        "Title": "About Shikanoin Heizou: Detective",
+        "Context": "A detective should be using their smarts to crush criminals' hopes of getting away with their crimes. So really, a true detective should never even have to touch their weapon."
+      },
+      {
+        "Title": "About Shikanoin Heizou: Keywords",
+        "Context": "I've made it a habit of mine to remember everything I observe in the form of keywords. They're a big help to me when I'm trying to make deductions. Take this person for example: we've got \"cat hair on clean trousers,\" and \"scratch on the wrist.\" Looks like they have a soft spot for animals, but they can't get cats to reciprocate... Meanwhile, that one seems very troubled about their \"injured hand,\" and they're wearing a pair of \"brand-new shoes that don't match their well-worn attire\"... Hold on, it looks like I might have a new case on my hands here!"
+      },
+      {
+        "Title": "About Us: Commissions",
+        "Context": "Seems to me like these commissions of yours are an endless gold mine of cases, and you'll never be able to finish them all. So maybe you could throw one my way every once in a while? Not the ones that involve fighting, running errands, or searching for lost items — as you know, not my style. I only take on big, important cases with lots of mysteries to solve... So, keep an eye out for me, yeah? Hehe."
+      },
+      {
+        "Title": "About Us: Destined Outcome",
+        "Context": "\"Coincidence\" is a nice word. It makes things sound like they were meant to be. Unfortunately, as a detective, I don't believe in coincidences. The two of us meeting each other is really the culmination of every choice and move we've made up to this point. So what I'm saying is... our destiny is something we choose."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "Oh? So there are rumors that I can overpower my Tenryou colleagues without even using my Vision? Hehe, well, let me set the record straight. One: Although I am technically a Doushin, I'm strictly a detective. My mind is my greatest tool, not my muscles. Two: It's not like my colleagues and I are getting into fights with each other all the time. And three... *sigh* Alright, seems like there's no fooling you. Just... never mind then, okay?"
+      },
+      {
+        "Title": "Something to Share: Sense of Achievement",
+        "Context": "As you piece together the trail of clues, it brings you closer and closer to the culprit... and then, that moment when you finally put the last piece of the puzzle into place... I always get such a sense of accomplishment. It's exhilarating!"
+      },
+      {
+        "Title": "Something to Share: Doushin",
+        "Context": "Not only does being a Doushin come with a certain amount of prestige, it also puts me closer to the action on some of the toughest cases, so the position has definitely broadened my horizons compared to when I was at the detective agency. As for the other duties — patrolling, apprehending criminals, and so on — obviously, I leave that to the more... qualified individuals. There's a limit to how much a single detective can do, you know."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Question, Traveler, how much do you know about timber? That's right, I'm talking about wood from any ordinary tree you might find along the roadside. Whether a criminal bumps into the bark, disturbs a pile of sawdust, or treads on some leaves, the chances are, they're always gonna leave a trace somehow. Add to that some knowledge of which trees grow in what areas, and if you're lucky, you can infer some crucial details. So, you know: trees. They're a sleuth's best friend."
+      },
+      {
+        "Title": "About Kujou Sara",
+        "Context": "Madam Kujou Sara? Yeah, that lady's gotta be the most serious person in the entire Tenryou Commission. It would be nice if she could cut us a little slack and give everyone some breathing room — and she's always on my case about my occasional unexplained absences, but what can I say... I just go wherever the evidence leads me."
+      },
+      {
+        "Title": "About Arataki Itto",
+        "Context": "I've done a few favors before to deliver Roasted Lavender Melon to him in prison. This one time, I overheard him singing. The lyrics... were complete trash, but I gotta say — he has a pretty good set of pipes. And it's not every day you come across an inmate who's in the mood to sing their heart out."
+      },
+      {
+        "Title": "About Kuki Shinobu",
+        "Context": "The Arataki Gang is a free and diverse organization that accepts anyone, regardless of their background. Pretty amazing if you ask me. They're lucky to have Shinobu to help keep them all in line. Hmm? How do I know all this? Haha, I mean... as deductions go, this one was pretty elementary."
+      },
+      {
+        "Title": "About Yae Miko",
+        "Context": "Come to think of it, Lady Guuji's publishing house also publishes murder mysteries, right? So... when can you introduce me? In this day and age, becoming a famous detective requires more than just ability — you need publicity, too. Huh? C'mon, I'm being serious here!"
+      },
+      {
+        "Title": "About Kaedehara Kazuha: Things in Common",
+        "Context": "Oh, Kazuha? Yeah, he's a solid guy. With his help, I felt like a locked treasure chest of clues had been bust wide open and emptied all over the ground for me to see. If only I had his sensitivity to the natural world... Oh, I get it now! The wind to him must be like my intuition to me!"
+      },
+      {
+        "Title": "About Kaedehara Kazuha: Invitation",
+        "Context": "Ohh... It's such a pity! Since the Vision Hunt Decree's been repealed, I no longer have any grounds to officially arrest him. But then again... I guess now, I can just openly invite him to come to the Tenryou Commission and discuss cases with me."
+      },
+      {
+        "Title": "About Gorou",
+        "Context": "General Gorou's constant suspicion made my trip to Watatsumi Island much more eventful... Everywhere I went, there were soldiers keeping me under close surveillance. Honestly, I was a regular, boring tourist just like everybody else. So what if I happen to be a detective in my day job? I was clearly minding my own business there."
+      },
+      {
+        "Title": "About Sangonomiya Kokomi",
+        "Context": "I've actually never seen Madam Sangonomiya before. Whenever she appears, practically the whole village crowds around her... I'm not about to contend with that. Oh, and even if you made it through all the villagers, there'd still be a circle of shrine maidens around her! For one of us young people to gain that kind of recognition from everyone, it must have taken a lot of work."
+      },
+      {
+        "Title": "About Kamisato Ayaka",
+        "Context": "I'm barely acquainted with the daughter of the Kamisato Clan. I'm glad that I'm not from some sort of prestigious family like that... it's definitely not the kind of life for me."
+      },
+      {
+        "Title": "More About Shikanoin Heizou: I",
+        "Context": "Even if someone chooses to remain absolutely silent, you can still learn a lot about them just by observing their clothes, posture, and facial expressions. Now, if this conversation ended here... what could you gather from my appearance alone?"
+      },
+      {
+        "Title": "More About Shikanoin Heizou: II",
+        "Context": "Once, when I was sitting in on a criminal trial, I suddenly realized I'd cracked the case. So I interrupted the court just as they were about to declare the verdict. If my objection had turned out to be invalid, then that moment wouldn't have been the turning point that saw me become a detective. Instead, it would have been... \"Shikanoin Heizou, I hereby find you in contempt of court and order your immediate detention!\" Hahaha!"
+      },
+      {
+        "Title": "More About Shikanoin Heizou: III",
+        "Context": "Investigating extramarital affairs, tracking down runaway pets... Those are pretty much the only cases you'll find at a detective agency. I personally need cases of a higher caliber... so, obviously, my only option was to jump ship and join the Tenryou Commission. Another factor was that Sango and I didn't quite see eye to eye in a lot of areas... Just one of those things, I guess."
+      },
+      {
+        "Title": "More About Shikanoin Heizou: IV",
+        "Context": "When I first joined the Tenryou Commission, I started honing my craft by reviewing some cold cases. Before I knew it, \"Mt. Coldcase\" had been completely leveled... It is a pity, these days I no longer have the time to go back and look through old files. I'm forever being brought in to help out on the toughest cases, and I barely have a moment to catch my breath in between jobs... Well, what can you do. Once you're a detective of this caliber, the cases come to you."
+      },
+      {
+        "Title": "More About Shikanoin Heizou: V",
+        "Context": "By the time a detective is facing a criminal, they have in some sense already failed. Whatever you might do to establish the truth and identify the culprit, you'll never be able to undo the damage caused by the crime. That's why I want my reputation to spread. I want to be a famous detective that makes would-be criminals quake in their boots and quit while they're ahead! In other words, I want to nip crime in the bud. Well, now that you've heard my spiel, why don't you lend me a hand?"
+      },
+      {
+        "Title": "Shikanoin Heizou's Hobbies",
+        "Context": "Would you like to sit in on a court trial at the Tenryou Commission some time? It's like watching the truth slowly emerge as a collage of facts is pieced together... I can save you a really good seat, but we'll have to pretend like we don't know each other... You know, just pretend."
+      },
+      {
+        "Title": "Shikanoin Heizou's Troubles",
+        "Context": "There are always those people who resort to violence at the very last second, as if that'll somehow solve their problems. It's a real bummer. Victory for me is to see the look on the defendant's face as they finally confess to their crime in the face of my ironclad evidence and watertight deductions... The moment a detective has to use brute force, they've already lost."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Name me one item of food that doesn't taste better deep-fried. You can't, right? Whether it's meat or veggies, as long as it's been pulled out of the fryer, I'll love it! I don't think anyone with an empty stomach can resist the smell of fried food."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I cannot stand dinner at the Police Station. It's always the same regimented meals, and don't even get me started on the taste. When it comes to food, you can't enjoy it unless you get to pick exactly what you want, right? But nope, poor me has to make do with slipping out and grabbing a quick bite. *sigh*"
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Mmm, I love it! You really outdid yourself this time. Well done!"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Would you say cooking is more of a physical or a cognitive task? Hmm, I believe it's both... No wonder you're such a good cook!"
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Hurk! Mmm... let me think. Where did you go wrong here..."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "After I learned that today was your birthday, there was a brief moment when I really wanted to take you to a locked room chock-full of mechanisms and gifts, where you could only get out by solving all the puzzles... Hehe, it's actually really fun! You know, of course I wouldn't do anything like that unless I was sure you'd actually enjoy it. Here, come with me. There's this beautiful scenic spot I've gotta show you before the sun goes down."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "As I get stronger, my intuition gets sharper!"
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "It appears my combat abilities are advancing. Too bad it's not all cognitive."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "My, my! At this rate, the name \"Cyclone\" is really gonna stick, isn't it..."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "Thanks for your trust and support, my dear partner. I couldn't have made it this far without your help. Hmm... I suppose we have time for a quick high five, but then let's get back out there and solve some more mysteries!"
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Fracture!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "The truth hurts!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Bring it on!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Confess!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Cyclone!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Can't fool me!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Oh, it's all coming out now!"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "See? Just follow my intuition."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Hmph, I'm liking the look of this!"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Ugh, if that's how you want it..."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "That was discombobulating..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "This is no job for a detective..."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Whoa there, watch it!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "That's it, I'm taking this case over."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "The truth... will come out..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "From detective... to victim..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "I've been... outsmarted..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "You don't want to do this."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Ugh, we got a situation!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "I'm on the case!"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Got a problem you can't solve? Clue me in."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Let's move before the trail goes cold."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Shikanoin Heizou is an extraordinary young detective.\nThough working at the Tenryou Commission, he is at odds with the usual impression of a public servant, who is expected to be \"stern,\" \"solemn\"... and \"solemn\" again.\nOn the outside, he appears more well-behaved and polite than any other new hires, but on the inside, he is actually thumbing his nose at all the official mumbo jumbo.\nUnlike his colleagues, he does not go to the Station to report for duty on a daily basis and rarely shows up for any routine patrols.\nIt can seem like ages since you last saw him, and you may finally chance upon him at some crime scene. Yet, judging by that ever-present grin, you can hardly tell if he is actually there working.\nFunnily enough, all his \"unorthodox behaviors as a public servant\" are somewhat acquiesced to.\nHis colleagues are more than willing to work with him and his boss seldom criticizes him for being this unfettered.\nEven his boss's boss inquires after him every now and then.\nAll this can be safely chalked up to his unrivaled prowess as a detective.\nWhenever the Tenryou Commission is tackling an unusually complicated case, be it a major one or a mysterious one, everyone regards Heizou as their last hope to crack the code.\nEven the head of the Police Station marvels at his extensive experience in solving cases, but Heizou himself has a different opinion about that.\n\"Experience is another name for people's past mistakes, and that's not my trump card.\"\n\"My trump card is something I was born with.\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Joining the Tenryou Commission is no easy task. Not only do you have to pass the ability test, but also a thorough background check.\nTherefore, candidates are usually required to declare some essential information, such as any valuable property.\nAccording to Yoriki Owada, who was in charge of the check at the time, when Heizou applied, he handed in nothing but a blank declaration form.\nIt was a bright and sunny morning. Sitting opposite Owada, Heizou was curiously exploring the place with his eyes. Owada, who had been around the block by then, spent a moment deciphering the blank form, then looked up and insinuated,\n\"I've met many brilliant young people. However, it's a shame that none of them made it to the Station in the end.\"\nHearing this, all of a sudden, that seemingly hyperactive young man stopped looking around, sat up straight, and looked Owada in the eye.\n\"Right. How about a young person like me?\"\nHis switching happened so fast that Yoriki Owada was suddenly stunned, feeling like prey in the sights of some hawk-eyed predator.\nOut of nowhere, a strange sensation came over him, as if at that moment, he was the one being scrutinized.\nHe said jokingly then, as though it would steady his nerves,\n\"The Tenryou Commission does not discriminate against the poor. But if you have literally nothing to declare, then we'll make sure we pay extra attention to your background.\"\nIt was followed by an unexpected silence. The one sitting opposite looked straight at him without saying a word, just as before.\nOwada wasn't feeling his best, his forehead slightly twitching. Maybe it was too hot. He made to wipe off the sweat with the back of his hand.\nHowever, there was no sweat on his forehead at all. Owada stared blankly at the dry back of his hand, not knowing if he should wipe again or put his hand down.\nThe young man burst out into laughter upon seeing this. His hearty laughter immediately relieved Owada from his overwhelmed state.\nHeizou just leaned on the table with his chin in one hand, pointing to his head with the other. He smiled at Owada and said,\n\"Other than my genius, I have nothing to declare.\""
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "The Tenryou Commission is in fact not where Heizou started his career as a detective.\nBefore all this happened, Heizou once owned an agency called \"Bantan Sango & Heizou Detective Agency.\"\nIt was what was to become Bantan Sango Detective Agency in Inazuma City now, which was actually co-founded by Heizou and Sango in the beginning.\nThe story of the two started with them striking an instant chord with each other, only to end with them regretfully parting ways.\nAfter the breakdown of their partnership, Heizou's name, naturally, was taken down from the old business.\nAs for the reason behind it all, it can probably all be summed up as \"they had different visions.\"\nSango believes that a detective's entire mission is to uncover the truth, which is something of utmost significance. Most detectives also hold this belief dear to their hearts.\nBut Heizou reckons there's more to it. That there might be something that's even more vital than the truth.\nYears of experience working as a detective have made him aware that when a new case comes to him, that means something unfortunate has already happened.\nNo matter how the criminals are punished for their evil conduct afterward, it cannot change the fact that someone has already been hurt.\nSimilarly, no matter how skilled a doctor is, they will never be able to treat a patient and pretend that nothing ever happened, telling them,\n\"Look, all your wounds have healed, as if you were never wounded in the first place.\"\nThe truth is from then on, whenever the patient sees a doctor, sees an infirmary, or sees the scars left by the operation, they will be reminded every time of all the wounds that were once on their body, hurting them.\nDoctors are helpless to prevent violent actions from being executed somewhere. Detectives cannot stop new cases from emerging. But Heizou hopes to break this status quo once and for all.\n\"If I can't nip evil in the bud, then I shall be its natural enemy.\"\n\"The name of Shikanoin Heizou will be renowned throughout the world and intimidate anyone with malicious intent all across Teyvat.\"\n\"They will realize one thing. Once they submit to the darkness, I will hunt them down to the ends of the earth.\"\nIt was at that point that he made his decision to leave the agency and join the Tenryou Commission.\nIt was the starting point for him to become the \"detective\" he seeks to be."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "\"I've read in the novels that every great detective has an assistant, just like every katsudon has a pork cutlet.\"\nAt the Police Station, the new recruit Uesugi approached Heizou with a big smile on his face.\n\"So, Heizou, what do you think? Can I be your assistant? I'm very clever.\"\nHeizou eyed this chirpy young man up with a grin, then rubbed his chin and replied,\n\"My intuition tells me that you are not that clever.\"\n\"Huh? May... maybe your intuition is wrong.\"\nThe sentence Uesugi just uttered seemed to have some magic to it as if it were a closing joke made at the end of a comedy. On hearing that, his nearby senior colleagues all laughed like a supportive audience.\nThe clever Uesugi immediately realized that he had said something inappropriate, so he tried to patch his statement up.\n\"What I meant is... we can't just rely solely on intuition in our line of work!\"\nUnexpectedly, everyone laughed even harder this time. Uesugi, not comprehending what had happened, thought to himself that maybe he should really consider being a comedian.\nAt that moment, Heizou brushed his shoulder as if to remove the awkwardness along with the dust.\n\"I was just joking. Actually, my intuition tells me that you, Uesugi, are going to be an excellent Doushin.\"\n\"And so, I suggest that you find your own assistant should you have the time.\"\nNo sooner had Heizou finished his sentence than he had run away like the wind, leaving a still-baffled Uesugi and his guffawing colleagues behind.\n...\n\"You've still got a long way to go before you can be Doushin Shikanoin's assistant.\"\n\"I was just trying to help since I noticed that he has no assistant...\"\n\"Of course he does. He mentioned his assistant many times.\"\n\"What?! Has he?\"\n\"Didn't you hear him say 'my intuition tells me' multiple times?\"\n\"Huh?! Are you saying... that his assistant is... his intuition?!\"\n\"Exactly! That guy can solve cases merely with his intuition. Isn't that wild?\""
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "When it comes to performance, Heizou should've been promoted many a time, considering all his achievements.\nHowever, in reality, Heizou has been a Doushin ever since he joined the Tenryou Commission.\nOn the other hand, many among his colleagues and superiors have risen through the ranks as a by-product of his achievements.\nAfter Heizou's cousin, Kano Nana, heard about it, she came to Heizou and was determined to stand up for him.\n\"You may be a brat, but this unfair treatment you've suffered is way worse.\"\n\"I'm going to give those goons a piece of my mind!\"\nHeizou knew his cousin very well, so to save her from any trouble, Heizou patiently explained the reasons behind this situation — a rare thing for him.\n\"Cuz, don't consider me lesser than them.\"\n\"Wanna take a guess at how many inmates at the Police Station Jail can name the Yoriki?\"\nHeizou spread his fingers of one hand, palm facing her. \"This number at most.\"\nHaving no idea what he was getting at, Kano Nana replied hesitantly, \"Five?\"\n\"What about the ones who can name this genius detective right in front of you?\"\nHeizou spread his fingers of the other hand, this time palm facing himself, \"This many at least.\"\n\"Five again? What's the difference?\"\nHeizou laughed, \"Cuz, I'm talking about the number of hairs on my hands!\"\n\"Just like we have no hair on our palms, none of the inmates can name all the Yoriki.\"\n\"But the inmates who can name me are as many as the hairs on the back of my hand!\"\n\"Now that my influence has far exceeded that of those Yoriki, what's in it for me to get promoted?\"\n\"On the contrary, staying close to the front line means that more criminals will be intimidated by the name of Shikanoin Heizou — that's my ultimate goal.\"\n\"So don't worry about me, cuz. I have never strayed, and I will never stray from my path!\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Just as Heizou claims, the most well-known name at the Police Station Jail is not that of any Yoriki, or even that of the General of the Tenryou Commission... But is instead the name of Doushin Shikanoin Heizou.\nHere, at least, even the name of the Raiden Shogun herself might be lesser in stature compared to his.\nAfter all, none of these criminals, great or small, have ever been personally nabbed by the Shogun, but a great many of them are surely here on Heizou's account.\nThis is how things panned out:\nIt started with some arrogant crooks boasting while temporarily out from behind bars of how elite their criminal skills were and how they had sent government officials off on wild goose chases, seeking to gain the admiration of their fellows.\nBut when asked why they were caught in spite of their great skills, they would often blame, through clenched teeth, the matter on \"that detective.\"\n\"Not that I didn't try, mind you, but he's just too cunning!\"\nThus did the detective's name spread throughout the prison.\nEven later on, the situation would again change when the criminals discovered that the detective who caught them was someone named \"Shikanoin Heizou.\"\nIt was one thing if a single detective could catch some skilled crooks. Perhaps he was just a good detective.\nBut if countless high-level criminals were seized by this one man, then surely he could not be an ordinary person.\nIn that moment, everyone present imagined something similar.\nA trickster god in the guise of humanity, scheming and cunning beyond compare, seeing into the hearts of mortals with contemptuous ease.\nWhy, a change of sides would see such a fellow become the greatest criminal in history!\nThose who were unwilling to take part in further affray spoke no more, while even the most hardened and wicked amongst them secretly thought:\n\"It might be best not to take him on, or to speak more ill about him than we should.\"\nEven the fiercest criminal lords no longer use his name even when they wish to boast, instead using the pseudonym \"Cyclone.\"\nWhen the Doushin on guard duty heard this new title, they would ask what it meant.\nAnd some petty criminals would reply, \"A calamity! A plague upon all us crooks!\""
+      },
+      {
+        "Title": "Martial Arts Tournament Champion's Medal",
+        "Context": "The way Heizou sees it, detectives are to destroy their opponents' defenses using their intelligence.\nUsing force to subdue criminals is, inevitably, the inferior way of doing things, and so Heizou does his best to avoid this in his daily work.\nAs such, his reputation at the Police Station was, for the longest time, one of a brainy but dainty character.\nThus, everyone was all too sure that he would be in for a tough time at the internal martial arts contest held by the Station.\nThis would be a no-holds-barred contest: neither limitations on schools nor restrictions of weapons would hold any sway here. The only rule was that the one to knock their opponent from a fifty-pace ring would triumph.\nTo everyone's shock, however, the \"brainy\" Heizou would show up to this contest without using Vision, and he carried no weapon but his two bare fists, which in turn carried him to the final.\nDuring that match, Kujou Sara, who had arrived upon hearing rumors of his prowess, assessed that the match was over even before it began.\n\"Doushin Shikanoin moves lightly and his fists are the match of any weapon. It would be hard to match him in melee — and only a skilled bowman would triumph.\"\nAs she predicted, Heizou's opponent would concede defeat after taking seventeen punches to the left side, with only a streak of Heizou's hair sliced off to show for it.\nBut just as he was about to be crowned champion, Kujou Sara herself walked into the ring and picked up a training bow, requesting a match with Heizou.\nThere was a brief uproar. Most of the people participating in the tournament were rather junior Doushin, and no one had expected that General Kujou herself would attend.\nHeizou narrowed his eyes. He had originally only come to test his skills, such that he might not be found wanting in the extreme situations where his wits alone would not be sufficient.\nBut at this moment, his blood was up and the spirit of competition had descended on him like it often does on youths, and so he gladly accepted. In a flash, the atmosphere heated up and everyone was flushed with excitement.\n\"Great going, Heizou!\" Doushin Uesugi yelled from the stands, Yoriki Owada quietly pumping a fist from beside him.\nAfter a moment's preparation, both parties entered the ring. The rules were slightly different this time: neither of them would use their Visions. This would only be a contest at fifty paces between Sara's arrow and Heizou's fists. Whoever touched the other first with their weapon would be declared the victor.\nThe atmosphere by now was practically bursting at the seams. The battle was about to begin. Yet few realized that in a battle between experts, each move was peril itself, and that the match would be ended in a single shot.\nSara let fly, and fifty paces away, Heizou was seen with his right hand clenched in front of his chest, tightly gripping an arrow that quivered but two finger-widths from his heart like a striking serpent.\n\"It's my loss. What a frighteningly fast shot,\" Heizou said with a laugh, before throwing the arrow aside. \"There was no time to evade, General, so I was forced to touch your weapon.\"\n\"I won by dint of the rules alone. I have met very few who could catch one of my arrows barehanded. I doubt the result would be so certain, were this a real battle.\"\nSara's eyes glimmered as she spoke such praise.\n\"Doushin Shikanoin, you are skilled in both mind and hand. You will do great things, should you be more disciplined.\"\n...\nHalf a month later, a champion's medal specially made by the Tenryou Commission arrived at the Grand Narukami Shrine, along with a handwritten note.\n\"Here's a little something, cuz, for you to give to my old man when you've got the time. Y'know, just to let him know that I haven't completely made a mess of his teachings and all.\""
+      },
+      {
+        "Title": "Vision",
+        "Context": "Heizou mentions his childhood very little, for it was not a happy one.\nHe was born in a remote village where his ancestry was rather prominent and his father was a martial artist of some small repute.\nBut just like every other rebellious child in the world, he only wished to escape having to take up his father's work, even as he was forced to learn martial arts alongside him.\nThis state of affairs would persist until Heizou made a friend who claimed to be from a wealthy merchant family at a festival.\nThis friend was a bright and agile mind, and would often bring all manner of new gadgets for Heizou to play with, saying that they were from his family's storehouse.\nBooks from Sumeru, mysterious toys from Fontaine of all sorts... These toys injected significant vibrance into Heizou's otherwise monotonous life.\nThe friends grew closer as they grew older, but Heizou also began to notice a problem.\nHis friend's clothes were always filthy, hardly the sort of image a rich merchant's son should have.\nHe thus decided to have an honest talk with his friend. They would have a conversation like proper adults.\nUnexpectedly, his friend immediately admitted to having deceived him, and even confessed that all the gifts he had given Heizou were stolen from the local merchant's guild.\nHe even went so far as to relate that he had originally met Heizou at the festival with the intention to steal some valuables from the latter, only for them to have become friends instead.\nHe laughed as he confessed these matters, as if this was some interesting tale.\nHeizou was furious, though he knew not what he was angry at: was he angry at having been deceived by his best friend? Or was it because his best friend was a criminal?\nRegardless, he reprimanded his friend harshly: \"We're not friends anymore!\"\nFuming, he returned home, sought out each and every item he had been given, and threw them all out, till nothing but a single green pebble remained.\nThis was one of a pair of \"treasures\" the two of them had fished out from a small stream, and each of them had taken one. This item alone was not tainted by theft, and was perhaps purer even than their friendship.\nGazing upon it, Heizou hardened his heart and threw it out the window... only for it to strike the window lattice and come flying back, rolling under his bed.\nNow irate, and seeing how even the heavens were conspiring against him in this endeavor, Heizou, in a fit of growing pique, dumped himself on the ground like a frog with a punctured belly, refusing to move.\nLooking at the ceiling despondently, he told himself that he would one day put these ill things out of his mind. Yet the world is such that the more we wish to forget things, the more they shall refuse to be forgotten.\nA year later, when the festival where he and his friend first met rolled back around, Heizou happened to rediscover the pebble, and had it on him as he traveled to attend the festival.\nHe knew not what he was expecting, but fate already had an answer on hand... though it was not the one Heizou expected.\nHeizou would meet his friend again that day, collapsed by the roadside in a pool of his own blood amidst the screams of the crowd.\nJust a moment earlier, his friend had gotten into an altercation with a ruffian who had angled to steal his Mora purse, and who then in a panic had plunged a dagger into his heart.\nHeizou dashed over to check on his old friend, the pebble in his hand falling by the wayside. Catching sight of it, his friend's dull eyes lit up just a little.\n\"Come here to see me, did you... Heizou?\"\nHeizou tried to keep pressure over his good friend's chest, but the blood kept seeping through his fingers, and he was again filled with fury, even more so than the year prior.\n\"Just shut up! Shut up!\" He yelled at his friend.\nHis friend shook his head, and with great effort opened his purse. There was not a single Mora inside — nothing but the green pebble that had belonged to him.\nSqueezing the last ounce of his strength out, he held the pebble out to Heizou with a smile broader than when they had parted.\n\"I... I came to see you, too...\"\n...\nHeizou did not recall how he had returned home. His mind was blank, filled with nothing but rage and disgust.\nBut in that moment, his intuition told him that he felt rage and disgust at a certain thing, and that he and it had always been foes.\nThis thing had mixed deception into friendship, and it had caused life to be cut short before its time. \"Sin.\" That was its name.\nBut it was not his friend's sin of deception or theft, nor was it the murder that the thief committed. It was something more abstract, something of a higher order.\nIt was the culmination of all the sins in this world, hovering over all like a titanic shadow covering the skies, fixing its cold and unfeeling gaze on all that was good in this world, and seeking ways to snuff it out.\nOne morning, one month later, Heizou sneaked out of doors to travel afar, leaving a farewell note behind. He had found his enemy, and he would now embark on a journey to make war against it.\nAccompanying him on this journey was a green stone, but it was not the pebble that symbolized friendship, but instead a Vision that stood for his resolve."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 205900,
+      "Name": "Spirited Valor",
+      "Description": "Shikanoin Heizou's outfit. Having taken his outer coat off and tucked it around his waist, the Tenryou Commission detective cuts quite the dashing figure.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104154,
+    113035,
+    101201,
+    112037,
+    104322,
+    113034
+  ],
+  "NameCard": {
+    "Name": "Shikanoin Heizou: Temari",
+    "Description": "Namecard style.\nA Temari of entwining strings in various colors. It must have taken someone's great effort to make such an item, yet Heizou only sees it as a simple game to untangle each string.",
+    "Icon": "UI_NameCardIcon_Heizo",
+    "PicturePrefix": "UI_NameCardPic_Heizo"
+  }
+}

@@ -1,0 +1,1210 @@
+{
+  "Id": 10000086,
+  "PromoteId": 86,
+  "Sort": 72,
+  "Body": 4,
+  "Icon": "UI_AvatarIcon_Wriothesley",
+  "SideIcon": "UI_AvatarIcon_Side_Wriothesley",
+  "Name": "Wriothesley",
+  "Description": "Duke of the Fortress of Meropide, Lord Incognito of the murky depths.",
+  "BeginTime": "2023-10-17T18:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 10,
+  "BaseValue": {
+    "HpBase": 1058.1852,
+    "AttackBase": 24.206,
+    "DefenseBase": 59.41119
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 2,
+    "Skills": [
+      {
+        "GroupId": 8631,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}",
+            "4-Hit DMG|{param4:F1P}+{param5:F1P}",
+            "5-Hit DMG|{param6:F1P}",
+            "Charged Attack DMG|{param7:F1P}",
+            "Charged Attack Stamina Cost|{param8:F1}",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 863101,
+              "Level": 1,
+              "Parameters": [
+                0.533596,
+                0.517987,
+                0.672228,
+                0.379041,
+                0.379041,
+                0.90742,
+                1.5296,
+                50,
+                0.568288,
+                1.136335,
+                1.419344
+              ]
+            },
+            {
+              "Id": 863102,
+              "Level": 2,
+              "Parameters": [
+                0.577028,
+                0.560148,
+                0.726944,
+                0.409893,
+                0.409893,
+                0.98128,
+                1.64432,
+                50,
+                0.614544,
+                1.228828,
+                1.534872
+              ]
+            },
+            {
+              "Id": 863103,
+              "Level": 3,
+              "Parameters": [
+                0.62046,
+                0.60231,
+                0.78166,
+                0.440745,
+                0.440745,
+                1.05514,
+                1.75904,
+                50,
+                0.6608,
+                1.32132,
+                1.6504
+              ]
+            },
+            {
+              "Id": 863104,
+              "Level": 4,
+              "Parameters": [
+                0.682506,
+                0.662541,
+                0.859826,
+                0.48482,
+                0.48482,
+                1.160654,
+                1.912,
+                50,
+                0.72688,
+                1.453452,
+                1.81544
+              ]
+            },
+            {
+              "Id": 863105,
+              "Level": 5,
+              "Parameters": [
+                0.725938,
+                0.704703,
+                0.914542,
+                0.515672,
+                0.515672,
+                1.234514,
+                2.02672,
+                50,
+                0.773136,
+                1.545944,
+                1.930968
+              ]
+            },
+            {
+              "Id": 863106,
+              "Level": 6,
+              "Parameters": [
+                0.775575,
+                0.752888,
+                0.977075,
+                0.550931,
+                0.550931,
+                1.318925,
+                2.14144,
+                50,
+                0.826,
+                1.65165,
+                2.063
+              ]
+            },
+            {
+              "Id": 863107,
+              "Level": 7,
+              "Parameters": [
+                0.843826,
+                0.819142,
+                1.063058,
+                0.599413,
+                0.599413,
+                1.43499,
+                2.2944,
+                50,
+                0.898688,
+                1.796995,
+                2.244544
+              ]
+            },
+            {
+              "Id": 863108,
+              "Level": 8,
+              "Parameters": [
+                0.912076,
+                0.885396,
+                1.14904,
+                0.647895,
+                0.647895,
+                1.551056,
+                2.44736,
+                50,
+                0.971376,
+                1.94234,
+                2.426088
+              ]
+            },
+            {
+              "Id": 863109,
+              "Level": 9,
+              "Parameters": [
+                0.980327,
+                0.95165,
+                1.235023,
+                0.696377,
+                0.696377,
+                1.667121,
+                2.60032,
+                50,
+                1.044064,
+                2.087686,
+                2.607632
+              ]
+            },
+            {
+              "Id": 863110,
+              "Level": 10,
+              "Parameters": [
+                1.054782,
+                1.023927,
+                1.328822,
+                0.749266,
+                0.749266,
+                1.793738,
+                2.75328,
+                50,
+                1.12336,
+                2.246244,
+                2.80568
+              ]
+            },
+            {
+              "Id": 863111,
+              "Level": 11,
+              "Parameters": [
+                1.129237,
+                1.096204,
+                1.422621,
+                0.802156,
+                0.802156,
+                1.920355,
+                2.90624,
+                50,
+                1.202656,
+                2.404802,
+                3.003728
+              ]
+            },
+            {
+              "Id": 863112,
+              "Level": 12,
+              "Parameters": [
+                1.203692,
+                1.168481,
+                1.51642,
+                0.855045,
+                0.855045,
+                2.046972,
+                3.0592,
+                50,
+                1.281952,
+                2.563361,
+                3.201776
+              ]
+            },
+            {
+              "Id": 863113,
+              "Level": 13,
+              "Parameters": [
+                1.278148,
+                1.240759,
+                1.61022,
+                0.907935,
+                0.907935,
+                2.173588,
+                3.2504,
+                50,
+                1.361248,
+                2.721919,
+                3.399824
+              ]
+            },
+            {
+              "Id": 863114,
+              "Level": 14,
+              "Parameters": [
+                1.352603,
+                1.313036,
+                1.704019,
+                0.960824,
+                0.960824,
+                2.300205,
+                3.4416,
+                50,
+                1.440544,
+                2.880478,
+                3.597872
+              ]
+            },
+            {
+              "Id": 863115,
+              "Level": 15,
+              "Parameters": [
+                1.427058,
+                1.385313,
+                1.797818,
+                1.013713,
+                1.013713,
+                2.426822,
+                3.6328,
+                50,
+                1.51984,
+                3.039036,
+                3.79592
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10861,
+        "Name": "Forceful Fists of Frost",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nCoalescing frost about his fist, Wriothesley will unleash powerful <color=#FFD780FF>Repelling Fists</color>, performing up to 5 rapid attacks that deal <color=#99FFFFFF>Cryo DMG</color>.\nApart from this, Normal Attack combo count will not reset for a short time after using Icefang Rush or sprinting.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a fixed amount of Stamina to leap and unleash a <color=#FFD780FF>Vaulting Fist</color>, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing <color=#99FFFFFF>AoE Cryo DMG</color> upon impact.",
+        "Icon": "Skill_A_Catalyst_MD"
+      },
+      {
+        "GroupId": 8632,
+        "Proud": {
+          "Descriptions": [
+            "Enhanced Repelling Fist DMG|{param1:F1P} Normal Attack DMG",
+            "HP Cost|{param2:F1P} Max HP",
+            "Duration|{param3:F1}s",
+            "CD|{param4:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 863201,
+              "Level": 1,
+              "Parameters": [
+                1.431695,
+                0.045,
+                10,
+                16,
+                0,
+                0,
+                0,
+                0.431695
+              ]
+            },
+            {
+              "Id": 863202,
+              "Level": 2,
+              "Parameters": [
+                1.457545,
+                0.045,
+                10,
+                16,
+                0,
+                0,
+                0,
+                0.457545
+              ]
+            },
+            {
+              "Id": 863203,
+              "Level": 3,
+              "Parameters": [
+                1.483395,
+                0.045,
+                10,
+                16,
+                0,
+                0,
+                0,
+                0.483395
+              ]
+            },
+            {
+              "Id": 863204,
+              "Level": 4,
+              "Parameters": [
+                1.517,
+                0.045,
+                10,
+                16,
+                0,
+                0,
+                0,
+                0.517
+              ]
+            },
+            {
+              "Id": 863205,
+              "Level": 5,
+              "Parameters": [
+                1.54285,
+                0.045,
+                10,
+                16,
+                0,
+                0,
+                0,
+                0.54285
+              ]
+            },
+            {
+              "Id": 863206,
+              "Level": 6,
+              "Parameters": [
+                1.5687,
+                0.045,
+                10,
+                16,
+                0,
+                0,
+                0,
+                0.5687
+              ]
+            },
+            {
+              "Id": 863207,
+              "Level": 7,
+              "Parameters": [
+                1.602305,
+                0.045,
+                10,
+                16,
+                0,
+                0,
+                0,
+                0.602305
+              ]
+            },
+            {
+              "Id": 863208,
+              "Level": 8,
+              "Parameters": [
+                1.63591,
+                0.045,
+                10,
+                16,
+                0,
+                0,
+                0,
+                0.63591
+              ]
+            },
+            {
+              "Id": 863209,
+              "Level": 9,
+              "Parameters": [
+                1.669515,
+                0.045,
+                10,
+                16,
+                0,
+                0,
+                0,
+                0.669515
+              ]
+            },
+            {
+              "Id": 863210,
+              "Level": 10,
+              "Parameters": [
+                1.70312,
+                0.045,
+                10,
+                16,
+                0,
+                0,
+                0,
+                0.70312
+              ]
+            },
+            {
+              "Id": 863211,
+              "Level": 11,
+              "Parameters": [
+                1.736725,
+                0.045,
+                10,
+                16,
+                0,
+                0,
+                0,
+                0.736725
+              ]
+            },
+            {
+              "Id": 863212,
+              "Level": 12,
+              "Parameters": [
+                1.77033,
+                0.045,
+                10,
+                16,
+                0,
+                0,
+                0,
+                0.77033
+              ]
+            },
+            {
+              "Id": 863213,
+              "Level": 13,
+              "Parameters": [
+                1.803935,
+                0.045,
+                10,
+                16,
+                0,
+                0,
+                0,
+                0.803935
+              ]
+            },
+            {
+              "Id": 863214,
+              "Level": 14,
+              "Parameters": [
+                1.83754,
+                0.045,
+                10,
+                16,
+                0,
+                0,
+                0,
+                0.83754
+              ]
+            },
+            {
+              "Id": 863215,
+              "Level": 15,
+              "Parameters": [
+                1.871145,
+                0.045,
+                10,
+                16,
+                0,
+                0,
+                0,
+                0.871145
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10862,
+        "Name": "Icefang Rush",
+        "Description": "Adjusting his breathing, rhythm, and pace, Wriothesley sprints forward a short distance, entering the <color=#FFD780FF>Chilling Penalty</color> state and unleashing more powerful attacks than before.\n\n<color=#FFD780FF>Chilling Penalty</color>\n·Increases Wriothesley's interruption resistance\n·When his HP is above 50%, it will enhance the Repelling Fists of <color=#FFD780FF>Normal Attack: Forceful Fists of Frost</color> and increase its DMG. When such an attack hits, it will consume a fixed amount of Wriothesley's HP. HP can be lost this way once every 0.1s.\nThis effect will be canceled should Wriothesley leave the field.\n\n<i>\"Past convictions are past. It is our future choices that we must grasp.\"\n\"Defy your fate, or else this glutton be, to pay your fate's due, by the crime and thee.\"</i>",
+        "Icon": "Skill_S_Wriothesley_01"
+      }
+    ],
+    "SpecialSkills": [
+      {
+        "GroupId": 8651,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 865101,
+              "Level": 1,
+              "Parameters": [
+                0.6,
+                0.3,
+                2,
+                0.3,
+                -0.4,
+                -0.2
+              ]
+            }
+          ],
+          "Display": 3
+        },
+        "Id": 865101,
+        "Name": "There Shall Be an Unveiling for Injustice",
+        "Description": "<color=#FFD780FF>Radiance: Stellar-Conduct</color>: The Ascension Talent \"There Shall Be a Plea for Justice\" is changed to the following:\nWhen Wriothesley's HP is less than 60%, he will obtain a \"Gracious Rebuke: Unveiling.\" This enhances the next Charged Attack of his <color=#FFD780FF>Normal Attack: Forceful Fists of Frost</color> into Luster: Vaulting Fist, which will not consume Stamina and restores 30% Max HP to Wriothesley upon hit. Wriothesley can gain HP in this way once every 2s.\nAdditionally, the third and fifth strikes of Repelling Fist enhanced by <color=#FFD780FF>Chilling Penalty</color> will deal 60% and 80% of their original <color=#99FFFFFF>Cryo DMG</color> respectively, while Luster: Vaulting Fist will deal 100% of its original <color=#99FFFFFF>AoE Cryo DMG</color>. The aforementioned DMG is considered as Stellar-Conduct DMG, and Wriothesley deals 30% increased Stellar-Conduct DMG.\nAdditionally, when inside a {LINK#N11330003}<color=#FFD780FF>Polestar Field</color>{/LINK}, Wriothesley will enter the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state.",
+        "Icon": "UI_Talent_S_Wriothesley_08"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 8639,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:F2P}×5",
+          "Surging Blade DMG|{param2:F2P}",
+          "CD|{param3:F1}s",
+          "Surging Blade CD|{param5:F1}s",
+          "Energy Cost|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 863901,
+            "Level": 1,
+            "Parameters": [
+              1.272,
+              0.424,
+              15,
+              60,
+              10
+            ]
+          },
+          {
+            "Id": 863902,
+            "Level": 2,
+            "Parameters": [
+              1.3674,
+              0.4558,
+              15,
+              60,
+              10
+            ]
+          },
+          {
+            "Id": 863903,
+            "Level": 3,
+            "Parameters": [
+              1.4628,
+              0.4876,
+              15,
+              60,
+              10
+            ]
+          },
+          {
+            "Id": 863904,
+            "Level": 4,
+            "Parameters": [
+              1.59,
+              0.53,
+              15,
+              60,
+              10
+            ]
+          },
+          {
+            "Id": 863905,
+            "Level": 5,
+            "Parameters": [
+              1.6854,
+              0.5618,
+              15,
+              60,
+              10
+            ]
+          },
+          {
+            "Id": 863906,
+            "Level": 6,
+            "Parameters": [
+              1.7808,
+              0.5936,
+              15,
+              60,
+              10
+            ]
+          },
+          {
+            "Id": 863907,
+            "Level": 7,
+            "Parameters": [
+              1.908,
+              0.636,
+              15,
+              60,
+              10
+            ]
+          },
+          {
+            "Id": 863908,
+            "Level": 8,
+            "Parameters": [
+              2.0352,
+              0.6784,
+              15,
+              60,
+              10
+            ]
+          },
+          {
+            "Id": 863909,
+            "Level": 9,
+            "Parameters": [
+              2.1624,
+              0.7208,
+              15,
+              60,
+              10
+            ]
+          },
+          {
+            "Id": 863910,
+            "Level": 10,
+            "Parameters": [
+              2.2896,
+              0.7632,
+              15,
+              60,
+              10
+            ]
+          },
+          {
+            "Id": 863911,
+            "Level": 11,
+            "Parameters": [
+              2.4168,
+              0.8056,
+              15,
+              60,
+              10
+            ]
+          },
+          {
+            "Id": 863912,
+            "Level": 12,
+            "Parameters": [
+              2.544,
+              0.848,
+              15,
+              60,
+              10
+            ]
+          },
+          {
+            "Id": 863913,
+            "Level": 13,
+            "Parameters": [
+              2.703,
+              0.901,
+              15,
+              60,
+              10
+            ]
+          },
+          {
+            "Id": 863914,
+            "Level": 14,
+            "Parameters": [
+              2.862,
+              0.954,
+              15,
+              60,
+              10
+            ]
+          },
+          {
+            "Id": 863915,
+            "Level": 15,
+            "Parameters": [
+              3.021,
+              1.007,
+              15,
+              60,
+              10
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10865,
+      "Name": "Darkgold Wolfbite",
+      "Description": "Activating his boxing gloves, Wriothesley strikes out with an icy straight, then uses Icicle Impact to cause multiple instances of <color=#99FFFFFF>AoE Cryo DMG</color> in a frontal area.\n\n<color=#FFD780FF>Arkhe: Ousia</color>\nAfter Icicle Impact ends, a Surging Blade will descend upon the opponent's position, dealing Ousia-aligned <color=#99FFFFFF>Cryo DMG</color>.\n\n<i>There are some things that even the Duke of the Fortress of Meropide can do little about — for example, complicated paperwork, the trivialities of a supervisor, or even... little kids pasting a whole host of cute but difficult-to-remove stickers on his boxing gloves.</i>",
+      "Icon": "Skill_E_Wriothesley_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 8621,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 862101,
+              "Level": 1,
+              "Parameters": [
+                0.6,
+                0.5,
+                0.3,
+                5
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 862101,
+        "Name": "There Shall Be a Plea for Justice",
+        "Description": "When Wriothesley's HP is less than 60%, he will obtain a Gracious Rebuke. The next Charged Attack of his <color=#FFD780FF>Normal Attack: Forceful Fists of Frost</color> will be enhanced to become Rebuke: Vaulting Fist. It will not consume Stamina, will deal 50% increased DMG, and after hitting will restore HP for Wriothesley equal to 30% of his Max HP.\nYou can gain a Gracious Rebuke this way once every 5s.",
+        "Icon": "UI_Talent_S_Wriothesley_05"
+      },
+      {
+        "GroupId": 8622,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 862201,
+              "Level": 1,
+              "Parameters": [
+                0.06,
+                5
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 862201,
+        "Name": "There Shall Be a Reckoning for Sin",
+        "Description": "When Wriothesley's current HP increases or decreases, if he is in the Chilling Penalty state conferred by <color=#FFD780FF>Icefang Rush</color>, Chilling Penalty will gain one stack of Prosecution Edict. Max 5 stacks. Each stack will increase Wriothesley's ATK by 6%.",
+        "Icon": "UI_Talent_S_Wriothesley_06"
+      },
+      {
+        "GroupId": 8623,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 862301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 862301,
+        "Name": "The Duke's Grace",
+        "Description": "When Wriothesley crafts Weapon Ascension Materials, he has a 10% chance to receive double the product.",
+        "Icon": "UI_Talent_Combine_Weapon_Double"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 861,
+        "Name": "Terror for the Evildoers",
+        "Description": "The Gracious Rebuke from the Ascension Talent \"There Shall Be a Plea for Justice\" is changed to this:\nWhen Wriothesley's HP is less than 60% or while he is in the Chilling Penalty state caused by <color=#FFD780FF>Icefang Rush</color>, when the fifth attack of Repelling Fists hits, it will create a Gracious Rebuke. 1 Gracious Rebuke effect can be obtained every 2.5s.\n\nAdditionally, Rebuke: Vaulting Fist will obtain the following enhancement:\n· The DMG Bonus gained will be further increased to 200%.\n· When it hits while Wriothesley is in the Chilling Penalty state, that state's duration is extended by 4s. 1 such extension can occur per 1 Chilling Penalty duration.\n\nYou must first unlock the Ascension Talent \"There Shall Be a Plea for Justice.\"",
+        "Icon": "UI_Talent_S_Wriothesley_01"
+      },
+      {
+        "Id": 862,
+        "Name": "Shackles for the Arrogant",
+        "Description": "When using <color=#FFD780FF>Darkgold Wolfbite</color>, each Prosecution Edict stack from the Ascension Talent \"There Shall Be a Reckoning for Sin\" will increase said ability's DMG dealt by 40%.\nYou must first unlock the Ascension Talent \"There Shall Be a Reckoning for Sin.\"",
+        "Icon": "UI_Talent_S_Wriothesley_02"
+      },
+      {
+        "Id": 863,
+        "Name": "Punishment for the Frauds",
+        "Description": "Increases the Level of <color=#FFD780FF>Normal Attack: Forceful Fists of Frost</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Wriothesley_01",
+        "ExtraLevel": {
+          "Index": 1,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 864,
+        "Name": "Redemption for the Suffering",
+        "Description": "The HP restored to Wriothesley through Rebuke: Vaulting Fist will be increased to 50% of his Max HP. You must first unlock the Ascension Talent \"There Shall Be a Plea for Justice.\"\nAdditionally, when Wriothesley is healed, if the amount of healing overflows, the following effects will occur depending on whether he is on the field or not. If he is on the field, his ATK SPD will be increased by 20% for 4s. If he is off-field, all of your own party members' ATK SPD will be increased by 10% for 6s. These two methods of increasing ATK SPD cannot stack.",
+        "Icon": "UI_Talent_S_Wriothesley_03"
+      },
+      {
+        "Id": 865,
+        "Name": "Mercy for the Wronged",
+        "Description": "Increases the Level of <color=#FFD780FF>Darkgold Wolfbite</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Wriothesley_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 866,
+        "Name": "Esteem for the Innocent",
+        "Description": "The CRIT Rate of Rebuke: Vaulting Fist will be increased by 10%, and its CRIT DMG by 80%. When unleashed, it will also create an additional icicle that deals 100% of Rebuke: Vaulting Fist's Base DMG as <color=#99FFFFFF>Cryo DMG</color>. DMG dealt this way is regarded as Charged Attack DMG.\nYou must first unlock the Ascension Talent \"There Shall Be a Plea for Justice.\"",
+        "Icon": "UI_Talent_S_Wriothesley_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Emissary of Solitary Iniquity",
+    "Detail": "Duke of the Fortress of Meropide, Lord Incognito of the murky depths.",
+    "Association": 8,
+    "Native": "Fortress of Meropide",
+    "BirthMonth": 11,
+    "BirthDay": 23,
+    "VisionBefore": "Cryo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Cerberus",
+    "CvChinese": "刘北辰",
+    "CvJapanese": "小野大輔",
+    "CvEnglish": "Joe Zieja",
+    "CvKorean": "Kwon Chang-wook",
+    "CookBonus": {
+      "OriginItemId": 108577,
+      "ItemId": 108604,
+      "InputList": [
+        100061,
+        100077,
+        101231
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "Hello, please try to quickly summarize your intents and goals for this meeting. Oh? You're not here for business? Well, that just makes me even more nervous.\nAlright, then perhaps we should sit down and discuss things in a little more detail... Oh, and you can call me \"Your Grace.\" That's what they all call me down in the Fortress, and... well, I kinda got used to it."
+      },
+      {
+        "Title": "Chat: Stickers",
+        "Context": "If you ever see any stickers on my back, do me a favor and take them off... Melusines like to play pranks sometimes."
+      },
+      {
+        "Title": "Chat: Pets",
+        "Context": "I once considered keeping some pets in my office, but soon gave up on the idea. It's just not right to keep small animals where they won't be able to see the sun."
+      },
+      {
+        "Title": "Chat: Words of Advice",
+        "Context": "Word of advice: Don't break the law. Hmm, is there anything else? Oh, yeah... Seriously, don't break the law."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Oh, it's raining? That's alright. A real problem would be if we could feel water dripping on our heads in the Fortress of Meropide."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "You know, they say if you're scared of the thunder, it's really because you've got something else to hide."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Hmm... This is a different kind of cold than what I'm used to."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "They say there's nothing new under the sun, but somehow a picnic in the warm sunshine never gets old."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Morning. What do the papers have to say about today's weather forecast?"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "The Coupon Cafeteria is probably crowded right now. I'll have someone deliver the food straight to my office."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Huh, is it evening already? Could have sworn I'd just had my afternoon tea."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Good night. I'll be staying up for a little while yet — want to run some numbers while everything's nice and quiet."
+      },
+      {
+        "Title": "About Wriothesley: Misunderstanding",
+        "Context": "People have this tendency to see me as an all-knowing figure with mystical powers. In reality, I'm just one man with two eyes and two ears. How can I possibly know everything that's happening in the Fortress of Meropide?"
+      },
+      {
+        "Title": "About Wriothesley: Small Breaks",
+        "Context": "I finished serving my sentence long ago, so there's nothing stopping me from taking an occasional breather in the overworld as a free citizen.\nAh, there's no need to worry... The Fortress of Meropide doesn't currently have any problem so big as to require my round-the-clock presence to operate effectively."
+      },
+      {
+        "Title": "About Us: Committing to Jail",
+        "Context": "I form my first impressions of many people based on the contents of their inmate registration papers. Seems like you're no exception to the rule."
+      },
+      {
+        "Title": "About Us: Finishing the Jail Term",
+        "Context": "They say it's best to begin a friendship when there's no conflict of interest. Seems like the appropriate time has come."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "Some inmates once taught me a way to wield the elements by throwing around chemical potions. I guess whoever's in charge of handing out Visions doesn't care too much about a little rule-bending."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "Want a tip on how to escape from the Gardes? Just give yourself a name that's really long and difficult to pronounce. They'll be stumbling over your name as soon as they try to announce that you are under arrest."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "\"If a man will not work, he shall not eat.\" This phrase has been on the walls of the Fortress of Meropide for as long as anyone can remember. I don't know who first came up with it, but it's been pretty useful in the underworld."
+      },
+      {
+        "Title": "About Neuvillette",
+        "Context": "I was once summoned by Neuvillette to discuss some matters with him in his office. When I approached the Palais Mermonia, I saw him standing by the road, completely drenched in the rain. I held out an umbrella for him, and while he thanked me politely, his expression was a little... distressed, I guess. I can only assume that I had disturbed him in the middle of something."
+      },
+      {
+        "Title": "About Furina",
+        "Context": "Miss Furina displayed a severe lack of interest in my trial and excused herself early, probably because I pleaded guilty to all charges as soon as they were announced. Disappointing the Hydro Archon is a big deal, so... suppose I've got no choice but to keep gifting her copious amounts of the highest quality tea."
+      },
+      {
+        "Title": "About Sigewinne",
+        "Context": "Sigewinne the head nurse possesses all the virtues associated with the medical profession and genuinely cares for the well-being of everyone around her.\nShe seems to have picked up some bad habits from me, though, like frequently betting with her Melusine friends over who'd be able to put more stickers on my belongings. Hm? No, I'm not actually bothered by it."
+      },
+      {
+        "Title": "About Clorinde",
+        "Context": "Clorinde is the best Champion Duelist you can find. Her combat prowess is already the stuff of legend. I've never fought her myself, but that's because there's never been a need for it."
+      },
+      {
+        "Title": "About Lyney",
+        "Context": "I'll admit that when I removed the House of the Hearth's spies in the underworld, that was kind of an intentional provocation to the Fatui. But their only response was to send down a bunch of children... Was it because they truly saw those kids as disposable? Or because they knew I wouldn't have it in me to let them come to serious harm? *sigh*"
+      },
+      {
+        "Title": "About Navia",
+        "Context": "The Fortress of Meropide works with Spina di Rosula on some matters regarding supplies and logistics, but we don't have any other dealings. This isn't because I don't trust Navia or her abilities, in fact, I hold her in quite high regard. The only reason we continue to stay out of each other's way is because I wanna honor the agreement I made with the late Mr. Callas."
+      },
+      {
+        "Title": "About Emilie",
+        "Context": "The Fortress of Meropide doesn't need her services. Yet some things are best preserved the way they are, warts and all, so people don't make the same mistakes twice... I say warts, but yeah. I mean the smell."
+      },
+      {
+        "Title": "About Chevreuse",
+        "Context": "Most inmates seem to gain a new level of respect for the rules after receiving attention from the Special Security and Surveillance Patrol. As the captain, Chevreuse is an instrumental part of that team."
+      },
+      {
+        "Title": "More About Wriothesley: I",
+        "Context": "As a general rule, the less a person sees of me, the happier their life is."
+      },
+      {
+        "Title": "More About Wriothesley: II",
+        "Context": "Hmm? Oh the scar on my body? It's from a gash I got while battling a gigantic undersea monster that tried to take over the Fortress of Meropide. ...Hah, just kidding."
+      },
+      {
+        "Title": "More About Wriothesley: III",
+        "Context": "Did you know, many similar models of handcuffs can all be unlocked using the same master key? Except mine, of course. They're different."
+      },
+      {
+        "Title": "More About Wriothesley: IV",
+        "Context": "Honestly, my personal abilities are pretty limited. I got no talent in medicine, inventions, or ship-making. But what I do know how to do is find those people with those talents, and get 'em to come work for me."
+      },
+      {
+        "Title": "More About Wriothesley: V",
+        "Context": "I've managed to get myself to a pretty comfortable place in life, but there's still some things I want that are outside my reach, like a peaceful and happy childhood, or the ability to trust other people. Maybe some people would see those feelings as shameful or contradictory, but I don't see a problem with sharing them. After all, why should anybody be afraid to admit what they want?"
+      },
+      {
+        "Title": "Wriothesley's Hobbies",
+        "Context": "Boxing? To me, that's more of a necessity than a hobby. You got some suggestions for actual hobbies?"
+      },
+      {
+        "Title": "Wriothesley's Troubles",
+        "Context": "While I do possess some stereotypical Fontainian looks, when you're an orphan, you can never really be sure where you're from. Who knows, maybe I'll take a dip in the Primordial Sea one of these days just to check..."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "I usually take some milk with my coffee and two cubes of sugar with my tea."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Have you ever had one of Sigewinne's milkshakes? The taste that comes to mind is... what's that flavor... desolation."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "What a perfect blend of flavors. I could have never made this myself."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Lovely. I'll be sure to treat you to something next time."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Please excuse me, I'm... I'm gonna brew a cup of tea."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "Our tradition says that all children of Fontaine are born amid their parents' wishes and blessings, but I'd like to think that all children are born from such wonderful feelings. Anything that I can say to celebrate your birth would feel a little trivial next to that, right?\nUnfortunately, I won't be able to reduce your prison sentence if you were to commit a crime — the only thing I would be able to pull off would be a special Welfare Meal for your birthday dinner. With all that in mind, why don't you try to respect the law a bit more around your birthday, so we'll be able to celebrate somewhere nice on the surface?"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "It is my honor to win your trust."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Uh oh, looks like I'll owe you a favor now."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Ha, why do you look even more pleased about this than me?"
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I like signs of strength and hope. They give me reassurance that tomorrow will be better than today. This isn't to be pessimistic, but it's impossible for the present to be without its doubts and troubles — that's just the truth. But come hell or high water, if nothing else then at least we'll be able to figure it out together, right?"
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Let's begin."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Don't run away now."
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "A moment, please."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Have a safe trip."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "This could get a little chilly."
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Stay cool and face your guilt!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Oh, this wasn't locked? How convenient."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "I'd take it if I were you. I'm sure it'll come in handy."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "All unclaimed articles should be turned in, so... neither of us saw anything here, right?"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "No need to fear."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "No backup, huh? Fine by me."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Time to improvise."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Step back."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Get to the infirmary."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Sorry... I couldn't protect..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "Instead of going big, guess I'm going home..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "I have... no objections."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Going easy on me?"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "...Not bad."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Let's get to work."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Got a side job for me? Sure thing."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "I'll do my best, but I can't guarantee you victory."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "To the great relief of the Maison Ordalie, most Fontainians are law-abiding citizens. As such, the Fortress of Meropide is not a place that they will ever visit in their lives.\nAt the same time, there is an easily understood yet rather tragic truth, which is that those who have served time often find it difficult to reintegrate back into the \"overworld,\" and few will actively speak of their experiences in the \"underworld.\"\nRather than a specific place, the Fortress is more like an idea, a warning, a symbol of misfortune and castigation — a byword amongst Fontainians. As for who controls this idea, that is unimportant.\nThanks to this state of affairs, Wriothesley has been able to lead a secluded and private existence, living and traveling in Fontaine in a manner quite unbefitting of his status as the \"Duke.\"\nIndeed, even as pedestrians are saying things like \"fool around any further, and I'll punch you straight into the Fortress of Meropide,\" or \"this job is garbage, I'd rather be tightening screws at the bottom of the sea,\" this administrator of said underwater fortress might be walking the same stone-paved road to the café, on his way to grab some takeout for his afternoon tea."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Wriothesley does not, in fact, leave the Fortress often. Using the network of information and connections that he has personally built up over the years, he can gain any intelligence or resources he needs from the comfort of his office.\nHowever, he is also aware of one principle, which is that he cannot be imprisoned in that office by the host of duties that assails him, or he will either never get a good night's sleep, or soon find himself sleeping forever beneath the waves.\nOnly two things are necessary for him to run this place comfortably: Mora and manpower.\nFortunately, the Fortress itself is a giant factory, and he has quite the knack for making money — why, even the Palais Mermonia is one of his valued customers. Very importantly, giving the Palais some extra care is not considered to be hankering after power, and the Court of Fontaine for its part has little power of oversight over the Fortress, and thus simply represents valued customers and Mora — the more of both, the better. As such, Wriothesley is happy to comply with the Maison Gestion's exhaustively strict demands for proper documentation.\n(The Fontaine Research Institute of Kinetic Energy Engineering's incredible demand for Arkhium might have once made it a match for the Palais, but ever since the Institute became a mid-air tourist attraction, it has been forced to withdraw from the partnership. Till we meet again for another big contract, valued customer.)\nOne of the most common pitfalls for the immensely wealthy is over-valuing money and undervaluing people. This is, again, where Wriothesley is a fortunate man, for he was not born rich, and thus knows how important it is to get along with others.\nHe treats all who live at the Fortress equally. Be they criminals, guards, or ordinary staff, so long as they do what they should as they should, he will not nitpick.\nBut as for those who overstep their station — well then, words must be had. The underwater space they dwell in is quite enclosed, and for most, there is nowhere else to go. If possible, of course, Wriothesley would prefer everyone to be reasonable, but where reasoned words fail, he will use even more persuasive means.\nOccasionally overlooking the trivial, meaningless, but inevitable clashes between people is fair enough. Most people know better than to raise a real stink, while as for those who don't... there are places where they can go. Just as flowing water can cleanse itself, so can a functioning society get rid of its rot.\nAs such, not only has Wriothesley not been worked into oblivion, he has even found himself significant amounts of free time.\nOnce, the famous Champion Duelist Clorinde paid him a visit, and said this in passing: \"Why does it feel like you have even more free time than me? Your title wasn't bought, was it?\"\n\"One moment, please.\"\nSo saying, Wriothesley rifled through three drawers before producing several thick documents with a flourish. \"Now, let me see... 'excellent management'... 'leading tax contributor'... 'specially granted this title...' Well, what do you know? Good guess, that's pretty much what happened after all.\""
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "No titles may be bought in Fontaine, which prides itself upon impartial justice — certainly not with Mora. That idle exchange between Wriothesley and Clorinde was pure nonsense, just a bit of verbal horsing around to liven up an otherwise bone-dry business interaction.\nHowever, while the title of \"Duke\" itself was not bought, Wriothesley's accession to administrator of the Fortress of Meropide cannot be separated from \"money.\"\nCredit Coupons serve the role of currency within the Fortress. Here, Coupons are the medium of exchange, and this has been the case for a very long time, with only the details differing. When Wriothesley was incarcerated here as an inmate, trade in Coupons was much freer, and the range of items that could be bought more comprehensive. So long as you had enough of them in your pocket, you could obtain harmful drugs, know the winner of fixed matches, buy the hearts of people sitting on the fence, and even take away the right of others to continue breathing.\nMany of these were extralegal trades, but even the official channels had their various special tricks, too. If you lacked private connections, you could only buy food and water at exorbitant prices, and your fortune slip would not be some adage of unknown providence, but real, practical, extra work you had to finish by the end of the workday. Coupons in those days resembled nothing so much as the previous administrator's tool for controlling inmates.\nHurling lawbreakers into a lawless chaos to fend for themselves was indeed one way of doing things, but Wriothesley could not approve of it. He was perfectly willing to adapt to his environment, but if the environment was not suited for survival in the first place, then he certainly wasn't going to take this lying down.\nHe spent a great deal of time accumulating capital in the underground arena and used that money to make still more. He was always the observant type, and was quite persuasive, too, not to mention humble and reasonable — so before anyone knew it, he had already accumulated more Coupons than everyone else in the Fortress combined.\nThis accumulated wealth made him a man of high repute amongst his fellow inmates. And just as Wriothesley expected, the hammer of punishment soon came swinging down. In a single night, his Coupon account was emptied in one cruel stroke by the Fortress's administrator.\nBut as noted before, Wriothesley had a knack for convincing others. Words have the power to incite, and so long as all residents of the Fortress, rich and poor, understood that they could suffer a similar fate under such management, they would speak up for him. And if he acted in a sufficiently upright manner in a sufficiently impressive setting, others would join with him to fill the void in their hearts.\nAs such, he challenged the Fortress's previous administrator to a duel, in the name of fairness, justice, and order. Of course, their respective standings made poor grounds for this fight even at the best of times, but on that day, not a soul, inmate or guard, said a word in protest.\nVery fortunately, said administrator's last-minute flight saved Wriothesley from having to get another person's blood on his hands. But unfortunately, that day was also the day he would have finished serving his sentence, but with the administrator missing, there was no one to sign his exit papers.\nAnd so, he walked into the office in the middle of the Fortress, and took over all relevant duties."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "After he obtained access to old court documents, Wriothesley pulled out his own case file. There wasn't much in it, but even that was already all that the Fontaine authorities had been able to uncover at the time. According to the accounting ledger of his host family, he had been taken in as an abandoned infant — beyond that, there was no more relevant information.\nWhile browsing through his file, Wriothesley encountered some names that he had vague impressions of, and some other foggy faces briefly floated into view before fading to the sound of turning pages. Had he been willing, he could have used his connections to discover how these old companions were faring, but he dismissed those thoughts even as they entered his mind.\nTo them, he must represent a past they no longer wished to recall, and to him, these names no longer constituted any part of his life. He had a new identity, a new home, and new friends.\nThis was a strange experience for him. He'd met and known many people, and of all of them, very few could be considered friends — and he even knew quite a few who weren't human at all, something he puts down to Melusines really enjoying hanging out with humans. Their appearance belies their age, but the goodwill they show humans truly does have an innocence that only one's elders may have, a belief that these young human souls are good-hearted to begin with, and thus worthy of all care and faith in the infinite possibilities their futures hold.\nWriothesley himself has benefitted from this many times. When he was out on the streets with only the clothes on his back, it was a passing Melusine who gave him some hot soup. When he did not return completely unharmed from his bouts in the ring, Sigewinne would be waiting to greet him cheerily in the infirmary — not to mention how the officers of the Marechaussee Phantom have always been, within legal limits, his greatest help in investigating certain secret affairs.\nAs such, he tacitly permits their visits to the Fortress, even if this can sometimes mean unneeded trouble. As for anything they might need to know, the Head Nurse warns them, and there's no need to go into details. In any case, anyone so capable of pasting stickers everywhere while he's not looking is hardly someone whose well-being he needs to worry too much about."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Watching the crimson stain spread across the floorboards, a wildly inappropriate thought entered Wriothesley's mind. How many Melusine officers would it take to investigate all the traces of blood in this place?\nHis thoughts then immediately leapt elsewhere. To think that his blood was so like that of those who had deceived him that they could run together, melding effortlessly. How revolting.\nBut he had lost all capacity to vomit. Indeed, he could not move a muscle if he tried. Thought and warmth had both faded, and his mind had begun to fill with a seeping, murky fog — there was nothing in his life till now worth remembering.\nBut he did not die. Fate, it seemed, wanted him to live with the burden of sin, and so when he woke up in his hospital bed, both of his hands had been cuffed to the metal rails. A well-dressed woman was looking at him nervously from her distant chair. No doubt, she considered him to be some manner of young psychopath.\nProducing pen and paper, she asked for his name, and he paused for a good long time. His thoughts drifted to an obituary he once saw in the papers, in which there was a person who had lived to a ripe old age bearing a long and complicated name. He didn't particularly like it, but he no longer wished to use the one his foster parents had given him.\nThus did the woman write \"Wriothesley\" down, and inform him of his trial date (which was, would you know it, the day the doctors expected him to be able to get out of bed), before hurriedly taking her leave.\nThe trial itself went very smoothly, which he was grateful for. The blood he had spilled had stained his hands and taken root in his heart, driving him to yearn for a just conviction. He told all present of the full circumstances around the killing, and even added some details, such that there was no real room for argument in this case. Argue they still did, though, first on the matter of past cases related to orphans in an inconclusive search for any precedent patterns, and then somehow for clemency, believing that the people he'd taken vengeance on were villains themselves in the first place, and that he should thus not have to bear the burden of guilt.\nThis background noise did not change the ultimate result of the trial, and no sooner was it over than he was sent beneath the sea to serve time. Before he was to depart, the Gestionnaire in charge of recording his sentence asked him once again for his personal particulars.\n\"You're... Wriothesley, then? Your birthday, please.\"\n\"...Today.\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Wriothesley's mechanical gauntlets have gone through a great many iterations.\nTheir origin can be traced back to his escape from his foster home. Given his age and constitution then, it was impossible for him to deal with a single adult, let alone more. As such, he was forced to try his luck on the streets, picking up odd jobs and doing apprenticeships, learning the art of lockpicking and the creation of small gadgets. He wanted to make sure that he would be well-equipped when he finally returned to destroy that accursed place.\nHe fashioned a wrist-mounted device that could launch iron nails at high speed, penetrating any sufficiently soft surface. Unfortunately, it had limited uses, and lost all ability to function after a battle, just like him — and unlike him, it could not be saved.\nIn the past, the underground pankration fights of the Fortress of Meropide had neither a fixed venue nor set rules. To win and keep earning, he had to constantly modify his gauntlets, because a trick you used once could be used against you the next time. Furthermore, even if he didn't render them scrap on the field, they could still be stolen or wrecked in some other way by others. He certainly had to start over countless times.\nOnce he had the ability to garner better materials, his progress began to accelerate. He no longer needed to rely on chemicals to power the mechanism, and he would gain the support of professionals hailing from the Fontaine Research Institute. Those researchers enjoyed explaining the principles of mechanics to him even as they bellyached about all sorts of outrageous matters that occurred at the Institute. This, Wriothesley found fascinating — technological development increased the number of crimes that were committed, but they could also aid in solving them. Was that development then good or bad? That was hard to say.\nAt that point, he no longer participated in matches all that often, with the gauntlets being saved for dealing with the trickiest of problems. They no longer took life, and instead brought him great praise and respect.\nBut the people of the Fortress also know little of the crime he once committed. The only one who still remembers it like yesterday is Wriothesley himself. And no matter how much glory or repute he has earned, he still considers himself to be the same old Wriothesley he's always known.\nNeither a good person, nor a complete villain. He's just another soul, still living on in this world."
+      },
+      {
+        "Title": "The Wingalet",
+        "Context": "\"But thusly do the ancient writers concur — 'Oceans will rise, empires will fall, and the only constant is change.'\"\nAfter dealing with the spies that the Fatui planted, Wriothesley took a bit of a swim in the seas around the Fortress. He spent very little time in there, finding afterward that his skin had flushed a slight red tint, though it returned to normal shortly afterward. He did not go to the infirmary for a checkup, nor did he intend to reveal this to anyone. All manner of recent signs had indicated that the prophecy was gradually coming to pass, and all people, regardless of whether they believed in it or not, had their own views on the matter, and did not really need this extra information.\nHe had encountered some inmates with academic research backgrounds, though their numbers were relatively few, and they were prone to mad babbling even when clear-headed. They called this a malady common to all historians, and begged his forbearance in the matter. Wriothesley, of course, did not mind, and indeed, he was very interested in their arguments. And according to some schools of thought, if rising and falling were common in this world, then that great sea that once swallowed Remuria may perhaps return someday. In that sense, the prophecy was not really a prophecy, then, but was instead the expression of a rational pattern.\nAs with many other things, he was somewhat on the fence about this reasoning. The Fortress was no stranger to issues that needed \"mediation,\" with eyewitnesses often giving different testimonies. As such, he would reserve judgment on all records, and especially historical chronicles, for was poetic exaggeration not common practice in such writing? \"Even the great dragon beneath the abyssal depths submitted to his power...\" And how was anyone to know if this so-called great dragon was not just some very large vishap?\nOnce all embellishments were removed, what still remained were the actual things he needed to take note of.\nThroughout his as-yet unfinished life, Wriothesley has always seemed to be preparing for something. No matter what, he does not wish for people to be ruled by terror. And once the personal element of fear has been removed, what remains is something more akin to a sense of danger. He would like to make some preparations in response to the crisis, even if it might prove futile in the end.\nHistory is, after all, vast and terrible, and humanity is no more than seashells to be smashed upon the seashore by its great waves. Thus, he began to prepare for the creation of the Wingalet, expending vast resources and employing much manpower, though he did not put more stock into its success. It was a ship designed for fleeing disaster — an insurmountable chasm lay between it and golden Fortuna, bringer of civilization and glory.\nNonetheless, if it could indeed serve its purpose, Jurieu and Lourvine's many quarrels would not have been for naught.\n\"Thusly do the ancient writers concur — 'Oceans will rise, empires will fall, and the only constant is change.'\""
+      },
+      {
+        "Title": "Vision",
+        "Context": "Standing before the registration counter at the Fortress, Wriothesley reached into his pocket to produce the sheet of paper that had his name and the length of his sentence on it.\nBut out with that sheet also came a glass ball about the size of his palm.\nNo, wait, this wasn't just some random glass ball. Wriothesley blinked. When had he come into possession of this?\nThe person at the desk — a stern-looking lady with a wrinkled face — gasped, before steadying her shocked expression, gripping her pen tighter. Her lips moved, and moved again, but at last closed.\n\"She must have a lot of experience about living here,\" he immediately thought, and so he did his best to hold the Vision in his palm, before asking in a small voice, \"Miss, may I ask...\"\nThe senior registrar did not reply. She took the slip of paper from him and looked coldly behind him, as if sizing up the next criminal who'd come to register. However, when she had finished filling the necessary information in, she had written something unnecessary in the margins of the documents she passed back to him. \"Hide it well.\"\nWriothesley realized immediately that life at the Fortress would be even harder than roaming the streets.\nHe felt fortunate that he had blocked everyone behind him from seeing what had happened, and more fortunate still that this kind-hearted registrar had been willing to give him a reminder. Sadly, he would not see her again, though this was no surprise, since staff turnover at the Fortress was quite high in those days.\nThe first thing he did upon officially entering the Fortress was to quietly unravel a few threads of his clothing before using fine wire to sew his Vision into the space between the layers of fabric.\nHe knew a thing or two about being homeless — certainly, that the biggest problem was never getting a hold of resources, but keeping them. People could not avoid sleeping, and occasionally being defenseless. The things you owned could be taken away with ease once you were asleep, and no one would call it a robbery.\nAnd a Vision was no ordinary treasure. There were sure to be those who would be interested in it for various reasons, and Vision wielders were often magnets for ill-intentioned gazes.\nIn the days that followed, his suspicions would be verified, for in gossip alone he heard of two to three Vision thefts. As for what happened afterward and the fate of the victims, various inconsistent rumors existed that Wriothesley pretended to pay little mind to.\nHe still felt quite fortunate, of course, but it was hard to feel genuine happiness at staying safe off the backs of other peoples' tragic fates.\nFor a long time afterward, he would pretend that he had not been favored by the gods, and in truth, it was not hard — merely a return to his scrappy past. He could handle that much.\nThis persisted until a time when his age had nearly doubled, and he received an official invitation from the Palais Mermonia.\nCommon practice dictated that citizens who were to receive an honorary title must attend an investiture ceremony, and said ceremony was said to be far more involved for the granting of a title such as \"Duke.\"\nWriothesley tactfully declined attending the ceremony on the grounds of his unique duties, expressing the desire to simply sign and take the relevant certificates. Quite un-Fontainian of him, really, to dislike the spotlight and prefer to just muddle along.\nMany workdays and much correspondence later, the Palais finally agreed.\nBefore leaving the underwater stronghold, Wriothesley took his Vision up once more, for the first time in many years. Weighing it in his palm, he found it lighter than before, and smaller to boot. Finding a good spot on his clothes, he hung it there.\nThe first to comment on it was the Iudex, who was to bestow the title upon him. Neuvillette's smile was suitably polite, but he somehow seemed more pleased than Wriothesley himself. \"Congratulations,\" said the Iudex. \"You have found something you wish to do at last, I see.\"\nWriothesley smiled back by way of reply, but made no further comment."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 208600,
+      "Name": "Night's Chilling Howl",
+      "Description": "Wriothesley's outfit. It radiates both dignity and strength, with the rugged gray wolf chain serving as the mark of his rulership over the Fortress of Meropide.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104164,
+    113052,
+    101239,
+    112085,
+    104346,
+    113047
+  ],
+  "NameCard": {
+    "Name": "Wriothesley: Detention",
+    "Description": "Namecard style.\nMaintaining order at the Fortress of Meropide is no simple affair. As such, a deft and sometimes firm hand is needed — along with a small pinch of truly regrettable cruelty.",
+    "Icon": "UI_NameCardIcon_Wriothesley",
+    "PicturePrefix": "UI_NameCardPic_Wriothesley"
+  }
+}

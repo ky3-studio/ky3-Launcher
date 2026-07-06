@@ -1,0 +1,1075 @@
+{
+  "Id": 10000027,
+  "PromoteId": 27,
+  "Sort": 15,
+  "Body": 3,
+  "Icon": "UI_AvatarIcon_Ningguang",
+  "SideIcon": "UI_AvatarIcon_Side_Ningguang",
+  "Name": "Ningguang",
+  "Description": "The Tianquan of the Liyue Qixing. Her wealth is unsurpassed in all of Teyvat.",
+  "BeginTime": "2020-09-15T04:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 10,
+  "BaseValue": {
+    "HpBase": 820.6119,
+    "AttackBase": 17.808,
+    "DefenseBase": 48.069
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 2731,
+        "Proud": {
+          "Descriptions": [
+            "Normal Attack DMG|{param1:F1P}",
+            "Charged Attack DMG|{param2:P}",
+            "DMG per Star Jade|{param3:P}",
+            "Charged Attack Stamina Cost|{param4:F1}",
+            "Plunge DMG|{param5:F1P}",
+            "Low/High Plunge DMG|{param6:P}/{param7:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 273101,
+              "Level": 1,
+              "Parameters": [
+                0.28,
+                1.7408,
+                0.496,
+                50,
+                0.568288,
+                1.136335,
+                1.419344
+              ]
+            },
+            {
+              "Id": 273102,
+              "Level": 2,
+              "Parameters": [
+                0.301,
+                1.87136,
+                0.5332,
+                50,
+                0.614544,
+                1.228828,
+                1.534872
+              ]
+            },
+            {
+              "Id": 273103,
+              "Level": 3,
+              "Parameters": [
+                0.322,
+                2.00192,
+                0.5704,
+                50,
+                0.6608,
+                1.32132,
+                1.6504
+              ]
+            },
+            {
+              "Id": 273104,
+              "Level": 4,
+              "Parameters": [
+                0.35,
+                2.176,
+                0.62,
+                50,
+                0.72688,
+                1.453452,
+                1.81544
+              ]
+            },
+            {
+              "Id": 273105,
+              "Level": 5,
+              "Parameters": [
+                0.371,
+                2.30656,
+                0.6572,
+                50,
+                0.773136,
+                1.545944,
+                1.930968
+              ]
+            },
+            {
+              "Id": 273106,
+              "Level": 6,
+              "Parameters": [
+                0.392,
+                2.43712,
+                0.6944,
+                50,
+                0.826,
+                1.65165,
+                2.063
+              ]
+            },
+            {
+              "Id": 273107,
+              "Level": 7,
+              "Parameters": [
+                0.42,
+                2.6112,
+                0.744,
+                50,
+                0.898688,
+                1.796995,
+                2.244544
+              ]
+            },
+            {
+              "Id": 273108,
+              "Level": 8,
+              "Parameters": [
+                0.448,
+                2.78528,
+                0.7936,
+                50,
+                0.971376,
+                1.94234,
+                2.426088
+              ]
+            },
+            {
+              "Id": 273109,
+              "Level": 9,
+              "Parameters": [
+                0.476,
+                2.95936,
+                0.8432,
+                50,
+                1.044064,
+                2.087686,
+                2.607632
+              ]
+            },
+            {
+              "Id": 273110,
+              "Level": 10,
+              "Parameters": [
+                0.504,
+                3.13344,
+                0.8928,
+                50,
+                1.12336,
+                2.246244,
+                2.80568
+              ]
+            },
+            {
+              "Id": 273111,
+              "Level": 11,
+              "Parameters": [
+                0.53312,
+                3.314483,
+                0.944384,
+                50,
+                1.202656,
+                2.404802,
+                3.003728
+              ]
+            },
+            {
+              "Id": 273112,
+              "Level": 12,
+              "Parameters": [
+                0.5712,
+                3.551232,
+                1.01184,
+                50,
+                1.281952,
+                2.563361,
+                3.201776
+              ]
+            },
+            {
+              "Id": 273113,
+              "Level": 13,
+              "Parameters": [
+                0.60928,
+                3.787981,
+                1.079296,
+                50,
+                1.361248,
+                2.721919,
+                3.399824
+              ]
+            },
+            {
+              "Id": 273114,
+              "Level": 14,
+              "Parameters": [
+                0.64736,
+                4.02473,
+                1.146752,
+                50,
+                1.440544,
+                2.880478,
+                3.597872
+              ]
+            },
+            {
+              "Id": 273115,
+              "Level": 15,
+              "Parameters": [
+                0.68544,
+                4.261478,
+                1.214208,
+                50,
+                1.51984,
+                3.039036,
+                3.79592
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10271,
+        "Name": "Sparkling Scatter",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nShoots gems that deal <color=#FFE699FF>Geo DMG</color>.\nUpon hit, this grants Ningguang 1 Star Jade.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of stamina to fire off a giant gem that deals <color=#FFE699FF>Geo DMG</color>.\nIf Ningguang has any Star Jades, unleashing a Charged Attack will cause the Star Jades to be fired at the enemy as well, dealing additional DMG.\n\n<color=#FFD780FF>Plunging Attack</color>\nGathering the might of Geo, Ningguang plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#FFE699FF>AoE Geo DMG</color> upon impact with the ground.",
+        "Icon": "Skill_A_Catalyst_MD"
+      },
+      {
+        "GroupId": 2732,
+        "Proud": {
+          "Descriptions": [
+            "Inherited HP|{param3:F1P}",
+            "Skill DMG|{param2:P}",
+            "CD|{param4:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 273201,
+              "Level": 1,
+              "Parameters": [
+                -0.499,
+                2.304,
+                0.501,
+                12
+              ]
+            },
+            {
+              "Id": 273202,
+              "Level": 2,
+              "Parameters": [
+                -0.469,
+                2.4768,
+                0.531,
+                12
+              ]
+            },
+            {
+              "Id": 273203,
+              "Level": 3,
+              "Parameters": [
+                -0.439,
+                2.6496,
+                0.561,
+                12
+              ]
+            },
+            {
+              "Id": 273204,
+              "Level": 4,
+              "Parameters": [
+                -0.4,
+                2.88,
+                0.6,
+                12
+              ]
+            },
+            {
+              "Id": 273205,
+              "Level": 5,
+              "Parameters": [
+                -0.37,
+                3.0528,
+                0.63,
+                12
+              ]
+            },
+            {
+              "Id": 273206,
+              "Level": 6,
+              "Parameters": [
+                -0.34,
+                3.2256,
+                0.66,
+                12
+              ]
+            },
+            {
+              "Id": 273207,
+              "Level": 7,
+              "Parameters": [
+                -0.301,
+                3.456,
+                0.699,
+                12
+              ]
+            },
+            {
+              "Id": 273208,
+              "Level": 8,
+              "Parameters": [
+                -0.262,
+                3.6864,
+                0.738,
+                12
+              ]
+            },
+            {
+              "Id": 273209,
+              "Level": 9,
+              "Parameters": [
+                -0.223,
+                3.9168,
+                0.777,
+                12
+              ]
+            },
+            {
+              "Id": 273210,
+              "Level": 10,
+              "Parameters": [
+                -0.184,
+                4.1472,
+                0.816,
+                12
+              ]
+            },
+            {
+              "Id": 273211,
+              "Level": 11,
+              "Parameters": [
+                -0.145,
+                4.3776,
+                0.855,
+                12
+              ]
+            },
+            {
+              "Id": 273212,
+              "Level": 12,
+              "Parameters": [
+                -0.106,
+                4.608,
+                0.894,
+                12
+              ]
+            },
+            {
+              "Id": 273213,
+              "Level": 13,
+              "Parameters": [
+                -0.067,
+                4.896,
+                0.933,
+                12
+              ]
+            },
+            {
+              "Id": 273214,
+              "Level": 14,
+              "Parameters": [
+                -0.028,
+                5.184,
+                0.972,
+                12
+              ]
+            },
+            {
+              "Id": 273215,
+              "Level": 15,
+              "Parameters": [
+                0.011,
+                5.472,
+                1.011,
+                12
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10272,
+        "Name": "Jade Screen",
+        "Description": "Ningguang creates a Jade Screen out of gold, obsidian, and her great opulence, dealing <color=#FFE699FF>AoE Geo DMG</color>.\n\n<color=#FFD780FF>Jade Screen</color>\n·Blocks opponents' projectiles.\n·Endurance scales based on Ningguang's Max HP.\n\nJade Screen is considered a <color=#FFE699FF>Geo Construct</color> and can be used to block certain attacks, but cannot be climbed. Only one Jade Screen may exist at any one time.\n\n<i>The canvas of stars is written upon this jade screen.</i>",
+        "Icon": "Skill_S_Ningguang_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 2739,
+      "Proud": {
+        "Descriptions": [
+          "DMG Per Gem|{param1:P}",
+          "CD|{param2:F1}s",
+          "Energy Cost|{param3:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 273901,
+            "Level": 1,
+            "Parameters": [
+              0.8696,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 273902,
+            "Level": 2,
+            "Parameters": [
+              0.93482,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 273903,
+            "Level": 3,
+            "Parameters": [
+              1.00004,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 273904,
+            "Level": 4,
+            "Parameters": [
+              1.087,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 273905,
+            "Level": 5,
+            "Parameters": [
+              1.15222,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 273906,
+            "Level": 6,
+            "Parameters": [
+              1.21744,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 273907,
+            "Level": 7,
+            "Parameters": [
+              1.3044,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 273908,
+            "Level": 8,
+            "Parameters": [
+              1.39136,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 273909,
+            "Level": 9,
+            "Parameters": [
+              1.47832,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 273910,
+            "Level": 10,
+            "Parameters": [
+              1.56528,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 273911,
+            "Level": 11,
+            "Parameters": [
+              1.65224,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 273912,
+            "Level": 12,
+            "Parameters": [
+              1.7392,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 273913,
+            "Level": 13,
+            "Parameters": [
+              1.8479,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 273914,
+            "Level": 14,
+            "Parameters": [
+              1.9566,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 273915,
+            "Level": 15,
+            "Parameters": [
+              2.0653,
+              12,
+              40
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10274,
+      "Name": "Starshatter",
+      "Description": "Gathering a great number of gems, Ningguang scatters them all at once, sending homing projectiles at her opponents that deal massive <color=#FFE699FF>Geo DMG</color>.\nIf Starshatter is cast when a Jade Screen is nearby, the Jade Screen will fire additional gem projectiles at the same time.\n\n<i>Stars shatter. Silence falls.</i>",
+      "Icon": "Skill_E_Ningguang_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 2721,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 272101,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 272101,
+        "Name": "Backup Plan",
+        "Description": "When Ningguang is in possession of Star Jades, her Charged Attack does not consume Stamina.",
+        "Icon": "UI_Talent_S_Ningguang_02"
+      },
+      {
+        "GroupId": 2722,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 272201,
+              "Level": 1,
+              "Parameters": [
+                0.12,
+                10
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 272201,
+        "Name": "Strategic Reserve",
+        "Description": "A character that passes through the <color=#FFD780FF>Jade Screen</color> will gain a 12% <color=#FFE699FF>Geo DMG Bonus</color> for 10s.",
+        "Icon": "UI_Talent_S_Ningguang_06"
+      },
+      {
+        "GroupId": 2723,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 272301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 272301,
+        "Name": "Trove of Marvelous Treasures",
+        "Description": "Displays the location of nearby <color=#FFD780FF>ore veins used in forging</color> on the mini-map.",
+        "Icon": "UI_Talent_Collect_Ore"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 271,
+        "Name": "Piercing Fragments",
+        "Description": "When a Normal Attack hits, it deals AoE DMG.",
+        "Icon": "UI_Talent_S_Ningguang_01"
+      },
+      {
+        "Id": 272,
+        "Name": "Shock Effect",
+        "Description": "When <color=#FFD780FF>Jade Screen</color> is shattered, its CD will reset.\nCan occur once every 6s.",
+        "Icon": "UI_Talent_S_Ningguang_05"
+      },
+      {
+        "Id": 273,
+        "Name": "Majesty Be the Array of Stars",
+        "Description": "Increases the Level of <color=#FFD780FF>Starshatter</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Ningguang_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 274,
+        "Name": "Exquisite be the Jade, Outshining All Beneath",
+        "Description": "<color=#FFD780FF>Jade Screen</color> increases nearby characters' Elemental RES by 10%.",
+        "Icon": "UI_Talent_S_Ningguang_03"
+      },
+      {
+        "Id": 275,
+        "Name": "Invincible Be the Jade Screen",
+        "Description": "Increases the Level of <color=#FFD780FF>Jade Screen</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Ningguang_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 276,
+        "Name": "Grandeur Be the Seven Stars",
+        "Description": "When <color=#FFD780FF>Starshatter</color> is used, Ningguang gains 7 Star Jades.",
+        "Icon": "UI_Talent_S_Ningguang_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Eclipsing Star",
+    "Detail": "The Tianquan of the Liyue Qixing. Her wealth is unsurpassed in all of Teyvat.",
+    "Association": 2,
+    "Native": "Liyue Qixing",
+    "BirthMonth": 8,
+    "BirthDay": 26,
+    "VisionBefore": "Geo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Opus Aequilibrium",
+    "CvChinese": "杜冥鸦",
+    "CvJapanese": "大原さやか",
+    "CvEnglish": "Erin Ebers",
+    "CvKorean": "Kwak Kyu-mi",
+    "CookBonus": {
+      "OriginItemId": 108093,
+      "ItemId": 108139,
+      "InputList": [
+        100061,
+        110001
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "I am Ningguang, Tianquan of Qixing. You wish to trade? You be my personal bodyguard, and I will show you how to get ahead in Liyue."
+      },
+      {
+        "Title": "Chat: Antiques",
+        "Context": "Even if an antique is priceless, the happiness it brings lasts for only the moment that you obtain it."
+      },
+      {
+        "Title": "Chat: Trade War",
+        "Context": "In a trade war, the perfect hunter leaves no trace."
+      },
+      {
+        "Title": "Chat: Investments",
+        "Context": "We should look for a new investment. Mora doesn't grow on trees."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Huh, it's raining. Fetch an umbrella for me, would you?"
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Nothing more than regular snowfall. One day I'll take you to see the \"snow\" that falls over Liyue."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "Calm weather? Do not trust your eyes. Your eyes can lie to you."
+      },
+      {
+        "Title": "When the Wind Is Blowing",
+        "Context": "Gales like this can be the demise of fishermen, not to mention... Heh, never mind."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "Morning. Report your affairs, in order of priority."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Liuli Pavilion or Xinyue Kiosk. Which would you prefer to go to for lunch?"
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "The tea house has no more rooms? Then come, sit in the Jade Chamber... if you can afford the price."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Sure. Go rest. If anything important comes up, I will be sure to send for you."
+      },
+      {
+        "Title": "About Ningguang: Worldview",
+        "Context": "Be it simple price negotiation or a full-blown trade war, momentum and bargaining chips are but minor factors. To win, you need to be first to find out what cards your opponent is holding."
+      },
+      {
+        "Title": "About Ningguang: Impression",
+        "Context": "Your impressions of me have changed? Haha, well, at first I required your strength, so naturally I had to be as cordial as possible. But now that we are partners bound by contract, we may do away with such pretentious formalities."
+      },
+      {
+        "Title": "About Us: Rumors",
+        "Context": "I suppose you've heard enough rumors about me. Hehe... What kind of person am I? I shall leave that for you to decide... Of course, your judgment will become a part of the rumor."
+      },
+      {
+        "Title": "About Us: Observing",
+        "Context": "You've been with me for some time now. Have you learned to observe? Then observe me. Observe me right down to my very core."
+      },
+      {
+        "Title": "About Us: Jade Chamber",
+        "Context": "Come forward, stand beside me. Do you see the Jade Chamber? At first it was just a room, and now it clouds Liyue. When the time comes that it hangs above all of the seven nations, you shall stand by my side on that day too."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "There's no need to use a Vision in affairs that Mora can solve. As far as affairs only a Vision can solve go, I know of only one..."
+      },
+      {
+        "Title": "Something to Share: Banker",
+        "Context": "Gamblers always place their bets on the next dice roll... But the bankers always have the last laugh, and they never touch a single die."
+      },
+      {
+        "Title": "Something to Share: Goal",
+        "Context": "The departure of Rex Lapis will be no small test for both the Qixing and the city of Liyue. Seldom has any matter kept me tossing and turning at night like recent events.\nNevertheless, I shall not lose sight of my goal. There will come a day when the shadow cast by the Jade Chamber reaches every end of Teyvat."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "In Liyue's ancient texts, there's no shortage of mentioning the beauty of the glaze lily, but in the modern era, the flower is on the brink of extinction. Now they can only be found in Yujing Terrace, and as such come with a hefty price tag."
+      },
+      {
+        "Title": "About Beidou: Fines",
+        "Context": "That... captain. She clearly receives the adoration of many, but will always be the first to disregard the rules. The fines she has paid would be enough to buy her a whole new ship..."
+      },
+      {
+        "Title": "About Beidou: Attitude",
+        "Context": "Perhaps you've never heard me speak like this. All that can be said has been said — both the good and the bad — but she still does as she pleases. Forget it. Keep Beidou out of my sight."
+      },
+      {
+        "Title": "About Zhongli",
+        "Context": "Zhongli... Of the Wangsheng Funeral Parlor. He's very versed in a great deal of affairs. Although... such excellent pawns are of no use to me until I know their weaknesses."
+      },
+      {
+        "Title": "About Xingqiu",
+        "Context": "The second son of the Feiyun Commerce Guild. People like him can't stand the sight of me, which is only to be expected. I have no intention of troubling him either. Those who have different beliefs should not work together."
+      },
+      {
+        "Title": "About Xiangling",
+        "Context": "That girl from Wanmin Restaurant... Her suspicion towards me is always written all over her face... Hehe, I wonder what face she would make if only she knew how much I helped finance that restaurant..."
+      },
+      {
+        "Title": "About Ganyu",
+        "Context": "One cannot afford to be overly reliant on others — even when it comes to Ganyu. There is a Liyue saying which goes, \"even the most meticulous can fall prey to happenstance.\" When there are important affairs to deal with, it is always safer to investigate and resolve them personally."
+      },
+      {
+        "Title": "About Yaoyao",
+        "Context": "I presume you mean the girl whom Ganyu has taken under her wing. Do not worry, I have no plans to make this matter public. I am content to extend some leniency to the odd bit of mischievous maneuvering by that boat captain. One thing, though — Yaoyao seems to have become somewhat enamored with seafood lately. You should try to convince her to include some more fruits and vegetables in her diet."
+      },
+      {
+        "Title": "About Keqing",
+        "Context": "The Yuheng... She has changed a lot recently. But is Liyue better off with the Yuheng we have now, or the Yuheng we used to know? Only time will tell."
+      },
+      {
+        "Title": "About Jean",
+        "Context": "The Acting Grand Master of Mondstadt, a strict and impeccable woman. Her flawless etiquette knows no fault, even her letters are meticulously written and creased according to the prescribed rules. It is such easily overlooked details that offer a glimpse into the true qualities of one's character."
+      },
+      {
+        "Title": "About Yanfei",
+        "Context": "Yanfei? I suppose you could say she's a dear rival of mine... Were she not so deft at explaining the meanders of the law and providing her clients with all sorts of cunning suggestions, it would take me many more months to identify existing loopholes in the legal codices and tighten them one by one."
+      },
+      {
+        "Title": "About Shenhe",
+        "Context": "How is Miss Shenhe doing as of late? Please, look out for her whenever you can. I am most grateful to both of you for your assistance with rebuilding the Jade Chamber. Ahem, and on a more personal note — please know that if you are ever free, a cup of the finest tea will always be waiting for you here."
+      },
+      {
+        "Title": "About Yun Jin",
+        "Context": "Yun Jin... Are you able to appreciate her performances? It might be difficult at first, but I would encourage you to give it a chance. The reason I decided to invest into her opera troupe is quite simple: Elegant art forms like these deserve to be passed down to future generations."
+      },
+      {
+        "Title": "About Yelan",
+        "Context": "She's a very interesting character. I can say with the utmost confidence that she is someone I trust unreservedly. She handles herself impeccably, which means she stays beyond reproach. Hehe, since you both have high intelligence in common, hopefully you will get along very well."
+      },
+      {
+        "Title": "About Xianyun",
+        "Context": "#I plan to have Lady Xianyun over for a casual conversation over tea in a few days. I happen to have in my possession a number of mechanical devices, and I would be most interested to hear her insights on their design and use. It would also be a fine opportunity to hear about her experiences as an adeptus adapting to a new life in Liyue Harbor. All I require now is a suitable candidate to deliver the invitation to her on my behalf... Would you be interested, {NICKNAME}?"
+      },
+      {
+        "Title": "About the White Horse Adeptus",
+        "Context": "I was surprised when I learned that a new adeptus had joined the ranks. The White Horse Adeptus... It's a good thing she prefers to spend her time traveling, or I'd have to accept the truth behind Yelan's favorite adepti quip. ...You want to hear it? Heh, okay. I quote: \"Everyone says that the adepti want peace and tranquility, but I think they just like hanging around Liyue...\""
+      },
+      {
+        "Title": "More About Ningguang: I",
+        "Context": "Seeing as it's you, there's no need to keep up the formalities. You can be a little more casual. But I still ask that you respect my time. If you have something to say, be concise — I have no time to waste."
+      },
+      {
+        "Title": "More About Ningguang: II",
+        "Context": "I've always believed that children are the most naive and innocent. The reports they give me are of the most value. So what about you? What will you have for me?"
+      },
+      {
+        "Title": "More About Ningguang: III",
+        "Context": "I've been thinking about something lately. If I were to keep you in Liyue, perhaps... at the right time, I might be able to leverage this city to... For now, it's mere conjecture. I should really consider whether the investment is worth it some more."
+      },
+      {
+        "Title": "More About Ningguang: IV",
+        "Context": "You can learn from me, and use Mora to make things a little easier for yourself. But remember, relationships built on Mora can only be relied on for a time. Hehe... and that is why I have never brought Mora into our relationship."
+      },
+      {
+        "Title": "More About Ningguang: V",
+        "Context": "This is truly a great investment. Sure, no Mora has been made from it, but the time I've spent with you is already a solid return. Haha, seems I win again — I put my money on the right person."
+      },
+      {
+        "Title": "Ningguang's Hobbies",
+        "Context": "Care for a game of Liyue Millennial? It'll give me an opportunity to see exactly how good you are as a player."
+      },
+      {
+        "Title": "Ningguang's Troubles",
+        "Context": "Concerns? If I told you of the concerns of the Liyue Qixing, do you think your shoulders could bear the burden? And, if you ever made the mistake of mentioning them to others..."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "A slow-boiled soup of leftover chicken and pork bones drenched over some cabbage leaves. I have few culinary requirements. Having a few staple dishes like this is enough."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I've come across those who demand golden crab for every meal. Though it all seems so grandiose, I really have no desire for such frivolousness. If you're ever thinking of taking me out for such a dinner, you'd be better off just giving the Mora to me directly."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Mmm... You have surpassed my expectations, again."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "With some things, if you haven't grasped the essentials, all the hard work in the world can go to waste... Know what I mean?"
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Ugh... It's the thought that counts."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "#{M#These are some of Liyue's finest brocades, woven from Silk Flowers. This one is for you, and this one... I hope that someday soon, you will be able to give it to your sister, and I hope that she'll like it. I wish you both a happy birthday.}{F#This is one of Liyue's finest brocades, woven from Silk Flowers. You can use it to have some clothing made, and have a happy birthday.}"
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "There's no style in resorting to violence. It's simply the worst of all the bad decisions you could make."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "Cashing in time and Mora for power... Interesting. This shows their true value."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "What is it that you hold so dear that is making you so persistent...? No, don't tell me. Give me more time to understand you myself."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I'm usually not so quick to place my trust in others, but it seems I will no longer be able to make such claims. You've done splendidly. If only I had more like you... No, perhaps... you alone are enough."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "It's nothing."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Don't waste my time."
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Hmph! Give up."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Your life is mine."
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Submit!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Goodbye!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "A keen eye."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "We can't have treasure unaccounted for."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Wealth... why settle for less than more?"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "You dare to hit me?"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "I'll remember that."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Urgh!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "You're out of moves."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Given the circumstances, I'm happy to help."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "We are all but pawns..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "The victor has been decided..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Is this the end of Tianquan?"
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "Ugh... rude."
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Ugh! You wait!"
+      },
+      {
+        "Title": "Heavy Hit Taken: II",
+        "Context": "Ugh! Blood repays blood!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Understood."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Let's make haste."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Don't disappoint me."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "The \"Liyue Qixing\" controls all of the commerce that takes place in Liyue Harbor. Its highly-revered position is also coveted by many. Their primary ruling is to play things safe and keep a low profile.\nThe \"Tianquan\" of the Qixing, Ningguang, is the only exception. \nShe is seen as an excellent merchant in the eyes of her rivals, a friendly elder sister to kids, a socialite at the banquets of Yujing Terrace, and a connoisseur of desserts... Ningguang is the talk of the town, and everyone seems to know everything about her. However, they all seem to tell a different story of Ningguang, with great discrepancies between the versions.\nStill, if there's one thing all the rumors about her agree on, it's that Ningguang is someone truly extraordinary."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Up above Liyue Harbor, there is a floating palace held up by Plaustrite. It is known as the \"Jade Chamber,\" and it belongs to Ningguang.\nOn a clear day, one can see almost all of Liyue Harbor from the decks outside the palace gates.\nWhenever Ningguang has important business matters to handle, she invariably comes to this floating palace. She strictly forbids anyone from accessing the premises except for her three trusted confidants. Her confidants sort through the relevant information, summarize it and hang the summaries on the wall, while Ningguang rests against the railings, enjoying the view of Liyue and quietly mulling everything over.\nShe is certain to arrive at the perfect solution before her confidants have finished adding everything to the wall. Once she has made her decision she shreds everything and throws it out of the window, creating something of a snowstorm of paper.\nThe handwriting on the shredded pieces of paper stands out like ink in the snow to all of the merchants in Liyue Harbor.\nFor they know that whenever Ningguang's shredded snow falls, a huge change is about to descend on the business community."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "\"Ningguang knows everything,\" foreigners will often find the Liyue locals warning them.\nLoophole-hunting guilds, market-manipulating hoarders, smugglers coming ashore with their illicit goods... The Tianquan knows all the details, good, bad, and ugly.\nOnce, an alchemist from Sumeru was traveling in Liyue and unwittingly happened across the records of a certain noctilucous jade transaction involving the Blackcliff Forge ten years prior. That night, someone from Ningguang's inner circle knocked on his window and invited him to join Ningguang in the Jade Chamber for a talk.\nRumor has it that Ningguang has enchanted the Jade Chamber in such a way that allows her to eavesdrop on everyone in the city's private conversations...\nThe truth is that Ningguang's eyes and ears are in fact the children who play on the streets in Liyue Harbor.\nBetween them, they are aware of every confidential meeting, every private conversation, and every new visitor to the city. When Ningguang gathers them around, her promise of delicious treats proves to be an irresistible incentive, and so they tell her everything they know.\nOnce she has finished carefully cross-referencing everything she has learned from the children against other sources, there is no secret hidden from her in Liyue Harbor.\nShe understands the value of reciprocity more than anyone, which is why she is more than willing to invest time in mingling with the common folk.\nOn top of that, she does actually like seeing the children smile."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Ningguang's attitude to making money is largely the same as anyone else's: You can never have enough.\nBut money to her is more than just a sign of wealth — each Mora is a trophy of a hard-won victory.\nNingguang is kind and friendly toward the common folk, but this is a side of her that none of her business associates could ever hope to see.\nTo her, the business world is a playground, and the zero-sum games are the most exciting. Each round she wins against a wealthy merchant brings a gleeful smile to her face as they sigh and reluctantly hand over the Mora, and nothing makes her happier than seeing the guilds bow to her wishes.\nEvery victory in this game adds to the wealth of the Liyue Qixing. Liyue Harbor prospers as a result, and this in turn creates more business opportunities and more profit for Ningguang. Every member of the Liyue Qixing is more than happy with this perfect cycle of interlocking interests.\nPeople often ask Ningguang why she is still doing business in Liyue Harbor when she has already acquired such vast wealth.\n\"Vast wealth is a wonderful thing.\"\nNingguang patiently replies, never able to understand why people would ask such foolish questions.\n\"Adding another Mora to the pot can hardly make it any less wonderful, now, can it?\""
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Everyone living in Liyue Harbor has to abide by the rules. Those who do so will see their interests protected, while those who violate the rules will be punished accordingly.\nThe rules are rooted in ancient laws set down by Morax, Liyue Harbor's divine protector, and they are absolute. Over the millennia, each Tianquan has introduced amendments to the rules to ensure they are well aligned with current societal needs.\nThe laws are compiled and published along with a 279-page commentary, and a copy is given to each citizen of Liyue.\nNingguang likes it this way: Law and order is good for business, and she understands the intricacies of the laws that forge the order better than anyone else.\nHowever, there was a certain ship captain by the name of Beidou who acted with flagrant disregard for the rules, smuggling contraband goods by leveraging her exotic cargo and exclusive business intelligence. To Ningguang, captain Beidou was the black sheep of Liyue Harbor's business community.\nAs Tianquan, it fell to Ningguang to impose heavy fines on Beidou each time she transgressed the rules. But much to her consternation, Beidou seemed to take these fines in her stride, like water off a duck's back.\nOutside of the official channels, too, Ningguang tried to find ways to implore Beidou to change her ways and stop putting the Qixing in such a difficult position. In response, Beidou simply explained away her actions as \"enacting justice,\" \"helping the poor\" and \"keeping the sailors in their jobs.\" As a firm believer in the principle of live and let live, Beidou had no time for Ningguang's advice.\nIn the end, Ningguang agreed to disagree and gave up trying to convince the stubborn Beidou to change."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Being the charming and wealthy woman that she is, Ningguang has never had a shortage of suitors.\nIt seems that every eligible bachelor, from the young esquires of Yujing Terrace, to accomplished young businessmen, to renowned sea captains, has at some point invested substantial energy into trying to win Ningguang's affection. One rumor even has it that a wealthy businessman from the Court of Fontaine signed a major trade deal with Liyue Harbor for the sole reason that it would mean he could see Ningguang more often.\nNingguang treats all her suitors with an equal measure of kindness and grace, but also keeps them at distance — enough to keep them interested but not push them away. Curiosity got the better of everyone in town, and now everyone wants to know: Who is Ningguang's lover? \nLittle do they know, Ningguang has no love for finite things, and will certainly not be bound by something that is finite.\nThe Jade Chamber, a floating palace above Liyue Harbor, belongs to Ningguang alone. It started out about the size of a room, but has since grown so large that in the moonlight it casts its shadow over the whole of Liyue.\nA portion of Ningguang's seemingly limitless wealth goes towards hiring skilled craftsmen to continue the expansion and refurbishment of the Jade Chamber, ensuring that it becomes ever more extravagant as time goes by.\nTo Ningguang, the Jade Chamber is a symbol of her wealth and power, and a sign that her business is flourishing.\nSave for Mora, it is the thing Ningguang loves most in the world — because it is infinite.\nOne day, she insists, it will cast its shadow over all the seven nations of Teyvat."
+      },
+      {
+        "Title": "Chess Game: Liyue Millennial",
+        "Context": "Ningguang invented a form of chess to pass the time.\nThis chessboard not only contains to-scale reproductions of Liyue Harbor's natural and urban geography, vendors, tea houses, shops, hotels and miscellaneous stores, but it also contains six, ten and twelve-sided dice (among others). Players use the dice to determine how far their chess pieces move, and landing on various locations will trigger different events. Victory in-game is decided by the number of counters in each player's hands.\nThe rules can change at any time according to Ningguang's fancies, and when playing with others, she will always follow the newest rule set that she has on hand.\nWhen she's truly feeling the spirit, she will even design new rules on the spot — no one has yet beaten her at this game, and she has now reached the 32.6th edition of her rulebook.\nShe marketed the 8th edition of the game to the general public, believing it to be the easiest to understand, but it proved to still be far too complicated for ordinary folk.\nNonetheless, people flock to purchase sets on account of the beauty and intricacy of the model pieces.\nIn truth, more people buy it for the models than for the game."
+      },
+      {
+        "Title": "Vision",
+        "Context": "No one knows how Visions are created — they have always seemed to just appear out of thin air, leaving the countless unacknowledged in the lurch without a clue as to how to get one.\nAs for Visions left behind after their users die, they are masterless husks without any elemental power, nor is any method of reawakening them known, save for a tiny chance that it may resonate with another — and only one such \"other\" at a time...\nNingguang's first thought upon seeing such an object a subconscious \"oh, look, a new business opportunity.\"\nPutting this up for sale would surely have the rich shelling out for it. And if they can't resonate with it, why, they'll just use it to keep up appearances. A sound call either way...\nAnd if there should be a way to collect such empty shells, could this not become a long term business?\nPlaying with the jewel in one hand, Ningguang began writing plans for an auction in the other, her smile widening as she thought about the riches to be had — and at that moment, the Vision shone forth its light.\nNingguang's smile froze as the Vision activated.\nHer attendants, coming upon the sight of their mistress, awakened Vision in hand, began to congratulate her on having obtained a priceless treasure.\nNingguang, for her part, seemed annoyed instead.\n\"What's there to be happy about? Once broken, considered sold!\""
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 202701,
+      "Name": "Orchid's Evening Gown",
+      "Description": "Ningguang's formal wear. The long cyan skirt traces her elegant curves, and the butterfly wings at her ankles lend the outfit a touch of light grace.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_NingguangCostumeFloral",
+      "SideIcon": "UI_AvatarIcon_Side_NingguangCostumeFloral"
+    },
+    {
+      "Id": 202700,
+      "Name": "Gold Leaf and Pearly Jade",
+      "Description": "Ningguang's outfit. Intricate embroidery is the hallmark of this graceful dress.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104174,
+    113009,
+    100030,
+    112034,
+    104312,
+    113008
+  ],
+  "NameCard": {
+    "Name": "Ningguang: Phoenix",
+    "Description": "Namecard style.\nThey say that \"more's the pity that phoenixes are few.\" But seriously, one Ningguang is more than enough...",
+    "Icon": "UI_NameCardIcon_Ningguang",
+    "PicturePrefix": "UI_NameCardPic_Ningguang"
+  },
+  "TraceEffect": {
+    "Id": 215003,
+    "Name": "Echo: Eclipsing Star",
+    "Description": "Ningguang's Envisaged Echo is shaped like gilded ginkgo leaves, noble and elegant.",
+    "Icon": "UI_TraceEffectIcon_Ningguang"
+  }
+}

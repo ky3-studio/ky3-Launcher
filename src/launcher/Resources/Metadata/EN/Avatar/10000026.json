@@ -1,0 +1,1144 @@
+{
+  "Id": 10000026,
+  "PromoteId": 26,
+  "Sort": 28,
+  "Body": 1,
+  "Icon": "UI_AvatarIcon_Xiao",
+  "SideIcon": "UI_AvatarIcon_Side_Xiao",
+  "Name": "Xiao",
+  "Description": "A yaksha adeptus who defends Liyue. Also heralded as the \"Conqueror of Demons\" and \"Vigilant Yaksha.\"",
+  "BeginTime": "2021-02-02T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 991.4528,
+    "AttackBase": 27.1852,
+    "DefenseBase": 62.2232
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 2631,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}+{param2:F1P}",
+            "2-Hit DMG|{param3:F1P}",
+            "3-Hit DMG|{param4:F1P}",
+            "4-Hit DMG|{param5:F1P}+{param6:F1P}",
+            "5-Hit DMG|{param7:F1P}",
+            "6-Hit DMG|{param8:F1P}",
+            "Charged Attack DMG|{param9:P}",
+            "Charged Attack Stamina Cost|{param10:F1}",
+            "Plunge DMG|{param11:P}",
+            "Low/High Plunge DMG|{param12:P}/{param13:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 263101,
+              "Level": 1,
+              "Parameters": [
+                0.27544,
+                0.27544,
+                0.56936,
+                0.68552,
+                0.37664,
+                0.37664,
+                0.71544,
+                0.95832,
+                1.21088,
+                25,
+                0.818335,
+                1.636323,
+                2.043855
+              ]
+            },
+            {
+              "Id": 263102,
+              "Level": 2,
+              "Parameters": [
+                0.29422,
+                0.29422,
+                0.60818,
+                0.73226,
+                0.40232,
+                0.40232,
+                0.76422,
+                1.02366,
+                1.29344,
+                25,
+                0.884943,
+                1.769512,
+                2.210216
+              ]
+            },
+            {
+              "Id": 263103,
+              "Level": 3,
+              "Parameters": [
+                0.313,
+                0.313,
+                0.647,
+                0.779,
+                0.428,
+                0.428,
+                0.813,
+                1.089,
+                1.376,
+                25,
+                0.951552,
+                1.902701,
+                2.376576
+              ]
+            },
+            {
+              "Id": 263104,
+              "Level": 4,
+              "Parameters": [
+                0.33804,
+                0.33804,
+                0.69876,
+                0.84132,
+                0.46224,
+                0.46224,
+                0.87804,
+                1.17612,
+                1.48608,
+                25,
+                1.046707,
+                2.092971,
+                2.614234
+              ]
+            },
+            {
+              "Id": 263105,
+              "Level": 5,
+              "Parameters": [
+                0.35682,
+                0.35682,
+                0.73758,
+                0.88806,
+                0.48792,
+                0.48792,
+                0.92682,
+                1.24146,
+                1.56864,
+                25,
+                1.113316,
+                2.22616,
+                2.780594
+              ]
+            },
+            {
+              "Id": 263106,
+              "Level": 6,
+              "Parameters": [
+                0.37873,
+                0.37873,
+                0.78287,
+                0.94259,
+                0.51788,
+                0.51788,
+                0.98373,
+                1.31769,
+                1.66496,
+                25,
+                1.18944,
+                2.378376,
+                2.97072
+              ]
+            },
+            {
+              "Id": 263107,
+              "Level": 7,
+              "Parameters": [
+                0.4069,
+                0.4069,
+                0.8411,
+                1.0127,
+                0.5564,
+                0.5564,
+                1.0569,
+                1.4157,
+                1.7888,
+                25,
+                1.294111,
+                2.587673,
+                3.232143
+              ]
+            },
+            {
+              "Id": 263108,
+              "Level": 8,
+              "Parameters": [
+                0.43507,
+                0.43507,
+                0.89933,
+                1.08281,
+                0.59492,
+                0.59492,
+                1.13007,
+                1.51371,
+                1.91264,
+                25,
+                1.398781,
+                2.79697,
+                3.493567
+              ]
+            },
+            {
+              "Id": 263109,
+              "Level": 9,
+              "Parameters": [
+                0.46324,
+                0.46324,
+                0.95756,
+                1.15292,
+                0.63344,
+                0.63344,
+                1.20324,
+                1.61172,
+                2.03648,
+                25,
+                1.503452,
+                3.006267,
+                3.75499
+              ]
+            },
+            {
+              "Id": 263110,
+              "Level": 10,
+              "Parameters": [
+                0.49141,
+                0.49141,
+                1.01579,
+                1.22303,
+                0.67196,
+                0.67196,
+                1.27641,
+                1.70973,
+                2.16032,
+                25,
+                1.617638,
+                3.234591,
+                4.040179
+              ]
+            },
+            {
+              "Id": 263111,
+              "Level": 11,
+              "Parameters": [
+                0.51958,
+                0.51958,
+                1.07402,
+                1.29314,
+                0.71048,
+                0.71048,
+                1.34958,
+                1.80774,
+                2.28416,
+                25,
+                1.731825,
+                3.462915,
+                4.325368
+              ]
+            },
+            {
+              "Id": 263112,
+              "Level": 12,
+              "Parameters": [
+                0.54775,
+                0.54775,
+                1.13225,
+                1.36325,
+                0.749,
+                0.749,
+                1.42275,
+                1.90575,
+                2.408,
+                25,
+                1.846011,
+                3.69124,
+                4.610557
+              ]
+            },
+            {
+              "Id": 263113,
+              "Level": 13,
+              "Parameters": [
+                0.57592,
+                0.57592,
+                1.19048,
+                1.43336,
+                0.78752,
+                0.78752,
+                1.49592,
+                2.00376,
+                2.53184,
+                25,
+                1.960197,
+                3.919564,
+                4.895747
+              ]
+            },
+            {
+              "Id": 263114,
+              "Level": 14,
+              "Parameters": [
+                0.60409,
+                0.60409,
+                1.24871,
+                1.50347,
+                0.82604,
+                0.82604,
+                1.56909,
+                2.10177,
+                2.65568,
+                25,
+                2.074383,
+                4.147888,
+                5.180936
+              ]
+            },
+            {
+              "Id": 263115,
+              "Level": 15,
+              "Parameters": [
+                0.63226,
+                0.63226,
+                1.30694,
+                1.57358,
+                0.86456,
+                0.86456,
+                1.64226,
+                2.19978,
+                2.77952,
+                25,
+                2.18857,
+                4.376212,
+                5.466125
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10261,
+        "Name": "Whirlwind Thrust",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 6 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to perform an upward thrust.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.\nXiao does not take DMG from performing Plunging Attacks.",
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 2632,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:P}",
+            "CD|{param2:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 263201,
+              "Level": 1,
+              "Parameters": [
+                2.528,
+                10
+              ]
+            },
+            {
+              "Id": 263202,
+              "Level": 2,
+              "Parameters": [
+                2.7176,
+                10
+              ]
+            },
+            {
+              "Id": 263203,
+              "Level": 3,
+              "Parameters": [
+                2.9072,
+                10
+              ]
+            },
+            {
+              "Id": 263204,
+              "Level": 4,
+              "Parameters": [
+                3.16,
+                10
+              ]
+            },
+            {
+              "Id": 263205,
+              "Level": 5,
+              "Parameters": [
+                3.3496,
+                10
+              ]
+            },
+            {
+              "Id": 263206,
+              "Level": 6,
+              "Parameters": [
+                3.5392,
+                10
+              ]
+            },
+            {
+              "Id": 263207,
+              "Level": 7,
+              "Parameters": [
+                3.792,
+                10
+              ]
+            },
+            {
+              "Id": 263208,
+              "Level": 8,
+              "Parameters": [
+                4.0448,
+                10
+              ]
+            },
+            {
+              "Id": 263209,
+              "Level": 9,
+              "Parameters": [
+                4.2976,
+                10
+              ]
+            },
+            {
+              "Id": 263210,
+              "Level": 10,
+              "Parameters": [
+                4.5504,
+                10
+              ]
+            },
+            {
+              "Id": 263211,
+              "Level": 11,
+              "Parameters": [
+                4.8032,
+                10
+              ]
+            },
+            {
+              "Id": 263212,
+              "Level": 12,
+              "Parameters": [
+                5.056,
+                10
+              ]
+            },
+            {
+              "Id": 263213,
+              "Level": 13,
+              "Parameters": [
+                5.372,
+                10
+              ]
+            },
+            {
+              "Id": 263214,
+              "Level": 14,
+              "Parameters": [
+                5.688,
+                10
+              ]
+            },
+            {
+              "Id": 263215,
+              "Level": 15,
+              "Parameters": [
+                6.004,
+                10
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10262,
+        "Name": "Lemniscatic Wind Cycling",
+        "Description": "Xiao lunges forward, dealing <color=#80FFD7FF>Anemo DMG</color> to opponents in his path.\nCan be used in mid-air.\nStarts with 2 charges.\n\n<i>According to the legends of another land, the world will someday be crushed by two great wind wheels. Xiao's mastery over polearms is transcendent, ripping his foes apart like those legendary wind wheels.</i>",
+        "Icon": "Skill_S_Xiao_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 2639,
+      "Proud": {
+        "Descriptions": [
+          "Normal/Charged/Plunging Attack DMG Bonus|{param1:F1P}",
+          "Life Drain|{param2:F1P} Current HP Per Second",
+          "Duration|{param3:F1}s",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 263901,
+            "Level": 1,
+            "Parameters": [
+              0.5845,
+              0.03,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 263902,
+            "Level": 2,
+            "Parameters": [
+              0.6195,
+              0.03,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 263903,
+            "Level": 3,
+            "Parameters": [
+              0.6545,
+              0.03,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 263904,
+            "Level": 4,
+            "Parameters": [
+              0.7,
+              0.025,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 263905,
+            "Level": 5,
+            "Parameters": [
+              0.735,
+              0.025,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 263906,
+            "Level": 6,
+            "Parameters": [
+              0.77,
+              0.025,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 263907,
+            "Level": 7,
+            "Parameters": [
+              0.8155,
+              0.02,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 263908,
+            "Level": 8,
+            "Parameters": [
+              0.861,
+              0.02,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 263909,
+            "Level": 9,
+            "Parameters": [
+              0.9065,
+              0.02,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 263910,
+            "Level": 10,
+            "Parameters": [
+              0.952,
+              0.02,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 263911,
+            "Level": 11,
+            "Parameters": [
+              0.9975,
+              0.02,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 263912,
+            "Level": 12,
+            "Parameters": [
+              1.043,
+              0.02,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 263913,
+            "Level": 13,
+            "Parameters": [
+              1.0885,
+              0.02,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 263914,
+            "Level": 14,
+            "Parameters": [
+              1.134,
+              0.02,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 263915,
+            "Level": 15,
+            "Parameters": [
+              1.1795,
+              0.02,
+              15,
+              18,
+              70
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10265,
+      "Name": "Bane of All Evil",
+      "Description": "Xiao dons the Yaksha Mask that set gods and demons trembling millennia ago.\n\n<color=#FFD780FF>Yaksha's Mask</color>\n·Greatly increases Xiao's jumping ability.\n·Increases his attack AoE and attack DMG.\n·Converts attack DMG into <color=#80FFD7FF>Anemo DMG</color>, which cannot be overridden by any other elemental infusion.\n\nIn this state, Xiao will continuously lose HP.\nThe effects of this skill end when Xiao leaves the field.\n\n<i>Donning the Mask of the Yaksha, Xiao takes the terrifying, demon-conquering form of the Vigilant Yaksha. But this great power has also brought him great suffering. Some call him \"The Bane of All Evil.\"</i>",
+      "Icon": "Skill_E_Xiao_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 2621,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 262101,
+              "Level": 1,
+              "Parameters": [
+                0.05
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 262101,
+        "Name": "Conqueror of Evil: Tamer of Demons",
+        "Description": "While under the effects of <color=#FFD780FF>Bane of All Evil</color>, all DMG dealt by Xiao increases by 5%. DMG increases by a further 5% for every 3s the ability persists.\nThe maximum DMG Bonus is 25%.",
+        "Icon": "UI_Talent_S_Xiao_05"
+      },
+      {
+        "GroupId": 2622,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 262201,
+              "Level": 1,
+              "Parameters": [
+                7,
+                0.15,
+                3
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 262201,
+        "Name": "Dissolution Eon: Heaven Fall",
+        "Description": "Using <color=#FFD780FF>Lemniscatic Wind Cycling</color> increases the DMG of subsequent uses of Lemniscatic Wind Cycling by 15%.\nThis effect lasts for 7s, and has a maximum of 3 stacks. Gaining a new stack refreshes the effect's duration.",
+        "Icon": "UI_Talent_S_Xiao_06"
+      },
+      {
+        "GroupId": 2623,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 262301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 262301,
+        "Name": "Transcension: Gravity Defier",
+        "Description": "Decreases climbing Stamina consumption for your own party members by 20%.\nNot stackable with Passive Talents that provide the exact same effects.",
+        "Icon": "UI_Talent_Explosion_Climb"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 261,
+        "Name": "Dissolution Eon: Destroyer of Worlds",
+        "Description": "Increases <color=#FFD780FF>Lemniscatic Wind Cycling</color>'s charges by 1.",
+        "Icon": "UI_Talent_S_Xiao_01"
+      },
+      {
+        "Id": 262,
+        "Name": "Annihilation Eon: Blossom of Kaleidos",
+        "Description": "When in the party and not on the field, Xiao's Energy Recharge is increased by 25%.",
+        "Icon": "UI_Talent_S_Xiao_02"
+      },
+      {
+        "Id": 263,
+        "Name": "Conqueror of Evil: Wrath Deity",
+        "Description": "Increases the Level of <color=#FFD780FF>Lemniscatic Wind Cycling</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Xiao_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 264,
+        "Name": "Transcension: Extinction of Suffering",
+        "Description": "When Xiao's HP falls below 50%, he gains a 100% DEF Bonus.",
+        "Icon": "UI_Talent_S_Xiao_03"
+      },
+      {
+        "Id": 265,
+        "Name": "Evolution Eon: Origin of Ignorance",
+        "Description": "Increases the Level of <color=#FFD780FF>Bane of All Evil</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Xiao_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 266,
+        "Name": "Conqueror of Evil: Guardian Yaksha",
+        "Description": "While under the effects of <color=#FFD780FF>Bane of All Evil</color>, hitting at least 2 opponents with Xiao's Plunging Attack will immediately grant him 1 charge of <color=#FFD780FF>Lemniscatic Wind Cycling</color>, and for the next 1s, he may use Lemniscatic Wind Cycling while ignoring its CD.",
+        "Icon": "UI_Talent_S_Xiao_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Vigilant Yaksha",
+    "Detail": "A yaksha adeptus who defends Liyue. Also heralded as the \"Conqueror of Demons\" and \"Vigilant Yaksha.\"",
+    "Association": 2,
+    "Native": "Liyue Adeptus",
+    "BirthMonth": 4,
+    "BirthDay": 17,
+    "VisionBefore": "Anemo",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Alatus Nemeseos",
+    "CvChinese": "kinsen",
+    "CvJapanese": "松岡禎丞",
+    "CvEnglish": "Laila Berzins",
+    "CvKorean": "Shim Kyu-hyeok",
+    "CookBonus": {
+      "OriginItemId": 108081,
+      "ItemId": 108137,
+      "InputList": [
+        100078,
+        110006,
+        100089
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "If you awake to a knife at your throat, if monsters dig their claws into you, if death comes knocking at your door... Call out my name. Adeptus Xiao. I will be here when you call."
+      },
+      {
+        "Title": "Chat: Idleness",
+        "Context": "Reduced to just standing around... How absurd."
+      },
+      {
+        "Title": "Chat: Wandering Spirits",
+        "Context": "The damned will sooner die again than lay a hand on me."
+      },
+      {
+        "Title": "Chat: Corruption",
+        "Context": "Grrgh... Those memories, so dark..."
+      },
+      {
+        "Title": "When It Rains",
+        "Context": "Demons do not stop for the rain. Move."
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "The rain stopped? I don't concern myself with the weather."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "Many mortals fear lightning... Incomprehensible. Fear of something so common."
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Once the snow is thick enough, we can eat it..."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "We're wasting time. Let's go."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Lunch... We'll go back to Wangshu Inn."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Night... When the darkness comes to envelop you. Don't stay outside."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Go. I'll be here."
+      },
+      {
+        "Title": "About Xiao: Inhuman",
+        "Context": "I'm far from human. I can't make much of human emotions."
+      },
+      {
+        "Title": "About Xiao: Liyue",
+        "Context": "Liyue is changing. Rapidly... Forget it. It means nothing to me."
+      },
+      {
+        "Title": "About Us: Warnings",
+        "Context": "If a day comes where even you are taken by the darkness, it will be up to me..."
+      },
+      {
+        "Title": "About Us: Trust",
+        "Context": "Do not fall prey to the darkness. I have no mercy.\nThough, perhaps you can stand your ground alone."
+      },
+      {
+        "Title": "About Us: Drowsiness",
+        "Context": "Who's there? Oh... You think I sleep? You have no respect for the ways of the adepti."
+      },
+      {
+        "Title": "About Us: Lantern Rite",
+        "Context": "The Lantern Rite? The time for humans to discard their glowing trash into the sea has returned... How childish...\nThough, if you insist... I will go with you."
+      },
+      {
+        "Title": "About the Vision: Desires",
+        "Context": "Visions? Desire? Ha. Do not judge adepti by your mortal ideals. I have no desire."
+      },
+      {
+        "Title": "About the Vision: Reasons",
+        "Context": "Hiding? I'm hiding nothing. I just won't speak of desire to others.\nDo you mortals not have a rule about spoken wishes never coming true? Hm? What do you mean that's not the same?"
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "I deal in death. If you cannot bring yourself to kill — speak my name."
+      },
+      {
+        "Title": "Interesting things",
+        "Context": "Dihua Islet was once deserted.\nThough that was many decades... no, centuries ago..."
+      },
+      {
+        "Title": "About Zhongli",
+        "Context": "Can I ask... Zhongli — what does he do with his days? Huh? Birds, antiques, flowers...\nHmm... What deeper meaning do they hold?"
+      },
+      {
+        "Title": "About Beidou",
+        "Context": "Beidou? I have nothing to do with her. Though there is such a thing as the leviathan. As a mere human, she has proven her power in defeating Haishan."
+      },
+      {
+        "Title": "About Baizhu",
+        "Context": "You want... Baizhu to make a medicine to take away my pain? I understand your intentions, but mortal medicine has no effect on adepti."
+      },
+      {
+        "Title": "About Hu Tao",
+        "Context": "Hu Tao? Her liveliness is irritating. Fortunately, she is also humorous, so you need not worry about her growing into a boring human."
+      },
+      {
+        "Title": "About Venti",
+        "Context": "Venti? So that's the name he goes by. His tunes are... forget it."
+      },
+      {
+        "Title": "About Ganyu",
+        "Context": "Ganyu is neither mortal nor illuminated beast. Wandering both the mortal and adepti realms with duty as her sole guide, it was inevitable that she would become perplexed... What? Me? You believe a yaksha who knows nothing more than how to massacre countless souls and emerge unscathed is a suitable mentor for such an individual? ...Your mind occupies a very different world from that which your body inhabits."
+      },
+      {
+        "Title": "About Shenhe",
+        "Context": "It seems Shenhe places a great deal of trust in you. Well, how could she not. There are few people in the world as kind and good-natured as you."
+      },
+      {
+        "Title": "About Yelan",
+        "Context": "I've heard that she once investigated The Chasm, following the trail of the Millelith. If she can investigate mysteries like that on her own, she must be someone of rare skill."
+      },
+      {
+        "Title": "More About Xiao: I",
+        "Context": "I'm willing to protect you.\nBut don't think about getting close, and stay out of my way, or all that awaits you is regret."
+      },
+      {
+        "Title": "More About Xiao: II",
+        "Context": "In the thousands of years that have passed, I have taken countless wraiths. If you want no trouble, stay away from me. See me as a weapon, and nothing more."
+      },
+      {
+        "Title": "More About Xiao: III",
+        "Context": "Their voices... I can always hear them. Their screams, their cries, demanding more death...\nThis is my burden to carry. It has nothing to do with you."
+      },
+      {
+        "Title": "More About Xiao: IV",
+        "Context": "Morax...? What do you know of this name!?\nHe gave me the name Xiao, and released me from the endless pain I endured.\nI will not forgive those that dare to speak against him, even you."
+      },
+      {
+        "Title": "More About Xiao: V",
+        "Context": "It's too late. The connection between us is too strong. Even if you wanted to, it's too late to sever it. Hm? You've never thought to sever it?\n*sigh* This eternal dance of demon subjugation... My fight goes on.\nBut, I would like to know more about you."
+      },
+      {
+        "Title": "Xiao's Hobbies",
+        "Context": "There's nothing timid about you, having the courage to ask about my hobbies.\nSo, fight me. How long do you think your body will last against my blows?"
+      },
+      {
+        "Title": "Xiao's Troubles",
+        "Context": "Trouble? Ha. Trouble means nothing to adepti. There is no trouble that can last for a thousand years."
+      },
+      {
+        "Title": "Favorite Food: Almond Tofu",
+        "Context": "I have no interest in mortal food. Cooking is tedious and the wait is long. The one thing I can manage to stomach is almond tofu."
+      },
+      {
+        "Title": "Favorite Food: Memories",
+        "Context": "The taste of Almond Tofu feels like a fond dream..."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "Wait. I am expected to place slices of meat in wrappings myself? And then... eat them? Together? Ugh, humans these days do not know what they are doing."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Mm... Not bad... Why are you staring at me?"
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "No need."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Try something else next time."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "This mortal concept of commemorating the day of your birth really is redundant. Ahem. Wait. Uhh, have this. It's a butterfly I made from leaves.\nOkay. Take it. It's an adepti amulet — it staves off evil."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "This is it? Nothing worth getting excited about."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "New power? All it will be used for is death."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "The limit to one's power is self-destruction. Answer me. Why do you persist?"
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "Countless souls have fallen prey to these hands. I too have been swallowed by the darkness — and yet you dare to drive me on. You may think of me as... your companion. You seek to find me salvation? \n...You... really are a difficult being to comprehend."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Hmph."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Boring."
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Useless."
+      },
+      {
+        "Title": "Plunging Attacks: I",
+        "Context": "Here!"
+      },
+      {
+        "Title": "Plunging Attacks: II",
+        "Context": "Worthless!"
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Disappear!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Evil conquering!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Lament!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "If it's useful, I'll take it."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Why would anyone want... *sigh* Forget it, it's not my concern."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Hmph... there's quality here."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Shut it."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Prepare to die, fool!"
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "*grunts* Good."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "...Weak."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Get back if you wanna survive."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "Is this... retribution?"
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "The day... has finally come."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Impossible..."
+      },
+      {
+        "Title": "Light Hit Taken: I",
+        "Context": "That's it?"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Ugh, get out of my way!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "You called?"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Evil shall be dispersed."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Conquering demons is what I do."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Xiao may have the appearance of a young man, but his true age is something over two thousand years.\nFortunately, people do not tend to underestimate him on the basis of his appearance — one only needs to spend a short time with Xiao to clarify that he is not someone to be trifled with.\nXiao is a man of few words. He is highly dangerous, and has the most piercing gaze you've ever seen.\nHe enjoys a formidable reputation and high level of seniority among the adepti, but is relatively unknown in the mortal realm.\nThis is inevitable. Xiao is not one of those popular deities to whom people pray for wealth and protection, nor is he a mystical sage of Jueyun Karst to whom pilgrims flock in search of divine wisdom.\nNo... If any mortal witnesses Xiao unleashing his true power, it is certain to be under the direst of circumstances — and they will be extremely lucky if they survive the ordeal.\nThis is not because Xiao seeks to harm people. Rather, since Xiao wages a constant war against dark forces powerful enough to devour Liyue in its entirety, any bystanders who witness him in the heat of battle are likely to end up as collateral damage.\nNot that this is a secret worth going around silencing witnesses for."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "What exactly is Xiao wrestling with?\nThe tactful answer would be old grudges, unfulfilled dreams, the lamentations of the vanquished...\nThe unmitigated truth is that Xiao fights against the remnants of the defeated gods from the Archon War, which took place prior to the rise of The Seven.\nMorax defeated those gods and buried their remains beneath the rocks of the earth.\nHowever, gods are immortal. Their consciousness may diminish, but their power and hatred will always remain and spread like poison, relentlessly stirring up chaos for the world and its inhabitants.\nLiyue's rulers, who are aware of the truth regarding Xiao, refer to him in his millennia-long experience as the \"Bane of All Evil.\" \nThe war he fights can never be won, and will never come to an end.\nIt is also an invisible war that no one will ever witness or thank him for."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Xiao is not this yaksha's true name, but a name given to him in the interests of his own protection.\nBack in a younger, more naive time, a god had gotten a hold of Xiao's weakness and forced him to serve as their bloodhound, in which capacity he was forced to perform cruel and violent acts.\nMany died at his hand, many hopes were crushed, and he was even forced into devouring his victims' dreams. As much as it pained him to do this, he was helpless to resist.\nFinally, on the battlefield of the Archon War, Morax, the Geo Archon, had a fateful encounter with the yaksha's master.\nThe current state of the world has already revealed the results of that battle.\nRex Lapis liberated the yaksha and gave him the name \"Xiao.\" \n\"In the fables of another land, the name Xiao is that of a spirit who encountered great suffering and hardship. He endured much suffering, as you have. Use this name from now on.\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "To repay his debt of gratitude to the Geo Archon, Xiao shouldered the burden of protecting Liyue in the millennia that followed.\nHis past of service under the evil god had rid Xiao of his innocence and gentleness. All that remained within him was the means to kill and the weight of his sins.\nThe only way he could be of service to mortals was in doing battle.\nBut what could people do for him in return?\nNo ordinary person would ever stop to ask such a question. The sight of Xiao, even far off in the distance, was intimidating enough to send people instantly running for their lives.\nThat said... if ever someone did want to show some appreciation for Xiao, there is perhaps one thing they could try.\nThere is a certain secret agent of the Qixing who is tasked with supporting Xiao in subduing demons. That secret agent runs a front organization called the Wangshu Inn.\nOccasionally, Xiao stops by the inn for a bowl of Almond Tofu, and if you could see the look on his face when he eats it... there's no mistaking it — he clearly loves the stuff.\nNonetheless, it is not the sweet taste that Xiao hankers after. It's the texture he finds irresistible — apparently, it's very similar to that of the dreams he used to devour."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "What exactly is Xiao wrestling with?\nTo those in Liyue's corridors of power, Xiao's battle is against the evil manifestations produced by the remnants of defeated gods.\nHowever, if you asked Xiao the same question, he may well give you an entirely different answer.\nXiao was once enslaved by an evil god and suffered immensely under their rule until finally regaining his freedom thanks to Rex Lapis.\nXiao's powers were highly regarded by the adepti and he seemed to vanquish all manner of evil demons with consummate ease.\nBut the evil gods also held immense power, and their lust for revenge ran deeper than mere mortals could ever contemplate. Xiao relentlessly slaughtered the endless, impure manifestations of their vengeful souls, but in doing so, he caused them to fracture. Eventually, these fragments of their hatred were able to taint Xiao's own soul.\nThe only way to eradicate such hatred is to accept the karmic debt it brings. The magnitude of the bad karma Xiao has accumulated over the years is enough to consume flesh, bone, and soul alike.\nAnd yet, Xiao does not feel any hatred. Having lived for over two thousand years, no single karmic debt constitutes anything more than a fleeting memory.\nNo grudge can last a thousand years, nor is any debt so great that it cannot be paid off in this time.\nXiao has spent many long years alone.\nBut his battles have never been in vain.\nBecause ultimately, the one with whom Xiao wrestles is himself."
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "What does Xiao fight against?\nThe Traveler understands very well that Xiao fights against the darkness that threatens Liyue. He fights to defend Liyue.\nBut who will defend him?\nThere was once when most of Xiao's strength was spent fighting from dusk till dawn, with him emerging victorious by a mere hair.\nThe reeds in the fields had been sliced to ribbons in the fierce fighting. Plucking his spear from where it had been planted in the ground, Xiao began the trek home.\nWell, one says \"home\" — yet, where did Xiao have to return to? He was merely leaving the battlefield.\nLong exhausted, Xiao felt the divine hatred that tainted his body take effect.\nLimitless hate flooded his senses, and he fell to the ground in agony.\nBut it was also at that moment that the pain vanished without warning.\nThis was not by Xiao's own strength, for he had been rescued by the sound of a flute.\nThe clear, lovely sound of the flute came over the mountains and rivers, carried on the wind to where he lay.\nAnd clear it continued to ring till the first light of dawn brought with it the startled flight of distant birds.\nIt protected Xiao, massaging his wild senses, and giving him a moment's peace.\nWho was playing this music? Xiao was curious but did not pursue the matter. For he already had something approaching an answer.\nThe last person who could help him was one of The Seven themselves. So this person, too, must be—"
+      },
+      {
+        "Title": "Ode to Windborne Wraith",
+        "Context": "A scholar of the Sumeru Akademiya once did folklore studies in Liyue, the result of which was a book called \"Tour of the Land of Liyue,\" with separate editions being available in Sumeru and Liyue.\n\"Hidden Diamond and Cloudy Moon: Wonders and Folklores of Liyue\" is the version available in Liyue, and has had many mystical and magical portions removed.\nThe \"Ode to Windborne Wraith\" is one of the mystical chapters that remain recorded within the complete version at the Akademiya.\nThe document mentions that though the yaksha were mighty and upright among the adepti, they were bound by their own karma to suffer great horrors and tribulations. As such, they wandered the land in a state of unending suffering.\nThe chapter lists many methods of comforting the yaksha, such as food offerings, holy chants, and the like. These would appease the yaksha and help them to continue defending the peace.\nAs noble warriors among adepti, the yaksha would often descend upon the battlefield in person. However, as conflicts grew over the millennia, they have almost been wiped out. Today, large statues of the yaksha subduing demons remain within Liyue's borders, but they have had their features destroyed.\nBy the by, the language used in that text was so meandering, and its contents so dense, that it sold far fewer copies than the Teyvat Travel Guide and the international cultural summaries written by El Musk."
+      },
+      {
+        "Title": "Vision",
+        "Context": "All adepti are known as the \"mighty and illuminated\" adepti, and this \"illumination\" refers to the light of a third \"eye\" that they possess: a Vision.\nBut do adepti receive their Visions as a form of acknowledgment from Celestia, like humans do?\nXiao no longer remembers the moment he received his Vision. To humans, this would be an unforgettable event. But for him, this was just the beginning of his endless battle.\nThe thing that Xiao truly cannot forget is something different.\nThere are a great many human festivals, and few remember the stories behind them.\nThe greater part of these days coincide with occasions where man-eating monsters were defeated by the adepti host. People imitated their deeds and staged exorcism rituals to remember their ancient heroism, with these practices eventually evolving into celebratory festivals.\nThe hatred and residual might of many of the gods defeated by Morax throughout Liyue will sometimes erupt with abnormal force amid their half-awake, half-dreaming state. Among them, the eruption that takes place during the Lantern Rite is the most extreme in scale.\nXiao has his mission to perform the time-honored \"Nuo Dance of Evil Conquering,\" and so he fights night and day during the Lantern Rite. Thus, he has come to hate it.\nNow, Xiao did not consider battle dangerous. It was due to his hard work that Liyue was kept safe. People lit their lanterns, and the blessed lights shone across the night sky and the nearshore.\nAt that moment, another special feeling blossomed in Xiao's heart. Loneliness? Peace? Or was it his fears for the future? The young-seeming adeptus searched his heart, only to find no answers."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 202600,
+      "Name": "Endurer of Eons",
+      "Description": "Xiao's outfit. Classical battle-wear fit for a thousand years of evil-conquering.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104154,
+    113016,
+    100031,
+    112004,
+    104312,
+    113015
+  ],
+  "NameCard": {
+    "Name": "Xiao: Mask",
+    "Description": "Namecard style.\nHe longs for a day to come when he will wear the mask and dance — not to conquer demons, but to the tune of that flute amid a sea of flowers.",
+    "Icon": "UI_NameCardIcon_Xiao",
+    "PicturePrefix": "UI_NameCardPic_Xiao"
+  }
+}

@@ -1,0 +1,1366 @@
+{
+  "Id": 10000106,
+  "PromoteId": 106,
+  "Sort": 92,
+  "Body": 3,
+  "Icon": "UI_AvatarIcon_Mavuika",
+  "SideIcon": "UI_AvatarIcon_Side_Mavuika",
+  "Name": "Mavuika",
+  "Description": "The leader of Natlan who inherited the Ancient Name of \"Kiongozi.\" She made a vow to illuminate the future of the nation of war with the Sacred Flame.",
+  "BeginTime": "2024-12-31T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 11,
+  "BaseValue": {
+    "HpBase": 977.153,
+    "AttackBase": 27.93,
+    "DefenseBase": 61.6249
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 10631,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}×2",
+            "3-Hit DMG|{param3:F1P}×3",
+            "4-Hit DMG|{param4:F1P}",
+            "Charged Attack DMG|{param5:P}",
+            "Charged Attack Stamina Cost|{param6:F1}",
+            "Plunge DMG|{param7:F1P}",
+            "Low/High Plunge DMG|{param8:P}/{param9:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1063101,
+              "Level": 1,
+              "Parameters": [
+                0.80035,
+                0.364799,
+                0.332232,
+                1.161929,
+                1.93844,
+                50,
+                0.745878,
+                1.49144,
+                1.862889
+              ]
+            },
+            {
+              "Id": 1063102,
+              "Level": 2,
+              "Parameters": [
+                0.865495,
+                0.394492,
+                0.359274,
+                1.256504,
+                2.09622,
+                50,
+                0.806589,
+                1.612836,
+                2.01452
+              ]
+            },
+            {
+              "Id": 1063103,
+              "Level": 3,
+              "Parameters": [
+                0.93064,
+                0.424185,
+                0.386317,
+                1.35108,
+                2.254,
+                50,
+                0.8673,
+                1.734233,
+                2.16615
+              ]
+            },
+            {
+              "Id": 1063104,
+              "Level": 4,
+              "Parameters": [
+                1.023704,
+                0.466604,
+                0.424948,
+                1.486188,
+                2.4794,
+                50,
+                0.95403,
+                1.907656,
+                2.382765
+              ]
+            },
+            {
+              "Id": 1063105,
+              "Level": 5,
+              "Parameters": [
+                1.088849,
+                0.496296,
+                0.45199,
+                1.580764,
+                2.63718,
+                50,
+                1.014741,
+                2.029052,
+                2.534396
+              ]
+            },
+            {
+              "Id": 1063106,
+              "Level": 6,
+              "Parameters": [
+                1.1633,
+                0.530231,
+                0.482896,
+                1.68885,
+                2.8175,
+                50,
+                1.084125,
+                2.167791,
+                2.707688
+              ]
+            },
+            {
+              "Id": 1063107,
+              "Level": 7,
+              "Parameters": [
+                1.26567,
+                0.576892,
+                0.525391,
+                1.837469,
+                3.06544,
+                50,
+                1.179528,
+                2.358556,
+                2.945964
+              ]
+            },
+            {
+              "Id": 1063108,
+              "Level": 8,
+              "Parameters": [
+                1.368041,
+                0.623552,
+                0.567885,
+                1.986088,
+                3.31338,
+                50,
+                1.274931,
+                2.549322,
+                3.184241
+              ]
+            },
+            {
+              "Id": 1063109,
+              "Level": 9,
+              "Parameters": [
+                1.470411,
+                0.670212,
+                0.61038,
+                2.134706,
+                3.56132,
+                50,
+                1.370334,
+                2.740087,
+                3.422517
+              ]
+            },
+            {
+              "Id": 1063110,
+              "Level": 10,
+              "Parameters": [
+                1.582088,
+                0.721114,
+                0.656738,
+                2.296836,
+                3.8318,
+                50,
+                1.47441,
+                2.948195,
+                3.682455
+              ]
+            },
+            {
+              "Id": 1063111,
+              "Level": 11,
+              "Parameters": [
+                1.693765,
+                0.772017,
+                0.703096,
+                2.458966,
+                4.10228,
+                50,
+                1.578486,
+                3.156303,
+                3.942393
+              ]
+            },
+            {
+              "Id": 1063112,
+              "Level": 12,
+              "Parameters": [
+                1.805442,
+                0.822919,
+                0.749454,
+                2.621095,
+                4.37276,
+                50,
+                1.682562,
+                3.364411,
+                4.202331
+              ]
+            },
+            {
+              "Id": 1063113,
+              "Level": 13,
+              "Parameters": [
+                1.917118,
+                0.873821,
+                0.795812,
+                2.783225,
+                4.64324,
+                50,
+                1.786638,
+                3.572519,
+                4.462269
+              ]
+            },
+            {
+              "Id": 1063114,
+              "Level": 14,
+              "Parameters": [
+                2.028795,
+                0.924723,
+                0.84217,
+                2.945354,
+                4.91372,
+                50,
+                1.890714,
+                3.780627,
+                4.722207
+              ]
+            },
+            {
+              "Id": 1063115,
+              "Level": 15,
+              "Parameters": [
+                2.140472,
+                0.975625,
+                0.888528,
+                3.107484,
+                5.1842,
+                50,
+                1.99479,
+                3.988735,
+                4.982145
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11061,
+        "Name": "Flames Weave Life",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive claymore strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to perform an especially powerful Severing Splendor strike toward the front.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_04"
+      },
+      {
+        "GroupId": 10632,
+        "Proud": {
+          "Descriptions": [
+            "Skill DMG|{param1:F1P}",
+            "Ring of Searing Radiance DMG|{param2:F1P}",
+            "Ring of Searing Radiance Attack Interval|{param3:F1}s",
+            "Flamestrider Normal Attack 1-Hit DMG|{param4:F1P}",
+            "Flamestrider Normal Attack 2-Hit DMG|{param5:F1P}",
+            "Flamestrider Normal Attack 3-Hit DMG|{param6:F1P}",
+            "Flamestrider Normal Attack 4-Hit DMG|{param7:F1P}",
+            "Flamestrider Normal Attack 5-Hit DMG|{param8:F1P}",
+            "Flamestrider Sprint DMG|{param9:F1P}",
+            "Flamestrider Charged Attack Cyclic DMG|{param10:F1P}",
+            "Flamestrider Charged Attack Final DMG|{param11:F1P}",
+            "Flamestrider Plunge DMG|{param12:F1P}",
+            "Nightsoul Point Limit|{param13:I}",
+            "CD|{param14:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1063201,
+              "Level": 1,
+              "Parameters": [
+                0.744,
+                1.28,
+                2,
+                0.572648,
+                0.591327,
+                0.699868,
+                0.697047,
+                0.910035,
+                0.8084,
+                0.989,
+                1.376,
+                1.5996,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063202,
+              "Level": 2,
+              "Parameters": [
+                0.7998,
+                1.376,
+                2,
+                0.619259,
+                0.639459,
+                0.756834,
+                0.753784,
+                0.984107,
+                0.8742,
+                1.0695,
+                1.488,
+                1.7298,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063203,
+              "Level": 3,
+              "Parameters": [
+                0.8556,
+                1.472,
+                2,
+                0.66587,
+                0.68759,
+                0.8138,
+                0.81052,
+                1.05818,
+                0.94,
+                1.15,
+                1.6,
+                1.86,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063204,
+              "Level": 4,
+              "Parameters": [
+                0.93,
+                1.6,
+                2,
+                0.732457,
+                0.756349,
+                0.89518,
+                0.891572,
+                1.163998,
+                1.034,
+                1.265,
+                1.76,
+                2.046,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063205,
+              "Level": 5,
+              "Parameters": [
+                0.9858,
+                1.696,
+                2,
+                0.779068,
+                0.80448,
+                0.952146,
+                0.948308,
+                1.238071,
+                1.0998,
+                1.3455,
+                1.872,
+                2.1762,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063206,
+              "Level": 6,
+              "Parameters": [
+                1.0416,
+                1.792,
+                2,
+                0.832337,
+                0.859488,
+                1.01725,
+                1.01315,
+                1.322725,
+                1.175,
+                1.4375,
+                2,
+                2.325,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063207,
+              "Level": 7,
+              "Parameters": [
+                1.116,
+                1.92,
+                2,
+                0.905583,
+                0.935122,
+                1.106768,
+                1.102307,
+                1.439125,
+                1.2784,
+                1.564,
+                2.176,
+                2.5296,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063208,
+              "Level": 8,
+              "Parameters": [
+                1.1904,
+                2.048,
+                2,
+                0.978829,
+                1.010757,
+                1.196286,
+                1.191464,
+                1.555525,
+                1.3818,
+                1.6905,
+                2.352,
+                2.7342,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063209,
+              "Level": 9,
+              "Parameters": [
+                1.2648,
+                2.176,
+                2,
+                1.052075,
+                1.086392,
+                1.285804,
+                1.280622,
+                1.671924,
+                1.4852,
+                1.817,
+                2.528,
+                2.9388,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063210,
+              "Level": 10,
+              "Parameters": [
+                1.3392,
+                2.304,
+                2,
+                1.131979,
+                1.168903,
+                1.38346,
+                1.377884,
+                1.798906,
+                1.598,
+                1.955,
+                2.72,
+                3.162,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063211,
+              "Level": 11,
+              "Parameters": [
+                1.4136,
+                2.432,
+                2,
+                1.211883,
+                1.251414,
+                1.481116,
+                1.475146,
+                1.925888,
+                1.7108,
+                2.093,
+                2.912,
+                3.3852,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063212,
+              "Level": 12,
+              "Parameters": [
+                1.488,
+                2.56,
+                2,
+                1.291788,
+                1.333925,
+                1.578772,
+                1.572409,
+                2.052869,
+                1.8236,
+                2.231,
+                3.104,
+                3.6084,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063213,
+              "Level": 13,
+              "Parameters": [
+                1.581,
+                2.72,
+                2,
+                1.371692,
+                1.416435,
+                1.676428,
+                1.669671,
+                2.179851,
+                1.9364,
+                2.369,
+                3.296,
+                3.8316,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063214,
+              "Level": 14,
+              "Parameters": [
+                1.674,
+                2.88,
+                2,
+                1.451597,
+                1.498946,
+                1.774084,
+                1.766934,
+                2.306832,
+                2.0492,
+                2.507,
+                3.488,
+                4.0548,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063215,
+              "Level": 15,
+              "Parameters": [
+                1.767,
+                3.04,
+                2,
+                1.531501,
+                1.581457,
+                1.87174,
+                1.864196,
+                2.433814,
+                2.162,
+                2.645,
+                3.68,
+                4.278,
+                80,
+                15
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11062,
+        "Name": "The Named Moment",
+        "Description": "Calling upon her authority over \"conflict,\" Mavuika summons the All-Fire Armaments passed down through the line of human Archons, dealing Nightsoul-aligned <color=#FF9999FF>Pyro DMG</color>.\nAfter using this, Mavuika's Nightsoul points are restored to max value, and she enters the Nightsoul's Blessing state.\n\n<color=#FFD780FF>All-Fire Armaments</color>\nHas different forms when Tapped or Held.\n\n<color=#FFD780FF>Tap</color>\n\"Divine Name Unleashed\": The All-Fire Armaments manifest as a Ring of Searing Radiance. The Ring follows the current active character and attacks nearby opponents at intervals, dealing Nightsoul-aligned <color=#FF9999FF>Pyro DMG</color>.\n\n<color=#FFD780FF>Hold</color>\n\"Ancient Name Unbound\": The All-Fire Armaments manifest as a Flamestrider. In this state, Mavuika can ride the Flamestrider at high speed, or activate its hidden backup propulsion module to temporarily cross various terrain types and glide in mid-air. Mavuika's Normal, Charged, and Plunging Attacks will also be converted to deal Nightsoul-aligned <color=#FF9999FF>Pyro DMG</color> which cannot be overridden. When sprinting, she also deals Nightsoul-aligned <color=#FF9999FF>Pyro DMG</color> to opponents along her path.\n\nWhile in the Nightsoul's Blessing state, Tapping the Elemental Skill can switch the All-Fire Armaments' form. The Armaments will disappear once Mavuika's Nightsoul's Blessing state ends.\n\n<color=#FFD780FF>Nightsoul's Blessing: Mavuika</color>\nContinuously consumes Nightsoul points according to the All-Fire Armaments' form. Mavuika's Nightsoul's Blessing state ends once her Nightsoul points are exhausted.\n\n<i>If you told Mavuika that in another world vehicles like the Flamestrider required license plates for identification, that would make her happy too:\n\"Well, mine's the only one that exists here. Guess that means I get to pick whatever plate number I want, huh?\"</i>",
+        "Icon": "Skill_S_Mavuika_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 10639,
+      "Proud": {
+        "Descriptions": [
+          "Skill DMG|{param1:F1P}",
+          "Crucible of Death and Life Duration|{param2:F1}s",
+          "Sunfell Slice DMG Bonus|{param3:F1P} ATK per Fighting Spirit",
+          "Flamestrider Normal Attack DMG Bonus|{param4:F2P} ATK per Fighting Spirit",
+          "Flamestrider Charged Attack DMG Bonus|{param5:F2P} ATK per Fighting Spirit",
+          "CD|{param8:F1}s",
+          "Fighting Spirit Limit|{param9:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1063901,
+            "Level": 1,
+            "Parameters": [
+              4.448,
+              7,
+              0.016,
+              0.00258,
+              0.00516,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063902,
+            "Level": 2,
+            "Parameters": [
+              4.7816,
+              7,
+              0.0172,
+              0.00279,
+              0.00558,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063903,
+            "Level": 3,
+            "Parameters": [
+              5.1152,
+              7,
+              0.0184,
+              0.003,
+              0.006,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063904,
+            "Level": 4,
+            "Parameters": [
+              5.56,
+              7,
+              0.02,
+              0.0033,
+              0.0066,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063905,
+            "Level": 5,
+            "Parameters": [
+              5.8936,
+              7,
+              0.0212,
+              0.00351,
+              0.00702,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063906,
+            "Level": 6,
+            "Parameters": [
+              6.2272,
+              7,
+              0.0224,
+              0.00375,
+              0.0075,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063907,
+            "Level": 7,
+            "Parameters": [
+              6.672,
+              7,
+              0.024,
+              0.00408,
+              0.00816,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063908,
+            "Level": 8,
+            "Parameters": [
+              7.1168,
+              7,
+              0.0256,
+              0.00441,
+              0.00882,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063909,
+            "Level": 9,
+            "Parameters": [
+              7.5616,
+              7,
+              0.0272,
+              0.00474,
+              0.00948,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063910,
+            "Level": 10,
+            "Parameters": [
+              8.0064,
+              7,
+              0.0288,
+              0.0051,
+              0.0102,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063911,
+            "Level": 11,
+            "Parameters": [
+              8.4512,
+              7,
+              0.0304,
+              0.00546,
+              0.01092,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063912,
+            "Level": 12,
+            "Parameters": [
+              8.896,
+              7,
+              0.032,
+              0.00582,
+              0.01164,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063913,
+            "Level": 13,
+            "Parameters": [
+              9.452,
+              7,
+              0.034,
+              0.00618,
+              0.01236,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063914,
+            "Level": 14,
+            "Parameters": [
+              10.008,
+              7,
+              0.036,
+              0.00654,
+              0.01308,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063915,
+            "Level": 15,
+            "Parameters": [
+              10.564,
+              7,
+              0.038,
+              0.0069,
+              0.0138,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11065,
+      "Name": "Hour of Burning Skies",
+      "Description": "Let the people's inner voices reach the divine throne in the heavens.\n<color=#FFD780FF>Mavuika's Elemental Burst is not reliant on Energy, but instead, on \"Fighting Spirit.\"</color>\n\n<color=#FFD780FF>Fighting Spirit</color>\nWhen Mavuika has at least 50% Fighting Spirit, she can consume it all to unleash her Elemental Burst.\nMavuika can obtain Fighting Spirit via the following methods:\n· When in combat, Nightsoul points consumed by nearby party members are converted to Fighting Spirit.\n· When nearby party members' Normal Attacks hit opponents, Mavuika gains 1.5 Fighting Spirit. This can trigger once every 0.1s.\n\nAfter using this, Mavuika gains 10 Nightsoul points and enters the Nightsoul's Blessing state. Riding her Flamestrider high in the air, she uses a powerful Sunfell Slice against opponents on the ground, dealing Nightsoul-aligned <color=#FF9999FF>AoE Pyro DMG</color> and entering the \"Crucible of Death and Life\" state.\n\n<color=#FFD780FF>Crucible of Death and Life</color>\nDuring this time, Mavuika's various actions will no longer consume Nightsoul points, and her interruption resistance is increased. Also, the DMG dealt by Sunfell Slice and \"Ancient Name Unbound\"'s Normal and Charged Attacks is increased based on the amount of Fighting Spirit she has when using the Elemental Burst.\nCrucible of Death and Life will be canceled when Mavuika leaves the field.\n\n<i>\"—But this time, I want to break the cycle and free us from this fate for good.\"</i>",
+      "Icon": "Skill_E_Mavuika_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 10621,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1062101,
+              "Level": 1,
+              "Parameters": [
+                0.3,
+                10
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1062101,
+        "Name": "Gift of Flaming Flowers",
+        "Description": "When a nearby party member triggers a Nightsoul Burst, Mavuika's ATK increases by 30% for 10s.",
+        "Icon": "UI_Talent_S_Mavuika_05"
+      },
+      {
+        "GroupId": 10622,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1062201,
+              "Level": 1,
+              "Parameters": [
+                0.0001,
+                20,
+                200
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1062201,
+        "Name": "\"Kiongozi\"",
+        "Description": "After using her Elemental Burst, <color=#FFD780FF>Hour of Burning Skies</color>, every point of Fighting Spirit present when it is used increases the DMG that the current active party member deals by 0.2%. The maximum increase obtainable this way is 40%, and this effect lasts 20s, decaying over this duration until it reaches 0.",
+        "Icon": "UI_Talent_S_Mavuika_06"
+      },
+      {
+        "GroupId": 10623,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1062301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1062301,
+        "Name": "Night Realm's Gift: Exhaust Mode",
+        "Description": "After Nightsoul points have been fully depleted, Mavuika will switch to using Phlogiston to maintain the All-Fire Armaments' Flamestrider form.\nWhile in an area with Phlogiston Mechanics within Natlan, Nightsoul Transmission: Mavuika can be used. When the current active character is sprinting, climbing, swimming, in movement modes caused by certain Talents, or at a certain height in the air, switching to Mavuika will trigger the following: Mavuika enters the Nightsoul's Blessing state and obtains 50% of her maximum Nightsoul points. Nightsoul Transmission can be triggered once every 10s by your own party.",
+        "Icon": "UI_Talent_S_Mavuika_07"
+      },
+      {
+        "GroupId": 10625,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1062501,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1062501,
+        "Name": "Night-Shattering Radiance",
+        "Description": "The party's Nightsoul Transmission CD is decreased by 20%.",
+        "Icon": "UI_Talent_S_Citlali_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1061,
+        "Name": "The Night-Lord's Explication",
+        "Description": "Mavuika's maximum Nightsoul points are increased to 120, and she gains Fighting Spirit 25% more efficiently.\nAdditionally, she gains 40% ATK for 8s after gaining Fighting Spirit.",
+        "Icon": "UI_Talent_S_Mavuika_01"
+      },
+      {
+        "Id": 1062,
+        "Name": "The Ashen Price",
+        "Description": "When in the Nightsoul's Blessing State, Mavuika's Base ATK is increased by 200, and she obtains the following effects based on All-Fire Armaments' form:\n· Ring of Searing Radiance: Nearby opponents' DEF is decreased by 20%.\n· Flamestrider: Mavuika's Normal Attacks, Charged Attacks, and her Sunfell Slice from the Elemental Burst <color=#FFD780FF>Hour of Burning Skies</color> deal 60%, 90%, and 120% of her ATK as increased DMG respectively.",
+        "Icon": "UI_Talent_S_Mavuika_02"
+      },
+      {
+        "Id": 1063,
+        "Name": "The Burning Sun",
+        "Description": "Increases the Level of <color=#FFD780FF>Hour of Burning Skies</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Mavuika_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1064,
+        "Name": "The Leader's Resolve",
+        "Description": "Enhances the effects of the Ascension Talent \"Kiongozi\":\nThe DMG increase gained after using the Elemental Burst <color=#FFD780FF>Hour of Burning Skies</color> will not decay over time, and an additional 10% DMG Bonus will be gained.\nYou must first unlock the Ascension Talent \"Kiongozi.\"",
+        "Icon": "UI_Talent_S_Mavuika_03"
+      },
+      {
+        "Id": 1065,
+        "Name": "The Meaning of Truth",
+        "Description": "Increases the Level of <color=#FFD780FF>The Named Moment</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Mavuika_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1066,
+        "Name": "\"Humanity's Name\" Unfettered",
+        "Description": "The All-Fire Armaments from the Elemental Skill <color=#FFD780FF>The Named Moment</color> receive all-round improvements:\n· Ring of Searing Radiance: When the Ring's attacks hit opponents, a Flamestrider will crash into the struck opponent, dealing 200% of ATK as Nightsoul-aligned <color=#FF9999FF>AoE Pyro DMG</color>.\n· Flamestrider: When Mavuika is riding the Flamestrider, she will also summon a Scorching Ring of Searing Radiance to follow her, which will decrease nearby opponents' DEF by 20% and deal 500% of ATK as Nightsoul-aligned <color=#FF9999FF>AoE Pyro DMG</color> to nearby opponents once every 3s. Mavuika's terrain-crossing abilities will also be further improved.\n\nAdditionally, when Mavuika is riding her Flamestrider and is not in combat, when her Nightsoul points drop to 5, she will gain 80 Nightsoul points. This effect can trigger once every 15s.",
+        "Icon": "UI_Talent_S_Mavuika_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Night-Igniting Flame",
+    "Detail": "The leader of Natlan who inherited the Ancient Name of \"Kiongozi.\" She made a vow to illuminate the future of the nation of war with the Sacred Flame.",
+    "Association": 9,
+    "Native": "Huitztlan",
+    "BirthMonth": 8,
+    "BirthDay": 28,
+    "VisionBefore": "Pyro",
+    "VisionAfter": "Pyro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Sol Invictus",
+    "ConstellationAfter": "Sol Invictus",
+    "CvChinese": "李晔",
+    "CvJapanese": "小松未可子",
+    "CvEnglish": "Katiana Sarkissian",
+    "CvKorean": "Kim Na-yul",
+    "CookBonus": {
+      "OriginItemId": 108779,
+      "ItemId": 108787,
+      "InputList": [
+        101243,
+        100080,
+        100076,
+        100084
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "With the flames to guide us across time, we took a land shrouded in darkness, and used our own blood and tears to forge it into a home. Now, our journey continues, and a new chapter awaits. As the current Pyro Archon, allow me, Mavuika, to light your way forward."
+      },
+      {
+        "Title": "Chat: Adventures",
+        "Context": "Exploration and trials... Heh, adventuring is right up my alley."
+      },
+      {
+        "Title": "Chat: Experience",
+        "Context": "Instead of confining themselves to the heavens, gods should broaden their horizons in the world below."
+      },
+      {
+        "Title": "Chat: Light",
+        "Context": "Many insects have a compulsion to follow the light, and humans are the same — except we call that light, \"hope.\""
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "Ah, nice and cool. Natlan doesn't have places like this."
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "Weather like this is perfect for enjoying the outdoors. Wanna go for a spin? Here, hop on."
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "Ah, you're dripping wet. That must be uncomfortable... Let's take a break. I'll use my fire to dry you off."
+      },
+      {
+        "Title": "In the Desert",
+        "Context": "Sand is the natural enemy of fire and civilization. In the desert, ruins are all that remain to tell the story of the past."
+      },
+      {
+        "Title": "Good Morning",
+        "Context": "After waking up, I always go over the plan for the day in my head... Unfortunately, sleeping in is never on the agenda."
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Have you had lunch? The Collective of Plenty sent over some fresh fruit — the perfect thing to round out a meal. Here, try some."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "Hm, so this is the proposal and approximate budget to rebuild the roads in the Children of Echoes... Oh, good evening. Is it that late already?"
+      },
+      {
+        "Title": "Good Night",
+        "Context": "Good Night! I'm going to take it easy and wrap up some work. Oh, don't worry — I see keeping busy as a great way to relax."
+      },
+      {
+        "Title": "About Mavuika: Hair",
+        "Context": "Oh, my hair? Don't worry, these are friendly flames — they won't burn you or incinerate anything. Although, I think our enemies will find that it's a bad idea to play with fire, if you know what I mean."
+      },
+      {
+        "Title": "About Mavuika: Message",
+        "Context": "Every Pyro Archon throughout Natlan's history has left behind important knowledge and memories within the Sacred Flame, for the benefit of future successors. When inherited, the sheer amount of information can impact your sense of self. So, I chose to leave behind this phrase, \"Before you become one with flame, be proud of who you are now.\""
+      },
+      {
+        "Title": "About Us: Fighting Side By Side",
+        "Context": "A plan is a reliable guide, but it's not an unchangeable or divine decree. Five hundred years ago, I could never have anticipated your arrival. But, after meeting you, I knew factoring you into my plan would be worth it. Judging from the outcome, choosing to fight by your side was unequivocally the right choice."
+      },
+      {
+        "Title": "About Us: Ancient Names",
+        "Context": "You may not have realized this, but your ancient name, Tumaini, will have a significant impact on Natlan for years to come. When future generations speak this name, they will think about this battle and the efforts of all our heroes. Our names — Tumaini and Kiongozi — are now linked and will live on in perpetuity."
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "For humans, Visions and Ancient Names are both gifts from the gods, where the former bestows Elemental power and the latter spiritual inspiration. However, I have always believed that no external factor is a condition for greatness — heroism comes from within."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "When I was little, my father told me that a barrel can only hold as much water as the shortest plank. If you want to reach your full potential, you need to be willing to become the weakest link, to acknowledge your shortcomings and learn from others. That doesn't make you a failure, it pushes you to succeed."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Baby Yumkasaurs are incredibly cute, and my Saurian companion, Hitata, was especially clingy. He used to jump into my arms the minute he saw me, even from quite a distance. My sister, Hine, would get so jealous — whenever she saw Hitata run towards me, she would do the same. Before I knew it, I would have an armful of baby Saurian and baby sister at the same time, haha."
+      },
+      {
+        "Title": "About Xilonen",
+        "Context": "Xilonen is one of the best craftsmen in Natlan. She has the ability to forge Ancient Names and is well-versed in Secret Source technology. Not to mention, she never backs away from a challenge, even when it's completely uncharted territory. The process isn't without twists and turns — like design changes and other modifications — but the results speak for themselves."
+      },
+      {
+        "Title": "About Citlali",
+        "Context": "Many people find her strange or difficult to get along with. But, this is how I see it — Citlali doesn't concern herself with trivial matters, but she's always there when it counts. I'm sure you've seen that for yourself. She's someone who can easily tunnel vision and get herself embroiled in trouble, so I try to keep certain things from her. But, she can see right through me... She's too sharp."
+      },
+      {
+        "Title": "About Chasca",
+        "Context": "Being able to survive under the influence of Abyssal corrosion was already a miracle, but thanks to the people and Saurians of this land, she even found a reason not just to survive, but to live. I have every faith in her fortitude, but I will still do what I can to make this land a \"gentler\" place — even the strongest among us need a break sometimes."
+      },
+      {
+        "Title": "About Ororon",
+        "Context": "In my opinion, Ororon's true personality is very different from what he projects on the outside — like lava covered in ice. His tribe and his friends bring him peace, but his drive to protect them and his need to become a hero leave him restless. It's inadvisable to act on impulse, but these are precious qualities all the same."
+      },
+      {
+        "Title": "About Iansan: Being Targeted",
+        "Context": "A lot of people underestimated Iansan during her first few Pilgrimages after receiving her Ancient Name, and singled her out during the team stage as an easy target. Even though she never lost, the constant challengers drained her stamina and affected her ranking, which only made people more likely to target her..."
+      },
+      {
+        "Title": "About Iansan: Proving Yourself",
+        "Context": "My advice to her was this — people are less likely to mess with someone whose strength is undeniable, so all she needed to do was to prove it. Well, she decided to do just that... by challenging me in the arena, hahaha. Yeah, I definitely didn't see that coming! In the end, she put up quite the fight, and no one underestimated her again."
+      },
+      {
+        "Title": "About Mualani",
+        "Context": "In terms of personality, Mualani and Tupac are completely different, and yet both inherited the name, Umoja. Unity lies not in a particular action, but in a state of mind — a willingness to give your all for your nation, family and friends. But, I doubt Mualani was thinking about any of that back then. She knew one thing to be true — that Kachina's life was worth any risk to her own."
+      },
+      {
+        "Title": "About Kinich",
+        "Context": "In addition to the Turnfire, Malipo has another meaning, \"cost\" or \"price.\" It may seem less overtly heroic compared to the other Ancient Names, but in truth, Malipo teaches us to be calm and analytical — to ask the questions people may not want to hear. Without people who possess these qualities, it's just too easy for the rest of us to act on impulse and emotion, and make decisions we'll come to regret."
+      },
+      {
+        "Title": "About Kachina",
+        "Context": "After you rescued Kachina from the Night Kingdom, I visited her family with Chief Pacal, and brought a few gifts to once again apologize for what happened. Kachina's time in the Night Kingdom left her with many scars she will have to carry into the future — scars she should never have had to bear... And for that, the fault is mine."
+      },
+      {
+        "Title": "About Varesa",
+        "Context": "During the Pilgrimage, I cover all the expenses at the Weary Inn, and without fail, there's always an order for a party tray for eighty. I used to assume it was someone ordering for a large group of friends, but as it turns out... Varesa ordered it all for herself."
+      },
+      {
+        "Title": "About Ifa",
+        "Context": "The truly great doctors often possess vast medical knowledge as well as great communication skills. And, when the patient and the doctor do not speak the same language, observation and empathy become even more important. That's why Ifa can make friends with just about anyone.\nSuffice it to say, if someone is on bad terms with Ifa — human or saurian — I doubt the problem lies with him, haha."
+      },
+      {
+        "Title": "About The Captain",
+        "Context": "For him, I suspect the past five hundred years felt endless. When someone is deprived of death, life becomes a journey with no end, and the human spirit easily grows weary. And yet, he managed to seize the only chance of victory to arrive at the end he sought all along. I have great respect for warriors like him."
+      },
+      {
+        "Title": "About The Seven",
+        "Context": "To be quite honest, you likely know them better than me. However, their nations continue to survive and thrive to this day, and that would be impossible without strong leadership. Once this chapter of Natlan's history comes to a close, I plan on strengthening our relationship with other nations so that Natlan can continue to grow."
+      },
+      {
+        "Title": "About Yumemizuki Mizuki",
+        "Context": "Ah, she left a very positive impression. When she first arrived in Natlan, I heard that she had a great deal of interest in our hot springs and spent quite some time studying their properties. But, it wasn't for profit. She was interested in their role in improving mental health. Such a pure cause deserved our support and respect.\nSpeaking of which... Is it true that the current Archon of Inazuma enjoys hot springs as well? If that's the case, I believe I've found a good starting point for our next conversation."
+      },
+      {
+        "Title": "More About Mavuika: I",
+        "Context": "Oh, you want to know more about me? Sure, I'm actually quite fond of telling stories. Still, I think this will be a lot more fun over a few drinks."
+      },
+      {
+        "Title": "More about Mavuika: II",
+        "Context": "Riding the flamestrider isn't complicated, it just takes some practice. If I want to go fast, though, I would need to install some safety components. What was that? I'm already going quite fast? Well, when I asked, this is what Xilonen told me — \"It's safe enough — not like you're made of glass.\""
+      },
+      {
+        "Title": "More about Mavuika: III",
+        "Context": "Of course, I also have many regrets. Thanks to my knowledge and strength, I'm an effective problem-solver, but most of the time, all people really need is companionship... I've disappointed many people in that regard, but duty stops for no one. Questioning my path will only bring more pain — I owe it to myself to stick to my convictions."
+      },
+      {
+        "Title": "More about Mavuika: IV",
+        "Context": "Unleashing the power of the divine throne bound my soul to the Ley Lines. As I rose up into the air, I could feel the passion of our warriors, the determination of our people, and the pain of our fallen... It's a scene I've witnessed once before. But, with the help of our heroes, this time it had a very different ending. That is how we know this struggle was not in vain."
+      },
+      {
+        "Title": "More about Mavuika: V",
+        "Context": "With our triumph over the Abyss, my most important duty as Pyro Archon came to an end. Five hundred years ago, I chose to fight for a future that likely wouldn't include me — so I was prepared for that result. So, when that future actually arrived, I was at a loss... But, you've inspired me. Exploration, curiosity, and dedication to others — that's the path forward."
+      },
+      {
+        "Title": "Mavuika's Hobbies",
+        "Context": "Getting stronger. Completing a difficult challenge, solving a complicated puzzle, defeating a powerful enemy... I don't have a singular hobby — the sense of accomplishment is what I enjoy the most."
+      },
+      {
+        "Title": "Mavuika's Troubles",
+        "Context": "\"Due to lack of popularity, all future expansions and additions to 'The Saurian Sleuth' have been suspended...\" That was my favorite tabletop puzzle game. It can't be because it was too hard or the rules were too complicated, right? That doesn't make it bad... *sigh* If it comes down to sales, there's not much I can do. I hope the creator will come out with a new game. Maybe I'll write an anonymous letter to support him..."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "Even when it comes to the simplest home-cooked meals, every family has their own recipe, and the flavor can change a lot. I've tried a bunch of different stews around the Stadium, each unique and delicious in its own way. But, if I'm cooking for myself, I still prefer my family recipe."
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "I like most ingredients, but I don't really appreciate dishes that are more form than substance, like a full course dinner that will take three whole hours to get through... I respect culinary innovation, of course, but I prefer to spend my time on something more productive."
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "Just what I like, thank you. Do you have the recipe? I'd love to learn."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "Not bad overall, but there's still room for improvement."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "Oh, it's surprisingly edible. Definitely not as bad as it looks."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "#Starting from today, you should write down all your accomplishments on a piece of paper. Then, when you take it out on your next birthday, you'll have a gift from yourself! That way, you'll never forget how amazing you are. Happy Birthday, {NICKNAME}."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "Perfect! I feel nice and loose."
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "I can feel myself getting stronger. But, my power doesn't stop here."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "My fire grows hotter, and my body and spirit more aligned. This power shall allow me to fulfill all my duties as a leader."
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "Ever since we met, my power has grown by leaps and bounds. Though different missions drive us forward, a shared sense of duty and justice binds us together. Your help to Natlan is immeasurable, and I am more grateful than words can say."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "Light it up."
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Burn it down!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "Rise with the sun."
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Rev the engines!"
+      },
+      {
+        "Title": "Elemental Skill: V",
+        "Context": "Full throttle!"
+      },
+      {
+        "Title": "Elemental Skill: VI",
+        "Context": "Try and stop me."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Light of the blazing sun!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Wrath from the skies!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Pyroclastic surge!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "The rewards of an adventure worth remembering."
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "Ah, something to add to my collection."
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Hey, not a bad haul."
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "No more mistakes."
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Switching gears."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "Time to buckle down."
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Leave the fighting to me."
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Take a breather."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "The flame... burns on..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "The end... of our legacy..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Is this... our fate?"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Not bad."
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "Archon reporting for battle."
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Any time, any place."
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "Ready to ride."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "When the name \"Mavuika\" is mentioned, the citizens of Natlan will not be stingy with their praise, for she has proven herself well-qualified and worthy of respect, be it as a leader or Archon.\nShe is the pinnacle of strength in Natlan, and she has the bearing to match. Even newly-arrived travelers need only hear her speak at the Stadium of the Sacred Flame to know that she merits being known as the sun.\nShe is exceedingly awe-inspiring, but is no unsmiling ruler whose ways may as well be set in stone. In informal situations, she is an enthusiastic and friendly big-sister figure, always ready to chat, and ever open to reasonable suggestions.\nOn the eve of the Pilgrimage of the Return of the Sacred Flame, the Weary Inn is often packed with passionate revelers, and Mavuika can often be found there, playing cards or singing songs with everyone, and even if some drunk person splashes their drink onto her, she doesn't mind at all.\nAfter all, for someone who can ignite their hair to dry off said drink, such incidents are small beans. When such levity is hard to come by, why let something so minor spoil the mood?\nBut should the person intend to start a drinking contest, it is Mavuika's desire to win that will be kindled. As the \"battle\" has begun, there can be no room for retreat or surrender. The victor will be determined, one way or the other.\nSince becoming Archon, her habits have remained utterly unchanged, and this has allowed her to make many friends across the tribes.\nHowever, not everyone possesses the subtle sense of proper propriety for such a relationship. Indeed, she can be too down-to-earth, and with her lack of airs, some misjudge the situation and get the false impression that they can use their friendship with an Archon to their own benefit.\nStrangely enough, though people of this sort are a dime a dozen, they have never caused any major trouble, for Mavuika has never responded to such ridiculous requests — a solemn, icy stare is all she needs to send the other party scampering away.\nThe sight of those ever-burning eyes casting such a frigid gaze wakes those confused fools up in an instant to the fact that Mavuika is still the leader of a nation, a supreme deity.\nA Speaker's Chamber staff member once suggested that she should subject those who so harass her to at least token punishment, lest there be an endless stream of incidents to come, but she refused.\n\"Archonhood is status, authority, and a spiritual symbol. But it is not who 'I' am.\""
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "Theoretically, anyone in Natlan can become the Pyro Archon, so long as they prove that they are the mightiest warrior of their era during a Pilgrimage.\nTherefore, the rulers of the nation have varied wildly in personality and style. Some worshipped power and strength, valuing results. To them, any price was acceptable so long as the ends could be achieved.\nMavuika is just the opposite. In the eyes of others, she is undoubtedly your typical \"perfectionist\" — not only must things be done well, but also beautifully.\nTo pursue quality and completeness is only human, but doing so often requires extra time. And whenever anyone tells her that such an approach isn't efficient enough, Mavuika has a set of arguments at the ready.\nFirst, there are no standalone events in this world. Tracing events backward reveals causes, while moving forward reveals outcomes. Humans are incapable of analyzing the whole chain of events. All they can do is handle each one as best they can, and avoid leaving hidden pitfalls.\nSecond, all past events become valuable experiences. Successes serve as references, and failures as lessons. But if matters were dealt with carelessly, all they will leave are warnings to not repeat the same mistakes.\nBut apart from these two ideas, Mavuika also has a very important reason for her approach that she rarely ever mentions — and that is \"fun.\"\nShe has a broad range of hobbies, and has unparalleled skill in the various sports and games popular across the tribes, but one sentence can sum up all of these interests — she loves getting better at things.\nFor example, when she first learned how to rock climb, she would commit every movement her coach made to memory and ask in detail about every last maneuver.\nHer next step was to train — and train a lot, making her body remember the trick behind each movement, gradually executing them faster and faster. She even requested someone to record the entire process with a Kamera, all the better to later study any failures or areas where she wasn't fluid enough.\nShe would also talk with her coach and use various tools and equipment in order to solve problems she encountered, enumerating lists of solutions, and trying out each one in turn before choosing the best.\nIn this way, Mavuika honed her climbing skills to perfection most quickly indeed, and her questions grew ever harder for her coach to answer, eventually shifting their relationship from that of teacher and student to that of fellow lovers of climbing, delving into their craft together.\nIn other fields, there were even more exaggerated cases. In some cases, Mavuika would come to surpass \"masters\" with three to four decades of experience after just a single year of study.\nThe reason behind this was actually quite simple: Building up skills is easy, but maintaining progress is hard. Once memories have sunk into one's body, it becomes easy for one to grow self-satisfied and complacent, and thus cease to actively think.\nAs such, one thing Mavuika detests is repetition: If a deed done before must be done again, then it must be done differently in some way, whether by trying something new, or else through reflection and optimization.\nBut it is difficult for most to see all the effort that she puts into this, and thus, her swift progress is often put down to talent. To this, she can only wryly smile, for who in this world was born with such a surfeit of talent?\n\"If you want to improve, all you have to do is master the 'skill' of improvement and then just put in the work.\""
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "Mavuika gives the impression of being a most avid outdoorswoman. When not at work or training, she can be seen in all sorts of places, throwing herself at various extreme challenges.\nBut what people often fail to realize is that she actually can also sit still for long periods of time, staying focused as she reads books and woven scrolls, as she possesses ample patience.\nHer other great indoor hobby is solving puzzles, whether these involve logical reasoning or pattern recognition, and regardless if their contents are images, numbers, or even stories. All quickly suck her into a world of her own.\nAfter enjoying time well-spent making deductions and decisions, she even scores these puzzles based on their quality, difficulty, and reasonability, so that her fellow puzzle hobbyists have a reliable standard to refer to.\nYet this hobby of hers came to pose a problem: Puzzle games are usually one-time sources of enjoyment and lack replayability, and Mavuika tends to solve them all too quickly, faster even than the ability of puzzle creators to develop new ones.\nAs such, while keeping an eye on any new puzzles that come to market, Mavuika also dusts off already-solved puzzles and adds various restrictions and limitations to increase the difficulty or complexity.\nFor example, while doing a puzzle, she might allow herself to select pieces normally, but flip the pieces when placing them, thus only being able to see if she has the puzzle right after placing every piece and flipping the whole thing back over.\nOr perhaps, if the puzzle requires separating multiple connected pieces of metal, she will affix one piece to the table, thus restricting the number of directions in which she can conveniently pull the pieces apart, requiring her to consider alternatives — a restriction that can also be applied to knot puzzles.\nOver time, she has compiled the various gameplay challenges she has come up with and puzzle ratings she has given, creating a most valuable curated catalog of puzzles.\nAt first, she published it at the Speaker's Chamber, hoping that she could help her fellow hobbyists, and also promote this relatively niche hobby while she was at it, but the quickest to seize upon the utility of the resource she created were, in fact, the sellers of puzzles.\nThey used the recommendation of the Pyro Archon herself to shamelessly peddle their puzzles, but this quickly led to numerous disputes — approval though it be, Mavuika's catalog only indicated her personal preference, while the full scope of human taste in puzzles is vast indeed.\nFollowing that incident, Mavuika no longer publicly discloses her catalog, but if one truly considers oneself a puzzle enthusiast, one can still go to the Speaker's Chamber and request to view it.\n...With the caveat that you must first prove yourself an expert by solving a random puzzle selected from Mavuika's collection by the Chamber staff, of course."
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Mavuika was born to a very ordinary family of the Scions of the Canopy. Her mother was bold and passionate but lacked caution, while her father was knowledgeable but taciturn, and the two would constantly clash from the moment they were married.\nThe birth of their child changed everything — Mavuika was like a small, pure, burning sun, constantly casting rays of warmth in all directions, the streaming light scattering and burning away the barriers and gloom that lay between them.\nYoung Mavuika was curious about everything and anything, and whenever her father would answer her questions, he always drew a worshipful gaze and warm, genuine smile from her, a process that gradually taught him the joys of communicating with others and sharing his thoughts.\nWhile she gained knowledge from her father, Mavuika would pester her mother to bring her out on adventures every day, and on these, the brave young girl would always charge ahead, scaring her mother half to death. As this repeated time and again, her mother came to realize how her own reckless behavior must have seemed inappropriate in the eyes of others.\nMavuika matured faster than any other child her age, and very quickly, the knowledge she had gleaned from her father allowed her to point out her mother's rashness, and the experiences she had with her mother allowed her to identify her father's overly idealistic thinking.\nLike a bridge, she stood between two people who could not at first communicate easily with one another, slowly dissolving the many contradictions and misunderstandings that had accumulated over time. When her father taught her martial arts, her mother would give pointers from the side, and when her mother took her to train Saurians, her father would also come along.\nBut the thing that really pushed Mavuika to take another step forward was the birth of another angel into the house — her sister, Hine.\nPerhaps it was because Mavuika had already taken on responsibilities important to the family's relationships that she quickly got used to the role of an older sister, and step by step, she passed on all that she had learned from her parents to Hine.\nHine was by no means easy to handle. She was naughty at times, quiet at others, and rarely obedient, which often resulted in the other three household members seated at the table simultaneously facepalming with a sigh. But even these were moments filled with warmth.\nOnce, when Mavuika and her father were teaching her, Hine asked a question:\n\"If all the Pyro Archons are just humans, how can we be sure that every person who becomes one will be willing to protect us?\"\n\"It's precisely because we are all ordinary people that we don't need such guarantees.\"\n\"Daddy, I don't get it! You're talking in riddles again.\"\n\"Ask your sister, then. I'm certain she's figured this one out already — a long while ago, in fact.\"\nMavuika simply smiled and hugged her sister, patting her on her head, and said nothing more on the matter."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "Five hundred years ago, when Mavuika's plan to save Natlan was revealed to the chiefs and elite warriors, there were stark divisions of opinion.\nSome believed that the loss of a leader and warrior as important as Mavuika was unacceptable, for there could be no future to speak of if the present era could not be defended.\nIn the end, however, the vast majority were persuaded by Mavuika or by the various tribal chiefs, for hers was the only plan that provided any hope of victory, even though to those at the time, it seemed incredibly risky, and had slim odds of success anyway.\nGuided by an unspoken understanding, the warriors visited her Speaker's Chamber as one, offering their most important belongings to be used as \"fuel\" in case of any future emergencies.\nThese brave people were proud of this necessary sacrifice and did not hesitate in the least, but Mavuika called out to each of them before they could leave, offered them a hot drink, and listened to them speak of the story behind those objects.\nShe was willing to, and indeed, had to carry these stories with her into the future, for memories can surpass time where human lifespans may fail. And though these objects might not endure into the future, so long as someone still sang their stories, they could welcome the victorious dawn alongside the people of the future.\nThus did they all, old friends of Mavuika and relative strangers both, speak freely in the Speaker's Chamber, at times boasting of heroic achievements, and at others shedding silent tears for the passing of close kin and friends.\nEach item was well-kept and maintained, and their numbers have only increased over the last five hundred years, up until now.\nHowever, only a very few would finish the last of their drink after telling their story, pause for a moment, and then ask Mavuika if she had similar stories she wanted to share.\nAnd with a smile on her face, she would speak of her parents, of Hine, and of their two mischievous Yumkasaurs, the things she held most dear in the time she was about to lose.\n\"All of this stuff is pretty important, isn't it...\"\n\"No. All of it ceased to be important the moment we decided on this plan — even me.\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Mavuika always imagined her plan to fight against the Abyss as a lengthy journey, and herself as an adventurer carrying a full pack and marching toward her predetermined goal. Memory and love were the supplies she brought, and they would help see her through confusion and solitude.\nWithin a world created through meditation, she would manifest this path. A high tower would appear in the distance, the Sacred Flame burning at its summit, lighting her way and showing her the path.\nNone knew how to get there, nor how far the journey would take her, but as her luggage grew ever lighter, the road stretched ever farther on with each step she took.\nFarewell, Atea said to her, and Tenoch, and her mother and sister.\nFarewell, Sundjatta told her, and Burkina and Wanjiru also.\nThe existence of the path to victory was not something to be taken for granted. Rather, it was forged by countless heroes, past and present. Rather than a \"Savior,\" then, Mavuika preferred to be known as an \"agent.\"\nBut this alone was not enough. Her journey was no penance that required only willpower, but rather, decisiveness and wisdom also.\nShe could never have foreseen such marked variables as the Traveler or The Captain five hundred years prior, but upon learning of them, she only needed a moment's consideration before deciding to incorporate them into the plan.\nIn addition to any other considerations she might have had based on the realities of the situation, another factor played into her judgment — that both the Traveler and The Captain exhibited traits that mirrored her own.\nWere it not for their respective positions, she would have liked nothing more than for the three of them to sit and speak of their travels over grilled meat and drinks. After all, those who travel along the same road, never having a fixed residence, can best resonate with and understand one another.\nBut she also had a deep understanding of the obstacles therein — having traveled so far, it was only natural to not wish to show the fatigue or weakness in one's heart, and even she was no exception.\nShe could easily tell stories about her comrades or family with a smile, but rarely could she speak of the sadness sown in the river of time by those happy moments, nor could she take out her long-emptied haversack, point at it, and speak of how it reflected the current state of her heart.\nShe could not, she would not, and she did not need to.\nSo, in the end, she kept a suitable distance, just as she always has. Everyone needed the ringing cheers and flowing wine of victory feasts, just as they needed the solitary quiet once the revelry faded.\nIn this era, perhaps only one person would ever inappropriately knock on her door in those peaceful moments, and that was Citlali.\nPerhaps it was her fondness for drink? Or maybe they just made suitable drinking buddies."
+      },
+      {
+        "Title": "Flamestrider",
+        "Context": "In emergencies, speed is the difference between life and death. Being well aware of this, Mavuika had long had the idea of constructing a multifunctional powerhouse of a vehicle.\nIt needed to be both fast and sturdy, such that it would not be damaged while moving at high-speeds, no matter the circumstances.\nIt needed to be able to traverse a wide variety of terrain, from cliffs to the water's surface, or even the skies. After all, in critical situations, the quickest path is always a straight line.\nIt also needed sufficient explosive power, such that it could serve as a weapon when necessary. After all, in the event of an Abyssal attack, time spent tangling with monsters was time wasted.\nThen, it had to be sufficiently compatible with Pyro, such that she could summon it with a mere flick of her wrist.\n\"These are my requirements. Well within your capabilities, right, Xilonen?\"\n\"Wha...?\"\nEven by themselves, each of her criteria was difficult to fulfill. Put together, the task was truly outrageous. Even an artisan skilled as Xilonen thought Mavuika off her rocker, and understandably so.\nBut Mavuika had come with much more than just a request. She brought also ideas with which to solve the problems involved — long had she been scouring Natlan for all manner of strangely-shaped Source Mechanisms as yet uncorrupted by the Abyss, along with various design blueprints of unknown provenance.\nIn the distant past, the ancient dragons too had tried to fight against the Abyss. Their methods were exceptionally brutal, and as a result, they had built many a mighty device that relied on raw power to achieve victory. As for the blueprints, those Mavuika had copied by hand and brought with her.\nIf the secrets behind the schematics could be unlocked, and the pre-existing devices reverse-engineered, and the useful parts disassembled before being recombined...\nHaving considered things up to this point, Xilonen looked up at Mavuika's smiling face, and knew she no longer had any reason to refuse, nor did she want to — what artisan would willingly miss out on making such a creation?\nThus the two of them joined forces to delve into the secrets behind the Source Mechanisms. In the process, they discovered that their original assumptions were too simplistic. It was impossible to get all the key components they needed from existing material.\nThe solution, then, was to use modern smithing techniques to create said parts independently and combine the two elements — a process that involved lots of overheating and explosions en route to solving the Pyro compatibility issue that Source Mechanisms had.\nAfter a long period of development, the prototype Flamestrider was at last complete. No one had ever seen such a beastly creation with such powerful capabilities before, and people lined up to see and applaud it.\nThus did the leader who protects Natlan gain yet another guaranteed source of strength.\nAlso worth mentioning is the fact that Xilonen declined to take part in the vehicle testing phase that followed, claiming that she had \"forgotten to make a second helmet.\" After all, sitting on the back of that thing while Mavuika is driving is a great way to end up feeling queasy."
+      },
+      {
+        "Title": "Vision",
+        "Context": "When Mavuika was still very young, she had yet to develop a complete concept of life and death. It was at this time that her father achieved victory in the Pilgrimage, and was soon to embark on a glorious journey.\nIn the culture and traditions of Natlan, to obtain this privilege is to become a hero, and Mavuika was immensely proud of her father for having done so. Thus, when her father came to say his farewells, she couldn't really understand the disquiet on her mother's face.\nIt was very uncommon for a team fighting in the Night Warden Wars to be completely wiped out, and even should some fall, their lives' flames would be rekindled by the Ode of Resurrection so long as the unit dispatched achieved victory.\nAt last, news of victory came to the Stadium. It had been three days and nights of vicious battle, and had cost three out of seven warriors, Mavuika's father being among them.\nThough she was somewhat worried, Mavuika knew the Rite of Rekindling to be akin to a victory feast. Her father would return to them from the Sacred Flame, just as she remembered, and their family would be reunited.\nBut, contrary to her expectations, her father was covered in wounds from head to toe, so much so that he could not even stand on his own two feet.\nThe Ode of Resurrection could rekindle life, but only the fatal wound could be reversed. The wounds that had slowly accumulated as the battle raged on or pre-existing ailments would not be cured. And it was precisely the length of the battle that had brought her father low.\nThis was the first time Mavuika had seen her father in such a weak state, and the first time she felt the gaze of \"death\" fixed on her. It was still a thing to be respected and feared, even with the Ode at hand.\nHaving rarely cried in her life, Mavuika held her tears back this time, too. She simply lowered her head in silence, gripping her father's hand as he lay in his sickbed, her heart filled, in truth, more with regret than sadness.\nPerceiving her thoughts, her father told her that this was the truth of \"war,\" that all fear death, but that some would always step forth to fight, because they had something they wished to protect.\nBut the world of children is not yet governed by so many expectations, and she did not understand why her father, and indeed, all the grown-ups, were willing to shoulder the duty of war.\n\"Since we're forced to fight this war, then I wish to put an end to it.\"\nMavuika's eyes flashed like flames as she spoke, and her parents looked at one another, some certainty dawning. They did not rush to deny that notion on account of their daughter's \"naivete.\" Instead, they nodded.\nHer parents' acknowledgment steeled her initial resolve, and thus did the gaze of the gods come to rest upon her. And though she would later learn many secrets and know more about the crisis that Natlan faced, she would never doubt the trust she once saw in their eyes.\nShe believed that this was something that only she could do — not only because she was \"Kiongozi\" Mavuika, but also because she was her parents' daughter, their pride and joy. She was a daughter of the Scions of the Canopy — a daughter of Natlan."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 210600,
+      "Name": "Undying Sun",
+      "Description": "Mavuika's outfit. She is the sun that walks among us, the beacon that shines through every night, and the spark by which all kindling is ignited, bestowing courage upon us all. Such is her radiance that it shall never fade away.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104114,
+    113066,
+    101253,
+    112106,
+    104349,
+    113068
+  ],
+  "NameCard": {
+    "Name": "Mavuika: Sun-Crowned",
+    "Description": "Namecard style.\nNo Pyro Archon has ever intended to contest the sun. But as ordinary people see it, this \"solar ring\" is the crown of leaders as radiant as the sun.",
+    "Icon": "UI_NameCardIcon_Mavuika",
+    "PicturePrefix": "UI_NameCardPic_Mavuika"
+  }
+}

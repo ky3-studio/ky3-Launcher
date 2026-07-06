@@ -1,0 +1,1189 @@
+{
+  "Id": 10000031,
+  "PromoteId": 31,
+  "Sort": 14,
+  "Body": 2,
+  "Icon": "UI_AvatarIcon_Fischl",
+  "SideIcon": "UI_AvatarIcon_Side_Fischl",
+  "Name": "Fischl",
+  "Description": "A mysterious girl who calls herself \"Prinzessin der Verurteilung\" and travels with a night raven named Oz.",
+  "BeginTime": "2020-09-15T04:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 12,
+  "BaseValue": {
+    "HpBase": 770.4634,
+    "AttackBase": 20.4792,
+    "DefenseBase": 49.78575
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 3131,
+        "Proud": {
+          "Descriptions": [
+            "1-Hit DMG|{param1:P}",
+            "2-Hit DMG|{param2:P}",
+            "3-Hit DMG|{param3:P}",
+            "4-Hit DMG|{param4:P}",
+            "5-Hit DMG|{param5:P}",
+            "Aimed Shot|{param6:P}",
+            "Fully-Charged Aimed Shot|{param7:P}",
+            "Plunge DMG|{param8:F1P}",
+            "Low/High Plunge DMG|{param9:P}/{param10:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 313101,
+              "Level": 1,
+              "Parameters": [
+                0.44118,
+                0.46784,
+                0.58136,
+                0.57706,
+                0.72068,
+                0.4386,
+                1.24,
+                0.568288,
+                1.136335,
+                1.419344
+              ]
+            },
+            {
+              "Id": 313102,
+              "Level": 2,
+              "Parameters": [
+                0.47709,
+                0.50592,
+                0.62868,
+                0.62403,
+                0.77934,
+                0.4743,
+                1.333,
+                0.614544,
+                1.228828,
+                1.534872
+              ]
+            },
+            {
+              "Id": 313103,
+              "Level": 3,
+              "Parameters": [
+                0.513,
+                0.544,
+                0.676,
+                0.671,
+                0.838,
+                0.51,
+                1.426,
+                0.6608,
+                1.32132,
+                1.6504
+              ]
+            },
+            {
+              "Id": 313104,
+              "Level": 4,
+              "Parameters": [
+                0.5643,
+                0.5984,
+                0.7436,
+                0.7381,
+                0.9218,
+                0.561,
+                1.55,
+                0.72688,
+                1.453452,
+                1.81544
+              ]
+            },
+            {
+              "Id": 313105,
+              "Level": 5,
+              "Parameters": [
+                0.60021,
+                0.63648,
+                0.79092,
+                0.78507,
+                0.98046,
+                0.5967,
+                1.643,
+                0.773136,
+                1.545944,
+                1.930968
+              ]
+            },
+            {
+              "Id": 313106,
+              "Level": 6,
+              "Parameters": [
+                0.64125,
+                0.68,
+                0.845,
+                0.83875,
+                1.0475,
+                0.6375,
+                1.736,
+                0.826,
+                1.65165,
+                2.063
+              ]
+            },
+            {
+              "Id": 313107,
+              "Level": 7,
+              "Parameters": [
+                0.69768,
+                0.73984,
+                0.91936,
+                0.91256,
+                1.13968,
+                0.6936,
+                1.86,
+                0.898688,
+                1.796995,
+                2.244544
+              ]
+            },
+            {
+              "Id": 313108,
+              "Level": 8,
+              "Parameters": [
+                0.75411,
+                0.79968,
+                0.99372,
+                0.98637,
+                1.23186,
+                0.7497,
+                1.984,
+                0.971376,
+                1.94234,
+                2.426088
+              ]
+            },
+            {
+              "Id": 313109,
+              "Level": 9,
+              "Parameters": [
+                0.81054,
+                0.85952,
+                1.06808,
+                1.06018,
+                1.32404,
+                0.8058,
+                2.108,
+                1.044064,
+                2.087686,
+                2.607632
+              ]
+            },
+            {
+              "Id": 313110,
+              "Level": 10,
+              "Parameters": [
+                0.8721,
+                0.9248,
+                1.1492,
+                1.1407,
+                1.4246,
+                0.867,
+                2.232,
+                1.12336,
+                2.246244,
+                2.80568
+              ]
+            },
+            {
+              "Id": 313111,
+              "Level": 11,
+              "Parameters": [
+                0.93366,
+                0.99008,
+                1.23032,
+                1.22122,
+                1.52516,
+                0.9282,
+                2.356,
+                1.202656,
+                2.404802,
+                3.003728
+              ]
+            },
+            {
+              "Id": 313112,
+              "Level": 12,
+              "Parameters": [
+                0.99522,
+                1.05536,
+                1.31144,
+                1.30174,
+                1.62572,
+                0.9894,
+                2.48,
+                1.281952,
+                2.563361,
+                3.201776
+              ]
+            },
+            {
+              "Id": 313113,
+              "Level": 13,
+              "Parameters": [
+                1.05678,
+                1.12064,
+                1.39256,
+                1.38226,
+                1.72628,
+                1.0506,
+                2.635,
+                1.361248,
+                2.721919,
+                3.399824
+              ]
+            },
+            {
+              "Id": 313114,
+              "Level": 14,
+              "Parameters": [
+                1.11834,
+                1.18592,
+                1.47368,
+                1.46278,
+                1.82684,
+                1.1118,
+                2.79,
+                1.440544,
+                2.880478,
+                3.597872
+              ]
+            },
+            {
+              "Id": 313115,
+              "Level": 15,
+              "Parameters": [
+                1.1799,
+                1.2512,
+                1.5548,
+                1.5433,
+                1.9274,
+                1.173,
+                2.945,
+                1.51984,
+                3.039036,
+                3.79592
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10311,
+        "Name": "Bolts of Downfall",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, the dark lightning spirits of Immernachtreich shall heed the call of their Prinzessin and indwell the enchanted arrowhead. When fully indwelt, the Rachsüchtig Blitz shall deal immense <color=#FFACFFFF>Electro DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+        "Icon": "Skill_A_02"
+      },
+      {
+        "GroupId": 3132,
+        "Proud": {
+          "Descriptions": [
+            "Oz's ATK DMG|{param1:P}",
+            "Summoning DMG|{param2:P}",
+            "Oz's Duration|{param4:F1}s",
+            "CD|{param5:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 313201,
+              "Level": 1,
+              "Parameters": [
+                0.888,
+                1.1544,
+                0,
+                10,
+                25,
+                8
+              ]
+            },
+            {
+              "Id": 313202,
+              "Level": 2,
+              "Parameters": [
+                0.9546,
+                1.24098,
+                0,
+                10,
+                25,
+                8
+              ]
+            },
+            {
+              "Id": 313203,
+              "Level": 3,
+              "Parameters": [
+                1.0212,
+                1.32756,
+                0,
+                10,
+                25,
+                8
+              ]
+            },
+            {
+              "Id": 313204,
+              "Level": 4,
+              "Parameters": [
+                1.11,
+                1.443,
+                0,
+                10,
+                25,
+                8
+              ]
+            },
+            {
+              "Id": 313205,
+              "Level": 5,
+              "Parameters": [
+                1.1766,
+                1.52958,
+                0,
+                10,
+                25,
+                8
+              ]
+            },
+            {
+              "Id": 313206,
+              "Level": 6,
+              "Parameters": [
+                1.2432,
+                1.61616,
+                0,
+                10,
+                25,
+                8
+              ]
+            },
+            {
+              "Id": 313207,
+              "Level": 7,
+              "Parameters": [
+                1.332,
+                1.7316,
+                0,
+                10,
+                25,
+                8
+              ]
+            },
+            {
+              "Id": 313208,
+              "Level": 8,
+              "Parameters": [
+                1.4208,
+                1.84704,
+                0,
+                10,
+                25,
+                8
+              ]
+            },
+            {
+              "Id": 313209,
+              "Level": 9,
+              "Parameters": [
+                1.5096,
+                1.96248,
+                0,
+                10,
+                25,
+                8
+              ]
+            },
+            {
+              "Id": 313210,
+              "Level": 10,
+              "Parameters": [
+                1.5984,
+                2.07792,
+                0,
+                10,
+                25,
+                8
+              ]
+            },
+            {
+              "Id": 313211,
+              "Level": 11,
+              "Parameters": [
+                1.6872,
+                2.19336,
+                0,
+                10,
+                25,
+                8
+              ]
+            },
+            {
+              "Id": 313212,
+              "Level": 12,
+              "Parameters": [
+                1.776,
+                2.3088,
+                0,
+                10,
+                25,
+                8
+              ]
+            },
+            {
+              "Id": 313213,
+              "Level": 13,
+              "Parameters": [
+                1.887,
+                2.4531,
+                0,
+                10,
+                25,
+                8
+              ]
+            },
+            {
+              "Id": 313214,
+              "Level": 14,
+              "Parameters": [
+                1.998,
+                2.5974,
+                0,
+                10,
+                25,
+                8
+              ]
+            },
+            {
+              "Id": 313215,
+              "Level": 15,
+              "Parameters": [
+                2.109,
+                2.7417,
+                0,
+                10,
+                25,
+                8
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10312,
+        "Name": "Nightrider",
+        "Description": "#Summons Oz. The night raven forged of darkness and lightning descends upon the land, dealing <color=#FFACFFFF>Electro DMG</color> in a small AoE.\nFor the ability's duration, Oz will continuously attack nearby opponents with <color=#FFACFFFF>Freikugel</color>.\n\nHold to adjust the location Oz will be summoned to.\n{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press} again any time during the ability's duration to once again summon him to Fischl's side.\n\n<i>\"My time is most precious, and I shall not waste it on the likes of you... Go, Oz, fall upon them, and bring down upon them your Rachsüchtig Blitz, that which tears open the long night.\"</i>\n<i>—Flowers for Princess Fischl (IV): Farewell Frau Welt</i>",
+        "Icon": "Skill_S_Fischl_01"
+      }
+    ],
+    "SpecialSkills": [
+      {
+        "GroupId": 3151,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 315101,
+              "Level": 1,
+              "Parameters": [
+                10,
+                0.225,
+                10,
+                90
+              ]
+            }
+          ],
+          "Display": 3
+        },
+        "Id": 315101,
+        "Name": "Witch's Eve Rite: Phantasmal Nocturne",
+        "Description": "After completing <color=#FFD780FF>Witch's Homework: Of the Unexpected</color>, Fischl will become a <color=#FFD780FF>Hexerei</color> character. When the party includes at least 2 Hexerei characters, you will gain the <color=#FFD780FF>Hexerei: Secret Rite</color> effect, which enhances Hexerei characters.\n\n<color=#FFD780FF>Hexerei: Secret Rite</color>\nHark, Prince Nachtraben, Ozvaldo Hrafnavins, he who has witnessed the fall of countless worlds. Sing now the starry septet for your sovereign, for this is the moment of deepest sin, when the gathered souls at the end of causality shatter the darkness of fate.\nAdditionally, when Oz is on the field, party members will gain additional buff effects:\n· After a nearby party member triggers an Overloaded reaction, Fischl and other nearby active party members have their ATK increased by 22.5% for 10s.\n· After a nearby party member triggers an Electro-Charged or Lunar-Charged reaction, Fischl and other nearby active party members have their Elemental Mastery increased by 90 for 10s.",
+        "Icon": "UI_Talent_S_Fischl_07"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 3139,
+      "Proud": {
+        "Descriptions": [
+          "Falling Thunder DMG|{param1:P}",
+          "CD|{param5:F1}s",
+          "Energy Cost|{param6:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 313901,
+            "Level": 1,
+            "Parameters": [
+              2.08,
+              0,
+              0,
+              0,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 313902,
+            "Level": 2,
+            "Parameters": [
+              2.236,
+              0,
+              0,
+              0,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 313903,
+            "Level": 3,
+            "Parameters": [
+              2.392,
+              0,
+              0,
+              0,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 313904,
+            "Level": 4,
+            "Parameters": [
+              2.6,
+              0,
+              0,
+              0,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 313905,
+            "Level": 5,
+            "Parameters": [
+              2.756,
+              0,
+              0,
+              0,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 313906,
+            "Level": 6,
+            "Parameters": [
+              2.912,
+              0,
+              0,
+              0,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 313907,
+            "Level": 7,
+            "Parameters": [
+              3.12,
+              0,
+              0,
+              0,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 313908,
+            "Level": 8,
+            "Parameters": [
+              3.328,
+              0,
+              0,
+              0,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 313909,
+            "Level": 9,
+            "Parameters": [
+              3.536,
+              0,
+              0,
+              0,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 313910,
+            "Level": 10,
+            "Parameters": [
+              3.744,
+              0,
+              0,
+              0,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 313911,
+            "Level": 11,
+            "Parameters": [
+              3.952,
+              0,
+              0,
+              0,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 313912,
+            "Level": 12,
+            "Parameters": [
+              4.16,
+              0,
+              0,
+              0,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 313913,
+            "Level": 13,
+            "Parameters": [
+              4.42,
+              0,
+              0,
+              0,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 313914,
+            "Level": 14,
+            "Parameters": [
+              4.68,
+              0,
+              0,
+              0,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 313915,
+            "Level": 15,
+            "Parameters": [
+              4.94,
+              0,
+              0,
+              0,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10313,
+      "Name": "Midnight Phantasmagoria",
+      "Description": "Summons Oz to spread his twin wings of twilight and defend Fischl.\nHas the following properties during the ability's duration:\n·Fischl takes on Oz's form, greatly increasing her Movement Speed.\n·Strikes nearby opponents with lightning, dealing <color=#FFACFFFF>Electro DMG</color> to opponents she comes into contact with. Each opponent can only be struck once.\n·Once this ability's effects end, Oz will remain on the battlefield and attack his Prinzessin's foes. If Oz is already on the field, then this will reset the duration of his presence.\n\n<i>\"...In the hordes of beasts that follow the cursed blood, only Prince Nachtraben, who bore witness to the extinction of a thousand worlds, knows her true greatness. Thus the night wings he spreads are his eternal promise to protect Her Royal Highness.\"</i>\n<i>—Flowers for Princess Fischl (I): End Time Zersetzung</i>",
+      "Icon": "Skill_E_Fischl_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 3121,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 312101,
+              "Level": 1,
+              "Parameters": [
+                1.527
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 312101,
+        "Name": "Stellar Predator",
+        "Description": "When Fischl hits Oz with a fully-charged Aimed Shot, Oz brings down Thundering Retribution, dealing <color=#FFACFFFF>AoE Electro DMG</color> equal to 152.7% of the arrow's DMG.",
+        "Icon": "UI_Talent_S_Fischl_05"
+      },
+      {
+        "GroupId": 3122,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 312201,
+              "Level": 1,
+              "Parameters": [
+                0.8
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 312201,
+        "Name": "Undone Be Thy Sinful Hex",
+        "Description": "If your current active character triggers an <color=#FFACFFFF>Electro-related Elemental Reaction</color> when Oz is on the field, the opponent shall be stricken with Thundering Retribution that deals <color=#FFACFFFF>Electro DMG</color> equal to 80% of Fischl's ATK.",
+        "Icon": "UI_Talent_S_Fischl_06"
+      },
+      {
+        "GroupId": 3123,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 312301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 312301,
+        "Name": "Mein Hausgarten",
+        "Description": "When dispatched on an expedition in Mondstadt, time consumed is reduced by 25%.",
+        "Icon": "UI_Talent_Expedition_Mengde"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 311,
+        "Name": "Gaze of the Deep",
+        "Description": "Even when Oz is not present in combat, he can still watch over Fischl through his raven eyes. When Fischl performs a Normal Attack against an opponent, Oz fires a coordinated attack, dealing DMG equal to 22% of Fischl's ATK.",
+        "Icon": "UI_Talent_S_Fischl_01"
+      },
+      {
+        "Id": 312,
+        "Name": "Devourer of All Sins",
+        "Description": "When <color=#FFD780FF>Nightrider</color> is used, it deals an additional 200% ATK as DMG, and its AoE is increased by 50%.",
+        "Icon": "UI_Talent_S_Fischl_02"
+      },
+      {
+        "Id": 313,
+        "Name": "Wings of Nightmare",
+        "Description": "Increases the Level of <color=#FFD780FF>Nightrider</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Fischl_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 314,
+        "Name": "Her Pilgrimage of Bleak",
+        "Description": "When <color=#FFD780FF>Midnight Phantasmagoria</color> is used, it deals 222% of ATK as <color=#FFACFFFF>Electro DMG</color> to surrounding opponents.\nWhen the skill duration ends, Fischl regenerates 20% of her HP.",
+        "Icon": "UI_Talent_S_Fischl_03"
+      },
+      {
+        "Id": 315,
+        "Name": "Against the Fleeing Light",
+        "Description": "Increases the Level of <color=#FFD780FF>Midnight Phantasmagoria</color> by 3.\nMaximum upgrade level is 15.",
+        "Icon": "UI_Talent_U_Fischl_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 316,
+        "Name": "Evernight Raven",
+        "Description": "Extends the duration of Oz's presence on the field by 2s. Additionally, Oz performs coordinated attacks with your active character when present, dealing 30% of Fischl's ATK as <color=#FFACFFFF>Electro DMG</color>.",
+        "Icon": "UI_Talent_S_Fischl_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Prinzessin der Verurteilung!",
+    "Detail": "A mysterious girl who calls herself \"Prinzessin der Verurteilung\" and travels with a night raven named Oz.",
+    "Association": 1,
+    "Native": "Adventurers' Guild",
+    "BirthMonth": 5,
+    "BirthDay": 27,
+    "VisionBefore": "Electro",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Corvus",
+    "CvChinese": "Mace & 赵悦程",
+    "CvJapanese": "内田真礼 & 増谷康紀",
+    "CvEnglish": "Brittany Cox & Ben Pronsky",
+    "CvKorean": "Park Go-woon & Lee Hyeon",
+    "CookBonus": {
+      "OriginItemId": 108060,
+      "ItemId": 108117,
+      "InputList": [
+        110005,
+        110010,
+        110011,
+        100016
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Hello",
+        "Context": "<color=#37FFFF>Fischl:</color> I, Fischl, Prinzessin der Verurteilung, descend upon this land by the call of fate an— Oh, you are also a traveler from another world? Very well, I grant you permission to travel with me.\n<color=#37FFFF>Oz:</color> She means, \"Nice to meet you.\""
+      },
+      {
+        "Title": "Chat: Whispers of Destiny",
+        "Context": "I hear the voice of fate, speaking my name in humble supplication..."
+      },
+      {
+        "Title": "Chat: Creation of the World",
+        "Context": "Hm-hm, may the glory of the Prinzessin bring light to this world."
+      },
+      {
+        "Title": "Chat: One From the Beyond",
+        "Context": "<color=#37FFFF>Fischl:</color> I do worry about the well-being of my retinue during my impromptu absence...\n<color=#37FFFF>Oz:</color> I'm sure the good people of the Adventurers' Guild are absolutely fine, mein Fräulein."
+      },
+      {
+        "Title": "After the Rain",
+        "Context": "Oh, the sun's out— Oh, um... This meteorological transformation is most splendid! Like a felicitous twist of fate in the face of certain doom."
+      },
+      {
+        "Title": "When Thunder Strikes",
+        "Context": "<color=#37FFFF>Fischl:</color> Hark! 'Tis Thundering Retribution, an omen of dark times ahead...\n<color=#37FFFF>Oz:</color> That, and mein Fräulein's laundry is still on the line...\n<color=#37FFFF>Fischl:</color> Wha... Seriously!?"
+      },
+      {
+        "Title": "When It Snows",
+        "Context": "<color=#37FFFF>Fischl:</color> A wonderful sight indeed. Why, it reminds me of my home world, where at the sight of the Prinzessin der Verurteilung, the very blood and tears of sinners turn to ice! ...Achoo! Achoo!\n<color=#37FFFF>Oz:</color> Not only their blood and tears, but also their saliva and mucus, mein Fräulein.\n<color=#37FFFF>Fischl:</color> Oz— Ahh—Achoo!!!"
+      },
+      {
+        "Title": "When the Sun Is Out",
+        "Context": "<color=#37FFFF>Fischl:</color> Ozzie, my dear familiar...\n<color=#37FFFF>Oz:</color> \"Ozzie?\" What's gotten into you...\n<color=#37FFFF>Fischl:</color> Her Majesty beseeches you to unfurl your blessèd wings, and with them blot out the heavens, plunging the world into eternal night...\n<color=#37FFFF>Oz:</color> If you didn't bring your parasol with you, that's your own fault, mein Fräulein!"
+      },
+      {
+        "Title": "Good Morning: Greet Fischl",
+        "Context": "Dusk and dawn but fleeting shadows are. Once more, the twists of fate have led you into my everlasting night."
+      },
+      {
+        "Title": "Good Morning: Greet Oz",
+        "Context": "<color=#37FFFF>Oz:</color> Good morning. Mein Fräulein heard you'd be dropping by, so she's preparing breakfast.\n<color=#37FFFF>Fischl:</color> Oz! ...Ahem. To what do I owe the pleasure?"
+      },
+      {
+        "Title": "Good Afternoon",
+        "Context": "Even one of royal blood finds oneself susceptible to drowsiness at this hour."
+      },
+      {
+        "Title": "Good Evening",
+        "Context": "<color=#37FFFF>Fischl:</color> The stars of firmament are naught but rifts, thrust open by Oz's beak into the boundless tapestry of darkness.\n<color=#37FFFF>Oz:</color> You do say the strangest things, mein Fräulein."
+      },
+      {
+        "Title": "Good Night",
+        "Context": "<color=#37FFFF>Fischl:</color> Sweet shall be thy sleep, spared of the Mares of the Night! For no Night-Mares would dare draw near to those who are blessed by the Immernachtreich!\n<color=#37FFFF>Oz:</color> She means, \"Goodnight.\""
+      },
+      {
+        "Title": "About Fischl: Prinzessin der Verurteilung",
+        "Context": "<color=#37FFFF>Fischl:</color> Me? Hehehe. Remember thou this, that I, Fischl, am the Prinzessin der Verurteilung, Sovereign of Immernachtreich, omniscient and eminent judge of all the world's iniquity!\n<color=#37FFFF>Oz:</color> She's an investigator for the Adventurers' Guild.\n<color=#37FFFF>Fischl:</color> ...Ahem. That is but one of my many royal engagements."
+      },
+      {
+        "Title": "About Us: Beings Who Descended Upon This World",
+        "Context": "Huh, you and I are both travelers from another world. That our paths have crossed here is no accident, but the will of fate."
+      },
+      {
+        "Title": "About Us: Shooting Down the World Beast",
+        "Context": "You seem... troubled. Traveler, do not lose heart! For with my left eye, the Auge der Verurteilung, which sees the threads of fate, I will surely keep you from harm. And Oz, the raven that has witnessed the demise of countless worlds, will watch over you on your journey. Should this world, like a beast prowling in the night, covet your dreams, then I, Prinzessin der Verurteilung, shall fell it with my ensorcelled arrows of judgment!"
+      },
+      {
+        "Title": "About Us: Ones Dear to Heart",
+        "Context": "<color=#37FFFF>Fischl:</color> Oz, my loyal companion. That we should have met this person, one who hails from another world as I do... Perhaps even cruel fate has deigned to smile upon me, though sin courses through my veins. If I am indeed destined to remain here, in this inescapable prison that is reality, at least—\n<color=#37FFFF>Oz:</color> I understand, mein Fräulein! In this traveler, Fräulein has found one who will never forsake her."
+      },
+      {
+        "Title": "About Us: Standing Watch",
+        "Context": "<color=#37FFFF>Fischl:</color> Ozvaldo von Hrafnavins. I, the Prinzessin der Verurteilung, sovereign of the Immernachtreich, do hereby call upon thee to do all within thy power to deliver the traveler from the claws of fate that would seek to snatch them at every turn, and to ready thy mind lest thou be required to make the ultimate sacrifice in the performance of this noblest of duties.\n<color=#37FFFF>Oz:</color> ...You'd place my life in danger so easily, mein Fräulein?"
+      },
+      {
+        "Title": "About the Vision",
+        "Context": "Oh? You inquire about my Edelstein der Dunkelheit? It is a royal heirloom, a ceremonial ornament that displays the majesty of the Prinzessin der Verurteilung before the unworthy. Even here, in this fallen world, I have been reunited with my rightful inheritance as one of royal blood and noble spirit, for the majesty of a true princess shall draw her royal heirlooms unto her wherever so she may roam."
+      },
+      {
+        "Title": "Something to Share",
+        "Context": "<color=#37FFFF>Fischl:</color> If one must reckon time as this world does, I, Fischl, have already seen three thousand winters. Not that the illusory passage of time has any bearing on one such as I, to whom the causality of three thousand universes has been unveiled.\n<color=#37FFFF>Oz:</color> Be that as it may, mein Fräulein, you are not yet considered to be of drinking age in this world, and no bartender can ever be convinced otherwise."
+      },
+      {
+        "Title": "Interesting Things",
+        "Context": "Oz's full name is Ozvaldo von Hrafnavins. Where I hail from, he holds dominion over star and sky across three universes, and the souls of the mighty, fallen in battle, rest in the shadow of his wings. One should add that the penalty for mispronouncing his name is to have one's tongue torn from one's mouth. However, as I am a princess and you are one who has my favor, we are at liberty to simply call him, \"Oz.\""
+      },
+      {
+        "Title": "About Bennett",
+        "Context": "<color=#37FFFF>Fischl:</color> Ah, the ill-starred young man... My Auge der Verurteilung has seen with unmistakable clarity how his heart ails at being forsaken by the world—\n<color=#37FFFF>Oz:</color> Someone needs to keep an eye on the unlucky fellow."
+      },
+      {
+        "Title": "About Lisa",
+        "Context": "<color=#37FFFF>Fischl:</color> The magus-custodian of books, gatekeeper of universal knowledge... Win her trust, and one may yet gain access to a vast repository of wisdom...\n<color=#37FFFF>Oz:</color> She means as long as you return your first few library books on time, you'll never have any trouble borrowing a book again."
+      },
+      {
+        "Title": "About Kaeya",
+        "Context": "<color=#37FFFF>Fischl:</color> His nature is obscure, his fate a mystery, and his speech a vexing tapestry woven of both fact and fiction... Perhaps he and I share the burden of mystical sight...\n<color=#37FFFF>Oz:</color> Or perhaps he's secretly an actual pirate?"
+      },
+      {
+        "Title": "About Mona",
+        "Context": "<color=#37FFFF>Fischl:</color> Aha, yes, Mona, the mighty astrologer... Mona, who once had the vanity to probe the fate of the Prinzessin der Verurteilung herself! She wound up a trembling wreck, overborne and overmastered.\n<color=#37FFFF>Oz:</color> The poor lass was trying desperately not to laugh. It was no easy task."
+      },
+      {
+        "Title": "About Rosaria",
+        "Context": "<color=#37FFFF>Fischl:</color> One finds Sister Rosaria to be a most devout believer in the Anemo Archon.\n<color=#37FFFF>Oz:</color> ...\"Devout believer,\" mein Fräulein?\n<color=#37FFFF>Fischl:</color> Indeed! One night, I heard her invoking the name of the Archon thus in another's presence: \"May you be struck down in the name of Lord Bartabos!\" One presumed that she was leading a prayer."
+      },
+      {
+        "Title": "About Fischl: I",
+        "Context": "To condemn the guilty, to sanctify the just, and to draw all castaway dreams into the embrace of the infinite Immernachtreich. This is the birthright of the Prinzessin der Verurteilung, and her burden. None may gainsay it."
+      },
+      {
+        "Title": "About Fischl: II",
+        "Context": "My left eye? It is the all-seeing Auge der Verurteilung, which reveals all that is true in the world. As to the question of why I conceal it... Well, would you willingly bear the agony of piercing to the heart of all truths? Furthermore... the world would lose much of its appeal if wholly stripped of delusion and falsehood."
+      },
+      {
+        "Title": "About Fischl: III",
+        "Context": "<color=#37FFFF>Fischl:</color> Stormterror? Why, one never would have thought that a being that one might have kept as her pet could, in this world, be capable of causing such calamity. *sigh* Pitiable are the incompetents of this world...\n<color=#37FFFF>Oz:</color> That said, mein Fräulein, were you not beside yourself with worry for everyone's safety during said calamity?\n<color=#37FFFF>Fischl:</color> Th—That is because the Prinzessin der Verurteilung has the solemn duty to safeguard the souls of all, be they petty beings or not..."
+      },
+      {
+        "Title": "About Fischl: IV",
+        "Context": "<color=#37FFFF>Oz:</color> Some people address her by other names. But to me, the one who gave me life and bestowed my powers upon me is Fischl, and none other. All things considered, Fischl is the name that most aptly captures her identity. Seriously, don't call her anything else, or—\n<color=#37FFFF>Fischl:</color> Oh, how one's royal ears do burn! Pray tell, what is the matter which you discuss so furtively?\n<color=#37FFFF>Oz:</color> Mid—Midnight Phantasmagoria, mein Fräulein! And... the majesty of the Verurteilung name!"
+      },
+      {
+        "Title": "About Fischl: V",
+        "Context": "Why must the Prinzessin der Verurteilung punish sin? Because sin defies fate's rightful decree, of course! ...And of course, fate brought you here, so, so... Ahem! It was fate that saw to your descent upon this world, destiny that saw our paths intertwined. I, Fischl, shall always protect you. Because... because fate has revealed to me that this is what has been decreed!"
+      },
+      {
+        "Title": "Fischl's Hobbies: Ask Fischl",
+        "Context": "I, Fischl, have roamed the galaxy and traversed countless worlds. I have learned the fate of ten thousand universes and have had revealed unto me the destiny of every living soul."
+      },
+      {
+        "Title": "Fischl's Hobbies: Ask Oz",
+        "Context": "<color=#37FFFF>Oz:</color> Mein Fräulein reads a lot of novels. *sigh* My name, \"Oz,\" is from one of her favorites."
+      },
+      {
+        "Title": "Fischl's Troubles",
+        "Context": "What does it take to rile a princess? ...If you must know, it is those who cannot recognize my true identity. But it is no great loss, for solitude is the noble's lot, so long as I do not lose the nobility of my soul..."
+      },
+      {
+        "Title": "Favorite Food",
+        "Context": "<color=#37FFFF>Fischl:</color> Hmph! What is food but the shackles of mortal flesh? ...But if the Prinzessin der Verurteilung should reckon any morsel worthy, then it must be the tears of sinners and the tongues of liars.\n<color=#37FFFF>Oz:</color> Has mein Fräulein lost her appetite for the Mitternachtsbrot des Sommernachtgartens?\n<color=#37FFFF>Fischl:</color> ...Uh— That is merely to provide mine earthly vessel with such sustenance as it doth require to perform its royal duties!"
+      },
+      {
+        "Title": "Least Favorite Food",
+        "Context": "<color=#37FFFF>Oz:</color> I believe I know the answer to this one...\n<color=#37FFFF>Fischl:</color> Indeed you do, Oz! Ah, that poor mortal coil, mutilated by bondage unnatural...\n<color=#37FFFF>Oz:</color> It will never again fly as I do...\n<color=#37FFFF>Fischl:</color> Deprived of the humble coif with which it was born to gaze in awe at the majesty of its monarch... Surely it is a glimpse of my homeworld's hell, in the flesh. Hmm, the name of the dish escapes me...\n<color=#37FFFF>Oz:</color> Something something \"Madame,\" isn't it?"
+      },
+      {
+        "Title": "Receiving a Gift: I",
+        "Context": "<color=#37FFFF>Fischl:</color> Such an exquisite delicacy is worthy of being served in the Garten Sanssouci.\n<color=#37FFFF>Oz:</color> Mein Fräulein says that she thoroughly enjoys your delicious cooking."
+      },
+      {
+        "Title": "Receiving a Gift: II",
+        "Context": "<color=#37FFFF>Fischl:</color> To vanquish the Beast of the World, one must first rise above mundane desires, thus weaving the path that leads to destiny.\n<color=#37FFFF>Oz:</color> And yet, on this occasion, you appear to have eaten your fill, mein Fräulein."
+      },
+      {
+        "Title": "Receiving a Gift: III",
+        "Context": "<color=#37FFFF>Fischl:</color> Why dost thou insist on raining down chaos and destruction in the presence of your Prinzessin?\n<color=#37FFFF>Oz:</color> Mein Fräulein does not care a great deal for this dish. My apologies."
+      },
+      {
+        "Title": "Birthday",
+        "Context": "<color=#37FFFF>Fischl:</color> Well! If today is truly the anniversary of your birth, it shan't do for me not to mark the occasion. You have my full attention. Speak! Speak to me of your wishes, that which you most desire to fulfill during your fleeting and harsh existence in this wretched world. Whatever that wish may be. Even if, perchance—\n<color=#37FFFF>Oz:</color> She means, \"Happy Birthday, and if you want, she can—\"\n<color=#37FFFF>Fischl:</color> Silence, Oz."
+      },
+      {
+        "Title": "Feelings About Ascension: Intro",
+        "Context": "<color=#37FFFF>Fischl:</color> My magic arrow cries out my holy name as it streaks through the night, praying that the violet lightning of retribution shall strike the enemies of fate down from the skies!\n<color=#37FFFF>Oz:</color> Quite awe-inspiring, mein Fräulein! Since it's nearly dinner time, perhaps you might shoot a pigeon down while you're at it?"
+      },
+      {
+        "Title": "Feelings About Ascension: Building Up",
+        "Context": "<color=#37FFFF>Fischl:</color> With this, I may more fully manifest my majesty as Prinzessin der Verurteilung, and defeat that sworn enemy of fate named \"reality.\"\n<color=#37FFFF>Oz:</color> It will also be of use in your work for the Adventurers' Guild, mein Fräulein."
+      },
+      {
+        "Title": "Feelings About Ascension: Climax",
+        "Context": "Rejoice! Else, tremble in fear! Whenceforth springs this call to mirth and misery, you ask? Let it be known that I, the Prinzessin der Verurteilung, sovereign of the Immernachtreich, have peered forth with mine leftmost eye into the tapestry of fate that doth make up the universe, and beheld its every warp, weft and dangling orphaned thread!"
+      },
+      {
+        "Title": "Feelings About Ascension: Conclusion",
+        "Context": "I appear to have now regained most of the strength I lost in my transition to this world. Mwuhahaha, the day of judgment is nigh! ...Ah, worry not. Even at the last, when I bring the lightning of retribution upon this world, you shall come to no harm, for thou art blessed by the Prinzessin."
+      },
+      {
+        "Title": "Elemental Skill: I",
+        "Context": "By royal decree!"
+      },
+      {
+        "Title": "Elemental Skill: II",
+        "Context": "Oz, reveal thyself!"
+      },
+      {
+        "Title": "Elemental Skill: III",
+        "Context": "I summon thee!"
+      },
+      {
+        "Title": "Elemental Skill: IV",
+        "Context": "Oz: No rest for the wicked..."
+      },
+      {
+        "Title": "Elemental Burst: I",
+        "Context": "Wings of Darkness, come, sever night from day!"
+      },
+      {
+        "Title": "Elemental Burst: II",
+        "Context": "Midnight Phantasmagoria!"
+      },
+      {
+        "Title": "Elemental Burst: III",
+        "Context": "Shadow raven, let night fall!"
+      },
+      {
+        "Title": "Elemental Burst: IV",
+        "Context": "Oz: As you wish, mein Fräulein!"
+      },
+      {
+        "Title": "Elemental Burst: V",
+        "Context": "Oz: Midnight Phantasmagoria!"
+      },
+      {
+        "Title": "Opening Treasure Chest: I",
+        "Context": "Destiny has brought me hither!"
+      },
+      {
+        "Title": "Opening Treasure Chest: II",
+        "Context": "What trinkets lie veiled within this desolate plane?"
+      },
+      {
+        "Title": "Opening Treasure Chest: III",
+        "Context": "Hahaha, cry out my illustrious name!"
+      },
+      {
+        "Title": "Low HP: I",
+        "Context": "Doth thou wish to witness my true power?"
+      },
+      {
+        "Title": "Low HP: II",
+        "Context": "Oz: Mein Fräulein! Should you fall..."
+      },
+      {
+        "Title": "Low HP: III",
+        "Context": "This cruel fate befits not one of royal blood!"
+      },
+      {
+        "Title": "Ally at Low HP: I",
+        "Context": "Hmph! Allow me!"
+      },
+      {
+        "Title": "Ally at Low HP: II",
+        "Context": "Oz: Mein Fräulein, your presence is urgently required..."
+      },
+      {
+        "Title": "Fallen: I",
+        "Context": "This realm is no home for a princess..."
+      },
+      {
+        "Title": "Fallen: II",
+        "Context": "One shall... descend... once again..."
+      },
+      {
+        "Title": "Fallen: III",
+        "Context": "Oz: Mein Fräulein!"
+      },
+      {
+        "Title": "Heavy Hit Taken: I",
+        "Context": "Insubordination!"
+      },
+      {
+        "Title": "Joining Party: I",
+        "Context": "In the name of the Prinzessin!"
+      },
+      {
+        "Title": "Joining Party: II",
+        "Context": "Oz: Behold, the Prinzessin der Verurteilung!"
+      },
+      {
+        "Title": "Joining Party: III",
+        "Context": "The threads of your fate lie in my hands!"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Character Details",
+        "Context": "Fischl is the Prinzessin der Verurteilung who arrived here after being exiled from the otherworld, \"Immernachtreich.\"\nShe \"observes and weaves the threads of fate\" together with her talking night raven familiar, Oz.\nOwing to reasons she cannot and Oz will not explain, Fischl now serves the Adventurers' Guild as an investigator."
+      },
+      {
+        "Title": "Character Story 1",
+        "Context": "As an investigator for the Adventurers' Guild, the single biggest advantage Fischl has over her peers is Oz.\n\"Milady, please stop sending me out to spy on Stormterror. That chap could eat me for breakfast! Well, I'm so puny I probably wouldn't even get caught between his teeth, but... Anyway, I don't want to die!\"\n\"Hmph! You are supposed to be my familiar. Not everyone gets to be the Prinzessin der Verurteilung's familiar, do you understand? Consider it your honor to dedicate your life to serving me!\"\nFischl is able to see through Oz's eyes. Whenever she wants to, she possesses Oz and looks down upon the earth from the sky.\nWhether she wants to inspect the flora on the Stormbearer Mountains or observe a disturbance in Wolvendom, through Oz she can see anything and everything.\nThanks largely to her unique ability — and, to a lesser extent, to her own effort and peculiar personality — Fischl quickly went from the rookie investigator of the Adventurers' Guild to a respected rising star of the organization.\nShe's certainly done well for herself. She only landed the coveted position of Investigator at age fourteen in the first place because her parents managed to persuade the guild master.\nThen again, would they really have had to do much persuading? If she's the Prinzessin der Verurteilung... one can only assume that would make them the Kaiser und Kaiserin der Verurteilung."
+      },
+      {
+        "Title": "Character Story 2",
+        "Context": "It's said that there is currently a \"Fischl Dictionary\" in circulation among the adventurers.\nNamely, a book that aims to translate Fischl's peculiar way of speaking into something more understandable.\nFor example:\n\"I hear... echoing in the abyss of time, the burning winds of the old, all of which shape the spire forgotten in the torrents of karma\" would translate into \"Stormterror's Lair\";\n\"Servants of the Verurteilung name! As you have requested, prepare to receive the great wisdom of the prinzessin\" would be \"I'll look into that and let you know ASAP\";\n\"Rejoice! O, ye servants who long for the blessing of the prinzessin; venture now deep into the battlefield with hearts of the tiger\" means that the initial investigative work has been completed;\n\"All has been written in this tome of dark prophecies\" simply means that her journal has been updated with the latest reports.\nHowever, the \"Fischl Dictionary\" is actually just an in-joke, not a real book.\nThose who are familiar with Fischl concentrate on what she means to say, not the way in which she says it; she notices this and takes it as a sign of true respect.\n\"Aha! So you do understand. Then fate does indeed bring kindred spirits together.\"\nThose who manage to adopt her speech mannerisms when they respond to her will find she is both delighted and bashful, and praises their language-learning ability.\n\"A prinzessin should always give praise where praise is due... Now, let us converse some more. Do not be mistaken; these are to be the foundations of the new world...\""
+      },
+      {
+        "Title": "Character Story 3",
+        "Context": "Oz and Princess Fischl are not only close friends but also servant and master, with a shared soul and fate.\nTheir first encounter was mentioned in \"Flowers for Princess Fischl (I): End Time Zersetzung\"\nWhen the lone pilgrimaging princess reached the kingdom of eternal twilight, the fate-resisting royals chose to deny everything in their desperation.\nThey refused to recognize Fischl's noble stature and mission as the princess of the Immernachtreich; denied their 13,000-year lineage as a branch of the royal family; and forsook their own nobility and restraints as humans... devolving into clumsy and vicious beasts.\nIn the palace of Twilight and amidst the teeth of the beasts, the princess shed her sacred blood on the ancient emblem.\nAt the moment of her peril, the dark wings of the night ripped the trapped, wounded princess from her despair and took her under its wings.\nFollowing the scent of her noble blood, Ozvaldo Hrafnavins, the King of Ravens came to the princess and pledged his eternal loyalty."
+      },
+      {
+        "Title": "Character Story 4",
+        "Context": "There is a story that goes as follows. A long time ago in a place far, far away, there was a tiny little girl.\nThe girl's parents were busy adventurers. She spent most of her childhood in the library, traversing the countless universes that were contained in the pages of the library books.\nShe became the ruler of the Immernachtreich, summoned Thundering Retribution as a royal princess, and formed a soul bond with a Raven...\n...\n\"███, what books did you read today?\" Her parents asked her on one of the rare occasions that they were home between adventures.\nShe proceeded to tell them the story she had read from her favorite series.\n\"...And then he said, Fischl von Luftschloss Narfidort, you are the Prinzessin der Verurteilung, my proud daughter. You shall never surrender your nobility and dreams.'\"\n\"Oh, that's a lovely story. Since you like it so much, ███, how about I call you \"Fischl\" too?\" Her father smiled, put his hand on her head and repeated the words from the story to her.\n\"Fischl, you are my wonderful princess and my proud daughter. You shall never surrender your nobility and dreams.\"\nThese kind and loving words lit up her world.\nHowever, the time with her busy parents was always fleeting.\nUnable to fit in with her peers due to her obsession with fantasy novels, she often felt lonely and sad. At these times, she would remind herself:\n\"I am Fischl, my daddy's wonderful princess. It's true, because Mommy and Daddy said so...\"\n\"Never will I surrender my nobility and dreams, for they are... a princess' rite of passage.\""
+      },
+      {
+        "Title": "Character Story 5",
+        "Context": "Just like in the universe of \"Flowers for Princess Fischl,\" entropy begot destruction.\nIn other words: The girl who loved to dream grew up.\nOn her fourteenth birthday, those of her peers who refused to accommodate her quirks belittled her once again.\n\"This is but a minor setback for the noble princess. My parents will understand,\" she thought to herself.\nFor if she knew one thing, it was that as a princess she could never surrender her nobility and dreams.\nBut when she threw herself into her parents' arms in need of comfort, she was met instead with gentle words of exasperation.\n\"███, you are fourteen years old now. It's fun to make-believe, but eventually you need to grow up and put your childish dreams behind you...\"\nAnd with that, the same voice that had once lit up her world now tore it apart.\nThat day at midnight, she hid herself in the library she knew so well. She had a strange feeling that she was being watched... Suddenly, she heard an otherworldly flapping of wings.\nSure enough, she looked up and her red, swollen eyes met with those of a night raven from another world.\nWhat transpired afterwards is another story...\nFischl doesn't much like this story. Thinking about it causes her to feel suffocating pain and soul-devouring loneliness.\nMaybe one day, this story will be written. But that would be ███'s story, not Fischl's.\nFischl has but one identity: she's the Prinzessin.\nAs long as she remembers this simple and perfect logic, with a little bit of nobility and a touch of kindness from others, nothing can ever hurt her.\nThings are looking up for Prinzessin Fischl these days — not only does she have Oz, but she has finally met a traveler who, just like her, comes from a different world..."
+      },
+      {
+        "Title": "Flowers for Princess Fischl: Phantasmagoria",
+        "Context": "The novel series \"Flowers for Princess Fischl\" is available as a collectible set.\nDue to the tiny numbers in circulation, it is a priceless commodity amongst loyal fans of the author.\nBut no matter how elegant these works are aesthetically, their worldview remains incredibly bleak:\nEvery good, bright and noble thing must eventually fall to inexorable entropic destruction, and the final destination of the universe is the realm-in-waiting of the Prinzessin, Immernachtreich.\nThis is the fate of all worlds, of the universe, and all who live in it.\nAnd the Prinzessin and her loyal companion, the \"Night-Severing Raven Oz,\" Ozvaldo Hrafnavins, are the World Beasts who will swallow all dreams.\nAt the very end, at the end of karma itself, she will grant all the gathered souls her benediction, and use her Thundering Retribution to cleanse all that is ugly and wicked.\nThe Prinzessin will then set her own heart ablaze, and the universe shall be born anew in its immortal light.\nBut before all this can come to pass, the Prinzessin must first roam many universes, and see countless new sights.\nThus it is perfectly within the spirit of the original work that the Prinzessin should be stuck as an investigator for the Adventurers' Guild in a slightly backward world. Just a little twist of fate, nothing more.\nThe Prinzessin will come to understand someday that each moment of her life, no matter how insignificant their little twists could be, is to be treasured.\nAfter all, the Prinzessin's very own Phantasmagoria is made out of ones such as these."
+      },
+      {
+        "Title": "Vision",
+        "Context": "So, is Oz just an imaginary friend who only exists as a figment of Fischl's subconscious?\nOur story begins with the royal heirloom, Edelstein der Dunkelheit — that is to say, Fischl's Vision.\nWhen her wish was acknowledged, the raven Oz and her Vision both appeared before her eyes.\nThat night, at dinner, Oz got on most well with Fischl's parents:\n\"Ah, mein Kaiser und Kaiserin der Verurteilung, forgive mine overstep, but the beans in your house are too delicious.\"\n\"Oh, then please, help yourself. This is the first time little ███ has met a friend she can bring over for dinner since she turned fourteen. This is a special occasion.\"\n\"Wh—What are you saying! I... One does not simply cavort with the plebeians!\"\n—And that's what happened.\nFor all intents and purposes, it seems that the Kaiser und Kaiserin der Verurteilung could both see Oz, and both believed Oz to be the Prinzessin's first friend.\nAs for the \"Adventurer Who Bears the World's Curses,\" the \"Visitor From Outer Worlds\" and the \"Strange Fae-shaped Emergency Sustenance...\"\nThey would become the Prinzessin's new friends, though that would happen even further in the future."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 203101,
+      "Name": "Ein Immernachtstraum",
+      "Description": "A ceremonial outfit for the Prinzessin. May she who is noble retain her courage, sincerity, and kindness forever, such that no evil shall ever overcome her.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_FischlCostumeHighness",
+      "SideIcon": "UI_AvatarIcon_Side_FischlCostumeHighness"
+    },
+    {
+      "Id": 203100,
+      "Name": "Dunkelnacht Sakrament",
+      "Description": "Fischl's outfit. The Prinzessin der Verurteilung's customary vestments during her sojourn upon this realm.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104144,
+    113002,
+    100055,
+    112013,
+    104309,
+    113008
+  ],
+  "NameCard": {
+    "Name": "Fischl: Night Raven",
+    "Description": "Namecard style.\nA raven dark as midnight with wings that can block out the sun. \"I permit thee to conceive his likeness upon such decoration!\"",
+    "Icon": "UI_NameCardIcon_Fischl",
+    "PicturePrefix": "UI_NameCardPic_Fischl"
+  }
+}

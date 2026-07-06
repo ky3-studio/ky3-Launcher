@@ -8,39 +8,28 @@
 // Licensed under the MIT license.
 
 using Launcher.Core.ExceptionService;
-using Launcher.Core.IO;
-using Launcher.Core.Logging;
 using Launcher.Core.Property;
 using Launcher.Core.Setting;
 using Launcher.Factory.ContentDialog;
 using Launcher.Factory.Picker;
-using Launcher.Factory.Process;
 using Launcher.Model;
 using Launcher.Model.Entity;
 using Launcher.Model.Intrinsic;
 using Launcher.Service.Game;
 using Launcher.Service.Game.AdvancedStart;
-using Launcher.Service.Game.AdvancedStart.Model;
-using Launcher.Service.Game.FileSystem;
 using Launcher.Service.Game.Locator;
 using Launcher.Service.Game.Package;
 using Launcher.Service.Game.PathAbstraction;
 using Launcher.Service.Game.Scheme;
 using Launcher.Service.Navigation;
 using Launcher.Service.Notification;
-using Launcher.Service.ThirdPartyTool;
 using Launcher.Core.Database;
 using Launcher.Service.User;
 using Launcher.UI.Input.HotKey;
 using Launcher.UI.Input.LowLevel;
 using Launcher.UI.Xaml.View.Dialog;
-using Launcher.UI.Xaml.View.Window;
-using Launcher.ViewModel.User;
-using Launcher.Web.Hoyolab.Takumi.Binding;
 using Launcher.Web.ThirdPartyTool;
 using System.Collections.Immutable;
-using System.Collections.Specialized;
-using System.IO;
 using BindingUser = Launcher.ViewModel.User.User;
 using EntityUser = Launcher.Model.Entity.User;
 

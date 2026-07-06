@@ -8,9 +8,7 @@
 // Licensed under the MIT license.
 
 using Launcher.Core.Logging;
-using Launcher.Model;
 using Launcher.Service.Game;
-using Launcher.Service.Game.Package;
 using Launcher.Service.Game.Scheme;
 using Launcher.Service.Notification;
 using Launcher.Service.User;

@@ -9,7 +9,6 @@
 
 using Microsoft.UI.Xaml.Controls;
 using Launcher.Core;
-using Launcher.Core.Diagnostics;
 using Launcher.Core.LifeCycle.InterProcess.Yae;
 using Launcher.Factory.ContentDialog;
 using Launcher.Service.Game;

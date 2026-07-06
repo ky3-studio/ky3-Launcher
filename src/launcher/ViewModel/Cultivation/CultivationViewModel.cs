@@ -4,27 +4,21 @@
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.UI.Xaml.Controls;
-using Launcher.Core;
 using Launcher.Core.Database;
 using Launcher.Core.DependencyInjection.Abstraction;
 using Launcher.Factory.ContentDialog;
 using Launcher.Model.Entity;
-using Launcher.Model.Primitive;
 using Launcher.Service.Cultivation;
 using Launcher.Service.Metadata;
 using Launcher.Service.Metadata.ContextAbstraction;
-using Launcher.Service.Notification;
 using Launcher.Service.User;
 using Launcher.Service.Yae;
 using Launcher.UI.Xaml.Data;
 using Launcher.UI.Xaml.View.Dialog;
 using Launcher.UI.Xaml.Control.AutoSuggestBox;
-using Launcher.ViewModel.AvatarProperty;
 using Launcher.Web.Hoyolab.Takumi.GameRecord;
 using System.Collections.Immutable;
 using System.Collections.ObjectModel;
-using MetaAvatar = Launcher.Model.Metadata.Avatar.Avatar;
-using MetaWeapon = Launcher.Model.Metadata.Weapon.Weapon;
 
 namespace Launcher.ViewModel.Cultivation;
 

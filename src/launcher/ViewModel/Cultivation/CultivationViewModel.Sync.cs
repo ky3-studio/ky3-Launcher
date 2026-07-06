@@ -3,12 +3,8 @@
 // Licensed under the MIT license.
 
 using Launcher.Core;
-using Launcher.Core.DependencyInjection.Abstraction;
-using Launcher.Factory.ContentDialog;
 using Launcher.Model.Entity;
 using Launcher.Model.Primitive;
-using Launcher.Service.Cultivation;
-using Launcher.Service.Metadata.ContextAbstraction;
 using Launcher.Service.Notification;
 using Launcher.Service.User;
 using Launcher.UI.Xaml.View.Dialog;

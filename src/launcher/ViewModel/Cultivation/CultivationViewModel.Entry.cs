@@ -3,10 +3,8 @@
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml.Controls;
-using Launcher.Factory.ContentDialog;
 using Launcher.Model.Entity;
 using Launcher.Service.Cultivation;
-using Launcher.Service.Metadata;
 using Launcher.Service.Metadata.ContextAbstraction;
 using Launcher.UI.Xaml.Data;
 using System.Collections.ObjectModel;

@@ -12,8 +12,6 @@ using Launcher.Core.DependencyInjection.Abstraction;
 using Launcher.Core.Diagnostics;
 using Launcher.Core.LifeCycle.InterProcess.Yae;
 using Launcher.Service.Game;
-using Launcher.Service.Game.FileSystem;
-using Launcher.Service.Notification;
 using Launcher.Service.User;
 using Launcher.Service.Yae.Achievement;
 using Launcher.ViewModel.User;

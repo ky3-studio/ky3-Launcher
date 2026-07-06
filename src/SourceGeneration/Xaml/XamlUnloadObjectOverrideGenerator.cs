@@ -27,7 +27,7 @@ internal class XamlUnloadObjectOverrideGenerator : IIncrementalGenerator
 
     private static XamlUnloadObjectOverrideGeneratorContext InheritedType(GeneratorSyntaxContext context, CancellationToken token)
     {
-        if (context.SemanticModel.GetDeclaredSymbol(context.Node) is INamedTypeSymbol typeSymbol)
+        if (context.SemanticModel.GetDeclaredSymbol(context.Node, token) is INamedTypeSymbol typeSymbol)
         {
             if (typeSymbol.BaseType?.HasFullyQualifiedMetadataName(ClassMetadataName) is true)
             {

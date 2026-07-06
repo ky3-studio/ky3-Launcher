@@ -33,7 +33,7 @@ internal sealed class PropertyValuesProviderGenerator : IIncrementalGenerator
 
     private static PropertyValuesProviderGeneratorContext InheritedType(GeneratorSyntaxContext context, CancellationToken token)
     {
-        if (context.SemanticModel.GetDeclaredSymbol(context.Node) is INamedTypeSymbol typeSymbol)
+        if (context.SemanticModel.GetDeclaredSymbol(context.Node, token) is INamedTypeSymbol typeSymbol)
         {
             if (typeSymbol.Interfaces.Any(static symbol => symbol.HasFullyQualifiedMetadataName(InterfaceMetadataName)))
             {

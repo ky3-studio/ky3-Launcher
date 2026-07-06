@@ -8,12 +8,7 @@
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Input;
-using Launcher.Factory.ContentDialog;
 using Launcher.Service.Game;
-using Launcher.Service.Game.Launching;
 using Launcher.UI.Content;
 using Launcher.UI.Xaml.Control;
 using Launcher.ViewModel.Game;

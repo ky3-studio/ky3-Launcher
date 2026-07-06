@@ -278,7 +278,7 @@ internal sealed class ConstructorGenerator : IIncrementalGenerator
                             bool shouldSkip = false;
                             foreach (SyntaxReference syntaxReference in fieldSymbol.DeclaringSyntaxReferences)
                             {
-                                if (syntaxReference.GetSyntax() is VariableDeclaratorSyntax { Initializer: not null })
+                                if (syntaxReference.GetSyntax(token) is VariableDeclaratorSyntax { Initializer: not null })
                                 {
                                     // Skip field with initializer
                                     shouldSkip = true;

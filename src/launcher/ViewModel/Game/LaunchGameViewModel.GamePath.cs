@@ -11,7 +11,6 @@ using Launcher.Core.Logging;
 using Launcher.Service.Game.FileSystem;
 using Launcher.Service.Game.Locator;
 using Launcher.Service.Game.PathAbstraction;
-using Launcher.Service.Notification;
 using System.IO;
 
 namespace Launcher.ViewModel.Game;

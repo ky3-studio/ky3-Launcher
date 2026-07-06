@@ -7,10 +7,7 @@
 // Modified by ky3-studio.
 // Licensed under the MIT license.
 
-using Launcher.Core.DependencyInjection.Abstraction;
 using Launcher.Factory.ContentDialog;
-using Launcher.Service.Notification;
-using Launcher.Service.Yae.Achievement;
 
 namespace Launcher.Service.Yae;
 

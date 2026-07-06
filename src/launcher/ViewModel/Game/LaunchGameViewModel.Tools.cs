@@ -11,7 +11,6 @@ using Launcher.Core.IO;
 using Launcher.Core.Logging;
 using Launcher.Factory.ContentDialog;
 using Launcher.Factory.Picker;
-using Launcher.Service.Notification;
 using Launcher.Service.ThirdPartyTool;
 using Launcher.UI.Xaml.View.Dialog;
 using Launcher.Web.ThirdPartyTool;

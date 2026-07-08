@@ -44,7 +44,7 @@ internal sealed partial class LauncherHomePage
         try
         {
             using HttpClient client = _httpClientFactory!.CreateClient();
-            client.Timeout = TimeSpan.FromSeconds(LauncherApiConstants.DefaultTimeoutSeconds);
+            client.Timeout = TimeSpan.FromSeconds(LauncherApiConstants.DownloadTimeoutSeconds);
             string response = await client.GetStringAsync(
                 LauncherApiConstants.MiHoYoGameInfoApi);
 

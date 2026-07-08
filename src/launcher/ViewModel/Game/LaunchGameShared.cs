@@ -98,9 +98,10 @@ internal sealed partial class LaunchGameShared
 
     public async ValueTask DefaultLaunchExecutionAsync(IViewModelSupportLaunchExecution viewModel, UserAndUid? userAndUid)
     {
-        // The game process can exist longer than the view model
-        using (IServiceScope scope = serviceProvider.CreateScope())
+        try
         {
+            // The game process can exist longer than the view model
+            using IServiceScope scope = serviceProvider.CreateScope();
             DefaultLaunchExecutionInvoker invoker = new();
             try
             {
@@ -114,10 +115,18 @@ internal sealed partial class LaunchGameShared
 
                 await invoker.InvokeAsync(context).ConfigureAwait(false);
             }
+            catch (ObjectDisposedException)
+            {
+                // 应用正在关闭，忽略
+            }
             catch (Exception ex)
             {
                 scope.ServiceProvider.GetRequiredService<IMessenger>().Send(InfoBarMessage.Error(SH.ViewModelLaunchGameErrorTitle, ex.Message));
             }
+        }
+        catch (ObjectDisposedException)
+        {
+            // 应用关闭时 DI 容器已释放，忽略
         }
     }
 

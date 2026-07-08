@@ -92,9 +92,9 @@ internal static class FeedbackService
                 return JsonSerializer.Deserialize<List<FeedbackReply>>(dataEl.GetRawText()) ?? [];
             }
         }
-        catch (Exception ex) when (ex is TaskCanceledException or HttpRequestException or OperationCanceledException)
+        catch (Exception ex) when (ex is TaskCanceledException or HttpRequestException or OperationCanceledException or JsonException)
         {
-            // Network errors are expected
+            // 网络错误或服务器返回非 JSON （如 HTML 503），静默处理
         }
         catch (Exception ex)
         {

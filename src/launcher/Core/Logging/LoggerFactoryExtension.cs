@@ -72,6 +72,18 @@ internal static class LoggerFactoryExtension
                     operatingSystem.Name = "Windows";
                     operatingSystem.Version = $"{windowsVersion}";
 
+                    // 第三方可选 CDN 网络错误（兑换码等非核心服务），已在应用层静默处理，不需上报 Sentry
+                    if (@event.SentryExceptions is { } sentryExceptions && sentryExceptions.Any())
+                    {
+                        Sentry.Protocol.SentryException outerEx = sentryExceptions.Last();
+                        if (outerEx.Type is "System.Net.Http.HttpRequestException" &&
+                            (outerEx.Value?.Contains("cnb.cool", StringComparison.Ordinal) is true ||
+                             outerEx.Value?.Contains("seria.moe", StringComparison.Ordinal) is true))
+                        {
+                            return null;
+                        }
+                    }
+
                     return @event;
                 });
             });

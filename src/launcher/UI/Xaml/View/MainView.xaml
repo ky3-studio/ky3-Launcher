@@ -176,85 +176,94 @@
                                         Width="320"
                                         DataContext="{Binding RedeemCodeService}"
                                         Spacing="4">
-                                        <TextBlock
-                                            Margin="8,4,0,2"
-                                            Style="{ThemeResource BaseTextBlockStyle}"
-                                            Text="{shuxm:ResourceString Name=UIViewMainRedeemCodeCNHeader}"/>
-                                        <ItemsRepeater ItemsSource="{Binding CnRedeemCodes}">
-                                            <ItemsRepeater.Layout>
-                                                <StackLayout Spacing="4"/>
-                                            </ItemsRepeater.Layout>
-                                            <ItemsRepeater.ItemTemplate>
-                                                <DataTemplate>
-                                                    <Grid
-                                                        MinHeight="58"
-                                                        Background="{ThemeResource ControlAltFillColorSecondaryBrush}"
-                                                        Style="{ThemeResource GridShimmerStyle}">
-                                                        <Grid.ColumnDefinitions>
-                                                            <ColumnDefinition/>
-                                                            <ColumnDefinition Width="Auto"/>
-                                                        </Grid.ColumnDefinitions>
-                                                        <StackPanel Margin="8" Spacing="4" VerticalAlignment="Center">
-                                                            <TextBlock
-                                                                Style="{ThemeResource BaseTextBlockStyle}"
-                                                                Text="{Binding Code}"/>
-                                                            <TextBlock
-                                                                Style="{ThemeResource BodyTextBlockStyle}"
-                                                                Text="{Binding Description}"
-                                                                Visibility="{Binding Description, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
-                                                            <TextBlock
-                                                                FontSize="11"
-                                                                Foreground="{ThemeResource TextFillColorTertiaryBrush}"
-                                                                Text="{Binding ValidUntil}"
-                                                                Visibility="{Binding ValidUntil, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
-                                                        </StackPanel>
-                                                        <Button
-                                                            Grid.Column="1"
-                                                            Margin="0,0,8,0"
-                                                            Padding="6,4"
-                                                            VerticalAlignment="Center"
-                                                            Command="{Binding DataContext.CopyCodeCommand, ElementName=RedeemCodePanel}"
-                                                            CommandParameter="{Binding Code}"
-                                                            Content="{shuxm:ResourceString Name=UIViewMainRedeemCodeCopy}"/>
-                                                    </Grid>
-                                                </DataTemplate>
-                                            </ItemsRepeater.ItemTemplate>
-                                        </ItemsRepeater>
-                                        <TextBlock
-                                            Margin="8,8,0,2"
-                                            Style="{ThemeResource BaseTextBlockStyle}"
-                                            Text="{shuxm:ResourceString Name=UIViewMainRedeemCodeOSHeader}"/>
-                                        <ItemsRepeater ItemsSource="{Binding OsRedeemCodes}">
-                                            <ItemsRepeater.Layout>
-                                                <StackLayout Spacing="4"/>
-                                            </ItemsRepeater.Layout>
-                                            <ItemsRepeater.ItemTemplate>
-                                                <DataTemplate>
-                                                    <Grid
-                                                        MinHeight="58"
-                                                        Background="{ThemeResource ControlAltFillColorSecondaryBrush}"
-                                                        Style="{ThemeResource GridShimmerStyle}">
-                                                        <Grid.ColumnDefinitions>
-                                                            <ColumnDefinition/>
-                                                            <ColumnDefinition Width="Auto"/>
-                                                        </Grid.ColumnDefinitions>
-                                                        <StackPanel Margin="8" Spacing="4" VerticalAlignment="Center">
-                                                            <TextBlock
-                                                                Style="{ThemeResource BaseTextBlockStyle}"
-                                                                Text="{Binding Code}"/>
-                                                        </StackPanel>
-                                                        <Button
-                                                            Grid.Column="1"
-                                                            Margin="0,0,8,0"
-                                                            Padding="6,4"
-                                                            VerticalAlignment="Center"
-                                                            Command="{Binding DataContext.CopyCodeCommand, ElementName=RedeemCodePanel}"
-                                                            CommandParameter="{Binding Code}"
-                                                            Content="{shuxm:ResourceString Name=UIViewMainRedeemCodeCopy}"/>
-                                                    </Grid>
-                                                </DataTemplate>
-                                            </ItemsRepeater.ItemTemplate>
-                                        </ItemsRepeater>
+                                        <StackPanel Spacing="4" Visibility="{Binding HasCnCodes, Converter={StaticResource BoolToVisibilityConverter}}">
+                                            <TextBlock
+                                                Margin="8,4,0,2"
+                                                Style="{ThemeResource BaseTextBlockStyle}"
+                                                Text="{shuxm:ResourceString Name=UIViewMainRedeemCodeCNHeader}"/>
+                                            <ItemsRepeater ItemsSource="{Binding CnRedeemCodes}">
+                                                <ItemsRepeater.Layout>
+                                                    <StackLayout Spacing="4"/>
+                                                </ItemsRepeater.Layout>
+                                                <ItemsRepeater.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Grid
+                                                            MinHeight="58"
+                                                            Background="{ThemeResource ControlAltFillColorSecondaryBrush}"
+                                                            Style="{ThemeResource GridShimmerStyle}">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition/>
+                                                                <ColumnDefinition Width="Auto"/>
+                                                            </Grid.ColumnDefinitions>
+                                                            <StackPanel Margin="8" Spacing="4" VerticalAlignment="Center">
+                                                                <TextBlock
+                                                                    Style="{ThemeResource BaseTextBlockStyle}"
+                                                                    Text="{Binding Code}"/>
+                                                                <TextBlock
+                                                                    Style="{ThemeResource BodyTextBlockStyle}"
+                                                                    Text="{Binding Description}"
+                                                                    Visibility="{Binding Description, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
+                                                                <TextBlock
+                                                                    FontSize="11"
+                                                                    Foreground="{ThemeResource TextFillColorTertiaryBrush}"
+                                                                    Text="{Binding ValidUntil}"
+                                                                    Visibility="{Binding ValidUntil, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
+                                                            </StackPanel>
+                                                            <Button
+                                                                Grid.Column="1"
+                                                                Margin="0,0,8,0"
+                                                                Padding="6,4"
+                                                                VerticalAlignment="Center"
+                                                                Command="{Binding DataContext.CopyCodeCommand, ElementName=RedeemCodePanel}"
+                                                                CommandParameter="{Binding Code}"
+                                                                Content="{shuxm:ResourceString Name=UIViewMainRedeemCodeCopy}"/>
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ItemsRepeater.ItemTemplate>
+                                            </ItemsRepeater>
+                                        </StackPanel>
+                                        <StackPanel Spacing="4" Visibility="{Binding HasOsCodes, Converter={StaticResource BoolToVisibilityConverter}}">
+                                            <TextBlock
+                                                Margin="8,8,0,2"
+                                                Style="{ThemeResource BaseTextBlockStyle}"
+                                                Text="{shuxm:ResourceString Name=UIViewMainRedeemCodeOSHeader}"/>
+                                            <ItemsRepeater ItemsSource="{Binding OsRedeemCodes}">
+                                                <ItemsRepeater.Layout>
+                                                    <StackLayout Spacing="4"/>
+                                                </ItemsRepeater.Layout>
+                                                <ItemsRepeater.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Grid
+                                                            MinHeight="58"
+                                                            Background="{ThemeResource ControlAltFillColorSecondaryBrush}"
+                                                            Style="{ThemeResource GridShimmerStyle}">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition/>
+                                                                <ColumnDefinition Width="Auto"/>
+                                                            </Grid.ColumnDefinitions>
+                                                            <StackPanel Margin="8" Spacing="4" VerticalAlignment="Center">
+                                                                <TextBlock
+                                                                    Style="{ThemeResource BaseTextBlockStyle}"
+                                                                    Text="{Binding Code}"/>
+                                                                <TextBlock
+                                                                    Style="{ThemeResource BodyTextBlockStyle}"
+                                                                    Text="{Binding Description}"
+                                                                    TextWrapping="Wrap"
+                                                                    Visibility="{Binding Description, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
+                                                            </StackPanel>
+                                                            <Button
+                                                                Grid.Column="1"
+                                                                Margin="0,0,8,0"
+                                                                Padding="6,4"
+                                                                VerticalAlignment="Center"
+                                                                Command="{Binding DataContext.CopyCodeCommand, ElementName=RedeemCodePanel}"
+                                                                CommandParameter="{Binding Code}"
+                                                                Content="{shuxm:ResourceString Name=UIViewMainRedeemCodeCopy}"/>
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ItemsRepeater.ItemTemplate>
+                                            </ItemsRepeater>
+                                        </StackPanel>
                                     </StackPanel>
                                 </Flyout>
                             </Button.Flyout>

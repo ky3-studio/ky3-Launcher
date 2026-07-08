@@ -68,19 +68,14 @@ internal sealed partial class ExceptionHandling
             return;
         }
 
-        // WinUI 3 已知 MUI 资源缓存问题，布局层抛出，非应用代码导致，忽略以防崩溃
-        if (exception is COMException { HResult: unchecked((int)0x80073B01) })
+        // WinUI 3 框架层已知异常（MUI 资源缓存/WinRT 文件未找到），非应用代码导致，忽略以防崩溃
+        if (ExceptionFilter.IsKnownWinUiFrameworkException(exception))
         {
             e.Handled = true;
-            SentrySdk.AddBreadcrumb("WinUI 3 MUI 资源未加载 (0x80073B01)，已忽略", level: BreadcrumbLevel.Warning);
-            return;
-        }
-
-        // WinUI 3 / WinRT 布局层文件查找失败，无 .NET 托管栈追踪，非应用代码导致，忽略以防崩溃
-        if (exception is FileNotFoundException { HResult: unchecked((int)0x80070002) } && exception.StackTrace is null)
-        {
-            e.Handled = true;
-            SentrySdk.AddBreadcrumb("WinUI 3 WinRT 文件未找到 (0x80070002)，已忽略", level: BreadcrumbLevel.Warning);
+            string breadcrumb = exception is System.Runtime.InteropServices.COMException
+                ? "WinUI 3 MUI 资源未加载 (0x80073B01)，已忽略"
+                : "WinUI 3 WinRT 文件未找到 (0x80070002)，已忽略";
+            SentrySdk.AddBreadcrumb(breadcrumb, level: BreadcrumbLevel.Warning);
             return;
         }
 
@@ -134,14 +129,13 @@ internal sealed partial class ExceptionHandling
         // 设为已观察，防止 TaskExceptionHolder.Finalize 崩溃
         e.SetObserved();
 
-        AggregateException ex = e.Exception.Flatten();
         // 所有内层异常均为网络错误时静默处理（使用 All 确保每一个异常都在安全范围内）
-        if (ex.InnerExceptions.All(inner => inner is TaskCanceledException or HttpRequestException or OperationCanceledException))
+        if (ExceptionFilter.IsAllSafeNetworkException(e.Exception))
         {
             return;
         }
 
-        SentrySdk.CaptureException(ex);
+        SentrySdk.CaptureException(e.Exception.Flatten());
     }
 
     [Conditional("DEBUG")]

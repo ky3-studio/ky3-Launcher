@@ -55,6 +55,18 @@
     <Compile Include="..\..\src\launcher\Core\SpanReader.cs" Link="LinkedSources\SpanReader.cs" />
     <Compile Include="..\..\src\launcher\Core\DisposableMarshal.cs" Link="LinkedSources\DisposableMarshal.cs" />
     <Compile Include="..\..\src\launcher\Web\HttpHeadersExtension.cs" Link="LinkedSources\HttpHeadersExtension.cs" />
+    <Compile Include="..\..\src\launcher\Core\ExceptionService\ExceptionFilter.cs" Link="LinkedSources\ExceptionFilter.cs" />
+    <Compile Include="..\..\src\launcher\Core\ExceptionService\LauncherException.cs" Link="LinkedSources\LauncherException.cs" />  
+    <Compile Include="..\..\src\launcher\Core\IO\Ini\IniElement.cs" Link="LinkedSources\IniElement.cs" />
+    <Compile Include="..\..\src\launcher\Core\IO\Ini\IniComment.cs" Link="LinkedSources\IniComment.cs" />
+    <Compile Include="..\..\src\launcher\Core\IO\Ini\IniParameter.cs" Link="LinkedSources\IniParameter.cs" />
+    <Compile Include="..\..\src\launcher\Core\IO\Ini\IniSection.cs" Link="LinkedSources\IniSection.cs" />
+    <Compile Include="..\..\src\launcher\Core\IO\Ini\IniSerializer.cs" Link="LinkedSources\IniSerializer.cs" />
+    <Compile Include="..\..\src\launcher\Core\IO\ValueDirectory.cs" Link="LinkedSources\ValueDirectory.cs" />
+    <Compile Include="..\..\src\launcher\Core\IO\StreamCopyStatus.cs" Link="LinkedSources\StreamCopyStatus.cs" />
+    <Compile Include="..\..\src\launcher\Core\Collection\Generic\ImmutableArrayEnumeratorNoThrow.cs" Link="LinkedSources\ImmutableArrayEnumeratorNoThrow.cs" />
+    <Compile Include="..\..\src\launcher\Core\Collection\Generic\TwoEnumerableEnumerator.cs" Link="LinkedSources\TwoEnumerableEnumerator.cs" />
+    <Compile Include="..\..\src\launcher\Core\Collection\Generic\DelegatingPropertyComparer.cs" Link="LinkedSources\DelegatingPropertyComparer.cs" />
   </ItemGroup>
 
 </Project>

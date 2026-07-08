@@ -10,6 +10,8 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Launcher.Core.DataTransfer;
+using Launcher.Core.IO.Http;
+using Launcher.Service.Constants;
 using Launcher.Service.Notification;
 using System.Collections.ObjectModel;
 using System.Net.Http;
@@ -33,6 +35,12 @@ internal sealed partial class RedeemCodeService : ObservableObject
     public ObservableCollection<RedeemCodeItem> CnRedeemCodes { get; } = [];
 
     public ObservableCollection<RedeemCodeItem> OsRedeemCodes { get; } = [];
+
+    [ObservableProperty]
+    private bool hasCnCodes;
+
+    [ObservableProperty]
+    private bool hasOsCodes;
 
     public ICommand CopyCodeCommand => new AsyncRelayCommand<string>(CopyCodeAsync);
 
@@ -58,6 +66,9 @@ internal sealed partial class RedeemCodeService : ObservableObject
         {
             OsRedeemCodes.Add(item);
         }
+
+        HasCnCodes = CnRedeemCodes.Count > 0;
+        HasOsCodes = OsRedeemCodes.Count > 0;
     }
 
     private async Task CopyCodeAsync(string? code)
@@ -74,7 +85,12 @@ internal sealed partial class RedeemCodeService : ObservableObject
         try
         {
             using HttpClient client = httpClientFactory.CreateClient();
-            string json = await client.GetStringAsync(BgiCodesUrl).ConfigureAwait(false);
+            client.Timeout = TimeSpan.FromSeconds(LauncherApiConstants.DownloadTimeoutSeconds);
+            using HttpRequestMessage bgiRequest = new(HttpMethod.Get, BgiCodesUrl);
+            bgiRequest.Options.Set(RetryHttpHandler.DisableRetry, true);
+            using HttpResponseMessage bgiResponse = await client.SendAsync(bgiRequest).ConfigureAwait(false);
+            bgiResponse.EnsureSuccessStatusCode();
+            string json = await bgiResponse.Content.ReadAsStringAsync().ConfigureAwait(false);
             List<BgiRedeemCodeEntry>? entries = JsonSerializer.Deserialize<List<BgiRedeemCodeEntry>>(json);
 
             if (entries is null)
@@ -104,9 +120,9 @@ internal sealed partial class RedeemCodeService : ObservableObject
                 }
             }
         }
-        catch (Exception ex) when (ex is TaskCanceledException or HttpRequestException or OperationCanceledException)
+        catch (Exception ex) when (ex is TaskCanceledException or HttpRequestException or OperationCanceledException or JsonException)
         {
-            // Network/DNS errors are expected from third-party services
+            // 网络/DNS 异常或接口返回非 JSON（如 HTML 503 页面），第三方服务预期行为，静默处理
         }
         catch (Exception ex)
         {
@@ -119,7 +135,12 @@ internal sealed partial class RedeemCodeService : ObservableObject
         try
         {
             using HttpClient client = httpClientFactory.CreateClient();
-            string json = await client.GetStringAsync(HoyoCodesUrl).ConfigureAwait(false);
+            client.Timeout = TimeSpan.FromSeconds(LauncherApiConstants.DownloadTimeoutSeconds);
+            using HttpRequestMessage hoyoRequest = new(HttpMethod.Get, HoyoCodesUrl);
+            hoyoRequest.Options.Set(RetryHttpHandler.DisableRetry, true);
+            using HttpResponseMessage hoyoResponse = await client.SendAsync(hoyoRequest).ConfigureAwait(false);
+            hoyoResponse.EnsureSuccessStatusCode();
+            string json = await hoyoResponse.Content.ReadAsStringAsync().ConfigureAwait(false);
             HoyoCodesResponse? response = JsonSerializer.Deserialize<HoyoCodesResponse>(json);
 
             if (response?.Codes is null)
@@ -139,16 +160,16 @@ internal sealed partial class RedeemCodeService : ObservableObject
                     items.Add(new RedeemCodeItem
                     {
                         Code = entry.Code,
-                        Description = string.Empty,
+                        Description = entry.Rewards?.Replace(";", ", ") ?? string.Empty,
                         ValidUntil = string.Empty,
                         Server = RedeemCodeServer.OS,
                     });
                 }
             }
         }
-        catch (Exception ex) when (ex is TaskCanceledException or HttpRequestException or OperationCanceledException)
+        catch (Exception ex) when (ex is TaskCanceledException or HttpRequestException or OperationCanceledException or JsonException)
         {
-            // Network/DNS errors are expected from third-party services
+            // 网络/DNS 异常或接口返回非 JSON（如 HTML 503 页面），第三方服务预期行为，静默处理
         }
         catch (Exception ex)
         {

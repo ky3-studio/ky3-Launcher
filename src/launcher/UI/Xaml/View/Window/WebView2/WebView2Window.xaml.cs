@@ -181,7 +181,14 @@ internal sealed partial class WebView2Window : Microsoft.UI.Xaml.Window,
             }
             finally
             {
-                webview2LoadLock.Release();
+                try
+                {
+                    webview2LoadLock.Release();
+                }
+                catch (ObjectDisposedException)
+                {
+                    // 窗口已关闭，锁已被销毁
+                }
             }
         }
     }

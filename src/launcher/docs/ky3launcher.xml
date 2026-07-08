@@ -2087,6 +2087,15 @@
             </code>
             </remarks>
         </member>
+        <member name="T:Launcher.Service.RedeemCode.RedeemCodeService">
+            <inheritdoc/>
+        </member>
+        <member name="P:Launcher.Service.RedeemCode.RedeemCodeService.HasCnCodes">
+            <inheritdoc cref="F:Launcher.Service.RedeemCode.RedeemCodeService.hasCnCodes"/>
+        </member>
+        <member name="P:Launcher.Service.RedeemCode.RedeemCodeService.HasOsCodes">
+            <inheritdoc cref="F:Launcher.Service.RedeemCode.RedeemCodeService.hasOsCodes"/>
+        </member>
         <member name="M:Launcher.Service.RemoteConfig.FeedbackService.UploadImageAsync(System.String)">
             <summary>Upload a feedback image (no auth required). Returns the hosted URL or null on failure.</summary>
         </member>
@@ -17152,6 +17161,12 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsMaintainer">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsMaintainer" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.HasCnCodes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "HasCnCodes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.HasOsCodes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "HasOsCodes" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsOn">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsOn" generated properties.</summary>

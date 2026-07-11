@@ -1,0 +1,400 @@
+{
+  "info": {
+    "resonance": {
+      "title": "元素共鳴效果總覽",
+      "description": "隊伍滿員狀態下，根據隊伍配置的角色元素類型，獲得對應的元素共鳴效果"
+    }
+  },
+  "resonance": {
+    "10101": {
+      "name": "熱誠之火",
+      "elements": {
+        "fire": 2
+      },
+      "description": "冰元素附著的持續時間下降40%。攻擊力提高25%。"
+    },
+    "10201": {
+      "name": "癒療之水",
+      "elements": {
+        "water": 2
+      },
+      "description": "火元素附著的持續時間下降40%。生命值上限提升25%。"
+    },
+    "10301": {
+      "name": "迅捷之風",
+      "elements": {
+        "wind": 2
+      },
+      "description": "體力消耗降低15%，移動速度提升10%，技能冷卻時間縮短5%。"
+    },
+    "10401": {
+      "name": "強能之雷",
+      "elements": {
+        "electric": 2
+      },
+      "description": "水元素附著持續時間下降40%。觸發超導、超載、感電、月感電、原激化、超激化、超綻放反應時，有100%機率掉落1個雷元素微粒，冷卻時間5秒。"
+    },
+    "10501": {
+      "name": "蔓生之草",
+      "elements": {
+        "grass": 2
+      },
+      "description": "元素精通提升50點。觸發燃燒、原激化、綻放、月綻放反應後，隊伍中附近的所有角色元素精通提升30點，持續6秒。觸發超激化、蔓激化、超綻放、烈綻放反應後，隊伍中附近的所有角色元素精通提升20點，持續6秒。以上效果的持續時間獨立計算。"
+    },
+    "10601": {
+      "name": "粉碎之冰",
+      "elements": {
+        "ice": 2
+      },
+      "description": "雷元素附著持續時間下降40%。攻擊冰元素附著或凍結狀態下的敵人時，暴擊率提高15%。"
+    },
+    "10701": {
+      "name": "堅定之岩",
+      "elements": {
+        "rock": 2
+      },
+      "description": "護盾強效提升15%。此外，角色處於護盾庇護下時，或附近存在月結晶反應產生的月籠時，具有如下特性：造成的傷害提升15%；角色對敵人造成傷害時，會使敵人的岩元素抗性降低20%，持續15秒。"
+    },
+    "10801": {
+      "name": "交織之護",
+      "elements": null,
+      "description": "所有元素抗性提升15%，物理抗性提升15%。"
+    }
+  },
+  "tutorials": {
+    "1002": {
+      "name": "水元素附著",
+      "details": {
+        "30301": {
+          "images": ["UI_Tutorial_3a"],
+          "description": "某些環境與水元素屬性的攻擊，可能會使生物<color=#FFE14BFF>附著水元素</color>。水元素與其他元素交匯時，也可能會引發<color=#FFE14BFF>「元素反應」</color>…"
+        },
+        "30302": {
+          "images": ["UI_Tutorial_3b"],
+          "description": "某些環境與水元素屬性的攻擊，可能會使生物<color=#FFE14BFF>附著水元素</color>。水元素與其他元素交匯時，也可能會引發<color=#FFE14BFF>「元素反應」</color>…"
+        }
+      },
+      "icon": "UI_MessageIcon_Water"
+    },
+    "1003": {
+      "name": "冰元素附著",
+      "details": {
+        "30401": {
+          "images": ["UI_Tutorial_4"],
+          "description": "被「冰元素」攻擊擊中的話，會<color=#FFE14BFF>附著冰元素</color>屬性。並使<color=#FFE14BFF>移動速度</color>降低。冰元素與其他元素接觸時，還可能會引發<color=#FFE14BFF>「元素反應」</color>…"
+        }
+      },
+      "icon": "UI_MessageIcon_Ice"
+    },
+    "1004": {
+      "name": "火元素附著",
+      "details": {
+        "30501": {
+          "images": ["UI_Tutorial_5"],
+          "description": "「火元素」屬性的攻擊，可能會使生物<color=#FFE14BFF>附著火元素</color>。火元素與其他元素交匯時，也可能會引發<color=#FFE14BFF>「元素反應」</color>…"
+        }
+      },
+      "icon": "UI_MessageIcon_Fire"
+    },
+    "1006": {
+      "name": "元素反應：凍結",
+      "details": {
+        "30701": {
+          "images": ["UI_Tutorial_7"],
+          "description": "<color=#FFE14BFF>「冰元素」</color>與<color=#FFE14BFF>「水元素」</color>交匯時，會產生<color=#FFE14BFF>「凍結」</color>反應…生物被凍結時將無法行動。但也會變得硬邦邦…"
+        }
+      },
+      "icon": "UI_MessageIcon_Frost"
+    },
+    "1008": {
+      "name": "元素反應：蒸發·一",
+      "details": {
+        "30901": {
+          "images": ["UI_Tutorial_9"],
+          "description": "<color=#FFE14BFF>「火元素」</color>與<color=#FFE14BFF>「水元素」</color>接觸時，會引發<color=#FFE14BFF>「蒸發」</color>反應…蒸發反應後，原本附帶的水元素或火元素會隨著蒸汽消散…"
+        }
+      },
+      "icon": "UI_MessageIcon_Melting"
+    },
+    "1009": {
+      "name": "元素反應：蒸發·二",
+      "details": {
+        "31101": {
+          "images": ["UI_Tutorial_11"],
+          "description": "「蒸發」反應本身沒有傷害。但是，通過「火元素」或「水元素」<color=#FFE14BFF>攻擊</color>導致蒸發時，會按照一定的比例<color=#FFE14BFF>提高該次攻擊造成的傷害</color>…"
+        }
+      },
+      "icon": "UI_MessageIcon_Melting"
+    },
+    "1010": {
+      "name": "元素反應：感電·一",
+      "details": {
+        "31301": {
+          "images": ["UI_Tutorial_13"],
+          "description": "<color=#FFE14BFF>「雷元素」</color>觸及<color=#FFE14BFF>「水元素」</color>時，會引發<color=#FFE14BFF>「感電」</color>反應，在效果期間，<color=#FFE14BFF>持續造成雷元素傷害</color>。"
+        }
+      },
+      "icon": "UI_MessageIcon_Electrification"
+    },
+    "1011": {
+      "name": "元素反應：感電·二",
+      "details": {
+        "31401": {
+          "images": ["UI_Tutorial_14"],
+          "description": "如果周圍有<color=#FFE14BFF>附著「水元素」的敵人</color>，「感電」反應會間歇性地向周圍<color=#FFE14BFF>放電</color>。"
+        }
+      },
+      "icon": "UI_MessageIcon_Electrification"
+    },
+    "1012": {
+      "name": "元素反應：水面感電",
+      "details": {
+        "31501": {
+          "images": ["UI_Tutorial_15"],
+          "description": "「雷元素」的攻擊可以使<color=#FFE14BFF>水面感電</color>。帶電的水面，會對影響範圍內的<color=#FFE14BFF>所有生物</color>造成雷元素傷害…"
+        }
+      },
+      "icon": "UI_MessageIcon_Electrification"
+    },
+    "1013": {
+      "name": "元素反應：超載",
+      "details": {
+        "31601": {
+          "images": ["UI_Tutorial_16"],
+          "description": "<color=#FFE14BFF>「火元素」</color>觸及<color=#FFE14BFF>「雷元素」</color>時，能引發<color=#FFE14BFF>「超載」</color>反應！超載反應會引發劇烈的爆炸，造成火元素的範圍傷害。爆炸似乎可以輕易摧毀一些堅硬的物體…"
+        }
+      },
+      "icon": "UI_MessageIcon_Overload"
+    },
+    "1014": {
+      "name": "元素反應：超導",
+      "details": {
+        "31701": {
+          "images": ["UI_Tutorial_17"],
+          "description": "「冰元素」觸及「雷元素」時，能引發<color=#FFE14BFF>「超導」</color>反應…超導會造成冰元素的範圍傷害，並大幅<color=#FFE14BFF>降低受超導影響生物的物理抗性</color>。"
+        }
+      },
+      "icon": "UI_MessageIcon_Superconductivity"
+    },
+    "1015": {
+      "name": "元素反應：燃燒",
+      "details": {
+        "31801": {
+          "images": ["UI_Tutorial_18"],
+          "description": "「火元素」觸及「草元素」時，就會引發<color=#FFE14BFF>「燃燒」</color>…燃燒會持續造成火元素傷害。"
+        }
+      },
+      "icon": "UI_MessageIcon_Combustion"
+    },
+    "1016": {
+      "name": "元素反應：擴散",
+      "details": {
+        "31901": {
+          "images": ["UI_Tutorial_19"],
+          "description": "「風元素」與一些元素交匯時，可能引發「擴散」！擴散能造成對應元素的傷害，產生附著，或進一步引發其他反應…"
+        }
+      },
+      "icon": "UI_MessageIcon_Wind"
+    },
+    "1028": {
+      "name": "元素反應：融化·一",
+      "details": {
+        "31001": {
+          "images": ["UI_Tutorial_10"],
+          "description": "<color=#FFE14BFF>「冰元素」</color>與<color=#FFE14BFF>「火元素」</color>接觸時，會引發<color=#FFE14BFF>「融化」</color>反應…融化反應後，原本附帶的冰元素或火元素會隨著反應消散…"
+        }
+      },
+      "icon": "UI_MessageIcon_Combat"
+    },
+    "1029": {
+      "name": "元素反應：融化·二",
+      "details": {
+        "31201": {
+          "images": ["UI_Tutorial_12"],
+          "description": "「融化」反應本身沒有傷害。但是，通過「火元素」或「冰元素」<color=#FFE14BFF>攻擊</color>導致融化時，會按照一定的比例<color=#FFE14BFF>提高該次攻擊造成的傷害</color>…"
+        }
+      },
+      "icon": "UI_MessageIcon_Combat"
+    },
+    "1034": {
+      "name": "元素反應：結晶",
+      "details": {
+        "33901": {
+          "images": ["UI_Tutorial_42a"],
+          "description": "<color=#FFE14BFF>「岩元素」</color>與<color=#FFE14BFF>水/火/冰/雷元素</color>接觸時，會發生<color=#FFE14BFF>「結晶」</color>反應！"
+        },
+        "33902": {
+          "images": ["UI_Tutorial_42b"],
+          "description": "這種反應能產生對應元素的晶片，能為角色提供各種<color=#FFE14BFF>元素護盾</color>！利用結晶反應，可以有效降低戰鬥中受到的傷害…"
+        }
+      },
+      "icon": "UI_MessageIcon_Rock"
+    },
+    "1038": {
+      "name": "元素反應：激化",
+      "details": {
+        "38001": {
+          "images": ["UI_Tutorial_Overdose_01"],
+          "description": "生物受到<color=#FFE14BFF>雷元素</color>與<color=#FFE14BFF>草元素</color>影響後，將會引發「原激化」反應，使其處於原激化狀態下。"
+        },
+        "38002": {
+          "images": ["UI_Tutorial_Overdose_02"],
+          "description": "<color=#FFE14BFF>處於原激化狀態下</color>的生物受到<color=#FFE14BFF>雷元素</color>或<color=#FFE14BFF>草元素</color>攻擊時，將分別引發「超激化」或「蔓激化」反應，受到額外的傷害。"
+        }
+      },
+      "icon": "UI_MessageIcon_Overdose"
+    },
+    "1039": {
+      "name": "元素反應：綻放",
+      "details": {
+        "38101": {
+          "images": ["UI_Tutorial_Overgrow_01"],
+          "description": "生物受到<color=#FFE14BFF>水元素</color>與<color=#FFE14BFF>草元素</color>影響後，將會引發「綻放」反應，產生<color=#FFE14BFF>草原核</color>。"
+        },
+        "38102": {
+          "images": ["UI_Tutorial_Overgrow_02"],
+          "description": "同時至多存在一定數量的草原核。在數量達到上限後再產生新的草原核，或在草原核的持續時間結束後，草原核將會爆發，造成草元素範圍傷害…"
+        },
+        "38103": {
+          "images": ["UI_Tutorial_Overgrow_03"],
+          "description": "草原核接觸<color=#FFE14BFF>火元素</color>時，將會引發「烈綻放」，造成更強的草元素範圍傷害；遇到<color=#FFE14BFF>雷元素</color>則會發生「超綻放」反應，將草原核轉化為具有追蹤能力的蔓生彈。"
+        }
+      },
+      "icon": "UI_MessageIcon_Overgrow"
+    },
+    "1043": {
+      "name": "元素反應：月感電",
+      "details": {
+        "38501": {
+          "images": ["UI_Tutorial_MoonShock"],
+          "description": "<color=#FFE14BFF>「雷元素」</color>觸及<color=#FFE14BFF>「水元素」</color>時，若滿足特定條件，會引發特殊的<color=#FFE14BFF>「月感電」</color>反應，形成雷暴雲，持續對周圍同時附著<color=#FFE14BFF>「雷元素」</color>與<color=#FFE14BFF>「水元素」</color>的目標進行雷擊，造成雷元素傷害。\\n該傷害可以觸發暴擊，且造成的傷害取決於所有在反應中施加元素的角色。"
+        }
+      },
+      "icon": "UI_MessageIcon_MoonElectrification"
+    },
+    "1044": {
+      "name": "元素反應：月綻放",
+      "details": {
+        "38601": {
+          "images": ["UI_Tutorial_MoonOvergrow"],
+          "description": "<color=#FFE14BFF>「草元素」</color>觸及<color=#FFE14BFF>「水元素」</color>時，若滿足特定條件，會引發特殊的<color=#FFE14BFF>「月綻放」</color>反應，在原本的綻放反應效果之上，還會為隊伍提供珍貴的<color=#FFE14BFF>「草露」</color>資源。\\n部分角色可以通過消耗<color=#FFE14BFF>「草露」</color>，或通過自身的天賦特性，對敵人造成月綻放反應傷害，該傷害可以觸發暴擊。"
+        }
+      },
+      "icon": "UI_MessageIcon_MoonOvergrow"
+    },
+    "1046": {
+      "name": "草露",
+      "details": {
+        "38801": {
+          "images": ["UI_Tutorial_MoonOvergrowPoint_01"],
+          "description": "隊伍中的角色觸發月綻放反應後的2.5秒內，每2.5秒便會為隊伍提供一枚草露。\\n草露上限為三枚。持續期間，再次觸發月綻放反應時，將刷新上述效果的持續時間。"
+        },
+        "38802": {
+          "images": ["UI_Tutorial_MoonOvergrowPoint_02"],
+          "description": "部分角色可以消耗草露，對敵人造成月綻放反應傷害。"
+        }
+      },
+      "icon": "UI_MessageIcon_MoonOvergrow"
+    },
+    "1047": {
+      "name": "元素反應：月結晶",
+      "details": {
+        "38901": {
+          "images": ["UI_Tutorial_MoonCrystallize_01"],
+          "description": "<color=#FFE14BFF>「岩元素」</color>觸及<color=#FFE14BFF>「水元素」</color>時，若滿足特定條件，會引發特殊的<color=#FFE14BFF>「月結晶」</color>反應，在目標附近生成三枚月籠。"
+        },
+        "38902": {
+          "images": ["UI_Tutorial_MoonCrystallize_02"],
+          "description": "每觸發三次月結晶反應，便會引發月籠諧奏，對附近的敵人造成岩元素傷害。\\n該傷害可以觸發暴擊，且造成的傷害取決於所有在反應中施加元素的角色。"
+        }
+      },
+      "icon": "UI_MessageIcon_MoonCrystallize"
+    }
+  },
+  "tips": {
+    "1071": {
+      "description": "即使是岩元素，也會與其他元素發生反應。與水、火、冰、雷元素接觸時，會「結晶」，產生能吸收傷害的「晶片」。"
+    },
+    "1072": {
+      "description": "冰元素與水元素接觸時，會導致凍結反應。\\n被凍結的生物無法自如行動。如果能靈活地利用這一點的話，即使面對強敵，或許也可以輕鬆致勝…？"
+    },
+    "1073": {
+      "description": "因為「凍結」反應的特性，在外冒險時、戰鬥時，要注意自己是否處於潮濕狀態。\\n如果不慎被凍結的話…"
+    },
+    "1074": {
+      "description": "被凍結的生物受到猛烈攻擊時，「凍結」會解除。\\n但是，會受到額外的碎冰傷害…"
+    },
+    "1075": {
+      "description": "水元素與火元素接觸時，會「蒸發」。\\n如果是附帶著水元素或火元素的攻擊導致了蒸發的話，攻擊造成的傷害就會大大提升。"
+    },
+    "1076": {
+      "description": "「蒸發」反應發生時，造成的傷害會放大。\\n其中，水元素攻擊引發蒸發反應時，相比火元素，能獲得更大的傷害加成。"
+    },
+    "1077": {
+      "description": "雷元素遇水時，會產生「感電」效果。\\n這種酥酥麻麻的狀態會持續造成雷元素傷害。"
+    },
+    "1078": {
+      "description": "因為「感電」的特性，在水體中使用雷元素攻擊的話要格外小心。\\n但是，如果能善用這一點的話，也可以輕鬆地擊敗敵人吧…"
+    },
+    "1079": {
+      "description": "雷元素遇到寒氣時，會「超導」。\\n這種元素反應能造成冰元素範圍傷害，並降低物理抗性。"
+    },
+    "1080": {
+      "description": "雷元素在明火中，會「超載」。\\n也就是引發猛烈爆炸。"
+    },
+    "1081": {
+      "description": "火元素與冰元素接觸時，會引發「融化」反應。\\n如果是附帶著火元素或冰元素的攻擊導致了融化的話，攻擊造成的傷害就會大大提升。"
+    },
+    "1082": {
+      "description": "「融化」反應發生時，造成的傷害會放大。\\n火元素攻擊引發融化反應時，能比冰元素獲得更大的傷害加成。"
+    },
+    "1083": {
+      "description": "火元素能「燃燒」草元素。\\n燃燒狀態會導致持續的火元素傷害。"
+    },
+    "1084": {
+      "description": "風元素能將水、火、雷、冰元素「擴散」到更大的範圍。"
+    },
+    "1085": {
+      "description": "善用風元素擴散其他元素的特性，能讓冒險與戰鬥的效率大大提高…？"
+    },
+    "1383": {
+      "description": "草元素在遇到水的時候，會引發綻放反應產生「草原核」。\\n同時只能存在一定數量的草原核，可能這就是元素的法則吧。"
+    },
+    "1384": {
+      "description": "草元素與水元素反應產生的「草原核」在遇到火元素時，會激烈地爆發。\\n這種反應是「綻放」的派生，因此人們名之為「烈綻放」。"
+    },
+    "1385": {
+      "description": "草元素與水元素反應產生的「草原核」在遇到雷元素時，會轉變成蔓生彈。這種反應名為「超綻放」。"
+    },
+    "1386": {
+      "description": "草元素具有一些奇妙的特性。\\n「綻放」反應與「原激化」反應發生後，能分別觸發進一步的元素反應…"
+    },
+    "1387": {
+      "description": "當生物同時處於草元素與雷元素的影響下時，將會發生神秘的「原激化」反應。\\n處於這種狀態下的生物，受到草元素或雷元素的攻擊時，將引發進一步的效果…"
+    },
+    "1388": {
+      "description": "處於「原激化」反應下的生物，受到草元素或雷元素的攻擊時，將分別引發「蔓激化」或「超激化」反應，造成額外的傷害。"
+    },
+    "1389": {
+      "description": "草元素遇到水時會產生「草原核」。這種神奇的草元素晶體會在遇到烈火或者電氣時發生進一步的反應…"
+    },
+    "1390": {
+      "description": "利用「原激化」反應的特性，雷元素或草元素的攻擊能發揮更大的威力。"
+    },
+    "1480": {
+      "description": "除非另外聲明，否則依賴觸發元素反應來生效的機制，觸發元素反應的對象必須是怪物。"
+    },
+    "1481": {
+      "description": "草原核在一定的時間內，對同一個目標造成傷害的次數是有限制的。這種限制同樣作用於烈綻放、超綻放造成的傷害。"
+    },
+    "1482": {
+      "description": "草原核在一定的時間內，對同一個目標造成傷害的次數是有限制的。這種限制同樣作用於烈綻放、超綻放造成的傷害。"
+    },
+    "1615": {
+      "description": "結晶反應的「晶片」所產生的護盾，其創造者為觸發結晶反應的角色，而非獲取晶片的角色。"
+    },
+    "1927": {
+      "description": "「月感電」、「月綻放」與「月結晶」反應均為借助月矩力進行的元素反應，因此統稱為「月曜反應」。"
+    }
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "info": {
+    "resonance": {
+      "title": "Elemental Resonance Overview",
+      "description": "When your party is full, you will gain the corresponding Elemental Resonance effect based on the elemental types of your party members."
+    }
+  },
+  "resonance": {
+    "10101": {
+      "name": "Fervent Flames",
+      "elements": {
+        "fire": 2
+      },
+      "description": "Decreases the duration of Cryo application on your characters by 40%. Increases ATK by 25%."
+    },
+    "10201": {
+      "name": "Soothing Water",
+      "elements": {
+        "water": 2
+      },
+      "description": "Decreases the duration of Pyro application on your characters by 40%. Increases Max HP by 25%."
+    },
+    "10301": {
+      "name": "Impetuous Winds",
+      "elements": {
+        "wind": 2
+      },
+      "description": "Decreases Stamina consumption by 15%, increases Movement SPD by 10%, and decreases Elemental Skill CD by 5%."
+    },
+    "10401": {
+      "name": "High Voltage",
+      "elements": {
+        "electric": 2
+      },
+      "description": "Decreases the duration of Hydro application on your characters by 40%. When Superconduct, Overloaded, Electro-Charged, Lunar-Charged, Quicken, Aggravate, or Hyperbloom reactions occur, your characters have a 100% chance to obtain 1 Electro elemental particle, with a 5s cooldown."
+    },
+    "10501": {
+      "name": "Sprawling Greenery",
+      "elements": {
+        "grass": 2
+      },
+      "description": "Increases Elemental Mastery by 50. After triggering Burning, Quicken, Bloom, or Lunar-Bloom reactions, all nearby party members' Elemental Mastery is increased by 30 for 6s. After triggering Aggravate, Spread, Hyperbloom, or Burgeon reactions, all nearby party members' Elemental Mastery is increased by 20 for 6s. The durations of the above effects are calculated independently."
+    },
+    "10601": {
+      "name": "Shattering Ice",
+      "elements": {
+        "ice": 2
+      },
+      "description": "Decreases the duration of Electro application on your characters by 40%. Increases CRIT Rate against enemies affected by Cryo application or the Frozen status by 15%."
+    },
+    "10701": {
+      "name": "Enduring Rock",
+      "elements": {
+        "rock": 2
+      },
+      "description": "Increases Shield Strength by 15%. Additionally, while under the protection of a Shield, or when a Moondrift produced by a Lunar-Crystallize reaction is nearby, characters gain the following: DMG dealt is increased by 15%; when a character deals DMG to an enemy, that enemy's Geo RES is decreased by 20% for 15s."
+    },
+    "10801": {
+      "name": "Protective Canopy",
+      "elements": null,
+      "description": "Increases all Elemental RES by 15% and Physical RES by 15%."
+    }
+  },
+  "tutorials": {
+    "1002": {
+      "name": "Hydro Application",
+      "details": {
+        "30301": {
+          "images": ["UI_Tutorial_3a"],
+          "description": "Certain environmental effects and Hydro attacks may cause creatures to become <color=#FFE14BFF>affected by Hydro</color>. When Hydro meets other elements, it may also trigger an <color=#FFE14BFF>\"Elemental Reaction\"</color>…"
+        },
+        "30302": {
+          "images": ["UI_Tutorial_3b"],
+          "description": "Certain environmental effects and Hydro attacks may cause creatures to become <color=#FFE14BFF>affected by Hydro</color>. When Hydro meets other elements, it may also trigger an <color=#FFE14BFF>\"Elemental Reaction\"</color>…"
+        }
+      },
+      "icon": "UI_MessageIcon_Water"
+    },
+    "1003": {
+      "name": "Cryo Application",
+      "details": {
+        "30401": {
+          "images": ["UI_Tutorial_4"],
+          "description": "Being struck by a \"Cryo\" attack will cause you to become <color=#FFE14BFF>affected by Cryo</color>, lowering your <color=#FFE14BFF>Movement SPD</color>. When Cryo comes into contact with other elements, it may also trigger an <color=#FFE14BFF>\"Elemental Reaction\"</color>…"
+        }
+      },
+      "icon": "UI_MessageIcon_Ice"
+    },
+    "1004": {
+      "name": "Pyro Application",
+      "details": {
+        "30501": {
+          "images": ["UI_Tutorial_5"],
+          "description": "\"Pyro\" attacks may cause creatures to become <color=#FFE14BFF>affected by Pyro</color>. When Pyro meets other elements, it may also trigger an <color=#FFE14BFF>\"Elemental Reaction\"</color>…"
+        }
+      },
+      "icon": "UI_MessageIcon_Fire"
+    },
+    "1006": {
+      "name": "Elemental Reaction: Frozen",
+      "details": {
+        "30701": {
+          "images": ["UI_Tutorial_7"],
+          "description": "When <color=#FFE14BFF>\"Cryo\"</color> meets <color=#FFE14BFF>\"Hydro\"</color>, it will cause <color=#FFE14BFF>\"Frozen\"</color>… Creatures that are Frozen cannot move. But they will also become as brittle as ice…"
+        }
+      },
+      "icon": "UI_MessageIcon_Frost"
+    },
+    "1008": {
+      "name": "Elemental Reaction: Vaporize I",
+      "details": {
+        "30901": {
+          "images": ["UI_Tutorial_9"],
+          "description": "When <color=#FFE14BFF>\"Pyro\"</color> comes into contact with <color=#FFE14BFF>\"Hydro\"</color>, it will trigger a <color=#FFE14BFF>\"Vaporize\"</color> reaction… After Vaporize occurs, the Hydro or Pyro originally applied will dissipate along with the steam…"
+        }
+      },
+      "icon": "UI_MessageIcon_Melting"
+    },
+    "1009": {
+      "name": "Elemental Reaction: Vaporize II",
+      "details": {
+        "31101": {
+          "images": ["UI_Tutorial_11"],
+          "description": "\"Vaporize\" itself deals no DMG. However, when Vaporize is triggered via a \"Pyro\" or \"Hydro\" <color=#FFE14BFF>attack</color>, the DMG dealt by that attack will be <color=#FFE14BFF>increased</color> by a certain ratio…"
+        }
+      },
+      "icon": "UI_MessageIcon_Melting"
+    },
+    "1010": {
+      "name": "Elemental Reaction: Electro-Charged I",
+      "details": {
+        "31301": {
+          "images": ["UI_Tutorial_13"],
+          "description": "When <color=#FFE14BFF>\"Electro\"</color> reaches <color=#FFE14BFF>\"Hydro\"</color>, it will trigger the <color=#FFE14BFF>\"Electro-Charged\"</color> reaction, which will <color=#FFE14BFF>continuously deal Electro DMG</color> for the duration of the effect."
+        }
+      },
+      "icon": "UI_MessageIcon_Electrification"
+    },
+    "1011": {
+      "name": "Elemental Reaction: Electro-Charged II",
+      "details": {
+        "31401": {
+          "images": ["UI_Tutorial_14"],
+          "description": "If there are <color=#FFE14BFF>enemies affected by \"Hydro\"</color> nearby, the \"Electro-Charged\" reaction will intermittently <color=#FFE14BFF>discharge electricity</color> to the surrounding area."
+        }
+      },
+      "icon": "UI_MessageIcon_Electrification"
+    },
+    "1012": {
+      "name": "Elemental Reaction: Electrified Water Surface",
+      "details": {
+        "31501": {
+          "images": ["UI_Tutorial_15"],
+          "description": "\"Electro\" attacks can <color=#FFE14BFF>electrify a water surface</color>. An electrified water surface will deal Electro DMG to <color=#FFE14BFF>all creatures</color> within its range of effect…"
+        }
+      },
+      "icon": "UI_MessageIcon_Electrification"
+    },
+    "1013": {
+      "name": "Elemental Reaction: Overloaded",
+      "details": {
+        "31601": {
+          "images": ["UI_Tutorial_16"],
+          "description": "When <color=#FFE14BFF>\"Pyro\"</color> reaches <color=#FFE14BFF>\"Electro\"</color>, it can trigger the <color=#FFE14BFF>\"Overloaded\"</color> reaction! Overloaded triggers a violent explosion that deals AoE Pyro DMG. The explosion seems to be able to easily destroy certain hard objects…"
+        }
+      },
+      "icon": "UI_MessageIcon_Overload"
+    },
+    "1014": {
+      "name": "Elemental Reaction: Superconduct",
+      "details": {
+        "31701": {
+          "images": ["UI_Tutorial_17"],
+          "description": "When \"Cryo\" reaches \"Electro\", it can trigger the <color=#FFE14BFF>\"Superconduct\"</color> reaction… Superconduct deals AoE Cryo DMG, and greatly <color=#FFE14BFF>decreases the Physical RES of creatures affected by it</color>."
+        }
+      },
+      "icon": "UI_MessageIcon_Superconductivity"
+    },
+    "1015": {
+      "name": "Elemental Reaction: Burning",
+      "details": {
+        "31801": {
+          "images": ["UI_Tutorial_18"],
+          "description": "When \"Pyro\" reaches \"Dendro\", it will trigger <color=#FFE14BFF>\"Burning\"</color>… Burning will continuously deal Pyro DMG."
+        }
+      },
+      "icon": "UI_MessageIcon_Combustion"
+    },
+    "1016": {
+      "name": "Elemental Reaction: Swirl",
+      "details": {
+        "31901": {
+          "images": ["UI_Tutorial_19"],
+          "description": "When \"Anemo\" meets certain elements, it may trigger \"Swirl\"! Swirl can deal DMG of the corresponding element, apply that element, or further trigger other reactions…"
+        }
+      },
+      "icon": "UI_MessageIcon_Wind"
+    },
+    "1028": {
+      "name": "Elemental Reaction: Melt I",
+      "details": {
+        "31001": {
+          "images": ["UI_Tutorial_10"],
+          "description": "When <color=#FFE14BFF>\"Cryo\"</color> comes into contact with <color=#FFE14BFF>\"Pyro\"</color>, it will trigger the <color=#FFE14BFF>\"Melt\"</color> reaction… After Melt occurs, the Cryo or Pyro originally applied will dissipate along with the reaction…"
+        }
+      },
+      "icon": "UI_MessageIcon_Combat"
+    },
+    "1029": {
+      "name": "Elemental Reaction: Melt II",
+      "details": {
+        "31201": {
+          "images": ["UI_Tutorial_12"],
+          "description": "\"Melt\" itself deals no DMG. However, when Melt is triggered via a \"Pyro\" or \"Cryo\" <color=#FFE14BFF>attack</color>, the DMG dealt by that attack will be <color=#FFE14BFF>increased</color> by a certain ratio…"
+        }
+      },
+      "icon": "UI_MessageIcon_Combat"
+    },
+    "1034": {
+      "name": "Elemental Reaction: Crystallize",
+      "details": {
+        "33901": {
+          "images": ["UI_Tutorial_42a"],
+          "description": "When <color=#FFE14BFF>\"Geo\"</color> comes into contact with <color=#FFE14BFF>Hydro/Pyro/Cryo/Electro</color>, it will cause a <color=#FFE14BFF>\"Crystallize\"</color> reaction!"
+        },
+        "33902": {
+          "images": ["UI_Tutorial_42b"],
+          "description": "This reaction produces a Shard of the corresponding element, which grants characters various kinds of <color=#FFE14BFF>Elemental Shields</color>! Making good use of Crystallize can effectively reduce the DMG taken in combat…"
+        }
+      },
+      "icon": "UI_MessageIcon_Rock"
+    },
+    "1038": {
+      "name": "Elemental Reaction: Quicken",
+      "details": {
+        "38001": {
+          "images": ["UI_Tutorial_Overdose_01"],
+          "description": "When a creature is affected by both <color=#FFE14BFF>Electro</color> and <color=#FFE14BFF>Dendro</color>, it will trigger the \"Quicken\" reaction, putting it into the Quicken state."
+        },
+        "38002": {
+          "images": ["UI_Tutorial_Overdose_02"],
+          "description": "<color=#FFE14BFF>Creatures in the Quicken state</color> that are attacked by <color=#FFE14BFF>Electro</color> or <color=#FFE14BFF>Dendro</color> will respectively trigger the \"Aggravate\" or \"Spread\" reaction, dealing extra DMG."
+        }
+      },
+      "icon": "UI_MessageIcon_Overdose"
+    },
+    "1039": {
+      "name": "Elemental Reaction: Bloom",
+      "details": {
+        "38101": {
+          "images": ["UI_Tutorial_Overgrow_01"],
+          "description": "When a creature is affected by both <color=#FFE14BFF>Hydro</color> and <color=#FFE14BFF>Dendro</color>, it will trigger the \"Bloom\" reaction, producing a <color=#FFE14BFF>Dendro Core</color>."
+        },
+        "38102": {
+          "images": ["UI_Tutorial_Overgrow_02"],
+          "description": "There can be at most a certain number of Dendro Cores at the same time. When a new Dendro Core is produced after the limit is reached, or when a Dendro Core's duration ends, the Dendro Core will burst, dealing AoE Dendro DMG…"
+        },
+        "38103": {
+          "images": ["UI_Tutorial_Overgrow_03"],
+          "description": "When a Dendro Core comes into contact with <color=#FFE14BFF>Pyro</color>, it will trigger \"Burgeon\", dealing stronger AoE Dendro DMG. When it instead encounters <color=#FFE14BFF>Electro</color>, it will trigger the \"Hyperbloom\" reaction, turning the Dendro Core into a homing Sprawling Seed."
+        }
+      },
+      "icon": "UI_MessageIcon_Overgrow"
+    },
+    "1043": {
+      "name": "Elemental Reaction: Lunar-Charged",
+      "details": {
+        "38501": {
+          "images": ["UI_Tutorial_MoonShock"],
+          "description": "When <color=#FFE14BFF>\"Electro\"</color> reaches <color=#FFE14BFF>\"Hydro\"</color>, if certain conditions are met, it will trigger a special <color=#FFE14BFF>\"Lunar-Charged\"</color> reaction, forming a thunderstorm cloud that continuously strikes nearby targets simultaneously affected by <color=#FFE14BFF>\"Electro\"</color> and <color=#FFE14BFF>\"Hydro\"</color> with lightning, dealing Electro DMG.\\nThis DMG can trigger CRIT Hits, and the DMG dealt depends on all characters that applied elements during the reaction."
+        }
+      },
+      "icon": "UI_MessageIcon_MoonElectrification"
+    },
+    "1044": {
+      "name": "Elemental Reaction: Lunar-Bloom",
+      "details": {
+        "38601": {
+          "images": ["UI_Tutorial_MoonOvergrow"],
+          "description": "When <color=#FFE14BFF>\"Dendro\"</color> reaches <color=#FFE14BFF>\"Hydro\"</color>, if certain conditions are met, it will trigger a special <color=#FFE14BFF>\"Lunar-Bloom\"</color> reaction. On top of the regular Bloom reaction's effects, it will also grant the party the precious <color=#FFE14BFF>\"Dendro Dew\"</color> resource.\\nSome characters can consume <color=#FFE14BFF>\"Dendro Dew\"</color>, or make use of their own Talents, to deal Lunar-Bloom reaction DMG to enemies. This DMG can trigger CRIT Hits."
+        }
+      },
+      "icon": "UI_MessageIcon_MoonOvergrow"
+    },
+    "1046": {
+      "name": "Dendro Dew",
+      "details": {
+        "38801": {
+          "images": ["UI_Tutorial_MoonOvergrowPoint_01"],
+          "description": "Within 2.5s after a character in the party triggers a Lunar-Bloom reaction, the party will be granted 1 Dendro Dew every 2.5s.\\nDendro Dew can stack up to 3 at a time. While this is ongoing, triggering the Lunar-Bloom reaction again will refresh the duration of the above effect."
+        },
+        "38802": {
+          "images": ["UI_Tutorial_MoonOvergrowPoint_02"],
+          "description": "Some characters can consume Dendro Dew to deal Lunar-Bloom reaction DMG to enemies."
+        }
+      },
+      "icon": "UI_MessageIcon_MoonOvergrow"
+    },
+    "1047": {
+      "name": "Elemental Reaction: Lunar-Crystallize",
+      "details": {
+        "38901": {
+          "images": ["UI_Tutorial_MoonCrystallize_01"],
+          "description": "When <color=#FFE14BFF>\"Geo\"</color> reaches <color=#FFE14BFF>\"Hydro\"</color>, if certain conditions are met, it will trigger a special <color=#FFE14BFF>\"Lunar-Crystallize\"</color> reaction, generating three Moondrifts near the target."
+        },
+        "38902": {
+          "images": ["UI_Tutorial_MoonCrystallize_02"],
+          "description": "Every 3 times the Lunar-Crystallize reaction is triggered, it will cause Moondrift Harmony, dealing Geo DMG to nearby enemies.\\nThis DMG can trigger CRIT Hits, and the DMG dealt depends on all characters that applied elements during the reaction."
+        }
+      },
+      "icon": "UI_MessageIcon_MoonCrystallize"
+    }
+  },
+  "tips": {
+    "1071": {
+      "description": "Even Geo will react with other elements. When it comes into contact with Hydro, Pyro, Cryo, or Electro, it will \"Crystallize\", producing a \"Shard\" that can absorb DMG."
+    },
+    "1072": {
+      "description": "When Cryo comes into contact with Hydro, it causes the Frozen reaction.\\nFrozen creatures cannot move freely. If you make clever use of this, you may be able to win easily even against a powerful enemy…?"
+    },
+    "1073": {
+      "description": "Because of how \"Frozen\" works, pay attention to whether you are wet while exploring or in combat.\\nIf you happen to get Frozen…"
+    },
+    "1074": {
+      "description": "When a Frozen creature takes a fierce attack, \"Frozen\" will be removed.\\nHowever, it will take additional Shatter DMG…"
+    },
+    "1075": {
+      "description": "When Hydro comes into contact with Pyro, it will \"Vaporize\".\\nIf an attack that applies Hydro or Pyro causes Vaporize, the DMG dealt by that attack will be greatly increased."
+    },
+    "1076": {
+      "description": "When \"Vaporize\" occurs, the DMG dealt will be amplified.\\nAmong these, when a Hydro attack triggers Vaporize, it gains a greater DMG bonus than a Pyro attack would."
+    },
+    "1077": {
+      "description": "When Electro meets Hydro, it produces the \"Electro-Charged\" effect.\\nThis tingling state will continuously deal Electro DMG."
+    },
+    "1078": {
+      "description": "Because of how \"Electro-Charged\" works, be extra careful when using Electro attacks in bodies of water.\\nHowever, if you make good use of this, you may also be able to easily defeat enemies…"
+    },
+    "1079": {
+      "description": "When Electro meets extreme cold, it will \"Superconduct\".\\nThis elemental reaction deals AoE Cryo DMG and decreases Physical RES."
+    },
+    "1080": {
+      "description": "When Electro meets open flame, it will \"Overload\".\\nIn other words, it triggers a violent explosion."
+    },
+    "1081": {
+      "description": "When Pyro comes into contact with Cryo, it will trigger the \"Melt\" reaction.\\nIf an attack that applies Pyro or Cryo causes Melt, the DMG dealt by that attack will be greatly increased."
+    },
+    "1082": {
+      "description": "When \"Melt\" occurs, the DMG dealt will be amplified.\\nWhen a Pyro attack triggers Melt, it gains a greater DMG bonus than a Cryo attack would."
+    },
+    "1083": {
+      "description": "Pyro can \"Burn\" Dendro.\\nThe Burning state causes continuous Pyro DMG."
+    },
+    "1084": {
+      "description": "Anemo can \"Swirl\" Hydro, Pyro, Electro, and Cryo to a wider range."
+    },
+    "1085": {
+      "description": "Making good use of Anemo's ability to Swirl other elements can greatly improve the efficiency of exploration and combat…?"
+    },
+    "1383": {
+      "description": "When Dendro meets Hydro, it triggers the Bloom reaction, producing a \"Dendro Core\".\\nOnly a certain number of Dendro Cores can exist at once — perhaps that is simply a law of the elements."
+    },
+    "1384": {
+      "description": "When the \"Dendro Core\" produced by the Dendro and Hydro reaction meets Pyro, it will burst violently.\\nThis reaction is derived from \"Bloom\", so it is called \"Burgeon\"."
+    },
+    "1385": {
+      "description": "When the \"Dendro Core\" produced by the Dendro and Hydro reaction meets Electro, it will transform into a homing Sprawling Seed. This reaction is called \"Hyperbloom\"."
+    },
+    "1386": {
+      "description": "Dendro has some peculiar characteristics.\\nAfter the \"Bloom\" and \"Quicken\" reactions occur, they can each trigger further elemental reactions…"
+    },
+    "1387": {
+      "description": "When a creature is affected by both Dendro and Electro at the same time, the mysterious \"Quicken\" reaction will occur.\\nA creature in this state will trigger a further effect when attacked by Dendro or Electro…"
+    },
+    "1388": {
+      "description": "A creature under the \"Quicken\" reaction will respectively trigger \"Spread\" or \"Aggravate\" when attacked by Dendro or Electro, dealing extra DMG."
+    },
+    "1389": {
+      "description": "When Dendro meets Hydro, it produces a \"Dendro Core\". This peculiar Dendro crystal will undergo a further reaction when it encounters open flame or electricity…"
+    },
+    "1390": {
+      "description": "By making use of the properties of the \"Quicken\" reaction, Electro or Dendro attacks can unleash even greater power."
+    },
+    "1480": {
+      "description": "Unless otherwise stated, for mechanisms that rely on triggering an Elemental Reaction to take effect, the target of the Elemental Reaction must be a monster."
+    },
+    "1481": {
+      "description": "Within a certain period of time, there is a limit to how many times a Dendro Core can deal DMG to the same target. This limit also applies to DMG dealt by Burgeon and Hyperbloom."
+    },
+    "1482": {
+      "description": "Within a certain period of time, there is a limit to how many times a Dendro Core can deal DMG to the same target. This limit also applies to DMG dealt by Burgeon and Hyperbloom."
+    },
+    "1615": {
+      "description": "The Shield produced by a Crystallize \"Shard\" is created by the character who triggered the Crystallize reaction, not the character who picks up the Shard."
+    },
+    "1927": {
+      "description": "\"Lunar-Charged\", \"Lunar-Bloom\", and \"Lunar-Crystallize\" are all Elemental Reactions that occur with the aid of lunar power, and are collectively known as \"Lunar Reactions\"."
+    }
+  }
+}

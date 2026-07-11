@@ -671,6 +671,7 @@
                                         <RowDefinition Height="auto"/>
                                         <RowDefinition Height="auto"/>
                                         <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
                                     </Grid.RowDefinitions>
 
                                     <ToggleSwitch
@@ -1056,6 +1057,163 @@
                                             ValueChanged="OnIslandValueChanged"/>
                                     </Grid>
 
+                                    <Grid
+                                        x:Name="Opt_freecam_row"
+                                        Grid.Row="7"
+                                        Grid.Column="0"
+                                        Grid.ColumnSpan="4"
+                                        ColumnSpacing="12">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <ToggleSwitch
+                                            x:Name="Opt_enable_freecam"
+                                            Grid.Column="0"
+                                            Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandFreeCamHeader}"
+                                            IsOn="{Binding LaunchOptions.EnableFreeCam.Value, Mode=TwoWay}"
+                                            OffContent="{shuxm:ResourceString Name=ViewPageLaunchGameIslandToggleOff}"
+                                            OnContent="{shuxm:ResourceString Name=ViewPageLaunchGameIslandToggleOn}"
+                                            Toggled="OnIslandOptionChanged"/>
+                                        <Grid
+                                            x:Name="Opt_enable_freecam_val"
+                                            Grid.Column="1"
+                                            VerticalAlignment="Bottom">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <ComboBox
+                                                Grid.Column="0"
+                                                Width="80"
+                                                Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandModifierKeyHeader}"
+                                                IsEnabled="{Binding LaunchOptions.EnableFreeCam.Value}"
+                                                SelectedIndex="{Binding LaunchOptions.FreeCamModifier.Value, Mode=TwoWay}"
+                                                SelectionChanged="OnIslandOptionChanged">
+                                                <ComboBoxItem Content="{shuxm:ResourceString Name=ViewPageLaunchGameIslandModifierNone}"/>
+                                                <ComboBoxItem Content="Ctrl"/>
+                                                <ComboBoxItem Content="Alt"/>
+                                                <ComboBoxItem Content="Shift"/>
+                                            </ComboBox>
+                                            <TextBlock Grid.Column="1" VerticalAlignment="Bottom" Margin="8,0,8,10" Text="+"/>
+                                            <NumberBox
+                                                Grid.Column="2"
+                                                Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandVkCodeHeader}"
+                                                IsEnabled="{Binding LaunchOptions.EnableFreeCam.Value}"
+                                                Maximum="255"
+                                                Minimum="1"
+                                                SpinButtonPlacementMode="Inline"
+                                                Value="{Binding LaunchOptions.FreeCamKey.Value, Mode=TwoWay}"
+                                                ValueChanged="OnIslandValueChanged"/>
+                                        </Grid>
+
+                                        <Grid x:Name="Opt_freecam_move_speed" Grid.Column="2" VerticalAlignment="Center">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Slider
+                                                VerticalAlignment="Center"
+                                                Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandFreeCamMoveSpeedHeader}"
+                                                IsEnabled="{Binding LaunchOptions.EnableFreeCam.Value}"
+                                                Maximum="3.0"
+                                                Minimum="0.05"
+                                                StepFrequency="0.05"
+                                                Value="{Binding LaunchOptions.FreeCamMoveSpeed.Value, Mode=TwoWay}"
+                                                ValueChanged="OnSliderValueChanged"/>
+                                            <TextBox
+                                                Grid.Column="1"
+                                                Width="56"
+                                                Margin="8,0,0,0"
+                                                VerticalAlignment="Bottom"
+                                                InputScope="Number"
+                                                IsEnabled="{Binding LaunchOptions.EnableFreeCam.Value}"
+                                                Text="{Binding LaunchOptions.FreeCamMoveSpeed.Value, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"
+                                                TextAlignment="Center"
+                                                LostFocus="OnValueTextBoxLostFocus"/>
+                                        </Grid>
+                                        <Grid x:Name="Opt_freecam_sprint_mult" Grid.Column="3" VerticalAlignment="Center">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Slider
+                                                VerticalAlignment="Center"
+                                                Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandFreeCamSprintMultHeader}"
+                                                IsEnabled="{Binding LaunchOptions.EnableFreeCam.Value}"
+                                                Maximum="10.0"
+                                                Minimum="1.0"
+                                                StepFrequency="0.1"
+                                                Value="{Binding LaunchOptions.FreeCamSprintMult.Value, Mode=TwoWay}"
+                                                ValueChanged="OnSliderValueChanged"/>
+                                            <TextBox
+                                                Grid.Column="1"
+                                                Width="56"
+                                                Margin="8,0,0,0"
+                                                VerticalAlignment="Bottom"
+                                                InputScope="Number"
+                                                IsEnabled="{Binding LaunchOptions.EnableFreeCam.Value}"
+                                                Text="{Binding LaunchOptions.FreeCamSprintMult.Value, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"
+                                                TextAlignment="Center"
+                                                LostFocus="OnValueTextBoxLostFocus"/>
+                                        </Grid>
+                                        <Grid x:Name="Opt_freecam_mouse_sensitivity" Grid.Column="4" VerticalAlignment="Center">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Slider
+                                                VerticalAlignment="Center"
+                                                Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandFreeCamMouseSensitivityHeader}"
+                                                IsEnabled="{Binding LaunchOptions.EnableFreeCam.Value}"
+                                                Maximum="1.0"
+                                                Minimum="0.01"
+                                                StepFrequency="0.01"
+                                                Value="{Binding LaunchOptions.FreeCamMouseSensitivity.Value, Mode=TwoWay}"
+                                                ValueChanged="OnSliderValueChanged"/>
+                                            <TextBox
+                                                Grid.Column="1"
+                                                Width="56"
+                                                Margin="8,0,0,0"
+                                                VerticalAlignment="Bottom"
+                                                InputScope="Number"
+                                                IsEnabled="{Binding LaunchOptions.EnableFreeCam.Value}"
+                                                Text="{Binding LaunchOptions.FreeCamMouseSensitivity.Value, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"
+                                                TextAlignment="Center"
+                                                LostFocus="OnValueTextBoxLostFocus"/>
+                                        </Grid>
+                                        <Grid x:Name="Opt_freecam_pitch_limit" Grid.Column="5" VerticalAlignment="Center">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Slider
+                                                VerticalAlignment="Center"
+                                                Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandFreeCamPitchLimitHeader}"
+                                                IsEnabled="{Binding LaunchOptions.EnableFreeCam.Value}"
+                                                Maximum="89"
+                                                Minimum="30"
+                                                StepFrequency="1"
+                                                Value="{Binding LaunchOptions.FreeCamPitchLimit.Value, Mode=TwoWay}"
+                                                ValueChanged="OnSliderValueChanged"/>
+                                            <TextBox
+                                                Grid.Column="1"
+                                                Width="56"
+                                                Margin="8,0,0,0"
+                                                VerticalAlignment="Bottom"
+                                                InputScope="Number"
+                                                IsEnabled="{Binding LaunchOptions.EnableFreeCam.Value}"
+                                                Text="{Binding LaunchOptions.FreeCamPitchLimit.Value, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"
+                                                TextAlignment="Center"
+                                                LostFocus="OnValueTextBoxLostFocus"/>
+                                        </Grid>
+                                    </Grid>
 
                                     <ToggleSwitch
                                         x:Name="Opt_enable_no_grass"

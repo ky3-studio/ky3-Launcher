@@ -15,6 +15,7 @@ using Launcher.Service.Game.FileSystem;
 using Launcher.Service.Game.Launching.Context;
 using Launcher.Win32.Foundation;
 using System.Collections.Immutable;
+using System.Globalization;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -329,6 +330,13 @@ internal sealed partial class GameProcessFactory
         config.AppendLine($"enableGui={(options.EnableGui.Value ? 1 : 0)}");
         config.AppendLine($"guiKey={options.GuiKey.Value}");
         config.AppendLine($"guiModifier={options.GuiModifier.Value}");
+        config.AppendLine($"enableFreeCam={(options.EnableFreeCam.Value ? 1 : 0)}");
+        config.AppendLine($"freeCamKey={options.FreeCamKey.Value}");
+        config.AppendLine($"freeCamModifier={options.FreeCamModifier.Value}");
+        config.AppendLine($"freeCamMoveSpeed={options.FreeCamMoveSpeed.Value.ToString(CultureInfo.InvariantCulture)}");
+        config.AppendLine($"freeCamSprintMult={options.FreeCamSprintMult.Value.ToString(CultureInfo.InvariantCulture)}");
+        config.AppendLine($"freeCamMouseSensitivity={options.FreeCamMouseSensitivity.Value.ToString(CultureInfo.InvariantCulture)}");
+        config.AppendLine($"freeCamPitchLimit={options.FreeCamPitchLimit.Value.ToString(CultureInfo.InvariantCulture)}");
 
         FileOperationSafe.TryWriteAllText(configPath, config.ToString());
     }
@@ -361,6 +369,8 @@ internal sealed partial class GameProcessFactory
                 => v.TryGetValue(key, out string? s) && int.TryParse(s, out int i) ? i != 0 : fallback;
             static int GetInt(Dictionary<string, string> v, string key, int fallback)
                 => v.TryGetValue(key, out string? s) && int.TryParse(s, out int i) ? i : fallback;
+            static float GetFloat(Dictionary<string, string> v, string key, float fallback)
+                => v.TryGetValue(key, out string? s) && float.TryParse(s, NumberStyles.Float, CultureInfo.InvariantCulture, out float f) ? f : fallback;
 
             options.TargetFov.Value = GetInt(values, "targetFov", (int)options.TargetFov.Value);
             options.IsSetFieldOfViewEnabled.Value = GetBool(values, "enableFov", options.IsSetFieldOfViewEnabled.Value);
@@ -394,6 +404,13 @@ internal sealed partial class GameProcessFactory
             options.EnableGui.Value = GetBool(values, "enableGui", options.EnableGui.Value);
             options.GuiKey.Value = GetInt(values, "guiKey", options.GuiKey.Value);
             options.GuiModifier.Value = GetInt(values, "guiModifier", options.GuiModifier.Value);
+            options.EnableFreeCam.Value = GetBool(values, "enableFreeCam", options.EnableFreeCam.Value);
+            options.FreeCamKey.Value = GetInt(values, "freeCamKey", options.FreeCamKey.Value);
+            options.FreeCamModifier.Value = GetInt(values, "freeCamModifier", options.FreeCamModifier.Value);
+            options.FreeCamMoveSpeed.Value = GetFloat(values, "freeCamMoveSpeed", options.FreeCamMoveSpeed.Value);
+            options.FreeCamSprintMult.Value = GetFloat(values, "freeCamSprintMult", options.FreeCamSprintMult.Value);
+            options.FreeCamMouseSensitivity.Value = GetFloat(values, "freeCamMouseSensitivity", options.FreeCamMouseSensitivity.Value);
+            options.FreeCamPitchLimit.Value = GetFloat(values, "freeCamPitchLimit", options.FreeCamPitchLimit.Value);
 
         }
         catch (Exception ex)

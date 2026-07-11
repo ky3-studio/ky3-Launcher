@@ -103,6 +103,27 @@ internal sealed partial class LaunchOptions
     public IObservableProperty<int> GuiModifier { get => field ??= CreateProperty(SettingKeys.LaunchGuiModifier, 0); }
 
     [field: MaybeNull]
+    public IObservableProperty<bool> EnableFreeCam { get => field ??= CreateProperty(SettingKeys.LaunchEnableFreeCam, false); }
+
+    [field: MaybeNull]
+    public IObservableProperty<int> FreeCamKey { get => field ??= CreateProperty(SettingKeys.LaunchFreeCamKey, 0x75); }
+
+    [field: MaybeNull]
+    public IObservableProperty<int> FreeCamModifier { get => field ??= CreateProperty(SettingKeys.LaunchFreeCamModifier, 0); }
+
+    [field: MaybeNull]
+    public IObservableProperty<float> FreeCamMoveSpeed { get => field ??= CreateProperty(SettingKeys.LaunchFreeCamMoveSpeed, 0.35f); }
+
+    [field: MaybeNull]
+    public IObservableProperty<float> FreeCamSprintMult { get => field ??= CreateProperty(SettingKeys.LaunchFreeCamSprintMult, 3.0f); }
+
+    [field: MaybeNull]
+    public IObservableProperty<float> FreeCamMouseSensitivity { get => field ??= CreateProperty(SettingKeys.LaunchFreeCamMouseSensitivity, 0.12f); }
+
+    [field: MaybeNull]
+    public IObservableProperty<float> FreeCamPitchLimit { get => field ??= CreateProperty(SettingKeys.LaunchFreeCamPitchLimit, 89f); }
+
+    [field: MaybeNull]
     public IObservableProperty<bool> DisableCharFade { get => field ??= CreateProperty(SettingKeys.LaunchDisableCharFade, false); }
 
     [field: MaybeNull]

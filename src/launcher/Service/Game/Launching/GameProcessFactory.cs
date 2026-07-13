@@ -333,6 +333,9 @@ internal sealed partial class GameProcessFactory
         config.AppendLine($"enableFreeCam={(options.EnableFreeCam.Value ? 1 : 0)}");
         config.AppendLine($"freeCamKey={options.FreeCamKey.Value}");
         config.AppendLine($"freeCamModifier={options.FreeCamModifier.Value}");
+        config.AppendLine($"enableFreeCamLock={(options.EnableFreeCamLock.Value ? 1 : 0)}");
+        config.AppendLine($"freeCamLockKey={options.FreeCamLockKey.Value}");
+        config.AppendLine($"freeCamLockModifier={options.FreeCamLockModifier.Value}");
         config.AppendLine($"freeCamMoveSpeed={options.FreeCamMoveSpeed.Value.ToString(CultureInfo.InvariantCulture)}");
         config.AppendLine($"freeCamSprintMult={options.FreeCamSprintMult.Value.ToString(CultureInfo.InvariantCulture)}");
         config.AppendLine($"freeCamMouseSensitivity={options.FreeCamMouseSensitivity.Value.ToString(CultureInfo.InvariantCulture)}");
@@ -407,6 +410,9 @@ internal sealed partial class GameProcessFactory
             options.EnableFreeCam.Value = GetBool(values, "enableFreeCam", options.EnableFreeCam.Value);
             options.FreeCamKey.Value = GetInt(values, "freeCamKey", options.FreeCamKey.Value);
             options.FreeCamModifier.Value = GetInt(values, "freeCamModifier", options.FreeCamModifier.Value);
+            options.EnableFreeCamLock.Value = GetBool(values, "enableFreeCamLock", options.EnableFreeCamLock.Value);
+            options.FreeCamLockKey.Value = GetInt(values, "freeCamLockKey", options.FreeCamLockKey.Value);
+            options.FreeCamLockModifier.Value = GetInt(values, "freeCamLockModifier", options.FreeCamLockModifier.Value);
             options.FreeCamMoveSpeed.Value = GetFloat(values, "freeCamMoveSpeed", options.FreeCamMoveSpeed.Value);
             options.FreeCamSprintMult.Value = GetFloat(values, "freeCamSprintMult", options.FreeCamSprintMult.Value);
             options.FreeCamMouseSensitivity.Value = GetFloat(values, "freeCamMouseSensitivity", options.FreeCamMouseSensitivity.Value);

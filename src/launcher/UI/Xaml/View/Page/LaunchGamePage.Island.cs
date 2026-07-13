@@ -159,6 +159,9 @@ internal sealed partial class LaunchGamePage
         options.EnableFreeCam.Value = false;
         options.FreeCamKey.Value = 0x75;
         options.FreeCamModifier.Value = 0;
+        options.EnableFreeCamLock.Value = true;
+        options.FreeCamLockKey.Value = 0x2E;
+        options.FreeCamLockModifier.Value = 0;
         options.FreeCamMoveSpeed.Value = 0.35f;
         options.FreeCamSprintMult.Value = 3.0f;
         options.FreeCamMouseSensitivity.Value = 0.12f;

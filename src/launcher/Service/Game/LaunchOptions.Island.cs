@@ -112,6 +112,15 @@ internal sealed partial class LaunchOptions
     public IObservableProperty<int> FreeCamModifier { get => field ??= CreateProperty(SettingKeys.LaunchFreeCamModifier, 0); }
 
     [field: MaybeNull]
+    public IObservableProperty<bool> EnableFreeCamLock { get => field ??= CreateProperty(SettingKeys.LaunchEnableFreeCamLock, true); }
+
+    [field: MaybeNull]
+    public IObservableProperty<int> FreeCamLockKey { get => field ??= CreateProperty(SettingKeys.LaunchFreeCamLockKey, 0x2E); }
+
+    [field: MaybeNull]
+    public IObservableProperty<int> FreeCamLockModifier { get => field ??= CreateProperty(SettingKeys.LaunchFreeCamLockModifier, 0); }
+
+    [field: MaybeNull]
     public IObservableProperty<float> FreeCamMoveSpeed { get => field ??= CreateProperty(SettingKeys.LaunchFreeCamMoveSpeed, 0.35f); }
 
     [field: MaybeNull]

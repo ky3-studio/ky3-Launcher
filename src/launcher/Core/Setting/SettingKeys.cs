@@ -156,6 +156,9 @@ internal static class SettingKeys
     public const string LaunchEnableFreeCam = "Launcher::Game::Island::FreeCam::Enable";
     public const string LaunchFreeCamKey = "Launcher::Game::Island::FreeCam::Key";
     public const string LaunchFreeCamModifier = "Launcher::Game::Island::FreeCam::Modifier";
+    public const string LaunchEnableFreeCamLock = "Launcher::Game::Island::FreeCam::LockEnable";
+    public const string LaunchFreeCamLockKey = "Launcher::Game::Island::FreeCam::LockKey";
+    public const string LaunchFreeCamLockModifier = "Launcher::Game::Island::FreeCam::LockModifier";
     public const string LaunchFreeCamMoveSpeed = "Launcher::Game::Island::FreeCam::MoveSpeed";
     public const string LaunchFreeCamSprintMult = "Launcher::Game::Island::FreeCam::SprintMult";
     public const string LaunchFreeCamMouseSensitivity = "Launcher::Game::Island::FreeCam::MouseSensitivity";

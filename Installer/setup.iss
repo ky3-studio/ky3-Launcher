@@ -1,6 +1,6 @@
 ﻿#define AppName       "ky3 Launcher"
-#define AppVersion    "6.7.1.0"
-#define AppPublisher  "Launcher Detail Development Team"
+#define AppVersion    "6.7.2.0"
+#define AppPublisher  "KY3 STUDIO"
 #define AppExe        "ky3launcher.exe"
 #define AppId         "{{8F3A1C2E-7B4D-4E5A-9F6B-2A1D3C4E5F60}"
 #define SrcDir        ".\..\src\launcher\bin\Release"
@@ -231,7 +231,7 @@ end;
 
 procedure RegisterPreviousData(PreviousDataKey: Integer);
 begin
-  if IsTaskSelected('desktopicon') then
+  if WizardIsTaskSelected('desktopicon') then
     SetPreviousData(PreviousDataKey, 'desktopicon', '1')
   else
     SetPreviousData(PreviousDataKey, 'desktopicon', '0');

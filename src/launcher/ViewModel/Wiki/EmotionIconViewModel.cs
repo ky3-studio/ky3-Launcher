@@ -26,28 +26,57 @@ internal sealed partial class EmotionIconViewModel : Abstraction.ViewModel
 
     public IReadOnlyList<EmotionIconEntry>? EmotionIcons { get; private set => SetProperty(ref field, value); }
 
+ 
+    private const int BatchSize = 50;
+
+  
+    private const int StopAfterGap = 40;
+
     protected override async ValueTask<bool> LoadOverrideAsync(CancellationToken token)
     {
-        IEnumerable<Task<int>> checkTasks = Enumerable.Range(1, 760).Select(async i =>
+        List<int> found = [];
+        int maxHit = 0;
+        int start = 1;
+
+        while (true)
         {
-            try
+            IEnumerable<Task<int>> checkTasks = Enumerable.Range(start, BatchSize).Select(async i =>
             {
-                using HttpClient client = httpClientFactory.CreateClient();
-                string url = StaticResourcesEndpoints.StaticRaw("EmotionIcon", $"UI_EmotionIcon{i}.png");
-                using HttpRequestMessage request = new(HttpMethod.Head, url);
-                using HttpResponseMessage response = await client.SendAsync(request, token).ConfigureAwait(false);
-                return response.IsSuccessStatusCode ? i : -1;
-            }
-            catch
+                try
+                {
+                    using HttpClient client = httpClientFactory.CreateClient();
+                    string url = StaticResourcesEndpoints.StaticRaw("EmotionIcon", $"UI_EmotionIcon{i}.png");
+                    using HttpRequestMessage request = new(HttpMethod.Head, url);
+                    using HttpResponseMessage response = await client.SendAsync(request, token).ConfigureAwait(false);
+                    return response.IsSuccessStatusCode ? i : -1;
+                }
+                catch
+                {
+                    return -1;
+                }
+            });
+
+            int[] results = await Task.WhenAll(checkTasks).ConfigureAwait(false);
+
+            foreach (int i in results.Where(i => i > 0))
             {
-                return -1;
+                found.Add(i);
+                if (i > maxHit)
+                {
+                    maxHit = i;
+                }
             }
-        });
 
-        int[] results = await Task.WhenAll(checkTasks).ConfigureAwait(false);
+            int probedTo = start + BatchSize - 1;
+            if (probedTo - maxHit >= StopAfterGap)
+            {
+                break;
+            }
 
-        List<EmotionIconEntry> icons = results
-            .Where(i => i > 0)
+            start += BatchSize;
+        }
+
+        List<EmotionIconEntry> icons = found
             .OrderBy(i => i)
             .Select(i => new EmotionIconEntry(i, new Uri(StaticResourcesEndpoints.StaticRaw("EmotionIcon", $"UI_EmotionIcon{i}.png"))))
             .ToList();

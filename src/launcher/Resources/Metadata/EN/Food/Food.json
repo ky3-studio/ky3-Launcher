@@ -15339,6 +15339,82 @@
     "BaseDishIcon": "UI_ItemIcon_108876"
   },
   {
+    "Id": 108976,
+    "Name": "Tea Party Polyphony",
+    "Rank": 3,
+    "Icon": "UI_ItemIcon_108880",
+    "EffectIcon": "UI_Buff_Item_Other_SPReduceConsume",
+    "Description": "Sandrone's specialty. Appearing without fanfare at the tea party is an exquisitely crafted two-tiered assortment of pastries... Could she really have made this herself? Before the surprise in your eyes has time to fade, she folds her arms, turns slightly aside, and lifts her chin. \"Hah? What's that look for? They're only tea snacks. Hardly a challenge.\" A faint, delicate sweetness drifts through the air, as if silently backing up her claim. Well then, best not keep them waiting!",
+    "TypeName": "Food",
+    "Recipe": {
+      "EffectIcon": "UI_Buff_Item_Other_SPReduceConsume",
+      "Effect": {
+        "0": "Decreases all party members' climbing and sprinting Stamina consumption by 25% for 1500s. In Co-Op Mode, this effect only applies to your own character(s)."
+      }
+    }
+  },
+  {
+    "Id": 108979,
+    "Name": "Birch-Steamed Pork Ribs",
+    "Rank": 3,
+    "Icon": "UI_ItemIcon_108881",
+    "EffectIcon": "UI_Buff_Item_Other_SPReduceConsume",
+    "Description": "A dish made with branches and ribs. With the lightest nudge of a fork, the meat falls from the bone like snow sliding from a branch. As it touches your tongue, its deep, savory richness mingles with the faint woodland aroma of steamed birch, finally melting into a warmth that leaves you wholly content.",
+    "TypeName": "Food",
+    "Recipe": {
+      "EffectIcon": "UI_Buff_Item_Other_SPReduceConsume",
+      "Effect": {
+        "0": "Decreases all party members' gliding and sprinting Stamina consumption by <color=#3399CCFF>15–25%</color> for 900s.",
+        "1": "In Co-Op Mode, this effect only applies to your own character(s)."
+      }
+    }
+  },
+  {
+    "Id": 108982,
+    "Name": "Meat-Filled Rye Bun",
+    "Rank": 2,
+    "Icon": "UI_ItemIcon_108882",
+    "EffectIcon": "UI_Buff_Item_Other_SPAdd",
+    "Description": "Fish-stuffed bread. Crack open its crisp, charred crust, and rich, savory oils come rushing out, followed by the clean sweetness of the fish. In the end, every flavor settles into the hearty crust, now steeped in fragrant juices. A single bite is enough to make even the bitter wind draw back.",
+    "TypeName": "Food",
+    "Recipe": {
+      "EffectIcon": "UI_Buff_Item_Other_SPAdd",
+      "Effect": {
+        "0": "Restores <color=#3399CCFF>40–60</color> stamina."
+      }
+    }
+  },
+  {
+    "Id": 108983,
+    "Name": "Tea Party Prelude: Herbal Tea",
+    "Rank": 3,
+    "Icon": "UI_ItemIcon_108883",
+    "EffectIcon": "UI_Buff_Item_Recovery_HpAdd",
+    "Description": "A floral herbal tea well worth savoring. Gentle and smooth, with a soft floral aroma that is both elegant and full-bodied. Its orange-red liquor glows like rosy light through clouds, soothing the heart with warmth and calm.",
+    "TypeName": "Food",
+    "Recipe": {
+      "EffectIcon": "UI_Buff_Item_Recovery_HpAdd",
+      "Effect": {
+        "0": "Restores 34% of Max HP and an additional 1,900 HP to the selected character."
+      }
+    }
+  },
+  {
+    "Id": 108984,
+    "Name": "Tea Party Prelude: Artful Latte",
+    "Rank": 3,
+    "Icon": "UI_ItemIcon_108884",
+    "EffectIcon": "UI_Buff_Item_Recovery_HpAdd",
+    "Description": "A latte well worth savoring. Carefully ground from specially roasted coffee beans, it is finished with delicate foam art, soft and dense as mist. Its flavor is rich and mellow, with an unusually refined aroma that sets it apart.",
+    "TypeName": "Food",
+    "Recipe": {
+      "EffectIcon": "UI_Buff_Item_Recovery_HpAdd",
+      "Effect": {
+        "0": "Restores 34% of Max HP and an additional 1,900 HP to the selected character."
+      }
+    }
+  },
+  {
     "Id": 111029,
     "Name": "\"Pure Water\"",
     "Rank": 3,

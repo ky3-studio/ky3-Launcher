@@ -15339,6 +15339,82 @@
     "BaseDishIcon": "UI_ItemIcon_108876"
   },
   {
+    "Id": 108976,
+    "Name": "「茶会多重奏」",
+    "Rank": 3,
+    "Icon": "UI_ItemIcon_108880",
+    "EffectIcon": "UI_Buff_Item_Other_SPReduceConsume",
+    "Description": "桑多涅的特色料理。在茶会中悄然亮相的是一份无比精致的双层茶点…莫非是她亲手做的？你眼底的讶异还未散去，她已抱起双臂，侧身扬起下巴。「哈？你那是什么表情？不过几份茶点而已，怎么可能难得倒我？」丝丝缕缕的甜香轻盈飘来，仿佛无声印证了她的话语。先吃为敬吧！",
+    "TypeName": "普通食物",
+    "Recipe": {
+      "EffectIcon": "UI_Buff_Item_Other_SPReduceConsume",
+      "Effect": {
+        "0": "队伍中所有角色攀爬和冲刺消耗的体力降低25%，持续1500秒。多人游戏时，仅对自己的角色生效。"
+      }
+    }
+  },
+  {
+    "Id": 108979,
+    "Name": "桦木蒸肋排",
+    "Rank": 3,
+    "Icon": "UI_ItemIcon_108881",
+    "EffectIcon": "UI_Buff_Item_Other_SPReduceConsume",
+    "Description": "树枝与肋排组成的菜肴。用叉子轻轻一拨，肉块便如枝头融雪般滑落。入口瞬间，深邃的咸香，连同桦木蒸腾出的那一丝森林气息，在唇齿间交融，最终化为一片令人餍足的温暖。",
+    "TypeName": "普通食物",
+    "Recipe": {
+      "EffectIcon": "UI_Buff_Item_Other_SPReduceConsume",
+      "Effect": {
+        "0": "队伍中所有角色滑翔和冲刺消耗的体力降低<color=#3399CCFF>15%-25%</color>，持续900秒。",
+        "1": "多人游戏时，仅对自己的角色生效。"
+      }
+    }
+  },
+  {
+    "Id": 108982,
+    "Name": "肉馅黑麦包",
+    "Rank": 2,
+    "Icon": "UI_ItemIcon_108882",
+    "EffectIcon": "UI_Buff_Item_Other_SPAdd",
+    "Description": "带有鱼肉馅的面包。掰开焦硬的外壳，丰腴的油香率先涌出，紧接着是鱼肉那抹清甜的突围，最终，所有滋味都沉入那浸透油汁、甘香厚实的饼皮里。只这一口，便足以让凛冽的风也退却三分。",
+    "TypeName": "普通食物",
+    "Recipe": {
+      "EffectIcon": "UI_Buff_Item_Other_SPAdd",
+      "Effect": {
+        "0": "恢复<color=#3399CCFF>40-60</color>点体力。"
+      }
+    }
+  },
+  {
+    "Id": 108983,
+    "Name": "茶会序曲・花草香茶",
+    "Rank": 3,
+    "Icon": "UI_ItemIcon_108883",
+    "EffectIcon": "UI_Buff_Item_Recovery_HpAdd",
+    "Description": "值得一品的花草香茶。口感柔和顺滑，带有朦胧花香，雅致而馥郁。茶汤橙红如霞光，给人宁静安心的感觉。",
+    "TypeName": "普通食物",
+    "Recipe": {
+      "EffectIcon": "UI_Buff_Item_Recovery_HpAdd",
+      "Effect": {
+        "0": "为选中的角色恢复生命值上限的34%，并额外恢复1900点生命值。"
+      }
+    }
+  },
+  {
+    "Id": 108984,
+    "Name": "茶会序曲・拉花咖啡",
+    "Rank": 3,
+    "Icon": "UI_ItemIcon_108884",
+    "EffectIcon": "UI_Buff_Item_Recovery_HpAdd",
+    "Description": "值得一品的拉花咖啡。选用经过特殊烘焙工艺的咖啡豆精心研磨而成，表面覆盖有一层绵密如雾的拉花，口感浓郁醇厚，带有别处难得一见的高级香气。",
+    "TypeName": "普通食物",
+    "Recipe": {
+      "EffectIcon": "UI_Buff_Item_Recovery_HpAdd",
+      "Effect": {
+        "0": "为选中的角色恢复生命值上限的34%，并额外恢复1900点生命值。"
+      }
+    }
+  },
+  {
     "Id": 111029,
     "Name": "「纯洁之水」",
     "Rank": 3,

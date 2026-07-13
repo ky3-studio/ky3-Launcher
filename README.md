@@ -128,7 +128,7 @@ dotnet restore src/launcher/launcher.csproj
 dotnet build src/launcher/launcher.csproj -c Release -p:Platform=x64
 ```
 
-构建产物输出到 `bin/Release/` 目录。
+构建产物输出到 `src/launcher/bin/Release/` 目录。
 
 ### 运行测试
 
@@ -162,7 +162,7 @@ ky3-Launcher/
 │   └── SourceGeneration/      Source Generators
 ├── Runner/                    C++ 自动启动管理 (Windows Task Scheduler)
 ├── tests/
-│   ├── ky3launcher.Tests/         单元测试 (247 tests)
+│   ├── ky3launcher.Tests/         单元测试 (341 tests)
 │   └── ky3launcher.Benchmarks/    性能基准测试
 ├── module/                    插件 DLL
 ├── Installer/                 安装包脚本 (Inno Setup)
@@ -261,18 +261,6 @@ ky3-Launcher/
 <img src="https://img.shields.io/badge/license-MIT-green?style=flat&logo=opensourceinitiative&logoColor=white" alt="MIT"/>
 
 本项目基于 [MIT](LICENSE) 协议开源。
-
----
-
-## Star History
-
-<a href="https://star-history.com/#ky3-studio/ky3-Launcher&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ky3-studio/ky3-Launcher&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=ky3-studio/ky3-Launcher&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=ky3-studio/ky3-Launcher&type=Date" />
-  </picture>
-</a>
 
 ---
 

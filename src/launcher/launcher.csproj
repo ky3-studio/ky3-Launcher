@@ -37,7 +37,7 @@
 		<PublishAot>False</PublishAot>
 		<PublishTrimmed>False</PublishTrimmed>
 		<PublishDir>bin\Release\</PublishDir>
-		<Version>6.7.2.0</Version>
+		<Version>6.7.3.0</Version>
 		<AssemblyName>ky3launcher</AssemblyName>
 		<AssemblyTitle>ky3 Launcher</AssemblyTitle>
 		<Company>KY3 STUDIO</Company>
@@ -217,7 +217,7 @@
 	</Target>
 
 	<Target Name="CopyUpdater" AfterTargets="Build;Publish">
-		<Exec Command="&quot;$(USERPROFILE)\.cargo\bin\cargo.exe&quot; build --release --manifest-path &quot;$(ProjectDir)..\updater-rs\Cargo.toml&quot;" />
+		<Exec Command="&quot;$(USERPROFILE)\.cargo\bin\cargo.exe&quot; build --release --manifest-path &quot;$(ProjectDir)..\updater-rs\Cargo.toml&quot;" ContinueOnError="WarnAndContinue" />
 		<Copy SourceFiles="$(ProjectDir)..\updater-rs\target\release\updater.exe" DestinationFolder="$(OutputPath)" />
 		<Copy Condition="'$(PublishDir)' != ''" SourceFiles="$(ProjectDir)..\updater-rs\target\release\updater.exe" DestinationFolder="$(PublishDir)" />
 	</Target>
@@ -228,6 +228,6 @@
 		<RemoveDir Directories="$(PublishDir)BuildHost-net472" Condition="Exists('$(PublishDir)BuildHost-net472')" />
 		<RemoveDir Directories="$(PublishDir)BuildHost-netcore" Condition="Exists('$(PublishDir)BuildHost-netcore')" />
 
-		<Exec Command="for /d %%d in (&quot;$(PublishDir)*-*&quot;) do ( if /i not &quot;%%~nxd&quot;==&quot;zh-CN&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hans&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hant&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-TW&quot; if /i not &quot;%%~nxd&quot;==&quot;Microsoft.UI.Xaml&quot; rd /s /q &quot;%%d&quot; )" />
+		<Exec Command="for /d %%d in (&quot;$(PublishDir)*-*&quot;) do ( if /i not &quot;%%~nxd&quot;==&quot;zh-CN&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hans&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-Hant&quot; if /i not &quot;%%~nxd&quot;==&quot;zh-TW&quot; if /i not &quot;%%~nxd&quot;==&quot;en-US&quot; if /i not &quot;%%~nxd&quot;==&quot;Microsoft.UI.Xaml&quot; rd /s /q &quot;%%d&quot; )" />
 	</Target>
 </Project>

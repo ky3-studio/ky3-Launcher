@@ -353,9 +353,11 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
         if (!isRedirectTo)
         {
             LocalSetting.Update(SettingKeys.LaunchTimes, 0, static x => unchecked(x + 1));
-            if (Version.Parse(LocalSetting.Update(SettingKeys.LastVersion, "0.0.0.0", $"{LauncherRuntime.Version}")) < LauncherRuntime.Version)
+            string previousVersion = LocalSetting.Update(SettingKeys.LastVersion, "0.0.0.0", $"{LauncherRuntime.Version}");
+            if (previousVersion is not "0.0.0.0" && Version.Parse(previousVersion) < LauncherRuntime.Version)
             {
                 XamlApplicationLifetime.IsFirstRunAfterUpdate = true;
+                XamlApplicationLifetime.UpdatedFromVersion = previousVersion;
             }
         }
 

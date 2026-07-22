@@ -418,7 +418,19 @@ internal sealed partial class LauncherHomePage : ScopedPage
             if (_videoWebView2Ready && _mainView.LauncherBackgroundVideo.CoreWebView2 is not null)
             {
                 _mainView.LauncherBackgroundVideo.CoreWebView2.ExecuteScriptAsync(
-                    "document.querySelectorAll('video').forEach(v=>{v.pause();v.removeAttribute('src');v.load()})").AsTask().ContinueWith(_ => { }, TaskScheduler.Default);
+                    "document.querySelectorAll('video').forEach(v=>{v.pause();v.removeAttribute('src');v.load()})")
+                    .AsTask()
+                    .ContinueWith(
+                        static t =>
+                        {
+                            if (t.Exception is { } exception)
+                            {
+                                SentrySdk.AddBreadcrumb(BreadcrumbFactory2.CreateError(
+                                    "Video cleanup script failed", "LauncherHomePage",
+                                    [("Error", exception.GetBaseException().Message)]));
+                            }
+                        },
+                        TaskScheduler.Default);
                 _mainView.LauncherBackgroundVideo.CoreWebView2.NavigateToString("<html><body style='background:transparent'></body></html>");
             }
         }

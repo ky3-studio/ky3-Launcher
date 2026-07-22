@@ -144,6 +144,7 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
             }
 
             SentrySdk.CaptureException(ex);
+            messenger.Send(InfoBarMessage.Warning(SH.ViewModelMainUpdateRestartFailed));
         }
     }
 

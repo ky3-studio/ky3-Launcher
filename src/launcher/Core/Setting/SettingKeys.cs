@@ -150,6 +150,7 @@ internal static class SettingKeys
     public const string LaunchForgeKey = "Launcher::Game::Island::Forge::Key";
     public const string LaunchForgeModifier = "Launcher::Game::Island::Forge::Modifier";
     public const string LaunchEnableNoGrass = "Launcher::Game::Island::NoGrass::Enable";
+    public const string LaunchEnableNoTreeLeaf = "Launcher::Game::Island::NoTreeLeaf::Enable";
     public const string LaunchEnableGui = "Launcher::Game::Island::Gui::Enable";
     public const string LaunchGuiKey = "Launcher::Game::Island::Gui::Key";
     public const string LaunchGuiModifier = "Launcher::Game::Island::Gui::Modifier";

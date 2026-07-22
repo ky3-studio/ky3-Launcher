@@ -1270,6 +1270,16 @@
                                         OnContent="{shuxm:ResourceString Name=ViewPageLaunchGameIslandToggleHide}"
                                         Toggled="OnIslandOptionChanged"/>
 
+                                    <ToggleSwitch
+                                        x:Name="Opt_enable_no_tree_leaf"
+                                        Grid.Row="6"
+                                        Grid.Column="2"
+                                        Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandNoTreeLeafHeader}"
+                                        IsOn="{Binding LaunchOptions.EnableNoTreeLeaf.Value, Mode=TwoWay}"
+                                        OffContent="{shuxm:ResourceString Name=ViewPageLaunchGameIslandToggleOff}"
+                                        OnContent="{shuxm:ResourceString Name=ViewPageLaunchGameIslandToggleOn}"
+                                        Toggled="OnIslandOptionChanged"/>
+
                                 </Grid>
                             </ContentControl>
                         </ScrollViewer>

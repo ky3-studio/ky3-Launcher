@@ -26,6 +26,7 @@ internal sealed partial class GameProcessFactory
 {
     private const string DllName = "Ky3-luancher-Plugin.dll";
     private const string DllConfigName = "dll_config.ini";
+    private const string ConfigMutexName = "Ky3Launcher.DllConfig.Mutex";
 
     public static IProcess CreateForDefault(BeforeLaunchExecutionContext context)
     {
@@ -295,53 +296,82 @@ internal sealed partial class GameProcessFactory
     {
         string configPath = Path.Combine(directory, DllConfigName);
 
-        StringBuilder config = new();
-        config.AppendLine("[Settings]");
-        config.AppendLine($"targetFov={(int)options.TargetFov.Value}");
-        config.AppendLine($"disableVSync={(options.DisableVSync.Value ? 1 : 0)}");
-        config.AppendLine($"enableFov={(options.IsSetFieldOfViewEnabled.Value ? 1 : 0)}");
-        config.AppendLine($"disableFog={(options.DisableFog.Value ? 1 : 0)}");
-        config.AppendLine($"disableCharFade={(options.DisableCharFade.Value ? 1 : 0)}");
-        config.AppendLine($"hideUID={(options.HideUID.Value ? 1 : 0)}");
-        config.AppendLine($"hideMenuUID={(options.HideMenuUID.Value ? 1 : 0)}");
-        config.AppendLine($"hideQuestBanner={(options.HideQuestBanner.Value ? 1 : 0)}");
-        config.AppendLine($"disableDamageText={(options.DisableShowDamageText.Value ? 1 : 0)}");
-        config.AppendLine($"disableCameraAnim={(options.DisableEventCameraMove.Value ? 1 : 0)}");
-        config.AppendLine($"touchScreen={(options.UsingTouchScreen.Value ? 1 : 0)}");
-        config.AppendLine($"enablePortableCraft={(options.EnablePortableCraftingBench.Value ? 1 : 0)}");
-        config.AppendLine($"redirectCraft={(options.RedirectCombineEntry.Value ? 1 : 0)}");
-        config.AppendLine($"craftKey={options.CraftKey.Value}");
-        config.AppendLine($"craftModifier={options.CraftModifier.Value}");
-        config.AppendLine($"removeTeamAnim={(options.RemoveOpenTeamProgress.Value ? 1 : 0)}");
-        config.AppendLine($"enableFps={(options.EnableFps.Value ? 1 : 0)}");
-        config.AppendLine($"targetFps={options.TargetFps.Value}");
-        config.AppendLine($"enableDispatch={(options.EnableDispatch.Value ? 1 : 0)}");
-        config.AppendLine($"redirectDispatch={(options.RedirectDispatch.Value ? 1 : 0)}");
-        config.AppendLine($"dispatchKey={options.DispatchKey.Value}");
-        config.AppendLine($"dispatchModifier={options.DispatchModifier.Value}");
-        config.AppendLine($"dispatchPageName=ExpeditionPage");
-        config.AppendLine($"enableCooking={(options.EnableCooking.Value ? 1 : 0)}");
-        config.AppendLine($"cookingKey={options.CookingKey.Value}");
-        config.AppendLine($"cookingModifier={options.CookingModifier.Value}");
-        config.AppendLine($"enableForge={(options.EnableForge.Value ? 1 : 0)}");
-        config.AppendLine($"forgeKey={options.ForgeKey.Value}");
-        config.AppendLine($"forgeModifier={options.ForgeModifier.Value}");
-        config.AppendLine($"enableNoGrass={(options.EnableNoGrass.Value ? 1 : 0)}");
-        config.AppendLine($"enableGui={(options.EnableGui.Value ? 1 : 0)}");
-        config.AppendLine($"guiKey={options.GuiKey.Value}");
-        config.AppendLine($"guiModifier={options.GuiModifier.Value}");
-        config.AppendLine($"enableFreeCam={(options.EnableFreeCam.Value ? 1 : 0)}");
-        config.AppendLine($"freeCamKey={options.FreeCamKey.Value}");
-        config.AppendLine($"freeCamModifier={options.FreeCamModifier.Value}");
-        config.AppendLine($"enableFreeCamLock={(options.EnableFreeCamLock.Value ? 1 : 0)}");
-        config.AppendLine($"freeCamLockKey={options.FreeCamLockKey.Value}");
-        config.AppendLine($"freeCamLockModifier={options.FreeCamLockModifier.Value}");
-        config.AppendLine($"freeCamMoveSpeed={options.FreeCamMoveSpeed.Value.ToString(CultureInfo.InvariantCulture)}");
-        config.AppendLine($"freeCamSprintMult={options.FreeCamSprintMult.Value.ToString(CultureInfo.InvariantCulture)}");
-        config.AppendLine($"freeCamMouseSensitivity={options.FreeCamMouseSensitivity.Value.ToString(CultureInfo.InvariantCulture)}");
-        config.AppendLine($"freeCamPitchLimit={options.FreeCamPitchLimit.Value.ToString(CultureInfo.InvariantCulture)}");
+        using Mutex mutex = new(false, ConfigMutexName);
+        bool acquired = false;
+        try
+        {
+            try
+            {
+                acquired = mutex.WaitOne(TimeSpan.FromSeconds(2));
+            }
+            catch (AbandonedMutexException)
+            {
+                acquired = true;
+            }
 
-        FileOperationSafe.TryWriteAllText(configPath, config.ToString());
+            Dictionary<string, string> merged = ReadIniDictionary(configPath);
+
+            merged["targetFov"] = ((int)options.TargetFov.Value).ToString(CultureInfo.InvariantCulture);
+            merged["disableVSync"] = options.DisableVSync.Value ? "1" : "0";
+            merged["enableFov"] = options.IsSetFieldOfViewEnabled.Value ? "1" : "0";
+            merged["disableFog"] = options.DisableFog.Value ? "1" : "0";
+            merged["disableCharFade"] = options.DisableCharFade.Value ? "1" : "0";
+            merged["hideUID"] = options.HideUID.Value ? "1" : "0";
+            merged["hideMenuUID"] = options.HideMenuUID.Value ? "1" : "0";
+            merged["hideQuestBanner"] = options.HideQuestBanner.Value ? "1" : "0";
+            merged["disableDamageText"] = options.DisableShowDamageText.Value ? "1" : "0";
+            merged["disableCameraAnim"] = options.DisableEventCameraMove.Value ? "1" : "0";
+            merged["touchScreen"] = options.UsingTouchScreen.Value ? "1" : "0";
+            merged["enablePortableCraft"] = options.EnablePortableCraftingBench.Value ? "1" : "0";
+            merged["redirectCraft"] = options.RedirectCombineEntry.Value ? "1" : "0";
+            merged["craftKey"] = options.CraftKey.Value.ToString(CultureInfo.InvariantCulture);
+            merged["craftModifier"] = options.CraftModifier.Value.ToString(CultureInfo.InvariantCulture);
+            merged["removeTeamAnim"] = options.RemoveOpenTeamProgress.Value ? "1" : "0";
+            merged["enableFps"] = options.EnableFps.Value ? "1" : "0";
+            merged["targetFps"] = options.TargetFps.Value.ToString(CultureInfo.InvariantCulture);
+            merged["enableDispatch"] = options.EnableDispatch.Value ? "1" : "0";
+            merged["redirectDispatch"] = options.RedirectDispatch.Value ? "1" : "0";
+            merged["dispatchKey"] = options.DispatchKey.Value.ToString(CultureInfo.InvariantCulture);
+            merged["dispatchModifier"] = options.DispatchModifier.Value.ToString(CultureInfo.InvariantCulture);
+            merged["dispatchPageName"] = "ExpeditionPage";
+            merged["enableCooking"] = options.EnableCooking.Value ? "1" : "0";
+            merged["cookingKey"] = options.CookingKey.Value.ToString(CultureInfo.InvariantCulture);
+            merged["cookingModifier"] = options.CookingModifier.Value.ToString(CultureInfo.InvariantCulture);
+            merged["enableForge"] = options.EnableForge.Value ? "1" : "0";
+            merged["forgeKey"] = options.ForgeKey.Value.ToString(CultureInfo.InvariantCulture);
+            merged["forgeModifier"] = options.ForgeModifier.Value.ToString(CultureInfo.InvariantCulture);
+            merged["enableNoGrass"] = options.EnableNoGrass.Value ? "1" : "0";
+            merged["enableNoTreeLeaf"] = options.EnableNoTreeLeaf.Value ? "1" : "0";
+            merged["enableGui"] = options.EnableGui.Value ? "1" : "0";
+            merged["guiKey"] = options.GuiKey.Value.ToString(CultureInfo.InvariantCulture);
+            merged["guiModifier"] = options.GuiModifier.Value.ToString(CultureInfo.InvariantCulture);
+            merged["enableFreeCam"] = options.EnableFreeCam.Value ? "1" : "0";
+            merged["freeCamKey"] = options.FreeCamKey.Value.ToString(CultureInfo.InvariantCulture);
+            merged["freeCamModifier"] = options.FreeCamModifier.Value.ToString(CultureInfo.InvariantCulture);
+            merged["enableFreeCamLock"] = options.EnableFreeCamLock.Value ? "1" : "0";
+            merged["freeCamLockKey"] = options.FreeCamLockKey.Value.ToString(CultureInfo.InvariantCulture);
+            merged["freeCamLockModifier"] = options.FreeCamLockModifier.Value.ToString(CultureInfo.InvariantCulture);
+            merged["freeCamMoveSpeed"] = options.FreeCamMoveSpeed.Value.ToString(CultureInfo.InvariantCulture);
+            merged["freeCamSprintMult"] = options.FreeCamSprintMult.Value.ToString(CultureInfo.InvariantCulture);
+            merged["freeCamMouseSensitivity"] = options.FreeCamMouseSensitivity.Value.ToString(CultureInfo.InvariantCulture);
+            merged["freeCamPitchLimit"] = options.FreeCamPitchLimit.Value.ToString(CultureInfo.InvariantCulture);
+
+            StringBuilder config = new();
+            config.AppendLine("[Settings]");
+            foreach (KeyValuePair<string, string> pair in merged)
+            {
+                config.AppendLine($"{pair.Key}={pair.Value}");
+            }
+
+            FileOperationSafe.TryWriteAllText(configPath, config.ToString());
+        }
+        finally
+        {
+            if (acquired)
+            {
+                mutex.ReleaseMutex();
+            }
+        }
     }
 
     public static void UpdateDllConfigForHotSwitch(LaunchOptions options)
@@ -354,19 +384,20 @@ internal sealed partial class GameProcessFactory
         string configPath = Path.Combine(AppContext.BaseDirectory, DllConfigName);
         if (!File.Exists(configPath)) return;
 
+        using Mutex mutex = new(false, ConfigMutexName);
+        bool acquired = false;
         try
         {
-            Dictionary<string, string> values = [];
-            foreach (string line in File.ReadAllLines(configPath))
+            try
             {
-                string trimmed = line.Trim();
-                if (trimmed.StartsWith('[') || string.IsNullOrEmpty(trimmed)) continue;
-                int eq = trimmed.IndexOf('=');
-                if (eq > 0)
-                {
-                    values[trimmed[..eq].Trim()] = trimmed[(eq + 1)..].Trim();
-                }
+                acquired = mutex.WaitOne(TimeSpan.FromSeconds(2));
             }
+            catch (AbandonedMutexException)
+            {
+                acquired = true;
+            }
+
+            Dictionary<string, string> values = ReadIniDictionary(configPath);
 
             static bool GetBool(Dictionary<string, string> v, string key, bool fallback)
                 => v.TryGetValue(key, out string? s) && int.TryParse(s, out int i) ? i != 0 : fallback;
@@ -404,6 +435,7 @@ internal sealed partial class GameProcessFactory
             options.ForgeKey.Value = GetInt(values, "forgeKey", options.ForgeKey.Value);
             options.ForgeModifier.Value = GetInt(values, "forgeModifier", options.ForgeModifier.Value);
             options.EnableNoGrass.Value = GetBool(values, "enableNoGrass", options.EnableNoGrass.Value);
+            options.EnableNoTreeLeaf.Value = GetBool(values, "enableNoTreeLeaf", options.EnableNoTreeLeaf.Value);
             options.EnableGui.Value = GetBool(values, "enableGui", options.EnableGui.Value);
             options.GuiKey.Value = GetInt(values, "guiKey", options.GuiKey.Value);
             options.GuiModifier.Value = GetInt(values, "guiModifier", options.GuiModifier.Value);
@@ -423,6 +455,62 @@ internal sealed partial class GameProcessFactory
         {
             SentrySdk.CaptureException(ex);
         }
+        finally
+        {
+            if (acquired)
+            {
+                mutex.ReleaseMutex();
+            }
+        }
+    }
+
+    private static Dictionary<string, string> ReadIniDictionary(string configPath)
+    {
+        Dictionary<string, string> values = [];
+        if (!File.Exists(configPath))
+        {
+            return values;
+        }
+
+        foreach (string line in ReadAllLinesWithRetry(configPath))
+        {
+            string trimmed = line.Trim();
+            if (trimmed.StartsWith('[') || string.IsNullOrEmpty(trimmed)) continue;
+            int eq = trimmed.IndexOf('=');
+            if (eq > 0)
+            {
+                values[trimmed[..eq].Trim()] = trimmed[(eq + 1)..].Trim();
+            }
+        }
+
+        return values;
+    }
+
+    private static string[] ReadAllLinesWithRetry(string path, int maxAttempts = 5)
+    {
+        for (int attempt = 1; attempt <= maxAttempts; attempt++)
+        {
+            try
+            {
+                using FileStream stream = new(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+                using StreamReader reader = new(stream);
+
+                List<string> lines = [];
+                string? line;
+                while ((line = reader.ReadLine()) is not null)
+                {
+                    lines.Add(line);
+                }
+
+                return [.. lines];
+            }
+            catch (IOException) when (attempt < maxAttempts)
+            {
+                Thread.Sleep(30);
+            }
+        }
+
+        return [];
     }
 
     public static IProcess CreateForEmbeddedYae(BeforeLaunchExecutionContext context)

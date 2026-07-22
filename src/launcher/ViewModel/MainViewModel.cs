@@ -445,7 +445,15 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
         }
     }
 
-    private void ShowUpdateLogWindowAfterUpdate() { }
+    private void ShowUpdateLogWindowAfterUpdate()
+    {
+        if (!XamlApplicationLifetime.IsFirstRunAfterUpdate)
+        {
+            return;
+        }
+
+        messenger.Send(InfoBarMessage.Success(SH.ViewModelMainUpdateCompletedTitle, SH.FormatViewModelMainUpdateCompletedContent(LauncherRuntime.Version.ToString())));
+    }
 
     private void NotifyIfDataFolderHasReparsePoint()
     {

@@ -5,7 +5,11 @@
 <h1 align="center">ky3 Launcher</h1>
 
 <p align="center">
-  <strong>一款现代化的原神第三方启动器，基于 WinUI 3 构建</strong>
+  <strong>A modern third-party launcher for Genshin Impact, built with WinUI 3</strong>
+</p>
+
+<p align="center">
+  English | <a href="README.zh-CN.md">简体中文</a>
 </p>
 
 <p align="center">
@@ -22,7 +26,7 @@
 
 ---
 
-## 预览
+## Preview
 
 <p align="center">
   <img src="preview.png" width="800" alt="ky3 launcher preview" />
@@ -30,7 +34,7 @@
 
 ---
 
-## 本地化
+## Localization
 
 ![zh-CN](https://img.shields.io/badge/zh--CN-100%25-blue?style=flat&logo=crowdin)
 ![en-US](https://img.shields.io/badge/en--US-96%25-blue?style=flat&logo=crowdin)
@@ -45,98 +49,98 @@
 
 ---
 
-## 功能特性
+## Features
 
-| 功能 | 说明 |
+| Feature | Description |
 |------|------|
-| 游戏启动 | 自定义启动参数、命令行注入、窗口模式选择、多账号快速切换、DLL 插件自动加载 |
-| 角色养成 | 等级突破材料计算、天赋升级规划、树脂消耗预估、每日/周本收益统计 |
-| 武器 & 角色百科 | 全角色 / 武器属性浏览、筛选排序、命之座 & 精炼数据、圣遗物推荐搭配 |
-| 任务合集 | 魔神任务 & 传说任务总览、任务奖励统计、按区域筛选 |
-| 成就追踪 | 基于 [Yae](https://github.com/HolographicHat/Yae) 的本地成就状态读取、分类浏览与搜索 |
-| 自动签到 | 米游社 / HoYoLab 每日自动签到、多账号批量执行、签到结果通知 |
-| 增量更新 | 文件级增量补丁（BsDiff）、断点续传、本地校验、无需重新下载完整安装包 |
-| 插件管理 | DLL 模组热加载 / 卸载、版本管理、一键启用 / 禁用 |
-| 实时便笺 | 树脂 / 委托 / 洞天宝钱 / 参量质变仪实时查看、数据与账号联动 |
-| 祈愿分析 | 抽卡记录导入、保底计数、出货概率统计、历史记录可视化 |
+| Game launching | Custom launch arguments, command-line injection, window mode selection, fast multi-account switching, automatic DLL plugin loading |
+| Character planning | Level ascension material calculator, talent upgrade planning, resin cost estimation, daily/weekly boss reward statistics |
+| Weapon & character wiki | Browse all characters/weapons with stats, filtering and sorting, constellation & refinement data, recommended artifact builds |
+| Quest collection | Archon & Story Quest overview, quest reward statistics, filter by region |
+| Achievement tracking | Local achievement state reading powered by [Yae](https://github.com/HolographicHat/Yae), categorized browsing and search |
+| Auto check-in | Daily automatic check-in for miHoYo BBS / HoYoLab, batch execution across multiple accounts, result notifications |
+| Incremental updates | File-level delta patching (BsDiff), resumable downloads, local verification — no need to re-download the full package |
+| Plugin management | Hot loading/unloading of DLL mods, version management, one-click enable/disable |
+| Real-Time Notes | Live view of resin / expeditions / Realm Currency / Parametric Transformer, synced per account |
+| Wish analysis | Gacha record import, pity counter, drop rate statistics, history visualization |
 
 ---
 
-## 技术栈
+## Tech Stack
 
-| 层 | 技术 | 说明 |
+| Layer | Technology | Description |
 |:---:|------|------|
-| 框架 | .NET 10 / WinUI 3 | Windows App SDK，现代桌面 UI 框架 |
-| 语言 | C# 14 (preview) | 最新语言特性、Source Generators 代码生成 |
-| 架构 | MVVM | CommunityToolkit.Mvvm、ObservableProperty、WeakReferenceMessenger |
-| 数据库 | SQLite | Entity Framework Core ORM、本地持久化存储 |
-| 网络 | HttpClient + WebView2 | REST API 请求、Cookie 管理、嵌入式 Web 视图 |
-| 原生层 | C++ / Win32 Interop | Native DLL 注入、进程管理、底层系统调用 |
-| 更新器 | Rust | 轻量级自更新组件，断点续传、文件级增量替换 |
-| 构建 | MSBuild + Cargo | Source Generators、增量编译、GitHub Actions CI/CD |
+| Framework | .NET 10 / WinUI 3 | Windows App SDK, modern desktop UI framework |
+| Language | C# 14 (preview) | Latest language features, Source Generators |
+| Architecture | MVVM | CommunityToolkit.Mvvm, ObservableProperty, WeakReferenceMessenger |
+| Database | SQLite | Entity Framework Core ORM, local persistent storage |
+| Networking | HttpClient + WebView2 | REST API requests, cookie management, embedded web view |
+| Native layer | C++ / Win32 Interop | Native DLL injection, process management, low-level system calls |
+| Updater | Rust | Lightweight self-update component with resumable downloads and file-level delta replacement |
+| Build | MSBuild + Cargo | Source Generators, incremental compilation, GitHub Actions CI/CD |
 
 ---
 
-## 环境要求
+## Requirements
 
-| 项 | 要求 | 备注 |
+| Item | Requirement | Notes |
 |:---:|------|------|
-| OS | Windows 10 2004+ | Build 19041 及以上，推荐 Windows 11 |
-| 架构 | x64 | 仅支持 64 位系统 |
-| 运行库 | VC++ 2015–2022 x64 | [下载地址](https://aka.ms/vs/17/release/vc_redist.x64.exe) |
-| WebView2 | WebView2 Runtime | 任意版本，Windows 11 已内置 |
+| OS | Windows 10 2004+ | Build 19041 or later, Windows 11 recommended |
+| Architecture | x64 | 64-bit systems only |
+| Runtime | VC++ 2015–2022 x64 | [Download](https://aka.ms/vs/17/release/vc_redist.x64.exe) |
+| WebView2 | WebView2 Runtime | Any version, built into Windows 11 |
 
 ---
 
-## 安装
+## Installation
 
-1. 前往 [Releases](https://github.com/ky3-studio/ky3-Launcher/releases/latest) 下载最新版本
-2. 解压到任意目录
-3. 运行 `launcher.exe`
+1. Download the latest version from [Releases](https://github.com/ky3-studio/ky3-Launcher/releases/latest)
+2. Extract to any directory
+3. Run `launcher.exe`
 
-> 首次运行需要 [VC++ 2015–2022 x64](https://aka.ms/vs/17/release/vc_redist.x64.exe) 和 [WebView2 Runtime](https://go.microsoft.com/fwlink/p/?LinkId=2124703)，Windows 11 已内置。
+> First run requires [VC++ 2015–2022 x64](https://aka.ms/vs/17/release/vc_redist.x64.exe) and the [WebView2 Runtime](https://go.microsoft.com/fwlink/p/?LinkId=2124703), both built into Windows 11.
 
 ---
 
-## 构建
+## Building
 
-### 前置条件
+### Prerequisites
 
-| 依赖 | 说明 |
+| Dependency | Description |
 |------|------|
-| <img src="https://img.shields.io/badge/-.NET%2010%20SDK-512bd4?style=flat&logo=dotnet&logoColor=white" alt=""/> | [dotnet.microsoft.com](https://dotnet.microsoft.com/download)，preview 版本 |
-| <img src="https://img.shields.io/badge/-Visual%20Studio%202022-5c2d91?style=flat&logo=visualstudio&logoColor=white" alt=""/> | 或使用 `dotnet` CLI 单独构建 |
-| <img src="https://img.shields.io/badge/-Windows%20App%20SDK-0078d4?style=flat&logo=windows&logoColor=white" alt=""/> | VS Installer 中勾选对应 Workload |
-| <img src="https://img.shields.io/badge/-Rust%20Toolchain-000000?style=flat&logo=rust&logoColor=white" alt=""/> | [rustup.rs](https://rustup.rs/)，用于编译 updater-rs 更新器组件 |
+| <img src="https://img.shields.io/badge/-.NET%2010%20SDK-512bd4?style=flat&logo=dotnet&logoColor=white" alt=""/> | [dotnet.microsoft.com](https://dotnet.microsoft.com/download), preview channel |
+| <img src="https://img.shields.io/badge/-Visual%20Studio%202022-5c2d91?style=flat&logo=visualstudio&logoColor=white" alt=""/> | Or build standalone with the `dotnet` CLI |
+| <img src="https://img.shields.io/badge/-Windows%20App%20SDK-0078d4?style=flat&logo=windows&logoColor=white" alt=""/> | Select the corresponding workload in VS Installer |
+| <img src="https://img.shields.io/badge/-Rust%20Toolchain-000000?style=flat&logo=rust&logoColor=white" alt=""/> | [rustup.rs](https://rustup.rs/), used to compile the updater-rs component |
 
-### 克隆仓库
+### Clone the repository
 
 ```bash
 git clone https://github.com/ky3-studio/ky3-Launcher.git
 cd ky3-Launcher
 ```
 
-### 还原依赖
+### Restore dependencies
 
 ```bash
 dotnet restore src/launcher/launcher.csproj
 ```
 
-### 编译
+### Build
 
 ```bash
 dotnet build src/launcher/launcher.csproj -c Release -p:Platform=x64
 ```
 
-构建产物输出到 `src/launcher/bin/Release/` 目录。
+Build output goes to `src/launcher/bin/Release/`.
 
-### 运行测试
+### Run tests
 
 ```bash
 dotnet test tests/ky3launcher.Tests/ky3launcher.Tests.csproj -c Release
 ```
 
-### 运行性能基准
+### Run benchmarks
 
 ```bash
 dotnet run -c Release --project tests/ky3launcher.Benchmarks -- --filter *
@@ -144,115 +148,57 @@ dotnet run -c Release --project tests/ky3launcher.Benchmarks -- --filter *
 
 ---
 
-## 项目结构
+## Project Structure
 
 ```
 ky3-Launcher/
 ├── src/
-│   ├── launcher/              ← 主项目 (WinUI 3)
-│   │   ├── Core/              基础设施 (DI、IO、缓存、数据库、进程管理)
-│   │   ├── Extension/         扩展方法 (Span、String、Collection、内存管理)
-│   │   ├── Model/             实体模型与数据结构
-│   │   ├── Service/           业务服务 (养成计算、祈愿分析、签到、便笺)
-│   │   ├── ViewModel/         MVVM ViewModel 层
-│   │   ├── UI/                界面控件与样式
-│   │   ├── Web/               HTTP 客户端与 API 封装
-│   │   ├── Win32/             P/Invoke 与原生交互
-│   │   └── Factory/           UI 组件工厂 (对话框、文件选择器、进度条)
+│   ├── launcher/              ← Main project (WinUI 3)
+│   │   ├── Core/              Infrastructure (DI, IO, caching, database, process management)
+│   │   ├── Extension/         Extension methods (Span, String, Collection, memory management)
+│   │   ├── Model/             Entity models and data structures
+│   │   ├── Service/           Business services (planning calculator, wish analysis, check-in, notes)
+│   │   ├── ViewModel/         MVVM ViewModel layer
+│   │   ├── UI/                UI controls and styles
+│   │   ├── Web/               HTTP clients and API wrappers
+│   │   ├── Win32/             P/Invoke and native interop
+│   │   └── Factory/           UI component factories (dialogs, file pickers, progress bars)
 │   └── SourceGeneration/      Source Generators
-├── Runner/                    C++ 自动启动管理 (Windows Task Scheduler)
+├── Runner/                    C++ auto-start management (Windows Task Scheduler)
 ├── tests/
-│   ├── ky3launcher.Tests/         单元测试 (341 tests)
-│   └── ky3launcher.Benchmarks/    性能基准测试
-├── module/                    插件 DLL
-├── Installer/                 安装包脚本 (Inno Setup)
-└── .github/                   CI/CD、Issue 模板、Dependabot
+│   ├── ky3launcher.Tests/         Unit tests (341 tests)
+│   └── ky3launcher.Benchmarks/    Performance benchmarks
+├── module/                    Plugin DLLs
+├── Installer/                 Installer scripts (Inno Setup)
+└── .github/                   CI/CD, issue templates, Dependabot
 ```
 
 ---
 
-## 路线图
+## Related Repositories
 
-| 状态 | 功能 |
-|:---:|------|
-| ✅ | 游戏启动、多账号切换、DLL 插件加载 |
-| ✅ | 角色/武器养成计算器 |
-| ✅ | 实时便笺、自动签到、祈愿分析 |
-| ✅ | 文件级增量更新 |
-| 🚧 | 多语言国际化 (en-US / ja-JP / ko-KR) |
-| 💡 | 背包物品解析 |
-| 💡 | 圣遗物评分与强化建议 |
-
----
-
-## 常见问题
-
-<details>
-<summary><b>启动时白屏 / 闪退</b></summary>
-
-1. 确认已安装 [VC++ 2015–2022 x64](https://aka.ms/vs/17/release/vc_redist.x64.exe)
-2. 确认已安装 [WebView2 Runtime](https://go.microsoft.com/fwlink/p/?LinkId=2124703)
-3. 尝试以管理员身份运行
-4. 检查是否被杀毒软件拦截
-</details>
-
-<details>
-<summary><b>网络请求失败 / 签到失败</b></summary>
-
-1. 可能返回5003 风控 稍后再试
-2. 确认 Cookie 未过期，尝试重新登录米游社账号
-</details>
-
-<details>
-<summary><b>插件加载失败 / DLL 报错</b></summary>
-
-1. 确保 DLL 架构为 x64，不支持 x86
-2. 检查 DLL 是否放在 exe 同目录下
-3. 查看日志文件定位具体错误原因
-</details>
-
-<details>
-<summary><b>自动更新失败</b></summary>
-
-1. 检查网络连接是否正常
-2. 确认程序目录有写入权限
-3. 手动下载 [Latest Release](https://github.com/ky3-studio/ky3-Launcher/releases/latest) 覆盖安装
-</details>
-
-<details>
-<summary><b>树脂 / 便笺数据不更新</b></summary>
-
-1. 检查账号是否已绑定并登录
-2. 米游社 API 偶尔延迟，稍后重试
-3. 5003 风控问题
-</details>
-
----
-
-## 相关仓库
-
-| 仓库 | 说明 |
+| Repository | Description |
 |------|------|
-| <img src="https://img.shields.io/badge/-plugin--module-181717?style=flat&logo=github&logoColor=white" alt=""/> [ky3-launcher-plugin-module](https://github.com/ky3-git/ky3-launcher-plugin-module) | DLL 插件模块，提供插件 SDK 与接口定义 |
-| <img src="https://img.shields.io/badge/-metadata-181717?style=flat&logo=github&logoColor=white" alt=""/> [ky3-metadata](https://github.com/ky3-git/ky3-metadata) | 游戏元数据 JSON 集合（角色 / 武器 / 材料 / 任务） |
-| <img src="https://img.shields.io/badge/-Yae-181717?style=flat&logo=github&logoColor=white" alt=""/> [Yae](https://github.com/HolographicHat/Yae) | 原神成就解锁工具，本地读取成就状态 |
+| <img src="https://img.shields.io/badge/-plugin--module-181717?style=flat&logo=github&logoColor=white" alt=""/> [ky3-launcher-plugin-module](https://github.com/ky3-git/ky3-launcher-plugin-module) | DLL plugin module providing the plugin SDK and interface definitions |
+| <img src="https://img.shields.io/badge/-metadata-181717?style=flat&logo=github&logoColor=white" alt=""/> [ky3-metadata](https://github.com/ky3-git/ky3-metadata) | Game metadata JSON collection (characters / weapons / materials / quests) |
+| <img src="https://img.shields.io/badge/-Yae-181717?style=flat&logo=github&logoColor=white" alt=""/> [Yae](https://github.com/HolographicHat/Yae) | Genshin achievement unlock tool, reads achievement state locally |
 
 ---
 
-## 贡献
+## Contributing
 
-欢迎提交 Issue 和 Pull Request，帮助改进项目。
+Issues and Pull Requests are welcome to help improve the project.
 
-| 渠道 | 用途 |
+| Channel | Purpose |
 |------|------|
-| <img src="https://img.shields.io/badge/-Issue-da3633?style=flat&logo=github&logoColor=white" alt=""/> [Issues](https://github.com/ky3-studio/ky3-Launcher/issues) | 反馈 Bug、提出功能建议、讨论方案 |
-| <img src="https://img.shields.io/badge/-PR-2ea44f?style=flat&logo=github&logoColor=white" alt=""/> [Pull Requests](https://github.com/ky3-studio/ky3-Launcher/pulls) | 修复问题、新增功能、优化性能 |
+| <img src="https://img.shields.io/badge/-Issue-da3633?style=flat&logo=github&logoColor=white" alt=""/> [Issues](https://github.com/ky3-studio/ky3-Launcher/issues) | Report bugs, suggest features, discuss ideas |
+| <img src="https://img.shields.io/badge/-PR-2ea44f?style=flat&logo=github&logoColor=white" alt=""/> [Pull Requests](https://github.com/ky3-studio/ky3-Launcher/pulls) | Fix issues, add features, improve performance |
 
 ---
 
-## 致谢
+## Acknowledgements
 
-本项目参考了 <img src="https://avatars.githubusercontent.com/u/49308723?s=20" width="20" height="20" alt="DGP Studio"/> [Snap Hutao](https://github.com/DGP-Studio/Snap.Hutao) 的架构设计，感谢 [DGP Studio](https://github.com/DGP-Studio) 及其社区贡献者的开源工作。
+This project takes architectural inspiration from <img src="https://avatars.githubusercontent.com/u/49308723?s=20" width="20" height="20" alt="DGP Studio"/> [Snap Hutao](https://github.com/DGP-Studio/Snap.Hutao). Thanks to [DGP Studio](https://github.com/DGP-Studio) and its community contributors for their open-source work.
 
 ---
 
@@ -260,10 +206,10 @@ ky3-Launcher/
 
 <img src="https://img.shields.io/badge/license-MIT-green?style=flat&logo=opensourceinitiative&logoColor=white" alt="MIT"/>
 
-本项目基于 [MIT](LICENSE) 协议开源。
+This project is open-sourced under the [MIT](LICENSE) license.
 
 ---
 
-## 免责声明
+## Disclaimer
 
-本项目为第三方开源工具，与 miHoYo / HoYoverse 无任何关联。使用本软件产生的一切后果由用户自行承担。
+This is a third-party open-source tool with no affiliation with miHoYo / HoYoverse. Users assume all responsibility for any consequences of using this software.

@@ -134,10 +134,54 @@ internal sealed class ServiceRecipientNavigationViewBehavior : BehaviorBase<Navi
         if (targetType is not null)
         {
             INavigationCompletionSource data = new NavigationExtraData(
-                new EntranceNavigationTransitionInfo(),
+                CreateTransitionInfo(sender, targetType, args.IsSettingsInvoked),
                 NavigationViewItemHelper.GetExtraData(item));
             Navigate(sender, targetType, data, syncNavigationViewItem: false);
         }
+    }
+
+    private static NavigationTransitionInfo CreateTransitionInfo(NavigationView navigationView, Type targetType, bool isSettingsInvoked)
+    {
+        if (isSettingsInvoked)
+        {
+            return new DrillInNavigationTransitionInfo();
+        }
+
+        if (navigationView.Content.As<Frame>()?.Content?.GetType() is not { } currentType || currentType == typeof(SettingPage))
+        {
+            return new EntranceNavigationTransitionInfo();
+        }
+
+        int currentIndex = -1;
+        int targetIndex = -1;
+        int index = 0;
+        foreach (NavigationViewItem menuItem in EnumerateMenuItems(navigationView.MenuItems))
+        {
+            Type? navigateTo = NavigationViewItemHelper.GetNavigateTo(menuItem);
+            if (navigateTo == currentType)
+            {
+                currentIndex = index;
+            }
+
+            if (navigateTo == targetType)
+            {
+                targetIndex = index;
+            }
+
+            index++;
+        }
+
+        if (currentIndex < 0 || targetIndex < 0 || currentIndex == targetIndex)
+        {
+            return new EntranceNavigationTransitionInfo();
+        }
+
+        return new SlideNavigationTransitionInfo
+        {
+            Effect = targetIndex > currentIndex
+                ? SlideNavigationTransitionEffect.FromRight
+                : SlideNavigationTransitionEffect.FromLeft,
+        };
     }
 
     private static bool IsNavigationThrottled()

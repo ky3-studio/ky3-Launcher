@@ -5,6 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:cw="using:CommunityToolkit.WinUI"
+    xmlns:clw="using:CommunityToolkit.Labs.WinUI"
     xmlns:shuxc="using:Launcher.UI.Xaml.Control"
     xmlns:shuxm="using:Launcher.UI.Xaml.Markup"
     xmlns:shvl="using:Launcher.ViewModel.LauncherHome"
@@ -42,25 +43,71 @@
                     </RectangleGeometry>
                 </Border.Clip>
                 <Grid>
-                    <Image
-                        x:Name="BannerImageOld"
-                        Opacity="0"
-                        Stretch="UniformToFill"/>
-                    <Image
-                        x:Name="BannerImage"
-                        Stretch="UniformToFill"/>
-                    <StackPanel
-                        x:Name="BannerIndicators"
-                        Margin="0,0,0,8"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Bottom"
-                        Orientation="Horizontal"
-                        Opacity="0"
-                        Visibility="Collapsed">
-                        <StackPanel.OpacityTransition>
+                    <Grid x:Name="BannerContent">
+                        <Grid.ScaleTransition>
+                            <Vector3Transition Duration="0:0:0.35"/>
+                        </Grid.ScaleTransition>
+                        <Image
+                            x:Name="BannerImageOld"
+                            Opacity="0"
+                            Stretch="UniformToFill"/>
+                        <Image
+                            x:Name="BannerImage"
+                            ImageOpened="BannerImage_ImageOpened"
+                            ImageFailed="BannerImage_ImageFailed"
+                            Stretch="UniformToFill"/>
+                    </Grid>
+                    <clw:Shimmer
+                        x:Name="BannerShimmer"
+                        CornerRadius="8">
+                        <clw:Shimmer.OpacityTransition>
                             <ScalarTransition Duration="0:0:0.3"/>
-                        </StackPanel.OpacityTransition>
-                    </StackPanel>
+                        </clw:Shimmer.OpacityTransition>
+                    </clw:Shimmer>
+                    <Border
+                        x:Name="BannerPrevBtn"
+                        Width="26"
+                        Height="26"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        CornerRadius="13"
+                        Opacity="0"
+                        Visibility="Collapsed"
+                        PointerPressed="BannerPrev_PointerPressed">
+                        <Border.Background>
+                            <SolidColorBrush Color="#60000000"/>
+                        </Border.Background>
+                        <Border.OpacityTransition>
+                            <ScalarTransition Duration="0:0:0.3"/>
+                        </Border.OpacityTransition>
+                        <FontIcon
+                            FontSize="11"
+                            Foreground="White"
+                            Glyph="&#xE76B;"/>
+                    </Border>
+                    <Border
+                        x:Name="BannerNextBtn"
+                        Width="26"
+                        Height="26"
+                        Margin="0,0,8,0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        CornerRadius="13"
+                        Opacity="0"
+                        Visibility="Collapsed"
+                        PointerPressed="BannerNext_PointerPressed">
+                        <Border.Background>
+                            <SolidColorBrush Color="#60000000"/>
+                        </Border.Background>
+                        <Border.OpacityTransition>
+                            <ScalarTransition Duration="0:0:0.3"/>
+                        </Border.OpacityTransition>
+                        <FontIcon
+                            FontSize="11"
+                            Foreground="White"
+                            Glyph="&#xE76C;"/>
+                    </Border>
                 </Grid>
               </Border>
             </Border>
@@ -119,16 +166,115 @@
                         </Border.TranslationTransition>
                     </Border>
 
-                    <StackPanel
-                        x:Name="PostList"
-                        Spacing="4">
-                        <StackPanel.OpacityTransition>
-                            <ScalarTransition Duration="0:0:0.2"/>
-                        </StackPanel.OpacityTransition>
-                        <StackPanel.TranslationTransition>
-                            <Vector3Transition Duration="0:0:0.2"/>
-                        </StackPanel.TranslationTransition>
-                    </StackPanel>
+                    <Grid>
+                        <StackPanel
+                            x:Name="PostListSkeleton"
+                            Spacing="4">
+                            <StackPanel.OpacityTransition>
+                                <ScalarTransition Duration="0:0:0.3"/>
+                            </StackPanel.OpacityTransition>
+                            <Grid Height="18" ColumnSpacing="8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <clw:Shimmer
+                                    Width="200"
+                                    Height="12"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    CornerRadius="6"/>
+                                <clw:Shimmer
+                                    Grid.Column="1"
+                                    Width="56"
+                                    Height="12"
+                                    VerticalAlignment="Center"
+                                    CornerRadius="6"/>
+                            </Grid>
+                            <Grid Height="18" ColumnSpacing="8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <clw:Shimmer
+                                    Width="165"
+                                    Height="12"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    CornerRadius="6"/>
+                                <clw:Shimmer
+                                    Grid.Column="1"
+                                    Width="56"
+                                    Height="12"
+                                    VerticalAlignment="Center"
+                                    CornerRadius="6"/>
+                            </Grid>
+                            <Grid Height="18" ColumnSpacing="8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <clw:Shimmer
+                                    Width="210"
+                                    Height="12"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    CornerRadius="6"/>
+                                <clw:Shimmer
+                                    Grid.Column="1"
+                                    Width="56"
+                                    Height="12"
+                                    VerticalAlignment="Center"
+                                    CornerRadius="6"/>
+                            </Grid>
+                            <Grid Height="18" ColumnSpacing="8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <clw:Shimmer
+                                    Width="150"
+                                    Height="12"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    CornerRadius="6"/>
+                                <clw:Shimmer
+                                    Grid.Column="1"
+                                    Width="56"
+                                    Height="12"
+                                    VerticalAlignment="Center"
+                                    CornerRadius="6"/>
+                            </Grid>
+                            <Grid Height="18" ColumnSpacing="8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <clw:Shimmer
+                                    Width="185"
+                                    Height="12"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    CornerRadius="6"/>
+                                <clw:Shimmer
+                                    Grid.Column="1"
+                                    Width="56"
+                                    Height="12"
+                                    VerticalAlignment="Center"
+                                    CornerRadius="6"/>
+                            </Grid>
+                        </StackPanel>
+                        <StackPanel
+                            x:Name="PostList"
+                            Spacing="4">
+                            <StackPanel.OpacityTransition>
+                                <ScalarTransition Duration="0:0:0.2"/>
+                            </StackPanel.OpacityTransition>
+                            <StackPanel.TranslationTransition>
+                                <Vector3Transition Duration="0:0:0.2"/>
+                            </StackPanel.TranslationTransition>
+                        </StackPanel>
+                    </Grid>
                 </StackPanel>
               </Border>
             </Border>

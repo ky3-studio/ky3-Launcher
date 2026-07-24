@@ -302,12 +302,43 @@ internal sealed partial class LauncherHomePage
 
     private void Banner_PointerEntered(object sender, PointerRoutedEventArgs e)
     {
-        BannerIndicators.Opacity = 1;
+        if (_bannerList.Count > 1)
+        {
+            BannerPrevBtn.Opacity = 1;
+            BannerNextBtn.Opacity = 1;
+        }
+
+        BannerContent.CenterPoint = new Vector3((float)(BannerContent.ActualWidth / 2), (float)(BannerContent.ActualHeight / 2), 0);
+        BannerContent.Scale = new Vector3(1.06f, 1.06f, 1);
+    }
+
+    private void BannerImage_ImageOpened(object sender, RoutedEventArgs e)
+    {
+        HideSkeleton(BannerShimmer);
+    }
+
+    private void BannerImage_ImageFailed(object sender, ExceptionRoutedEventArgs e)
+    {
+        HideSkeleton(BannerShimmer);
+    }
+
+    private static async void HideSkeleton(UIElement skeleton)
+    {
+        if (skeleton.Visibility == Visibility.Collapsed)
+        {
+            return;
+        }
+
+        skeleton.Opacity = 0;
+        await Task.Delay(300);
+        skeleton.Visibility = Visibility.Collapsed;
     }
 
     private void Banner_PointerExited(object sender, PointerRoutedEventArgs e)
     {
-        BannerIndicators.Opacity = 0;
+        BannerPrevBtn.Opacity = 0;
+        BannerNextBtn.Opacity = 0;
+        BannerContent.Scale = Vector3.One;
     }
 
     private async Task LoadContentAsync()
@@ -366,6 +397,12 @@ internal sealed partial class LauncherHomePage
             {
                 LoadBanners();
                 ShowTab("activity");
+                HideSkeleton(PostListSkeleton);
+
+                if (_bannerList.Count == 0)
+                {
+                    HideSkeleton(BannerShimmer);
+                }
             });
         }
         catch (Exception ex)
@@ -373,6 +410,12 @@ internal sealed partial class LauncherHomePage
             SentrySdk.AddBreadcrumb(BreadcrumbFactory2.CreateError(
                 "Content load failed", "LauncherHomePage",
                 [("Error", ex.Message)]));
+
+            DispatcherQueue.TryEnqueue(() =>
+            {
+                HideSkeleton(BannerShimmer);
+                HideSkeleton(PostListSkeleton);
+            });
         }
     }
 
@@ -387,27 +430,41 @@ internal sealed partial class LauncherHomePage
 
         if (_bannerList.Count > 1)
         {
-            BannerIndicators.Visibility = Visibility.Visible;
-            BannerIndicators.Children.Clear();
-            for (int i = 0; i < _bannerList.Count; i++)
-            {
-                Border dot = new()
-                {
-                    Width = 8,
-                    Height = 8,
-                    CornerRadius = new CornerRadius(4),
-                    Background = new SolidColorBrush(i == 0 ? Colors.White : Color.FromArgb(100, 255, 255, 255)),
-                    Margin = new Thickness(3, 0, 3, 0),
-                };
-                int index = i;
-                dot.PointerPressed += (_, _) => ShowBanner(index);
-                BannerIndicators.Children.Add(dot);
-            }
+            BannerPrevBtn.Visibility = Visibility.Visible;
+            BannerNextBtn.Visibility = Visibility.Visible;
 
             _bannerTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(5) };
             _bannerTimer.Tick += OnBannerTimerTick;
             _bannerTimer.Start();
         }
+    }
+
+    private void BannerPrev_PointerPressed(object sender, PointerRoutedEventArgs e)
+    {
+        e.Handled = true;
+        SwitchBanner(-1);
+    }
+
+    private void BannerNext_PointerPressed(object sender, PointerRoutedEventArgs e)
+    {
+        e.Handled = true;
+        SwitchBanner(1);
+    }
+
+    private void SwitchBanner(int direction)
+    {
+        if (_bannerList.Count < 2)
+        {
+            return;
+        }
+
+        if (_bannerTimer != null)
+        {
+            _bannerTimer.Stop();
+            _bannerTimer.Start();
+        }
+
+        ShowBanner((_currentBannerIndex + direction + _bannerList.Count) % _bannerList.Count);
     }
 
     private void ShowBanner(int index)
@@ -456,14 +513,6 @@ internal sealed partial class LauncherHomePage
             sb.Children.Add(fadeIn);
             sb.Children.Add(fadeOut);
             sb.Begin();
-        }
-
-        for (int i = 0; i < BannerIndicators.Children.Count; i++)
-        {
-            if (BannerIndicators.Children[i] is Border dot)
-            {
-                dot.Background = new SolidColorBrush(i == index ? Colors.White : Color.FromArgb(100, 255, 255, 255));
-            }
         }
     }
 

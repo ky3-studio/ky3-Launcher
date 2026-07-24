@@ -2,6 +2,7 @@
     x:Class="Launcher.UI.Xaml.View.Page.AnnouncementPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:clw="using:CommunityToolkit.Labs.WinUI"
     xmlns:cw="using:CommunityToolkit.WinUI"
     xmlns:cwa="using:CommunityToolkit.WinUI.Animations"
     xmlns:cww="using:CommunityToolkit.WinUI.Controls"
@@ -155,6 +156,33 @@
         <ScrollViewer Padding="0" Style="{StaticResource DefaultScrollViewerStyle}">
             <StackPanel Padding="16" Spacing="16">
 
+                <Border cw:Effects.Shadow="{ThemeResource CompatCardShadow}" Visibility="{Binding WeekDays, Converter={StaticResource EmptyObjectToVisibilityRevertConverter}}">
+                    <Border Padding="12" Style="{ThemeResource AcrylicBorderCardStyle}">
+                        <StackPanel Spacing="6">
+                            <clw:Shimmer Height="48" CornerRadius="{ThemeResource ControlCornerRadius}"/>
+                            <Grid ColumnSpacing="8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <clw:Shimmer
+                                    Grid.Column="0"
+                                    Height="52"
+                                    CornerRadius="{ThemeResource ControlCornerRadius}"/>
+                                <clw:Shimmer
+                                    Grid.Column="1"
+                                    Height="52"
+                                    CornerRadius="{ThemeResource ControlCornerRadius}"/>
+                                <clw:Shimmer
+                                    Grid.Column="2"
+                                    Height="52"
+                                    CornerRadius="{ThemeResource ControlCornerRadius}"/>
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+                </Border>
+
                 <!--  Calendar  -->
                 <Border
                     cw:Effects.Shadow="{ThemeResource CompatCardShadow}"
@@ -289,6 +317,85 @@
                         </Grid>
                     </Border>
                 </Border>
+
+                <StackPanel Spacing="12" Visibility="{Binding Announcement, Converter={StaticResource EmptyObjectToVisibilityRevertConverter}}">
+                    <StackPanel Orientation="Horizontal" Spacing="16">
+                        <clw:Shimmer
+                            Width="72"
+                            Height="16"
+                            CornerRadius="8"/>
+                        <clw:Shimmer
+                            Width="72"
+                            Height="16"
+                            CornerRadius="8"/>
+                        <clw:Shimmer
+                            Width="72"
+                            Height="16"
+                            CornerRadius="8"/>
+                    </StackPanel>
+                    <shuxcp:UniformPanel
+                        ColumnSpacing="12"
+                        MinItemWidth="300"
+                        RowSpacing="12">
+                        <Border Style="{ThemeResource AcrylicBorderCardStyle}">
+                            <StackPanel>
+                                <cww:ConstrainedBox AspectRatio="1080:390">
+                                    <clw:Shimmer CornerRadius="8,8,0,0"/>
+                                </cww:ConstrainedBox>
+                                <StackPanel Margin="8" Spacing="8">
+                                    <clw:Shimmer
+                                        Width="180"
+                                        Height="16"
+                                        HorizontalAlignment="Left"
+                                        CornerRadius="8"/>
+                                    <clw:Shimmer
+                                        Width="120"
+                                        Height="12"
+                                        HorizontalAlignment="Left"
+                                        CornerRadius="6"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{ThemeResource AcrylicBorderCardStyle}">
+                            <StackPanel>
+                                <cww:ConstrainedBox AspectRatio="1080:390">
+                                    <clw:Shimmer CornerRadius="8,8,0,0"/>
+                                </cww:ConstrainedBox>
+                                <StackPanel Margin="8" Spacing="8">
+                                    <clw:Shimmer
+                                        Width="210"
+                                        Height="16"
+                                        HorizontalAlignment="Left"
+                                        CornerRadius="8"/>
+                                    <clw:Shimmer
+                                        Width="140"
+                                        Height="12"
+                                        HorizontalAlignment="Left"
+                                        CornerRadius="6"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{ThemeResource AcrylicBorderCardStyle}">
+                            <StackPanel>
+                                <cww:ConstrainedBox AspectRatio="1080:390">
+                                    <clw:Shimmer CornerRadius="8,8,0,0"/>
+                                </cww:ConstrainedBox>
+                                <StackPanel Margin="8" Spacing="8">
+                                    <clw:Shimmer
+                                        Width="160"
+                                        Height="16"
+                                        HorizontalAlignment="Left"
+                                        CornerRadius="8"/>
+                                    <clw:Shimmer
+                                        Width="110"
+                                        Height="12"
+                                        HorizontalAlignment="Left"
+                                        CornerRadius="6"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                    </shuxcp:UniformPanel>
+                </StackPanel>
 
                 <Pivot
                     x:Name="GameAnnouncementPivot"

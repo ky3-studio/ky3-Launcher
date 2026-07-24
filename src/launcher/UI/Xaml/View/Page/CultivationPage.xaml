@@ -584,5 +584,10 @@
             </PivotItem>
         </Pivot>
     </shuxc:StandardView>
+        <shuxc:Loading
+            Margin="16"
+            CornerRadius="{ThemeResource ControlCornerRadius}"
+            IsLoading="{Binding IsInitialized, Converter={StaticResource BoolNegationConverter}}"
+            Style="{ThemeResource DefaultLoadingViewStyle}"/>
     </Grid>
 </shuxc:ScopedPage>

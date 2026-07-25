@@ -14,5 +14,6 @@ internal enum MiHoYoSyntaxLinkKind
     None,
     Name,
     Skill,
+    Talent,
     Inherent,
 }

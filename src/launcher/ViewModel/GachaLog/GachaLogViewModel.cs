@@ -123,7 +123,9 @@ internal sealed partial class GachaLogViewModel : Abstraction.ViewModel
             return;
         }
 
+#pragma warning disable CA2012
         UpdateStatisticsAsync(Archives?.CurrentItem).SafeForget();
+#pragma warning restore CA2012
     }
 
     [Command("RefreshByWebCacheCommand")]

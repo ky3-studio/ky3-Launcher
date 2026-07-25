@@ -174,7 +174,9 @@ internal sealed partial class LaunchGameViewModel : Abstraction.ViewModel, IView
         }
 
         await HandleGamePathEntryChangeAsync().ConfigureAwait(false);
+#pragma warning disable CA2012
         Shared.ResumeLaunchExecutionAsync(this).SafeForget();
+#pragma warning restore CA2012
 
         AdvancedDbCollectionView<BindingUser, EntityUser> users = await userService.GetUsersAsync().ConfigureAwait(false);
 

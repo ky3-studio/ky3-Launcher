@@ -93,7 +93,9 @@ internal sealed partial class LaunchGameViewModelSlim : Abstraction.ViewModelSli
         }
 
         await CurrentSchemeFilteredGameAccountsView.SetAsync(scheme).ConfigureAwait(true);
+#pragma warning disable CA2012
         Shared.ResumeLaunchExecutionAsync(this).SafeForget();
+#pragma warning restore CA2012
 
         UserGameRole? userGameRole = LaunchOptions.UsingHoyolabAccount.Value
             ? await userService.GetCurrentUserGameRoleAsync().ConfigureAwait(false)

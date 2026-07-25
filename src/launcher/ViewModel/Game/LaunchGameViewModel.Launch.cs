@@ -83,9 +83,11 @@ internal sealed partial class LaunchGameViewModel
             {
                 string serverName = newScheme.DisplayName;
                 string desc = newScheme.Description;
+#pragma warning disable CA1863
                 string message = string.IsNullOrEmpty(desc)
                     ? string.Format(SH.ViewModelServerConvertSuccessText, serverName)
                     : string.Format(SH.ViewModelServerConvertSuccessWithDescText, serverName, desc);
+#pragma warning restore CA1863
                 messenger.Send(InfoBarMessage.Success(message));
             }
         }
@@ -133,7 +135,9 @@ internal sealed partial class LaunchGameViewModel
             if (successCount > 0)
             {
                 string sizeText = LaunchGameCleanResourceDialog.FormatSize(totalCleaned);
+#pragma warning disable CA1863
                 messenger.Send(InfoBarMessage.Success(string.Format(SH.ViewModelCleanResourceSuccessText, successCount, sizeText)));
+#pragma warning restore CA1863
             }
 
             if (errors.Count > 0)

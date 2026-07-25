@@ -227,7 +227,9 @@ internal sealed partial class GamePackageViewModel : Abstraction.ViewModel
 
         await taskContext.SwitchToMainThreadAsync();
 
+#pragma warning disable CA1863
         SchemeText = string.Format(SH.ViewModelGamePackageSchemeText, schemeName);
+#pragma warning restore CA1863
 
         (BranchWrapper remote, BranchWrapper? pre) = LocalSetting.Get(SettingKeys.TreatPredownloadAsMain, false)
             ? (branch.PreDownload ?? branch.Main, default)
@@ -272,7 +274,9 @@ internal sealed partial class GamePackageViewModel : Abstraction.ViewModel
                         }
 
                         double gb = totalBytes / (1024.0 * 1024.0 * 1024.0);
+#pragma warning disable CA1863
                         string sizeText = string.Format(SH.ViewModelGamePackageSizeText, $"{gb:F1}");
+#pragma warning restore CA1863
                         taskContext.InvokeOnMainThread(() => GameSizeText = sizeText);
                     }
                     catch (Exception ex)

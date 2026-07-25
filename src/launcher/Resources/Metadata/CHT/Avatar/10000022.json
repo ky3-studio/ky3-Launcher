@@ -320,11 +320,37 @@
               ]
             }
           ],
+          "DescriptionList": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "SpecialDescriptionList": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
           "Display": 0
         },
         "Id": 10221,
         "Name": "神代射術",
         "Description": "<color=#FFD780FF>普通攻擊</color>\n進行至多六段的連續弓箭射擊。\n\n<color=#FFD780FF>重擊</color>\n進行傷害更高、更為精準的<color=#FFD780FF>瞄準射擊</color>。\n瞄準時，眷顧天地的風會在箭矢上持續匯聚。聚滿了風之力的箭矢會造成<color=#80FFD7FF>風元素傷害</color>。\n\n<color=#FFD780FF>下落攻擊</color>\n從空中射出箭雨，並迅速下墜衝擊地面，在落地時造成範圍傷害。",
+        "SpecialDescription": "<color=#FFD780FF>普通攻擊</color>\n進行至多六段的連續弓箭射擊。\n\n<color=#FFD780FF>重擊</color>\n進行傷害更高、更為精準的<color=#FFD780FF>瞄準射擊</color>。\n瞄準時，眷顧天地的風會在箭矢上持續積聚。聚滿了風之力的箭矢會造成<color=#80FFD7FF>風元素傷害</color>。\n\n<color=#FFD780FF>下落攻擊</color>\n從空中射出箭雨，並迅速下墜衝擊地面，在落地時造成範圍傷害。\n\n<color=#FFD780FF>魔導·秘儀</color>\n元素爆發<color=#FFD780FF>風神之詩</color>創造的暴風之眼存在期間，溫迪將獲得額外的強化效果：\n·溫迪的普通攻擊將轉為發射能穿透敵人的<color=#FFD780FF>颶風箭</color>，對路徑上的敵人造成更高的<color=#80FFD7FF>風元素傷害</color>。\n·溫迪的普通攻擊命中敵人時，將使暴風之眼的持續時間延長1秒，冷卻時間延長0.5秒。該效果每0.1秒至多觸發一次，每次施放元素爆發<color=#FFD780FF>風神之詩</color>後至多觸發2次。",
         "Icon": "Skill_A_02"
       },
       {
@@ -770,12 +796,14 @@
         "Id": 221,
         "Name": "弦發的蒼風",
         "Description": "<color=#FFD780FF>瞄準射擊</color>會額外發射兩枚分裂箭，分別造成原本33%的傷害。",
+        "SpecialDescription": "<color=#FFD780FF>瞄準射擊</color>會額外發射兩枚分裂箭，分別造成原本33%的傷害。\n此外，<color=#FFD780FF>颶風箭</color>也會額外發射兩枚能追蹤敵人的箭矢，分別造成原本20%的傷害，該效果每0.25秒至多觸發一次。",
         "Icon": "UI_Talent_S_Venti_01"
       },
       {
         "Id": 222,
         "Name": "眷戀的泠風",
         "Description": "<color=#FFD780FF>高天之歌</color>會使敵人的<color=#80FFD7FF>風元素抗性</color>與物理抗性降低12%，持續10秒。\n被<color=#FFD780FF>高天之歌</color>擊飛的敵人在落地前，<color=#80FFD7FF>風元素抗性</color>與物理抗性額外降低12%。",
+        "SpecialDescription": "<color=#FFD780FF>高天之歌</color>會使敵人的<color=#80FFD7FF>風元素抗性</color>與物理抗性降低24%，持續10秒。\n此外，施放元素爆發<color=#FFD780FF>風神之詩</color>後，溫迪將獲得<color=#FFD780FF>風起之時</color>效果，並重置元素戰技<color=#FFD780FF>高天之歌</color>的冷卻時間。<color=#FFD780FF>颶風箭</color>命中敵人後，也會有25%機率使溫迪獲得<color=#FFD780FF>風起之時</color>效果。\n\n<color=#FFD780FF>風起之時</color>\n點按施放元素戰技<color=#FFD780FF>高天之歌</color>時，將造成原本300%的傷害。該效果持續15秒，並將在溫迪點按施放元素戰技<color=#FFD780FF>高天之歌</color>後移除。",
         "Icon": "UI_Talent_S_Venti_02"
       },
       {
@@ -792,6 +820,7 @@
         "Id": 224,
         "Name": "自由的凜風",
         "Description": "溫迪獲得元素晶球或元素微粒後，獲得25%<color=#80FFD7FF>風元素傷害加成</color>，持續10秒。",
+        "SpecialDescription": "溫迪施放元素戰技<color=#FFD780FF>高天之歌</color>或元素爆發<color=#FFD780FF>風神之詩</color>後，溫迪與隊伍中自己的目前場上其他角色獲得25%<color=#80FFD7FF>風元素傷害加成</color>，持續10秒。",
         "Icon": "UI_Talent_S_Venti_03"
       },
       {
@@ -808,6 +837,7 @@
         "Id": 226,
         "Name": "抗爭的暴風",
         "Description": "受<color=#FFD780FF>風神之詩</color>傷害的敵人，<color=#80FFD7FF>風元素抗性</color>降低20%；\n若產生了元素轉化，則使轉換的元素抗性也降低20%。",
+        "SpecialDescription": "受<color=#FFD780FF>風神之詩</color>傷害的敵人，<color=#80FFD7FF>風元素抗性</color>降低20%。\n若產生了元素轉化，則使轉換的元素抗性也降低20%。\n此外，溫迪對這些敵人造成的傷害，還會獲得100%暴擊傷害加成。",
         "Icon": "UI_Talent_S_Venti_04"
       }
     ]

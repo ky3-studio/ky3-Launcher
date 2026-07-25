@@ -39,7 +39,12 @@ internal sealed partial class LaunchSchemeFilteredGameAccountsView : ObservableO
     public LaunchScheme? Scheme
     {
         get => scheme;
-        set => SetAsync(value, false).SafeForget();
+        set
+        {
+#pragma warning disable CA2012
+            SetAsync(value, false).SafeForget();
+#pragma warning restore CA2012
+        }
     }
 
     [ObservableProperty]

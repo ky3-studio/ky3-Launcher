@@ -174,7 +174,9 @@ internal sealed partial class InventoryViewModel : Abstraction.ViewModel
             TotalWeaponCount = weapons.Count;
             WeaponTypeCount = weapons.Select(w => w.Id).Distinct().Count();
             HasWeapons = true;
+#pragma warning disable CA1863
             StatusText = string.Format(SH.ViewInventoryStatusDone, TotalWeaponCount, WeaponTypeCount);
+#pragma warning restore CA1863
         }
         catch (Exception ex)
         {

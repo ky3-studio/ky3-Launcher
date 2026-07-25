@@ -14,8 +14,6 @@ using Launcher.UI.Xaml.View.Window;
 using Launcher.Win32;
 using System.Data.Common;
 using System.Diagnostics;
-using System.IO;
-using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -155,11 +153,17 @@ internal sealed partial class ExceptionHandling
 
     private void OnXamlBindingFailed(object? sender, BindingFailedEventArgs e)
     {
-        logger.LogCritical("XAML Binding Failed:{Message}", e.Message);
+        LogXamlBindingFailed(e.Message);
     }
 
     private void OnXamlResourceReferenceFailed(DebugSettings sender, XamlResourceReferenceFailedEventArgs e)
     {
-        logger.LogCritical("XAML Resource Reference Failed:{Message}", e.Message);
+        LogXamlResourceReferenceFailed(e.Message);
     }
+
+    [LoggerMessage(Level = LogLevel.Critical, Message = "XAML Binding Failed:{Message}")]
+    private partial void LogXamlBindingFailed(string message);
+
+    [LoggerMessage(Level = LogLevel.Critical, Message = "XAML Resource Reference Failed:{Message}")]
+    private partial void LogXamlResourceReferenceFailed(string message);
 }

@@ -77,9 +77,9 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
         ShowUpdateLogWindowAfterUpdate();
         NotifyIfDataFolderHasReparsePoint();
 
-        _ = RedeemCodeService.RefreshAsync();
-        _ = CheckAndPrepareUpdateAsync();
-        _ = StartPeriodicUpdateCheckAsync();
+        RedeemCodeService.RefreshAsync().SafeForget();
+        CheckAndPrepareUpdateAsync().SafeForget();
+        StartPeriodicUpdateCheckAsync().SafeForget();
 
         return true;
     }

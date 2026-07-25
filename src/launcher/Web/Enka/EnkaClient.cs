@@ -15,6 +15,7 @@ using Launcher.Web.Hoyolab;
 using Launcher.Web.Request.Builder;
 using Launcher.Web.Request.Builder.Abstraction;
 using System.Globalization;
+using System.Text;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Json;
@@ -26,6 +27,9 @@ internal sealed partial class EnkaClient
 {
     private const string EnkaAPI = "https://enka.network/api/uid/{0}";
     private const string EnkaInfoAPI = "https://enka.network/api/uid/{0}?info";
+
+    private static readonly CompositeFormat EnkaAPIFormat = CompositeFormat.Parse(EnkaAPI);
+    private static readonly CompositeFormat EnkaInfoAPIFormat = CompositeFormat.Parse(EnkaInfoAPI);
 
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     private readonly ILauncherEndpointsFactory LauncherEndpointsFactory;
@@ -43,7 +47,7 @@ internal sealed partial class EnkaClient
 
     public ValueTask<EnkaResponse?> GetPlayerInfoAsync(in PlayerUid playerUid, CancellationToken token = default)
     {
-        return TryGetEnkaResponseAsync(string.Format(CultureInfo.CurrentCulture, EnkaInfoAPI, playerUid), false, token);
+        return TryGetEnkaResponseAsync(string.Format(CultureInfo.CurrentCulture, EnkaInfoAPIFormat, playerUid), false, token);
     }
 
     public ValueTask<EnkaResponse?> GetForwardDataAsync(in PlayerUid playerUid, CancellationToken token = default)
@@ -54,7 +58,7 @@ internal sealed partial class EnkaClient
 
     public ValueTask<EnkaResponse?> GetDataAsync(in PlayerUid playerUid, CancellationToken token = default)
     {
-        return TryGetEnkaResponseAsync(string.Format(CultureInfo.CurrentCulture, EnkaAPI, playerUid), false, token);
+        return TryGetEnkaResponseAsync(string.Format(CultureInfo.CurrentCulture, EnkaAPIFormat, playerUid), false, token);
     }
 
     private async ValueTask<EnkaResponse?> TryGetEnkaResponseAsync(string url, bool isForward, CancellationToken token = default)

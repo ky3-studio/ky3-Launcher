@@ -411,7 +411,7 @@ internal class MiHoYoJSBridge
             .Append(')')
             .ToString();
 
-        logger.LogInformation("[{Id}][ExecuteScript: {callback}]\n{payload}", bridgeId, callback, payload);
+        logger.LogInformation("[{Id}][ExecuteScript: {Callback}]\n{Payload}", bridgeId, callback, payload);
 
         await taskContext.SwitchToMainThreadAsync();
 
@@ -441,11 +441,11 @@ internal class MiHoYoJSBridge
     private async void OnWebMessageReceived(CoreWebView2 webView2, CoreWebView2WebMessageReceivedEventArgs args)
     {
         string message = args.TryGetWebMessageAsString();
-        logger.LogInformation("[{Id}][OnRawMessage]\n{message}", bridgeId, message);
+        logger.LogInformation("[{Id}][OnRawMessage]\n{Message}", bridgeId, message);
         JsParam? param = JsonSerializer.Deserialize<JsParam>(message, serviceProvider.GetRequiredService<JsonSerializerOptions>());
 
         ArgumentNullException.ThrowIfNull(param);
-        logger.LogInformation("[OnMessage]\nMethod  : {method}\nPayload : {payload}\nCallback: {callback}", param.Method, param.Payload, param.Callback);
+        logger.LogInformation("[OnMessage]\nMethod  : {Method}\nPayload : {Payload}\nCallback: {Callback}", param.Method, param.Payload, param.Callback);
 
         try
         {

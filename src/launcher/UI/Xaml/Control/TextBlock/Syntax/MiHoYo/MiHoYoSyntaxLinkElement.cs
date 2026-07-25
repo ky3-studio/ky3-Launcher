@@ -29,6 +29,7 @@ internal sealed class MiHoYoSyntaxLinkElement : MiHoYoSyntaxElement
             'P' => MiHoYoSyntaxLinkKind.Inherent,
             'N' => MiHoYoSyntaxLinkKind.Name,
             'S' => MiHoYoSyntaxLinkKind.Skill,
+            'T' => MiHoYoSyntaxLinkKind.Talent,
             _ => throw LauncherException.Throw($"Unexpected link kind :{source[IdPosition.Start]}"),
         };
     }

@@ -150,6 +150,7 @@ internal sealed partial class WikiAvatarViewModel : Abstraction.ViewModel
             IdNameMap = metadataContext.IdHyperLinkNameMap,
             Inherents = avatar.SkillDepot.Inherents,
             Skills = avatar.SkillDepot.CompositeSkillsNoInherents,
+            Talents = avatar.SkillDepot.Talents,
         };
     }
 

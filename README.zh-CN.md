@@ -175,15 +175,6 @@ ky3-Launcher/
 
 ---
 
-## 相关仓库
-
-| 仓库 | 说明 |
-|------|------|
-| <img src="https://img.shields.io/badge/-plugin--module-181717?style=flat&logo=github&logoColor=white" alt=""/> [ky3-launcher-plugin-module](https://github.com/ky3-git/ky3-launcher-plugin-module) | DLL 插件模块，提供插件 SDK 与接口定义 |
-| <img src="https://img.shields.io/badge/-metadata-181717?style=flat&logo=github&logoColor=white" alt=""/> [ky3-metadata](https://github.com/ky3-git/ky3-metadata) | 游戏元数据 JSON 集合（角色 / 武器 / 材料 / 任务） |
-| <img src="https://img.shields.io/badge/-Yae-181717?style=flat&logo=github&logoColor=white" alt=""/> [Yae](https://github.com/HolographicHat/Yae) | 原神成就解锁工具，本地读取成就状态 |
-
----
 
 ## 贡献
 

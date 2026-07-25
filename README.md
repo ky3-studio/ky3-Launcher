@@ -175,16 +175,6 @@ ky3-Launcher/
 
 ---
 
-## Related Repositories
-
-| Repository | Description |
-|------|------|
-| <img src="https://img.shields.io/badge/-plugin--module-181717?style=flat&logo=github&logoColor=white" alt=""/> [ky3-launcher-plugin-module](https://github.com/ky3-git/ky3-launcher-plugin-module) | DLL plugin module providing the plugin SDK and interface definitions |
-| <img src="https://img.shields.io/badge/-metadata-181717?style=flat&logo=github&logoColor=white" alt=""/> [ky3-metadata](https://github.com/ky3-git/ky3-metadata) | Game metadata JSON collection (characters / weapons / materials / quests) |
-| <img src="https://img.shields.io/badge/-Yae-181717?style=flat&logo=github&logoColor=white" alt=""/> [Yae](https://github.com/HolographicHat/Yae) | Genshin achievement unlock tool, reads achievement state locally |
-
----
-
 ## Contributing
 
 Issues and Pull Requests are welcome to help improve the project.

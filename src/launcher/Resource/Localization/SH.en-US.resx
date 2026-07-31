@@ -117,15 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AppDevNameAndVersion" xml:space="preserve">
-    <value>ky3 Launcher Dev {0}</value>
-  </data>
-  <data name="AppElevatedDevNameAndVersion" xml:space="preserve">
-    <value>ky3 Launcher Dev {0} [admin]</value>
-  </data>
-  <data name="AppElevatedNameAndVersion" xml:space="preserve">
-    <value>ky3 Launcher {0} [admin]</value>
-  </data>
   <data name="AppName" xml:space="preserve">
     <value>ky3 Launcher</value>
   </data>
@@ -218,15 +209,6 @@
   </data>
   <data name="ModelBindingAvatarPropertyWeaponAffix" xml:space="preserve">
     <value>Refinement {0}</value>
-  </data>
-  <data name="ModelBindingCultivationDaysOfWeek14" xml:space="preserve">
-    <value>Monday/Thursday/Sunday</value>
-  </data>
-  <data name="ModelBindingCultivationDaysOfWeek25" xml:space="preserve">
-    <value>Tuesday/Friday/Sunday</value>
-  </data>
-  <data name="ModelBindingCultivationDaysOfWeek36" xml:space="preserve">
-    <value>Wednesday/Saturday/Sunday</value>
   </data>
   <data name="ModelBindingGachaTypedWishSummaryAveragePull" xml:space="preserve">
     <value>{0:f2} Pulls</value>
@@ -866,12 +848,6 @@
   <data name="ServiceBackgroundActivityDefaultDescription" xml:space="preserve">
     <value>In preparation...</value>
   </data>
-  <data name="ServiceBackgroundActivityFullTrustInitialization" xml:space="preserve">
-    <value>Plug-in component initialization</value>
-  </data>
-  <data name="ServiceBackgroundActivityFullTrustInitializationDescription" xml:space="preserve">
-    <value>Only execute when necessary</value>
-  </data>
   <data name="ServiceBackgroundActivityMetadataInitialization" xml:space="preserve">
     <value>game metadata</value>
   </data>
@@ -962,9 +938,6 @@
   <data name="ServiceGachaLogFactoryWeaponWishName" xml:space="preserve">
     <value>Epitome Invocation</value>
   </data>
-  <data name="ServiceGachaLogLauncherCloudEndIdFetchFailed" xml:space="preserve">
-    <value>Failed to obtain cloud wish records</value>
-  </data>
   <data name="ServiceGachaLogUrlProviderAuthkeyRequestFailed" xml:space="preserve">
     <value>Request for verification key failed</value>
   </data>
@@ -1029,12 +1002,6 @@
   <data name="ServiceGameEnsureGameResourceQueryResourceInformation" xml:space="preserve">
     <value>Download game resource index</value>
   </data>
-  <data name="ServiceGameIslandFileSystemGetGameVersionFailed" xml:space="preserve">
-    <value>Failed to obtain local game version, unable to obtain plug-in configuration information</value>
-  </data>
-  <data name="ServiceGameIslandTargetVersionFileNotExists" xml:space="preserve">
-    <value>The current game version is not yet supported</value>
-  </data>
   <data name="ServiceGameLaunchExecutionCurrentSchemeNull" xml:space="preserve">
     <value>The local game configuration file is damaged, please repair it and try again.</value>
   </data>
@@ -1061,15 +1028,6 @@
   </data>
   <data name="ServiceGameLaunchingHandlerEmbeddedYaeClientNotElevated" xml:space="preserve">
     <value>Before using Embedded Yae, you need to run it with administrator rights</value>
-  </data>
-  <data name="ServiceGameLaunchingHandlerEmbeddedYaeErrorSystemIntegrityPolicyViolation" xml:space="preserve">
-    <value>The plug-in failed to load, possibly because the Windows Defender App and Browser Control &gt; Smart App Control policy blocked the operation, please try closing it.</value>
-  </data>
-  <data name="ServiceGameLaunchingHandlerEmbeddedYaeIslandNotEnabled" xml:space="preserve">
-    <value>Before using Embedded Yae, you need to understand the relevant risks and enable the plug-in function on the "Start Game" page</value>
-  </data>
-  <data name="ServiceGameLaunchingHandlerGameProcessStartRepositorySyncFailed" xml:space="preserve">
-    <value>An error occurred while retrieving the necessary components to launch the game</value>
   </data>
   <data name="ServiceGameLocatorFileOpenPickerCommitText" xml:space="preserve">
     <value>Choose the game base</value>
@@ -1112,9 +1070,6 @@ Available space: {2}</value>
   <data name="ServiceGamePackageAdvancedDriverNoAvailableFreeSpace" xml:space="preserve">
     <value>Not enough disk space</value>
   </data>
-  <data name="ServiceGamePackageAdvancedInstalling" xml:space="preserve">
-    <value>Installing game</value>
-  </data>
   <data name="ServiceGamePackageAdvancedPredownloading" xml:space="preserve">
     <value>Pre-downloading resources</value>
   </data>
@@ -1153,12 +1108,6 @@ Available space: {2}</value>
   </data>
   <data name="ServiceGitRepositoryOperationFailed" xml:space="preserve">
     <value>Operation failed</value>
-  </data>
-  <data name="ServiceLauncherUserGachaLogExpiredAt" xml:space="preserve">
-    <value>The wish record upload service is valid until</value>
-  </data>
-  <data name="ServiceInventoryRefreshByEmbeddedYaeErrorMessage" xml:space="preserve">
-    <value>Please use another method to sync backpack items</value>
   </data>
   <data name="ServiceMetadataDownloadSourceFilesFailed" xml:space="preserve">
     <value>One or more metadata files failed to download: {0}</value>
@@ -1201,9 +1150,6 @@ Available space: {2}</value>
   </data>
   <data name="ServiceSignInSuccessReward" xml:space="preserve">
     <value>Sign in successfully, {0}×{1}</value>
-  </data>
-  <data name="ServiceUIGFImportInvalidItem" xml:space="preserve">
-    <value>Unsupported item, Id: {0}</value>
   </data>
   <data name="ServiceUserProcessCookieNoMid" xml:space="preserve">
     <value>Input cookie must contain Mid</value>
@@ -1289,20 +1235,8 @@ Available space: {2}</value>
   <data name="ViewAvatarPropertyHeader" xml:space="preserve">
     <value>my role</value>
   </data>
-  <data name="ViewAvatarPropertySyncDataButtonLabel" xml:space="preserve">
-    <value>Synchronize role information</value>
-  </data>
   <data name="ViewCardAchievementStatisticsTitle" xml:space="preserve">
     <value>achievement statistics</value>
-  </data>
-  <data name="ViewCardCalendarAllMaterialsHint" xml:space="preserve">
-    <value>All material copies can be challenged</value>
-  </data>
-  <data name="ViewCardCalendarNoBirthdayAvatarHint" xml:space="preserve">
-    <value>No character has a birthday today</value>
-  </data>
-  <data name="ViewCardGachaStatisticsTitle" xml:space="preserve">
-    <value>Guaranteed count</value>
   </data>
   <data name="ViewCardLaunchGameSelectAccountPlaceholder" xml:space="preserve">
     <value>Select an account or start directly</value>
@@ -1337,17 +1271,11 @@ Available space: {2}</value>
   <data name="ViewControlStatisticsCardOrangeText" xml:space="preserve">
     <value>five stars</value>
   </data>
-  <data name="ViewControlStatisticsCardPullText" xml:space="preserve">
-    <value>smoke</value>
-  </data>
   <data name="ViewControlStatisticsCardPurpleText" xml:space="preserve">
     <value>four stars</value>
   </data>
   <data name="ViewControlStatisticsCardToLastOrangeText" xml:space="preserve">
     <value>Five stars from the previous one</value>
-  </data>
-  <data name="ViewControlStatisticsCardToLastPurpleText" xml:space="preserve">
-    <value>Four stars from the previous one</value>
   </data>
   <data name="ViewControlStatisticsCardUpAveragePullText" xml:space="preserve">
     <value>UP average draw number</value>
@@ -1357,15 +1285,6 @@ Available space: {2}</value>
   </data>
   <data name="ViewControlStatisticsCardNotUpText" xml:space="preserve">
     <value>crooked</value>
-  </data>
-  <data name="ViewControlStatisticsSegmentedItemContentPrediction" xml:space="preserve">
-    <value>predict</value>
-  </data>
-  <data name="ViewControlStatisticsSegmentedItemContentProportion" xml:space="preserve">
-    <value>Proportion</value>
-  </data>
-  <data name="ViewControlStatisticsSegmentedItemContentStatistics" xml:space="preserve">
-    <value>statistics</value>
   </data>
   <data name="ViewControlWebViewerCoreWebView2ProfileQueryInterfaceFailed" xml:space="preserve">
     <value>The current version of WebView2 does not support management configuration. Continued use may cause exceptions. Please upgrade as soon as possible.</value>
@@ -1409,68 +1328,14 @@ Available space: {2}</value>
   <data name="ViewDialogCultivateWeaponLevelTitle" xml:space="preserve">
     <value>Set weapon level</value>
   </data>
-  <data name="ViewDialogCultivateBatchAvatarLevelTarget" xml:space="preserve">
-    <value>Character target level</value>
-  </data>
-  <data name="ViewDialogCultivateBatchSkillATarget" xml:space="preserve">
-    <value>Normal attack target level</value>
-  </data>
-  <data name="ViewDialogCultivateBatchSkillETarget" xml:space="preserve">
-    <value>Elemental combat skill target level</value>
-  </data>
-  <data name="ViewDialogCultivateBatchSkillQTarget" xml:space="preserve">
-    <value>Elemental Burst Target Level</value>
-  </data>
-  <data name="ViewDialogCultivateBatchWeaponLevelTarget" xml:space="preserve">
-    <value>Weapon target level</value>
-  </data>
   <data name="ViewDialogCultivateProjectInputPlaceholder" xml:space="preserve">
     <value>Enter plan name here</value>
   </data>
   <data name="ViewDialogCultivateLevelTitle" xml:space="preserve">
     <value>Add or update to current development plan</value>
   </data>
-  <data name="ViewDialogCultivateLevelAvatarLevel" xml:space="preserve">
-    <value>character level</value>
-  </data>
-  <data name="ViewDialogCultivateLevelFrom" xml:space="preserve">
-    <value>current</value>
-  </data>
-  <data name="ViewDialogCultivateLevelTo" xml:space="preserve">
-    <value>Target</value>
-  </data>
-  <data name="ViewDialogCultivateLevelSkillA" xml:space="preserve">
-    <value>Normal attack</value>
-  </data>
-  <data name="ViewDialogCultivateLevelSkillE" xml:space="preserve">
-    <value>Elemental combat skills</value>
-  </data>
-  <data name="ViewDialogCultivateLevelSkillQ" xml:space="preserve">
-    <value>Elemental burst</value>
-  </data>
   <data name="ViewDialogCultivateProjectTitle" xml:space="preserve">
     <value>Create a new development plan</value>
-  </data>
-  <data name="ViewDialogCultivatePromotionDeltaBatchTitle" xml:space="preserve">
-    <value>Add or update in batches to the current development plan</value>
-  </data>
-  <data name="ViewDialogCultivatePromotionDeltaPromoted" xml:space="preserve">
-    <value>Has broken through</value>
-  </data>
-  <data name="ViewDialogCultivatePromotionDeltaTitle" xml:space="preserve">
-    <value>Add or update to current development plan</value>
-  </data>
-  <data name="ViewDialogCultivationConsumptionSaveStrategyCreateNewEntry" xml:space="preserve">
-    <value>Always create new development target items</value>
-  </data>
-  <data name="ViewDialogCultivationConsumptionSaveStrategyHeader" xml:space="preserve">
-    <value>Save method</value>
-  </data>
-  <data name="ViewDialogCultivationConsumptionSaveStrategyOverwriteExisting" xml:space="preserve">
-    <value>Overwrite existing development target items</value>
-  </data>
-  <data name="ViewDialogCultivationConsumptionSaveStrategyPreserveExisting" xml:space="preserve">
-    <value>Keep existing development target items</value>
   </data>
   <data name="ViewDialogDailyNoteNotificationDailyTaskNotify" xml:space="preserve">
     <value>Daily Commission completion reminder</value>
@@ -1610,15 +1475,6 @@ Available space: {2}</value>
   <data name="ViewDialogImportUIAFExportUIAFVersion" xml:space="preserve">
     <value>UIAF version</value>
   </data>
-  <data name="ViewDialogImportUIGFExportUIGFVersion" xml:space="preserve">
-    <value>UIGF version</value>
-  </data>
-  <data name="ViewDialogImportUIGFSubtitle" xml:space="preserve">
-    <value>Select the UID of the records to import</value>
-  </data>
-  <data name="ViewDialogImportUIGFTitle" xml:space="preserve">
-    <value>Import UIGF files</value>
-  </data>
   <data name="ViewDialogLaunchGameAccountInputPlaceholder" xml:space="preserve">
     <value>enter name here</value>
   </data>
@@ -1633,9 +1489,6 @@ Available space: {2}</value>
   </data>
   <data name="ViewDialogLaunchGameInstallGameDirectoryCreationFailed" xml:space="preserve">
     <value>The selected installation path does not exist and cannot be created</value>
-  </data>
-  <data name="ViewDialogLaunchGameInstallGameDirectoryExistsFileSystemEntry" xml:space="preserve">
-    <value>A file or folder exists in the selected installation path</value>
   </data>
   <data name="ViewDialogLaunchGameInstallGameDirectoryInvalid" xml:space="preserve">
     <value>The selected installation path is invalid</value>
@@ -1706,15 +1559,6 @@ Available space: {2}</value>
   <data name="ViewDialogUserAccountVerificationTitle" xml:space="preserve">
     <value>Please enter the email verification code</value>
   </data>
-  <data name="ViewDialogUserDocumentAction" xml:space="preserve">
-    <value>Go now</value>
-  </data>
-  <data name="ViewDialogUserDocumentDescription" xml:space="preserve">
-    <value>Go to the documentation page and follow the instructions</value>
-  </data>
-  <data name="ViewDialogUserDocumentHeader" xml:space="preserve">
-    <value>Operational documentation</value>
-  </data>
   <data name="ViewDialogUserInputPlaceholder" xml:space="preserve">
     <value>Enter cookie containing SToken here</value>
   </data>
@@ -1741,9 +1585,6 @@ Available space: {2}</value>
   </data>
   <data name="ViewExceptionWindowStacktraceHeader" xml:space="preserve">
     <value>call stack</value>
-  </data>
-  <data name="ViewFeedbackHeader" xml:space="preserve">
-    <value>Feedback Center</value>
   </data>
   <data name="ViewGachaLogHeader" xml:space="preserve">
     <value>Wish History</value>
@@ -1792,9 +1633,6 @@ Available space: {2}</value>
   </data>
   <data name="ViewHardChallengeHeader" xml:space="preserve">
     <value>Danger in the Underworld</value>
-  </data>
-  <data name="ViewLauncherPassportHeader" xml:space="preserve">
-    <value>pass</value>
   </data>
   <data name="ViewInfoBarPanelClearAllContent" xml:space="preserve">
     <value>Clear all notifications</value>
@@ -1853,32 +1691,11 @@ Available space: {2}</value>
   <data name="ViewModelAchievementUIAFExportPickerTitle" xml:space="preserve">
     <value>Export UIAF JSON file to the specified path</value>
   </data>
-  <data name="ViewModelAvatarPropertyBatchCultivateNoSelectedAvatar" xml:space="preserve">
-    <value>No role selected</value>
-  </data>
-  <data name="ViewModelAvatarPropertyBatchCultivateProgressTitle" xml:space="preserve">
-    <value>Retrieving training materials, please wait...</value>
-  </data>
-  <data name="ViewModelAvatarPropertyCalculateWeaponNull" xml:space="preserve">
-    <value>The current role cannot be calculated, please synchronize the information and try again</value>
-  </data>
-  <data name="ViewModelAvatarPropertyFetch" xml:space="preserve">
-    <value>Getting data</value>
-  </data>
   <data name="ViewModelAvatarPropertySortDescriptionKindActivatedConstellationCount" xml:space="preserve">
     <value>Order of unlocking levels of the Seat of Fate</value>
   </data>
-  <data name="ViewModelAvatarPropertySortDescriptionKindCurAttack" xml:space="preserve">
-    <value>Attack power order</value>
-  </data>
-  <data name="ViewModelAvatarPropertySortDescriptionKindCurDefense" xml:space="preserve">
-    <value>Defense order</value>
-  </data>
   <data name="ViewModelAvatarPropertySortDescriptionKindDefault" xml:space="preserve">
     <value>Default order</value>
-  </data>
-  <data name="ViewModelAvatarPropertySortDescriptionKindElementMastery" xml:space="preserve">
-    <value>Elemental Mastery Order</value>
   </data>
   <data name="ViewModelAvatarPropertySortDescriptionKindFetterLevel" xml:space="preserve">
     <value>Favorability order</value>
@@ -1886,74 +1703,23 @@ Available space: {2}</value>
   <data name="ViewModelAvatarPropertySortDescriptionKindLevelNumber" xml:space="preserve">
     <value>hierarchical order</value>
   </data>
-  <data name="ViewModelAvatarPropertySortDescriptionKindMaxHp" xml:space="preserve">
-    <value>HP order</value>
-  </data>
   <data name="ViewModelAvatarPropertySortDescriptionKindQuality" xml:space="preserve">
     <value>Quality order</value>
   </data>
   <data name="ViewModelAvatarPropertyTotalAvatarCountHint" xml:space="preserve">
     <value>{0} characters in total</value>
   </data>
-  <data name="ViewModelAvatatPropertyExportTextError" xml:space="preserve">
-    <value>Failed to copy character details</value>
-  </data>
-  <data name="ViewModelAvatatPropertyExportTextSuccess" xml:space="preserve">
-    <value>Copying role details successfully</value>
-  </data>
   <data name="ViewModelComplexReliquarySetViewEmptyName" xml:space="preserve">
     <value>No holy relics or fragments</value>
-  </data>
-  <data name="ViewModelCultivationAddWarning" xml:space="preserve">
-    <value>Failed to add development plan</value>
   </data>
   <data name="ViewModelCultivationBatchAddCompleted" xml:space="preserve">
     <value>Operation completed: Added/Updated: {0}, skipped {1}</value>
   </data>
-  <data name="ViewModelCultivationBatchAddIncompleted" xml:space="preserve">
-    <value>Not all operations completed: Add/Update: {0}, skipping {1}</value>
-  </data>
   <data name="ViewModelCultivationClearInventoryContent" xml:space="preserve">
     <value>This operation is irreversible, and the backpack items planned for this plan will be lost.</value>
   </data>
-  <data name="ViewModelCultivationClearInventoryProgress" xml:space="preserve">
-    <value>Empty backpack items</value>
-  </data>
   <data name="ViewModelCultivationClearInventoryTitle" xml:space="preserve">
     <value>Are you sure you want to clear all backpack items under the current plan?</value>
-  </data>
-  <data name="ViewModelCultivationConsumptionSaveNoItemHint" xml:space="preserve">
-    <value>The selected level does not require development materials</value>
-  </data>
-  <data name="ViewModelCultivationConsumptionSaveSkippedHint" xml:space="preserve">
-    <value>A development project for this item already exists</value>
-  </data>
-  <data name="ViewModelCultivationEntryAddNoConsumptionWarning" xml:space="preserve">
-    <value>No materials consumed</value>
-  </data>
-  <data name="ViewModelCultivationEntryAddSuccess" xml:space="preserve">
-    <value>Successfully added to the current development plan</value>
-  </data>
-  <data name="ViewModelCultivationEntryAddWarning" xml:space="preserve">
-    <value>Please first go to the development plan page to create a plan and select it</value>
-  </data>
-  <data name="ViewModelCultivationEntryViewDescriptionDefault" xml:space="preserve">
-    <value>Re-add the item to see the development description</value>
-  </data>
-  <data name="ViewModelCultivationEntryViewPromoteOnlyHint" xml:space="preserve">
-    <value>Breakthrough only</value>
-  </data>
-  <data name="ViewModelCultivationProjectAdded" xml:space="preserve">
-    <value>Added successfully</value>
-  </data>
-  <data name="ViewModelCultivationProjectAlreadyExists" xml:space="preserve">
-    <value>Cannot add plan with duplicate name</value>
-  </data>
-  <data name="ViewModelCultivationProjectInvalidName" xml:space="preserve">
-    <value>Cannot add plan with invalid name</value>
-  </data>
-  <data name="ViewModelCultivationRefreshInventoryProgress" xml:space="preserve">
-    <value>Synchronizing backpack items</value>
   </data>
   <data name="ViewModelCultivationRemoveProjectContent" xml:space="preserve">
     <value>This operation is irreversible, and the development items and backpack materials of this plan will be lost.</value>
@@ -1961,26 +1727,8 @@ Available space: {2}</value>
   <data name="ViewModelCultivationRemoveProjectTitle" xml:space="preserve">
     <value>Are you sure you want to delete the current plan?</value>
   </data>
-  <data name="ViewModelCultivationResinStatisticsBlossomOfRevelationTitle" xml:space="preserve">
-    <value>flower of revelation</value>
-  </data>
-  <data name="ViewModelCultivationResinStatisticsBlossomOfWealthTitle" xml:space="preserve">
-    <value>Hidden gold flower</value>
-  </data>
   <data name="ViewModelCultivationResinStatisticsItemRemainDays" xml:space="preserve">
     <value>{0} days left</value>
-  </data>
-  <data name="ViewModelCultivationResinStatisticsNormalBossTitle" xml:space="preserve">
-    <value>World BOSS</value>
-  </data>
-  <data name="ViewModelCultivationResinStatisticsTalentAscensionTitle" xml:space="preserve">
-    <value>Character talent material</value>
-  </data>
-  <data name="ViewModelCultivationResinStatisticsWeaponAscensionTitle" xml:space="preserve">
-    <value>Weapon breakthrough material</value>
-  </data>
-  <data name="ViewModelCultivationResinStatisticsWeeklyBossTitle" xml:space="preserve">
-    <value>Weekly BOSS</value>
   </data>
   <data name="ViewModelDailyNoteConfigWebhookUrlComplete" xml:space="preserve">
     <value>Live Notes Webhook URL configured successfully</value>
@@ -2063,23 +1811,11 @@ Available space: {2}</value>
   <data name="ViewModelGachaLogRemoveArchiveTitle" xml:space="preserve">
     <value>Are you sure you want to delete archive {0}?</value>
   </data>
-  <data name="ViewModelGachaLogRetrieveFromLauncherCloudProgress" xml:space="preserve">
-    <value>Synchronize wish records from cloud service</value>
-  </data>
-  <data name="ViewModelGachaLogUIGFExportPickerTitle" xml:space="preserve">
-    <value>Export UIGF JSON file to the specified path</value>
-  </data>
   <data name="ViewModelGachaLogUIGFImportSuccess" xml:space="preserve">
     <value>Successfully imported {0} wish records</value>
   </data>
   <data name="ViewModelGachaLogUIGFExportSuccess" xml:space="preserve">
     <value>Successfully exported the wish record of UID:{0}</value>
-  </data>
-  <data name="ViewModelGachaLogUploadToLauncherCloudProgress" xml:space="preserve">
-    <value>Uploading to cloud service</value>
-  </data>
-  <data name="ViewModelGachaUIGFImportPickerTitile" xml:space="preserve">
-    <value>Import UIGF JSON file</value>
   </data>
   <data name="ViewModelGameConfigurationCreateFailed" xml:space="preserve">
     <value>Failed to generate configuration file</value>
@@ -2210,32 +1946,14 @@ Available space: {2}</value>
   <data name="ViewModelLaunchGameFixConfigurationFileSucceed" xml:space="preserve">
     <value>Repair successful</value>
   </data>
-  <data name="ViewModelLaunchGameGamePathNullOrEmpty" xml:space="preserve">
-    <value>Game directory has not been set up yet</value>
-  </data>
-  <data name="ViewModelLaunchGameIdentifyMonitorsAction" xml:space="preserve">
-    <value>Identify the display</value>
-  </data>
   <data name="ViewModelLaunchGameGamePathNotSet" xml:space="preserve">
     <value>The game path has not been set yet. Please configure the game directory in settings first.</value>
   </data>
   <data name="ViewModelLaunchGameSchemeNotSelected" xml:space="preserve">
     <value>No server selected yet</value>
   </data>
-  <data name="ViewModelLaunchGameSetGamePathButtonText" xml:space="preserve">
-    <value>Set game directory</value>
-  </data>
   <data name="ViewModelLaunchGameSwitchGameAccountFail" xml:space="preserve">
     <value>Failed to switch accounts</value>
-  </data>
-  <data name="ViewModelNotifyIconRestartAsElevatedErrorHint" xml:space="preserve">
-    <value>Encountered a problem when restarting, please restart manually</value>
-  </data>
-  <data name="ViewModelOverlayCatalogHotKeyDisplayName" xml:space="preserve">
-    <value>hotkey tips</value>
-  </data>
-  <data name="ViewModelOverlayCatalogIslandSwitchName" xml:space="preserve">
-    <value>Quick switch</value>
   </data>
   <data name="ViewModelRoleCombatHeraldry" xml:space="preserve">
     <value>Arrived at {0}</value>
@@ -2282,12 +2000,6 @@ Available space: {2}</value>
   <data name="ViewModelSettingSetDataFolderSuccess" xml:space="preserve">
     <value>Set data directory successfully, reboot to apply changes</value>
   </data>
-  <data name="ViewModelSettingStorageRestartFailed" xml:space="preserve">
-    <value>Restart failed, please restart the application manually</value>
-  </data>
-  <data name="ViewModelSettingStorageSetDataFolderDescription" xml:space="preserve">
-    <value>The selected folder is not empty and existing files will be overwritten.</value>
-  </data>
   <data name="ViewModelSettingStorageSetDataFolderDescription2" xml:space="preserve">
     <value>Not a valid data folder location, please select again</value>
   </data>
@@ -2302,9 +2014,6 @@ Available space: {2}</value>
   </data>
   <data name="ViewModelSettingPatchDownloading" xml:space="preserve">
     <value>Downloading incremental patch...</value>
-  </data>
-  <data name="ViewModelSettingPatchDownloadingProgress" xml:space="preserve">
-    <value>Downloading incremental patch {0}%</value>
   </data>
   <data name="ViewModelSettingPatchVerifyFailed" xml:space="preserve">
     <value>Patch verification failed</value>
@@ -2369,30 +2078,6 @@ Available space: {2}</value>
   <data name="ViewModelTitleDataFolderHasReparsepoint" xml:space="preserve">
     <value>The current data directory '{0}' contains one or more reparse points, which may cause some functions that rely on the data folder to not work properly. Please go to Settings to change the path.</value>
   </data>
-  <data name="ViewModelUIGFExportError" xml:space="preserve">
-    <value>Export failed</value>
-  </data>
-  <data name="ViewModelUIGFExportSuccess" xml:space="preserve">
-    <value>Export successful</value>
-  </data>
-  <data name="ViewModelUIGFImportDuplicatedHk4eEntry" xml:space="preserve">
-    <value>The imported UIGF file contains wish record items with duplicate UIDs.</value>
-  </data>
-  <data name="ViewModelUIGFImportError" xml:space="preserve">
-    <value>Import failed</value>
-  </data>
-  <data name="ViewModelUIGFImportNoHk4eEntry" xml:space="preserve">
-    <value>The imported UIGF file does not contain wish data</value>
-  </data>
-  <data name="ViewModelUIGFImportNoSelectedEntry" xml:space="preserve">
-    <value>Please select at least one UID to import data</value>
-  </data>
-  <data name="ViewModelUIGFImportSuccess" xml:space="preserve">
-    <value>Import successful</value>
-  </data>
-  <data name="ViewModelUIGFImportingProgressTitle" xml:space="preserve">
-    <value>Importing</value>
-  </data>
   <data name="ViewModelUserAdded" xml:space="preserve">
     <value>User [{0}] added successfully</value>
   </data>
@@ -2425,12 +2110,6 @@ Available space: {2}</value>
   </data>
   <data name="ViewModelYaeProcessNotElevatedTitle" xml:space="preserve">
     <value>Insufficient process permissions</value>
-  </data>
-  <data name="ViewOverlayDisableShowDamageTextToolTip" xml:space="preserve">
-    <value>Removed combat damage jump text</value>
-  </data>
-  <data name="ViewOverlayLaunchGameHideQuestBannerToolTip" xml:space="preserve">
-    <value>Remove task prompts from map interface</value>
   </data>
   <data name="ViewPageAchievementAddArchive" xml:space="preserve">
     <value>Create new archive</value>
@@ -2465,41 +2144,8 @@ Available space: {2}</value>
   <data name="ViewPageAchievementSortIncompletedItemsFirst" xml:space="preserve">
     <value>Priority not completed</value>
   </data>
-  <data name="ViewPageAnnouncementRedeemCodeCopySucceed" xml:space="preserve">
-    <value>Redemption code copied successfully</value>
-  </data>
-  <data name="ViewPageAnnouncementRedeemCodeLabel" xml:space="preserve">
-    <value>Qianzhan Live Redemption Code</value>
-  </data>
   <data name="ViewPageAnnouncementViewDetails" xml:space="preserve">
     <value>check the details</value>
-  </data>
-  <data name="ViewPageAvatarPropertyCalculateAll" xml:space="preserve">
-    <value>All characters and weapons</value>
-  </data>
-  <data name="ViewPageAvatarPropertyCalculateCurrent" xml:space="preserve">
-    <value>Current character and weapons</value>
-  </data>
-  <data name="ViewPageAvatarPropertyCalculatePart" xml:space="preserve">
-    <value>Some characters and weapons</value>
-  </data>
-  <data name="ViewPageAvatarPropertyDefaultDescription" xml:space="preserve">
-    <value>No role information has been obtained yet</value>
-  </data>
-  <data name="ViewPageAvatarPropertyExportToTextLabel" xml:space="preserve">
-    <value>Export text to clipboard</value>
-  </data>
-  <data name="ViewPageAvatarPropertyHeader" xml:space="preserve">
-    <value>Character attributes</value>
-  </data>
-  <data name="ViewPageAvatarPropertyRefreshAction" xml:space="preserve">
-    <value>synchronous</value>
-  </data>
-  <data name="ViewPageAvatarPropertyRefreshFromHoyolabGameRecord" xml:space="preserve">
-    <value>Synchronize the records from Miyoushe Genshin Impact</value>
-  </data>
-  <data name="ViewPageCultivateCalculate" xml:space="preserve">
-    <value>Develop calculations</value>
   </data>
   <data name="ViewPageCultivationAddProject" xml:space="preserve">
     <value>New plan</value>
@@ -2513,9 +2159,6 @@ Available space: {2}</value>
   <data name="ViewPageCultivationAddProjectDescription" xml:space="preserve">
     <value>You can go to other pages later to add development plan items</value>
   </data>
-  <data name="ViewPageCultivationAvatarPropertyDescription" xml:space="preserve">
-    <value>Add my character and weapons to the development plan</value>
-  </data>
   <data name="ViewPageCultivationClearInventory" xml:space="preserve">
     <value>Empty backpack items</value>
   </data>
@@ -2528,15 +2171,6 @@ Available space: {2}</value>
   <data name="ViewPageCultivationMaterialList" xml:space="preserve">
     <value>Material list</value>
   </data>
-  <data name="ViewPageCultivationMaterialListIncompleteFirstLabel" xml:space="preserve">
-    <value>Priority is given to those who have not collected all</value>
-  </data>
-  <data name="ViewPageCultivationMaterialListResinStatisticsLabel" xml:space="preserve">
-    <value>Resin estimate</value>
-  </data>
-  <data name="ViewPageCultivationMaterialListWorldLevelTitle" xml:space="preserve">
-    <value>world level</value>
-  </data>
   <data name="ViewPageCultivationMaterialStatistics" xml:space="preserve">
     <value>Material Statistics</value>
   </data>
@@ -2545,12 +2179,6 @@ Available space: {2}</value>
   </data>
   <data name="ViewPageCultivationRefreshInventory" xml:space="preserve">
     <value>Sync backpack items</value>
-  </data>
-  <data name="ViewPageCultivationRefreshInventoryByCalculator" xml:space="preserve">
-    <value>Sync via Nurture Calculator</value>
-  </data>
-  <data name="ViewPageCultivationRefreshInventoryByEmbeddedYae" xml:space="preserve">
-    <value>Sync via Embedded Yae</value>
   </data>
   <data name="ViewPageCultivationRemoveEntry" xml:space="preserve">
     <value>delete list</value>
@@ -2675,9 +2303,6 @@ Available space: {2}</value>
   <data name="ViewPageDailyNoteVerify" xml:space="preserve">
     <value>Verify current user and role</value>
   </data>
-  <data name="ViewPageDailyNoteWeekActiveProgress" xml:space="preserve">
-    <value>Travel hard and make progress</value>
-  </data>
   <data name="ViewPageFeedbackAutoSuggestBoxPlaceholder" xml:space="preserve">
     <value>Search questions and suggestions</value>
   </data>
@@ -2720,47 +2345,11 @@ Available space: {2}</value>
   <data name="ViewPageGachaLogHint" xml:space="preserve">
     <value>No wish records have been obtained yet</value>
   </data>
-  <data name="ViewPageGachaLogLauncherCloud" xml:space="preserve">
-    <value>cloud</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudAfdianPurchaseDescription" xml:space="preserve">
-    <value>Go to iPower to purchase related services</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudAfdianPurchaseHeader" xml:space="preserve">
-    <value>Purchase/renew cloud services</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudDelete" xml:space="preserve">
-    <value>Delete the cloud archive for this UID</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudDeveloperHint" xml:space="preserve">
-    <value>Developer accounts ignore service expiration time</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudNoEntryHint" xml:space="preserve">
-    <value>No cloud records</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudNotAllowed" xml:space="preserve">
-    <value>Insufficient cloud service time</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudRetrieve" xml:space="preserve">
-    <value>Download the cloud archive for this UID</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudSpiralAbyssActivityDescription" xml:space="preserve">
-    <value>Each issue of Abyss will be uploaded for free for 3 days for the first time</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudSpiralAbyssActivityHeader" xml:space="preserve">
-    <value>Upload abyss record</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudUpload" xml:space="preserve">
-    <value>Upload current wish archive</value>
-  </data>
   <data name="ViewPageGachaLogImportAction" xml:space="preserve">
     <value>import</value>
   </data>
   <data name="ViewPageGachaLogImportDescription" xml:space="preserve">
     <value>Import data from other apps</value>
-  </data>
-  <data name="ViewPageGachaLogImportExportAction" xml:space="preserve">
-    <value>Import/export records</value>
   </data>
   <data name="ViewPageGachaLogImportHeader" xml:space="preserve">
     <value>Import UIGFJson</value>
@@ -2776,9 +2365,6 @@ Available space: {2}</value>
   </data>
   <data name="ViewPageGachaLogPivotAvatar" xml:space="preserve">
     <value>Character</value>
-  </data>
-  <data name="ViewPageGachaLogPivotCountdown" xml:space="preserve">
-    <value>Pity</value>
   </data>
   <data name="ViewPageGachaLogPivotHistory" xml:space="preserve">
     <value>history</value>
@@ -2797,9 +2383,6 @@ Available space: {2}</value>
   </data>
   <data name="ViewPageGachaLogCountdownSearchPlaceholder" xml:space="preserve">
     <value>Search for characters/weapons</value>
-  </data>
-  <data name="ViewPageGachaLogRecoverFromLauncherCloudDescription" xml:space="preserve">
-    <value>Restore wish records from the cloud</value>
   </data>
   <data name="ViewPageGachaLogRefresh" xml:space="preserve">
     <value>refresh</value>
@@ -2834,29 +2417,14 @@ Available space: {2}</value>
   <data name="ViewPageGachaLogRemoveArchiveAction" xml:space="preserve">
     <value>Delete current archive</value>
   </data>
-  <data name="ViewPageGachaLogSelectArchivePlaceholder" xml:space="preserve">
-    <value>Select archive</value>
-  </data>
-  <data name="ViewPageGachaLogLazyRefresh" xml:space="preserve">
-    <value>Lazy loading</value>
-  </data>
   <data name="ViewPageGachaLogExportAction" xml:space="preserve">
     <value>Export</value>
-  </data>
-  <data name="ViewPageGachaLogAvatarWishOrangeHistory" xml:space="preserve">
-    <value>Character activity wish · Five-star history</value>
-  </data>
-  <data name="ViewPageGachaLogWeaponWishOrangeHistory" xml:space="preserve">
-    <value>Weapon activity wish · Five-star history</value>
   </data>
   <data name="ViewPageHardChallengeNotEngaged" xml:space="preserve">
     <value>You have not participated in this level yet</value>
   </data>
   <data name="ViewPageHardChallengeTime" xml:space="preserve">
     <value>Combat time</value>
-  </data>
-  <data name="ViewPageHomeGreetingTextCommon1" xml:space="preserve">
-    <value>The game has been launched for you {0} times</value>
   </data>
   <data name="ViewPageHomeGreetingTextCommon2" xml:space="preserve">
     <value>You have started Manjusaka {0} times</value>
@@ -2866,9 +2434,6 @@ Available space: {2}</value>
   </data>
   <data name="ViewPageHomeGreetingTextEasterEgg" xml:space="preserve">
     <value>You are right, but "" is a product independently developed by DGP Studio...</value>
-  </data>
-  <data name="ViewPageHomeGreetingTextEpic1" xml:space="preserve">
-    <value>Now, traveler, this is your {0} day in Teyvat Continent.</value>
   </data>
   <data name="ViewPageLauncherDatabaseOverview" xml:space="preserve">
     <value>Details</value>
@@ -2945,12 +2510,6 @@ Available space: {2}</value>
   <data name="ViewPageLauncherPassportCDNCloudHeader" xml:space="preserve">
     <value>Cloud CDN service</value>
   </data>
-  <data name="ViewPageLauncherPassportGachaLogCloudDescription" xml:space="preserve">
-    <value>After obtaining the duration, you will be able to download/upload/delete wish records of up to 5 UIDs through our server. In the Deep Spiral page, you will get free time when you upload the record for the first time in each challenge!</value>
-  </data>
-  <data name="ViewPageLauncherPassportGachaLogCloudHeader" xml:space="preserve">
-    <value>Cloud wish recording service</value>
-  </data>
   <data name="ViewPageLauncherPassportNewUserNameHint" xml:space="preserve">
     <value>Please enter a new email</value>
   </data>
@@ -2981,96 +2540,15 @@ Available space: {2}</value>
   <data name="ViewPageLaunchGameAction" xml:space="preserve">
     <value>Launch Game</value>
   </data>
-  <data name="ViewPageLaunchGameAppearanceAspectRatioDescription" xml:space="preserve">
-    <value>Quickly switch to a specified resolution and launch the game to save the current resolution</value>
-  </data>
-  <data name="ViewPageLaunchGameAppearanceAspectRatioHeader" xml:space="preserve">
-    <value>resolution</value>
-  </data>
-  <data name="ViewPageLaunchGameAppearanceAspectRatioPlaceHolder" xml:space="preserve">
-    <value>Quickly set resolution</value>
-  </data>
-  <data name="ViewPageLaunchGameAppearanceBorderlessDescription" xml:space="preserve">
-    <value>Create window as popup window without frame</value>
-  </data>
-  <data name="ViewPageLaunchGameAppearanceExclusiveDescription" xml:space="preserve">
-    <value>It is not compatible with the in-game browser. Operations such as switching screens can also cause the game to crash.</value>
-  </data>
-  <data name="ViewPageLaunchGameAppearanceFullscreenDescription" xml:space="preserve">
-    <value>Override the default full screen state</value>
-  </data>
-  <data name="ViewPageLaunchGameAppearancePlatformTypeDescription" xml:space="preserve">
-    <value>Select the platform type. Different types will affect how the game renders the UI.</value>
-  </data>
-  <data name="ViewPageLaunchGameAppearanceScreenHeightDescription" xml:space="preserve">
-    <value>Override default screen height</value>
-  </data>
-  <data name="ViewPageLaunchGameAppearanceScreenWidthDescription" xml:space="preserve">
-    <value>Override default screen width</value>
-  </data>
-  <data name="ViewPageLaunchGameArgumentsDescription" xml:space="preserve">
-    <value>Modify the game's default behavior when it starts</value>
-  </data>
-  <data name="ViewPageLaunchGameArgumentsHeader" xml:space="preserve">
-    <value>Startup parameters</value>
-  </data>
-  <data name="ViewPageLaunchGameBetterGIDescription" xml:space="preserve">
-    <value>After the game launches try launching and automating tasks using BetterGI</value>
-  </data>
-  <data name="ViewPageLaunchGameBetterGIHeader" xml:space="preserve">
-    <value>Automate tasks</value>
-  </data>
   <data name="ViewPageLaunchGameDangerousDescriptionHint" xml:space="preserve">
     <value>This software and plug-in functions are "plug-ins, plug-ins or third-party tools/services that are not legally authorized" as stipulated in the second paragraph of Article 10 of the "MiHoYo User Agreement". You need to bear all risks arising from the use of the content. This software cannot and will not be responsible for any loss or damage caused by the aforementioned risks.
 For security reasons, we have the right to update the software and related functions, or change or limit some functional effects of the software without special notice to you.</value>
-  </data>
-  <data name="ViewPageLaunchGameDisableFogDescription" xml:space="preserve">
-    <value>Remove fog from lighting rendering</value>
-  </data>
-  <data name="ViewPageLaunchGameDisableFogHeader" xml:space="preserve">
-    <value>Remove fog</value>
-  </data>
-  <data name="ViewPageLaunchGameDisableFogOff" xml:space="preserve">
-    <value>reserve</value>
-  </data>
-  <data name="ViewPageLaunchGameDisableFogOn" xml:space="preserve">
-    <value>Remove</value>
-  </data>
-  <data name="ViewPageLaunchGameElevationDescription" xml:space="preserve">
-    <value>Game file management/switching game servers requires administrator privileges</value>
-  </data>
-  <data name="ViewPageLaunchGameEventCameraMoveHotSwitchHeader" xml:space="preserve">
-    <value>Remove element burst lens close-up</value>
-  </data>
-  <data name="ViewPageLaunchGameFixLowFovSceneDescription" xml:space="preserve">
-    <value>Corrected the view of special interfaces such as character/team configuration/wishes/travel etc.</value>
-  </data>
-  <data name="ViewPageLaunchGameFixLowFovSceneHeader" xml:space="preserve">
-    <value>Special interface fixes</value>
-  </data>
-  <data name="ViewPageLaunchGameFixLowFovSceneTeachingTipSubtitle" xml:space="preserve">
-    <value>After "Adjust Vision" is enabled, the fog display in all scenes will follow the status of the "Remove Fog" switch. If "Special Interface Correction" is enabled at the same time, fog rendering will be forcibly disabled when the original field of view is less than or equal to 30. This will allow you to see the normal wish/journey/character interface, but it will also force the fog to be disabled when entering some plots. This is not a software BUG, ​​please do not report it to us.</value>
-  </data>
-  <data name="ViewPageLaunchGameFixLowFovSceneTeachingTipTitle" xml:space="preserve">
-    <value>Vision and fog</value>
-  </data>
-  <data name="ViewPageLaunchGameHideQuestBannerHotSwitchDescription" xml:space="preserve">
-    <value>Forcefully remove the task prompt in the upper left corner of the map interface</value>
-  </data>
-  <data name="ViewPageLaunchGameHideQuestBannerHotSwitchHeader" xml:space="preserve">
-    <value>Close map banner</value>
-  </data>
-  <data name="ViewPageLaunchGameHotSwitchDescription" xml:space="preserve">
-    <value>You can switch in real time after starting the game</value>
   </data>
   <data name="ViewPageLaunchGameInjectionDescription" xml:space="preserve">
     <value>Please carefully identify the harmfulness of these functions before choosing to enable them.</value>
   </data>
   <data name="ViewPageLaunchGameInjectionHeader" xml:space="preserve">
     <value>plug-in</value>
-  </data>
-  <data name="ViewPageLaunchGameThirdPartyTools" xml:space="preserve">
-    <value>Third-party plug-in tools:</value>
   </data>
   <data name="ViewPageLaunchGameIslandConnected" xml:space="preserve">
     <value>Connected to the game, changes to settings will be dynamically reflected in the game</value>
@@ -3082,59 +2560,14 @@ For security reasons, we have the right to update the software and related funct
   <data name="ViewPageLaunchGameAutomationOptionsHeader" xml:space="preserve">
     <value>Automation options</value>
   </data>
-  <data name="ViewPageLaunchGameIslandRedirectCombineEntryDescription" xml:space="preserve">
-    <value>When clicking the synthesized quantity in the item details, the synthesis page will be opened directly instead of the map.</value>
-  </data>
-  <data name="ViewPageLaunchGameIslandRedirectCombineEntryHeader" xml:space="preserve">
-    <value>Redirect synthesis</value>
-  </data>
-  <data name="ViewPageLaunchGameIslandResinListItemAllowCondensedResinHeader" xml:space="preserve">
-    <value>Use Condensed Resin to claim rewards</value>
-  </data>
-  <data name="ViewPageLaunchGameIslandResinListItemAllowFragileResinHeader" xml:space="preserve">
-    <value>Use Fragile Resin to claim rewards</value>
-  </data>
-  <data name="ViewPageLaunchGameIslandResinListItemAllowOriginalResinHeader" xml:space="preserve">
-    <value>Use Original Resin to claim rewards</value>
-  </data>
-  <data name="ViewPageLaunchGameIslandResinListItemAllowPrimogemHeader" xml:space="preserve">
-    <value>Use Primogems to claim rewards</value>
-  </data>
-  <data name="ViewPageLaunchGameIslandResinListItemAllowTransientResinHeader" xml:space="preserve">
-    <value>Use Transient Resin to claim rewards</value>
-  </data>
-  <data name="ViewPageLaunchGameIslandUsingTouchScreenHeader" xml:space="preserve">
-    <value>Use touch input</value>
-  </data>
   <data name="ViewPageLaunchGameKillGameProcessAction" xml:space="preserve">
     <value>end process</value>
-  </data>
-  <data name="ViewPageLaunchGameMonitorsDescription" xml:space="preserve">
-    <value>Run on specified monitor</value>
   </data>
   <data name="ViewPageLaunchGameOptionsHeader" xml:space="preserve">
     <value>Game options</value>
   </data>
-  <data name="ViewPageLaunchGameOverlayDescription" xml:space="preserve">
-    <value>The notification area icon needs to be enabled in settings, and the borderless windows option may need to be enabled to display correctly</value>
-  </data>
-  <data name="ViewPageLaunchGameOverlayHeader" xml:space="preserve">
-    <value>floating window</value>
-  </data>
-  <data name="ViewPageLaunchGameOverlayHideDescription" xml:space="preserve">
-    <value>Set the show/hide shortcut keys for the floating window (launched together with the game)</value>
-  </data>
-  <data name="ViewPageLaunchGameOverlayHideHeader" xml:space="preserve">
-    <value>Show/hide floating window</value>
-  </data>
-  <data name="ViewPageLaunchGamePackageOperationInstall" xml:space="preserve">
-    <value>Install the game</value>
-  </data>
   <data name="ViewPageLaunchGamePackageOperationPredownload" xml:space="preserve">
     <value>pre-download</value>
-  </data>
-  <data name="ViewPageLaunchGamePackageOperationPredownloadCompleteBadgeContent" xml:space="preserve">
-    <value>Pre-download completed</value>
   </data>
   <data name="ViewPageLaunchGamePackagePredownloadUnavailable" xml:space="preserve">
     <value>There are currently no resources to pre-download.</value>
@@ -3145,35 +2578,14 @@ For security reasons, we have the right to update the software and related funct
   <data name="ViewPageLaunchGamePackageOperationVerify" xml:space="preserve">
     <value>Repair game</value>
   </data>
-  <data name="ViewPageLaunchGamePlayTimeDescription" xml:space="preserve">
-    <value>After the game starts, try to launch it and use Starward for game time statistics.</value>
-  </data>
-  <data name="ViewPageLaunchGamePlayTimeHeader" xml:space="preserve">
-    <value>Duration statistics</value>
-  </data>
-  <data name="ViewPageLaunchGameRemoveOpenTeamProgressDescription" xml:space="preserve">
-    <value>Removed the progress bar displayed when opening the team configuration interface</value>
-  </data>
-  <data name="ViewPageLaunchGameRemoveOpenTeamProgressHeader" xml:space="preserve">
-    <value>Remove team configuration progress bar</value>
-  </data>
   <data name="ViewPageLaunchGameSelectGamePath" xml:space="preserve">
     <value>Choose game path</value>
   </data>
   <data name="ViewPageLaunchGameSelectGamePathHint" xml:space="preserve">
     <value>Check in the list below to switch to this path</value>
   </data>
-  <data name="ViewPageLaunchGameSwitchAccountDescription" xml:space="preserve">
-    <value>When switching accounts within the game, you need to manually check again after the network environment changes.</value>
-  </data>
-  <data name="ViewPageLaunchGameSwitchAccountDetectAction" xml:space="preserve">
-    <value>Detection</value>
-  </data>
   <data name="ViewPageLaunchGameSwitchAccountExpired" xml:space="preserve">
     <value>MAC address does not match, you may need to log in again in the game</value>
-  </data>
-  <data name="ViewPageLaunchGameSwitchAccountHeader" xml:space="preserve">
-    <value>Check account</value>
   </data>
   <data name="ViewPageLaunchGameSwitchAccountRemoveToolTip" xml:space="preserve">
     <value>delete</value>
@@ -3189,30 +2601,6 @@ For security reasons, we have the right to update the software and related funct
   </data>
   <data name="ViewPageLaunchGameSwitchSchemeHeader" xml:space="preserve">
     <value>server</value>
-  </data>
-  <data name="ViewPageLaunchGameTargetFovDescription" xml:space="preserve">
-    <value>Adjust camera field of view, default 45</value>
-  </data>
-  <data name="ViewPageLaunchGameTargetFovHeader" xml:space="preserve">
-    <value>Adjust field of view</value>
-  </data>
-  <data name="ViewPageLaunchGameTargetFovHotSwitchHeader" xml:space="preserve">
-    <value>Vision heat switch</value>
-  </data>
-  <data name="ViewPageLaunchGameTargetFpsHeader" xml:space="preserve">
-    <value>Target frame rate</value>
-  </data>
-  <data name="ViewPageLaunchGameTargetFpsHotSwitchHeader" xml:space="preserve">
-    <value>Frame rate hot switch</value>
-  </data>
-  <data name="ViewPageLaunchGameTargetFpsTeachingTipSubtitle" xml:space="preserve">
-    <value>If the frame rate cannot exceed 60/monitor frame rate after enabling this feature but other functions are normal, then this must not be a software BUG and do not report it to us. Please check by yourself whether the functions (including but not limited to) vertical synchronization, maximum frame rate limit, smart frame insertion, etc. are not turned off in game settings/graphics driver settings/monitor settings.</value>
-  </data>
-  <data name="ViewPageLaunchGameTargetFpsTeachingTipTitle" xml:space="preserve">
-    <value>Can't unlock the frame rate cap?</value>
-  </data>
-  <data name="ViewPageLaunchGameUnlockFpsDescription" xml:space="preserve">
-    <value>Please turn off the "Vertical Sync" option in the game. A high-performance graphics card is required to support higher frame rates.</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccountDescription" xml:space="preserve">
     <value>Log in with the currently selected Miyoushe/HoYoLAB user</value>
@@ -3288,12 +2676,6 @@ For security reasons, we have the right to update the software and related funct
   </data>
   <data name="ViewPageSettingRememberWindowPlacementDescription" xml:space="preserve">
     <value>Restore the window size and position when you last closed it on next startup</value>
-  </data>
-  <data name="ViewPageSettingApperanceFirstDayOfWeekDescription" xml:space="preserve">
-    <value>Choose a first day of the week that works for you</value>
-  </data>
-  <data name="ViewPageSettingApperanceFirstDayOfWeekHeader" xml:space="preserve">
-    <value>first day of the week</value>
   </data>
   <data name="ViewPageSettingApperanceHeader" xml:space="preserve">
     <value>Appearance</value>
@@ -3410,18 +2792,6 @@ For security reasons, we have the right to update the software and related funct
   <data name="ViewPageSettingElevatedModeRestartAction" xml:space="preserve">
     <value>Restart as administrator</value>
   </data>
-  <data name="ViewPageSettingEmptyHistoryVisibleDescription" xml:space="preserve">
-    <value>Show or hide unrecorded historical wish activities on the wish record page</value>
-  </data>
-  <data name="ViewPageSettingEmptyHistoryVisibleHeader" xml:space="preserve">
-    <value>Unrecorded historical wish activities</value>
-  </data>
-  <data name="ViewPageSettingEmptyHistoryVisibleOff" xml:space="preserve">
-    <value>hide</value>
-  </data>
-  <data name="ViewPageSettingEmptyHistoryVisibleOn" xml:space="preserve">
-    <value>show</value>
-  </data>
   <data name="ViewPageSettingFeedbackNavigate" xml:space="preserve">
     <value>Go to feedback</value>
   </data>
@@ -3436,9 +2806,6 @@ For security reasons, we have the right to update the software and related funct
   </data>
   <data name="ViewPageSettingGitHubNavigate" xml:space="preserve">
 <value>Open source warehouse</value>
-  </data>
-  <data name="ViewPageSettingGachaLogHeader" xml:space="preserve">
-    <value>Prayer record</value>
   </data>
   <data name="ViewPageSettingGameHeader" xml:space="preserve">
     <value>game</value>
@@ -3478,9 +2845,6 @@ For security reasons, we have the right to update the software and related funct
   </data>
   <data name="ViewPageSettingLauncherPassportDangerZoneHeader" xml:space="preserve">
     <value>Dangerous operation</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportGachaLogExpiredAtHeader" xml:space="preserve">
-    <value>Cloud wish record service expiration time</value>
   </data>
   <data name="ViewPageSettingLauncherPassportHeader" xml:space="preserve">
     <value>Pass account</value>
@@ -3584,27 +2948,6 @@ For security reasons, we have the right to update the software and related funct
   <data name="ViewPageSettingTranslateNavigate" xml:space="preserve">
     <value>Contribute translation</value>
   </data>
-  <data name="ViewPageSettingUIGFExportContent" xml:space="preserve">
-    <value>Export</value>
-  </data>
-  <data name="ViewPageSettingUIGFExportImportDescription" xml:space="preserve">
-    <value>Export/Import UIGF 4 files</value>
-  </data>
-  <data name="ViewPageSettingUIGFExportImportHeader" xml:space="preserve">
-    <value>Data migration</value>
-  </data>
-  <data name="ViewPageSettingUIGFImportContent" xml:space="preserve">
-    <value>import</value>
-  </data>
-  <data name="ViewPageSettingUIGFUpgradeLegacyVersionContent" xml:space="preserve">
-    <value>Upgrading older versions of UIGF files</value>
-  </data>
-  <data name="ViewPageSettingUnobtainedWishItemVisibleDescription" xml:space="preserve">
-    <value>Display undrawn wish items in "Prayer Record - Character" and "Prayer Record - Weapon"</value>
-  </data>
-  <data name="ViewPageSettingUnobtainedWishItemVisibleHeader" xml:space="preserve">
-    <value>Undrawn wish items</value>
-  </data>
   <data name="ViewPageSettingWebview2Header" xml:space="preserve">
     <value>Webview2 runtime</value>
   </data>
@@ -3665,15 +3008,6 @@ For security reasons, we have the right to update the software and related funct
   <data name="ViewPageWiKiAvatarStoriesHeader" xml:space="preserve">
     <value>story</value>
   </data>
-  <data name="ViewPageWiKiAvatarStrategyBilibiliButtonLabel" xml:space="preserve">
-    <value>Bilibili Wiki Character Guide</value>
-  </data>
-  <data name="ViewPageWiKiAvatarStrategyChineseButtonLabel" xml:space="preserve">
-    <value>Miyoushe character guide</value>
-  </data>
-  <data name="ViewPageWiKiAvatarStrategyOverseaButtonLabel" xml:space="preserve">
-    <value>HoYoLAB Character Guide</value>
-  </data>
   <data name="ViewPageWiKiAvatarTeamCombinationHeader" xml:space="preserve">
     <value>Matching role</value>
   </data>
@@ -3686,26 +3020,14 @@ For security reasons, we have the right to update the software and related funct
   <data name="ViewPageWiKiAvatarWeaponCombinationHeader" xml:space="preserve">
     <value>Match weapons</value>
   </data>
-  <data name="ViewPageWiKiGeneralAddToDevPlanButtonLabel" xml:space="preserve">
-    <value>Add to development plan</value>
-  </data>
-  <data name="ViewPageWiKiWeaponAfterAscensionTitle" xml:space="preserve">
-    <value>After the breakthrough</value>
-  </data>
   <data name="ViewPageWiKiWeaponAutoSuggestBoxPlaceHolder" xml:space="preserve">
     <value>Filter weapons</value>
   </data>
   <data name="ViewPageWikiArchonQuestAutoSuggestBoxPlaceHolder" xml:space="preserve">
     <value>Filter tasks</value>
   </data>
-  <data name="ViewPageWiKiWeaponBeforeAscensionTitle" xml:space="preserve">
-    <value>Before breakthrough</value>
-  </data>
   <data name="ViewPageWiKiWeaponStoryHeader" xml:space="preserve">
     <value>weapons story</value>
-  </data>
-  <data name="ViewPageWikiMonsterDropItems" xml:space="preserve">
-    <value>dropped items</value>
   </data>
   <data name="ViewPeriodHeader" xml:space="preserve">
     <value>cycle</value>
@@ -3794,21 +3116,6 @@ For security reasons, we have the right to update the software and related funct
   <data name="ViewSpiralAbyssUploadRecord" xml:space="preserve">
     <value>Upload data</value>
   </data>
-  <data name="ViewTitileUpdatePackageAvailableContent" xml:space="preserve">
-    <value>Update now?</value>
-  </data>
-  <data name="ViewTitleAutoClicking" xml:space="preserve">
-    <value>Automatically connect dots</value>
-  </data>
-  <data name="ViewTitleAutoPressing" xml:space="preserve">
-    <value>Automatic double click</value>
-  </data>
-  <data name="ViewTitleMetadataInitializing" xml:space="preserve">
-    <value>Initializing metadata</value>
-  </data>
-  <data name="ViewTitleUpdatePackageAvailableTitle" xml:space="preserve">
-    <value>Version {0} is now available</value>
-  </data>
   <data name="ViewToolHeader" xml:space="preserve">
     <value>tool</value>
   </data>
@@ -3865,9 +3172,6 @@ For security reasons, we have the right to update the software and related funct
   </data>
   <data name="ViewWebView2WindowLoadFailedHint" xml:space="preserve">
     <value>WebView2 failed to load</value>
-  </data>
-  <data name="ViewWelcomeBase" xml:space="preserve">
-    <value>We will download the most basic image resources for you</value>
   </data>
   <data name="ViewEmotionIconHeader" xml:space="preserve">
     <value>Paimon paintings</value>
@@ -3941,15 +3245,6 @@ For security reasons, we have the right to update the software and related funct
   <data name="ViewWikiFoodSearchPlaceholder" xml:space="preserve">
     <value>Search for food...</value>
   </data>
-  <data name="ViewWikiFoodInventoryHeader" xml:space="preserve">
-    <value>backpacking food</value>
-  </data>
-  <data name="ViewWindowCompactWebViewTitle" xml:space="preserve">
-    <value>Compact web window</value>
-  </data>
-  <data name="ViewWindowCompactWebView2HotKeyDisabledMessage" xml:space="preserve">
-    <value>Run as administrator to enable global shortcut key functionality</value>
-  </data>
   <data name="ViewWindowExceptionClose" xml:space="preserve">
     <value>closure</value>
   </data>
@@ -3958,24 +3253,6 @@ For security reasons, we have the right to update the software and related funct
   </data>
   <data name="ViewWindowExceptionTitle" xml:space="preserve">
     <value>we have a little problem</value>
-  </data>
-  <data name="ViewWindowScriptingExecute" xml:space="preserve">
-    <value>implement</value>
-  </data>
-  <data name="ViewWindowScriptingTitle" xml:space="preserve">
-    <value>Execute debug script</value>
-  </data>
-  <data name="WebAnnouncementTimeDaysBegin" xml:space="preserve">
-    <value>Starts after {0} days</value>
-  </data>
-  <data name="WebAnnouncementTimeDaysEnd" xml:space="preserve">
-    <value>Ends in {0} days</value>
-  </data>
-  <data name="WebAnnouncementTimeHoursBegin" xml:space="preserve">
-    <value>Starting in {0} hours</value>
-  </data>
-  <data name="WebAnnouncementTimeHoursEnd" xml:space="preserve">
-    <value>Ends in {0} hours</value>
   </data>
   <data name="WebAnnouncementTimeEnded" xml:space="preserve">
     <value>ended</value>
@@ -4049,9 +3326,6 @@ For security reasons, we have the right to update the software and related funct
   <data name="WebDailyNoteExtraTaskRewardReceived" xml:space="preserve">
     <value>"Daily Commission" reward has been collected</value>
   </data>
-  <data name="WebDailyNoteHomeCoinRecovery" xml:space="preserve">
-    <value>Estimated {0} {1:HH:mm} to reach storage limit</value>
-  </data>
   <data name="WebDailyNoteHomeCoinRecoveryCompleted" xml:space="preserve">
     <value>Dongtianbao money has reached the storage limit</value>
   </data>
@@ -4060,9 +3334,6 @@ For security reasons, we have the right to update the software and related funct
   </data>
   <data name="WebDailyNoteHomeLocked" xml:space="preserve">
     <value>The cave has not been unlocked yet</value>
-  </data>
-  <data name="WebDailyNoteResinRecovery" xml:space="preserve">
-    <value>All will be restored in {0} {1:HH:mm}</value>
   </data>
   <data name="WebDailyNoteResinRecoveryCompleted" xml:space="preserve">
     <value>The original resin has been fully restored</value>
@@ -4136,24 +3407,6 @@ For security reasons, we have the right to update the software and related funct
   <data name="WebEnkaResponseStatusCodeUnknown" xml:space="preserve">
     <value>Unknown server error</value>
   </data>
-  <data name="WebGachaConfigTypeAvatarEventWish" xml:space="preserve">
-    <value>Character Event Wish</value>
-  </data>
-  <data name="WebGachaConfigTypeAvatarEventWish2" xml:space="preserve">
-    <value>Character Event Wish-2</value>
-  </data>
-  <data name="WebGachaConfigTypeChronicledWish" xml:space="preserve">
-    <value>Chronicled Wish</value>
-  </data>
-  <data name="WebGachaConfigTypeNoviceWish" xml:space="preserve">
-    <value>Novice Wish</value>
-  </data>
-  <data name="WebGachaConfigTypePermanentWish" xml:space="preserve">
-    <value>Standard Wish</value>
-  </data>
-  <data name="WebGachaConfigTypeWeaponEventWish" xml:space="preserve">
-    <value>Weapon Event Wish</value>
-  </data>
   <data name="WebGameResourcePathCopySucceed" xml:space="preserve">
     <value>Download link copied successfully</value>
   </data>
@@ -4211,9 +3464,6 @@ For security reasons, we have the right to update the software and related funct
   <data name="WindowIdentifyMonitorHeader" xml:space="preserve">
     <value>Monitor number</value>
   </data>
-  <data name="UIViewMainTitleBarInvertTheme" xml:space="preserve">
-    <value>theme switching</value>
-  </data>
   <data name="ViewPageSettingAlwaysRunAsAdminText" xml:space="preserve">
     <value>Always run as administrator</value>
   </data>
@@ -4246,27 +3496,6 @@ For security reasons, we have the right to update the software and related funct
   </data>
   <data name="ServiceGachaLogAvatarIdNotFound" xml:space="preserve">
     <value>Character ID not found</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartOptionsHeader" xml:space="preserve">
-    <value>Custom startup</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartDescription" xml:space="preserve">
-    <value>Custom startup options allow quick startup of programs in other paths. Game options including startup parameters will not take effect.</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartCustomizeHeader" xml:space="preserve">
-    <value>User-defined program starts</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartPickPathHeader" xml:space="preserve">
-    <value>Select startup program</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartPickPathDescription" xml:space="preserve">
-    <value>Select the path of the program to be started, ending with '.exe'</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartOpenCommunityAction" xml:space="preserve">
-    <value>Go to the community to get shared programs</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartGame" xml:space="preserve">
-    <value>Start custom program</value>
   </data>
   <data name="ViewDialogLaunchGameAdvancedStartLoading" xml:space="preserve">
     <value>Loading custom startup list</value>
@@ -4309,9 +3538,6 @@ For security reasons, we have the right to update the software and related funct
   </data>
   <data name="ViewDialogLaunchGameAdvancedStartStatusHeader" xml:space="preserve">
     <value>Current execution status</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartOpenDownloaderAction" xml:space="preserve">
-    <value>Quickly get and download programs from your checklist</value>
   </data>
   <data name="ViewDialogLaunchGameAdvancedStartUnknownServer" xml:space="preserve">
     <value>unknown server</value>
@@ -4395,23 +3621,8 @@ For security reasons, we have the right to update the software and related funct
   <data name="ViewModelLaunchGameAdvancedStartProgramPathSaved" xml:space="preserve">
     <value>Custom launcher path saved</value>
   </data>
-  <data name="ViewPageLaunchGameAdvancedStartManager" xml:space="preserve">
-    <value>Manage custom program launches</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartListSetter" xml:space="preserve">
-    <value>Set program manifest source</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartGameDelayedStart" xml:space="preserve">
-    <value>Start a program in the delayed start list</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartDelayedStartList" xml:space="preserve">
-    <value>Delayed start program list</value>
-  </data>
   <data name="ViewDialogLaunchGameAdvancedStartSourceDescription" xml:space="preserve">
     <value>Fill in the http link in target json format</value>
-  </data>
-  <data name="ViewDialogLaunchGameAdvancedDelayedStartTitle" xml:space="preserve">
-    <value>Delayed start program checklist</value>
   </data>
   <data name="ViewDialogLaunchGameAdvancedStartSourceSetterTitle" xml:space="preserve">
     <value>Program List Get Source Settings</value>
@@ -4422,29 +3633,8 @@ For security reasons, we have the right to update the software and related funct
   <data name="ViewDialogLaunchGameAdvancedStartSourceSetterSaveSuccess" xml:space="preserve">
     <value>Saved successfully</value>
   </data>
-  <data name="ViewPageLaunchGameAdvancedStartDelayedStartListDelayedTime" xml:space="preserve">
-    <value>Delay (seconds)</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartDelayedStartListPath" xml:space="preserve">
-    <value>application path</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartDelayedStartListName" xml:space="preserve">
-    <value>Application name</value>
-  </data>
   <data name="ViewDialogLaunchGameAdvancedStartInfoBarMessage" xml:space="preserve">
     <value>It will be downloaded to the AdvancedStart folder of the set data directory. You can go to the settings to adjust or manage it yourself.</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartCoStartHeader" xml:space="preserve">
-    <value>Joint activation</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartCoStartDescription" xml:space="preserve">
-    <value>Set whether startup in different locations triggers delayed startup</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartCoStartAdvancedHeader" xml:space="preserve">
-    <value>Trigger delayed start when launching custom program</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartCoStartGameHeader" xml:space="preserve">
-    <value>Trigger delayed start when launching the game</value>
   </data>
   <data name="ViewPageSettingOpenSourceSupportHeader" xml:space="preserve">
     <value>Open source support</value>
@@ -4508,12 +3698,6 @@ For security reasons, we have the right to update the software and related funct
   </data>
   <data name="ViewPageAvatarPropertyRefreshLabel" xml:space="preserve">
     <value>refresh</value>
-  </data>
-  <data name="ViewPageAvatarPropertyWeaponAffixPrefix" xml:space="preserve">
-    <value>refine</value>
-  </data>
-  <data name="ViewPageAvatarPropertyWeaponAffixSuffix" xml:space="preserve">
-    <value>level</value>
   </data>
   <data name="ViewPageHomeTabActivity" xml:space="preserve">
     <value>Activity</value>
@@ -4686,9 +3870,6 @@ For security reasons, we have the right to update the software and related funct
   <data name="ViewPageLaunchGameIslandHideMenuUidHeader" xml:space="preserve">
     <value>Hide menu UID</value>
   </data>
-  <data name="ViewPageLaunchGameIslandFixLowFovHeader" xml:space="preserve">
-    <value>Low viewing distance correction</value>
-  </data>
   <data name="ViewPageLaunchGameIslandPortableCraftHeader" xml:space="preserve">
     <value>Portable synthesis platform</value>
   </data>
@@ -4703,9 +3884,6 @@ For security reasons, we have the right to update the software and related funct
   </data>
   <data name="ViewPageLaunchGameIslandDisableQAnimHeader" xml:space="preserve">
     <value>Remove Q animation playback</value>
-  </data>
-  <data name="ViewPageLaunchGameIslandReloadHotkeyHeader" xml:space="preserve">
-    <value>Reload configuration hotkeys</value>
   </data>
   <data name="ViewPageLaunchGameIslandRemoveDamageTextHeader" xml:space="preserve">
     <value>Removed combat damage numbers</value>
@@ -4783,20 +3961,8 @@ For security reasons, we have the right to update the software and related funct
   <data name="ViewPageLaunchGameCustomDllHeader" xml:space="preserve">
     <value>Custom plugin</value>
   </data>
-  <data name="ViewPageLaunchGameCustomDllDescription" xml:space="preserve">
-    <value>Allow adding custom DLL files to be loaded as plugins</value>
-  </data>
-  <data name="ViewPageLaunchGameCustomDllEnabledHeader" xml:space="preserve">
-    <value>Enable custom plugins</value>
-  </data>
-  <data name="ViewPageLaunchGameCustomDllEnabledDescription" xml:space="preserve">
-    <value>Once enabled, the DLL plug-ins in the list below will be loaded when the game is launched.</value>
-  </data>
   <data name="ViewPageLaunchGameCustomDllListHeader" xml:space="preserve">
     <value>DLL file list</value>
-  </data>
-  <data name="ViewPageLaunchGameCustomDllListEmpty" xml:space="preserve">
-    <value>No DLL files have been added yet</value>
   </data>
   <data name="ViewPageLaunchGameCustomDllAdd" xml:space="preserve">
     <value>Add DLL</value>
@@ -5552,20 +4718,8 @@ Thank you for your support and trust in this project, and I wish you a happy jou
   <data name="ViewGuide7_4Text" xml:space="preserve">
     <value>This Agreement and the accompanying Privacy Policy constitute the sole, complete and final agreement between you and the Developer regarding the use of the Software, and automatically supersede any previous oral, written or electronic representations and understandings between the parties in this regard.</value>
   </data>
-  <data name="ViewInventoryHeader" xml:space="preserve">
-    <value>Backpack items</value>
-  </data>
-  <data name="ViewInventoryTitle" xml:space="preserve">
-    <value>Backpack weapons</value>
-  </data>
   <data name="ViewInventoryInjectButton" xml:space="preserve">
     <value>Plug-in acquisition</value>
-  </data>
-  <data name="ViewInventoryLoadButton" xml:space="preserve">
-    <value>Read data</value>
-  </data>
-  <data name="ViewInventoryDumpPathPlaceholder" xml:space="preserve">
-    <value>PacketDump directory path</value>
   </data>
   <data name="ViewInventoryStatusReady" xml:space="preserve">
     <value>Click "Plugin Acquisition" to start</value>
@@ -5588,12 +4742,6 @@ Thank you for your support and trust in this project, and I wish you a happy jou
   <data name="ViewInventoryWeaponType" xml:space="preserve">
     <value>Weapon type</value>
   </data>
-  <data name="ViewInventoryStatusFindingProcess" xml:space="preserve">
-    <value>Looking for game progress...</value>
-  </data>
-  <data name="ViewInventoryStatusNoProcess" xml:space="preserve">
-    <value>Game process not found, please make sure the game is started</value>
-  </data>
   <data name="ViewInventoryStatusInjecting" xml:space="preserve">
     <value>Found the game process, loading plug-ins...</value>
   </data>
@@ -5612,9 +4760,6 @@ Thank you for your support and trust in this project, and I wish you a happy jou
   <data name="ViewInventoryStatusNoData" xml:space="preserve">
     <value>Weapon data not found, please ensure packet capture for CmdId=24104</value>
   </data>
-  <data name="ViewInventoryStatusDirNotExist" xml:space="preserve">
-    <value>Data directory does not exist</value>
-  </data>
   <data name="ViewInventoryStatusParseFailed" xml:space="preserve">
     <value>Parsing failed</value>
   </data>
@@ -5623,12 +4768,6 @@ Thank you for your support and trust in this project, and I wish you a happy jou
   </data>
   <data name="ViewInventoryTypeCount" xml:space="preserve">
     <value>Weapon type:</value>
-  </data>
-  <data name="ViewInventoryColumnRefinement" xml:space="preserve">
-    <value>refine</value>
-  </data>
-  <data name="ViewInventoryUnknownWeapon" xml:space="preserve">
-    <value>unknown weapon</value>
   </data>
   <data name="ViewInventoryStatusDone" xml:space="preserve">
     <value>Parsing completed: {0} weapons, {1} types</value>

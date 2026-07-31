@@ -117,27 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AppDevNameAndVersion" xml:space="preserve">
-    <value>ky3 Launcher Dev {0}</value> 
-  </data>
-  <data name="AppElevatedDevNameAndVersion" xml:space="preserve">
-    <value>ky3 Launcher Dev {0} [Quản Trị Viên]</value>  
-  </data>  
-  <data name="AppElevatedNameAndVersion" xml:space="preserve">
-    <value>ky3 Launcher {0} [Quản Trị Viên]</value>  
-  </data>  
-  <data name="AppName" xml:space="preserve">
-    <value>ky3 Launcher</value>  
-  </data>  
-  <data name="AppNameAndVersion" xml:space="preserve">
-    <value>ky3 Launcher {0}</value>  
-  </data>  
-  <data name="ContentDialogCancelCloseButtonText" xml:space="preserve">
-    <value>Hủy</value>  
-  </data>  
-  <data name="ContentDialogCompletePrimaryButtonText" xml:space="preserve">
-    <value>Hoàn thành</value> 
-  </data>
   <data name="ContentDialogConfirmPrimaryButtonText" xml:space="preserve">
     <value>Xác nhận</value> 
   </data>
@@ -221,15 +200,6 @@
   </data>
   <data name="ModelBindingAvatarPropertyWeaponAffix" xml:space="preserve">
     <value>Tinh Luyện {0}</value> 
-  </data>
-  <data name="ModelBindingCultivationDaysOfWeek14" xml:space="preserve">
-    <value>Thứ 2/Thứ 4/Chủ Nhật</value> 
-  </data>
-  <data name="ModelBindingCultivationDaysOfWeek25" xml:space="preserve">
-    <value>Thứ 3/Thứ 6/Chủ Nhật</value> 
-  </data>
-  <data name="ModelBindingCultivationDaysOfWeek36" xml:space="preserve">
-    <value>Thứ 4/Thứ 7/Chủ Nhật</value> 
   </data>
   <data name="ModelBindingGachaTypedWishSummaryAveragePull" xml:space="preserve">
     <value>{0:f2} lần rút</value> 
@@ -869,12 +839,6 @@
   <data name="ServiceBackgroundActivityDefaultDescription" xml:space="preserve">
     <value>Đang chuẩn bị...</value> 
   </data>
-  <data name="ServiceBackgroundActivityFullTrustInitialization" xml:space="preserve">
-    <value>Khởi tạo thành phần plugin</value> 
-  </data>
-  <data name="ServiceBackgroundActivityFullTrustInitializationDescription" xml:space="preserve">
-    <value>Chỉ thực thi khi cần thiết</value> 
-  </data>
   <data name="ServiceBackgroundActivityMetadataInitialization" xml:space="preserve">
     <value>Metadata game</value> 
   </data>
@@ -965,9 +929,6 @@
   <data name="ServiceGachaLogFactoryWeaponWishName" xml:space="preserve">
     <value>Thân Hình Thần Đúc</value> 
   </data>
-  <data name="ServiceGachaLogLauncherCloudEndIdFetchFailed" xml:space="preserve">
-    <value>Lấy lịch sử Cầu Nguyện từ Cloud thất bại</value> 
-  </data>
   <data name="ServiceGachaLogUrlProviderAuthkeyRequestFailed" xml:space="preserve">
     <value>Yêu cầu khóa xác thực (authkey) thất bại</value> 
   </data>
@@ -1032,12 +993,6 @@
   <data name="ServiceGameEnsureGameResourceQueryResourceInformation" xml:space="preserve">
     <value>Tải xuống chỉ mục tài nguyên game</value> 
   </data>
-  <data name="ServiceGameIslandFileSystemGetGameVersionFailed" xml:space="preserve">
-    <value>Lấy phiên bản game cục bộ thất bại, không thể lấy thông tin cấu hình plugin</value> 
-  </data>
-  <data name="ServiceGameIslandTargetVersionFileNotExists" xml:space="preserve">
-    <value>Phiên bản game hiện tại chưa được hỗ trợ</value> 
-  </data>
   <data name="ServiceGameLaunchExecutionCurrentSchemeNull" xml:space="preserve">
     <value>Tệp cấu hình game cục bộ bị hỏng, vui lòng sửa chữa rồi thử lại</value> 
   </data>
@@ -1064,15 +1019,6 @@
   </data>
   <data name="ServiceGameLaunchingHandlerEmbeddedYaeClientNotElevated" xml:space="preserve">
     <value>Cần chạy với quyền quản trị viên trước khi sử dụng Embedded Yae</value> 
-  </data>
-  <data name="ServiceGameLaunchingHandlerEmbeddedYaeErrorSystemIntegrityPolicyViolation" xml:space="preserve">
-    <value>Tải plugin thất bại, có thể do chính sách kiểm soát ứng dụng và trình duyệt của Windows Defender &gt; tính năng Smart App Control đã chặn thao tác, vui lòng thử tắt nó.</value> 
-  </data>
-  <data name="ServiceGameLaunchingHandlerEmbeddedYaeIslandNotEnabled" xml:space="preserve">
-    <value>Trước khi sử dụng Embedded Yae, bạn cần hiểu rõ các rủi ro liên quan và bật chức năng plugin trên trang "Khởi động game"</value> 
-  </data>
-  <data name="ServiceGameLaunchingHandlerGameProcessStartRepositorySyncFailed" xml:space="preserve">
-    <value>Đã xảy ra lỗi khi lấy các thành phần khởi động game cần thiết</value> 
   </data>
   <data name="ServiceGameLocatorFileOpenPickerCommitText" xml:space="preserve">
     <value>Chọn bản cài game</value> 
@@ -1115,9 +1061,6 @@
   <data name="ServiceGamePackageAdvancedDriverNoAvailableFreeSpace" xml:space="preserve">
     <value>Không gian ổ đĩa không đủ</value> 
   </data>
-  <data name="ServiceGamePackageAdvancedInstalling" xml:space="preserve">
-    <value>Đang cài đặt game</value> 
-  </data>
   <data name="ServiceGamePackageAdvancedPredownloading" xml:space="preserve">
     <value>Đang tải trước tài nguyên</value> 
   </data>
@@ -1156,12 +1099,6 @@
   </data>
   <data name="ServiceGitRepositoryOperationFailed" xml:space="preserve">
     <value>Thao tác thất bại</value> 
-  </data>
-  <data name="ServiceLauncherUserGachaLogExpiredAt" xml:space="preserve">
-    <value>Dịch vụ tải lên lịch sử Cầu Nguyện có hiệu lực đến</value> 
-  </data>
-  <data name="ServiceInventoryRefreshByEmbeddedYaeErrorMessage" xml:space="preserve">
-    <value>Vui lòng sử dụng các phương pháp khác để đồng bộ vật phẩm trong ba lô</value> 
   </data>
   <data name="ServiceMetadataDownloadSourceFilesFailed" xml:space="preserve">
     <value>Một hoặc nhiều tệp siêu dữ liệu (metadata) tải xuống thất bại: {0}</value> 
@@ -1204,9 +1141,6 @@
   </data>
   <data name="ServiceSignInSuccessReward" xml:space="preserve">
     <value>Điểm danh thành công, {0}×{1}</value> 
-  </data>
-  <data name="ServiceUIGFImportInvalidItem" xml:space="preserve">
-    <value>Vật phẩm không được hỗ trợ, Id: {0}</value> 
   </data>
   <data name="ServiceUserProcessCookieNoMid" xml:space="preserve">
     <value>Cookie nhập vào phải chứa Mid</value> 
@@ -1292,20 +1226,8 @@
   <data name="ViewAvatarPropertyHeader" xml:space="preserve">
     <value>Nhân vật của tôi</value> 
   </data>
-  <data name="ViewAvatarPropertySyncDataButtonLabel" xml:space="preserve">
-    <value>Đồng bộ thông tin nhân vật</value> 
-  </data>
   <data name="ViewCardAchievementStatisticsTitle" xml:space="preserve">
     <value>Thống kê Thành Tựu</value> 
-  </data>
-  <data name="ViewCardCalendarAllMaterialsHint" xml:space="preserve">
-    <value>Tất cả Bí Cảnh nguyên liệu đều có thể khiêu chiến</value> 
-  </data>
-  <data name="ViewCardCalendarNoBirthdayAvatarHint" xml:space="preserve">
-    <value>Hôm nay không có nhân vật nào sinh nhật</value> 
-  </data>
-  <data name="ViewCardGachaStatisticsTitle" xml:space="preserve">
-    <value>Đếm số lần bảo hiểm</value> 
   </data>
   <data name="ViewCardLaunchGameSelectAccountPlaceholder" xml:space="preserve">
     <value>Chọn tài khoản hoặc khởi động trực tiếp</value> 
@@ -1340,17 +1262,11 @@
   <data name="ViewControlStatisticsCardOrangeText" xml:space="preserve">
     <value>5 Sao</value> 
   </data>
-  <data name="ViewControlStatisticsCardPullText" xml:space="preserve">
-    <value>Lần rút</value> 
-  </data>
   <data name="ViewControlStatisticsCardPurpleText" xml:space="preserve">
     <value>4 Sao</value> 
   </data>
   <data name="ViewControlStatisticsCardToLastOrangeText" xml:space="preserve">
     <value>Cách 5 Sao trước</value> 
-  </data>
-  <data name="ViewControlStatisticsCardToLastPurpleText" xml:space="preserve">
-    <value>Cách 4 Sao trước</value> 
   </data>
   <data name="ViewControlStatisticsCardUpAveragePullText" xml:space="preserve">
     <value>Lần rút trung bình UP</value> 
@@ -1360,15 +1276,6 @@
   </data>
   <data name="ViewControlStatisticsCardNotUpText" xml:space="preserve">
     <value>Lệch</value> 
-  </data>
-  <data name="ViewControlStatisticsSegmentedItemContentPrediction" xml:space="preserve">
-    <value>Dự đoán</value> 
-  </data>
-  <data name="ViewControlStatisticsSegmentedItemContentProportion" xml:space="preserve">
-    <value>Tỷ lệ</value> 
-  </data>
-  <data name="ViewControlStatisticsSegmentedItemContentStatistics" xml:space="preserve">
-    <value>Thống kê</value> 
   </data>
   <data name="ViewControlWebViewerCoreWebView2ProfileQueryInterfaceFailed" xml:space="preserve">
     <value>Phiên bản WebView2 hiện tại không hỗ trợ quản lý cấu hình, tiếp tục sử dụng có thể dẫn đến lỗi, vui lòng cập nhật sớm nhất có thể</value> 
@@ -1412,68 +1319,14 @@
   <data name="ViewDialogCultivateWeaponLevelTitle" xml:space="preserve">
     <value>Cấp vũ khí</value> 
   </data>
-  <data name="ViewDialogCultivateBatchAvatarLevelTarget" xml:space="preserve">
-    <value>Cấp nhân vật</value> 
-  </data>
-  <data name="ViewDialogCultivateBatchSkillATarget" xml:space="preserve">
-    <value>Cấp Tấn Công Thường</value> 
-  </data>
-  <data name="ViewDialogCultivateBatchSkillETarget" xml:space="preserve">
-    <value>Cấp Kỹ Năng Nguyên Tố</value> 
-  </data>
-  <data name="ViewDialogCultivateBatchSkillQTarget" xml:space="preserve">
-    <value>Cấp Kỹ Năng Nộ</value> 
-  </data>
-  <data name="ViewDialogCultivateBatchWeaponLevelTarget" xml:space="preserve">
-    <value>Cấp vũ khí</value> 
-  </data>
   <data name="ViewDialogCultivateProjectInputPlaceholder" xml:space="preserve">
     <value>Nhập tên kế hoạch vào đây</value> 
   </data>
   <data name="ViewDialogCultivateLevelTitle" xml:space="preserve">
     <value>Thêm hoặc cập nhật vào kế hoạch bồi dưỡng hiện tại</value> 
   </data>
-  <data name="ViewDialogCultivateLevelAvatarLevel" xml:space="preserve">
-    <value>Cấp độ nhân vật</value> 
-  </data>
-  <data name="ViewDialogCultivateLevelFrom" xml:space="preserve">
-    <value>Hiện tại</value> 
-  </data>
-  <data name="ViewDialogCultivateLevelTo" xml:space="preserve">
-    <value>Mục tiêu</value> 
-  </data>
-  <data name="ViewDialogCultivateLevelSkillA" xml:space="preserve">
-    <value>Tấn Công Thường</value> 
-  </data>
-  <data name="ViewDialogCultivateLevelSkillE" xml:space="preserve">
-    <value>Kỹ Năng Nguyên Tố</value> 
-  </data>
-  <data name="ViewDialogCultivateLevelSkillQ" xml:space="preserve">
-    <value>Kỹ Năng Nộ</value> 
-  </data>
   <data name="ViewDialogCultivateProjectTitle" xml:space="preserve">
     <value>Tạo kế hoạch bồi dưỡng mới</value> 
-  </data>
-  <data name="ViewDialogCultivatePromotionDeltaBatchTitle" xml:space="preserve">
-    <value>Thêm hàng loạt hoặc cập nhật vào kế hoạch bồi dưỡng hiện tại</value> 
-  </data>
-  <data name="ViewDialogCultivatePromotionDeltaPromoted" xml:space="preserve">
-    <value>Đã Đột Phá</value> 
-  </data>
-  <data name="ViewDialogCultivatePromotionDeltaTitle" xml:space="preserve">
-    <value>Thêm hoặc cập nhật vào kế hoạch bồi dưỡng hiện tại</value> 
-  </data>
-  <data name="ViewDialogCultivationConsumptionSaveStrategyCreateNewEntry" xml:space="preserve">
-    <value>Luôn tạo vật phẩm mục tiêu bồi dưỡng mới</value> 
-  </data>
-  <data name="ViewDialogCultivationConsumptionSaveStrategyHeader" xml:space="preserve">
-    <value>Cách lưu</value> 
-  </data>
-  <data name="ViewDialogCultivationConsumptionSaveStrategyOverwriteExisting" xml:space="preserve">
-    <value>Ghi đè vật phẩm mục tiêu bồi dưỡng hiện có</value> 
-  </data>
-  <data name="ViewDialogCultivationConsumptionSaveStrategyPreserveExisting" xml:space="preserve">
-    <value>Giữ lại vật phẩm mục tiêu bồi dưỡng hiện có</value> 
   </data>
   <data name="ViewDialogDailyNoteNotificationDailyTaskNotify" xml:space="preserve">
     <value>Nhắc nhở Nhiệm Vụ Hằng Ngày trực tuyến</value> 
@@ -1613,15 +1466,6 @@
   <data name="ViewDialogImportUIAFExportUIAFVersion" xml:space="preserve">
     <value>Phiên bản UIAF</value> 
   </data>
-  <data name="ViewDialogImportUIGFExportUIGFVersion" xml:space="preserve">
-    <value>Phiên bản UIGF</value> 
-  </data>
-  <data name="ViewDialogImportUIGFSubtitle" xml:space="preserve">
-    <value>Chọn UID để nhập bản ghi</value> 
-  </data>
-  <data name="ViewDialogImportUIGFTitle" xml:space="preserve">
-    <value>Nhập tệp UIGF</value> 
-  </data>
   <data name="ViewDialogLaunchGameAccountInputPlaceholder" xml:space="preserve">
     <value>Nhập tên vào đây</value> 
   </data>
@@ -1636,9 +1480,6 @@
   </data>
   <data name="ViewDialogLaunchGameInstallGameDirectoryCreationFailed" xml:space="preserve">
     <value>Đường dẫn cài đặt đã chọn không tồn tại và không thể tạo</value> 
-  </data>
-  <data name="ViewDialogLaunchGameInstallGameDirectoryExistsFileSystemEntry" xml:space="preserve">
-    <value>Đường dẫn cài đặt đã chọn có chứa tệp hoặc thư mục</value> 
   </data>
   <data name="ViewDialogLaunchGameInstallGameDirectoryInvalid" xml:space="preserve">
     <value>Đường dẫn cài đặt đã chọn không hợp lệ</value> 
@@ -1709,15 +1550,6 @@
   <data name="ViewDialogUserAccountVerificationTitle" xml:space="preserve">
     <value>Vui lòng nhập mã xác minh email</value> 
   </data>
-  <data name="ViewDialogUserDocumentAction" xml:space="preserve">
-    <value>Đi tới ngay</value> 
-  </data>
-  <data name="ViewDialogUserDocumentDescription" xml:space="preserve">
-    <value>Vào trang tài liệu và làm theo hướng dẫn</value> 
-  </data>
-  <data name="ViewDialogUserDocumentHeader" xml:space="preserve">
-    <value>Tài liệu hướng dẫn thao tác</value> 
-  </data>
   <data name="ViewDialogUserInputPlaceholder" xml:space="preserve">
     <value>Nhập Cookie chứa SToken vào đây</value> 
   </data>
@@ -1744,9 +1576,6 @@
   </data>
   <data name="ViewExceptionWindowStacktraceHeader" xml:space="preserve">
     <value>Ngăn xếp lệnh gọi (Stacktrace)</value> 
-  </data>
-  <data name="ViewFeedbackHeader" xml:space="preserve">
-    <value>Trung tâm phản hồi</value> 
   </data>
   <data name="ViewGachaLogHeader" xml:space="preserve">
     <value>Lịch sử Cầu Nguyện</value> 
@@ -1795,9 +1624,6 @@
   </data>
   <data name="ViewHardChallengeHeader" xml:space="preserve">
     <value>Ảo Cảnh Hiểm Ác</value> 
-  </data>
-  <data name="ViewLauncherPassportHeader" xml:space="preserve">
-    <value>Passport</value> 
   </data>
   <data name="ViewInfoBarPanelClearAllContent" xml:space="preserve">
     <value>Xóa tất cả thông báo</value> 
@@ -1856,32 +1682,11 @@
   <data name="ViewModelAchievementUIAFExportPickerTitle" xml:space="preserve">
     <value>Xuất tệp JSON UIAF đến đường dẫn chỉ định</value> 
   </data>
-  <data name="ViewModelAvatarPropertyBatchCultivateNoSelectedAvatar" xml:space="preserve">
-    <value>Chưa chọn bất kỳ nhân vật nào</value> 
-  </data>
-  <data name="ViewModelAvatarPropertyBatchCultivateProgressTitle" xml:space="preserve">
-    <value>Đang lấy nguyên liệu bồi dưỡng, vui lòng đợi...</value> 
-  </data>
-  <data name="ViewModelAvatarPropertyCalculateWeaponNull" xml:space="preserve">
-    <value>Nhân vật hiện tại không thể tính toán, vui lòng đồng bộ thông tin rồi thử lại</value> 
-  </data>
-  <data name="ViewModelAvatarPropertyFetch" xml:space="preserve">
-    <value>Đang lấy dữ liệu</value> 
-  </data>
   <data name="ViewModelAvatarPropertySortDescriptionKindActivatedConstellationCount" xml:space="preserve">
     <value>Xếp theo Cung Mệnh</value> 
   </data>
-  <data name="ViewModelAvatarPropertySortDescriptionKindCurAttack" xml:space="preserve">
-    <value>Xếp theo Tấn Công</value> 
-  </data>
-  <data name="ViewModelAvatarPropertySortDescriptionKindCurDefense" xml:space="preserve">
-    <value>Xếp theo Phòng Ngự</value> 
-  </data>
   <data name="ViewModelAvatarPropertySortDescriptionKindDefault" xml:space="preserve">
     <value>Xếp theo mặc định</value> 
-  </data>
-  <data name="ViewModelAvatarPropertySortDescriptionKindElementMastery" xml:space="preserve">
-    <value>Xếp theo Tinh Thông Nguyên Tố</value> 
   </data>
   <data name="ViewModelAvatarPropertySortDescriptionKindFetterLevel" xml:space="preserve">
     <value>Xếp theo mức Yêu Thích</value> 
@@ -1889,74 +1694,23 @@
   <data name="ViewModelAvatarPropertySortDescriptionKindLevelNumber" xml:space="preserve">
     <value>Xếp theo Cấp độ</value> 
   </data>
-  <data name="ViewModelAvatarPropertySortDescriptionKindMaxHp" xml:space="preserve">
-    <value>Xếp theo Giới Hạn HP</value> 
-  </data>
   <data name="ViewModelAvatarPropertySortDescriptionKindQuality" xml:space="preserve">
     <value>Xếp theo Phẩm chất</value> 
   </data>
   <data name="ViewModelAvatarPropertyTotalAvatarCountHint" xml:space="preserve">
     <value>Tổng cộng {0} nhân vật</value> 
   </data>
-  <data name="ViewModelAvatatPropertyExportTextError" xml:space="preserve">
-    <value>Sao chép chi tiết nhân vật thất bại</value> 
-  </data>
-  <data name="ViewModelAvatatPropertyExportTextSuccess" xml:space="preserve">
-    <value>Sao chép chi tiết nhân vật thành công</value> 
-  </data>
   <data name="ViewModelComplexReliquarySetViewEmptyName" xml:space="preserve">
     <value>Không có Thánh Di Vật hoặc Đồ Lẻ</value> 
-  </data>
-  <data name="ViewModelCultivationAddWarning" xml:space="preserve">
-    <value>Thêm kế hoạch bồi dưỡng thất bại</value> 
   </data>
   <data name="ViewModelCultivationBatchAddCompleted" xml:space="preserve">
     <value>Thao tác hoàn thành: Thêm / Cập nhật: {0} mục, bỏ qua {1} mục</value> 
   </data>
-  <data name="ViewModelCultivationBatchAddIncompleted" xml:space="preserve">
-    <value>Thao tác chưa hoàn thành toàn bộ: Thêm / Cập nhật: {0} mục, bỏ qua {1} mục</value> 
-  </data>
   <data name="ViewModelCultivationClearInventoryContent" xml:space="preserve">
     <value>Thao tác này là không thể đảo ngược, vật phẩm trong ba lô của kế hoạch này sẽ bị mất</value> 
   </data>
-  <data name="ViewModelCultivationClearInventoryProgress" xml:space="preserve">
-    <value>Đang dọn dẹp vật phẩm ba lô</value> 
-  </data>
   <data name="ViewModelCultivationClearInventoryTitle" xml:space="preserve">
     <value>Chắc chắn muốn dọn sạch mọi vật phẩm trong ba lô của kế hoạch hiện tại không?</value> 
-  </data>
-  <data name="ViewModelCultivationConsumptionSaveNoItemHint" xml:space="preserve">
-    <value>Cấp độ đã chọn không cần nguyên liệu bồi dưỡng</value> 
-  </data>
-  <data name="ViewModelCultivationConsumptionSaveSkippedHint" xml:space="preserve">
-    <value>Mục bồi dưỡng của vật phẩm này đã tồn tại</value> 
-  </data>
-  <data name="ViewModelCultivationEntryAddNoConsumptionWarning" xml:space="preserve">
-    <value>Chưa tiêu hao bất kỳ nguyên liệu nào</value> 
-  </data>
-  <data name="ViewModelCultivationEntryAddSuccess" xml:space="preserve">
-    <value>Đã thêm thành công vào kế hoạch bồi dưỡng hiện tại</value> 
-  </data>
-  <data name="ViewModelCultivationEntryAddWarning" xml:space="preserve">
-    <value>Vui lòng đến trang Kế hoạch bồi dưỡng tạo kế hoạch và chọn trước</value> 
-  </data>
-  <data name="ViewModelCultivationEntryViewDescriptionDefault" xml:space="preserve">
-    <value>Thêm lại vật phẩm để xem mô tả bồi dưỡng</value> 
-  </data>
-  <data name="ViewModelCultivationEntryViewPromoteOnlyHint" xml:space="preserve">
-    <value>Chỉ Đột Phá</value> 
-  </data>
-  <data name="ViewModelCultivationProjectAdded" xml:space="preserve">
-    <value>Thêm thành công</value> 
-  </data>
-  <data name="ViewModelCultivationProjectAlreadyExists" xml:space="preserve">
-    <value>Không thể thêm kế hoạch trùng tên</value> 
-  </data>
-  <data name="ViewModelCultivationProjectInvalidName" xml:space="preserve">
-    <value>Không thể thêm kế hoạch có tên không hợp lệ</value> 
-  </data>
-  <data name="ViewModelCultivationRefreshInventoryProgress" xml:space="preserve">
-    <value>Đang đồng bộ vật phẩm ba lô</value> 
   </data>
   <data name="ViewModelCultivationRemoveProjectContent" xml:space="preserve">
     <value>Thao tác này là không thể đảo ngược, vật phẩm bồi dưỡng và nguyên liệu ba lô của kế hoạch này sẽ bị mất</value> 
@@ -1964,26 +1718,8 @@
   <data name="ViewModelCultivationRemoveProjectTitle" xml:space="preserve">
     <value>Xác nhận muốn xóa kế hoạch hiện tại không?</value> 
   </data>
-  <data name="ViewModelCultivationResinStatisticsBlossomOfRevelationTitle" xml:space="preserve">
-    <value>Hoa Chỉ Thị</value> 
-  </data>
-  <data name="ViewModelCultivationResinStatisticsBlossomOfWealthTitle" xml:space="preserve">
-    <value>Hoa Tàng Kim</value> 
-  </data>
   <data name="ViewModelCultivationResinStatisticsItemRemainDays" xml:space="preserve">
     <value>Còn cần {0} ngày</value> 
-  </data>
-  <data name="ViewModelCultivationResinStatisticsNormalBossTitle" xml:space="preserve">
-    <value>BOSS Thế giới</value> 
-  </data>
-  <data name="ViewModelCultivationResinStatisticsTalentAscensionTitle" xml:space="preserve">
-    <value>Nguyên Liệu Thiên Phú Nhân Vật</value> 
-  </data>
-  <data name="ViewModelCultivationResinStatisticsWeaponAscensionTitle" xml:space="preserve">
-    <value>Nguyên Liệu Đột Phá Vũ Khí</value> 
-  </data>
-  <data name="ViewModelCultivationResinStatisticsWeeklyBossTitle" xml:space="preserve">
-    <value>BOSS Tuần</value> 
   </data>
   <data name="ViewModelDailyNoteConfigWebhookUrlComplete" xml:space="preserve">
     <value>Cấu hình Webhook URL Ghi chú thời gian thực thành công</value> 
@@ -2066,23 +1802,11 @@
   <data name="ViewModelGachaLogRemoveArchiveTitle" xml:space="preserve">
     <value>Chắc chắn muốn xóa bản lưu {0} không?</value> 
   </data>
-  <data name="ViewModelGachaLogRetrieveFromLauncherCloudProgress" xml:space="preserve">
-    <value>Đang đồng bộ lịch sử Cầu Nguyện từ Dịch vụ Cloud</value> 
-  </data>
-  <data name="ViewModelGachaLogUIGFExportPickerTitle" xml:space="preserve">
-    <value>Xuất tệp JSON UIGF đến vị trí chỉ định</value> 
-  </data>
   <data name="ViewModelGachaLogUIGFImportSuccess" xml:space="preserve">
     <value>Đã nhập thành công {0} bản ghi Cầu Nguyện</value> 
   </data>
   <data name="ViewModelGachaLogUIGFExportSuccess" xml:space="preserve">
     <value>Xuất thành công lịch sử Cầu Nguyện của UID:{0}</value> 
-  </data>
-  <data name="ViewModelGachaLogUploadToLauncherCloudProgress" xml:space="preserve">
-    <value>Đang tải lên Dịch vụ Cloud</value> 
-  </data>
-  <data name="ViewModelGachaUIGFImportPickerTitile" xml:space="preserve">
-    <value>Nhập tệp JSON UIGF</value> 
   </data>
   <data name="ViewModelGameConfigurationCreateFailed" xml:space="preserve">
     <value>Tạo tệp cấu hình thất bại</value> 
@@ -2213,32 +1937,14 @@
   <data name="ViewModelLaunchGameFixConfigurationFileSucceed" xml:space="preserve">
     <value>Sửa chữa thành công</value> 
   </data>
-  <data name="ViewModelLaunchGameGamePathNullOrEmpty" xml:space="preserve">
-    <value>Chưa thiết lập thư mục game</value> 
-  </data>
-  <data name="ViewModelLaunchGameIdentifyMonitorsAction" xml:space="preserve">
-    <value>Nhận dạng Màn hình</value> 
-  </data>
   <data name="ViewModelLaunchGameGamePathNotSet" xml:space="preserve">
     <value>Chưa thiết lập đường dẫn game, vui lòng cấu hình thư mục game trong cài đặt trước</value> 
   </data>
   <data name="ViewModelLaunchGameSchemeNotSelected" xml:space="preserve">
     <value>Chưa chọn bất kỳ máy chủ nào</value> 
   </data>
-  <data name="ViewModelLaunchGameSetGamePathButtonText" xml:space="preserve">
-    <value>Thiết lập thư mục game</value> 
-  </data>
   <data name="ViewModelLaunchGameSwitchGameAccountFail" xml:space="preserve">
     <value>Chuyển đổi tài khoản thất bại</value> 
-  </data>
-  <data name="ViewModelNotifyIconRestartAsElevatedErrorHint" xml:space="preserve">
-    <value>Gặp vấn đề khi khởi động lại, vui lòng tự khởi động lại</value> 
-  </data>
-  <data name="ViewModelOverlayCatalogHotKeyDisplayName" xml:space="preserve">
-    <value>Nhắc nhở Phím tắt</value> 
-  </data>
-  <data name="ViewModelOverlayCatalogIslandSwitchName" xml:space="preserve">
-    <value>Công tắc Nhanh</value> 
   </data>
   <data name="ViewModelRoleCombatHeraldry" xml:space="preserve">
     <value>Đã đến {0}</value> 
@@ -2285,12 +1991,6 @@
   <data name="ViewModelSettingSetDataFolderSuccess" xml:space="preserve">
     <value>Thiết lập thư mục dữ liệu thành công, khởi động lại để áp dụng thay đổi</value> 
   </data>
-  <data name="ViewModelSettingStorageRestartFailed" xml:space="preserve">
-    <value>Khởi động lại thất bại, vui lòng tự khởi động lại ứng dụng</value> 
-  </data>
-  <data name="ViewModelSettingStorageSetDataFolderDescription" xml:space="preserve">
-    <value>Thư mục đã chọn không trống, sẽ ghi đè các tệp hiện có</value> 
-  </data>
   <data name="ViewModelSettingStorageSetDataFolderDescription2" xml:space="preserve">
     <value>Không phải vị trí thư mục dữ liệu hợp lệ, vui lòng chọn lại</value> 
   </data>
@@ -2305,9 +2005,6 @@
   </data>
   <data name="ViewModelSettingPatchDownloading" xml:space="preserve">
     <value>Đang tải xuống bản vá vi phân...</value> 
-  </data>
-  <data name="ViewModelSettingPatchDownloadingProgress" xml:space="preserve">
-    <value>Đang tải xuống bản vá vi phân {0}%</value> 
   </data>
   <data name="ViewModelSettingPatchVerifyFailed" xml:space="preserve">
     <value>Kiểm tra bản vá thất bại</value> 
@@ -2372,30 +2069,6 @@
   <data name="ViewModelTitleDataFolderHasReparsepoint" xml:space="preserve">
     <value>Thư mục dữ liệu hiện tại '{0}' chứa một hoặc nhiều điểm tái phân tích (Reparse points), có thể khiến một số tính năng phụ thuộc vào thư mục dữ liệu không hoạt động bình thường, vui lòng vào cài đặt để đổi đường dẫn</value> 
   </data>
-  <data name="ViewModelUIGFExportError" xml:space="preserve">
-    <value>Xuất thất bại</value> 
-  </data>
-  <data name="ViewModelUIGFExportSuccess" xml:space="preserve">
-    <value>Xuất thành công</value> 
-  </data>
-  <data name="ViewModelUIGFImportDuplicatedHk4eEntry" xml:space="preserve">
-    <value>Tệp UIGF nhập vào có chứa bản ghi Cầu Nguyện bị trùng UID</value> 
-  </data>
-  <data name="ViewModelUIGFImportError" xml:space="preserve">
-    <value>Nhập thất bại</value> 
-  </data>
-  <data name="ViewModelUIGFImportNoHk4eEntry" xml:space="preserve">
-    <value>Tệp UIGF nhập vào không chứa dữ liệu Cầu Nguyện</value> 
-  </data>
-  <data name="ViewModelUIGFImportNoSelectedEntry" xml:space="preserve">
-    <value>Vui lòng chọn ít nhất một UID để nhập dữ liệu</value> 
-  </data>
-  <data name="ViewModelUIGFImportSuccess" xml:space="preserve">
-    <value>Nhập thành công</value> 
-  </data>
-  <data name="ViewModelUIGFImportingProgressTitle" xml:space="preserve">
-    <value>Đang nhập</value> 
-  </data>
   <data name="ViewModelUserAdded" xml:space="preserve">
     <value>Người dùng [{0}] thêm thành công</value> 
   </data>
@@ -2428,12 +2101,6 @@
   </data>
   <data name="ViewModelYaeProcessNotElevatedTitle" xml:space="preserve">
     <value>Không đủ quyền tiến trình</value> 
-  </data>
-  <data name="ViewOverlayDisableShowDamageTextToolTip" xml:space="preserve">
-    <value>Ẩn sát thương khi chiến đấu</value> 
-  </data>
-  <data name="ViewOverlayLaunchGameHideQuestBannerToolTip" xml:space="preserve">
-    <value>Gỡ bỏ nhắc nhở nhiệm vụ giao diện bản đồ</value> 
   </data>
   <data name="ViewPageAchievementAddArchive" xml:space="preserve">
     <value>Tạo bản lưu mới</value> 
@@ -2468,41 +2135,8 @@
   <data name="ViewPageAchievementSortIncompletedItemsFirst" xml:space="preserve">
     <value>Ưu tiên chưa hoàn thành</value> 
   </data>
-  <data name="ViewPageAnnouncementRedeemCodeCopySucceed" xml:space="preserve">
-    <value>Sao chép Mã Đổi Thưởng thành công</value> 
-  </data>
-  <data name="ViewPageAnnouncementRedeemCodeLabel" xml:space="preserve">
-    <value>Mã Đổi Thưởng Livestream</value> 
-  </data>
   <data name="ViewPageAnnouncementViewDetails" xml:space="preserve">
     <value>Xem chi tiết</value> 
-  </data>
-  <data name="ViewPageAvatarPropertyCalculateAll" xml:space="preserve">
-    <value>Tất cả nhân vật và vũ khí</value> 
-  </data>
-  <data name="ViewPageAvatarPropertyCalculateCurrent" xml:space="preserve">
-    <value>Nhân vật và vũ khí hiện tại</value> 
-  </data>
-  <data name="ViewPageAvatarPropertyCalculatePart" xml:space="preserve">
-    <value>Một số nhân vật và vũ khí</value> 
-  </data>
-  <data name="ViewPageAvatarPropertyDefaultDescription" xml:space="preserve">
-    <value>Chưa lấy bất kỳ thông tin nhân vật nào</value> 
-  </data>
-  <data name="ViewPageAvatarPropertyExportToTextLabel" xml:space="preserve">
-    <value>Xuất văn bản vào bộ nhớ tạm</value> 
-  </data>
-  <data name="ViewPageAvatarPropertyHeader" xml:space="preserve">
-    <value>Thuộc tính nhân vật</value> 
-  </data>
-  <data name="ViewPageAvatarPropertyRefreshAction" xml:space="preserve">
-    <value>Đồng bộ</value> 
-  </data>
-  <data name="ViewPageAvatarPropertyRefreshFromHoyolabGameRecord" xml:space="preserve">
-    <value>Đồng bộ từ Chiến tích Genshin HoyoLAB</value> 
-  </data>
-  <data name="ViewPageCultivateCalculate" xml:space="preserve">
-    <value>Tính toán bồi dưỡng</value> 
   </data>
   <data name="ViewPageCultivationAddProject" xml:space="preserve">
     <value>Tạo kế hoạch</value> 
@@ -2516,9 +2150,6 @@
   <data name="ViewPageCultivationAddProjectDescription" xml:space="preserve">
     <value>Lát nữa có thể sang trang khác để thêm mục kế hoạch bồi dưỡng</value> 
   </data>
-  <data name="ViewPageCultivationAvatarPropertyDescription" xml:space="preserve">
-    <value>Thêm nhân vật và vũ khí của tôi vào kế hoạch bồi dưỡng</value> 
-  </data>
   <data name="ViewPageCultivationClearInventory" xml:space="preserve">
     <value>Xóa vật phẩm trong ba lô</value> 
   </data>
@@ -2531,15 +2162,6 @@
   <data name="ViewPageCultivationMaterialList" xml:space="preserve">
     <value>Danh sách nguyên liệu</value> 
   </data>
-  <data name="ViewPageCultivationMaterialListIncompleteFirstLabel" xml:space="preserve">
-    <value>Ưu tiên chưa thu thập đủ</value> 
-  </data>
-  <data name="ViewPageCultivationMaterialListResinStatisticsLabel" xml:space="preserve">
-    <value>Nhựa Hiện Có</value> 
-  </data>
-  <data name="ViewPageCultivationMaterialListWorldLevelTitle" xml:space="preserve">
-    <value>Cấp Thế Giới</value> 
-  </data>
   <data name="ViewPageCultivationMaterialStatistics" xml:space="preserve">
     <value>Thống kê nguyên liệu</value> 
   </data>
@@ -2548,12 +2170,6 @@
   </data>
   <data name="ViewPageCultivationRefreshInventory" xml:space="preserve">
     <value>Đồng bộ vật phẩm ba lô</value> 
-  </data>
-  <data name="ViewPageCultivationRefreshInventoryByCalculator" xml:space="preserve">
-    <value>Đồng bộ thông qua Máy tính bồi dưỡng</value> 
-  </data>
-  <data name="ViewPageCultivationRefreshInventoryByEmbeddedYae" xml:space="preserve">
-    <value>Đồng bộ qua Embedded Yae</value> 
   </data>
   <data name="ViewPageCultivationRemoveEntry" xml:space="preserve">
     <value>Xóa danh sách</value> 
@@ -2678,9 +2294,6 @@
   <data name="ViewPageDailyNoteVerify" xml:space="preserve">
     <value>Xác minh người dùng và nhân vật hiện tại</value> 
   </data>
-  <data name="ViewPageDailyNoteWeekActiveProgress" xml:space="preserve">
-    <value>Rèn Luyện Tiến Bước</value> 
-  </data>
   <data name="ViewPageFeedbackAutoSuggestBoxPlaceholder" xml:space="preserve">
     <value>Tìm kiếm vấn đề và góp ý</value> 
   </data>
@@ -2723,47 +2336,11 @@
   <data name="ViewPageGachaLogHint" xml:space="preserve">
     <value>Chưa lấy bất kỳ lịch sử Cầu Nguyện nào</value> 
   </data>
-  <data name="ViewPageGachaLogLauncherCloud" xml:space="preserve">
-    <value>Đám mây</value> 
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudAfdianPurchaseDescription" xml:space="preserve">
-    <value>Tới Afdian mua dịch vụ liên quan</value> 
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudAfdianPurchaseHeader" xml:space="preserve">
-    <value>Mua / Gia hạn dịch vụ đám mây (Cloud)</value> 
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudDelete" xml:space="preserve">
-    <value>Xóa bản lưu đám mây của UID này</value> 
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudDeveloperHint" xml:space="preserve">
-    <value>Tài khoản nhà phát triển không bị giới hạn thời gian dịch vụ</value> 
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudNoEntryHint" xml:space="preserve">
-    <value>Không có lịch sử trên đám mây</value> 
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudNotAllowed" xml:space="preserve">
-    <value>Thời hạn dịch vụ đám mây không đủ</value> 
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudRetrieve" xml:space="preserve">
-    <value>Tải xuống bản lưu đám mây của UID này</value> 
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudSpiralAbyssActivityDescription" xml:space="preserve">
-    <value>Tải lên La Hoàn lần đầu mỗi kỳ có thể nhận miễn phí 3 ngày</value> 
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudSpiralAbyssActivityHeader" xml:space="preserve">
-    <value>Tải lên lịch sử La Hoàn</value> 
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudUpload" xml:space="preserve">
-    <value>Tải lên bản lưu Cầu Nguyện hiện tại</value> 
-  </data>
   <data name="ViewPageGachaLogImportAction" xml:space="preserve">
     <value>Nhập</value> 
   </data>
   <data name="ViewPageGachaLogImportDescription" xml:space="preserve">
     <value>Nhập dữ liệu từ Ứng dụng khác</value> 
-  </data>
-  <data name="ViewPageGachaLogImportExportAction" xml:space="preserve">
-    <value>Nhập/Xuất bản ghi</value> 
   </data>
   <data name="ViewPageGachaLogImportHeader" xml:space="preserve">
     <value>Nhập JSON UIGF</value> 
@@ -2779,9 +2356,6 @@
   </data>
   <data name="ViewPageGachaLogPivotAvatar" xml:space="preserve">
     <value>Nhân vật</value> 
-  </data>
-  <data name="ViewPageGachaLogPivotCountdown" xml:space="preserve">
-    <value>Đếm ngược</value> 
   </data>
   <data name="ViewPageGachaLogPivotHistory" xml:space="preserve">
     <value>Lịch sử</value> 
@@ -2800,9 +2374,6 @@
   </data>
   <data name="ViewPageGachaLogCountdownSearchPlaceholder" xml:space="preserve">
     <value>Tìm kiếm nhân vật/vũ khí</value> 
-  </data>
-  <data name="ViewPageGachaLogRecoverFromLauncherCloudDescription" xml:space="preserve">
-    <value>Khôi phục lịch sử Cầu Nguyện từ đám mây</value> 
   </data>
   <data name="ViewPageGachaLogRefresh" xml:space="preserve">
     <value>Làm mới</value> 
@@ -2837,29 +2408,14 @@
   <data name="ViewPageGachaLogRemoveArchiveAction" xml:space="preserve">
     <value>Xóa bản lưu hiện tại</value> 
   </data>
-  <data name="ViewPageGachaLogSelectArchivePlaceholder" xml:space="preserve">
-    <value>Chọn bản lưu</value> 
-  </data>
-  <data name="ViewPageGachaLogLazyRefresh" xml:space="preserve">
-    <value>Lazy Load</value> 
-  </data>
   <data name="ViewPageGachaLogExportAction" xml:space="preserve">
     <value>Xuất</value> 
-  </data>
-  <data name="ViewPageGachaLogAvatarWishOrangeHistory" xml:space="preserve">
-    <value>Cầu Nguyện Sự Kiện Nhân Vật · Lịch sử 5 Sao</value> 
-  </data>
-  <data name="ViewPageGachaLogWeaponWishOrangeHistory" xml:space="preserve">
-    <value>Cầu Nguyện Sự Kiện Vũ Khí · Lịch sử 5 Sao</value> 
   </data>
   <data name="ViewPageHardChallengeNotEngaged" xml:space="preserve">
     <value>Bạn chưa tham gia ải này</value> 
   </data>
   <data name="ViewPageHardChallengeTime" xml:space="preserve">
     <value>Thời gian chiến đấu</value> 
-  </data>
-  <data name="ViewPageHomeGreetingTextCommon1" xml:space="preserve">
-    <value>Đã khởi động game {0} lần cho bạn</value> 
   </data>
   <data name="ViewPageHomeGreetingTextCommon2" xml:space="preserve">
     <value>Bạn đã khởi động Manjusaka {0} lần</value> 
@@ -2869,9 +2425,6 @@
   </data>
   <data name="ViewPageHomeGreetingTextEasterEgg" xml:space="preserve">
     <value>Bạn nói đúng, nhưng &lt;&lt;...&gt;&gt; là một trò chơi do DGP Studio tự nghiên cứu và phát triển...</value> 
-  </data>
-  <data name="ViewPageHomeGreetingTextEpic1" xml:space="preserve">
-    <value>Này Nhà Lữ Hành, đây là ngày thứ {0} bạn đến Teyvat đó nha</value> 
   </data>
   <data name="ViewPageLauncherDatabaseOverview" xml:space="preserve">
     <value>Chi tiết</value> 
@@ -2948,12 +2501,6 @@
   <data name="ViewPageLauncherPassportCDNCloudHeader" xml:space="preserve">
     <value>Dịch vụ Cloud CDN</value> 
   </data>
-  <data name="ViewPageLauncherPassportGachaLogCloudDescription" xml:space="preserve">
-    <value>Sau khi có thời gian dịch vụ, bạn có thể tải xuống/tải lên/xóa lịch sử Cầu Nguyện cho tối đa 5 UID qua máy chủ của chúng tôi. Lần đầu tải lên ở giao diện La Hoàn Thâm Cảnh mỗi kỳ sẽ được tặng thời gian miễn phí!</value> 
-  </data>
-  <data name="ViewPageLauncherPassportGachaLogCloudHeader" xml:space="preserve">
-    <value>Dịch vụ Lịch sử Cầu Nguyện Cloud</value> 
-  </data>
   <data name="ViewPageLauncherPassportNewUserNameHint" xml:space="preserve">
     <value>Vui lòng nhập email mới</value> 
   </data>
@@ -2984,96 +2531,15 @@
   <data name="ViewPageLaunchGameAction" xml:space="preserve">
     <value>Khởi động game</value> 
   </data>
-  <data name="ViewPageLaunchGameAppearanceAspectRatioDescription" xml:space="preserve">
-    <value>Chuyển đổi nhanh sang độ phân giải chỉ định, khởi động game để lưu độ phân giải hiện tại</value> 
-  </data>
-  <data name="ViewPageLaunchGameAppearanceAspectRatioHeader" xml:space="preserve">
-    <value>Độ phân giải</value> 
-  </data>
-  <data name="ViewPageLaunchGameAppearanceAspectRatioPlaceHolder" xml:space="preserve">
-    <value>Cài nhanh độ phân giải</value> 
-  </data>
-  <data name="ViewPageLaunchGameAppearanceBorderlessDescription" xml:space="preserve">
-    <value>Tạo cửa sổ dạng popup, không có khung viền</value> 
-  </data>
-  <data name="ViewPageLaunchGameAppearanceExclusiveDescription" xml:space="preserve">
-    <value>Không tương thích với trình duyệt web trong game, chuyển đổi cửa sổ có thể làm game bị crash</value> 
-  </data>
-  <data name="ViewPageLaunchGameAppearanceFullscreenDescription" xml:space="preserve">
-    <value>Ghi đè trạng thái toàn màn hình mặc định</value> 
-  </data>
-  <data name="ViewPageLaunchGameAppearancePlatformTypeDescription" xml:space="preserve">
-    <value>Chọn nền tảng, các loại khác nhau sẽ ảnh hưởng đến cách game render UI</value> 
-  </data>
-  <data name="ViewPageLaunchGameAppearanceScreenHeightDescription" xml:space="preserve">
-    <value>Ghi đè chiều cao màn hình mặc định</value> 
-  </data>
-  <data name="ViewPageLaunchGameAppearanceScreenWidthDescription" xml:space="preserve">
-    <value>Ghi đè chiều rộng màn hình mặc định</value> 
-  </data>
-  <data name="ViewPageLaunchGameArgumentsDescription" xml:space="preserve">
-    <value>Chỉnh sửa hành vi mặc định khi game khởi động</value> 
-  </data>
-  <data name="ViewPageLaunchGameArgumentsHeader" xml:space="preserve">
-    <value>Tham số khởi động</value> 
-  </data>
-  <data name="ViewPageLaunchGameBetterGIDescription" xml:space="preserve">
-    <value>Thử khởi chạy và sử dụng BetterGI thực hiện tự động hóa sau khi game khởi động</value> 
-  </data>
-  <data name="ViewPageLaunchGameBetterGIHeader" xml:space="preserve">
-    <value>Tác vụ Tự động</value> 
-  </data>
   <data name="ViewPageLaunchGameDangerousDescriptionHint" xml:space="preserve">
     <value>Phần mềm này và các chức năng plugin thuộc loại "Plugin, ngoại cảnh hoặc công cụ/dịch vụ của bên thứ ba
      không được ủy quyền hợp pháp" theo Điều 10, Khoản 2 của "Thỏa thuận người dùng miHoYo". Bạn tự chịu mọi rủi ro do sử dụng và chúng tôi không chịu trách nhiệm về bất kỳ tổn thất hoặc thiệt hại nào do rủi ro nói trên.Vì lý do an toàn, chúng tôi có quyền cập nhật phần mềm và các chức năng liên quan mà không cần thông báo, hoặc thay đổi/hạn chế một số hiệu ứng chức năng phần mềm.</value> 
-  </data>
-  <data name="ViewPageLaunchGameDisableFogDescription" xml:space="preserve">
-    <value>Gỡ bỏ sương mù trong kết xuất ánh sáng</value> 
-  </data>
-  <data name="ViewPageLaunchGameDisableFogHeader" xml:space="preserve">
-    <value>Xóa sương mù</value> 
-  </data>
-  <data name="ViewPageLaunchGameDisableFogOff" xml:space="preserve">
-    <value>Giữ lại</value> 
-  </data>
-  <data name="ViewPageLaunchGameDisableFogOn" xml:space="preserve">
-    <value>Gỡ bỏ</value> 
-  </data>
-  <data name="ViewPageLaunchGameElevationDescription" xml:space="preserve">
-    <value>Cần quyền quản trị viên để quản lý tệp game/chuyển đổi máy chủ</value> 
-  </data>
-  <data name="ViewPageLaunchGameEventCameraMoveHotSwitchHeader" xml:space="preserve">
-    <value>Xóa hiệu ứng Cận cảnh Kỹ Năng Nộ (Q)</value> 
-  </data>
-  <data name="ViewPageLaunchGameFixLowFovSceneDescription" xml:space="preserve">
-    <value>Sửa góc nhìn FOV của các giao diện đặc biệt như Nhân vật/Đội ngũ/Cầu Nguyện/Nhật Ký Hành Trình</value> 
-  </data>
-  <data name="ViewPageLaunchGameFixLowFovSceneHeader" xml:space="preserve">
-    <value>Chỉnh sửa giao diện đặc biệt</value> 
-  </data>
-  <data name="ViewPageLaunchGameFixLowFovSceneTeachingTipSubtitle" xml:space="preserve">
-    <value>Sau khi bật "Điều chỉnh tầm nhìn", hiển thị sương mù trong mọi cảnh sẽ tuân theo trạng thái của công tắc "Xóa sương mù". Nếu bật thêm "Chỉnh sửa giao diện đặc biệt", nó sẽ buộc tắt kết xuất sương mù khi tầm nhìn ban đầu nhỏ hơn hoặc bằng 30. Điều này giúp bạn thấy rõ giao diện Cầu Nguyện/Nhật Ký/Nhân vật bình thường, nhưng cũng sẽ buộc tắt sương mù trong một số cốt truyện. Đây không phải BUG phần mềm, xin đừng report cho chúng tôi.</value> 
-  </data>
-  <data name="ViewPageLaunchGameFixLowFovSceneTeachingTipTitle" xml:space="preserve">
-    <value>Tầm nhìn và Sương mù</value> 
-  </data>
-  <data name="ViewPageLaunchGameHideQuestBannerHotSwitchDescription" xml:space="preserve">
-    <value>Buộc ẩn thanh thông báo nhiệm vụ góc trên bên trái ở màn hình bản đồ</value> 
-  </data>
-  <data name="ViewPageLaunchGameHideQuestBannerHotSwitchHeader" xml:space="preserve">
-    <value>Đóng banner bản đồ</value> 
-  </data>
-  <data name="ViewPageLaunchGameHotSwitchDescription" xml:space="preserve">
-    <value>Có thể chuyển đổi theo thời gian thực sau khi game khởi động</value> 
   </data>
   <data name="ViewPageLaunchGameInjectionDescription" xml:space="preserve">
     <value>Vui lòng cân nhắc kỹ lưỡng các rủi ro trước khi quyết định bật các chức năng này</value> 
   </data>
   <data name="ViewPageLaunchGameInjectionHeader" xml:space="preserve">
     <value>Plugin</value> 
-  </data>
-  <data name="ViewPageLaunchGameThirdPartyTools" xml:space="preserve">
-    <value>Công cụ Plugin bên thứ ba：</value> 
   </data>
   <data name="ViewPageLaunchGameIslandConnected" xml:space="preserve">
     <value>Đã kết nối với game, thay đổi cài đặt sẽ phản ánh trực tiếp trong game</value> 
@@ -3085,59 +2551,14 @@
   <data name="ViewPageLaunchGameAutomationOptionsHeader" xml:space="preserve">
     <value>Tùy chọn Tự động hóa</value> 
   </data>
-  <data name="ViewPageLaunchGameIslandRedirectCombineEntryDescription" xml:space="preserve">
-    <value>Khi click vào số lượng có thể ghép trong chi tiết vật phẩm sẽ mở luôn giao diện Ghép thay vì mở bản đồ</value> 
-  </data>
-  <data name="ViewPageLaunchGameIslandRedirectCombineEntryHeader" xml:space="preserve">
-    <value>Chuyển hướng Ghép (Crafting)</value> 
-  </data>
-  <data name="ViewPageLaunchGameIslandResinListItemAllowCondensedResinHeader" xml:space="preserve">
-    <value>Cho phép dùng Nhựa Cô Đặc nhận phần thưởng</value> 
-  </data>
-  <data name="ViewPageLaunchGameIslandResinListItemAllowFragileResinHeader" xml:space="preserve">
-    <value>Cho phép dùng Nhựa Dễ Vỡ nhận phần thưởng</value> 
-  </data>
-  <data name="ViewPageLaunchGameIslandResinListItemAllowOriginalResinHeader" xml:space="preserve">
-    <value>Cho phép dùng Nhựa Nguyên Chất nhận phần thưởng</value> 
-  </data>
-  <data name="ViewPageLaunchGameIslandResinListItemAllowPrimogemHeader" xml:space="preserve">
-    <value>Cho phép dùng Nguyên Thạch nhận phần thưởng</value> 
-  </data>
-  <data name="ViewPageLaunchGameIslandResinListItemAllowTransientResinHeader" xml:space="preserve">
-    <value>Cho phép dùng Nhựa Khoảnh Khắc nhận phần thưởng</value> 
-  </data>
-  <data name="ViewPageLaunchGameIslandUsingTouchScreenHeader" xml:space="preserve">
-    <value>Sử dụng đầu vào cảm ứng</value> 
-  </data>
   <data name="ViewPageLaunchGameKillGameProcessAction" xml:space="preserve">
     <value>Đóng tiến trình</value> 
-  </data>
-  <data name="ViewPageLaunchGameMonitorsDescription" xml:space="preserve">
-    <value>Chạy trên màn hình chỉ định</value> 
   </data>
   <data name="ViewPageLaunchGameOptionsHeader" xml:space="preserve">
     <value>Tùy chọn Game</value> 
   </data>
-  <data name="ViewPageLaunchGameOverlayDescription" xml:space="preserve">
-    <value>Cần kích hoạt biểu tượng khay hệ thống trong cài đặt, có thể phải dùng chế độ Cửa sổ không viền để hiển thị đúng</value> 
-  </data>
-  <data name="ViewPageLaunchGameOverlayHeader" xml:space="preserve">
-    <value>Cửa sổ nổi (Overlay)</value> 
-  </data>
-  <data name="ViewPageLaunchGameOverlayHideDescription" xml:space="preserve">
-    <value>Cài đặt phím tắt Ẩn/Hiện cửa sổ nổi (khởi động cùng game)</value> 
-  </data>
-  <data name="ViewPageLaunchGameOverlayHideHeader" xml:space="preserve">
-    <value>Hiện/Ẩn Cửa sổ nổi</value> 
-  </data>
-  <data name="ViewPageLaunchGamePackageOperationInstall" xml:space="preserve">
-    <value>Cài đặt Game</value> 
-  </data>
   <data name="ViewPageLaunchGamePackageOperationPredownload" xml:space="preserve">
     <value>Tải trước</value> 
-  </data>
-  <data name="ViewPageLaunchGamePackageOperationPredownloadCompleteBadgeContent" xml:space="preserve">
-    <value>Đã hoàn thành Tải trước</value> 
   </data>
   <data name="ViewPageLaunchGamePackagePredownloadUnavailable" xml:space="preserve">
     <value>Hiện không có tài nguyên nào để tải trước</value> 
@@ -3148,35 +2569,14 @@
   <data name="ViewPageLaunchGamePackageOperationVerify" xml:space="preserve">
     <value>Sửa chữa Game</value> 
   </data>
-  <data name="ViewPageLaunchGamePlayTimeDescription" xml:space="preserve">
-    <value>Sau khi khởi động game, thử khởi chạy Starward để thống kê thời gian chơi</value> 
-  </data>
-  <data name="ViewPageLaunchGamePlayTimeHeader" xml:space="preserve">
-    <value>Thống kê thời gian chơi</value> 
-  </data>
-  <data name="ViewPageLaunchGameRemoveOpenTeamProgressDescription" xml:space="preserve">
-    <value>Xóa thanh tiến trình hiện lên khi mở giao diện Đội Ngũ</value> 
-  </data>
-  <data name="ViewPageLaunchGameRemoveOpenTeamProgressHeader" xml:space="preserve">
-    <value>Xóa thanh tiến trình Đội Ngũ</value> 
-  </data>
   <data name="ViewPageLaunchGameSelectGamePath" xml:space="preserve">
     <value>Chọn đường dẫn Game</value> 
   </data>
   <data name="ViewPageLaunchGameSelectGamePathHint" xml:space="preserve">
     <value>Chọn từ danh sách bên dưới để chuyển đổi</value> 
   </data>
-  <data name="ViewPageLaunchGameSwitchAccountDescription" xml:space="preserve">
-    <value>Chuyển đổi tài khoản trong game, nếu thay đổi mạng cần nhận diện lại bằng tay</value> 
-  </data>
-  <data name="ViewPageLaunchGameSwitchAccountDetectAction" xml:space="preserve">
-    <value>Nhận diện</value> 
-  </data>
   <data name="ViewPageLaunchGameSwitchAccountExpired" xml:space="preserve">
     <value>Địa chỉ MAC không khớp, có thể cần đăng nhập lại trong game</value> 
-  </data>
-  <data name="ViewPageLaunchGameSwitchAccountHeader" xml:space="preserve">
-    <value>Nhận diện tài khoản</value> 
   </data>
   <data name="ViewPageLaunchGameSwitchAccountRemoveToolTip" xml:space="preserve">
     <value>Xóa</value> 
@@ -3192,30 +2592,6 @@
   </data>
   <data name="ViewPageLaunchGameSwitchSchemeHeader" xml:space="preserve">
     <value>Máy chủ Game</value> 
-  </data>
-  <data name="ViewPageLaunchGameTargetFovDescription" xml:space="preserve">
-    <value>Điều chỉnh tầm nhìn (FOV) Camera, mặc định 45</value> 
-  </data>
-  <data name="ViewPageLaunchGameTargetFovHeader" xml:space="preserve">
-    <value>Chỉnh Tầm nhìn</value> 
-  </data>
-  <data name="ViewPageLaunchGameTargetFovHotSwitchHeader" xml:space="preserve">
-    <value>Công tắc nóng Tầm nhìn</value> 
-  </data>
-  <data name="ViewPageLaunchGameTargetFpsHeader" xml:space="preserve">
-    <value>FPS Mục tiêu</value> 
-  </data>
-  <data name="ViewPageLaunchGameTargetFpsHotSwitchHeader" xml:space="preserve">
-    <value>Công tắc nóng FPS</value> 
-  </data>
-  <data name="ViewPageLaunchGameTargetFpsTeachingTipSubtitle" xml:space="preserve">
-    <value>Nếu sau khi bật mà FPS vẫn không vượt quá 60 hoặc tần số quét màn hình nhưng các chức năng khác vẫn bình thường, đó CHẮC CHẮN không phải BUG phần mềm, xin đừng báo cáo. Vui lòng tự kiểm tra cài đặt trong game / Driver Card đồ họa / Cài đặt màn hình xem đã TẮT các giới hạn (bao gồm nhưng không giới hạn: V-Sync, giới hạn FPS, nội suy khung hình thông minh) chưa.</value> 
-  </data>
-  <data name="ViewPageLaunchGameTargetFpsTeachingTipTitle" xml:space="preserve">
-    <value>Không thể mở khóa giới hạn FPS?</value> 
-  </data>
-  <data name="ViewPageLaunchGameUnlockFpsDescription" xml:space="preserve">
-    <value>Vui lòng tắt "V-Sync" trong cài đặt game. Yêu cầu card đồ họa hiệu suất cao để hỗ trợ FPS cao hơn</value> 
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccountDescription" xml:space="preserve">
     <value>Đăng nhập bằng người dùng HoyoLAB đang được chọn</value> 
@@ -3291,12 +2667,6 @@
   </data>
   <data name="ViewPageSettingRememberWindowPlacementDescription" xml:space="preserve">
     <value>Khôi phục kích thước và vị trí của lần đóng trước đó vào lần khởi động tiếp theo</value> 
-  </data>
-  <data name="ViewPageSettingApperanceFirstDayOfWeekDescription" xml:space="preserve">
-    <value>Chọn ngày bắt đầu tuần phù hợp với bạn</value> 
-  </data>
-  <data name="ViewPageSettingApperanceFirstDayOfWeekHeader" xml:space="preserve">
-    <value>Ngày đầu tiên của tuần</value> 
   </data>
   <data name="ViewPageSettingApperanceHeader" xml:space="preserve">
     <value>Ngoại hình</value> 
@@ -3413,18 +2783,6 @@
   <data name="ViewPageSettingElevatedModeRestartAction" xml:space="preserve">
     <value>Khởi động lại bằng Quyền Quản trị</value> 
   </data>
-  <data name="ViewPageSettingEmptyHistoryVisibleDescription" xml:space="preserve">
-    <value>Hiển thị hoặc ẩn các biểu ngữ sự kiện không có bản ghi trong lịch sử Cầu Nguyện</value> 
-  </data>
-  <data name="ViewPageSettingEmptyHistoryVisibleHeader" xml:space="preserve">
-    <value>Sự kiện Cầu Nguyện trống</value> 
-  </data>
-  <data name="ViewPageSettingEmptyHistoryVisibleOff" xml:space="preserve">
-    <value>Ẩn</value> 
-  </data>
-  <data name="ViewPageSettingEmptyHistoryVisibleOn" xml:space="preserve">
-    <value>Hiển thị</value> 
-  </data>
   <data name="ViewPageSettingFeedbackNavigate" xml:space="preserve">
     <value>Tới Phản hồi</value> 
   </data>
@@ -3439,9 +2797,6 @@
   </data>
   <data name="ViewPageSettingGitHubNavigate" xml:space="preserve">
     <value>Kho lưu trữ Mã Nguồn Mở</value> 
-  </data>
-  <data name="ViewPageSettingGachaLogHeader" xml:space="preserve">
-    <value>Lịch sử Cầu Nguyện</value> 
   </data>
   <data name="ViewPageSettingGameHeader" xml:space="preserve">
     <value>Game</value> 
@@ -3481,9 +2836,6 @@
   </data>
   <data name="ViewPageSettingLauncherPassportDangerZoneHeader" xml:space="preserve">
     <value>Khu vực nguy hiểm</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportGachaLogExpiredAtHeader" xml:space="preserve">
-    <value>Hạn sử dụng Dịch vụ Lịch sử Cầu Nguyện Cloud</value> 
   </data>
   <data name="ViewPageSettingLauncherPassportHeader" xml:space="preserve">
     <value>Tài khoản Passport</value> 
@@ -3587,27 +2939,6 @@
   <data name="ViewPageSettingTranslateNavigate" xml:space="preserve">
     <value>Đóng góp Dịch thuật</value> 
   </data>
-  <data name="ViewPageSettingUIGFExportContent" xml:space="preserve">
-    <value>Xuất</value> 
-  </data>
-  <data name="ViewPageSettingUIGFExportImportDescription" xml:space="preserve">
-    <value>Xuất/Nhập tệp UIGF 4</value> 
-  </data>
-  <data name="ViewPageSettingUIGFExportImportHeader" xml:space="preserve">
-    <value>Di chuyển dữ liệu</value>    
-  </data>
-  <data name="ViewPageSettingUIGFImportContent" xml:space="preserve">
-    <value>Nhập</value> 
-  </data>
-  <data name="ViewPageSettingUIGFUpgradeLegacyVersionContent" xml:space="preserve">
-    <value>Nâng cấp tệp UIGF phiên bản cũ</value> 
-  </data>
-  <data name="ViewPageSettingUnobtainedWishItemVisibleDescription" xml:space="preserve">
-    <value>Hiển thị các vật phẩm chưa nhận được trong mục "Lịch sử Cầu Nguyện - Nhân vật" và "Vũ khí"</value> 
-  </data>
-  <data name="ViewPageSettingUnobtainedWishItemVisibleHeader" xml:space="preserve">
-    <value>Vật phẩm chưa rút được</value> 
-  </data>
   <data name="ViewPageSettingWebview2Header" xml:space="preserve">
     <value>Webview2 Runtime</value> 
   </data>
@@ -3668,15 +2999,6 @@
   <data name="ViewPageWiKiAvatarStoriesHeader" xml:space="preserve">
     <value>Câu Chuyện</value> 
   </data>
-  <data name="ViewPageWiKiAvatarStrategyBilibiliButtonLabel" xml:space="preserve">
-    <value>Bilibili Wiki Cẩm nang Nhân vật</value> 
-  </data>
-  <data name="ViewPageWiKiAvatarStrategyChineseButtonLabel" xml:space="preserve">
-    <value>Miyoushe Cẩm nang Nhân vật</value> 
-  </data>
-  <data name="ViewPageWiKiAvatarStrategyOverseaButtonLabel" xml:space="preserve">
-    <value>HoYoLAB Cẩm nang Nhân vật</value> 
-  </data>
   <data name="ViewPageWiKiAvatarTeamCombinationHeader" xml:space="preserve">
     <value>Ghép Đội</value> 
   </data>
@@ -3689,26 +3011,14 @@
   <data name="ViewPageWiKiAvatarWeaponCombinationHeader" xml:space="preserve">
     <value>Ghép Vũ Khí</value> 
   </data>
-  <data name="ViewPageWiKiGeneralAddToDevPlanButtonLabel" xml:space="preserve">
-    <value>Thêm vào Kế hoạch Bồi dưỡng</value> 
-  </data>
-  <data name="ViewPageWiKiWeaponAfterAscensionTitle" xml:space="preserve">
-    <value>Sau Đột Phá</value> 
-  </data>
   <data name="ViewPageWiKiWeaponAutoSuggestBoxPlaceHolder" xml:space="preserve">
     <value>Lọc Vũ Khí</value> 
   </data>
   <data name="ViewPageWikiArchonQuestAutoSuggestBoxPlaceHolder" xml:space="preserve">
     <value>Lọc Nhiệm Vụ</value> 
   </data>
-  <data name="ViewPageWiKiWeaponBeforeAscensionTitle" xml:space="preserve">
-    <value>Trước Đột Phá</value> 
-  </data>
   <data name="ViewPageWiKiWeaponStoryHeader" xml:space="preserve">
     <value>Cốt truyện Vũ Khí</value> 
-  </data>
-  <data name="ViewPageWikiMonsterDropItems" xml:space="preserve">
-    <value>Vật Phẩm Rơi</value> 
   </data>
   <data name="ViewPeriodHeader" xml:space="preserve">
     <value>Kỳ</value> 
@@ -3797,21 +3107,6 @@
   <data name="ViewSpiralAbyssUploadRecord" xml:space="preserve">
     <value>Tải lên Dữ liệu</value> 
   </data>
-  <data name="ViewTitileUpdatePackageAvailableContent" xml:space="preserve">
-    <value>Bạn có muốn cập nhật ngay?</value> 
-  </data>
-  <data name="ViewTitleAutoClicking" xml:space="preserve">
-    <value>Auto Click</value> 
-  </data>
-  <data name="ViewTitleAutoPressing" xml:space="preserve">
-    <value>Auto Pressing</value> 
-  </data>
-  <data name="ViewTitleMetadataInitializing" xml:space="preserve">
-    <value>Đang khởi tạo Siêu dữ liệu (Metadata)</value> 
-  </data>
-  <data name="ViewTitleUpdatePackageAvailableTitle" xml:space="preserve">
-    <value> Đã có bản cập nhật {0}</value>
-  </data>
   <data name="ViewToolHeader" xml:space="preserve">
     <value>Công cụ</value> 
   </data>
@@ -3868,9 +3163,6 @@
   </data>
   <data name="ViewWebView2WindowLoadFailedHint" xml:space="preserve">
     <value>Tải WebView2 thất bại</value> 
-  </data>
-  <data name="ViewWelcomeBase" xml:space="preserve">
-    <value>Chúng tôi sẽ tải xuống các tài nguyên hình ảnh cơ bản nhất cho bạn</value> 
   </data>
   <data name="ViewEmotionIconHeader" xml:space="preserve">
     <value>Paimon Vẽ Tay</value> 
@@ -3944,15 +3236,6 @@
   <data name="ViewWikiFoodSearchPlaceholder" xml:space="preserve">
     <value>Tìm món ăn...</value> 
   </data>
-  <data name="ViewWikiFoodInventoryHeader" xml:space="preserve">
-    <value>Món Ăn Ba Lô</value> 
-  </data>
-  <data name="ViewWindowCompactWebViewTitle" xml:space="preserve">
-    <value>Cửa Sổ Web Gọn</value> 
-  </data>
-  <data name="ViewWindowCompactWebView2HotKeyDisabledMessage" xml:space="preserve">
-    <value>Chạy dưới quyền quản trị viên để bật tính năng phím tắt toàn cầu</value> 
-  </data>
   <data name="ViewWindowExceptionClose" xml:space="preserve">
     <value>Đóng</value> 
   </data>
@@ -3961,24 +3244,6 @@
   </data>
   <data name="ViewWindowExceptionTitle" xml:space="preserve">
     <value>Chúng tôi gặp một chút rắc rối</value> 
-  </data>
-  <data name="ViewWindowScriptingExecute" xml:space="preserve">
-    <value>Thực thi</value> 
-  </data>
-  <data name="ViewWindowScriptingTitle" xml:space="preserve">
-    <value>Thực thi Script Debug</value> 
-  </data>
-  <data name="WebAnnouncementTimeDaysBegin" xml:space="preserve">
-    <value>Bắt đầu sau {0} ngày</value> 
-  </data>
-  <data name="WebAnnouncementTimeDaysEnd" xml:space="preserve">
-    <value>Kết thúc sau {0} ngày</value> 
-  </data>
-  <data name="WebAnnouncementTimeHoursBegin" xml:space="preserve">
-    <value>Bắt đầu sau {0} giờ</value> 
-  </data>
-  <data name="WebAnnouncementTimeHoursEnd" xml:space="preserve">
-    <value>Kết thúc sau {0} giờ</value> 
   </data>
   <data name="WebAnnouncementTimeEnded" xml:space="preserve">
     <value>Đã Kết Thúc</value> 
@@ -4052,9 +3317,6 @@
   <data name="WebDailyNoteExtraTaskRewardReceived" xml:space="preserve">
     <value>Thưởng "Nhiệm Vụ Hằng Ngày" đã nhận</value> 
   </data>
-  <data name="WebDailyNoteHomeCoinRecovery" xml:space="preserve">
-    <value>Dự tính đạt giới hạn vào {0} {1:HH:mm}</value> 
-  </data>
   <data name="WebDailyNoteHomeCoinRecoveryCompleted" xml:space="preserve">
     <value>Tiền Động Tiên đã đầy</value> 
   </data>
@@ -4063,9 +3325,6 @@
   </data>
   <data name="WebDailyNoteHomeLocked" xml:space="preserve">
     <value>Chưa mở khóa Động Tiên</value> 
-  </data>
-  <data name="WebDailyNoteResinRecovery" xml:space="preserve">
-    <value>Khôi phục hoàn toàn sau {0} {1:HH:mm}</value> 
   </data>
   <data name="WebDailyNoteResinRecoveryCompleted" xml:space="preserve">
     <value>Nhựa Nguyên Chất đã đầy</value> 
@@ -4139,24 +3398,6 @@
   <data name="WebEnkaResponseStatusCodeUnknown" xml:space="preserve">
     <value>Lỗi máy chủ không xác định</value> 
   </data>
-  <data name="WebGachaConfigTypeAvatarEventWish" xml:space="preserve">
-    <value>Cầu Nguyện Sự Kiện Nhân Vật</value> 
-  </data>
-  <data name="WebGachaConfigTypeAvatarEventWish2" xml:space="preserve">
-    <value>Cầu Nguyện Sự Kiện Nhân Vật-2</value> 
-  </data>
-  <data name="WebGachaConfigTypeChronicledWish" xml:space="preserve">
-    <value>Cầu Nguyện Sử Tập</value> 
-  </data>
-  <data name="WebGachaConfigTypeNoviceWish" xml:space="preserve">
-    <value>Cầu Nguyện Tân Thủ</value> 
-  </data>
-  <data name="WebGachaConfigTypePermanentWish" xml:space="preserve">
-    <value>Cầu Nguyện Thường</value> 
-  </data>
-  <data name="WebGachaConfigTypeWeaponEventWish" xml:space="preserve">
-    <value>Cầu Nguyện Sự Kiện Vũ Khí</value> 
-  </data>
   <data name="WebGameResourcePathCopySucceed" xml:space="preserve">
     <value>Copy Link Tải thành công</value> 
   </data>
@@ -4214,9 +3455,6 @@
   <data name="WindowIdentifyMonitorHeader" xml:space="preserve">
     <value>ID Màn Hình</value> 
   </data>
-  <data name="UIViewMainTitleBarInvertTheme" xml:space="preserve">
-    <value>Chuyển đổi Giao Diện</value> 
-  </data>
   <data name="ViewPageSettingAlwaysRunAsAdminText" xml:space="preserve">
     <value>Luôn Chạy Dưới Quyền Quản Trị Viên</value> 
   </data>
@@ -4249,27 +3487,6 @@
   </data>
   <data name="ServiceGachaLogAvatarIdNotFound" xml:space="preserve">
     <value>Không Tìm Thấy ID Nhân Vật</value> 
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartOptionsHeader" xml:space="preserve">
-    <value>Khởi Động Tùy Chỉnh</value> 
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartDescription" xml:space="preserve">
-    <value>Tùy chọn khởi động tùy chỉnh cho phép chạy nhanh các ứng dụng khác, cài đặt Game hoặc Tham số khởi động trong Launcher sẽ không còn tác dụng với nó</value> 
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartCustomizeHeader" xml:space="preserve">
-    <value>Khởi chạy Phần mềm Tùy chỉnh Người dùng</value> 
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartPickPathHeader" xml:space="preserve">
-    <value>Chọn Ứng dụng Khởi chạy</value> 
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartPickPathDescription" xml:space="preserve">
-    <value>Chọn đường dẫn ứng dụng để chạy, phải là đuôi '.exe'</value> 
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartOpenCommunityAction" xml:space="preserve">
-    <value>Tới cộng đồng lấy ứng dụng được chia sẻ</value> 
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartGame" xml:space="preserve">
-    <value>Mở phần mềm tùy chỉnh</value> 
   </data>
   <data name="ViewDialogLaunchGameAdvancedStartLoading" xml:space="preserve">
     <value>Đang tải danh sách Khởi động Tùy chỉnh</value> 
@@ -4312,9 +3529,6 @@
   </data>
   <data name="ViewDialogLaunchGameAdvancedStartStatusHeader" xml:space="preserve">
     <value>Tình Trạng Thực Thi</value> 
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartOpenDownloaderAction" xml:space="preserve">
-    <value>Tải nhanh các phần mềm có trong Danh sách</value> 
   </data>
   <data name="ViewDialogLaunchGameAdvancedStartUnknownServer" xml:space="preserve">
     <value>Máy chủ Vô danh</value> 
@@ -4398,23 +3612,8 @@
   <data name="ViewModelLaunchGameAdvancedStartProgramPathSaved" xml:space="preserve">
     <value>Đã lưu đường dẫn ứng dụng khởi động tùy chỉnh</value>
   </data>
-  <data name="ViewPageLaunchGameAdvancedStartManager" xml:space="preserve">
-    <value>Quản lý khởi động ứng dụng tùy chỉnh</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartListSetter" xml:space="preserve">
-    <value>Thiết lập nguồn danh sách ứng dụng</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartGameDelayedStart" xml:space="preserve">
-    <value>Khởi chạy ứng dụng trong danh sách khởi động trễ</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartDelayedStartList" xml:space="preserve">
-    <value>Danh sách ứng dụng khởi động trễ</value>
-  </data>
   <data name="ViewDialogLaunchGameAdvancedStartSourceDescription" xml:space="preserve">
     <value>Điền liên kết http định dạng json mục tiêu</value>
-  </data>
-  <data name="ViewDialogLaunchGameAdvancedDelayedStartTitle" xml:space="preserve">
-    <value>Bảng danh sách ứng dụng khởi động trễ</value>
   </data>
   <data name="ViewDialogLaunchGameAdvancedStartSourceSetterTitle" xml:space="preserve">
     <value>Cài đặt nguồn lấy danh sách ứng dụng</value>
@@ -4425,29 +3624,8 @@
   <data name="ViewDialogLaunchGameAdvancedStartSourceSetterSaveSuccess" xml:space="preserve">
     <value>Lưu thành công</value>
   </data>
-  <data name="ViewPageLaunchGameAdvancedStartDelayedStartListDelayedTime" xml:space="preserve">
-    <value>Độ trễ (giây)</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartDelayedStartListPath" xml:space="preserve">
-    <value>Đường dẫn ứng dụng</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartDelayedStartListName" xml:space="preserve">
-    <value>Tên ứng dụng</value>
-  </data>
   <data name="ViewDialogLaunchGameAdvancedStartInfoBarMessage" xml:space="preserve">
     <value>Sẽ được tải xuống thư mục AdvancedStart trong thư mục dữ liệu đã thiết lập, có thể vào Cài đặt để điều chỉnh hoặc tự quản lý</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartCoStartHeader" xml:space="preserve">
-    <value>Khởi động kèm</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartCoStartDescription" xml:space="preserve">
-    <value>Cài đặt xem việc khởi động ở các vị trí khác nhau có kích hoạt khởi động trễ hay không</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartCoStartAdvancedHeader" xml:space="preserve">
-    <value>Kích hoạt khởi động trễ khi khởi động ứng dụng tùy chỉnh</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartCoStartGameHeader" xml:space="preserve">
-    <value>Kích hoạt khởi động trễ khi khởi động game</value>
   </data>
   <data name="ViewPageSettingOpenSourceSupportHeader" xml:space="preserve">
     <value>Hỗ trợ mã nguồn mở</value>
@@ -4511,12 +3689,6 @@
   </data>
   <data name="ViewPageAvatarPropertyRefreshLabel" xml:space="preserve">
     <value>Làm mới</value>
-  </data>
-  <data name="ViewPageAvatarPropertyWeaponAffixPrefix" xml:space="preserve">
-    <value>Tinh Luyện</value>
-  </data>
-  <data name="ViewPageAvatarPropertyWeaponAffixSuffix" xml:space="preserve">
-    <value>Bậc</value>
   </data>
   <data name="ViewPageHomeTabActivity" xml:space="preserve">
     <value>Sự kiện</value>
@@ -4689,9 +3861,6 @@
   <data name="ViewPageLaunchGameIslandHideMenuUidHeader" xml:space="preserve">
     <value>Ẩn UID Menu</value>
   </data>
-  <data name="ViewPageLaunchGameIslandFixLowFovHeader" xml:space="preserve">
-    <value>Sửa tầm nhìn thấp</value>
-  </data>
   <data name="ViewPageLaunchGameIslandPortableCraftHeader" xml:space="preserve">
     <value>Đài Ghép tùy thân</value>
   </data>
@@ -4706,9 +3875,6 @@
   </data>
   <data name="ViewPageLaunchGameIslandDisableQAnimHeader" xml:space="preserve">
     <value>Xóa hiệu ứng Cận cảnh Nộ (Q)</value>
-  </data>
-  <data name="ViewPageLaunchGameIslandReloadHotkeyHeader" xml:space="preserve">
-    <value>Phím tắt tải lại cấu hình</value>
   </data>
   <data name="ViewPageLaunchGameIslandRemoveDamageTextHeader" xml:space="preserve">
     <value>Xóa số sát thương chiến đấu</value>
@@ -4785,20 +3951,8 @@
   <data name="ViewPageLaunchGameCustomDllHeader" xml:space="preserve">
     <value>Plugin tùy chỉnh</value>
   </data>
-  <data name="ViewPageLaunchGameCustomDllDescription" xml:space="preserve">
-    <value>Cho phép thêm tệp DLL tùy chỉnh tải dưới dạng plugin</value>
-  </data>
-  <data name="ViewPageLaunchGameCustomDllEnabledHeader" xml:space="preserve">
-    <value>Bật Plugin tùy chỉnh</value>
-  </data>
-  <data name="ViewPageLaunchGameCustomDllEnabledDescription" xml:space="preserve">
-    <value>Sau khi bật, khi khởi động game sẽ tải các plugin DLL trong danh sách dưới đây</value>
-  </data>
   <data name="ViewPageLaunchGameCustomDllListHeader" xml:space="preserve">
     <value>Danh sách tệp DLL</value>
-  </data>
-  <data name="ViewPageLaunchGameCustomDllListEmpty" xml:space="preserve">
-    <value>Chưa thêm bất kỳ tệp DLL nào</value>
   </data>
   <data name="ViewPageLaunchGameCustomDllAdd" xml:space="preserve">
     <value>Thêm DLL</value>
@@ -5554,20 +4708,8 @@ Cảm ơn bạn đã hỗ trợ và tin tưởng dự án của chúng tôi, ch�
   <data name="ViewGuide7_4Text" xml:space="preserve">
     <value>Thỏa thuận này cùng với Chính sách Bảo mật đính kèm tạo thành thỏa thuận duy nhất, toàn vẹn và cuối cùng giữa bạn và nhà phát triển về việc sử dụng phần mềm này, và sẽ tự động thay thế mọi tuyên bố hay đồng thuận bằng miệng, bằng văn bản hoặc điện tử nào đã đạt được trước đó giữa hai bên về vấn đề này.</value>
   </data>
-  <data name="ViewInventoryHeader" xml:space="preserve">
-    <value>Vật phẩm Ba lô</value>
-  </data>
-  <data name="ViewInventoryTitle" xml:space="preserve">
-    <value>Vũ khí Ba lô</value>
-  </data>
   <data name="ViewInventoryInjectButton" xml:space="preserve">
     <value>Nạp Plugin</value>
-  </data>
-  <data name="ViewInventoryLoadButton" xml:space="preserve">
-    <value>Đọc dữ liệu</value>
-  </data>
-  <data name="ViewInventoryDumpPathPlaceholder" xml:space="preserve">
-    <value>Đường dẫn thư mục PacketDump</value>
   </data>
   <data name="ViewInventoryStatusReady" xml:space="preserve">
     <value>Nhấp "Nạp Plugin" để bắt đầu</value>
@@ -5590,12 +4732,6 @@ Cảm ơn bạn đã hỗ trợ và tin tưởng dự án của chúng tôi, ch�
   <data name="ViewInventoryWeaponType" xml:space="preserve">
     <value>Loại Vũ khí</value>
   </data>
-  <data name="ViewInventoryStatusFindingProcess" xml:space="preserve">
-    <value>Đang tìm tiến trình game...</value>
-  </data>
-  <data name="ViewInventoryStatusNoProcess" xml:space="preserve">
-    <value>Không tìm thấy tiến trình game, hãy chắc chắn là game đã chạy</value>
-  </data>
   <data name="ViewInventoryStatusInjecting" xml:space="preserve">
     <value>Đã tìm thấy tiến trình game, đang nạp plugin...</value>
   </data>
@@ -5614,9 +4750,6 @@ Cảm ơn bạn đã hỗ trợ và tin tưởng dự án của chúng tôi, ch�
   <data name="ViewInventoryStatusNoData" xml:space="preserve">
     <value>Không tìm thấy dữ liệu vũ khí, hãy chắc chắn đã bắt được gói dữ liệu CmdId=24104</value>
   </data>
-  <data name="ViewInventoryStatusDirNotExist" xml:space="preserve">
-    <value>Thư mục dữ liệu không tồn tại</value>
-  </data>
   <data name="ViewInventoryStatusParseFailed" xml:space="preserve">
     <value>Phân tích thất bại</value>
   </data>
@@ -5625,12 +4758,6 @@ Cảm ơn bạn đã hỗ trợ và tin tưởng dự án của chúng tôi, ch�
   </data>
   <data name="ViewInventoryTypeCount" xml:space="preserve">
     <value>Loại vũ khí:</value>
-  </data>
-  <data name="ViewInventoryColumnRefinement" xml:space="preserve">
-    <value>Tinh Luyện</value>
-  </data>
-  <data name="ViewInventoryUnknownWeapon" xml:space="preserve">
-    <value>Vũ khí không xác định</value>
   </data>
   <data name="ViewInventoryStatusDone" xml:space="preserve">
     <value>Phân tích hoàn tất: {0} vũ khí, {1} loại</value>

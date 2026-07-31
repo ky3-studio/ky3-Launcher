@@ -28,7 +28,6 @@ internal static class SettingKeys
     public const string AnnouncementRegion = "Launcher::Globalization::Region::Announcement";
     public const string CalendarServerTimeZoneOffset = "Launcher::Calendar::ServerTimeZoneOffset";
     public const string AnnouncementSeenIds = "Launcher::Announcement::SeenIds";
-    public const string ClientRegistered = "Launcher::Backend::ClientRegistered";
     public const string ClientLastHeartbeatDate = "Launcher::Backend::ClientLastHeartbeatDate";
     public const string ClientLastHeartbeatVersion = "Launcher::Backend::ClientLastHeartbeatVersion";
 
@@ -59,7 +58,6 @@ internal static class SettingKeys
     public const string LowLevelKeyboardWebView2VideoFastForward = "Launcher::HotKey::LowLevel::WebView2::Video::FastForward";
     public const string LowLevelKeyboardWebView2VideoRewind = "Launcher::HotKey::LowLevel::WebView2::Video::Rewind";
     public const string LowLevelKeyboardWebView2Hide = "Launcher::HotKey::LowLevel::WebView2::Hide";
-    public const string LowLevelKeyboardOverlayHide = "Launcher::HotKey::LowLevel::Overlay::Hide";
 
     // Passport
     public const string PassportRefreshToken = "Launcher::Passport::RefreshToken";
@@ -169,9 +167,6 @@ internal static class SettingKeys
     // Custom DLL Injection
     public const string LaunchCustomDllConfigs = "Launcher::Game::CustomDll::Configs";
 
-    public const string LaunchUsingOverlay = "Launcher::Game::Overlay";
-    public const string LaunchOverlaySelectedCatalogId = "Launcher::Game::Overlay::CatalogId";
-    public const string LaunchOverlayWindowIsVisible = "Launcher::Game::Overlay::Visible";
     public const string EnableBetaGameInstall = "Launcher::Game::Package::BetaGame::Enable";
     public const string LaunchOverridePackageConvertDirectoryPermissions = "Launcher::Game::Package::Convert::Directory::Permissions::Override";
     public const string OverridePhysicalDriverType = "Launcher::Game::Package::PhysicalDriver::Type::Override";

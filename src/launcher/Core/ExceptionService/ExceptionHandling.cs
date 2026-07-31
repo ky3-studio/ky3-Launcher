@@ -15,7 +15,6 @@ using Launcher.Win32;
 using System.Data.Common;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
 
 namespace Launcher.Core.ExceptionService;
 

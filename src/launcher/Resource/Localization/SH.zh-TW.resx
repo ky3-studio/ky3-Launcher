@@ -117,15 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AppDevNameAndVersion" xml:space="preserve">
-    <value>ky3 Launcher Dev {0}</value>
-  </data>
-  <data name="AppElevatedDevNameAndVersion" xml:space="preserve">
-    <value>ky3 Launcher Dev {0} [管理員]</value>
-  </data>
-  <data name="AppElevatedNameAndVersion" xml:space="preserve">
-    <value>ky3 Launcher {0} [管理員]</value>
-  </data>
   <data name="AppName" xml:space="preserve">
     <value>ky3 Launcher</value>
   </data>
@@ -218,15 +209,6 @@
   </data>
   <data name="ModelBindingAvatarPropertyWeaponAffix" xml:space="preserve">
     <value>精煉 {0}</value>
-  </data>
-  <data name="ModelBindingCultivationDaysOfWeek14" xml:space="preserve">
-    <value>週一/週四/週日</value>
-  </data>
-  <data name="ModelBindingCultivationDaysOfWeek25" xml:space="preserve">
-    <value>週二/週五/週日</value>
-  </data>
-  <data name="ModelBindingCultivationDaysOfWeek36" xml:space="preserve">
-    <value>週三/週六/週日</value>
   </data>
   <data name="ModelBindingGachaTypedWishSummaryAveragePull" xml:space="preserve">
     <value>{0:f2} 抽</value>
@@ -866,12 +848,6 @@
   <data name="ServiceBackgroundActivityDefaultDescription" xml:space="preserve">
     <value>準備中...</value>
   </data>
-  <data name="ServiceBackgroundActivityFullTrustInitialization" xml:space="preserve">
-    <value>外掛元件初始化</value>
-  </data>
-  <data name="ServiceBackgroundActivityFullTrustInitializationDescription" xml:space="preserve">
-    <value>僅在必要時執行</value>
-  </data>
   <data name="ServiceBackgroundActivityMetadataInitialization" xml:space="preserve">
     <value>遊戲後設資料</value>
   </data>
@@ -962,9 +938,6 @@
   <data name="ServiceGachaLogFactoryWeaponWishName" xml:space="preserve">
     <value>神鑄賦形</value>
   </data>
-  <data name="ServiceGachaLogLauncherCloudEndIdFetchFailed" xml:space="preserve">
-    <value>獲取雲端祈願記錄失敗</value>
-  </data>
   <data name="ServiceGachaLogUrlProviderAuthkeyRequestFailed" xml:space="preserve">
     <value>請求驗證金鑰失敗</value>
   </data>
@@ -1029,12 +1002,6 @@
   <data name="ServiceGameEnsureGameResourceQueryResourceInformation" xml:space="preserve">
     <value>下載遊戲資源索引</value>
   </data>
-  <data name="ServiceGameIslandFileSystemGetGameVersionFailed" xml:space="preserve">
-    <value>獲取本地遊戲版本失敗，無法獲取外掛配置資訊</value>
-  </data>
-  <data name="ServiceGameIslandTargetVersionFileNotExists" xml:space="preserve">
-    <value>尚未支援當前遊戲版本</value>
-  </data>
   <data name="ServiceGameLaunchExecutionCurrentSchemeNull" xml:space="preserve">
     <value>本地遊戲配置檔案損壞，請修復後重試</value>
   </data>
@@ -1061,15 +1028,6 @@
   </data>
   <data name="ServiceGameLaunchingHandlerEmbeddedYaeClientNotElevated" xml:space="preserve">
     <value>使用 Embedded Yae 前，需要以管理員許可權執行</value>
-  </data>
-  <data name="ServiceGameLaunchingHandlerEmbeddedYaeErrorSystemIntegrityPolicyViolation" xml:space="preserve">
-    <value>外掛載入失敗，可能是由於 Windows Defender 應用和瀏覽器控制 &gt; 智慧應用控制策略阻止了操作，請嘗試關閉。</value>
-  </data>
-  <data name="ServiceGameLaunchingHandlerEmbeddedYaeIslandNotEnabled" xml:space="preserve">
-    <value>使用 Embedded Yae 前，需要您瞭解相關風險並在「啟動遊戲」頁面開啟外掛功能</value>
-  </data>
-  <data name="ServiceGameLaunchingHandlerGameProcessStartRepositorySyncFailed" xml:space="preserve">
-    <value>在獲取必要的啟動遊戲元件時發生錯誤</value>
   </data>
   <data name="ServiceGameLocatorFileOpenPickerCommitText" xml:space="preserve">
     <value>選擇遊戲本體</value>
@@ -1112,9 +1070,6 @@
   <data name="ServiceGamePackageAdvancedDriverNoAvailableFreeSpace" xml:space="preserve">
     <value>磁碟空間不足</value>
   </data>
-  <data name="ServiceGamePackageAdvancedInstalling" xml:space="preserve">
-    <value>正在安裝遊戲</value>
-  </data>
   <data name="ServiceGamePackageAdvancedPredownloading" xml:space="preserve">
     <value>正在預下載資源</value>
   </data>
@@ -1153,12 +1108,6 @@
   </data>
   <data name="ServiceGitRepositoryOperationFailed" xml:space="preserve">
     <value>操作失敗</value>
-  </data>
-  <data name="ServiceLauncherUserGachaLogExpiredAt" xml:space="preserve">
-    <value>祈願記錄上傳服務有效期至</value>
-  </data>
-  <data name="ServiceInventoryRefreshByEmbeddedYaeErrorMessage" xml:space="preserve">
-    <value>請使用其他方法同步揹包物品</value>
   </data>
   <data name="ServiceMetadataDownloadSourceFilesFailed" xml:space="preserve">
     <value>一個或多個後設資料檔案下載失敗：{0}</value>
@@ -1201,9 +1150,6 @@
   </data>
   <data name="ServiceSignInSuccessReward" xml:space="preserve">
     <value>簽到成功，{0}×{1}</value>
-  </data>
-  <data name="ServiceUIGFImportInvalidItem" xml:space="preserve">
-    <value>不支援的物品, Id: {0}</value>
   </data>
   <data name="ServiceUserProcessCookieNoMid" xml:space="preserve">
     <value>輸入的 Cookie 必須包含 Mid</value>
@@ -1289,20 +1235,8 @@
   <data name="ViewAvatarPropertyHeader" xml:space="preserve">
     <value>我的角色</value>
   </data>
-  <data name="ViewAvatarPropertySyncDataButtonLabel" xml:space="preserve">
-    <value>同步角色資訊</value>
-  </data>
   <data name="ViewCardAchievementStatisticsTitle" xml:space="preserve">
     <value>成就統計</value>
-  </data>
-  <data name="ViewCardCalendarAllMaterialsHint" xml:space="preserve">
-    <value>全部材料副本均可挑戰</value>
-  </data>
-  <data name="ViewCardCalendarNoBirthdayAvatarHint" xml:space="preserve">
-    <value>當天沒有角色過生日</value>
-  </data>
-  <data name="ViewCardGachaStatisticsTitle" xml:space="preserve">
-    <value>保底計數</value>
   </data>
   <data name="ViewCardLaunchGameSelectAccountPlaceholder" xml:space="preserve">
     <value>選擇賬號或直接啟動</value>
@@ -1337,17 +1271,11 @@
   <data name="ViewControlStatisticsCardOrangeText" xml:space="preserve">
     <value>五星</value>
   </data>
-  <data name="ViewControlStatisticsCardPullText" xml:space="preserve">
-    <value>抽</value>
-  </data>
   <data name="ViewControlStatisticsCardPurpleText" xml:space="preserve">
     <value>四星</value>
   </data>
   <data name="ViewControlStatisticsCardToLastOrangeText" xml:space="preserve">
     <value>距上個五星</value>
-  </data>
-  <data name="ViewControlStatisticsCardToLastPurpleText" xml:space="preserve">
-    <value>距上個四星</value>
   </data>
   <data name="ViewControlStatisticsCardUpAveragePullText" xml:space="preserve">
     <value>UP 平均抽數</value>
@@ -1357,15 +1285,6 @@
   </data>
   <data name="ViewControlStatisticsCardNotUpText" xml:space="preserve">
     <value>歪</value>
-  </data>
-  <data name="ViewControlStatisticsSegmentedItemContentPrediction" xml:space="preserve">
-    <value>預測</value>
-  </data>
-  <data name="ViewControlStatisticsSegmentedItemContentProportion" xml:space="preserve">
-    <value>比例</value>
-  </data>
-  <data name="ViewControlStatisticsSegmentedItemContentStatistics" xml:space="preserve">
-    <value>統計</value>
   </data>
   <data name="ViewControlWebViewerCoreWebView2ProfileQueryInterfaceFailed" xml:space="preserve">
     <value>當前 WebView2 版本不支援管理配置，繼續使用可能會導致異常，請儘快升級</value>
@@ -1409,68 +1328,14 @@
   <data name="ViewDialogCultivateWeaponLevelTitle" xml:space="preserve">
     <value>設定武器等級</value>
   </data>
-  <data name="ViewDialogCultivateBatchAvatarLevelTarget" xml:space="preserve">
-    <value>角色目標等級</value>
-  </data>
-  <data name="ViewDialogCultivateBatchSkillATarget" xml:space="preserve">
-    <value>普通攻擊目標等級</value>
-  </data>
-  <data name="ViewDialogCultivateBatchSkillETarget" xml:space="preserve">
-    <value>元素戰技目標等級</value>
-  </data>
-  <data name="ViewDialogCultivateBatchSkillQTarget" xml:space="preserve">
-    <value>元素爆發目標等級</value>
-  </data>
-  <data name="ViewDialogCultivateBatchWeaponLevelTarget" xml:space="preserve">
-    <value>武器目標等級</value>
-  </data>
   <data name="ViewDialogCultivateProjectInputPlaceholder" xml:space="preserve">
     <value>在此處輸入計劃名稱</value>
   </data>
   <data name="ViewDialogCultivateLevelTitle" xml:space="preserve">
     <value>新增或更新到當前養成計劃</value>
   </data>
-  <data name="ViewDialogCultivateLevelAvatarLevel" xml:space="preserve">
-    <value>角色等級</value>
-  </data>
-  <data name="ViewDialogCultivateLevelFrom" xml:space="preserve">
-    <value>當前</value>
-  </data>
-  <data name="ViewDialogCultivateLevelTo" xml:space="preserve">
-    <value>目標</value>
-  </data>
-  <data name="ViewDialogCultivateLevelSkillA" xml:space="preserve">
-    <value>普通攻擊</value>
-  </data>
-  <data name="ViewDialogCultivateLevelSkillE" xml:space="preserve">
-    <value>元素戰技</value>
-  </data>
-  <data name="ViewDialogCultivateLevelSkillQ" xml:space="preserve">
-    <value>元素爆發</value>
-  </data>
   <data name="ViewDialogCultivateProjectTitle" xml:space="preserve">
     <value>建立新的養成計劃</value>
-  </data>
-  <data name="ViewDialogCultivatePromotionDeltaBatchTitle" xml:space="preserve">
-    <value>批次新增或更新到當前養成計劃</value>
-  </data>
-  <data name="ViewDialogCultivatePromotionDeltaPromoted" xml:space="preserve">
-    <value>已突破</value>
-  </data>
-  <data name="ViewDialogCultivatePromotionDeltaTitle" xml:space="preserve">
-    <value>新增或更新到當前養成計劃</value>
-  </data>
-  <data name="ViewDialogCultivationConsumptionSaveStrategyCreateNewEntry" xml:space="preserve">
-    <value>總是建立新的養成目標物品</value>
-  </data>
-  <data name="ViewDialogCultivationConsumptionSaveStrategyHeader" xml:space="preserve">
-    <value>儲存方式</value>
-  </data>
-  <data name="ViewDialogCultivationConsumptionSaveStrategyOverwriteExisting" xml:space="preserve">
-    <value>覆蓋存在的養成目標物品</value>
-  </data>
-  <data name="ViewDialogCultivationConsumptionSaveStrategyPreserveExisting" xml:space="preserve">
-    <value>保留存在的養成目標物品</value>
   </data>
   <data name="ViewDialogDailyNoteNotificationDailyTaskNotify" xml:space="preserve">
     <value>每日委託上線提醒</value>
@@ -1610,15 +1475,6 @@
   <data name="ViewDialogImportUIAFExportUIAFVersion" xml:space="preserve">
     <value>UIAF 版本</value>
   </data>
-  <data name="ViewDialogImportUIGFExportUIGFVersion" xml:space="preserve">
-    <value>UIGF 版本</value>
-  </data>
-  <data name="ViewDialogImportUIGFSubtitle" xml:space="preserve">
-    <value>選擇要匯入記錄的 UID</value>
-  </data>
-  <data name="ViewDialogImportUIGFTitle" xml:space="preserve">
-    <value>匯入 UIGF 檔案</value>
-  </data>
   <data name="ViewDialogLaunchGameAccountInputPlaceholder" xml:space="preserve">
     <value>在此處輸入名稱</value>
   </data>
@@ -1633,9 +1489,6 @@
   </data>
   <data name="ViewDialogLaunchGameInstallGameDirectoryCreationFailed" xml:space="preserve">
     <value>選擇的安裝路徑不存在且無法建立</value>
-  </data>
-  <data name="ViewDialogLaunchGameInstallGameDirectoryExistsFileSystemEntry" xml:space="preserve">
-    <value>選擇的安裝路徑存在檔案或資料夾</value>
   </data>
   <data name="ViewDialogLaunchGameInstallGameDirectoryInvalid" xml:space="preserve">
     <value>選擇的安裝路徑無效</value>
@@ -1706,15 +1559,6 @@
   <data name="ViewDialogUserAccountVerificationTitle" xml:space="preserve">
     <value>請輸入郵箱驗證碼</value>
   </data>
-  <data name="ViewDialogUserDocumentAction" xml:space="preserve">
-    <value>立即前往</value>
-  </data>
-  <data name="ViewDialogUserDocumentDescription" xml:space="preserve">
-    <value>進入文件頁面並按指示操作</value>
-  </data>
-  <data name="ViewDialogUserDocumentHeader" xml:space="preserve">
-    <value>操作文件</value>
-  </data>
   <data name="ViewDialogUserInputPlaceholder" xml:space="preserve">
     <value>在此處輸入包含 SToken 的 Cookie</value>
   </data>
@@ -1741,9 +1585,6 @@
   </data>
   <data name="ViewExceptionWindowStacktraceHeader" xml:space="preserve">
     <value>呼叫堆疊</value>
-  </data>
-  <data name="ViewFeedbackHeader" xml:space="preserve">
-    <value>反饋中心</value>
   </data>
   <data name="ViewGachaLogHeader" xml:space="preserve">
     <value>祈願記錄</value>
@@ -1792,9 +1633,6 @@
   </data>
   <data name="ViewHardChallengeHeader" xml:space="preserve">
     <value>幽境危戰</value>
-  </data>
-  <data name="ViewLauncherPassportHeader" xml:space="preserve">
-    <value>通行證</value>
   </data>
   <data name="ViewInfoBarPanelClearAllContent" xml:space="preserve">
     <value>清除所有通知</value>
@@ -1853,32 +1691,11 @@
   <data name="ViewModelAchievementUIAFExportPickerTitle" xml:space="preserve">
     <value>匯出 UIAF JSON 檔案到指定路徑</value>
   </data>
-  <data name="ViewModelAvatarPropertyBatchCultivateNoSelectedAvatar" xml:space="preserve">
-    <value>未選中任意角色</value>
-  </data>
-  <data name="ViewModelAvatarPropertyBatchCultivateProgressTitle" xml:space="preserve">
-    <value>獲取培養材料中，請稍候...</value>
-  </data>
-  <data name="ViewModelAvatarPropertyCalculateWeaponNull" xml:space="preserve">
-    <value>當前角色無法計算，請同步資訊後再試</value>
-  </data>
-  <data name="ViewModelAvatarPropertyFetch" xml:space="preserve">
-    <value>獲取資料中</value>
-  </data>
   <data name="ViewModelAvatarPropertySortDescriptionKindActivatedConstellationCount" xml:space="preserve">
     <value>命之座解鎖層數順序</value>
   </data>
-  <data name="ViewModelAvatarPropertySortDescriptionKindCurAttack" xml:space="preserve">
-    <value>攻擊力順序</value>
-  </data>
-  <data name="ViewModelAvatarPropertySortDescriptionKindCurDefense" xml:space="preserve">
-    <value>防禦力順序</value>
-  </data>
   <data name="ViewModelAvatarPropertySortDescriptionKindDefault" xml:space="preserve">
     <value>預設順序</value>
-  </data>
-  <data name="ViewModelAvatarPropertySortDescriptionKindElementMastery" xml:space="preserve">
-    <value>元素精通順序</value>
   </data>
   <data name="ViewModelAvatarPropertySortDescriptionKindFetterLevel" xml:space="preserve">
     <value>好感度順序</value>
@@ -1886,74 +1703,23 @@
   <data name="ViewModelAvatarPropertySortDescriptionKindLevelNumber" xml:space="preserve">
     <value>等級順序</value>
   </data>
-  <data name="ViewModelAvatarPropertySortDescriptionKindMaxHp" xml:space="preserve">
-    <value>生命值上限順序</value>
-  </data>
   <data name="ViewModelAvatarPropertySortDescriptionKindQuality" xml:space="preserve">
     <value>品質順序</value>
   </data>
   <data name="ViewModelAvatarPropertyTotalAvatarCountHint" xml:space="preserve">
     <value>共 {0} 位角色</value>
   </data>
-  <data name="ViewModelAvatatPropertyExportTextError" xml:space="preserve">
-    <value>複製角色詳情失敗</value>
-  </data>
-  <data name="ViewModelAvatatPropertyExportTextSuccess" xml:space="preserve">
-    <value>複製角色詳情成功</value>
-  </data>
   <data name="ViewModelComplexReliquarySetViewEmptyName" xml:space="preserve">
     <value>無聖遺物或散件</value>
-  </data>
-  <data name="ViewModelCultivationAddWarning" xml:space="preserve">
-    <value>養成計劃新增失敗</value>
   </data>
   <data name="ViewModelCultivationBatchAddCompleted" xml:space="preserve">
     <value>操作完成：新增 / 更新：{0} 個，跳過 {1} 個</value>
   </data>
-  <data name="ViewModelCultivationBatchAddIncompleted" xml:space="preserve">
-    <value>操作未全部完成：新增 / 更新：{0} 個，跳過 {1} 個</value>
-  </data>
   <data name="ViewModelCultivationClearInventoryContent" xml:space="preserve">
     <value>此操作不可逆，此計劃的揹包物品將會丟失</value>
   </data>
-  <data name="ViewModelCultivationClearInventoryProgress" xml:space="preserve">
-    <value>正在清空揹包物品</value>
-  </data>
   <data name="ViewModelCultivationClearInventoryTitle" xml:space="preserve">
     <value>確認要清空當前計劃下的所有揹包物品嗎？</value>
-  </data>
-  <data name="ViewModelCultivationConsumptionSaveNoItemHint" xml:space="preserve">
-    <value>選定的等級不需要養成材料</value>
-  </data>
-  <data name="ViewModelCultivationConsumptionSaveSkippedHint" xml:space="preserve">
-    <value>已存在該物品的養成專案</value>
-  </data>
-  <data name="ViewModelCultivationEntryAddNoConsumptionWarning" xml:space="preserve">
-    <value>未消耗任何材料</value>
-  </data>
-  <data name="ViewModelCultivationEntryAddSuccess" xml:space="preserve">
-    <value>已成功新增至當前養成計劃</value>
-  </data>
-  <data name="ViewModelCultivationEntryAddWarning" xml:space="preserve">
-    <value>請先前往養成計劃頁面建立計劃並選中</value>
-  </data>
-  <data name="ViewModelCultivationEntryViewDescriptionDefault" xml:space="preserve">
-    <value>重新新增物品以檢視養成描述</value>
-  </data>
-  <data name="ViewModelCultivationEntryViewPromoteOnlyHint" xml:space="preserve">
-    <value>僅突破</value>
-  </data>
-  <data name="ViewModelCultivationProjectAdded" xml:space="preserve">
-    <value>新增成功</value>
-  </data>
-  <data name="ViewModelCultivationProjectAlreadyExists" xml:space="preserve">
-    <value>不能新增名稱重複的計劃</value>
-  </data>
-  <data name="ViewModelCultivationProjectInvalidName" xml:space="preserve">
-    <value>不能新增名稱無效的計劃</value>
-  </data>
-  <data name="ViewModelCultivationRefreshInventoryProgress" xml:space="preserve">
-    <value>正在同步揹包物品</value>
   </data>
   <data name="ViewModelCultivationRemoveProjectContent" xml:space="preserve">
     <value>此操作不可逆，此計劃的養成物品與揹包材料將會丟失</value>
@@ -1961,26 +1727,8 @@
   <data name="ViewModelCultivationRemoveProjectTitle" xml:space="preserve">
     <value>確認要刪除當前計劃嗎？</value>
   </data>
-  <data name="ViewModelCultivationResinStatisticsBlossomOfRevelationTitle" xml:space="preserve">
-    <value>啟示之花</value>
-  </data>
-  <data name="ViewModelCultivationResinStatisticsBlossomOfWealthTitle" xml:space="preserve">
-    <value>藏金之花</value>
-  </data>
   <data name="ViewModelCultivationResinStatisticsItemRemainDays" xml:space="preserve">
     <value>還需 {0} 天</value>
-  </data>
-  <data name="ViewModelCultivationResinStatisticsNormalBossTitle" xml:space="preserve">
-    <value>世界 BOSS</value>
-  </data>
-  <data name="ViewModelCultivationResinStatisticsTalentAscensionTitle" xml:space="preserve">
-    <value>角色天賦素材</value>
-  </data>
-  <data name="ViewModelCultivationResinStatisticsWeaponAscensionTitle" xml:space="preserve">
-    <value>武器突破素材</value>
-  </data>
-  <data name="ViewModelCultivationResinStatisticsWeeklyBossTitle" xml:space="preserve">
-    <value>周常 BOSS</value>
   </data>
   <data name="ViewModelDailyNoteConfigWebhookUrlComplete" xml:space="preserve">
     <value>實時便箋 Webhook URL 配置成功</value>
@@ -2063,23 +1811,11 @@
   <data name="ViewModelGachaLogRemoveArchiveTitle" xml:space="preserve">
     <value>確定要刪除存檔 {0} 嗎？</value>
   </data>
-  <data name="ViewModelGachaLogRetrieveFromLauncherCloudProgress" xml:space="preserve">
-    <value>從雲服務同步祈願記錄</value>
-  </data>
-  <data name="ViewModelGachaLogUIGFExportPickerTitle" xml:space="preserve">
-    <value>匯出 UIGF JSON 檔案到指定路徑</value>
-  </data>
   <data name="ViewModelGachaLogUIGFImportSuccess" xml:space="preserve">
     <value>成功匯入 {0} 條祈願記錄</value>
   </data>
   <data name="ViewModelGachaLogUIGFExportSuccess" xml:space="preserve">
     <value>成功匯出 UID:{0} 的祈願記錄</value>
-  </data>
-  <data name="ViewModelGachaLogUploadToLauncherCloudProgress" xml:space="preserve">
-    <value>正在上傳到雲服務</value>
-  </data>
-  <data name="ViewModelGachaUIGFImportPickerTitile" xml:space="preserve">
-    <value>匯入 UIGF JSON 檔案</value>
   </data>
   <data name="ViewModelGameConfigurationCreateFailed" xml:space="preserve">
     <value>生成配置檔案失敗</value>
@@ -2210,32 +1946,14 @@
   <data name="ViewModelLaunchGameFixConfigurationFileSucceed" xml:space="preserve">
     <value>修復成功</value>
   </data>
-  <data name="ViewModelLaunchGameGamePathNullOrEmpty" xml:space="preserve">
-    <value>尚未設定遊戲目錄</value>
-  </data>
-  <data name="ViewModelLaunchGameIdentifyMonitorsAction" xml:space="preserve">
-    <value>識別顯示器</value>
-  </data>
   <data name="ViewModelLaunchGameGamePathNotSet" xml:space="preserve">
     <value>尚未設定遊戲路徑，請先在設定中配置遊戲目錄</value>
   </data>
   <data name="ViewModelLaunchGameSchemeNotSelected" xml:space="preserve">
     <value>尚未選擇任何伺服器</value>
   </data>
-  <data name="ViewModelLaunchGameSetGamePathButtonText" xml:space="preserve">
-    <value>設定遊戲目錄</value>
-  </data>
   <data name="ViewModelLaunchGameSwitchGameAccountFail" xml:space="preserve">
     <value>切換賬號失敗</value>
-  </data>
-  <data name="ViewModelNotifyIconRestartAsElevatedErrorHint" xml:space="preserve">
-    <value>在重啟時遇到問題，請手動重啟</value>
-  </data>
-  <data name="ViewModelOverlayCatalogHotKeyDisplayName" xml:space="preserve">
-    <value>熱鍵提示</value>
-  </data>
-  <data name="ViewModelOverlayCatalogIslandSwitchName" xml:space="preserve">
-    <value>快捷開關</value>
   </data>
   <data name="ViewModelRoleCombatHeraldry" xml:space="preserve">
     <value>已抵達{0}</value>
@@ -2282,12 +2000,6 @@
   <data name="ViewModelSettingSetDataFolderSuccess" xml:space="preserve">
     <value>設定資料目錄成功，重啟以應用更改</value>
   </data>
-  <data name="ViewModelSettingStorageRestartFailed" xml:space="preserve">
-    <value>重啟失敗，請手動重啟應用</value>
-  </data>
-  <data name="ViewModelSettingStorageSetDataFolderDescription" xml:space="preserve">
-    <value>選擇的資料夾不為空，將會覆蓋已存在的檔案</value>
-  </data>
   <data name="ViewModelSettingStorageSetDataFolderDescription2" xml:space="preserve">
     <value>不是有效的資料資料夾位置，請重新選擇</value>
   </data>
@@ -2302,9 +2014,6 @@
   </data>
   <data name="ViewModelSettingPatchDownloading" xml:space="preserve">
     <value>正在下載增量補丁...</value>
-  </data>
-  <data name="ViewModelSettingPatchDownloadingProgress" xml:space="preserve">
-    <value>正在下載增量補丁 {0}%</value>
   </data>
   <data name="ViewModelSettingPatchVerifyFailed" xml:space="preserve">
     <value>補丁校驗失敗</value>
@@ -2369,30 +2078,6 @@
   <data name="ViewModelTitleDataFolderHasReparsepoint" xml:space="preserve">
     <value>當前資料目錄 '{0}' 包含了一個或多個重新分析點（Reparse points），可能會導致部分依賴資料資料夾的功能無法正常工作，請前往設定更改路徑</value>
   </data>
-  <data name="ViewModelUIGFExportError" xml:space="preserve">
-    <value>匯出失敗</value>
-  </data>
-  <data name="ViewModelUIGFExportSuccess" xml:space="preserve">
-    <value>匯出成功</value>
-  </data>
-  <data name="ViewModelUIGFImportDuplicatedHk4eEntry" xml:space="preserve">
-    <value>匯入的 UIGF 檔案中包含 UID 重複的祈願記錄項</value>
-  </data>
-  <data name="ViewModelUIGFImportError" xml:space="preserve">
-    <value>匯入失敗</value>
-  </data>
-  <data name="ViewModelUIGFImportNoHk4eEntry" xml:space="preserve">
-    <value>匯入的 UIGF 檔案中不包含祈願資料</value>
-  </data>
-  <data name="ViewModelUIGFImportNoSelectedEntry" xml:space="preserve">
-    <value>請選擇至少一個 UID 以匯入資料</value>
-  </data>
-  <data name="ViewModelUIGFImportSuccess" xml:space="preserve">
-    <value>匯入成功</value>
-  </data>
-  <data name="ViewModelUIGFImportingProgressTitle" xml:space="preserve">
-    <value>匯入中</value>
-  </data>
   <data name="ViewModelUserAdded" xml:space="preserve">
     <value>使用者 [{0}] 新增成功</value>
   </data>
@@ -2425,12 +2110,6 @@
   </data>
   <data name="ViewModelYaeProcessNotElevatedTitle" xml:space="preserve">
     <value>程序許可權不足</value>
-  </data>
-  <data name="ViewOverlayDisableShowDamageTextToolTip" xml:space="preserve">
-    <value>移除戰鬥傷害跳字</value>
-  </data>
-  <data name="ViewOverlayLaunchGameHideQuestBannerToolTip" xml:space="preserve">
-    <value>移除地圖介面任務提示</value>
   </data>
   <data name="ViewPageAchievementAddArchive" xml:space="preserve">
     <value>建立新存檔</value>
@@ -2465,41 +2144,8 @@
   <data name="ViewPageAchievementSortIncompletedItemsFirst" xml:space="preserve">
     <value>優先未完成</value>
   </data>
-  <data name="ViewPageAnnouncementRedeemCodeCopySucceed" xml:space="preserve">
-    <value>兌換碼複製成功</value>
-  </data>
-  <data name="ViewPageAnnouncementRedeemCodeLabel" xml:space="preserve">
-    <value>前瞻直播兌換碼</value>
-  </data>
   <data name="ViewPageAnnouncementViewDetails" xml:space="preserve">
     <value>檢視詳情</value>
-  </data>
-  <data name="ViewPageAvatarPropertyCalculateAll" xml:space="preserve">
-    <value>所有角色與武器</value>
-  </data>
-  <data name="ViewPageAvatarPropertyCalculateCurrent" xml:space="preserve">
-    <value>當前角色與武器</value>
-  </data>
-  <data name="ViewPageAvatarPropertyCalculatePart" xml:space="preserve">
-    <value>部分角色與武器</value>
-  </data>
-  <data name="ViewPageAvatarPropertyDefaultDescription" xml:space="preserve">
-    <value>尚未獲取任何角色資訊</value>
-  </data>
-  <data name="ViewPageAvatarPropertyExportToTextLabel" xml:space="preserve">
-    <value>匯出文字到剪貼簿</value>
-  </data>
-  <data name="ViewPageAvatarPropertyHeader" xml:space="preserve">
-    <value>角色屬性</value>
-  </data>
-  <data name="ViewPageAvatarPropertyRefreshAction" xml:space="preserve">
-    <value>同步</value>
-  </data>
-  <data name="ViewPageAvatarPropertyRefreshFromHoyolabGameRecord" xml:space="preserve">
-    <value>從米遊社原神戰績同步</value>
-  </data>
-  <data name="ViewPageCultivateCalculate" xml:space="preserve">
-    <value>養成計算</value>
   </data>
   <data name="ViewPageCultivationAddProject" xml:space="preserve">
     <value>新建計劃</value>
@@ -2513,9 +2159,6 @@
   <data name="ViewPageCultivationAddProjectDescription" xml:space="preserve">
     <value>稍後可以前往其他頁面新增養成計劃項</value>
   </data>
-  <data name="ViewPageCultivationAvatarPropertyDescription" xml:space="preserve">
-    <value>新增我的角色與武器到養成計劃</value>
-  </data>
   <data name="ViewPageCultivationClearInventory" xml:space="preserve">
     <value>清空揹包物品</value>
   </data>
@@ -2528,15 +2171,6 @@
   <data name="ViewPageCultivationMaterialList" xml:space="preserve">
     <value>材料清單</value>
   </data>
-  <data name="ViewPageCultivationMaterialListIncompleteFirstLabel" xml:space="preserve">
-    <value>未集齊優先</value>
-  </data>
-  <data name="ViewPageCultivationMaterialListResinStatisticsLabel" xml:space="preserve">
-    <value>樹脂預估</value>
-  </data>
-  <data name="ViewPageCultivationMaterialListWorldLevelTitle" xml:space="preserve">
-    <value>世界等級</value>
-  </data>
   <data name="ViewPageCultivationMaterialStatistics" xml:space="preserve">
     <value>材料統計</value>
   </data>
@@ -2545,12 +2179,6 @@
   </data>
   <data name="ViewPageCultivationRefreshInventory" xml:space="preserve">
     <value>同步揹包物品</value>
-  </data>
-  <data name="ViewPageCultivationRefreshInventoryByCalculator" xml:space="preserve">
-    <value>透過養成計算器同步</value>
-  </data>
-  <data name="ViewPageCultivationRefreshInventoryByEmbeddedYae" xml:space="preserve">
-    <value>透過 Embedded Yae 同步</value>
   </data>
   <data name="ViewPageCultivationRemoveEntry" xml:space="preserve">
     <value>刪除清單</value>
@@ -2675,9 +2303,6 @@
   <data name="ViewPageDailyNoteVerify" xml:space="preserve">
     <value>驗證當前使用者與角色</value>
   </data>
-  <data name="ViewPageDailyNoteWeekActiveProgress" xml:space="preserve">
-    <value>礪行修遠</value>
-  </data>
   <data name="ViewPageFeedbackAutoSuggestBoxPlaceholder" xml:space="preserve">
     <value>搜尋問題與建議</value>
   </data>
@@ -2720,47 +2345,11 @@
   <data name="ViewPageGachaLogHint" xml:space="preserve">
     <value>尚未獲取任何祈願記錄</value>
   </data>
-  <data name="ViewPageGachaLogLauncherCloud" xml:space="preserve">
-    <value>雲</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudAfdianPurchaseDescription" xml:space="preserve">
-    <value>前往愛發電購買相關服務</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudAfdianPurchaseHeader" xml:space="preserve">
-    <value>購買 / 續費雲服務</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudDelete" xml:space="preserve">
-    <value>刪除此 UID 的雲端存檔</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudDeveloperHint" xml:space="preserve">
-    <value>開發者賬號無視服務到期時間</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudNoEntryHint" xml:space="preserve">
-    <value>無雲端記錄</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudNotAllowed" xml:space="preserve">
-    <value>雲服務時長不足</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudRetrieve" xml:space="preserve">
-    <value>下載此 UID 的雲端存檔</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudSpiralAbyssActivityDescription" xml:space="preserve">
-    <value>每期深淵首次上傳可免費獲得 3 天時長</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudSpiralAbyssActivityHeader" xml:space="preserve">
-    <value>上傳深淵記錄</value>
-  </data>
-  <data name="ViewPageGachaLogLauncherCloudUpload" xml:space="preserve">
-    <value>上傳當前的祈願存檔</value>
-  </data>
   <data name="ViewPageGachaLogImportAction" xml:space="preserve">
     <value>匯入</value>
   </data>
   <data name="ViewPageGachaLogImportDescription" xml:space="preserve">
     <value>匯入來自其它 App 的資料</value>
-  </data>
-  <data name="ViewPageGachaLogImportExportAction" xml:space="preserve">
-    <value>匯入/匯出記錄</value>
   </data>
   <data name="ViewPageGachaLogImportHeader" xml:space="preserve">
     <value>匯入 UIGF Json</value>
@@ -2776,9 +2365,6 @@
   </data>
   <data name="ViewPageGachaLogPivotAvatar" xml:space="preserve">
     <value>角色</value>
-  </data>
-  <data name="ViewPageGachaLogPivotCountdown" xml:space="preserve">
-    <value>計時</value>
   </data>
   <data name="ViewPageGachaLogPivotHistory" xml:space="preserve">
     <value>歷史</value>
@@ -2797,9 +2383,6 @@
   </data>
   <data name="ViewPageGachaLogCountdownSearchPlaceholder" xml:space="preserve">
     <value>搜尋角色/武器</value>
-  </data>
-  <data name="ViewPageGachaLogRecoverFromLauncherCloudDescription" xml:space="preserve">
-    <value>從雲恢復祈願記錄</value>
   </data>
   <data name="ViewPageGachaLogRefresh" xml:space="preserve">
     <value>重新整理</value>
@@ -2834,29 +2417,14 @@
   <data name="ViewPageGachaLogRemoveArchiveAction" xml:space="preserve">
     <value>刪除當前存檔</value>
   </data>
-  <data name="ViewPageGachaLogSelectArchivePlaceholder" xml:space="preserve">
-    <value>選擇存檔</value>
-  </data>
-  <data name="ViewPageGachaLogLazyRefresh" xml:space="preserve">
-    <value>懶載入</value>
-  </data>
   <data name="ViewPageGachaLogExportAction" xml:space="preserve">
     <value>匯出</value>
-  </data>
-  <data name="ViewPageGachaLogAvatarWishOrangeHistory" xml:space="preserve">
-    <value>角色活動祈願 · 五星曆史</value>
-  </data>
-  <data name="ViewPageGachaLogWeaponWishOrangeHistory" xml:space="preserve">
-    <value>武器活動祈願 · 五星曆史</value>
   </data>
   <data name="ViewPageHardChallengeNotEngaged" xml:space="preserve">
     <value>您暫未參與本次關卡哦</value>
   </data>
   <data name="ViewPageHardChallengeTime" xml:space="preserve">
     <value>戰鬥用時</value>
-  </data>
-  <data name="ViewPageHomeGreetingTextCommon1" xml:space="preserve">
-    <value>已經為你啟動了 {0} 次遊戲</value>
   </data>
   <data name="ViewPageHomeGreetingTextCommon2" xml:space="preserve">
     <value>你已經啟動了 Manjusaka {0} 次</value>
@@ -2866,9 +2434,6 @@
   </data>
   <data name="ViewPageHomeGreetingTextEasterEgg" xml:space="preserve">
     <value>你說的對，但是《》是由 DGP Studio 自主研發的一款...</value>
-  </data>
-  <data name="ViewPageHomeGreetingTextEpic1" xml:space="preserve">
-    <value>吶，旅行者，這是你來到提瓦特大陸的第 {0} 天哦</value>
   </data>
   <data name="ViewPageLauncherDatabaseOverview" xml:space="preserve">
     <value>詳情</value>
@@ -2945,12 +2510,6 @@
   <data name="ViewPageLauncherPassportCDNCloudHeader" xml:space="preserve">
     <value>雲 CDN 服務</value>
   </data>
-  <data name="ViewPageLauncherPassportGachaLogCloudDescription" xml:space="preserve">
-    <value>獲得時長後您將能夠透過我們的伺服器下載/上傳/刪除最多 5 個 UID 的祈願記錄。深境螺旋頁面中，每期挑戰首次上傳記錄時會獲得免費的時長！</value>
-  </data>
-  <data name="ViewPageLauncherPassportGachaLogCloudHeader" xml:space="preserve">
-    <value>雲祈願記錄服務</value>
-  </data>
   <data name="ViewPageLauncherPassportNewUserNameHint" xml:space="preserve">
     <value>請輸入新郵箱</value>
   </data>
@@ -2981,96 +2540,15 @@
   <data name="ViewPageLaunchGameAction" xml:space="preserve">
     <value>啟動遊戲</value>
   </data>
-  <data name="ViewPageLaunchGameAppearanceAspectRatioDescription" xml:space="preserve">
-    <value>快速切換到指定的解析度，啟動遊戲以儲存當前解析度</value>
-  </data>
-  <data name="ViewPageLaunchGameAppearanceAspectRatioHeader" xml:space="preserve">
-    <value>解析度</value>
-  </data>
-  <data name="ViewPageLaunchGameAppearanceAspectRatioPlaceHolder" xml:space="preserve">
-    <value>快捷設定解析度</value>
-  </data>
-  <data name="ViewPageLaunchGameAppearanceBorderlessDescription" xml:space="preserve">
-    <value>將視窗建立為彈出視窗，不帶框架</value>
-  </data>
-  <data name="ViewPageLaunchGameAppearanceExclusiveDescription" xml:space="preserve">
-    <value>與遊戲內瀏覽器不相容，切屏等操作也能使遊戲閃退</value>
-  </data>
-  <data name="ViewPageLaunchGameAppearanceFullscreenDescription" xml:space="preserve">
-    <value>覆蓋預設的全屏狀態</value>
-  </data>
-  <data name="ViewPageLaunchGameAppearancePlatformTypeDescription" xml:space="preserve">
-    <value>選擇平臺型別，不同的型別會影響遊戲如何呈現 UI</value>
-  </data>
-  <data name="ViewPageLaunchGameAppearanceScreenHeightDescription" xml:space="preserve">
-    <value>覆蓋預設螢幕高度</value>
-  </data>
-  <data name="ViewPageLaunchGameAppearanceScreenWidthDescription" xml:space="preserve">
-    <value>覆蓋預設螢幕寬度</value>
-  </data>
-  <data name="ViewPageLaunchGameArgumentsDescription" xml:space="preserve">
-    <value>在遊戲啟動時修改其預設行為</value>
-  </data>
-  <data name="ViewPageLaunchGameArgumentsHeader" xml:space="preserve">
-    <value>啟動引數</value>
-  </data>
-  <data name="ViewPageLaunchGameBetterGIDescription" xml:space="preserve">
-    <value>在遊戲啟動後嘗試啟動並使用 BetterGI 進行自動化任務</value>
-  </data>
-  <data name="ViewPageLaunchGameBetterGIHeader" xml:space="preserve">
-    <value>自動化任務</value>
-  </data>
   <data name="ViewPageLaunchGameDangerousDescriptionHint" xml:space="preserve">
     <value>本軟體及外掛功能屬於《米哈遊使用者協議》第十條第二款規定的“外掛、外掛或非經合法授權的第三方工具/服務”，您需要自行承擔因使用內容而引起的所有風險，本軟體無法且不會對您因前述風險而導致的任何損失或損害承擔責任。
 出於安全因素考慮，我們有權不經向您特別通知而對軟體及相關功能進行更新，或者對軟體的部分功能效果進行改變或限制。</value>
-  </data>
-  <data name="ViewPageLaunchGameDisableFogDescription" xml:space="preserve">
-    <value>移除光照渲染中的迷霧</value>
-  </data>
-  <data name="ViewPageLaunchGameDisableFogHeader" xml:space="preserve">
-    <value>移除迷霧</value>
-  </data>
-  <data name="ViewPageLaunchGameDisableFogOff" xml:space="preserve">
-    <value>保留</value>
-  </data>
-  <data name="ViewPageLaunchGameDisableFogOn" xml:space="preserve">
-    <value>移除</value>
-  </data>
-  <data name="ViewPageLaunchGameElevationDescription" xml:space="preserve">
-    <value>遊戲檔案管理/切換遊戲伺服器需要管理員許可權</value>
-  </data>
-  <data name="ViewPageLaunchGameEventCameraMoveHotSwitchHeader" xml:space="preserve">
-    <value>移除元素爆發鏡頭特寫</value>
-  </data>
-  <data name="ViewPageLaunchGameFixLowFovSceneDescription" xml:space="preserve">
-    <value>修正角色/隊伍配置/祈願/紀行等特殊介面的視野</value>
-  </data>
-  <data name="ViewPageLaunchGameFixLowFovSceneHeader" xml:space="preserve">
-    <value>特殊介面修正</value>
-  </data>
-  <data name="ViewPageLaunchGameFixLowFovSceneTeachingTipSubtitle" xml:space="preserve">
-    <value>啟用「調整視野」後，所有場景下的迷霧顯示將會遵循「移除迷霧」開關的狀態。若同時啟用了「特殊介面修正」，則會在原始視野小於等於 30 時，強制禁用迷霧渲染。這會讓你看到正常的祈願/紀行/角色等介面，但是在進入部分劇情時也會強制禁用迷霧。這不屬於軟體 BUG，不要向我們反饋。</value>
-  </data>
-  <data name="ViewPageLaunchGameFixLowFovSceneTeachingTipTitle" xml:space="preserve">
-    <value>視野與迷霧</value>
-  </data>
-  <data name="ViewPageLaunchGameHideQuestBannerHotSwitchDescription" xml:space="preserve">
-    <value>強制移除地圖介面左上角的任務提示</value>
-  </data>
-  <data name="ViewPageLaunchGameHideQuestBannerHotSwitchHeader" xml:space="preserve">
-    <value>關閉地圖橫幅</value>
-  </data>
-  <data name="ViewPageLaunchGameHotSwitchDescription" xml:space="preserve">
-    <value>遊戲啟動後可以實時切換</value>
   </data>
   <data name="ViewPageLaunchGameInjectionDescription" xml:space="preserve">
     <value>請您仔細甄別這些功能的危害性再選擇開啟這些功能</value>
   </data>
   <data name="ViewPageLaunchGameInjectionHeader" xml:space="preserve">
     <value>外掛</value>
-  </data>
-  <data name="ViewPageLaunchGameThirdPartyTools" xml:space="preserve">
-    <value>第三方外掛工具：</value>
   </data>
   <data name="ViewPageLaunchGameIslandConnected" xml:space="preserve">
     <value>已連線到遊戲，更改設定將會動態反映到遊戲中</value>
@@ -3082,59 +2560,14 @@
   <data name="ViewPageLaunchGameAutomationOptionsHeader" xml:space="preserve">
     <value>自動化選項</value>
   </data>
-  <data name="ViewPageLaunchGameIslandRedirectCombineEntryDescription" xml:space="preserve">
-    <value>在物品詳情中點選可合成數量時直接開啟合成頁面而不是地圖</value>
-  </data>
-  <data name="ViewPageLaunchGameIslandRedirectCombineEntryHeader" xml:space="preserve">
-    <value>重定向合成</value>
-  </data>
-  <data name="ViewPageLaunchGameIslandResinListItemAllowCondensedResinHeader" xml:space="preserve">
-    <value>使用濃縮樹脂領取獎勵</value>
-  </data>
-  <data name="ViewPageLaunchGameIslandResinListItemAllowFragileResinHeader" xml:space="preserve">
-    <value>使用脆弱樹脂領取獎勵</value>
-  </data>
-  <data name="ViewPageLaunchGameIslandResinListItemAllowOriginalResinHeader" xml:space="preserve">
-    <value>使用原粹樹脂領取獎勵</value>
-  </data>
-  <data name="ViewPageLaunchGameIslandResinListItemAllowPrimogemHeader" xml:space="preserve">
-    <value>使用原石領取獎勵</value>
-  </data>
-  <data name="ViewPageLaunchGameIslandResinListItemAllowTransientResinHeader" xml:space="preserve">
-    <value>使用須臾樹脂領取獎勵</value>
-  </data>
-  <data name="ViewPageLaunchGameIslandUsingTouchScreenHeader" xml:space="preserve">
-    <value>使用觸控輸入</value>
-  </data>
   <data name="ViewPageLaunchGameKillGameProcessAction" xml:space="preserve">
     <value>結束程序</value>
-  </data>
-  <data name="ViewPageLaunchGameMonitorsDescription" xml:space="preserve">
-    <value>在指定的顯示器上執行</value>
   </data>
   <data name="ViewPageLaunchGameOptionsHeader" xml:space="preserve">
     <value>遊戲選項</value>
   </data>
-  <data name="ViewPageLaunchGameOverlayDescription" xml:space="preserve">
-    <value>需要在設定中啟用通知區域圖示，可能需要啟用無邊框視窗選項來正確顯示</value>
-  </data>
-  <data name="ViewPageLaunchGameOverlayHeader" xml:space="preserve">
-    <value>懸浮窗</value>
-  </data>
-  <data name="ViewPageLaunchGameOverlayHideDescription" xml:space="preserve">
-    <value>設定懸浮窗（與遊戲一同啟動）的顯示/隱藏快捷鍵</value>
-  </data>
-  <data name="ViewPageLaunchGameOverlayHideHeader" xml:space="preserve">
-    <value>顯示/隱藏懸浮窗</value>
-  </data>
-  <data name="ViewPageLaunchGamePackageOperationInstall" xml:space="preserve">
-    <value>安裝遊戲</value>
-  </data>
   <data name="ViewPageLaunchGamePackageOperationPredownload" xml:space="preserve">
     <value>預下載</value>
-  </data>
-  <data name="ViewPageLaunchGamePackageOperationPredownloadCompleteBadgeContent" xml:space="preserve">
-    <value>已完成預下載</value>
   </data>
   <data name="ViewPageLaunchGamePackagePredownloadUnavailable" xml:space="preserve">
     <value>當前沒有要預下載的資源哦</value>
@@ -3145,35 +2578,14 @@
   <data name="ViewPageLaunchGamePackageOperationVerify" xml:space="preserve">
     <value>修復遊戲</value>
   </data>
-  <data name="ViewPageLaunchGamePlayTimeDescription" xml:space="preserve">
-    <value>在遊戲啟動後嘗試啟動並使用 Starward 進行遊戲時長統計</value>
-  </data>
-  <data name="ViewPageLaunchGamePlayTimeHeader" xml:space="preserve">
-    <value>時長統計</value>
-  </data>
-  <data name="ViewPageLaunchGameRemoveOpenTeamProgressDescription" xml:space="preserve">
-    <value>移除開啟隊伍配置介面時顯示的進度條</value>
-  </data>
-  <data name="ViewPageLaunchGameRemoveOpenTeamProgressHeader" xml:space="preserve">
-    <value>移除隊伍配置進度條</value>
-  </data>
   <data name="ViewPageLaunchGameSelectGamePath" xml:space="preserve">
     <value>選擇遊戲路徑</value>
   </data>
   <data name="ViewPageLaunchGameSelectGamePathHint" xml:space="preserve">
     <value>在下方列表中選中以切換到該路徑</value>
   </data>
-  <data name="ViewPageLaunchGameSwitchAccountDescription" xml:space="preserve">
-    <value>在遊戲內切換賬號，網路環境發生變化後需要重新手動檢測</value>
-  </data>
-  <data name="ViewPageLaunchGameSwitchAccountDetectAction" xml:space="preserve">
-    <value>檢測</value>
-  </data>
   <data name="ViewPageLaunchGameSwitchAccountExpired" xml:space="preserve">
     <value>MAC 地址不匹配，可能需要在遊戲中重新登入</value>
-  </data>
-  <data name="ViewPageLaunchGameSwitchAccountHeader" xml:space="preserve">
-    <value>檢測賬號</value>
   </data>
   <data name="ViewPageLaunchGameSwitchAccountRemoveToolTip" xml:space="preserve">
     <value>刪除</value>
@@ -3189,30 +2601,6 @@
   </data>
   <data name="ViewPageLaunchGameSwitchSchemeHeader" xml:space="preserve">
     <value>伺服器</value>
-  </data>
-  <data name="ViewPageLaunchGameTargetFovDescription" xml:space="preserve">
-    <value>調整相機視野，預設 45</value>
-  </data>
-  <data name="ViewPageLaunchGameTargetFovHeader" xml:space="preserve">
-    <value>調整視野</value>
-  </data>
-  <data name="ViewPageLaunchGameTargetFovHotSwitchHeader" xml:space="preserve">
-    <value>視野熱開關</value>
-  </data>
-  <data name="ViewPageLaunchGameTargetFpsHeader" xml:space="preserve">
-    <value>目標幀率</value>
-  </data>
-  <data name="ViewPageLaunchGameTargetFpsHotSwitchHeader" xml:space="preserve">
-    <value>幀率熱開關</value>
-  </data>
-  <data name="ViewPageLaunchGameTargetFpsTeachingTipSubtitle" xml:space="preserve">
-    <value>若在啟用此功能後幀率無法超過 60/顯示器幀率 但其他功能正常，那麼這一定不是軟體 BUG，不要向我們反饋。請自行檢查 遊戲設定/顯示卡驅動設定/顯示器設定 中是否未關閉（包括但不限於）垂直同步，最大幀率限制，智慧插幀等功能。</value>
-  </data>
-  <data name="ViewPageLaunchGameTargetFpsTeachingTipTitle" xml:space="preserve">
-    <value>無法解鎖幀率上限？</value>
-  </data>
-  <data name="ViewPageLaunchGameUnlockFpsDescription" xml:space="preserve">
-    <value>請在遊戲內關閉「垂直同步」選項，需要高效能的顯示卡以支援更高的幀率</value>
   </data>
   <data name="ViewPageLaunchGameUseHoyolabAccountDescription" xml:space="preserve">
     <value>使用當前選中的 米遊社 / HoYoLAB 使用者登入</value>
@@ -3288,12 +2676,6 @@
   </data>
   <data name="ViewPageSettingRememberWindowPlacementDescription" xml:space="preserve">
     <value>下次啟動時恢復上次關閉時的視窗大小和位置</value>
-  </data>
-  <data name="ViewPageSettingApperanceFirstDayOfWeekDescription" xml:space="preserve">
-    <value>選擇適合你的一週中的首日</value>
-  </data>
-  <data name="ViewPageSettingApperanceFirstDayOfWeekHeader" xml:space="preserve">
-    <value>一週中的首日</value>
   </data>
   <data name="ViewPageSettingApperanceHeader" xml:space="preserve">
     <value>外觀</value>
@@ -3410,18 +2792,6 @@
   <data name="ViewPageSettingElevatedModeRestartAction" xml:space="preserve">
     <value>以管理員身份重啟</value>
   </data>
-  <data name="ViewPageSettingEmptyHistoryVisibleDescription" xml:space="preserve">
-    <value>在祈願記錄頁面顯示或隱藏無記錄的歷史祈願活動</value>
-  </data>
-  <data name="ViewPageSettingEmptyHistoryVisibleHeader" xml:space="preserve">
-    <value>無記錄的歷史祈願活動</value>
-  </data>
-  <data name="ViewPageSettingEmptyHistoryVisibleOff" xml:space="preserve">
-    <value>隱藏</value>
-  </data>
-  <data name="ViewPageSettingEmptyHistoryVisibleOn" xml:space="preserve">
-    <value>顯示</value>
-  </data>
   <data name="ViewPageSettingFeedbackNavigate" xml:space="preserve">
     <value>前往反饋</value>
   </data>
@@ -3436,9 +2806,6 @@
   </data>
   <data name="ViewPageSettingGitHubNavigate" xml:space="preserve">
 <value>開源倉庫</value>
-  </data>
-  <data name="ViewPageSettingGachaLogHeader" xml:space="preserve">
-    <value>祈願記錄</value>
   </data>
   <data name="ViewPageSettingGameHeader" xml:space="preserve">
     <value>遊戲</value>
@@ -3478,9 +2845,6 @@
   </data>
   <data name="ViewPageSettingLauncherPassportDangerZoneHeader" xml:space="preserve">
     <value>危險操作</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportGachaLogExpiredAtHeader" xml:space="preserve">
-    <value>雲祈願記錄服務到期時間</value>
   </data>
   <data name="ViewPageSettingLauncherPassportHeader" xml:space="preserve">
     <value>通行證賬號</value>
@@ -3584,27 +2948,6 @@
   <data name="ViewPageSettingTranslateNavigate" xml:space="preserve">
     <value>貢獻翻譯</value>
   </data>
-  <data name="ViewPageSettingUIGFExportContent" xml:space="preserve">
-    <value>匯出</value>
-  </data>
-  <data name="ViewPageSettingUIGFExportImportDescription" xml:space="preserve">
-    <value>匯出/匯入 UIGF 4 檔案</value>
-  </data>
-  <data name="ViewPageSettingUIGFExportImportHeader" xml:space="preserve">
-    <value>資料遷移</value>
-  </data>
-  <data name="ViewPageSettingUIGFImportContent" xml:space="preserve">
-    <value>匯入</value>
-  </data>
-  <data name="ViewPageSettingUIGFUpgradeLegacyVersionContent" xml:space="preserve">
-    <value>升級較早版本的 UIGF 檔案</value>
-  </data>
-  <data name="ViewPageSettingUnobtainedWishItemVisibleDescription" xml:space="preserve">
-    <value>在「祈願記錄-角色」與「祈願記錄-武器」中顯示未抽取到的祈願物品</value>
-  </data>
-  <data name="ViewPageSettingUnobtainedWishItemVisibleHeader" xml:space="preserve">
-    <value>未抽取到的祈願物品</value>
-  </data>
   <data name="ViewPageSettingWebview2Header" xml:space="preserve">
     <value>Webview2 執行時</value>
   </data>
@@ -3665,15 +3008,6 @@
   <data name="ViewPageWiKiAvatarStoriesHeader" xml:space="preserve">
     <value>故事</value>
   </data>
-  <data name="ViewPageWiKiAvatarStrategyBilibiliButtonLabel" xml:space="preserve">
-    <value>嗶哩嗶哩 Wiki 角色攻略</value>
-  </data>
-  <data name="ViewPageWiKiAvatarStrategyChineseButtonLabel" xml:space="preserve">
-    <value>米遊社角色攻略</value>
-  </data>
-  <data name="ViewPageWiKiAvatarStrategyOverseaButtonLabel" xml:space="preserve">
-    <value>HoYoLAB 角色攻略</value>
-  </data>
   <data name="ViewPageWiKiAvatarTeamCombinationHeader" xml:space="preserve">
     <value>搭配角色</value>
   </data>
@@ -3686,26 +3020,14 @@
   <data name="ViewPageWiKiAvatarWeaponCombinationHeader" xml:space="preserve">
     <value>搭配武器</value>
   </data>
-  <data name="ViewPageWiKiGeneralAddToDevPlanButtonLabel" xml:space="preserve">
-    <value>新增到養成計劃</value>
-  </data>
-  <data name="ViewPageWiKiWeaponAfterAscensionTitle" xml:space="preserve">
-    <value>突破後</value>
-  </data>
   <data name="ViewPageWiKiWeaponAutoSuggestBoxPlaceHolder" xml:space="preserve">
     <value>篩選武器</value>
   </data>
   <data name="ViewPageWikiArchonQuestAutoSuggestBoxPlaceHolder" xml:space="preserve">
     <value>篩選任務</value>
   </data>
-  <data name="ViewPageWiKiWeaponBeforeAscensionTitle" xml:space="preserve">
-    <value>突破前</value>
-  </data>
   <data name="ViewPageWiKiWeaponStoryHeader" xml:space="preserve">
     <value>武器故事</value>
-  </data>
-  <data name="ViewPageWikiMonsterDropItems" xml:space="preserve">
-    <value>掉落物品</value>
   </data>
   <data name="ViewPeriodHeader" xml:space="preserve">
     <value>週期</value>
@@ -3794,21 +3116,6 @@
   <data name="ViewSpiralAbyssUploadRecord" xml:space="preserve">
     <value>上傳資料</value>
   </data>
-  <data name="ViewTitileUpdatePackageAvailableContent" xml:space="preserve">
-    <value>是否立即更新？</value>
-  </data>
-  <data name="ViewTitleAutoClicking" xml:space="preserve">
-    <value>自動連點</value>
-  </data>
-  <data name="ViewTitleAutoPressing" xml:space="preserve">
-    <value>自動連按</value>
-  </data>
-  <data name="ViewTitleMetadataInitializing" xml:space="preserve">
-    <value>正在初始化後設資料</value>
-  </data>
-  <data name="ViewTitleUpdatePackageAvailableTitle" xml:space="preserve">
-    <value> {0} 版本現已可用</value>
-  </data>
   <data name="ViewToolHeader" xml:space="preserve">
     <value>工具</value>
   </data>
@@ -3865,9 +3172,6 @@
   </data>
   <data name="ViewWebView2WindowLoadFailedHint" xml:space="preserve">
     <value>WebView2 載入失敗</value>
-  </data>
-  <data name="ViewWelcomeBase" xml:space="preserve">
-    <value>我們將為你下載最基本的影象資源</value>
   </data>
   <data name="ViewEmotionIconHeader" xml:space="preserve">
     <value>派蒙畫作</value>
@@ -3941,15 +3245,6 @@
   <data name="ViewWikiFoodSearchPlaceholder" xml:space="preserve">
     <value>搜尋食物...</value>
   </data>
-  <data name="ViewWikiFoodInventoryHeader" xml:space="preserve">
-    <value>揹包食物</value>
-  </data>
-  <data name="ViewWindowCompactWebViewTitle" xml:space="preserve">
-    <value>緊湊網頁視窗</value>
-  </data>
-  <data name="ViewWindowCompactWebView2HotKeyDisabledMessage" xml:space="preserve">
-    <value>以管理員身份執行以啟用全域性快捷鍵功能</value>
-  </data>
   <data name="ViewWindowExceptionClose" xml:space="preserve">
     <value>關閉</value>
   </data>
@@ -3958,24 +3253,6 @@
   </data>
   <data name="ViewWindowExceptionTitle" xml:space="preserve">
     <value>我們遇到了一點問題</value>
-  </data>
-  <data name="ViewWindowScriptingExecute" xml:space="preserve">
-    <value>執行</value>
-  </data>
-  <data name="ViewWindowScriptingTitle" xml:space="preserve">
-    <value>執行除錯指令碼</value>
-  </data>
-  <data name="WebAnnouncementTimeDaysBegin" xml:space="preserve">
-    <value>{0} 天后開始</value>
-  </data>
-  <data name="WebAnnouncementTimeDaysEnd" xml:space="preserve">
-    <value>{0} 天后結束</value>
-  </data>
-  <data name="WebAnnouncementTimeHoursBegin" xml:space="preserve">
-    <value>{0} 小時後開始</value>
-  </data>
-  <data name="WebAnnouncementTimeHoursEnd" xml:space="preserve">
-    <value>{0} 小時後結束</value>
   </data>
   <data name="WebAnnouncementTimeEnded" xml:space="preserve">
     <value>已結束</value>
@@ -4049,9 +3326,6 @@
   <data name="WebDailyNoteExtraTaskRewardReceived" xml:space="preserve">
     <value>「每日委託」獎勵已領取</value>
   </data>
-  <data name="WebDailyNoteHomeCoinRecovery" xml:space="preserve">
-    <value>預計 {0} {1:HH:mm} 達到儲存上限</value>
-  </data>
   <data name="WebDailyNoteHomeCoinRecoveryCompleted" xml:space="preserve">
     <value>洞天寶錢已達儲存上限</value>
   </data>
@@ -4060,9 +3334,6 @@
   </data>
   <data name="WebDailyNoteHomeLocked" xml:space="preserve">
     <value>尚未解鎖洞天</value>
-  </data>
-  <data name="WebDailyNoteResinRecovery" xml:space="preserve">
-    <value>將於 {0} {1:HH:mm} 後全部恢復</value>
   </data>
   <data name="WebDailyNoteResinRecoveryCompleted" xml:space="preserve">
     <value>原粹樹脂已完全恢復</value>
@@ -4136,24 +3407,6 @@
   <data name="WebEnkaResponseStatusCodeUnknown" xml:space="preserve">
     <value>未知的伺服器錯誤</value>
   </data>
-  <data name="WebGachaConfigTypeAvatarEventWish" xml:space="preserve">
-    <value>角色活動祈願</value>
-  </data>
-  <data name="WebGachaConfigTypeAvatarEventWish2" xml:space="preserve">
-    <value>角色活動祈願-2</value>
-  </data>
-  <data name="WebGachaConfigTypeChronicledWish" xml:space="preserve">
-    <value>集錄祈願</value>
-  </data>
-  <data name="WebGachaConfigTypeNoviceWish" xml:space="preserve">
-    <value>新手祈願</value>
-  </data>
-  <data name="WebGachaConfigTypePermanentWish" xml:space="preserve">
-    <value>常駐祈願</value>
-  </data>
-  <data name="WebGachaConfigTypeWeaponEventWish" xml:space="preserve">
-    <value>武器活動祈願</value>
-  </data>
   <data name="WebGameResourcePathCopySucceed" xml:space="preserve">
     <value>下載連結複製成功</value>
   </data>
@@ -4211,9 +3464,6 @@
   <data name="WindowIdentifyMonitorHeader" xml:space="preserve">
     <value>顯示器編號</value>
   </data>
-  <data name="UIViewMainTitleBarInvertTheme" xml:space="preserve">
-    <value>主題切換</value>
-  </data>
   <data name="ViewPageSettingAlwaysRunAsAdminText" xml:space="preserve">
     <value>始終以管理員身份執行</value>
   </data>
@@ -4246,27 +3496,6 @@
   </data>
   <data name="ServiceGachaLogAvatarIdNotFound" xml:space="preserve">
     <value>未找到角色 ID</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartOptionsHeader" xml:space="preserve">
-    <value>自定義啟動</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartDescription" xml:space="preserve">
-    <value>自定義啟動選項允許快速啟動其他路徑的程式，內的遊戲選項包括啟動引數將不會生效</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartCustomizeHeader" xml:space="preserve">
-    <value>使用者自定義程式啟動</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartPickPathHeader" xml:space="preserve">
-    <value>選擇啟動程式</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartPickPathDescription" xml:space="preserve">
-    <value>選擇需要啟動的程式路徑，以 '.exe' 結尾</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartOpenCommunityAction" xml:space="preserve">
-    <value>前往社群獲取分享的程式</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartGame" xml:space="preserve">
-    <value>啟動自定義程式</value>
   </data>
   <data name="ViewDialogLaunchGameAdvancedStartLoading" xml:space="preserve">
     <value>正在載入自定義啟動列表</value>
@@ -4309,9 +3538,6 @@
   </data>
   <data name="ViewDialogLaunchGameAdvancedStartStatusHeader" xml:space="preserve">
     <value>當前執行狀態</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartOpenDownloaderAction" xml:space="preserve">
-    <value>快速獲取並下載清單列表中的程式</value>
   </data>
   <data name="ViewDialogLaunchGameAdvancedStartUnknownServer" xml:space="preserve">
     <value>未知伺服器</value>
@@ -4395,23 +3621,8 @@
   <data name="ViewModelLaunchGameAdvancedStartProgramPathSaved" xml:space="preserve">
     <value>已儲存自定義啟動程式路徑</value>
   </data>
-  <data name="ViewPageLaunchGameAdvancedStartManager" xml:space="preserve">
-    <value>管理自定義程式啟動</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartListSetter" xml:space="preserve">
-    <value>設定程式清單源</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartGameDelayedStart" xml:space="preserve">
-    <value>啟動延遲啟動清單中程式</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartDelayedStartList" xml:space="preserve">
-    <value>延時啟動程式列表</value>
-  </data>
   <data name="ViewDialogLaunchGameAdvancedStartSourceDescription" xml:space="preserve">
     <value>填寫目標 json 格式的 http 連結</value>
-  </data>
-  <data name="ViewDialogLaunchGameAdvancedDelayedStartTitle" xml:space="preserve">
-    <value>延遲啟動程式清單表</value>
   </data>
   <data name="ViewDialogLaunchGameAdvancedStartSourceSetterTitle" xml:space="preserve">
     <value>程式列表獲取源設定</value>
@@ -4422,29 +3633,8 @@
   <data name="ViewDialogLaunchGameAdvancedStartSourceSetterSaveSuccess" xml:space="preserve">
     <value>儲存成功</value>
   </data>
-  <data name="ViewPageLaunchGameAdvancedStartDelayedStartListDelayedTime" xml:space="preserve">
-    <value>延遲（秒）</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartDelayedStartListPath" xml:space="preserve">
-    <value>應用路徑</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartDelayedStartListName" xml:space="preserve">
-    <value>應用名</value>
-  </data>
   <data name="ViewDialogLaunchGameAdvancedStartInfoBarMessage" xml:space="preserve">
     <value>將會下載到設定的資料目錄的 AdvancedStart 資料夾下，可前往設定調整或自行管理</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartCoStartHeader" xml:space="preserve">
-    <value>連帶啟動</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartCoStartDescription" xml:space="preserve">
-    <value>設定不同位置的啟動是否觸發延遲啟動</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartCoStartAdvancedHeader" xml:space="preserve">
-    <value>啟動自定義程式時觸發延遲啟動</value>
-  </data>
-  <data name="ViewPageLaunchGameAdvancedStartCoStartGameHeader" xml:space="preserve">
-    <value>啟動遊戲時觸發延遲啟動</value>
   </data>
   <data name="ViewPageSettingOpenSourceSupportHeader" xml:space="preserve">
     <value>開源支援</value>
@@ -4508,12 +3698,6 @@
   </data>
   <data name="ViewPageAvatarPropertyRefreshLabel" xml:space="preserve">
     <value>重新整理</value>
-  </data>
-  <data name="ViewPageAvatarPropertyWeaponAffixPrefix" xml:space="preserve">
-    <value>精煉</value>
-  </data>
-  <data name="ViewPageAvatarPropertyWeaponAffixSuffix" xml:space="preserve">
-    <value>階</value>
   </data>
   <data name="ViewPageHomeTabActivity" xml:space="preserve">
     <value>活動</value>
@@ -4686,9 +3870,6 @@
   <data name="ViewPageLaunchGameIslandHideMenuUidHeader" xml:space="preserve">
     <value>隱藏選單UID</value>
   </data>
-  <data name="ViewPageLaunchGameIslandFixLowFovHeader" xml:space="preserve">
-    <value>低視距修正</value>
-  </data>
   <data name="ViewPageLaunchGameIslandPortableCraftHeader" xml:space="preserve">
     <value>隨身合成臺</value>
   </data>
@@ -4703,9 +3884,6 @@
   </data>
   <data name="ViewPageLaunchGameIslandDisableQAnimHeader" xml:space="preserve">
     <value>移除Q動畫播放</value>
-  </data>
-  <data name="ViewPageLaunchGameIslandReloadHotkeyHeader" xml:space="preserve">
-    <value>過載配置熱鍵</value>
   </data>
   <data name="ViewPageLaunchGameIslandRemoveDamageTextHeader" xml:space="preserve">
     <value>移除戰鬥傷害數字</value>
@@ -4783,20 +3961,8 @@
   <data name="ViewPageLaunchGameCustomDllHeader" xml:space="preserve">
     <value>自定義外掛</value>
   </data>
-  <data name="ViewPageLaunchGameCustomDllDescription" xml:space="preserve">
-    <value>允許新增自定義 DLL 檔案作為外掛載入</value>
-  </data>
-  <data name="ViewPageLaunchGameCustomDllEnabledHeader" xml:space="preserve">
-    <value>啟用自定義外掛</value>
-  </data>
-  <data name="ViewPageLaunchGameCustomDllEnabledDescription" xml:space="preserve">
-    <value>開啟後，啟動遊戲時將載入下方列表中的 DLL 外掛</value>
-  </data>
   <data name="ViewPageLaunchGameCustomDllListHeader" xml:space="preserve">
     <value>DLL 檔案列表</value>
-  </data>
-  <data name="ViewPageLaunchGameCustomDllListEmpty" xml:space="preserve">
-    <value>尚未新增任何 DLL 檔案</value>
   </data>
   <data name="ViewPageLaunchGameCustomDllAdd" xml:space="preserve">
     <value>新增 DLL</value>
@@ -5552,20 +4718,8 @@
   <data name="ViewGuide7_4Text" xml:space="preserve">
     <value>本協議及隨附的隱私政策構成了您與開發者之間關於使用本軟體的唯一、完整且最終的協議，並自動取代雙方此前就此達成的任何口頭、書面或電子形式的宣告與共識。</value>
   </data>
-  <data name="ViewInventoryHeader" xml:space="preserve">
-    <value>揹包物品</value>
-  </data>
-  <data name="ViewInventoryTitle" xml:space="preserve">
-    <value>揹包武器</value>
-  </data>
   <data name="ViewInventoryInjectButton" xml:space="preserve">
     <value>外掛獲取</value>
-  </data>
-  <data name="ViewInventoryLoadButton" xml:space="preserve">
-    <value>讀取資料</value>
-  </data>
-  <data name="ViewInventoryDumpPathPlaceholder" xml:space="preserve">
-    <value>PacketDump 目錄路徑</value>
   </data>
   <data name="ViewInventoryStatusReady" xml:space="preserve">
     <value>點選“外掛獲取”開始</value>
@@ -5588,12 +4742,6 @@
   <data name="ViewInventoryWeaponType" xml:space="preserve">
     <value>武器型別</value>
   </data>
-  <data name="ViewInventoryStatusFindingProcess" xml:space="preserve">
-    <value>正在查詢遊戲程序...</value>
-  </data>
-  <data name="ViewInventoryStatusNoProcess" xml:space="preserve">
-    <value>未找到遊戲程序，請確保遊戲已啟動</value>
-  </data>
   <data name="ViewInventoryStatusInjecting" xml:space="preserve">
     <value>找到遊戲程序，正在載入外掛...</value>
   </data>
@@ -5612,9 +4760,6 @@
   <data name="ViewInventoryStatusNoData" xml:space="preserve">
     <value>未找到武器資料，請確保已捕獲 CmdId=24104 的資料包</value>
   </data>
-  <data name="ViewInventoryStatusDirNotExist" xml:space="preserve">
-    <value>資料目錄不存在</value>
-  </data>
   <data name="ViewInventoryStatusParseFailed" xml:space="preserve">
     <value>解析失敗</value>
   </data>
@@ -5623,12 +4768,6 @@
   </data>
   <data name="ViewInventoryTypeCount" xml:space="preserve">
     <value>武器種類:</value>
-  </data>
-  <data name="ViewInventoryColumnRefinement" xml:space="preserve">
-    <value>精煉</value>
-  </data>
-  <data name="ViewInventoryUnknownWeapon" xml:space="preserve">
-    <value>未知武器</value>
   </data>
   <data name="ViewInventoryStatusDone" xml:space="preserve">
     <value>解析完成: {0} 把武器，{1} 種</value>

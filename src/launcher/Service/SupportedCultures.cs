@@ -24,6 +24,7 @@ internal static class SupportedCultures
             ToNameValue(CultureInfo.GetCultureInfo("zh-Hans"), LocalizationSource.Launcher, "ms-appx:///Resource/Flag/cn.png"),
             ToNameValue(CultureInfo.GetCultureInfo("zh-TW"), LocalizationSource.Launcher, "ms-appx:///Resource/Flag/cn.png"),
             ToNameValue(CultureInfo.GetCultureInfo("en-US"), LocalizationSource.Launcher, "ms-appx:///Resource/Flag/us.png"),
+            ToNameValue(CultureInfo.GetCultureInfo("vi-VN"), LocalizationSource.Launcher, "ms-appx:///Resource/Flag/vn.png"),
         ];
     }
 

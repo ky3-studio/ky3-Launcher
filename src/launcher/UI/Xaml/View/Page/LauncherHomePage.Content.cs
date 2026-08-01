@@ -162,10 +162,15 @@ internal sealed partial class LauncherHomePage
     {
         for (int i = 0; i < BgIndicators.Children.Count; i++)
         {
-            if (BgIndicators.Children[i] is Border dot)
+            if (BgIndicators.Children[i] is Grid container
+                && container.Children.Count == 2
+                && container.Children[0] is Border ring
+                && container.Children[1] is Border dot)
             {
+                bool active = i == index;
+                ring.Opacity = active ? 1 : 0;
                 dot.Background = new SolidColorBrush(
-                    i == index ? Colors.White : Color.FromArgb(100, 255, 255, 255));
+                    active ? Colors.White : Color.FromArgb(150, 255, 255, 255));
             }
         }
     }

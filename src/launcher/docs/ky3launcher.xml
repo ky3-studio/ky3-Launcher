@@ -13955,6 +13955,7 @@
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="M:CommunityToolkit.Mvvm.Messaging.__Internals.__IMessengerExtensions.CreateAllMessagesRegistrator(Launcher.Service.AutoSignIn.AutoSignInTriggerService)">
             <summary>
@@ -14165,6 +14166,21 @@
             <typeparam name="TToken">The type of tokens that will be used to register messages.</typeparam>
             <param name="_">Dummy parameter, only used to disambiguate the method signature.</param>
             <returns>A message registration stub for <see cref="T:Launcher.ViewModel.HardChallenge.HardChallengeViewModel"/> objects.</returns>
+        </member>
+        <member name="M:CommunityToolkit.Mvvm.Messaging.__Internals.__IMessengerExtensions.CreateAllMessagesRegistrator(Launcher.ViewModel.Home.AnnouncementViewModel)">
+            <summary>
+            Creates a message registration stub for <see cref="T:Launcher.ViewModel.Home.AnnouncementViewModel"/> objects.
+            </summary>
+            <param name="_">Dummy parameter, only used to disambiguate the method signature.</param>
+            <returns>A message registration stub for <see cref="T:Launcher.ViewModel.Home.AnnouncementViewModel"/> objects.</returns>
+        </member>
+        <member name="M:CommunityToolkit.Mvvm.Messaging.__Internals.__IMessengerExtensions.CreateAllMessagesRegistratorWithToken``1(Launcher.ViewModel.Home.AnnouncementViewModel)">
+            <summary>
+            Creates a message registration stub for <see cref="T:Launcher.ViewModel.Home.AnnouncementViewModel"/> objects.
+            </summary>
+            <typeparam name="TToken">The type of tokens that will be used to register messages.</typeparam>
+            <param name="_">Dummy parameter, only used to disambiguate the method signature.</param>
+            <returns>A message registration stub for <see cref="T:Launcher.ViewModel.Home.AnnouncementViewModel"/> objects.</returns>
         </member>
         <member name="M:CommunityToolkit.Mvvm.Messaging.__Internals.__IMessengerExtensions.CreateAllMessagesRegistrator(Launcher.ViewModel.RoleCombat.RoleCombatViewModel)">
             <summary>

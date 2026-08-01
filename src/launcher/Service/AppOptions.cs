@@ -16,6 +16,7 @@ using Launcher.Service.Abstraction;
 using Launcher.Service.BackgroundImage;
 using Launcher.UI.Xaml.Media.Backdrop;
 using BackdropTypeEnum = Launcher.UI.Xaml.Media.Backdrop.BackdropType;
+using Launcher.ViewModel.Home;
 using Launcher.Web.Bridge;
 using Launcher.Web.Hoyolab;
 using System.Collections.Immutable;
@@ -110,7 +111,7 @@ internal sealed partial class AppOptions : DbStoreOptions
     public IObservableProperty<Region> Region { get => field ??= CreatePropertyForStructUsingCustom(SettingKeys.AnnouncementRegion, Web.Hoyolab.Region.CNGF01, Web.Hoyolab.Region.FromRegionString, Web.Hoyolab.Region.ToRegionString); }
 
     [field: MaybeNull]
-    public IObservableProperty<TimeSpan> CalendarServerTimeZoneOffset { get => field ??= CreatePropertyForStructUsingCustom(SettingKeys.CalendarServerTimeZoneOffset, ServerRegionTimeZone.CommonOffset, TimeSpan.Parse, static v => v.ToString()); }
+    public IObservableProperty<TimeSpan> CalendarServerTimeZoneOffset { get => field ??= CreatePropertyForStructUsingCustom(SettingKeys.CalendarServerTimeZoneOffset, ServerRegionTimeZone.CommonOffset, TimeSpan.Parse, static v => v.ToString()).WithValueChangedCallback(OnCalendarServerTimeZoneOffsetChanged, this); }
 
     [field: MaybeNull]
     public IObservableProperty<string> GeetestCustomCompositeUrl { get => field ??= CreateProperty(SettingKeys.GeetestCustomCompositeUrl, string.Empty); }
@@ -156,6 +157,18 @@ internal sealed partial class AppOptions : DbStoreOptions
                 AutoStartService autoStart = sp.GetRequiredService<AutoStartService>();
                 autoStart.SetStartup(true, value);
             }
+        }
+        catch (Exception ex)
+        {
+            SentrySdk.CaptureException(ex);
+        }
+    }
+
+    private static void OnCalendarServerTimeZoneOffsetChanged(TimeSpan value, AppOptions options)
+    {
+        try
+        {
+            Ioc.Default.GetRequiredService<IMessenger>().Send(new CalendarServerTimeZoneChangedMessage(value));
         }
         catch (Exception ex)
         {

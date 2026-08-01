@@ -28,7 +28,7 @@ namespace Launcher.ViewModel.Home;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class AnnouncementViewModel : Abstraction.ViewModel
+internal sealed partial class AnnouncementViewModel : Abstraction.ViewModel, IRecipient<CalendarServerTimeZoneChangedMessage>
 {
     private readonly IAnnouncementService announcementService;
     private readonly IMetadataService metadataService;
@@ -50,6 +50,11 @@ internal sealed partial class AnnouncementViewModel : Abstraction.ViewModel
 
     [ObservableProperty]
     public partial IAdvancedCollectionView<CalendarDay>? WeekDays { get; set; }
+
+    public void Receive(CalendarServerTimeZoneChangedMessage message)
+    {
+        InitializeCalendarAsync(CancellationToken).SafeForget();
+    }
 
     protected override ValueTask<bool> LoadOverrideAsync(CancellationToken token)
     {

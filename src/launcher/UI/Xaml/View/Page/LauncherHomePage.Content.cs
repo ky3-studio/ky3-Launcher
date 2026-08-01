@@ -343,22 +343,69 @@ internal sealed partial class LauncherHomePage
 
     private async Task LoadContentAsync()
     {
+        string? cachedJson = await TryReadContentCacheAsync();
+        bool shownFromCache = cachedJson != null && ParseAndRenderContent(cachedJson);
+
         try
         {
             using HttpClient client = _httpClientFactory!.CreateClient();
             client.Timeout = TimeSpan.FromSeconds(LauncherApiConstants.DownloadTimeoutSeconds);
             string response = await client.GetStringAsync(
-                LauncherApiConstants.MiHoYoGameContentApi);
+                LauncherApiConstants.GameContentApi);
 
+            if (shownFromCache && response == cachedJson)
+            {
+                return;
+            }
+
+            if (ParseAndRenderContent(response))
+            {
+                await TryWriteContentCacheAsync(response);
+            }
+            else if (!shownFromCache)
+            {
+                DispatcherQueue.TryEnqueue(() =>
+                {
+                    HideSkeleton(BannerShimmer);
+                    HideSkeleton(PostListSkeleton);
+                });
+            }
+        }
+        catch (Exception ex)
+        {
+            SentrySdk.AddBreadcrumb(BreadcrumbFactory2.CreateError(
+                "Content load failed", "LauncherHomePage",
+                [("Error", ex.Message)]));
+
+            if (!shownFromCache)
+            {
+                DispatcherQueue.TryEnqueue(() =>
+                {
+                    HideSkeleton(BannerShimmer);
+                    HideSkeleton(PostListSkeleton);
+                });
+            }
+        }
+    }
+
+    private bool ParseAndRenderContent(string response)
+    {
+        List<BannerData> banners = [];
+        List<PostData> activities = [];
+        List<PostData> announces = [];
+        List<PostData> infos = [];
+
+        try
+        {
             using JsonDocument json = JsonDocument.Parse(response);
             JsonElement content = json.RootElement.GetProperty("data").GetProperty("content");
 
-            if (content.TryGetProperty("banners", out JsonElement banners))
+            if (content.TryGetProperty("banners", out JsonElement bannerArray))
             {
-                foreach (JsonElement banner in banners.EnumerateArray())
+                foreach (JsonElement banner in bannerArray.EnumerateArray())
                 {
                     JsonElement image = banner.GetProperty("image");
-                    _bannerList.Add(new BannerData
+                    banners.Add(new BannerData
                     {
                         ImageUrl = image.GetProperty("url").GetString() ?? "",
                         Link = image.GetProperty("link").GetString() ?? "",
@@ -381,41 +428,85 @@ internal sealed partial class LauncherHomePage
                     switch (type)
                     {
                         case "POST_TYPE_ACTIVITY":
-                            _activityList.Add(item);
+                            activities.Add(item);
                             break;
                         case "POST_TYPE_ANNOUNCE":
-                            _announceList.Add(item);
+                            announces.Add(item);
                             break;
                         case "POST_TYPE_INFO":
-                            _infoList.Add(item);
+                            infos.Add(item);
                             break;
                     }
                 }
             }
-
-            DispatcherQueue.TryEnqueue(() =>
-            {
-                LoadBanners();
-                ShowTab("activity");
-                HideSkeleton(PostListSkeleton);
-
-                if (_bannerList.Count == 0)
-                {
-                    HideSkeleton(BannerShimmer);
-                }
-            });
         }
         catch (Exception ex)
         {
             SentrySdk.AddBreadcrumb(BreadcrumbFactory2.CreateError(
-                "Content load failed", "LauncherHomePage",
+                "Content parse failed", "LauncherHomePage",
                 [("Error", ex.Message)]));
+            return false;
+        }
 
-            DispatcherQueue.TryEnqueue(() =>
+        DispatcherQueue.TryEnqueue(() =>
+        {
+            _bannerTimer?.Stop();
+
+            _bannerList.Clear();
+            _bannerList.AddRange(banners);
+            _activityList.Clear();
+            _activityList.AddRange(activities);
+            _announceList.Clear();
+            _announceList.AddRange(announces);
+            _infoList.Clear();
+            _infoList.AddRange(infos);
+
+            string tabToShow = string.IsNullOrEmpty(_currentTab) ? "activity" : _currentTab;
+            _currentTab = "";
+
+            LoadBanners();
+            ShowTab(tabToShow);
+            HideSkeleton(PostListSkeleton);
+
+            if (_bannerList.Count == 0)
             {
                 HideSkeleton(BannerShimmer);
-                HideSkeleton(PostListSkeleton);
-            });
+            }
+        });
+
+        return true;
+    }
+
+    private static string GetContentCachePath()
+    {
+        return Path.Combine(BgCacheDir, $"content_{HashToHex(LauncherApiConstants.GameContentApi)}.json");
+    }
+
+    private static async Task<string?> TryReadContentCacheAsync()
+    {
+        try
+        {
+            string path = GetContentCachePath();
+            return File.Exists(path) ? await File.ReadAllTextAsync(path) : null;
+        }
+        catch
+        {
+            return null;
+        }
+    }
+
+    private static async Task TryWriteContentCacheAsync(string response)
+    {
+        try
+        {
+            Directory.CreateDirectory(BgCacheDir);
+            await File.WriteAllTextAsync(GetContentCachePath(), response);
+        }
+        catch (Exception ex)
+        {
+            SentrySdk.AddBreadcrumb(BreadcrumbFactory2.CreateError(
+                "Content cache write failed", "LauncherHomePage",
+                [("Error", ex.Message)]));
         }
     }
 

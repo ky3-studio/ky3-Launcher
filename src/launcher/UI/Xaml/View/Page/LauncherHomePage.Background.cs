@@ -46,7 +46,7 @@ internal sealed partial class LauncherHomePage
             using HttpClient client = _httpClientFactory!.CreateClient();
             client.Timeout = TimeSpan.FromSeconds(LauncherApiConstants.DownloadTimeoutSeconds);
             string response = await client.GetStringAsync(
-                LauncherApiConstants.MiHoYoGameInfoApi);
+                LauncherApiConstants.GameInfoApi);
 
             try
             {
@@ -111,7 +111,7 @@ internal sealed partial class LauncherHomePage
             foreach (JsonElement game in gameList.EnumerateArray())
             {
                 string? biz = game.GetProperty("game").GetProperty("biz").GetString();
-                if (biz != "hk4e_cn")
+                if (biz != LauncherApiConstants.GameContentBiz)
                 {
                     continue;
                 }
@@ -319,16 +319,20 @@ internal sealed partial class LauncherHomePage
 
     private static string GetBgImageCachePath(string imageUrl)
     {
-        byte[] hash = MD5.HashData(Encoding.UTF8.GetBytes(imageUrl));
-        return Path.Combine(BgCacheDir, $"bg_{Convert.ToHexString(hash)}.cache");
+        return Path.Combine(BgCacheDir, $"bg_{HashToHex(imageUrl)}.cache");
     }
 
     private static string GetVideoCachePath(string videoUrl)
     {
-        byte[] hash = MD5.HashData(Encoding.UTF8.GetBytes(videoUrl));
         string ext = Path.GetExtension(new Uri(videoUrl).AbsolutePath);
         if (string.IsNullOrEmpty(ext)) ext = ".webm";
-        return Path.Combine(BgCacheDir, $"bg_{Convert.ToHexString(hash)}{ext}");
+        return Path.Combine(BgCacheDir, $"bg_{HashToHex(videoUrl)}{ext}");
+    }
+
+    private static string HashToHex(string input)
+    {
+        byte[] hash = MD5.HashData(Encoding.UTF8.GetBytes(input));
+        return Convert.ToHexString(hash);
     }
 
     private static async Task<BitmapImage?> CreateBitmapFromData(byte[] data)
@@ -510,7 +514,8 @@ internal sealed partial class LauncherHomePage
             foreach (string file in Directory.GetFiles(BgCacheDir))
             {
                 string fileName = Path.GetFileName(file);
-                if (!validFiles.Contains(fileName))
+                if (!validFiles.Contains(fileName) &&
+                    !fileName.StartsWith("content_", StringComparison.OrdinalIgnoreCase))
                 {
                     FileOperationSafe.TryDelete(file);
                 }

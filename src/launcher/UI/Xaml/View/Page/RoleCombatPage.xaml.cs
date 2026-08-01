@@ -26,7 +26,6 @@ internal sealed partial class RoleCombatPage : ScopedPage, IRecipient<UserAndUid
     public RoleCombatPage()
     {
         InitializeComponent();
-        MainPivot.Items.Remove(StatisticsPivotItem);
         Unloaded += OnRoleCombatPageUnloaded;
     }
 

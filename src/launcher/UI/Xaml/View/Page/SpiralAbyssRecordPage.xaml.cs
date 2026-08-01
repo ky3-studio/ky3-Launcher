@@ -26,7 +26,6 @@ internal sealed partial class SpiralAbyssRecordPage : ScopedPage, IRecipient<Use
     public SpiralAbyssRecordPage()
     {
         InitializeComponent();
-        MainPivot.Items.Remove(StatisticsPivotItem);
     }
 
     public void Receive(UserAndUidChangedMessage message)

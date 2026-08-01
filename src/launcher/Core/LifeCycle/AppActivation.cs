@@ -225,7 +225,6 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
         [
             ConfigureSentryIpAsync(),
             serviceProvider.GetRequiredService<HotKeyOptions>().InitializeAsync().AsTask(),
-            serviceProvider.GetRequiredService<LauncherUserOptions>().InitializeAsync().AsTask(),
             serviceProvider.GetRequiredService<IMetadataService>().InitializeInternalAsync().AsTask(),
             serviceProvider.GetRequiredService<IQuartzService>().StartAsync()
         ]).ConfigureAwait(false);

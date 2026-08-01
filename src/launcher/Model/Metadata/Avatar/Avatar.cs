@@ -13,7 +13,6 @@ using Launcher.Model.Metadata.Converter;
 using Launcher.Model.Metadata.Item;
 using Launcher.Model.Primitive;
 using Launcher.UI.Xaml.Data;
-using Launcher.ViewModel.Complex;
 using Launcher.ViewModel.GachaLog;
 using Launcher.ViewModel.Wiki;
 using System.Collections.Immutable;
@@ -67,9 +66,6 @@ internal partial class Avatar : IDefaultIdentity<AvatarId>,
     public required AvatarNameCard NameCard { get; init; }
 
     public TraceEffect? TraceEffect { get; init; }
-
-    [JsonIgnore]
-    public AvatarCollocationView? CollocationView { get; set; }
 
     [JsonIgnore]
     public CookBonusView? CookBonusView { get; set; }

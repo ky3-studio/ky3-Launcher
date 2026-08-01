@@ -8,7 +8,6 @@
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.ComponentModel;
-using Microsoft.UI.Xaml.Controls;
 using Launcher.Core.Logging;
 using Launcher.Service.Metadata;
 using Launcher.Service.Metadata.ContextAbstraction;
@@ -16,10 +15,7 @@ using Launcher.Service.Notification;
 using Launcher.Service.RoleCombat;
 using Launcher.Service.User;
 using Launcher.UI.Xaml.Data;
-using Launcher.ViewModel.Complex;
 using Launcher.ViewModel.User;
-using Launcher.Web.Launcher.Response;
-using Launcher.Web.Launcher.RoleCombat;
 using System.Collections.ObjectModel;
 
 namespace Launcher.ViewModel.RoleCombat;
@@ -29,7 +25,6 @@ namespace Launcher.ViewModel.RoleCombat;
 internal sealed partial class RoleCombatViewModel : Abstraction.ViewModel, IRecipient<UserAndUidChangedMessage>
 {
     private readonly IRoleCombatService roleCombatService;
-    private readonly IServiceProvider serviceProvider;
     private readonly IMetadataService metadataService;
     private readonly ITaskContext taskContext;
     private readonly IUserService userService;
@@ -42,8 +37,6 @@ internal sealed partial class RoleCombatViewModel : Abstraction.ViewModel, IReci
 
     [ObservableProperty]
     public partial IAdvancedCollectionView<RoleCombatView>? RoleCombatEntries { get; set; }
-
-    public partial LauncherRoleCombatDatabaseViewModel LauncherRoleCombatDatabaseViewModel { get; }
 
     public void Receive(UserAndUidChangedMessage message)
     {
@@ -135,35 +128,6 @@ internal sealed partial class RoleCombatViewModel : Abstraction.ViewModel, IReci
 
                 await taskContext.SwitchToMainThreadAsync();
                 RoleCombatEntries.MoveCurrentTo(RoleCombatEntries.Source.FirstOrDefault(s => s.Engaged) ?? RoleCombatEntries.Source.FirstOrDefault());
-            }
-        }
-    }
-
-    [Command("UploadRoleCombatRecordCommand")]
-    private async Task UploadRoleCombatRecordAsync()
-    {
-        SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Upload role combat record", "RoleCombatViewModel.Command"));
-
-        if (await userService.GetCurrentUserAndUidAsync().ConfigureAwait(false) is not { } userAndUid)
-        {
-            messenger.Send(InfoBarMessage.Warning(SH.MustSelectUserAndUid));
-            return;
-        }
-
-        using (IServiceScope scope = serviceProvider.CreateScope())
-        {
-            LauncherRoleCombatClient roleCombatClient = scope.ServiceProvider.GetRequiredService<LauncherRoleCombatClient>();
-            if (await roleCombatClient.GetPlayerRecordAsync(userAndUid).ConfigureAwait(false) is { } record)
-            {
-                LauncherResponse response = await roleCombatClient.UploadRecordAsync(record).ConfigureAwait(false);
-
-                messenger.Send(InfoBarMessage.Any(
-                    response is { ReturnCode: 0 } ? InfoBarSeverity.Success : InfoBarSeverity.Warning,
-                    response.GetLocalizationMessageOrMessage()));
-            }
-            else
-            {
-                messenger.Send(InfoBarMessage.Warning(SH.MustSelectUserAndUid));
             }
         }
     }

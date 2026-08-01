@@ -9,4 +9,4 @@
 
 namespace Launcher.Web.Endpoint.Launcher;
 
-internal interface ILauncherEndpoints : IHomaEndpoints, IInfrastructureEndpoints;
+internal interface ILauncherEndpoints : IInfrastructureEndpoints;

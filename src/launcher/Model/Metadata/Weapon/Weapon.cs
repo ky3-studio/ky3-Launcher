@@ -13,7 +13,6 @@ using Launcher.Model.Metadata.Converter;
 using Launcher.Model.Metadata.Item;
 using Launcher.Model.Primitive;
 using Launcher.UI.Xaml.Data;
-using Launcher.ViewModel.Complex;
 using Launcher.ViewModel.GachaLog;
 using System.Collections.Immutable;
 
@@ -49,9 +48,6 @@ internal sealed partial class Weapon : IDefaultIdentity<WeaponId>,
     public NameDescriptions? Affix { get; init; }
 
     public required ImmutableArray<MaterialId> CultivationItems { get; init; }
-
-    [JsonIgnore]
-    public WeaponCollocationView? CollocationView { get; set; }
 
     [JsonIgnore]
     public List<Material>? CultivationItemsView { get; set; }

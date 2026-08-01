@@ -15,8 +15,6 @@ using Launcher.Core.IO.Http.Proxy;
 using Launcher.Core.Setting;
 using Launcher.Service.BackgroundActivity;
 using Launcher.Web.Launcher;
-using Launcher.Web.Launcher.Response;
-using Launcher.Web.Response;
 using System.Collections.Immutable;
 using System.IO;
 using System.IO.Compression;
@@ -30,7 +28,6 @@ internal sealed partial class GitRepositoryService : IGitRepositoryService
 {
     private readonly AsyncKeyedLock<string> repoLock = new();
     private readonly BackgroundActivityOptions backgroundActivityOptions;
-    private readonly IServiceProvider serviceProvider;
     private readonly ITaskContext taskContext;
 
     [GeneratedConstructor]
@@ -62,35 +59,10 @@ internal sealed partial class GitRepositoryService : IGitRepositoryService
                 return new(true, directory);
             }
 
-            ImmutableArray<GitRepository> infos;
-            try
+            ImmutableArray<GitRepository> infos = GetFallbackRepositories(name);
+            if (infos.IsDefaultOrEmpty)
             {
-                using (IServiceScope scope = serviceProvider.CreateScope())
-                {
-                    LauncherInfrastructureClient infrastructureClient = scope.ServiceProvider.GetRequiredService<LauncherInfrastructureClient>();
-                    LauncherResponse<ImmutableArray<GitRepository>> response = await infrastructureClient.GetGitRepositoryAsync(name).ConfigureAwait(false);
-                    if (!ResponseValidator.TryValidate(response, scope.ServiceProvider, out infos))
-                    {
-                        if (hasValidLocalRepo)
-                        {
-                            return new(true, directory);
-                        }
-
-                        infos = GetFallbackRepositories(name);
-                        if (infos.IsDefaultOrEmpty)
-                        {
-                            return new(false, default);
-                        }
-                    }
-                }
-            }
-            catch (Exception)
-            {
-                infos = GetFallbackRepositories(name);
-                if (infos.IsDefaultOrEmpty)
-                {
-                    return new(false, default);
-                }
+                return new(false, default);
             }
 
             BackgroundActivity.BackgroundActivity activity = GetActivityByName(name);

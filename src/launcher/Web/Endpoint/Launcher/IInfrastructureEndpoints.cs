@@ -11,19 +11,10 @@ namespace Launcher.Web.Endpoint.Launcher;
 
 internal interface IInfrastructureEndpoints :
     IInfrastructureEnkaEndpoints,
-    IInfrastructureStrategyEndpoints,
     IInfrastructureFeatureEndpoints,
-    IInfrastructureMetadataEndpoints,
     IInfrastructurePatchEndpoints,
-    IInfrastructureGitRepositoryEndpoints,
-    IInfrastructureRootAccess,
-    IInfrastructureManagementEndpoints
+    IInfrastructureRootAccess
 {
-    string Ip()
-    {
-        return $"{Root}/ip";
-    }
-
     string IpString()
     {
         return $"{Root}/ips";

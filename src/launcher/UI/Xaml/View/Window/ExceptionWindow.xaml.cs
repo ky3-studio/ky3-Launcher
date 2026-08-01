@@ -87,7 +87,7 @@ internal sealed partial class ExceptionWindow : Microsoft.UI.Xaml.Window, INotif
         Bindings.Update();
         if (!string.IsNullOrWhiteSpace(Comment))
         {
-            string? email = await Ioc.Default.GetRequiredService<LauncherUserOptions>().GetActualUserNameAsync().ConfigureAwait(true);
+            string? email = null;
             SentrySdk.CaptureFeedback(Comment, contactEmail: email, associatedEventId: associatedEventId);
         }
 

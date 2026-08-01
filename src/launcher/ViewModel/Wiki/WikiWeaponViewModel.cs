@@ -11,7 +11,6 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using Launcher.Core.Logging;
 using Launcher.Model.Metadata.Item;
 using Launcher.Model.Metadata.Weapon;
-using Launcher.Service.Launcher;
 using Launcher.Service.Metadata;
 using Launcher.Service.Metadata.ContextAbstraction;
 using Launcher.UI.Xaml.Control.AutoSuggestBox;
@@ -25,7 +24,6 @@ namespace Launcher.ViewModel.Wiki;
 [Service(ServiceLifetime.Scoped)]
 internal sealed partial class WikiWeaponViewModel : Abstraction.ViewModel
 {
-    private readonly ILauncherSpiralAbyssStatisticsCache LauncherCache;
     private readonly IMetadataService metadataService;
     private readonly IHttpClientFactory httpClientFactory;
     private readonly ITaskContext taskContext;
@@ -66,7 +64,7 @@ internal sealed partial class WikiWeaponViewModel : Abstraction.ViewModel
         ImmutableArray<Weapon> weapons = [.. metadataContext.Weapons.OrderByDescending(weapon => weapon.Sort)];
         SearchData searchData = SearchData.CreateForWikiWeapon(weapons);
 
-        await CombineComplexDataAsync(weapons, metadataContext).ConfigureAwait(false);
+        CombineComplexData(weapons, metadataContext);
 
         IAdvancedCollectionView<Weapon> weaponsView;
         using (await EnterCriticalSectionAsync().ConfigureAwait(false))
@@ -126,26 +124,8 @@ internal sealed partial class WikiWeaponViewModel : Abstraction.ViewModel
         }
     }
 
-    private async ValueTask CombineComplexDataAsync(ImmutableArray<Weapon> weapons, WikiWeaponMetadataContext context)
+    private static void CombineComplexData(ImmutableArray<Weapon> weapons, WikiWeaponMetadataContext context)
     {
-        try
-        {
-            LauncherSpiralAbyssStatisticsMetadataContext context2 = await metadataService.GetContextAsync<LauncherSpiralAbyssStatisticsMetadataContext>().ConfigureAwait(false);
-            await LauncherCache.InitializeForWikiWeaponViewAsync(context2).ConfigureAwait(false);
-
-            if (LauncherCache.WeaponCollocations is { } collocations)
-            {
-                foreach (Weapon weapon in weapons)
-                {
-                    weapon.CollocationView = collocations.GetValueOrDefault(weapon.Id);
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            SentrySdk.AddBreadcrumb($"Wiki weapon collocation init failed: {ex.Message}", category: "Wiki", level: BreadcrumbLevel.Warning);
-        }
-
         foreach (Weapon weapon in weapons)
         {
             weapon.CultivationItemsView ??= [.. weapon.CultivationItems.Select(i => context.IdMaterialMap.GetValueOrDefault(i, Material.Default))];

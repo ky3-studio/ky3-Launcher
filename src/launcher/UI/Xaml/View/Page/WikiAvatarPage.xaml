@@ -21,7 +21,6 @@
     xmlns:shuxdcs="using:Launcher.UI.Xaml.Data.Converter.Specialized"
     xmlns:shuxm="using:Launcher.UI.Xaml.Markup"
     xmlns:shuxvs="using:Launcher.UI.Xaml.View.Specialized"
-    xmlns:shvc="using:Launcher.ViewModel.Complex"
     xmlns:shvw="using:Launcher.ViewModel.Wiki"
     d:DataContext="{d:DesignInstance Type=shvw:WikiAvatarViewModel}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
@@ -149,107 +148,6 @@
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
                         Text="{Binding Name}"/>
-                </shuxcc:HorizontalCard.Right>
-            </shuxcc:HorizontalCard>
-        </DataTemplate>
-
-        <DataTemplate x:Key="CollocationTemplate" x:DataType="shvc:CollocationView">
-            <shuxcc:HorizontalCard>
-                <shuxcc:HorizontalCard.Left>
-                    <shuxc:ItemIcon
-                        Width="48"
-                        Height="48"
-                        Icon="{Binding Icon}"
-                        Quality="{Binding Quality}"/>
-                </shuxcc:HorizontalCard.Left>
-                <shuxcc:HorizontalCard.Right>
-                    <StackPanel Margin="8,0,0,0" HorizontalAlignment="Left">
-                        <TextBlock Text="{Binding Name}"/>
-                        <StackPanel Orientation="Horizontal" Spacing="4">
-                            <TextBlock
-                                Opacity="0.7"
-                                Style="{StaticResource CaptionTextBlockStyle}"
-                                Text="{Binding Rate}"/>
-                            <shuxct:RateDeltaTextBlock
-                                Opacity="0.7"
-                                Text="{Binding RateDelta}"
-                                TextStyle="{StaticResource CaptionTextBlockStyle}"/>
-                        </StackPanel>
-                    </StackPanel>
-                </shuxcc:HorizontalCard.Right>
-            </shuxcc:HorizontalCard>
-        </DataTemplate>
-
-        <DataTemplate x:Key="CollocationReliquaryTemplate" x:DataType="shvc:ReliquarySetView">
-            <shuxcc:HorizontalCard>
-                <shuxcc:HorizontalCard.Left>
-                    <cwc:SwitchPresenter Value="{Binding Icons.Count, Mode=OneWay}">
-                        <cwc:Case IsDefault="True">
-                            <cwc:Case.Value>
-                                <x:Int32>0</x:Int32>
-                            </cwc:Case.Value>
-                            <Grid>
-                                <shuxc:ItemIcon
-                                    Width="48"
-                                    Height="48"
-                                    Icon="{StaticResource UI_ItemIcon_None}"
-                                    Quality="QUALITY_ORANGE"/>
-                            </Grid>
-                        </cwc:Case>
-                        <cwc:Case>
-                            <cwc:Case.Value>
-                                <x:Int32>1</x:Int32>
-                            </cwc:Case.Value>
-                            <Grid>
-                                <shuxc:ItemIcon
-                                    Width="48"
-                                    Height="48"
-                                    Icon="{Binding Icons[0]}"
-                                    Quality="QUALITY_ORANGE"/>
-                            </Grid>
-                        </cwc:Case>
-                        <cwc:Case>
-                            <cwc:Case.Value>
-                                <x:Int32>2</x:Int32>
-                            </cwc:Case.Value>
-                            <Grid>
-                                <shuxc:ItemIcon
-                                    Width="48"
-                                    Height="48"
-                                    Quality="QUALITY_ORANGE"/>
-                                <shuxci:CachedImage
-                                    Width="32"
-                                    Margin="2,2,0,0"
-                                    HorizontalAlignment="Left"
-                                    VerticalAlignment="Top"
-                                    Source="{Binding Icons[0]}"/>
-                                <shuxci:CachedImage
-                                    Width="32"
-                                    Margin="0,0,2,2"
-                                    HorizontalAlignment="Right"
-                                    VerticalAlignment="Bottom"
-                                    Source="{Binding Icons[1]}"/>
-                            </Grid>
-                        </cwc:Case>
-                    </cwc:SwitchPresenter>
-                </shuxcc:HorizontalCard.Left>
-                <shuxcc:HorizontalCard.Right>
-                    <StackPanel Margin="8,0,8,0" HorizontalAlignment="Left">
-                        <TextBlock
-                            Text="{Binding Name}"
-                            TextTrimming="CharacterEllipsis"
-                            TextWrapping="NoWrap"/>
-                        <StackPanel Orientation="Horizontal" Spacing="4">
-                            <TextBlock
-                                Opacity="0.7"
-                                Style="{StaticResource CaptionTextBlockStyle}"
-                                Text="{Binding Rate}"/>
-                            <shuxct:RateDeltaTextBlock
-                                Opacity="0.7"
-                                Text="{Binding RateDelta}"
-                                TextStyle="{StaticResource CaptionTextBlockStyle}"/>
-                        </StackPanel>
-                    </StackPanel>
                 </shuxcc:HorizontalCard.Right>
             </shuxcc:HorizontalCard>
         </DataTemplate>
@@ -575,57 +473,6 @@
                                                 <!--  命座  -->
                                                 <Border Padding="16" Style="{ThemeResource BorderShimmerStyle}">
                                                     <shuxvs:SkillPivot ItemTemplate="{StaticResource TalentDataTemplate}" Skills="{Binding Avatars.CurrentItem.SkillDepot.Talents}"/>
-                                                </Border>
-
-                                                <!--  搭配  -->
-                                                <Border
-                                                    Padding="16"
-                                                    Style="{ThemeResource BorderShimmerStyle}"
-                                                    Visibility="{Binding Avatars.CurrentItem.CollocationView, Converter={StaticResource EmptyObjectToVisibilityConverter}}">
-                                                    <Grid ColumnSpacing="8" RowSpacing="8">
-                                                        <Grid.ColumnDefinitions>
-                                                            <ColumnDefinition/>
-                                                            <ColumnDefinition/>
-                                                            <ColumnDefinition/>
-                                                        </Grid.ColumnDefinitions>
-                                                        <Grid.RowDefinitions>
-                                                            <RowDefinition/>
-                                                            <RowDefinition/>
-                                                        </Grid.RowDefinitions>
-                                                        <TextBlock
-                                                            Grid.Row="0"
-                                                            Grid.Column="0"
-                                                            Style="{StaticResource BaseTextBlockStyle}"
-                                                            Text="{shuxm:ResourceString Name=ViewPageWiKiAvatarTeamCombinationHeader}"/>
-                                                        <TextBlock
-                                                            Grid.Row="0"
-                                                            Grid.Column="1"
-                                                            Style="{StaticResource BaseTextBlockStyle}"
-                                                            Text="{shuxm:ResourceString Name=ViewPageWiKiAvatarWeaponCombinationHeader}"/>
-                                                        <TextBlock
-                                                            Grid.Row="0"
-                                                            Grid.Column="2"
-                                                            Style="{StaticResource BaseTextBlockStyle}"
-                                                            Text="{shuxm:ResourceString Name=ViewPageWiKiAvatarArtifactSetCombinationHeader}"/>
-                                                        <ItemsControl
-                                                            Grid.Row="1"
-                                                            Grid.Column="0"
-                                                            ItemTemplate="{StaticResource CollocationTemplate}"
-                                                            ItemsPanel="{StaticResource StackPanelSpacing4Template}"
-                                                            ItemsSource="{Binding Avatars.CurrentItem.CollocationView.Avatars}"/>
-                                                        <ItemsControl
-                                                            Grid.Row="1"
-                                                            Grid.Column="1"
-                                                            ItemTemplate="{StaticResource CollocationTemplate}"
-                                                            ItemsPanel="{StaticResource StackPanelSpacing4Template}"
-                                                            ItemsSource="{Binding Avatars.CurrentItem.CollocationView.Weapons}"/>
-                                                        <ItemsControl
-                                                            Grid.Row="1"
-                                                            Grid.Column="2"
-                                                            ItemTemplate="{StaticResource CollocationReliquaryTemplate}"
-                                                            ItemsPanel="{StaticResource StackPanelSpacing4Template}"
-                                                            ItemsSource="{Binding Avatars.CurrentItem.CollocationView.ReliquarySets}"/>
-                                                    </Grid>
                                                 </Border>
 
                                                 <!--  立绘  -->

@@ -7,23 +7,14 @@
 // Modified by ky3-studio.
 // Licensed under the MIT license.
 
-using Microsoft.UI.Xaml.Controls;
 using Launcher.Core.Logging;
-using Launcher.Factory.ContentDialog;
-using Launcher.Service.Launcher;
 using Launcher.Service.Metadata;
 using Launcher.Service.Metadata.ContextAbstraction;
-using Launcher.Service.Navigation;
 using Launcher.Service.Notification;
 using Launcher.Service.SpiralAbyss;
 using Launcher.Service.User;
 using Launcher.UI.Xaml.Data;
-using Launcher.UI.Xaml.View.Dialog;
-using Launcher.UI.Xaml.View.Page;
-using Launcher.ViewModel.Complex;
 using Launcher.ViewModel.User;
-using Launcher.Web.Launcher.Response;
-using Launcher.Web.Launcher.SpiralAbyss;
 using System.Collections.ObjectModel;
 
 namespace Launcher.ViewModel.SpiralAbyss;
@@ -32,11 +23,7 @@ namespace Launcher.ViewModel.SpiralAbyss;
 [Service(ServiceLifetime.Scoped)]
 internal sealed partial class SpiralAbyssViewModel : Abstraction.ViewModel, IRecipient<UserAndUidChangedMessage>
 {
-    private readonly IContentDialogFactory contentDialogFactory;
     private readonly ISpiralAbyssService spiralAbyssService;
-    private readonly INavigationService navigationService;
-    private readonly LauncherUserOptions LauncherUserOptions;
-    private readonly IServiceProvider serviceProvider;
     private readonly IMetadataService metadataService;
     private readonly ITaskContext taskContext;
     private readonly IUserService userService;
@@ -57,8 +44,6 @@ internal sealed partial class SpiralAbyssViewModel : Abstraction.ViewModel, IRec
             AdvancedCollectionViewCurrentChanged.Attach(field, OnCurrentSpiralAbyssEntryChanged);
         }
     }
-
-    public partial LauncherSpiralAbyssDatabaseViewModel LauncherSpiralAbyssDatabaseViewModel { get; }
 
     public void Receive(UserAndUidChangedMessage message)
     {
@@ -155,60 +140,6 @@ internal sealed partial class SpiralAbyssViewModel : Abstraction.ViewModel, IRec
 
                 await taskContext.SwitchToMainThreadAsync();
                 SpiralAbyssEntries.MoveCurrentTo(SpiralAbyssEntries.Source.FirstOrDefault(s => s.Engaged) ?? SpiralAbyssEntries.Source.FirstOrDefault());
-            }
-        }
-    }
-
-    [Command("UploadSpiralAbyssRecordCommand")]
-    private async Task UploadSpiralAbyssRecordAsync()
-    {
-        SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Upload spiral abyss record", "SpiralAbyssRecordViewModel.Command"));
-
-        if (await userService.GetCurrentUserAndUidAsync().ConfigureAwait(false) is not { } userAndUid)
-        {
-            messenger.Send(InfoBarMessage.Warning(SH.MustSelectUserAndUid));
-            return;
-        }
-
-        if (!LauncherUserOptions.IsLoggedIn)
-        {
-            SpiralAbyssUploadRecordHomaNotLoginDialog dialog = await contentDialogFactory
-                .CreateInstanceAsync<SpiralAbyssUploadRecordHomaNotLoginDialog>(serviceProvider)
-                .ConfigureAwait(false);
-
-            ContentDialogResult result = await contentDialogFactory.EnqueueAndShowAsync(dialog).ShowTask.ConfigureAwait(false);
-
-            switch (result)
-            {
-                case ContentDialogResult.Primary:
-                    await navigationService.NavigateAsync<LauncherPassportPage>(NavigationExtraData.Default, true).ConfigureAwait(false);
-                    return;
-
-                case ContentDialogResult.Secondary:
-                    break;
-
-                case ContentDialogResult.None:
-                    return;
-            }
-        }
-
-        using (IServiceScope scope = serviceProvider.CreateScope())
-        {
-            LauncherSpiralAbyssClient spiralAbyssClient = scope.ServiceProvider.GetRequiredService<LauncherSpiralAbyssClient>();
-            if (await spiralAbyssClient.GetPlayerRecordAsync(userAndUid).ConfigureAwait(false) is { } record)
-            {
-                LauncherResponse response = await spiralAbyssClient.UploadRecordAsync(record).ConfigureAwait(false);
-
-                if (response is ILocalizableResponse localizableResponse)
-                {
-                    messenger.Send(InfoBarMessage.Any(
-                        response is { ReturnCode: 0 } ? InfoBarSeverity.Success : InfoBarSeverity.Warning,
-                        localizableResponse.GetLocalizationMessage()));
-                }
-            }
-            else
-            {
-                messenger.Send(InfoBarMessage.Warning(SH.MustSelectUserAndUid));
             }
         }
     }

@@ -12,7 +12,6 @@ using Launcher.Core.Logging;
 using Launcher.Model.Metadata;
 using Launcher.Model.Metadata.Avatar;
 using Launcher.Model.Metadata.Item;
-using Launcher.Service.Launcher;
 using Launcher.Service.Metadata;
 using Launcher.Service.Metadata.ContextAbstraction;
 using Launcher.UI.Xaml.Control.AutoSuggestBox;
@@ -25,7 +24,6 @@ namespace Launcher.ViewModel.Wiki;
 [Service(ServiceLifetime.Scoped)]
 internal sealed partial class WikiAvatarViewModel : Abstraction.ViewModel
 {
-    private readonly ILauncherSpiralAbyssStatisticsCache LauncherCache;
     private readonly IServiceScopeFactory serviceScopeFactory;
     private readonly IMetadataService metadataService;
     private readonly ITaskContext taskContext;
@@ -67,7 +65,7 @@ internal sealed partial class WikiAvatarViewModel : Abstraction.ViewModel
         metadataContext = await metadataService.GetContextAsync<WikiAvatarMetadataContext>(token).ConfigureAwait(false);
         ImmutableArray<Avatar> avatars = [.. metadataContext.Avatars.OrderByDescending(avatar => avatar.BeginTime).ThenByDescending(avatar => avatar.Sort)];
         SearchData searchData = SearchData.CreateForWikiAvatar(avatars);
-        await CombineComplexDataAsync(avatars, metadataContext).ConfigureAwait(false);
+        CombineComplexData(avatars, metadataContext);
 
         IAdvancedCollectionView<Avatar> avatarsView;
         using (await EnterCriticalSectionAsync().ConfigureAwait(false))
@@ -92,26 +90,8 @@ internal sealed partial class WikiAvatarViewModel : Abstraction.ViewModel
         Avatars?.CurrentItem?.CostumesView?.MoveCurrentToFirst();
     }
 
-    private async ValueTask CombineComplexDataAsync(ImmutableArray<Avatar> avatars, WikiAvatarMetadataContext context)
+    private static void CombineComplexData(ImmutableArray<Avatar> avatars, WikiAvatarMetadataContext context)
     {
-        try
-        {
-            LauncherSpiralAbyssStatisticsMetadataContext context2 = await metadataService.GetContextAsync<LauncherSpiralAbyssStatisticsMetadataContext>().ConfigureAwait(false);
-            await LauncherCache.InitializeForWikiAvatarViewAsync(context2).ConfigureAwait(false);
-
-            if (LauncherCache.AvatarCollocations is { } collocations)
-            {
-                foreach (Avatar avatar in avatars)
-                {
-                    avatar.CollocationView = collocations.GetValueOrDefault(avatar.Id);
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            SentrySdk.AddBreadcrumb($"Wiki avatar collocation init failed: {ex.Message}", category: "Wiki", level: BreadcrumbLevel.Warning);
-        }
-
         foreach (Avatar avatar in avatars)
         {
             avatar.CookBonusView ??= CookBonusView.Create(avatar.FetterInfo.CookBonus, context.IdMaterialMap);

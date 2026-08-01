@@ -12,9 +12,5 @@ namespace Launcher.Web.Endpoint.Launcher;
 [Service(ServiceLifetime.Singleton, typeof(ILauncherEndpoints), Key = LauncherEndpointsKind.Release)]
 internal sealed class LauncherEndpointsForRelease : ILauncherEndpoints
 {
-    string IHomaRootAccess.Root { get => Service.RemoteConfig.BackendApiRoutes.ApiBase; }
-
     string IInfrastructureRootAccess.Root { get => Service.RemoteConfig.BackendApiRoutes.ApiBase; }
-
-    string IInfrastructureRawRootAccess.RawRoot { get => Service.RemoteConfig.BackendApiRoutes.ApiBase; }
 }

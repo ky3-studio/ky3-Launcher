@@ -16,7 +16,6 @@
     xmlns:shuxct="using:Launcher.UI.Xaml.Control.TextBlock"
     xmlns:shuxdcs="using:Launcher.UI.Xaml.Data.Converter.Specialized"
     xmlns:shuxm="using:Launcher.UI.Xaml.Markup"
-    xmlns:shvcom="using:Launcher.ViewModel.Complex"
     xmlns:shvr="using:Launcher.ViewModel.RoleCombat"
     d:DataContext="{d:DesignInstance shvr:RoleCombatViewModel}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
@@ -321,11 +320,6 @@
         <Pivot x:Name="MainPivot" Style="{ThemeResource CardPivotStyle}">
             <Pivot.RightHeader>
                 <CommandBar Grid.Row="0" DefaultLabelPosition="Right">
-                    <AppBarButton
-                        Command="{Binding UploadRoleCombatRecordCommand}"
-                        Icon="{shuxm:FontIcon Glyph=&#xE898;}"
-                        Label="{shuxm:ResourceString Name=ViewSpiralAbyssUploadRecord}"
-                        Visibility="Collapsed"/>
                     <AppBarButton
                         Command="{Binding RefreshCommand}"
                         Icon="{shuxm:FontIcon Glyph=&#xE72C;}"
@@ -637,80 +631,6 @@
 
             </PivotItem>
 
-            <PivotItem x:Name="StatisticsPivotItem" Header="{shuxm:ResourceString Name=ViewSpiralAbyssLauncherStatistics}">
-                <Grid DataContext="{Binding LauncherRoleCombatDatabaseViewModel}">
-                    <mxi:Interaction.Behaviors>
-                        <shuxb:InvokeCommandOnLoadedBehavior Command="{Binding LoadCommand}"/>
-                    </mxi:Interaction.Behaviors>
-
-                    <Grid.Resources>
-                        <DataTemplate x:Key="RatedAvatarTemplate" x:DataType="shvcom:AvatarView">
-                            <shuxcc:HorizontalCard>
-                                <shuxcc:HorizontalCard.Left>
-                                    <shuxc:ItemIcon
-                                        Width="56"
-                                        Height="56"
-                                        Icon="{Binding Icon}"
-                                        Quality="{Binding Quality}"/>
-                                </shuxcc:HorizontalCard.Left>
-                                <shuxcc:HorizontalCard.Right>
-                                    <TextBlock
-                                        Width="64"
-                                        Margin="8"
-                                        HorizontalAlignment="Center"
-                                        HorizontalTextAlignment="Center"
-                                        Text="{Binding Rate}"/>
-                                </shuxcc:HorizontalCard.Right>
-                            </shuxcc:HorizontalCard>
-                        </DataTemplate>
-                    </Grid.Resources>
-
-                    <Pivot Style="{ThemeResource CardPivotStyle}" Visibility="{Binding RecordTotal, Converter={StaticResource Int32ToVisibilityConverter}}">
-                        <Pivot.RightHeader>
-                            <CommandBar DefaultLabelPosition="Right">
-                                <AppBarButton Icon="{shuxm:FontIcon Glyph=&#xE946;}" Label="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverview}">
-                                    <AppBarButton.Flyout>
-                                        <Flyout Placement="BottomEdgeAlignedRight">
-                                            <StackPanel
-                                                MinWidth="260"
-                                                Margin="0,-29,0,0"
-                                                Spacing="{StaticResource SettingsCardSpacing}">
-                                                <StackPanel.Resources>
-                                                    <!--  ReSharper disable Xaml.RedundantResource  -->
-                                                    <Thickness x:Key="SettingsCardPadding">16</Thickness>
-                                                    <x:Double x:Key="SettingsCardWrapThreshold">0</x:Double>
-                                                    <x:Double x:Key="SettingsCardWrapNoIconThreshold">0</x:Double>
-                                                    <x:Double x:Key="SettingsCardMinHeight">0</x:Double>
-                                                    <!--  ReSharper restore Xaml.RedundantResource  -->
-                                                </StackPanel.Resources>
-                                                <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewDataCollect}"/>
-                                                <cwc:SettingsCard Content="{Binding RecordTotal}" Header="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewRecordTotal}"/>
-                                            </StackPanel>
-                                        </Flyout>
-                                    </AppBarButton.Flyout>
-                                </AppBarButton>
-                            </CommandBar>
-                        </Pivot.RightHeader>
-                        <PivotItem Header="{shuxm:ResourceString Name=ViewPageLauncherDatabaseOverviewAvatarAppearanceRank}">
-                            <Border Margin="16" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
-                                <Grid Style="{ThemeResource AcrylicGridCardStyle}">
-                                    <GridView
-                                        Padding="16,16,4,4"
-                                        ItemContainerStyle="{StaticResource LargeGridViewItemStyle}"
-                                        ItemTemplate="{StaticResource RatedAvatarTemplate}"
-                                        ItemsSource="{Binding AvatarAppearances}"
-                                        SelectionMode="None"/>
-                                </Grid>
-                            </Border>
-                        </PivotItem>
-                    </Pivot>
-                    <shuxc:Loading
-                        Margin="16"
-                        CornerRadius="{ThemeResource ControlCornerRadius}"
-                        IsLoading="{Binding Converter={StaticResource EmptyObjectToBoolRevertConverter}}"
-                        Style="{ThemeResource DefaultLoadingViewStyle}"/>
-                </Grid>
-            </PivotItem>
         </Pivot>
         </Grid>
     </Grid>

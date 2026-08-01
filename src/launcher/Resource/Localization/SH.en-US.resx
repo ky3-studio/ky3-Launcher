@@ -228,9 +228,6 @@
   <data name="ModelBindingLauncherComplexRankLevel" xml:space="preserve">
     <value>Chamber {0}</value>
   </data>
-  <data name="ModelBindingLauncherTeamUpCount" xml:space="preserve">
-    <value>Played {0} times</value>
-  </data>
   <data name="ModelBindingLaunchGameLaunchSchemeBilibili" xml:space="preserve">
     <value>Channel service</value>
   </data>
@@ -577,138 +574,6 @@
   </data>
   <data name="MustSelectUserAndUid" xml:space="preserve">
     <value>Must log in to Miyoushe/HoYoLAB and select a user and role</value>
-  </data>
-  <data name="ServerCdnServiceInsufficientTime" xml:space="preserve">
-    <value>Cloud CDN has not been activated or has expired</value>
-  </data>
-  <data name="ServerGachaLogServiceDeleteEntrySucceed" xml:space="preserve">
-    <value>Deleted {1} wish records for UID: {0}</value>
-  </data>
-  <data name="ServerGachaLogServiceInsufficientRecordSlot" xml:space="preserve">
-    <value>The number of wish record archives saved in the cloud has reached the current account limit.</value>
-  </data>
-  <data name="ServerGachaLogServiceInsufficientTime" xml:space="preserve">
-    <value>The wish record upload service has not been activated or has expired.</value>
-  </data>
-  <data name="ServerGachaLogServiceInvalidGachaLogData" xml:space="preserve">
-    <value>There are invalid items in the wish data and cannot be saved to the cloud.</value>
-  </data>
-  <data name="ServerGachaLogServiceServerDatabaseError" xml:space="preserve">
-    <value>The data is abnormal and cannot be saved to the cloud. Please do not upload across accounts or try to delete the cloud data and try again.</value>
-  </data>
-  <data name="ServerGachaLogServiceUploadEntrySucceed" xml:space="preserve">
-    <value>Uploaded {1} wish records for UID: {0}, stored {2}</value>
-  </data>
-  <data name="ServerPassportDeviceIdEmpty" xml:space="preserve">
-    <value>Device ID cannot be empty</value>
-  </data>
-  <data name="ServerPassportLoginRequired" xml:space="preserve">
-    <value>Please log in or register an account first</value>
-  </data>
-  <data name="ServerPassportLoginSucceed" xml:space="preserve">
-    <value>Login successful</value>
-  </data>
-  <data name="ServerPassportPasswordTooShort" xml:space="preserve">
-    <value>Password length cannot be less than 8 characters</value>
-  </data>
-  <data name="ServerPassportRefreshTokenEmpty" xml:space="preserve">
-    <value>Refresh token cannot be empty</value>
-  </data>
-  <data name="ServerPassportRefreshTokenInvalid" xml:space="preserve">
-    <value>Refresh token is invalid or expired</value>
-  </data>
-  <data name="ServerPassportRegisterSucceed" xml:space="preserve">
-    <value>Registration successful</value>
-  </data>
-  <data name="ServerPassportResetPasswordSucceed" xml:space="preserve">
-    <value>New password set successfully</value>
-  </data>
-  <data name="ServerPassportResetPasswordTheSamePassword" xml:space="preserve">
-    <value>The new password cannot be the same as the old password</value>
-  </data>
-  <data name="ServerPassportServiceEmailHasNotRegistered" xml:space="preserve">
-    <value>The current email address has not been registered yet</value>
-  </data>
-  <data name="ServerPassportServiceEmailHasRegistered" xml:space="preserve">
-    <value>The current email address has been registered</value>
-  </data>
-  <data name="ServerPassportServiceInternalException" xml:space="preserve">
-    <value>Registration failed, server abnormality, please contact the developer as soon as possible to solve the problem</value>
-  </data>
-  <data name="ServerPassportServiceUnregisterPasswordIncorrect" xml:space="preserve">
-    <value>Incorrect password, logout failed</value>
-  </data>
-  <data name="ServerPassportServiceUnregisterUserNotFound" xml:space="preserve">
-    <value>The user does not exist and the logout failed.</value>
-  </data>
-  <data name="ServerPassportTokenRevokeFailed" xml:space="preserve">
-    <value>Token revocation failed</value>
-  </data>
-  <data name="ServerPassportTokenRevokeSuccess" xml:space="preserve">
-    <value>Token revoked successfully</value>
-  </data>
-  <data name="ServerPassportUnregisterSucceed" xml:space="preserve">
-    <value>User logout successful</value>
-  </data>
-  <data name="ServerPassportUserInfoNotExist" xml:space="preserve">
-    <value>The user does not exist and failed to obtain user information.</value>
-  </data>
-  <data name="ServerPassportUserNameOrPasswordIncorrect" xml:space="preserve">
-    <value>Wrong username or password</value>
-  </data>
-  <data name="ServerPassportVerifyFailed" xml:space="preserve">
-    <value>Authentication failed</value>
-  </data>
-  <data name="ServerPassportVerifyRequestNotCurrentUser" xml:space="preserve">
-    <value>The verification request failed. It is not the currently logged in account.</value>
-  </data>
-  <data name="ServerPassportVerifyRequestSuccess" xml:space="preserve">
-    <value>Verification code has been sent to email</value>
-  </data>
-  <data name="ServerPassportVerifyRequestUserAlreadyExisted" xml:space="preserve">
-    <value>The verification request failed. The current email address has been registered.</value>
-  </data>
-  <data name="ServerPassportVerifyRequestUserNotExisted" xml:space="preserve">
-    <value>Verification request failed, the current email address is not registered</value>
-  </data>
-  <data name="ServerPassportVerifyTooFrequent" xml:space="preserve">
-    <value>Verification request too fast, please try again in 1 minute</value>
-  </data>
-  <data name="ServerRecordBannedUid" xml:space="preserve">
-    <value>Failed to upload Spiral Abyss records, the current UID has been banned by the database</value>
-  </data>
-  <data name="ServerRecordComputingStatistics" xml:space="preserve">
-    <value>Failed to upload Spiral Abyss records, calculating statistics</value>
-  </data>
-  <data name="ServerRecordComputingStatistics2" xml:space="preserve">
-    <value>Failed to obtain data, statistics are being calculated</value>
-  </data>
-  <data name="ServerRecordInternalException" xml:space="preserve">
-    <value>Failed to upload Spiral Abyss records, server abnormality, please contact the developer as soon as possible to solve the problem</value>
-  </data>
-  <data name="ServerRecordInvalidData" xml:space="preserve">
-    <value>Failed to upload Spiral Abyss records, there is invalid data</value>
-  </data>
-  <data name="ServerRecordInvalidUid" xml:space="preserve">
-    <value>Invalid UID</value>
-  </data>
-  <data name="ServerRecordNotCurrentSchedule" xml:space="preserve">
-    <value>Failed to upload the Spiral Abyss record, it is not the data of this period</value>
-  </data>
-  <data name="ServerRecordPreviousRequestNotCompleted" xml:space="preserve">
-    <value>Failed to upload the Spiral Abyss record. The record of the current UID is still being processed. Please do not repeat the operation.</value>
-  </data>
-  <data name="ServerRecordUploadSuccessAndGachaLogServiceTimeExtended" xml:space="preserve">
-    <value>Successfully uploaded the Spiral Abyss record and received wish record upload service time.</value>
-  </data>
-  <data name="ServerRecordUploadSuccessButNoPassport" xml:space="preserve">
-    <value>The Spiral Abyss record upload was successful, but the passport has not been logged in and the wish record upload service time cannot be obtained.</value>
-  </data>
-  <data name="ServerRecordUploadSuccessButNoSuchUser" xml:space="preserve">
-    <value>The Spiral Abyss record upload was successful, but the user could not be found and the wish record upload service time could not be obtained.</value>
-  </data>
-  <data name="ServerRecordUploadSuccessButNotFirstTimeAtCurrentSchedule" xml:space="preserve">
-    <value>The Spiral Abyss record was uploaded successfully, but it is not the first submission in this period, so you cannot receive the wish record upload service time.</value>
   </data>
   <data name="ServiceAchievementImportResult" xml:space="preserve">
     <value>New: {0} achievements | Updated: {1} achievements | Deleted: {2} achievements</value>
@@ -1064,9 +929,6 @@ Available space: {2}</value>
   <data name="ServiceGamePackageAdvancedConfirmStartUpdateTitle" xml:space="preserve">
     <value>Confirm to start updating the game</value>
   </data>
-  <data name="ServiceGamePackageAdvancedDecodeManifestFailed" xml:space="preserve">
-    <value>Manifest data parsing failed</value>
-  </data>
   <data name="ServiceGamePackageAdvancedDriverNoAvailableFreeSpace" xml:space="preserve">
     <value>Not enough disk space</value>
   </data>
@@ -1109,17 +971,11 @@ Available space: {2}</value>
   <data name="ServiceGitRepositoryOperationFailed" xml:space="preserve">
     <value>Operation failed</value>
   </data>
-  <data name="ServiceMetadataDownloadSourceFilesFailed" xml:space="preserve">
-    <value>One or more metadata files failed to download: {0}</value>
-  </data>
   <data name="ServiceMetadataFileNotFound" xml:space="preserve">
     <value>Unable to find cached metadata file</value>
   </data>
   <data name="ServiceMetadataNotInitialized" xml:space="preserve">
     <value>The metadata service has not been initialized, or initialization failed</value>
-  </data>
-  <data name="ServiceMetadataParseFailed" xml:space="preserve">
-    <value>Metadata verification file parsing failed</value>
   </data>
   <data name="ServiceMetadataVersionNotSupported" xml:space="preserve">
     <value>Your version is too low, please upgrade as soon as possible</value>
@@ -1228,9 +1084,6 @@ Available space: {2}</value>
   </data>
   <data name="ViewAchievementHeader" xml:space="preserve">
     <value>achievement management</value>
-  </data>
-  <data name="ViewAnnouncementHeader" xml:space="preserve">
-    <value>Home page</value>
   </data>
   <data name="ViewAvatarPropertyHeader" xml:space="preserve">
     <value>my role</value>
@@ -1370,12 +1223,6 @@ Available space: {2}</value>
   <data name="ViewDialogExportUIGFTitle" xml:space="preserve">
     <value>Export UIGF file</value>
   </data>
-  <data name="ViewDialogFeedbackEnableLoopbackContent" xml:space="preserve">
-    <value>After lifting the restrictions, you need to use other tools to restore the restrictions.</value>
-  </data>
-  <data name="ViewDialogFeedbackEnableLoopbackTitle" xml:space="preserve">
-    <value>Whether to lift loopback restrictions</value>
-  </data>
   <data name="ViewDialogGachaLogRefreshProgressAuthkeyTimeout" xml:space="preserve">
     <value>The wish record URL has expired, please obtain it again.</value>
   </data>
@@ -1441,24 +1288,6 @@ Available space: {2}</value>
   </data>
   <data name="ViewDialogGeetestCustomUrlTitle" xml:space="preserve">
     <value>Configure the sensorless verification interface</value>
-  </data>
-  <data name="ViewDialogLauncherPassportLoginTitle" xml:space="preserve">
-    <value>Login pass</value>
-  </data>
-  <data name="ViewDialogLauncherPassportRegisterTitle" xml:space="preserve">
-    <value>Register Pass</value>
-  </data>
-  <data name="ViewDialogLauncherPassportResetPasswordTitle" xml:space="preserve">
-    <value>Reset pass password</value>
-  </data>
-  <data name="ViewDialogLauncherPassportResetUserNameTitle" xml:space="preserve">
-    <value>Reset pass email</value>
-  </data>
-  <data name="ViewDialogLauncherPassportUnregisterTitle" xml:space="preserve">
-    <value>Cancel pass account</value>
-  </data>
-  <data name="ViewDialogLauncherPassportUseRedeemCodeTitle" xml:space="preserve">
-    <value>Use cloud redemption code</value>
   </data>
   <data name="ViewDialogImportExportApp" xml:space="preserve">
     <value>Export App</value>
@@ -1528,18 +1357,6 @@ Available space: {2}</value>
   </data>
   <data name="ViewDialogReconfirmTitle" xml:space="preserve">
     <value>You are enabling a dangerous feature</value>
-  </data>
-  <data name="ViewDialogSpiralAbyssUploadRecordHomaNotLoginHint" xml:space="preserve">
-    <value>If you are not currently logged in to your account, you cannot receive free cloud time by uploading Spiral Abyss data.</value>
-  </data>
-  <data name="ViewDialogSpiralAbyssUploadRecordHomaNotLoginPrimaryButtonText" xml:space="preserve">
-    <value>Go to login</value>
-  </data>
-  <data name="ViewDialogSpiralAbyssUploadRecordHomaNotLoginSecondaryButtonText" xml:space="preserve">
-    <value>Continue to upload</value>
-  </data>
-  <data name="ViewDialogSpiralAbyssUploadRecordHomaNotLoginTitle" xml:space="preserve">
-    <value>Upload abyss data</value>
   </data>
   <data name="ViewDialogUserAccountPasswordAccountHint" xml:space="preserve">
     <value>Please enter account number</value>
@@ -1708,9 +1525,6 @@ Available space: {2}</value>
   </data>
   <data name="ViewModelAvatarPropertyTotalAvatarCountHint" xml:space="preserve">
     <value>{0} characters in total</value>
-  </data>
-  <data name="ViewModelComplexReliquarySetViewEmptyName" xml:space="preserve">
-    <value>No holy relics or fragments</value>
   </data>
   <data name="ViewModelCultivationBatchAddCompleted" xml:space="preserve">
     <value>Operation completed: Added/Updated: {0}, skipped {1}</value>
@@ -1889,12 +1703,6 @@ Available space: {2}</value>
   <data name="ViewModelHardChalllengeDataEntrySinglePlayerName" xml:space="preserve">
     <value>Single player challenge</value>
   </data>
-  <data name="ViewModelLauncherPassportEmailNotValidHint" xml:space="preserve">
-    <value>Please enter the correct email address</value>
-  </data>
-  <data name="ViewModelLauncherPassportPasswordTooShortHint" xml:space="preserve">
-    <value>Password length cannot be less than 8 characters</value>
-  </data>
   <data name="ViewModelImportByEmbeddedYaeErrorMessage" xml:space="preserve">
     <value>Please use other methods to import achievements</value>
   </data>
@@ -1984,9 +1792,6 @@ Available space: {2}</value>
   </data>
   <data name="ViewModelSettingClearWebCacheSuccess" xml:space="preserve">
     <value>Clearing completed</value>
-  </data>
-  <data name="ViewModelSettingCopyDeviceIdSuccess" xml:space="preserve">
-    <value>Copied successfully</value>
   </data>
   <data name="ViewModelSettingCreateDesktopShortcutFailed" xml:space="preserve">
     <value>Failed to create desktop shortcut</value>
@@ -2144,9 +1949,6 @@ Available space: {2}</value>
   <data name="ViewPageAchievementSortIncompletedItemsFirst" xml:space="preserve">
     <value>Priority not completed</value>
   </data>
-  <data name="ViewPageAnnouncementViewDetails" xml:space="preserve">
-    <value>check the details</value>
-  </data>
   <data name="ViewPageCultivationAddProject" xml:space="preserve">
     <value>New plan</value>
   </data>
@@ -2303,41 +2105,8 @@ Available space: {2}</value>
   <data name="ViewPageDailyNoteVerify" xml:space="preserve">
     <value>Verify current user and role</value>
   </data>
-  <data name="ViewPageFeedbackAutoSuggestBoxPlaceholder" xml:space="preserve">
-    <value>Search questions and suggestions</value>
-  </data>
-  <data name="ViewPageFeedbackCommonLinksHeader" xml:space="preserve">
-    <value>Common links</value>
-  </data>
-  <data name="ViewPageFeedbackCurrentProxyHeader" xml:space="preserve">
-    <value>current agent</value>
-  </data>
   <data name="ViewPageFeedbackCurrentProxyNoProxyDescription" xml:space="preserve">
     <value>No proxy</value>
-  </data>
-  <data name="ViewPageFeedbackEnableLoopbackEnabledDescription" xml:space="preserve">
-    <value>Dismissed</value>
-  </data>
-  <data name="ViewPageFeedbackEnableLoopbackHeader" xml:space="preserve">
-    <value>Remove Loopback restrictions</value>
-  </data>
-  <data name="ViewPageFeedbackEngageWithUsDescription" xml:space="preserve">
-    <value>Keep in touch with us</value>
-  </data>
-  <data name="ViewPageFeedbackFeatureGuideHeader" xml:space="preserve">
-    <value>Feature Guide</value>
-  </data>
-  <data name="ViewPageFeedbackGithubIssuesDescription" xml:space="preserve">
-    <value>We always prioritize issues on GitHub</value>
-  </data>
-  <data name="ViewPageFeedbackSearchResultPlaceholderTitle" xml:space="preserve">
-    <value>No search results yet</value>
-  </data>
-  <data name="ViewPageFeedbackServerStatusDescription" xml:space="preserve">
-    <value>Service availability monitoring</value>
-  </data>
-  <data name="ViewPageFeedbackServerStatusHeader" xml:space="preserve">
-    <value>Serve</value>
   </data>
   <data name="ViewPageGachaLogAggressiveRefresh" xml:space="preserve">
     <value>Full refresh</value>
@@ -2434,108 +2203,6 @@ Available space: {2}</value>
   </data>
   <data name="ViewPageHomeGreetingTextEasterEgg" xml:space="preserve">
     <value>You are right, but "" is a product independently developed by DGP Studio...</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverview" xml:space="preserve">
-    <value>Details</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewAvatarAppearanceRank" xml:space="preserve">
-    <value>Character appearance</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewAvatarConstellation" xml:space="preserve">
-    <value>Character Ownership</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewAvatarUsageRank" xml:space="preserve">
-    <value>Character Usage</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation0" xml:space="preserve">
-    <value>C0</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation1" xml:space="preserve">
-    <value>C1</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation2" xml:space="preserve">
-    <value>C2</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation3" xml:space="preserve">
-    <value>C3</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation4" xml:space="preserve">
-    <value>C4</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation5" xml:space="preserve">
-    <value>C5</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation6" xml:space="preserve">
-    <value>C6</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellationAvatar" xml:space="preserve">
-    <value>Character</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellationHolding" xml:space="preserve">
-    <value>Ownership</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewDataCollect" xml:space="preserve">
-    <value>Data collection statistics</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewRecordTotal" xml:space="preserve">
-    <value>Total number of uploaded records</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewRefreshTime" xml:space="preserve">
-    <value>Data refresh time</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyss" xml:space="preserve">
-    <value>Abyss Statistics</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyssBattleAverage" xml:space="preserve">
-    <value>Average number of battles</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyssFullStar" xml:space="preserve">
-    <value>Starry Abyss Records</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyssPassed" xml:space="preserve">
-    <value>Clearing the Abyss Record</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyssStarAverage" xml:space="preserve">
-    <value>Average acquisition of abyssal stars</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyssTotal" xml:space="preserve">
-    <value>Total abyss records</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewTeamAppearance" xml:space="preserve">
-    <value>Team appears</value>
-  </data>
-  <data name="ViewPageLauncherPassportCDNCloudDescription" xml:space="preserve">
-    <value>After obtaining the duration, you will be able to select a CDN mirror in China when the version is updated to obtain a better update experience.</value>
-  </data>
-  <data name="ViewPageLauncherPassportCDNCloudHeader" xml:space="preserve">
-    <value>Cloud CDN service</value>
-  </data>
-  <data name="ViewPageLauncherPassportNewUserNameHint" xml:space="preserve">
-    <value>Please enter a new email</value>
-  </data>
-  <data name="ViewPageLauncherPassportPasswordHint" xml:space="preserve">
-    <value>Please enter password</value>
-  </data>
-  <data name="ViewPageLauncherPassportPasswordRequirementHint" xml:space="preserve">
-    <value>Requires at least 8 characters</value>
-  </data>
-  <data name="ViewPageLauncherPassportRedeemCodeHint" xml:space="preserve">
-    <value>Please enter the redemption code</value>
-  </data>
-  <data name="ViewPageLauncherPassportSponsorAction" xml:space="preserve">
-    <value>sponsor</value>
-  </data>
-  <data name="ViewPageLauncherPassportUnregisterHint" xml:space="preserve">
-    <value>Data on canceled accounts will be lost forever and cannot be recovered.</value>
-  </data>
-  <data name="ViewPageLauncherPassportUserNameHint" xml:space="preserve">
-    <value>Please enter your email</value>
-  </data>
-  <data name="ViewPageLauncherPassportVerifyCodeAction" xml:space="preserve">
-    <value>Get verification code</value>
-  </data>
-  <data name="ViewPageLauncherPassportVerifyCodeHint" xml:space="preserve">
-    <value>Please enter the verification code</value>
   </data>
   <data name="ViewPageLaunchGameAction" xml:space="preserve">
     <value>Launch Game</value>
@@ -2753,9 +2420,6 @@ For security reasons, we have the right to update the software and related funct
     <value>Notification area icon creation failed and close button behavior cannot be adjusted</value>
   </data>
 
-  <data name="ViewPageSettingCopyDeviceIdAction" xml:space="preserve">
-    <value>copy</value>
-  </data>
   <data name="ViewPageSettingCreateDesktopShortcutAction" xml:space="preserve">
     <value>create</value>
   </data>
@@ -2776,15 +2440,6 @@ For security reasons, we have the right to update the software and related funct
   </data>
   <data name="ViewPageSettingDeleteCacheHeader" xml:space="preserve">
     <value>Delete in-game web cache</value>
-  </data>
-  <data name="ViewPageSettingDeviceIdHeader" xml:space="preserve">
-    <value>Device ID</value>
-  </data>
-  <data name="ViewPageSettingDeviceIpDescription" xml:space="preserve">
-    <value>IP: {0} Home server: {1}</value>
-  </data>
-  <data name="ViewPageSettingDeviceIpHeader" xml:space="preserve">
-    <value>Device IP</value>
   </data>
   <data name="ViewPageSettingElevatedModeHeader" xml:space="preserve">
     <value>Administrator mode</value>
@@ -2836,57 +2491,6 @@ For security reasons, we have the right to update the software and related funct
   </data>
   <data name="ViewPageSettingHomeHeader" xml:space="preserve">
     <value>announcement</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportCdnExpiredAtHeader" xml:space="preserve">
-    <value>Cloud CDN expiration time</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportDangerZoneDescription" xml:space="preserve">
-    <value>Think before you act</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportDangerZoneHeader" xml:space="preserve">
-    <value>Dangerous operation</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportHeader" xml:space="preserve">
-    <value>Pass account</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportLicensedDeveloperDescription" xml:space="preserve">
-    <value>You have unlimited access to any cloud-based service feature</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportLicensedDeveloperHeader" xml:space="preserve">
-    <value>Certified co-developers</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportLoginAction" xml:space="preserve">
-    <value>Log in</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportLogoutAction" xml:space="preserve">
-    <value>Log out</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportMaintainerDescription" xml:space="preserve">
-    <value>You can use any test function without any restrictions</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportMaintainerHeader" xml:space="preserve">
-    <value>Development/Operations</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportRedeemCodeDescription" xml:space="preserve">
-    <value>We sometimes give away cloud redemption codes to certain users</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportRedeemCodeHeader" xml:space="preserve">
-    <value>Use redemption code</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportRefreshAction" xml:space="preserve">
-    <value>refresh</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportRegisterAction" xml:space="preserve">
-    <value>register</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportResetPasswordAction" xml:space="preserve">
-    <value>Change password</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportResetUserNameAction" xml:space="preserve">
-    <value>Modify email</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportUnregisterAction" xml:space="preserve">
-    <value>Cancel account</value>
   </data>
   <data name="ViewPageSettingKeyShortcutAutoClickingDescription" xml:space="preserve">
     <value>Change the shortcut key for the left mouse button’s automatic point-connecting function</value>
@@ -2951,15 +2555,6 @@ For security reasons, we have the right to update the software and related funct
   <data name="ViewPageSettingWebview2Header" xml:space="preserve">
     <value>Webview2 runtime</value>
   </data>
-  <data name="ViewPageSpiralAbyssTeamAppearanceDownHeader" xml:space="preserve">
-    <value>second half</value>
-  </data>
-  <data name="ViewPageSpiralAbyssTeamAppearanceUpHeader" xml:space="preserve">
-    <value>first half</value>
-  </data>
-  <data name="ViewPageWiKiAvatarArtifactSetCombinationHeader" xml:space="preserve">
-    <value>Paired with holy relics</value>
-  </data>
   <data name="ViewPageWiKiAvatarAscensionMaterialsHeader" xml:space="preserve">
     <value>Growth materials</value>
   </data>
@@ -3008,17 +2603,11 @@ For security reasons, we have the right to update the software and related funct
   <data name="ViewPageWiKiAvatarStoriesHeader" xml:space="preserve">
     <value>story</value>
   </data>
-  <data name="ViewPageWiKiAvatarTeamCombinationHeader" xml:space="preserve">
-    <value>Matching role</value>
-  </data>
   <data name="ViewPageWiKiAvatarTraceEffectHeader" xml:space="preserve">
     <value>travel traces</value>
   </data>
   <data name="ViewPageWiKiAvatarVisionTitle" xml:space="preserve">
     <value>eye of god</value>
-  </data>
-  <data name="ViewPageWiKiAvatarWeaponCombinationHeader" xml:space="preserve">
-    <value>Match weapons</value>
   </data>
   <data name="ViewPageWiKiWeaponAutoSuggestBoxPlaceHolder" xml:space="preserve">
     <value>Filter weapons</value>
@@ -3035,29 +2624,8 @@ For security reasons, we have the right to update the software and related funct
   <data name="ViewRoleCombatHeader" xml:space="preserve">
     <value>Fantasy Reality Drama Poetry</value>
   </data>
-  <data name="ViewServiceLauncherUserCdnNotAllowedDescription" xml:space="preserve">
-    <value>Cloud CDN has not been activated or has expired</value>
-  </data>
-  <data name="ViewServiceLauncherUserCloudNotAllowedDescription" xml:space="preserve">
-    <value>The wish record upload service has not been activated or has expired.</value>
-  </data>
-  <data name="ViewServiceLauncherUserLoginFailHint" xml:space="preserve">
-    <value>Login failed, please log in again</value>
-  </data>
-  <data name="ViewServiceLauncherUserLoginOrRegisterHint" xml:space="preserve">
-    <value>Log in or register now</value>
-  </data>
   <data name="ViewSettingFolderViewOpenFolderAction" xml:space="preserve">
     <value>open folder</value>
-  </data>
-  <data name="ViewSettingHeader" xml:space="preserve">
-    <value>set up</value>
-  </data>
-  <data name="ViewSpiralAbyssAvatarAppearanceRankDescription" xml:space="preserve">
-    <value>Character appearance rate = the number of times this character appears in this layer (repeated appearances in the layer are only recorded once) / total number of abyss records</value>
-  </data>
-  <data name="ViewSpiralAbyssAvatarUsageRankDescription" xml:space="preserve">
-    <value>Character usage rate = the number of times this character is played in this layer (repeated appearances in the layer are only recorded once) / the total number of abyss records held by this character</value>
   </data>
   <data name="ViewSpiralAbyssBattleTimes" xml:space="preserve">
     <value>Number of battles</value>
@@ -3112,9 +2680,6 @@ For security reasons, we have the right to update the software and related funct
   </data>
   <data name="ViewSpiralAbyssTotalStar" xml:space="preserve">
     <value>Obtain the Abyss Star</value>
-  </data>
-  <data name="ViewSpiralAbyssUploadRecord" xml:space="preserve">
-    <value>Upload data</value>
   </data>
   <data name="ViewToolHeader" xml:space="preserve">
     <value>tool</value>
@@ -3178,9 +2743,6 @@ For security reasons, we have the right to update the software and related funct
   </data>
   <data name="ViewWikiAvatarHeader" xml:space="preserve">
     <value>character profile</value>
-  </data>
-  <data name="ViewWikiMonsterHeader" xml:space="preserve">
-    <value>Monster information</value>
   </data>
   <data name="ViewWikiWeaponHeader" xml:space="preserve">
     <value>Weapon information</value>

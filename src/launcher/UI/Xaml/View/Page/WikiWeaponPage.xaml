@@ -17,7 +17,6 @@
     xmlns:shuxct="using:Launcher.UI.Xaml.Control.TextBlock"
     xmlns:shuxm="using:Launcher.UI.Xaml.Markup"
     xmlns:shuxvs="using:Launcher.UI.Xaml.View.Specialized"
-    xmlns:shvc="using:Launcher.ViewModel.Complex"
     xmlns:shvw="using:Launcher.ViewModel.Wiki"
     d:DataContext="{d:DesignInstance Type=shvw:WikiWeaponViewModel}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
@@ -115,33 +114,6 @@
                 Margin="16,8,0,0"
                 Description="{Binding Description}"
                 TextStyle="{StaticResource BodyTextBlockStyle}"/>
-        </DataTemplate>
-
-        <DataTemplate x:Key="CollocationTemplate" x:DataType="shvc:CollocationView">
-            <shuxcc:HorizontalCard>
-                <shuxcc:HorizontalCard.Left>
-                    <shuxc:ItemIcon
-                        Width="48"
-                        Height="48"
-                        Icon="{Binding Icon}"
-                        Quality="{Binding Quality}"/>
-                </shuxcc:HorizontalCard.Left>
-                <shuxcc:HorizontalCard.Right>
-                    <StackPanel Margin="8,0,0,0" HorizontalAlignment="Left">
-                        <TextBlock Text="{Binding Name}"/>
-                        <StackPanel Orientation="Horizontal" Spacing="4">
-                            <TextBlock
-                                Opacity="0.7"
-                                Style="{StaticResource CaptionTextBlockStyle}"
-                                Text="{Binding Rate}"/>
-                            <shuxct:RateDeltaTextBlock
-                                Opacity="0.7"
-                                Text="{Binding RateDelta}"
-                                TextStyle="{StaticResource CaptionTextBlockStyle}"/>
-                        </StackPanel>
-                    </StackPanel>
-                </shuxcc:HorizontalCard.Right>
-            </shuxcc:HorizontalCard>
         </DataTemplate>
 
         <DataTemplate x:Key="WeaponGridTemplate" x:DataType="shmmw:Weapon">
@@ -316,25 +288,6 @@
                                                             HeaderTemplate="{StaticResource AffixPivotHeaderTemplate}"
                                                             ItemTemplate="{StaticResource AffixPivotItemTemplate}"
                                                             ItemsSource="{Binding Weapons.CurrentItem.Affix.Descriptions}"/>
-                                                    </StackPanel>
-                                                </Border>
-
-                                                <Border
-                                                    Padding="16"
-                                                    Style="{ThemeResource BorderShimmerStyle}"
-                                                    Visibility="{Binding Weapons.CurrentItem.CollocationView, Converter={StaticResource EmptyObjectToVisibilityConverter}}">
-                                                    <StackPanel Spacing="16">
-                                                        <TextBlock Style="{StaticResource BaseTextBlockStyle}" Text="{shuxm:ResourceString Name=ViewPageWiKiAvatarTeamCombinationHeader}"/>
-                                                        <ItemsControl ItemTemplate="{StaticResource CollocationTemplate}" ItemsSource="{Binding Weapons.CurrentItem.CollocationView.Avatars}">
-                                                            <ItemsControl.ItemsPanel>
-                                                                <ItemsPanelTemplate>
-                                                                    <cwc:UniformGrid
-                                                                        ColumnSpacing="8"
-                                                                        Columns="3"
-                                                                        RowSpacing="8"/>
-                                                                </ItemsPanelTemplate>
-                                                            </ItemsControl.ItemsPanel>
-                                                        </ItemsControl>
                                                     </StackPanel>
                                                 </Border>
 

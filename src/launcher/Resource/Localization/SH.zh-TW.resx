@@ -228,9 +228,6 @@
   <data name="ModelBindingLauncherComplexRankLevel" xml:space="preserve">
     <value>第 {0} 間</value>
   </data>
-  <data name="ModelBindingLauncherTeamUpCount" xml:space="preserve">
-    <value>上場 {0} 次</value>
-  </data>
   <data name="ModelBindingLaunchGameLaunchSchemeBilibili" xml:space="preserve">
     <value>渠道服</value>
   </data>
@@ -577,138 +574,6 @@
   </data>
   <data name="MustSelectUserAndUid" xml:space="preserve">
     <value>必須登入 米遊社 / HoYoLAB 並選擇一個使用者與角色</value>
-  </data>
-  <data name="ServerCdnServiceInsufficientTime" xml:space="preserve">
-    <value>未開通雲 CDN 或已到期</value>
-  </data>
-  <data name="ServerGachaLogServiceDeleteEntrySucceed" xml:space="preserve">
-    <value>刪除了 UID：{0} 的 {1} 條祈願記錄</value>
-  </data>
-  <data name="ServerGachaLogServiceInsufficientRecordSlot" xml:space="preserve">
-    <value>雲儲存的祈願記錄存檔數已達當前賬號上限</value>
-  </data>
-  <data name="ServerGachaLogServiceInsufficientTime" xml:space="preserve">
-    <value>未開通祈願記錄上傳服務或已到期</value>
-  </data>
-  <data name="ServerGachaLogServiceInvalidGachaLogData" xml:space="preserve">
-    <value>祈願資料存在無效的物品，無法儲存至雲</value>
-  </data>
-  <data name="ServerGachaLogServiceServerDatabaseError" xml:space="preserve">
-    <value>資料異常，無法儲存至雲端，請勿跨賬號上傳或嘗試刪除雲端資料後重試</value>
-  </data>
-  <data name="ServerGachaLogServiceUploadEntrySucceed" xml:space="preserve">
-    <value>上傳了 UID：{0} 的 {1} 條祈願記錄，儲存了 {2} 條</value>
-  </data>
-  <data name="ServerPassportDeviceIdEmpty" xml:space="preserve">
-    <value>裝置 ID 不能為空</value>
-  </data>
-  <data name="ServerPassportLoginRequired" xml:space="preserve">
-    <value>請先登入或註冊賬號</value>
-  </data>
-  <data name="ServerPassportLoginSucceed" xml:space="preserve">
-    <value>登入成功</value>
-  </data>
-  <data name="ServerPassportPasswordTooShort" xml:space="preserve">
-    <value>密碼長度不能小於 8 位</value>
-  </data>
-  <data name="ServerPassportRefreshTokenEmpty" xml:space="preserve">
-    <value>重新整理令牌不能為空</value>
-  </data>
-  <data name="ServerPassportRefreshTokenInvalid" xml:space="preserve">
-    <value>重新整理令牌無效或已過期</value>
-  </data>
-  <data name="ServerPassportRegisterSucceed" xml:space="preserve">
-    <value>註冊成功</value>
-  </data>
-  <data name="ServerPassportResetPasswordSucceed" xml:space="preserve">
-    <value>新密碼設定成功</value>
-  </data>
-  <data name="ServerPassportResetPasswordTheSamePassword" xml:space="preserve">
-    <value>新密碼不能與舊密碼相同</value>
-  </data>
-  <data name="ServerPassportServiceEmailHasNotRegistered" xml:space="preserve">
-    <value>當前郵箱尚未註冊</value>
-  </data>
-  <data name="ServerPassportServiceEmailHasRegistered" xml:space="preserve">
-    <value>當前郵箱已被註冊</value>
-  </data>
-  <data name="ServerPassportServiceInternalException" xml:space="preserve">
-    <value>註冊失敗，伺服器異常，請儘快聯絡開發者解決</value>
-  </data>
-  <data name="ServerPassportServiceUnregisterPasswordIncorrect" xml:space="preserve">
-    <value>密碼錯誤，登出失敗</value>
-  </data>
-  <data name="ServerPassportServiceUnregisterUserNotFound" xml:space="preserve">
-    <value>使用者不存在，登出失敗</value>
-  </data>
-  <data name="ServerPassportTokenRevokeFailed" xml:space="preserve">
-    <value>令牌撤銷失敗</value>
-  </data>
-  <data name="ServerPassportTokenRevokeSuccess" xml:space="preserve">
-    <value>令牌撤銷成功</value>
-  </data>
-  <data name="ServerPassportUnregisterSucceed" xml:space="preserve">
-    <value>使用者登出成功</value>
-  </data>
-  <data name="ServerPassportUserInfoNotExist" xml:space="preserve">
-    <value>使用者不存在，獲取使用者資訊失敗</value>
-  </data>
-  <data name="ServerPassportUserNameOrPasswordIncorrect" xml:space="preserve">
-    <value>使用者名稱或密碼錯誤</value>
-  </data>
-  <data name="ServerPassportVerifyFailed" xml:space="preserve">
-    <value>驗證失敗</value>
-  </data>
-  <data name="ServerPassportVerifyRequestNotCurrentUser" xml:space="preserve">
-    <value>驗證請求失敗，不是當前登入的賬號</value>
-  </data>
-  <data name="ServerPassportVerifyRequestSuccess" xml:space="preserve">
-    <value>驗證碼已傳送至郵箱</value>
-  </data>
-  <data name="ServerPassportVerifyRequestUserAlreadyExisted" xml:space="preserve">
-    <value>驗證請求失敗，當前郵箱已被註冊</value>
-  </data>
-  <data name="ServerPassportVerifyRequestUserNotExisted" xml:space="preserve">
-    <value>驗證請求失敗，當前郵箱未註冊</value>
-  </data>
-  <data name="ServerPassportVerifyTooFrequent" xml:space="preserve">
-    <value>驗證請求過快，請 1 分鐘後再試</value>
-  </data>
-  <data name="ServerRecordBannedUid" xml:space="preserve">
-    <value>上傳深淵記錄失敗，當前 UID 已被資料庫封禁</value>
-  </data>
-  <data name="ServerRecordComputingStatistics" xml:space="preserve">
-    <value>上傳深淵記錄失敗，正在計算統計資料</value>
-  </data>
-  <data name="ServerRecordComputingStatistics2" xml:space="preserve">
-    <value>獲取資料失敗，正在計算統計資料</value>
-  </data>
-  <data name="ServerRecordInternalException" xml:space="preserve">
-    <value>上傳深淵記錄失敗，伺服器異常，請儘快聯絡開發者解決</value>
-  </data>
-  <data name="ServerRecordInvalidData" xml:space="preserve">
-    <value>上傳深淵記錄失敗，存在無效的資料</value>
-  </data>
-  <data name="ServerRecordInvalidUid" xml:space="preserve">
-    <value>無效的 UID</value>
-  </data>
-  <data name="ServerRecordNotCurrentSchedule" xml:space="preserve">
-    <value>上傳深淵記錄失敗，不是本期資料</value>
-  </data>
-  <data name="ServerRecordPreviousRequestNotCompleted" xml:space="preserve">
-    <value>上傳深淵記錄失敗，當前 UID 的記錄仍在處理中，請勿重複操作</value>
-  </data>
-  <data name="ServerRecordUploadSuccessAndGachaLogServiceTimeExtended" xml:space="preserve">
-    <value>上傳深淵記錄成功，獲贈祈願記錄上傳服務時長</value>
-  </data>
-  <data name="ServerRecordUploadSuccessButNoPassport" xml:space="preserve">
-    <value>上傳深淵記錄成功，但未登入通行證，無法獲贈祈願記錄上傳服務時長</value>
-  </data>
-  <data name="ServerRecordUploadSuccessButNoSuchUser" xml:space="preserve">
-    <value>上傳深淵記錄成功，但無法找到使用者，無法獲贈祈願記錄上傳服務時長</value>
-  </data>
-  <data name="ServerRecordUploadSuccessButNotFirstTimeAtCurrentSchedule" xml:space="preserve">
-    <value>上傳深淵記錄成功，但不是本期首次提交，無法獲贈祈願記錄上傳服務時長</value>
   </data>
   <data name="ServiceAchievementImportResult" xml:space="preserve">
     <value>新增：{0} 個成就 | 更新：{1} 個成就 | 刪除：{2} 個成就</value>
@@ -1064,9 +929,6 @@
   <data name="ServiceGamePackageAdvancedConfirmStartUpdateTitle" xml:space="preserve">
     <value>確認開始更新遊戲</value>
   </data>
-  <data name="ServiceGamePackageAdvancedDecodeManifestFailed" xml:space="preserve">
-    <value>清單資料解析失敗</value>
-  </data>
   <data name="ServiceGamePackageAdvancedDriverNoAvailableFreeSpace" xml:space="preserve">
     <value>磁碟空間不足</value>
   </data>
@@ -1109,17 +971,11 @@
   <data name="ServiceGitRepositoryOperationFailed" xml:space="preserve">
     <value>操作失敗</value>
   </data>
-  <data name="ServiceMetadataDownloadSourceFilesFailed" xml:space="preserve">
-    <value>一個或多個後設資料檔案下載失敗：{0}</value>
-  </data>
   <data name="ServiceMetadataFileNotFound" xml:space="preserve">
     <value>無法找到快取的後設資料檔案</value>
   </data>
   <data name="ServiceMetadataNotInitialized" xml:space="preserve">
     <value>後設資料服務尚未初始化，或初始化失敗</value>
-  </data>
-  <data name="ServiceMetadataParseFailed" xml:space="preserve">
-    <value>後設資料校驗檔案解析失敗</value>
   </data>
   <data name="ServiceMetadataVersionNotSupported" xml:space="preserve">
     <value>你的版本過低，請儘快升級</value>
@@ -1228,9 +1084,6 @@
   </data>
   <data name="ViewAchievementHeader" xml:space="preserve">
     <value>成就管理</value>
-  </data>
-  <data name="ViewAnnouncementHeader" xml:space="preserve">
-    <value>主頁</value>
   </data>
   <data name="ViewAvatarPropertyHeader" xml:space="preserve">
     <value>我的角色</value>
@@ -1370,12 +1223,6 @@
   <data name="ViewDialogExportUIGFTitle" xml:space="preserve">
     <value>匯出 UIGF 檔案</value>
   </data>
-  <data name="ViewDialogFeedbackEnableLoopbackContent" xml:space="preserve">
-    <value>解除限制後需要使用其他工具恢復限制</value>
-  </data>
-  <data name="ViewDialogFeedbackEnableLoopbackTitle" xml:space="preserve">
-    <value>是否解除 Loopback 限制</value>
-  </data>
   <data name="ViewDialogGachaLogRefreshProgressAuthkeyTimeout" xml:space="preserve">
     <value>祈願記錄 URL 已失效，請重新獲取</value>
   </data>
@@ -1441,24 +1288,6 @@
   </data>
   <data name="ViewDialogGeetestCustomUrlTitle" xml:space="preserve">
     <value>配置無感驗證介面</value>
-  </data>
-  <data name="ViewDialogLauncherPassportLoginTitle" xml:space="preserve">
-    <value>登入通行證</value>
-  </data>
-  <data name="ViewDialogLauncherPassportRegisterTitle" xml:space="preserve">
-    <value>註冊通行證</value>
-  </data>
-  <data name="ViewDialogLauncherPassportResetPasswordTitle" xml:space="preserve">
-    <value>重置通行證密碼</value>
-  </data>
-  <data name="ViewDialogLauncherPassportResetUserNameTitle" xml:space="preserve">
-    <value>重置通行證郵箱</value>
-  </data>
-  <data name="ViewDialogLauncherPassportUnregisterTitle" xml:space="preserve">
-    <value>登出通行證賬號</value>
-  </data>
-  <data name="ViewDialogLauncherPassportUseRedeemCodeTitle" xml:space="preserve">
-    <value>使用雲兌換碼</value>
   </data>
   <data name="ViewDialogImportExportApp" xml:space="preserve">
     <value>匯出 App</value>
@@ -1528,18 +1357,6 @@
   </data>
   <data name="ViewDialogReconfirmTitle" xml:space="preserve">
     <value>你正在啟用一個危險功能</value>
-  </data>
-  <data name="ViewDialogSpiralAbyssUploadRecordHomaNotLoginHint" xml:space="preserve">
-    <value>當前未登入賬號，上傳深淵資料無法獲贈雲時長</value>
-  </data>
-  <data name="ViewDialogSpiralAbyssUploadRecordHomaNotLoginPrimaryButtonText" xml:space="preserve">
-    <value>前往登入</value>
-  </data>
-  <data name="ViewDialogSpiralAbyssUploadRecordHomaNotLoginSecondaryButtonText" xml:space="preserve">
-    <value>繼續上傳</value>
-  </data>
-  <data name="ViewDialogSpiralAbyssUploadRecordHomaNotLoginTitle" xml:space="preserve">
-    <value>上傳深淵資料</value>
   </data>
   <data name="ViewDialogUserAccountPasswordAccountHint" xml:space="preserve">
     <value>請輸入賬號</value>
@@ -1708,9 +1525,6 @@
   </data>
   <data name="ViewModelAvatarPropertyTotalAvatarCountHint" xml:space="preserve">
     <value>共 {0} 位角色</value>
-  </data>
-  <data name="ViewModelComplexReliquarySetViewEmptyName" xml:space="preserve">
-    <value>無聖遺物或散件</value>
   </data>
   <data name="ViewModelCultivationBatchAddCompleted" xml:space="preserve">
     <value>操作完成：新增 / 更新：{0} 個，跳過 {1} 個</value>
@@ -1889,12 +1703,6 @@
   <data name="ViewModelHardChalllengeDataEntrySinglePlayerName" xml:space="preserve">
     <value>單人挑戰</value>
   </data>
-  <data name="ViewModelLauncherPassportEmailNotValidHint" xml:space="preserve">
-    <value>請輸入正確的郵箱</value>
-  </data>
-  <data name="ViewModelLauncherPassportPasswordTooShortHint" xml:space="preserve">
-    <value>密碼長度不能小於 8 位</value>
-  </data>
   <data name="ViewModelImportByEmbeddedYaeErrorMessage" xml:space="preserve">
     <value>請使用其他方法匯入成就</value>
   </data>
@@ -1984,9 +1792,6 @@
   </data>
   <data name="ViewModelSettingClearWebCacheSuccess" xml:space="preserve">
     <value>清除完成</value>
-  </data>
-  <data name="ViewModelSettingCopyDeviceIdSuccess" xml:space="preserve">
-    <value>複製成功</value>
   </data>
   <data name="ViewModelSettingCreateDesktopShortcutFailed" xml:space="preserve">
     <value>建立桌面快捷方式失敗</value>
@@ -2144,9 +1949,6 @@
   <data name="ViewPageAchievementSortIncompletedItemsFirst" xml:space="preserve">
     <value>優先未完成</value>
   </data>
-  <data name="ViewPageAnnouncementViewDetails" xml:space="preserve">
-    <value>檢視詳情</value>
-  </data>
   <data name="ViewPageCultivationAddProject" xml:space="preserve">
     <value>新建計劃</value>
   </data>
@@ -2303,41 +2105,8 @@
   <data name="ViewPageDailyNoteVerify" xml:space="preserve">
     <value>驗證當前使用者與角色</value>
   </data>
-  <data name="ViewPageFeedbackAutoSuggestBoxPlaceholder" xml:space="preserve">
-    <value>搜尋問題與建議</value>
-  </data>
-  <data name="ViewPageFeedbackCommonLinksHeader" xml:space="preserve">
-    <value>常用連結</value>
-  </data>
-  <data name="ViewPageFeedbackCurrentProxyHeader" xml:space="preserve">
-    <value>當前代理</value>
-  </data>
   <data name="ViewPageFeedbackCurrentProxyNoProxyDescription" xml:space="preserve">
     <value>無代理</value>
-  </data>
-  <data name="ViewPageFeedbackEnableLoopbackEnabledDescription" xml:space="preserve">
-    <value>已解除</value>
-  </data>
-  <data name="ViewPageFeedbackEnableLoopbackHeader" xml:space="preserve">
-    <value>解除 Loopback 限制</value>
-  </data>
-  <data name="ViewPageFeedbackEngageWithUsDescription" xml:space="preserve">
-    <value>與我們密切聯絡</value>
-  </data>
-  <data name="ViewPageFeedbackFeatureGuideHeader" xml:space="preserve">
-    <value>功能指南</value>
-  </data>
-  <data name="ViewPageFeedbackGithubIssuesDescription" xml:space="preserve">
-    <value>我們總是優先處理 GitHub 上的問題</value>
-  </data>
-  <data name="ViewPageFeedbackSearchResultPlaceholderTitle" xml:space="preserve">
-    <value>暫無搜尋結果</value>
-  </data>
-  <data name="ViewPageFeedbackServerStatusDescription" xml:space="preserve">
-    <value>服務可用性監控</value>
-  </data>
-  <data name="ViewPageFeedbackServerStatusHeader" xml:space="preserve">
-    <value>服務</value>
   </data>
   <data name="ViewPageGachaLogAggressiveRefresh" xml:space="preserve">
     <value>全量重新整理</value>
@@ -2434,108 +2203,6 @@
   </data>
   <data name="ViewPageHomeGreetingTextEasterEgg" xml:space="preserve">
     <value>你說的對，但是《》是由 DGP Studio 自主研發的一款...</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverview" xml:space="preserve">
-    <value>詳情</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewAvatarAppearanceRank" xml:space="preserve">
-    <value>角色出場</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewAvatarConstellation" xml:space="preserve">
-    <value>角色持有</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewAvatarUsageRank" xml:space="preserve">
-    <value>角色使用</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation0" xml:space="preserve">
-    <value>0 命</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation1" xml:space="preserve">
-    <value>1 命</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation2" xml:space="preserve">
-    <value>2 命</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation3" xml:space="preserve">
-    <value>3 命</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation4" xml:space="preserve">
-    <value>4 命</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation5" xml:space="preserve">
-    <value>5 命</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation6" xml:space="preserve">
-    <value>6 命</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellationAvatar" xml:space="preserve">
-    <value>角色</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellationHolding" xml:space="preserve">
-    <value>持有</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewDataCollect" xml:space="preserve">
-    <value>資料收集統計</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewRecordTotal" xml:space="preserve">
-    <value>上傳記錄總數</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewRefreshTime" xml:space="preserve">
-    <value>資料重新整理時間</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyss" xml:space="preserve">
-    <value>深淵資料統計</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyssBattleAverage" xml:space="preserve">
-    <value>平均戰鬥次數</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyssFullStar" xml:space="preserve">
-    <value>滿星深淵記錄</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyssPassed" xml:space="preserve">
-    <value>通關深淵記錄</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyssStarAverage" xml:space="preserve">
-    <value>平均獲取淵星</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyssTotal" xml:space="preserve">
-    <value>總計深淵記錄</value>
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewTeamAppearance" xml:space="preserve">
-    <value>隊伍出場</value>
-  </data>
-  <data name="ViewPageLauncherPassportCDNCloudDescription" xml:space="preserve">
-    <value>獲得時長後您將能夠在版本更新時選擇中國國內的 CDN 映象，以獲得更好的更新體驗。</value>
-  </data>
-  <data name="ViewPageLauncherPassportCDNCloudHeader" xml:space="preserve">
-    <value>雲 CDN 服務</value>
-  </data>
-  <data name="ViewPageLauncherPassportNewUserNameHint" xml:space="preserve">
-    <value>請輸入新郵箱</value>
-  </data>
-  <data name="ViewPageLauncherPassportPasswordHint" xml:space="preserve">
-    <value>請輸入密碼</value>
-  </data>
-  <data name="ViewPageLauncherPassportPasswordRequirementHint" xml:space="preserve">
-    <value>至少需要 8 個字元</value>
-  </data>
-  <data name="ViewPageLauncherPassportRedeemCodeHint" xml:space="preserve">
-    <value>請輸入兌換碼</value>
-  </data>
-  <data name="ViewPageLauncherPassportSponsorAction" xml:space="preserve">
-    <value>贊助</value>
-  </data>
-  <data name="ViewPageLauncherPassportUnregisterHint" xml:space="preserve">
-    <value>登出賬號的資料將永遠丟失，無法恢復</value>
-  </data>
-  <data name="ViewPageLauncherPassportUserNameHint" xml:space="preserve">
-    <value>請輸入郵箱</value>
-  </data>
-  <data name="ViewPageLauncherPassportVerifyCodeAction" xml:space="preserve">
-    <value>獲取驗證碼</value>
-  </data>
-  <data name="ViewPageLauncherPassportVerifyCodeHint" xml:space="preserve">
-    <value>請輸入驗證碼</value>
   </data>
   <data name="ViewPageLaunchGameAction" xml:space="preserve">
     <value>啟動遊戲</value>
@@ -2753,9 +2420,6 @@
     <value>通知區域圖示建立失敗，無法調整關閉按鈕行為</value>
   </data>
 
-  <data name="ViewPageSettingCopyDeviceIdAction" xml:space="preserve">
-    <value>複製</value>
-  </data>
   <data name="ViewPageSettingCreateDesktopShortcutAction" xml:space="preserve">
     <value>建立</value>
   </data>
@@ -2776,15 +2440,6 @@
   </data>
   <data name="ViewPageSettingDeleteCacheHeader" xml:space="preserve">
     <value>刪除遊戲內網頁快取</value>
-  </data>
-  <data name="ViewPageSettingDeviceIdHeader" xml:space="preserve">
-    <value>裝置 ID</value>
-  </data>
-  <data name="ViewPageSettingDeviceIpDescription" xml:space="preserve">
-    <value>IP：{0} 歸屬伺服器：{1}</value>
-  </data>
-  <data name="ViewPageSettingDeviceIpHeader" xml:space="preserve">
-    <value>裝置 IP</value>
   </data>
   <data name="ViewPageSettingElevatedModeHeader" xml:space="preserve">
     <value>管理員模式</value>
@@ -2836,57 +2491,6 @@
   </data>
   <data name="ViewPageSettingHomeHeader" xml:space="preserve">
     <value>公告</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportCdnExpiredAtHeader" xml:space="preserve">
-    <value>雲 CDN 到期時間</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportDangerZoneDescription" xml:space="preserve">
-    <value>三思而後行</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportDangerZoneHeader" xml:space="preserve">
-    <value>危險操作</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportHeader" xml:space="preserve">
-    <value>通行證賬號</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportLicensedDeveloperDescription" xml:space="preserve">
-    <value>您可以無限制使用任何基於雲服務的功能</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportLicensedDeveloperHeader" xml:space="preserve">
-    <value>已認證的合作開發者</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportLoginAction" xml:space="preserve">
-    <value>登入</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportLogoutAction" xml:space="preserve">
-    <value>退出登入</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportMaintainerDescription" xml:space="preserve">
-    <value>您可以無限制的使用任何測試功能</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportMaintainerHeader" xml:space="preserve">
-    <value>開發 / 運維</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportRedeemCodeDescription" xml:space="preserve">
-    <value>我們有時會向某些使用者贈送雲兌換碼</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportRedeemCodeHeader" xml:space="preserve">
-    <value>使用兌換碼</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportRefreshAction" xml:space="preserve">
-    <value>重新整理</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportRegisterAction" xml:space="preserve">
-    <value>註冊</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportResetPasswordAction" xml:space="preserve">
-    <value>修改密碼</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportResetUserNameAction" xml:space="preserve">
-    <value>修改郵箱</value>
-  </data>
-  <data name="ViewPageSettingLauncherPassportUnregisterAction" xml:space="preserve">
-    <value>登出賬號</value>
   </data>
   <data name="ViewPageSettingKeyShortcutAutoClickingDescription" xml:space="preserve">
     <value>更改滑鼠左鍵自動連點功能的快捷鍵</value>
@@ -2951,15 +2555,6 @@
   <data name="ViewPageSettingWebview2Header" xml:space="preserve">
     <value>Webview2 執行時</value>
   </data>
-  <data name="ViewPageSpiralAbyssTeamAppearanceDownHeader" xml:space="preserve">
-    <value>下半</value>
-  </data>
-  <data name="ViewPageSpiralAbyssTeamAppearanceUpHeader" xml:space="preserve">
-    <value>上半</value>
-  </data>
-  <data name="ViewPageWiKiAvatarArtifactSetCombinationHeader" xml:space="preserve">
-    <value>搭配聖遺物</value>
-  </data>
   <data name="ViewPageWiKiAvatarAscensionMaterialsHeader" xml:space="preserve">
     <value>養成材料</value>
   </data>
@@ -3008,17 +2603,11 @@
   <data name="ViewPageWiKiAvatarStoriesHeader" xml:space="preserve">
     <value>故事</value>
   </data>
-  <data name="ViewPageWiKiAvatarTeamCombinationHeader" xml:space="preserve">
-    <value>搭配角色</value>
-  </data>
   <data name="ViewPageWiKiAvatarTraceEffectHeader" xml:space="preserve">
     <value>遊跡</value>
   </data>
   <data name="ViewPageWiKiAvatarVisionTitle" xml:space="preserve">
     <value>神之眼</value>
-  </data>
-  <data name="ViewPageWiKiAvatarWeaponCombinationHeader" xml:space="preserve">
-    <value>搭配武器</value>
   </data>
   <data name="ViewPageWiKiWeaponAutoSuggestBoxPlaceHolder" xml:space="preserve">
     <value>篩選武器</value>
@@ -3035,29 +2624,8 @@
   <data name="ViewRoleCombatHeader" xml:space="preserve">
     <value>幻想真境劇詩</value>
   </data>
-  <data name="ViewServiceLauncherUserCdnNotAllowedDescription" xml:space="preserve">
-    <value>未開通雲 CDN 或已到期</value>
-  </data>
-  <data name="ViewServiceLauncherUserCloudNotAllowedDescription" xml:space="preserve">
-    <value>未開通祈願記錄上傳服務或已到期</value>
-  </data>
-  <data name="ViewServiceLauncherUserLoginFailHint" xml:space="preserve">
-    <value>登入失敗，請重新登入</value>
-  </data>
-  <data name="ViewServiceLauncherUserLoginOrRegisterHint" xml:space="preserve">
-    <value>立即登入或註冊</value>
-  </data>
   <data name="ViewSettingFolderViewOpenFolderAction" xml:space="preserve">
     <value>開啟資料夾</value>
-  </data>
-  <data name="ViewSettingHeader" xml:space="preserve">
-    <value>設定</value>
-  </data>
-  <data name="ViewSpiralAbyssAvatarAppearanceRankDescription" xml:space="preserve">
-    <value>角色出場率 = 本層上陣該角色次數（層內重複出現只記一次）/ 深淵記錄總數</value>
-  </data>
-  <data name="ViewSpiralAbyssAvatarUsageRankDescription" xml:space="preserve">
-    <value>角色使用率 = 本層上陣該角色次數（層內重複出現只記一次）/ 持有該角色的深淵記錄總數</value>
   </data>
   <data name="ViewSpiralAbyssBattleTimes" xml:space="preserve">
     <value>戰鬥次數</value>
@@ -3112,9 +2680,6 @@
   </data>
   <data name="ViewSpiralAbyssTotalStar" xml:space="preserve">
     <value>獲得淵星</value>
-  </data>
-  <data name="ViewSpiralAbyssUploadRecord" xml:space="preserve">
-    <value>上傳資料</value>
   </data>
   <data name="ViewToolHeader" xml:space="preserve">
     <value>工具</value>
@@ -3178,9 +2743,6 @@
   </data>
   <data name="ViewWikiAvatarHeader" xml:space="preserve">
     <value>角色資料</value>
-  </data>
-  <data name="ViewWikiMonsterHeader" xml:space="preserve">
-    <value>怪物資料</value>
   </data>
   <data name="ViewWikiWeaponHeader" xml:space="preserve">
     <value>武器資料</value>

@@ -9,9 +9,6 @@
 
 using Launcher.Model.Entity;
 using Launcher.Model.Primitive;
-using Launcher.Web.Launcher.Strategy;
-using Launcher.Web.Response;
-using System.Collections.Immutable;
 
 namespace Launcher.Service.Launcher;
 
@@ -19,12 +16,11 @@ namespace Launcher.Service.Launcher;
 internal sealed partial class AvatarStrategyService : IAvatarStrategyService
 {
     private readonly IAvatarStrategyRepository repository;
-    private readonly IServiceProvider serviceProvider;
 
     [GeneratedConstructor]
     public partial AvatarStrategyService(IServiceProvider serviceProvider);
 
-    public async ValueTask<AvatarStrategy?> GetStrategyByAvatarId(AvatarId avatarId)
+    public ValueTask<AvatarStrategy?> GetStrategyByAvatarId(AvatarId avatarId)
     {
         AvatarStrategy? strategy = repository.GetStrategyByAvatarId(avatarId);
         if (strategy is { ChineseStrategyId: 0 } or { OverseaStrategyId: 0 })
@@ -33,37 +29,6 @@ internal sealed partial class AvatarStrategyService : IAvatarStrategyService
             strategy = default;
         }
 
-        if (strategy is null)
-        {
-            using (IServiceScope scope = serviceProvider.CreateScope())
-            {
-                LauncherStrategyClient strategyClient = scope.ServiceProvider.GetRequiredService<LauncherStrategyClient>();
-                Response<ImmutableDictionary<AvatarId, Strategy>> response = await strategyClient.GetStrategyItemAsync(avatarId).ConfigureAwait(false);
-
-                if (ResponseValidator.TryValidate(response, scope.ServiceProvider, out ImmutableDictionary<AvatarId, Strategy>? dictionary))
-                {
-                    if (!dictionary.TryGetValue(avatarId, out Strategy? data))
-                    {
-                        return default;
-                    }
-
-                    if (data.HoyolabStrategyId is null && data.MysStrategyId is null)
-                    {
-                        return default;
-                    }
-
-                    strategy = new()
-                    {
-                        AvatarId = avatarId,
-                        ChineseStrategyId = data.MysStrategyId ?? 0,
-                        OverseaStrategyId = data.HoyolabStrategyId ?? 0,
-                    };
-
-                    repository.AddStrategy(strategy);
-                }
-            }
-        }
-
-        return strategy;
+        return ValueTask.FromResult(strategy);
     }
 }

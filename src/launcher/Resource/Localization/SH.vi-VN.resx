@@ -219,9 +219,6 @@
   <data name="ModelBindingLauncherComplexRankLevel" xml:space="preserve">
     <value>Phòng {0}</value> 
   </data>
-  <data name="ModelBindingLauncherTeamUpCount" xml:space="preserve">
-    <value>Ra trận {0} lần</value> 
-  </data>
   <data name="ModelBindingLaunchGameLaunchSchemeBilibili" xml:space="preserve">
     <value>Server Kênh</value> 
   </data>
@@ -568,138 +565,6 @@
   </data>
   <data name="MustSelectUserAndUid" xml:space="preserve">
     <value>Phải đăng nhập HoyoLAB và chọn một người dùng cùng nhân vật</value> 
-  </data>
-  <data name="ServerCdnServiceInsufficientTime" xml:space="preserve">
-    <value>Chưa mở Cloud CDN hoặc đã hết hạn</value> 
-  </data>
-  <data name="ServerGachaLogServiceDeleteEntrySucceed" xml:space="preserve">
-    <value>Đã xóa {1} bản ghi Cầu Nguyện của UID: {0}</value> 
-  </data>
-  <data name="ServerGachaLogServiceInsufficientRecordSlot" xml:space="preserve">
-    <value>Số lượng bản lưu Cầu Nguyện trên Cloud đã đạt giới hạn của tài khoản</value> 
-  </data>
-  <data name="ServerGachaLogServiceInsufficientTime" xml:space="preserve">
-    <value>Chưa mở dịch vụ tải lên lịch sử Cầu Nguyện hoặc đã hết hạn</value> 
-  </data>
-  <data name="ServerGachaLogServiceInvalidGachaLogData" xml:space="preserve">
-    <value>Dữ liệu Cầu Nguyện chứa vật phẩm không hợp lệ, không thể lưu lên Cloud</value> 
-  </data>
-  <data name="ServerGachaLogServiceServerDatabaseError" xml:space="preserve">
-    <value>Dữ liệu bất thường, không thể lưu lên Cloud. Vui lòng không tải chéo tài khoản hoặc thử xóa dữ liệu Cloud rồi thử lại</value> 
-  </data>
-  <data name="ServerGachaLogServiceUploadEntrySucceed" xml:space="preserve">
-    <value>Đã tải lên {1} lịch sử Cầu Nguyện của UID: {0}, đã lưu {2} bản ghi</value> 
-  </data>
-  <data name="ServerPassportDeviceIdEmpty" xml:space="preserve">
-    <value>ID Thiết Bị không được để trống</value> 
-  </data>
-  <data name="ServerPassportLoginRequired" xml:space="preserve">
-    <value>Vui lòng đăng nhập hoặc đăng ký tài khoản trước</value> 
-  </data>
-  <data name="ServerPassportLoginSucceed" xml:space="preserve">
-    <value>Đăng nhập thành công</value> 
-  </data>
-  <data name="ServerPassportPasswordTooShort" xml:space="preserve">
-    <value>Độ dài mật khẩu không được nhỏ hơn 8 ký tự</value> 
-  </data>
-  <data name="ServerPassportRefreshTokenEmpty" xml:space="preserve">
-    <value>Refresh Token không được để trống</value> 
-  </data>
-  <data name="ServerPassportRefreshTokenInvalid" xml:space="preserve">
-    <value>Refresh Token không hợp lệ hoặc đã hết hạn</value> 
-  </data>
-  <data name="ServerPassportRegisterSucceed" xml:space="preserve">
-    <value>Đăng ký thành công</value> 
-  </data>
-  <data name="ServerPassportResetPasswordSucceed" xml:space="preserve">
-    <value>Cài đặt mật khẩu mới thành công</value> 
-  </data>
-  <data name="ServerPassportResetPasswordTheSamePassword" xml:space="preserve">
-    <value>Mật khẩu mới không được trùng với mật khẩu cũ</value> 
-  </data>
-  <data name="ServerPassportServiceEmailHasNotRegistered" xml:space="preserve">
-    <value>Email hiện tại chưa được đăng ký</value> 
-  </data>
-  <data name="ServerPassportServiceEmailHasRegistered" xml:space="preserve">
-    <value>Email hiện tại đã được đăng ký</value> 
-  </data>
-  <data name="ServerPassportServiceInternalException" xml:space="preserve">
-    <value>Đăng ký thất bại, máy chủ bất thường, vui lòng liên hệ nhà phát triển để giải quyết</value> 
-  </data>
-  <data name="ServerPassportServiceUnregisterPasswordIncorrect" xml:space="preserve">
-    <value>Mật khẩu sai, hủy đăng ký thất bại</value> 
-  </data>
-  <data name="ServerPassportServiceUnregisterUserNotFound" xml:space="preserve">
-    <value>Người dùng không tồn tại, hủy đăng ký thất bại</value> 
-  </data>
-  <data name="ServerPassportTokenRevokeFailed" xml:space="preserve">
-    <value>Thu hồi Token thất bại</value> 
-  </data>
-  <data name="ServerPassportTokenRevokeSuccess" xml:space="preserve">
-    <value>Thu hồi Token thành công</value> 
-  </data>
-  <data name="ServerPassportUnregisterSucceed" xml:space="preserve">
-    <value>Hủy đăng ký tài khoản thành công</value> 
-  </data>
-  <data name="ServerPassportUserInfoNotExist" xml:space="preserve">
-    <value>Người dùng không tồn tại, lấy thông tin thất bại</value> 
-  </data>
-  <data name="ServerPassportUserNameOrPasswordIncorrect" xml:space="preserve">
-    <value>Tên người dùng hoặc mật khẩu không đúng</value> 
-  </data>
-  <data name="ServerPassportVerifyFailed" xml:space="preserve">
-    <value>Xác minh thất bại</value> 
-  </data>
-  <data name="ServerPassportVerifyRequestNotCurrentUser" xml:space="preserve">
-    <value>Yêu cầu xác minh thất bại, không phải là tài khoản đang đăng nhập</value> 
-  </data>
-  <data name="ServerPassportVerifyRequestSuccess" xml:space="preserve">
-    <value>Mã xác minh đã được gửi đến email</value> 
-  </data>
-  <data name="ServerPassportVerifyRequestUserAlreadyExisted" xml:space="preserve">
-    <value>Yêu cầu xác minh thất bại, email đã được đăng ký</value> 
-  </data>
-  <data name="ServerPassportVerifyRequestUserNotExisted" xml:space="preserve">
-    <value>Yêu cầu xác minh thất bại, email chưa đăng ký</value> 
-  </data>
-  <data name="ServerPassportVerifyTooFrequent" xml:space="preserve">
-    <value>Yêu cầu xác minh quá nhanh, vui lòng thử lại sau 1 phút</value> 
-  </data>
-  <data name="ServerRecordBannedUid" xml:space="preserve">
-    <value>Tải lên La Hoàn Thâm Cảnh thất bại, UID hiện tại đã bị CSDL cấm</value> 
-  </data>
-  <data name="ServerRecordComputingStatistics" xml:space="preserve">
-    <value>Tải lên dữ liệu La Hoàn Thâm Cảnh thất bại, đang tính toán số liệu thống kê</value> 
-  </data>
-  <data name="ServerRecordComputingStatistics2" xml:space="preserve">
-    <value>Lấy dữ liệu thất bại, đang tính toán số liệu thống kê</value> 
-  </data>
-  <data name="ServerRecordInternalException" xml:space="preserve">
-    <value>Tải lên dữ liệu La Hoàn Thâm Cảnh thất bại, máy chủ bất thường, vui lòng liên hệ nhà phát triển để giải quyết</value> 
-  </data>
-  <data name="ServerRecordInvalidData" xml:space="preserve">
-    <value>Tải lên dữ liệu La Hoàn Thâm Cảnh thất bại, tồn tại dữ liệu không hợp lệ</value> 
-  </data>
-  <data name="ServerRecordInvalidUid" xml:space="preserve">
-    <value>UID không hợp lệ</value> 
-  </data>
-  <data name="ServerRecordNotCurrentSchedule" xml:space="preserve">
-    <value>Tải lên dữ liệu La Hoàn Thâm Cảnh thất bại, không phải dữ liệu của kỳ hiện tại</value> 
-  </data>
-  <data name="ServerRecordPreviousRequestNotCompleted" xml:space="preserve">
-    <value>Tải lên dữ liệu La Hoàn Thâm Cảnh thất bại, dữ liệu UID này vẫn đang được xử lý, vui lòng không lặp lại thao tác</value> 
-  </data>
-  <data name="ServerRecordUploadSuccessAndGachaLogServiceTimeExtended" xml:space="preserve">
-    <value>Tải lên La Hoàn Thâm Cảnh thành công, được tặng thời gian dịch vụ tải lên lịch sử Cầu Nguyện</value> 
-  </data>
-  <data name="ServerRecordUploadSuccessButNoPassport" xml:space="preserve">
-    <value>Tải lên La Hoàn Thâm Cảnh thành công, nhưng chưa đăng nhập Passport, không thể nhận thời gian dịch vụ tặng kèm</value> 
-  </data>
-  <data name="ServerRecordUploadSuccessButNoSuchUser" xml:space="preserve">
-    <value>Tải lên La Hoàn Thâm Cảnh thành công, nhưng không tìm thấy người dùng, không thể nhận thời gian dịch vụ tặng kèm</value> 
-  </data>
-  <data name="ServerRecordUploadSuccessButNotFirstTimeAtCurrentSchedule" xml:space="preserve">
-    <value>Tải lên La Hoàn Thâm Cảnh thành công, nhưng không phải lần tải lên đầu tiên của kỳ này, không thể nhận thời gian dịch vụ tặng kèm</value> 
   </data>
   <data name="ServiceAchievementImportResult" xml:space="preserve">
     <value>Thêm mới: {0} thành tựu | Cập nhật: {1} thành tựu | Xóa: {2} thành tựu</value> 
@@ -1055,9 +920,6 @@
   <data name="ServiceGamePackageAdvancedConfirmStartUpdateTitle" xml:space="preserve">
     <value>Xác nhận bắt đầu cập nhật game</value> 
   </data>
-  <data name="ServiceGamePackageAdvancedDecodeManifestFailed" xml:space="preserve">
-    <value>Phân tích dữ liệu Manifest thất bại</value> 
-  </data>
   <data name="ServiceGamePackageAdvancedDriverNoAvailableFreeSpace" xml:space="preserve">
     <value>Không gian ổ đĩa không đủ</value> 
   </data>
@@ -1100,17 +962,11 @@
   <data name="ServiceGitRepositoryOperationFailed" xml:space="preserve">
     <value>Thao tác thất bại</value> 
   </data>
-  <data name="ServiceMetadataDownloadSourceFilesFailed" xml:space="preserve">
-    <value>Một hoặc nhiều tệp siêu dữ liệu (metadata) tải xuống thất bại: {0}</value> 
-  </data>
   <data name="ServiceMetadataFileNotFound" xml:space="preserve">
     <value>Không thể tìm thấy tệp siêu dữ liệu (metadata) được cache</value> 
   </data>
   <data name="ServiceMetadataNotInitialized" xml:space="preserve">
     <value>Dịch vụ siêu dữ liệu (metadata) chưa được khởi tạo hoặc khởi tạo thất bại</value> 
-  </data>
-  <data name="ServiceMetadataParseFailed" xml:space="preserve">
-    <value>Phân tích tệp xác minh siêu dữ liệu thất bại</value> 
   </data>
   <data name="ServiceMetadataVersionNotSupported" xml:space="preserve">
     <value>Phiên bản của bạn quá cũ, vui lòng cập nhật sớm nhất có thể</value> 
@@ -1219,9 +1075,6 @@
   </data>
   <data name="ViewAchievementHeader" xml:space="preserve">
     <value>Quản lý Thành Tựu</value> 
-  </data>
-  <data name="ViewAnnouncementHeader" xml:space="preserve">
-    <value>Trang chủ</value> 
   </data>
   <data name="ViewAvatarPropertyHeader" xml:space="preserve">
     <value>Nhân vật của tôi</value> 
@@ -1361,12 +1214,6 @@
   <data name="ViewDialogExportUIGFTitle" xml:space="preserve">
     <value>Xuất tệp UIGF</value> 
   </data>
-  <data name="ViewDialogFeedbackEnableLoopbackContent" xml:space="preserve">
-    <value>Sau khi gỡ bỏ giới hạn, cần dùng công cụ khác để khôi phục giới hạn</value> 
-  </data>
-  <data name="ViewDialogFeedbackEnableLoopbackTitle" xml:space="preserve">
-    <value>Có gỡ bỏ giới hạn Loopback không</value> 
-  </data>
   <data name="ViewDialogGachaLogRefreshProgressAuthkeyTimeout" xml:space="preserve">
     <value>URL Cầu Nguyện đã hết hiệu lực, vui lòng lấy lại</value> 
   </data>
@@ -1432,24 +1279,6 @@
   </data>
   <data name="ViewDialogGeetestCustomUrlTitle" xml:space="preserve">
     <value>Cấu hình giao diện xác minh ẩn</value> 
-  </data>
-  <data name="ViewDialogLauncherPassportLoginTitle" xml:space="preserve">
-    <value>Đăng nhập Passport</value> 
-  </data>
-  <data name="ViewDialogLauncherPassportRegisterTitle" xml:space="preserve">
-    <value>Đăng ký Passport</value> 
-  </data>
-  <data name="ViewDialogLauncherPassportResetPasswordTitle" xml:space="preserve">
-    <value>Đặt lại mật khẩu Passport</value> 
-  </data>
-  <data name="ViewDialogLauncherPassportResetUserNameTitle" xml:space="preserve">
-    <value>Đặt lại email Passport</value> 
-  </data>
-  <data name="ViewDialogLauncherPassportUnregisterTitle" xml:space="preserve">
-    <value>Hủy tài khoản Passport</value> 
-  </data>
-  <data name="ViewDialogLauncherPassportUseRedeemCodeTitle" xml:space="preserve">
-    <value>Sử dụng Mã Đổi Thưởng Cloud</value> 
   </data>
   <data name="ViewDialogImportExportApp" xml:space="preserve">
     <value>Ứng dụng xuất</value> 
@@ -1519,18 +1348,6 @@
   </data>
   <data name="ViewDialogReconfirmTitle" xml:space="preserve">
     <value>Bạn đang bật một chức năng nguy hiểm</value> 
-  </data>
-  <data name="ViewDialogSpiralAbyssUploadRecordHomaNotLoginHint" xml:space="preserve">
-    <value>Chưa đăng nhập tài khoản hiện tại, tải lên dữ liệu La Hoàn sẽ không nhận được thời gian Cloud tặng kèm</value> 
-  </data>
-  <data name="ViewDialogSpiralAbyssUploadRecordHomaNotLoginPrimaryButtonText" xml:space="preserve">
-    <value>Đi đăng nhập</value> 
-  </data>
-  <data name="ViewDialogSpiralAbyssUploadRecordHomaNotLoginSecondaryButtonText" xml:space="preserve">
-    <value>Tiếp tục tải lên</value> 
-  </data>
-  <data name="ViewDialogSpiralAbyssUploadRecordHomaNotLoginTitle" xml:space="preserve">
-    <value>Tải lên dữ liệu La Hoàn</value> 
   </data>
   <data name="ViewDialogUserAccountPasswordAccountHint" xml:space="preserve">
     <value>Vui lòng nhập tài khoản</value> 
@@ -1699,9 +1516,6 @@
   </data>
   <data name="ViewModelAvatarPropertyTotalAvatarCountHint" xml:space="preserve">
     <value>Tổng cộng {0} nhân vật</value> 
-  </data>
-  <data name="ViewModelComplexReliquarySetViewEmptyName" xml:space="preserve">
-    <value>Không có Thánh Di Vật hoặc Đồ Lẻ</value> 
   </data>
   <data name="ViewModelCultivationBatchAddCompleted" xml:space="preserve">
     <value>Thao tác hoàn thành: Thêm / Cập nhật: {0} mục, bỏ qua {1} mục</value> 
@@ -1880,12 +1694,6 @@
   <data name="ViewModelHardChalllengeDataEntrySinglePlayerName" xml:space="preserve">
     <value>Khiêu chiến cá nhân</value> 
   </data>
-  <data name="ViewModelLauncherPassportEmailNotValidHint" xml:space="preserve">
-    <value>Vui lòng nhập đúng email</value> 
-  </data>
-  <data name="ViewModelLauncherPassportPasswordTooShortHint" xml:space="preserve">
-    <value>Độ dài mật khẩu không được dưới 8 ký tự</value> 
-  </data>
   <data name="ViewModelImportByEmbeddedYaeErrorMessage" xml:space="preserve">
     <value>Vui lòng dùng cách khác để nhập Thành Tựu</value> 
   </data>
@@ -1975,9 +1783,6 @@
   </data>
   <data name="ViewModelSettingClearWebCacheSuccess" xml:space="preserve">
     <value>Xóa hoàn tất</value> 
-  </data>
-  <data name="ViewModelSettingCopyDeviceIdSuccess" xml:space="preserve">
-    <value>Sao chép thành công</value> 
   </data>
   <data name="ViewModelSettingCreateDesktopShortcutFailed" xml:space="preserve">
     <value>Tạo lối tắt desktop thất bại</value> 
@@ -2135,9 +1940,6 @@
   <data name="ViewPageAchievementSortIncompletedItemsFirst" xml:space="preserve">
     <value>Ưu tiên chưa hoàn thành</value> 
   </data>
-  <data name="ViewPageAnnouncementViewDetails" xml:space="preserve">
-    <value>Xem chi tiết</value> 
-  </data>
   <data name="ViewPageCultivationAddProject" xml:space="preserve">
     <value>Tạo kế hoạch</value> 
   </data>
@@ -2294,41 +2096,8 @@
   <data name="ViewPageDailyNoteVerify" xml:space="preserve">
     <value>Xác minh người dùng và nhân vật hiện tại</value> 
   </data>
-  <data name="ViewPageFeedbackAutoSuggestBoxPlaceholder" xml:space="preserve">
-    <value>Tìm kiếm vấn đề và góp ý</value> 
-  </data>
-  <data name="ViewPageFeedbackCommonLinksHeader" xml:space="preserve">
-    <value>Liên kết thường dùng</value> 
-  </data>
-  <data name="ViewPageFeedbackCurrentProxyHeader" xml:space="preserve">
-    <value>Proxy hiện tại</value> 
-  </data>
   <data name="ViewPageFeedbackCurrentProxyNoProxyDescription" xml:space="preserve">
     <value>Không dùng Proxy</value> 
-  </data>
-  <data name="ViewPageFeedbackEnableLoopbackEnabledDescription" xml:space="preserve">
-    <value>Đã gỡ bỏ</value> 
-  </data>
-  <data name="ViewPageFeedbackEnableLoopbackHeader" xml:space="preserve">
-    <value>Gỡ bỏ giới hạn Loopback</value> 
-  </data>
-  <data name="ViewPageFeedbackEngageWithUsDescription" xml:space="preserve">
-    <value>Kết nối chặt chẽ với chúng tôi</value> 
-  </data>
-  <data name="ViewPageFeedbackFeatureGuideHeader" xml:space="preserve">
-    <value>Hướng dẫn tính năng</value> 
-  </data>
-  <data name="ViewPageFeedbackGithubIssuesDescription" xml:space="preserve">
-    <value>Chúng tôi luôn ưu tiên xử lý các Issue trên GitHub</value> 
-  </data>
-  <data name="ViewPageFeedbackSearchResultPlaceholderTitle" xml:space="preserve">
-    <value>Tạm chưa có kết quả tìm kiếm</value> 
-  </data>
-  <data name="ViewPageFeedbackServerStatusDescription" xml:space="preserve">
-    <value>Theo dõi độ khả dụng dịch vụ</value> 
-  </data>
-  <data name="ViewPageFeedbackServerStatusHeader" xml:space="preserve">
-    <value>Dịch vụ</value> 
   </data>
   <data name="ViewPageGachaLogAggressiveRefresh" xml:space="preserve">
     <value>Làm mới toàn bộ</value> 
@@ -2425,108 +2194,6 @@
   </data>
   <data name="ViewPageHomeGreetingTextEasterEgg" xml:space="preserve">
     <value>Bạn nói đúng, nhưng &lt;&lt;...&gt;&gt; là một trò chơi do DGP Studio tự nghiên cứu và phát triển...</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverview" xml:space="preserve">
-    <value>Chi tiết</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewAvatarAppearanceRank" xml:space="preserve">
-    <value>Nhân vật ra trận</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewAvatarConstellation" xml:space="preserve">
-    <value>Sở hữu nhân vật</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewAvatarUsageRank" xml:space="preserve">
-    <value>Sử dụng nhân vật</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation0" xml:space="preserve">
-    <value>C0</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation1" xml:space="preserve">
-    <value>C1</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation2" xml:space="preserve">
-    <value>C2</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation3" xml:space="preserve">
-    <value>C3</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation4" xml:space="preserve">
-    <value>C4</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation5" xml:space="preserve">
-    <value>C5</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellation6" xml:space="preserve">
-    <value>C6</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellationAvatar" xml:space="preserve">
-    <value>Nhân vật</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewConstellationHolding" xml:space="preserve">
-    <value>Đã Sở hữu</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewDataCollect" xml:space="preserve">
-    <value>Thống kê thu thập dữ liệu</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewRecordTotal" xml:space="preserve">
-    <value>Tổng số bản ghi đã tải lên</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewRefreshTime" xml:space="preserve">
-    <value>Thời gian làm mới dữ liệu</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyss" xml:space="preserve">
-    <value>Thống kê dữ liệu La Hoàn</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyssBattleAverage" xml:space="preserve">
-    <value>Số lần chiến đấu trung bình</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyssFullStar" xml:space="preserve">
-    <value>Số lần Max Sao Uyên Tinh La Hoàn</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyssPassed" xml:space="preserve">
-    <value>Số lần vượt qua La Hoàn</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyssStarAverage" xml:space="preserve">
-    <value>Trung bình Sao La Hoàn nhận được</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewSpiralAbyssTotal" xml:space="preserve">
-    <value>Tổng cộng bản ghi La Hoàn</value> 
-  </data>
-  <data name="ViewPageLauncherDatabaseOverviewTeamAppearance" xml:space="preserve">
-    <value>Đội ra trận</value> 
-  </data>
-  <data name="ViewPageLauncherPassportCDNCloudDescription" xml:space="preserve">
-    <value>Sau khi có thời gian dịch vụ, bạn có thể chọn Mirror CDN nội địa Trung Quốc khi cập nhật phiên bản để có trải nghiệm tốt hơn.</value> 
-  </data>
-  <data name="ViewPageLauncherPassportCDNCloudHeader" xml:space="preserve">
-    <value>Dịch vụ Cloud CDN</value> 
-  </data>
-  <data name="ViewPageLauncherPassportNewUserNameHint" xml:space="preserve">
-    <value>Vui lòng nhập email mới</value> 
-  </data>
-  <data name="ViewPageLauncherPassportPasswordHint" xml:space="preserve">
-    <value>Vui lòng nhập mật khẩu</value> 
-  </data>
-  <data name="ViewPageLauncherPassportPasswordRequirementHint" xml:space="preserve">
-    <value>Cần ít nhất 8 ký tự</value> 
-  </data>
-  <data name="ViewPageLauncherPassportRedeemCodeHint" xml:space="preserve">
-    <value>Vui lòng nhập Mã Đổi Thưởng</value> 
-  </data>
-  <data name="ViewPageLauncherPassportSponsorAction" xml:space="preserve">
-    <value>Tài trợ</value> 
-  </data>
-  <data name="ViewPageLauncherPassportUnregisterHint" xml:space="preserve">
-    <value>Dữ liệu tài khoản bị hủy sẽ mất vĩnh viễn, không thể khôi phục</value> 
-  </data>
-  <data name="ViewPageLauncherPassportUserNameHint" xml:space="preserve">
-    <value>Vui lòng nhập email</value> 
-  </data>
-  <data name="ViewPageLauncherPassportVerifyCodeAction" xml:space="preserve">
-    <value>Nhận mã xác minh</value> 
-  </data>
-  <data name="ViewPageLauncherPassportVerifyCodeHint" xml:space="preserve">
-    <value>Vui lòng nhập mã xác minh</value> 
   </data>
   <data name="ViewPageLaunchGameAction" xml:space="preserve">
     <value>Khởi động game</value> 
@@ -2744,9 +2411,6 @@
     <value>Tạo Icon khay hệ thống thất bại, không thể thay đổi hành vi nút Đóng</value> 
   </data>
   
-  <data name="ViewPageSettingCopyDeviceIdAction" xml:space="preserve">
-    <value>Sao chép</value> 
-  </data>
   <data name="ViewPageSettingCreateDesktopShortcutAction" xml:space="preserve">
     <value>Tạo</value> 
   </data>
@@ -2767,15 +2431,6 @@
   </data>
   <data name="ViewPageSettingDeleteCacheHeader" xml:space="preserve">
     <value>Xóa Cache trang web trong game</value> 
-  </data>
-  <data name="ViewPageSettingDeviceIdHeader" xml:space="preserve">
-    <value>ID Thiết bị</value> 
-  </data>
-  <data name="ViewPageSettingDeviceIpDescription" xml:space="preserve">
-    <value>IP: {0} | Máy chủ quản lý: {1}</value> 
-  </data>
-  <data name="ViewPageSettingDeviceIpHeader" xml:space="preserve">
-    <value>IP Thiết bị</value> 
   </data>
   <data name="ViewPageSettingElevatedModeHeader" xml:space="preserve">
     <value>Chế độ Quản Trị Viên</value> 
@@ -2827,57 +2482,6 @@
   </data>
   <data name="ViewPageSettingHomeHeader" xml:space="preserve">
     <value>Thông báo</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportCdnExpiredAtHeader" xml:space="preserve">
-    <value>Hạn sử dụng Cloud CDN</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportDangerZoneDescription" xml:space="preserve">
-    <value>Hãy suy nghĩ kỹ trước khi hành động</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportDangerZoneHeader" xml:space="preserve">
-    <value>Khu vực nguy hiểm</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportHeader" xml:space="preserve">
-    <value>Tài khoản Passport</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportLicensedDeveloperDescription" xml:space="preserve">
-    <value>Bạn có thể sử dụng không giới hạn mọi tính năng dựa trên Cloud</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportLicensedDeveloperHeader" xml:space="preserve">
-    <value>Nhà phát triển Đối tác được Chứng nhận</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportLoginAction" xml:space="preserve">
-    <value>Đăng nhập</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportLogoutAction" xml:space="preserve">
-    <value>Đăng xuất</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportMaintainerDescription" xml:space="preserve">
-    <value>Bạn có thể sử dụng không giới hạn mọi chức năng thử nghiệm</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportMaintainerHeader" xml:space="preserve">
-    <value>Phát triển / Vận hành</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportRedeemCodeDescription" xml:space="preserve">
-    <value>Đôi khi chúng tôi sẽ tặng Mã Đổi Thưởng Cloud cho một số người dùng nhất định</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportRedeemCodeHeader" xml:space="preserve">
-    <value>Sử dụng Mã Đổi Thưởng</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportRefreshAction" xml:space="preserve">
-    <value>Làm mới</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportRegisterAction" xml:space="preserve">
-    <value>Đăng ký</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportResetPasswordAction" xml:space="preserve">
-    <value>Đổi mật khẩu</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportResetUserNameAction" xml:space="preserve">
-    <value>Đổi email</value> 
-  </data>
-  <data name="ViewPageSettingLauncherPassportUnregisterAction" xml:space="preserve">
-    <value>Hủy Tài Khoản</value> 
   </data>
   <data name="ViewPageSettingKeyShortcutAutoClickingDescription" xml:space="preserve">
     <value>Đổi phím tắt của tính năng Tự động Click chuột trái</value> 
@@ -2942,15 +2546,6 @@
   <data name="ViewPageSettingWebview2Header" xml:space="preserve">
     <value>Webview2 Runtime</value> 
   </data>
-  <data name="ViewPageSpiralAbyssTeamAppearanceDownHeader" xml:space="preserve">
-    <value>Nửa sau</value> 
-  </data>
-  <data name="ViewPageSpiralAbyssTeamAppearanceUpHeader" xml:space="preserve">
-    <value>Nửa đầu</value> 
-  </data>
-  <data name="ViewPageWiKiAvatarArtifactSetCombinationHeader" xml:space="preserve">
-    <value>Ghép Thánh Di Vật</value> 
-  </data>
   <data name="ViewPageWiKiAvatarAscensionMaterialsHeader" xml:space="preserve">
     <value>Nguyên Liệu Bồi Dưỡng</value> 
   </data>
@@ -2999,17 +2594,11 @@
   <data name="ViewPageWiKiAvatarStoriesHeader" xml:space="preserve">
     <value>Câu Chuyện</value> 
   </data>
-  <data name="ViewPageWiKiAvatarTeamCombinationHeader" xml:space="preserve">
-    <value>Ghép Đội</value> 
-  </data>
   <data name="ViewPageWiKiAvatarTraceEffectHeader" xml:space="preserve">
     <value>Dấu Chân Phía Trước</value> 
   </data>
   <data name="ViewPageWiKiAvatarVisionTitle" xml:space="preserve">
     <value>Thần Chi Nhãn</value> 
-  </data>
-  <data name="ViewPageWiKiAvatarWeaponCombinationHeader" xml:space="preserve">
-    <value>Ghép Vũ Khí</value> 
   </data>
   <data name="ViewPageWiKiWeaponAutoSuggestBoxPlaceHolder" xml:space="preserve">
     <value>Lọc Vũ Khí</value> 
@@ -3026,29 +2615,8 @@
   <data name="ViewRoleCombatHeader" xml:space="preserve">
     <value>Nhà Hát Giả Tưởng</value> 
   </data>
-  <data name="ViewServiceLauncherUserCdnNotAllowedDescription" xml:space="preserve">
-    <value>Cloud CDN chưa mở hoặc đã quá hạn</value> 
-  </data>
-  <data name="ViewServiceLauncherUserCloudNotAllowedDescription" xml:space="preserve">
-    <value>Dịch vụ Cloud Cầu Nguyện chưa mở hoặc đã quá hạn</value> 
-  </data>
-  <data name="ViewServiceLauncherUserLoginFailHint" xml:space="preserve">
-    <value>Đăng nhập thất bại, vui lòng thử lại</value> 
-  </data>
-  <data name="ViewServiceLauncherUserLoginOrRegisterHint" xml:space="preserve">
-    <value>Đăng nhập hoặc đăng ký ngay</value> 
-  </data>
   <data name="ViewSettingFolderViewOpenFolderAction" xml:space="preserve">
     <value>Mở Thư Mục</value> 
-  </data>
-  <data name="ViewSettingHeader" xml:space="preserve">
-    <value>Cài đặt</value> 
-  </data>
-  <data name="ViewSpiralAbyssAvatarAppearanceRankDescription" xml:space="preserve">
-    <value>Tỷ lệ Ra trận = Số lần ra trận của nhân vật tại Tầng này (lặp lại trong tầng chỉ tính 1) / Tổng số bản ghi La Hoàn</value> 
-  </data>
-  <data name="ViewSpiralAbyssAvatarUsageRankDescription" xml:space="preserve">
-    <value>Tỷ lệ Sử dụng = Số lần ra trận của nhân vật tại Tầng này (lặp lại trong tầng chỉ tính 1) / Tổng số bản ghi La Hoàn CÓ SỞ HỮU nhân vật đó</value> 
   </data>
   <data name="ViewSpiralAbyssBattleTimes" xml:space="preserve">
     <value>Số lần Tác chiến</value> 
@@ -3103,9 +2671,6 @@
   </data>
   <data name="ViewSpiralAbyssTotalStar" xml:space="preserve">
     <value>Sao La Hoàn nhận được</value> 
-  </data>
-  <data name="ViewSpiralAbyssUploadRecord" xml:space="preserve">
-    <value>Tải lên Dữ liệu</value> 
   </data>
   <data name="ViewToolHeader" xml:space="preserve">
     <value>Công cụ</value> 
@@ -3169,9 +2734,6 @@
   </data>
   <data name="ViewWikiAvatarHeader" xml:space="preserve">
     <value>Dữ liệu Nhân vật</value> 
-  </data>
-  <data name="ViewWikiMonsterHeader" xml:space="preserve">
-    <value>Dữ liệu Quái vật</value> 
   </data>
   <data name="ViewWikiWeaponHeader" xml:space="preserve">
     <value>Dữ liệu Vũ khí</value> 

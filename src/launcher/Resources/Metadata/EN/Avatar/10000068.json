@@ -308,6 +308,7 @@
         "Id": 10681,
         "Name": "Marvelous Sword-Dance (Modified)",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\nAt the end of the sequence, performs a more powerful slash. \n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_04"
       },
       {
@@ -460,6 +461,7 @@
         "Id": 10682,
         "Name": "Spirit-Warding Lamp: Troubleshooter Cannon",
         "Description": "Directs a Spirit-Warding Lamp to fire off a Troubleshooter Shot at opponents, dealing <color=#FFACFFFF>Electro DMG</color>.\nAfter the Troubleshooter Shot hits, it will create 2 After-Sales Service Rounds that will automatically track nearby opponents and deal <color=#FFACFFFF>Electro DMG</color>.\n\n<i>It is said that Dori can fix any problem for you... for the right price.</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Dori_01"
       }
     ],
@@ -676,6 +678,7 @@
       "Id": 10685,
       "Name": "Alcazarzaray's Exactitude",
       "Description": "Summons forth the Jinni within the lamp to give the client various kinds of aid.\n\n<color=#FFD780FF>Jinni</color>\nConnects to a nearby character. The connected character will:\n· Continuously restore HP based on Dori's Max HP.\n· Continuously regenerate Energy.\n· Be affected by <color=#FFACFFFF>Electro</color>.\nWhen the connector between the Jinni and the character touches opponents, it will deal one instance of <color=#FFACFFFF>Electro DMG</color> to them every 0.4s.\n\nOnly one Jinni can exist at one time.\n\n<i>\"Hmm? You'll pick this lamp, will you? Oh my, you've got good taste! Unfortunately, there's no price on this treasure — comparable, I'd say, to how you will not sell that mascot by your side for any price in the world.\"</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Dori_01"
     },
     "Inherents": [
@@ -697,7 +700,8 @@
         },
         "Id": 682101,
         "Name": "An Eye for Gold",
-        "Description": "After a character connected to the <color=#FFD780FF>Jinni</color> triggers an Electro-Charged, Lunar-Charged, Superconduct, Overloaded, Quicken, Aggravate, Hyperbloom, Electro Swirl, or Electro Crystallize reaction, the CD of <color=#FFD780FF>Spirit-Warding Lamp: Troubleshooter Cannon</color> is decreased by 1s.\nThis effect can be triggered once every 3s.",
+        "Description": "After a character connected to the <color=#FFD780FF>Jinni</color> triggers an Electro-Charged, Lunar-Charged, Superconduct, Stellar-Conduct, Overloaded, Quicken, Aggravate, Hyperbloom, Electro Swirl, or Electro Crystallize reaction, the CD of <color=#FFD780FF>Spirit-Warding Lamp: Troubleshooter Cannon</color> is decreased by 1s.\nThis effect can be triggered once every 3s.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Dori_05"
       },
       {
@@ -719,6 +723,7 @@
         "Id": 682201,
         "Name": "Compound Interest",
         "Description": "When the Troubleshooter Shots or After-Sales Service Rounds from <color=#FFD780FF>Spirit-Warding Lamp: Troubleshooter Cannon</color> hit opponents, Dori will restore 5 Elemental Energy for every 100% Energy Recharge possessed.\nPer Spirit-Warding Lamp: Troubleshooter Cannon, only one instance of Energy restoration can be triggered and a maximum of 15 Energy can be restored this way.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Dori_06"
       },
       {
@@ -737,6 +742,7 @@
         "Id": 682301,
         "Name": "Unexpected Order",
         "Description": "Has a 25% chance to recover some of the materials used when crafting Character and Weapon Materials.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Dori_07"
       }
     ],

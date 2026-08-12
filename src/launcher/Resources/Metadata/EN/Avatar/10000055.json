@@ -277,6 +277,7 @@
         "Id": 10551,
         "Name": "Ripping Fang Fletching",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, stone crystals will accumulate on the arrowhead. A fully charged crystalline arrow will deal <color=#FFE699FF>Geo DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_02"
       },
       {
@@ -461,6 +462,7 @@
         "Id": 10552,
         "Name": "Inuzaka All-Round Defense",
         "Description": "Deals <color=#FFE699FF>AoE Geo DMG</color> and sets up a General's War Banner.\n\n<color=#FFD780FF>General's War Banner</color>\nProvides up to 3 buffs to active characters within the skill's AoE based on the number of <color=#FFE699FF>Geo</color> characters in the party at the time of casting:\n· 1 Geo character: Adds \"Standing Firm\" - DEF Bonus.\n· 2 Geo characters: Adds \"Impregnable\" - Increased resistance to interruption.\n· 3 Geo characters: Adds \"Crunch\" - <color=#FFE699FF>Geo DMG Bonus</color>.\n\nGorou can deploy only 1 General's War Banner on the field at any one time. Characters can only benefit from 1 General's War Banner at a time. When a party member leaves the field, the active buff will last for 2s.\n\n<color=#FFD780FF>Hold</color>\nAdjust the location of the skill.\n\n<i>\"Take up this formation and we'll be safe — I guarantee it!\" As a general and a leader of troops, the last thing Gorou wants is to see is those who follow him getting hurt.</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Gorou_01"
       }
     ],
@@ -646,6 +648,7 @@
       "Id": 10555,
       "Name": "Juuga: Forward Unto Victory",
       "Description": "Displaying his valor as a general, Gorou deals <color=#FFE699FF>AoE Geo DMG</color> and creates a field known as General's Glory to embolden his comrades.\n\n<color=#FFD780FF>General's Glory</color>\nThis field has the following properties:\n· Like the General's War Banner created by Inuzaka All-Round Defense, provides buffs to active characters within the skill's AoE based on the number of <color=#FFE699FF>Geo</color> characters in the party. Also moves together with your active character.\n· Generates 1 Crystal Collapse every 1.5s that deals <color=#FFE699FF>AoE Geo DMG</color> to 1 opponent within the skill's AoE.\n· Pulls 1 elemental shard in the skill's AoE to your active character's position every 1.5s (elemental shards are created by Crystallize reactions).\n\nIf a General's War Banner created by Gorou currently exists on the field when this ability is used, it will be destroyed. In addition, for the duration of General's Glory, Gorou's Elemental Skill \"Inuzaka All-Round Defense\" will not create the General's War Banner.\n If Gorou falls, the effects of General's Glory will be cleared.\n\n<i>\"We have the high ground!\" Gorou can ever so slightly change the terrain of the battlefield to help win victory. This technique has seen him through many battles against seemingly superior opposition.</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Gorou_01"
     },
     "Inherents": [
@@ -668,6 +671,7 @@
         "Id": 552101,
         "Name": "Heedless of the Wind and Weather",
         "Description": "After using <color=#FFD780FF>Juuga: Forward Unto Victory</color>, all nearby party members' DEF is increased by 25% for 12s.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Gorou_05"
       },
       {
@@ -689,6 +693,7 @@
         "Id": 552201,
         "Name": "A Favor Repaid",
         "Description": "Gorou receives the following DMG Bonuses to his attacks based on his DEF:\n· <color=#FFD780FF>Inuzaka All-Round Defense</color>: Skill DMG increased by 156% of DEF\n· <color=#FFD780FF>Juuga: Forward Unto Victory</color>: Skill DMG and Crystal Collapse DMG increased by 15.6% of DEF",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Gorou_06"
       },
       {
@@ -707,6 +712,7 @@
         "Id": 552301,
         "Name": "Seeker of Shinies",
         "Description": "Displays the location of nearby <color=#FFD780FF>resources unique to Inazuma</color> on the mini-map.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Gorou_07"
       }
     ],

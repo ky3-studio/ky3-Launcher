@@ -277,6 +277,7 @@
         "Id": 11251,
         "Name": "Moondew Cascade",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nSummons Moonlit Tides, performing up to 3 attacks that deal <color=#80C0FFFF>Hydro DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to deal <color=#80C0FFFF>AoE Hydro DMG</color> after a short casting time.\nIf you have at least 1 {LINK#N11190008}<color=#FFD780FF>Verdant Dew</color>{/LINK}, Columbina's Charged Attacks will be replaced with the special Charged Attack <color=#FFD780FF>Moondew Cleanse</color>, which will not consume Stamina: Consume 1 Verdant Dew to deal 3 instances of <color=#99FF88FF>AoE Dendro DMG</color> to opponents in front. This DMG is considered Lunar-Bloom DMG.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#80C0FFFF>AoE Hydro DMG</color> upon impact with the ground.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_Catalyst_MD"
       },
       {
@@ -539,6 +540,7 @@
         "Id": 11252,
         "Name": "Eternal Tides",
         "Description": "Awaken Moonbound Tides, dealing <color=#80C0FFFF>AoE Hydro DMG</color> and summoning {LINK#N11250001}<color=#FFD780FF>Gravity Ripple</color>{/LINK}.\n<color=#FFD780FF>Gravity Ripple</color> will follow the active character on the field, while continuously dealing <color=#80C0FFFF>AoE Hydro DMG</color> to surrounding opponents. While <color=#FFD780FF>Gravity Ripple</color> is on the field, and nearby party members trigger Lunar reactions or inflict Lunar Reaction DMG, Columbina will accrue a special <color=#FFD780FF>Gravity</color>. Once Gravity is accumulated to its limit, different types of damage will be dealt to enemies based on the type of Lunar Reaction that has accumulated the most <color=#FFD780FF>Gravity</color> for Columbina.\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: <color=#FFD780FF>Gravity Ripple</color> inflicts <color=#80C0FFFF>AoE Hydro DMG</color> over a wider area.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Columbina_01"
       }
     ],
@@ -724,6 +726,7 @@
       "Id": 11255,
       "Name": "Moonlit Melancholy",
       "Description": "Hills and tides unite under the silver light of a pristine new moon. Temporarily transforms the surrounding terrain into {LINK#N11250002}<color=#FFD780FF>Lunar Domain</color>{/LINK}, dealing <color=#80C0FFFF> AoE Hydro DMG</color>.",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Columbina_01"
     },
     "Inherents": [
@@ -746,6 +749,7 @@
         "Id": 1252101,
         "Name": "Lunacy's Lure",
         "Description": "When triggering {LINK#N11250001}<color=#FFD780FF>Gravity Interference</color>{/LINK}, Columbina gains the Lunacy effect, increasing her CRIT Rate by 5% for 10s. This effect can be stacked up to 3 times.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Columbina_05"
       },
       {
@@ -764,6 +768,7 @@
         "Id": 1252201,
         "Name": "Law of the New Moon",
         "Description": "When characters within the {LINK#N11250002}<color=#FFD780FF>Lunar Domain</color>{/LINK} trigger Lunar reactions, they will gain the following effects respectively: \n· <color=#FFD780FF>Lunar-Charged</color>: When the Thundercloud performs lightning strike(s) against a valid target, it has a 33% chance to perform an additional lightning strike. \n· <color=#FFD780FF>Lunar-Bloom</color>: When triggering Lunar-Bloom reactions, the party gains a special {LINK#N11250003}<color=#FFD780FF>Moonridge Dew</color>{/LINK}. Up to 3 Moonridge Dews can be gained every 18s. \n· <color=#FFD780FF>Lunar-Crystallize</color>: When Moondrift Harmony is triggered, every Moondrift has a 33% chance to inflict an extra attack.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Columbina_06"
       },
       {
@@ -785,6 +790,7 @@
         "Id": 1252301,
         "Name": "Moonsign Benediction: Moonlight, Lent Unto You",
         "Description": "When a party member triggers an Electro-Charged, Bloom, or Hydro-Crystallize reaction, it will be converted into a Lunar-Charged, Lunar-Bloom, or Lunar-Crystallize reaction respectively. Lunar Reaction DMG inflicted by party members gain a Base DMG increase based on Columbina's Max HP. For every 1,000 points of Max HP, the Base DMG of Lunar reactions is increased by 0.2%, up to a maximum of 7%.\n\nAdditionally, when Columbina is in the party, the party's <color=#FFD780FF>Moonsign</color> will increase by 1 level.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Columbina_07"
       },
       {
@@ -802,7 +808,8 @@
         },
         "Id": 1252501,
         "Name": "Lunar Vigil",
-        "Description": "If one of your party members is incapacitated while in the Nod-Krai region, Columbina will revive this character. The amount of HP the character will have upon revival is based on Columbina's Friendship Level. This effect can occur once every 100s. This effect does not trigger in Domains, Trounce Domains, or the Spiral Abyss.\nAdditionally, Columbina appears to have a special affinity for certain animals who are influenced by kuuvahki...",
+        "Description": "If one of your party members is incapacitated while in the Nod-Krai or Frost Moon regions, Columbina will revive this character. The amount of HP the character will have upon revival is based on Columbina's Friendship Level. This effect can occur once every 100s. This effect does not trigger in Domains, Trounce Domains, or the Spiral Abyss.\nAdditionally, Columbina appears to have a special affinity for certain animals who are influenced by kuuvahki...",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Columbina_08"
       }
     ],

@@ -308,6 +308,7 @@
         "Id": 10801,
         "Name": "Spear of Favonius - Arrow's Passage",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 consecutive strikes using his crossbow and spear.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_03"
       },
       {
@@ -508,6 +509,7 @@
         "Id": 10802,
         "Name": "Starfrost Swirl",
         "Description": "Mika uses his crossbow to attack, granting all nearby characters in your party Soulwind. When characters in the Soulwind state are on the field, their ATK SPD will be increased.\nWill take effect in different ways if Tapped or Held.\n\n<color=#FFD780FF>Tap</color>\nFires a Flowfrost Arrow that can pierce through opponents, dealing <color=#99FFFFFF>Cryo DMG</color> to enemies it comes into contact with.\n\n<color=#FFD780FF>Hold</color>\nGoes into Aiming Mode, locking on to an opponent and firing a Rimestar Flare at them, dealing <color=#99FFFFFF>Cryo DMG</color>. When the Rimestar Flare hits, it will rise before exploding, launching Rimestar Shards into a maximum of 3 other opponents, dealing <color=#99FFFFFF>Cryo DMG</color>.\n\n<i>Stars burst 'neath the frosted skies.</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Mika_01"
       }
     ],
@@ -739,6 +741,7 @@
       "Id": 10805,
       "Name": "Skyfeather Song",
       "Description": "Derives the ability to spur his teammates on from the recited prayers of the knightly order, regenerating HP for all nearby party members. This healing is based on Mika's Max HP and will grant them the Eagleplume state.\n\n<color=#FFD780FF>Eagleplume</color>\nWhen the Normal Attacks of active characters affected by Eagleplume hit an opponent, Mika will help them regenerate HP based on his Max HP.\nCharacters affected by this state can only regenerate HP in this way once per short interval of time.\n\n<i>\"Carry hope when in dire straits, and keep vigil when all is well... For that pure white plume shall at last guide the lost wayfarers.\"</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Mika_01"
     },
     "Inherents": [
@@ -761,6 +764,7 @@
         "Id": 802101,
         "Name": "Suppressive Barrage",
         "Description": "Per the following circumstances, the Soulwind state caused by <color=#FFD780FF>Starfrost Swirl</color> will grant characters the Detector effect, increasing their Physical DMG by 10% when they are on the field.\n·If the Flowfrost Arrow hits more than one opponent, each additional opponent hit will generate 1 Detector stack.\n·When a Rimestar Shard hits an opponent, it will generate 1 Detector stack. Each Rimestar Shard can trigger the effect 1 time.\n\nThe Soulwind state can have a maximum of 3 Detector stacks, and if Starfrost Swirl is cast again during this duration, the pre-existing Soulwind state and all its Detector stacks will be cleared.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Mika_05"
       },
       {
@@ -781,6 +785,7 @@
         "Id": 802201,
         "Name": "Topographical Mapping",
         "Description": "When an active character affected by both <color=#FFD780FF>Skyfeather Song</color>'s Eagleplume and <color=#FFD780FF>Starfrost Swirl</color>'s Soulwind at once scores a CRIT Hit with their attacks, Soulwind will grant them 1 stack of Detector from the Ascension Talent Suppressive Barrage. During a single instance of Soulwind, 1 Detector stack can be gained in this manner.\nAdditionally, the maximum number of stacks that can be gained through Soulwind alone is increased by 1.\nYou must first unlock the Ascension Talent \"Suppressive Barrage.\"",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Mika_06"
       },
       {
@@ -799,6 +804,7 @@
         "Id": 802301,
         "Name": "Demarcation",
         "Description": "Displays the location of nearby <color=#FFD780FF>resources unique to Mondstadt</color> on the mini-map.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_Collect_Local_Mengde"
       }
     ],

@@ -276,6 +276,7 @@
         "Id": 11121,
         "Name": "後廚手藝",
         "Description": "<color=#FFD780FF>普通攻擊</color>\n進行至多三段的連續槍擊。\n\n<color=#FFD780FF>重擊</color>\n消耗一定體力，進行上挑攻擊。\n\n<color=#FFD780FF>下落攻擊</color>\n從空中下墜衝擊地面，攻擊下落路徑上的敵人，並在落地時造成範圍傷害。",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_03"
       },
       {
@@ -492,6 +493,7 @@
         "Id": 11122,
         "Name": "低溫烹飪",
         "Description": "敬請見證「料理」的真意！依據點按、長按，以不同的方式展現楓丹引以為傲的廚藝。\n\n<color=#FFD780FF>點按</color>\n以「低溫冷藏」模式啟動全頻譜多重任務廚藝機關，對周圍的敵人造成<color=#99FFFFFF>冰元素範圍傷害</color>。\n\n<color=#FFD780FF>廚藝機關·低溫冷藏模式</color>\n將跟隨目前場上角色，並將間歇性對附近的敵人發射「凍霜芭菲」，造成<color=#99FFFFFF>冰元素傷害</color>。\n\n<color=#FFD780FF>始基力：荒性</color>\n每隔一段時間，愛可菲以「低溫冷藏」模式啟動廚藝機關時，將喚出流湧之刃，造成具有荒性的<color=#99FFFFFF>冰元素範圍傷害</color>。\n\n<color=#FFD780FF>長按</color>\n以{LINK#N11120002}<color=#FFD780FF>即興烹飪模式</color>{/LINK}啟動全頻譜多重任務廚藝機關。",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Escoffier_01"
       }
     ],
@@ -676,6 +678,7 @@
       "Id": 11125,
       "Name": "花刀技法",
       "Description": "展現極致的刀工，造成<color=#99FFFFFF>冰元素範圍傷害</color>，並為隊伍中附近的所有角色恢復生命值，回復量受益於愛可菲的攻擊力。",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Escoffier_01"
     },
     "Inherents": [
@@ -698,6 +701,7 @@
         "Id": 1122101,
         "Name": "美食勝過良藥",
         "Description": "施放元素爆發<color=#FFD780FF>{LINK#S11125}花刀技法{/LINK}</color>後，愛可菲將獲得「康復食療」效果，持續9秒：每1秒為附近的目前場上角色恢復生命值，回復值受益於愛可菲自己攻擊力的138.24%。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Escoffier_05"
       },
       {
@@ -722,6 +726,7 @@
         "Id": 1122201,
         "Name": "靈感浸入調味",
         "Description": "當隊伍中包含1/2/3/4名<color=#80C0FFFF>水元素</color>或<color=#99FFFFFF>冰元素</color>角色時，愛可菲的元素戰技<color=#FFD780FF>{LINK#S11122}低溫烹飪{/LINK}</color>或元素爆發<color=#FFD780FF>{LINK#S11125}花刀技法{/LINK}</color>命中敵人時，將使該敵人的<color=#80C0FFFF>水元素抗性</color>與<color=#99FFFFFF>冰元素抗性</color>降低5%/10%/15%/55%，持續12秒。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Escoffier_06"
       },
       {
@@ -740,6 +745,7 @@
         "Id": 1122301,
         "Name": "時時刻刻的即興料理",
         "Description": "#長按施放元素戰技<color=#FFD780FF>{LINK#S11122}低溫烹飪{/LINK}</color>時，將以「即興烹飪」模式啟動全頻譜多重任務廚藝機關。\n\n<color=#FFD780FF>廚藝機關·即興烹飪模式</color>\n·在場上放置廚藝機關。廚藝機關可以吸收元素攻擊。吸收的元素能量達到臨界值時，將使愛可菲事先放入其中的食材轉化為美食。\n·愛可菲需要時間採購新的食材，每週只能依此方式製作一定數量的料理。製作料理的次數每週一凌晨4點重置。{TIMEZONE}",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Escoffier_08"
       }
     ],

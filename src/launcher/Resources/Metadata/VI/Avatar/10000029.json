@@ -1,0 +1,1181 @@
+{
+  "Id": 10000029,
+  "PromoteId": 29,
+  "Sort": 3,
+  "Body": 5,
+  "Icon": "UI_AvatarIcon_Klee",
+  "SideIcon": "UI_AvatarIcon_Side_Klee",
+  "Name": "Klee",
+  "Description": "Khách quen của phòng giam Đội Kỵ Sĩ Tây Phong, bậc thầy thuốc nổ tại Mondstadt. Mọi người gọi là \"Mặt Trời Chạy Trốn\".",
+  "BeginTime": "2020-09-15T04:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 10,
+  "BaseValue": {
+    "HpBase": 800.7888,
+    "AttackBase": 24.206,
+    "DefenseBase": 47.864
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 2931,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Lần 1|{param1:P}",
+            "Sát Thương Lần 2|{param2:P}",
+            "Sát Thương Lần 3|{param3:P}",
+            "Sát Thương Trọng Kích|{param4:P}",
+            "Thể lực Trọng Kích tiêu hao|{param5:F1} điểm",
+            "Sát Thương Khi Rơi|{param6:F1P}",
+            "Sát Thương Khi Rơi Từ Độ Cao Thấp/Cao|{param7:P}/{param8:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 293101,
+              "Level": 1,
+              "Parameters": [
+                0.7216,
+                0.624,
+                0.8992,
+                1.5736,
+                50,
+                0.568288,
+                1.136335,
+                1.419344
+              ]
+            },
+            {
+              "Id": 293102,
+              "Level": 2,
+              "Parameters": [
+                0.77572,
+                0.6708,
+                0.96664,
+                1.69162,
+                50,
+                0.614544,
+                1.228828,
+                1.534872
+              ]
+            },
+            {
+              "Id": 293103,
+              "Level": 3,
+              "Parameters": [
+                0.82984,
+                0.7176,
+                1.03408,
+                1.80964,
+                50,
+                0.6608,
+                1.32132,
+                1.6504
+              ]
+            },
+            {
+              "Id": 293104,
+              "Level": 4,
+              "Parameters": [
+                0.902,
+                0.78,
+                1.124,
+                1.967,
+                50,
+                0.72688,
+                1.453452,
+                1.81544
+              ]
+            },
+            {
+              "Id": 293105,
+              "Level": 5,
+              "Parameters": [
+                0.95612,
+                0.8268,
+                1.19144,
+                2.08502,
+                50,
+                0.773136,
+                1.545944,
+                1.930968
+              ]
+            },
+            {
+              "Id": 293106,
+              "Level": 6,
+              "Parameters": [
+                1.01024,
+                0.8736,
+                1.25888,
+                2.20304,
+                50,
+                0.826,
+                1.65165,
+                2.063
+              ]
+            },
+            {
+              "Id": 293107,
+              "Level": 7,
+              "Parameters": [
+                1.0824,
+                0.936,
+                1.3488,
+                2.3604,
+                50,
+                0.898688,
+                1.796995,
+                2.244544
+              ]
+            },
+            {
+              "Id": 293108,
+              "Level": 8,
+              "Parameters": [
+                1.15456,
+                0.9984,
+                1.43872,
+                2.51776,
+                50,
+                0.971376,
+                1.94234,
+                2.426088
+              ]
+            },
+            {
+              "Id": 293109,
+              "Level": 9,
+              "Parameters": [
+                1.22672,
+                1.0608,
+                1.52864,
+                2.67512,
+                50,
+                1.044064,
+                2.087686,
+                2.607632
+              ]
+            },
+            {
+              "Id": 293110,
+              "Level": 10,
+              "Parameters": [
+                1.29888,
+                1.1232,
+                1.61856,
+                2.83248,
+                50,
+                1.12336,
+                2.246244,
+                2.80568
+              ]
+            },
+            {
+              "Id": 293111,
+              "Level": 11,
+              "Parameters": [
+                1.373926,
+                1.188096,
+                1.712077,
+                2.996134,
+                50,
+                1.202656,
+                2.404802,
+                3.003728
+              ]
+            },
+            {
+              "Id": 293112,
+              "Level": 12,
+              "Parameters": [
+                1.472064,
+                1.27296,
+                1.834368,
+                3.210144,
+                50,
+                1.281952,
+                2.563361,
+                3.201776
+              ]
+            },
+            {
+              "Id": 293113,
+              "Level": 13,
+              "Parameters": [
+                1.570202,
+                1.357824,
+                1.956659,
+                3.424154,
+                50,
+                1.361248,
+                2.721919,
+                3.399824
+              ]
+            },
+            {
+              "Id": 293114,
+              "Level": 14,
+              "Parameters": [
+                1.668339,
+                1.442688,
+                2.07895,
+                3.638163,
+                50,
+                1.440544,
+                2.880478,
+                3.597872
+              ]
+            },
+            {
+              "Id": 293115,
+              "Level": 15,
+              "Parameters": [
+                1.766477,
+                1.527552,
+                2.201242,
+                3.852173,
+                50,
+                1.51984,
+                3.039036,
+                3.79592
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10291,
+        "Name": "Bằng Bằng",
+        "Description": "<color=#FFD780FF>Tấn Công Thường</color>\nNém ra những thứ phát nổ khi va chạm! Tấn công nổ tối đa 3 lần, gây <color=#FF9999FF>Sát Thương Phạm Vi Nguyên Tố Hỏa</color>.\n\n<color=#FFD780FF>Trọng Kích</color>\nTiêu hao thể lực nhất định, sau khi tụ lực sẽ bắn phá kẻ địch, gây <color=#FF9999FF>Sát Thương Phạm Vi Nguyên Tố Hỏa</color>.\n\n<color=#FFD780FF>Tấn Công Khi Đáp</color>\nNgưng tụ sức mạnh của lửa, lao xuống mặt đất từ trên không, tấn công kẻ địch trên đường và gây <color=#FF9999FF>Sát Thương Phạm Vi Nguyên Tố Hỏa</color> khi chạm đất.",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_A_Catalyst_MD"
+      },
+      {
+        "GroupId": 2932,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Bom Nảy|{param1:P}",
+            "Sát Thương Quỷ Lôi|{param4:F1P}",
+            "Thời Gian Quỷ Lôi Kéo Dài|{param5:F1}s",
+            "CD|{param6:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 293201,
+              "Level": 1,
+              "Parameters": [
+                0.952,
+                0.952,
+                0.952,
+                0.328,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293202,
+              "Level": 2,
+              "Parameters": [
+                1.0234,
+                1.0234,
+                1.0234,
+                0.3526,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293203,
+              "Level": 3,
+              "Parameters": [
+                1.0948,
+                1.0948,
+                1.0948,
+                0.3772,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293204,
+              "Level": 4,
+              "Parameters": [
+                1.19,
+                1.19,
+                1.19,
+                0.41,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293205,
+              "Level": 5,
+              "Parameters": [
+                1.2614,
+                1.2614,
+                1.2614,
+                0.4346,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293206,
+              "Level": 6,
+              "Parameters": [
+                1.3328,
+                1.3328,
+                1.3328,
+                0.4592,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293207,
+              "Level": 7,
+              "Parameters": [
+                1.428,
+                1.428,
+                1.428,
+                0.492,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293208,
+              "Level": 8,
+              "Parameters": [
+                1.5232,
+                1.5232,
+                1.5232,
+                0.5248,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293209,
+              "Level": 9,
+              "Parameters": [
+                1.6184,
+                1.6184,
+                1.6184,
+                0.5576,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293210,
+              "Level": 10,
+              "Parameters": [
+                1.7136,
+                1.7136,
+                1.7136,
+                0.5904,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293211,
+              "Level": 11,
+              "Parameters": [
+                1.8088,
+                1.8088,
+                1.8088,
+                0.6232,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293212,
+              "Level": 12,
+              "Parameters": [
+                1.904,
+                1.904,
+                1.904,
+                0.656,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293213,
+              "Level": 13,
+              "Parameters": [
+                2.023,
+                2.023,
+                2.023,
+                0.697,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293214,
+              "Level": 14,
+              "Parameters": [
+                2.142,
+                2.142,
+                2.142,
+                0.738,
+                15,
+                20
+              ]
+            },
+            {
+              "Id": 293215,
+              "Level": 15,
+              "Parameters": [
+                2.261,
+                2.261,
+                2.261,
+                0.779,
+                15,
+                20
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10292,
+        "Name": "Bom Nảy",
+        "Description": "Ném Bom Nảy mang đến niềm vui bất tận!\nBom Nảy sẽ nảy liên tiếp 3 lần, mỗi lần đều sẽ kích hoạt nổ, gây <color=#FF9999FF>Sát Thương Phạm Vi Nguyên Tố Hỏa</color>.\n\nSau khi nảy lần 3, sẽ tách thành nhiều Quỷ Lôi.\nQuỷ Lôi sẽ nổ sau một khoảng thời gian hoặc sau khi tiếp xúc kẻ địch, gây <color=#FF9999FF>Sát Thương Phạm Vi Nguyên Tố Hỏa</color>.\n\nBan đầu có 2 lần sử dụng.\n\n<i>Bom nảy là \"người bạn thân\" của Klee... Klee luôn muốn giới thiệu chúng với mọi người xung quanh.</i>",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_S_Klee_01"
+      }
+    ],
+    "SpecialSkills": [
+      {
+        "GroupId": 2951,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 295101,
+              "Level": 1,
+              "Parameters": [
+                20,
+                0.15,
+                0.3,
+                0.5,
+                2
+              ]
+            }
+          ],
+          "Display": 3
+        },
+        "Id": 295101,
+        "Name": "Đêm Lễ Ma Nữ - Ma Pháp Tia Lửa",
+        "Description": "Sau khi hoàn thành <color=#FFD780FF>Bài Tập Của Ma Nữ - Về Lá Hoa Lửa</color>, Klee sẽ trở thành nhân vật <color=#FFD780FF>Hexerei</color>. Khi đội hình có ít nhất 2 nhân vật Hexerei, sẽ nhận được hiệu quả <color=#FFD780FF>Hexerei - Nghi Thức Bí Mật</color>, giúp nhân vật Hexerei nhận được cường hóa.\n\n<color=#FFD780FF>Hexerei - Nghi Thức Bí Mật</color>\nKhi Klee gây sát thương từ Tấn Công Thường, Kỹ Năng Nguyên Tố hoặc Kỹ Năng Nộ, sẽ nhận được 1 \"Huy Hiệu Bùm Bùm\", duy trì 20s. Mỗi loại tấn công tối đa có thể giúp Klee nhận được 1 \"Huy Hiệu Bùm Bùm\" thông qua cách này, Huy Hiệu Bùm Bùm nhận từ các loại tấn công khác nhau sẽ tồn tại độc lập. Khi Klee có 1/2/3 \"Huy Hiệu Bùm Bùm\", Trọng Kích đặc biệt \"Bùm Bùm Oanh Tạc\" sẽ gây ra 115%/130%/150% sát thương gốc.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Klee_07"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 2939,
+      "Proud": {
+        "Descriptions": [
+          "Sát thương Tia Lửa Mãnh Liệt|{param1:F1P}",
+          "Thời Gian Kéo Dài|{param5:F1}s",
+          "CD|{param2:F1}s",
+          "Năng Lượng Nguyên Tố|{param3:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 293901,
+            "Level": 1,
+            "Parameters": [
+              0.4264,
+              15,
+              60,
+              0.51168,
+              10
+            ]
+          },
+          {
+            "Id": 293902,
+            "Level": 2,
+            "Parameters": [
+              0.45838,
+              15,
+              60,
+              0.550056,
+              10
+            ]
+          },
+          {
+            "Id": 293903,
+            "Level": 3,
+            "Parameters": [
+              0.49036,
+              15,
+              60,
+              0.588432,
+              10
+            ]
+          },
+          {
+            "Id": 293904,
+            "Level": 4,
+            "Parameters": [
+              0.533,
+              15,
+              60,
+              0.6396,
+              10
+            ]
+          },
+          {
+            "Id": 293905,
+            "Level": 5,
+            "Parameters": [
+              0.56498,
+              15,
+              60,
+              0.677976,
+              10
+            ]
+          },
+          {
+            "Id": 293906,
+            "Level": 6,
+            "Parameters": [
+              0.59696,
+              15,
+              60,
+              0.716352,
+              10
+            ]
+          },
+          {
+            "Id": 293907,
+            "Level": 7,
+            "Parameters": [
+              0.6396,
+              15,
+              60,
+              0.76752,
+              10
+            ]
+          },
+          {
+            "Id": 293908,
+            "Level": 8,
+            "Parameters": [
+              0.68224,
+              15,
+              60,
+              0.818688,
+              10
+            ]
+          },
+          {
+            "Id": 293909,
+            "Level": 9,
+            "Parameters": [
+              0.72488,
+              15,
+              60,
+              0.869856,
+              10
+            ]
+          },
+          {
+            "Id": 293910,
+            "Level": 10,
+            "Parameters": [
+              0.76752,
+              15,
+              60,
+              0.921024,
+              10
+            ]
+          },
+          {
+            "Id": 293911,
+            "Level": 11,
+            "Parameters": [
+              0.81016,
+              15,
+              60,
+              0.972192,
+              10
+            ]
+          },
+          {
+            "Id": 293912,
+            "Level": 12,
+            "Parameters": [
+              0.8528,
+              15,
+              60,
+              1.02336,
+              10
+            ]
+          },
+          {
+            "Id": 293913,
+            "Level": 13,
+            "Parameters": [
+              0.9061,
+              15,
+              60,
+              1.08732,
+              10
+            ]
+          },
+          {
+            "Id": 293914,
+            "Level": 14,
+            "Parameters": [
+              0.9594,
+              15,
+              60,
+              1.15128,
+              10
+            ]
+          },
+          {
+            "Id": 293915,
+            "Level": 15,
+            "Parameters": [
+              1.0127,
+              15,
+              60,
+              1.21524,
+              10
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10295,
+      "Name": "Tia Lửa Mãnh Liệt",
+      "Description": "Klee phát huy toàn bộ hỏa lực! Trong thời gian duy trì, liên tục triệu hồi Tia Lửa Mãnh Liệt tấn công kẻ địch lân cận, gây <color=#FF9999FF>Sát Thương Phạm Vi Nguyên Tố Hỏa</color>.\n\n<i>Người trong Đội Kỵ Sĩ tin rằng, Klee xưa nay chưa từng bị thương bởi thuốc nổ của mình nhất định là do ngôi sao may mắn nào đó luôn chiếu cố cô bé...</i>",
+      "SpecialEnergyType": 0,
+      "Icon": "Skill_E_Klee_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 2921,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 292101,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 292101,
+        "Name": "Món Quà Bằng Bằng",
+        "Description": "Khi <color=#FFD780FF>Bom Nảy</color> và tấn công thường tạo thành sát thương, có tỷ lệ 50% tạo thành một đoá Hoa Tia Lửa cho Klee.\nThi triển trọng kích sẽ tiêu hao Hoa Tia Lửa, khiến lần trọng kích này không tiêu hao thể lực, đồng thời tăng 50% sát thương gây ra.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Klee_05"
+      },
+      {
+        "GroupId": 2922,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 292201,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 292201,
+        "Name": "Tia Lửa Vô Hạn",
+        "Description": "Trọng Kích của Klee sau khi gây ra bạo kích, hồi phục 2 điểm Năng Lượng Nguyên Tố cho tất cả các nhân vật trong đội.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Klee_06"
+      },
+      {
+        "GroupId": 2923,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 292301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 292301,
+        "Name": "Toàn Là Báu Vật",
+        "Description": "Hiển thị vị trí <color=#FFD780FF>đặc sản khu vực Mondstadt</color> ở xung quanh trên bản đồ nhỏ.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_Collect_Local_Mengde"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 291,
+        "Name": "Vụ Nổ Liên Hoàn",
+        "Description": "Khi tấn công và thi triển kỹ năng, có tỷ lệ triệu hồi tia lửa tấn công kẻ địch, gây sát thương tương đương với 120% sát thương của <color=#FFD780FF>Tia Lửa Mãnh Liệt</color>.",
+        "SpecialDescription": "Khi tấn công và thi triển kỹ năng, có tỷ lệ triệu hồi tia lửa tấn công kẻ địch, gây sát thương tương đương 120% sát thương của <color=#FFD780FF>Tia Lửa Mãnh Liệt</color>.\nTrong 12s sau khi kích hoạt hiệu quả trên, Klee sẽ tăng 60% Tấn Công.",
+        "Icon": "UI_Talent_S_Klee_01"
+      },
+      {
+        "Id": 292,
+        "Name": "Mảnh Đạn Vỡ Vụn",
+        "Description": "Quỷ Lôi của <color=#FFD780FF>Bom Nảy</color> sẽ làm giảm 23% phòng ngự của kẻ địch, kéo dài 10s.",
+        "SpecialDescription": "Khi Kỹ Năng Nguyên Tố của Klee đánh trúng kẻ địch, sẽ khiến kẻ địch giảm 23% Phòng Ngự trong 10s.",
+        "Icon": "UI_Talent_S_Klee_02"
+      },
+      {
+        "Id": 293,
+        "Name": "Đặc Chế Klee",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Bom Nảy</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Klee_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 294,
+        "Name": "Toàn Lực Khai Hỏa",
+        "Description": "Nếu rời khỏi trận trong thời gian <color=#FFD780FF>Tia Lửa Mãnh Liệt</color> đang tồn tại, sẽ tạo ra vụ nổ, gây <color=#FF9999FF>Sát Thương Phạm Vi Nguyên Tố Hỏa</color> với 555% lực tấn công.",
+        "SpecialDescription": "Nếu rời trận trong thời gian duy trì <color=#FFD780FF>Tia Lửa Mãnh Liệt</color>, hoặc khi thời gian duy trì <color=#FFD780FF>Tia Lửa Mãnh Liệt</color> kết thúc, sẽ tạo ra vụ nổ, gây <color=#FF9999FF>Sát Thương Phạm Vi Nguyên Tố Hỏa</color> bằng 555% Tấn Công. Khi kích hoạt hiệu quả nêu trên, nếu Klee đang trong trận, sát thương gây ra sẽ tăng 100%.",
+        "Icon": "UI_Talent_S_Klee_03"
+      },
+      {
+        "Id": 295,
+        "Name": "Ngôi Sao Ném Bom",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Tia Lửa Mãnh Liệt</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Klee_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 296,
+        "Name": "Toàn Bộ Hỏa Lực",
+        "Description": "Trong trạng thái <color=#FFD780FF>Tia Lửa Mãnh Liệt</color>, cứ mỗi 3s Klee sẽ hồi phục 3 điểm Năng Lượng Nguyên Tố cho tất cả nhân vật trong đội (Không bao gồm bản thân Klee);\nTrong 25s sau khi phóng <color=#FFD780FF>Tia Lửa Mãnh Liệt</color>, tất cả nhân vật trong đội nhận được 10% <color=#FF9999FF>Buff Sát Thương Nguyên Tố Hỏa</color>.",
+        "SpecialDescription": "Trong trạng thái <color=#FFD780FF>Tia Lửa Mãnh Liệt</color>, cứ mỗi 3s Klee sẽ hồi phục 3 điểm Năng Lượng Nguyên Tố cho tất cả nhân vật trong đội (không bao gồm bản thân Klee).\nTrong 25s sau khi thi triển <color=#FFD780FF>Tia Lửa Mãnh Liệt</color>, tất cả nhân vật khác trong đội nhận 10% <color=#FF9999FF>Buff Sát Thương Nguyên Tố Hỏa</color>, Klee nhận 50% <color=#FF9999FF>Buff Sát Thương Nguyên Tố Hỏa</color>.\n\n<color=#FFD780FF>Hexerei - Nghi Thức Bí Mật</color>\nKhi kích hoạt hiệu quả tiêu hao <color=#FFD780FF>Hoa Tia Lửa</color>, có 50% xác suất không tiêu hao <color=#FFD780FF>Hoa Tia Lửa</color>. Ngoài ra, trong trạng thái <color=#FFD780FF>Tia Lửa Mãnh Liệt</color>, khi Klee thực hiện Tấn Công Thường, đòn 1 và đòn 2 có 40% xác suất tiêu hao một Hoa Tia Lửa, gây thêm một lần tấn công tương đương với \"Bùm Bùm Oanh Tạc\" lên kẻ địch.",
+        "Icon": "UI_Talent_S_Klee_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Mặt Trời Chạy Trốn",
+    "Detail": "Khách quen của phòng giam Đội Kỵ Sĩ Tây Phong, bậc thầy thuốc nổ tại Mondstadt. Mọi người gọi là \"Mặt Trời Chạy Trốn\".",
+    "Association": 1,
+    "Native": "Đội Kỵ Sĩ Tây Phong",
+    "BirthMonth": 7,
+    "BirthDay": 27,
+    "VisionBefore": "Hỏa",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Cung Tứ Diệp Thảo",
+    "CvChinese": "花玲",
+    "CvJapanese": "久野美咲",
+    "CvEnglish": "Poonam Basu",
+    "CvKorean": "Bang Yeon-ji",
+    "CookBonus": {
+      "OriginItemId": 108002,
+      "ItemId": 108115,
+      "InputList": [
+        110001,
+        100079,
+        100076,
+        100078
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Lần đầu gặp mặt...",
+        "Context": "Kỵ Sĩ Tia Lửa của Đội Kỵ Sĩ Tây Phong, Klee báo cáo! A... Tiếp theo phải nói gì nhỉ? Klee quên mất rồi..."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Thu hoạch",
+        "Context": "#Hôm nay Klee lại dũng cảm bắt được một con Rồng Đất hoa văn kỳ quái đó! Hoa văn này Klee chưa từng thấy bao giờ, {F#chị}{M#anh} muốn xem thử không?"
+      },
+      {
+        "Title": "Nói chuyện phiếm - Mạo hiểm",
+        "Context": "#{F#Chị}{M#Anh} có muốn đi nổ cá cùng Klee không? Mặc dù bị tóm thì sẽ bị cấm túc một ngày, nhưng cá rất ngon, cho nên cũng xứng đáng mà!"
+      },
+      {
+        "Title": "Nói chuyện phiếm - Quy tắc",
+        "Context": "\"Trong thành đốt pháo, phòng giam báo cáo\", \"Bom gây thương tích, Jean tìm đến cửa\", \"Phóng hỏa đốt rừng Klee chết chắc\" - Đây chính là quy tắc sinh tồn trong Đội Kỵ Sĩ của Klee."
+      },
+      {
+        "Title": "Khi trời mưa...",
+        "Context": "Hừ hừ, quả bom lần này là loại chống thấm."
+      },
+      {
+        "Title": "Khi có sấm sét...",
+        "Context": "A! Thứ gì nổ vậy? A... Là sấm sét!"
+      },
+      {
+        "Title": "Gió lớn quá...",
+        "Context": "Phong Thần phù hộ, hãy thổi quả bom của Klee đến nơi thích hợp đi!"
+      },
+      {
+        "Title": "Chào buổi sáng...",
+        "Context": "Chào buổi sáng! Đưa Klee đi chơi đi! Chúng ta cùng đi mạo hiểm nhé!"
+      },
+      {
+        "Title": "Chào buổi trưa...",
+        "Context": "Đến giờ cơm trưa rồi! A... Ăn gì đây nhỉ? Để em xem thử cuốn \"Hướng Dẫn Du Ngoạn Teyvat\"..."
+      },
+      {
+        "Title": "Chào buổi tối...",
+        "Context": "#Chào buổi tối! Xin {F#chị}{M#anh} hãy giúp em nói với ngài Huffman rằng Klee không còn là trẻ con nữa, buổi tối Klee cũng có thể đi chơi... Đưa Klee đi chơi đi mà..."
+      },
+      {
+        "Title": "Chúc ngủ ngon...",
+        "Context": "#Tuy lúc đi chơi thì nói là không muốn về nhà, nhưng mà sau khi trời tối, một mình giữa chốn hoang vu mù mịt, lại không biết đường... Xin {F#chị}{M#anh}... khi trở về, hãy dắt em về cùng với, có được không..."
+      },
+      {
+        "Title": "Về bản thân Klee - Tai họa",
+        "Context": "Huhu... Không ngờ lần này lại làm nổ cả cánh quạt của cối xay gió... Thật sự xin lỗi!"
+      },
+      {
+        "Title": "Về bản thân Klee - Bồi thường",
+        "Context": "Em... Em làm thủ công giỏi lắm đó, hãy để em giúp mọi người làm lại một cái... Sao chứ? Cấm thuê lao động trẻ em? Hu..."
+      },
+      {
+        "Title": "Về chúng ta - Kỵ sĩ",
+        "Context": "#Hì hì... Kỵ Sĩ Danh Dự, Klee là Kỵ Sĩ Tia Lửa, có thể nói là tiền bối của {F#chị}{M#anh} trong Đội Kỵ Sĩ Tây Phong á? Cho nên, cho nên... Rắc rối mà em đã gây ra lần này, có thể giúp em che giấu không..."
+      },
+      {
+        "Title": "Về chúng ta - Bạn cùng chơi",
+        "Context": "#Không được! Mới 9 giờ mà, đêm nay Klee nhất định phải xem hết chương trình xiếc đặc biệt này! {F#Chị}{M#Anh} là đồng hành của Klee đúng chứ! Vậy thì đừng hòng bắt Klee về nhà vào lúc này, lêu lêu lêu lêu..."
+      },
+      {
+        "Title": "Về Vision...",
+        "Context": "Quả cầu pha lê nhỏ xíu này là đại diện cho sự khẳng định của ngài Barbatos đối với Klee sao... Ừm... Rốt cuộc là khẳng định về mặt nào của em nhỉ? Sự tự do chăng? Vậy hay là sau này em cứ tự do đi nổ cá nhiều thật nhiều để báo đáp sự kỳ vọng của ngài Barbatos nhỉ...?"
+      },
+      {
+        "Title": "Có gì muốn chia sẻ không...",
+        "Context": "Klee biết, không được phá nổ bức tường của Đội Kỵ Sĩ. Tuy rằng cho nổ xong có thể dễ dàng ra khỏi phòng giam, nhưng anh Kaeya nói rồi, nếu em làm như vậy, thì e là đội trưởng Jean sẽ không bao giờ cho em nhìn thấy mặt trời của ngày hôm sau nữa..."
+      },
+      {
+        "Title": "Những kiến thức thú vị...",
+        "Context": "Hoa văn của mỗi con Rồng Đất đều khác nhau, đuôi của một số con sau khi phơi khô rồi nghiền thành bột có thể dùng làm nguyên liệu điều chế thuốc nổ. Đây là do anh Albedo nói cho em biết đó."
+      },
+      {
+        "Title": "Về Razor...",
+        "Context": "Tụi em là bạn bè! Dáng vẻ Razor cố gắng chống lại nguy hiểm, bảo vệ Klee thật khiến người ta cảm thấy an tâm... Ừm... Mặc dù đa số nguy hiểm đều là do em mang đến cho anh ấy..."
+      },
+      {
+        "Title": "Về Cha Mẹ...",
+        "Context": "Cha và mẹ em đều là nhà lữ hành nổi tiếng khắp đại lục! Có rất nhiều khách sạn và quán ăn đều quan tâm đến những đánh giá đầy quyền lực trong tác phẩm Hướng Dẫn Du Ngoạn Teyvat do mẹ em viết."
+      },
+      {
+        "Title": "Về Kaeya...",
+        "Context": "Anh Kaeya là người tốt! \"Quy Tắc Sinh Tồn Đội Kỵ Sĩ\" là do anh Kaeya giúp Klee viết. Khi Klee gây ra rắc rối, anh ấy cũng thường giúp Klee che giấu."
+      },
+      {
+        "Title": "Về Amber...",
+        "Context": "Chị Amber là người tốt! Bá Tước Thỏ sờ vào toàn là lông xù, còn có thể phát nổ nữa, quá tuyệt vời!"
+      },
+      {
+        "Title": "Về Jean...",
+        "Context": "Đội Trưởng Jean là người tốt! Tuy có... hơi đáng sợ một chút..."
+      },
+      {
+        "Title": "Về Diluc...",
+        "Context": "Ngài kỳ quái luôn mang dáng vẻ cau có... Ừm... Tại sao lại không thích cười vậy chứ?"
+      },
+      {
+        "Title": "Về Lisa...",
+        "Context": "Lisa à... Chị Lisa là người tốt! Mỗi lần Klee đến xưởng của chị ấy, chị ấy đều cho Klee trà bánh rất ngon... Í? Nói mới nhớ, hình như mục đích ban đầu em đến xưởng của chị ấy là để làm thuốc nổ mới mà...?"
+      },
+      {
+        "Title": "Về Bennett...",
+        "Context": "Anh Bennett là người tốt! Đi mạo hiểm cùng anh ấy Klee luôn có được nhiều thu hoạch hơn!... Mặc dù anh Bennett thì lần nào cũng không tìm thấy bảo vật gì cả. Ưm... Tại sao vậy nhỉ?"
+      },
+      {
+        "Title": "Về Diona...",
+        "Context": "Chị Diona là người tốt! Suy nghĩ \"dựa vào bản thân mình phá hủy ngành rượu Mondstadt\" rất thú vị, Klee cũng muốn dùng bom để giúp đỡ! Tuy rằng Klee cũng không rõ lắm \"Ngành Rượu Mondstadt\" là quái vật gì?"
+      },
+      {
+        "Title": "Về Albedo...",
+        "Context": "Anh Albedo và Klee có một giao hẹn bí mật! Nếu Klee nhìn thấy trước xưởng treo bảng \"Đang thí nghiệm\" thì Klee sẽ quay lại tìm anh ấy sau. Lúc không làm việc, anh Albedo rất kiên nhẫn chơi cùng với Klee, nên Klee cũng kiên nhẫn chờ anh ấy!"
+      },
+      {
+        "Title": "Về Mona...",
+        "Context": "Chị Mona là người tốt! Mỗi lần chị ấy tìm anh Albedo và Klee chơi đều nói ra nhiều thứ tuy khó hiểu nhưng lại rất thú vị! Klee rất thích chị ấy đến chơi!"
+      },
+      {
+        "Title": "Về Sucrose...",
+        "Context": "Chị Sucrose là người tốt! Chị ấy hỏi em có muốn một chiếc bom nảy vừa có thể chạy vừa có thể nhảy không? Hihi, đương nhiên là muốn rồi, em còn muốn có mấy trăm cái, để trên đường phố, trên bậc thang, trên quảng trường Mondstadt đều là bom nảy!"
+      },
+      {
+        "Title": "Về Durin...",
+        "Context": "Tuyệt quá! Anh Durin Nhỏ giờ sống ở Mondstadt, em sẽ tìm anh ấy chơi mỗi ngày! Khi đi nổ cá bằng bom, em muốn nhờ anh Durin Nhỏ đưa em bay lên thật cao để ném bom từ trên trời xuống!"
+      },
+      {
+        "Title": "Về Lohen...",
+        "Context": "Anh Lohen là người tốt! Lần trước anh ấy đã mang cho Klee rất nhiều đồ ăn ngon, nhưng chỉ lấy của Klee một hộp bút sáp màu nhỏ! Nếu anh Lohen rảnh, Klee sẵn lòng dạy anh ấy vẽ, rồi gọi cả chú Varka cùng tham gia nữa!"
+      },
+      {
+        "Title": "Về Prune...",
+        "Context": "Chị Prune là người tốt! Mẹ viết thư nói rằng, thực ra chị Prune muốn tìm người chơi cùng nhưng ngại nói ra. Vì vậy, Klee quyết định rồi! Lần sau đi nổ cá, đi núi tuyết, đi Quần Đảo Táo Vàng, đi Simulanka... đều phải rủ chị Prune đi chơi cùng!"
+      },
+      {
+        "Title": "Muốn tìm hiểu Klee - Điều thứ 1",
+        "Context": "#Xin chào! {F#Chị}{M#Anh} đến tìm Klee chơi à?"
+      },
+      {
+        "Title": "Muốn tìm hiểu Klee - Điều thứ 2",
+        "Context": "#Đúng vậy, quả bom này là tác phẩm cải tạo mới nhất của Klee! {F#Chị}{M#Anh} thấy em làm có tốt không? Chẹp... Nếu như thấy nó ở hiện trường phóng hỏa gì gì đó, thì tuyệt đối không phải do em làm đâu, tuyệt đối không phải."
+      },
+      {
+        "Title": "Muốn tìm hiểu Klee - Điều thứ 3",
+        "Context": "Tuy rằng hầu hết công thức thuốc nổ mới đều được nghĩ ra trong lúc bị cấm túc... Nhưng nếu không bị cấm túc thì sẽ tốt hơn..."
+      },
+      {
+        "Title": "Muốn tìm hiểu Klee - Điều thứ 4",
+        "Context": "Đây là Dodoco, là người bạn Klee quen biết từ rất lâu rồi. Hãy nhớ tên của bạn ấy nhé, về sau đừng gọi bạn ấy là \"búp bê treo trên ba lô của em\" nữa."
+      },
+      {
+        "Title": "Muốn tìm hiểu Klee - Điều thứ 5",
+        "Context": "#Cảm ơn {F#chị}{M#anh} đã luôn giúp Klee giải quyết rắc rối! Xin dùng xiên \"Cá Nướng Klee\" này để báo đáp {F#chị}{M#anh} vậy! À... Thật ra, cá này lúc ở trong hồ đã bị bom nổ chín luôn đó, nhưng chuyện này cũng như mọi khi, {F#chị}{M#anh} cứ giả vờ không biết là được rồi."
+      },
+      {
+        "Title": "Sở thích của Klee...",
+        "Context": "Klee thích những thứ có lông xù. Ví dụ như Dodoco, bồ công anh, và còn mái tóc của Razor nữa."
+      },
+      {
+        "Title": "Nỗi buồn của Klee...",
+        "Context": "#Haiz, {F#chị}{M#anh} là người tốt, em là đứa trẻ hư... Lần này sau khi cấm túc tự kiểm điểm xong, em sẽ đến tìm {F#chị}{M#anh}, để {F#chị}{M#anh} dẫn em đi chơi nha..."
+      },
+      {
+        "Title": "Món ăn yêu thích...",
+        "Context": "Cá chép của Mondstadt rất ngon, đặc biệt là cá bắt lên từ Hồ Rượu Trái Cây! Không phải Klee nói bừa, ngay cả mẹ Klee cũng đồng ý với Klee."
+      },
+      {
+        "Title": "Món ăn ghét...",
+        "Context": "Ghét cua của Mondstadt... Tất cả loại cua đều đáng ghét... Klee muốn đi chơi... Không muốn ngồi bên bàn ăn từ từ bóc vỏ cua..."
+      },
+      {
+        "Title": "Nhận Được Quà I",
+        "Context": "Woa, thơm quá thơm quá! Klee no bụng đến nỗi ăn không nổi nữa rồi..."
+      },
+      {
+        "Title": "Nhận Được Quà II",
+        "Context": "#Hôm nay cũng được ăn món ngon, Klee rất vui! Cảm ơn {F#chị}{M#anh}!"
+      },
+      {
+        "Title": "Nhận Được Quà III",
+        "Context": "#Trông có vẻ ngon, nhưng ăn thì không tiện lắm... Hì hì, {F#chị}{M#anh} giúp Klee được không?"
+      },
+      {
+        "Title": "Sinh nhật...",
+        "Context": "#Sinh nhật vui vẻ! Đón sinh nhật rất là vui, {F#chị}{M#anh} lớn hơn Klee, vậy số lần ăn mừng sinh nhật cũng nhiều hơn Klee đúng không? Thật ngưỡng mộ!"
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Khởi",
+        "Context": "Công trình nghiên cứu bom loại mới đã hoàn tất! Nhân lúc Đội Trưởng Jean chưa phát hiện chuồn thôi nào!"
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Thừa",
+        "Context": "Lại tiến bộ thêm một chút rồi! Nhưng Đội Trưởng Jean luôn nói: \"Tiến bộ là trách nhiệm.\""
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Chuyển",
+        "Context": "#Cảm ơn {F#chị}{M#anh} đã luôn cùng em đi thu thập nguyên liệu nghiên cứu! Nếu {F#chị}{M#anh} muốn học cách chế tạo bom, em cũng có thể dạy cho {F#chị}{M#anh} đó."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Hợp",
+        "Context": "#Rất lâu trước kia, lần đầu nghe thấy tiếng bom, em đã không hề sợ hãi... Sau đó em mới biết, đa số người khác sẽ không như vậy... Nhưng mà, {F#chị}{M#anh} cũng không sợ bom của em đúng không! Hihi, Klee quả nhiên đã tìm được một người bạn tốt!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố I",
+        "Context": "Bom Nảy!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố II",
+        "Context": "Nảy lên nào!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố III",
+        "Context": "Pieew!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ I",
+        "Context": "Tia lửa mãnh liệt!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ II",
+        "Context": "Tổng lực tấn công!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ III",
+        "Context": "Nổ sạch hết nào!"
+      },
+      {
+        "Title": "Xung Kích Bắt Đầu I",
+        "Context": "La la la~"
+      },
+      {
+        "Title": "Xung Kích Bắt Đầu II",
+        "Context": "Da-da-da~"
+      },
+      {
+        "Title": "Mở Rương I",
+        "Context": "Klee lại tìm được báu vật mới rồi!"
+      },
+      {
+        "Title": "Mở Rương II",
+        "Context": "Lấp la lấp lánh, vui quá!"
+      },
+      {
+        "Title": "Mở Rương III",
+        "Context": "Có khi nào dưới đất còn nhiều rương báu hơn không nhỉ..."
+      },
+      {
+        "Title": "HP Thấp I",
+        "Context": "Ui... sao lại như vậy..."
+      },
+      {
+        "Title": "HP Thấp II",
+        "Context": "Đội trưởng Jean... nó ăn hiếp em..."
+      },
+      {
+        "Title": "HP Thấp III",
+        "Context": "Chơi mệt rồi, hơi chóng mặt..."
+      },
+      {
+        "Title": "HP Đồng Hành Thấp I",
+        "Context": "Kỵ Sĩ Tia Lửa, pùm!"
+      },
+      {
+        "Title": "HP Đồng Hành Thấp II",
+        "Context": "#{M#Anh}{F#Chị} không sao chứ?"
+      },
+      {
+        "Title": "Ngã Xuống I",
+        "Context": "Hãy xem em chuồn đây...! Á, thất bại rồi."
+      },
+      {
+        "Title": "Ngã Xuống II",
+        "Context": "Klee... muốn về nhà..."
+      },
+      {
+        "Title": "Ngã Xuống III",
+        "Context": "Lại gây họa rồi..."
+      },
+      {
+        "Title": "Chịu Đòn Thường I",
+        "Context": "Quá đáng..."
+      },
+      {
+        "Title": "Bị Trọng Kích I",
+        "Context": "Đau quá đi!"
+      },
+      {
+        "Title": "Vào Đội I",
+        "Context": "Để Klee giúp đỡ!"
+      },
+      {
+        "Title": "Vào Đội II",
+        "Context": "Tèn ten! Klee có mặt."
+      },
+      {
+        "Title": "Vào Đội III",
+        "Context": "Hay quá! Mạo hiểm thôi."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Miêu Tả Nhân Vật",
+        "Context": "Nếu nhắc đến thành viên mạnh nhất của Đội Kỵ Sĩ Tây Phong với những khách uống rượu ở Mondstad,\nthì hầu hết mọi người sẽ nhắc đến Đội Trưởng Đại Diện nổi tiếng Jean, Đội Trưởng Kỵ Binh Kaeya hoặc nhà quý tộc bí ẩn Diluc.\nNhưng cũng có người trong lúc mắt say lờ đờ, tận mắt nhìn thấy một kỵ sĩ đỏ đã san bằng cả ngọn Núi Vọng Phong.\nNếu muốn hỏi thăm kỵ sĩ bí ẩn này, e rằng phải đến phòng giam của Đội Kỵ Sĩ Tây Phong rồi. \nVà nếu phòng giam trống không, thì có thể một vụ nổ tồi tệ nào đó sắp xảy ra... \nKlee là \"người nguy hiểm\" như vậy đấy, là thành viên chính thức của Đội Kỵ Sĩ, sức mạnh chiến đấu của cô không thể xem thường.\nCòn đối với một đứa trẻ hoạt bát quá mức như cô, sức công phá như thế vô cùng ghê gớm.\nKhông giống như những đứa trẻ khác của Mondstadt, chất nổ mới là món đồ chơi yêu thích nhất của Klee."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 1",
+        "Context": "Ba năm trước, Klee được bố mẹ là nhà mạo hiểm nổi tiếng gửi gắm cho Đội Kỵ Sĩ Tây Phong.\nKlee nhỏ bé cứ như vậy cùng \"anh trai màu trắng\", bén duyên với \"những người thân\" ở Mondstadt.\nKlee hiếu kỳ và yêu thương thế giới bên ngoài một cách đơn thuần. Đối với những thứ phát nổ, thì cô bé lại càng đam mê cực độ.\nDưới sự che chở của Đội Kỵ Sĩ Tây Phong, cô có thể tránh xa những điều xấu xa và thương tổn.\nCô thiếu nữ bé nhỏ và những thành viên trong Đội Kỵ Sĩ đã kết nên một mối duyên không thể nào chia cách.\nĐối với Klee, bị Jean nhốt trong phòng giam, giúp đỡ Amber cải tạo Bá Tước Thỏ, hoặc lén lút nghiên cứu những loại thuốc nổ mới...\nTất cả những điều này đều là bảo vật mà cô luôn quý trọng."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 2",
+        "Context": "\"Bố nào con nấy, âu cũng là lẽ dĩ nhiên...\"\nĐội Trưởng Đại Diện Jean bị đống báo cáo phá hoại của công làm cho đau đầu, nhiều lúc cũng phải ôm trán thở dài.\nChiếc xe bị nổ tả tơi, kho hàng tự nhiên bốc cháy, vụ cháy rừng mà các kỵ sĩ đã vất vả lắm mới dập tắt được...\nLại còn \"Vụ án cá chết hàng loạt một cách bất thường ở Hồ Sao Rơi\" vô cùng thương tâm nữa...\nHung thủ gây nên những việc này chỉ có một, người này đang ở tổng bộ Đội Kỵ Sĩ...\n\"Klee!\"\nĐứng trước ánh mắt nghiêm khắc của Đội Trưởng Đại Diện, thiếu nữ nhỏ bé lần lượt giao nộp từng món thuốc nổ được giấu đầy trên người.\nSau đó với sự hộ tống của Đội Trưởng Kỵ Binh, mà vừa khóc lóc ỉ ôi vừa bước đến phòng giam.\nCâu chuyện như thế, mỗi tuần đại khái sẽ tái diễn một hai lần gì đó."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 3",
+        "Context": "Tất nhiên, sau mỗi lần gây họa, Klee đều cố gắng giúp đỡ thu dọn bãi chiến trường.\nTuy nhiên cũng nhiều lúc chính vì tính cách vụng về của cô mà lại khiến mọi việc trở nên rối ren hơn:\nNhư khi muốn làm món cá nướng để bù đắp cho mọi người trong đội kỵ sĩ, cô lại bất cẩn làm bếp lò nổ tung tận trời cao;\nVội vàng muốn mượn gió dập tắt ngọn lửa lại không cẩn thận làm lửa cháy lan rộng khắp thảo nguyên...\nKlee không phải là một đứa trẻ xấu, thế nhưng lòng hiếu kỳ và ham chơi khiến cô bé luôn làm ra những việc không lường trước hậu quả.\nMà mỗi khi phạm lỗi lại cảm thấy xấu hổ và cố gắng để bù đắp.\nCó điều, mỗi lần được đội trưởng Jean thả ra khỏi phòng giam, thì y như rằng chưa đến hai ngày, một nơi nào đó ở ngoài thành Mondstadt nhất định sẽ phát ra tiếng nổ.\nLà \"Kỵ Sĩ Tia Lửa\" mạnh mẽ trong đội kỵ sĩ, nhưng uy lực lại luôn thể hiện ở những nơi kỳ lạ."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 4",
+        "Context": "Tuy Klee gây ra khá nhiều phiền phức cho Thành Mondstadt và đội kỵ sĩ, nhưng cô tuyệt đối không phải là kỵ sĩ tập sự cản trở đội kỵ sĩ.\nMà ngược lại, mỗi khi năng lực của cô được dùng đúng chỗ, cũng sẽ bộc lộ được thực lực vô cùng đáng sợ.\nTrong một lần hành động, Jean đã khéo léo lợi dụng tài năng gây nổ của Klee để một mẻ đánh bại toàn bộ Hilichurl xâm nhập.\nCó điều Klee vẫn là đứa trẻ ham chơi, không lường trước hậu quả nên đã đặt quá nhiều thuốc nổ tạo thành vụ nổ cực lớn, thay đổi vĩnh viễn địa hình của Núi Vọng Phong...\nMọi người đều sợ phát khiếp, nhưng may mắn là đội kỵ sĩ không ai bị thương.\nTruyền thuyết \"Kỵ sĩ áo đỏ Núi Vọng Phong\" được lan truyền khắp Mondstadt từ đó.\nNghe đồn cô mặc chiếc áo đỏ kì bí, trong tay ôm bảo vật bí mật của đội kỵ sĩ...\nCó điều chỉ có Klee mới biết, \"bảo vật\" đó rốt cuộc là gì."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 5",
+        "Context": "Đối với Klee, đội kỵ sĩ là người thân không thể thiếu của cô, còn người mẹ đã bước vào cuộc hành trình mạo hiểm chính là \"thần tượng\".\nNhà Mạo Hiểm nổi tiếng Alice - tác giả của quyển \"Hướng Dẫn Du Ngoạn Teyvat\", trong lòng Klee, mẹ là người vô cùng tài giỏi, có thể làm được mọi thứ.\nBất luận là trước đây bà đã tự tay dạy cô điều chế thuốc nổ, chọn kích nổ, hay từng bước chỉ dẫn cô có thể dựa theo sáng kiến của mình để tạo thành những màn pháo hoa đẹp mắt tráng lệ...\nDạy cô cách tính điểm sát thương như thế nào để có thể phá hủy toàn bộ Vực Hái Sao...\nHoặc khi bị đội kỵ sĩ bắt, nghe mắng trước khuôn mặt xanh lét của Huffman, cả hai ngại ngùng thè lưỡi...\nTất cả đều là ký ức quý báu của cô và mẹ.\nCho đến sau này, khi bố mẹ đều đi đến nơi rất xa và nguy hiểm, vì vậy phải nhờ anh Albedo và đội kỵ sĩ chăm sóc Klee.\nKlee bé nhỏ sớm đã hiểu được rằng, bản thân rồi có ngày sẽ trưởng thành, bước theo con đường của mẹ.\nRồi sẽ có một ngày, tác phẩm của cô cũng sẽ làm cho mẹ tự hào."
+      },
+      {
+        "Title": "\"Dodoco\"",
+        "Context": "\"Dodoco\" là người bạn đầu tiên của Klee, cũng là một trong những người bạn tốt nhất của cô.\nRất lâu về trước, mẹ đã tự tay làm con rối này cho cô.\nAlice đã khâu nó cùng cỏ bốn lá may mắn của Klee, rồi treo nó lên chiếc ba lô to to của Klee.\nTừ đó, Dodoco và Klee đã trở thành bạn thân như hình với bóng.\nMẹ nói rằng, làm vậy để Klee không cảm thấy cô đơn, khi ở một mình cũng sẽ có người bạn để trò chuyện.\nKhi gặp khó khăn cũng có thể bảo vệ lẫn nhau, giống như Amber và Bá Tước Thỏ của cô ấy vậy.\nCó điều, lời nói này khiến mọi người trong Đội Kỵ Sĩ cảm thấy lo lắng... nghĩ đến những \"phát minh\" khác của hai mẹ con Alice, thứ này có lẽ cũng sẽ nổ tung vào một thời khắc nào đó...\n\"Dodoco\" là cái tên Klee đặt cho con rối của mình.\nKhi được hỏi về ý nghĩa của cái tên này, Klee đỏ mặt, rất lâu sau mới trả lời: \n\"Có nghĩa là... Bạn tốt nhất của Klee\"."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Nếu hỏi Klee làm sao có được Vision, sợ rằng chính cô cũng không nói rõ được.\nLà một người cuồng chất nổ lại có tài năng vượt trội, từ khi còn rất nhỏ Klee đã nhận được sự công nhận của Vision.\nDựa theo phiên bản câu chuyện của bản thân Klee kể lại, lúc đó cô muốn tạo ra một \"quả bom cực kỳ cực kỳ lớn!\"\nĐây chính là sản phẩm đầu tay mà cô tự làm, kết quả của thử nghiệm lại kém xa mong đợi...\nChỉ làm nổ tung phòng thí nghiệm nhỏ của cô, để lại một đống tro tàn khói bay mù mịt.\nĐang rất thất vọng, Klee lại ngạc nhiên phát hiện ra Vision giống như ngọn lửa nổi lên từ trong đống tro tàn.\nTại sao Klee lại nhận được sự công nhận của Thần?\nLà vì tài năng bẩm sinh và sự kiên trì với chất nổ, hay là vì tính cách muốn làm gì thì làm giống hệt như mẹ cô, hoặc giả là vì sự hồn nhiên tỏa sáng kia?\nBất luận là nguyên nhân gì, tóm lại, ở cái độ tuổi vô lo vô nghĩ thì Klee đã nhận được Vision - thứ mà hàng vạn người luôn khao khát.\nBất luận trong quá trình trưởng thành sau này phải đối mặt với chuyện gì đi nữa, thì cô bé cũng tuyệt đối không từ bỏ \"món quà\" này."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 202901,
+      "Name": "Hoa Lửa Rực Rỡ",
+      "Description": "Bộ trang phục xinh xắn mà Klee đã mặc khi tham gia diễn xuất trong vở kịch quan trọng. Màu sắc sặc sỡ, giống như một chiếc bánh kem được tô điểm bằng những bông hoa bằng kem cùng với nến màu đỏ rực, có thể đem đến niềm vui và nụ cười trên mọi nẻo đường mạo hiểm.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_KleeCostumeWitch",
+      "SideIcon": "UI_AvatarIcon_Side_KleeCostumeWitch"
+    },
+    {
+      "Id": 202900,
+      "Name": "Tia Lửa Bé Nhỏ",
+      "Description": "Phong cách của Klee. Bộ trang phục trẻ em kết hợp với chiếc cặp bằng da thuộc.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104114,
+    113011,
+    100025,
+    112010,
+    104303,
+    113007
+  ],
+  "NameCard": {
+    "Name": "Klee - Thuốc Nổ",
+    "Description": "Hoa văn danh thiếp.\nBom may mắn của Klee. Nhìn kỹ phần đuôi, nói cho mọi người biết đây là bom nảy hay là Dodoco?",
+    "Icon": "UI_NameCardIcon_Klee",
+    "PicturePrefix": "UI_NameCardPic_Klee"
+  },
+  "TraceEffect": {
+    "Id": 215017,
+    "Name": "Vết Tích - Mặt Trời Chạy Trốn",
+    "Description": "Vết Tích Tưởng Tượng của Klee. \"Dada~ Kỵ Sĩ Tia Lửa, mạo hiểm bắt đầu!\"",
+    "Icon": "UI_TraceEffectIcon_Klee"
+  }
+}

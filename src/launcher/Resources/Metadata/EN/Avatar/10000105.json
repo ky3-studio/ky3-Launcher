@@ -42,6 +42,7 @@
         "Id": 30506,
         "Name": "Special Jump",
         "Description": "If this character is in Natlan, Hold to consume Phlogiston and execute a Rocket Double Jump. When Phlogiston is completely depleted, it will consume Stamina to execute the Double Jump instead.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_E_Olorun_03"
       },
       {
@@ -273,6 +274,7 @@
         "Id": 30501,
         "Name": "Spiritvessel Snapshot",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 consecutive shots with a bow.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, Electro energy will accumulate on the arrowhead. A fully charged arrow will deal <color=#FFACFFFF>Electro DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_02"
       },
       {
@@ -409,6 +411,7 @@
         "Id": 30502,
         "Name": "Night's Sling",
         "Description": "Ororon manifests an ancient mystical technique from the Masters of the Night-Wind as a <color=#FFD780FF>Spirit Orb</color> of midnight shade and throws it at his foe, dealing Nightsoul-aligned <color=#FFACFFFF>Electro DMG</color>.\nWhen other opponents are nearby, the Spirit Orb will bounce between them, dealing Nightsoul-aligned <color=#FFACFFFF>Electro DMG</color>. Each time Night's Sling is used, each opponent can only be selected as a target once.\nAfter 3 bounces, or if there are no eligible targets left, the Orb will disappear.\n\n<i>\"People always wish to foretell the future, but that might be because they have yet to discover that which they must do... Sorry, I'm saying complicated things again, aren't I...\"</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Olorun_01"
       }
     ],
@@ -594,6 +597,7 @@
       "Id": 30505,
       "Name": "Dark Voices Echo",
       "Description": "Ororon works an ancient ritual, dealing Nightsoul-aligned <color=#FFACFFFF>AoE Electro DMG</color>, summoning forth a Supersonic Oculus.\n\n<color=#FFD780FF>Supersonic Oculus</color>\n·Continuously taunts nearby opponents and attracts attacks from them.\n·Continuously rotates and fires off sonic waves that deal Nightsoul-aligned <color=#FFACFFFF>Electro DMG</color>.\n\n<i>Those with sharp enough senses can hear the minute voices with which all things speak. That way, they will never lose their way — not even on long, lightless nights.</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Olorun_01"
     },
     "Inherents": [
@@ -618,6 +622,7 @@
         "Id": 1052101,
         "Name": "Nightshade Synesthesia",
         "Description": "After a nearby party member triggers Nightsoul Burst, Ororon will gain 40 Nightsoul points. Within 15s after using his Elemental Skill, when other party members' <color=#80C0FFFF>Hydro</color> or <color=#FFACFFFF>Electro</color> attacks hit opponents, Ororon will gain 5 Nightsoul points, an effect that can occur every 0.3s for a maximum of 10 times during this 15s duration.\nOroron can have a maximum of 80 Nightsoul points.\n\nAlso, when nearby opponents take <color=#FFACFFFF>Electro-Charged or Lunar-Charged</color> reaction DMG or Nightsoul-aligned DMG dealt by other nearby characters, Ororon will consume 10 Nightsoul points (provided he has at least that amount), entering the Nightsoul's Blessing state and triggering the Hypersense effect: Deal Nightsoul-aligned <color=#FFACFFFF>Electro DMG</color> based on 160% of Ororon's ATK to at most 4 nearby opponents. The aforementioned effect can trigger once every 1.8s.\n\n<color=#FFD780FF>Nightsoul's Blessing: Ororon</color>\nOroron's Nightsoul's Blessing state lasts 6s.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Olorun_05"
       },
       {
@@ -642,6 +647,7 @@
         "Id": 1052201,
         "Name": "Aspect Catalyst",
         "Description": "After the Elemental Skill <color=#FFD780FF>Night's Sling</color>'s <color=#FFD780FF>Spirit Orb</color> hits an opponent, Ororon will gain the Aspect Sigil effect for 15s.\n\n<color=#FFD780FF>Aspect Sigil</color>\nWhen a nearby active party member hits an opponent with Normal, Charged, or Plunging Attacks, that character will restore 3 Energy. If Ororon is off-field, Ororon will also restore 3 Energy. This effect can trigger once every 1s, and can trigger 3 times per duration.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Olorun_06"
       },
       {
@@ -660,6 +666,7 @@
         "Id": 1052301,
         "Name": "Night Realm's Gift: Flowing Fog, Spritely Shadows",
         "Description": "While in an area with Phlogiston Mechanics within Natlan, he can use Nightsoul Transmission: Ororon. When the active character is currently in the air, the following will trigger when switching to Ororon: Ororon will leap up high. Nightsoul Transmission can be triggered once every 10s by your party.\n\nHolding Aiming Mode will cause Ororon to enter the \"Spiritspeaker\" state, which will allow him to interact with \"Nightspirit Graffiti\" and \"Nightspirit Sigils,\" extracting information and power from them. The rules for interacting with these objects follow the same rules as those governing Iktomisaurus interactions.\n\nAdditionally, holding the jump button will cause Ororon to consume 75 Stamina and leap. In areas within Natlan where Phlogiston mechanics are present, Ororon will prioritize consuming 5 Phlogiston to leap to a height higher still.\nWhen in the air, Ororon can Hold his Normal Attack to consume Phlogiston or Stamina and enter Aiming Mode.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Olorun_07"
       },
       {
@@ -678,6 +685,7 @@
         "Id": 1052501,
         "Name": "The Art of Skinchanging",
         "Description": "Increases gliding SPD for your own party members by 15%.\nNot stackable with Passive Talents that provide the exact same effects.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Olorun_08"
       }
     ],

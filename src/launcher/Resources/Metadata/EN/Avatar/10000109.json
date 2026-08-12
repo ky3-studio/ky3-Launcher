@@ -261,6 +261,7 @@
         "Id": 11091,
         "Name": "Pure Heart, Pure Dreams",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 attacks, dealing <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina and deals <color=#80FFD7FF>AoE Anemo DMG</color> after a short casting time.\n\n<color=#FFD780FF>Plunging Attack</color>\nCalling upon the power of Anemo, she plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#80FFD7FF>AoE Anemo DMG</color> upon impact with the ground.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_Catalyst_MD"
       },
       {
@@ -270,7 +271,8 @@
             "Skill DMG|{param4:F1P}",
             "Continuous Attack DMG|{param1:F1P}",
             "Dreamdrifter Duration|{param5:F1}s",
-            "Elemental Mastery-Based Swirl DMG Increase|{param2:F2P} per Point",
+            "Elemental Mastery-Based Swirl DMG Increase|{param2:F2P} per 100 Points",
+            "Elemental Mastery-Based Stellar Swirl DMG Increase|{param6:F2P} per 100 Points",
             "CD|{param3:F1}s"
           ],
           "Parameters": [
@@ -279,10 +281,11 @@
               "Level": 1,
               "Parameters": [
                 0.44912,
-                0.0018,
+                0.18,
                 15,
                 0.57744,
-                5
+                5,
+                0.018
               ]
             },
             {
@@ -290,10 +293,11 @@
               "Level": 2,
               "Parameters": [
                 0.482804,
-                0.0021,
+                0.21,
                 15,
                 0.620748,
-                5
+                5,
+                0.021
               ]
             },
             {
@@ -301,10 +305,11 @@
               "Level": 3,
               "Parameters": [
                 0.516488,
-                0.0024,
+                0.24,
                 15,
                 0.664056,
-                5
+                5,
+                0.024
               ]
             },
             {
@@ -312,10 +317,11 @@
               "Level": 4,
               "Parameters": [
                 0.5614,
-                0.0027,
+                0.27,
                 15,
                 0.7218,
-                5
+                5,
+                0.027
               ]
             },
             {
@@ -323,10 +329,11 @@
               "Level": 5,
               "Parameters": [
                 0.595084,
-                0.003,
+                0.3,
                 15,
                 0.765108,
-                5
+                5,
+                0.03
               ]
             },
             {
@@ -334,10 +341,11 @@
               "Level": 6,
               "Parameters": [
                 0.628768,
-                0.0033,
+                0.33,
                 15,
                 0.808416,
-                5
+                5,
+                0.033
               ]
             },
             {
@@ -345,10 +353,11 @@
               "Level": 7,
               "Parameters": [
                 0.67368,
-                0.0036,
+                0.36,
                 15,
                 0.86616,
-                5
+                5,
+                0.036
               ]
             },
             {
@@ -356,10 +365,11 @@
               "Level": 8,
               "Parameters": [
                 0.718592,
-                0.0039,
+                0.39,
                 15,
                 0.923904,
-                5
+                5,
+                0.039
               ]
             },
             {
@@ -367,10 +377,11 @@
               "Level": 9,
               "Parameters": [
                 0.763504,
-                0.0042,
+                0.42,
                 15,
                 0.981648,
-                5
+                5,
+                0.042
               ]
             },
             {
@@ -378,10 +389,11 @@
               "Level": 10,
               "Parameters": [
                 0.808416,
-                0.0045,
+                0.45,
                 15,
                 1.039392,
-                5
+                5,
+                0.045
               ]
             },
             {
@@ -389,10 +401,11 @@
               "Level": 11,
               "Parameters": [
                 0.853328,
-                0.0048,
+                0.48,
                 15,
                 1.097136,
-                5
+                5,
+                0.048
               ]
             },
             {
@@ -400,10 +413,11 @@
               "Level": 12,
               "Parameters": [
                 0.89824,
-                0.0051,
+                0.51,
                 15,
                 1.15488,
-                5
+                5,
+                0.051
               ]
             },
             {
@@ -411,10 +425,11 @@
               "Level": 13,
               "Parameters": [
                 0.95438,
-                0.0054,
+                0.54,
                 15,
                 1.22706,
-                5
+                5,
+                0.054
               ]
             },
             {
@@ -422,10 +437,11 @@
               "Level": 14,
               "Parameters": [
                 1.01052,
-                0.0057,
+                0.57,
                 15,
                 1.29924,
-                5
+                5,
+                0.057
               ]
             },
             {
@@ -433,10 +449,11 @@
               "Level": 15,
               "Parameters": [
                 1.06666,
-                0.006,
+                0.6,
                 15,
                 1.37142,
-                5
+                5,
+                0.06
               ]
             }
           ],
@@ -444,7 +461,8 @@
         },
         "Id": 11092,
         "Name": "Aisa Utamakura Pilgrimage",
-        "Description": "Weaves memories of lovely dreams, entering a <color=#FFD780FF>Dreamdrifter</color> state where Yumemizuki Mizuki floats above the ground, and dealing 1 instance of <color=#80FFD7FF>AoE Anemo DMG</color> to nearby opponents.\n\n<color=#FFD780FF>Dreamdrifter</color>\n·While in the Dreamdrifter state, Yumemizuki Mizuki will continuously drift forward, dealing <color=#80FFD7FF>AoE Anemo DMG</color> to nearby opponents at regular intervals.\n·During this time, Yumemizuki Mizuki can control her direction of drift, and the pick-up distance of <color=#FFD780FF>Yumemi Style Special Snacks</color> from the Elemental Burst <color=#FFD780FF>Anraku Secret Spring Therapy</color> will be increased.\n·Increases the Swirl DMG that nearby party members deal based on Yumemizuki Mizuki's Elemental Mastery.\n·Dreamdrifter will end when Mizuki leaves the field or uses her Elemental Skill again.\n\n<i>\"Our dreams touch at midnight, their song ringing on in our hearts.\"</i>",
+        "Description": "Weaves memories of lovely dreams, entering a <color=#FFD780FF>Dreamdrifter</color> state where Yumemizuki Mizuki floats above the ground, and dealing 1 instance of <color=#80FFD7FF>AoE Anemo DMG</color> to nearby opponents.\n\n<color=#FFD780FF>Dreamdrifter</color>\n·While in the Dreamdrifter state, Yumemizuki Mizuki will continuously drift forward, dealing <color=#80FFD7FF>AoE Anemo DMG</color> to nearby opponents at regular intervals.\n·During this time, Yumemizuki Mizuki can control her direction of drift, and the pick-up distance of <color=#FFD780FF>Yumemi Style Special Snacks</color> from the Elemental Burst <color=#FFD780FF>Anraku Secret Spring Therapy</color> will be increased.\n·Increases the Swirl DMG and Stellar Swirl reaction DMG that nearby party members deal based on Yumemizuki Mizuki's Elemental Mastery.\n·Dreamdrifter will end when Mizuki leaves the field or uses her Elemental Skill again.\n\n<i>\"Our dreams touch at midnight, their song ringing on in our hearts.\"</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Mizuki_01"
       }
     ],
@@ -461,7 +479,7 @@
                 10,
                 2.5,
                 0.1,
-                5
+                10
               ]
             }
           ],
@@ -469,7 +487,8 @@
         },
         "Id": 1095101,
         "Name": "Vast Be the Dream",
-        "Description": "When Yumemizuki Mizuki triggers a Swirl reaction while in the Dreamdrifter state, the next instance of periodic <color=#80FFD7FF>AoE Anemo DMG</color> she deals to nearby enemies during that same state will be increased by 1,000% of her Elemental Mastery. The aforementioned effect can trigger once every 2.5s.\nAdditionally, while Yumemizuki Mizuki is in the Dreamdrifter state, the Elemental Mastery of nearby party characters is increased by 10% of Yumemizuki Mizuki's Elemental Mastery.",
+        "Description": "When Yumemizuki Mizuki triggers a Swirl or Stellar Swirl reaction while in the Dreamdrifter state, the next instance of periodic <color=#80FFD7FF>AoE Anemo DMG</color> she deals to nearby enemies during that same state will be increased by 1,000% of her Elemental Mastery. The aforementioned effect can trigger once every 2.5s.\n<color=#FFD780FF>Radiance: Stellar Swirl</color>: When Yumemizuki Mizuki deals to an opponent the above enhanced <color=#80FFD7FF>AoE Anemo DMG</color>, she will also deal an additional instance of <color=#80FFD7FF>Anemo DMG</color> at 1,000% of her Elemental Mastery. This DMG is considered Stellar Swirl reaction DMG.\n\nAdditionally, while Yumemizuki Mizuki is in the Dreamdrifter state, the Elemental Mastery of nearby party characters is also increased by 10% of her Elemental Mastery.\nYumemizuki Mizuki will also enter the <<color=#FFD780FF>Radiance: Stellar Swirl</color> state for 8s when a nearby party member triggers a Stellar Swirl reaction.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Mizuki_08"
       }
     ],
@@ -686,6 +705,7 @@
       "Id": 11095,
       "Name": "Anraku Secret Spring Therapy",
       "Description": "Summons forth countless lovely dreams and nightmares that pull in nearby objects and opponents, dealing <color=#80FFD7FF>AoE Anemo DMG</color> and summoning a Mini Baku.\n\n<color=#FFD780FF>Mini Baku:</color>\nFollows the current active character. At regular intervals, the Mini Baku will create 1 Yumemi Style Special Snack nearby. After one of your own party members picks up a Special Snack, if their HP is higher than 70%, the Snack will explode and unleash a Munen Shockwave, dealing 1 instance of <color=#80FFD7FF>AoE Anemo DMG</color> to nearby opponents. Otherwise, it will heal the character who picked it up based on Yumemizuki Mizuki's Elemental Mastery. When Yumemizuki Mizuki triggers healing by picking up a Yumemi Style Special Snack, the amount of healing is increased by 100%. If a Snack is not picked up after a period of time, it will explode and release a Munen Shockwave, dealing 1 instance of <color=#80FFD7FF>AoE Anemo DMG</color> to surrounding opponents.\n\n<i>\"If you bury dark emotions for too long, they will become nightmares. With that in mind, why don't we turn them into 'delicious snacks' while we've got the time?\"</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Mizuki_01"
     },
     "Inherents": [
@@ -704,7 +724,8 @@
         },
         "Id": 1092101,
         "Name": "Bright Moon's Restless Voice",
-        "Description": "When Yumemizuki Mizuki triggers Swirl while in her Dreamdrifter state, Dreamdrifter's duration increases by 2.5s. This effect can trigger once every 0.3s for a maximum of 2 times per Dreamdrifter state.",
+        "Description": "When Yumemizuki Mizuki triggers a Swirl or Stellar Swirl reaction while in her Dreamdrifter state, Dreamdrifter's duration increases by 2.5s. This effect can trigger once every 0.3s for a maximum of 2 times per Dreamdrifter state.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Mizuki_05"
       },
       {
@@ -726,6 +747,7 @@
         "Id": 1092201,
         "Name": "Thoughts by Day Bring Dreams by Night",
         "Description": "While Yumemizuki Mizuki is in the Dreamdrifter state, when other nearby party members hit opponents with <color=#FF9999FF>Pyro</color>, <color=#80C0FFFF>Hydro</color>, <color=#99FFFFFF>Cryo</color>, or <color=#FFACFFFF>Electro</color> attacks, her Elemental Mastery will increase by 100 for 4s.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Mizuki_06"
       },
       {
@@ -746,6 +768,7 @@
         "Id": 1092301,
         "Name": "All Ailments Banished",
         "Description": "When Yumemizuki Mizuki is in the party, party members have a chance to recover 30% additional HP when using healing foods that do not have reviving properties. The trigger chance for this effect increases with the corresponding character's Friendship Level. (This effect will always trigger if the Traveler is the character consuming healing food.)",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Mizuki_07"
       }
     ],
@@ -753,8 +776,8 @@
       {
         "Id": 1091,
         "Name": "In Mist-Like Waters",
-        "Description": "When Yumemizuki Mizuki is in the Dreamdrifter state, she will continuously apply the \"Twenty-Three Nights' Awaiting\" effect to nearby opponents for 3s every 3.5s. When an opponent is affected by Anemo DMG-triggered Swirl reactions while the aforementioned effect is active, the effect will be canceled and this Swirl instance has its DMG against this opponent increased by 1,100% of Mizuki's Elemental Mastery.",
-        "SpecialDescription": "When Yumemizuki Mizuki is in the Dreamdrifter state, she will continuously apply the \"Twenty-Three Nights' Awaiting\" effect to nearby opponents for 3s every 3.5s. When an opponent is affected by Anemo DMG-triggered Swirl reactions while the aforementioned effect is active, the effect will be canceled, and this Swirl instance has its DMG against this opponent increased by 1,100% of Mizuki's Elemental Mastery. She also launches an additional attack on the same opponent, dealing <color=#80FFD7FF>Anemo DMG</color> equal to 1,000% of Yumemizuki Mizuki's Elemental Mastery.",
+        "Description": "When Yumemizuki Mizuki is in the Dreamdrifter state, she will continuously apply the \"Twenty-Three Nights' Awaiting\" effect to nearby opponents for 3s every 3.5s. When an opponent has a Swirl or Stellar Swirl reaction triggered against them by Anemo DMG while the aforementioned effect is active, the effect will be canceled, and this Swirl or Stellar Swirl instance deals DMG against this opponent increased by 1,100% and 550% of Mizuki's Elemental Mastery, respectively.",
+        "SpecialDescription": "When Yumemizuki Mizuki is in the Dreamdrifter state, she will continuously apply the \"Twenty-Three Nights' Awaiting\" effect to nearby opponents for 3s every 3.5s. When an opponent has a Swirl or Stellar Swirl reaction triggered against them by Anemo DMG while the aforementioned effect is active, the effect will be canceled, and this Swirl or Stellar Swirl instance has its DMG against this opponent increased by 1,100% and 550% of Mizuki's Elemental Mastery respectively. She also launches an additional attack on the same opponent, dealing <color=#80FFD7FF>Anemo DMG</color> at 1,000% of Yumemizuki Mizuki's Elemental Mastery.\n<color=#FFD780FF>Radiance: Stellar Swirl</color>: The aforementioned additional DMG is changed to <color=#80FFD7FF>Anemo DMG</color> at 400% of Yumemizuki Mizuki's Elemental Mastery. This DMG is considered Stellar Swirl reaction DMG.",
         "Icon": "UI_Talent_S_Mizuki_01"
       },
       {
@@ -794,8 +817,8 @@
       {
         "Id": 1096,
         "Name": "The Heart Lingers Long",
-        "Description": "While Yumemizuki Mizuki is in the Dreamdrifter state, Swirl DMG dealt by nearby party members can score CRIT Hits, with CRIT Rate fixed at 30%, and CRIT DMG fixed at 100%.",
-        "SpecialDescription": "While Yumemizuki Mizuki is in the Dreamdrifter state, Swirl DMG dealt by nearby party members can score CRIT Hits, with CRIT Rate fixed at 30%, and CRIT DMG fixed at 100%.\nEvery point of Elemental Mastery Yumemizuki Mizuki has in excess of 500 increases her CRIT Rate by 0.04% and her CRIT DMG by 0.16%. Yumemizuki Mizuki's CRIT Rate and CRIT DMG can be increased by up to 20% and 80% in this way, respectively.",
+        "Description": "While Yumemizuki Mizuki is in the Dreamdrifter state, Swirl reaction DMG dealt by nearby party members can score CRIT Hits, with CRIT Rate fixed at 30%, and CRIT DMG fixed at 100%. Any Stellar Swirl reaction DMG dealt by these characters will also have its CRIT Rate and CRIT DMG increased by 10% and 20%, respectively.",
+        "SpecialDescription": "While Yumemizuki Mizuki is in the Dreamdrifter state, Swirl DMG dealt by nearby party members can score CRIT Hits, with CRIT Rate fixed at 30%, and CRIT DMG fixed at 100%. The CRIT Rate of any Stellar Swirl DMG dealt by these party members is also increased by 10%, while CRIT DMG is increased by 20%.\nEvery point of Elemental Mastery Yumemizuki Mizuki has in excess of 500 increases her CRIT Rate by 0.04% and her CRIT DMG by 0.16%. Yumemizuki Mizuki's CRIT Rate and CRIT DMG can be increased by up to 20% and 80% in this way, respectively.",
         "Icon": "UI_Talent_S_Mizuki_04"
       }
     ]

@@ -1,0 +1,1248 @@
+{
+  "Id": 10000080,
+  "PromoteId": 80,
+  "Sort": 64,
+  "Body": 1,
+  "Icon": "UI_AvatarIcon_Mika",
+  "SideIcon": "UI_AvatarIcon_Side_Mika",
+  "Name": "Mika",
+  "Description": "Kỵ sĩ trẻ tuổi xuất thân trong một gia đình bình thường, đảm nhận chức vụ \"người đo vẽ bản đồ\" trong tiểu đội. Tính cách khiêm tốn thận trọng.",
+  "BeginTime": "2023-03-21T18:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 1048.5597,
+    "AttackBase": 18.6984,
+    "DefenseBase": 59.800125
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 8031,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Lần 1|{param1:F1P}",
+            "Sát Thương Lần 2|{param2:F1P}",
+            "Sát Thương Lần 3|{param3:F1P}",
+            "Sát Thương Lần 4|{param4:F1P}+{param5:F1P}",
+            "Sát Thương Lần 5|{param6:F1P}",
+            "Sát Thương Trọng Kích|{param7:F1P}",
+            "Thể lực Trọng Kích tiêu hao|{param8:F1} điểm",
+            "Sát Thương Khi Đáp|{param9:F1P}",
+            "ST Khi Rơi Từ Độ Cao Thấp/Cao|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 803101,
+              "Level": 1,
+              "Parameters": [
+                0.432632,
+                0.415019,
+                0.545034,
+                0.276146,
+                0.276146,
+                0.708743,
+                1.12746,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 803102,
+              "Level": 2,
+              "Parameters": [
+                0.467846,
+                0.448799,
+                0.589397,
+                0.298623,
+                0.298623,
+                0.766432,
+                1.21923,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 803103,
+              "Level": 3,
+              "Parameters": [
+                0.50306,
+                0.48258,
+                0.63376,
+                0.3211,
+                0.3211,
+                0.82412,
+                1.311,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 803104,
+              "Level": 4,
+              "Parameters": [
+                0.553366,
+                0.530838,
+                0.697136,
+                0.35321,
+                0.35321,
+                0.906532,
+                1.4421,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 803105,
+              "Level": 5,
+              "Parameters": [
+                0.58858,
+                0.564619,
+                0.741499,
+                0.375687,
+                0.375687,
+                0.96422,
+                1.53387,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 803106,
+              "Level": 6,
+              "Parameters": [
+                0.628825,
+                0.603225,
+                0.7922,
+                0.401375,
+                0.401375,
+                1.03015,
+                1.63875,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 803107,
+              "Level": 7,
+              "Parameters": [
+                0.684162,
+                0.656309,
+                0.861914,
+                0.436696,
+                0.436696,
+                1.120803,
+                1.78296,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 803108,
+              "Level": 8,
+              "Parameters": [
+                0.739498,
+                0.709393,
+                0.931627,
+                0.472017,
+                0.472017,
+                1.211456,
+                1.92717,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 803109,
+              "Level": 9,
+              "Parameters": [
+                0.794835,
+                0.762476,
+                1.001341,
+                0.507338,
+                0.507338,
+                1.30211,
+                2.07138,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 803110,
+              "Level": 10,
+              "Parameters": [
+                0.855202,
+                0.820386,
+                1.077392,
+                0.54587,
+                0.54587,
+                1.401004,
+                2.2287,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 803111,
+              "Level": 11,
+              "Parameters": [
+                0.915569,
+                0.878296,
+                1.153443,
+                0.584402,
+                0.584402,
+                1.499898,
+                2.38602,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 803112,
+              "Level": 12,
+              "Parameters": [
+                0.975936,
+                0.936205,
+                1.229494,
+                0.622934,
+                0.622934,
+                1.598793,
+                2.54334,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 803113,
+              "Level": 13,
+              "Parameters": [
+                1.036304,
+                0.994115,
+                1.305546,
+                0.661466,
+                0.661466,
+                1.697687,
+                2.70066,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 803114,
+              "Level": 14,
+              "Parameters": [
+                1.096671,
+                1.052024,
+                1.381597,
+                0.699998,
+                0.699998,
+                1.796582,
+                2.85798,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 803115,
+              "Level": 15,
+              "Parameters": [
+                1.157038,
+                1.109934,
+                1.457648,
+                0.73853,
+                0.73853,
+                1.895476,
+                3.0153,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10801,
+        "Name": "Tây Phong Thương Thuật - Kế Thừa",
+        "Description": "<color=#FFD780FF>Tấn Công Thường</color>\nKết hợp giữa nỏ và thương, thực hiện tối đa 5 lần đánh liên tiếp.\n\n<color=#FFD780FF>Trọng Kích</color>\nTiêu hao thể lực nhất định, xông về phía trước, gây sát thương cho kẻ địch trên đường đi.\n\n<color=#FFD780FF>Tấn Công Khi Đáp</color>\nĐáp xuống đất từ trên không, tấn công kẻ địch trên đường và gây sát thương phạm vi khi chạm đất.",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 8032,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Mũi Tên Băng Giá|{param1:F2P}",
+            "Sát Thương Pháo Hiệu Sao Băng|{param2:F2P}",
+            "Sát Thương Mảnh Sao Băng|{param3:F2P}",
+            "Tăng Tốc Độ Tấn Công|{param4:P}",
+            "Thời Gian Duy Trì Gió Linh Hồn|{param5:F1}s",
+            "CD|{param6:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 803201,
+              "Level": 1,
+              "Parameters": [
+                0.672,
+                0.84,
+                0.252,
+                0.13,
+                12,
+                15
+              ]
+            },
+            {
+              "Id": 803202,
+              "Level": 2,
+              "Parameters": [
+                0.7224,
+                0.903,
+                0.2709,
+                0.14,
+                12,
+                15
+              ]
+            },
+            {
+              "Id": 803203,
+              "Level": 3,
+              "Parameters": [
+                0.7728,
+                0.966,
+                0.2898,
+                0.15,
+                12,
+                15
+              ]
+            },
+            {
+              "Id": 803204,
+              "Level": 4,
+              "Parameters": [
+                0.84,
+                1.05,
+                0.315,
+                0.16,
+                12,
+                15
+              ]
+            },
+            {
+              "Id": 803205,
+              "Level": 5,
+              "Parameters": [
+                0.8904,
+                1.113,
+                0.3339,
+                0.17,
+                12,
+                15
+              ]
+            },
+            {
+              "Id": 803206,
+              "Level": 6,
+              "Parameters": [
+                0.9408,
+                1.176,
+                0.3528,
+                0.18,
+                12,
+                15
+              ]
+            },
+            {
+              "Id": 803207,
+              "Level": 7,
+              "Parameters": [
+                1.008,
+                1.26,
+                0.378,
+                0.19,
+                12,
+                15
+              ]
+            },
+            {
+              "Id": 803208,
+              "Level": 8,
+              "Parameters": [
+                1.0752,
+                1.344,
+                0.4032,
+                0.2,
+                12,
+                15
+              ]
+            },
+            {
+              "Id": 803209,
+              "Level": 9,
+              "Parameters": [
+                1.1424,
+                1.428,
+                0.4284,
+                0.21,
+                12,
+                15
+              ]
+            },
+            {
+              "Id": 803210,
+              "Level": 10,
+              "Parameters": [
+                1.2096,
+                1.512,
+                0.4536,
+                0.22,
+                12,
+                15
+              ]
+            },
+            {
+              "Id": 803211,
+              "Level": 11,
+              "Parameters": [
+                1.2768,
+                1.596,
+                0.4788,
+                0.23,
+                12,
+                15
+              ]
+            },
+            {
+              "Id": 803212,
+              "Level": 12,
+              "Parameters": [
+                1.344,
+                1.68,
+                0.504,
+                0.24,
+                12,
+                15
+              ]
+            },
+            {
+              "Id": 803213,
+              "Level": 13,
+              "Parameters": [
+                1.428,
+                1.785,
+                0.5355,
+                0.25,
+                12,
+                15
+              ]
+            },
+            {
+              "Id": 803214,
+              "Level": 14,
+              "Parameters": [
+                1.512,
+                1.89,
+                0.567,
+                0.25,
+                12,
+                15
+              ]
+            },
+            {
+              "Id": 803215,
+              "Level": 15,
+              "Parameters": [
+                1.596,
+                1.995,
+                0.5985,
+                0.25,
+                12,
+                15
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10802,
+        "Name": "Sao Băng Lưu Chuyển",
+        "Description": "Dùng nỏ tấn công kẻ địch và tạo trạng thái Gió Linh Hồn cho tất cả nhân vật trong đội gần đó. Nhân vật có trạng thái Gió Linh Hồn khi ra trận sẽ tăng tốc độ tấn công.\nTùy theo nhấn hoặc nhấn giữ để sản sinh hiệu quả khác nhau.\n\n<color=#FFD780FF>Nhấn</color>\nBắn ra Mũi Tên Băng Giá có thể xuyên thấu kẻ địch, gây <color=#99FFFFFF>Sát Thương Nguyên Tố Băng</color> cho kẻ địch chạm phải.\n\n<color=#FFD780FF>Nhấn Giữ</color>\nTiến hành nhắm bắn, khóa một kẻ địch để bắn Pháo Hiệu Sao Băng, gây <color=#99FFFFFF>Sát Thương Nguyên Tố Băng</color>. Khi Pháo Hiệu Sao Băng trúng đích sẽ bay lên và phát nổ, bắn ra Mảnh Sao Băng vào 3 kẻ địch khác xung quanh, gây <color=#99FFFFFF>Sát Thương Nguyên Tố Băng</color>.\n\n<i>Đấy là những ngôi sao dưới trời đông lạnh giá.</i>",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_S_Mika_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 8039,
+      "Proud": {
+        "Descriptions": [
+          "Lượng Trị Liệu Thi Triển|{param2:F1P} Giới Hạn HP +{param1:I}",
+          "Lượng Trị Liệu Lông Vũ Chim Ưng|{param4:F1P} Giới Hạn HP +{param3:I}",
+          "Giãn Cách Trị Liệu Lông Vũ Chim Ưng|{param5:F1}s",
+          "Thời Gian Duy Trì Lông Vũ Chim Ưng|{param6:F1}s",
+          "CD|{param7:F1}s",
+          "Năng Lượng Nguyên Tố|{param8:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 803901,
+            "Level": 1,
+            "Parameters": [
+              1172.0355,
+              0.12168,
+              233.95428,
+              0.02432,
+              2.5,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 803902,
+            "Level": 2,
+            "Parameters": [
+              1289.2554,
+              0.130806,
+              257.35297,
+              0.026144,
+              2.5,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 803903,
+            "Level": 3,
+            "Parameters": [
+              1416.2435,
+              0.139932,
+              282.70154,
+              0.027968,
+              2.5,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 803904,
+            "Level": 4,
+            "Parameters": [
+              1553,
+              0.1521,
+              310,
+              0.0304,
+              2.5,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 803905,
+            "Level": 5,
+            "Parameters": [
+              1699.5248,
+              0.161226,
+              339.24835,
+              0.032224,
+              2.5,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 803906,
+            "Level": 6,
+            "Parameters": [
+              1855.8179,
+              0.170352,
+              370.4466,
+              0.034048,
+              2.5,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 803907,
+            "Level": 7,
+            "Parameters": [
+              2021.8794,
+              0.18252,
+              403.59473,
+              0.03648,
+              2.5,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 803908,
+            "Level": 8,
+            "Parameters": [
+              2197.7092,
+              0.194688,
+              438.69275,
+              0.038912,
+              2.5,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 803909,
+            "Level": 9,
+            "Parameters": [
+              2383.3071,
+              0.206856,
+              475.74066,
+              0.041344,
+              2.5,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 803910,
+            "Level": 10,
+            "Parameters": [
+              2578.6736,
+              0.219024,
+              514.73846,
+              0.043776,
+              2.5,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 803911,
+            "Level": 11,
+            "Parameters": [
+              2783.8083,
+              0.231192,
+              555.68616,
+              0.046208,
+              2.5,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 803912,
+            "Level": 12,
+            "Parameters": [
+              2998.7114,
+              0.24336,
+              598.58374,
+              0.04864,
+              2.5,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 803913,
+            "Level": 13,
+            "Parameters": [
+              3223.3828,
+              0.25857,
+              643.4312,
+              0.05168,
+              2.5,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 803914,
+            "Level": 14,
+            "Parameters": [
+              3457.8225,
+              0.27378,
+              690.2286,
+              0.05472,
+              2.5,
+              15,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 803915,
+            "Level": 15,
+            "Parameters": [
+              3702.0305,
+              0.28899,
+              738.9758,
+              0.05776,
+              2.5,
+              15,
+              18,
+              70
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10805,
+      "Name": "Lông Vũ Chúc Tụng",
+      "Description": "Cổ vũ đồng đội tiến công từ những lời chúc học được trong Đội Kỵ Sĩ, hồi phục HP cho tất cả nhân vật trong đội gần đó, lượng hồi phục sẽ căn cứ vào giới hạn HP của Mika, đồng thời cung cấp trạng thái Lông Vũ Chim Ưng cho họ.\n\n<color=#FFD780FF>Lông Vũ Chim Ưng</color>\nNhân vật trong trận có trạng thái Lông Vũ Chim Ưng khi tấn công thường trúng kẻ địch, Mika sẽ hồi phục HP cho họ, lượng hồi phục căn cứ vào giới hạn HP của Mika.\nNhân vật có trạng thái này trong thời gian ngắn tối đa chỉ có thể hồi phục một lần HP thông qua cách này.\n\n<i>\"Hãy mang theo hy vọng khi gặp khó khăn, và luôn cảnh giác khi mọi việc đều tốt đẹp... Vì lông vũ trắng thuần khiết đó cuối cùng sẽ dẫn đường cho những người lữ hành lạc lối.\"</i>",
+      "SpecialEnergyType": 0,
+      "Icon": "Skill_E_Mika_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 8021,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 802101,
+              "Level": 1,
+              "Parameters": [
+                0.1,
+                3
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 802101,
+        "Name": "Hỏa Lực Yểm Trợ",
+        "Description": "Trong các tình huống sau, Gió Linh Hồn của <color=#FFD780FF>Sao Băng Lưu Chuyển</color> sẽ cường hóa hiệu quả Do Thám, tăng 10% sát thương vật lý do nhân vật trong trận gây ra:\n·Mũi Tên Băng Giá khi bắn trúng hơn 1 kẻ địch, mỗi kẻ địch trúng thêm sẽ sản sinh 1 tầng hiệu quả Do Thám;\n·Mảnh Sao Băng khi trúng kẻ địch sẽ sản sinh 1 tầng hiệu quả Do Thám. Mỗi Mảnh Sao Băng chỉ có thể kích hoạt một lần.\n\nHiệu quả Do Thám của trạng thái Gió Linh Hồn tối đa cộng dồn 3 tầng, trong thời gian duy trì nếu kích hoạt lại Sao Băng Lưu Chuyển sẽ xóa đi trạng thái Gió Linh Hồn và Do Thám ban đầu.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Mika_05"
+      },
+      {
+        "GroupId": 8022,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 802201,
+              "Level": 1,
+              "Parameters": [
+                1
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 802201,
+        "Name": "Đo Vẽ Địa Hình",
+        "Description": "Nhân vật trong trận đồng thời ở trong trạng thái Lông Vũ Chim Ưng của <color=#FFD780FF>Lông Vũ Chúc Tụng</color> và Gió Linh Hồn của <color=#FFD780FF>Sao Băng Lưu Chuyển</color> khi tấn công gây ra bạo kích, trạng thái Gió Linh Hồn sẽ sản sinh 1 tầng hiệu quả Do Thám của thiên phú \"Hỏa Lực Yểm Trợ\". Trong một lần thời gian duy trì của trạng thái Gió Linh Hồn tối đa chỉ có thể sản sinh 1 tầng Do Thám thông qua cách này.\nNgoài ra, giới hạn số tầng hiệu quả Do Thám của Gió Linh Hồn tăng thêm 1.\nCần mở khóa thiên phú \"Hỏa Lực Yểm Trợ\".",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Mika_06"
+      },
+      {
+        "GroupId": 8023,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 802301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 802301,
+        "Name": "Phân Định Ranh Giới",
+        "Description": "Hiển thị vị trí <color=#FFD780FF>đặc sản khu vực Mondstadt</color> trên bản đồ nhỏ.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_Collect_Local_Mengde"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 801,
+        "Name": "Cơ Duyên Gặp Gỡ",
+        "Description": "Trạng thái Gió Linh Hồn của <color=#FFD780FF>Sao Băng Lưu Chuyển</color> sẽ giảm giãn cách hồi phục HP của trạng thái Lông Vũ Chim Ưng từ kỹ năng <color=#FFD780FF>Lông Vũ Chúc Tụng</color>, tỉ lệ giảm tương đồng với tỉ lệ tăng tốc độ tấn công của trạng thái Gió Linh Hồn.",
+        "Icon": "UI_Talent_S_Mika_01"
+      },
+      {
+        "Id": 802,
+        "Name": "Hành Trình Bên Nhau",
+        "Description": "Lần Mũi Tên Băng Giá từ kỹ năng <color=#FFD780FF>Sao Băng Lưu Chuyển</color> đầu tiên bắn trúng kẻ địch, hoặc Pháo Hiệu Sao Băng khi bắn trúng kẻ địch sẽ sản sinh 1 tầng hiệu quả Do Thám của thiên phú \"Hỏa Lực Yểm Trợ\".\nCần mở khóa thiên phú \"Hỏa Lực Yểm Trợ\".",
+        "Icon": "UI_Talent_S_Mika_02"
+      },
+      {
+        "Id": 803,
+        "Name": "Du Kích Tâm Đắc",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Lông Vũ Chúc Tụng</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Mika_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 804,
+        "Name": "Chúc Nguyện Giá Lạnh",
+        "Description": "Trạng thái Lông Vũ Chim Ưng từ kỹ năng <color=#FFD780FF>Lông Vũ Chúc Tụng</color> của bản thân Mika khi trị liệu nhân vật trong đội sẽ khiến cho Mika hồi phục 3 điểm Năng Lượng Nguyên Tố. Một lần trạng thái Lông Vũ Chim Ưng từ kỹ năng Lông Vũ Chúc Tụng tối đa hồi phục 5 lần Năng Lượng Nguyên Tố.",
+        "Icon": "UI_Talent_S_Mika_03"
+      },
+      {
+        "Id": 805,
+        "Name": "Mũi Tên Dẫn Đường",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Sao Băng Lưu Chuyển</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Mika_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 806,
+        "Name": "Chung Sức Phối Hợp",
+        "Description": "Giới hạn số tầng hiệu quả Do Thám từ trạng thái Gió Linh Hồn của kỹ năng <color=#FFD780FF>Sao Băng Lưu Chuyển</color> tăng 1 tầng. Cần mở khóa thiên phú \"Hỏa Lực Yểm Trợ\".\nNgoài ra, nhân vật ra trận trong trạng thái Gió Linh Hồn sẽ tăng 60% sát thương bạo kích vật lý.",
+        "Icon": "UI_Talent_S_Mika_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Dấu Hiệu Sương Mai",
+    "Detail": "Kỵ sĩ trẻ tuổi xuất thân trong một gia đình bình thường, đảm nhận chức vụ \"người đo vẽ bản đồ\" trong tiểu đội. Tính cách khiêm tốn thận trọng.",
+    "Association": 1,
+    "Native": "Đội Kỵ Sĩ Tây Phong",
+    "BirthMonth": 8,
+    "BirthDay": 11,
+    "VisionBefore": "Băng",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Cung Lâm Cáp",
+    "CvChinese": "邓宥希",
+    "CvJapanese": "三瓶由布子",
+    "CvEnglish": "Robb Moreira",
+    "CvKorean": "Yoon Eun-seo",
+    "CookBonus": {
+      "OriginItemId": 108168,
+      "ItemId": 108502,
+      "InputList": [
+        100062,
+        110001,
+        110005
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Lần đầu gặp mặt...",
+        "Context": "Mika, người đo vẽ bản đồ thuộc tiểu đội du kích Đội Kỵ Sĩ Tây Phong, có mặt. Được tác chiến cùng bạn là niềm vinh hạnh của tôi, cứ giao việc cho tôi... Tôi sẽ cố gắng hết sức để do thám con đường phía trước, điều tra rõ thông tin kẻ địch!"
+      },
+      {
+        "Title": "Nói chuyện phiếm - Mục Tiêu",
+        "Context": "Mau chóng điều chỉnh trạng thái, nhiệm vụ tiếp theo sẽ đến bất kỳ lúc nào."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Tình Trạng Ghi Chép",
+        "Context": "Xác nhận vị trí hiện tại, đo khoảng cách đến khu vực mục tiêu... Ừm, tôi đã ghi lại tình trạng địa hình rồi."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Dò Đường",
+        "Context": "Dù tình huống có bất lợi đến thế nào, chỉ cần điều tra kỹ lưỡng thì hẳn vẫn sẽ tìm được con đường để đi."
+      },
+      {
+        "Title": "Khi trời mưa...",
+        "Context": "Mưa lớn quá... hy vọng mặt đất không bị biến thành vũng lầy, nếu không thì lại phải đánh giày cho mọi người nữa... Haiz, thời gian để nấu ăn còn không đủ nữa là..."
+      },
+      {
+        "Title": "Khi có sấm sét...",
+        "Context": "Tiếng sấm có thể che đậy tiếng hành động, là người bạn tốt của chúng tôi."
+      },
+      {
+        "Title": "Khi tuyết rơi...",
+        "Context": "Tuyết rất đẹp, nhưng sẽ che đi mất địa hình ban đầu, tôi thì không thích lắm."
+      },
+      {
+        "Title": "Ánh nắng thật chan hòa...",
+        "Context": "Ánh nắng chan hòa, tầm nhìn đủ đầy, điều kiện quan sát thuận lợi. Hmm, tâm trạng thật thoải mái!"
+      },
+      {
+        "Title": "Gió lớn quá...",
+        "Context": "Ngọn gió này... là chỉ thị của Phong Thần sao, hay là do ảnh hưởng của địa hình lên bầu khí quyển nhỉ?"
+      },
+      {
+        "Title": "Chào buổi sáng...",
+        "Context": "Ừm! Chào buổi sáng, tôi đã chuẩn bị bữa sáng mà đội viễn chinh thường ăn, nếu được thì bạn vừa ăn vừa nghe tôi nói về kế hoạch hành động của hôm nay nhé?"
+      },
+      {
+        "Title": "Chào buổi trưa...",
+        "Context": "Hãy đợi chút, suất ăn dã chiến số ba được yêu thích nhất của tiểu đội du kích sắp chuẩn bị xong rồi. Để lát nữa tôi đi xem thử xem ở gần đây có chỗ nào thích hợp để nghỉ ngơi không."
+      },
+      {
+        "Title": "Chào buổi tối...",
+        "Context": "Cơm tối đã chuẩn bị xong rồi, tuy vẫn là bữa ăn hành quân, có chút sơ sài... nhưng cũng cung cấp đầy đủ dinh dưỡng, đừng chê nhé... Nếu như cần bảo dưỡng trang bị thì cứ giao cho tôi là được."
+      },
+      {
+        "Title": "Chúc ngủ ngon...",
+        "Context": "Thời gian vẫn còn sớm, tôi phải sắp xếp lại thông tin trắc địa của hôm nay. Giường hành quân đã chuẩn bị xong rồi, bạn nghỉ ngơi trước nhé. Đợi khi tinh thần của bạn tỉnh táo rồi thì bữa khuya cũng sẽ chuẩn bị xong, đến lúc đó chúng ta sẽ đổi ca canh gác."
+      },
+      {
+        "Title": "Về bản thân Mika - Công Việc",
+        "Context": "Người đo vẽ bản đồ? Trách nhiệm của chức vị này là đi tiên phong vào các khu vực chưa biết, thăm dò địa hình, tìm kiếm vị trí có giá trị nhất, có lúc còn phải đối phó với lính gác của phe địch nữa. Cho nên, ngoài việc đo vẽ bản đồ, tôi cũng phải nắm vững kỹ năng chiến đấu, chữa trị và sinh tồn."
+      },
+      {
+        "Title": "Về bản thân Mika - Việc Vặt",
+        "Context": "Dựng trại, nhóm lửa nấu ăn, bảo dưỡng trang bị, những chuyện này đều phải có người phụ trách mà đúng không. Nếu mọi người chê việc này phiền phức, còn tôi làm thì miễn cưỡng cũng xem như đạt chuẩn, thì ít ra tôi cũng có thể... để mọi người nhẹ nhõm và vui vẻ hơn nhỉ?"
+      },
+      {
+        "Title": "Về chúng ta - Lời Đồn",
+        "Context": "Xin lỗi, vừa mới về Mondstadt thì tôi đã nghe sự tích về các bạn rồi. Những người siêu việt như bạn và Paimon thì chắc sẽ có những nguyên tắc riêng của mình nhỉ. Có những kẻ mạnh nhưng tính tình không tốt, chỉ cần tôi nói sai một chữ thôi cũng sẽ khiến họ không vui... Cũng may bạn và Paimon hiền lành, cho nên tôi cũng không cần lo lắng!"
+      },
+      {
+        "Title": "Về chúng ta - Ám Hiệu",
+        "Context": "Một số tiên phong sẽ dùng thuật ngữ \"Octave\" để biểu thị rằng \"cung tên đã cạn kiệt và đang trở về trại\"; Hoặc \"Vera\" có nghĩa là \"tình hình ổn và có thể giao chiến\". Hay là chúng ta cũng đặt một số ám hiệu nhé? Như vậy sẽ thuận tiện hơn, dù sao thì chúng ta cũng hợp tác lâu dài mà. Ừm, đều theo ý bạn, tôi nghe theo bạn cả đấy."
+      },
+      {
+        "Title": "Về \"Vision\"...",
+        "Context": "Nói thật lòng thì tôi cũng rất bất ngờ khi bản thân nhận được Vision đó. Nó đã giúp đỡ cho tôi rất nhiều, nhưng tôi cũng không thể ỷ lại vào sức mạnh của nó, mà chỉ có thể xem nó như một công cụ bảo hiểm thôi. Thân là một thành viên trong Đội Kỵ Sĩ, tôi nên coi trọng hơn về khả năng hợp tác nhóm và cùng đồng đội tìm ra cách vượt qua khó khăn."
+      },
+      {
+        "Title": "Có gì muốn chia sẻ không...",
+        "Context": "Đây là một phương pháp đo khoảng cách đơn giản mà có thể hữu ích với mọi người: Duỗi thẳng cánh tay và dựng ngón tay cái về phía mục tiêu, căn chỉnh tầm ngắm của mắt phải và ngón cái về phía bên trái của mục tiêu và mắt trái hướng về phía bên phải của mục tiêu, rồi nhân khoảng cách giữa hai bên với một hệ số. Như vậy sẽ có thể ước tính được chiều cao của ngọn núi xem liệu bản thân có leo được đến đỉnh núi không, hoặc chiều rộng của một con sông xem liệu có thể bơi qua đó không."
+      },
+      {
+        "Title": "Những kiến thức thú vị...",
+        "Context": "Nghe tiền bối Klee nói trên thế giới có một loại thực vật có thể truyền âm thanh, nếu như loại thực vật đó có thể mang theo bên người là tốt rồi. Như vậy thì tôi sẽ có thể báo cáo tình hình theo thời gian thực luôn, thậm chí tôi còn có thể ở tiền tuyến để hướng dẫn hậu phương dùng nỏ tiêu diệt mối nguy hiểm từ tầm xa nữa."
+      },
+      {
+        "Title": "Về Kaeya...",
+        "Context": "Trước khi vào đội thì tôi đã tham gia qua nhiều lần kiểm tra, giám thị chính là đội trưởng Kaeya. Đội trưởng Kaeya luôn ủng hộ và đưa cho tôi nhiều lời khuyên... Nhưng mà, có lúc tôi không hiểu những gì anh ấy nói lắm, lo là đầu mình nhảy số không kịp rồi làm anh ấy mất hứng."
+      },
+      {
+        "Title": "Về Varka - Giáo Huấn",
+        "Context": "Đại Đội Trưởng Varka là một nhân vật lợi hại đáng kính, cũng là thầy của tôi về phương diện chiến đấu. Ngài ấy thấy tôi nhỏ con, không có ưu thế về thể lực, nên đã dạy tôi phải nhanh nhẹn khi đánh đấm, tránh giáp lá cà với kẻ địch. Cho nên tôi đã học được cách dùng thương và nỏ để đối phó với kẻ địch, cách chiến đấu này đúng là hợp với tôi."
+      },
+      {
+        "Title": "Về Varka - Capitano",
+        "Context": "Đại Đội Trưởng còn nói, tôi phải lập ra mục tiêu cao hơn để không ngừng rèn luyện bản lĩnh. Tôi luôn nghĩ như vậy, cho đến lúc viễn chinh, tôi mới hiểu được tầm quan trọng của vấn đề. Có một ngày, chúng tôi gặp được Quan Chấp Hành Fatui tự xưng là \"Capitano\". Tôi hoàn toàn không biết phải làm thế nào để chống đỡ được một đối thủ như vậy. Cảnh giới của kẻ mạnh, đối với tôi mà nói đúng là quá xa vời."
+      },
+      {
+        "Title": "Về Jean...",
+        "Context": "Đội Phó... À không, Đội Trưởng Đại Diện là một tiền bối ân cần và lợi hại, luôn bảo vệ mọi người. Trong các lĩnh vực như sắp xếp công việc, sơ cứu hay nấu ăn thì tôi đều phải học hỏi rất nhiều từ cô ấy..."
+      },
+      {
+        "Title": "Về Amber...",
+        "Context": "Tiền bối Amber... là một tiên phong rất đáng tin cậy, là một nhân vật lợi hại trong lĩnh vực trinh sát! Vị trí đội hình của người đo vẽ bản đồ và kỵ sĩ trinh sát rất gần với nhau, luôn hành động trước đội quân chủ lực. Kinh nghiệm của tiền bối Amber rất phong phú, tôi đã học được nhiều kỹ năng sinh tồn từ chỗ cô ấy, còn cả kiến thức về mặt bảo dưỡng dây nỏ và mũi tên nữa."
+      },
+      {
+        "Title": "Về Eula - Nhiệm Vụ",
+        "Context": "Đội trưởng Eula là một chiến sĩ mạnh mẽ với phong cách chiến đấu riêng biệt, cô ấy luôn chiếu cố cho tôi. Khi tôi vừa vào đội là cô ấy đã sắp xếp cho tôi các nhiệm vụ lớn nhỏ, số lượng cũng nhiều hơn các thành viên khác, nên tôi đã có thể rèn luyện khả năng thích nghi rất nhanh. Chỉ cần quen với cách nói chuyện của cô ấy là có thể hòa hợp nhanh thôi!"
+      },
+      {
+        "Title": "Về Eula - Tác Phong",
+        "Context": "Thực ra thì tôi rất ngưỡng mộ đội trưởng Eula, cô ấy thân thiện, tác phong cởi mở, ý chí mạnh mẽ. Nếu như tôi cứ bị người ta dùng ánh mắt kỳ lạ để dòm ngó, lại còn đàm tiếu sau lưng thì chắc tôi không dám ra khỏi nhà luôn quá."
+      },
+      {
+        "Title": "Về Lisa...",
+        "Context": "Lúc tôi còn học trắc họa thì thủ thư Lisa luôn giúp đỡ tôi, còn mang đến cho tôi rất nhiều quyển sách có ích nữa, phải chi tôi có thể giỏi giang như cô ấy thì tốt rồi. Tri thức không bao giờ là đủ, biết đâu sẽ có ngày dùng đến, đúng không?"
+      },
+      {
+        "Title": "Về Klee...",
+        "Context": "Tiền bối Klee? Klee có tính cách rất cởi mở, và hình như... mạnh không kém gì Đại Đội Trưởng nhỉ? Klee có mời tôi đi thám hiểm qua vài lần, chúng tôi chơi với nhau rất vui! Tuy Klee đôi khi hay thử nghiệm nhiều loại vũ khí nguy hiểm, khiến tôi phải vẽ lại rất nhiều bản đồ... Nhưng mà, tôi thấy cũng đáng!"
+      },
+      {
+        "Title": "Về Venti...",
+        "Context": "Tôi thích nhà thơ lang thang đó lắm, anh ấy rất giỏi diễn tấu nhạc cụ, nhạc của anh ấy khiến tôi nhớ về quê nhà. Nếu được chọn bài nhạc đại diện cho Mondstadt thì tôi sẽ bầu cho tác phẩm của anh ấy một phiếu. Tiếc là thời gian tôi ở trong thành không nhiều, không thì tôi sẽ tặng quà cho anh ấy mỗi ngày mất."
+      },
+      {
+        "Title": "Về Albedo...",
+        "Context": "Đội trưởng Albedo có ơn với tôi, dụng cụ công tác của tôi đều do anh ấy chế tạo đó. Có một cây viết dù cho có treo ngược trên cây thì tôi vẫn có thể sử dụng bình thường. Nhưng mà... trắc họa bản đồ và vẽ tranh hình như không giống nhau đúng không? Trước đó tôi có vẽ vài bức tranh phong cảnh ở vài khu vực để làm tình báo bổ sung, nghe nói đội trưởng Albedo khi xem xong đã im lặng hồi lâu."
+      },
+      {
+        "Title": "Về Lohen...",
+        "Context": "#{F#Cô}{M#Cậu} có thấy Lohen không? Tôi vừa phát hiện ra sổ tay của chúng tôi bị đổi nhầm với nhau, mà sáng sớm anh ấy đã biến mất. Haiz, chắc chắn lại một mình xông vào nơi ma vật tụ tập rồi... Rõ ràng đã nói làm như vậy rất nguy hiểm... Giá như tôi cũng là \"đội trưởng\" thì tốt biết mấy, vậy thì anh ấy sẽ nghe lời tôi... Ừm, có nghe không nhỉ..."
+      },
+      {
+        "Title": "Muốn tìm hiểu Mika - Điều thứ 1",
+        "Context": "Chuyện của tôi ư? Tôi là một người bình thường, không có câu chuyện gì thú vị cả. Nếu như chỉ nói về những trải nghiệm trước đây của tôi thì bạn có chịu nghe không?"
+      },
+      {
+        "Title": "Muốn tìm hiểu Mika - Điều thứ 2",
+        "Context": "Từ nhỏ là tôi đã muốn trở thành một người đo vẽ bản đồ để vẽ chi tiết mọi ngóc ngách của Teyvat. Sau này tôi phát hiện ra trong Đội Kỵ Sĩ có chức vụ này, thế là tôi được cha và anh trai ủng hộ tham gia ứng tuyển rồi được chiêu mộ. Công việc này đã khiến tôi sống một cuộc sống như bản thân mong ước, nên tôi thấy rất mãn nguyện."
+      },
+      {
+        "Title": "Muốn tìm hiểu Mika - Điều thứ 3",
+        "Context": "Mọi người trong Đội Kỵ Sĩ đều rất mạnh, mỗi cá nhân đều có thứ đáng để tôi học hỏi. Tôi cũng học được rất nhiều bản lĩnh mới từ mọi người, để báo đáp, nếu có việc gì cần tôi thì tôi sẽ giúp đỡ hết mình."
+      },
+      {
+        "Title": "Muốn tìm hiểu Mika - Điều thứ 4",
+        "Context": "Tuy nhiên, sau khi chạy việc vài lần giúp Đại Đội Trưởng và đội trưởng Eula thì có vài đồng nghiệp đã xem tôi như tín sứ của hai vị đội trưởng đó. Nếu tôi nói sai thứ gì thì sẽ khiến cho hai vị đội trưởng đó buồn phiền mất, đó sẽ là lỗi của tôi. Vậy nên, mỗi khi nói chuyện với người lạ thì ít nhiều tôi cũng tỏ ra e dè, khiến mọi người thấy tôi có vẻ nhút nhát, đây chắc là một kiểu hiểu lầm nhỉ?"
+      },
+      {
+        "Title": "Muốn tìm hiểu Mika - Điều thứ 5",
+        "Context": "May mắn, sau khi trải qua cuộc viễn chinh thì tôi đã không còn quá lo lắng rồi. Tôi không quan tâm người ta nghĩ gì về mình, miễn bản thân không gây rắc rối cho người khác là được. Đội Kỵ Sĩ như ngôi nhà thứ hai của tôi vậy, tôi sẽ hoàn thành tốt công việc của một người đo vẽ bản đồ, để những người thân bên cạnh có thể hoàn thành nhiệm vụ một cách an toàn, trải qua mỗi ngày một cách thoải mái và vui vẻ."
+      },
+      {
+        "Title": "Sở thích của Mika...",
+        "Context": "Sở thích à... Ngoài công việc ra thì tôi thích nhất chắc là... dựng trại nơi hoang dã. Có thể chìm đắm trong cảnh đẹp mới mẻ, dựng lên một doanh trại thoải mái dễ chịu, nhóm lửa nấu ăn, thật là sảng khoái!"
+      },
+      {
+        "Title": "Nỗi buồn của Mika...",
+        "Context": "Nói thật thì tôi không giỏi nói chuyện với người lạ, có lẽ tôi không giỏi kỹ năng giao tiếp. Về vấn đề này, bạn có thể hướng dẫn tôi được không?"
+      },
+      {
+        "Title": "Món ăn yêu thích...",
+        "Context": "Đại Đội Trưởng nói, thanh niên như tôi thì cần phải ăn nhiều thịt để phát triển thể trạng và sức khỏe. Mặc dù khó có cơ hội tôi trở thành một con người cơ bắp, nhưng quả thật tôi rất thích ăn các loại thịt, điểm này cũng rất hợp với các chiến hữu trong tiểu đội du kích."
+      },
+      {
+        "Title": "Món ăn ghét...",
+        "Context": "Không giống anh trai, tôi hoàn toàn không chịu được mùi vị của rượu, chỉ cần uống một ngụm thôi là tôi sẽ say khướt, như vậy sẽ làm phiền mọi người mất. Đụng phải những loại rượu lâu năm thì chỉ cần mở bình ra thôi là chân tôi đứng không vững rồi."
+      },
+      {
+        "Title": "Nhận Được Quà I",
+        "Context": "Vô cùng cảm ơn, món ăn này thật quý báu, sao tôi nỡ ăn được chứ! Tôi có thể cất nó đi không?"
+      },
+      {
+        "Title": "Nhận Được Quà II",
+        "Context": "Hương vị không thể chê được, cảm ơn bạn đã làm cho tôi."
+      },
+      {
+        "Title": "Nhận Được Quà III",
+        "Context": "Ừm... Dù sao thì đây cũng là món ăn mà bạn đã làm cho tôi, tôi nhất định sẽ ăn hết."
+      },
+      {
+        "Title": "Sinh nhật...",
+        "Context": "Vào lúc này phải nói thế nào nhỉ... Ừm, hôm nay là một ngày rất đặc biệt! Phải dùng cách thức long trọng và nhiệt liệt nhất để chúc mừng! Tôi đã chuẩn bị cho bạn một quyển \"Sổ Tay Cảnh Đẹp Mondstadt\", trong đó có ghi chép lại những nơi có phong cảnh đẹp nhưng ít người biết. Hy vọng từ hôm nay đến ngày này năm sau, bạn đều sẽ vui vẻ mỗi ngày!"
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Khởi",
+        "Context": "Tuy vẫn còn thua xa bạn, nhưng hiện giờ tôi đã tự tin hơn chút rồi, ít ra sẽ không trở thành gánh nặng của bạn."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Thừa",
+        "Context": "Hy vọng tôi sẽ mang đến cho bạn nhiều tin tình báo có ích hơn, chia sẻ gánh nặng cùng bạn một cách thực tế!"
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Chuyển",
+        "Context": "Hãy cho phép tôi... luôn đồng hành cùng bạn, cùng nhau đo đạc vùng đất này nhé!"
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Hợp",
+        "Context": "Tôi thật sự rất biết ơn! Lần này tôi lại cách mục tiêu gần hơn nữa rồi. Như vậy mọi người sẽ có thể yên tâm lên đường, không ngại địa hình hiểm trở hay nơi nguy hiểm nữa rồi!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố I",
+        "Context": "Hỏa lực yểm trợ."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố II",
+        "Context": "Tấn công thăm dò."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố III",
+        "Context": "Hãy lui về sau."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố IV",
+        "Context": "Nhắm bắn chuẩn xác!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố V",
+        "Context": "Xin lỗi nhé!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố VI",
+        "Context": "Vô hiệu hóa nguy hiểm!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ I",
+        "Context": "Mọi người, hãy cố lên!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ II",
+        "Context": "Tôi phụ trách chữa trị!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ III",
+        "Context": "Mở đường đột phá!"
+      },
+      {
+        "Title": "Mở Phong Chi Dực I",
+        "Context": "Quan sát từ trên cao..."
+      },
+      {
+        "Title": "Mở Rương I",
+        "Context": "Là thu hoạch mới!"
+      },
+      {
+        "Title": "Mở Rương II",
+        "Context": "Có chiến lợi phẩm chứ?"
+      },
+      {
+        "Title": "Mở Rương III",
+        "Context": "Tìm được kho báu rồi, chúc mừng mọi người!"
+      },
+      {
+        "Title": "HP Thấp I",
+        "Context": "Có chút phiền phức..."
+      },
+      {
+        "Title": "HP Thấp II",
+        "Context": "Muốn thay đổi chiến thuật không?"
+      },
+      {
+        "Title": "HP Thấp III",
+        "Context": "Đối thủ... mạnh quá."
+      },
+      {
+        "Title": "HP Đồng Hành Thấp I",
+        "Context": "Hãy lui về sau, giao cho tôi!"
+      },
+      {
+        "Title": "HP Đồng Hành Thấp II",
+        "Context": "Hãy mau chóng chữa trị..."
+      },
+      {
+        "Title": "Ngã Xuống I",
+        "Context": "Sớm biết... thì đã rút lui rồi..."
+      },
+      {
+        "Title": "Ngã Xuống II",
+        "Context": "Xin lỗi mọi người..."
+      },
+      {
+        "Title": "Ngã Xuống III",
+        "Context": "Tiêu rồi... Mình làm hỏng việc rồi..."
+      },
+      {
+        "Title": "Chịu Đòn Thường I",
+        "Context": "Cố nhịn lấy!"
+      },
+      {
+        "Title": "Chịu Đòn Thường II",
+        "Context": "Không sao đâu!"
+      },
+      {
+        "Title": "Bị Trọng Kích I",
+        "Context": "Không đau... không đau!"
+      },
+      {
+        "Title": "Bị Trọng Kích II",
+        "Context": "Không được hoang mang..."
+      },
+      {
+        "Title": "Vào Đội I",
+        "Context": "Kiểm tra trang bị... mọi thứ sẵn sàng."
+      },
+      {
+        "Title": "Vào Đội II",
+        "Context": "Ừm, thương và nỏ đều đã chuẩn bị xong."
+      },
+      {
+        "Title": "Vào Đội III",
+        "Context": "Để tôi dò đường cho mọi người!"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Miêu Tả Nhân Vật",
+        "Context": "Mỗi lần đến tổng bộ Đội Kỵ Sĩ, Mika đều nhanh chóng giải quyết công việc với đồng liêu rồi lặng lẽ rời khỏi. Cậu không muốn ảnh hưởng nhịp độ làm việc của bất kỳ ai.\nMỗi lần có người bắt chuyện, cậu đều rất dễ trở nên căng thẳng quá mức. Khi kết thúc cuộc trò chuyện một cách lịch sự, cậu đều sẽ lập tức rời khỏi.\nMọi người biết người trẻ tuổi này tên Mika, là em trai của đồng liêu Huffman, con thứ của nhà Schmidt, hiện đang thuộc tiểu đội du kích.\nNhưng họ không biết công việc của Mika là gì, cũng không rõ bản đồ quân dụng phiên bản mới đang được phổ biến trong đội chính là thành quả làm việc của Mika.\nBản đồ mới hội tụ phần lớn dữ liệu địa hình của khu vực xung quanh Mondstadt, còn kèm theo nhiều chú thích hữu dụng.\nBao gồm toàn bộ tình hình đường đi, khu vực có khả năng có ma vật tụ tập và vị trí cao có thể dùng để trấn thủ, loại tài nguyên thiên nhiên và tình hình khai thác... Chi tiết đến nỗi khiến người ta hoa mắt.\nTất cả đều là thành quả hai năm đích thân đi thăm dò khắp Mondstadt của Mika.\nMột số kỵ sĩ từng kề vai tác chiến với Mika biết phong cách chiến đấu của cậu, Mika quen dùng giáo dài và nỏ, phương thức chiến đấu kiểu này gây ấn tượng sâu sắc cho họ.\nNhưng họ đều từng nhận được thỉnh cầu trịnh trọng của Mika, cố gắng đừng nhắc chuyện của Mika với người khác.\n\"Mika rất sợ bị chú ý, đừng nói là được khen, chỉ bị người khác nhìn thôi cũng sẽ trở nên vô cùng căng thẳng, những tiền bối từng được cậu ấy giúp như chúng tôi tất nhiên phải quan tâm đến cảm xúc của cậu ấy rồi!\""
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 1",
+        "Context": "Mika xuất thân từ một gia đình hòa thuận và hạnh phúc: Mẹ là một nhà văn ở Mondstadt, cha là Kỵ Sĩ Tây Phong đã nghỉ hưu, anh trai Huffman đang làm việc cho Đội Kỵ Sĩ.\nKhi Mika mới biết chữ, cha cậu đang cùng mẹ đi du lịch bên ngoài để chuẩn bị tư liệu cho sách mới. Trong thời gian này, trách nhiệm chăm sóc Mika trút hết lên vai anh trai Huffman.\nTuy nhiên, anh trai và các anh em trong đội kỵ sĩ suốt ngày tụ tập, ban ngày nghiêm túc làm việc, tối đến cùng nhau uống rượu, cuộc sống của bản thân anh ấy hoàn toàn không có quy luật, chứ đừng nói đến chuyện chăm sóc em trai.\nNgược lại, Mika đã sớm hình thành thói quen tốt, ban ngày tự chăm sóc bản thân, tối đến chăm sóc cho anh trai. Khi hầu hết bọn trẻ đang còn chơi đùa vô tư, thì Mika đã có thể tự chăm sóc cho cuộc sống cá nhân của mình một cách có trật tự, lại còn thường lo cơm ăn áo mặc, ăn ở đi lại cho Huffman nữa.\nCha mẹ mỗi tuần sẽ nhờ người mang thư về Mondstadt để báo cho hai đứa trẻ rằng họ vẫn bình an. Chữ viết của mẹ thật đẹp, và ngôn ngữ mẹ miêu tả cảnh vật trên đường đi sinh động như một câu chuyện cổ tích. Mika thích xem thư và dò trên bản đồ, xác định vị trí của cha mẹ, sau đó dùng bút vẽ lại lộ trình của cha mẹ. Tưởng tượng về những trải nghiệm tuyệt vời của cha mẹ trên đường đi là điều hạnh phúc nhất của cậu.\nBất giác, Mika đã yêu thích việc lật giở các bản đồ, và cậu đã thuộc lòng địa hình của nhiều nơi.\nRất tiếc, Huffman lại mang đến một tin không vui: \"Bản đồ Mondstadt do cha mẹ để lại đã quá cũ, mà bản vẽ ban đầu cũng không được chính xác, uổng công em ghi nhớ rồi.\"\nCũng không còn cách nào khác. Những người có khả năng hoạt động ở nơi hoang dã hầu như đều trở thành những nhà mạo hiểm, suốt ngày chỉ nghĩ đến ủy thác và Mora. Bản đồ? Có để dùng là được.\nMà đa phần những người có khả năng đo vẽ bản đồ đều không giỏi chiến đấu, trực tiếp đến nơi hoang dã đo đạc và vẽ lại sẽ quá nguy hiểm với họ, thu nhập có giới hạn cũng không cho phép họ thuê vệ sĩ.\nCó lẽ khi đội kỵ sĩ dư dả ngân sách, họ mới tìm chuyên gia để giải quyết vấn đề này. Nhưng hiện giờ Mondstadt đang yên ổn, không biết đến khi nào chuyện này mới được nhắc đến.\nMika rơi vào trầm tư: Đi khắp mọi ngóc ngách của bản đồ giống như cha mẹ, ghi chép lại từng chi tiết về mặt đất dưới chân... Trên đời có lẽ không còn việc gì ý nghĩa hơn việc này.\nThế là, Mika nhỏ bé đã có mục tiêu rõ ràng cho cuộc đời:\n\"Mình sẽ trở thành một chuyên gia đo vẽ bản đồ.\""
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 2",
+        "Context": "Sau khi cha mẹ trở về Mondstadt, Mika đã bày tỏ với họ về lý tưởng sống của mình, họ rất vui mừng và hứa sẽ hỗ trợ Mika hết mình.\nTừ hôm đó, Mika dành phần lớn thời gian trong thư viện, tự học kiến thức về địa lý Teyvat, và siêng năng rèn luyện kỹ năng vẽ của mình.\nLisa có ấn tượng rất tốt về cậu nhóc lễ phép, tài năng và chịu khó này, cô thường giúp Mika tìm những cuốn sách liên quan và hướng dẫn cậu tránh nhiều đường vòng.\nSau một thời gian dài học tập, trình độ của Mika đã được Lisa khẳng định - \"Nếu Mika tham gia cuộc tuyển chọn của Giáo Viện với trình độ hiện tại, nói không chừng sẽ vào được thật đấy.\"\nKể từ đó, Mika bắt đầu tìm kiếm cơ hội ra ngoài khám phá. Tình cờ là Ella Musk, một người quen trong thư viện cần một người hướng dẫn đưa cô đến một nơi hẻo lánh ở ngoại ô để giao tiếp với Hilichurl.\nĐây trở thành công việc đầu tiên của Mika. Kết quả là, mặc dù họ đã đến nơi một cách suôn sẻ, nhưng vì giao tiếp gặp vấn đề nên họ đã bị Hilichurl đánh cho một trận tơi bời...\nMika cho rằng thất bại này là do cậu ấy không giỏi võ: \"Nếu mình không biết cách tự bảo vệ bản thân, vậy thì sẽ không thể khảo sát những khu vực xa lạ.\"\nSau chuyện đó, Mika lại lần nữa dùng quyết tâm giống như khi học hỏi kiến thức địa lý để theo anh trai luyện tập các kỹ năng chiến đấu. Có lẽ nhờ thể chất cũng không tệ, nên Mika rất nhanh đã học được tương đối.\nĐúng lúc này, kế hoạch viễn chinh ba năm sau của đội kỵ sĩ đã bước đầu được xác định. Họ cần tuyển thêm cho đủ người, và trong số đó có vị trí \"nhân viên đo vẽ bản đồ\".\nYêu cầu của \"nhân viên đo vẽ bản đồ\" khá nghiêm ngặt: ứng viên cần có kỹ năng khảo sát bản đồ nhất định, và vì môi trường nguy hiểm nên ứng viên cũng sẽ đóng vai trò là tiên phong của đội trong một thời gian dài, vì vậy họ phải biết cách chiến đấu với ma vật nguy hiểm.\nCơ hội của Mika đã đến, và nó tuyệt vời hơn cả mong đợi, tuyệt vời đến mức khiến cậu lo sợ...\nVốn dĩ nghĩ rằng mình sẽ tham gia vào đội với tư cách là cố vấn để phát huy thế mạnh của mình, không ngờ đội kỵ sĩ lại cần một thành viên biên chế, lại còn là một tinh anh ở vị trí mũi nhọn. Cậu từng do dự và rụt rè, sợ mình không xứng với trọng trách \"chỉ người mạnh mới gánh vác được\" này.\nMay mắn là suy nghĩ này rất nhanh đã bị dẹp bỏ bởi sự động viên của cha và anh trai, Mika luôn ghi nhớ những lời họ nói:\n\"Đừng đặt yêu cầu quá cao cho bản thân, chỉ cần cống hiến hết mình cho tập thể là đã xem như tận tâm rồi.\"\n\"Hầu hết Kỵ Sĩ Tây Phong đều là người bình thường như chúng ta. Những kỵ sĩ bình thường dựa vào tinh thần đồng đội xuất sắc để hoàn thành nhiệm vụ, không hề thua kém những kẻ mạnh đơn độc.\"\nCứ như vậy, cậu nắm bắt cơ hội, đăng ký tham gia vào Đội Kỵ Sĩ Tây Phong.\nNghĩ đến công việc trong tương lai là việc mình yêu thích, Mika không còn lo sợ nữa."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 3",
+        "Context": "Tin tức việc Mika đăng ký tham gia tuyển chọn đã nhanh chóng lan truyền khắp Đội Kỵ Sĩ Tây Phong.\n\"Em trai của Huffman cũng sắp tham gia Đội Kỵ Sĩ rồi! Mika chuyên chăm sóc những con sâu rượu sắp vào đội rồi!\"\nMika ngây thơ không bao giờ tưởng tượng rằng mình sẽ là trung tâm của sự chú ý. Cậu lo lắng đến mức bị thở gấp và rối loạn nhịp tim, cậu sợ rằng nếu mình cư xử không tốt thì cha sẽ bị mất mặt, anh trai sẽ bị chỉ trích, và hơn nữa là danh tiếng của nhà Schmidt sẽ bị tổn hại.\nVì nhà Schmidt đã có nhiều người gia nhập vào đội, để chứng minh cho sự công bằng trong việc tuyển chọn, Đội Kỵ Sĩ quyết định tăng độ khó khảo hạch, và sẽ công khai quá trình khảo hạch với người dân.\nCân nhắc tình hình thực tế của cả hành trình dài, giám khảo Kaeya đã ra một loạt đề thi gắt gao:\nMặc nguyên bộ giáp nặng vượt qua lưng chừng núi Long Tích Tuyết Sơn với điều kiện tiếp tế có hạn trong thời gian quy định;\nKhông có bất kỳ thông tin tham khảo nào, chống lại sự quấy rối của ma vật và vẽ lại bản đồ của một khu vực cụ thể...\nMay mắn là Mika đã chuẩn bị đầy đủ, cậu ấy đã cố gắng hết sức để vượt qua ải khó nhất và trở thành một trong ba người vượt qua bài khảo hạch.\nTrên đường đi, hai thí sinh còn lại đều ít nhiều được Mika giúp đỡ. Đối với Mika, họ không phải là đối thủ, mà là đồng nghiệp trong tương lai.\nĐại đội trưởng Varka đánh giá rất cao về tinh thần đồng đội của lính mới này. Ông ấy quyết định cho hai người kia vào đội kỵ binh và đội điều tra, còn Mika sẽ cùng ông đi viễn chinh.\nNgoài ra, hàng tuần Varka còn dành thời gian để dạy Mika các kỹ năng chiến đấu và giao nhiều \"bài tập về nhà\" khác nhau cho Mika.\nSau này, Mika được kết nạp vào đội du kích. Kết thân với vị đội trưởng có cá tính đặc biệt đó cũng là một cách để rèn luyện kỹ năng giao tiếp trong đội của Mika, điều này có thể giúp Mika sớm thích ứng với đội viễn chinh ưu tú.\nCứ như vậy, sau khi gia nhập Đội Kỵ Sĩ, Mika vừa làm nhiệm vụ trong đội du kích, khảo sát đo vẽ ở những khu vực nguy hiểm, vừa tiếp thu lời khuyên của Varka để không ngừng cải thiện năng lực khác ngoài việc khảo sát và vẽ bản đồ.\nTân binh trung thực và trẻ tuổi Mika dần trưởng thành và trở nên điềm tĩnh, đáng tin cậy, chỉ là cậu vẫn chưa nhận ra điều đó mà thôi."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 4",
+        "Context": "Nhờ được rèn luyện thời gian dài trong thực chiến mà Mika đã trở thành thành viên nòng cốt của đội du kích trong vòng chưa đầy hai năm, hoàn thành vô số nhiệm vụ.\nNgày đã định trong kế hoạch cũng sắp đến, đội viễn chinh sắp sửa xuất phát.\nTrong bữa tiệc đưa tiễn, đại đội trưởng Varka rõ ràng đã rất ngạc nhiên trước \"Vision\" trên tay phải của Mika, nhưng sau khi so tài vài chiêu với Mika, ông ấy đã đưa ra đánh giá là: \"Rất tuyệt, nhưng vẫn chưa đủ\".\nLúc đó, Mika vẫn chưa hiểu lời của đại đội trưởng. Mãi cho đến khi đội viễn chinh chính thức xuất phát và đi sâu vào khu vực cấm đầy nguy hiểm, Mika mới dần hiểu rốt cuộc đại đội trưởng đã lấy những loại ma vật thế nào để làm đối tượng tham khảo.\nNhững \"thứ\" lang thang không thể tả đó là cơn ác mộng của bất kỳ kỵ sĩ nào đang ở một mình.\nTiến độ dò đường của các tiên phong sẽ quyết định cho tốc độ của đội viễn chinh. Trong những ngày làm việc căng thẳng nhất, Mika chỉ được nghỉ nửa tiếng mỗi ngày.\nÁp lực cao chưa từng thấy khiến Mika cảm thấy kiệt sức, chưa kể bên cạnh luôn tồn tại mối nguy hiểm chưa biết trước, còn có một thế lực khác đang lăm le dòm ngó...\nVào một đêm khuya mệt mỏi, Mika đang chuẩn bị nghỉ ngơi thì đột nhiên nhận được cảnh báo từ đội tiên phong khác: Đội Kỵ Sĩ gặp phải kẻ địch.\nKhi Mika vội vã đến hiện trường thì Varka cùng với những trợ thủ đắc lực đã bố trí xong trận hình chiến đấu.\nTrong bóng đêm sâu thẳm, mơ hồ có thể nhìn thấy một bức tường người gồm những binh lính cao lớn, lặng lẽ đứng đó, giống như những cỗ máy chiến đấu vô hồn.\nVà ở trung tâm trận tuyến của đối thủ, có thể nhìn thấy một bóng đen sắc bén. Khuôn mặt của đối phương dường như không thể được chiếu sáng bởi ngọn lửa, chỉ có đôi mắt màu lam nhạt chứa đầy bóng tối khiến người ta phải khiếp sợ.\nSau khi được đồng liêu nhắc nhở, Mika mới biết được danh tính của đối phương - Quan Chấp Hành Fatui \"Capitano\" và những binh lính hàng đầu dưới quyền hắn ta.\nTiên phong của Đội Kỵ Sĩ Tây Phong chạm trán với tiền đồn của Fatui, xảy ra xung đột, cả hai bên đều quá nhạy cảm, không ngừng xin viện binh, cuối cùng đã kinh động đến trưởng quan cấp cao nhất của hai bên.\nMùi khói thuốc súng trong không khí quá nồng, cảm giác nguy cơ nhanh chóng xâm chiếm tâm trí Mika, khiến tứ chi tê dại, tay chân lạnh cóng.\nMika cứ tưởng tượng mình sẽ làm gì nếu cuộc đối đầu biến thành xung đột...\nNhất là vị quan chấp hành kia, Mika chỉ cảm thấy rằng cậu không thể đỡ nổi bất cứ đòn nào của đối thủ.\nNhững suy nghĩ lộn xộn và sự mệt mỏi nặng nề khiến Mika thở gấp, khó tập trung.\nVarka thì lại tỏ vẻ rất ung dung, chào đối phương từ xa và một mình cầm vũ khí trên tay tiến về phía \"Capitano\". \"Capitano\" cũng ra hiệu cho thuộc hạ chờ lệnh, rồi chậm rãi bước về phía trước.\nTrong tình thế căng thẳng giữa đôi bên lên đến cực độ, Varka đã có cuộc trao đổi ngắn với \"Capitano\".\nSau đó, hình bóng đen tối khẽ giơ tay lên, và đội tiên phong của Fatui đã theo sau hắn ta rời đi, giống như bóng ma biến mất không một tiếng động.\nCác Kỵ Sĩ Tây Phong có mặt ở đó đều thở phào nhẹ nhõm, thậm chí có người còn không khỏi run rẩy. Nhưng sau khi Varka trở lại trước mặt đội kỵ sĩ, ông vẫn rất thoải mái:\n\"Đúng là một cuộc hội ngộ thú vị! Nếu không phải do tình huống đặc biệt thì ta còn muốn tìm cơ hội so tài với hắn ta đấy!\"\n\"Hắn ta không phải một người cố chấp, hắn ta cũng hiểu rằng giao chiến ở một nơi xa lạ đối với cả hai bên đều không có lợi...\"\nLúc đó Mika mới nhận ra rằng mình vừa giẫm phải ngòi nổ của cuộc chiến, may mắn là ngòi nổ chưa bị đốt cháy.\nCảm giác áp đảo mạnh mẽ của \"Capitano\" và sự bình tĩnh xử lý nguy cơ của đại đội trưởng... đều để lại ấn tượng sâu sắc trong tâm trí Mika.\nMika ngẫm nghĩ hồi lâu: Thực lực của bản thân tuy rằng đã tiến bộ nhanh chóng, nhưng còn kém quá xa, đối mặt với tình huống như vậy không thể bình tĩnh ứng phó.\nKhông thể chỉ hài lòng với việc cống hiến hết mình cho đội, mà phải làm việc chăm chỉ hơn, trở nên đáng tin cậy hơn, và xử lý mọi sự cố đúng cách hơn..."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 5",
+        "Context": "May mà trong hành trình viễn chinh sau đó, Mika không gặp phải những chuyện quá nguy hiểm nữa, và cũng đã thuận lợi vượt qua giai đoạn khó khăn nhất.\nTrong thời gian lễ hội Mùa Gió Rượu Giao Hòa của Mondstadt, Mika mang theo thư của Đại Đội Trưởng quay lại Mondstadt, trở về đội du kích.\nNhững đồng đội trong đội du kích rất vui mừng và ngạc nhiên: Thực lực của Mika đã tăng vọt, nhiệm vụ vốn phải do ba tiên phong hàng đầu mới có thể hoàn thành, giờ đây một mình Mika là đã dễ dàng thực hiện.\nNghĩ đến việc trong thư Đại Đội Trưởng có đại khái nhắc đến Fatui, Mika lại là cốt cán trực thuộc Đại Đội Trưởng... Theo đà thảo luận không ngừng của các đồng liêu, thì một chuỗi logic kỳ lạ đã ra đời...\n\"Mika và Fatui đã từng giao đấu! Mika đã từng giao đấu với quân tinh nhuệ của Fatui! Có thể Mika đã cùng Đại Đội Trưởng đối phó với quan chấp hành Fatui!\"\n\"Nếu không, sao Mika có thể trở nên mạnh như vậy chứ! Bây giờ Mika cũng là đại anh hùng của chúng ta, có việc gì cũng có thể nhờ Mika!\"\nTrên thực tế, Mika chỉ là được rèn luyện đầy đủ trên đường viễn chinh, những Kỵ Sĩ Tây Phong khác cũng có tiến bộ ở nhiều mức độ khác nhau, chẳng qua là họ chưa trở về nên chưa thể so sánh thôi.\nMika không biết phải giải thích thế nào về những tin đồn thất thiệt này, nên đã nhờ Jean và Kaeya cho lời khuyên.\nJean thận trọng nói với người phụ trách của mỗi đội, hy vọng mọi người sẽ giữ lý trí và không lan truyền những tin tức thiếu bằng chứng. Hơn nữa, nhiều vấn đề trong cuộc viễn chinh được coi là bí mật quân sự và cần phải được xử lý cẩn thận.\nKaeya thì lại không nghĩ như vậy, và vẫn nói đùa rằng, các Kỵ Sĩ Tây Phong ít nhiều cũng phàn nàn về Fatui, và những tin đồn như \"Mika đã đánh bại Fatui\" hình như có thể khích lệ tinh thần của mọi người.\nTóm lại, nếu Đội Trưởng Đại Diện đã biết tình hình, cũng không gây thêm rắc rối cho ai... Mika cũng không hoang mang nữa.\nNhư mọi khi, Mika vẫn cần mẫn làm nhiệm vụ, và khi gặp phải đồng liêu cần giúp đỡ thì Mika sẽ cố gắng hết sức để giúp đỡ.\nCó điều, lời đồn thổi quá cường điệu, quá nhiều người tin hình như cũng sẽ mang đến rắc rối...\nGần đây, ngày càng có nhiều đồng liêu mượn bản đồ mới của Mika, nhờ Mika giúp bảo dưỡng vũ khí, thậm chí là những đồng liêu ăn ké miếng cơm của đội du kích cũng ngày càng nhiều.\nNhững đồng liêu này hình như đều muốn có được \"ánh hào quang của người đo vẽ bản đồ\", để bản thân cũng có thể nhanh chóng mạnh lên như Mika."
+      },
+      {
+        "Title": "Thiết Bị Đo Vẽ Tổng Hợp",
+        "Context": "Thiết bị tinh xảo mà Mika mang theo bên mình có hình dạng như một cuốn sách dày.\nThiết bị này được Mika và các kỹ thuật viên của đội điều tra cùng phát triển, bộ phận quan trọng áp dụng thành tựu thuật giả kim mới nhất của Albedo...\nMột quyển sổ ghi chép được đặt trong thiết bị, có thể được sử dụng để ghi lại thông tin, mỗi trang đều có thể được tháo rời và thay thế nhanh chóng, giúp dễ dàng tạo bản đồ trực tiếp.\nMột hoa văn phức tạp được chạm khắc trên mặt sau của thiết bị, truyền sức mạnh nguyên tố vào hoa văn sẽ kích hoạt bộ phận hình thoi bên ngoài bảng điều khiển, từ đó sẽ bắn một luồng sóng về phía khu vực mục tiêu theo hình quạt.\nSau đó, khoảng cách giữa thiết bị và khu vực mục tiêu có thể được tính toán chính xác theo thời gian được thực hiện để chùm sóng dội lại; Bằng cách tăng cả tần số và biên độ của chùm sóng, thiết bị sẽ tạo ra một bản phác thảo về một khu vực địa hình nhỏ.\nTất cả các chức năng này giúp cải thiện đáng kể độ chính xác của bản đồ, nhưng đáng tiếc là mọi thứ khác, bao gồm cả thông tin thống kê và tính toán liên quan đến địa hình được đề cập thì phải được xử lý bằng đầu óc.\nChỉ những người có kỹ năng suy luận không gian xuất sắc và kiến thức sâu rộng về địa hình mục tiêu mới có khả năng tận dụng tối đa chức năng này.\nDo đó, Mika trở thành người duy nhất có thể sử dụng thiết bị mà không gặp khó khăn gì, mặc dù cậu ấy không sử dụng thiết bị này thường xuyên.\nThiết bị cải tiến ban đầu được lên kế hoạch cho các đội khác cuối cùng đã được giữ lại để cung cấp linh kiện cho thiết bị của Mika.\nThiết bị này được coi là trợ thủ đắc lực của Mika, và là biểu tượng vinh dự vì là người đo vẽ giỏi nhất, nhưng Mika chưa một lần giới thiệu những tính năng ấn tượng của nó với người khác.\nĐối với Mika, điều đó giống như khoe khoang, chưa kể đến khả năng nó có thể tạo thêm việc cho Albedo, gây thêm không ít rắc rối... cho nên tránh được vẫn hơn."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Mika đã từng trải qua một cuộc khủng hoảng sinh tử.\nĐó là sau khi gia nhập đội du kích không bao lâu, Mika nhận nhiệm vụ và hành động một mình như thường lệ, đi đến khu vực tình báo thất bại và vẽ lại chi tiết địa hình ở đó.\nMika rón rén đi vào khu phế tích, nhưng vô tình làm rơi một viên đá trên bức tường vỡ, làm hai Pháp Sư Vực Sâu trong bóng tối chú ý.\nNhững ngọn lửa cuồng nộ đan xen vào nhau, dòng chảy nguyên tố ngay lập tức nhấn chìm Mika, như thể cố gắng nghiền nát và nấu Mika thành món ngon cho ma vật.\nNỗi đau và sự hoảng sợ xâm chiếm các giác quan, chỉ còn một ý nghĩ duy nhất trong ý thức của Mika - phải thoát khỏi những kẻ địch này và cảnh báo cho những đồng đội phía sau.\n\"Ngay cả những tiền bối trong đội du kích... gặp phải tình huống này... cũng sẽ rơi vào nguy hiểm!\"\nTrách nhiệm của nhân viên đo vẽ bản đồ chính là giúp đồng đội tránh được những mối nguy hiểm này.\nHai Pháp Sư Vực Sâu vỗ tay, ngay khi chuẩn bị gọi những ma vật ẩn nấp khác cởi bỏ lớp ngụy trang, thì ngọn thương xoay tròn xé toạc bức màn lửa, sương băng tung tóe khắp bầu trời, áp chế nhiệt độ cao trong phế tích.\nKhi Pháp Sư Vực Sâu định thần lại thì Mika đã bỏ chạy thật xa, không quên lớn tiếng nói rằng:\n\"Xin lỗi nhé! Lần sau tôi sẽ gõ cửa trước, để các vị tiền bối quyết đấu đường đường chính chính với các vị!\"\n\"Lần sau\" mà Mika nói đã đến rất nhanh, và chủ lực của đội du kích đã nắm được thông tin, lần lượt bám theo rồi cẩn thận dọn sạch các ổ phục kích.\nCác đồng liêu ngạc nhiên khi thấy lá chắn nguyên tố của hai Pháp Sư Vực Sâu đã bị phá vỡ. Nhìn thấy Vision rực rỡ trên cánh tay phải của Mika, họ dường như đã hiểu ra điều gì đó...\nNgày hôm đó, bữa tối của đội du kích vô cùng thịnh soạn, mọi người cùng nâng cốc chúc mừng Mika, chỉ có mình Mika là vẫn còn bàng hoàng và hoang mang."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 208000,
+      "Name": "Tín Hiệu Bay Cao",
+      "Description": "Phong cách của Mika. Được thiết kế đặc biệt dành cho các hoạt động dã ngoại nên bộ trang phục kỵ sĩ này sử dụng nhiều loại vải co giãn, đồng thời thêm ngăn chứa vũ khí và công cụ. Chúc người mặc trang phục sẽ thuận buồm xuôi gió!",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104164,
+    113044,
+    100021,
+    112034,
+    104309,
+    113042
+  ],
+  "NameCard": {
+    "Name": "Mika - Dẫn Lối",
+    "Description": "Hoa văn danh thiếp.\nMỗi lần cầm tấm bản đồ trong tay, cậu luôn cảm thấy như mình đang nâng niu một phần bản khắc của thế giới.",
+    "Icon": "UI_NameCardIcon_Mika",
+    "PicturePrefix": "UI_NameCardPic_Mika"
+  }
+}

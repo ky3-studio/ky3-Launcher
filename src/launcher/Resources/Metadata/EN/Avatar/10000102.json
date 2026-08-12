@@ -261,6 +261,7 @@
         "Id": 30000,
         "Name": "Cooling Treatment",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 attacks that deal <color=#80C0FFFF>Hydro DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to smack a Pufferball into the air that deals <color=#80C0FFFF>AoE Hydro DMG</color> upon landing.\n\n<color=#FFD780FF>Plunging Attack</color>\nGathers the power of Hydro and plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#80C0FFFF>AoE Hydro DMG</color> upon impact with the ground.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_Catalyst_MD"
       },
       {
@@ -461,6 +462,7 @@
         "Id": 30002,
         "Name": "Surfshark Wavebreaker",
         "Description": "Combining her mastery of speed and the waves and water, Mualani can surf anytime, anywhere.\nAfter using this skill, Mualani will gain 60 Nightsoul points and enter the Nightsoul's Blessing state.\n\n<color=#FFD780FF>Nightsoul's Blessing: Mualani</color>\nContinuously consume Nightsoul points. When they are depleted or when the skill is used again, Mualani's Nightsoul's Blessing will end. The state itself has the following traits:\n·Mualani mounts her Sharky Surfboard, increasing Mualani's Movement SPD and interruption resistance. Mualani can move on water and liquid Phlogiston while this state is active, and she will take no DMG from the latter.\n·Normal Attacks will be converted to Sharky's Bites, dealing Nightsoul-aligned <color=#80C0FFFF>Hydro DMG</color> based on Mualani's Max HP. Sharky's Bites can be used in mid-air. DMG dealt this way is considered Normal Attack DMG.\n·When she makes contact with opponents in this state, Mualani applies \"Marked as Prey\" to them and gains 1 Wave Momentum stack. Max 3 stacks. 1 stack can be gained from the same opponent every 0.7s.\n\n<color=#FFD780FF>Wave Momentum and Marked as Prey</color>\nWhen Mualani uses Sharky's Bite, her DMG dealt increases based on Wave Momentum stacks. When she has 3 stacks, Sharky's Bite will be converted to Sharky's Surging Bite, further increasing her DMG and removing all her stacks when hitting an opponent.\nWhen Sharky's Bite hits an opponent Marked as Prey, that mark will be removed, and she will fire Shark Missiles at up to 5 nearby opponents Marked as Prey, dealing DMG to them equal to this Sharky's Bite instance and clearing their Marks. If more than 1 opponent is the target of Sharky's Bite and Shark Missiles, the DMG dealt will decrease, decreasing at most to 72% of the original DMG when 3 opponents are targeted.\n\n<i>First off, Sharky is a freshwater shark on top of being a surfboard. Second, it's not that it wants to eat for real, just that it definitely bites for real.</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Mualani_01"
       }
     ],
@@ -614,6 +616,7 @@
       "Id": 30007,
       "Name": "Boomsharka-laka",
       "Description": "Fires a Super Shark Missile that can track opponents, dealing Nightsoul-aligned <color=#80C0FFFF>AoE Hydro DMG</color> based on Mualani's Max HP.\n\n<i>Mualani picked this moniker for launching her Shark Missile because it combines the warmth of explosive passion with a more chill, laid-back vibe — most hot spring-ish.</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Mualani_01"
     },
     "Inherents": [
@@ -635,6 +638,7 @@
         "Id": 1022101,
         "Name": "Heat-Resistant Freshwater Floater",
         "Description": "When Sharky's Surging Bite hits an opponent, a Puffer will be generated nearby. Mualani will restore 20 Nightsoul points when she picks up a Puffer. Only 2 such Puffers can be created in this way during a single instance of being in Nightsoul's Blessing.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Mualani_05"
       },
       {
@@ -658,6 +662,7 @@
         "Id": 1022201,
         "Name": "Natlan's Greatest Guide",
         "Description": "After a nearby party member triggers a Nightsoul Burst, Mualani will gain 1 stack of Wavechaser's Exploits, which lasts for 20s. Max 3 stacks. When she uses <color=#FFD780FF>Boomsharka-laka</color>, Mualani will clear all Wavechaser's Exploits stacks and increase the DMG of this Boomsharka-laka by 15%/30%/45% of her Max HP based on the number of stacks cleared.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Mualani_06"
       },
       {
@@ -679,6 +684,7 @@
         "Id": 1022301,
         "Name": "Night Realm's Gift: Crests and Troughs",
         "Description": "After her Nightsoul points are depleted, Mualani will switch to consuming Phlogiston to maintain her Nightsoul's Blessing.\nWhile in an area with Phlogiston Mechanics within Natlan, she can use Nightsoul Transmission: Mualani. When the active character is currently sprinting, swimming, in a movement mode caused by certain Talents, or at a certain height in the air, the following will trigger when switching to Mualani: Mualani will enter the Nightsoul's Blessing state and gain 40 Nightsoul points. Nightsoul Transmission can be triggered once every 10s by your own team.\n\nAdditionally, Mualani's Nightsoul point or Phlogiston consumption while moving on water and Liquid Phlogiston during Nightsoul's Blessing is decreased by 75% while in Natlan, and her Nightsoul point consumption is decreased by 35% while doing the same outside Natlan.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Mualani_07"
       },
       {
@@ -699,6 +705,7 @@
         "Id": 1022501,
         "Name": "The Trick Is to Keep Smiling!",
         "Description": "While in an area with Phlogiston Mechanics within Natlan, 15 Phlogiston will be restored when interacting with some harvestable items. Additionally, the location of nearby <color=#FFD780FF>resources unique to Natlan</color> will appear on your mini-map.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Kachina_08"
       }
     ],

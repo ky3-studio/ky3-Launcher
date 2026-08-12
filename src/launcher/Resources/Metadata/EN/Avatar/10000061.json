@@ -322,6 +322,7 @@
         "Id": 10611,
         "Name": "Boxcutter",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 rapid strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to unleash 3 rapid claw strikes.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_01"
       },
       {
@@ -599,6 +600,7 @@
         "Id": 10612,
         "Name": "Meow-teor Kick",
         "Description": "#<color=#FFD780FF>{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}</color>\nLeaps into the air with all the agility of a cat passing through the bushes, and thwacks her foes with a flying kick that deals <color=#99FF88FF>AoE Dendro DMG</color> while creating a Shield of Safe Transport. This will also briefly <color=#99FF88FF>apply Dendro</color> to Kirara. The shield will absorb <color=#99FF88FF>Dendro DMG</color> with 250% effectiveness. The shield's DMG absorption will be based on Kirara's Max HP and will not exceed a certain percentage of that Max HP. The remaining DMG absorption on a Shield of Safe Transport will stack on a new one when it is created, and its duration will reset.\n\n<color=#FFD780FF>Hold</color>\nOut of her desire to \"deliver within half a day,\" Kirara deploys a Shield of Safe Transport identical to the one that can be created by {LAYOUT_MOBILE#tapping}{LAYOUT_PC#pressing}{LAYOUT_PS#pressing} the skill. She will also curl up into a special express delivery box, entering the Urgent Neko Parcel state in order to move and fight more swiftly.\n\n<color=#FFD780FF>Urgent Neko Parcel</color>\n· Deals <color=#99FF88FF>Dendro DMG</color> to opponents she crashes into. This effect can be triggered once on each opponent every 0.5s.\n· When in this state, Kirara's movement speed, climbing speed, and jumping power are all increased, and her Stamina Consumption from climbing is increased.\n· When the duration ends or the skill is used again, a Flipclaw Strike more powerful than the attack in the {LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press} Mode will be unleashed, dealing <color=#99FF88FF>AoE Dendro DMG</color>.\n· The Urgent Neko Parcel state lasts a maximum of 10s. When the state ends, the skill will enter CD. The longer Kirara spends in this state, the longer the CD will be.\n· Sprinting or actively canceling climbing will end this state early.\n\n<i>\"So you wanna know the secret to speedy deliveries? Well, it's all in the legs!\"</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Momoka_01"
       }
     ],
@@ -784,6 +786,7 @@
       "Id": 10615,
       "Name": "Secret Art: Surprise Dispatch",
       "Description": "Smash opponents with a Special Delivery Package used for punishing parcel thieves, dealing <color=#99FF88FF>AoE Dendro DMG</color>. After the Special Delivery Package explodes, it will split up into many <color=#FFD780FF>Cat Grass Cardamoms</color> that will explode either upon contact with opponents or after a period of time, dealing <color=#99FF88FF>AoE Dendro DMG</color>.\n\n<i>\"Hehe, that's right, this stuff was made to deal with those parcel thieves! Remember to leave a 5-star rating once you've received yours!\"</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Momoka_01"
     },
     "Inherents": [
@@ -807,6 +810,7 @@
         "Id": 612101,
         "Name": "Bewitching, Betwitching Tails",
         "Description": "When Kirara is in the Urgent Neko Parcel state of <color=#FFD780FF>Meow-teor Kick</color>, each impact against an opponent will grant her a stack of <color=#FFD780FF>Reinforced Packaging</color>. This effect can be triggered once for each opponent hit every 0.5s. Max 3 stacks. When the Urgent Neko Parcel state ends, each stack of Reinforced Packaging will create 1 Shield of Safe Transport for Kirara. The shields that are created this way will have 20% of the DMG absorption that the Shield of Safe Transport produced by <color=#FFD780FF>Meow-teor Kick</color> would have. If Kirara is already protected by a Shield of Safe Transport created by Meow-teor Kick, its DMG absorption will stack with these shields and its duration will reset.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Momoka_05"
       },
       {
@@ -828,6 +832,7 @@
         "Id": 612201,
         "Name": "Pupillary Variance",
         "Description": "Every 1,000 Max HP Kirara possesses will increase the DMG dealt by <color=#FFD780FF>Meow-teor Kick</color> by 0.4%, and the DMG dealt by <color=#FFD780FF>Secret Art: Surprise Dispatch</color> by 0.3%.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Momoka_06"
       },
       {
@@ -846,6 +851,7 @@
         "Id": 612301,
         "Name": "Cat's Creeping Carriage",
         "Description": "When Kirara is in the party, animals who produce Fowl, Raw Meat, or Chilled Meat will not be startled when party members approach them.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Aloy_07"
       }
     ],

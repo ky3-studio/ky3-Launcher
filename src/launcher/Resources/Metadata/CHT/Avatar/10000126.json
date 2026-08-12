@@ -307,6 +307,7 @@
         "Id": 11261,
         "Name": "金鋏點桂",
         "Description": "<color=#FFD780FF>普通攻擊</color>\n進行至多四段的連續劍擊。\n\n<color=#FFD780FF>重擊</color>\n消耗一定體力，瞬間向前方揮出兩劍。\n\n<color=#FFD780FF>下落攻擊</color>\n從空中下墜衝擊地面，攻擊下落路徑上的敵人，並在落地時造成範圍傷害。",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_01"
       },
       {
@@ -601,6 +602,7 @@
         "Id": 11262,
         "Name": "天地忽然身",
         "Description": "喚起舊日權能的片影，切換至{LINK#N11260001}<color=#FFD780FF>「月轉時隙」</color>{/LINK}模式。\n在該模式下，茲白進行普通攻擊與重擊時，將轉為造成無法被附魔覆蓋的<color=#FFE699FF>岩元素傷害</color>，並可以透過不同的方式，累積特殊的<color=#FFD780FF>「時隙浮光」</color>。茲白可以消耗「時隙浮光」，施放特殊的元素戰技<color=#FFD780FF>靈駒飛踏</color>。\n\n<color=#FFD780FF>月兆·滿輝</color>\n處於<color=#FFD780FF>「月轉時隙」</color>模式下時，茲白進行普通攻擊時，第四段攻擊將額外造成一次<color=#FFE699FF>岩元素傷害</color>，該傷害視為月結晶反應傷害。",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Zibai_01"
       }
     ],
@@ -770,6 +772,7 @@
       "Id": 11265,
       "Name": "三垣威儀法",
       "Description": "茲白轉起青玄乘陽華蓋，造成兩次<color=#FFE699FF>岩元素傷害</color>，其中的第二段傷害視為月結晶反應傷害。\n施放時，若茲白處於{LINK#N11260001}<color=#FFD780FF>「月轉時隙」</color>{/LINK}模式下，則本次「月轉時隙」模式的持續時間還會延長1.7秒。",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Zibai_01"
     },
     "Inherents": [
@@ -792,6 +795,7 @@
         "Id": 1262101,
         "Name": "月下素娥降仙",
         "Description": "施放元素戰技<color=#FFD780FF>{LINK#S11262}天地忽然身{/LINK}</color>時，或隊伍中附近的角色觸發月籠諧奏時，茲白將獲得持續4秒的<color=#FFD780FF>「太陰降」</color>效果：{LINK#N11260001}<color=#FFD780FF>靈駒飛踏</color>{/LINK}第二段攻擊造成的傷害提升，提升值相當於茲白防禦力的60%。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Zibai_05"
       },
       {
@@ -813,6 +817,7 @@
         "Id": 1262201,
         "Name": "疊嶂巒岫出雲",
         "Description": "隊伍中每存在一名元素類型為<color=#FFE699FF>岩元素</color>的其他角色，都會使茲白的防禦力提升15%。隊伍中每存在一名元素類型為<color=#80C0FFFF>水元素</color>的其他角色，都會使茲白的元素精通提升60點。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Zibai_06"
       },
       {
@@ -834,6 +839,7 @@
         "Id": 1262301,
         "Name": "月兆祝賜·浮明若流",
         "Description": "隊伍中的角色觸發水元素結晶反應時，將轉為觸發月結晶反應，且基於茲白的防禦力，提升隊伍中角色造成的月結晶反應的基礎傷害：每100點防禦力都將提升0.7%月結晶反應的基礎傷害，至多依此方式提升14%傷害。\n\n此外，茲白在隊伍中時，隊伍的<color=#FFD780FF>月兆</color>將會上升一級。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Zibai_07"
       },
       {
@@ -854,6 +860,7 @@
         "Id": 1262501,
         "Name": "花林如霰",
         "Description": "在夜間（18時至6時），不處於戰鬥狀態下時，每2秒為茲白恢復1點元素能量。\n該效果在秘境、征討領域、深境螺旋中無效。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Zibai_08"
       }
     ],

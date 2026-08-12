@@ -1,0 +1,1415 @@
+{
+  "Id": 10000129,
+  "PromoteId": 129,
+  "Sort": 117,
+  "Body": 1,
+  "Icon": "UI_AvatarIcon_Lohen",
+  "SideIcon": "UI_AvatarIcon_Side_Lohen",
+  "Name": "Lohen",
+  "Description": "Đội phó Tiểu Đội Tầm Xa của Đội Kỵ Sĩ Tây Phong, một kỵ sĩ hành sự không theo khuôn phép, yêu thích các chiến thuật không theo lẽ thường.",
+  "BeginTime": "2026-06-09T18:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 1000.986,
+    "AttackBase": 26.8128,
+    "DefenseBase": 61.0266
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 12931,
+        "Proud": {
+          "Descriptions": [
+            "Sát thương lần 1|{param1:F1P}",
+            "Sát thương lần 2|{param2:F1P}",
+            "Sát thương lần 3|{param3:F1P}x3",
+            "Sát thương lần 4|{param4:F1P}",
+            "Sát thương lần 5|{param5:F1P}+{param6:F1P}",
+            "Sát thương Trọng Kích|{param7:F1P}x2",
+            "Thể lực Trọng Kích tiêu hao|{param8:F1} điểm",
+            "Sát thương khi đáp|{param9:F1P}",
+            "Sát thương khi đáp từ độ cao thấp/cao|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1293101,
+              "Level": 1,
+              "Parameters": [
+                0.539917,
+                0.564427,
+                0.254199,
+                0.752259,
+                0.368579,
+                0.552868,
+                0.65876,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 1293102,
+              "Level": 2,
+              "Parameters": [
+                0.583863,
+                0.610368,
+                0.274889,
+                0.81349,
+                0.398579,
+                0.597869,
+                0.71238,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 1293103,
+              "Level": 3,
+              "Parameters": [
+                0.62781,
+                0.65631,
+                0.29558,
+                0.87472,
+                0.42858,
+                0.64287,
+                0.766,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 1293104,
+              "Level": 4,
+              "Parameters": [
+                0.690591,
+                0.721941,
+                0.325138,
+                0.962192,
+                0.471438,
+                0.707157,
+                0.8426,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 1293105,
+              "Level": 5,
+              "Parameters": [
+                0.734538,
+                0.767883,
+                0.345829,
+                1.023422,
+                0.501439,
+                0.752158,
+                0.89622,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 1293106,
+              "Level": 6,
+              "Parameters": [
+                0.784763,
+                0.820387,
+                0.369475,
+                1.0934,
+                0.535725,
+                0.803588,
+                0.9575,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 1293107,
+              "Level": 7,
+              "Parameters": [
+                0.853822,
+                0.892582,
+                0.401989,
+                1.189619,
+                0.582869,
+                0.874303,
+                1.04176,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 1293108,
+              "Level": 8,
+              "Parameters": [
+                0.922881,
+                0.964776,
+                0.434503,
+                1.285838,
+                0.630013,
+                0.945019,
+                1.12602,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 1293109,
+              "Level": 9,
+              "Parameters": [
+                0.99194,
+                1.03697,
+                0.467016,
+                1.382058,
+                0.677156,
+                1.015735,
+                1.21028,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 1293110,
+              "Level": 10,
+              "Parameters": [
+                1.067277,
+                1.115727,
+                0.502486,
+                1.487024,
+                0.728586,
+                1.092879,
+                1.3022,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 1293111,
+              "Level": 11,
+              "Parameters": [
+                1.142614,
+                1.194484,
+                0.537956,
+                1.59199,
+                0.780016,
+                1.170023,
+                1.39412,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 1293112,
+              "Level": 12,
+              "Parameters": [
+                1.217951,
+                1.273241,
+                0.573425,
+                1.696957,
+                0.831445,
+                1.247168,
+                1.48604,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 1293113,
+              "Level": 13,
+              "Parameters": [
+                1.293289,
+                1.351999,
+                0.608895,
+                1.801923,
+                0.882875,
+                1.324312,
+                1.57796,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 1293114,
+              "Level": 14,
+              "Parameters": [
+                1.368626,
+                1.430756,
+                0.644364,
+                1.90689,
+                0.934304,
+                1.401457,
+                1.66988,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 1293115,
+              "Level": 15,
+              "Parameters": [
+                1.443963,
+                1.509513,
+                0.679834,
+                2.011856,
+                0.985734,
+                1.478601,
+                1.7618,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11291,
+        "Name": "Tây Phong Thương Thuật - Phá Thệ",
+        "Description": "<color=#FFD780FF>Tấn Công Thường</color>\nThực hiện tối đa 5 lần đánh liên tiếp.\n\n<color=#FFD780FF>Trọng Kích</color>\nTiêu hao thể lực nhất định để thực hiện đột kích về phía trước.\n\n<color=#FFD780FF>Tấn Công Khi Đáp</color>\nĐáp xuống đất từ trên không, tấn công kẻ địch trên đường và gây sát thương phạm vi khi chạm đất.",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 12932,
+        "Proud": {
+          "Descriptions": [
+            "Sát thương lần 1|{param1:F1P}",
+            "Sát thương lần 2|{param2:F1P}",
+            "Sát thương lần 3|{param3:F1P}x3",
+            "Sát thương lần 4|{param4:F1P}",
+            "Sát thương lần 5|{param5:F1P}+{param6:F1P}",
+            "Sát thương Trọng Kích|{param7:F1P}x2",
+            "Thể lực Trọng Kích tiêu hao|{param8:F1} điểm",
+            "Sát thương khi đáp|{param9:F1P}",
+            "Sát thương khi đáp từ độ cao thấp/cao|{param10:P}/{param11:P}",
+            "Thời gian duy trì Kỳ Mưu|{param12:F1}s",
+            "Sát thương Khắc Cốt Ghi Tâm|{param17:F1P}x4",
+            "Mỗi điểm Nỗ Lực Chiến Thắng tăng sát thương gốc|{param18:F2P}",
+            "CD|{param19:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1293201,
+              "Level": 1,
+              "Parameters": [
+                0.809875,
+                0.84664,
+                0.381298,
+                1.128389,
+                0.552868,
+                0.829302,
+                0.98814,
+                10,
+                0.639324,
+                1.278377,
+                1.596762,
+                13,
+                17,
+                17,
+                10,
+                20,
+                0.6,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293202,
+              "Level": 2,
+              "Parameters": [
+                0.875795,
+                0.915552,
+                0.412334,
+                1.220234,
+                0.597869,
+                0.896804,
+                1.06857,
+                10,
+                0.691362,
+                1.382431,
+                1.726731,
+                13,
+                17,
+                17,
+                10,
+                20,
+                0.645,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293203,
+              "Level": 3,
+              "Parameters": [
+                0.941715,
+                0.984465,
+                0.44337,
+                1.31208,
+                0.64287,
+                0.964305,
+                1.149,
+                10,
+                0.7434,
+                1.486485,
+                1.8567,
+                13,
+                17,
+                17,
+                10,
+                20,
+                0.69,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293204,
+              "Level": 4,
+              "Parameters": [
+                1.035887,
+                1.082912,
+                0.487707,
+                1.443288,
+                0.707157,
+                1.060736,
+                1.2639,
+                10,
+                0.81774,
+                1.635134,
+                2.04237,
+                13,
+                17,
+                17,
+                10,
+                20,
+                0.75,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293205,
+              "Level": 5,
+              "Parameters": [
+                1.101807,
+                1.151824,
+                0.518743,
+                1.535134,
+                0.752158,
+                1.128237,
+                1.34433,
+                10,
+                0.869778,
+                1.739187,
+                2.172339,
+                13,
+                17,
+                17,
+                10,
+                20,
+                0.795,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293206,
+              "Level": 6,
+              "Parameters": [
+                1.177144,
+                1.230581,
+                0.554212,
+                1.6401,
+                0.803588,
+                1.205381,
+                1.43625,
+                10,
+                0.92925,
+                1.858106,
+                2.320875,
+                13,
+                17,
+                17,
+                10,
+                20,
+                0.84,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293207,
+              "Level": 7,
+              "Parameters": [
+                1.280732,
+                1.338872,
+                0.602983,
+                1.784429,
+                0.874303,
+                1.311455,
+                1.56264,
+                10,
+                1.011024,
+                2.02162,
+                2.525112,
+                13,
+                17,
+                17,
+                10,
+                20,
+                0.9,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293208,
+              "Level": 8,
+              "Parameters": [
+                1.384321,
+                1.447164,
+                0.651754,
+                1.928758,
+                0.945019,
+                1.417528,
+                1.68903,
+                10,
+                1.092798,
+                2.185133,
+                2.729349,
+                13,
+                17,
+                17,
+                10,
+                20,
+                0.96,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293209,
+              "Level": 9,
+              "Parameters": [
+                1.48791,
+                1.555455,
+                0.700525,
+                2.073086,
+                1.015735,
+                1.523602,
+                1.81542,
+                10,
+                1.174572,
+                2.348646,
+                2.933586,
+                13,
+                17,
+                17,
+                10,
+                20,
+                1.02,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293210,
+              "Level": 10,
+              "Parameters": [
+                1.600915,
+                1.67359,
+                0.753729,
+                2.230536,
+                1.092879,
+                1.639319,
+                1.9533,
+                10,
+                1.26378,
+                2.527025,
+                3.15639,
+                13,
+                17,
+                17,
+                10,
+                20,
+                1.08,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293211,
+              "Level": 11,
+              "Parameters": [
+                1.713921,
+                1.791726,
+                0.806933,
+                2.387986,
+                1.170023,
+                1.755035,
+                2.09118,
+                10,
+                1.352988,
+                2.705403,
+                3.379194,
+                13,
+                17,
+                17,
+                10,
+                20,
+                1.14,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293212,
+              "Level": 12,
+              "Parameters": [
+                1.826927,
+                1.909862,
+                0.860138,
+                2.545435,
+                1.247168,
+                1.870752,
+                2.22906,
+                10,
+                1.442196,
+                2.883781,
+                3.601998,
+                13,
+                17,
+                17,
+                10,
+                20,
+                1.2,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293213,
+              "Level": 13,
+              "Parameters": [
+                1.939933,
+                2.027998,
+                0.913342,
+                2.702885,
+                1.324312,
+                1.986468,
+                2.36694,
+                10,
+                1.531404,
+                3.062159,
+                3.824802,
+                13,
+                17,
+                17,
+                10,
+                20,
+                1.275,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293214,
+              "Level": 14,
+              "Parameters": [
+                2.052939,
+                2.146134,
+                0.966547,
+                2.860334,
+                1.401457,
+                2.102185,
+                2.50482,
+                10,
+                1.620612,
+                3.240537,
+                4.047606,
+                13,
+                17,
+                17,
+                10,
+                20,
+                1.35,
+                0.004,
+                18
+              ]
+            },
+            {
+              "Id": 1293215,
+              "Level": 15,
+              "Parameters": [
+                2.165944,
+                2.264269,
+                1.019751,
+                3.017784,
+                1.478601,
+                2.217901,
+                2.6427,
+                10,
+                1.70982,
+                3.418915,
+                4.27041,
+                13,
+                17,
+                17,
+                10,
+                20,
+                1.425,
+                0.004,
+                18
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11292,
+        "Name": "Kỳ Binh Quỷ Xuất",
+        "Description": "Tìm kiếm sơ hở của kẻ địch, chuyển sang trạng thái {LINK#N11290001}<color=#FFD780FF>Kỳ Mưu</color>{/LINK}. Trong trạng thái này:\n·Lohen có thể chủ động tích lũy {LINK#N11290003}<color=#FFD780FF>Niềm Vui</color>{/LINK} để thi triển Kỹ Năng Nguyên Tố đặc biệt {LINK#N11290002}<color=#FFD780FF>Khắc Cốt Ghi Tâm</color>{/LINK}.\n·Nhân vật khác trong đội ở gần có thể tích lũy {LINK#N11290004}<color=#FFD780FF>Nỗ Lực Chiến Thắng</color>{/LINK} cho Lohen để giúp tăng sát thương của <color=#FFD780FF>Khắc Cốt Ghi Tâm</color>.\nTrong trạng thái <color=#FFD780FF>Kỳ Mưu</color> tối đa thi triển 3 lần <color=#FFD780FF>Khắc Cốt Ghi Tâm</color>, sau đó sẽ không được nhận <color=#FFD780FF>Niềm Vui</color> nữa.\n\n<i>\"Đạo kỵ sĩ? Hah, đó quả là một mồi nhử tuyệt vời. Khi kẻ địch còn đang ảo tưởng về khoảnh khắc phân định thắng bại đường đường chính chính, thì tuyệt đối sẽ không nghĩ đến một 'sự bất ngờ' ra sao vẫn đang chờ đợi phía trước.\"</i>",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_S_Lohen_01"
+      }
+    ],
+    "SpecialSkills": [
+      {
+        "GroupId": 12951,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1295101,
+              "Level": 1,
+              "Parameters": [
+                0.5,
+                0.4,
+                6
+              ]
+            }
+          ],
+          "Display": 3
+        },
+        "Id": 1295101,
+        "Name": "Đêm Lễ Ma Nữ - Gai Nhọn Khó Lành",
+        "Description": "Sau khi hoàn thành <color=#FFD780FF>Bài Tập Của Ma Nữ - Về Chuyện Kẻ Thù</color>, Lohen sẽ trở thành nhân vật <color=#FFD780FF>Hexerei</color>. Khi đội hình có ít nhất 2 nhân vật Hexerei, sẽ nhận được hiệu quả <color=#FFD780FF>Hexerei - Nghi Thức Bí Mật</color>, giúp nhân vật Hexerei nhận được cường hóa.\n\n<color=#FFD780FF>Hexerei - Nghi Thức Bí Mật</color>\nKhi Kỹ Năng Nguyên Tố đặc biệt {LINK#N11290002}<color=#FFD780FF>Khắc Cốt Ghi Tâm</color>{/LINK} đánh trúng kẻ địch hoặc thi triển Kỹ Năng Nộ <color=#FFD780FF>Hình Phạt Toại Nguyện</color>, nếu sở hữu ít nhất 50% giới hạn {LINK#N11290004}<color=#FFD780FF>Nỗ Lực Chiến Thắng</color>{/LINK}, thì sát thương Tấn Công Thường và Trọng Kích của Lohen sẽ tăng 40% trong 6s.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Lohen_07"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 12939,
+      "Proud": {
+        "Descriptions": [
+          "Sát thương kỹ năng|{param1:F1P}x6",
+          "Mỗi điểm Nỗ Lực Chiến Thắng tăng sát thương gốc|{param2:F2P}",
+          "CD|{param3:F1}s",
+          "Năng Lượng Nguyên Tố|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1293901,
+            "Level": 1,
+            "Parameters": [
+              1.188,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293902,
+            "Level": 2,
+            "Parameters": [
+              1.2771,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293903,
+            "Level": 3,
+            "Parameters": [
+              1.3662,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293904,
+            "Level": 4,
+            "Parameters": [
+              1.485,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293905,
+            "Level": 5,
+            "Parameters": [
+              1.5741,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293906,
+            "Level": 6,
+            "Parameters": [
+              1.6632,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293907,
+            "Level": 7,
+            "Parameters": [
+              1.782,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293908,
+            "Level": 8,
+            "Parameters": [
+              1.9008,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293909,
+            "Level": 9,
+            "Parameters": [
+              2.0196,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293910,
+            "Level": 10,
+            "Parameters": [
+              2.1384,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293911,
+            "Level": 11,
+            "Parameters": [
+              2.2572,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293912,
+            "Level": 12,
+            "Parameters": [
+              2.376,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293913,
+            "Level": 13,
+            "Parameters": [
+              2.5245,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293914,
+            "Level": 14,
+            "Parameters": [
+              2.673,
+              0.004,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1293915,
+            "Level": 15,
+            "Parameters": [
+              2.8215,
+              0.004,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11295,
+      "Name": "Hình Phạt Toại Nguyện",
+      "Description": "Chém nhanh liên tục về phía trước, tiêu hao toàn bộ {LINK#N11290004}<color=#FFD780FF>Nỗ Lực Chiến Thắng</color>{/LINK}, gây <color=#99FFFFFF>Sát Thương Nguyên Tố Băng</color> và tăng sát thương lần này dựa trên <color=#FFD780FF>Nỗ Lực Chiến Thắng</color> đã tiêu hao. Khi thi triển, nếu Lohen đang trong trạng thái {LINK#N11290001}<color=#FFD780FF>Kỳ Mưu</color>{/LINK}, thì thời gian duy trì <color=#FFD780FF>Kỳ Mưu</color> lần này sẽ kéo dài 1.65s.\n\n<i>\"Mới thế đã nhượng bộ rồi sao? Đây còn chưa thỏa mãn nữa...\"</i>",
+      "SpecialEnergyType": 0,
+      "Icon": "Skill_E_Lohen_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 12921,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1292101,
+              "Level": 1,
+              "Parameters": [
+                30,
+                60
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1292101,
+        "Name": "Lời Răn Cấm Hỏi",
+        "Description": "Trong trạng thái {LINK#N11290001}<color=#FFD780FF>Kỳ Mưu</color>{/LINK}, khi nhân vật khác trong đội ở gần tích lũy {LINK#N11290004}<color=#FFD780FF>Nỗ Lực Chiến Thắng</color>{/LINK} cho Lohen bằng cách gây sát thương, nếu sát thương lần này không thấp hơn 3000% Tấn Công cơ bản của Lohen, thì sẽ tích lũy thêm 60 điểm <color=#FFD780FF>Nỗ Lực Chiến Thắng</color> cho Lohen.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Lohen_05"
+      },
+      {
+        "GroupId": 12922,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1292201,
+              "Level": 1,
+              "Parameters": [
+                0.15,
+                0.15,
+                8
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1292201,
+        "Name": "Kiệt Tác Bông Đùa",
+        "Description": "Trong trạng thái {LINK#N11290001}<color=#FFD780FF>Kỳ Mưu</color>{/LINK}, sau khi nhân vật khác trong đội ở gần kích hoạt <color=#99FFFFFF>phản ứng Nguyên Tố Băng</color> lên kẻ địch, nhân vật này và Lohen sẽ tăng 15% Tấn Công trong 8s.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Lohen_06"
+      },
+      {
+        "GroupId": 12923,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1292301,
+              "Level": 1,
+              "Parameters": [
+                9,
+                6,
+                18
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1292301,
+        "Name": "Hết Hứng Thì Về",
+        "Description": "Sau khi thi triển Kỹ Năng Nguyên Tố <color=#FFD780FF>Kỳ Binh Quỷ Xuất</color>, Lohen sẽ còn nhận được hiệu quả \"Nhân Lúc Đang Vui\" trong 9s: Trong thời gian duy trì, Kỹ Năng Nguyên Tố <color=#FFD780FF>Kỳ Binh Quỷ Xuất</color> sẽ tăng 1 cấp.\nKhi thi triển Kỹ Năng Nguyên Tố, nếu Tấn Công Thường, Kỹ Năng Nguyên Tố hoặc Kỹ Năng Nộ bất kỳ của nhân vật khác trong đội có cấp kỹ năng không thấp hơn cấp Kỹ Năng Nguyên Tố của Lohen, thì thời gian duy trì hiệu quả Nhân Lúc Đang Vui lần này sẽ kéo dài thêm 6s.\nMỗi 18s tối đa nhận một lần hiệu quả Nhân Lúc Đang Vui.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Lohen_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1291,
+        "Name": "Làn Gió Nhẹ Khi Xưa, Mang Theo Đầy Bi Ca",
+        "Description": "Giới hạn {LINK#N11290004}<color=#FFD780FF>Nỗ Lực Chiến Thắng</color>{/LINK} của Lohen tăng đến 300% mức gốc.\nNgoài ra, khi trong trạng thái {LINK#N11290001}<color=#FFD780FF>Kỳ Mưu</color>{/LINK}, lượng <color=#FFD780FF>Nỗ Lực Chiến Thắng</color> tích lũy cho Lohen khi nhân vật khác trong đội ở gần gây sát thương sẽ tăng đến 500% mức gốc.",
+        "Icon": "UI_Talent_S_Lohen_01"
+      },
+      {
+        "Id": 1292,
+        "Name": "Phàm Là Kẻ Bay Cao, Đều Sẽ Bị Nhắm Đến",
+        "Description": "Khi trong trạng thái {LINK#N11290001}<color=#FFD780FF>Kỳ Mưu</color>{/LINK}, sau khi Kỹ Năng Nguyên Tố đặc biệt {LINK#N11290002}<color=#FFD780FF>Khắc Cốt Ghi Tâm</color>{/LINK} đánh trúng kẻ địch hoặc thi triển Kỹ Năng Nộ <color=#FFD780FF>Hình Phạt Toại Nguyện</color>, Lohen sẽ nhận hiệu quả \"Lưỡi Đao Diệt Ác\" trong 4s: Trong trạng thái Kỳ Mưu, lần sau Lohen Tấn Công Thường hoặc Trọng Kích trúng kẻ địch, sẽ thực hiện một đòn tấn công thêm, gây <color=#99FFFFFF>Sát Thương Phạm Vi Nguyên Tố Băng</color> tương đương 500% Tấn Công của Lohen, đồng thời khiến nhân vật khác trong đội ở gần tăng 200 điểm Tinh Thông Nguyên Tố trong 8s. Mỗi 4s tối đa nhận một lần Lưỡi Đao Diệt Ác.",
+        "Icon": "UI_Talent_S_Lohen_02"
+      },
+      {
+        "Id": 1293,
+        "Name": "Chỉ Lưỡi Đao Sắc Bén, Mới Có Thể Chữa Lành",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>{LINK#S11292}Kỳ Binh Quỷ Xuất{/LINK}</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Lohen_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1294,
+        "Name": "Tình Yêu Như Ánh Sáng, Tan Biến Như Khúc Hát",
+        "Description": "Khi Lohen thi triển Kỹ Năng Nộ <color=#FFD780FF>Hình Phạt Toại Nguyện</color> trong trạng thái {LINK#N11290001}<color=#FFD780FF>Kỳ Mưu</color>{/LINK}, Lohen sẽ tích lũy {LINK#N11290004}<color=#FFD780FF>Nỗ Lực Chiến Thắng</color>{/LINK} đến tối đa, từ đó khiến Kỹ Năng Nộ lần này nhận được hiệu quả tăng sát thương cao nhất.\n\nNgoài ra, khi Lohen chuyển sang trạng thái <color=#FFD780FF>Kỳ Mưu</color>, nếu Năng Lượng Nguyên Tố:\n·Chưa đầy: Hồi phục 15 điểm Năng Lượng Nguyên Tố cho Lohen.\n·Đã đầy: Trong vòng 15s tiếp theo, sau khi thi triển Kỹ Năng Nộ <color=#FFD780FF>Hình Phạt Toại Nguyện</color> sẽ hồi phục 15 điểm Năng Lượng Nguyên Tố cho Lohen.",
+        "Icon": "UI_Talent_S_Lohen_03"
+      },
+      {
+        "Id": 1295,
+        "Name": "Chẳng Thể Nào Nhìn Thấu, Cũng Chẳng Thể Chất Vấn",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>{LINK#S11295}Hình Phạt Toại Nguyện{/LINK}</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Lohen_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1296,
+        "Name": "Thân Lạc Hồn Tiêu Tan, Chỉ Còn Lại Niềm Vui",
+        "Description": "Khi thi triển Kỹ Năng Nguyên Tố đặc biệt {LINK#N11290002}<color=#FFD780FF>Khắc Cốt Ghi Tâm</color>{/LINK} đánh trúng kẻ địch, hoặc trong trạng thái {LINK#N11290001}<color=#FFD780FF>Kỳ Mưu</color>{/LINK} thi triển Kỹ Năng Nộ <color=#FFD780FF>Hình Phạt Toại Nguyện</color>, sẽ không tiêu hao {LINK#N11290004}<color=#FFD780FF>Nỗ Lực Chiến Thắng</color>{/LINK}, đồng thời Lohen sẽ khôi phục {LINK#N11290003}<color=#FFD780FF>Niềm Vui</color>{/LINK} đến mức giới hạn, và khi thi triển Kỹ Năng Nguyên Tố đặc biệt <color=#FFD780FF>Khắc Cốt Ghi Tâm</color> lần kế tiếp trúng kẻ địch, sẽ khiến thời gian duy trì <color=#FFD780FF>Kỳ Mưu</color> lần này kéo dài 1.25s. Hiệu quả này mỗi 7s tối đa kích hoạt một lần.\nNgoài ra, tất cả sát thương kể trên sẽ tăng 175% Sát Thương Bạo Kích, và trong thời gian <color=#FFD780FF>Kỳ Mưu</color> lần này, giới hạn số lần thi triển <color=#FFD780FF>Khắc Cốt Ghi Tâm</color> của Lohen sẽ tăng 2 lần.",
+        "Icon": "UI_Talent_S_Lohen_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Mũi Nhọn Sắc Bén",
+    "Detail": "Đội phó Tiểu Đội Tầm Xa của Đội Kỵ Sĩ Tây Phong, một kỵ sĩ hành sự không theo khuôn phép, yêu thích các chiến thuật không theo lẽ thường.",
+    "Association": 1,
+    "Native": "Đội Kỵ Sĩ Tây Phong",
+    "BirthMonth": 4,
+    "BirthDay": 3,
+    "VisionBefore": "Băng",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Cung Giảo Thố",
+    "CvChinese": "林婧南",
+    "CvJapanese": "天﨑滉平",
+    "CvEnglish": "Nick Wolfhard",
+    "CvKorean": "Lee Sang-ho",
+    "CookBonus": {
+      "OriginItemId": 108971,
+      "ItemId": 108975,
+      "InputList": [
+        100016,
+        100022,
+        110006
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Lần đầu gặp mặt...",
+        "Context": "Lần đầu gặp mặt, tôi là Lohen, đội phó đương nhiệm của Tiểu Đội 5. Nếu có bất kỳ việc gì cần Đội Kỵ Sĩ Tây Phong hỗ trợ, hãy trực tiếp đến Đội Kỵ Sĩ nhờ giúp đỡ. Còn nếu cần cá nhân tôi giúp thì chúng ta phải bàn bạc lại một chút."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Đội Phó",
+        "Context": "Muốn trở thành đội trưởng, chỉ có thực lực \"cấp đội trưởng\" thôi là chưa đủ. Quan trọng hơn là... Hah, tôi cũng không biết, nếu không tôi đã thành đội trưởng rồi."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Nơi Gió Trở Về",
+        "Context": "Phù... Quả nhiên ở Thành Mondstadt vẫn thoải mái nhất, lát nữa đi uống nước táo lên men vậy..."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Các Mối Quan Hệ",
+        "Context": "Quan hệ giữa tôi và mọi người trong Đội Kỵ Sĩ thế nào? Ừm... ít nhất thì mọi người đều có ấn tượng sâu sắc về tôi. Như vậy cũng không tệ."
+      },
+      {
+        "Title": "Khi trời mưa...",
+        "Context": "Mưa to thật, chẳng biết lần này lại có bao nhiêu thứ bị cuốn trôi nữa."
+      },
+      {
+        "Title": "Sau cơn mưa trời lại sáng...",
+        "Context": "Sau cơn mưa trời lại sáng, cứ coi như cơn mưa trước đó chưa từng xảy ra."
+      },
+      {
+        "Title": "Khi có sấm sét...",
+        "Context": "#Tiếng sấm có thể che đi rất nhiều thứ, nhưng tuyệt đối không thể che đi nhịp tim của chính {F#cô}{M#cậu}."
+      },
+      {
+        "Title": "Khi tuyết rơi...",
+        "Context": "Tôi rất thích Quán Rượu Đuôi Mèo... nhất là trong thời tiết như thế này."
+      },
+      {
+        "Title": "Khi gió nổi lên...",
+        "Context": "Gió nổi lên rồi, tiếc là trong tay không có bồ công anh, hay là xé một ít giấy đi, cảm giác cũng tương tự."
+      },
+      {
+        "Title": "Khi trong sa mạc...",
+        "Context": "Tôi rất nhớ Hồ Rượu Trái Cây."
+      },
+      {
+        "Title": "Chào buổi sáng...",
+        "Context": "Chào buổi sáng. Hôm nay bận gì thế?"
+      },
+      {
+        "Title": "Chào buổi trưa...",
+        "Context": "Đã ăn trưa chưa? Được thôi, buổi chiều còn có việc phải làm."
+      },
+      {
+        "Title": "Chào buổi tối...",
+        "Context": "Tối nay... hmm, tổ chức một buổi \"huấn luyện đột kích doanh trại\" cho các đội viên vậy."
+      },
+      {
+        "Title": "Chúc ngủ ngon...",
+        "Context": "Ngủ ngon, nhớ nghỉ ngơi sớm nhé. Dù thức khuya thế nào thì ngày mai cũng sẽ đến thôi."
+      },
+      {
+        "Title": "Về bản thân Lohen - Giữ Lại Cảm Giác Đau",
+        "Context": "Trong quá trình điều trị thông thường, tôi cố gắng không dùng thuốc gây mê. Một là loại thuốc này sẽ ảnh hưởng đến khả năng chiến đấu, hai là... hah, xét theo một góc độ nào đó, tôi cũng muốn cảm nhận thật kỹ \"cảm giác đau\" sau mỗi trận chiến, bởi điều đó chứng minh tôi đã sống sót, còn kẻ địch của tôi thì... chẳng thể cảm nhận được gì nữa."
+      },
+      {
+        "Title": "Về bản thân Lohen - Sức Mạnh Và Cái Cớ",
+        "Context": "Với một số người, \"sức mạnh\" là cái cớ vô cùng hữu dụng, chỉ cần dùng nó, mọi thất bại và trắc trở đều có lý do, mọi bất an và sợ hãi đều tìm được nguồn gốc... Có lẽ, một mục tiêu rõ ràng có thể mang lại cho con người một cảm giác an toàn kỳ lạ. Cho dù... đằng sau \"cảm giác an toàn\" ấy, ẩn chứa một cái bóng khổng lồ và khủng khiếp hơn nhiều."
+      },
+      {
+        "Title": "Về chúng ta - Cách Chiến Đấu",
+        "Context": "Cách chiến đấu của tôi ư? Hahaha, tìm ra tên cầm đầu, đánh một trận ra trò với hắn, phân thắng bại nhanh nhất có thể, đơn giản vậy thôi. Đồng đội của tôi chắc đã quen hết rồi. Tất nhiên, không quen cũng chẳng còn cách nào."
+      },
+      {
+        "Title": "Về chúng ta - Chức Trách",
+        "Context": "#Như {F#cô}{M#cậu} thấy đấy, tôi đã là đội phó rồi, còn tên ngốc Theodore cũng đang phải chịu hình phạt xứng đáng. Nhưng theo tôi, tài năng của anh ta vẫn còn có thể phát huy được, đợi anh ta chuộc lỗi xong, tôi định kéo anh ta về Tiểu Đội 5 luôn, nhưng vị trí phó quan không làm được rồi, để anh ta làm đội viên bình thường vậy. Tuy nhiên, muốn hoàn toàn tin tưởng anh ta... cũng như tôi... vẫn còn quá sớm.\n{F#Cô}{M#Cậu} tin tôi, cũng tin \"thực lực\" của tôi? Hahahaha, không hổ là Kỵ Sĩ Danh Dự, đáng tin cậy như lời đồn. Hay {F#cô}{M#cậu} làm đội trưởng Tiểu Đội 5 của chúng tôi đi, Varka chắc chắn sẽ đồng ý."
+      },
+      {
+        "Title": "Về Vision...",
+        "Context": "Khi thực hiện nhiệm vụ, Vision này đã phát huy không ít công dụng. Đáng tiếc là nó chỉ có thể tiêu diệt những ma thú hữu hình, mà không thể xoa dịu những vết thương vô hình."
+      },
+      {
+        "Title": "Có gì muốn chia sẻ không...",
+        "Context": "Tôi không uống rượu, đối với tôi tác dụng duy nhất của rượu là sát trùng vết thương. Đặc biệt là rượu bồ công anh loại lâu năm của Tửu Trang Dawn, hiệu quả sát trùng và cảm giác đau đều rất rõ ràng. Trong lúc sát trùng, tôi còn có thể thưởng thức biểu cảm vặn vẹo của đồng nghiệp... nhất là Varka hahahaha..."
+      },
+      {
+        "Title": "Những kiến thức thú vị...",
+        "Context": "Trước đây tôi từng bị dị ứng với bồ công anh, sau khi nghe Sucrose nói có một loại \"liệu pháp giảm dị ứng\", tôi đã mua rất nhiều bồ công anh để trong phòng, cứ cách một khoảng thời gian tôi lại chủ động hít vào một chút để điều trị triệu chứng dị ứng. Kết quả thế nào ư? Dù sao thì bây giờ gặp bồ công anh tôi cũng không hắt hơi nữa. Nhưng phải thừa nhận rằng, cảm giác hắt hơi đến choáng váng, quả thực không phải lúc nào cũng có được."
+      },
+      {
+        "Title": "Về Varka - Kháng Thuốc",
+        "Context": "Khả năng kháng thuốc của Varka ngày càng tăng, mấy hôm trước loại thuốc tôi điều chế chỉ khiến mặt anh ấy đỏ lên một chút. Nếu không phải anh ấy trừng mắt nhìn tôi, chắc tôi cũng tự hoài nghi không biết mình có bỏ thuốc vào không nữa. Haiz, nếu vẫn còn ở Nod-Krai, thì chắc tôi đã muốn cho thêm mấy loại thực vật có Kuuvahki vào rồi..."
+      },
+      {
+        "Title": "Về Varka - Trách Nhiệm Của Đội Trưởng",
+        "Context": "Trách nhiệm của đội trưởng? Đối với Varka thì về cơ bản là dẫn người đi đánh nhau thôi. Phần còn lại đều ném hết cho đội trưởng Jean, hahaha, vì kẻ địch có thể bị tiêu diệt, nhưng công việc giấy tờ thì thật sự không bao giờ có hồi kết."
+      },
+      {
+        "Title": "Về Jean...",
+        "Context": "Chính vì có vị Đội Trưởng Đại Diện cần mẫn này trấn giữ Thành Mondstadt, Đại Đội Trưởng mới có thể thoải mái hành động ở Nod-Krai, giờ dù đã trở về Mondstadt... Nhưng mà anh ấy vẫn sẽ tiếp tục thoải mái hành động thôi, tình hình hình như không có gì khác biệt cả."
+      },
+      {
+        "Title": "Về Kaeya...",
+        "Context": "Kaeya rất giỏi bắt chước chữ ký của các đội trưởng tiểu đội kỵ sĩ khác, đặc biệt là chữ ký của đội trưởng Jean, chữ ký giả của anh ấy hoàn hảo đến mức gần như không có sơ hở. Mục đích luyện tập cái này? Kaeya nói là để tự phê duyệt đơn xin nghỉ phép cho chính mình. Tôi tin Kaeya, vì với tính cách của anh ấy thì chắc cũng không làm ra được chuyện gì quá đáng hơn thế đâu... haha."
+      },
+      {
+        "Title": "Về Amber...",
+        "Context": "Nghe Amber nói, cô ấy đã bàn bạc với đội trưởng Jean rồi, một thời gian nữa sẽ có thêm vài trinh sát viên không thuộc Kỵ Sĩ Trinh Sát đến giúp cô ấy. Thật đáng mừng, cuối cùng cô ấy cũng không phải một mình bay qua bay lại trên bầu trời Thành Mondstadt nữa. Nhưng nghĩ lại thì, liệu quy định và đề thi của bằng bay lượn có phải cũng quá lỗi thời rồi không? Có lẽ cũng đã đến lúc cập nhật lại nó?"
+      },
+      {
+        "Title": "Về Diluc...",
+        "Context": "Lão gia Diluc, hay nói đúng hơn là \"tiền bối\" Diluc. Xét từ góc độ nào đó, cả hai chúng tôi đều bị cùng một tên khốn hãm hại, giờ mọi thù mới nợ cũ đều đã thanh toán xong, sao anh ấy vẫn không chịu quay lại Đội Kỵ Sĩ Tây Phong? Dù không thể làm đội trưởng trẻ nhất nữa, nhưng làm thành viên có thâm niên nhất cũng được mà."
+      },
+      {
+        "Title": "Về Noelle...",
+        "Context": "Noelle vẫn chưa trở thành kỵ sĩ chính thức à, đã lâu như vậy rồi, tôi cứ tưởng cô ấy đã vượt qua thí luyện kỵ sĩ rồi chứ... Không biết Varka đang nghĩ gì, chẳng lẽ định chuẩn bị một cuộc thí luyện siêu cấp dành cho Noelle? Vậy thì danh hiệu kỵ sĩ của cô ấy phải lợi hại đến mức nào, mới xứng với thời gian khổ luyện dài như vậy chứ..."
+      },
+      {
+        "Title": "Về Eula...",
+        "Context": "Ấn tượng sâu sắc nhất của tôi về Eula là tiếng giày của cô ấy khi đạp lên sàn. Chỉ cần cô ấy bước nhanh một chút, dù cách cả một tầng lầu tôi vẫn nghe thấy tiếng \"cộp cộp cộp\" vang lên, vừa vang vừa có sức xuyên thấu, giống như kiếm thuật của Eula vậy... ấn tượng sâu sắc đến mức không thể quên được."
+      },
+      {
+        "Title": "Về Albedo...",
+        "Context": "Vật tư quân dụng mà Tiểu Đội 5 dùng là do Tiểu Đội 8 và Albedo cùng phát triển, chất lượng của tên, nỏ, đạn dược và các sản phẩm giả kim đều rất tốt. Thỉnh thoảng tôi cũng ghé thăm văn phòng của anh ấy, tiện thể nhờ anh ấy nghiên cứu một số vũ khí mới. Tuy nhiên, gần đây người liên hệ với tôi đã đổi thành Sucrose, chắc hẳn Albedo lại bận rộn với những nghiên cứu khác rồi..."
+      },
+      {
+        "Title": "Về Klee...",
+        "Context": "Trước đây Varka từng nói với tôi, anh ấy nghĩ rằng vị Quan Chấp Hành Capitano của Fatui dùng bút sáp cũng có thể đâm nát một con Thủ Vệ Di Tích, nên tôi đã dùng đồ ăn ngon để đổi lấy một hộp bút sáp màu của Klee, định mang cho Varka. Đến lúc đó nếu gặp ma vật thì để anh ấy tự tay thử xem sao."
+      },
+      {
+        "Title": "Về Mika...",
+        "Context": "Mika rất giỏi đo vẽ bản đồ, còn tôi thì giỏi phát hiện lời nói dối. Trước đây, trên bản đồ vẽ cho tôi, cậu ta đã cố tình che đi những điểm tập trung ma vật, sợ tôi một mình xông vào. Còn tôi chỉ cần nhìn vào biểu cảm của cậu ta là biết chỗ nào trên bản đồ có nhiều ma vật nhất. Mika à, có im lặng cũng vô ích thôi."
+      },
+      {
+        "Title": "Muốn tìm hiểu Lohen - Điều thứ 1",
+        "Context": "Xin lỗi nhé, tôi chẳng có \"bí mật thú vị\" nào âm u sâu sắc cả."
+      },
+      {
+        "Title": "Muốn tìm hiểu Lohen - Điều thứ 2",
+        "Context": "Mặc dù thường ngày dùng thương nhiều hơn, nhưng dù sao tôi cũng là người của Tiểu Đội 5, nên cũng không thể bỏ bê việc luyện tập nỏ và súng. Còn về độ chính xác... Dù sao thì tôi bắn Quả Bồng Bồng và Slime khá chuẩn, cơ bản giơ tay lên là trúng. Tôi nghe nói ở Inazuma có thứ gọi là Bóng Ma rất khó bắn trúng? Thú vị đấy, lần sau dùng nó để thử xem sao."
+      },
+      {
+        "Title": "Muốn tìm hiểu Lohen - Điều thứ 3",
+        "Context": "Tiểu Đội 5? Chỉ là một đội chi viện tầm xa bình thường, không có gì đáng nói cả. Tuy hỏa lực của chúng tôi cũng tạm ổn, nhưng nếu đối mặt với một số... kẻ địch quá đặc biệt, chúng tôi nhiều nhất cũng chỉ có thể ở bên cạnh yểm trợ. Giống như lần theo Varka ngăn chặn Rerir vậy, đến cuối cùng, trọng trách tấn công hoàn toàn rơi vào tay Đại Đội Trưởng, còn chúng tôi đều nhận lệnh phân tán ra xung quanh để ngăn chặn Cuộc Săn Hoang Dã... Chỉ có như vậy, chúng tôi mới không bị cuốn vào trận chiến giữa anh ấy và Rerir."
+      },
+      {
+        "Title": "Muốn tìm hiểu Lohen - Điều thứ 4",
+        "Context": "Tại sao tôi kiên trì dùng thương ư? Đó là bởi vì... mồi nhử tốt nhất trên chiến trường đương nhiên là người trông giống như chỉ huy của đội ngũ. Có tôi thu hút sự chú ý của kẻ địch, các đồng đội khác chỉ việc thoải mái khai hỏa thôi. Còn những kẻ địch nguy hiểm... Hahaha, càng căng thẳng, tôi càng tập trung, cảm giác tập trung cao độ đó thật tuyệt vời... Tiếc là từ sau khi rời Nod-Krai, chỗ cho tôi chiến đấu hết mình thật sự quá ít."
+      },
+      {
+        "Title": "Muốn tìm hiểu Lohen - Điều thứ 5",
+        "Context": "Khi chiến đấu cận chiến với kẻ địch có sợ không? Nói sao nhỉ, tôi nghĩ phía kẻ địch sẽ sợ \"hơn\". Tốc độ dùng thương của tôi không hề chậm. Hơn nữa, phía sau tôi còn có các kỵ sĩ y tế đang chờ... Nếu kẻ địch cũng có thì sao à? Ừm, vậy thì tôi chỉ có thể cố gắng hạ gục nhân viên y tế bên kia trước thôi."
+      },
+      {
+        "Title": "Sở thích của Lohen...",
+        "Context": "Ngoài việc xông pha trên chiến trường, sở thích thường ngày lớn nhất của tôi chính là thêm vào cuộc sống bình lặng của những người đồng đội thân yêu một chút \"bất ngờ\". Đây cũng được coi là một phần của việc huấn luyện hằng ngày, kỵ sĩ phải luôn nâng cao cảnh giác mà."
+      },
+      {
+        "Title": "Phiền não của Lohen...",
+        "Context": "Những ngày tháng tốt đẹp đóng quân ở Cảng Dornman đã kết thúc, quay về Thành Mondstadt thì đội trưởng Jean không dễ nói chuyện như Đại Đội Trưởng đâu. Haiz, không thể giao cho tôi thêm vài nhiệm vụ bên ngoài nữa sao?"
+      },
+      {
+        "Title": "Món ăn yêu thích...",
+        "Context": "Tôi khá thích ăn đồ cay. Khi làm nhiệm vụ bên ngoài, tôi cũng hay nhai ít Tuyệt Vân cay phơi khô để tỉnh táo... \"Cái đó là Ớt Tuyệt Vân\"? Cảm ơn, tôi sẽ gọi như cách vẫn hay gọi là được."
+      },
+      {
+        "Title": "Món ăn ghét...",
+        "Context": "Đừng uống rượu, được không? Lúc đóng quân ở Nod-Krai, tôi luôn bị những kỵ sĩ nhậu nhẹt quá chén ồn ào đánh thức... Bọn họ uống đến mức chẳng còn biết mình đang uống cái gì nữa, đến nỗi dù tôi có đổi rượu thành... ờm, thôi, không có gì đâu."
+      },
+      {
+        "Title": "Nhận Được Quà I",
+        "Context": "#Cảm ơn, rất hợp khẩu vị của tôi. Món này ngon đến nỗi... tôi có chút nghi ngờ liệu {F#cô}{M#cậu} có lén điều tra tôi không. Không sao đâu, tôi cũng từng điều tra {F#cô}{M#cậu} mà, chúng ta hòa nhau."
+      },
+      {
+        "Title": "Nhận Được Quà II",
+        "Context": "#Trước đây khi tôi học cách hạ độc vào thức ăn, cơ bản cũng đã đạt đến mức không khiến bất kỳ ai nghi ngờ... {F#Cô}{M#Cậu} đã hạ độc rồi sao? Ồ, tôi có khả năng kháng độc rất cao, để tôi ăn thêm một chút nữa xem."
+      },
+      {
+        "Title": "Nhận Được Quà III",
+        "Context": "...Một cái bẫy rõ ràng như vậy, tôi... sẽ không chủ động nhảy vào đâu. Lần sau để tôi nấu vậy."
+      },
+      {
+        "Title": "Sinh nhật...",
+        "Context": "#Hôm nay là sinh nhật {F#cô}{M#cậu}, cầm lấy chiếc nỏ đeo tay này đi, đây là do tôi tự mày mò làm ra, chắc sẽ vừa vặn với cổ tay {F#cô}{M#cậu}... Tôi đo kích thước khi nào ư? Đo bằng mắt thôi, tôi là đội phó Tiểu Đội 5, hãy tin vào khả năng ước lượng bằng mắt của tôi. À đúng rồi, chiếc nỏ này còn có thể bắn ngược chiều nữa, phòng khi có kẻ đánh lén từ phía sau, chỉ cần ấn chỗ này... Haha, đừng né chứ, khóa an toàn của nỏ còn đang khoá mà, chẳng lẽ tôi trông giống kiểu người tặng người ta một chiếc nỏ, rồi nhìn họ tự bắn mũi tên lên người chính mình sao?"
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Khởi",
+        "Context": "Cảm giác không tệ, vũ khí dùng cũng thuận tay hơn rồi."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Thừa",
+        "Context": "Hình như có thể nhìn càng xa hơn... Lần sau ra tay, chắc chắn sẽ càng chuẩn hơn."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Chuyển",
+        "Context": "Đầu óc tỉnh táo hơn rồi, ha, đột nhiên nghĩ ra một phương pháp huấn luyện mới."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Hợp",
+        "Context": "Xem ra, với thực lực của tôi hiện tại, chắc đủ làm \"đội phó\" rồi nhỉ?"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố I",
+        "Context": "Khai chiến!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố II",
+        "Context": "Run rẩy đi."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố III",
+        "Context": "Một tên cũng không để sót!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố IV",
+        "Context": "Chiến thuật bất ngờ."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố V",
+        "Context": "Thời cơ đã đến."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố VI",
+        "Context": "Hừm."
+      },
+      {
+        "Title": "Kỹ Năng Nộ I",
+        "Context": "Ồn ào... lũ cừu chờ bị làm thịt."
+      },
+      {
+        "Title": "Kỹ Năng Nộ II",
+        "Context": "Giãy giụa... cũng vô ích!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ III",
+        "Context": "Hahaha, ngươi sẽ không được yên nghỉ đâu."
+      },
+      {
+        "Title": "Mở Rương I",
+        "Context": "Thu hoạch khá nhiều đấy, nào, xem bên trong có gì thôi."
+      },
+      {
+        "Title": "Mở Rương II",
+        "Context": "Có vẻ không mấy giá trị nhỉ... Nhưng mà thôi, dù sao cũng là nhặt được không mất tiền, cứ cầm lấy đi."
+      },
+      {
+        "Title": "Mở Rương III",
+        "Context": "Ừm, không có bẫy, cũng không có khói độc... nhàm chán."
+      },
+      {
+        "Title": "HP Thấp I",
+        "Context": "Cảm giác không tệ... tiếp tục!"
+      },
+      {
+        "Title": "HP Thấp II",
+        "Context": "...Chưa xong đâu!"
+      },
+      {
+        "Title": "HP Thấp III",
+        "Context": "Vừa hay làm đối thủ của tôi!"
+      },
+      {
+        "Title": "HP Đồng Hành Thấp I",
+        "Context": "Không đủ sức thì lùi lại!"
+      },
+      {
+        "Title": "HP Đồng Hành Thấp II",
+        "Context": "Để tôi thử xem!"
+      },
+      {
+        "Title": "Ngã Xuống I",
+        "Context": "Giới hạn... của tôi..."
+      },
+      {
+        "Title": "Ngã Xuống II",
+        "Context": "Chưa... thỏa mãn..."
+      },
+      {
+        "Title": "Ngã Xuống III",
+        "Context": "Gió ơi... hãy nói cho... tôi..."
+      },
+      {
+        "Title": "Chịu Đòn Thường I",
+        "Context": "Trò vặt."
+      },
+      {
+        "Title": "Chịu Đòn Thường II",
+        "Context": "Không có cảm giác gì cả."
+      },
+      {
+        "Title": "Bị Trọng Kích I",
+        "Context": "Thực lực không tồi..."
+      },
+      {
+        "Title": "Bị Trọng Kích II",
+        "Context": "Ha...!"
+      },
+      {
+        "Title": "Vào Đội I",
+        "Context": "Đi thôi, thư giãn gân cốt một chút."
+      },
+      {
+        "Title": "Vào Đội II",
+        "Context": "Làm tiên phong? Được thôi."
+      },
+      {
+        "Title": "Vào Đội III",
+        "Context": "Lần này để tôi bọc hậu."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Miêu Tả Nhân Vật",
+        "Context": "Gần như cùng lúc với việc quân viễn chinh lên đường trở về, các nhà thơ cũng đã mang câu chuyện về những anh hùng về đến quán rượu.\nNgoài những cái tên quen thuộc như Varka, thì danh hiệu \"Sĩ Quan Áp Chế Tiền Tuyến\" với thành tích chiến đấu xuất sắc và tỷ lệ tham chiến cực cao cũng đã đi vào tầm mắt của mọi người.\nTại sao Tiểu Đội Tầm Xa có khoảng cách tấn công xa nhất lại luôn hoạt động ở tuyến đầu và là người đầu tiên xông vào chiến đấu cận chiến?\nTại sao tiểu đội sử dụng cung, nỏ và súng hỏa mai lại do một kỵ sĩ trẻ tuổi cầm thương dẫn đầu?\nĐiều bất thường đương nhiên sẽ dẫn đến những câu hỏi, và câu hỏi thường đi kèm với tiếng tranh cãi.\nCó người tức giận nói: \"Chẳng lẽ khi bắn cự ly gần thì mất hiệu lực sao? Cung, nỏ và súng hỏa mai lại bất tiện như vậy ư?\"\nCó người lại cho rằng, cung thủ vốn là nhóm chiến binh tinh nhuệ nhất, có sức mạnh phi thường, việc triển khai những người xuất sắc nhất trong số họ vào tiền tuyến nguy hiểm nhất mới là sự lựa chọn đúng đắn.\nVà điều giúp chấm dứt mọi tranh luận chính là đánh giá mà các nhà thơ nghe được từ những người trực tiếp chứng kiến:\n\"Anh ấy là mũi tên sắc bén nhất của tiểu đội, có thể xé toạc mọi hàng phòng thủ;\"\n\"Anh ấy là tấm chắn vững chắc nhất của tiểu đội, có thể cản phá mọi đợt tấn công...\"\nTuy nhiên, các nhà thơ thường cố tình bỏ qua nửa câu sau của các kỵ sĩ, bởi nó chẳng có chút sắc thái huyền thoại nào, quá thực tế:\n\"Thực ra thì, tôi nghĩ đội phó Lohen đơn thuần chỉ cảm thấy làm vậy hiệu quả hơn mà thôi...\"\nĐúng vậy, câu chuyện của Lohen không hào hùng và rực rỡ như trong tiểu thuyết kỵ sĩ, cũng không đầy huyền thoại và thăng trầm như sự nghiệp vĩ đại của những vị anh hùng.\nThương, bắn lén, mai phục, hạ độc, tập kích, thâm nhập...\nAnh chẳng bao giờ bàn luận vũ khí hay chiến thuật cái nào mạnh hơn, cũng chẳng để tâm đến việc trận chiến hay hành động có ảnh hưởng gì đến danh dự hay không.\nDù các phương pháp có thể có sự chênh lệch về cảm giác, nhưng niềm vui mà chúng mang lại đều không thể sánh bằng \"chiến thắng\", cũng không thể so với cảm giác \"sống sót\".\nChỉ có người đứng vững cuối cùng mới đủ tư cách suy ngẫm ý nghĩa của chiến thắng, chỉ có người cuối cùng vẫn còn cảm nhận được nỗi đau mới đủ tư cách bàn về việc sống sót.\nChiến đấu, chiến thắng, sống sót, rồi tiếp tục lặp lại...\nVà đây chính là câu chuyện của Lohen, cuộc sống của Lohen..."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 1",
+        "Context": "Trong ký ức của Lohen, món đồ chơi đầu tiên mà anh có chính là một chiếc cung mềm nhỏ.\nNgười cha nghiêm túc đã chọn lõi gỗ sam thượng hạng để chế tạo thân cung, còn người mẹ tỉ mỉ chu đáo đã đặc biệt cắt da thuộc, chà xát rồi bện thành dây cung.\nDù chỉ là một món đồ chơi, cha và mẹ vẫn tuân theo quy trình làm cung thường ngày, hoàn thành một cách tỉ mỉ.\nTuy nhiên, cha không hề dạy Lohen nhỏ cách giương cung bắn tên như cậu bé tưởng.\nĐiều duy nhất Lohen nhỏ được phép làm chỉ là bắt chước động tác của cha mẹ: Học cách kiểm tra cánh cung, dùng dầu bảo dưỡng lớp sơn, đánh sáp dây cung. Ngày qua ngày, lặp đi lặp lại.\n\"Lohen, tổ tiên từng nói: 'Cung là một vật phẩm đòi hỏi sự nhất quán. Gia tộc chúng ta đời đời lấy nghề làm cung để kiếm sống, tất nhiên cũng phải sống như cây cung vậy, giữ cho mọi việc làm đều tuyệt đối nhất quán.'\"\nVào giờ cầu nguyện mỗi buổi sáng, cha mẹ Lohen luôn lặp lại những lời như vậy.\nLịch trình đều đặn, làm việc nghiêm túc và cuộc sống bình yên.\nTrước khi Lohen chào đời, họ đã sống như vậy hơn hai mươi năm; và trong mười mấy năm sau khi Lohen sinh ra, mọi thứ cũng không hề thay đổi dù chỉ một chút.\nTừ lúc mới học nói, cho đến khi có thể bảo dưỡng cung tên một cách thành thạo, Lohen bỗng nhận ra rằng mình dường như đã thấy trước quỹ đạo của cả một đời người. Có lẽ đến khi già nua không còn nhìn rõ vết nứt trên thớ gỗ, cuộc đời anh cũng sẽ tiêu tan trong một lịch trình đã định sẵn chẳng chút sóng gió.\nNhưng... dù mũi tên có thể được cất giữ cẩn thận trong kho, chúng vẫn không thuộc về nơi đó. Cũng như bản chất phóng khoáng của Lohen, vốn dĩ không thuộc về cuộc sống yên ổn.\nLohen nhỏ một lần nữa lau sáng mũi tên, nhìn vào đôi con ngươi ẩn chứa sắc đỏ thẫm trong hình bóng phản chiếu.\nNó chỉ đang đợi khoảnh khắc rời khỏi dây cung...\nVà khoảnh khắc ấy không còn xa nữa.\nVào một ngày bình thường nào đó, Lohen như mọi khi ngồi trên xe hàng, cùng cha đến Thành Mondstadt giao hàng.\nNhưng chuyến đi này không hề êm đềm, một nhóm cướp đeo mặt nạ được huấn luyện bài bản đã để mắt tới hàng hóa của họ.\nCha hoảng hốt giấu Lohen vào khoang xe, dặn cậu bé không được cựa quậy cũng đừng phát ra tiếng động. Còn bản thân ông thì hét lớn, cố gắng dụ bọn cướp đi xa hoặc để nếu có Đội Kỵ Sĩ ở gần đó nghe thấy thì đến cứu.\nRõ ràng trên chiếc xe hàng đó chất đầy những bộ cung tên có thể bắn vỡ tảng đá lớn...\nRõ ràng với kinh nghiệm thử cung nhiều năm, cha đã có thân thủ bắn cung bậc nhất...\nRõ ràng bọn cướp này dường như đang cố tình đuổi cha rời xa xe hàng...\nNhưng sự quen thuộc với cuộc sống an nhàn bao lâu nay đã khiến cha quên đi hoài nghi trong lúc hoảng loạn, cũng quên rằng mình có thể lựa chọn chống lại bằng vũ lực.\nBên ngoài xe dần im bặt, không lâu sau tấm rèm được vén lên, nhưng người đến không phải là người cha đã thoát khỏi bọn cướp, cũng chẳng phải kỵ sĩ kịp thời đến cứu viện, mà là một nhóm người mặc áo choàng đen đeo mặt nạ.\nBọn họ không nói một lời nào đã bắt Lohen đi. Dù cậu bé có cố gắng vùng vẫy, chống cự thế nào đi nữa, trước đôi bàn tay to lớn như cặp kìm sắt kia, mọi sức kháng cự đều vô ích.\nLúc đó, Lohen vẫn chưa biết mình bị cuốn vào âm mưu của ai, cũng không biết mình bị đưa đến đâu.\nNgồi im lặng trong căn phòng giam kín, Lohen nhỏ chỉ thầm nghĩ như vậy:\nNếu cha cầm cung đối đầu với bọn cướp, chúng đã không có cơ hội lợi dụng. Nếu bản thân tinh ý hơn một chút, có lẽ đã có thể trốn sang một bên trước khi chúng ra tay.\nTiếng khóc của lũ trẻ bị bắt cùng ở phòng bên ngày càng lớn dần. Còn Lohen thì lợi dụng khoảnh khắc không ai để ý, lén giấu một đầu tên nhỏ lấy từ trên xe vào trong tay áo...\nCó lẽ Phong Thần đã nghe thấy tiếng cầu cứu của lũ trẻ, hoặc có thể là có lực lượng vô hình nào đó đã đáp lại khao khát sức mạnh của Lohen.\nTrên đường vội vã chuyển địa điểm của kẻ xấu, những người thay mặt chính nghĩa cuối cùng đã xuất hiện.\nNgười đứng đầu mặc áo giáp, cầm cung ngắn, dễ dàng đánh bại toàn bộ kẻ xấu.\nCó vẻ như muốn giữ lại mạng kẻ xấu để thẩm vấn, hoặc muốn tránh khiến lũ trẻ bị thương, người đó chỉ sử dụng những mũi tên cùn không có đầu nhọn để chiến đấu.\nNhưng sức mạnh phi thường của người đó khiến những mũi tên cùn ấy vẫn có sức công phá ghê gớm. Mỗi lần dây cung rung lên, đều kèm theo một tiếng ngã mạnh xuống đất.\nNhững mũi tên xé gió ấy sắc bén và rực rỡ đến mức Lohen nhỏ không thể rời mắt, thậm chí còn dừng hẳn động tác trên tay.\nMãi đến khi Adorno mở cửa xe giam và nhìn vào mắt Lohen, cậu bé mới sực tỉnh lại.\n\"Nếu như mình có thể mạnh mẽ như những mũi tên kia, sợi dây này có lẽ đã bị cắt đứt từ lâu rồi. Vậy thì sẽ không phải nghe tên ngốc Theodore khóc mãi như vậy...\"\nÝ nghĩ ấy đã âm thầm nảy mầm trong trái tim của Lohen nhỏ.\nCòn Adorno lại chứng kiến một cảnh tượng khác:\nGiữa lũ trẻ con đang khóc lóc, cậu bé vốn phải hoảng sợ tột độ lại lạnh lùng, trông thật không hợp chút nào.\nSợi dây thừng vốn chắc chắn nơi cổ tay cậu bé đã bị mũi tên cứa ra một vết cắt khó nhận thấy.\nĐúng là một đứa trẻ không tầm thường, xem ra sau này phải để ý kỹ hơn mới được..."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 2",
+        "Context": "Kể từ khi Lohen được cứu, gia đình càng bảo bọc cậu bé kỹ hơn, sợ rằng bị mất con một lần nữa. Nhưng mũi tên đã lên dây, không thể nào quay về cuộc sống bình thường được nữa.\nVào một đêm trăng sáng, Lohen đợi cho cha mẹ ngủ say rồi lẻn ra ngoài cửa sổ. Cùng lẫn vào bóng đêm với Lohen còn có một cây cung ngắn tự chế, một con dao găm dùng để chạm khắc, cùng vài mũi tên hỏng không đạt tiêu chuẩn.\nCó thể là may mắn, hoặc có thể Lohen vốn sinh ra để chiến đấu. Khi trở về, trong túi của Lohen đã có thêm hai mũi tên Hilichurl như chiến lợi phẩm.\nTừ đó, Lohen bắt đầu lẻn ra khỏi nhà vào ban đêm ngày càng thường xuyên hơn. Từ mỗi tuần một lần, đến ba ngày một lần, và đến khi ra ngoài mỗi đêm. Mục tiêu của Lohen ngày càng mạnh mẽ, chiến lợi phẩm cũng ngày càng phong phú: Mặt nạ vỡ vụn, cuộn tranh điềm báo, tù và của bạo đồ...\nDần dần, giữa các nhà mạo hiểm bắt đầu truyền tai nhau một tin đồn bí ẩn: Vào lúc nửa đêm quanh khu vực Cảng Dornman, sẽ xuất hiện một cung thủ có thân hình gầy gò. Người này sẽ như cơn gió lướt vào giữa bầy ma vật, dùng mũi tên chính xác xuyên thẳng vào ngực từng kẻ địch.\nVô số thắng lợi, đồng nghĩa với vô số lần vượt qua hiểm nguy. Mà vô số lần vượt qua hiểm nguy lại mang đến vô số lần nhịp tim đập mạnh mẽ tựa thủy triều.\nĐồng thời, một nghi vấn cũng bắt đầu âm thầm nảy sinh trong lòng Lohen: Nếu bản thân của hiện tại gặp lại bọn cướp, liệu tình hình có khác đi không? Liệu bản thân có còn là đứa trẻ bất lực chỉ biết chờ đợi người khác cứu giúp không?\nDù đã vượt qua vô số nguy hiểm, đâm xuyên vô số mục tiêu, nghi vấn này cũng chỉ không ngừng tích tụ trong lòng, mãi mãi không thể tự nhiên có được câu trả lời.\nTrừ phi Lohen có thể tự tay đâm xuyên mục tiêu ban đầu ấy.\n...\nKhi Lohen chính thức mặc bộ đồng phục nhà mạo hiểm và thú thật với cha mẹ, họ trước hết là kinh ngạc, sau đó là tức giận.\nCuối cùng, hội trưởng Cyrus đã phải vỗ ngực cam đoan rằng chỉ có chuyện Lohen bắt nạt ma vật chứ không có chuyện ma vật bắt nạt Lohen, mới khiến cha mẹ miễn cưỡng chấp nhận rằng mọi chuyện đã rồi.\n...Có lẽ lúc đó không phải họ nhận ra Lohen đã sở hữu thực lực của một nhà mạo hiểm hàng đầu, mà là biết rằng Lohen đã không thể ngoan ngoãn \"nghe lời\" nữa.\nNhưng họ vẫn không yên tâm, suốt nhiều năm liền không ngừng thuyết phục Lohen đừng mạo hiểm nữa, thậm chí còn tìm đến Adorno, người kỵ sĩ lão luyện từng cứu Lohen thoát khỏi hiểm cảnh, hy vọng ông có thể thay họ khuyên nhủ Lohen.\n\"Mũi tên đã lên dây cung thì không thể quay đầu, điều này các vị làm nghề chế tạo cung chắc hẳn hiểu rõ.\" Adorno dường như đã sớm dự đoán được lựa chọn của Lohen, \"...Nhưng chúng ta vẫn còn kịp tìm một hướng đi đúng đắn cho mũi tên sắp rời khỏi dây cung, đây là lời khuyên từ một cung thủ.\"\nAdorno nhận lời đi làm thuyết khách, cha mẹ Lohen cũng không biết họ đã nói chuyện gì, nhưng trong vài tháng sau đó Lohen quả thực đã yên phận hơn nhiều... Nghe nói là đang \"chuẩn bị thi\".\nVài tháng sau, Lohen bất ngờ xuất hiện tại hội trường sát hạch kỵ sĩ, với sức mạnh áp đảo đã giành được vị trí quán quân của kỳ thi đó, mặc dù cách thức có phần gây tranh cãi nhưng cuối cùng vẫn thành công gia nhập Đội Kỵ Sĩ.\nCũng được nhỉ, ít nhất trong Đội Kỵ Sĩ còn có biên chế chính thức, lại có đồng đội hỗ trợ, tốt hơn nhiều so với việc làm nhà mạo hiểm phải chiến đấu đơn độc.\nHơn nữa, cách đây mấy tháng, Lohen còn bắt đầu chê những ủy thác của hiệp hội quá nhàm chán, đang tính chạy khỏi Mondstadt để tìm kiếm những mục tiêu nguy hiểm hơn.\nCha mẹ Lohen an ủi nhau như vậy, chỉ là cả hai càng ngày càng thắc mắc về chuyện hôm đó Adorno đã nói gì mà khiến Lohen nảy sinh ý định gia nhập Đội Kỵ Sĩ.\n...\n\"...Nhóc con, hiện đã tra ra bọn chủ mưu của những vụ bắt cóc năm đó.\"\nLohen vốn không mấy hứng thú với thuyết khách, nhưng khi nghe vậy ánh mắt bỗng đanh lại: \"...Là ai?\"\n\"Đội Kỵ Sĩ Tây Phong sẽ sớm đưa ra thông báo, nhưng cậu cũng đừng nghĩ đến chuyện trả thù nữa.\" Adorno bình tĩnh kể lại, \"Hắn ta đã chết rồi.\"\nSau một hồi im lặng, Lohen lại lên tiếng: \"Chết dưới tay ai?\"\n\"Tự sát.\" \"Một kẻ như vậy làm sao có thể tự sát được, ngài biết tôi muốn hỏi gì, là ai đã đẩy hắn vào đường cùng.\"\n\"Đại Đội Trưởng, Kỵ Sĩ Bắc Phong, huyền thoại hiện tại của Mondstadt...\" Adorno mỉm cười, \"...Đủ làm mục tiêu mới cho cậu rồi chứ?\""
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 3",
+        "Context": "Đối với những \"kẻ bắt chước\" mình, Varka đã quá quen thuộc rồi.\nTrong vô số thiếu niên nhiệt huyết khao khát theo đuổi bóng dáng của vị đại anh hùng, thì xuất hiện vài người có năng lực hành động mạnh mẽ nhưng tự tin mù quáng về thực lực của bản thân cũng là chuyện thường.\nNhưng \"kẻ bắt chước\" như Lohen đây, Varka đúng là mới gặp lần đầu.\nNhững \"kẻ bắt chước\" trước đây, hành động quá đáng nhất cũng chỉ là lén tấn công, mục đích phần lớn là để chứng minh thực lực của bản thân, còn Lohen lần đầu xuất hiện đã có thể nói là không từ thủ đoạn.\nBắn lén, khói mù, bẫy, thậm chí cả thuốc mê có thể hạ gục ma vật trong chớp mắt... Đủ thứ thủ đoạn cực kỳ thâm hiểm, cứ như đến từ một lão binh dày dạn kinh nghiệm chiến đấu, thậm chí còn có chút bóng dáng của tàn dư Eroch.\n\"Không tệ đấy, nhóc con. Cũng có chút thực lực! Nhưng mà... mấy chiêu trò vặt này chẳng có tác dụng với tôi đâu!\"\nChỉ trong chớp mắt, Varka đã hoàn toàn áp chế \"tên nhóc\" trước mặt.\n\"Một đứa trẻ có thể bình tĩnh ứng phó với nguy hiểm khi bị bắt cóc, thậm chí có thể tự mình thoát ra.\"\n\"Cung thủ thấp bé luôn tấn công chính xác và tàn nhẫn quanh Cảng Dornman trong lời đồn của các nhà mạo hiểm.\"\n\"Tên nhóc liều lĩnh mới nhập ngũ chưa được bao lâu, đã bắt đầu đi khắp nơi tiêu diệt tàn dư Eroch.\"\nAnh đã từng nghe Adorno kể nhiều chuyện thú vị của Lohen, nên quyết định để màn kịch này kéo dài thêm một chút xem thử tên nhóc này có bản lĩnh gì.\nDưới sức ép của hai thanh cự kiếm đủ sức khiến cả đám ma vật phải nín thở, liệu ánh mắt của chàng trai non nớt này sẽ như thế nào đây?\nLà ngưỡng mộ? Hoảng loạn? Hay là...?\nVarka nhìn chằm chằm vào đôi mắt của Lohen, đôi mắt lạnh lùng ấy càng trở nên sắc bén. Trong đó, Varka dường như nhìn thấy niềm vui sướng, cũng như nhìn thấy chính mình, con người từng say mê thách thức kẻ mạnh và giành lấy vinh quang.\nĐây là một nhân tài tiềm năng, nhưng vẫn cần được rèn giũa kỹ lưỡng, phải cho cậu nhóc nếm chút khổ cực mới được. Vì vậy Varka đã ra tay bắt giữ tên tân binh táo bạo này, và quyết định cấm túc vài ngày: \"Nếu không phục, lúc nào cũng có thể thử lại. Tôi rất mong chờ biểu hiện của cậu đấy.\"\n\"Vậy thì hãy chờ xem.\" Trước khi bị nhốt cấm túc, Lohen nhún vai cười.\nNgày tiếp theo sau khi kết thúc cấm túc Lohen mang theo một chai rượu ngon mà Varka yêu thích nhất đến tìm, miệng thì nói là để bày tỏ lời xin lỗi.\n\"Ồ? Cậu cũng khá biết điều đấy, thậm chí còn chọn rượu Bồ Công Anh mà tôi thích nhất, vậy thì tôi không khách sáo nữa.\"\nVừa mới uống một ngụm rượu mạnh, Đại Đội Trưởng đã cảm thấy có chút chóng mặt và bất thường. Ngay sau đó, trong đầu anh hiện lên những lời Adorno đã nói sau khi bắt giam Lohen:\n\"Thành thật mà nói, tôi nghĩ ngài không nên xem cậu ấy như chính mình ngày trước, hay đứa trẻ Mondstadt ngưỡng mộ ngài nào khác. Đúng thật là Lohen cũng khá khâm phục sức mạnh của ngài đấy, nhưng tôi đoán những gì cậu ấy tính toán trong đầu vẫn nghiêng về việc là làm sao để khiêu chiến ngài.\"\n\"Nếu tôi đoán không nhầm thì cậu ấy chắc đang nghĩ, việc tìm cách thách đấu 'Varka hùng mạnh' nghe có vẻ rất thú vị. Dù có thua cũng chẳng có gì to tát, cùng lắm là nằm trên giường hai ngày thôi. Còn chuyện danh dự gì đó thì tôi đoán cậu ấy chẳng để tâm đâu.\"\nChỉ dựa vào thể trạng mạnh mẽ và ý chí kiên cường, Varka đã giữ vững thân hình đang lung lay trước ánh mắt kinh ngạc của Lohen.\n\"...Thật không thể tin được, theo ước tính của tôi thì liều lượng này đủ để hạ gục cả chục con lợn rừng đấy...\"\n\"Nhóc này, tôi đã nói rồi, mấy thủ đoạn vặt vãnh này không có tác dụng gì với tôi đâu!\"\nKể từ khoảnh khắc đó, Lohen đã có nhận thức hoàn toàn mới về khái niệm \"sức mạnh\":\nĐó là sức mạnh kiên cường mà bất kỳ cạm bẫy hay độc dược nào cũng không thể lay chuyển, là nền tảng tuyệt đối được tích lũy qua vô số khoảnh khắc sinh tử.\nKể từ đó, danh sách mục tiêu của Lohen lại thêm hai mục nữa:\nMột là, nghĩ mọi cách hạ gục Varka.\nHai là, áp dụng những cách đó cho chính mình và đảm bảo mình không bị hạ gục."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 4",
+        "Context": "Đội Kỵ Sĩ Tây Phong là một tổ chức lâu đời, trong đó từng xuất hiện vô số nhân vật anh hùng, nhưng cũng trải qua không ít bi kịch và đau thương.\nVô số câu chuyện truyền thuyết và bài học kinh nghiệm đã dạy cho các kỵ sĩ một chân lý:\nKhi hành động đi ngược lại đạo kỵ sĩ, bi kịch cũng sẽ ập đến.\nChính vì thế, bên trong Đội Kỵ Sĩ đã xuất hiện những chất vấn về việc Lohen đảm nhận chức đội phó Tiểu Đội 5.\nKhông cần bàn cãi gì, trong mắt nhiều người, một kẻ điên thường xuyên gây rắc rối, say mê phục kích Đại Đội Trưởng, lại thích dùng thuốc độc và bẫy khi chiến đấu, thì dù thế nào cũng chẳng có chút liên hệ tích cực nào với đạo kỵ sĩ cả.\nTất nhiên, bản thân Lohen không quan tâm gì đến những lời đồn đại này.\n\"Ta biết cậu chắc chắn không quan tâm đến cảm nhận của người khác. Nhưng cậu cũng rõ, viễn chinh không phải là nhiệm vụ có thể hoàn thành một mình được. Rất rõ ràng, nếu không có ai sẵn sàng đứng về phía cậu, thì đơn xin tham gia viễn chinh của cậu cũng có thể sẽ bị ảnh hưởng đấy.\"\nNói đến đây, Adorno dừng lại một chút, dường như lo lắng Lohen không có cách xử lý vấn đề này, nhưng cũng lại như sợ rằng Lohen sẽ làm tình hình trở nên tồi tệ hơn.\nKể từ khi Varka tuyên bố mở một cuộc viễn chinh chưa từng có tiền lệ, Lohen đã nóng lòng muốn tham gia.\nChiến trường xa xôi, đầy hiểm nguy chưa biết, đối với Lohen thú vị hơn bất kỳ món đồ chơi nào trên đời. Nhưng con đường nộp đơn của anh lại vô cùng gian nan, danh sách sát hạch đã công bố mấy lần, nhưng vẫn chẳng thấy tên anh đâu.\nAdorno biết rõ không câu hỏi nào trên chiến trường có thể làm khó được Lohen, chắc hẳn tên nhóc này đang gặp phải khó khăn ngoài chiến trường rồi.\nNhưng lần này Lohen lại thoải mái đến bất ngờ: \"Được thôi, nếu kỵ sĩ không chính thống không được tham gia sát hạch, vậy tôi làm giám khảo được chứ?\"\n...\n\"Từ góc độ thực chiến mà nói thì đây quả là một ý tưởng hay đấy. Nhân tiện cũng giúp những kỵ sĩ này nhận ra những thiếu sót của bản thân, tránh trường hợp một số người cứ có thời gian rảnh rỗi nghi ngờ liệu Đội Kỵ Sĩ có cần thiết phải cải cách hay không... Dù sao thì chúng ta không thể trông chờ mọi đối thủ đều tuân thủ đạo kỵ sĩ được.\"\nVừa lật xem bản đơn đăng ký đặc biệt mà Lohen trình lên lần này, Varka vừa suy nghĩ.\nBản báo cáo này liệt kê rất nhiều đề thi, ngoài những thủ đoạn mà Varka đã quá quen thuộc như tập kích ban đêm, cạm bẫy và đầu độc, còn bổ sung thêm những \"phương thức sát hạch\" hoàn toàn mới mẻ và đầy sáng tạo như cải trang tập kích, phá hoại vật tư tiếp tế trước khi diễn tập.\nLật đến trang cuối của báo cáo, Lohen còn mượn dùng một câu \"danh ngôn\", khiến Varka suýt phun ra ngụm rượu vừa đưa đến miệng:\n\"Nếu Kỵ Sĩ Tây Phong không bảo vệ nổi bản thân, thì còn bảo vệ Mondstadt thế nào được?\" - Trích lời nói vào đêm Đại Đội Trưởng đời trước bị tấn công.\n...Những sai lầm phạm phải lúc trẻ luôn tập kích mình bằng những cách không ngờ tới. Sau khi chỉnh đốn lại cảm xúc, Varka đã đưa ra quyết định và đánh dấu chấp thuận vào đơn đăng ký này.\nKỵ sĩ phi thường thì phải dùng đề thi phi thường để sát hạch.\nDù là với những kỵ sĩ viễn chinh... hay với chính Lohen."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 5",
+        "Context": "Với tư cách là người kế nhiệm tiềm năng nhất cho chức danh Kỵ Sĩ Nhân Ái, Lohen có lẽ cũng là người ít giống Kỵ Sĩ Nhân Ái nhất trong Đội Kỵ Sĩ Tây Phong.\nTrong ấn tượng sẵn có của mọi người, Kỵ Sĩ Nhân Ái đáng lẽ phải giải quyết hiểm nguy, cứu người khỏi hoạn nạn. Nhưng rõ ràng, Lohen lại đam mê việc chủ động tìm kiếm hiểm nguy, tiện thể đẩy người vào hoạn nạn. Đương nhiên, nạn nhân thường là kẻ thù của anh, và không nhất định phải là con người.\nTuy nhiên, những sở thích này của Lohen cũng không phải hoàn toàn vô ích. Ít nhất trong các nhiệm vụ can thiệp đặc biệt và nhiệm vụ nguy hiểm cao, thành tích của anh luôn vượt xa dự đoán của nhiều người.\nChính vì vậy mà trọng trách thực thi nhiều nhiệm vụ bí mật của quân viễn chinh, đương nhiên đều được giao cho Lohen.\nMột trong số đó chính là ủy thác bí mật từ quản lý đương nhiệm của Mạng Lưới Tình Báo Bắc Đại Lục.\nTheo phân tích tình báo, một nhà đấu giá ngầm đang lợi dụng tình hình hỗn loạn để hoạt động sôi nổi tại Nod-Krai. Chúng vừa kinh doanh buôn lậu, vừa bán đấu giá những món hàng nguy hiểm. Hành động cực kỳ thận trọng, phía sau chắc chắn còn có thế lực khác chống lưng. Nếu có thể triệt phá đường dây này, sẽ giành được lòng tin của Mạng Lưới Tình Báo Bắc Đại Lục.\n\"Chúng tôi hoàn toàn không nghi ngờ sức chiến đấu của các kỵ sĩ, nhưng ở nơi không tuân theo đạo kỵ sĩ, sức chiến đấu không hoàn toàn tương đương với thực lực.\"\nĐể xóa tan nghi ngại của Mạng Lưới Tình Báo Bắc Đại Lục, quân viễn chinh đã đưa ra một kế hoạch cực kỳ ổn thỏa:\nLohen sẽ bí mật bắt giữ những người hành động đơn độc, sau đó tra hỏi để lấy thông tin về thời gian và địa điểm diễn ra phiên đấu giá. Sau đó tiếp tục theo dõi, nghe lén và dần dần điều tra, xác định những người liên quan, kiểm soát rủi ro ở mức thấp nhất.\nDù nhìn từ góc độ nào, đây cũng là nhiệm vụ vô cùng phù hợp với Lohen. Một mình xâm nhập, bắt giữ chính xác, trực tiếp tấn công vào cốt lõi. Độ khó đủ cao, cũng đủ yên lặng.\nThật đáng tiếc, Nannina đã bỏ sót một điểm: Đối với Lohen, kế hoạch quá yên tĩnh thường cũng đồng nghĩa với việc không đủ triệt để.\nTrước khi khởi hành, Nannina còn đặc biệt truyền đạt lời dặn dò của Hồng Y Seamus: \"Tập trung vào nhiệm vụ, đừng gây chuyện.\"\nĐối với lời dặn, Lohen đáp gọn gàng: \"Yên tâm đi, tôi hiểu mà.\"\nVà rõ ràng anh cũng thực sự hiểu điều đó.\nÍt nhất theo như cách hiểu của chính Lohen, trọng tâm của nhiệm vụ này từ đầu đến cuối chỉ có một, đó là chứng minh sức mạnh của Đội Kỵ Sĩ Tây Phong trước Mạng Lưới Tình Báo Bắc Đại Lục.\n...\nVài ngày sau, Thành Mondstadt, văn phòng Đội Trưởng Đội Kỵ Sĩ.\nĐội Trưởng Đại Diện Jean đọc xong báo cáo hành động do quân viễn chinh gửi về, cầm bút viết thư hồi âm gửi Varka\n\"Về các hành động liên quan đến phiên đấu giá ngầm lần này, tôi đã nắm rõ toàn bộ tình hình.\"\n\"Khả năng phán đoán tức thời của Lohen vẫn hiệu quả và quả quyết như mọi khi. Cậu ấy đã thành công khống chế toàn bộ những người tham gia tại hiện trường, đồng thời tránh được việc chiến đấu lan rộng sang Thị Trấn Nasha, cuối cùng không gây thương vong cho dân thường. Chỉ xét từ kết quả thôi thì điều này quả thực xứng đáng được gọi là hành động bảo vệ dân chúng, thực hiện lòng nhân ái.\"\n\"Nếu xét về thành tích, tôi đồng ý với đánh giá của ngài: Hiện tại, Lohen đã đủ tư cách kế thừa danh hiệu của ngài Adorno. Hành động cũng có chừng mực... chỉ đến khi thâm nhập căn cứ địch.\"\n\"Nhưng mà xin thứ lỗi tôi nói thẳng, việc xuất hiện giữa căn cứ phe địch, chủ động gây chiến, một mình đột phá vòng vây, thậm chí còn treo chiến lợi phẩm để phô trương sức mạnh, tuyệt nhiên không phải phong cách thông thường của Đội Kỵ Sĩ Tây Phong.\"\n\"Nếu ngài có thời gian rảnh, xin hãy làm rõ điều này với những người liên quan của Mạng Lưới Tình Báo Bắc Đại Lục.\""
+      },
+      {
+        "Title": "\"Thiết Bị Ghi Chép Giao Tiếp Tổng Hợp Giả\"",
+        "Context": "\"Thiết Bị Đo Vẽ Tổng Hợp\" mà Mika mang theo bên mình luôn được giữ trong trạng thái hoàn hảo.\nTrong đó không chỉ ghi chép chi tiết địa hình, các địa điểm quan trọng và tuyến đường hành quân thông thường, thỉnh thoảng còn bổ sung cả dấu vết hoạt động của ma vật, phỏng đoán khu vực nguy hiểm.\nThông tin tình báo là nền tảng cho việc hành quân. Tuy nhiên, ngoài thông tin tình báo, một số kỵ sĩ còn quan tâm đến chính thiết bị này.\nVí dụ như Lohen.\n\"Thiết bị này phức tạp thế mà cậu lại dùng thành thạo như vậy sao?\" Sau khi hỏi thăm xong về tình hình phân bố của địch, Lohen bất ngờ khen một câu, \"Giỏi thật đấy.\"\nĐột nhiên nhận được lời khen như vậy từ vị tiền bối, tuy cùng lứa tuổi nhưng danh tiếng lại cách xa một trời một vực, Mika vừa bối rối vừa có chút kinh ngạc.\nLohen hứng thú đặt ra rất nhiều câu hỏi, còn Mika cũng ít khi thảo luận về thiết bị đo vẽ của mình với các kỵ sĩ ngoài nhóm kỹ thuật viên, nên bất giác cả hai đã trò chuyện rôm rả.\n\"Ừm, với thiết bị hiệu quả như vậy, chắc cậu biết không ít khu vực tập trung kẻ địch nhỉ?\" \"Nói đến chuyện này, bình thường cậu bảo trì thiết bị thế nào? Có linh kiện thay thế không?\"\n...Có lẽ vị tiền bối trẻ \"danh tiếng\" này, không đáng sợ như trong lời đồn?\nMika nhiệt tình và tỉ mỉ giải đáp mọi thắc mắc, còn Lohen thì nheo mắt gật gù, âm thầm ghi nhớ những điều mình muốn biết, còn những gì không quan tâm thì bỏ qua.\nSau vài lần như vậy, Mika dần nhận ra rằng, những khu vực mà Lohen đặc biệt hỏi kỹ, chỉ vài ngày sau đều trở nên yên tĩnh hơn hẳn.\nNếu liên hệ những vết thương mới thường xuyên xuất hiện trên người Lohen với việc anh thường xuyên tạm mất liên lạc kia, thì tất cả điều này khó có thể nói là \"trùng hợp\" nữa. Mika nhanh chóng đi đến một kết luận đáng lo ngại, thành quả đo vẽ của mình đang được Lohen vận dụng một cách \"hiệu quả\" bằng phương pháp nguy hiểm nào đó.\nVì thận trọng, Mika bắt đầu bỏ qua một số địa điểm tập trung ma vật không liên quan đến hành động trên bản vẽ giao cho Lohen, và cũng ngày càng ngập ngừng khi đối mặt với câu hỏi của Lohen.\n\"Ừm... chi tiết tôi đã báo cáo hết rồi!\" \"Vẫn... vẫn nên nghe theo chỉ huy thống nhất của Đại Đội Trưởng thôi!\"\nTrước sự né tránh của Mika, Lohen cũng không tiếp tục hỏi han, chỉ mỉm cười đầy ẩn ý, ánh mắt không rõ vô tình hay cố ý đặt lên thiết bị đo vẽ mà Mika đang ôm chặt trước ngực.\nKể từ đó, Mika càng chú ý hơn trong việc bảo quản thiết bị đo vẽ, trước khi rời khỏi chỗ ngồi anh sẽ kiểm tra xem sổ đã cất kỹ chưa, cũng sẽ kiểm tra đi kiểm tra lại số trang có đầy đủ không khi bàn giao tài liệu, thậm chí còn quay đầu nhìn lại sau khi đi được một đoạn, như thể lo lắng liệu có ai đó đang để mắt đến cuốn sổ sau lưng mình.\nNhưng cho dù vậy, hành động của Lohen vẫn không hề bị cản trở quá nhiều, như thể anh ấy đã nắm rõ từ lâu những thông tin mà Mika muốn che giấu... Hệt như ảo thuật vậy.\nMika suy đi nghĩ lại vẫn không hiểu nổi, cho đến một bữa tiệc lửa trại nọ của đội viễn chinh.\nEkbert ầm ĩ đòi biểu diễn ảo thuật Fontaine mới học để tạo không khí, ai ngờ say quá nên vô tình để lộ mánh khóe.\nCứ tưởng sẽ biểu diễn màn ảo thuật đổi trắng thay đen thật hoành tráng, ai ngờ vô tình để lộ hai lá bài gần như giống hệt nhau trước mặt khán giả quá sớm.\nNguyên lý của màn ảo thuật cũng đơn giản thôi, chỉ là lén lút dùng lá bài giả đã được ngụy trang để thay thế lá bài thật mà khán giả chọn ra, sau đó dùng lá bài giả để thu hút sự chú ý của khán giả, rồi trong khoảng thời gian cực ngắn đó lại làm thêm một số thao tác với lá bài thật. Tiếc là chưa bắt đầu đã kết thúc rồi.\nGiữa tiếng cười vang vọng khắp phòng, Mika không hiểu sao lại nhớ đến một câu hỏi mà Lohen từng hỏi anh từ rất lâu trước đây.\n...Nói đến chuyện này, bình thường cậu bảo trì thiết bị thế nào? Có linh kiện thay thế không?\nTrong khoảnh khắc đó, một số chi tiết trong quá khứ đột nhiên trở nên rõ ràng: Số lượng phụ tùng trong kho dự phòng giảm đi một cách bí ẩn, những trang sách thỉnh thoảng không thể mở được vì trục trặc...\nKhông lẽ có người lại bắt đầu tính toán cách chơi khăm đồng nghiệp ngay từ khi mới quen sao?\nKhông lẽ có người ngoài mặt vừa tỏ ra nhiệt tình hỏi han, mà trong bụng lại vừa toan tính chuyện xấu gì đó?\nKhông lẽ có người lại lợi dụng khoảnh khắc mình chớp mắt, dùng thứ gọi là \"thiết bị đo vẽ giả\" để đánh tráo với đồ thật, sau khi sao chép xong tình báo còn cả gan đổi ngược về?\nNghĩ đến đây, Mika đột nhiên cảm nhận được ánh nhìn sắc bén, như chú chim bị thợ săn nhắm đến... Anh đột ngột đưa mắt lên nhìn, chỉ thấy Lohen cũng đang cười đùa giữa đám đông, chẳng hề hướng ánh mắt về phía ai cả.\nTiếng cười đó vui vẻ, thậm chí có thể gọi là chân thành... giống như lần đầu tiên anh ấy nhiệt tình trò chuyện với Mika vậy, không giống như đang giả vờ."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Lohen đã sớm suy nghĩ kỹ về việc làm sao để có được \"sức mạnh cấp đội trưởng\".\nKhông còn nghi ngờ gì nữa, một đội trưởng cần có đủ sức mạnh để đối đầu trực diện với những ma vật hùng mạnh, đồng thời cũng phải có khả năng một mình giải quyết được đám quân địch kéo đến như thủy triều.\nVarka có cả sức công phá lẫn khả năng chiến đấu bền bỉ, và vị đội trưởng trẻ nhất trong lịch sử Đội Kỵ Sĩ Tây Phong dường như cũng vậy.\nNhưng đối với Tiểu Đội 5 sử dụng vũ khí tầm xa, thì sức công phá và sức bền dường như lại rất mâu thuẫn với nhau.\nMuốn đạt sức công phá mạnh mẽ, thì cần phải có cung mạnh với lực căng lớn hơn, cùng với những mũi tên to lớn nặng hơn và có sức xuyên thủng cao hơn.\nNhưng ngay cả anh cũng chỉ có thể mang theo một lượng nhỏ mũi tên nặng. Sau khi hết mũi tên, sẽ phải vội vàng rút lui về hậu phương để chỉnh đốn và bổ sung trang bị. Chiến thuật như vậy rõ ràng ảnh hưởng đến khả năng chiến đấu liên tục.\nHơn nữa, Lohen vốn không thích rời xa tiền tuyến để rút lui về hậu phương. Dù sao thì, việc đứng ở tuyến đầu tiên đối mặt trực diện với kẻ thù mới chính là kiểu chiến đấu mà anh khao khát.\nVậy có cách nào đảm bảo được cả hai không? Chàng kỵ sĩ trẻ chìm vào suy tư.\n\"Hình như... cũng không phải là không có cách?\"\nVô tình, Lohen liếc nhìn thấy các kỵ sĩ đang bận rộn chuẩn bị cho lễ duyệt binh diễn tập. Bên cạnh họ, những ngọn thương nghi thức lấp lánh sáng bóng, trông như những mũi tên khổng lồ đang chờ được vận chuyển.\n\"Có lẽ, có thể tìm một mũi tên thu hồi lại được sau khi bắn ra?\"\n\"Hoặc có lẽ, không nhất thiết phải bắn ra nhỉ?\"\n\"Dù sao trong cận chiến, sức công phá không chừng sẽ mạnh hơn? Hơn nữa, biết đâu 'cảm giác đau' cũng sẽ mãnh liệt hơn.\"\n...\nHơn mười ngày sau, buổi diễn tập thường lệ của Đội Kỵ Sĩ diễn ra đúng như dự kiến. Nhưng lần này lại có một chút khác biệt nhỏ, trong đội hình ban đầu của Tiểu Đội Tầm Xa, bất ngờ xuất hiện một cây thương dài.\nTốc độ xông pha của trường thương này quá nhanh, khiến chủ nhân của nó rơi vào vòng vây.\n\"Đại Đội Trưởng, ngài vẫn quyết định để cậu ta làm đội phó Tiểu Đội 5 sao?\" Ở phía xa, Hồng Y Seamus đang quan sát cuộc diễn tập liền hỏi.\n\"Ừ, đúng vậy. Nhìn xem, chẳng phải Lohen phối hợp rất ăn ý với các thành viên khác trong Tiểu Đội Tầm Xa à?\"\n\"Thành thật mà nói, tôi chẳng thấy phối hợp gì cả, tôi chỉ thấy một bia di động cực kỳ nổi bật. Tất cả hỏa lực tầm xa của phe địch và phe ta đều đang tập trung vào bia này.\"\n\"Haha! Không sao đâu, anh thấy đấy, rõ ràng là tấn công của Tiểu Đội Tầm Xa đã hiệu quả hơn nhiều rồi! Hơn nữa cho đến giờ Lohen vẫn chưa ngã, chứng tỏ chiến thuật này rất ổn mà!\"\nCái này tốt chỗ nào chứ! Seamus vốn định lớn tiếng phản bác như vậy, nhưng thành tích chiến đấu của họ quả thực quá xuất sắc rồi.\n...\nVào ngày hôm đó, tất cả mọi người đều được như ý hay nói cách khác, cũng đều nhận được một thứ gì đó.\nTiểu Đội 5 có thêm một đội phó, quân viễn chinh có thêm một \"Sĩ Quan Áp Chế Tiền Tuyến\", Seamus bận rộn được một \"ngày nghỉ đau đầu đặc biệt\" còn Varka thì có thêm một \"chuyện cười Seamus\" để nhâm nhi với rượu.\nCòn Lohen, kể từ ngày hôm đó, anh đã có được một phong cách chiến đấu và sinh sống mới, cùng với một \"viên pha lê\" có thể phát huy tác dụng khi thực hiện nhiệm vụ."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 212900,
+      "Name": "Sương Đúc Sắc Bén",
+      "Description": "Phong cách của Lohen. So với trang phục lúc còn là nhà mạo hiểm, thì bộ giáp kỵ sĩ trông trang trọng hơn nhiều. Nhưng đối với Lohen, thứ thay đổi chẳng qua chỉ là sức nặng của trang bị và ánh nhìn của người ngoài, còn thứ không đổi, chính là ý chí chiến thắng kẻ địch, cùng với chấp niệm luôn không ngừng tiến về phía trước.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104164,
+    113085,
+    101272,
+    112013,
+    104306,
+    113073
+  ],
+  "NameCard": {
+    "Name": "Lohen - Nhân Ái",
+    "Description": "Hoa văn danh thiếp.\nDường như \"nhân ái\" là tính từ xa Lohen nhất trong tất cả các tính từ trên thế giới này. Tuy nhiên, những chiếc gai sắc nhọn nhất cũng được mọc lên từ mảnh đất ôn hòa mà.",
+    "Icon": "UI_NameCardIcon_Lohen",
+    "PicturePrefix": "UI_NameCardPic_Lohen"
+  }
+}

@@ -277,6 +277,7 @@
         "Id": 10931,
         "Name": "Word of Wind and Flower",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nSummons swirling winds to perform up to 4 attacks, dealing <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina and launches a Breeze Bolt in a straight line that deals <color=#80FFD7FF>Anemo DMG</color> to opponents along its path.\n\n<color=#FFD780FF>Plunging Attack</color>\nGathers the power of Anemo and plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#80FFD7FF>AoE Anemo DMG</color> upon impact with the ground.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_Catalyst_MD"
       },
       {
@@ -459,6 +460,7 @@
         "Id": 10932,
         "Name": "White Clouds at Dawn",
         "Description": "Xianyun enters the Cloud Transmogrification state, in which she will not take Fall DMG, and uses Skyladder once.\nIn this state, her Plunging Attack will be converted into Driftcloud Wave instead, which deals <color=#80FFD7FF>AoE Anemo DMG</color> and ends the Cloud Transmogrification state. This DMG is considered Plunging Attack DMG.\nEach use of Skyladder while in this state increases the DMG and AoE of the next Driftcloud Wave used.\n\n<color=#FFD780FF>Skyladder</color>\nCan be used while in mid-air. Xianyun leaps forward, dealing <color=#80FFD7FF>Anemo DMG</color> to targets along her path.\nDuring each Cloud Transmogrification state Xianyun enters, Skyladder may be used up to 3 times and only 1 instance of Skyladder DMG can be dealt to any one opponent.\nIf Skyladder is not used again in a short period, the Cloud Transmogrification state will be canceled.\n\nIf Xianyun does not use Driftcloud Wave while in this state, the next CD of White Clouds at Dawn will be decreased by 3s.\n\n<i>Do not shake Cloud Retainer's hand too tightly; cranes are quite adept at gripping.</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Liuyun_01"
       }
     ],
@@ -736,6 +738,7 @@
       "Id": 10935,
       "Name": "Stars Gather at Dusk",
       "Description": "Brings forth a sacred breeze that deals <color=#80FFD7FF>AoE Anemo DMG</color> and heals all nearby characters based on Xianyun's ATK. It will also summon the \"Starwicker\" mechanism.\n\n<color=#FFD780FF>Starwicker</color>\n·Continuously follows the active character and periodically heals all nearby party members based on Xianyun's ATK.\n·Starts with 8 stacks of Adeptal Assistance. While Adeptal Assistance is active, nearby active characters in the party will have their jump height increased.\n·When the active character completes a Plunging Attack, Starwicker will consume 1 stack of Adeptal Assistance and deal <color=#80FFD7FF>AoE Anemo DMG</color>.\nOnly 1 Starwicker can exist simultaneously.\n\n<i>This is the newest invention in the \"Lunastar Artifices\" series, of which previous creations include the Supreme Cuisine Machine, the Snowdrift Mechanism, the Supreme Housekeeping Machine, the Floating Toting Device, and the Bloom Pruner. This series was intended for young humans Cloud Retainer held in great esteem, and so was not designed with a certain half-adeptus in mind. However, when offered Starwicker, a certain female disciple of hers had these emotionless words to say: \"No thank you.\"\nCloud Retainer thus had no choice but to keep it herself.</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Liuyun_01"
     },
     "Inherents": [
@@ -761,6 +764,7 @@
         "Id": 932101,
         "Name": "Galefeather Pursuit",
         "Description": "Each opponent hit by Driftcloud Waves from <color=#FFD780FF>White Clouds at Dawn</color> will grant all nearby party members 1 stack of Storm Pinion for 20s. Max 4 stacks. These will cause the characters' Plunging Attack CRIT Rate to increase by 4%/6%/8%/10% respectively.\nEach Storm Pinion created by hitting an opponent has an independent duration.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Liuyun_05"
       },
       {
@@ -783,6 +787,7 @@
         "Id": 932201,
         "Name": "Consider, the Adeptus in Her Realm",
         "Description": "When the Starwicker created by <color=#FFD780FF>Stars Gather at Dusk</color> has Adeptal Assistance stacks, nearby active characters' Plunging Attack shockwave DMG will be increased by 200% of Xianyun's ATK. The maximum DMG increase that can be achieved this way is 9,000.\nEach Plunging Attack shockwave DMG instance can only apply this increased DMG effect to a single opponent. Each character can trigger this effect once every 0.4s.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Liuyun_06"
       },
       {
@@ -801,6 +806,7 @@
         "Id": 932301,
         "Name": "Crane Form",
         "Description": "Increases gliding SPD for your own party members by 15%.\nNot stackable with Passive Talents that provide the exact same effects.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Liuyun_07"
       }
     ],

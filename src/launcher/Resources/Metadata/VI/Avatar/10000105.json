@@ -1,0 +1,1089 @@
+{
+  "Id": 10000105,
+  "PromoteId": 105,
+  "Sort": 89,
+  "Body": 4,
+  "Icon": "UI_AvatarIcon_Olorun",
+  "SideIcon": "UI_AvatarIcon_Side_Olorun",
+  "Name": "Ororon",
+  "Description": "Một người trẻ tuổi đến từ Chủ Nhân Gió Đêm, nhưng lại sống ở nơi hoang vu cùng ngàn vạn sinh linh.",
+  "BeginTime": "2024-11-19T00:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 12,
+  "BaseValue": {
+    "HpBase": 775.02234,
+    "AttackBase": 20.4792,
+    "DefenseBase": 49.2135
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 0,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [],
+          "Display": 0
+        },
+        "Id": 30506,
+        "Name": "Nhảy Đặc Biệt",
+        "Description": "Nếu nhân vật ở trong khu vực Natlan, sau khi nhấn giữ có thể tiêu hao Phlogiston để tiến hành Nhảy Hỏa Tiễn Hai Bước. Khi tiêu hao hết Phlogiston sẽ chuyển thành tiêu hao Thể Lực để Nhảy Hai Bước.",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_E_Olorun_03"
+      },
+      {
+        "GroupId": 10531,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Lần 1|{param1:F1P}",
+            "Sát Thương Lần 2|{param2:F1P}",
+            "Sát Thương Lần 3|{param3:F1P}",
+            "Ngắm Bắn|{param4:F1P}",
+            "Tụ Lực Ngắm Bắn|{param5:P}",
+            "Sát Thương Khi Đáp|{param6:F1P}",
+            "Sát Thương Khi Đáp Từ Độ Cao Thấp/Cao|{param7:P}/{param8:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1053101,
+              "Level": 1,
+              "Parameters": [
+                0.50642,
+                0.443734,
+                0.698208,
+                0.4386,
+                1.24,
+                0.568288,
+                1.136335,
+                1.419344
+              ]
+            },
+            {
+              "Id": 1053102,
+              "Level": 2,
+              "Parameters": [
+                0.54764,
+                0.479852,
+                0.755039,
+                0.4743,
+                1.333,
+                0.614544,
+                1.228828,
+                1.534872
+              ]
+            },
+            {
+              "Id": 1053103,
+              "Level": 3,
+              "Parameters": [
+                0.58886,
+                0.51597,
+                0.81187,
+                0.51,
+                1.426,
+                0.6608,
+                1.32132,
+                1.6504
+              ]
+            },
+            {
+              "Id": 1053104,
+              "Level": 4,
+              "Parameters": [
+                0.647746,
+                0.567567,
+                0.893057,
+                0.561,
+                1.55,
+                0.72688,
+                1.453452,
+                1.81544
+              ]
+            },
+            {
+              "Id": 1053105,
+              "Level": 5,
+              "Parameters": [
+                0.688966,
+                0.603685,
+                0.949888,
+                0.5967,
+                1.643,
+                0.773136,
+                1.545944,
+                1.930968
+              ]
+            },
+            {
+              "Id": 1053106,
+              "Level": 6,
+              "Parameters": [
+                0.736075,
+                0.644963,
+                1.014838,
+                0.6375,
+                1.736,
+                0.826,
+                1.65165,
+                2.063
+              ]
+            },
+            {
+              "Id": 1053107,
+              "Level": 7,
+              "Parameters": [
+                0.80085,
+                0.701719,
+                1.104143,
+                0.6936,
+                1.86,
+                0.898688,
+                1.796995,
+                2.244544
+              ]
+            },
+            {
+              "Id": 1053108,
+              "Level": 8,
+              "Parameters": [
+                0.865624,
+                0.758476,
+                1.193449,
+                0.7497,
+                1.984,
+                0.971376,
+                1.94234,
+                2.426088
+              ]
+            },
+            {
+              "Id": 1053109,
+              "Level": 9,
+              "Parameters": [
+                0.930399,
+                0.815233,
+                1.282755,
+                0.8058,
+                2.108,
+                1.044064,
+                2.087686,
+                2.607632
+              ]
+            },
+            {
+              "Id": 1053110,
+              "Level": 10,
+              "Parameters": [
+                1.001062,
+                0.877149,
+                1.380179,
+                0.867,
+                2.232,
+                1.12336,
+                2.246244,
+                2.80568
+              ]
+            },
+            {
+              "Id": 1053111,
+              "Level": 11,
+              "Parameters": [
+                1.071725,
+                0.939065,
+                1.477603,
+                0.9282,
+                2.356,
+                1.202656,
+                2.404802,
+                3.003728
+              ]
+            },
+            {
+              "Id": 1053112,
+              "Level": 12,
+              "Parameters": [
+                1.142388,
+                1.000982,
+                1.575028,
+                0.9894,
+                2.48,
+                1.281952,
+                2.563361,
+                3.201776
+              ]
+            },
+            {
+              "Id": 1053113,
+              "Level": 13,
+              "Parameters": [
+                1.213052,
+                1.062898,
+                1.672452,
+                1.0506,
+                2.635,
+                1.361248,
+                2.721919,
+                3.399824
+              ]
+            },
+            {
+              "Id": 1053114,
+              "Level": 14,
+              "Parameters": [
+                1.283715,
+                1.124815,
+                1.769877,
+                1.1118,
+                2.79,
+                1.440544,
+                2.880478,
+                3.597872
+              ]
+            },
+            {
+              "Id": 1053115,
+              "Level": 15,
+              "Parameters": [
+                1.354378,
+                1.186731,
+                1.867301,
+                1.173,
+                2.945,
+                1.51984,
+                3.039036,
+                3.79592
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 30501,
+        "Name": "Mũi Tên Linh Hồn",
+        "Description": "<color=#FFD780FF>Tấn Công Thường</color>\nThực hiện tối đa 3 lần bắn tên liên tiếp.\n\n<color=#FFD780FF>Trọng Kích</color>\nTiến hành <color=#FFD780FF>ngắm bắn</color> chuẩn hơn, sát thương cao hơn.\nKhi ngắm bắn, nguyên tố Lôi sẽ tích tụ trên mũi tên. Mũi tên mang nguyên tố Lôi sẽ gây <color=#FFACFFFF>Sát Thương Nguyên Tố Lôi</color>.\n\n<color=#FFD780FF>Tấn Công Khi Đáp</color>\nBắn mưa tên xuống mặt đất, đồng thời lao nhanh xuống đất và gây sát thương phạm vi khi chạm đất.",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_A_02"
+      },
+      {
+        "GroupId": 10532,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Ngọc Linh Hồn|{param1:F1P}",
+            "CD|{param2:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1053201,
+              "Level": 1,
+              "Parameters": [
+                1.976,
+                15
+              ]
+            },
+            {
+              "Id": 1053202,
+              "Level": 2,
+              "Parameters": [
+                2.1242,
+                15
+              ]
+            },
+            {
+              "Id": 1053203,
+              "Level": 3,
+              "Parameters": [
+                2.2724,
+                15
+              ]
+            },
+            {
+              "Id": 1053204,
+              "Level": 4,
+              "Parameters": [
+                2.47,
+                15
+              ]
+            },
+            {
+              "Id": 1053205,
+              "Level": 5,
+              "Parameters": [
+                2.6182,
+                15
+              ]
+            },
+            {
+              "Id": 1053206,
+              "Level": 6,
+              "Parameters": [
+                2.7664,
+                15
+              ]
+            },
+            {
+              "Id": 1053207,
+              "Level": 7,
+              "Parameters": [
+                2.964,
+                15
+              ]
+            },
+            {
+              "Id": 1053208,
+              "Level": 8,
+              "Parameters": [
+                3.1616,
+                15
+              ]
+            },
+            {
+              "Id": 1053209,
+              "Level": 9,
+              "Parameters": [
+                3.3592,
+                15
+              ]
+            },
+            {
+              "Id": 1053210,
+              "Level": 10,
+              "Parameters": [
+                3.5568,
+                15
+              ]
+            },
+            {
+              "Id": 1053211,
+              "Level": 11,
+              "Parameters": [
+                3.7544,
+                15
+              ]
+            },
+            {
+              "Id": 1053212,
+              "Level": 12,
+              "Parameters": [
+                3.952,
+                15
+              ]
+            },
+            {
+              "Id": 1053213,
+              "Level": 13,
+              "Parameters": [
+                4.199,
+                15
+              ]
+            },
+            {
+              "Id": 1053214,
+              "Level": 14,
+              "Parameters": [
+                4.446,
+                15
+              ]
+            },
+            {
+              "Id": 1053215,
+              "Level": 15,
+              "Parameters": [
+                4.693,
+                15
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 30502,
+        "Name": "Màn Đêm Trói Buộc",
+        "Description": "Ororon cụ thể hóa bí thuật cổ xưa của Chủ Nhân Gió Đêm thành <color=#FFD780FF>Ngọc Linh Hồn</color> của màn đêm và ném vào kẻ địch, gây <color=#FFACFFFF>Sát Thương Nguyên Tố Lôi</color> mang thuộc tính Dạ Hồn.\nKhi xung quanh có kẻ địch khác, Ngọc Linh Hồn sẽ nảy bật giữa những kẻ địch, gây <color=#FFACFFFF>Sát Thương Nguyên Tố Lôi</color> mang thuộc tính Dạ Hồn. Sau mỗi lần thi triển Màn Đêm Trói Buộc, mỗi kẻ địch chỉ được chọn làm mục tiêu một lần.\nKhi nảy bật 3 lần hoặc không còn kẻ địch bị chọn làm mục tiêu thì Ngọc Linh Hồn sẽ biến mất.\n\n<i>\"Con người luôn muốn dự đoán tương lai, nhưng đó có lẽ là vì họ chưa tìm được việc mình nên làm... Xin lỗi, lại nói những lời khó hiểu rồi.\"</i>",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_S_Olorun_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 10539,
+      "Proud": {
+        "Descriptions": [
+          "Sát Thương Nghi Thức Cổ|{param1:F1P}",
+          "Sát Thương Sóng Âm|{param2:F1P}",
+          "Thời Gian Duy Trì|{param3:F1}s",
+          "CD|{param4:F1}s",
+          "Năng Lượng Nguyên Tố|{param5:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1053901,
+            "Level": 1,
+            "Parameters": [
+              1.74384,
+              0.332,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053902,
+            "Level": 2,
+            "Parameters": [
+              1.874628,
+              0.3569,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053903,
+            "Level": 3,
+            "Parameters": [
+              2.005416,
+              0.3818,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053904,
+            "Level": 4,
+            "Parameters": [
+              2.1798,
+              0.415,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053905,
+            "Level": 5,
+            "Parameters": [
+              2.310588,
+              0.4399,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053906,
+            "Level": 6,
+            "Parameters": [
+              2.441376,
+              0.4648,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053907,
+            "Level": 7,
+            "Parameters": [
+              2.61576,
+              0.498,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053908,
+            "Level": 8,
+            "Parameters": [
+              2.790144,
+              0.5312,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053909,
+            "Level": 9,
+            "Parameters": [
+              2.964528,
+              0.5644,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053910,
+            "Level": 10,
+            "Parameters": [
+              3.138912,
+              0.5976,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053911,
+            "Level": 11,
+            "Parameters": [
+              3.313296,
+              0.6308,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053912,
+            "Level": 12,
+            "Parameters": [
+              3.48768,
+              0.664,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053913,
+            "Level": 13,
+            "Parameters": [
+              3.70566,
+              0.7055,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053914,
+            "Level": 14,
+            "Parameters": [
+              3.92364,
+              0.747,
+              9,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 1053915,
+            "Level": 15,
+            "Parameters": [
+              4.14162,
+              0.7885,
+              9,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 30505,
+      "Name": "Tiếng Vọng U Ám",
+      "Description": "Ororon triệu hồi nghi thức cổ đại, gây <color=#FFACFFFF>Sát Thương Phạm Vi Nguyên Tố Lôi</color> mang thuộc tính Dạ Hồn, đồng thời triệu hồi Mắt Siêu Âm.\n\n<color=#FFD780FF>Mắt Siêu Âm</color>\n·Liên tục khiêu khích kẻ địch xung quanh tấn công.\n·Liên tục xoay tròn và giải phóng sóng âm, gây <color=#FFACFFFF>Sát Thương Nguyên Tố Lôi</color> mang thuộc tính Dạ Hồn cho kẻ địch xung quanh.\n\n<i>Người đủ nhạy bén sẽ nghe được âm thanh của vạn vật. Như vậy cho dù là đêm dài tăm tối thì cũng sẽ không bị mất phương hướng.</i>",
+      "SpecialEnergyType": 0,
+      "Icon": "Skill_E_Olorun_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 10521,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1052101,
+              "Level": 1,
+              "Parameters": [
+                40,
+                1.6,
+                10,
+                6
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1052101,
+        "Name": "Cảm Nhận Trong Đêm Tối",
+        "Description": "Sau khi nhân vật trong đội ở gần kích hoạt Dạ Hồn Bùng Nổ, Ororon sẽ nhận 40 điểm Dạ Hồn. Trong 15s sau khi thi triển Kỹ Năng Nguyên Tố, khi đòn đánh mang loại nguyên tố <color=#80C0FFFF>Thủy</color> hoặc <color=#FFACFFFF>Lôi</color> của nhân vật khác trong đội đánh trúng kẻ địch, Ororon sẽ nhận 5 điểm Dạ Hồn. Hiệu quả này mỗi 0.3s tối đa kích hoạt một lần, trong thời gian duy trì tối đa kích hoạt 10 lần.\nGiới hạn Điểm Dạ Hồn của Ororon là 80 điểm.\n\nNgoài ra, khi kẻ địch gần đó chịu sát thương phản ứng <color=#FFACFFFF>Điện Cảm hoặc Nguyệt-Điện Cảm</color> hoặc sát thương thuộc tính Dạ Hồn do nhân vật khác trong đội gần đó gây ra, nếu Ororon có ít nhất 10 điểm Dạ Hồn, thì anh ấy sẽ tiêu hao 10 điểm Dạ Hồn để tiến vào trạng thái Dạ Hồn Chúc Phúc và kích hoạt hiệu quả \"Siêu Giác Quan\": Gây <color=#FFACFFFF>Sát Thương Nguyên Tố Lôi</color> mang thuộc tính Dạ Hồn cho tối đa 4 kẻ địch xung quanh tương đương 160% Tấn Công của Ororon. Hiệu quả nêu trên mỗi 1.8s tối đa kích hoạt một lần.\n\n<color=#FFD780FF>Dạ Hồn Chúc Phúc - Ororon</color>\nTrạng thái Dạ Hồn Chúc Phúc của Ororon tối đa duy trì 6s.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Olorun_05"
+      },
+      {
+        "GroupId": 10522,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1052201,
+              "Level": 1,
+              "Parameters": [
+                15,
+                3,
+                3,
+                1,
+                3
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1052201,
+        "Name": "Chất Xúc Tác Diện Mạo",
+        "Description": "Sau khi <color=#FFD780FF>Ngọc Linh Hồn</color> từ Kỹ Năng Nguyên Tố <color=#FFD780FF>Màn Đêm Trói Buộc</color> đánh trúng kẻ địch, Ororon sẽ nhận được hiệu quả Ấn Diện Mạo trong 15s.\n\n<color=#FFD780FF>Ấn Diện Mạo</color>\nNhân vật ra trận trong đội gần đó tiến hành Tấn Công Thường, Trọng Kích hoặc Tấn Công Khi Đáp trúng kẻ địch, sẽ hồi phục cho nhân vật đó 3 điểm Năng Lượng Nguyên Tố. Nếu Ororon không ra trận thì Ororon cũng sẽ được hồi phục 3 điểm Năng Lượng Nguyên Tố. Hiệu quả này mỗi 1s tối đa kích hoạt một lần, trong thời gian duy trì tối đa kích hoạt 3 lần.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Olorun_06"
+      },
+      {
+        "GroupId": 10523,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1052301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1052301,
+        "Name": "Món Quà Dạ Vực - Sương Ảnh Hoạt Náo",
+        "Description": "Khi ở trong khu vực có cơ chế Phlogiston của Natlan, có thể tiến hành Dạ Hồn Chuyển Hóa - Ororon. Nhân vật trong trận khi ở trên không, đổi sang Ororon ra trận sẽ kích hoạt: Ororon sẽ nhảy lên cao. Đội bản thân mỗi 10s có thể kích hoạt một lần Dạ Hồn Chuyển Hóa.\n\nKhi nhấn giữ ngắm bắn, Ororon sẽ vào trạng thái \"Ngoại Cảm\". Khi ở trong trạng thái này, Ororon có thể tương tác với Graffiti Linh Hồn và Hoa Văn Linh Hồn để lấy thông tin và sức mạnh. Quy tắc tương tác vật phẩm này tương tự như quy tắc của Iktomisaurus.\n\nNgoài ra, khi nhấn giữ nút nhảy, Ororon sẽ tiêu hao 75 Thể Lực để nhảy lên cao. Khi ở trong khu vực có cơ chế Phlogiston của Natlan, Ororon sẽ ưu tiên tiêu hao 5 điểm Phlogiston để nhảy đến độ cao cao hơn.\nKhi ở trên không, Ororon có thể nhấn giữ Tấn Công Thường và tiêu hao Phlogiston hoặc Thể Lực để tiến hành ngắm bắn.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Olorun_07"
+      },
+      {
+        "GroupId": 10525,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1052501,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1052501,
+        "Name": "Nghệ Thuật Thay Da Đổi Thịt",
+        "Description": "Nhân vật trong đội của bản thân khi bay, tốc độ di chuyển tăng 15%.\nKhông thể cộng dồn với buff Thiên Phú có cùng hiệu quả.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Olorun_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1051,
+        "Name": "Vết Tích Giữa Rừng Sương",
+        "Description": "<color=#FFD780FF>Ngọc Linh Hồn</color> từ Kỹ Năng Nguyên Tố <color=#FFD780FF>Màn Đêm Trói Buộc</color> có thể nảy thêm 2 lần.\nNgoài ra, sau khi <color=#FFD780FF>Ngọc Linh Hồn</color> trúng kẻ địch, sẽ thi triển hiệu quả Thủy Triều Đêm lên kẻ địch trong 12s. Sát thương gây ra từ hiệu ứng Siêu Giác Quan của thiên phú \"Cảm Nhận Trong Đêm Tối\" sẽ tăng 50% cho kẻ địch bị ảnh hưởng bởi Thủy Triều Đêm. Hiệu quả này cần mở khóa thiên phú \"Cảm Nhận Trong Đêm Tối\".",
+        "Icon": "UI_Talent_S_Olorun_01"
+      },
+      {
+        "Id": 1052,
+        "Name": "Vua Ong Giấu Rượu Mật",
+        "Description": "Sau khi thi triển Kỹ Năng Nộ <color=#FFD780FF>Tiếng Vọng U Ám</color>, Ororon sẽ nhận được hiệu quả Siêu Tâm Linh trong 9s.\n\n<color=#FFD780FF>Siêu Tâm Linh</color>\nNhận 8% <color=#FFACFFFF>Buff Sát Thương Nguyên Tố Lôi</color>.\nNgoài ra, trong thời gian duy trì, Kỹ Năng Nộ <color=#FFD780FF>Tiếng Vọng U Ám</color> hoặc <color=#FFD780FF>Mắt Siêu Âm</color> mỗi trúng thêm một kẻ địch, sẽ khiến Ororon nhận thêm 8% <color=#FFACFFFF>Buff Sát Thương Nguyên Tố Lôi</color>. Tối đa nhận được 32% <color=#FFACFFFF>Buff Sát Thương Nguyên Tố Lôi</color> bằng cách này.",
+        "Icon": "UI_Talent_S_Olorun_02"
+      },
+      {
+        "Id": 1053,
+        "Name": "Lồng Linh Hồn Của Dơi",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Tiếng Vọng U Ám</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Olorun_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1054,
+        "Name": "Làn Sương Trong Gió Đêm",
+        "Description": "Tăng 25% tốc độ xoay của <color=#FFD780FF>Mắt Siêu Âm</color> triệu hồi từ Kỹ Năng Nộ <color=#FFD780FF>Tiếng Vọng U Ám</color>.\nNgoài ra, sau khi thi triển <color=#FFD780FF>Tiếng Vọng U Ám</color>, bản thân Ororon sẽ hồi phục 8 điểm Năng Lượng Nguyên Tố.",
+        "Icon": "UI_Talent_S_Olorun_03"
+      },
+      {
+        "Id": 1055,
+        "Name": "Quà Tặng Cho Tâm Hồn",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Màn Đêm Trói Buộc</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Olorun_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1056,
+        "Name": "Lời Ca Đến Suối Sâu",
+        "Description": "Sau khi kích hoạt Siêu Giác Quan từ thiên phú \"Cảm Nhận Trong Đêm Tối\", nhân vật ra trận trong đội bản thân sẽ tăng 10% Tấn Công, duy trì 9s. Hiệu quả này tối đa cộng dồn 3 tầng, mỗi tầng tính giờ riêng.\nNgoài ra, khi thi triển Kỹ Năng Nộ <color=#FFD780FF>Tiếng Vọng U Ám</color>, sẽ kích hoạt một lần hiệu ứng tương đương với Siêu Giác Quan, gây sát thương bằng 200% sát thương gốc.\nHiệu quả này cần mở khóa thiên phú \"Cảm Nhận Trong Đêm Tối\".",
+        "Icon": "UI_Talent_S_Olorun_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Làn Khói U Ám",
+    "Detail": "Một người trẻ tuổi đến từ Chủ Nhân Gió Đêm, nhưng lại sống ở nơi hoang vu cùng ngàn vạn sinh linh.",
+    "Association": 9,
+    "Native": "Mictlan",
+    "BirthMonth": 10,
+    "BirthDay": 14,
+    "VisionBefore": "Lôi",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Cung Dạ Bức",
+    "CvChinese": "梁达伟",
+    "CvJapanese": "近藤隆",
+    "CvEnglish": "Nathan Nokes",
+    "CvKorean": "Seo Joung-ik",
+    "CookBonus": {
+      "OriginItemId": 108722,
+      "ItemId": 108776,
+      "InputList": [
+        100084,
+        100076,
+        100079
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Lần đầu gặp mặt...",
+        "Context": "#Xin chào, tôi là Ororon của Chủ Nhân Gió Đêm. Tôi không phải người bán rau, nhưng có thể tặng {F#cô}{M#cậu} một ít. Đừng lo, không có lý do gì đặc biệt cả, cũng không muốn đổi lấy thứ gì từ {F#cô}{M#cậu}. Tôi chỉ tò mò về kết quả sinh trưởng của mỗi hạt giống thôi, cho nên là càng trồng càng nhiều. Hy vọng rau của tôi sẽ đến được dạ dày của người thích chúng, thế là đủ."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Quái Nhân",
+        "Context": "#{F#Cô}{M#Cậu} nghe người ta nói người trong Chủ Nhân Gió Đêm đều là quái nhân sao? Tôi tưởng chỉ có mình tôi thôi chứ, còn ai nữa à?"
+      },
+      {
+        "Title": "Nói chuyện phiếm - Mục Tiêu",
+        "Context": "Mỗi người đều nên có một loại động vật, rau củ, hoặc là trái cây mà bản thân thích nhất. Như vậy mới biết mình muốn trở thành người như thế nào."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Sương Mù",
+        "Context": "Không phải tất cả con đường có sương mù đều có thể xuyên qua. Nếu như dã tâm quá lớn thì sẽ bị sương mù làm cho nghẹt thở."
+      },
+      {
+        "Title": "Khi trời mưa...",
+        "Context": "Nếu đi dưới mưa thì bùn sẽ dính lên ống quần, còn bay thì... áo choàng sẽ thấm nước mà nặng hơn. Vẫn nên tìm chỗ nào đó ngồi một lúc đi."
+      },
+      {
+        "Title": "Khi có sấm sét...",
+        "Context": "Sấm sét rất giống loài rắn. Không biết có ai dùng màu sắc và hình dạng của chúng để xem bói không... Nói thật, tôi hơi lo cho sự an toàn của những người đó đấy."
+      },
+      {
+        "Title": "Khi tuyết rơi...",
+        "Context": "...Bên dưới lớp tuyết có chôn thứ gì đó. Nhẹ thôi, đừng đánh thức chúng."
+      },
+      {
+        "Title": "Ánh nắng thật chan hòa...",
+        "Context": "Mặt trời là ngọn lửa vĩnh hằng, người Natlan chưa từng sợ việc nhìn thẳng vào mặt trời. Đương nhiên, nếu thực sự không chịu nổi thì có thể đeo kính râm."
+      },
+      {
+        "Title": "Khi trong sa mạc...",
+        "Context": "Nơi này... cảm thấy rất khó để trồng được gì đó. Hay là đi thôi nhỉ?"
+      },
+      {
+        "Title": "Chào buổi sáng...",
+        "Context": "Xin lỗi, tuy đang mở mắt, nhưng tôi vẫn chưa tỉnh ngủ... Chuyện chính có thể nói sau không?"
+      },
+      {
+        "Title": "Chào buổi trưa...",
+        "Context": "Dạ dày nói là đã đến giờ rồi, nên đi ăn chút gì đó thôi. Nhưng tôi không nghĩ ra được là nên ăn gì... Cũng có thể là do đầu óc vẫn chưa tỉnh."
+      },
+      {
+        "Title": "Chào buổi tối...",
+        "Context": "#Đột nhiên muốn uống cà phê sủi bọt vị Sen Đá Saurian quá, không cần thêm sữa. Hửm? {F#Cô}{M#Cậu} bảo là chỉ nên uống vào buổi sáng à? Vậy... Vậy thì chào buổi sáng."
+      },
+      {
+        "Title": "Chúc ngủ ngon...",
+        "Context": "#Mỗi khi đến lúc này là đầu óc tôi tỉnh táo hẳn ra. Tôi đã từ bỏ việc ép mình ngủ từ lâu rồi, cho nên {F#cô}{M#cậu} cứ nghỉ ngơi trước đi, tôi mang đèn đi xem mớ củ cải đã."
+      },
+      {
+        "Title": "Về bản thân Ororon - Giao Tiếp",
+        "Context": "#Tôi biết đôi khi lời mình nói rất khó hiểu. Nếu {F#cô}{M#cậu} có gì không hiểu thì cứ hỏi thẳng nhé, tôi không để bụng đâu."
+      },
+      {
+        "Title": "Về bản thân Ororon - Bí Ẩn Chưa Rõ",
+        "Context": "Tôi không biết mình từ đâu đến, nhưng tôi cũng không tò mò lắm... So với chuyện này thì tôi muốn biết mình nên đi đâu hơn."
+      },
+      {
+        "Title": "Về chúng ta - Xin Lỗi",
+        "Context": "#Xin lỗi... À ừm... Ý tôi là rất xin lỗi vì vừa gặp đã lừa dối {F#cô}{M#cậu}. Lý do thì tôi đã nói hết rồi, không có che giấu gì cả. Nếu {F#cô}{M#cậu} không muốn chấp nhận cũng không sao, tôi sẽ cố gắng không xuất hiện trước mặt {F#cô}{M#cậu}."
+      },
+      {
+        "Title": "Về chúng ta - Quà Cảm Ơn",
+        "Context": "#Đây là Sen Đá Saurian hái lúc bốn giờ sáng, Quả Quenepa to hơn cả đầu, và loại mật ngọt nhất tính đến tuần trước... Còn có... À, phiếu khám miễn phí của Cacucu.\nSao lại tỏ ra nghi ngờ như vậy chứ? Những thứ này tặng cho {F#cô}{M#cậu} đó, xin hãy nhận lấy. {F#Cô}{M#Cậu} đã giúp tôi, nhưng trông {F#cô}{M#cậu} như không có thiếu gì cả, nên tôi đành chọn quà theo sở thích cá nhân.\nCacucu là ai à? Nó là Saurian. Khi nào có cơ hội thì tôi giới thiệu cho."
+      },
+      {
+        "Title": "Về Vision...",
+        "Context": "Một số người nói rằng sét sẽ giúp cây trồng phát triển. Tôi đã thử sử dụng Vision của mình ở giữa vườn rau, nhưng bắp cải và cà chua không thích, vì vậy tôi đã bỏ cuộc."
+      },
+      {
+        "Title": "Có gì muốn chia sẻ không...",
+        "Context": "Một mẹo nhỏ: Đừng là người đầu tiên đưa ra ý kiến. Giống như quả chín đầu tiên sẽ là mục tiêu dễ bị nhắm đến nhất. Người đứng ra đầu tiên thường sẽ có kết cục không mấy suôn sẻ."
+      },
+      {
+        "Title": "Những kiến thức thú vị...",
+        "Context": "Thật ra sóc bay không phải lúc nào cũng kiêu hãnh khi có thể bay trên trời cao. Chúng sẽ đột nhiên bay đến, bám lấy chúng ta cho đến khi được thưởng... Nhìn từ góc độ nào đó thì đúng là một đám xảo quyệt mà."
+      },
+      {
+        "Title": "Về Xilonen...",
+        "Context": "Hình như cô ấy rất thích ở trên cao, đặc biệt là trên cây. Theo kinh nghiệm của tôi, treo ngược bản thân trên cành cây sẽ thư giãn hơn là nằm trên đó. Khi có cơ hội tôi sẽ tìm cô ấy để chia sẻ kinh nghiệm với nhau. Mọi người luôn nói là phải nhìn thế giới theo góc độ khác, đối với nhà phát minh như Xilonen thì việc này lại còn cần thiết hơn nữa."
+      },
+      {
+        "Title": "Về Kinich...",
+        "Context": "#Ajaw đó rất thú vị. Nó lớn tuổi, nhưng cũng rất trẻ... Còn Kinich thì trẻ, nhưng lại trông khá già... {F#Cô}{M#Cậu} hiểu ý tôi mà đúng không?"
+      },
+      {
+        "Title": "Về Chasca...",
+        "Context": "Chasca rất lợi hại, cũng rất nổi tiếng. Chỉ cần cô ấy đến thì mọi người đều sẽ không cãi nhau nữa, mà lại bắt tay nhau một cách hòa nhã. \"Răn đe bằng vũ lực\" hóa ra lại là cách tốt nhất để nói lý lẽ... Đúng là một cái tên hay mà."
+      },
+      {
+        "Title": "Về Ifa...",
+        "Context": "Đừng thấy Ifa thường xuyên giáo huấn bệnh nhân như thế mà hiểu lầm, mối quan hệ của anh ấy với đám Saurian thật ra rất tốt đấy. Khi rảnh rỗi, anh ấy sẽ đánh đàn trước cửa phòng khám, để những con Saurian vây quanh hát theo.\nNhưng thật ra chúng chỉ là kêu lên thôi. Nếu tôi gặp họ thì cũng sẽ tham gia đấy... Ý tôi là tham gia vào đám Saurian."
+      },
+      {
+        "Title": "Về Citlali...",
+        "Context": "#Thật ra bà ấy là người rất thẳng thắn, vui hay không vui đều sẽ thể hiện ra bên ngoài, cũng không giỏi che giấu cảm xúc của mình. Trông tuổi tác của {F#cô}{M#cậu} khá tương đồng với bà ấy... Hoặc thậm chí là lớn hơn luôn nhỉ?\nXin lỗi, hỏi như vậy hình như không lịch sự lắm. Nhưng nếu thật sự là vậy thì phiền {F#cô}{M#cậu} nói chuyện với bà ấy nhiều hơn nhé. Bà ấy đã ngán việc bị vây quanh bởi các hậu bối rồi, gặp được {F#cô}{M#cậu} chắc sẽ rất vui."
+      },
+      {
+        "Title": "Về Iansan...",
+        "Context": "Chỉ có thể nói, may mà Hỏa Thần đại nhân không phái cô ấy đến bắt tôi. Cô ấy là huấn luyện viên thể thao nổi tiếng ở đây đó. Tuy tôi có lợi thế về chiều cao, nhưng rất có thể sẽ không chạy lại cô ấy. Thuật che mắt à? Trò này dùng nhiều sẽ không có tác dụng đâu."
+      },
+      {
+        "Title": "Về Mavuika...",
+        "Context": "Trước kia tôi không quen biết Hỏa Thần đại nhân.\nÝ là tôi đương nhiên biết Hỏa Thần là ai, nhưng không phải kiểu đã từng gặp mặt nói chuyện qua ấy. Trước đây, Hỏa Thần đại nhân giống như một vật tổ khắc chữ \"sức mạnh\" hơn, là biểu tượng của sức mạnh kiểm soát toàn cục. Tôi thì không hiểu rõ điều này lắm, nên cũng không đi sâu vào.\nBây giờ nghi vấn đã biến mất khá nhiều, tôi rất vui, cũng có chút bối rối và áy náy... Dường như cô ấy chưa từng lạc lối, và bản thân cũng biết rõ tại sao ngọn lửa lại bùng cháy, cho nên dù thế nào cũng không để nó bị dập tắt. Tôi hy vọng... hy vọng mình có thể trở thành người có ích cho Natlan.\nĐương nhiên, tôi vẫn còn kha khá thắc mắc về Hỏa Thần... Trong bữa tiệc lần trước tôi thấy cô ấy ăn rất nhiều rau cải. Khi tôi hỏi thăm thì cô ấy nói là bản thân rất thích chế độ dinh dưỡng cân bằng. Tôi cảm thấy cô ấy là một người tỉ mỉ hơn tôi nghĩ."
+      },
+      {
+        "Title": "Về Capitano...",
+        "Context": "#Gặp được Capitano là sự sắp đặt kỳ lạ và bất ngờ của số phận dành cho tôi.\nAi cũng nói Chủ Nhân Gió Đêm giỏi dự đoán tương lai, nhưng khi gặp Capitano trên đường thì tôi không bao giờ ngờ mọi thứ lại trở nên phức tạp đến vậy. {F#Cô}{M#Cậu} nói xem, cho đi có cần thiết phải nhận lại không? Tại sao tôi lại cảm thấy cảm kích và biết ơn ngài ấy đến vậy?\n...Hoặc có lẽ là do tôi suy nghĩ nhiều quá rồi. Dù trước đó đã xảy ra chuyện gì thì Capitano cũng đã giúp giải cứu nguy cơ Địa Mạch của Natlan, là một vị anh hùng đáng được tôn kính. Tôi sẽ luôn ghi nhớ ngài ấy."
+      },
+      {
+        "Title": "Muốn tìm hiểu Ororon - Điều thứ 1",
+        "Context": "#Xin chào. Muốn bắt tay không? Người Natlan chào hỏi thường sẽ không trang trọng như vậy, nhưng nếu {F#cô}{M#cậu} muốn thì cũng được. Nhưng thực ra thì chỉ cần đứng từ xa gọi là được rồi, thính lực của tôi rất tốt, nên sẽ cảm nhận được thôi."
+      },
+      {
+        "Title": "Muốn tìm hiểu Ororon - Điều thứ 2",
+        "Context": "#Hình như {F#cô}{M#cậu} lúc nào cũng bận rộn nhỉ. Tôi cũng muốn như {F#cô}{M#cậu}, lúc nào cũng có việc để làm. Nhưng đôi khi tôi lại rất thích cuộc sống nhàn nhã. Tâm trạng của con người thay đổi nhiều thật đấy, bản thân tôi cũng không thể kiểm soát được, thật là khó xử mà."
+      },
+      {
+        "Title": "Muốn tìm hiểu Ororon - Điều thứ 3",
+        "Context": "#Natlan ban ngày rất nóng, nên trừ khi cần thiết thì tôi thích ra ngoài vào buổi tối hơn. {F#Cô}{M#Cậu} đã từng thấy mặt nước vào ban đêm chưa? Ánh trăng khiến sóng nước lấp lánh, trông rất trong trẻo, nhưng chỉ khi ở dưới ánh mặt trời thì mới biết được nó có sạch hay không. Vì vậy, tôi sẽ tránh chạm vào làn nước đen kịt đó trong đêm."
+      },
+      {
+        "Title": "Muốn tìm hiểu Ororon - Điều thứ 4",
+        "Context": "#Tôi bẩm sinh có khả năng cảm nhận linh hồn mạnh hơn người khác. Nói thế nào nhỉ... Linh hồn con người có phần giống như một khối năng lượng khó đoán, giống như kẹo bông gòn Saurian có đủ loại hình dạng vậy. Linh hồn của {F#cô}{M#cậu} rất ấm áp, như thể được hơ nhẹ qua ngọn lửa vậy."
+      },
+      {
+        "Title": "Muốn tìm hiểu Ororon - Điều thứ 5",
+        "Context": "Nói thật thì tôi cũng có nhiều thứ không hiểu rõ về bản thân. Tôi luôn có rất nhiều câu hỏi, cái cũ chưa kịp giải quyết thì cái mới lại kéo đến.\nNhưng cũng không có cách giải quyết nhanh chóng nào cho tình huống này nhỉ... Cứ tiếp tục tiến về phía trước thôi, đúng không?"
+      },
+      {
+        "Title": "Sở thích của Ororon...",
+        "Context": "Ngoài việc trồng rau và quan sát bọ ra thì còn những sở thích nào à? Đương nhiên là có rồi... À ừm, cho tôi chút thời gian, tôi sẽ nghĩ ra thôi."
+      },
+      {
+        "Title": "Nỗi buồn của Ororon...",
+        "Context": "Đôi khi, khoảng cách giữa muốn và làm thật sự rất khó vượt qua."
+      },
+      {
+        "Title": "Món ăn yêu thích...",
+        "Context": "Khi ăn Tatacos thì tôi sẽ đặt miếng vỏ bánh bên dưới. Chỉ cần ăn đủ nhiều thì vụn bánh rơi ra cũng sẽ trở thành cái Tatacos mới."
+      },
+      {
+        "Title": "Món ăn ghét...",
+        "Context": "Thực phẩm quân dụng... đặc biệt là bánh quy nén. Chúng nặng nề như linh hồn của Capitano vậy... Chất lượng rất tốt, chỉ là cứng quá thôi."
+      },
+      {
+        "Title": "Nhận Được Quà I",
+        "Context": "Lợi hại, còn ngon hơn tôi tự làm đấy."
+      },
+      {
+        "Title": "Nhận Được Quà II",
+        "Context": "Không nhiều không ít, mùi vị vừa đủ."
+      },
+      {
+        "Title": "Nhận Được Quà III",
+        "Context": "Tôi không hiểu lắm... Đây là nghệ thuật gì vậy?"
+      },
+      {
+        "Title": "Sinh nhật...",
+        "Context": "#Có một câu nói ở Natlan là ngày sinh của một người sẽ quyết định vận mệnh của họ. Nếu có ngày sinh nhật trùng với vị anh hùng nào đó, vậy thì sẽ có phẩm chất giống vị anh hùng đó, và được vị ấy phù hộ đấy.\nTôi nghĩ, người cùng chia sẻ ngày sinh nhật với {F#cô}{M#cậu} nhất định sẽ rất may mắn. Chúc mừng sinh nhật."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Khởi",
+        "Context": "#{F#Cô}{M#Cậu} vừa đưa tôi cái gì vậy? Có thể cho tôi xem lại không?"
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Thừa",
+        "Context": "#Có phải tôi nên gọi {F#cô}{M#cậu} một tiếng sư phụ không? Cảm ơn nhé."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Chuyển",
+        "Context": "Cơ thể rất nhẹ nhàng, xem ra tôi có thể nhanh chóng đến được nơi cao hơn rồi. Nhưng cũng phải khống chế sức mạnh, bởi vì té đập đầu sẽ rất đau đấy."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Hợp",
+        "Context": "#Tôi chưa có khả năng nhìn thấu giới hạn của cái chết, nhưng sự giúp đỡ của {F#cô}{M#cậu} dường như đã đẩy cái chết đi xa hơn một chút. Yên tâm, tôi sẽ không lợi dụng điều đó để làm bất kỳ điều vô trách nhiệm nào đâu. Tôi đảm bảo đấy."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố I",
+        "Context": "Đừng chạy xa quá."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố II",
+        "Context": "Tạm biệt nhé."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố III",
+        "Context": "Phóng sinh!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ I",
+        "Context": "Đi đi, ngươi tự do rồi."
+      },
+      {
+        "Title": "Kỹ Năng Nộ II",
+        "Context": "Chào mọi người nào."
+      },
+      {
+        "Title": "Kỹ Năng Nộ III",
+        "Context": "Giúp ta đi xung quanh xem thử đi."
+      },
+      {
+        "Title": "Mở Rương I",
+        "Context": "#Sự nhiệt tình của {F#cô}{M#cậu} đối với rương báu đang khiến chúng có nguy cơ tuyệt chủng đấy."
+      },
+      {
+        "Title": "Mở Rương II",
+        "Context": "Có thể nhận biết quả nào đã chín bằng cách lắng nghe âm thanh phát ra khi gõ vào chúng."
+      },
+      {
+        "Title": "Mở Rương III",
+        "Context": "Cẩn thận nhé, có một số Saurian thích trốn trong rương. Có thể nó hướng nội đấy."
+      },
+      {
+        "Title": "HP Thấp I",
+        "Context": "Chạy không nổi nữa rồi..."
+      },
+      {
+        "Title": "HP Thấp II",
+        "Context": "Không ổn rồi...!"
+      },
+      {
+        "Title": "HP Thấp III",
+        "Context": "Điềm xấu."
+      },
+      {
+        "Title": "HP Đồng Hành Thấp I",
+        "Context": "Có cần tôi đưa đi khám bác sĩ không?"
+      },
+      {
+        "Title": "HP Đồng Hành Thấp II",
+        "Context": "Để tôi thay thế cho."
+      },
+      {
+        "Title": "Ngã Xuống I",
+        "Context": "Tôi đi trước đây..."
+      },
+      {
+        "Title": "Ngã Xuống II",
+        "Context": "Nhìn không rõ nữa rồi..."
+      },
+      {
+        "Title": "Ngã Xuống III",
+        "Context": "Nghe thấy rồi... Những âm thanh không nên tồn tại..."
+      },
+      {
+        "Title": "Bị Trọng Kích I",
+        "Context": "Chậc, chậm rồi..."
+      },
+      {
+        "Title": "Bị Trọng Kích II",
+        "Context": "Có gì đó không đúng..."
+      },
+      {
+        "Title": "Vào Đội I",
+        "Context": "Muốn tôi tham gia sao?"
+      },
+      {
+        "Title": "Vào Đội II",
+        "Context": "Đi đâu đây?"
+      },
+      {
+        "Title": "Vào Đội III",
+        "Context": "Có thể nói trước là chuyện tốt hay chuyện xấu không?"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Miêu Tả Nhân Vật",
+        "Context": "Lãnh thổ của Chủ Nhân Gió Đêm nằm ở trái tim của Natlan, cũng chính là vùng phía tây của Đấu Trường Lửa Thánh. Nhìn từ xa, là một vùng ánh sáng tím nhàn nhạt trong thung lũng.\nCác thành viên của Chủ Nhân Gió Đêm cũng để lại ấn tượng tương tự trong lòng mọi người: sâu sắc, bí ẩn và thích nói những điều khó hiểu. Trừ khi ra ngoài vì nhận ủy thác như hành y hoặc bói toán, nếu không thì hiếm khi xuất hiện.\nOroron là một ngoại lệ. Nhưng điều đó không có nghĩa là anh ấy thích tụ tập trong đám đông, mà là thích khám phá nơi hoang dã. Anh ấy chạy ngày càng xa tới nơi ít người ghé thăm, đến cả mười con Tatankasaur cũng không thể kéo lại.\nNơi ít người ghé thăm này không chỉ theo nghĩa đen. Ai đã từng nói chuyện với anh đều biết rằng việc theo kịp suy nghĩ của anh quả thực rất khó, là một thử thách về thiên phú và nỗ lực.\nTuy nhiên, tạo ra thử thách này vốn không phải là ý định ban đầu của Ororon. Cũng giống như lý do mà anh ấy làm nhiều việc và nói nhiều lời, thực ra đều rất đơn giản, không cần phải giải thích quá nhiều.\nChẳng hạn như, một người tốt bụng từng đi ngang qua nơi ở của anh ấy ở vùng hoang dã, hỏi han anh với ánh mắt lo lắng: \"Cậu sống ở đây một mình... là vì xung đột với đồng bào trong bộ tộc của mình à? Có cần giúp đỡ gì không?\"\n\"Tất nhiên là không rồi\".\nOroron dừng việc đang làm với dây hoa, chỉ vào đám sâu bọ xung quanh, nghiêm túc trả lời: \"Chỉ là vì mấy đứa nhóc này rất thích ở đây, tôi cũng rất vui vẻ khi ở cùng chúng\"."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 1",
+        "Context": "Vì sự tồn tại của Tên Cổ, nên người Natlan cũng rất quan tâm đến những cái tên. Ororon cũng bị ảnh hưởng bởi môi trường trưởng thành, thích đặt tên cho những thứ xung quanh, cho dù chúng có thở hay không.\nCó những cái tên sẽ đi theo những thứ đó cả đời. Hoa sẽ tàn, cốc sẽ vỡ, cái tên sẽ đi cùng chúng trong cuộc đời ngắn ngủi hoặc lâu dài. Dù chỉ hữu ích trong một phút, nhưng chúng đã có giá trị rồi.\nMột số cái tên sẽ được thay đổi giữa chừng. Không phải tâm trạng Ororon thay đổi, mà là chủ nhân của cái tên đã trải qua một số thay đổi, đương nhiên sẽ cần một cái tên phù hợp hơn. Ví dụ như con Saurian càng ngày càng mập mạp, không thể cứ gọi nó là \"Mảnh Giấy Nhỏ\" mãi được, phải không?\nNhưng anh ấy không thực sự quan tâm đến ý nghĩa của cái tên. Bởi vì trước hết, những cái tên mà anh ấy đặt rất đơn giản, nghe là hiểu ngay ý nghĩa. Thứ hai, anh ấy chỉ đặt tên để tiện gọi, chứ không có ý gì khác, không có cái tên nào nhằm gửi gắm cảm xúc vào đó cả. Những cái tên đều quý giá, trung lập và bình đẳng, giúp việc giao tiếp trở nên thuận tiện hơn.\nNgay cả với tên của chính mình, anh ấy cũng đối xử như thế này. Điểm khác biệt duy nhất là anh ấy thực sự không biết tên mình có ý nghĩa gì.\nCái tên Ororon được viết bên trong bộ đồ anh mặc khi người ta tìm thấy anh ấy. Anh đã tra trong sách cổ, hỏi các trưởng bối, nhưng chẳng ai biết cái tên tương tự, chứ đừng nói đến ý nghĩa của nó.\nChẳng lẽ bà đã già, chữ trên vải lại mờ nên bà nhìn nhầm chăng?\nNhưng vấn đề này thì chỉ có thể tự mình nghĩ thôi, không thể hỏi trực tiếp được, nếu không thì bà lại búng tay vào đầu mất."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 2",
+        "Context": "Người của Chủ Nhân Gió Đêm thích dùng những cuộn vải dệt để ghi lại đủ loại câu chuyện, truyền thuyết và lịch sử. Khác với những ghi chép bằng văn bản thông thường, các hoa văn được phác thảo bằng vải và sợi dệt không thể quá chi tiết, mà thay vào đó là những hoa văn và đường nét trừu tượng, mang tính khái niệm, hầu hết đều chứa đựng cảm xúc của chính người thợ dệt.\nNói cách khác, tính tái tạo trong đó rất cao. Đâu là nội dung chính, đâu là phần nền, cái gì là điểm nhấn hay cái gì cần đơn giản hóa, tất cả đều đòi hỏi người dệt phải suy nghĩ và sáng tạo.\nĐạo lý nghe thì có vẻ khá đơn giản, nhưng lại làm khó được Ororon.\nTrước hết, anh ấy không muốn phân biệt chính và phụ. Nhân vật và bối cảnh, nhà cửa và núi non đều quan trọng như nhau, đều xứng đáng được phân bổ theo tỷ lệ bằng nhau. Dù là một cây Sen Đá Saurian trên mặt đất, anh cũng muốn khoe những giọt sương trên đó, tỏa sáng trên tấm vải như những nếp nhăn trên khuôn mặt của các ông các bà trong bộ tộc.\nĐiều này dẫn đến vấn đề thứ hai: Sự kiên nhẫn của anh ấy đối với việc dệt vải thực sự có hạn. Để công bằng, cho dù đó là một cái cây lớn bên ngoài cánh cửa hay bóng của những người bên dưới, đều phải có số lớp đường nét như nhau. Vì thế, mọi thứ trên tấm vải đã được đơn giản hóa đến mức độ nhất định, thành phẩm cuối cùng khó có thể gọi là cuộn dệt, mà chỉ như chiếc khăn có hoa văn.\nCó một số điều rất khó dạy, đặc biệt là những môn nghệ thuật đòi hỏi nhiều năng khiếu. Vì bản thân đứa trẻ đã thể hiện tài năng hơn người ở lĩnh vực khác, chẳng hạn như cảm nhận linh hồn, thăm dò địa mạch, nên các sư phụ trong bộ tộc đã từ bỏ việc cố gắng buộc Ororon nâng cao môn thủ công này. Thay vào đó, họ cho phép anh coi đó là bài học tự chọn, thích học hay chơi đều được.\nOroron đã tận dụng tối đa điều này. Về sau, thậm chí không dùng vải hay chỉ len gì nữa, mà chỉ lấy giấy bút ra vẽ là xong. Cũng phải, nếu chỉ cần vài nét vẽ, tại sao lại phải dệt trên vải vừa chậm chạp lại vừa tốn công chứ? Hơn nữa, người của Chủ Nhân Gió Đêm cũng giỏi vẽ graffiti, nên khi thành viên từ bộ tộc khác nhìn thấy những bức vẽ của Ororon, sẽ nhìn chúng đầy kinh ngạc, nghĩ rằng chúng là một loại ấn chú cổ xưa với lời chúc phúc bí ẩn.\nTrên thực tế, Ororon hầu như chưa bao giờ vẽ được thứ gì đặc biệt hữu ích cả. Tác phẩm có ý nghĩa và được vẽ cẩn thận nhất của anh ấy là tấm biển trước phòng khám của Ifa. Các đường nét mượt mà, màu sắc tươi sáng, hơn nữa...\n\"Vì con Saurian tội nghiệp có đôi cánh quấn băng, nên tôi đã dành nhiều tâm huyết hơn cho nó. Tuy hình của nó không chiếm chỗ lắm, nhưng tôi đã sử dụng cùng một lượng mực như khi tôi vẽ anh đấy.\"\n\"Được rồi\" Ifa nói. Nhìn thấy sự chân thành trong mắt Ororon, Ifa cũng bình tâm đáp lại: \"Tôi chưa từng thấy bức chân dung nào sống động như vậy về mình đấy. Cảm ơn nhiều nhé, bạn tốt của tôi.\""
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 3",
+        "Context": "Những ai tử tế với người khác sẽ được đối xử tử tế. Chính tình yêu của Ororon dành cho vô số sinh vật trong thế giới tự nhiên đã khiến người và vật ở mảnh đất này đều đối xử tốt với anh.\n...Tuy nhiên, trên thực tế vốn dĩ không có đạo lý nào như vậy. Hầu hết mọi người đều thân thiện với Ororon, nhưng điều này không nhất thiết liên quan đến tình yêu thiên nhiên của anh.\nMột nguyên do trong số đó là sự đồng cảm. Ororon là một đứa trẻ bị bỏ rơi trên núi, không có người thân chăm sóc, không thể tự mình sống sót. Giúp đỡ một chút, cung cấp thức ăn hoặc quần áo không phải là chuyện gì quá khó khăn, trong khi sự hài lòng khi thấy một đứa trẻ lớn lên khỏe mạnh sẽ vượt xa những thứ đó. Vậy thì sao lại không làm chứ?\nMột lý do khác, là vì hảo cảm đơn thuần. Ororon rất nghe lời (hầu hết là thế), trung thực (thường là vậy), yên tĩnh, hiểu chuyện, nỗ lực học hỏi. Anh chẳng bao giờ tỏ ra nghịch ngợm như trèo lên mái nhà hay lật mái ngói. Thậm chí anh còn tự học cách trồng trọt và nuôi bọ, từ đó có thể tự nuôi sống bản thân. Khi đặc điểm không (thường xuyên) gây phiền toái cho những người xung quanh này xuất hiện ở một chàng trai trẻ, thì sẽ rất dễ được yêu mến.\nLý do cuối cùng, cũng là lý do ít xảy ra nhất, là vì áy náy. Do sinh ra với một linh hồn khiếm khuyết, khi Ororon lần đầu tiên được tìm thấy, bộ tộc đã cố gắng sử dụng tình trạng bất thường của anh để thử nghiệm phương pháp khôi phục Địa Mạch cho Natlan. Dù có nhờ vào may mắn hay không thì cách hy sinh cá nhân này đã không hiệu quả. Mặc dù điều này có thể đã ngăn chặn được tình huống khó xử về mặt đạo đức, nhưng nó khiến một số trưởng lão có cảm giác áy náy khó nói.\nTất nhiên, khi lớn lên, Ororon đã biết được những gì đã xảy ra. Giấu kín cũng không có ý nghĩa gì, làm như vậy chỉ gây thêm nhiều vấn đề không đáng có. Tuy nhiên, Ororon không hề oán trách. Ngược lại, anh ấy rất hài lòng khi biết điều đó, vì dù thực tế có khó khăn đến đâu, anh ấy cũng không muốn sống trong giả dối.\nAnh biết chính xác lý do tại sao mọi người lại quan tâm đến mình. Dù là vì sự đồng cảm, tình yêu thương, cảm giác áy náy hay tổng hợp tất cả, anh đều dám chấp nhận.\nNhư Ifa đã nói, mối quan hệ xã hội giữa mọi người cực kỳ phức tạp. Thay vì dành thời gian và công sức để cố gắng suy đoán tâm lý của họ, tốt hơn là tập trung vào kết luận và hành động của họ, như vậy giúp giảm bớt căng thẳng tinh thần rất nhiều. Thấy mọi người thể hiện sự quan tâm và tình cảm như vậy, anh đáp lại họ bằng lòng tốt. Đúng vậy, mọi chuyện thực sự chỉ đơn giản như vậy.\n\"May mà tôi là bác sĩ thú y đấy!\" Ifa vừa nói vừa ra hiệu. \"Nếu tôi là bác sĩ chữa bệnh cho mọi người, thì tình huống mà tôi phải đối mặt sẽ phức tạp hơn nhiều...\"\nIfa liệt kê một loạt những câu chuyện kỳ lạ về khám bệnh, nhưng Ororon lại lơ đễnh. Dù có kỳ lạ thế nào đi nữa thì liệu có kỳ lạ hơn hoàn cảnh của mình không?\n\"Nói đến thì... Từ góc độ nào đó, tôi cũng là một bệnh nhân, và là loại bệnh không thể chữa khỏi\", Ororon trầm ngâm. Nghĩ lại thì... Vì có đôi tai trông khác với người bình thường, nên có lẽ bản thân anh cũng được xem là một loài động vật đang bị bệnh nhỉ? Ừm... Nhưng mà con người có được coi là động vật không?\nNghĩ đến đây, Ororon ngắt lời Ifa đang thao thao bất tuyệt mà hỏi rằng, \"Nếu tôi bị bệnh thì có nên đến gặp bác sĩ thú y không?\"\nIfa ngừng nói và nhìn chằm chằm một lúc lâu.\n\"...Tôi vừa nói nhiều thứ như thế, anh không nghe lọt chút nào, đúng không?\"\n\"Đừng né tránh câu hỏi mà bản thân không muốn trả lời nữa. Đẩy khó khăn sang cho tôi cũng vô ích thôi\"."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 4",
+        "Context": "Nếu có cả thời gian và kiên nhẫn để lật lại sách cổ và cuộn dệt của Chủ Nhân Gió Đêm, chắc chắn sẽ ngạc nhiên trước độ rộng về nội dung của nó.\nVí dụ, ai sẽ muốn đọc tiểu thuyết Inazuma đã ngừng xuất bản hàng loạt cách đây vài trăm năm?\nLại ví dụ như, ghi chép ứng dụng lời tiên tri và phân tích ba ngàn sáu trăm hình thái bị đốt thành tro này, là ai đã mất công tổng hợp lại?\nBất kể những thứ này bắt nguồn từ đâu thì sự thật đáng buồn là giờ đây đều do Ororon đọc và sắp xếp.\nLúc đầu, anh chỉ muốn kiểm tra các ghi chép lịch sử để xem có đề cập đến linh hồn bị thiếu hay không, nhưng sau đó những từ như \"Địa Mạch\", \"Dạ Thần\" và \"linh hồn\" bắt đầu xuất hiện. Sau đó, tài liệu văn học và tiểu thuyết giả tưởng cũng theo đó mà đến. Rồi sau đó, thông tin chất đống như Cacahuatl không thể sắp xếp nổi. Ororon trở thành một thủ thư tình nguyện, chìm đắm trong một biển kiến thức hoàn toàn không liên quan gì đến mình.\n\"Thật ra mình cũng không tò mò đến thế...\" Ororon bắt đầu cảm thấy hơi mệt mỏi. Nhưng nghĩ lại, anh dường như cũng không có việc gì quan trọng để làm. Hơn nữa, việc đọc này không phải là vô ích.\nLời giải thích hợp lý nhất dường như đến từ tập truyện rách nát. Truyện viết rằng, vào thời chiến tranh Ma Thần trong quá khứ xa xôi, để chiến thắng, một số Ma Thần đã thử hợp nhất huyết mạch của thú dữ và con người, với hy vọng tạo ra những chiến binh có sức mạnh vượt trội hơn người phàm. Hầu hết thí nghiệm đều thất bại, nhưng một số tàn dư khiếm khuyết vẫn còn, thậm chí tồn tại cho đến ngày nay.\n\"Nghe có vẻ hợp lý đấy\" Ororon tự nhủ. \"Nhưng đó chỉ là một bộ truyện...\"\n\"...Mà dù đây là một bộ truyện, nhưng nghe có vẻ hợp lý thật\" Ororon lại nghĩ.\nTừ thực tế, anh biết, với đầu óc ngoài hai mươi của mình, anh sẽ không bao giờ biết được chân tướng sự thật, dù có suy nghĩ kỹ đến đâu. Đôi khi, con người phải thừa nhận, chấp nhận sự kém cỏi, thiếu hiểu biết của mình, hoặc chọn cách bịa ra những câu chuyện để mua vui.\nCuối cùng, Ororon thực sự không muốn đọc nữa, nên đã dành ra vài phút để suy nghĩ một lý do ngắn gọn và rõ ràng nhất...\nGiống như một trò chơi ghép hình vậy. Khi cố ghép những mảnh không khớp lại với nhau, chắc chắn sẽ có sự biến dạng, ma sát, thậm chí là vỡ vụn. Và vào một ngày của hơn hai mươi năm trước, anh chính là mảnh ghép vỡ vụn vô tình rơi xuống một tảng đá lạnh lẽo."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 5",
+        "Context": "Một đêm khuya ấm áp, anh ngồi trong doanh trại với Fatui, lặng lẽ lắng nghe họ nói chuyện.\nNgười yên tĩnh thực ra chỉ có bản thân anh, còn có Capitano tham gia muộn. Các binh lính không hề né tránh điều đó, rõ ràng là đã biết về sự hợp tác của anh với chỉ huy của họ. Mặc dù chỉ nói về những chuyện tầm phào không đáng kể, nhưng họ vẫn mỉm cười khi nói chuyện, không hề câu nệ trước sự có mặt của anh. Thậm chí sau khi hỏi về độ tuổi của anh, có người còn đưa cho anh một cốc đồ uống không màu tên là \"Hỏa Thủy\".\nAnh ngập ngừng nếm thử một chút rồi uống cạn, bởi vì những binh lính đó đều làm như vậy, và nhận được một tràng hò reo vang dội. Không biết tại sao, anh cảm thấy tâm trạng tốt hơn nhiều.\nNhững binh lính xung quanh anh đang trò chuyện về chủ đề gia đình, thỉnh thoảng còn hát những bài hát mà họ biết. Ororon không tiếp lời được, nên chỉ ngồi nhìn đống lửa trại, hoặc nhìn lên bầu trời. Bầu trời cách xa mặt đất đến mức những ngôi sao trông giống như hạt màu trắng. Sương mù cũng được tạo thành từ các hạt đó... \"Sương Mù Sao\" có vẻ là một cái tên hay, Ororon chợt nghĩ ra.\nSau này anh mới biết, trong Fatui không phải lúc nào cũng có đội ngũ như vậy. Những người mà anh tiếp xúc là lực lượng tinh nhuệ do Quan Chấp Hành thứ nhất lãnh đạo. Họ đều là những \"lão binh\" có tuổi tác và kinh nghiệm nhất định, hành vi và tiêu chuẩn đạo đức cũng rất tốt. Ngoài đội quân này, thực tế còn có rất nhiều người trẻ tuổi hơn anh đang làm những việc khiến anh phải cau mày khi nghe thấy.\nNhưng vào đêm không có gió, khi có thể nhìn rõ các vì sao, anh vẫn chưa bị những hiểu biết này xâm chiếm. Anh chỉ đơn giản là tạm quên đi vài rắc rối của mình, cho phép mình tận hưởng sự đồng hành thân thiện và một ly rượu có hương vị kỳ lạ.\nMột đêm như thế này sẽ không bao giờ có nữa. Lúc đó anh đã có linh cảm này, giống như khi anh muốn uống thêm một ly nữa thì Capitano nhất quyết ngăn cản. Dù Ororon uống xong một ly trông cũng không có gì khác thường, tửu lượng có vẻ cao, nhưng có những điều không nên dấn thân vào.\nTuy nhiên, Ororon rõ ràng không ngoan ngoãn đến thế. Anh đã lén tìm đến người đưa rượu cho mình và tự tìm ra cách ủ. Nếu ủ thành công được một loại rượu đủ trong để phản chiếu bầu trời đêm, thì anh sẽ đặt tên chai đầu tiên là \"Sương Mù Sao\"."
+      },
+      {
+        "Title": "Hộp Đồ Ăn Vặt",
+        "Context": "Đồ ăn vặt này không phải cho con người, mà là cho động vật hoang dã. Tùy theo sở thích của các loài khác nhau mà lần lượt cho chúng vào hộp chia ngăn.\nHầu hết các loài động vật đều rất thông minh. Dựa trên quan sát của Ororon, chênh lệch khả năng tư duy giữa chúng và con người không nhiều như mọi người vẫn nghĩ. Nhiều người có thể sống suôn sẻ chỉ vì được thừa hưởng trí tuệ của các trưởng bối, nhưng những loài động vật lại tìm ra cách sinh tồn trong môi trường nguy hiểm, có lẽ còn lợi hại hơn nhiều.\nTìm kiếm sự giúp đỡ từ con người cũng là điều mà động vật đã học được khi chung sống với con người. Đôi khi Ororon đang đi trên đường thì lưng bỗng chùng xuống. Nếu phản ứng chậm hơn một chút là trên áo choàng lại có thêm vài vết xước do sóc bay để lại.\nOroron tin rằng, giữa các loài động vật nhất định phải có một mạng lưới liên lạc cố định. Bưu tá của các loài động vật có thể giỏi giang hơn con người nhiều, vì chúng không chỉ lên trời xuống đất, mà còn biết ngôn ngữ của nhiều loài động vật khác nữa. Khi nghĩ tới ngôn ngữ của các loài động vật ở Natlan đều sẽ có câu \"Trong túi Ororon có đồ ăn ngon!\" là anh ấy không nhịn được mà nở nụ cười.\nVì vậy, đối với những thực khách không mời, dù Ororon có cách đuổi đi bớt, nhưng anh ấy cũng sẽ không thực sự dùng đến. Không phải ai cũng có vinh dự được động vật đối xử như thành viên trong nhà dù đi đến đâu.\nTất nhiên, các loài động vật có tính cách khác nhau, nên cũng có nhiều cách để bày tỏ lòng biết ơn.\nVí dụ như Ajaw của Kinich rất lạ. Nó luôn tỏ thái độ \"Ta xứng đáng được như thế!\", nhưng thực ra thì lại không thể xa rời người khác. Ororon thường phớt lờ lời nó nói, lắc lắc thức ăn trước mặt và nhìn mắt của Ajaw đảo qua lại sau cặp kính râm ấy (Đó có phải là kính râm không? Chắc là đúng nhỉ?). Nếu Ajaw nói điều gì đó không đúng lúc, thì Kinich sẽ tước đi quyền tự do ngôn luận của nó trước khi nhận được thức ăn.\nNgược lại, Cacucu lại rất giỏi nói những điều tử tế. Dù nó không nói nhiều, nhưng luôn có thể nghe thấy trọn vẹn cảm xúc từ nó: \"Anh bạn vẫn cứ là tuyệt vời nhất!\""
+      },
+      {
+        "Title": "Vision",
+        "Context": "Đêm đầu tiên, anh mơ thấy một hang đá lạnh lẽo.\nNghiêng người, phía sau là cửa hang, ánh trăng như cát trắng rắc vào. Trong hang sâu không có chút ánh sáng nào, truyền đến tiếng xào xạc, tựa như có màn sương đen tối ở bên trong. Những giọt nước từ trên đầu rơi xuống bàn tay đang dang rộng của anh, sờ dính dính.\nCó nước, trong đó còn có chất dinh dưỡng. Anh gật đầu, sự sống có thể sẽ bén rễ ở nơi này.\nĐúng lúc này anh tỉnh dậy. Không giống như một giấc mơ đẹp, nhưng cũng không phải là ác mộng. Anh cảm thấy lạnh trong giấc mơ, là ban đêm nhiệt độ giảm xuống sao? Anh nghĩ là ngày mai nên chuẩn bị một chiếc chăn dày hơn.\nĐêm thứ hai, anh mơ thấy cơn gió như lửa đốt.\nTrong tầm nhìn chỉ có những cột đá nhợt nhạt và những đám mây viền đỏ thẫm. Có mây, vậy hẳn là đã ở trên cao. Nhưng không nhìn thấy mặt trời hay lửa, không khí lại nóng dữ dội, nóng đến mức anh cảm thấy như muốn thiêu đốt cả linh hồn.\nAnh không biết mình đang ở đâu, nhưng bằng cách nào đó, anh cảm thấy chắc chắn rằng đây là điểm cuối cùng. Chỉ cần tiến một bước về phía trước là được rồi... Chỉ cần một bước nữa thôi...\nAnh giật mình tỉnh dậy. Mọi người thường hướng đến sự ấm áp, bản thân anh ấy cũng luôn yêu thích ngọn lửa của Natlan, nhưng sức nóng của giấc mơ đó khiến anh sợ hãi. Không phải là một quyết định sáng suốt, anh ấy lắc đầu, không biết là đang phủ định giấc mơ hay thực tế. Có vẻ như chiếc chăn lông Alpaca có hơi quá so với mùa này.\nVào đêm thứ ba, cũng là đêm cuối cùng, anh mơ thấy một vũ trụ đen kịt và một mê cung toàn gương. Anh nhìn chằm chằm vào những bề mặt bao quanh mình với vô số Ororon khác.\nAnh nghe thấy một giọng nói không tồn tại: \"Chờ khi cái bóng phản chiếu đủ nhiều, nói không chừng sẽ có thể ghép thành một bản thân hoàn chỉnh!\" Giọng nói đó nghe không hề tử tế, nhưng cũng không có ác ý, chỉ là giọng điệu trêu chọc của một người bên ngoài quan sát thôi.\nNhưng rốt cuộc phải phản chiếu như thế nào mới có thể chiếu ra những thứ vốn dĩ không có đây? Hơn nữa, thứ gì đang lướt qua những tấm gương trong không gian mờ ảo này...?\nAnh tức giận hét lên, \"Nếu muốn có một cái bóng hoàn chỉnh, thì ít nhất cũng phải có ánh sáng trước đã!\"\nCó lẽ người trong mơ sẽ nghe thấy tiếng gọi, nên anh đã bị tiếng nói mớ của chính mình đánh thức. Lần này, anh thậm chí không cố gắng lý giải về nguyên nhân giấc mơ của mình, nhiệt độ hay cái chăn đã không còn tác dụng nữa. Ngay cả sau khi hoàn toàn tỉnh táo, anh vẫn có thể cảm thấy sự bực dọc sót lại, cơ thể cũng nặng nề hơn bình thường.\nNhưng thứ trên người anh không thể nhẹ hơn được nữa. Món đồ đè lên ngực anh, chính là cái được gọi là ánh mắt của thần linh."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 210500,
+      "Name": "Con Mắt Cánh Dơi",
+      "Description": "Phong cách của Ororon. Người có tầm nhìn xa phải biết cách ẩn mình. Vì vậy, áo choàng và mũ trùm đầu là vũ khí lợi hại nhất của anh ta.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104144,
+    113064,
+    101252,
+    112103,
+    104352,
+    113054
+  ],
+  "NameCard": {
+    "Name": "Ororon - Cảnh Đêm",
+    "Description": "Hoa văn danh thiếp.\nGiống như sao trời không thể chiếu sáng đêm đen, dưới ánh nến vẫn là bóng tối, sự trống rỗng trong lòng cũng khó mà lấp đầy.",
+    "Icon": "UI_NameCardIcon_Olorun",
+    "PicturePrefix": "UI_NameCardPic_Olorun"
+  }
+}

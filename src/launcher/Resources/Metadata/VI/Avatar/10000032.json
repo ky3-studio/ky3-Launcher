@@ -1,0 +1,1262 @@
+{
+  "Id": 10000032,
+  "PromoteId": 32,
+  "Sort": 13,
+  "Body": 1,
+  "Icon": "UI_AvatarIcon_Bennett",
+  "SideIcon": "UI_AvatarIcon_Side_Bennett",
+  "Name": "Bennett",
+  "Description": "Nhà mạo hiểm trẻ tuổi của Mondstadt, có vận đen luôn đi cùng sự lương thiện của anh ấy.",
+  "BeginTime": "2020-09-15T04:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 1,
+  "BaseValue": {
+    "HpBase": 1039.4418,
+    "AttackBase": 16.0272,
+    "DefenseBase": 64.66425
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 3231,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Lần 1|{param1:P}",
+            "Sát Thương Lần 2|{param2:P}",
+            "Sát Thương Lần 3|{param3:P}",
+            "Sát Thương Lần 4|{param4:P}",
+            "Sát Thương Lần 5|{param5:P}",
+            "Sát Thương Trọng Kích|{param6:P}+{param7:P}",
+            "Thể lực Trọng Kích tiêu hao|{param8:F1} điểm",
+            "Sát Thương Khi Đáp|{param9:F1P}",
+            "ST Khi Rơi Từ Độ Cao Thấp/Cao|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 323101,
+              "Level": 1,
+              "Parameters": [
+                0.44548,
+                0.42742,
+                0.5461,
+                0.59684,
+                0.71896,
+                0.559,
+                0.60716,
+                20,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 323102,
+              "Level": 2,
+              "Parameters": [
+                0.48174,
+                0.46221,
+                0.59055,
+                0.64542,
+                0.77748,
+                0.6045,
+                0.65658,
+                20,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 323103,
+              "Level": 3,
+              "Parameters": [
+                0.518,
+                0.497,
+                0.635,
+                0.694,
+                0.836,
+                0.65,
+                0.706,
+                20,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 323104,
+              "Level": 4,
+              "Parameters": [
+                0.5698,
+                0.5467,
+                0.6985,
+                0.7634,
+                0.9196,
+                0.715,
+                0.7766,
+                20,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 323105,
+              "Level": 5,
+              "Parameters": [
+                0.60606,
+                0.58149,
+                0.74295,
+                0.81198,
+                0.97812,
+                0.7605,
+                0.82602,
+                20,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 323106,
+              "Level": 6,
+              "Parameters": [
+                0.6475,
+                0.62125,
+                0.79375,
+                0.8675,
+                1.045,
+                0.8125,
+                0.8825,
+                20,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 323107,
+              "Level": 7,
+              "Parameters": [
+                0.70448,
+                0.67592,
+                0.8636,
+                0.94384,
+                1.13696,
+                0.884,
+                0.96016,
+                20,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 323108,
+              "Level": 8,
+              "Parameters": [
+                0.76146,
+                0.73059,
+                0.93345,
+                1.02018,
+                1.22892,
+                0.9555,
+                1.03782,
+                20,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 323109,
+              "Level": 9,
+              "Parameters": [
+                0.81844,
+                0.78526,
+                1.0033,
+                1.09652,
+                1.32088,
+                1.027,
+                1.11548,
+                20,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 323110,
+              "Level": 10,
+              "Parameters": [
+                0.8806,
+                0.8449,
+                1.0795,
+                1.1798,
+                1.4212,
+                1.105,
+                1.2002,
+                20,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 323111,
+              "Level": 11,
+              "Parameters": [
+                0.94276,
+                0.90454,
+                1.1557,
+                1.26308,
+                1.52152,
+                1.183,
+                1.28492,
+                20,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 323112,
+              "Level": 12,
+              "Parameters": [
+                1.00492,
+                0.96418,
+                1.2319,
+                1.34636,
+                1.62184,
+                1.261,
+                1.36964,
+                20,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 323113,
+              "Level": 13,
+              "Parameters": [
+                1.06708,
+                1.02382,
+                1.3081,
+                1.42964,
+                1.72216,
+                1.339,
+                1.45436,
+                20,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 323114,
+              "Level": 14,
+              "Parameters": [
+                1.12924,
+                1.08346,
+                1.3843,
+                1.51292,
+                1.82248,
+                1.417,
+                1.53908,
+                20,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 323115,
+              "Level": 15,
+              "Parameters": [
+                1.1914,
+                1.1431,
+                1.4605,
+                1.5962,
+                1.9228,
+                1.495,
+                1.6238,
+                20,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10321,
+        "Name": "Kiếm May Mắn",
+        "Description": "<color=#FFD780FF>Tấn Công Thường</color>\nThực hiện tối đa 5 lần đánh kiếm liên tiếp.\n\n<color=#FFD780FF>Trọng Kích</color>\nTiêu hao thể lực nhất định, đánh ra hai kiếm về phía trước trong chớp mắt.\n\n<color=#FFD780FF>Tấn Công Khi Đáp</color>\nĐáp xuống đất từ trên không, tấn công kẻ địch trên đường và gây sát thương phạm vi khi chạm đất.",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_A_01"
+      },
+      {
+        "GroupId": 3232,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Nhấn|{param1:P}",
+            "Sát Thương Tụ Lực Lần 1|{param2:P}+{param3:P}",
+            "Sát Thương Tụ Lực Lần 2|{param4:P}+{param5:P}",
+            "Sát Thương Nổ|{param6:P}",
+            "CD|{param7:F1}/{param8:F1}/{param9:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 323201,
+              "Level": 1,
+              "Parameters": [
+                1.376,
+                0.84,
+                0.92,
+                0.88,
+                0.96,
+                1.32,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323202,
+              "Level": 2,
+              "Parameters": [
+                1.4792,
+                0.903,
+                0.989,
+                0.946,
+                1.032,
+                1.419,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323203,
+              "Level": 3,
+              "Parameters": [
+                1.5824,
+                0.966,
+                1.058,
+                1.012,
+                1.104,
+                1.518,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323204,
+              "Level": 4,
+              "Parameters": [
+                1.72,
+                1.05,
+                1.15,
+                1.1,
+                1.2,
+                1.65,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323205,
+              "Level": 5,
+              "Parameters": [
+                1.8232,
+                1.113,
+                1.219,
+                1.166,
+                1.272,
+                1.749,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323206,
+              "Level": 6,
+              "Parameters": [
+                1.9264,
+                1.176,
+                1.288,
+                1.232,
+                1.344,
+                1.848,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323207,
+              "Level": 7,
+              "Parameters": [
+                2.064,
+                1.26,
+                1.38,
+                1.32,
+                1.44,
+                1.98,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323208,
+              "Level": 8,
+              "Parameters": [
+                2.2016,
+                1.344,
+                1.472,
+                1.408,
+                1.536,
+                2.112,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323209,
+              "Level": 9,
+              "Parameters": [
+                2.3392,
+                1.428,
+                1.564,
+                1.496,
+                1.632,
+                2.244,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323210,
+              "Level": 10,
+              "Parameters": [
+                2.4768,
+                1.512,
+                1.656,
+                1.584,
+                1.728,
+                2.376,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323211,
+              "Level": 11,
+              "Parameters": [
+                2.6144,
+                1.596,
+                1.748,
+                1.672,
+                1.824,
+                2.508,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323212,
+              "Level": 12,
+              "Parameters": [
+                2.752,
+                1.68,
+                1.84,
+                1.76,
+                1.92,
+                2.64,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323213,
+              "Level": 13,
+              "Parameters": [
+                2.924,
+                1.785,
+                1.955,
+                1.87,
+                2.04,
+                2.805,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323214,
+              "Level": 14,
+              "Parameters": [
+                3.096,
+                1.89,
+                2.07,
+                1.98,
+                2.16,
+                2.97,
+                5,
+                7.5,
+                10
+              ]
+            },
+            {
+              "Id": 323215,
+              "Level": 15,
+              "Parameters": [
+                3.268,
+                1.995,
+                2.185,
+                2.09,
+                2.28,
+                3.135,
+                5,
+                7.5,
+                10
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10322,
+        "Name": "Nhiệt Tình Quá Độ",
+        "Description": "Bennett ngưng tụ Nguyên Tố Hỏa và nhiệt huyết mạo hiểm trên kiếm. Dựa vào mức độ nhiệt tình ngưng tụ, sẽ gây ra hiệu quả khác nhau...\n\n<color=#FFD780FF>Nhấn</color>\nNhanh chóng vung ra đòn đánh rực lửa về phía trước, gây <color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>.\n\n<color=#FFD780FF>Nhấn giữ</color>\nNhấn giữ để thực hiện tụ lực, khi thi triển sẽ gây ra hiệu quả khác nhau tùy theo số lần tụ lực.\n·Tụ lực lần 1: Tấn công 2 lần, gây <color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color> và đánh bay địch;\n·Tụ lực lần 2: Tấn công liên tiếp 3 lần, gây <color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color>. Chiêu cuối sẽ gây nổ, đánh bay Bennett và kẻ địch. Khi bị đánh bay, Bennett sẽ không chịu sát thương.\n\n<i>Tụ hợp nhiệt huyết và đam mê vào đòn đánh Nguyên Tố Hỏa. Thế nhưng có lúc nhiệt huyết quá mức, Nguyên Tố Hỏa sẽ bùng nổ.</i>",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_S_Bennett_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 3239,
+      "Proud": {
+        "Descriptions": [
+          "Sát Thương Kỹ Năng|{param1:P}",
+          "Trị liệu kéo dài|Mỗi giây {param2:F2P} giới hạn HP +{param3:I}",
+          "Tỷ Lệ Tăng Tấn Công|{param4:P}",
+          "Thời Gian Kéo Dài|{param5:F1}s",
+          "CD|{param6:F1}s",
+          "Năng Lượng Nguyên Tố|{param7:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 323901,
+            "Level": 1,
+            "Parameters": [
+              2.328,
+              0.06,
+              577.3388,
+              0.56,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323902,
+            "Level": 2,
+            "Parameters": [
+              2.5026,
+              0.0645,
+              635.0807,
+              0.602,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323903,
+            "Level": 3,
+            "Parameters": [
+              2.6772,
+              0.069,
+              697.63446,
+              0.644,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323904,
+            "Level": 4,
+            "Parameters": [
+              2.91,
+              0.075,
+              765,
+              0.7,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323905,
+            "Level": 5,
+            "Parameters": [
+              3.0846,
+              0.0795,
+              837.17737,
+              0.742,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323906,
+            "Level": 6,
+            "Parameters": [
+              3.2592,
+              0.084,
+              914.16656,
+              0.784,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323907,
+            "Level": 7,
+            "Parameters": [
+              3.492,
+              0.09,
+              995.96765,
+              0.84,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323908,
+            "Level": 8,
+            "Parameters": [
+              3.7248,
+              0.096,
+              1082.5804,
+              0.896,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323909,
+            "Level": 9,
+            "Parameters": [
+              3.9576,
+              0.102,
+              1174.0051,
+              0.952,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323910,
+            "Level": 10,
+            "Parameters": [
+              4.1904,
+              0.108,
+              1270.2417,
+              1.008,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323911,
+            "Level": 11,
+            "Parameters": [
+              4.4232,
+              0.114,
+              1371.29,
+              1.064,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323912,
+            "Level": 12,
+            "Parameters": [
+              4.656,
+              0.12,
+              1477.1501,
+              1.12,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323913,
+            "Level": 13,
+            "Parameters": [
+              4.947,
+              0.1275,
+              1587.8221,
+              1.19,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323914,
+            "Level": 14,
+            "Parameters": [
+              5.238,
+              0.135,
+              1703.3059,
+              1.26,
+              12,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 323915,
+            "Level": 15,
+            "Parameters": [
+              5.529,
+              0.1425,
+              1823.6016,
+              1.33,
+              12,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10323,
+      "Name": "Hành Trình Kỳ Diệu",
+      "Description": "Bennett lao nhanh nã đạn, gây <color=#FF9999FF>sát thương nguyên tố hỏa</color> và tạo thành vùng đất cổ vũ.\n\n<color=#FFD780FF>Vùng Đất Cổ Vũ</color>\n·Nhân vật đứng trong vùng đất này, nếu HP dưới hoặc bằng 70%, HP tối đa sẽ liên tục được hồi, lượng hồi phụ thuộc vào giới hạn HP của Bennett.\n·Nếu nhân vật trong vùng đất có HP cao hơn 70% HP tối đa, nhân vật ở trong đó sẽ nhận buff tấn công, giá trị bằng với tấn công cơ bản của Bennett, tăng tấn công với tỷ lệ nhất định.\n·Gán <color=#FF9999FF>ấn nguyên tố Hỏa</color> cho nhân vật trong đó.\n\n<i>Đoàn mạo hiểm Benny mỗi lần bắt đầu hành trình mạo hiểm đều đầy sự rủi ro. Chỉ duy nhất Bennett lại cho rằng đây là \"hành trình tuyệt vời, kịch tính và kì diệu\".</i>",
+      "SpecialEnergyType": 0,
+      "Icon": "Skill_E_Bennett_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 3221,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 322101,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 322101,
+        "Name": "Nhiệt Tình Rực Lửa",
+        "Description": "Giảm CD <color=#FFD780FF>Nhiệt Tình Quá Độ</color> 20%",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Bennett_05"
+      },
+      {
+        "GroupId": 3222,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 322201,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 322201,
+        "Name": "Nhiệt Huyết Can Đảm",
+        "Description": "Ở trong khu vực <color=#FFD780FF>Hành Trình Kỳ Diệu</color>, <color=#FFD780FF>Nhiệt Tình Quá Độ</color> có hiệu quả như sau:\n·CD giảm 50%;\n·Tụ lực lần 2 sẽ không tự đánh bay Bennett.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Bennett_06"
+      },
+      {
+        "GroupId": 3223,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 322301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 322301,
+        "Name": "Có Thể An Toàn",
+        "Description": "Khi làm nhiệm vụ Phái Đi thám Hiểm ở Mondstadt, thời gian tiêu hao rút ngắn 25%.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_Expedition_Mengde"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 321,
+        "Name": "Tầm Nhìn Phiêu Lưu",
+        "Description": "Buff hiệu quả tấn công của <color=#FFD780FF>Hành Trình Kỳ Diệu</color> sẽ không bị giới hạn bởi HP, tăng thêm 20% tấn công cơ bản của Bennett vào chỉ số.",
+        "Icon": "UI_Talent_S_Bennett_01"
+      },
+      {
+        "Id": 322,
+        "Name": "Vượt Qua Nghịch Cảnh",
+        "Description": "Khi HP của Bennett dưới 70%, tăng 30% hiệu quả nạp Nguyên Tố.",
+        "Icon": "UI_Talent_S_Bennett_02"
+      },
+      {
+        "Id": 323,
+        "Name": "Đam Mê Rực Cháy",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Nhiệt Tình Quá Độ</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Bennett_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 324,
+        "Name": "Nhiệt Huyết Bất Diệt",
+        "Description": "Khi thi triển <color=#FFD780FF>Nhiệt Tình Quá Độ</color> tụ lực lần 1, sẽ tấn công thường trong lúc tấn công kỹ năng lần 2, kèm theo truy kích.\nSát thương truy kích bằng 135% của tấn công lần 2.",
+        "Icon": "UI_Talent_S_Bennett_03"
+      },
+      {
+        "Id": 325,
+        "Name": "Mở Rộng Tâm Hồn",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Hành Trình Kỳ Diệu</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Bennett_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 326,
+        "Name": "Lửa Và Can Đảm",
+        "Description": "Nhân vật sử dụng kiếm đơn, trọng kiếm, vũ khí cán dài trong đội hiện đang trong trận ở khu vực <color=#FFD780FF>Hành Trình Kỳ Diệu</color> được nhận 15% <color=#FF9999FF>Buff Sát Thương Nguyên Tố Hỏa</color> và nhận <color=#FF9999FF>đính kèm Nguyên Tố Hỏa</color>.",
+        "Icon": "UI_Talent_S_Bennett_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Thử Thách Của Vận Mệnh",
+    "Detail": "Nhà mạo hiểm trẻ tuổi của Mondstadt, có vận đen luôn đi cùng sự lương thiện của anh ấy.",
+    "Association": 1,
+    "Native": "Hiệp Hội Nhà Mạo Hiểm",
+    "BirthMonth": 2,
+    "BirthDay": 29,
+    "VisionBefore": "Hỏa",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Cung Hiểm Lộ",
+    "CvChinese": "穆雪婷",
+    "CvJapanese": "逢坂良太",
+    "CvEnglish": "Cristina Vee Valenzuela",
+    "CvKorean": "Song Ha-rim",
+    "CookBonus": {
+      "OriginItemId": 108005,
+      "ItemId": 108116,
+      "InputList": [
+        100062
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Lần đầu gặp mặt...",
+        "Context": "Đây chính là đội mạo hiểm của bạn sao? Tốt lắm... Vừa náo nhiệt, vừa ngập tràn tình cảm. A, tôi là đội trưởng Bennett của \"Đội Mạo Hiểm Benny\"! Có thể cho tôi tham gia làm người đồng hành hợp tác của các bạn không? Xin đấy!"
+      },
+      {
+        "Title": "Nói chuyện phiếm - Kho báu",
+        "Context": "Chi bằng tìm xung quanh biết đâu lại có báu vật!"
+      },
+      {
+        "Title": "Nói chuyện phiếm - Mạo hiểm",
+        "Context": "Lâu lắm rồi không tổ đội cùng với người khác đi mạo hiểm! Chúng ta mau đi thôi!"
+      },
+      {
+        "Title": "Nói chuyện phiếm - Trêu đùa",
+        "Context": "Ông cha ta thường nói \"há miệng chờ sung chắc chắn sẽ chẳng có kỳ tích nào xảy ra\", có điều với vận mệnh đen đủi của mình thì tôi đi đâu cũng giống nhau vậy thôi..."
+      },
+      {
+        "Title": "Khi trời mưa...",
+        "Context": "Đa phần những lúc tôi đi mạo hiểm, thời tiết đều như vậy."
+      },
+      {
+        "Title": "Khi có sấm sét...",
+        "Context": "Hả! Đừng đứng gần tôi như vậy, sấm chớp không có mắt đâu."
+      },
+      {
+        "Title": "Ánh nắng thật chan hòa...",
+        "Context": "Thời tiết hôm nay thật tuyệt... Thôi xong rồi, thông thường nói những câu như vậy, trời chắc chắn đổ mưa."
+      },
+      {
+        "Title": "Gió lớn quá...",
+        "Context": "Cẩn thận, đừng có để những viên đá đi lạc đập trúng đầu nhé!"
+      },
+      {
+        "Title": "Chào buổi sáng...",
+        "Context": "Chào buổi sáng! Hôm nay chúng ta sẽ đi mạo hiểm ở đâu đấy?"
+      },
+      {
+        "Title": "Chào buổi trưa...",
+        "Context": "Tôi có mang theo sandwich nè, có muốn ăn không? Chia cho bạn một nửa nè... Nhoàm! Khụ... Khụ... Xin lỗi, tôi bị mắc nghẹn rồi!"
+      },
+      {
+        "Title": "Chào buổi tối...",
+        "Context": "Muốn tôi dẫn bạn đến nói chuyện với các bô lão không? Câu chuyện mà các Nhà Mạo Hiểm lớn tuổi kể lại rất thú vị đó!"
+      },
+      {
+        "Title": "Chúc ngủ ngon...",
+        "Context": "Phải đi rồi sao? Được chu du mạo hiểm cùng bạn thật là thích, lần sau nhớ gọi tôi đó!"
+      },
+      {
+        "Title": "Về bản thân Bennett - Đội mạo hiểm",
+        "Context": "\"Ngôi sao đem theo hy vọng chấn hưng Hiệp Hội Nhà Mạo Hiểm Mondstadt, đội trưởng \"Đội mạo hiểm Benny\" chính là tôi... Không thấy thành viên khác sao? Haha thật ra là... Thời gian gần đây họ xin nghỉ phép hết rồi.\""
+      },
+      {
+        "Title": "Về bản thân Bennett - Vận xui",
+        "Context": "Không có ghê gớm như tin đồn vậy đâu, chỉ là nhiều lúc vô tình rớt xuống bẫy của thợ săn hay là bị cành cây nào đó rớt trúng đầu mà thôi, chuyện này không có gì lạ đúng không?"
+      },
+      {
+        "Title": "Về chúng ta - Cộng tác",
+        "Context": "Haha không còn suất nào trong \"đội mạo hiểm Benny\" đâu... Người ưu tú nhiều như vậy, không cần phải tìm đến kẻ đen đủi như tôi chứ?"
+      },
+      {
+        "Title": "Về chúng ta - Phân công",
+        "Context": "Từ nay về sau, tôi sẽ phụ trách đánh lừa quái vật và giải quyết bẫy, còn bạn phụ trách đi tìm kho báu. Hả, như vậy cũng không được sao? Không cần phải lo lắng tôi có bị thương hay không, tôi rất giỏi trong việc này đó! Hơn nữa tôi tình nguyện làm vì bạn!"
+      },
+      {
+        "Title": "Về chúng ta - Hiểm cảnh",
+        "Context": "Cuối cùng cũng hiểu lý do tại sao bạn muốn tôi là người đồng hành rồi, chắc chắn bạn cũng rất thích cảm giác thú vị khi rơi vào nguy hiểm phải không! Mạo hiểm có nguy hiểm mới thú vị mà."
+      },
+      {
+        "Title": "Về Vision...",
+        "Context": "Không ngờ rằng một người đen đủi như tôi lại được thần linh chấp nhận. Nếu thần linh không bỏ rơi tôi, thì sao tôi phải từ bỏ chính mình chứ?"
+      },
+      {
+        "Title": "Có gì muốn chia sẻ không...",
+        "Context": "Muốn cùng tôi đi ngắm cảnh đêm ở Mondstadt không? Trong thành luôn có ánh đèn chiếu sáng, còn Hồ Rượu Trái Cây lại phản chiếu hào quang của mặt trăng vô cùng đẹp đó... Bạn hỏi tôi thấy cảnh đó ở đâu ư? Haha, có một lần bị vòi rồng cuốn lên trên cao... Hả? Lại không muốn đi ngắm cảnh nữa sao, thế thì thôi vậy..."
+      },
+      {
+        "Title": "Những kiến thức thú vị...",
+        "Context": "Tôi rất thích Bắp Cải Cuộn, tuy nhìn vẻ ngoài không có gì đặc biệt nhưng đó là món đồ ăn vô cùng dân dã. Bắp Cải Cuộn có thể sinh trưởng trên nhiều vùng thổ nhưỡng khác nhau, vì có hương vị nhẹ, thanh mát nên nó có thể ăn kèm với nhiều thứ khác nhau. Thật ra món dân dã mới là ngon nhất đó."
+      },
+      {
+        "Title": "Về Barbara...",
+        "Context": "Cô ấy ca hát nhảy múa rất giỏi! Mỗi lần mạo hiểm gặp bất lợi, tôi đều đến xem cô ấy biểu diễn, hòa vào dòng người hô to khẩu hiệu cố lên, thoáng chốc là tinh thần trở lại bình thường, đúng là điều kỳ diệu phải không! Đó cũng chính là lý do cô ấy được yêu thích đến như vậy... Haizz nếu người đội trưởng như tôi được mọi người đón nhận thì thích biết bao."
+      },
+      {
+        "Title": "Về Klee...",
+        "Context": "Cô bé ấy rất dễ thương... Không được, tôi vẫn phải giữ khoảng cách. Mỗi khi chơi cùng cô bé, bom đạn sẽ nổ bất thình lình... Tôi có đen đủi một chút cũng chả sao, nhưng chẳng may làm Klee bị thương thì thật đáng trách, không biết chừng còn gặp rắc rối với Đội Kỵ Sĩ nữa."
+      },
+      {
+        "Title": "Về Fischl...",
+        "Context": "Cô ấy là \"Công Chúa Định Tội\" vô cùng lợi hại đến từ thế giới khác! Rất nhiều lần tôi đề nghị được đến nơi đó mạo hiểm, cô ấy chỉ ậm ừ cho qua chuyện... Có lẽ là lo lắng cho sự an toàn của tôi, xem ra quê hương cô ấy là nơi lành ít dữ nhiều."
+      },
+      {
+        "Title": "Về Jean...",
+        "Context": "Tôi rất muốn xin sự trợ giúp của đội trưởng Jean cho Hiệp Hội Nhà Mạo Hiểm Mondstadt, nhưng lại không biết phải nói với cô ấy thế nào... Hiệp Hội Nhà Mạo Hiểm không nhiều quy tắc như Đội Kỵ Sĩ, mỗi khi nói chuyện với các bô lão chúng tôi cứ hihi haha suốt, thế nhưng không được dùng thái độ như vậy nói chuyện với đội trưởng Jean... Lẽ nào tôi phải học cách thức hành lễ của Đội Kỵ Sĩ?"
+      },
+      {
+        "Title": "Về Varka...",
+        "Context": "Tôi rất ngưỡng mộ người đó, vị đại đội trưởng danh bất hư truyền! Có thể dẫn dắt cả Đội Kỵ Sĩ Tây Phong thì thật lợi hại. Thế nhưng sau này nghĩ lại, nếu quy mô của đội mạo hiểm quá lớn thì dường như cũng có chút khó khăn, như vậy sẽ không có thời gian chăm sóc các bô lão. Như hiện tại là vừa đủ, haha."
+      },
+      {
+        "Title": "Về Razor...",
+        "Context": "Bạn nhắc đến anh chàng ở Lang Lãnh sao, tuy có vẻ ngoài hung tợn, kiệm lời... Thế nhưng anh ấy rất thú vị đó! Chúng tôi đều rất thích ăn thịt, tôi nấu cơm cho anh ấy ăn, còn anh ấy dạy tôi ngôn ngữ của loài sói, haha. Lần sau bạn cũng đến nhé?"
+      },
+      {
+        "Title": "Về Amber...",
+        "Context": "Ồ tôi nhớ ra cô gái tung hoành khắp nơi đó rồi... Cũng giống như tôi, cô ây thường xuyên mạo hiểm ngoài thành! Chỉ là... Mỗi lần đi ngang qua nơi có thể dựng bếp nấu ăn, sẽ nhìn thấy khói đen ngút trời và mùi khét nồng nặc... Không lẽ cô ấy cũng là người đen đủi?"
+      },
+      {
+        "Title": "Về Noelle...",
+        "Context": "Cô ấy à? Thực ra tôi đã chú ý đến cô ấy từ lâu rồi. Cô ấy rất tài năng và chăm chỉ nhưng mãi chỉ là hầu gái trong Đội Kỵ Sĩ mà không được trở thành kỵ sĩ chính thức. Thật là đáng tiếc phải không? Haiz, nếu cô ấy sẵn sàng đến với Hiệp Hội Nhà Mạo Hiểm, có lẽ sẽ là một nhà mạo hiểm xuất sắc."
+      },
+      {
+        "Title": "Muốn tìm hiểu Bennett - Điều thứ 1",
+        "Context": "Gì cơ, bạn muốn tìm hiểu tôi sao? Haha, tôi chỉ là một Nhà Mạo Hiểm với số phận đen đủi mà thôi, không thể so sánh với người có nhiều kỳ tích như bạn được."
+      },
+      {
+        "Title": "Muốn tìm hiểu Bennett - Điều thứ 2",
+        "Context": "\"Các bô lão\"... Là cách gọi của tôi đối với các Nhà Mạo Hiểm lớn tuổi ở Mondstadt mà thôi. Theo lời bọn họ, tôi được tìm thấy trong một Bí Cảnh vô cùng nguy hiểm. Cũng kì lạ phải không? Vốn là người đen đủi nhưng chẳng hiểu sao tôi vẫn sống được đến bây giờ, quả là điều hiếm thấy."
+      },
+      {
+        "Title": "Muốn tìm hiểu Bennett - Điều thứ 3",
+        "Context": "Bạn nhận ra rồi sao... Haha, không sai, \"Đội mạo hiểm Benny\" từ lâu đã chỉ có mình tôi là thành viên. Không ai dám đi cùng cùng một đội trưởng đen đủi luôn biến những hành trình tưởng chừng đơn giản thành nguy hiểm như tôi... Bạn cũng nghĩ vậy chứ?"
+      },
+      {
+        "Title": "Muốn tìm hiểu Bennett - Điều thứ 4",
+        "Context": "Từ nhỏ đến lớn tôi đã quen với đen đủi rồi. Nếu thay cách nói khác, \"đen đủi\" hóa ra lại là điềm may, may là vì tôi chưa bị vận đen hại chết mới có cơ hội đi thật nhiều nơi, làm quen thật nhiều người. Nếu không chúng ta chẳng có cơ hội làm quen rồi, haha!"
+      },
+      {
+        "Title": "Muốn tìm hiểu Bennett - Điều thứ 5",
+        "Context": "Thật không ngờ chúng ta đã đồng hành với nhau lâu như vậy. Tôi có một ước mơ đó là đợi Hiệp Hội Nhà Mạo Hiểm Mondstadt trở thành hiệp hội lớn mạnh nhất bảy quốc gia, tôi sẽ chu du khắp đại lục Teyvat! \"Đội mạo hiểm Benny\" là một trong những đội mạo hiểm vĩ đại nhất, còn chúng ta sẽ là những nhà mạo hiểm lừng danh!... Bạn hỏi khi nào mới cho bạn gia nhập ư? Ôi dào, đừng có gặng hỏi chi tiết như vậy chứ."
+      },
+      {
+        "Title": "Sở thích của Bennett...",
+        "Context": "Cái gì tôi cũng thích, nhưng thích nhất là mạo hiểm! Sẽ có một ngày tôi tìm được báu vật quý giá nhất trần gian, khi ấy tôi sẽ cùng các bô lão sống cuộc đời an nhàn, Hiệp Hội Nhà Mạo Hiểm Mondstadt chắc chắn sẽ náo nhiệt hơn!"
+      },
+      {
+        "Title": "Nỗi buồn của Bennett...",
+        "Context": "Nói thật... Vào những lúc gặp vận đen, tâm trạng tôi không được tốt. Ví dụ như tìm không thấy thứ mình cần hay bệnh của các bô lão tái phát. Nhưng mấy chuyện vặt này có đáng gì, ngủ một giấc là quên hết. Ngày mới bắt đầu sẽ mang theo những trải nghiệm mới!"
+      },
+      {
+        "Title": "Món ăn yêu thích...",
+        "Context": "Thịt! Thịt là món đồ nạp năng lượng tốt nhất cho cơ thể! Xiên Thịt Gà Nấm, Sườn Nướng hay Gà Nấu Hoa Ngọt đều là món tủ của tôi. Cùng tôi đi mạo hiểm, bạn sẽ có cái bụng no đó."
+      },
+      {
+        "Title": "Món ăn ghét...",
+        "Context": "Tuy Nhà Mạo Hiểm không được phép kén ăn, thế nhưng tôi không thể ăn cay được, ví dụ như món Ớt Tuyệt Vân... Mỗi lần ăn xong tôi thở không ra hơi, đến hít vào còn thấy nóng trong người nữa là, chắc chắn sau đó sẽ đau bụng... Thứ quả quái ác này sao lại có thể mọc ra được cơ chứ."
+      },
+      {
+        "Title": "Nhận Được Quà I",
+        "Context": "Thật là hạnh phúc! Haha... Ui! Có khi nào tất cả may mắn đều dùng hết vào đây rồi không...."
+      },
+      {
+        "Title": "Nhận Được Quà II",
+        "Context": "Bất kể bạn làm món gì cũng đều rất ngon, không hổ danh là bạn mà!"
+      },
+      {
+        "Title": "Nhận Được Quà III",
+        "Context": "Không ổn rồi... bụng bắt đầu đau..."
+      },
+      {
+        "Title": "Sinh nhật...",
+        "Context": "Chúc mừng sinh nhật! Chúc bạn một tuổi mới luôn gặp nhiều may mắn! Yên tâm đi, vận đen không truyền nhiễm đâu. Có tôi ở đây, chúng sẽ không dám làm phiền bạn đâu."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Khởi",
+        "Context": "Mọi thứ đều ổn! Trừ vận đen, haha."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Thừa",
+        "Context": "Khoảng cách như vậy lại khiến bạn gần hơn một bước, tôi sẽ tiếp tục cố gắng!"
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Chuyển",
+        "Context": "Nhận được sức mạnh lớn như vậy phải làm thế nào để báo đáp bạn đây? Tôi biết một nơi có chứa báu vật vô giá, cùng nhau thám hiểm nào?"
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Hợp",
+        "Context": "Nhờ phúc của bạn, hiện tại tôi có năng lực bảo vệ người khác rồi, như vậy mọi người sẽ có cách nhìn khác đối với tôi. Bennett tôi luôn mang vận đen cùng tấm thân thương tích này sẽ trở thành nhà mạo hiểm đáng tin cậy!... Haha, hy vọng chuyện như vậy sẽ đến."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố I",
+        "Context": "Hah!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố II",
+        "Context": "Cháy lên nào!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố III",
+        "Context": "Lên thiên đàng đi!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố IV",
+        "Context": "Haah!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố V",
+        "Context": "Thổi bay các người!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố VI",
+        "Context": "Tránh ra đi!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ I",
+        "Context": "Tôi sẽ bảo vệ mọi người!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ II",
+        "Context": "Tổng tấn công thôi!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ III",
+        "Context": "Có mọi người ở bên cạnh, vết thương sẽ không đau!"
+      },
+      {
+        "Title": "Xung Kích Bắt Đầu I",
+        "Context": "Mạo hiểm, mạo hiểm!"
+      },
+      {
+        "Title": "Xung Kích Bắt Đầu II",
+        "Context": "Được, xuất phát thôi!"
+      },
+      {
+        "Title": "Mở Rương I",
+        "Context": "Kho báu thật này!"
+      },
+      {
+        "Title": "Mở Rương II",
+        "Context": "Không ngờ cũng có ngày tôi gặp may đấy!"
+      },
+      {
+        "Title": "Mở Rương III",
+        "Context": "Đúng là kỳ tích!"
+      },
+      {
+        "Title": "HP Thấp I",
+        "Context": "Tiêu rồi... băng gạc lại tăng giá rồi!"
+      },
+      {
+        "Title": "HP Thấp II",
+        "Context": "Đừng lo... tôi chịu được."
+      },
+      {
+        "Title": "HP Thấp III",
+        "Context": "Lội ngược dòng? Tôi quen với việc này, cứ để tôi."
+      },
+      {
+        "Title": "HP Đồng Hành Thấp I",
+        "Context": "Đừng ỷ mạnh, giao cho tôi!"
+      },
+      {
+        "Title": "HP Đồng Hành Thấp II",
+        "Context": "Có bản lĩnh thì nhào vô!"
+      },
+      {
+        "Title": "Ngã Xuống I",
+        "Context": "Tôi thực sự là một đội trưởng không đủ năng lực..."
+      },
+      {
+        "Title": "Ngã Xuống II",
+        "Context": "Không có gì đáng ngạc nhiên... thật xui xẻo..."
+      },
+      {
+        "Title": "Ngã Xuống III",
+        "Context": "Không thể phá vây... xui xẻo bao vây rồi..."
+      },
+      {
+        "Title": "Chịu Đòn Thường I",
+        "Context": "Chuyện ngoài ý muốn thôi."
+      },
+      {
+        "Title": "Bị Trọng Kích I",
+        "Context": "Đau chết mất."
+      },
+      {
+        "Title": "Bị Trọng Kích II",
+        "Context": "Lại không né được..."
+      },
+      {
+        "Title": "Vào Đội I",
+        "Context": "Đang kêu tôi thật sao?"
+      },
+      {
+        "Title": "Vào Đội II",
+        "Context": "Tuyệt đối không gây trở ngại!... Cố gắng hết sức."
+      },
+      {
+        "Title": "Vào Đội III",
+        "Context": "Quá tuyệt!"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Miêu Tả Nhân Vật",
+        "Context": "\"Đoàn mạo hiểm Benny\" là một ví dụ đặc biệt của phân hội Hiệp Hội Nhà Mạo Hiểm Mondstadt.\nĐể hỗ trợ lẫn nhau và giảm tỷ lệ tai nạn của cơ chế \"đội mạo hiểm\", yêu cầu có ít nhất ba đến bốn nhà mạo hiểm thường trú trong đội.\nCòn \"Đoàn mạo hiểm Benny\" mà Bennett là người đứng đầu, thì chỉ có mỗi một mình đội trưởng, việc này đã kéo dài từ rất lâu rồi.\nCác thành viên bị thất lạc, có quan hệ mật thiết đến số phận \"đen đủi\" của Bennett.\nNhưng đối với người thích mạo hiểm như Bennett lại chẳng hề cảm thấy cô đơn vì điều này…\nĐôi khi, trong thâm tâm cũng chỉ xuất hiện cảm giác ấy một hai lần. Có lẽ là vậy."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 1",
+        "Context": "Nhà Mạo Hiểm Jack từng là người bị hại đầu tiên của \"Đoàn mạo hiểm Benny\".\nTrong thời khắc chỉ cách báu vật vài bước chân, dòng chảy hỗn loạn của Nguyên Tố Nham trăm năm mới xuất hiện đột nhiên xảy ra, trận động đất khủng khiếp tạo ra một hố vực sâu vạn trượng ngay trước mặt mọi người.\n\"Cảm giác lúc ấy giống như tình yêu gần ngay trước mắt xa tít chân trời vậy.\"\nTuy là lúc đó núi lở chỉ khiến Jack bị thương nhẹ, nhưng đó lại là cú đả kích lớn vào cuộc đời Nhà Mạo Hiểm của anh ấy, giống như là thất tình vậy.\nThành viên Royce trong một lần thám hiểm Bí Cảnh đã nghe được âm thanh \"rắc rắc\", sau đó thì mất đi ý thức trong tiếng nổ kinh hoàng.\nKẻ đứng đầu của vụ nổ ấy - Klee bị giam vào ngục 7 ngày, vì cho rằng Bí Cảnh mà các Nhà Mạo Hiểm đang thám hiểm là một cái hang thỏ rồi làm nó nổ tung.\nHeckler từ khi tham gia vào \"Đoàn mạo hiểm Benny\" lại mắc phải bệnh tiêu chảy với tần suất một tuần một lần. Tuy nguyên nhân dẫn đến tình trạng này được xác định là do ăn phải thức ăn có độc, thế nhưng anh nhất quyết quy trách nhiệm cho sự xui xẻo của đội trưởng.\n\"Họ sẽ quay lại, chỉ là xin nghỉ phép mà thôi ha ha... Xin bạn đừng hủy đăng ký của Đoàn mạo hiểm Benny...\"\nThấy bộ dạng thành khẩn cầu xin của Bennett, tiểu thư Katheryne thở dài và không nỡ vạch trần sự thật rằng mọi người đã chuyển vào đội khác làm việc."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 2",
+        "Context": "Từng có một Bí Cảnh khiến người ta vô cùng tuyệt vọng.\nXưa kia, một Nhà Mạo Hiểm già đã đi sâu vào thám hiểm. \nNgọn lửa ác liệt thiêu rụi làn da ông, sấm sét ầm ĩ như xuyên qua mặt trống và những cơn cuồng phong muốn xé toạc tâm hồn.\nKết thúc cuộc hành trình giống như đi vào địa ngục, phía cuối con đường lại là... một đứa bé.\nNhà mạo hiểm già ban đầu nghĩ ông là người đầu tiên đặt chân vào nơi \"tuyệt vọng\" này. Nhưng dù thế nào, cũng không thể giải thích được cảnh tượng trước mắt.\nVào lúc này, một ý tưởng đã xuất hiện và ông tin rằng đó là sự thật.\n\"Đứa bé này... bị thế giới bỏ rơi.\"\nKhông tìm được vũ khí thần thánh hay vàng bạc châu báu, nhưng khuôn mặt của ông không hề lộ vẻ thất vọng, dường như trong mắt ông, sinh mệnh của đứa bé này chính là kho báu.\n\"Cuộc phiêu lưu này phải có ý nghĩa của nó\", ông lão nghĩ vậy và giấu đứa bé vào lòng.\nCho dù việc ông đang làm là trái với ý muốn của thế giới."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 3",
+        "Context": "Ông lão chưa kịp kể lại cuộc phiêu lưu cho mọi người, thì đã qua đời bởi những vết thương quá nặng, chỉ để lại đứa trẻ được giải cứu khỏi \"tuyệt vọng\".\nTrước khi ra đi, ông thốt ra những từ như thế này: \"ý chí\", \"phiêu lưu\" và \"kho báu cuối cùng\".\nTrong phân hội Mondstadt của Hiệp Hội Nhà Mạo Hiểm, có vài Nhà Mạo Hiểm già không vợ không con. Họ đã nuôi nấng cậu bé và đặt tên là Bennett. Coi cậu như là con mình, chăm sóc cẩn thận.\nBennett từ nhỏ đã vô cùng hiểu chuyện, vô cùng thân thiết gọi họ là \"bố\".\n\"Bố à, răng giả rơi vào bát rồi kìa!\", \"Bố ơi đừng mặc cái áo giáp da đó nữa, con mua sơ mi cho nhé\", \"Trời mưa đừng đứng gần con quá, sẽ bị sét đánh trúng đó!\".\nĐến nay, việc chăm sóc những người \"bố\" không nơi nương tựa này đã chiếm toàn bộ thời gian còn lại của Bennett sau mỗi lần mạo hiểm.\n\"Những người bố này đúng là nhặt được báu vật rồi ha ha\". Hội trưởng đương nhiệm Cyrus vừa cười vừa vỗ vai Bennett.\nNếu bản thân đã không được may mắn thì chí ít cũng phải cố gắng mang đến may mắn cho những người mà anh yêu thương - Bennett đã nghĩ như thế.\nBennett đen đủi đang trên đường đi tìm một báu vật gọi là \"sự may mắn\"."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 4",
+        "Context": "Thuộc hạ của Fischl, quạ đen Oz gọi Bennett là \"thiếu niên kiên cường nhất thế giới\".\nTừ các vết thương trên người của Bennett có thể nhận ra anh đã trải qua vô vàn khó khăn.\nQuái vật tấn công, di tích sụp đổ, rơi xuống vực sâu... Bennett với kinh nghiệm vô cùng phong phú khi đối mặt với những thứ \"xui xẻo\" luôn tìm được cách ứng phó với chúng.\nBarbara - mục sư tế lễ của giáo đường đã rất ngạc nhiên bởi sự điêu luyện trong việc điều trị trật khớp của anh.\nSự xui xẻo còn mang đến một món quà, đó là tinh thần chiến đấu với \"bệnh tật\".\n\"Động tác của đứa trẻ đó, lẽ nào...nó không cảm thấy đau sao?\" Đại Đội Trưởng Varka của đội kỵ sĩ đã vô cùng tò mò khi nhìn thấy cảnh Bennett chiến đấu.\nKhông phải không cảm thấy đau, mà là đã sớm thích nghi và biến chúng thành một phần giác quan thường ngày.\nNỗi đau tột cùng đối với Bennett mà nói, cũng chỉ như mùi vị khiến anh sặc mũi, như ánh sáng làm anh chói mắt mà thôi.\nVì vậy, với phương thức chiến đấu vượt qua giới hạn và động tác tấn công không màng đến bản thân đã trở thành tiêu chí của Nhà Mạo Hiểm Fischl."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 5",
+        "Context": "Cái chết rốt cuộc là gì? Bennett - người luôn mon men gần ranh giới cái chết tự hỏi.\nBennett biết rằng, người \"bố\" - Nhà Mạo Hiểm đã cứu vớt anh sau khi chết đã được rất nhiều người ca tụng.\nBennett biết Nhà Mạo Hiểm trong đám tang của chính mình chả có mấy ai khóc than, phần lớn chỉ là những người bạn già uống với nhau chén rượu rồi đưa ông đến nơi chôn cất.\nBennett biết rằng nơi trở về tốt nhất cho Nhà Mạo Hiểm Mondstadt đó là hiến thân cho việc truy tìm Bí Cảnh có chứa báu vật và vùng đất lớn, rồi từ đó sẽ được Phong Thần đem linh hồn về quê hương.\nAnh từng rất sợ cái chết.\nThế nhưng sau đó Bennett cho rằng, cái chết có lẽ sẽ là một việc hạnh phúc với Nhà Mạo Hiểm. \nNhưng điều may mắn lại chẳng liên quan đến mình mà?\n\"Khởi hành thôi, đi tìm kho báu!\" Thế là Bennett bỏ mặc những suy nghĩ ngổn ngang đó."
+      },
+      {
+        "Title": "Băng gạc",
+        "Context": "Khi bị thương nghiêm trọng như gãy xương hoặc mất máu quá nhiều, Bennett sẽ chạy đến giáo đường nhờ mục sư Barbara chữa trị.\n\"Lại là tôi đây... thật xin lỗi.\" Bennett gãi gãi đầu.\nBarbara chỉ biết lắc đầu, \"những vết trầy này cũng xử lý nốt\", sau đó đưa đến miếng băng gạc.\nSự quan tâm vô tư, nhưng Bennett lại coi như báu vật. Anh dán miếng băng gạc lên vết thương trông giống như đeo huân chương rồi cảm ơn một cách nồng nhiệt.\nBennett giữ rất nhiều băng gạc trong ngăn túi nhỏ, và mang theo trong suốt hành trình mạo hiểm. Của các bố, của tiểu thư Barbara, của tiểu thư Katheryne... còn có từ các Nhà Mạo Hiểm mà anh tình cờ gặp phải khi bị thương.\nNhững lòng tốt nhỏ bé được gom lại, là sự may mắn hữu hình chỉ thuộc về Bennett.\n\"Ít nhất thì mọi người đều ở đây, xem ra tôi cũng không quá xui xẻo\"."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Không có gì có thể ngăn cản được lòng nhiệt huyết với những cuộc mạo hiểm của Bennett.\nAnh muốn được như những ông \"bố\" của mình, không ngừng khám phá, thử thách, đổ máu và dần dần già đi trên con đường mạo hiểm.\nNhưng lần này, Bennett đã gặp phải nguy hiểm thực sự.\nĐúng như những gì ông lão đã gặp phải năm đó, là một tình huống nguy hiểm khiến người ta vô cùng tuyệt vọng.\n\"Mất máu như thế này... không hay rồi\".\nNhưng Bennett không dừng lại, anh nghĩ \"không có lý do gì để quay lại\".\nKhông biết vì lý do gì, anh cảm thấy rằng tất cả những điều không may mà anh phải chịu đựng trong quá khứ, là để vượt qua sự hiểm nguy trong thời điểm này.\nNhưng thứ chờ đợi anh ở cuối hành trình giống như địa ngục này lại là... không gì cả.\n\"Không thu hoạch được gì cũng là một phần... của mạo hiểm mà, đừng... để ý...\"\nDây thần kinh buông lỏng, những vết thương, kèm theo sự mệt mỏi đã lấy đi ý thức của Bennett, anh ngã lăn ra đất.\nKhi tỉnh lại lần nữa, anh phát hiện ra vết thương dường như đang bị đốt cháy bởi ngọn lửa thần kỳ, cầm máu lại không có cảm giác đau đớn.\nMột viên ngọc ấm áp khẽ lay động trong lòng bàn tay anh, hoà theo nhịp đập của trái tim trong lồng ngực Nhà Mạo Hiểm.\nĐây không phải là sự nhân từ của thế giới, cũng không phải là sự thương sót của số phận, mà là \"kho báu cuối cùng\" thực sự xứng đáng với ý chí như ngọn lửa của anh ấy."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 203201,
+      "Name": "Hành Trình Sắc Lửa",
+      "Description": "Trang phục du ngoạn Natlan của Bennett, màu chủ đạo là màu xanh lam may mắn cùng màu vàng cam rực rỡ, cũng giống như vùng đất tràn trề sức sống này vậy.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_BennettCostumeSummer",
+      "SideIcon": "UI_AvatarIcon_Side_BennettCostumeSummer"
+    },
+    {
+      "Id": 203200,
+      "Name": "Vận Đen Đeo Bám",
+      "Description": "Phong cách của Bennett. Trang phục cũ của nhà mạo hiểm được chắp vá.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104114,
+    113011,
+    100024,
+    112037,
+    104306,
+    113003
+  ],
+  "NameCard": {
+    "Name": "Bennett - Chấp Nhận",
+    "Description": "Hoa văn danh thiếp.\nSự công nhận của đoàn thám hiểm Bennett.",
+    "Icon": "UI_NameCardIcon_Bennett",
+    "PicturePrefix": "UI_NameCardPic_Bennett"
+  }
+}

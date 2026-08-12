@@ -368,6 +368,7 @@
         "Id": 11281,
         "Name": "西風劍術·流光之舞",
         "Description": "<color=#FFD780FF>普通攻擊</color>\n仿擬古代騎士的戰舞，雙持大劍進行至多五段的連續攻擊。\n\n<color=#FFD780FF>重擊</color>\n消耗一定體力，向前方突進後，進行一次格外有力的雙劍揮砍。\n\n<color=#FFD780FF>下落攻擊</color>\n從空中下墜衝擊地面，攻擊下落路徑上的敵人，並在落地時造成範圍傷害。",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_04"
       },
       {
@@ -785,6 +786,7 @@
         "Id": 11282,
         "Name": "烈風終墜",
         "Description": "以絕對的力量，呈現西風劍術的真髓，依據點按、長按，以不同的方式產生效果。\n\n<color=#FFD780FF>點按</color>\n向前方騰躍而起並順勢劈斬，造成<color=#80FFD7FF>風元素範圍傷害</color>，並切換至{LINK#N11280001}<color=#FFD780FF>狂飆突進</color>{/LINK}模式。\n處於<color=#FFD780FF>狂飆突進</color>模式下時，法爾伽的普通攻擊與重擊造成的傷害提高，無法進行下落攻擊，且進行普通攻擊與重擊時，將根據隊伍中角色的元素類型，使雙持的大劍分別造成無法被附魔覆蓋的對應元素傷害。\n此外，處於<color=#FFD780FF>狂飆突進</color>模式下時，若隊伍中存在<color=#FF9999FF>火元素</color>、<color=#80C0FFFF>水元素</color>、<color=#FFACFFFF>雷元素</color>或<color=#99FFFFFF>冰元素</color>角色，法爾伽的元素戰技<color=#FFD780FF>烈風終墜</color>將會被替換為特殊的元素戰技{LINK#N11280002}<color=#FFD780FF>四風將起</color>{/LINK}，造成對應元素傷害與<color=#80FFD7FF>風元素傷害</color>。此外，法爾伽還可以消耗特殊元素戰技<color=#FFD780FF>四風將起</color>的可使用次數，進行不消耗體力的特殊重擊<color=#FFD780FF>蒼噬</color>，造成對應元素傷害與<color=#80FFD7FF>風元素傷害</color>。\n\n<color=#FFD780FF>長按</color>\n進行蓄力後，向前方騰躍而起，蓄力時間會提升騰躍距離。",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Varka_01"
       }
     ],
@@ -807,6 +809,7 @@
         "Id": 1285101,
         "Name": "魔女的前夜禮·重光臨晨",
         "Description": "完成<color=#FFD780FF>魔女的課業·無題之題</color>後，法爾伽將成為<color=#FFD780FF>魔導</color>角色。隊伍中編入至少2名魔導角色時，將獲得<color=#FFD780FF>魔導·秘儀</color>效果，使魔導角色獲得強化。\n\n<color=#FFD780FF>魔導·秘儀</color>\n特殊元素戰技{LINK#N11280002}<color=#FFD780FF>四風將起</color>{/LINK}獲得強化：法爾伽在{LINK#N11280001}<color=#FFD780FF>狂飆突進</color>{/LINK}模式下的普通攻擊命中敵人時，<color=#FFD780FF>四風將起</color>的冷卻時間將會轉為縮短1秒。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Varka_08"
       }
     ],
@@ -976,6 +979,7 @@
       "Id": 11285,
       "Name": "我即朔風",
       "Description": "以最強的北風騎士之名，向前方揮出強力的二連斬，造成兩次<color=#80FFD7FF>風元素傷害</color>。\n若隊伍中存在<color=#FF9999FF>火元素</color>、<color=#80C0FFFF>水元素</color>、<color=#FFACFFFF>雷元素</color>或<color=#99FFFFFF>冰元素</color>角色，則第一次斬擊將會按照上述元素類型的優先順序，轉為造成對應元素傷害。",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Varka_01"
     },
     "Inherents": [
@@ -1000,6 +1004,7 @@
         "Id": 1282101,
         "Name": "曉風的行軍",
         "Description": "隊伍中存在<color=#FF9999FF>火元素</color>、<color=#80C0FFFF>水元素</color>、<color=#FFACFFFF>雷元素</color>或<color=#99FFFFFF>冰元素</color>角色時，按照上述元素類型的優先順序，基於法爾伽的攻擊力，每1000點攻擊力都將使法爾伽獲得10%<color=#80FFD7FF>風元素傷害加成</color>與對應元素傷害加成（上述元素類型中，至多有一種元素類型可以依此方式獲得傷害加成），至多依此方式獲得25%。\n\n此外，如果隊伍中存在至少2名<color=#80FFD7FF>風元素</color>角色，或存在至少2名元素類型相同的<color=#FF9999FF>火元素</color>、<color=#80C0FFFF>水元素</color>、<color=#FFACFFFF>雷元素</color>或<color=#99FFFFFF>冰元素</color>角色，法爾伽在{LINK#N11280001}<color=#FFD780FF>狂飆突進</color>{/LINK}模式下進行的普通攻擊、重擊、特殊重擊<color=#FFD780FF>蒼噬</color>與施放的特殊元素戰技{LINK#N11280002}<color=#FFD780FF>四風將起</color>{/LINK}將造成原本140%的傷害。若隊伍中同時存在至少2名<color=#80FFD7FF>風元素</color>角色與至少2名元素類型相同的<color=#FF9999FF>火元素</color>、<color=#80C0FFFF>水元素</color>、<color=#FFACFFFF>雷元素</color>或<color=#99FFFFFF>冰元素</color>角色，則會使上述效果提升至220%。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Varka_06"
       },
       {
@@ -1022,7 +1027,8 @@
         },
         "Id": 1282201,
         "Name": "風幟的先引",
-        "Description": "隊伍中附近的角色觸發擴散反應時，法爾伽將獲得一層<color=#FFD780FF>「蒼牙之誓」</color>，使法爾伽的普通攻擊、重擊、特殊重擊<color=#FFD780FF>蒼噬</color>與施放的特殊元素戰技{LINK#N11280002}<color=#FFD780FF>四風將起</color>{/LINK}造成的傷害提升7.5%。該效果持續8秒，至多疊加4層，每名角色每1秒至多依此方式使法爾伽獲得一層<color=#FFD780FF>「蒼牙之誓」</color>。",
+        "Description": "隊伍中附近的角色觸發擴散或星擴散反應時，法爾伽將獲得一層<color=#FFD780FF>「蒼牙之誓」</color>，使法爾伽的普通攻擊、重擊、特殊重擊<color=#FFD780FF>蒼噬</color>與施放的特殊元素戰技{LINK#N11280002}<color=#FFD780FF>四風將起</color>{/LINK}造成的傷害提升7.5%。該效果持續8秒，至多疊加4層，每名角色每1秒至多依此方式使法爾伽獲得一層<color=#FFD780FF>「蒼牙之誓」</color>。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Varka_05"
       },
       {
@@ -1043,6 +1049,7 @@
         "Id": 1282301,
         "Name": "歸風的凱歌",
         "Description": "隊伍中每有一名蒙德角色，透過長按施放的元素戰技<color=#FFD780FF>烈風終墜</color>的冷卻時間就會縮短5%。\n該效果在秘境、征討領域、深境螺旋中無效。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Varka_07"
       }
     ],
@@ -1072,7 +1079,7 @@
       {
         "Id": 1284,
         "Name": "「因為無人能奪去我們歌唱的自由」",
-        "Description": "法爾伽觸發擴散反應時，依據參與反應的元素類型，使隊伍中附近的所有角色分別獲得20%<color=#80FFD7FF>風元素傷害加成</color>與對應元素傷害加成，持續10秒。",
+        "Description": "法爾伽觸發擴散或星擴散反應時，依據參與反應的元素類型，使隊伍中附近的所有角色分別獲得20%<color=#80FFD7FF>風元素傷害加成</color>與對應元素傷害加成，持續10秒。",
         "Icon": "UI_Talent_S_Varka_03"
       },
       {

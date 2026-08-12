@@ -277,6 +277,7 @@
         "Id": 11251,
         "Name": "月露潑降",
         "Description": "<color=#FFD780FF>普通攻擊</color>\n喚起月光的潮汐，進行至多三段的攻擊，造成<color=#80C0FFFF>水元素傷害</color>。\n\n<color=#FFD780FF>重擊</color>\n消耗一定體力，短暫詠唱後，造成<color=#80C0FFFF>水元素範圍傷害</color>。\n若擁有至少1枚{LINK#N11190008}<color=#FFD780FF>草露</color>{/LINK}，哥倫比婭施放的重擊將會被替換為特殊、不消耗體力的重擊<color=#FFD780FF>月露滌蕩</color>：消耗一枚草露，對前方的敵人造成3次<color=#99FF88FF>草元素範圍傷害</color>，該傷害視為月綻放反應傷害。\n\n<color=#FFD780FF>下落攻擊</color>\n從空中下墜衝擊地面，攻擊下落路徑上的敵人，並在落地時造成<color=#80C0FFFF>水元素範圍傷害</color>。",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_Catalyst_MD"
       },
       {
@@ -539,6 +540,7 @@
         "Id": 11252,
         "Name": "萬古潮汐",
         "Description": "喚起月海的潮汐，造成<color=#80C0FFFF>水元素範圍傷害</color>，並喚出{LINK#N11250001}<color=#FFD780FF>引力漣漪</color>{/LINK}。\n<color=#FFD780FF>引力漣漪</color>將跟隨場上角色，並持續對周圍的敵人造成<color=#80C0FFFF>水元素範圍傷害</color>。<color=#FFD780FF>引力漣漪</color>存在期間，隊伍中附近的角色觸發月曜反應或造成月曜反應傷害時，將會為哥倫比婭累積特殊的<color=#FFD780FF>引力值</color>，累積至上限時，將會依據為哥倫比婭累積最多<color=#FFD780FF>引力值</color>的月曜反應的類型，對敵人造成不同類型的傷害。\n<color=#FFD780FF>月兆·滿輝</color>：<color=#FFD780FF>引力漣漪</color>會造成範圍更大的<color=#80C0FFFF>水元素範圍傷害</color>。",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Columbina_01"
       }
     ],
@@ -724,6 +726,7 @@
       "Id": 11255,
       "Name": "她的鄉愁",
       "Description": "以無穢的新月之名連接山與海，將身邊的大地短暫變換為{LINK#N11250002}<color=#FFD780FF>月之領域</color>{/LINK}，並造成<color=#80C0FFFF>水元素範圍傷害</color>。",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Columbina_01"
     },
     "Inherents": [
@@ -746,6 +749,7 @@
         "Id": 1252101,
         "Name": "月亮誘發的瘋狂",
         "Description": "觸發{LINK#N11250001}<color=#FFD780FF>引力干涉</color>{/LINK}時，哥倫比婭將獲得月誘效果，使自身的暴擊率提升5%，持續10秒。該效果至多疊加3層。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Columbina_05"
       },
       {
@@ -764,6 +768,7 @@
         "Id": 1252201,
         "Name": "新月自己的法則",
         "Description": "處於{LINK#N11250002}<color=#FFD780FF>月之領域</color>{/LINK}中的角色觸發月曜反應時，將分別獲得以下效果：\n·<color=#FFD780FF>月感電反應</color>：雷暴雲對符合條件的目標進行雷擊時，有33%機率額外進行一次雷擊。\n·<color=#FFD780FF>月綻放反應</color>：觸發月綻放反應時，將為隊伍提供一枚特殊的{LINK#N11250003}<color=#FFD780FF>山月草露</color>{/LINK}，每18秒至多依此方式為隊伍提供3枚山月草露。\n·<color=#FFD780FF>月結晶反應</color>：觸發月籠諧奏時，每枚月籠有33%機率額外進行一次攻擊。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Columbina_06"
       },
       {
@@ -785,6 +790,7 @@
         "Id": 1252301,
         "Name": "月兆祝賜·借汝月光",
         "Description": "隊伍中的角色觸發感電/綻放/水元素結晶反應時，將轉為觸發月感電/月綻放/月結晶反應，且基於哥倫比婭的生命值上限，提升隊伍中角色造成的月曜反應的基礎傷害：每1000點生命值上限都將提升0.2%月曜反應的基礎傷害，至多依此方式提升7%傷害。\n\n此外，哥倫比婭在隊伍中時，隊伍的<color=#FFD780FF>月兆</color>將會上升一級。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Columbina_07"
       },
       {
@@ -802,7 +808,8 @@
         },
         "Id": 1252501,
         "Name": "月的守望",
-        "Description": "處於挪德卡萊區域時，隊伍中自己的角色倒下時，哥倫比婭將復甦該角色，並為其恢復生命值，恢復值基於哥倫比婭的好感等級，該效果每100秒至多觸發一次。該效果在秘境、征討領域、深境螺旋中無效。\n此外，對受到月矩力影響的部分小動物，哥倫比婭似乎有著特殊的親和力…",
+        "Description": "處於挪德卡萊或霜月區域時，隊伍中自己的角色倒下時，哥倫比婭將復甦該角色，並為其恢復生命值，恢復值基於哥倫比婭的好感等級，該效果每100秒至多觸發一次。該效果在秘境、征討領域、深境螺旋中無效。\n此外，對受到月矩力影響的部分小動物，哥倫比婭似乎有著特殊的親和力…",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Columbina_08"
       }
     ],

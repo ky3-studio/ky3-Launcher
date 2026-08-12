@@ -1,0 +1,1192 @@
+{
+  "Id": 10000090,
+  "PromoteId": 90,
+  "Sort": 76,
+  "Body": 2,
+  "Icon": "UI_AvatarIcon_Chevreuse",
+  "SideIcon": "UI_AvatarIcon_Side_Chevreuse",
+  "Name": "Chevreuse",
+  "Description": "Đội trưởng Đội Tuần Tra Đặc Biệt luôn tuân thủ \"chính nghĩa\" trong lòng. Khẩu súng hỏa mai trong tay chỉ hướng về những kẻ có tội.",
+  "BeginTime": "2024-01-09T18:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 1002.9701,
+    "AttackBase": 16.20528,
+    "DefenseBase": 50.70135
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 2,
+    "Skills": [
+      {
+        "GroupId": 9031,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Lần 1|{param1:F1P}",
+            "Sát Thương Lần 2|{param2:F1P}",
+            "Sát Thương Lần 3|{param3:F1P}+{param4:F1P}",
+            "Sát Thương Lần 4|{param5:F1P}",
+            "Sát Thương Trọng Kích|{param6:F1P}",
+            "Thể lực Trọng Kích tiêu hao|{param7:F1} điểm",
+            "Sát Thương Khi Rơi|{param8:F1P}",
+            "Sát Thương Khi Rơi Từ Độ Cao Thấp/Cao|{param9:P}/{param10:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 903101,
+              "Level": 1,
+              "Parameters": [
+                0.531299,
+                0.493107,
+                0.276449,
+                0.324527,
+                0.772615,
+                1.2169,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 903102,
+              "Level": 2,
+              "Parameters": [
+                0.574545,
+                0.533243,
+                0.298951,
+                0.350942,
+                0.835503,
+                1.31595,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 903103,
+              "Level": 3,
+              "Parameters": [
+                0.61779,
+                0.57338,
+                0.321453,
+                0.377357,
+                0.89839,
+                1.415,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 903104,
+              "Level": 4,
+              "Parameters": [
+                0.679569,
+                0.630718,
+                0.353598,
+                0.415093,
+                0.988229,
+                1.5565,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 903105,
+              "Level": 5,
+              "Parameters": [
+                0.722814,
+                0.670855,
+                0.3761,
+                0.441508,
+                1.051116,
+                1.65555,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 903106,
+              "Level": 6,
+              "Parameters": [
+                0.772237,
+                0.716725,
+                0.401816,
+                0.471697,
+                1.122988,
+                1.76875,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 903107,
+              "Level": 7,
+              "Parameters": [
+                0.840194,
+                0.779797,
+                0.437176,
+                0.513206,
+                1.22181,
+                1.9244,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 903108,
+              "Level": 8,
+              "Parameters": [
+                0.908151,
+                0.842869,
+                0.472535,
+                0.554715,
+                1.320633,
+                2.08005,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 903109,
+              "Level": 9,
+              "Parameters": [
+                0.976108,
+                0.90594,
+                0.507895,
+                0.596225,
+                1.419456,
+                2.2357,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 903110,
+              "Level": 10,
+              "Parameters": [
+                1.050243,
+                0.974746,
+                0.546469,
+                0.641508,
+                1.527263,
+                2.4055,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 903111,
+              "Level": 11,
+              "Parameters": [
+                1.124378,
+                1.043552,
+                0.585044,
+                0.68679,
+                1.63507,
+                2.5753,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 903112,
+              "Level": 12,
+              "Parameters": [
+                1.198513,
+                1.112357,
+                0.623618,
+                0.732073,
+                1.742877,
+                2.7451,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 903113,
+              "Level": 13,
+              "Parameters": [
+                1.272647,
+                1.181163,
+                0.662192,
+                0.777356,
+                1.850683,
+                2.9149,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 903114,
+              "Level": 14,
+              "Parameters": [
+                1.346782,
+                1.249968,
+                0.700767,
+                0.822639,
+                1.95849,
+                3.0847,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 903115,
+              "Level": 15,
+              "Parameters": [
+                1.420917,
+                1.318774,
+                0.739341,
+                0.867922,
+                2.066297,
+                3.2545,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10901,
+        "Name": "Lưỡi Lê Cải Tiến",
+        "Description": "<color=#FFD780FF>Tấn Công Thường</color>\nThực hiện tối đa 4 lần đánh liên tiếp.\n\n<color=#FFD780FF>Trọng Kích</color>\nTiêu hao thể lực nhất định, xông về phía trước, gây sát thương cho địch trên đường đi.\n\n<color=#FFD780FF>Tấn Công Khi Đáp</color>\nĐáp xuống đất từ trên không, tấn công kẻ địch trên đường và gây sát thương phạm vi khi chạm đất.",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 9032,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Nhấn|{param1:F1P}",
+            "Sát Thương Nhấn Giữ|{param2:F1P}",
+            "Sát Thương Đầu Đạn Quá Tải|{param3:F1P}",
+            "Lượng Trị Liệu Duy Trì|{param5:F2P} Giới Hạn HP +{param6:I}",
+            "Trị Liệu Duy Trì|{param4:F1}s",
+            "Sát Thương Lưỡi Dao Nổi Sóng|{param7:F1P}",
+            "Giãn Cách Lưỡi Dao Nổi Sóng|{param8:F1}s",
+            "CD|{param9:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 903201,
+              "Level": 1,
+              "Parameters": [
+                1.152,
+                1.728,
+                2.824,
+                12,
+                0.026667,
+                256.79184,
+                0.288,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 903202,
+              "Level": 2,
+              "Parameters": [
+                1.2384,
+                1.8576,
+                3.0358,
+                12,
+                0.028667,
+                282.47458,
+                0.3096,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 903203,
+              "Level": 3,
+              "Parameters": [
+                1.3248,
+                1.9872,
+                3.2476,
+                12,
+                0.030667,
+                310.29758,
+                0.3312,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 903204,
+              "Level": 4,
+              "Parameters": [
+                1.44,
+                2.16,
+                3.53,
+                12,
+                0.033333,
+                340.26077,
+                0.36,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 903205,
+              "Level": 5,
+              "Parameters": [
+                1.5264,
+                2.2896,
+                3.7418,
+                12,
+                0.035333,
+                372.36423,
+                0.3816,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 903206,
+              "Level": 6,
+              "Parameters": [
+                1.6128,
+                2.4192,
+                3.9536,
+                12,
+                0.037333,
+                406.60788,
+                0.4032,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 903207,
+              "Level": 7,
+              "Parameters": [
+                1.728,
+                2.592,
+                4.236,
+                12,
+                0.04,
+                442.9918,
+                0.432,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 903208,
+              "Level": 8,
+              "Parameters": [
+                1.8432,
+                2.7648,
+                4.5184,
+                12,
+                0.042667,
+                481.51593,
+                0.4608,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 903209,
+              "Level": 9,
+              "Parameters": [
+                1.9584,
+                2.9376,
+                4.8008,
+                12,
+                0.045333,
+                522.1803,
+                0.4896,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 903210,
+              "Level": 10,
+              "Parameters": [
+                2.0736,
+                3.1104,
+                5.0832,
+                12,
+                0.048,
+                564.98486,
+                0.5184,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 903211,
+              "Level": 11,
+              "Parameters": [
+                2.1888,
+                3.2832,
+                5.3656,
+                12,
+                0.050667,
+                609.9297,
+                0.5472,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 903212,
+              "Level": 12,
+              "Parameters": [
+                2.304,
+                3.456,
+                5.648,
+                12,
+                0.053333,
+                657.0147,
+                0.576,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 903213,
+              "Level": 13,
+              "Parameters": [
+                2.448,
+                3.672,
+                6.001,
+                12,
+                0.056667,
+                706.24,
+                0.612,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 903214,
+              "Level": 14,
+              "Parameters": [
+                2.592,
+                3.888,
+                6.354,
+                12,
+                0.06,
+                757.6055,
+                0.648,
+                10,
+                15
+              ]
+            },
+            {
+              "Id": 903215,
+              "Level": 15,
+              "Parameters": [
+                2.736,
+                4.104,
+                6.707,
+                12,
+                0.063333,
+                811.11127,
+                0.684,
+                10,
+                15
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10902,
+        "Name": "Đánh Chặn Nhanh Tầm Gần",
+        "Description": "Chevreuse giơ cao súng hỏa mai để bắn kẻ địch, gây <color=#FF9999FF>Sát Thương Phạm Vi Nguyên Tố Hỏa</color>.\nTrong một khoảng thời gian sau khi Chevreuse bắn sẽ liên tục hồi phục HP cho nhân vật của bản thân trong trận hiện tại, lượng hồi phục căn cứ vào giới hạn HP của Chevreuse.\nKhi Nhấn Giữ sẽ thi triển theo cách thức khác.\n\n<color=#FFD780FF>Nhấn Giữ</color>\nTiến hành ngắm chuẩn, khóa một kẻ địch trong tầm ngắm để bắn một phát đánh chặn chính xác; Nếu Chevreuse có \"Đầu Đạn Quá Tải\" thì sẽ chuyển thành bắn Đầu Đạn Quá Tải đó để gây <color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color> lớn hơn trong phạm vi rộng hơn.\nChevreuse sẽ nhận 1 Đầu Đạn Quá Tải khi nhân vật trong đội gần đó kích hoạt phản ứng Quá Tải, tối đa chỉ sở hữu 1 Đầu Đạn Quá Tải cùng lúc.\n\n<color=#FFD780FF>Sức Mạnh Nền Tảng: Ousia</color>\nMỗi cách một khoảng thời gian, \"Đánh Chặn Nhanh Tầm Gần\" của Chevreuse khi bắn trúng sẽ triệu hồi Lưỡi Dao Nổi Sóng, gây <color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color> thuộc tính Ousia.\n\n<i>\"Thực ra trong quy định chỉ có thuật ngữ 'đánh chặn' thôi, nhưng nhân vật chính trong tiểu thuyết cho rằng tạo thêm chút kiểu cách cho tên kỹ năng sẽ vừa có thể khiến đồng đội phấn chấn hơn, vừa khiến đối thủ dè chừng hơn... Tôi cảm thấy có lý, nên đã thay đổi quy định đó rồi!\"</i>",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_S_Chevreuse_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 9039,
+      "Proud": {
+        "Descriptions": [
+          "Sát Thương Bom Đạn Chùm|{param1:F1P}",
+          "Sát Thương Bom Nổ Kép|{param2:F1P}",
+          "CD|{param3:F1}s",
+          "Năng Lượng Nguyên Tố|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 903901,
+            "Level": 1,
+            "Parameters": [
+              3.6816,
+              0.49088,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 903902,
+            "Level": 2,
+            "Parameters": [
+              3.95772,
+              0.527696,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 903903,
+            "Level": 3,
+            "Parameters": [
+              4.23384,
+              0.564512,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 903904,
+            "Level": 4,
+            "Parameters": [
+              4.602,
+              0.6136,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 903905,
+            "Level": 5,
+            "Parameters": [
+              4.87812,
+              0.650416,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 903906,
+            "Level": 6,
+            "Parameters": [
+              5.15424,
+              0.687232,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 903907,
+            "Level": 7,
+            "Parameters": [
+              5.5224,
+              0.73632,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 903908,
+            "Level": 8,
+            "Parameters": [
+              5.89056,
+              0.785408,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 903909,
+            "Level": 9,
+            "Parameters": [
+              6.25872,
+              0.834496,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 903910,
+            "Level": 10,
+            "Parameters": [
+              6.62688,
+              0.883584,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 903911,
+            "Level": 11,
+            "Parameters": [
+              6.99504,
+              0.932672,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 903912,
+            "Level": 12,
+            "Parameters": [
+              7.3632,
+              0.98176,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 903913,
+            "Level": 13,
+            "Parameters": [
+              7.8234,
+              1.04312,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 903914,
+            "Level": 14,
+            "Parameters": [
+              8.2836,
+              1.10448,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 903915,
+            "Level": 15,
+            "Parameters": [
+              8.7438,
+              1.16584,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10905,
+      "Name": "Bom Chùm Oanh Tạc",
+      "Description": "Chevreuse dùng súng hỏa mai bắn Bom Đạn Chùm vào kẻ địch, gây <color=#FF9999FF>Sát Thương Phạm Vi Nguyên Tố Hỏa</color>. Bom Đạn Chùm khi trúng sẽ phân tách thành nhiều quả Bom Nổ Kép.\nBom Nổ Kép sẽ phát nổ sau một thời gian ngắn, gây <color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color> cho kẻ địch gần đó.\n\n<i>\"Về mặt lý thuyết, cho nổ một khu vực hình chữ nhật sẽ có hiệu quả trong việc tiêu diệt đội hình địch. Tuy nhiên, sóng xung kích của vụ nổ lại có hình tròn, giống như hầu hết các loại bánh vậy, nên những quả bom kép vòng quanh rìa sẽ như trái cây trang trí trên bánh thôi.\"</i>",
+      "SpecialEnergyType": 0,
+      "Icon": "Skill_E_Chevreuse_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 9021,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 902101,
+              "Level": 1,
+              "Parameters": [
+                0.4,
+                6
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 902101,
+        "Name": "Chiến Thuật Phối Hợp Tiên Phong",
+        "Description": "Khi loại nguyên tố của tất cả nhân vật trong đội là <color=#FF9999FF>Hỏa</color> hoặc <color=#FFACFFFF>Lôi</color>, đồng thời có ít nhất một nhân vật nguyên tố Hỏa và một nhân vật nguyên tố Lôi trong đó:\nChevreuse sẽ cung cấp hiệu quả \"Chiến Thuật Phối Hợp\" cho nhân vật trong đội gần đó: Sau khi nhân vật kích hoạt phản ứng Quá Tải, sẽ khiến kẻ địch chịu ảnh hưởng bởi lần phản ứng này giảm Kháng Nguyên Tố <color=#FF9999FF>Hỏa</color> và <color=#FFACFFFF>Lôi</color> đi 40% trong 6s.\nKhi loại nguyên tố của nhân vật trong đội hiện tại không thỏa mãn điều kiện của thiên phú, sẽ xóa đi hiệu quả \"Chiến Thuật Phối Hợp\" đã có.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Chevreuse_05"
+      },
+      {
+        "GroupId": 9022,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 902201,
+              "Level": 1,
+              "Parameters": [
+                0.01,
+                30,
+                0.4
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 902201,
+        "Name": "Phối Hợp Vũ Lực Xuyên Thấu",
+        "Description": "Chevreuse sau khi bắn Đầu Đạn Quá Tải của kỹ năng <color=#FFD780FF>Đánh Chặn Nhanh Tầm Gần</color>, sẽ khiến tất cả nhân vật nguyên tố <color=#FF9999FF>Hỏa</color> và <color=#FFACFFFF>Lôi</color> trong đội gần đó tăng 1% tấn công với mỗi 1000 điểm giới hạn HP của Chevreuse, duy trì 30s. Tối đa có thể tăng 40% tấn công bằng cách này.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Chevreuse_06"
+      },
+      {
+        "GroupId": 9023,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 902301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 902301,
+        "Name": "Sách Lược Hành Quân Thần Tốc",
+        "Description": "Giảm 20% tiêu hao thể lực khi xung kích cho nhân vật trong đội của bản thân.\nKhông thể cộng dồn với buff Thiên Phú cố định có cùng hiệu quả.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_Explosion_Sprint"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 901,
+        "Name": "Sách Lược Ổn Định Trận Hình",
+        "Description": "Nhân vật trong trận hiện tại có trạng thái \"Chiến Thuật Phối Hợp\" (Không bao gồm bản thân Chevreuse) khi kích hoạt phản ứng Quá Tải sẽ hồi phục 6 điểm Năng Lượng Nguyên Tố. Hiệu quả này mỗi 10s tối đa kích hoạt một lần.\nCần mở khóa thiên phú \"Chiến Thuật Phối Hợp Tiên Phong\".",
+        "Icon": "UI_Talent_S_Chevreuse_01"
+      },
+      {
+        "Id": 902,
+        "Name": "Phương Pháp Đánh Úp Dẫn Nổ",
+        "Description": "Nhấn Giữ thi triển <color=#FFD780FF>Đánh Chặn Nhanh Tầm Gần</color> khi bắn trúng, sẽ kích hoạt 2 lần nổ lan ở vị trí trúng phải. Mỗi lần nổ sẽ gây <color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color> tương đương với 120% tấn công của Chevreuse. Hiệu quả này mỗi 10s tối đa kích hoạt 1 lần, sát thương gây ra bởi cách thức này sẽ được xem là sát thương Kỹ Năng Nguyên Tố.",
+        "Icon": "UI_Talent_S_Chevreuse_02"
+      },
+      {
+        "Id": 903,
+        "Name": "Kỹ Thuật Nạp Đạn Thuần Thục",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Đánh Chặn Nhanh Tầm Gần</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Chevreuse_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 904,
+        "Name": "Bí Quyết Bắn Nhanh Nhiều Lần",
+        "Description": "Sau khi thi triển <color=#FFD780FF>Bom Chùm Oanh Tạc</color>, Chevreuse Nhấn Giữ thi triển <color=#FFD780FF>Đánh Chặn Nhanh Tầm Gần</color> sẽ không vào trạng thái thời gian chờ. Hiệu quả này tối đa duy trì 6s, hoặc sẽ xóa sau khi Nhấn Giữ thi triển Đánh Chặn Nhanh Tầm Gần lần 2.",
+        "Icon": "UI_Talent_S_Chevreuse_03"
+      },
+      {
+        "Id": 905,
+        "Name": "Tăng Cường Hỏa Lực Đạn Dược",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Bom Chùm Oanh Tạc</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Chevreuse_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 906,
+        "Name": "Truy Nã Tội Ác Cùng Cực",
+        "Description": "Sau khi hiệu quả trị liệu của <color=#FFD780FF>Đánh Chặn Nhanh Tầm Gần</color> duy trì 12s, sẽ hồi phục một lần cho toàn bộ nhân vật trong đội gần đó một lượng HP bằng 10% giới hạn HP của Chevreuse.\nNhân vật trong đội sau khi nhận được trị liệu từ Đánh Chặn Nhanh Tầm Gần, sẽ nhận được 20% <color=#FF9999FF>Buff Sát Thương Nguyên Tố Hỏa</color> và <color=#FFACFFFF>Buff Sát Thương Nguyên Tố Lôi</color> trong 8s, cộng dồn 3 tầng, mỗi tầng tính giờ riêng.",
+        "Icon": "UI_Talent_S_Chevreuse_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Người Thực Thi Công Lý",
+    "Detail": "Đội trưởng Đội Tuần Tra Đặc Biệt luôn tuân thủ \"chính nghĩa\" trong lòng. Khẩu súng hỏa mai trong tay chỉ hướng về những kẻ có tội.",
+    "Association": 8,
+    "Native": "Đội Tuần Tra Đặc Biệt",
+    "BirthMonth": 1,
+    "BirthDay": 10,
+    "VisionBefore": "Hỏa",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Cung Kiếm Súng",
+    "CvChinese": "潘丹妮",
+    "CvJapanese": "下地紫野",
+    "CvEnglish": "Erica Lindbeck",
+    "CvKorean": "Chae Min-ji",
+    "CookBonus": {
+      "OriginItemId": 108614,
+      "ItemId": 108619,
+      "InputList": [
+        100076,
+        100064,
+        100084,
+        100080
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Lần đầu gặp mặt...",
+        "Context": "Tôi là Chevreuse, đội trưởng Đội Tuần Tra Đặc Biệt, chào hỏi thì miễn đi, có vụ án khó nhằn nào cần xử lý không?"
+      },
+      {
+        "Title": "Nói chuyện phiếm - Súng Hỏa Mai",
+        "Context": "Súng hỏa mai là vũ khí yêu thích nhất của tôi, nó có sức sát thương và tính răn đe mạnh mẽ. Đôi khi vế sau có vẻ hữu dụng hơn."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Tuần Tra",
+        "Context": "Đội Tuần Tra Đặc Biệt chúng tôi không tham gia công tác tuần tra hàng ngày của Đại Sảnh Fontaine, đối tượng mà chúng tôi truy bắt cũng không xuất hiện trên đường phố."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Thức Ăn",
+        "Context": "Feast-O's là món ăn vặt dễ mang theo, còn có thể kết hợp với nước sốt để tạo ra hương vị khác nhau... Đợi chút, tôi đi mua vài phần rồi quay lại."
+      },
+      {
+        "Title": "Khi trời mưa...",
+        "Context": "Yên tâm, dù trời mưa thì súng hỏa mai của tôi vẫn có thể khai hỏa như thường."
+      },
+      {
+        "Title": "Khi có sấm sét...",
+        "Context": "Một số tội phạm sẽ dùng tiếng sấm để che đậy tiếng súng, nhưng không lừa được đôi tai của tôi đâu."
+      },
+      {
+        "Title": "Khi tuyết rơi...",
+        "Context": "...Đợi chút, tôi cần bảo dưỡng súng hỏa mai, để tránh kết cấu bên trong bị đóng băng."
+      },
+      {
+        "Title": "Ánh nắng thật chan hòa...",
+        "Context": "Thời tiết không tệ, tầm nhìn khá tốt."
+      },
+      {
+        "Title": "Gió lớn quá...",
+        "Context": "Tốc độ gió này... e là viên đạn ra khỏi nòng súng cũng bị thổi lệch mục tiêu."
+      },
+      {
+        "Title": "Khi trong sa mạc...",
+        "Context": "Sa mạc rộng lớn, rất thích hợp để chôn vùi một số thứ."
+      },
+      {
+        "Title": "Chào buổi sáng...",
+        "Context": "#Chào buổi sáng, tôi vừa định thực hiện vài bài huấn luyện thể chất, {F#cô}{M#cậu} có muốn tham gia không?"
+      },
+      {
+        "Title": "Chào buổi trưa...",
+        "Context": "#Chào buổi trưa, {F#cô}{M#cậu} muốn cùng tôi đến nhà ăn của Đội Tuần Tra Đặc Biệt không? Món ăn ở đó rất thích hợp để lấp đầy bụng đói."
+      },
+      {
+        "Title": "Chào buổi tối...",
+        "Context": "Công việc hôm nay coi như xong rồi, hơn nữa không có chuyện gì lớn, chúng ta đi ăn khuya thôi, để tôi dẫn đường."
+      },
+      {
+        "Title": "Chúc ngủ ngon...",
+        "Context": "Chúc ngủ ngon. Lát nữa tôi cũng đi nghỉ ngơi, mong rằng... đêm nay sẽ không xảy ra nhiều chuyện khẩn cấp."
+      },
+      {
+        "Title": "Về bản thân Chevreuse - Đội Tuần Tra Đặc Biệt",
+        "Context": "Đội Tuần Tra Đặc Biệt chuyên ứng phó với các vụ án mạng nghiêm trọng và tội phạm nguy hiểm. Vì vậy chúng tôi sẽ tương đối... cứng rắn khi thi hành công vụ."
+      },
+      {
+        "Title": "Về bản thân Chevreuse - Chiếc Mũ",
+        "Context": "Trong Đội Tuần Tra Đặc Biệt có một luật bất thành văn. Chúng tôi sẽ giữ lại chiếc mũ của thành viên đã hy sinh, nếu con cháu của họ trở thành thành viên của Đội Tuần Tra Đặc Biệt, thì chúng tôi sẽ trao trả chiếc mũ đó cho người hậu duệ. Đây cũng được xem như là \"kế thừa\"."
+      },
+      {
+        "Title": "Về chúng ta - Hứng Thú",
+        "Context": "Tôi thường đọc tiểu thuyết tội phạm khi rảnh rỗi. Khác với tiểu thuyết trinh thám, tiểu thuyết tội phạm không sắp đặt những thủ đoạn phạm tội phức tạp, mà tập trung mô tả những vướng mắc giữa con người và xung đột tình cảm xung quanh vụ án, tôi thấy điều này khá thú vị."
+      },
+      {
+        "Title": "Về chúng ta - Pháp Lý",
+        "Context": "#Nếu {F#cô}{M#cậu} có thắc mắc về pháp lý, có thể đến hỏi tôi bất cứ lúc nào, hoặc khi trong đầu {F#cô}{M#cậu} xuất hiện ý nghĩ \"Có lẽ việc này không phạm pháp\" thì {F#cô}{M#cậu} phải thảo luận với tôi ngay.\nHằng năm đều có không ít kẻ đần độn vì thử vận may mà vượt quá giới hạn, tôi không muốn thấy {F#cô}{M#cậu} trở thành loại người như vậy."
+      },
+      {
+        "Title": "Về Vision...",
+        "Context": "Trong công việc, Vision quả thực là một nguồn hỗ trợ sức mạnh không thể xem nhẹ. Kể từ khi có nó, súng hỏa mai của tôi không xảy ra trục trặc nghiêm trọng nữa.\n\"Đội trưởng Đội Tuần Tra Đặc Biệt sở hữu cả Vision và súng hỏa mai\", chuyện này có thể dọa được một số nghi phạm nhát gan đấy."
+      },
+      {
+        "Title": "Có gì muốn chia sẻ không...",
+        "Context": "#Không ngờ Harcourt thực sự bắt giữ Mylis... Anh ấy thẳng tay bắt giữ người mình thương yêu, thật khiến người ta nể phục. Nhưng Mylis đã làm gì sai? Cô ấy chỉ bán đi món đồ trang sức mà mình nhặt được, vậy mà lại trở thành tội phạm tày trời trong mắt các quý tộc... Chính nghĩa thật khiến người ta không thể hiểu được, {F#cô}{M#cậu} thấy sao?"
+      },
+      {
+        "Title": "Những kiến thức thú vị - Robot Hiến Binh",
+        "Context": "Mặc dù chúng tôi trực thuộc Sảnh Chấp Pháp, nhưng khi Đội Tuần Tra Đặc Biệt thi hành nhiệm vụ sẽ không sử dụng nhiều Robot Hiến Binh. Còn tại sao thì... Hừm, đám máy móc cồng kềnh đó chỉ cản trở đường đạn của chúng tôi thôi."
+      },
+      {
+        "Title": "Về Navia...",
+        "Context": "Tôi từng nghe nói về vụ án mạng liên quan đến cha của Navia, lúc đó đã gây xôn xao trong Sảnh Chấp Pháp, nhiều người tranh cãi về vụ án này...\nMay là giờ đây vụ án đã được sáng tỏ, hung thủ thực sự đã bị bắt giữ... Cuối cùng thì \"chính nghĩa\" vẫn luôn tồn tại."
+      },
+      {
+        "Title": "Về Lyney...",
+        "Context": "Tôi biết vị ảo thuật gia đại tài này. Có lần chúng tôi bắt giữ một ảo thuật gia bị tình nghi cố ý gây thương tích, lừa gạt và mưu sát, nhưng chúng tôi không rõ cách phạm tội của hắn. Cuối cùng đã mời anh Lyney làm cố vấn mới tìm được chứng cứ quan trọng và thành công buộc tội kẻ tình nghi. Nghe nói có một tác giả rất quan tâm đến vụ án này, đã viết một cuốn tiểu thuyết trinh thám về việc dùng chiêu trò ảo thuật để gây án.\nTuy nhiên chi tiết của cuốn tiểu thuyết được miêu tả quá tường tận, hiện vẫn trong giai đoạn nhạy cảm nên tạm thời chưa thể xuất bản."
+      },
+      {
+        "Title": "Về Freminet...",
+        "Context": "Có lần khi ra ngoài mua linh kiện, tôi đã gặp người thợ lặn này. Khi đó cả hai chúng tôi đều muốn mua món linh kiện duy nhất còn lại trong tiệm. Khi tôi định nói nhường món linh kiện này cho anh ấy, thì anh ấy đột nhiên rút tay lại rồi cúi đầu chạy khỏi tiệm. Nói hơi khó nghe thì... trông cứ như tội phạm vậy..."
+      },
+      {
+        "Title": "Về Clorinde...",
+        "Context": "Vị Đấu Sĩ Đại Diện này tiếng tăm lẫy lừng ở Đại Sảnh Fontaine đó. Chức vụ của chúng tôi khác nhau, tôi sẽ không tùy tiện đánh giá công việc của cô ấy. Nhưng tôi tin lý do cô ấy chấp nhận quyết đấu đều xuất phát từ \"chính nghĩa\" trong lòng."
+      },
+      {
+        "Title": "Về Wriothesley...",
+        "Context": "Wriothesley làm việc vô cùng hiệu quả, chí ít thì các tội phạm đều biết rằng Pháo Đài Meropide không phải là nơi tốt để nghỉ hưu. Điều này đã giúp ích rất nhiều cho công việc thẩm vấn của chúng tôi."
+      },
+      {
+        "Title": "Về Emilie...",
+        "Context": "Quan hệ của chúng tôi khá tốt. Có vài lần tôi đã nhờ cô ấy dùng kiến thức hóa học chuyên sâu để giúp tôi phân tích tang vật, truy bắt hung thủ. Cô ấy còn giúp tôi phát hiện rất nhiều thông tin khác, như tội phạm đã dùng nước hoa gì, từng tặng hoa gì, thậm chí đã từng đi đâu, giẫm phải bùn đất gì... Cô ấy chưa từng sai sót lần nào."
+      },
+      {
+        "Title": "Về Chiori...",
+        "Context": "#Cách giải quyết tranh chấp của Chiori có phần cực đoan, nhưng cô ấy đã nhiều lần dựa vào mối quan hệ của mình để cung cấp tin tình báo cho Đội Tuần Tra Đặc Biệt. Đổi lại, tôi sẽ nhắm mắt làm ngơ khi cô ấy đuổi ai đó ra khỏi tiệm hoặc phá tung cửa hàng của đối thủ cạnh tranh không lành mạnh. Sau khi điều tra, {F#cô}{M#cậu} sẽ phát hiện Chiori luôn là bên có lý. Cô ấy chỉ là không muốn phí lời mà thôi."
+      },
+      {
+        "Title": "Về Charlotte...",
+        "Context": "Cô phóng viên này thật khiến người ta đau đầu. Mỗi khi xảy ra trọng án, dù chúng tôi có phong tỏa hiện trường bằng cách nào thì cô ấy cũng sẽ lập tức xuất hiện ở nơi gần nhất... Thậm chí có lần cấp dưới của tôi còn liệt cô ấy vào danh sách nghi phạm, tạm giam suốt nửa tháng, vậy mà cô ấy vẫn viết xong bài báo trong phòng giam... Tôi phải dành thời gian đến nói chuyện nghiêm túc với tổng biên tập của cô ấy thôi."
+      },
+      {
+        "Title": "Về Sigewinne...",
+        "Context": "Đội Tuần Tra Đặc Biệt có mối giao tình lâu năm với Melusine. Chúng tôi thường hợp tác với Melusine của Đội Hắc Ảnh Marechaussee, họ tốt bụng, trung thực và đáng tin cậy, đồng thời họ còn phát huy những vai trò không thể thay thế trong việc giải quyết một số vụ trọng án. Tôi cũng có quen biết vài Melusine, và y tá trưởng Sigewinne là một trong số đó.\nTừ xưa đến nay, Melusine luôn là đồng đội không thể thiếu của chúng tôi. Nếu còn ai dám vu khống họ lần nữa thì Đội Tuần Tra Đặc Biệt tuyệt đối sẽ không nương tay đâu."
+      },
+      {
+        "Title": "Về Neuvillette...",
+        "Context": "Mọi người đều biết ngài thẩm phán tối cao luôn chí công vô tư. Có người nói anh ấy thiếu chút tình người, nhưng theo tôi thì chính nghĩa không nên để bị tác động bởi tình cảm. Ai vi phạm pháp luật là có tội, thế thôi."
+      },
+      {
+        "Title": "Về Furina...",
+        "Context": "Quý cô Furina lúc trước bất ngờ chỉ định chúng tôi... tập huấn nghi lễ duyệt binh. Cô ấy không những yêu cầu chúng tôi trang bị một loại \"súng hỏa mai nghi lễ\" đặc biệt, mà còn phải diễn tập múa súng nữa. May mà cô ấy tìm mãi không được nhạc nghi lễ ưng ý nên việc này mới tạm gác lại."
+      },
+      {
+        "Title": "Muốn tìm hiểu Chevreuse - Điều thứ 1",
+        "Context": "#Xin lỗi, tôi không giỏi giao tiếp với người khác. Đúng hơn là... giao tiếp với những người bình thường. Nếu có thắc mắc thì {F#cô}{M#cậu} cứ hỏi thẳng là được."
+      },
+      {
+        "Title": "Muốn tìm hiểu Chevreuse - Điều thứ 2",
+        "Context": "Đội Tuần Tra Đặc Biệt là một trong số bộ phận thực thi pháp luật trực thuộc Sảnh Chấp Pháp. Vì đội ngũ và phong cách làm việc của chúng tôi khá táo bạo, nên trong mắt một số quý ngài của Sảnh Chấp Pháp, chúng tôi là bộ phận \"thiếu tuân thủ quy tắc nhất\".\nNhưng tôi cho rằng cách làm việc của Đội Tuần Tra Đặc Biệt không nên bị ảnh hưởng bởi người khác. Tội phạm mà chúng tôi đối phó không phải những quý ngài đàng hoàng trong Palais Mermonia. Nếu tội ác bất ngờ ập đến như vũ bão thì chúng tôi không thể thong thả như họ được."
+      },
+      {
+        "Title": "Muốn tìm hiểu Chevreuse - Điều thứ 3",
+        "Context": "Tội phạm mà tôi tiếp xúc không hẳn đều là những tên cướp hay kẻ xấu tội ác tày trời.\nNhiều người ban đầu chỉ mắc một sai lầm nhỏ, họ sợ chịu trách nhiệm nên âm thầm cứu vãn, rồi vô thức bị cuốn theo những lời nói dối, cuối cùng dấn thân vào con đường phạm tội.\nNhà viết kịch mà tôi yêu thích từng viết trong một vở kịch: \"Lời nói dối là nguồn gốc sinh sôi của tội ác\".\nNhưng vài năm sau đó, anh ta lại bị bắt vì tội đạo văn... Thật là một sự kịch tính trớ trêu cho vở kịch đó..."
+      },
+      {
+        "Title": "Muốn tìm hiểu Chevreuse - Điều thứ 4",
+        "Context": "Vì cha tôi từng không may ngồi tù nên tôi bị gọi là \"con gái của tội phạm\". Tôi lớn lên ở Fleuve Cendre, đã nhìn thấy nhiều ngóc ngách nơi không có mặt trời chiếu sáng. Nhờ những trải nghiệm này nên có nhiều người ghét tôi, nhưng tôi đã học được nhiều điều hơn.\nNgười chấp pháp cần tin tưởng \"chính nghĩa\" trong lòng mình, và thực thi bằng hành động... Đây là điều cha đã dạy cho tôi.\nTôi cũng nghĩ như vậy."
+      },
+      {
+        "Title": "Muốn tìm hiểu Chevreuse - Điều thứ 5",
+        "Context": "Thành thật mà nói, thân là đội trưởng Đội Tuần Tra Đặc Biệt, tôi từng chứng kiến nhiều kẻ vô đạo đức làm xằng làm bậy, cũng từng thấy những người vô tội lương thiện vướng vào những chuyện này mà bị thương, thậm chí mất mạng. Tôi thường cảm thấy tức giận và bất lực.\nTôi tin chắc rằng \"kẻ ác\" sẽ bị trừng phạt, nhưng không có nghĩa vòng xoáy hận thù sẽ lặp lại vô tận.\nNếu chúng ta để mặc tình cảm chi phối hành động, sớm muộn chúng ta cũng sẽ chết chìm trong làn nước mùa đông.\nCàng nắm giữ quyền lực thì càng nên cảnh giác điều này. Kiên quyết theo đuổi \"chính nghĩa\" trong lòng mình, nhưng chớ đừng lạc lối trên con đường tìm kiếm nó."
+      },
+      {
+        "Title": "Sở thích của Chevreuse...",
+        "Context": "Huấn luyện? Bắn súng? Nếu phải nói thì... chắc là đọc tiểu thuyết tội phạm. Đúng rồi, tôi phải đi lấy cuốn \"Truy Vết Vụ Án Bí Ẩn\" kỳ mới nhất đây."
+      },
+      {
+        "Title": "Phiền não của Chevreuse...",
+        "Context": "Đừng bắt tôi học những lễ nghi rườm rà đó nữa, thay vì lãng phí thời gian vào đó, tôi thà đi canh chừng hung thủ còn hơn."
+      },
+      {
+        "Title": "Món ăn yêu thích...",
+        "Context": "Thực phẩm giàu chất béo và đường cung cấp cho tôi nhiều năng lượng và tâm trạng vui vẻ trong ngày làm việc. Ngày nghỉ sao? Vào những ngày nghỉ thì chúng chính là thứ \"thực phẩm tội lỗi\" gây tăng cân, và việc tiêu diệt những \"tội lỗi\" này cũng tương tự như vậy, sẽ mang lại cho tôi tâm trạng vui vẻ suốt cả ngày."
+      },
+      {
+        "Title": "Món ăn ghét...",
+        "Context": "Tôi không thích những món ăn tươi sống. Đồ ăn thì nên được nấu chín kỹ..."
+      },
+      {
+        "Title": "Nhận Được Quà I",
+        "Context": "Không tệ. Nhưng tôi lỡ ăn nhiều quá rồi, lát nữa phải luyện tập thêm thôi."
+      },
+      {
+        "Title": "Nhận Được Quà II",
+        "Context": "Ừm, ngon hơn nhiều so với các món ở nhà ăn của Đội Tuần Tra Đặc Biệt đó."
+      },
+      {
+        "Title": "Nhận Được Quà III",
+        "Context": "Đủ no bụng, không khiến người ta thèm ăn nữa... Với tôi thì món này rất tuyệt đấy."
+      },
+      {
+        "Title": "Sinh nhật...",
+        "Context": "#Sinh nhật vui vẻ. Hmm... Nghiêm! Thẳng người, không khuỵu gối. Tôi sẽ đo chỉ số cơ thể để đặt làm một khẩu súng hỏa mai nhỏ cho {F#cô}{M#cậu}...\nXong rồi, nghỉ! Trước khi khẩu súng được hoàn thiện, tôi sẽ hướng dẫn {F#cô}{M#cậu} tập bắn bằng súng hỏa mai huấn luyện trong một thời gian. Giờ thì bắt đầu thôi, đi theo tôi."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Khởi",
+        "Context": "Khá lắm. Tay cầm súng chắc hơn rồi."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Thừa",
+        "Context": "Như vậy sẽ có thể bắn trúng kẻ địch ở xa hơn..."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Chuyển",
+        "Context": "Cảm ơn, có được sức mạnh này thì truy bắt tội phạm sẽ hiệu quả hơn."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Hợp",
+        "Context": "#Cảm ơn {F#cô}{M#cậu} đã giúp đỡ tôi. Tuy tôi không thể hứa rằng Đội Tuần Tra Đặc Biệt sẽ luôn sẵn sàng phục vụ {F#cô}{M#cậu}, nhưng cá nhân tôi thì chỉ cần {F#cô}{M#cậu} mở lời, tôi sẽ luôn luôn đồng hành."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố I",
+        "Context": "Không được cử động!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố II",
+        "Context": "Bỏ vũ khí xuống!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố III",
+        "Context": "Cảnh cáo lần cuối!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ I",
+        "Context": "Vũ lực cần thiết."
+      },
+      {
+        "Title": "Kỹ Năng Nộ II",
+        "Context": "Trừng trị theo luật pháp."
+      },
+      {
+        "Title": "Kỹ Năng Nộ III",
+        "Context": "Khoanh tay chịu trói đi!"
+      },
+      {
+        "Title": "Mở Rương I",
+        "Context": "Khá ổn."
+      },
+      {
+        "Title": "Mở Rương II",
+        "Context": "Mong là bên trong không phải tang vật."
+      },
+      {
+        "Title": "Mở Rương III",
+        "Context": "Đây không được coi là thu lợi bất chính, nhận lấy đi."
+      },
+      {
+        "Title": "HP Thấp I",
+        "Context": "Kẻ xấu...!"
+      },
+      {
+        "Title": "HP Thấp II",
+        "Context": "Coi thường luật pháp."
+      },
+      {
+        "Title": "HP Thấp III",
+        "Context": "Ngươi, không có quyền biện minh."
+      },
+      {
+        "Title": "HP Đồng Hành Thấp I",
+        "Context": "Giữ vững hàng ngũ!"
+      },
+      {
+        "Title": "HP Đồng Hành Thấp II",
+        "Context": "Giữ nguyên đội hình!"
+      },
+      {
+        "Title": "Ngã Xuống I",
+        "Context": "Chính nghĩa... ở đâu..."
+      },
+      {
+        "Title": "Ngã Xuống II",
+        "Context": "Tội phạm... vẫn chưa..."
+      },
+      {
+        "Title": "Ngã Xuống III",
+        "Context": "Kết thúc... rồi sao..."
+      },
+      {
+        "Title": "Bị Trọng Kích I",
+        "Context": "Đừng hòng ngoan cố...!"
+      },
+      {
+        "Title": "Vào Đội I",
+        "Context": "Hành động thôi."
+      },
+      {
+        "Title": "Vào Đội II",
+        "Context": "Xem như luyện tập thêm."
+      },
+      {
+        "Title": "Vào Đội III",
+        "Context": "Tôi vẫn luôn sẵn sàng."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Miêu Tả Nhân Vật",
+        "Context": "Tại Đại Sảnh Fontaine, nơi với đầy đủ, thậm chí là quá nhiều quy định pháp lý, có rất nhiều đạo luật khiến những du khách phương xa phải bất ngờ.\nVí dụ, không được để bánh tart kem trái cây trực tiếp lên đĩa chưa được làm nóng, không được cố ý đặt Fonta chưa uống hết ra giữa đường, không được phép quên cắt móng cho mèo nuôi trong nhà...\nVậy nên trong tình cảnh đó, chuyện vi phạm pháp luật là điều khó tránh khỏi. Nhưng với những người Fontaine đã quá quen thuộc với điều này, họ sẽ dựa trên thân phận của người được cử đến giải quyết vấn đề vi phạm để đánh giá mức độ nghiêm trọng của sự việc, từ đó quyết định bản thân sẽ phải làm gì tiếp theo.\nNếu người đến chỉ là một nhân viên thông thường, vậy thì chuyện này chỉ cần một cuộc tranh luận đơn giản là sẽ được giải quyết, náo nhiệt chút cũng vui. Nếu người có mặt là một Kiểm Sát Viên mặc đồng phục, điều đó có nghĩa là tất cả mọi người xung quanh đều phải nghe một tràng những lời cằn nhằn dài dòng, tốt nhất mau rời đi vẫn hơn. Nếu là một sĩ quan của Sảnh Chấp Pháp bước đến, vậy thì những người có liên quan sẽ phải nếm mùi đau khổ, thậm chí còn phải nộp phạt, lúc này thì nên lập tức giải thích rằng bản thân không liên quan tới chuyện này.\nTuy nhiên, nếu người đến là vị đội trưởng Đội Tuần Tra Đặc Biệt Chevreuse, đội mũ chóp cao, sau lưng đeo súng, theo sau là một nhóm thành viên của Đội Tuần Tra Đặc Biệt...\nVậy thì, điều đó có nghĩa là một vụ hung án đang xảy ra, hoặc sẽ có kẻ xấu chống trả dữ dội, hoặc sẽ là tên sát nhân uy hiếp con tin... Tóm lại, lúc này chỉ có duy nhất một chuyện nên làm, đó là nhanh chóng tránh xa dưới sự chỉ dẫn của Đội Tuần Tra, để cho nhóm \"chuyên gia xử lý tội phạm\" này có không gian hành động. Đồng thời, kiềm chế sự tò mò của bản thân, không nên âm mưu lẩn trốn ở nơi gần đó lén lút quan sát Đội Tuần Tra Đặc Biệt thi hành luật pháp. Ngay cả khi muốn phỏng vấn, xin hãy đợi đến khi công việc được xử lý xong.\nQuan trọng nhất, đừng bất an, và càng không nên sợ hãi.\nVì người Fontaine đều rõ, khi vị đội trưởng Chevreuse xuất hiện, cũng là lúc hung thủ không còn đường lọt lưới nữa rồi."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 1",
+        "Context": "\"Còn ngang bướng nữa là Đội Tuần Tra Đặc Biệt sẽ bắt đi đấy!\"\nMột số phụ huynh ở Fontaine thường bắt đầu bằng câu nói này khi dạy dỗ những đứa trẻ rắc rối của mình.\nLũ trẻ bị cha mẹ \"dọa dẫm\" như vậy, cho dù có trưởng thành, chúng cũng biết rõ rằng Đội Tuần Tra Đặc Biệt sẽ không được cử đến chỉ vì những chuyện như không chịu đánh răng, ngủ nướng, làm vỡ kính cửa sổ, hay lén ăn bánh kem. Nhưng khi nhìn thấy đội trưởng đương nhiệm Chevreuse của Đội Tuần Tra Đặc Biệt, chúng cũng sẽ bất giác đứng thẳng người, né tránh nhìn thẳng, nắm chặt hai tay theo bản năng, lo sợ mình phạm phải chuyện gì đó để bị bắt mà bản thân không hề hay biết. Tuy biết rõ những vị sĩ quan tốt bụng này thực sự đang phòng chống tội phạm, và cũng vô cùng tôn trọng họ, nhưng cảm giác căng thẳng từ đầu đến chân đó quả thật cũng rất khó kiềm chế...\nVới \"tiếng tăm dữ dằn\" như vậy, bản thân nội bộ Đội Tuần Tra Đặc Biệt cũng cảm thấy vô cùng bất đắc dĩ. Từng có người đề xuất với Chevreuse, việc lan truyền tiếng xấu đó có thể làm tổn hại đến hình ảnh Đội Tuần Tra Đặc Biệt. Đội ngũ chúng ta là bộ phận thi hành luật pháp chính thức nằm dưới sự kiểm soát của Sảnh Chấp Pháp, vậy nên hoạt động thực thi cứng rắn, quá trình thi hành quyết liệt, chỉ là vì đối tượng nhắm đến đều là những tên tội phạm cực kỳ nguy hiểm. Dùng danh tiếng của Đội Tuần Tra Đặc Biệt để dọa trẻ con thì quả là hơi...\nSao không mời Báo Chim Hơi Nước đến phỏng vấn Chevreuse nhỉ? Để vị đội trưởng này đích thân nhấn mạnh rằng Đội Tuần Tra Đặc Biệt là cơ quan hành pháp chỉ nhắm đến các loại tội phạm nguy hiểm, mọi hành động đều là để duy trì trật tự trị an cho Đại Sảnh Fontaine, tuyệt đối không làm khó cư dân vô cớ...\nNhưng Chevreuse lại bác bỏ ý kiến này.\n\"Nếu danh tiếng này thực sự ăn sâu vào tiềm thức mọi người, khiến họ nhớ mãi, như vậy có lẽ mọi người sẽ phải kiêng dè \"tiếng xấu\" này của Đội Tuần Tra Đặc Biệt mà chùn bước khi họ dám có bất cứ kế hoạch gì vượt quá giới hạn.\"\n\"...Như vậy, có lẽ tôi không cần phải thực sự ra tay bắt họ vào một ngày nào đó trong tương lai rồi.\""
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 2",
+        "Context": "Là lực lượng pháp lý quan trọng trong việc giữ gìn luật pháp tại Fontaine, Sảnh Chấp Pháp của Đại Sảnh Fontaine là một cơ quan quan trọng và nghiêm khắc, tất cả nhân viên chấp pháp đều phải trải qua quá trình thẩm tra và đào tạo nghiêm ngặt. Mọi hành động của họ đều đại diện cho Sảnh Chấp Pháp, và cũng đại diện cho luật lệ của Đại Sảnh Fontaine, không được phép xảy ra dù chỉ một chút sai sót.\nTuy nhiên, tác phong của Đội Tuần Tra Đặc Biệt ở Đại Sảnh Fontaine lại hoàn toàn khác biệt với các cơ quan hành pháp khác. Họ không ép buộc mọi người phải sử dụng vũ khí biên chế, ở những nơi phi chính thức cũng không cần mặc cảnh phục... Hơn nữa, sau khi Chevreuse tiếp quản Đội Tuần Tra Đặc Biệt, các thành viên trong đội bắt đầu coi súng hỏa mai là một thứ vũ khí thi hành pháp luật, thậm chí có vài người còn từ chối thực hiện nhiệm vụ chung với Robot Hiến Binh, lý do là vì đám máy móc cồng kềnh này sẽ cản trở việc họ nổ súng, đồng thời cũng có nguy cơ bị tội phạm kiểm soát, khiến chúng tấn công ngược lại đồng đội. Hơn nữa, khi lựa chọn nhân sự, Đội Tuần Tra Đặc Biệt còn đồng ý tiếp nhận con cháu của những tội phạm đã bị tước đoạt danh dự...\nĐể giữ tiến độ nhanh chóng trong việc điều tra trọng án, Sảnh Chấp Pháp vẫn có thể nhượng bộ với những vấn đề nêu trên, vẫn kiên nhẫn với Đội Tuần Tra Đặc Biệt và cá nhân Chevreuse. Nhưng điều khiến họ khó chấp nhận, là khi Chevreuse chỉ đạo điều tra những vụ án mạng, thậm chí đã mời một số tội phạm nghiêm trọng tham gia vào quá trình điều tra dưới tư cách \"cố vấn đặc biệt\".\nTuy Chevreuse luôn kiên trì làm vậy chỉ vì muốn nhanh chóng truy bắt hung thủ, nhưng một số đồng nghiệp vẫn cho rằng, tìm kiếm sự giúp đỡ từ kẻ phạm pháp để bắt tội phạm quả thật là một sự xúc phạm đến luật lệ của Fontaine và tất cả những người thực thi pháp luật, cứ như vậy thì còn đâu là thượng tôn pháp luật và tôn nghiêm của Sảnh Chấp Pháp nữa?\nĐối mặt với những chất vấn này, Chevreuse vẫn luôn đưa ra câu trả lời hết sức đơn giản:\n\"Hung thủ vẫn đang ung dung ở ngoài, điều đó mới là sự xúc phạm lớn nhất đến pháp luật.\"\n\"So với an ninh trật tự của Đại Sảnh Fontaine, 'tôn nghiêm' của Sảnh Chấp Pháp thật không đáng để nhắc đến.\"\nĐây cũng là một trong những điều mà cha cô đã dạy."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 3",
+        "Context": "\"Quý ngài Donatello là một người thực thi pháp luật rất ngay thẳng.\"\nChevreuse luôn đưa ra nhận xét ngắn gọn như vậy về cha khi trò chuyện với người khác. Đây cũng là một trong những ấn tượng hiếm hoi của cô ấy về cha mình trong những năm tháng ấu thơ.\nÔng Donatello luôn bận rộn, mỗi ngày đều vội vã rời đi vào sáng sớm, tối muộn mệt mỏi trở về, ôm lấy Chevreuse và mẹ cô, dịu dàng nói lời xin lỗi vì để hai người đã phải đợi lâu. Đôi khi về quá muộn, ông sẽ mang về cho Chevreuse chút đồ ăn vặt. Nhưng tiếc là bé Chevreuse đã đánh răng rồi, không được ăn thêm đồ ngọt nữa.\nNghĩ đến món quà hiếm hoi này sẽ bị hỏng sau một đêm, mẹ sẽ cho phép Chevreuse được nếm một miếng kem nho nhỏ, sau đó đem nó cùng với cà phê về phòng ngủ của cha.\nLúc này, cha cô sẽ đứng bần thần trước bức tường ghim đầy đinh và hình ảnh, đi qua đi lại, hút thuốc, vò đầu bứt tai, thậm chí đôi khi còn giơ nắm đấm lên cao, xong lại từ từ hạ xuống, rồi vỗ vào mặt bàn một cách bế tắc... Đây là điều mà Chevreuse đã thấy khi đứng nhìn lén ngoài cửa.\nThỉnh thoảng bắt gặp cha trên phố, cô ấy sẽ hăng hái vẫy tay với ông, lúc này ngài Donatello cùng lắm cũng chỉ mỉm cười nhẹ đáp lại cô bé, sau đó sẽ lại lao mình vào hàng tá những chuyện công vụ phức tạp.\n\"Đó là một con người ngay thẳng tốt bụng.\"\nMẹ, hàng xóm, đồng nghiệp, thậm chí là lũ trẻ ở xung quanh, tất cả đều nhận xét cha như vậy.\nNhưng mà, những người đồng nghiệp luôn nhận xét ông ngay thẳng đó, lại có một ngày bất chợt ghé thăm gia đình Chevreuse.\nMẹ bối rối nhìn họ đi qua đi lại trong nhà, Chevreuse ở trong phòng, nhưng từ những lời cãi vã bên ngoài, cô bé vẫn mơ hồ đoán được rằng cha mình đã trở thành \"tội nhân\" mà xưa nay ông vẫn luôn truy bắt, hiện tại đang chờ đợi phán quyết, khả năng cao sẽ bị đưa đến Pháo Đài Meropide.\n\"Cha... làm sai chuyện gì sao?\"\nCô bé đã hỏi những vị khách lạ mặt xung quanh như vậy. Còn họ nghẹn ngào hồi lâu mới trả lời:\n\"...Nhưng anh ấy là một người thực thi pháp luật rất ngay thẳng.\"\nMột tội phạm chính trực.\nĐây là ấn tượng hiếm hoi thứ hai của cô ấy về cha trong những năm tháng ấu thơ."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 4",
+        "Context": "Cho dù có mời đến những tác giả viết truyện hay nhất của Đại Sảnh Fontaine, cũng khó mà giải thích cho một đứa trẻ rằng tại sao lại có sự chậm trễ trong việc kết tội một nghi phạm khi mọi bằng chứng đều chỉ rõ rằng người đó có tội. Tại sao mọi người lại giữ sự im lặng khi một người thực thi luật pháp vô tội bị vu khống, tại sao những người nhìn rõ chân tướng tội ác lại không muốn nói ra sự thật? Tại sao phải để cho người bị vu oan phải trả giá bằng tất cả tiền đồ và danh dự để mang lại công lý thực sự?\nCàng khó giải thích hơn, tại sao phải dùng một tội ác làm nền cho hành động thực thi công lý tốt đẹp.\nNhưng với Chevreuse, một trải nghiệm rõ ràng hơn hết đó chính là sự thay đổi đột ngột trong cuộc sống sau khi cả gia đình phải chuyển đến Fleuve Cendre.\nPhòng ốc chật hẹp, đồ ăn kém ngon miệng, những người bạn không thể liên lạc nữa, và cả người mẹ đang dần kiệt quệ mỗi ngày... Tuy những đồng nghiệp của cha vẫn thường xuyên ghé thăm trong bộ thường phục cùng quà cáp mang theo, và nói với mẹ rằng tất cả mọi người đang nỗ lực trong khả năng của họ để giúp ngài Donatello kháng cáo, không chỉ những thành viên trong Đội Tuần Tra Đặc Biệt hay Đội Hiến Binh mà thậm chí cả những Kiểm Sát Viên thân quen với họ cũng đều tham gia vào công việc kháng cáo này. Tuy việc ngài Donatello phạm pháp là sự thật, dưới góc độ luật pháp thì không thể giảm án, nhưng họ đảm bảo ít nhất sẽ không để ngài Donatello phải chịu án quá nặng. Nhưng dù là vậy, nỗi buồn của mẹ mỗi ngày vẫn không hề nguôi ngoai.\nĐể chăm sóc mẹ, Chevreuse không hề do dự, gánh lấy trách nhiệm mà lẽ ra không phải gánh vác ở độ tuổi đó, bước vào dòng nước ngầm sâu thẳm dưới Fleuve Cendre này.\nCó lẽ vì cư dân ở Fleuve Cendre đã được nghe chuyện của họ, hoặc có lẽ từng được người cha thẳng thắn chính trực giúp đỡ, rất nhiều người sẵn lòng dang tay giúp đỡ Chevreuse. Vị chủ tiệm tốt bụng đã cho Chevreuse một công việc, cặp vợ chồng hàng xóm đề nghị giúp chăm sóc người mẹ đang yếu ớt.\nCòn lũ trẻ khi nghe tin có một đứa con của Đội Hiến Binh đến Fleuve Cendre, chúng như tìm thấy vị thẩm phán và bị cáo vậy, đem hết những chuyện rắc rối xích mích chưa được xử lý ra cho Chevreuse giải quyết.\n\"Chevreuse! Cậu phải thực thi chính nghĩa đấy nhé!\"\nLũ trẻ đồng thanh hét lên, sau đó lại cười ầm ĩ... Có vẻ chúng không thực sự sẽ để Chevreuse quyết định ai đúng ai sai, cũng chỉ là một trò chơi đùa bỡn giữa những đứa trẻ mà thôi.\nTuy vậy, ngày hôm sau Chevreuse liền đem theo đống tài liệu pháp luật dày cộp đi tìm lũ trẻ, trong tay cô bé là một cuốn sổ tay chỉ vừa mở trang đầu tiên, trao đổi một cách rất nghiêm túc với lũ trẻ đang cười cợt kia.\n\"Nào, xin mời hai bên đưa ra chứng cứ.\"\nTừ đó, Fleuve Cendre đã có thêm một vị chấp pháp trẻ tuổi. Nhưng khác biệt với những người thi hành luật pháp trên mặt đất, những quyết định mà Chevreuse đưa ra đều được cô ấy đích thân giám sát thi hành.\nCô ấy đã học được rất nhiều thủ đoạn ở Fleuve Cendre, đảm bảo \"chính nghĩa\" sẽ luôn được thực thi trọn vẹn."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 5",
+        "Context": "\"...Tiểu thư Chevreuse, theo điều tra, cha cô từng vi phạm nguyên tắc của Đội Hiến Binh, tiết lộ thông tin vụ trọng án, vì vậy nên bị đưa đến Pháo Đài Meropide.\"\n\"Và sau đó, cô cùng mẹ chuyển đến Fleuve Cendre sinh sống... Với tội danh của cha cô và trải nghiệm của cô khi sống tại Fleuve Cendre, xin cô đưa ra lời tường trình bổ sung.\"\n\"Liên quan đến trải nghiệm của tôi khi sống tại Fleuve Cendre, xin được giải thích như sau...\"\nNgười cha Donatello phải lưu đày vì phạm tội, một gia đình rơi vào cảnh khó khăn phải chuyển đến Fleuve Cendre. Vì là \"con của tội phạm\" nên không thể làm việc tại Sảnh Chấp Pháp, nên đã lựa chọn Đội Tuần Tra Đặc Biệt để tiếp tục đấu tranh với tội ác...\nKhi tiếp nhận thẩm vấn từ đội trưởng Đội Tuần Tra Đặc Biệt, Chevreuse lặp lại những lời trong bản thảo tường trình này như thường lệ. Sau khi mãn hạn, ngài Donatello hiện đã về lại Đội Tuần Tra Đặc Biệt, ông kiểm tra lại bản thảo này vô số lượt, xác nhận không có chút sai sót nào.\nTuy bị buộc rời khỏi chức vụ đã lâu, nhưng ngài Donatello vẫn luôn hiểu rõ Sảnh Chấp Pháp. Nếu Chevreuse muốn thuận lợi tiếp nhận vị trí đội trưởng Đội Tuần Tra Đặc Biệt, tốt nhất vẫn nên để các quý ngài tốt bụng của Sảnh Chấp Pháp cầm được một bản tường trình đủ \"đàng hoàng\", để họ hiểu rõ và... liệu mà... thông báo ra bên ngoài về lệnh bổ nhiệm này.\nSớm đã không còn là đứa trẻ, Chevreuse đương nhiên biết rất rõ lý do cha cô tiết lộ thông tin về vụ trọng án, cốt là để lợi dụng sự tò mò của cánh phóng viên, thúc đẩy công việc điều tra nghi phạm. Sau khi họ chuyển đến Fleuve Cendre, với sự hỗ trợ âm thầm từ các thành viên Sảnh Chấp Pháp... thậm chí là sĩ quan trưởng, cuộc sống cũng không đến mức khó khăn. Mà các sĩ quan và đồng nghiệp trong Đội Tuần Tra Đặc Biệt còn chuẩn bị chu đáo hơn, đã mời Chevreuse đến đơn vị để thực tập, làm quen sớm với các công việc liên quan...\nNhưng nói tất cả những điều này đều chẳng ích gì khi Chevreuse tiếp nhận chức vụ đội trưởng.\nMặc dù ngài Donatello vẫn có chút bất an về chuyện Chevreuse muốn tiếp tục sự nghiệp của ông, nhưng cô con gái đã hoàn thành tất cả huấn luyện mà ông sắp xếp. Ngay cả những thử thách được coi là cố ý làm khó, Chevreuse cũng đều vượt qua bằng thực lực của mình.\nKhi Chevreuse chật vật tiến về phía trước trong làn nước cắt da cắt thịt mùa đông ấy, ngài Donatello dường như đã dùng hết ý chí cả đời để giữ cho mình đứng vững tại chỗ, không tiến lên để ôm lấy Chevreuse non nớt vào lòng. Đến khi cô ấy run rẩy bơi đến cạnh ông, Donatello biết rằng cô con gái còn kiên cường hơn mình, còn phù hợp hơn để thực thi \"chính nghĩa\".\nNhưng hiện tại, hãy để những chuyện này trôi theo làn nước của Fleuve Cendre mãi mãi vậy.\nHai cha con họ đã bơi qua biển băng mùa đông, giờ là lúc tiến về phía trước rồi.\n\"...Cha tôi đã vi phạm nguyên tắc của Đội Hiến Binh, chứng cứ xác thực, quá trình xét xử không hề sai sót.\"\nTội trạng sau cùng đã tường thuật xong, Chevreuse kết thúc tường trình.\nTừ nay về sau, chính nghĩa nhất định sẽ xuất hiện đúng lúc."
+      },
+      {
+        "Title": "Súng Hỏa Mai Mẫu II Tiêu Chuẩn Đội Tuần Tra Đặc Biệt",
+        "Context": "So với mẫu ban đầu, súng hỏa mai tiêu chuẩn Đội Tuần Tra Đặc Biệt cải tiến đã được điều chỉnh hình dạng báng súng theo kết cấu vai cơ thể người, đồng thời kéo dài nòng súng. Một số Súng Hỏa Mai Mẫu II đặc biệt còn được lắp đặt hệ thống đường ray trượt đa năng trên thân súng và nòng súng, trên ray trượt có thể lắp đặt các thiết bị hỗ trợ tác chiến như kính ngắm, ống phóng lựu, ống phóng đạn khói và đạn nổ siêu thanh, hoặc là cả vũ khí cận chiến, thích nghi đa dạng trong các nhiệm vụ tác chiến.\nTuy nhiên, song song với việc cải tiến súng hỏa mai để tăng cường năng lực chiến đấu của thành viên đội ngũ, Chevreuse còn nâng cao tiêu chuẩn sát hạch kỹ năng sử dụng súng, bổ sung thêm một số hạng mục không liên quan gì đến súng hỏa mai, chẳng hạn như chiến đấu tay không.\n\"Mục đích của Đội Tuần Tra Đặc Biệt là truy bắt tội phạm! Chứ không phải cầm súng hỏa mai khoe mẽ khắp nơi!\"\n\"Lẽ nào không có súng thì mấy người định từ chối chấp hành nhiệm vụ sao?\"\nThế nên, nhờ có Súng Hỏa Mai Mẫu II, khối lượng bài huấn luyện của toàn đội đã tăng lên rất nhiều.\nĐương nhiên, bản thân Chevreuse đã hoàn thành tất cả hạng mục huấn luyện, không sót một bài.\nNhìn vị đội trưởng rắn như sắt đứng sừng sững giữa sân huấn luyện, các thành viên đơn vị không hẹn mà cùng nhau than thở:\n\"Đội trưởng, tha cho chúng tôi đi mà...\""
+      },
+      {
+        "Title": "Vision",
+        "Context": "Đội trưởng Đội Tuần Tra Đặc Biệt Chevreuse thường không chủ động kể cho người khác về trải nghiệm có được Vision của mình. Với người ngoài, cô ấy nói sở dĩ mình không nhắc đến Vision, là vì quyền uy của Đội Tuần Tra Đặc Biệt đến từ pháp luật và công lý, nếu quá nhấn mạnh vào Vision, e rằng sẽ dễ gây hiểu lầm. Để bảo vệ uy nghiêm của luật pháp, tốt nhất tránh nhắc đến chuyện này vẫn hơn.\nNhưng những đồng đội đã quen thuộc với cô đều biết, đối với Chevreuse, Vision giống như một gánh nặng thì đúng hơn.\nSau khi Chevreuse gia nhập Đội Tuần Tra Đặc Biệt, cô ấy đã vượt qua toàn bộ hạng mục huấn luyện với tài năng và nghị lực siêu phàm, thuộc lòng tất cả nguyên tắc hoạt động của đội và những điều khoản hành pháp liên quan. So với những người cùng thời, cô ấy quả thực xứng đáng với vị trí số một. Cách cô ấy theo đuổi \"chính nghĩa\" càng khiến đồng đội phải nể phục hơn.\nNhưng vị đội phó Grizzetti phụ trách quản lý họ hồi đó lại không nghĩ vậy. Khi cần ra ngoài thực hiện nhiệm vụ, ông ấy lại chưa từng lựa chọn Chevreuse. Các thành viên trong đội đoán rằng có lẽ đội phó làm vậy vì muốn bảo vệ Chevreuse? Dù sao ông ấy từng có quan hệ rất tốt với cha cô là ngài Donatello, cũng thường chăm lo cho Chevreuse, nghe nói Chevreuse còn gọi ông ấy là chú. Cũng có thể ông ấy đang lên kế hoạch đào tạo Chevreuse để đảm nhiệm những công việc quan trọng hơn?\nNhưng Chevreuse không nghĩ nhiều như vậy. Sau lần thứ sáu bị loại khỏi danh sách chấp hành nhiệm vụ, cô ấy không kìm được mà chất vấn chú Grizzetti, người mà ngày thường rất dễ trò chuyện, rằng tại sao không cử cô ấy đi làm nhiệm vụ?\n\"Con vẫn chưa sẵn sàng.\"\nGrizzetti trả lời.\n\"Hãy chỉnh đốn lại lý tưởng của mình, Chevreuse. Nếu thứ chính nghĩa mà con từng hiểu là ăn miếng trả miếng, nợ máu trả máu, vậy thì tốt nhất con nên rời khỏi đây. Nơi này không phải pháp trường, mà là nơi để công lý lên tiếng.\"\nChevreuse ngày đó vẫn chưa hiểu điều này, cô ấy thậm chí không biết rốt cuộc thì khi nào bản thân mới sẵn sàng. Có lẽ cô ấy phải dành cả đời để hiểu được điều đó. Cũng có thể, cô ấy phải sẵn sàng ngay từ giây phút tiếp theo.\nTrong một lần truy bắt khẩn cấp, Grizzetti vì thiếu nhân lực nên đã cử Chevreuse gia nhập đội dù rất bất an, ông ấy dặn dò Chevreuse nhất định phải theo sau mình, mọi việc phải nghe theo chỉ huy, không được bốc đồng tự ý. Sau đó các thành viên chia nhau hành động dưới cơn mưa bão, chặn đường đi của băng nhóm tội phạm.\nChevreuse và Grizzetti cùng nấp sau bụi cây, vậy mà đám tội phạm vẫn chưa lộ diện. Khi hai người cho rằng tin tình báo có sai sót, chuẩn bị rút lui âm thầm thì đột nhiên một viên đạn lạnh lẽo đã hạ gục Grizzetti. Chevreuse lập tức phản kích, lợi dụng ánh lửa lóe lên từ họng súng ban nãy, khóa chặt vị trí tên tội phạm và nổ súng bắn hạ chính xác. Nhưng chú Grizzetti vĩnh viễn không còn cất lời nữa rồi.\nLúc này chỉ còn lại Chevreuse và tên tội phạm, tiếng mưa che lấp tiếng súng, Đội Tuần Tra Đặc Biệt... có lẽ sẽ không điều tra sâu hơn về hung thủ sát hại thành viên Đội Tuần Tra Đặc Biệt tại sao lại bị bắn gục.\nQuan trọng hơn, kẻ sát nhân hiện đang ở ngay trước mắt, nếu Chevreuse muốn thực thi chính nghĩa thì chỉ còn lúc này thôi. Cô nâng khẩu súng lên, chĩa thẳng vào giữa trán hung thủ... Sau đó, nòng súng lại buông xuống.\nĐội Tuần Tra Đặc Biệt chỉ là những người lên tiếng thay chính nghĩa, còn \"chính nghĩa\" thực sự thì chỉ tòa án mới có thể quyết định. Có lẽ, đây chính là sự \"sẵn sàng\" mà Chevreuse cần thực hiện để trở thành một thành viên của Đội Tuần Tra Đặc Biệt.\n\"...Đây là Đội Tuần Tra Đặc Biệt của Đại Sảnh Fontaine, ngươi đã bị bắt...\"\nChevreuse chỉ thông báo như vậy, hung thủ vội vã đứng dậy, rồi loạng choạng bỏ chạy. Tiếng súng vang lên, găm trúng vào đùi phải của hắn, hắn hét lên, chửi rủa, rồi cuối cùng ngã lộn nhào xuống trước mặt một người đồng đội vừa đến nơi.\n\"Chính nghĩa\" của luật pháp do tòa án quyết định, còn \"chính nghĩa\" thuộc về Chevreuse sẽ do cô tự mình thực hiện.\nChevreuse buông hẳn súng, cô vẫn chưa để ý thấy rằng một viên Vision đã đung đưa trên cán súng từ bao giờ.\nTrong cơn giông, ánh sáng của nó không hề rõ rệt, giống như chính nghĩa chưa được tuyên bố, nhợt nhạt và u ám."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 209000,
+      "Name": "Nòng Súng Bảo Vệ",
+      "Description": "Phong cách của Chevreuse. Các nhà thiết kế vẫn giữ nguyên tông màu trắng, đỏ và đen của bộ đồng phục và thêm nhiều phụ kiện, nhưng lại quá nặng nề khiến đội trưởng Chevreuse phản đối. Bộ trang phục mà mọi người thấy được chính là bộ đã loại bỏ một lượng lớn trang sức kim loại.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104114,
+    113053,
+    101235,
+    112085,
+    104346,
+    113055
+  ],
+  "NameCard": {
+    "Name": "Chevreuse - Mẫu II",
+    "Description": "Hoa văn danh thiếp.\nKhẩu súng mà Đội Tuần Tra Đặc Biệt trang bị có tên đầy đủ là \"Súng Hỏa Mai Mẫu II Tiêu Chuẩn Đội Tuần Tra Đặc Biệt\". Chevreuse gọi khẩu của mình là \"Mẫu II\". Giống như trên thế giới có vô số loài hoa, cho dù đóa hoa mà bạn trân trọng có bị đặt tên là \"hoa chẳng có gì đặc biệt\", thì nó vẫn là một sự khác biệt.",
+    "Icon": "UI_NameCardIcon_Chevreuse",
+    "PicturePrefix": "UI_NameCardPic_Chevreuse"
+  }
+}

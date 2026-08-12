@@ -277,7 +277,7 @@
   {
     "Id": 11130002,
     "Name": "Rescue Essentials",
-    "Description": "Max 150 points. Each Rescue Essentials point Ifa has will increase the Swirl and Electro-Charged DMG dealt by nearby party members by 1.5%, and their Lunar-Charged DMG dealt by 0.2%. These points will be cleared when his Nightsoul's Blessing state ends."
+    "Description": "Max 150 points. Each Rescue Essentials point Ifa has will increase the Swirl and Electro-Charged DMG dealt by nearby party members by 1.5%, and Lunar-Charged DMG dealt by 0.2%, and Stellar Swirl reaction DMG dealt by {PARAM#P1132101|5S100}%. These points will be cleared when his Nightsoul's Blessing state ends."
   },
   {
     "Id": 11130003,
@@ -302,7 +302,7 @@
   {
     "Id": 11130007,
     "Name": "Reason Beyond Reason",
-    "Description": "When nearby party members trigger Frozen, Superconduct, Cryo Swirl, or Cryo Crystallize reactions against opponents, a Void Rift will be created near this opponent. This effect can be triggered once every 2.5s. A maximum of 3 Void Rifts created by Skirk herself can exist on the field at once.\n\nSkirk can use the following methods to absorb nearby Void Rifts:\n· When she hits an opponent with a Charged Attack in her Seven-Phase Flash mode.\n· When she uses the special Elemental Burst <color=#FFD780FF>Havoc: Extinction</color> while in Seven-Phase Flash mode.\n· When she Holds her Elemental Skill <color=#FFD780FF>Havoc: Warp</color> to engage in rapid movement.\n\nEach Rift absorbed will grant her 8 Serpent's Subtlety points."
+    "Description": "When nearby party members trigger Frozen, Superconduct, Stellar-Conduct, Cryo Swirl, Stellar Swirl, or Cryo Crystallize reactions against opponents, a Void Rift will be created near this opponent. This effect can be triggered once every 2.5s. A maximum of 3 Void Rifts created by Skirk herself can exist on the field at once.\n\nSkirk can use the following methods to absorb nearby Void Rifts:\n· When she hits an opponent with a Charged Attack in her Seven-Phase Flash mode.\n· When she uses the special Elemental Burst <color=#FFD780FF>Havoc: Extinction</color> while in Seven-Phase Flash mode.\n· When she Holds her Elemental Skill <color=#FFD780FF>Havoc: Warp</color> to engage in rapid movement.\n\nEach Rift absorbed will grant her 8 Serpent's Subtlety points."
   },
   {
     "Id": 11130008,
@@ -477,7 +477,7 @@
   {
     "Id": 11320001,
     "Name": "Banehunter Oathhammer",
-    "Description": "A witchhunter's trusty companion! Under the right conditions, the Banehunter Oathhammer undergoes Elemental Conversion, turning all its DMG into DMG of the corresponding Elemental Type.\nPrune can summon the Banehunter Oathhammer that has undergone Elemental Conversion in the following ways:\n· For a certain time after triggering a Swirl Reaction on an opponent with the Elemental Skill <color=#FFD780FF>Ring-A-Ding-Ding! Hexhunter Chime</color>, Prune can unleash the special Elemental Skill <color=#FFD780FF>Clang Clang! Witch-tribution Comes!</color>. When using this special Elemental Skill, the Banehunter Oathhammer will be converted to the other Elemental Type involved in the aforementioned Swirl Reaction.\n· After the Ascension Talent \"Verdict and Punishment\" is unlocked, when the Witchlure Bell in Hunter-Seeker mode triggers Swirl on an opponent, it will summon a Banehunter Oathhammer that has undergone the corresponding Elemental Conversion to attack the opponent."
+    "Description": "A witchhunter's trusty companion! Under the right conditions, the Banehunter Oathhammer undergoes Elemental Conversion, turning all its DMG into DMG of the corresponding Elemental Type.\nPrune can summon the Banehunter Oathhammer that has undergone Elemental Conversion in the following ways:\n· For a certain time after triggering a Swirl or Stellar Swirl Reaction on an opponent with the Elemental Skill <color=#FFD780FF>Ring-A-Ding-Ding! Hexhunter Chime</color>, Prune can unleash the special Elemental Skill <color=#FFD780FF>Clang Clang! Witch-tribution Comes!</color>. When using this special Elemental Skill, the Banehunter Oathhammer will be converted to the other Elemental Type involved in the aforementioned Swirl or Stellar Swirl Reaction.\n· After the Ascension Talent \"Verdict and Punishment\" is unlocked, when the Witchlure Bell in Hunter-Seeker mode triggers Swirl or Stellar Swirl on an opponent, it will summon a Banehunter Oathhammer that has undergone the corresponding Elemental Conversion to attack the opponent."
   },
   {
     "Id": 11320002,
@@ -492,7 +492,7 @@
   {
     "Id": 11330001,
     "Name": "Decoding",
-    "Description": "Fagio will switch to this mode when using a Charged Attack.\nWhen in this mode, Fagio will engage any opponents ahead with a sweeping fire attack, as well as fire condensed beams at intervals, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n<color=#FFD780FF>Radiance: Stellar-Conduct</color>: The condensed beams will instead deal <color=#99FFFFFF>AoE Cryo DMG</color> that is considered Stellar-Conduct DMG."
+    "Description": "Fagio will switch to this mode when using a Charged Attack.\nWhen in this mode, Fagio will engage any opponents ahead with a sweeping fire attack, as well as fire condensed beams at intervals, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n<color=#FFD780FF>Radiance: Stellar Glimmer</color>: The condensed beams will instead deal <color=#99FFFFFF>AoE Cryo DMG</color> that is considered the corresponding Stellar Glimmer DMG."
   },
   {
     "Id": 11330002,
@@ -503,5 +503,45 @@
     "Id": 11330003,
     "Name": "Polestar Field",
     "Description": "When Stellar-Conduct is triggered, the surrounding area will transform into a <color=#FFD780FF>Polestar Field</color> for a short period of time, and when inside a Polestar Field, certain characters will enter the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state, which grants various skill buffs."
+  },
+  {
+    "Id": 11400001,
+    "Name": "Spirit Blade",
+    "Description": "About \"Spirit Blade\""
+  },
+  {
+    "Id": 10050002,
+    "Name": "Frostglow",
+    "Description": "The following special effect is granted when an ice crystal from a <color=#FFD780FF>Frostpierce Star</color> generated by the Traveler hits an opponent, or when the Traveler unleashes a <color=#FFD780FF>Charged Attack: Freezing Ice</color> after unlocking the Talent <color=#FFD780FF>Foreign Permafrost</color>. Max 8 stacks.\nUnleashing the Elemental Burst <color=#FFD780FF>Frostbound Javelin</color> consumes all of the Traveler's <color=#FFD780FF>Frostglow</color> stacks to increase the DMG dealt by the current Elemental Burst. If 8 stacks are consumed, the number of strikes in the Elemental Burst is also increased."
+  },
+  {
+    "Id": 11500001,
+    "Name": "Solo Dance Double",
+    "Description": "A psychic double of Odette's that dances a duet with her. May be summoned to the field through her Elemental Skill or Elemental Burst.\nAlternates between the <color=#FFD780FF>Plume</color> and <color=#FFD780FF>Wing</color> dance moves to periodically attack nearby opponents, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\nA maximum of one <color=#FFD780FF>Solo Dance Double</color> summoned by Odette is allowed on the field at any one time.\n\nAdditionally, when there is a <color=#FFD780FF>Dance Double</color> summoned by Odette nearby, her Elemental Skill <color=#FFD780FF>Adagio: Phantom Night Dancers</color> is changed to the special Elemental Skill <color=#FFD780FF>Adagio: Coda at Dawn's Tolling</color>."
+  },
+  {
+    "Id": 11500002,
+    "Name": "Adagio: Coda at Dawn's Tolling",
+    "Description": "Odette's special Elemental Skill, which deals to nearby opponents <color=#99FFFFFF>AoE Cryo DMG</color> over time. Then, when the dance duet ends, she deals another instance of <color=#99FFFFFF>AoE Cryo DMG</color> that is considered Stellar-Conduct DMG. During the dance duet, Odette can control the direction of the dance steps.\n<color=#FFD780FF>Radiance: Stellar Glimmer</color>: The DMG dealt when the dance duet ends is changed to <color=#99FFFFFF>AoE Cryo DMG</color> of the corresponding Stellar reaction type.\n\nAdditionally, after Odette unleashes the special Elemental Skill <color=#FFD780FF>Adagio: Coda at Dawn's Tolling</color>, should she be in the <color=#FFD780FF>Radiance: Stellar Glimmer</color> state while her <color=#FFD780FF>Dance Double</color> is still on the field, the <color=#FFD780FF>Dance Double</color>'s two dance moves types will also deal additional <color=#99FFFFFF>AoE Cryo DMG</color> of the corresponding Stellar Glimmer reaction type."
+  },
+  {
+    "Id": 11500003,
+    "Name": "Marvelous Splendor",
+    "Description": "After unlocking the Ascension Talent \"Spring Rite of the Chosen One,\" Odette will obtain a special effect when she summons her <color=#FFD780FF>Solo Dance Double</color>.\nEvery stack of <color=#FFD780FF>Marvelous Splendor</color> active increases the character's Stellar Glimmer DMG by 15%. This lasts until her <color=#FFD780FF>Dance Double</color> exits the field or when she summons her <color=#FFD780FF>Solo Dance Double</color> again.\nWhen Odette is off-field, she loses 1 stack of <color=#FFD780FF>Marvelous Splendor</color> every 1 second, while other nearby party members gain the corresponding number of <color=#FFD780FF>Marvelous Splendor</color> stacks at the same time."
+  },
+  {
+    "Id": 11500004,
+    "Name": "Radiance: Stellar Glimmer",
+    "Description": "<color=#FFD780FF>Radiance: Stellar-Conduct</color> and <color=#FFD780FF>Radiance: Stellar Swirl</color> are both considered <color=#FFD780FF>Radiance: Stellar Glimmer</color> states.\nCharacters can only be affected by one Radiance state at any one time, and where more than one state can be triggered, <color=#FFD780FF>Radiance: Stellar-Conduct</color> shall apply first."
+  },
+  {
+    "Id": 11480001,
+    "Name": "Hunter's Mark",
+    "Description": "A special effect Alyosha can apply on the opponent.\nWhen this effect is applied to an opponent who is already under the <color=#FFD780FF>Hunter's Mark</color> effect, it will activate <color=#FFD780FF>Hunter's Mark</color> instead, which removes said mark and grants all nearby party members the <color=#FFD780FF>Hunter's Precision</color> effect, which increases their ATK when they are on the field."
+  },
+  {
+    "Id": 11480002,
+    "Name": "Tugarin",
+    "Description": "Alyosha's trusted hunting hound and companion, which can be summoned to the field using the Elemental Burst <color=#FFD780FF>Hunter's Advance</color>.\nPeriodically moves close to an opponent to maul them, and activate any existing <color=#FFD780FF>Hunter's Marks</color>."
   }
 ]

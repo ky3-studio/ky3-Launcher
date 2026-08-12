@@ -1,0 +1,1227 @@
+{
+  "Id": 10000030,
+  "PromoteId": 30,
+  "Sort": 24,
+  "Body": 4,
+  "Icon": "UI_AvatarIcon_Zhongli",
+  "SideIcon": "UI_AvatarIcon_Side_Zhongli",
+  "Name": "Zhongli",
+  "Description": "Là vị khách thần bí được \"Vãng Sinh Đường\" mời đến. Kiến thức uyên bác, có hiểu biết sâu rộng đối với nhiều sự vật sự việc.",
+  "BeginTime": "2020-12-02T04:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 1143.984,
+    "AttackBase": 19.551,
+    "DefenseBase": 57.4368
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 3031,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Lần 1|{param1:F1P}",
+            "Sát Thương Lần 2|{param2:F1P}",
+            "Sát Thương Lần 3|{param3:F1P}",
+            "Sát Thương Lần 4|{param4:F1P}",
+            "Sát Thương Lần 5|{param5:F1P}*4",
+            "Sát Thương Lần 6|{param6:F1P}",
+            "Sát Thương Trọng Kích|{param7:P}",
+            "Thể lực Trọng Kích tiêu hao|{param8:F1} điểm",
+            "Sát Thương Khi Đáp|{param9:F1P}",
+            "ST Khi Rơi Từ Độ Cao Thấp/Cao|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 303101,
+              "Level": 1,
+              "Parameters": [
+                0.307691,
+                0.311518,
+                0.385762,
+                0.429389,
+                0.1075,
+                0.544965,
+                1.11026,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 303102,
+              "Level": 2,
+              "Parameters": [
+                0.332735,
+                0.336874,
+                0.417161,
+                0.46434,
+                0.11625,
+                0.589322,
+                1.20063,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 303103,
+              "Level": 3,
+              "Parameters": [
+                0.35778,
+                0.36223,
+                0.44856,
+                0.49929,
+                0.125,
+                0.63368,
+                1.291,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 303104,
+              "Level": 4,
+              "Parameters": [
+                0.393558,
+                0.398453,
+                0.493416,
+                0.549219,
+                0.1375,
+                0.697048,
+                1.4201,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 303105,
+              "Level": 5,
+              "Parameters": [
+                0.418603,
+                0.423809,
+                0.524815,
+                0.584169,
+                0.14625,
+                0.741406,
+                1.51047,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 303106,
+              "Level": 6,
+              "Parameters": [
+                0.447225,
+                0.452788,
+                0.5607,
+                0.624113,
+                0.15625,
+                0.7921,
+                1.61375,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 303107,
+              "Level": 7,
+              "Parameters": [
+                0.486581,
+                0.492633,
+                0.610042,
+                0.679034,
+                0.17,
+                0.861805,
+                1.75576,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 303108,
+              "Level": 8,
+              "Parameters": [
+                0.525937,
+                0.532478,
+                0.659383,
+                0.733956,
+                0.18375,
+                0.93151,
+                1.89777,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 303109,
+              "Level": 9,
+              "Parameters": [
+                0.565292,
+                0.572323,
+                0.708725,
+                0.788878,
+                0.1975,
+                1.001214,
+                2.03978,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 303110,
+              "Level": 10,
+              "Parameters": [
+                0.608226,
+                0.615791,
+                0.762552,
+                0.848793,
+                0.2125,
+                1.077256,
+                2.1947,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 303111,
+              "Level": 11,
+              "Parameters": [
+                0.657421,
+                0.665598,
+                0.824229,
+                0.917445,
+                0.229687,
+                1.164387,
+                2.372212,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 303112,
+              "Level": 12,
+              "Parameters": [
+                0.715274,
+                0.72417,
+                0.896761,
+                0.998181,
+                0.2499,
+                1.266853,
+                2.580967,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 303113,
+              "Level": 13,
+              "Parameters": [
+                0.773127,
+                0.782743,
+                0.969293,
+                1.078916,
+                0.270112,
+                1.369319,
+                2.789722,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 303114,
+              "Level": 14,
+              "Parameters": [
+                0.83098,
+                0.841315,
+                1.041825,
+                1.159651,
+                0.290325,
+                1.471785,
+                2.998477,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 303115,
+              "Level": 15,
+              "Parameters": [
+                0.894092,
+                0.905213,
+                1.120951,
+                1.247726,
+                0.312375,
+                1.583566,
+                3.226209,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10301,
+        "Name": "Mưa Đá",
+        "Description": "<color=#FFD780FF>Tấn Công Thường</color>\nThực hiện tối đa 6 lần đánh liên tiếp.\n\n<color=#FFD780FF>Trọng Kích</color>\nTiêu hao thể lực nhất định, lao nhanh về phía trước, ném thương đá trên đường đi và điểm cuối.\n\n<color=#FFD780FF>Tấn Công Khi Đáp</color>\nĐáp xuống đất từ trên không, tấn công kẻ địch trên đường, đồng thời gây sát thương phạm vi khi chạm đất.",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 3032,
+        "Proud": {
+          "Descriptions": [
+            "ST Vách Đá/ST Cộng Hưởng|{param1:F1P}/{param2:F1P}",
+            "CD Nhấn|{param3:F1}s",
+            "Sát Thương Nhấn Giữ|{param4:P}",
+            "Lượng hấp thu cơ bản của khiên|{param5:I}",
+            "Khiên hấp thụ thêm|{param6:F1P} lượng HP tối đa",
+            "Thời Gian Khiên Kéo Dài|{param7:F1}s",
+            "CD Nhấn Giữ|{param8:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 303201,
+              "Level": 1,
+              "Parameters": [
+                0.16,
+                0.32,
+                4,
+                0.8,
+                1232.4108,
+                0.128,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303202,
+              "Level": 2,
+              "Parameters": [
+                0.172,
+                0.344,
+                4,
+                0.86,
+                1355.6691,
+                0.1376,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303203,
+              "Level": 3,
+              "Parameters": [
+                0.184,
+                0.368,
+                4,
+                0.92,
+                1489.1987,
+                0.1472,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303204,
+              "Level": 4,
+              "Parameters": [
+                0.2,
+                0.4,
+                4,
+                1,
+                1633,
+                0.16,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303205,
+              "Level": 5,
+              "Parameters": [
+                0.212,
+                0.424,
+                4,
+                1.06,
+                1787.0728,
+                0.1696,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303206,
+              "Level": 6,
+              "Parameters": [
+                0.224,
+                0.448,
+                4,
+                1.12,
+                1951.417,
+                0.1792,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303207,
+              "Level": 7,
+              "Parameters": [
+                0.24,
+                0.48,
+                4,
+                1.2,
+                2126.033,
+                0.192,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303208,
+              "Level": 8,
+              "Parameters": [
+                0.256,
+                0.512,
+                4,
+                1.28,
+                2310.9202,
+                0.2048,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303209,
+              "Level": 9,
+              "Parameters": [
+                0.272,
+                0.544,
+                4,
+                1.36,
+                2506.079,
+                0.2176,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303210,
+              "Level": 10,
+              "Parameters": [
+                0.288,
+                0.576,
+                4,
+                1.44,
+                2711.5093,
+                0.2304,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303211,
+              "Level": 11,
+              "Parameters": [
+                0.304,
+                0.608,
+                4,
+                1.52,
+                2927.2112,
+                0.2432,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303212,
+              "Level": 12,
+              "Parameters": [
+                0.32,
+                0.64,
+                4,
+                1.6,
+                3153.1846,
+                0.256,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303213,
+              "Level": 13,
+              "Parameters": [
+                0.34,
+                0.68,
+                4,
+                1.7,
+                3389.4294,
+                0.272,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303214,
+              "Level": 14,
+              "Parameters": [
+                0.36,
+                0.72,
+                4,
+                1.8,
+                3635.946,
+                0.288,
+                20,
+                12
+              ]
+            },
+            {
+              "Id": 303215,
+              "Level": 15,
+              "Parameters": [
+                0.38,
+                0.76,
+                4,
+                1.9,
+                3892.734,
+                0.304,
+                20,
+                12
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10302,
+        "Name": "Tâm Trái Đất",
+        "Description": "Trong rặng núi, trên mặt đất, giữa những tảng đá đều chất chứa sức mạnh của nham. Nhưng rất ít người có thể điều khiển được sức mạnh này.\n\n<color=#FFD780FF>Nhấn</color>\nRa lệnh cho các nguyên tố Nham trên mặt đất tụ hợp lại, kết thành vách đá.\n\n<color=#FFD780FF>Nhấn Giữ</color>\nLệnh cho nguyên tố Nham xung quanh phát nổ, gây hiệu quả như sau:\n·Nếu số lượng vách đá chưa đạt giới hạn, thì sẽ tạo ra vách đá;\n·Tạo ra Khiên Ngọc, lượng hấp thu sát thương phụ thuộc vào giới hạn HP của Zhongli;\n·Gây <color=#FFE699FF>Sát Thương Phạm Vi Nguyên Tố Nham</color>;\n·Nếu bên cạnh có mục tiêu <color=#FFE699FF>Nguyên Tố Nham</color>, sẽ tiêu hao lượng lớn <color=#FFE699FF>Nguyên Tố Nham</color> của tối đa 2 mục tiêu. Hiệu quả này sẽ không gây sát thương.\n\n<color=#FFD780FF>Vách Đá</color>\nKhi tạo vách đá sẽ gây <color=#FFE699FF>Sát Thương Phạm Vi Nguyên Tố Nham</color>.\nNgoài ra, trong thời gian vách đá tồn tại, thỉnh thoảng sẽ tạo thành cộng hưởng với <color=#FFE699FF>tạo vật Nguyên Tố Nham</color> khác ở xung quanh, gây <color=#FFE699FF>sát thương Nguyên Tố Nham</color> cho kẻ địch xung quanh.\nVách đá được xem là <color=#FFE699FF>tạo vật Nguyên Tố Nham</color>, có thể ngăn chặn tấn công, có thể leo trèo.\nBan đầu chỉ được tồn tại đồng thời 1 vách đá duy nhất do Zhongli tạo ra.\n\n<color=#FFD780FF>Khiên Ngọc</color>\nCó hiệu quả hấp thu 150% tất cả sát thương nguyên tố và sát thương vật lý.\nNhân vật đang được Khiên Ngọc bảo vệ, sẽ khiến cho kẻ địch trong phạm vi nhỏ bị giảm 20% tất cả kháng nguyên tố và kháng vật lý, hiệu quả này không được cộng dồn.\n\n<i>Đá kiên cố có thể đánh ngọc khắc vàng.</i>",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_S_Zhongli_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 3039,
+      "Proud": {
+        "Descriptions": [
+          "Sát Thương Kỹ Năng|{param1:P}",
+          "Thời Gian Hóa Thạch|{param2:F1}s",
+          "CD|{param3:F1}s",
+          "Năng Lượng Nguyên Tố|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 303901,
+            "Level": 1,
+            "Parameters": [
+              4.0108,
+              3.1,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303902,
+            "Level": 2,
+            "Parameters": [
+              4.4444,
+              3.2,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303903,
+            "Level": 3,
+            "Parameters": [
+              4.878,
+              3.3,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303904,
+            "Level": 4,
+            "Parameters": [
+              5.42,
+              3.4,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303905,
+            "Level": 5,
+            "Parameters": [
+              5.9078,
+              3.5,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303906,
+            "Level": 6,
+            "Parameters": [
+              6.3956,
+              3.6,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303907,
+            "Level": 7,
+            "Parameters": [
+              7.046,
+              3.7,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303908,
+            "Level": 8,
+            "Parameters": [
+              7.6964,
+              3.8,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303909,
+            "Level": 9,
+            "Parameters": [
+              8.3468,
+              3.9,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303910,
+            "Level": 10,
+            "Parameters": [
+              8.9972,
+              4,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303911,
+            "Level": 11,
+            "Parameters": [
+              9.6476,
+              4,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303912,
+            "Level": 12,
+            "Parameters": [
+              10.298,
+              4,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303913,
+            "Level": 13,
+            "Parameters": [
+              10.84,
+              4,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303914,
+            "Level": 14,
+            "Parameters": [
+              11.382,
+              4,
+              12,
+              40
+            ]
+          },
+          {
+            "Id": 303915,
+            "Level": 15,
+            "Parameters": [
+              11.924,
+              4,
+              12,
+              40
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10303,
+      "Name": "Thiên Tinh",
+      "Description": "Thiên thạch cực lớn rơi xuống, gây <color=#FFE699FF>Sát Thương Nguyên Tố Nham</color> cực lớn cho kẻ địch trong phạm vi rơi, và khiến địch <color=#FFE699FF>Hóa Thạch</color>.\n\n<color=#FFD780FF>Hóa Thạch</color>\nKẻ địch trong trạng thái <color=#FFE699FF>Hóa Thạch</color> không thể chuyển động.\n\n<i>Dùng ngôi sao trên cao soi sáng cho người đang mê muội.</i>",
+      "SpecialEnergyType": 0,
+      "Icon": "Skill_E_Zhongli_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 3021,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 302101,
+              "Level": 1,
+              "Parameters": [
+                0.05
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 302101,
+        "Name": "Huyền Nham Thần Đoạn",
+        "Description": "Khi Khiên Ngọc chịu sát thương sẽ tạo ra hiệu quả kiên cố:\n·Nhân vật khi đang được Khiên Ngọc bảo vệ, hiệu quả khiên +5%.\n·Hiệu quả này tối đa cộng dồn 5 lần, duy trì đến khi Khiên Ngọc mất đi.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Zhongli_05"
+      },
+      {
+        "GroupId": 3022,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 302201,
+              "Level": 1,
+              "Parameters": [
+                0.0139,
+                0.019,
+                0.33
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 302201,
+        "Name": "Xuy Kim Soạn Ngọc",
+        "Description": "Sát thương gây ra bởi những đòn tấn công dưới đây của Zhongli sẽ tăng tùy theo giới hạn HP:\n·Lượng tăng sát thương của tấn công thường, trọng kích và tấn công khi đáp: 1.39% giới hạn HP\n·Lượng tăng sát thương của nhấn giữ, sát thương cộng hưởng và Vách Đá của <color=#FFD780FF>Tâm Trái Đất</color>: 1.9% giới hạn HP\n·Lượng tăng sát thương của <color=#FFD780FF>Thiên Tinh</color>: 33% giới hạn HP",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Zhongli_06"
+      },
+      {
+        "GroupId": 3023,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 302301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 302301,
+        "Name": "Mệnh Lý Tinh Thạch",
+        "Description": "Khi rèn vũ khí cán dài, hoàn trả 15% Khoáng Thạch tiêu hao.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_Forge_Pole"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 301,
+        "Name": "Nham, Lục Hợp Dẫn Thành Cốt",
+        "Description": "Vách đá tạo thành từ <color=#FFD780FF>Tâm Trái Đất</color> có thể tồn tại cùng lúc 2 cái.",
+        "Icon": "UI_Talent_S_Zhongli_01"
+      },
+      {
+        "Id": 302,
+        "Name": "Thạch, Bát Hoang Ngọc Minh",
+        "Description": "Khi <color=#FFD780FF>Thiên Tinh</color> rơi xuống, các nhân vật trong trận hiện tại ở lân cận sẽ nhận được Khiên Ngọc bảo vệ.",
+        "Icon": "UI_Talent_S_Zhongli_02"
+      },
+      {
+        "Id": 303,
+        "Name": "Khuê Chương, Khó Khăn Không Lùi Bước",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Tâm Trái Đất</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Zhongli_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 304,
+        "Name": "Hoàng Tông, Phá Nhưng Không Mất Kiên Cường",
+        "Description": "Tăng 20% phạm vi ảnh hưởng của <color=#FFD780FF>Thiên Tinh</color>.\nĐồng thời hiệu quả Hóa Thạch của Thiên Tinh sẽ kéo dài thêm 2s.",
+        "Icon": "UI_Talent_S_Zhongli_03"
+      },
+      {
+        "Id": 305,
+        "Name": "Thương Bích, Kiên Cường Như Lẽ Trời",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Thiên Tinh</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Zhongli_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 306,
+        "Name": "Thiên Ngọc, Lễ Thiên Địa Tứ Phương",
+        "Description": "Khi Khiên Ngọc chịu sát thương, sẽ hồi HP cho nhân vật hiện tại, lượng hồi phục bằng 40% sát thương.\nLượng hồi phục của 1 lần không vượt quá 8% HP tối đa của nhân vật.",
+        "Icon": "UI_Talent_S_Zhongli_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Du Ngoạn Trần Thế",
+    "Detail": "Là vị khách thần bí được \"Vãng Sinh Đường\" mời đến. Kiến thức uyên bác, có hiểu biết sâu rộng đối với nhiều sự vật sự việc.",
+    "Association": 2,
+    "Native": "Cảng Liyue",
+    "BirthMonth": 12,
+    "BirthDay": 31,
+    "VisionBefore": "Nham",
+    "VisionAfter": "Nham",
+    "VisionOverrideUnlocked": "Gnosis",
+    "ConstellationBefore": "???",
+    "ConstellationAfter": "Nham Vương Đế Quân",
+    "CvChinese": "彭博",
+    "CvJapanese": "前野智昭",
+    "CvEnglish": "Keith Silverstein",
+    "CvKorean": "Pyo Young-jae",
+    "CookBonus": {
+      "OriginItemId": 108153,
+      "ItemId": 108173,
+      "InputList": [
+        100061,
+        110005,
+        100091
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Lần đầu gặp mặt...",
+        "Context": "#Một \"khế ước\" mới? Được rồi... Mặc dù vẫn đang trong thời gian nghỉ, nhưng tôi cũng có thể đi một chuyến với {F#cô}{M#cậu}. Trên khế ước nên ký tên gì đây? Tôi có nhiều tên lắm. Trong kỳ nghỉ thì... tôi sẽ tự gọi mình là \"Zhongli\". Còn {F#cô}{M#cậu} thì sao? {F#Cô}{M#Cậu} sẽ ký tên gì?"
+      },
+      {
+        "Title": "Nói chuyện phiếm - Hành trình",
+        "Context": "Cuộc hành trình rồi sẽ kết thúc, không cần phải vội vàng."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Dạo chơi",
+        "Context": "#{F#Cô}{M#Cậu} muốn đến nơi nào tiếp theo? Nếu muốn đến thăm những địa điểm nổi tiếng của Liyue, tôi có một số đề cử không tồi."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Liyue",
+        "Context": "Con tàu được làm ra để \"lưu thông\" trên biển lớn, khi gặp bến cảng cũng sẽ dừng lại. Chính vì vậy, Liyue là nơi \"ngưng tụ\" của tất cả tài nguyên."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Nhớ chuyện xưa",
+        "Context": "Muốn mua hoa quế với rượu ngon... Chỉ tiếc cố nhân, biết khi nào gặp lại?"
+      },
+      {
+        "Title": "Sau cơn mưa trời lại sáng...",
+        "Context": "Loại thực vật như \"Túi Lưu Ly\" rất thích những nơi ẩm ướt và thời điểm hái tốt nhất là sau khi mưa. Nếu tìm thấy nó, hãy dự trữ một ít nhé."
+      },
+      {
+        "Title": "Khi tuyết rơi...",
+        "Context": "#Tìm một nơi để tránh tuyết nào. Tôi không sao, nhưng {F#cô}{M#cậu} có thể bị cảm lạnh đó."
+      },
+      {
+        "Title": "Gió lớn quá...",
+        "Context": "Ừm... Thời tiết không thích hợp cho kỳ nghỉ. Đi xem kịch vậy."
+      },
+      {
+        "Title": "Chào buổi sáng...",
+        "Context": "Tôi hy vọng hôm nay sẽ là một ngày may mắn."
+      },
+      {
+        "Title": "Chào buổi trưa...",
+        "Context": "Muốn ăn thứ gì để giúp tỉnh táo à? Chà, Ngật Hổ Nham có một quán không tồi..."
+      },
+      {
+        "Title": "Chào buổi tối...",
+        "Context": "Mặc dù đã bỏ lỡ vở kịch của Yun, nhưng Liyue vẫn còn rất nhiều nơi để đi chơi vào ban đêm."
+      },
+      {
+        "Title": "Chúc ngủ ngon...",
+        "Context": "Chợ đã đóng cửa, bến tàu nhộn nhịp đã ngủ yên. Về và nghỉ ngơi thôi."
+      },
+      {
+        "Title": "Về bản thân Zhongli...",
+        "Context": "Không theo quy củ rất khó thành tài. Bất kể người thường hay tiên nhân, chỉ khi làm tròn chức trách của mình, mới có thể giúp cho Liyue được thái bình mãi mãi."
+      },
+      {
+        "Title": "Về chúng ta - Hoàng kim",
+        "Context": "#Vàng là của cải của Liyue, và là dòng máu khiến Liyue có thể vận hành. {F#Cô}{M#Cậu} có phải là người có một trái tim tỏa sáng như vàng hay không, hãy cùng chờ xem nhé."
+      },
+      {
+        "Title": "Về chúng ta - Khế ước",
+        "Context": "Giữa chúng ta đã có mối quan hệ \"khế ước\" - vậy thì bất cứ chuyện gì nằm trong phạm vi của khế ước, đều có thể cùng tôi thương lượng."
+      },
+      {
+        "Title": "Về chúng ta - Công bằng",
+        "Context": "#{F#Cô}{M#Cậu} cũng có thể nói với tôi những vấn đề khác ngoài \"khế ước\". Dù gì thì tôi đã sống ở mảnh đất này lâu như thế, đối với mọi thứ đều có hiểu biết chút đỉnh. À, tuy rằng nói vậy, nhưng cũng có những việc mà tôi hy vọng {F#cô}{M#cậu} sẽ giúp đỡ, như vậy mới \"công bằng\" chứ."
+      },
+      {
+        "Title": "Về chúng ta - Thắc mắc",
+        "Context": "#\"Khế ước\" không thể giới hạn \"tình hữu nghị\" và cũng không thể đo lường \"tình bạn\". Vậy lấy gì để cân đo đong đếm tình cảm giữa hai ta đây? \"Vị bằng hữu\", {F#cô}{M#cậu} có biết câu trả lời không?"
+      },
+      {
+        "Title": "Về Vision...",
+        "Context": "\"Vision\"... cũng là một kiểu \"khế ước\". Cần phải hiểu rằng mọi sức mạnh đều có cái giá của nó, thêm một quyền lực là sẽ thêm một trách nhiệm."
+      },
+      {
+        "Title": "Có gì muốn chia sẻ không...",
+        "Context": "Quy tắc của \"giao dịch\" chính là \"khế ước\", tiêu chuẩn là \"công bằng\". Đây là điều không thể quên đối với người lập ra và tuân thủ \"khế ước\": Nếu không công bằng, vậy thì khế ước sẽ trở thành bằng chứng lật tẩy sự lừa dối."
+      },
+      {
+        "Title": "Những kiến thức thú vị...",
+        "Context": "#Nếu {F#cô}{M#cậu} đến \"Tuyệt Vân Gián\", hãy ngắt một bó \"Thanh Tâm\" giúp tôi. Một bó là được. Lộ phí cho chuyến này... À, quên mất, trong thời gian \"khế ước\" có hiệu lực, toàn bộ lộ phí sẽ do {F#cô}{M#cậu} đứng ra ứng trước. Vất vả cho {F#cô}{M#cậu} rồi."
+      },
+      {
+        "Title": "Về Xiao...",
+        "Context": "#{F#Cô}{M#Cậu} nhắc đến tiên nhân trẻ tuổi ở Quy Li Nguyên... Anh ấy vẫn đang thực hiện nhiệm vụ của mình cho đến ngày nay... Hãy giúp tôi mang cho anh ấy viên \"Liên Lý Trấn Tâm Tán\" này. Không được để Paimon ăn mất đó, đây là thuốc... dược tính của nó không thích hợp với người thường."
+      },
+      {
+        "Title": "Về Venti...",
+        "Context": "#Khụ... Mùi rượu nồng quá. Nhà thơ đó vừa mới đến đây phải không, cái tên nhà thơ say xỉn hoàn toàn không hợp với hai từ nho nhã đó mà! {F#Cô}{M#Cậu} đây... bị hắn lừa uống rượu, giờ không còn tỉnh táo nữa rồi sao... Chờ một chút tôi sẽ pha một bình trà \"giải rượu\", chỉ cần ba canh giờ thôi là sẽ khỏi. Đợi tí nhé..."
+      },
+      {
+        "Title": "Về Ningguang...",
+        "Context": "Mặc dù mỗi ngày đều phải xử lý hàng ngàn việc lớn nhỏ, nhưng cô ấy vẫn không hề mất đi tinh thần cầu tiến, thật là hiếm có. Tôi vẫn nhớ lúc đó, cô ấy đi chân trần rao bán hàng hóa từ Dao Quang Đàm đến tận bến tàu phía Nam. Thời gian quả là tàn nhẫn với người thường mà..."
+      },
+      {
+        "Title": "Về Hu Tao...",
+        "Context": "Đường chủ hiện tại? Ừm... Đứa trẻ đó, tôi đối phó không có được."
+      },
+      {
+        "Title": "Về Tartaglia - Chìm đắm",
+        "Context": "#Chiến binh từ Snezhnaya đó, vẫn chưa rời Liyue sao? Không thành vấn đề, nếu anh ta làm phiền {F#cô}{M#cậu}, có thể gọi tôi đến ứng phó."
+      },
+      {
+        "Title": "Về Tartaglia - Bàn rượu",
+        "Context": "#Tôi nghe nói rằng gần đây danh tiếng của \"Childe\" ở Fatui xấu đi rất nhiều. Nhưng những người như anh ta chắc chắn sẽ dùng hành động để chứng minh sự trong sạch của mình. Ừm... như vậy thì trên bàn rượu lần tới có nhiều chuyện thú vị lắm đây. Nhà Lữ Hành, {F#cô}{M#cậu} cũng tới chứ?"
+      },
+      {
+        "Title": "Về Ganyu...",
+        "Context": "#Sự thịnh vượng của Liyue không chỉ dựa vào thần dụ của Nham Vương Đế Quân, mà còn phải nhờ vào vô số con dân Nham Thần hưởng ứng theo \"khế ước\". Trong số đó, Ganyu là người tại vị lâu nhất. Về quá khứ của cô ấy... Tôi sợ cô ấy sẽ trách tội, để cô ấy tự kể cho {F#cô}{M#cậu} nghe vậy."
+      },
+      {
+        "Title": "Về Keqing...",
+        "Context": "Cô ấy là kẻ \"bất kính với thần linh\" nhất trong Thất Tinh đương thời, nhưng tôi rất thích người như vậy. \"Nếu cảm thấy mình đúng, cứ bày tỏ và hành động một cách kiên quyết\". Chính là vì Liyue có người như vậy, tôi mới tính đến chuyện nghỉ hưu."
+      },
+      {
+        "Title": "Về Yanfei...",
+        "Context": "Cô ấy chưa từng ký \"khế ước\" với tôi, nhưng lại dùng cách của riêng mình để duy trì quy củ cho Liyue, đồng thời thay đổi những quan niệm thành kiến. Nếu một ngày nào đó cha của cô ấy quay về, có lẽ còn vui hơn tôi nữa đấy."
+      },
+      {
+        "Title": "Về Baal...",
+        "Context": "Thời gian bào mòn ý chí, và cô ấy là một người vì tín niệm mà bất chấp tất cả. Hoặc có lẽ chính vì vậy nên cô ấy mới đi đến được bước đường này... Nếu có cơ hội, tôi cũng muốn tìm hiểu về sự vĩnh hằng mà cô ấy hằng theo đuổi."
+      },
+      {
+        "Title": "Về Buer...",
+        "Context": "Thần Trí Tuệ Buer, không những cai quản Sumeru, mà còn gánh vác trách nhiệm bảo vệ Cây Thế Giới. Nếu không có trí tuệ vĩ đại thì rất khó để giữ vững được. Chuyện giải cứu Cây Thế Giới, sinh linh của toàn cõi Teyvat nợ cô ấy một lời cảm ơn."
+      },
+      {
+        "Title": "Về Furina...",
+        "Context": "Ký khế ước giải cứu đất nước với \"chính mình\", sau đó tuân thủ nghiêm ngặt trong 500 năm, cuối cùng là đánh lừa cả Thiên Lý... Tôi tôn trọng kiểu \"chính nghĩa\" cần tự mình thực thi này. Dù cho phần thần cách đã tan biến, ngai thần cũng không còn tồn tại, nhưng với lịch sử của toàn Fontaine thì Furina vẫn là một vị thần chính nghĩa đáng được công nhận."
+      },
+      {
+        "Title": "Về Xianyun...",
+        "Context": "Tôi đã nghe không ít thương nhân nói về Xianyun. Nói rằng cô ấy trông có vẻ kiêu ngạo, không dễ nói chuyện, nhưng sau khi giao lưu thì lại thấy cô ấy tính cách thẳng thắn, tác phong chính trực, là một người bạn tốt đáng để kết giao. Tôi mừng cho cô ấy, nhưng mà... Tôi cũng có nghe qua không ít người nói là cô ấy tiêu Mora cũng rất hào phóng..."
+      },
+      {
+        "Title": "Về Haborym...",
+        "Context": "Natlan đã viết nên vở anh hùng ca về trường kỳ kháng chiến, khích lệ nhiều đời chiến binh vượt qua Vực Sâu và số phận để tạo nên một tương lai mới. Hơn hết, người dẫn dắt họ lại là một chiến binh nhân loại biến thời gian và lịch sử thành vũ khí, sức mạnh của cô ấy đủ để sánh vai với thần linh, thật khiến người ta thán phục."
+      },
+      {
+        "Title": "Về Bạch Mã Tiên Nhân...",
+        "Context": "Bạch Mã... Vị tiên nhân này, thực ra cũng là một người bạn cũ mà tôi đã lâu không gặp. Chỉ đáng tiếc thay, đêm xuân ngắn ngủi, ngày thu vội vã, thời gian trôi nhanh như ngựa phi, như gió thổi qua ngọn nến."
+      },
+      {
+        "Title": "Muốn tìm hiểu Zhongli - Điều thứ 1",
+        "Context": "Khó lắm mới có cơ hội nghỉ ngơi, sao không tận hưởng đi mà còn đến tìm tôi. Là muốn nghe tôi kể chuyện sao?"
+      },
+      {
+        "Title": "Muốn tìm hiểu Zhongli - Điều thứ 2",
+        "Context": "Nghe đến nguồn gốc của \"Hắc Nham Xưởng\" chưa?\nNgày xưa người ta khai thác các mỏ khoáng ở Thiên Hoành Sơn, vừa làm họ vừa xây dựng công trường ở đó. Dần dần trở thành xưởng khai thác lớn nhất lục địa phía đông. Con đường trong núi kéo dài, thậm chí có chỗ còn dẫn đến những di tích cổ xưa. Đến nay người có thể hiểu rõ đường đi trong đó, giờ hầu như không còn nữa rồi."
+      },
+      {
+        "Title": "Muốn tìm hiểu Zhongli - Điều thứ 3",
+        "Context": "Nghe đến nguồn gốc của \"Tết Hải Đăng\" chưa?\nXa xưa, người Liyue thường đốt đèn sáng vào ban đêm, để những người lính tham gia chiến tranh có thể tìm được đường trở về nhà và không để trái tim mình lạc bước. Ngày nay không ai còn nhớ đến chuyện như thế này nữa."
+      },
+      {
+        "Title": "Muốn tìm hiểu Zhongli - Điều thứ 4",
+        "Context": "Nghe đến nguồn gốc của \"Thần Khế Ước\" chưa?\nNgài ấy có một trí nhớ vô cùng tốt có thể nhớ tên của từng kẻ địch, nhớ ngày ra khơi của tất cả các con thuyền được tạo ra kể từ khi cảng Liyue được xây dựng. Phải có trí nhớ như vậy mới có thể nhớ được tất cả khế ước.\nNhưng mà trí nhớ tốt đôi khi lại khiến con người ta không vui."
+      },
+      {
+        "Title": "Muốn tìm hiểu Zhongli - Điều thứ 5",
+        "Context": "#Những người sống quá lâu chỉ có thể tìm thấy những chiến hữu, cảnh vật trong hồi ức quá khứ mà thôi.\nDù vậy, tôi cũng không hối tiếc khi được quen biết {F#cô}{M#cậu}, \"bằng hữu\". Nếu một ngày phải chia xa, ký ức về {F#cô}{M#cậu} trong tôi sẽ lấp lánh như ánh hoàng kim."
+      },
+      {
+        "Title": "Sở thích của Zhongli...",
+        "Context": "Khi rảnh rỗi, đi dạo trong thành có thể khiến tim tôi bình yên hơn nhiều. Hmm... Không biết từ bao giờ có thói quen này...?"
+      },
+      {
+        "Title": "Nỗi buồn của Zhongli...",
+        "Context": "Bắt mọi người tuân thủ và thực hiện theo \"khế ước\" chỉ là hy vọng \"công bằng\" luôn được thực hiện mà thôi. Nhưng tiếc là một số người lại không nhận ra được điều đó."
+      },
+      {
+        "Title": "Món ăn yêu thích...",
+        "Context": "Loại rượu đã uống với bạn bè hồi rất lâu trước đây. Là do khí hậu đã thay đổi sao? Haiz, hương vị trong quá khứ, có lẽ sẽ không bao giờ xuất hiện nữa."
+      },
+      {
+        "Title": "Món ăn ghét...",
+        "Context": "Tôi không thích hải sản. Chỉ cần nhìn thấy hải sản là sẽ nghĩ ngay đến... nói thế nào nhỉ, cái cảm giác trơn trượt và mùi tanh không thể nào rửa sạch ấy. À, lý do ư...\nĐó là một câu chuyện dài, cứ xem như tại trí nhớ tôi quá tốt đi."
+      },
+      {
+        "Title": "Nhận Được Quà I",
+        "Context": "Dùng nguyên liệu rất tinh tế, chế biến tỉ mỉ. Quả không đơn giản."
+      },
+      {
+        "Title": "Nhận Được Quà II",
+        "Context": "#Nấu ăn là việc rất thú vị, và nó lại càng đúng với {F#cô}{M#cậu}."
+      },
+      {
+        "Title": "Nhận Được Quà III",
+        "Context": "#Nếu có thời gian rảnh rỗi, chi bằng tìm một khoảng sân, tôi muốn kể cho {F#cô}{M#cậu} nghe một câu chuyện."
+      },
+      {
+        "Title": "Sinh nhật...",
+        "Context": "#Chúc mừng sinh nhật. Đây là đóa hoa khô \"Bách Hợp Lưu Ly\" từng nở vào ngày sinh nhật của {F#cô}{M#cậu}.\nTừ rất lâu trước đây, người dân Liyue cho rằng loài hoa này nở rộ mang theo những kỷ niệm và ước nguyện đẹp đẽ trên trần thế. Tôi nguyện tin rằng, sự ra đời của {F#cô}{M#cậu} cũng có chung đạo lý này."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Khởi",
+        "Context": "Sức mạnh dường như dần trở lại rồi. Không nhiều, nhưng đủ dùng."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Thừa",
+        "Context": "Khi sức lực tăng lên, gánh nặng cho cơ thể cũng tăng mạnh... Tôi không sao, tôi khác với người thường nên đừng lo lắng."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Chuyển",
+        "Context": "Thì ra là vậy, điều khiển Vision và sức mạnh nguyên tố là một điều vĩ đại với người thường. Giờ đã hiểu, thì ra họ có suy nghĩ như vậy khi đứng cạnh tôi..."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Hợp",
+        "Context": "#Không ngờ rằng, sau khi từ bỏ Gnosis vẫn có thể nhìn thấy cảnh sắc này, cảm ơn {F#cô}{M#cậu}, \"bằng hữu\"... Đúng rồi, chỗ tôi có một \"khế ước\" mới, không cùng xem sao?"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố I",
+        "Context": "Trỗi dậy."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố II",
+        "Context": "Kinh thiên động địa."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố III",
+        "Context": "Kiên cường bền bỉ."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố IV",
+        "Context": "Hấp thụ tất cả."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố V",
+        "Context": "Vững như bàn thạch."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố VI",
+        "Context": "Vững chãi như núi."
+      },
+      {
+        "Title": "Kỹ Năng Nộ I",
+        "Context": "Thiên lý trường khu."
+      },
+      {
+        "Title": "Kỹ Năng Nộ II",
+        "Context": "Đây là thiên đạo."
+      },
+      {
+        "Title": "Kỹ Năng Nộ III",
+        "Context": "Thiên động vạn tượng."
+      },
+      {
+        "Title": "Mở Rương I",
+        "Context": "Thứ bỏ đi của người này lại là vật vô giá đối với người khác..."
+      },
+      {
+        "Title": "Mở Rương II",
+        "Context": "Những thứ ngẫu nhiên có được cũng vô cùng tao nhã."
+      },
+      {
+        "Title": "Mở Rương III",
+        "Context": "Rất đáng!"
+      },
+      {
+        "Title": "HP Thấp I",
+        "Context": "Khá đấy."
+      },
+      {
+        "Title": "HP Thấp II",
+        "Context": "Ha, có chút thú vị."
+      },
+      {
+        "Title": "HP Thấp III",
+        "Context": "Không giỏi ứng phó nguy cơ lắm."
+      },
+      {
+        "Title": "HP Đồng Hành Thấp I",
+        "Context": "Không được tùy tiện tấn công."
+      },
+      {
+        "Title": "HP Đồng Hành Thấp II",
+        "Context": "Lui xuống nghỉ ngơi. Chỗ này giao cho tôi."
+      },
+      {
+        "Title": "Ngã Xuống I",
+        "Context": "Hự, có chút mệt rồi..."
+      },
+      {
+        "Title": "Ngã Xuống II",
+        "Context": "Để lộ điểm yếu rồi."
+      },
+      {
+        "Title": "Ngã Xuống III",
+        "Context": "Đất đá... cũng sẽ về với cát bụi..."
+      },
+      {
+        "Title": "Bị Trọng Kích I",
+        "Context": "Bất cẩn rồi sao."
+      },
+      {
+        "Title": "Bị Trọng Kích II",
+        "Context": "Không đáng lo ngại."
+      },
+      {
+        "Title": "Vào Đội I",
+        "Context": "Vừa hay."
+      },
+      {
+        "Title": "Vào Đội II",
+        "Context": "Xem như là giải khuây đi."
+      },
+      {
+        "Title": "Vào Đội III",
+        "Context": "Nên làm gì đây..."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Miêu Tả Nhân Vật",
+        "Context": "Trong truyền thống của Liyue, \"Thỉnh Tiên\" và \"Tiễn Tiên\" là hai việc quan trọng như nhau.\nNơi \"tiễn biệt\" chuyên nghiệp nhất khó ai qua được đó chính là \"Vãng Sinh Đường\" đã truyền 77 đời của Hu Gia. Nhưng đường chủ Hu Tao của Vãng Sinh Đường, chủ yếu tập trung vào chuyên môn \"tiễn biệt\" người thường.\nCòn về nghi thức tiễn biệt tiên nhân, thì giao cho \"một người bạn trong nghề\" - Zhongli xử lý.\nTiên nhân và Liyue đã cùng trải qua những năm tháng dài dằng dặc, hơn 3000 năm nay những người có thể thăng thiên chỉ đếm trên đầu ngón tay, điều này có nghĩa là tất cả những gì liên quan đến truyền thống để lại chỉ có thể tồn tại trên giấy mực mà thôi...Quãng thời gian thực sự quá dài, điều này không giống như một chuyện gì đó lúc nhỏ bạn đã từng tham gia một lần khi còn đang ngậm kẹo hồ lô, đến lúc về già lại có thể nằm trên ghế trúc tận mắt chứng kiến lần nữa.\nThế nhưng, cho dù là các lão học giả với cặp mắt khó tính nhất, luôn chìm đắm trong việc nghiên cứu những trang giấy cũ, cũng không thể tìm ra bất kỳ sai sót nào trong buổi lễ tiễn tiên mà Vãng Sinh Đường tổ chức.\nTrong buổi lễ không những quần áo phải đúng quy định, mà còn phải chọn thời gian, địa điểm, và đồ dùng cho buổi lễ. Ngay cả thời tiết, tổng thời gian của buổi lễ, số lượng người được phép xem lễ, tuổi tác, thân phận và chức vụ của người xem lễ... cho dù tất cả những điều trên đều được đặt trong phạm vi đo lường cũng không có điểm nào không phù hợp lễ tiết.\nNếu mọi người dùng cụm từ \"tinh thông kim cổ\" để miêu tả Zhongli, anh ấy sẽ chỉ cười bất lực, than thở rằng:\n\"Tôi chỉ là...trí nhớ rất tốt.\""
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 1",
+        "Context": "Ở Liyue, nếu một người đặc biệt chú ý đến tiểu tiết, có một tiêu chuẩn bắt buộc tuân theo đối với một số sự vật nào đó, thì có thể dùng một từ để hình dung: \"cầu kỳ\".\nThật ra mỗi người ít nhiều đều có sự cầu kỳ riêng. Ví dụ như không ăn cay, không ăn cá, đậu hủ nhất định phải có vị ngọt...\nNhưng Zhongli thì cầu kỳ với tất cả mọi thứ.\nCuộc sống của anh, chính là xem kịch thì phải chọn diễn viên nổi tiếng nhất, mua chim thì phải chọn loại họa mi đắt tiền nhất, thưởng thức món \"Trứng Minh Nguyệt\" chính thống thì phải chạy vào nhà bếp, tự mình hướng dẫn đầu bếp điều chỉnh tỷ lệ thịt cá và tôm nõn cho vào trứng.\nZhongli tinh thông mọi việc từ ăn mặc thường ngày, châu ngọc đồ gốm, mỹ tửu điểm tâm, các loại trà và hương liệu, hoa cỏ chim chóc, cho đến chuyện kinh doanh, chính trị, và quan hệ của 7 vùng đất, anh đều có thể bàn luận.\nNhưng ngày thường, anh ấy sẽ chỉ nói với bạn những kiến thức vô bổ, vì anh ấy muốn chia sẻ với bạn những điều thú vị này."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 2",
+        "Context": "Mua đồ thì phải trả giá.\nĐây là điều mà ở Liyue ai cũng biết, bất kể ông chủ khoác lác về hàng hóa của mình như thế nào, là dẫn chứng kinh điển hay là tư liệu lịch sử, thì giá cũng không thể không trả, thường thì tốt nhất là trả một nửa giá.\nNhưng khi Zhongli trả tiền (hay là gọi người trả tiền), không bao giờ nhìn giá. Chỉ cần là món đồ anh ấy ưng ý, ông chủ nói bao nhiêu, anh ấy trả bấy nhiêu, thỉnh thoảng còn trả giá cao hơn, mua luôn mà không mảy may suy nghĩ.\nNhưng mà không biết vì sao, Zhongli thường quên mang theo tiền.\nTiền ít thì có bạn bè ứng trước, tiền nhiều thì sẽ nghĩ cách kiếm cớ lấy hóa đơn xin hoàn tiền.\nTrong mắt những thương nhân ngoài mặt dạ thưa, trong lòng hớn hở kia, thì Zhongli dường như có điểm đặc trưng kỳ lạ: Anh ấy rõ ràng rất am hiểu giá trị và ý nghĩa của đồng tiền, cũng hiểu nỗi khổ nhân gian, nhưng anh ấy dường như không thể hiểu được \"cái nghèo\" cũng là một tình huống có thể xảy ra với bản thân mình.\nNói cách khác, anh ấy chỉ là hoàn toàn không thể tưởng tượng ra nổi bộ dạng của bản thân khi không có tiền.\nĐúng là cực phẩm, loại người này sao vẫn chưa chết đói."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 3",
+        "Context": "Zhongli không thể chết vì đói.\nTiền tài ít hay nhiều không phải là điều mà Zhongli quan tâm. Bảy quốc gia và thế giới mới là thứ mà anh dốc hết tâm sức.\nCòn sự giàu có... anh ấy vốn đã giàu sẵn rồi.\n\"Nham Vương Đế Quân\" cai trị Liyue, là Nham Thần trong bảy vị thần, Morax. Nguồn gốc của loại tiền tệ \"Mora\" lưu hành khắp đại lục Teyvat chính là lấy từ tên của anh.\nKhi màn đêm buông xuống, toàn bộ cảng Liyue náo nhiệt chìm vào giấc mộng, đôi khi anh sẽ đứng trên đỉnh núi cao nhìn xuống thành thị do chính tay anh gầy dựng nên.\nTrong lòng của người dân Liyue, \"Nham Vương Đế Quân\" chức trách nhiều vô kể.\nKhi anh sử dụng thần lực tạo dựng nên pháp luật ở Liyue, anh là \"Thần Khế Ước\".\nKhi anh đích thân đúc ra đồng Mora đầu tiên, tạo nền móng cho ngành thương mại cảng Liyue, các thương nhân tôn thờ anh là \"Thần Thương Nghiệp\".\nAnh trải qua những năm tháng dài đằng đẵng, là người lớn tuổi nhất trong bảy vị thần, các nhà lịch sử gọi anh là \"Thần Lịch Sử\".\nHàng nghìn năm trước, khi tổ tiên của người Liyue đến đây khai hoang đã dùng đá đánh vào nhau tạo thành lửa, dùng đất đá xây thành bếp. Những thứ ấy đều là ân điển của \"Nham\", khiến mọi người gọi Nham Thần là \"Thần Lửa\".\nNgười ngoại quốc thường gọi anh là \"Morax\" nhưng cư dân Liyue lại thích gọi anh là \"Nham Vương Gia\".\nTrong lòng của những người yêu kịch và những đứa trẻ, trong vô số chức trách mà Morax đảm nhiệm, thì \"Võ Thần\" đã đánh bại ngàn quân ma thần, gầy dựng và bảo vệ Liyue được xem là vai diễn thú vị nhất trên sân khấu.\nMón ăn vặt mà \"Nham Vương Gia\" phát hiện ra trong lúc lạc đường, biển hiệu mà \"Nham Vương Gia\" đã ngự bút, hoặc vở diễn nổi tiếng mà \"Nham Vương Gia\" từng nhiệt tình tham gia diễn xuất...Rất nhiều văn hóa phong tục của Liyue, sau khi đào sâu nghiên cứu mới biết rằng, đều là sự quan tâm chăm sóc của thần linh trong một giai đoạn nào đó. Người dân Liyue vô cùng tự hào với lịch sử được đồng hành cùng vị thần này."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 4",
+        "Context": "Là người sáng lập ra cảng Liyue, thứ mà Morax vô cùng coi trọng ở thành thị thương mại này chính là \"khế ước\".\nTừ việc đơn giản nhất là \"đổi tiền lấy vật\", hợp đồng được ký kết giữa các thương nhân, cho đến việc Morax đích thân lập nên nền luật pháp cổ vào thời mới xây thành, \"khế ước\" có mặt ở khắp mọi nơi.\nĐối với các thương nhân mà nói, \"khế ước\" cũng là quy tắc quan trọng nhất: Ngày giao hàng, mặt hàng, địa điểm...\nChỉ có chấp hành quy tắc nghiêm ngặt, mới có thể khiến cho các hoạt động thương mại có sức sống dồi dào, mà thương mại, cũng chính là nền tảng lập ra cảng Liyue.\nDo đó, không chỉ là tuân theo lời truyền dạy của thần Morax, mà quan trọng hơn là để luôn giữ được sức sống cho Liyue, nên \"Thất Tinh Liyue\" sẽ tuyệt đối không buông tha cho những kẻ vi phạm luật pháp.\nTrải qua nhiều đời trong cả ngàn năm lịch sử, \"Thất Tinh Liyue\" không ngừng lý giải và bổ sung cho các điều luật còn thiếu sót. Những lỗ hỏng chưa được phát hiện, thường bị các thương gia mặc định rằng \"pháp luật không cấm nghĩa là được làm\", từ đó trục lợi khá nhiều Mora, cho đến khi bị \"Thất Tinh Liyue\" phát hiện và tiến hành sửa chữa bổ sung luật lệ.\nTrong cuộc chiến nghiên cứu và bổ sung này, quyển sách giải nghĩa luật pháp chuyên dùng để thống kê giải thích \"điều khoản bổ sung\" của cảng Liyue hiện nay đã đạt tới con số hai trăm bảy mươi chín trang.\nMà người chịu trách nhiệm chỉnh sửa cuốn sách này chính là \"Thiên Quyền\" đương nhiệm, Ningguang - còn được người dân Liyue gọi là \"Thợ vá Liyue\" để hình dung việc sửa chữa pháp luật nhanh chóng cũng như tinh chuẩn của cô...\nThế nhưng, dù cho các điều luật của người phàm phức tạp khó nhớ như thế nào, thì trong lòng của \"Nham Vương Đế Quân\" chỉ có một điều khoản là vượt lên trên hết:\n\"Đã ký khế ước, kẻ nuốt lời phải chịu hình phạt của Nham.\""
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 5",
+        "Context": "Là người lớn tuổi nhất trong bảy vị thần, \"Nham Vương Đế Quân\" đã trải qua một quãng thời gian quá dài.\n\"Nham Vương Đế Quân vẫn còn nhớ, vào thời khói lửa chiến tranh của cuộc chiến Ma Thần vừa mới lụi tắt, bảy vị ma thần cuối cùng lần lượt ngồi vào ngôi vị \"thần\", kết thúc thời đại \"Chiến Tranh Ma Thần\". Tuy rằng họ có tính cách khác nhau và cũng cách xa nhau vạn dặm, nhưng đều gánh vác trên lưng chức trách thần thánh là \"chỉ dẫn loài người\".\nThời đại đổi thay, bảy vị thần ít nhiều cũng có biến đổi. Đến nay, trong bảy vị thần thuở ban đầu, chỉ còn lại hai vị là \"Nham Vương Đế Quân\", và vị Phong Thần với cuộc sống ung dung vui vẻ kia.\nVị thần lớn tuổi thứ hai trong bảy vị thần, đó là Phong Thần tự do hoạt bát, Barbatos.\nBarbatos hai nghìn năm trước lần đầu tiên đến Liyue, phản ứng đầu tiên của \"Nham Vương Đế Quân\" đó là: vị đồng liêu này ắt hẳn gặp khó khăn cần mình giúp đỡ. Vì vậy không đợi Barbatos từ trong gió bước xuống, Nham Thần đã chuẩn bị sẵn mọi thứ để đón chào vị thần nước láng giềng, chỉ chờ anh ta mở miệng sẽ cố gắng giúp đỡ hết sức.\nThế nhưng khi Phong Thần vừa đến đã mang một chai rượu đến trước mặt anh và nói.\n\"Đây là rượu của Mondstadt, anh có muốn uống thử không?\"\nChỉ vì để tặng một chai rượu mà bỏ cả chức trách, thật là hoang đường.\nẤy thế mà vị Phong Thần ấy vẫn nhiều lần đến thăm, ngao du khắp cảng Liyue, còn hỏi Nham Thần những câu hỏi kỳ lạ. Sự hiếu kỳ của Phong Thần cũng giống như chai rượu trong tay anh ấy hết rồi lại đầy.\nTừ đó về sau, bảy vị thần khi ấy thường xuyên hẹn gặp ở Liyue.\nCho đến ngày nay, Nham Vương Đế Quân vẫn hay nhớ về hương vị của những bữa rượu đó.\nSau đó, thế giới không ngừng biến đổi, những thứ anh từng thân thuộc cũng dần dần biến mất.\nBảy vị thần lần lượt được thay thế, bảy người bên bàn rượu năm xưa nay đã mất đi năm người.\nChức trách xa xưa \"chỉ dẫn loài người\" của bảy vị thần đã bắt đầu bị một số vị thần mới coi nhẹ như không.\nTrải qua hơn 3000 năm sương gió, ngay cả phiến đá cứng cỏi nhất cũng phải hao mòn.\nHơn nữa, gió cũng chẳng đến thăm anh lần nào nữa.\nMột ngày mưa dầm nọ, Đế Vương tản bộ ở cảng Liyue, bất chợt nghe được lời khen của một thương nhân dành cho thuộc hạ của mình:\n\"Anh đã hoàn thành tốt chức trách của mình rồi. Giờ hãy nghỉ ngơi đi.\"\n... \n\"Nham Vương Đế Quân\" đứng lặng trong dòng người hồi lâu.\n\"Chức trách của mình...đã hoàn thành hay chưa?\" \nVị thần tự hỏi."
+      },
+      {
+        "Title": "Thủy Sản",
+        "Context": "Trong cuộc chiến tranh Ma Thần, đại lục Teyvat chìm trong biển lửa. Chiến tranh không chỉ xảy ra giữa các ma thần, còn có vô số tà vật mưu đồ nhân lúc loạn lạc mở rộng lãnh địa.\nTrong đó có một loại quái vật khiến Nham Ma Thần khi ấy chưa trở thành một trong bảy vị thần cảm thấy vô cùng phiền nhiễu.\nNhững quái vật này ngụ dưới biển sâu, có lớp da vảy mềm mại, uyển chuyển khéo léo, bị cắt đứt thân thể vẫn có thể sống sót, còn hay phun ra dịch thể dính nhớp...\nCác đặc tính trên cũng đã đủ buồn nôn rồi, nhưng vẫn không phải trọng điểm.\nTrọng điểm là: Chúng rất \"nhỏ\", hơn nữa hình như xuất hiện khắp nơi.\nBàn ghế, khe cửa, rèm chiếu, áo quần, thậm chí cốc trà, bút sách.\nChỉ cần mọi người giơ tay ra, là đã có khả năng sờ thấy thứ lành lạnh, dính dáp, ươn ướt. Những quái vật này sẽ bò lên mu bàn tay, nơi chúng bò qua để lại một vệt bóng loáng...\nNhận được lời cầu cứu từ dân chúng Liyue, Morax đồng ý với họ sẽ tiêu diệt quái vật này. Nhưng đối với quái vật ký sinh trong xã hội loài người, Morax tuyệt đối không thể phóng vô số ngọn thương đá như trên chiến trường, ngay cả mặt đất cũng sẽ vỡ nát...\nNhưng Morax dù sao cũng là Thần Khế Ước của hậu thế. Lời thỉnh cầu mà anh đồng ý, bất luận ra sao cũng phải làm bằng được.\nTrách nhiệm đè nặng khiến anh phải dùng đủ các loại Nham Lao, lần lượt bắt hết đám quái vật này từ vô số những căn nhà...\nKhi kết thúc cuộc chiến diệt quái dài đằng đẵng, Morax lần đầu tiên hiểu được hàm ý của câu \"như trút được gánh nặng\".\nViệc diệt trừ phiền phức cực độ và sự nhớp nháp buồn nôn của quái vật thuỷ sinh đã để lại ấn tượng sâu sắc trong anh.\nZhongli xuất hiện với vẻ ngoài của người phàm, dù là sống trong thành phố cảng, cũng luôn tránh xa các loại thuỷ sản còn sống và loi nhoi.\nNhưng món đậu hũ hải sản không nhìn ra được nguyên liệu làm từ cái gì thì vẫn có thể ăn được."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Sau khi công việc chuẩn bị cho \"Điển Lễ Tiễn Tiên\" do Zhongli chủ trì ở Liyue đã hoàn tất, Signora - Quan chấp hành của Fatui xuất hiện trước mặt anh.\nDựa theo Khế Ước đã ký kết, cô đến để lấy đi Gnosis của Nham Thần Morax.\nTrước mặt Nhà Lữ Hành và hai vị quan chấp hành Fatui, Zhongli thẳng thắn nói ra chuyện giao dịch của mình với Băng Thần.\nTheo lời anh, đây là \"Khế ước kết thúc tất cả các khế ước\" được ký kết vào thời khắc cuối cùng.\nNhưng bất luận nhìn thế nào, cái giá mà Nham Thần phải bỏ ra trong cuộc giao dịch này quả thực quá nhiều, ngay cả thần lực bảo vệ Liyue cũng sắp biến mất...\nDù là giữa người với người, quy tắc thép trong giao dịch chính là \"trao đổi ngang giá\".\nĐối với vị Nham Thần đã ký Khế Ước cả trăm ngàn năm nay, Khế Ước quan trọng như vậy chắc chắn là có lợi thì anh mới cân nhắc.\nGiờ đây, Nham Thần đã dùng Gnosis của chính mình để làm cái giá cho giao dịch.\nBăng Thần rốt cuộc đã đặt cược thứ giá trị đến thế nào mới có thể khiến cán cân của cuộc giao dịch trở nên cân bằng chứ?"
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 203000,
+      "Name": "Cuộc Sống Nhân Gian",
+      "Description": "Phong cách của Zhongli. Bộ thường phục mà ngài Zhongli - vị khách của \"Vãng Sinh Đường\" gần đây khá yêu thích.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104174,
+    113009,
+    100058,
+    112004,
+    104318,
+    113013
+  ],
+  "NameCard": {
+    "Name": "Zhongli - Thiên Tinh",
+    "Description": "Hoa văn danh thiếp.\nNhững thiên thạch từ trời cao, hiện rõ vận mệnh tăm tối.",
+    "Icon": "UI_NameCardIcon_Zhongli",
+    "PicturePrefix": "UI_NameCardPic_Zhongli"
+  },
+  "TraceEffect": {
+    "Id": 215006,
+    "Name": "Vết Tích - Du Ngoạn Trần Thế",
+    "Description": "Vết Tích Tưởng Tượng của Zhongli. \"Nương theo đồi núi ngắm cảnh xuân, dạo chơi vốn chỉ là quẩn quanh.\"",
+    "Icon": "UI_TraceEffectIcon_Zhongli"
+  }
+}

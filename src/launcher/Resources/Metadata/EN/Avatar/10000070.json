@@ -276,6 +276,7 @@
         "Id": 10701,
         "Name": "Dance of Samser",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 consecutive sword strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to perform a twirling slash.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_01"
       },
       {
@@ -553,6 +554,7 @@
         "Id": 10702,
         "Name": "Dance of Haftkarsvar",
         "Description": "Enters the Pirouette state, dealing <color=#80C0FFFF>Hydro DMG</color> to nearby opponents based on Nilou's Max HP.\nWhile she is in the Pirouette state, Nilou's Normal Attacks and Elemental Skill will cause her to enter the Sword Dance and Whirling Steps stances respectively, causing DMG she deals to be converted to <color=#80C0FFFF>Hydro DMG</color> that cannot be overridden and that is considered Elemental Skill DMG.\n\nIn these stances, Nilou's third dance step will end Pirouette, and has the following effects based on the type of said dance step:\n·Sword Dance: unleashes a Luminous Illusion that deals <color=#80C0FFFF>Hydro DMG</color> to opponents it touches and grants Nilou the Lunar Prayer effect. This effect converts Nilou's Normal Attacks into Sword Dance techniques, and her final hit will unleash a Luminous Illusion.\n·Whirling Steps: Nilou unleashes a Whirling Water Wheel that deals <color=#80C0FFFF>AoE Hydro DMG</color> and creates a Tranquility Aura that follows your active character around and applies <color=#80C0FFFF>Wet</color> to opponents within its AoE.\n\nNilou is unable to perform Charged Attacks when under the effect of Pirouette or Lunar Prayer. These effects will be removed once she leaves the field.\n\n<i>\"Daintily her toes touch the water's face, and the light that ripples forth equals even the seven heavens.\"</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Nilou_01"
       }
     ],
@@ -722,6 +724,7 @@
       "Id": 10705,
       "Name": "Dance of Abzendegi: Distant Dreams, Listening Spring",
       "Description": "Begins the dance of faraway dreams and springs that hear, causing a Lotus of Distant Waters to bloom, dealing <color=#80C0FFFF>AoE Hydro DMG</color> based on Nilou's Max HP and applying the Lingering Aeon effect to all opponents hit.\nAfter an interval, opponents affected by Lingering Aeon will take <color=#80C0FFFF>Hydro DMG</color>.\n\n<i>\"We have never witnessed that distant dream, but this dance can bring it to life.\"</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Nilou_01"
     },
     "Inherents": [
@@ -745,6 +748,7 @@
         "Id": 702101,
         "Name": "Court of Dancing Petals",
         "Description": "When all characters in the party are all <color=#99FF88FF>Dendro</color> or <color=#80C0FFFF>Hydro</color>, and there are at least one Dendro character and one Hydro character:\nThe completion of the third dance step of Nilou's <color=#FFD780FF>Dance of Haftkarsvar</color> will grant all nearby characters the Golden Chalice's Bounty for 30s.\nCharacters under the effect of Golden Chalice's Bounty will increase the Elemental Mastery of all nearby characters by 100 for 10s whenever they are hit by <color=#99FF88FF>Dendro attacks</color>. Also, triggering the Bloom or Lunar-Bloom reaction will create Bountiful Cores instead of Dendro Cores.\nSuch Cores will burst very quickly after being created, and they have larger AoEs.\nBountiful Cores cannot trigger Hyperbloom or Burgeon, and they share an upper numerical limit with Dendro Cores. Bountiful Core DMG is considered DMG dealt by Dendro Cores produced by Bloom.\nShould the party not meet the conditions for this Ascension Talent, any existing Golden Chalice's Bounty effects will be canceled.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Nilou_05"
       },
       {
@@ -767,6 +771,7 @@
         "Id": 702201,
         "Name": "Dreamy Dance of Aeons",
         "Description": "Every 1,000 points of Nilou's Max HP above 30,000 will cause the DMG dealt by Bountiful Cores created by characters affected by Golden Chalice's Bounty to increase by 9%.\nThe maximum increase in Bountiful Core DMG that can be achieved this way is 400%.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Nilou_06"
       },
       {
@@ -785,6 +790,7 @@
         "Id": 702301,
         "Name": "White Jade Lotus",
         "Description": "When Perfect Cooking is achieved on Food with Adventure-related effects, there is a 12% chance to obtain double the product.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Yunjin_07"
       }
     ],

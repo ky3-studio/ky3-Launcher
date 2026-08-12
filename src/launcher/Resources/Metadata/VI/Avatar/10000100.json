@@ -1,0 +1,1131 @@
+{
+  "Id": 10000100,
+  "PromoteId": 100,
+  "Sort": 85,
+  "Body": 5,
+  "Icon": "UI_AvatarIcon_Kachina",
+  "SideIcon": "UI_AvatarIcon_Side_Kachina",
+  "Name": "Kachina",
+  "Description": "Chiến binh trẻ tuổi của Nanatzcayan, được ban cho Tên Cổ \"Uthabiti\". Thiếu nữ hiền lành và kiên trì, không ngừng trưởng thành từ những lần thất bại.",
+  "BeginTime": "2024-08-27T00:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 13,
+  "BaseValue": {
+    "HpBase": 989.2932,
+    "AttackBase": 18.16416,
+    "DefenseBase": 66.438225
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 10031,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Lần 1|{param1:F1P}",
+            "Sát Thương Lần 2|{param2:F1P}+{param3:F1P}",
+            "Sát Thương Lần 3|{param4:F1P}",
+            "Sát Thương Lần 4|{param5:F1P}",
+            "Sát Thương Trọng Kích|{param6:F1P}",
+            "Thể lực Trọng Kích tiêu hao|{param7:F1} điểm",
+            "Sát Thương Khi Đáp|{param8:F1P}",
+            "Sát Thương Khi Đáp Từ Độ Cao Thấp/Cao|{param9:P}/{param10:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1003101,
+              "Level": 1,
+              "Parameters": [
+                0.493984,
+                0.27569,
+                0.306323,
+                0.704271,
+                0.774361,
+                1.1266,
+                25,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 1003102,
+              "Level": 2,
+              "Parameters": [
+                0.534192,
+                0.29813,
+                0.331257,
+                0.761596,
+                0.837391,
+                1.2183,
+                25,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 1003103,
+              "Level": 3,
+              "Parameters": [
+                0.5744,
+                0.32057,
+                0.35619,
+                0.81892,
+                0.90042,
+                1.31,
+                25,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 1003104,
+              "Level": 4,
+              "Parameters": [
+                0.63184,
+                0.352627,
+                0.391809,
+                0.900812,
+                0.990462,
+                1.441,
+                25,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 1003105,
+              "Level": 5,
+              "Parameters": [
+                0.672048,
+                0.375067,
+                0.416742,
+                0.958136,
+                1.053491,
+                1.5327,
+                25,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 1003106,
+              "Level": 6,
+              "Parameters": [
+                0.718,
+                0.400713,
+                0.445238,
+                1.02365,
+                1.125525,
+                1.6375,
+                25,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 1003107,
+              "Level": 7,
+              "Parameters": [
+                0.781184,
+                0.435975,
+                0.484418,
+                1.113731,
+                1.224571,
+                1.7816,
+                25,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 1003108,
+              "Level": 8,
+              "Parameters": [
+                0.844368,
+                0.471238,
+                0.523599,
+                1.203812,
+                1.323617,
+                1.9257,
+                25,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 1003109,
+              "Level": 9,
+              "Parameters": [
+                0.907552,
+                0.506501,
+                0.56278,
+                1.293894,
+                1.422664,
+                2.0698,
+                25,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 1003110,
+              "Level": 10,
+              "Parameters": [
+                0.97648,
+                0.544969,
+                0.605523,
+                1.392164,
+                1.530714,
+                2.227,
+                25,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 1003111,
+              "Level": 11,
+              "Parameters": [
+                1.045408,
+                0.583437,
+                0.648266,
+                1.490434,
+                1.638764,
+                2.3842,
+                25,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 1003112,
+              "Level": 12,
+              "Parameters": [
+                1.114336,
+                0.621906,
+                0.691009,
+                1.588705,
+                1.746815,
+                2.5414,
+                25,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 1003113,
+              "Level": 13,
+              "Parameters": [
+                1.183264,
+                0.660374,
+                0.733751,
+                1.686975,
+                1.854865,
+                2.6986,
+                25,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 1003114,
+              "Level": 14,
+              "Parameters": [
+                1.252192,
+                0.698843,
+                0.776494,
+                1.785246,
+                1.962916,
+                2.8558,
+                25,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 1003115,
+              "Level": 15,
+              "Parameters": [
+                1.32112,
+                0.737311,
+                0.819237,
+                1.883516,
+                2.070966,
+                3.013,
+                25,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11001,
+        "Name": "Vết Cắn Của Núi",
+        "Description": "<color=#FFD780FF>Tấn Công Thường</color>\nThực hiện tối đa 4 lần đánh liên tiếp.\n\n<color=#FFD780FF>Trọng Kích</color>\nTiêu hao thể lực nhất định, xông về phía trước, gây sát thương cho địch trên đường đi.\n\n<color=#FFD780FF>Tấn Công Khi Đáp</color>\nĐáp xuống đất từ trên không, tấn công kẻ địch trên đường và gây sát thương phạm vi khi chạm đất.",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_A_03"
+      },
+      {
+        "GroupId": 10032,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Lái Mũi Khoan Quay Tròn|{param1:F1P} Phòng Ngự",
+            "Sát Thương Độc Lập Mũi Khoan Quay Tròn|{param2:F1P} Phòng Ngự",
+            "Giới Hạn Điểm Dạ Hồn|{param3:F1}",
+            "CD|{param4:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1003201,
+              "Level": 1,
+              "Parameters": [
+                0.8776,
+                0.6376,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003202,
+              "Level": 2,
+              "Parameters": [
+                0.94342,
+                0.68542,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003203,
+              "Level": 3,
+              "Parameters": [
+                1.00924,
+                0.73324,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003204,
+              "Level": 4,
+              "Parameters": [
+                1.097,
+                0.797,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003205,
+              "Level": 5,
+              "Parameters": [
+                1.16282,
+                0.84482,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003206,
+              "Level": 6,
+              "Parameters": [
+                1.22864,
+                0.89264,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003207,
+              "Level": 7,
+              "Parameters": [
+                1.3164,
+                0.9564,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003208,
+              "Level": 8,
+              "Parameters": [
+                1.40416,
+                1.02016,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003209,
+              "Level": 9,
+              "Parameters": [
+                1.49192,
+                1.08392,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003210,
+              "Level": 10,
+              "Parameters": [
+                1.57968,
+                1.14768,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003211,
+              "Level": 11,
+              "Parameters": [
+                1.66744,
+                1.21144,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003212,
+              "Level": 12,
+              "Parameters": [
+                1.7552,
+                1.2752,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003213,
+              "Level": 13,
+              "Parameters": [
+                1.8649,
+                1.3549,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003214,
+              "Level": 14,
+              "Parameters": [
+                1.9746,
+                1.4346,
+                60,
+                20
+              ]
+            },
+            {
+              "Id": 1003215,
+              "Level": 15,
+              "Parameters": [
+                2.0843,
+                1.5143,
+                60,
+                20
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11002,
+        "Name": "Mũi Khoan Quay Tròn, Xuất Kích!",
+        "Description": "Chiến đấu cùng Mũi Khoan Quay Tròn đáng tin cậy!\nTriệu hồi \"Mũi Khoan Quay Tròn\"; Khi nhấn giữ thi triển, Kachina sẽ triệu hồi và lái Mũi Khoan Quay Tròn.\nSau khi thi triển, Kachina sẽ nhận 60 điểm Dạ Hồn và tiến vào trạng thái Dạ Hồn Chúc Phúc.\n\n<color=#FFD780FF>Dạ Hồn Chúc Phúc - Kachina</color>\nCác hành động của Mũi Khoan Quay Tròn sẽ tiêu hao điểm Dạ Hồn.\nKhi tiêu hao hết điểm Dạ Hồn, Kachina sẽ kết thúc trạng thái Dạ Hồn Chúc Phúc của mình.\n\n<color=#FFD780FF>Mũi Khoan Quay Tròn</color>\nCó thể tồn tại độc lập hoặc do Kachina lái. Khi Mũi Khoan Quay Tròn tồn tại, Kỹ Năng Nguyên Tố \"Mũi Khoan Quay Tròn, Xuất Kích!\" của Kachina sẽ đổi thành lái hoặc thoát Mũi Khoan Quay Tròn.\n·Khi Mũi Khoan Quay Tròn tồn tại độc lập, sẽ đập xuống đất theo từng đợt, gây <color=#FFE699FF>Sát Thương Phạm Vi Nguyên Tố Nham</color> mang thuộc tính Dạ Hồn dựa trên Phòng Ngự của Kachina;\n·Khi Kachina lái Mũi Khoan Quay Tròn, sẽ có thể điều khiển nó để nhanh chóng di chuyển, leo trèo, và dùng Tấn Công Thường để đập xuống đất, gây <color=#FFE699FF>Sát Thương Phạm Vi Nguyên Tố Nham</color> mang thuộc tính Dạ Hồn dựa trên Phòng Ngự của Kachina.\n\nMũi Khoan Quay Tròn sẽ biến mất khi Dạ Hồn Chúc Phúc của Kachina kết thúc, và nó được xem là tạo vật nguyên tố Nham; Cùng lúc chỉ có thể tồn tại một Mũi Khoan Quay Tròn của bản thân Kachina.\n\n<i>Mũi Khoan Quay Tròn trông giống như con quay thôi, nhưng thực chất nó là mũi khoan có thể phá vỡ những tảng đá cứng.</i>",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_S_Kachina_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 10039,
+      "Proud": {
+        "Descriptions": [
+          "Sát Thương Kỹ Năng|{param1:F1P} Phòng Ngự",
+          "Thời Gian Duy Trì Khu Vực|{param2:F1}s",
+          "CD|{param3:F1}s",
+          "Năng Lượng Nguyên Tố|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1003901,
+            "Level": 1,
+            "Parameters": [
+              3.805672,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003902,
+            "Level": 2,
+            "Parameters": [
+              4.1366,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003903,
+            "Level": 3,
+            "Parameters": [
+              4.4252,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003904,
+            "Level": 4,
+            "Parameters": [
+              4.81,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003905,
+            "Level": 5,
+            "Parameters": [
+              5.0986,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003906,
+            "Level": 6,
+            "Parameters": [
+              5.3872,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003907,
+            "Level": 7,
+            "Parameters": [
+              5.772,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003908,
+            "Level": 8,
+            "Parameters": [
+              6.1568,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003909,
+            "Level": 9,
+            "Parameters": [
+              6.5416,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003910,
+            "Level": 10,
+            "Parameters": [
+              6.9264,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003911,
+            "Level": 11,
+            "Parameters": [
+              7.3112,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003912,
+            "Level": 12,
+            "Parameters": [
+              7.696,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003913,
+            "Level": 13,
+            "Parameters": [
+              8.177,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003914,
+            "Level": 14,
+            "Parameters": [
+              8.658,
+              12,
+              18,
+              70
+            ]
+          },
+          {
+            "Id": 1003915,
+            "Level": 15,
+            "Parameters": [
+              9.139,
+              12,
+              18,
+              70
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11005,
+      "Name": "Đến Lúc Nghiêm Túc Rồi!",
+      "Description": "Đập xuống mặt đất, gây <color=#FFE699FF>Sát Thương Phạm Vi Nguyên Tố Nham</color> dựa trên Phòng Ngự của Kachina, đồng thời tạo ra Khu Vực Khoan Đục.\nKhu Vực Khoan Đục sẽ tăng phạm vi tấn công của Mũi Khoan Quay Tròn và tăng tốc độ di chuyển khi lái.\n\nKhi thi triển, nếu trong trận có tồn tại Mũi Khoan Quay Tròn của bản thân Kachina thì sẽ triệu hồi nó đến bên cạnh.\n\n<i>Giống như người dễ hồi hộp, khi lên sân khấu biểu diễn sẽ tưởng tượng khán giả là những con rối, Kachina cũng tưởng tượng đối thủ của mình là những viên quặng đá quý đẹp mắt, có thể mang về nhà để sưu tầm.</i>",
+      "SpecialEnergyType": 0,
+      "Icon": "Skill_E_Kachina_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 10021,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1002101,
+              "Level": 1,
+              "Parameters": [
+                0.2,
+                12
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1002101,
+        "Name": "Tiếng Vang Của Núi",
+        "Description": "Sau khi nhân vật trong đội ở gần kích hoạt \"Dạ Hồn Bùng Nổ\", <color=#FFE699FF>Buff Sát Thương Nguyên Tố Nham</color> của Kachina tăng 20% trong 12s.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Kachina_05"
+      },
+      {
+        "GroupId": 10022,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1002201,
+              "Level": 1,
+              "Parameters": [
+                0.2
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1002201,
+        "Name": "Sức Nặng Đá Tảng",
+        "Description": "Tăng sát thương gây ra của <color=#FFD780FF>Mũi Khoan Quay Tròn</color>, mức tăng tương ứng 20% Phòng Ngự của Kachina.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Kachina_06"
+      },
+      {
+        "GroupId": 10023,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1002301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1002301,
+        "Name": "Món Quà Dạ Vực - Lõi Đoàn Kết",
+        "Description": "Sau khi dùng hết điểm Dạ Hồn, Kachina sẽ chuyển sang tiêu hao Phlogiston để duy trì trạng thái Dạ Hồn Chúc Phúc.\nKhi ở trong khu vực có cơ chế Phlogiston của Natlan, có thể tiến hành Dạ Hồn Chuyển Hóa - Kachina. Nhân vật trong trận khi xung kích, leo trèo, trong trạng thái di chuyển đặc biệt của Thiên Phú chỉ định hoặc đang ở độ cao nhất định trên không, đổi sang Kachina ra trận sẽ kích hoạt: Kachina sẽ vào trạng thái Dạ Hồn Chúc Phúc, lái <color=#FFD780FF>Mũi Khoan Quay Tròn</color> xuất trận, đồng thời nhận 30 điểm Dạ Hồn. Đội của bản thân mỗi 10s chỉ được kích hoạt một lần Dạ Hồn Chuyển Hóa.\n\nNgoài ra, khi ở trong khu vực Natlan, thể lực tiêu hao khi Kachina lái <color=#FFD780FF>Mũi Khoan Quay Tròn</color> để leo trèo sẽ giảm 90%.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Kachina_07"
+      },
+      {
+        "GroupId": 10025,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1002501,
+              "Level": 1,
+              "Parameters": [
+                20
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1002501,
+        "Name": "Chúc Phúc Tinh Thạch Lửa",
+        "Description": "Trong khu vực có cơ chế Phlogiston tại Natlan, tương tác với một số vật thu thập có thể hồi 20 điểm thể lực. Ngoài ra, hiển thị vị trí <color=#FFD780FF>đặc sản khu vực Natlan</color> trên bản đồ nhỏ.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Kachina_08"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1001,
+        "Name": "Mảnh Tinh Thạch Cũng Là Đá Quý",
+        "Description": "Kachina khi lái và thoát <color=#FFD780FF>Mũi Khoan Quay Tròn</color>, sẽ thu thập mảnh tinh thể sinh ra từ phản ứng Kết Tinh ở xung quanh.\nNgoài ra, khi nhân vật trong đội nhận mảnh tinh thể hoặc kích hoạt phản ứng Nguyệt-Kết Tinh, sẽ hồi phục 3 điểm Năng Lượng Nguyên Tố cho Kachina. Mỗi 5s tối đa hồi phục một lần Năng Lượng Nguyên Tố bằng cách này.",
+        "Icon": "UI_Talent_S_Kachina_01"
+      },
+      {
+        "Id": 1002,
+        "Name": "Không Thể Thiếu... Mũi Khoan Quay Tròn",
+        "Description": "Khi Kachina thi triển <color=#FFD780FF>Đến Lúc Nghiêm Túc Rồi!</color>, sẽ hồi phục 20 điểm Dạ Hồn; Nếu khi thi triển không có <color=#FFD780FF>Mũi Khoan Quay Tròn</color> của bản thân Kachina trong trận thì sẽ vào trạng thái Dạ Hồn Chúc Phúc và triệu hồi Mũi Khoan Quay Tròn.",
+        "Icon": "UI_Talent_S_Kachina_02"
+      },
+      {
+        "Id": 1003,
+        "Name": "Bộ Ổn Định Cải Tiến",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Mũi Khoan Quay Tròn, Xuất Kích!</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Kachina_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1004,
+        "Name": "Địch Càng Nhiều, Càng Cẩn Thận",
+        "Description": "Trong Khu Vực Khoan Đục của <color=#FFD780FF>Đến Lúc Nghiêm Túc Rồi!</color>, nếu số lượng kẻ địch trong đó là 1/2/3/4 hoặc hơn thì Phòng Ngự của nhân vật trong đội đang ra trận ở khu vực đó tăng 8%/12%/16%/20%.",
+        "Icon": "UI_Talent_S_Kachina_03"
+      },
+      {
+        "Id": 1005,
+        "Name": "Bộ Sưu Tập Cho Đến Hiện Tại",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Đến Lúc Nghiêm Túc Rồi!</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Kachina_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1006,
+        "Name": "Lần Này, Nhất Định Phải Thắng",
+        "Description": "Khi khiên của nhân vật trong đội ra trận bị thay thế hoặc bị phá hủy vì bất kỳ nguyên nhân nào, Kachina sẽ gây <color=#FFE699FF>Sát Thương Phạm Vi Nguyên Tố Nham</color> bằng 200% Phòng Ngự của mình. Hiệu quả này mỗi 5s tối đa kích hoạt một lần.",
+        "Icon": "UI_Talent_S_Kachina_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Khoáng Thạch Ánh Vàng",
+    "Detail": "Chiến binh trẻ tuổi của Nanatzcayan, được ban cho Tên Cổ \"Uthabiti\". Thiếu nữ hiền lành và kiên trì, không ngừng trưởng thành từ những lần thất bại.",
+    "Association": 9,
+    "Native": "Nanatzcayan",
+    "BirthMonth": 4,
+    "BirthDay": 22,
+    "VisionBefore": "Nham",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Cung Thử Thố",
+    "CvChinese": "静宸",
+    "CvJapanese": "久保ユリカ",
+    "CvEnglish": "Kristen McGuire",
+    "CvKorean": "Son Sun-young",
+    "CookBonus": {
+      "OriginItemId": 108737,
+      "ItemId": 108747,
+      "InputList": [
+        101243,
+        100064,
+        110009
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Lần đầu gặp mặt...",
+        "Context": "#Xin chào, em là Kachina của bộ tộc Con Của Tiếng Vang. Em thích Hạt Ngũ Cốc, muốn trở nên mạnh mẽ hơn, không giỏi đánh nhau. A... Không phải là lúc nói những chuyện này sao? Vậy, vậy... tiếp theo {F#chị}{M#anh} muốn đi dạo ở đâu? Em khá quen thuộc khu này, cứ để em dẫn đường cho."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Đam Mê Sắp Xếp",
+        "Context": "A... Em vừa phát hiện một viên gạch không được xếp gọn gàng. Phải làm sao đây? Bây giờ cảm thấy như có một con Saurian nhỏ đang cào cấu bên trong lồng ngực em vậy."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Sẽ Làm Được",
+        "Context": "Mình làm được, mình không làm được, mình làm được, mình... khụ, không sao đâu, mình sẽ làm được, nhất định không thành vấn đề... đúng không?"
+      },
+      {
+        "Title": "Nói chuyện phiếm - Vật Sưu Tầm",
+        "Context": "#Nếu {F#chị}{M#anh} thấy chán thì có muốn xem thử vật sưu tầm trong túi của em không? Ưng ý món nào thì cứ lấy đi cũng được."
+      },
+      {
+        "Title": "Khi trời mưa...",
+        "Context": "Nước mưa sẽ khiến đất mềm đi, cho nên đào khoáng vào ngày mưa sẽ phải cẩn thận hơn bình thường nhiều nhé."
+      },
+      {
+        "Title": "Khi có sấm sét...",
+        "Context": "Áaaa! À ừm... Em, em không phải đang sợ, chỉ là bị giật mình thôi."
+      },
+      {
+        "Title": "Khi tuyết rơi...",
+        "Context": "#Chúng ta cùng lộn mèo trên tuyết đi, hihi. Hãy yên tâm, em sẽ không chui vào trong tuyết rồi đột nhiên xuất hiện hù {F#chị}{M#anh} như Ayo đâu."
+      },
+      {
+        "Title": "Ánh nắng thật chan hòa...",
+        "Context": "#{F#Chị}{M#Anh} mau tới xem viên đá quý này đi! Khi ánh mặt trời chiếu vào, bên trong nó như ẩn chứa cầu vồng vậy."
+      },
+      {
+        "Title": "Khi trong sa mạc...",
+        "Context": "#Dưới đây liệu có ẩn chứa khoáng thạch lấp lánh không nhỉ? {F#Chị}{M#Anh} có muốn đào thử xem không?"
+      },
+      {
+        "Title": "Chào buổi sáng...",
+        "Context": "Chào buổi sáng, em đã sắp xếp xong túi rồi, chúng ta có thể xuất phát bất cứ lúc nào."
+      },
+      {
+        "Title": "Chào buổi trưa...",
+        "Context": "#Em không buồn ngủ, nhưng nếu {F#chị}{M#anh} muốn ngủ trưa một lúc thì em có thể canh chừng giúp. Tuy em có nhiều chuyện không được giỏi, nhưng mà... tai của em vẫn khá nhạy. Dù ở xa có chút động tĩnh nhỏ nào thì em cũng sẽ cảm nhận được."
+      },
+      {
+        "Title": "Chào buổi tối...",
+        "Context": "#Chị Mualani mời em tối nay cùng đến hang động để thử lòng can đảm, em, em căng thẳng quá, phải làm sao đây? Em không muốn từ chối, nên... nên đã gật đầu đồng ý mất rồi... Dù, dù xảy ra chuyện gì, thì em cũng nên cùng đối diện với chị ấy. Hả? {F#Chị}{M#Anh} cũng đi cùng sao? Thật, thật tốt quá! Phù..."
+      },
+      {
+        "Title": "Chúc ngủ ngon...",
+        "Context": "#Hôm nay sao lại làm hỏng việc rồi, huhuhu... Phải làm sao đây, rõ ràng em không muốn khóc, nhưng nước mắt hoàn toàn không dừng lại được, huhu... Ấy! Vừa, vừa nãy chúng ta không phải đã chúc nhau ngủ ngon và chuẩn bị đi ngủ rồi sao? Nhưng em vẫn cảm ơn {F#chị}{M#anh} vì đã an ủi em..."
+      },
+      {
+        "Title": "Về bản thân Kachina - Mũi Khoan Quay Tròn",
+        "Context": "Tên này là em và Ayo cùng đặt đó. Em nghĩ ra nửa vế trước, rồi dựa theo động tác của Ayo để đặt nửa phần sau. Em thường hay lái nó để thi chạy cùng Ayo, cả hai đều có lúc thắng lúc thua."
+      },
+      {
+        "Title": "Về bản thân Kachina - Cái Chết",
+        "Context": "Có thể chết trong Trận Chiến Người Gác Đêm, là một niềm vinh dự đối với chiến sĩ Natlan. Thân là một thành viên trong đó thì em cũng không ngoại lệ... Khi đó em nói với bản thân như vậy, nhưng trong lòng lại sợ hãi vô cùng... Mọi người mạo hiểm như vậy để đưa em từ Vương Quốc Dạ Thần trở về, em thật sự rất cảm kích! Huhu, cảm ơn mọi người..."
+      },
+      {
+        "Title": "Về chúng ta - Truyền Thuyết",
+        "Context": "#Ở Natlan lưu truyền rất nhiều truyền thuyết anh hùng, trong đó em thích nhất là sự tích của ngài Traore! Không ngờ ngài ấy lại dùng thân xác bằng máu thịt để phong ấn Vực Sâu dưới lòng đất, đúng là rất lợi hại! Đúng rồi, {F#chị}{M#anh} từng đến nhiều quốc gia như vậy, chắc chắn cũng biết rất nhiều truyền thuyết nhỉ? Em thật sự rất tò mò đó... Khi nào rảnh rỗi có thể kể cho em nghe không?"
+      },
+      {
+        "Title": "Về chúng ta - Món Quà Nhỏ",
+        "Context": "#Hãy chọn một món mà {F#chị}{M#anh} thích nhé! Xem như là minh chứng cho tình bạn của chúng ta. Khoáng thạch đẹp nhất, lấp lánh nhất mà em thu thập được đều ở đây cả rồi. Nếu {F#chị}{M#anh} đồng ý chọn một viên thì em sẽ rất vui đó!"
+      },
+      {
+        "Title": "Về Vision...",
+        "Context": "Lần đầu khi em nhìn thấy viên Vision lấp lánh này, em còn tưởng mình bị hoa mắt đó. Nó lấp lánh hơn bất kỳ viên đá nào mà em từng thấy. Tuy bây giờ so với những vị anh hùng trong truyền thuyết thì em vẫn còn kém xa, nhưng nếu có một ngày, câu chuyện của em cũng truyền cảm hứng cho người khác, dù chỉ là một người thôi đi chăng nữa, thì đó cũng sẽ trở thành niềm hạnh phúc lớn nhất của em."
+      },
+      {
+        "Title": "Có gì muốn chia sẻ không...",
+        "Context": "Ayo là người bạn quan trọng nhất của em đó. Đừng nhìn dáng vẻ ngoan ngoãn bây giờ của Ayo, khi bé hơn một chút thì cách thể hiện sự yêu thích của Ayo là dùng đầu để đụng người khác đấy. Sức của Ayo mạnh lắm, có khi cả em cũng bị đụng cho ngã. Nhưng mà cũng không còn cách nào khác, dù sao thì loài Tepetlisaur cũng rất thân thiện với con người mà. Ai da, đừng đụng nữa, được rồi, không nói xấu Ayo nữa."
+      },
+      {
+        "Title": "Những kiến thức thú vị...",
+        "Context": "Hình dạng của Quả Spinel giống như một viên đá quý vậy. Nếu thời hạn sử dụng của nó cũng lâu như đá quý thì tốt biết mấy..."
+      },
+      {
+        "Title": "Về Mualani...",
+        "Context": "#Chị Mualani là người bạn tốt đầu tiên của em. Trước khi gặp chị ấy, em cũng không biết trên thế giới này lại có nhiều người tốt và nhiều chuyện thú vị đến như vậy. Nhìn xem, đây là ảnh chụp chung của em và chị ấy. Chị ấy nói là phải cùng nhảy lên trong lúc chụp chung... {F#Chị}{M#Anh} thấy động tác của em hơi cứng sao? Hihi... Bị phát hiện rồi... Khi đó phía sau ống kính có nhiều người nhìn lắm, nên khiến em hơi căng thẳng..."
+      },
+      {
+        "Title": "Về Kinich...",
+        "Context": "Anh Kinich cũng là chị Mualani giới thiệu cho em làm quen đấy. Thật ra thì lúc đầu em có chút sợ anh ấy, vì ánh mắt của anh ấy trông có... hơi dữ một chút. Sau này em mới biết anh ấy đã âm thầm dạy dỗ những kẻ xấu đã ăn hiếp em. Nhưng khi em tặng quà trả lễ thì anh ấy lại không chịu nhận, nói là đã nhận đủ thù lao rồi..."
+      },
+      {
+        "Title": "Về Chasca...",
+        "Context": "Chị ấy là \"người hòa giải\" nổi tiếng ở Natlan đó. Nghe nói bất kỳ tranh chấp nào cũng có thể được chị ấy giải quyết dễ dàng. Chị ấy làm như vậy chắc cũng do giống em, rất không thích mọi người đánh nhau chăng..."
+      },
+      {
+        "Title": "Về Iansan...",
+        "Context": "Trước đây vì muốn trở nên mạnh mẽ hơn mà em đã nhờ chị Iansan dẫn đi huấn luyện. Chị ấy đã sắp xếp các bài tập cường độ cao, em thường phải cắn răng cố gắng lắm mới kiên trì được. Cũng may khối lượng bài tập mà chị ấy sắp xếp rất chuẩn xác, mỗi lần kết thúc đều chừa cho em vừa đủ thể lực để đi về nhà... Nên em rất cảm kích chị ấy."
+      },
+      {
+        "Title": "Về Citlali...",
+        "Context": "#Chị Mualani đã kể cho em nghe rồi, mọi người cứu được em ra là nhờ có phát minh của bà ấy. Em cũng có một phần trách nhiệm khi Đá Thức Tỉnh Linh Hồn bị hỏng... Sau đó, em đã lấy hết can đảm đến xin lỗi và để bà ấy chọn vài viên trong số những viên đá mà em sưu tầm. Bà ấy gãi đầu nói: \"Cái này, nếu không chọn một viên thì có phải sẽ rất phiền phức không? Lấy một viên rồi hai chúng ta xem như huề nhau đúng không nào?\" Rồi cuối cùng bà ấy chỉ lấy một viên Đá Obsidian ít nổi bật nhất, sau đó xua tay để em đi. {F#Chị}{M#Anh} nói xem, em có nên tìm thêm gì đó cho bà ấy không nhỉ? {F#Chị}{M#Anh} có biết bà ấy thích gì không?"
+      },
+      {
+        "Title": "Về Xilonen...",
+        "Context": "Sau khi em có được Tên Cổ thì chú Pacal đã dẫn em đi tìm chị Xilonen, nhờ chị ấy giúp em chế tạo Mũi Khoan Quay Tròn. Tay nghề của chị ấy đúng là siêu phàm mà.\nSau đó, em và chị ấy đã giao lưu với nhau về kinh nghiệm sưu tầm và cất giữ đá quý, còn được thưởng thức báu vật của nhau nữa. Đồ sưu tầm của chị ấy đều trong trạng thái rất tốt, chắc chắn đã được chăm chút kỹ lưỡng. Nhưng mà cuộc sống của bản thân chị ấy thì... có vẻ như hơi tùy hứng thì phải? Có một lần em tìm chị ấy rất lâu mà không được, cuối cùng mới phát hiện chị ấy đang tắm nắng trên một cái cây to rồi ngủ quên mất..."
+      },
+      {
+        "Title": "Về Hỏa Thần Đại Nhân...",
+        "Context": "Có nằm mơ em cũng không ngờ rằng lại có một ngày em được chính miệng Hỏa Thần đại nhân công nhận là \"vị anh hùng của Natlan\" đấy. Hỏa Thần đại nhân là thần tượng của mỗi một người chiến sĩ Natlan đó. Em... Em đã được thần tượng để ý rồi... Hic... Vừa nghĩ đến thôi là em đã thấy xúc động rồi, huhu... Xin lỗi, xin lỗi nhé, lẽ ra em không nên khóc vào lúc này..."
+      },
+      {
+        "Title": "Về Ifa...",
+        "Context": "Anh Ifa là một bác sĩ Saurian rất lợi hại! Mỗi con Saurian nhỏ từng được anh ấy khám bệnh thì đều sinh hoạt rất nề nếp sau khi trở về. Chúng sẽ không ăn bậy bạ, không chạy lung tung, cũng hầu như không bị bệnh nữa. Cho nên mỗi khi mọi người phát hiện Saurian không khỏe, thì phản ứng đầu tiên đều là nhờ anh ấy bay qua xem thử."
+      },
+      {
+        "Title": "Muốn tìm hiểu Kachina - Điều thứ 1",
+        "Context": "\"Uthabiti\" là Tên Cổ của em, nó có nghĩa là kiên cường. Haiz, nhưng nhiều lúc em cũng không hiểu tại sao em lại có cái tên này. Em yếu ớt như vậy, dù là ở trong nhà hay trong bộ tộc, thì sự tồn tại của em đều khá mờ nhạt... Xung quanh có nhiều người ưu tú như vậy, em thật sự có tư cách để sở hữu cái tên này sao?"
+      },
+      {
+        "Title": "Muốn tìm hiểu Kachina - Điều thứ 2",
+        "Context": "Nói đến trong nhà... thì ở nhà em xếp thứ hai. Em biết cha chủ yếu đặt kỳ vọng lên người chị gái, còn bây giờ mẹ lại phải chăm sóc cho em gái còn nhỏ. Cuộc sống trong nhà có hơi vất vả, nên em cần phải tự chăm sóc tốt cho bản thân, sớm ngày trưởng thành... Chí ít thì không nên để cha mẹ phải lo lắng nhiều."
+      },
+      {
+        "Title": "Muốn tìm hiểu Kachina - Điều thứ 3",
+        "Context": "Chú Pacal đối xử với em rất tốt. Khi những người khác trong bộ tộc bàn tán về em thì chú ấy đều luôn nói giúp em. Thật ra... Chú ấy làm vậy em lại càng cảm thấy áy náy hơn. Em phải dựa vào thực lực của mình để giành lấy sự công nhận của mọi người mới được..."
+      },
+      {
+        "Title": "Muốn tìm hiểu Kachina - Điều thứ 4",
+        "Context": "#Em luôn biết rằng khóc lóc sẽ không giải quyết được bất kỳ chuyện gì. Trong câu chuyện truyền thuyết, em chưa từng nghe kể có vị anh hùng nào khóc trước mặt người khác cả. Em rất muốn kìm nước mắt lại, nhưng em luôn thất bại... Hả? {F#Chị}{M#Anh} nói không sao à? Rơi nước mắt cũng là một cách quan trọng để giải tỏa sao? {F#Chị}{M#Anh}... {F#Chị}{M#Anh} nghĩ như vậy thật sao? Huhuhu, cảm ơn {F#chị}{M#anh}, hic... Sao em lại khóc nữa rồi?"
+      },
+      {
+        "Title": "Muốn tìm hiểu Kachina - Điều thứ 5",
+        "Context": "Trước đây em luôn cảm thấy mình yếu ớt, bị người khác phớt lờ cũng là lẽ thường tình... Nhưng sau khi nghe những lời nói của Wayob thì em đã không còn nghĩ như vậy nữa. \"Uthabiti\" là Tên Cổ của em, em... đã quyết định phải trở thành một phiên bản tốt hơn của chính mình. Trên thế giới này nhất định sẽ có việc mà chỉ có em mới làm được. Em sẽ... tiếp tục cố gắng. Hy vọng có một ngày trên Đá Obsidian cũng sẽ có sự tích của em, trở thành một viên... đá quý lấp lánh hơn nữa."
+      },
+      {
+        "Title": "Sở thích của Kachina...",
+        "Context": "#Đây là viên đá quý đầu tiên mà em đào ra được, có màu xanh lục, đẹp lắm phải không? Ban đầu chúng là một cặp, viên còn lại em đã tặng cho chị Mualani rồi. {F#Chị}{M#Anh} xem, hoa văn của nó giống như nước chảy vậy. Đúng rồi, còn viên này, nhìn nó màu đen vậy thôi, nhưng khi đặt dưới ánh mặt trời thì sẽ có cảm giác tỏa ra ánh sáng rực rỡ đó... Hihi, đây đều do em sưu tầm từng viên từng viên một đấy."
+      },
+      {
+        "Title": "Nỗi buồn của Kachina...",
+        "Context": "Trước đây chị Mualani từng tặng em một chiếc mũ rất to, siêu ngầu luôn, còn có thể che nắng một cách hoàn hảo nữa. Em thật sự rất thích, nhưng đội miết nó đã thành chiếc mũ lông rồi... Sau đó em chỉ đành đổi sang chiếc mũ không bám lông này thôi."
+      },
+      {
+        "Title": "Món ăn yêu thích...",
+        "Context": "Ngũ Cốc Lát là thứ em thích nhất! Nếu như có thể được xếp gọn gàng chút thì sẽ hoàn hảo hơn nữa."
+      },
+      {
+        "Title": "Món ăn ghét...",
+        "Context": "Ơ? Nhiều như vậy sao? Nhưng, nhưng nếu em ăn không hết thì chẳng phải sẽ lãng phí thành quả lao động của đầu bếp sao? Hừm, không sao... Em nhất định sẽ ăn hết! Em sẽ từ từ ăn từng miếng nhỏ..."
+      },
+      {
+        "Title": "Nhận Được Quà I",
+        "Context": "Woa! Tặng cho em thật sao? Ngon quá đi! Em phải ăn từ từ, để vị ngon có thể lưu lại lâu hơn một chút."
+      },
+      {
+        "Title": "Nhận Được Quà II",
+        "Context": "#Vừa thơm lại vừa ngon, còn bày biện đẹp như vậy. Nếu có \"Cuộc Chiến Nấu Ăn\" thì chắc chắn {F#chị}{M#anh} sẽ chiến thắng đó!"
+      },
+      {
+        "Title": "Nhận Được Quà III",
+        "Context": "#Cảm ơn {F#chị}{M#anh} đã dành thời gian cho em! Em, em nhất định sẽ ăn hết, hãy cho em thêm chút thời gian nhé."
+      },
+      {
+        "Title": "Sinh nhật...",
+        "Context": "#Sinh nhật vui vẻ! Đây là quà cho {F#chị}{M#anh}, là thỏ pika được khắc bằng Opal Cầu Vồng đó. Opal Cầu Vồng khi cầm vào sẽ có cảm giác ấm áp, nhưng khi ở dưới lòng đất thì không mấy bắt mắt, không để ý là sẽ bỏ lỡ mất... Nhưng mang theo bên người lâu rồi thì ánh sáng của nó sẽ càng ngày càng đẹp. Đây là một trong những loại đá quý mà em thích nhất, mong là {F#chị}{M#anh} cũng sẽ thích."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Khởi",
+        "Context": "Tai của em đang run sao? Không phải là do căng thẳng đâu... Mà là em đang vui đấy. Xin lỗi, bây giờ chúng đang phấn khích lắm, em không kiểm soát được. Để... để em bịt chúng lại vậy."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Thừa",
+        "Context": "#{F#Chị}{M#Anh} thật sự rất coi trọng em... Hic... Em không muốn khóc đâu, nhưng mà em cảm động quá..."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Chuyển",
+        "Context": "\"Khi cung điện bị thiêu rụi, ngọn lửa trong đó vẫn chưa từng tắt đi. Khi bình minh đến, nó sẽ lại bùng lên, rực rỡ hơn cả ngày hôm qua.\" Đây là câu em thích nhất trong số những câu nói của ngài Traore! Em, em nhất định phải cố gắng mới được..."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Hợp",
+        "Context": "#{F#Chị}{M#Anh} dẫn em đi xem nhiều sự vật mới mẻ, giúp em trưởng thành lên rất nhiều, em không biết phải báo đáp {F#chị}{M#anh} như thế nào... Nhưng lần này em muốn tự tìm đáp án. Tiếp theo đây hãy để em làm anh hùng, người anh hùng bảo vệ cho {F#chị}{M#anh} nhé!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố I",
+        "Context": "Xoay xoay!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố II",
+        "Context": "Hey yo!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố III",
+        "Context": "Đến ngay đây!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố IV",
+        "Context": "Bắt đầu xoay nào!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố V",
+        "Context": "Sóng đất!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố VI",
+        "Context": "Mũi Khoan Quay Tròn, xuất phát!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ I",
+        "Context": "Lui về!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ II",
+        "Context": "Thu thập khoáng thạch."
+      },
+      {
+        "Title": "Kỹ Năng Nộ III",
+        "Context": "Đừng đến gần."
+      },
+      {
+        "Title": "Mở Rương I",
+        "Context": "Woa, có viên đá lấp lánh!"
+      },
+      {
+        "Title": "Mở Rương II",
+        "Context": "#{F#Chị}{M#Anh} cũng thích sưu tầm đá sao? Em hiểu, em hiểu, những viên đá này đẹp quá mà."
+      },
+      {
+        "Title": "Mở Rương III",
+        "Context": "Có cần em sắp xếp giùm không? Em rất giỏi khoản này đó!"
+      },
+      {
+        "Title": "HP Thấp I",
+        "Context": "Không sao, vết thương nhỏ thôi."
+      },
+      {
+        "Title": "HP Thấp II",
+        "Context": "Nào... Phấn chấn lên."
+      },
+      {
+        "Title": "HP Thấp III",
+        "Context": "Mình sẽ làm được mà!"
+      },
+      {
+        "Title": "HP Đồng Hành Thấp I",
+        "Context": "Đừng quên còn em đây!"
+      },
+      {
+        "Title": "HP Đồng Hành Thấp II",
+        "Context": "Đây! Cứ giao cho em!"
+      },
+      {
+        "Title": "Ngã Xuống I",
+        "Context": "Xin lỗi, là em gắng gượng quá."
+      },
+      {
+        "Title": "Ngã Xuống II",
+        "Context": "Không được làm ô danh... Uthabiti..."
+      },
+      {
+        "Title": "Ngã Xuống III",
+        "Context": "Hic... Lại làm hỏng rồi sao..."
+      },
+      {
+        "Title": "Chịu Đòn Thường I",
+        "Context": "Vết xước nhẹ thôi."
+      },
+      {
+        "Title": "Bị Trọng Kích I",
+        "Context": "Ưm, không sao đâu."
+      },
+      {
+        "Title": "Vào Đội I",
+        "Context": "Woa? Em cũng có thể tham gia sao?"
+      },
+      {
+        "Title": "Vào Đội II",
+        "Context": "Tuyệt quá! Cùng đi nào."
+      },
+      {
+        "Title": "Vào Đội III",
+        "Context": "#Lại được học kỹ thuật chiến đấu từ {F#chị}{M#anh} rồi."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Miêu Tả Nhân Vật",
+        "Context": "Giống như những đứa trẻ khác trong Con Của Tiếng Vang, những con Tepetlisaur đáng yêu, đá quý lấp lánh sâu trong rặng núi, những câu chuyện anh hùng được truyền miệng giữa các trưởng bối đã đồng hành cùng Kachina trưởng thành.\nEm ấy quen thuộc đường núi, giỏi tìm khoáng thạch chôn sâu. Khi rảnh rỗi thường cùng mọi người chạy tới phòng làm việc của các nghệ sĩ thu âm mà nhảy theo nhịp điệu.\nVa chạm là việc khó tránh khỏi, Kachina cũng sẽ rơi nước mắt vì đau đớn. Nhưng khi những đứa trẻ khác vẫn chưa dứt cơn đau thì em ấy đã lau nước mắt và đứng dậy.\nTrong mắt người khác, Kachina đương nhiên là một đứa trẻ ngoan, nhưng em ấy luôn không hiểu tại sao một người bình thường như mình lại có được Tên Cổ \"Uthabiti\".\nBản thân rốt cuộc có phần nào phù hợp với ý nghĩa của kiên cường trong cái tên vĩ đại này chứ? Kachina bé nhỏ vẫn chưa hiểu.\nNhưng nếu đã nhận được vinh dự này thì bản thân cũng có nghĩa vụ phải tham gia Nghi Lễ Hành Hương. Huống chi, nếu chiến thắng trở về thì sẽ được đứng chung với các vị anh hùng trong truyền thuyết, đó là tâm nguyện của tất cả chiến sĩ Natlan, bao gồm cả Kachina.\nDù đã trải qua nhiều lần thất bại, không những bản thân vô cùng buồn bã, mà Kachina càng không thể ngẩng đầu nhìn ánh mắt thất vọng của đồng đội, nhưng em ấy vẫn lau đi nước mắt và tiếp tục đứng dậy.\nTuy nhiên, liệu thất bại nhiều lần như vậy thì có cơ hội chiến thắng được Nghi Lễ Hành Hương không chứ? Kachina mang theo tâm trạng mơ hồ này mà vẫn cứ chiến đấu hết mình."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 1",
+        "Context": "Bảng báo danh của Nghi Lễ Hành Hương ngoài thông tin cá nhân cần thiết ra thì còn có một trang phụ lục không bắt buộc, bao gồm nhưng không giới hạn những sở thích và trải nghiệm cá nhân. Cái này vốn dĩ được thiết kế để tiện cho người dẫn chương trình. Nhưng thông tin về tuyển thủ nổi tiếng vốn không cần phải thu thập bằng cách này, vì từ lâu đã lan truyền khắp nơi rồi. Vì thế, tấm phụ lục này dần dần cũng không còn ai coi trọng nữa. Tuy nhiên, có vẻ như chỉ có Kachina là mỗi lần đều nghiêm túc điền từng mục trong phụ lục.\n\"Sở thích cá nhân: Nhảy múa.\"\nCư dân Con Của Tiếng Vang ít nhiều cũng biết một vài vũ đạo. Trong ấn tượng của những bộ tộc khác thì nhảy múa là một tài năng trong huyết mạch của những thành viên Con Của Tiếng Vang. Chỉ cần âm nhạc vang lên thì những đứa con của Nanatzcayan sẽ vô thức lắc lư cơ thể. Nhưng Kachina đúng là rất giỏi nhảy múa. Thân hình nhỏ nhắn của em ấy khi thực hiện các động tác bằng cả hai tay hai chân đều không hề rối, tiết tấu uyển chuyển cứ như Koholasaur đang bơi lội vậy. Chị Pochtli đã khen em ấy rất nhiều lần, nhưng em ấy không phải là người thích được khen ngợi. Thực ra em ấy rất thích viết điều này lên tấm phụ lục, nhưng vì sợ như vậy sẽ khiến bản thân trông tự cao, nên đã từ bỏ.\nCòn có một sở thích khác, nhưng Kachina do dự hồi lâu, cuối cùng cũng không viết.\nĐó là đào bới.\nĐiều khiến Kachina ngại cũng giống như những thành viên Con Của Tiếng Vang khác, hoạt động mà bản thân thích nhất chính là đào qua đào lại trong hầm mỏ. Mỗi lần phát hiện mỏ khoáng trong nơi tối tăm là lại có một cảm giác ấm áp lan tỏa trong tim. Thành viên Con Của Tiếng Vang có thể hiểu được sự ấm áp này, nhưng nếu viết sở thích đào khoáng vào đó thì chỉ khiến em ấy thiếu đi nét riêng của mình.\n\"Mình thật sự không có ưu điểm gì cả.\" Em ấy thở dài.\nTiếp theo là người thân.\n\"Cha, mẹ, Ayo...\" Em ấy điền người nhà của mình trước.\nNgoài cha mẹ yêu thương Kachina vô điều kiện ra, người thân nhất của em ấy chính là bạn đồng hành Ayo. Khi em ấy thử tự mình đào khoáng thì Ayo đã ở bên cạnh em ấy. Khi nghe cha mẹ kể những câu chuyện truyền thuyết thì Ayo cũng ở đó mà chạy loạn quanh Kachina. Khi nghĩ đến nó thì em ấy lại vô thức mỉm cười.\nEm ấy còn muốn bổ sung thêm những cái tên khác, ví dụ như Mualani luôn dùng nụ cười khích lệ em ấy, hay Kinich thường dang tay giúp đỡ khi em ấy gặp khó khăn, hoặc chú Pacal trong bộ tộc... Nhưng nhiều người như vậy thì không thể điền hết vào được, nên đành thôi vậy.\nKhó khăn lắm mới viết xong. Khi đưa trang phụ lục cho nhân viên, đối phương đã rất ngạc nhiên vì cô gái nhỏ bé này thực sự đã điền hết tất cả các dòng.\n\"Phần phụ lục không điền cũng không sao mà.\" Nhân viên nói đùa.\n\"Không sao, em muốn nghiêm túc với những việc mà em có thể làm tốt.\" Kachina trả lời."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 2",
+        "Context": "Lịch sử chung sống giữa con người và Tepetlisaurus còn lâu đời hơn ông nội của ông nội Kachina. Con người quen làm việc và sinh sống cùng Tepetlisaurus, xây dựng mối quan hệ như bạn bè với nhau.\nĐiều này có nghĩa là đối với Con Của Tiếng Vang, Saurian không phải là con thú để con người chi phối, cũng không phải là thú cưng bị con người trói buộc. Chúng có địa vị ngang bằng với con người.\nHầu hết Tepetlisaurus ở chung với con người đều do tự nguyện, giống như trường hợp của Ayo vậy.\nSào huyệt của Tepetlisaurus cách nơi ở của con người không xa, cũng vì thế mà hai bên thường hay gặp nhau, coi nhau như hàng xóm thân thiết, đôi lúc gặp gỡ cũng không còn là chuyện xa lạ.\nTừng có một thời gian, Kachina khi còn nhỏ đã gặp được một con Tepetlisaur con ở ngã rẽ khu mỏ. Đối với Kachina mà nói, vị hàng xóm thân thiện này là sự tồn tại đáng được chào hỏi. Thế là lần nào em ấy cũng nói \"xin chào\" với nó.\nThời gian trôi qua, con Tepetlisaur con đó cũng nhớ đến em ấy, và Kachina cũng có nhiều cơ hội để gặp nó hơn. Khi đi tập luyện nhảy múa ở chỗ vắng, đi thu thập Hạt Ngũ Cốc, đi ra bờ sông bắt cá... Lâu dần, cả hai không những chỉ chào hỏi nhau, mà còn tặng quà cho nhau nữa.\nTrở thành bạn của Tepetlisaur dễ như vậy đấy, Kachina không cần tốn công chứng minh giá trị của mình, cũng không cần cho nó thù lao đặc biệt, họ chỉ chơi chung vui vẻ nên đi cùng nhau thôi.\nCho đến một ngày, Tepetlisaur con vô tư đi theo Kachina về nhà em ấy, từ đó trở thành bạn đồng hành của nhà Kachina, và được đặt cho cái tên Ayo. Tất cả đều rất tự nhiên, giống như cá được định sẵn sẽ sống trong nước, chim được định sẵn sẽ bay lượn trên không trung vậy.\nSau đó Ayo vẫn giữ được sự trung thành và thân thiện với người bạn của mình, không giống như những người bạn con người cùng lớn lên với Kachina, chỉ vì em ấy thất bại nhiều lần trong Nghi Lễ Hành Hương mà tránh xa không chút do dự, thậm chí còn buông lời chế giễu. Mà Ayo với chiếc sừng sắc nhọn đó vẫn kiên định đứng bên cạnh Kachina, không bao giờ dao động."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 3",
+        "Context": "Cái Tên Cổ \"Uthabiti\" có nghĩa là kiên cường. Ban đầu, Kachina không nghĩ mình xứng đáng với cái tên cổ xưa đầy vinh quang này.\nĐọc thử những cuộn vải dệt cổ, sau khi biết những anh hùng mang Tên Cổ này là người như thế nào thì em ấy lại càng thêm khó hiểu.\nHọ có sức mạnh to lớn, dù đối mặt với trở ngại nào cũng đều giữ được khí phách, để cho hậu thế ngưỡng mộ. Còn có những người vẫn giữ được phẩm giá cao quý trong môi trường sinh tồn tàn khốc, một mình bảo vệ quê nhà, kiên trì với chức trách của mình cho đến khi chết đi. Nhìn lại bản thân, Kachina cảm thấy mình không có sức mạnh như các dũng sĩ của Cộng Đồng Trù Phú, cũng không nhạy bén như các kỵ sĩ của Hội Hoa Vũ. Dù em ấy không muốn tỏ ra yếu đuối, nhưng vẫn luôn bị xem thường đến khóc nức nở.\n\"Người kiên cường sẽ không ngừng khóc lóc như mình sao?\"\nBản thân mình thật sự rất khác biệt với từ kiên cường. Sau khi đưa ra kết luận này, Kachina rất buồn, thậm chí chìm đắm trong bầu không khí chán nản rất lâu. Nhưng một thời gian ngắn sau, em ấy đã từ bỏ cảm xúc đó. Không phải vì Kachina đã tập luyện để trở thành chiến sĩ lợi hại, cũng không phải do bản thân đã nghĩ thông suốt. Người nhà và bạn bè đúng là đã từng quan tâm, nhưng em ấy lựa chọn như vậy đa phần là do thói quen hơn.\nDù có ngã thảm thương thế nào thì cũng phải đứng dậy trước đã.\nLúc còn nhỏ, mỗi lần ngã xuống thì những đứa trẻ khác sẽ khóc lóc, nhưng Kachina luôn đứng dậy trước. Tuy vết thương vẫn còn đau, nước mắt vẫn đang rơi, đây đều là phản ứng bản năng của cơ thể, nhưng trong ý thức thì em ấy cảm thấy mình nên đứng dậy, đi xem thử tảng đá làm mình ngã, rồi tiếp tục bật khóc.\nBây giờ vẫn vậy. Khi đối mặt với tương lai dường như vô vọng, Kachina vô cùng sợ hãi và thất vọng, thậm chí vì tuổi còn quá nhỏ mà vẫn không biết che giấu cảm xúc của mình. Tất cả suy nghĩ tiêu cực đều hiện lên trên mặt, nhưng Kachina vẫn sẽ lựa chọn khuôn mặt rạng rỡ để tiếp tục tập luyện, tiếp tục tiến về phía trước.\nKachina xem chuyện này như chịu đòn vậy, chỉ là dùng cách biểu đạt mà mình giỏi hơn thôi. Giống như chú Pacal nói:\n\"Con người tuy nhỏ bé, nhưng vẫn có dũng khí để đối mặt với thế giới tàn khốc. Sự vĩ đại của con người chính là được thể hiện trong quá trình này.\"\nCó lẽ Kachina thật sự rất kiên cường."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 4",
+        "Context": "Sau khi trở về từ Vương Quốc Dạ Thần, ánh nhìn của những người khác về nhà Kachina dường như đã thay đổi.\nMột số người chưa từng chào hỏi họ đã bắt đầu chủ động chào hỏi khi gặp mặt. Trước đây chủ đề xã giao của họ chỉ là hỏi thăm thời tiết, nhưng giờ họ đã tìm cách để chủ động đến bắt chuyện.\nDù Kachina có ở đó hay không, thì chủ đề mà mọi người bàn tán vẫn luôn vô tình hoặc cố ý rơi vào em ấy. Họ ca ngợi sự dũng cảm và kiên cường của Kachina, khen từ Ayo khen đến tận đôi tai của em ấy. Đôi tai khác biệt ấy từng bị cho là một hiện tượng \"tiến hóa lùi\", giờ lại trở thành điểm hơn người của Kachina.\nTrải qua nhiều trắc trở như vậy, cuối cùng em ấy đã trở về và trở thành đại diện tốt nhất cho ý chí kiên cường. Vô số lần thất bại trước đó đã được coi là dấu chân cho sự nghiệp vĩ đại, cứ thế mà chìm đắm trong lời ca tụng.\nKachina cảm thấy có gì đó không ổn. Sai lầm và nước mắt của em ấy dường như bị mọi người bỏ qua. Rõ ràng chúng đã từng tồn tại, nhưng lại bị ánh sáng của thành công che mất.\nNgười khác có thể quên em đã trải qua nhiều lần thất bại, nhưng bản thân em ấy không thể quên, cũng cho rằng bản thân không nên quên.\nKachina luôn cảm thấy mình không thể so sánh với những anh hùng có chiến công lẫy lừng. Lần chiến thắng này cũng nhờ có bạn bè giúp đỡ, chứ không thể đột nhiên biến thành hình tượng lý tưởng trong tiếng khen ngợi của người khác.\nEm ấy vẫn là Kachina, người sẽ không kìm được nước mắt khi buồn, vẫn muốn tiếp tục tiến về phía trước, vẫn không ngừng cố gắng đứng dậy khi vấp ngã.\n\"Không bị đánh bại đúng là biểu hiện của sự kiên cường, nhưng giữ vững được bản ngã trong lời ca tụng cũng là một loại kiên cường.\"\nTrong lòng Kachina, cái tên \"Uthabiti\" lại có thêm một dòng chú giải rồi."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 5",
+        "Context": "Mỗi đứa trẻ ở Nanatzcayan đều từng nghe qua câu chuyện ngụ ngôn về khoáng thạch và bảo thạch. Cha mẹ của Kachina cũng từng kể một câu chuyện tương tự trước khi em ấy ngủ.\nKhi khoáng thạch chưa bị Con Của Tiếng Vang khai quật, nó đã lặng lẽ nằm sâu trong rặng núi, ngủ chung với đá và bùn lầy.\nBan đầu nó không biết mình có tiềm năng trở thành đá quý, nên chỉ chịu đựng bóng tối và sự cô độc dài đằng đẵng, và cũng không tự gọi mình là bảo thạch.\n\"Mình chỉ là một hòn đá bình thường.\" Nó nghĩ như vậy.\nCho đến khi gió lớn thổi bay bụi đất, nước sông cuốn trôi bùn cát, động đất chia tách các lớp nham thạch, mũi khoan của Con Của Tiếng Vang mới đào được nó lên từ sâu trong núi. Khi đó nó vẫn chưa ý thức được là có thứ gì đó lấp lánh ẩn chứa bên trong trái tim đá của mình.\nKhi chịu đựng sự đục đẽo và mài giũa, khoáng thạch sẽ cảm thấy rất đau đớn, mũi dùi và bánh mài đã lấy đi rất nhiều bộ phận trên người nó. Lớp vỏ tầm thường bị tước đi, hoa văn tượng trưng cho sự nhút nhát bị xóa mờ, quá trình này trong mắt Con Của Tiếng Vang là tràn ngập vẻ đẹp và niềm vui. Nhưng khoáng thạch thô cảm thấy không có cách nào để thích ứng, nó chảy nước mắt hỏi mũi dùi và bánh mài:\n\"Tại sao tôi phải trải qua những chuyện này?\"\nLà để bạn lộ ra được bản chất của bảo thạch.\nNhưng lời này không được nói ra. Không giống như khoáng thạch, mũi dùi và bánh mài đã tham gia rèn luyện vô số lần, chứng kiến rất nhiều khoảnh khắc bảo thạch lần đầu tỏa sáng, nên chúng chỉ im lặng không nói gì.\nCho đến khi hoàn thành công đoạn cuối cùng, khoáng thạch mới có thể lộ ra được hình dạng của đá quý trong mắt người khác.\nKhi một mình lang thang ở Vương Quốc Dạ Thần, Kachina không ngừng nhớ lại câu chuyện này. Em ấy nhớ lúc đó đã hỏi cha mẹ, rằng bảo thạch sẽ trông như thế nào? Nhưng sự lạnh lẽo của Vương Quốc Dạ Thần đã khiến ký ức của em mơ hồ, Kachina không thể nhớ được câu chuyện tiếp theo. Nhưng may mắn là hồi ức với cha mẹ đã cho em ấy chút ấm áp, để ngọn lửa linh hồn có thể tiếp tục bùng cháy. Kachina quyết định dừng tự vấn. Dù bản thân là khoáng thạch thấp kém vỡ vụn dưới mũi dùi, hay là bảo thạch chứa đựng hy vọng, thì cũng phải tiếp tục tiến về phía trước. Em ấy còn rất nhiều việc chưa làm tốt, và còn rất nhiều người chưa được gặp lại.\nKhoảnh khắc trở về dưới ánh mặt trời, nhìn Nhà Lữ Hành đưa tay ra, Kachina muốn bản thân mình biết những viên bảo thạch này nên trông như thế nào:\nCó kết cấu cứng cáp, có thể chống đỡ được đất trời trong cơn tuyệt vọng.\nCó hy vọng bất diệt, có thể chiếu sáng thế giới đen tối.\nBây giờ, Kachina đã chiến thắng Nghi Lễ Hành Hương và chứng tỏ được bản thân. Ngày này cuối cùng cũng đến, em ấy được người khác nhìn bằng ánh mắt ngưỡng mộ, mang tới cho người khác niềm tin và dũng khí. Hỏa Thần đã nói với em ấy, rằng cái tên Kachina sẽ được Chủ Nhân Gió Đêm thêu trên lá cờ, là một phần trong sử thi anh hùng Natlan, dung hòa vào Địa Mạch, trở thành truyền thuyết bất diệt.\nNước mắt và dũng khí cuối cùng đã dung hợp thành viên bảo thạch quý có tên là Kachina."
+      },
+      {
+        "Title": "Lá Cờ \"Uthabiti\"",
+        "Context": "Chúng ta niệm tên của tổ tiên, chúng ta hát vang tên của anh hùng.\nDũng sĩ kế thừa Tên Cổ \"Uthabiti\", chúng ta ghi lại và dệt nên những lời nói của họ.\nCuộn chỉ vàng đầu tiên chúng ta trao tặng cho cô gái cầm kiếm tạo ra cái tên này, một cô gái với dung mạo bình thường và cao như một đứa trẻ.\nCô ấy từng dùng chính đôi tay mình để ngăn chặn sự sụp đổ của vách đá, cõng cả bộ tộc trên vai.\nTư duy và tinh thần của cô cao gấp nhiều lần so với chiến sĩ vạm vỡ nhất trong lịch sử Natlan.\nNgọn lửa sinh mệnh của vị anh hùng này sớm đã tắt lịm. Nhưng ngay cả khi cận kề cái chết, cô vẫn cười thoải mái và vui vẻ. Âm thanh còn đọng lại trong trẻo và tươi sáng, giống như dòng sông lớn phá vỡ bờ đê.\nCho dù đã ngừng thở, cho dù tim đã ngừng đập, nhưng những người thợ dệt vẫn nghe thấy tiếng sóng liên tục vọng ra từ cơ thể khô héo đó, bảy đêm sau mới tan đi.\nCuộn chỉ bạc thứ hai dành tặng cho người đã vớt cái tên này lên từ trong dòng sông khái niệm. Cả đời ông chưa từng buông chiếc khiên của mình xuống.\nCho dù bản thân ông có gầy gò như thế nào, thì ông vẫn kiên trì chiến đấu cùng chiếc khiên suốt bao năm tháng. Bất kể thời gian cứ thế trôi đi, thì vẫn chưa từng dao động.\nThân thể ông lặng im như tấm khiên, nhưng linh hồn lại thường xuyên gầm thét trên chiến trường.\nNgay cả khi nằm trong bình đựng tro cốt, thì tro tàn của ông vẫn cố gắng đông lại và phá vỡ bình gốm, khiến mọi người đều tuyên bố rằng ông không thể vừa với một ngôi mộ nhỏ như vậy.\nCuối cùng, cơ thể của ông được rải giữa những ngọn núi. Tro tàn lấp lánh va chạm với vách đá phát ra âm thanh như tiếng sấm.\nCuộn chỉ cỏ thứ ba dành tặng cho những người vô danh thất lạc giữa những ngọn cờ trùng điệp. Lịch sử đã che đi sự tích của họ.\nNếu không nhờ Wayob tiết lộ, thì chúng ta cũng khó có thể nhìn rõ được vết máu và nước mắt mà họ để lại.\nKhoảnh khắc cuối cùng của những vị anh hùng vĩ đại thật yên bình, và chúng ta chân thành cầu nguyện rằng họ sẽ được tận hưởng niềm hạnh phúc và sự mãn nguyện.\nCuộn chỉ thứ tư dùng lông tơ của Saurian kết thành, dành cho người cầm giáo khiến danh hiệu này một lần nữa tỏa sáng trên bầu trời Nghi Lễ Hành Hương.\nTrong Vương Quốc Dạ Thần, em ấy đồng hành cùng linh hồn của những chiến binh bất diệt, vượt qua bóng tối bao trùm và trở về trong chiến thắng.\nNước mắt sẽ không làm giảm đi sự vinh quang của \"Uthabiti\", và sự trở về của em ấy sẽ gắn liền với sự khởi đầu của một thời đại mới.\nChúng ta niệm tên của tổ tiên, chúng ta hát vang tên của anh hùng.\n\"Ai dám đứng vững như núi, xương cốt như thành lũy, đón nhận ánh mặt trời... Thì họ sẽ được giao phó cho cõi vĩnh hằng.\"\n\"Nỗi sợ nên sợ hãi ta, vì thân thể ta như ngọn lửa nóng rực, đã định sẵn sẽ thiêu rụi tất cả những thứ thấp kém và đúc thành bia đá.\""
+      },
+      {
+        "Title": "Vision",
+        "Context": "Đó là chuyện sau khi Nghi Lễ Hành Hương lần thứ nhất kết thúc. Kachina đã thất bại, sự kỳ vọng trước trận đấu đã biến mất, năng lực của em ấy bị người khác nghi ngờ. Điều đau đớn hơn là... Kachina bắt đầu không kiềm chế được việc nghi ngờ bản thân.\nNói không chừng Wayob cũng có lúc nhìn nhầm người chăng? Bản thân thật sự có thể \"thiêu rụi những thứ thấp kém\" như trong lời thơ không? Hay mình mới chính là kẻ thấp kém đó?\nChính vào lúc này, Kachina đã phát hiện ra ý nghĩa của việc đào bới đối với bản thân.\nEm ấy luôn thích đào sâu vào trong núi để tìm những thứ quý giá. Nhưng lần này, Kachina không đào vì mục đích nào đó nữa. Em ấy cầm chắc mũi khoan tiếp tục tiến bước, cứ như chỉ cần tiếp tục như vậy thì sự thất vọng và bi thương sẽ không khoan vào tim em ấy nữa, mà sẽ biến thành mũi khoan trong tay để khoan vào trong lòng núi.\nEm ấy cảm thấy mình có thể tiếp tục tiến về phía trước trong bóng tối. Có lúc đào được món đồ tốt, niềm hạnh phúc đó thậm chí lớn hơn nhiều so với sự hoài nghi và thất bại. Nhưng trên mặt đất, Nghi Lễ Hành Hương đó sẽ không bị xóa đi, sự thất bại sẽ theo dần với thời gian, trở thành dấu ấn không thể xóa nhòa trên người Kachina. Dù là trốn trong bóng tối hay đứng dưới ánh mặt trời cũng đều rất buồn bã, nếu nhất định phải so sánh thì cái trước còn đau khổ hơn. Vì hai chữ thất bại luôn vang vọng trong đầu sẽ còn khó chịu hơn những giọt mồ hôi luyện tập cho Nghi Lễ Hành Hương.\nNgười Natlan có một câu nói, Con Của Tiếng Vang là một nhóm người cố chấp. Cả đời họ đều giống như chiếc sừng trên đầu Tepetlisaur, tuy mềm nhưng nhọn, và luôn lao về phía trước. Giống như câu nói này, trong đầu Kachina dường như không có sự lựa chọn dừng lại, em ấy chỉ có thể tiến về phía trước thôi.\nCó lẽ trời đã định sẵn mình không thể trở thành anh hùng vĩ đại, nên chỉ đành dùng bước chân chậm chạp thử tiến lên từng bước.\nĐương nhiên Kachina vẫn chưa hiểu, việc ngẩng cao đầu hô to chiến thắng mà lao về phía trước là một tâm thái tốt, nhưng cắn răng bước từng bước chậm rãi mà tiến lên cũng là một điều rất tuyệt vời.\nTrong quãng thời gian ở dưới lòng đất, đây chính là chuyện mà em ấy suy nghĩ.\nCùng lúc đó, Kachina thỉnh thoảng cũng sẽ đào được một số thứ thú vị.\nVí dụ như Vision.\nKhi nhận được Vision thuộc về mình, đương nhiên là em ấy rất vui. Nhưng em ấy đã từng trải qua một lần phấn khích tương tự, chính là lúc có được Tên Cổ \"Uthabiti\".\nSự công nhận của thần linh hay Wayob không có nghĩa là bản thân nhất định sẽ đạt được sự nghiệp vĩ đại gì. Điều này Kachina đã học được từ trong thực tế, nhưng điều mà em ấy chưa học được là:\nKhi truyền thuyết của các anh hùng bắt đầu hình thành, nó không nổi bật, màu sắc cũng ảm đạm, chứ đừng nói đến truyền cảm hứng cho người đời. Nhưng động lực cần thiết cho sự vĩ đại chỉ cần nạp đủ, và các nhân vật chính tiếp tục tiến lên, vậy thì một tương lai tươi sáng sẽ đón chờ họ.\nNhưng người trong cuộc sẽ không bao giờ biết trước kết cục, cho nên giọt nước mắt không màng tất cả mà xông pha của họ sẽ luôn là đẹp nhất."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 210000,
+      "Name": "Đỉnh Đá Cam",
+      "Description": "Phong cách của Kachina. Đeo găng tay chắc chắn, giày chống mài mòn, \"Uthabiti\" Kachina đã sẵn sàng đối mặt với thử thách.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104174,
+    113065,
+    101249,
+    112106,
+    104355,
+    113060
+  ],
+  "NameCard": {
+    "Name": "Kachina - Quay Tròn",
+    "Description": "Hoa văn danh thiếp.\nKhoang ngồi ở nửa trên của Mũi Khoan Quay Tròn rất ổn định. Nhưng nếu nửa dưới bị kẹt thì... quả thật rất dễ khiến người ngồi trên đó bị chóng mặt đấy.",
+    "Icon": "UI_NameCardIcon_Kachina",
+    "PicturePrefix": "UI_NameCardPic_Kachina"
+  }
+}

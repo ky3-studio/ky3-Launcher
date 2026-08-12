@@ -308,6 +308,7 @@
         "Id": 10391,
         "Name": "獵人射術",
         "Description": "<color=#FFD780FF>普通攻擊</color>\n進行至多五段的連續弓箭射擊。\n\n<color=#FFD780FF>重擊</color>\n進行傷害更高、更為精準的<color=#FFD780FF>瞄準射擊</color>。\n瞄準時，冰霜散發的寒氣會憑附在箭矢上。聚滿了寒氣的箭矢會造成<color=#99FFFFFF>冰元素傷害</color>。\n\n<color=#FFD780FF>下落攻擊</color>\n從空中射出箭雨，並迅速下墜衝擊地面，在落地時造成範圍傷害。",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_02"
       },
       {
@@ -507,6 +508,7 @@
         "Id": 10392,
         "Name": "貓爪凍凍",
         "Description": "發射凍凍貓貓爪，對敵人造成<color=#99FFFFFF>冰元素傷害</color>，並在命中時形成護盾。\n護盾的傷害吸收量受益於迪奧娜的生命值上限，持續時間基於命中的凍凍貓貓爪數目。\n\n<color=#FFD780FF>點按</color>\n快速發射二枚凍凍貓貓爪。\n\n<color=#FFD780FF>長按</color>\n迅速後撤，並發射五枚凍凍貓貓爪。\n藉由長按產生的護盾獲得75%傷害吸收量加成。\n\n護盾對<color=#99FFFFFF>冰元素傷害</color>有250%的吸收效果，並會在形成時，為目前角色施加短暫的<color=#99FFFFFF>冰元素附著</color>。\n\n<i>一開始，酒裡加多少冰也傷害不了酒鬼。直到迪奧娜有了神之眼，然後就有了這些凍得人太陽穴痛的冰，讚啦！</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Diona_01"
       }
     ],
@@ -529,7 +531,8 @@
         },
         "Id": 395101,
         "Name": "珍選秘藏",
-        "Description": "施放元素戰技<color=#FFD780FF>貓爪凍凍</color>後的20秒內，隊伍中的角色觸發超導、星超導反應時，迪奧娜還會協同發射3枚<color=#FFD780FF>凍凍貓貓爪</color>。依此方式發射的<color=#FFD780FF>凍凍貓貓爪</color>無法產生元素微粒，在命中敵人時也無法產生護盾。該效果每3.5秒至多觸發一次。\n此外，處於{LINK#N11330003}<color=#FFD780FF>極星輝域</color>{/LINK}中時，迪奧娜將會進入<color=#FFD780FF>輝映·星超導</color>狀態。",
+        "Description": "施放元素戰技<color=#FFD780FF>貓爪凍凍</color>後的20秒內，隊伍中的角色觸發星超導、超導、冰元素擴散、星擴散反應時，迪奧娜還會協同發射3枚<color=#FFD780FF>凍凍貓貓爪</color>。依此方式發射的<color=#FFD780FF>凍凍貓貓爪</color>無法產生元素微粒，在命中敵人時也無法產生護盾。該效果每3.5秒至多觸發一次。\n此外，處於{LINK#N11330003}<color=#FFD780FF>極星輝域</color>{/LINK}中時/隊伍中的角色在附近觸發星擴散反應後的8秒內，迪奧娜將分別進入<color=#FFD780FF>輝映·星超導</color>/<color=#FFD780FF>輝映·星擴散</color>狀態。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Diona_08"
       }
     ],
@@ -746,6 +749,7 @@
       "Id": 10395,
       "Name": "最烈特調",
       "Description": "拋出特別調製的冰釀特調，造成<color=#99FFFFFF>冰元素範圍傷害</color>，並產生冰氣酒霧領域。\n\n<color=#FFD780FF>冰氣酒霧領域</color>\n·對其中的敵人持續造成<color=#99FFFFFF>冰元素傷害</color>。\n·為其中的角色持續恢復生命值。\n\n<i>迪奧娜自己都覺得不人道的恐怖配方。前味恐怖，推薦留給敵人；後勁清冽，可惜只能用鼻子和皮膚享用。</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Diona_01"
     },
     "Inherents": [
@@ -768,6 +772,7 @@
         "Id": 392101,
         "Name": "貓尾隱藏菜單",
         "Description": "處於<color=#FFD780FF>貓爪凍凍</color>的護盾保護下的角色，移動速度提升10%，體力消耗降低10%。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Diona_05"
       },
       {
@@ -789,6 +794,7 @@
         "Id": 392201,
         "Name": "滑稽百出的醉相",
         "Description": "敵人進入<color=#FFD780FF>最烈特調</color>的領域後的15秒內，攻擊力降低10%。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Diona_06"
       },
       {
@@ -807,6 +813,7 @@
         "Id": 392301,
         "Name": "附贈的下酒菜",
         "Description": "完美烹飪恢復類食物時，有12%的機率獲得兩倍產出。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_Cook_Heal"
       }
     ],
@@ -853,7 +860,7 @@
         "Id": 396,
         "Name": "貓尾打烊之時",
         "Description": "處在<color=#FFD780FF>最烈特調</color>領域內的角色，依據生命值獲得如下效果：\n·生命值低於或等於50%時，受治療加成提升30%。\n·生命值高於50%時，元素精通提升200。",
-        "SpecialDescription": "處在<color=#FFD780FF>最烈特調</color>領域內的角色，依據生命值獲得如下效果：\n·生命值低於或等於50%時，受治療加成提升30%。\n·生命值高於50%時，元素精通提升200。\n\n此外，迪奧娜的生命值上限提升25%。\n\n<color=#FFD780FF>輝映·星超導</color>：處在<color=#FFD780FF>最烈特調</color>領域內的角色造成的超導、星超導反應傷害提升40%。",
+        "SpecialDescription": "處在<color=#FFD780FF>最烈特調</color>領域內的角色，依據生命值獲得如下效果：\n·生命值低於或等於50%時，受治療加成提升30%。\n·生命值高於50%時，元素精通提升200。\n\n此外，迪奧娜的生命值上限提升25%。\n<color=#FFD780FF>輝映·星爍</color>：處於最烈特調領域內的角色造成的對應反應的傷害提高：\n<color=#FFD780FF>輝映·星超導</color>：超導、星超導反應傷害提升40%。\n<color=#FFD780FF>輝映·星擴散</color>：冰元素擴散、星擴散反應傷害提升40%。",
         "Icon": "UI_Talent_S_Diona_04"
       }
     ]

@@ -292,6 +292,7 @@
         "Id": 10711,
         "Name": "Invoker's Spear",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_03"
       },
       {
@@ -477,6 +478,7 @@
         "Name": "Secret Rite: Chasmic Soulfarer",
         "Description": "Performs a swift thrust, dealing <color=#FFACFFFF>Electro DMG</color> to opponents along the path.\n\nWhen Cyno is under the Pactsworn Pathclearer state triggered by Sacred Rite: Wolf's Swiftness, he will instead unleash a <color=#FFD780FF>Mortuary Rite</color> that deals thunderous <color=#FFACFFFF>AoE Electro DMG</color> and extends the duration of Pactsworn Pathclearer.\n\n<i>\"This judgment brooks no choice. There is no rejection or acceptance here... We have both long been bound up in this conviction.\"</i>",
         "SpecialDescription": "Performs a swift thrust, dealing <color=#FFACFFFF>Electro DMG</color> to opponents along the way.\n\nWhen Cyno is in the Pactsworn Pathclearer state, he will instead unleash a <color=#FFD780FF>Mortuary Rite</color> that deals thunderous <color=#FFACFFFF>AoE Electro DMG</color>. If Cyno enters the Pactsworn Pathclearer through the Elemental Burst <color=#FFD780FF>Sacred Rite: Wolf's Swiftness</color>, unleashing <color=#FFD780FF>Mortuary Rite</color> will also extend the duration of the current instance of Pactsworn Pathclearer.\n\n<i>\"This judgment brooks no choice. There is no rejection or acceptance here... We have both long been bound up in this conviction.\"</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Cyno_01"
       }
     ],
@@ -497,6 +499,7 @@
         "Id": 712401,
         "Name": "A Star With Which to Start the Journey",
         "Description": "If Cyno unleashes the Elemental Skill <color=#FFD780FF>Secret Rite: Chasmic Soulfarer</color> while not in the Pactsworn Pathclearer state, he will enter Pactsworn Pathclearer for 6s.\nAdditionally, when in a {LINK#N11330003}<color=#FFD780FF>Polestar Field</color>{/LINK}, Cyno will enter the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Cyno_08"
       }
     ],
@@ -840,6 +843,7 @@
       "Id": 10715,
       "Name": "Sacred Rite: Wolf's Swiftness",
       "Description": "Calls upon a divine spirit to indwell him, morphing into the Pactsworn Pathclearer.\n\n<color=#FFD780FF>Pactsworn Pathclearer</color>\nCyno's Normal, Charged, and Plunging Attacks will be converted to <color=#FFACFFFF>Electro DMG</color> that cannot be overridden.\n·Cyno's Elemental Mastery and resistance to interruption will increase, and he gains immunity to Electro-Charged DMG.\n\nThis effect will be canceled when Cyno leaves the field and lasts a maximum of 18s.\n\n<i>The secret rituals passed down within the ancient nation are as a final judgment to the General Mahamatra.</i>\n<i>Whether now or in the past, whether great storm or serpent, none shall shake the majesty of the law.</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Cyno_01"
     },
     "Inherents": [
@@ -863,6 +867,7 @@
         "Id": 712101,
         "Name": "Featherfall Judgment",
         "Description": "When Cyno is in the Pactsworn Pathclearer state activated by <color=#FFD780FF>Sacred Rite: Wolf's Swiftness</color>, Cyno will enter the Endseer stance at intervals. If he activates <color=#FFD780FF>Secret Rite: Chasmic Soulfarer</color> while affected by this stance, he will activate the Judication effect, increasing the DMG of this Secret Rite: Chasmic Soulfarer by 35%, and firing off 3 Duststalker Bolts that deal 100% of Cyno's ATK as <color=#FFACFFFF>Electro DMG.</color>\nDuststalker Bolt DMG is considered Elemental Skill DMG.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Cyno_05"
       },
       {
@@ -885,6 +890,7 @@
         "Id": 712201,
         "Name": "Authority Over the Nine Bows",
         "Description": "Cyno's DMG values will be increased based on his Elemental Mastery as follows:\n· Pactsworn Pathclearer's Normal Attack DMG is increased by 150% of his Elemental Mastery.\n· Duststalker Bolt DMG from his Ascension Talent Featherfall Judgment is increased by 250% of his Elemental Mastery.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Cyno_06"
       },
       {
@@ -903,6 +909,7 @@
         "Id": 712301,
         "Name": "The Gift of Silence",
         "Description": "Gains 25% more rewards when dispatched on a Sumeru Expedition for 20 hours.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Cyno_07"
       }
     ],
@@ -934,7 +941,7 @@
       {
         "Id": 714,
         "Name": "Austerity: Forbidding Guard",
-        "Description": "When Cyno is in the Pactsworn Pathclearer state triggered by <color=#FFD780FF>Sacred Rite: Wolf's Swiftness</color>, after he triggers an Electro-Charged, Lunar-Charged, Superconduct, Overloaded, Quicken, Aggravate, Hyperbloom, or Electro Swirl reaction, he will restore 3 Elemental Energy for all nearby party members (except himself.)\nThis effect can occur 5 times within one use of <color=#FFD780FF>Sacred Rite: Wolf's Swiftness</color>.",
+        "Description": "When Cyno is in the Pactsworn Pathclearer state triggered by <color=#FFD780FF>Sacred Rite: Wolf's Swiftness</color>, after he triggers an Electro-Charged, Lunar-Charged, Superconduct, Stellar-Conduct, Overloaded, Quicken, Aggravate, Hyperbloom, or Electro Swirl reaction, he will restore 3 Elemental Energy for all nearby party members (except himself.)\nThis effect can occur 5 times within one use of <color=#FFD780FF>Sacred Rite: Wolf's Swiftness</color>.",
         "SpecialDescription": "When Cyno is in the Pactsworn Pathclearer state triggered by <color=#FFD780FF>Sacred Rite: Wolf's Swiftness</color>, after he triggers an Electro-Charged, Lunar-Charged, Superconduct, Stellar-Conduct, Overloaded, Quicken, Aggravate, Hyperbloom, or Electro Swirl reaction, he will restore 3 Elemental Energy to all nearby party members (except himself). This effect can occur 5 times within one use of <color=#FFD780FF>Sacred Rite: Wolf's Swiftness</color>.\n\nWhen other characters affected by <color=#FFD780FF>Together We Rise</color> trigger the aforementioned reaction, they will also regenerate 20 Elemental Energy for Cyno. This effect can trigger once every 18s.",
         "Icon": "UI_Talent_S_Cyno_03"
       },

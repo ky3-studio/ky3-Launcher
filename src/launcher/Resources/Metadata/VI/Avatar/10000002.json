@@ -1,0 +1,1175 @@
+{
+  "Id": 10000002,
+  "PromoteId": 2,
+  "Sort": 34,
+  "Body": 2,
+  "Icon": "UI_AvatarIcon_Ayaka",
+  "SideIcon": "UI_AvatarIcon_Side_Ayaka",
+  "Name": "Kamisato Ayaka",
+  "Description": "Đại tiểu thư nhà Kamisato thuộc \"Hiệp Hội Yashiro\" Inazuma. Đoan trang thanh lịch, thông minh và mạnh mẽ.",
+  "BeginTime": "2021-07-21T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 1,
+  "BaseValue": {
+    "HpBase": 1000.986,
+    "AttackBase": 26.6266,
+    "DefenseBase": 61.0266
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 231,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Lần 1|{param1:F1P}",
+            "Sát Thương Lần 2|{param2:F1P}",
+            "Sát Thương Lần 3|{param3:F1P}",
+            "Sát Thương Lần 4|{param4:F1P}*3",
+            "Sát Thương Lần 5|{param7:F1P}",
+            "Sát Thương Trọng Kích|{param8:F1P}*3",
+            "Trọng Kích tiêu hao thể lực|{param9:F1} điểm",
+            "Sát Thương Khi Rơi|{param10:P}",
+            "Sát Thương Khi Rơi Từ Độ Cao Thấp/Cao|{param11:P}/{param12:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 23101,
+              "Level": 1,
+              "Parameters": [
+                0.457253,
+                0.486846,
+                0.626218,
+                0.226464,
+                0,
+                0,
+                0.781817,
+                0.55126,
+                20,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 23102,
+              "Level": 2,
+              "Parameters": [
+                0.494472,
+                0.526473,
+                0.677189,
+                0.244897,
+                0,
+                0,
+                0.845454,
+                0.59613,
+                20,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 23103,
+              "Level": 3,
+              "Parameters": [
+                0.53169,
+                0.5661,
+                0.72816,
+                0.26333,
+                0,
+                0,
+                0.90909,
+                0.641,
+                20,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 23104,
+              "Level": 4,
+              "Parameters": [
+                0.584859,
+                0.62271,
+                0.800976,
+                0.289663,
+                0,
+                0,
+                0.999999,
+                0.7051,
+                20,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 23105,
+              "Level": 5,
+              "Parameters": [
+                0.622077,
+                0.662337,
+                0.851947,
+                0.308096,
+                0,
+                0,
+                1.063635,
+                0.74997,
+                20,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 23106,
+              "Level": 6,
+              "Parameters": [
+                0.664613,
+                0.707625,
+                0.9102,
+                0.329163,
+                0,
+                0,
+                1.136363,
+                0.80125,
+                20,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 23107,
+              "Level": 7,
+              "Parameters": [
+                0.723098,
+                0.769896,
+                0.990298,
+                0.358129,
+                0,
+                0,
+                1.236362,
+                0.87176,
+                20,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 23108,
+              "Level": 8,
+              "Parameters": [
+                0.781584,
+                0.832167,
+                1.070395,
+                0.387095,
+                0,
+                0,
+                1.336362,
+                0.94227,
+                20,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 23109,
+              "Level": 9,
+              "Parameters": [
+                0.84007,
+                0.894438,
+                1.150493,
+                0.416061,
+                0,
+                0,
+                1.436362,
+                1.01278,
+                20,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 23110,
+              "Level": 10,
+              "Parameters": [
+                0.903873,
+                0.96237,
+                1.237872,
+                0.447661,
+                0,
+                0,
+                1.545453,
+                1.0897,
+                20,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 23111,
+              "Level": 11,
+              "Parameters": [
+                0.967676,
+                1.030302,
+                1.325251,
+                0.479261,
+                0,
+                0,
+                1.654544,
+                1.16662,
+                20,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 23112,
+              "Level": 12,
+              "Parameters": [
+                1.031479,
+                1.098234,
+                1.41263,
+                0.51086,
+                0,
+                0,
+                1.763635,
+                1.24354,
+                20,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 23113,
+              "Level": 13,
+              "Parameters": [
+                1.095281,
+                1.166166,
+                1.50001,
+                0.54246,
+                0,
+                0,
+                1.872725,
+                1.32046,
+                20,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 23114,
+              "Level": 14,
+              "Parameters": [
+                1.159084,
+                1.234098,
+                1.587389,
+                0.574059,
+                0,
+                0,
+                1.981816,
+                1.39738,
+                20,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 23115,
+              "Level": 15,
+              "Parameters": [
+                1.222887,
+                1.30203,
+                1.674768,
+                0.605659,
+                0,
+                0,
+                2.090907,
+                1.4743,
+                20,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10024,
+        "Name": "Trường Phái Kamisato - Kabuki",
+        "Description": "<color=#FFD780FF>Tấn công thường</color>\nThực hiện tối đa 5 lần đánh kiếm liên tiếp.\n\n<color=#FFD780FF>Trọng Kích</color>\nTiêu hao thể lực nhất định, liên tiếp phóng ra kiếm gió ở chính giữa.\n\n<color=#FFD780FF>Tấn công khi đáp</color>\nĐáp xuống đất từ trên không, tấn công kẻ địch trên đường và gây sát thương phạm vi khi chạm đất.",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_A_01"
+      },
+      {
+        "GroupId": 232,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Kỹ Năng|{param1:P}",
+            "CD|{param2:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 23201,
+              "Level": 1,
+              "Parameters": [
+                2.392,
+                10
+              ]
+            },
+            {
+              "Id": 23202,
+              "Level": 2,
+              "Parameters": [
+                2.5714,
+                10
+              ]
+            },
+            {
+              "Id": 23203,
+              "Level": 3,
+              "Parameters": [
+                2.7508,
+                10
+              ]
+            },
+            {
+              "Id": 23204,
+              "Level": 4,
+              "Parameters": [
+                2.99,
+                10
+              ]
+            },
+            {
+              "Id": 23205,
+              "Level": 5,
+              "Parameters": [
+                3.1694,
+                10
+              ]
+            },
+            {
+              "Id": 23206,
+              "Level": 6,
+              "Parameters": [
+                3.3488,
+                10
+              ]
+            },
+            {
+              "Id": 23207,
+              "Level": 7,
+              "Parameters": [
+                3.588,
+                10
+              ]
+            },
+            {
+              "Id": 23208,
+              "Level": 8,
+              "Parameters": [
+                3.8272,
+                10
+              ]
+            },
+            {
+              "Id": 23209,
+              "Level": 9,
+              "Parameters": [
+                4.0664,
+                10
+              ]
+            },
+            {
+              "Id": 23210,
+              "Level": 10,
+              "Parameters": [
+                4.3056,
+                10
+              ]
+            },
+            {
+              "Id": 23211,
+              "Level": 11,
+              "Parameters": [
+                4.5448,
+                10
+              ]
+            },
+            {
+              "Id": 23212,
+              "Level": 12,
+              "Parameters": [
+                4.784,
+                10
+              ]
+            },
+            {
+              "Id": 23213,
+              "Level": 13,
+              "Parameters": [
+                5.083,
+                10
+              ]
+            },
+            {
+              "Id": 23214,
+              "Level": 14,
+              "Parameters": [
+                5.382,
+                10
+              ]
+            },
+            {
+              "Id": 23215,
+              "Level": 15,
+              "Parameters": [
+                5.681,
+                10
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10018,
+        "Name": "Trường Phái Kamisato - Hyouka",
+        "Description": "Đánh thức đóa hoa băng nở rộ, đánh bay kẻ địch bên cạnh và gây <color=#99FFFFFF>sát thương phạm vi Nguyên Tố Băng</color>.\n\n<i>\"Mây lãng đãng, trăng nhạt nhòa, sương mù mờ ảo, trái tim say đắm miền rong ruổi.\"</i>",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_S_Ayaka_01"
+      },
+      {
+        "GroupId": 233,
+        "Proud": {
+          "Descriptions": [
+            "Khởi Động Tiêu Hao Thể Lực|{param1:F1} điểm",
+            "Duy Trì Tiêu Hao Thể Lực|Mỗi giây {param2:F1} điểm",
+            "Thời Gian Đính Kèm Kéo Dài|{param3:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 23301,
+              "Level": 1,
+              "Parameters": [
+                10,
+                15,
+                5
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10013,
+        "Name": "Trường Phái Kamisato - Senho",
+        "Description": "<color=#FFD780FF>Thay thế xung kích</color>\nẨn vào vụn băng, tiêu hao thể lực để hóa thành dòng chảy cực nhanh.\n\nỞ trạng thái Senho, Kamisato Ayaka có thể di chuyển nhanh trên mặt nước.\nKhi dừng trạng thái Senho và hiện thân, sẽ sinh ra hiệu quả sau:\n·Thi triển sức mạnh hàn băng, <color=#99FFFFFF>gán ấn nguyên tố Băng</color> lên kẻ địch xung quanh;\n·Ngưng tụ khí lạnh trên kiếm, khiến Kamisato Ayaka nhận <color=#99FFFFFF>đính kèm Nguyên Tố Băng</color> trong thời gian ngắn.\n\n<i>\"Nước đọng trên cánh vụt tan biến, hạc trắng đạp nước oán hận chi?\"</i>",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_S_Ayaka_02"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 239,
+      "Proud": {
+        "Descriptions": [
+          "Sát Thương Cắt|{param1:P}",
+          "Sát Thương Lan Tỏa|{param2:P}",
+          "Thời Gian Kéo Dài|{param3:F1}s",
+          "CD|{param4:F1}s",
+          "Năng Lượng Nguyên Tố|{param5:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 23901,
+            "Level": 1,
+            "Parameters": [
+              1.123,
+              1.6845,
+              5,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 23902,
+            "Level": 2,
+            "Parameters": [
+              1.207225,
+              1.810837,
+              5,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 23903,
+            "Level": 3,
+            "Parameters": [
+              1.29145,
+              1.937175,
+              5,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 23904,
+            "Level": 4,
+            "Parameters": [
+              1.40375,
+              2.105625,
+              5,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 23905,
+            "Level": 5,
+            "Parameters": [
+              1.487975,
+              2.231962,
+              5,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 23906,
+            "Level": 6,
+            "Parameters": [
+              1.5722,
+              2.3583,
+              5,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 23907,
+            "Level": 7,
+            "Parameters": [
+              1.6845,
+              2.52675,
+              5,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 23908,
+            "Level": 8,
+            "Parameters": [
+              1.7968,
+              2.6952,
+              5,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 23909,
+            "Level": 9,
+            "Parameters": [
+              1.9091,
+              2.86365,
+              5,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 23910,
+            "Level": 10,
+            "Parameters": [
+              2.0214,
+              3.0321,
+              5,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 23911,
+            "Level": 11,
+            "Parameters": [
+              2.1337,
+              3.20055,
+              5,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 23912,
+            "Level": 12,
+            "Parameters": [
+              2.246,
+              3.369,
+              5,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 23913,
+            "Level": 13,
+            "Parameters": [
+              2.386375,
+              3.579562,
+              5,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 23914,
+            "Level": 14,
+            "Parameters": [
+              2.52675,
+              3.790125,
+              5,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 23915,
+            "Level": 15,
+            "Parameters": [
+              2.667125,
+              4.000687,
+              5,
+              20,
+              80
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10019,
+      "Name": "Trường Phái Kamisato - Soumetsu",
+      "Description": "Triệu hồi băng giá với dáng vẻ hoàn hảo, thi triển Cổng Băng Tuyết liên tục về phía trước.\n\n<color=#FFD780FF>Cổng Băng Tuyết</color>\n·Dùng gió tuyết sắc như đao nhọn chém liên tục vào kẻ địch tiếp xúc, gây <color=#99FFFFFF>sát thương Nguyên Tố Băng</color>;\n·Khi hết thời gian sẽ bung tỏa, gây <color=#99FFFFFF>sát thương phạm vi Nguyên Tố Băng</color>.\n\n<i>\"Tuyết phủ thân hạc, vùi lấp tâm tư, tận đáy lòng nặng trĩu nỗi bi ai.\"</i>",
+      "SpecialEnergyType": 0,
+      "Icon": "Skill_E_Ayaka"
+    },
+    "Inherents": [
+      {
+        "GroupId": 221,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 22101,
+              "Level": 1,
+              "Parameters": [
+                0.3,
+                6
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 22101,
+        "Name": "Lời Phán Amatsumi Kunitsumi",
+        "Description": "Trong vòng 6s sau khi thi triển <color=#FFD780FF>Trường Phái Kamisato - Hyouka</color>, sát thương gây ra bởi tấn công thường và trọng kích của Kamisato Ayaka tăng 30%.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Ayaka_05"
+      },
+      {
+        "GroupId": 222,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 22201,
+              "Level": 1,
+              "Parameters": [
+                10,
+                0.18,
+                10
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 22201,
+        "Name": "Lời Chúc Kanten Senmyou",
+        "Description": "Khi <color=#FFD780FF>Trường Phái Kamisato - Senho</color> kết thúc sẽ thi triển hàn băng, nếu đánh trúng địch, Kamisato Ayaka sẽ nhận hiệu quả sau:\n·Hồi 10 điểm thể lực;\n·Nhận 18% <color=#99FFFFFF>buff sát thương Nguyên Tố Băng</color>, duy trì 10s.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Ayaka_06"
+      },
+      {
+        "GroupId": 223,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 22301,
+              "Level": 1,
+              "Parameters": [
+                0.1,
+                2
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 22301,
+        "Name": "Bí Kíp Kiểm Tra",
+        "Description": "Khi ghép nguyên liệu đột phá vũ khí sẽ có 10% tỷ lệ nhận x2 thành phẩm.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_Combine_Weapon_Double"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 21,
+        "Name": "Anh Đào Sương Giá",
+        "Description": "Khi tấn công thường hoặc trọng kích của Kamisato Ayaka gây <color=#99FFFFFF>sát thương Nguyên Tố Băng</color> cho địch, có 50% tỷ lệ giảm 0.3s CD của <color=#FFD780FF>Trường Phái Kamisato - Hyouka</color>. Hiệu quả này mỗi 0.1s chỉ kích hoạt 1 lần.",
+        "Icon": "UI_Talent_S_Ayaka_01"
+      },
+      {
+        "Id": 22,
+        "Name": "Tam Trùng Tuyết Môn",
+        "Description": "Khi thi triển <color=#FFD780FF>Trường Phái Kamisato - Soumetsu</color> sẽ thi triển thêm 2 Cổng Băng Tuyết với quy mô rất nhỏ, mỗi cổng gây sát thương bằng 20% sát thương ban đầu.",
+        "Icon": "UI_Talent_S_Ayaka_02"
+      },
+      {
+        "Id": 23,
+        "Name": "Bạch Hoa Cẩm Họa",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Trường Phái Kamisato - Soumetsu</color> +3.\nTăng nhiều nhất 15 cấp.",
+        "Icon": "UI_Talent_U_Ayaka_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 24,
+        "Name": "Doanh Khuyết Lưu Phản",
+        "Description": "Sau khi kẻ địch chịu sát thương do Cổng Băng Tuyết của <color=#FFD780FF>Trường Phái Kamisato - Soumetsu</color> gây ra, phòng ngự của địch sẽ giảm 30%, kéo dài 6s.",
+        "Icon": "UI_Talent_S_Ayaka_03"
+      },
+      {
+        "Id": 25,
+        "Name": "Hoa Vân Chung Nhập Nguyệt",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Trường Phái Kamisato - Hyouka</color> +3.\nTăng nhiều nhất 15 cấp.",
+        "Icon": "UI_Talent_U_Ayaka_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 26,
+        "Name": "Gian Thủy Nguyệt",
+        "Description": "Mỗi 10s, Kamisato Ayaka sẽ nhận được Usurahi Butou, khiến sát thương trọng kích gây ra tăng 298%. Hiệu quả Usurahi Butou sẽ mất sau 0.5s trọng kích trúng kẻ địch, và bắt đầu tính giờ lại.",
+        "Icon": "UI_Talent_S_Ayaka_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Bạch Hạc Sương Hoa",
+    "Detail": "Đại tiểu thư nhà Kamisato thuộc \"Hiệp Hội Yashiro\" Inazuma. Đoan trang thanh lịch, thông minh và mạnh mẽ.",
+    "Association": 5,
+    "Native": "Hiệp Hội Yashiro",
+    "BirthMonth": 9,
+    "BirthDay": 28,
+    "VisionBefore": "Băng",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Cung Tuyết Hạc",
+    "CvChinese": "小N",
+    "CvJapanese": "早見沙織",
+    "CvEnglish": "Erica Mendez",
+    "CvKorean": "Lee Yoo-ri",
+    "CookBonus": {
+      "OriginItemId": 108283,
+      "ItemId": 108300,
+      "InputList": [
+        100092,
+        110006,
+        101202
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Lần đầu gặp mặt...",
+        "Context": "Tôi là Kamisato Ayaka thuộc Trường Phái Kamisato\nRất vui được làm quen với bạn."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Yên ổn",
+        "Context": "Thời gian yên bình nhàn rỗi thế này, nếu được tận hưởng nhiều hơn thì tốt quá... Mình thật tham lam."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Kiếm",
+        "Context": "Kiếm, tựa như trà vậy, nếm kỹ từng chút một mới có thể hiểu được sự tao nhã trong đó."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Xuất thần",
+        "Context": "Đây là đời sống hằng ngày của Nhà Lữ Hành sao, hì, bỗng có cảm giác hiểu bạn hơn rồi."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Danh đao",
+        "Context": "Đao kiếm ôm hoài bão sự nghiệp, tựa người thợ nâng niu viên ngọc quý của mình."
+      },
+      {
+        "Title": "Khi trời mưa...",
+        "Context": "Theo tôi đi trú mưa nhé."
+      },
+      {
+        "Title": "Khi có sấm sét...",
+        "Context": "Ngài Ogosho... đang nói điều gì sao?"
+      },
+      {
+        "Title": "Khi tuyết rơi...",
+        "Context": "Tuyết tạnh phủ trắng xóa, quýt cao tôn cành ngọc. Uhm... Phong cảnh đẹp thế này, chỉ thiếu một bình trà để phụ họa thôi."
+      },
+      {
+        "Title": "Ánh nắng thật chan hòa...",
+        "Context": "Nắng ấm gió hiu hiu, có muốn đi dạo không?"
+      },
+      {
+        "Title": "Khi gió nổi lên...",
+        "Context": "Hãy nhắm mắt lại, hướng về phía gió thổi... Sao nào, thoải mái chứ?"
+      },
+      {
+        "Title": "Chào buổi sáng...",
+        "Context": "Chào buổi sáng, nhà lữ hành. Có thể gặp bạn trong buổi sáng ban mai thế này, tôi thật sự không kìm lòng được... cảm thấy... hôm nay sẽ là một ngày suôn sẻ."
+      },
+      {
+        "Title": "Chào buổi chiều...",
+        "Context": "Chào buổi chiều. Ăn cơm xong sẽ luôn cảm thấy hơi buồn ngủ. Có hứng thú chơi cờ để tỉnh táo lại không?"
+      },
+      {
+        "Title": "Chào buổi tối...",
+        "Context": "Chào buổi tối, gió đêm mát mẻ, sẽ là một buổi tối tuyệt vời đây."
+      },
+      {
+        "Title": "Ngủ ngon...",
+        "Context": "Nếu biết là mơ sao phải tỉnh, chi bằng hò hẹn cùng với nhau."
+      },
+      {
+        "Title": "Về bản thân Ayaka - Hiệp Hội Yashiro",
+        "Context": "Gia tộc Kamisato của Hiệp Hội Yashiro đứng đầu trong giới danh môn ở Inazuma. Là một nhánh trong Hiệp Hội Tam Cực, phụ trách quản lý tổ chức các hoạt động tế lễ và nghệ thuật nhân văn. Từ khi cha mẹ qua đời, mọi việc lớn nhỏ trong gia tộc đều do anh trai và tôi gánh vác."
+      },
+      {
+        "Title": "Về bản thân Ayaka - Địa Vị",
+        "Context": "Rất nhiều người kính trọng tôi vì tôi là Shirasagi Himegimi, là đại tiểu thư của Hiệp Hội Yashiro nhà Kamisato. Điều mà họ kính trọng chỉ là địa vị của tôi, chứ không liên quan đến con người thật sự của Ayaka này...\nCho nên theo tôi nghĩ, người có thể thật sự gần gũi với tôi, có lẽ chỉ có..."
+      },
+      {
+        "Title": "Về bản thân Ayaka - Nguyện Vọng",
+        "Context": "Bây giờ tôi vẫn muốn trở thành người mà mọi người tin tưởng, nhưng nguyên nhân đã không còn là do trách nhiệm trên người hoặc kỳ vọng của người khác. Mà là vì, bạn cũng là người như thế."
+      },
+      {
+        "Title": "Về Chúng Ta - Phòng Trà",
+        "Context": "Nếu bạn rảnh rỗi, chúng ta đến Phòng Trà Komore nhé? Trong những ngày yên bình này, nghĩ tới giao lưu trà đạo thôi là đã thấy thú vị."
+      },
+      {
+        "Title": "Về Chúng Ta - Ngày Lễ",
+        "Context": "Nếu có cơ hội, tôi muốn thử cùng bạn đi chơi lễ ở đất nước khác. Phải tuân thủ phong tục, luật lệ lễ nghi địa phương như thế nào, và tặng quà lưu niệm ra sao, có thể nhờ bạn... chỉ bảo cho tôi không?"
+      },
+      {
+        "Title": "Về Vision...",
+        "Context": "Vision là ấn tín dành cho người mang hoài bão lớn. Nếu như hỏi tôi có chí hướng gì... chuyện này bí mật nhé, đó chỉ là một giấc mơ nhỏ nhoi mà thôi."
+      },
+      {
+        "Title": "Có gì muốn chia sẻ không...",
+        "Context": "Thử hỏi, có câu \"Thiền Trà Cùng Vị\", lại có câu \"Kiếm Thiền Đồng Nhất\", vậy thì kiếm và trà, có mối liên hệ thế nào?"
+      },
+      {
+        "Title": "Những kiến thức thú vị...",
+        "Context": "Trong tòa thành này, bạn từng thấy hoa anh đào héo úa chưa? Cái đẹp \"héo úa\" này làm tôi nhớ đến cảnh hoa nở vào mùa xuân. Những người khác dường như không nghĩ như vậy, hoa anh đào không nở hoa nữa sẽ được dời đi nơi khác... Cho dù chỉ một lần, tôi cũng muốn nhìn thấy nó nở hoa lần nữa."
+      },
+      {
+        "Title": "Về Thoma...",
+        "Context": "Thoma là người bạn rất quan trọng với tôi, tính tình cởi mở và vui vẻ của anh ấy luôn cảm hóa đến tôi. Về mặt ý nghĩa nào đó, anh ấy như một người anh trai khác của tôi vậy, nay đã trở thành một trong những thành viên của \"Nhà Kamisato\"."
+      },
+      {
+        "Title": "Về Kujou Sara...",
+        "Context": "Kujou Sara làm việc cho Hiệp Hội Tenryou... Cô ấy luôn có khuôn mặt nghiêm túc. Tôi và cô ấy từng có tranh chấp, nhưng bản chất của cô ấy là một người trung nghĩa, điều này không thể phủ nhận."
+      },
+      {
+        "Title": "Về Shikanoin Heizou...",
+        "Context": "Ngài Shikanoin Heizou? Ngài ấy là người trong \"Hiệp Hội Tenryou\" như Kujou. Ngài ấy cũng là một người rất có nguyên tắc. Về việc tuân thủ nguyên tắc thì thậm chí còn cố chấp hơn cả Kujou. Thế nhưng \"nguyên tắc\" này bao gồm những việc gì, tôi nghĩ có lẽ chỉ có bản thân ngài Shikanoin biết thôi."
+      },
+      {
+        "Title": "Về Sayu...",
+        "Context": "Con bé Sayu này, gần đây có gây rắc rối gì cho bạn không? Nếu thấy nó lười biếng thì có thể nói tôi nghe."
+      },
+      {
+        "Title": "Về Raiden Shogun - Suy Đoán",
+        "Context": "Nghĩ gì về Ogosho đại nhân ư? Thuộc cấp như tôi không thể tùy tiện bình phẩm. Nhưng...đại nhân đang trên con đường theo đuổi sự \"vĩnh hằng\", hẳn sẽ cô đơn lắm."
+      },
+      {
+        "Title": "Về Raiden Shogun - Lập Trường",
+        "Context": "Đối mặt và thoát khỏi \"Lưỡi Đao Vô Tưởng\", có thể nói đây là một trải nghiệm vĩ đại. Tuy đối với tôi mà nói, cô ấy đúng là thần linh, có thể thay đổi vận mệnh của Inazuma trong phút chốc. Nhưng nếu cô ấy có xung đột với bạn... thì tôi nhất định sẽ đứng về phía bạn."
+      },
+      {
+        "Title": "Về Yae Miko...",
+        "Context": "Hợp tác giữa tôi và Guuji Yae luôn rất vui vẻ, bạn xem, tổ chức lễ hội rất tốn công sức, đa phần doanh thu sẽ không được tốt. Nhưng sản nghiệp mà Guuji Yae điều hành lại rất tao nhã và có thu hoạch lớn."
+      },
+      {
+        "Title": "Về Kamisato Ayato...",
+        "Context": "Thân là gia chủ của nhà Kamisato, anh trai thường phải tham dự rất nhiều tình huống xã giao. Tuy tôi cố gắng chia sẻ bớt trách nhiệm mà anh ấy gánh vác, nhưng cũng không thể nào làm vơi đi nỗi mệt nhọc bao năm nay của anh ấy. Haiz, thôi thì hy vọng anh trai hãy nghĩ đến em gái mình mà chú trọng sức khỏe."
+      },
+      {
+        "Title": "Về Yoimiya...",
+        "Context": "Tổ chức lễ hội là trách nhiệm của Hiệp Hội Yashiro và các pháp sư, và vị chuyên gia pháo hoa ấy có thể khiến không khí náo nhiệt hẳn lên, hai bên hợp tác nhiều nên cũng dần trở thành chỗ quen biết.\nHử? Vấn đề an ninh và cháy nổ à? Tôi đã có kế hoạch ngay từ đầu rồi. Nếu vì những nguyên nhân này mà không thể xem pháo hoa thì chẳng phải sẽ khiến dân chúng nuối tiếc sao."
+      },
+      {
+        "Title": "Muốn tìm hiểu Ayaka - Điều thứ 1",
+        "Context": "Tôi thấy yêu cầu của bạn rất đặc biệt. Nếu đã xem nhau là bạn bè rồi, thì tôi cũng nên thành thật. Nhưng sự việc này liên quan đến bí mật của nhà Kamisato, nên mong bạn có thể giữ kín."
+      },
+      {
+        "Title": "Muốn tìm hiểu Ayaka - Điều thứ 2",
+        "Context": "Có lần, vì không thể bảo vệ tốt thợ rèn bảo đao của quốc gia mà nhà Kamisato đã phải chịu sự đả kích không nhỏ. Fatui đã gài bẫy, giết hại rất nhiều thuộc cấp của gia tộc, khiến gia tộc phải hứng chịu nhiều sự trừng phạt. Cha tôi cũng vì vậy mà mất sớm, địa vị của nhà Kamisato trong Shogunate tuột dốc không phanh... Cũng may anh trai kế nhiệm đã xoay chuyển tình thế. Giờ đây, gia môn tuy đã phục hưng, Hiệp Hội Yashiro cũng đã đồng tâm hiệp lực, nhưng những chuyện đại sự vẫn phải giao cho anh trai quyết định."
+      },
+      {
+        "Title": "Muốn tìm hiểu Ayaka - Điều thứ 3",
+        "Context": "Kỹ thuật rèn đao được truyền thụ bởi Shogun, được phân loại tùy vào sự khác biệt về chiêm tinh, mục đích sử dụng, chất khoáng, lò lửa, tính cách con người và sự thay đổi nguyên tố. Đó là \"Raiden Gokaden\" được các thợ rèn nhắc đến. Thợ rèn nào có bản lĩnh chế tạo ra những thanh đao nổi tiếng sẽ được coi là những người có bản lĩnh thần thông, và sẽ được giao cho Hiệp Hội Yashiro quản lý. Vì vậy, nếu một thợ rèn nào đó phản bội mình, thì rõ ràng là do nhà Kamisato giám sát không hiệu quả."
+      },
+      {
+        "Title": "Muốn tìm hiểu Ayaka - Điều thứ 4",
+        "Context": "Đối với tôi mà nói, mẹ là một người phi thường. Mẹ đoan trang, tao nhã, cho dù gặp phải chuyện gì cũng sẽ nở nụ cười điềm đạm, từ tốn không vội vàng, quán xuyến mọi việc lớn nhỏ trong nhà Kamisato, dù nói rằng mẹ là hóa thân của sự hoàn hảo cũng không ngoa chút nào. Nhưng từ khi bà qua đời, tôi đã ý thức được rằng, tôi đã không còn là Ayaka bé bỏng có thể núp sau hình bóng của mẹ nữa rồi."
+      },
+      {
+        "Title": "Muốn tìm hiểu Ayaka - Điều thứ 5",
+        "Context": "Những lời tiếp theo đây, có thể sẽ không phù hợp với thân phận \"Nhà Kamisato của Hiệp Hội Yashiro\" nữa. Nhưng theo tôi nghĩ, có lẽ bạn sẽ bao dung cho sự bướng bỉnh này của tôi!\n...Tôi có chút mệt... có thể cho tôi dựa vào bờ vai của bạn chút không? Một chút thôi mà."
+      },
+      {
+        "Title": "Sở thích của Ayaka...",
+        "Context": "Tôi thích mọi thứ tao nhã: Thơ ca, chơi cờ và khiêu vũ. Bạn cũng có cùng hứng thú chứ?"
+      },
+      {
+        "Title": "Nỗi buồn của Ayaka - Lo Âu",
+        "Context": "Phiền não sao? À, đúng vậy, chỉ cần sống trên thế giới này thì không tránh khỏi đủ thứ chuyện không như ý. Nhưng nếu như là chuyện của bản thân mà khiến cho người xung quanh phải lo lắng thì... Quả thật, tôi không nên nói thì hơn..."
+      },
+      {
+        "Title": "Nỗi buồn của Ayaka - Tấm Lòng",
+        "Context": "Thẳng thắn đúng là rất khó. Tôi phải không ngừng nói với bản thân rằng mình là đại tiểu thư nhà Kamisato, phải thể hiện ra bộ dạng hoàn hảo không tỳ vết trước bao con mắt và sự kỳ vọng của mọi người. Có phải tôi cũng nên theo đuổi nguyện vọng của mình, có phải cũng nên... để bạn hiểu được tấm lòng của tôi không..."
+      },
+      {
+        "Title": "Món ăn yêu thích...",
+        "Context": "Tôi rất hứng thú với món ăn nước ngoài, tuy có rất ít cơ hội để thử. Uhm... nếu phải giới hạn món ăn trong phạm vi ở Inazuma thì... có lẽ là \"Cơm Trà Xanh\". Nhưng tôi không thể để khách hàng bình thường nhìn thấy, tôi chỉ nói khẽ cho bạn biết thôi."
+      },
+      {
+        "Title": "Món ăn ghét...",
+        "Context": "Tuy không phải là không thể ăn, nhưng tôi không thích ăn mỡ động vật hoặc nội tạng..."
+      },
+      {
+        "Title": "Nhận Được Quà I",
+        "Context": "Hm... tôi hạnh phúc quá..."
+      },
+      {
+        "Title": "Nhận Được Quà II",
+        "Context": "Cảm ơn bạn đã cho tôi cơ hội để thử món ăn này, tôi sẽ ghi nhớ hương vị của nó."
+      },
+      {
+        "Title": "Nhận Được Quà III",
+        "Context": "A... món này hơi nhiều dầu mỡ."
+      },
+      {
+        "Title": "Sinh nhật...",
+        "Context": "Hãy đi theo tôi! Chỉ cần đi một đoạn nhỏ thôi, không làm mất nhiều thời gian của bạn đâu.\nSau khi dò la được sinh nhật của bạn, tôi đã bắt tay chuẩn bị được một thời gian rồi. So với những món quà đắt tiền kia, tôi đoán... có lẽ món quà như thế sẽ hợp với tình bạn của chúng ta hơn. Ngoài ra, hãy để tôi múa một bài làm quà cho bạn nhé.\nXin thất lễ."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Khởi",
+        "Context": "Rất cám ơn. So tài với bạn giúp tôi học được nhiều điều, tin rằng về vấn đề kiếm thuật cũng sẽ có tiến bộ vượt bậc."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Thừa",
+        "Context": "Cảm ơn vì đã chỉ bảo, có bạn giúp đỡ, tôi đã hiểu rõ hơn về năng lực của mình."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Chuyển",
+        "Context": "Cảm thấy lên tay hẳn rồi. Ngoài việc giải quyết công chuyện của Hiệp Hội Yashiro, còn có thời gian để trải nghiệm một số việc mới mẻ. Có muốn đến đây nếm thử món điểm tâm mà tôi mới học gần đây không?"
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Hợp",
+        "Context": "Thử ngẫm nghĩ xem, đời này như phiến đá; chuyện đời như phù du, khó nắm bắt\n...Xin lỗi, đáng ra lúc này phải vui mừng mà tôi lại nhớ đến những bài thơ buồn như vậy. Thời gian ở bên bạn thật thoải mái, khiến tôi bỗng cảm thấy sợ mất đi. Thật là... thất lễ rồi."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố I",
+        "Context": "Khiêu vũ nào."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố II",
+        "Context": "Thất lễ rồi."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố III",
+        "Context": "Tuyết phảng phất."
+      },
+      {
+        "Title": "Kỹ Năng Nộ I",
+        "Context": "...Quyết thắng!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ II",
+        "Context": "Hoa đào rơi như tuyết."
+      },
+      {
+        "Title": "Kỹ Năng Nộ III",
+        "Context": "Trường Phái Kamisato: Soumetsu!"
+      },
+      {
+        "Title": "Mở Rương I",
+        "Context": "Đi tìm kỳ trân dị bảo...cũng là một thú vui tao nhã."
+      },
+      {
+        "Title": "Mở Rương II",
+        "Context": "Ha ha...hôm nay may đấy."
+      },
+      {
+        "Title": "Mở Rương III",
+        "Context": "Tôi sẽ trân trọng vận may này."
+      },
+      {
+        "Title": "HP Thấp I",
+        "Context": "Không được xem thường."
+      },
+      {
+        "Title": "HP Thấp II",
+        "Context": "Đối thủ hiếm có..."
+      },
+      {
+        "Title": "HP Thấp III",
+        "Context": "Phải dứt khoát rồi..."
+      },
+      {
+        "Title": "HP Đồng Hành Thấp I",
+        "Context": "Không được sơ suất."
+      },
+      {
+        "Title": "HP Đồng Hành Thấp II",
+        "Context": "Các hạ phải cẩn thận."
+      },
+      {
+        "Title": "Ngã Xuống I",
+        "Context": "Thất lễ rồi..."
+      },
+      {
+        "Title": "Ngã Xuống II",
+        "Context": "Ta còn có chuyện chưa hoàn thành..."
+      },
+      {
+        "Title": "Ngã Xuống III",
+        "Context": "Để gia tộc... phải xấu hổ rồi..."
+      },
+      {
+        "Title": "Bị Trọng Kích I",
+        "Context": "Tên vô lễ..."
+      },
+      {
+        "Title": "Bị Trọng Kích II",
+        "Context": "Sao lại..."
+      },
+      {
+        "Title": "Vào Đội I",
+        "Context": "Kamisato Ayaka tham kiến."
+      },
+      {
+        "Title": "Vào Đội II",
+        "Context": "Xin chỉ giáo."
+      },
+      {
+        "Title": "Vào Đội III",
+        "Context": "Hihi, xin chỉ bảo thêm."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Miêu Tả Nhân Vật",
+        "Context": "Người kế thừa gia tộc Kamisato - một trong ba danh môn cao quý của Inazuma, là một cặp anh em.\nAnh trai Ayato nhậm chức \"gia chủ\", quản lý công việc hành chính. Em gái Ayaka thân là \"công chúa\", thường ngày chủ yếu quán xuyến mọi việc trong và ngoài gia tộc.\nAyaka thường xuất hiện trong những trường hợp xã giao, cũng hay qua lại với giới thường dân. Vì thế, Ayaka thân thuộc với mọi người hơn và có danh vọng cao hơn anh trai mình, còn được gọi là \"Shirasagi Himegimi\".\nNhư mọi người đã được biết, tiểu thư Ayaka của gia tộc Kamisato có vóc dáng đoan trang, phẩm hạnh thanh cao, là nhân vật rất được dân chúng mến mộ."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 1",
+        "Context": "Trên lãnh thổ Inazuma, những công vụ chưa trình đến Raiden Shogun đa số sẽ do \"Sở Thẩm Định\" xử lý.\nQuyền nghị sự \"Sở Thẩm Định\" chia cho 3 tộc, còn được gọi là Hiệp Hội Tam Cực, tức \"Hiệp Hội Yashiro\", \"Hiệp Hội Tenryou\" và \"Hiệp Hội Kanjou\".\nNhững gia tộc sở hữu quyền lợi của ba hiệp hội này lần lượt mang họ là: Kamisato, Kujou và Hiiragi; Ba gia tộc cai quản nổi tiếng ở Inazuma.\nKamisato Ayaka chính là đại tiểu thư của nhà Kamisato, nổi tiếng với danh gọi Shirasagi Himegimi.\nNếu hỏi tại sao Ayaka lại có danh hiệu Shirasagi Himegimi, những người dân Inazuma đều có lời giải thích khác nhau:\n\"Bởi vì tiểu thư Ayaka cao quý thanh tao như bạch hạc vậy, hãy nhìn mà xem, tiểu thư sở hữu vẻ ngoài thanh tú xinh đẹp, nói năng thông minh lịch thiệp, chẳng lẽ không xứng với danh gọi công chúa sao?\"\n\"Tiểu thư Ayaka sao, tuy thân phận cao quý, nhưng đối đãi với chúng tôi rất tốt lại thân thiện. Tiểu thư có tính cách hiền lành nhân hậu, sẵn lòng cứu giúp người khác. Bạn biết không? Chính tiểu thư đã cưu mang Thoma bất chấp lời bàn tán của mọi người.\"\nMỗi người một cách nói, nhưng không ai biết nguồn gốc chính xác của danh xưng \"Shirasagi Himegimi\".\nThế nhưng, điều đấy đã đủ để thấy Ayaka thật sự rất được dân chúng yêu mến."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 2",
+        "Context": "Ayaka là con gái nhà Kamisato của Hiệp Hội Yashiro, vì thế Ayaka luôn đề phòng sự đấu tranh quyền lực giữa các gia tộc với nhau.\nTuy tuổi còn trẻ nhưng Ayaka đã có danh vọng rất cao, khó tránh sẽ gặp phải sự gây hấn âm thầm của các cậu ấm cô chiêu mang lòng ghen ghét với anh em nhà Kamisato.\nViệc tạo dựng hình tượng công chúng vốn chỉ mang tính hình thức, nhưng đối với nhà Kamisato, địa vị khiến những thông lệ vô nghĩa này trở nên có ý nghĩa xã giao.\nNếu không lượn lờ xoay sở trong mạng lưới quan hệ Inazuma thì sẽ không thể ngồi vững vị trí Hiệp Hội Yashiro. Do đó, hai anh em đã nhất trí với nhau.\nAnh trai Ayato vì bận việc chính sự, vả lại không thích giao thiệp nên việc lộ diện trong cộng đồng để xây dựng hình tượng nhà Kamisato sẽ giao cho cô em gái Ayaka, người có cử chỉ tao nhã và sở trường xã giao.\nVì sự đoan trang hiền thục, nhã nhặn lịch sự nên Ayaka luôn có được vị trí cao trong các mối quan hệ. Cho dù phải trao đổi với đối tác tiềm năng hay giao thiệp với giới quý tộc hạch sách, Ayaka đều rất có chừng mực, không hề để lộ sơ hở.\nNgoài ra, rất nhiều việc trong gia tộc đều do Ayaka quản lý. Nếu không có cô ấy, trong gia tộc chắc sẽ hỗn loạn lắm."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 3",
+        "Context": "Vào một chiều thu, Ayaka vừa xử lý xong vài việc vặt trở về, tình cờ nghe thấy một tiếng hát già cỗi từ căn nhà cũ.\nTrong nhà có một người phụ nữ già bị mù. Những ngón tay khô cằn lướt trên dây đàn gỗ phát ra âm thanh réo rắt như tiếng nước chảy.\nCó lẽ vì tai thính, bà lão đã nghe thấy tiếng bước chân, bèn hỏi người ngoài cửa là ai. Ayaka không muốn bà bối rối, bèn nói mình là cư dân sống gần đây bị lạc đường.\nVì ở trong Hiệp Hội Yashiro nên Ayaka rất quen thuộc với đời sống người dân, chẳng mấy chốc đã nhận ra bà lão cô độc không con cái này chính là người hát rong kiếm sống trên vỉa hè vào ngày đẹp trời hôm ấy.\nNhạc điệu đã xưa cũ, bài hát cũng thế. Vì khiếm thị nên bà đã tụt hậu rất nhiều. Cho dù là một đất nước theo đuổi sự vĩnh hằng, cũng xuất hiện một người dân sống gian khổ như vậy.\nVì có ý tốt, Ayaka đã che giấu thân phận và trò chuyện cùng bà lão hồi lâu. Bà lão ngỡ rằng Ayaka là cô thiếu nữ bình thường, bèn huyên thuyên về cách chế tạo và cách đàn của cây đàn gỗ này, còn tặng cho Ayaka một chút lá trà trong nhà mình.\nSo với lá trà cực phẩm của nhà Kamisato, loại lá trà thô này tựa như rễ cỏ. Nhưng Ayaka đã đón nhận một cách trân trọng, cảm ơn rối rít.\nNgày hôm ấy, Ayaka luôn nhớ về cha mẹ mình. Nếu cha mẹ vẫn còn, có lẽ sẽ có ngày già nua.\nKhi trở về nhà, Ayaka kể câu chuyện này cho anh trai Ayato. Hai anh em tận hưởng lá trà thô mà bà lão gửi tặng.\nSau này thi thoảng Ayaka lại đến thăm bà lão, vẫn tự xưng là cư dân sống gần đó, lần nào cũng mang các nhu yếu phẩm cần thiết cho sinh hoạt đến.\n\"Cây anh đào đầu đường lại nở rộ rồi.\" Ayaka tươi cười nói với bà lão: \"Đẹp như tiếng đàn của bà vậy.\""
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 4",
+        "Context": "Trong tưởng tượng của dân chúng, các gia tộc quyền quý thường sẽ ăn mặc và sống rất có đẳng cấp, ví như Kamisato Ayaka cao quý kia nhất định đang có cuộc sống xa xỉ và tùy tiện cực kỳ.\nTuy nhiên, cảm tưởng này chỉ đúng được một nửa.\nXét riêng về mặt hình thức, Ayaka đúng là sống kiểu cách hơn dân thường rất nhiều.\nKhoản chi phí thường ngày dùng để chi cho việc nghiên cứu kỹ thuật trồng hoa, trà đạo, thưởng thức danh trà, thưởng thức hoa lạ đúng là không hề ít ỏi. Thế nhưng, những điều này đều là kỹ năng cần nắm, không hề \"tùy tiện\" chút nào.\nNgược lại điều làm Ayaka nở nụ cười thật sự là những việc nhỏ nhặt của dân thường.\nVí dụ như làm điểm tâm, vớt cá vàng trong ao hoặc núp ở một góc nào đó xem tiểu thuyết mới ra lò của Nhà Xuất Bản Yae... đó đều là những việc vặt vãnh.\nTrong những lúc thế này, Ayaka không còn là Shirasagi Himegimi được muôn người ngưỡng mộ, không còn là Ayaka đại nhân quản lý nhà Kamisato, mà là \"cô thiếu nữ Ayaka\" bình thường.\nGỡ bỏ hình tượng đoan trang chín chắn khi ở bên ngoài, bộc lộ cái tôi vô tư và tự do. Chỉ khi trở thành \"cô thiếu nữ Ayaka\", cô ấy mới có thể trút bỏ gánh nặng, làm những việc mà mỗi cô gái bình thường đều có thể làm.\nKhi đói bụng vào đêm khuya, tránh mặt người hầu tự lẻn vào bếp, hát ngân nga rồi làm một bát Cơm Trà Xanh; Trong tiết học trà đạo, lén bói toán tình yêu khi nhìn vào hình dạng lá trà...\nTuy chưa từng giải thích với ai, nhưng Ayaka rất trân trọng thời gian trở thành \"thiếu nữ\" của mình. Bởi vì, thời gian tự do thế này thật sự rất ít."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 5",
+        "Context": "Các giáo viên hướng dẫn những kỹ nghệ khác nhau cho Ayaka đã hài lòng nói rằng: Bất luận là trà đạo, kiếm đạo hay kỳ đạo, Ayaka đều nắm vững tất cả.\nCô ấy dường như là một tiểu thư quý tộc văn võ song toàn, phong thái tuyệt vời. Có thể dạy dỗ một học sinh như vậy thật khiến người giáo viên cảm thấy vô cùng hãnh diện.\nNhưng thực sự... hoàn toàn không có gì tiếc nuối sao? Ayaka thầm nghĩ.\nTrà tâm, là trái tim chính trực yên bình thanh tịnh.\nKiếm tâm, là trái tim võ đạo dũng cảm mạnh mẽ.\nKỳ tâm, là trái tim trí tuệ hiểu biết thời thế.\nTrà tâm, kiếm tâm, kỳ tâm, đều là trái tim của cô ấy, nhưng ngoài ra, Ayaka cũng có một trái tim chân thành dành cho bạn bè.\nAyaka luôn chờ đợi một người bạn để đối xử bình đẳng, kề vai sát cánh, cùng cô xuất hiện tại bất cứ đâu.\nNgười đó sẽ không xem cô như người của \"Hiệp Hội Yashiro\" hay \"Shirasagi Himegimi\", sẽ không trói buộc cô bởi lễ tiết và địa vị. Tốt nhất còn nắm bắt nhiều mảng tri thức, hiểu biết các sự việc kỳ lạ... Khi cần còn có thể kể chuyện cho cô nghe.\nNhư vậy mới có thể trở thành bạn tốt của Ayaka được.\n\"Cũng đâu phải chuyện khó khăn gì nhỉ... Nhưng người bạn như vậy rốt cuộc đang ở đâu?\""
+      },
+      {
+        "Title": "Moriwakamaru",
+        "Context": "\"Tới đây, tới đây nào\"\n\"Tới chơi Temari nào.\"\n\"1, 2, 3\"\n\"Temari bay qua Anh Đào Thần.\"\n\"4, 5, 6\"\n\"Temari bay qua Núi Yougou.\"\n\"7, 8, 9\"\n\"Temari lại trở về chỗ cũ,\"\n\"Lại trở về trong tay Ayaka.\"\nĐây là bài đồng dao mà Ayaka hồi nhỏ thích nhất.\nHồi đó cô đặt tên cho Temari mà mình yêu thích nhất là \"Moriwakamaru\", ngày nào cũng vừa chơi Moriwakamaru vừa ngân nga bài hát này.\nNghe thấy tiếng hát của Ayaka, cha mẹ và anh trai đều bất giác mỉm cười, thậm chí sẽ cùng cô chơi đùa. Cả nhà quây thành vòng tròn, lần lượt tung Temari.\nNhưng đó đều là chuyện của rất lâu trước kia. Ayaka từ lâu đã không còn chơi Temari nữa.\nCô trở thành nhân vật lớn đảm đương trọng trách. Còn Moriwakamaru tượng trưng cho tuổi thơ, chứa đựng hồi ức quý giá cũng được cất vào trong tủ của Ayaka."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Nhiều năm trước, trong nhà gặp biến cố lớn, và gánh nặng đổ lên vai người anh trai Ayato. Khi đó, Ayaka vẫn chưa trưởng thành và đủ bản lĩnh như bây giờ.\nCô là một đứa trẻ ham chơi, không hiểu trách nhiệm gia tộc, thiếu kỹ năng và kinh nghiệm để đối phó với các nhân vật khác nhau.\nNhưng lúc nhìn mẹ ốm liệt giường và anh trai vất vả, Ayaka nhận ra rằng: Mình phải trưởng thành hơn.\nVì vậy, cô quyết định mài giũa lại kiếm thuật và thơ ca đã bị bẵng đi từ lâu - đây là việc rèn luyện cơ bản của một quý tộc, nếu cô có thể thành thạo hai thứ này, cô sẽ được coi là thiên kim của nhà Kamisato và có thể thay anh trai tham dự một số cuộc hội họp như tế lễ, cùng chia sẻ nỗi lo cho anh trai.\nSự thật đã chứng minh rằng Ayaka không có năng khiếu thiên phú, cô cũng từng phiền não vì không thể học thuộc bài thơ, văn viết thiếu tao nhã, kiếm thuật thiếu quy tắc.\nCô chưa từng nản lòng: Học một lần chưa nhớ thì sẽ học năm mươi lần, viết một lần chưa hay thì viết năm mươi lần, luyện kiếm một lần chưa tốt thì luyện năm mươi lần.\n\"Có công mài sắt có ngày nên kim\" - Đây là lời mẹ đã nói với cô.\nSau khi mẹ cô qua đời, cô không còn là Ayaka bé bỏng như xưa nữa. Cô bây giờ là Kamisato Ayaka, đại tiểu thư nhà Kamisato - một trong ba gia tộc dưới sự chỉ huy của Shogun.\nMài luyện kiếm thuật đã trở thành một phần của cuộc sống hằng ngày, chưa hề gián đoạn từ ngày đó cho đến nay.\nKhông biết qua bao nhiêu ngày, Ayaka cuối cùng cũng đã có thể một đòn đánh lui kẻ địch. Ngay lập tức, băng giá trong võ đường đông kết lại, ở giữa võ đường, trên mũi kiếm của cô treo lấy một viên Vision óng ánh như băng.\nCó công mài sắt có ngày nên kim, ngay cả thần linh cũng phải cảm động."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 200201,
+      "Name": "Thư Từ Hoa Xuân",
+      "Description": "Trang phục đi chơi của Kamisato Ayaka. Bộ váy được may dựa theo kiểu dáng trang phục nữ giới Fontaine trong tiểu thuyết, dường như có thể thông qua đó để nhìn thấy được diện mạo cuộc sống của các cô gái Fontaine.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_AyakaCostumeFruhling",
+      "SideIcon": "UI_AvatarIcon_Side_AyakaCostumeFruhling"
+    },
+    {
+      "Id": 200200,
+      "Name": "Giáp Rực Rỡ",
+      "Description": "Phong cách của Kamisato Ayaka. Dùng giáp mỏng dát lên váy, thể hiện khí chất thanh cao và bền bỉ của Shirasagi Himegimi.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104164,
+    113023,
+    101202,
+    112046,
+    104325,
+    113018
+  ],
+  "NameCard": {
+    "Name": "Kamisato Ayaka - Cây Quạt",
+    "Description": "Hoa văn danh thiếp. \nAyaka không ngừng thay đổi những chiếc quạt mang theo bên mình. Nếu muốn tặng quà cho cô ấy, tốt nhất không nên tặng cô ấy quạt mùa hè hay những chiếc dùng trong trò chơi ném quạt, lựa chọn tốt nhất chính là chiếc quạt dùng khi khiêu vũ hoặc khi tham gia các bữa tiệc trà.",
+    "Icon": "UI_NameCardIcon_Ayaka",
+    "PicturePrefix": "UI_NameCardPic_Ayaka"
+  },
+  "TraceEffect": {
+    "Id": 215018,
+    "Name": "Vết Tích - Bạch Hạc Sương Hoa",
+    "Description": "Vết Tích Tưởng Tượng của Kamisato Ayaka. \"Chớ than đông thiếu sắc, tuyết phủ trắng lối nhỏ.\"",
+    "Icon": "UI_TraceEffectIcon_Ayaka"
+  }
+}

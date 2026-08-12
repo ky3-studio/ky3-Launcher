@@ -309,6 +309,7 @@
         "Id": 10921,
         "Name": "Stellar Rend",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\nAt the end of the sequence, performs a more powerful slash. \n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_04"
       },
       {
@@ -461,6 +462,7 @@
         "Id": 10922,
         "Name": "Bestial Ascent",
         "Description": "Pounces forward using the Wushou arts, leaping high into the air after coming into contact with a target or surface.\nAfter Gaming has used Bestial Ascent to rise into the air, if he immediately uses a Plunging Attack, he will use the especially powerful Plunging Attack: Charmed Cloudstrider instead.\n\n<color=#FFD780FF>Plunging Attack: Charmed Cloudstrider</color>\nThe DMG from Plunging Attacks caused by Bestial Ascent is converted to <color=#FF9999FF>Pyro DMG</color> that cannot be overridden by other elemental infusions. Upon landing, Gaming will consume a fixed amount of HP. Gaming's HP cannot be reduced below 10% by this method.\nCharmed Cloudstrider DMG is considered Plunging Attack DMG.\n\n<i>\"Auspicious beasts leap high to pluck the greens — that symbolizes good fortune and knowing how to make some serious green, y'know — so may we all rise to new heights, one step at a time!\"</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Gaming_01"
       }
     ],
@@ -646,6 +648,7 @@
       "Id": 10925,
       "Name": "Suanni's Gilded Dance",
       "Description": "Gaming enters Wushou Stance, briefly applying <color=#FF9999FF>Pyro</color> to him, recovering a fixed amount of HP, and summons his companion, the Suanni Man Chai, to smash into his target, dealing <color=#FF9999FF>AoE Pyro DMG</color>.\nAfter bashing its target, Man Chai will roll to a nearby location before moving towards Gaming. When it links up with Gaming, Man Chai will leave the field and reset the CD for Gaming's Elemental Skill, Bestial Ascent.\nWhile Wushou Stance is active, his resistance to interruption is increased, and when Gaming lands with Charmed Cloudstrider attack or completes the forward pounce attack from Bestial Ascent with over 50% HP, he will summon Man Chai again.\nEach Gaming can only have 1 Man Chai on the field simultaneously.\nThis effect will be canceled once Gaming leaves the field.\n\n<i>\"The gilded Suanni spits out fortune like a fireworks show! Hey, now that's what's called prosperity, when business is really 'booming'!\"</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Gaming_01"
     },
     "Inherents": [
@@ -668,6 +671,7 @@
         "Id": 922101,
         "Name": "Dance of Amity",
         "Description": "After <color=#FFD780FF>Bestial Ascent</color>'s Plunging Attack: Charmed Cloudstrider hits an opponent, Gaming will regain 1.5% of his Max HP once every 0.2s for 0.8s.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Gaming_05"
       },
       {
@@ -690,6 +694,7 @@
         "Id": 922201,
         "Name": "Air of Prosperity",
         "Description": "When Gaming has less than 50% HP, he will receive a 20% Incoming Healing Bonus. When Gaming has 50% HP or more, Plunging Attack: Charmed Cloudstrider will deal 20% more DMG.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Gaming_06"
       },
       {
@@ -708,6 +713,7 @@
         "Id": 922301,
         "Name": "The Striding Beast",
         "Description": "During the day (06:00 – 18:00), your party members gain the Swift Stride effect: Movement SPD increased by 10%.\nDoes not take effect in Domains, Trounce Domains, or Spiral Abyss. Swift Stride does not stack.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Dehya_07"
       }
     ],

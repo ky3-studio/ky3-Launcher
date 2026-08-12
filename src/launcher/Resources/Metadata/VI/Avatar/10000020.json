@@ -1,0 +1,1229 @@
+{
+  "Id": 10000020,
+  "PromoteId": 20,
+  "Sort": 19,
+  "Body": 1,
+  "Icon": "UI_AvatarIcon_Razor",
+  "SideIcon": "UI_AvatarIcon_Side_Razor",
+  "Name": "Razor",
+  "Description": "Thiếu niên sống cùng sói trong Lang Lãnh thuộc Mondstadt, tránh xa thành phố và loài người. Có trực giác nhạy bén, hành động nhanh nhạy.",
+  "BeginTime": "2020-09-15T04:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 11,
+  "BaseValue": {
+    "HpBase": 1002.9701,
+    "AttackBase": 19.5888,
+    "DefenseBase": 62.9475
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 2031,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Lần 1|{param1:P}",
+            "Sát Thương Lần 2|{param2:P}",
+            "Sát Thương Lần 3|{param3:P}",
+            "Sát Thương Lần 4|{param4:P}",
+            "Sát Thương Trọng Kích Tuần Hoàn|{param5:P}",
+            "Sát Thương Trọng Kích Chí Mạng|{param6:P}",
+            "Thể lực Trọng Kích tiêu hao|Mỗi giây {param7:F1} điểm",
+            "Thời Gian Kéo Dài Tối Đa|{param8:F1}s",
+            "Sát Thương Khi Đáp|{param9:F1P}",
+            "ST Khi Rơi Từ Độ Cao Thấp/Cao|{param10:P}/{param11:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 203101,
+              "Level": 1,
+              "Parameters": [
+                0.9592,
+                0.82632,
+                1.03312,
+                1.36048,
+                0.625392,
+                1.1309,
+                40,
+                5,
+                0.820466,
+                1.640584,
+                2.049178
+              ]
+            },
+            {
+              "Id": 203102,
+              "Level": 2,
+              "Parameters": [
+                1.0246,
+                0.88266,
+                1.10356,
+                1.45324,
+                0.676296,
+                1.22295,
+                40,
+                5,
+                0.887248,
+                1.77412,
+                2.215971
+              ]
+            },
+            {
+              "Id": 203103,
+              "Level": 3,
+              "Parameters": [
+                1.09,
+                0.939,
+                1.174,
+                1.546,
+                0.7272,
+                1.315,
+                40,
+                5,
+                0.95403,
+                1.907656,
+                2.382765
+              ]
+            },
+            {
+              "Id": 203104,
+              "Level": 4,
+              "Parameters": [
+                1.1772,
+                1.01412,
+                1.26792,
+                1.66968,
+                0.79992,
+                1.4465,
+                40,
+                5,
+                1.049433,
+                2.098421,
+                2.621042
+              ]
+            },
+            {
+              "Id": 203105,
+              "Level": 5,
+              "Parameters": [
+                1.2426,
+                1.07046,
+                1.33836,
+                1.76244,
+                0.850824,
+                1.53855,
+                40,
+                5,
+                1.116215,
+                2.231957,
+                2.787835
+              ]
+            },
+            {
+              "Id": 203106,
+              "Level": 6,
+              "Parameters": [
+                1.3189,
+                1.13619,
+                1.42054,
+                1.87066,
+                0.909,
+                1.64375,
+                40,
+                5,
+                1.192538,
+                2.38457,
+                2.978456
+              ]
+            },
+            {
+              "Id": 203107,
+              "Level": 7,
+              "Parameters": [
+                1.417,
+                1.2207,
+                1.5262,
+                2.0098,
+                0.988992,
+                1.7884,
+                40,
+                5,
+                1.297481,
+                2.594412,
+                3.24056
+              ]
+            },
+            {
+              "Id": 203108,
+              "Level": 8,
+              "Parameters": [
+                1.5151,
+                1.30521,
+                1.63186,
+                2.14894,
+                1.068984,
+                1.93305,
+                40,
+                5,
+                1.402424,
+                2.804254,
+                3.502665
+              ]
+            },
+            {
+              "Id": 203109,
+              "Level": 9,
+              "Parameters": [
+                1.6132,
+                1.38972,
+                1.73752,
+                2.28808,
+                1.148976,
+                2.0777,
+                40,
+                5,
+                1.507367,
+                3.014096,
+                3.764769
+              ]
+            },
+            {
+              "Id": 203110,
+              "Level": 10,
+              "Parameters": [
+                1.7113,
+                1.47423,
+                1.84318,
+                2.42722,
+                1.23624,
+                2.2355,
+                40,
+                5,
+                1.621851,
+                3.243015,
+                4.050701
+              ]
+            },
+            {
+              "Id": 203111,
+              "Level": 11,
+              "Parameters": [
+                1.8094,
+                1.55874,
+                1.94884,
+                2.56636,
+                1.323504,
+                2.3933,
+                40,
+                5,
+                1.736335,
+                3.471933,
+                4.336632
+              ]
+            },
+            {
+              "Id": 203112,
+              "Level": 12,
+              "Parameters": [
+                1.9075,
+                1.64325,
+                2.0545,
+                2.7055,
+                1.410768,
+                2.5511,
+                40,
+                5,
+                1.850818,
+                3.700852,
+                4.622564
+              ]
+            },
+            {
+              "Id": 203113,
+              "Level": 13,
+              "Parameters": [
+                2.0056,
+                1.72776,
+                2.16016,
+                2.84464,
+                1.498032,
+                2.7089,
+                40,
+                5,
+                1.965302,
+                3.929771,
+                4.908496
+              ]
+            },
+            {
+              "Id": 203114,
+              "Level": 14,
+              "Parameters": [
+                2.1037,
+                1.81227,
+                2.26582,
+                2.98378,
+                1.585296,
+                2.8667,
+                40,
+                5,
+                2.079785,
+                4.15869,
+                5.194428
+              ]
+            },
+            {
+              "Id": 203115,
+              "Level": 15,
+              "Parameters": [
+                2.2018,
+                1.89678,
+                2.37148,
+                3.12292,
+                1.67256,
+                3.0245,
+                40,
+                5,
+                2.194269,
+                4.387608,
+                5.48036
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10201,
+        "Name": "Nanh Thép",
+        "Description": "<color=#FFD780FF>Tấn Công Thường</color>\nThực hiện tối đa 4 lần chém liên tiếp.\n\n<color=#FFD780FF>Trọng Kích</color>\nTiêu hao thể lực để xoay kiếm tấn công địch xung quanh.\nKhi ngừng quay, sẽ bổ một nhát cực mạnh.\n\n<color=#FFD780FF>Tấn Công Khi Đáp</color>\nĐáp xuống đất từ trên không, tấn công kẻ địch trên đường và gây sát thương phạm vi khi chạm đất.",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_A_04"
+      },
+      {
+        "GroupId": 2032,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Nhấn Kỹ Năng|{param1:P}",
+            "Sát Thương Nhấn Giữ Kỹ Năng|{param2:P}",
+            "Tăng Hiệu Quả Nạp Ấn Lôi|Mỗi cái {param3:P}",
+            "Ấn Lôi Hút Hấp Thụ Năng Lượng Hồi Phục|Mỗi cái {param4:F1} điểm",
+            "Thời Gian Ấn Lôi Kéo Dài|{param5:F1}s",
+            "CD Nhấn|{param6:F1}s",
+            "CD Nhấn Giữ|{param7:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 203201,
+              "Level": 1,
+              "Parameters": [
+                1.992,
+                2.952,
+                0.2,
+                5,
+                18,
+                6,
+                10
+              ]
+            },
+            {
+              "Id": 203202,
+              "Level": 2,
+              "Parameters": [
+                2.1414,
+                3.1734,
+                0.2,
+                5,
+                18,
+                6,
+                10
+              ]
+            },
+            {
+              "Id": 203203,
+              "Level": 3,
+              "Parameters": [
+                2.2908,
+                3.3948,
+                0.2,
+                5,
+                18,
+                6,
+                10
+              ]
+            },
+            {
+              "Id": 203204,
+              "Level": 4,
+              "Parameters": [
+                2.49,
+                3.69,
+                0.2,
+                5,
+                18,
+                6,
+                10
+              ]
+            },
+            {
+              "Id": 203205,
+              "Level": 5,
+              "Parameters": [
+                2.6394,
+                3.9114,
+                0.2,
+                5,
+                18,
+                6,
+                10
+              ]
+            },
+            {
+              "Id": 203206,
+              "Level": 6,
+              "Parameters": [
+                2.7888,
+                4.1328,
+                0.2,
+                5,
+                18,
+                6,
+                10
+              ]
+            },
+            {
+              "Id": 203207,
+              "Level": 7,
+              "Parameters": [
+                2.988,
+                4.428,
+                0.2,
+                5,
+                18,
+                6,
+                10
+              ]
+            },
+            {
+              "Id": 203208,
+              "Level": 8,
+              "Parameters": [
+                3.1872,
+                4.7232,
+                0.2,
+                5,
+                18,
+                6,
+                10
+              ]
+            },
+            {
+              "Id": 203209,
+              "Level": 9,
+              "Parameters": [
+                3.3864,
+                5.0184,
+                0.2,
+                5,
+                18,
+                6,
+                10
+              ]
+            },
+            {
+              "Id": 203210,
+              "Level": 10,
+              "Parameters": [
+                3.5856,
+                5.3136,
+                0.2,
+                5,
+                18,
+                6,
+                10
+              ]
+            },
+            {
+              "Id": 203211,
+              "Level": 11,
+              "Parameters": [
+                3.7848,
+                5.6088,
+                0.2,
+                5,
+                18,
+                6,
+                10
+              ]
+            },
+            {
+              "Id": 203212,
+              "Level": 12,
+              "Parameters": [
+                3.984,
+                5.904,
+                0.2,
+                5,
+                18,
+                6,
+                10
+              ]
+            },
+            {
+              "Id": 203213,
+              "Level": 13,
+              "Parameters": [
+                4.233,
+                6.273,
+                0.2,
+                5,
+                18,
+                6,
+                10
+              ]
+            },
+            {
+              "Id": 203214,
+              "Level": 14,
+              "Parameters": [
+                4.482,
+                6.642,
+                0.2,
+                5,
+                18,
+                6,
+                10
+              ]
+            },
+            {
+              "Id": 203215,
+              "Level": 15,
+              "Parameters": [
+                4.731,
+                7.011,
+                0.2,
+                5,
+                18,
+                6,
+                10
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10202,
+        "Name": "Vuốt Và Sấm",
+        "Description": "Dùng cách mà thầy và người nhà đã dạy, để giải quyết con mồi.\n\n<color=#FFD780FF>Nhấn</color>\nVung móng vuốt của sói về phía trước, gây cho địch phía trước <color=#FFACFFFF>Sát Thương Nguyên Tố Lôi</color>.\nNếu đánh trúng kẻ địch, sẽ tạo ra một Ấn Lôi cho Razor, nâng cao hiệu quả nạp nguyên tố của Razor.\nCùng lúc chỉ xuất hiện tối đa 3 Ấn Lôi, cộng dồn sẽ làm mới thời gian kéo dài.\n\n<color=#FFD780FF>Nhấn Giữ</color>\nTích tụ sức mạnh sấm sét gây nổ quy mô nhỏ, gây lượng lớn <color=#FFACFFFF>Sát Thương Nguyên Tố Lôi</color>, và xóa bỏ Ấn Lôi đã có.\nMỗi Ấn Lôi bị xóa bỏ, đều sẽ chuyển thành năng lượng nguyên tố của Razor.\n\n<i>Trong khoảnh khắc sét đánh xuống, thi thoảng thoáng thấy sâu trong linh hồn của Razor ẩn chứa ánh mắt của sói quan sát con mồi.</i>",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_S_Razor_01"
+      }
+    ],
+    "SpecialSkills": [
+      {
+        "GroupId": 2051,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 205101,
+              "Level": 1,
+              "Parameters": [
+                0.7,
+                1.5,
+                7,
+                1
+              ]
+            }
+          ],
+          "Display": 3
+        },
+        "Id": 205101,
+        "Name": "Đêm Lễ Ma Nữ - Sấm Sét Dâng Trào",
+        "Description": "Sau khi hoàn thành <color=#FFD780FF>Bài Tập Của Ma Nữ - Về Đàn Sói Nhỏ</color>, Razor sẽ trở thành nhân vật <color=#FFD780FF>Hexerei</color>. Khi đội hình có ít nhất 2 nhân vật Hexerei, sẽ nhận được hiệu quả <color=#FFD780FF>Hexerei - Nghi Thức Bí Mật</color>, giúp nhân vật Hexerei nhận được cường hóa.\nNgoài ra, Kỹ Năng Nộ của Razor <color=#FFD780FF>Răng Sét</color> sẽ được cường hóa: Tăng sát thương <color=#FFD780FF>Lôi Lang</color> gây ra, mức tăng tương đương 70% Tấn Công của Razor.\n\n<color=#FFD780FF>Hexerei - Nghi Thức Bí Mật</color>\nTrong thời gian tồn tại Lôi Lang triệu hồi từ Kỹ Năng Nộ <color=#FFD780FF>Răng Sét</color>, nếu Razor tích lũy Ấn Lôi từ Kỹ Năng Nguyên Tố <color=#FFD780FF>Vuốt Và Sấm</color> vượt mức giới hạn, Lôi Lang sẽ tạo ra sấm sét tấn công kẻ địch ở gần, gây Sát Thương Phạm Vi Nguyên Tố Lôi tương đương 150% Tấn Công của Razor và hồi phục 7 điểm Năng Lượng Nguyên Tố cho Razor. Hiệu quả nêu trên mỗi 1s tối đa kích hoạt một lần.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Razor_07"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 2039,
+      "Proud": {
+        "Descriptions": [
+          "ST Bạo Phát|{param1:P}",
+          "Sát Thương Lang Hồn|{param2:F1P} Sát Thương Tấn Công Thường",
+          "Tăng Tốc Độ Tấn Công Thường|{param3:P}",
+          "Tăng Kháng Nguyên Tố Lôi|{param4:P}",
+          "Thời Gian Kéo Dài|{param5:F1}s",
+          "CD|{param6:F1}s",
+          "Năng Lượng Nguyên Tố|{param7:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 203901,
+            "Level": 1,
+            "Parameters": [
+              1.6,
+              0.24,
+              0.26,
+              0.8,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 203902,
+            "Level": 2,
+            "Parameters": [
+              1.72,
+              0.258,
+              0.28,
+              0.8,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 203903,
+            "Level": 3,
+            "Parameters": [
+              1.84,
+              0.276,
+              0.3,
+              0.8,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 203904,
+            "Level": 4,
+            "Parameters": [
+              2,
+              0.3,
+              0.32,
+              0.8,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 203905,
+            "Level": 5,
+            "Parameters": [
+              2.12,
+              0.318,
+              0.34,
+              0.8,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 203906,
+            "Level": 6,
+            "Parameters": [
+              2.24,
+              0.336,
+              0.36,
+              0.8,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 203907,
+            "Level": 7,
+            "Parameters": [
+              2.4,
+              0.36,
+              0.37,
+              0.8,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 203908,
+            "Level": 8,
+            "Parameters": [
+              2.56,
+              0.384,
+              0.38,
+              0.8,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 203909,
+            "Level": 9,
+            "Parameters": [
+              2.72,
+              0.408,
+              0.39,
+              0.8,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 203910,
+            "Level": 10,
+            "Parameters": [
+              2.88,
+              0.432,
+              0.4,
+              0.8,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 203911,
+            "Level": 11,
+            "Parameters": [
+              3.04,
+              0.456,
+              0.4,
+              0.8,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 203912,
+            "Level": 12,
+            "Parameters": [
+              3.2,
+              0.48,
+              0.4,
+              0.8,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 203913,
+            "Level": 13,
+            "Parameters": [
+              3.4,
+              0.51,
+              0.4,
+              0.8,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 203914,
+            "Level": 14,
+            "Parameters": [
+              3.6,
+              0.54,
+              0.4,
+              0.8,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 203915,
+            "Level": 15,
+            "Parameters": [
+              3.8,
+              0.57,
+              0.4,
+              0.8,
+              15,
+              20,
+              80
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10203,
+      "Name": "Răng Sét",
+      "Description": "Đánh thức Lôi Lang vô hình để bảo vệ bản thân, gây cho địch xung quanh <color=#FFACFFFF>Sát Thương Nguyên Tố Lôi</color>, và tiêu hao tất cả Ấn Lôi, hồi năng lượng nguyên tố cho Razor.\nTrong thời gian Lôi Lang tồn tại, sẽ chiến đấu cùng Razor.\n\n<color=#FFD780FF>Lôi Lang</color>\n·Sẽ cùng Razor tấn công thường, gây <color=#FFACFFFF>Sát Thương Nguyên Tố Lôi</color>;\n·Tăng tốc độ tấn công của Razor và <color=#FFACFFFF>Kháng Nguyên Tố Lôi</color>;\n·Giúp Razor miễn nhiễm với sát thương phản ứng <color=#FFACFFFF>Điện Cảm</color>;\n·Không thể thi triển Trọng Kích;\n·Tăng khả năng kháng gián đoạn cho Razor.\n\nHiệu quả sẽ mất khi Razor rời khỏi trận.\nKhi rời khỏi trận, sẽ căn cứ theo thời gian còn để hoàn trả tối đa 10 điểm Năng Lượng Nguyên Tố.\n\n<i>Sói đã tỉnh lại. Giờ đi săn đến rồi.</i>",
+      "SpecialEnergyType": 0,
+      "Icon": "Skill_E_Razor_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 2021,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 202101,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 202101,
+        "Name": "Thức Tỉnh",
+        "Description": "Thời gian CD <color=#FFD780FF>Vuốt Và Sấm</color> giảm 18%.\nKhi thi triển <color=#FFD780FF>Răng Sét</color>, làm mới thời gian CD <color=#FFD780FF>Vuốt Và Sấm</color>.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Razor_05"
+      },
+      {
+        "GroupId": 2022,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 202201,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 202201,
+        "Name": "Đói Khát",
+        "Description": "Khi Năng Lượng Nguyên Tố của Razor dưới 50%, hiệu quả nạp nguyên tố tăng 30%.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Razor_06"
+      },
+      {
+        "GroupId": 2023,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 202301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 202301,
+        "Name": "Sói Chạy",
+        "Description": "Giảm 20% tiêu hao thể lực khi xung kích cho nhân vật trong đội của bản thân.\nKhông thể cộng dồn với buff Thiên Phú cố định có cùng hiệu quả.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_Explosion_Sprint"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 201,
+        "Name": "Bản Chất Của Sói",
+        "Description": "Trong 8s sau khi Razor nhận được Nguyên Tố Tinh Cầu hoặc Nguyên Tố Hạt Nhân, sát thương tạo thành sẽ tăng 10%.",
+        "Icon": "UI_Talent_S_Razor_01"
+      },
+      {
+        "Id": 202,
+        "Name": "Áp Chế",
+        "Description": "Khi Razor tấn công kẻ địch có HP dưới 30%, tỷ lệ bạo kích tăng 10%.",
+        "Icon": "UI_Talent_S_Razor_02"
+      },
+      {
+        "Id": 203,
+        "Name": "Hồn Thú",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Răng Sét</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Razor_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 204,
+        "Name": "Cắn Xé",
+        "Description": "Khi nhấn <color=#FFD780FF>Vuốt Và Sấm</color>, làm cho kẻ địch bị đánh trúng giảm 15% phòng ngự, duy trì 7s.",
+        "Icon": "UI_Talent_S_Razor_03"
+      },
+      {
+        "Id": 205,
+        "Name": "Móng Vuốt",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Vuốt Và Sấm</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Razor_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 206,
+        "Name": "Thiên Lang",
+        "Description": "Mỗi 10s, kiếm của Razor sẽ tự động nạp năng lượng, khiến cho tấn công thường lần sau sẽ kích hoạt sấm sét gây ra <color=#FFACFFFF>sát thương nguyên tố Lôi</color> bằng 100% tấn công.\nKhi không ở trong trạng thái <color=#FFD780FF>Răng Sét</color>, nếu sét đánh trúng kẻ địch, sẽ tích luỹ cho Razor 1 Ấn Lôi của <color=#FFD780FF>Vuốt Và Sấm</color>.",
+        "SpecialDescription": "Mỗi 10s, kiếm của Razor sẽ tự động nạp năng lượng, khiến lần Tấn Công Thường tiếp theo sẽ kích hoạt sấm sét, gây <color=#FFACFFFF>Sát Thương Nguyên Tố Lôi</color> bằng 100% Tấn Công.\nKhi không trong trạng thái <color=#FFD780FF>Răng Sét</color>, nếu sấm sét đánh trúng kẻ địch, sẽ tích lũy cho Razor 3 Ấn Lôi của Kỹ Năng Nguyên Tố <color=#FFD780FF>Vuốt Và Sấm</color>.\nNgoài ra, khi Razor tích lũy Ấn Lôi thông qua Kỹ Năng Nguyên Tố <color=#FFD780FF>Vuốt Và Sấm</color>, sẽ chuyển sang tích lũy cho Razor 3 Ấn Lôi.\nTrong 15s sau khi tiêu hao Ấn Lôi, Razor sẽ tăng thêm 10% Tỷ Lệ Bạo Kích và 50% Sát Thương Bạo Kích.",
+        "Icon": "UI_Talent_S_Razor_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Thiếu Niên Sói",
+    "Detail": "Thiếu niên sống cùng sói trong Lang Lãnh thuộc Mondstadt, tránh xa thành phố và loài người. Có trực giác nhạy bén, hành động nhanh nhạy.",
+    "Association": 1,
+    "Native": "Lang Lãnh",
+    "BirthMonth": 9,
+    "BirthDay": 9,
+    "VisionBefore": "Lôi",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Cung Tiểu Lang",
+    "CvChinese": "周帅",
+    "CvJapanese": "内山昂輝",
+    "CvEnglish": "Todd Haberkorn",
+    "CvKorean": "Kim Seo-young",
+    "CookBonus": {
+      "OriginItemId": 108046,
+      "ItemId": 108048,
+      "InputList": [
+        100020,
+        100080,
+        110008
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Lần đầu gặp mặt...",
+        "Context": "Mùi của bạn... cũng thơm. Cùng đi săn nào!"
+      },
+      {
+        "Title": "Nói chuyện phiếm - Mùi vị",
+        "Context": "Hừm, mùi của lũ thỏ..."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Đói",
+        "Context": "Đi thôi, bụng đói rồi."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Trông chừng",
+        "Context": "Tôi đang canh chừng, đi thì gọi tôi."
+      },
+      {
+        "Title": "Khi có sấm sét - Nhắc nhở",
+        "Context": "Sợ thì mau trốn đi."
+      },
+      {
+        "Title": "Khi có sấm sét - Dẫn đường",
+        "Context": "Tránh cây, đi theo tôi!"
+      },
+      {
+        "Title": "Khi gió nổi lên...",
+        "Context": "Gió... ừm... dễ chịu."
+      },
+      {
+        "Title": "Gió lớn quá...",
+        "Context": "Gió... ừm... quật, đau."
+      },
+      {
+        "Title": "Chào buổi sáng...",
+        "Context": "Mặt trời lên rồi. Đi săn cùng nhau?"
+      },
+      {
+        "Title": "Chào buổi trưa...",
+        "Context": "Ăn miếng thịt lớn, hạnh phúc!"
+      },
+      {
+        "Title": "Chào buổi tối...",
+        "Context": "Bạn ngủ đi, tôi ngắm trăng."
+      },
+      {
+        "Title": "Chúc ngủ ngon...",
+        "Context": "Bạn ngủ, tôi canh gác. Ngày mai cùng nhau đi săn."
+      },
+      {
+        "Title": "Về bản thân Razor...",
+        "Context": "Tôi là sói. Cha, mẹ con người, không có."
+      },
+      {
+        "Title": "Về chúng ta - Bạn bè",
+        "Context": "Bạn là bạn tôi. Tôi và bạn cùng đi săn."
+      },
+      {
+        "Title": "Về chúng ta - Vũ khí",
+        "Context": "Tôi có móng sắt và nanh sét. Tôi bảo vệ bạn."
+      },
+      {
+        "Title": "Về Vision...",
+        "Context": "Vision, sư phụ giúp. Nanh sét đánh đấm, bảo vệ Lupical."
+      },
+      {
+        "Title": "Có gì muốn chia sẻ không...",
+        "Context": "Buổi tối, trời sao rất đẹp. Bầu trời, trong hồ, đều có rất nhiều sao.\nBuổi tối, trong thành, cũng có rất nhiều sao."
+      },
+      {
+        "Title": "Những kiến thức thú vị...",
+        "Context": "Bầy sói là Lupical của tôi. Họ là người thân."
+      },
+      {
+        "Title": "Về Lisa...",
+        "Context": "Sét của sư phụ, bầu trời biến thành màu đen. Rất đáng sợ, rất mạnh."
+      },
+      {
+        "Title": "Về Barbara...",
+        "Context": "Barbara, cô gái toả sáng. Rất tốt bụng."
+      },
+      {
+        "Title": "Về Diluc...",
+        "Context": "Diluc, đỏ đỏ, đen đen. Vừa lạnh vừa nóng."
+      },
+      {
+        "Title": "Về Venti...",
+        "Context": "Thơ... ừm, không hiểu. Mặc dù không hiểu, Lupical thích."
+      },
+      {
+        "Title": "Về Bennett...",
+        "Context": "Bennett, rất nhiều lời. Đi cùng cậu ấy, ăn không no."
+      },
+      {
+        "Title": "Về Klee...",
+        "Context": "Klee, bạn! Bạn bè, nhưng, đau đầu."
+      },
+      {
+        "Title": "Về Varka - Lạ mặt",
+        "Context": "Varka? Không quen..."
+      },
+      {
+        "Title": "Về Varka - Hồi ức",
+        "Context": "Hả... Varka, là tên. Người đó, cao lớn. Tên Razor, móng sắt, người đó đặt. Ừm... muốn gặp người đó."
+      },
+      {
+        "Title": "Muốn tìm hiểu Razor - Điều thứ 1",
+        "Context": "Mùi của bạn, mùi lương thiện. Thích ăn thịt?"
+      },
+      {
+        "Title": "Muốn tìm hiểu Razor - Điều thứ 2",
+        "Context": "Bạn rất mạnh. Giống như sói. Thích đi săn với bạn. Thu hoạch rất nhiều."
+      },
+      {
+        "Title": "Muốn tìm hiểu Razor - Điều thứ 3",
+        "Context": "Lupical là \"nhà của sói\". Không đúng, là \"người nhà của sói\". Lupical của tôi ở trong rừng. Họ bảo vệ tôi, gọi tôi là Lupical."
+      },
+      {
+        "Title": "Muốn tìm hiểu Razor - Điều thứ 4",
+        "Context": "Tôi chỉ có Lupical.\nNhưng, cho dù là Lupical, tôi không có bốn chân, không phải sói thực sự. Đôi lúc cảm thấy buồn."
+      },
+      {
+        "Title": "Muốn tìm hiểu Razor - Điều thứ 5",
+        "Context": "Chạy nhảy với bạn rất vui, đi săn với bạn rất vui. Cùng với bạn, tôi là sói, tôi là người, đều không quan trọng.\nBạn là bạn bè, bạn là Lupical của tôi. Tôi muốn bạn cũng vui vẻ."
+      },
+      {
+        "Title": "Sở thích của Razor...",
+        "Context": "Thích Lupical. Thích rừng cây. Thích bạn bè. Thích chạy nhảy."
+      },
+      {
+        "Title": "Nỗi buồn của Razor...",
+        "Context": "Nói chuyện rất mệt, rất khó. Nhưng, không nói không được."
+      },
+      {
+        "Title": "Món ăn yêu thích...",
+        "Context": "Thích thịt. Thích khoai tây."
+      },
+      {
+        "Title": "Món ăn ghét...",
+        "Context": "Rau không ngon. Thịt mà tôi ăn, mới là thứ thiệt."
+      },
+      {
+        "Title": "Nhận Được Quà I",
+        "Context": "Mùi thơm, hương vị cũng ngon. Rất thích."
+      },
+      {
+        "Title": "Nhận Được Quà II",
+        "Context": "Ăn vào có sức. Rất vui."
+      },
+      {
+        "Title": "Nhận Được Quà III",
+        "Context": "Ăn, không tốt. Không ăn, cũng không tốt. Hơi buồn."
+      },
+      {
+        "Title": "Sinh nhật...",
+        "Context": "Hôm nay là của bạn... rất nhiều tháng về trước, bạn sinh ra trong hôm nay. Muốn cùng bạn chúc mừng. Hôm nay cùng nhau ăn thịt."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Khởi",
+        "Context": "Cánh tay, to hơn rồi...?"
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Thừa",
+        "Context": "Mài móng, mài răng, phải mạnh hơn!"
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Chuyển",
+        "Context": "Chạy, săn. Chưa đủ, không được! Tôi phải... mạnh hơn."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Hợp",
+        "Context": "Răng, móng, chân. Mạnh hơn, có sức hơn... bảo vệ bạn!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố I",
+        "Context": "Tránh ra!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố II",
+        "Context": "A!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố III",
+        "Context": "Ha!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố IV",
+        "Context": "Đừng qua đây!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ I",
+        "Context": "Raaaarrr!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ II",
+        "Context": "Blitz!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ III",
+        "Context": "Gào..."
+      },
+      {
+        "Title": "Kỹ Năng Nộ IV",
+        "Context": "Rar!"
+      },
+      {
+        "Title": "Mở Rương I",
+        "Context": "Những thứ này, có ích?"
+      },
+      {
+        "Title": "Mở Rương II",
+        "Context": "Rương, trống, có thể đựng đồ."
+      },
+      {
+        "Title": "Mở Rương III",
+        "Context": "Mùi của kho báu... kỳ lạ."
+      },
+      {
+        "Title": "HP Thấp I",
+        "Context": "Đau."
+      },
+      {
+        "Title": "HP Thấp II",
+        "Context": "A a!"
+      },
+      {
+        "Title": "HP Thấp III",
+        "Context": "Phải giết ngươi!"
+      },
+      {
+        "Title": "HP Đồng Hành Thấp I",
+        "Context": "Không được."
+      },
+      {
+        "Title": "HP Đồng Hành Thấp II",
+        "Context": "Phải sống!"
+      },
+      {
+        "Title": "Ngã Xuống I",
+        "Context": "Khó thở quá..."
+      },
+      {
+        "Title": "Ngã Xuống II",
+        "Context": "Muốn trở về..."
+      },
+      {
+        "Title": "Ngã Xuống III",
+        "Context": "Lupical... của ta..."
+      },
+      {
+        "Title": "Bị Trọng Kích I",
+        "Context": "Trong miệng, mùi máu..."
+      },
+      {
+        "Title": "Vào Đội I",
+        "Context": "Tôi sẽ đi đầu."
+      },
+      {
+        "Title": "Vào Đội II",
+        "Context": "Muốn đi đâu?"
+      },
+      {
+        "Title": "Vào Đội III",
+        "Context": "Phía sau, giao cho tôi."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Miêu Tả Nhân Vật",
+        "Context": "Razor là một thiếu niên bí ấn sống tại Lang Lãnh, rất ít người dân Mondstadt có thể phát hiện hành tung của cậu.\nNhưng một số ít người tận mắt trông thấy đã nói, Razor sở hữu giác quan nhạy bén, động tác linh hoạt, có thể xuyên qua rừng cây một cách nhanh nhạy, lại thường xuyên xuất hiện cùng bầy sói, không chủ động lại gần con người.\nCó người đoán rằng, cậu là cô nhi bị vứt bỏ được sói nuôi dưỡng, cũng có người nói cậu là linh hồn sói biến thành hình dạng thiếu niên.\nNhiều lời đồn đoán đã dệt thêm rất nhiều màu sắc thần bí cho \"Thiếu Niên Sói\".\nCòn \"Thiếu Niên Sói\" Razor, hôm nay vẫn đứng trên đỉnh núi, ngẩng đầu tắm trong ánh mặt trời ấm áp."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 1",
+        "Context": "Razor sống cùng đàn sói không kể đêm ngày.\nCậu thân thiết với mỗi một chú sói, ai có tiếng hú đanh hơn, ai chạy nhanh hơn, ai rình mồi giỏi hơn... không có con sói nào mà Razor không hiểu.\nRazor nghe hiểu tiếng gió, đánh hơi được từ xa, nhớ công hiệu của nhiều loại hoa cỏ, chỉ có điều lại không nhớ nổi khuôn mặt của bố mẹ.\nHọ là những người thế nào? Razor có cố gắng hồi tưởng thế nào cũng không có tác dụng.\nChỉ biết là từ khi bắt đầu có ký ức cậu đã sống cùng bầy sói rồi. Sói đối với cậu ấy như \"Lupical\" vậy – đây là từ mà người khác dạy cho cậu, có nghĩa là \"người nhà\"."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 2",
+        "Context": "Có thứ gì đó nhỏ bé đang bay trên trời, còn biết hát.\nNhững đám mây bồng bềnh nối tiếp nhau trông giống như đuôi của một con sói.\nThế giới của Razor rất đơn giản.\nNgày đẹp trời thì điên cuồng săn bắt, vác con mồi trên lưng rồi hái lượm trái cây; Ngày mưa gió thì trốn trong hốc cây, gối đầu lên đuôi sói đánh một giấc ngon lành.\nĂn ngồm ngoàm, uống nước ừng ực, nóng thì nhào xuống sông tắm táp, khát khô họng thì tìm quả dại mọng nước lấp đầy.\nRazor nhìn cơ thể và cánh tay của mình, rồi lại nhìn cơ thể và chân của \"sói\".\nCậu biết mình và \"sói\" không giống nhau.\nNhưng Razor cảm thấy cuộc sống thế này thật tuyệt biết bao."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 3",
+        "Context": "Một ngày nọ, một người đàn ông cao lớn xuất hiện trong khu rừng, phá vỡ cuộc sống yên bình của Razor.\nRazor không biết ông ta, chỉ biết ông ta là \"loài người\". Trên mặt người đàn ông lộ ra nụ cười thân thiện, đưa tay về phía cậu.\n\"Con à, cùng ta trở về thành Mondstadt được không?\"\nCả sói và Razor đều không hiểu được người đàn ông nói gì. Bầy sói chắn trước mặt Razor, không cho phép gã đàn ông kia đến gần cậu.\nRazor co người giữa số đuôi sói, ngắm nhìn cơ thể và cánh tay của mình, rồi lại hé mắt qua khe hở nhìn lấy cơ thể và cánh tay của \"người\" đó.\nRazor biết bản thân không thông minh gì, có một vấn đề khiến cậu không thể hiểu nổi từ lúc ấy.\n\"Mình là sói hay là người...?\""
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 4",
+        "Context": "Cái tên\"Razor\", được đặt bởi người đàn ông đó.\nThiếu niên Sói ngây thơ vẫn không thể hiểu được ngôn ngữ của loài người, nhưng từ biểu hiện nét mặt, Razor lờ mờ đoán ra, đây là tên mà người đó tặng cho mình.\n\"Ra...zor\"\nBóng cây ở Lang Lãnh cứ ngắn dần rồi lại dài ra.\nNgười đàn ông đã dạy Razor cách dùng kiếm. \"Móng Vuốt Sắt\" thô kệch lại sắc bén đến nỗi chặt phăng cả cây lớn.\n\"Từ hôm nay, cũng cần bảo vệ những người bạn của con thật tốt.\"\n\"B...ạn\"\nRazor vụng về nhắc lại lời của người đàn ông, cậu vẫn chưa hiểu rõ ý của ông ấy.\nGiống như cậu vẫn chưa hiểu được tên gọi có được coi là thứ quan trọng hay không. Bởi vì đến khi người đàn ông đó rời khỏi, Razor vẫn chưa biết được \"tên\" của ông."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 5",
+        "Context": "\"Thầy... bạn... nghĩa là gì?\"\nRazor lượm lặt trong số từ ngữ ít ỏi của mình, vụng về hỏi người thầy mới quen.\nLàm sao làm bánh ngon từ khoai tây dưới đất, đến tên của ngôi sao sáng nhất trên bầu trời mùa hạ, người thầy màu tím của cậu biết rõ tất cả.\nNhưng sư phụ Lisa chỉ ngáp một cái, cười với cậu, không trả lời.\nKhi gió nổi lên, Razor nghĩ ngợi, cả khi mưa dầm, cậu cũng nghĩ ngợi, nghĩ đến nỗi quả móc câu dính đầy vào tóc phía sau, cũng không thể nghĩ ra.\nSau đó Razor gặp được một cô bé màu đỏ nổi bật.\nHọ cùng nhau hóng gió, cùng dầm mưa, cùng lăn lộn qua khắp các bụi cây tóc đính đầy quả móc câu.\nTên cô bé là Klee. Khi cùng cô vui đùa, Razor như được quay lại tuổi thơ, cùng bầy sói trêu đùa cũng vui vẻ như vậy.\n\"Hóa ra bạn, cũng giống như Lupical vậy\"\nRazor không hiểu lắm về nhân tình thế thái, nhưng cậu có sự trung thành và thẳng thắn của loài thú.\n\"Vậy, cậu cũng giống như Lupical vậy, là người cần phải dùng tính mạng để bảo vệ.\"\nTừ phương xa vọng lại tiếng bầy sói hú, là tiếng gọi cậu trở về nhà.\nRazor vẫn không biết mình là sói, hay là người.\nChỉ cảm thấy cuộc sống như vậy thật tuyệt."
+      },
+      {
+        "Title": "Hộp Gỗ Thô Sơ Của Razor",
+        "Context": "Bên trong chiếc rương gỗ thô ráp chứa đựng những bảo vật của Razor.\nMột thanh đao đã sứt mẻ, một cuốn truyện cổ tích mang tên \"Cúc Cánh Quạt Và Sói\" và một ngọn cỏ bốn lá đã úa vàng.\nĐối với người không hiểu đạo lý đối nhân xử thế như Razor, những món quà do \"bạn bè\" tặng luôn được cậu coi là tài sản quý giá nhất của mình."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Ngày Razor nhận được Vision là một trong số ít những kỉ niệm cậu không muốn nhớ tới.\nHôm ấy trời mưa sấm sét, Razor bị Pháp Sư Vực Sâu đánh úp sau lưng và lôi đi. Đàn sói vì muốn cứu cậu đã tấn công vào doanh trại của chúng. Thế nhưng tất cả đã phải bỏ mạng trước phép thuật tàn nhẫn.\nTận mắt chứng kiến những người bạn của mình bị tàn sát, Razor bất lực gào thét.\n\"Lupical\".\nSấm sét thịnh nộ bao lấy cậu, dòng sức mạnh nguyên tố dồi dào tuôn trào trong người.\nCậu muốn bảo vệ đồng loại, cậu muốn được báo thù.\nRazor phá vỡ xiềng xích, nhấc vũ khí lên mà chiến đấu.\nPháp Sư Vực Sâu bị nghiền nát bởi tia sét dữ dội, nhưng những người bạn của cậu đã vĩnh viễn ra đi.\n...\nMặc dù nhận được Vision thế nhưng cậu không biết cách điều khiển nó. Rất lâu sau, cậu gặp được Ma Nữ Tường Vi Lisa và được truyền dạy tri thức của loài người.\n\"Tôi không muốn đồng loại của mình phải bị thương.\"\nKỹ năng sử dụng Vision của Razor ngày càng trở nên thuần thục. Cậu hạ quyết tâm: Trở thành người mạnh mẽ nhất.\nĐể khi nguy hiểm cận kề, cậu mới có thể bảo vệ \"Lupical\"."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 202000,
+      "Name": "Du Hành Thảo Nguyên",
+      "Description": "Phong cách của Razor. Trang phục giản dị, rất tiện cho việc đi lại ở những nơi hoang dã.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104144,
+    113002,
+    100021,
+    112007,
+    104306,
+    113004
+  ],
+  "NameCard": {
+    "Name": "Razor - Sói Chạy",
+    "Description": "Hoa văn danh thiếp.\nDáng vẻ Razor và bầy sói cùng nấu cơm tối vô cùng hiên ngang. Nhưng không thể để Klee và Nhà Lữ Hành nhìn thấy.",
+    "Icon": "UI_NameCardIcon_Razor",
+    "PicturePrefix": "UI_NameCardPic_Razor"
+  }
+}

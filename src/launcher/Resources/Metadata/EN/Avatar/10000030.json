@@ -309,6 +309,7 @@
         "Id": 10301,
         "Name": "Rain of Stone",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 6 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to lunge forward, causing stone spears to fall along his path.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_03"
       },
       {
@@ -540,6 +541,7 @@
         "Id": 10302,
         "Name": "Dominus Lapidis",
         "Description": "#Every mountain, rock and inch of land is filled with the power of Geo, but those who can wield such powers freely are few and far between.\n\n<color=#FFD780FF>{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}</color>\nCommands the power of earth to create a Stone Stele.\n\n<color=#FFD780FF>Hold</color>\nCauses nearby Geo energy to explode, causing the following effects:\n·If their maximum number hasn't been reached, creates a Stone Stele.\n·Creates a shield of jade. The shield's DMG Absorption scales based on Zhongli's Max HP.\n·Deals <color=#FFE699FF>AoE Geo DMG</color>.\n·If there are nearby targets with the <color=#FFE699FF>Geo element</color>, it will drain a large amount of <color=#FFE699FF>Geo element</color> from a maximum of 2 such targets. This effect does not cause DMG.\n\n<color=#FFD780FF>Stone Stele</color>\nWhen created, deals <color=#FFE699FF>AoE Geo DMG</color>.\nAdditionally, it will intermittently resonate with other nearby <color=#FFE699FF>Geo constructs</color>, dealing <color=#FFE699FF>Geo DMG</color> to nearby opponents.\nThe Stone Stele is considered a <color=#FFE699FF>Geo construct</color> that can both be climbed and used to block attacks.\nOnly one Stele created by Zhongli himself may initially exist at any one time.\n\n<color=#FFD780FF>Jade Shield</color>\nPossesses 150% DMG Absorption against all Elemental and Physical DMG.\nCharacters protected by the Jade Shield will decrease the Elemental RES and Physical RES of opponents in a small AoE by 20%. This effect cannot be stacked.\n\n<i>A true master of stone may carve jade and shape gold.</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Zhongli_01"
       }
     ],
@@ -709,6 +711,7 @@
       "Id": 10303,
       "Name": "Planet Befall",
       "Description": "Brings a falling meteor down to earth, dealing massive <color=#FFE699FF>Geo DMG</color> to opponents caught in its AoE and applying the <color=#FFE699FF>Petrification</color> status to them.\n\n<color=#FFD780FF>Petrification</color>\nOpponents affected by the <color=#FFE699FF>Petrification</color> status cannot move.\n\n<i>The falling meteor punishes the unjust.</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Zhongli_01"
     },
     "Inherents": [
@@ -730,6 +733,7 @@
         "Id": 302101,
         "Name": "Resonant Waves",
         "Description": "When the Jade Shield takes DMG, it will Fortify:\n·Fortified characters have 5% increased Shield Strength.\nCan stack up to 5 times, and lasts until the Jade Shield disappears.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Zhongli_05"
       },
       {
@@ -752,6 +756,7 @@
         "Id": 302201,
         "Name": "Dominance of Earth",
         "Description": "Zhongli deals bonus DMG based on his Max HP:\n·Normal Attack, Charged Attack, and Plunging Attack DMG is increased by 1.39% of Max HP.\n·<color=#FFD780FF>Dominus Lapidis'</color> Stone Stele, resonance, and hold DMG is increased by 1.9% of Max HP.\n·<color=#FFD780FF>Planet Befall's</color> DMG is increased by 33% of Max HP.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Zhongli_06"
       },
       {
@@ -770,6 +775,7 @@
         "Id": 302301,
         "Name": "Arcanum of Crystal",
         "Description": "Refunds 15% of the ore used when crafting Polearm-type weapons.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_Forge_Pole"
       }
     ],

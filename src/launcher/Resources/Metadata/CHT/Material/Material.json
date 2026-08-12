@@ -413,7 +413,7 @@
     "RankLevel": 3,
     "ItemType": 2,
     "Name": "冰之印",
-    "Description": "蒙德周圍的特殊紀念貨幣，可在城市商店中兌換珍稀物品。",
+    "Description": "受到至冬的霜雪認可，獲授的印記。\n可以用於共建聚所，以此獲得寒冰的贈禮。",
     "TypeDescription": "七國徽印",
     "Icon": "UI_ItemIcon_306"
   },
@@ -1827,6 +1827,28 @@
   },
   {
     "Rank": 0,
+    "MaterialType": 8,
+    "Id": 2035,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "至冬電量能量球",
+    "Description": "至冬電量能量球",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_2020"
+  },
+  {
+    "Rank": 0,
+    "MaterialType": 8,
+    "Id": 2036,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "至冬建材能量球",
+    "Description": "至冬建材能量球",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_2020"
+  },
+  {
+    "Rank": 0,
     "MaterialType": 12,
     "Id": 3001,
     "RankLevel": 0,
@@ -2416,6 +2438,28 @@
     "ItemType": 2,
     "Name": "桑多涅的命星",
     "Description": "桑多涅的命之座啟用素材",
+    "TypeDescription": "命之座啟用",
+    "Icon": "UI_ItemIcon_1102"
+  },
+  {
+    "Rank": 20,
+    "MaterialType": 20,
+    "Id": 5148,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "阿羅夏的命星",
+    "Description": "阿羅夏的命之座啟用素材",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_1103"
+  },
+  {
+    "Rank": 30,
+    "MaterialType": 20,
+    "Id": 5150,
+    "RankLevel": 5,
+    "ItemType": 2,
+    "Name": "奧黛塔的命星",
+    "Description": "奧黛塔的命之座啟用素材",
     "TypeDescription": "命之座啟用",
     "Icon": "UI_ItemIcon_1102"
   },
@@ -3715,6 +3759,28 @@
     "Name": "桑多涅的命星",
     "Description": "桑多涅的命之座啟用素材",
     "TypeDescription": "命之座啟用",
+    "Icon": "UI_ItemIcon_1102"
+  },
+  {
+    "Rank": 20,
+    "MaterialType": 73,
+    "Id": 6148,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "阿羅夏的命星",
+    "Description": "阿羅夏的命之座啟用素材",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_1103"
+  },
+  {
+    "Rank": 30,
+    "MaterialType": 73,
+    "Id": 6150,
+    "RankLevel": 5,
+    "ItemType": 2,
+    "Name": "奧黛塔的命星",
+    "Description": "奧黛塔的命之座啟用素材",
+    "TypeDescription": "",
     "Icon": "UI_ItemIcon_1102"
   },
   {
@@ -13938,6 +14004,94 @@
     "Icon": "UI_ItemIcon_101272"
   },
   {
+    "Rank": 318,
+    "MaterialType": 4,
+    "Id": 101275,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "霜仙花",
+    "Description": "不管風雪多麼嚴苛亦會綻放的聖潔花朵，總是散發著微弱的令人嚮往的光芒。",
+    "TypeDescription": "至冬區域特產",
+    "Icon": "UI_ItemIcon_101275"
+  },
+  {
+    "Rank": 318,
+    "MaterialType": 4,
+    "Id": 101276,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "植絨草",
+    "Description": "一度被懷疑是植物與動物結合後的奇妙植株，但後來被證明只不過是單純長著類似動物絨毛的植物罷了。",
+    "TypeDescription": "至冬區域特產",
+    "Icon": "UI_ItemIcon_101276"
+  },
+  {
+    "Rank": 318,
+    "MaterialType": 4,
+    "Id": 101277,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "金蕨",
+    "Description": "邊緣微微發出金光的蕨草，據說經過燉煮後，將會擁有非常奇妙的風味。",
+    "TypeDescription": "至冬區域特產",
+    "Icon": "UI_ItemIcon_101277"
+  },
+  {
+    "Rank": 321,
+    "MaterialType": 4,
+    "Id": 101278,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "紅甜菜",
+    "Description": "在寒冷凍土裡也能生長的草本植物，為了能在嚴酷的環境裡生存，生長出了肥大的肉質根。",
+    "TypeDescription": "食材",
+    "Icon": "UI_ItemIcon_101278"
+  },
+  {
+    "Rank": 321,
+    "MaterialType": 4,
+    "Id": 101279,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "冰星果",
+    "Description": "凍土上的臻冰受到特殊影響後結出來的星狀果實，將其生長的枝條拆除後，果實即會落於雪上。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_101279"
+  },
+  {
+    "Rank": 321,
+    "MaterialType": 4,
+    "Id": 101280,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "雪球花",
+    "Description": "花序接近球形的可愛花朵，雪落在花瓣上時，整朵花便會如同雪球一般。",
+    "TypeDescription": "食材",
+    "Icon": "UI_ItemIcon_101280"
+  },
+  {
+    "Rank": 321,
+    "MaterialType": 4,
+    "Id": 101281,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "冰醋栗",
+    "Description": "從霜結的冰枝之上，生長出來的風味豐富的漿果。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_101281"
+  },
+  {
+    "Rank": 320,
+    "MaterialType": 4,
+    "Id": 101282,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "幽光螢石",
+    "Description": "受影域的力量影響而產生的奇怪螢石。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_101282"
+  },
+  {
     "Rank": 330,
     "MaterialType": 25,
     "Id": 101301,
@@ -14255,6 +14409,50 @@
     "Description": "「榿樹」出產的木材，對於水氣和寒氣有著可觀的耐受性，亦是不錯的家具和樂器原材…",
     "TypeDescription": "素材",
     "Icon": "UI_ItemIcon_101330"
+  },
+  {
+    "Rank": 330,
+    "MaterialType": 25,
+    "Id": 101331,
+    "RankLevel": 1,
+    "ItemType": 2,
+    "Name": "雪楊木",
+    "Description": "「雪楊」產出的木材，表層較為光滑，質地輕盈而柔軟，用於製作各種小型木工品，是不錯的選擇…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_101332"
+  },
+  {
+    "Rank": 330,
+    "MaterialType": 25,
+    "Id": 101332,
+    "RankLevel": 1,
+    "ItemType": 2,
+    "Name": "白樺木",
+    "Description": "「白樺」產出的木材，密度較高，韌性較強，可用於抗彎需求較強的建築結構…",
+    "TypeDescription": "素材",
+    "Icon": "UI_ItemIcon_101331"
+  },
+  {
+    "Rank": 330,
+    "MaterialType": 25,
+    "Id": 101333,
+    "RankLevel": 1,
+    "ItemType": 2,
+    "Name": "青櫸木",
+    "Description": "「青櫸」產出的木材，紋理較為均勻，能較好地抵抗磨損，在至冬常被用於製作多重板材，製作長時間使用的器物與建築…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_101333"
+  },
+  {
+    "Rank": 330,
+    "MaterialType": 25,
+    "Id": 101334,
+    "RankLevel": 1,
+    "ItemType": 2,
+    "Name": "落葉松木",
+    "Description": "「落葉松」產出的木材，硬度可觀，耐腐蝕的能力也較強，常被至冬人用於建築立柱和板材…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_101334"
   },
   {
     "Rank": 331,
@@ -20499,6 +20697,105 @@
     "Icon": "UI_ItemIcon_104364"
   },
   {
+    "Rank": 13122,
+    "MaterialType": 14,
+    "Id": 104365,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "「慈愛」的教導",
+    "Description": "天賦培養素材。\n「慈愛」是冰之國土的救贖。\n慈愛是凡人之間的愛護與守望。在廣袤的土地上，人們憑此抵禦霜雪帶來的寒冷，撫平銘刻在記憶裡的傷痕。",
+    "TypeDescription": "角色天賦素材",
+    "Icon": "UI_ItemIcon_104365"
+  },
+  {
+    "Rank": 13122,
+    "MaterialType": 14,
+    "Id": 104366,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「慈愛」的指引",
+    "Description": "天賦培養素材。\n「慈愛」是冰之國土的救贖。\n慈愛孕育對他人的憐憫。在風雪的國度裡，誰若真心為靈魂的罪責悔過，便能得到以慈愛為名的寬恕。",
+    "TypeDescription": "角色天賦素材",
+    "Icon": "UI_ItemIcon_104366"
+  },
+  {
+    "Rank": 13122,
+    "MaterialType": 14,
+    "Id": 104367,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "「慈愛」的哲學",
+    "Description": "天賦培養素材。\n「慈愛」是冰之國土的救贖。\n慈愛是對眾生的關照，它消弭高低與貴賤，跨越血脈與國別。慈愛的目光往往注視著所有人，它施與不幸者以護佑，並應許眾人以永恆的解放。",
+    "TypeDescription": "角色天賦素材",
+    "Icon": "UI_ItemIcon_104367"
+  },
+  {
+    "Rank": 13123,
+    "MaterialType": 14,
+    "Id": 104368,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "「堅忍」的教導",
+    "Description": "天賦培養素材。\n「堅忍」是冰之國土的品格。\n堅忍源自對生存的渴望。就算未被播撒在沃土中，羸弱的種子卻也能憑藉著這樣的渴望，在凍原的土地下根系深扎。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_104368"
+  },
+  {
+    "Rank": 13123,
+    "MaterialType": 14,
+    "Id": 104369,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「堅忍」的指引",
+    "Description": "天賦培養素材。\n「堅忍」是冰之國土的品格。\n堅忍帶來生長的意志。即便寒潮摧折，羸弱的種子仍能藉這意志破土而出，在風雪覆蓋的大地上生出新芽。",
+    "TypeDescription": "角色天賦素材",
+    "Icon": "UI_ItemIcon_104369"
+  },
+  {
+    "Rank": 13123,
+    "MaterialType": 14,
+    "Id": 104370,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "「堅忍」的哲學",
+    "Description": "天賦培養素材。\n「堅忍」是冰之國土的品格。\n堅忍成就生命的繁榮。人們不曾向嚴寒屈服，如同羸弱的種子偏要在風雪裡開出花朵；文明歷經困苦而生生不息，如同霜仙花在寒冬中一年又一年盛放。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_104370"
+  },
+  {
+    "Rank": 13124,
+    "MaterialType": 14,
+    "Id": 104371,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "「榮光」的教導",
+    "Description": "天賦培養素材。\n「榮光」是冰之國土的信仰。\n榮光是深埋於凍土下的火種，若能描摹出它的形貌，也就獲得了面對嚴寒的勇氣。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_104371"
+  },
+  {
+    "Rank": 13124,
+    "MaterialType": 14,
+    "Id": 104372,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「榮光」的指引",
+    "Description": "天賦培養素材。\n「榮光」是冰之國土的信仰。\n榮光是長夜中閃爍的火苗，跋涉於雪原上的眾人始終注視著它的方向，如同確信風雪將息，黎明將至，他們確信自己仍行在應行的路上。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_104372"
+  },
+  {
+    "Rank": 13124,
+    "MaterialType": 14,
+    "Id": 104373,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "「榮光」的哲學",
+    "Description": "天賦培養素材。\n「榮光」是冰之國土的信仰。\n榮光是火炬臺上不熄的火焰，如今與風雪的國度共存亡。火焰點燃高尚的激情，為了維繫它的永恆燃燒，人們甘願奉獻出自己的一切。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_104373"
+  },
+  {
     "Rank": 6,
     "MaterialType": 13,
     "Id": 105002,
@@ -20867,8 +21164,8 @@
     "Id": 107032,
     "RankLevel": 0,
     "ItemType": 2,
-    "Name": "霜月地靈龕之鑰",
-    "Description": "能破除散布在霜月各處的遠古地靈龕封印。\n大地上矗立著的遠古神龕，隨著那個文明的覆滅，也將自己封鎖了。在幽深的秘境中尋得的密鑰能破除封印，或許只是利用過去的氣息，讓神龕忘記一切盡毀之事吧。",
+    "Name": "月靈龕之鑰",
+    "Description": "能破除散布在霜月各處的遠古月靈龕封印。\n月面上矗立著的遠古神龕，隨著月之意志的消逝，也失去了舊日寄予信仰的恩主。在幽冷的月壤上尋得的密鑰能破除封印，或許只是利用過去的氣息，讓神龕忘記一切盡毀之事吧。",
     "TypeDescription": "冒險道具",
     "Icon": "UI_ItemIcon_107032"
   },
@@ -20882,6 +21179,39 @@
     "Description": "構築「文明」的最小單位。\n任何來自「文明」的造物，從人類的集體記憶中消逝後，皆會裂解為摹憶因子。將其供奉於空之神殿內的摹憶中樞，或許會得到來自隙間記憶的賜福…",
     "TypeDescription": "冒險道具",
     "Icon": "UI_ItemIcon_107034"
+  },
+  {
+    "Rank": 420001,
+    "MaterialType": 10,
+    "Id": 107035,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "散失的冰神瞳",
+    "Description": "濃烈的冰元素能量積聚成的物質。獻給冰的神像，能彌補它在漫長歲月中散失的力量。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_107035"
+  },
+  {
+    "Rank": 420001,
+    "MaterialType": 5,
+    "Id": 107036,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "影生翼滴",
+    "Description": "影域中誕生的生物，所化成的奇怪液狀物質。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_107036"
+  },
+  {
+    "Rank": 410011,
+    "MaterialType": 5,
+    "Id": 107037,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "至冬地靈龕之鑰",
+    "Description": "能破除散布在至冬大地各處的遠古地靈龕封印。\n大地上矗立著的遠古神龕，隨著那個文明的覆滅，也將自己封鎖了。在幽深的秘境中尋得的密鑰能破除封印，或許只是利用過去的氣息，讓神龕忘記一切盡毀之事吧。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_107037"
   },
   {
     "Rank": 100000,
@@ -32521,6 +32851,186 @@
     "Icon": "UI_ItemIcon_108884"
   },
   {
+    "Rank": 220018,
+    "MaterialType": 15,
+    "EffectDescription": "為選取的角色恢復生命值上限的30%，並額外恢復600點生命值。",
+    "Id": 108985,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "奇怪的罐罐燜肉",
+    "Description": "陶罐盛裝的肉餚。肉塊在陶罐中掙扎了許久，出爐的時候已經散成了絲狀肉絮，就像是在嚼一塊撕碎後的舊毛毯。一口入肚後，只想默默把罐子推遠一點，再遠一點…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108885"
+  },
+  {
+    "Rank": 220018,
+    "MaterialType": 15,
+    "EffectDescription": "為選取的角色恢復生命值上限的32%，並額外恢復1250點生命值。",
+    "Id": 108986,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "罐罐燜肉",
+    "Description": "陶罐盛裝的肉餚。將切塊的食材分別放入陶罐中，以麵團封口後送入烤爐。出爐後揭開酥皮麵包，加入酸奶油調味。做法並不複雜，但爐溫的掌控和燜製時長需要一些經驗。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108885"
+  },
+  {
+    "Rank": 220018,
+    "MaterialType": 15,
+    "EffectDescription": "為選取的角色恢復生命值上限的34%，並額外恢復1900點生命值。",
+    "Id": 108987,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "美味的罐罐燜肉",
+    "Description": "陶罐盛裝的肉餚。打開蓋著的酥皮，濃郁的肉香便裹著蒸汽撲面而來，就像是在雪夜往壁爐裡添進一截燒得正旺的木柴，溫暖得讓人沉溺。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108885"
+  },
+  {
+    "Rank": 240011,
+    "MaterialType": 15,
+    "EffectDescription": "為選取的角色恢復生命值上限的8%，並額外恢復800點生命值。",
+    "Id": 108988,
+    "RankLevel": 1,
+    "ItemType": 2,
+    "Name": "奇怪的老庭院燻腸",
+    "Description": "切片的香腸。肉片厚薄不一，甚至有幾片還連在一起，夾起來的時候，簡直就像一串被煙燻過的老樹藤…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108886"
+  },
+  {
+    "Rank": 240011,
+    "MaterialType": 15,
+    "EffectDescription": "為選取的角色恢復生命值上限的9%，並額外恢復1000點生命值。",
+    "Id": 108989,
+    "RankLevel": 1,
+    "ItemType": 2,
+    "Name": "老庭院燻腸",
+    "Description": "切片的香腸。調味灌製並經煙燻的肉腸，切成薄片後直接裝盤。老庭院餐廳的招牌菜餚，也是用餐時無人拒絕的萬能選項。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108886"
+  },
+  {
+    "Rank": 240011,
+    "MaterialType": 15,
+    "EffectDescription": "為選取的角色恢復生命值上限的10%，並額外恢復1200點生命值。",
+    "Id": 108990,
+    "RankLevel": 1,
+    "ItemType": 2,
+    "Name": "美味的老庭院燻腸",
+    "Description": "切片的香腸。緊實的肉感與煙燻的鹹鮮在嘴裡各自落座又彼此點頭致意，像一場默契的合奏…難怪在飯桌上它永遠最先見底。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108886"
+  },
+  {
+    "Rank": 531008,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色攻擊力提高66點，持續300秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 108991,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "奇怪的魚魚刨花",
+    "Description": "長條狀的魚片。厚的部分凍得硬邦邦的，薄的部分卻已經融化了…唯一值得慶幸的是，在至冬的溫度下，應該不用擔心吃壞肚子。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108887"
+  },
+  {
+    "Rank": 531008,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色攻擊力提高81點，持續300秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 108992,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "魚魚刨花",
+    "Description": "長條狀的魚片。以利刃從整條凍魚表面斜向刮削出又薄又長的卷狀魚片，通常沾粗鹽食用，是至冬常見的生食冷盤。",
+    "TypeDescription": "食物",
+    "Icon": "UI_ItemIcon_108887"
+  },
+  {
+    "Rank": 531008,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色攻擊力提高95點，持續300秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 108993,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "美味的魚魚刨花",
+    "Description": "長條狀的魚片。薄如紙頁的魚肉堆在碟中像一小簇冰雕的花瓣，拈起一片送入口中，清冽的鮮甜宛如雪融於舌尖。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108887"
+  },
+  {
+    "Rank": 620010,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色防禦力提高165點，持續300秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 108994,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "奇怪的雪國冷湯",
+    "Description": "冷食的湯品。從渾濁的湯汁中努力分辨出一些食材，蔬菜碎得像紙屑，但火腿丁非常大塊——因為最後才想起來，只能在手忙腳亂之中臨時加進去…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108888"
+  },
+  {
+    "Rank": 620010,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色防禦力提高200點，持續300秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 108995,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "雪國冷湯",
+    "Description": "冷食的湯品。將煮熟的食材均勻鋪入碗中，再澆入酸奶油調配的湯汁。有的至冬人會在最冷的日子裡挑戰一口氣喝下一大碗冷湯，以此證明自己是戰勝苦寒的勇士。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108888"
+  },
+  {
+    "Rank": 620010,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色防禦力提高235點，持續300秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 108996,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "美味的雪國冷湯",
+    "Description": "冷食的湯品。泛著微光的乳白色湯底，入口像是清冽的白雪，緊接著酸奶油的醇厚使人精神一振。蔬菜的脆口、蛋黃的扎實、火腿丁的鮮美，每一匙的口感都不一樣，像是在開可口的驚喜盲盒。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108888"
+  },
+  {
+    "Rank": 730001,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色嚴寒累積速度略微降低，持續900秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 108997,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "奇怪的紅菜湯",
+    "Description": "紅通通的湯品。整體散發著敷衍的感覺，就好像把上一頓剩下的食材隨意地倒入湯裡。喝完之後身體的確比剛才暖了那麼一點，像是一根火柴被劃亮，帶來了稍縱即逝的溫暖。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108889"
+  },
+  {
+    "Rank": 730001,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色嚴寒累積速度小幅降低，持續900秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 108998,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "紅菜湯",
+    "Description": "紅通通的湯品。先熬出底湯後分批加入各類食材，慢燉至彼此交融，上桌前往往會加一匙酸奶油。飲下後體內會生出持續而穩定的暖意，足以抵禦戶外的嚴寒。",
+    "TypeDescription": "食物",
+    "Icon": "UI_ItemIcon_108889"
+  },
+  {
+    "Rank": 730001,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色嚴寒累積速度降低，持續900秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 108999,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "美味的紅菜湯",
+    "Description": "紅通通的湯品。熱湯入喉的那一刻起，暖意便順著食道一路往下墜，像有人在胸腔點了一團火，溫度悄然蔓延，最後連耳尖都暖過來了。在暴雪中趕路時，這碗湯遠遠比多裹一件大衣實在！",
+    "TypeDescription": "食物",
+    "Icon": "UI_ItemIcon_108889"
+  },
+  {
     "Rank": 300501,
     "MaterialType": 5,
     "Id": 109000,
@@ -35502,6 +36012,127 @@
     "Icon": "UI_ItemIcon_109000"
   },
   {
+    "Rank": 300501,
+    "MaterialType": 5,
+    "Id": 109655,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "食譜：罐罐燜肉",
+    "Description": "步驟詳實的食譜，記載著「罐罐燜肉」的製作方法。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_109000"
+  },
+  {
+    "Rank": 300501,
+    "MaterialType": 5,
+    "Id": 109656,
+    "RankLevel": 1,
+    "ItemType": 2,
+    "Name": "食譜：老庭院燻腸",
+    "Description": "步驟詳實的食譜，記載著「老庭院燻腸」的製作方法。",
+    "TypeDescription": "食譜",
+    "Icon": "UI_ItemIcon_109000"
+  },
+  {
+    "Rank": 300501,
+    "MaterialType": 5,
+    "Id": 109657,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "食譜：魚魚刨花",
+    "Description": "步驟詳實的食譜，記載著「魚魚刨花」的製作方法。",
+    "TypeDescription": "食譜",
+    "Icon": "UI_ItemIcon_109000"
+  },
+  {
+    "Rank": 300501,
+    "MaterialType": 5,
+    "Id": 109658,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "食譜：雪國冷湯",
+    "Description": "步驟詳實的食譜，記載著「雪國冷湯」的製作方法。",
+    "TypeDescription": "食譜",
+    "Icon": "UI_ItemIcon_109000"
+  },
+  {
+    "Rank": 300501,
+    "MaterialType": 5,
+    "Id": 109659,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "食譜：紅菜湯",
+    "Description": "步驟詳實的食譜，記載著「紅菜湯」的製作方法。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_109000"
+  },
+  {
+    "Rank": 300501,
+    "MaterialType": 5,
+    "Id": 109660,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "食譜：冰醋栗冰淇淋",
+    "Description": "步驟詳實的食譜，記載著「冰醋栗冰淇淋」的製作方法。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_109000"
+  },
+  {
+    "Rank": 300501,
+    "MaterialType": 5,
+    "Id": 109661,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "食譜：格魯波夫黑列巴",
+    "Description": "步驟詳實的食譜，記載著「格魯波夫黑列巴」的製作方法。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_109000"
+  },
+  {
+    "Rank": 300501,
+    "MaterialType": 5,
+    "Id": 109662,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "食譜：千層蜂蜜糕",
+    "Description": "步驟詳實的食譜，記載著「千層蜂蜜糕」的製作方法。",
+    "TypeDescription": "食譜",
+    "Icon": "UI_ItemIcon_109000"
+  },
+  {
+    "Rank": 300501,
+    "MaterialType": 5,
+    "Id": 109663,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "食譜：至冬串燒",
+    "Description": "步驟詳實的食譜，記載著「至冬串燒」的製作方法。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_109000"
+  },
+  {
+    "Rank": 300501,
+    "MaterialType": 5,
+    "Id": 109664,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "食譜：雪原上的雪球花",
+    "Description": "步驟詳實的食譜，記載著「雪原上的雪球花」的製作方法。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_109000"
+  },
+  {
+    "Rank": 300501,
+    "MaterialType": 5,
+    "Id": 109665,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "食譜：甜滋滋冰淇淋球",
+    "Description": "步驟詳實的食譜，記載著「甜滋滋冰淇淋球」的製作方法。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_109000"
+  },
+  {
     "Rank": 322,
     "MaterialType": 4,
     "Id": 110000,
@@ -35654,6 +36285,17 @@
     "Description": "碾碎黑麥後得到的粗糙、深色粉末。用其製作出的食物擁有獨特的口感與酸味。",
     "TypeDescription": "食材",
     "Icon": "UI_ItemIcon_110016"
+  },
+  {
+    "Rank": 321,
+    "MaterialType": 4,
+    "Id": 110017,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "蜂蜜",
+    "Description": "琥珀色的液體，帶有甜蜜的味道，商鋪裡常年販售。可以用於調製飲料和醬汁，也可以用來醃製肉類。",
+    "TypeDescription": "食材",
+    "Icon": "UI_ItemIcon_110017"
   },
   {
     "Rank": 900000,
@@ -36011,6 +36653,17 @@
     "Description": "以白靈果和薄荷製成的魚餌，暗藏玄機，對於部分魚類有著視覺和氣味的雙重誘惑，在漁師群體中獲得了大量好評…\n\n適用魚種：凶凶鯊類、明眼魚類。",
     "TypeDescription": "魚餌",
     "Icon": "UI_ItemIcon_111036"
+  },
+  {
+    "Rank": 340,
+    "MaterialType": 32,
+    "Id": 111037,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "閃爍餌",
+    "Description": "以亮片為主要結構的魚餌，塗有少量螢光素材，正確運用時，能發出閃爍的光芒，中央的球體內還裝有更小的響珠，模擬小魚的震動，對至冬的魚類有著特別的吸引力。\n\n適用魚種：雪圓鰭類、星花魚類。",
+    "TypeDescription": "魚餌",
+    "Icon": "UI_ItemIcon_111037"
   },
   {
     "Rank": 10100,
@@ -37608,6 +38261,138 @@
     "Icon": "UI_ItemIcon_112145"
   },
   {
+    "Rank": 10639,
+    "MaterialType": 14,
+    "Id": 112146,
+    "RankLevel": 1,
+    "ItemType": 2,
+    "Name": "幻造螢屑",
+    "Description": "至冬妖精在戰鬥後的殘留。\n生長在妖精身軀表面的晶片的碎屑，在掉落下來時失去了顏色，就猶如蟲蛾的鱗屑一般。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_112146"
+  },
+  {
+    "Rank": 10639,
+    "MaterialType": 14,
+    "Id": 112147,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "幻造裂晶",
+    "Description": "至冬妖精在戰鬥後的殘留。\n生長在妖精身軀表面的晶片的碎塊，雖然已經空空如也，但是也能夠感受到其中曾蘊含的獨特力量。",
+    "TypeDescription": "角色與武器培養素材",
+    "Icon": "UI_ItemIcon_112147"
+  },
+  {
+    "Rank": 10639,
+    "MaterialType": 14,
+    "Id": 112148,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "幻造晶鱗石",
+    "Description": "至冬妖精在戰鬥後的殘留。\n生長在妖精身軀表面的晶片，據說體表擁有更多晶片的妖精，便能驅使更多的力量。但沒人知道力量究竟是蘊藏在他們身軀之中，只是藉由晶塊發散，還是晶塊才是那些力量的載體。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_112148"
+  },
+  {
+    "Rank": 10640,
+    "MaterialType": 14,
+    "Id": 112149,
+    "RankLevel": 1,
+    "ItemType": 2,
+    "Name": "嵌合種",
+    "Description": "異種合成魔獸體內的核心。\n合成魔獸生長於體內的最簡單的核心。即便是最簡單的核心，也蘊藏著一切合成造物生長的規劃。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_112149"
+  },
+  {
+    "Rank": 10640,
+    "MaterialType": 14,
+    "Id": 112150,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "併生嵌合胞",
+    "Description": "異種合成魔獸體內的核心。\n合成魔獸體內相對複雜的核心，並生的核心意味著將要驅動兩種生命的循環，以此構成同一個生物。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_112150"
+  },
+  {
+    "Rank": 10640,
+    "MaterialType": 14,
+    "Id": 112151,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "源生嵌合體",
+    "Description": "異種合成魔獸體內的核心。\n合成魔獸體內可承受的最為複雜的核心，已是受人工規劃卻完美的生命之種。將之製造而出的人，或許已理解生命本身被塑造的方式了吧。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_112151"
+  },
+  {
+    "Rank": 10148,
+    "MaterialType": 14,
+    "Id": 112152,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "沉積殘片",
+    "Description": "力量強大的獸怪形成的殘積物。\n剛開始在體內器官或骨骼上附著的殘積物，隨著力量的增長，或許會完整覆蓋某一片軀體或某一個器官吧。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_112152"
+  },
+  {
+    "Rank": 10148,
+    "MaterialType": 14,
+    "Id": 112153,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "沉積結塊",
+    "Description": "力量強大的獸怪形成的殘積物。\n已經附著體內器官或骨骼許久的殘積物。這些殘積物在被取出後，將被視為力量的象徵，會被該族群的後裔好好保存。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_112153"
+  },
+  {
+    "Rank": 10148,
+    "MaterialType": 14,
+    "Id": 112154,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "沉積增生物",
+    "Description": "力量強大的獸怪形成的殘積物。\n完整附著器官或骨骼的殘積物，甚至可以說在力量循環的節點增生了新的骨骼或器官。唯有壽數漫長而修行不怠的獸怪能在體內形成這樣的增生物。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_112154"
+  },
+  {
+    "Rank": 10149,
+    "MaterialType": 14,
+    "Id": 112155,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "靈生空根",
+    "Description": "樹妖在回歸沉寂前掉落的枝節。\n沒有生長出太多的晶石的枝節，力量微弱的枝節，散發著微弱的螢光。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_112155"
+  },
+  {
+    "Rank": 10149,
+    "MaterialType": 14,
+    "Id": 112156,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "靈生分櫱節",
+    "Description": "樹妖在回歸沉寂前掉落的枝節。\n生長出一定晶石的枝節，沉甸甸的，能從中感受到離開樹妖的主體後尚未消失的生命力。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_112156"
+  },
+  {
+    "Rank": 10149,
+    "MaterialType": 14,
+    "Id": 112157,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "靈生盤枝心",
+    "Description": "樹妖在回歸沉寂前掉落的枝節。\n完整生長出晶石核心的枝節，其中蘊含著不會輕易消失的生命力。如果現在將之埋在土地之中，恐怕很快就能生長出新的樹妖吧。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_112157"
+  },
+  {
     "Rank": 11101,
     "MaterialType": 14,
     "Id": 113001,
@@ -38587,6 +39372,28 @@
     "Icon": "UI_ItemIcon_113089"
   },
   {
+    "Rank": 11101,
+    "MaterialType": 14,
+    "Id": 113090,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "焰中不滅花枝",
+    "Description": "某人為私心而製造出的合成魔獸，從其身上取下的不會在火中焦枯的花枝。\n在陰沉的煉金術士找到令生命永恆的方法並付諸實踐之前，他曾撫摸著被造出來的葉如紅羽般的魔獸的軀殼，想像未來某日不滅的合成魔物自火中迎接自己期待許久的朋友的場景。到那時…或許他該折下造物身軀上永生的花作為對方從陰影之域中逃離的賀禮。",
+    "TypeDescription": "角色培養素材",
+    "Icon": "UI_ItemIcon_113090"
+  },
+  {
+    "Rank": 11101,
+    "MaterialType": 14,
+    "Id": 113091,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "遊空之物的斷尾",
+    "Description": "強大的合成魔獸的尾羽。\n也許被創造出來的合成魔獸也應該自己尋找自己的命運，才不至於將自己置身被拋擲的苦境。出於這種想法，塑造魔物的人總喜歡為他的作品添加翅膀。不過世上擁有翅膀的生靈有很多，可真正學會飛翔的卻只是其中的一小部分，但或許這就是所謂的「造化」吧。",
+    "TypeDescription": "角色培養素材",
+    "Icon": "UI_ItemIcon_113091"
+  },
+  {
     "Rank": 15101,
     "MaterialType": 14,
     "Id": 114001,
@@ -39511,6 +40318,138 @@
     "Icon": "UI_ItemIcon_114084"
   },
   {
+    "Rank": 15122,
+    "MaterialType": 14,
+    "Id": 114085,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "蒼星軍勢的始動",
+    "Description": "賦予武器突破之力的素材。\n於整片凍土東方，那如翼之山中誕生的妄自尊大的怪物，不過是販賣麥芽與礦物的卑劣之徒。\n聽命於他的風仙不過是長著蟲翅的羸弱之眾，矮靈們甚至無法用那短小的雙臂舉起武器。\n這群烏合之眾的叫囂又有何人聽取，他們又有何等能力阻遏諸位獸王的侵襲？",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_114085"
+  },
+  {
+    "Rank": 15122,
+    "MaterialType": 14,
+    "Id": 114086,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "蒼星軍勢的集結",
+    "Description": "賦予武器突破之力的素材。\n「靠運氣佔據了峽谷，那可笑的妄自尊大者不過是強弩之末，衝風之衰。」\n「他們拼盡全力才可抵擋我們的軍勢一二，很快就將流露出敗跡。」\n「軍士們，不斷行進吧，因獸王的令已喻示，我們輕鬆便能取得整場戰役的勝利！」",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_114086"
+  },
+  {
+    "Rank": 15122,
+    "MaterialType": 14,
+    "Id": 114087,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "蒼星軍勢的鳴令",
+    "Description": "賦予武器突破之力的素材。\n「我們的仇敵莫諾馬赫已在山谷之外建造他的行宮，意味著他有十足的自信與我們進行周旋。」\n「如今看來，他值得我們一切的小心注意，速勝之論已不必再提。」\n「但是沒關係，以智慧引領諸靈的王必會與諸氏族一同克服一切艱難，走向光輝的新紀元！」",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_114087"
+  },
+  {
+    "Rank": 15122,
+    "MaterialType": 14,
+    "Id": 114088,
+    "RankLevel": 5,
+    "ItemType": 2,
+    "Name": "蒼星軍勢的征服",
+    "Description": "賦予武器突破之力的素材。\n「所有妖精的庇護主，蒼星的繼承者，誕生自神聖血脈的我等的帝王，白沙皇！」\n「稱頌吧，如今整個冰原已然在極星的輝曜下渾然一體。」\n「稱頌吧，誅殺了偽王的皇帝接納了所有的妖精，竟是如此仁愛和慈悲！」",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_114088"
+  },
+  {
+    "Rank": 15123,
+    "MaterialType": 14,
+    "Id": 114089,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "藏窖靈漿的斟酌",
+    "Description": "賦予武器突破之力的素材。\n一度如極光閃耀於終北天際的光芒因觸碰至高處的視線而湮滅。\n極寒與黑晶之災幾乎摧毀了所有生命存續的根基。\n唯有不懼怕寒冷的諸多妖精得以從冰雪中走出，主宰整個再無人煙的國度。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_114089"
+  },
+  {
+    "Rank": 15123,
+    "MaterialType": 14,
+    "Id": 114090,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "藏窖靈漿的酩酊",
+    "Description": "賦予武器突破之力的素材。\n在別處僅作為食糧豐收的餘慶，對於行於嚴寒之中的諸氏來說則是生存的必須。\n據說製酒技術最為精湛的矮靈們昔日就曾依靠此術為當時效忠的王者累積寶庫中的財富。\n如是，妖精的釀造藉由氏族之間的交易，如淌毒的蜜一般流經了整個凍土。",
+    "TypeDescription": "武器突破素材",
+    "Icon": "UI_ItemIcon_114090"
+  },
+  {
+    "Rank": 15123,
+    "MaterialType": 14,
+    "Id": 114091,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "藏窖靈漿的酣暢",
+    "Description": "賦予武器突破之力的素材。\n據說曾經，無數的瓊漿被傾倒入冰湖。\n傳言道或是作為戰爭補給的酒因出了紕漏不得不銷毀，或是某位矮靈的大公在與水妖之主的賭約中失了利。\n直至湖面上燒起無法撲滅的藍色魔焰，水下的敵人於令人窒息的波濤中翻湧。\n他們才知道在精通世事流遷的族裔手中，水也是火，靈藥亦是劇毒。",
+    "TypeDescription": "武器突破素材",
+    "Icon": "UI_ItemIcon_114091"
+  },
+  {
+    "Rank": 15123,
+    "MaterialType": 14,
+    "Id": 114092,
+    "RankLevel": 5,
+    "ItemType": 2,
+    "Name": "藏窖靈漿的恣意",
+    "Description": "賦予武器突破之力的素材。\n對執掌晶礦採掘與凍土開發的矮靈們的大公來說，在極地開闢一片綠洲不過舉手之勞，自他處移種品質更好的黑麥也並非難事。\n於至冬存續到如今的諸多妖靈貴族裡，他擁有的地位也顯赫到無可比擬。\n但日益隆盛的野心之火順著喉壁而下，古老妖精的貪欲隨著歲月增長，亦無止境。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_114092"
+  },
+  {
+    "Rank": 15124,
+    "MaterialType": 14,
+    "Id": 114093,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "凜雪帝皇的復生",
+    "Description": "賦予武器突破之力的素材。\n自雪原中走出的，尚未成為整個雪原之主的英雄，在那時已展現出總向周圍人傾訴太多的習性。\n所以在他獲得當時尚未化作人型的冰雪的精靈的禮物時倍感驚訝。\n對於他來說，他從未記得自己向對方訴說過自如翼的山峰之中、似冰雪般的卵中誕生的事，也不曾向對方述說那一日的日期。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_114093"
+  },
+  {
+    "Rank": 15124,
+    "MaterialType": 14,
+    "Id": 114094,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "凜雪帝皇的慶儀",
+    "Description": "賦予武器突破之力的素材。\n宮廷裡的妖精們並不明白為何被獻與皇帝的禮物被製造成這樣的形狀，他們只會一味堆砌如寶珠般的飾品上的工藝。\n唯有王座上的皇帝與冰雪的精靈知曉這飾品背後的含義。\n重要的從來不是儀式，而是儀式中具有的往昔的真意。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_114094"
+  },
+  {
+    "Rank": 15124,
+    "MaterialType": 14,
+    "Id": 114095,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "凜雪帝皇的悲恤",
+    "Description": "賦予武器突破之力的素材。\n在真相如苦水泛起波瀾的夜晚，已然不似從前的她為王座之上的友人籌備的禮物。\n兩人之間都覺得那應該是他們最後一次如此交談。\n因為在那以後，他們從前同行的道路就因其中一人的軟弱與另一人的憤怒分崩離析。",
+    "TypeDescription": "武器突破素材",
+    "Icon": "UI_ItemIcon_114095"
+  },
+  {
+    "Rank": 15124,
+    "MaterialType": 14,
+    "Id": 114096,
+    "RankLevel": 5,
+    "ItemType": 2,
+    "Name": "凜雪帝皇的辭決",
+    "Description": "賦予武器突破之力的素材。\n在戰爭的前夕，不知何時也不知如何出現在桌上之物。\n他知道那是他久未得見的友人親手所製。\n天地原如，他在此時才恍然，這就是一切厄難的開端，一切慾望的苦果，一切毀滅的先兆。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_114096"
+  },
+  {
     "Rank": 100201,
     "MaterialType": 12,
     "Id": 115010,
@@ -40281,6 +41220,28 @@
     "Icon": "UI_ItemIcon_117003"
   },
   {
+    "Rank": 100101,
+    "MaterialType": 24,
+    "Id": 117030,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "深秘聖物匣·二等",
+    "Description": "收納聖遺物的聖物匣。願見者可以蒙受祝福。\n\n每個聖物匣中，能獲得以下聖遺物套裝中的一件：\n·「血紅之證」\n·「爐火融煉之心」\n·「戰狂」\n·「教官」\n·「流放者」",
+    "TypeDescription": "聖物匣",
+    "Icon": "UI_ItemIcon_117002"
+  },
+  {
+    "Rank": 100101,
+    "MaterialType": 24,
+    "Id": 117031,
+    "RankLevel": 5,
+    "ItemType": 2,
+    "Name": "深秘聖物匣·一等",
+    "Description": "收納聖遺物的聖物匣。願見者可以感受聖蹟。\n\n每個聖物匣中，能獲得以下聖遺物套裝中的一件：\n·「血紅之證」\n·「爐火融煉之心」",
+    "TypeDescription": "聖物匣",
+    "Icon": "UI_ItemIcon_117003"
+  },
+  {
     "Rank": 260101,
     "MaterialType": 12,
     "Id": 118001,
@@ -40411,6 +41372,28 @@
     "Description": "#某個意義重大的日子獲得的禮品。\n\n獻給凝望著營火搖曳的{F#妳}{M#你}。\n祝{F#妳}{M#你}在旅途中找到屬於自己的溫暖與幸福。\n\n「每隔七天，推薦菜色就會輪換一次。每隔三十天，月亮就會傳播新的祝福。下次為{F#妳}{M#你}慶祝，居然還要接近九千小時！我們一起度過的時光就像巧克力一樣，軟軟甜甜，還不捨得一口氣吃完…嗯！派蒙最喜歡和{F#妳}{M#你}一起旅行了！」",
     "TypeDescription": "貴重物品",
     "Icon": "UI_ItemIcon_118011"
+  },
+  {
+    "Rank": 260101,
+    "MaterialType": 12,
+    "Id": 118013,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "給旅行者的小蛋糕",
+    "Description": "#在某個意義重大的日子獲得的禮品。\n\n獻給正於月影與林海中跋涉的{F#妳}{M#你}。\n祈願{F#妳}{M#你}在這片大地上的旅途處處充滿歡笑與驚喜。",
+    "TypeDescription": "貴重物品",
+    "Icon": "UI_ItemIcon_118013"
+  },
+  {
+    "Rank": 260101,
+    "MaterialType": 5,
+    "Id": 118014,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "給旅行者的小蛋糕",
+    "Description": "#在某個意義重大的日子獲得的禮品。\n\n獻給正於月影與林海中跋涉的{F#妳}{M#你}。\n祈願{F#妳}{M#你}在這片大地上的旅途處處充滿歡笑與驚喜。\n\n「每隔七天，推薦菜就會輪換一次。每隔三十天，月亮就會播撒新的祝福。下次為{F#妳}{M#你}慶祝，居然還要接近九千小時！就像月亮每天都會升起一樣，派蒙也會一直和旅行者一起旅行…嗯，把美好的記憶留在每一個地方！」",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_118013"
   },
   {
     "Rank": 10,
@@ -52198,6 +53181,39 @@
   {
     "Rank": 10,
     "MaterialType": 2,
+    "Id": 121411,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "晶結蘊藏的卵石",
+    "Description": "如卵狀的石頭，蘊含著「灰眸」尋回自己身軀所需要的力量。\n一度為名為阿爾維斯的矮靈大公瓜分並取走的力量，不知如何被阿克西妮婭取得並放置在了已然成為遺蹟的謐源所的空殼之中。其中或許蘊藏著平俗之人如何透過重新誕生而轉變為更完善的生命的秘密。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121411"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121412,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "雪精研究室的鑰匙",
+    "Description": "形如指針的鑰匙。\n可以打開「謐源所」裡，雪孃大公的研究室大門。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121412"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121413,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "貓糧",
+    "Description": "似乎是名為帕芙琳娜的雪孃大公為養在「謐源所」內，名為「拉拉」的貓準備的食糧…聞起來有點香，但畢竟是貓糧，所以大概沒什麼味道吧。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121413"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
     "Id": 121414,
     "RankLevel": 4,
     "ItemType": 2,
@@ -52425,6 +53441,61 @@
     "Description": "裝有特製糖雕的匣子。裡面裝著的糖雕似乎是針對某人訂製的。無論如何，為了避免糖雕融化，還請盡快食用。",
     "TypeDescription": "消耗品",
     "Icon": "UI_ItemIcon_100101"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121442,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "赤鑰匙",
+    "Description": "用於開啟下水道控制室大門的三把鑰匙之一，呈赤色。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121442"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121443,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "白鑰匙",
+    "Description": "用於開啟下水道控制室大門的三把鑰匙之一，呈白色。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121443"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121444,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "藍鑰匙",
+    "Description": "用於開啟下水道控制室大門的三把鑰匙之一，呈藍色。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121444"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121445,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "「儀式」觀禮請柬",
+    "Description": "奇妙的請柬，似乎總會經由各種方式送到應當送到的人手中。\n手持這份「請柬」，便可前往至冬冰山上的赫斯珀利德斯之館，參加雪孃王公帕芙琳娜的婚禮。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121445"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121446,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "被分離的伊科爾的碎片",
+    "Description": "被打斷「儀式」的阿克西妮婭分離出去的伊科爾力量的碎片。\n不知道為什麼化作了散發光芒的人偶的樣貌。或許「達成他人願望」的意志在許久以前就成為了操控他的絲線，而現在的他不過是承載著某種超越之力的傀儡偶人罷了。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121446"
   },
   {
     "Rank": 410007,
@@ -52946,6 +54017,28 @@
   {
     "Rank": 10,
     "MaterialType": 2,
+    "Id": 121541,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "冰結如心的卵石",
+    "Description": "如卵狀的石頭，蘊含著「灰眸」尋回自己身軀所需要的力量。\n一度被名為帕芙琳娜的妖精大公用於彌補妖精本身的殘缺。\n其中或許懷抱著平俗之人如何透過重新誕生以企及更高位階的願望。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121541"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121542,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "藻如蛇影的卵石",
+    "Description": "如卵狀的石頭，蘊含著「灰眸」尋回自己身軀所需要的力量。\n一度被名為卡謝伊的煉金術士用於製造追求永恆的生命。\n其中或許留存著平俗之人如何透過重新誕生以塑造不朽的啟示。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121542"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
     "Id": 121543,
     "RankLevel": 0,
     "ItemType": 2,
@@ -53019,6 +54112,17 @@
     "Description": "裝有特製糖雕的匣子。裡面裝著的糖雕似乎是針對某人訂製的。無論如何，為了避免糖雕融化，還請盡快食用。",
     "TypeDescription": "消耗品",
     "Icon": "UI_ItemIcon_100101"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121551,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "「大盜寶藏」所在處",
+    "Description": "似乎是名為「屠夫」的幫派成員在蒐集資金時獲得的線索…也許能找到什麼大寶藏。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_100173"
   },
   {
     "Rank": 10,
@@ -53144,6 +54248,83 @@
   {
     "Rank": 10,
     "MaterialType": 2,
+    "Id": 121567,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "無名藥劑配方",
+    "Description": "無名藥劑配方",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121564"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121568,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "某位高貴之人的筆記·其一",
+    "Description": "某位高貴之人的筆記·其一",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121564"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121569,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "某位高貴之人的筆記·其二",
+    "Description": "某位高貴之人的筆記·其二",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121564"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121570,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "某位高貴之人的筆記·其三",
+    "Description": "某位高貴之人的筆記·其三",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121564"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121571,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "某位高貴之人的筆記·其四",
+    "Description": "某位高貴之人的筆記·其四",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121564"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121572,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "某位高貴之人的筆記·其五",
+    "Description": "某位高貴之人的筆記·其五",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121564"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121573,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "某位高貴之人的筆記·其六",
+    "Description": "某位高貴之人的筆記·其六",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121564"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
     "Id": 121574,
     "RankLevel": 4,
     "ItemType": 2,
@@ -53241,6 +54422,39 @@
     "Icon": "UI_ItemIcon_121596"
   },
   {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121597,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "金屬控制輪",
+    "Description": "用於打開下水道內某扇大門的金屬控制輪。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121597"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121598,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "下水道升降梯控制輪",
+    "Description": "用於操控下水道內升降梯的控制輪。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121597"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121599,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "升降梯控制輪",
+    "Description": "用於操控前往禮堂的升降梯的控制輪。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121597"
+  },
+  {
     "Rank": 410007,
     "MaterialType": 5,
     "Id": 121601,
@@ -53298,6 +54512,149 @@
   {
     "Rank": 10,
     "MaterialType": 2,
+    "Id": 121610,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "造型奇特的徽記",
+    "Description": "娜斯佳在奇怪的房間內找到的徽記，似乎能夠解除陷阱…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121610"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121611,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "貴賓的憑證",
+    "Description": "描金的信函。\n據說是由山中之館的主人所發，從前多有手持此信函的人受邀前來赫斯珀利德斯之館。\n持有此信函者，可以前往山中之館招待貴賓的休息室小憩。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121596"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121612,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "幫派成員遺落的鑰匙",
+    "Description": "你們從幫派成員遺留的箱子裡發現了一把鑰匙，它似乎可以打開某扇門。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121612"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121613,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "晶礦熔煉物",
+    "Description": "使用克什尼克晶礦純化熔煉而成的晶體，說不定有特殊的用處。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121613"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121614,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "《下水道出入指南》",
+    "Description": "於控制室內尋得的指南，上面寫有打開下水道控制室大門的方法。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121614"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121615,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "奇怪的卡片",
+    "Description": "在巡獵者木屋獲得的奇怪的卡片，很精緻，但是不知道有什麼作用…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121615"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121616,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "影域保管庫權限卡",
+    "Description": "在巡獵者木屋獲得的卡片，似乎是能解鎖巡獵者木屋下影域保管庫的權限卡。\n在至冬的影域中探索，升級卡片的權限，或許就能打開更多的影域保管庫。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121616"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121617,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "影域保管庫權限卡",
+    "Description": "在巡獵者木屋獲得的卡片，似乎是能解鎖巡獵者木屋下影域保管庫的權限卡。\n在至冬的影域中探索，升級卡片的權限，或許就能打開更多的影域保管庫。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121617"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121618,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "影域保管庫權限卡",
+    "Description": "在巡獵者木屋獲得的卡片，似乎是能解鎖巡獵者木屋下影域保管庫的權限卡。\n在至冬的影域中探索，升級卡片的權限，或許就能打開更多的影域保管庫。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121618"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121619,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "影域保管庫權限卡",
+    "Description": "在巡獵者木屋獲得的卡片，似乎是能解鎖巡獵者木屋下影域保管庫的權限卡。\n在至冬的影域中探索，升級卡片的權限，或許就能打開更多的影域保管庫。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121619"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121620,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "影域保管庫權限卡",
+    "Description": "在巡獵者木屋獲得的卡片，似乎是能解鎖巡獵者木屋下影域保管庫的權限卡。\n在至冬的影域中探索，升級卡片的權限，或許就能打開更多的影域保管庫。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121620"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121621,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "影域保管庫權限卡",
+    "Description": "在巡獵者木屋獲得的卡片，似乎是能解鎖巡獵者木屋下影域保管庫的權限卡。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121621"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121622,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "缺型資料塊",
+    "Description": "在影域中散落的奇怪資料塊，似乎是有人故意散布在影域之中作為「標誌物」的東西。也許收集這些奇怪的資料碎塊，對影域中的探索能有所幫助吧…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121622"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
     "Id": 121625,
     "RankLevel": 3,
     "ItemType": 2,
@@ -53316,6 +54673,567 @@
     "Description": "發現於月球的古老石板。儘管其上的文字完全無法辨識，但不知為何，閱讀者總是能以母語理解其中含義。",
     "TypeDescription": "任務道具",
     "Icon": "UI_ItemIcon_121625"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121627,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "紋路精巧的鈕扣",
+    "Description": "深受霜精們喜愛的鈕扣，牠們如此喜愛鈕扣恐怕是因為牠們圓滾滾的雙手沒法製作這麼精細又輕巧的物品吧。可以用於在霜精的「好東西商店」兌換一些好東西。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121627"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121630,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "缺型資料塊",
+    "Description": "在影域中散落的奇怪資料塊，似乎是有人故意散布在影域之中作為「標誌物」的東西。也許收集這些奇怪的資料碎塊，對影域中的探索能有所幫助吧…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121622"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121631,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "首屆「冒險家競技大賽」冠軍獎盃",
+    "Description": "#至冬冒險家協會總部頒發的獎盃，是{F#妳}{M#你}與派蒙在冒險領域的卓越之證。\n因「冒險家協會發展大會」的討論進展不順，原本為了促進各國冒險家友好交流的「首屆冒險家競技大賽」成了決定話語權的競技場…\n{F#妳}{M#你}和派蒙作為打破僵局的重要人物，中途加入賽事，成績突飛猛進，最終奪得冠軍的寶座，並主導了會議的走向，敲定了多條關鍵決議…\n雖說這些決議不會立刻顯現出強大的功效，但相信，它們能讓協會與時俱進，並使更多冒險家深度受益…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121631"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121632,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "雷殛細枝",
+    "Description": "雷殛細枝上再度衍生的枝杈。\n將它放置在雷殛寒枝上，就能召來雷電。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121632"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121633,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "帽子·好桶",
+    "Description": "雪人的配飾。雖是普通的鐵桶，但只要應用得當，也足夠為雪人的形象增光添彩了。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121633"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121634,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "帽子·禮貌",
+    "Description": "雪人的配飾。非常優雅的帽子，即使是戴在雪人的頭上，也能讓雪人顯得非常有禮貌。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121634"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121635,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "帽子·尖尖",
+    "Description": "雪人的配飾。非常有節日氣息的帽子。只要心情夠好，每天都可以視為節日。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121635"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121636,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "帽子·趣頂",
+    "Description": "雪人的配飾。造型十分有趣的…帽子？無論如何，戴上去之後，或許能讓雪人的形象變得更加有趣…？",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121636"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121637,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "雪鵠綴羽",
+    "Description": "雪人的配飾。製作靈感來源於某位舞步高超的芭蕾舞者。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121637"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121638,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "汐歌冰花",
+    "Description": "雪人的配飾。製作靈感來自於某位擅長高歌的水妖。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121638"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121639,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "圍巾·暖紅",
+    "Description": "雪人的配飾。看起來就非常暖和的圍巾，圍在雪人脖子上之後，孩子們就有了一個很合適的擁抱位置。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121639"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121640,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "圍巾·夢星",
+    "Description": "雪人的配飾。圍巾上的裝飾宛如夢中星辰，那雪人做夢的時候，是會夢見飄雪的天空，還是融雪歸匯的深海呢？",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121640"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121641,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "圍巾·格紋",
+    "Description": "雪人的配飾。非常優雅的圍巾，即使是戴在雪人的脖子上，也能讓雪人顯得非常有禮貌。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121641"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121642,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "圍巾·趣托",
+    "Description": "雪人的配飾。造型十分有趣的…圍巾？還是頸托…？無論如何，戴上去之後，或許能讓雪人的形象變得更加有趣…？",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121642"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121643,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "伏獵兜帽",
+    "Description": "雪人的配飾。製作靈感來自於某位身手高超的獵人。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121643"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121644,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "形制古老的鑰匙",
+    "Description": "形制相當古老的鑰匙，似乎能夠打開赫斯珀利德斯之館某處的門扉。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121644"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121652,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "《列車裝飾指南》",
+    "Description": "記載著各類裝飾方式的指南冊。閱讀後，或許可以給自己的列車做一些特別的裝飾…？",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121652"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 85,
+    "Id": 121653,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "黑雪鵠紀念冊",
+    "Description": "#以黑雪鵠印象設計而成的紀念冊，記錄了{F#妳}{M#你}作為經紀人與奧黛塔共度的那段時光。\n凡是遠去的，皆成眷戀。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121653"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121654,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "奧黛塔的演出照",
+    "Description": "《黑雪鵠》演出劇照，畫面中的奧黛塔如高潔的黑雪鵠翩然起舞。\n透過它可以回想起那出美輪美奐的舞劇。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121654"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121655,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "黑雪鵠簽名海報",
+    "Description": "#奧黛塔將這張珍貴的簽名海報贈送給了{F#妳}{M#你}，以此感謝那段時間對她的支援。\n比起這份禮物，她的笑容或許更加珍貴。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121655"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121656,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "白羽書籤",
+    "Description": "#在聽完奧黛塔的故事之後，她將這枚精緻的書籤送給了{F#妳}{M#你}。\n祝願她早日長出堅硬的飛羽，自由飛往無垠的天空。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121656"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 88,
+    "Id": 121657,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "鋒曳星跡·蘊輝",
+    "Description": "獲得後，將使影域中自身戰鬥裝束的披風發生表現上的變化…\n\n「流星的尾跡與槍彈的軌跡，或許有著幾分相似之處。」",
+    "TypeDescription": "貴重物品",
+    "Icon": "UI_ItemIcon_121657"
+  },
+  {
+    "Rank": 410007,
+    "MaterialType": 5,
+    "Id": 121659,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "雪葬之地的殘香之引",
+    "Description": "集齊三支雪葬之地的殘香之引後，可開啟雪葬之地的影域遺物寶庫。\n據說從前探索影域的小隊，偶爾會遇見探索到的寶物無法從影域中取出的情況，便會在該影域處留下特定的「嗅跡」，唯有透過完整的香引，才可尋找到那些影域遺物所在的位置。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121659"
+  },
+  {
+    "Rank": 410007,
+    "MaterialType": 5,
+    "Id": 121660,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "寒峰之下的殘香之引",
+    "Description": "集齊三支寒峰之下的殘香之引後，可開啟寒峰之下的影域遺物寶庫。\n據說從前探索影域的小隊，偶爾會遇見探索到的寶物無法從影域中取出的情況，便會在該影域處留下特定的「嗅跡」，唯有透過完整的香引，才可尋找到那些影域遺物所在的位置。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121660"
+  },
+  {
+    "Rank": 410007,
+    "MaterialType": 5,
+    "Id": 121661,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "凍土之上的殘香之引",
+    "Description": "集齊三支凍土之上的殘香之引後，可開啟凍土之上的影域遺物寶庫。\n據說從前探索影域的小隊，偶爾會遇見探索到的寶物無法從影域中取出的情況，便會在該影域處留下特定的「嗅跡」，唯有透過完整的香引，才可尋找到那些影域遺物所在的位置。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121661"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 86,
+    "Id": 121663,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "《尋靈》試演會留念合照",
+    "Description": "科洛列夫茨基劇團舉辦了芭蕾舞劇《尋靈》的首次公開試演，所有到場的演職人員以及觀眾共同留下了這張紀念合照。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121663"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121664,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "娜斯佳頭頂的枝葉",
+    "Description": "娜斯佳的部分身軀，是開啟通往「家」的門扉的重要物件。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121664"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121665,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "娜斯佳手繪的示意圖",
+    "Description": "娜斯佳手繪的示意圖，提示打開「家」的門扉的方法。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_100003"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121666,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "《下水道出入指南》",
+    "Description": "於控制室內尋得的指南，上面寫有打開下水道控制室大門的方法。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_100003"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121668,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "地下室某房間入口門的操縱桿",
+    "Description": "用於打開地下室某房間入口門的操縱桿。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121360"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121669,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "地下室某房間出口門的操縱桿",
+    "Description": "用於打開地下室某房間出口門的操縱桿。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121360"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121671,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "克什尼克能量",
+    "Description": "「灰眸」的運作所需的能源。\n在至冬由克什尼克晶礦驅動的暖源的範圍裡，或在探索過程中採集克什尼克晶礦，均可回復克什尼克能量。",
+    "TypeDescription": "探索資源",
+    "Icon": "UI_ItemIcon_121671"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121672,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "奇怪的試劑樣品",
+    "Description": "從「伊茲梅洛」搬運的「特殊貨物」中取得的樣品，到底和影域有沒有關係呢？",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_107036"
+  },
+  {
+    "Rank": 260103,
+    "MaterialType": 5,
+    "Id": 121674,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "鋒曳星跡·蘊輝空印",
+    "Description": "奇妙的印記，可使影域中自身戰鬥裝束的披風發生表現上的變化，已發揮效用…\n\n「流星的尾跡與槍彈的軌跡，或許有著幾分相似之處。」",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121657"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121675,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "極星舞劇集·卷一",
+    "Description": "科洛列夫茨基劇團的劇本集，收錄了舞劇《黑雪鵠》的片段。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121675"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121676,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "極星舞劇集·卷二",
+    "Description": "科洛列夫茨基劇團的劇本集，收錄了舞劇《海鳥》的片段。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121675"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121677,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "極星舞劇集·卷三",
+    "Description": "科洛列夫茨基劇團的劇本集，收錄了舞劇《特使》的片段。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121675"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121678,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "極星舞劇集·卷四",
+    "Description": "科洛列夫茨基劇團的劇本集，收錄了舞劇《火鳥》的片段。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121675"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121679,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "至冬國通史·卷一",
+    "Description": "由人類學者編纂的歷史書籍，本冊主要記載了傳說中的黃金城。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121680"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121680,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "至冬國通史·卷二",
+    "Description": "由人類學者編纂的歷史書籍，本冊主要記載了白沙皇及其近臣們的事蹟。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121680"
+  },
+  {
+    "Rank": 430011,
+    "MaterialType": 12,
+    "Id": 121681,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "冰淇淋保管盒",
+    "Description": "保管著冰淇淋的盒子。為了避免冰淇淋融化，還請盡快食用。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_100101"
+  },
+  {
+    "Rank": 430011,
+    "MaterialType": 12,
+    "Id": 121682,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "特別的冰淇淋保管盒",
+    "Description": "保管著特製冰淇淋的盒子。裡面裝著的冰淇淋似乎是針對某人訂製。無論如何，為了避免冰淇淋融化，還請盡快食用。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_100101"
+  },
+  {
+    "Rank": 430011,
+    "MaterialType": 12,
+    "Id": 121683,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "特別的冰淇淋保管盒",
+    "Description": "保管著特製冰淇淋的盒子。裡面裝著的冰淇淋似乎是針對某人訂製。無論如何，為了避免冰淇淋融化，還請盡快食用。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_100101"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121685,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "娜斯佳與媽媽的合照",
+    "Description": "一張邊緣有些磨損的舊照片，記錄了娜斯佳與媽媽的溫馨瞬間。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_121664"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121686,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "執行命令者的紀錄",
+    "Description": "執行命令者的紀錄",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_101633"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121687,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "調查手記",
+    "Description": "調查手記",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_101633"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121688,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "煉金術士的手記·其一",
+    "Description": "煉金術士的手記·其一",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_101633"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121689,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "煉金術士的手記·其二",
+    "Description": "煉金術士的手記·其二",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_101633"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121690,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "矮靈王公的手記",
+    "Description": "矮靈王公的手記",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_101633"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121701,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "蒙灰旅人的紀錄",
+    "Description": "蒙灰旅人的紀錄",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_101633"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 2,
+    "Id": 121702,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "紙頁泛黃的資料",
+    "Description": "紙頁泛黃的資料",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_101633"
   },
   {
     "Rank": 0,
@@ -53835,6 +55753,72 @@
     "Icon": "UI_ItemIcon_130044"
   },
   {
+    "Rank": 246,
+    "MaterialType": 31,
+    "Id": 130045,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "「霜仙花」的種子",
+    "Description": "透過「化種匣」獲得的種子，富有活力，品質上佳，種植於壺中洞天的田畝後，可在一段時間後生長為「霜仙花」。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_130045"
+  },
+  {
+    "Rank": 245,
+    "MaterialType": 31,
+    "Id": 130046,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "「植絨草」的種子",
+    "Description": "透過「化種匣」獲得的種子，富有活力，品質上佳，種植於壺中洞天的田畝後，可在一段時間後生長為「植絨草」。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_130046"
+  },
+  {
+    "Rank": 244,
+    "MaterialType": 31,
+    "Id": 130047,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "「金蕨」的種子",
+    "Description": "透過「化種匣」獲得的種子，富有活力，品質上佳，種植於壺中洞天的田畝後，可在一段時間後生長為「金蕨」。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_130047"
+  },
+  {
+    "Rank": 243,
+    "MaterialType": 31,
+    "Id": 130048,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "「紅甜菜」的種子",
+    "Description": "透過「化種匣」獲得的種子，富有活力，品質上佳，種植於壺中洞天的田畝後，可在一段時間後生長為「紅甜菜」。",
+    "TypeDescription": "素材",
+    "Icon": "UI_ItemIcon_130048"
+  },
+  {
+    "Rank": 242,
+    "MaterialType": 31,
+    "Id": 130049,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "「冰醋栗」的種子",
+    "Description": "透過「化種匣」獲得的種子，富有活力，品質上佳，種植於壺中洞天的田畝後，可在一段時間後生長為「冰醋栗」。",
+    "TypeDescription": "素材",
+    "Icon": "UI_ItemIcon_130049"
+  },
+  {
+    "Rank": 241,
+    "MaterialType": 31,
+    "Id": 130050,
+    "RankLevel": 0,
+    "ItemType": 2,
+    "Name": "「雪球花」的種子",
+    "Description": "透過「化種匣」獲得的種子，富有活力，品質上佳，種植於壺中洞天的田畝後，可在一段時間後生長為「雪球花」。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_130050"
+  },
+  {
     "Rank": 341,
     "MaterialType": 4,
     "Id": 131000,
@@ -54325,7 +56309,7 @@
     "RankLevel": 3,
     "ItemType": 2,
     "Name": "秘源機關·巡戒使",
-    "Description": "行動靈巧，構型如同游魚的小型機關，似乎與深古遺蹟中的機械體有著的同源技術，能夠在各種液體環境下運轉，包括高熱的液態燃素——抑或是其本身就有著偵測熱源的設計意圖，會自動趨近高熱訊號。\n正是因為其「尋熱」的特性，技藝嫻熟的漁師能用散發熱量的魚餌將其誘捕。拆解後，還能獲得古老文明的奇特裝置。因此，這種「機關魚類」可謂價值連城…",
+    "Description": "行動靈巧，構型如同游魚的小型機關，似乎與深古遺蹟中的機械體有著同源的技術，能夠在各種液體環境下運轉，包括高熱的液態燃素——抑或是其本身就有著偵測熱源的設計意圖，會自動趨近高熱訊號。\n正是因為其「尋熱」的特性，技藝嫻熟的漁師能用散發熱量的魚餌將其誘捕。拆解後，還能獲得古老文明的奇特裝置。因此，這種「機關魚類」可謂價值連城…",
     "TypeDescription": "魚",
     "Icon": "UI_ItemIcon_131045"
   },
@@ -54416,6 +56400,380 @@
     "Description": "被傳為龍之後裔的大型魚類。\n是假龍族群的旁支，主體呈深沉的青黑色，腹部則是醒目的淡金。與眾多表親相比，個性極為溫和，從不主動與其他水生生物起衝突。當然，這不意味著牠們好欺負——受到攻擊時，牠們能如金槍直刺般暴起一擊，將體型數倍於自己的進犯者俐落打退，震懾整片水域…",
     "TypeDescription": "魚",
     "Icon": "UI_ItemIcon_131053"
+  },
+  {
+    "Rank": 346,
+    "MaterialType": 4,
+    "Id": 131054,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "炭灰雪圓鰭",
+    "Description": "通體渾圓的至冬魚類，看似與遍布提瓦特的魨類是遠親，其實分屬於截然不同的族系，最早被釣魚協會記錄在案時，代號為「雪國圓鰭魚」，歷經十幾代漁師的變遷，約定俗成的名字演化為「雪圓鰭」。\n炭灰雪圓鰭是這一族中最常見的亞種，據稱，其細碎的鱗片含有特殊的成分，曬乾磨碎後與金蕨根的乾粉混合，能夠作為效率可觀的引燃劑，是部分至冬冒險家盛讚之物…",
+    "TypeDescription": "魚",
+    "Icon": "UI_ItemIcon_131054"
+  },
+  {
+    "Rank": 346,
+    "MaterialType": 4,
+    "Id": 131055,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "奶油雪圓鰭",
+    "Description": "通體渾圓的至冬魚類，看似與遍布提瓦特的魨類是遠親，其實分屬於截然不同的族系，最早被釣魚協會記錄在案時，代號為「雪國圓鰭魚」，歷經十幾代漁師的變遷，約定俗成的名字演化為「雪圓鰭」。\n鮮奶油雪圓鰭因色彩近乎純白與數量稀少，被視為最珍貴的至冬魚類。傳說，只要棲身的水域水質稍差，體表都會摻入雜色。還有幾則童話將其當成主角，描繪了天才少年漁師跟著這種雪圓鰭前往「奶油之國」的夢幻故事，一度導致城內的鮮奶油缺貨…",
+    "TypeDescription": "魚",
+    "Icon": "UI_ItemIcon_131055"
+  },
+  {
+    "Rank": 346,
+    "MaterialType": 4,
+    "Id": 131056,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "月光雪圓鰭",
+    "Description": "通體渾圓的至冬魚類，看似與遍布提瓦特的魨類是遠親，其實分屬於截然不同的族系，最早被釣魚協會記錄在案時，代號為「雪國圓鰭魚」，歷經十幾代漁師的變遷，約定俗成的名字演化為「雪圓鰭」。\n據民間傳說所述，月光雪圓鰭是至冬魚類中耐力最強，方向感最佳的品種，因為其先祖遠游至挪德卡萊水域，受到月光的洗禮，因而呈現出了這種奇特的色彩。但從挪德卡萊歸來的商人否認了這種說法，生物學家也指出，其色彩大概來源於喜食的水底植物。不過由於月光的前綴好聽又好記，這個稱呼一直被沿用至今…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_131056"
+  },
+  {
+    "Rank": 346,
+    "MaterialType": 4,
+    "Id": 131057,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "赤甜星花魚",
+    "Description": "游弋在至冬水域的特殊魚種，從正面觀察，六片魚鰭呈現出近似星星與雪花的形狀，因而被最早發現牠的漁師命名為「星花魚」。其中紅色亞種的色彩接近紅甜菜，因而被冠以「赤甜」的前綴。不過，這個前綴只是一種外貌的形容，有學者研究發現牠們體表的顏色主要是為了震懾一些捕食者，從而保護自身，沒想到在人類的視角，反而顯得更加美味…",
+    "TypeDescription": "魚",
+    "Icon": "UI_ItemIcon_131057"
+  },
+  {
+    "Rank": 346,
+    "MaterialType": 4,
+    "Id": 131058,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "青仙星花魚",
+    "Description": "游弋在至冬水域的特殊魚種，從正面觀察，六片魚鰭呈現出近似星星與雪花的形狀，因而被最早發現牠的漁師命名為「星花魚」。其中青色亞種的色彩與霜仙花的花瓣外緣相仿，因而被冠以「青仙」的前綴。相比同族，青仙星花魚的感官敏銳，總能遠遠察覺到危險，進而憑藉六片魚鰭的動力優勢快速遠逃…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_131058"
+  },
+  {
+    "Rank": 346,
+    "MaterialType": 4,
+    "Id": 131059,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "虹晶星花魚",
+    "Description": "游弋在至冬水域的特殊魚種，從正面觀察，六片魚鰭呈現出近似星星與雪花的形狀，因而被最早發現牠的漁師命名為「星花魚」。其中藍色亞種的鱗片有著絕佳的質感與色彩，在某些光照下如同映照彩虹的水晶，因而得到了「虹晶」的雅稱。得益於這種閃耀的外觀，虹晶星花魚成為了至冬魚類收藏家們最珍視的貴客，甚至有人專門為了這種魚兒搭建昂貴的水箱景觀，結果久久無法釣到牠們…",
+    "TypeDescription": "魚",
+    "Icon": "UI_ItemIcon_131059"
+  },
+  {
+    "Rank": 320016,
+    "MaterialType": 1,
+    "EffectDescription": "復甦選取的角色，為其恢復900點生命值。",
+    "Id": 132001,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "奇怪的冰醋栗冰淇淋",
+    "Description": "杯裝的甜品。凍得十分結實，用了鐵湯匙與九牛二虎之力才勉強挖了一小塊下來。入口後牙齒更是被凍得直打顫，原本該有的甜味一絲都沒嚐到，就像被這極低的溫度奪走了所有登臺的機會…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108890"
+  },
+  {
+    "Rank": 320016,
+    "MaterialType": 1,
+    "EffectDescription": "復甦選取的角色，為其恢復1200點生命值。",
+    "Id": 132002,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "冰醋栗冰淇淋",
+    "Description": "杯裝的甜品。將鮮奶油、牛奶、蜂蜜與碾碎的漿果一同攪拌，凝凍成綿密絲滑的冰淇淋球，以玻璃杯盛裝。果香奶香交融出可口的味道，不管溫度如何，總有人樂於享用。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108890"
+  },
+  {
+    "Rank": 320016,
+    "MaterialType": 1,
+    "EffectDescription": "復甦選取的角色，為其恢復1500點生命值。",
+    "Id": 132003,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "美味的冰醋栗冰淇淋",
+    "Description": "杯裝的甜品。仔細看，能隱約辨認出果肉的碎紋，像凍在冰層裡的一小片晚霞。從至冬戶外溫度來說，這片甜蜜晚霞保留一天應該不成問題，但從這酸甜平衡的完美味道來說，絕不會剩到那個時候…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108890"
+  },
+  {
+    "Rank": 231011,
+    "MaterialType": 15,
+    "EffectDescription": "立即為選取的角色恢復生命值上限的18%，並在之後的30秒內，每5秒恢復300點生命值。",
+    "Id": 132004,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "奇怪的格魯波夫黑列巴",
+    "Description": "扎實的麵包。非常沉重，讓人一度懷疑是不是發酵這個步驟被直接跳過了。就算是泡到湯裡，質地也沒有任何變化…這難道是專門用來磨煉意志的訓練道具嗎？",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108891"
+  },
+  {
+    "Rank": 231011,
+    "MaterialType": 15,
+    "EffectDescription": "立即為選取的角色恢復生命值上限的20%，並在之後的30秒內，每5秒恢復390點生命值。",
+    "Id": 132005,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "格魯波夫黑列巴",
+    "Description": "扎實的麵包。麵團需要經過長時間的低溫發酵，烤製後外殼堅硬，內部緊實綿密。成品能長久存放，因此是至冬商人、士兵和獵戶們的常見口糧。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108891"
+  },
+  {
+    "Rank": 231011,
+    "MaterialType": 15,
+    "EffectDescription": "立即為選取的角色恢復生命值上限的22%，並在之後的30秒內，每5秒恢復470點生命值。",
+    "Id": 132006,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "美味的格魯波夫黑列巴",
+    "Description": "扎實的麵包。撕一塊放進嘴裡，首先是沉穩的微酸，然後是黑麥特有的粗糲穀香，帶著厚重感，讓人越嚼越過癮。最後喉底深處湧上來一絲回甘，像是藏在凍土下的一抹動人生機。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108891"
+  },
+  {
+    "Rank": 221014,
+    "MaterialType": 15,
+    "EffectDescription": "立即為選取的角色恢復生命值上限的26%，並在之後的30秒內，每5秒恢復450點生命值。",
+    "Id": 132007,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "奇怪的千層蜂蜜糕",
+    "Description": "蜂蜜製成的蛋糕。蛋糕本該有的甜味在熊熊爐火中化作了焦苦，雖然酸奶油製成的奶霜酸得十分盡職，但少了甜味的呼應，顯得格外孤立無援…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108892"
+  },
+  {
+    "Rank": 221014,
+    "MaterialType": 15,
+    "EffectDescription": "立即為選取的角色恢復生命值上限的28%，並在之後的30秒內，每5秒恢復620點生命值。",
+    "Id": 132008,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "千層蜂蜜糕",
+    "Description": "蜂蜜製成的蛋糕。將加入蜂蜜的麵團擀薄後烤製，再用酸奶油調製的奶霜逐層塗抹疊放，最後撒上碎屑、淋上蜂蜜。想要得到形狀整齊的成品，每一步都不得馬虎。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108892"
+  },
+  {
+    "Rank": 221014,
+    "MaterialType": 15,
+    "Id": 132009,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "美味的千層蜂蜜糕",
+    "Description": "蜂蜜製成的蛋糕。琥珀色的蜜糕與乳白色的奶霜交替疊著，一層又一層，緊密地貼合在一起，像一部編年史，每一頁都是同樣精彩又引人致勝的故事。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108892"
+  },
+  {
+    "Rank": 421009,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色攀爬和衝刺消耗的體力降低15%，持續900秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 132010,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "奇怪的至冬串燒",
+    "Description": "大塊大塊的烤肉串。黑色的焦殼又苦又硬，像在啃一層薄薄的木炭。然而悲劇還沒結束，過熟的肉更是又乾又柴，看來肉汁可能在出爐之前就已經消失殆盡了…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108893"
+  },
+  {
+    "Rank": 421009,
+    "MaterialType": 1,
+    "Id": 132011,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "至冬串燒",
+    "Description": "大塊大塊的烤肉串。將肉塊醃製好後，穿過鐵籤於炭火上翻烤至外焦內嫩。庭院聚會、行獵途中，甚至雪地裡清出一小塊空地，在至冬任何能生火的地方都會有它的身影。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108893"
+  },
+  {
+    "Rank": 421009,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色攀爬和衝刺消耗的體力降低25%，持續900秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 132012,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "美味的至冬串燒",
+    "Description": "大塊大塊的烤肉串。隨著喀地一聲輕微脆響，肉汁就毫無保留地湧了出來，醃料在火光中化為醇厚底味，襯托出肉本身的鮮甜。嘴角被油和肉汁染得發亮，但美味在前已經完全顧不了了…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108893"
+  },
+  {
+    "Rank": 521014,
+    "MaterialType": 1,
+    "Id": 132013,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "奇怪的雪原上的雪球花",
+    "Description": "經典的分層沙拉。在長時間的放置下，形狀變得搖搖欲墜，更糟糕的是所有食材都進行了一場無序遷徙，每層之間的分界變得十分模糊…雖然不是不能吃，但已經完全失去了沙拉該有的口感。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108894"
+  },
+  {
+    "Rank": 521014,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色攻擊力提高194點，持續300秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 132014,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "雪原上的雪球花",
+    "Description": "經典的分層沙拉。將食材分別處理後逐層鋪疊，每層之間以調味酸奶油醬分隔，組裝完成後通常還需要靜置一段時間，讓味道充分交融。成品形似雪球花簇綻放於雪原之上，故得此名。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108894"
+  },
+  {
+    "Rank": 521014,
+    "MaterialType": 1,
+    "Id": 132015,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "美味的雪原上的雪球花",
+    "Description": "經典的分層沙拉。邊緣的雪球花彷彿綻放於雪原盡頭，而金光閃閃的蛋黃則是落日，染透了這一片地平線。沉浸於如此賞心悅目的藝術品之中，直到湯匙碰到空空如也的盤底發出了輕響才回過神來——啊，原來已經吃完了嗎？",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108894"
+  },
+  {
+    "Rank": 421009,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色攀爬和衝刺消耗的體力降低25%，持續1500秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 132016,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「彈無虛發」",
+    "Description": "阿羅夏的特色料理。他在圖加林歡快的叫聲中遞來了一大串烤肉，油脂還在滋滋作響，肉塊比尋常的串燒切得更厚。咬開能感覺到野味已經被炭火完全馴服…看來不管是子彈還是火候，他都掌握得非常精準！",
+    "TypeDescription": "食物",
+    "Icon": "UI_ItemIcon_108895"
+  },
+  {
+    "Rank": 521014,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色攻擊力提高274點，持續300秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 132017,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「湖畔邊的雪鵠」",
+    "Description": "奧黛塔的特色料理。小份的沙拉安靜地佔據著碟子圓心位置，就像聚光燈照亮了舞臺中間，每一層的造型更是像她的舞步一樣精準。用料也被她仔細計算過，就算全部吃完，也絕對不會對次日的體重造成任何影響…所以放心大膽地吃吧！",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108896"
+  },
+  {
+    "Rank": 510012,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色攻擊力提高224點，暴擊率提升6%，持續300秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 132018,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "奇怪的甜滋滋冰淇淋球",
+    "Description": "組合裝冰淇淋球。球體表面坑坑窪窪，像一顆被揉皺了又試圖撐回原形的紙團，入口後冰渣感掩蓋了所有的味道，無法品嚐出風味層次…此時此刻只想閉上眼睛反思自己為何選擇挑戰它…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108897"
+  },
+  {
+    "Rank": 510012,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色攻擊力提高272點，暴擊率提升8%，持續300秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 132019,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "甜滋滋冰淇淋球",
+    "Description": "組合裝冰淇淋球。將四種不同風味的冰淇淋球分別盛入紙碗後，組裝進同一外盒中。品鑑者通常分為兩派，想吃哪種挖哪種，或者按照順序一碗一碗地吃完…共同點是盒底都會變成空的。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108897"
+  },
+  {
+    "Rank": 510012,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色攻擊力提高320點，暴擊率提升10%，持續300秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 132020,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "美味的甜滋滋冰淇淋球",
+    "Description": "組合裝冰淇淋球。綿密細膩的冰淇淋在舌面從容地融化，清冽的感覺與甜蜜的風味緩緩鋪開，就算盒子已經空了也捨不得放開手，閉上眼睛彷彿還能感受到幸福的回味…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108897"
+  },
+  {
+    "Rank": 131099,
+    "MaterialType": 15,
+    "EffectDescription": "好看又好吃，但是幾乎沒什麼用。",
+    "Id": 132021,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "冰淇淋・阿羅夏",
+    "Description": "以人物印象為參考製作的冰淇淋。長出了獵犬耳朵的小雪球，讓人想到了帶著圖加林打獵的阿羅夏。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108898"
+  },
+  {
+    "Rank": 131099,
+    "MaterialType": 15,
+    "EffectDescription": "好看又好吃，但是幾乎沒什麼用。",
+    "Id": 132022,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "冰淇淋・奧黛塔",
+    "Description": "以人物印象為參考製作的冰淇淋。優雅的雪鵠靜靜佇立著，讓人想到了科洛列夫茨基劇團的芭蕾舞者奧黛塔。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108899"
+  },
+  {
+    "Rank": 531099,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色攻擊力提高114點，持續300秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 132023,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "格瓦斯",
+    "Description": "格瓦斯尼克飲料店的招牌飲品，這杯似乎不含酒精。有著顯著的黑麵包酸香與輕微的氣泡感，微甜而不膩。冰鎮後飲用很是暢快，沒有至冬人會拒絕它。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108900"
+  },
+  {
+    "Rank": 231099,
+    "MaterialType": 15,
+    "EffectDescription": "立即為選取的角色恢復生命值上限的26%，並在之後的30秒內，每5秒恢復570點生命值。",
+    "Id": 132024,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "香料蜂蜜飲",
+    "Description": "暖呼呼的特色熱飲。將蜂蜜融入熱水後加入少量乾香料煮製而成。接過玻璃杯時手指會先於嘴巴感受到滿足，飲下後微微辛辣的熱意能讓整個人在寒風中振作精神。",
+    "TypeDescription": "食物",
+    "Icon": "UI_ItemIcon_108901"
+  },
+  {
+    "Rank": 530099,
+    "MaterialType": 1,
+    "EffectDescription": "隊伍中所有角色暴擊率提升16%，持續300秒。多人遊戲時，僅對自己的角色生效。",
+    "Id": 132025,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "凜冬冰釀",
+    "Description": "冰星果製成的冷飲。清亮奇異的粉藍色，在一片白茫茫的冰雪世界中顯得格外顯眼，就像是從即將破曉的空中舀出的一杯小小的奇蹟。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108902"
+  },
+  {
+    "Rank": 131099,
+    "MaterialType": 15,
+    "EffectDescription": "好看又好吃，但是幾乎沒什麼用。",
+    "Id": 132026,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "冰淇淋・常規",
+    "Description": "常見的至冬冰淇淋。帶有如同至冬風雪般的冰涼。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_108890"
   },
   {
     "Rank": 500101,
@@ -56695,6 +59053,127 @@
     "Icon": "UI_ItemIcon_BGM_Common"
   },
   {
+    "Rank": 500107,
+    "MaterialType": 36,
+    "Id": 141291,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "旋曜玉帛·其一百八十九",
+    "Description": "蘊含著韻律的奇妙結晶，宛如細膩絲綢編織而成的美玉。零星散布在大陸各地，或是尋覓珍奇的商人手中。透過「塵歌壺」中的「千籟至音·颻揚」或「千籟至音·繆繞」，可以還原記錄在其中的旋律。此「旋曜玉帛」中蘊含著來自至冬的神秘旋律。",
+    "TypeDescription": "冒險道具",
+    "Icon": "UI_ItemIcon_BGM_Common"
+  },
+  {
+    "Rank": 500107,
+    "MaterialType": 36,
+    "Id": 141292,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "旋曜玉帛·其一百九十",
+    "Description": "蘊含著韻律的奇妙結晶，宛如細膩絲綢編織而成的美玉。零星散布在大陸各地，或是尋覓珍奇的商人手中。透過「塵歌壺」中的「千籟至音·颻揚」或「千籟至音·繆繞」，可以還原記錄在其中的旋律。此「旋曜玉帛」中蘊含著來自至冬的神秘旋律。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_BGM_Common"
+  },
+  {
+    "Rank": 500107,
+    "MaterialType": 36,
+    "Id": 141293,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "旋曜玉帛·其一百九十一",
+    "Description": "蘊含著韻律的奇妙結晶，宛如細膩絲綢編織而成的美玉。零星散布在大陸各地，或是尋覓珍奇的商人手中。透過「塵歌壺」中的「千籟至音·颻揚」或「千籟至音·繆繞」，可以還原記錄在其中的旋律。此「旋曜玉帛」中蘊含著來自至冬的神秘旋律。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_BGM_Common"
+  },
+  {
+    "Rank": 500107,
+    "MaterialType": 36,
+    "Id": 141294,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "旋曜玉帛·其一百九十二",
+    "Description": "蘊含著韻律的奇妙結晶，宛如細膩絲綢編織而成的美玉。零星散布在大陸各地，或是尋覓珍奇的商人手中。透過「塵歌壺」中的「千籟至音·颻揚」或「千籟至音·繆繞」，可以還原記錄在其中的旋律。此「旋曜玉帛」中蘊含著來自至冬的神秘旋律。",
+    "TypeDescription": "冒險道具",
+    "Icon": "UI_ItemIcon_BGM_Common"
+  },
+  {
+    "Rank": 500107,
+    "MaterialType": 36,
+    "Id": 141295,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "旋曜玉帛·其一百九十三",
+    "Description": "蘊含著韻律的奇妙結晶，宛如細膩絲綢編織而成的美玉。零星散布在大陸各地，或是尋覓珍奇的商人手中。透過「塵歌壺」中的「千籟至音·颻揚」或「千籟至音·繆繞」，可以還原記錄在其中的旋律。此「旋曜玉帛」中蘊含著來自至冬的神秘旋律。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_BGM_Common"
+  },
+  {
+    "Rank": 500107,
+    "MaterialType": 36,
+    "Id": 141296,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "旋曜玉帛·其一百九十四",
+    "Description": "蘊含著韻律的奇妙結晶，宛如細膩絲綢編織而成的美玉。零星散布在大陸各地，或是尋覓珍奇的商人手中。透過「塵歌壺」中的「千籟至音·颻揚」或「千籟至音·繆繞」，可以還原記錄在其中的旋律。此「旋曜玉帛」中蘊含著來自至冬的神秘旋律。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_BGM_Common"
+  },
+  {
+    "Rank": 500107,
+    "MaterialType": 36,
+    "Id": 141298,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "旋曜玉帛·其一百九十六",
+    "Description": "蘊含著韻律的奇妙結晶，宛如細膩絲綢編織而成的美玉。零星散布在大陸各地，或是尋覓珍奇的商人手中。透過「塵歌壺」中的「千籟至音·颻揚」或「千籟至音·繆繞」，可以還原記錄在其中的旋律。此「旋曜玉帛」中蘊含著來自至冬的神秘旋律。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_BGM_Common"
+  },
+  {
+    "Rank": 500107,
+    "MaterialType": 36,
+    "Id": 141299,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "旋曜玉帛·其一百九十七",
+    "Description": "蘊含著韻律的奇妙結晶，宛如細膩絲綢編織而成的美玉。零星散布在大陸各地，或是尋覓珍奇的商人手中。透過「塵歌壺」中的「千籟至音·颻揚」或「千籟至音·繆繞」，可以還原記錄在其中的旋律。此「旋曜玉帛」中蘊含著來自至冬的神秘旋律。",
+    "TypeDescription": "冒險道具",
+    "Icon": "UI_ItemIcon_BGM_Common"
+  },
+  {
+    "Rank": 500107,
+    "MaterialType": 36,
+    "Id": 141300,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "旋曜玉帛·其一百九十八",
+    "Description": "蘊含著韻律的奇妙結晶，宛如細膩絲綢編織而成的美玉。零星散布在大陸各地，或是尋覓珍奇的商人手中。透過「塵歌壺」中的「千籟至音·颻揚」或「千籟至音·繆繞」，可以還原記錄在其中的旋律。此「旋曜玉帛」中蘊含著來自至冬的神秘旋律。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_BGM_Common"
+  },
+  {
+    "Rank": 500107,
+    "MaterialType": 36,
+    "Id": 141301,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "旋曜玉帛·其一百九十九",
+    "Description": "蘊含著韻律的奇妙結晶，宛如細膩絲綢編織而成的美玉。零星散布在大陸各地，或是尋覓珍奇的商人手中。透過「塵歌壺」中的「千籟至音·颻揚」或「千籟至音·繆繞」，可以還原記錄在其中的旋律。此「旋曜玉帛」中蘊含著來自至冬的神秘旋律。",
+    "TypeDescription": "冒險道具",
+    "Icon": "UI_ItemIcon_BGM_Common"
+  },
+  {
+    "Rank": 500107,
+    "MaterialType": 36,
+    "Id": 141302,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "旋曜玉帛·其二百",
+    "Description": "蘊含著韻律的奇妙結晶，宛如細膩絲綢編織而成的美玉。零星散布在大陸各地，或是尋覓珍奇的商人手中。透過「塵歌壺」中的「千籟至音·颻揚」或「千籟至音·繆繞」，可以還原記錄在其中的旋律。此「旋曜玉帛」中蘊含著來自至冬的神秘旋律。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_BGM_Common"
+  },
+  {
     "Rank": 100,
     "MaterialType": 4,
     "Id": 200001,
@@ -57872,6 +60351,17 @@
     "Icon": "UI_ItemIcon_200908"
   },
   {
+    "Rank": 62009,
+    "MaterialType": 33,
+    "Id": 200909,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "「雪魚王之杖」",
+    "Description": "釣魚過程中，若能使張力處於最佳張力區，使用此竿可穩定縮短魚兒掙扎時間，提高釣魚成功率。僅至冬地區生效。\n\n由不知名工匠打造的臻冰造物魚竿，被譽為「雪國釣魚王者的權杖」，如今被寄放在至冬釣魚協會。據說，唯有技藝最為頂尖，且接受了風雪完全錘鍊的漁師，才有資格使用這一魚竿…",
+    "TypeDescription": "魚竿",
+    "Icon": "UI_ItemIcon_200909"
+  },
+  {
     "Rank": 145000,
     "MaterialType": 21,
     "Id": 220001,
@@ -58197,7 +60687,7 @@
     "RankLevel": 4,
     "ItemType": 2,
     "Name": "化種匣",
-    "Description": "從萍姥姥處獲得的神奇匣子。據萍姥姥說，這匣子具有「化種」之能…依據原有植物的特性，可以將「化種」所得的種子種植在「塵歌壺」的對應田畝中。\n可供種植的植物：霓裳花、甜甜花、塞西莉亞花、琉璃百合、風車菊、清心、琉璃袋、落落莓、小燈草、絕雲椒椒、胡蘿蔔、白蘿蔔、薄荷、蘑菇、鳴草、馬尾、金魚草、蓮蓬、嘟嘟蓮、海草、海靈芝、香辛果、墩墩桃、須彌薔薇、久雨蓮、茉潔草、柔燈鈴、虹彩薔薇、顆粒果、苦種、肉龍掌、青蜜莓、灼灼彩菊、浪沫羽鰓、微光角菌、雲岩裂葉、霜盞花、夏槲果、白靈果、松珀香、冬凌草。",
+    "Description": "從萍姥姥處獲得的神奇匣子。據萍姥姥說，這匣子具有「化種」之能…依據原有植物的特性，可以將「化種」所得的種子種植在「塵歌壺」的對應田畝中。\n可供種植的植物：霓裳花、甜甜花、塞西莉亞花、琉璃百合、風車菊、清心、琉璃袋、落落莓、小燈草、絕雲椒椒、胡蘿蔔、白蘿蔔、薄荷、蘑菇、鳴草、馬尾、金魚草、蓮蓬、嘟嘟蓮、海草、海靈芝、香辛果、墩墩桃、須彌薔薇、久雨蓮、茉潔草、柔燈鈴、虹彩薔薇、顆粒果、苦種、肉龍掌、青蜜莓、灼灼彩菊、浪沫羽鰓、微光角菌、雲岩裂葉、霜盞花、夏槲果、白靈果、松珀香、冬凌草、霜仙花、植絨草、金蕨、紅甜菜、冰醋栗、雪球花。",
     "TypeDescription": "小道具",
     "Icon": "UI_ItemIcon_220033"
   },
@@ -59132,7 +61622,7 @@
     "RankLevel": 4,
     "ItemType": 2,
     "Name": "月之尋寶羅盤",
-    "Description": "在挪德卡萊使用時，能尋找附近的寶藏和寶藏相關的線索。\n月下世界亦有許多無主的寶藏，只待富於勇氣或是智慧的冒險者探尋。",
+    "Description": "在挪德卡萊和霜月使用時，能尋找附近的寶藏和寶藏相關的線索。\n月下世界亦有許多無主的寶藏，只待富於勇氣或是智慧的冒險者探尋。",
     "TypeDescription": "小道具",
     "Icon": "UI_ItemIcon_220123"
   },
@@ -59236,6 +61726,17 @@
     "Icon": "UI_ItemIcon_220132"
   },
   {
+    "Rank": 35072,
+    "MaterialType": 21,
+    "Id": 220133,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "「灰眸」",
+    "Description": "在廢棄的車站中遇到的奇怪機關，經常以單片眼鏡的形式出現。\n似乎擁有許多便捷的功能…",
+    "TypeDescription": "小道具",
+    "Icon": "UI_ItemIcon_220133"
+  },
+  {
     "Rank": 5021,
     "MaterialType": 21,
     "Id": 220134,
@@ -59245,6 +61746,28 @@
     "Description": "#曾由芭比洛斯持有的匣子，現在已歸{F#妳}{M#你}所有。所有尚未揭曉和已揭曉的諭示都裝在匣內，至於這些諭示會不會對命運造成影響…芭比洛斯的回答則是：「呵呵呵…命運的底色可不能輕易示人啊。而且，替未來留個懸念也不錯，對不對？」",
     "TypeDescription": "小道具",
     "Icon": "UI_ItemIcon_220134"
+  },
+  {
+    "Rank": 15124,
+    "MaterialType": 21,
+    "Id": 220135,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "「互助強化留影機」",
+    "Description": "琪琪科娃提供的特殊留影機，是「強化互助會」的特別裝備之一。按照「探索計畫」的要求拍攝指定目標後，其中的畫面就會成為專門的情報，為以後的新人提供幫助…",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_220094"
+  },
+  {
+    "Rank": 45004,
+    "MaterialType": 21,
+    "Id": 220136,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "冰之尋寶羅盤",
+    "Description": "在至冬使用時，能尋找附近的寶藏和寶藏相關的線索。\n冰之國的土地上有許多冰封於隱秘之處的寶藏，誰有能力令其上的封鎖消融，誰就能獲得這些冰中的遺饋。",
+    "TypeDescription": "小道具",
+    "Icon": "UI_ItemIcon_220136"
   },
   {
     "Rank": 300201,
@@ -59766,6 +62289,61 @@
   {
     "Rank": 300201,
     "MaterialType": 5,
+    "Id": 221052,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "圖譜：引火之源",
+    "Description": "庫茲米切夫根據傳說的紀錄，復原出的武器鍛造圖譜。掌握後，能復刻出單手劍「引火之源」。",
+    "TypeDescription": "鍛造圖紙",
+    "Icon": "UI_ItemIcon_221003"
+  },
+  {
+    "Rank": 300201,
+    "MaterialType": 5,
+    "Id": 221053,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "圖譜：霜雪誓約",
+    "Description": "庫茲米切夫根據傳說的紀錄，復原出的武器鍛造圖譜。掌握後，能復刻出弓「霜雪誓約」。",
+    "TypeDescription": "鍛造圖紙",
+    "Icon": "UI_ItemIcon_221003"
+  },
+  {
+    "Rank": 300201,
+    "MaterialType": 5,
+    "Id": 221054,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "圖譜：救贖之斬",
+    "Description": "庫茲米切夫根據傳說的紀錄，復原出的武器鍛造圖譜。掌握後，能復刻出雙手劍「救贖之斬」。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_221003"
+  },
+  {
+    "Rank": 300201,
+    "MaterialType": 5,
+    "Id": 221055,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "圖譜：寸心餘響",
+    "Description": "庫茲米切夫根據傳說的紀錄，復原出的武器鍛造圖譜。掌握後，能復刻出法器「寸心餘響」。",
+    "TypeDescription": "鍛造圖紙",
+    "Icon": "UI_ItemIcon_221003"
+  },
+  {
+    "Rank": 300201,
+    "MaterialType": 5,
+    "Id": 221056,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "圖譜：戍望謠歌",
+    "Description": "庫茲米切夫根據傳說的紀錄，復原出的武器鍛造圖譜。掌握後，能復刻出長柄武器「戍望謠歌」。",
+    "TypeDescription": "鍛造圖紙",
+    "Icon": "UI_ItemIcon_221003"
+  },
+  {
+    "Rank": 300201,
+    "MaterialType": 5,
     "Id": 221057,
     "RankLevel": 3,
     "ItemType": 2,
@@ -59903,6 +62481,17 @@
     "ItemType": 2,
     "Name": "配方：清白餌",
     "Description": "步驟詳實的配方，記載著「清白餌」的製作方法。",
+    "TypeDescription": "魚餌圖紙",
+    "Icon": "UI_ItemIcon_221035"
+  },
+  {
+    "Rank": 300201,
+    "MaterialType": 5,
+    "Id": 221070,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "配方：閃爍餌",
+    "Description": "步驟詳實的配方，記載著「閃爍餌」的製作方法。",
     "TypeDescription": "魚餌圖紙",
     "Icon": "UI_ItemIcon_221035"
   },
@@ -60158,6 +62747,61 @@
     "Description": "以某位熱心小姑娘的搭檔為靈感所作的煙花。\n璃月港曾有不少人得到一位小姑娘的幫助，但無從得知她的名字，只聽她呼喚自己的搭檔為「月桂」，於是便請工匠打造了這種煙花，以表感謝和祝福。",
     "TypeDescription": "煙花",
     "Icon": "UI_ItemIcon_223018"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 0,
+    "Id": 223301,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "造物外觀·霜精",
+    "Description": "「臻冰造物·立方」的外觀。\n霜精似乎非常痴迷於用自己的形象製造各種奇怪的臻冰造物。即使是最簡單的立方，它們也很努力地嘗試加入了霜精形象的要素。",
+    "TypeDescription": "臻冰造物外觀",
+    "Icon": "UI_ItemIcon_223301"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 0,
+    "Id": 223302,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "造物外觀·極地熊",
+    "Description": "「臻冰造物·寄物裝置」的外觀。\n獵人之間似乎有句諺語是這樣講的：「能被熊抱在懷裡的一定是好東西。」\n雖然從真正的極地熊手中奪走東西總覺得還是有點可怕，不過如果只是寄物裝置的話應該沒什麼關係吧…",
+    "TypeDescription": "臻冰造物外觀",
+    "Icon": "UI_ItemIcon_223302"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 0,
+    "Id": 223303,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "造物外觀·舞者",
+    "Description": "「臻冰造物·氛圍樁」的外觀。\n在觀看演出時，心情總是隨著芭蕾舞者的每一次舞姿變化起伏，每次觀看，都能從她們的舞姿中獲得許多力量。\n似乎是出於這樣的心情，設計了如是的臻冰造物外觀。",
+    "TypeDescription": "臻冰造物外觀",
+    "Icon": "UI_ItemIcon_223303"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 0,
+    "Id": 223304,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "造物外觀·獵犬",
+    "Description": "「臻冰造物·氛圍樁」的外觀。\n源源不斷提供增益的不只有氛圍樁，還有陪伴在身邊的夥伴。有的時候，夥伴的陪伴也能帶來遠超增益的力量…話雖如此，氛圍樁要是也能和夥伴一樣跟在身邊就好了。",
+    "TypeDescription": "臻冰造物外觀",
+    "Icon": "UI_ItemIcon_223304"
+  },
+  {
+    "Rank": 10,
+    "MaterialType": 0,
+    "Id": 223305,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "造物外觀·潮汐",
+    "Description": "#「臻冰造物·氛圍樁」的外觀。\n聽說在這樣設計的氛圍樁周圍，有時能夠隱約聽到潮汐的聲音，但氛圍樁其實不會發出聲音，發出聲音的其實是{F#妳}{M#你}的內心與想像——就像{F#妳}{M#你}在某日夜晚突然想起心底的某首歌一樣。",
+    "TypeDescription": "臻冰造物外觀",
+    "Icon": "UI_ItemIcon_223305"
   },
   {
     "Rank": 0,
@@ -61123,7 +63767,7 @@
     "RankLevel": 4,
     "ItemType": 2,
     "Name": "水之國度的斑駁色彩",
-    "Description": "遍布繁茂植被的郊野景致，薈萃了楓丹尋常可見的多種花卉與灌木。花與草木是繪畫中尋常可見的主題，以及探索「色彩」的起點之一。楓丹部分畫家認為世界的調色盤以眾多植株示範了「完美搭配」，因此若是一幅畫中的所有色彩都能在植物身上找到原型，那這幅畫必然有著自然風光般的和諧美感。當然，前提是千萬別將多種植物的色彩混為一談…\n偏好這套擺設的同伴：克洛琳德、艾梅莉埃、愛可菲",
+    "Description": "遍布繁茂植被的郊野景致，薈萃了楓丹尋常可見的多種花卉與灌木。花與草木是繪畫中尋常可見的主題，以及探索「色彩」的起點之一。楓丹部分畫家認為世界的調色盤以眾多植株示範了「完美搭配」，因此若是一幅畫中的所有色彩都能在植物身上找到原型，那這幅畫必然有著自然風光般的和諧美感。當然，前提是千萬別將多種植物的色彩混為一談…\n偏好這套擺設的同伴：克洛琳德、艾梅莉埃、愛可菲、桑多涅",
     "TypeDescription": "擺設套裝圖紙",
     "Icon": "UI_ItemIcon_Home_Outdoor"
   },
@@ -62428,6 +65072,17 @@
   {
     "Rank": 300401,
     "MaterialType": 27,
+    "Id": 380484,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「如鳥雀般對鳴」",
+    "Description": "步驟詳實的圖紙，記載著「『如鳥雀般對鳴』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
     "Id": 380504,
     "RankLevel": 3,
     "ItemType": 2,
@@ -62742,6 +65397,28 @@
     "Name": "旅館衣櫃-「加大容量」",
     "Description": "步驟詳實的圖紙，記載著「旅館衣櫃-『加大容量』」的製作方法。\n使用後可進入製作介面查看。",
     "TypeDescription": "擺設圖紙",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 381126,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「開啟營業日」",
+    "Description": "步驟詳實的圖紙，記載著「『開啟營業日』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 381127,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "室內立櫃-「尖頂小樓房」",
+    "Description": "步驟詳實的圖紙，記載著「室內立櫃-『尖頂小樓房』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
     "Icon": "UI_ItemIcon_Home_Common"
   },
   {
@@ -63462,6 +66139,17 @@
   {
     "Rank": 300401,
     "MaterialType": 27,
+    "Id": 381350,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "高腳「置燭」方几",
+    "Description": "步驟詳實的圖紙，記載著「高腳『置燭』方几」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
     "Id": 381401,
     "RankLevel": 3,
     "ItemType": 2,
@@ -63611,6 +66299,17 @@
     "Name": "霜月石床-「沁人涼意」",
     "Description": "步驟詳實的圖紙，記載著「霜月石床-『沁人涼意』」的製作方法。\n使用後可進入製作介面查看。",
     "TypeDescription": "擺設圖紙",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 381415,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "「無憂甘瞑」",
+    "Description": "步驟詳實的圖紙，記載著「『無憂甘瞑』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
     "Icon": "UI_ItemIcon_Home_Common"
   },
   {
@@ -64084,6 +66783,28 @@
     "Name": "茶會椅子-「暗紅灑金」",
     "Description": "步驟詳實的圖紙，記載著「茶會椅子-『暗紅灑金』」的製作方法。\n使用後可進入製作介面查看。",
     "TypeDescription": "擺設圖紙",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 382136,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「靜嘆於風雪夜」",
+    "Description": "步驟詳實的圖紙，記載著「『靜嘆於風雪夜』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 382137,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "室內座椅-「撞色藝術」",
+    "Description": "步驟詳實的圖紙，記載著「室內座椅-『撞色藝術』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
     "Icon": "UI_ItemIcon_Home_Common"
   },
   {
@@ -65090,6 +67811,28 @@
   {
     "Rank": 300401,
     "MaterialType": 27,
+    "Id": 382325,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "室內地毯-「冰下霜花」",
+    "Description": "步驟詳實的圖紙，記載著「室內地毯-『冰下霜花』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 382326,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "室內地毯-「暖色」",
+    "Description": "步驟詳實的圖紙，記載著「室內地毯-『暖色』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
     "Id": 382401,
     "RankLevel": 2,
     "ItemType": 2,
@@ -65151,6 +67894,17 @@
     "Name": "「勇力的戰吼」",
     "Description": "步驟詳實的圖紙，記載著「『勇力的戰吼』」的製作方法。\n使用後可進入製作介面查看。",
     "TypeDescription": "擺設圖紙",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 382408,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「高筒帽兵士」",
+    "Description": "步驟詳實的圖紙，記載著「『高筒帽兵士』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
     "Icon": "UI_ItemIcon_Home_Common"
   },
   {
@@ -65349,6 +68103,28 @@
     "Name": "「扭扭蘑菇」",
     "Description": "步驟詳實的圖紙，記載著「『扭扭蘑菇』」的製作方法。\n使用後可進入製作介面查看。",
     "TypeDescription": "擺設圖紙",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 383121,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「為誰而閃亮的」",
+    "Description": "步驟詳實的圖紙，記載著「『為誰而閃亮的』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 383122,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "室內檯燈-「柔光」",
+    "Description": "步驟詳實的圖紙，記載著「室內檯燈-『柔光』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
     "Icon": "UI_ItemIcon_Home_Common"
   },
   {
@@ -65970,6 +68746,28 @@
   {
     "Rank": 300401,
     "MaterialType": 27,
+    "Id": 383399,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "「魚兒轉呀轉」",
+    "Description": "步驟詳實的圖紙，記載著「『魚兒轉呀轉』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 383400,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "「穿破風雪」",
+    "Description": "步驟詳實的圖紙，記載著「『穿破風雪』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "擺設圖紙",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
     "Id": 383401,
     "RankLevel": 3,
     "ItemType": 2,
@@ -66146,6 +68944,39 @@
   {
     "Rank": 300401,
     "MaterialType": 27,
+    "Id": 383441,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「品茶的禮儀」",
+    "Description": "步驟詳實的圖紙，記載著「『品茶的禮儀』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 383442,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「平衡的枝葉」",
+    "Description": "步驟詳實的圖紙，記載著「『平衡的枝葉』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 383443,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「常伴夢鄉」",
+    "Description": "步驟詳實的圖紙，記載著「『常伴夢鄉』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
     "Id": 383501,
     "RankLevel": 3,
     "ItemType": 2,
@@ -66262,6 +69093,28 @@
     "Name": "景觀盆栽-「稚蕊呈芳」",
     "Description": "步驟詳實的圖紙，記載著「景觀盆栽-『稚蕊呈芳』」的製作方法。\n使用後可進入製作介面查看。",
     "TypeDescription": "擺設圖紙",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 383513,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "瓶栽插花-「典雅黛色」",
+    "Description": "步驟詳實的圖紙，記載著「瓶栽插花-『典雅黛色』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 383514,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "裝飾花壇-「蕊色流緹」",
+    "Description": "步驟詳實的圖紙，記載著「裝飾花壇-『蕊色流緹』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
     "Icon": "UI_ItemIcon_Home_Common"
   },
   {
@@ -66702,6 +69555,28 @@
     "Name": "「縈絆之刻」",
     "Description": "步驟詳實的圖紙，記載著「『縈絆之刻』」的製作方法。\n使用後可進入製作介面查看。",
     "TypeDescription": "擺設圖紙",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 384524,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "「金色的冬天」",
+    "Description": "步驟詳實的圖紙，記載著「『金色的冬天』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "擺設圖紙",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 384525,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "「誰所追尋的愛」",
+    "Description": "步驟詳實的圖紙，記載著「『誰所追尋的愛』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
     "Icon": "UI_ItemIcon_Home_Common"
   },
   {
@@ -69693,6 +72568,83 @@
     "ItemType": 2,
     "Name": "基地立柱-「萬用信標」",
     "Description": "步驟詳實的圖紙，記載著「基地立柱-『萬用信標』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "擺設圖紙",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 391050,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "大型輪軸起重裝置",
+    "Description": "步驟詳實的圖紙，記載著「大型輪軸起重裝置」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 391051,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "城鎮民居-「融融暖居」",
+    "Description": "步驟詳實的圖紙，記載著「城鎮民居-『融融暖居』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 391052,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「圓圓雪球」",
+    "Description": "步驟詳實的圖紙，記載著「『圓圓雪球』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 391053,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "候車月臺-「靜謐等待」",
+    "Description": "步驟詳實的圖紙，記載著「候車月臺-『靜謐等待』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 391054,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "至冬民居-「暖色門廊」",
+    "Description": "步驟詳實的圖紙，記載著「至冬民居-『暖色門廊』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 391055,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「圓圓洋蔥」",
+    "Description": "步驟詳實的圖紙，記載著「『圓圓洋蔥』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 391056,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "至冬民居-「典雅雕花」",
+    "Description": "步驟詳實的圖紙，記載著「至冬民居-『典雅雕花』」的製作方法。\n使用後可進入製作介面查看。",
     "TypeDescription": "擺設圖紙",
     "Icon": "UI_ItemIcon_Home_Common"
   },
@@ -74165,6 +77117,39 @@
   {
     "Rank": 300401,
     "MaterialType": 27,
+    "Id": 393942,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "「珍惜當下」",
+    "Description": "步驟詳實的圖紙，記載著「『珍惜當下』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 393943,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「未融的居所」",
+    "Description": "步驟詳實的圖紙，記載著「『未融的居所』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 393944,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「張大嘴巴！」",
+    "Description": "步驟詳實的圖紙，記載著「『張大嘴巴！』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
     "Id": 394101,
     "RankLevel": 2,
     "ItemType": 2,
@@ -74748,6 +77733,28 @@
   {
     "Rank": 300401,
     "MaterialType": 27,
+    "Id": 394224,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "車站長椅-「隙間讀報」",
+    "Description": "步驟詳實的圖紙，記載著「車站長椅-『隙間讀報』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 394225,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「等待的餘溫」",
+    "Description": "步驟詳實的圖紙，記載著「『等待的餘溫』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
     "Id": 394301,
     "RankLevel": 3,
     "ItemType": 2,
@@ -75083,6 +78090,17 @@
     "ItemType": 2,
     "Name": "「暖意可親」",
     "Description": "步驟詳實的圖紙，記載著「『暖意可親』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "擺設圖紙",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 394334,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「無用的忠告」",
+    "Description": "步驟詳實的圖紙，記載著「『無用的忠告』」的製作方法。\n使用後可進入製作介面查看。",
     "TypeDescription": "擺設圖紙",
     "Icon": "UI_ItemIcon_Home_Common"
   },
@@ -75760,6 +78778,72 @@
   {
     "Rank": 300401,
     "MaterialType": 27,
+    "Id": 394661,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "簡易運輸用雪橇",
+    "Description": "步驟詳實的圖紙，記載著「簡易運輸用雪橇」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 394662,
+    "RankLevel": 2,
+    "ItemType": 2,
+    "Name": "簡易帳篷-「雪下小憩」",
+    "Description": "步驟詳實的圖紙，記載著「簡易帳篷-『雪下小憩』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 394663,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "「如堅冰般穩固」",
+    "Description": "步驟詳實的圖紙，記載著「『如堅冰般穩固』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 394664,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "攜帶式小型供暖裝置",
+    "Description": "步驟詳實的圖紙，記載著「攜帶式小型供暖裝置」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 394665,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "臻冰礦材-「陳列規整」",
+    "Description": "步驟詳實的圖紙，記載著「臻冰礦材-『陳列規整』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 394666,
+    "RankLevel": 3,
+    "ItemType": 2,
+    "Name": "小型「儀盤」控制臺",
+    "Description": "步驟詳實的圖紙，記載著「小型『儀盤』控制檯」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
     "Id": 394800,
     "RankLevel": 3,
     "ItemType": 2,
@@ -75898,6 +78982,17 @@
     "Name": "「散布銀輝之月使」",
     "Description": "步驟詳實的圖紙，記載著「『散布銀輝之月使』」的製作方法。\n使用後可進入製作介面查看。",
     "TypeDescription": "擺設圖紙",
+    "Icon": "UI_ItemIcon_Home_Common"
+  },
+  {
+    "Rank": 300401,
+    "MaterialType": 27,
+    "Id": 394847,
+    "RankLevel": 4,
+    "ItemType": 2,
+    "Name": "「於銀白羽翼下起舞」",
+    "Description": "步驟詳實的圖紙，記載著「『於銀白羽翼下起舞』」的製作方法。\n使用後可進入製作介面查看。",
+    "TypeDescription": "",
     "Icon": "UI_ItemIcon_Home_Common"
   }
 ]

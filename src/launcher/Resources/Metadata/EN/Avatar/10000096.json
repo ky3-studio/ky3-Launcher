@@ -371,6 +371,7 @@
         "Id": 10961,
         "Name": "Invitation to a Beheading",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 6 consecutive spear strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a fixed amount of Stamina, dashing toward a nearby opponent and cleaving once.\nContinuously holding this button will cause Arlecchino to consume Stamina and engage in up to 5s of high-speed movement.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.\n\n<color=#FFD780FF>Masque of the Red Death</color>\nWhen Arlecchino has a Bond of Life equal to or greater than 30% of her Max HP, she will enter the \"Masque of the Red Death\" state, where her Normal, Charged, and Plunging Attacks will be converted to deal <color=#FF9999FF>Pyro DMG</color>. This cannot be overridden.\nWhen in the \"Masque of the Red Death\" state, Arlecchino's Normal Attacks will deal extra DMG to opponents on hit that scales off her ATK multiplied by a certain ratio of her current Bond of Life percentage. This will consume 7.5% of said current Bond of Life. Her Bond of Life can be consumed this way every 0.03s. When her Bond of Life is consumed in this manner, All Is Ash's CD will decrease by 0.8s.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_03"
       },
       {
@@ -584,6 +585,7 @@
         "Id": 10962,
         "Name": "All Is Ash",
         "Description": "Summons forth Balemoon Bloodfire, dealing <color=#FF9999FF>Pyro DMG</color> to multiple nearby opponents and performing a dash-cleave against one of them, dealing <color=#FF9999FF>AoE Pyro DMG</color>.\nOpponents hit by the aforementioned attack will have a Blood-Debt Directive applied to them.\n\n<color=#FFD780FF>Blood-Debt Directive</color>\n·Lasts 30s. Every 5s, it will deal 1 instance of <color=#FF9999FF>Pyro DMG</color> to the opponent. Max 2 instances. This DMG will be considered Elemental Skill DMG.\n·When Arlecchino uses a Charged Attack or her Elemental Burst, Balemoon Rising, she will absorb and clear nearby Blood-Debt Directives. Each Directive absorbed grants her a Bond of Life worth 65% of her Max HP.\n·The maximum value of the Bond of Life she can be granted through Blood-Debt Directives within 35s after using her Elemental Skill is 145% of her Max HP. Using the Elemental Skill again during this duration will restart the count on duration and the limit on the value of Bond of Life she may gain from Blood-Debt Directives.\n\n<i>As she sees it, not every grain of wheat that falls upon the earth will grow into an ear, while those who obstruct her, once burned to ashes, can certainly be used to nourish flowers.</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Arlecchino_01"
       }
     ],
@@ -783,6 +785,7 @@
       "Id": 10965,
       "Name": "Balemoon Rising",
       "Description": "Arlecchino's great wing of Balemoon Bloodfire beats as she absorbs and clears Blood-Debt Directives around her. She deals <color=#FF9999FF>AoE Pyro DMG</color> before clearing the CD of All Is Ash and healing herself. The healing is based on her Bond of Life value and ATK.\n\n<i>It is commonly believed throughout Teyvat that moon phases other than the full moon are mere metaphors of ill-omen, used only by those who practice alchemy and astrology.\nShe saw this crimson moon in her dreams many times. Were those portents of disaster? Indeed they were, but the destined catastrophes belonged to those who enraged her.</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Arlecchino_01"
     },
     "Inherents": [
@@ -806,6 +809,7 @@
         "Id": 962101,
         "Name": "Agony Alone May Be Repaid",
         "Description": "<color=#FFD780FF>Blood-Debt Directives</color> have the following characteristics:\n·Arlecchino will be granted a Bond of Life worth 130% of her Max HP when an opponent to which she herself applied a Directive is defeated.\n·5s after a Directive is applied, it will be upgraded to a Blood-Debt Due. When absorbed, it will instead grant Arlecchino a Bond of Life worth 130%.\nA Bond of Life created in the aforementioned ways cannot exceed the original limit on the value of Bonds of Life obtained through <color=#FFD780FF>All Is Ash</color>.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Arlecchino_05"
       },
       {
@@ -829,6 +833,7 @@
         "Id": 962201,
         "Name": "Strength Alone Can Defend",
         "Description": "Arlecchino gains 1% All Elemental and Physical RES for every 100 ATK she has in excess of 1,000. The maximum RES increase she can gain this way for each is 20%.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Arlecchino_06"
       },
       {
@@ -851,6 +856,7 @@
         "Id": 962301,
         "Name": "The Balemoon Alone May Know",
         "Description": "While in combat, Arlecchino gains a 40% <color=#FF9999FF>Pyro DMG Bonus</color> and can only be healed through <color=#FFD780FF>Balemoon Rising</color>.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Arlecchino_07"
       }
     ],
@@ -1051,7 +1057,7 @@
         "Context": "The Rooster holds little love for me, and the feeling is mutual. He is an acceptable mayor, I suppose... perhaps even an exceptional one. He has an uncanny ability to make great gains at a small price, which has earned him substantial acclaim throughout his political circles. However \"small\" the price may be, if it continues to come at the expense of my organization, sooner or later... Hmph."
       },
       {
-        "Title": "About Marionette",
+        "Title": "About Marionette: Research",
         "Context": "I have little interest in her. She is extremely... passionate about her research and does not appear in public often. In fact, many of our officers have yet to see her at all. Compared to, let's say, someone who would go so far as to create segments of themselves to better wander across the land, I suppose you could say she is at the other end of the extreme."
       },
       {

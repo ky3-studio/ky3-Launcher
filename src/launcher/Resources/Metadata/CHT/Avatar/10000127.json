@@ -292,6 +292,7 @@
         "Id": 11271,
         "Name": "守誓槍術",
         "Description": "<color=#FFD780FF>普通攻擊</color>\n進行至多四段的連續槍擊。\n\n<color=#FFD780FF>重擊</color>\n消耗一定體力，向前方突進，對路徑上的敵人造成傷害。\n\n<color=#FFD780FF>下落攻擊</color>\n從空中下墜衝擊地面，攻擊下落路徑上的敵人，並在落地時造成範圍傷害。",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_03"
       },
       {
@@ -474,6 +475,7 @@
         "Id": 11272,
         "Name": "銜鶯破曉",
         "Description": "喚出並肩作戰的信鳥「阿咚」，依據點按、長按，以不同的方式產生效果。\n\n<color=#FFD780FF>點按</color>\n阿咚衝向前方的敵人，對觸及的敵人造成<color=#FFE699FF>岩元素傷害</color>。\n\n<color=#FFD780FF>長按</color>\n進行瞄準，並使阿咚衝向被瞄準的敵人，對觸及的敵人造成<color=#FFE699FF>岩元素傷害</color>。",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Illuga_01"
       }
     ],
@@ -722,6 +724,7 @@
       "Id": 11275,
       "Name": "鑑照無影",
       "Description": "點亮燈火，造成<color=#FFE699FF>岩元素範圍傷害</color>，並獲得「魘夜的鶯歌」效果，持續20秒：持續期間，葉洛亞獲得21層{LINK#N11270001}<color=#FFD780FF>「夜鶯之歌」</color>{/LINK}，隊伍中附近的目前場上角色的普通攻擊、重擊、下落攻擊、元素戰技或元素爆發對敵人造成<color=#FFE699FF>岩元素傷害</color>時，將消耗1層「夜鶯之歌」，提升造成的傷害，提升值基於葉洛亞的元素精通。若該傷害為月結晶反應造成的傷害，還會進一步提升造成的傷害。\n透過上述方式造成的<color=#FFE699FF>岩元素傷害</color>同時命中多名敵人時，會依據命中敵人的數量消耗「夜鶯之歌」的層數。\n\n此外，葉洛亞在場上存在隊伍中附近的角色創造的<color=#FFE699FF>岩元素創造物</color>的情況下施放元素爆發時，或在「魘夜的鶯歌」持續期間，隊伍中附近的角色創造了<color=#FFE699FF>岩元素創造物</color>時，場上的每個<color=#FFE699FF>岩元素創造物</color>都會使葉洛亞額外獲得5層「夜鶯之歌」。每次施放元素爆發後的20秒內，葉洛亞至多依此方式額外獲得15層「夜鶯之歌」。\n\n「夜鶯之歌」的層數耗盡時，或持續時間結束時，「魘夜的鶯歌」效果將會解除。",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Illuga_01"
     },
     "Inherents": [
@@ -748,6 +751,7 @@
         "Id": 1272101,
         "Name": "鑄燈者的盟約",
         "Description": "施放元素戰技<color=#FFD780FF>{LINK#S11272}銜鶯破曉{/LINK}</color>或元素爆發<color=#FFD780FF>{LINK#S11275}鑑照無影{/LINK}</color>後，隊伍中附近的其他角色將獲得持續20秒的「執燈之誓」效果：對敵人造成的<color=#FFE699FF>岩元素傷害</color>，暴擊率提升5%，暴擊傷害提升10%。\n\n<color=#FFD780FF>月兆·滿輝</color>\n處於「執燈之誓」效果影響下的角色，元素精通提升50點。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Illuga_05"
       },
       {
@@ -773,6 +777,7 @@
         "Id": 1272201,
         "Name": "狩魔者的黃昏",
         "Description": "{LINK#N11270001}<color=#FFD780FF>「夜鶯之歌」</color>{/LINK}的效果獲得強化：當隊伍中存在1/2/3名<color=#80C0FFFF>水元素</color>或<color=#FFE699FF>岩元素</color>角色時，「夜鶯之歌」會進一步提升造成的傷害，提升值相當於葉洛亞元素精通的7%/14%/24%。若上述傷害為月結晶反應造成的傷害，提升值則相當於葉洛亞元素精通的48%/96%/160%。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Illuga_06"
       },
       {
@@ -791,6 +796,7 @@
         "Id": 1272301,
         "Name": "月兆祝賜·凌冬不凋",
         "Description": "葉洛亞在隊伍中時，隊伍的<color=#FFD780FF>月兆</color>將會上升一級。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Illuga_07"
       },
       {
@@ -811,6 +817,7 @@
         "Id": 1272501,
         "Name": "巡夜者的疾行",
         "Description": "在夜間（18時至6時），隊伍中自己的角色獲得迅行效果：移動速度提高10%。\n該效果在秘境、征討領域、深境螺旋中無效，迅行效果無法疊加。\n此外，葉洛亞似乎能聽懂狂獵的低語…",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Illuga_08"
       }
     ],

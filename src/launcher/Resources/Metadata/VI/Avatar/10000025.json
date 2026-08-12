@@ -1,0 +1,1202 @@
+{
+  "Id": 10000025,
+  "PromoteId": 25,
+  "Sort": 16,
+  "Body": 1,
+  "Icon": "UI_AvatarIcon_Xingqiu",
+  "SideIcon": "UI_AvatarIcon_Side_Xingqiu",
+  "Name": "Xingqiu",
+  "Description": "Vị thiếu niên thường được bắt gặp nơi quầy sách. Tay cầm kiếm, với một trái tim nghĩa hiệp thổn thức trong lồng ngực.",
+  "BeginTime": "2020-09-15T04:00:00+08:00",
+  "Quality": 4,
+  "Weapon": 1,
+  "BaseValue": {
+    "HpBase": 857.08356,
+    "AttackBase": 16.9176,
+    "DefenseBase": 63.51975
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 22
+    },
+    {
+      "Type": 4,
+      "Value": 32
+    },
+    {
+      "Type": 7,
+      "Value": 22
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 2531,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Lần 1|{param1:P}",
+            "Sát Thương Lần 2|{param2:P}",
+            "Sát Thương Lần 3|{param3:F1P}+{param4:F1P}",
+            "Sát Thương Lần 4|{param5:P}",
+            "Sát Thương Lần 5|{param6:P}+{param7:P}",
+            "Trọng Kích Sát Thương|{param8:P}+{param9:P}",
+            "Thể lực Trọng Kích tiêu hao|{param10:F1} điểm",
+            "Sát Thương Khi Rơi|{param11:F1P}",
+            "Sát Thương Khi Rơi Từ Độ Cao Thấp/Cao|{param12:P}/{param13:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 253101,
+              "Level": 1,
+              "Parameters": [
+                0.46612,
+                0.47644,
+                0.28552,
+                0.28552,
+                0.55986,
+                0.35862,
+                0.35862,
+                0.473,
+                0.56158,
+                20,
+                0.639324,
+                1.278377,
+                1.596762
+              ]
+            },
+            {
+              "Id": 253102,
+              "Level": 2,
+              "Parameters": [
+                0.50406,
+                0.51522,
+                0.30876,
+                0.30876,
+                0.60543,
+                0.38781,
+                0.38781,
+                0.5115,
+                0.60729,
+                20,
+                0.691362,
+                1.382431,
+                1.726731
+              ]
+            },
+            {
+              "Id": 253103,
+              "Level": 3,
+              "Parameters": [
+                0.542,
+                0.554,
+                0.332,
+                0.332,
+                0.651,
+                0.417,
+                0.417,
+                0.55,
+                0.653,
+                20,
+                0.7434,
+                1.486485,
+                1.8567
+              ]
+            },
+            {
+              "Id": 253104,
+              "Level": 4,
+              "Parameters": [
+                0.5962,
+                0.6094,
+                0.3652,
+                0.3652,
+                0.7161,
+                0.4587,
+                0.4587,
+                0.605,
+                0.7183,
+                20,
+                0.81774,
+                1.635134,
+                2.04237
+              ]
+            },
+            {
+              "Id": 253105,
+              "Level": 5,
+              "Parameters": [
+                0.63414,
+                0.64818,
+                0.38844,
+                0.38844,
+                0.76167,
+                0.48789,
+                0.48789,
+                0.6435,
+                0.76401,
+                20,
+                0.869778,
+                1.739187,
+                2.172339
+              ]
+            },
+            {
+              "Id": 253106,
+              "Level": 6,
+              "Parameters": [
+                0.6775,
+                0.6925,
+                0.415,
+                0.415,
+                0.81375,
+                0.52125,
+                0.52125,
+                0.6875,
+                0.81625,
+                20,
+                0.92925,
+                1.858106,
+                2.320875
+              ]
+            },
+            {
+              "Id": 253107,
+              "Level": 7,
+              "Parameters": [
+                0.73712,
+                0.75344,
+                0.45152,
+                0.45152,
+                0.88536,
+                0.56712,
+                0.56712,
+                0.748,
+                0.88808,
+                20,
+                1.011024,
+                2.02162,
+                2.525112
+              ]
+            },
+            {
+              "Id": 253108,
+              "Level": 8,
+              "Parameters": [
+                0.79674,
+                0.81438,
+                0.48804,
+                0.48804,
+                0.95697,
+                0.61299,
+                0.61299,
+                0.8085,
+                0.95991,
+                20,
+                1.092798,
+                2.185133,
+                2.729349
+              ]
+            },
+            {
+              "Id": 253109,
+              "Level": 9,
+              "Parameters": [
+                0.85636,
+                0.87532,
+                0.52456,
+                0.52456,
+                1.02858,
+                0.65886,
+                0.65886,
+                0.869,
+                1.03174,
+                20,
+                1.174572,
+                2.348646,
+                2.933586
+              ]
+            },
+            {
+              "Id": 253110,
+              "Level": 10,
+              "Parameters": [
+                0.9214,
+                0.9418,
+                0.5644,
+                0.5644,
+                1.1067,
+                0.7089,
+                0.7089,
+                0.935,
+                1.1101,
+                20,
+                1.26378,
+                2.527025,
+                3.15639
+              ]
+            },
+            {
+              "Id": 253111,
+              "Level": 11,
+              "Parameters": [
+                0.995925,
+                1.017975,
+                0.61005,
+                0.61005,
+                1.196212,
+                0.766237,
+                0.766237,
+                1.010625,
+                1.199887,
+                20,
+                1.352988,
+                2.705403,
+                3.379194
+              ]
+            },
+            {
+              "Id": 253112,
+              "Level": 12,
+              "Parameters": [
+                1.083566,
+                1.107557,
+                0.663734,
+                0.663734,
+                1.301479,
+                0.833666,
+                0.833666,
+                1.09956,
+                1.305478,
+                20,
+                1.442196,
+                2.883781,
+                3.601998
+              ]
+            },
+            {
+              "Id": 253113,
+              "Level": 13,
+              "Parameters": [
+                1.171208,
+                1.197139,
+                0.717419,
+                0.717419,
+                1.406746,
+                0.901095,
+                0.901095,
+                1.188495,
+                1.411068,
+                20,
+                1.531404,
+                3.062159,
+                3.824802
+              ]
+            },
+            {
+              "Id": 253114,
+              "Level": 14,
+              "Parameters": [
+                1.258849,
+                1.28672,
+                0.771103,
+                0.771103,
+                1.512013,
+                0.968524,
+                0.968524,
+                1.27743,
+                1.516658,
+                20,
+                1.620612,
+                3.240537,
+                4.047606
+              ]
+            },
+            {
+              "Id": 253115,
+              "Level": 15,
+              "Parameters": [
+                1.354458,
+                1.384446,
+                0.829668,
+                0.829668,
+                1.626849,
+                1.042083,
+                1.042083,
+                1.37445,
+                1.631847,
+                20,
+                1.70982,
+                3.418915,
+                4.27041
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10381,
+        "Name": "Cổ Hoa Kiếm Pháp",
+        "Description": "<color=#FFD780FF>Tấn Công Thường</color>\nThực hiện tối đa 5 lần đánh kiếm liên tiếp.\n\n<color=#FFD780FF>Trọng Kích</color>\nTiêu hao thể lực nhất định, đánh ra hai kiếm về phía trước trong chớp mắt.\n\n<color=#FFD780FF>Tấn Công Khi Đáp</color>\nĐáp xuống đất từ trên không, tấn công kẻ địch trên đường và gây sát thương phạm vi khi chạm đất.",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_A_01"
+      },
+      {
+        "GroupId": 2532,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Kỹ Năng|{param1:P}+{param2:P}",
+            "Tỷ Lệ Miễn Thương|{param3:P}",
+            "Thời Gian Kéo Dài|{param4:F1}s",
+            "CD|{param5:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 253201,
+              "Level": 1,
+              "Parameters": [
+                1.68,
+                1.912,
+                0.2,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253202,
+              "Level": 2,
+              "Parameters": [
+                1.806,
+                2.0554,
+                0.21,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253203,
+              "Level": 3,
+              "Parameters": [
+                1.932,
+                2.1988,
+                0.22,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253204,
+              "Level": 4,
+              "Parameters": [
+                2.1,
+                2.39,
+                0.23,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253205,
+              "Level": 5,
+              "Parameters": [
+                2.226,
+                2.5334,
+                0.24,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253206,
+              "Level": 6,
+              "Parameters": [
+                2.352,
+                2.6768,
+                0.25,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253207,
+              "Level": 7,
+              "Parameters": [
+                2.52,
+                2.868,
+                0.26,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253208,
+              "Level": 8,
+              "Parameters": [
+                2.688,
+                3.0592,
+                0.27,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253209,
+              "Level": 9,
+              "Parameters": [
+                2.856,
+                3.2504,
+                0.28,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253210,
+              "Level": 10,
+              "Parameters": [
+                3.024,
+                3.4416,
+                0.29,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253211,
+              "Level": 11,
+              "Parameters": [
+                3.192,
+                3.6328,
+                0.29,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253212,
+              "Level": 12,
+              "Parameters": [
+                3.36,
+                3.824,
+                0.29,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253213,
+              "Level": 13,
+              "Parameters": [
+                3.57,
+                4.063,
+                0.29,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253214,
+              "Level": 14,
+              "Parameters": [
+                3.78,
+                4.302,
+                0.29,
+                15,
+                21
+              ]
+            },
+            {
+              "Id": 253215,
+              "Level": 15,
+              "Parameters": [
+                3.99,
+                4.541,
+                0.29,
+                15,
+                21
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10382,
+        "Name": "Cổ Hoa Kiếm - Họa Vũ Lung Sơn",
+        "Description": "Thi triển hai đợt kiếm, gây <color=#80C0FFFF>Sát Thương Nguyên Tố Thủy</color> cho địch phía trước. Đồng thời, tạo ra \"Vũ Liêm Kiếm\" với số lượng tối đa bay xung quanh nhân vật của bản thân trong trận hiện tại.\nĐặc tính:\n·Khi nhân vật chịu sát thương sẽ vỡ và giảm sát thương phải chịu; \n·Tăng khả năng kháng gián đoạn của nhân vật\n20% <color=#80C0FFFF>buff Sát Thương Nguyên Tố Thủy</color> của Xingqiu sẽ chuyển đổi thành giảm sát thương của Vũ Liêm Kiếm.\n\nThông qua cách này tối đa sẽ được 24% giảm sát thương thêm.\nSố lượng Vũ Liêm Kiếm ban đầu nhiều nhất là 3.\nTrong thời gian thi triển, tạo trạng thái <color=#80C0FFFF>Ẩm Ướt</color> cho nhân vật.\n\n<i>\"Giao Long dễ trảm, mưa rơi khó vẽ\".</i>",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_S_Xingqiu_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 2539,
+      "Proud": {
+        "Descriptions": [
+          "Sát Thương Mưa Kiếm|{param1:P}",
+          "Thời Gian Kéo Dài|{param2:F1}s",
+          "CD|{param3:F1}s",
+          "Năng Lượng Nguyên Tố|{param4:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 253901,
+            "Level": 1,
+            "Parameters": [
+              0.54272,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253902,
+            "Level": 2,
+            "Parameters": [
+              0.583424,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253903,
+            "Level": 3,
+            "Parameters": [
+              0.624128,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253904,
+            "Level": 4,
+            "Parameters": [
+              0.6784,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253905,
+            "Level": 5,
+            "Parameters": [
+              0.719104,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253906,
+            "Level": 6,
+            "Parameters": [
+              0.759808,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253907,
+            "Level": 7,
+            "Parameters": [
+              0.81408,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253908,
+            "Level": 8,
+            "Parameters": [
+              0.868352,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253909,
+            "Level": 9,
+            "Parameters": [
+              0.922624,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253910,
+            "Level": 10,
+            "Parameters": [
+              0.976896,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253911,
+            "Level": 11,
+            "Parameters": [
+              1.031168,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253912,
+            "Level": 12,
+            "Parameters": [
+              1.08544,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253913,
+            "Level": 13,
+            "Parameters": [
+              1.15328,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253914,
+            "Level": 14,
+            "Parameters": [
+              1.22112,
+              15,
+              20,
+              80
+            ]
+          },
+          {
+            "Id": 253915,
+            "Level": 15,
+            "Parameters": [
+              1.28896,
+              15,
+              20,
+              80
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10385,
+      "Name": "Cổ Hoa Kiếm - Tài Vũ Lưu Hồng",
+      "Description": "Thi triển thế kiếm cầu vồng, điều khiển ảo ảnh mưa kiếm để chiến đấu, tăng số lượng Vũ Liêm Kiếm lên mức cao nhất.\n\n<color=#FFD780FF>Kiếm Cầu Vồng</color>\n·Khi nhân vật của bản thân thi triển tấn công thường, tạo ra mưa kiếm kết hợp tấn công, gây <color=#80C0FFFF>Sát Thương Nguyên Tố Thủy</color>; \n·Số lượng Vũ Liêm Kiếm sẽ duy trì ở số lượng cao nhất.\n\n<i>[Tài Vũ Pháp] là một trong những bí kíp của phái Cổ Hoa.</i>",
+      "SpecialEnergyType": 0,
+      "Icon": "Skill_E_Xingqiu_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 2521,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 252101,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 252101,
+        "Name": "Sinh Thủy Yêu Quyết",
+        "Description": "Vũ Liêm Kiếm bị phá vỡ hoặc hết thời gian, dựa trên 6% HP tối đa của Xingqiu, trị liệu HP cho nhân vật hiện tại.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Xingqiu_05"
+      },
+      {
+        "GroupId": 2522,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 252201,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 252201,
+        "Name": "Ngòi Bút Thực Hư",
+        "Description": "Xingqiu nhận 20% <color=#80C0FFFF>buff sát thương Nguyên Tố Thủy</color>.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Xingqiu_06"
+      },
+      {
+        "GroupId": 2523,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 252301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 252301,
+        "Name": "Ánh Sáng Lấp Lánh",
+        "Description": "Khi ghép nguyên liệu thiên phú nhân vật, có 25% tỷ lệ hoàn trả một phần nguyên liệu ghép.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_Combine_Talent"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 251,
+        "Name": "Mùi Hương Vương Vấn",
+        "Description": "Số lượng tối đa của Vũ Liêm Kiếm tăng thêm 1.",
+        "Icon": "UI_Talent_S_Xingqiu_01"
+      },
+      {
+        "Id": 252,
+        "Name": "Cầu Vồng Trời Xanh",
+        "Description": "Kéo dài thời gian <color=#FFD780FF>Cổ Hoa Kiếm - Tài Vũ Lưu Hồng</color> thêm 3s;\nNgoài ra, kẻ địch chịu sát thương từ Mưa Kiếm giảm 15% kháng <color=#80C0FFFF>sát thương Nguyên Tố Thủy</color>, kéo dài 4s.",
+        "Icon": "UI_Talent_S_Xingqiu_02"
+      },
+      {
+        "Id": 253,
+        "Name": "Dệt Thơ Thành Lụa",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Cổ Hoa Kiếm - Tài Vũ Lưu Hồng</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Xingqiu_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 254,
+        "Name": "Cô Châu Trảm Giao",
+        "Description": "Trong thời gian <color=#FFD780FF>Cổ Hoa Kiếm - Tài Vũ Lưu Hồng</color> còn hiệu lực, sát thương <color=#FFD780FF>Cổ Hoa Kiếm - Họa Vũ Lung Sơn</color> gây ra tăng 50%.",
+        "Icon": "UI_Talent_S_Xingqiu_03"
+      },
+      {
+        "Id": 255,
+        "Name": "Đóng Cửa Trong Mưa",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Cổ Hoa Kiếm - Họa Vũ Lung Sơn</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Xingqiu_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 256,
+        "Name": "Sách Đều Ở Đây",
+        "Description": "Mỗi khi <color=#FFD780FF>Cổ Hoa Kiếm - Tài Vũ Lưu Hồng</color> phát động 2 lần mưa kiếm, sẽ tăng sát thương của lần mưa kiếm tiếp theo, đồng thời khi đánh trúng địch sẽ hồi phục 3 điểm Năng Lượng Nguyên Tố cho Xingqiu.",
+        "Icon": "UI_Talent_S_Xingqiu_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Tuổi Trẻ Tài Cao",
+    "Detail": "Vị thiếu niên thường được bắt gặp nơi quầy sách. Tay cầm kiếm, với một trái tim nghĩa hiệp thổn thức trong lồng ngực.",
+    "Association": 2,
+    "Native": "Thương Hội Phi Vân",
+    "BirthMonth": 10,
+    "BirthDay": 9,
+    "VisionBefore": "Thủy",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Cung Cẩm Chức",
+    "CvChinese": "唐雅菁",
+    "CvJapanese": "皆川純子",
+    "CvEnglish": "Cristina Vee Valenzuela",
+    "CvKorean": "Kwak Kyu-mi",
+    "CookBonus": {
+      "OriginItemId": 108105,
+      "ItemId": 108136,
+      "InputList": [
+        100092,
+        100093,
+        100013
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Lần đầu gặp mặt...",
+        "Context": "Tại hạ tên Xingqiu, chỉ là một con mọt sách. Mặc dù tôi bất tài, nhưng cũng nguyện góp một phần sức. Hiếm lắm mới nói mấy câu hoa mỹ thế này, cảm giác có vẻ hay hay nhỉ."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Đêm không người",
+        "Context": "“Đôi khi trăng sáng quạnh hiu, trong đầm độc bước đại chiến ác long.”"
+      },
+      {
+        "Title": "Nói chuyện phiếm - Văn chương",
+        "Context": "\"Giấu văn chương trong quần áo, tự trò chuyện cùng côn trùng.”"
+      },
+      {
+        "Title": "Nói chuyện phiếm - Làm biếng",
+        "Context": "“Lại được thư nhàn thêm nửa hôm,” ha ha."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Đọc sách",
+        "Context": "Chuyện là thế này thế này... Sao? Muốn biết tiếp theo thế nào sao, hồi sau sẽ rõ..."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Sách mới",
+        "Context": "Xem ra cũng đến ngày quyển tiểu thuyết mới nói về cuộc sống “Vạn Văn Tập” ra mắt rồi. Hay là... tiện thể chúng ta đến xem chung nhé?"
+      },
+      {
+        "Title": "Khi trời mưa...",
+        "Context": "Nếu nói như thế, loại ô gấm của nhà chúng tôi không thể che được nắng mưa, mà chỉ dùng để treo tường."
+      },
+      {
+        "Title": "Sau cơn mưa trời lại sáng...",
+        "Context": "Thế thì tốt, bằng không sẽ có nấm mốc ở mấy quyển sách đang cất giữ."
+      },
+      {
+        "Title": "Khi tuyết rơi...",
+        "Context": "Chỉ có thế này, tôi mới thấy nhà mình hơn hẳn hiệu sách. Nhà có lửa than đầy đủ, lại không cần dùng sách để đốt."
+      },
+      {
+        "Title": "Ánh nắng thật chan hòa...",
+        "Context": "Luyện công tuyệt thật... À nhầm, đọc sách thật là tuyệt. Được rồi, mặt tôi không có chữ, đừng có nhìn chằm chằm nữa."
+      },
+      {
+        "Title": "Chào buổi sáng...",
+        "Context": "Sớm thế? Hiếm khi thức sớm thế này, nếu được làm chuyện mình thích thì hay biết mấy."
+      },
+      {
+        "Title": "Chào buổi trưa...",
+        "Context": "#Không muốn ăn cơm trưa, muốn ăn điểm tâm cơ. Nếu ăn tại thư phòng thì phụ thân và huynh trưởng sẽ không biết... Muốn ăn cùng không? Ừm... Chỉ cần {F#cô}{M#cậu} đừng làm rơi mảnh vụn vào sách vở là được."
+      },
+      {
+        "Title": "Chào buổi tối...",
+        "Context": "Có muốn bắt đom đóm về đọc sách không? Này, tôi đùa đấy, đừng tin, hại mắt lắm."
+      },
+      {
+        "Title": "Chúc ngủ ngon...",
+        "Context": "#Ngày mai tôi vẫn ở nơi cũ. Chỉ cần {F#cô}{M#cậu} không bị lạc đường, chắc chắn sẽ tìm được tôi."
+      },
+      {
+        "Title": "Về bản thân Xingqiu",
+        "Context": "#Nho nhã, lễ độ trước mặt người khác, vì tôi là nhị thiếu gia của Thương Hội Phi Vân; Còn vì sao tôi lại dịu dàng trước mặt {F#cô}{M#cậu} như thế, có lẽ do cách {F#cô}{M#cậu} nhìn tôi khác hẳn với cách nhìn của bọn họ."
+      },
+      {
+        "Title": "Về chúng ta - Bạn đọc sách",
+        "Context": "#{F#Cô}{M#Cậu} xem như là bạn đọc sách của tôi vậy. Cái gì? Đánh nhau à? Phái Cổ Hoa hả? Làm chiến hữu ư?... Ừm! {F#Cô}{M#Cậu} đang nói gì thế? Chẳng phải đã bảo đây là bí mật giữa hai ta sao?"
+      },
+      {
+        "Title": "Về chúng ta - Kết nghĩa",
+        "Context": "#Tôi muốn kết nghĩa với {F#cô}{M#cậu} tại tế đàn Tuyệt Vân Gián kia. Không được, không được từ chối. {F#Cô}{M#Cậu} biết lai lịch của tôi, biết luôn những chuyện mà tôi cố che giấu. Tôi không thể thả {F#cô}{M#cậu} đi, trừ khi... {F#Cô}{M#Cậu} hứa với tôi rằng sẽ không khoanh tay đứng nhìn!"
+      },
+      {
+        "Title": "Về Vision - Sách Cổ",
+        "Context": "#Bình thường, ít có ghi chép nào nói về Vision, nhưng tôi từng thấy một đoạn miêu tả đặc biệt về nó trong một quyển sách cổ; Để tôi tìm nó cho {F#cô}{M#cậu}."
+      },
+      {
+        "Title": "Về Vision - Lĩnh Ngộ",
+        "Context": "#Theo lời sách dạy, tôi đã lĩnh hội được bản chất của Thương và Kiếm, cơ bản là giống nhau. Ừ, khó mà giải thích rõ... Nếu {F#cô}{M#cậu} thật sự muốn biết, thì đến Vương Sơn Đình với tôi một chuyến. Nói trước nha, tới đó không được cười."
+      },
+      {
+        "Title": "Có gì muốn chia sẻ không...",
+        "Context": "Liyue là nơi không đi không được sao? Câu này hơi khó trả lời, nhưng nếu có một nơi biến mất khiến tôi buồn... thì chắc chắn là Vạn Văn Tập, rồi đến Cổ Hoa Đường."
+      },
+      {
+        "Title": "Những kiến thức thú vị...",
+        "Context": "Trước kia là thỏ, sau này là nai. Đối với tôi mà nói, \"Hãy hiểu sự nghĩa hiệp của mình khi tuyệt vọng\" chính là sự giác ngộ, vứt bỏ tất cả, nai lại là hy vọng có được cuộc sống mới từ tuyệt cảnh. Thật sự muốn gặp nó lần nữa."
+      },
+      {
+        "Title": "Về Beidou...",
+        "Context": "Beidou là người mà tôi vô cùng kính trọng. Nhưng hy vọng cô ấy đừng gọi tôi là \"nhóc con\", cũng đừng vò tóc tôi nữa."
+      },
+      {
+        "Title": "Về Ningguang...",
+        "Context": "\"Thiên Quyền\" đại nhân là người mà tôi không thể không tôn trọng. Nếu không sẽ mang lại phiền phức cho phụ thân và anh em nhà tôi. Hả? Về cô ấy sao, để tôi nghĩ xem... à mà thôi, không nên nói xấu người khác."
+      },
+      {
+        "Title": "Về Chongyun...",
+        "Context": "Haiz, Chongyun tuy hiểu rõ tình cảnh của tôi, nhưng muốn cùng anh ấy đi hoàn thành nhiệm vụ thì vẫn phải cẩn trọng. Hiện giờ anh ấy vẫn chỉ biết \"Võ\" chứ chưa thông suốt cảnh giới của \"Hiệp\", cần phải rèn luyện thêm. Đặc biệt là trên phương diện... ăn cay, hahaha."
+      },
+      {
+        "Title": "Về Yun Jin...",
+        "Context": "Yun Jin sao, chỉ cần uống được thức uống ưng ý là cô ấy có động lực sáng tạo vở mới ngay. Lúc nào tôi cũng trữ sẵn một bình lá trà dưới gầm giường, chờ hôm nào cô ấy mất hứng thì lấy ra tặng ngay, vậy là tôi sẽ có truyền kỳ dị hiệp nghe hoài không hết rồi!"
+      },
+      {
+        "Title": "Về Hu Tao...",
+        "Context": "Cô gái đó chính là đường chủ của Vãng Sinh Đường. Hửm? Hỏi tôi về cách đối nhân xử thế của cô ấy ư?... Mấy việc này thuộc về tác phong làm việc rồi, trên phố đầy tin đồn đấy thôi. Muốn hiểu rõ một người thì phải xem cô ấy thực sự muốn thứ gì."
+      },
+      {
+        "Title": "Về Qiqi...",
+        "Context": "Cứ cảm thấy Qiqi có rất nhiều điều bí ẩn. Nhưng hễ Baizhu ở đó thì chẳng nói với cô được mấy câu. Trừ phi, chúng ta tìm cơ hội nhân lúc Baizhu ra ngoài khám bệnh..."
+      },
+      {
+        "Title": "Về Xiangling...",
+        "Context": "#Khi gặp Xiangling, {F#cô}{M#cậu} phải quan sát kỹ biểu cảm của cô ấy. Nhất là khi Xiangling vừa mua xong nguyên liệu, cười càng vui thì càng nguy hiểm. Lỡ như bị cô ấy bám theo, ép {F#cô}{M#cậu} ăn thử món mới thì... Nếu gặp tình huống đó, tôi thường nhờ Chongyun đến xử giúp."
+      },
+      {
+        "Title": "Về Xinyan...",
+        "Context": "Xinyan biểu diễn ở đâu thế? Từ Ngật Hổ Nham đến Ngọc Kinh Đài, không chỗ nào tránh được sức mạnh xuyên thấu gà bay chó chạy đó... Haiz, những giờ phút yên tĩnh đọc sách quả là quý báu mà."
+      },
+      {
+        "Title": "Về Albedo...",
+        "Context": "Tôi đã nghĩ ra tranh minh họa cho những phân cảnh quan trọng của quyển sau, quyển tới, quyển tới nữa rồi! À, phải nhanh tay viết lại ý tưởng rồi gửi cho thầy Kreideprinz..."
+      },
+      {
+        "Title": "Về Zhongli...",
+        "Context": "Tôi đã thấy phụ thân và sư huynh tiếp đãi người này, từ thái độ cung kính khi hành lễ cho thấy, đối phương là nhân vật rất có địa vị. Tôi còn nghe nói đó là người lo tang sự cho tiên nhân, cảm thấy chắc chắn có nội tình. Có muốn cùng đi thăm dò bí mật của người đó không?"
+      },
+      {
+        "Title": "Về Shenhe...",
+        "Context": "Tôi cứ có cảm giác xung quanh tiểu thư Shenhe tỏa ra sát khí, vì vậy tôi cũng không tùy tiện bắt chuyện lắm. Kỳ lạ, không lẽ tôi đã vô ý đắc tội với cô ấy sao? Hay là... đắc tội với người quen của cô ấy nhỉ?"
+      },
+      {
+        "Title": "Về Yelan...",
+        "Context": "#{F#Cô}{M#Cậu} đã nghe qua câu \"trăm ngàn khuôn mặt\" chưa, cảm giác của tôi đối với tiểu thư Yelan là vậy đó. Khi đến thăm, phụ thân và sư huynh tôi cư xử tử tế, cô ấy cũng đối đãi lễ phép, trông như một đại tỷ thân thiện vậy. Nhưng khi tôi gặp cô ấy ở chỗ khác thì ấn tượng lại hoàn toàn khác xa."
+      },
+      {
+        "Title": "Về Gaming...",
+        "Context": "#Công việc của Gaming rất có phong thái của hiệp khách. Thử tưởng tượng xem, trong đêm tối, chàng thiếu niên mặc đồ đen võ nghệ cao cường hợp sức với thần thú uy vũ, đánh cho đám đạo tặc phải tháo chạy... Đợi Gaming rảnh thì tôi cũng rất muốn nghe kể thêm về những trải nghiệm trên đường đi vận chuyển đó. {F#Cô}{M#Cậu} cũng sẽ đến chứ?"
+      },
+      {
+        "Title": "Muốn tìm hiểu Xingqiu - Điều thứ 1",
+        "Context": "Các hạ gần đây ổn chứ? Nếu không có việc gì, hãy đến Vạn Văn Tập một chuyến."
+      },
+      {
+        "Title": "Muốn tìm hiểu Xingqiu - Điều thứ 2",
+        "Context": "Vì sao tôi chỉ đọc sách một mình? Hiếu học đâu phải thói quen xấu phải không! Cũng chẳng có nơi nào đặc biệt, ừm, hoàn toàn không có."
+      },
+      {
+        "Title": "Muốn tìm hiểu Xingqiu - Điều thứ 3",
+        "Context": "Hôm nay có thời gian rồi chứ? Được, tôi có thể xuất phát bất cứ lúc nào. Sách? Không sao, về rồi xem tiếp, những người đang cần chúng ta giúp đỡ không chờ đợi được đâu."
+      },
+      {
+        "Title": "Muốn tìm hiểu Xingqiu - Điều thứ 4",
+        "Context": "#{F#Cô}{M#Cậu} nói {F#cô}{M#cậu} có cách hay? Lấy việc mà trước kia chúng ta đã làm để làm mẫu, viết một quyển tiểu thuyết thám hiểm pha chút võ hiệp, \"Tuyển Tập Vạn Văn Tập\" sao? Ahaha... cách này hay đó, nhưng không được. Ừm, không được nhé."
+      },
+      {
+        "Title": "Muốn tìm hiểu Xingqiu - Điều thứ 5",
+        "Context": "#\"Văn chương lai láng, dệt thơ thành gấm\". Haiz, tôi cũng muốn được đánh giá như vậy. Chuyện này tôi chỉ nói với một mình {F#cô}{M#cậu} thôi đó. Thật ra, tôi cũng đang viết tiểu thuyết. Bây giờ, bây giờ đương nhiên không thể cho {F#cô}{M#cậu} xem, sau này... sau này {F#cô}{M#cậu} sẽ nhìn thấy trong tiệm sách."
+      },
+      {
+        "Title": "Sở thích của Xingqiu...",
+        "Context": "#Sở thích của tôi đương nhiên là đọc sách. Sách nào cũng đọc. Ơ? {F#Cô}{M#Cậu} cười mỉa mai với tôi làm chi thế? Chuyện đó hai chúng ta biết là được rồi, không thích hợp nói ra ngoài. Nói ra sẽ không còn ý nghĩa nữa."
+      },
+      {
+        "Title": "Nỗi buồn của Xingqiu...",
+        "Context": "Thật lo quá, ừm... Một ngày nào đó huynh trưởng kế thừa gia nghiệp thì tôi phải làm sao? Cuộc sống vô tư lự e là... A, không phải tôi ganh tỵ thân phận đâu, tôi không để tâm những thứ đó. Chỉ là tôi cảm thấy huynh trưởng quá ngốc, không có tôi giúp là không được."
+      },
+      {
+        "Title": "Món ăn yêu thích...",
+        "Context": "Tôi rất thích ăn bánh ngọt và hải sản. Chủ yếu là vì, nhà tôi luôn ăn uống thanh đạm."
+      },
+      {
+        "Title": "Món ăn ghét...",
+        "Context": "Tôi rất ghét cà rốt, lúc nhỏ mẹ tôi thường nghiền cà rốt để làm... đừng để tôi nói tiếp. Ngay cả trong ký ức, mùi vị đó cũng..."
+      },
+      {
+        "Title": "Nhận Được Quà I",
+        "Context": "Món ngon như vậy, ăn một lần sẽ nhớ mãi."
+      },
+      {
+        "Title": "Nhận Được Quà II",
+        "Context": "#{F#Cô}{M#Cậu} có tay nghề như vậy, hay là chúng ta mở quán ăn ven đường đi, thấy sao?"
+      },
+      {
+        "Title": "Nhận Được Quà III",
+        "Context": "#{F#Cô}{M#Cậu} ăn đi, không cần khách sáo."
+      },
+      {
+        "Title": "Sinh Nhật - Chúc Phúc",
+        "Context": "#Khụ, e hèm. Chúc {F#cô}{M#cậu} hạnh phúc mạnh khoẻ, sinh nhật vui vẻ."
+      },
+      {
+        "Title": "Sinh Nhật - Tập Tục",
+        "Context": "#Theo ghi chép, cây cầu đá Thiên Thành được hình thành sau khi ngọn giáo đá do Nham Thần Morax ném ra bị sụp đổ trong chiến tranh cổ đại. Nếu trong ngày sinh nhật đi trên cây cầu, ném Mora xuống biển ở hai bên, sẽ được phù hộ một năm an khang... Sinh nhật một năm chỉ có một lần, nếu muốn đi thì phải nhanh lên... Không gạt {F#cô}{M#cậu} đâu, là thật đó, đi nhanh đi."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Khởi",
+        "Context": "Nếu không có năng lực, thì từ ngữ đó trong lòng tôi, chắc chỉ có thể dừng lại trên mặt giấy."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Thừa",
+        "Context": "Nếu trong lòng không có thước đo thiện ác, cố gắng cách mấy cũng sẽ đi sai hướng. Quên mất cội nguồn, trở thành người thô tục chỉ biết đến bạo lực."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Chuyển",
+        "Context": "Từ ngữ mà tôi tìm kiếm không phổ biến trên vùng đất Liyue này. Nhưng khi hành đạo đến đây, tôi đã có đủ nhận thức về điều này từ lâu."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Hợp",
+        "Context": "#May mà có {F#cô}{M#cậu} đồng hành. Tôi cũng rất hài lòng với chính mình, dù là võ thuật hay là sự hiểu biết về \"từ\" đó. Haiz, thôi bỏ đi. Tôi cũng không cần phải giấu kín như bưng về chữ \"Hiệp\" làm gì. Phụ thân và huynh trưởng chắc cũng không đặt câu hỏi về \"Hiệp\" của tôi. Chỉ có điều, vẫn phải âm thầm hành sự."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố I",
+        "Context": "Mưa rơi khó vẽ."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố II",
+        "Context": "Ha!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố III",
+        "Context": "Đứt!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ I",
+        "Context": "Bí pháp Cổ Hoa."
+      },
+      {
+        "Title": "Kỹ Năng Nộ II",
+        "Context": "Dệt thơ thành lụa."
+      },
+      {
+        "Title": "Kỹ Năng Nộ III",
+        "Context": "Tài vũ lưu hồng."
+      },
+      {
+        "Title": "Xung Kích Bắt Đầu I",
+        "Context": "Thần trí thành hình."
+      },
+      {
+        "Title": "Xung Kích Bắt Đầu II",
+        "Context": "Nên hành động thôi."
+      },
+      {
+        "Title": "Mở Rương I",
+        "Context": "Rất tốt rất tốt."
+      },
+      {
+        "Title": "Mở Rương II",
+        "Context": "Tìm được kho báu đúng là một trải nghiệm hào hiệp."
+      },
+      {
+        "Title": "Mở Rương III",
+        "Context": "Nếu có thêm vài quyển sách cổ thất truyền nữa thì quá hoàn hảo!"
+      },
+      {
+        "Title": "HP Thấp I",
+        "Context": "Kế hoạch thay đổi..."
+      },
+      {
+        "Title": "HP Thấp II",
+        "Context": "Không còn chống chọi thêm được nữa."
+      },
+      {
+        "Title": "HP Thấp III",
+        "Context": "Ở chốn đường cùng, hiệp nghĩa hiện thân."
+      },
+      {
+        "Title": "HP Đồng Hành Thấp I",
+        "Context": "Qua đây, tôi có kế này."
+      },
+      {
+        "Title": "HP Đồng Hành Thấp II",
+        "Context": "Hành sự cẩn thận."
+      },
+      {
+        "Title": "Ngã Xuống I",
+        "Context": "Rất vui được... thỉnh giáo..."
+      },
+      {
+        "Title": "Ngã Xuống II",
+        "Context": "Ánh đèn dễ tắt... điều này tôi biết."
+      },
+      {
+        "Title": "Ngã Xuống III",
+        "Context": "Sơ ý rồi..."
+      },
+      {
+        "Title": "Chịu Đòn Thường I",
+        "Context": "Không sao."
+      },
+      {
+        "Title": "Bị Trọng Kích I",
+        "Context": "Bất cẩn rồi."
+      },
+      {
+        "Title": "Bị Trọng Kích II",
+        "Context": "Không hay rồi..."
+      },
+      {
+        "Title": "Vào Đội I",
+        "Context": "Để trí tuệ của tôi dẫn lối nhé."
+      },
+      {
+        "Title": "Vào Đội II",
+        "Context": "Không hổ danh anh hùng."
+      },
+      {
+        "Title": "Vào Đội III",
+        "Context": "Phò thiện trừ ác, nhân nghĩa làm trọng."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Miêu Tả Nhân Vật",
+        "Context": "Thương nhân cảng Liyue đều biết, trong Thương Hội Phi Vân một có vị thiếu gia tên Xingqiu.\nDưới con mắt của người ngoài, Xingqiu cư xử nhã nhặn lễ phép, còn siêng năng ham học, là nhân tài xuất chúng trong những thanh niên cùng thời.\nThân là con trai thứ, công việc trong thương hội không cần Xingqiu quản lý. Nhưng trong số con cháu của những ông trùm giàu sụ, Xingqiu sở hữu tài năng học tập hiếm có, xưa nay luôn được thầy cô khen ngợi.\nNgười anh lớn trong nhà hiện đang theo bố học kinh doanh và quản lý cơ nghiệp cũng cho rằng tương lai Xingqiu nhất định thành tài.\nNhưng thật ra sau khi Xingqiu xem xong quyển sách Kinh Doanh và Hiền Triết dày cộp, thì đã rứt sạch các trang giấy, rồi nhét quyển tiểu thuyết võ hiệp vào đó, xem không mệt mỏi.\nCó khi Xingqiu sẽ đột nhiên biến mất, khi người ngoài hỏi thăm cậu rốt cuộc đã đi đâu, làm gì, cậu sẽ trả lời: \"Cõi đời tạm được nửa ngày nhàn\""
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 1",
+        "Context": "Đối với Xingqiu mà nói, \"Cõi đời tạm được nửa ngày nhàn\" có rất nhiều ý nghĩa.\nCó khi là đến \"Vạn Văn Tập\" xem tiểu thuyết mới nhập về; có khi là đến \"Hòa Dụ Trà Quán\" quấn lấy chủ tiệm Yun Jin nghiên cứu đồ uống mới.\nCòn trong dịp đặc biệt, \"một mình hành hiệp trượng nghĩa\".\nĐánh bại kẻ cướp chặn đường, đánh đuổi quái vật gây rối, giúp đứa trẻ khóc nhè lấy con diều mắc vào ngọn cây... tất cả đều trong phạm vi Xingqiu \"hành hiệp trượng nghĩa\".\nNhư kiểu thường thấy trong võ hiệp là \"Vi Phục Xuất Tuần\", trong mỗi lần nguy hiểm ập đến, Xingqiu cũng không ngại ngần sử dụng sức mạnh của Thương Hội Phi Vân để giải quyết một số vấn đề mà vũ lực không làm được."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 2",
+        "Context": "Một ngày nọ, anh của Xingqiu đến tìm, nhưng nhà không có ai. Khi quay về, Xingqiu gặp anh trai đang chờ ngoài hành lang.\n\"Phòng của em lộn xộn quá, nên anh đã giúp em dọn dẹp. Xingqiu à, em và anh đều gánh vác danh tiếng của Thương Hội Phi Vân như nhau, theo lý thì nên trở thành tấm gương cho mọi người. Nếu ngay cả quét nhà mà cũng không biết, làm sao quét được thế giới? Năm xưa tiên nhân có câu...\"\nSau khi lải nhải với Xingqiu nửa tiếng, anh trai cuối cùng cũng tha cho cậu, lúc sắp đi còn buông lại một câu nói kỳ quái:\n\"Lần sau anh sẽ không tự ý vào phòng em nữa, anh cũng sẽ nhắc nhở nha hoàn chú ý hơn.\"\nXingqiu ù ù cạc cạc, không biết trả lời ra sao. Người anh trai vừa xoay người bỏ đi thì ngay lập tức treo lên bộ mặt rầu rĩ, tự nói với mình:\n\"Dưới gầm giường còn giấu cả sách... ừm... anh đây sẽ không xem đó là sách gì đâu. Haiz, Xingqiu cũng lớn rồi, sau này có chê mình dạy dỗ lắm điều không nhỉ? Đây gọi là... thời thanh xuân, phải không nhỉ?\"\nXingqiu cũng kỳ lạ thật, giấu nhiều tiểu thuyết kiếm hiệp đến vậy, tức là đã sớm chuẩn bị sẵn sàng để đấu trí đấu võ với đám nha hoàn, nhưng sao lại không có ai vào phòng nó tra xét nhỉ?"
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 3",
+        "Context": "Để Xingqiu không đắm chìm trong mơ mộng cả ngày ở tiệm sách Vạn Văn Tập trên Dốc Phi Vân, bố cho phép Xingqiu đến \"Phái Cổ Hoa\" học võ. Nhưng không lâu sau Xingqiu đã phát hiện, \"Phái Cổ Hoa\" chỉ là tiểu môn phái sa sút đã lâu, chẳng ra dáng dạy võ, mà đến đạo trường xa hoa dùng cho việc báo danh cũng là đi thuê tạm thời, rõ ràng không phải sở hữu của môn phái.\nTất nhiên, bố cậu cũng biết điều này. Ông chỉ muốn để Xingqiu đến học chút múa may chứ không phải kiếm pháp thực sự, giải trí mà thôi.\nNhưng điều mà mọi người không ngờ đến là, một người kiến thức sâu rộng, thông hiểu sách cổ như Xingqiu đã đạt đến cảnh giới nhất pháp thông mở thông vạn pháp. Cậu dựa vào kiến thức của mình cộng thêm sự hỗ trợ từ sách cổ, chăm chỉ tu tập, chấn hưng võ thuật Cổ Hoa đã suy tàn từ lâu.\nXingqiu đã từng rất thất vọng về võ thuật phái Cổ Hoa khi mới nhập môn, nhưng những \"tiểu thuật\" mà môn nhân thường dùng lại hoàn toàn phù hợp với khát vọng của cậu.\nBột vôi, cát khói, cá giấy bơi trong nước, nuốt kiếm phun lửa... sinh ra trong gia đình thương gia, Xingqiu ưa thích cảm giác chọn lựa tuyệt vời này.\nKhi đó cậu quyết định dùng thời gian nửa tháng mười ngày học hết một trăm môn kỳ thuật giang hồ của Phái Cổ Hoa. Cũng xem như một phần bổ trợ vào con đường hành hiệp trượng nghĩa của cậu."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 4",
+        "Context": "Thiếu gia kiếm khách Xingqiu trước mặt người lạ điềm đạm nho nhã, nhưng thật ra bản chất lại rất hoạt bát, với người thân lại cực kỳ ba hoa. Tuy không bì kịp anh trai nhưng cũng đủ nghịch ngợm phá phách.\nNạn nhân của cái tính khí cổ quái này là một phương sĩ thiếu niên hành tẩu nơi núi rừng gần Liyue - Chongyun.\n\"Chongyun à Chongyun, hôm qua tôi đã tìm thấy ngôi nhà bị ma ám cho cậu, mau đi luyện tập đi\".\n\"Chongyun à Chongyun, cậu nhất định phải tin tôi, cơ quan trong ngôi nhà bị ám đó không phải do tôi bố trí đâu... Cái gì? Cậu nói ngôi nhà đó không hề bị ám? Ừm, chuyện này sao tôi biết được...\"\n\"Chongyun à Chongyun, cần gì phải nhìn tôi bằng ánh mắt đó chứ? Người cậu bầm tím cả rồi, ngoan ngoãn nằm yên đi\"\n\"Chongyun à Chongyun, nhà tớ có một nha hoàn, từng nghiên cứu bí thuật trị liệu tinh dầu trong phủ quý tộc nước Sumeru. Tôi đi tìm cô ấy giúp cậu xoa nắn gân cốt, cậu không được từ chối tấm lòng của tôi đâu đấy...\""
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 5",
+        "Context": "Một từ “nghĩa hiệp”, mỗi người hiểu mỗi khác.\nKẻ nghĩa hiệp tự do gọi là Hiệp, người thiện ác phân minh gọi là Hiệp, kẻ chính khí ngời ngời gọi là Hiệp...\nNhưng với Xingqiu, ý nghĩa của \"nghĩa hiệp\" là làm việc tốt, làm người tốt.\nVới tư cách là hậu bối của thương nhân lớn cảng Liyue, bổn phận của Xingqiu là chiến đấu trong thương trường, hai chữ \"nghĩa hiệp\" với cậu có lẽ rất xa vời.\nNhưng dưới dự giúp đỡ của Vision, cậu đã bắt đầu làm được những “việc huyền thoại” mà trước kia chỉ có thể ngước nhìn.\nChuyện thương hội đương nhiên không thể bỏ mặc, nhưng chỉ cần có thể đích thân hành hiệp trượng nghĩa, cũng đã khiến Xingqiu vô cùng thỏa mãn.\nThứ duy nhất phá vỡ khuôn mặt tươi cười của Xingqiu chính là những suy đoán tầm thường của mọi người về động cơ của \"Hiệp Sĩ\".\nĐịa vị, danh lợi, giao dịch ngầm... khi Xingqiu nghe thấy có người thêu dệt về hiệp khách như vậy, tuy gương mặt không gợn chút biểu cảm, nhưng trong lòng đã liệt người đó vào danh sách đen, bỏ vào vị trí còn thấp hơn cả cà rốt mà cậu ghét ăn nhất."
+      },
+      {
+        "Title": "\"Trầm Thu Thập Kiếm Lục\"",
+        "Context": "Xingqiu đã dùng những trải nghiệm của bản thân làm tài liệu để viết một bộ tiểu thuyết võ thuật tên \"Trầm Thu Thập Kiếm Lục\", dự định xuất bản ở cảng Liyue.\nNhưng không ngờ rằng lại bị đơn vị xuất bản của cảng Liyue từ chối bản thảo với lý do \"bối cảnh quá kỳ lạ, tình tiết cũ rích, sẽ không có người thích\".\nXingqiu không chịu thua, đã tự mình in ra vài cuốn, lén bỏ vào trong hiệu sách \"Vạn Văn Tập\" mà anh thường lui tới. Nhưng mà, thực sự không ai thích đọc, khiến anh có phần bị đả kích.\nNhưng Xingqiu không biết rằng, thương nhân Inazuma đi ngang qua đây nhìn thấy cuốn sách này, đã mua một cuốn mang về Inazuma lại rất được yêu thích. Nhà văn của Inazuma đã bắt chước để cạnh tranh, nhưng không một cuốn nào có thể vượt qua \"Trầm Thu Thập Kiếm Lục\". Từ đó cuốn sách này đã có một chỗ đứng trong nền văn học nước nhà của Inazuma."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Hàng trăm năm nay, võ thuật của phái Cổ Hoa đang ngày một suy thoái. Trong thời kỳ huy hoàng, phái Cổ Hoa đã từng rất nổi tiếng ở Liyue. Tương truyền, có ba tuyệt kỹ trấn phái chính là: Thương pháp \"Thích Minh Pháp\", kiếm pháp \"Tài Vũ Pháp\", và thương kiếm song tuyệt \"Sinh Khắc Pháp\". Ba tuyệt kỹ này được truyền từ đời này qua đời khác và không ngừng cải tiến. Thời gian trôi qua, ba tuyệt kỹ này đã dần đạt đến trình độ siêu phàm, nhưng uy lực lại ngày một suy yếu, nên đã khiến thế lực của phái Cổ Hoa giảm sút, lòng người ly tán... Ba tuyệt kỹ giống như kho báu bị bụi phủ, im lặng chờ đợi người thừa kế.\nNhiều năm sau, phái Cổ Hoạ phủ bụi đã đợi được Xingqiu. Trong hàng trăm năm, anh là người duy nhất chỉ trong 4 năm có thể ngộ ra \"võ lý\" từ xa xưa truyền lại.\nKiếm pháp của phái Cổ Hoa chú trọng vào việc \"người kiếm hợp nhất, tự do điều khiển\", đây cũng là quan điểm phổ biến của các môn phái võ thuật ở Liyue. Nhưng theo quan điểm của Xingqiu, việc dùng thương và kiếm về cơ bản là sự vận dụng Vision. Người luyện võ nên coi Vision là một phần cơ thể, thương và kiếm chỉ là một phần của Vision. Cũng là nói: Bản chất của thương pháp và kiếm pháp chính là \"đồng thuật\".\nXingqiu hiểu theo hướng này, vung bút viết ra một bài thơ về võ lý. Tông chủ của phái Cổ Hoa nhìn mà rơi nước mắt, lập tức tuyên bố: \"Không phải là Xingqiu cần phái Cổ Hoa, mà là phái Cổ Hoa cần Xingqiu.\" Kể từ đó, bài thơ này đã được cung phụng ở \"Vương Sơn Đình\", một nơi quan trọng của phái Cổ Hoa, không cho phép các đệ tử nhìn thấy, người ngoài lại càng khó được chiêm ngưỡng.\nDưới đây là toàn bộ bài thơ:\nTôi đây học võ đã lâu. Cổ Hoa bí kíp thâm sâu đã tường. Luận lý cũ người xưa để lại. Nay viết lại cải tiến hơn xưa.\nKiếm pháp phái Cổ Hoa, như nước như gió động. Gió thổi dễ cảm nhận, mưa bay khó họa hình. Thương pháp phái Cổ Hoa, rực rỡ như đốm lửa. Tia lửa dễ tan nhanh, tụ lại thì cháy rực.\nNhư hoàng hôn, sáng một vùng, áng chiều tan, lòng người động. Nếu người vung kiếm như ngọn gió, ánh kiếm trong ta là ánh nhìn.\nThoát ly vạn vật không trọng lượng, cắt mưa ngăn gió ngọn thương vung. Như rồng như rắn không bắt được, mắt xanh như kiếm như thương kia.\nThực ra, nội dung bài thơ vốn dĩ công khai cho tất cả các đệ tử được thấy, chỉ vì chỉ vì chữ viết quả thực quá xấu nên mới niêm phong bản gốc."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 202501,
+      "Name": "Màn Mưa Rừng Trúc",
+      "Description": "Trang phục dự tiệc do Thương Hội Phi Vân chuẩn bị cho Xingqiu. Hoa văn hình trúc thanh tao, những đường cắt xẻ tuyệt mỹ, nhưng Xingqiu hài lòng nhất vẫn là chiếc túi bên trong, đủ để nhét một quyển tiểu thuyết mỏng vào.",
+      "IsDefault": false,
+      "FrontIcon": "UI_AvatarIcon_XingqiuCostumeBamboo",
+      "SideIcon": "UI_AvatarIcon_Side_XingqiuCostumeBamboo"
+    },
+    {
+      "Id": 202500,
+      "Name": "Áo Gấm Lan Ngọc",
+      "Description": "Phong cách của Xingqiu. Áo khoác ngoài dệt từ tơ lụa thượng hạng được bán ở Thương Hội Phi Vân.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104124,
+    113012,
+    100029,
+    112007,
+    104318,
+    113006
+  ],
+  "NameCard": {
+    "Name": "Xingqiu - Cầu Vồng",
+    "Description": "Hoa văn danh thiếp.\nĐến ngắm cầu vồng sau mưa.",
+    "Icon": "UI_NameCardIcon_Xingqiu",
+    "PicturePrefix": "UI_NameCardPic_Xingqiu"
+  }
+}

@@ -276,6 +276,7 @@
         "Id": 10751,
         "Name": "Yuuban Meigen",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 attacks using wind blades, dealing <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina, gathers a build up of high wind pressure, and deals <color=#80FFD7FF>AoE Anemo DMG</color> after a short casting time.\n\n<color=#FFD780FF>Plunging Attack</color>\nCalling upon the power of Anemo, the Wanderer plunges towards the ground from mid-air, damaging all opponents in his path. Deals <color=#80FFD7FF>AoE Anemo DMG</color> upon impact with the ground.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_Catalyst_MD"
       },
       {
@@ -505,6 +506,7 @@
         "Id": 10752,
         "Name": "Hanega: Song of the Wind",
         "Description": "Concentrates the power of the winds to break free from the shackles of the earth, dealing <color=#80FFD7FF>AoE Anemo DMG</color> before leaping into the air and entering the Windfavored state.\n\n<color=#FFD780FF>Windfavored</color>\nThe Wanderer cannot perform Plunging Attacks in this state. When he uses Normal and Charged Attacks, they will be converted into Kuugo: Fushoudan and Kuugo: Toufukai respectively; the DMG they deal and their AoE will be increased, and their DMG will be considered Normal and Charged Attack DMG respectively. Kuugo: Toufukai will not consume Stamina.\nThe Wanderer will hover persistently during this time. While this state is active, the Wanderer's movements gain the following properties:\n·Persistently consumes Kuugoryoku Points to maintain this hovering state.\n·When sprinting, additional Kuugoryoku Points will be consumed for the Wanderer to accelerate mid-air. Holding sprint will cause persistent Kuugoryoku Point consumption to maintain speed. This effect will replace his default sprint.\n·Jumping expends extra Kuugoryoku Points to increase hovering height. Holding jump will cause persistent Kuugoryoku Point consumption to keep increasing hovering height.\n\nRunning out of Kuugoryoku Points will end the Windfavored state.\nA second cast during the duration of Windfavored will also end it.\n\n<i>\"The world dances in a weightless whirl, presenting a secret that can only be found in the flowers.\"</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Wanderer_01"
       }
     ],
@@ -658,6 +660,7 @@
       "Id": 10755,
       "Name": "Kyougen: Five Ceremonial Plays",
       "Description": "Compresses the atmosphere into a singular vacuum that grinds all troubles away, dealing multiple instances of <color=#80FFD7FF>AoE Anemo DMG</color>.\nIf the character is in the Windfavored state due to the skill \"Hanega: Song of the Wind,\" Windfavored state will end after casting.\n\n<i>\"Bright be the narrowed gaze of the sky, casting its sight on dreams both past and present, like radiance washing over dust on the winds.\"</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Wanderer_01"
     },
     "Inherents": [
@@ -682,6 +685,7 @@
         "Id": 752101,
         "Name": "Jade-Claimed Flower",
         "Description": "If <color=#FFD780FF>Hanega: Song of the Wind</color> comes into contact with <color=#80C0FFFF>Hydro</color>/<color=#FF9999FF>Pyro</color>/<color=#99FFFFFF>Cryo</color>/<color=#FFACFFFF>Electro</color> when it is unleashed, this instance of the Windfavored state will obtain buffs according to the contacted element(s):\n·<color=#80C0FFFF>Hydro</color>: Kuugoryoku Point cap increases by 20.\n·<color=#FF9999FF>Pyro</color>: ATK increases by 30%.\n·<color=#99FFFFFF>Cryo</color>: CRIT Rate increases by 20%.\n·<color=#FFACFFFF>Electro</color>: When Normal and Charged Attacks hit an opponent, 0.8 Energy will be restored. Energy can be restored this way once every 0.2s.\n\nYou can have up to 2 different kinds of these buffs simultaneously.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Wanderer_05"
       },
       {
@@ -704,6 +708,7 @@
         "Id": 752201,
         "Name": "Gales of Reverie",
         "Description": "When the Wanderer hits opponents with Kuugo: Fushoudan or Kuugo: Toufukai in his <color=#FFD780FF>Windfavored</color> state, he has a 16% chance to obtain the Descent effect: The next time the Wanderer accelerates in mid-air while in this instance of the Windfavored state, this effect will be removed, this acceleration instance will not consume any Kuugoryoku Points, and he will fire off 4 wind arrows that deal 35% of his ATK as <color=#80FFD7FF>Anemo DMG</color> each.\nFor each Kuugo: Fushoudan and Kuugo: Toufukai that does not produce this effect, the next attack of those types will have a 12% increased chance of producing it. The calculation of the effect production is done once every 0.1s.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Wanderer_06"
       },
       {
@@ -722,6 +727,7 @@
         "Id": 752301,
         "Name": "Strum the Swirling Winds",
         "Description": "Mora expended when ascending Bows and Catalysts is decreased by 50%.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Wanderer_07"
       }
     ],

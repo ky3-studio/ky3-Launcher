@@ -404,6 +404,7 @@
         "Id": 10841,
         "Name": "Card Force Translocation",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 consecutive shots with a bow.\n\n<color=#FFD780FF>Plunging Attack</color>\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.\n\n<color=#FFD780FF>Charged Attack</color>\nPerforms a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\nWhile aiming, flames will run across the arrowhead before being fired. Different effects will occur based on the time spent charging.\n·Charge Level 1: Fires off a Pyro-infused arrow, dealing <color=#FF9999FF>Pyro DMG</color>.\n·Charge Level 2: Fires off a Prop Arrow that deals <color=#FF9999FF>Pyro DMG</color>, and upon hit, it will summon a Grin-Malkin Hat.\nWhen firing the Prop Arrow, and when Lyney has more than 60% HP, he will consume a portion of his HP to obtain 1 Prop Surplus stack. Max 5 stacks. The effect will be removed after the character spends 30s out of combat.\nThe lowest Lyney can drop to through this method is 60% of his Max HP.\n\n<color=#FFD780FF>Grin-Malkin Hat</color>\n·Can taunt nearby opponents and attract their attacks. Each opponent can only be taunted by the Hat once every 5s.\n·The Hat will inherit a percentage of Lyney's Max HP.\n·If destroyed, or if its duration expires, it will fire off a <color=#FFD780FF>Pyrotechnic Strike</color> at 1 nearby opponent, dealing <color=#FF9999FF>Pyro DMG</color>.\nOnly 1 Hat can exist at any given time.\n\n<color=#FFD780FF>Arkhe: Pneuma</color>\nAt certain intervals, the Prop Arrow will cause a Spiritbreath Thorn to descend upon its hit location, dealing Pneuma-aligned <color=#FF9999FF>Pyro DMG</color>.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_02"
       },
       {
@@ -632,6 +633,7 @@
         "Id": 10842,
         "Name": "Bewildering Lights",
         "Description": "Lyney does a flourish with his hat, unleashing a firework surprise!\nWhen used, he will clear all current Prop Surplus stacks and deal <color=#FF9999FF>AoE Pyro DMG</color> to opponents in front of him. DMG will be increased according to the stacks cleared, and this will also regenerate Lyney's HP based on his Max HP.\n\nWhen a Grin-Malkin Hat created by Lyney is on the field, the fireworks will cause it to explode, dealing <color=#FF9999FF>AoE Pyro DMG</color> equal to that of a Pyrotechnic Strike.\nThe DMG dealt through the Grin-Malkin Hat in this way is considered Charged Attack DMG.\n\n<i>\"Everyone knows that magicians will intentionally misdirect the audience... Ah, yes, while you were looking my way, the hat and assistant over there have both disappeared... Fascinating, is it not?\"</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Liney_01"
       }
     ],
@@ -817,6 +819,7 @@
       "Id": 10845,
       "Name": "Wondrous Trick: Miracle Parade",
       "Description": "Unleashing his magic, Lyney turns himself into a Grin-Malkin Cat that can move around quickly. (Not to be mistaken for the Grin-Malkin Hat. They're two different props!)\nWhen the Grin-Malkin Cat gets close to opponents, it will send flames falling down on them, dealing at most 1 instance of <color=#FF9999FF>Pyro DMG</color> to each opponent. When the duration ends, he will dismiss the Grin-Malkin Cat and ignite fireworks that deal <color=#FF9999FF>AoE Pyro DMG</color>, summon 1 Grin-Malkin Hat, and grant himself 1 Prop Surplus stack.\n\nGrin-Malkin Cat can be actively canceled.\n\n<i>\"Watch closely now. This is a time for miracles, and it belongs to just the two of us!\"</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Liney_01"
     },
     "Inherents": [
@@ -839,6 +842,7 @@
         "Id": 842101,
         "Name": "Perilous Performance",
         "Description": "If Lyney consumes HP when firing off a <color=#FFD780FF>Prop Arrow</color>, the Grin-Malkin hat summoned by the arrow will, upon hitting an opponent, restore 3 Energy to Lyney and increase DMG dealt by 80% of his ATK.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Liney_05"
       },
       {
@@ -860,6 +864,7 @@
         "Id": 842201,
         "Name": "Conclusive Ovation",
         "Description": "The DMG Lyney deals to opponents affected by <color=#FF9999FF>Pyro</color> will receive the following buffs:\n·Increases the DMG dealt by 60%.\n·Each <color=#FF9999FF>Pyro</color> party member other than Lyney will cause the DMG dealt to increase by an additional 20%.\nLyney can deal up to 100% increased DMG to opponents affected by <color=#FF9999FF>Pyro</color> in this way.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Liney_06"
       },
       {
@@ -878,6 +883,7 @@
         "Id": 842301,
         "Name": "Trivial Observations",
         "Description": "Displays the location of nearby <color=#FFD780FF>resources unique to Fontaine</color> on the mini-map.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Liney_07"
       }
     ],

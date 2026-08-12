@@ -323,6 +323,7 @@
         "Id": 10591,
         "Name": "Fudou Style Martial Arts",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 5 fisticuffs empowered by a mighty wind, dealing <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina and performs a sweeping kick that deals <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Plunging Attack</color>\nCalling upon the surging wind, Heizou plunges towards the ground from mid-air, damaging all opponents in his path. Deals <color=#80FFD7FF>AoE Anemo DMG</color> upon impact with the ground.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_Catalyst_MD"
       },
       {
@@ -507,6 +508,7 @@
         "Id": 10592,
         "Name": "Heartstopper Strike",
         "Description": "<color=#FFD780FF>Tap</color>\nWields the swift winds to launch a Heartstopper Strike that deals <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Hold</color>\nCharges energy to unleash an even stronger blow. He will obtain the Declension effect while charging, which will increase the power of the Heartstopper Strike. When the skill button is released or the skill finishes charging, he will strike forward, dealing <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Declension</color>\nIncreases the power of the next Heartstopper Strike. Max 4 stacks.\nWhen you possess 4 Declension stacks, the Conviction effect will be produced, which will cause the next Heartstopper Strike to be even stronger and have a larger AoE.\n\n<i>This seemingly ordinary strike contains Heizou's desire for criminals to honestly confess and repent.</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Heizo_01"
       }
     ],
@@ -676,6 +678,7 @@
       "Id": 10595,
       "Name": "Windmuster Kick",
       "Description": "Leaps into the air and uses the Fudou Style Vacuum Slugger and kicks his opponent. The Vacuum Slugger will explode upon hit and create an Arresting Windtunnel that pulls in nearby objects and opponents, dealing <color=#80FFD7FF>AoE Anemo DMG</color>.\nWhen Vacuum Slugger hits opponents affected by <color=#80C0FFFF>Hydro</color>/<color=#FF9999FF>Pyro</color>/<color=#99FFFFFF>Cryo</color>/<color=#FFACFFFF>Electro</color>, these opponents will be afflicted with Windmuster Iris. This Windmuster Iris will explode after a moment and dissipate, dealing AoE DMG of the corresponding aforementioned elemental type.\nVacuum Slugger can afflict a maximum of 4 opponents with the Windmuster Iris. A single opponent cannot be under the effect of Windmuster Irises of different elements at the same time.\n\n<i>A unique technique that gathers Anemo in one place before unleashing it all in one kick. Is always there in a pinch to land on some criminal's fleeing back.</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Heizo_01"
     },
     "Inherents": [
@@ -694,7 +697,8 @@
         },
         "Id": 592101,
         "Name": "Paradoxical Practice",
-        "Description": "When Shikanoin Heizou activates a Swirl reaction while on the field, he will gain 1 Declension stack for <color=#FFD780FF>Heartstopper Strike</color>. This effect can be triggered once every 0.1s.",
+        "Description": "When Shikanoin Heizou activates a Swirl or Stellar Swirl reaction while on the field, he will gain 1 Declension stack for <color=#FFD780FF>Heartstopper Strike</color>. This effect can be triggered once every 0.1s.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Heizo_05"
       },
       {
@@ -716,6 +720,7 @@
         "Id": 592201,
         "Name": "Penetrative Reasoning",
         "Description": "After Shikanoin Heizou's <color=#FFD780FF>Heartstopper Strike</color> hits an opponent, increases all party members' (excluding Shikanoin Heizou) Elemental Mastery by 80 for 10s.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Heizo_06"
       },
       {
@@ -734,6 +739,7 @@
         "Id": 592301,
         "Name": "Pre-Existing Guilt",
         "Description": "Decreases sprinting Stamina consumption for your own party members by 20%.\nNot stackable with Passive Talents that provide the exact same effects.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_Explosion_Sprint"
       }
     ],

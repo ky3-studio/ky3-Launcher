@@ -261,6 +261,7 @@
         "Id": 11321,
         "Name": "Badaboom! Hexbuster Hammer",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 3 attacks by swinging the Banehunter Oathhammer, dealing <color=#80FFD7FF>Anemo DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina and performs an upward hammer swing, dealing <color=#80FFD7FF>Anemo DMG</color> to opponents in front.\n\n<color=#FFD780FF>Plunging Attack</color>\nCalling upon the power of Anemo, she plunges towards the ground from mid-air, damaging all opponents in her path. Deals <color=#80FFD7FF>AoE Anemo DMG</color> upon impact with the ground.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_Catalyst_MD"
       },
       {
@@ -412,7 +413,8 @@
         },
         "Id": 11322,
         "Name": "Ring-A-Ding-Ding! Hexhunter Chime",
-        "Description": "Unleash the wind's might to defeat the evil witch and save Descartes! Prune strikes the Witchlure Bell with her Banehunter Oathhammer, dealing <color=#80FFD7FF>Anemo DMG</color>.\nIf Prune triggers Swirl on an opponent using this attack, <color=#FFD780FF>Ring-A-Ding-Ding! Hexhunter Chime</color> will be changed to <color=#FFD780FF>Clang Clang! Witch-tribution Comes!</color> for the next 6s.\n\n<color=#FFD780FF>Clang Clang! Witch-tribution Comes!</color>\nPrune's hammer is now enshrouded by the element involved in the previous Swirl reaction, causing {LINK#N11320001}<color=#FFD780FF>Banehunter Oathhammer</color>{/LINK} to undergo Elemental Conversion. When activated with a Press, Prune will leap up and kick the Banehunter Oathhammer forward, dealing Elemental DMG of the corresponding type to opponents in front of her.",
+        "Description": "Determined to take down the \"evil\" witch and save her beloved Descartes, Prune unleashes the power of the wind! She strikes at the Witchlure Bell using her Banehunter Oathhammer, dealing <color=#80FFD7FF>Anemo DMG</color>.\nIf Prune triggers a Swirl or Stellar Swirl reaction in the opponent with this attack, her <color=#FFD780FF>Ring-A-Ding-Ding! Hexhunter Chime</color> is changed to <color=#FFD780FF>Clang Clang! Witch-tribution Comes!</color> for the next 6s.\n\n<color=#FFD780FF>Clang Clang! Witch-tribution Comes!</color>\nEnsconces the {LINK#N11320001}<color=#FFD780FF>Banehunter Oathhammer</color>{/LINK} in the element involved in the earlier Swirl or Stellar Swirl reaction. After tapping to unleash, Prune will launch a midair kick at the Banehunter Oathhammer, dealing DMG to opponents in front of her of the corresponding elemental type.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Prune_01"
       }
     ],
@@ -437,7 +439,8 @@
         },
         "Id": 1325101,
         "Name": "Witch's Eve Rite: Witchseeker's Vow",
-        "Description": "After completing <color=#FFD780FF>Witch's Homework: Of What Is Contested</color>, Prune becomes a <color=#FFD780FF>Hexerei</color> character. When the party includes at least 2 Hexerei characters, you gain the <color=#FFD780FF>Hexerei: Secret Rite</color> effect, which enhances Hexerei characters.\n\n<color=#FFD780FF>Hexerei: Secret Rite</color>\nAfter a Hexerei character in the party affected by the Tolling Rally effect triggers an Elemental Reaction on an opponent, Prune's ATK is increased by 60% for 5s. If the Elemental Reaction triggered is a Swirl Reaction, the triggering character's ATK will additionally be increased by 30% for 5s.",
+        "Description": "After completing <color=#FFD780FF>Witch's Homework: Of What Is Contested</color>, Prune becomes a <color=#FFD780FF>Hexerei</color> character. When the party includes at least 2 Hexerei characters, you gain the <color=#FFD780FF>Hexerei: Secret Rite</color> effect, which enhances Hexerei characters.\n\n<color=#FFD780FF>Hexerei: Secret Rite</color>\nAfter a Hexerei character in the party affected by the Tolling Rally effect triggers an Elemental Reaction on an opponent, Prune's ATK is increased by 60% for 5s. If the Elemental Reaction triggered is a Swirl or Stellar Swirl reaction, the triggering character's ATK will additionally be increased by 30% for 5s.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Prune_07"
       }
     ],
@@ -623,6 +626,7 @@
       "Id": 11325,
       "Name": "The Bell Tolls! The Hunt Is On!",
       "Description": "Prune gently swings the Witchlure Bell, dealing <color=#80FFD7FF>Anemo DMG</color> to nearby opponents. After this, the Bell will enter the Hunter-Seeker mode.\n\n<color=#FFD780FF>Witchlure Bell: Hunter-Seeker</color>\nIn this mode, the Witchlure Bell will follow the current active character, attacking surrounding opponents at intervals and dealing <color=#80FFD7FF>AoE Anemo DMG</color>. This DMG is considered Elemental Burst DMG.",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Prune_01"
     },
     "Inherents": [
@@ -643,7 +647,8 @@
         },
         "Id": 1322101,
         "Name": "Verdict and Punishment",
-        "Description": "During the Elemental Burst <color=#FFD780FF>{LINK#S11325}The Bell Tolls! The Hunt Is On!{/LINK}</color>, after the Witchlure Bell in Hunter-Seeker mode deals DMG to an opponent, if this DMG triggers Swirl on an opponent, it will also summon a {LINK#N11320001}<color=#FFD780FF>Banehunter Oathhammer</color>{/LINK} that will deal 150% of Prune's ATK as DMG to them, with the DMG Type matching the Elemental Conversion from the Swirl. This DMG is considered Elemental Burst DMG.",
+        "Description": "During the Elemental Burst <color=#FFD780FF>{LINK#S11325}The Bell Tolls! The Hunt Is On!{/LINK}</color>, after the Witchlure Bell in Hunter-Seeker mode deals DMG to an opponent, if this DMG triggers Swirl or Stellar Swirl in an opponent, it will also summon a {LINK#N11320001}<color=#FFD780FF>Banehunter Oathhammer</color>{/LINK} that will deal 150% of Prune's ATK as DMG to them, with the DMG Type matching the Elemental Conversion from the Swirl or Stellar Swirl. This DMG is considered Elemental Burst DMG.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Prune_05"
       },
       {
@@ -667,6 +672,7 @@
         "Id": 1322201,
         "Name": "Tolling Synchronicity",
         "Description": "After Prune hits an opponent with the {LINK#N11320001}<color=#FFD780FF>Banehunter Oathhammer</color>{/LINK} that has undergone Elemental Conversion, other nearby party members will gain the Tolling Rally effect for 5s: When Normal, Charged, or Plunging Attacks, or Elemental Skills and Bursts deal DMG to opponents, that attack's DMG will be increased based on the portion of Prune's ATK in excess of 2,000 when they become affected by the Tolling Rally effect. Every excess ATK point increases that instance of DMG by 0.025%, up to a total of 50% max.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Prune_06"
       },
       {
@@ -685,6 +691,7 @@
         "Id": 1322301,
         "Name": "Tinker-Tink, Clank, and Bang!",
         "Description": "Has a 10% chance to get 1 regional Character Talent Material (base material excluded) when crafting. The rarity is the same as the resulting material.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Prune_08"
       }
     ],
@@ -1104,7 +1111,7 @@
       },
       {
         "Title": "\"Witchlure Bell\" and \"Banehunter Oathhammer\"",
-        "Context": "\nDescartes's \"abduction\" had plunged Prune into a kind of worry she had never known before.\nLike a warrior preparing for imminent action, she shut herself away in her room to review every detail of her confrontations with Alice. Whenever the two of them reached a point where Alice could no longer keep up the debate, the Hexenzirkel mage would suddenly produce a \"collector's item\" with a beaming smile to reward Prune for her victory.\nAt first, Prune thought nothing of these \"collector's items.\" Surely they were nothing more than cheap bribes, like the candies adults stuff your face with to stop you from talking.\nThen, a piercing doubt struck her: given how powerful mages can be, could a \"trifle\" from one of them really be nothing more than a toy?\nShe reached for all the prizes she had won from Alice and laid them out for a thorough assessment. But first, she had to eliminate the obvious distractions: assorted snacks in fancy packaging, stickers with juvenile designs, plush toys with no special functions... Finally, she zeroed in on the two items with the most potential.\nThe first was a bell of exquisite workmanship. \"When the bell rings, a witch might appear,\" Alice had said rather ambiguously. From this, Prune deduced it was a witch-catcher of some sort. In truth, it was an old tea party bell; the \"might\" in Alice's claim stemmed from the fact that attendance was never mandatory, leaving it a mystery who — if anyone — would show up. But now that Prune has redefined its purpose, the bell has indeed played a vital role in her adventures. While ringing it never guarantees a witch, it also never fails to bring on some really incredible adventures.\nThe second item was a heavy, and visually striking, hammer. It was the largest and heaviest of all the prizes Prune had won from Alice, appearing truly formidable and intimidating whenever it was swung. Little did she know that this was actually a sculpting tool Alice had originally planned to give to another mage, Nicole, as a present, though this rather over-the-top gift was subsequently (and politely) rejected by the intended recipient, who said, \"My hobby is sculpting, not construction and demolition.\" As a result, it had been sitting around collecting dust until Alice finally found the perfect excuse to offload it.\nThese two gifts from the \"Dodo-King\" were then ceremoniously renamed after some very logical and practical weapon modifications on Prune's part...\n... And now, they are known as the \"Witchlure Bell\" and the \"Banehunter Oathhammer.\""
+        "Context": "Descartes's \"abduction\" had plunged Prune into a kind of worry she had never known before.\nLike a warrior preparing for imminent action, she shut herself away in her room to review every detail of her confrontations with Alice. Whenever the two of them reached a point where Alice could no longer keep up the debate, the Hexenzirkel mage would suddenly produce a \"collector's item\" with a beaming smile to reward Prune for her victory.\nAt first, Prune thought nothing of these \"collector's items.\" Surely they were nothing more than cheap bribes, like the candies adults stuff your face with to stop you from talking.\nThen, a piercing doubt struck her: given how powerful mages can be, could a \"trifle\" from one of them really be nothing more than a toy?\nShe reached for all the prizes she had won from Alice and laid them out for a thorough assessment. But first, she had to eliminate the obvious distractions: assorted snacks in fancy packaging, stickers with juvenile designs, plush toys with no special functions... Finally, she zeroed in on the two items with the most potential.\nThe first was a bell of exquisite workmanship. \"When the bell rings, a witch might appear,\" Alice had said rather ambiguously. From this, Prune deduced it was a witch-catcher of some sort. In truth, it was an old tea party bell; the \"might\" in Alice's claim stemmed from the fact that attendance was never mandatory, leaving it a mystery who — if anyone — would show up. But now that Prune has redefined its purpose, the bell has indeed played a vital role in her adventures. While ringing it never guarantees a witch, it also never fails to bring on some really incredible adventures.\nThe second item was a heavy, and visually striking, hammer. It was the largest and heaviest of all the prizes Prune had won from Alice, appearing truly formidable and intimidating whenever it was swung. Little did she know that this was actually a sculpting tool Alice had originally planned to give to another mage, Nicole, as a present, though this rather over-the-top gift was subsequently (and politely) rejected by the intended recipient, who said, \"My hobby is sculpting, not construction and demolition.\" As a result, it had been sitting around collecting dust until Alice finally found the perfect excuse to offload it.\nThese two gifts from the \"Dodo-King\" were then ceremoniously renamed after some very logical and practical weapon modifications on Prune's part...\n... And now, they are known as the \"Witchlure Bell\" and the \"Banehunter Oathhammer.\""
       },
       {
         "Title": "Vision",

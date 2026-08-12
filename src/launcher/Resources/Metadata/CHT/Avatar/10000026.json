@@ -339,6 +339,7 @@
         "Id": 10261,
         "Name": "捲積微塵",
         "Description": "<color=#FFD780FF>普通攻擊</color>\n進行至多六段的連續槍擊。\n\n<color=#FFD780FF>重擊</color>\n消耗一定體力，進行上挑攻擊。\n\n<color=#FFD780FF>下落攻擊</color>\n從空中下墜衝擊地面，攻擊下落路徑上的敵人，並在落地時造成範圍傷害。\n魈進行下落攻擊時，不會承受墜落傷害。",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_03"
       },
       {
@@ -475,6 +476,7 @@
         "Id": 10262,
         "Name": "風輪兩立",
         "Description": "疾速突進，對路徑上的敵人造成<color=#80FFD7FF>風元素傷害</color>。\n可以在空中施放。\n初始擁有兩次可使用次數。\n\n<i>在他鄉的傳說裡，世界會被兩大風輪碾碎。魈的槍術已臻化境，來回之間仿佛兩座風輪同時撕裂敵人。</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Xiao_01"
       }
     ],
@@ -660,6 +662,7 @@
       "Id": 10265,
       "Name": "靖妖儺舞",
       "Description": "展現數千年前令神魔精妖睹之膽顫的夜叉儺面。\n\n<color=#FFD780FF>夜叉儺面</color>\n·大幅提升魈的跳躍能力；\n·提高攻擊範圍與攻擊傷害；\n·將攻擊傷害轉為<color=#80FFD7FF>風元素傷害</color>，該元素轉化無法被附魔覆蓋。\n\n在這個狀態下，魈會持續損失生命值。\n效果將在魈退場時解除。\n\n<i>戴上降魔的儺面，現出令諸惡膽寒，除盡妖魔奸邪的「護法夜叉」之姿。獲得強大的力量，也會引導出巨大的痛苦。其式即名「靖妖儺舞」。</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Xiao_01"
     },
     "Inherents": [
@@ -681,6 +684,7 @@
         "Id": 262101,
         "Name": "降魔·平妖大聖",
         "Description": "在<color=#FFD780FF>靖妖儺舞</color>狀態下，魈造成的所有傷害提高5%。此後，在技能持續時間內，每經過3秒，造成的傷害再額外提高5%。\n至多獲得25%傷害加成。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Xiao_05"
       },
       {
@@ -703,6 +707,7 @@
         "Id": 262201,
         "Name": "壞劫·國土碾塵",
         "Description": "施放<color=#FFD780FF>風輪兩立</color>會使之後7秒內的風輪兩立造成的傷害提高15%。\n該效果持續7秒，最多疊加三次，疊加時重置持續時間。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Xiao_06"
       },
       {
@@ -721,6 +726,7 @@
         "Id": 262301,
         "Name": "神通·空中自在法",
         "Description": "隊伍中自己的角色攀爬消耗的體力降低20%。\n無法與效果完全相同的固有天賦疊加。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_Explosion_Climb"
       }
     ],
@@ -1140,5 +1146,11 @@
     "Description": "名片紋飾。\n他總想著有一天，能戴著這儺面起舞。不為除魔之故，只為伴隨那花洲的笛聲。",
     "Icon": "UI_NameCardIcon_Xiao",
     "PicturePrefix": "UI_NameCardPic_Xiao"
+  },
+  "TraceEffect": {
+    "Id": 215023,
+    "Name": "遊跡·護法夜叉",
+    "Description": "魈的繪想遊跡。「滅諸苦厄，如是經年。」",
+    "Icon": "UI_TraceEffectIcon_Xiao"
   }
 }

@@ -1,0 +1,1447 @@
+{
+  "Id": 10000033,
+  "PromoteId": 33,
+  "Sort": 1,
+  "Body": 4,
+  "Icon": "UI_AvatarIcon_Tartaglia",
+  "SideIcon": "UI_AvatarIcon_Side_Tartaglia",
+  "Name": "Tartaglia",
+  "Description": "Childe đứng thứ 11 trong quan chấp hành Fatui, uy danh chiến tích luôn được ca ngợi.",
+  "BeginTime": "2020-11-11T04:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 12,
+  "BaseValue": {
+    "HpBase": 1020.0524,
+    "AttackBase": 23.4612,
+    "DefenseBase": 63.4198
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 3331,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Lần 1|{param1:F1P}",
+            "Sát Thương Lần 2|{param2:F1P}",
+            "Sát Thương Lần 3|{param3:F1P}",
+            "Sát Thương Lần 4|{param4:F1P}",
+            "Sát Thương Lần 5|{param5:F1P}",
+            "Sát Thương Lần 6|{param6:F1P}",
+            "Ngắm Bắn|{param7:F1P}",
+            "Tụ Lực Ngắm Bắn|{param8:P}",
+            "Sát Thương Đoạn Lưu - Né|{param9:F1P}*3",
+            "Sát Thương Đoạn Lưu - Phá|{param10:F1P}",
+            "Thời gian duy trì Đoạn Lưu|{param14:F1} giây",
+            "Sát Thương Khi Rơi|{param11:F1P}",
+            "Sát Thương Khi Rơi Từ Độ Cao Thấp/Cao|{param12:P}/{param13:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 333101,
+              "Level": 1,
+              "Parameters": [
+                0.4128,
+                0.46268,
+                0.55384,
+                0.57018,
+                0.60888,
+                0.72756,
+                0.4386,
+                1.24,
+                0.124,
+                0.62,
+                0.639324,
+                1.278377,
+                1.596762,
+                10
+              ]
+            },
+            {
+              "Id": 333102,
+              "Level": 2,
+              "Parameters": [
+                0.4464,
+                0.50034,
+                0.59892,
+                0.61659,
+                0.65844,
+                0.78678,
+                0.4743,
+                1.333,
+                0.1333,
+                0.6665,
+                0.691362,
+                1.382431,
+                1.726731,
+                10
+              ]
+            },
+            {
+              "Id": 333103,
+              "Level": 3,
+              "Parameters": [
+                0.48,
+                0.538,
+                0.644,
+                0.663,
+                0.708,
+                0.846,
+                0.51,
+                1.426,
+                0.1426,
+                0.713,
+                0.7434,
+                1.486485,
+                1.8567,
+                10
+              ]
+            },
+            {
+              "Id": 333104,
+              "Level": 4,
+              "Parameters": [
+                0.528,
+                0.5918,
+                0.7084,
+                0.7293,
+                0.7788,
+                0.9306,
+                0.561,
+                1.55,
+                0.155,
+                0.775,
+                0.81774,
+                1.635134,
+                2.04237,
+                10
+              ]
+            },
+            {
+              "Id": 333105,
+              "Level": 5,
+              "Parameters": [
+                0.5616,
+                0.62946,
+                0.75348,
+                0.77571,
+                0.82836,
+                0.98982,
+                0.5967,
+                1.643,
+                0.1643,
+                0.8215,
+                0.869778,
+                1.739187,
+                2.172339,
+                10
+              ]
+            },
+            {
+              "Id": 333106,
+              "Level": 6,
+              "Parameters": [
+                0.6,
+                0.6725,
+                0.805,
+                0.82875,
+                0.885,
+                1.0575,
+                0.6375,
+                1.736,
+                0.1736,
+                0.868,
+                0.92925,
+                1.858106,
+                2.320875,
+                10
+              ]
+            },
+            {
+              "Id": 333107,
+              "Level": 7,
+              "Parameters": [
+                0.6528,
+                0.73168,
+                0.87584,
+                0.90168,
+                0.96288,
+                1.15056,
+                0.6936,
+                1.86,
+                0.186,
+                0.93,
+                1.011024,
+                2.02162,
+                2.525112,
+                10
+              ]
+            },
+            {
+              "Id": 333108,
+              "Level": 8,
+              "Parameters": [
+                0.7056,
+                0.79086,
+                0.94668,
+                0.97461,
+                1.04076,
+                1.24362,
+                0.7497,
+                1.984,
+                0.1984,
+                0.992,
+                1.092798,
+                2.185133,
+                2.729349,
+                10
+              ]
+            },
+            {
+              "Id": 333109,
+              "Level": 9,
+              "Parameters": [
+                0.7584,
+                0.85004,
+                1.01752,
+                1.04754,
+                1.11864,
+                1.33668,
+                0.8058,
+                2.108,
+                0.2108,
+                1.054,
+                1.174572,
+                2.348646,
+                2.933586,
+                10
+              ]
+            },
+            {
+              "Id": 333110,
+              "Level": 10,
+              "Parameters": [
+                0.816,
+                0.9146,
+                1.0948,
+                1.1271,
+                1.2036,
+                1.4382,
+                0.867,
+                2.232,
+                0.2232,
+                1.116,
+                1.26378,
+                2.527025,
+                3.15639,
+                10
+              ]
+            },
+            {
+              "Id": 333111,
+              "Level": 11,
+              "Parameters": [
+                0.8736,
+                0.97916,
+                1.17208,
+                1.20666,
+                1.28856,
+                1.53972,
+                0.9282,
+                2.356,
+                0.2356,
+                1.178,
+                1.352988,
+                2.705403,
+                3.379194,
+                10
+              ]
+            },
+            {
+              "Id": 333112,
+              "Level": 12,
+              "Parameters": [
+                0.9312,
+                1.04372,
+                1.24936,
+                1.28622,
+                1.37352,
+                1.64124,
+                0.9894,
+                2.48,
+                0.248,
+                1.24,
+                1.442196,
+                2.883781,
+                3.601998,
+                10
+              ]
+            },
+            {
+              "Id": 333113,
+              "Level": 13,
+              "Parameters": [
+                0.9888,
+                1.10828,
+                1.32664,
+                1.36578,
+                1.45848,
+                1.74276,
+                1.0506,
+                2.635,
+                0.2635,
+                1.3175,
+                1.531404,
+                3.062159,
+                3.824802,
+                10
+              ]
+            },
+            {
+              "Id": 333114,
+              "Level": 14,
+              "Parameters": [
+                1.0464,
+                1.17284,
+                1.40392,
+                1.44534,
+                1.54344,
+                1.84428,
+                1.1118,
+                2.79,
+                0.279,
+                1.395,
+                1.620612,
+                3.240537,
+                4.047606,
+                10
+              ]
+            },
+            {
+              "Id": 333115,
+              "Level": 15,
+              "Parameters": [
+                1.104,
+                1.2374,
+                1.4812,
+                1.5249,
+                1.6284,
+                1.9458,
+                1.173,
+                2.945,
+                0.2945,
+                1.4725,
+                1.70982,
+                3.418915,
+                4.27041,
+                10
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10331,
+        "Name": "Chém Mưa",
+        "Description": "<color=#FFD780FF>Tấn Công Thường</color>\nThực hiện tối đa 6 lần bắn tên liên tiếp.\n\n<color=#FFD780FF>Trọng Kích</color>\nSát thương càng cao, <color=#FFD780FF>ngắm bắn</color> càng chính xác.\nKhi ngắm bắn, sức mạnh Nguyên Tố Thủy sẽ tích tụ trên mũi tên. Mũi tên tụ đầy dòng chảy sẽ gây <color=#80C0FFFF>Sát Thương Nguyên Tố Thủy</color> khi bắn trúng địch, và thi triển hiệu quả Đoạn Lưu.\n\n<color=#FFD780FF>Đoạn Lưu</color>\nĐịch ở trạng thái Đoạn Lưu khi bị Tartaglia tấn công, sẽ tạo hiệu quả <color=#80C0FFFF>Sát Thương Phạm Vi Nguyên Tố Thủy</color>. Sát thương do những hiệu quả này gây ra được xem là tấn công thường. \n·Đoạn Lưu - Né: Khi tụ lực ngắm bắn trúng địch đang bị Đoạn Lưu ảnh hưởng, sẽ gây sát thương phạm vi liên tục. Đoạn Lưu - Né mỗi 0.7s mới có hiệu quả 1 lần.\n·Đoạn Lưu - Phá: Khi đánh bại địch bị Đoạn Lưu ảnh hưởng sẽ tạo xoáy nước, tăng thêm hiệu quả Đoạn Lưu cho địch ở gần.\n\n<color=#FFD780FF>Tấn Công Khi Đáp</color>\nBắn mưa tên liên tiếp xuống mặt đất, gây sát thương phạm vi.\nKhi ở trạng thái cận chiến Trang Phục Ma Vương - Thủy Triều, không thể thi triển tấn công khi đáp xuống.",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_A_02"
+      },
+      {
+        "GroupId": 3332,
+        "Proud": {
+          "Descriptions": [
+            "Trạng thái gây ra sát thương|{param1:P}",
+            "Sát Thương Lần 1|{param2:F1P}",
+            "Sát Thương Lần 2|{param3:F1P}",
+            "Sát Thương Lần 3|{param4:F1P}",
+            "Sát Thương Lần 4|{param5:F1P}",
+            "Sát Thương Lần 5|{param6:F1P}",
+            "Sát Thương Lần 6|{param7:F1P}+{param8:F1P}",
+            "Sát Thương Trọng Kích|{param9:F1P}+{param10:F1P}",
+            "Thể lực Trọng Kích tiêu hao|{param12:F1} điểm",
+            "Sát Thương Đoạn Lưu - Chém|{param11:P}",
+            "Thời Gian Kéo Dài Tối Đa|{param13:F1}s",
+            "CD|{param14:F1} đến {param15:F1}s",
+            "CD sau khi dùng hết thời gian kéo dài|{param16:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 333201,
+              "Level": 1,
+              "Parameters": [
+                0.72,
+                0.38872,
+                0.41624,
+                0.5633,
+                0.59942,
+                0.55298,
+                0.35432,
+                0.37668,
+                0.602,
+                0.71982,
+                0.602,
+                20,
+                30,
+                6,
+                36,
+                45
+              ]
+            },
+            {
+              "Id": 333202,
+              "Level": 2,
+              "Parameters": [
+                0.774,
+                0.42036,
+                0.45012,
+                0.60915,
+                0.64821,
+                0.59799,
+                0.38316,
+                0.40734,
+                0.651,
+                0.77841,
+                0.651,
+                20,
+                30,
+                6,
+                36,
+                45
+              ]
+            },
+            {
+              "Id": 333203,
+              "Level": 3,
+              "Parameters": [
+                0.828,
+                0.452,
+                0.484,
+                0.655,
+                0.697,
+                0.643,
+                0.412,
+                0.438,
+                0.7,
+                0.837,
+                0.7,
+                20,
+                30,
+                6,
+                36,
+                45
+              ]
+            },
+            {
+              "Id": 333204,
+              "Level": 4,
+              "Parameters": [
+                0.9,
+                0.4972,
+                0.5324,
+                0.7205,
+                0.7667,
+                0.7073,
+                0.4532,
+                0.4818,
+                0.77,
+                0.9207,
+                0.77,
+                20,
+                30,
+                6,
+                36,
+                45
+              ]
+            },
+            {
+              "Id": 333205,
+              "Level": 5,
+              "Parameters": [
+                0.954,
+                0.52884,
+                0.56628,
+                0.76635,
+                0.81549,
+                0.75231,
+                0.48204,
+                0.51246,
+                0.819,
+                0.97929,
+                0.819,
+                20,
+                30,
+                6,
+                36,
+                45
+              ]
+            },
+            {
+              "Id": 333206,
+              "Level": 6,
+              "Parameters": [
+                1.008,
+                0.565,
+                0.605,
+                0.81875,
+                0.87125,
+                0.80375,
+                0.515,
+                0.5475,
+                0.875,
+                1.04625,
+                0.875,
+                20,
+                30,
+                6,
+                36,
+                45
+              ]
+            },
+            {
+              "Id": 333207,
+              "Level": 7,
+              "Parameters": [
+                1.08,
+                0.61472,
+                0.65824,
+                0.8908,
+                0.94792,
+                0.87448,
+                0.56032,
+                0.59568,
+                0.952,
+                1.13832,
+                0.952,
+                20,
+                30,
+                6,
+                36,
+                45
+              ]
+            },
+            {
+              "Id": 333208,
+              "Level": 8,
+              "Parameters": [
+                1.152,
+                0.66444,
+                0.71148,
+                0.96285,
+                1.02459,
+                0.94521,
+                0.60564,
+                0.64386,
+                1.029,
+                1.23039,
+                1.029,
+                20,
+                30,
+                6,
+                36,
+                45
+              ]
+            },
+            {
+              "Id": 333209,
+              "Level": 9,
+              "Parameters": [
+                1.224,
+                0.71416,
+                0.76472,
+                1.0349,
+                1.10126,
+                1.01594,
+                0.65096,
+                0.69204,
+                1.106,
+                1.32246,
+                1.106,
+                20,
+                30,
+                6,
+                36,
+                45
+              ]
+            },
+            {
+              "Id": 333210,
+              "Level": 10,
+              "Parameters": [
+                1.296,
+                0.7684,
+                0.8228,
+                1.1135,
+                1.1849,
+                1.0931,
+                0.7004,
+                0.7446,
+                1.19,
+                1.4229,
+                1.19,
+                20,
+                30,
+                6,
+                36,
+                45
+              ]
+            },
+            {
+              "Id": 333211,
+              "Level": 11,
+              "Parameters": [
+                1.368,
+                0.82264,
+                0.88088,
+                1.1921,
+                1.26854,
+                1.17026,
+                0.74984,
+                0.79716,
+                1.274,
+                1.52334,
+                1.274,
+                20,
+                30,
+                6,
+                36,
+                45
+              ]
+            },
+            {
+              "Id": 333212,
+              "Level": 12,
+              "Parameters": [
+                1.44,
+                0.87688,
+                0.93896,
+                1.2707,
+                1.35218,
+                1.24742,
+                0.79928,
+                0.84972,
+                1.358,
+                1.62378,
+                1.358,
+                20,
+                30,
+                6,
+                36,
+                45
+              ]
+            },
+            {
+              "Id": 333213,
+              "Level": 13,
+              "Parameters": [
+                1.53,
+                0.93112,
+                0.99704,
+                1.3493,
+                1.43582,
+                1.32458,
+                0.84872,
+                0.90228,
+                1.442,
+                1.72422,
+                1.442,
+                20,
+                30,
+                6,
+                36,
+                45
+              ]
+            },
+            {
+              "Id": 333214,
+              "Level": 14,
+              "Parameters": [
+                1.62,
+                0.98536,
+                1.05512,
+                1.4279,
+                1.51946,
+                1.40174,
+                0.89816,
+                0.95484,
+                1.526,
+                1.82466,
+                1.526,
+                20,
+                30,
+                6,
+                36,
+                45
+              ]
+            },
+            {
+              "Id": 333215,
+              "Level": 15,
+              "Parameters": [
+                1.71,
+                1.0396,
+                1.1132,
+                1.5065,
+                1.6031,
+                1.4789,
+                0.9476,
+                1.0074,
+                1.61,
+                1.9251,
+                1.61,
+                20,
+                30,
+                6,
+                36,
+                45
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 10332,
+        "Name": "Trang Phục Ma Vương - Thủy Triều",
+        "Description": "Giải phóng vũ trang cấu tạo từ nước tinh khiết, gây cho địch xung quanh <color=#80C0FFFF>Sát Thương Nguyên Tố Thủy</color>, và vào trạng thái cận chiến.\nỞ trạng thái này, tấn công thường và trọng kích của Tartaglia sẽ chuyển thành <color=#80C0FFFF>sát thương Nguyên Tố Thủy</color> không thể bị đính kèm thay thế, và có thay đổi như sau:\n\n<color=#FFD780FF>Tấn Công Thường</color>\nThực hiện tối đa 6 lần chém liên tiếp <color=#80C0FFFF>Nguyên Tố Thủy</color>.\n\n<color=#FFD780FF>Trọng Kích</color>\nTiêu hao thể lực, đánh ra hai kiếm về phía trước trong chớp mắt, gây <color=#80C0FFFF>Sát Thương Nguyên Tố Thủy</color>.\n\n<color=#FFD780FF>Đoạn Lưu - Chém</color>\nTấn công gần, đánh trúng kẻ địch bị Đoạn Lưu ảnh hưởng sẽ thi triển Đoạn Lưu - Chém 1 lần, gây <color=#80C0FFFF>Sát Thương Phạm Vi Nguyên Tố Thủy</color>. Sát thương do Đoạn Lưu - Chém gây ra được coi là sát thương kỹ năng nguyên tố, mỗi 1.5s mới có hiệu quả 1 lần.\n\nSau 30s, hoặc thi triển để hủy hiệu quả kỹ năng lần nữa, sẽ trở về trạng thái đánh xa, kỹ năng cũng sẽ vào thời gian chờ. Trạng thái cận chiến kéo dài càng lâu, thời gian chờ càng dài.\nKéo dài sau 30s sẽ tự động trở về trạng thái đánh xa, kỹ năng cũng sẽ bước vào thời gian chờ lâu hơn\n\n<i>Để khắc phục nhược điểm dùng cung không tốt, anh đã chọn cung làm vũ khí. Nhưng khi chiến đấu thực sự, ắt sẽ lấy ra sức mạnh thực sự...</i>",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_S_Tartaglia_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 3339,
+      "Proud": {
+        "Descriptions": [
+          "Sát Thương Kỹ Năng - Cận Chiến|{param1:P}",
+          "Sát Thương Kỹ Năng - Đánh Xa|{param3:P}",
+          "Sát Thương Đoạn Lưu - Nổ|{param2:P}",
+          "Kỹ năng trả lại năng lượng Nguyên Tố (đánh xa)|{param4:I}",
+          "CD|{param5:F1}s",
+          "Năng Lượng Nguyên Tố|{param6:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 333901,
+            "Level": 1,
+            "Parameters": [
+              4.64,
+              1.2,
+              3.784,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 333902,
+            "Level": 2,
+            "Parameters": [
+              4.988,
+              1.29,
+              4.0678,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 333903,
+            "Level": 3,
+            "Parameters": [
+              5.336,
+              1.38,
+              4.3516,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 333904,
+            "Level": 4,
+            "Parameters": [
+              5.8,
+              1.5,
+              4.73,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 333905,
+            "Level": 5,
+            "Parameters": [
+              6.148,
+              1.59,
+              5.0138,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 333906,
+            "Level": 6,
+            "Parameters": [
+              6.496,
+              1.68,
+              5.2976,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 333907,
+            "Level": 7,
+            "Parameters": [
+              6.96,
+              1.8,
+              5.676,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 333908,
+            "Level": 8,
+            "Parameters": [
+              7.424,
+              1.92,
+              6.0544,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 333909,
+            "Level": 9,
+            "Parameters": [
+              7.888,
+              2.04,
+              6.4328,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 333910,
+            "Level": 10,
+            "Parameters": [
+              8.352,
+              2.16,
+              6.8112,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 333911,
+            "Level": 11,
+            "Parameters": [
+              8.816,
+              2.28,
+              7.1896,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 333912,
+            "Level": 12,
+            "Parameters": [
+              9.28,
+              2.4,
+              7.568,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 333913,
+            "Level": 13,
+            "Parameters": [
+              9.86,
+              2.55,
+              8.041,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 333914,
+            "Level": 14,
+            "Parameters": [
+              10.44,
+              2.7,
+              8.514,
+              20,
+              15,
+              60
+            ]
+          },
+          {
+            "Id": 333915,
+            "Level": 15,
+            "Parameters": [
+              11.02,
+              2.85,
+              8.987,
+              20,
+              15,
+              60
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 10333,
+      "Name": "Kỹ năng Thượng Thừa - Ánh Sáng Tận Diệt",
+      "Description": "Dựa theo trạng thái hiện tại của Tartaglia, thực hiện tấn công khác nhau: \n\n<color=#FFD780FF>Trạng thái đánh xa - Đạn Ma</color>\nBắn ra mũi tên tràn đầy nguyên tố thủy về phía trước, gây <color=#80C0FFFF>Sát Thương Phạm Vi Nguyên Tố Thủy</color>, và thi triển hiệu quả Đoạn Lưu.\nSau khi thi triển, trả lại một phần Năng Lượng Nguyên Tố.\n\n<color=#FFD780FF>Trạng thái cận chiến - Tận Diệt Thủy Quang</color>\nTrảm kích phạm vi lớn, gây <color=#80C0FFFF>Sát Thương Nguyên Tố Thủy</color> cho tất cả địch ở gần và kích hoạt Đoạn Lưu - Nổ.\n\n<color=#FFD780FF>Đoạn Lưu - Nổ</color>\nTận Diệt Thủy Quang đánh trúng địch trong trạng thái Đoạn Lưu sẽ tiêu hao hiệu quả Đoạn Lưu và tung tóe nước, gây <color=#80C0FFFF>Sát Thương Phạm Vi Nguyên Tố Thủy</color>. Sát thương của Đoạn Lưu - Nổ được xem như sát thương kỹ năng nộ.\n\n<i>Dòng nước chảy vội, rất hiếm gặp trên quê hương được tuyết bao phủ của anh ấy. Có lẽ là do hiểu được sự quý giá của nó nên anh ấy có thể điều khiển nó.</i>",
+      "SpecialEnergyType": 0,
+      "Icon": "Skill_E_Tartaglia_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 3321,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 332101,
+              "Level": 1,
+              "Parameters": [
+                8
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 332101,
+        "Name": "Kéo Dài Bất Tận",
+        "Description": "Thời gian hiệu quả Đoạn Lưu kéo dài 8 giây.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Tartaglia_03"
+      },
+      {
+        "GroupId": 3322,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 332201,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 332201,
+        "Name": "Thủy Hình Kiếm",
+        "Description": "Khi ở trạng thái cận chiến của <color=#FFD780FF>Trang Phục Ma Vương - Thủy Triều</color>, tấn công thường và trọng kích tạo thành bạo kích sẽ tạo ra thêm hiệu quả Đoạn Lưu cho kẻ địch bị đánh trúng.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Tartaglia_06"
+      },
+      {
+        "GroupId": 3323,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 332301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 332301,
+        "Name": "Tinh Thông Võ Thuật",
+        "Description": "Tăng 1 cấp <color=#FFD780FF>tấn công thường</color> cho nhân vật của bản thân trong đội.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Tartaglia_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 331,
+        "Name": "Trang Phục Ma Vương - Ngăn Sóng",
+        "Description": "Giảm 20% CD của <color=#FFD780FF>Trang Phục Ma Vương - Thủy Triều</color>.",
+        "Icon": "UI_Talent_S_Tartaglia_01"
+      },
+      {
+        "Id": 332,
+        "Name": "Trang Phục Ma Vương - Sóng Ngầm",
+        "Description": "Khi kẻ địch bị đánh bại và chịu ảnh hưởng của hiệu ứng Đoạn Lưu, sẽ hồi phục 4 điểm Năng Lượng Nguyên Tố cho Tartaglia.",
+        "Icon": "UI_Talent_S_Tartaglia_02"
+      },
+      {
+        "Id": 333,
+        "Name": "Tai Họa Vực Sâu - Nguồn Gốc Tranh Giành",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Trang Phục Ma Vương - Thủy Triều</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Tartaglia_01",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 334,
+        "Name": "Tai Họa Vực Sâu - Bắn Nước",
+        "Description": "Mỗi 4s, khi trong trận xuất hiện hiệu quả Đoạn Lưu do Tartaglia thi triển, nếu Tartaglia đang trong trạng thái cận chiến của <color=#FFD780FF>Trang Phục Ma Vương - Thủy Triều</color>, sẽ kích hoạt Đoạn Lưu - Chém; Nếu không Đoạn Lưu - Né sẽ được kích hoạt.\nĐoạn Lưu - Né và Đoạn Lưu - Chém được kích hoạt bằng cung mệnh này sẽ không bị giới hạn bởi thời gian kích hoạt của hai loại Đoạn Lưu này và cũng không ảnh hưởng đến thời gian kích hoạt của chúng.",
+        "Icon": "UI_Talent_S_Tartaglia_05"
+      },
+      {
+        "Id": 335,
+        "Name": "Kỹ Năng Thượng Thừa - Chém Nước Chặt Mưa",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Kỹ Năng Thượng Thừa - Ánh Sáng Tận Diệt</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Tartaglia_02",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 336,
+        "Name": "Kỹ Năng Thượng Thừa - Thiên Sứ Tai Ương",
+        "Description": "Khi thi triển <color=#FFD780FF>Kỹ Năng Thượng Thừa - Ánh Sáng Tận Diệt</color> trong trạng thái cận chiến, hủy CD của <color=#FFD780FF>Trang Phục Ma Vương - Thủy Triều</color>.\nHiệu quả này sẽ được kích hoạt khi anh quay trở lại trạng thái đánh xa.",
+        "Icon": "UI_Talent_S_Tartaglia_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Childe",
+    "Detail": "Childe đứng thứ 11 trong quan chấp hành Fatui, uy danh chiến tích luôn được ca ngợi.",
+    "Association": 4,
+    "Native": "Fatui",
+    "BirthMonth": 7,
+    "BirthDay": 20,
+    "VisionBefore": "Thủy",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Cung Kình Thiên",
+    "CvChinese": "鱼冻",
+    "CvJapanese": "木村良平",
+    "CvEnglish": "Griffin Burns",
+    "CvKorean": "Nam Do-hyeong",
+    "CookBonus": {
+      "OriginItemId": 108050,
+      "ItemId": 108175,
+      "InputList": [
+        100073,
+        100056,
+        100016
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Lần đầu gặp mặt...",
+        "Context": "#Tôi là quan chấp hành thứ 11 của Fatui, Childe Tartaglia. Còn {F#cô}{M#cậu}... Ha, là người có thể tạo ra tranh chấp. Thật là thú vị. Chúng ta chắc rất hợp nhau nhỉ?"
+      },
+      {
+        "Title": "Nói chuyện phiếm - Nhàn rỗi",
+        "Context": "Đứng đây sẽ chẳng có đối thủ nào đến đâu."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Thi đấu",
+        "Context": "Hmm, gần đây không có kẻ thù mạnh nào đáng để chiến đấu?"
+      },
+      {
+        "Title": "Nói chuyện phiếm - Fatui",
+        "Context": "Không biết các quan chấp hành khác đang làm gì nhỉ? Thôi kệ vậy, chắc lại là \"kế hoạch vĩ đại\" quái lạ nào đó."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Quê hương của tuyết",
+        "Context": "Nếu cứ đứng như vậy ở quê hương đầy tuyết của tôi, chắc đã bị chết cóng rồi. Hahaha."
+      },
+      {
+        "Title": "Sau cơn mưa trời lại sáng...",
+        "Context": "Tiếng mưa rơi trên mặt nước sẽ làm cá hoảng loạn. So ra thì, sau cơn mưa đi câu là thích hợp nhất."
+      },
+      {
+        "Title": "Khi tuyết rơi - Dị quốc",
+        "Context": "Hahaha, không biết ở quê tuyết có đang rơi không nhỉ?"
+      },
+      {
+        "Title": "Khi tuyết rơi - Snezhnaya",
+        "Context": "Nhiều tuyết quá đi! Trời đất cũng trong trẻo như ánh trăng vậy, nếu máu rơi trên võ đài như thế này sẽ có màu bắt mắt lắm đây."
+      },
+      {
+        "Title": "Khi gió nổi lên...",
+        "Context": "Hả! Có sát khí truyền đến từ cơn gió."
+      },
+      {
+        "Title": "Gió lớn - Dị quốc",
+        "Context": "Gió mát quá!"
+      },
+      {
+        "Title": "Gió lớn - Snezhnaya",
+        "Context": "Tôi cảm thấy làn gió như gột rửa cơ thể và tâm trí mình. Thật là thoải mái."
+      },
+      {
+        "Title": "Chào buổi sáng...",
+        "Context": "#Yo, {F#cô}{M#anh} bạn! Hôm nay có tinh thần tốt đó."
+      },
+      {
+        "Title": "Chào buổi trưa...",
+        "Context": "#Hôm nay trông {F#cô}{M#cậu} rất có tinh thần, muốn thử sức với tôi không?"
+      },
+      {
+        "Title": "Chào buổi tối...",
+        "Context": "Ăn ngon quá. Phải vận động tiêu hóa thôi."
+      },
+      {
+        "Title": "Chúc ngủ ngon...",
+        "Context": "Hôm nay thật tuyệt. Hẹn gặp lại vào ngày mai!"
+      },
+      {
+        "Title": "Về bản thân Tartaglia...",
+        "Context": "Là một chiến sĩ, phải luôn đặt tinh thần khiêu chiến lên trên mũi kiếm. Dù thắng hay bại thì đó cũng là một trải nghiệm quý giá không gì thay thế được."
+      },
+      {
+        "Title": "Về chúng ta - Đồng liêu",
+        "Context": "#Việc đồng hành cùng {F#cô}{M#cậu} đã lan truyền đến tai các quan chấp hành khác rồi. Hừm, thật muốn nhìn vẻ mặt của bọn họ, haha."
+      },
+      {
+        "Title": "Về chúng ta - Binh khí",
+        "Context": "Cung, thực ra là loại vũ khí không thuộc sở trường của tôi. Vì điều này, tôi càng phải quyết tâm chinh phục nó."
+      },
+      {
+        "Title": "Về chúng ta - Sinh tồn",
+        "Context": "#Người không cần Vision mà vẫn có sức mạnh như vậy thì quả là đáng nể... Trước khi {F#cô}{M#cậu} đạt đến giới hạn của mình, hãy cùng tôi buông bỏ tất cả mọi thứ. Trước khi đấu một trận tử chiến, tuyệt đối không được gục ngã, đồng đội của tôi! Tôi sẽ không bao giờ cho phép {F#cô}{M#cậu} gục ngã."
+      },
+      {
+        "Title": "Về chúng ta - Lời mời",
+        "Context": "#{F#Cô}{M#Cậu} có muốn gia nhập Fatui không? Hừm, coi như tôi chưa nói gì. Với thân phận của {F#cô}{M#cậu} hiện nay, đi cùng với {F#cô}{M#cậu}, thì ngay cả lý do quang minh chính đại để quyết chiến với các quan chấp hành khác cũng có rồi. Cơ hội tốt như vậy, thực sự không thể bỏ qua."
+      },
+      {
+        "Title": "Về Vision...",
+        "Context": "Miễn là khiến tôi trở nên mạnh mẽ, không quan trọng đó là \"Vision\", \"Delusion\" hay tên tội đồ kế thừa vực sâu cũng chẳng sao..."
+      },
+      {
+        "Title": "Có gì muốn chia sẻ không...",
+        "Context": "Trên những cao nguyên tuyết vô tận, sự sống hay vết tích của con người cũng dễ bị đất trời nuốt chửng. Vì vậy, chúng ta mỗi ngày đều phải chiến đấu với kẻ thù vô hình."
+      },
+      {
+        "Title": "Những kiến thức thú vị...",
+        "Context": "#Tôi đã từng đối mặt với những con quái vật khổng lồ vô danh nơi vực sâu của thế giới. Rồi sẽ có một ngày, tôi đường đường chính chính trảm hạ con quái vật đã khiến xương cốt của tôi đóng băng. Khi ấy phải mời {F#cô}{M#cậu} làm người làm chứng cho tôi rồi, đồng đội!"
+      },
+      {
+        "Title": "Về Skirk...",
+        "Context": "Đã bao nhiêu năm tôi không gặp lại sư phụ rồi. Hừm, lần sau cùng cô ấy so tài, tôi mong rằng ít nhất có thể ép cô ấy dùng hai tay để đối phó với tôi."
+      },
+      {
+        "Title": "Về Zhongli - Cân nhắc",
+        "Context": "Bụng dạ của tên đó rất khó lường, không biết thực lực của hắn ra sao, hừ, thật đáng mong đợi."
+      },
+      {
+        "Title": "Về Zhongli - Khiêu chiến",
+        "Context": "#Ngài Zhongli dạo này thế nào? Hmm... Không tệ? Có vẻ như anh ta đã quen với cuộc sống của một \"người phàm\" rồi. Chết tiệt... Anh ta dám dắt mũi tôi, chỉ có chiến đấu mới có thể khiến tôi vui vẻ trở lại!\n{F#Cô}{M#Cậu} nói... tôi không thể đánh bại anh ta? Hahaha..."
+      },
+      {
+        "Title": "Về Nữ Hoàng...",
+        "Context": "#Nữ hoàng thực ra rất dịu dàng. Nhưng chính vì quá dịu dàng nên mới trở nên lạnh lùng. Chính vì giấc mơ hòa bình mà tuyên chiến với cả thế giới. Cũng chính vì cô ấy là kẻ thù của thế giới, tôi mới có cơ hội gặp được {F#cô}{M#cậu}."
+      },
+      {
+        "Title": "Về Varka...",
+        "Context": "Varka ư? Hừm, nghĩ đến ngày có thể quyết đấu với người đứng đầu Đội Kỵ Sĩ Tây Phong - Kỵ Sĩ Bắc Phong trong truyền thuyết thì tôi lại run lên vì phấn khích. Có thể sống trong thế giới như vậy thật là tuyệt."
+      },
+      {
+        "Title": "Về \"Pierro\"...",
+        "Context": "Đó là vị quan chấp hành đầu tiên của Fatui, cũng là thủ lĩnh của chúng tôi, cho nên chỉ xuất hiện trong những dịp trọng đại. Còn về chiến tích thì... tôi không quan tâm, người mà tôi thề sẽ trung thành là Nữ Hoàng."
+      },
+      {
+        "Title": "Về \"Capitano\"...",
+        "Context": "Tôi đã từng chứng kiến được dáng vẻ của anh ta trên chiến trường, thực sự quá dũng mãnh. Có lẽ do thứ hạng của tôi quá thấp nên anh ta không để ý đến tôi. Nhưng dù cho hôm nay bị ngó lơ thì ngày mai tôi cũng sẽ chứng minh cho anh ta thấy sức mạnh của mình."
+      },
+      {
+        "Title": "Về \"Dottore\"...",
+        "Context": "Nghe nói anh ta đã tạo ra bản sao dựa vào từng độ tuổi khác nhau của mình để phụ trách các loại nhiệm vụ khác nhau. Hết cách rồi, đồng liêu của tôi đều là những người không bình thường như vậy đó. Nghĩ lại thì, nếu như có một ngày tôi gặp được bản sao của mình thì... haha, chắc sẽ xảy ra một trận chiến chấn động để quyết định ra người sống sót cuối cùng rồi."
+      },
+      {
+        "Title": "Về \"Columbina\"...",
+        "Context": "#Thứ tự của quan chấp hành Fatui được xếp dựa trên thực lực, tôi không hiểu tại sao cô gái đó lại được xếp \"thứ 3\". Nếu có cơ hội, tôi rất muốn đấu thử với các quan chấp hành xếp trên tôi, nhưng luôn có cảm giác không muốn đụng độ với cô ta... Nói chung thì, {F#cô}{M#cậu} cũng cẩn thận chút nhé."
+      },
+      {
+        "Title": "Về \"Arlecchino\"...",
+        "Context": "Tôi không ghét những người thích nghĩ cho bản thân, dẫu sao thì tôi gia nhập vào Fatui cũng là để có nhiều cơ hội chiến đấu hơn mà. Nhưng tôi không ưa cô ta. Nếu việc phản bội mang đến lợi ích thì cô ta cũng sẽ không ngần ngại vung kiếm về phía Nữ Hoàng. Trong mắt cô ta chỉ có sự điên cuồng mà thôi."
+      },
+      {
+        "Title": "Về \"Pulcinella\"...",
+        "Context": "Tôi không hiểu thế nào là nhân tình thế thái, nhưng tôi biết là ông ta thật lòng muốn giúp tôi. Ánh mắt của ông ta nhìn tôi như thể là đang đối đãi với người nhà vậy. Ừm, nhắc lại thì, khi Tonia và Teucer gửi thư về cho tôi cũng có nhắc đến việc nhận được bánh và quà từ ông ta. Lúc tôi tạm rời khỏi Snezhnaya, ông ta cũng đã làm theo lời hứa, chăm sóc tốt cho người nhà của tôi."
+      },
+      {
+        "Title": "Về \"Sandrone\"...",
+        "Context": "Cô ta kiểu như rất say mê nghiên cứu vậy. Để tôi đoán xem, những cỗ máy đó đều liên quan đến cô ta đúng không? Nói chung thì chỉ trong vài lần gặp mặt mà vẻ mặt cô ta như muốn giết tôi luôn, nhưng tôi hoàn toàn không nhớ là đã đắc tội gì."
+      },
+      {
+        "Title": "Về \"Pantalone\"...",
+        "Context": "À, một người mang dã tâm với rất nhiều \"kế hoạch vĩ đại\" trong đầu. Những lý luận của anh ta tôi hoàn toàn nghe không vô. Nói chung thì chỉ cần anh ta quản lý tốt quỹ dự trữ của chúng tôi là được rồi."
+      },
+      {
+        "Title": "Về \"Signora\"...",
+        "Context": "#Tôi với cô ta không hợp nhau, {F#cô}{M#cậu} biết mà. Đối với quan chấp hành mà nói, ngày chết sẽ không nằm trong tay bản thân... Nhưng yên tâm, tôi dù thế nào cũng sẽ dốc hết sức mình để sống sót."
+      },
+      {
+        "Title": "Về \"Scaramouche\"...",
+        "Context": "#Hắn cầm theo Gnosis và cắt đứt liên lạc với chúng tôi, bởi vậy nên mới có chiến dịch thu hồi Gnosis đó. Tôi thì không ngại đi đây đi đó, không chừng sẽ gặp lại {F#cô}{M#cậu} ở đâu đó thì sao?"
+      },
+      {
+        "Title": "Muốn tìm hiểu Tartaglia - Điều thứ 1",
+        "Context": "Đồng đội, hãy nhớ rằng, sẽ có một ngày tôi là người sẽ chinh phục cả thế giới!"
+      },
+      {
+        "Title": "Muốn tìm hiểu Tartaglia - Điều thứ 2",
+        "Context": "Dù đối thủ là thần hay quái vật vực sâu, chỉ cần tồn tại thì đều có khả năng chiến thắng. Nhưng trong số các quan chấp hành, một số kẻ lại chỉ quan tâm đến những thủ đoạn, âm mưu... \"Thủ đoạn vô hình\". Tôi không thể hoà hợp với mấy kẻ nhàm chán đó."
+      },
+      {
+        "Title": "Muốn tìm hiểu Tartaglia - Điều thứ 3",
+        "Context": "Bầu trời nơi đây nối liền với vùng trời quê hương tôi. Khi nhìn lên và thấy ánh trăng trắng như tuyết, tôi lại nghĩ đến những người ở quê nhà cũng nhìn thấy điều y như vậy. Không biết đám em của mình... đã trở thành chiến sĩ xuất sắc chưa nhỉ?"
+      },
+      {
+        "Title": "Muốn tìm hiểu Tartaglia - Điều thứ 4",
+        "Context": "#Đồng đội, {F#cô}{M#cậu} đừng quên: Khi đánh nhau tuyệt đối không được dùng những lời nói ngu xuẩn như \"Cháy hết mình nào\" để cổ vũ bản thân. Suy cho cùng sau khi cháy hết mình sẽ chẳng còn lại gì ngoài tro tàn. Dù thế nào cũng phải sống sót đó."
+      },
+      {
+        "Title": "Muốn tìm hiểu Tartaglia - Điều thứ 5",
+        "Context": "#Thời gian trôi qua thật nhanh. Một ngày nào đó, tôi muốn {F#cô}{M#cậu} tận mắt chứng kiến cảnh tôi chinh phục thế giới, và cách tôi giẫm đạp lên ngai vàng của thần linh. Haha, trước khi đến thời khắc đó, {F#cô}{M#cậu} không được gục ngã nhé!"
+      },
+      {
+        "Title": "Sở thích của Tartaglia",
+        "Context": "Câu cá trên băng giống như quyết đấu vậy, điều cốt yếu là sự kiên nhẫn và quyết tâm. Vì vậy, có vẻ như cùng một nguyên tắc có thể được áp dụng cho tất cả mọi thứ trong cuộc sống?"
+      },
+      {
+        "Title": "Nỗi buồn của Tartaglia",
+        "Context": "#Hửm? Những điều phiền muộn... Hừm, đi cùng {F#cô}{M#cậu}, luôn được gặp những kẻ thù mạnh đáng để thử thách, không có thời gian để nghĩ về những điều tầm thường và nhàm chán như vậy."
+      },
+      {
+        "Title": "Món ăn yêu thích...",
+        "Context": "Thế giới này đầy ắp những món ăn ngon và những trận chiến tuyệt vời. Được sống thật là thích!"
+      },
+      {
+        "Title": "Món ăn ghét...",
+        "Context": "#Thức ăn giống như vũ khí vậy. Một người lính thực sự sẽ không kén chọn vũ khí hay thức ăn. {F#Cô}{M#Cậu} cũng đừng kén ăn đó."
+      },
+      {
+        "Title": "Nhận Được Quà I",
+        "Context": "#Chỉ cần ăn ngon thì tâm trạng sẽ tự nhiên thấy thoải mái. Tôi phải làm sao để báo đáp {F#cô}{M#cậu} nhỉ?"
+      },
+      {
+        "Title": "Nhận Được Quà II",
+        "Context": "#Kỹ năng nấu nướng của {F#cô}{M#cậu} dường như đã tiến bộ rất nhiều. Lẽ nào {F#cô}{M#cậu} cũng đang dần trở nên mạnh mẽ hơn sao?"
+      },
+      {
+        "Title": "Nhận Được Quà III",
+        "Context": "Quả là một hương vị bất ngờ, à ừm... tôi sẽ thử lại xem."
+      },
+      {
+        "Title": "Sinh nhật...",
+        "Context": "#Hây, đồng đội, sinh nhật vui vẻ! {F#Cô}{M#Cậu} có muốn tẩn ai đó một trận không? Nếu có thì cứ nói nhé!"
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Khởi",
+        "Context": "Ồ! Có vẻ như mạnh lên một chút rồi. Tìm ai để thử đây..."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Thừa",
+        "Context": "\"Sức mạnh của võ sĩ giống như một vòng tròn. Vòng tròn càng lớn, càng có thể khiêu chiến với nhiều người\". Mà, ai đã nói câu này nhỉ..."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Chuyển",
+        "Context": "#Thực sự không tệ! Nhờ có {F#cô}{M#cậu} mà tôi đã tiến gần hơn một bước tới mục tiêu \"chinh phục thế giới\". Ngay cả Nữ Hoàng cũng không ngờ tôi có thể trở nên mạnh mẽ như vậy."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Hợp",
+        "Context": "#{F#Cô}{M#Cậu} cũng phải chăm chỉ lên mới được! Nếu không, ai sẽ là người quyết chiến với tôi, khi tôi trở thành người mạnh nhất thế giới cơ chứ? Hahaha."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố I",
+        "Context": "Tiến lên thôi!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố II",
+        "Context": "Ha!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố III",
+        "Context": "Thế như sóng lớn!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố IV",
+        "Context": "Lên đi!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố V",
+        "Context": "Đến lượt ai?!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố VI",
+        "Context": "Whoosh..."
+      },
+      {
+        "Title": "Kỹ Năng Nộ I",
+        "Context": "Chặn nước!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ II",
+        "Context": "Chạy thoát nổi không?!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ III",
+        "Context": "Có sơ hở, cơ hội hiếm có!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ IV",
+        "Context": "Ráng chịu một chút, rất đau đấy."
+      },
+      {
+        "Title": "Xung Kích Bắt Đầu I",
+        "Context": "Nhanh chóng và kiên quyết."
+      },
+      {
+        "Title": "Mở Phong Chi Dực I",
+        "Context": "Ừm, cảm giác không tệ."
+      },
+      {
+        "Title": "Mở Rương I",
+        "Context": "Được lắm! Đi tìm thêm thật nhiều rương thôi!"
+      },
+      {
+        "Title": "Mở Rương II",
+        "Context": "Cũng được!"
+      },
+      {
+        "Title": "Mở Rương III",
+        "Context": "Phải làm nóng người rồi đây!"
+      },
+      {
+        "Title": "HP Thấp I",
+        "Context": "Ha! Khá là thú vị."
+      },
+      {
+        "Title": "HP Thấp II",
+        "Context": "Không tệ!"
+      },
+      {
+        "Title": "HP Thấp III",
+        "Context": "Ranh giới sống chết thôi mà, tôi rất giỏi xử lý."
+      },
+      {
+        "Title": "HP Đồng Hành Thấp I",
+        "Context": "Dạo này mọi người lười tập luyện phải không?"
+      },
+      {
+        "Title": "HP Đồng Hành Thấp II",
+        "Context": "Tránh ra! Để tôi!"
+      },
+      {
+        "Title": "Ngã Xuống I",
+        "Context": "Sao có thể như vậy... được rồi lại mất..."
+      },
+      {
+        "Title": "Ngã Xuống II",
+        "Context": "Sơ ý rồi..."
+      },
+      {
+        "Title": "Ngã Xuống III",
+        "Context": "Cũng... ra gì đấy..."
+      },
+      {
+        "Title": "Bị Trọng Kích I",
+        "Context": "Hứ! Sơ ý rồi."
+      },
+      {
+        "Title": "Vào Đội I",
+        "Context": "Kẻ địch mạnh ở đâu?"
+      },
+      {
+        "Title": "Vào Đội II",
+        "Context": "Mở to mắt nhìn đi!"
+      },
+      {
+        "Title": "Vào Đội III",
+        "Context": "Đừng làm tôi phải đợi!"
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Miêu Tả Nhân Vật",
+        "Context": "Cho dù đã vào hàng ngũ những \"Quan Chấp Hành\" cao nhất của Fatui, thế nhưng \"Childe\" Tartaglia lại có vẻ bề ngoài của một thanh niên trẻ tuổi.\nCũng như đao bạch ngân sắc nhọn được đặt trong túi nhung vậy, vẻ ngoài nhanh nhẹn tự tin ấy của anh lại ẩn chứa một thân thủ vô song.\nAnh là quan chấp hành trẻ nhất và nguy hiểm nhất của Fatui.\nThế nhưng \"Childe\" dường như không hòa hợp với các đồng nghiệp khác.\nLà một chiến sĩ thuần túy nhất, anh luôn có vẻ lạc lõng giữa nơi đầy rẫy những mưu toan."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 1",
+        "Context": "Được coi là quan chấp hành trẻ nhất của Fatui từ trước đến nay, Tartaglia hoàn toàn có thể tự do hành động mà không chịu sự quản thúc của ai.\nCho dù cách hành động độc lập này làm cho anh không mấy được hoan nghênh trong Fatui, và cũng không hợp với phong cách của những quan chấp hành khác, nhưng bên dưới khí thế ấy luôn là sự kiên trì đối với trách nhiệm và sự cẩn thận tuyệt đối.\nVới khí chất cao ngạo, anh nói là làm. Cho dù thường hay lập ra những lời hứa vô cùng hoang đường, nhưng cũng không bao giờ nuốt lời.\nBất luận đơn thân độc mã tiêu diệt tất cả rồng bên trong sào huyệt, hay một mình đi vào bí cảnh nguy hiểm rồi an toàn thoát ra, hay thậm chí một mình làm đảo lộn vùng đất của quý tộc nào đó...\nKhông chỉ giữ lời mà làm việc cũng vô cùng nhanh gọn.\nLà tiên phong của quan chấp hành Fatui, \"Childe\" Tartaglia luôn xuất hiện ở nơi yếu thế của kẻ địch chống đối Snezhnaya, và ra tay ngay trước thời khắc mâu thuẫn bùng nổ."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 2",
+        "Context": "Trong nhiều truyền thuyết ở Snezhnaya, Tartaglia năm 14 tuổi đã bắt đầu tham gia chiến trường.\nĐiều kì lạ là dường như bẩm sinh anh đã là một bậc thầy võ thuật, tinh thông các kỹ thuật giết chóc.\nĐiều đáng sợ hơn nữa đó là sự nhiệt huyết với chiến đấu của vị \"Childe\" này.\nCuộc chiến càng gian khó chỉ càng làm anh hứng khởi, kẻ địch càng mạnh càng khiến anh vui vẻ.\nVẻ ngoài cao ngạo tự phụ của \"Childe\" đến từ sự rèn giũa từ hàng trăm trận đấu, và sự trải nghiệm đối với bản thân chiến đấu mà không ai sánh bằng.\nNhưng một mặt khác, lo lắng rằng sự ngạo mạn của anh sẽ đem đến những rắc rối không cần thiết,\nCác quan chấp hành khác của Fatui luôn cử anh đi làm những nhiệm vụ cách xa Snezhnaya, để tránh rước họa vào thân.\nThế nhưng điều khó hiểu đó là chàng trai này vẫn luôn nằm giữa vòng xoáy hỗn loạn,\nVới kinh nghiệm dày dặn đã khiến anh cao ngạo và chìm đắm trong tiếng hô hào của người khác.\nSo với các quan chấp hành khiêm tốn khác của Fatui, Tartaglia thường hay đi xem những hoạt động biểu diễn công khai, thậm chí thỉnh thoảng còn tham gia vào trong đó."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 3",
+        "Context": "Câu cá trên băng là hoạt động yêu thích của Tartaglia từ bé đến lớn.\nKhi ấy anh vẫn chưa phải là Tartaglia, hay \"Childe\" mà Fatui thường gọi, anh có tên Ajax - người anh hùng mạo hiểm trong câu chuyện mà cha anh ưa thích nhất.\nAnh cùng cha khoét một lỗ nhỏ trên mặt hồ đóng băng, rồi ngồi câu ở đó.\nĐấy chẳng phải là việc dễ dàng gì, nhiều lúc còn chiếm cả một buổi sáng.\nNhưng cho dù là đục lỗ trên băng dày, hay là kiên nhẫn chờ đợi cá mắc câu, thì song song với đó luôn là những câu chuyện bất tận của cha.\nĐó là những câu chuyện mạo hiểm khi cha anh còn trẻ, và cũng là tương lai mà Tartaglia hằng ao ước.\nChính vì vậy mỗi lần anh đều lắng nghe chăm chú, luôn coi nhân vật trong chuyện chính là bản thân mình, luôn đắm chìm trong đó mỗi khi ngồi câu.\nSau khi rời bỏ quê nhà, Ajax, hay là \"Childe\" Tartaglia của sau này, vẫn luôn giữ sở thích câu cá trên băng.\nKhi không còn những câu chuyện dõi bước, câu cá trở thành thứ rèn luyện ý chí của chiến sỹ, là bài học tu luyện nghiền ngẫm các phương thức chiến đấu.\nCứ như vậy, sau khi kết thúc cả quá trình trầm tư suy nghĩ tu luyện võ nghệ, việc câu được cá hay không chẳng còn quan trọng nữa."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 4",
+        "Context": "Khác với người đời thường nghĩ, khả năng chiến đấu của Tartaglia không phải tự nhiên mà có.\nThế nhưng lần thử thách quan trọng ấy, Tartaglia sẽ không bao giờ kể cho ai nghe...\n Năm 14 tuổi, để thoát khỏi gia đình cổ hủ bất biến, người thiếu niên đã cầm theo thanh kiếm nhỏ và một chiếc túi ra đi.\nNăm 14 tuổi, người thiếu niên ngông cuồng lạc lõng giữa rừng tuyết.\nBị gấu và sói truy đuổi, anh trượt chân té xuống khe nứt đen tối và sâu thẳm.\nTại đây, anh đã phát hiện ra sự vô hạn của một thế giới cổ xưa khác; Ở đó, anh gặp được một vị kiếm khách thần bí.\nHay nói cách khác, vương quốc đen tối đã để ý đến chàng thiếu niên với tham vọng cực lớn...\nĐó là nơi mà cho dù sau này có trở thành quan chấp hành \"Childe\" của Fatui, anh cũng không thể quay lại tìm hiểu ngọn nguồn.\nTrong khoảng thời gian ba tháng, kiếm khách đã truyền cho anh toàn bộ thuật pháp hành tẩu vực sâu mà mình tâm đắc nhất.\nĐiều đáng chú ý đó là, trong ba tháng ấy, từ bản tính hiếu chiến của anh, đã hình thành nên khả năng chiến đấu vô tận.\nKhông ai biết được trong quãng thời gian đó đã xảy ra điều gì, Ajax sau này cũng không nói ra một lời.\nThế nhưng cuối cùng, khi mẹ và chị em lòng như lửa đốt đã tìm thấy anh trong rừng sâu, thì \"thời gian của thế giới\" mới chỉ qua ba ngày mà thôi.\nTrong tay cầm thanh kiếm đã hoen gỉ, người thiếu niên cứ như vậy mà hoàn thành chuyến mạo hiểm đầu tiên.\nĐó cũng là sự kết thúc của cuộc sống thiếu niên, và bắt đầu bước vào con đường của võ sĩ."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 5",
+        "Context": "Sau khi quay về, thiếu niên đã thay đổi hoàn toàn.\nAnh không còn nhát gan, do dự, mà trở nên ngông cuồng, tự tin.\nDường như thế giới này vốn nên xoay quanh anh, dường như các trận chiến xuất hiện là vì anh.\nTranh đấu luôn mang đến sự thay đổi, biến hoá khôn lường tựa như kính vạn hoa hấp dẫn Ajax.\nTrong mắt cha, đứa con thứ ba vốn không chịu an phận nay lại trở nên bướng bỉnh lạ thường, đem đến quá nhiều những tranh chấp vô nghĩa cho ngôi làng ven biển bình yên.\nĐúng hơn là, từ đó anh trở thành trung tâm của mọi cuộc chiến, dù anh đi về nơi nào, tranh chấp và đấu đá vẫn cứ theo gót anh như hình với bóng, còn anh thì cũng vui vẻ chấp nhận.\nCuối cùng, sau một cuộc chiến suýt thì nguy hiểm đến mạng người được miễn cưỡng hoà giải, người cha bất lực bèn giao đứa con cho binh đoàn Fatui.\nNgười cha hy vọng kỷ luật nghiêm minh của Fatui sẽ mài giũa tính cách cho đứa con mình, nhưng lại chứng kiến cảnh đội quân vũ trang bị một tên nhóc đánh cho tháo chạy nháo nhào.\nDù việc này khiến người cha thất vọng tràn trề, nhưng bất ngờ là lại thu hút được ánh mắt của Pulcinella - Quan chấp hành thứ 5 của Fatui.\nKinh ngạc trước chiến lực của Ajax, lại hiếu kỳ bởi tính cách sẵn sàng đặt mình vào trung tâm của vòng xoáy tranh đấu...\nPulcinella lấy lý do trừng phạt, nên kết nạp Ajax vào Fatui, lệnh cho anh bắt đầu từ vị trí thấp, đảm nhận trách nhiệm chiến đấu vì Nữ Hoàng Băng Giá.\nCứ vậy, kinh nghiệm chiến đấu đã nuôi dưỡng khát vọng chinh phục không biết thoả mãn của thiếu niên, bản ngã ngày một bành trướng của anh lại được dần lấp đầy bởi niềm vui khi đánh thắng kẻ địch mạnh...\n Cuối cùng, Ajax được đề bạt làm Quan Chấp Hành của Fatui, nhận danh hiệu \"Childe\" Tartaglia, trở thành một trong những nhân vật quyền lực ở Snezhnaya.\nNhưng trở thành Tartaglia không phải mục tiêu cuối cùng của anh, đối với dã tâm vô tận muốn chinh phục thế giới, đây chỉ là một cột mốc nho nhỏ."
+      },
+      {
+        "Title": "Thư nhà của Tartaglia",
+        "Context": "\"Em gái thân mến, dạo này trong nhà có khoẻ không? Bệnh đau đầu của ông già đã khá hơn chưa?\nHãy thay anh hỏi thăm cha mẹ và anh chị.\nAnh đã gửi một ít thuốc trị đau đầu từ Liyue về, rất tốt, có thể giúp ông ấy bớt cằn nhằn vài ngày. Chắc mấy hôm nữa sẽ đến.\nNgoài đồ của ông già ra, đương nhiên anh cũng không quên gửi quà cho mọi người.\nKèm theo thư là hai con diều Liyue, một chiếc trống bỏi, hai con búp bê sứ của Inazuma, một thùng đồ ăn vặt.\nCòn nữa, hãy chuyển lời cho Anthon, cư dân Liyue đều là loài người như chúng ta, không phải người đá.\nHọ cũng không ăn đá, nhạt nhẽo thật.\nTonia, đừng lo nhé, ở nhà đừng nghịch ngợm.\nAnh sắp về rồi, như anh nói, chờ anh hái đủ bảy ngôi sao của Liyue dâng lên Nữ Hoàng Bệ Hạ, anh sẽ lên ngay chuyến tàu đầu tiên để trở về. Xưa nay anh nói được làm được.\nKỵ sĩ trung thành của em.\""
+      },
+      {
+        "Title": "Delusion",
+        "Context": "\"Delusion\" của Tartaglia là huy chương danh dự ngày xưa, cũng là minh chứng cho sức mạnh ngày nay.\nAnh vẫn nhớ rõ ngày mình nhận Delusion và trở thành Quan Chấp Hành Fatui.\nTrước mặt Nữ Hoàng Băng Giá lạnh lùng trang nghiêm, chính tay \"Jester\" - Quan chấp hành lâu đời nhất của Fatui chính tay đeo cho anh huy chương này.\nĐó là phần thưởng thảo phạt ma thú đáng sợ, cũng là kỷ niệm cho vô số lần chiến đấu.\nNhưng Tartaglia không vì thế mà vui mừng, vì đây là vinh hạnh đáng có của chiến sĩ;\nAnh cũng chẳng buồn để ý tới biểu cảm kỳ lạ của \"đồng nghiệp\" mới, những lời buộc tội và vu khống của người khác đối với anh là vô nghĩa.\nThiếu niên vừa trở thành Tartaglia chỉ kính nể duy nhất Nữ Hoàng trên cao.\nKhông những vì cô là người mở đường cho chiến trường rộng lớn, tặng cho anh thêm nhiều lý do để chiến đấu, mà còn vì biểu cảm thờ ơ của cô khi nhìn anh.\nLạnh lùng mà thuần tuý, kiêu ngạo mà sắc bén.\nCô không chỉ là Băng Thần cao cao tại thượng, mà cũng là một chiến sĩ chân chính.\nCứ vậy, Tartaglia nhận được Delusion, đã cam kết trung thành với Nữ Hoàng duy nhất của Snezhnaya."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 203300,
+      "Name": "Dao Vinh Quang",
+      "Description": "Phong cách của Tartaglia. Trang phục thể hiện thân phận vinh hiển của Quan Chấp Hành thứ 11 của Fatui - Childe.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104124,
+    113012,
+    100033,
+    112034,
+    104303,
+    113014
+  ],
+  "NameCard": {
+    "Name": "Childe - Quỷ Trang",
+    "Description": "Hoa văn danh thiếp.\nKý hiệu của anh mượn kỹ năng võ luyện thiên biến vạn hóa, tự do hành tẩu muôn nơi. Cái tên \"Ma Vương\" không phải do anh nghĩ ra, mà được truyền lại từ người thiếu nữ cô độc sống nơi tối tăm nhất của vũ trụ...",
+    "Icon": "UI_NameCardIcon_Tartaglia",
+    "PicturePrefix": "UI_NameCardPic_Tartaglia"
+  },
+  "TraceEffect": {
+    "Id": 215022,
+    "Name": "Vết Tích - Childe",
+    "Description": "Vết Tích Tưởng Tượng của Tartaglia. \"Có sơ hở, cơ hội hiếm có!\"",
+    "Icon": "UI_TraceEffectIcon_Tartaglia"
+  }
+}

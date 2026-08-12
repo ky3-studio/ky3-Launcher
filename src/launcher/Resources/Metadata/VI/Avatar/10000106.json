@@ -1,0 +1,1373 @@
+{
+  "Id": 10000106,
+  "PromoteId": 106,
+  "Sort": 92,
+  "Body": 3,
+  "Icon": "UI_AvatarIcon_Mavuika",
+  "SideIcon": "UI_AvatarIcon_Side_Mavuika",
+  "Name": "Mavuika",
+  "Description": "Lãnh đạo của Natlan, kế thừa Tên Cổ Kiongozi, thề sẽ dùng Lửa Thánh soi sáng tương lai của vương quốc chiến tranh.",
+  "BeginTime": "2024-12-31T00:00:00+08:00",
+  "Quality": 5,
+  "Weapon": 11,
+  "BaseValue": {
+    "HpBase": 977.153,
+    "AttackBase": 27.93,
+    "DefenseBase": 61.6249
+  },
+  "GrowCurves": [
+    {
+      "Type": 1,
+      "Value": 21
+    },
+    {
+      "Type": 4,
+      "Value": 31
+    },
+    {
+      "Type": 7,
+      "Value": 21
+    }
+  ],
+  "SkillDepot": {
+    "Arkhe": 0,
+    "Skills": [
+      {
+        "GroupId": 10631,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Lần 1|{param1:F1P}",
+            "Sát Thương Lần 2|{param2:F1P} x2",
+            "Sát Thương Lần 3|{param3:F1P} x3",
+            "Sát Thương Lần 4|{param4:F1P}",
+            "Sát Thương Trọng Kích|{param5:P}",
+            "Thể Lực Trọng Kích Tiêu Hao|{param6:F1} điểm",
+            "Sát Thương Khi Đáp|{param7:F1P}",
+            "Sát Thương Khi Đáp Từ Độ Cao Thấp/Cao|{param8:P}/{param9:P}"
+          ],
+          "Parameters": [
+            {
+              "Id": 1063101,
+              "Level": 1,
+              "Parameters": [
+                0.80035,
+                0.364799,
+                0.332232,
+                1.161929,
+                1.93844,
+                50,
+                0.745878,
+                1.49144,
+                1.862889
+              ]
+            },
+            {
+              "Id": 1063102,
+              "Level": 2,
+              "Parameters": [
+                0.865495,
+                0.394492,
+                0.359274,
+                1.256504,
+                2.09622,
+                50,
+                0.806589,
+                1.612836,
+                2.01452
+              ]
+            },
+            {
+              "Id": 1063103,
+              "Level": 3,
+              "Parameters": [
+                0.93064,
+                0.424185,
+                0.386317,
+                1.35108,
+                2.254,
+                50,
+                0.8673,
+                1.734233,
+                2.16615
+              ]
+            },
+            {
+              "Id": 1063104,
+              "Level": 4,
+              "Parameters": [
+                1.023704,
+                0.466604,
+                0.424948,
+                1.486188,
+                2.4794,
+                50,
+                0.95403,
+                1.907656,
+                2.382765
+              ]
+            },
+            {
+              "Id": 1063105,
+              "Level": 5,
+              "Parameters": [
+                1.088849,
+                0.496296,
+                0.45199,
+                1.580764,
+                2.63718,
+                50,
+                1.014741,
+                2.029052,
+                2.534396
+              ]
+            },
+            {
+              "Id": 1063106,
+              "Level": 6,
+              "Parameters": [
+                1.1633,
+                0.530231,
+                0.482896,
+                1.68885,
+                2.8175,
+                50,
+                1.084125,
+                2.167791,
+                2.707688
+              ]
+            },
+            {
+              "Id": 1063107,
+              "Level": 7,
+              "Parameters": [
+                1.26567,
+                0.576892,
+                0.525391,
+                1.837469,
+                3.06544,
+                50,
+                1.179528,
+                2.358556,
+                2.945964
+              ]
+            },
+            {
+              "Id": 1063108,
+              "Level": 8,
+              "Parameters": [
+                1.368041,
+                0.623552,
+                0.567885,
+                1.986088,
+                3.31338,
+                50,
+                1.274931,
+                2.549322,
+                3.184241
+              ]
+            },
+            {
+              "Id": 1063109,
+              "Level": 9,
+              "Parameters": [
+                1.470411,
+                0.670212,
+                0.61038,
+                2.134706,
+                3.56132,
+                50,
+                1.370334,
+                2.740087,
+                3.422517
+              ]
+            },
+            {
+              "Id": 1063110,
+              "Level": 10,
+              "Parameters": [
+                1.582088,
+                0.721114,
+                0.656738,
+                2.296836,
+                3.8318,
+                50,
+                1.47441,
+                2.948195,
+                3.682455
+              ]
+            },
+            {
+              "Id": 1063111,
+              "Level": 11,
+              "Parameters": [
+                1.693765,
+                0.772017,
+                0.703096,
+                2.458966,
+                4.10228,
+                50,
+                1.578486,
+                3.156303,
+                3.942393
+              ]
+            },
+            {
+              "Id": 1063112,
+              "Level": 12,
+              "Parameters": [
+                1.805442,
+                0.822919,
+                0.749454,
+                2.621095,
+                4.37276,
+                50,
+                1.682562,
+                3.364411,
+                4.202331
+              ]
+            },
+            {
+              "Id": 1063113,
+              "Level": 13,
+              "Parameters": [
+                1.917118,
+                0.873821,
+                0.795812,
+                2.783225,
+                4.64324,
+                50,
+                1.786638,
+                3.572519,
+                4.462269
+              ]
+            },
+            {
+              "Id": 1063114,
+              "Level": 14,
+              "Parameters": [
+                2.028795,
+                0.924723,
+                0.84217,
+                2.945354,
+                4.91372,
+                50,
+                1.890714,
+                3.780627,
+                4.722207
+              ]
+            },
+            {
+              "Id": 1063115,
+              "Level": 15,
+              "Parameters": [
+                2.140472,
+                0.975625,
+                0.888528,
+                3.107484,
+                5.1842,
+                50,
+                1.99479,
+                3.988735,
+                4.982145
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11061,
+        "Name": "Lửa Đỏ Dệt Sinh Mệnh",
+        "Description": "<color=#FFD780FF>Tấn Công Thường</color>\nThực hiện tối đa 4 lần chém liên tiếp.\n\n<color=#FFD780FF>Trọng Kích</color>\nTiêu hao thể lực nhất định để thi triển một đòn chém rực lửa về phía trước.\n\n<color=#FFD780FF>Tấn Công Khi Đáp</color>\nĐáp xuống đất từ trên không, tấn công kẻ địch trên đường và gây sát thương phạm vi khi chạm đất.",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_A_04"
+      },
+      {
+        "GroupId": 10632,
+        "Proud": {
+          "Descriptions": [
+            "Sát Thương Kỹ Năng|{param1:F1P}",
+            "Sát Thương Vòng Hào Quang|{param2:F1P}",
+            "Giãn Cách Vòng Hào Quang Tấn Công|{param3:F1}s",
+            "Sát Thương Mô Tô Vượt Lửa Tấn Công Thường Lần 1|{param4:F1P}",
+            "Sát Thương Mô Tô Vượt Lửa Tấn Công Thường Lần 2|{param5:F1P}",
+            "Sát Thương Mô Tô Vượt Lửa Tấn Công Thường Lần 3|{param6:F1P}",
+            "Sát Thương Mô Tô Vượt Lửa Tấn Công Thường Lần 4|{param7:F1P}",
+            "Sát Thương Mô Tô Vượt Lửa Tấn Công Thường Lần 5|{param8:F1P}",
+            "Sát Thương Mô Tô Vượt Lửa Xung Kích|{param9:F1P}",
+            "Sát Thương Mô Tô Vượt Lửa Trọng Kích Liên Tục|{param10:F1P}",
+            "Sát Thương Mô Tô Vượt Lửa Trọng Kích Kết Thúc|{param11:F1P}",
+            "Sát Thương Mô Tô Vượt Lửa Đáp Đất|{param12:F1P}",
+            "Giới Hạn Điểm Dạ Hồn|{param13:I}",
+            "CD|{param14:F1}s"
+          ],
+          "Parameters": [
+            {
+              "Id": 1063201,
+              "Level": 1,
+              "Parameters": [
+                0.744,
+                1.28,
+                2,
+                0.572648,
+                0.591327,
+                0.699868,
+                0.697047,
+                0.910035,
+                0.8084,
+                0.989,
+                1.376,
+                1.5996,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063202,
+              "Level": 2,
+              "Parameters": [
+                0.7998,
+                1.376,
+                2,
+                0.619259,
+                0.639459,
+                0.756834,
+                0.753784,
+                0.984107,
+                0.8742,
+                1.0695,
+                1.488,
+                1.7298,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063203,
+              "Level": 3,
+              "Parameters": [
+                0.8556,
+                1.472,
+                2,
+                0.66587,
+                0.68759,
+                0.8138,
+                0.81052,
+                1.05818,
+                0.94,
+                1.15,
+                1.6,
+                1.86,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063204,
+              "Level": 4,
+              "Parameters": [
+                0.93,
+                1.6,
+                2,
+                0.732457,
+                0.756349,
+                0.89518,
+                0.891572,
+                1.163998,
+                1.034,
+                1.265,
+                1.76,
+                2.046,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063205,
+              "Level": 5,
+              "Parameters": [
+                0.9858,
+                1.696,
+                2,
+                0.779068,
+                0.80448,
+                0.952146,
+                0.948308,
+                1.238071,
+                1.0998,
+                1.3455,
+                1.872,
+                2.1762,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063206,
+              "Level": 6,
+              "Parameters": [
+                1.0416,
+                1.792,
+                2,
+                0.832337,
+                0.859488,
+                1.01725,
+                1.01315,
+                1.322725,
+                1.175,
+                1.4375,
+                2,
+                2.325,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063207,
+              "Level": 7,
+              "Parameters": [
+                1.116,
+                1.92,
+                2,
+                0.905583,
+                0.935122,
+                1.106768,
+                1.102307,
+                1.439125,
+                1.2784,
+                1.564,
+                2.176,
+                2.5296,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063208,
+              "Level": 8,
+              "Parameters": [
+                1.1904,
+                2.048,
+                2,
+                0.978829,
+                1.010757,
+                1.196286,
+                1.191464,
+                1.555525,
+                1.3818,
+                1.6905,
+                2.352,
+                2.7342,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063209,
+              "Level": 9,
+              "Parameters": [
+                1.2648,
+                2.176,
+                2,
+                1.052075,
+                1.086392,
+                1.285804,
+                1.280622,
+                1.671924,
+                1.4852,
+                1.817,
+                2.528,
+                2.9388,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063210,
+              "Level": 10,
+              "Parameters": [
+                1.3392,
+                2.304,
+                2,
+                1.131979,
+                1.168903,
+                1.38346,
+                1.377884,
+                1.798906,
+                1.598,
+                1.955,
+                2.72,
+                3.162,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063211,
+              "Level": 11,
+              "Parameters": [
+                1.4136,
+                2.432,
+                2,
+                1.211883,
+                1.251414,
+                1.481116,
+                1.475146,
+                1.925888,
+                1.7108,
+                2.093,
+                2.912,
+                3.3852,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063212,
+              "Level": 12,
+              "Parameters": [
+                1.488,
+                2.56,
+                2,
+                1.291788,
+                1.333925,
+                1.578772,
+                1.572409,
+                2.052869,
+                1.8236,
+                2.231,
+                3.104,
+                3.6084,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063213,
+              "Level": 13,
+              "Parameters": [
+                1.581,
+                2.72,
+                2,
+                1.371692,
+                1.416435,
+                1.676428,
+                1.669671,
+                2.179851,
+                1.9364,
+                2.369,
+                3.296,
+                3.8316,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063214,
+              "Level": 14,
+              "Parameters": [
+                1.674,
+                2.88,
+                2,
+                1.451597,
+                1.498946,
+                1.774084,
+                1.766934,
+                2.306832,
+                2.0492,
+                2.507,
+                3.488,
+                4.0548,
+                80,
+                15
+              ]
+            },
+            {
+              "Id": 1063215,
+              "Level": 15,
+              "Parameters": [
+                1.767,
+                3.04,
+                2,
+                1.531501,
+                1.581457,
+                1.87174,
+                1.864196,
+                2.433814,
+                2.162,
+                2.645,
+                3.68,
+                4.278,
+                80,
+                15
+              ]
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 11062,
+        "Name": "Thời Khắc Lưu Danh",
+        "Description": "Dựa vào quyền năng \"chiến đấu\" để triệu hồi Vũ Trang Lửa Đỏ được kế thừa bởi vị thần con người, gây <color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color> mang thuộc tính Dạ Hồn.\nSau khi thi triển, Mavuika sẽ hồi phục điểm Dạ Hồn đến mức tối đa và vào trạng thái Dạ Hồn Chúc Phúc.\n\n<color=#FFD780FF>Vũ Trang Lửa Đỏ</color>\nDựa vào cách thức Nhấn hoặc Nhấn Giữ để thi triển Vũ Trang Lửa Đỏ với hình thái khác nhau.\n\n<color=#FFD780FF>Nhấn</color>\n\"Giải Phóng Tên Thần\": Vũ Trang Lửa Đỏ sẽ được triệu hồi dưới hình dạng Vòng Hào Quang. Vòng Hào Quang sẽ đi theo nhân vật trong trận và tấn công kẻ địch xung quanh theo chu kỳ, gây <color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color> mang thuộc tính Dạ Hồn.\n\n<color=#FFD780FF>Nhấn Giữ</color>\n\"Giải Phóng Tên Cổ\": Vũ Trang Lửa Đỏ sẽ được triệu hồi dưới hình dạng Mô Tô Vượt Lửa. Trong trạng thái này, Mavuika sẽ lái Mô Tô Vượt Lửa để di chuyển tốc độ cao, hoặc kích hoạt mô-đun đẩy dự phòng của nó để vượt qua nhiều loại địa hình khác nhau và bay trong thời gian ngắn. Đồng thời, Tấn Công Thường, Trọng Kích và Tấn Công Khi Đáp của Mavuika sẽ chuyển thành <color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color> không thể bị thay thế và mang thuộc tính Dạ Hồn. Khi tiến hành xung kích, cũng sẽ gây <color=#FF9999FF>Sát Thương Nguyên Tố Hỏa</color> mang thuộc tính Dạ Hồn cho kẻ địch trên đường.\n\nKhi ở trong trạng thái Dạ Hồn Chúc Phúc, nhấn Kỹ Năng Nguyên Tố sẽ có thể đổi hình thái Vũ Trang Lửa Đỏ. Vũ Trang Lửa Đỏ sẽ biến mất khi Dạ Hồn Chúc Phúc của Mavuika kết thúc.\n\n<color=#FFD780FF>Dạ Hồn Chúc Phúc - Mavuika</color>\nDựa vào hình thái Vũ Trang Lửa Đỏ để duy trì tiêu hao điểm Dạ Hồn. Khi tiêu hao hết sẽ kết thúc trạng thái Dạ Hồn Chúc Phúc của Mavuika.\n\n<i>Nếu nói với Mavuika là Mô Tô Vượt Lửa cần phải có biển số để nhận dạng ở thế giới khác, thì cô ấy cũng sẽ vui vẻ mà nói:\n\"Đây là chiếc duy nhất ở đây đấy, nên tôi có quyền chọn biển số mà đúng không?\"</i>",
+        "SpecialEnergyType": 0,
+        "Icon": "Skill_S_Mavuika_01"
+      }
+    ],
+    "EnergySkill": {
+      "GroupId": 10639,
+      "Proud": {
+        "Descriptions": [
+          "Sát Thương Kỹ Năng|{param1:F1P}",
+          "Thời Gian Duy Trì Lò Lửa Sinh Tử|{param2:F1}s",
+          "Tăng Sát Thương Trụy Nhật Trảm|{param3:F1P} Tấn Công Mỗi Điểm Chiến Ý",
+          "Tăng Sát Thương Tấn Công Thường Mô Tô Vượt Lửa|{param4:F2P} Tấn Công Mỗi Điểm Chiến Ý",
+          "Tăng Sát Thương Trọng Kích Mô Tô Vượt Lửa|{param5:F2P} Tấn Công Mỗi Điểm Chiến Ý",
+          "CD|{param8:F1}s",
+          "Giới Hạn Chiến Ý|{param9:I}"
+        ],
+        "Parameters": [
+          {
+            "Id": 1063901,
+            "Level": 1,
+            "Parameters": [
+              4.448,
+              7,
+              0.016,
+              0.00258,
+              0.00516,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063902,
+            "Level": 2,
+            "Parameters": [
+              4.7816,
+              7,
+              0.0172,
+              0.00279,
+              0.00558,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063903,
+            "Level": 3,
+            "Parameters": [
+              5.1152,
+              7,
+              0.0184,
+              0.003,
+              0.006,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063904,
+            "Level": 4,
+            "Parameters": [
+              5.56,
+              7,
+              0.02,
+              0.0033,
+              0.0066,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063905,
+            "Level": 5,
+            "Parameters": [
+              5.8936,
+              7,
+              0.0212,
+              0.00351,
+              0.00702,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063906,
+            "Level": 6,
+            "Parameters": [
+              6.2272,
+              7,
+              0.0224,
+              0.00375,
+              0.0075,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063907,
+            "Level": 7,
+            "Parameters": [
+              6.672,
+              7,
+              0.024,
+              0.00408,
+              0.00816,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063908,
+            "Level": 8,
+            "Parameters": [
+              7.1168,
+              7,
+              0.0256,
+              0.00441,
+              0.00882,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063909,
+            "Level": 9,
+            "Parameters": [
+              7.5616,
+              7,
+              0.0272,
+              0.00474,
+              0.00948,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063910,
+            "Level": 10,
+            "Parameters": [
+              8.0064,
+              7,
+              0.0288,
+              0.0051,
+              0.0102,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063911,
+            "Level": 11,
+            "Parameters": [
+              8.4512,
+              7,
+              0.0304,
+              0.00546,
+              0.01092,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063912,
+            "Level": 12,
+            "Parameters": [
+              8.896,
+              7,
+              0.032,
+              0.00582,
+              0.01164,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063913,
+            "Level": 13,
+            "Parameters": [
+              9.452,
+              7,
+              0.034,
+              0.00618,
+              0.01236,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063914,
+            "Level": 14,
+            "Parameters": [
+              10.008,
+              7,
+              0.036,
+              0.00654,
+              0.01308,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          },
+          {
+            "Id": 1063915,
+            "Level": 15,
+            "Parameters": [
+              10.564,
+              7,
+              0.038,
+              0.0069,
+              0.0138,
+              1,
+              1.5,
+              18,
+              200
+            ]
+          }
+        ],
+        "Display": 0
+      },
+      "Id": 11065,
+      "Name": "Biển Lửa Rợp Trời",
+      "Description": "Hãy để tiếng lòng của mọi người truyền đến ngai thần trên trời cao.\n<color=#FFD780FF>Kỹ Năng Nộ của Mavuika sẽ không dựa vào Năng Lượng Nguyên Tố, mà sẽ căn cứ vào \"Chiến Ý\".</color>\n\n<color=#FFD780FF>Chiến Ý</color>\nKhi Mavuika có ít nhất 50% Chiến Ý, thì Mavuika sẽ có thể tiêu hao toàn bộ Chiến Ý để thi triển Kỹ Năng Nộ.\nMavuika có thể thông qua các cách sau để nhận Chiến Ý:\n·Khi trong trạng thái chiến đấu, nhân vật trong đội gần đó tiêu hao điểm Dạ Hồn sẽ chuyển hóa thành Chiến Ý của Mavuika.\n·Nhân vật trong đội gần đó khi Tấn Công Thường trúng kẻ địch, Mavuika sẽ nhận được 1.5 điểm Chiến Ý. Hiệu quả này mỗi 0.1s tối đa kích hoạt một lần.\n\nSau khi thi triển, Mavuika sẽ nhận 10 điểm Dạ Hồn và vào trạng thái Dạ Hồn Chúc Phúc, lái Mô Tô Vượt Lửa nhảy lên không trung và tung Trụy Nhật Trảm cực mạnh xuống kẻ địch dưới đất, gây <color=#FF9999FF>Sát Thương Phạm Vi Nguyên Tố Hỏa</color> mang thuộc tính Dạ Hồn, đồng thời vào trạng thái \"Lò Lửa Sinh Tử\".\n\n<color=#FFD780FF>Lò Lửa Sinh Tử</color>\nTrong thời gian duy trì, các hành động của Mavuika sẽ không tiêu hao điểm Dạ Hồn nữa, và sẽ tăng khả năng Kháng Gián Đoạn của Mavuika. Đồng thời, dựa vào Chiến Ý khi thi triển để tăng sát thương gây ra từ Trụy Nhật Trảm và Tấn Công Thường, Trọng Kích của Giải Phóng Tên Cổ.\nTrạng thái Lò Lửa Sinh Tử sẽ bị xóa khi Mavuika rời trận.\n\n<i>\"Nhưng lần này, tôi muốn tự tay phá vỡ số mệnh.\"</i>",
+      "SpecialEnergyType": 1,
+      "Icon": "Skill_E_Mavuika_01"
+    },
+    "Inherents": [
+      {
+        "GroupId": 10621,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1062101,
+              "Level": 1,
+              "Parameters": [
+                0.3,
+                10
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1062101,
+        "Name": "Quà Tặng Hoa Lửa",
+        "Description": "Khi nhân vật trong đội gần đó kích hoạt Dạ Hồn Bùng Nổ, Tấn Công của Mavuika sẽ tăng 30% trong 10s.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Mavuika_05"
+      },
+      {
+        "GroupId": 10622,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1062201,
+              "Level": 1,
+              "Parameters": [
+                0.0001,
+                20,
+                200
+              ]
+            }
+          ],
+          "Display": 1
+        },
+        "Id": 1062201,
+        "Name": "\"Kiongozi\"",
+        "Description": "Sau khi thi triển Kỹ Năng Nộ <color=#FFD780FF>Biển Lửa Rợp Trời</color>, căn cứ vào mỗi điểm Chiến Ý khi kích hoạt để khiến sát thương gây ra của nhân vật trong trận hiện tại tăng 0.2%, thông qua cách thức này tối đa có thể khiến nhân vật ra trận trong đội hiện tại tăng 40% sát thương gây ra. Hiệu quả này duy trì 20s, đồng thời sẽ giảm dần về 0 trong thời gian duy trì.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Mavuika_06"
+      },
+      {
+        "GroupId": 10623,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1062301,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1062301,
+        "Name": "Món Quà Dạ Vực - Chế Độ Kiệt Quệ",
+        "Description": "Sau khi dùng hết điểm Dạ Hồn, Mavuika sẽ chuyển sang tiêu hao Phlogiston để duy trì Vũ Trang Lửa Đỏ - Mô Tô Vượt Lửa.\nKhi ở trong khu vực có cơ chế Phlogiston của Natlan, có thể tiến hành Dạ Hồn Chuyển Hóa - Mavuika. Nhân vật trong trận khi xung kích, leo trèo, bơi lội, ở trong trạng thái di chuyển đặc biệt của thiên phú hoặc đang ở độ cao nhất định trên không, đổi sang Mavuika ra trận sẽ kích hoạt: Mavuika sẽ vào trạng thái Dạ Hồn Chúc Phúc, đồng thời nhận được 50% mức điểm Dạ Hồn tối đa của Mavuika. Đội bản thân mỗi 10s có thể kích hoạt một lần Dạ Hồn Chuyển Hóa.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Mavuika_07"
+      },
+      {
+        "GroupId": 10625,
+        "Proud": {
+          "Descriptions": [],
+          "Parameters": [
+            {
+              "Id": 1062501,
+              "Level": 1,
+              "Parameters": []
+            }
+          ],
+          "Display": 0
+        },
+        "Id": 1062501,
+        "Name": "Ánh Lửa Xuyên Màn Đêm",
+        "Description": "Giảm 20% thời gian chờ kích hoạt Dạ Hồn Chuyển Hóa của đội.",
+        "SpecialEnergyType": 0,
+        "Icon": "UI_Talent_S_Citlali_07"
+      }
+    ],
+    "Talents": [
+      {
+        "Id": 1061,
+        "Name": "Giảng Giải Của Dạ Thần",
+        "Description": "Giới hạn điểm Dạ Hồn của Mavuika tăng lên 120 điểm, hiệu suất nhận Chiến Ý tăng 25%.\nNgoài ra, sau khi nhận Chiến Ý, Tấn Công của Mavuika tăng 40% trong 8s.",
+        "Icon": "UI_Talent_S_Mavuika_01"
+      },
+      {
+        "Id": 1062,
+        "Name": "Cái Giá Của Tro Tàn",
+        "Description": "Khi trong trạng thái Dạ Hồn Chúc Phúc, Tấn Công Cơ Bản của Mavuika tăng 200 điểm, đồng thời căn cứ vào hình thái Vũ Trang Lửa Đỏ để nhận hiệu quả tương ứng:\n·Vòng Hào Quang: Phòng Ngự của kẻ địch xung quanh giảm 20%.\n·Mô Tô Vượt Lửa: Tăng sát thương Tấn Công Thường, Trọng Kích và Trụy Nhật Trảm từ Kỹ Năng Nộ <color=#FFD780FF>Biển Lửa Rợp Trời</color> của Mavuika, mức tăng tương ứng 60%/90%/120% Tấn Công của cô ấy.",
+        "Icon": "UI_Talent_S_Mavuika_02"
+      },
+      {
+        "Id": 1063,
+        "Name": "Nắng Cháy Của Mặt Trời",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Biển Lửa Rợp Trời</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Mavuika_01",
+        "ExtraLevel": {
+          "Index": 9,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1064,
+        "Name": "Giác Ngộ Của Lãnh Đạo",
+        "Description": "Hiệu quả của thiên phú \"Kiongozi\" sẽ được cường hóa:\nHiệu quả tăng sát thương sau khi thi triển Kỹ Năng Nộ <color=#FFD780FF>Biển Lửa Rợp Trời</color> sẽ không giảm theo thời gian nữa, đồng thời nhận thêm 10% Buff Sát Thương.\nCần mở khóa thiên phú \"Kiongozi\".",
+        "Icon": "UI_Talent_S_Mavuika_03"
+      },
+      {
+        "Id": 1065,
+        "Name": "Hàm Ý Của Sự Thật",
+        "Description": "Cấp kỹ năng <color=#FFD780FF>Thời Khắc Lưu Danh</color> +3.\nTăng tối đa đến cấp 15.",
+        "Icon": "UI_Talent_U_Mavuika_02",
+        "ExtraLevel": {
+          "Index": 2,
+          "Level": 3
+        }
+      },
+      {
+        "Id": 1066,
+        "Name": "Giải Phóng \"Tên Của Nhân Loại\"",
+        "Description": "Vũ Trang Lửa Đỏ của Kỹ Năng Nguyên Tố <color=#FFD780FF>Thời Khắc Lưu Danh</color> sẽ nhận được cường hóa toàn phần:\n·Vòng Hào Quang: Vòng Hào Quang khi tấn công trúng kẻ địch, Mô Tô Vượt Lửa sẽ tông vào kẻ địch trúng phải, gây <color=#FF9999FF>Sát Thương Phạm Vi Nguyên Tố Hỏa</color> mang thuộc tính Dạ Hồn tương đương 200% Tấn Công.\n·Mô Tô Vượt Lửa: Khi Mavuika lái Mô Tô Vượt Lửa, sẽ triệu hồi \"Vòng Hào Quang - Rực Cháy\" đi theo Mavuika, khiến Phòng Ngự của kẻ địch xung quanh giảm 20%, đồng thời mỗi 3s gây một lần <color=#FF9999FF>Sát Thương Phạm Vi Nguyên Tố Hỏa</color> mang thuộc tính Dạ Hồn tương đương 500% Tấn Công cho kẻ địch xung quanh. Đồng thời, khả năng vượt các loại địa hình của Mavuika cũng được cường hóa.\n\nNgoài ra, khi Mavuika lái Mô Tô Vượt Lửa không trong trạng thái chiến đấu, khi điểm Dạ Hồn của Mavuika giảm còn 5 điểm, sẽ nhận được 80 điểm Dạ Hồn. Hiệu quả này mỗi 15s tối đa kích hoạt một lần.",
+        "Icon": "UI_Talent_S_Mavuika_04"
+      }
+    ]
+  },
+  "FetterInfo": {
+    "Title": "Lửa Thiêu Đêm Đen",
+    "Detail": "Lãnh đạo của Natlan, kế thừa Tên Cổ Kiongozi, thề sẽ dùng Lửa Thánh soi sáng tương lai của vương quốc chiến tranh.",
+    "Association": 9,
+    "Native": "Huitztlan",
+    "BirthMonth": 8,
+    "BirthDay": 28,
+    "VisionBefore": "Hỏa",
+    "VisionAfter": "Hỏa",
+    "VisionOverrideUnlocked": "Vision",
+    "ConstellationBefore": "Cung Bất Bại Dương Diệm",
+    "ConstellationAfter": "Cung Bất Bại Dương Diệm",
+    "CvChinese": "李晔",
+    "CvJapanese": "小松未可子",
+    "CvEnglish": "Katiana Sarkissian",
+    "CvKorean": "Kim Na-yul",
+    "CookBonus": {
+      "OriginItemId": 108779,
+      "ItemId": 108787,
+      "InputList": [
+        101243,
+        100080,
+        100076,
+        100084
+      ]
+    },
+    "Fetters": [
+      {
+        "Title": "Lần đầu gặp mặt...",
+        "Context": "#Đuổi theo dấu chân của ngọn lửa trong dòng chảy thời gian, chúng tôi đã đúc nên quê nhà từ vùng đất tăm tối bằng máu và nước mắt. Và bây giờ, con đường dài phía trước vẫn tiếp diễn, chuyến hành trình vẫn đang chờ đợi chương mới. Hỏa Thần đương nhiệm, Mavuika tôi đây sẽ giúp {F#cô}{M#cậu} xóa sạch bóng tối khỏi tầm nhìn phía trước."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Thám Hiểm",
+        "Context": "Thám hiểm và thử thách... Hm, cuộc sống của một nhà mạo hiểm rất hợp với tôi."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Trải Nghiệm",
+        "Context": "Thần linh thì cũng nên thường xuyên xuống mặt đất đi dạo, chứ cứ mãi ở trên trời cao là không được."
+      },
+      {
+        "Title": "Nói chuyện phiếm - Ánh Sáng",
+        "Context": "Có rất nhiều loài côn trùng mang bản năng đuổi theo ánh sáng, và con người cũng vậy... Có điều chúng ta gọi ánh sáng đó là \"hy vọng\"."
+      },
+      {
+        "Title": "Khi tuyết rơi...",
+        "Context": "Ưm... Mát quá, Natlan không có nơi nào như vậy cả."
+      },
+      {
+        "Title": "Ánh nắng thật chan hòa...",
+        "Context": "Thời tiết đẹp quá, rất thích hợp để đi dạo bên ngoài. Nào, lên xe, đi lượn vài vòng với tôi nhé?"
+      },
+      {
+        "Title": "Sau cơn mưa trời lại sáng...",
+        "Context": "#Ẩm ướt không hề dễ chịu nhỉ? Vừa hay đúng lúc nghỉ ngơi, để tôi dùng lửa hong khô cho {F#cô}{M#cậu}."
+      },
+      {
+        "Title": "Khi trong sa mạc...",
+        "Context": "Cát là thiên địch của lửa và nền văn minh, chỉ còn lại những bức tường đổ nát là vẫn đang kể về câu chuyện quá khứ."
+      },
+      {
+        "Title": "Chào buổi sáng...",
+        "Context": "Lúc tỉnh dậy, tôi sẽ lướt nhanh toàn bộ kế hoạch ngày hôm đó trong đầu, sau đó sẽ thất vọng khi phát hiện một điều là... tôi phải thức dậy rồi."
+      },
+      {
+        "Title": "Chào buổi trưa...",
+        "Context": "Ăn trưa chưa? Phía Cộng Đồng Trù Phú gửi trái cây tươi ngon đến rồi, tôi thấy đó là món tráng miệng tuyệt vời sau bữa ăn đấy. Nào, mau thử đi."
+      },
+      {
+        "Title": "Chào buổi tối...",
+        "Context": "Phương án và ngân sách tu sửa đường đi ở Con Của Tiếng Vang, ừm... Ồ, chào buổi tối, đã muộn thế rồi à..."
+      },
+      {
+        "Title": "Chúc ngủ ngon...",
+        "Context": "Ngủ ngon, tôi còn chút việc bận xử lý nốt, coi như nghỉ ngơi. À, ý tôi là... với tôi thì bận rộn cũng là một niềm vui."
+      },
+      {
+        "Title": "Về bản thân Mavuika - Tóc",
+        "Context": "#Tò mò về mái tóc của tôi sao? Yên tâm, đó là một ngọn lửa vô cùng thân thiện, không nóng chút nào, cũng sẽ không đốt cháy thứ gì cả. Nó chỉ thể hiện ra toàn bộ uy lực khi tiếp xúc với kẻ địch thôi... {F#Cô}{M#Cậu} hiểu ý tôi chứ?"
+      },
+      {
+        "Title": "Về bản thân Mavuika - Lời Nhắn",
+        "Context": "Trong lịch sử Natlan có rất nhiều Hỏa Thần, họ đều lựa chọn những tri thức và ký ức quan trọng nhất để đưa vào Lửa Thánh, giúp người kế vị học hỏi và khai sáng. Vì lượng thông tin quá lớn, thậm chí đôi khi còn ảnh hưởng đến tâm trí của người tiếp nhận, vậy nên tôi chỉ để lại một câu trong ngọn lửa... \"Trước khi trở thành lửa, hãy tự hào về sự tồn tại của bản thân.\""
+      },
+      {
+        "Title": "Về chúng ta - Giương Kiếm",
+        "Context": "#Kế hoạch chính là chỉ dẫn đáng tin cậy nhất, nhưng cũng không phải thứ quy luật thần thánh không thể thay đổi. Vào năm trăm năm trước, tôi không thể dự đoán được sự xuất hiện của {F#cô}{M#cậu}, nhưng khi tôi gặp mặt và hiểu {F#cô}{M#cậu} hơn, tôi biết kế hoạch này xứng đáng vì {F#cô}{M#cậu} mà thay đổi. Xét về mặt kết quả, cùng {F#cô}{M#cậu} giương cao thanh kiếm quả là một quyết định không thể chính xác hơn."
+      },
+      {
+        "Title": "Về chúng ta - Tên Cổ",
+        "Context": "#Có lẽ {F#cô}{M#cậu} chưa nhận ra Tên Cổ \"Tumaini\" hoàn toàn mới này sẽ có ảnh hưởng quan trọng thế nào trong tương lai của Natlan: Khi nhớ đến câu chuyện của \"Tumaini\", nhân loại của mỗi thời đại tiếp theo đều sẽ nhắc lại trận chiến này, nhắc lại mỗi vị anh hùng, cũng như sự kết nối chặt chẽ giữa Tumaini và Kiongozi. Chúng ta sẽ tồn tại mãi mãi cùng Natlan."
+      },
+      {
+        "Title": "Về \"Vision\"...",
+        "Context": "Với con người, Vision và Tên Cổ đều là món quà của thần linh, sự khác biệt nằm ở chỗ, Vision sẽ ban tặng sức mạnh nguyên tố, còn Tên Cổ sẽ cung cấp sự cổ vũ về mặt tinh thần. Nhưng tôi luôn cho rằng, sự hỗ trợ từ yếu tố bên ngoài sẽ không phải điều kiện tiên quyết để biến một con người trở nên vĩ đại và trở thành anh hùng, vì thứ quan trọng nhất cần có chính là \"trái tim\" rực cháy."
+      },
+      {
+        "Title": "Có gì muốn chia sẻ không...",
+        "Context": "Hồi nhỏ cha từng nói với tôi, một chiếc thùng gỗ chứa được bao nhiêu nước, sẽ phụ thuộc vào tấm gỗ ngắn nhất. Nếu muốn không ngừng tiến bộ, thì phải tình nguyện trở thành tấm gỗ ngắn nhất ấy... Từ đó nhận thức rõ sự thiếu sót của bản thân và học hỏi từ người giỏi hơn. Những người như vậy không phải kẻ thất bại, mà là người cầu tiến."
+      },
+      {
+        "Title": "Những kiến thức thú vị...",
+        "Context": "Yumkasaur lúc nhỏ rất dễ thương. Đồng đội Saurian của tôi tên là Hitata, rất thích gần gũi với con người, bất kể tôi có cách bao xa thì nó đều sẽ vui vẻ lao vào lòng tôi. Chuyện này khiến em gái Hine của tôi có chút ghen tị, nên mỗi khi nhìn thấy Hitata chạy đến là con bé cũng sẽ chạy lại theo, tôi phải cùng lúc ôm lấy cả hai, hahaha."
+      },
+      {
+        "Title": "Về Xilonen...",
+        "Context": "Xilonen là một trong những người thợ xuất sắc nhất của Natlan. Không những nắm được cách thức chế tạo Tên Cổ, mà còn rất am hiểu về các kỹ thuật bí ẩn. Cho dù phải làm ra những thứ chưa từng có trên đời thì cô ấy cũng sẽ mạnh dạn thử thách, và sẽ luôn có được một kết quả tốt đẹp, tuy rằng quá trình có hơi khổ sở... Ừm, ví dụ như việc chỉnh sửa thiết kế ấy, kiểu vậy..."
+      },
+      {
+        "Title": "Về Citlali...",
+        "Context": "#Rất nhiều người cảm thấy cô ấy tính tình cổ quái khó gần, nhưng tôi nghĩ, chỉ là do mấy chuyện tầm thường không đáng để Citlali bận tâm thôi. Khi những chuyện thực sự cần bận tâm xuất hiện thì cô ấy sẽ vô cùng nghiêm túc, chắc {F#cô}{M#cậu} cũng từng chứng kiến rồi... Đôi khi tôi thấy, người có tính cách như vậy rất dễ bị cuốn vào nguy hiểm, nên tôi luôn giữ ý và che giấu một số chuyện với cô ấy. Tuy nhiên... để không bị phát hiện cũng rất khó, Citlali nhạy bén quá mà."
+      },
+      {
+        "Title": "Về Chasca...",
+        "Context": "Có thể tồn tại dưới tác động của Vực Sâu vốn đã là một kỳ tích, điều khiến người ta cảm động hơn chính là những con người và Saurian mà cô ấy gặp mặt tại Natlan đã cùng giúp đỡ cô ấy tìm được lý do để sống tiếp. Hiện giờ tôi không cần bận tâm đến sự kiên cường của Chasca nữa, nhưng tôi vẫn muốn mang lại cho cô ấy một \"mái nhà\" dịu dàng ấm áp hơn bằng mọi khả năng của mình... Con người có kiên cường đến mấy thì cũng cần phải được nghỉ ngơi mà."
+      },
+      {
+        "Title": "Về Ororon...",
+        "Context": "Theo tôi thấy, tính cách thực sự của cậu ta khác xa với những gì thể hiện bên ngoài. Ororon giống như một viên nham thạch bị băng giá bao bọc vậy. Điều khiến cậu ta bình tĩnh chính là bạn bè và người trong tộc, còn thứ khiến cậu ta bất an chính là sự thôi thúc bảo vệ những con người này và cả sứ mệnh trở thành anh hùng... Những cảm xúc này tuy không hề lý trí, nhưng lại vô cùng quý giá."
+      },
+      {
+        "Title": "Về Iansan - Vướng Mắc",
+        "Context": "Khi Iansan vừa có được Tên Cổ và tham gia Nghi Lễ Hành Hương, cô ấy luôn bị người khác xem nhẹ. Vậy nên trong vòng tổ đội, có rất nhiều người tìm đến để đấu với Iansan. Tuy cô ấy luôn là người giành chiến thắng, nhưng cũng hao tổn rất nhiều thể lực, điều này cũng khiến cho thành tích lần đầu của cô ấy không được tốt. Mà càng như vậy, cô ấy lại càng vướng vào tầm ngắm của người khác..."
+      },
+      {
+        "Title": "Về Iansan - Chứng Minh",
+        "Context": "Tôi đã cho cô ấy lời khuyên, rằng chỉ cần mọi người đều biết đến cô ấy như một người mạnh mẽ, thì sẽ không có nhiều người dám gây rắc rối như vậy nữa. Nhưng tôi không ngờ, Iansan trầm ngâm hồi lâu rồi nghĩ ra cách thức bất ngờ là đánh với tôi một trận trong Nghi Lễ Hành Hương. Hahaha, thực lực của cô ấy quả thật vượt xa dự tính của tôi, và trận đấu này cũng rất hiệu quả, sau đó không còn ai xem thường cô ấy nữa."
+      },
+      {
+        "Title": "Về Mualani...",
+        "Context": "Cô ấy có tính cách khác biệt hoàn toàn với Tupac, nhưng lại đều kế thừa cái tên Umoja. Điều quan trọng của \"đoàn kết\" không phải là cách thức, mà là sự trân trọng bạn bè và quê hương, cùng với tinh thần sẵn sàng dốc hết sức lực vì điều đó... Tuy tôi nói vậy, nhưng lúc ấy chắc hẳn Mualani cũng không nghĩ nhiều đến thế, cô ấy chỉ biết rất rõ một điều, rằng tính mạng của Kachina cũng quan trọng như của chính bản thân cô ấy vậy."
+      },
+      {
+        "Title": "Về Kinich...",
+        "Context": "Không chỉ là \"Hồi Hỏa\", Malipo còn mang ý nghĩa là \"cái giá phải trả\". Mọi người có thể sẽ thắc mắc khi so với những Tên Cổ khác, rõ ràng đây không phải những con chữ mang ý nghĩa tích cực. Nhưng thực chất, \"cái giá phải trả\" tượng trưng cho ý thức luôn giữ vững sự tỉnh táo, dám phân tích hiện trạng và dám đặt vấn đề. Tuy sẽ gây mất hứng hoặc sẽ khiến người ta thở dài, nhưng nếu không có những con người như vậy, thì mọi người sẽ rất dễ bị cảm xúc chi phối mà rơi vào nguy hiểm, vì chuyện nhỏ mà làm hỏng việc lớn."
+      },
+      {
+        "Title": "Về Kachina...",
+        "Context": "Từ sau khi mọi người giúp Kachina trở về bình an từ Vương Quốc Dạ Thần, tôi đã ghé thăm nhà cô bé, cùng thủ lĩnh một lần nữa bày tỏ sự áy náy, đồng thời tặng một chút quà để tạ lỗi và an ủi. Trải nghiệm lạc lối trong Vương Quốc Dạ Thần chắc hẳn cũng sẽ để lại nhiều ảnh hưởng trên con đường trưởng thành của Kachina, mà những ảnh hưởng này vốn dĩ không nên xảy ra... Tôi là người phải chịu trách nhiệm trong chuyện này."
+      },
+      {
+        "Title": "Về Varesa...",
+        "Context": "Trong thời gian tổ chức Nghi Lễ Hành Hương, mọi chi phí tại Nhà Trọ Mệt Mỏi đều do tôi phụ trách, nhưng mỗi lần thanh toán tôi đều phát hiện có một vị khách gọi lượng đồ ăn cho tận tám mươi người. Ban đầu tôi còn tưởng là đoàn du lịch theo nhóm, kết quả không ngờ... lại là một mình cô ấy."
+      },
+      {
+        "Title": "Về Ifa...",
+        "Context": "Ngoại trừ y thuật tinh thông, một vị bác sĩ giỏi thường sẽ có khả năng giao tiếp rất tốt. Và khi bác sĩ không thể giao tiếp tốt với bệnh nhân, thì phải cần đến một khả năng quan sát nhạy bén và tấm lòng đồng cảm. Có lẽ đây cũng là lý do mà Ifa luôn có thể làm bạn với tất cả mọi người.\nVậy nên, nếu có ai đó hoặc Saurian có mối quan hệ không tốt với Ifa... Haha, tôi nghĩ chắc đó không phải là vấn đề từ anh ta đâu."
+      },
+      {
+        "Title": "Về \"Capitano\"...",
+        "Context": "Cùng là một khoảng thời gian năm trăm năm, nhưng với anh ta thì sẽ là một trải nghiệm dông dài hơn nhiều. Khi người ta bị cướp đi quyền được chết, thì cuộc đời sẽ trở thành một chuyến hành trình không có hồi kết, tinh thần cũng rất dễ bị kiệt quệ trong sự hư vô này. Nhưng anh ta vẫn nắm lấy cơ hội chiến thắng duy nhất để có được sự viên mãn mà mình luôn theo đuổi. Với một chiến binh như Capitano, cá nhân tôi luôn tràn đầy sự kính trọng và trân quý."
+      },
+      {
+        "Title": "Về bảy vị chấp chính trần thế...",
+        "Context": "#Rất tiếc, sự hiểu biết của tôi về họ thậm chí còn không bằng {F#cô}{M#cậu}, nhưng tôi tin rằng, chỉ những nhà lãnh đạo tài ba nhất mới có thể khiến quốc gia tồn tại và không ngừng phát triển đến ngày nay. Sau khi lịch sử chống lại Vực Sâu của Natlan đi đến hồi kết, tôi cũng dự định thiết lập thêm nhiều mối quan hệ với những đất nước khác, từ đó chuẩn bị cho sự phát triển của Natlan sau này."
+      },
+      {
+        "Title": "Về Yumemizuki Mizuki...",
+        "Context": "Tôi có ấn tượng tốt với vị khách người Inazuma này. Nghe nói ban đầu khi đến Natlan, cô ấy rất quan tâm đến suối nước nóng bên Cư Dân Suối Nước, còn hỏi thăm khắp nơi về mấy thứ liên quan. Nhưng cô ấy không nghiên cứu vì mưu lợi cá nhân, mà là vì muốn cải thiện tâm trạng của mọi người. Mục đích chân thành đó thực sự rất đáng được chúng tôi tôn trọng và giúp đỡ.\nKể ra thì... Vị chấp chính đương nhiệm của Inazuma cũng thích ngâm suối nước nóng đúng không? Nếu chuyện này là thật, có lẽ tôi biết mình cần làm gì để xây dựng mối quan hệ với cô ấy rồi."
+      },
+      {
+        "Title": "Muốn tìm hiểu Mavuika - Điều thứ 1",
+        "Context": "Ồ? Không thành vấn đề, tôi rất thích kể chuyện, chỉ là... nếu cứ kể như vậy thì cũng hơi đơn điệu, chúng ta đi uống vài ly trước đi."
+      },
+      {
+        "Title": "Muốn tìm hiểu Mavuika - Điều thứ 2",
+        "Context": "#Thao tác điều khiển Mô Tô Vượt Lửa không hề phức tạp, chỉ cần luyện tập chút là sẽ lái tốt thôi. Nhưng nếu muốn chạy nhanh thì phải cần thêm rất nhiều trang bị bảo hộ. Sao? {F#Cô}{M#Cậu} nói giờ tôi đã chạy quá nhanh rồi à? Theo lời của Xilonen thì là... \"Người như cô thân thể cường tráng, không cần đến mấy thứ này đâu.\""
+      },
+      {
+        "Title": "Muốn tìm hiểu Mavuika - Điều thứ 3",
+        "Context": "Đương nhiên là tôi đã có rất nhiều điều nuối tiếc. Vì đang gánh vác sứ mệnh, tôi không thể dừng bước vì bất cứ ai. Kiến thức và sức mạnh mà tôi tích lũy được có thể giải quyết vấn đề một cách hiệu quả, nhưng nhiều khi thứ mọi người cần chỉ là sự đồng hành thôi... Về phương diện này, tôi đã khiến rất nhiều người thất vọng. Sự thiếu quyết đoán sẽ chỉ mang lại đau khổ trầm trọng hơn, điều duy nhất tôi có thể làm là kiềm chế."
+      },
+      {
+        "Title": "Muốn tìm hiểu Mavuika - Điều thứ 4",
+        "Context": "#Sau khi giải phóng sức mạnh ngai thần và bay lên trời, linh hồn của tôi cũng được kết nối chặt chẽ với Địa Mạch. Tôi có thể cảm nhận được nhiệt huyết của các chiến binh, sự kiên cường của người thường, và cả nỗi đau của những nạn nhân... Đây là lần thứ hai tôi trực tiếp trải qua những cảm xúc này, cũng may nhờ có sự giúp đỡ từ {F#cô}{M#cậu} và các anh hùng mà kết quả lần này đã khác. Điều đó cũng đã chứng minh giá trị cho sự kiên trì của chúng ta."
+      },
+      {
+        "Title": "Muốn tìm hiểu Mavuika - Điều thứ 5",
+        "Context": "#Tôi đã hoàn thành trách nhiệm quan trọng nhất của mình với tư cách là Hỏa Thần, vốn dĩ sẽ không có chỗ cho tôi ở một Natlan hoàn toàn mới này. Tôi đã chấp nhận tất cả chuyện này từ năm trăm năm trước, nên tình trạng hiện giờ lại khiến tôi có chút bối rối... Nhưng có {F#cô}{M#cậu} ở bên, tôi đã nhìn ra phương hướng mà mình nên đi rồi... Đó chính là đi khám phá, học hỏi và cứu rỗi."
+      },
+      {
+        "Title": "Sở thích của Mavuika...",
+        "Context": "Trở nên mạnh hơn. Ví dụ như hoàn thành thử thách khó nhằn, giải những câu đố phức tạp, chiến thắng kẻ địch mạnh mẽ... So với việc lặp lại những chuyện giống nhau thì cảm giác đạt được thành tựu mới chính là niềm hạnh phúc của tôi."
+      },
+      {
+        "Title": "Phiền não của Mavuika...",
+        "Context": "\"Do bộ 'Saurian Và Di Tích' không được yêu thích, nay tôi quyết định không sáng tác thêm nội dung mở rộng và giải đố nữa...\" Đây chính là trò chơi giải đố trên bàn mà tôi ưa thích nhất đấy. Chúng ta không thể chỉ vì câu đố quá khó và quy tắc khó hiểu mà nhận định là nó thất bại được. Haiz, nhưng nếu là vấn đề doanh số thì quả thật tôi cũng hết cách, chắc phải viết một bức thư ẩn danh để khích lệ tác giả, hy vọng sau này tôi vẫn có thể tiếp tục chơi những tác phẩm mới của người đó..."
+      },
+      {
+        "Title": "Món ăn yêu thích...",
+        "Context": "Cho dù là những món ăn thường nhật đơn giản nhất, thì hương vị mỗi nhà làm ra cũng sẽ khác nhau, đôi lúc còn khác hoàn toàn nữa. Tôi đã từng nếm thử đủ loại thịt hầm trong Đấu Trường Lửa Thánh rồi, tất cả đều rất ngon, cách chế biến đều có nét riêng, nhưng đến lượt tôi tự làm thì tôi vẫn sẽ lựa chọn hương vị nhà tôi."
+      },
+      {
+        "Title": "Món ăn ghét...",
+        "Context": "Tôi thích hầu hết các loại thực phẩm, nhưng tôi không thích những đồ ăn mang hình thức nhiều hơn là nội dung, ví dụ như món chính mà phải mất tận ba giờ đồng hồ để hoàn thành... Tuy có thể cảm nhận được sự sáng tạo và khéo léo của đầu bếp, nhưng tôi vẫn muốn bỏ thời gian vào việc gì đó có ích hơn."
+      },
+      {
+        "Title": "Nhận Được Quà I",
+        "Context": "#Cảm ơn, cũng khá hợp khẩu vị của tôi, {F#cô}{M#cậu} có công thức không? Tôi muốn học thử."
+      },
+      {
+        "Title": "Nhận Được Quà II",
+        "Context": "Tôi khá hài lòng về tổng thể, nhưng vẫn nhận thấy có vài điểm cần cải thiện."
+      },
+      {
+        "Title": "Nhận Được Quà III",
+        "Context": "Ăn cũng không tệ đâu, tôi chấp nhận được."
+      },
+      {
+        "Title": "Sinh nhật...",
+        "Context": "#Bắt đầu từ hôm nay, {F#cô}{M#cậu} có thể viết mọi thành tựu đáng nhớ lên giấy, cất giữ cho đến sinh nhật lần tới rồi đem ra, như vậy là {F#cô}{M#cậu} sẽ có được một món quà sinh nhật từ chính mình. Hy vọng những ghi chép này sẽ giúp {F#cô}{M#cậu} luôn luôn nhớ rằng mình đã lợi hại đến thế nào. Sinh nhật vui vẻ nhé!"
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Khởi",
+        "Context": "Cảm thấy như được thư giãn gân cốt vậy, tôi rất thích."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Thừa",
+        "Context": "Sức mạnh ngày càng lớn rồi, nhưng thực lực của tôi không chỉ có vậy đâu."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Chuyển",
+        "Context": "Ngọn lửa ngày càng rõ rệt, linh hồn và thể xác của tôi ngày càng hòa hợp hơn. Sức mạnh này mới thực sự là minh chứng cho khả năng hoàn thành trách nhiệm của một \"Lãnh Đạo\"."
+      },
+      {
+        "Title": "Cảm Giác Đột Phá - Hợp",
+        "Context": "#Từ khi gặp {F#cô}{M#cậu}, sức mạnh của tôi đã tăng lên đáng kể. Chúng ta đều có sứ mệnh riêng của mình, chính cảm giác trách nhiệm và chính nghĩa đã gắn kết chúng ta. Tôi vô cùng cảm kích sự giúp đỡ của {F#cô}{M#cậu}."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố I",
+        "Context": "Bùng cháy lên nào."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố II",
+        "Context": "Thiêu rụi ô uế!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố III",
+        "Context": "Trỗi dậy cùng mặt trời."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố IV",
+        "Context": "Tăng tốc thôi."
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố V",
+        "Context": "Mở hết công suất!"
+      },
+      {
+        "Title": "Kỹ Năng Nguyên Tố VI",
+        "Context": "Ai dám ngáng đường?"
+      },
+      {
+        "Title": "Kỹ Năng Nộ I",
+        "Context": "Tiếng gầm của mặt trời!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ II",
+        "Context": "Lửa trời thịnh nộ!"
+      },
+      {
+        "Title": "Kỹ Năng Nộ III",
+        "Context": "Chôn vùi dưới ngọn lửa đỏ!"
+      },
+      {
+        "Title": "Mở Rương I",
+        "Context": "Phần thưởng mạo hiểm, rất có ý nghĩa kỷ niệm."
+      },
+      {
+        "Title": "Mở Rương II",
+        "Context": "Lại thêm một thứ trong bộ sưu tập rồi."
+      },
+      {
+        "Title": "Mở Rương III",
+        "Context": "Cũng ổn, tôi rất thích."
+      },
+      {
+        "Title": "HP Thấp I",
+        "Context": "Không thể sơ suất nữa."
+      },
+      {
+        "Title": "HP Thấp II",
+        "Context": "Điều chỉnh lại."
+      },
+      {
+        "Title": "HP Thấp III",
+        "Context": "Phải nghiêm túc rồi."
+      },
+      {
+        "Title": "HP Đồng Hành Thấp I",
+        "Context": "Việc chiến đấu cứ để tôi."
+      },
+      {
+        "Title": "HP Đồng Hành Thấp II",
+        "Context": "Đừng gượng ép bản thân."
+      },
+      {
+        "Title": "Ngã Xuống I",
+        "Context": "Ngọn lửa, sẽ không tắt..."
+      },
+      {
+        "Title": "Ngã Xuống II",
+        "Context": "Kế thừa... kết thúc rồi sao?"
+      },
+      {
+        "Title": "Ngã Xuống III",
+        "Context": "Vận mệnh... là vậy sao?"
+      },
+      {
+        "Title": "Bị Trọng Kích I",
+        "Context": "Được lắm."
+      },
+      {
+        "Title": "Vào Đội I",
+        "Context": "Hỏa Thần Mavuika, tham chiến."
+      },
+      {
+        "Title": "Vào Đội II",
+        "Context": "Đương nhiên không thành vấn đề."
+      },
+      {
+        "Title": "Vào Đội III",
+        "Context": "Tôi luôn sẵn sàng."
+      }
+    ],
+    "FetterStories": [
+      {
+        "Title": "Miêu Tả Nhân Vật",
+        "Context": "Nhắc đến Mavuika, người dân Natlan sẽ không bao giờ tiết kiệm lời khen ngợi của họ. Dù là lãnh đạo hay thần linh, cô ấy cũng đều xứng đáng với danh xưng và được mọi người tôn trọng.\nMavuika sở hữu sức mạnh đỉnh cao của quốc gia này, và cũng có khí chất tương xứng với sức mạnh. Cho dù là người mới đến Natlan, chỉ cần nghe cô ấy diễn thuyết trên Đấu Trường Lửa Thánh thì cũng sẽ hiểu được tại sao cô ấy lại không hổ danh là mặt trời.\nMavuika vô cùng uy nghiêm, nhưng lại không cứng nhắc trong khi làm việc. Phía sau những khung cảnh hào nhoáng đó, cô ấy sẽ là một chị gái nhiệt tình hiếu khách, rất thích nói chuyện với người khác, và cũng rất vui khi nhận được nhiều đề xuất hợp lý.\nĐêm trước ngày diễn ra Nghi Lễ Hành Hương, Nhà Trọ Mệt Mỏi sẽ tập trung rất nhiều người chung vui. Mavuika thường xuất hiện ở đó để chơi bài hoặc ca hát với mọi người. Ngay cả khi có kẻ say mèm đổ rượu về phía cô ấy thì Mavuika cũng không bận tâm.\nDù sao đối với cô ấy thì đây cũng chỉ là chuyện nhỏ như đốt tóc làm khô rượu vậy, không đến nỗi phải làm mất đi bầu không khí vui vẻ hiếm có.\nNhưng nếu ý đồ của người đến là thi uống rượu, thì ý chí phân thắng bại của Mavuika sẽ bùng cháy trong khoảnh khắc. Nếu đã bắt đầu \"chiến đấu\", vậy thì không có lựa chọn rút lui hay đầu hàng, phải phân thắng bại.\nDù là trước hay sau khi cô trở thành thần thì thói quen đó cũng không hề thay đổi. Điều này cũng khiến Mavuika kết giao được với rất nhiều bạn bè từ các bộ tộc khác nhau.\nTuy nhiên, không phải ai cũng có thể nắm bắt được sự chừng mực này. Khi Mavuika quá thiếu đi sự tôn nghiêm của một vị thần, thì sẽ có người ảo tưởng rằng họ có thể lợi dụng tình huống này để kiếm chác.\nKể ra cũng rất kỳ diệu, tuy những người như vậy không hiếm gặp, nhưng họ chưa từng gây ra sóng gió nào. Bởi vì Mavuika chưa từng đáp lại những yêu cầu hoang đường đó... Cô ấy chỉ cần một biểu cảm nghiêm túc và một ánh mắt lạnh lùng, thì đối phương sẽ tự giác lùi bước.\nĐôi mắt rực lửa không ngừng thiêu đốt, ánh mắt sắc bén còn lạnh lẽo hơn cả băng đông. Sự chênh lệch nhiệt độ này sẽ đánh thức những kẻ đang ảo tưởng... Rằng Mavuika vẫn là lãnh đạo của một quốc gia, là vị thần vô song.\nNhân viên ở Phòng Quản Lý từng đề xuất với Mavuika rằng nên trừng phạt một chút, nếu không những kẻ như thế sẽ không ngừng xuất hiện. Nhưng cô ấy đã từ chối.\n\"Thần là thân phận, là quyền lực, là biểu tượng tinh thần, nhưng đó không phải là 'tôi'.\""
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 1",
+        "Context": "Về lý thuyết, bất kỳ ai ở Natlan cũng đều có thể trở thành Hỏa Thần. Chỉ cần người đó đến Nghi Lễ Hành Hương chứng minh bản thân là kẻ mạnh nhất trong thời đại này là xong.\nCho nên những người từng thống trị đất nước này đều có tính cách và phong thái rất khác biệt. Một số người tôn thờ quyền lực, sức mạnh và coi trọng kết quả. Với họ, bất kỳ cái giá nào cũng có thể chấp nhận được miễn là đạt được mục đích.\nCòn Mavuika thì ngược lại. Cô ấy là một người cầu toàn điển hình, mọi việc không chỉ nên làm cho tốt, mà còn phải trông cho đẹp nữa.\nMặc dù theo đuổi sự hoàn thiện là điều bình thường của con người, nhưng chuyện đó sẽ tốn thêm thời gian. Khi có người chỉ ra rằng như vậy hiệu quả sẽ không cao, thì Mavuika sẽ trình bày cho họ xem toàn bộ lý luận của mình.\nĐầu tiên, không có sự kiện độc lập nào trên thế giới này cả, truy ngược về trước sẽ có nguyên nhân, đi tiếp về sau sẽ có kết quả. Con người không thể phân tích toàn bộ chuỗi sự kiện, nên chỉ có thể cố gắng xử lý hoàn hảo thì mới tránh để lại nguy cơ tiềm ẩn.\nThứ hai, những sự kiện trong quá khứ đều sẽ trở thành kinh nghiệm quý báu. Nếu đó là thành công thì dùng để tham khảo, còn thất bại thì xem như bài học. Nhưng nếu xử lý không tốt, thì chỉ có thể tự mình nhắc nhở là không được tái phạm sai lầm cũ.\nNhưng ngoài hai luận điểm này ra, còn có một lý do khá quan trọng mà Mavuika thường không nhắc đến, đó chính là \"niềm vui\".\nSở thích của Mavuika rất rộng. Cô ấy thông thạo các môn thể thao và trò chơi thịnh hành của sáu bộ tộc, nhưng những sở thích này có thể tóm gọn lại bằng một câu nói: Mavuika thích ngày càng tiến bộ hơn trong những việc mà mình đang làm.\nVí dụ như leo núi. Khi mới học, cô ấy sẽ ghi nhớ từng động tác của huấn luyện viên, và đặt câu hỏi về tất cả chi tiết quan sát được.\nTiếp theo là tập luyện rất nhiều để cơ thể nhớ hết các động tác, sau đó dần tăng tốc. Cô ấy còn nhờ người khác dùng máy ảnh để ghi lại toàn bộ quá trình, để có thể xem lại những phần chưa tốt hay không đủ mượt mà sau những giờ tập luyện.\nĐể giải quyết vấn đề, cô ấy sẽ trao đổi với huấn luyện viên, đồng thời sử dụng nhiều loại công cụ và thiết bị khác nhau để liệt kê ra những phương án khả thi nhất. Cuối cùng Mavuika sẽ thử từng cái một để chọn ra phương pháp tốt nhất.\nRất nhanh, kỹ thuật leo núi của Mavuika đã trở nên vô cùng điêu luyện, những câu hỏi mà cô ấy đặt ra cũng ngày càng khiến huấn luyện viên phải đau đầu. Mối quan hệ giữa họ cũng từ thầy trò trở thành người cùng chung sở thích.\nỞ những lĩnh vực khác thì lại có trường hợp khoa trương hơn. Ví dụ như Mavuika chỉ cần học một năm là đã chiến thắng được những \"đại sư\" có ba bốn mươi năm kinh nghiệm.\nLý do nói ra cũng đơn giản: Dồn thời gian để luyện tập thì rất dễ, nhưng để duy trì được sự tiến bộ đó mới là khó. Khi ký ức quen thuộc đã ngấm vào cơ thể, thì đầu óc sẽ rất dễ dừng suy nghĩ vì đã hài lòng hoặc lười biếng.\nVì vậy, một trong những điều mà Mavuika ghét chính là sự lặp đi lặp lại: Những chuyện làm lại một lần nữa, cho dù chỉ là thử lại lần hai thì cũng sẽ có điểm khác lần trước nếu như chịu suy ngẫm và tối ưu hóa.\nNhưng người bình thường rất khó nhìn thấy những gì mà Mavuika phải đánh đổi, họ thường cho rằng sự tiến bộ thần tốc của cô ấy là nhờ vào tài năng. Mỗi lần cô ấy nghe những lời này đều sẽ cười cay đắng... Thế giới này làm gì có người đủ năng khiếu bẩm sinh để làm được tất cả mọi thứ chứ?\n\"Muốn tiến bộ, là phải nắm bắt kỹ năng để tiến bộ, sau đó là nỗ lực tiến hành thôi.\""
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 2",
+        "Context": "Ấn tượng mà Mavuika để lại cho người ta là một người vô cùng yêu thích hoạt động ngoài trời. Mọi người có thể nhìn thấy bóng dáng của Mavuika ở khắp nơi. Ngoài công việc và tập luyện ra, cô ấy còn rất thích những thử thách mạo hiểm.\nNhưng mọi người thường không biết rằng thật ra cô ấy cũng rất kiên trì khi ngồi yên một chỗ. Mavuika có thể duy trì sự tập trung tuyệt vời trong thời gian dài để đọc cuộn vải hay sách vở.\nMột sở thích khác của cô ấy là giải đố. Dù là suy luận logic hoặc tìm kiếm quy luật; Nội dung có là hình ảnh, con số hay câu chuyện, thì cô ấy cũng đều nhanh chóng chìm đắm vào đó, vào trong thế giới của chính mình.\nSau khi trải qua khoảng thời gian suy luận vui vẻ, Mavuika còn căn cứ vào chất lượng, độ khó và tính hợp lý của câu đố để cho điểm, từ đó cung cấp cho những người cùng sở thích một sự tham khảo đáng tin cậy.\nTuy nhiên, sở thích này cũng dẫn đến một vấn đề: Trò chơi giải đố đều chỉ chơi được một lần, rất khó để chơi lại. Mà tốc độ giải đố của Mavuika cũng hơi nhanh, không được bao lâu là đã vượt qua tốc độ chế tác của tác giả.\nVì vậy, trong khi chờ đợi những trò giải đố mới, Mavuika sẽ thêm vài điều kiện hạn chế vào những cái đã giải trước đó để tăng thêm độ khó.\nVí dụ khi xếp hình, thay vì chọn mảnh thông thường thì phải lật ngược lại hết. Chỉ khi hoàn thành toàn bộ hình ghép thì mới được lật lại để xác nhận xem là đã đúng chưa.\nCũng như trò tách những miếng kim loại bị vướng vào nhau, Mavuika sẽ cố định một trong những miếng đó lên bàn, như vậy thì một số cách có thể giải dễ dàng sẽ không thể dùng được nữa, cần phải nghĩ phương án mới. Cách này không chỉ dùng cho giải đố kim loại, mà còn áp dụng được vào trò giải đố dây thừng.\nDần dà, Mavuika ghi lại những cách chơi khó hơn mà bản thân nghĩ ra cùng với đánh giá của câu đố ban đầu, ghép lại tạo thành một cuốn sổ đề xuất giải đố rất có giá trị.\nBan đầu cô ấy công khai tài liệu này tại Phòng Quản Lý, hy vọng có thể giúp được những người yêu thích giải đố, đồng thời quảng bá thêm cho bộ môn này. Nhưng nào ngờ người đầu tiên tìm đến bộ tài liệu này lại là người bán câu đố.\nHọ sẽ dựa vào đề xuất của Hỏa Thần Mavuika để quảng bá. Tuy nhiên, mỗi người đều có cách nhìn khác nhau đối với câu đố, phần tài liệu này cũng chỉ thể hiện được sở thích cá nhân của Mavuika, nên rất nhanh đã gây ra một số ý kiến trái chiều.\nSau đó, Mavuika đã không còn công khai phần tài liệu này nữa. Nhưng nếu thật sự là người đam mê giải đố, thì bây giờ vẫn có thể đăng ký xem tại Phòng Quản Lý.\nTiền đề là phải giải được câu đố được nhân viên chọn ngẫu nhiên trong bộ sưu tập của Mavuika, để chứng minh mình thực sự là một chuyên gia."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 3",
+        "Context": "Mavuika sinh ra trong một gia đình rất bình thường của bộ tộc Dòng Dõi Vườn Treo. Mẹ cô nhiệt tình dũng cảm nhưng thiếu thận trọng, cha cô kiến thức uyên bác nhưng lại ít nói. Hai người họ từ khi kết hôn đã liên tục xích mích với nhau.\nSự ra đời của đứa trẻ đã thay đổi tất cả. Mavuika giống như mặt trời nhỏ nóng bỏng và thuần khiết, tỏa ra sự nhiệt huyết vĩnh cửu, xua tan sự xa cách và u ám giữa người thân một cách đầy mãnh liệt.\nMavuika nhỏ bé rất hiếu kỳ với mọi thứ trên thế giới này, và mỗi lần cha giải đáp câu hỏi của cô ấy, đều sẽ nhận được ánh mắt ngưỡng mộ và nụ cười tươi sáng từ Mavuika. Cứ như vậy, cha cô ấy dần cảm nhận được niềm vui khi giao lưu với người khác và chia sẻ suy nghĩ trong lòng.\nSau khi học được kiến thức từ cha, Mavuika lại bám lấy mẹ, ngày nào cũng muốn ra ngoài thám hiểm. Mavuika luôn xông lên phía trước, lúc nào cũng làm cho mẹ sợ đến toát mồ hôi. Vài lần như thế, mẹ cô ấy dần nhận ra trong mắt người khác, hành động lỗ mãng thực sự không phù hợp.\nMavuika trưởng thành nhanh hơn bất kỳ đứa trẻ nào cùng tuổi. Rất nhanh sau đó cô đã có thể dùng những kiến thức học được từ cha để chỉ ra sự lỗ mãng của mẹ, rồi lại dùng kinh nghiệm có được từ mẹ để chỉ ra cha mình đã quá lý tưởng hóa vấn đề.\nMavuika giống như chiếc cầu nối giữa hai người vốn dĩ khó giao tiếp vậy, mâu thuẫn và hiểu lầm tích lũy nhiều năm đã tan dần như tuyết mùa xuân. Khi cha dạy võ nghệ cho Mavuika, mẹ cũng sẽ ở bên cạnh hướng dẫn; Khi mẹ dẫn Mavuika đi huấn luyện Saurian, cha cũng sẽ đi cùng.\nNhưng người đã khiến Mavuika một lần nữa tiến về phía trước, chính là một thiên thần khác xuất hiện sau đó... Em gái Hine của cô ấy.\nCó lẽ vì Mavuika đã gánh vác trách nhiệm quan trọng trong mối quan hệ gia đình, nên cô ấy đã thích nghi với thân phận chị gái rất nhanh, dần dần truyền đạt lại tất cả những gì cô học được từ cha mẹ cho Hine.\nHine không phải một đứa trẻ dịu dàng, cô bé có lúc nghịch ngợm, có lúc thì im lặng, hay không nghe lời. Hine thường hay để ba thành viên trong nhà cùng ôm trán thở dài, nhưng đây cũng là một khoảnh khắc ấm áp của cuộc sống.\nCó một lần, khi cha và Mavuika đang dạy Hine thì cô bé đã hỏi một câu:\n\"Hỏa Thần chỉ là người bình thường, vậy làm sao đảm bảo mỗi một vị Hỏa Thần đều sẽ sẵn sàng bảo vệ mọi người chứ?\"\n\"Chính vì đều là người bình thường, nên mới không cần phải đảm bảo như vậy.\"\n\"Cha lại nói những câu thâm sâu rồi, Hine nghe không hiểu.\"\n\"Vậy thì hỏi chị của con đi, chắc chắn chị con đã hiểu từ lâu rồi.\"\nMavuika chỉ mỉm cười, ôm lấy và xoa đầu Hine, không nói gì nữa."
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 4",
+        "Context": "Năm trăm năm trước, sau khi Mavuika công bố kế hoạch giải cứu Natlan cho thủ lĩnh và các chiến sĩ tinh anh nghe, mọi người đều có những ý kiến khác nhau.\nMột số cho rằng việc mất đi một lãnh đạo và chiến sĩ quan trọng như Mavuika là hiện trạng không thể chấp nhận được. Nếu ngay cả thời đại này cũng không bảo vệ được, thì kế hoạch cho tương lai sẽ thành ra vô nghĩa.\nNhưng cuối cùng, phần lớn họ đã bị Mavuika hoặc thủ lĩnh các bộ tộc thuyết phục. Bởi vì kế hoạch của Hỏa Thần mới là cách duy nhất để giành chiến thắng, dù cho sẽ rất rủi ro trong thời đại đó, và khả năng thực hiện được cũng rất mong manh.\nCác chiến sĩ cùng nhau đến Phòng Quản Lý của Mavuika để dâng lên những thứ quan trọng nhất mang theo bên mình. Đó đều là những \"nhiên liệu\" cần thiết cho tương lai.\nĐối với sự hy sinh cần thiết này, những người dũng cảm sẽ cảm thấy vinh dự và không hề do dự. Nhưng Mavuika gọi tất cả những người sắp rời đi đến, pha cho họ ly nước nóng và lắng nghe câu chuyện về số đồ vật này.\nCô tình nguyện, cũng như buộc phải đem từng câu chuyện này đến với tương lai. Tuy tuổi thọ của con người không thể vượt qua thời gian, nhưng ký ức thì có thể. Cho dù những thứ này trong tương lai cũng sẽ không còn tồn tại, nhưng chỉ cần câu chuyện đó vẫn còn người ca tụng, thì họ vẫn có thể cùng những người trong tương lai đón lấy ánh bình minh chiến thắng.\nCho nên bất kể là bạn cũ của Mavuika hay chiến sĩ lạ mặt, cũng đều sẽ nói chuyện thoải mái với nhau ở Phòng Quản Lý. Có lúc họ sẽ vỗ ngực vì chiến tích anh dũng, có lúc lại rơi nước mắt vì người thân bạn bè đã qua đời.\nMỗi món đồ đều được bảo quản rất tốt, và trong năm trăm năm qua, số lượng của những món đồ đó đã không ngừng tăng lên cho đến tận bây giờ.\nThế nhưng, chỉ có người cực kỳ cá biệt sau khi kể xong câu chuyện và uống hết ly nước cuối cùng, mới ngừng lại trong giây lát và hỏi Mavuika xem có đoạn ký ức nào muốn chia sẻ không.\nCô ấy mỉm cười nhắc đến cha mẹ, Hine và hai con Yumkasaur nghịch ngợm. Đó đều là những thứ quý giá nhất sắp mất đi của cô.\n\"Đó đều là những thứ rất quan trọng, haiz...\"\n\"Không. Thời khắc kế hoạch được lập ra thì mọi thứ đều không còn quan trọng nữa, ngay cả bản thân tôi cũng vậy.\""
+      },
+      {
+        "Title": "Câu Chuyện Nhân Vật 5",
+        "Context": "Mavuika sẽ tưởng tượng kế hoạch chống lại Vực Sâu là một hành trình dài. Cô giống như một nhà mạo hiểm chất đầy hành lý để tiến về phía mục tiêu đã định. Ký ức và tình yêu chính là vật tư trong túi, giúp cô khắc phục sự mơ hồ và cô độc.\nCô ấy sẽ cụ thể hóa con đường này trong thế giới thiền. Từ xa sẽ xuất hiện một tòa tháp cao, đỉnh tháp thắp lên ngọn lửa thánh, soi sáng con đường cho Mavuika.\nKhông biết phải đi đâu, cũng không biết còn bao xa... Nhưng con đường đã dần lộ rõ dưới chân Mavuika cùng với số hành lý ngày càng nhẹ dần.\nAtea chào tạm biệt, Tenoch chào tạm biệt, mẹ và em gái chào tạm biệt.\nSundjatta chào tạm biệt, Burkina chào tạm biệt, Wanjiru chào tạm biệt.\nCon đường dẫn tới thắng lợi không phải là chuyện đương nhiên, nó được đúc nên bởi vô số anh hùng trong quá khứ và hiện tại. So với danh xưng \"đấng cứu thế\" thì Mavuika thích từ \"người đại diện\" hơn.\nNhưng những thứ này vẫn chưa đủ. Chuyến hành trình không chỉ dựa vào khổ luyện, thứ cần có không chỉ là ý chí, mà còn có cả sự quyết đoán và trí tuệ.\nNăm trăm năm trước Mavuika không thể dự đoán được những biến số như Nhà Lữ Hành và Capitano. Nhưng sau khi cô biết được những thông tin này, cô chỉ suy nghĩ trong chốc lát rồi quyết định đưa họ vào trong kế hoạch.\nNgoài việc cân nhắc dựa trên các yếu tố thực tế ra thì còn có một lý do khác ủng hộ phán đoán của Mavuika... Rằng dù là Nhà Lữ Hành hay Capitano thì họ cũng đều có khí chất tương tự như cô ấy.\nNếu có thể bỏ qua vấn đề lập trường, cô ấy rất muốn cả ba người ngồi cùng với nhau, thưởng thức thịt nướng và thức uống để chia sẻ những trải nghiệm trong chuyến hành trình của mỗi người. Bởi vì chỉ có những lữ khách trên đường, không có nơi ở cố định thì mới dễ dàng thấu hiểu cho nhau và tạo nên sự cộng hưởng.\nNhưng Mavuika cũng hiểu rõ những trở ngại trong đó... Người đi xa thường không muốn thể hiện sự mệt mỏi và yếu đuối trong lòng, ngay cả bản thân cô cũng như vậy.\nCô có thể mỉm cười kể lại chuyện xưa với chiến hữu và người thân, nhưng rất ít khi nhắc đến nỗi bi thương mà hạnh phúc đã gieo rắc trong dòng sông thời gian. Cô cũng không lấy hành lý đã trống rỗng ra, chỉ vào đó để miêu tả nội tâm của cô lúc này.\nKhông được, không muốn, cũng không cần thiết.\nCho nên cuối cùng cô ấy vẫn giữ chừng mực như mọi khi. Mỗi người đều sẽ cần những tiếng reo hò và rượu ngon trong bữa tiệc, và họ cũng sẽ cần được yên tĩnh sau buổi lễ hội.\nỞ thời đại này, có lẽ chỉ có một người gõ cửa không đúng lúc khi cô ấy \"yên lặng\", đó chính là Citlali.\nCó lẽ cô ấy rất thích uống rượu, hoặc cũng có thể họ rất thích hợp để trở thành bạn rượu chăng."
+      },
+      {
+        "Title": "Mô Tô Vượt Lửa",
+        "Context": "Trong tình huống khẩn cấp, tốc độ sẽ quyết định sinh tử, Mavuika hiểu rõ điều này. Thế là cô ấy đã nảy sinh ý tưởng chế tạo một chiếc xe có những tính năng mạnh mẽ từ rất sớm.\nNó phải có tốc độ đủ nhanh, có kết cấu ổn định, đảm bảo không bị hư hại trong bất kỳ tình huống nào.\nNó phải có thể vượt qua nhiều loại địa hình, dù đó là vách đá, mặt nước hay bầu trời cao. Còn lúc quan trọng thì phải phóng thẳng về phía trước với tốc độ nhanh nhất.\nNó phải có khả năng bùng nổ, khi cần thiết phải đảm nhiệm chức năng làm vũ khí. Dù sao thì khi Vực Sâu tấn công cũng sẽ không có nhiều thời gian để dây dưa với ma vật mà.\nNó phải có độ tương thích cao với sức mạnh nguyên tố Hỏa, có thể triệu hồi và thu về ngay lập tức. Chỉ cần dang tay ra thì nó sẽ tự động xuất hiện ngay bên cạnh.\n\"Đó là yêu cầu của tôi. Cô có thể làm được chứ, Xilonen?\"\n\"Hả...?\"\nMỗi một tiêu chuẩn đều khó mà đạt được, ghép chúng lại với nhau vào một món đồ lại càng ảo diệu hơn. Chẳng trách ngay cả thợ thủ công tài giỏi như Xilonen cũng cảm thấy đầu óc của Mavuika có chút không bình thường.\nNhưng Mavuika không chỉ đến đây với yêu cầu, mà còn mang đến ý tưởng giải quyết vấn đề... Cô ấy đã tìm kiếm khắp nơi dưới lòng đất Natlan, đào được rất nhiều Thiết Bị Nguồn với đủ loại hình dạng chưa bị Vực Sâu ăn mòn, cùng với rất nhiều bản thiết kế không rõ lai lịch.\nTrong quá khứ xa xôi, tộc rồng cổ đại cũng đã thử chống lại Vực Sâu. Cách thức của chúng vô cùng thô bạo, cũng đã tạo ra rất nhiều thiết bị có động cơ mạnh mẽ, và dựa vào công suất của chúng để giành chiến thắng. Còn những bản vẽ kia, thì được chính tay Mavuika sao chép lại.\nNếu có thể giải mã hàm ý của bản vẽ, rồi nghiên cứu những thiết bị đã có này. Sau đó tách các bộ phận hữu dụng ra và ghép lại...\nNghĩ đến đây, Xilonen ngẩng đầu lên, nhìn thấy Mavuika đang mỉm cười, cô biết mình đã không còn lý do để từ chối. Hơn nữa, cô cũng không muốn từ chối... Làm gì có người thợ nào bỏ lỡ kiệt tác vĩ đại như vậy chứ?\nThế là hai người đồng tâm hiệp lực tìm hiểu bí mật trong thiết bị. Họ phát hiện suy nghĩ ban đầu quá đơn giản, họ đã không thu thập đủ tất cả các linh kiện quan trọng cho những bộ phận cần thiết.\nNếu đã như vậy thì hãy dựa vào kỹ thuật rèn đúc của thời hiện đại để chế tạo những linh kiện còn thiếu, sau đó ghép chúng lại với nhau. Trong quá trình đó, họ lại trải qua nhiều lần quá nhiệt và phát nổ, mới có thể giải quyết được vấn đề tương thích giữa Thiết Bị Nguồn và Nguyên Tố Hỏa.\nSau một thời gian dài nghiên cứu, chiếc Mô Tô Vượt Lửa cuối cùng cũng đã được hoàn thành. Mọi người chưa từng nhìn thấy tạo vật hung hãn và mạnh mẽ như vậy, ai cũng vây quanh và vỗ tay reo hò.\nTừ đó, vị lãnh đạo bảo vệ Natlan lại có thêm một nguồn sức mạnh mới.\nĐiều đáng nói là trong giai đoạn thử nghiệm tiếp theo, Xilonen đã từ chối với lý do \"quên chế tạo chiếc mũ bảo hiểm thứ hai\". Bởi vì ngồi phía sau Mô Tô Vượt Lửa do Mavuika lái thật sự có hơi say xe."
+      },
+      {
+        "Title": "Vision",
+        "Context": "Ngay từ khi Mavuika còn nhỏ, cô ấy vẫn chưa có khái niệm hoàn chỉnh về sinh tử. Lúc đó cha cô đã chiến thắng Nghi Lễ Hành Hương và sắp bước vào hành trình vinh quang.\nTrong văn hóa của Natlan, có được tư cách này tương đương với việc trở thành anh hùng. Mavuika rất tự hào về điều này. Vì vậy khi cha tạm biệt gia đình, cô không hiểu được nỗi lo lắng hiện lên trên nét mặt của mẹ mình.\nToàn quân thất bại trong Trận Chiến Người Gác Đêm không thường xuyên xuất hiện. Cho dù có chiến sĩ hy sinh, chỉ cần tiểu đội xuất chinh có thể mang chiến thắng trở về, thì những người hy sinh đều sẽ được hồi sinh trong tiếng hát của Thơ Hoàn Hồn.\nSau đó tin tức chiến thắng truyền đến đấu trường. Bảy người xuất chinh trải qua ba ngày ba đêm kịch chiến, và đã hy sinh ba chiến sĩ. Cha của Mavuika là một trong số đó.\nTuy có chút lo lắng, nhưng trong ấn tượng của Mavuika thì Nghi Thức Nổi Lửa cũng giống như một bữa tiệc chúc mừng vậy. Rất nhanh thôi, người cha trong ký ức sẽ trở về từ Lửa Thánh, và cả gia đình sẽ một lần nữa đoàn tụ.\nTuy nhiên, hoàn toàn khác với tưởng tượng. Người cha mà Mavuika nghênh đón lại mang đầy thương tích, thậm chí còn không thể đứng vững.\nThơ Hoàn Hồn tuy có thể khiến sinh mệnh bùng cháy lại, nhưng chỉ có vết thương chí mạng là nghịch chuyển được, còn những vết thương tích lũy dần trong trận chiến hoặc bệnh tật vốn có đều sẽ không được chữa lành. Cha của cô ấy đã bị trọng thương do thời gian chiến đấu quá lâu.\nĐó là lần đầu tiên Mavuika nhìn thấy cha mình yếu ớt, cũng là lần đầu tiên cô cảm nhận được \"cái chết\" đang nhìn chằm chằm vào cô. Dù có được sự bảo vệ của Thơ Hoàn Hồn thì \"cái chết\" vẫn là thứ cần phải tôn kính.\nMavuika gần như không hề khóc, nên lần này cũng nhịn được nước mắt mà cúi đầu im lặng. Cô ấy ngồi bên giường bệnh nắm lấy tay cha, trong lòng mang nhiều hối hận hơn là buồn bã.\nNgười cha nhìn thấu tâm sự của cô, nói rằng đây chính là chân tướng của chiến tranh. Không ai là không sợ chết, nhưng sẽ luôn có người đứng ra, vì trong lòng họ đều có thứ muốn bảo vệ.\nNhưng trong thế giới của trẻ con thì không có nhiều đạo lý như thế. Cô không hiểu tại sao cha mình, thậm chí tất cả người lớn đều cam tâm tình nguyện gánh vác trách nhiệm này.\n\"Nếu chiến tranh là điều không thể tránh khỏi, vậy thì con muốn kết thúc trận chiến này.\"\nĐôi mắt Mavuika lấp lánh như ánh lửa. Cha mẹ nhìn nhau, dường như trong khoảnh khắc đấy đã xác nhận được điều gì đó. Họ không vì sự \"trẻ con\" của Mavuika mà vội vàng phủ nhận... Họ đã gật đầu.\nSự khẳng định từ cha mẹ đã khiến cho nguyện vọng ban đầu của Mavuika kiên định hơn, ánh mắt của thần linh cũng chiếu lên người cô. Dù sau này Mavuika ngày càng biết được nhiều bí mật và khó khăn mà Natlan phải đối mặt, thì cô ấy cũng không nghi ngờ ánh mắt tin tưởng của cha mẹ mình.\nCô tin rằng đây là việc chỉ có mình cô mới có thể hoàn thành. Không chỉ vì cô là \"Kiongozi\" Mavuika, mà còn là cô con gái khiến cha mẹ tự hào, là con gái của bộ tộc Dòng Dõi Vườn Treo, là con gái của Natlan."
+      }
+    ]
+  },
+  "Costumes": [
+    {
+      "Id": 210600,
+      "Name": "Mặt Trời Bất Diệt",
+      "Description": "Phong cách của Mavuika. Mặt trời bước đi giữa chúng ta, soi sáng mỗi một đêm, thắp sáng từng ngọn lửa, ban dũng khí cho mỗi một người. Ánh sáng của cô ấy sẽ không bao giờ tắt.",
+      "IsDefault": true
+    }
+  ],
+  "CultivationItems": [
+    104114,
+    113066,
+    101253,
+    112106,
+    104349,
+    113068
+  ],
+  "NameCard": {
+    "Name": "Mavuika - Vầng Thái Dương",
+    "Description": "Hoa văn danh thiếp.\nMọi đời Hỏa Thần đều không có ý định thách thức mặt trời. Nhưng trong mắt người thường, \"vầng thái dương\" chính là vương miện của người lãnh đạo tỏa sáng như ánh mặt trời.",
+    "Icon": "UI_NameCardIcon_Mavuika",
+    "PicturePrefix": "UI_NameCardPic_Mavuika"
+  }
+}

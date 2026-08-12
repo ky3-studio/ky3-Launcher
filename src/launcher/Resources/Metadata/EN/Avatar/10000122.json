@@ -309,6 +309,7 @@
         "Id": 11221,
         "Name": "Striking Serpent",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nPerforms up to 4 kicks that deal <color=#99FF88FF>Dendro DMG</color> with the ferocity and grace of a striking serpent.\n\n<color=#FFD780FF>Charged Attack</color>\nNefer enters the Slither state, consuming Stamina to move rapidly forward for up to 2.5s. When the skill button is released, the duration ends, or Stamina runs out, Nefer will exit the Slither state and consume a certain amount of additional Stamina to deal <color=#99FF88FF>Dendro DMG</color> to opponents. When in the {LINK#N11220001}<color=#FFD780FF>Shadow Dance</color>{/LINK} state, additional Stamina consumption is decreased.\nAdditionally, unleashing the Elemental Skill <color=#FFD780FF>{LINK#S11222}Senet Strategy: Dance of a Thousand Nights{/LINK}</color> or sprinting while Nefer is in the Slither state will not cause her to exit the state.\n\n<color=#FFD780FF>Plunging Attack</color>\nCalling upon the might of Dendro, Nefer plunges towards the ground from mid-air, damaging all opponents in her path and dealing <color=#99FF88FF>AoE Dendro DMG</color> upon impact with the ground.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_Catalyst_MD"
       },
       {
@@ -602,6 +603,7 @@
         "Id": 11222,
         "Name": "Senet Strategy: Dance of a Thousand Nights",
         "Description": "A dance that dissolved dynasties, as chilling as a winter's night on the great sea of sand, yet lingering with the tenderness of moonlit gauze. Nefer charges forward, dealing <color=#99FF88FF>AoE Dendro DMG</color> and entering the {LINK#N11220001}<color=#FFD780FF>Shadow Dance</color>{/LINK} state.\nWhile in the Shadow Dance state, if you have at least 1 {LINK#N11190008}<color=#FFD780FF>Verdant Dew</color>{/LINK}, Nefer's Charged Attacks will be replaced with the special Charged Attack {LINK#N11220002}<color=#FFD780FF>Phantasm Performance</color>{/LINK}, which will not consume Stamina. When in the Shadow Dance state, Nefer's resistance to interruption is increased.\n\nTwo initial charges.\n\n<i>\"The world is a game in which the pieces remain hidden behind a veil. To avoid falling into a trap, one must collect every piece of information one can. This is the meaning of secrets.\"</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Nefer_01"
       }
     ],
@@ -817,6 +819,7 @@
       "Id": 11225,
       "Name": "Sacred Vow: True Eye's Phantasm",
       "Description": "Grant \"revelation\" to the mysteries of the false through Thoth's true sight, dealing <color=#99FF88FF>AoE Dendro DMG</color> to opponents ahead. When unleashed, Nefer will consume all {LINK#N11220003}<color=#FFD780FF>Veils of Falsehood</color>{/LINK} to increase the DMG dealt by the current Elemental Burst.\n\n<i>The blessings of the Ibis King proclaimed by the singers of the burning sands are, in truth, more akin to dire curses.</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Nefer_01"
     },
     "Inherents": [
@@ -843,6 +846,7 @@
         "Id": 1222101,
         "Name": "A Wager of Moonlight",
         "Description": "Nefer will be granted the corresponding buff effects based on the party's <color=#FFD780FF>Moonsign</color>.\n\n<color=#FFD780FF>Moonsign: Ascendant Gleam</color>: When she unleashes her Elemental Skill <color=#FFD780FF>{LINK#S11222}Senet Strategy: Dance of a Thousand Nights{/LINK}</color>, any Dendro Cores on the field will be converted to Seeds of Deceit, and any Lunar-Bloom reactions triggered by nearby characters in the following 15s that would create Dendro Cores or Bountiful Cores will instead create Seeds of Deceit. Seeds of Deceit cannot trigger Hyperbloom or Burgeon reactions and will not burst.\nWhen Nefer unleashes a Charged Attack or {LINK#N11220002}<color=#FFD780FF>Phantasm Performance</color>{/LINK}, she can absorb Seeds of Deceit within a certain range, gaining 1 stack of {LINK#N11220003}<color=#FFD780FF>Veil of Falsehood</color>{/LINK} for every seed absorbed. When this effect reaches 3 stacks, or when the third stack's duration is refreshed, Nefer's Elemental Mastery will be increased by 100 for 8s.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Nefer_05"
       },
       {
@@ -867,6 +871,7 @@
         "Id": 1222201,
         "Name": "Daughter of the Dust and Sand",
         "Description": "When Nefer is in the {LINK#N11220001}<color=#FFD780FF>Shadow Dance</color>{/LINK} state, for 5s after a party member triggers a Lunar-Bloom reaction, Nefer's <color=#FFD780FF>{LINK#S11221}Slither{/LINK}</color> state will provide additional {LINK#N11190008}<color=#FFD780FF>Verdant Dew</color>{/LINK}. Every 100 points of Nefer's Elemental Mastery beyond 500 will strengthen this additional provision effect by 10%. The maximum increase that can be achieved this way is 50%.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Nefer_06"
       },
       {
@@ -888,6 +893,7 @@
         "Id": 1222301,
         "Name": "Moonsign Benediction: Dusklit Eaves",
         "Description": "When a party member triggers a Bloom reaction, it will be converted into the Lunar-Bloom reaction, with every point of Elemental Mastery that Nefer has increasing Lunar-Bloom's Base DMG by 0.0175%, up to a maximum of 14%.\n\nAdditionally, when Nefer is in the party, the party's <color=#FFD780FF>Moonsign</color> will increase by 1 level.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Nefer_07"
       },
       {
@@ -906,6 +912,7 @@
         "Id": 1222501,
         "Name": "Conspiracy of the Golden Vault",
         "Description": "Gains 25% more rewards when dispatched on a Nod-Krai Expedition for 20 hours.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Nefer_08"
       }
     ],

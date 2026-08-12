@@ -42,6 +42,7 @@
             "Charged Attack Sweeping Fire DMG|{param4:F1P}",
             "Charged Attack Condensed Beam DMG|{param5:F1P}",
             "Charged Attack Condensed Beam Stellar-Conduct DMG|{param6:F1P}",
+            "Charged Attack Condensed Beam Stellar Swirl DMG|{param11:F1P}",
             "DMG When in Power Overdrive|{param7:F1P}",
             "Plunge DMG|{param8:F1P}",
             "Low/High Plunge DMG|{param9:P}/{param10:P}"
@@ -60,7 +61,8 @@
                 0.43,
                 0.745878,
                 1.49144,
-                1.862889
+                1.862889,
+                1.2255
               ]
             },
             {
@@ -76,7 +78,8 @@
                 0.465,
                 0.806589,
                 1.612836,
-                2.01452
+                2.01452,
+                1.32525
               ]
             },
             {
@@ -92,7 +95,8 @@
                 0.5,
                 0.8673,
                 1.734233,
-                2.16615
+                2.16615,
+                1.425
               ]
             },
             {
@@ -108,7 +112,8 @@
                 0.55,
                 0.95403,
                 1.907656,
-                2.382765
+                2.382765,
+                1.5675
               ]
             },
             {
@@ -124,7 +129,8 @@
                 0.585,
                 1.014741,
                 2.029052,
-                2.534396
+                2.534396,
+                1.66725
               ]
             },
             {
@@ -140,7 +146,8 @@
                 0.625,
                 1.084125,
                 2.167791,
-                2.707688
+                2.707688,
+                1.78125
               ]
             },
             {
@@ -156,7 +163,8 @@
                 0.68,
                 1.179528,
                 2.358556,
-                2.945964
+                2.945964,
+                1.938
               ]
             },
             {
@@ -172,7 +180,8 @@
                 0.735,
                 1.274931,
                 2.549322,
-                3.184241
+                3.184241,
+                2.09475
               ]
             },
             {
@@ -188,7 +197,8 @@
                 0.79,
                 1.370334,
                 2.740087,
-                3.422517
+                3.422517,
+                2.2515
               ]
             },
             {
@@ -204,7 +214,8 @@
                 0.85,
                 1.47441,
                 2.948195,
-                3.682455
+                3.682455,
+                2.4225
               ]
             },
             {
@@ -220,7 +231,8 @@
                 0.91,
                 1.578486,
                 3.156303,
-                3.942393
+                3.942393,
+                2.5935
               ]
             },
             {
@@ -236,7 +248,8 @@
                 0.97,
                 1.682562,
                 3.364411,
-                4.202331
+                4.202331,
+                2.7645
               ]
             },
             {
@@ -252,7 +265,8 @@
                 1.03,
                 1.786638,
                 3.572519,
-                4.462269
+                4.462269,
+                2.9355
               ]
             },
             {
@@ -268,7 +282,8 @@
                 1.09,
                 1.890714,
                 3.780627,
-                4.722207
+                4.722207,
+                3.1065
               ]
             },
             {
@@ -284,7 +299,8 @@
                 1.15,
                 1.99479,
                 3.988735,
-                4.982145
+                4.982145,
+                3.2775
               ]
             }
           ],
@@ -292,7 +308,8 @@
         },
         "Id": 11331,
         "Name": "Formule Phenomenale: Self-Evident Proposition",
-        "Description": "<color=#FFD780FF>Normal Attack</color>\nGenerates threads that control her weapon using formulae, performing up to 3 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nSummons the Facilitatrice Automatisee Generaliste Interactive et Omnitache, or \"<color=#FFD780FF>Fagio</color>,\" and switches it to <color=#FFD780FF>{LINK#N11330001}Decoding{/LINK}</color> mode: Unleashes a sweeping fire attack on enemies in front, as well as periodically fires condensed beams, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n<color=#FFD780FF>Radiance: Stellar-Conduct</color>: The condensed beams will instead deal <color=#99FFFFFF>AoE Cryo DMG</color> that is considered Stellar-Conduct DMG.\nWhile in <color=#FFD780FF>Decoding</color> mode, Fagio's <color=#FFD780FF>{LINK#N11330002}Decoding Power{/LINK}</color> will continuously increase. Firing condensed beams will also further increase its Decoding Power.\nWhen Fagio's Decoding Power reaches the maximum of 100 points, it switches to <color=#FFD780FF>Power Overdrive</color> mode, in which it fires at opponents with longer intervals, dealing <color=#99FFFFFF>Cryo DMG</color>. It will be unable to switch to Decoding mode at this time.\nWhen not in <color=#FFD780FF>Decoding</color> mode, Fagio's <color=#FFD780FF>Decoding Power</color> gradually decreases. When Sandrone is off-field, she will focus on maintaining Fagio, causing its Decoding Power to decrease at 300% the original rate.\nFagio exits <color=#FFD780FF>Power Overdrive</color> mode when its <color=#FFD780FF>Decoding Power</color> has decreased to under 50.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from midair to strike the ground below, dealing DMG to opponents along their path and causing AoE DMG on landing.",
+        "Description": "<color=#FFD780FF>Normal Attack</color>\nGenerates threads that control her weapon using formulae, performing up to 3 consecutive strikes.\n\n<color=#FFD780FF>Charged Attack</color>\nSummons the Facilitatrice Automatisee Generaliste Interactive et Omnitache, or \"<color=#FFD780FF>Fagio</color>,\" and switches it to <color=#FFD780FF>{LINK#N11330001}Decoding{/LINK}</color> mode: Unleashes a sweeping fire attack on enemies in front, as well as periodically fires condensed beams, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n{LINK#N11500004}<color=#FFD780FF>Radiance: Stellar Glimmer</color>{/LINK}: The condensed beams will instead deal <color=#99FFFFFF>AoE Cryo DMG</color> that is considered the corresponding Stellar Glimmer reaction DMG.\nWhile in <color=#FFD780FF>Decoding</color> mode, Fagio's <color=#FFD780FF>{LINK#N11330002}Decoding Power{/LINK}</color> will continuously increase. Firing condensed beams will also further increase its Decoding Power.\nWhen Fagio's Decoding Power reaches the maximum of 100 points, it switches to <color=#FFD780FF>Power Overdrive</color> mode, in which it fires at opponents with longer intervals, dealing <color=#99FFFFFF>Cryo DMG</color>. It will be unable to switch to Decoding mode at this time.\nWhen not in <color=#FFD780FF>Decoding</color> mode, Fagio's <color=#FFD780FF>Decoding Power</color> gradually decreases. When Sandrone is off-field, she will focus on maintaining Fagio, causing its Decoding Power to decrease at 300% the original rate.\nFagio exits <color=#FFD780FF>Power Overdrive</color> mode when its <color=#FFD780FF>Decoding Power</color> has decreased to under 50.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges from midair to strike the ground below, dealing DMG to opponents along their path and causing AoE DMG on landing.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_04"
       },
       {
@@ -301,7 +318,7 @@
           "Descriptions": [
             "Prism Shot DMG|{param1:F1P}",
             "Prism Shot Stellar-Conduct DMG|{param2:F1P}",
-            "CD|{param3:F1}s"
+            "Prism Shot Stellar Swirl DMG|{param4:F1P}"
           ],
           "Parameters": [
             {
@@ -310,7 +327,8 @@
               "Parameters": [
                 0.324,
                 0.216,
-                4
+                4,
+                0.324
               ]
             },
             {
@@ -319,7 +337,8 @@
               "Parameters": [
                 0.3483,
                 0.2322,
-                4
+                4,
+                0.3483
               ]
             },
             {
@@ -328,7 +347,8 @@
               "Parameters": [
                 0.3726,
                 0.2484,
-                4
+                4,
+                0.3726
               ]
             },
             {
@@ -337,7 +357,8 @@
               "Parameters": [
                 0.405,
                 0.27,
-                4
+                4,
+                0.405
               ]
             },
             {
@@ -346,7 +367,8 @@
               "Parameters": [
                 0.4293,
                 0.2862,
-                4
+                4,
+                0.4293
               ]
             },
             {
@@ -355,7 +377,8 @@
               "Parameters": [
                 0.4536,
                 0.3024,
-                4
+                4,
+                0.4536
               ]
             },
             {
@@ -364,7 +387,8 @@
               "Parameters": [
                 0.486,
                 0.324,
-                4
+                4,
+                0.486
               ]
             },
             {
@@ -373,7 +397,8 @@
               "Parameters": [
                 0.5184,
                 0.3456,
-                4
+                4,
+                0.5184
               ]
             },
             {
@@ -382,7 +407,8 @@
               "Parameters": [
                 0.5508,
                 0.3672,
-                4
+                4,
+                0.5508
               ]
             },
             {
@@ -391,7 +417,8 @@
               "Parameters": [
                 0.5832,
                 0.3888,
-                4
+                4,
+                0.5832
               ]
             },
             {
@@ -400,7 +427,8 @@
               "Parameters": [
                 0.6156,
                 0.4104,
-                4
+                4,
+                0.6156
               ]
             },
             {
@@ -409,7 +437,8 @@
               "Parameters": [
                 0.648,
                 0.432,
-                4
+                4,
+                0.648
               ]
             },
             {
@@ -418,7 +447,8 @@
               "Parameters": [
                 0.6885,
                 0.459,
-                4
+                4,
+                0.6885
               ]
             },
             {
@@ -427,7 +457,8 @@
               "Parameters": [
                 0.729,
                 0.486,
-                4
+                4,
+                0.729
               ]
             },
             {
@@ -436,7 +467,8 @@
               "Parameters": [
                 0.7695,
                 0.513,
-                4
+                4,
+                0.7695
               ]
             }
           ],
@@ -444,7 +476,8 @@
         },
         "Id": 11332,
         "Name": "Formule Phenomenale: Differential Analysis",
-        "Description": "With her impeccable, ladylike poise, Sandrone boards the <color=#FFD780FF>Tea Party Tactical Assault Hovermech</color> and hovers forward for 6s. During this time, Sandrone can control the travel direction of the craft. Pressing Sprint consumes 10 Stamina and launches her into an elegant high-speed hover mode, in which she will move even faster at the cost of 15 Stamina per second.\n\nWhen Sandrone starts hovering, if there are opponents nearby, she will also summon a Prismatic Resonance Cannon and fire 2 Prism Shots at any opponents who have yet to cool down, dealing <color=#99FFFFFF>Cryo DMG</color>.\n<color=#FFD780FF>Radiance: Stellar-Conduct</color>: The second Prism Shot will instead deal <color=#99FFFFFF>Cryo DMG</color> that is considered Stellar-Conduct DMG.\n\nWhen on the Tea Party Tactical Assault Hovermech, Sandrone will also elegantly and quietly repair Fagio, causing <color=#FFD780FF>{LINK#N11330002}Decoding Power{/LINK}</color> to swiftly decrease.",
+        "Description": "With her impeccable, ladylike poise, Sandrone boards the <color=#FFD780FF>Tea Party Tactical Assault Hovermech</color> and hovers forward for 6s. During this time, Sandrone can control the travel direction of the craft. Pressing Sprint consumes 10 Stamina and launches her into an elegant high-speed hover mode, in which she will move even faster at the cost of 15 Stamina per second.\n\nWhen Sandrone starts hovering, if there are opponents nearby, she will also summon a Prismatic Resonance Cannon and fire 2 Prism Shots at any opponents who have yet to cool down, dealing <color=#99FFFFFF>Cryo DMG</color>.\n{LINK#N11500004}<color=#FFD780FF>Radiance: Stellar Glimmer</color>{/LINK}: The second Prism Shot will instead deal <color=#99FFFFFF>Cryo DMG</color> that is considered the corresponding Stellar Glimmer reaction DMG.\n\nWhen on the Tea Party Tactical Assault Hovermech, Sandrone will also elegantly and quietly repair Fagio, causing <color=#FFD780FF>{LINK#N11330002}Decoding Power{/LINK}</color> to swiftly decrease.",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_MarionetteNew_01"
       }
     ],
@@ -455,7 +488,7 @@
           "Bombardment DMG|{param1:F1P} ×3",
           "Convective Inhibition Ray DMG|{param2:F1P}",
           "Convective Inhibition Ray Stellar-Conduct DMG|{param3:F1P}",
-          "CD|{param4:F1}s",
+          "Convective Inhibition Ray Stellar Swirl DMG|{param6:F1P}",
           "Energy Cost|{param5:I}"
         ],
         "Parameters": [
@@ -467,7 +500,8 @@
               3.308,
               2.205333,
               15,
-              60
+              60,
+              3.308
             ]
           },
           {
@@ -478,7 +512,8 @@
               3.5561,
               2.370733,
               15,
-              60
+              60,
+              3.5561
             ]
           },
           {
@@ -489,7 +524,8 @@
               3.8042,
               2.536133,
               15,
-              60
+              60,
+              3.8042
             ]
           },
           {
@@ -500,7 +536,8 @@
               4.135,
               2.756667,
               15,
-              60
+              60,
+              4.135
             ]
           },
           {
@@ -511,7 +548,8 @@
               4.3831,
               2.922067,
               15,
-              60
+              60,
+              4.3831
             ]
           },
           {
@@ -522,7 +560,8 @@
               4.6312,
               3.087467,
               15,
-              60
+              60,
+              4.6312
             ]
           },
           {
@@ -533,7 +572,8 @@
               4.962,
               3.308,
               15,
-              60
+              60,
+              4.962
             ]
           },
           {
@@ -544,7 +584,8 @@
               5.2928,
               3.528533,
               15,
-              60
+              60,
+              5.2928
             ]
           },
           {
@@ -555,7 +596,8 @@
               5.6236,
               3.749067,
               15,
-              60
+              60,
+              5.6236
             ]
           },
           {
@@ -566,7 +608,8 @@
               5.9544,
               3.9696,
               15,
-              60
+              60,
+              5.9544
             ]
           },
           {
@@ -577,7 +620,8 @@
               6.2852,
               4.190133,
               15,
-              60
+              60,
+              6.2852
             ]
           },
           {
@@ -588,7 +632,8 @@
               6.616,
               4.410667,
               15,
-              60
+              60,
+              6.616
             ]
           },
           {
@@ -599,7 +644,8 @@
               7.0295,
               4.686333,
               15,
-              60
+              60,
+              7.0295
             ]
           },
           {
@@ -610,7 +656,8 @@
               7.443,
               4.962,
               15,
-              60
+              60,
+              7.443
             ]
           },
           {
@@ -621,7 +668,8 @@
               7.8565,
               5.237667,
               15,
-              60
+              60,
+              7.8565
             ]
           }
         ],
@@ -629,7 +677,8 @@
       },
       "Id": 11335,
       "Name": "Formule Phenomenale: Q.E.D.",
-      "Description": "In line with established ladylike behavior, Sandrone summons a large number of Prismatic Resonance Cannons for a frontal bombardment before firing on her foes with a Convective Inhibition Ray, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n<color=#FFD780FF>Radiance: Stellar-Conduct</color>: The Convective Inhibition Ray instead deals <color=#99FFFFFF>AoE Cryo DMG</color> that is considered Stellar-Conduct DMG.",
+      "Description": "In line with established ladylike behavior, Sandrone summons a large number of Prismatic Resonance Cannons for a frontal bombardment before firing on her foes with a Convective Inhibition Ray, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\n{LINK#N11500004}<color=#FFD780FF>Radiance: Stellar Glimmer</color>{/LINK}: The Convective Inhibition Ray instead deals <color=#99FFFFFF>AoE Cryo DMG</color> that is considered the corresponding Stellar Glimmer reaction DMG.",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_MarionetteNew_01"
     },
     "Inherents": [
@@ -651,7 +700,8 @@
         },
         "Id": 1332101,
         "Name": "Eternal Speculation Engine",
-        "Description": "<color=#FFD780FF>Radiance: Stellar-Conduct</color>: When using the Elemental Skill {LINK#S11332}<color=#FFD780FF>Formule Phenomenale: Differential Analysis</color>{/LINK}, if Fagio's <color=#FFD780FF>{LINK#N11330002}Decoding Power{/LINK}</color> is greater than 50, the second Prism Shot fired by Fagio at nearby opponents will deal 400% of its original DMG as Fagio's Decoding Power is decreased.\nAdditionally, for every 10 points of <color=#FFD780FF>Decoding Power</color> Fagio loses, it gains 1 stack of <color=#FFD780FF>Refined Tactics</color> for 60s (max 10 stacks). When Sandrone uses the Elemental Burst {LINK#S11335}<color=#FFD780FF>Formule Phenomenale: Q.E.D.</color>{/LINK} while in the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state, all stacks of Refined Tactics are cleared, causing the Convective Inhibition Ray to deal 100% + (number of stacks cleared) × 10% of its original DMG.",
+        "Description": "{LINK#N11500004}<color=#FFD780FF>Radiance: Stellar Glimmer</color>{/LINK}: When using the Elemental Skill {LINK#S11332}<color=#FFD780FF>Formule Phenomenale: Differential Analysis</color>{/LINK}, if Fagio's <color=#FFD780FF>{LINK#N11330002}Decoding Power{/LINK}</color> is greater than 50, the second Prism Shot fired by Fagio at nearby opponents will deal 400% of its original DMG as Fagio's Decoding Power is decreased.\nAdditionally, for every 10 points of <color=#FFD780FF>Decoding Power</color> Fagio loses, it gains 1 stack of <color=#FFD780FF>Refined Tactics</color> for 60s (max 10 stacks). When Sandrone uses the Elemental Burst {LINK#S11335}<color=#FFD780FF>Formule Phenomenale: Q.E.D.</color>{/LINK} while in the <color=#FFD780FF>Radiance: Stellar Glimmer</color> state, all stacks of Refined Tactics are cleared, causing the Convective Inhibition Ray to deal 100% + (number of stacks cleared) × 10% of its original DMG.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_MarionetteNew_05"
       },
       {
@@ -673,6 +723,7 @@
         "Id": 1332201,
         "Name": "A Lady's Code of Conduct",
         "Description": "Increases Sandrone's Elemental Mastery based on her ATK. Every 100 ATK will increase her Elemental Mastery by 8. The maximum increase she can gain this way is 160.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_MarionetteNew_06"
       },
       {
@@ -692,8 +743,9 @@
           "Display": 0
         },
         "Id": 1332301,
-        "Name": "Light of Rationalisme",
-        "Description": "When party members trigger Superconduct, it will be changed to Stellar-Conduct, and party members' Base Stellar-Conduct DMG will be increased based on Sandrone's ATK: Every 100 ATK she has increases the Base Stellar-Conduct DMG by 0.7%. The maximum increase that can be gained this way is 14%.\nAdditionally, when Sandrone is within a {LINK#N11330003}<color=#FFD780FF>Polestar Field</color>{/LINK}, she will enter the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state.",
+        "Name": "Stellar Jubilee: Light of Rationalisme",
+        "Description": "Sandrone will enter the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state when she is inside a {LINK#N11330003}<color=#FFD780FF>Polestar Field</color>{/LINK}, or the <color=#FFD780FF>Radiance: Stellar Swirl</color> state for 8s after a nearby party member triggers a Stellar Swirl reaction.\nWhen a party member triggers a Superconduct or Cryo Swirl reaction, it becomes a Stellar-Conduct or Stellar Swirl reaction instead, and the Base DMG of the aforementioned reaction is also increased by 0.7% for every 100 points of Sandrone's ATK. A maximum increase of 14% can be obtained in this way.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_MarionetteNew_07"
       },
       {
@@ -712,6 +764,7 @@
         "Id": 1332501,
         "Name": "A Caucus Prelude and a Long Tale",
         "Description": "When Sandrone is in the party, you will gain additional snack rewards after turning in your Daily Commissions with Katheryne.",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_MarionetteNew_08"
       }
     ],
@@ -719,13 +772,13 @@
       {
         "Id": 1331,
         "Name": "Morrow After the Golden Dusk",
-        "Description": "When in <color=#FFD780FF>{LINK#N11330001}Decoding{/LINK}</color> mode, Fagio's <color=#FFD780FF>{LINK#N11330002}Decoding Power{/LINK}</color> increases at a 50% lower rate, and all party members deal 30% increased Stellar-Conduct DMG.",
+        "Description": "When in <color=#FFD780FF>{LINK#N11330001}Decoding{/LINK}</color> mode, Fagio's <color=#FFD780FF>{LINK#N11330002}Decoding Power{/LINK}</color> increases at a 50% lower rate, and all party members deal 30% increased Stellar Glimmer reaction DMG.",
         "Icon": "UI_Talent_S_MarionetteNew_01"
       },
       {
         "Id": 1332,
         "Name": "An Heiress Gazed Into the Looking-Glass",
-        "Description": "<color=#FFD780FF>Radiance: Stellar-Conduct</color>: Increases CRIT DMG from Charged Attack condensed beams by 40%. Also, each time a beam is fired, CRIT DMG dealt by all condensed beams fired during this <color=#FFD780FF>{LINK#N11330001}Decoding{/LINK}</color> mode period will be further increased by 20%. Max 3 stacks.",
+        "Description": "<color=#FFD780FF>Radiance: Stellar Glimmer</color>: Increases CRIT DMG from Charged Attack condensed beams by 40%. Also, each time a beam is fired, CRIT DMG dealt by all condensed beams fired during this <color=#FFD780FF>{LINK#N11330001}Decoding{/LINK}</color> mode period will be further increased by 20%. Max 3 stacks.",
         "Icon": "UI_Talent_S_MarionetteNew_02"
       },
       {
@@ -741,7 +794,7 @@
       {
         "Id": 1334,
         "Name": "In Knowledge Lies the World's True Ground",
-        "Description": "When Sandrone deals Stellar-Conduct DMG to an opponent, she will also summon an extra Prismatic Resonance Cannon to fire off a coordinated attack which deals <color=#99FFFFFF>Cryo DMG</color> at 125% of her ATK. This DMG is considered Stellar-Conduct DMG, and the effect can occur once every 4s.",
+        "Description": "When Sandrone deals Stellar-Conduct or Stellar Swirl DMG to an opponent, she will also summon an extra Prismatic Resonance Cannon to fire off a coordinated attack which deals <color=#99FFFFFF>Cryo DMG</color> at 125% or 187.5% of her ATK, respectively. This DMG is considered the corresponding Stellar Glimmer reaction DMG, and the effect can occur once every 4s.",
         "Icon": "UI_Talent_S_MarionetteNew_03"
       },
       {
@@ -757,7 +810,7 @@
       {
         "Id": 1336,
         "Name": "Narcissus Wakes, Her Eyes Upon the Dawn",
-        "Description": "When Fagio fires a condensed beam for the third time while in <color=#FFD780FF>{LINK#N11330001}Decoding{/LINK}</color> mode, the beam becomes a more powerful <color=#FFD780FF>Condensed Cluster Beam</color> that fires continuously. This beam will deal up to 4 additional instances of <color=#99FFFFFF>AoE Cryo DMG</color> at 100% of Sandrone's ATK on top of any subsequent original beam fired.\n<color=#FFD780FF>Radiance: Stellar-Conduct</color>: The <color=#FFD780FF>Condensed Cluster Beam</color> will instead deal 4 additional instances of <color=#99FFFFFF>AoE Cryo DMG</color> at 80% of Sandrone's ATK. This DMG is considered Stellar-Conduct DMG.\nAdditionally, all Stellar-Conduct DMG dealt by Sandrone is {LINK#N11190007}<color=#FFD780FF>elevated</color>{/LINK} by 20%.",
+        "Description": "When Fagio fires a condensed beam for the third time while in <color=#FFD780FF>{LINK#N11330001}Decoding{/LINK}</color> mode, the beam becomes a more powerful <color=#FFD780FF>Condensed Cluster Beam</color> that fires continuously. This beam will deal up to 4 additional instances of <color=#99FFFFFF>AoE Cryo DMG</color> at 100% of Sandrone's ATK on top of any subsequent original beam fired.\n<color=#FFD780FF>Radiance: Stellar Glimmer</color>: The <color=#FFD780FF>Condensed Cluster Beam</color> attack deals 4 additional instances of <color=#99FFFFFF>AoE Cryo DMG</color>. The DMG dealt with this attack, which is considered the corresponding Stellar Glimmer reaction DMG, is equal to:\n<color=#FFD780FF>Radiance: Stellar-Conduct</color>: 80% of Sandrone's ATK.\n<color=#FFD780FF>Radiance: Stellar Swirl</color>: 120% of Sandrone's ATK.\nAdditionally, all Stellar Glimmer reaction DMG dealt by Sandrone is {LINK#N11190007}<color=#FFD780FF>elevated</color>{/LINK} by 20%.",
         "Icon": "UI_Talent_S_MarionetteNew_04"
       }
     ]
@@ -1112,7 +1165,7 @@
       },
       {
         "Title": "Character Story 1",
-        "Context": "She remembers very clearly the day she was born.\nFirst, it was dark. She opened her eyes, and began to scan everything around her. She realized that she was sitting on a chair, and that right before her was a man who looked rather old. He told her his name was Alain Guillotin.\nShe repeated the name, then asked what her name was. The old man did not reply for a while, as if he had just been confronted with something he had never considered before. But in the end, he spoke with some hesitation, a look she had yet to understand crossing his face. \"Marionette...\"\n\"Marionette.\" She repeated the name.\nThe old man's face became even more contorted by some kind of emotion. That is strange, she thought. Why is it that I can identify just about everything I see in my field of vision, but can't quite name what he is feeling? I should put this in my list of questions to be answered.\nAnd that list was a rather long one. For example, why was she here? How did she come to be, and what is the purpose of it? How do you dice a potato so that the pieces are perfectly uniform and so presentable enough for dinner? And what do you have to do so that the plant on the windowsill would yield the most gorgeous blooms...?\nThe answers to certain things, she learned, were easily found. In most cases, these simply required her to invest some time and engage in some straightforward learning. But other questions were far more profound, so profound that even the old man who made her were unable to answer.\nShe spent most of her time with the old man, Alain Guillotin. At some point, she discovered that she did not like him very much at all. He moved too slowly, and was thoroughly disorganized. He would often misplace his papers and tools, and from time to time, he would even hand her a notebook that served no practical purpose.\n\"Your life is a total mess,\" she said to him point-blank. \"Your things are never where they belong, and your papers are scattered everywhere. You write a single equation across two sheets, only for them to somehow end up at opposite ends of the room.\"\nIn the face of her unfiltered complaints, an odd smile appeared on the old man's face, as if he had just been praised for something. \"Haha... That was exactly what Mary-Ann used to say about me, too.\"\nThat man was simply impossible to understand.\nBut over time, she also came to discover the parts of the old man she liked better.\nShe grew fond of the way he was so utterly focused while deep in his work, and the sound of his pen against paper. She cherished the way he would explain various principles of engineering to her, and the way he discussed complex math problems with her at the workbench. She found comfort in the stories he would tell her about the past while sitting by the fire, about the Fontaine of old, about Nymph's Croix... And she held a quiet appreciation for the gentle smile on his face in those moments.\nShe discovered that although this old man was rather careless and disorganized, he was also kind, righteous, and full of wisdom.\nAs time passed, the parts she liked about the old man came to vastly outnumber the parts she did not. This led her to embark on a review of her previous actions.\nAlain was stunned when he found her writing in her notebook.\nShe could tell that he really, really wanted to ask her what she was doing, but for fear of making her change her mind, he forced himself to swallow his curiosity.\nShe decided to take the initiative. \"I think I dislike you,\" she said.\nShe could tell that he was rather hurt by that opener.\n\"But I also discovered that I was wrong. That was a judgment made at a time when my base emotional logic and objectivity were not yet fully in place.\" She continued: \"But now, I feel that you are a very good 'father.'\"\nAlain was astonished for a moment. Then, a smile appeared on his face. It was a smile of genuine happiness mixed with some other emotion.\nIs he... going to cry? She was still slowly learning to read human emotions, though she still couldn't understand the reason behind them.\nBut that question could wait. She picked up her notebook and started writing again."
+        "Context": "She remembers very clearly the day she was born.\nFirst, it was dark. She opened her eyes and began to scan everything around her. She realized that she was sitting on a chair, and that right before her was a man who looked rather old. He told her his name was Alain Guillotin.\nShe repeated the name, then asked what her name was. The old man did not reply for a while, as if he had just been confronted with something he had never considered before. But in the end, he spoke with some hesitation, a look she had yet to understand crossing his face. \"Marionette...\"\n\"Marionette.\" She repeated the name.\nThe old man's face became even more contorted by some kind of emotion. That is strange, she thought. Why is it that I can identify just about everything I see in my field of vision, but can't quite name what he is feeling? I should put this in my list of questions to be answered.\nAnd that list was a rather long one. For example, why was she here? How did she come to be, and what is the purpose of her being? How do you dice a potato so that the pieces are perfectly uniform and so presentable enough for dinner? And what do you have to do so that the plant on the windowsill would yield the most gorgeous blooms...?\nThe answers to certain things, she learned, were easily found. In most cases, these simply required her to invest some time and engage in some straightforward learning. But other questions were far more profound, so profound that even the old man who made her was unable to answer.\nShe spent most of her time with the old man, Alain Guillotin. At some point, she discovered that she did not like him very much at all. He moved too slowly and was thoroughly disorganized. He would often misplace his papers and tools, and from time to time, he would even hand her a notebook that served no practical purpose.\n\"Your life is a total mess,\" she said to him point-blank. \"Your things are never where they belong, and your papers are scattered everywhere. You write a single equation across two sheets, only for them to somehow end up at opposite ends of the room.\"\nIn the face of her unfiltered complaints, an odd smile appeared on the old man's face, as if he had just been praised for something. \"Haha... That was exactly what Mary-Ann used to say about me, too.\"\nThat man was simply impossible to understand.\nBut over time, she also came to discover the parts of the old man she liked better.\nShe grew fond of the way he was so utterly focused while deep in his work, and the sound of his pen against paper. She cherished the way he would explain various engineering principles to her and discuss complex math problems with her at the workbench. She found comfort in the stories he would tell her about the past while sitting by the fire, about the Fontaine of old, about Narzissenkreuz... And she held a quiet appreciation for the gentle smile on his face in those moments.\nShe discovered that although this old man was rather careless and disorganized, he was also kind, righteous, and full of wisdom.\nAs time passed, the parts she liked about the old man came to vastly outnumber the parts she did not. This led her to embark on a review of her previous actions.\nAlain was stunned when he found her writing in her notebook.\nShe could tell that he really, really wanted to ask her what she was doing, but for fear of making her change her mind, he forced himself to swallow his curiosity.\nShe decided to take the initiative. \"I think I dislike you,\" she said.\nShe could tell that he was rather hurt by that opener.\n\"But I also discovered that I was wrong. That was a judgment made at a time when my base emotional logic and objectivity were not yet fully in place.\" She continued: \"But now, I feel that you are a very good 'father.'\"\nAlain was astonished for a moment. Then, a smile appeared on his face. It was a smile of genuine happiness mixed with some other emotion.\nWas he... going to cry? She was still slowly learning to read human emotions, though she still couldn't understand the reasons behind them.\nBut that question could wait. She picked up her notebook and started writing again."
       },
       {
         "Title": "Character Story 2",
@@ -1120,7 +1173,7 @@
       },
       {
         "Title": "Character Story 3",
-        "Context": "She never expected to stay so long in Snezhnaya. And neither did she expect that a land could get so cold, she literally had to warm up the thoughts inside her head in order to think!\nFrom her point of view, life of a member of the Fatui was relaxed, even easy. She did not have to go out to the shops or take care of someone else's every need. Instead, she enjoyed all the conveniences a Harbinger was entitled to. And the tasks Tsaritsa assigned her? Complete child's play for a genius like her.\nThen one day, as she was noting down the date in her diary, she realized with a surprise that she had already been in Snezhnaya longer than all the time she had spent with Alain in Fontaine.\nIt's as if this has become my second home, she thought.\nAnd that led to another question: Just which is her true home, Fontaine or Snezhnaya? And what is \"home,\" exactly?\nIs it the place where one is needed? Certainly, her job in the Fatui is irreplaceable. Or rather, it would be hard to replace her, and Her Majesty clearly has need of her.\nOr is it the place where one feels most at ease? Undoubtedly, life in Snezhnaya had been a pretty comfortable one so far, and there, she had access to all the research equipment she could ever need. And if she ever felt bored, there were always the opera performances.\nOr maybe, \"home\" is where \"family\" is? But family... She had no one else but Pulonia now. So, home was where Pulonia was, then? In that case, did that mean that if she and Pulonia were to travel elsewhere, for example Mondstadt, that \"elsewhere\" would become \"home\" for them?\nThen, she came to realize, the fundamental problem was that she had no idea what she wanted or wished to do... All she had been doing was falling back into her old habit of \"being needed,\" that's all.\nIt was a realization that made her heartsick. Just how pathetic was that? Yet at the same time, she had no idea how she could, or would, change things. How annoying!\nIf someone had pointed a musket at her head and demanded she name something she disliked about Snezhnaya, she would probably end up naming a few of the people she would rather not have to work with.\nAt first, she examined her feelings through a highly guarded lens. She worried that, much like how she had detested Alain at the very beginning, she might eventually discover qualities in her colleagues that she actually liked.\nBut that did not work. If later events taught her anything, it was that some individuals would simply remain detestable to her, no matter how much time had passed or how many objective observations she made about them. Unlike with Alain, the parts of them she did not like would continue to vastly outnumber the parts she did like. Or rather, she did not like any part of them at all.\nOnce again, this was something she did not know how to change. She had no intention of changing other people, let alone herself. How annoying!\nMaybe it was because she still in the midst of learning herself. Maybe it was because she was still learning how to live. Or maybe it was because she had yet to gather enough references and data points. Alain had often said that knowledge was the very foundation of the world, and this was something she kept telling herself too.\nBut she was in no hurry to answer these questions. Hopefully, as she continued to lay the stones of her life, she would be able to eventually grasp these answers.\nBut for the present time... She heard that the Tsaritsa had appointed a new Harbinger who has been singing in the garden all day long...? Hmm. That was a curiosity worth checking out..."
+        "Context": "She never expected to stay so long in Snezhnaya. And neither did she expect that a land could get so cold that she literally had to warm up the thoughts inside her head in order to think!\nFrom her point of view, a Fatui member's life was relaxed, even easy. She did not have to go out to the shops or take care of someone else's every need. Instead, she enjoyed all the conveniences a Harbinger was entitled to. And the tasks Tsaritsa assigned her? Child's play for a genius like her.\nThen one day, as she was noting down the date in her diary, she realized with surprise that she had, all too easily, spent more time in Snezhnaya than she had with Alain in Fontaine.\nIt's as if this has become my second home, she thought.\nAnd that led to another question: Just which is her true home, Fontaine or Snezhnaya? And what is \"home,\" exactly?\nIs it the place where one is needed? Certainly, her job in the Fatui is irreplaceable. Or rather, it would be hard to replace her, and Her Majesty clearly needed her.\nOr is it the place where one feels most at ease? Undoubtedly, life in Snezhnaya had been pretty comfortable so far, and there, she had access to all the research equipment she could ever need. And if she ever felt bored, there were always the opera performances.\nOr maybe, \"home\" is where \"family\" is? But family... She had no one else but Pulonia now. So, home was where Pulonia was, then? In that case, did that mean that if she and Pulonia were to travel elsewhere, for example, Mondstadt, that \"elsewhere\" would become \"home\" for them?\nThen, she came to realize, the fundamental problem was that she had no idea what she wanted or wished to do... All she had been doing was falling back into her old habit of \"being needed,\" that's all.\nIt was a realization that made her heartsick. Just how pathetic was that? Yet at the same time, she had no idea how she could, or would, change things. How annoying!\nIf someone had pointed a musket at her head and demanded she name something she disliked about Snezhnaya, she would probably end up naming the all-too-many people she would rather not have to work with.\nAt first, she examined her feelings through a highly guarded lens. She worried that, much like how she had detested Alain at the very beginning, she might eventually discover qualities in her colleagues that she actually liked.\nBut that did not work. If later events taught her anything, it was that some individuals would simply remain detestable to her, no matter how much time had passed or how many objective observations she made about them. Unlike with Alain, the parts of them she did not like would continue to vastly outnumber the parts she did like. Or rather, she did not like any part of them at all.\nOnce again, this was something she did not know how to change. She had no intention of changing other people, let alone herself. How annoying!\nMaybe it was because she was still in the midst of learning herself. Maybe it was because she was still learning how to live. Or maybe it was because she had yet to gather enough references and data points. Alain had often said that knowledge was the very foundation of the world, and she kept telling herself that, too.\nBut she was in no hurry to answer these questions. Hopefully, as she continued to lay the stones of her life, she would eventually grasp these answers.\nBut for the present time... She heard that the Tsaritsa had appointed a new Harbinger who had been singing in the garden all day long...? Hmm. That was a curiosity worth checking out..."
       },
       {
         "Title": "Character Story 4",
@@ -1128,7 +1181,7 @@
       },
       {
         "Title": "Character Story 5",
-        "Context": "With the \"inheritance\" she received from Alain, Sandrone was able to welcome her second birth.\nShe had always believed she was smart, or at least smarter than most. It was only at this juncture that she realized she was actually far more foolish than she had thought.\nShe told herself she should have gotten there a long time ago. She should have listened to her heart to understand what words like \"loss\" and \"to endure\" really meant. She should have expressed her gratitude to her friends more and made more friends. She should have returned to Fontaine long ago, to Alain's graveside... where she would tell him all about what's happened to her since she left while tidying up his grave.\nBut it was never too late to start, Columbina told her. Columbina herself had learned this from someone else.\nShe let out a little snort. Never did she imagine that she would be receiving life lessons from Columbina one day. But she accepted it anyway. There was no denying it: Columbina was right.\nWhen news of Sandrone's resurrection reached Snezhnograd, words of sympathy and concern quickly followed, alongside a generous offer of \"post-mortem leave\" from her position. However, when Sandrone expressed her desire to remain with the Fatui instead, the Tsaritsa naturally agreed without further comment.\nShe knew this news would cause unhappiness in certain quarters, for it meant the power and interests carved up upon her death had suddenly vanished from their grasp.\nBut she did not care what the others would think. She had just been given a second life, and she was going to live it exactly the way she liked. She was going to live entirely on her own terms now, and she certainly wasn't going to hold her tongue when she got mad! Ha! Did that certain someone really think he was going to take control of the Adventurers' Guild, of Katheryne and the rest of them, from now on? Fat chance!\nBut of course, that did not mean she was entirely free from the shackles of life. Every time she received word of yet another Fatui meeting, she would roll her eyes and grumble as always.\n\"Pfft. Meetings, and more meetings! All day, every day! Annoying!\""
+        "Context": "With the \"inheritance\" she received from Alain, Sandrone was able to welcome her second birth.\nShe had always believed she was smart, or at least smarter than most. It was only at this juncture that she realized she was actually far more foolish than she had thought.\nShe told herself she should have gotten there a long time ago. She should have listened to her heart to understand what words like \"loss\" and \"to endure\" really meant. She should have expressed her gratitude to her friends more and made more friends. She should have returned to Fontaine long ago, to Alain's graveside... where she would tell him all about the things that had happened to her since she left while tidying up his grave.\nBut it was never too late to start, Columbina told her. Columbina herself had learned this from someone else.\nShe let out a little snort. Never did she imagine that she would be receiving life lessons from Columbina one day. But she accepted it anyway. There was no denying it: Columbina was right.\nWhen news of Sandrone's resurrection reached Snezhnograd, words of sympathy and concern quickly followed, alongside a generous offer of \"post-mortem leave\" from her position. However, when Sandrone expressed her desire to remain with the Fatui instead, the Tsaritsa naturally agreed without further comment.\nShe knew this news would cause unhappiness in certain quarters, for it meant the power and interests carved up upon her death had suddenly vanished from their grasp.\nBut she did not care what the others would think. She had just been given a second life, and she was going to live it exactly the way she liked. She was going to live entirely on her own terms now, and she certainly wasn't going to hold her tongue when she got mad! Ha! Did that certain someone really think he was going to take control of the Adventurers' Guild, of the Katherynes and the rest of them, from now on? Fat chance!\nBut of course, that did not mean she was entirely free from life's shackles. Every time she received word of yet another Fatui meeting, she would roll her eyes and grumble as always.\n\"Pfft. Meetings, and more meetings! All day, every day! Annoying!\""
       },
       {
         "Title": "Pulonia",

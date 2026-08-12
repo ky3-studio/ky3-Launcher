@@ -309,6 +309,7 @@
         "Id": 10341,
         "Name": "西風劍術·女僕",
         "Description": "<color=#FFD780FF>普通攻擊</color>\n進行至多四段的連續揮砍。\n\n<color=#FFD780FF>重擊</color>\n持續消耗體力，旋轉大劍攻擊周圍的敵人。\n停止旋轉時，會進行一次格外有力的揮砍。\n\n<color=#FFD780FF>下落攻擊</color>\n從空中下墜衝擊地面，攻擊下落路徑上的敵人，並在落地時造成範圍傷害。",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_A_04"
       },
       {
@@ -539,6 +540,7 @@
         "Id": 10342,
         "Name": "護心鎧",
         "Description": "喚出護體的岩鎧，對周圍的敵人造成<color=#FFE699FF>岩元素傷害</color>，並形成護盾，傷害吸收量基於諾艾爾的防禦力。\n護盾具有如下效果：\n·諾艾爾的普通攻擊與重擊命中時，都有機率為隊伍中所有角色恢復生命值；\n·對所有元素傷害與物理傷害有150%的吸收效果。\n\n觸發治療時的治療量受益於諾艾爾的防禦力。\n\n<i>諾艾爾既是侍奉的女僕，也是堅毅的騎士。</i>",
+        "SpecialEnergyType": 0,
         "Icon": "Skill_S_Noel_01"
       }
     ],
@@ -740,6 +742,7 @@
       "Id": 10343,
       "Name": "大掃除",
       "Description": "將磐石的力量凝聚在武器上，衝擊周圍的敵人並進行一次大範圍掃擊，造成<color=#FFE699FF>岩元素傷害</color>。\n此後獲得如下效果：\n·提高諾艾爾的攻擊範圍。\n·將攻擊傷害轉為<color=#FFE699FF>岩元素傷害</color>，且此元素轉化無法由附魔覆蓋。\n·根據諾艾爾的防禦力提高攻擊力。\n\n<i>需要掃除的，有時不僅僅是灰塵…</i>",
+      "SpecialEnergyType": 0,
       "Icon": "Skill_E_Noel_01"
     },
     "Inherents": [
@@ -764,6 +767,7 @@
         "Id": 342101,
         "Name": "全心全意",
         "Description": "諾艾爾處於隊伍後臺，且當前場上自己的角色的生命值低於30%時自動觸發：\n為當前場上自己的角色生成一個傷害吸收量等同於諾艾爾防禦力400%的護盾，持續20秒。\n·對所有元素傷害與物理傷害有150%的吸收效果。\n該效果60秒內只能觸發一次。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Noel_05"
       },
       {
@@ -784,6 +788,7 @@
         "Id": 342201,
         "Name": "乾淨俐落",
         "Description": "諾艾爾的普通攻擊或重擊累計命中敵人4次，會減少<color=#FFD780FF>護心鎧</color>1秒的冷卻。\n每0.1秒至多計數一次。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Noel_06"
       },
       {
@@ -802,6 +807,7 @@
         "Id": 342301,
         "Name": "女僕的態度",
         "Description": "完美烹飪防禦類食物時，有12%的機率獲得兩倍產出。",
+        "SpecialEnergyType": 0,
         "Icon": "UI_Talent_Cook_Defense"
       }
     ],

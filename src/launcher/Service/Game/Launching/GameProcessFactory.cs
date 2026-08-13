@@ -341,7 +341,6 @@ internal sealed partial class GameProcessFactory
             merged["forgeKey"] = options.ForgeKey.Value.ToString(CultureInfo.InvariantCulture);
             merged["forgeModifier"] = options.ForgeModifier.Value.ToString(CultureInfo.InvariantCulture);
             merged["enableNoGrass"] = options.EnableNoGrass.Value ? "1" : "0";
-            merged["enableNoTreeLeaf"] = options.EnableNoTreeLeaf.Value ? "1" : "0";
             merged["enableGui"] = options.EnableGui.Value ? "1" : "0";
             merged["guiKey"] = options.GuiKey.Value.ToString(CultureInfo.InvariantCulture);
             merged["guiModifier"] = options.GuiModifier.Value.ToString(CultureInfo.InvariantCulture);
@@ -435,7 +434,6 @@ internal sealed partial class GameProcessFactory
             options.ForgeKey.Value = GetInt(values, "forgeKey", options.ForgeKey.Value);
             options.ForgeModifier.Value = GetInt(values, "forgeModifier", options.ForgeModifier.Value);
             options.EnableNoGrass.Value = GetBool(values, "enableNoGrass", options.EnableNoGrass.Value);
-            options.EnableNoTreeLeaf.Value = GetBool(values, "enableNoTreeLeaf", options.EnableNoTreeLeaf.Value);
             options.EnableGui.Value = GetBool(values, "enableGui", options.EnableGui.Value);
             options.GuiKey.Value = GetInt(values, "guiKey", options.GuiKey.Value);
             options.GuiModifier.Value = GetInt(values, "guiModifier", options.GuiModifier.Value);

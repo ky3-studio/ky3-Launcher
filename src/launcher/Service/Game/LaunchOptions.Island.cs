@@ -94,9 +94,6 @@ internal sealed partial class LaunchOptions
     public IObservableProperty<bool> EnableNoGrass { get => field ??= CreateProperty(SettingKeys.LaunchEnableNoGrass, false); }
 
     [field: MaybeNull]
-    public IObservableProperty<bool> EnableNoTreeLeaf { get => field ??= CreateProperty(SettingKeys.LaunchEnableNoTreeLeaf, false); }
-
-    [field: MaybeNull]
     public IObservableProperty<bool> EnableGui { get => field ??= CreateProperty(SettingKeys.LaunchEnableGui, true); }
 
     [field: MaybeNull]

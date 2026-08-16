@@ -140,8 +140,8 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
 
         try
         {
-            bool startup = autoStartService.IsStartupEnabled();
-            bool runElevated = autoStartService.IsRunElevatedEnabled();
+            bool startup = AutoStartService.IsStartupEnabled();
+            bool runElevated = AutoStartService.IsRunElevatedEnabled();
             AppOptions options = appOptionsInstance;
             appOptions = options;
 

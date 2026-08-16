@@ -8,15 +8,14 @@
 // Licensed under the MIT license.
 
 using Launcher.Core.ExceptionService;
+using Launcher.Core.Logging;
 using Launcher.Core.Property;
-using Launcher.Core.Setting;
 using Launcher.Factory.ContentDialog;
 using Launcher.Factory.Picker;
 using Launcher.Model;
 using Launcher.Model.Entity;
 using Launcher.Model.Intrinsic;
 using Launcher.Service.Game;
-using Launcher.Service.Game.AdvancedStart;
 using Launcher.Service.Game.Locator;
 using Launcher.Service.Game.Package;
 using Launcher.Service.Game.PathAbstraction;
@@ -28,6 +27,7 @@ using Launcher.Service.User;
 using Launcher.UI.Input.HotKey;
 using Launcher.UI.Input.LowLevel;
 using Launcher.UI.Xaml.View.Dialog;
+using Launcher.UI.Xaml.View.Window;
 using Launcher.Web.ThirdPartyTool;
 using System.Collections.Immutable;
 using BindingUser = Launcher.ViewModel.User.User;
@@ -47,7 +47,6 @@ internal sealed partial class LaunchGameViewModel : Abstraction.ViewModel, IView
     private readonly ITaskContext taskContext;
     private readonly IMessenger messenger;
     private readonly IFileSystemPickerInteraction fileSystemPickerInteraction;
-    private readonly AdvancedStartDelayedProgramStore store;
 
     [GeneratedConstructor]
     public partial LaunchGameViewModel(IServiceProvider serviceProvider);
@@ -68,12 +67,6 @@ internal sealed partial class LaunchGameViewModel : Abstraction.ViewModel, IView
 
     private IObservableProperty<ImmutableArray<ToolInfo>> thirdPartyToolsField = new ObservableProperty<ImmutableArray<ToolInfo>>(ImmutableArray<ToolInfo>.Empty);
     public IObservableProperty<ImmutableArray<ToolInfo>> ThirdPartyTools { get => thirdPartyToolsField; }
-
-    public string AdvancedStartProgramPath
-    {
-        get => field;
-        private set => SetProperty(ref field, value);
-    } = string.Empty;
 
     LaunchScheme? IViewModelSupportLaunchExecution.TargetScheme { get => TargetSchemeFilteredGameAccountsView.Scheme; }
 
@@ -150,24 +143,8 @@ internal sealed partial class LaunchGameViewModel : Abstraction.ViewModel, IView
         return BlockDeferral<PackageConvertStatus>.CreateAsync<LaunchGamePackageConvertDialog>(serviceProvider, static (state, dialog) => dialog.State = state);
     }
 
-    private readonly object delayedSaveGate = new();
-    private CancellationTokenSource? delayedSaveCts;
-
     protected override async ValueTask<bool> LoadOverrideAsync(CancellationToken token)
     {
-        AdvancedStartProgramPath = LocalSetting.Get(SettingKeys.LaunchAdvancedStartProgramPath, string.Empty);
-
-        try
-        {
-            Entries = store.Load();
-        }
-        catch
-        {
-            Entries = [];
-        }
-
-        WireEntries(Entries);
-
         if (LaunchOptions.GamePathEntries.Value.IsDefaultOrEmpty)
         {
             await serviceProvider.GetRequiredService<IGamePathService>().SilentLocateAllGamePathAsync().ConfigureAwait(false);
@@ -192,5 +169,12 @@ internal sealed partial class LaunchGameViewModel : Abstraction.ViewModel, IView
         InitializeThirdPartyToolsInBackgroundAsync(token).SafeForget();
 
         return true;
+    }
+
+    [Command("IdentifyMonitorsCommand")]
+    private static async Task IdentifyMonitorsAsync()
+    {
+        SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Identify monitors", "LaunchGameViewModel.Command"));
+        await IdentifyMonitorWindow.IdentifyAllMonitorsAsync(3).ConfigureAwait(false);
     }
 }

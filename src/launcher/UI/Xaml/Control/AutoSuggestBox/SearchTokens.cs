@@ -19,11 +19,15 @@ using Launcher.Model.Metadata.Weapon;
 using Launcher.Web.Endpoint.Launcher;
 using System.Collections.Frozen;
 using System.Collections.Immutable;
+using System.Globalization;
+using System.Text;
 
 namespace Launcher.UI.Xaml.Control.AutoSuggestBox;
 
 internal static class SearchTokens
 {
+    private static readonly CompositeFormat WikiFoodRankStarFormat = CompositeFormat.Parse(SH.ViewWikiFoodRankStar);
+
     private static readonly ImmutableArray<KeyValuePair<string, SearchToken>> ElementTokens = [.. IntrinsicFrozen.ElementNameValues.Select(static nv => KeyValuePair.Create(nv.Name, new SearchToken(SearchTokenKind.ElementName, nv.Name, nv.Value, iconUri: ElementNameIconConverter.ElementNameToUri(nv.Name))))];
     private static readonly ImmutableArray<KeyValuePair<string, SearchToken>> ItemQuality45Tokens = [.. IntrinsicFrozen.ItemQualityNameValues.Where(static nv => nv.Value >= QualityType.QUALITY_PURPLE).Select(nv => KeyValuePair.Create(nv.Name, new SearchToken(SearchTokenKind.ItemQuality, nv.Name, (int)nv.Value, quality: QualityColorConverter.QualityToColor(nv.Value))))];
     private static readonly ImmutableArray<KeyValuePair<string, SearchToken>> ItemQualityAllTokens = [.. IntrinsicFrozen.ItemQualityNameValues.Select(static nv => KeyValuePair.Create(nv.Name, new SearchToken(SearchTokenKind.ItemQuality, nv.Name, (int)nv.Value, quality: QualityColorConverter.QualityToColor(nv.Value))))];
@@ -98,7 +102,7 @@ internal static class SearchTokens
     {
         ImmutableArray<KeyValuePair<string, SearchToken>> rankTokens = [.. Enumerable.Range(1, 5).Select(r =>
         {
-            string label = string.Format(SH.ViewWikiFoodRankStar, r);
+            string label = string.Format(CultureInfo.CurrentCulture, WikiFoodRankStarFormat, r);
             return KeyValuePair.Create(label, new SearchToken(SearchTokenKind.ItemQuality, label, r));
         })];
 

@@ -249,7 +249,7 @@ internal partial class AutoSuggestTokenBoxItem : ListViewItem
 
     private void OnAutoSuggestBoxSuggestionChosen(Microsoft.UI.Xaml.Controls.AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
     {
-        Owner.OnSuggestionsChosen(sender, args);
+        AutoSuggestTokenBox.OnSuggestionsChosen(sender, args);
     }
 
     private void OnAutoSuggestBoxTextChanged(Microsoft.UI.Xaml.Controls.AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)

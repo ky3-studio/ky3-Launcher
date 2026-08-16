@@ -37,10 +37,10 @@ internal sealed partial class RedeemCodeService : ObservableObject
     public ObservableCollection<RedeemCodeItem> OsRedeemCodes { get; } = [];
 
     [ObservableProperty]
-    private bool hasCnCodes;
+    public partial bool HasCnCodes { get; set; }
 
     [ObservableProperty]
-    private bool hasOsCodes;
+    public partial bool HasOsCodes { get; set; }
 
     public ICommand CopyCodeCommand => new AsyncRelayCommand<string>(CopyCodeAsync);
 

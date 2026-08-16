@@ -175,13 +175,6 @@ internal static class SettingKeys
     public const string LaunchGamePathEntries = "Launcher::Game::Path::Entries";
     public const string LaunchIsWindowsHDREnabled = "Launcher::Game::Registry::WindowsHDR::Enabled";
 
-    // Advanced Start
-    public const string LaunchAdvancedStartProgramPath = "Launcher::Game::AdvancedStart::ProgramPath";
-    public const string LaunchAdvancedStartFeedEndpoint = "Launcher::Game::AdvancedStart::FeedEndpoint";
-    public const string LaunchAdvancedStartDelayedPrograms = "Launcher::Game::AdvancedStart::DelayedPrograms";
-    public const string LaunchAdvancedStartDelayedOnAdvancedStart = "Launcher::Game::AdvancedStart::DelayedOnAdvancedStart";
-    public const string LaunchAdvancedStartDelayedOnGameLaunch = "Launcher::Game::AdvancedStart::DelayedOnGameLaunch";
-
     // Storage
 
     // Web

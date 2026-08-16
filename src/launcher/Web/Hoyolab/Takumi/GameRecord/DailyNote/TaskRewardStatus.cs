@@ -11,8 +11,15 @@ namespace Launcher.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 
 internal enum TaskRewardStatus
 {
-    TaskRewardStatusInvalid,
-    TaskRewardStatusTakenAward,
-    TaskRewardStatusFinished,
-    TaskRewardStatusUnfinished,
+    [JsonStringEnumMemberName("TaskRewardStatusInvalid")]
+    Invalid,
+
+    [JsonStringEnumMemberName("TaskRewardStatusTakenAward")]
+    TakenAward,
+
+    [JsonStringEnumMemberName("TaskRewardStatusFinished")]
+    Finished,
+
+    [JsonStringEnumMemberName("TaskRewardStatusUnfinished")]
+    Unfinished,
 }

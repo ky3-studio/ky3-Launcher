@@ -80,7 +80,7 @@ internal sealed partial class MetadataService : IMetadataService
         {
             if (bundledStream is null)
             {
-                logger.LogWarning("Bundled metadata file not found: {FileName}", strategy.Name);
+                LogBundledMetadataFileNotFound(strategy.Name);
                 return MemoryCache.Set(cacheKey, ImmutableArray<T>.Empty);
             }
 
@@ -96,7 +96,7 @@ internal sealed partial class MetadataService : IMetadataService
             catch (Exception ex)
             {
                 ex.Data.Add("FileName", strategy.Name);
-                logger.LogError(ex, "Bundled metadata corrupted: {FileName}", strategy.Name);
+                LogBundledMetadataCorrupted(ex, strategy.Name);
                 return MemoryCache.Set(cacheKey, ImmutableArray<T>.Empty);
             }
         }
@@ -110,7 +110,7 @@ internal sealed partial class MetadataService : IMetadataService
         (string FileName, byte[] Data)[] bundledResources = metadataOptions.GetBundledScatteredResources(strategy.Name);
         if (bundledResources.Length <= 0)
         {
-            logger.LogWarning("Bundled scattered metadata not found: {StrategyName}", strategy.Name);
+            LogBundledScatteredMetadataNotFound(strategy.Name);
 
             try
             {
@@ -143,4 +143,13 @@ internal sealed partial class MetadataService : IMetadataService
 
         return ValueTask.FromResult(MemoryCache.Set(cacheKey, results.ToImmutable()));
     }
+
+    [LoggerMessage(Level = LogLevel.Warning, Message = "Bundled metadata file not found: {FileName}")]
+    private partial void LogBundledMetadataFileNotFound(string fileName);
+
+    [LoggerMessage(Level = LogLevel.Error, Message = "Bundled metadata corrupted: {FileName}")]
+    private partial void LogBundledMetadataCorrupted(Exception ex, string fileName);
+
+    [LoggerMessage(Level = LogLevel.Warning, Message = "Bundled scattered metadata not found: {StrategyName}")]
+    private partial void LogBundledScatteredMetadataNotFound(string strategyName);
 }

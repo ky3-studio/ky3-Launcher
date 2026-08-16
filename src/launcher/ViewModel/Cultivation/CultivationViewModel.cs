@@ -132,7 +132,9 @@ internal sealed partial class CultivationViewModel : Abstraction.ViewModel
 
     private void OnCurrentProjectChanged(object? sender, object? e)
     {
+#pragma warning disable CA2012
         UpdateEntryCollectionAsync(Projects?.CurrentItem).SafeForget();
+#pragma warning restore CA2012
     }
 
     [Command("AddProjectCommand")]

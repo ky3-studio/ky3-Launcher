@@ -12,21 +12,27 @@ namespace Launcher.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 [ExtendedEnum]
 internal enum AttendanceRewardStatus
 {
+    [JsonStringEnumMemberName("AttendanceRewardStatusInvalid")]
     [LocalizationKey(nameof(SH.WebDailyNoteAttendanceRewardStatusInvalid))]
-    AttendanceRewardStatusInvalid,
+    Invalid,
 
+    [JsonStringEnumMemberName("AttendanceRewardStatusTakenAward")]
     [LocalizationKey(nameof(SH.WebDailyNoteAttendanceRewardStatusTakenAward))]
-    AttendanceRewardStatusTakenAward,
+    TakenAward,
 
+    [JsonStringEnumMemberName("AttendanceRewardStatusWaitTaken")]
     [LocalizationKey(nameof(SH.WebDailyNoteAttendanceRewardStatusWaitTaken))]
-    AttendanceRewardStatusWaitTaken,
+    WaitTaken,
 
+    [JsonStringEnumMemberName("AttendanceRewardStatusUnfinished")]
     [LocalizationKey(nameof(SH.WebDailyNoteAttendanceRewardStatusUnfinished))]
-    AttendanceRewardStatusUnfinished,
+    Unfinished,
 
+    [JsonStringEnumMemberName("AttendanceRewardStatusFinishedNonReward")]
     [LocalizationKey(nameof(SH.WebDailyNoteAttendanceRewardStatusFinishedNonReward))]
-    AttendanceRewardStatusFinishedNonReward,
+    FinishedNonReward,
 
+    [JsonStringEnumMemberName("AttendanceRewardStatusForbid")]
     [LocalizationKey(nameof(SH.WebDailyNoteAttendanceRewardStatusForbid))]
-    AttendanceRewardStatusForbid,
+    Forbid,
 }

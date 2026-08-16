@@ -58,7 +58,9 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
 
     public void RedirectedActivate(LauncherActivationArguments args)
     {
+#pragma warning disable CA2012
         HandleActivationExclusivelyAsync(args).SafeForget();
+#pragma warning restore CA2012
 
         async ValueTask HandleActivationExclusivelyAsync(LauncherActivationArguments args)
         {
@@ -78,7 +80,9 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
 
     public void NotificationInvoked(AppNotificationManager manager, AppNotificationActivatedEventArgs args)
     {
+#pragma warning disable CA2012
         HandleAppNotificationActivationAsync(args.Arguments.AsReadOnly(), false).SafeForget();
+#pragma warning restore CA2012
     }
 
     public void ActivateAndInitialize(LauncherActivationArguments args)
@@ -88,7 +92,9 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
             return;
         }
 
+#pragma warning disable CA2012
         ActivateAndInitializeAsync().SafeForget();
+#pragma warning restore CA2012
 
         async ValueTask ActivateAndInitializeAsync()
         {
@@ -184,7 +190,7 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
         {
             if (LauncherRuntime.IsProcessElevated)
             {
-                serviceProvider.GetRequiredService<AutoStartService>().EnsureUpToDate();
+                AutoStartService.EnsureUpToDate();
             }
         }
         catch

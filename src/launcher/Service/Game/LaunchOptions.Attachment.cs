@@ -65,12 +65,4 @@ internal sealed partial class LaunchOptions
     [field: MaybeNull]
     public IObservableProperty<string> AttachProgram3Args { get => field ??= CreateProperty(SettingKeys.LaunchAttachProgram3Args, string.Empty); }
 
-    [field: MaybeNull]
-    public IObservableProperty<string> AdvancedStartProgramPath { get => field ??= CreateProperty(SettingKeys.LaunchAdvancedStartProgramPath, string.Empty); }
-
-    [field: MaybeNull]
-    public IObservableProperty<bool> AdvancedStartDelayedOnAdvancedStart { get => field ??= CreateProperty(SettingKeys.LaunchAdvancedStartDelayedOnAdvancedStart, false); }
-
-    [field: MaybeNull]
-    public IObservableProperty<bool> AdvancedStartDelayedOnGameLaunch { get => field ??= CreateProperty(SettingKeys.LaunchAdvancedStartDelayedOnGameLaunch, false); }
 }

@@ -29,7 +29,7 @@ internal sealed partial class AppDbContext : DbContext
             if (serviceProviderIsService.IsService(typeof(ILogger<AppDbContext>)))
             {
                 logger = this.GetService<ILogger<AppDbContext>>();
-                logger.LogInformation("AppDbContext::{ContextId} created", ContextId);
+                LogContextCreated(logger, ContextId);
             }
         }
         catch
@@ -89,7 +89,10 @@ internal sealed partial class AppDbContext : DbContext
     public override void Dispose()
     {
         base.Dispose();
-        logger?.LogInformation("AppDbContext::{ContextId} disposed", ContextId);
+        if (logger is not null)
+        {
+            LogContextDisposed(logger, ContextId);
+        }
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -101,4 +104,10 @@ internal sealed partial class AppDbContext : DbContext
             .ApplyConfiguration(new HardChallengeEntryConfiguration())
             .ApplyConfiguration(new UserConfiguration());
     }
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "AppDbContext::{ContextId} created")]
+    private static partial void LogContextCreated(ILogger logger, DbContextId contextId);
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "AppDbContext::{ContextId} disposed")]
+    private static partial void LogContextDisposed(ILogger logger, DbContextId contextId);
 }

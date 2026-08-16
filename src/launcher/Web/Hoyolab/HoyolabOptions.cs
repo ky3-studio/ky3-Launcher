@@ -59,6 +59,7 @@ internal static class HoyolabOptions
     ]);
 
     [SuppressMessage("", "CA1308")]
+    [SuppressMessage("", "CA5350")]
     private static string GenerateDeviceId40()
     {
         Guid uuid = Uuid.NewV5(DeviceId36, new("9450ea74-be9c-35c0-9568-f97407856768"));

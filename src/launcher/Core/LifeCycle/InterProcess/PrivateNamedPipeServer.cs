@@ -38,7 +38,9 @@ internal sealed partial class PrivateNamedPipeServer : IDisposable
 
     public void Start()
     {
+#pragma warning disable CA2012
         RunAsync().SafeForget();
+#pragma warning restore CA2012
     }
 
     private static NamedPipeServerStream CreatePipeServerStream()
@@ -66,7 +68,7 @@ internal sealed partial class PrivateNamedPipeServer : IDisposable
                 try
                 {
                     await serverStream.WaitForConnectionAsync(serverTokenSource.Token).ConfigureAwait(false);
-                    logger.LogInformation("Pipe session created");
+                    LogPipeSessionCreated();
                     RunPacketSession(serverStream, serverTokenSource.Token);
                 }
                 catch (IOException)
@@ -93,7 +95,7 @@ internal sealed partial class PrivateNamedPipeServer : IDisposable
         while (serverStream.IsConnected && !token.IsCancellationRequested)
         {
             serverStream.ReadPacket(out PipePacketHeader header);
-            logger.LogInformation("Pipe packet: [Type:{Type}] [Command:{Command}]", header.Type, header.Command);
+            LogPipePacket(header.Type, header.Command);
             switch (header.Type, header.Command)
             {
                 case (PipePacketType.Request, PipePacketCommand.RequestElevationStatus):
@@ -106,7 +108,7 @@ internal sealed partial class PrivateNamedPipeServer : IDisposable
                     LauncherActivationArguments? LauncherArgs = serverStream.ReadJsonContent<LauncherActivationArguments>(in header);
                     if (LauncherArgs is not null)
                     {
-                        logger.LogInformation("Redirect activation: [Kind:{Kind}] [Arguments:{Arguments}]", LauncherArgs.Kind, LauncherArgs.LaunchActivatedArguments);
+                        LogRedirectActivation(LauncherArgs.Kind, LauncherArgs.LaunchActivatedArguments);
                     }
 
                     messageDispatcher.RedirectedActivation(LauncherArgs);
@@ -123,4 +125,13 @@ internal sealed partial class PrivateNamedPipeServer : IDisposable
             }
         }
     }
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "Pipe session created")]
+    private partial void LogPipeSessionCreated();
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "Pipe packet: [Type:{Type}] [Command:{Command}]")]
+    private partial void LogPipePacket(PipePacketType type, PipePacketCommand command);
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "Redirect activation: [Kind:{Kind}] [Arguments:{Arguments}]")]
+    private partial void LogRedirectActivation(LauncherActivationKind kind, string? arguments);
 }

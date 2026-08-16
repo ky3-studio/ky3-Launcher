@@ -15,6 +15,7 @@ namespace Launcher.Core;
 
 internal static class Uuid
 {
+    [SuppressMessage("", "CA5350")]
     public static Guid NewV5(string name, Guid namespaceId)
     {
         Span<byte> namespaceBuffer = stackalloc byte[16];

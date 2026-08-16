@@ -34,6 +34,7 @@ internal static partial class ServiceCollectionExtension
         {
             return services.AddDbContextPool<AppDbContext>(AddDbContext);
 
+            [SuppressMessage("", "CA1873", Justification = "启动时一次性迁移检测路径，GetRequiredService 开销忽略不计")]
             static void AddDbContext(IServiceProvider serviceProvider, DbContextOptionsBuilder builder)
             {
                 string dbFile = LauncherRuntime.GetDataSubDirectoryFile("Data", "Userdata.db");
@@ -45,7 +46,7 @@ internal static partial class ServiceCollectionExtension
                     {
                         if (context.Database.GetPendingMigrations().Any())
                         {
-                            serviceProvider.GetRequiredService<ILogger<AppDbContext>>().LogInformation("[Database] Performing AppDbContext Migrations");
+                            LogPerformingMigrations(serviceProvider.GetRequiredService<ILogger<AppDbContext>>());
                             context.Database.Migrate();
                         }
                     }
@@ -81,4 +82,7 @@ internal static partial class ServiceCollectionExtension
             return services.AddSingleton<IThirdPartyToolService, ThirdPartyToolService>();
         }
     }
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "[Database] Performing AppDbContext Migrations")]
+    private static partial void LogPerformingMigrations(ILogger logger);
 }

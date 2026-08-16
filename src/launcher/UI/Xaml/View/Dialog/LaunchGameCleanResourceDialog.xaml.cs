@@ -13,12 +13,16 @@ using Microsoft.UI.Xaml.Media;
 using Launcher.Core;
 using Launcher.Factory.ContentDialog;
 using System.Collections.Immutable;
+using System.Globalization;
 using System.IO;
+using System.Text;
 
 namespace Launcher.UI.Xaml.View.Dialog;
 
 internal sealed partial class LaunchGameCleanResourceDialog : ContentDialog
 {
+    private static readonly CompositeFormat SelectedTextFormat = CompositeFormat.Parse(SH.ViewDialogCleanResourceSelectedText);
+
     private readonly IContentDialogFactory contentDialogFactory;
 
     public List<CleanResourceItem> CleanableResources { get; }
@@ -66,7 +70,7 @@ internal sealed partial class LaunchGameCleanResourceDialog : ContentDialog
             .Sum(item => item.Size);
 
         TotalSizeText.Text = selectedSize > 0
-            ? string.Format(SH.ViewDialogCleanResourceSelectedText, FormatSize(selectedSize))
+            ? string.Format(CultureInfo.CurrentCulture, SelectedTextFormat, FormatSize(selectedSize))
             : string.Empty;
     }
 

@@ -23,7 +23,9 @@ internal sealed partial class InfoBarDelayCloseBehavior : BehaviorBase<InfoBar>
         AssociatedObject.Closed += OnInfoBarClosed;
         if (MilliSecondsDelay > 0)
         {
+#pragma warning disable CA2012
             PrivateDelayAsync().SafeForget();
+#pragma warning restore CA2012
         }
     }
 

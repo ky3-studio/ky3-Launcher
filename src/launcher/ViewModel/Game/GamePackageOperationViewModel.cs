@@ -122,7 +122,7 @@ internal sealed partial class GamePackageOperationViewModel : Abstraction.ViewMo
                         bytesDownloadedLastRefreshTime = current;
                         long bytesDownloadedPerSecond = (long)(bytesDownloadedSinceLastUpdate / elapsedTime.TotalSeconds);
                         DownloadSpeed = $"{Converters.ToFileSizeString(bytesDownloadedPerSecond),8}/s";
-                        logger.LogInformation("Download Info: [{Bytes}KB|{Duration}|{Speed}]", bytesDownloadedSinceLastUpdate / 1024D, elapsedTime, DownloadSpeed);
+                        LogDownloadInfo(bytesDownloadedSinceLastUpdate / 1024D, elapsedTime, DownloadSpeed);
                         DownloadRemainingTime = bytesDownloadedPerSecond is 0
                             ? UnknownRemainingTime
                             : $"{TimeSpan.FromSeconds((double)(downloadTotalBytes - totalBytesDownloaded) / bytesDownloadedPerSecond):hh\\:mm\\:ss}";
@@ -274,4 +274,7 @@ internal sealed partial class GamePackageOperationViewModel : Abstraction.ViewMo
         IsFinished = true;
         Title = SH.ViewModelGamePackageOperationCanceled;
     }
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "Download Info: [{Bytes}KB|{Duration}|{Speed}]")]
+    private partial void LogDownloadInfo(double bytes, TimeSpan duration, string speed);
 }

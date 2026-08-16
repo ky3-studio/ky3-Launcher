@@ -43,6 +43,7 @@ internal sealed partial class NotifyIconController : IDisposable
 
     private bool disposed;
 
+    [SuppressMessage("", "CA5351")]
     public NotifyIconController(IServiceProvider serviceProvider)
     {
         if (Interlocked.Exchange(ref constructed, true))

@@ -42,10 +42,12 @@ internal static partial class ServiceCollectionExtension
                             SocketsHttpHandler typedHandler = Unsafe.As<SocketsHttpHandler>(handler);
                             typedHandler.UseProxy = true;
                             typedHandler.Proxy = HttpProxyUsingSystemProxy.Instance;
+#pragma warning disable CA5359
                             typedHandler.SslOptions = new System.Net.Security.SslClientAuthenticationOptions
                             {
                                 RemoteCertificateValidationCallback = (_, _, _, _) => true,
                             };
+#pragma warning restore CA5359
                         })
                         .AddHttpMessageHandler<RetryHttpHandler>();
                 })

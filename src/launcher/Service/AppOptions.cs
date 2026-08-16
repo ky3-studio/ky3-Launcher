@@ -135,9 +135,7 @@ internal sealed partial class AppOptions : DbStoreOptions
     {
         try
         {
-            IServiceProvider sp = Ioc.Default;
-            AutoStartService autoStart = sp.GetRequiredService<AutoStartService>();
-            autoStart.SetStartup(value, options.RunElevated.Value);
+            AutoStartService.SetStartup(value, options.RunElevated.Value);
         }
         catch (Exception ex)
         {
@@ -153,9 +151,7 @@ internal sealed partial class AppOptions : DbStoreOptions
 
             if (LauncherRuntime.IsProcessElevated && options.IsStartupEnabled.Value)
             {
-                IServiceProvider sp = Ioc.Default;
-                AutoStartService autoStart = sp.GetRequiredService<AutoStartService>();
-                autoStart.SetStartup(true, value);
+                AutoStartService.SetStartup(true, value);
             }
         }
         catch (Exception ex)

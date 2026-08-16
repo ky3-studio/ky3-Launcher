@@ -33,6 +33,7 @@ internal static class RegistryAccountDataListDecoder
         return address;
     }
 
+    [SuppressMessage("", "CA5351")]
     public static string Decode(string data, out string address)
     {
         address = GetMacAddress();

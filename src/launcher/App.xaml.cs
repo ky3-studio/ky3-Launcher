@@ -106,7 +106,7 @@ public sealed partial class App : Application
                 }
             }
 
-            logger.LogInformation($"{ConsoleBanner}");
+            LogConsoleBanner(ConsoleBanner);
             try
             {
                 FrameworkTheming.SetTheme(ThemeHelper.ElementToFramework(serviceProvider.GetRequiredService<AppOptions>().ElementTheme.Value));
@@ -173,4 +173,7 @@ public sealed partial class App : Application
             });
         }
     }
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "{Banner}")]
+    private partial void LogConsoleBanner(string banner);
 }

@@ -55,6 +55,7 @@ internal static class GachaStatisticsFactoryExtension
     }
 
     [SuppressMessage("", "IDE0057")]
+    [SuppressMessage("", "CA5351")]
     private static Color GetUniqueColorByName(string name)
     {
         if (KnownColors.TryGetValue(name, out Color color))

@@ -77,7 +77,9 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
         ShowUpdateLogWindowAfterUpdate();
         NotifyIfDataFolderHasReparsePoint();
 
+#pragma warning disable CA2012
         RedeemCodeService.RefreshAsync().SafeForget();
+#pragma warning restore CA2012
         CheckAndPrepareUpdateAsync().SafeForget();
         StartPeriodicUpdateCheckAsync().SafeForget();
 
@@ -309,6 +311,7 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
 
             string patchZipPath = Path.Combine(updateCacheDir, "patch.zip");
 
+#pragma warning disable CA5359
             SocketsHttpHandler handler = new()
             {
                 SslOptions = new System.Net.Security.SslClientAuthenticationOptions
@@ -320,6 +323,7 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
                 PooledConnectionLifetime = TimeSpan.FromMinutes(10),
                 ConnectTimeout = TimeSpan.FromSeconds(30),
             };
+#pragma warning restore CA5359
 
             using HttpClient client = new(handler) { Timeout = Timeout.InfiniteTimeSpan };
 

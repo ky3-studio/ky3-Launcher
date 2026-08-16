@@ -29,7 +29,7 @@ internal sealed partial class AchievementRepositoryOperation
 
     public ImportResult Merge(Guid archiveId, IEnumerable<UIAFItem> items, bool aggressive)
     {
-        logger.LogInformation("Perform merge operation for [Archive: {Id}], [Aggressive: {Aggressive}]", archiveId, aggressive);
+        LogPerformMergeOperation(archiveId, aggressive);
         using (IServiceScope scope = serviceProvider.CreateScope())
         {
             AppDbContext appDbContext = scope.GetAppDbContext();
@@ -90,14 +90,14 @@ internal sealed partial class AchievementRepositoryOperation
                 }
             }
 
-            logger.LogInformation("Merge operation complete, [Add: {Add}], [Update: {Update}]", add, update);
+            LogMergeOperationComplete(add, update);
             return new(add, update, 0);
         }
     }
 
     public ImportResult Overwrite(Guid archiveId, IEnumerable<EntityAchievement> items)
     {
-        logger.LogInformation("Perform Overwrite Operation for [Archive: {Id}]", archiveId);
+        LogPerformOverwriteOperation(archiveId);
         using (IServiceScope scope = serviceProvider.CreateScope())
         {
             AppDbContext appDbContext = scope.GetAppDbContext();
@@ -164,7 +164,7 @@ internal sealed partial class AchievementRepositoryOperation
                 }
             }
 
-            logger.LogInformation("Overwrite Operation Complete, Add: {Add}, Update: {Update}, Remove: {Remove}", add, update, remove);
+            LogOverwriteOperationComplete(add, update, remove);
             return new(add, update, remove);
         }
     }
@@ -173,4 +173,16 @@ internal sealed partial class AchievementRepositoryOperation
     {
         return [.. appDbContext.Achievements.AsNoTracking().Where(a => a.ArchiveId == archiveId).OrderBy(a => a.Id)];
     }
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "Perform merge operation for [Archive: {Id}], [Aggressive: {Aggressive}]")]
+    private partial void LogPerformMergeOperation(Guid id, bool aggressive);
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "Merge operation complete, [Add: {Add}], [Update: {Update}]")]
+    private partial void LogMergeOperationComplete(int add, int update);
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "Perform Overwrite Operation for [Archive: {Id}]")]
+    private partial void LogPerformOverwriteOperation(Guid id);
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "Overwrite Operation Complete, Add: {Add}, Update: {Update}, Remove: {Remove}")]
+    private partial void LogOverwriteOperationComplete(int add, int update, int remove);
 }

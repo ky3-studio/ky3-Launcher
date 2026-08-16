@@ -42,6 +42,7 @@ internal sealed partial class LauncherHomePage
         return Path.Combine(BgCacheDir, $"bg_{HashToHex(videoUrl)}{ext}");
     }
 
+    [SuppressMessage("", "CA5351")]
     private static string HashToHex(string input)
     {
         byte[] hash = MD5.HashData(Encoding.UTF8.GetBytes(input));

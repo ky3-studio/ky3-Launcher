@@ -156,7 +156,9 @@ internal sealed partial class AchievementViewModel : Abstraction.ViewModel, INav
 
     private void OnCurrentArchiveChanged(object? sender, object? e)
     {
+#pragma warning disable CA2012
         UpdateAchievementCollectionAsync(Archives?.CurrentItem, achievementsTokenProvider.GetNewToken()).SafeForget();
+#pragma warning restore CA2012
     }
 
     private void OnCurrentAchievementGoalChanged(object? sender, object? e)

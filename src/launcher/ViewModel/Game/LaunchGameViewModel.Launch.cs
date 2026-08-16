@@ -27,11 +27,6 @@ internal sealed partial class LaunchGameViewModel
     {
         SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Launch game", "LaunchGameViewModel.Command"));
 
-        if (LaunchOptions.AdvancedStartDelayedOnGameLaunch.Value)
-        {
-            Shared.LaunchAdvancedDelayedAsync().SafeForget();
-        }
-
         UserAndUid? userAndUid;
         if (LaunchOptions.UsingHoyolabAccount.Value && SelectedLaunchUser is not null)
         {

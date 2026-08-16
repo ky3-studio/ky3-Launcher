@@ -130,10 +130,6 @@ internal sealed partial class LaunchGameViewModelSlim : Abstraction.ViewModelSli
             userAndUid = await userService.GetCurrentUserAndUidAsync().ConfigureAwait(false);
         }
 
-        if (LaunchOptions.AdvancedStartDelayedOnGameLaunch.Value)
-        {
-            Shared.LaunchAdvancedDelayedAsync().SafeForget();
-        }
         await Shared.DefaultLaunchExecutionAsync(this, userAndUid).ConfigureAwait(false);
     }
 }

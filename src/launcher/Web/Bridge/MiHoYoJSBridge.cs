@@ -29,7 +29,7 @@ using System.Text;
 
 namespace Launcher.Web.Bridge;
 
-internal class MiHoYoJSBridge
+internal partial class MiHoYoJSBridge
 {
     private readonly Guid bridgeId = Guid.NewGuid();
     private readonly AsyncLock webMessageLock = new();
@@ -411,7 +411,7 @@ internal class MiHoYoJSBridge
             .Append(')')
             .ToString();
 
-        logger.LogInformation("[{Id}][ExecuteScript: {Callback}]\n{Payload}", bridgeId, callback, payload);
+        LogExecuteScript(bridgeId, callback, payload);
 
         await taskContext.SwitchToMainThreadAsync();
 
@@ -441,11 +441,11 @@ internal class MiHoYoJSBridge
     private async void OnWebMessageReceived(CoreWebView2 webView2, CoreWebView2WebMessageReceivedEventArgs args)
     {
         string message = args.TryGetWebMessageAsString();
-        logger.LogInformation("[{Id}][OnRawMessage]\n{Message}", bridgeId, message);
+        LogRawMessage(bridgeId, message);
         JsParam? param = JsonSerializer.Deserialize<JsParam>(message, serviceProvider.GetRequiredService<JsonSerializerOptions>());
 
         ArgumentNullException.ThrowIfNull(param);
-        logger.LogInformation("[OnMessage]\nMethod  : {Method}\nPayload : {Payload}\nCallback: {Callback}", param.Method, param.Payload, param.Callback);
+        LogOnMessage(param.Method, param.Payload, param.Callback);
 
         try
         {
@@ -466,6 +466,7 @@ internal class MiHoYoJSBridge
     }
 
     [SuppressMessage("", "CA2254")]
+    [SuppressMessage("", "CA1848", Justification = "message 为运行时动态模板，无法转换为 LoggerMessage 编译期常量模板")]
     private IJsBridgeResult? LogUnhandledMessage(string message, params object?[] param)
     {
         logger.LogWarning(message, param);
@@ -516,4 +517,13 @@ internal class MiHoYoJSBridge
         coreWebView2.ExecuteScriptAsync(MiHoYoJavaScripts.HideScrollBarScript).AsTask().SafeForget();
         coreWebView2.ExecuteScriptAsync(MiHoYoJavaScripts.ConvertMouseToTouchScript).AsTask().SafeForget();
     }
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "[{Id}][ExecuteScript: {Callback}] {Payload}")]
+    private partial void LogExecuteScript(Guid id, string callback, string? payload);
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "[{Id}][OnRawMessage] {Message}")]
+    private partial void LogRawMessage(Guid id, string message);
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "[OnMessage] Method: {Method}, Payload: {Payload}, Callback: {Callback}")]
+    private partial void LogOnMessage(string? method, JsonElement payload, string? callback);
 }

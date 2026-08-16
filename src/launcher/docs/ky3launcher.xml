@@ -1957,36 +1957,6 @@
             </code>
             </remarks>
         </member>
-        <member name="T:Launcher.Service.Game.AdvancedStart.Model.AdvancedStartDelayedProgramEntry">
-            <inheritdoc/>
-        </member>
-        <member name="P:Launcher.Service.Game.AdvancedStart.Model.AdvancedStartDelayedProgramEntry.Name">
-            <inheritdoc/>
-        </member>
-        <member name="P:Launcher.Service.Game.AdvancedStart.Model.AdvancedStartDelayedProgramEntry.Path">
-            <inheritdoc/>
-        </member>
-        <member name="P:Launcher.Service.Game.AdvancedStart.Model.AdvancedStartDelayedProgramEntry.DelaySeconds">
-            <inheritdoc/>
-        </member>
-        <member name="T:Launcher.Service.Game.AdvancedStart.Model.AdvancedStartDelayedProgramsConfigurationReflection">
-            <summary>Holder for reflection information generated from AdvancedStartDelayedProgramsConfiguration.proto</summary>
-        </member>
-        <member name="P:Launcher.Service.Game.AdvancedStart.Model.AdvancedStartDelayedProgramsConfigurationReflection.Descriptor">
-            <summary>File descriptor for AdvancedStartDelayedProgramsConfiguration.proto</summary>
-        </member>
-        <member name="F:Launcher.Service.Game.AdvancedStart.Model.AdvancedStartDelayedProgramEntryDto.NameFieldNumber">
-            <summary>Field number for the "name" field.</summary>
-        </member>
-        <member name="F:Launcher.Service.Game.AdvancedStart.Model.AdvancedStartDelayedProgramEntryDto.PathFieldNumber">
-            <summary>Field number for the "path" field.</summary>
-        </member>
-        <member name="F:Launcher.Service.Game.AdvancedStart.Model.AdvancedStartDelayedProgramEntryDto.DelaySecondsFieldNumber">
-            <summary>Field number for the "delay_seconds" field.</summary>
-        </member>
-        <member name="F:Launcher.Service.Game.AdvancedStart.Model.AdvancedStartDelayedProgramsConfiguration.EntriesFieldNumber">
-            <summary>Field number for the "entries" field.</summary>
-        </member>
         <member name="T:Launcher.Service.Game.LaunchStatusOptions">
             <inheritdoc/>
         </member>
@@ -2067,10 +2037,10 @@
             <inheritdoc/>
         </member>
         <member name="P:Launcher.Service.RedeemCode.RedeemCodeService.HasCnCodes">
-            <inheritdoc cref="F:Launcher.Service.RedeemCode.RedeemCodeService.hasCnCodes"/>
+            <inheritdoc/>
         </member>
         <member name="P:Launcher.Service.RedeemCode.RedeemCodeService.HasOsCodes">
-            <inheritdoc cref="F:Launcher.Service.RedeemCode.RedeemCodeService.hasOsCodes"/>
+            <inheritdoc/>
         </member>
         <member name="M:Launcher.Service.RemoteConfig.FeedbackService.UploadImageAsync(System.String)">
             <summary>Upload a feedback image (no auth required). Returns the hosted URL or null on failure.</summary>
@@ -2551,36 +2521,6 @@
             </summary>
         </member>
         <member name="M:Launcher.UI.Xaml.View.Dialog.LaunchGameAccountNameDialog.GetBindingConnector(System.Int32,System.Object)">
-            <summary>
-            GetBindingConnector(int connectionId, object target)
-            </summary>
-        </member>
-        <member name="M:Launcher.UI.Xaml.View.Dialog.LaunchGameAdvancedStartDownloadDialog.InitializeComponent">
-            <summary>
-            InitializeComponent()
-            </summary>
-        </member>
-        <member name="M:Launcher.UI.Xaml.View.Dialog.LaunchGameAdvancedStartDownloadDialog.Connect(System.Int32,System.Object)">
-            <summary>
-            Connect()
-            </summary>
-        </member>
-        <member name="M:Launcher.UI.Xaml.View.Dialog.LaunchGameAdvancedStartDownloadDialog.GetBindingConnector(System.Int32,System.Object)">
-            <summary>
-            GetBindingConnector(int connectionId, object target)
-            </summary>
-        </member>
-        <member name="M:Launcher.UI.Xaml.View.Dialog.LaunchGameAdvancedStartDownloaderSourceDialog.InitializeComponent">
-            <summary>
-            InitializeComponent()
-            </summary>
-        </member>
-        <member name="M:Launcher.UI.Xaml.View.Dialog.LaunchGameAdvancedStartDownloaderSourceDialog.Connect(System.Int32,System.Object)">
-            <summary>
-            Connect()
-            </summary>
-        </member>
-        <member name="M:Launcher.UI.Xaml.View.Dialog.LaunchGameAdvancedStartDownloaderSourceDialog.GetBindingConnector(System.Int32,System.Object)">
             <summary>
             GetBindingConnector(int connectionId, object target)
             </summary>
@@ -6311,196 +6251,6 @@
         <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAccountTitle">
             <summary><para>Looks up a localized string for "ViewDialogLaunchGameAccountTitle".</para><code>Neutral  Value: "为账号命名"</code><code>en-US    Value: "Name the account"</code><code>vi-VN    Value: "Đặt tên cho tài khoản"</code><code>zh-TW    Value: "為賬號命名"</code></summary>
         </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStart7zDataError">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStart7zDataError".</para><code>Neutral  Value: "7z 解压失败：归档数据损坏或采用了不受支持的 7z 压缩方式。请重试下载或提供 ZIP 格式包。"</code><code>en-US    Value: "7z decompression failed: The archive data is corrupt or uses unsupported 7z compression. Please try downloading again or provide the package in ZIP format."</code><code>vi-VN    Value: "Giải nén 7z thất bại: Dữ liệu tệp nén bị hỏng hoặc sử dụng phương pháp nén 7z không được hỗ trợ. Vui lòng tải lại hoặc cung cấp gói định dạng ZIP."</code><code>zh-TW    Value: "7z 解壓失敗：歸檔資料損壞或採用了不受支援的 7z 壓縮方式。請重試下載或提供 ZIP 格式包。"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStart7zEntryDataError">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStart7zEntryDataError".</para><code>Neutral  Value: "7z 解压失败（条目: {0}）：数据错误，归档可能损坏或使用了不受支持的 7z 压缩格式。请重试下载或使用 ZIP 包。"</code><code>en-US    Value: "7z decompression failed (entry: {0}): Bad data, the archive may be corrupt or uses an unsupported 7z compression format. Please try downloading again or using the ZIP package."</code><code>vi-VN    Value: "Giải nén 7z thất bại (Mục: {0}): Lỗi dữ liệu, tệp nén có thể bị hỏng hoặc sử dụng định dạng nén 7z không được hỗ trợ. Vui lòng tải lại hoặc sử dụng gói ZIP."</code><code>zh-TW    Value: "7z 解壓失敗（條目: {0}）：資料錯誤，歸檔可能損壞或使用了不受支援的 7z 壓縮格式。請重試下載或使用 ZIP 包。"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatViewDialogLaunchGameAdvancedStart7zEntryDataError(System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStart7zEntryDataError"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartCompleted">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartCompleted".</para><code>Neutral  Value: "已完成，程序路径：{0}"</code><code>en-US    Value: "Completed, program path: {0}"</code><code>vi-VN    Value: "Hoàn tất, Đường dẫn Phần mềm: {0}"</code><code>zh-TW    Value: "已完成，程式路徑：{0}"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatViewDialogLaunchGameAdvancedStartCompleted(System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartCompleted"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartConnectionRefused">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartConnectionRefused".</para><code>Neutral  Value: "服务器拒绝连接，请稍后重试。"</code><code>en-US    Value: "The server refused the connection, please try again later."</code><code>vi-VN    Value: "Server từ chối kết nối, vui lòng thử lại sau."</code><code>zh-TW    Value: "伺服器拒絕連線，請稍後重試。"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartDnsFailed">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartDnsFailed".</para><code>Neutral  Value: "无法连接到服务器 '{0}'：DNS 解析失败。 可能原因：
-            1.	域名不存在或拼写错误
-            2.	DNS 服务器故障
-            3.	网络连接问题
-            4.	防火墙或安全软件阻止了 DNS 查询 请检查网络设置后重试。"</code><code>en-US    Value: "Unable to connect to server '{0}': DNS resolution failed. Possible reasons:
-            1. The domain name does not exist or is spelled incorrectly
-            2. DNS server failure
-            3. Network connection issues
-            4. Firewall or security software blocks DNS query. Please check the network settings and try again."</code><code>vi-VN    Value: "Không kết nối được tới '{0}': Phân giải DNS thất bại.Khả năng do:
-            1. Domain không tồn tại hoặc Ghi sai
-            2. Máy chủ DNS gặp lỗi
-            3. Mạng bị ngắt kết nối
-            4. Tường Lửa hoặc Antivirus cản truy vấn DNS. Vui lòng kiểm tra cài đặt mạng rồi thử lại."</code><code>zh-TW    Value: "無法連線到伺服器 '{0}'：DNS 解析失敗。 可能原因：
-            1.	域名不存在或拼寫錯誤
-            2.	DNS 伺服器故障
-            3.	網路連線問題
-            4.	防火牆或安全軟體阻止了 DNS 查詢 請檢查網路設定後重試。"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatViewDialogLaunchGameAdvancedStartDnsFailed(System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartDnsFailed"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartDnsNoData">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartDnsNoData".</para><code>Neutral  Value: "DNS 查询成功但未找到服务器记录，请确认地址正确性。"</code><code>en-US    Value: "The DNS query was successful but the server record was not found. Please confirm the correctness of the address."</code><code>vi-VN    Value: "DNS phân giải nhưng Không Tìm Thấy Record Máy Chủ, vui lòng kiểm tra độ chính xác của địa chỉ."</code><code>zh-TW    Value: "DNS 查詢成功但未找到伺服器記錄，請確認地址正確性。"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartDownloadCanceled">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartDownloadCanceled".</para><code>Neutral  Value: "下载 {0} 已被取消。"</code><code>en-US    Value: "Download {0} has been canceled."</code><code>vi-VN    Value: "Đã Hủy tải xuống {0}."</code><code>zh-TW    Value: "下載 {0} 已被取消。"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatViewDialogLaunchGameAdvancedStartDownloadCanceled(System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartDownloadCanceled"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartDownloadTimeout">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartDownloadTimeout".</para><code>Neutral  Value: "下载 {0} 超时，请检查网络连接并重试。"</code><code>en-US    Value: "Download {0} timed out, please check your network connection and try again."</code><code>vi-VN    Value: "Thời gian tải xuống {0} Quá Hạn, hãy kiểm tra mạng rồi làm lại."</code><code>zh-TW    Value: "下載 {0} 超時，請檢查網路連線並重試。"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatViewDialogLaunchGameAdvancedStartDownloadTimeout(System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartDownloadTimeout"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartDownloading">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartDownloading".</para><code>Neutral  Value: "正在下载 {0}（{1}/{2}）"</code><code>en-US    Value: "Downloading {0} ({1}/{2})"</code><code>vi-VN    Value: "Đang tải {0} ({1}/{2})"</code><code>zh-TW    Value: "正在下載 {0}（{1}/{2}）"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatViewDialogLaunchGameAdvancedStartDownloading(System.Object,System.Object,System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartDownloading"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartEmpty">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartEmpty".</para><code>Neutral  Value: "暂无可用的自定义启动程序"</code><code>en-US    Value: "No custom launcher available yet"</code><code>vi-VN    Value: "Tạm chưa có Phần mềm Khởi động Tùy chỉnh nào cả"</code><code>zh-TW    Value: "暫無可用的自定義啟動程式"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartExecutableMissing">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartExecutableMissing".</para><code>Neutral  Value: "未找到可执行文件"</code><code>en-US    Value: "Executable file not found"</code><code>vi-VN    Value: "Không tìm thấy file thực thi"</code><code>zh-TW    Value: "未找到可執行檔案"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartExtracting">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartExtracting".</para><code>Neutral  Value: "正在解压 {0}（{1}/{2}）"</code><code>en-US    Value: "Decompressing {0} ({1}/{2})"</code><code>vi-VN    Value: "Đang giải nén {0} ({1}/{2})"</code><code>zh-TW    Value: "正在解壓 {0}（{1}/{2}）"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatViewDialogLaunchGameAdvancedStartExtracting(System.Object,System.Object,System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartExtracting"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartFailed">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartFailed".</para><code>Neutral  Value: "下载或解压失败，请重试"</code><code>en-US    Value: "Download or decompression failed, please try again"</code><code>vi-VN    Value: "Tải xuống hoặc Giải nén Thất bại, hãy thử lại"</code><code>zh-TW    Value: "下載或解壓失敗，請重試"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartFeedMissing">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartFeedMissing".</para><code>Neutral  Value: "未配置自定义启动源地址"</code><code>en-US    Value: "Custom startup source address not configured"</code><code>vi-VN    Value: "Chưa cài đặt link nguồn Khởi động Tùy chỉnh"</code><code>zh-TW    Value: "未配置自定義啟動源地址"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartHttpError">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartHttpError".</para><code>Neutral  Value: "服务器返回错误：{0} {1}"</code><code>en-US    Value: "Server returned error: {0} {1}"</code><code>vi-VN    Value: "Server trả Lỗi: {0} {1}"</code><code>zh-TW    Value: "伺服器返回錯誤：{0} {1}"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatViewDialogLaunchGameAdvancedStartHttpError(System.Object,System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartHttpError"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartIOError">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartIOError".</para><code>Neutral  Value: "文件读写错误：{0}"</code><code>en-US    Value: "File read and write error: {0}"</code><code>vi-VN    Value: "Lỗi đọc ghi tệp: {0}"</code><code>zh-TW    Value: "檔案讀寫錯誤：{0}"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatViewDialogLaunchGameAdvancedStartIOError(System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartIOError"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartInfoBarMessage">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartInfoBarMessage".</para><code>Neutral  Value: "将会下载到设置的数据目录的 AdvancedStart 文件夹下，可前往设置调整或自行管理"</code><code>en-US    Value: "It will be downloaded to the AdvancedStart folder of the set data directory. You can go to the settings to adjust or manage it yourself."</code><code>vi-VN    Value: "Sẽ được tải xuống thư mục AdvancedStart trong thư mục dữ liệu đã thiết lập, có thể vào Cài đặt để điều chỉnh hoặc tự quản lý"</code><code>zh-TW    Value: "將會下載到設定的資料目錄的 AdvancedStart 資料夾下，可前往設定調整或自行管理"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartInvalidHeaders">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartInvalidHeaders".</para><code>Neutral  Value: "无效的 HTTP 头设置：{0}"</code><code>en-US    Value: "Invalid HTTP header setting: {0}"</code><code>vi-VN    Value: "Cài đặt Header HTTP không hợp lệ: {0}"</code><code>zh-TW    Value: "無效的 HTTP 頭設定：{0}"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatViewDialogLaunchGameAdvancedStartInvalidHeaders(System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartInvalidHeaders"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartLoadFailed">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartLoadFailed".</para><code>Neutral  Value: "加载自定义启动列表失败"</code><code>en-US    Value: "Loading custom startup list failed"</code><code>vi-VN    Value: "Lỗi khi Tải danh sách Khởi động Tùy chỉnh"</code><code>zh-TW    Value: "載入自定義啟動列表失敗"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartLoading">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartLoading".</para><code>Neutral  Value: "正在加载自定义启动列表"</code><code>en-US    Value: "Loading custom startup list"</code><code>vi-VN    Value: "Đang tải danh sách Khởi động Tùy chỉnh"</code><code>zh-TW    Value: "正在載入自定義啟動列表"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartNetworkDown">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartNetworkDown".</para><code>Neutral  Value: "网络连接不可用，请检查网络状态。"</code><code>en-US    Value: "The network connection is not available, please check the network status."</code><code>vi-VN    Value: "Mạng không hoạt động, hãy kiểm tra lại kết nối mạng."</code><code>zh-TW    Value: "網路連線不可用，請檢查網路狀態。"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartNetworkError">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartNetworkError".</para><code>Neutral  Value: "网络连接错误：{0} (错误代码: {1})"</code><code>en-US    Value: "Network connection error: {0} (Error code: {1})"</code><code>vi-VN    Value: "Lỗi kết nối Mạng: {0} (Mã Lỗi: {1})"</code><code>zh-TW    Value: "網路連線錯誤：{0} (錯誤程式碼: {1})"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatViewDialogLaunchGameAdvancedStartNetworkError(System.Object,System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartNetworkError"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartNetworkRequestFailed">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartNetworkRequestFailed".</para><code>Neutral  Value: "网络请求失败：{0}"</code><code>en-US    Value: "Network request failed: {0}"</code><code>vi-VN    Value: "Yêu cầu mạng Thất bại: {0}"</code><code>zh-TW    Value: "網路請求失敗：{0}"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatViewDialogLaunchGameAdvancedStartNetworkRequestFailed(System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartNetworkRequestFailed"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartNetworkUnreachable">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartNetworkUnreachable".</para><code>Neutral  Value: "网络不可达，请检查网络连接。"</code><code>en-US    Value: "The network is unreachable, please check the network connection."</code><code>vi-VN    Value: "Mạng ngoài tầm với, xin vui lòng kiểm tra kết nối mạng."</code><code>zh-TW    Value: "網路不可達，請檢查網路連線。"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartOperationCanceled">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartOperationCanceled".</para><code>Neutral  Value: "操作已取消：{0}"</code><code>en-US    Value: "Operation canceled: {0}"</code><code>vi-VN    Value: "Thao tác đã hủy: {0}"</code><code>zh-TW    Value: "操作已取消：{0}"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatViewDialogLaunchGameAdvancedStartOperationCanceled(System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartOperationCanceled"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartPick">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartPick".</para><code>Neutral  Value: "请选择一个自定义启动程序"</code><code>en-US    Value: "Please select a custom launcher"</code><code>vi-VN    Value: "Vui lòng chọn 1 Phần mềm Tùy chỉnh"</code><code>zh-TW    Value: "請選擇一個自定義啟動程式"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartPickWarning">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartPickWarning".</para><code>Neutral  Value: "请先选择自定义启动程序"</code><code>en-US    Value: "Please select a custom launcher first"</code><code>vi-VN    Value: "Bạn cần chọn 1 Phần mềm Tùy chỉnh trước"</code><code>zh-TW    Value: "請先選擇自定義啟動程式"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartPrimary">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartPrimary".</para><code>Neutral  Value: "下载"</code><code>en-US    Value: "download"</code><code>vi-VN    Value: "Tải Xuống"</code><code>zh-TW    Value: "下載"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartSecurityFailed">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartSecurityFailed".</para><code>Neutral  Value: "安全连接失败：{0}，请检查系统时间和证书设置。"</code><code>en-US    Value: "Secure connection failed: {0}, please check the system time and certificate settings."</code><code>vi-VN    Value: "Kết nối Bảo mật Thất Bại: {0}. Xin kiểm tra giờ hệ thống và cài đặt Chứng chỉ."</code><code>zh-TW    Value: "安全連線失敗：{0}，請檢查系統時間和證書設定。"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatViewDialogLaunchGameAdvancedStartSecurityFailed(System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartSecurityFailed"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartSourceDescription">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartSourceDescription".</para><code>Neutral  Value: "填写目标 json 格式的 http 链接"</code><code>en-US    Value: "Fill in the http link in target json format"</code><code>vi-VN    Value: "Điền liên kết http định dạng json mục tiêu"</code><code>zh-TW    Value: "填寫目標 json 格式的 http 連結"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartSourceSetterBackToDefaultButton">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartSourceSetterBackToDefaultButton".</para><code>Neutral  Value: "恢复默认"</code><code>en-US    Value: "Restore default"</code><code>vi-VN    Value: "Khôi phục mặc định"</code><code>zh-TW    Value: "恢復預設"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartSourceSetterSaveSuccess">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartSourceSetterSaveSuccess".</para><code>Neutral  Value: "保存成功"</code><code>en-US    Value: "Saved successfully"</code><code>vi-VN    Value: "Lưu thành công"</code><code>zh-TW    Value: "儲存成功"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartSourceSetterTitle">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartSourceSetterTitle".</para><code>Neutral  Value: "程序列表获取源设置"</code><code>en-US    Value: "Program List Get Source Settings"</code><code>vi-VN    Value: "Cài đặt nguồn lấy danh sách ứng dụng"</code><code>zh-TW    Value: "程式列表獲取源設定"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartStatusHeader">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartStatusHeader".</para><code>Neutral  Value: "当前执行状态"</code><code>en-US    Value: "Current execution status"</code><code>vi-VN    Value: "Tình Trạng Thực Thi"</code><code>zh-TW    Value: "當前執行狀態"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartTimedOut">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartTimedOut".</para><code>Neutral  Value: "连接超时，请检查网络连接。"</code><code>en-US    Value: "Connection timed out, please check your network connection."</code><code>vi-VN    Value: "Hết thời gian kết nối, vui lòng check lại mạng."</code><code>zh-TW    Value: "連線超時，請檢查網路連線。"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartTitle">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartTitle".</para><code>Neutral  Value: "下载来自自定义源的自定义程序"</code><code>en-US    Value: "Download custom programs from custom sources"</code><code>vi-VN    Value: "Tải các Phần mềm Tùy chỉnh qua Nguồn Custom"</code><code>zh-TW    Value: "下載來自自定義源的自定義程式"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartUnknownError">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartUnknownError".</para><code>Neutral  Value: "下载 {0} 时发生未知错误。 错误类型: {1} 请重试或联系支持。"</code><code>en-US    Value: "An unknown error occurred while downloading {0}. Error type: {1} Please try again or contact support."</code><code>vi-VN    Value: "Xảy ra lỗi không xác định khi tải {0}. Loại lỗi: {1} Vui lòng thử lại hoặc liên hệ bộ phận hỗ trợ."</code><code>zh-TW    Value: "下載 {0} 時發生未知錯誤。 錯誤型別: {1} 請重試或聯絡支援。"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatViewDialogLaunchGameAdvancedStartUnknownError(System.Object,System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartUnknownError"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartUnknownServer">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartUnknownServer".</para><code>Neutral  Value: "未知服务器"</code><code>en-US    Value: "unknown server"</code><code>vi-VN    Value: "Máy chủ Vô danh"</code><code>zh-TW    Value: "未知伺服器"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartUnknownServerResponse">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartUnknownServerResponse".</para><code>Neutral  Value: "服务器返回未知错误：{0}"</code><code>en-US    Value: "The server returned an unknown error: {0}"</code><code>vi-VN    Value: "Server trả Lỗi Bất Định: {0}"</code><code>zh-TW    Value: "伺服器返回未知錯誤：{0}"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatViewDialogLaunchGameAdvancedStartUnknownServerResponse(System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartUnknownServerResponse"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartUnsupportedArchiveFormat">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartUnsupportedArchiveFormat".</para><code>Neutral  Value: "不支持的归档格式！"</code><code>en-US    Value: "Unsupported archive format!"</code><code>vi-VN    Value: "Định dạng tệp nén không được hỗ trợ!"</code><code>zh-TW    Value: "不支援的歸檔格式！"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartUnsupportedContentType">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartUnsupportedContentType".</para><code>Neutral  Value: "不支持的响应内容类型：{0}"</code><code>en-US    Value: "Unsupported response content type: {0}"</code><code>vi-VN    Value: "Loại nội dung phản hồi không được hỗ trợ: {0}"</code><code>zh-TW    Value: "不支援的響應內容型別：{0}"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatViewDialogLaunchGameAdvancedStartUnsupportedContentType(System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameAdvancedStartUnsupportedContentType"/>
-        </member>
         <member name="P:Launcher.Resource.Localization.SH.ViewDialogLaunchGameConfigurationFixDialogHint">
             <summary><para>Looks up a localized string for "ViewDialogLaunchGameConfigurationFixDialogHint".</para><code>Neutral  Value: "请选择当前游戏路径对应的游戏服务器"</code><code>en-US    Value: "Please select the game server corresponding to the current game path"</code><code>vi-VN    Value: "Vui lòng chọn máy chủ game tương ứng với đường dẫn game hiện tại"</code><code>zh-TW    Value: "請選擇當前遊戲路徑對應的遊戲伺服器"</code></summary>
         </member>
@@ -7604,18 +7354,6 @@
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ViewModelLaunchGameAccountAndServerNotMatch">
             <summary><para>Looks up a localized string for "ViewModelLaunchGameAccountAndServerNotMatch".</para><code>Neutral  Value: "当前选中用户和游戏服务器不匹配，请重新选择"</code><code>en-US    Value: "The currently selected user and game server do not match, please select again."</code><code>vi-VN    Value: "Người dùng và máy chủ game đã chọn không khớp, vui lòng chọn lại"</code><code>zh-TW    Value: "當前選中使用者和遊戲伺服器不匹配，請重新選擇"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewModelLaunchGameAdvancedStartProgramLaunched">
-            <summary><para>Looks up a localized string for "ViewModelLaunchGameAdvancedStartProgramLaunched".</para><code>Neutral  Value: "已启动自定义程序"</code><code>en-US    Value: "Custom program started"</code><code>vi-VN    Value: "Đã khởi chạy ứng dụng tùy chỉnh"</code><code>zh-TW    Value: "已啟動自定義程式"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewModelLaunchGameAdvancedStartProgramNotExists">
-            <summary><para>Looks up a localized string for "ViewModelLaunchGameAdvancedStartProgramNotExists".</para><code>Neutral  Value: "自定义启动程序不存在"</code><code>en-US    Value: "Custom launcher does not exist"</code><code>vi-VN    Value: "Ứng dụng khởi động tùy chỉnh không tồn tại"</code><code>zh-TW    Value: "自定義啟動程式不存在"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewModelLaunchGameAdvancedStartProgramPathNotSet">
-            <summary><para>Looks up a localized string for "ViewModelLaunchGameAdvancedStartProgramPathNotSet".</para><code>Neutral  Value: "未设置自定义启动程序路径"</code><code>en-US    Value: "Custom launcher path not set"</code><code>vi-VN    Value: "Chưa thiết lập đường dẫn ứng dụng khởi động tùy chỉnh"</code><code>zh-TW    Value: "未設定自定義啟動程式路徑"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewModelLaunchGameAdvancedStartProgramPathSaved">
-            <summary><para>Looks up a localized string for "ViewModelLaunchGameAdvancedStartProgramPathSaved".</para><code>Neutral  Value: "已保存自定义启动程序路径"</code><code>en-US    Value: "Custom launcher path saved"</code><code>vi-VN    Value: "Đã lưu đường dẫn ứng dụng khởi động tùy chỉnh"</code><code>zh-TW    Value: "已儲存自定義啟動程式路徑"</code></summary>
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ViewModelLaunchGameConfigurationFailed">
             <summary><para>Looks up a localized string for "ViewModelLaunchGameConfigurationFailed".</para><code>Neutral  Value: "读取游戏配置文件时遇到问题：{0}"</code><code>en-US    Value: "Problem reading game configuration file: {0}"</code><code>vi-VN    Value: "Gặp vấn đề khi đọc tệp cấu hình game: {0}"</code><code>zh-TW    Value: "讀取遊戲配置檔案時遇到問題：{0}"</code></summary>
@@ -10925,145 +10663,6 @@
         <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAccountTitle">
             <summary><para>Looks up a localized string for "ViewDialogLaunchGameAccountTitle".</para><code>Neutral  Value: "为账号命名"</code><code>en-US    Value: "Name the account"</code><code>vi-VN    Value: "Đặt tên cho tài khoản"</code><code>zh-TW    Value: "為賬號命名"</code></summary>
         </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStart7zDataError">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStart7zDataError".</para><code>Neutral  Value: "7z 解压失败：归档数据损坏或采用了不受支持的 7z 压缩方式。请重试下载或提供 ZIP 格式包。"</code><code>en-US    Value: "7z decompression failed: The archive data is corrupt or uses unsupported 7z compression. Please try downloading again or provide the package in ZIP format."</code><code>vi-VN    Value: "Giải nén 7z thất bại: Dữ liệu tệp nén bị hỏng hoặc sử dụng phương pháp nén 7z không được hỗ trợ. Vui lòng tải lại hoặc cung cấp gói định dạng ZIP."</code><code>zh-TW    Value: "7z 解壓失敗：歸檔資料損壞或採用了不受支援的 7z 壓縮方式。請重試下載或提供 ZIP 格式包。"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStart7zEntryDataError">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStart7zEntryDataError".</para><code>Neutral  Value: "7z 解压失败（条目: {0}）：数据错误，归档可能损坏或使用了不受支持的 7z 压缩格式。请重试下载或使用 ZIP 包。"</code><code>en-US    Value: "7z decompression failed (entry: {0}): Bad data, the archive may be corrupt or uses an unsupported 7z compression format. Please try downloading again or using the ZIP package."</code><code>vi-VN    Value: "Giải nén 7z thất bại (Mục: {0}): Lỗi dữ liệu, tệp nén có thể bị hỏng hoặc sử dụng định dạng nén 7z không được hỗ trợ. Vui lòng tải lại hoặc sử dụng gói ZIP."</code><code>zh-TW    Value: "7z 解壓失敗（條目: {0}）：資料錯誤，歸檔可能損壞或使用了不受支援的 7z 壓縮格式。請重試下載或使用 ZIP 包。"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartCompleted">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartCompleted".</para><code>Neutral  Value: "已完成，程序路径：{0}"</code><code>en-US    Value: "Completed, program path: {0}"</code><code>vi-VN    Value: "Hoàn tất, Đường dẫn Phần mềm: {0}"</code><code>zh-TW    Value: "已完成，程式路徑：{0}"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartConnectionRefused">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartConnectionRefused".</para><code>Neutral  Value: "服务器拒绝连接，请稍后重试。"</code><code>en-US    Value: "The server refused the connection, please try again later."</code><code>vi-VN    Value: "Server từ chối kết nối, vui lòng thử lại sau."</code><code>zh-TW    Value: "伺服器拒絕連線，請稍後重試。"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartDnsFailed">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartDnsFailed".</para><code>Neutral  Value: "无法连接到服务器 '{0}'：DNS 解析失败。 可能原因：
-            1.	域名不存在或拼写错误
-            2.	DNS 服务器故障
-            3.	网络连接问题
-            4.	防火墙或安全软件阻止了 DNS 查询 请检查网络设置后重试。"</code><code>en-US    Value: "Unable to connect to server '{0}': DNS resolution failed. Possible reasons:
-            1. The domain name does not exist or is spelled incorrectly
-            2. DNS server failure
-            3. Network connection issues
-            4. Firewall or security software blocks DNS query. Please check the network settings and try again."</code><code>vi-VN    Value: "Không kết nối được tới '{0}': Phân giải DNS thất bại.Khả năng do:
-            1. Domain không tồn tại hoặc Ghi sai
-            2. Máy chủ DNS gặp lỗi
-            3. Mạng bị ngắt kết nối
-            4. Tường Lửa hoặc Antivirus cản truy vấn DNS. Vui lòng kiểm tra cài đặt mạng rồi thử lại."</code><code>zh-TW    Value: "無法連線到伺服器 '{0}'：DNS 解析失敗。 可能原因：
-            1.	域名不存在或拼寫錯誤
-            2.	DNS 伺服器故障
-            3.	網路連線問題
-            4.	防火牆或安全軟體阻止了 DNS 查詢 請檢查網路設定後重試。"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartDnsNoData">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartDnsNoData".</para><code>Neutral  Value: "DNS 查询成功但未找到服务器记录，请确认地址正确性。"</code><code>en-US    Value: "The DNS query was successful but the server record was not found. Please confirm the correctness of the address."</code><code>vi-VN    Value: "DNS phân giải nhưng Không Tìm Thấy Record Máy Chủ, vui lòng kiểm tra độ chính xác của địa chỉ."</code><code>zh-TW    Value: "DNS 查詢成功但未找到伺服器記錄，請確認地址正確性。"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartDownloadCanceled">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartDownloadCanceled".</para><code>Neutral  Value: "下载 {0} 已被取消。"</code><code>en-US    Value: "Download {0} has been canceled."</code><code>vi-VN    Value: "Đã Hủy tải xuống {0}."</code><code>zh-TW    Value: "下載 {0} 已被取消。"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartDownloadTimeout">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartDownloadTimeout".</para><code>Neutral  Value: "下载 {0} 超时，请检查网络连接并重试。"</code><code>en-US    Value: "Download {0} timed out, please check your network connection and try again."</code><code>vi-VN    Value: "Thời gian tải xuống {0} Quá Hạn, hãy kiểm tra mạng rồi làm lại."</code><code>zh-TW    Value: "下載 {0} 超時，請檢查網路連線並重試。"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartDownloading">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartDownloading".</para><code>Neutral  Value: "正在下载 {0}（{1}/{2}）"</code><code>en-US    Value: "Downloading {0} ({1}/{2})"</code><code>vi-VN    Value: "Đang tải {0} ({1}/{2})"</code><code>zh-TW    Value: "正在下載 {0}（{1}/{2}）"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartEmpty">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartEmpty".</para><code>Neutral  Value: "暂无可用的自定义启动程序"</code><code>en-US    Value: "No custom launcher available yet"</code><code>vi-VN    Value: "Tạm chưa có Phần mềm Khởi động Tùy chỉnh nào cả"</code><code>zh-TW    Value: "暫無可用的自定義啟動程式"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartExecutableMissing">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartExecutableMissing".</para><code>Neutral  Value: "未找到可执行文件"</code><code>en-US    Value: "Executable file not found"</code><code>vi-VN    Value: "Không tìm thấy file thực thi"</code><code>zh-TW    Value: "未找到可執行檔案"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartExtracting">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartExtracting".</para><code>Neutral  Value: "正在解压 {0}（{1}/{2}）"</code><code>en-US    Value: "Decompressing {0} ({1}/{2})"</code><code>vi-VN    Value: "Đang giải nén {0} ({1}/{2})"</code><code>zh-TW    Value: "正在解壓 {0}（{1}/{2}）"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartFailed">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartFailed".</para><code>Neutral  Value: "下载或解压失败，请重试"</code><code>en-US    Value: "Download or decompression failed, please try again"</code><code>vi-VN    Value: "Tải xuống hoặc Giải nén Thất bại, hãy thử lại"</code><code>zh-TW    Value: "下載或解壓失敗，請重試"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartFeedMissing">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartFeedMissing".</para><code>Neutral  Value: "未配置自定义启动源地址"</code><code>en-US    Value: "Custom startup source address not configured"</code><code>vi-VN    Value: "Chưa cài đặt link nguồn Khởi động Tùy chỉnh"</code><code>zh-TW    Value: "未配置自定義啟動源地址"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartHttpError">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartHttpError".</para><code>Neutral  Value: "服务器返回错误：{0} {1}"</code><code>en-US    Value: "Server returned error: {0} {1}"</code><code>vi-VN    Value: "Server trả Lỗi: {0} {1}"</code><code>zh-TW    Value: "伺服器返回錯誤：{0} {1}"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartIOError">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartIOError".</para><code>Neutral  Value: "文件读写错误：{0}"</code><code>en-US    Value: "File read and write error: {0}"</code><code>vi-VN    Value: "Lỗi đọc ghi tệp: {0}"</code><code>zh-TW    Value: "檔案讀寫錯誤：{0}"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartInfoBarMessage">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartInfoBarMessage".</para><code>Neutral  Value: "将会下载到设置的数据目录的 AdvancedStart 文件夹下，可前往设置调整或自行管理"</code><code>en-US    Value: "It will be downloaded to the AdvancedStart folder of the set data directory. You can go to the settings to adjust or manage it yourself."</code><code>vi-VN    Value: "Sẽ được tải xuống thư mục AdvancedStart trong thư mục dữ liệu đã thiết lập, có thể vào Cài đặt để điều chỉnh hoặc tự quản lý"</code><code>zh-TW    Value: "將會下載到設定的資料目錄的 AdvancedStart 資料夾下，可前往設定調整或自行管理"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartInvalidHeaders">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartInvalidHeaders".</para><code>Neutral  Value: "无效的 HTTP 头设置：{0}"</code><code>en-US    Value: "Invalid HTTP header setting: {0}"</code><code>vi-VN    Value: "Cài đặt Header HTTP không hợp lệ: {0}"</code><code>zh-TW    Value: "無效的 HTTP 頭設定：{0}"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartLoadFailed">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartLoadFailed".</para><code>Neutral  Value: "加载自定义启动列表失败"</code><code>en-US    Value: "Loading custom startup list failed"</code><code>vi-VN    Value: "Lỗi khi Tải danh sách Khởi động Tùy chỉnh"</code><code>zh-TW    Value: "載入自定義啟動列表失敗"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartLoading">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartLoading".</para><code>Neutral  Value: "正在加载自定义启动列表"</code><code>en-US    Value: "Loading custom startup list"</code><code>vi-VN    Value: "Đang tải danh sách Khởi động Tùy chỉnh"</code><code>zh-TW    Value: "正在載入自定義啟動列表"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartNetworkDown">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartNetworkDown".</para><code>Neutral  Value: "网络连接不可用，请检查网络状态。"</code><code>en-US    Value: "The network connection is not available, please check the network status."</code><code>vi-VN    Value: "Mạng không hoạt động, hãy kiểm tra lại kết nối mạng."</code><code>zh-TW    Value: "網路連線不可用，請檢查網路狀態。"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartNetworkError">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartNetworkError".</para><code>Neutral  Value: "网络连接错误：{0} (错误代码: {1})"</code><code>en-US    Value: "Network connection error: {0} (Error code: {1})"</code><code>vi-VN    Value: "Lỗi kết nối Mạng: {0} (Mã Lỗi: {1})"</code><code>zh-TW    Value: "網路連線錯誤：{0} (錯誤程式碼: {1})"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartNetworkRequestFailed">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartNetworkRequestFailed".</para><code>Neutral  Value: "网络请求失败：{0}"</code><code>en-US    Value: "Network request failed: {0}"</code><code>vi-VN    Value: "Yêu cầu mạng Thất bại: {0}"</code><code>zh-TW    Value: "網路請求失敗：{0}"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartNetworkUnreachable">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartNetworkUnreachable".</para><code>Neutral  Value: "网络不可达，请检查网络连接。"</code><code>en-US    Value: "The network is unreachable, please check the network connection."</code><code>vi-VN    Value: "Mạng ngoài tầm với, xin vui lòng kiểm tra kết nối mạng."</code><code>zh-TW    Value: "網路不可達，請檢查網路連線。"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartOperationCanceled">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartOperationCanceled".</para><code>Neutral  Value: "操作已取消：{0}"</code><code>en-US    Value: "Operation canceled: {0}"</code><code>vi-VN    Value: "Thao tác đã hủy: {0}"</code><code>zh-TW    Value: "操作已取消：{0}"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartPick">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartPick".</para><code>Neutral  Value: "请选择一个自定义启动程序"</code><code>en-US    Value: "Please select a custom launcher"</code><code>vi-VN    Value: "Vui lòng chọn 1 Phần mềm Tùy chỉnh"</code><code>zh-TW    Value: "請選擇一個自定義啟動程式"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartPickWarning">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartPickWarning".</para><code>Neutral  Value: "请先选择自定义启动程序"</code><code>en-US    Value: "Please select a custom launcher first"</code><code>vi-VN    Value: "Bạn cần chọn 1 Phần mềm Tùy chỉnh trước"</code><code>zh-TW    Value: "請先選擇自定義啟動程式"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartPrimary">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartPrimary".</para><code>Neutral  Value: "下载"</code><code>en-US    Value: "download"</code><code>vi-VN    Value: "Tải Xuống"</code><code>zh-TW    Value: "下載"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartSecurityFailed">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartSecurityFailed".</para><code>Neutral  Value: "安全连接失败：{0}，请检查系统时间和证书设置。"</code><code>en-US    Value: "Secure connection failed: {0}, please check the system time and certificate settings."</code><code>vi-VN    Value: "Kết nối Bảo mật Thất Bại: {0}. Xin kiểm tra giờ hệ thống và cài đặt Chứng chỉ."</code><code>zh-TW    Value: "安全連線失敗：{0}，請檢查系統時間和證書設定。"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartSourceDescription">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartSourceDescription".</para><code>Neutral  Value: "填写目标 json 格式的 http 链接"</code><code>en-US    Value: "Fill in the http link in target json format"</code><code>vi-VN    Value: "Điền liên kết http định dạng json mục tiêu"</code><code>zh-TW    Value: "填寫目標 json 格式的 http 連結"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartSourceSetterBackToDefaultButton">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartSourceSetterBackToDefaultButton".</para><code>Neutral  Value: "恢复默认"</code><code>en-US    Value: "Restore default"</code><code>vi-VN    Value: "Khôi phục mặc định"</code><code>zh-TW    Value: "恢復預設"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartSourceSetterSaveSuccess">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartSourceSetterSaveSuccess".</para><code>Neutral  Value: "保存成功"</code><code>en-US    Value: "Saved successfully"</code><code>vi-VN    Value: "Lưu thành công"</code><code>zh-TW    Value: "儲存成功"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartSourceSetterTitle">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartSourceSetterTitle".</para><code>Neutral  Value: "程序列表获取源设置"</code><code>en-US    Value: "Program List Get Source Settings"</code><code>vi-VN    Value: "Cài đặt nguồn lấy danh sách ứng dụng"</code><code>zh-TW    Value: "程式列表獲取源設定"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartStatusHeader">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartStatusHeader".</para><code>Neutral  Value: "当前执行状态"</code><code>en-US    Value: "Current execution status"</code><code>vi-VN    Value: "Tình Trạng Thực Thi"</code><code>zh-TW    Value: "當前執行狀態"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartTimedOut">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartTimedOut".</para><code>Neutral  Value: "连接超时，请检查网络连接。"</code><code>en-US    Value: "Connection timed out, please check your network connection."</code><code>vi-VN    Value: "Hết thời gian kết nối, vui lòng check lại mạng."</code><code>zh-TW    Value: "連線超時，請檢查網路連線。"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartTitle">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartTitle".</para><code>Neutral  Value: "下载来自自定义源的自定义程序"</code><code>en-US    Value: "Download custom programs from custom sources"</code><code>vi-VN    Value: "Tải các Phần mềm Tùy chỉnh qua Nguồn Custom"</code><code>zh-TW    Value: "下載來自自定義源的自定義程式"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartUnknownError">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartUnknownError".</para><code>Neutral  Value: "下载 {0} 时发生未知错误。 错误类型: {1} 请重试或联系支持。"</code><code>en-US    Value: "An unknown error occurred while downloading {0}. Error type: {1} Please try again or contact support."</code><code>vi-VN    Value: "Xảy ra lỗi không xác định khi tải {0}. Loại lỗi: {1} Vui lòng thử lại hoặc liên hệ bộ phận hỗ trợ."</code><code>zh-TW    Value: "下載 {0} 時發生未知錯誤。 錯誤型別: {1} 請重試或聯絡支援。"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartUnknownServer">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartUnknownServer".</para><code>Neutral  Value: "未知服务器"</code><code>en-US    Value: "unknown server"</code><code>vi-VN    Value: "Máy chủ Vô danh"</code><code>zh-TW    Value: "未知伺服器"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartUnknownServerResponse">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartUnknownServerResponse".</para><code>Neutral  Value: "服务器返回未知错误：{0}"</code><code>en-US    Value: "The server returned an unknown error: {0}"</code><code>vi-VN    Value: "Server trả Lỗi Bất Định: {0}"</code><code>zh-TW    Value: "伺服器返回未知錯誤：{0}"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartUnsupportedArchiveFormat">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartUnsupportedArchiveFormat".</para><code>Neutral  Value: "不支持的归档格式！"</code><code>en-US    Value: "Unsupported archive format!"</code><code>vi-VN    Value: "Định dạng tệp nén không được hỗ trợ!"</code><code>zh-TW    Value: "不支援的歸檔格式！"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameAdvancedStartUnsupportedContentType">
-            <summary><para>Looks up a localized string for "ViewDialogLaunchGameAdvancedStartUnsupportedContentType".</para><code>Neutral  Value: "不支持的响应内容类型：{0}"</code><code>en-US    Value: "Unsupported response content type: {0}"</code><code>vi-VN    Value: "Loại nội dung phản hồi không được hỗ trợ: {0}"</code><code>zh-TW    Value: "不支援的響應內容型別：{0}"</code></summary>
-        </member>
         <member name="F:Launcher.Resource.Localization.SHName.ViewDialogLaunchGameConfigurationFixDialogHint">
             <summary><para>Looks up a localized string for "ViewDialogLaunchGameConfigurationFixDialogHint".</para><code>Neutral  Value: "请选择当前游戏路径对应的游戏服务器"</code><code>en-US    Value: "Please select the game server corresponding to the current game path"</code><code>vi-VN    Value: "Vui lòng chọn máy chủ game tương ứng với đường dẫn game hiện tại"</code><code>zh-TW    Value: "請選擇當前遊戲路徑對應的遊戲伺服器"</code></summary>
         </member>
@@ -12089,18 +11688,6 @@
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ViewModelLaunchGameAccountAndServerNotMatch">
             <summary><para>Looks up a localized string for "ViewModelLaunchGameAccountAndServerNotMatch".</para><code>Neutral  Value: "当前选中用户和游戏服务器不匹配，请重新选择"</code><code>en-US    Value: "The currently selected user and game server do not match, please select again."</code><code>vi-VN    Value: "Người dùng và máy chủ game đã chọn không khớp, vui lòng chọn lại"</code><code>zh-TW    Value: "當前選中使用者和遊戲伺服器不匹配，請重新選擇"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewModelLaunchGameAdvancedStartProgramLaunched">
-            <summary><para>Looks up a localized string for "ViewModelLaunchGameAdvancedStartProgramLaunched".</para><code>Neutral  Value: "已启动自定义程序"</code><code>en-US    Value: "Custom program started"</code><code>vi-VN    Value: "Đã khởi chạy ứng dụng tùy chỉnh"</code><code>zh-TW    Value: "已啟動自定義程式"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewModelLaunchGameAdvancedStartProgramNotExists">
-            <summary><para>Looks up a localized string for "ViewModelLaunchGameAdvancedStartProgramNotExists".</para><code>Neutral  Value: "自定义启动程序不存在"</code><code>en-US    Value: "Custom launcher does not exist"</code><code>vi-VN    Value: "Ứng dụng khởi động tùy chỉnh không tồn tại"</code><code>zh-TW    Value: "自定義啟動程式不存在"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewModelLaunchGameAdvancedStartProgramPathNotSet">
-            <summary><para>Looks up a localized string for "ViewModelLaunchGameAdvancedStartProgramPathNotSet".</para><code>Neutral  Value: "未设置自定义启动程序路径"</code><code>en-US    Value: "Custom launcher path not set"</code><code>vi-VN    Value: "Chưa thiết lập đường dẫn ứng dụng khởi động tùy chỉnh"</code><code>zh-TW    Value: "未設定自定義啟動程式路徑"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewModelLaunchGameAdvancedStartProgramPathSaved">
-            <summary><para>Looks up a localized string for "ViewModelLaunchGameAdvancedStartProgramPathSaved".</para><code>Neutral  Value: "已保存自定义启动程序路径"</code><code>en-US    Value: "Custom launcher path saved"</code><code>vi-VN    Value: "Đã lưu đường dẫn ứng dụng khởi động tùy chỉnh"</code><code>zh-TW    Value: "已儲存自定義啟動程式路徑"</code></summary>
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ViewModelLaunchGameConfigurationFailed">
             <summary><para>Looks up a localized string for "ViewModelLaunchGameConfigurationFailed".</para><code>Neutral  Value: "读取游戏配置文件时遇到问题：{0}"</code><code>en-US    Value: "Problem reading game configuration file: {0}"</code><code>vi-VN    Value: "Gặp vấn đề khi đọc tệp cấu hình game: {0}"</code><code>zh-TW    Value: "讀取遊戲配置檔案時遇到問題：{0}"</code></summary>
@@ -14256,15 +13843,6 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NotifyToken">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NotifyToken" generated properties.</summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Path">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Path" generated properties.</summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.DelaySeconds">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "DelaySeconds" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UserGameRole">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UserGameRole" generated properties.</summary>

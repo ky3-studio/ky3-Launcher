@@ -12,10 +12,7 @@ using Launcher.Core.ExceptionService;
 using Launcher.Core.Logging;
 using Launcher.Core.Shell;
 using Launcher.Factory.ContentDialog;
-using Launcher.Factory.Process;
 using Launcher.Service.Game;
-using Launcher.Service.Game.AdvancedStart;
-using Launcher.Service.Game.AdvancedStart.Model;
 using Launcher.Service.Game.Configuration;
 using Launcher.Service.Game.FileSystem;
 using Launcher.Service.Game.Launching;
@@ -27,13 +24,16 @@ using Launcher.Service.Notification;
 using Launcher.UI.Xaml.View.Dialog;
 using Launcher.UI.Xaml.View.Page;
 using Launcher.ViewModel.User;
-using System.IO;
+using System.Globalization;
+using System.Text;
 
 namespace Launcher.ViewModel.Game;
 
 [Service(ServiceLifetime.Singleton)]
 internal sealed partial class LaunchGameShared
 {
+    private static readonly CompositeFormat UnsupportedChannelOptionsFormat = CompositeFormat.Parse(SH.ViewModelLaunchGameUnsupportedChannelOptions);
+
     private readonly IContentDialogFactory contentDialogFactory;
     private readonly INavigationService navigationService;
     private readonly IServiceProvider serviceProvider;
@@ -59,7 +59,7 @@ internal sealed partial class LaunchGameShared
             }
             catch (InvalidOperationException)
             {
-                LauncherException.Throw(string.Format(SH.ViewModelLaunchGameUnsupportedChannelOptions, options));
+                LauncherException.Throw(string.Format(CultureInfo.CurrentCulture, UnsupportedChannelOptionsFormat, options));
             }
         }
 
@@ -221,62 +221,6 @@ internal sealed partial class LaunchGameShared
         {
             messenger.Send(InfoBarMessage.Error(SH.ViewModelServerConvertTitle, ex.Message));
             return false;
-        }
-    }
-
-    public async Task LaunchAdvancedDelayedAsync(CancellationToken token = default)
-    {
-        List<AdvancedStartDelayedProgramEntry> snapshot;
-        using (IServiceScope scope = serviceProvider.CreateScope())
-        {
-            AdvancedStartDelayedProgramStore store = scope.ServiceProvider.GetRequiredService<AdvancedStartDelayedProgramStore>();
-            snapshot = store.Load().ToList();
-        }
-
-        List<Task> tasks = new(snapshot.Count);
-        foreach (AdvancedStartDelayedProgramEntry entry in snapshot)
-        {
-            tasks.Add(Task.Run(async () =>
-            {
-                token.ThrowIfCancellationRequested();
-
-                int delaySeconds = Math.Max(0, entry.DelaySeconds);
-                if (delaySeconds > 0)
-                {
-                    try
-                    {
-                        await Task.Delay(TimeSpan.FromSeconds(delaySeconds), token).ConfigureAwait(false);
-                    }
-                    catch (OperationCanceledException)
-                    {
-                        return;
-                    }
-                }
-
-                if (string.IsNullOrWhiteSpace(entry.Path) || !File.Exists(entry.Path))
-                {
-                    messenger.Send(InfoBarMessage.Error(SH.ViewModelLaunchGameAdvancedStartProgramNotExists, entry.Path));
-                    return;
-                }
-
-                try
-                {
-                    ProcessFactory.StartUsingShellExecute(string.Empty, entry.Path);
-                }
-                catch (Exception ex)
-                {
-                    messenger.Send(InfoBarMessage.Error(ex));
-                }
-            }, token));
-        }
-
-        try
-        {
-            await Task.WhenAll(tasks).ConfigureAwait(false);
-        }
-        catch (OperationCanceledException)
-        {
-            // Swallow cancellation; caller expects cancellation to stop launching.
         }
     }
 

@@ -479,7 +479,7 @@ internal sealed partial class PackageConverter : IPackageConverter
                 ArgumentException.ThrowIfNullOrEmpty(cacheFileDirectory);
                 Directory.CreateDirectory(cacheFileDirectory);
 
-                logger.LogInformation("Backing file from:{Src} to:{Dst}", localFilePath, cacheFilePath);
+                LogBackingFile(localFilePath, cacheFilePath);
                 FileOperation.Move(localFilePath, cacheFilePath, true);
             }
 
@@ -495,7 +495,7 @@ internal sealed partial class PackageConverter : IPackageConverter
                 ArgumentException.ThrowIfNullOrEmpty(targetFileDirectory);
                 Directory.CreateDirectory(targetFileDirectory);
 
-                logger.LogInformation("Restoring file from:{Src} to:{Dst}", cacheFilePath, targetFilePath);
+                LogRestoringFile(cacheFilePath, targetFilePath);
                 FileOperation.Move(cacheFilePath, targetFilePath, true);
             }
         }
@@ -515,4 +515,10 @@ internal sealed partial class PackageConverter : IPackageConverter
 
         return true;
     }
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "Backing file from:{Src} to:{Dst}")]
+    private partial void LogBackingFile(string src, string dst);
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "Restoring file from:{Src} to:{Dst}")]
+    private partial void LogRestoringFile(string src, string dst);
 }

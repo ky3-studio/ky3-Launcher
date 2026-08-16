@@ -27,6 +27,16 @@ internal readonly struct MeasureExecutionToken : IDisposable
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public void Dispose()
     {
-        logger.LogDebug("{Caller} took {Time} ms", callerName, stopwatch.GetElapsedTime().TotalMilliseconds);
+        if (logger.IsEnabled(LogLevel.Debug))
+        {
+            logger.LogExecutionTime(callerName, stopwatch.GetElapsedTime().TotalMilliseconds);
+        }
     }
+}
+
+
+internal static partial class MeasureExecutionTokenLog
+{
+    [LoggerMessage(Level = LogLevel.Debug, Message = "{Caller} took {Time} ms")]
+    public static partial void LogExecutionTime(this ILogger logger, string caller, double time);
 }

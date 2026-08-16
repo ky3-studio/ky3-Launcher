@@ -11,6 +11,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <AssemblyName>Launcher.SourceGeneration</AssemblyName>
     <BaseOutputPath>$(MSBuildProjectDirectory)\bin\</BaseOutputPath>
+    <NoWarn>$(NoWarn);EnableGenerateDocumentationFile</NoWarn>
   </PropertyGroup>
 
   <ItemDefinitionGroup>

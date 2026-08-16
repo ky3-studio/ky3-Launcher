@@ -48,7 +48,7 @@ internal sealed partial class AutoStartService
         }
     }
 
-    public void EnsureUpToDate()
+    public static void EnsureUpToDate()
     {
         try
         {
@@ -175,9 +175,9 @@ internal sealed partial class AutoStartService
         }
     }
 
-    public void EnsureValidityAsync() => EnsureUpToDate();
+    public static void EnsureValidityAsync() => EnsureUpToDate();
 
-    public void SyncAutoStartPrivilegeSettings()
+    public static void SyncAutoStartPrivilegeSettings()
     {
         try
         {
@@ -194,7 +194,7 @@ internal sealed partial class AutoStartService
         }
     }
 
-    public void SetStartup(bool enable, bool runElevated)
+    public static void SetStartup(bool enable, bool runElevated)
     {
         try
         {
@@ -216,7 +216,7 @@ internal sealed partial class AutoStartService
         }
     }
 
-    public bool IsExecutablePathValid()
+    public static bool IsExecutablePathValid()
     {
         try
         {

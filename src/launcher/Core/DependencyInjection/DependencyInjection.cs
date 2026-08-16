@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 
 namespace Launcher.Core.DependencyInjection;
 
-internal static class DependencyInjection
+internal static partial class DependencyInjection
 {
     public static ServiceProvider Initialize()
     {
@@ -88,8 +88,8 @@ internal static class DependencyInjection
             XamlApplicationLifetime.CultureInfoInitialized = true;
 
             ILogger<CultureOptions> logger = serviceProvider.GetRequiredService<ILogger<CultureOptions>>();
-            logger.LogDebug("System Culture: {System}", cultureOptions.SystemCulture);
-            logger.LogDebug("Current Culture: {Current}", cultureInfo);
+            LogSystemCulture(logger, cultureOptions.SystemCulture);
+            LogCurrentCulture(logger, cultureInfo);
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -98,4 +98,10 @@ internal static class DependencyInjection
             _ = serviceProvider.GetRequiredService<IAppNotificationLifeTime>();
         }
     }
+
+    [LoggerMessage(Level = LogLevel.Debug, Message = "System Culture: {System}")]
+    private static partial void LogSystemCulture(ILogger logger, CultureInfo system);
+
+    [LoggerMessage(Level = LogLevel.Debug, Message = "Current Culture: {Current}")]
+    private static partial void LogCurrentCulture(ILogger logger, CultureInfo current);
 }

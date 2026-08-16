@@ -207,7 +207,7 @@ internal sealed partial class DescriptionRichTextBlock : ContentControl
         return default;
     }
 
-    private Void AppendSpritePreset(TextBlockType textBlock, InlineCollection inlines, MiHoYoSyntaxSpritePresetElement syntaxSpritePreset, ReadOnlySpan<char> source)
+    private static Void AppendSpritePreset(TextBlockType textBlock, InlineCollection inlines, MiHoYoSyntaxSpritePresetElement syntaxSpritePreset, ReadOnlySpan<char> source)
     {
         BitmapImage? imageSource = uint.Parse(syntaxSpritePreset.GetIdSpan(source), CultureInfo.InvariantCulture) switch
         {

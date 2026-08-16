@@ -17,7 +17,6 @@ using Launcher.Factory.Process;
 using Launcher.Service;
 using Launcher.Service.AutoSignIn;
 using Launcher.Service.BackgroundActivity;
-using Launcher.Service.Launcher;
 using Launcher.Service.Job;
 using Launcher.Service.Metadata;
 using Launcher.Service.Navigation;

@@ -253,7 +253,7 @@ internal sealed partial class AutoSuggestTokenBox : ListViewBase
         FilterCommand.TryExecute(FilterCommandParameter);
     }
 
-    public void OnSuggestionsChosen(Microsoft.UI.Xaml.Controls.AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
+    public static void OnSuggestionsChosen(Microsoft.UI.Xaml.Controls.AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
     {
     }
 
@@ -292,7 +292,7 @@ internal sealed partial class AutoSuggestTokenBox : ListViewBase
         FilterCommand.TryExecute(FilterCommandParameter);
     }
 
-    public void OnTokenItemRemoving(AutoSuggestTokenBox sender, TokenItemRemovingEventArgs args)
+    public static void OnTokenItemRemoving(AutoSuggestTokenBox sender, TokenItemRemovingEventArgs args)
     {
     }
 

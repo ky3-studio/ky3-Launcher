@@ -166,9 +166,8 @@ internal sealed class AppWindowPlacementDetails : ICustomQueryInterface, IWinRTO
         return additionalTypeData;
     }
 
-    // ReSharper disable once MemberCanBeMadeStatic.Local
     // ReSharper disable once UnusedParameter.Local
-    private bool IsOverridableInterface(Guid iid)
+    private static bool IsOverridableInterface(Guid iid)
     {
         return false;
     }

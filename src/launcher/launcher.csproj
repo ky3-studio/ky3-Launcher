@@ -152,7 +152,7 @@
 		<PackageReference Include="System.IO.Hashing" Version="10.0.1" />
 		<PackageReference Include="System.Security.Cryptography.ProtectedData" Version="10.0.3" />
 		<PackageReference Include="System.Threading.RateLimiting" Version="10.0.1" />
-		<PackageReference Include="Yae.Lib" Version="5.4.4">
+		<PackageReference Include="Yae.Lib" Version="5.4.5">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
@@ -217,9 +217,13 @@
 	</Target>
 
 	<Target Name="CopyUpdater" AfterTargets="Build;Publish">
-		<Exec Command="&quot;$(USERPROFILE)\.cargo\bin\cargo.exe&quot; build --release --manifest-path &quot;$(ProjectDir)..\updater-rs\Cargo.toml&quot;" ContinueOnError="WarnAndContinue" />
-		<Copy SourceFiles="$(ProjectDir)..\updater-rs\target\release\updater.exe" DestinationFolder="$(OutputPath)" />
-		<Copy Condition="'$(PublishDir)' != ''" SourceFiles="$(ProjectDir)..\updater-rs\target\release\updater.exe" DestinationFolder="$(PublishDir)" />
+		<PropertyGroup>
+			<_UpdaterCargoExe>$(USERPROFILE)\.cargo\bin\cargo.exe</_UpdaterCargoExe>
+			<_UpdaterExe>$(ProjectDir)..\updater-rs\target\release\updater.exe</_UpdaterExe>
+		</PropertyGroup>
+		<Exec Command="&quot;$(_UpdaterCargoExe)&quot; build --release --manifest-path &quot;$(ProjectDir)..\updater-rs\Cargo.toml&quot;" Condition="Exists('$(_UpdaterCargoExe)')" />
+		<Copy SourceFiles="$(_UpdaterExe)" DestinationFolder="$(OutputPath)" Condition="Exists('$(_UpdaterExe)')" />
+		<Copy Condition="'$(PublishDir)' != '' And Exists('$(_UpdaterExe)')" SourceFiles="$(_UpdaterExe)" DestinationFolder="$(PublishDir)" />
 	</Target>
 
 	<Target Name="CleanPublishOutput" AfterTargets="Publish">

@@ -13,7 +13,6 @@ using Launcher.Core.ExceptionService;
 using Launcher.Core.Graphics;
 using Launcher.Core.Logging;
 using Launcher.Factory.Process;
-using Launcher.Service.Launcher;
 using Launcher.UI.Windowing;
 using System.Runtime.CompilerServices;
 using Windows.Foundation;

@@ -26,5 +26,5 @@ internal readonly struct GachaStatisticsFactoryContext
         Metadata = metadata;
     }
 
-    public bool IsEmptyHistoryWishVisible { get => false; }
+    public static bool IsEmptyHistoryWishVisible { get => false; }
 }

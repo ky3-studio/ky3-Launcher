@@ -20,11 +20,11 @@ namespace Launcher.Service;
 [Service(ServiceLifetime.Singleton)]
 internal sealed partial class AutoStartService
 {
-    private const string TaskName = "SnapLauncher AutoStart";
+    private const string TaskName = "Launcher AutoStart";
 
     public AutoStartService(IServiceProvider serviceProvider) { }
 
-    public bool IsStartupEnabled()
+    public static bool IsStartupEnabled()
     {
         try
         {
@@ -36,7 +36,7 @@ internal sealed partial class AutoStartService
         }
     }
 
-    public bool IsRunElevatedEnabled()
+    public static bool IsRunElevatedEnabled()
     {
         try
         {
@@ -269,7 +269,7 @@ internal sealed partial class AutoStartService
         }
     }
 
-    private void RegisterAutoStartTask(bool runElevated)
+    private static void RegisterAutoStartTask(bool runElevated)
     {
         string exePath = System.Diagnostics.Process.GetCurrentProcess().MainModule?.FileName ?? string.Empty;
         if (string.IsNullOrEmpty(exePath) || !File.Exists(exePath))
@@ -296,7 +296,7 @@ internal sealed partial class AutoStartService
         }
     }
 
-    private void UnregisterAutoStartTask()
+    private static void UnregisterAutoStartTask()
     {
         if (TryUseNativeHelper(out _))
         {

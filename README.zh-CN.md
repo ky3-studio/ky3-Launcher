@@ -107,7 +107,7 @@
 ### 前置条件
 
 | 依赖 | 说明 |
-|------|------|
+|:---:|------|
 | <img src="https://img.shields.io/badge/-.NET%2010%20SDK-512bd4?style=flat&logo=dotnet&logoColor=white" alt=""/> | [dotnet.microsoft.com](https://dotnet.microsoft.com/download)，preview 版本 |
 | <img src="https://img.shields.io/badge/-Visual%20Studio%202022-5c2d91?style=flat&logo=visualstudio&logoColor=white" alt=""/> | 或使用 `dotnet` CLI 单独构建 |
 | <img src="https://img.shields.io/badge/-Windows%20App%20SDK-0078d4?style=flat&logo=windows&logoColor=white" alt=""/> | VS Installer 中勾选对应 Workload |
@@ -181,7 +181,7 @@ ky3-Launcher/
 欢迎提交 Issue 和 Pull Request，帮助改进项目。
 
 | 渠道 | 用途 |
-|------|------|
+|:---:|------|
 | <img src="https://img.shields.io/badge/-Issue-da3633?style=flat&logo=github&logoColor=white" alt=""/> [Issues](https://github.com/ky3-studio/ky3-Launcher/issues) | 反馈 Bug、提出功能建议、讨论方案 |
 | <img src="https://img.shields.io/badge/-PR-2ea44f?style=flat&logo=github&logoColor=white" alt=""/> [Pull Requests](https://github.com/ky3-studio/ky3-Launcher/pulls) | 修复问题、新增功能、优化性能 |
 

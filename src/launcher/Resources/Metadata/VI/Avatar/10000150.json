@@ -37,11 +37,14 @@
         "Proud": {
           "Descriptions": [
             "Sát thương lần 1|{param1:F1P}",
+            "Sát thương lần 2|{param2:F1P}",
             "Sát thương lần 3|{param3:F1P}+{param4:F1P}",
             "Sát thương lần 4|{param5:F1P}",
             "Sát thương lần 5|{param6:F1P}",
             "Sát thương Trọng Kích|{param7:F1P}",
-            "Sát thương khi đáp|{param9:F1P}"
+            "Thể lực Trọng Kích tiêu hao|{param8:F1} điểm",
+            "Sát thương khi đáp|{param9:F1P}",
+            "Sát thương khi đáp từ độ cao thấp/cao|{param10:P}/{param11:P}"
           ],
           "Parameters": [
             {
@@ -623,9 +626,13 @@
       "GroupId": 15039,
       "Proud": {
         "Descriptions": [
+          "Sát thương đòn chém|{param1:F1P}x3",
           "Sát thương đòn chém cuối|{param2:F1P}",
+          "Giấc Mơ Thiên Nga Tuyết tăng sát thương phản ứng Tinh Tú Lấp Lánh|{param3:F1P}",
+          "Giấc Mơ Thiên Nga Tuyết duy trì|{param4:F1}s",
           "Bóng Hình Độc Diễn duy trì|{param5:F1}s",
-          "CD|{param6:F1}s"
+          "CD|{param6:F1}s",
+          "Năng Lượng Nguyên Tố|{param7:I}"
         ],
         "Parameters": [
           {
@@ -998,7 +1005,7 @@
     },
     "Fetters": [
       {
-        "Title": "",
+        "Title": "Lần đầu gặp mặt...",
         "Context": "#...Cảm ơn {F#cô}{M#cậu} đã ủng hộ, phía sau chữ ký có cần vẽ họa tiết gì không? Một chiếc lông vũ nhé? Ồ, không phải là người hâm mộ à. Xem ra tôi đã hiểu lầm rồi. Để tôi tự giới thiệu lại nhé. Tôi là Odette, vũ công ba lê của Đoàn Kịch Korolevskiy ở Snezhnaya... Dù sao cũng cảm ơn {F#cô}{M#cậu} đã ủng hộ."
       },
       {
@@ -1014,7 +1021,7 @@
         "Context": "Giá mà thời gian có thể tăng gấp đôi... Không, gấp ba thì tốt biết mấy."
       },
       {
-        "Title": "",
+        "Title": "Khi trời mưa...",
         "Context": "Tiếng mưa rơi tí tách lúc nào cũng khiến tôi cảm thấy bình yên, thời tiết như vậy rất thích hợp để luyện tập một mình."
       },
       {
@@ -1022,7 +1029,7 @@
         "Context": "Những khoảnh khắc bình yên và tươi đẹp luôn chỉ thoáng qua mà thôi."
       },
       {
-        "Title": "",
+        "Title": "Khi tuyết rơi...",
         "Context": "Tuyết ở Snezhnaya vốn dĩ lạnh thấu xương, nhưng lại chẳng bao giờ ngừng rơi."
       },
       {
@@ -1034,7 +1041,7 @@
         "Context": "...May mà không phải tổ chức buổi gặp mặt ở nơi thế này."
       },
       {
-        "Title": "",
+        "Title": "Chào buổi sáng...",
         "Context": "Tôi đã khởi động xong rồi, có thể hành động bất cứ lúc nào."
       },
       {
@@ -1074,7 +1081,7 @@
         "Context": "Mỗi buổi tập dượt tôi đều rất coi trọng, như một buổi biểu diễn thật sự vậy."
       },
       {
-        "Title": "",
+        "Title": "Những kiến thức thú vị...",
         "Context": "Có vài quả Lý Gai Băng Giá không đủ ngọt, chỉ cần rắc một chút muối mịn lên là sẽ thơm ngon ngọt ngào hơn. Nghe nói là nhờ có vị mặn làm nền, vị ngọt sẽ được khuếch đại. Một người hâm mộ đã chỉ cho tôi điều này."
       },
       {
@@ -1162,7 +1169,7 @@
         "Context": "Theo sở thích cá nhân thì tôi không có món nào thấy khó nuốt cả. Nhưng là một vũ công ba lê, tôi phải giữ kỷ luật trong chuyện ăn uống, những món nằm ngoài kế hoạch ăn uống hàng ngày thì tôi sẽ không ăn."
       },
       {
-        "Title": "",
+        "Title": "Nhận Được Quà I",
         "Context": "#Mấy hôm nay biểu diễn khá nhiều, có lẽ... không, không có gì đâu. Cảm ơn {F#cô}{M#cậu}, cái này ngon lắm."
       },
       {
@@ -1174,15 +1181,15 @@
         "Context": "Xin lỗi, tôi đang kiểm soát cân nặng."
       },
       {
-        "Title": "",
+        "Title": "Sinh nhật...",
         "Context": "#Chúc mừng sinh nhật. Không biết {F#cô}{M#cậu} muốn nhận món quà sinh nhật như thế nào? Những gì tôi nhận được luôn là hoa tươi, giày múa và hộp nhạc. Nhưng tôi đoán, đó không phải điều {F#cô}{M#cậu} mong muốn. Chi bằng hãy ước một điều với tôi đi, chỉ cần là điều tôi có thể thực hiện là được."
       },
       {
-        "Title": "",
+        "Title": "Cảm Giác Đột Phá - Khởi",
         "Context": "Vẫn còn thiếu chút gì đó... Tập luyện thêm một chút vậy."
       },
       {
-        "Title": "",
+        "Title": "Cảm Giác Đột Phá - Thừa",
         "Context": "Ừm, động tác chính xác hơn rồi đó. Duy trì cường độ tập luyện như vậy nhé."
       },
       {
@@ -1190,15 +1197,15 @@
         "Context": "Giờ thì tôi tự tin có thể thực hiện hoàn hảo động tác xoay vòng rồi. Nhưng không được giảm cường độ tập luyện."
       },
       {
-        "Title": "",
+        "Title": "Cảm Giác Đột Phá - Hợp",
         "Context": "#\"Cảm xúc cũng là một phần không thể thiếu của ba lê.\" Giờ tôi đã hiểu ý nghĩa của câu đó rồi. Cảm ơn {F#cô}{M#cậu} đã luôn đồng hành và ủng hộ tôi, hôm nay tôi có buổi biểu diễn, đây là vé vào cửa."
       },
       {
-        "Title": "",
+        "Title": "Kỹ Năng Nguyên Tố I",
         "Context": "Bắt đầu."
       },
       {
-        "Title": "",
+        "Title": "Kỹ Năng Nguyên Tố II",
         "Context": "Bóng tuyết trong băng."
       },
       {
@@ -1206,19 +1213,19 @@
         "Context": "Lên."
       },
       {
-        "Title": "",
+        "Title": "Kỹ Năng Nguyên Tố IV",
         "Context": "Thời khắc cùng nhảy múa."
       },
       {
-        "Title": "",
+        "Title": "Kỹ Năng Nguyên Tố V",
         "Context": "Xoay."
       },
       {
-        "Title": "",
+        "Title": "Kỹ Năng Nguyên Tố VI",
         "Context": "Hah."
       },
       {
-        "Title": "",
+        "Title": "Kỹ Năng Nộ I",
         "Context": "Giai điệu băng giá."
       },
       {
@@ -1226,7 +1233,7 @@
         "Context": "Đi trên băng mỏng."
       },
       {
-        "Title": "",
+        "Title": "Kỹ Năng Nộ III",
         "Context": "Dâng tặng, lời ca tụng của thiên nga tuyết."
       },
       {
@@ -1234,7 +1241,7 @@
         "Context": "#Tôi không cần những thứ này đâu, {F#cô}{M#cậu} cầm lấy đi."
       },
       {
-        "Title": "",
+        "Title": "Mở Rương II",
         "Context": "Hành trình cũng giống như một buổi luyện tập, mỗi bước đi đều có ý nghĩa."
       },
       {
@@ -1246,7 +1253,7 @@
         "Context": "Không đáng bận tâm."
       },
       {
-        "Title": "",
+        "Title": "HP Thấp II",
         "Context": "Vết thương nhỏ thôi."
       },
       {
@@ -1258,7 +1265,7 @@
         "Context": "Vẫn ổn chứ?"
       },
       {
-        "Title": "",
+        "Title": "HP Đồng Hành Thấp II",
         "Context": "Đổi người đi."
       },
       {
@@ -1266,7 +1273,7 @@
         "Context": "Là do tôi chưa đủ cố gắng..."
       },
       {
-        "Title": "",
+        "Title": "Ngã Xuống II",
         "Context": "Không được, phải đứng dậy mới được..."
       },
       {
@@ -1282,7 +1289,7 @@
         "Context": "Sau đó thì sao?"
       },
       {
-        "Title": "",
+        "Title": "Bị Trọng Kích I",
         "Context": "Chỉ vậy thôi sao?"
       },
       {
@@ -1290,15 +1297,15 @@
         "Context": "Không hề đau đớn!"
       },
       {
-        "Title": "",
+        "Title": "Vào Đội I",
         "Context": "Tôi đã chuẩn bị sẵn sàng rồi."
       },
       {
-        "Title": "",
+        "Title": "Vào Đội II",
         "Context": "Đây là màn trình diễn đặc biệt sao?"
       },
       {
-        "Title": "",
+        "Title": "Vào Đội III",
         "Context": "Lần này đi đâu vậy?"
       }
     ],
@@ -1308,7 +1315,7 @@
         "Context": "Ở quốc gia khác, khi nhắc đến từ \"vũ công\", mọi người luôn liên tưởng đến hình ảnh thân thiết ấm áp nào đó, giống như tia sáng chữa lành trên con đường dài đằng đẵng của cuộc đời.\nNhưng ở Snezhnaya, mỗi khi nhắc đến vũ công, hình ảnh đầu tiên hiện lên trong tâm trí hầu hết mọi người lại là bóng dáng lạnh giá ấy.\nLà vũ công ba lê hàng đầu của Đoàn Kịch Korolevskiy, khi Odette Spessiva xuất hiện trên các tấm áp phích quảng cáo, biểu cảm của cô luôn trước sau như một: Ánh mắt hờ hững, đôi môi mím nhẹ, tựa như một bức tượng đọng lớp sương mỏng.\nTrái ngược hoàn toàn với điều đó là sự sùng bái cuồng nhiệt từ những người hâm mộ. Lý do rất đơn giản: Vóc dáng không tì vết, màn biểu diễn lạnh lùng nhưng đầy sức hút. Mỗi bước nhảy, mỗi lần nhấc tay đều chuẩn xác như mặt cắt của đá quý, phản chiếu ánh lửa lấp lánh đến hút hồn.\nKhông ai có thể phớt lờ những nỗ lực đằng sau phong thái ấy. Khoảnh khắc Odette bước lên sân khấu, mọi sự hoài nghi đều lập tức tan biến.\nNhưng sau khi hạ màn, cô rất hiếm khi diễn thêm. Cho dù có người hâm mộ tặng hoa và khen ngợi, thì lời đáp của cô cũng luôn vô cùng ngắn gọn:\n\"Ừm. Cảm ơn đã ủng hộ. Tạm biệt.\"\nĐây không phải là cô cố tình tỏ ra kiêu kỳ, mà chỉ vì đằng sau ánh đèn sân khấu rực rỡ đó vẫn còn những trọng trách khác đang chờ đợi cô. Cuộc sống của cô tựa như cuốn lịch treo tường được điền kín, chẳng chừa lại cho bản thân lấy một khoảng trống nào.\nNếu lỡ nhìn thấy một bóng người lướt qua không tiếng động giữa đêm khuya, nhẹ nhàng uyển chuyển đến mức không giống người thường, thì tốt nhất đừng vì tò mò mà hành động khinh suất. Suy cho cùng, đêm tuyết ở Snezhnaya lạnh giá đến vậy, những công dân lương thiện đều đang say giấc nồng ở nhà, kẻ ra ngoài vào lúc này e là đang mang trong mình một sứ mệnh khác.\nNhưng vào sáng sớm hôm sau, Odette lại có mặt đúng giờ trong phòng tập múa của nhà hát. Đôi khi có tiếng nhạc văng vẳng vọng ra, đôi khi chỉ có tiếng động trầm đục khẽ khàng lúc mũi chân chạm đất. Bức tường gương phản chiếu bóng dáng cô lặp đi lặp lại động tác nâng và hạ chân, chuẩn xác như một chiếc máy đếm nhịp.\nKhi ánh ban mai dần rạng, các thành viên khác đẩy cửa bước vào, thường sẽ lộ ra vẻ mặt ngạc nhiên...\nChẳng lẽ vị vũ công ba lê hàng đầu này không về nhà sao?"
       },
       {
-        "Title": "",
+        "Title": "Câu Chuyện Nhân Vật 1",
         "Context": "Sau khi mỗi mùa diễn của Đoàn Kịch Korolevskiy Snezhnaya khép lại, chuyên trang văn nghệ của các tờ báo lớn luôn dấy lên một cuộc thảo luận cuồng nhiệt về vũ công ba lê hàng đầu, Odette.\n\"Hoàn hảo không tì vết, lạnh lùng như băng.\" Lời bình luận mà một tờ báo văn nghệ thường xuyên sử dụng này gần như đã trở thành chú thích cố định của cô.\nNhà phê bình nổi tiếng Tripolev từng viết trong chuyên mục: \"Xem Odette múa, tựa như chứng kiến một lưỡi dao găm được mài giũa đến cực hạn xé toạc không khí. Ai nấy đều thán phục trước sự sắc bén và chuẩn xác ấy, nhưng tuyệt nhiên không một ai muốn đưa tay chạm vào.\"\nNếu lời đánh giá này dành cho những vũ công khác, thì ít nhiều cũng sẽ ảnh hưởng đến sự nghiệp nghệ thuật của họ. Khán giả luôn thích cái đẹp, mà cái đẹp lý tưởng nhất là sự mềm mại, trữ tình và lay động lòng người. Càng dễ chạm vào, càng dễ được cảm nhận.\nNhưng Odette lại hoàn toàn khác. Sự nhiệt huyết, niềm xúc động mà khán giả khao khát được thấy, hay thậm chí là một nụ cười chân thành lúc hạ màn, cô đều không hề mang lại.\nNgoài những biểu cảm cần thiết để lột tả cốt truyện trong bài múa, thì ngay cả ở các buổi gặp mặt công chúng hay những lúc riêng tư, cô ấy vẫn luôn giữ vẻ mặt lạnh nhạt.\nCứ như thể cô đã dồn toàn bộ sức lực vào việc mài giũa kỹ năng múa của mình. Cô yêu cầu bản thân với tiêu chuẩn vượt xa một vũ công ba lê hàng đầu, và kết quả thì ai cũng thấy rõ. Nhưng việc ngụy trang cảm xúc của bản thân, làm hài lòng khán giả có phải là điều mà một vũ công hàng đầu nên làm? Rõ ràng cô không nghĩ như vậy.\nNgười ta vẫn truyền tai nhau rất nhiều câu chuyện nhỏ về cô ấy:\nMột vị quý tộc nọ đã vung tiền bao trọn cả hàng ghế hạng nhất, sau khi buổi diễn kết thúc liền ôm một bó hoa lớn màu xanh của băng đứng đợi ở cửa hậu trường suốt hai tiếng đồng hồ, cuối cùng chỉ nhận được một lời nhắn lại từ phía nhân viên: \"Cô vũ công đã rời đi bằng cửa ngách rồi.\"\nMột bức thư ái mộ dài tận mười trang, nhưng hồi âm nhận được lại chỉ là lời cảm ơn đã ủng hộ như mọi khi. Nếu nét chữ không giống hệt chữ ký của Odette, thì hẳn người ta đã nghi ngờ là do người khác viết thay.\nThậm chí còn có một người hâm mộ cuồng nhiệt say xỉn chặn trước cửa nhà hát, ăn nói luyên thuyên muốn cùng Odette thảo luận về ảnh hưởng của ba lê đối với Snezhnaya. Lúc ra ngoài, Odette không hề đi đường vòng, cô chỉ dừng bước, lặng lẽ nhìn anh ta một cái... Theo hồi tưởng của nhân chứng: Người đó sững sờ vài giây, rồi giống như bị dội một chậu nước đá, tự lẩm bẩm điều gì đó rồi quay lưng bỏ đi.\n...\nCô ấy không che đậy cảm xúc, không tô hồng cuộc sống, nhưng cô lại kiên quyết, lạnh giá và ngoan cường như lớp đất đóng băng dưới chân mình. Sức mạnh của cô là một kiểu sức mạnh trong trẻo và chân thực, là sự đồng điệu thân thuộc từ tận xương tủy của người Snezhnaya.\nOdette vẫn lạnh lùng, dòng người xếp hàng mua vé trước cửa nhà hát vẫn tấp nập không ngớt, tựa như tuyết rơi không ngừng."
       },
       {
@@ -1320,11 +1327,11 @@
         "Context": "Năm Odette chào đời, ánh hào quang của gia tộc Spessiva đã phai nhạt từ lâu, chỉ còn lại vài bức chân dung ố vàng treo trên tường ngôi nhà cũ, đó đều là những bậc tiền bối từng tỏa sáng trên sân khấu. Khi ấy, mẹ cô là Violetta vừa được chọn vào một vai phụ quan trọng trong một vở kịch ba lê. Bà thầm nghĩ, vai chính mới là mục tiêu của mình, đợi đến ngày đó, bà sẽ treo thêm một bức chân dung của bản thân. Cô bé Odette như nghe được suy nghĩ của mẹ, liền khóc toáng lên trong tã lót để tỏ ý phản đối.\n\"Xin lỗi, Odette.\" Người mẹ mỉm cười dịu dàng, khẽ chạm vào chóp mũi nhỏ của cô con gái, \"Tất nhiên là cũng phải chụp con rồi... Chụp một bức ảnh gia đình, treo ảnh cả nhà chúng ta lên.\"\n\"Cộp, cộp, cộp...\" Từ ngoài cửa vọng lại những âm thanh nặng nề và đều đặn, đó là tiếng giày lính nện xuống sàn gỗ, là tín hiệu chỉ thuộc về gia đình này. Người mẹ hiểu rõ thói quen của chồng mình, khi ông vẫn còn đang giậm chân giũ tuyết trước cửa, bà đã mỉm cười bước ra đón.\nThực ra ngôi nhà cũ quá lớn, lò sưởi cháy cũng không đượm lắm, hơi ấm luôn chẳng đủ. Nhưng cái ôm của người nhà lại ấm áp hơn bất cứ thứ gì.\nSau này, Odette lớn hơn một chút, cô đã ghi nhớ nhịp điệu này hệt như cách cô nhớ khuôn mặt của cha mình. \"Cộp, cộp, cộp...\" Nghe thấy nó, đồng nghĩa với bữa tối, những câu chuyện và trọn một đêm yên bình.\nCha là quân nhân, không am hiểu nghệ thuật, trên người quanh năm vương mùi da thuộc và thuốc súng, cùng một chút hơi lạnh của băng tuyết ngoài trời. Nhưng ông là vị khán giả nhiệt tình nhất của cả nhà. Lúc mẹ tập luyện, ông sẽ kéo một chiếc ghế ngồi xem trong góc, thỉnh thoảng vụng về dùng chân gõ nhịp điệu hoàn toàn chệch nhịp. Mẹ trêu ông là người đàn ông có cảm quan âm nhạc kém nhất toàn Snezhnaya. Ông không bao giờ phản bác, chỉ nhe răng cười hì hì bảo \"nhưng anh là khán giả vỗ tay giỏi nhất toàn Snezhnaya\".\nĐiều đó quả thật không sai. Bất kể mẹ đang múa một điệu bài bản, hay chỉ buột miệng ngân nga rồi ngẫu hứng nhảy múa, lúc kết thúc cha nhất định sẽ vỗ tay thật mạnh. Tiếng vỗ tay nồng nhiệt và giòn giã làm bầy chim trên bệ cửa sổ giật mình cất cánh, đồng thời cũng chọc cho cô bé Odette cười khúc khích.\nLúc đó cô bé vẫn chưa biết nhảy múa. Chỉ biết đi tất trượt qua trượt lại trên sàn nhà, hoặc giẫm lên đôi bốt quân đội của cha, bám lấy ngón tay ông rồi chập chững bước đi. Cha bước một bước, cô bé theo một bước, giống như một chú chim non đứng còn chưa vững.\n\"Nhìn kìa\"... Cha lần nào cũng nói với mẹ, \"bé thiên nga tuyết nhỏ nhà chúng ta đang nhảy múa rồi.\"\n\"Đó cùng lắm chỉ là một con vịt nhỏ thôi\". Mẹ mỉm cười sửa lại, \"thiên nga là phải thẳng lưng.\"\nThế là cha liền ngồi xổm xuống, dùng hai ngón tay chạm nhẹ vào lưng cô: \"Thẳng lưng lên nào, thiên nga tuyết bé nhỏ.\"\nCuối cùng cũng có một ngày, mẹ chính thức dạy cô những kỹ năng cơ bản. Ép dẻo, miết chân, đá chân thấp... Những động tác nhập môn tẻ nhạt lặp đi lặp lại cả trăm lần. Là một giáo viên, mẹ cô rất nghiêm khắc, sai một vị trí chân là phải làm lại, không thể thương lượng. Nhiều lúc Odette tập đến mức đỏ hoe cả mắt, nhưng cô vẫn bướng bỉnh mím môi và tiếp tục luyện tập.\nNhưng mỗi khi kết thúc buổi tập, cha đều xuất hiện đúng giờ trước cửa.\n\"Hôm nay con học được gì? Cho cha xem nào?\"\nOdette liền lóng ngóng biểu diễn lại một lượt các động tác vừa học. Bất kể cô bé múa ra sao, phản ứng đầu tiên của cha luôn là vỗ tay, những tràng pháo tay thật to và trịnh trọng, sau đó ông ngồi thấp người xuống, vô cùng nghiêm túc nói:\n\"Giỏi lắm. Con gái của cha sau này nhất định sẽ trở thành vũ công ba lê hàng đầu.\"\nMẹ nhẹ nhàng tựa đầu vào vai cha, đôi lông mày vốn nhíu chặt nay đã giãn ra, ánh mắt cong lên mỉm cười. Odette khi đó còn nhỏ, chưa hiểu vũ công ba lê hàng đầu có ý nghĩa gì, nhưng vẻ mặt tự hào của cha khi nói câu đó, cùng ánh mắt kỳ vọng chan chứa nụ cười của mẹ khi nhìn cô, đã âm thầm gieo cho cô một hạt giống trong lòng."
       },
       {
-        "Title": "",
+        "Title": "Câu Chuyện Nhân Vật 4",
         "Context": "Cứ tưởng ngày tháng sẽ kéo dài ấm áp như vậy.\nNhưng tiếng bước chân của cha đã biến mất. Một ngày, hai ngày, ba ngày... Cô bé Odette đợi mãi, đợi mãi, cuối cùng thứ cô chờ được, lại là tiếng giày quân đội xa lạ.\nHai người lính Fatui đứng trước cửa với vẻ mặt trang nghiêm, trao cho mẹ một bức thư. Một vũ công vốn có thể điều khiển chuẩn xác từng chuyển động trên cơ thể, giờ đây lại chẳng thể ngăn nổi đôi bàn tay đang run rẩy. Cô bé Odette sốt ruột kiễng chân lên, cố hết sức để nhìn cho rõ trên đó viết gì. Cô bé đã thấy một dòng thông báo ngắn gọn, thứ mà cô ước gì mình chưa bao giờ nhìn thấy.\nĐêm đó, căn nhà im ắng đến mức như thể mọi âm thanh đều bị rút cạn. Sáng sớm hôm sau, mẹ vẫn ra khỏi nhà đến phòng tập múa của nhà hát như thường lệ. Ngày thứ ba, ngày thứ tư...\nTrong buổi biểu diễn chính thức, Odette ở dưới khán đài đã tận mắt chứng kiến cảnh mẹ mình vấp ngã, cô mong mỏi biết bao rằng đó chỉ là một động tác đã được tập luyện từ trước, chứ không phải sự cố mất kiểm soát thực sự, hoặc có lẽ cô vẫn đang chìm trong một cơn ác mộng chưa tỉnh. Nhưng rồi lớp màn sân khấu vội vã buông xuống, giữa lúc hỗn loạn, cô thoáng nhìn thấy khuôn mặt của mẹ, vẻ rạng rỡ ngày nào nay đã tan biến không còn tăm tích, chỉ còn lại sự nhợt nhạt đến thê lương.\nSau quá trình điều trị, bác sĩ tiếc nuối thông báo rằng, ngay cả khi vết thương đã lành, bà cũng khó lòng thực hiện lại bất kỳ động tác vũ đạo có độ khó cao nào nữa.\n...\nChiếc ghế cha thường ngồi trong phòng khách đã bị đẩy vào góc, dần chất đầy đồ đạc lặt vặt. Tờ báo cha từng cầm trên tay bắt đầu quăn mép, ố vàng, chẳng còn ai cần đến. Thỉnh thoảng củi trong lò sưởi cháy rụi, cả căn nhà lại trở nên lạnh lẽo chẳng khác gì ngoài trời. Hai mẹ con quấn chăn ngồi ở hai đầu chiếc sofa, để trống vị trí ở giữa mà cha từng ngồi, chẳng một ai buồn nhích lại gần đó.\nMẹ vẫn dạy cô múa, nhưng không còn làm mẫu chuẩn được nữa. Bà thường ngồi trên xe lăn, dùng gậy gõ xuống sàn đếm nhịp: \"Cộc, cộc, cộc...\"\nBa lê vốn là vẻ đẹp được xây dựng trên sự đau đớn, nhưng Odette chưa bao giờ kêu đau. Ngón chân phồng rộp rướm máu thì dùng băng gạc quấn lại, hết lớp này đến lớp khác. Khi nỗi đau vượt qua một giới hạn nào đó, nó lại trở nên dễ chịu đựng hơn, dường như cơ thể đã trở nên tê dại. Cô gạt đi những giọt mồ hôi trên mặt mà nhìn mẹ mình. Mẹ cũng đang nhìn cô, ánh mắt chất chứa nỗi đau tương tự. Cả hai cùng lúc dời mắt đi, rồi lại tiếp tục việc dạy và học. Họ phải dựa vào những động tác lặp đi lặp lại để lấp đầy những khoảng thời gian không thể ngừng nghỉ, bởi một khi dừng lại, họ sẽ phải nhớ đến điều gì đó.\nPhá vỡ vòng tuần hoàn này, là tiếng giày cao gót xa lạ.\nĐó là cấp trên lúc sinh thời của cha, Quan Chấp Hành Fatui thứ 8 Signora. Theo chỉ thị của Capitano, cô đến thăm hỏi góa phụ.\nSignora thoáng thấy dáng múa uyển chuyển của Odette, bèn cất lời...\n\"Cô Spessiva, tôi không có ý khơi lại nỗi đau của cô, nhưng với một người đã mất đi nguồn thu nhập như cô, chỉ dựa vào tiền tử tuất thì rất khó để nuôi con. Chi bằng hãy giao con bé cho Fatui, chúng tôi rất sẵn lòng bồi dưỡng những mầm non có tiềm năng. Đổi lại, cô cũng sẽ nhận được một khoản trợ cấp.\"\nNgười mẹ không chút do dự từ chối. Sự nguy hiểm của Fatui là điều hiển nhiên, bà đã vì chúng mà mất đi người chồng yêu dấu, và không dám tưởng tượng đến bất cứ khả năng nào phải mất luôn cả con gái.\nNhưng Odette, người nãy giờ vẫn lén nghe cuộc đối thoại của hai người, bỗng nhiên lao tới. Bằng giọng nói non nớt nhưng kiên định, cô bé nói rằng mình có thể làm được mọi thứ. Cô bé sẽ đảm bảo an toàn cho bản thân, và chắc chắn sẽ tìm ra cách để cân bằng giữa việc tập luyện ba lê và huấn luyện của Fatui.\nSignora quan sát đôi mắt màu xanh tím trong veo trước mặt, tựa như ngọn lửa bùng lên từ trong băng.\n\"Tôi có thể làm được.\" Thấy không ai đáp lời, Odette lại nhấn mạnh thêm lần nữa. Vẻ mặt của cô đầy cố chấp, kiên cường, dứt khoát mà bất chấp mọi giá... Thật quen thuộc làm sao, cô thiêu đốt chính mình, rồi lại dùng đôi môi mím chặt để ngụy trang ra vẻ cứng cỏi...\nSignora hừ lạnh một tiếng, nhưng lòng kiêu hãnh không cho phép cô rút lại lời mời của mình:\n\"Vậy thì đi theo tôi, để xem bao lâu thì nhóc sẽ bỏ cuộc.\""
       },
       {
-        "Title": "",
+        "Title": "Câu Chuyện Nhân Vật 5",
         "Context": "Khi nhiệm vụ kết thúc, bầu trời vẫn chìm trong màn đêm đen kịt, lạnh lẽo như màn băng.\nOdette cất dao găm, vẻ mặt vô cảm kiểm tra khắp người. Quần áo không có vết bẩn nào dễ thấy, mặt giày hơi ướt nhưng không cản trở việc di chuyển. Mục tiêu đã hoàn tất, đối phương cũng đã sợ vỡ mật, chắc hẳn sẽ không dám làm càn nữa.\nSnezhnaya về đêm rất yên tĩnh. Lớp tuyết đọng hấp thụ phần lớn âm thanh, từng bước chân cô giẫm lên đó gần như không một tiếng động. Sự tĩnh lặng này chừa lại cho đầu óc cô một khoảng rảnh rỗi, mà rảnh rỗi thường đồng nghĩa với việc sẽ nhớ tới những chuyện không cần thiết.\nVí dụ như động tác cuối cùng vừa rồi. Đó là một pha kết thúc rất gọn gàng, cổ tay xoay vào trong rồi đưa về vị trí cũ, vừa nhanh vừa chuẩn. Nhưng cô biết rõ, khoảnh khắc thu dao găm lại có một sự khựng lại rất nhỏ, khi rút cánh tay phải về, các đầu ngón tay hơi vươn ra ngoài, biên độ cực kỳ nhẹ.\nBản thân cô ấy biết đó là gì, là động tác của điệu ba lê khi kết thúc biểu diễn.\nHồ sơ đánh giá của Fatui ghi rằng phong cách chiến đấu của cô tựa như múa ba lê, còn mẹ cô lại nói, điệu ba lê của cô thiếu đi cảm xúc.\nKhi chiến đấu cô bất giác để lộ dáng múa, lúc múa lại vận dụng sức mạnh được rèn luyện từ chiến đấu, những điều này dường như là luồng khí tự tuôn trào từ trong cơ thể, nương theo từng hơi thở, từng nhịp đập trái tim của cô, tựa như một thứ gì đó đã sớm khắc sâu vào ký ức của xương tủy và cơ bắp.\nLưỡi dao và mũi chân đã sớm hòa làm một trong cơ thể cô.\nCó lẽ vốn dĩ cô ấy không có nhiều thân phận đến thế. Từ đầu đến cuối, đều chỉ là một... Một người bị mùa đông làm lạnh thấu xương, chỉ có thể nắm chặt mọi thứ có thể nắm lấy trong tay.\n...\nOdette khẽ bước đến cửa sau của Nhà Hát Korolevskiy.\nTrong phòng tập, cô thay giày múa, không bật đèn. Ánh trăng lạnh lẽo hắt vào từ khung cửa sổ trên cao, như một lưỡi dao cắt sàn nhà thành hai nửa sáng tối.\nCô nhảy múa trong ánh sáng trắng lạnh lẽo chập chờn, đây là khoảng thời gian hiếm hoi hoàn toàn thuộc về riêng cô.\nKhông có âm nhạc, không có tiếng gậy chống của mẹ, càng không có tiếng bước chân của cha. Chỉ có nhịp thở của chính cô và âm thanh khe khẽ khi mũi chân chạm đất. Từng động tác đều là ngẫu hứng, không qua biên đạo, cũng chẳng dành cho bất kỳ khán giả nào.\nMồ hôi và nước mắt hòa quyện vào nhau theo những vòng xoay ngày một nhanh của cô. Cô đấu tranh, cô khát khao, cô bộc bạch, cô nhảy múa.\nNếu có những bông tuyết rơi ngang qua khung cửa sổ, trở thành khán giả của cảnh tượng này, có lẽ chúng sẽ nghĩ rằng...\nVị vũ công ba lê hàng đầu của Đoàn Kịch Korolevskiy này, thực ra không hề lạnh lùng như lời đồn."
       },
       {

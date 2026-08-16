@@ -36,6 +36,7 @@
         "GroupId": 14831,
         "Proud": {
           "Descriptions": [
+            "Sát thương lần 1|{param1:F1P}",
             "Sát thương lần 2|{param2:F1P}",
             "Sát thương lần 3|{param3:F1P}+{param4:F1P}",
             "Sát thương lần 4|{param5:F1P}",
@@ -299,6 +300,8 @@
         "Proud": {
           "Descriptions": [
             "Sát thương nhấn|{param1:F1P}",
+            "Sát thương nhấn giữ|{param2:F1P}",
+            "CD|{param3:F1}s",
             "Dấu Ấn Săn Bắn duy trì|{param4:F1}s",
             "Mệnh Lệnh Thợ Săn tăng Tấn Công|{param5:F1P}",
             "Mệnh Lệnh Thợ Săn duy trì|{param6:F1}s"
@@ -500,7 +503,9 @@
         "Descriptions": [
           "Sát thương Bãi Săn Sấm Rền|{param1:F1P}",
           "Sát thương Tugarin|{param2:F1P}",
-          "Thời gian duy trì|{param3:F1}s"
+          "Thời gian duy trì|{param3:F1}s",
+          "CD|{param4:F1}s",
+          "Năng Lượng Nguyên Tố|{param5:I}"
         ],
         "Parameters": [
           {
@@ -851,7 +856,7 @@
         "Context": "Khoản này gửi về quê, khoản này đưa cho người trong hội mua thuốc, còn Mora để bảo dưỡng súng săn thì... để xem lần này băng cướp nào xui xẻo gặp phải tôi đây."
       },
       {
-        "Title": "",
+        "Title": "Khi trời mưa...",
         "Context": "Mũ trùm đầu sắp ướt hết rồi... Tugarin, đừng có vẩy nữa!"
       },
       {
@@ -859,7 +864,7 @@
         "Context": "Mấy kẻ trốn trong hang sắp ra ngoài rồi."
       },
       {
-        "Title": "",
+        "Title": "Khi có sấm sét...",
         "Context": "Muốn mai phục người khác à? Vừa hay có thể lợi dụng tiếng sấm để bắn tỉa."
       },
       {
@@ -879,11 +884,11 @@
         "Context": "Sáng nào chim trong rừng cũng kêu ríu rít... Có muốn đi bắn vài con không?"
       },
       {
-        "Title": "",
+        "Title": "Chào buổi trưa...",
         "Context": "#Bữa trưa của tôi thường ăn ở bên ngoài, nhưng tôi không khuyến khích {F#cô}{M#cậu} làm vậy đâu."
       },
       {
-        "Title": "",
+        "Title": "Chào buổi tối...",
         "Context": "Đêm xuống rồi, rất nhiều con mồi quý hiếm thường chỉ ra ngoài hoạt động vào lúc này."
       },
       {
@@ -911,7 +916,7 @@
         "Context": "Tôi nghe người ta nói Vision đại diện cho nguyện vọng của một người. Nhưng mà nguyện vọng nghe có vẻ hư ảo quá, tôi chỉ quan tâm đến những lợi ích thực tế mà nó mang lại thôi. Nếu không phát hiện ra nó có thể tăng cường năng lực đặc biệt của mình thì chắc tôi đã đem đi đổi lấy Mora rồi."
       },
       {
-        "Title": "",
+        "Title": "Có gì muốn chia sẻ không...",
         "Context": "#Khi đi bộ trên cánh đồng tuyết Snezhnaya, biết tiếng lóng là một kỹ năng rất quan trọng. Lỡ gặp phải băng đảng fae hay bọn cướp, miệng lưỡi lanh lợi một chút là có thể tránh được cả đống rắc rối. À đúng rồi, nếu gặp một đám cứ nhắc đi nhắc lại \"thịt gà\" thì cứ việc cướp luôn. \"Thịt gà\" là chỉ những người qua đường không có gì đáng lo, nhưng mang theo ít tiền bạc trên người. Kẻ nào chỉ dám ra tay với \"thịt gà\" là đồ vô dụng trong giới cướp bóc, với tay nghề của {F#cô}{M#cậu} và tôi thì vài ba chiêu là xử xong. Ừm, đây là cướp lại của kẻ cướp, chúng không dám báo cáo với Druzhna đâu, chỉ có thể ngậm bồ hòn làm ngọt thôi."
       },
       {
@@ -967,7 +972,7 @@
         "Context": "Mora chi cho việc cải tạo, Mora chi cho việc bảo dưỡng, Mora chi cho việc thử súng... Chỉ cần ngồi tính kỹ một chút, ai cũng sẽ nhận ra rằng sở thích lớn nhất đôi khi lại chính là nỗi phiền não lớn nhất."
       },
       {
-        "Title": "",
+        "Title": "Món ăn yêu thích...",
         "Context": "Thịt được hun khói, bánh mì để được lâu, phô mai nướng lên là tan chảy ngay... Có mấy thứ ngon lành này rồi, dù giữa trời băng giá, chỉ cần nhóm lửa lên là tôi có thể dọn ra cả một bữa tiệc linh đình."
       },
       {
@@ -975,15 +980,15 @@
         "Context": "Tôi rất không thích ăn mấy thứ có vỏ, như cua, tôm hùm, kiểu thế. Tốn bao nhiêu Mora, mất bao nhiêu công sức, vật lộn với càng và gai, chỉ để lấy được chút xíu thịt? Vừa không đáng, vừa không thỏa mãn gì cả."
       },
       {
-        "Title": "",
+        "Title": "Nhận Được Quà I",
         "Context": "Cảm ơn nhé, ngon thật đấy... Loại đồ ăn này có thể bảo quản để ăn dần không?"
       },
       {
-        "Title": "",
+        "Title": "Nhận Được Quà II",
         "Context": "#Hm... Để tôi giới thiệu cho {F#cô}{M#cậu} vài loại thịt rừng hiếm nhé? Thêm vào vài nguyên liệu cao cấp hơn thì món ăn này chắc chắn sẽ ngon hơn nhiều."
       },
       {
-        "Title": "",
+        "Title": "Nhận Được Quà III",
         "Context": "...Không được lãng phí lương thực, ở những ngôi làng trên cánh đồng tuyết chắc chắn có người cần những thứ này hơn tôi."
       },
       {
@@ -1003,7 +1008,7 @@
         "Context": "Số lần trúng nhiều hơn rồi... Đây rốt cuộc là chuyện tốt hay xấu đây?"
       },
       {
-        "Title": "",
+        "Title": "Cảm Giác Đột Phá - Hợp",
         "Context": "Để thực hiện được lý tưởng đó, còn bao xa nữa mới tới đích nhỉ?"
       },
       {
@@ -1015,11 +1020,11 @@
         "Context": "Trúng!"
       },
       {
-        "Title": "",
+        "Title": "Kỹ Năng Nguyên Tố III",
         "Context": "Ngã!"
       },
       {
-        "Title": "",
+        "Title": "Kỹ Năng Nguyên Tố IV",
         "Context": "Nấp xong chưa nào?"
       },
       {
@@ -1031,11 +1036,11 @@
         "Context": "Bắt được rồi nhé!"
       },
       {
-        "Title": "",
+        "Title": "Kỹ Năng Nộ I",
         "Context": "Bắt lấy nào, Tugarin!"
       },
       {
-        "Title": "",
+        "Title": "Kỹ Năng Nộ II",
         "Context": "Tugarin, đến giờ chơi rồi!"
       },
       {
@@ -1047,7 +1052,7 @@
         "Context": "Nhìn kỹ vào, đừng bỏ sót gì nhé."
       },
       {
-        "Title": "",
+        "Title": "Mở Rương II",
         "Context": "Có gì đổi được Mora không nhỉ?"
       },
       {
@@ -1055,11 +1060,11 @@
         "Context": "Cất kỹ rồi đi thôi, cẩn thận đừng để kẻ xấu chú ý đấy."
       },
       {
-        "Title": "",
+        "Title": "HP Thấp I",
         "Context": "Sắp mất nhiệt rồi..."
       },
       {
-        "Title": "",
+        "Title": "HP Thấp II",
         "Context": "Phải tìm vật cản trước đã..."
       },
       {
@@ -1071,15 +1076,15 @@
         "Context": "Rút lui đi, để tôi yểm trợ!"
       },
       {
-        "Title": "",
+        "Title": "HP Đồng Hành Thấp II",
         "Context": "Đừng liều mạng, con mồi có tôi trông chừng rồi."
       },
       {
-        "Title": "",
+        "Title": "Ngã Xuống I",
         "Context": "Lần này tôi mới là con mồi sao?"
       },
       {
-        "Title": "",
+        "Title": "Ngã Xuống II",
         "Context": "Tugarin, chạy mau đi..."
       },
       {
@@ -1087,7 +1092,7 @@
         "Context": "Nếu tôi có thể bắn nhanh hơn..."
       },
       {
-        "Title": "",
+        "Title": "Chịu Đòn Thường I",
         "Context": "Không đáng..."
       },
       {
@@ -1095,11 +1100,11 @@
         "Context": "Xây xát nhẹ thôi."
       },
       {
-        "Title": "",
+        "Title": "Bị Trọng Kích I",
         "Context": "Khá hung dữ đấy..."
       },
       {
-        "Title": "",
+        "Title": "Bị Trọng Kích II",
         "Context": "Ai bắn lén vậy?"
       },
       {
@@ -1107,11 +1112,11 @@
         "Context": "Bắt đầu săn bắn."
       },
       {
-        "Title": "",
+        "Title": "Vào Đội II",
         "Context": "Lên đạn."
       },
       {
-        "Title": "",
+        "Title": "Vào Đội III",
         "Context": "Con mồi ở đâu?"
       }
     ],
@@ -1121,7 +1126,7 @@
         "Context": "Ở Snezhnaya, cái tên \"Alyosha\" đặc biệt được lòng người.\nKhông phải vì một thợ săn trẻ tuổi nào đó đã lập nên kỳ tích vang danh thiên hạ, mà là vì chính cái tên ấy mang trong mình ý nghĩa tốt đẹp, khiến biết bao bậc cha mẹ ngày đêm thương nhớ.\nDũng cảm, thuần khiết và lương thiện...\nHọ cầu mong con mình sẽ có được những phẩm chất tốt đẹp như vậy, cầu mong con mình có thể thoát khỏi sự trói buộc của số phận như những vị anh hùng trong truyền thuyết.\nNhưng họ đã bỏ quên, bỏ quên rằng băng tuyết Snezhnaya chưa bao giờ đáp lại lời cầu nguyện, bỏ quên rằng bản thân giá lạnh khắc nghiệt đã là một chiếc giũa tàn nhẫn.\nChỉ với tên thôi, thì không đổi được lòng dũng cảm thật sự. Chỉ có lòng tốt rỗng tuếch, cũng khó tránh khỏi ngọn lao của số phận.\nChỉ có những ai dám trải nghiệm, chiến đấu và sống như một anh hùng mới có thể phá vỡ lời nguyền của thực tại. Chỉ có những ai lần lượt chôn chân mình vào vùng tuyết băng giá lạnh lẽo mới có cơ hội săn được hy vọng.\nDĩ nhiên, chưa ai từng giải thích những đạo lý như vậy cho Alyosha, và anh cũng chẳng có thời gian để băn khoăn hay suy nghĩ về chúng.\nAnh chỉ biết rằng, để mọi người không phải chịu đói rét, anh cần tiến sâu hơn vào cánh đồng tuyết, cần mang về nhiều chiến lợi phẩm hơn, cần cùng Tugarin khai mở những con đường dài hơn, rộng hơn.\nCòn những toan tính phức tạp kia, cứ để mấy \"người thực dụng\" tự cân nhắc.\nCòn những triết lý cao siêu, cứ để những \"người theo chủ nghĩa lý tưởng\" lo liệu.\nLà một thợ săn săn mồi trong giá lạnh, anh chỉ biết lau bóng nòng súng rồi kéo cò.\nNhưng những ai quen biết anh đều biết rõ:\n\"Đó là một chàng trai tốt, giống như nhân vật 'Alyosha' trong vô số truyền thuyết dân gian. Dũng cảm, thuần khiết và lương thiện...\"\nVà cơn cuồng phong gào thét sẽ cầu nguyện rằng:\n\"Cầu mong Ngọn Đuốc Kresnik có thể rực cháy như linh hồn của anh.\""
       },
       {
-        "Title": "",
+        "Title": "Câu Chuyện Nhân Vật 1",
         "Context": "Ước mơ thuở nhỏ của Alyosha rất giản dị:\nHọc nghề từ cha, trở thành một thợ săn tự lập như ông, và vào ngày trưởng thành sẽ nhận món quà cha đã chuẩn bị cho mình... Đó là khẩu súng săn lên đạn bằng tay tuyệt nhất trên đời.\nNhưng ước mơ thì luôn khó thành hiện thực.\nAi cũng biết rằng ở Snezhnaya, những cánh đồng tuyết bạt ngàn sẽ vô cùng lạnh giá và nguy hiểm chết người. Vậy mà mùa đông năm nay còn khắc nghiệt hơn bao giờ hết.\nĐối với những gia đình bình thường sống ở vùng hẻo lánh, điều này đồng nghĩa với chi tiêu nhiều hơn, thu nhập ít hơn, cuộc sống vất vả hơn, và chỉ cần một sơ sẩy nhỏ là cuộc sống có thể sụp đổ hoàn toàn.\nTất nhiên, trong hoàn cảnh như vậy, có người sẽ chọn cách cố gắng hết sức để làm việc, mong những ngày tháng mong manh này sẽ không tan vỡ thành từng mảnh, chẳng hạn như gia đình Alyosha.\nCũng có người lại chọn cách từ bỏ hoàn toàn nhân tính, sa ngã vào vực sâu mang tên hiện thực, vung đao chém những kẻ còn yếu hơn họ, chẳng hạn như bọn cướp đang xông vào Alatyr lúc này.\nBọn cướp vung những thanh đao gỉ sét và gậy gộc, phá tung những cánh cửa gỗ vốn đã ọp ẹp của dân làng, vơ vét sạch số Mora và Kristall ít ỏi còn lại của họ. Thậm chí cả những ổ bánh mì đen trộn mùn cưa lẫn bột mì, bọn cướp cũng chẳng bỏ qua.\nDĩ nhiên, tội ác của bọn cướp không chỉ dừng lại ở đó.\nThấy dân làng đứng chết trân vì sợ hãi, bọn cướp càng ngày càng lộng hành, thậm chí còn lấy đuốc ra, định thiêu rụi những đồ đạc và ngôi nhà không mang đi được.\nĐể bảo vệ Alyosha đang trốn trong tủ, cha mẹ bắt đầu liều mạng chống cự. Những người dân làng cũng như vừa tỉnh mộng, vội vơ lấy dao bếp và nông cụ trong nhà...\nCó lẽ vì sợ hãi, cũng có thể vì trời đã tối, bọn cướp cuối cùng cũng tháo chạy, bỏ lại cha mẹ Alyosha tại chỗ.\nDù cha mẹ cố gắng cười gượng, nói rằng không có gì nghiêm trọng, nhưng Alyosha biết rõ, vết thương trên người họ ít nhất phải mất nửa năm mới có thể phục hồi phần nào, và đó là trong trường hợp có đủ tiền thuốc thang.\nMất đi sức lao động mà lại còn cần một khoản tiền thuốc thang khổng lồ, điều này có ý nghĩa gì đối với một gia đình không có lương thực dự trữ, cũng chẳng có đồng tiền để dành, thì không cần phải nói thêm nữa.\nRồi trong cái đêm dài không ngủ được đó, Alyosha đã từ bỏ ước mơ của mình.\nAnh cạy khe hở trên sàn nhà, tháo gói đồ được quấn qua nhiều lớp giấy dầu, lấy ra khẩu súng săn mà cha đã dùng tiền tiết kiệm cả năm trời để chuẩn bị cho anh. Đó là món quà trưởng thành vốn định đợi đến khi anh đủ tuổi mới tự tay trao tặng.\nGió tuyết ồn ào có thể vùi lấp dấu chân, nhưng những cành cây gãy và mặt đất đóng băng bị giẫm vỡ vẫn sẽ chỉ đường cho thợ săn.\nNửa ngày phản ứng có thể khiến bọn cướp tự nghĩ rằng chúng đã an toàn thoát khỏi sự truy đuổi, nhưng Alyosha đã chặn đứng con đường của chúng từ bên trong.\nChúng tưởng mình khôn ngoan hơn loài thú, nhưng trước đôi mắt của Alyosha, đôi mắt có thể nhìn thấu mọi chuyển động của sinh vật, chúng chẳng khác gì con mồi sắp bị săn.\nChưa đến nửa ngày, trước khi mặt trời ló dạng, họng súng của Alyosha đã chĩa thẳng vào đám cướp đang mất cảnh giác kia.\nChỉ một lúc sau, Alyosha đã hạ gục tất cả bọn cướp.\nĐiều này còn đơn giản hơn cả săn bắn. Đó là cảm giác đầu tiên của Alyosha.\nĐúng vậy. Xét cho cùng, động vật nghe thấy tiếng súng sẽ chạy tán loạn, còn con người lại chọn cách co rúm lại và cầu xin tha thứ.\nĐiều này giúp Alyosha tiết kiệm được khá nhiều công sức. Dĩ nhiên, Alyosha đã không chọn cách tha thứ cho bọn chúng...\nSau khi xác nhận an toàn, Alyosha nhổ ngụm nước tuyết đang ngậm trong miệng để tránh hơi thở phả ra thành khói trắng, rồi khom người chậm rãi tiến lại gần đám cướp đang nằm la liệt trên mặt đất.\nCái mùi gỉ sét nồng nặc đáng ra phải quá quen thuộc. Cái cảnh hỗn loạn đó, bản thân đáng ra cũng đã trải qua không biết bao nhiêu lần. Còn việc nhìn thẳng vào từng đôi mắt kia, anh đáng ra cũng chẳng bao giờ ngần ngại...\nNhưng Alyosha lại có cảm giác như đang quay về lần đầu tiên theo cha vào sâu trong rừng tuyết để kiểm tra chiến lợi phẩm, đến cả bước chân cũng trở nên bỡ ngỡ, không biết phải làm sao.\nChỉ là lần này, không còn ai đặt bàn tay ấm áp và vững chắc lên vai anh nữa.\nAnh cứ đứng ngẩn ngơ như vậy, mãi cho đến khi mặt trời lên cao tới đỉnh đầu mới bắt đầu hành động trở lại.\nTừ trong túi đồ của đám cướp, anh lấy ra một cái cuốc sắt cũ nát...\n\"Đừng trách tôi, là do các người tự chuốc lấy thôi...\""
       },
       {
@@ -1129,7 +1134,7 @@
         "Context": "Ước mơ thuở niên thiếu của Alyosha rất giản dị:\nMỗi ngày săn được nhiều thú hơn, dùng thân mình và đôi vai gánh vác gánh nặng của gia đình, để cha mẹ và bản thân đều có thể vượt qua mùa đông khắc nghiệt này.\nNhưng ước mơ thì luôn khó thành hiện thực.\nTrận huyết chiến với bọn cướp tuy giúp anh lấy lại được những thứ bị cướp đi, nhưng vẫn không thể bù đắp được những mất mát mà gia đình anh phải gánh chịu.\nNgoài số tang vật cướp được từ Alatyr, bọn cướp đó hầu như không có gì trong tay. Điều này có nghĩa là trong đêm liều mình chiến đấu đó, Alyosha chỉ lấy lại được những thứ vốn dĩ thuộc về họ.\nNhưng ở phía bên kia, chi phí thuốc thang đắt đỏ cùng với đòn giáng nặng nề khi cả cha lẫn mẹ đều mất đi sức lao động đã đẩy gia đình này vào tuyệt cảnh.\nGánh nặng như vậy, ngay cả những thợ săn lão luyện nhất cũng khó mà gánh nổi, huống chi là một đứa trẻ chưa thành niên với chiều cao chẳng hơn khẩu súng săn là bao?\nTệ hơn nữa, trong thảm họa này, gần như nhà nào ở Alatyr cũng chịu chung số phận, chẳng còn người hàng xóm nào còn đủ sức để ra tay giúp đỡ.\nTrong tuyệt cảnh đó, Alyosha mới thực sự hiểu tại sao cha anh ngày trước thà dành ít thời gian dạy cách cầm súng hơn, mà vẫn kiên quyết dạy anh cái kỹ năng \"vô dụng\" như tính toán.\nTrong hoàn cảnh hiện tại, mỗi lần bắn súng, mỗi hành động, thậm chí mỗi bữa ăn của Alyosha đều cần phải tính toán kỹ lưỡng. Chỉ cần sơ sẩy một chút, gia đình vốn đã khó khăn lắm mới cầm cự được đến giờ sẽ bị tuyết mùa đông nhấn chìm hoàn toàn.\nDĩ nhiên, chỉ tiết kiệm thôi thì chưa đủ, còn cần phải tìm thêm nguồn thu mới được...\nCũng chính lúc này, Alyosha nghe được một tin đồn: Có người trong làng muốn rủ nhau đi sâu vào vùng hoang dã để tìm một \"con đường thoát\".\nAi cũng hiểu rằng, cơn bão tuyết Snezhnaya đáng sợ đó có thể nuốt chửng tất cả. Chưa kể sâu trong vùng hoang vu còn có những mãnh thú nanh vuốt khát máu, và cả những tên thổ phỉ hung tàn còn đáng sợ hơn cả mãnh thú.\nKẻ nào vào lúc này vẫn cố tìm kiếm \"con đường\" giữa vùng hoang dã, nếu không phải là đồ ngốc không có não, thì cũng là kẻ tham vọng không đáy.\nVà khi nhóm người đó tìm đến mời nhập hội, Alyosha lập tức khẳng định rằng họ ít nhất cũng là những kẻ có tham vọng, vì nhóm người này cũng đang nhắm vào đồng loại của mình.\nNhưng Alyosha cũng hiểu rằng những gì nhóm người đó nói không phải là không có lý. Nhìn vào hoàn cảnh hiện tại, chỉ dựa vào chút ít chiến lợi phẩm ít ỏi kia thì không cách nào gánh vác nổi cái gia đình đang trên bờ vực sụp đổ này.\nNhìn căn nhà bốn bức tường trống huơ trống hoác, Alyosha phớt lờ sự phản đối của cha mẹ và một lần nữa từ bỏ ước mơ của mình.\nVận dụng mấy câu tiếng lóng mà Alyosha năn nỉ mãi mới học được từ cha, anh nhìn thẳng vào đám người trước mặt, toàn những kẻ cao to và lớn tuổi hơn mình, rồi đáp lại lời mời của họ:\n\"Tôi đồng ý rồi đấy. Nhưng nói trước cho rõ, chúng ta đi làm 'thợ săn', chỉ nhắm vào những 'dã thú' có vuốt có nanh, không được ra tay với 'gia cầm' tay không tấc sắt, cũng không được để xảy ra án mạng.\"\nĐáp lại Alyosha chỉ là sự im lặng và những ánh mắt ngơ ngác.\nĐám người trước mắt có vẻ chỉ có tham vọng, chứ chẳng hề chuẩn bị gì cả, dù là về mặt tâm lý, vật chất, hay kỹ năng...\nKhông còn nghi ngờ gì nữa, đám người này cũng chỉ là một lũ ngốc.\nAlyosha cảm thấy đây không phải lựa chọn hay, nhưng cũng chẳng còn cách nào khác.\nSau khi thầm chép miệng một cái, Alyosha thản nhiên tiếp tục: \"Gia cầm là những thương nhân hay người qua đường bình thường. Còn dã thú là những tên cướp đường và băng đảng có vũ lực, chúng giàu hơn một chút. Hơn nữa, ra tay với bọn chúng cũng là kẻ cắp gặp bà già, sẽ không bị Druzhna để ý đâu.\"\nThế là, băng cướp đường đầu tiên của làng Alatyr đã ra đời."
       },
       {
-        "Title": "",
+        "Title": "Câu Chuyện Nhân Vật 3",
         "Context": "Sau khi trở thành thợ săn, ước mơ của Alyosha rất đơn giản:\nĐúng như lời hứa với cha mẹ, duy trì hiện trạng, sống quy luật và bình yên qua mùa đông khắc nghiệt này, đợi đến khi cha mẹ hoàn toàn hồi phục thì rút lui.\nNhưng ước mơ thì luôn khó thành hiện thực.\nDù những thợ săn của làng Alatyr đã thành công giành lấy không ít lương thực từ miệng những con \"dã thú\", và chiến lợi phẩm đó hoàn toàn đủ để cả gia đình họ no ấm qua ngày.\nNhưng đúng như nhận định ban đầu của Alyosha: Đám người này là một lũ ngốc, một lũ ngốc tham lam và đầy dã tâm. Chỉ cần một cái cớ nhỏ, chúng sẽ không chút do dự mà phá vỡ những quy tắc đã đặt ra từ trước, hoàn toàn vứt bỏ nhân tính, vung lưỡi dao đồ tể lên nhằm vào những mục tiêu yếu hơn mình.\nCái cớ đó chính là Kế Hoạch Stuzha. Khi chi phí sinh hoạt ngày càng tăng cao, mọi người bắt đầu động não để tìm kiếm con đường sống mới.\nChẳng hạn như vượt qua vùng tuyết nguyên mênh mông, tránh né lính tuần tra, trốn thoát đến vùng đất tự do trong lời đồn: Nod-Krai.\nVà nhóm thợ săn ở làng Alatyr này tình cờ lại đóng chốt ngay trên con đường mà những người tị nạn buộc phải đi qua.\nNhìn vô số những \"con mồi\" tay không tấc sắt liên tục đi qua lãnh địa của mình, những \"thợ săn\" không còn kìm hãm được lòng tham. Chúng lần lượt vứt bỏ lớp ngụy trang, thoái hóa thành những con \"dã thú\" khát máu.\nLúc này, sợi dây cương duy nhất có thể kìm hãm đám dã thú kia chỉ còn lại Alyosha.\nDù anh đã dốc hết sức để ngăn đồng bọn sa ngã, thứ anh có thể dựa vào chỉ là lời hứa sáo rỗng năm xưa, một khẩu súng săn đã qua vài lần cải tạo, và một chú chó con vẫn đang trong thời kỳ thay răng.\n\"Hồi đó hứa với thằng nhóc đó chẳng qua là để học nghề săn bắn của nó thôi. Bây giờ con mồi béo bở đầy đường, ai mà cần đến nó nữa chứ?\"\n\"Còn cây súng cùn của nó à? Chúng ta giờ có nhiều súng như vậy, hy vọng đạn của nó đủ dùng.\"\nKhông lâu sau, con thú đầu tiên thử săn \"gia cầm\" đã xuất hiện. Dưới sự dẫn đầu của gã đó, những kẻ noi gương ùa ra như tuyết lở, rồi đến con thứ hai, thứ ba...\nCho đến cả Taras nhút nhát như thỏ đế, tay cầm súng còn run, cũng bắt đầu nổi lòng tham.\nAlyosha hiểu rõ, họ đã không còn là những \"thợ săn\" nữa. Đám người này giờ chẳng khác gì bọn cướp năm xưa đã kéo vào Alatyr, thậm chí còn đáng sợ hơn. Vì bây giờ họ đã có kinh nghiệm chiến đấu hơn, vũ trang cũng đầy đủ hơn.\nDù đây không phải là dụng ý ban đầu của anh, nhưng chính anh đã giúp đám người này mọc ra nanh nhọn và móng vuốt. Đã vậy thì, trước khi mọi chuyện vượt khỏi tầm kiểm soát, việc dọn sạch chúng là trách nhiệm mà anh không thể thoái thác.\nGiống như một người thợ săn thực thụ, luôn phải đứng ra khi thú dữ áp sát làng mạc.\nVà vậy là, một lần nữa, Alyosha từ bỏ ước mơ của mình.\nHôm đó, anh để lại Tugarin cho cha mẹ, chỉ giữ lại bên mình một khẩu súng săn...\nKể từ ngày đó, tiếng súng liên tục vang lên khắp các vùng tuyết nguyên của Snezhnaya.\nMột tin đồn đáng sợ lan truyền trong dân chúng: Sâu trong vùng tuyết nguyên đang diễn ra một cuộc chiến tàn khốc. Trong đó, một bên hành động như kẻ điên loạn hoàn toàn, sẽ bắn bất kỳ sinh vật nào dám đến gần mà không phân biệt.\nAlyosha không có ý định làm hại bất kỳ thường dân nào, nhưng đôi khi tiếng tăm của một kẻ điên lại hữu dụng hơn tiếng tăm của một anh hùng.\nBị uy hiếp như vậy, từ ngày hôm đó, không còn một tên \"gia cầm\" nào dám tiến sâu vào vùng tuyết nguyên nữa. Nhưng cũng chính vì vậy, không còn một người dân nào bị cướp bóc hay làm hại.\nMãi đến khi các quan chức nhận được tin báo và định điều quân đến dẹp loạn, không biết bao nhiêu ngày đêm đã trôi qua. Tiếng súng trên thảo nguyên đã im bặt từ lâu, người dân xung quanh cũng đã trở lại cuộc sống bình thường.\nNhững người lính Fatui đến muộn lục tìm khắp vùng tuyết phủ nhưng chẳng tìm được gì, cuối cùng đành coi đây là một vụ thanh toán băng đảng bình thường rồi vội vàng kết án.\nCòn những con \"dã thú\" sống sót, thì bị khoác lên mình một sợi dây cương mới được đúc bằng đạn và máu:\n...Vĩnh viễn, vĩnh viễn không được ra tay với \"gia cầm\"."
       },
       {
@@ -1137,7 +1142,7 @@
         "Context": "Khi Alyosha một lần nữa xuất hiện trước mọi người, anh đã không còn dám nói đến chuyện ước mơ nữa.\nVì có quá nhiều \"thực tế\" cần anh phải đối phó từng cái một.\nNgoài việc trở thành trụ cột của gia đình và làm người chăm sóc Tugarin, anh còn phải tiếp tục đảm nhận vai trò kép là \"thợ săn\" và \"dây cương\", âm thầm hoạt động sâu trong vùng tuyết nguyên.\nMay mắn thay, phần lớn mọi người đối với chàng trai trẻ xuất thân từ \"sào huyệt cướp đường\" làng Alatyr này, cũng dần dần chuyển từ đề phòng và nghi ngờ ban đầu sang chấp nhận và tin tưởng.\nTrong mắt những người quan tâm đến anh thì Alyosha là một chàng trai chân chất, dũng cảm và nhiệt tình, chỉ cần một cơ hội tốt là có thể sống một cuộc đời bình yên như bao người mơ ước.\nVà \"cơ hội\" đó, nhờ sự nhiệt tình chắp nối của mọi người, đã chủ động tìm đến tận cửa.\nĐó là một nhân vật bí ẩn có vệ sĩ đi kèm. Bất kỳ ai cũng có thể cảm nhận được sức nặng áp đảo của sự kiêu ngạo toát ra từ cách ăn mặc và cử chỉ của người đó.\nKhi người đó đuổi hết tùy tùng đi, chỉ còn lại một mình đối diện với Alyosha, thái độ ra lệnh kẻ dưới càng khiến Alyosha khẳng định: Người này không chỉ có thân phận ghê gớm, mà còn có thể mang đến rắc rối tương xứng với thân phận đó.\nKinh nghiệm sống sót từ ngày xưa nhắc nhở Alyosha rằng, khi đối mặt với loại người này, tốt nhất là ngậm miệng lại. Lắm lời quá thì dễ rước họa vào thân.\n\"Ta nghe họ nói, cậu có thể săn mồi ngay cả trong bão tuyết? Là thợ săn giỏi nhất Snezhnaya này đúng không?\"\n\"...\"\n\"Ta đã xem qua chiến tích của cậu, đạn bắn hầu hết đều trúng cột sống hoặc tim phổi. Không thể phủ nhận, cậu có chút thiên phú, và cũng có một người thầy tốt. Nhưng theo ta mà nói, thế này cũng chỉ có thể xem là tạm ổn mà thôi...\"\nNgười đó dường như chẳng có ý định chờ Alyosha lên tiếng, cứ thế tiếp tục buông lời phán xét.\n\"Một người mới học sẽ chọn những mục tiêu vô hại, như thỏ hay chim hoang. Một thợ săn bình thường sẽ nhắm súng vào mãnh thú, còn một thợ săn 'tạm ổn' thì thậm chí biết cách thuần phục dã thú, bắt chúng làm theo ý mình. Ta nói đúng không, cậu nhóc?\"\n\"Tugarin không phải dã thú.\" Vì muốn bảo vệ người bạn đồng hành, Alyosha vẫn khẽ lên tiếng phản bác một câu.\n\"Ta không nói về nó. Ta nói về những con 'dã thú' mang 'nanh nhọn' và 'móng vuốt'... như bọn cướp xông vào làng cậu, đánh trọng thương cha mẹ cậu. Hay những tên cướp cùng làng với cậu, nhưng lại bội ước.\"\nNói đến chuyện này, Alyosha vô thức kéo mũ trùm đầu của mình xuống.\n\"Xét về kết quả, cậu đúng là đang trưởng thành đấy. Nhưng để trở thành một thợ săn xuất sắc thì cậu vẫn còn kém xa lắm. Ta nghĩ, trên địa bàn của một thợ săn đỉnh cao, những con thú nguy hiểm sẽ không thể liên tục xuất hiện như thế này.\"\nDường như đã nhìn thấu sự đề phòng và bối rối trong mắt Alyosha, người đó khẽ thở dài: \"Về đi rồi suy nghĩ kỹ lại. Khi nào cậu tìm được câu trả lời trong lòng, tự nhiên sẽ biết ủy thác của ta là gì thôi.\"\nĐêm đó, Alyosha ôm Tugarin vào lòng, mãi không thể chợp mắt.\nChỉ cần nhắm mắt lại, khói súng và ánh lửa từ trận đụng độ đó lại hiện lên trong đầu.\nBọn cướp đó đúng là tội ác tày trời, chết cũng không oan, nhưng mà chúng cũng thực sự nghèo khổ...\nNhững kẻ đồng hương phản bội lời thề, ra tay với người vô tội, đáng phải trả giá... Nhưng tại sao ngay cả một tên nhát gan như Taras cũng suýt lạc lối?\nKhi tia sáng bình minh đầu tiên chiếu rọi vào Snezhnograd, Alyosha lặng lẽ đột nhập vào nơi tạm trú của người đó. Chỉ có điều lần này, trên tay anh là khẩu súng săn.\n\"Có vẻ như cậu cuối cùng đã nghĩ thông rồi sao? Cậu biết từ lâu rằng cứ duy trì cuộc sống như vậy mãi cũng chẳng có ý nghĩa gì...\"\nNgười đó dường như đã biết trước anh sẽ đến. Căn phòng trống trải, chỉ có người đó ngồi một mình trước chiếc bàn, trên bàn bày sẵn bữa sáng đơn giản dành cho hai người.\n\"Vậy, trong kế hoạch đó, tôi phải đóng vai gì?\"\n\"Đừng vội, bây giờ vẫn chưa phải lúc\". Người đó nhìn vào đôi mắt mệt mỏi nhưng kiên định của Alyosha, chỉ tay về phía chỗ ngồi đối diện, thong thả nói tiếp:\n\"Còn bây giờ thì hãy ngồi xuống đã. Vừa thưởng thức bữa sáng, vừa nghe vài câu chuyện được cơn cuồng phong mang đến nhé.\""
       },
       {
-        "Title": "",
+        "Title": "Câu Chuyện Nhân Vật 5",
         "Context": "Dù danh tính của mọi người đều được giữ bí mật, nhưng Alyosha vẫn cảm nhận được rằng Rokot là một tổ chức quy tụ nhiều nhân tài xuất chúng.\nĐược giới thiệu bởi một thành viên ẩn danh trong hội, Alyosha cuối cùng cũng có cơ hội bước vào những cung điện lộng lẫy của Snezhnograd, thậm chí còn kiếm được một công việc bán thời gian khá ổn...\nNhững vở kịch ba lê tuyệt diệu, những màn ca hát mê hoặc lòng người, những công trình kiến trúc nguy nga chọc trời, không gian trong nhà ấm áp như mùa xuân, và những cỗ máy khổng lồ hùng tráng chưa từng nghe qua...\nTất cả mọi thứ, như thể những câu chuyện hào nhoáng xa vời trong miệng các nhà mạo hiểm và lái buôn, bỗng chốc đều trở thành hiện thực... khiến chàng trai trẻ vốn đã quen với súng đạn và máu này lần đầu tiên cảm nhận được rằng, hóa ra thế giới còn có một diện mạo như vậy.\nĐặc biệt là Thất Thánh Triệu Hồi. Alyosha không ngờ rằng, một món đồ chơi nhỏ bé được làm từ những mảnh giấy màu và khối kim loại, lối chơi cốt lõi của nó lại là tính toán... Thứ từng khiến anh vô cùng đau khổ, giờ đây lại có thể khiến người ta say mê đến vậy.\n\"Tiếc thật, nếu hồi nhỏ mà được chơi trò này, chắc lúc học tính toán mình đã bớt bị ăn đòn đi vài lần rồi...\"\n\"...Nhưng mà, nhìn mình chơi tệ thế này, biết đâu cha lại đánh thêm vài trận nữa. Ừm... Nghĩ vậy thì cũng chẳng khác gì nhau.\"\nSau khi thua thêm một ván nữa, Alyosha rơi vào im lặng, điều này khiến người bạn chơi bài mới quen hôm nay của anh không khỏi lo lắng.\n\"Này! Có ổn không?\"\n\"Không sao, tôi chỉ đang nghĩ, anh chơi bài giỏi thế, có bí quyết gì không?\"\n\"Hả? Ahaha, tôi chơi đâu có giỏi đến vậy đâu!\" Chàng trai tên Medyntsev dường như hiếm khi được người khác khen ngợi chân thành như thế, lập tức xem anh như bạn tâm giao và bắt đầu trò chuyện rôm rả: \"Suy cho cùng, là vì tôi đã từng đến Mondstadt! Ở đó có một cửa tiệm tên là Quán Rượu Đuôi Mèo, đó là nơi tập hợp những tay chơi bài giỏi nhất Teyvat...\"\nTừ những bài thủ của Teyvat, rồi đến từng ly rượu đặc chế khó quên trong quán rượu...\nTừ Đội Kỵ Sĩ thanh lịch hào hoa, đến những bài ca và vần thơ tự do...\nMedyntsev nói rất lâu, và Alyosha cũng lắng nghe suốt từng ấy thời gian.\nĐối với anh chàng thương nhân trẻ tuổi, cuộc trò chuyện này chẳng qua chỉ là một lần nữa anh ta kể cho người khác nghe về bản thiết kế kinh doanh vĩ đại của mình, một cơ hội để thỏa sức phô diễn đầu óc và trí tuệ kinh doanh của bản thân.\nNhưng đối với chàng trai trẻ mang tư tưởng \"người khác quan điểm\", cuộc trò chuyện này lại như mở ra trước mắt anh một khung cửa sổ hoàn toàn mới.\n\"Tôi nói thật nhé. Dù anh có thể không tin, nhưng tôi là một trong những người thừa kế sản nghiệp gia đình, và tôi có một kế hoạch kinh doanh cực kỳ táo bạo!\" Medyntsev càng nói càng hứng khởi, \"Chỉ cần thực hiện được kế hoạch này, thì quyền điều hành sản nghiệp gia đình sẽ về tay tôi! Đến lúc đó, tôi sẽ tha hồ tung hoành mà thực hiện hoài bão của mình, hahaha!\"\n\"Vậy... Sau khi anh có được quyền kinh doanh rồi, anh định làm gì?\"\n\"À ừm, tôi...\" Medyntsev bị khựng lại.\nTất nhiên, đây không phải lần đầu tiên Alyosha đặt ra câu hỏi này.\nCâu hỏi đó anh đã tự hỏi mình từ lâu rồi. Khi Kế Hoạch Stuzha bị ngăn chặn, gió tuyết bốn phương tan biến, thì lúc đó Snezhnaya sẽ đi về đâu?\nNhưng bản thân anh cũng chưa tìm ra được câu trả lời nào ra hồn.\nĐúng là người từng lăn lộn nhiều năm trên đường phố, Medyntsev nhanh chóng cười xòa, phá tan bầu không khí ngượng ngùng giữa hai người: \"...Nói thật đấy, có dịp thì anh nhất định phải đến Mondstadt xem nhé! Đừng ngại đường xa. Anh đến rồi sẽ biết, tất cả những gì tôi nói đều đúng! Lấy rượu ở đó mang về Snezhnaya chắc chắn kiếm được bộn tiền!\"\n\"Ừm, khi băng tuyết tan ra, tôi sẽ đến đó...\"\nTrong lòng Alyosha, bản kế hoạch mang tên \"thực hiện ước mơ\" vừa được bổ sung thêm một bước mới:\nNếu có cơ hội ra nước ngoài, điểm đến đầu tiên nên là Mondstadt.\nKhông chỉ vì nơi đó có Quán Rượu Đuôi Mèo, và nghe nói đó là nơi hội tụ những bài thủ cừ khôi nhất Teyvat, mà còn vì đó là một vùng đất tự do và ấm áp.\nĐi xem thử quá khứ và hiện tại của nó, biết đâu sẽ tìm được một câu trả lời xứng đáng cho tương lai của Snezhnaya."
       },
       {
@@ -1145,7 +1150,7 @@
         "Context": "Cũng giống như nhiều người ở Snezhnaya, con chó nhỏ có một ước mơ giản dị đến không thể giản dị hơn:\nCó đủ thức ăn và một mái nhà ấm áp.\nNhưng trong thời đại mà con người còn chẳng thể tự lo cho bản thân thì ước mơ đó quả là xa xỉ.\nThực tế đặt ra trước mắt nó chỉ có một, đó là bị bỏ lại giữa vùng tuyết trắng, thu mình co ro, lặng lẽ chờ đợi cái chết ập đến.\nTrong hoàn cảnh đó, Alyosha đi ngang qua cũng chẳng làm được gì nhiều. Anh chỉ có thể móc từ túi ra hai cây xúc xích cuối cùng, cúi người xuống và xé vụn rồi ném xuống cạnh chân nó.\nKhi nó hồi phục được chút sức lực, quẩn quanh bên anh, cố bám theo, thì anh lại vô tình đứng dậy rời đi.\nAnh hiểu rõ, khẩu phần của mình vốn đã không đủ để nuôi thú cưng, huống hồ lần này anh còn đang gánh trên vai một nhiệm vụ vô cùng nguy hiểm...\nTheo quan sát của anh, gần đây trong vùng tuyết nguyên có một con gấu khổng lồ chuyên ăn thịt người đang hoành hành.\nĐể bảo vệ sự hoàn chỉnh của bộ lông và giảm bớt số lần bắn, Alyosha ẩn mình trong hang tuyết, dùng bản thân làm mồi nhử, kiên nhẫn chờ con mồi mắc bẫy.\nThế nhưng, ngoài con gấu khổng lồ mà Alyosha định săn ra, lại còn có thêm một \"vị khách\" không mời mà đến...\nCon chó nhỏ dường như đã hồi phục hoàn toàn thể lực, thậm chí còn lần theo mùi của Alyosha mà chạy tới đây.\n\"Chậc, lần này tiêu rồi...\"\nNgay khoảnh khắc nhìn thấy gấu khổng lồ đang tiến sát Alyosha, chú chó con không hề do dự lấy một giây, vội vàng cất tiếng sủa vang bằng giọng còn non nớt của mình.\nTiếng động đó khiến con gấu khổng lồ quay người lại. Khi nó đưa tấm lưng vạm vỡ về phía người thợ săn, Alyosha mất đi góc bắn một phát chí mạng.\nNhưng ngay khoảnh khắc con gấu khổng lồ quay người lao về phía chú chó nhỏ, Alyosha gần như bị thôi thúc bởi một lực vô hình mà bóp cò, thậm chí không kịp suy nghĩ gì.\nTiếng rít chói tai từ nòng súng cùng tiếng da thịt bị xuyên thấu vang lên, con gấu khổng lồ rống lên đau đớn, rồi bắt đầu bỏ chạy theo sự thôi thúc của bản năng.\nDù Alyosha biết rõ phát súng đó đã trúng nội tạng của con gấu khổng lồ, chỉ cần tiếp tục truy đuổi là chắc chắn có thể hạ gục nó hoàn toàn.\nNhưng anh vẫn đứng yên tại chỗ, tính toán những tổn thất có thể xảy ra khi truy kích, cùng những rủi ro tiềm ẩn bên trong...\nTuy nhiên, chú chó con không cần tính toán, thế giới của nó rất đơn giản.\n...Con quái thú định săn ân nhân đã tự bỏ chạy vì sợ mình, mình phải đuổi theo, đuổi nó đi càng xa càng tốt.\n\"Thật chẳng đáng chút nào...\"\nTuy ngoài miệng cằn nhằn, nhưng Alyosha vẫn đuổi theo sau bóng dáng đen trắng thoáng qua đó.\nSau khoảng thời gian bằng vài chén trà, Alyosha cuối cùng cũng đuổi kịp chú chó nhỏ. Lúc này nó đang đứng trên con gấu khổng lồ đã bất động, vẫn còn thở hổn hển, lồng ngực phập phồng theo từng hơi thở gấp gáp.\nNhưng khi nghe thấy tiếng bước chân của Alyosha, nó lập tức ngẩng đầu lên, cái đuôi ngắn tròn như cuộn len vẫy lấy vẫy để.\nCái vẻ hứng khởi và hào hứng khoe khoang đó, cứ như thể nó thực sự đã bảo vệ thành công ân nhân của mình, một mình cắn chết con gấu khổng lồ có tấm thân to lớn hơn nó gấp mười lần.\nCòn ánh mắt kiên định của nó dường như đang tuyên bố rằng, nó sẽ mãi đi theo và bảo vệ người thợ săn này.\nSau một hồi giằng co, Alyosha cuối cùng cũng đành chịu thua.\n\"Thôi được, nhóc nói đúng, xét cho cùng thì thợ săn không thể thiếu chó săn... Đã vậy thì phải đặt tên cho nhóc mới được...\"\n\"Gâu?\"\n\"...Vậy thì gọi nhóc là Tugarin nhé. Mong là sau này nhóc có thể lớn hơn một chút, như vậy mới xứng với thân phận chú chó săn gấu của nhóc được.\"\n\"Gâu!\""
       },
       {
-        "Title": "",
+        "Title": "Vision",
         "Context": "Vài ngày sau chuyến viếng thăm của người bí ẩn, cuộc sống của Alyosha không có nhiều thay đổi. Anh vẫn dành phần lớn thời gian trên những cánh đồng hoang, tiếp tục vai trò mà mình vốn đã quen thuộc.\nNhưng nếu ai đó để tâm ghi lại những tiếng súng trên tuyết nguyên, thì sẽ nhận ra tần suất nổ súng của vị thợ săn kia đã giảm đi rõ rệt.\nDù đã quyết tâm, dù biết rõ sự cần thiết của việc săn giết, dù đã quen với việc ngắm bắn và bị ngắm bắn, Alyosha vẫn luôn cảm thấy ghê tởm trước máu.\nĐặc biệt là sau khi nhận được tin tình báo từ Rokot.\nVô số bí mật liên quan đến Kế Hoạch Stuzha đã xác nhận những suy đoán bấy lâu nay của anh: Vấn đề lớn nhất của đất nước này không phải là những băng đảng hoành hành ngang ngược, những tên tội phạm liên tục xuất hiện, hay những tên quan lại tham nhũng đục khoét từng chút một.\nChúng chẳng qua chỉ là những biến chứng được sinh ra từ lớp băng giá khắc nghiệt của nơi đây mà thôi.\nChừng nào chưa nhổ tận gốc rễ, thì những thứ bệnh tật đó sẽ cứ mãi tuôn ra không ngừng.\nNgay cả việc huấn luyện chó săn, người ta cũng phải cho chúng ăn no và thưởng thịt khô, huống chi là lòng tham của con người vốn chẳng bao giờ thỏa mãn?\nVậy thì, liệu họng súng của mình có đang nhắm nhầm mục tiêu? Và liệu những vết máu do mình tạo ra có thực sự là cần thiết?\nMỗi khi chìm vào những suy nghĩ như vậy, \"tầm nhìn\" vốn luôn sắc bén của anh, đôi mắt có thể khóa chặt mục tiêu giữa trời tuyết gió mịt mù lại trở nên mờ đục, không còn rõ ràng như trước.\nVì vậy, Alyosha bắt đầu do dự. Miễn là bọn cướp chịu trả lại đồ ăn cắp, thì dù chúng đã vi phạm vào điều cấm kỵ là không được đụng tới \"gia cầm\", anh vẫn sẽ buông tha khi chúng cầu xin.\nNhưng dã thú chẳng bao giờ hiểu được lòng nhân từ. Trong mắt chúng, hạ súng chỉ là biểu hiện của kẻ yếu. Mỗi lần Alyosha buông súng, nguy cơ lại một lần chực chờ, rồi cuối cùng, tai họa cũng ập đến.\nĐó là một cái bẫy được dàn dựng công phu. Khi Alyosha bước ra từ sau vật cản, định ngăn chặn một vụ cướp bóc bình thường, những tên \"dã thú\" đang quỳ xuống xin tha mạng và những \"con mồi\" hoảng loạn kia đồng loạt cởi bỏ lớp ngụy trang, cùng lúc quay ra nhe nanh vào anh.\nTrong vòng vây tứ phía và sự tiêu hao liên tục, Alyosha dần lộ rõ dấu hiệu thua cuộc...\nThể lực gần chạm đáy, trong băng đạn cũng chỉ còn lác đác vài viên.\nẨn sau vật cản chi chít vết đạn, anh nhét miếng thịt khô cuối cùng vào miệng Tugarin:\n\"Tugarin, chuẩn bị chạy đi.\"\nCũng chính lúc này, một góc của vòng vây đột nhiên vang lên những tiếng súng hỗn loạn.\nLợi dụng khoảnh khắc đó, Alyosha đã thoát khỏi thế bí.\nỞ góc đó, anh nhìn thấy người đã nhắm mắt bắn loạn, vô tình xé toạc một lỗ hổng trong vòng vây... Một bóng hình rất quen thuộc với anh: Taras.\nAlyosha biết rõ, người đàn ông thậm chí không cầm chắc súng này đã sớm lập nghiệp ở thị trấn, sống một cuộc đời bình thường. Đáng ra anh ta chẳng có lý do gì để lại dấn thân vào chốn tử địa.\nVậy mà anh ta vẫn đến, đôi chân run rẩy lê từng bước.\nTaras thở hổn hển, có vẻ không quen nói những lời như thế này: \"Mọi người vẫn cần anh...\"\nNhìn người đàn ông trước mặt đang run rẩy nhưng vẫn siết chặt tay cầm súng, đám mây mù hỗn độn trong lòng Alyosha bỗng chốc tan biến.\nNếu không thể chạm đến căn nguyên của đất nước này, thì những cuộc chiến vô định và đổ máu đó quả thực chẳng có ý nghĩa gì...\nNhưng ra tay đối phó với cái ác cần phải diệt trừ, bảo vệ những người chưa sa ngã, vốn dĩ là tiền đề của lý tưởng vĩ đại đó... \"Mọi người đều được ăn no, không phải dùng đạn để giải quyết lẫn nhau\".\nSự hoàn lương của Taras chẳng phải là minh chứng rõ ràng nhất hay sao?\n\"Tầm nhìn\" vốn luôn rõ ràng của anh đã quay trở lại.\nVì ước nguyện đó, anh sẵn sàng nhuốm máu, sẵn sàng hòa vào cơn cuồng phong gào thét để xé toạc dã thú và băng giá. Tất nhiên, nếu cơn cuồng phong lạc lối, anh cũng luôn sẵn sàng chĩa họng súng về phía cơn cuồng phong ấy.\nCầm tờ đơn xin gia nhập mỏng manh trên tay, Alyosha một lần nữa hẹn gặp người bí ẩn kia.\n\"Tôi có thể gia nhập, nhưng tôi không đảm bảo sẽ nghe theo lệnh.\"\n\"Không vấn đề gì, tư tưởng của Rokot vốn là như vậy. Cậu muốn làm gì là quyền tự do của cậu.\" Dường như thoáng nhìn thấy món đồ nhỏ phát ra ánh sáng tinh khiết lấp lánh ở thắt lưng Alyosha, người đó hiếm lắm mới để lộ nụ cười trên mặt: \"Hơn nữa, từ góc độ cá nhân của ta, ta cũng mong đợi hơn vào lựa chọn của chính cậu.\"\nVà thế là, trong cơn cuồng phong gào thét, một luồng khí thoáng qua nhanh như sấm sét đã hòa vào đó..."
       }
     ]

@@ -36,7 +36,13 @@
         "GroupId": 14831,
         "Proud": {
           "Descriptions": [
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+            "4-Hit DMG|{param5:F1P}",
+            "Charged Attack DMG|{param6:F1P}",
             "Charged Attack Stamina Cost|{param7:F1}",
+            "Plunge DMG|{param8:F1P}",
             "Low/High Plunge DMG|{param9:F1P}/{param10:F1P}"
           ],
           "Parameters": [
@@ -294,6 +300,8 @@
         "Proud": {
           "Descriptions": [
             "#{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press} DMG|{param1:F1P}",
+            "Hold DMG|{param2:F1P}",
+            "CD|{param3:F1}s",
             "Hunter's Mark Duration|{param4:F1}s",
             "Hunter's Precision ATK Bonus|{param5:F1P}",
             "Hunter's Precision Duration|{param6:F1}s"
@@ -494,7 +502,10 @@
       "Proud": {
         "Descriptions": [
           "Fulgurite Hunting Field DMG|{param1:F1P}",
-          "Tugarin DMG|{param2:F1P}"
+          "Tugarin DMG|{param2:F1P}",
+          "Duration|{param3:F1}s",
+          "CD|{param4:F1}s",
+          "Energy Cost|{param5:I}"
         ],
         "Parameters": [
           {
@@ -845,7 +856,7 @@
         "Context": "This amount goes back home, and this is for the Rokot to buy medicine. Now I just need to find enough for gun maintenance... Heh, let's see which gang of highwaymen are out of luck this time..."
       },
       {
-        "Title": "",
+        "Title": "When It Rains",
         "Context": "My hood's getting soaked... Oh no, Tugarin! Don't shake!"
       },
       {
@@ -853,11 +864,11 @@
         "Context": "Time for the prey to crawl out of its hiding place..."
       },
       {
-        "Title": "",
+        "Title": "When Thunder Strikes",
         "Context": "Perfect weather for an ambush, if you had anyone in mind... I can use the sound of the thunder to mask my gunshots."
       },
       {
-        "Title": "",
+        "Title": "When It Snows",
         "Context": "Tch, tracking is going to be impossible in this."
       },
       {
@@ -865,7 +876,7 @@
         "Context": "No wearing a hood in this weather..."
       },
       {
-        "Title": "",
+        "Title": "In the Desert",
         "Context": "Wish I could shed some fur too..."
       },
       {
@@ -873,15 +884,15 @@
         "Context": "Hear that? That's the birds chirping away in the woods, like they do every morning... Why don't we go shoot a couple down?"
       },
       {
-        "Title": "",
+        "Title": "Good Afternoon",
         "Context": "I usually eat lunch out in the wild, but I wouldn't exactly recommend it."
       },
       {
-        "Title": "",
+        "Title": "Good Evening",
         "Context": "Some of the rarest prey only come out at night."
       },
       {
-        "Title": "",
+        "Title": "Good Night",
         "Context": "Go ahead and rest. I still have things to do, and I need the cover of night."
       },
       {
@@ -905,7 +916,7 @@
         "Context": "People often say that a Vision is supposed to represent your deepest wishes. But that kind of pointless, fluffy thinking couldn't be more meaningless to me. All I care about is what this trinket can do for me. If I never discovered that it made me more powerful, I probably would have traded it for Mora by now."
       },
       {
-        "Title": "",
+        "Title": "Something to Share",
         "Context": "When you're off the beaten path in Snezhnaya, knowing the local code is an important skill. If you run into certain fae or highwaymen, being able to talk the talk can save you a lot of trouble. Oh, and if you ever encounter a group of people who keep muttering about \"chicken,\" go ahead and rob them blind. \"Chicken\" is code for a harmless civilian carrying a small amount of valuables. Basically, an easy target. The people who go after them are the worst of the worst, but they're no match for us. Plus, considering their own criminal record, they wouldn't even dream of reporting us to the Druzhna, so they just have to take it."
       },
       {
@@ -961,7 +972,7 @@
         "Context": "Now that would be all the Mora I spend on modifying, maintaining, and testing my rifle... Do the math, and you might just realize the things you love the most in life are also the source of all your problems."
       },
       {
-        "Title": "",
+        "Title": "Favorite Food",
         "Context": "Cured meat, long-lasting bread, cheese that melts when toasted... With those ingredients, all I need is a fire, and I always have a feast at my fingertips, even when surrounded by ice and snow."
       },
       {
@@ -969,15 +980,15 @@
         "Context": "Anything with a shell. Crabs, lobsters... things like that. They cost an arm and a leg, you practically have to wrestle their pincers and spikes just to get them open, and after all that, there's barely any meat inside. It's not worth the cost or the effort."
       },
       {
-        "Title": "",
+        "Title": "Receiving a Gift: I",
         "Context": "Thanks, it's delicious... Does this keep well? I think I'll finish it later."
       },
       {
-        "Title": "",
+        "Title": "Receiving a Gift: II",
         "Context": "Hmm... Why don't I help you get your hands on some rare wild game? Higher-quality ingredients would make this even better."
       },
       {
-        "Title": "",
+        "Title": "Receiving a Gift: III",
         "Context": "...Well, can't let food go to waste. I'm sure there's a villager who needs this more than I do."
       },
       {
@@ -985,7 +996,7 @@
         "Context": "Happy Birthday. It is today, isn't it? Y'know, where I come from, birthday celebrations are usually a luxury we can't afford. Good luck scrounging up enough flour and cream for a cake, or finding someone who sells anything but the bare essentials to use as a gift. But, I'll never begrudge a kid for wanting to celebrate their birthday. That's how it should be, and one day, I hope no child in Snezhnaya has to go without. So, I've decided to take your birthday very seriously, and I've put a lot of thought into the gift and card I got for you. Sometimes, you have to be the change you want to see in the world, right?"
       },
       {
-        "Title": "",
+        "Title": "Feelings About Ascension: Intro",
         "Context": "Nice. Feels like my aim is more accurate."
       },
       {
@@ -997,11 +1008,11 @@
         "Context": "For better or for worse, my shots aren't going to miss now."
       },
       {
-        "Title": "",
+        "Title": "Feelings About Ascension: Conclusion",
         "Context": "How much further must we go until the world we're fighting for becomes a reality?"
       },
       {
-        "Title": "",
+        "Title": "Elemental Skill: I",
         "Context": "Gun it!"
       },
       {
@@ -1009,11 +1020,11 @@
         "Context": "Bullseye!"
       },
       {
-        "Title": "",
+        "Title": "Elemental Skill: III",
         "Context": "One down!"
       },
       {
-        "Title": "",
+        "Title": "Elemental Skill: IV",
         "Context": "Ready or not..."
       },
       {
@@ -1025,11 +1036,11 @@
         "Context": "Gotcha."
       },
       {
-        "Title": "",
+        "Title": "Elemental Burst: I",
         "Context": "Here, boy!"
       },
       {
-        "Title": "",
+        "Title": "Elemental Burst: II",
         "Context": "Tugarin, fetch!"
       },
       {
@@ -1037,11 +1048,11 @@
         "Context": "It's dog-eat-dog!"
       },
       {
-        "Title": "",
+        "Title": "Opening Treasure Chest: I",
         "Context": "Take a good look. Don't wanna miss anything."
       },
       {
-        "Title": "",
+        "Title": "Opening Treasure Chest: II",
         "Context": "Anything I can trade for some Mora?"
       },
       {
@@ -1049,11 +1060,11 @@
         "Context": "Grab it and go. Before we get tailed."
       },
       {
-        "Title": "",
+        "Title": "Low HP: I",
         "Context": "The cold's getting to me..."
       },
       {
-        "Title": "",
+        "Title": "Low HP: II",
         "Context": "I should find cover..."
       },
       {
@@ -1065,15 +1076,15 @@
         "Context": "Fall back! I'll cover you!"
       },
       {
-        "Title": "",
+        "Title": "Ally at Low HP: II",
         "Context": "Take it easy. I'll finish them off."
       },
       {
-        "Title": "",
+        "Title": "Fallen: I",
         "Context": "My hunting days... are over..."
       },
       {
-        "Title": "",
+        "Title": "Fallen: II",
         "Context": "Tugarin, run..."
       },
       {
@@ -1081,7 +1092,7 @@
         "Context": "Shoulda drawn... faster..."
       },
       {
-        "Title": "",
+        "Title": "Light Hit Taken: I",
         "Context": "Hope it was worth it..."
       },
       {
@@ -1089,11 +1100,11 @@
         "Context": "Only grazed me."
       },
       {
-        "Title": "",
+        "Title": "Heavy Hit Taken: I",
         "Context": "That one hurt..."
       },
       {
-        "Title": "",
+        "Title": "Heavy Hit Taken: II",
         "Context": "Cheap shot..."
       },
       {
@@ -1101,11 +1112,11 @@
         "Context": "Let the hunt begin."
       },
       {
-        "Title": "",
+        "Title": "Joining Party: II",
         "Context": "All geared up."
       },
       {
-        "Title": "",
+        "Title": "Joining Party: III",
         "Context": "Eyes on the prize."
       }
     ],
@@ -1115,7 +1126,7 @@
         "Context": "In Snezhnaya, the name \"Alyosha\" is exceptionally favored among the people.\nThis is not because some young hunter's monumental deeds made it a household name, but because the name itself carries a beautiful promise that countless parents yearned for.\nFearless, innocent and kind-hearted...\nThey pray for their children to bear such virtues, wishing for them to escape the carving of fate just like the heroes in legendary tales.\nYet, they are oblivious to the harsh truth: the ice and snow of Snezhnaya never respond to prayers, and the bitter cold itself is a relentless rasp.\nA mere name cannot breed true courage, and unarmed kindness cannot shield a child from the spear thrown by fate.\nOnly those who experience, fight, and live like heroes can break the curse of reality; only those who plunge their feet into the frozen wastes time and again stand a chance at capturing hope.\nOf course, no one had ever explained such wisdom to Alyosha, nor did he have the time to dwell on these things.\nHe only knew that to keep his people fed and sheltered, he had to venture deeper into the snowfields, bring back more game, and, with Tugarin by his side, tread out a deeper, wider path into the unknown wilds.\nAs for complex calculations, leave those for the \"realists\" to weigh;\nas for profound philosophies, leave them for the \"idealists\" to debate.\nAs a hunter tracking through the bitter frost, he only knew how to polish his bolt and pull the trigger.\nYet, those who knew him well would say:\n\"He is a fine lad — fearless, innocent and kind-hearted, just like Alyosha in countless folktales...\"\nAnd the howling wind would offer this prayer:\n\"May the Kresnik's Torch burn as fiercely as his soul.\""
       },
       {
-        "Title": "",
+        "Title": "Character Story 1",
         "Context": "When Alyosha was a child, his dream was modest.\nHe wanted to learn his father's craft and become a hunter in his own right. Then, on the day he came of age, he would inherit the ultimate prize — the finest bolt-action rifle in the world.\nYet, dreams are always so fragile.\nEveryone here knows the boundless snowfields of Snezhnaya are lethally bone-chilling, but the winter of that year proved uniquely brutal.\nFor ordinary families in the remote reaches, it meant steeper expenses, scanter earnings, and harder days, an existence in which a single misstep could bring life to an unsustainable end.\nNaturally, under the weight of such living, some would choose to work themselves to the bone, praying to keep their fragile lives from shattering entirely. Such was Alyosha's family.\nOthers, however, chose to abandon their humanity completely, plunging into the abyss of \"reality\" and turning their blades upon those even weaker than themselves. Such was the pack of bandits who had just descended upon Alatyr Village.\nWielding rusted swords and clubs, the raiders smashed through the drafty wooden doors of the villagers' homes, plundering what few Mora and crystal chunks they had left. Nothing was spared, not even the meager loaves of Rye Bread stretched with sawdust.\nNaturally, the bandits' brutality was not yet satisfied.\nEmboldened by the villagers standing rooted to the spot in sheer terror, they escalated their cruelty to new heights. They raised glowing torches, intending to set ablaze whatever houses and furniture they couldn't carry off.\nAs they closed in on the wardrobe where Alyosha cowered, his parents fought back with suicidal resolve. Their desperate resistance jolted the other villagers awake, who snatched up kitchen knives and farming tools as they rushed into the fight...\nPerhaps unnerved by this sudden resistance, or perhaps simply realizing the night was approaching, the outlaws finally fled into the dark, leaving Alyosha's parents amidst the chaos.\nThough his parents forced a smile, insisting it was nothing to worry about, Alyosha understood the unspoken truth. Their injuries would take at least half a year to mend, only if they could somehow afford the medicine.\nWith no income, mounting medical costs, and absolutely zero savings, the family's bleak reality spoke for itself.\nOn that sleepless night, Alyosha finally gave up on his dreams.\nHe pried up a loose floorboard, unwrapped a parcel bound in layers of oiled paper, and pulled out the shotgun his father had spent an entire year's savings on — a gift meant to be handed down only when he became a man.\nThe howling blizzard might mask their footprints, but snapped branches and trampled frozen earth would still guide the way for the hunter.\nA half-day's lead might have made the bandits think they'd safely shaken off any pursuit, but Alyosha had already cut them off by taking a shortcut through the wilds.\nThey thought themselves cleverer than wild animals, but to eyes that could read the slightest movement of any living creature, they were just game waiting to be bagged.\nIn less than half a day, before the sun could even rise, Alyosha already had the unsuspecting bandits in his sights.\nA few moments later, he brought every last one of them down.\nIt was easier than hunting... That was his first thought.\nAfter all, animals would scatter at the sound of gunfire, but humans chose to cower and beg for mercy.\nIt saved Alyosha a lot of effort — not that he had any intention of showing mercy...\nAssured that the surroundings were safe, he spat out the frozen water he'd kept in his mouth to hide his breath in the cold air, then crouched low and slipped towards the bandits lying on the ground.\nThat strong, metallic tang was something he should have known. This bloody chaos was a scene he should have survived a thousand times over. And locking eyes with the men staring back was something he should never, under any account, have shrunk from...\nYet, Alyosha felt like he was pulled right back to his first hunt, tracking deep into the snowy forest with his father to inspect the kill. Even his steps faltered, clumsy and uncertain on the frozen ground.\nExcept this time, there was no one left to rest a large, warm hand against his shoulder.\nAnd so he stood there motionless until the sun finally climbed high overhead, and the blinding sunlight shocked him back to reality.\nFrom among the bandits' scattered belongings, he pulled out a rusted pickaxe...\n\"Don't blame me, you brought this on yourselves...\""
       },
       {
@@ -1123,7 +1134,7 @@
         "Context": "In his youth, Alyosha's dream was humble:\nTo hunt more game each day, shoulder the weight of the household himself, and see his family through the brutal winter.\nYet, dreams are always so fragile.\nThat bloody clash with the bandits had allowed him to reclaim their stolen goods, but it could not undo the deeper ruin dealt to his family.\nBeyond the spoils they had plundered from Alatyr Village, the bandits were utterly penniless. This meant that Alyosha's life-and-death struggle that night had won back nothing more than what was already theirs.\nOn the other hand, exorbitant medical expenses and the crushing reality of two parents stripped of their livelihood completely cornered his family.\nSuch a burden would have been overwhelming even for a seasoned hunter, let alone a youth barely taller than his own rifle.\nWorse still, the raid had spared no one in Alatyr, and not a single neighbor had the strength left to offer a hand.\nIn the grip of such desperation, Alyosha finally understood why his father had insisted on teaching him to count coins and weigh grain rather than master the rifle.\nFrom now on, every shot he fired, every move he made, and every mouthful he swallowed had to be weighed and measured. The slightest miscalculation would leave his home, already clinging to survival by a thread, utterly buried beneath the winter snows.\nOf course, merely pinching pennies was far from enough; he had to secure a new source of sustenance...\nIt was right then that Alyosha heard a rumor: A few villagers want to band together to push deep into the wilds in search of a \"way out.\"\nEveryone knew the terrifying blizzards here were enough to swallow anything whole, not to mention the blood-crazed beasts and the brigands far more vicious than any beast out there.\nAt a time like this, anyone still trying to find a \"way out\" in the barrens was either an utter fool or an insatiable opportunist.\nSo when the group showed up at his doorstep, inviting him to join their venture, Alyosha knew instantly they belonged to the latter. They, too, had turned their sights onto their own kind.\nBut he couldn't deny their logic. The meager spoils he brought back from hunting could never sustain this crumbling home.\nStaring at the bare walls of his home, he hardened his heart against his parents' pleas and abandoned his dream once again.\nArmed with a few lines of underworld slang he'd managed to wrung from his father, Alyosha looked up at the men — all of them far taller and older than he — and replied:\n\"I'm in. But let's get one thing straight: we're going out there as 'hunters.' We stick to the 'beasts' with 'claws' and 'fangs.' No touching the unarmed 'fowls,' and no taking lives.\"\nHe was met with a dead, hollow silence and blank stares.\nIt was as if the men standing before him possessed nothing but raw ambition, completely unready for what lay ahead, whether in grit, gear, or skill...\nThere was no doubt that they were just another pack of fools.\nAlyosha knew it wasn't the best choice, but he simply had no alternative.\nAfter clicking his tongue in silent frustration, he kept on with a cool indifference: \"By 'fowls,' I mean ordinary merchants or travelers. As for the 'beasts,' those are the armed highwaymen and gangs. They have deeper pockets. Besides, striking them is merely crooks robbing crooks; it won't draw the eye of the Druzhna.\"\nAnd so, the first pack of highwaymen in Alatyr was born."
       },
       {
-        "Title": "",
+        "Title": "Character Story 3",
         "Context": "Once he became a \"hunter,\" Alyosha's ideals were simple:\nJust as he had promised his parents, he wanted only to preserve a quiet existence in this bitter winter, keeping his head down until his family fully recovered, and then wash his hands of the trade for good.\nYet, ideals are always so fragile.\nTrue, the \"hunters\" of Alatyr had snatched enough provisions from the \"beasts\" to keep their households warm and fed.\nBut Alyosha's first suspicion had been dead right: These men were fools. And they were nothing more than a desperate, ambitious pack of fools blinded by greed and raw ambition. It would take only the flimsiest excuse for them to break the rules they had sworn to keep, cast away their remaining humanity, and turn their blades on the weak.\nThe excuse they needed was the \"Project Stuzha.\" As the living costs soared, everyone was desperately searching for a new livelihood:\nBraving the trackless wastes and dodging patrols to reach Nod-Krai, the rumored land of freedom.\nAs it happens, the \"hunters\" of Alatyr were entrenched precisely along their path.\nWatching countless unarmed \"fowls\" pass through their territory, the \"hunters\" could no longer hold back their avarice. They tore off their masks and devolved into bloodthirsty \"beasts.\"\nAt present, Alyosha was the only \"leash\" left holding the \"beasts\" in check.\nThough he fought tooth and nail to keep his companions from crossing that line, all he had left to lean on was a hollow promise, an old, much-reworked hunting rifle, and a teething pup.\n\"Playing along with the brat back then was just a way to trade for his know-how. Now that the pickings are this easy, what needs him anyway?\"\n\"As for that junk rifle of his? We've got more than enough firepower to go around. Let's just hope he knows how to mind his own business.\"\nIt didn't take long for the first beast to make its move on the \"fowl.\" With him leading the charge, it became an avalanche — a second followed, then a third...\nUntil even Taras, a man so spineless he could barely hold his rifle straight, grew eager to join the slaughter.\nAlyosha knew right then that they weren't \"hunters\" anymore. They had proved to be no better than the bandits who had once pillaged Alatyr, if not far worse — for they were well-trained and heavily armed.\nNone of this had been his intent, yet it was his hands that had given these monsters their teeth and claws. And it rightfully fell to him to put them down before they spiraled out of control.\nLike a true hunter, he must always steps forward when beasts close in on a village.\nAnd so, Alyosha abandoned his ideals once again.\nThat day, he left Tugarin with his parents, keeping nothing but his rifle by his side...\nFrom that day on, the crack of gunfire never ceased across the snowfields of Snezhnaya.\nA terrifying rumor spread like wildfire among the locals: A brutal war was being waged deep within the snowfields. One side was said to be an utter madman, picking off any living thing that ventured too close.\nAlyosha had no intention of harming innocent lives, but the dread of a madman was sometimes far more effective than the reputation of a hero.\nFrom that day on, not a single \"fowl\" dared to venture deep into the snows. And thanks to such dread, no more civilians were robbed or harmed.\nBy the time the authorities finally received word and set out to quell the chaos, countless days and nights had slipped away. The gunfire in the wilds had long since fallen silent, and life in the nearby villages had slipped back into its old rhythms.\nThe belated Fatui soldiers found nothing in the endless white. They summarily wrote off the violence as just another turf war among bandits, closing the case without a second thought.\nAs for the surviving \"beasts,\" they found themselves bound by a new leash forged of bullets and blood:\nNever, ever lay a hand on the fowl."
       },
       {
@@ -1131,7 +1142,7 @@
         "Context": "When Alyosha reappeared before his people, he no longer had the luxury of speaking of ideals.\nBecause there was simply too much \"reality\" he had to face piece by piece.\nBeyond serving as the backbone of his household and keeping Tugarin fed, he still had to balance his double life as both \"hunter\" and \"leash,\" moving stealthily around the hidden depths of the tundra.\nFortunately, the suspicion and wariness the locals once harbored toward this boy from the bandit-ridden village of Alatyr had slowly given way to acceptance and trust.\nTo those who cared for him, Alyosha was a upright, brave, and warm-hearted youth who needed nothing more than an opportunity to live the peaceful life everyone dreamed of.\nAnd that very \"opportunity\" soon came knocking, thanks to the eagerness of his people.\nIt arrived in the form of a mysterious figure flanked by bodyguards, his towering, unapproachable aura visible in every line of his dress and demeanor.\nYet, it was only after the stranger dismissed his retinue to face Alyosha alone that his condescending pride laid itself bare, leaving Alyosha certain of one thing: This man possessed not only a formidable status, but most likely an equally crushing weight of trouble.\nAlyosha's survival instinct told him that when dealing with such men, it was best to keep his mouth shut. A loose tongue only invited trouble.\n\"The locals tell me you can track your prey even in the heart of a blizzard. That you're the finest hunter in all of Snezhnaya?\"\n\"...\"\n\"I've looked over your game. Every shot clean through the spine or the heart. You have a touch of talent, no doubt, and someone taught you well. But in my eyes, you are merely... passable.\"\nThe man didn't even bother to wait for a reply, simply pressing on with his critique.\n\"A novice chooses utterly harmless targets, like rabbits and wild birds. An ordinary hunter sets his sights on fierce beasts. But a 'passable' hunter goes so far as to tame the beasts, forcing them to do his bidding. Am I correct, boy?\"\n\"Tugarin is not a beast,\" Alyosha muttered under his breath, reacting instinctively to protect his companion.\n\"I'm not speaking of the dog,\" the man replied. \"I mean the 'beasts' with 'fangs' and 'claws' — the bandits who raided your village and wounded your parents, or the highwaymen from your own hometown who went back on their word.\"\nAt the mention of this, Alyosha instinctively tugged his hood lower.\n\"Judging by the results, you're indeed growing. Yet you're still far from a true master. After all, I believe a master hunter doesn't allow dangerous beasts to run rampant in his own territory.\"\nAs if reading the wariness and confusion in Alyosha's eyes, the man let out a soft sigh. \"Go back and give it some thought. Once you find the answer, you'll naturally understand what my commission is.\"\nThat night, Alyosha held Tugarin close, sleep eluding him until dawn.\nWhenever he closed his eyes, the smoke and flashes of gunfire from past skirmishes danced across his mind.\nThose bandits were truly wicked, completely undeserving of pity, yet they had indeed been utterly destitute...\nThose from his own village who betrayed their oath deserved to pay for preying on the innocent, but how could a coward like Taras come so close to crossing that very same line?\nAs the first light of dawn broke over the Snezhnograd, Alyosha slipped into the man's temporary chambers. But this time, he brought his hunting rifle.\n\"Ah, so you've finally come around? You've known all along that living like this is a dead end...\"\"\nThe man spoke as if he had foreseen this exact moment. The room was barren, except for the solitary figure at the table, where a modest breakfast for two sat waiting.\n\"What role do you want me to play in your plan?\"\n\"Don't be in such a hurry, it's not the right time yet.\" Seeing the weariness and determination in Alyosha's eyes, the man pointed calmly to the seat opposite him.\n\"For now, please, take a seat. Have your breakfast and let me tell you a few stories carried here by the howling wind.\""
       },
       {
-        "Title": "",
+        "Title": "Character Story 5",
         "Context": "Even though everyone's identity was kept secret, Alyosha could tell that the \"Rokot\" was a collective of extraordinary talents.\nThanks to a recommendation from an anonymous member, he finally had the opportunity to enter the grand palaces within the Snezhnograd, and even landed a rather decent part-time job...\nThe city offered a world he couldn't have imagined: breathtaking ballets, captivating operas, towering architecture, the spring-like warmth of the indoors, and gigantic machines he had never heard of...\nIt was as if the fantastical stories whispered by adventurers and merchants had materialized overnight. For a young man all too familiar with gunfire and bloodshed, it was the first time he realized that such a world could actually exist.\nThe biggest shock, however, was Genius Invokation TCG. He never imagined a game of paper cards and metal tokens would revolve entirely around math. A subject that used to give him nothing but headaches was now the very thing keeping him up all night.\n\"What a shame. If I'd had a game like this when I was little, I could've saved my rear a few beatings while learning sums...\"\n\"...But given how terrible I am at it, my father would've probably just beat me twice as hard. Huh... Guess it's a wash either way.\"\nAfter losing another game, Alyosha slipped into silence for a long time, his face drawing the attention of his newfound opponent for that day.\n\"Hey, friend! You doing alright over there?\"\n\"I'm fine. I was just wondering... you're incredibly good at this. Is there some kind of trick to it?\"\n\"What, me? Come on, you're giving me too much credit!\" The young man, Medyntsev, looked as though he rarely received such genuine praise. He instantly count Alyosha as a kindred spirit, leaning in as he began to chatter away. \"It's all practice, really. I spent some time in Mondstadt, you see. There's a tavern there called The Cat's Tail, where you could see almost the fiercest players across Teyvat...\"\nFrom the players of Teyvat to the unforgettable specialty cocktails served at the tavern...\nFrom the elegant Knights of Favonius to the songs and poems celebrating freedom...\nMedyntsev spoke for a long time, and Alyosha listened just as long.\nFor the young merchant, this conversation was just another chance to present his grand business blueprint and flex his commercial savvy.\nBut for the young \"dissident,\" this talk opened a window to the world he had never glimpsed before.\n\"Let me put it this way, friend. It sounds wild, I know, but I'm actually one of the heirs to a massive family enterprise, and I've got a bold business plan!\" Medyntsev's voice rose with excitement. \"Once I pull this off, the entire enterprise will fall right into my hands! When that day comes, I'll finally be able to bring my grand ambitions to life, hahaha!\"\n\"So... once the business is in your hands, what do you plan to do?\"\n\"Uh, I...\" Medyntsev hesitated.\nOf course, this wasn't the first time Alyosha had asked that question.\nHe had asked it of himself long ago: Once Project Stuzha was thwarted and the blizzards melted away, what future awaited Snezhnaya?\nBut he himself had failed to come up with a proper answer.\nHaving spent years surviving on the streets, Medyntsev quickly laughed it off, breaking the awkward silence between them. \"...Honestly, friend, if you ever get the chance, you absolutely have to visit Mondstadt! Don't let the distance scare you off. Once you go, you'll see I'm right! If we bring their liquor back to Snezhnaya, we'll make an absolute fortune!\"\n\"Yeah. Once the snows melt, I'll go...\"\nDeep down, Alyosha mapped out a new step in his outline for \"Fulfilling the Ideal\":\nIf he ever got the chance to leave Snezhnaya, his first stop would be Mondstadt.\nNot merely for The Cat's Tail, where the best card players of Teyvat were said to gather, but because it was a nation of warmth and freedom.\nPerhaps by studying its past and present, he could finally find a proper answer for Snezhnaya's future."
       },
       {
@@ -1139,7 +1150,7 @@
         "Context": "Like so many people in Snezhnaya, this pup held a dream that couldn't be simpler:\nA steady meal and a warm home.\nBut in a time when humans could scarcely survive on their own, even that was a luxury far out of reach.\nThe only reality left to it was to be abandoned in the snowfields, curl into a tight ball, and quietly wait for death to arrive.\nYet there was little Alyosha could do as he passed by. All he could do was reach into his pocket, pull out his last two sausages, crouch down, and casually tear them into pieces before tossing them by its paws.\nAnd once it had regained enough energy to trot around his boots and try to tag along, he simply stood up and walked away.\nHe knew all too well that his rations were barely enough for himself, let alone a pet. More importantly, he was on a dangerous hunt.\nAccording to his observations, a man-eating giant bear had been prowling the snowfields.\nIn order to preserve its pelt and keep his gunshots to a minimum, Alyosha lay hidden in a snow cave, using himself as bait as he waited for his prey to draw near.\nBut beside the beast he intended to hunt, he certainly hadn't counted on an uninvited guest...\nThe pup appeared to have regained all its strength, even tracking Alyosha's scent all the way to his hiding spot.\n\"Tsk, this is bad...\"\nSeeing the giant bear closing in on Alyosha, it showed no hesitation whatsoever, barking frantically at the top of its lungs in its puppyish voice.\nThe noise made the bear swing around — and with its broad back facing the hunter, Alyosha lost his window for a one-shot kill.\nBut just as the bear turned to pounce on the pup, Alyosha squeezed the trigger almost on pure instinct, without thinking at all.\nA high-pitched crack tore from the rifle, followed by a dull thud as the bullet pierced flesh. The giant bear let out a thundering howl in agony before bolting into the snow out of survival instinct.\nAlyosha knew full well that the shot had torn through its vital organ, and that he could easily finish it off as long as he pursued it.\nYet he remained motionless, weighing the cost of a chase against the risks involved...\nThe pup, however, had no need for such things. Its world was simple.\n...The giant beast that tried to hunt my savior has been driven off. I must pursue it, and drive it as far away as possible.\n\"That's really not worth it...\"\nThough grumbling, Alyosha set off all the same, giving chase after that swift streak of black and white.\nAbout as long as it takes to finish a few cups of tea, Alyosha finally caught up with the pup. It was standing atop the giant bear's lifeless corpse, panting heavily as its chest heaved with rapid breaths.\nBut after catching the sound of Alyosha's footsteps, it perked up its head immediately, wagging its short, pom-pom-like tail with frantic joy.\nIt puffed its chest in triumph, acting as though it had truly protected its savior by taking down a beast ten times its size entirely on its own.\nAnd its unwavering gaze seemed to declare that from this day on, it would follow and protect the hunter anywhere.\nAfter a long moment of hesitation, Alyosha finally gave in.\n\"Fine... you win. A hunter can't very well do without a hound... Guess that means you'll be needing a proper name...\"\n\"Woof?\"\n\"...How about 'Tugarin'? I just hope you grow a bit more, so you can actually live up to being a real bear-hound.\"\n\"Woof!\""
       },
       {
-        "Title": "",
+        "Title": "Vision",
         "Context": "In the days following the mysterious visitor's arrival, Alyosha's life didn't change all that much. He still spent the better part of his days out on the snowfields, playing the part he always had.\nBut if anyone bothered to track the gunfire echoing across the snow, they would realize the \"hunter\" was pulling his trigger far less often.\nEven with his mind made up, even knowing the necessity of killing, and even after growing all too used to aiming and being aimed at, Alyosha still loathed bloodshed.\nEspecially after obtaining the intel provided by the \"Rokot\".\nVolumes of secret intel regarding \"Project Stuzha\" confirmed what he had long suspected: The nation's true ailment was not the gangs ranging unchecked, the bandits spawning without end, or the petty officials lining their pockets at the nation's expense.\nThey were merely symptoms born of the biting cold.\nSo long as the root of the disease remained intact, such minor afflictions would only continue to multiply.\nEven training a hunting hound requires a full belly and dried meat as a reward; how could anyone expect to fill the bottomless pit of human greed?\nHad his rifle been trained on the wrong target all along? Was all that bloodshed truly for nothing?\nWhenever such thoughts took hold, his usually sharp \"sight\" — the eyes that could pin down prey through a blinding blizzard — would become blurry.\nAnd so, Alyosha began to hesitate. So long as the highwaymen surrendered their plunder, he would spare their lives when they begged for mercy, even if they had crossed the red line against touching the \"fowl.\"\nYet beasts never understood mercy. To them, showing restraint was merely a sign of weakness. As Alyosha turned his barrel away time and time again, the peril he had held at bay finally closed in.\nIt was a meticulously calculated trap. When Alyosha stepped out from behind cover to break up what seemed like an ordinary robbery, both the \"beasts\" begging on their knees and the terrified \"fowl\" cast off their disguises at once, their fangs laid bare in an instant.\nUnder fire from all sides and worn down by relentless attrition, Alyosha's strength was giving way...\nHis stamina was pushed to its limit, with barely a handful of rounds remaining in his bandolier.\nHuddled behind a bullet-riddled cover, he stuffed the last piece of dried meat into Tugarin's jaws. \n\"Tugarin, break for it.\"\nJust then, a ragged volley of gunfire tore open a corner of the encirclement.\nSeizing that brief moment of chaos, Alyosha escaped from the deathtrap.\nOver in that corner, he caught sight of the person who had been firing wildly with his eyes shut, completely oblivious to the gap he had just opened. It was a face he knew all too well: Taras.\nAlyosha was well aware that this man, who could barely keep his grip steady on a rifle, had long since settled down in town and embraced a normal life. He had no reason to put himself in harm's way ever again.\nYet here he was, dragging his trembling legs forward.\nTaras wheezed heavily, clearly unaccustomed to such grand speeches. \"The people... they still need you...\"\nLooking at the man shaking like a leaf before him, yet clutching his rifle, the murky haze in Alyosha's mind suddenly cleared.\nIf one could not strike at the root of the nation's rot, aimless combat and bloodshed were indeed pointless...\nYet striking down evil destined for destruction, and shielding those who had not yet fallen — that was the very foundation of his grand ideal: a world where everyone could eat their fill and no one had to pour lead into one another.\nWasn't Taras's redemption the best proof?\nHis ever-sharp \"sight\" had returned.\nFor the sake of this dream, he was willing to stain his hands with blood, willing to merge into the howling gale to tear through giant beasts and ice — and if the wind were to stray off course, he was prepared to turn his rifle on the gale itself.\nHolding the thin application form, Alyosha sought out the mysterious stranger once again.\n\"I can join you. But I don't promise to take orders from you.\"\n\"No problem. That is the very creed of the Rokot anyway. What you do is your freedom.\" Catching sight of the \"gadget\" at Alyosha's waist emitting an untainted glimmer, an exceptionally rare smile crossed the man's face. \"Besides, on a personal level, I'm far more eager to see where your own choices lead.\"\nAnd so, amidst the howling winds, a streak of lightning-swift presence wove its way in..."
       }
     ]

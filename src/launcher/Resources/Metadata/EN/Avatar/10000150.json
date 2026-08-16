@@ -36,7 +36,15 @@
         "GroupId": 15031,
         "Proud": {
           "Descriptions": [
-            "Charged Attack DMG|{param7:F1P}"
+            "1-Hit DMG|{param1:F1P}",
+            "2-Hit DMG|{param2:F1P}",
+            "3-Hit DMG|{param3:F1P}+{param4:F1P}",
+            "4-Hit DMG|{param5:F1P}",
+            "5-Hit DMG|{param6:F1P}",
+            "Charged Attack DMG|{param7:F1P}",
+            "Charged Attack Stamina Cost|{param8:F1}",
+            "Plunge DMG|{param9:F1P}",
+            "Low/High Plunge DMG|{param10:P}/{param11:P}"
           ],
           "Parameters": [
             {
@@ -307,6 +315,7 @@
         "GroupId": 15032,
         "Proud": {
           "Descriptions": [
+            "Skill DMG|{param1:F1P}",
             "Coda at Dawn's Tolling DoT|{param2:F1P}",
             "Coda at Dawn's Tolling Stellar-Conduct/Stellar Swirl DMG|{param3:P}/{param4:P}",
             "\"Plume\" Dance Move DMG|{param5:F1P}",
@@ -617,9 +626,13 @@
       "GroupId": 15039,
       "Proud": {
         "Descriptions": [
+          "Slash DMG|{param1:F1P} ×3",
           "Final Slash DMG|{param2:F1P}",
+          "Snow Swan's Dream Stellar Glimmer Reaction DMG Bonus|{param3:F1P}",
+          "Snow Swan's Dream Duration|{param4:F1}s",
           "Solo Dance Double Duration|{param5:F1}s",
-          "CD|{param6:F1}s"
+          "CD|{param6:F1}s",
+          "Energy Cost|{param7:I}"
         ],
         "Parameters": [
           {
@@ -992,7 +1005,7 @@
     },
     "Fetters": [
       {
-        "Title": "",
+        "Title": "Hello",
         "Context": "...Thanks for all the support. You want an autograph, right? What do you want me to draw next to it? How about a feather? Oh, wait, you're not one of my fans? Guess I misunderstood. Lemme start from the top, then. I'm Odette, a ballerina with the Korolevskiy Troupe... Well, thanks for all the support, anyway."
       },
       {
@@ -1008,7 +1021,7 @@
         "Context": "If only there were double the hours in a day... Hmm. Actually, make that triple."
       },
       {
-        "Title": "",
+        "Title": "When It Rains",
         "Context": "The pitter-patter of the raindrops always makes me feel so serene. This kind of weather is perfect for dancing alone."
       },
       {
@@ -1016,7 +1029,7 @@
         "Context": "The most beautiful, serene moments are always the most fleeting."
       },
       {
-        "Title": "",
+        "Title": "When It Snows",
         "Context": "The snow in Snezhnaya is always bitterly cold, and it never seems to end."
       },
       {
@@ -1028,7 +1041,7 @@
         "Context": "...At least there wouldn't be a meet-and-greet in a place like this."
       },
       {
-        "Title": "",
+        "Title": "Good Morning",
         "Context": "I'm warmed up and ready to go."
       },
       {
@@ -1156,7 +1169,7 @@
         "Context": "To be honest, I don't think there's any food I find particularly unpalatable. But, as a ballet dancer, I have to be strict about my diet, so all of my meals are carefully planned. I tend to avoid anything not included in that."
       },
       {
-        "Title": "",
+        "Title": "Receiving a Gift: I",
         "Context": "I have had quite a few performances these last few days. Perhaps a little more couldn't... Ahem, never mind. It's delicious. Thank you."
       },
       {
@@ -1168,15 +1181,15 @@
         "Context": "Uhm, no thank you. I'm watching what I eat."
       },
       {
-        "Title": "",
+        "Title": "Birthday",
         "Context": "Happy Birthday! I was trying to think of what to get you... I usually receive things like flowers, ballet shoes, and music boxes, but I doubt that's what you have in mind. How about you simply... make a wish, here and now? Ideally, something within my power to grant, of course..."
       },
       {
-        "Title": "",
+        "Title": "Feelings About Ascension: Intro",
         "Context": "Hm, not quite there yet... I need to train even harder."
       },
       {
-        "Title": "",
+        "Title": "Feelings About Ascension: Building Up",
         "Context": "Mm, my movements feel sharper. I should keep up the intensity."
       },
       {
@@ -1184,15 +1197,15 @@
         "Context": "My fouettés are now perfect. But now is no time to let up."
       },
       {
-        "Title": "",
+        "Title": "Feelings About Ascension: Conclusion",
         "Context": "\"Emotion is an indispensable part of ballet.\" I now understand what that means. Thank you for your faithful companionship and support. If you're interested in coming to my performance later today, here's a ticket."
       },
       {
-        "Title": "",
+        "Title": "Elemental Skill: I",
         "Context": "Let's begin."
       },
       {
-        "Title": "",
+        "Title": "Elemental Skill: II",
         "Context": "Shadow me."
       },
       {
@@ -1200,19 +1213,19 @@
         "Context": "Together."
       },
       {
-        "Title": "",
+        "Title": "Elemental Skill: IV",
         "Context": "Pas de deux."
       },
       {
-        "Title": "",
+        "Title": "Elemental Skill: V",
         "Context": "Pirouette."
       },
       {
-        "Title": "",
+        "Title": "Elemental Skill: VI",
         "Context": "Hehe."
       },
       {
-        "Title": "",
+        "Title": "Elemental Burst: I",
         "Context": "Waltz of the snowflakes."
       },
       {
@@ -1220,7 +1233,7 @@
         "Context": "Crystalline adagio."
       },
       {
-        "Title": "",
+        "Title": "Elemental Burst: III",
         "Context": "Witness the snow swan's grace."
       },
       {
@@ -1228,7 +1241,7 @@
         "Context": "I don't need any of this. You keep it."
       },
       {
-        "Title": "",
+        "Title": "Opening Treasure Chest: II",
         "Context": "A journey is a lot like dance practice — every step counts."
       },
       {
@@ -1240,7 +1253,7 @@
         "Context": "Not concerned."
       },
       {
-        "Title": "",
+        "Title": "Low HP: II",
         "Context": "Nothing but a scratch."
       },
       {
@@ -1252,7 +1265,7 @@
         "Context": "You alright?"
       },
       {
-        "Title": "",
+        "Title": "Ally at Low HP: II",
         "Context": "Let's switch."
       },
       {
@@ -1260,7 +1273,7 @@
         "Context": "Should have... worked... harder..."
       },
       {
-        "Title": "",
+        "Title": "Fallen: II",
         "Context": "No. Gotta... stand... up..."
       },
       {
@@ -1284,15 +1297,15 @@
         "Context": "That supposed to hurt?"
       },
       {
-        "Title": "",
+        "Title": "Joining Party: I",
         "Context": "At the ready."
       },
       {
-        "Title": "",
+        "Title": "Joining Party: II",
         "Context": "Need me to take center stage?"
       },
       {
-        "Title": "",
+        "Title": "Joining Party: III",
         "Context": "Where to this time?"
       }
     ],
@@ -1302,7 +1315,7 @@
         "Context": "In other lands, the word \"dancer\" often brings to mind someone warm and familiar, a gentle presence that offers comfort along life's long road.\nWhen one mentions the same in Snezhnaya, however, the image conjured is a touch frostier.\nOdette Spessiva, prima ballerina of the Korolevskiy Troupe, appears on promotional posters wearing the same composed expression. Her gaze is calm and distant, her lips lightly pressed together, her face as still as a statue touched by frost.\nThat cold reserve only makes the fervor of her admirers more striking. Their devotion is not difficult to understand. Odette possesses an impeccable physique, and her performances combine a cutting austerity with tremendous dramatic tension. Every step and every lift of her hand carries the precision of a finely cut gemstone, each movement catching the light with a brilliance that holds the eye.\nNo one can witness such mastery without recognizing the effort behind it. The instant Odette steps onto the stage, every voice of doubt is silenced.\nYet once the curtain falls, she rarely returns for an encore. Admirers fete her with flowers and praise, only to receive the briefest of replies.\n\"Thank you for your support. See you again.\"\nHer brevity can easily be mistaken for deliberate aloofness, but Odette has no intention of putting on airs. Beyond the stage and its brilliant lights, other responsibilities await her. Her life is like the calendar on her wall, every space already filled, with not one blank spot left for herself.\nShould you glimpse, in the depths of a snowy night, a figure passing soundlessly by with a lightness no ordinary traveler could possess, you would be wise not to follow. Snezhnaya's nights are bitterly cold, and respectable citizens are already asleep behind shuttered windows. Those who venture out at such an hour rarely do so without purpose.\nWhatever the night demands of her, Odette is back at the theatre on time the following morning. From the rehearsal room come either the faint strains of music or the soft, muffled tap of her pointe shoes against the floor. Her reflection moves across the mirrored wall as she repeats the same lift and descent, every motion measured with metronome precision.\nAs dawn brightens and the rest of the troupe begins to file in, they often pause at the sight of her.\nHad their prima ballerina been here all night?"
       },
       {
-        "Title": "",
+        "Title": "Character Story 1",
         "Context": "At the close of every season at Snezhnaya's Korolevskiy Troupe, the arts pages of the major newspapers would invariably fill with impassioned commentary on Odette, the company's prima ballerina.\n\"Perfection, polished to an icy sheen.\" One cultural paper repeated the verdict so often that it ceased to sound like criticism and became, instead, the epithet by which she was known.\nTripolev, one of Snezhnaya's most celebrated critics, offered a more vivid appraisal. \"Odette,\" he wrote, \"dances like a dagger honed to perfection, slicing cleanly through the air. The audience can only marvel at the beauty of its edge and the precision of its motion, while knowing better than to reach out and touch it.\"\nFor another dancer, praise of that sort might have proved a quiet liability. Audiences may admire beauty, but they are quickest to embrace the kind that feels warm, lyrical, and emotionally within reach. Beauty is easiest to understand when it seems willing to meet the viewer halfway.\nOdette, however, offered no such invitation. Of the passion and feeling audiences longed to glimpse in her, she yielded nothing — not even the heartfelt smile expected at the final curtain.\nBeyond the expressions demanded by the role at hand, her features remained cool and restrained, whether before the public or in private company.\nAll her strength seemed to have been poured into the refinement of her art. She held herself to standards far beyond those expected even of a prima ballerina, and the result spoke for itself. What more was she obliged to give? Surely feigning emotion merely to please the audience was no part of a prima ballerina's duty. Odette, at least, did not believe it was.\nThere was no shortage of stories about her.\nOne of the best-known concerned a nobleman who paid a small fortune to reserve an entire row of first-class seats. After the performance, he waited for two hours at the stage door, an enormous bouquet of ice-blue flowers in his arms. What reached him in the end was not Odette, but a message from the theatre staff: \"Miss Odette has already left by the side entrance.\"\nAnother admirer poured ten pages of devotion into a letter. Odette answered with the same words as ever: \"Thank you for your support.\" Had the handwriting not matched her signature exactly, anyone might have taken the reply for the work of another hand.\nThen there was the drunken admirer who blocked the theatre entrance, attempting through a stream of disjointed words to engage Odette in a discussion of ballet's influence on Snezhnaya. She made no move to go around him. She simply stopped and looked at him... \"He stood frozen for several seconds,\" a witness later recalled. \"Then, as though a basin of ice water had been thrown over him, he muttered something to himself, turned, and walked away.\"\n...\nOdette neither dressed up her feelings nor softened the realities of life. There was no artifice in her strength. Clear and true, it held the same cold resolve and stubborn endurance as the frozen ground beneath her feet — a quality that resonated deeply with the people of Snezhnaya.\nHer manner remained unchanged, as distant as ever. Yet the line outside the theatre never dwindled, any more than the snow ceased to fall."
       },
       {
@@ -1310,15 +1323,15 @@
         "Context": "Even within the Korolevskiy Troupe, only a handful of people can speak freely with Odette outside of a performance.\nVodyanitsa is, without question, one of them.\nTheir acquaintance, however, began with little more than the practical demands of the stage: Arranging the program, preparing the costumes, and reassuring performers overcome by nerves before their first appearance.\n\"Just as you practiced. Listen to the rhythm, remember the steps, and take them one at a time.\" Calm and almost expressionless, the prima ballerina offered the same advice she would have given in rehearsal, as though stepping onto the stage were no different from practicing for it. The performers exchanged uncertain glances, their questions passing silently from one face to another. Even so, their racing hearts began to settle beneath the quiet steadiness of her voice, as fresh snow settled over a field, smoothing away every hurried, faltering footprint.\n\"All right, girls. Thump those chests and let your hearts race! You're going to have the time of your lives onstage!\" The prima donna's voice rang out, exuberant and almost piercing, and her girls answered by thumping their chests, their faces flushed with excitement. Her voice surged through them like waves across the sea, gathering them into its current and carrying forward anyone brave and quick-witted enough to ride it.\nOne by one, the performers filed onto the stage, leaving the two principals to rest backstage. Their own parts had already come to a successful close, and they had done everything they could for the performance. The final act belonged to the newcomers.\nFor a time, silence held the dressing room. Then the music began onstage, its faint strains drifting backstage and breaking the stillness.\nA piece of honey candy slipped into the Water Imp's cup. It landed with the faintest plunk, like a pearl falling into folds of silk.\n\"...It's good for your throat.\"\nThat was all Odette said. She turned away and carefully retied her ballet shoes, leaving Vodyanitsa gazing absently into the sweetened hot water before her.\nOnly later would the meaning of that small gesture become clear. Odette usually kept those candies for herself, saving them to restore her strength after long, demanding hours of training. The one she gave Vodyanitsa that day was the last she had. What Odette did not yet know was that Vodyanitsa possessed an exceptional gift for song. As a Water Imp, she scarcely felt any strain in her voice at all.\nAt the time, however, Vodyanitsa was perfectly happy to accept a kindness sincerely offered, especially when it came from someone as clear and unblemished as a piece of fine ice.\nIn Snezhnaya's bitter cold, after all, kindness was far too rare to be left unattended. The moment one found it, one had to gather it close. Otherwise, it might freeze solid before anyone could ever prise it open again.\n...\n\"I'm out of candy.\"\n\"You're not. I put three boxes in your bag this morning — give me one.\"\n\"You don't need it for your throat.\"\n\"Then I need it to recover my strength.\"\n\"From what? I was the one dancing.\"\n\"I was singing too! You're supposed to say, 'Oh, dearest Vodyanitsa, your voice was so lovely I could listen to it forever,' and then give me another piece.\"\n\"...What I can give you is my opinion, once the performance is over.\"\n\"You smiled just now, didn't you? I saw it! You smiled! ... Wait, you're still dancing? Hey! Come on, that's enough. Let's go eat!\"\nVodyanitsa did not imagine it. For the briefest moment, her keen eyes caught the corner of Odette's mouth lifting into a smile.\nBut Odette always replies thus when pressed:\n\"It was simply the expression the role called for.\""
       },
       {
-        "Title": "",
+        "Title": "Character Story 3",
         "Context": "By the time Odette was born, the glory of the Spessiva family had long since faded. Little remained of it but a handful of yellowing portraits on the walls of the old house, each preserving the likeness of an ancestor who had once shone upon the stage. Her mother, Violetta, had only recently been cast in an important supporting role in a ballet, but her thoughts were already fixed upon the lead. When that day came, she decided, she would have a portrait of her own added to the wall. As though she had overheard the thought, little Odette suddenly began to wail from within her swaddling clothes, voicing her protest at the top of her tiny lungs.\n\"Oh, forgive me, Odette.\" Violetta smiled and gently tapped the bridge of her daughter's nose. \"Of course you'll be in the picture too... Better yet, we'll have a family portrait made, with all of us together.\"\nThump, thump, thump... The heavy, even tread of military boots sounded beyond the door. It was a signal meant for this household alone, and Violetta knew at once whom it announced. Her husband was still at the threshold, stamping the snow from his boots, when she went to meet him with a smile.\nThe old house was too large to keep properly warm. The fire in the hearth burned low, and the heating never quite kept pace with the cold. Yet in one another's arms, the family found all the warmth they needed.\nAs Odette grew, that rhythm became as familiar to her as her father's face. Thump, thump, thump... It meant supper, stories, and the quiet certainty that the night ahead would pass in peace.\nOdette's father was a soldier, and he understood little of art. The scents of leather and gunpowder clung to him year-round, often mingled with a trace of the icy air outside. Even so, no one in the family made a more enthusiastic audience. Whenever Violetta practiced, he would pull a chair into the corner and settle down to watch. From time to time, he tried to follow the music with his foot, though his tapping rarely came anywhere near the beat. Violetta would laugh and call him \"the man with the worst sense of rhythm in all of Snezhnaya.\" He never argued. He would only grin and chuckle, \"But I'm the best at applauding in all of Snezhnaya.\"\nThat, at least, was true. Whether Violetta danced a formal piece or merely hummed a tune and improvised as she went, he always greeted the end with thunderous applause. Bright and wholehearted, it would startle the birds from the windowsill and send little Odette into peals of laughter.\nShe was still too young to dance. Instead, she slid across the floor in her socks, or stood atop her father's military boots with both hands wrapped around his fingers. He would take a step, and she would follow, tottering along like a fledgling still uncertain of its feet.\n\"See?\" her father would say to Violetta. \"We have a little snow swan of our own.\"\n\"At best, we have a little duckling,\" Violetta would reply with a laugh. \"Snow swans keep their backs straight.\"\nAt once, her father would crouch beside Odette and touch two fingers lightly to her back, \"There we are. Back straight, little snow swan.\"\nBefore long, play gave way to proper lessons. Violetta began teaching Odette the fundamentals in earnest: stretches, tendus, petits battements. They were tedious beginner exercises, repeated over and over, a hundred times and then a hundred times more. As a teacher, Violetta allowed no compromise. One misplaced foot meant beginning again. There was no room for bargaining. At times, the strain left Odette's eyes red, but she would only press her lips into a stubborn line and continue.\nYet at the end of every practice, her father would be waiting in the doorway.\n\"Well? What did my little dancer learn today?\"\nOdette would repeat the new movement for him as best she could, still crooked and unsteady from having only just learned it. Whether she performed it well or poorly made no difference. His response was always the same: first came the applause, loud and solemn. Then he would crouch until they were eye to eye.\n\"Wonderful,\" he would declare with complete seriousness. \"One day, my daughter will be a prima ballerina.\"\nVioletta would rest her head lightly against her husband's shoulder, and the tension in her expression would at last soften into a smile. Odette was still too young to understand what it meant to become a prima ballerina. But she understood the pride in her father's face as he said it, and the quiet hope in her mother's smile as she looked at her. Without Odette even knowing it, the first small seed of a dream had been planted in her heart."
       },
       {
-        "Title": "",
+        "Title": "Character Story 4",
         "Context": "Odette had once believed their warm, peaceful life would continue as it always had.\nThen, one day, her father's footsteps failed to return. She waited through the first day, then the second, then the third... But when the sound of military boots finally reached the house, the tread was not his.\nTwo Fatui soldiers stood solemnly on the threshold and placed a letter in Violetta's hands. The dancer, who could command every part of her body with flawless precision, could not keep her fingers from trembling as she unfolded it. Beside her, Odette rose anxiously onto the tips of her toes, straining to glimpse the words. All she managed to read was a single, plainly written line — one she would spend years wishing she had never seen.\nThe house was utterly still that night, as though every sound had been taken from it. The next morning, Violetta went back to the theater's rehearsal room and resumed her routine. Then came the third day, and after it, the fourth...\nIt was during the performance that Odette, watching from below the stage, saw her mother collapse. For one desperate instant, she told herself it was part of the choreography. Violetta never lost control. Perhaps the fall had been rehearsed. Perhaps Odette was still dreaming. Perhaps she had never truly awakened from the nightmare at all. Then the curtains descended in haste. Amid the confusion backstage, Odette caught a glimpse of her mother's face. All the radiance it had once held was gone, leaving behind only a deathly pallor.\nWhen the treatment was over, the doctor spoke with quiet regret. Violetta's injuries would heal in time, but even then, she would likely never again perform the most demanding steps.\n...\nIn the days that followed, the house began to change. The chair Odette's father had always occupied was pushed into a corner, where it gradually disappeared beneath a clutter of forgotten things. The newspaper he had once unfolded each morning curled at the edges and yellowed, left unread now that no one reached for it. Sometimes the fire burned low without either of them noticing, until the rooms grew no warmer than the frozen world beyond the windows. Odette and her mother would sit wrapped in blankets at opposite ends of the sofa. Between them, they left untouched the place where he had once sat. Neither ever moved to fill it.\nThough she could no longer demonstrate the movements properly, Violetta continued Odette's lessons from her wheelchair. She marked the rhythm by striking her cane against the floor: \"Thud. Thud. Thud.\"\nOdette never cried out. Ballet had always drawn its beauty from pain, and so she endured hers in silence. She bound her blistered toes beneath layer after layer of bandages until, past a certain point, the pain dissolved into numbness. Whenever she paused to brush the sweat from her brow, she found her mother watching her. The same wound passed silently between them. Then both would look away. Violetta resumed the count, and Odette resumed the steps. Teaching and learning, they filled every hour that could not be allowed to remain empty. Because emptiness made room for memory.\nThen, one day, another rhythm entered the house. The unfamiliar click of heels brought the lesson to a halt.\nLa Signora had come, at The Captain's behest, to offer condolences to Violetta. She was the Eighth of the Fatui Harbingers and had once served as Odette's father's commanding officer.\nAs the visit went on, Signora's attention settled on Odette and the effortless agility with which she danced.\n\"Mrs. Spessiva,\" she then spoke, \"I have no wish to speak lightly of your grief. But you are now without an income, and a pension alone will scarcely be enough to raise a child. The Fatui could take her into our care. We are always willing to cultivate young talent with promise. In return, you would receive an allowance.\"\nVioletta refused at once. She needed no reminder of the dangers that accompanied the Fatui. They had already taken the husband she loved. The thought that they might one day take her daughter as well was more than she could bear.\nBut Odette had overheard everything. She ran to her mother's side before the conversation could end. Though her voice was still unmistakably that of a child, there was nothing childish in her resolve. She promised she could do all that was required of her. She would be careful. She would remain safe. She would find some way to continue ballet alongside her training with the Fatui.\nSignora took the measure of Odette's clear blue-violet eyes, bright with a fire that seemed to cleave through the ice.\n\"I can do it,\" Odette repeated into the silence. Her lips were pressed into a stubborn line, her expression fierce with determination, utterly heedless of the cost... Signora knew that look. The girl was already burning herself away, yet trying to disguise the ruin as strength...\nSignora regarded her with a cold scoff. Be that as it may, her pride would not permit her to withdraw the offer.\n\"Then come along,\" she said. \"Let us see how long that resolve of yours lasts.\""
       },
       {
-        "Title": "",
+        "Title": "Character Story 5",
         "Context": "By the time the mission was over, the sky was still shrouded in the same cold, lightless dark.\nOdette slid her dagger back into its sheath and gave herself a brief, impassive inspection. Her clothes bore no visible stains, and though her boots were damp, the moisture would not hinder her steps. Everything had gone as intended. The target had been frightened badly enough to remember the lesson. He would not dare cause trouble again.\nSnow hushed Snezhnaya at night, swallowing the sounds of the city and softening Odette's footsteps until even she could scarcely hear them. With nothing to break the silence, her thoughts were free to wander. They always found their way back to things she would rather have forgotten.\nThis time, her mind caught on the final movement of the mission. To anyone watching, it would have seemed flawless. The blade had vanished with a swift inward turn of her wrist, every motion precise and controlled. Yet Odette knew the movement had not been entirely clean. As she drew the dagger back, there had been the slightest catch, and when her right arm returned to her side, her fingertips had traced a faint outward line.\nShe knew what her hand had remembered — the final gesture of a ballet.\nThe resemblance had not gone unnoticed. In the Fatui's evaluation report, her fighting style had been likened to ballet. Her mother, however, had seen the opposite flaw. Whenever Odette danced, she said, there was too little feeling in it.\nA dancer's grace slipped into her movements in battle, while the strength forged through combat shaped every step she took onstage. Neither had to be summoned. Both surfaced without thought, as naturally as breath and heartbeat, buried somewhere beyond conscious memory in bone and muscle.\nBlade and pointe had become two expressions of the same instinct.\nPerhaps Odette had never truly been divided among all those different identities. From beginning to end, she had always been the same person beneath them all, someone winter had frozen through to the bone, holding fast to whatever remained within reach.\n...\nOdette slipped into the Korolevskiy Theater through the back door, as quietly as snow settling outside.\nShe made her way to the rehearsal room, changed into her ballet shoes, and left the lamps untouched. Cold moonlight streamed through the high windows, cleaving the floor into two worlds, one pale and luminous, the other drowned in shadow.\nShe danced between them, passing in and out of the shifting pools of light. Solitude like this was rare. Rarer still was time that belonged to no one but herself.\nThe room offered no music, only silence. There was no measured tap of her mother's cane, no sound of her father drawing near. The only rhythm came from her breathing and the faint brush of her pointe shoes against the floor. With no choreography to obey and no audience to please, she allowed each movement to take shape on its own.\nHer turns grew faster until sweat and tears were indistinguishable upon her face. The dance became her resistance, her longing, and the only language in which she could give them form.\nAnd perhaps, had a snowflake drifted through the window and lingered there to watch, it would have found the rumors difficult to believe.\nIn that moment, the prima ballerina of the Korolevskiy Troupe did not seem cold at all."
       },
       {

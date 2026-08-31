@@ -37,7 +37,7 @@
     </Page.Resources>
 
     <Grid>
-        <Border Background="#40000000"/>
+        <Border Background="{ThemeResource PageOverlayMaskColorBrush}"/>
         <shuxc:StandardView ShowCondition="{Binding EmotionIcons, Converter={StaticResource EmptyObjectToBoolConverter}}">
             <shuxc:StandardView.EmptyContent>
                 <shuxc:Loading

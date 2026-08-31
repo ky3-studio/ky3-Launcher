@@ -129,7 +129,7 @@
     </Page.Resources>
 
     <Grid>
-        <Border Background="#40000000"/>
+        <Border Background="{ThemeResource PageOverlayMaskColorBrush}"/>
         <shuxc:StandardView ShowCondition="{Binding Foods, Converter={StaticResource EmptyObjectToBoolConverter}}">
             <shuxc:StandardView.EmptyContent>
                 <shuxc:Loading IsLoading="{Binding Foods, Converter={StaticResource EmptyObjectToBoolRevertConverter}}" Style="{ThemeResource DefaultLoadingViewStyle}"/>

@@ -494,7 +494,7 @@
     </Page.Resources>
 
     <Grid>
-        <Border Background="#40000000"/>
+        <Border Background="{ThemeResource PageOverlayMaskColorBrush}"/>
         <!--  未登录状态  -->
         <Border
             x:Name="NotLoggedInPanel"

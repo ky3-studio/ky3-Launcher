@@ -221,7 +221,7 @@
     </mxi:Interaction.Behaviors>
 
     <Grid>
-        <Border Background="#40000000"/>
+        <Border Background="{ThemeResource PageOverlayMaskColorBrush}"/>
     <shuxc:StandardView HideCondition="{Binding IsInitialized, Converter={StaticResource BoolNegationConverter}, Mode=OneWay}" ShowCondition="{Binding Archives.CurrentItem, Converter={StaticResource EmptyObjectToBoolConverter}, Mode=OneWay}">
         <shuxc:StandardView.EmptyContent>
             <Border

@@ -31,14 +31,6 @@
         <SolidColorBrush x:Key="NavigationViewTopPaneBackground" Color="Transparent"/>
         <SolidColorBrush x:Key="NavigationViewContentBackground" Color="Transparent"/>
         <SolidColorBrush x:Key="NavigationViewContentGridBorderBrush" Color="Transparent"/>
-        <SolidColorBrush x:Key="NavigationViewItemForeground" Color="White"/>
-        <SolidColorBrush x:Key="NavigationViewItemForegroundPointerOver" Color="White"/>
-        <SolidColorBrush x:Key="NavigationViewItemForegroundPressed" Color="#CCFFFFFF"/>
-        <SolidColorBrush x:Key="NavigationViewItemForegroundSelected" Color="White"/>
-        <SolidColorBrush x:Key="NavigationViewItemForegroundSelectedPointerOver" Color="White"/>
-        <SolidColorBrush x:Key="NavigationViewItemForegroundSelectedPressed" Color="#CCFFFFFF"/>
-        <SolidColorBrush x:Key="NavigationViewItemForegroundDisabled" Color="#80FFFFFF"/>
-        <SolidColorBrush x:Key="NavigationViewItemHeaderForeground" Color="#99FFFFFF"/>
         <!--  ReSharper restore Xaml.RedundantResource  -->
         <shuxdcs:BackdropTypeToOpacityConverter x:Key="BackdropTypeToOpacityConverter"/>
     </UserControl.Resources>
@@ -96,7 +88,6 @@
                 Title="{Binding Title}"
                 Grid.Row="0"
                 x:FieldModifier="Public"
-                RequestedTheme="Dark"
                 IsBackButtonVisible="{x:Bind ContentFrame.CanGoBack, Mode=OneWay}"
                 IsPaneToggleButtonVisible="True">
                 <TitleBar.Resources>
@@ -372,7 +363,7 @@
                         shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:LauncherHomePage"
                         Content="{shuxm:ResourceString Name=ViewHomeHeader}"
                         Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/Home.png}"/>
-                    
+
                     <NavigationViewItem
                         shuxc:NavigationViewItemHelper.NavigateTo="shuxvp:AnnouncementPage"
                         Content="{shuxm:ResourceString Name=ViewAnnouncementNavHeader}"

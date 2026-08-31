@@ -206,7 +206,7 @@
     </Page.Resources>
 
     <Grid>
-        <Border Background="#40000000"/>
+        <Border Background="{ThemeResource PageOverlayMaskColorBrush}"/>
         <shuxc:StandardView ShowCondition="{Binding Avatars, Converter={StaticResource EmptyObjectToBoolConverter}}">
         <shuxc:StandardView.EmptyContent>
             <shuxc:Loading IsLoading="{Binding Avatars, Converter={StaticResource EmptyObjectToBoolRevertConverter}}" Style="{ThemeResource DefaultLoadingViewStyle}"/>

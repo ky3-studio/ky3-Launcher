@@ -488,7 +488,7 @@
     </Page.Resources>
 
     <Grid>
-        <Border Background="#40000000"/>
+        <Border Background="{ThemeResource PageOverlayMaskColorBrush}"/>
         <Border
             x:Name="NotLoggedInPanel"
             HorizontalAlignment="Center"

@@ -22,7 +22,7 @@
 
     <!--  Need to refator someday  -->
     <Grid x:Name="SettingPageGrid">
-        <Border Background="#40000000"/>
+        <Border Background="{ThemeResource PageOverlayMaskColorBrush}"/>
         <ScrollViewer x:Name="RootScrollViewer" Style="{StaticResource TwoPanelScrollViewerStyle}">
             <shuxc:ScrollViewerHelper.RightPanel>
                 <Border

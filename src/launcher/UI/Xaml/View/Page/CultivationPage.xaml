@@ -308,7 +308,7 @@
     </mxi:Interaction.Behaviors>
 
     <Grid x:Name="RootGrid" PointerPressed="OnRootGridPointerPressed">
-        <Border Background="#40000000"/>
+        <Border Background="{ThemeResource PageOverlayMaskColorBrush}"/>
         <shuxc:StandardView HideCondition="{Binding IsInitialized, Converter={StaticResource BoolNegationConverter}}" ShowCondition="{Binding Projects.Count, Converter={StaticResource Int32ToBoolConverter}}">
         <shuxc:StandardView.EmptyContent>
             <Border

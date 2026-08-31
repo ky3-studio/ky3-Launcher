@@ -110,7 +110,7 @@
             CornerRadius="{ThemeResource ControlCornerRadius}"
             IsLoading="{Binding IsInitialized, Converter={StaticResource BoolNegationConverter}}"
             Style="{ThemeResource DefaultLoadingViewStyle}"/>
-        <Border Background="#40000000"/>
+        <Border Background="{ThemeResource PageOverlayMaskColorBrush}"/>
         <Grid Padding="16" RowSpacing="12">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>

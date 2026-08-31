@@ -81,7 +81,7 @@ internal sealed partial class AppOptions : DbStoreOptions
     public ImmutableArray<NameValue<LastWindowCloseBehavior>> LastWindowCloseBehaviors { get; } = ImmutableCollectionsNameValue.FromEnum<LastWindowCloseBehavior>(static @enum => @enum.GetLocalizedDescription(SH.ResourceManager, CultureInfo.CurrentCulture) ?? string.Empty);
 
     [field: MaybeNull]
-    public IObservableProperty<BackdropType> BackdropType { get => field ??= CreateProperty(SettingKeys.SystemBackdropType, UI.Xaml.Media.Backdrop.BackdropType.AcrylicThin); }
+    public IObservableProperty<BackdropType> BackdropType { get => field ??= CreateProperty(SettingKeys.SystemBackdropType, UI.Xaml.Media.Backdrop.BackdropType.Mica); }
 
     [field: MaybeNull]
     public IObservableProperty<ElementTheme> ElementTheme { get => field ??= CreateProperty(SettingKeys.ElementTheme, Microsoft.UI.Xaml.ElementTheme.Default); }

@@ -1016,16 +1016,16 @@
                                     </Grid>
 
                                     <ToggleSwitch
-                                        x:Name="Opt_enable_gui"
+                                        x:Name="Opt_enable_daily_claim"
                                         Grid.Row="6"
                                         Grid.Column="0"
-                                        Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandGuiHotkeyHeader}"
-                                        IsOn="{Binding LaunchOptions.EnableGui.Value, Mode=TwoWay}"
+                                        Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandDailyClaimHotkeyHeader}"
+                                        IsOn="{Binding LaunchOptions.EnableDailyClaim.Value, Mode=TwoWay}"
                                         OffContent="{shuxm:ResourceString Name=ViewPageLaunchGameIslandToggleOff}"
                                         OnContent="{shuxm:ResourceString Name=ViewPageLaunchGameIslandToggleOn}"
                                         Toggled="OnIslandOptionChanged"/>
                                     <Grid
-                                        x:Name="Opt_enable_gui_val"
+                                        x:Name="Opt_enable_daily_claim_val"
                                         Grid.Row="6"
                                         Grid.Column="1"
                                         VerticalAlignment="Bottom">
@@ -1038,8 +1038,8 @@
                                             Grid.Column="0"
                                             Width="80"
                                             Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandModifierKeyHeader}"
-                                            IsEnabled="{Binding LaunchOptions.EnableGui.Value}"
-                                            SelectedIndex="{Binding LaunchOptions.GuiModifier.Value, Mode=TwoWay}"
+                                            IsEnabled="{Binding LaunchOptions.EnableDailyClaim.Value}"
+                                            SelectedIndex="{Binding LaunchOptions.DailyClaimModifier.Value, Mode=TwoWay}"
                                             SelectionChanged="OnIslandOptionChanged">
                                             <ComboBoxItem Content="{shuxm:ResourceString Name=ViewPageLaunchGameIslandModifierNone}"/>
                                             <ComboBoxItem Content="Ctrl"/>
@@ -1050,11 +1050,11 @@
                                         <NumberBox
                                             Grid.Column="2"
                                             Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandVkCodeHeader}"
-                                            IsEnabled="{Binding LaunchOptions.EnableGui.Value}"
+                                            IsEnabled="{Binding LaunchOptions.EnableDailyClaim.Value}"
                                             Maximum="255"
                                             Minimum="1"
                                             SpinButtonPlacementMode="Inline"
-                                            Value="{Binding LaunchOptions.GuiKey.Value, Mode=TwoWay}"
+                                            Value="{Binding LaunchOptions.DailyClaimKey.Value, Mode=TwoWay}"
                                             ValueChanged="OnIslandValueChanged"/>
                                     </Grid>
 

@@ -94,13 +94,13 @@ internal sealed partial class LaunchOptions
     public IObservableProperty<bool> EnableNoGrass { get => field ??= CreateProperty(SettingKeys.LaunchEnableNoGrass, false); }
 
     [field: MaybeNull]
-    public IObservableProperty<bool> EnableGui { get => field ??= CreateProperty(SettingKeys.LaunchEnableGui, true); }
+    public IObservableProperty<bool> EnableDailyClaim { get => field ??= CreateProperty(SettingKeys.LaunchEnableDailyClaim, true); }
 
     [field: MaybeNull]
-    public IObservableProperty<int> GuiKey { get => field ??= CreateProperty(SettingKeys.LaunchGuiKey, 0xA1); }
+    public IObservableProperty<int> DailyClaimKey { get => field ??= CreateProperty(SettingKeys.LaunchDailyClaimKey, 0x7A); }
 
     [field: MaybeNull]
-    public IObservableProperty<int> GuiModifier { get => field ??= CreateProperty(SettingKeys.LaunchGuiModifier, 0); }
+    public IObservableProperty<int> DailyClaimModifier { get => field ??= CreateProperty(SettingKeys.LaunchDailyClaimModifier, 0); }
 
     [field: MaybeNull]
     public IObservableProperty<bool> EnableFreeCam { get => field ??= CreateProperty(SettingKeys.LaunchEnableFreeCam, false); }

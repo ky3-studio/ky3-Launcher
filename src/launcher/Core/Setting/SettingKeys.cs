@@ -148,9 +148,9 @@ internal static class SettingKeys
     public const string LaunchForgeKey = "Launcher::Game::Island::Forge::Key";
     public const string LaunchForgeModifier = "Launcher::Game::Island::Forge::Modifier";
     public const string LaunchEnableNoGrass = "Launcher::Game::Island::NoGrass::Enable";
-    public const string LaunchEnableGui = "Launcher::Game::Island::Gui::Enable";
-    public const string LaunchGuiKey = "Launcher::Game::Island::Gui::Key";
-    public const string LaunchGuiModifier = "Launcher::Game::Island::Gui::Modifier";
+    public const string LaunchEnableDailyClaim = "Launcher::Game::Island::DailyClaim::Enable";
+    public const string LaunchDailyClaimKey = "Launcher::Game::Island::DailyClaim::Key";
+    public const string LaunchDailyClaimModifier = "Launcher::Game::Island::DailyClaim::Modifier";
     public const string LaunchEnableFreeCam = "Launcher::Game::Island::FreeCam::Enable";
     public const string LaunchFreeCamKey = "Launcher::Game::Island::FreeCam::Key";
     public const string LaunchFreeCamModifier = "Launcher::Game::Island::FreeCam::Modifier";

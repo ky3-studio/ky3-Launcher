@@ -33,19 +33,6 @@
     "Arkhe": 0,
     "Skills": [
       {
-        "GroupId": 0,
-        "Proud": {
-          "Descriptions": [],
-          "Parameters": [],
-          "Display": 0
-        },
-        "Id": 11076,
-        "Name": "茜特菈莉特殊跳跃",
-        "Description": "长按后可以消耗燃素进行更高的二段跳跃，当燃素耗尽时将转为消耗体力进行二段跳跃。",
-        "SpecialEnergyType": 0,
-        "Icon": "Skill_S_Citlali_03"
-      },
-      {
         "GroupId": 10731,
         "Proud": {
           "Descriptions": [
@@ -523,7 +510,8 @@
         "Name": "霜昼黑星",
         "Description": "依凭烟谜主千年传承的密契，展开白曜护盾，并召唤（传闻中）无比可怖的「黑曜星魔」伊兹帕帕，造成具有夜魂性质的<color=#99FFFFFF>冰元素范围伤害</color>。\n白曜护盾的伤害吸收量受益于茜特菈莉的元素精通，对<color=#99FFFFFF>冰元素伤害</color>有250%的吸收效果，并在展开护盾时，为茜特菈莉施加短暂的<color=#99FFFFFF>冰元素附着</color>。\n施放后，茜特菈莉将获得24点夜魂值，并进入夜魂加持状态。\n\n<color=#FFD780FF>夜魂加持·茜特菈莉</color>\n伊兹帕帕退场时，茜特菈莉的夜魂加持将会结束。\n\n<color=#FFD780FF>伊兹帕帕</color>\n·伊兹帕帕将跟随角色行动；\n·若茜特菈莉拥有至少50点夜魂值，伊兹帕帕将进入白燧状态，持续消耗夜魂值，并卷起跟随角色的霜陨风暴，攻击范围内的敌人，造成具有夜魂性质的<color=#99FFFFFF>冰元素伤害</color>；\n·夜魂值耗尽时，伊兹帕帕的白燧状态也会结束。\n\n<i>一般来说，象征不同星曜的意志是无法共存的：纯粹的黑如何能映入绝对的白呢？\n不过，茜特菈莉对于颜色本身没有什么特殊的偏好，事情便也就这样成了。</i>",
         "SpecialEnergyType": 0,
-        "Icon": "Skill_S_Citlali_01"
+        "Icon": "Skill_S_Citlali_01",
+        "CdTime": 16
       }
     ],
     "EnergySkill": {
@@ -725,7 +713,8 @@
       "Name": "诸曜饬令",
       "Description": "驱使来自星天与大地的「盟友」，唤起冰风暴轰击前方区域，造成具有夜魂性质的<color=#99FFFFFF>冰元素范围伤害</color>，为茜特菈莉恢复一定夜魂值，并在范围内至多3名敌人附近各自召唤一个<color=#FFD780FF>宿灵之髑</color>。宿灵之髑会在一段时间后爆炸，造成具有夜魂性质的<color=#99FFFFFF>冰元素范围伤害</color>，并为茜特菈莉恢复一定夜魂值。\n\n<i>「呜啊，好了！别管什么黑曜白曜了！茜特菈琳、伊兹帕帕，给我一起上！」</i>",
       "SpecialEnergyType": 0,
-      "Icon": "Skill_E_Citlali_01"
+      "Icon": "Skill_E_Citlali_01",
+      "CdTime": 15
     },
     "Inherents": [
       {

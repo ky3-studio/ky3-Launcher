@@ -586,7 +586,8 @@
         "Name": "All Is Ash",
         "Description": "Summons forth Balemoon Bloodfire, dealing <color=#FF9999FF>Pyro DMG</color> to multiple nearby opponents and performing a dash-cleave against one of them, dealing <color=#FF9999FF>AoE Pyro DMG</color>.\nOpponents hit by the aforementioned attack will have a Blood-Debt Directive applied to them.\n\n<color=#FFD780FF>Blood-Debt Directive</color>\n·Lasts 30s. Every 5s, it will deal 1 instance of <color=#FF9999FF>Pyro DMG</color> to the opponent. Max 2 instances. This DMG will be considered Elemental Skill DMG.\n·When Arlecchino uses a Charged Attack or her Elemental Burst, Balemoon Rising, she will absorb and clear nearby Blood-Debt Directives. Each Directive absorbed grants her a Bond of Life worth 65% of her Max HP.\n·The maximum value of the Bond of Life she can be granted through Blood-Debt Directives within 35s after using her Elemental Skill is 145% of her Max HP. Using the Elemental Skill again during this duration will restart the count on duration and the limit on the value of Bond of Life she may gain from Blood-Debt Directives.\n\n<i>As she sees it, not every grain of wheat that falls upon the earth will grow into an ear, while those who obstruct her, once burned to ashes, can certainly be used to nourish flowers.</i>",
         "SpecialEnergyType": 0,
-        "Icon": "Skill_S_Arlecchino_01"
+        "Icon": "Skill_S_Arlecchino_01",
+        "CdTime": 30
       }
     ],
     "EnergySkill": {
@@ -786,7 +787,8 @@
       "Name": "Balemoon Rising",
       "Description": "Arlecchino's great wing of Balemoon Bloodfire beats as she absorbs and clears Blood-Debt Directives around her. She deals <color=#FF9999FF>AoE Pyro DMG</color> before clearing the CD of All Is Ash and healing herself. The healing is based on her Bond of Life value and ATK.\n\n<i>It is commonly believed throughout Teyvat that moon phases other than the full moon are mere metaphors of ill-omen, used only by those who practice alchemy and astrology.\nShe saw this crimson moon in her dreams many times. Were those portents of disaster? Indeed they were, but the destined catastrophes belonged to those who enraged her.</i>",
       "SpecialEnergyType": 0,
-      "Icon": "Skill_E_Arlecchino_01"
+      "Icon": "Skill_E_Arlecchino_01",
+      "CdTime": 15
     },
     "Inherents": [
       {

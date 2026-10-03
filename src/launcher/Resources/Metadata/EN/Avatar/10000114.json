@@ -651,7 +651,8 @@
         "Name": "Havoc: Warp",
         "Description": "Imitates the combat style of \"The Foul.\" Produces different effects depending on whether you Tap or Hold.\n\n<color=#FFD780FF>Tap</color>\nSkirk gains 45 {LINK#N11130005}<color=#FFD780FF>Serpent's Subtlety</color>{/LINK} and switches to {LINK#N11130006}<color=#FFD780FF>Seven-Phase Flash</color>{/LINK} mode.\n\n<color=#FFD780FF>Hold</color>\nSkirk gains 45 Serpent's Subtlety and will continuously move at high speed. Her interruption resistance is increased in this state.\nDuring this time, Skirk can control her movement direction and move atop water. She can also use this Skill again to end rapid movement prematurely.",
         "SpecialEnergyType": 0,
-        "Icon": "Skill_S_SkirkNew_01"
+        "Icon": "Skill_S_SkirkNew_01",
+        "CdTime": 8
       }
     ],
     "EnergySkill": {
@@ -882,7 +883,8 @@
       "Name": "Havoc: Ruin",
       "Description": "Skirk's Elemental Burst is not reliant on Elemental Energy but instead on {LINK#N11130005}<color=#FFD780FF>Serpent's Subtlety</color>{/LINK}.\nWhen Skirk has at least 50 Serpent's Subtlety, she can expend all her Serpent's Subtlety to unleash her Elemental Burst, ripping the space before her apart and using rapid consecutive slashes that deal <color=#99FFFFFF>AoE Cryo DMG</color>. At the same time, the DMG dealt by an instance of this Elemental Burst will be increased by every point of Serpent's Subtlety over 50 when it is unleashed. Up to 12 points can be counted for this purpose.\n\nWhen Skirk is in {LINK#N11130006}<color=#FFD780FF>Seven-Phase Flash</color>{/LINK} mode, Havoc: Ruin will be replaced by Havoc: Extinction.\n\n<color=#FFD780FF>Havoc: Extinction</color>\nA special Elemental Burst that can be used even without consuming Serpent's Subtlety.\nAfter using it, Skirk will gain the \"All Shall Wither\" effect, which will last until Seven-Phase Flash ends. After unlocking the Ascension Talent {LINK#N11130007}<color=#FFD780FF>Reason Beyond Reason</color>{/LINK}, she can also absorb nearby Void Rifts.\nWhile \"All Shall Wither\" is active, every 0.1s, after Skirk's Normal Attack hits an opponent, that Normal Attack will deal increased DMG. If she absorbed any Void Rifts while using <color=#FFD780FF>Havoc: Extinction</color>, this Normal Attack's DMG will be further increased based on the number of Rifts absorbed.\nThis effect will be canceled when it has triggered 10 times.",
       "SpecialEnergyType": 2,
-      "Icon": "Skill_E_SkirkNew_01"
+      "Icon": "Skill_E_SkirkNew_01",
+      "CdTime": 15
     },
     "Inherents": [
       {

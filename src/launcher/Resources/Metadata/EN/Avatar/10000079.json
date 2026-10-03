@@ -542,7 +542,8 @@
         "Name": "Molten Inferno",
         "Description": "This art of Dehya's own invention changes its method of use depending on the combat situation.\n\n<color=#FFD780FF>Indomitable Flame</color>\nThis skill will be unleashed should there be no Fiery Sanctum field created by Dehya herself present at the time.\nDeals <color=#FF9999FF>AoE Pyro DMG</color>, and creates a field known as Fiery Sanctum.\n\n<color=#FFD780FF>Ranging Flame</color>\nThis skill will be unleashed should a Fiery Sanctum field created by Dehya herself already exist.\nDehya will perform a leaping attack, dealing <color=#FF9999FF>AoE Pyro DMG</color> before recreating a Fiery Sanctum field at her new position.\nA Fiery Sanctum field created this way will inherit the remaining duration of the previous field.\n\nRanging Flame can be used only once throughout a single Fiery Sanctum field's duration.\n\n<color=#FFD780FF>Fiery Sanctum</color>\nWhen an opponent within a Fiery Sanctum field takes DMG, the field will unleash a coordinated attack, dealing <color=#FF9999FF>AoE Pyro DMG</color> to them based on Dehya's ATK and Max HP. This effect can be triggered once every 2.5s.\nActive characters within this field have their resistance to interruption increased, and when such characters take DMG, a portion of that damage will be mitigated and flow into Redmane's Blood. Dehya will then take this DMG over 10s. When the mitigated DMG stored by Redmane's Blood reaches or goes over a certain percentage of Dehya's Max HP, she will stop mitigating DMG in this way.\n\nOnly 1 Fiery Sanctum created by Dehya herself can exist at the same time.\n\n<i>Walk this fiery ordeal with me and purge all impurity, just as a beast of flames that must descend from the blaze.</i>",
         "SpecialEnergyType": 0,
-        "Icon": "Skill_S_Dehya_01"
+        "Icon": "Skill_S_Dehya_01",
+        "CdTime": 20
       }
     ],
     "EnergySkill": {
@@ -758,7 +759,8 @@
       "Name": "Leonine Bite",
       "Description": "Unleashing her burning anger and casting her inconvenient blade aside, Dehya enters the Blazing Lioness state and increases her resistance to interruption.\nIn this state, Dehya will automatically and continuously unleash the Flame-Mane's Fists, dealing <color=#FF9999FF>Pyro DMG</color> based on her ATK and Max HP, and when its duration ends, she will unleash an Incineration Drive, dealing <color=#FF9999FF>AoE Pyro DMG</color> based on her ATK and Max HP.\nIf a Fiery Sanctum field created by Dehya's own Elemental Skill \"Molten Inferno\" exists when this ability is unleashed, Dehya will retrieve it, and then create another field once Blazing Lioness's duration expires. This field will take on the retrieved field's duration at the moment of its retrieval.\nIn this state, Dehya will be unable to cast her Elemental Skill, or perform Normal, Charged, and Plunging Attacks. \"Normal Attack: Sandstorm Assault\" and Elemental Skill \"Molten Inferno\" will be replaced by \"Roaring Barrage.\"\n\n<color=#FFD780FF>Roaring Barrage</color>\nUnleashing Roaring Barrage within 0.4s after each Flame-Mane's Fist strike will increase the speed at which the next Flame-Mane's Fist strike will be triggered.\n\n<i>Even the flowing flames must obey her rage and at her command become her fangs and claws.</i>",
       "SpecialEnergyType": 0,
-      "Icon": "Skill_E_Dehya_01"
+      "Icon": "Skill_E_Dehya_01",
+      "CdTime": 18
     },
     "Inherents": [
       {

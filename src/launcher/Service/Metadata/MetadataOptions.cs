@@ -23,7 +23,6 @@ internal sealed partial class MetadataOptions
     [GeneratedConstructor]
     public partial MetadataOptions(IServiceProvider serviceProvider);
 
-    // 元数据完全本地自包含：仅通过随程序发布的 Resources\Metadata\{locale}\ 读取，不访问网络、不写入用户目录。
     private string BundledResourceDirectory
     {
         get => Path.Combine(BundledResourceRoot, cultureOptions.LocaleName);

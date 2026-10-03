@@ -651,7 +651,8 @@
         "Name": "Cực Ác Kỹ - Tránh",
         "Description": "Mô phỏng phong cách chiến đấu của Kỵ Sĩ Cực Ác, sản sinh hiệu quả khác nhau bằng cách Nhấn và Nhấn Giữ.\n\n<color=#FFD780FF>Nhấn</color>\nSkirk nhận 45 điểm {LINK#N11130005}<color=#FFD780FF>Rắn Xảo Quyệt</color>{/LINK}, đồng thời đổi sang chế độ {LINK#N11130006}<color=#FFD780FF>Thất Tướng Nhất Thiểm</color>{/LINK}.\n\n<color=#FFD780FF>Nhấn Giữ</color>\nSkirk nhận 45 điểm Rắn Xảo Quyệt và di chuyển nhanh liên tục, trong trạng thái này sẽ tăng Kháng Gián Đoạn của Skirk.\nTrong thời gian này, Skirk có thể điều khiển hướng di chuyển nhanh, có thể di chuyển trên mặt nước, đồng thời thi triển lại kỹ năng sẽ kết thúc sớm trạng thái di chuyển nhanh.",
         "SpecialEnergyType": 0,
-        "Icon": "Skill_S_SkirkNew_01"
+        "Icon": "Skill_S_SkirkNew_01",
+        "CdTime": 8
       }
     ],
     "EnergySkill": {
@@ -882,7 +883,8 @@
       "Name": "Cực Ác Kỹ - Diệt",
       "Description": "Kỹ Năng Nộ của Skirk không phụ thuộc vào Năng Lượng Nguyên Tố, mà sẽ phụ thuộc vào {LINK#N11130005}<color=#FFD780FF>Rắn Xảo Quyệt</color>{/LINK}.\nKhi Skirk có ít nhất 50 điểm Rắn Xảo Quyệt, sẽ có thể tiêu hao toàn bộ Rắn Xảo Quyệt để thi triển Kỹ Năng Nộ, xé tan không gian phía trước và thực hiện đòn chém liên tiếp với tốc độ cao, gây <color=#99FFFFFF>Sát Thương Phạm Vi Nguyên Tố Băng</color>. Đồng thời, dựa vào lượng điểm Rắn Xảo Quyệt mà Skirk sở hữu vượt mức 50 điểm khi thi triển, mỗi 1 điểm Rắn Xảo Quyệt đều sẽ tăng sát thương Kỹ Năng Nộ lần này, cách thức này tối đa ghi nhận 12 điểm Rắn Xảo Quyệt.\n\nKhi Skirk ở trong chế độ {LINK#N11130006}<color=#FFD780FF>Thất Tướng Nhất Thiểm</color>{/LINK}, Kỹ Năng Nộ \"Cực Ác Kỹ - Diệt\" sẽ được thay thế bằng \"Cực Ác Kỹ - Tận\".\n\n<color=#FFD780FF>Cực Ác Kỹ - Tận</color>\nKỹ Năng Nộ đặc biệt có thể thi triển mà không cần tiêu hao Rắn Xảo Quyệt.\nSau khi thi triển, Skirk sẽ nhận được hiệu quả Điêu Tàn, hiệu quả này duy trì cho đến khi kết thúc chế độ Thất Tướng Nhất Thiểm. Sau khi mở khóa Thiên Phú Đột Phá {LINK#N11130007}<color=#FFD780FF>Lý Luận Vượt Nguyên Lý</color>{/LINK}, Skirk sẽ còn hấp thụ Vết Nứt Hư Không trong một phạm vi nhất định gần đó.\nTrong thời gian duy trì hiệu quả Điêu Tàn, mỗi 0.1s, sau khi Skirk Tấn Công Thường trúng kẻ địch sẽ tăng sát thương của lần Tấn Công Thường này. Nếu khi thi triển <color=#FFD780FF>Cực Ác Kỹ - Tận</color> có hấp thụ Vết Nứt Hư Không, sẽ căn cứ vào số lượng Vết Nứt Hư Không đã hấp thụ để tăng mạnh hơn sát thương do lần Tấn Công Thường này gây ra.\nHiệu quả này sẽ xóa khi kích hoạt đủ 10 lần.",
       "SpecialEnergyType": 2,
-      "Icon": "Skill_E_SkirkNew_01"
+      "Icon": "Skill_E_SkirkNew_01",
+      "CdTime": 15
     },
     "Inherents": [
       {

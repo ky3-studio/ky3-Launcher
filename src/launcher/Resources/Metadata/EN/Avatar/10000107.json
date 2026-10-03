@@ -33,19 +33,6 @@
     "Arkhe": 0,
     "Skills": [
       {
-        "GroupId": 0,
-        "Proud": {
-          "Descriptions": [],
-          "Parameters": [],
-          "Display": 0
-        },
-        "Id": 11076,
-        "Name": "",
-        "Description": "",
-        "SpecialEnergyType": 0,
-        "Icon": "Skill_S_Citlali_03"
-      },
-      {
         "GroupId": 10731,
         "Proud": {
           "Descriptions": [
@@ -523,7 +510,8 @@
         "Name": "Dawnfrost Darkstar",
         "Description": "Invoking secret pacts passed down by her tribe over the millennia, Citlali deploys an Opal Shield and calls forth \"Obsidian Tzitzimitl: Itzpapa,\" a creature that is (reputedly) terrifying beyond compare, dealing Nightsoul-aligned <color=#99FFFFFF>AoE Cryo DMG</color>.\nThe Opal Shield's DMG absorption scales based on Citlali's Elemental Mastery, and absorbs <color=#99FFFFFF>Cryo DMG</color> with 250% efficiency. When it is deployed, it will cause Citlali to briefly be <color=#99FFFFFF>affected by Cryo</color>.\nAfter using this skill, Citlali gains 24 Nightsoul points and enters the Nightsoul's Blessing state.\n\n<color=#FFD780FF>Nightsoul's Blessing: Citlali</color>\nWhen Itzpapa leaves the field, Citlali exits the Nightsoul's Blessing state.\n\n<color=#FFD780FF>Itzpapa</color>\n·Itzpapa will follow the character.\n·If Citlali has at least 50 Nightsoul points, Itzpapa enters the Opal Fire state and continuously consumes Nightsoul points to whip up a Frostfall Storm that follows the character and attacks opponents within its AoE, dealing Nightsoul-aligned <color=#99FFFFFF>Cryo DMG</color>.\n·When Citlali's Nightsoul points are fully depleted, Itzpapa's Opal Fire state also ends.\n\n<i>Usually, the wills that symbolize different stars cannot coexist, for how can purest black be reflected in purest white?\nBe that as it may, Citlali has never harbored a particular preference for colors themselves, and that is just how things played out.</i>",
         "SpecialEnergyType": 0,
-        "Icon": "Skill_S_Citlali_01"
+        "Icon": "Skill_S_Citlali_01",
+        "CdTime": 16
       }
     ],
     "EnergySkill": {
@@ -725,7 +713,8 @@
       "Name": "Edict of Entwined Splendor",
       "Description": "Summons \"allies\" from the starry skies and the vast earth, hurling forth an ice storm to bombard the area in front and deal Nightsoul-aligned <color=#99FFFFFF>AoE Cryo DMG</color>. This restores a set amount of Nightsoul points for Citlali, and also summons a <color=#FFD780FF>Spiritvessel Skull</color> near a maximum of 3 opponents within the AoE, with 1 Skull for each opponent. Spiritvessel Skulls explode after some time, dealing Nightsoul-aligned <color=#99FFFFFF>AoE Cryo DMG</color> and restoring a set amount of Nightsoul points for Citlali.\n\n<i>\"Ugh, enough of this 'dark star, opal star' stuff! Citlalin, Itzpapa, get 'em!\"</i>",
       "SpecialEnergyType": 0,
-      "Icon": "Skill_E_Citlali_01"
+      "Icon": "Skill_E_Citlali_01",
+      "CdTime": 15
     },
     "Inherents": [
       {

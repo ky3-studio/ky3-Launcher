@@ -137,7 +137,6 @@ internal static class SettingKeys
     public const string LaunchEnableFps = "Launcher::Game::Island::Fps::Enable";
     public const string LaunchTargetFps = "Launcher::Game::Island::Fps::FrameRate";
     public const string LaunchEnableCraftRedirect = "Launcher::Game::Island::Synthesis::AutoRedirect";
-    public const string LaunchEnableDispatch = "Launcher::Game::Island::Dispatch::Enable";
     public const string LaunchRedirectDispatch = "Launcher::Game::Island::Dispatch::Redirect";
     public const string LaunchDispatchKey = "Launcher::Game::Island::Dispatch::Key";
     public const string LaunchDispatchModifier = "Launcher::Game::Island::Dispatch::Modifier";

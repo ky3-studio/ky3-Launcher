@@ -42,7 +42,7 @@
   {
     "Id": 210501,
     "Name": "<color=#f39001>Phù Hộ Lôi Tinh</color>",
-    "Description": "Khiến tất cả nhân vật trong đội nhận <color=#f39001>50%</color> buff Sát Thương Nguyên Tố Lôi và Nham. Ngoài ra, mỗi <color=#f39001>4</color>s sẽ nhận mảnh tinh thể sinh ra từ phản ứng Kết Tinh ở gần"
+    "Description": "Khiến tất cả nhân vật trong đội nhận <color=#f39001>70%</color> buff Sát Thương Nguyên Tố Lôi và Nham. Ngoài ra, mỗi <color=#f39001>4</color>s sẽ nhận mảnh tinh thể sinh ra từ phản ứng Kết Tinh ở gần"
   },
   {
     "Id": 210502,
@@ -52,7 +52,7 @@
   {
     "Id": 210503,
     "Name": "<color=#e09800>Đá Tảng Gầm Thét</color>",
-    "Description": "Mỗi khi nhân vật nhận <color=#f39001>{0}</color> mảnh tinh thể sinh ra từ <color=#f39001>phản ứng Kết Tinh Nguyên Tố Lôi</color>, sẽ giáng xuống 1 kẻ địch ở gần, gây <color=#e09800>Sát Thương Nguyên Tố Nham</color>"
+    "Description": "Trong thời gian duy trì hiệu quả <color=#f39001>Phù Hộ Lôi Tinh</color>, sau khi Kỹ Năng Nộ của nhân vật đánh trúng kẻ địch, sẽ giáng xuống vị trí kẻ địch, gây <color=#e09800>Sát Thương Nguyên Tố Nham</color>"
   },
   {
     "Id": 210601,
@@ -82,7 +82,7 @@
   {
     "Id": 210901,
     "Name": "<color=#f39001>Lời Chúc Của Gió: Thủy</color>",
-    "Description": "Sát thương gây ra khi nhân vật kích hoạt phản ứng Khuếch Tán tăng <color=#f39001>80%</color>, Giới Hạn HP của nhân vật tăng <color=#f39001>8%</color>"
+    "Description": "Sát thương gây ra khi nhân vật kích hoạt phản ứng Khuếch Tán tăng <color=#f39001>80%</color>, sát thương gây ra bởi phản ứng Tinh-Khuếch Tán tăng <color=#f39001>8%</color>, Giới Hạn HP của nhân vật tăng <color=#f39001>8%</color>"
   },
   {
     "Id": 210902,
@@ -97,7 +97,7 @@
   {
     "Id": 211001,
     "Name": "<color=#f39001>Lời Chúc Của Gió: Lôi</color>",
-    "Description": "Sát thương gây ra khi nhân vật kích hoạt phản ứng Khuếch Tán tăng <color=#f39001>80%</color>, đồng thời mỗi lần nhận <color=#f39001>Lời Chúc Của Gió: Lôi</color> sẽ hồi phục <color=#f39001>2</color> điểm Năng Lượng Nguyên Tố cho tất cả nhân vật trong đội"
+    "Description": "Sát thương gây ra khi nhân vật kích hoạt phản ứng Khuếch Tán tăng <color=#f39001>80%</color>, sát thương gây ra bởi phản ứng Tinh-Khuếch Tán tăng <color=#f39001>8%</color>, đồng thời mỗi lần nhận <color=#f39001>Lời Chúc Của Gió: Lôi</color> sẽ hồi phục <color=#f39001>2</color> điểm Năng Lượng Nguyên Tố cho tất cả nhân vật trong đội"
   },
   {
     "Id": 211002,
@@ -172,7 +172,7 @@
   {
     "Id": 211501,
     "Name": "<color=#f39001>Lời Chúc Của Gió: Hỏa</color>",
-    "Description": "Sát thương gây ra khi nhân vật kích hoạt phản ứng Khuếch Tán tăng <color=#f39001>80%</color>, Tấn Công của nhân vật tăng <color=#f39001>9%</color>."
+    "Description": "Sát thương gây ra khi nhân vật kích hoạt phản ứng Khuếch Tán tăng <color=#f39001>80%</color>, sát thương gây ra bởi phản ứng Tinh-Khuếch Tán tăng <color=#f39001>8%</color>, Tấn Công của nhân vật tăng <color=#f39001>9%</color>."
   },
   {
     "Id": 211502,
@@ -247,7 +247,7 @@
   {
     "Id": 211901,
     "Name": "<color=#f39001>Lời Chúc Của Gió: Băng</color>",
-    "Description": "Sát thương gây ra khi nhân vật kích hoạt phản ứng Khuếch Tán tăng <color=#f39001>80%</color>, Sát Thương Bạo Kích của nhân vật tăng <color=#f39001>16%</color>"
+    "Description": "Sát thương gây ra khi nhân vật kích hoạt phản ứng Khuếch Tán tăng <color=#f39001>80%</color>, sát thương gây ra bởi phản ứng Tinh-Khuếch Tán tăng <color=#f39001>8%</color>, Sát Thương Bạo Kích của nhân vật tăng <color=#f39001>16%</color>"
   },
   {
     "Id": 211902,
@@ -506,8 +506,33 @@
   },
   {
     "Id": 11400001,
-    "Name": "Linh Kiếm Vũ Trang",
-    "Description": "Giới Thiệu Linh Kiếm Vũ Trang"
+    "Name": "Hát Dẫn",
+    "Description": "Khi Tấn Công Thường, Trọng Kích, Tấn Công Khi Đáp, Kỹ Năng Nguyên Tố hoặc Kỹ Năng Nộ của nhân vật ra trận hiện tại trong đội bản thân gây ra Sát Thương Nguyên Tố <color=#80C0FFFF>Thủy</color> hoặc <color=#99FFFFFF>Băng</color>, sẽ tiêu hao một tầng \"Hát Dẫn\" để tăng sát thương gây ra. Nếu trong trận có Cụm Gió Phiêu Du, hoặc trong vòng 5s sau khi Cụm Gió Phiêu Du phát nổ, thì sẽ đổi thành khi nhân vật gây sát thương phản ứng Tinh-Khuếch Tán mới có thể kích hoạt hiệu quả trên.\nDựa trên phần Giới Hạn HP vượt quá {PARAM#P1402201|3S1} của Vodyanitsa, mỗi 1000 điểm Giới Hạn HP đều sẽ khiến sát thương phản ứng Tinh-Khuếch Tán trong hiệu quả trên tăng {PARAM#P1402201|4S1} điểm, Sát Thương Nguyên Tố <color=#80C0FFFF>Thủy</color> và <color=#99FFFFFF>Băng</color> tăng {PARAM#P1402201|5S1} điểm. Thông qua cách này, tối đa khiến sát thương phản ứng Tinh-Khuếch Tán tăng {PARAM#P1402201|6S1} điểm, Sát Thương Nguyên Tố <color=#80C0FFFF>Thủy</color> và <color=#99FFFFFF>Băng</color> tăng {PARAM#P1402201|7S1} điểm."
+  },
+  {
+    "Id": 11400002,
+    "Name": "Hợp Xướng",
+    "Description": "Do nhân vật dự bị trong đội hoặc nhân vật khác trong đội ở gần kích hoạt (không phải nhân vật ra trận hiện tại trong đội bản thân), hiệu quả giống với \"Hát Dẫn\"."
+  },
+  {
+    "Id": 11430001,
+    "Name": "Vũ Trang Lướt Gió",
+    "Description": "Sau khi thi triển Kỹ Năng Nguyên Tố <color=#FFD780FF>Sách Lược - Nghệ Thuật Chiến Thắng</color>, Vesna sẽ chuyển sang chế độ này. Chế độ này tối đa duy trì 15s và mang đặc tính sau:\n·Tăng khả năng Kháng Gián Đoạn của Vesna.\n·Khi Vesna thực hiện Tấn Công Thường, Trọng Kích và Tấn Công Khi Đáp, sẽ chuyển sang gây <color=#80FFD7FF>Sát Thương Nguyên Tố Phong</color> không thể bị thay thế, đồng thời triệu hồi Phong Linh hỗ trợ tấn công kẻ địch, gây thêm <color=#80FFD7FF>Sát Thương Nguyên Tố Phong</color>. Mỗi lần triệu hồi Phong Linh, đều sẽ phục hồi một lượng <color=#FFD780FF>Kiếm Khí</color> nhất định cho Vesna.\n·Vesna có thể tiêu hao <color=#FFD780FF>Kiếm Khí</color> để thi triển Kỹ Năng Nguyên Tố đặc biệt <color=#FFD780FF>Tường Phong Kiếm</color>, gây <color=#80FFD7FF>Sát Thương Nguyên Tố Phong</color> cho kẻ địch.\n·Khi kết thúc thời gian duy trì, hoặc sau khi thi triển 3 lần <color=#FFD780FF>Tường Phong Kiếm</color> cảnh giới cao nhất, Vesna sẽ thoát chế độ này và xóa toàn bộ <color=#FFD780FF>Kiếm Khí</color>."
+  },
+  {
+    "Id": 11430002,
+    "Name": "Kiếm Khí",
+    "Description": "Năng lượng dùng để thi triển Kỹ Năng Nguyên Tố đặc biệt <color=#FFD780FF>Tường Phong Kiếm</color> trong chế độ <color=#FFD780FF>Vũ Trang Lướt Gió</color>.\nVesna có thể thông qua những cách sau để tích lũy Kiếm Khí:\n·Trong chế độ <color=#FFD780FF>Vũ Trang Lướt Gió</color>, thực hiện Tấn Công Thường, Trọng Kích, Tấn Công Khi Đáp, hoặc thi triển <color=#FFD780FF>Tường Phong Kiếm - Biến Đổi</color> trong Cung Mệnh <color=#FFD780FF>Tấm Lòng Sắt Son</color>.\n·Thi triển Kỹ Năng Nguyên Tố <color=#FFD780FF>Sách Lược - Nghệ Thuật Chiến Thắng</color>.\n·Thi triển Kỹ Năng Nộ <color=#FFD780FF>Kính Lễ - Vì Nữ Hoàng Bệ Hạ</color>."
+  },
+  {
+    "Id": 11430003,
+    "Name": "Tường Phong Kiếm",
+    "Description": "Trong chế độ <color=#FFD780FF>Vũ Trang Lướt Gió</color>, Vesna có thể tiêu hao <color=#FFD780FF>Kiếm Khí</color> để thi triển Kỹ Năng Nguyên Tố đặc biệt này, gây <color=#80FFD7FF>Sát Thương Nguyên Tố Phong</color>.\nSau mỗi lần thi triển Kỹ Năng Nguyên Tố đặc biệt <color=#FFD780FF>Tường Phong Kiếm</color>, trong thời gian duy trì chế độ <color=#FFD780FF>Vũ Trang Lướt Gió</color> lần này, cảnh giới của nó đều sẽ tăng lên. Cảnh giới ban đầu của <color=#FFD780FF>Tường Phong Kiếm</color> là Bậc 1, tối đa tăng đến Bậc 3.\nKhi thi triển <color=#FFD780FF>Tường Phong Kiếm</color> đã gia tăng cảnh giới, sẽ còn triệu hồi <color=#FFD780FF>Linh Kiếm</color> để gây <color=#80FFD7FF>Sát Thương Nguyên Tố Phong</color> cho kẻ địch."
+  },
+  {
+    "Id": 11430004,
+    "Name": "Linh Kiếm",
+    "Description": "Vũ khí linh thể do Vesna triệu hồi, sẽ hỗ trợ Vesna tấn công kẻ địch, gây <color=#80FFD7FF>Sát Thương Nguyên Tố Phong</color>.\nVesna có thể thông qua các cách sau để triệu hồi Linh Kiếm:\n·Thi triển Kỹ Năng Nguyên Tố đặc biệt <color=#FFD780FF>Tường Phong Kiếm</color> đã gia tăng cảnh giới.\n·Thi triển Kỹ Năng Nộ <color=#FFD780FF>Kính Lễ - Vì Nữ Hoàng Bệ Hạ</color>.\n·Thi triển <color=#FFD780FF>Tường Phong Kiếm - Biến Đổi</color> trong Cung Mệnh <color=#FFD780FF>Tấm Lòng Sắt Son</color>.\n\n<color=#FFD780FF>Tỏa Sáng: Tinh-Khuếch Tán</color>: <color=#FFD780FF>Linh Kiếm</color> chuyển sang gây <color=#80FFD7FF>Sát Thương Nguyên Tố Phong</color> được xem là sát thương phản ứng Tinh-Khuếch Tán."
   },
   {
     "Id": 10050002,

@@ -42,7 +42,7 @@
   {
     "Id": 210501,
     "Name": "<color=#f39001>雷晶庇佑</color>",
-    "Description": "使隊伍中所有角色獲得<color=#f39001>50%</color>雷元素與岩元素傷害加成。此外，每<color=#f39001>4</color>秒，將獲得附近的結晶反應產生的晶片"
+    "Description": "使隊伍中所有角色獲得<color=#f39001>70%</color>雷元素與岩元素傷害加成。此外，每<color=#f39001>4</color>秒，將獲得附近的結晶反應產生的晶片"
   },
   {
     "Id": 210502,
@@ -52,7 +52,7 @@
   {
     "Id": 210503,
     "Name": "<color=#e09800>轟轉磐岩</color>",
-    "Description": "角色每獲得<color=#f39001>{0}</color>枚<color=#f39001>雷元素結晶反應</color>產生的晶片，將對附近的一名敵人降下，造成<color=#e09800>岩元素傷害</color>"
+    "Description": "<color=#f39001>雷晶庇佑</color>效果持續期間，角色的元素爆發命中敵人後，將在敵人的位置降下，造成<color=#e09800>岩元素傷害</color>"
   },
   {
     "Id": 210601,
@@ -82,7 +82,7 @@
   {
     "Id": 210901,
     "Name": "<color=#f39001>風之祝禱·水</color>",
-    "Description": "角色觸發擴散反應造成的傷害提升<color=#f39001>80%</color>，角色的生命值上限提升<color=#f39001>8%</color>"
+    "Description": "角色觸發擴散反應造成的傷害提升<color=#f39001>80%</color>，星擴散反應造成的傷害提升<color=#f39001>8%</color>，角色的生命值上限提升<color=#f39001>8%</color>"
   },
   {
     "Id": 210902,
@@ -97,7 +97,7 @@
   {
     "Id": 211001,
     "Name": "<color=#f39001>風之祝禱·雷</color>",
-    "Description": "角色觸發擴散反應造成的傷害提升<color=#f39001>80%</color>，且每次獲得<color=#f39001>風之祝禱·雷</color>時為隊伍中所有角色恢復<color=#f39001>2</color>點元素能量"
+    "Description": "角色觸發擴散反應造成的傷害提升<color=#f39001>80%</color>，星擴散反應造成的傷害提升<color=#f39001>8%</color>，且每次獲得<color=#f39001>風之祝禱·雷</color>時為隊伍中所有角色恢復<color=#f39001>2</color>點元素能量"
   },
   {
     "Id": 211002,
@@ -172,7 +172,7 @@
   {
     "Id": 211501,
     "Name": "<color=#f39001>風之祝禱·火</color>",
-    "Description": "角色觸發擴散反應造成的傷害提升<color=#f39001>80%</color>，角色的攻擊力提升<color=#f39001>9%</color>。"
+    "Description": "角色觸發擴散反應造成的傷害提升<color=#f39001>80%</color>，星擴散反應造成的傷害提升<color=#f39001>8%</color>，角色的攻擊力提升<color=#f39001>9%</color>。"
   },
   {
     "Id": 211502,
@@ -247,7 +247,7 @@
   {
     "Id": 211901,
     "Name": "<color=#f39001>風之祝禱·冰</color>",
-    "Description": "角色觸發擴散反應造成的傷害提升<color=#f39001>80%</color>，角色的暴擊傷害提升<color=#f39001>16%</color>"
+    "Description": "角色觸發擴散反應造成的傷害提升<color=#f39001>80%</color>，星擴散反應造成的傷害提升<color=#f39001>8%</color>，角色的暴擊傷害提升<color=#f39001>16%</color>"
   },
   {
     "Id": 211902,
@@ -506,8 +506,33 @@
   },
   {
     "Id": 11400001,
-    "Name": "靈劍武裝",
-    "Description": "靈劍武裝介紹"
+    "Name": "領唱",
+    "Description": "隊伍中自己的目前場上角色的普通攻擊、重擊、下落攻擊、元素戰技或元素爆發造成<color=#80C0FFFF>水元素傷害</color>或<color=#99FFFFFF>冰元素傷害</color>時，將消耗一層「領唱」，提升造成的傷害。若目前場上存在流蕩風旋，或處於流蕩風旋引爆後的5秒內，則改為角色造成星擴散反應傷害時才會觸發上述效果。\n基於沃雅妮莎生命值上限超過{PARAM#P1402201|3S1}的部分，每1000點生命值上限都會使上述效果中的星擴散反應傷害提升{PARAM#P1402201|4S1}點，<color=#80C0FFFF>水元素傷害</color>與<color=#99FFFFFF>冰元素傷害</color>提升{PARAM#P1402201|5S1}點。依此方式，至多使星擴散反應傷害提升{PARAM#P1402201|6S1}點，<color=#80C0FFFF>水元素傷害</color>與<color=#99FFFFFF>冰元素傷害</color>提升{PARAM#P1402201|7S1}點。"
+  },
+  {
+    "Id": 11400002,
+    "Name": "重唱",
+    "Description": "由隊伍中後臺角色或隊伍中附近的其他角色（而非隊伍中自己的目前場上角色）觸發，效果與「領唱」一致。"
+  },
+  {
+    "Id": 11430001,
+    "Name": "巡風列裝",
+    "Description": "施放元素戰技<color=#FFD780FF>操典·制勝有道</color>後，薇斯納將切換至該模式。該模式至多持續15秒，並具有如下特性：\n·提升薇斯納的抗打斷能力。\n·薇斯納進行普通攻擊、重擊與下落攻擊時，將轉為造成無法被附魔覆蓋的<color=#80FFD7FF>風元素傷害</color>，並喚出風翎協同攻擊敵人，造成額外的<color=#80FFD7FF>風元素傷害</color>。每次喚出風翎時，都會為薇斯納恢復一定的<color=#FFD780FF>劍氣</color>。\n·薇斯納可以消耗<color=#FFD780FF>劍氣</color>，施放特殊的元素戰技<color=#FFD780FF>翔風劍</color>，對敵人造成<color=#80FFD7FF>風元素傷害</color>。\n·持續時間結束時，或施放三次最高境界的<color=#FFD780FF>翔風劍</color>後，薇斯納將退出該模式，並清除所有<color=#FFD780FF>劍氣</color>。"
+  },
+  {
+    "Id": 11430002,
+    "Name": "劍氣",
+    "Description": "用於在<color=#FFD780FF>巡風列裝</color>模式下施放特殊元素戰技<color=#FFD780FF>翔風劍</color>的能量。\n薇斯納可以透過以下方式累積劍氣：\n·在<color=#FFD780FF>巡風列裝</color>模式下，進行普通攻擊、重擊、下落攻擊，或施放命之座<color=#FFD780FF>「不移的赤忱」</color>中的<color=#FFD780FF>翔風劍·變移</color>。\n·施放元素戰技<color=#FFD780FF>操典·制勝有道</color>。\n·施放元素爆發<color=#FFD780FF>致禮·獻予女皇陛下</color>。"
+  },
+  {
+    "Id": 11430003,
+    "Name": "翔風劍",
+    "Description": "在<color=#FFD780FF>巡風列裝</color>模式下，薇斯納可以消耗<color=#FFD780FF>劍氣</color>，施放該特殊元素戰技，造成<color=#80FFD7FF>風元素傷害</color>。\n每次施放特殊元素戰技<color=#FFD780FF>翔風劍</color>後，本次<color=#FFD780FF>巡風列裝</color>模式持續期間，其境界都會提升。<color=#FFD780FF>翔風劍</color>的初始境界為一階，至多提升至三階。\n施放境界提升後的<color=#FFD780FF>翔風劍</color>時，還會喚出<color=#FFD780FF>靈劍</color>，對敵人造成<color=#80FFD7FF>風元素傷害</color>。"
+  },
+  {
+    "Id": 11430004,
+    "Name": "靈劍",
+    "Description": "薇斯納召喚出的靈體武器，會協同薇斯納對敵人進行攻擊，造成<color=#80FFD7FF>風元素傷害</color>。\n薇斯納可以透過以下方式召喚出靈劍：\n·施放境界提升的特殊元素戰技<color=#FFD780FF>翔風劍</color>。\n·施放元素爆發<color=#FFD780FF>致禮·獻予女皇陛下</color>。\n·施放命之座<color=#FFD780FF>「不移的赤忱」</color>中的<color=#FFD780FF>翔風劍·變移</color>。\n\n<color=#FFD780FF>輝映·星擴散</color>：<color=#FFD780FF>靈劍</color>轉為造成視為星擴散反應傷害的<color=#80FFD7FF>風元素傷害</color>。"
   },
   {
     "Id": 10050002,

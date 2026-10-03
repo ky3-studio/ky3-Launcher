@@ -311,6 +311,10 @@ internal sealed partial class GameProcessFactory
 
             Dictionary<string, string> merged = ReadIniDictionary(configPath);
 
+          
+            merged.Remove("enableDispatch");
+            merged.Remove("dispatchPageName");
+
             merged["targetFov"] = ((int)options.TargetFov.Value).ToString(CultureInfo.InvariantCulture);
             merged["disableVSync"] = options.DisableVSync.Value ? "1" : "0";
             merged["enableFov"] = options.IsSetFieldOfViewEnabled.Value ? "1" : "0";
@@ -329,11 +333,9 @@ internal sealed partial class GameProcessFactory
             merged["removeTeamAnim"] = options.RemoveOpenTeamProgress.Value ? "1" : "0";
             merged["enableFps"] = options.EnableFps.Value ? "1" : "0";
             merged["targetFps"] = options.TargetFps.Value.ToString(CultureInfo.InvariantCulture);
-            merged["enableDispatch"] = options.EnableDispatch.Value ? "1" : "0";
             merged["redirectDispatch"] = options.RedirectDispatch.Value ? "1" : "0";
             merged["dispatchKey"] = options.DispatchKey.Value.ToString(CultureInfo.InvariantCulture);
             merged["dispatchModifier"] = options.DispatchModifier.Value.ToString(CultureInfo.InvariantCulture);
-            merged["dispatchPageName"] = "ExpeditionPage";
             merged["enableCooking"] = options.EnableCooking.Value ? "1" : "0";
             merged["cookingKey"] = options.CookingKey.Value.ToString(CultureInfo.InvariantCulture);
             merged["cookingModifier"] = options.CookingModifier.Value.ToString(CultureInfo.InvariantCulture);
@@ -423,7 +425,6 @@ internal sealed partial class GameProcessFactory
             options.RedirectCombineEntry.Value = GetBool(values, "redirectCraft", options.RedirectCombineEntry.Value);
             options.CraftKey.Value = GetInt(values, "craftKey", options.CraftKey.Value);
             options.CraftModifier.Value = GetInt(values, "craftModifier", options.CraftModifier.Value);
-            options.EnableDispatch.Value = GetBool(values, "enableDispatch", options.EnableDispatch.Value);
             options.RedirectDispatch.Value = GetBool(values, "redirectDispatch", options.RedirectDispatch.Value);
             options.DispatchKey.Value = GetInt(values, "dispatchKey", options.DispatchKey.Value);
             options.DispatchModifier.Value = GetInt(values, "dispatchModifier", options.DispatchModifier.Value);

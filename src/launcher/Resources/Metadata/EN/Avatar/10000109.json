@@ -463,7 +463,8 @@
         "Name": "Aisa Utamakura Pilgrimage",
         "Description": "Weaves memories of lovely dreams, entering a <color=#FFD780FF>Dreamdrifter</color> state where Yumemizuki Mizuki floats above the ground, and dealing 1 instance of <color=#80FFD7FF>AoE Anemo DMG</color> to nearby opponents.\n\n<color=#FFD780FF>Dreamdrifter</color>\n·While in the Dreamdrifter state, Yumemizuki Mizuki will continuously drift forward, dealing <color=#80FFD7FF>AoE Anemo DMG</color> to nearby opponents at regular intervals.\n·During this time, Yumemizuki Mizuki can control her direction of drift, and the pick-up distance of <color=#FFD780FF>Yumemi Style Special Snacks</color> from the Elemental Burst <color=#FFD780FF>Anraku Secret Spring Therapy</color> will be increased.\n·Increases the Swirl DMG and Stellar Swirl reaction DMG that nearby party members deal based on Yumemizuki Mizuki's Elemental Mastery.\n·Dreamdrifter will end when Mizuki leaves the field or uses her Elemental Skill again.\n\n<i>\"Our dreams touch at midnight, their song ringing on in our hearts.\"</i>",
         "SpecialEnergyType": 0,
-        "Icon": "Skill_S_Mizuki_01"
+        "Icon": "Skill_S_Mizuki_01",
+        "CdTime": 15
       }
     ],
     "SpecialSkills": [
@@ -487,7 +488,7 @@
         },
         "Id": 1095101,
         "Name": "Vast Be the Dream",
-        "Description": "When Yumemizuki Mizuki triggers a Swirl or Stellar Swirl reaction while in the Dreamdrifter state, the next instance of periodic <color=#80FFD7FF>AoE Anemo DMG</color> she deals to nearby enemies during that same state will be increased by 1,000% of her Elemental Mastery. The aforementioned effect can trigger once every 2.5s.\n<color=#FFD780FF>Radiance: Stellar Swirl</color>: When Yumemizuki Mizuki deals to an opponent the above enhanced <color=#80FFD7FF>AoE Anemo DMG</color>, she will also deal an additional instance of <color=#80FFD7FF>Anemo DMG</color> at 1,000% of her Elemental Mastery. This DMG is considered Stellar Swirl reaction DMG.\n\nAdditionally, while Yumemizuki Mizuki is in the Dreamdrifter state, the Elemental Mastery of nearby party characters is also increased by 10% of her Elemental Mastery.\nYumemizuki Mizuki will also enter the <<color=#FFD780FF>Radiance: Stellar Swirl</color> state for 8s when a nearby party member triggers a Stellar Swirl reaction.",
+        "Description": "When Yumemizuki Mizuki triggers a Swirl or Stellar Swirl reaction while in the Dreamdrifter state, the next instance of periodic <color=#80FFD7FF>AoE Anemo DMG</color> she deals to nearby enemies during that same state will be increased by 1,000% of her Elemental Mastery. The aforementioned effect can trigger once every 2.5s.\n<color=#FFD780FF>Radiance: Stellar Swirl</color>: When Yumemizuki Mizuki deals to an opponent the above enhanced <color=#80FFD7FF>AoE Anemo DMG</color>, she will also deal an additional instance of <color=#80FFD7FF>Anemo DMG</color> at 1,000% of her Elemental Mastery. This DMG is considered Stellar Swirl reaction DMG.\n\nAdditionally, while Yumemizuki Mizuki is in the Dreamdrifter state, the Elemental Mastery of nearby party characters is also increased by 10% of her Elemental Mastery.\nYumemizuki Mizuki will also enter the <color=#FFD780FF>Radiance: Stellar Swirl</color> state for 8s when a nearby party member triggers a Stellar Swirl reaction.",
         "SpecialEnergyType": 0,
         "Icon": "UI_Talent_S_Mizuki_08"
       }
@@ -706,7 +707,8 @@
       "Name": "Anraku Secret Spring Therapy",
       "Description": "Summons forth countless lovely dreams and nightmares that pull in nearby objects and opponents, dealing <color=#80FFD7FF>AoE Anemo DMG</color> and summoning a Mini Baku.\n\n<color=#FFD780FF>Mini Baku:</color>\nFollows the current active character. At regular intervals, the Mini Baku will create 1 Yumemi Style Special Snack nearby. After one of your own party members picks up a Special Snack, if their HP is higher than 70%, the Snack will explode and unleash a Munen Shockwave, dealing 1 instance of <color=#80FFD7FF>AoE Anemo DMG</color> to nearby opponents. Otherwise, it will heal the character who picked it up based on Yumemizuki Mizuki's Elemental Mastery. When Yumemizuki Mizuki triggers healing by picking up a Yumemi Style Special Snack, the amount of healing is increased by 100%. If a Snack is not picked up after a period of time, it will explode and release a Munen Shockwave, dealing 1 instance of <color=#80FFD7FF>AoE Anemo DMG</color> to surrounding opponents.\n\n<i>\"If you bury dark emotions for too long, they will become nightmares. With that in mind, why don't we turn them into 'delicious snacks' while we've got the time?\"</i>",
       "SpecialEnergyType": 0,
-      "Icon": "Skill_E_Mizuki_01"
+      "Icon": "Skill_E_Mizuki_01",
+      "CdTime": 15
     },
     "Inherents": [
       {

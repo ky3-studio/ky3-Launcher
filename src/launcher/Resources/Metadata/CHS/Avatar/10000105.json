@@ -33,19 +33,6 @@
     "Arkhe": 0,
     "Skills": [
       {
-        "GroupId": 0,
-        "Proud": {
-          "Descriptions": [],
-          "Parameters": [],
-          "Display": 0
-        },
-        "Id": 30506,
-        "Name": "特殊跳跃",
-        "Description": "如果角色在纳塔地区，长按后可以消耗燃素进行二段火箭跳，当燃素耗尽时将转为消耗体力进行二段跳跃。",
-        "SpecialEnergyType": 0,
-        "Icon": "Skill_E_Olorun_03"
-      },
-      {
         "GroupId": 10531,
         "Proud": {
           "Descriptions": [
@@ -412,7 +399,8 @@
         "Name": "暝色缒索",
         "Description": "欧洛伦将烟谜主亘古传承的秘术具现为暝色的<color=#FFD780FF>宿灵球</color>投向敌人，造成具有夜魂性质的<color=#FFACFFFF>雷元素伤害</color>。\n附近存在其他敌人时，宿灵球将在附近的敌人间弹跳，造成具有夜魂性质的<color=#FFACFFFF>雷元素伤害</color>。每次施放暝色缒索后，每名敌人只能被选为一次目标。\n进行3次弹跳或附近没有可以被选为目标的敌人时，宿灵球将消失。\n\n<i>「人们总是想要预见未来，但那或许是因为他们还没有找到自己该做的事…抱歉，又在说难懂的话了。」</i>",
         "SpecialEnergyType": 0,
-        "Icon": "Skill_S_Olorun_01"
+        "Icon": "Skill_S_Olorun_01",
+        "CdTime": 15
       }
     ],
     "EnergySkill": {
@@ -598,7 +586,8 @@
       "Name": "黯声回响",
       "Description": "欧洛伦唤起远古的秘仪，造成具有夜魂性质的<color=#FFACFFFF>雷元素范围伤害</color>，并召唤出「超音灵眼」。\n\n<color=#FFD780FF>超音灵眼</color>\n·持续嘲讽周围的敌人，吸引敌人攻击；\n·持续旋转并发射音波，对附近的敌人造成具有夜魂性质的<color=#FFACFFFF>雷元素伤害</color>。\n\n<i>拥有足够感知的人，能够听见万物细微的声响。那样即便是在无光的长夜，也不会失去行路的方向。</i>",
       "SpecialEnergyType": 0,
-      "Icon": "Skill_E_Olorun_01"
+      "Icon": "Skill_E_Olorun_01",
+      "CdTime": 15
     },
     "Inherents": [
       {

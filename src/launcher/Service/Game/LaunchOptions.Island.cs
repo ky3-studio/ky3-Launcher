@@ -61,9 +61,6 @@ internal sealed partial class LaunchOptions
     public IObservableProperty<int> CraftModifier { get => field ??= CreateProperty(SettingKeys.LaunchCraftModifier, 1); }
 
     [field: MaybeNull]
-    public IObservableProperty<bool> EnableDispatch { get => field ??= CreateProperty(SettingKeys.LaunchEnableDispatch, false); }
-
-    [field: MaybeNull]
     public IObservableProperty<bool> RedirectDispatch { get => field ??= CreateProperty(SettingKeys.LaunchRedirectDispatch, false); }
 
     [field: MaybeNull]

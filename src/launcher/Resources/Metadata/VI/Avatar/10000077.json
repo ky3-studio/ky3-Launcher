@@ -493,7 +493,8 @@
         "Name": "Máy Ném Củ Cải",
         "Description": "Mời cơ quan \"Nguyệt Quế - Dạng Ném\" của vị tiên nhân nào đó xuất trận, giúp Yaoyao giải quyết phiền não.\nKhi nhấn giữ sẽ thi triển theo cách thức khác nhau.\n\n<color=#FFD780FF>Nhấn Giữ</color>\nVào trạng thái nhắm chuẩn để điều chỉnh hướng ném.\n\n<color=#FFD780FF>Nguyệt Quế - Dạng Ném</color>\nNém ra Củ Cải Bạch Ngọc, Củ Cải Bạch Ngọc sẽ nổ khi trúng nhân vật hoặc kẻ địch, gây <color=#99FF88FF>Sát Thương Nguyên Tố Thảo</color> cho kẻ địch trong phạm vi nhất định, đồng thời hồi phục HP cho nhân vật trong đó, lượng hồi phục sẽ căn cứ vào giới hạn HP của Yaoyao; Nếu chưa trúng kẻ địch hoặc nhân vật, Củ Cải Bạch Ngọc sẽ ở lại tại vị trí rơi, và sẽ phát nổ khi chạm phải nhân vật, kẻ địch hoặc khi kết thúc thời gian duy trì.\nNguyệt Quế - Dạng Ném sẽ căn cứ vào tình trạng gần đó để chọn mục tiêu ném Củ Cải Bạch Ngọc:\n·Nhân vật gần đó nếu HP đều cao hơn 70% thì sẽ ném vào một kẻ địch gần đó;\n·Nhân vật gần đó nếu có HP thấp hơn hoặc bằng 70% thì sẽ ném vào nhân vật có phần trăm HP thấp nhất gần đó. Nếu xung quanh không có kẻ địch, mà HP nhân vật đều cao hơn 70% và thấp hơn 100% thì cũng sẽ ném về phía nhân vật; Nếu không sẽ ném tùy ý ra xung quanh.\n\nCùng lúc tồn tại tối đa 2 Nguyệt Quế - Dạng Ném.\n\n<i>\"Củ cải lên sóng, bệnh gì cũng xong! À, cũng không phải nói là củ cải có thể chữa bách bệnh, nhưng mà ăn nhiều củ cải thì cũng tốt mà!\"</i>",
         "SpecialEnergyType": 0,
-        "Icon": "Skill_S_Yaoyao_01"
+        "Icon": "Skill_S_Yaoyao_01",
+        "CdTime": 15
       }
     ],
     "EnergySkill": {
@@ -726,7 +727,8 @@
       "Name": "Mặt Trăng Giáng Ngọc",
       "Description": "Theo lời dặn của vị tiên nhân nào đó, giải phóng toàn bộ tiềm năng của Nguyệt Quế khi gặp nguy hiểm để gây <color=#99FF88FF>Sát Thương Nguyên Tố Thảo</color> cho kẻ địch xung quanh, đồng thời triển khai trạng thái \"Kế Thừa Tiên Nhân\" không thể cản phá (theo một nghĩa nào đó).\n\n<color=#FFD780FF>Kế Thừa Tiên Nhân</color>\n·Củ Cải Bạch Ngọc được ném ra sẽ gây sát thương và trị liệu dựa vào thuộc tính chi tiết của kỹ năng này, khi nổ sẽ hồi phục HP cho tất cả nhân vật trong đội gần đó, <color=#99FF88FF>Sát Thương Nguyên Tố Thảo</color> gây ra sẽ được tính là sát thương Kỹ Năng Nộ;\n·Triệu hồi \"Nguyệt Quế - Dạng Nhảy\" liên tục cho đến khi số lượng đạt giới hạn. Hành vi của Nguyệt Quế - Dạng Nhảy tương đồng với Nguyệt Quế - Dạng Ném được triệu hồi từ Kỹ Năng Nguyên Tố \"Máy Ném Củ Cải\". Tối đa tồn tại cùng lúc 3 Nguyệt Quế - Dạng Nhảy;\n·Tốc độ di chuyển của Yaoyao tăng 15%;\n·Yaoyao tăng <color=#99FF88FF>Kháng Nguyên Tố Thảo</color>;\n\nTrạng thái Kế Thừa Tiên Nhân sẽ kết thúc khi rời trận. Trạng thái Kế Thừa Tiên Nhân khi kết thúc sẽ loại bỏ Nguyệt Quế - Dạng Nhảy còn lại.\n\n<i>\"Hả, đứa nào là Nguyệt Quế sao, tất cả ở đây đều là Nguyệt Quế cả!\"</i>",
       "SpecialEnergyType": 0,
-      "Icon": "Skill_E_Yaoyao_01"
+      "Icon": "Skill_E_Yaoyao_01",
+      "CdTime": 20
     },
     "Inherents": [
       {

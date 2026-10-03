@@ -620,7 +620,8 @@
         "Name": "浮冰增压",
         "Description": "进行上挑攻击，造成<color=#99FFFFFF>冰元素伤害</color>，并进入持续10秒的佩伊刻计状态。\n处于佩伊刻计状态下时，元素战技将转为高压粉碎。\n\n<color=#FFD780FF>高压粉碎</color>\n依据佩伊刻计的压力阶级进行不同的攻击，并移除佩伊刻计状态：\n·零阶时：进行纵斩，造成<color=#99FFFFFF>冰元素伤害</color>；\n·一阶至三阶时：进行纵斩并协同佩伊，造成<color=#99FFFFFF>冰元素伤害</color>与物理伤害。伤害依据压力阶级有所不同；\n·四阶时：借助充满压力的佩伊的力量，造成物理伤害。此时「普通攻击·洑流剑」将被替换为高压粉碎。\n\n<color=#FFD780FF>佩伊刻计</color>\n菲米尼进行普通攻击时，将同时释放霜寒造成<color=#99FFFFFF>冰元素伤害</color>，并为佩伊刻计提升压力阶级。\n同时造成的<color=#99FFFFFF>冰元素伤害</color>视为元素战技伤害。\n\n<color=#FFD780FF>始基力：芒性</color>\n每隔一段时间，进行上挑攻击后，将形成进行挑击的灵息之刺，造成具有芒性的<color=#99FFFFFF>冰元素伤害</color>。\n\n<i>阻滞对手的行动，而非夺去对手的性命。从某种意义上来说，这也是为了「生存」而选择的战略。</i>\n<i>「佩伊…接下来就拜托你了。」</i>",
         "SpecialEnergyType": 0,
-        "Icon": "Skill_S_Freminet_01"
+        "Icon": "Skill_S_Freminet_01",
+        "CdTime": 10
       }
     ],
     "EnergySkill": {
@@ -790,7 +791,8 @@
       "Name": "猎影潜袭",
       "Description": "释放不可触及的寒气，造成<color=#99FFFFFF>冰元素范围伤害</color>，重置元素战技「浮冰增压」的冷却时间，并进入持续10秒的潜猎模式。\n\n处于潜猎模式状态下时，菲米尼的抗打断能力提升，元素战技「浮冰增压」获得如下强化：\n·冷却时间缩短70%；\n·进行普通攻击时额外提升一阶佩伊刻计的压力阶级，并使普通攻击释放的霜寒造成的伤害为原本的200%。\n\n效果将在菲米尼退场时解除。\n\n<i>「现在…不需要什么多余的杂音了。」</i>",
       "SpecialEnergyType": 0,
-      "Icon": "Skill_E_Freminet_01"
+      "Icon": "Skill_E_Freminet_01",
+      "CdTime": 15
     },
     "Inherents": [
       {

@@ -590,7 +590,8 @@
         "Name": "Runo: Dawnless Rest of Karsikko",
         "Description": "Silently incants an ancient hymn, summoning a {LINK#N11190001}<color=#FFD780FF>Frostgrove Sanctuary</color>{/LINK} with different effects depending on whether you Tap or Hold.\n\n<color=#FFD780FF>Tap</color>\nIntone a Hymn of Hunting, dealing <color=#99FF88FF>AoE Dendro DMG</color>.\n\n<color=#FFD780FF>Hold</color>\nCan be unleashed when you have at least 1 {LINK#N11190008}<color=#FFD780FF>Verdant Dew</color>{/LINK}. Lauma consumes all Verdant Dew and intones a Hymn of Eternal Rest, dealing one regular instance of <color=#99FF88FF>AoE Dendro DMG</color> and another instance of <color=#99FF88FF>AoE Dendro DMG</color> that is considered Lunar-Bloom DMG. Each Verdant Dew consumed will give Lauma one stack of {LINK#N11190002}<color=#FFD780FF>Moon Song</color>{/LINK}. Each time you Hold to cast an Elemental Skill, a maximum of 3 Verdant Dew can be consumed in this way.\n\nAdditionally, when Lauma's Elemental Skill or attacks from Frostgrove Sanctuary hit an opponent, that opponent's <color=#99FF88FF>Dendro RES</color> and <color=#80C0FFFF>Hydro RES</color> will be decreased for 10s.",
         "SpecialEnergyType": 0,
-        "Icon": "Skill_S_Lauma_01"
+        "Icon": "Skill_S_Lauma_01",
+        "CdTime": 12
       }
     ],
     "EnergySkill": {
@@ -808,7 +809,8 @@
       "Name": "Runo: All Hearts Become the Beating Moon",
       "Description": "Let the wishes of all beings become as moonlight that bathes the earth. Lauma incants a sacred song of the far north, gaining 18 stacks of {LINK#N11190003}<color=#FFD780FF>Pale Hymn</color>{/LINK}.\nAdditionally, if Lauma uses her Elemental Burst while she has {LINK#N11190002}<color=#FFD780FF>Moon Song</color>{/LINK}, or she gains Moon Song within 15s of using her Elemental Burst, she will consume all Moon Song stacks and gain 6 stacks of Pale Hymn for every Moon Song stack consumed. This effect can only be triggered once for each Elemental Burst used, including the 15 seconds following its use.\n\n<color=#FFD780FF>Pale Hymn</color>\nWhen nearby party members deal Bloom, Hyperbloom, Burgeon, or Lunar-Bloom DMG, 1 stack of Pale Hymn will be consumed and the DMG dealt will be increased based on Lauma's Elemental Mastery. If this DMG hits multiple opponents at once, then multiple stacks of Pale Hymn will be consumed, depending on how many opponents are hit.\nThe duration for each stack of Pale Hymn is counted independently.",
       "SpecialEnergyType": 0,
-      "Icon": "Skill_E_Lauma_01"
+      "Icon": "Skill_E_Lauma_01",
+      "CdTime": 15
     },
     "Inherents": [
       {

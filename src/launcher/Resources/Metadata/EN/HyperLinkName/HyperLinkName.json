@@ -42,7 +42,7 @@
   {
     "Id": 210501,
     "Name": "<color=#f39001>Electro Crystal's Boon</color>",
-    "Description": "All party members gain <color=#f39001>50%</color> Electro and Geo DMG Bonus. Additionally, you will obtain nearby Crystallize shards every <color=#f39001>4</color>s"
+    "Description": "All party members gain <color=#f39001>70%</color> Electro and Geo DMG Bonus. Additionally, you will obtain nearby Crystallize shards every <color=#f39001>4</color>s"
   },
   {
     "Id": 210502,
@@ -52,7 +52,7 @@
   {
     "Id": 210503,
     "Name": "<color=#e09800>Roaring Rockbreaker</color>",
-    "Description": "Descends on a nearby opponent after characters pick up <color=#f39001>{0}</color> Elemental Shards produced by the <color=#f39001>Electro Crystallize reaction</color>, dealing <color=#e09800>Geo DMG</color>"
+    "Description": "Descends on the opponent's position after characters hit an opponent with an Elemental Burst while <color=#f39001>Electro Crystal's Boon</color> is active, dealing <color=#e09800>Geo DMG</color>."
   },
   {
     "Id": 210601,
@@ -82,7 +82,7 @@
   {
     "Id": 210901,
     "Name": "<color=#f39001>Windblessing: Hydro</color>",
-    "Description": "The DMG dealt by characters triggering the Swirl reaction increases by <color=#f39001>80%</color> and their Max HP increases by <color=#f39001>8%</color>"
+    "Description": "The DMG dealt by characters triggering the Swirl reaction increases by <color=#f39001>80%</color>, DMG caused by Stellar Swirl reactions increases by <color=#f39001>8%</color>, and their Max HP increases by <color=#f39001>8%</color>."
   },
   {
     "Id": 210902,
@@ -97,7 +97,7 @@
   {
     "Id": 211001,
     "Name": "<color=#f39001>Windblessing: Electro</color>",
-    "Description": "The DMG dealt by characters triggering the Swirl reaction increases by <color=#f39001>80%</color> and each time they receive <color=#f39001>Windblessing: Electro</color>, all party members gain <color=#f39001>2</color> Elemental Energy"
+    "Description": "The DMG dealt by characters triggering the Swirl reaction increases by <color=#f39001>80%</color>, and DMG caused by Stellar Swirl reactions increases by <color=#f39001>8%</color>. Further, each time they receive <color=#f39001>Windblessing: Electro</color>, all party members gain <color=#f39001>2</color> Elemental Energy."
   },
   {
     "Id": 211002,
@@ -172,7 +172,7 @@
   {
     "Id": 211501,
     "Name": "<color=#f39001>Windblessing: Pyro</color>",
-    "Description": "The DMG dealt by characters triggering the Swirl reaction increases by <color=#f39001>80%</color> and their ATK increases by <color=#f39001>9%</color>."
+    "Description": "The DMG dealt by characters triggering the Swirl reaction increases by <color=#f39001>80%</color>, DMG caused by Stellar Swirl reactions increases by <color=#f39001>8%</color>, and their ATK increases by <color=#f39001>9%</color>."
   },
   {
     "Id": 211502,
@@ -247,7 +247,7 @@
   {
     "Id": 211901,
     "Name": "<color=#f39001>Windblessing: Cryo</color>",
-    "Description": "The DMG dealt by characters triggering the Swirl reaction increases by <color=#f39001>80%</color> and their CRIT DMG increases by <color=#f39001>16%</color>"
+    "Description": "The DMG dealt by characters triggering the Swirl reaction increases by <color=#f39001>80%</color>, DMG caused by Stellar Swirl reactions increases by <color=#f39001>8%</color>, and their CRIT DMG increases by <color=#f39001>16%</color>."
   },
   {
     "Id": 211902,
@@ -506,8 +506,33 @@
   },
   {
     "Id": 11400001,
+    "Name": "Lead Vocal",
+    "Description": "When the party's currently active character deals <color=#80C0FFFF>Hydro DMG</color> or <color=#99FFFFFF>Cryo DMG</color> with a Normal Attack, Charged Attack, Plunging Attack, Elemental Skill, or Elemental Burst, 1 stack of \"Lead Vocal\" is consumed. This in turn increases the DMG dealt. However, if a Wandering Vortex is present on the field or during the 5s following a Wandering Vortex explosion, this effect will only trigger when the character deals Stellar Swirl reaction DMG.\nEvery 1000 Max HP Vodyanitsa has in excess of {PARAM#P1402201|3S1} will increase the Stellar Swirl reaction DMG from the above effect by {PARAM#P1402201|4S1}, as well as <color=#80C0FFFF>Hydro DMG</color> and <color=#99FFFFFF>Cryo DMG</color> dealt by {PARAM#P1402201|5S1}. Stellar Swirl reaction DMG dealt can be increased by a maximum of {PARAM#P1402201|6S1} while <color=#80C0FFFF>Hydro DMG</color> and <color=#99FFFFFF>Cryo DMG</color> can be increased by a maximum of {PARAM#P1402201|7S1} in this way."
+  },
+  {
+    "Id": 11400002,
+    "Name": "Chorus",
+    "Description": "Triggered by off-field party members or other nearby party members (and not your currently active party member). Effects are the same as those of \"Lead Vocal.\""
+  },
+  {
+    "Id": 11430001,
+    "Name": "Armed for Action",
+    "Description": "Vesna switches to this mode after using the Elemental Skill <color=#FFD780FF>The Art of Victory</color>. In this mode, which lasts up to 15s:\n· Vesna's resistance to interruption is increased.\n· DMG dealt by Vesna with her Normal Attacks, Charged Attacks, and Plunging Attacks becomes <color=#80FFD7FF>Anemo DMG</color> that cannot be overridden by another elemental infusion instead. She will also summon a wind pinion that attacks the opponent at the same time, dealing additional <color=#80FFD7FF>Anemo DMG</color>. Each time the wind pinion is summoned, Vesna will regenerate a certain amount of <color=#FFD780FF>Sword Essence</color>.\n· Vesna can consume <color=#FFD780FF>Sword Essence</color> to unleash the special Elemental Skill <color=#FFD780FF>Windborne Sword</color>, which deals <color=#80FFD7FF>Anemo DMG</color> to her opponents.\n· Vesna will exit the mode when its duration ends or after she has used <color=#FFD780FF>Windborne Sword</color> at the highest level 3 times. Exiting will clear all remaining <color=#FFD780FF>Sword Essence</color> she has accrued."
+  },
+  {
+    "Id": 11430002,
+    "Name": "Sword Essence",
+    "Description": "The energy required to use the special Elemental Skill <color=#FFD780FF>Windborne Sword</color>while in the <color=#FFD780FF>Armed for Action</color> mode.\nVesna can accumulate Sword Essence in the following ways:\n· By performing a Normal Attack, Charged Attack, or Plunging attack while in the <color=#FFD780FF>Armed for Action</color> mode, or by unleashing <color=#FFD780FF>Windborne Sword: Transpose</color> from the Constellation <color=#FFD780FF>Unwavering Ardor</color>; \n· By using the Elemental Skill <color=#FFD780FF>The Art of Victory</color>; or\n· By using the Elemental Burst <color=#FFD780FF>For the Tsaritsa!</color>"
+  },
+  {
+    "Id": 11430003,
+    "Name": "Windborne Sword",
+    "Description": "When in the <color=#FFD780FF>Armed for Action</color> mode, Vesna can consume <color=#FFD780FF>Sword Essence</color> to use her special Elemental Skill to deal <color=#80FFD7FF>Anemo DMG</color>.\nEach use of the special Elemental Skill <color=#FFD780FF>Windborne Sword</color> in the same instance of <color=#FFD780FF>Armed for Action</color> will increase the level of <color=#FFD780FF>Windborne Sword</color>, beginning from Lv. 1, up to Lv. 3 max.\nUsing <color=#FFD780FF>Windborne Sword</color> at Lv. 2 and Lv. 3 will also summon a <color=#FFD780FF>Spirit Blade</color> which deals <color=#80FFD7FF>Anemo DMG</color>."
+  },
+  {
+    "Id": 11430004,
     "Name": "Spirit Blade",
-    "Description": "About \"Spirit Blade\""
+    "Description": "A weapon with special power that Vesna can summon. Attacks the opponent alongside Vesna to deal <color=#80FFD7FF>Anemo DMG</color>.\nVesna can summon Spirit Blades through the following ways:\n· By unleashing the special Elemental Skill <color=#FFD780FF>Windborne Sword</color> at Lv. 2 and Lv. 3;\n· By using the Elemental Burst <color=#FFD780FF>For the Tsaritsa!</color>; or\n· By using <color=#FFD780FF>Windborne Sword·: Transpose</color> in the Constellation <color=#FFD780FF>Unwavering Ardor</color>.\n\n<color=#FFD780FF>Radiance: Stellar Swirl</color>: DMG dealt by the <color=#FFD780FF>Spirit Blades</color> become <color=#80FFD7FF>Anemo DMG</color> that is considered Stellar Swirl reaction DMG instead."
   },
   {
     "Id": 10050002,

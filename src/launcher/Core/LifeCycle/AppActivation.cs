@@ -21,7 +21,6 @@ using Launcher.Service.Job;
 using Launcher.Service.Metadata;
 using Launcher.Service.Navigation;
 using Launcher.Service.Notification;
-using Launcher.Service.RemoteConfig;
 using Launcher.UI.Input.HotKey;
 using Launcher.UI.Shell;
 using Launcher.UI.Windowing;
@@ -238,60 +237,8 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
         string dllPath = Path.Combine(AppContext.BaseDirectory, "Ky3-luancher-Plugin.dll");
         backgroundActivityOptions.FullTrustInitialization.Update(taskContext, File.Exists(dllPath) ? SH.ServiceBackgroundActivityFullTrustReady : SH.ServiceBackgroundActivityFullTrustNotReady, true, false, false, false);
 
-        Window? mainWindow = await WaitWindowAsync<MainWindow>().ConfigureAwait(false);
-
         _ = serviceProvider.GetRequiredService<SignInServerDayRolloverScheduler>();
         _ = serviceProvider.GetRequiredService<AutoSignInTriggerService>();
-
-        IMessenger messenger = serviceProvider.GetRequiredService<IMessenger>();
-
-        AppAnnouncementNotifier announcementNotifier = new(messenger);
-        if (mainWindow is not null)
-        {
-            announcementNotifier.Attach(mainWindow);
-        }
-        announcementNotifier.Start();
-
-        _ = Task.Run(async () =>
-        {
-            try
-            {
-                await Task.Delay(2000).ConfigureAwait(false);
-                List<FeedbackReply> replies = await FeedbackService.GetUnreadRepliesAsync().ConfigureAwait(false);
-                if (replies.Count > 0)
-                {
-                    string preview = replies[0].Reply;
-                    if (preview.Length > 60) preview = preview[..60] + "...";
-                    serviceProvider.GetRequiredService<IMessenger>()
-                        .Send(InfoBarMessage.Information(SH.FormatServiceFeedbackReplyNotification(preview)));
-                    await FeedbackService.MarkRepliesReadAsync().ConfigureAwait(false);
-                }
-            }
-            catch
-            {
-            }
-        });
-
-        _ = Task.Run(async () =>
-        {
-            try
-            {
-                string today = DateTime.Today.ToString("yyyy-MM-dd");
-                string currentVer = LauncherRuntime.Version.ToString();
-                string lastDate = LocalSetting.Get(SettingKeys.ClientLastHeartbeatDate, "");
-                string lastVer = LocalSetting.Get(SettingKeys.ClientLastHeartbeatVersion, "");
-                if (lastDate != today || lastVer != currentVer)
-                {
-                    await Task.Delay(1000).ConfigureAwait(false);
-                    await FeedbackService.HeartbeatAsync().ConfigureAwait(false);
-                    LocalSetting.Set(SettingKeys.ClientLastHeartbeatDate, today);
-                    LocalSetting.Set(SettingKeys.ClientLastHeartbeatVersion, currentVer);
-                }
-            }
-            catch
-            {
-            }
-        });
 
         SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateInfo("Initialization completed", "Application"));
     }

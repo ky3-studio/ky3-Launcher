@@ -27,9 +27,6 @@ internal static class SettingKeys
     public const string PrimaryLanguage = "Launcher::Globalization::PrimaryLanguage";
     public const string AnnouncementRegion = "Launcher::Globalization::Region::Announcement";
     public const string CalendarServerTimeZoneOffset = "Launcher::Calendar::ServerTimeZoneOffset";
-    public const string AnnouncementSeenIds = "Launcher::Announcement::SeenIds";
-    public const string ClientLastHeartbeatDate = "Launcher::Backend::ClientLastHeartbeatDate";
-    public const string ClientLastHeartbeatVersion = "Launcher::Backend::ClientLastHeartbeatVersion";
 
     // UI
     public const string BackgroundImageType = "Launcher::UI::BackgroundImage::Type";

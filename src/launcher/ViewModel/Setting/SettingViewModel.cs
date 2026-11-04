@@ -42,7 +42,6 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
     private readonly ITaskContext taskContext;
     private readonly IMessenger messenger;
     private readonly AutoStartService autoStartService;
-    private readonly IContentDialogFactory contentDialogFactory;
     private readonly IServiceProvider serviceProvider;
     private readonly AppOptions appOptionsInstance;
 
@@ -184,21 +183,7 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
     private async Task SubmitFeedbackAsync()
     {
         SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Submit feedback", "SettingViewModel.Command"));
-
-        ContentDialogResult result = await contentDialogFactory
-            .CreateForSelectionAsync(SH.ViewModelSettingFeedbackTitle, SH.ViewModelSettingFeedbackDescription, "GitHub Issues", SH.ViewModelSettingFeedbackDeveloperServer)
-            .ConfigureAwait(false);
-
-        if (result is ContentDialogResult.Primary)
-        {
-            Uri uri = BackendApiRoutes.GitHubIssues.ToUri();
-            await OpenGitHubUriAsync(uri).ConfigureAwait(false);
-        }
-        else if (result is ContentDialogResult.Secondary)
-        {
-            SubmitFeedbackDialog dialog = await contentDialogFactory.CreateInstanceAsync<SubmitFeedbackDialog>(serviceProvider).ConfigureAwait(false);
-            await dialog.ShowFeedbackAsync().ConfigureAwait(false);
-        }
+        await OpenGitHubUriAsync(BackendApiRoutes.GitHubIssues.ToUri()).ConfigureAwait(false);
     }
 
     [Command("OpenTranslateCommand")]

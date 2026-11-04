@@ -15,7 +15,9 @@ namespace Launcher.Win32;
 
 internal readonly unsafe struct LauncherNativeWindowSubclassCallback
 {
+#pragma warning disable IDE0052
     private readonly delegate* unmanaged[Stdcall]<HWND, uint, WPARAM, LPARAM, GCHandle<XamlWindowSubclass>, LRESULT*, BOOL> value;
+#pragma warning restore IDE0052
 
     public LauncherNativeWindowSubclassCallback(delegate* unmanaged[Stdcall]<HWND, uint, WPARAM, LPARAM, GCHandle<XamlWindowSubclass>, LRESULT*, BOOL> value)
     {

@@ -2042,21 +2042,6 @@
         <member name="P:Launcher.Service.RedeemCode.RedeemCodeService.HasOsCodes">
             <inheritdoc/>
         </member>
-        <member name="M:Launcher.Service.RemoteConfig.FeedbackService.UploadImageAsync(System.String)">
-            <summary>Upload a feedback image (no auth required). Returns the hosted URL or null on failure.</summary>
-        </member>
-        <member name="M:Launcher.Service.RemoteConfig.FeedbackService.SubmitFeedbackAsync(System.String,System.String,System.String,System.Collections.Generic.List{System.String})">
-            <summary>Submit feedback with optional image URLs.</summary>
-        </member>
-        <member name="M:Launcher.Service.RemoteConfig.FeedbackService.GetUnreadRepliesAsync">
-            <summary>Get unread admin replies for this device.</summary>
-        </member>
-        <member name="M:Launcher.Service.RemoteConfig.FeedbackService.MarkRepliesReadAsync">
-            <summary>Mark all replies for this device as read.</summary>
-        </member>
-        <member name="M:Launcher.Service.RemoteConfig.FeedbackService.HeartbeatAsync">
-            <summary>Report client presence to the admin backend (heartbeat). Silently ignores network errors.</summary>
-        </member>
         <member name="T:Launcher.UI.Input.HotKey.HotKeyCombination">
             <inheritdoc/>
         </member>
@@ -2596,21 +2581,6 @@
             </summary>
         </member>
         <member name="M:Launcher.UI.Xaml.View.Dialog.ReconfirmDialog.GetBindingConnector(System.Int32,System.Object)">
-            <summary>
-            GetBindingConnector(int connectionId, object target)
-            </summary>
-        </member>
-        <member name="M:Launcher.UI.Xaml.View.Dialog.SubmitFeedbackDialog.InitializeComponent">
-            <summary>
-            InitializeComponent()
-            </summary>
-        </member>
-        <member name="M:Launcher.UI.Xaml.View.Dialog.SubmitFeedbackDialog.Connect(System.Int32,System.Object)">
-            <summary>
-            Connect()
-            </summary>
-        </member>
-        <member name="M:Launcher.UI.Xaml.View.Dialog.SubmitFeedbackDialog.GetBindingConnector(System.Int32,System.Object)">
             <summary>
             GetBindingConnector(int connectionId, object target)
             </summary>
@@ -4748,24 +4718,6 @@
         <member name="F:Launcher.Resource.Localization.SHRegexName.ModelMetadataMaterialLocalSpecialtyRegex">
             <summary><para>Looks up a localized string for "ModelMetadataMaterialLocalSpecialtyRegex".</para><para>If you don't know what is regex, DO NOT TRANSLATE THIS!</para><code>Neutral  Value: "^[\u4e00-\u9fa5]{2}区域特产$"</code></summary>
         </member>
-        <member name="P:Launcher.Resource.Localization.SH.AppDevNameAndVersion">
-            <summary><para>Looks up a localized string for "AppDevNameAndVersion".</para><code>Neutral  Value: "ky3 Launcher Dev {0}"</code><code>en-US    Value: "ky3 Launcher Dev {0}"</code><code>vi-VN    Value: "ky3 Launcher Dev {0}"</code><code>zh-TW    Value: "ky3 Launcher Dev {0}"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatAppDevNameAndVersion(System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.AppDevNameAndVersion"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.AppElevatedDevNameAndVersion">
-            <summary><para>Looks up a localized string for "AppElevatedDevNameAndVersion".</para><code>Neutral  Value: "ky3 Launcher Dev {0} [管理员]"</code><code>en-US    Value: "ky3 Launcher Dev {0} [admin]"</code><code>vi-VN    Value: "ky3 Launcher Dev {0} [Quản Trị Viên]"</code><code>zh-TW    Value: "ky3 Launcher Dev {0} [管理員]"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatAppElevatedDevNameAndVersion(System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.AppElevatedDevNameAndVersion"/>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.AppElevatedNameAndVersion">
-            <summary><para>Looks up a localized string for "AppElevatedNameAndVersion".</para><code>Neutral  Value: "ky3 Launcher {0} [管理员]"</code><code>en-US    Value: "ky3 Launcher {0} [admin]"</code><code>vi-VN    Value: "ky3 Launcher {0} [Quản Trị Viên]"</code><code>zh-TW    Value: "ky3 Launcher {0} [管理員]"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatAppElevatedNameAndVersion(System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.AppElevatedNameAndVersion"/>
-        </member>
         <member name="P:Launcher.Resource.Localization.SH.AppName">
             <summary><para>Looks up a localized string for "AppName".</para><code>Neutral  Value: "ky3 Launcher"</code><code>en-US    Value: "ky3 Launcher"</code><code>zh-TW    Value: "ky3 Launcher"</code></summary>
         </member>
@@ -5458,12 +5410,6 @@
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ServiceDailyNoteNotifierWeekActiveProgressHint">
             <summary><para>Looks up a localized string for "ServiceDailyNoteNotifierWeekActiveProgressHint".</para><code>Neutral  Value: "本周砺行修远已完成"</code><code>en-US    Value: "This week’s hard work has been completed"</code><code>vi-VN    Value: "Rèn Luyện Tiến Bước tuần này đã hoàn thành"</code><code>zh-TW    Value: "本週礪行修遠已完成"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ServiceFeedbackReplyNotification">
-            <summary><para>Looks up a localized string for "ServiceFeedbackReplyNotification".</para><code>Neutral  Value: "您的反馈已收到回复：{0}"</code><code>en-US    Value: "Your feedback has been responded to: {0}"</code><code>vi-VN    Value: "Phản hồi của bạn đã nhận được trả lời: {0}"</code><code>zh-TW    Value: "您的反饋已收到回覆：{0}"</code></summary>
-        </member>
-        <member name="M:Launcher.Resource.Localization.SH.FormatServiceFeedbackReplyNotification(System.Object)">
-            <inheritdoc cref = "P:Launcher.Resource.Localization.SH.ServiceFeedbackReplyNotification"/>
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ServiceGachaLogAvatarIdNotFound">
             <summary><para>Looks up a localized string for "ServiceGachaLogAvatarIdNotFound".</para><code>Neutral  Value: "未找到角色 ID"</code><code>en-US    Value: "Character ID not found"</code><code>vi-VN    Value: "Không Tìm Thấy ID Nhân Vật"</code><code>zh-TW    Value: "未找到角色 ID"</code></summary>
@@ -6352,24 +6298,6 @@
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ViewExceptionWindowStacktraceHeader">
             <summary><para>Looks up a localized string for "ViewExceptionWindowStacktraceHeader".</para><code>Neutral  Value: "调用堆栈"</code><code>en-US    Value: "call stack"</code><code>vi-VN    Value: "Ngăn xếp lệnh gọi (Stacktrace)"</code><code>zh-TW    Value: "呼叫堆疊"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewFeedbackContentRequired">
-            <summary><para>Looks up a localized string for "ViewFeedbackContentRequired".</para><code>Neutral  Value: "请填写反馈内容"</code><code>en-US    Value: "Please fill in the feedback content"</code><code>vi-VN    Value: "Vui lòng điền nội dung phản hồi"</code><code>zh-TW    Value: "請填寫反饋內容"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewFeedbackNoImageSelected">
-            <summary><para>Looks up a localized string for "ViewFeedbackNoImageSelected".</para><code>Neutral  Value: "未选择图片"</code><code>en-US    Value: "No picture selected"</code><code>vi-VN    Value: "Chưa chọn ảnh"</code><code>zh-TW    Value: "未選擇圖片"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewFeedbackPickImageFilter">
-            <summary><para>Looks up a localized string for "ViewFeedbackPickImageFilter".</para><code>Neutral  Value: "图片文件"</code><code>en-US    Value: "Image files"</code><code>vi-VN    Value: "Tập tin hình ảnh"</code><code>zh-TW    Value: "圖片檔案"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewFeedbackPickImageTitle">
-            <summary><para>Looks up a localized string for "ViewFeedbackPickImageTitle".</para><code>Neutral  Value: "选择反馈图片"</code><code>en-US    Value: "Select feedback image"</code><code>vi-VN    Value: "Chọn ảnh phản hồi"</code><code>zh-TW    Value: "選擇反饋圖片"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewFeedbackSubmitFailed">
-            <summary><para>Looks up a localized string for "ViewFeedbackSubmitFailed".</para><code>Neutral  Value: "提交失败，请检查网络连接后重试"</code><code>en-US    Value: "Submission failed, please check the network connection and try again"</code><code>vi-VN    Value: "Gửi thất bại, vui lòng kiểm tra kết nối mạng rồi thử lại"</code><code>zh-TW    Value: "提交失敗，請檢查網路連線後重試"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewFeedbackSubmitSuccess">
-            <summary><para>Looks up a localized string for "ViewFeedbackSubmitSuccess".</para><code>Neutral  Value: "感谢您的反馈，我们会认真阅读！"</code><code>en-US    Value: "Thank you for your feedback, we will read it carefully!"</code><code>vi-VN    Value: "Cảm ơn phản hồi của bạn, chúng tôi sẽ đọc kỹ!"</code><code>zh-TW    Value: "感謝您的反饋，我們會認真閱讀！"</code></summary>
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ViewGachaLogHeader">
             <summary><para>Looks up a localized string for "ViewGachaLogHeader".</para><code>Neutral  Value: "祈愿记录"</code><code>en-US    Value: "Wish History"</code><code>vi-VN    Value: "Lịch sử Cầu Nguyện"</code><code>zh-TW    Value: "祈願記錄"</code></summary>
@@ -7535,15 +7463,6 @@
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ViewModelSettingCreateDesktopShortcutFailed">
             <summary><para>Looks up a localized string for "ViewModelSettingCreateDesktopShortcutFailed".</para><code>Neutral  Value: "创建桌面快捷方式失败"</code><code>en-US    Value: "Failed to create desktop shortcut"</code><code>vi-VN    Value: "Tạo lối tắt desktop thất bại"</code><code>zh-TW    Value: "建立桌面快捷方式失敗"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewModelSettingFeedbackDescription">
-            <summary><para>Looks up a localized string for "ViewModelSettingFeedbackDescription".</para><code>Neutral  Value: "请选择反馈方式"</code><code>en-US    Value: "Please select a feedback method"</code><code>vi-VN    Value: "Vui lòng chọn hình thức phản hồi"</code><code>zh-TW    Value: "請選擇反饋方式"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewModelSettingFeedbackDeveloperServer">
-            <summary><para>Looks up a localized string for "ViewModelSettingFeedbackDeveloperServer".</para><code>Neutral  Value: "开发者服务器"</code><code>en-US    Value: "Developer server"</code><code>vi-VN    Value: "Máy chủ Nhà phát triển"</code><code>zh-TW    Value: "開發者伺服器"</code></summary>
-        </member>
-        <member name="P:Launcher.Resource.Localization.SH.ViewModelSettingFeedbackTitle">
-            <summary><para>Looks up a localized string for "ViewModelSettingFeedbackTitle".</para><code>Neutral  Value: "反馈"</code><code>en-US    Value: "feedback"</code><code>vi-VN    Value: "Phản hồi"</code><code>zh-TW    Value: "反饋"</code></summary>
         </member>
         <member name="P:Launcher.Resource.Localization.SH.ViewModelSettingFolderSizeDescription">
             <summary><para>Looks up a localized string for "ViewModelSettingFolderSizeDescription".</para><code>Neutral  Value: "已使用磁盘空间：{0}"</code><code>en-US    Value: "Disk space used: {0}"</code><code>vi-VN    Value: "Không gian đĩa đã dùng: {0}"</code><code>zh-TW    Value: "已使用磁碟空間：{0}"</code></summary>
@@ -9253,9 +9172,6 @@
         <member name="P:Launcher.Resource.Localization.SH.WebIndexOrSpiralAbyssVerificationFailed">
             <summary><para>Looks up a localized string for "WebIndexOrSpiralAbyssVerificationFailed".</para><code>Neutral  Value: "验证失败，请手动验证或前往「米游社-旅行工具-原神战绩」页面查看"</code><code>en-US    Value: "Verification failed, please verify manually or go to the "Miyoushe-Travel Tools-Genshin Impact" page to check"</code><code>vi-VN    Value: "Xác minh thất bại, vui lòng xác minh thủ công hoặc tới "HoyoLAB - Công cụ Lữ Hành - Chiến Tích Genshin" để xem"</code><code>zh-TW    Value: "驗證失敗，請手動驗證或前往「米遊社-旅行工具-原神戰績」頁面檢視"</code></summary>
         </member>
-        <member name="P:Launcher.Resource.Localization.SH.WebLauncherServiceUnAvailable">
-            <summary><para>Looks up a localized string for "WebLauncherServiceUnAvailable".</para><code>Neutral  Value: "服务维护中"</code><code>en-US    Value: "Service under maintenance"</code><code>vi-VN    Value: "Dịch vụ đang bảo trì"</code><code>zh-TW    Value: "服務維護中"</code></summary>
-        </member>
         <member name="P:Launcher.Resource.Localization.SH.WebRequestBuilderExceptionDescription">
             <summary><para>Looks up a localized string for "WebRequestBuilderExceptionDescription".</para><code>Neutral  Value: "在请求 {0} 时遇到问题"</code><code>en-US    Value: "There was a problem requesting {0}"</code><code>vi-VN    Value: "Gặp lỗi khi yêu cầu {0}"</code><code>zh-TW    Value: "在請求 {0} 時遇到問題"</code></summary>
         </member>
@@ -9303,15 +9219,6 @@
         </member>
         <member name="P:Launcher.Resource.Localization.SH.WindowIdentifyMonitorHeader">
             <summary><para>Looks up a localized string for "WindowIdentifyMonitorHeader".</para><code>Neutral  Value: "显示器编号"</code><code>en-US    Value: "Monitor number"</code><code>vi-VN    Value: "ID Màn Hình"</code><code>zh-TW    Value: "顯示器編號"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.AppDevNameAndVersion">
-            <summary><para>Looks up a localized string for "AppDevNameAndVersion".</para><code>Neutral  Value: "ky3 Launcher Dev {0}"</code><code>en-US    Value: "ky3 Launcher Dev {0}"</code><code>vi-VN    Value: "ky3 Launcher Dev {0}"</code><code>zh-TW    Value: "ky3 Launcher Dev {0}"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.AppElevatedDevNameAndVersion">
-            <summary><para>Looks up a localized string for "AppElevatedDevNameAndVersion".</para><code>Neutral  Value: "ky3 Launcher Dev {0} [管理员]"</code><code>en-US    Value: "ky3 Launcher Dev {0} [admin]"</code><code>vi-VN    Value: "ky3 Launcher Dev {0} [Quản Trị Viên]"</code><code>zh-TW    Value: "ky3 Launcher Dev {0} [管理員]"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.AppElevatedNameAndVersion">
-            <summary><para>Looks up a localized string for "AppElevatedNameAndVersion".</para><code>Neutral  Value: "ky3 Launcher {0} [管理员]"</code><code>en-US    Value: "ky3 Launcher {0} [admin]"</code><code>vi-VN    Value: "ky3 Launcher {0} [Quản Trị Viên]"</code><code>zh-TW    Value: "ky3 Launcher {0} [管理員]"</code></summary>
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.AppName">
             <summary><para>Looks up a localized string for "AppName".</para><code>Neutral  Value: "ky3 Launcher"</code><code>en-US    Value: "ky3 Launcher"</code><code>zh-TW    Value: "ky3 Launcher"</code></summary>
@@ -9954,9 +9861,6 @@
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ServiceDailyNoteNotifierWeekActiveProgressHint">
             <summary><para>Looks up a localized string for "ServiceDailyNoteNotifierWeekActiveProgressHint".</para><code>Neutral  Value: "本周砺行修远已完成"</code><code>en-US    Value: "This week’s hard work has been completed"</code><code>vi-VN    Value: "Rèn Luyện Tiến Bước tuần này đã hoàn thành"</code><code>zh-TW    Value: "本週礪行修遠已完成"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ServiceFeedbackReplyNotification">
-            <summary><para>Looks up a localized string for "ServiceFeedbackReplyNotification".</para><code>Neutral  Value: "您的反馈已收到回复：{0}"</code><code>en-US    Value: "Your feedback has been responded to: {0}"</code><code>vi-VN    Value: "Phản hồi của bạn đã nhận được trả lời: {0}"</code><code>zh-TW    Value: "您的反饋已收到回覆：{0}"</code></summary>
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ServiceGachaLogAvatarIdNotFound">
             <summary><para>Looks up a localized string for "ServiceGachaLogAvatarIdNotFound".</para><code>Neutral  Value: "未找到角色 ID"</code><code>en-US    Value: "Character ID not found"</code><code>vi-VN    Value: "Không Tìm Thấy ID Nhân Vật"</code><code>zh-TW    Value: "未找到角色 ID"</code></summary>
@@ -10764,24 +10668,6 @@
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ViewExceptionWindowStacktraceHeader">
             <summary><para>Looks up a localized string for "ViewExceptionWindowStacktraceHeader".</para><code>Neutral  Value: "调用堆栈"</code><code>en-US    Value: "call stack"</code><code>vi-VN    Value: "Ngăn xếp lệnh gọi (Stacktrace)"</code><code>zh-TW    Value: "呼叫堆疊"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewFeedbackContentRequired">
-            <summary><para>Looks up a localized string for "ViewFeedbackContentRequired".</para><code>Neutral  Value: "请填写反馈内容"</code><code>en-US    Value: "Please fill in the feedback content"</code><code>vi-VN    Value: "Vui lòng điền nội dung phản hồi"</code><code>zh-TW    Value: "請填寫反饋內容"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewFeedbackNoImageSelected">
-            <summary><para>Looks up a localized string for "ViewFeedbackNoImageSelected".</para><code>Neutral  Value: "未选择图片"</code><code>en-US    Value: "No picture selected"</code><code>vi-VN    Value: "Chưa chọn ảnh"</code><code>zh-TW    Value: "未選擇圖片"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewFeedbackPickImageFilter">
-            <summary><para>Looks up a localized string for "ViewFeedbackPickImageFilter".</para><code>Neutral  Value: "图片文件"</code><code>en-US    Value: "Image files"</code><code>vi-VN    Value: "Tập tin hình ảnh"</code><code>zh-TW    Value: "圖片檔案"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewFeedbackPickImageTitle">
-            <summary><para>Looks up a localized string for "ViewFeedbackPickImageTitle".</para><code>Neutral  Value: "选择反馈图片"</code><code>en-US    Value: "Select feedback image"</code><code>vi-VN    Value: "Chọn ảnh phản hồi"</code><code>zh-TW    Value: "選擇反饋圖片"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewFeedbackSubmitFailed">
-            <summary><para>Looks up a localized string for "ViewFeedbackSubmitFailed".</para><code>Neutral  Value: "提交失败，请检查网络连接后重试"</code><code>en-US    Value: "Submission failed, please check the network connection and try again"</code><code>vi-VN    Value: "Gửi thất bại, vui lòng kiểm tra kết nối mạng rồi thử lại"</code><code>zh-TW    Value: "提交失敗，請檢查網路連線後重試"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewFeedbackSubmitSuccess">
-            <summary><para>Looks up a localized string for "ViewFeedbackSubmitSuccess".</para><code>Neutral  Value: "感谢您的反馈，我们会认真阅读！"</code><code>en-US    Value: "Thank you for your feedback, we will read it carefully!"</code><code>vi-VN    Value: "Cảm ơn phản hồi của bạn, chúng tôi sẽ đọc kỹ!"</code><code>zh-TW    Value: "感謝您的反饋，我們會認真閱讀！"</code></summary>
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ViewGachaLogHeader">
             <summary><para>Looks up a localized string for "ViewGachaLogHeader".</para><code>Neutral  Value: "祈愿记录"</code><code>en-US    Value: "Wish History"</code><code>vi-VN    Value: "Lịch sử Cầu Nguyện"</code><code>zh-TW    Value: "祈願記錄"</code></summary>
@@ -11827,15 +11713,6 @@
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ViewModelSettingCreateDesktopShortcutFailed">
             <summary><para>Looks up a localized string for "ViewModelSettingCreateDesktopShortcutFailed".</para><code>Neutral  Value: "创建桌面快捷方式失败"</code><code>en-US    Value: "Failed to create desktop shortcut"</code><code>vi-VN    Value: "Tạo lối tắt desktop thất bại"</code><code>zh-TW    Value: "建立桌面快捷方式失敗"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewModelSettingFeedbackDescription">
-            <summary><para>Looks up a localized string for "ViewModelSettingFeedbackDescription".</para><code>Neutral  Value: "请选择反馈方式"</code><code>en-US    Value: "Please select a feedback method"</code><code>vi-VN    Value: "Vui lòng chọn hình thức phản hồi"</code><code>zh-TW    Value: "請選擇反饋方式"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewModelSettingFeedbackDeveloperServer">
-            <summary><para>Looks up a localized string for "ViewModelSettingFeedbackDeveloperServer".</para><code>Neutral  Value: "开发者服务器"</code><code>en-US    Value: "Developer server"</code><code>vi-VN    Value: "Máy chủ Nhà phát triển"</code><code>zh-TW    Value: "開發者伺服器"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.ViewModelSettingFeedbackTitle">
-            <summary><para>Looks up a localized string for "ViewModelSettingFeedbackTitle".</para><code>Neutral  Value: "反馈"</code><code>en-US    Value: "feedback"</code><code>vi-VN    Value: "Phản hồi"</code><code>zh-TW    Value: "反饋"</code></summary>
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.ViewModelSettingFolderSizeDescription">
             <summary><para>Looks up a localized string for "ViewModelSettingFolderSizeDescription".</para><code>Neutral  Value: "已使用磁盘空间：{0}"</code><code>en-US    Value: "Disk space used: {0}"</code><code>vi-VN    Value: "Không gian đĩa đã dùng: {0}"</code><code>zh-TW    Value: "已使用磁碟空間：{0}"</code></summary>
@@ -13478,9 +13355,6 @@
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.WebIndexOrSpiralAbyssVerificationFailed">
             <summary><para>Looks up a localized string for "WebIndexOrSpiralAbyssVerificationFailed".</para><code>Neutral  Value: "验证失败，请手动验证或前往「米游社-旅行工具-原神战绩」页面查看"</code><code>en-US    Value: "Verification failed, please verify manually or go to the "Miyoushe-Travel Tools-Genshin Impact" page to check"</code><code>vi-VN    Value: "Xác minh thất bại, vui lòng xác minh thủ công hoặc tới "HoyoLAB - Công cụ Lữ Hành - Chiến Tích Genshin" để xem"</code><code>zh-TW    Value: "驗證失敗，請手動驗證或前往「米遊社-旅行工具-原神戰績」頁面檢視"</code></summary>
-        </member>
-        <member name="F:Launcher.Resource.Localization.SHName.WebLauncherServiceUnAvailable">
-            <summary><para>Looks up a localized string for "WebLauncherServiceUnAvailable".</para><code>Neutral  Value: "服务维护中"</code><code>en-US    Value: "Service under maintenance"</code><code>vi-VN    Value: "Dịch vụ đang bảo trì"</code><code>zh-TW    Value: "服務維護中"</code></summary>
         </member>
         <member name="F:Launcher.Resource.Localization.SHName.WebRequestBuilderExceptionDescription">
             <summary><para>Looks up a localized string for "WebRequestBuilderExceptionDescription".</para><code>Neutral  Value: "在请求 {0} 时遇到问题"</code><code>en-US    Value: "There was a problem requesting {0}"</code><code>vi-VN    Value: "Gặp lỗi khi yêu cầu {0}"</code><code>zh-TW    Value: "在請求 {0} 時遇到問題"</code></summary>

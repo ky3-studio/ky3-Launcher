@@ -11,7 +11,9 @@ namespace Launcher.Win32;
 
 internal readonly unsafe struct LauncherNativeRegistryNotificationCallback
 {
+#pragma warning disable IDE0052
     private readonly delegate* unmanaged[Stdcall]<nint, void> value;
+#pragma warning restore IDE0052
 
     public LauncherNativeRegistryNotificationCallback(delegate* unmanaged[Stdcall]<nint, void> value)
     {

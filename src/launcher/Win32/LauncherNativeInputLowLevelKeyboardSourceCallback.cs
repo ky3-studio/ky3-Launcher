@@ -14,7 +14,9 @@ namespace Launcher.Win32;
 
 internal readonly unsafe struct LauncherNativeInputLowLevelKeyboardSourceCallback
 {
+#pragma warning disable IDE0052
     private readonly delegate* unmanaged[Stdcall]<uint, KBDLLHOOKSTRUCT*, BOOL> value;
+#pragma warning restore IDE0052
 
     public LauncherNativeInputLowLevelKeyboardSourceCallback(delegate* unmanaged[Stdcall]<uint, KBDLLHOOKSTRUCT*, BOOL> value)
     {

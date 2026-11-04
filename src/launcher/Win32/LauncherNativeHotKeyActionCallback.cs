@@ -15,7 +15,9 @@ namespace Launcher.Win32;
 
 internal readonly unsafe struct LauncherNativeHotKeyActionCallback
 {
+#pragma warning disable IDE0052
     private readonly delegate* unmanaged[Stdcall]<BOOL, GCHandle<HotKeyCombination>, void> value;
+#pragma warning restore IDE0052
 
     public LauncherNativeHotKeyActionCallback(delegate* unmanaged[Stdcall]<BOOL, GCHandle<HotKeyCombination>, void> value)
     {

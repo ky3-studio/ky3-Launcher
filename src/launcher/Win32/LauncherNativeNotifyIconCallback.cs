@@ -15,7 +15,9 @@ namespace Launcher.Win32;
 
 internal readonly unsafe struct LauncherNativeNotifyIconCallback
 {
+#pragma warning disable IDE0052
     private readonly delegate* unmanaged[Stdcall]<LauncherNativeNotifyIconCallbackKind, RECT, POINT, GCHandle<NotifyIconController>, void> value;
+#pragma warning restore IDE0052
 
     public LauncherNativeNotifyIconCallback(delegate* unmanaged[Stdcall]<LauncherNativeNotifyIconCallbackKind, RECT, POINT, GCHandle<NotifyIconController>, void> value)
     {

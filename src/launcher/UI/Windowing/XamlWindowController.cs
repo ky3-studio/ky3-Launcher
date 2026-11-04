@@ -151,7 +151,9 @@ internal sealed class XamlWindowController
     [EditorBrowsable(EditorBrowsableState.Never)]
     internal IServiceProvider ServiceProvider { get; }
 
+#pragma warning disable IDE0052
     private IObservableProperty<BackdropType>? BackdropTypeCallback { get; }
+#pragma warning restore IDE0052
 
     public bool TrySetTaskbarProgress(TBPFLAG state, ulong value, ulong maximum)
     {
@@ -168,6 +170,7 @@ internal sealed class XamlWindowController
         }
     }
 
+#pragma warning disable IDE0051
     private static void EnablePlacementRestoration(Window window)
     {
         IObjectReference objRefAppWindowExperimental = Unsafe.As<IWinRTObject>(window.AppWindow).NativeObject.As<IUnknownVftbl>(IAppWindowExperimentalMethods.IID);
@@ -178,6 +181,7 @@ internal sealed class XamlWindowController
         Guid guid = MemoryMarshal.AsRef<Guid>(data);
         IAppWindowExperimentalMethods.set_PersistedStateId(objRefAppWindowExperimental, guid);
     }
+#pragma warning restore IDE0051
 
     private void OnWindowContentLoading(FrameworkElement element, object e)
     {

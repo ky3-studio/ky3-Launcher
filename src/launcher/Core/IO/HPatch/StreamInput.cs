@@ -15,14 +15,14 @@ namespace Launcher.Core.IO.HPatch;
 
 internal unsafe struct StreamInput : IDisposable
 {
-#pragma warning disable CS0169
+#pragma warning disable CS0169, IDE0051, IDE0052
 #pragma warning disable CA1823
     private GCHandle handle;
     private readonly ulong length;
     private readonly delegate* unmanaged[Cdecl]<void*, ulong, byte*, byte*, BOOL> read;
     private readonly void* reserved;
 #pragma warning restore CA1823
-#pragma warning restore CS0169
+#pragma warning restore CS0169, IDE0051, IDE0052
 
     public StreamInput(FileSegment file)
     {

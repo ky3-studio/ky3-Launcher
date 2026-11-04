@@ -767,7 +767,7 @@ internal sealed partial class LauncherHomePage
                 IUserService userService = context.ServiceProvider.GetRequiredService<IUserService>();
 
                 UserAndUid? userAndUid = await userService.GetCurrentUserAndUidAsync().ConfigureAwait(false);
-                await shared.DefaultLaunchExecutionAsync(new LauncherPageLaunchSupport(this, shared), userAndUid).ConfigureAwait(false);
+                await shared.DefaultLaunchExecutionAsync(new LauncherPageLaunchSupport(shared), userAndUid).ConfigureAwait(false);
             }
         }
         catch (Exception ex)
@@ -864,12 +864,10 @@ internal sealed partial class LauncherHomePage
 
     private sealed class LauncherPageLaunchSupport : IViewModelSupportLaunchExecution
     {
-        private readonly LauncherHomePage page;
         private readonly LaunchGameShared shared;
 
-        public LauncherPageLaunchSupport(LauncherHomePage page, LaunchGameShared shared)
+        public LauncherPageLaunchSupport(LaunchGameShared shared)
         {
-            this.page = page;
             this.shared = shared;
         }
 

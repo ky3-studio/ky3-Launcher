@@ -47,7 +47,9 @@ internal static unsafe class MemoryUtilities
 
     private readonly struct PatchCallback
     {
+#pragma warning disable IDE0052
         private readonly delegate* unmanaged[Stdcall]<byte*, int, GCHandle<Action<Span<byte>>>, HRESULT> value;
+#pragma warning restore IDE0052
 
         private PatchCallback(delegate* unmanaged[Stdcall]<byte*, int, GCHandle<Action<Span<byte>>>, HRESULT> value)
         {

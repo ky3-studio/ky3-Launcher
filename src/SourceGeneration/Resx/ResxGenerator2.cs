@@ -26,10 +26,8 @@ namespace Launcher.SourceGeneration.Resx;
 [Generator]
 public sealed class ResxGenerator2 : IIncrementalGenerator
 {
-    private static readonly DiagnosticDescriptor InvalidResx = new("SH401", "Couldn't parse Resx file", "Couldn't parse Resx file '{0}'", "ResxGenerator", DiagnosticSeverity.Warning, true);
     private static readonly DiagnosticDescriptor InvalidPropertiesForNamespace = new("SH402", "Couldn't compute namespace", "Couldn't compute namespace for file '{0}'", "ResxGenerator", DiagnosticSeverity.Warning, true);
     private static readonly DiagnosticDescriptor InvalidPropertiesForResourceName = new("SH403", "Couldn't compute resource name", "Couldn't compute resource name for file '{0}'", "ResxGenerator", DiagnosticSeverity.Warning, true);
-    private static readonly DiagnosticDescriptor InconsistentProperties = new("SH404", "Inconsistent properties", "Property '{0}' values for '{1}' are inconsistent", "ResxGenerator", DiagnosticSeverity.Warning, true);
     private static readonly DiagnosticDescriptor NameShouldNotEndsWithFormat = new("SH405", "Resource data name should not ends with 'Format'", "Resource data '{0}' should not ends with 'Format'", "ResxGenerator", DiagnosticSeverity.Warning, true);
 
     public void Initialize(IncrementalGeneratorInitializationContext context)

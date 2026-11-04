@@ -13,7 +13,9 @@ namespace Launcher.Win32;
 
 internal readonly unsafe struct LauncherNativeHotKeyBeforeSwitchCallback
 {
+#pragma warning disable IDE0052
     private readonly delegate* unmanaged[Stdcall]<BOOL> value;
+#pragma warning restore IDE0052
 
     public LauncherNativeHotKeyBeforeSwitchCallback(delegate* unmanaged[Stdcall]<BOOL> value)
     {

@@ -16,14 +16,14 @@ namespace Launcher.Core.IO.HPatch;
 
 internal unsafe struct Decompress
 {
-#pragma warning disable CS0169
+#pragma warning disable CS0169, CA1823, IDE0051, IDE0052
     private readonly delegate* unmanaged[Cdecl]<PCSTR, BOOL> isCanOpen;
     private readonly delegate* unmanaged[Cdecl]<Decompress*, ulong, StreamInput*, ulong, ulong, GCHandle<ZstandardDecompressStream>> open;
     private readonly delegate* unmanaged[Cdecl]<Decompress*, GCHandle<ZstandardDecompressStream>, BOOL> close;
     private readonly delegate* unmanaged[Cdecl]<GCHandle<ZstandardDecompressStream>, byte*, byte*, BOOL> decompress;
     private readonly delegate* unmanaged[Cdecl]<nint, ulong, StreamInput*, ulong, ulong, BOOL> reset;
     private int error;
-#pragma warning restore CS0169
+#pragma warning restore CS0169, CA1823, IDE0051, IDE0052
 
     public Decompress(
         delegate* unmanaged[Cdecl]<PCSTR, BOOL> isCanOpen,

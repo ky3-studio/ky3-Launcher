@@ -17,9 +17,9 @@ internal readonly struct HotKeyParameter
     public readonly ushort NativeModifiers;
     public readonly VIRTUAL_KEY NativeKey;
 
-#pragma warning disable CS0169
+#pragma warning disable CS0169, CA1823, IDE0051
     private readonly int padding;
-#pragma warning restore CS0169
+#pragma warning restore CS0169, CA1823, IDE0051
 
     public HotKeyParameter(HOT_KEY_MODIFIERS modifiers, VIRTUAL_KEY key)
     {

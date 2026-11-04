@@ -138,7 +138,9 @@ internal sealed partial class XamlWindowSubclass : IDisposable
     {
         public readonly short Low;
         public readonly short High;
+#pragma warning disable IDE0051
         private readonly int reserved;
+#pragma warning restore IDE0051
     }
 
     // ReSharper disable once InconsistentNaming
@@ -146,7 +148,9 @@ internal sealed partial class XamlWindowSubclass : IDisposable
     {
         public readonly short Low;
         public readonly short High;
+#pragma warning disable IDE0051
         private readonly int reserved;
+#pragma warning restore IDE0051
     }
 
 #pragma warning restore CS0649

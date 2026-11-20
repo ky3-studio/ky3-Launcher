@@ -112,6 +112,28 @@ internal sealed partial class GachaLogService : IGachaLogService
     {
         await taskContext.SwitchToBackgroundAsync();
 
+        JsonDocument document;
+        try
+        {
+            document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
+        }
+        catch (JsonException)
+        {
+            return (0, default);
+        }
+
+        using (document)
+        {
+            JsonElement root = document.RootElement;
+            bool hasInfo = root.TryGetProperty("info", out _);
+            bool hasPayload = root.TryGetProperty("hk4e", out _) || root.TryGetProperty("list", out _);
+            if (root.ValueKind != JsonValueKind.Object || !hasInfo || !hasPayload)
+            {
+                return (0, default);
+            }
+        }
+
+        stream.Position = 0;
         UIGFRoot? uigf = await JsonSerializer.DeserializeAsync<UIGFRoot>(stream, Core.Text.Json.JsonOptions.Default).ConfigureAwait(false);
         if (uigf is null)
         {

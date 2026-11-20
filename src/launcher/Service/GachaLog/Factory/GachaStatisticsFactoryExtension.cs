@@ -25,7 +25,7 @@ internal static class GachaStatisticsFactoryExtension
         where TKey : IStatisticsItemConvertible
     {
         return [.. dict
-            .Where(kvp => kvp.Value > 0)
+            .Where(kvp => kvp.Key is not null && kvp.Value > 0)
             .OrderByDescending(kvp => kvp.Value)
             .Select(kvp => kvp.Key.ToStatisticsItem(kvp.Value))];
     }

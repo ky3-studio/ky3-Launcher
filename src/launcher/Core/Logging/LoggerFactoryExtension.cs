@@ -9,6 +9,7 @@
 
 using Launcher.Core.ExceptionService;
 using Launcher.Core.IO.Http.Proxy;
+using Launcher.Core.Setting;
 using Launcher.Win32;
 using System.Runtime.CompilerServices;
 
@@ -30,6 +31,11 @@ internal static class LoggerFactoryExtension
 #else
                 options.Dsn = "https://cf990156535580d59562164163587599@o4511476524974080.ingest.us.sentry.io/4511476529233920";
 #endif
+
+                if (!LocalSetting.Get(SettingKeys.IsCrashReportEnabled, true))
+                {
+                    options.Dsn = string.Empty;
+                }
 
 #if DEBUG
                 options.Debug = true;

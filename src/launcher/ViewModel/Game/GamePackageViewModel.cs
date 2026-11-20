@@ -292,7 +292,10 @@ internal sealed partial class GamePackageViewModel : Abstraction.ViewModel
 
     private async ValueTask<SophonDecodedBuilds?> GetSophonDecodedBuildsAsync(GamePackageOperationKind operationKind, GameBranch branch, IGameFileSystem gameFileSystem)
     {
-        ArgumentNullException.ThrowIfNull(LocalVersion);
+        if (LocalVersion is null)
+        {
+            return null;
+        }
 
         SophonDecodedBuild? localBuild;
         SophonDecodedBuild? remoteBuild;

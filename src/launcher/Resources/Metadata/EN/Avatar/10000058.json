@@ -262,7 +262,8 @@
         "Name": "Spiritfox Sin-Eater",
         "Description": "<color=#FFD780FF>Normal Attack</color>\nSummons forth kitsune spirits, initiating a maximum of 3 attacks that deal <color=#FFACFFFF>Electro DMG</color>.\n\n<color=#FFD780FF>Charged Attack</color>\nConsumes a certain amount of Stamina to deal <color=#FFACFFFF>AoE Electro DMG</color> after a short casting time.\n\n<color=#FFD780FF>Plunging Attack</color>\nPlunges towards the ground from mid-air, damaging all opponents in her path with thunderous might. Deals <color=#FFACFFFF>AoE Electro DMG</color> upon impact with the ground.",
         "SpecialEnergyType": 0,
-        "Icon": "Skill_A_Catalyst_MD"
+        "Icon": "Skill_A_Catalyst_MD",
+        "CdTime": 0
       },
       {
         "GroupId": 5832,
@@ -1156,5 +1157,11 @@
     "Description": "Namecard style.\nWhere can Yae Miko's fox form be found? In your dreams, that's where.",
     "Icon": "UI_NameCardIcon_Yae1",
     "PicturePrefix": "UI_NameCardPic_Yae1"
+  },
+  "TraceEffect": {
+    "Id": 215025,
+    "Name": "Echo: Astute Amusement",
+    "Description": "Yae Miko's Envisaged Echo. \"She has a myriad of forms, revealing the unknown and the unseen... just as how fate shines on me and the endless world.\"",
+    "Icon": "UI_TraceEffectIcon_Yae"
   }
 }

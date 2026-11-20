@@ -32,6 +32,7 @@ internal sealed class ServiceRecipientNavigationViewBehavior : BehaviorBase<Navi
     private const int NavigationCooldownMs = 800;
 
     private static long lastNavigationTimestamp;
+    private static int navigating;
     private IMessenger? messenger;
 
     public void Receive(NavigationNavigateMessage message)
@@ -86,7 +87,10 @@ internal sealed class ServiceRecipientNavigationViewBehavior : BehaviorBase<Navi
         AssociatedObject.PaneOpened += OnPaneStateChanged;
         AssociatedObject.PaneClosed += OnPaneStateChanged;
 
-        Navigate(AssociatedObject, typeof(LauncherHomePage), NavigationExtraData.Default, true);
+        AssociatedObject.DispatcherQueue.TryEnqueue(() =>
+        {
+            Navigate(AssociatedObject, typeof(LauncherHomePage), NavigationExtraData.Default, true);
+        });
     }
 
     protected override bool Uninitialize()
@@ -237,15 +241,22 @@ internal sealed class ServiceRecipientNavigationViewBehavior : BehaviorBase<Navi
         _ = syncNavigationViewItem && SyncSelectedNavigationViewItem(navigationView, pageType);
 
         bool navigated = false;
-        try
+        if (Interlocked.CompareExchange(ref navigating, 1, 0) == 0)
         {
-            navigated = data is ISupportNavigationTransitionInfo { TransitionInfo: { } transitionInfo }
-                ? frame.Navigate(pageType, data, transitionInfo)
-                : frame.Navigate(pageType, data);
-        }
-        catch (Exception ex)
-        {
-            SentrySdk.CaptureException(ex);
+            try
+            {
+                navigated = data is ISupportNavigationTransitionInfo { TransitionInfo: { } transitionInfo }
+                    ? frame.Navigate(pageType, data, transitionInfo)
+                    : frame.Navigate(pageType, data);
+            }
+            catch (Exception ex)
+            {
+                SentrySdk.CaptureException(ex);
+            }
+            finally
+            {
+                Interlocked.Exchange(ref navigating, 0);
+            }
         }
 
         if (navigated)

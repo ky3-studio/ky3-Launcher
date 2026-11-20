@@ -688,6 +688,10 @@ internal partial class AdvancedCollectionView<T> : IAdvancedCollectionView<T>, I
         {
             CurrentChanged?.Invoke(this, default!);
         }
+        catch (ObjectDisposedException)
+        {
+            return;
+        }
         catch (Exception ex)
         {
             // E_FAIL 0x80004005 can happen when moving items around

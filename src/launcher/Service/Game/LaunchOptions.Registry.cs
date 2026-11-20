@@ -7,11 +7,28 @@
 // Modified by ky3-studio.
 // Licensed under the MIT license.
 
+using System.IO;
+
 namespace Launcher.Service.Game;
 
 internal sealed partial class LaunchOptions
 {
     internal bool IsRefreshingFromRegistry { get; private set; }
+
+    private static string[] GetValueNamesWithRetry(Microsoft.Win32.RegistryKey key)
+    {
+        for (int attempt = 0; ; attempt++)
+        {
+            try
+            {
+                return key.GetValueNames();
+            }
+            catch (Exception ex) when ((ex is IOException or System.ComponentModel.Win32Exception) && attempt < 2)
+            {
+                System.Threading.Thread.Sleep(30);
+            }
+        }
+    }
 
     public void LoadGameResolutionFromConfig(string gameDirectory)
     {
@@ -49,7 +66,7 @@ internal sealed partial class LaunchOptions
                 string? widthName = null;
                 string? heightName = null;
 
-                foreach (string name in key.GetValueNames())
+                foreach (string name in GetValueNamesWithRetry(key))
                 {
                     if (name.Contains("Width") && !name.Contains("Graphics"))
                     {
@@ -80,6 +97,10 @@ internal sealed partial class LaunchOptions
 
                 return;
             }
+        }
+        catch (Exception ex) when (ex is IOException or System.ComponentModel.Win32Exception)
+        {
+            SentrySdk.AddBreadcrumb($"Registry transient error: {ex.Message}", category: "LaunchOptions", level: BreadcrumbLevel.Warning);
         }
         catch (Exception ex)
         {
@@ -117,7 +138,7 @@ internal sealed partial class LaunchOptions
                     continue;
                 }
 
-                foreach (string name in key.GetValueNames())
+                foreach (string name in GetValueNamesWithRetry(key))
                 {
                     if (name.Contains("Fullscreen"))
                     {
@@ -136,6 +157,10 @@ internal sealed partial class LaunchOptions
 
                 return;
             }
+        }
+        catch (Exception ex) when (ex is IOException or System.ComponentModel.Win32Exception)
+        {
+            SentrySdk.AddBreadcrumb($"Registry write transient error: {ex.Message}", category: "LaunchOptions", level: BreadcrumbLevel.Warning);
         }
         catch (Exception ex)
         {

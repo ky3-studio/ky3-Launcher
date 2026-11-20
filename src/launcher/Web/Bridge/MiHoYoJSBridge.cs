@@ -136,10 +136,13 @@ internal partial class MiHoYoJSBridge
         }
 
         await taskContext.SwitchToMainThreadAsync();
-        ArgumentNullException.ThrowIfNull(coreWebView2);
+        if (coreWebView2 is null || userAndUid.User.CookieToken is null)
+        {
+            return new JsResult<Dictionary<string, string>>();
+        }
+
         coreWebView2.SetCookie(userAndUid.User.CookieToken, userAndUid.User.LToken);
 
-        ArgumentNullException.ThrowIfNull(userAndUid.User.CookieToken);
         return new JsResult<Dictionary<string, string>>()
         {
             Data = new()

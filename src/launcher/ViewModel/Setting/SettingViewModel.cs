@@ -15,6 +15,7 @@ using Launcher.Core.ApplicationModel;
 using Launcher.Core.LifeCycle;
 using Launcher.Core.Logging;
 using Launcher.Core.Shell;
+using Launcher.Core.Setting;
 using Launcher.Service.Navigation;
 using Launcher.Service.Notification;
 using Launcher.Service.Update;
@@ -105,6 +106,21 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
         }
     }
 
+    public bool IsCrashReportEnabled
+    {
+        get => LocalSetting.Get(SettingKeys.IsCrashReportEnabled, true);
+        set
+        {
+            if (LocalSetting.Get(SettingKeys.IsCrashReportEnabled, true) == value)
+            {
+                return;
+            }
+
+            LocalSetting.Set(SettingKeys.IsCrashReportEnabled, value);
+            OnPropertyChanged(nameof(IsCrashReportEnabled));
+        }
+    }
+
     public void AttachXamlElement(ScrollViewer scrollViewer)
     {
         weakScrollViewer.SetTarget(scrollViewer);
@@ -168,6 +184,7 @@ internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigat
 
             OnPropertyChanged(nameof(RunElevated));
             OnPropertyChanged(nameof(IsStartupEnabled));
+            OnPropertyChanged(nameof(IsCrashReportEnabled));
         }
         catch (Exception ex)
         {

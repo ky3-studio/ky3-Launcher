@@ -149,7 +149,14 @@ internal sealed partial class NotifyIconController : IDisposable
             return;
         }
 
-        native.Recreate("ky3 Launcher");
+        try
+        {
+            native.Recreate("ky3 Launcher");
+        }
+        catch (Exception ex) when (ex is COMException or ObjectDisposedException)
+        {
+            SentrySdk.AddBreadcrumb($"Notify icon recreate transient: {ex.Message}", category: "NotifyIcon", level: BreadcrumbLevel.Warning);
+        }
     }
 
     private void OnContextMenuRequested(RECT icon, POINT point)

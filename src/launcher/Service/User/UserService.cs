@@ -91,7 +91,17 @@ internal sealed partial class UserService : IUserService
     public async ValueTask<bool> RefreshCookieTokenAsync(EntityUser user)
     {
         UidCookieToken? uidCookieToken;
-        using (IServiceScope scope = serviceProvider.CreateScope())
+        IServiceScope scope;
+        try
+        {
+            scope = serviceProvider.CreateScope();
+        }
+        catch (ObjectDisposedException)
+        {
+            return false;
+        }
+
+        using (scope)
         {
             IPassportClient passportClient = scope.ServiceProvider
                 .GetRequiredService<IOverseaSupportFactory<IPassportClient>>()

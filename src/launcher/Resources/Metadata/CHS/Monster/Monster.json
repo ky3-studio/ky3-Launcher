@@ -597,7 +597,7 @@
     "Id": 0,
     "DescribeId": 62801,
     "Name": "巴窟纳瓦",
-    "Title": "巡陆艇·强侦地效型",
+    "Title": "？？？",
     "Icon": "UI_MonsterIcon_LavaTitan_01",
     "Type": 0,
     "Arkhe": 0
@@ -3685,6 +3685,47 @@
     ]
   },
   {
+    "Id": 20090101,
+    "DescribeId": 901,
+    "MonsterName": "Crystalian_01",
+    "Name": "冰结镜映体",
+    "Title": "冰结镜映体",
+    "Description": "于特殊的冰雪中生长而出的奇特魔物。\n自相当久远的过去，某种残存于至冬的伟大力量令风雪之中生长出此等魔物，只是不知为何，本应随着身躯成长一同诞生的意志却并未自冰雪的身躯深处浮现。或许是因为令其生命能够诞生的意志已死去太久所致吧。",
+    "Icon": "UI_MonsterIcon_Crystalian_01",
+    "Type": 1,
+    "Arkhe": 0,
+    "Affixes": [
+      "通用的特效表现"
+    ],
+    "BaseValue": {
+      "HpBase": 122.256,
+      "AttackBase": 62.8,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.3,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 23
+      },
+      {
+        "Type": 4,
+        "Value": 24
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
     "Id": 21010101,
     "DescribeId": 10101,
     "MonsterName": "Hili_None_01",
@@ -4310,6 +4351,85 @@
     ]
   },
   {
+    "Id": 21020101,
+    "DescribeId": 10201,
+    "MonsterName": "Brute_None_Shield",
+    "Name": "木盾丘丘暴徒",
+    "Title": "丘丘暴徒·木盾",
+    "Description": "经历无数战斗历练的丘丘人大块头。\n会利用草史莱姆创造坚固的木盾，进行战斗。\n拥有强健的肌肉，油亮的鬃毛，可靠的宽厚背影，一顿饭吃下很多肉的豪放，能为丘丘人抵挡毫不留情的冒险者，在部族当中有着相当崇高的地位。",
+    "Icon": "UI_MonsterIcon_Brute_None_01",
+    "Type": 1,
+    "Arkhe": 0,
+    "BaseValue": {
+      "HpBase": 40.752,
+      "AttackBase": 30.144,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.3
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 1
+      },
+      {
+        "Type": 4,
+        "Value": 2
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 21020201,
+    "DescribeId": 10202,
+    "MonsterName": "Brute_None_Axe",
+    "Name": "火斧丘丘暴徒",
+    "Title": "丘丘暴徒·火斧",
+    "Description": "手持长柄大斧的丘丘人大块头。\n攻击大开大合，会利用火史莱姆为战斧附上火元素，具有强大的破坏力。\n通常，像火斧丘丘暴徒这样为武器反复淬火会导致钢铁的硬度下降，进而导致刃口容易受损。但丘丘暴徒的力量足够强大，斧子就算刃口没了也可以当锤子用。",
+    "Icon": "UI_MonsterIcon_Brute_None_01",
+    "Type": 1,
+    "Arkhe": 0,
+    "Affixes": [
+      "免疫点燃伤害"
+    ],
+    "BaseValue": {
+      "HpBase": 40.752,
+      "AttackBase": 60.288,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.3
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 1
+      },
+      {
+        "Type": 4,
+        "Value": 2
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
     "Id": 21020301,
     "DescribeId": 10203,
     "MonsterName": "Brute_None_RockShield",
@@ -4347,6 +4467,82 @@
       "IceSubHurt": 0.1,
       "RockSubHurt": 0.1,
       "PhysicalSubHurt": 0.3
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 1
+      },
+      {
+        "Type": 4,
+        "Value": 2
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 21020401,
+    "DescribeId": 10204,
+    "MonsterName": "Brute_Ice_None",
+    "Name": "丘丘霜铠王",
+    "Title": "丘丘霜铠王",
+    "Description": "雪雾中漫行的神秘「王者」。\n被同胞称为「Lawa」的庞大丘丘人。锻炼至极致的肉身似乎已和环境中满溢的冰元素相互融合，沉默威严有如北国的冰川。",
+    "Icon": "UI_MonsterIcon_Brute_Ice_01",
+    "Type": 1,
+    "Arkhe": 0,
+    "BaseValue": {
+      "HpBase": 122.256,
+      "AttackBase": 150.72,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.7,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.5
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 1
+      },
+      {
+        "Type": 4,
+        "Value": 2
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 21020501,
+    "DescribeId": 10205,
+    "MonsterName": "Brute_Rock_None",
+    "Name": "丘丘岩盔王",
+    "Title": "丘丘岩盔王",
+    "Description": "千嶂中漫行的神秘「王者」。\n被同胞称为「Lawa」的庞大丘丘人。环境中增生的岩元素化成了它们身体的一部分，仿佛血肉与皮肤皆由不移的山岩雕琢而成。",
+    "Icon": "UI_MonsterIcon_Brute_Rock_None",
+    "Type": 1,
+    "Arkhe": 0,
+    "BaseValue": {
+      "HpBase": 122.256,
+      "AttackBase": 113.04,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.7,
+      "PhysicalSubHurt": 0.5
     },
     "GrowCurves": [
       {
@@ -4455,6 +4651,44 @@
       "IceSubHurt": 0.1,
       "RockSubHurt": 0.1,
       "PhysicalSubHurt": 0.3
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 1
+      },
+      {
+        "Type": 4,
+        "Value": 2
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 21020801,
+    "DescribeId": 10208,
+    "MonsterName": "Brute_Electric_None",
+    "Name": "丘丘雷兜王",
+    "Title": "丘丘雷兜王",
+    "Description": "雷暴中漫行的神秘「王者」。\n被同胞称为「Lawa」的庞大丘丘人。巨像般的身躯充满了丰富的雷元素，散逸出的元素能量以电气水晶的形式从身体的缝隙中生长出来。",
+    "Icon": "UI_MonsterIcon_Brute_Electric_01",
+    "Type": 1,
+    "Arkhe": 0,
+    "BaseValue": {
+      "HpBase": 122.256,
+      "AttackBase": 150.72,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.7,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.5
     },
     "GrowCurves": [
       {
@@ -4908,6 +5142,126 @@
       {
         "Type": 4,
         "Value": 24
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 22010101,
+    "DescribeId": 20101,
+    "MonsterName": "Abyss_Fire_01",
+    "Name": "火深渊法师",
+    "Title": "火之咏者",
+    "Description": "拥有魔力，利用火元素战斗的深渊魔物。\n出于某种不为人知的缘由，深渊法师精通丘丘人的笨拙语言，能驾驭它们的心智。据说深渊法师略通如今几乎无人可解的失落古语，并利用这种语言的力量行使魔法。",
+    "Icon": "UI_MonsterIcon_Abyss_Fire_01",
+    "Type": 1,
+    "Arkhe": 0,
+    "Affixes": [
+      "免疫点燃伤害"
+    ],
+    "BaseValue": {
+      "HpBase": 27.168,
+      "AttackBase": 56.52,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 1
+      },
+      {
+        "Type": 4,
+        "Value": 2
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 22010201,
+    "DescribeId": 20102,
+    "MonsterName": "Abyss_Ice_01",
+    "Name": "冰深渊法师",
+    "Title": "冰之咏者",
+    "Description": "驾驭着极寒的冰元素进行战斗的深渊魔物。\n尽管染指了强大的力量，甚至能将大气中的水蒸气凝结成冰锥，本身却佝偻而孱弱。一旦保护自身的护罩被打破，就只能任人鱼肉了。",
+    "Icon": "UI_MonsterIcon_Abyss_Ice_01",
+    "Type": 1,
+    "Arkhe": 0,
+    "Affixes": [
+      "免疫冰冻和寒元素的减速效果"
+    ],
+    "BaseValue": {
+      "HpBase": 27.168,
+      "AttackBase": 37.68,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 1
+      },
+      {
+        "Type": 4,
+        "Value": 2
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 22010301,
+    "DescribeId": 20103,
+    "MonsterName": "Abyss_Water_01",
+    "Name": "水深渊法师",
+    "Title": "水之咏者",
+    "Description": "利用水元素战斗的深渊魔物。\n在冒险者当中有传说说，深渊法师作为「深渊教团」底层的执行者，活跃在世界各地、从事各种阴谋破坏。尽管他们还戏称这种水深渊法师的最大危害是会导致风湿发作，其实它们有着不容小觑的力量。",
+    "Icon": "UI_MonsterIcon_Abyss_Water_01",
+    "Type": 1,
+    "Arkhe": 0,
+    "BaseValue": {
+      "HpBase": 27.168,
+      "AttackBase": 37.68,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 1
+      },
+      {
+        "Type": 4,
+        "Value": 2
       },
       {
         "Type": 7,
@@ -6282,6 +6636,44 @@
     ]
   },
   {
+    "Id": 23010101,
+    "DescribeId": 30101,
+    "MonsterName": "Skirmisher_Male_Fat_SprayGun_Ice_01",
+    "Name": "愚人众先遣队·冰铳重卫士",
+    "Title": "先遣队·冰铳重卫士",
+    "Description": "愚人众战争机器中的士兵。\n配备着能在一定程度上制御元素的装备，可以利用铳形的武器喷射急冻的寒霜。\n虽然拥有常人不能企及的元素力量，但这种力量或许也是有其代价的吧…",
+    "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Ice_01",
+    "Type": 1,
+    "Arkhe": 0,
+    "BaseValue": {
+      "HpBase": 54.336,
+      "AttackBase": 37.68,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": -0.2
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 1
+      },
+      {
+        "Type": 4,
+        "Value": 2
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
     "Id": 23010201,
     "DescribeId": 30102,
     "MonsterName": "Skirmisher_Male_Fat_SprayGun_Water_01",
@@ -6326,6 +6718,82 @@
     ]
   },
   {
+    "Id": 23010301,
+    "DescribeId": 30103,
+    "MonsterName": "Skirmisher_Male_Strong_GreatHammer_Electric_01",
+    "Name": "愚人众先遣队·雷锤前锋军",
+    "Title": "先遣队·雷锤前锋军",
+    "Description": "体格健壮的先遣队士兵，装备了附有雷元素的战锤。\n成为愚人众的军人意味着优渥的资源：军饷、武装与物资。\n但与此同时，也意味着远离故土与亲眷，将余命交给过去不曾谋面的战友。",
+    "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_GreatHammer_Electric_01",
+    "Type": 1,
+    "Arkhe": 0,
+    "BaseValue": {
+      "HpBase": 54.336,
+      "AttackBase": 75.36,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": -0.2
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 1
+      },
+      {
+        "Type": 4,
+        "Value": 2
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 23010401,
+    "DescribeId": 30104,
+    "MonsterName": "Skirmisher_Male_Standard_Staff_Rock_01",
+    "Name": "愚人众先遣队·岩使游击兵",
+    "Title": "先遣队·岩使游击兵",
+    "Description": "能驱使岩元素构成护罩，保护战友的先遣队士兵。\n不同于少数精锐的债务处理人与萤术士，先遣队的单兵实力与装备较为薄弱。\n为了完成任务，为了减少人员与物资的损耗，先遣队的战术更讲究团队协作。",
+    "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Staff_Rock_01",
+    "Type": 1,
+    "Arkhe": 0,
+    "BaseValue": {
+      "HpBase": 40.752,
+      "AttackBase": 37.68,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": -0.2
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 1
+      },
+      {
+        "Type": 4,
+        "Value": 2
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
     "Id": 23010501,
     "DescribeId": 30105,
     "MonsterName": "Skirmisher_Male_Strong_Gloves_Wind_01",
@@ -6344,6 +6812,44 @@
     "BaseValue": {
       "HpBase": 40.752,
       "AttackBase": 75.36,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": -0.2
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 1
+      },
+      {
+        "Type": 4,
+        "Value": 2
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 23010601,
+    "DescribeId": 30106,
+    "MonsterName": "Skirmisher_Male_Standard_Rifle_Fire_01",
+    "Name": "愚人众先遣队·火铳游击兵",
+    "Title": "先遣队·火铳游击兵",
+    "Description": "操使着烈焰之铳的愚人众士兵。\n先遣队配置的武器在一定程度上能制御元素，战斗策略上则会利用元素反应。\n因为拥有这样的武装与知识，先遣队团队作战时能带来无法小觑的威胁。",
+    "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Rifle_Fire_01",
+    "Type": 1,
+    "Arkhe": 0,
+    "BaseValue": {
+      "HpBase": 40.752,
+      "AttackBase": 56.52,
       "DefenseBase": 500,
       "FireSubHurt": 0.1,
       "GrassSubHurt": 0.1,
@@ -7187,7 +7693,7 @@
     ]
   },
   {
-    "Id": 23070251,
+    "Id": 23070250,
     "DescribeId": 30709,
     "MonsterName": "Monster_ExplosiveDrone_01",
     "Name": "霆雷·自毁游荡机械",
@@ -7196,7 +7702,7 @@
     "Type": 1,
     "Arkhe": 0,
     "Affixes": [
-      "愚人众小车词缀-雷",
+      "愚人众小车词缀-水",
       "TPS-怪通用逻辑标记GV_Entity_In_TheGrey"
     ],
     "BaseValue": {
@@ -8090,6 +8596,44 @@
     ]
   },
   {
+    "Id": 24010101,
+    "DescribeId": 40101,
+    "MonsterName": "Defender_None_01",
+    "Name": "遗迹守卫",
+    "Title": "遗迹守卫",
+    "Description": "古老的人形战斗机械。\n传说是已经覆灭的国度留下的战争机械，会徘徊至世界各地的遗迹废都，并攻击冒失的旅人。研究表明遗迹守卫与这些废墟并非同源，表明两者的时代也相差至少数千年，为何遗迹守卫会驻留在其中，并以「爆炸性的火力」守护这些残垣断壁呢…",
+    "Icon": "UI_MonsterIcon_Defender_Noner_01",
+    "Type": 1,
+    "Arkhe": 0,
+    "BaseValue": {
+      "HpBase": 95.088,
+      "AttackBase": 60.288,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.7
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 1
+      },
+      {
+        "Type": 4,
+        "Value": 2
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
     "Id": 24010201,
     "DescribeId": 40102,
     "MonsterName": "Formathr_None",
@@ -8111,6 +8655,44 @@
       "IceSubHurt": 0.1,
       "RockSubHurt": 0.1,
       "PhysicalSubHurt": 0.5
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 1
+      },
+      {
+        "Type": 4,
+        "Value": 2
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 24010301,
+    "DescribeId": 40103,
+    "MonsterName": "Konungmathr_None",
+    "Name": "遗迹重机",
+    "Title": "遗迹重机",
+    "Description": "古老的人形战斗机械。\n形态与遗迹守卫相似，但形态更为扭曲、力量更为强大。似乎是为了驱动过于沉重的躯体，在双脚上还额外装配了能量核心。",
+    "Icon": "UI_MonsterIcon_Konungmathr",
+    "Type": 1,
+    "Arkhe": 0,
+    "BaseValue": {
+      "HpBase": 122.256,
+      "AttackBase": 87.92,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.7
     },
     "GrowCurves": [
       {
@@ -8400,6 +8982,44 @@
     ]
   },
   {
+    "Id": 24030101,
+    "DescribeId": 40301,
+    "MonsterName": "Gargoyle_Airborne_01",
+    "Name": "遗迹龙兽·空巡",
+    "Title": "遗迹龙兽·空巡",
+    "Description": "令人望而生畏的龙形战斗机械。\n传说是已经覆灭的国度留下的战争机械。形态上模仿了「龙蜥」这一物种，但为了性能进行了结构的优化。较之真正的龙蜥，具有更强的「吸收」，抑或是说「反制」元素的能力。\n能创造出这样可怕兵器的文明，又会因为什么而覆灭呢…",
+    "Icon": "UI_MonsterIcon_Gargoyle",
+    "Type": 1,
+    "Arkhe": 0,
+    "BaseValue": {
+      "HpBase": 67.92,
+      "AttackBase": 62.8,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.5
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 23
+      },
+      {
+        "Type": 4,
+        "Value": 24
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
     "Id": 24030201,
     "DescribeId": 40302,
     "MonsterName": "Gargoyle_Ground_01",
@@ -8644,14 +9264,14 @@
       "HpBase": 46.1856,
       "AttackBase": 45.216,
       "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
     },
     "GrowCurves": [
       {
@@ -8758,14 +9378,14 @@
       "HpBase": 217.344,
       "AttackBase": 82.896,
       "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
     },
     "GrowCurves": [
       {
@@ -11782,6 +12402,47 @@
     ]
   },
   {
+    "Id": 25090101,
+    "DescribeId": 50901,
+    "MonsterName": "Samurai_Ningyo_01",
+    "Name": "魔偶剑鬼",
+    "Title": "魔偶剑鬼",
+    "Description": "自律的人形机关剑士。\n似乎没有说话的能力与意愿，只愿意用剑沟通。\n据说在试作时，集成了某个剑道流派初代宗主的记忆，却又因为不明的原因而失控，最终被废弃了。\n根据歌人的描述，剑鬼会徘徊在因缘断绝的地方，而守护它的凶恶之面似乎取自那个时代有名的鬼人。",
+    "Icon": "UI_MonsterIcon_Samurai_Ningyo",
+    "Type": 2,
+    "Arkhe": 0,
+    "Affixes": [
+      "傀儡将军强制后撤词缀"
+    ],
+    "BaseValue": {
+      "HpBase": 271.68,
+      "AttackBase": 100.48,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 1
+      },
+      {
+        "Type": 4,
+        "Value": 24
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
     "Id": 25090201,
     "DescribeId": 50902,
     "MonsterName": "Samurai_Ningyo_02",
@@ -12489,14 +13150,14 @@
       "HpBase": 17.6592,
       "AttackBase": 20.096,
       "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
     },
     "GrowCurves": [
       {
@@ -12723,14 +13384,137 @@
       "HpBase": 28.5264,
       "AttackBase": 25.12,
       "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 23
+      },
+      {
+        "Type": 4,
+        "Value": 24
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 25132901,
+    "DescribeId": 51329,
+    "MonsterName": "Volkodlak_Sheepdog_02",
+    "Name": "百战兽众·狮獒护卫",
+    "Title": "百战兽众·狮獒护卫",
+    "Icon": "UI_MonsterIcon_Volkodlak_Sheepdog_02",
+    "Type": 1,
+    "Arkhe": 0,
+    "Affixes": [
+      "通用的特效表现",
+      "地方传奇标记"
+    ],
+    "BaseValue": {
+      "HpBase": 1059.552,
+      "AttackBase": 57.776,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.5,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 23
+      },
+      {
+        "Type": 4,
+        "Value": 24
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 25133001,
+    "DescribeId": 51330,
+    "MonsterName": "Volkodlak_Arctichare_02",
+    "Name": "百战兽众·长耳强袭者",
+    "Title": "百战兽众·长耳强袭者",
+    "Icon": "UI_MonsterIcon_Volkodlak_Arctichare_02",
+    "Type": 1,
+    "Arkhe": 0,
+    "Affixes": [
+      "通用的特效表现",
+      "地方传奇标记"
+    ],
+    "BaseValue": {
+      "HpBase": 774.288,
+      "AttackBase": 70.336,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.5,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 23
+      },
+      {
+        "Type": 4,
+        "Value": 24
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 25133101,
+    "DescribeId": 51331,
+    "MonsterName": "Volkodlak_Beaver_02",
+    "Name": "百战兽众·渠道联络人",
+    "Title": "百战兽众·渠道联络人",
+    "Icon": "UI_MonsterIcon_Volkodlak_Beaver_02",
+    "Type": 1,
+    "Arkhe": 0,
+    "Affixes": [
+      "通用的特效表现",
+      "地方传奇标记"
+    ],
+    "BaseValue": {
+      "HpBase": 855.792,
+      "AttackBase": 62.8,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.5,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
     },
     "GrowCurves": [
       {
@@ -12896,6 +13680,47 @@
       "WindSubHurt": 0.1,
       "IceSubHurt": 0.4,
       "RockSubHurt": 0.4,
+      "PhysicalSubHurt": 0.1
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 23
+      },
+      {
+        "Type": 4,
+        "Value": 24
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 25134601,
+    "DescribeId": 51346,
+    "MonsterName": "Volkodlak_Whale_01",
+    "Name": "浪涛锚定者",
+    "Title": "浪涛锚定者",
+    "Description": "为实现远古文明在水中自由探索的伟愿，因而诞生的力大无匹的兽怪。\n为了在水中亦能行动自如，所拥有的是足以承担深海重压的躯体和足以对抗无形暗流的力量。\n据说在最初，拥有这种血脉的兽怪身躯过于庞大而很难存活。血脉被稀释的如今，这类兽怪终于能在陆上行动，不过也失去了能够长久在水中潜行的能力。",
+    "Icon": "UI_MonsterIcon_Volkodlak_Whale",
+    "Type": 2,
+    "Arkhe": 0,
+    "Affixes": [
+      "通用的特效表现"
+    ],
+    "BaseValue": {
+      "HpBase": 393.936,
+      "AttackBase": 100.48,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.7,
+      "ElecSubHurt": -0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
       "PhysicalSubHurt": 0.1
     },
     "GrowCurves": [
@@ -13150,6 +13975,91 @@
       "WindSubHurt": 0.1,
       "IceSubHurt": 0.1,
       "RockSubHurt": 0.3,
+      "PhysicalSubHurt": 0.1
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 23
+      },
+      {
+        "Type": 4,
+        "Value": 24
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 25137102,
+    "DescribeId": 51371,
+    "MonsterName": "Leshy_Mature_Disaster_01",
+    "Name": "历经百战的厄生古树种",
+    "Title": "历经百战的厄生古树种",
+    "Icon": "UI_MonsterIcon_Leshy_Mature_Disaster",
+    "Type": 1,
+    "Arkhe": 0,
+    "Affixes": [
+      "通用的特效表现",
+      "7.2 灾厄树灵Ban大招",
+      "灾厄树灵永续强化",
+      "岩元素盾受岩攻击扣除岩盾翻倍"
+    ],
+    "BaseValue": {
+      "HpBase": 266.27356,
+      "AttackBase": 82.896,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.3,
+      "PhysicalSubHurt": 0.1
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 23
+      },
+      {
+        "Type": 4,
+        "Value": 24
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 25137201,
+    "DescribeId": 51372,
+    "MonsterName": "Leshy_Mature_Disaster_01",
+    "Name": "「永恒蔓生的幻景」",
+    "Title": "「永恒蔓生的幻景」",
+    "Icon": "UI_MonsterIcon_Leshy_Mature_Disaster",
+    "Type": 1,
+    "Arkhe": 0,
+    "Affixes": [
+      "通用的特效表现",
+      "岩元素盾受岩攻击扣除岩盾翻倍",
+      "TPS-怪通用逻辑标记GV_Entity_In_TheGrey"
+    ],
+    "BaseValue": {
+      "HpBase": 100.58158,
+      "AttackBase": 90.11659,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
       "PhysicalSubHurt": 0.1
     },
     "GrowCurves": [
@@ -17111,14 +18021,14 @@
       "HpBase": 95.088,
       "AttackBase": 75.36,
       "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
     },
     "GrowCurves": [
       {
@@ -17149,14 +18059,14 @@
       "HpBase": 95.088,
       "AttackBase": 75.36,
       "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
     },
     "GrowCurves": [
       {
@@ -17359,14 +18269,14 @@
       "HpBase": 190.176,
       "AttackBase": 87.92,
       "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
+      "FireSubHurt": 0.25,
+      "GrassSubHurt": 0.8,
+      "WaterSubHurt": 0.25,
+      "ElecSubHurt": 0.25,
+      "WindSubHurt": 0.25,
+      "IceSubHurt": 0.25,
+      "RockSubHurt": 0.25,
+      "PhysicalSubHurt": 0.25
     },
     "GrowCurves": [
       {
@@ -17406,14 +18316,14 @@
       "HpBase": 27.168,
       "AttackBase": 37.68,
       "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.4,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
     },
     "GrowCurves": [
       {
@@ -19015,18 +19925,15 @@
     ]
   },
   {
-    "Id": 26200202,
+    "Id": 26200201,
     "DescribeId": 62002,
-    "MonsterName": "Monster_Natsaurus_Drillhead_Normal_01_02",
+    "MonsterName": "Monster_Natsaurus_Drillhead_Normal_01",
     "Name": "嵴锋龙",
     "Title": "嵴锋龙",
+    "Description": "拥有钻角与坚爪，能够在山石与固态燃素中穿梭的龙。\n传说中，嵴锋龙的祖先是山一般巨大的龙兽，拥有相当漫长的寿命，沉睡时，群山在其背脊上成型，苏醒时，就会抖落身上的泥土与沉岩，唯留宝石与美玉在鳞角中熠熠生辉。「回声之子」部族中巨大的钻状物，据说是那时龙兽巨大钻角的遗留。",
     "Icon": "UI_MonsterIcon_Natsaurus_Drillhead_Normal",
     "Type": 1,
     "Arkhe": 0,
-    "Affixes": [
-      "5.0深渊shader怪 通用特效",
-      "使怪物在被冻结、石化时材质过渡为瞬间完成"
-    ],
     "BaseValue": {
       "HpBase": 40.752,
       "AttackBase": 37.68,
@@ -19437,11 +20344,12 @@
     ]
   },
   {
-    "Id": 26240102,
+    "Id": 26240101,
     "DescribeId": 62401,
     "MonsterName": "Monster_Natsaurus_Shamansaurus_Small_01",
     "Name": "幼暝视龙",
     "Title": "幼暝视龙",
+    "Description": "年幼的暝视龙，拥有细腻的感知力。\n尚未生长出覆羽，甚至看上去并不聪慧。据说暝视龙在现有的龙众中拥有最漫长的寿命，也拥有更长的幼年期。它们拥有与夜神之国或是大灵沟通的能力，只不过年幼的暝视龙要能够理解其中的一切或许还需经历许多岁月。",
     "Icon": "UI_MonsterIcon_Natsaurus_Shamansaurus_Small",
     "Type": 1,
     "Arkhe": 0,
@@ -20498,7 +21406,7 @@
     "DescribeId": 62901,
     "MonsterName": "Monster_VolcanoWeasel_01",
     "Name": "炉壳山鼬",
-    "Title": "巡陆艇·强侦地效型",
+    "Title": "炉壳山鼬",
     "Description": "因生活在与外界隔绝的特殊燃素环境之内，而拥有特殊形态的古代种山鼬。\n通过进食富含燃素的生物，不断向背壳之中积蓄力量的古代兽种。于圣山废墟的长久生活之中，似乎由于独特的亲近燃素的性质，逐渐被圣山废墟之中的秘源机关影响，形成了独有的与秘源机关互相依附的生存状态。",
     "Icon": "UI_MonsterIcon_VolcanoWeasel",
     "Type": 1,
@@ -20549,7 +21457,7 @@
     "DescribeId": 63001,
     "MonsterName": "Monster_Magbeast_Argali_01",
     "Name": "蕴光奇羊",
-    "Title": "巡陆艇·强侦地效型",
+    "Title": "蕴光异兽",
     "Description": "长久浸浴古老月之力而演化出独特生态的魔兽。\n在月光眷顾的土地上曾降下异雷，而原本凡弱的奇羊也因此而获得了驱使雷电的能力。据说也曾有人目睹奇羊立于雷暴汇聚的崖边，主动吸引雷电淬炼己身的奇异景象。",
     "Icon": "UI_MonsterIcon_Magbeast_Argali",
     "Type": 1,
@@ -20600,7 +21508,7 @@
     "DescribeId": 63002,
     "MonsterName": "Monster_Magbeast_Rhino_01",
     "Name": "蕴光刃犀",
-    "Title": "巡陆艇·强侦地效型",
+    "Title": "蕴光异兽",
     "Description": "长久浸浴古老月之力而演化出独特生态的魔兽。\n据说从前，在边界之地曾被漆黑的阴影笼罩之时，唯有巨犀能通过族群的奔行将可令万物流转的力量重新带回此处…而这也是月光降下恩赐后，向它们索求的唯一的报答。",
     "Icon": "UI_MonsterIcon_Magbeast_Rhino",
     "Type": 1,
@@ -21171,6 +22079,88 @@
     ]
   },
   {
+    "Id": 26310701,
+    "DescribeId": 63107,
+    "MonsterName": "Monster_Chimera_CrocodileBoar",
+    "Name": "嵌合鳄蹄兽",
+    "Title": "残体合成造兽",
+    "Description": "冻土之上一度盛行的生物炼金的产物，异种合成魔兽。\n以「陆上的凶兽」为概念而制造的合成兽兵，从一开始就是为了能够在战场上大量投放而被制造了出来，四蹄是为与高速行进的兽潮相撞，巨大的裂口则是为了撕开漆黑的战线。唯一可惜的是，在陆上的鳄兽无法像水中的原型那样翻滚撕咬，不过世上的事总是这样，有舍有得。",
+    "Icon": "UI_MonsterIcon_Chimera_CrocodileBoar",
+    "Type": 1,
+    "Arkhe": 0,
+    "Affixes": [
+      "通用的特效表现"
+    ],
+    "BaseValue": {
+      "HpBase": 27.168,
+      "AttackBase": 30.144,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.2,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 23
+      },
+      {
+        "Type": 4,
+        "Value": 24
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 26310801,
+    "DescribeId": 63108,
+    "MonsterName": "Monster_Chimera_ScorpionChicken_01",
+    "Name": "嵌合蝎尾怪",
+    "Title": "鸟身蝎尾的裂壳者",
+    "Description": "生物炼金的产物，成型十分特殊的合成魔兽。\n传闻中，蝎尾鸡身的怪物拥有一旦对视就会令人石化的恐怖能力。创造者当然确信自己并没有令其拥有这样恐怖的功能，但为何有这样的说法流传，稍加思索后他认为…「或许只是因其身带的毒素能令人肌肉僵硬导致的吧。」",
+    "Icon": "UI_MonsterIcon_Chimera_ScorpionChicken",
+    "Type": 1,
+    "Arkhe": 0,
+    "Affixes": [
+      "通用的特效表现"
+    ],
+    "BaseValue": {
+      "HpBase": 114.1056,
+      "AttackBase": 55.264,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.3,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 23
+      },
+      {
+        "Type": 4,
+        "Value": 24
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
     "Id": 26310901,
     "DescribeId": 63109,
     "MonsterName": "Monster_Chimera_Manticore_01_Tps",
@@ -21228,14 +22218,14 @@
       "HpBase": 319.36917,
       "AttackBase": 147.51787,
       "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.1,
+      "PhysicalSubHurt": 0.1
     },
     "GrowCurves": [
       {
@@ -21245,6 +22235,43 @@
       {
         "Type": 4,
         "Value": 5201
+      },
+      {
+        "Type": 7,
+        "Value": 12
+      }
+    ]
+  },
+  {
+    "Id": 28021802,
+    "DescribeId": 80218,
+    "MonsterName": "Litolestes_01",
+    "Name": "历经百战的太古硬猬兽",
+    "Title": "历经百战的太古硬猬兽",
+    "Icon": "UI_MonsterIcon_Litolestes_01",
+    "Type": 1,
+    "Arkhe": 0,
+    "BaseValue": {
+      "HpBase": 414.20334,
+      "AttackBase": 75.36,
+      "DefenseBase": 500,
+      "FireSubHurt": 0.1,
+      "GrassSubHurt": 0.1,
+      "WaterSubHurt": 0.1,
+      "ElecSubHurt": 0.1,
+      "WindSubHurt": 0.1,
+      "IceSubHurt": 0.1,
+      "RockSubHurt": 0.5,
+      "PhysicalSubHurt": 0.1
+    },
+    "GrowCurves": [
+      {
+        "Type": 1,
+        "Value": 23
+      },
+      {
+        "Type": 4,
+        "Value": 24
       },
       {
         "Type": 7,
@@ -21488,7 +22515,7 @@
       "FireSubHurt": 0,
       "GrassSubHurt": 0,
       "WaterSubHurt": 0.7,
-      "ElecSubHurt": 0,
+      "ElecSubHurt": 0.7,
       "WindSubHurt": 0,
       "IceSubHurt": 0,
       "RockSubHurt": 0,
@@ -22307,783 +23334,6 @@
       {
         "Type": 1,
         "Value": 23
-      },
-      {
-        "Type": 4,
-        "Value": 24
-      },
-      {
-        "Type": 7,
-        "Value": 12
-      }
-    ]
-  },
-  {
-    "Id": 84102011,
-    "DescribeId": 10201,
-    "MonsterName": "Brute_None_Shield_01",
-    "Name": "木盾丘丘暴徒",
-    "Title": "丘丘暴徒·木盾",
-    "Icon": "UI_MonsterIcon_Brute_None_01",
-    "Type": 1,
-    "Arkhe": 0,
-    "Drops": [
-      202,
-      112016,
-      112015,
-      112014,
-      112007,
-      112006,
-      112005,
-      400023,
-      400033,
-      400043,
-      400022,
-      400032,
-      400042,
-      400062
-    ],
-    "BaseValue": {
-      "HpBase": 40.752,
-      "AttackBase": 30.144,
-      "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
-    },
-    "GrowCurves": [
-      {
-        "Type": 1,
-        "Value": 1
-      },
-      {
-        "Type": 4,
-        "Value": 2
-      },
-      {
-        "Type": 7,
-        "Value": 12
-      }
-    ]
-  },
-  {
-    "Id": 84102021,
-    "DescribeId": 10202,
-    "MonsterName": "Brute_None_Axe",
-    "Name": "火斧丘丘暴徒",
-    "Title": "丘丘暴徒·火斧",
-    "Icon": "UI_MonsterIcon_Brute_None_01",
-    "Type": 1,
-    "Arkhe": 0,
-    "Affixes": [
-      "免疫点燃伤害"
-    ],
-    "Drops": [
-      202,
-      112016,
-      112015,
-      112014,
-      112007,
-      112006,
-      112005,
-      400023,
-      400033,
-      400043,
-      400022,
-      400032,
-      400042,
-      400062
-    ],
-    "BaseValue": {
-      "HpBase": 40.752,
-      "AttackBase": 60.288,
-      "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
-    },
-    "GrowCurves": [
-      {
-        "Type": 1,
-        "Value": 1
-      },
-      {
-        "Type": 4,
-        "Value": 2
-      },
-      {
-        "Type": 7,
-        "Value": 12
-      }
-    ]
-  },
-  {
-    "Id": 84102041,
-    "DescribeId": 10204,
-    "MonsterName": "Brute_Ice_None_01",
-    "Name": "丘丘霜铠王",
-    "Title": "丘丘霜铠王",
-    "Icon": "UI_MonsterIcon_Brute_Ice_01",
-    "Type": 1,
-    "Arkhe": 0,
-    "BaseValue": {
-      "HpBase": 122.256,
-      "AttackBase": 150.72,
-      "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
-    },
-    "GrowCurves": [
-      {
-        "Type": 1,
-        "Value": 1
-      },
-      {
-        "Type": 4,
-        "Value": 2
-      },
-      {
-        "Type": 7,
-        "Value": 12
-      }
-    ]
-  },
-  {
-    "Id": 84102051,
-    "DescribeId": 10205,
-    "MonsterName": "Brute_Rock_None",
-    "Name": "丘丘岩盔王",
-    "Title": "丘丘岩盔王",
-    "Icon": "UI_MonsterIcon_Brute_Rock_None",
-    "Type": 1,
-    "Arkhe": 0,
-    "Drops": [
-      202,
-      112016,
-      112015,
-      112014,
-      112007,
-      112006,
-      112005,
-      400023,
-      400033,
-      400043,
-      400022,
-      400032,
-      400042,
-      400062
-    ],
-    "BaseValue": {
-      "HpBase": 122.256,
-      "AttackBase": 113.04,
-      "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
-    },
-    "GrowCurves": [
-      {
-        "Type": 1,
-        "Value": 1
-      },
-      {
-        "Type": 4,
-        "Value": 2
-      },
-      {
-        "Type": 7,
-        "Value": 12
-      }
-    ]
-  },
-  {
-    "Id": 84102081,
-    "DescribeId": 10208,
-    "MonsterName": "Brute_Electric_None",
-    "Name": "丘丘雷兜王",
-    "Title": "丘丘雷兜王",
-    "Icon": "UI_MonsterIcon_Brute_Electric_01",
-    "Type": 1,
-    "Arkhe": 0,
-    "BaseValue": {
-      "HpBase": 122.256,
-      "AttackBase": 150.72,
-      "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
-    },
-    "GrowCurves": [
-      {
-        "Type": 1,
-        "Value": 1
-      },
-      {
-        "Type": 4,
-        "Value": 2
-      },
-      {
-        "Type": 7,
-        "Value": 12
-      }
-    ]
-  },
-  {
-    "Id": 84201011,
-    "DescribeId": 20101,
-    "MonsterName": "Abyss_Fire_01",
-    "Name": "火深渊法师",
-    "Title": "火之咏者",
-    "Icon": "UI_MonsterIcon_Abyss_Fire_01",
-    "Type": 1,
-    "Arkhe": 0,
-    "Affixes": [
-      "免疫点燃伤害"
-    ],
-    "Drops": [
-      202,
-      112022,
-      112021,
-      112020,
-      400023,
-      400033,
-      400043,
-      400022,
-      400032,
-      400042,
-      400062
-    ],
-    "BaseValue": {
-      "HpBase": 27.168,
-      "AttackBase": 56.52,
-      "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
-    },
-    "GrowCurves": [
-      {
-        "Type": 1,
-        "Value": 1
-      },
-      {
-        "Type": 4,
-        "Value": 2
-      },
-      {
-        "Type": 7,
-        "Value": 12
-      }
-    ]
-  },
-  {
-    "Id": 84201021,
-    "DescribeId": 20102,
-    "MonsterName": "Abyss_Ice_01",
-    "Name": "冰深渊法师",
-    "Title": "冰之咏者",
-    "Icon": "UI_MonsterIcon_Abyss_Ice_01",
-    "Type": 1,
-    "Arkhe": 0,
-    "Affixes": [
-      "免疫冰冻和寒元素的减速效果"
-    ],
-    "Drops": [
-      202,
-      112022,
-      112021,
-      112020,
-      400023,
-      400033,
-      400043,
-      400022,
-      400032,
-      400042,
-      400062
-    ],
-    "BaseValue": {
-      "HpBase": 27.168,
-      "AttackBase": 37.68,
-      "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
-    },
-    "GrowCurves": [
-      {
-        "Type": 1,
-        "Value": 1
-      },
-      {
-        "Type": 4,
-        "Value": 2
-      },
-      {
-        "Type": 7,
-        "Value": 12
-      }
-    ]
-  },
-  {
-    "Id": 84201031,
-    "DescribeId": 20103,
-    "MonsterName": "Abyss_Water_01",
-    "Name": "水深渊法师",
-    "Title": "水之咏者",
-    "Icon": "UI_MonsterIcon_Abyss_Water_01",
-    "Type": 1,
-    "Arkhe": 0,
-    "Drops": [
-      202,
-      112022,
-      112021,
-      112020,
-      400023,
-      400033,
-      400043,
-      400022,
-      400032,
-      400042,
-      400062
-    ],
-    "BaseValue": {
-      "HpBase": 27.168,
-      "AttackBase": 37.68,
-      "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
-    },
-    "GrowCurves": [
-      {
-        "Type": 1,
-        "Value": 1
-      },
-      {
-        "Type": 4,
-        "Value": 2
-      },
-      {
-        "Type": 7,
-        "Value": 12
-      }
-    ]
-  },
-  {
-    "Id": 84301011,
-    "DescribeId": 30101,
-    "MonsterName": "Skirmisher_Male_Fat_SprayGun_Ice_01",
-    "Name": "愚人众先遣队·冰铳重卫士",
-    "Title": "先遣队·冰铳重卫士",
-    "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Ice_01",
-    "Type": 1,
-    "Arkhe": 0,
-    "Drops": [
-      202,
-      112034,
-      112033,
-      112032
-    ],
-    "BaseValue": {
-      "HpBase": 54.336,
-      "AttackBase": 37.68,
-      "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
-    },
-    "GrowCurves": [
-      {
-        "Type": 1,
-        "Value": 1
-      },
-      {
-        "Type": 4,
-        "Value": 2
-      },
-      {
-        "Type": 7,
-        "Value": 12
-      }
-    ]
-  },
-  {
-    "Id": 84301031,
-    "DescribeId": 30103,
-    "MonsterName": "Skirmisher_Male_Strong_GreatHammer_Electric_01",
-    "Name": "愚人众先遣队·雷锤前锋军",
-    "Title": "先遣队·雷锤前锋军",
-    "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_GreatHammer_Electric_01",
-    "Type": 1,
-    "Arkhe": 0,
-    "Drops": [
-      202,
-      112034,
-      112033,
-      112032
-    ],
-    "BaseValue": {
-      "HpBase": 54.336,
-      "AttackBase": 75.36,
-      "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
-    },
-    "GrowCurves": [
-      {
-        "Type": 1,
-        "Value": 1
-      },
-      {
-        "Type": 4,
-        "Value": 2
-      },
-      {
-        "Type": 7,
-        "Value": 12
-      }
-    ]
-  },
-  {
-    "Id": 84301041,
-    "DescribeId": 30104,
-    "MonsterName": "Skirmisher_Male_Standard_Staff_Rock_01",
-    "Name": "愚人众先遣队·岩使游击兵",
-    "Title": "先遣队·岩使游击兵",
-    "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Staff_Rock_01",
-    "Type": 1,
-    "Arkhe": 0,
-    "Drops": [
-      202,
-      112034,
-      112033,
-      112032
-    ],
-    "BaseValue": {
-      "HpBase": 40.752,
-      "AttackBase": 37.68,
-      "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
-    },
-    "GrowCurves": [
-      {
-        "Type": 1,
-        "Value": 1
-      },
-      {
-        "Type": 4,
-        "Value": 2
-      },
-      {
-        "Type": 7,
-        "Value": 12
-      }
-    ]
-  },
-  {
-    "Id": 84301061,
-    "DescribeId": 30106,
-    "MonsterName": "Skirmisher_Male_Standard_Rifle_Fire_01",
-    "Name": "愚人众先遣队·火铳游击兵",
-    "Title": "先遣队·火铳游击兵",
-    "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Rifle_Fire_01",
-    "Type": 1,
-    "Arkhe": 0,
-    "Drops": [
-      202,
-      112034,
-      112033,
-      112032
-    ],
-    "BaseValue": {
-      "HpBase": 40.752,
-      "AttackBase": 56.52,
-      "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
-    },
-    "GrowCurves": [
-      {
-        "Type": 1,
-        "Value": 1
-      },
-      {
-        "Type": 4,
-        "Value": 2
-      },
-      {
-        "Type": 7,
-        "Value": 12
-      }
-    ]
-  },
-  {
-    "Id": 84401011,
-    "DescribeId": 40101,
-    "MonsterName": "Defender_None_01",
-    "Name": "遗迹守卫",
-    "Title": "遗迹守卫",
-    "Icon": "UI_MonsterIcon_Defender_Noner_01",
-    "Type": 1,
-    "Arkhe": 0,
-    "Drops": [
-      202,
-      112025,
-      112024,
-      112023,
-      400023,
-      400033,
-      400043,
-      400022,
-      400032,
-      400042,
-      400062
-    ],
-    "BaseValue": {
-      "HpBase": 95.088,
-      "AttackBase": 60.288,
-      "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
-    },
-    "GrowCurves": [
-      {
-        "Type": 1,
-        "Value": 1
-      },
-      {
-        "Type": 4,
-        "Value": 2
-      },
-      {
-        "Type": 7,
-        "Value": 12
-      }
-    ]
-  },
-  {
-    "Id": 84401031,
-    "DescribeId": 40103,
-    "MonsterName": "Konungmathr_None",
-    "Name": "遗迹重机",
-    "Title": "遗迹重机",
-    "Icon": "UI_MonsterIcon_Konungmathr",
-    "Type": 1,
-    "Arkhe": 0,
-    "Drops": [
-      202,
-      112025,
-      112024,
-      112023,
-      400023,
-      400033,
-      400043,
-      400022,
-      400032,
-      400042,
-      400062
-    ],
-    "BaseValue": {
-      "HpBase": 122.256,
-      "AttackBase": 87.92,
-      "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
-    },
-    "GrowCurves": [
-      {
-        "Type": 1,
-        "Value": 1
-      },
-      {
-        "Type": 4,
-        "Value": 2
-      },
-      {
-        "Type": 7,
-        "Value": 12
-      }
-    ]
-  },
-  {
-    "Id": 84403011,
-    "DescribeId": 40301,
-    "MonsterName": "Gargoyle_Airborne_01",
-    "Name": "遗迹龙兽·空巡",
-    "Title": "遗迹龙兽·空巡",
-    "Icon": "UI_MonsterIcon_Gargoyle",
-    "Type": 1,
-    "Arkhe": 0,
-    "Drops": [
-      202,
-      112070,
-      112069,
-      112068,
-      400023,
-      400033,
-      400043,
-      400022,
-      400032,
-      400042,
-      400062
-    ],
-    "BaseValue": {
-      "HpBase": 67.92,
-      "AttackBase": 62.8,
-      "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
-    },
-    "GrowCurves": [
-      {
-        "Type": 1,
-        "Value": 23
-      },
-      {
-        "Type": 4,
-        "Value": 24
-      },
-      {
-        "Type": 7,
-        "Value": 12
-      }
-    ]
-  },
-  {
-    "Id": 84509011,
-    "DescribeId": 50901,
-    "MonsterName": "Samurai_Ningyo_01",
-    "Name": "魔偶剑鬼",
-    "Title": "魔偶剑鬼",
-    "Icon": "UI_MonsterIcon_Samurai_Ningyo",
-    "Type": 2,
-    "Arkhe": 0,
-    "Affixes": [
-      "傀儡将军强制后撤词缀"
-    ],
-    "Drops": [
-      102,
-      202,
-      105,
-      113022,
-      104154,
-      104153,
-      104152,
-      104151,
-      104164,
-      104163,
-      104162,
-      104161,
-      400089,
-      400099,
-      400088,
-      400098,
-      400023,
-      400033,
-      400022,
-      400032,
-      400052
-    ],
-    "BaseValue": {
-      "HpBase": 271.68,
-      "AttackBase": 100.48,
-      "DefenseBase": 500,
-      "FireSubHurt": 0,
-      "GrassSubHurt": 0,
-      "WaterSubHurt": 0,
-      "ElecSubHurt": 0,
-      "WindSubHurt": 0,
-      "IceSubHurt": 0,
-      "RockSubHurt": 0,
-      "PhysicalSubHurt": 0
-    },
-    "GrowCurves": [
-      {
-        "Type": 1,
-        "Value": 1
       },
       {
         "Type": 4,

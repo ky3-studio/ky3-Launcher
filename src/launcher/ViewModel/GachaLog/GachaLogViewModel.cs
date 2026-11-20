@@ -325,7 +325,9 @@ internal sealed partial class GachaLogViewModel : Abstraction.ViewModel
         (int count, Guid archiveId) = await gachaLogService.ImportFromUIGFAsync(metadataContext, stream).ConfigureAwait(false);
 
         await taskContext.SwitchToMainThreadAsync();
-        messenger.Send(InfoBarMessage.Success(SH.FormatViewModelGachaLogUIGFImportSuccess(count)));
+        messenger.Send(count > 0
+            ? InfoBarMessage.Success(SH.FormatViewModelGachaLogUIGFImportSuccess(count))
+            : InfoBarMessage.Warning(SH.ViewModelGachaLogUIGFImportEmpty));
 
         if (count > 0 && archiveId != default)
         {

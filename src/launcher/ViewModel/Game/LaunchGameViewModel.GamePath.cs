@@ -9,6 +9,7 @@
 
 using Launcher.Core.Logging;
 using Launcher.Service.Game.FileSystem;
+using Launcher.Service.Notification;
 using Launcher.Service.Game.Locator;
 using Launcher.Service.Game.PathAbstraction;
 using System.IO;
@@ -42,7 +43,14 @@ internal sealed partial class LaunchGameViewModel
     private void RemoveGamePathEntry(GamePathEntry? entry)
     {
         SentrySdk.AddBreadcrumb(BreadcrumbFactory.CreateUI("Remove game path", "LaunchGameViewModel.Command"));
-        LaunchOptions.RemoveGamePathEntry(entry);
+        try
+        {
+            LaunchOptions.RemoveGamePathEntry(entry);
+        }
+        catch (InvalidOperationException ex)
+        {
+            messenger.Send(InfoBarMessage.Warning(ex.Message));
+        }
     }
 
     [Command("OpenScreenshotFolderCommand")]

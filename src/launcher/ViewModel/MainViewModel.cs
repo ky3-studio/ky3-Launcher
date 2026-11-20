@@ -145,6 +145,13 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
                 return;
             }
 
+            if (ex is System.ComponentModel.Win32Exception)
+            {
+                SentrySdk.AddBreadcrumb($"Updater start blocked: {ex.Message}", category: "Update", level: BreadcrumbLevel.Warning);
+                messenger.Send(InfoBarMessage.Warning(SH.ViewModelMainUpdateRestartFailed));
+                return;
+            }
+
             SentrySdk.CaptureException(ex);
             messenger.Send(InfoBarMessage.Warning(SH.ViewModelMainUpdateRestartFailed));
         }
@@ -188,7 +195,7 @@ internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
             await taskContext.SwitchToMainThreadAsync();
 
             // Window may have been closed during the background check
-            if (currentXamlWindowReference.Window is null)
+            if (currentXamlWindowReference.Window is null || currentXamlWindowReference.XamlRoot is null)
             {
                 return;
             }

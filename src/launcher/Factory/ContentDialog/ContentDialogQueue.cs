@@ -8,7 +8,6 @@
 // Licensed under the MIT license.
 
 using Microsoft.UI.Xaml.Controls;
-using Launcher.Core.ExceptionService;
 using Launcher.Core.LifeCycle;
 using Windows.Foundation;
 
@@ -66,21 +65,22 @@ internal sealed partial class ContentDialogQueue : IContentDialogQueue
             await taskContext.SwitchToMainThreadAsync();
             queueSource.TrySetResult();
 
-            if (contentDialog.XamlRoot is null)
+            if (contentDialog.XamlRoot is null || contentDialog.XamlRoot != currentWindowReference.XamlRoot)
             {
-                LauncherException.NotSupported("Dialog created without XamlRoot");
+                resultSource.TrySetResult(ContentDialogResult.None);
+                return;
             }
 
-            if (contentDialog.XamlRoot != currentWindowReference.XamlRoot)
+            try
             {
-                // User close the window on previous dialog, and this dialog still using old XamlRoot.
-                // And that's why we didn't use dialog's DispatcherQueue to switch thread either.
-                LauncherException.NotSupported("Dialog using different XamlRoot");
+                IAsyncOperation<ContentDialogResult> operation = contentDialog.ShowAsync();
+                contentDialog.Focus(Microsoft.UI.Xaml.FocusState.Programmatic);
+                resultSource.TrySetResult(await operation);
             }
-
-            IAsyncOperation<ContentDialogResult> operation = contentDialog.ShowAsync();
-            contentDialog.Focus(Microsoft.UI.Xaml.FocusState.Programmatic);
-            resultSource.SetResult(await operation);
+            catch (Exception ex) when (ex is ObjectDisposedException or InvalidOperationException or System.Runtime.InteropServices.COMException)
+            {
+                resultSource.TrySetResult(ContentDialogResult.None);
+            }
         }
     }
 }

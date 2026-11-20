@@ -16,6 +16,7 @@ using Microsoft.Windows.AppNotifications.Builder;
 using Launcher.UI.Windowing.Abstraction;
 using Launcher.ViewModel;
 using System.Collections.Immutable;
+using System.IO;
 using Windows.Graphics;
 
 namespace Launcher.UI.Xaml.View.Window;
@@ -66,24 +67,31 @@ internal sealed partial class MainWindow : Microsoft.UI.Xaml.Window,
             return;
         }
 
-        if (!XamlApplicationLifetime.NotifyIconCreated || app.Options.LastWindowCloseBehavior.Value is LastWindowCloseBehavior.ExitApplication)
+        try
+        {
+            if (!XamlApplicationLifetime.NotifyIconCreated || app.Options.LastWindowCloseBehavior.Value is LastWindowCloseBehavior.ExitApplication)
+            {
+                app.Exit();
+                return;
+            }
+
+            if (this.TryGetAssociatedServiceProvider(out IServiceProvider serviceProvider) && !serviceProvider.GetRequiredService<NotifyIconController>().IsPromoted())
+            {
+                try
+                {
+                    new AppNotificationBuilder()
+                        .AddText(SH.CoreWindowingNotifyIconPromotedHint)
+                        .Show();
+                }
+                catch
+                {
+                    // Ignore
+                }
+            }
+        }
+        catch (Exception ex) when (ex is FileNotFoundException or ObjectDisposedException or System.Runtime.InteropServices.COMException)
         {
             app.Exit();
-            return;
-        }
-
-        if (this.TryGetAssociatedServiceProvider(out IServiceProvider serviceProvider) && !serviceProvider.GetRequiredService<NotifyIconController>().IsPromoted())
-        {
-            try
-            {
-                new AppNotificationBuilder()
-                    .AddText(SH.CoreWindowingNotifyIconPromotedHint)
-                    .Show();
-            }
-            catch
-            {
-                // Ignore
-            }
         }
     }
 }

@@ -17,7 +17,24 @@ internal static class CurrentXamlWindowReferenceExtension
 {
     extension(ICurrentXamlWindowReference reference)
     {
-        public XamlRoot? XamlRoot { get => reference.Window?.Content?.XamlRoot; }
+        public XamlRoot? XamlRoot
+        {
+            get
+            {
+                try
+                {
+                    return reference.Window?.Content?.XamlRoot;
+                }
+                catch (ObjectDisposedException)
+                {
+                    return null;
+                }
+                catch (System.Runtime.InteropServices.COMException)
+                {
+                    return null;
+                }
+            }
+        }
 
         public HWND WindowHandle { get => reference.Window?.GetWindowHandle() ?? default; }
 
@@ -25,12 +42,14 @@ internal static class CurrentXamlWindowReferenceExtension
         {
             get
             {
-                if (reference.Window is null)
+                try
+                {
+                    return reference.Window?.Content is FrameworkElement element ? element.RequestedTheme : ElementTheme.Default;
+                }
+                catch (ObjectDisposedException)
                 {
                     return ElementTheme.Default;
                 }
-
-                return ((FrameworkElement)reference.Window.Content).RequestedTheme;
             }
         }
     }

@@ -28,7 +28,17 @@ internal sealed partial class UpdateService : IUpdateService
 
     public async ValueTask<CheckUpdateResult> CheckUpdateAsync(CancellationToken token = default)
     {
-        using (IServiceScope scope = serviceProvider.CreateScope())
+        IServiceScope scope;
+        try
+        {
+            scope = serviceProvider.CreateScope();
+        }
+        catch (ObjectDisposedException)
+        {
+            return new();
+        }
+
+        using (scope)
         {
             CheckUpdateResult checkUpdateResult = new();
 

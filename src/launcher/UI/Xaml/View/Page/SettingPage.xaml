@@ -120,6 +120,13 @@
                                 </cwc:SettingsExpander.Items>
                             </cwc:SettingsExpander>
                             <cwc:SettingsCard
+                                Description="{shuxm:ResourceString Name=ViewPageSettingCrashReportDescription}"
+                                Header="{shuxm:ResourceString Name=ViewPageSettingCrashReportHeader}"
+                                HeaderIcon="{shuxm:FontIcon Glyph=&#xE9D9;}"
+                                IsClickEnabled="False">
+                                <ToggleSwitch IsOn="{Binding IsCrashReportEnabled, Mode=TwoWay}"/>
+                            </cwc:SettingsCard>
+                            <cwc:SettingsCard
                                 ActionIconToolTip="{shuxm:ResourceString Name=ViewPageSettingCreateDesktopShortcutAction}"
                                 Command="{Binding CreateDesktopShortcutCommand}"
                                 Header="{shuxm:ResourceString Name=ViewPageSettingCreateDesktopShortcutHeader}"
@@ -224,6 +231,13 @@
                                         </cwc:SettingsCard>
                                     </cwc:SettingsExpander.Items>
                                 </cwc:SettingsExpander>
+                                <cwc:SettingsCard
+                                    Description="{shuxm:ResourceString Name=ViewPageSettingCrashReportDescription}"
+                                    Header="{shuxm:ResourceString Name=ViewPageSettingCrashReportHeader}"
+                                    HeaderIcon="{shuxm:FontIcon Glyph=&#xE9D9;}"
+                                    IsClickEnabled="False">
+                                    <ToggleSwitch IsOn="{Binding IsCrashReportEnabled, Mode=TwoWay}"/>
+                                </cwc:SettingsCard>
                                 <cwc:SettingsCard
                                     ActionIconToolTip="{shuxm:ResourceString Name=ViewPageSettingCreateDesktopShortcutAction}"
                                     Command="{Binding CreateDesktopShortcutCommand}"

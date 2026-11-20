@@ -67,7 +67,13 @@ internal sealed partial class DiagnosticsProcess : IProcess
 
     public void WaitForExit()
     {
-        process.WaitForExit();
+        try
+        {
+            process.WaitForExit();
+        }
+        catch (Exception ex) when (ex is System.ComponentModel.Win32Exception or InvalidOperationException or ObjectDisposedException)
+        {
+        }
     }
 
     public void Kill()

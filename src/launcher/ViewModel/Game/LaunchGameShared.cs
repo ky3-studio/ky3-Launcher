@@ -8,7 +8,6 @@
 // Licensed under the MIT license.
 
 using CommunityToolkit.Mvvm.Input;
-using Launcher.Core.ExceptionService;
 using Launcher.Core.Logging;
 using Launcher.Core.Shell;
 using Launcher.Factory.ContentDialog;
@@ -59,7 +58,12 @@ internal sealed partial class LaunchGameShared
             }
             catch (InvalidOperationException)
             {
-                LauncherException.Throw(string.Format(CultureInfo.CurrentCulture, UnsupportedChannelOptionsFormat, options));
+                if (showInfo)
+                {
+                    messenger.Send(InfoBarMessage.Warning(string.Format(CultureInfo.CurrentCulture, UnsupportedChannelOptionsFormat, options)));
+                }
+
+                return default;
             }
         }
 

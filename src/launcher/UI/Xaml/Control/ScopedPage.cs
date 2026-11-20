@@ -54,7 +54,10 @@ internal partial class ScopedPage : Page
     protected void InitializeDataContext<TViewModel>()
         where TViewModel : class, IViewModel
     {
-        ArgumentNullException.ThrowIfNull(scope);
+        if (scope is null)
+        {
+            return;
+        }
 
         TViewModel viewModel = scope.ServiceProvider.GetRequiredService<TViewModel>();
         using (viewModel.CriticalSection.Enter())
@@ -84,8 +87,12 @@ internal partial class ScopedPage : Page
         {
             initialized = true;
 
-            XamlContext? context = element.XamlRoot.XamlContext();
-            ArgumentNullException.ThrowIfNull(context);
+            XamlContext? context = element.XamlRoot?.XamlContext();
+            if (context is null)
+            {
+                return;
+            }
+
             scope = context.ServiceProvider.CreateScope();
 
             LoadingOverride();

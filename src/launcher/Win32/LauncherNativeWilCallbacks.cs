@@ -41,6 +41,12 @@ internal static unsafe class LauncherNativeWilCallbacks
             return;
         }
 
+        // Benign WIL macro race: GetLastError() cleared before the macro read it
+        if (exception.Message.Contains("GetLastError() does not have an error", StringComparison.Ordinal))
+        {
+            return;
+        }
+
         SentrySdk.CaptureException(exception);
         SentrySdk.Flush();
     }

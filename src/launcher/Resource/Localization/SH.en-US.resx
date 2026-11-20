@@ -1628,6 +1628,9 @@ Available space: {2}</value>
   <data name="ViewModelGachaLogUIGFImportSuccess" xml:space="preserve">
     <value>Successfully imported {0} wish records</value>
   </data>
+  <data name="ViewModelGachaLogUIGFImportEmpty" xml:space="preserve">
+    <value>No records imported: the file is not a valid UIGF or contains no wish data</value>
+  </data>
   <data name="ViewModelGachaLogUIGFExportSuccess" xml:space="preserve">
     <value>Successfully exported the wish record of UID:{0}</value>
   </data>
@@ -3022,6 +3025,12 @@ For security reasons, we have the right to update the software and related funct
   </data>
   <data name="ViewPageSettingAutoStartHeader" xml:space="preserve">
     <value>Start automatically at boot</value>
+  </data>
+  <data name="ViewPageSettingCrashReportHeader" xml:space="preserve">
+    <value>Crash reporting</value>
+  </data>
+  <data name="ViewPageSettingCrashReportDescription" xml:space="preserve">
+    <value>Anonymously report crash stacks and performance data to help improve the software. The toggle takes effect after restart.</value>
   </data>
   <data name="ViewPageSettingAutoStartDescription" xml:space="preserve">
     <value>The program will be started when the current user logs in. Whether to run as an administrator will only synchronize the administrator mode option when modifying (modifications need to be run as an administrator)</value>

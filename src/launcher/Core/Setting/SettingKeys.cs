@@ -15,6 +15,7 @@ internal static class SettingKeys
     public const string DataDirectory = "Launcher::Application::DataFolderPath";
     public const string OverrideElevationRequirement = "Launcher::Application::Elevation::Override";
     public const string RunElevated = "Launcher::Application::Elevation::RunElevated";
+    public const string IsCrashReportEnabled = "Launcher::Application::CrashReport::Enabled";
     public const string StartupEnabled = "Launcher::Application::Startup::Enabled";
     public const string LaunchTimes = "Launcher::Application::LaunchTimes";
     public const string CacheDirectory = "Launcher::Application::CacheFolderPath";

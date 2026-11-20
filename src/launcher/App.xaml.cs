@@ -69,11 +69,9 @@ public sealed partial class App : Application
 
         try
         {
-
-            AppNotificationManager.Default.NotificationInvoked += activation.NotificationInvoked;
-
             try
             {
+                AppNotificationManager.Default.NotificationInvoked += activation.NotificationInvoked;
                 AppNotificationManager.Default.Register();
             }
             catch (Exception ex)

@@ -57,6 +57,9 @@ internal class Response : ICommonResponse<Response>
         {
             case KnownReturnCode.PleaseLogin:
             case KnownReturnCode.RET_TOKEN_INVALID:
+            case KnownReturnCode.AccountDoesNotExist:
+            case KnownReturnCode.RetNeedLatestVersion:
+            case KnownReturnCode.RetTokenEndpointDeprecated:
                 response.Message = SH.FormatWebResponseRefreshCookieHint(response.Message);
                 break;
             case KnownReturnCode.InvalidAccountFormat:

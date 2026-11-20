@@ -72,14 +72,18 @@ internal sealed partial class UserService : IUserService
 
             user.IsInitialized = false;
 
-            if (!cookie.TryGetSToken(out Cookie? sToken))
+            if (cookie.TryGetSToken(out Cookie? sToken))
+            {
+                user.SToken = sToken;
+            }
+
+            user.LToken = cookie.TryGetLToken(out Cookie? lToken) ? lToken : user.LToken;
+            user.CookieToken = cookie.TryGetCookieToken(out Cookie? cookieToken) ? cookieToken : user.CookieToken;
+
+            if (user.SToken is null && (user.LToken is null || user.CookieToken is null))
             {
                 return new(UserOptionResultKind.CookieInvalid, SH.ServiceUserProcessCookieNoSToken);
             }
-
-            user.SToken = sToken;
-            user.LToken = cookie.TryGetLToken(out Cookie? lToken) ? lToken : user.LToken;
-            user.CookieToken = cookie.TryGetCookieToken(out Cookie? cookieToken) ? cookieToken : user.CookieToken;
             user.TryUpdateFingerprint(deviceFp);
 
             await userInitializationService.ResumeUserAsync(user).ConfigureAwait(false);

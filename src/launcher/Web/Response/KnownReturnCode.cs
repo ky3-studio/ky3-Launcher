@@ -69,6 +69,21 @@ internal enum KnownReturnCode
     RET_NEED_RISK_VERIFY = -3235,
 
     /// <summary>
+    /// 账号不存在
+    /// </summary>
+    AccountDoesNotExist = -3203,
+
+    /// <summary>
+    /// 请使用最新版本产品/链接，或前往 user.mihoyo.com 完成操作
+    /// </summary>
+    RetNeedLatestVersion = -464,
+
+    /// <summary>
+    /// 请升级应用版本或删除账号后重新登录（v1 换票端点已弃用）
+    /// </summary>
+    RetTokenEndpointDeprecated = -5300,
+
+    /// <summary>
     /// 账号或密码错误
     /// </summary>
     AccountOrPasswordError = -3208,

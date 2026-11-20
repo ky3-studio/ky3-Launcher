@@ -81,6 +81,11 @@ internal sealed partial class UserInitializationService : IUserInitializationSer
             return true;
         }
 
+        if (user.SToken is null)
+        {
+            return false;
+        }
+
         IPassportClient passportClient = serviceProvider
             .GetRequiredService<IOverseaSupportFactory<IPassportClient>>()
             .Create(user.IsOversea);
@@ -104,12 +109,14 @@ internal sealed partial class UserInitializationService : IUserInitializationSer
 
     private static async ValueTask<bool> TrySetUserCookieTokenAsync(IServiceProvider serviceProvider, ViewModel.User.User user, CancellationToken token)
     {
-        if (user.Entity.CookieTokenLastUpdateTime > DateTimeOffset.UtcNow - TimeSpan.FromDays(1))
+        if (user.CookieToken is not null && (user.Entity.CookieTokenLastUpdateTime > DateTimeOffset.UtcNow - TimeSpan.FromDays(1) || user.SToken is null))
         {
-            if (user.CookieToken is not null)
-            {
-                return true;
-            }
+            return true;
+        }
+
+        if (user.SToken is null)
+        {
+            return false;
         }
 
         IPassportClient passportClient = serviceProvider
@@ -179,7 +186,7 @@ internal sealed partial class UserInitializationService : IUserInitializationSer
             return true;
         }
 
-        if (user.SToken is null)
+        if (user.SToken is null && (user.LToken is null || user.CookieToken is null))
         {
             return false;
         }

@@ -25,6 +25,7 @@ internal sealed partial class Cookie
     public Cookie(SortedDictionary<string, string> dict)
     {
         inner = dict;
+        ApplyV2Aliases(dict);
     }
 
     public string this[string key]
@@ -113,6 +114,33 @@ internal sealed partial class Cookie
     public bool IsEmpty()
     {
         return inner.Count <= 0;
+    }
+
+    private static void ApplyV2Aliases(SortedDictionary<string, string> map)
+    {
+        Alias(map, COOKIE_TOKEN, COOKIE_TOKEN + "_v2");
+        Alias(map, LTOKEN, LTOKEN + "_v2");
+        Alias(map, ACCOUNT_ID, ACCOUNT_ID + "_v2");
+        Alias(map, LTUID, LTUID + "_v2");
+        Alias(map, STOKEN, STOKEN + "_v2");
+        Alias(map, STUID, STUID + "_v2");
+        Alias(map, STUID, ACCOUNT_ID + "_v2");
+        Alias(map, MID, "mid_v2");
+        Alias(map, MID, "account_mid_v2");
+        Alias(map, MID, "ltmid_v2");
+    }
+
+    private static void Alias(SortedDictionary<string, string> map, string legacy, string v2)
+    {
+        if (map.TryGetValue(legacy, out string? current) && !string.IsNullOrEmpty(current))
+        {
+            return;
+        }
+
+        if (map.TryGetValue(v2, out string? value) && !string.IsNullOrEmpty(value))
+        {
+            map[legacy] = value;
+        }
     }
 
     public bool TryGetValue(string key, [NotNullWhen(true)] out string? value)

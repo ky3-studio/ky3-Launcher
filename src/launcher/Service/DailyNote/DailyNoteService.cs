@@ -30,6 +30,7 @@ internal sealed partial class DailyNoteService : IDailyNoteService, IRecipient<U
     private readonly DailyNoteOptions dailyNoteOptions;
     private readonly IServiceProvider serviceProvider;
     private readonly IUserService userService;
+    private readonly IUserRepository userRepository;
     private readonly ITaskContext taskContext;
 
     private readonly AsyncLock entriesLock = new();
@@ -68,6 +69,16 @@ internal sealed partial class DailyNoteService : IDailyNoteService, IRecipient<U
                 await taskContext.SwitchToMainThreadAsync();
                 newEntry.Update(data);
             }
+        }
+
+        if (dailyNoteRepository.ContainsUid(roleUid))
+        {
+            return;
+        }
+
+        if (!userRepository.Execute(query => query.Any(u => u.InnerId == newEntry.UserId)))
+        {
+            return;
         }
 
         dailyNoteRepository.AddDailyNoteEntry(newEntry);

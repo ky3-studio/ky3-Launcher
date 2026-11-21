@@ -13,6 +13,7 @@ internal enum SaltType
 {
     None,
     PROD,
+    Passport,
     X4,
     X6,
     K2,

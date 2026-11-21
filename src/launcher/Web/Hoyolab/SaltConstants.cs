@@ -11,7 +11,7 @@ namespace Launcher.Web.Hoyolab;
 
 internal static class SaltConstants
 {
-    public const string CNVersion = "2.95.1";
+    public const string CNVersion = "2.119.0";
 
     public const string OSVersion = "2.54.0";
 
